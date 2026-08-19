@@ -475,7 +475,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ch-civil-ensign", category: "maritime", name: "Civil and state ensign of Switzerland", from: 1882, to: 9999, path: "national-flags/ch/switzerland-civil-ensign.svg", design: "The Swiss cross in a rectangular 2:3 ensign — the seagoing form of a flag that is square on land.", source: "https://en.wikipedia.org/wiki/List_of_Swiss_flags" },
     { id: "ch-arms", category: "coatofarms", name: "Coat of arms of Switzerland", from: 1889, to: 9999, path: "national-flags/ch/ch-arms.svg", design: "A white couped cross on a red triangular shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Switzerland" },
     { id: "ch-passport", category: "passport", name: "Passport of Switzerland", path: "national-flags/ch/ch-passport.webp", design: "The cover of the Switzerland passport.", source: "https://gicg.net/passport/ch/" },
-    { id: "ch-football-crest", category: "footballcrest", name: "Crest of the Switzerland national football team", path: "national-flags/ch/ch-football-crest.svg", design: "The crest of the Switzerland national football team.", source: "https://en.wikipedia.org/wiki/Switzerland_national_football_team" },
+    { id: "ch-football-crest", category: "footballcrest", name: "Crest of the Switzerland national football team", path: "national-flags/ch/ch-football-crest.svg", design: "The crest of the Switzerland national football team — a red line drawing of a footballer mid-kick, built from the letters “ASF” and “SFV”.", source: "https://en.wikipedia.org/wiki/Switzerland_national_football_team" },
   ],
   "CI": [
     { id: "ci-official-national", category: "official", name: "Flag of Ivory Coast", from: 1959, to: 9999, primary: true, path: "flags/ci.svg", design: "The national flag of Ivory Coast, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast" },
@@ -545,7 +545,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "co-president", category: "standard", name: "Presidential standard of Colombia", path: "national-flags/co/colombia-president.svg", design: "The national flag charged with the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Colombian_flags" },
     { id: "co-arms", category: "coatofarms", name: "Coat of arms of Colombia", from: 1834, to: 9999, path: "national-flags/co/colombia-arms.svg", design: "A shield in three parts beneath an Andean condor holding an olive crown, flanked by four national flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia" },
     { id: "co-passport", category: "passport", name: "Passport of Colombia", path: "national-flags/co/co-passport.webp", design: "The cover of the Colombia passport.", source: "https://gicg.net/passport/co/" },
-    { id: "co-football-crest", category: "footballcrest", name: "Crest of the Colombia national football team", path: "national-flags/co/co-football-crest.svg", design: "The crest of the Colombia national football team.", source: "https://en.wikipedia.org/wiki/Colombia_national_football_team" },
+    { id: "co-football-crest", category: "footballcrest", name: "Crest of the Colombia national football team", path: "national-flags/co/co-football-crest.svg", design: "The crest of the Colombia national football team — a red football ringed in yellow and blue, with “FEDERACIÓN COLOMBIANA DE FÚTBOL” arced around it.", source: "https://en.wikipedia.org/wiki/Colombia_national_football_team" },
   ],
   "CR": [
     { id: "cr-official-national", category: "official", name: "Flag of Costa Rica", from: 1848, to: 9999, primary: true, path: "flags/cr.svg", design: "The national flag of Costa Rica, in the form adopted in 1848.", source: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
@@ -807,9 +807,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gb-passport-diplomatic", category: "passport", name: "British diplomatic passport", path: "national-flags/gb/uk-passport-diplomatic.svg", design: "The same blue cover and Royal Arms, headed DIPLOMATIC PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
     { id: "gb-passport-official", category: "passport", name: "British official passport", path: "national-flags/gb/uk-passport-official.svg", design: "The same blue cover and Royal Arms, headed OFFICIAL PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
     { id: "gb-eng-football-crest", category: "footballcrest", name: "England — The Football Association crest", path: "national-flags/gb/gb-eng-football-crest.svg", design: "The crest of The Football Association, worn by the England national team — three navy lions passant guardant, scattered with ten red-and-white Tudor roses, on a white shield below a “The FA” banner.", source: "https://en.wikipedia.org/wiki/The_Football_Association" },
-    { id: "gb-sct-football-crest", category: "footballcrest", name: "Scotland — Scottish Football Association crest", path: "national-flags/gb/gb-sct-football-crest.svg", design: "The crest of the Scottish Football Association, worn by the Scotland national team.", source: "https://en.wikipedia.org/wiki/Scottish_Football_Association" },
-    { id: "gb-wls-football-crest", category: "footballcrest", name: "Wales — Football Association of Wales crest", path: "national-flags/gb/gb-wls-football-crest.svg", design: "The crest of the Football Association of Wales, worn by the Wales national team.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Wales" },
-    { id: "gb-nir-football-crest", category: "footballcrest", name: "Northern Ireland — Irish Football Association crest", path: "national-flags/gb/gb-nir-football-crest.svg", design: "The crest of the Irish Football Association, which governs football in Northern Ireland.", source: "https://en.wikipedia.org/wiki/Irish_Football_Association" },
+    { id: "gb-sct-football-crest", category: "footballcrest", name: "Scotland — Scottish Football Association crest", path: "national-flags/gb/gb-sct-football-crest.svg", design: "The crest of the Scottish Football Association, worn by the Scotland national team — a red lion rampant on gold, surrounded by nine green thistles, on a navy shield below a “SCOTTISH FA” banner.", source: "https://en.wikipedia.org/wiki/Scottish_Football_Association" },
+    { id: "gb-wls-football-crest", category: "footballcrest", name: "Wales — Football Association of Wales crest", path: "national-flags/gb/gb-wls-football-crest.svg", design: "The crest of the Football Association of Wales, worn by the Wales national team — a red dragon rendered in an angular style, standing upright rather than the horizontal dragon of the national flag.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Wales" },
+    { id: "gb-nir-football-crest", category: "footballcrest", name: "Northern Ireland — Irish Football Association crest", path: "national-flags/gb/gb-nir-football-crest.svg", design: "The crest of the Irish Football Association, which governs football in Northern Ireland — a blue cross pattern edged in gold, with a gold shamrock in each of the four quarters, ringed by “IRISH FOOTBALL ASSOCIATION · NORTHERN IRELAND”.", source: "https://en.wikipedia.org/wiki/Irish_Football_Association" },
   ],
   "GD": [
     { id: "gd-official-national", category: "official", name: "Flag of Grenada", from: 1974, to: 9999, primary: true, path: "flags/gd.svg", design: "The national flag, adopted at independence in 1974.", source: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
@@ -1000,7 +1000,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ie-st-patrick", category: "civilstate", name: "Saint Patrick's Saltire", from: 1783, to: 9999, path: "national-flags/ie/ireland-st-patrick.svg", design: "A red saltire on white, used for Ireland in the Union Flag and still flown in some official contexts.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
     { id: "ie-arms", category: "coatofarms", name: "Coat of arms of Ireland", from: 1922, to: 9999, path: "national-flags/ie/ireland-arms.svg", design: "A gold harp with silver strings on a blue field.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ireland" },
     { id: "ie-passport", category: "passport", name: "Passport of Ireland", path: "national-flags/ie/ie-passport.webp", design: "The cover of the Ireland passport.", source: "https://gicg.net/passport/ie/" },
-    { id: "ie-football-crest", category: "footballcrest", name: "Crest of the Ireland national football team", path: "national-flags/ie/ie-football-crest.svg", design: "The crest of the Ireland national football team.", source: "https://en.wikipedia.org/wiki/Republic_of_Ireland_national_football_team" },
+    { id: "ie-football-crest", category: "footballcrest", name: "Crest of the Ireland national football team", path: "national-flags/ie/ie-football-crest.svg", design: "The crest of the Ireland national football team — a green circle bearing a stylised white shamrock, ringed by “IRELAND FOOTBALL” in white on green, with an orange arc below.", source: "https://en.wikipedia.org/wiki/Republic_of_Ireland_national_football_team" },
   ],
   "IL": [
     { id: "il-official-national", category: "official", name: "Flag of Israel", from: 1948, to: 9999, primary: true, path: "flags/il.svg", design: "The national flag of Israel, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
@@ -1811,7 +1811,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "qa-air-force", category: "military", name: "Air Force Ensign of Qatar", from: 1974, to: 9999, path: "national-flags/qa/qatar-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Qatari_flags" },
     { id: "qa-emblem", category: "coatofarms", name: "Emblem of Qatar", from: 2022, to: 9999, path: "national-flags/qa/qatar-emblem.svg", design: "Two crossed scimitars around a dhow sailing on waves beside an island with two palm trees.", source: "https://en.wikipedia.org/wiki/Emblem_of_Qatar" },
     { id: "qa-passport", category: "passport", name: "Passport of Qatar", path: "national-flags/qa/qa-passport.webp", design: "The cover of the Qatar passport.", source: "https://gicg.net/passport/qa/" },
-    { id: "qa-football-crest", category: "footballcrest", name: "Crest of the Qatar national football team", path: "national-flags/qa/qa-football-crest.svg", design: "The crest of the Qatar national football team.", source: "https://en.wikipedia.org/wiki/Qatar_Football_Association" },
+    { id: "qa-football-crest", category: "footballcrest", name: "Crest of the Qatar national football team", path: "national-flags/qa/qa-football-crest.svg", design: "The crest of the Qatar national football team — a white field with a serrated maroon border, echoing the sawtooth edge of the national flag, around an ornately patterned ball, with “QFA” below.", source: "https://en.wikipedia.org/wiki/Qatar_Football_Association" },
   ],
   "RO": [
     { id: "ro-official-national", category: "official", name: "Flag of Romania", from: 1848, to: 9999, primary: true, path: "flags/ro.svg", design: "The national flag of Romania, in the form adopted in 1848.", source: "https://en.wikipedia.org/wiki/Flag_of_Romania" },
@@ -2260,7 +2260,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "uy-naval-jack", category: "maritime", name: "Naval jack of Uruguay", path: "national-flags/uy/uruguay-naval-jack.svg", design: "The naval jack.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
     { id: "uy-arms", category: "coatofarms", name: "Coat of arms of Uruguay", from: 1829, to: 9999, path: "national-flags/uy/uruguay-arms.svg", design: "An oval shield quartered with scales, Montevideo hill, a horse and an ox, crowned by the Sun of May between laurel and olive.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uruguay" },
     { id: "uy-passport", category: "passport", name: "Passport of Uruguay", path: "national-flags/uy/uy-passport.webp", design: "The cover of the Uruguay passport.", source: "https://gicg.net/passport/uy/" },
-    { id: "uy-football-crest", category: "footballcrest", name: "Crest of the Uruguay national football team", path: "national-flags/uy/uy-football-crest.svg", design: "The crest of the Uruguay national football team.", source: "https://en.wikipedia.org/wiki/Uruguay_national_football_team" },
+    { id: "uy-football-crest", category: "footballcrest", name: "Crest of the Uruguay national football team", path: "national-flags/uy/uy-football-crest.svg", design: "The crest of the Uruguay national football team — a gold ribbon reading “AUF” flanked by wheat sprigs, over a football banded in Uruguay's light blue and white, beneath four gold stars.", source: "https://en.wikipedia.org/wiki/Uruguay_national_football_team" },
   ],
   "UZ": [
     { id: "uz-official-national", category: "official", name: "Flag of Uzbekistan", from: 1991, to: 9999, primary: true, path: "flags/uz.svg", design: "The national flag of Uzbekistan, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan" },
@@ -2894,6 +2894,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Switzerland" },
     ],
   },
+  "ch-football-crest": {
+    description: "ASF and SFV are the association's own name in two of Switzerland's official languages — Association Suisse de Football (French) and Schweizerischer Fussballverband (German) — reflecting the country's multilingual federal structure rather than a single national language. The two sets of initials are drawn together into the outline of a player striking the ball.",
+    sources: [
+      { title: "Swiss Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Swiss_Football_Association" },
+    ],
+  },
   "ci-arms": {
     description: "The elephant's head is the country's namesake — Côte d'Ivoire, the Ivory Coast — and an emblem of its strength. Above it a rising sun stands for the new beginning of independence, and the banner carries the country's name. Together they speak to national solidarity in the face of adversity.",
     sources: [
@@ -2947,6 +2953,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Andean condor above the shield stands for freedom, and holds an olive crown; the scroll between it and the shield carries the national motto, \"Libertad y Orden\" — Liberty and Order. The shield is read from the bottom up: the lowest field shows two ships for the country's maritime history and, since the loss of Panama in 1903, for the two oceans that border it, their sails standing for Colombian trade with the world. The middle field carries a Phrygian cap on a spear, the classical emblem of liberty, and the top field a gold pomegranate between two cornucopias — the pomegranate (granada in Spanish) for New Granada, the name the country bore before 1861, and the horns of plenty for its mineral and agricultural wealth.",
     sources: [
       { title: "Coat of arms of Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia" },
+    ],
+  },
+  "co-football-crest": {
+    description: "The yellow, blue and red repeat Colombia's own national flag. Federación Colombiana de Fútbol is simply the association's own name — the Colombian Football Federation.",
+    sources: [
+      { title: "Colombia national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Colombia_national_football_team" },
     ],
   },
   "cr-arms": {
@@ -3164,6 +3176,25 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Football_Association" },
     ],
   },
+  "gb-sct-football-crest": {
+    description: "The red lion rampant on gold is taken directly from the Royal Banner of Scotland (the Lion Rampant), long a symbol of the Scottish crown. The thistle is Scotland's own national emblem, adopted under King Alexander III (1249–1286); a popular legend has an invading Norse soldier step barefoot on one and cry out, waking a sleeping Scottish camp before a battle — possibly the Battle of Largs in 1263 — but the story survives only as legend, not documented history.",
+    sources: [
+      { title: "Royal arms of Scotland — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_arms_of_Scotland" },
+      { title: "Thistle — Wikipedia", url: "https://en.wikipedia.org/wiki/Thistle" },
+    ],
+  },
+  "gb-wls-football-crest": {
+    description: "Y Ddraig Goch, the Red Dragon, is Wales's own national emblem and has been associated with the country for centuries, most visibly on its flag. The FAW's own 2019 rebrand describes this stylised badge as “an icon of strength, support and resilience”, with sharp angles and edges drawn from the tradition of Welsh slate carving; unlike the flag's dragon, which stands horizontally, this one is shown upright.",
+    sources: [
+      { title: "Football Association of Wales unveils simplified dragon — Dezeen", url: "https://www.dezeen.com/2019/08/30/football-association-of-wales-visual-identity-dragon/" },
+    ],
+  },
+  "gb-nir-football-crest": {
+    description: "The shamrock is Ireland's own traditional emblem — by legend, Saint Patrick used its three leaves during his 5th-century mission to teach the Christian doctrine of the Holy Trinity, though the earliest written record of that particular story dates only to 1726. The IFA, founded in 1880 to govern football across the whole island of Ireland before partition and today the governing body for Northern Ireland, carries the shamrock four times around the cross at the centre of its badge.",
+    sources: [
+      { title: "Shamrock — Wikipedia", url: "https://en.wikipedia.org/wiki/Shamrock" },
+    ],
+  },
   "gd-arms": {
     description: "A cross divides the shield, a golden lion of England in each quarter, with the Santa María — the ship of Columbus, who sighted the island — at the centre. The crest is a garland of bougainvillea holding seven golden roses for the seven parishes. An armadillo with a nutmeg branch and a Grenada dove support the shield before Mount St Catherine, a lake and a banana tree. The motto reads “Ever Conscious of God We Aspire, Build and Advance as One People.”",
     sources: [
@@ -3307,6 +3338,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Blazoned simply \"Azure a harp Or, stringed Argent\", these are among the plainest national arms in Europe and the harp is the point of them: it is the instrument of Gaelic Ireland, and the state's drawing of it is based on a specific object — the late-medieval Brian Boru harp, now in Trinity College Dublin, taken as the model when the arms were restored for the independent Irish state in 1922. The medieval Lordship of Ireland, which existed under the English crown from 1171 to 1541, bore something else entirely: three crowns in pale. The harp is also the only national coat of arms in the world whose principal charge is a musical instrument.",
     sources: [
       { title: "Coat of arms of Ireland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ireland" },
+    ],
+  },
+  "ie-football-crest": {
+    description: "The shamrock is Ireland's own traditional national emblem, adopted as a patriotic symbol alongside the colour green by revolutionary groups from the late 18th century; the Football Association of Ireland restored it to the men's and women's national crests in 2023, having last carried it in 2004. The green, white and orange repeat the Irish tricolour.",
+    sources: [
+      { title: "New crests revealed for Ireland teams and FAI — RTÉ", url: "https://www.rte.ie/sport/soccer/2023/0309/1361308-new-crests-revealed-for-ireland-teams-and-fai" },
+      { title: "Shamrock — Wikipedia", url: "https://en.wikipedia.org/wiki/Shamrock" },
     ],
   },
   "il-emblem": {
@@ -3898,6 +3936,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Qatar — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Qatar" },
     ],
   },
+  "qa-football-crest": {
+    description: "The maroon-and-white and the nine-point serrated edge directly repeat Qatar's own national flag; the ball's engraved geometric pattern draws on traditional regional ornament rather than depicting a plain football. QFA is the association's own initials, the Qatar Football Association.",
+    sources: [
+      { title: "Qatar Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Qatar_Football_Association" },
+    ],
+  },
   "ro-arms": {
     description: "The arms adopted by parliament on 10 September 1992 are based on the lesser arms of the interwar Kingdom of Romania, used from 1922 to 1947 and designed in 1921 by the Transylvanian Hungarian heraldist József Sebestyén of Cluj-Napoca. The golden aquila with a cross in its beak, a sword and a sceptre in its talons, is the historic emblem of Wallachia; the escutcheon quarters the arms of the lands the modern state is made of — Wallachia, Moldavia, Transylvania, Oltenia with the Banat, and Dobruja with its dolphins for the Black Sea coast. Since 11 July 2016 the aquila has been crowned with a heraldic Steel Crown, a token of the monarchy that ruled between 1881 and 1947. The arms carry a particular weight in Romania because the symbol of the 1989 revolution was the flag with the communist arms cut out of its middle.",
     sources: [
@@ -4213,6 +4257,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Each of the four quarters carries one idea, and two of them are animals rather than emblems. The upper left holds golden scales for equality and justice; the upper right the Cerro de Montevideo with its fortress on the summit, for strength. Below, a galloping black horse stands for liberty and a golden ox for abundance and plenty. The rising Sun of May crowning the oval is the birth of the nation and the May Revolution, and the laurel branch on one side with the olive on the other are triumph and peace.",
     sources: [
       { title: "Coat of arms of Uruguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uruguay" },
+    ],
+  },
+  "uy-football-crest": {
+    description: "AUF is the association's own initials, Asociación Uruguaya de Fútbol. The four stars mark four FIFA-recognised world championships — the 1924 and 1928 Olympic football tournaments (the only Olympic titles ever retroactively treated as equivalent to a World Cup) and the 1930 and 1950 FIFA World Cups. Uruguay only added the stars in 1992, after the football historian Atilio Garrido produced Uruguay's own 1925 and 1929 submissions to FIFA claiming world-champion status for the Olympic wins; a FIFA staffer asked in 2021 that two of the four be removed, but FIFA withdrew the request once Uruguay presented that same historical evidence again, and all four stars remain.",
+    sources: [
+      { title: "Four stars above Uruguay's football crest — Wikipedia", url: "https://en.wikipedia.org/wiki/Four_stars_above_Uruguay%27s_football_crest" },
     ],
   },
   "uz-emblem": {
