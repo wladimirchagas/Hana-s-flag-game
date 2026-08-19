@@ -972,10 +972,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/c/c1/Argentina_national_football_team_logo.svg",
           "file": "ar/ar-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Argentina national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Argentina_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Argentina national football team.",
+          "design": "The crest of the Argentina national football team — the letters “AFA” in white on a gold shield, below a striped band and above three gold stars, ringed by a gold laurel wreath.",
           "source": "https://en.wikipedia.org/wiki/Argentina_national_football_team",
           "sha256": "db522bf9efb39d2d47a3a8426cab330820d619c3797f9898b8abd929ec7c8604",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "AFA is simply the association's own initials, Asociación del Fútbol Argentino. FIFA's rules let a champion display one star per World Cup on its shirt; the three above the shield mark Argentina's titles, won in 1978, 1986 and 2022.",
+            "sources": [
+              {
+                "title": "Star (sport badge) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Star_(sport_badge)"
+              },
+              {
+                "title": "Argentine Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Argentine_Football_Association"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -1363,7 +1376,16 @@
           "design": "The logo of Football Australia — an abstract ball formed of interlocking green-and-gold curves, beside the words “Football Australia”.",
           "source": "https://en.wikipedia.org/wiki/Football_Australia",
           "sha256": "0fa3de102fab85e9d726d631c9e77a3abe6ae07e93be9af87532141ee665c979",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "Green and gold are Australia's national sporting colours — green for the country's eucalypts (“gum-tree green”), gold for the golden wattle, the national floral emblem (“wattle-gold”) — first adopted by an Australian sports team touring England in 1899 and carried since into the Socceroos' own kit and this Football Australia mark.",
+            "sources": [
+              {
+                "title": "Green and gold — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Green_and_gold"
+              }
+            ]
+          }
         }
       ],
       "omitted": [
@@ -3341,7 +3363,20 @@
           "design": "The crest of the Brazilian Football Confederation — a blue shield bearing the green-and-yellow “CBF” monogram, beneath an arc of five green stars.",
           "source": "https://en.wikipedia.org/wiki/Brazilian_Football_Confederation",
           "sha256": "419c0cf75a735fc224a2692a8fd5d5393a8c622d4d0a78b4509ce8894fbdc053",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The shield's blue, green, yellow and white repeat the colours of the Brazilian flag, and the white monogram forming “CBF” against the blue field is drawn as an upward arrow, echoing the shield's traditional heraldic sense of defence and strength. FIFA's rules let a champion display one star per World Cup on its shirt; the five above the shield mark Brazil's titles — 1958, 1962, 1970, 1994 and 2002 — with the fourth and fifth stars added to the crest as each was won.",
+            "sources": [
+              {
+                "title": "Star (sport badge) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Star_(sport_badge)"
+              },
+              {
+                "title": "Brazil national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Brazil_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -4994,10 +5029,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/e8/Cameroon_2010crest.png",
           "file": "cm/cm-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Cameroon national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Cameroon_2010crest.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Cameroon national football team.",
+          "design": "The crest of the Cameroon national football team — a shield in Cameroon's national colours (green, red and gold) bearing a football beneath a gold star, on a banner reading “FECA FOOT”.",
           "source": "https://en.wikipedia.org/wiki/Cameroon_national_football_team",
           "sha256": "9c002486275c73bb7cedfec95bbf00096e1194582e949a1174281717f777a455",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The green-red-gold shield and the single gold star repeat Cameroon's own national flag, whose star is officially called the étoile unitaire — the “star of unity”. FECAFOOT is the acronym of the Fédération Camerounaise de Football, the national governing body. The team is nicknamed the Indomitable Lions, after the country's best-known animal, though this particular badge carries no lion.",
+            "sources": [
+              {
+                "title": "Flag of Cameroon — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Cameroon"
+              },
+              {
+                "title": "Cameroon national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cameroon_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -6134,10 +6182,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/e3/DFBEagle.svg",
           "file": "de/de-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Germany national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:DFBEagle.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Germany national football team.",
+          "design": "The crest of the Germany national football team — a stylised eagle within a ringed roundel reading “DEUTSCHER FUSSBALL-BUND”, above four gold stars.",
           "source": "https://en.wikipedia.org/wiki/Germany_national_football_team",
           "sha256": "23279fe184a7811a312a17c4cdf08d688c01f24559a053d0f98f6a5ef4d30a2a",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The eagle is Germany's federal eagle (Bundesadler), a heraldic emblem tracing back to the Holy Roman Empire and revived as the symbol of the reunified federal state; “Deutscher Fußball-Bund” is simply the association's own name, the German Football Association. FIFA's rules let a champion display one star per World Cup on its shirt; the four mark Germany's titles, won in 1954, 1974, 1990 and 2014.",
+            "sources": [
+              {
+                "title": "Coat of arms of Germany — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany"
+              },
+              {
+                "title": "Star (sport badge) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Star_(sport_badge)"
+              }
+            ]
+          }
         }
       ]
     },
@@ -7434,7 +7495,24 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/39/Spain_national_football_team_crest.svg",
           "licenceNote": "Non-free logo. The crest of the Spain national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Spain_national_football_team_crest.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
           "sha256": "bf7b59b49bf5b02b90c712728fcefa2104efbaa79f94438a334fca9cdffe9f2e",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The Pillars of Hercules — the twin rocks either side of the Strait of Gibraltar, said in antiquity to mark the edge of the known world — carry the motto PLVS VLTRA, Latin for “further beyond”: a reversal of the old warning “Ne plus ultra” (“nothing further beyond”), adopted after Spain's Atlantic voyages showed the ancients wrong. The quartered shield repeats the arms of the medieval kingdoms that united to form Spain — a castle for Castile, a lion for León, gold-and-red bars for Aragon, and a chain border for Navarre — with a pomegranate at the base for Granada, the last Moorish kingdom conquered in 1492. The royal crown marks the constitutional monarchy. FIFA's rules let a champion display one star per World Cup on its shirt; Spain's two mark its titles, won in 2010 and 2026.",
+            "sources": [
+              {
+                "title": "Coat of arms of Spain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain"
+              },
+              {
+                "title": "Royal Spanish Football Federation — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Royal_Spanish_Football_Federation"
+              },
+              {
+                "title": "Star (sport badge) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Star_(sport_badge)"
+              }
+            ]
+          }
         }
       ]
     },
@@ -8402,10 +8480,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/d/d5/FA_crest_2009.svg",
           "file": "gb/gb-eng-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of The Football Association (England) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:FA_crest_2009.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The Three Lions crest of The Football Association, worn by the England national team.",
+          "design": "The crest of The Football Association, worn by the England national team — three navy lions passant guardant, scattered with ten red-and-white Tudor roses, on a white shield below a “The FA” banner.",
           "source": "https://en.wikipedia.org/wiki/The_Football_Association",
           "sha256": "916c243831a62589e795323fd855e0aced9053cd33cb8859c6dbef53d3c87cc2",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The three lions descend from the arms of Richard I (“the Lionheart”), which originally stood for the three territories he ruled — England, Normandy and Aquitaine — and were worn by England teams from the FA's earliest internationals. The Tudor rose is England's own heraldic flower, its five white inner petals for the House of York and five red outer petals for the House of Lancaster marking their union under the Tudor dynasty; the FA was formally granted this coat of arms by the College of Arms on 30 March 1949, with ten roses scattered between the lions. Why exactly ten is not actually recorded: the FA's own history notes only that eleven (one per player) might have suited the game better, and it is unclear whether the number was meant for the FA's ten regional divisions at the time or was simply the College of Arms' own choice.",
+            "sources": [
+              {
+                "title": "Three Lions — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Three_Lions"
+              },
+              {
+                "title": "Coat of arms of the Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Football_Association"
+              }
+            ]
+          }
         },
         {
           "id": "gb-sct-football-crest",
@@ -11680,10 +11771,23 @@
           "name": "Crest of the Italy national football team",
           "commons": "Logo Italy National Football Team - 2023.svg",
           "file": "it/it-football-crest.svg",
-          "design": "The crest of the Italy national football team.",
+          "design": "The crest of the Italy national football team — “ITALIA” arched in blue above “FIGC” in gold, over green and red bars either side of a white gap evoking the Italian tricolour, beneath four blue stars.",
           "source": "https://en.wikipedia.org/wiki/Italy_national_football_team",
           "sha256": "5c5105c0344e541a4e567370641710e17074fe6161db35edf5845aac2aa0412f",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The green-white-red bars are Italy's own flag; FIGC is simply the federation's initials, the Federazione Italiana Giuoco Calcio. FIFA's rules let a champion display one star per World Cup on its shirt; the four above the shield mark Italy's titles, won in 1934, 1938, 1982 and 2006 — added to the crest one at a time as each was won, most recently in a 2007 redesign after the fourth.",
+            "sources": [
+              {
+                "title": "Star (sport badge) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Star_(sport_badge)"
+              },
+              {
+                "title": "Italy national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Italy_national_football_team"
+              }
+            ]
+          }
         }
       ]
     },
@@ -16588,10 +16692,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/3f/Mexico_national_football_team_crest.svg",
           "file": "mx/mx-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Mexico national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Mexico_national_football_team_crest.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Mexico national football team.",
+          "design": "The crest of the Mexico national football team — an eagle in profile within a green-and-red zigzag ring, gripping a football, above a banner reading “MÉXICO”.",
           "source": "https://en.wikipedia.org/wiki/Mexico_national_football_team",
           "sha256": "1021b4b6a94c01b40c38a3e0c4a3290d4fb8f07cfed516ea0ab5a31ae1e9f418",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The eagle is redrawn from Mexico's own coat of arms, whose eagle, cactus and serpent recall the Aztec founding legend of Tenochtitlán: the god Huitzilopochtli told the wandering Mexica people to build their city wherever they saw an eagle perched on a prickly pear cactus devouring a serpent, and they found the sign on an island in Lake Texcoco. The green, white and red are the colours of the national flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of Mexico — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico"
+              },
+              {
+                "title": "Mexico national football team logo — 1000 Logos",
+                "url": "https://1000logos.net/seleccion-mexicana-de-futbol-logo/"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -16934,7 +17051,20 @@
           "design": "The crest of the Football Association of Malaysia — a leaping Malayan tiger over a football on a black shield, ringed by a wreath and the banner “Persatuan Bolasepak Malaysia”.",
           "source": "https://en.wikipedia.org/wiki/Football_Association_of_Malaysia",
           "sha256": "62b451dfa592eee171b8cfc92a9d8f411115d8c406f07bf76232d0c749e83244",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The leaping tiger is the Harimau Malaya — the Malayan tiger, Malaysia's national animal and the national team's own nickname — shown as a symbol of the courage and valour expected of players on the pitch. The wreath is stalks of padi (rice), for national prosperity and for the game's growth from the grassroots up, and the crossed keris — the traditional Malay dagger — above the shield stands for nationalism, FAM representing Malaysia at every level of the sport; the circle binding the design stands for the unity and continuity of the game. The lower banner, “Persatuan Bolasepak Malaysia,” is simply the association's own name in Malay — literally “Football Association of Malaysia” (bola sepak, literally “kick-ball”, is the Malay term for football).",
+            "sources": [
+              {
+                "title": "LOGO | FAM",
+                "url": "https://fam.org.my/logo"
+              },
+              {
+                "title": "Malaysia national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Malaysia_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -17475,10 +17605,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/a/a9/Nigeria_Football_Federation_logo.svg",
           "file": "ng/ng-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Nigeria national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Nigeria_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Nigeria national football team.",
+          "design": "The crest of the Nigeria national football team — a green eagle perched on a black-and-white football, ringed by the words “NIGERIA FOOTBALL FEDERATION” and the year “1945”.",
           "source": "https://en.wikipedia.org/wiki/Nigeria_national_football_team",
           "sha256": "fc20d27dd24b5f35482fd8796c874e14987eae88fcf779d5e6f304756ee4e17e",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The eagle is drawn from Nigeria's own coat of arms and gives the team its nickname, the Super Eagles — originally the Green Eagles, a name chosen after independence to echo both the national flag and the eagle on the coat of arms, and changed to Super Eagles after the 1988 Africa Cup of Nations. The green matches the green-white-green national flag. “1945” is the year the federation, then the Nigeria Football Association, was formally launched; it took its current name, the Nigeria Football Federation, in 2008.",
+            "sources": [
+              {
+                "title": "Nigeria national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Nigeria_national_football_team"
+              },
+              {
+                "title": "Nigeria Football Federation — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Nigeria_Football_Federation"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -17746,10 +17889,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/7/78/Netherlands_national_football_team_logo.svg",
           "file": "nl/nl-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Netherlands national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Netherlands_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Netherlands national football team.",
+          "design": "The crest of the Netherlands national football team — a white rampant lion on an orange shield, with “KNVB” lettered above.",
           "source": "https://en.wikipedia.org/wiki/Netherlands_national_football_team",
           "sha256": "560fef71b98dd6333b2244b143bdb8d2f7380f502efdaadeac20c4a0d83f0b75",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The lion is the Netherlands' national and royal animal, drawn from Dutch heraldry, and has featured on the crest since the team's first international in 1907. Orange is the country's historic national colour, taken from the House of Orange-Nassau, the royal family descended from William the Silent, Prince of Orange — the same tie that gives the team its orange kit. KNVB is the association's own initials, Koninklijke Nederlandse Voetbalbond (Royal Dutch Football Association).",
+            "sources": [
+              {
+                "title": "Netherlands national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Netherlands_national_football_team"
+              }
+            ]
+          }
         }
       ]
     },
@@ -19805,10 +19957,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/e4/Portugal_national_football_team_logo.svg",
           "file": "pt/pt-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Portugal national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Portugal_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Portugal national football team.",
+          "design": "The crest of the Portugal national football team — a red step-cross outlined in gold (the Cross of the Order of Christ), enclosing a white shield charged with five small blue shields each bearing five white dots, under the letters “F.P.F.”",
           "source": "https://en.wikipedia.org/wiki/Portugal_national_football_team",
           "sha256": "e18cc64f44d1d7ba2b1497c73e53351f00aa7d70a39e08bf34eea42783b4382e",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The red cross is the Cross of the Order of Christ, the Portuguese successor to the Knights Templar, painted on the sails of Portugal's Age of Discovery ships. The white shield and its five small blue shields (quinas) repeat the centre of Portugal's own coat of arms; by tradition they represent either the Five Holy Wounds of Christ, the five wounds suffered by King Afonso Henriques at the Battle of Ourique (1139), or the five Moorish kings he defeated there — the accounts differ and none is official. The white dots within each shield are likewise said, by different traditions, to stand for the pieces of silver paid to Judas Iscariot or for the Portuguese Crown's own right to mint coinage. F.P.F. is simply the federation's initials, Federação Portuguesa de Futebol.",
+            "sources": [
+              {
+                "title": "Coat of arms of Portugal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal"
+              }
+            ]
+          }
         }
       ]
     },
@@ -25229,7 +25390,16 @@
           "design": "The crest of the United States Soccer Federation — a shield with “USA” on a blue chief above the red-and-white stripes of the national flag.",
           "source": "https://en.wikipedia.org/wiki/United_States_Soccer_Federation",
           "sha256": "aab90fc76bece2d33ada2f57fa35e4a38938a2198390a5cdf7d9e2d59ea1f219",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The 2016 redesign strips the badge to the national flag's own colours and stripes: “USA” over red-and-white vertical bars standing in for the flag's stripes, inside a heraldic shield, so the crest reads as a compressed version of the country's own flag rather than a separate emblem. Unlike the men's crest, the U.S. women's team has for periods worn stars above the shield for its FIFA Women's World Cup titles (1991, 1999, 2015 and 2019).",
+            "sources": [
+              {
+                "title": "The USMNT Crest, Explained — ColorWay Sports",
+                "url": "https://www.colorwaysports.com/stories/usmnt-crest-us-soccer-badge-explained"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -26670,7 +26840,16 @@
           "design": "The crest of the South African Football Association — a roundel split between a monochrome football and a gold, sun-rayed landscape, above the association's name.",
           "source": "https://en.wikipedia.org/wiki/South_African_Football_Association",
           "sha256": "c4a563521e13b60ce674f17b17cf0c101c8f92b2eb0ec74099b9a570e5fd3bc7",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The badge joins the game itself — a football — with a gold silhouette of the country's own map, standing for South African football as a national institution. SAFA was formed on 23 March 1991, when the previously racially-segregated football associations that had existed under apartheid united into a single, non-racial governing body.",
+            "sources": [
+              {
+                "title": "South African Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/South_African_Football_Association"
+              }
+            ]
+          }
         }
       ],
       "independence": {

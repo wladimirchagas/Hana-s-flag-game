@@ -179,7 +179,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ar-civil", category: "civilstate", name: "Civil flag of Argentina", from: 1861, to: 9999, path: "national-flags/ar/argentina-civil.svg", design: "The light-blue and white triband without the Sun of May — the optional civil flag, beside the state flag that carries the sun.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
     { id: "ar-arms", category: "coatofarms", name: "Coat of arms of Argentina", from: 1813, to: 9999, path: "national-flags/ar/argentina-arms.svg", design: "An oval party per fess azure and argent, two clasped hands holding a pike topped by a Phrygian cap, beneath the Sun of May and between laurel branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina" },
     { id: "ar-passport", category: "passport", name: "Passport of Argentina", path: "national-flags/ar/ar-passport.webp", design: "The cover of the Argentina passport.", source: "https://gicg.net/passport/ar/" },
-    { id: "ar-football-crest", category: "footballcrest", name: "Crest of the Argentina national football team", path: "national-flags/ar/ar-football-crest.svg", design: "The crest of the Argentina national football team.", source: "https://en.wikipedia.org/wiki/Argentina_national_football_team" },
+    { id: "ar-football-crest", category: "footballcrest", name: "Crest of the Argentina national football team", path: "national-flags/ar/ar-football-crest.svg", design: "The crest of the Argentina national football team — the letters “AFA” in white on a gold shield, below a striped band and above three gold stars, ringed by a gold laurel wreath.", source: "https://en.wikipedia.org/wiki/Argentina_national_football_team" },
   ],
   "AS": [
     { id: "as-official-national", category: "official", name: "Flag of American Samoa", from: 1960, to: 9999, path: "flags/sub/US/US-AS.svg", design: "A red-edged white triangle on blue bearing a bald eagle that holds a Samoan war club (uatogi) and fly-whisk (fue).", source: "https://en.wikipedia.org/wiki/Flag_of_American_Samoa" },
@@ -514,7 +514,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cm-bornu", category: "historical", name: "Flag of the Bornu Empire", from: 1380, to: 1884, priorPolity: "the Bornu Empire", path: "national-flags/cm/cameroon-bornu.svg", design: "The flag of the empire that held the country's far north for five centuries before European rule.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
     { id: "cm-arms", category: "coatofarms", name: "Coat of arms of Cameroon", from: 1986, to: 9999, path: "national-flags/cm/cameroon-arms.svg", design: "A shield in the flag's colours bearing a map of the country and the scales of justice, over crossed fasces, between two banners.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cameroon" },
     { id: "cm-passport", category: "passport", name: "Passport of Cameroon", path: "national-flags/cm/cm-passport.webp", design: "The cover of the Cameroon passport.", source: "https://gicg.net/passport/cm/" },
-    { id: "cm-football-crest", category: "footballcrest", name: "Crest of the Cameroon national football team", path: "national-flags/cm/cm-football-crest.png", design: "The crest of the Cameroon national football team.", source: "https://en.wikipedia.org/wiki/Cameroon_national_football_team" },
+    { id: "cm-football-crest", category: "footballcrest", name: "Crest of the Cameroon national football team", path: "national-flags/cm/cm-football-crest.png", design: "The crest of the Cameroon national football team — a shield in Cameroon's national colours (green, red and gold) bearing a football beneath a gold star, on a banner reading “FECA FOOT”.", source: "https://en.wikipedia.org/wiki/Cameroon_national_football_team" },
   ],
   "CN": [
     { id: "cn-official-national", category: "official", name: "Flag of the People's Republic of China", from: 1949, to: 9999, primary: true, path: "flags/cn.svg", design: "The national flag, hoisted 1 October 1949.", source: "https://en.wikipedia.org/wiki/Flag_of_China" },
@@ -613,7 +613,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "de-state", category: "civilstate", name: "State flag of Germany", from: 1950, to: 9999, path: "national-flags/de/germany-state.svg", design: "The black-red-gold tricolour charged with the federal shield and its eagle — flown by federal authorities, while the plain tricolour is the civil flag.", source: "https://en.wikipedia.org/wiki/List_of_German_flags" },
     { id: "de-arms", category: "coatofarms", name: "Coat of arms of Germany", from: 1950, to: 9999, path: "national-flags/de/de-arms.svg", design: "The Bundesadler — a black eagle with red beak and claws on a golden field.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany" },
     { id: "de-passport", category: "passport", name: "Passport of Germany", path: "national-flags/de/de-passport.webp", design: "The cover of the Germany passport.", source: "https://gicg.net/passport/de/" },
-    { id: "de-football-crest", category: "footballcrest", name: "Crest of the Germany national football team", path: "national-flags/de/de-football-crest.svg", design: "The crest of the Germany national football team.", source: "https://en.wikipedia.org/wiki/Germany_national_football_team" },
+    { id: "de-football-crest", category: "footballcrest", name: "Crest of the Germany national football team", path: "national-flags/de/de-football-crest.svg", design: "The crest of the Germany national football team — a stylised eagle within a ringed roundel reading “DEUTSCHER FUSSBALL-BUND”, above four gold stars.", source: "https://en.wikipedia.org/wiki/Germany_national_football_team" },
   ],
   "DJ": [
     { id: "dj-official-national", category: "official", name: "Flag of Djibouti", from: 1977, to: 9999, primary: true, path: "flags/dj.svg", design: "The national flag, adopted at independence in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
@@ -806,7 +806,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gb-passport", category: "passport", name: "British passport", path: "national-flags/gb/uk-passport.svg", design: "A dark blue cover with the Royal Coat of Arms in gold, above UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND.", source: "https://en.wikipedia.org/wiki/British_passport" },
     { id: "gb-passport-diplomatic", category: "passport", name: "British diplomatic passport", path: "national-flags/gb/uk-passport-diplomatic.svg", design: "The same blue cover and Royal Arms, headed DIPLOMATIC PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
     { id: "gb-passport-official", category: "passport", name: "British official passport", path: "national-flags/gb/uk-passport-official.svg", design: "The same blue cover and Royal Arms, headed OFFICIAL PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
-    { id: "gb-eng-football-crest", category: "footballcrest", name: "England — The Football Association crest", path: "national-flags/gb/gb-eng-football-crest.svg", design: "The Three Lions crest of The Football Association, worn by the England national team.", source: "https://en.wikipedia.org/wiki/The_Football_Association" },
+    { id: "gb-eng-football-crest", category: "footballcrest", name: "England — The Football Association crest", path: "national-flags/gb/gb-eng-football-crest.svg", design: "The crest of The Football Association, worn by the England national team — three navy lions passant guardant, scattered with ten red-and-white Tudor roses, on a white shield below a “The FA” banner.", source: "https://en.wikipedia.org/wiki/The_Football_Association" },
     { id: "gb-sct-football-crest", category: "footballcrest", name: "Scotland — Scottish Football Association crest", path: "national-flags/gb/gb-sct-football-crest.svg", design: "The crest of the Scottish Football Association, worn by the Scotland national team.", source: "https://en.wikipedia.org/wiki/Scottish_Football_Association" },
     { id: "gb-wls-football-crest", category: "footballcrest", name: "Wales — Football Association of Wales crest", path: "national-flags/gb/gb-wls-football-crest.svg", design: "The crest of the Football Association of Wales, worn by the Wales national team.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Wales" },
     { id: "gb-nir-football-crest", category: "footballcrest", name: "Northern Ireland — Irish Football Association crest", path: "national-flags/gb/gb-nir-football-crest.svg", design: "The crest of the Irish Football Association, which governs football in Northern Ireland.", source: "https://en.wikipedia.org/wiki/Irish_Football_Association" },
@@ -1090,7 +1090,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "it-pm", category: "standard", name: "Standard of the Prime Minister of Italy", from: 2008, to: 9999, path: "national-flags/it/italy-prime-minister.svg", design: "A rectangular blue flag with the emblem of the Republic.", source: "https://en.wikipedia.org/wiki/List_of_Italian_flags" },
     { id: "it-arms", category: "coatofarms", name: "Emblem of Italy", from: 1948, to: 9999, path: "national-flags/it/it-arms.svg", design: "A white five-pointed star over a cogwheel, framed by an olive branch and an oak branch on a red ribbon reading Repubblica Italiana.", source: "https://en.wikipedia.org/wiki/Emblem_of_Italy" },
     { id: "it-passport", category: "passport", name: "Passport of Italy", path: "national-flags/it/it-passport.webp", design: "The cover of the Italy passport.", source: "https://gicg.net/passport/it/" },
-    { id: "it-football-crest", category: "footballcrest", name: "Crest of the Italy national football team", path: "national-flags/it/it-football-crest.svg", design: "The crest of the Italy national football team.", source: "https://en.wikipedia.org/wiki/Italy_national_football_team" },
+    { id: "it-football-crest", category: "footballcrest", name: "Crest of the Italy national football team", path: "national-flags/it/it-football-crest.svg", design: "The crest of the Italy national football team — “ITALIA” arched in blue above “FIGC” in gold, over green and red bars either side of a white gap evoking the Italian tricolour, beneath four blue stars.", source: "https://en.wikipedia.org/wiki/Italy_national_football_team" },
   ],
   "JE": [
     { id: "je-official-national", category: "official", name: "Flag of Jersey", from: 1981, to: 9999, path: "flags/je.svg", design: "A red saltire on white, the shield of Jersey (three gold lions under a Plantagenet crown) in the upper triangle.", source: "https://en.wikipedia.org/wiki/Flag_of_Jersey" },
@@ -1509,7 +1509,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mx-president", category: "standard", name: "Presidential Standard of Mexico", path: "national-flags/mx/mx-president.svg", design: "The national tricolour bearing the coat of arms in gold beneath the arced legend Estados Unidos Mexicanos, flown to mark the presence of the President of Mexico.", source: "https://en.wikipedia.org/wiki/List_of_Mexican_flags" },
     { id: "mx-arms", category: "coatofarms", name: "Coat of arms of Mexico", from: 1968, to: 9999, path: "national-flags/mx/mx-arms.svg", design: "A golden eagle perched on a nopal cactus, devouring a rattlesnake, framed by oak and laurel branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
     { id: "mx-passport", category: "passport", name: "Passport of Mexico", path: "national-flags/mx/mx-passport.webp", design: "The cover of the Mexico passport.", source: "https://gicg.net/passport/mx/" },
-    { id: "mx-football-crest", category: "footballcrest", name: "Crest of the Mexico national football team", path: "national-flags/mx/mx-football-crest.svg", design: "The crest of the Mexico national football team.", source: "https://en.wikipedia.org/wiki/Mexico_national_football_team" },
+    { id: "mx-football-crest", category: "footballcrest", name: "Crest of the Mexico national football team", path: "national-flags/mx/mx-football-crest.svg", design: "The crest of the Mexico national football team — an eagle in profile within a green-and-red zigzag ring, gripping a football, above a banner reading “MÉXICO”.", source: "https://en.wikipedia.org/wiki/Mexico_national_football_team" },
   ],
   "MY": [
     { id: "my-official-national", category: "official", name: "Flag of Malaysia (Jalur Gemilang)", from: 1963, to: 9999, primary: true, path: "flags/my.svg", design: "The national flag, adopted at the formation of Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
@@ -1583,7 +1583,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ng-president", category: "standard", name: "Flag of the President of Nigeria", path: "national-flags/ng/nigeria-president.svg", design: "The presidential flag of the Federal Republic.", source: "https://en.wikipedia.org/wiki/List_of_Nigerian_flags" },
     { id: "ng-arms", category: "coatofarms", name: "Coat of arms of Nigeria", from: 1960, to: 9999, path: "national-flags/ng/ng-arms.svg", design: "A black shield with a white Y, borne by two horses, an eagle above, on a base of Costus spectabilis flowers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria" },
     { id: "ng-passport", category: "passport", name: "Passport of Nigeria", path: "national-flags/ng/ng-passport.webp", design: "The cover of the Nigeria passport.", source: "https://gicg.net/passport/ng/" },
-    { id: "ng-football-crest", category: "footballcrest", name: "Crest of the Nigeria national football team", path: "national-flags/ng/ng-football-crest.svg", design: "The crest of the Nigeria national football team.", source: "https://en.wikipedia.org/wiki/Nigeria_national_football_team" },
+    { id: "ng-football-crest", category: "footballcrest", name: "Crest of the Nigeria national football team", path: "national-flags/ng/ng-football-crest.svg", design: "The crest of the Nigeria national football team — a green eagle perched on a black-and-white football, ringed by the words “NIGERIA FOOTBALL FEDERATION” and the year “1945”.", source: "https://en.wikipedia.org/wiki/Nigeria_national_football_team" },
   ],
   "NI": [
     { id: "ni-official-national", category: "official", name: "Flag of Nicaragua", from: 1908, to: 9999, primary: true, path: "flags/ni.svg", design: "The national flag of Nicaragua, in the form adopted in 1908.", source: "https://en.wikipedia.org/wiki/Flag_of_Nicaragua" },
@@ -1606,7 +1606,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "nl-government", category: "civilstate", name: "Flag of the Government of the Netherlands", from: 2011, to: 9999, path: "national-flags/nl/netherlands-government.svg", design: "The government's own flag, flown at ministries.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands" },
     { id: "nl-arms", category: "coatofarms", name: "Coat of arms of the Netherlands", from: 1815, to: 9999, path: "national-flags/nl/netherlands-arms.svg", design: "A crowned gold lion on a blue field strewn with billets, holding a sword and seven arrows, beneath a royal mantle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Netherlands" },
     { id: "nl-passport", category: "passport", name: "Passport of Netherlands", path: "national-flags/nl/nl-passport.webp", design: "The cover of the Netherlands passport.", source: "https://gicg.net/passport/nl/" },
-    { id: "nl-football-crest", category: "footballcrest", name: "Crest of the Netherlands national football team", path: "national-flags/nl/nl-football-crest.svg", design: "The crest of the Netherlands national football team.", source: "https://en.wikipedia.org/wiki/Netherlands_national_football_team" },
+    { id: "nl-football-crest", category: "footballcrest", name: "Crest of the Netherlands national football team", path: "national-flags/nl/nl-football-crest.svg", design: "The crest of the Netherlands national football team — a white rampant lion on an orange shield, with “KNVB” lettered above.", source: "https://en.wikipedia.org/wiki/Netherlands_national_football_team" },
   ],
   "NO": [
     { id: "no-official-national", category: "official", name: "Flag of Norway", from: 1821, to: 9999, primary: true, path: "flags/no.svg", design: "The national flag of Norway, in the form adopted in 1821.", source: "https://en.wikipedia.org/wiki/Flag_of_Norway" },
@@ -1784,7 +1784,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pt-pm", category: "standard", name: "Flag of the Prime Minister of Portugal", from: 1972, to: 9999, path: "national-flags/pt/portugal-prime-minister.svg", design: "As the president’s flag, but on white.", source: "https://en.wikipedia.org/wiki/List_of_Portuguese_flags" },
     { id: "pt-arms", category: "coatofarms", name: "Coat of arms of Portugal", from: 1911, to: 9999, path: "national-flags/pt/pt-arms.svg", design: "Five blue shields each charged with five silver bezants, within a red border of seven golden castles, over a golden armillary sphere.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
     { id: "pt-passport", category: "passport", name: "Passport of Portugal", path: "national-flags/pt/pt-passport.webp", design: "The cover of the Portugal passport.", source: "https://gicg.net/passport/pt/" },
-    { id: "pt-football-crest", category: "footballcrest", name: "Crest of the Portugal national football team", path: "national-flags/pt/pt-football-crest.svg", design: "The crest of the Portugal national football team.", source: "https://en.wikipedia.org/wiki/Portugal_national_football_team" },
+    { id: "pt-football-crest", category: "footballcrest", name: "Crest of the Portugal national football team", path: "national-flags/pt/pt-football-crest.svg", design: "The crest of the Portugal national football team — a red step-cross outlined in gold (the Cross of the Order of Christ), enclosing a white shield charged with five small blue shields each bearing five white dots, under the letters “F.P.F.”", source: "https://en.wikipedia.org/wiki/Portugal_national_football_team" },
   ],
   "PW": [
     { id: "pw-official-national", category: "official", name: "Flag of Palau", from: 1981, to: 9999, primary: true, path: "flags/pw.svg", design: "The national flag of Palau, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Palau" },
@@ -2636,6 +2636,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Argentina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina" },
     ],
   },
+  "ar-football-crest": {
+    description: "AFA is simply the association's own initials, Asociación del Fútbol Argentino. FIFA's rules let a champion display one star per World Cup on its shirt; the three above the shield mark Argentina's titles, won in 1978, 1986 and 2022.",
+    sources: [
+      { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
+      { title: "Argentine Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Argentine_Football_Association" },
+    ],
+  },
   "as-seal": {
     description: "The seal is built from the emblems of the faʻamatai, the Samoan chiefly system: the fue (fly-whisk) for the wisdom of the talking chief, the toʻotoʻo (orator's staff) for his authority, and the tanoa (kava bowl) for service to the chief, all on a tapa-cloth ground for Samoan artistry. The motto reads Sāmoa Muamua Le Atua — “Samoa, let God be first.” The date 17 April 1900 marks the day American Samoa became a U.S. territory.",
     sources: [
@@ -2672,6 +2679,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold device at the centre is the Commonwealth Coat of Arms — the six-quartered shield with kangaroo and emu — so the document a traveller carries is stamped with the federation’s own emblem rather than with the flag.",
     sources: [
       { title: "Australian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Australian_passport" },
+    ],
+  },
+  "au-football-crest": {
+    description: "Green and gold are Australia's national sporting colours — green for the country's eucalypts (“gum-tree green”), gold for the golden wattle, the national floral emblem (“wattle-gold”) — first adopted by an Australian sports team touring England in 1899 and carried since into the Socceroos' own kit and this Football Australia mark.",
+    sources: [
+      { title: "Green and gold — Wikipedia", url: "https://en.wikipedia.org/wiki/Green_and_gold" },
     ],
   },
   "aw-arms": {
@@ -2801,6 +2814,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Brazilian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Brazilian_passport" },
     ],
   },
+  "br-football-crest": {
+    description: "The shield's blue, green, yellow and white repeat the colours of the Brazilian flag, and the white monogram forming “CBF” against the blue field is drawn as an upward arrow, echoing the shield's traditional heraldic sense of defence and strength. FIFA's rules let a champion display one star per World Cup on its shirt; the five above the shield mark Brazil's titles — 1958, 1962, 1970, 1994 and 2002 — with the fourth and fifth stars added to the crest as each was won.",
+    sources: [
+      { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
+      { title: "Brazil national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Brazil_national_football_team" },
+    ],
+  },
   "bs-arms": {
     description: "The shield shows Columbus's flagship the Santa María sailing under a rising golden sun — the islands were his first American landfall in 1492, and the sun is their light and future. The supporters are the country's own creatures: a blue marlin and a flamingo, the national bird. The crest above is a conch shell before a spray of palm fronds — the conch a staple food of the islands. The motto beneath, EXPULSIS PIRATIS – RESTITUTA COMMERCIA, means \"Pirates Expelled, Commerce Restored\", recalling the early 18th century when the Bahamas were a pirate haven — the Flying Gang of Nassau — until the Crown drove them out.",
     sources: [
@@ -2897,6 +2917,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Cameroon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cameroon" },
     ],
   },
+  "cm-football-crest": {
+    description: "The green-red-gold shield and the single gold star repeat Cameroon's own national flag, whose star is officially called the étoile unitaire — the “star of unity”. FECAFOOT is the acronym of the Fédération Camerounaise de Football, the national governing body. The team is nicknamed the Indomitable Lions, after the country's best-known animal, though this particular badge carries no lion.",
+    sources: [
+      { title: "Flag of Cameroon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" },
+      { title: "Cameroon national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Cameroon_national_football_team" },
+    ],
+  },
   "cn-arms": {
     description: "Every element is a claim about who the state belongs to. The ears of wheat and rice around the border stand for the peasantry and the cogwheel at the base for industrial workers — together the worker-peasant alliance the People’s Republic was founded on. Tiananmen Gate is where the republic was proclaimed in 1949 and stands for the fighting spirit of the Chinese people, dating the emblem to the revolution rather than to any dynasty. Above it the five gold stars repeat the national flag: the large star the Communist Party, the four smaller ones the people united behind it.",
     sources: [
@@ -2949,6 +2976,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Bundesadler, or Federal Eagle, is a single-headed black eagle on gold whose lineage runs back through the Weimar Republic to the eagle of the Holy Roman Empire, a symbol traced to Charlemagne. The Federal Republic readopted the design in 1950. The single head — as opposed to the later double-headed imperial eagle — marks that this is the eagle of a German nation-state, not of the old multinational empire; today it stands for the federal institutions and the unity of the republic.",
     sources: [
       { title: "Coat of arms of Germany — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany" },
+    ],
+  },
+  "de-football-crest": {
+    description: "The eagle is Germany's federal eagle (Bundesadler), a heraldic emblem tracing back to the Holy Roman Empire and revived as the symbol of the reunified federal state; “Deutscher Fußball-Bund” is simply the association's own name, the German Football Association. FIFA's rules let a champion display one star per World Cup on its shirt; the four mark Germany's titles, won in 1954, 1974, 1990 and 2014.",
+    sources: [
+      { title: "Coat of arms of Germany — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany" },
+      { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
     ],
   },
   "dj-arms": {
@@ -3009,6 +3043,14 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield is a list of the kingdoms that became Spain: the castle of Castile, the lion of León, the pallets of Aragón, the chains of Navarre, and the pomegranate of Granada in base — added for the last Muslim kingdom to fall, in 1492. At the centre sits the small escutcheon of the House of Bourbon, the reigning dynasty. Flanking the shield are the Pillars of Hercules, the classical name for the rock either side of the Strait of Gibraltar, wrapped in a ribbon reading Plus Ultra — “further beyond” — which inverts the older warning Non plus ultra, nothing further beyond, to claim the Atlantic crossing and the empire past it.",
     sources: [
       { title: "Coat of arms of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain" },
+    ],
+  },
+  "es-football-crest": {
+    description: "The Pillars of Hercules — the twin rocks either side of the Strait of Gibraltar, said in antiquity to mark the edge of the known world — carry the motto PLVS VLTRA, Latin for “further beyond”: a reversal of the old warning “Ne plus ultra” (“nothing further beyond”), adopted after Spain's Atlantic voyages showed the ancients wrong. The quartered shield repeats the arms of the medieval kingdoms that united to form Spain — a castle for Castile, a lion for León, gold-and-red bars for Aragon, and a chain border for Navarre — with a pomegranate at the base for Granada, the last Moorish kingdom conquered in 1492. The royal crown marks the constitutional monarchy. FIFA's rules let a champion display one star per World Cup on its shirt; Spain's two mark its titles, won in 2010 and 2026.",
+    sources: [
+      { title: "Coat of arms of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain" },
+      { title: "Royal Spanish Football Federation — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Spanish_Football_Federation" },
+      { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
     ],
   },
   "et-arms": {
@@ -3094,6 +3136,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "British passport — Wikipedia", url: "https://en.wikipedia.org/wiki/British_passport" },
       { title: "British nationality law — Wikipedia", url: "https://en.wikipedia.org/wiki/British_nationality_law" },
+    ],
+  },
+  "gb-eng-football-crest": {
+    description: "The three lions descend from the arms of Richard I (“the Lionheart”), which originally stood for the three territories he ruled — England, Normandy and Aquitaine — and were worn by England teams from the FA's earliest internationals. The Tudor rose is England's own heraldic flower, its five white inner petals for the House of York and five red outer petals for the House of Lancaster marking their union under the Tudor dynasty; the FA was formally granted this coat of arms by the College of Arms on 30 March 1949, with ten roses scattered between the lions. Why exactly ten is not actually recorded: the FA's own history notes only that eleven (one per player) might have suited the game better, and it is unclear whether the number was meant for the FA's ten regional divisions at the time or was simply the College of Arms' own choice.",
+    sources: [
+      { title: "Three Lions — Wikipedia", url: "https://en.wikipedia.org/wiki/Three_Lions" },
+      { title: "Coat of arms of the Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Football_Association" },
     ],
   },
   "gd-arms": {
@@ -3280,6 +3329,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 1948, the emblem is built from republican symbols rather than dynastic heraldry. The white Stella d'Italia — the ancient Star of Italy — sits over a steel cogwheel standing for labour, the foundation the Constitution names in its first article (“a democratic republic founded on labour”). The olive branch to the left is peace; the oak branch to the right is strength and dignity (Latin robur means both oak and strength); the red ribbon binding them names the Repubblica Italiana.",
     sources: [
       { title: "Emblem of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Italy" },
+    ],
+  },
+  "it-football-crest": {
+    description: "The green-white-red bars are Italy's own flag; FIGC is simply the federation's initials, the Federazione Italiana Giuoco Calcio. FIFA's rules let a champion display one star per World Cup on its shirt; the four above the shield mark Italy's titles, won in 1934, 1938, 1982 and 2006 — added to the crest one at a time as each was won, most recently in a 2007 redesign after the fourth.",
+    sources: [
+      { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
+      { title: "Italy national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Italy_national_football_team" },
     ],
   },
   "je-arms": {
@@ -3565,6 +3621,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
     ],
   },
+  "mx-football-crest": {
+    description: "The eagle is redrawn from Mexico's own coat of arms, whose eagle, cactus and serpent recall the Aztec founding legend of Tenochtitlán: the god Huitzilopochtli told the wandering Mexica people to build their city wherever they saw an eagle perched on a prickly pear cactus devouring a serpent, and they found the sign on an island in Lake Texcoco. The green, white and red are the colours of the national flag.",
+    sources: [
+      { title: "Coat of arms of Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
+      { title: "Mexico national football team logo — 1000 Logos", url: "https://1000logos.net/seleccion-mexicana-de-futbol-logo/" },
+    ],
+  },
   "my-arms": {
     description: "The crest repeats the flag: a yellow crescent and a fourteen-pointed federal star, yellow being the colour of Malay royalty, so the crest stands for the monarchy, while the star and crescent together carry Islam as the religion of the federation. The star’s fourteen points were originally the fourteen states of 1963; when Singapore left in 1965 the point was not removed but re-read as the federal territories. The shield is the federation assembled piece by piece — five krises across the chief for the five formerly Unfederated Malay States, and quarters for the other members — so a viewer can read which states joined how. The two tigers are held over from the arms of the Federated Malay States.",
     sources: [
@@ -3575,6 +3638,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms in the centre are the same crest, tiger supporters and fourteen-point federal star the country's coat of arms carries, so the passport repeats the federation's own claim about itself. The text appears in Malay and English together, as the constitution requires of official documents.",
     sources: [
       { title: "Malaysian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Malaysian_passport" },
+    ],
+  },
+  "my-football-crest": {
+    description: "The leaping tiger is the Harimau Malaya — the Malayan tiger, Malaysia's national animal and the national team's own nickname — shown as a symbol of the courage and valour expected of players on the pitch. The wreath is stalks of padi (rice), for national prosperity and for the game's growth from the grassroots up, and the crossed keris — the traditional Malay dagger — above the shield stands for nationalism, FAM representing Malaysia at every level of the sport; the circle binding the design stands for the unity and continuity of the game. The lower banner, “Persatuan Bolasepak Malaysia,” is simply the association's own name in Malay — literally “Football Association of Malaysia” (bola sepak, literally “kick-ball”, is the Malay term for football).",
+    sources: [
+      { title: "LOGO | FAM", url: "https://fam.org.my/logo" },
+      { title: "Malaysia national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Malaysia_national_football_team" },
     ],
   },
   "mz-emblem": {
@@ -3607,6 +3677,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Nigeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria" },
     ],
   },
+  "ng-football-crest": {
+    description: "The eagle is drawn from Nigeria's own coat of arms and gives the team its nickname, the Super Eagles — originally the Green Eagles, a name chosen after independence to echo both the national flag and the eagle on the coat of arms, and changed to Super Eagles after the 1988 Africa Cup of Nations. The green matches the green-white-green national flag. “1945” is the year the federation, then the Nigeria Football Association, was formally launched; it took its current name, the Nigeria Football Federation, in 2008.",
+    sources: [
+      { title: "Nigeria national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Nigeria_national_football_team" },
+      { title: "Nigeria Football Federation — Wikipedia", url: "https://en.wikipedia.org/wiki/Nigeria_Football_Federation" },
+    ],
+  },
   "ni-arms": {
     description: "Nicaragua's arms are the federation's arms, kept: the triangle is equality, the rainbow across the top is peace, the Phrygian cap beneath it is liberty, and the five volcanoes standing between two seas are the union and brotherhood of the five Central American countries — not five Nicaraguan mountains. Four of those five states went their own way in 1838; the emblem still counts them all.",
     sources: [
@@ -3617,6 +3694,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 1815 and modified in 1907, the arms fuse two inheritances: the blue field strewn with gold billets comes from the arms of the House of Nassau, and the lion from the arms of the former Dutch Republic. What the lion holds is the history — a sword in its right paw, and in its left SEVEN arrows bound together, one for each of the seven provinces of the Republic. The bundle is the old fable made heraldic: arrows that break singly and hold together bound. The monarch places the shield on a red mantle lined with ermine, beneath the royal crown.",
     sources: [
       { title: "Coat of arms of the Netherlands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Netherlands" },
+    ],
+  },
+  "nl-football-crest": {
+    description: "The lion is the Netherlands' national and royal animal, drawn from Dutch heraldry, and has featured on the crest since the team's first international in 1907. Orange is the country's historic national colour, taken from the House of Orange-Nassau, the royal family descended from William the Silent, Prince of Orange — the same tie that gives the team its orange kit. KNVB is the association's own initials, Koninklijke Nederlandse Voetbalbond (Royal Dutch Football Association).",
+    sources: [
+      { title: "Netherlands national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Netherlands_national_football_team" },
     ],
   },
   "no-sami": {
@@ -3729,6 +3812,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "pt-arms": {
     description: "The five blue shields set in a cross — the quinas — are traditionally read as the Five Wounds of Christ, or the five Moorish kings said to have been defeated at Ourique; the five silver bezants on each recall the monarch's right to mint coin. The red border of seven golden castles, fixed at seven by King Sebastian, stands for strongholds taken from the Moors in the Reconquista. Beneath sits the golden armillary sphere, the navigator's instrument that marks Portugal's Age of Discovery. The same shields and castles appear on the national flag.",
+    sources: [
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
+    ],
+  },
+  "pt-football-crest": {
+    description: "The red cross is the Cross of the Order of Christ, the Portuguese successor to the Knights Templar, painted on the sails of Portugal's Age of Discovery ships. The white shield and its five small blue shields (quinas) repeat the centre of Portugal's own coat of arms; by tradition they represent either the Five Holy Wounds of Christ, the five wounds suffered by King Afonso Henriques at the Battle of Ourique (1139), or the five Moorish kings he defeated there — the accounts differ and none is official. The white dots within each shield are likewise said, by different traditions, to stand for the pieces of silver paid to Judas Iscariot or for the Portuguese Crown's own right to mint coinage. F.P.F. is simply the federation's initials, Federação Portuguesa de Futebol.",
     sources: [
       { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
     ],
@@ -4034,6 +4123,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "United States passport — Wikipedia", url: "https://en.wikipedia.org/wiki/United_States_passport" },
     ],
   },
+  "us-football-crest": {
+    description: "The 2016 redesign strips the badge to the national flag's own colours and stripes: “USA” over red-and-white vertical bars standing in for the flag's stripes, inside a heraldic shield, so the crest reads as a compressed version of the country's own flag rather than a separate emblem. Unlike the men's crest, the U.S. women's team has for periods worn stars above the shield for its FIFA Women's World Cup titles (1991, 1999, 2015 and 2019).",
+    sources: [
+      { title: "The USMNT Crest, Explained — ColorWay Sports", url: "https://www.colorwaysports.com/stories/usmnt-crest-us-soccer-badge-explained" },
+    ],
+  },
   "uy-arms": {
     description: "Each of the four quarters carries one idea, and two of them are animals rather than emblems. The upper left holds golden scales for equality and justice; the upper right the Cerro de Montevideo with its fortress on the summit, for strength. Below, a galloping black horse stands for liberty and a golden ox for abundance and plenty. The rising Sun of May crowning the oval is the birth of the nation and the May Revolution, and the laurel branch on one side with the olive on the other are triumph and peace.",
     sources: [
@@ -4117,6 +4212,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold device is the post-2000 coat of arms — the Khoisan rock-art figures and the secretary bird — so the passport carries the emblem adopted after apartheid rather than the one it replaced. The heading appears in English and Afrikaans, two of the eleven official languages.",
     sources: [
       { title: "South African passport — Wikipedia", url: "https://en.wikipedia.org/wiki/South_African_passport" },
+    ],
+  },
+  "za-football-crest": {
+    description: "The badge joins the game itself — a football — with a gold silhouette of the country's own map, standing for South African football as a national institution. SAFA was formed on 23 March 1991, when the previously racially-segregated football associations that had existed under apartheid united into a single, non-racial governing body.",
+    sources: [
+      { title: "South African Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/South_African_Football_Association" },
     ],
   },
   "zm-arms": {
