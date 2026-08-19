@@ -1,5 +1,5 @@
 /**
- * FIFA basis for the world-map grid's "Football crests" view.
+ * FIFA basis for the world-map grid's "Football associations" view.
  *
  * That view (and ONLY that view — flags / arms / passports stay on the 195 UN
  * members) is drawn from FIFA's ~211 member associations instead:
