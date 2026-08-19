@@ -51,7 +51,7 @@ export function symbolNoun(category: NationalFlagCategory): string {
     case "passport":
       return "Passport";
     case "footballcrest":
-      return "Football crest";
+      return "Football association";
     default:
       return "Flag";
   }

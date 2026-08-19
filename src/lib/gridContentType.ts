@@ -15,7 +15,7 @@ export const GRID_CONTENT_TYPE_LABELS: Record<GridContentType, string> = {
   flag: "National flags",
   coatofarms: "Coats of arms",
   passport: "Passports",
-  footballcrest: "Football crests",
+  footballcrest: "Football associations",
 };
 
 export const GRID_CONTENT_TYPE_ORDER: readonly GridContentType[] = [

@@ -32,7 +32,7 @@ import { ENTITY_STATUS_LABEL, specialEntitiesOf, type SpecialEntity } from "../l
  *                      explanation of what its charges STAND FOR.
  *   Passports          the covers of the country's passports, ordinary and special
  *                      (diplomatic, official, service).
- *   Football crest     the crest/logo of the country's national football (soccer)
+ *   Football association the crest/logo of the country's national football (soccer)
  *                      association — a copyrighted mark, so it is bundled non-free
  *                      with a recorded licenceNote, like the passport covers.
  *
@@ -66,7 +66,7 @@ const CATEGORY_HEADINGS: Record<NationalFlagCategory, string> = {
   indigenous: "Indigenous flags",
   coatofarms: "Coat of arms",
   passport: "Passports",
-  footballcrest: "Football crest",
+  footballcrest: "Football association",
 };
 
 /** The order the sections appear in — matches the generator's own ordering. */
