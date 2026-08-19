@@ -548,12 +548,21 @@
           "id": "al-football-crest",
           "category": "footballcrest",
           "name": "Crest of the Albania national football team",
-          "commons": "Albanian Football Federation.svg",
+          "commons": "Stema e Fanellës së Kombëtares.svg",
           "file": "al/al-football-crest.svg",
-          "design": "The crest of the Albania national football team.",
-          "source": "https://en.wikipedia.org/wiki/Albanian_Football_Federation",
-          "sha256": "a43f675ef7037a88548a76cb1326b8ce99a463d00606367b9e6ccaf010b60c45",
-          "fetched": "2026-08-18"
+          "design": "The crest of the Albania national football team — a black double-headed eagle on a red shield, above the letters “FSHF”.",
+          "source": "https://en.wikipedia.org/wiki/Albania_national_football_team",
+          "sha256": "580ba833736270630bbb55fd7d6574fdedbb0a1c9e273fbb8bfc0fb02f3fb086",
+          "fetched": "2026-08-19",
+          "meaning": {
+            "description": "The black double-headed eagle on red repeats Albania's own national flag. It was a common heraldic symbol among Albanian noble families in the late Middle Ages, and became identified with Albanians generally after the 15th-century lord Skanderbeg adopted the same double-headed-eagle design used in Eastern Roman (Byzantine) imperial heraldry for his revolt against Ottoman rule; the eagle remained a symbol of Albanian national identity through Ottoman rule and was raised as the flag of the newly independent state in 1912. FSHF is the federation's own initials, the Federata Shqiptare e Futbollit (Albanian Football Federation).",
+            "sources": [
+              {
+                "title": "Flag of Albania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Albania"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -1369,23 +1378,22 @@
         {
           "id": "au-football-crest",
           "category": "footballcrest",
-          "name": "Crest of Football Australia",
-          "url": "https://upload.wikimedia.org/wikipedia/en/f/fc/Football_Australia_logo.svg",
+          "name": "Crest of the Australia national football team",
           "file": "au/au-football-crest.svg",
-          "licenceNote": "Tagged public domain on the English Wikipedia (a simple emblem below the threshold of originality) but held there as a local file rather than on Wikimedia Commons, so it is fetched by direct URL (https://en.wikipedia.org/wiki/File:Football_Australia_logo.svg). Bundled at the repository owner's explicit direction (2026-08) alongside the other football crests.",
-          "design": "The logo of Football Australia — an abstract ball formed of interlocking green-and-gold curves, beside the words “Football Australia”.",
-          "source": "https://en.wikipedia.org/wiki/Football_Australia",
-          "sha256": "0fa3de102fab85e9d726d631c9e77a3abe6ae07e93be9af87532141ee665c979",
-          "fetched": "2026-08-16",
+          "design": "The crest of the Australia national football team — a gold shield bearing the Australian coat of arms (a quartered badge of the six states beneath the seven-pointed Commonwealth Star), flanked by a kangaroo and an emu, over the word “AUSTRALIA” and a sprig of golden wattle.",
+          "source": "https://en.wikipedia.org/wiki/Australia_national_soccer_team",
+          "sha256": "e52b3887e78b134c8018917d4821d74351c803ef9a54c19a5e800e8a9b3f2be7",
+          "fetched": "2026-08-19",
           "meaning": {
-            "description": "Green and gold are Australia's national sporting colours — green for the country's eucalypts (“gum-tree green”), gold for the golden wattle, the national floral emblem (“wattle-gold”) — first adopted by an Australian sports team touring England in 1899 and carried since into the Socceroos' own kit and this Football Australia mark.",
+            "description": "The badge is Australia's own coat of arms. The kangaroo and emu were chosen as supporters partly because neither animal can easily walk backwards, taken to symbolise a nation that only moves forward. The seven-pointed Commonwealth Star above the shield stands for the federation: six points for the original six states, the seventh for its territories. The shield itself quarters each state's own badge — among them the Southern Cross for Victoria, a Maltese cross for Queensland, a black swan for Western Australia and Saint George's Cross with a lion for New South Wales. The golden wattle, Australia's national floral emblem, was not part of the original 1912 royal warrant for the arms but has been added as decoration ever since.",
             "sources": [
               {
-                "title": "Green and gold — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Green_and_gold"
+                "title": "Coat of arms of Australia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia"
               }
             ]
-          }
+          },
+          "commons": "Australia national football team badge.svg"
         }
       ],
       "omitted": [
@@ -8199,23 +8207,27 @@
         {
           "id": "fr-football-crest",
           "category": "footballcrest",
-          "name": "Crest of the French Football Federation (FFF)",
-          "url": "https://upload.wikimedia.org/wikipedia/en/2/23/French_Football_Federation_logo.svg",
+          "name": "Crest of the France national football team",
           "file": "fr/fr-football-crest.svg",
-          "licenceNote": "Non-free logo. The crest of the French Football Federation (FFF) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:French_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the French Football Federation — a hexagon (for the shape of France) in blue, white and red bearing a white Gallic rooster over the letters “FFF”, with two gold stars above.",
-          "source": "https://en.wikipedia.org/wiki/French_Football_Federation",
+          "licenceNote": "Non-free logo. The crest of the France national football team is a copyrighted, trademarked emblem held on the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:France_national_football_team_seal.svg); no freely-licensed version exists on Wikimedia Commons. Replaces a hexagon-shield rendering with a rooster silhouette, which is not the actual badge worn on the shirt — a distinct, fully-illustrated gold rooster.",
+          "design": "The crest of the France national football team — an illustrated gold Gallic rooster with a red comb and wattle, above “FFF” and “FRANCE” in gold lettering, beneath two gold stars.",
+          "source": "https://en.wikipedia.org/wiki/France_national_football_team",
           "meaning": {
-            "description": "The crest's colours and imagery draw on two national symbols — the blue-white-red of the French flag and the Gallic rooster (coq gaulois). The two gold stars above the shield mark France's two FIFA World Cup titles, won in 1998 and 2018.",
+            "description": "The Gallic rooster (coq gaulois) is one of France's oldest national symbols, its name a Latin pun — gallus meant both “rooster” and “inhabitant of Gaul” — revived as a patriotic emblem during the French Revolution. FFF is the federation's own initials, the Fédération Française de Football. FIFA's rules let a champion display one star per World Cup on its shirt; France's two mark its titles, won in 1998 and 2018.",
             "sources": [
               {
-                "title": "France national football team — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/France_national_football_team"
+                "title": "Gallic rooster — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Gallic_rooster"
+              },
+              {
+                "title": "Star (sport badge) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Star_(sport_badge)"
               }
             ]
           },
-          "sha256": "9ad9eae897633fb19132bc23e94eece5af3e59b4980b902d130bdca97780e7b1",
-          "fetched": "2026-08-16"
+          "sha256": "9842f93b511b9f6e076bd5c0ce31b96799a730b4e9a04a57144c2b4b4daea21d",
+          "fetched": "2026-08-19",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/France_national_football_team_seal.svg"
         }
       ]
     },
@@ -8544,15 +8556,14 @@
           "id": "gb-eng-football-crest",
           "category": "footballcrest",
           "name": "England — The Football Association crest",
-          "url": "https://upload.wikimedia.org/wikipedia/en/d/d5/FA_crest_2009.svg",
           "file": "gb/gb-eng-football-crest.svg",
-          "licenceNote": "Non-free logo. The crest of The Football Association (England) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:FA_crest_2009.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of The Football Association, worn by the England national team — three navy lions passant guardant, scattered with ten red-and-white Tudor roses, on a white shield below a “The FA” banner.",
-          "source": "https://en.wikipedia.org/wiki/The_Football_Association",
-          "sha256": "916c243831a62589e795323fd855e0aced9053cd33cb8859c6dbef53d3c87cc2",
-          "fetched": "2026-08-16",
+          "licenceNote": "Non-free logo. The crest of the England national football team is a copyrighted, trademarked emblem held on the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:England_national_football_team_crest.svg); no freely-licensed version exists on Wikimedia Commons. Replaces a pre-2009 rendering that still carried the “The FA” banner across the top, which the FA removed from the shirt crest in 2009.",
+          "design": "The crest of The Football Association, worn by the England national team — three navy lions passant guardant, scattered with ten red-and-white Tudor roses, on a white shield with a navy border, beneath a single silver star.",
+          "source": "https://en.wikipedia.org/wiki/England_national_football_team",
+          "sha256": "5d94be6b39b1afa3a654747dfc359a1f0b2f63fedfa45b203d8eb9f8c401cd48",
+          "fetched": "2026-08-19",
           "meaning": {
-            "description": "The three lions descend from the arms of Richard I (“the Lionheart”), which originally stood for the three territories he ruled — England, Normandy and Aquitaine — and were worn by England teams from the FA's earliest internationals. The Tudor rose is England's own heraldic flower, its five white inner petals for the House of York and five red outer petals for the House of Lancaster marking their union under the Tudor dynasty; the FA was formally granted this coat of arms by the College of Arms on 30 March 1949, with ten roses scattered between the lions. Why exactly ten is not actually recorded: the FA's own history notes only that eleven (one per player) might have suited the game better, and it is unclear whether the number was meant for the FA's ten regional divisions at the time or was simply the College of Arms' own choice.",
+            "description": "The three lions descend from the arms of Richard I (“the Lionheart”), which originally stood for the three territories he ruled — England, Normandy and Aquitaine — and were worn by England teams from the FA's earliest internationals. The Tudor rose is England's own heraldic flower, its five white inner petals for the House of York and five red outer petals for the House of Lancaster marking their union under the Tudor dynasty; the FA was formally granted this coat of arms by the College of Arms on 30 March 1949, with ten roses scattered between the lions. Why exactly ten is not actually recorded: the FA's own history notes only that eleven (one per player) might have suited the game better, and it is unclear whether the number was meant for the FA's ten regional divisions at the time or was simply the College of Arms' own choice. The single star above the shield marks England's one FIFA World Cup title, won in 1966.",
             "sources": [
               {
                 "title": "Three Lions — Wikipedia",
@@ -8561,23 +8572,27 @@
               {
                 "title": "Coat of arms of the Football Association — Wikipedia",
                 "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Football_Association"
+              },
+              {
+                "title": "Star (sport badge) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Star_(sport_badge)"
               }
             ]
-          }
+          },
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/England_national_football_team_crest.svg"
         },
         {
           "id": "gb-sct-football-crest",
           "category": "footballcrest",
           "name": "Scotland — Scottish Football Association crest",
-          "url": "https://upload.wikimedia.org/wikipedia/en/9/9e/Scottish_Football_Association_Logo.svg",
           "file": "gb/gb-sct-football-crest.svg",
-          "licenceNote": "Non-free logo. The crest of the Scottish Football Association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Scottish_Football_Association_Logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Scottish Football Association, worn by the Scotland national team — a red lion rampant on gold, surrounded by nine green thistles, on a navy shield below a “SCOTTISH FA” banner.",
-          "source": "https://en.wikipedia.org/wiki/Scottish_Football_Association",
-          "sha256": "9de302be8138eb1671b9e43a4006a3edfe6ec9589cab2bbac8534fdba3d1550d",
-          "fetched": "2026-08-16",
+          "licenceNote": "Non-free logo. The crest of the Scotland national football team is a copyrighted, trademarked emblem held on the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Scotland_national_football_team_logo_2014.svg); no freely-licensed version exists on Wikimedia Commons. Replaces an older shield-shaped rendering with a “SCOTTISH FA” banner; the current badge is the round design confirmed on the 2026 World Cup home kit.",
+          "design": "The crest of the Scottish Football Association, worn by the Scotland national team — a red lion rampant on gold, surrounded by green thistles, on a shield inside a navy ring reading “SCOTLAND” and “EST · 1873”.",
+          "source": "https://en.wikipedia.org/wiki/Scotland_national_football_team",
+          "sha256": "54ef8fea9129e1c99ef85c501dc759b2c212ac5cc288836861116a58dd6ef135",
+          "fetched": "2026-08-19",
           "meaning": {
-            "description": "The red lion rampant on gold is taken directly from the Royal Banner of Scotland (the Lion Rampant), long a symbol of the Scottish crown. The thistle is Scotland's own national emblem, adopted under King Alexander III (1249–1286); a popular legend has an invading Norse soldier step barefoot on one and cry out, waking a sleeping Scottish camp before a battle — possibly the Battle of Largs in 1263 — but the story survives only as legend, not documented history.",
+            "description": "The red lion rampant on gold is taken directly from the Royal Banner of Scotland (the Lion Rampant), long a symbol of the Scottish crown. The thistle is Scotland's own national emblem, adopted under King Alexander III (1249–1286); a popular legend has an invading Norse soldier step barefoot on one and cry out, waking a sleeping Scottish camp before a battle — possibly the Battle of Largs in 1263 — but the story survives only as legend, not documented history. “1873” is the year the Scottish Football Association was founded, making it the world's second-oldest national football association after England's.",
             "sources": [
               {
                 "title": "Royal arms of Scotland — Wikipedia",
@@ -8586,30 +8601,35 @@
               {
                 "title": "Thistle — Wikipedia",
                 "url": "https://en.wikipedia.org/wiki/Thistle"
+              },
+              {
+                "title": "Scottish Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Scottish_Football_Association"
               }
             ]
-          }
+          },
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Scotland_national_football_team_logo_2014.svg"
         },
         {
           "id": "gb-wls-football-crest",
           "category": "footballcrest",
           "name": "Wales — Football Association of Wales crest",
-          "url": "https://upload.wikimedia.org/wikipedia/en/f/f8/Football_Association_of_Wales_logo_%282019%29.svg",
           "file": "gb/gb-wls-football-crest.svg",
-          "licenceNote": "Non-free logo. The crest of the Football Association of Wales is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Wales_logo_(2019).svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Football Association of Wales, worn by the Wales national team — a red dragon rendered in an angular style, standing upright rather than the horizontal dragon of the national flag.",
-          "source": "https://en.wikipedia.org/wiki/Football_Association_of_Wales",
-          "sha256": "482f30c68cf6fc0350487403a77116e81b19167636059e464ff668d989d8f73d",
-          "fetched": "2026-08-16",
+          "licenceNote": "Non-free logo. The crest of the Wales national football team is a copyrighted, trademarked emblem held on the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Wales_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Replaces the FAW's 2019 angular “slate-carving” rebrand mark; a real 2025/26 shirt photo confirms the badge actually worn is this traditional heraldic dragon in a shield.",
+          "design": "The crest of the Football Association of Wales, worn by the Wales national team — a red dragon rampant, rendered in traditional heraldic style, on a white shield with a dark green border.",
+          "source": "https://en.wikipedia.org/wiki/Wales_national_football_team",
+          "sha256": "cbb4bce38f5687bd4a23cc7eeed59070afcf1c2ef577424056e18663526dd2aa",
+          "fetched": "2026-08-19",
           "meaning": {
-            "description": "Y Ddraig Goch, the Red Dragon, is Wales's own national emblem and has been associated with the country for centuries, most visibly on its flag. The FAW's own 2019 rebrand describes this stylised badge as “an icon of strength, support and resilience”, with sharp angles and edges drawn from the tradition of Welsh slate carving; unlike the flag's dragon, which stands horizontally, this one is shown upright.",
+            "description": "Y Ddraig Goch, the Red Dragon, is Wales's own national emblem. Its earliest source is the Historia Brittonum (c. 829 AD), which tells of a red dragon and a white dragon fighting beneath a fortress King Vortigern was trying to build — the red dragon standing for the Britons (the Welsh), the white for the Saxons, with the red foretold to prevail in the end. Owain Glyndŵr flew a gold dragon as his battle standard in 1401, and the red dragon became a royal badge under George III in 1800 before it was placed on Wales's own national flag when that became official in 1959.",
             "sources": [
               {
-                "title": "Football Association of Wales unveils simplified dragon — Dezeen",
-                "url": "https://www.dezeen.com/2019/08/30/football-association-of-wales-visual-identity-dragon/"
+                "title": "Welsh Dragon — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Welsh_Dragon"
               }
             ]
-          }
+          },
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Wales_national_football_team_logo.svg"
         },
         {
           "id": "gb-nir-football-crest",
@@ -9767,13 +9787,26 @@
           "id": "gu-football-crest",
           "category": "footballcrest",
           "name": "Crest of the Guam football association",
-          "url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Guam_Football_Association_logo_2026.png",
-          "file": "gu/gu-football-crest.png",
-          "licenceNote": "Non-free logo. The crest of the Guam football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Guam_Football_Association_logo_2026.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Guam's national football association.",
-          "source": "https://en.wikipedia.org/wiki/Guam_Football_Association",
-          "sha256": "a3df2c055520afb8b8bd07f6aaede9b6b5a4c2a7cf91b78bf36ec4cb04e304d3",
-          "fetched": "2026-08-18"
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Guam_national_soccer_team.svg",
+          "file": "gu/gu-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Guam national football team is a copyrighted, trademarked emblem held on the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Guam_national_soccer_team.svg); no freely-licensed version exists on Wikimedia Commons. Replaces the Guam Football Association's separate rectangular organisation logo, which the GFA's own announcement of it names as an organisational rebrand distinct from the team's on-shirt crest.",
+          "design": "The crest of the Guam national football team — a round badge reading “GUÅHAN FUTBOL”, centred on a latte stone (a traditional Chamorro pillar) inside a shield, with the motto “PRUTEHI YAN DIFENDE” below.",
+          "source": "https://en.wikipedia.org/wiki/Guam_national_football_team",
+          "sha256": "63d1910688c9dbeb135b70b658ec188e888b9284ebbc5083617d57085ba09fc9",
+          "fetched": "2026-08-19",
+          "meaning": {
+            "description": "Guåhan is the Chamorro name for Guam, and futbol is simply football; the latte stone — the carved stone pillar that once supported traditional Chamorro houses — is one of the island's best-known cultural symbols. “Prutehi yan Difende”, Chamorro for “protect and defend”, is Guam's own territorial motto.",
+            "sources": [
+              {
+                "title": "Guam — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Guam"
+              },
+              {
+                "title": "Latte stone — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Latte_stone"
+              }
+            ]
+          }
         }
       ]
     },
@@ -11456,12 +11489,21 @@
           "id": "iq-football-crest",
           "category": "footballcrest",
           "name": "Crest of the Iraq national football team",
-          "commons": "Iraq national football team logo (1983).png",
-          "file": "iq/iq-football-crest.png",
-          "design": "The crest of the Iraq national football team.",
+          "commons": "Iraq National Team Badge 2021 v1.svg",
+          "file": "iq/iq-football-crest.svg",
+          "design": "The crest of the Iraq national football team — a shield reading “IRAQ” above the national flag's own red, white and black bands, with the Takbir (“Allahu Akbar”, “God is greatest”) written across the white band.",
           "source": "https://en.wikipedia.org/wiki/Iraq_national_football_team",
-          "sha256": "90ed9336b78957673bfd4ea469b48df3485245d6197a578e29a95808fa56b924",
-          "fetched": "2026-08-18"
+          "sha256": "583e029e36be030ad80a45118b84ec1058047e3deaea3623bda7a23203b1de0f",
+          "fetched": "2026-08-19",
+          "meaning": {
+            "description": "The badge repeats Iraq's own national flag: red for the blood of martyrs, white for a peaceful future, and black for the country's Islamic and Arab past, with the Takbir written in the ruler Saddam Hussein's own handwriting when it was added to the flag in 1991 — kept on the flag, and so on this badge, in the redesigns since 2004 and 2008.",
+            "sources": [
+              {
+                "title": "Flag of Iraq — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Iraq"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -15137,13 +15179,26 @@
           "id": "mc-football-crest",
           "category": "footballcrest",
           "name": "Crest of the Monaco national football team",
-          "url": "https://upload.wikimedia.org/wikipedia/en/3/36/Mon%C3%A9gasque_Football_Federation_logo.png",
-          "file": "mc/mc-football-crest.png",
-          "licenceNote": "Non-free logo. The crest of the Monaco national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Monégasque_Football_Federation_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Monaco national football team.",
-          "source": "https://en.wikipedia.org/wiki/Mon%C3%A9gasque_Football_Federation",
-          "sha256": "144ce9337bc8e30c2e398492515687916953fdbb8a1a4cdb80b5f234886e3474",
-          "fetched": "2026-08-18"
+          "file": "mc/mc-football-crest.jpg",
+          "licenceNote": "Non-free logo. The crest of the Monaco national football team is a copyrighted, trademarked emblem held on the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Monaco_football_team_logo.jpg); no freely-licensed version exists on Wikimedia Commons. Replaces the Fédération Monégasque de Football's separate administrative logo, which is not the team-specific “Sélection Nationale” badge.",
+          "design": "The crest of the Monaco national football team — two armoured, sword-bearing friars flanking a red-and-white diamond shield (the arms of the House of Grimaldi) beneath a crown, ringed by “SÉLECTION NATIONALE DE FOOTBALL” and “MUNEGU”.",
+          "source": "https://en.wikipedia.org/wiki/Monaco_national_football_team",
+          "sha256": "a85c76d9c1f5bbb03ddabb0480f2be437ee410968a939463be69da75ca85cb66",
+          "fetched": "2026-08-19",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Monaco_football_team_logo.jpg",
+          "meaning": {
+            "description": "The red-and-white lozenge (diamond) pattern is the arms of the House of Grimaldi, Monaco's ruling family since the Middle Ages. The two armoured friars holding swords commemorate a founding legend: in 1297, François Grimaldi (nicknamed “Malizia”, “the Malicious”) is said to have disguised himself and his men as Franciscan monks to be let into the fortress on the Rock of Monaco, then seized it by force — a story later chroniclers recorded as legend rather than a contemporary account. The crown marks Monaco's status as a principality. Munegu is the Monégasque name for Monaco.",
+            "sources": [
+              {
+                "title": "Coat of arms of Monaco — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco"
+              },
+              {
+                "title": "House of Grimaldi — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/House_of_Grimaldi"
+              }
+            ]
+          }
         }
       ]
     },
@@ -27089,23 +27144,27 @@
         {
           "id": "za-football-crest",
           "category": "footballcrest",
-          "name": "Crest of the South African Football Association (SAFA)",
-          "url": "https://upload.wikimedia.org/wikipedia/en/5/59/South_African_Football_Association_logo.svg",
+          "name": "Crest of the South Africa national football team",
           "file": "za/za-football-crest.svg",
-          "licenceNote": "Non-free logo. The crest of the South African Football Association (SAFA) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:South_African_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the South African Football Association — a roundel split between a monochrome football and a gold, sun-rayed landscape, above the association's name.",
-          "source": "https://en.wikipedia.org/wiki/South_African_Football_Association",
-          "sha256": "c4a563521e13b60ce674f17b17cf0c101c8f92b2eb0ec74099b9a570e5fd3bc7",
-          "fetched": "2026-08-16",
+          "licenceNote": "Non-free logo. The crest of the South Africa national football team is a copyrighted, trademarked emblem held on the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:South_Africa_national_soccer_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Replaces the South African Football Association's separate administrative logo (a ball beside a map of the country), which is not the badge worn on the Bafana Bafana shirt.",
+          "design": "The crest of the South Africa national football team — a green-and-gold shield bearing a king protea flower, with a “SOUTH AFRICA” banner below.",
+          "source": "https://en.wikipedia.org/wiki/South_Africa_national_football_team",
+          "sha256": "7a54837289a93e27371fce4822fa1ba32f42bf7e66d60525c82c62553ff3f339",
+          "fetched": "2026-08-19",
           "meaning": {
-            "description": "The badge joins the game itself — a football — with a gold silhouette of the country's own map, standing for South African football as a national institution. SAFA was formed on 23 March 1991, when the previously racially-segregated football associations that had existed under apartheid united into a single, non-racial governing body.",
+            "description": "The king protea is South Africa's national flower, chosen for the badge as it is for the country's own national cricket and rugby teams; the team's nickname, Bafana Bafana (Zulu for “the boys, the boys”), does not itself appear on the crest. Green and gold are widely used as South African sporting colours alongside the badge's own design.",
             "sources": [
               {
-                "title": "South African Football Association — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/South_African_Football_Association"
+                "title": "King Protea (emblem) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Protea_cynaroides"
+              },
+              {
+                "title": "South Africa national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/South_Africa_national_football_team"
               }
             ]
-          }
+          },
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/South_Africa_national_soccer_team_logo.svg"
         }
       ],
       "independence": {
