@@ -144,7 +144,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "al-president", category: "standard", name: "Flag of the President of Albania", from: 2014, to: 9999, path: "national-flags/al/albania-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Albanian_flags" },
     { id: "al-arms", category: "coatofarms", name: "Coat of arms of Albania", from: 1998, to: 9999, path: "national-flags/al/albania-arms.svg", design: "A black double-headed eagle on a red shield, beneath the golden helmet of Skanderbeg.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Albania" },
     { id: "al-passport", category: "passport", name: "Passport of Albania", path: "national-flags/al/al-passport.webp", design: "The cover of the Albania passport.", source: "https://gicg.net/passport/al/" },
-    { id: "al-football-crest", category: "footballcrest", name: "Crest of the Albania national football team", path: "national-flags/al/al-football-crest.svg", design: "The crest of the Albania national football team.", source: "https://en.wikipedia.org/wiki/Albanian_Football_Federation" },
+    { id: "al-football-crest", category: "footballcrest", name: "Crest of the Albania national football team", path: "national-flags/al/al-football-crest.svg", design: "The crest of the Albania national football team — a black double-headed eagle on a red shield, above the letters “FSHF”.", source: "https://en.wikipedia.org/wiki/Albania_national_football_team" },
   ],
   "AM": [
     { id: "am-official-national", category: "official", name: "Flag of Armenia", from: 1990, to: 9999, primary: true, path: "flags/am.svg", design: "The national flag of Armenia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Armenia" },
@@ -210,7 +210,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "au-gg", category: "standard", name: "Flag of the Governor-General of Australia", from: 1936, to: 9999, path: "national-flags/au/australia-governor-general.svg", design: "A crowned lion standing on a crown, on a blue field.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-arms", category: "coatofarms", name: "Commonwealth Coat of Arms", path: "national-flags/au/australia-arms.svg", design: "A shield of six quarters supported by a kangaroo and an emu, with the Commonwealth Star above and golden wattle behind.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
     { id: "au-passport", category: "passport", name: "Australian passport", path: "national-flags/au/australia-passport.webp", design: "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above it and PASSPORT below.", source: "https://gicg.net/passport/au/" },
-    { id: "au-football-crest", category: "footballcrest", name: "Crest of Football Australia", path: "national-flags/au/au-football-crest.svg", design: "The logo of Football Australia — an abstract ball formed of interlocking green-and-gold curves, beside the words “Football Australia”.", source: "https://en.wikipedia.org/wiki/Football_Australia" },
+    { id: "au-football-crest", category: "footballcrest", name: "Crest of the Australia national football team", path: "national-flags/au/au-football-crest.svg", design: "The crest of the Australia national football team — a gold shield bearing the Australian coat of arms (a quartered badge of the six states beneath the seven-pointed Commonwealth Star), flanked by a kangaroo and an emu, over the word “AUSTRALIA” and a sprig of golden wattle.", source: "https://en.wikipedia.org/wiki/Australia_national_soccer_team" },
   ],
   "AW": [
     { id: "aw-official-national", category: "official", name: "Flag of Aruba", from: 1976, to: 9999, path: "flags/sub/NL/NL-AW.svg", design: "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Aruba" },
@@ -779,7 +779,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fr-naval-ensign", category: "maritime", name: "Naval ensign of France", from: 1853, to: 9999, path: "national-flags/fr/france-naval-ensign.svg", design: "The Tricolore in the navy's own proportions, with the three bands of unequal width so they appear equal when flying.", source: "https://en.wikipedia.org/wiki/List_of_French_flags" },
     { id: "fr-arms", category: "coatofarms", name: "Emblem of the French Republic", path: "national-flags/fr/france-emblem.svg", design: "A lictor’s fasces on crossed oak and laurel branches, with a ribbon bearing the republic’s motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_France" },
     { id: "fr-passport", category: "passport", name: "French passport", path: "national-flags/fr/france-passport.svg", design: "A burgundy cover reading UNION EUROPÉENNE above RÉPUBLIQUE FRANÇAISE, with the republic's emblem in gold.", source: "https://en.wikipedia.org/wiki/French_passport" },
-    { id: "fr-football-crest", category: "footballcrest", name: "Crest of the French Football Federation (FFF)", path: "national-flags/fr/fr-football-crest.svg", design: "The crest of the French Football Federation — a hexagon (for the shape of France) in blue, white and red bearing a white Gallic rooster over the letters “FFF”, with two gold stars above.", source: "https://en.wikipedia.org/wiki/French_Football_Federation" },
+    { id: "fr-football-crest", category: "footballcrest", name: "Crest of the France national football team", path: "national-flags/fr/fr-football-crest.svg", design: "The crest of the France national football team — an illustrated gold Gallic rooster with a red comb and wattle, above “FFF” and “FRANCE” in gold lettering, beneath two gold stars.", source: "https://en.wikipedia.org/wiki/France_national_football_team" },
   ],
   "GA": [
     { id: "ga-official-national", category: "official", name: "Flag of Gabon", from: 1960, to: 9999, primary: true, path: "flags/ga.svg", design: "The national flag of Gabon, adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Gabon" },
@@ -806,9 +806,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gb-passport", category: "passport", name: "British passport", path: "national-flags/gb/uk-passport.svg", design: "A dark blue cover with the Royal Coat of Arms in gold, above UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND.", source: "https://en.wikipedia.org/wiki/British_passport" },
     { id: "gb-passport-diplomatic", category: "passport", name: "British diplomatic passport", path: "national-flags/gb/uk-passport-diplomatic.svg", design: "The same blue cover and Royal Arms, headed DIPLOMATIC PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
     { id: "gb-passport-official", category: "passport", name: "British official passport", path: "national-flags/gb/uk-passport-official.svg", design: "The same blue cover and Royal Arms, headed OFFICIAL PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
-    { id: "gb-eng-football-crest", category: "footballcrest", name: "England — The Football Association crest", path: "national-flags/gb/gb-eng-football-crest.svg", design: "The crest of The Football Association, worn by the England national team — three navy lions passant guardant, scattered with ten red-and-white Tudor roses, on a white shield below a “The FA” banner.", source: "https://en.wikipedia.org/wiki/The_Football_Association" },
-    { id: "gb-sct-football-crest", category: "footballcrest", name: "Scotland — Scottish Football Association crest", path: "national-flags/gb/gb-sct-football-crest.svg", design: "The crest of the Scottish Football Association, worn by the Scotland national team — a red lion rampant on gold, surrounded by nine green thistles, on a navy shield below a “SCOTTISH FA” banner.", source: "https://en.wikipedia.org/wiki/Scottish_Football_Association" },
-    { id: "gb-wls-football-crest", category: "footballcrest", name: "Wales — Football Association of Wales crest", path: "national-flags/gb/gb-wls-football-crest.svg", design: "The crest of the Football Association of Wales, worn by the Wales national team — a red dragon rendered in an angular style, standing upright rather than the horizontal dragon of the national flag.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Wales" },
+    { id: "gb-eng-football-crest", category: "footballcrest", name: "England — The Football Association crest", path: "national-flags/gb/gb-eng-football-crest.svg", design: "The crest of The Football Association, worn by the England national team — three navy lions passant guardant, scattered with ten red-and-white Tudor roses, on a white shield with a navy border, beneath a single silver star.", source: "https://en.wikipedia.org/wiki/England_national_football_team" },
+    { id: "gb-sct-football-crest", category: "footballcrest", name: "Scotland — Scottish Football Association crest", path: "national-flags/gb/gb-sct-football-crest.svg", design: "The crest of the Scottish Football Association, worn by the Scotland national team — a red lion rampant on gold, surrounded by green thistles, on a shield inside a navy ring reading “SCOTLAND” and “EST · 1873”.", source: "https://en.wikipedia.org/wiki/Scotland_national_football_team" },
+    { id: "gb-wls-football-crest", category: "footballcrest", name: "Wales — Football Association of Wales crest", path: "national-flags/gb/gb-wls-football-crest.svg", design: "The crest of the Football Association of Wales, worn by the Wales national team — a red dragon rampant, rendered in traditional heraldic style, on a white shield with a dark green border.", source: "https://en.wikipedia.org/wiki/Wales_national_football_team" },
     { id: "gb-nir-football-crest", category: "footballcrest", name: "Northern Ireland — Irish Football Association crest", path: "national-flags/gb/gb-nir-football-crest.svg", design: "The crest of the Irish Football Association, which governs football in Northern Ireland — a blue cross pattern edged in gold, with a gold shamrock in each of the four quarters, ringed by “IRISH FOOTBALL ASSOCIATION · NORTHERN IRELAND”.", source: "https://en.wikipedia.org/wiki/Irish_Football_Association" },
   ],
   "GD": [
@@ -909,7 +909,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gu-spain-1785", category: "historical", name: "Flag of the Kingdom of Spain", from: 1785, to: 1898, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The 1785 Spanish ensign, flown over Guam until it was ceded to the United States in 1898.", source: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
     { id: "gu-burgundy", category: "historical", name: "Cross of Burgundy", from: 1668, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The ensign of the Spanish Empire, flown over Guam from the founding of the Spanish mission in 1668.", source: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     { id: "gu-seal", category: "coatofarms", name: "Great Seal of Guam", from: 1946, to: 9999, path: "national-flags/gu/gu-seal.svg", design: "A slingstone-shaped emblem showing a flying proa in Agana Bay beneath a coconut tree, GUAM in red across it.", source: "https://en.wikipedia.org/wiki/Seal_of_Guam" },
-    { id: "gu-football-crest", category: "footballcrest", name: "Crest of the Guam football association", path: "national-flags/gu/gu-football-crest.png", design: "The crest of Guam's national football association.", source: "https://en.wikipedia.org/wiki/Guam_Football_Association" },
+    { id: "gu-football-crest", category: "footballcrest", name: "Crest of the Guam football association", path: "national-flags/gu/gu-football-crest.svg", design: "The crest of the Guam national football team — a round badge reading “GUÅHAN FUTBOL”, centred on a latte stone (a traditional Chamorro pillar) inside a shield, with the motto “PRUTEHI YAN DIFENDE” below.", source: "https://en.wikipedia.org/wiki/Guam_national_football_team" },
   ],
   "GW": [
     { id: "gw-official-national", category: "official", name: "Flag of Guinea-Bissau", from: 1973, to: 9999, primary: true, path: "flags/gw.svg", design: "The national flag, adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
@@ -1051,7 +1051,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "iq-navy", category: "military", name: "Flag of the Iraqi Navy", from: 2003, to: 9999, path: "national-flags/iq/iraq-navy.svg", design: "The navy's flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
     { id: "iq-arms", category: "coatofarms", name: "Coat of arms of Iraq", from: 1965, to: 9999, path: "national-flags/iq/iraq-arms.svg", design: "The golden Eagle of Saladin bearing a shield in the colours of the national flag, above a scroll reading الجمهورية العراقية.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq" },
     { id: "iq-passport", category: "passport", name: "Passport of Iraq", path: "national-flags/iq/iq-passport.webp", design: "The cover of the Iraq passport.", source: "https://gicg.net/passport/iq/" },
-    { id: "iq-football-crest", category: "footballcrest", name: "Crest of the Iraq national football team", path: "national-flags/iq/iq-football-crest.png", design: "The crest of the Iraq national football team.", source: "https://en.wikipedia.org/wiki/Iraq_national_football_team" },
+    { id: "iq-football-crest", category: "footballcrest", name: "Crest of the Iraq national football team", path: "national-flags/iq/iq-football-crest.svg", design: "The crest of the Iraq national football team — a shield reading “IRAQ” above the national flag's own red, white and black bands, with the Takbir (“Allahu Akbar”, “God is greatest”) written across the white band.", source: "https://en.wikipedia.org/wiki/Iraq_national_football_team" },
   ],
   "IR": [
     { id: "ir-official-national", category: "official", name: "Flag of Iran", from: 1980, to: 9999, primary: true, path: "flags/ir.svg", design: "The national flag of Iran, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
@@ -1361,7 +1361,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mc-official-national", category: "official", name: "Flag of Monaco", from: 1881, to: 9999, primary: true, path: "flags/mc.svg", design: "The national flag, in use since 1881.", source: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
     { id: "mc-arms", category: "coatofarms", name: "Coat of arms of Monaco", from: 1881, to: 9999, path: "national-flags/mc/mc-arms.svg", design: "A lozenged shield held by two sword-bearing friars, beneath a princely crown and mantle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco" },
     { id: "mc-passport", category: "passport", name: "Passport of Monaco", path: "national-flags/mc/mc-passport.webp", design: "The cover of the Monaco passport.", source: "https://gicg.net/passport/mc/" },
-    { id: "mc-football-crest", category: "footballcrest", name: "Crest of the Monaco national football team", path: "national-flags/mc/mc-football-crest.png", design: "The crest of the Monaco national football team.", source: "https://en.wikipedia.org/wiki/Mon%C3%A9gasque_Football_Federation" },
+    { id: "mc-football-crest", category: "footballcrest", name: "Crest of the Monaco national football team", path: "national-flags/mc/mc-football-crest.jpg", design: "The crest of the Monaco national football team — two armoured, sword-bearing friars flanking a red-and-white diamond shield (the arms of the House of Grimaldi) beneath a crown, ringed by “SÉLECTION NATIONALE DE FOOTBALL” and “MUNEGU”.", source: "https://en.wikipedia.org/wiki/Monaco_national_football_team" },
   ],
   "MD": [
     { id: "md-official-national", category: "official", name: "Flag of Moldova", from: 1990, to: 9999, primary: true, path: "flags/md.svg", design: "The national flag of Moldova, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
@@ -2371,7 +2371,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "za-sandf-1994", category: "military", name: "Ensign of the South African National Defence Force (1994–2003)", from: 1994, to: 2003, path: "national-flags/za/south-africa-sandf-1994.svg", design: "The first post-apartheid defence-force ensign, replaced in 2003.", source: "https://en.wikipedia.org/wiki/List_of_South_African_flags" },
     { id: "za-arms", category: "coatofarms", name: "Coat of arms of South Africa", path: "national-flags/za/south-africa-arms.svg", design: "Two facing figures from Khoisan rock art within a shield, above a spear and knobkierie, crowned by a secretary bird and a rising sun.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Africa" },
     { id: "za-passport", category: "passport", name: "South African passport", path: "national-flags/za/south-africa-passport.webp", design: "A green cover bearing the South African coat of arms in gold, reading REPUBLIC OF SOUTH AFRICA / REPUBLIEK VAN SUID-AFRIKA and PASSPORT.", source: "https://gicg.net/passport/za/" },
-    { id: "za-football-crest", category: "footballcrest", name: "Crest of the South African Football Association (SAFA)", path: "national-flags/za/za-football-crest.svg", design: "The crest of the South African Football Association — a roundel split between a monochrome football and a gold, sun-rayed landscape, above the association's name.", source: "https://en.wikipedia.org/wiki/South_African_Football_Association" },
+    { id: "za-football-crest", category: "footballcrest", name: "Crest of the South Africa national football team", path: "national-flags/za/za-football-crest.svg", design: "The crest of the South Africa national football team — a green-and-gold shield bearing a king protea flower, with a “SOUTH AFRICA” banner below.", source: "https://en.wikipedia.org/wiki/South_Africa_national_football_team" },
   ],
   "ZM": [
     { id: "zm-official-national", category: "official", name: "Flag of Zambia", from: 1964, to: 9999, primary: true, path: "flags/zm.svg", design: "The national flag of Zambia, adopted at independence in 1964 (the green shade was standardised in 1996).", source: "https://en.wikipedia.org/wiki/Flag_of_Zambia" },
@@ -2618,6 +2618,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Albania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Albania" },
     ],
   },
+  "al-football-crest": {
+    description: "The black double-headed eagle on red repeats Albania's own national flag. It was a common heraldic symbol among Albanian noble families in the late Middle Ages, and became identified with Albanians generally after the 15th-century lord Skanderbeg adopted the same double-headed-eagle design used in Eastern Roman (Byzantine) imperial heraldry for his revolt against Ottoman rule; the eagle remained a symbol of Albanian national identity through Ottoman rule and was raised as the flag of the newly independent state in 1912. FSHF is the federation's own initials, the Federata Shqiptare e Futbollit (Albanian Football Federation).",
+    sources: [
+      { title: "Flag of Albania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
+    ],
+  },
   "am-arms": {
     description: "At the centre of the shield stands Mount Ararat with Noah's Ark on its summit — by tradition the ark came to rest there after the flood, and Ararat is the national symbol, though it has lain outside Armenia's borders since 1921. Around it are the emblems of four historic Armenian dynasties: the Bagratuni, the Arsacid, the Artaxiad and the Rubenid of Cilicia. The two supporters carry those dynasties too: the eagle was the emblem of the Artaxiads and later the Arsacids, the lion of the Bagratunis and later the Rubenids, and both animals were chosen for power, courage, patience, wisdom and nobility. The arms date in this form from the First Republic of 1918, whose version drew the eagle and lion with their tongues out.",
     sources: [
@@ -2682,9 +2688,9 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
   "au-football-crest": {
-    description: "Green and gold are Australia's national sporting colours — green for the country's eucalypts (“gum-tree green”), gold for the golden wattle, the national floral emblem (“wattle-gold”) — first adopted by an Australian sports team touring England in 1899 and carried since into the Socceroos' own kit and this Football Australia mark.",
+    description: "The badge is Australia's own coat of arms. The kangaroo and emu were chosen as supporters partly because neither animal can easily walk backwards, taken to symbolise a nation that only moves forward. The seven-pointed Commonwealth Star above the shield stands for the federation: six points for the original six states, the seventh for its territories. The shield itself quarters each state's own badge — among them the Southern Cross for Victoria, a Maltese cross for Queensland, a black swan for Western Australia and Saint George's Cross with a lion for New South Wales. The golden wattle, Australia's national floral emblem, was not part of the original 1912 royal warrant for the arms but has been added as decoration ever since.",
     sources: [
-      { title: "Green and gold — Wikipedia", url: "https://en.wikipedia.org/wiki/Green_and_gold" },
+      { title: "Coat of arms of Australia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
     ],
   },
   "aw-arms": {
@@ -3151,9 +3157,10 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
   "fr-football-crest": {
-    description: "The crest's colours and imagery draw on two national symbols — the blue-white-red of the French flag and the Gallic rooster (coq gaulois). The two gold stars above the shield mark France's two FIFA World Cup titles, won in 1998 and 2018.",
+    description: "The Gallic rooster (coq gaulois) is one of France's oldest national symbols, its name a Latin pun — gallus meant both “rooster” and “inhabitant of Gaul” — revived as a patriotic emblem during the French Revolution. FFF is the federation's own initials, the Fédération Française de Football. FIFA's rules let a champion display one star per World Cup on its shirt; France's two mark its titles, won in 1998 and 2018.",
     sources: [
-      { title: "France national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/France_national_football_team" },
+      { title: "Gallic rooster — Wikipedia", url: "https://en.wikipedia.org/wiki/Gallic_rooster" },
+      { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
     ],
   },
   "ga-arms": {
@@ -3182,23 +3189,25 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
   "gb-eng-football-crest": {
-    description: "The three lions descend from the arms of Richard I (“the Lionheart”), which originally stood for the three territories he ruled — England, Normandy and Aquitaine — and were worn by England teams from the FA's earliest internationals. The Tudor rose is England's own heraldic flower, its five white inner petals for the House of York and five red outer petals for the House of Lancaster marking their union under the Tudor dynasty; the FA was formally granted this coat of arms by the College of Arms on 30 March 1949, with ten roses scattered between the lions. Why exactly ten is not actually recorded: the FA's own history notes only that eleven (one per player) might have suited the game better, and it is unclear whether the number was meant for the FA's ten regional divisions at the time or was simply the College of Arms' own choice.",
+    description: "The three lions descend from the arms of Richard I (“the Lionheart”), which originally stood for the three territories he ruled — England, Normandy and Aquitaine — and were worn by England teams from the FA's earliest internationals. The Tudor rose is England's own heraldic flower, its five white inner petals for the House of York and five red outer petals for the House of Lancaster marking their union under the Tudor dynasty; the FA was formally granted this coat of arms by the College of Arms on 30 March 1949, with ten roses scattered between the lions. Why exactly ten is not actually recorded: the FA's own history notes only that eleven (one per player) might have suited the game better, and it is unclear whether the number was meant for the FA's ten regional divisions at the time or was simply the College of Arms' own choice. The single star above the shield marks England's one FIFA World Cup title, won in 1966.",
     sources: [
       { title: "Three Lions — Wikipedia", url: "https://en.wikipedia.org/wiki/Three_Lions" },
       { title: "Coat of arms of the Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Football_Association" },
+      { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
     ],
   },
   "gb-sct-football-crest": {
-    description: "The red lion rampant on gold is taken directly from the Royal Banner of Scotland (the Lion Rampant), long a symbol of the Scottish crown. The thistle is Scotland's own national emblem, adopted under King Alexander III (1249–1286); a popular legend has an invading Norse soldier step barefoot on one and cry out, waking a sleeping Scottish camp before a battle — possibly the Battle of Largs in 1263 — but the story survives only as legend, not documented history.",
+    description: "The red lion rampant on gold is taken directly from the Royal Banner of Scotland (the Lion Rampant), long a symbol of the Scottish crown. The thistle is Scotland's own national emblem, adopted under King Alexander III (1249–1286); a popular legend has an invading Norse soldier step barefoot on one and cry out, waking a sleeping Scottish camp before a battle — possibly the Battle of Largs in 1263 — but the story survives only as legend, not documented history. “1873” is the year the Scottish Football Association was founded, making it the world's second-oldest national football association after England's.",
     sources: [
       { title: "Royal arms of Scotland — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_arms_of_Scotland" },
       { title: "Thistle — Wikipedia", url: "https://en.wikipedia.org/wiki/Thistle" },
+      { title: "Scottish Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Scottish_Football_Association" },
     ],
   },
   "gb-wls-football-crest": {
-    description: "Y Ddraig Goch, the Red Dragon, is Wales's own national emblem and has been associated with the country for centuries, most visibly on its flag. The FAW's own 2019 rebrand describes this stylised badge as “an icon of strength, support and resilience”, with sharp angles and edges drawn from the tradition of Welsh slate carving; unlike the flag's dragon, which stands horizontally, this one is shown upright.",
+    description: "Y Ddraig Goch, the Red Dragon, is Wales's own national emblem. Its earliest source is the Historia Brittonum (c. 829 AD), which tells of a red dragon and a white dragon fighting beneath a fortress King Vortigern was trying to build — the red dragon standing for the Britons (the Welsh), the white for the Saxons, with the red foretold to prevail in the end. Owain Glyndŵr flew a gold dragon as his battle standard in 1401, and the red dragon became a royal badge under George III in 1800 before it was placed on Wales's own national flag when that became official in 1959.",
     sources: [
-      { title: "Football Association of Wales unveils simplified dragon — Dezeen", url: "https://www.dezeen.com/2019/08/30/football-association-of-wales-visual-identity-dragon/" },
+      { title: "Welsh Dragon — Wikipedia", url: "https://en.wikipedia.org/wiki/Welsh_Dragon" },
     ],
   },
   "gb-nir-football-crest": {
@@ -3289,6 +3298,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Approved in 1946, the seal takes the pointed shape of a Chamorro slingstone, the ancient weapon of the islands. Within it a coconut tree — the tree of life — bends but does not break, for a people tested by famine, war and calamity yet enduring; a flying proa, the swift Chamorro outrigger, speaks to their seafaring skill; and the Hagåtña river meeting the sea marks a willingness to share the land's resources. GUAM runs across the centre in red.",
     sources: [
       { title: "Seal of Guam — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Guam" },
+    ],
+  },
+  "gu-football-crest": {
+    description: "Guåhan is the Chamorro name for Guam, and futbol is simply football; the latte stone — the carved stone pillar that once supported traditional Chamorro houses — is one of the island's best-known cultural symbols. “Prutehi yan Difende”, Chamorro for “protect and defend”, is Guam's own territorial motto.",
+    sources: [
+      { title: "Guam — Wikipedia", url: "https://en.wikipedia.org/wiki/Guam" },
+      { title: "Latte stone — Wikipedia", url: "https://en.wikipedia.org/wiki/Latte_stone" },
     ],
   },
   "gw-arms": {
@@ -3400,6 +3416,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The republic's arms are the Eagle of Saladin — named for the 12th-century sultan, who was born in Tikrit — holding a shield bearing the national flag turned to a vertical arrangement, above a scroll with the name of the state in Arabic. The eagle is a pan-Arab device shared with Egypt and Palestine, adopted after the 1958 revolution replaced the Hashemite monarchy; the monarchy's own arms had been a very different thing, a golden crown of five arches on a royal mantle standing for sacrifice and purity, with two stars for Ishtar and Shamash recalling Iraq's pre-Islamic past.",
     sources: [
       { title: "Coat of arms of Iraq — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq" },
+    ],
+  },
+  "iq-football-crest": {
+    description: "The badge repeats Iraq's own national flag: red for the blood of martyrs, white for a peaceful future, and black for the country's Islamic and Arab past, with the Takbir written in the ruler Saddam Hussein's own handwriting when it was added to the flag in 1991 — kept on the flag, and so on this badge, in the redesigns since 2004 and 2008.",
+    sources: [
+      { title: "Flag of Iraq — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
     ],
   },
   "ir-emblem": {
@@ -3613,6 +3635,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield of red and white lozenges is the arms of the House of Grimaldi, sovereigns of Monaco since 1297, and it is held by two friars brandishing swords. They recall François Grimaldi, who in 1297 seized the fortress of Monaco by disguising himself and his men as Franciscan monks. A princely crown and an ermine mantle surround the arms, and the motto reads Deo Juvante — “With God's Help.”",
     sources: [
       { title: "Coat of arms of Monaco — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco" },
+    ],
+  },
+  "mc-football-crest": {
+    description: "The red-and-white lozenge (diamond) pattern is the arms of the House of Grimaldi, Monaco's ruling family since the Middle Ages. The two armoured friars holding swords commemorate a founding legend: in 1297, François Grimaldi (nicknamed “Malizia”, “the Malicious”) is said to have disguised himself and his men as Franciscan monks to be let into the fortress on the Rock of Monaco, then seized it by force — a story later chroniclers recorded as legend rather than a contemporary account. The crown marks Monaco's status as a principality. Munegu is the Monégasque name for Monaco.",
+    sources: [
+      { title: "Coat of arms of Monaco — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco" },
+      { title: "House of Grimaldi — Wikipedia", url: "https://en.wikipedia.org/wiki/House_of_Grimaldi" },
     ],
   },
   "md-reverse": {
@@ -4369,9 +4398,10 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
   "za-football-crest": {
-    description: "The badge joins the game itself — a football — with a gold silhouette of the country's own map, standing for South African football as a national institution. SAFA was formed on 23 March 1991, when the previously racially-segregated football associations that had existed under apartheid united into a single, non-racial governing body.",
+    description: "The king protea is South Africa's national flower, chosen for the badge as it is for the country's own national cricket and rugby teams; the team's nickname, Bafana Bafana (Zulu for “the boys, the boys”), does not itself appear on the crest. Green and gold are widely used as South African sporting colours alongside the badge's own design.",
     sources: [
-      { title: "South African Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/South_African_Football_Association" },
+      { title: "King Protea (emblem) — Wikipedia", url: "https://en.wikipedia.org/wiki/Protea_cynaroides" },
+      { title: "South Africa national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/South_Africa_national_football_team" },
     ],
   },
   "zm-arms": {
