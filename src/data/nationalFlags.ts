@@ -503,7 +503,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cl-mapuche", category: "indigenous", name: "Mapuche flag (Wenüfoye)", from: 1992, to: 9999, path: "national-flags/cl/cl-mapuche.svg", design: "A blue, green and red field bearing the yellow cultrún drum and a stepped-cross emblem.", source: "https://en.wikipedia.org/wiki/Mapuche_flag" },
     { id: "cl-arms", category: "coatofarms", name: "Coat of arms of Chile", from: 1834, to: 9999, path: "national-flags/cl/chile-arms.svg", design: "A shield party per fess blue over red charged with a white star, supported by an Andean condor and a huemul, crested with three feathers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chile" },
     { id: "cl-passport", category: "passport", name: "Passport of Chile", path: "national-flags/cl/cl-passport.webp", design: "The cover of the Chile passport.", source: "https://gicg.net/passport/cl/" },
-    { id: "cl-football-crest", category: "footballcrest", name: "Crest of the Chile national football team", path: "national-flags/cl/cl-football-crest.svg", design: "The crest of the Chile national football team.", source: "https://en.wikipedia.org/wiki/Chile_national_football_team" },
+    { id: "cl-football-crest", category: "footballcrest", name: "Crest of the Chile national football team", path: "national-flags/cl/cl-football-crest.svg", design: "The crest of the Chile national football team — a blue-and-red shield bearing a white star, ringed by “FEDERACIÓN DE FÚTBOL DE CHILE”.", source: "https://en.wikipedia.org/wiki/Chile_national_football_team" },
   ],
   "CM": [
     { id: "cm-official-national", category: "official", name: "Flag of Cameroon", from: 1975, to: 9999, primary: true, path: "flags/cm.svg", design: "The national flag of Cameroon, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" },
@@ -630,7 +630,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "dk-state", category: "civilstate", name: "State flag of Denmark", path: "national-flags/dk/denmark-state.svg", design: "The Dannebrog in swallow-tailed form, flown by the state, beside the rectangular civil flag.", source: "https://en.wikipedia.org/wiki/List_of_Danish_flags" },
     { id: "dk-arms", category: "coatofarms", name: "Coat of arms of Denmark", from: 1819, to: 9999, path: "national-flags/dk/denmark-arms.svg", design: "Three crowned blue lions passant among nine red water-lily leaves, on a golden shield beneath the crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark" },
     { id: "dk-passport", category: "passport", name: "Passport of Denmark", path: "national-flags/dk/dk-passport.webp", design: "The cover of the Denmark passport.", source: "https://gicg.net/passport/dk/" },
-    { id: "dk-football-crest", category: "footballcrest", name: "Crest of the Denmark national football team", path: "national-flags/dk/dk-football-crest.svg", design: "The crest of the Denmark national football team.", source: "https://en.wikipedia.org/wiki/Denmark_national_football_team" },
+    { id: "dk-football-crest", category: "footballcrest", name: "Crest of the Denmark national football team", path: "national-flags/dk/dk-football-crest.svg", design: "The crest of the Denmark national football team — a red circle beaded in pearls, with a crown-topped “DBU” monogram above a floral rosette, ringed by “DANSK · BOLDSPIL · UNION” and the year “1889”.", source: "https://en.wikipedia.org/wiki/Denmark_national_football_team" },
   ],
   "DM": [
     { id: "dm-official-national", category: "official", name: "Flag of Dominica", from: 1978, to: 9999, primary: true, path: "flags/dm.svg", design: "The national flag, adopted at independence in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
@@ -1078,7 +1078,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "is-state", category: "civilstate", name: "State flag and ensign of Iceland", from: 1944, to: 9999, path: "national-flags/is/iceland-state.svg", design: "The swallow-tailed form of the flag, flown by the state and used as the military flag.", source: "https://en.wikipedia.org/wiki/List_of_Icelandic_flags" },
     { id: "is-arms", category: "coatofarms", name: "Coat of arms of Iceland", from: 1944, to: 9999, path: "national-flags/is/iceland-arms.svg", design: "The flag's cross on a shield, supported by a bull, a giant, a vulture and a dragon, standing on columnar basalt.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland" },
     { id: "is-passport", category: "passport", name: "Passport of Iceland", path: "national-flags/is/is-passport.webp", design: "The cover of the Iceland passport.", source: "https://gicg.net/passport/is/" },
-    { id: "is-football-crest", category: "footballcrest", name: "Crest of the Iceland national football team", path: "national-flags/is/is-football-crest.svg", design: "The crest of the Iceland national football team.", source: "https://en.wikipedia.org/wiki/Iceland_national_football_team" },
+    { id: "is-football-crest", category: "footballcrest", name: "Crest of the Iceland national football team", path: "national-flags/is/is-football-crest.svg", design: "The crest of the Iceland national football team — a white angular emblem on a blue circle, its interlocking lines evoking a bull, an eagle, a giant and a dragon at once.", source: "https://en.wikipedia.org/wiki/Iceland_national_football_team" },
   ],
   "IT": [
     { id: "it-official-national", category: "official", name: "Flag of Italy", from: 1946, to: 9999, primary: true, path: "flags/it.svg", design: "The national flag of Italy, in the form adopted in 1946.", source: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
@@ -1692,7 +1692,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pe-president", category: "standard", name: "Presidential standard of Peru", path: "national-flags/pe/peru-president.svg", design: "A white field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
     { id: "pe-arms", category: "coatofarms", name: "National coat of arms of Peru", from: 1825, to: 9999, path: "national-flags/pe/peru-arms.svg", design: "A shield of three fields — a vicuña, a cinchona tree and a cornucopia spilling coins — between a palm and a laurel branch beneath a civic crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
     { id: "pe-passport", category: "passport", name: "Passport of Peru", path: "national-flags/pe/pe-passport.webp", design: "The cover of the Peru passport.", source: "https://gicg.net/passport/pe/" },
-    { id: "pe-football-crest", category: "footballcrest", name: "Crest of the Peru national football team", path: "national-flags/pe/pe-football-crest.svg", design: "The crest of the Peru national football team.", source: "https://en.wikipedia.org/wiki/Peru_national_football_team" },
+    { id: "pe-football-crest", category: "footballcrest", name: "Crest of the Peru national football team", path: "national-flags/pe/pe-football-crest.svg", design: "The crest of the Peru national football team — a shield in vertical red-white-red bands, bordered in gold, with the letters “F P F”.", source: "https://en.wikipedia.org/wiki/Peru_national_football_team" },
   ],
   "PF": [
     { id: "pf-official-national", category: "official", name: "Flag of French Polynesia", from: 1984, to: 9999, path: "flags/pf.svg", design: "Two red bands enclosing a wide white band, a central emblem of a Polynesian canoe over sea and sun.", source: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
@@ -2924,6 +2924,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Chile — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chile" },
     ],
   },
+  "cl-football-crest": {
+    description: "The badge repeats Chile's own national flag exactly — the blue canton, white star and red lower field — rather than drawing on the condor and huemul deer of the country's coat of arms. Federación de Fútbol de Chile is simply the association's own name, the Football Federation of Chile.",
+    sources: [
+      { title: "Chile national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Chile_national_football_team" },
+    ],
+  },
   "cm-arms": {
     description: "The shield repeats the colour pattern of the national flag and carries a map of the country at its centre, with the scales of justice superimposed on the map — added in 1984 and standing for the rule of law over the whole territory. Two fasces cross behind the shield, the classical emblem of state authority; the banners above and below carry the name of the republic and its motto, \"Peace, Work, Fatherland\". A separate set of arms had been designed for the German colony in 1914, but the war broke out before the project was finished and they were never used.",
     sources: [
@@ -3020,6 +3026,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "These are among the oldest arms in continuous national use anywhere: the earliest known depiction is on a seal of King Canute VI around 1194, and the earliest documentation of the colours is around 1270. The red figures scattered around the lions are commonly drawn as hearts, but they are not hearts — a royal decree of 1972 still specifies them as søblade, water-lily leaves, and that is what they originally were. Their number was historically unregulated and could be far higher; Frederick VI fixed it at nine in 1819, in the same act that declared the beasts to be lions and turned them to face forward.",
     sources: [
       { title: "Coat of arms of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark" },
+    ],
+  },
+  "dk-football-crest": {
+    description: "Dansk Boldspil-Union is simply Danish for the Danish Football Union (DBU), founded in 1889, the year on the badge; the pearled border and crown motif echo the ornamentation of Danish royal regalia.",
+    sources: [
+      { title: "Danish Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Danish_Football_Association" },
     ],
   },
   "dm-arms": {
@@ -3400,6 +3412,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "These are the only national arms in the world with FOUR supporters, and each is a specific creature from a specific text: the landvættir, the four guardian spirits of Iceland as Snorri Sturluson describes them in Heimskringla — a bull on the shield's right, a giant on its left, a vulture above the bull and a dragon above the giant, each guarding one quarter of the island. They stand on a block of columnar basalt, the island's own rock. The shield itself repeats the flag. Iceland's arms have changed with its status: a crowned stockfish around 1500, a white falcon from 1903, and the landvættir from 12 February 1919, first for the kingdom under the Danish crown and then for the republic.",
     sources: [
       { title: "Coat of arms of Iceland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland" },
+    ],
+  },
+  "is-football-crest": {
+    description: "The four figures are the Landvættir, Iceland's legendary guardian spirits. In the medieval saga Heimskringla, King Harald Bluetooth of Denmark sends a scout in whale form to size up Iceland for invasion, and the scout is driven back at each coast — by a dragon and serpents in the east, a great bird in the north, a bull in the west, and a giant with an iron staff in the south. The four have stood as supporters on Iceland's coat of arms since it became an independent republic in 1944, and this 2020 badge interweaves all four into a single mark, replacing an older crest built from the association's initials, the flag and a ball.",
+    sources: [
+      { title: "Landvættir — Wikipedia", url: "https://en.wikipedia.org/wiki/Landv%C3%A6ttir" },
     ],
   },
   "it-arms": {
@@ -3844,6 +3862,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The 1825 law defines the shield as three fields standing for the riches of Peru in the three natural kingdoms: a vicuña on light blue for the animal kingdom, a cinchona tree on white for the vegetable — the tree whose bark gave the world quinine — and, on the smaller red field below, a cornucopia spilling coins for the mineral. The palm branch on one side and the laurel on the other, tied with a red and white ribbon, together with the holm-oak civic crown above, stand for victory and glory.",
     sources: [
       { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
+    ],
+  },
+  "pe-football-crest": {
+    description: "The red-white-red bands repeat Peru's own national flag. FPF is the association's own initials, Federación Peruana de Fútbol (Peruvian Football Federation).",
+    sources: [
+      { title: "Peru national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Peru_national_football_team" },
     ],
   },
   "pf-official-national": {
