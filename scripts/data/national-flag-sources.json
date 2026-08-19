@@ -4917,10 +4917,19 @@
           "name": "Crest of the Chile national football team",
           "commons": "Federación de Fútbol de Chile logo.svg",
           "file": "cl/cl-football-crest.svg",
-          "design": "The crest of the Chile national football team.",
+          "design": "The crest of the Chile national football team — a blue-and-red shield bearing a white star, ringed by “FEDERACIÓN DE FÚTBOL DE CHILE”.",
           "source": "https://en.wikipedia.org/wiki/Chile_national_football_team",
           "sha256": "b50287c98df970cedf44f59bfb790100c3cf31fd64dc99a798a10b0ae4d2cfb5",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The badge repeats Chile's own national flag exactly — the blue canton, white star and red lower field — rather than drawing on the condor and huemul deer of the country's coat of arms. Federación de Fútbol de Chile is simply the association's own name, the Football Federation of Chile.",
+            "sources": [
+              {
+                "title": "Chile national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Chile_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -6425,10 +6434,19 @@
           "name": "Crest of the Denmark national football team",
           "commons": "Dansk boldspil union logo.svg",
           "file": "dk/dk-football-crest.svg",
-          "design": "The crest of the Denmark national football team.",
+          "design": "The crest of the Denmark national football team — a red circle beaded in pearls, with a crown-topped “DBU” monogram above a floral rosette, ringed by “DANSK · BOLDSPIL · UNION” and the year “1889”.",
           "source": "https://en.wikipedia.org/wiki/Denmark_national_football_team",
           "sha256": "6ce6ea5e48d99881f293fe99f4fca3f6aa4652ef96e78cd58188356d687130fe",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "Dansk Boldspil-Union is simply Danish for the Danish Football Union (DBU), founded in 1889, the year on the badge; the pearled border and crown motif echo the ornamentation of Danish royal regalia.",
+            "sources": [
+              {
+                "title": "Danish Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Danish_Football_Association"
+              }
+            ]
+          }
         }
       ]
     },
@@ -11757,10 +11775,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/6/6d/Iceland_national_football_team_logo.svg",
           "file": "is/is-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Iceland national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Iceland_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Iceland national football team.",
+          "design": "The crest of the Iceland national football team — a white angular emblem on a blue circle, its interlocking lines evoking a bull, an eagle, a giant and a dragon at once.",
           "source": "https://en.wikipedia.org/wiki/Iceland_national_football_team",
           "sha256": "ffd3528e62a1691eb94d7727f9653cf0310c15cd074e0b5ccc5b00310a7f29b8",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The four figures are the Landvættir, Iceland's legendary guardian spirits. In the medieval saga Heimskringla, King Harald Bluetooth of Denmark sends a scout in whale form to size up Iceland for invasion, and the scout is driven back at each coast — by a dragon and serpents in the east, a great bird in the north, a bull in the west, and a giant with an iron staff in the south. The four have stood as supporters on Iceland's coat of arms since it became an independent republic in 1944, and this 2020 badge interweaves all four into a single mark, replacing an older crest built from the association's initials, the flag and a ball.",
+            "sources": [
+              {
+                "title": "Landvættir — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Landv%C3%A6ttir"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -19051,10 +19078,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/36/Fpf-logo.svg",
           "file": "pe/pe-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Peru national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Fpf-logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Peru national football team.",
+          "design": "The crest of the Peru national football team — a shield in vertical red-white-red bands, bordered in gold, with the letters “F P F”.",
           "source": "https://en.wikipedia.org/wiki/Peru_national_football_team",
           "sha256": "762942df6c5de089a588fcf1cc60b18773b4a47ecf5cc10e51c5aedaca5a2522",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The red-white-red bands repeat Peru's own national flag. FPF is the association's own initials, Federación Peruana de Fútbol (Peruvian Football Federation).",
+            "sources": [
+              {
+                "title": "Peru national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Peru_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
