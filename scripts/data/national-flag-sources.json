@@ -4587,10 +4587,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/a/a0/Swiss_Football_Association_logo.svg",
           "file": "ch/ch-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Switzerland national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Swiss_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Switzerland national football team.",
+          "design": "The crest of the Switzerland national football team — a red line drawing of a footballer mid-kick, built from the letters “ASF” and “SFV”.",
           "source": "https://en.wikipedia.org/wiki/Switzerland_national_football_team",
           "sha256": "ec1957202fe7763b7268365d491811cb62c639e7e79f91f5dd8c2bab2f7fd81a",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "ASF and SFV are the association's own name in two of Switzerland's official languages — Association Suisse de Football (French) and Schweizerischer Fussballverband (German) — reflecting the country's multilingual federal structure rather than a single national language. The two sets of initials are drawn together into the outline of a player striking the ball.",
+            "sources": [
+              {
+                "title": "Swiss Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Swiss_Football_Association"
+              }
+            ]
+          }
         }
       ]
     },
@@ -5417,10 +5426,19 @@
           "name": "Crest of the Colombia national football team",
           "commons": "FCF-Logo-2023.svg",
           "file": "co/co-football-crest.svg",
-          "design": "The crest of the Colombia national football team.",
+          "design": "The crest of the Colombia national football team — a red football ringed in yellow and blue, with “FEDERACIÓN COLOMBIANA DE FÚTBOL” arced around it.",
           "source": "https://en.wikipedia.org/wiki/Colombia_national_football_team",
           "sha256": "6c6af8105367da3be46c42ac2d2a4d838ee0beb137f83c8bfe442e8cb5aebc0c",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The yellow, blue and red repeat Colombia's own national flag. Federación Colombiana de Fútbol is simply the association's own name — the Colombian Football Federation.",
+            "sources": [
+              {
+                "title": "Colombia national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Colombia_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -8536,10 +8554,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/9/9e/Scottish_Football_Association_Logo.svg",
           "file": "gb/gb-sct-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Scottish Football Association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Scottish_Football_Association_Logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Scottish Football Association, worn by the Scotland national team.",
+          "design": "The crest of the Scottish Football Association, worn by the Scotland national team — a red lion rampant on gold, surrounded by nine green thistles, on a navy shield below a “SCOTTISH FA” banner.",
           "source": "https://en.wikipedia.org/wiki/Scottish_Football_Association",
           "sha256": "9de302be8138eb1671b9e43a4006a3edfe6ec9589cab2bbac8534fdba3d1550d",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The red lion rampant on gold is taken directly from the Royal Banner of Scotland (the Lion Rampant), long a symbol of the Scottish crown. The thistle is Scotland's own national emblem, adopted under King Alexander III (1249–1286); a popular legend has an invading Norse soldier step barefoot on one and cry out, waking a sleeping Scottish camp before a battle — possibly the Battle of Largs in 1263 — but the story survives only as legend, not documented history.",
+            "sources": [
+              {
+                "title": "Royal arms of Scotland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Royal_arms_of_Scotland"
+              },
+              {
+                "title": "Thistle — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Thistle"
+              }
+            ]
+          }
         },
         {
           "id": "gb-wls-football-crest",
@@ -8548,10 +8579,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/f/f8/Football_Association_of_Wales_logo_%282019%29.svg",
           "file": "gb/gb-wls-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Football Association of Wales is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Wales_logo_(2019).svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Football Association of Wales, worn by the Wales national team.",
+          "design": "The crest of the Football Association of Wales, worn by the Wales national team — a red dragon rendered in an angular style, standing upright rather than the horizontal dragon of the national flag.",
           "source": "https://en.wikipedia.org/wiki/Football_Association_of_Wales",
           "sha256": "482f30c68cf6fc0350487403a77116e81b19167636059e464ff668d989d8f73d",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "Y Ddraig Goch, the Red Dragon, is Wales's own national emblem and has been associated with the country for centuries, most visibly on its flag. The FAW's own 2019 rebrand describes this stylised badge as “an icon of strength, support and resilience”, with sharp angles and edges drawn from the tradition of Welsh slate carving; unlike the flag's dragon, which stands horizontally, this one is shown upright.",
+            "sources": [
+              {
+                "title": "Football Association of Wales unveils simplified dragon — Dezeen",
+                "url": "https://www.dezeen.com/2019/08/30/football-association-of-wales-visual-identity-dragon/"
+              }
+            ]
+          }
         },
         {
           "id": "gb-nir-football-crest",
@@ -8560,10 +8600,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/2/25/Irish_Football_Association_logo.svg",
           "file": "gb/gb-nir-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Irish Football Association (Northern Ireland) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Irish_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Irish Football Association, which governs football in Northern Ireland.",
+          "design": "The crest of the Irish Football Association, which governs football in Northern Ireland — a blue cross pattern edged in gold, with a gold shamrock in each of the four quarters, ringed by “IRISH FOOTBALL ASSOCIATION · NORTHERN IRELAND”.",
           "source": "https://en.wikipedia.org/wiki/Irish_Football_Association",
           "sha256": "2a14aa1a53c4a064fecb32086e74775f6d1dad2a4f3e6de0993b8e71caf06f9d",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The shamrock is Ireland's own traditional emblem — by legend, Saint Patrick used its three leaves during his 5th-century mission to teach the Christian doctrine of the Holy Trinity, though the earliest written record of that particular story dates only to 1726. The IFA, founded in 1880 to govern football across the whole island of Ireland before partition and today the governing body for Northern Ireland, carries the shamrock four times around the cross at the centre of its badge.",
+            "sources": [
+              {
+                "title": "Shamrock — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Shamrock"
+              }
+            ]
+          }
         }
       ]
     },
@@ -10783,10 +10832,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/f/f8/Republic_of_Ireland_national_football_team_crest.svg",
           "file": "ie/ie-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Ireland national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Republic_of_Ireland_national_football_team_crest.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Ireland national football team.",
+          "design": "The crest of the Ireland national football team — a green circle bearing a stylised white shamrock, ringed by “IRELAND FOOTBALL” in white on green, with an orange arc below.",
           "source": "https://en.wikipedia.org/wiki/Republic_of_Ireland_national_football_team",
           "sha256": "70be8ac810c29b92a45460ac5cdaf2c92fe8693bdc4c288736c912751cfb1aee",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The shamrock is Ireland's own traditional national emblem, adopted as a patriotic symbol alongside the colour green by revolutionary groups from the late 18th century; the Football Association of Ireland restored it to the men's and women's national crests in 2023, having last carried it in 2004. The green, white and orange repeat the Irish tricolour.",
+            "sources": [
+              {
+                "title": "New crests revealed for Ireland teams and FAI — RTÉ",
+                "url": "https://www.rte.ie/sport/soccer/2023/0309/1361308-new-crests-revealed-for-ireland-teams-and-fai"
+              },
+              {
+                "title": "Shamrock — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Shamrock"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -20368,10 +20430,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/3a/Qatar_Football_Association_logo.svg",
           "file": "qa/qa-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Qatar national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Qatar_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Qatar national football team.",
+          "design": "The crest of the Qatar national football team — a white field with a serrated maroon border, echoing the sawtooth edge of the national flag, around an ornately patterned ball, with “QFA” below.",
           "source": "https://en.wikipedia.org/wiki/Qatar_Football_Association",
           "sha256": "868a8db7bedf88828d82815359f3b4cd6fee8430813bcf5fb3ca9ecbde954cf4",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The maroon-and-white and the nine-point serrated edge directly repeat Qatar's own national flag; the ball's engraved geometric pattern draws on traditional regional ornament rather than depicting a plain football. QFA is the association's own initials, the Qatar Football Association.",
+            "sources": [
+              {
+                "title": "Qatar Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Qatar_Football_Association"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -25676,10 +25747,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/4/43/Uruguay_national_football_team_seal.svg",
           "file": "uy/uy-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Uruguay national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Uruguay_national_football_team_seal.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Uruguay national football team.",
+          "design": "The crest of the Uruguay national football team — a gold ribbon reading “AUF” flanked by wheat sprigs, over a football banded in Uruguay's light blue and white, beneath four gold stars.",
           "source": "https://en.wikipedia.org/wiki/Uruguay_national_football_team",
           "sha256": "81fc9049f20837813ab6fa44c354be966c3aea87ef027953b1a8a8f1d8e202d4",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "AUF is the association's own initials, Asociación Uruguaya de Fútbol. The four stars mark four FIFA-recognised world championships — the 1924 and 1928 Olympic football tournaments (the only Olympic titles ever retroactively treated as equivalent to a World Cup) and the 1930 and 1950 FIFA World Cups. Uruguay only added the stars in 1992, after the football historian Atilio Garrido produced Uruguay's own 1925 and 1929 submissions to FIFA claiming world-champion status for the Olympic wins; a FIFA staffer asked in 2021 that two of the four be removed, but FIFA withdrew the request once Uruguay presented that same historical evidence again, and all four stars remain.",
+            "sources": [
+              {
+                "title": "Four stars above Uruguay's football crest — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Four_stars_above_Uruguay%27s_football_crest"
+              }
+            ]
+          }
         }
       ]
     },
