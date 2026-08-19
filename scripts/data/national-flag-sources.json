@@ -2164,10 +2164,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/f/f9/Royal_Belgian_FA_logo_2019.svg",
           "file": "be/be-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Belgium national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Royal_Belgian_FA_logo_2019.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Belgium national football team.",
+          "design": "The crest of the Belgium national football team — a gold shield banded in the national black, yellow and red, under a royal crown, reading “ROYAL BELGIAN FA · 1895”, with laurel branches below.",
           "source": "https://en.wikipedia.org/wiki/Belgium_national_football_team",
           "sha256": "15f50eb8165446056fa6825146a6d803d104b5418e37ae03b187209ff9532e52",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The black-yellow-red bands are Belgium's own national colours, and the crown marks the federation's royal patronage — the source of “Royal” in its name. “1895” is the year the Royal Belgian Football Association was founded. An earlier badge carried the Belgian lion from the national coat of arms and briefly gave the team a mascot, Diabolix — blending “diable” (devil) with the heraldic lion — before the popular nickname the Red Devils (coined in 1906, after a Dutch journalist had called three Belgian players “devils” the previous year) took over; the lion itself was dropped from the crest in 1981.",
+            "sources": [
+              {
+                "title": "Royal Belgian Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Royal_Belgian_Football_Association"
+              },
+              {
+                "title": "Belgium national football team logo — 1000 Logos",
+                "url": "https://1000logos.net/belgium-national-football-team-logo/"
+              }
+            ]
+          }
         }
       ]
     },
@@ -5218,7 +5231,16 @@
           "design": "The crest of the Chinese Football Association — the association's name in red Chinese characters arced over a green field with the Tiananmen gate, a football and the letters “CFA”.",
           "source": "https://en.wikipedia.org/wiki/Chinese_Football_Association",
           "sha256": "cccb29feaa7df14a4b46090637425c11e9b00cbd4ce558c2c9ab4263d6ad578c",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The gold building is Tiananmen — the gate on Beijing's central axis from which the People's Republic of China was proclaimed in 1949 — a national symbol significant enough that it also appears on China's own national emblem. The red rings and green field are the colours of the national flag; CFA is the association's own initials, the Chinese Football Association, written above in Chinese as 中国足球协会.",
+            "sources": [
+              {
+                "title": "Tiananmen — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Tiananmen"
+              }
+            ]
+          }
         }
       ]
     },
@@ -7214,10 +7236,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/f/f8/Egyptian_Football_Association_logo.svg",
           "file": "eg/eg-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Egypt national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Egyptian_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Egypt national football team.",
+          "design": "The crest of the Egypt national football team — a black-and-white football with red, white and black rays fanning outward, ringed by the association's name in Arabic and, beneath, “EGYPTIAN FA”.",
           "source": "https://en.wikipedia.org/wiki/Egypt_national_football_team",
           "sha256": "a698e78aa8630962eef9e16479ea9cc47288414b3db7cc25e7ab53cad77608d1",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The red, white and black rays repeat Egypt's own national flag. الاتحاد المصري لكرة القدم is simply the association's own name in Arabic — literally “the Egyptian Federation for Football”.",
+            "sources": [
+              {
+                "title": "Egyptian Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Egyptian_Football_Association"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -9000,10 +9031,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/9/9c/Ghana_Football_Association_logo_%282001%29.svg",
           "file": "gh/gh-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Ghana national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Ghana_Football_Association_logo_(2001).svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Ghana national football team.",
+          "design": "The crest of the Ghana national football team — a red-yellow-green ribbon bearing a black star, wrapped around a black-and-white football and ringed in the national colours, with the words “GHANA FOOTBALL ASSOCIATION”.",
           "source": "https://en.wikipedia.org/wiki/Ghana_national_football_team",
           "sha256": "671dd20917182e07ab17ae16f45cc8319449eee22ee9015ef2db3cddf0a14e7a",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The red-yellow-green and the black star repeat Ghana's own national flag. The black star was adopted from the flag of the Black Star Line, the shipping company Marcus Garvey ran from 1919 to 1922 as part of his Pan-Africanist movement, and stands for the emancipation of Africa and unity against colonialism — Ghana raised it on its own flag in 1957, when it became the first sub-Saharan African country to gain independence. It gives the team its own nickname, the Black Stars.",
+            "sources": [
+              {
+                "title": "Flag of Ghana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Ghana"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -10224,10 +10264,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/ea/Croatia_national_football_team_logo.svg",
           "file": "hr/hr-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Croatia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Croatia_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Croatia national football team.",
+          "design": "The crest of the Croatia national football team — a red-and-white checkerboard shield (the šahovnica) with a blue band reading “HNS”, above a gold football.",
           "source": "https://en.wikipedia.org/wiki/Croatia_national_football_team",
           "sha256": "e7fec1a17a91311ddb2723f6038f47ac86b54bdf0efe2a1e21486c72ae589136",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The šahovnica (checkerboard) is the national symbol of Croatia and Croats, in use since at least the 11th century and confirmed in an official Croatian coat of arms by 1495. A popular legend credits King Stjepan Držislav with winning the pattern in a chess match against a Venetian ruler, but the earliest records of that story date from long after the events it describes, so historians treat it as legend rather than fact. HNS is simply the federation's own initials, Hrvatski nogometni savez (Croatian Football Federation).",
+            "sources": [
+              {
+                "title": "Croatian checkerboard — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Croatian_checkerboard"
+              },
+              {
+                "title": "Croatian Football Federation — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Croatian_Football_Federation"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -11159,7 +11212,20 @@
           "design": "The crest of the All India Football Federation — a blue-and-orange badge carrying an “INDIA” banner and a football swept by the national tricolour, beside the federation's name.",
           "source": "https://en.wikipedia.org/wiki/All_India_Football_Federation",
           "sha256": "d1dfeb27a35455d95c676be4fe4e77ae0e92bb17bd21cf16f4228768540587df",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The swept orange-white-green band is drawn from the Indian national flag as a rising flame, meant to stand for the vibrancy and forward momentum of the game in India; the shield shape frames the federation's own role — inclusive of, responsible for, and in authority over the sport nationally. The current mark was designed in 2016 after consultation with FIFA, AIFF officials, players and fans.",
+            "sources": [
+              {
+                "title": "The new AIFF logo — Indian Football (official) via X/Twitter",
+                "url": "https://x.com/IndianFootball/status/781020193900339200"
+              },
+              {
+                "title": "AIFF gets a new logo — Business Standard",
+                "url": "https://www.business-standard.com/article/pti-stories/aiff-gets-a-new-logo-116092801000_1.html"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -14906,10 +14972,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/d/d0/Royal_Moroccan_Football_Federation_logo.svg",
           "file": "ma/ma-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Morocco national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Royal_Moroccan_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Morocco national football team.",
+          "design": "The crest of the Morocco national football team — a green circular badge bearing a white-bordered green star and a gold royal crown, with red bands hanging below, ringed by the federation's name in Arabic and French (“FÉDÉRATION ROYALE MAROCAINE DE FOOTBALL”, FRMF).",
           "source": "https://en.wikipedia.org/wiki/Morocco_national_football_team",
           "sha256": "28f49e549f035bd3f02bd2754ef6823dcd6897ed5ccaadd09c03ab573efc052a",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The green five-pointed star is the same Seal of Solomon that appears on Morocco's own national flag, introduced by Sultan Yusef's 1915 proclamation; by tradition it stands for the five pillars of Islam, while the flag's red is said to stand for the blood and unity of the nation's ancestors. The crown marks the federation's royal patronage — FRMF is French for Royal Moroccan Football Federation. The team's own nickname, the Atlas Lions, refers to the Atlas Mountains and the now-extinct Barbary (Atlas) lion once native to them, though this particular badge carries no lion.",
+            "sources": [
+              {
+                "title": "Flag of Morocco — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Morocco"
+              },
+              {
+                "title": "Morocco national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Morocco_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -19601,10 +19680,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/30/Polish_Football_Association_logo.svg",
           "file": "pl/pl-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Poland national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Polish_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Poland national football team.",
+          "design": "The crest of the Poland national football team — a red-and-gold abstract mark of swirling wing shapes evoking an eagle in flight, above a football, under a gold crown, with the letters “PZPN” below.",
           "source": "https://en.wikipedia.org/wiki/Polish_Football_Association",
           "sha256": "958685816f534926757e6ff6f92f8cf1204e4458ad7733bfbc0d7df94c6ac294",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "Poland's white eagle is a centuries-old national emblem, and this 2011 redesign keeps the eagle and the ball — the two elements the federation's own supporters most wanted retained — reworked into an abstract, dynamic form rather than the literal bird of the older crests. PZPN is the association's own initials, Polski Związek Piłki Nożnej (Polish Football Association).",
+            "sources": [
+              {
+                "title": "Historical logos of the Polish Football Association — PZPN",
+                "url": "https://pzpn.pl/en/association/news/2019-07-01/historical-logos-of-the-polish-football-association"
+              }
+            ]
+          }
         }
       ]
     },
@@ -21084,10 +21172,27 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/ee/Saudi_Arabia_national_football_team_logo.svg",
           "file": "sa/sa-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Saudi Arabia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Saudi_Arabia_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Saudi Arabia national football team.",
+          "design": "The crest of the Saudi Arabian Football Federation — a green-and-white circular badge built around a stylised falcon's head merged with a football, the letters “SAFF” inside the ball, ringed by the country's name in Arabic and “KSA” below.",
           "source": "https://en.wikipedia.org/wiki/Saudi_Arabia_national_football_team",
           "sha256": "3ed8eb7895b81a15931f77ac024a3b1404c7141aea5381299593d75415179cf8",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The falcon is long associated with Saudi Arabia's desert hunting tradition and stands for speed, precision and strength; it gives the men's team its own nickname, the Green Falcons (Saqr, “falcon”, in Arabic). Green is the colour of Islam and runs throughout Saudi national symbols, including the flag. The federation also describes the same swept shape as evoking a palm frond, echoing the palm tree on the kingdom's own coat of arms.",
+            "sources": [
+              {
+                "title": "Saudi Arabia national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Saudi_Arabia_national_football_team"
+              },
+              {
+                "title": "Saudi Arabian Football Federation — Saudipedia",
+                "url": "https://saudipedia.com/en/article/1045/society/sports/saudi-arabian-football-federation"
+              },
+              {
+                "title": "Emblem of Saudi Arabia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia"
+              }
+            ]
+          }
         }
       ]
     },
@@ -21524,10 +21629,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/3f/Sweden_national_football_team_badge.svg",
           "file": "se/se-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Sweden national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Sweden_national_football_team_badge.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Sweden national football team.",
+          "design": "The crest of the Sweden national football team — a blue shield bearing the yellow Nordic cross of the national flag, under a football and the words “SVENSKA FOTBOLLFÖRBUNDET · 1904”, above a “SVERIGE” banner.",
           "source": "https://en.wikipedia.org/wiki/Sweden_men's_national_football_team",
           "sha256": "c32c05e3f9d3738191f6f105ecd458434152554a7e8fa1652b69b9f0ab41a3b5",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The blue-and-yellow cross is Sweden's own national flag. Svenska Fotbollförbundet — simply Swedish for “Swedish Football Association” — was founded in Stockholm on 18 December 1904, the year on the badge; “Sverige” is the Swedish name for Sweden.",
+            "sources": [
+              {
+                "title": "Swedish Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Swedish_Football_Association"
+              }
+            ]
+          }
         }
       ]
     },
@@ -22185,7 +22299,20 @@
           "design": "The crest of the Senegalese Football Federation — two lions (the Lion of Teranga) in the national green, yellow and red, ringed by the federation name in French.",
           "source": "https://en.wikipedia.org/wiki/Senegalese_Football_Federation",
           "sha256": "005e7e6d96fbc33ecbce3b4fed89b082a3fa6fe5becfd625dae222d066207fb2",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The lions and the green-yellow-red repeat Senegal's own flag and give the team its nickname, the Lions of Teranga (Lions de la Teranga). Teranga is a Wolof word for hospitality and warmth toward guests — a value Senegal is widely known for and often called “the country of Teranga” — so the badge pairs the lion's strength with a value the nation prizes in itself.",
+            "sources": [
+              {
+                "title": "Senegal national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Senegal_national_football_team"
+              },
+              {
+                "title": "Senegalese Spirit: Discovering the Meaning of Teranga — The Culture Trip",
+                "url": "https://theculturetrip.com/africa/senegal/articles/why-senegal-is-the-country-of-teranga"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -23954,7 +24081,20 @@
           "design": "The crest of the Turkish Football Federation — a red shield bearing the white crescent and star of the national flag, a football, and the founding year 1923.",
           "source": "https://en.wikipedia.org/wiki/Turkish_Football_Federation",
           "sha256": "8ae1730d96bb41bcd4abb88e1d8d48c902eb44c6e47e3499479ef34ca3a62956",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The white crescent and star repeat Turkey's own national flag — the ay yıldız (“moon star”) — and “1923” marks the founding of the Turkish Football Federation, the same year the Republic of Turkey itself was proclaimed.",
+            "sources": [
+              {
+                "title": "Ay yıldız — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Ayy%C4%B1ld%C4%B1z"
+              },
+              {
+                "title": "Turkey national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Turkey_national_football_team"
+              }
+            ]
+          }
         }
       ]
     },
