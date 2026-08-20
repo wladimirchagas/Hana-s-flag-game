@@ -210,7 +210,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "au-gg", category: "standard", name: "Flag of the Governor-General of Australia", from: 1936, to: 9999, path: "national-flags/au/australia-governor-general.svg", design: "A crowned lion standing on a crown, on a blue field.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-arms", category: "coatofarms", name: "Commonwealth Coat of Arms", path: "national-flags/au/australia-arms.svg", design: "A shield of six quarters supported by a kangaroo and an emu, with the Commonwealth Star above and golden wattle behind.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
     { id: "au-passport", category: "passport", name: "Australian passport", path: "national-flags/au/australia-passport.webp", design: "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above it and PASSPORT below.", source: "https://gicg.net/passport/au/" },
-    { id: "au-football-crest", category: "footballcrest", name: "Crest of the Australia national football team", path: "national-flags/au/au-football-crest.svg", design: "The crest of the Australia national football team — a gold shield bearing the Australian coat of arms (a quartered badge of the six states beneath the seven-pointed Commonwealth Star), flanked by a kangaroo and an emu, over the word “AUSTRALIA” and a sprig of golden wattle.", source: "https://en.wikipedia.org/wiki/Australia_national_soccer_team" },
+    { id: "au-football-crest", category: "footballcrest", name: "Crest of Football Australia", path: "national-flags/au/au-football-crest.svg", design: "The logo of Football Australia — an abstract ball formed of interlocking green-and-gold curves, beside the words “Football Australia”.", source: "https://en.wikipedia.org/wiki/Football_Australia" },
   ],
   "AW": [
     { id: "aw-official-national", category: "official", name: "Flag of Aruba", from: 1976, to: 9999, path: "flags/sub/NL/NL-AW.svg", design: "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Aruba" },
@@ -2371,7 +2371,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "za-sandf-1994", category: "military", name: "Ensign of the South African National Defence Force (1994–2003)", from: 1994, to: 2003, path: "national-flags/za/south-africa-sandf-1994.svg", design: "The first post-apartheid defence-force ensign, replaced in 2003.", source: "https://en.wikipedia.org/wiki/List_of_South_African_flags" },
     { id: "za-arms", category: "coatofarms", name: "Coat of arms of South Africa", path: "national-flags/za/south-africa-arms.svg", design: "Two facing figures from Khoisan rock art within a shield, above a spear and knobkierie, crowned by a secretary bird and a rising sun.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Africa" },
     { id: "za-passport", category: "passport", name: "South African passport", path: "national-flags/za/south-africa-passport.webp", design: "A green cover bearing the South African coat of arms in gold, reading REPUBLIC OF SOUTH AFRICA / REPUBLIEK VAN SUID-AFRIKA and PASSPORT.", source: "https://gicg.net/passport/za/" },
-    { id: "za-football-crest", category: "footballcrest", name: "Crest of the South Africa national football team", path: "national-flags/za/za-football-crest.svg", design: "The crest of the South Africa national football team — a green-and-gold shield bearing a king protea flower, with a “SOUTH AFRICA” banner below.", source: "https://en.wikipedia.org/wiki/South_Africa_national_football_team" },
+    { id: "za-football-crest", category: "footballcrest", name: "Crest of the South African Football Association (SAFA)", path: "national-flags/za/za-football-crest.svg", design: "The crest of the South African Football Association — a roundel split between a monochrome football and a gold, sun-rayed landscape, above the association's name.", source: "https://en.wikipedia.org/wiki/South_African_Football_Association" },
   ],
   "ZM": [
     { id: "zm-official-national", category: "official", name: "Flag of Zambia", from: 1964, to: 9999, primary: true, path: "flags/zm.svg", design: "The national flag of Zambia, adopted at independence in 1964 (the green shade was standardised in 1996).", source: "https://en.wikipedia.org/wiki/Flag_of_Zambia" },
@@ -2688,9 +2688,9 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
   "au-football-crest": {
-    description: "The badge is Australia's own coat of arms. The kangaroo and emu were chosen as supporters partly because neither animal can easily walk backwards, taken to symbolise a nation that only moves forward. The seven-pointed Commonwealth Star above the shield stands for the federation: six points for the original six states, the seventh for its territories. The shield itself quarters each state's own badge — among them the Southern Cross for Victoria, a Maltese cross for Queensland, a black swan for Western Australia and Saint George's Cross with a lion for New South Wales. The golden wattle, Australia's national floral emblem, was not part of the original 1912 royal warrant for the arms but has been added as decoration ever since.",
+    description: "Green and gold are Australia's national sporting colours — green for the country's eucalypts (“gum-tree green”), gold for the golden wattle, the national floral emblem (“wattle-gold”) — first adopted by an Australian sports team touring England in 1899 and carried since into the Socceroos' own kit and this Football Australia mark.",
     sources: [
-      { title: "Coat of arms of Australia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
+      { title: "Green and gold — Wikipedia", url: "https://en.wikipedia.org/wiki/Green_and_gold" },
     ],
   },
   "aw-arms": {
@@ -4398,10 +4398,9 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
   "za-football-crest": {
-    description: "The king protea is South Africa's national flower, chosen for the badge as it is for the country's own national cricket and rugby teams; the team's nickname, Bafana Bafana (Zulu for “the boys, the boys”), does not itself appear on the crest. Green and gold are widely used as South African sporting colours alongside the badge's own design.",
+    description: "The badge joins the game itself — a football — with a gold silhouette of the country's own map, standing for South African football as a national institution. SAFA was formed on 23 March 1991, when the previously racially-segregated football associations that had existed under apartheid united into a single, non-racial governing body.",
     sources: [
-      { title: "King Protea (emblem) — Wikipedia", url: "https://en.wikipedia.org/wiki/Protea_cynaroides" },
-      { title: "South Africa national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/South_Africa_national_football_team" },
+      { title: "South African Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/South_African_Football_Association" },
     ],
   },
   "zm-arms": {
