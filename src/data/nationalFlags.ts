@@ -192,7 +192,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "at-state", category: "civilstate", name: "State flag of Austria", from: 1955, to: 9999, path: "national-flags/at/austria-state.svg", design: "The red-white-red triband charged with the federal eagle — the state flag, war flag and naval ensign, beside the plain civil flag.", source: "https://en.wikipedia.org/wiki/List_of_Austrian_flags" },
     { id: "at-arms", category: "coatofarms", name: "Coat of arms of Austria", from: 1945, to: 9999, path: "national-flags/at/at-arms.svg", design: "A black eagle wearing a mural crown, holding a hammer and a sickle, with broken chains about its talons and a red-white-red shield on its breast.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Austria" },
     { id: "at-passport", category: "passport", name: "Passport of Austria", path: "national-flags/at/at-passport.webp", design: "The cover of the Austria passport.", source: "https://gicg.net/passport/at/" },
-    { id: "at-football-crest", category: "footballcrest", name: "Crest of the Austria national football team", path: "national-flags/at/at-football-crest.svg", design: "The crest of the Austria national football team.", source: "https://en.wikipedia.org/wiki/Austria_national_football_team" },
+    { id: "at-football-crest", category: "footballcrest", name: "Crest of the Austria national football team", path: "national-flags/at/at-football-crest.svg", design: "The crest of the Austria national football team — a black spread eagle bearing a red-white-red shield on its chest, above a football, ringed by “ÖFB” lettering and “Seit … 1904”.", source: "https://en.wikipedia.org/wiki/Austria_national_football_team" },
   ],
   "AU": [
     { id: "au-official-national", category: "official", name: "Australian National Flag", from: 1908, to: 9999, primary: true, path: "flags/au.svg", design: "Proclaimed under the Flags Act 1953 as the flag of the Commonwealth of Australia.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
@@ -293,7 +293,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bg-naval", category: "maritime", name: "Naval ensign of Bulgaria", from: 2005, to: 9999, path: "national-flags/bg/bg-naval.svg", design: "The naval ensign of the Bulgarian Navy.", source: "https://en.wikipedia.org/wiki/Naval_ensign_of_Bulgaria" },
     { id: "bg-arms", category: "coatofarms", name: "Coat of arms of Bulgaria", path: "national-flags/bg/bg-arms.svg", design: "A crowned golden lion rampant on a dark-red shield, held by two crowned lions.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
     { id: "bg-passport", category: "passport", name: "Passport of Bulgaria", path: "national-flags/bg/bg-passport.webp", design: "The cover of the Bulgaria passport.", source: "https://gicg.net/passport/bg/" },
-    { id: "bg-football-crest", category: "footballcrest", name: "Crest of the Bulgaria national football team", path: "national-flags/bg/bg-football-crest.png", design: "The crest of the Bulgaria national football team.", source: "https://en.wikipedia.org/wiki/Bulgaria_national_football_team" },
+    { id: "bg-football-crest", category: "footballcrest", name: "Crest of the Bulgaria national football team", path: "national-flags/bg/bg-football-crest.png", design: "The crest of the Bulgaria national football team — a red shield bearing the gold crowned lion rampant from Bulgaria's coat of arms, ringed by a gold laurel wreath.", source: "https://en.wikipedia.org/wiki/Bulgaria_national_football_team" },
   ],
   "BH": [
     { id: "bh-official-national", category: "official", name: "Flag of Bahrain", from: 2002, to: 9999, primary: true, path: "flags/bh.svg", design: "The national flag, in the form adopted in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
@@ -601,7 +601,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cz-president", category: "standard", name: "Flag of the President of the Czech Republic", from: 1993, to: 9999, path: "national-flags/cz/czechia-president.svg", design: "A white-bordered square bearing the greater coat of arms and the motto Pravda vítězí.", source: "https://en.wikipedia.org/wiki/List_of_Czech_flags" },
     { id: "cz-arms", category: "coatofarms", name: "Greater coat of arms of the Czech Republic", from: 1993, to: 9999, path: "national-flags/cz/czechia-arms.svg", design: "A quartered shield: the Bohemian double-tailed lion twice, the Moravian eagle, and the Silesian eagle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
     { id: "cz-passport", category: "passport", name: "Passport of Czechia", path: "national-flags/cz/cz-passport.webp", design: "The cover of the Czechia passport.", source: "https://gicg.net/passport/cz/" },
-    { id: "cz-football-crest", category: "footballcrest", name: "Crest of the Czechia national football team", path: "national-flags/cz/cz-football-crest.svg", design: "The crest of the Czechia national football team.", source: "https://en.wikipedia.org/wiki/Czechia_national_football_team" },
+    { id: "cz-football-crest", category: "footballcrest", name: "Crest of the Czechia national football team", path: "national-flags/cz/cz-football-crest.svg", design: "The crest of the Czechia national football team — a red shield bearing the white double-tailed crowned lion of Bohemia, under a narrow blue-white-red band.", source: "https://en.wikipedia.org/wiki/Czechia_national_football_team" },
   ],
   "DE": [
     { id: "de-official-national", category: "official", name: "Flag of Germany", from: 1919, to: 9999, primary: true, path: "flags/de.svg", design: "The national flag of Germany, in the form adopted in 1919.", source: "https://en.wikipedia.org/wiki/Flag_of_Germany" },
@@ -684,7 +684,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ee-president", category: "standard", name: "Flag of the President of Estonia", from: 1993, to: 9999, path: "national-flags/ee/estonia-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Estonian_flags" },
     { id: "ee-arms", category: "coatofarms", name: "Coat of arms of Estonia", from: 1990, to: 9999, path: "national-flags/ee/estonia-arms.svg", design: "Three blue lions passant guardant on a golden shield, between golden oak branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
     { id: "ee-passport", category: "passport", name: "Passport of Estonia", path: "national-flags/ee/ee-passport.webp", design: "The cover of the Estonia passport.", source: "https://gicg.net/passport/ee/" },
-    { id: "ee-football-crest", category: "footballcrest", name: "Crest of the Estonia national football team", path: "national-flags/ee/ee-football-crest.svg", design: "The crest of the Estonia national football team.", source: "https://en.wikipedia.org/wiki/Estonian_Football_Association" },
+    { id: "ee-football-crest", category: "footballcrest", name: "Crest of the Estonia national football team", path: "national-flags/ee/ee-football-crest.svg", design: "The crest of the Estonian Football Association (Eesti Jalgpalli Liit) — a dark blue circle bearing a white multi-pointed star, ringed by the association's own name in white lettering on a lighter blue band.", source: "https://en.wikipedia.org/wiki/Estonian_Football_Association" },
   ],
   "EG": [
     { id: "eg-official-national", category: "official", name: "Flag of Egypt", from: 1984, to: 9999, primary: true, path: "flags/eg.svg", design: "The national flag of Egypt, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Egypt" },
@@ -747,7 +747,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fi-sami", category: "indigenous", name: "Sámi flag", from: 1986, to: 9999, path: "national-flags/fi/fi-sami.svg", design: "Red, green, yellow and blue fields bearing a red-and-blue circle for the sun and moon.", source: "https://en.wikipedia.org/wiki/S%C3%A1mi_flag" },
     { id: "fi-arms", category: "coatofarms", name: "Coat of arms of Finland", from: 1580, to: 9999, path: "national-flags/fi/finland-arms.svg", design: "A crowned lion on red, its right foreleg an armoured arm brandishing a sword, trampling a sabre.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
     { id: "fi-passport", category: "passport", name: "Passport of Finland", path: "national-flags/fi/fi-passport.webp", design: "The cover of the Finland passport.", source: "https://gicg.net/passport/fi/" },
-    { id: "fi-football-crest", category: "footballcrest", name: "Crest of the Finland national football team", path: "national-flags/fi/fi-football-crest.png", design: "The crest of the Finland national football team.", source: "https://en.wikipedia.org/wiki/Finland_national_football_team" },
+    { id: "fi-football-crest", category: "footballcrest", name: "Crest of the Finland national football team", path: "national-flags/fi/fi-football-crest.png", design: "The crest of the Finland national football team — a gold-outlined shield, white with a blue Nordic cross echoing the national flag, lettered “Suomi” across the top.", source: "https://en.wikipedia.org/wiki/Finland_national_football_team" },
   ],
   "FJ": [
     { id: "fj-official-national", category: "official", name: "Flag of Fiji", from: 1970, to: 9999, primary: true, path: "flags/fj.svg", design: "The national flag, adopted at independence in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Fiji" },
@@ -889,7 +889,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gr-president-1924", category: "standard", name: "Flag of the President of Greece (1924–1935)", from: 1924, to: 1935, path: "national-flags/gr/greece-president-1924.svg", design: "The presidential flag of the Second Hellenic Republic.", source: "https://en.wikipedia.org/wiki/List_of_Greek_flags" },
     { id: "gr-arms", category: "coatofarms", name: "Coat of arms of Greece", from: 1975, to: 9999, path: "national-flags/gr/gr-arms.svg", design: "A white cross on a blue shield, framed by two laurel branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greece" },
     { id: "gr-passport", category: "passport", name: "Passport of Greece", path: "national-flags/gr/gr-passport.webp", design: "The cover of the Greece passport.", source: "https://gicg.net/passport/gr/" },
-    { id: "gr-football-crest", category: "footballcrest", name: "Crest of the Greece national football team", path: "national-flags/gr/gr-football-crest.svg", design: "The crest of the Greece national football team.", source: "https://en.wikipedia.org/wiki/Greece_national_football_team" },
+    { id: "gr-football-crest", category: "footballcrest", name: "Crest of the Greece national football team", path: "national-flags/gr/gr-football-crest.svg", design: "The crest of the Greece national football team — a dark blue badge lettered “Ελλάς” (Hellas), with a white cross above vertical white stripes echoing the national flag.", source: "https://en.wikipedia.org/wiki/Greece_national_football_team" },
   ],
   "GS": [
     { id: "gs-official-national", category: "official", name: "Flag of South Georgia and the South Sandwich Islands", from: 1992, to: 9999, path: "flags/gs.svg", design: "A blue ensign with the Union Flag in the canton and the territory's arms — a golden lion with a torch, a fur seal and a macaroni penguin — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Georgia_and_the_South_Sandwich_Islands" },
@@ -977,7 +977,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "hu-state", category: "civilstate", name: "State flag of Hungary", from: 1990, to: 9999, path: "national-flags/hu/hungary-state.svg", design: "The red-white-green tricolour charged with the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Hungarian_flags" },
     { id: "hu-arms", category: "coatofarms", name: "Coat of arms of Hungary", from: 1990, to: 9999, path: "national-flags/hu/hungary-arms.svg", design: "A shield party per pale — the Árpád stripes on the dexter, a silver double cross on a crown over three green hills on the sinister — beneath the Holy Crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary" },
     { id: "hu-passport", category: "passport", name: "Passport of Hungary", path: "national-flags/hu/hu-passport.webp", design: "The cover of the Hungary passport.", source: "https://gicg.net/passport/hu/" },
-    { id: "hu-football-crest", category: "footballcrest", name: "Crest of the Hungary national football team", path: "national-flags/hu/hu-football-crest.svg", design: "The crest of the Hungary national football team.", source: "https://en.wikipedia.org/wiki/Hungary_Football_Federation" },
+    { id: "hu-football-crest", category: "footballcrest", name: "Crest of the Hungary national football team", path: "national-flags/hu/hu-football-crest.svg", design: "The crest of the Hungarian Football Federation — a green ring lettered “Magyar Labdarúgó Szövetség” and “1901”, enclosing red-and-white stripes and a double cross on a green triple mound from Hungary's coat of arms, over a football.", source: "https://en.wikipedia.org/wiki/Hungary_Football_Federation" },
   ],
   "ID": [
     { id: "id-official-national", category: "official", name: "Flag of Indonesia", from: 1945, to: 9999, primary: true, path: "flags/id.svg", design: "The national flag of Indonesia, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Indonesia" },
@@ -1310,7 +1310,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lt-president", category: "standard", name: "Flag of the President of Lithuania", from: 1993, to: 9999, path: "national-flags/lt/lithuania-president.svg", design: "A red field bearing the Vytis, the mounted knight of the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania" },
     { id: "lt-arms", category: "coatofarms", name: "Coat of arms of Lithuania", from: 1991, to: 9999, path: "national-flags/lt/lithuania-arms.svg", design: "An armoured knight on a white horse wielding a sword, carrying a shield with a double cross, on a red field — the Vytis.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lithuania" },
     { id: "lt-passport", category: "passport", name: "Passport of Lithuania", path: "national-flags/lt/lt-passport.webp", design: "The cover of the Lithuania passport.", source: "https://gicg.net/passport/lt/" },
-    { id: "lt-football-crest", category: "footballcrest", name: "Crest of the Lithuania national football team", path: "national-flags/lt/lt-football-crest.png", design: "The crest of the Lithuania national football team.", source: "https://en.wikipedia.org/wiki/Lithuania_national_football_team" },
+    { id: "lt-football-crest", category: "footballcrest", name: "Crest of the Lithuania national football team", path: "national-flags/lt/lt-football-crest.png", design: "The crest of the Lithuania national football team — a gold line-art badge combining a horse's head with a small shield bearing a double cross, evoking the Vytis (mounted knight) of Lithuania's coat of arms, over “Lietuva” lettering.", source: "https://en.wikipedia.org/wiki/Lithuania_national_football_team" },
   ],
   "LU": [
     { id: "lu-official-national", category: "official", name: "Flag of Luxembourg", from: 1845, to: 9999, primary: true, path: "flags/lu.svg", design: "The national flag of Luxembourg, in the form adopted in 1845.", source: "https://en.wikipedia.org/wiki/Flag_of_Luxembourg" },
@@ -1332,7 +1332,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lv-pm", category: "standard", name: "Standard of the Prime Minister of Latvia", from: 1995, to: 9999, path: "national-flags/lv/latvia-pm.svg", design: "The prime minister's standard.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia" },
     { id: "lv-arms", category: "coatofarms", name: "Coat of arms of Latvia", from: 1921, to: 9999, path: "national-flags/lv/latvia-arms.svg", design: "A shield with a rising sun above a red lion and a silver griffin, beneath three golden stars, between oak branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
     { id: "lv-passport", category: "passport", name: "Passport of Latvia", path: "national-flags/lv/lv-passport.webp", design: "The cover of the Latvia passport.", source: "https://gicg.net/passport/lv/" },
-    { id: "lv-football-crest", category: "footballcrest", name: "Crest of the Latvia national football team", path: "national-flags/lv/lv-football-crest.png", design: "The crest of the Latvia national football team.", source: "https://en.wikipedia.org/wiki/Latvia_national_football_team" },
+    { id: "lv-football-crest", category: "footballcrest", name: "Crest of the Latvia national football team", path: "national-flags/lv/lv-football-crest.png", design: "The crest of the Latvian Football Federation (Latvijas Futbola federācija) — “Latvija” lettering over a band of traditional Latvian geometric ornament, above a crimson shield-shaped badge bearing a stylised white football and wing motif.", source: "https://en.wikipedia.org/wiki/Latvia_national_football_team" },
   ],
   "LY": [
     { id: "ly-official-national", category: "official", name: "Flag of Libya", from: 2011, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, restored in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
@@ -1619,7 +1619,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "no-sami", category: "indigenous", name: "Sámi flag", from: 1986, to: 9999, path: "national-flags/no/no-sami.svg", design: "Red, green, yellow and blue fields bearing a red-and-blue circle for the sun and moon.", source: "https://en.wikipedia.org/wiki/S%C3%A1mi_flag" },
     { id: "no-arms", category: "coatofarms", name: "Coat of arms of Norway", from: 1937, to: 9999, path: "national-flags/no/norway-arms.svg", design: "A standing golden lion on red, crowned, bearing a silver-bladed axe.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway" },
     { id: "no-passport", category: "passport", name: "Passport of Norway", path: "national-flags/no/no-passport.webp", design: "The cover of the Norway passport.", source: "https://gicg.net/passport/no/" },
-    { id: "no-football-crest", category: "footballcrest", name: "Crest of the Norway national football team", path: "national-flags/no/no-football-crest.svg", design: "The crest of the Norway national football team.", source: "https://en.wikipedia.org/wiki/Norway_national_football_team" },
+    { id: "no-football-crest", category: "footballcrest", name: "Crest of the Norway national football team", path: "national-flags/no/no-football-crest.svg", design: "The crest of the Norway national football team — a shield in the red field and blue-white Nordic cross of Norway's flag, topped by two confronted gold lions from Norway's coat of arms flanking a circular “NFF” monogram, lettered “Norge”.", source: "https://en.wikipedia.org/wiki/Norway_national_football_team" },
   ],
   "NP": [
     { id: "np-official-national", category: "official", name: "Flag of Nepal", from: 1962, to: 9999, primary: true, path: "flags/np.svg", design: "The national flag of Nepal, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
@@ -1825,7 +1825,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ro-pm", category: "standard", name: "Flag of the Prime Minister of Romania", path: "national-flags/ro/romania-pm.svg", design: "A square flag distinguished for the head of government.", source: "https://en.wikipedia.org/wiki/List_of_Romanian_flags" },
     { id: "ro-arms", category: "coatofarms", name: "Coat of arms of Romania", from: 1992, to: 9999, path: "national-flags/ro/romania-arms.svg", design: "A golden aquila holding a cross, sword and sceptre, on a blue shield quartered with the arms of the historic Romanian lands.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
     { id: "ro-passport", category: "passport", name: "Passport of Romania", path: "national-flags/ro/ro-passport.webp", design: "The cover of the Romania passport.", source: "https://gicg.net/passport/ro/" },
-    { id: "ro-football-crest", category: "footballcrest", name: "Crest of the Romania national football team", path: "national-flags/ro/ro-football-crest.svg", design: "The crest of the Romania national football team.", source: "https://en.wikipedia.org/wiki/Romania_national_football_team" },
+    { id: "ro-football-crest", category: "footballcrest", name: "Crest of the Romania national football team", path: "national-flags/ro/ro-football-crest.svg", design: "The crest of the Romania national football team — a shield lettered “România”, quartered with a crowned eagle, an aurochs head with a star between its horns, a lion emerging from an arch, and a second eagle, around a central football.", source: "https://en.wikipedia.org/wiki/Romania_national_football_team" },
   ],
   "RS": [
     { id: "rs-official-national", category: "official", name: "Flag of Serbia", from: 2010, to: 9999, primary: true, path: "flags/rs.svg", design: "The national flag of Serbia, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Serbia" },
@@ -2186,7 +2186,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ua-president", category: "standard", name: "Standard of the President of Ukraine", from: 1999, to: 9999, path: "national-flags/ua/ukraine-president.svg", design: "A blue square bearing the gold tryzub within an ornamental border.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
     { id: "ua-arms", category: "coatofarms", name: "Coat of arms of Ukraine", from: 1992, to: 9999, path: "national-flags/ua/ukraine-arms.svg", design: "A gold tryzub (trident) on a blue shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
     { id: "ua-passport", category: "passport", name: "Passport of Ukraine", path: "national-flags/ua/ua-passport.webp", design: "The cover of the Ukraine passport.", source: "https://gicg.net/passport/ua/" },
-    { id: "ua-football-crest", category: "footballcrest", name: "Crest of the Ukraine national football team", path: "national-flags/ua/ua-football-crest.svg", design: "The crest of the Ukraine national football team.", source: "https://en.wikipedia.org/wiki/Ukraine_national_football_team" },
+    { id: "ua-football-crest", category: "footballcrest", name: "Crest of the Ukraine national football team", path: "national-flags/ua/ua-football-crest.svg", design: "The crest of the Ukraine national football team — the blue-and-gold trident (tryzub) of Ukraine's coat of arms, with a football set at its base, over “Ukraine” lettering.", source: "https://en.wikipedia.org/wiki/Ukraine_national_football_team" },
   ],
   "UG": [
     { id: "ug-official-national", category: "official", name: "Flag of Uganda", from: 1962, to: 9999, primary: true, path: "flags/ug.svg", design: "The national flag of Uganda, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
@@ -2661,6 +2661,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Austria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Austria" },
     ],
   },
+  "at-football-crest": {
+    description: "The eagle is the same black eagle used on Austria's own state coat of arms. Its multi-pronged wings are read as standing for the unity of the ÖFB's nine regional football associations together with the professional league — the ten member bodies that together make up Austrian football. The chest shield repeats the national red-white-red colours, and “Seit 1904” marks the year the Österreichischer Fußball-Bund was founded.",
+    sources: [
+      { title: "Austria National Football Team Logo and symbol, meaning, history — 1000 Logos", url: "https://1000logos.net/austria-national-football-team-logo/" },
+      { title: "Austrian Football Association logo – History & Meaning — logotyp.us", url: "https://logotyp.us/logo/ofb/" },
+    ],
+  },
   "au-aboriginal": {
     description: "Harold Thomas designed the flag in 1971 for the land-rights movement and gave each element a meaning: the black upper half represents the Aboriginal people of Australia, the red lower half the red earth and the ochre used in ceremony, and the yellow disc the sun, the giver of life. It was proclaimed a Flag of Australia in July 1995, and in January 2022 the Commonwealth acquired the copyright so that it can be reproduced freely.",
     sources: [
@@ -2750,6 +2757,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "bg-arms": {
     description: "A crowned golden lion rampant on a dark-red shield, beneath the historical crown of the medieval Bulgarian tsars. The rampant lion has stood for Bulgaria since the Second Bulgarian Empire, and here it appears three times — once on the shield and again as the two crowned lions that support it, standing on a compartment of oak branches for strength and endurance. The white ribbon carries the national motto, Съединението прави силата — “Unity makes strength.”",
+    sources: [
+      { title: "Coat of arms of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
+    ],
+  },
+  "bg-football-crest": {
+    description: "The gold crowned lion rampant is Bulgaria's own state symbol — lion imagery has marked Bulgarian rule since at least the Chatalar Inscription of 815–834 AD, and the emblem was preserved as a sign of national identity even through Ottoman rule after 1396. On the national coat of arms the lion stands for the independence and sovereignty of the Bulgarian people and state; the gold laurel wreath framing the badge is the ordinary heraldic mark of honour and victory.",
     sources: [
       { title: "Coat of arms of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
     ],
@@ -3009,6 +3022,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
     ],
   },
+  "cz-football-crest": {
+    description: "The silver double-tailed crowned lion is the Bohemian lion — the arms of the medieval Kingdom of Bohemia and today the senior element of the Czech Republic's own coat of arms. It dates to the 12th century, when Holy Roman Emperor Frederick I granted Duke Vladislaus II a silver lion on red to mark his valour in battle; a second tail was added later, according to legend, to commemorate King Přemysl Otakar I's help fighting the Saxons. The narrow band above is simply the blue-white-red of the national flag.",
+    sources: [
+      { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
+    ],
+  },
   "de-arms": {
     description: "The Bundesadler, or Federal Eagle, is a single-headed black eagle on gold whose lineage runs back through the Weimar Republic to the eagle of the Holy Roman Empire, a symbol traced to Charlemagne. The Federal Republic readopted the design in 1950. The single head — as opposed to the later double-headed imperial eagle — marks that this is the eagle of a German nation-state, not of the old multinational empire; today it stands for the federal institutions and the unity of the republic.",
     sources: [
@@ -3118,6 +3137,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Created around 1580, the arms are read as a political statement in heraldry: the lion is the Nordic heraldic lion — first found in Denmark's arms in the later 12th century and taken up in Sweden, into whose kingdom Finland was incorporated from the 13th century — and it holds a straight Western sword in an armoured arm while trampling a curved Eastern sabre underfoot. The two blades are the point of the design: Finland's position between West and East, drawn at a time when the Swedish crown was contesting the territory with Russia.",
     sources: [
       { title: "Coat of arms of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
+    ],
+  },
+  "fi-football-crest": {
+    description: "The blue Nordic cross on white repeats Finland's own national flag, adopted in 1918 after independence from Russia; its cross shape follows the same Scandinavian tradition shared with Sweden, Norway and Denmark. Blue is popularly read as the country's lakes and sky, white as the snow that covers the land in winter. “Suomi” is simply the Finnish name for Finland.",
+    sources: [
+      { title: "Flag of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
     ],
   },
   "fj-arms": {
@@ -3282,6 +3307,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Greece — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greece" },
     ],
   },
+  "gr-football-crest": {
+    description: "“Ελλάς” (Hellas) is Greece's own name for itself. The white cross is the same Christian cross carried on the canton of the Greek flag, and the stripes echo the flag's nine alternating blue-and-white bands — popularly said to mark the nine syllables of the revolutionary motto “Ελευθερία ή Θάνατος” (“Freedom or Death”), though this reading has no official status; the colours are otherwise read simply as the blue of the Greek sky and sea.",
+    sources: [
+      { title: "Flag of Greece — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Greece" },
+    ],
+  },
   "gs-arms": {
     description: "The golden lion holding a torch stands for the United Kingdom and for the islands' discovery, and the two gold stars above are taken from the arms of Captain James Cook, who charted South Georgia in 1775. An Antarctic fur seal and a macaroni penguin — both native — support the shield, and the crest is a reindeer, for the two herds once introduced to the island. The arms, first sealed in 1985, were augmented by Royal Warrant on 14 February 1992 to mark the liberation of the Falklands; the motto, Leo Terram Propriam Protegat, means 'Let the Lion protect his own land'.",
     sources: [
@@ -3352,6 +3383,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "hu-arms": {
     description: "The dexter half carries the Árpád stripes, four red and four silver, the silver traditionally read as four rivers — the Danube, the Tisza, the Drava and the Sava. The sinister half sets a silver double cross on a golden crown standing on the middle of three green hills, the trimount for the Tátra, Mátra and Fátra ranges; the double cross itself is a symbol of royal power, which appeared under Béla III (1172–1196). Above the shield sits the Holy Crown of Hungary, the crown of Saint Stephen, whose tilted cross is reproduced exactly as it stands on the real object.",
+    sources: [
+      { title: "Coat of arms of Hungary — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary" },
+    ],
+  },
+  "hu-football-crest": {
+    description: "The red-and-silver stripes and the double (patriarchal) cross on a green triple mound are both drawn from Hungary's own state coat of arms. The stripes are the Árpád stripes, tied to Hungary's founding dynasty and popularly read as the country's four great rivers — the Danube, Tisza, Dráva and Száva; the cross recalls the Christian kingdom founded by Saint Stephen in the year 1000, standing on three hills read as the Tátra, Mátra and Fátra mountain ranges. 1901 is the year the Magyar Labdarúgó Szövetség was founded.",
     sources: [
       { title: "Coat of arms of Hungary — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary" },
     ],
@@ -3606,6 +3643,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Lithuania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lithuania" },
     ],
   },
+  "lt-football-crest": {
+    description: "The knight and shield are a stylised Vytis — the armoured, sword-bearing knight of Lithuania's own coat of arms — carrying the double “Jagiellonian” cross adopted after Grand Duke Jogaila's baptism and 1386 marriage into the Polish crown. Read for centuries as the country's ruler or defender, the image took on a new meaning during Lithuania's 19th–20th century independence movements: a knight chasing invaders from his native land. “Lietuva” is simply the Lithuanian name for Lithuania.",
+    sources: [
+      { title: "Vytis — Wikipedia", url: "https://en.wikipedia.org/wiki/Vytis" },
+    ],
+  },
   "lu-arms": {
     description: "The Red Lion of Luxembourg is one of the older arms of Europe, and it is not originally Luxembourg's own: it derives from the arms of the Duchy of Limburg. Henry V, Count of Luxembourg, was the first to adopt it in the 13th century — his father Waleran III, Duke of Limburg, had borne a red forked-tailed lion on white, and the son set that lion on a field striped silver and blue. The forked tail (queue fourchée) is the detail that marks it out. The national flag's red-white-blue tricolour is drawn from these same three colours, which is why the arms and the flag belong together.",
     sources: [
@@ -3845,6 +3888,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Norway — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway" },
     ],
   },
+  "no-football-crest": {
+    description: "The shield's red field and blue-and-white cross repeat Norway's own national flag. The two confronted gold lions above are drawn from the crowned lion of Norway's state coat of arms, long a mark of royal authority. Framing the federation's own “NFF” monogram, the crest — introduced in 2014 by the Oslo agency Scandinavian Design Group — was designed around the Norwegian expression “å spille med flagget på brystet”, to play with the flag on your chest.",
+    sources: [
+      { title: "New Norway Crest Unveiled — Footy Headlines", url: "https://www.footyheadlines.com/2014/12/new-norway-crest-unveiled.html" },
+    ],
+  },
   "np-emblem": {
     description: "The emblem is built from the country's own geography and one social claim. Mount Everest and the green hills below it are the mountain and hill regions; the yellow beneath them is the fertile Terai plain. The map of Nepal sits at the centre with the national flag above it. The joined hands of a man and a woman below stand for gender equality — an explicit statement, adopted with the emblem of the federal republic. Around the whole runs a wreath of rhododendron, the national flower, called lali gurans.",
     sources: [
@@ -3997,6 +4046,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ro-arms": {
     description: "The arms adopted by parliament on 10 September 1992 are based on the lesser arms of the interwar Kingdom of Romania, used from 1922 to 1947 and designed in 1921 by the Transylvanian Hungarian heraldist József Sebestyén of Cluj-Napoca. The golden aquila with a cross in its beak, a sword and a sceptre in its talons, is the historic emblem of Wallachia; the escutcheon quarters the arms of the lands the modern state is made of — Wallachia, Moldavia, Transylvania, Oltenia with the Banat, and Dobruja with its dolphins for the Black Sea coast. Since 11 July 2016 the aquila has been crowned with a heraldic Steel Crown, a token of the monarchy that ruled between 1881 and 1947. The arms carry a particular weight in Romania because the symbol of the 1989 revolution was the flag with the communist arms cut out of its middle.",
+    sources: [
+      { title: "Coat of arms of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
+    ],
+  },
+  "ro-football-crest": {
+    description: "The quarters are drawn from Romania's historical coat of arms, each standing for one of the country's constituent regions: a crowned eagle for Wallachia; an aurochs head with a star between its horns for Moldavia; a lion emerging from an arched bridge — Trajan's Bridge over the Danube — for Oltenia and Banat; and a second eagle for Transylvania. “România” is simply the country's own name.",
     sources: [
       { title: "Coat of arms of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
     ],
@@ -4272,6 +4327,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ua-arms": {
     description: "The tryzub is the oldest continuously used symbol on Ukrainian territory: it appears on the seals of the Rurik dynasty and was stamped on the gold and silver coins of Volodymyr the Great (980–1015), who passed it to his sons as a dynastic device, and on the bricks of the Church of the Tithes in Kyiv. Its original meaning is not settled — historians have read it as a falcon in flight, an arched bow, an anchor, or the Holy Trinity — and it was not treated as a NATIONAL symbol until 1917, when the historian Mykhailo Hrushevsky proposed it over rival candidates such as a crossbow or a Cossack with a musket. Vasyl Krychevsky's drawing was adopted by the Ukrainian People's Republic in February 1918, and the small coat of arms was readopted on 19 February 1992; the constitution provides for a great coat of arms that has still not been adopted.",
+    sources: [
+      { title: "Coat of arms of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
+    ],
+  },
+  "ua-football-crest": {
+    description: "The trident (tryzub) is Ukraine's own state coat of arms. Its earliest known form appears on the seals and coins of the Kyivan Rus' ruler Volodymyr the Great around the year 1000; historians have proposed it may originally have depicted a falcon, an anchor, a bow or the Holy Trinity, and some theories trace it to Khazar rather than purely Ukrainian origins. It was first adopted as a national emblem by the short-lived Ukrainian People's Republic on 25 February 1918, and was readopted as Ukraine's coat of arms on 19 February 1992, after independence.",
     sources: [
       { title: "Coat of arms of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
     ],
