@@ -1631,10 +1631,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/5/5e/AFFA_logo.png",
           "file": "az/az-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Azerbaijan national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:AFFA_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Azerbaijan national football team.",
+          "design": "The crest of the Azerbaijan national football team — a blue-red-green flame shape bearing the white crescent and eight-pointed star of the national flag, over a football, lettered “AFFA”.",
           "source": "https://en.wikipedia.org/wiki/Azerbaijan_national_football_team",
           "sha256": "7c0c96a47bcee2b3613ab5407be3ea66258d7f89957ce7f28f032b9087e35ef3",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The flame is a reference to Azerbaijan's nickname “the Land of Fire”: natural gas seeping from the ground around the Absheron Peninsula has burned as naturally-occurring eternal flames for millennia — the Yanar Dag hillside and the Ateshgah fire temple among them — and made the region a historic centre of Zoroastrian fire-worship. The flame is coloured in the blue, red and green of Azerbaijan's own national flag, and the white crescent and eight-pointed star set into it are the flag's own emblem; a popular, disputed reading ties the star's eight points to the eight letters of “Azerbaijan” in Arabic script, or to eight historical Turkic peoples. AFFA is the federation's own initials, the Azerbaijan Football Federations Association.",
+            "sources": [
+              {
+                "title": "Flag of Azerbaijan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan"
+              },
+              {
+                "title": "Eternal flame: How Azerbaijan became the 'Land of Fire' — CNN Travel",
+                "url": "https://www.cnn.com/travel/article/yanar-dag-azerbaijan-land-of-fire"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -3876,10 +3889,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/4/47/Football_Federation_of_Belarus_logo.svg",
           "file": "by/by-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Belarus national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Belarus_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Belarus national football team.",
+          "design": "The crest of the Belarus national football team — a white silhouette of a European bison set inside a football coloured in Belarus's national red and green, lettered “АБФФ” (Cyrillic).",
           "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Belarus",
           "sha256": "4b8c9598b9859894cfc5d22f9e9943bf1c8ec691867018b76959381fa2851bc2",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The European bison (zubr) is Belarus's own unofficial national symbol, closely tied to the wisents of the Białowieża Forest that straddles its border with Poland, and was chosen for the federation's crest as an image that steadily associates with Belarus and its national character. АБФФ is the federation's own initials in Cyrillic, the Association “Belarusian Football Federation”.",
+            "sources": [
+              {
+                "title": "Corporate style of Association «Belarus Football Federation» — a-v-c.by",
+                "url": "https://www.a-v-c.by/en/projects/corporate-style-of-association-belarus-football-federation/"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -6018,10 +6040,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/6/6b/Cyprus_national_football_team_logo.png",
           "file": "cy/cy-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Cyprus national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Cyprus_national_football_team_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Cyprus national football team.",
+          "design": "The crest of the Cyprus national football team — a circular badge with a copper-coloured outline of the island of Cyprus flanked by two olive branches.",
           "source": "https://en.wikipedia.org/wiki/Cyprus_national_football_team",
           "sha256": "79c965c8a333425746802e5b3f3ae686b14b1266218eb915fd0876cc76e013ca",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The copper-coloured island silhouette and the two olive branches are the same symbols carried on Cyprus's own national flag: copper for the large deposits of copper ore that may have given the island its name, and the olive branches for peace. Together with a neutral field, they were chosen to stand for reconciliation between the island's Greek and Turkish Cypriot communities rather than favour either — an aspiration the flag's own article notes has not yet been realised.",
+            "sources": [
+              {
+                "title": "Flag of Cyprus — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Cyprus"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -8923,10 +8954,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/9/9c/Georgia_national_football_team_crest.svg",
           "file": "ge/ge-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Georgia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Georgia_national_football_team_crest.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Georgia national football team.",
+          "design": "The crest of the Georgia national football team — a red shield bearing a white silhouette of Saint George on horseback spearing a dragon.",
           "source": "https://en.wikipedia.org/wiki/Georgia_national_football_team",
           "sha256": "76143a42f94ac7694aaf0ac7f220c4f01e9682c2d79b6890725ed49f9ec163f2",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "Saint George spearing a dragon is Georgia's own national coat of arms, adopted in 2004: a rider with a golden-crossed spear striking down a dragon, reflecting the country's long Christian tradition and medieval royal heritage. An earlier draft that also included the Seamless Robe of Jesus was dropped as excessively religious before the design was adopted.",
+            "sources": [
+              {
+                "title": "Coat of arms of Georgia (country) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia_(country)"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -13476,10 +13516,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/4/41/South_Korea_national_football_team.svg",
           "file": "kr/kr-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the South Korea national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:South_Korea_national_football_team.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the South Korea national football team.",
+          "design": "The crest of the South Korea national football team — a rectangular badge in the blue-and-red of the national flag, bearing a stylised white tiger's face, lettered “Korea”.",
           "source": "https://en.wikipedia.org/wiki/South_Korea_national_football_team",
           "sha256": "21a4d43ec24225fd27829d28d67c399e51cb74e8455826847478f48a2e3a78ae",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The white tiger, nicknamed Baekho, is one of the Four Symbols of East Asian mythology — the guardian of the west — and was adopted by the Korea Football Association in 2001 to replace the national flag itself as the shirt badge, as a mark of the Korean people's own spirit ahead of the 2002 World Cup it co-hosted. The badge's blue and red border repeats the Taegeuk colours of the national flag.",
+            "sources": [
+              {
+                "title": "White Tiger (mythology) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/White_Tiger_(mythology)"
+              },
+              {
+                "title": "Korea Football Association unveils updated emblem — Korea JoongAng Daily",
+                "url": "https://www.koreajoongangdaily.com/sports/korea-football-association-unveils-updated-emblem/10271720"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -13809,10 +13862,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/0/08/Kazakhstan_Football_Federation_logo.svg",
           "file": "kz/kz-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Kazakhstan national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Kazakhstan_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Kazakhstan national football team.",
+          "design": "The crest of the Kazakhstan Football Federation — a blue-and-gold circular badge lettered “KFF” and “Kazakhstan”, with a golden sun's rays radiating from a football and a soaring eagle below.",
           "source": "https://en.wikipedia.org/wiki/Kazakhstan_Football_Federation",
           "sha256": "7cfaeb194287a8173253d5d118ef408520bdedf62dec516506ebb1d3b2617881",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The golden sun and soaring eagle both repeat Kazakhstan's own national flag: the sun stands for life, energy and abundance, its rays shaped like grain; the steppe eagle has flown on the standards of Kazakh tribes for centuries and stands for freedom, power and the flight to the future. KFF is simply the federation's own initials, the Kazakhstan Football Federation.",
+            "sources": [
+              {
+                "title": "Flag of Kazakhstan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -14180,7 +14242,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/2/24/Liechtenstein_Football_Association_logo.svg",
           "file": "li/li-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Liechtenstein national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Liechtenstein_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Liechtenstein national football team.",
+          "design": "The crest of the Liechtenstein Football Association — a gold-outlined shield shaped by three Alpine peaks, over a blue “Liechtenstein” banner and a football in the national red and blue.",
           "source": "https://en.wikipedia.org/wiki/Liechtenstein_Football_Association",
           "sha256": "175af5a449bc09d9b8edbf5d0471cacfd18774a294537804021329ca703bac67",
           "fetched": "2026-08-18"
@@ -14294,10 +14356,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/b9/Football_Federation_of_Sri_Lanka_logo.svg",
           "file": "lk/lk-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Sri Lanka national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Sri_Lanka_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Sri Lanka national football team.",
+          "design": "The crest of the Football Federation of Sri Lanka — a navy shield lettered “Sri Lanka Football” and “Est 1939”, bearing the gold sword-bearing lion of the national flag.",
           "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Sri_Lanka",
           "sha256": "21f12fac4aed75e0e509f5d7883ed39e6b6137565a6843983ca347d1adf6594f",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The lion holding a sword is the same figure carried on Sri Lanka's own national flag: the sword stands for the sovereignty of the nation, and the lion for the Sinhalese people and the nation's strength. The design traces to the Mahavamsa chronicle, which links the Sinhalese to Prince Vijaya and his father King Sinhabahu (\"lion-armed\"), and the lion emblem itself has marked Sinhalese rule since at least the reign of King Dutugemunu around 162 BC.",
+            "sources": [
+              {
+                "title": "Flag of Sri Lanka — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -15385,10 +15456,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/c/c9/Moldova_national_football_team.svg",
           "file": "md/md-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Moldova national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Moldova_national_football_team.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Moldova national football team.",
+          "design": "The crest of the Moldova national football team — a shield in the blue-yellow-red of the national flag, lettered “Moldova”, with a football bearing an eagle's head.",
           "source": "https://en.wikipedia.org/wiki/Moldova_national_football_team",
           "sha256": "7e01b6a15c50297d1983c46733762a54a9b7549b0ae6cb62e4b766efce383216",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The eagle echoes Moldova's own national coat of arms, whose eagle derives from the interwar coat of arms of the Kingdom of Romania — a period when most of Moldova's territory was part of Romania, between the World Wars — while the shield's vertical blue-yellow-red repeats the national flag's own colours.",
+            "sources": [
+              {
+                "title": "Coat of arms of Moldova — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -15771,10 +15851,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/e6/Football_Federation_of_Macedonia_logo.svg",
           "file": "mk/mk-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the North Macedonia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Macedonia_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the North Macedonia national football team.",
+          "design": "The crest of the Football Federation of Macedonia — a red shield lettered “ФФМ” (Cyrillic), with a golden sunburst swirl.",
           "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Macedonia",
           "sha256": "9d17ae60a49bfb3439fe4fc4ee7d1b4f848311ccac815cd77713e3155a44df2b",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The golden sunburst echoes the eight-rayed sun on North Macedonia's own national flag, adopted in 1995 to replace the earlier Vergina Sun (itself dropped after Greece objected to its use of a symbol from ancient Greek royal heraldry). The flag's sun is described as the “new sun of Liberty” named in the national anthem. ФФМ is the federation's own Cyrillic initials, Фудбалска федерација на Македонија (Football Federation of Macedonia).",
+            "sources": [
+              {
+                "title": "Flag of North Macedonia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -20917,10 +21006,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Football_Association_of_Serbia_logo.svg",
           "file": "rs/rs-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Serbia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Serbia_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Serbia national football team.",
+          "design": "The crest of the Football Association of Serbia — a gold-outlined shield lettered “Србија” (Serbia), bearing the Serbian cross — a white cross with four stylised Cyrillic “С” letters — over a football, on a red field.",
           "source": "https://en.wikipedia.org/wiki/Serbia_national_football_team",
           "sha256": "0e7949235f76f2af52bd522aea26defb5126ce91cc427ac13572a70f6b2d651a",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The Serbian cross — a cross with four firesteels, popularly read since the 19th century as four Cyrillic “С” letters standing for the national motto “Само слога Србина спасава” (“Only unity saves the Serbs”) — is Serbia's own national heraldic symbol. It derives from the Byzantine emblem of the Palaiologos dynasty, adopted after Michael VIII Palaiologos restored the Byzantine Empire in 1261, and was in Serbian use by the reign of Despot Stefan Lazarević around 1397.",
+            "sources": [
+              {
+                "title": "Serbian cross — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Serbian_cross"
+              }
+            ]
+          }
         }
       ]
     },
@@ -21102,10 +21200,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/0/0b/Russian_Football_Union_logo.svg",
           "file": "ru/ru-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Russia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Russian_Football_Union_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Russia national football team.",
+          "design": "The crest of the Russian Football Union — a gold double-headed eagle, each head crowned, over a football in white-blue-red, ringed by “Российский футбольный союз” (Russian Football Union) in Cyrillic.",
           "source": "https://en.wikipedia.org/wiki/Russian_Football_Union",
           "sha256": "aaa6d67ff9b4f552eed06d96d9793308d5fa4b54cc846d6971e56f7dafd5e8d5",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The double-headed eagle is Russia's own state coat of arms, adopted from Byzantine imperial tradition: after the fall of Constantinople in 1453, the Grand Dukes of Muscovy took up the emblem to assert their claim as successors to Roman imperial power, and Ivan III's seal first recorded it in 1472. The crowns are read as standing for the unity and sovereignty of Russia as a whole together with its constituent republics and regions.",
+            "sources": [
+              {
+                "title": "Coat of arms of Russia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia"
+              }
+            ]
+          }
         }
       ]
     },
