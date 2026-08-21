@@ -220,10 +220,19 @@
           "name": "Crest of the United Arab Emirates national football team",
           "commons": "United Arab Emirates Football Association logo.svg",
           "file": "ae/ae-football-crest.svg",
-          "design": "The crest of the United Arab Emirates national football team.",
+          "design": "The crest of the United Arab Emirates Football Association — a gold-outlined shield banded in the Pan-Arab red, black, white and green of the national flag, lettered “UAE FA”.",
           "source": "https://en.wikipedia.org/wiki/United_Arab_Emirates_national_football_team",
           "sha256": "c8518d2363879cc91db6564aec0ac29816b7170e04ec51aa4d156b49cc01c0e0",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The colours are the Pan-Arab colours carried on the UAE's own national flag: red for energy and the sacrifices made for the nation, green for growth and prosperity, white for peace and purity, and black for dignity — colours shared with flags across the Arab world to express Arab sovereignty and unity.",
+            "sources": [
+              {
+                "title": "Flag of the United Arab Emirates — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -694,10 +703,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/2/22/Football_Federation_of_Armenia_logo.svg",
           "file": "am/am-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Armenia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Armenia_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Armenia national football team.",
+          "design": "The crest of the Football Federation of Armenia — a football over a red mountain silhouette, with the federation's Armenian initials Հ Ֆ Ֆ, ringed by “Football Federation of Armenia” and a strip of the national tricolour.",
           "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Armenia",
           "sha256": "db900be75652f592932dcdb4dac6629e0123e2d0379c944871ad0ae1aba3b82d",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The red peak evokes Mount Ararat, Armenia's most sacred national symbol: the mountain where, by tradition, Noah's Ark came to rest after the Flood, and the centrepiece of Armenia's own national coat of arms — even though the mountain itself lies across the border in Turkey. Հ Ֆ Ֆ is the federation's own initials in Armenian, Հայաստանի Ֆուտբոլի Ֆեդերացիա (Football Federation of Armenia).",
+            "sources": [
+              {
+                "title": "Coat of arms of Armenia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Armenia"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -1751,7 +1769,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/d/da/Football_Association_of_Bosnia_and_Herzegovina_logo.svg",
           "file": "ba/ba-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Bosnia and Herzegovina national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Bosnia_and_Herzegovina_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Bosnia and Herzegovina national football team.",
+          "design": "The crest of the Football Association of Bosnia and Herzegovina — a circular blue badge with a football and a blue silhouette map of Bosnia and Herzegovina, ringed by the country's name and the federation's name in Bosnian/Croatian, Serbian Cyrillic and English.",
           "source": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_national_football_team",
           "sha256": "e8f2894ed2bc88b91462174ffad3bfe42526d78b1f9806c55612960082444125",
           "fetched": "2026-08-18"
@@ -11174,10 +11192,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/5/5a/Israel_Football_Association_logo.svg",
           "file": "il/il-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Israel national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Israel_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Israel national football team.",
+          "design": "The crest of the Israel Football Association — a blue shield lettered “Israel Football Association” in English and Hebrew, with a football woven through a Star of David around a globe.",
           "source": "https://en.wikipedia.org/wiki/Israel_Football_Association",
           "sha256": "4ab606a93ca7c807364935f6f48565f52491343f5895ee3b1fd8334bd435b3e3",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The Star of David (Magen David) is Israel's own national symbol, carried on its flag, and one of the most widely recognised marks of Jewish identity — first adopted as an emblem of the Zionist movement at the First Zionist Congress in 1897. Interlacing it with a globe reads as the game's own worldwide reach.",
+            "sources": [
+              {
+                "title": "Star of David — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Star_of_David"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -11776,10 +11803,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/d/d6/Football_Federation_Islamic_Republic_of_Iran_logo.svg",
           "file": "ir/ir-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Iran national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_Islamic_Republic_of_Iran_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Iran national football team.",
+          "design": "The crest of the Football Federation Islamic Republic of Iran — a rectangular badge in the green-white-red of the national flag with the national emblem on the white stripe, over a football lettered “Iran”, ringed by “Football Federation Islamic Republic of Iran”.",
           "source": "https://en.wikipedia.org/wiki/Iran_national_football_team",
           "sha256": "df13196c9950d2e73799a3b114aefabe97c1968cd0eb193592279a746b9bf0cf",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The green-white-red repeats Iran's own national flag, and the red emblem on the white stripe is the flag's own central symbol: a stylised rendering of the word “Allah”, made of four crescents and a sword beneath a shaddah mark, adopted after the 1979 Islamic Revolution to replace the former Lion and Sun emblem associated with the monarchy.",
+            "sources": [
+              {
+                "title": "Flag of Iran — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Iran"
+              }
+            ]
+          }
         }
       ]
     },
@@ -12386,10 +12422,19 @@
           "name": "Crest of the Jordan national football team",
           "commons": "Jordan national football team logo 2024.svg",
           "file": "jo/jo-football-crest.svg",
-          "design": "The crest of the Jordan national football team.",
+          "design": "The crest of the Jordan national football team — a shield in the Pan-Arab black, white and green of the national flag with a red field, bearing a white seven-pointed star, lettered “Jordan”.",
           "source": "https://en.wikipedia.org/wiki/Jordan_national_football_team",
           "sha256": "83241f837014deaeb06313b561b2d1d86a151bedd360b35e17896d3dad36fa5e",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The seven-pointed star and the black-white-green-red colours are the same as on Jordan's own national flag: the colours are the Pan-Arab colours of the 1916 Arab Revolt, and the star's seven points stand for the unity of the Arab peoples and, in a religious reading, the seven verses of Al-Fatiha, the opening chapter of the Quran.",
+            "sources": [
+              {
+                "title": "Flag of Jordan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Jordan"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -12738,10 +12783,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/5/5d/Football_Kenya_Federation_logo.svg",
           "file": "ke/ke-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Kenya national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Kenya_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Kenya national football team.",
+          "design": "The crest of the Football Kenya Federation — a black-and-red ring lettered “Football Kenya” over a green “Federation” banner, with two gold lions holding red spears flanking a football.",
           "source": "https://en.wikipedia.org/wiki/Football_Kenya_Federation",
           "sha256": "60cd5b08c208bd99c47a6ae6c52c7a151df42b5051f6e883140ec2b67a2e7c94",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The two lions and spears are drawn from Kenya's own national coat of arms: the lions stand for protection, and the spears for the unity and defence of freedom won at independence in 1963.",
+            "sources": [
+              {
+                "title": "Coat of arms of Kenya — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -14083,10 +14137,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/c/cf/Lebanon_national_football_team.png",
           "file": "lb/lb-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Lebanon national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Lebanon_national_football_team.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Lebanon national football team.",
+          "design": "The crest of the Lebanese Football Association — a red circular badge with a green cedar tree and a football, lettered in Arabic and “Lebanon F.A.”.",
           "source": "https://en.wikipedia.org/wiki/Lebanon_national_football_team",
           "sha256": "a4e2d8b1285a2f14a2f65a0003dbceaf77b4c575eca548d6437f89b5acefff26",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The cedar is the Cedar of Lebanon carried on the country's own national flag: a tree native to Lebanon's mountains, mentioned scores of times in the Bible as a symbol of strength and divine blessing, and adopted as a national emblem standing for immortality, steadfastness and hope across Lebanon's religious communities.",
+            "sources": [
+              {
+                "title": "Flag of Lebanon — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Lebanon"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -15583,10 +15646,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/7/78/Football_Association_of_Montenegro_logo.svg",
           "file": "me/me-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Montenegro national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Montenegro_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Montenegro national football team.",
+          "design": "The crest of the Football Association of Montenegro — a red shield lettered “FS CG”, with a football above and the gold double-headed eagle of Montenegro's coat of arms, bearing a shield with a golden lion, below.",
           "source": "https://en.wikipedia.org/wiki/Football_Association_of_Montenegro",
           "sha256": "cd732e89d07480c9c12a6fd62760f2e472e0c9a0bd1bbfd474f0d51d7f93765c",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The double-headed eagle and the lion are both Montenegro's own state coat of arms: the eagle is of Byzantine origin (its current layout adapted from Imperial Russia's, reflecting the historic ties between Montenegro's ruling Petrović-Njegoš dynasty and Russia), while the lion — read as a Lion of Judah figure — marks the centuries when Montenegro's prince-bishops held both religious and political authority. FS CG is the federation's own initials, Fudbalski savez Crne Gore.",
+            "sources": [
+              {
+                "title": "Coat of arms of Montenegro — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -18813,10 +18885,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/3a/New_Zealand_Football_Crest_2022.svg",
           "file": "nz/nz-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the New Zealand national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:New_Zealand_Football_Crest_2022.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the New Zealand national football team.",
+          "design": "The crest of the New Zealand men's national football team — a black silver fern frond.",
           "source": "https://en.wikipedia.org/wiki/New_Zealand_men's_national_football_team",
           "sha256": "339458f04445801e5c9353c0619b4626cd91458e5d3e65b7be48ada26fc08e4d",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The silver fern has marked New Zealand sporting teams since the 1888–89 New Zealand Native rugby team's tour of Britain, and was carried by New Zealand's expeditionary forces in both World Wars — it is engraved on the Commonwealth war graves of fallen New Zealand soldiers. It is shared today across the country's national teams, including the women's football side, the Football Ferns.",
+            "sources": [
+              {
+                "title": "Silver fern — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Silver_fern"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -22344,10 +22425,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/9/99/Slovenia_national_football_team.svg",
           "file": "si/si-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Slovenia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Slovenia_national_football_team.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Slovenia national football team.",
+          "design": "The crest of the Football Association of Slovenia — a shield-shaped badge with green football-pattern rings and Slovenia's own national coat of arms (Mount Triglav over wavy blue lines and three gold six-pointed stars), lettered “Slovenija” and “NZS”.",
           "source": "https://en.wikipedia.org/wiki/Slovenia_national_football_team",
           "sha256": "169dd9821f5204714ae401120bec5783c23c7a701d6a2d5a1a8cb6b712052865",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "Mount Triglav, Slovenia's highest peak, and the wavy lines below it — read as the Triglav Lakes Valley, the Slovene coastline and the country's rivers — are both drawn from Slovenia's own national coat of arms, along with the three gold six-pointed stars, taken from the historical arms of the Counts of Celje and read as a symbol of democracy. NZS is the federation's own initials, Nogometna zveza Slovenije (Football Association of Slovenia).",
+            "sources": [
+              {
+                "title": "Coat of arms of Slovenia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -24215,10 +24305,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/c/c4/Tunisia_national_football_team_logo.png",
           "file": "tn/tn-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Tunisia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Tunisia_national_football_team_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Tunisia national football team.",
+          "design": "The crest of the Fédération Tunisienne de Football — a red circular badge with a white spread-winged eagle over the crescent-and-star of the national flag and a grey star above, lettered in Arabic and “Fédération Tunisienne de Football”.",
           "source": "https://en.wikipedia.org/wiki/Tunisia_national_football_team",
           "sha256": "94863e74b2acd29f91d58635ab9c25d0e306bdb2e3bc6a93bf012ff28794696f",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The eagle gives the Tunisia national team its own nickname, the Eagles of Carthage, after the ancient Phoenician city-state on the same coast. The crescent and star beneath it are the same emblem carried on Tunisia's national flag: read together as marking the unity of Muslims and the Five Pillars of Islam, though the crescent's use on this coast predates Islam, having first been emblazoned on the standards and buildings of Punic Carthage itself.",
+            "sources": [
+              {
+                "title": "Tunisia national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Tunisia_national_football_team"
+              },
+              {
+                "title": "Flag of Tunisia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Tunisia"
+              }
+            ]
+          }
         }
       ],
       "independence": {
