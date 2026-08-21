@@ -230,7 +230,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "az-president", category: "standard", name: "Standard of the President of Azerbaijan", from: 1992, to: 9999, path: "national-flags/az/azerbaijan-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags" },
     { id: "az-emblem", category: "coatofarms", name: "Emblem of Azerbaijan", from: 1993, to: 9999, path: "national-flags/az/azerbaijan-emblem.svg", design: "A stylised flame on a shield in the colours of the flag, over crossed wheat and an oak bough.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Azerbaijan" },
     { id: "az-passport", category: "passport", name: "Passport of Azerbaijan", path: "national-flags/az/az-passport.webp", design: "The cover of the Azerbaijan passport.", source: "https://gicg.net/passport/az/" },
-    { id: "az-football-crest", category: "footballcrest", name: "Crest of the Azerbaijan national football team", path: "national-flags/az/az-football-crest.png", design: "The crest of the Azerbaijan national football team.", source: "https://en.wikipedia.org/wiki/Azerbaijan_national_football_team" },
+    { id: "az-football-crest", category: "footballcrest", name: "Crest of the Azerbaijan national football team", path: "national-flags/az/az-football-crest.png", design: "The crest of the Azerbaijan national football team — a blue-red-green flame shape bearing the white crescent and eight-pointed star of the national flag, over a football, lettered “AFFA”.", source: "https://en.wikipedia.org/wiki/Azerbaijan_national_football_team" },
   ],
   "BA": [
     { id: "ba-official-national", category: "official", name: "Flag of Bosnia and Herzegovina", from: 1998, to: 9999, primary: true, path: "flags/ba.svg", design: "The national flag of Bosnia and Herzegovina, in the form adopted in 1998.", source: "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina" },
@@ -413,7 +413,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "by-president", category: "standard", name: "Flag of the President of Belarus", from: 2012, to: 9999, path: "national-flags/by/belarus-president.svg", design: "The presidential flag bearing the national emblem.", source: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
     { id: "by-emblem", category: "coatofarms", name: "National emblem of Belarus", from: 1995, to: 9999, path: "national-flags/by/belarus-emblem.svg", design: "A silhouette of the country over a globe and rising sun, within wheat ears bound by a ribbon in the national colours, beneath a red star.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Belarus" },
     { id: "by-passport", category: "passport", name: "Passport of Belarus", path: "national-flags/by/by-passport.webp", design: "The cover of the Belarus passport.", source: "https://gicg.net/passport/by/" },
-    { id: "by-football-crest", category: "footballcrest", name: "Crest of the Belarus national football team", path: "national-flags/by/by-football-crest.svg", design: "The crest of the Belarus national football team.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Belarus" },
+    { id: "by-football-crest", category: "footballcrest", name: "Crest of the Belarus national football team", path: "national-flags/by/by-football-crest.svg", design: "The crest of the Belarus national football team — a white silhouette of a European bison set inside a football coloured in Belarus's national red and green, lettered “АБФФ” (Cyrillic).", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Belarus" },
   ],
   "BZ": [
     { id: "bz-official-national", category: "official", name: "Flag of Belize", from: 1981, to: 9999, primary: true, path: "flags/bz.svg", design: "The national flag, adopted at independence in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Belize" },
@@ -592,7 +592,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cy-president", category: "standard", name: "Presidential Standard of Cyprus", from: 2006, to: 9999, path: "national-flags/cy/cyprus-president.svg", design: "A field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
     { id: "cy-arms", category: "coatofarms", name: "Coat of arms of Cyprus", from: 1960, to: 9999, path: "national-flags/cy/cyprus-arms.svg", design: "A white dove carrying an olive branch above the year 1960, on a copper-coloured shield within an olive wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus" },
     { id: "cy-passport", category: "passport", name: "Passport of Cyprus", path: "national-flags/cy/cy-passport.webp", design: "The cover of the Cyprus passport.", source: "https://gicg.net/passport/cy/" },
-    { id: "cy-football-crest", category: "footballcrest", name: "Crest of the Cyprus national football team", path: "national-flags/cy/cy-football-crest.png", design: "The crest of the Cyprus national football team.", source: "https://en.wikipedia.org/wiki/Cyprus_national_football_team" },
+    { id: "cy-football-crest", category: "footballcrest", name: "Crest of the Cyprus national football team", path: "national-flags/cy/cy-football-crest.png", design: "The crest of the Cyprus national football team — a circular badge with a copper-coloured outline of the island of Cyprus flanked by two olive branches.", source: "https://en.wikipedia.org/wiki/Cyprus_national_football_team" },
   ],
   "CZ": [
     { id: "cz-official-national", category: "official", name: "Flag of Czechia", from: 1993, to: 9999, primary: true, path: "flags/cz.svg", design: "The national flag of Czechia, in the form adopted in 1993.", source: "https://en.wikipedia.org/wiki/Flag_of_Czechia" },
@@ -829,7 +829,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ge-president", category: "standard", name: "Flag of the President of Georgia", from: 2020, to: 9999, path: "national-flags/ge/georgia-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Georgian_flags" },
     { id: "ge-arms", category: "coatofarms", name: "Coat of arms of Georgia", from: 2004, to: 9999, path: "national-flags/ge/georgia-arms.svg", design: "Saint George on horseback slaying a dragon, on a red shield beneath the Iberian crown, held by two golden lions over the motto Strength is in Unity.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia" },
     { id: "ge-passport", category: "passport", name: "Passport of Georgia", path: "national-flags/ge/ge-passport.webp", design: "The cover of the Georgia passport.", source: "https://gicg.net/passport/ge/" },
-    { id: "ge-football-crest", category: "footballcrest", name: "Crest of the Georgia national football team", path: "national-flags/ge/ge-football-crest.svg", design: "The crest of the Georgia national football team.", source: "https://en.wikipedia.org/wiki/Georgia_national_football_team" },
+    { id: "ge-football-crest", category: "footballcrest", name: "Crest of the Georgia national football team", path: "national-flags/ge/ge-football-crest.svg", design: "The crest of the Georgia national football team — a red shield bearing a white silhouette of Saint George on horseback spearing a dragon.", source: "https://en.wikipedia.org/wiki/Georgia_national_football_team" },
   ],
   "GG": [
     { id: "gg-official-national", category: "official", name: "Flag of Guernsey", from: 1985, to: 9999, path: "flags/gg.svg", design: "A red St George's cross on white with a gold Norman cross set within it.", source: "https://en.wikipedia.org/wiki/Flag_of_Guernsey" },
@@ -1211,7 +1211,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kr-president", category: "standard", name: "Flag of the President of South Korea", from: 1967, to: 9999, path: "national-flags/kr/south-korea-president.svg", design: "A blue field bearing the presidential phoenix emblem.", source: "https://en.wikipedia.org/wiki/List_of_South_Korean_flags" },
     { id: "kr-arms", category: "coatofarms", name: "Emblem of South Korea", from: 1963, to: 9999, path: "national-flags/kr/kr-arms.svg", design: "The red-and-blue taegeuk within five white Hibiscus syriacus petals, on a ribbon reading Republic of Korea.", source: "https://en.wikipedia.org/wiki/Emblem_of_South_Korea" },
     { id: "kr-passport", category: "passport", name: "Passport of South Korea", path: "national-flags/kr/kr-passport.webp", design: "The cover of the South Korea passport.", source: "https://gicg.net/passport/kr/" },
-    { id: "kr-football-crest", category: "footballcrest", name: "Crest of the South Korea national football team", path: "national-flags/kr/kr-football-crest.svg", design: "The crest of the South Korea national football team.", source: "https://en.wikipedia.org/wiki/South_Korea_national_football_team" },
+    { id: "kr-football-crest", category: "footballcrest", name: "Crest of the South Korea national football team", path: "national-flags/kr/kr-football-crest.svg", design: "The crest of the South Korea national football team — a rectangular badge in the blue-and-red of the national flag, bearing a stylised white tiger's face, lettered “Korea”.", source: "https://en.wikipedia.org/wiki/South_Korea_national_football_team" },
   ],
   "KW": [
     { id: "kw-official-national", category: "official", name: "Flag of Kuwait", from: 1961, to: 9999, primary: true, path: "flags/kw.svg", design: "The national flag of Kuwait, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
@@ -1240,7 +1240,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kz-president", category: "standard", name: "Standard of the President of Kazakhstan", from: 2012, to: 9999, path: "national-flags/kz/kazakhstan-president.svg", design: "A sky blue square bearing the state emblem.", source: "https://en.wikipedia.org/wiki/List_of_Kazakh_flags" },
     { id: "kz-emblem", category: "coatofarms", name: "Emblem of Kazakhstan", from: 1992, to: 9999, path: "national-flags/kz/kazakhstan-emblem.svg", design: "A shanyrak on a sky blue field, its supports radiating like sun rays, flanked by two winged mythical horses.", source: "https://en.wikipedia.org/wiki/Emblem_of_Kazakhstan" },
     { id: "kz-passport", category: "passport", name: "Passport of Kazakhstan", path: "national-flags/kz/kz-passport.webp", design: "The cover of the Kazakhstan passport.", source: "https://gicg.net/passport/kz/" },
-    { id: "kz-football-crest", category: "footballcrest", name: "Crest of the Kazakhstan national football team", path: "national-flags/kz/kz-football-crest.svg", design: "The crest of the Kazakhstan national football team.", source: "https://en.wikipedia.org/wiki/Kazakhstan_Football_Federation" },
+    { id: "kz-football-crest", category: "footballcrest", name: "Crest of the Kazakhstan national football team", path: "national-flags/kz/kz-football-crest.svg", design: "The crest of the Kazakhstan Football Federation — a blue-and-gold circular badge lettered “KFF” and “Kazakhstan”, with a golden sun's rays radiating from a football and a soaring eagle below.", source: "https://en.wikipedia.org/wiki/Kazakhstan_Football_Federation" },
   ],
   "LA": [
     { id: "la-official-national", category: "official", name: "Flag of Laos", from: 1945, to: 9999, primary: true, path: "flags/la.svg", design: "The national flag of Laos, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
@@ -1272,7 +1272,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "li-1921", category: "historical", name: "Flag of Liechtenstein (1921–1937)", from: 1921, to: 1937, path: "national-flags/li/liechtenstein-1921.svg", design: "The plain blue-over-red horizontal bicolour, without the gold crown. The crown was added in 1937 after the 1936 Berlin Olympics revealed Liechtenstein's flag was identical to Haiti's.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
     { id: "li-arms", category: "coatofarms", name: "Coat of arms of Liechtenstein", from: 1957, to: 9999, path: "national-flags/li/li-arms.svg", design: "A quartered princely shield beneath a princely hat, on an ermine mantle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein" },
     { id: "li-passport", category: "passport", name: "Passport of Liechtenstein", path: "national-flags/li/li-passport.webp", design: "The cover of the Liechtenstein passport.", source: "https://gicg.net/passport/li/" },
-    { id: "li-football-crest", category: "footballcrest", name: "Crest of the Liechtenstein national football team", path: "national-flags/li/li-football-crest.svg", design: "The crest of the Liechtenstein national football team.", source: "https://en.wikipedia.org/wiki/Liechtenstein_Football_Association" },
+    { id: "li-football-crest", category: "footballcrest", name: "Crest of the Liechtenstein national football team", path: "national-flags/li/li-football-crest.svg", design: "The crest of the Liechtenstein Football Association — a gold-outlined shield shaped by three Alpine peaks, over a blue “Liechtenstein” banner and a football in the national red and blue.", source: "https://en.wikipedia.org/wiki/Liechtenstein_Football_Association" },
   ],
   "LK": [
     { id: "lk-official-national", category: "official", name: "Flag of Sri Lanka", from: 1972, to: 9999, primary: true, path: "flags/lk.svg", design: "The national flag of Sri Lanka, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
@@ -1282,7 +1282,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lk-naval-ensign", category: "maritime", name: "Naval Ensign of Sri Lanka", from: 1972, to: 9999, path: "national-flags/lk/srilanka-naval-ensign.svg", design: "A defaced white ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_flags" },
     { id: "lk-emblem", category: "coatofarms", name: "Emblem of Sri Lanka", from: 1972, to: 9999, path: "national-flags/lk/srilanka-emblem.svg", design: "A gold lion passant holding a sword, within blue lotus petals on a grain vase, beneath the Dharmacakra and between the sun and the moon.", source: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
     { id: "lk-passport", category: "passport", name: "Passport of Sri Lanka", path: "national-flags/lk/lk-passport.webp", design: "The cover of the Sri Lanka passport.", source: "https://gicg.net/passport/lk/" },
-    { id: "lk-football-crest", category: "footballcrest", name: "Crest of the Sri Lanka national football team", path: "national-flags/lk/lk-football-crest.svg", design: "The crest of the Sri Lanka national football team.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Sri_Lanka" },
+    { id: "lk-football-crest", category: "footballcrest", name: "Crest of the Sri Lanka national football team", path: "national-flags/lk/lk-football-crest.svg", design: "The crest of the Football Federation of Sri Lanka — a navy shield lettered “Sri Lanka Football” and “Est 1939”, bearing the gold sword-bearing lion of the national flag.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Sri_Lanka" },
   ],
   "LR": [
     { id: "lr-official-national", category: "official", name: "Flag of Liberia", from: 1847, to: 9999, primary: true, path: "flags/lr.svg", design: "The national flag, adopted at independence in 1847.", source: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
@@ -1371,7 +1371,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "md-president", category: "standard", name: "Flag of the President of Moldova", path: "national-flags/md/moldova-president.svg", design: "The presidential standard bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Moldovan_flags" },
     { id: "md-arms", category: "coatofarms", name: "Coat of arms of Moldova", from: 1990, to: 9999, path: "national-flags/md/moldova-arms.svg", design: "An aurochs head with a star between its horns, a rose and a crescent, on a shield held by an eagle with a cross in its beak.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
     { id: "md-passport", category: "passport", name: "Passport of Moldova", path: "national-flags/md/md-passport.webp", design: "The cover of the Moldova passport.", source: "https://gicg.net/passport/md/" },
-    { id: "md-football-crest", category: "footballcrest", name: "Crest of the Moldova national football team", path: "national-flags/md/md-football-crest.svg", design: "The crest of the Moldova national football team.", source: "https://en.wikipedia.org/wiki/Moldova_national_football_team" },
+    { id: "md-football-crest", category: "footballcrest", name: "Crest of the Moldova national football team", path: "national-flags/md/md-football-crest.svg", design: "The crest of the Moldova national football team — a shield in the blue-yellow-red of the national flag, lettered “Moldova”, with a football bearing an eagle's head.", source: "https://en.wikipedia.org/wiki/Moldova_national_football_team" },
   ],
   "ME": [
     { id: "me-official-national", category: "official", name: "Flag of Montenegro", from: 2004, to: 9999, primary: true, path: "flags/me.svg", design: "The national flag of Montenegro, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" },
@@ -1404,7 +1404,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mk-krusevo", category: "historical", name: "Flag of the Kruševo Republic", from: 1903, to: 1903, priorPolity: "the Kruševo Republic", path: "national-flags/mk/macedonia-krusevo.svg", design: "The flag of the ten-day republic proclaimed during the Ilinden uprising against Ottoman rule in 1903.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia" },
     { id: "mk-emblem", category: "coatofarms", name: "National emblem of North Macedonia", from: 1946, to: 9999, path: "national-flags/mk/macedonia-emblem.svg", design: "A mountain, a lake and a rising sun framed by garlands of wheat, tobacco and poppy tied with embroidered ribbon, beneath a red star.", source: "https://en.wikipedia.org/wiki/National_emblem_of_North_Macedonia" },
     { id: "mk-passport", category: "passport", name: "Passport of North Macedonia", path: "national-flags/mk/mk-passport.webp", design: "The cover of the North Macedonia passport.", source: "https://gicg.net/passport/mk/" },
-    { id: "mk-football-crest", category: "footballcrest", name: "Crest of the North Macedonia national football team", path: "national-flags/mk/mk-football-crest.svg", design: "The crest of the North Macedonia national football team.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Macedonia" },
+    { id: "mk-football-crest", category: "footballcrest", name: "Crest of the North Macedonia national football team", path: "national-flags/mk/mk-football-crest.svg", design: "The crest of the Football Federation of Macedonia — a red shield lettered “ФФМ” (Cyrillic), with a golden sunburst swirl.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Macedonia" },
   ],
   "ML": [
     { id: "ml-official-national", category: "official", name: "Flag of Mali", from: 1961, to: 9999, primary: true, path: "flags/ml.svg", design: "The national flag of Mali, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
@@ -1837,7 +1837,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "rs-civil", category: "civilstate", name: "Civil flag of Serbia", from: 2010, to: 9999, path: "national-flags/rs/serbia-civil.svg", design: "The plain red-blue-white tricolour, without the arms the state flag carries.", source: "https://en.wikipedia.org/wiki/List_of_Serbian_flags" },
     { id: "rs-arms", category: "coatofarms", name: "Coat of arms of Serbia", from: 2010, to: 9999, path: "national-flags/rs/serbia-arms.svg", design: "A silver double-headed eagle on red bearing an escutcheon with the Serbian cross between four firesteels, beneath a crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Serbia" },
     { id: "rs-passport", category: "passport", name: "Passport of Serbia", path: "national-flags/rs/rs-passport.webp", design: "The cover of the Serbia passport.", source: "https://gicg.net/passport/rs/" },
-    { id: "rs-football-crest", category: "footballcrest", name: "Crest of the Serbia national football team", path: "national-flags/rs/rs-football-crest.svg", design: "The crest of the Serbia national football team.", source: "https://en.wikipedia.org/wiki/Serbia_national_football_team" },
+    { id: "rs-football-crest", category: "footballcrest", name: "Crest of the Serbia national football team", path: "national-flags/rs/rs-football-crest.svg", design: "The crest of the Football Association of Serbia — a gold-outlined shield lettered “Србија” (Serbia), bearing the Serbian cross — a white cross with four stylised Cyrillic “С” letters — over a football, on a red field.", source: "https://en.wikipedia.org/wiki/Serbia_national_football_team" },
   ],
   "RU": [
     { id: "ru-official-national", category: "official", name: "Flag of Russia", from: 1991, to: 9999, primary: true, path: "flags/ru.svg", design: "The national flag of Russia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Russia" },
@@ -1853,7 +1853,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ru-president", category: "standard", name: "Standard of the President of Russia", from: 1994, to: 9999, path: "national-flags/ru/russia-president.svg", design: "A square tricolour charged with the state coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Russian_flags" },
     { id: "ru-arms", category: "coatofarms", name: "Coat of arms of Russia", from: 1993, to: 9999, path: "national-flags/ru/russia-arms.svg", design: "A gold double-headed eagle on a red shield, crowned, holding a sceptre and orb, with a horseman spearing a dragon on its breast.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
     { id: "ru-passport", category: "passport", name: "Passport of Russia", path: "national-flags/ru/ru-passport.webp", design: "The cover of the Russia passport.", source: "https://gicg.net/passport/ru/" },
-    { id: "ru-football-crest", category: "footballcrest", name: "Crest of the Russia national football team", path: "national-flags/ru/ru-football-crest.svg", design: "The crest of the Russia national football team.", source: "https://en.wikipedia.org/wiki/Russian_Football_Union" },
+    { id: "ru-football-crest", category: "footballcrest", name: "Crest of the Russia national football team", path: "national-flags/ru/ru-football-crest.svg", design: "The crest of the Russian Football Union — a gold double-headed eagle, each head crowned, over a football in white-blue-red, ringed by “Российский футбольный союз” (Russian Football Union) in Cyrillic.", source: "https://en.wikipedia.org/wiki/Russian_Football_Union" },
   ],
   "RW": [
     { id: "rw-official-national", category: "official", name: "Flag of Rwanda", from: 2001, to: 9999, primary: true, path: "flags/rw.svg", design: "The national flag of Rwanda, adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
@@ -2718,6 +2718,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Azerbaijan — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Azerbaijan" },
     ],
   },
+  "az-football-crest": {
+    description: "The flame is a reference to Azerbaijan's nickname “the Land of Fire”: natural gas seeping from the ground around the Absheron Peninsula has burned as naturally-occurring eternal flames for millennia — the Yanar Dag hillside and the Ateshgah fire temple among them — and made the region a historic centre of Zoroastrian fire-worship. The flame is coloured in the blue, red and green of Azerbaijan's own national flag, and the white crescent and eight-pointed star set into it are the flag's own emblem; a popular, disputed reading ties the star's eight points to the eight letters of “Azerbaijan” in Arabic script, or to eight historical Turkic peoples. AFFA is the federation's own initials, the Azerbaijan Football Federations Association.",
+    sources: [
+      { title: "Flag of Azerbaijan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
+      { title: "Eternal flame: How Azerbaijan became the 'Land of Fire' — CNN Travel", url: "https://www.cnn.com/travel/article/yanar-dag-azerbaijan-land-of-fire" },
+    ],
+  },
   "ba-arms": {
     description: "The arms simply repeat the national flag, adopted together in 1998. The three points of the shield stand for the country's three constituent peoples — Bosniaks, Croats and Serbs; the yellow triangle is read as the rough triangular shape of the country's territory, and its three sides again as the three peoples. The row of white stars, cut off top and bottom, stands for Europe and is deliberately open-ended, meant to be infinite. The design was chosen by the international High Representative when the country's communities could not agree, which is why it avoids the older national and religious symbols — the fleurs-de-lis of the medieval Kotromanić kings that the 1992 flag had carried had come to be read as a Bosniak emblem.",
     sources: [
@@ -2871,6 +2878,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Belarus — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Belarus" },
     ],
   },
+  "by-football-crest": {
+    description: "The European bison (zubr) is Belarus's own unofficial national symbol, closely tied to the wisents of the Białowieża Forest that straddles its border with Poland, and was chosen for the federation's crest as an image that steadily associates with Belarus and its national character. АБФФ is the federation's own initials in Cyrillic, the Association “Belarusian Football Federation”.",
+    sources: [
+      { title: "Corporate style of Association «Belarus Football Federation» — a-v-c.by", url: "https://www.a-v-c.by/en/projects/corporate-style-of-association-belarus-football-federation/" },
+    ],
+  },
   "bz-arms": {
     description: "Behind the shield rises a mahogany tree, the timber on which the colonial economy was built. The shield shows a woodcutter's tools — an axe and a paddle, a saw and a squaring axe — above a ship under sail. Two woodcutters, one of African and one of mixed descent, support it, and the motto reads Sub Umbra Floreo — “Under the shade I flourish,” the shade of the mahogany.",
     sources: [
@@ -3014,6 +3027,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Every element is chosen, and two of them are the same idea twice: the white dove carrying an olive branch is peace, and the olive wreath framing the shield is peace again — a wish that carried real weight for an island independent in 1960 with a mixed Greek and Turkish population. The year 1960 records that independence from British rule. The shield's colour is the point most people miss: it is not gold but copper, specified as Pantone 1385 C, for the copper ore that Cyprus was famous for in antiquity — the island's name and the Latin word for copper, cuprum, are bound together.",
     sources: [
       { title: "Coat of arms of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus" },
+    ],
+  },
+  "cy-football-crest": {
+    description: "The copper-coloured island silhouette and the two olive branches are the same symbols carried on Cyprus's own national flag: copper for the large deposits of copper ore that may have given the island its name, and the olive branches for peace. Together with a neutral field, they were chosen to stand for reconciliation between the island's Greek and Turkish Cypriot communities rather than favour either — an aspiration the flag's own article notes has not yet been realised.",
+    sources: [
+      { title: "Flag of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
     ],
   },
   "cz-arms": {
@@ -3251,6 +3270,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms are partly based on the medieval device of the Bagrationi royal house and centre on Saint George, the country's traditional patron saint and the source of its English name — a silver rider on a silver horse spearing a dragon, his lance tipped with a golden cross, on a purple field (usually drawn red). The shield is crowned with the Iberian crown of the old Georgian kingdom and supported by two golden lions; the scroll beneath carries the national motto, \"Strength is in Unity\". The same Saint George arms served the Democratic Republic of 1918–1921, though at that time there was some discussion of using Amirani, the Georgian Prometheus, instead. The current version was adopted after the 2004 Rose Revolution.",
     sources: [
       { title: "Coat of arms of Georgia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia" },
+    ],
+  },
+  "ge-football-crest": {
+    description: "Saint George spearing a dragon is Georgia's own national coat of arms, adopted in 2004: a rider with a golden-crossed spear striking down a dragon, reflecting the country's long Christian tradition and medieval royal heritage. An earlier draft that also included the Seamless Robe of Jesus was dropped as excessively religious before the design was adopted.",
+    sources: [
+      { title: "Coat of arms of Georgia (country) — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia_(country)" },
     ],
   },
   "gg-arms": {
@@ -3577,6 +3602,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of South Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_South_Korea" },
     ],
   },
+  "kr-football-crest": {
+    description: "The white tiger, nicknamed Baekho, is one of the Four Symbols of East Asian mythology — the guardian of the west — and was adopted by the Korea Football Association in 2001 to replace the national flag itself as the shirt badge, as a mark of the Korean people's own spirit ahead of the 2002 World Cup it co-hosted. The badge's blue and red border repeats the Taegeuk colours of the national flag.",
+    sources: [
+      { title: "White Tiger (mythology) — Wikipedia", url: "https://en.wikipedia.org/wiki/White_Tiger_(mythology)" },
+      { title: "Korea Football Association unveils updated emblem — Korea JoongAng Daily", url: "https://www.koreajoongangdaily.com/sports/korea-football-association-unveils-updated-emblem/10271720" },
+    ],
+  },
   "kw-emblem": {
     description: "Adopted in 1962, a year after independence, and designed by Mohammed Husni Zaki after the council of ministers asked for an emblem of Kuwait's past, present and future. The falcon is the Hawk of Quraish, the device of the line the Prophet Muhammad belonged to, found across the emblems of the Arabian peninsula; on its breast it carries a shield in the colours of the national flag. The dhow sailing before the rising sun is the country's maritime tradition — the pearling and trading fleet Kuwait was built on — and it is the same device Qatar still carries and the UAE carried until 2008. It replaced an older emblem of a falcon between two crossed flags.",
     sources: [
@@ -3593,6 +3625,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "At the centre is the shanyrak, the dome-piece at the top of a yurt through which the smoke leaves and the light enters — in Kazakh usage the emblem of the family home, and here of the common home of all the country's peoples. Its uyks, the supports radiating from it, are drawn as sun rays. Flanking it are two tulpars, the winged horses of Turkic myth. The two colours carry their own meaning: the gold is the bright, clear future of the Kazakh people, and the sky blue is the aspiration to peace, accord, friendship and unity with all peoples. The emblem was adopted on 4 June 1992, chosen from 245 submitted designs; its authors were Jandarbek Melibekov and Shot-Aman Ualikhan.",
     sources: [
       { title: "Emblem of Kazakhstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kazakhstan" },
+    ],
+  },
+  "kz-football-crest": {
+    description: "The golden sun and soaring eagle both repeat Kazakhstan's own national flag: the sun stands for life, energy and abundance, its rays shaped like grain; the steppe eagle has flown on the standards of Kazakh tribes for centuries and stands for freedom, power and the flight to the future. KFF is simply the federation's own initials, the Kazakhstan Football Federation.",
+    sources: [
+      { title: "Flag of Kazakhstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
     ],
   },
   "la-emblem": {
@@ -3623,6 +3661,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "At the centre is the same gold lion holding a sword that appears on the national flag, ringed by the golden petals of the blue lotus, the national flower. The lion stands on a traditional grain vase sprouting sheaves of rice — the country's staple and its prosperity. The crest above is the Dharmacakra, the wheel of the Buddhist law, for the foremost place Buddhism holds in the country and for just rule; the supporters at either side are the traditional Sinhalese heraldic emblems of the sun and the moon. The present design was created in 1972 under the guidance of Nissanka Wijeyeratne, replacing the 1954 emblem adopted when Ceylon became a dominion.",
     sources: [
       { title: "Emblem of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
+    ],
+  },
+  "lk-football-crest": {
+    description: "The lion holding a sword is the same figure carried on Sri Lanka's own national flag: the sword stands for the sovereignty of the nation, and the lion for the Sinhalese people and the nation's strength. The design traces to the Mahavamsa chronicle, which links the Sinhalese to Prince Vijaya and his father King Sinhabahu (\"lion-armed\"), and the lion emblem itself has marked Sinhalese rule since at least the reign of King Dutugemunu around 162 BC.",
+    sources: [
+      { title: "Flag of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
     ],
   },
   "lr-arms": {
@@ -3699,6 +3743,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
     ],
   },
+  "md-football-crest": {
+    description: "The eagle echoes Moldova's own national coat of arms, whose eagle derives from the interwar coat of arms of the Kingdom of Romania — a period when most of Moldova's territory was part of Romania, between the World Wars — while the shield's vertical blue-yellow-red repeats the national flag's own colours.",
+    sources: [
+      { title: "Coat of arms of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
+    ],
+  },
   "me-arms": {
     description: "The double-headed eagle is of Byzantine and ultimately Roman origin, and here stands for the close bond of church and state that defined Montenegro under its prince-bishops, the vladikas. On the breast shield the golden lion passant is a sign of episcopal authority, read as a figure of the Lion of Judah. The crown is that of the Petrović-Njegoš dynasty that ruled Montenegro — its inclusion was mildly controversial when the arms were adopted in 2004, since the country is now a secular republic; the modern design put the lion back on the shield in place of the earlier rulers' initials.",
     sources: [
@@ -3721,6 +3771,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "North Macedonia is one of the very few countries still using a socialist-style national emblem — the others are Belarus and the breakaway Transnistria — and it is the only EU-candidate state to do so. The garlands framing it are the country's three signature crops: sheaves of wheat, tobacco leaves and opium-poppy fruits, tied with a ribbon of traditional Macedonian folk embroidery. Inside, a mountain, a stretch of water (the Vardar and the lakes) and a rising sun stand for the land and its freedom, and the red star at the top is the National Liberation War. The 1946 original showed the Pirin Mountains, which lie in Bulgaria — placed there to signal a hoped-for \"United Macedonia\" that never came about; the mountain was later left generic.",
     sources: [
       { title: "National emblem of North Macedonia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_North_Macedonia" },
+    ],
+  },
+  "mk-football-crest": {
+    description: "The golden sunburst echoes the eight-rayed sun on North Macedonia's own national flag, adopted in 1995 to replace the earlier Vergina Sun (itself dropped after Greece objected to its use of a symbol from ancient Greek royal heraldry). The flag's sun is described as the “new sun of Liberty” named in the national anthem. ФФМ is the federation's own Cyrillic initials, Фудбалска федерација на Македонија (Football Federation of Macedonia).",
+    sources: [
+      { title: "Flag of North Macedonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
     ],
   },
   "ml-emblem": {
@@ -4062,8 +4118,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Serbia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Serbia" },
     ],
   },
+  "rs-football-crest": {
+    description: "The Serbian cross — a cross with four firesteels, popularly read since the 19th century as four Cyrillic “С” letters standing for the national motto “Само слога Србина спасава” (“Only unity saves the Serbs”) — is Serbia's own national heraldic symbol. It derives from the Byzantine emblem of the Palaiologos dynasty, adopted after Michael VIII Palaiologos restored the Byzantine Empire in 1261, and was in Serbian use by the reign of Despot Stefan Lazarević around 1397.",
+    sources: [
+      { title: "Serbian cross — Wikipedia", url: "https://en.wikipedia.org/wiki/Serbian_cross" },
+    ],
+  },
   "ru-arms": {
     description: "The double-headed eagle came to Moscow from Byzantium after the fall of Constantinople in 1453 and has stood for the Russian state since Ivan III. The three crowns stand for the sovereignty of the Russian Federation as a whole and of its constituent republics and regions; the sceptre and orb in the eagle's talons are the traditional heraldic emblems of sovereign power and authority. On the eagle's breast the silver horseman spearing a dragon is Saint George, a device found on Muscovite seals from 1390 and formally identified as Saint George by imperial decree in 1730. The present drawing was made by Yevgeny Ukhnalyov and adopted by decree on 30 November 1993.",
+    sources: [
+      { title: "Coat of arms of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
+    ],
+  },
+  "ru-football-crest": {
+    description: "The double-headed eagle is Russia's own state coat of arms, adopted from Byzantine imperial tradition: after the fall of Constantinople in 1453, the Grand Dukes of Muscovy took up the emblem to assert their claim as successors to Roman imperial power, and Ivan III's seal first recorded it in 1472. The crowns are read as standing for the unity and sovereignty of Russia as a whole together with its constituent republics and regions.",
     sources: [
       { title: "Coat of arms of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
     ],
