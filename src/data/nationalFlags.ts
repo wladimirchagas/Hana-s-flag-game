@@ -114,7 +114,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ae-president", category: "standard", name: "Flag of the President of the United Arab Emirates", from: 2008, to: 9999, path: "national-flags/ae/uae-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Emirati_flags" },
     { id: "ae-emblem", category: "coatofarms", name: "Emblem of the United Arab Emirates", from: 2008, to: 9999, path: "national-flags/ae/uae-emblem.svg", design: "A golden falcon bearing a disc of the national flag with seven stars, holding a red parchment with the name of the federation.", source: "https://en.wikipedia.org/wiki/Emblem_of_the_United_Arab_Emirates" },
     { id: "ae-passport", category: "passport", name: "Passport of United Arab Emirates", path: "national-flags/ae/ae-passport.webp", design: "The cover of the United Arab Emirates passport.", source: "https://gicg.net/passport/ae/" },
-    { id: "ae-football-crest", category: "footballcrest", name: "Crest of the United Arab Emirates national football team", path: "national-flags/ae/ae-football-crest.svg", design: "The crest of the United Arab Emirates national football team.", source: "https://en.wikipedia.org/wiki/United_Arab_Emirates_national_football_team" },
+    { id: "ae-football-crest", category: "footballcrest", name: "Crest of the United Arab Emirates national football team", path: "national-flags/ae/ae-football-crest.svg", design: "The crest of the United Arab Emirates Football Association — a gold-outlined shield banded in the Pan-Arab red, black, white and green of the national flag, lettered “UAE FA”.", source: "https://en.wikipedia.org/wiki/United_Arab_Emirates_national_football_team" },
   ],
   "AF": [
     { id: "af-official-national", category: "official", name: "Flag of Afghanistan", from: 2021, to: 9999, primary: true, path: "flags/af.svg", design: "The national flag of Afghanistan, in the form adopted in 2021.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
@@ -155,7 +155,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "am-president", category: "standard", name: "Flag of the President of Armenia", from: 1990, to: 9999, path: "national-flags/am/armenia-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Armenian_flags" },
     { id: "am-arms", category: "coatofarms", name: "Coat of arms of Armenia", from: 1992, to: 9999, path: "national-flags/am/armenia-arms.svg", design: "A shield of Mount Ararat with Noah's Ark quartered with four dynastic emblems, supported by an eagle and a lion, over a sword, branch, sheaf, chain and ribbon.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Armenia" },
     { id: "am-passport", category: "passport", name: "Passport of Armenia", path: "national-flags/am/am-passport.webp", design: "The cover of the Armenia passport.", source: "https://gicg.net/passport/am/" },
-    { id: "am-football-crest", category: "footballcrest", name: "Crest of the Armenia national football team", path: "national-flags/am/am-football-crest.svg", design: "The crest of the Armenia national football team.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Armenia" },
+    { id: "am-football-crest", category: "footballcrest", name: "Crest of the Armenia national football team", path: "national-flags/am/am-football-crest.svg", design: "The crest of the Football Federation of Armenia — a football over a red mountain silhouette, with the federation's Armenian initials Հ Ֆ Ֆ, ringed by “Football Federation of Armenia” and a strip of the national tricolour.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Armenia" },
   ],
   "AO": [
     { id: "ao-official-national", category: "official", name: "Flag of Angola", from: 1975, to: 9999, primary: true, path: "flags/ao.svg", design: "The national flag of Angola, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Angola" },
@@ -239,7 +239,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ba-austro", category: "historical", name: "Flag of the Condominium of Bosnia and Herzegovina", from: 1878, to: 1918, sovereign: "Austria-Hungary", path: "national-flags/ba/bosnia-austro.svg", design: "The red-and-yellow flag of the Austro-Hungarian condominium, after the 1878 occupation ended Ottoman rule.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina" },
     { id: "ba-arms", category: "coatofarms", name: "Coat of arms of Bosnia and Herzegovina", from: 1998, to: 9999, path: "national-flags/ba/bosnia-arms.svg", design: "A blue three-pointed shield with a yellow triangle and a diagonal row of white stars.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
     { id: "ba-passport", category: "passport", name: "Passport of Bosnia and Herzegovina", path: "national-flags/ba/ba-passport.webp", design: "The cover of the Bosnia and Herzegovina passport.", source: "https://gicg.net/passport/ba/" },
-    { id: "ba-football-crest", category: "footballcrest", name: "Crest of the Bosnia and Herzegovina national football team", path: "national-flags/ba/ba-football-crest.svg", design: "The crest of the Bosnia and Herzegovina national football team.", source: "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_national_football_team" },
+    { id: "ba-football-crest", category: "footballcrest", name: "Crest of the Bosnia and Herzegovina national football team", path: "national-flags/ba/ba-football-crest.svg", design: "The crest of the Football Association of Bosnia and Herzegovina — a circular blue badge with a football and a blue silhouette map of Bosnia and Herzegovina, ringed by the country's name and the federation's name in Bosnian/Croatian, Serbian Cyrillic and English.", source: "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_national_football_team" },
   ],
   "BB": [
     { id: "bb-official-national", category: "official", name: "Flag of Barbados", from: 1966, to: 9999, primary: true, path: "flags/bb.svg", design: "The national flag of Barbados, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
@@ -1015,7 +1015,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "il-pm", category: "standard", name: "Flag of the Prime Minister of Israel", path: "national-flags/il/israel-pm.svg", design: "A blue field with the national flag in the canton and the state emblem in the fly.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Israel" },
     { id: "il-emblem", category: "coatofarms", name: "Emblem of Israel", from: 1949, to: 9999, path: "national-flags/il/israel-emblem.svg", design: "A seven-branched menorah between two olive branches, above the word ישראל.", source: "https://en.wikipedia.org/wiki/Emblem_of_Israel" },
     { id: "il-passport", category: "passport", name: "Passport of Israel", path: "national-flags/il/il-passport.webp", design: "The cover of the Israel passport.", source: "https://gicg.net/passport/il/" },
-    { id: "il-football-crest", category: "footballcrest", name: "Crest of the Israel national football team", path: "national-flags/il/il-football-crest.svg", design: "The crest of the Israel national football team.", source: "https://en.wikipedia.org/wiki/Israel_Football_Association" },
+    { id: "il-football-crest", category: "footballcrest", name: "Crest of the Israel national football team", path: "national-flags/il/il-football-crest.svg", design: "The crest of the Israel Football Association — a blue shield lettered “Israel Football Association” in English and Hebrew, with a football woven through a Star of David around a globe.", source: "https://en.wikipedia.org/wiki/Israel_Football_Association" },
   ],
   "IM": [
     { id: "im-official-national", category: "official", name: "Flag of the Isle of Man", from: 1932, to: 9999, path: "flags/im.svg", design: "The triskelion — three armoured legs conjoined at the thigh — in gold and silver on a red field.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Man" },
@@ -1066,7 +1066,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ir-naval-jack", category: "maritime", name: "Naval jack of Iran", from: 1980, to: 9999, path: "national-flags/ir/iran-naval-jack.svg", design: "A dark blue field bearing a yellow national emblem.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
     { id: "ir-emblem", category: "coatofarms", name: "Emblem of Iran", from: 1980, to: 9999, path: "national-flags/ir/iran-emblem.svg", design: "Four crescents and a sword beneath a shadda, in the shape of a tulip.", source: "https://en.wikipedia.org/wiki/Emblem_of_Iran" },
     { id: "ir-passport", category: "passport", name: "Passport of Iran", path: "national-flags/ir/ir-passport.webp", design: "The cover of the Iran passport.", source: "https://gicg.net/passport/ir/" },
-    { id: "ir-football-crest", category: "footballcrest", name: "Crest of the Iran national football team", path: "national-flags/ir/ir-football-crest.svg", design: "The crest of the Iran national football team.", source: "https://en.wikipedia.org/wiki/Iran_national_football_team" },
+    { id: "ir-football-crest", category: "footballcrest", name: "Crest of the Iran national football team", path: "national-flags/ir/ir-football-crest.svg", design: "The crest of the Football Federation Islamic Republic of Iran — a rectangular badge in the green-white-red of the national flag with the national emblem on the white stripe, over a football lettered “Iran”, ringed by “Football Federation Islamic Republic of Iran”.", source: "https://en.wikipedia.org/wiki/Iran_national_football_team" },
   ],
   "IS": [
     { id: "is-official-national", category: "official", name: "Flag of Iceland", from: 1944, to: 9999, primary: true, path: "flags/is.svg", design: "The national flag of Iceland, in the form adopted in 1944.", source: "https://en.wikipedia.org/wiki/Flag_of_Iceland" },
@@ -1117,7 +1117,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "jo-navy", category: "maritime", name: "Naval ensign of Jordan", from: 1970, to: 9999, path: "national-flags/jo/jo-navy.svg", design: "The naval ensign of Jordan.", source: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
     { id: "jo-arms", category: "coatofarms", name: "Coat of arms of Jordan", from: 1934, to: 9999, path: "national-flags/jo/jo-arms.svg", design: "The royal arms — a golden eagle on a globe before the Hashemite crown and mantle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jordan" },
     { id: "jo-passport", category: "passport", name: "Passport of Jordan", path: "national-flags/jo/jo-passport.webp", design: "The cover of the Jordan passport.", source: "https://gicg.net/passport/jo/" },
-    { id: "jo-football-crest", category: "footballcrest", name: "Crest of the Jordan national football team", path: "national-flags/jo/jo-football-crest.svg", design: "The crest of the Jordan national football team.", source: "https://en.wikipedia.org/wiki/Jordan_national_football_team" },
+    { id: "jo-football-crest", category: "footballcrest", name: "Crest of the Jordan national football team", path: "national-flags/jo/jo-football-crest.svg", design: "The crest of the Jordan national football team — a shield in the Pan-Arab black, white and green of the national flag with a red field, bearing a white seven-pointed star, lettered “Jordan”.", source: "https://en.wikipedia.org/wiki/Jordan_national_football_team" },
   ],
   "JP": [
     { id: "jp-official-national", category: "official", name: "Flag of Japan (Hinomaru)", from: 1999, to: 9999, primary: true, path: "flags/jp.svg", design: "The national flag, under the Act on National Flag and Anthem of 1999.", source: "https://en.wikipedia.org/wiki/Flag_of_Japan" },
@@ -1145,7 +1145,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ke-president-1964", category: "standard", name: "First presidential standard of Kenya", from: 1964, to: 1970, path: "national-flags/ke/kenya-president-1964.svg", design: "The first standard adopted after independence.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
     { id: "ke-arms", category: "coatofarms", name: "Coat of arms of Kenya", from: 1963, to: 9999, path: "national-flags/ke/kenya-arms.svg", design: "Two lions holding spears and a traditional East African shield in the national colours, on a compartment representing Mount Kenya, over a scroll reading Harambee.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     { id: "ke-passport", category: "passport", name: "Passport of Kenya", path: "national-flags/ke/ke-passport.webp", design: "The cover of the Kenya passport.", source: "https://gicg.net/passport/ke/" },
-    { id: "ke-football-crest", category: "footballcrest", name: "Crest of the Kenya national football team", path: "national-flags/ke/ke-football-crest.svg", design: "The crest of the Kenya national football team.", source: "https://en.wikipedia.org/wiki/Football_Kenya_Federation" },
+    { id: "ke-football-crest", category: "footballcrest", name: "Crest of the Kenya national football team", path: "national-flags/ke/ke-football-crest.svg", design: "The crest of the Football Kenya Federation — a black-and-red ring lettered “Football Kenya” over a green “Federation” banner, with two gold lions holding red spears flanking a football.", source: "https://en.wikipedia.org/wiki/Football_Kenya_Federation" },
   ],
   "KG": [
     { id: "kg-official-national", category: "official", name: "Flag of Kyrgyzstan", from: 1992, to: 9999, primary: true, path: "flags/kg.svg", design: "The national flag, adopted in 1992 (the sun's rays were straightened in 2023).", source: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
@@ -1258,7 +1258,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lb-jack", category: "maritime", name: "Naval jack of Lebanon", from: 1950, to: 9999, path: "national-flags/lb/lb-jack.svg", design: "The naval jack of Lebanon, the national flag in a square field.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
     { id: "lb-arms", category: "coatofarms", name: "Coat of arms of Lebanon", path: "national-flags/lb/lb-arms.svg", design: "A red shield crossed by a white diagonal bearing a cedar.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon" },
     { id: "lb-passport", category: "passport", name: "Passport of Lebanon", path: "national-flags/lb/lb-passport.webp", design: "The cover of the Lebanon passport.", source: "https://gicg.net/passport/lb/" },
-    { id: "lb-football-crest", category: "footballcrest", name: "Crest of the Lebanon national football team", path: "national-flags/lb/lb-football-crest.png", design: "The crest of the Lebanon national football team.", source: "https://en.wikipedia.org/wiki/Lebanon_national_football_team" },
+    { id: "lb-football-crest", category: "footballcrest", name: "Crest of the Lebanon national football team", path: "national-flags/lb/lb-football-crest.png", design: "The crest of the Lebanese Football Association — a red circular badge with a green cedar tree and a football, lettered in Arabic and “Lebanon F.A.”.", source: "https://en.wikipedia.org/wiki/Lebanon_national_football_team" },
   ],
   "LC": [
     { id: "lc-official-national", category: "official", name: "Flag of Saint Lucia", from: 1967, to: 9999, primary: true, path: "flags/lc.svg", design: "The national flag, adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
@@ -1381,7 +1381,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "me-president", category: "standard", name: "Standard of the President of Montenegro", from: 2006, to: 9999, path: "national-flags/me/montenegro-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro" },
     { id: "me-arms", category: "coatofarms", name: "Coat of arms of Montenegro", from: 2004, to: 9999, path: "national-flags/me/montenegro-arms.svg", design: "A golden double-headed eagle bearing a shield with a golden lion passant, beneath a crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro" },
     { id: "me-passport", category: "passport", name: "Passport of Montenegro", path: "national-flags/me/me-passport.webp", design: "The cover of the Montenegro passport.", source: "https://gicg.net/passport/me/" },
-    { id: "me-football-crest", category: "footballcrest", name: "Crest of the Montenegro national football team", path: "national-flags/me/me-football-crest.svg", design: "The crest of the Montenegro national football team.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Montenegro" },
+    { id: "me-football-crest", category: "footballcrest", name: "Crest of the Montenegro national football team", path: "national-flags/me/me-football-crest.svg", design: "The crest of the Football Association of Montenegro — a red shield lettered “FS CG”, with a football above and the gold double-headed eagle of Montenegro's coat of arms, bearing a shield with a golden lion, below.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Montenegro" },
   ],
   "MG": [
     { id: "mg-official-national", category: "official", name: "Flag of Madagascar", from: 1958, to: 9999, primary: true, path: "flags/mg.svg", design: "The national flag of Madagascar, adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Madagascar" },
@@ -1651,7 +1651,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "nz-maori", category: "indigenous", name: "Tino Rangatiratanga (Māori flag)", from: 1990, to: 9999, path: "national-flags/nz/nz-maori.svg", design: "A black upper field and red lower field divided by a white koru.", source: "https://en.wikipedia.org/wiki/Tino_Rangatiratanga_flag" },
     { id: "nz-arms", category: "coatofarms", name: "Coat of arms of New Zealand", from: 1956, to: 9999, path: "national-flags/nz/nz-arms.svg", design: "A shield of the Southern Cross, a fleece, a wheat sheaf, crossed hammers and three ships, borne by a European woman with the flag and a Māori rangatira with a taiaha, crowned by St Edward's Crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_New_Zealand" },
     { id: "nz-passport", category: "passport", name: "Passport of New Zealand", path: "national-flags/nz/nz-passport.webp", design: "The cover of the New Zealand passport.", source: "https://gicg.net/passport/nz/" },
-    { id: "nz-football-crest", category: "footballcrest", name: "Crest of the New Zealand national football team", path: "national-flags/nz/nz-football-crest.svg", design: "The crest of the New Zealand national football team.", source: "https://en.wikipedia.org/wiki/New_Zealand_men's_national_football_team" },
+    { id: "nz-football-crest", category: "footballcrest", name: "Crest of the New Zealand national football team", path: "national-flags/nz/nz-football-crest.svg", design: "The crest of the New Zealand men's national football team — a black silver fern frond.", source: "https://en.wikipedia.org/wiki/New_Zealand_men's_national_football_team" },
   ],
   "OM": [
     { id: "om-official-national", category: "official", name: "Flag of Oman", from: 1995, to: 9999, primary: true, path: "flags/om.svg", design: "The national flag of Oman, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
@@ -1947,7 +1947,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "si-president", category: "standard", name: "Flag of the President of Slovenia", from: 1991, to: 9999, path: "national-flags/si/slovenia-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Slovenian_flags" },
     { id: "si-arms", category: "coatofarms", name: "Coat of arms of Slovenia", from: 1991, to: 9999, path: "national-flags/si/slovenia-arms.svg", design: "Mount Triglav in white on blue above two wavy lines, beneath three golden six-pointed stars, on a red-bordered shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia" },
     { id: "si-passport", category: "passport", name: "Passport of Slovenia", path: "national-flags/si/si-passport.webp", design: "The cover of the Slovenia passport.", source: "https://gicg.net/passport/si/" },
-    { id: "si-football-crest", category: "footballcrest", name: "Crest of the Slovenia national football team", path: "national-flags/si/si-football-crest.svg", design: "The crest of the Slovenia national football team.", source: "https://en.wikipedia.org/wiki/Slovenia_national_football_team" },
+    { id: "si-football-crest", category: "footballcrest", name: "Crest of the Slovenia national football team", path: "national-flags/si/si-football-crest.svg", design: "The crest of the Football Association of Slovenia — a shield-shaped badge with green football-pattern rings and Slovenia's own national coat of arms (Mount Triglav over wavy blue lines and three gold six-pointed stars), lettered “Slovenija” and “NZS”.", source: "https://en.wikipedia.org/wiki/Slovenia_national_football_team" },
   ],
   "SK": [
     { id: "sk-official-national", category: "official", name: "Flag of Slovakia", from: 1992, to: 9999, primary: true, path: "flags/sk.svg", design: "The national flag of Slovakia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovakia" },
@@ -2111,7 +2111,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tn-president", category: "standard", name: "Presidential Standard of Tunisia", from: 1999, to: 9999, path: "national-flags/tn/tunisia-president.svg", design: "The national flag charged with the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Tunisian_flags" },
     { id: "tn-arms", category: "coatofarms", name: "Coat of arms of Tunisia", from: 1963, to: 9999, path: "national-flags/tn/tunisia-arms.svg", design: "A shield in three parts — a Carthaginian galley above, a scale and a lion holding a scimitar below — beneath a crescent and star, over the national motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia" },
     { id: "tn-passport", category: "passport", name: "Passport of Tunisia", path: "national-flags/tn/tn-passport.webp", design: "The cover of the Tunisia passport.", source: "https://gicg.net/passport/tn/" },
-    { id: "tn-football-crest", category: "footballcrest", name: "Crest of the Tunisia national football team", path: "national-flags/tn/tn-football-crest.png", design: "The crest of the Tunisia national football team.", source: "https://en.wikipedia.org/wiki/Tunisia_national_football_team" },
+    { id: "tn-football-crest", category: "footballcrest", name: "Crest of the Tunisia national football team", path: "national-flags/tn/tn-football-crest.png", design: "The crest of the Fédération Tunisienne de Football — a red circular badge with a white spread-winged eagle over the crescent-and-star of the national flag and a grey star above, lettered in Arabic and “Fédération Tunisienne de Football”.", source: "https://en.wikipedia.org/wiki/Tunisia_national_football_team" },
   ],
   "TO": [
     { id: "to-official-national", category: "official", name: "Flag of Tonga", from: 1875, to: 9999, primary: true, path: "flags/to.svg", design: "The national flag, adopted with the constitution of 1875.", source: "https://en.wikipedia.org/wiki/Flag_of_Tonga" },
@@ -2600,6 +2600,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_United_Arab_Emirates" },
     ],
   },
+  "ae-football-crest": {
+    description: "The colours are the Pan-Arab colours carried on the UAE's own national flag: red for energy and the sacrifices made for the nation, green for growth and prosperity, white for peace and purity, and black for dignity — colours shared with flags across the Arab world to express Arab sovereignty and unity.",
+    sources: [
+      { title: "Flag of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates" },
+    ],
+  },
   "ag-arms": {
     description: "A stylised sugar mill on a blue-and-white sea sits beneath the rising sun of the flag, for the sugar trade the islands were built on. Two deer support the shield for the wildlife, and a pineapple — the fruit Antigua is famous for — crowns it, flanked by hibiscus, sugarcane and the century plant. The motto reads “Each Endeavouring, All Achieving.”",
     sources: [
@@ -2626,6 +2632,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "am-arms": {
     description: "At the centre of the shield stands Mount Ararat with Noah's Ark on its summit — by tradition the ark came to rest there after the flood, and Ararat is the national symbol, though it has lain outside Armenia's borders since 1921. Around it are the emblems of four historic Armenian dynasties: the Bagratuni, the Arsacid, the Artaxiad and the Rubenid of Cilicia. The two supporters carry those dynasties too: the eagle was the emblem of the Artaxiads and later the Arsacids, the lion of the Bagratunis and later the Rubenids, and both animals were chosen for power, courage, patience, wisdom and nobility. The arms date in this form from the First Republic of 1918, whose version drew the eagle and lion with their tongues out.",
+    sources: [
+      { title: "Coat of arms of Armenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Armenia" },
+    ],
+  },
+  "am-football-crest": {
+    description: "The red peak evokes Mount Ararat, Armenia's most sacred national symbol: the mountain where, by tradition, Noah's Ark came to rest after the Flood, and the centrepiece of Armenia's own national coat of arms — even though the mountain itself lies across the border in Turkey. Հ Ֆ Ֆ is the federation's own initials in Armenian, Հայաստանի Ֆուտբոլի Ֆեդերացիա (Football Federation of Armenia).",
     sources: [
       { title: "Coat of arms of Armenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Armenia" },
     ],
@@ -3443,6 +3455,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Israel" },
     ],
   },
+  "il-football-crest": {
+    description: "The Star of David (Magen David) is Israel's own national symbol, carried on its flag, and one of the most widely recognised marks of Jewish identity — first adopted as an emblem of the Zionist movement at the First Zionist Congress in 1897. Interlacing it with a globe reads as the game's own worldwide reach.",
+    sources: [
+      { title: "Star of David — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_of_David" },
+    ],
+  },
   "im-arms": {
     description: "The triskelion — three armoured running legs joined at the thigh — has stood for Mann since the late 13th century, appearing after Scotland took the island in 1265; scholars link it to the three-legged emblem of Sicily, perhaps carried north through the royal houses of Scotland and Sicily. The Latin motto Quocunque Jeceris Stabit — 'whichever way you throw it, it will stand' — plays on the figure's balance: however it falls, a leg is always planted. It first appeared on the island's coinage in 1668. The peregrine falcon recalls the pair of falcons the Lords of Mann rendered to English kings at their coronation. The present arms were granted by Queen Elizabeth II on 12 July 1996.",
     sources: [
@@ -3492,6 +3510,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Iran" },
     ],
   },
+  "ir-football-crest": {
+    description: "The green-white-red repeats Iran's own national flag, and the red emblem on the white stripe is the flag's own central symbol: a stylised rendering of the word “Allah”, made of four crescents and a sword beneath a shaddah mark, adopted after the 1979 Islamic Revolution to replace the former Lion and Sun emblem associated with the monarchy.",
+    sources: [
+      { title: "Flag of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
+    ],
+  },
   "is-arms": {
     description: "These are the only national arms in the world with FOUR supporters, and each is a specific creature from a specific text: the landvættir, the four guardian spirits of Iceland as Snorri Sturluson describes them in Heimskringla — a bull on the shield's right, a giant on its left, a vulture above the bull and a dragon above the giant, each guarding one quarter of the island. They stand on a block of columnar basalt, the island's own rock. The shield itself repeats the flag. Iceland's arms have changed with its status: a crowned stockfish around 1500, a white falcon from 1903, and the landvættir from 12 February 1919, first for the kingdom under the Danish crown and then for the republic.",
     sources: [
@@ -3535,6 +3559,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Jordan — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jordan" },
     ],
   },
+  "jo-football-crest": {
+    description: "The seven-pointed star and the black-white-green-red colours are the same as on Jordan's own national flag: the colours are the Pan-Arab colours of the 1916 Arab Revolt, and the star's seven points stand for the unity of the Arab peoples and, in a religious reading, the seven verses of Al-Fatiha, the opening chapter of the Quran.",
+    sources: [
+      { title: "Flag of Jordan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
+    ],
+  },
   "jp-arms": {
     description: "Japan has no coat of arms in the European sense; what stands in its place is a mon, a family crest. The sixteen-petal chrysanthemum is the crest of the Imperial House, used by the emperor since the thirteenth century and reserved by law to the imperial family — which is why other members of the family use a fourteen-petal or single-petal version rather than this one. It appears on Japanese passports and on the Order of the Chrysanthemum, so the state’s outward emblem is the dynasty’s crest rather than an emblem of its republican-style institutions. The government separately uses a paulownia crest, the Government Seal, for the cabinet and prime minister.",
     sources: [
@@ -3556,6 +3586,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ke-arms": {
     description: "The two lions are protection; the shield and the spears they hold are unity and the defence of freedom, and the shield carries the national colours — black for the people of Kenya, red for the blood shed in the struggle for independence, green for the land and its natural wealth, and the white fimbriations for peace and unity. The compartment beneath represents Mount Kenya itself, with the country's produce growing on it. The scroll carries the motto Harambee, Swahili for \"pulling together\" — all for one.",
+    sources: [
+      { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
+    ],
+  },
+  "ke-football-crest": {
+    description: "The two lions and spears are drawn from Kenya's own national coat of arms: the lions stand for protection, and the spears for the unity and defence of freedom won at independence in 1963.",
     sources: [
       { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
@@ -3643,6 +3679,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms carry the same device as the flag, arranged across a red shield: a white bend bearing a green cedar of Lebanon (Cedrus libani). The cedar is the country's oldest and most persistent emblem — the biblical “cedars of God,” a symbol of holiness, endurance and peace — and it became the prominent national symbol during the French mandate. The white recalls peace and the snow of the mountains; the red, the sacrifice of those who defended the country.",
     sources: [
       { title: "Coat of arms of Lebanon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon" },
+    ],
+  },
+  "lb-football-crest": {
+    description: "The cedar is the Cedar of Lebanon carried on the country's own national flag: a tree native to Lebanon's mountains, mentioned scores of times in the Bible as a symbol of strength and divine blessing, and adopted as a national emblem standing for immortality, steadfastness and hope across Lebanon's religious communities.",
+    sources: [
+      { title: "Flag of Lebanon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
     ],
   },
   "lc-arms": {
@@ -3751,6 +3793,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "me-arms": {
     description: "The double-headed eagle is of Byzantine and ultimately Roman origin, and here stands for the close bond of church and state that defined Montenegro under its prince-bishops, the vladikas. On the breast shield the golden lion passant is a sign of episcopal authority, read as a figure of the Lion of Judah. The crown is that of the Petrović-Njegoš dynasty that ruled Montenegro — its inclusion was mildly controversial when the arms were adopted in 2004, since the country is now a secular republic; the modern design put the lion back on the shield in place of the earlier rulers' initials.",
+    sources: [
+      { title: "Coat of arms of Montenegro — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro" },
+    ],
+  },
+  "me-football-crest": {
+    description: "The double-headed eagle and the lion are both Montenegro's own state coat of arms: the eagle is of Byzantine origin (its current layout adapted from Imperial Russia's, reflecting the historic ties between Montenegro's ruling Petrović-Njegoš dynasty and Russia), while the lion — read as a Lion of Judah figure — marks the centuries when Montenegro's prince-bishops held both religious and political authority. FS CG is the federation's own initials, Fudbalski savez Crne Gore.",
     sources: [
       { title: "Coat of arms of Montenegro — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro" },
     ],
@@ -3978,6 +4026,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield reads the country's making: the four stars of the Southern Cross, a golden fleece for wool, a wheat sheaf for farming, crossed hammers for mining, and three ships down the centre for sea trade and the immigrant character of New Zealanders. The supporters embody its bicultural identity — a European woman holding the national flag and a Māori rangatira bearing a taiaha. St Edward's Crown marks the monarchy, and silver fern fronds flank the “New Zealand” scroll. Granted in 1911 and revised to the present form in 1956.",
     sources: [
       { title: "Coat of arms of New Zealand — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_New_Zealand" },
+    ],
+  },
+  "nz-football-crest": {
+    description: "The silver fern has marked New Zealand sporting teams since the 1888–89 New Zealand Native rugby team's tour of Britain, and was carried by New Zealand's expeditionary forces in both World Wars — it is engraved on the Commonwealth war graves of fallen New Zealand soldiers. It is shared today across the country's national teams, including the women's football side, the Football Ferns.",
+    sources: [
+      { title: "Silver fern — Wikipedia", url: "https://en.wikipedia.org/wiki/Silver_fern" },
     ],
   },
   "om-emblem": {
@@ -4210,6 +4264,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Slovenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia" },
     ],
   },
+  "si-football-crest": {
+    description: "Mount Triglav, Slovenia's highest peak, and the wavy lines below it — read as the Triglav Lakes Valley, the Slovene coastline and the country's rivers — are both drawn from Slovenia's own national coat of arms, along with the three gold six-pointed stars, taken from the historical arms of the Counts of Celje and read as a symbol of democracy. NZS is the federation's own initials, Nogometna zveza Slovenije (Football Association of Slovenia).",
+    sources: [
+      { title: "Coat of arms of Slovenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia" },
+    ],
+  },
   "sk-arms": {
     description: "The emblem runs through three periods that follow on from each other — Byzantine (6th–12th centuries), Hungarian (12th–20th) and Slovak (19th–20th). The double cross came into the region's heraldry from Byzantium and is read in modern interpretation as Slovakia standing heir and guardian to the Christian tradition. The three peaks it stands on are the mountain ranges Tatra, Mátra and Fátra, which stood for the northern mountainous part of the Kingdom of Hungary — the Tatra and the Fátra lie in present-day Slovakia. The current drawing was made in 1990 by the painter Ladislav Čisárik and the heraldist Ladislav Vrtel, commissioned after the Velvet Revolution.",
     sources: [
@@ -4341,6 +4401,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Each of the three parts carries one word of the national motto. The Carthaginian galley sailing in the upper field is freedom — and reaches back past the modern state to Carthage itself. Below, the black scale is justice, and the black lion grasping a silver scimitar is order. The banner spells the three out: Freedom, Order, Justice. The law of 30 May 1963 rewrote the arms of the beylik that preceded them, removing the beylical spears and banners, swapping the positions of the scales and the lion, making the field uniformly gold, and changing the order of the motto.",
     sources: [
       { title: "Coat of arms of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia" },
+    ],
+  },
+  "tn-football-crest": {
+    description: "The eagle gives the Tunisia national team its own nickname, the Eagles of Carthage, after the ancient Phoenician city-state on the same coast. The crescent and star beneath it are the same emblem carried on Tunisia's national flag: read together as marking the unity of Muslims and the Five Pillars of Islam, though the crescent's use on this coast predates Islam, having first been emblazoned on the standards and buildings of Punic Carthage itself.",
+    sources: [
+      { title: "Tunisia national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Tunisia_national_football_team" },
+      { title: "Flag of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
     ],
   },
   "to-arms": {
