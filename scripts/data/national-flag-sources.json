@@ -1135,10 +1135,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/b7/Austria_national_football_team_crest.svg",
           "file": "at/at-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Austria national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Austria_national_football_team_crest.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Austria national football team.",
+          "design": "The crest of the Austria national football team — a black spread eagle bearing a red-white-red shield on its chest, above a football, ringed by “ÖFB” lettering and “Seit … 1904”.",
           "source": "https://en.wikipedia.org/wiki/Austria_national_football_team",
           "sha256": "7d06addcaf980412b3d3e4260877cc9adda12e22a31f315be31c466d07586246",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The eagle is the same black eagle used on Austria's own state coat of arms. Its multi-pronged wings are read as standing for the unity of the ÖFB's nine regional football associations together with the professional league — the ten member bodies that together make up Austrian football. The chest shield repeats the national red-white-red colours, and “Seit 1904” marks the year the Österreichischer Fußball-Bund was founded.",
+            "sources": [
+              {
+                "title": "Austria National Football Team Logo and symbol, meaning, history — 1000 Logos",
+                "url": "https://1000logos.net/austria-national-football-team-logo/"
+              },
+              {
+                "title": "Austrian Football Association logo – History & Meaning — logotyp.us",
+                "url": "https://logotyp.us/logo/ofb/"
+              }
+            ]
+          }
         }
       ]
     },
@@ -2378,10 +2391,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/1/11/Bgnatcrest.png",
           "file": "bg/bg-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Bulgaria national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Bgnatcrest.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Bulgaria national football team.",
+          "design": "The crest of the Bulgaria national football team — a red shield bearing the gold crowned lion rampant from Bulgaria's coat of arms, ringed by a gold laurel wreath.",
           "source": "https://en.wikipedia.org/wiki/Bulgaria_national_football_team",
           "sha256": "2b026d8ab67289e6eadcb2fe07e00b73d16181f1790f5e4e62088dad48b018b6",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The gold crowned lion rampant is Bulgaria's own state symbol — lion imagery has marked Bulgarian rule since at least the Chatalar Inscription of 815–834 AD, and the emblem was preserved as a sign of national identity even through Ottoman rule after 1396. On the national coat of arms the lion stands for the independence and sovereignty of the Bulgarian people and state; the gold laurel wreath framing the badge is the ordinary heraldic mark of honour and victory.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bulgaria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -6101,10 +6123,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/7/76/Czech_Republic_national_football_team_logo.svg",
           "file": "cz/cz-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Czechia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Czech_Republic_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Czechia national football team.",
+          "design": "The crest of the Czechia national football team — a red shield bearing the white double-tailed crowned lion of Bohemia, under a narrow blue-white-red band.",
           "source": "https://en.wikipedia.org/wiki/Czechia_national_football_team",
           "sha256": "fa9e2b5b18efc736b50781e7baeb94c5ea2e07a6ec1eae4c6c77b7e3f362d3d6",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The silver double-tailed crowned lion is the Bohemian lion — the arms of the medieval Kingdom of Bohemia and today the senior element of the Czech Republic's own coat of arms. It dates to the 12th century, when Holy Roman Emperor Frederick I granted Duke Vladislaus II a silver lion on red to mark his valour in battle; a second tail was added later, according to legend, to commemorate King Přemysl Otakar I's help fighting the Saxons. The narrow band above is simply the blue-white-red of the national flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Czech Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic"
+              }
+            ]
+          }
         }
       ]
     },
@@ -7082,7 +7113,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/a/a2/Estonian_Football_Association_logo.svg",
           "file": "ee/ee-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Estonia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Estonian_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Estonia national football team.",
+          "design": "The crest of the Estonian Football Association (Eesti Jalgpalli Liit) — a dark blue circle bearing a white multi-pointed star, ringed by the association's own name in white lettering on a lighter blue band.",
           "source": "https://en.wikipedia.org/wiki/Estonian_Football_Association",
           "sha256": "fda2120ea7461264ad2e76283919dcaf77c6325f89eb529167a6d16689fa87a6",
           "fetched": "2026-08-18"
@@ -7860,10 +7891,19 @@
           "name": "Crest of the Finland national football team",
           "commons": "Finland national football team crest.png",
           "file": "fi/fi-football-crest.png",
-          "design": "The crest of the Finland national football team.",
+          "design": "The crest of the Finland national football team — a gold-outlined shield, white with a blue Nordic cross echoing the national flag, lettered “Suomi” across the top.",
           "source": "https://en.wikipedia.org/wiki/Finland_national_football_team",
           "sha256": "3e078661db146de358ddb616366b00087968d5ddb79521b254532ccd56eb7727",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The blue Nordic cross on white repeats Finland's own national flag, adopted in 1918 after independence from Russia; its cross shape follows the same Scandinavian tradition shared with Sweden, Norway and Denmark. Blue is popularly read as the country's lakes and sky, white as the snow that covers the land in winter. “Suomi” is simply the Finnish name for Finland.",
+            "sources": [
+              {
+                "title": "Flag of Finland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Finland"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -9571,10 +9611,19 @@
           "name": "Crest of the Greece national football team",
           "commons": "Greece National Football Team.svg",
           "file": "gr/gr-football-crest.svg",
-          "design": "The crest of the Greece national football team.",
+          "design": "The crest of the Greece national football team — a dark blue badge lettered “Ελλάς” (Hellas), with a white cross above vertical white stripes echoing the national flag.",
           "source": "https://en.wikipedia.org/wiki/Greece_national_football_team",
           "sha256": "58067bb94c84b83087b348b9680d11c43d6828a6d600a854d268b3718e0e7ca5",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "“Ελλάς” (Hellas) is Greece's own name for itself. The white cross is the same Christian cross carried on the canton of the Greek flag, and the stripes echo the flag's nine alternating blue-and-white bands — popularly said to mark the nine syllables of the revolutionary motto “Ελευθερία ή Θάνατος” (“Freedom or Death”), though this reading has no official status; the colours are otherwise read simply as the blue of the Greek sky and sea.",
+            "sources": [
+              {
+                "title": "Flag of Greece — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Greece"
+              }
+            ]
+          }
         }
       ]
     },
@@ -10618,10 +10667,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/9/9b/Hungarian_Football_Federation_logo.svg",
           "file": "hu/hu-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Hungary national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Hungarian_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Hungary national football team.",
+          "design": "The crest of the Hungarian Football Federation — a green ring lettered “Magyar Labdarúgó Szövetség” and “1901”, enclosing red-and-white stripes and a double cross on a green triple mound from Hungary's coat of arms, over a football.",
           "source": "https://en.wikipedia.org/wiki/Hungary_Football_Federation",
           "sha256": "d77067ad82ce87bc086e9b1c4dcac410f9d548c1f54cbe05402be0597bfc4ec5",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The red-and-silver stripes and the double (patriarchal) cross on a green triple mound are both drawn from Hungary's own state coat of arms. The stripes are the Árpád stripes, tied to Hungary's founding dynasty and popularly read as the country's four great rivers — the Danube, Tisza, Dráva and Száva; the cross recalls the Christian kingdom founded by Saint Stephen in the year 1000, standing on three hills read as the Tátra, Mátra and Fátra mountain ranges. 1901 is the year the Magyar Labdarúgó Szövetség was founded.",
+            "sources": [
+              {
+                "title": "Coat of arms of Hungary — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary"
+              }
+            ]
+          }
         }
       ]
     },
@@ -14568,10 +14626,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/8/89/Badge_of_Lithuania_national_football_teams.png",
           "file": "lt/lt-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Lithuania national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Badge_of_Lithuania_national_football_teams.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Lithuania national football team.",
+          "design": "The crest of the Lithuania national football team — a gold line-art badge combining a horse's head with a small shield bearing a double cross, evoking the Vytis (mounted knight) of Lithuania's coat of arms, over “Lietuva” lettering.",
           "source": "https://en.wikipedia.org/wiki/Lithuania_national_football_team",
           "sha256": "a40c144b1d8744f9bfaaa56d075155523a43c96684f580c15849f95f805802af",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The knight and shield are a stylised Vytis — the armoured, sword-bearing knight of Lithuania's own coat of arms — carrying the double “Jagiellonian” cross adopted after Grand Duke Jogaila's baptism and 1386 marriage into the Polish crown. Read for centuries as the country's ruler or defender, the image took on a new meaning during Lithuania's 19th–20th century independence movements: a knight chasing invaders from his native land. “Lietuva” is simply the Lithuanian name for Lithuania.",
+            "sources": [
+              {
+                "title": "Vytis — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Vytis"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -14836,7 +14903,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/7/7b/Latvia_national_team_logo.png",
           "file": "lv/lv-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Latvia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Latvia_national_team_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Latvia national football team.",
+          "design": "The crest of the Latvian Football Federation (Latvijas Futbola federācija) — “Latvija” lettering over a band of traditional Latvian geometric ornament, above a crimson shield-shaped badge bearing a stylised white football and wing motif.",
           "source": "https://en.wikipedia.org/wiki/Latvia_national_football_team",
           "sha256": "6ee350371812f1f4608af241795dabe92cb798af27aab218c7ffa2905230a139",
           "fetched": "2026-08-18"
@@ -18281,10 +18348,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/6/6c/Norway_national_football_team_logo.svg",
           "file": "no/no-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Norway national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Norway_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Norway national football team.",
+          "design": "The crest of the Norway national football team — a shield in the red field and blue-white Nordic cross of Norway's flag, topped by two confronted gold lions from Norway's coat of arms flanking a circular “NFF” monogram, lettered “Norge”.",
           "source": "https://en.wikipedia.org/wiki/Norway_national_football_team",
           "sha256": "379032fd930912bf14cd7bfdfe66bd14f15c60b1a1dc958357ac39dcce1083ac",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The shield's red field and blue-and-white cross repeat Norway's own national flag. The two confronted gold lions above are drawn from the crowned lion of Norway's state coat of arms, long a mark of royal authority. Framing the federation's own “NFF” monogram, the crest — introduced in 2014 by the Oslo agency Scandinavian Design Group — was designed around the Norwegian expression “å spille med flagget på brystet”, to play with the flag on your chest.",
+            "sources": [
+              {
+                "title": "New Norway Crest Unveiled — Footy Headlines",
+                "url": "https://www.footyheadlines.com/2014/12/new-norway-crest-unveiled.html"
+              }
+            ]
+          }
         }
       ]
     },
@@ -20691,10 +20767,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/ef/Romania_national_football_team_logo.svg",
           "file": "ro/ro-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Romania national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Romania_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Romania national football team.",
+          "design": "The crest of the Romania national football team — a shield lettered “România”, quartered with a crowned eagle, an aurochs head with a star between its horns, a lion emerging from an arch, and a second eagle, around a central football.",
           "source": "https://en.wikipedia.org/wiki/Romania_national_football_team",
           "sha256": "687772bee32c31008b8f3d8a55e725fc717c61bc53f29e20a24ac9bd3860fde3",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The quarters are drawn from Romania's historical coat of arms, each standing for one of the country's constituent regions: a crowned eagle for Wallachia; an aurochs head with a star between its horns for Moldavia; a lion emerging from an arched bridge — Trajan's Bridge over the Danube — for Oltenia and Banat; and a second eagle for Transylvania. “România” is simply the country's own name.",
+            "sources": [
+              {
+                "title": "Coat of arms of Romania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania"
+              }
+            ]
+          }
         }
       ]
     },
@@ -24924,10 +25009,19 @@
           "name": "Crest of the Ukraine national football team",
           "commons": "Logo Fédération Ukraine Football 2016.svg",
           "file": "ua/ua-football-crest.svg",
-          "design": "The crest of the Ukraine national football team.",
+          "design": "The crest of the Ukraine national football team — the blue-and-gold trident (tryzub) of Ukraine's coat of arms, with a football set at its base, over “Ukraine” lettering.",
           "source": "https://en.wikipedia.org/wiki/Ukraine_national_football_team",
           "sha256": "17c28af7acf2300efa27a2a14929e307a522733255bdff337941f660c8602f84",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The trident (tryzub) is Ukraine's own state coat of arms. Its earliest known form appears on the seals and coins of the Kyivan Rus' ruler Volodymyr the Great around the year 1000; historians have proposed it may originally have depicted a falcon, an anchor, a bow or the Holy Trinity, and some theories trace it to Khazar rather than purely Ukrainian origins. It was first adopted as a national emblem by the short-lived Ukrainian People's Republic on 25 February 1918, and was readopted as Ukraine's coat of arms on 19 February 1992, after independence.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ukraine — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine"
+              }
+            ]
+          }
         }
       ],
       "independence": {
