@@ -3470,6 +3470,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
     ],
   },
+  "cz-armed-forces": {
+    description: "The war flag bears the quartered arms of the Czech Republic — Bohemia's silver double-tailed crowned lion on red, Moravia's silver-and-red chequered eagle on blue, and Silesia's black eagle bearing a silver crescent on its breast, on gold — within a border of white, red and blue \"flames\"; the blue was added to Czechoslovakia's original white-over-red Bohemian flag in 1920, both for Moravia's own arms and as the third Pan-Slavic colour, so the flag would no longer be almost identical to Poland's.",
+    sources: [
+      { title: "Czech Military Colors — Flags of the World", url: "https://www.crwflags.com/fotw/flags/cz%5Ecolor.html" },
+    ],
+  },
   "cz-president": {
     description: "The motto \"Pravda vítězí\" (\"Truth prevails\") was adopted by Czechoslovakia's first president, Tomáš Garrigue Masaryk, in 1918, tracing back to the teachings of the medieval reformer Jan Hus, and remains the motto of the Czech presidency today.",
     sources: [
@@ -3579,6 +3585,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Dominican Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic" },
     ],
   },
+  "dz-naval-ensign": {
+    description: "A vertical green-and-white bicolour bears the red crescent and five-pointed star of the national flag — symbolising Islamic heritage and the sacrifice of Algeria's war of independence, and drawing on the 19th-century standard of Emir Abdelkader and the earlier flag of the Regency of Algiers — overlaid in the canton with two crossed fouled anchors, changed from red to white in the 2004 redesign of the ensign.",
+    sources: [
+      { title: "Flag of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
+    ],
+  },
   "dz-emblem": {
     description: "The emblem is a landscape read as a programme. The crescent that encircles it is the same crescent as on the national flag, and is the symbol of Islam. The hand of Fatima at the centre is a traditional protective symbol of the region; behind it stand the Atlas Mountains, the country's own geography, and above them a rising sun for a new era. The buildings at the foot stand for industry and the plants for agriculture — the two things the independent state set out to build. The present form, with the motto in Arabic rather than French, was adopted on 1 November 1976.",
     sources: [
@@ -3667,6 +3679,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The four quarters are the historic arms of the medieval kingdoms whose union formed Spain: a gold tower for Castile, a red lion for León, four red bars for Aragon, and gold chains for Navarre.",
     sources: [
       { title: "History of the coat of arms of Spain — Fascinating Spain", url: "https://www.fascinatingspain.com/articulo/spanish-culture/history-of-the-coat-of-arms-of-spain/20200722101903070410.html" },
+    ],
+  },
+  "es-yacht": {
+    description: "The national flag is charged with a plain, all-blue royal crown in place of the elaborate crown on Spain's state and war ensigns — a deliberately simplified mark, set by a 1945 decree and continued in the 1977 regulation that still governs it today, whose plainness distinguishes the yacht ensign flown by private pleasure craft from the ensigns reserved for state vessels and the navy.",
+    sources: [
+      { title: "Yacht ensign (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es~yacht.html" },
     ],
   },
   "es-royal": {

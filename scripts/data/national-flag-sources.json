@@ -6779,7 +6779,16 @@
           "from": 2004,
           "to": 9999,
           "sha256": "6ba31ee0c28923ee7a7eb7e998a5446f2a0758f9bda85d94e96db72377194454",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The war flag bears the quartered arms of the Czech Republic — Bohemia's silver double-tailed crowned lion on red, Moravia's silver-and-red chequered eagle on blue, and Silesia's black eagle bearing a silver crescent on its breast, on gold — within a border of white, red and blue \"flames\"; the blue was added to Czechoslovakia's original white-over-red Bohemian flag in 1920, both for Moravia's own arms and as the third Pan-Slavic colour, so the flag would no longer be almost identical to Poland's.",
+            "sources": [
+              {
+                "title": "Czech Military Colors — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/cz%5Ecolor.html"
+              }
+            ]
+          }
         },
         {
           "id": "cz-arms",
@@ -7485,7 +7494,16 @@
           "design": "The naval ensign of the Algerian National Navy.",
           "source": "https://en.wikipedia.org/wiki/List_of_Algerian_flags",
           "sha256": "d14f2051b13b4acb48e55360251e158075183499e09a732341aaad7009863c0e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A vertical green-and-white bicolour bears the red crescent and five-pointed star of the national flag — symbolising Islamic heritage and the sacrifice of Algeria's war of independence, and drawing on the 19th-century standard of Emir Abdelkader and the earlier flag of the Regency of Algiers — overlaid in the canton with two crossed fouled anchors, changed from red to white in the 2004 redesign of the ensign.",
+            "sources": [
+              {
+                "title": "Flag of Algeria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Algeria"
+              }
+            ]
+          }
         },
         {
           "id": "dz-naval-jack",
@@ -8398,7 +8416,16 @@
           "design": "The national flag charged with a plain blue royal crown.",
           "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
           "sha256": "2645332dd438f7cf8d5fcad1d63c5636d2d563ab5c26efd7c60ddaa5cf3ba9f0",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The national flag is charged with a plain, all-blue royal crown in place of the elaborate crown on Spain's state and war ensigns — a deliberately simplified mark, set by a 1945 decree and continued in the 1977 regulation that still governs it today, whose plainness distinguishes the yacht ensign flown by private pleasure craft from the ensigns reserved for state vessels and the navy.",
+            "sources": [
+              {
+                "title": "Yacht ensign (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es~yacht.html"
+              }
+            ]
+          }
         },
         {
           "id": "es-royal",
