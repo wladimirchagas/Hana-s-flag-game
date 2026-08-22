@@ -2737,6 +2737,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Australian flags — Department of the Prime Minister and Cabinet", url: "https://www.pmc.gov.au/government/australian-national-symbols/australian-flags" },
     ],
   },
+  "au-royal": {
+    description: "The banner reproduces Australia's national coat of arms, whose kangaroo and emu supporters — both unable to walk backwards — represent a nation moving only forward; its shield, quartered with the six states' own badges under an ermine border, represents the states unified under one federation.",
+    sources: [
+      { title: "Coat of arms of Australia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
+    ],
+  },
   "au-arms": {
     description: "The shield is the federation itself: six quarters, one for each state’s badge, bound together by an ermine border that stands for the encompassing authority of the Crown and makes the six read as one device rather than six separate emblems. Above it the seven-pointed Commonwealth Star repeats the point — six points for the states and a seventh for the territories. The kangaroo and emu were chosen as supporters as native animals commonly said to be unable to walk backwards, and so read as a country that only moves forward; behind the shield is golden wattle, the national floral emblem.",
     sources: [
@@ -3073,6 +3079,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo" },
     ],
   },
+  "ch-civil-ensign": {
+    description: "Switzerland's national flag is square on land, but Swiss-registered ships fly a rectangular 2:3 version instead, standardised by federal law in 1953 to conform with international maritime convention — the same white cross on red, just reshaped for the sea.",
+    sources: [
+      { title: "Flag of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
+    ],
+  },
   "ch-arms": {
     description: "The white couped cross on red is the field sign of the Old Swiss Confederacy, borne by its soldiers and documented as early as 1444. The Federal Council described it in 1889 as at once the Christian cross and the ensign of the old Confederation; that year it fixed the arms of the cross at one-sixth longer than wide. The Diet had adopted the design for the confederal seal in 1815, and it is the same cross the national flag carries.",
     sources: [
@@ -3138,6 +3150,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Flag of Cameroon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" },
       { title: "Cameroon national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Cameroon_national_football_team" },
+    ],
+  },
+  "cn-pla": {
+    description: "The gold star and the characters 八一 (\"eight-one\", for 1 August) commemorate the Nanchang uprising of 1 August 1927, the armed rebellion the Chinese Communist Party marks as the birth of the People's Liberation Army.",
+    sources: [
+      { title: "Flag of the People's Liberation Army — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_People's_Liberation_Army" },
     ],
   },
   "cn-arms": {
@@ -3828,6 +3846,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "New crests revealed for Ireland teams and FAI — RTÉ", url: "https://www.rte.ie/sport/soccer/2023/0309/1361308-new-crests-revealed-for-ireland-teams-and-fai" },
       { title: "Shamrock — Wikipedia", url: "https://en.wikipedia.org/wiki/Shamrock" },
+    ],
+  },
+  "il-civil-ensign": {
+    description: "The Star of David, a widely recognised symbol of the Jewish people formally adopted by the First Zionist Congress in 1897, and the blue of the tallit (Jewish prayer shawl) together mark this ensign, worn by Israeli-flagged merchant ships, as a maritime variant of the national flag's own symbolism.",
+    sources: [
+      { title: "Flag of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
+    ],
+  },
+  "il-naval-ensign": {
+    description: "The Star of David — a widely recognised symbol of the Jewish people formally adopted by the First Zionist Congress in 1897 — and the flag's blue, recalling the tallit (Jewish prayer shawl), mark this ensign for the Israeli Navy just as they do the national flag.",
+    sources: [
+      { title: "Flag of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
     ],
   },
   "il-emblem": {
@@ -4595,6 +4625,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The lion is the Netherlands' national and royal animal, drawn from Dutch heraldry, and has featured on the crest since the team's first international in 1907. Orange is the country's historic national colour, taken from the House of Orange-Nassau, the royal family descended from William the Silent, Prince of Orange — the same tie that gives the team its orange kit. KNVB is the association's own initials, Koninklijke Nederlandse Voetbalbond (Royal Dutch Football Association).",
     sources: [
       { title: "Netherlands national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Netherlands_national_football_team" },
+    ],
+  },
+  "no-war-flag": {
+    description: "The forked swallowtail shape marks this as Norway's state and war flag, distinguishing it from the plain rectangular civil flag flown by private citizens — a distinction inherited via Denmark from a 1625 regulation that reserved the swallow-tailed ensign for the battle fleet.",
+    sources: [
+      { title: "Swallowtail (flag) — Grokipedia", url: "https://grokipedia.com/page/Swallowtail_(flag)" },
     ],
   },
   "no-sami": {
@@ -5480,6 +5516,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The eagle, olive branch and arrows are taken from the Seal of the United States Virgin Islands, itself adapted from the Great Seal of the United States: the eagle represents the United States, the olive branch peace, and the (originally three) arrows the territory's three main islands — Saint Croix, Saint Thomas and Saint John.",
     sources: [
       { title: "Seal of the United States Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_United_States_Virgin_Islands" },
+    ],
+  },
+  "vn-pavn": {
+    description: "The motto \"Quyết thắng\" (\"Determined to win\"), added to the national flag's canton, is a longstanding rallying phrase of Vietnamese military tradition, carried on the People's Army of Vietnam's own flag since its wars for independence and reunification.",
+    sources: [
+      { title: "People's Army of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/People's_Army_of_Vietnam" },
     ],
   },
   "vn-emblem": {

@@ -1367,7 +1367,16 @@
           "design": "A banner of the Australian coat of arms, used by the sovereign in Australia.",
           "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
           "sha256": "939a7065c72465b462a9b6db74ec5cd19e489e1f0ba52f333995566bc84b7a17",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The banner reproduces Australia's national coat of arms, whose kangaroo and emu supporters — both unable to walk backwards — represent a nation moving only forward; its shield, quartered with the six states' own badges under an ermine border, represents the states unified under one federation.",
+            "sources": [
+              {
+                "title": "Coat of arms of Australia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia"
+              }
+            ]
+          }
         },
         {
           "id": "au-gg",
@@ -4833,7 +4842,16 @@
           "design": "The Swiss cross in a rectangular 2:3 ensign — the seagoing form of a flag that is square on land.",
           "source": "https://en.wikipedia.org/wiki/List_of_Swiss_flags",
           "sha256": "a02a3802ada3a96aa399ffd43b38faacd7b2a17076b44d30985d93562c609d21",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Switzerland's national flag is square on land, but Swiss-registered ships fly a rectangular 2:3 version instead, standardised by federal law in 1953 to conform with international maritime convention — the same white cross on red, just reshaped for the sea.",
+            "sources": [
+              {
+                "title": "Flag of Switzerland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Switzerland"
+              }
+            ]
+          }
         },
         {
           "id": "ch-arms",
@@ -5443,7 +5461,16 @@
           "design": "A red field with a gold star and the characters 八一 for 1 August, the date of the 1927 Nanchang uprising.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
           "sha256": "44f234155466c0c662898fbc0c44c1de62a144ca2ba6c438f991db228ac87394",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The gold star and the characters 八一 (\"eight-one\", for 1 August) commemorate the Nanchang uprising of 1 August 1927, the armed rebellion the Chinese Communist Party marks as the birth of the People's Liberation Army.",
+            "sources": [
+              {
+                "title": "Flag of the People's Liberation Army — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_People's_Liberation_Army"
+              }
+            ]
+          }
         },
         {
           "id": "cn-pla-ground",
@@ -11626,7 +11653,16 @@
           "design": "A blue field with a white elongated oval near the hoist bearing a blue Star of David.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
           "sha256": "d338635f27acc6b490efb30b3e8ac0544dc3a920904a563f522e13ee70236246",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Star of David, a widely recognised symbol of the Jewish people formally adopted by the First Zionist Congress in 1897, and the blue of the tallit (Jewish prayer shawl) together mark this ensign, worn by Israeli-flagged merchant ships, as a maritime variant of the national flag's own symbolism.",
+            "sources": [
+              {
+                "title": "Flag of Israel — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Israel"
+              }
+            ]
+          }
         },
         {
           "id": "il-naval-ensign",
@@ -11639,7 +11675,16 @@
           "design": "A blue field with a white triangle at the hoist bearing a blue Star of David.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
           "sha256": "805c6556705dc4181806bc1f90fd6fac558b535902a1740b59cdf8622ce155c9",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Star of David — a widely recognised symbol of the Jewish people formally adopted by the First Zionist Congress in 1897 — and the flag's blue, recalling the tallit (Jewish prayer shawl), mark this ensign for the Israeli Navy just as they do the national flag.",
+            "sources": [
+              {
+                "title": "Flag of Israel — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Israel"
+              }
+            ]
+          }
         },
         {
           "id": "il-president",
@@ -19344,7 +19389,16 @@
           "design": "The national flag in swallow-tailed form, flown by the armed forces.",
           "source": "https://en.wikipedia.org/wiki/List_of_Norwegian_flags",
           "sha256": "050452d31e1ee2ded0838263c297d326e65a034570524eb1e10657aae437c09f",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The forked swallowtail shape marks this as Norway's state and war flag, distinguishing it from the plain rectangular civil flag flown by private citizens — a distinction inherited via Denmark from a 1625 regulation that reserved the swallow-tailed ensign for the battle fleet.",
+            "sources": [
+              {
+                "title": "Swallowtail (flag) — Grokipedia",
+                "url": "https://grokipedia.com/page/Swallowtail_(flag)"
+              }
+            ]
+          }
         },
         {
           "id": "no-naval-jack",
@@ -28321,7 +28375,16 @@
           "design": "The national flag with the words Quyết thắng (\"Determined to win\") in the canton — also the country's war flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
           "sha256": "698af537e87dac4de1b23d59f0cbacf84812abb9614ae6d4fc4cdba77111f49c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The motto \"Quyết thắng\" (\"Determined to win\"), added to the national flag's canton, is a longstanding rallying phrase of Vietnamese military tradition, carried on the People's Army of Vietnam's own flag since its wars for independence and reunification.",
+            "sources": [
+              {
+                "title": "People's Army of Vietnam — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/People's_Army_of_Vietnam"
+              }
+            ]
+          }
         },
         {
           "id": "vn-navy",
