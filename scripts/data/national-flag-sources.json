@@ -848,10 +848,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/8/84/Angolan_Football_Federation_logo.svg",
           "file": "ao/ao-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Angola national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Angolan_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Angola national football team.",
+          "design": "The crest of the Angolan Football Federation — a gold shield with a red border, lettered “Federação Angolana de Futebol”, bearing a black giant sable antelope head over a red football and “F.A.F.”.",
           "source": "https://en.wikipedia.org/wiki/Angola_Football_Federation",
           "sha256": "9379c557671af29e010a63b3633cb1a2a20bc4ce757ffd5438d0a339cb86bd66",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The giant sable antelope (palanca-negra-gigante) is Angola's own national symbol, native only to the region between the Cuango and Luando rivers and portrayed on the country's stamps, banknotes and passports. It gives the national football team its own nickname, the Palancas Negras.",
+            "sources": [
+              {
+                "title": "What is the official animal of Angola? — Geographic FAQ Hub",
+                "url": "https://www.ncesc.com/geographic-faq/what-is-the-official-animal-of-angola/"
+              },
+              {
+                "title": "Angola national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Angola_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -2099,7 +2112,7 @@
           "name": "Crest of the Bangladesh national football team",
           "commons": "Logo of Bangladesh Football Federation.svg",
           "file": "bd/bd-football-crest.svg",
-          "design": "The crest of the Bangladesh national football team.",
+          "design": "The crest of the Bangladesh Football Federation — a blue shield with a Bengali-script monogram, a football wreathed in laurel leaves, lettered “Bangladesh Football Federation”.",
           "source": "https://en.wikipedia.org/wiki/Bangladesh_national_football_team",
           "sha256": "196f57079b4c0f4a41c3c7d4842ee22c56902adea2d4c1ab0a7c5cf800cbf643",
           "fetched": "2026-08-18"
@@ -2315,13 +2328,26 @@
           "id": "bf-football-crest",
           "category": "footballcrest",
           "name": "Crest of the Burkina Faso national football team",
-          "url": "https://upload.wikimedia.org/wikipedia/en/1/15/Association_Sportive_des_Fonctionnaires_de_Bobo.png",
+          "url": "https://upload.wikimedia.org/wikipedia/en/3/3f/Burkinab%C3%A9_Football_Federation_logo.png",
           "file": "bf/bf-football-crest.png",
-          "licenceNote": "Non-free logo. The crest of the Burkina Faso national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Association_Sportive_des_Fonctionnaires_de_Bobo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Burkina Faso national football team.",
-          "source": "https://en.wikipedia.org/wiki/Burkina_Faso_Football_Federation",
-          "sha256": "850b78630bfdd6ad95a7caa49bac9fb8c44ffc25ee56a4a9c642a2d37eafc660",
-          "fetched": "2026-08-18"
+          "licenceNote": "Non-free logo. The crest of the Burkinabé Football Federation is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Burkinab%C3%A9_Football_Federation_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons. CORRECTION (2026-08): the previously bundled file (Association_Sportive_des_Fonctionnaires_de_Bobo.png) was the crest of ASFB, a club from Bobo-Dioulasso, not the national federation — replaced with the federation's own logo.",
+          "design": "The crest of the Burkinabé Football Federation — two confronted white horse heads flanking a football bearing Burkina Faso's national emblem, lettered “FBF” and “Fédération Burkinabé de Football”.",
+          "source": "https://en.wikipedia.org/wiki/Burkinab%C3%A9_Football_Federation",
+          "sha256": "6d328610a6119bc5d700478c51eff9d594b417bc0f04d195010a694549aefb32",
+          "fetched": "2026-08-22",
+          "meaning": {
+            "description": "The two stallions are drawn from Burkina Faso's own coat of arms, which also carries them as supporters: they honour the legend of Princess Yennenga, the warrior mother of the Mossi people (the country's largest ethnic group), whose white horse carried her to found the Mossi kingdoms — a legend reflected in Burkinabè culture as freedom, courage and drive. FBF is the federation's own initials, Fédération Burkinabé de Football, and the national team's own nickname, Les Étalons (The Stallions), comes from the same legend.",
+            "sources": [
+              {
+                "title": "Know the nicknames of Group D teams at the TotalEnergies AFCON 2023 — CAF Online",
+                "url": "https://www.cafonline.com/caf-africa-cup-of-nations/news/know-the-nicknames-of-group-d-teams-at-the-totalenergies-afcon-2023/"
+              },
+              {
+                "title": "Coat of arms of Burkina Faso — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burkina_Faso"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -4393,10 +4419,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/6/62/Congolese_Association_Football_Federation_logo.png",
           "file": "cd/cd-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Congo (DRC) national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Congolese_Association_Football_Federation_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Congo (DRC) national football team.",
+          "design": "The crest of the Congolese Football Association Federation — a yellow shield trimmed in sky-blue and red, with a leopard's head over a football lettered “RDC”, ringed by “Fédération Congolaise de Football Association” and “FECOFA”.",
           "source": "https://en.wikipedia.org/wiki/Congolese_Association_Football_Federation",
           "sha256": "44dc7e45fbb1f23664ccb4073c56f09216c710c4071b744efe47b22f9ad24e42",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The leopard gives the national team its own nickname, Les Léopards, adopted in 1965; when President Mobutu Sese Seko — known for his trademark leopard-skin cap — was ousted in 1997, the team was briefly renamed Simbas (Swahili for lions) before reclaiming the Léopards name under the country's 2006 constitution.",
+            "sources": [
+              {
+                "title": "DR Congo national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/DR_Congo_national_football_team"
+              },
+              {
+                "title": "African football – What's in a nickname? — Al Jazeera",
+                "url": "https://www.aljazeera.com/features/2015/1/29/african-football-whats-in-a-nickname"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -4742,10 +4781,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/0/09/Ivory_Coast_national_football_team_logo.svg",
           "file": "ci/ci-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Côte d’Ivoire national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Ivory_Coast_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Côte d’Ivoire national football team.",
+          "design": "The crest of the Fédération Ivoirienne de Football — a green-and-orange badge shaped like the outline of Côte d'Ivoire, lettered “Côte d'Ivoire”, with a white elephant head and a football lettered “FIF”.",
           "source": "https://en.wikipedia.org/wiki/Ivory_Coast_national_football_team",
           "sha256": "4f5dd53abf4dc42eb8131903067d0fdf9e56f7575f7ef894122d7162aaf51d27",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The elephant is the centrepiece of Côte d'Ivoire's own national coat of arms and gives the country its name — “Côte d'Ivoire” (Ivory Coast) recalls its colonial-era role in the ivory trade — and its national football team its own nickname, Les Éléphants.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ivory Coast — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -6817,10 +6865,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/2/2d/Algerian_NT_%28logo%29.png",
           "file": "dz/dz-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Algeria national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Algerian_NT_(logo).png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Algeria national football team.",
+          "design": "The crest of the Algerian Football Federation — a gold ring lettered “FAF” around a football bearing the green wing and red crescent-and-star of the national flag, lettered “الجزائر” (Algeria), with two gold stars marked “19” and “90” above.",
           "source": "https://en.wikipedia.org/wiki/Algeria_national_football_team",
           "sha256": "dfdc99ce3a69ff409cd41aa4a5aaa2c8948474c5baab3696c3e1cce7e49bf081",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The crescent and star repeat Algeria's own national flag, and the two gold stars, read together as “1990”, mark the year Algeria won its first Africa Cup of Nations title, hosted and won on home soil in Algiers.",
+            "sources": [
+              {
+                "title": "1990 African Cup of Nations — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/1990_African_Cup_of_Nations"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -10832,10 +10889,19 @@
           "name": "Crest of the Indonesia national football team",
           "commons": "2025 Indonesia National Football Team Badge.png",
           "file": "id/id-football-crest.png",
-          "design": "The crest of the Indonesia national football team.",
+          "design": "The crest of the Indonesia national football team — a shield lettered “Indonesia”, bearing the Garuda Pancasila, Indonesia's national emblem: a golden mythical eagle holding a shield of five symbols above the motto “Bhinneka Tunggal Ika”.",
           "source": "https://en.wikipedia.org/wiki/Indonesia_national_football_team",
           "sha256": "ea120dc7b795e1d74b3e7e5381e3a7471d4b1033a00b7d586e2a39c28516d9ea",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The Garuda Pancasila is Indonesia's own national emblem. The golden Garuda's feathers are counted to spell out the date of independence — 17 (wing) + 8 (tail) + 19 (base) + 45 (neck) for 17 August 1945 — and its shield carries the five principles of Pancasila: a star for belief in one God, a chain for just and civilised humanity, a banyan tree for national unity, a wild ox (banteng) for democracy guided by consensus, and rice and cotton for social justice. “Bhinneka Tunggal Ika” (“Unity in Diversity”) is drawn from a 14th-century Old Javanese poem.",
+            "sources": [
+              {
+                "title": "National emblem of Indonesia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -19775,7 +19841,16 @@
           "design": "The crest of the Philippine Football Federation — a circular blue-and-gold badge with a football before a red-and-blue goal, the letters PFF, two stars and the founding year 1907.",
           "source": "https://en.wikipedia.org/wiki/Philippine_Football_Federation",
           "sha256": "0f6c40b21d8fd7502c6feb1aa5cc372bdc3dae841860aafaabcb778eba7c18b6",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The blue and red of the goal frame repeat the colours of the Philippine flag: blue for peace, truth and justice, and red for patriotism and valour. 1907 is the year the federation traces its founding to, and PFF is its own initials, the Philippine Football Federation.",
+            "sources": [
+              {
+                "title": "Flag of the Philippines — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Philippines"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -19970,10 +20045,19 @@
           "name": "Crest of the Pakistan national football team",
           "commons": "Pakistan Football Federation (logo).svg",
           "file": "pk/pk-football-crest.svg",
-          "design": "The crest of the Pakistan national football team.",
+          "design": "The crest of the Pakistan Football Federation — a circular badge lettered “Pakistan Football Federation”, bearing the national flag: a green field with a white crescent and star and a white vertical stripe.",
           "source": "https://en.wikipedia.org/wiki/Pakistan_Football_Federation",
           "sha256": "5ce6cb403ec1ffc584001ad26eddff4051079a78289605abd00231ee46da344f",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The badge simply reproduces Pakistan's own national flag: green for the country's Muslim majority, the white crescent for progress and the star for light and knowledge, and the white stripe at the hoist for Pakistan's religious minorities.",
+            "sources": [
+              {
+                "title": "Flag of Pakistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Pakistan"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -23857,10 +23941,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/2/27/Thailand_national_football_team_logo.svg",
           "file": "th/th-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Thailand national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Thailand_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Thailand national football team.",
+          "design": "The crest of the Thailand national football team — a shield in the red, white and blue of the national flag, lettered “Thailand”, bearing a stylised elephant's face.",
           "source": "https://en.wikipedia.org/wiki/Thailand_national_football_team",
           "sha256": "1ae0cd870fbb39acd39813b9dcc056a4807dd2355743240730d0500a575439e3",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The elephant gives the team its own Thai nickname, Changsuek (War Elephants), recalling the war elephants Thai (Siamese) armies rode into battle for centuries — famously including King Naresuan's 1593 duel on elephant-back with the Burmese crown prince — and continued to field, armed with mounted guns, into the 1893 Franco-Siamese conflict.",
+            "sources": [
+              {
+                "title": "Thailand national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Thailand_national_football_team"
+              },
+              {
+                "title": "War elephant — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/War_elephant"
+              }
+            ]
+          }
         }
       ]
     },
@@ -26987,7 +27084,16 @@
           "design": "The crest of the Vietnam Football Federation — a football over a red disc bearing the gold star of the national flag, with the letters VFF.",
           "source": "https://en.wikipedia.org/wiki/Vietnam_Football_Federation",
           "sha256": "de6359456024255ecc835c3a24f19f8834c0c883a8b1c25889dc56ab458d668e",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The gold star and red field repeat Vietnam's own national flag: red for revolution and bloodshed, and the star's five points read as standing for the country's intellectuals, farmers, workers, entrepreneurs and soldiers united as one nation. VFF is the federation's own initials, the Vietnam Football Federation.",
+            "sources": [
+              {
+                "title": "Flag of Vietnam — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Vietnam"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -27716,10 +27822,19 @@
           "name": "Crest of the Zimbabwe national football team",
           "commons": "Zifa-full-crest.png",
           "file": "zw/zw-football-crest.png",
-          "design": "The crest of the Zimbabwe national football team.",
+          "design": "The crest of the Zimbabwe Football Association — a green circular badge lettered “Zimbabwe Football Association”, with a gold Zimbabwe Bird over a red star above a silver shield lettered “ZIFA” and a football.",
           "source": "https://en.wikipedia.org/wiki/Zimbabwe_national_football_team",
           "sha256": "7d26d39bffeee5042ef76f28fd9fa6d32958e1ebf1240415e7d3f8f36e134605",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The Zimbabwe Bird is the country's definitive national emblem, adapted from soapstone bird carvings unique to the ruins of Great Zimbabwe, the 11th-century city built by Shona ancestors; the birds are thought to have held spiritual significance, possibly representing the bateleur eagle as a messenger between the living and the ancestors. It has appeared on Zimbabwe's flag and coat of arms since independence in 1980 and today marks over a hundred national organisations.",
+            "sources": [
+              {
+                "title": "Zimbabwe Bird — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Zimbabwe_Bird"
+              }
+            ]
+          }
         }
       ],
       "independence": {
