@@ -2749,6 +2749,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Australian flags — Department of the Prime Minister and Cabinet", url: "https://www.pmc.gov.au/government/australian-national-symbols/australian-flags" },
     ],
   },
+  "au-adf": {
+    description: "The three stripes stand for the three armed services — red for the Army, dark blue for the Royal Australian Navy and light blue for the Royal Australian Air Force — and the central badge combines a symbol for each: crossed swords for the Army, an anchor for the Navy, and a wedge-tailed eagle for the Air Force, above a boomerang and below the seven-pointed Commonwealth Star; adopted in 2000 for use in joint Defence Force activities.",
+    sources: [
+      { title: "Australian Defence Force Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Australian_Defence_Force_Ensign" },
+    ],
+  },
   "au-royal": {
     description: "The banner reproduces Australia's national coat of arms, whose kangaroo and emu supporters — both unable to walk backwards — represent a nation moving only forward; its shield, quartered with the six states' own badges under an ermine border, represents the states unified under one federation.",
     sources: [
@@ -3199,6 +3205,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Cook Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
     ],
   },
+  "cl-naval-jack": {
+    description: "A blue square bearing a white five-pointed star, matching the canton of the national flag — the \"Estrella Solitaria\" (Lone Star); the blue stands for the sky and the Pacific Ocean, and the star for a guide to progress and honour, drawing on the star's significance to the region's indigenous Mapuche people.",
+    sources: [
+      { title: "Flag of Chile — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Chile" },
+    ],
+  },
   "cl-president": {
     description: "The coat of arms is supported by an Andean condor and a huemul (a native Chilean deer), both wearing gold naval crowns honouring the Chilean Navy's actions in the War of the Pacific; the condor represents strength and independence, and the huemul the peace and gentleness of the Chilean people.",
     sources: [
@@ -3499,6 +3511,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The three lions are borrowed, and the borrowing is the history: they come from the 13th-century royal arms of Denmark, because the Duchy of Estonia was Danish — Valdemar II's conquest — and they stayed as the central charge of the greater arms of Tallinn even after the Danish king sold his Estonian dominion to the Teutonic Order in 1346. From there the motif passed to the Duchy of Estonia under Sweden, to the Estonian Knighthood and to the Russian governorate, and so to the modern republic. The golden oak branches on either side are the national tree; the lesser arms are the shield alone. Stalin's regime banned the display of these arms with every other Estonian national symbol after the 1940 occupation.",
     sources: [
       { title: "Coat of arms of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
+    ],
+  },
+  "eg-royal": {
+    description: "On a green field, a white crescent encloses three white stars, with two crossed anchors in the canton (marking the King as head of the navy) and the King's crowned monogram. The crescent was kept by King Fuad I to reflect Egypt's predominantly Muslim population; the three stars are variously read as standing for the kingdom's three constituent lands — Egypt, Nubia and Sudan — or for its Muslim, Christian and Jewish communities.",
+    sources: [
+      { title: "Egyptian Flags: A Century of Symbolism — Egyptian Streets", url: "https://egyptianstreets.com/2022/02/07/egyptian-flags-a-century-of-symbolism/" },
     ],
   },
   "eg-arms": {
