@@ -16472,7 +16472,16 @@
           "design": "The prime minister's standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia",
           "sha256": "139121bd839c9fcd774fcdb5fc60d966c05dafe1f1ecd62572b234cdaad8b3ef",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A white field bears the same double-lined red cross as the presidential standard, but with the coat of arms — the rising sun of Latvia's shield — moved from the centre of the cross to the upper-left canton, distinguishing the Prime Minister's flag from the President's while keeping the same national colours and pattern.",
+            "sources": [
+              {
+                "title": "Latvia - President and Prime Minister Flags — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/lv-pres.html"
+              }
+            ]
+          }
         },
         {
           "id": "lv-naval-ensign",
@@ -16485,7 +16494,16 @@
           "design": "The naval ensign, restored in 1991 in the form used from 1919 to 1940.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia",
           "sha256": "4a4b8d28dc08f70878e5025f5261601b4db96992b9ec355f3e882b36225ae718",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A white field bears a burgundy-red cross fimbriated in white, extending to the flag's edges — a Nordic-cross-style design adapted to Latvia's own colours, first flown from 1919 to 1940 by the fledgling republic's Coast Guard Squadron (renamed the Latvian Navy in 1938 and presented its flag under the motto 'We are united by the holy name of Latvia') and restored in 1991 when the Navy was re-established after Latvia regained independence.",
+            "sources": [
+              {
+                "title": "Latvian Naval Forces — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Latvian_Naval_Forces"
+              }
+            ]
+          }
         },
         {
           "id": "lv-naval-jack",
@@ -26996,7 +27014,16 @@
           "design": "A white field bearing the assembly's seal.",
           "source": "https://en.wikipedia.org/wiki/List_of_Turkish_flags",
           "sha256": "4c0552fa415b61e70ccdac70d0454c43b26fee7bc163b3f5c2daebbda6bce825",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A white field bears the seal of the Grand National Assembly: the crescent and star from the national flag, ringed by the Turkish name of the institution, 'Türkiye Büyük Millet Meclisi'. Adopted during the Turkish War of Independence, the seal deliberately kept the crescent and star while dropping the ornate dynastic emblems of Ottoman imperial seals, so its plain, parliamentary design itself asserted that sovereignty now rested with the elected Assembly rather than the sultan.",
+            "sources": [
+              {
+                "title": "Government of the Grand National Assembly — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Government_of_the_Grand_National_Assembly"
+              }
+            ]
+          }
         },
         {
           "id": "tr-arms",
