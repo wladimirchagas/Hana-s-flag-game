@@ -5520,7 +5520,16 @@
           "design": "A sky blue field with the air force's coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chilean_flags",
           "sha256": "c756591dade3e1d7729458ff058f407ed7d384a5262b58fe28fdb336482ab01e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Air Force's own coat of arms bears a silver Andean condor — a symbol of strength, independence and vigilance drawn from the bird most associated with the Andes — framed by golden olive branches beneath a white star, on a dark blue shield: the same condor, star and blue that appear in the national flag and the wider Chilean coat of arms, adapted to mark the service that defends the country's skies.",
+            "sources": [
+              {
+                "title": "Chilean Air Force — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/cl%5Eaf.html"
+              }
+            ]
+          }
         },
         {
           "id": "cl-arms",
@@ -30967,7 +30976,16 @@
           "design": "The air force's ensign.",
           "source": "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags",
           "sha256": "a237602dea8786e32070fd31c2aee2b9298afe35cc6563cf9d7ec8336c416850",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted in 1980 when the Rhodesian Air Force became the Air Force of Zimbabwe at independence, the ensign's roundel bears a Bateleur eagle in flight — a bird native to the African savanna — replacing the colonial-era Rhodesian insignia (a lion and tusk within a green-and-white roundel) with a distinctively African emblem for the newly independent nation's air force.",
+            "sources": [
+              {
+                "title": "Air Force of Zimbabwe — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Air_Force_of_Zimbabwe"
+              }
+            ]
+          }
         },
         {
           "id": "zw-arms",
