@@ -556,7 +556,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cr-burgundy", category: "historical", name: "Cross of Burgundy", from: 1541, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Cross of Burgundy, the flag of New Spain.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
     { id: "cr-arms", category: "coatofarms", name: "Coat of arms of Costa Rica", from: 1848, to: 9999, path: "national-flags/cr/costarica-arms.svg", design: "Three volcanoes in a valley between two oceans with a merchant ship in each, beneath a rising sun and seven stars.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica" },
     { id: "cr-passport", category: "passport", name: "Passport of Costa Rica", path: "national-flags/cr/cr-passport.webp", design: "The cover of the Costa Rica passport.", source: "https://gicg.net/passport/cr/" },
-    { id: "cr-football-crest", category: "footballcrest", name: "Crest of the Costa Rica national football team", path: "national-flags/cr/cr-football-crest.svg", design: "The crest of the Costa Rica national football team.", source: "https://en.wikipedia.org/wiki/Costa_Rica_national_football_team" },
+    { id: "cr-football-crest", category: "footballcrest", name: "Crest of the Costa Rica national football team", path: "national-flags/cr/cr-football-crest.svg", design: "The crest of the Costa Rica national football team — a shield in navy, white, red and gold bearing a stylised “CR” monogram.", source: "https://en.wikipedia.org/wiki/Costa_Rica_national_football_team" },
   ],
   "CU": [
     { id: "cu-official-national", category: "official", name: "Flag of Cuba", from: 1849, to: 9999, primary: true, path: "flags/cu.svg", design: "The national flag of Cuba, in the form adopted in 1849.", source: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
@@ -568,7 +568,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cu-president-1929", category: "standard", name: "Standard of the President of Cuba (1929–1959)", from: 1929, to: 1959, path: "national-flags/cu/cuba-president-1929.svg", design: "The presidential standard of the pre-revolutionary republic.", source: "https://en.wikipedia.org/wiki/List_of_Cuban_flags" },
     { id: "cu-arms", category: "coatofarms", name: "Coat of arms of Cuba", from: 1906, to: 9999, path: "national-flags/cu/cuba-arms.svg", design: "A shield of three fields before a fasces crowned with a Phrygian cap, supported by an oak branch and a laurel wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba" },
     { id: "cu-passport", category: "passport", name: "Passport of Cuba", path: "national-flags/cu/cu-passport.webp", design: "The cover of the Cuba passport.", source: "https://gicg.net/passport/cu/" },
-    { id: "cu-football-crest", category: "footballcrest", name: "Crest of the Cuba national football team", path: "national-flags/cu/cu-football-crest.png", design: "The crest of the Cuba national football team.", source: "https://en.wikipedia.org/wiki/Cuba_national_football_team" },
+    { id: "cu-football-crest", category: "footballcrest", name: "Crest of the Cuba national football team", path: "national-flags/cu/cu-football-crest.png", design: "The crest of the Cuba national football team — a shield with blue vertical stripes echoing the national flag, lettered “Cuba”, over a red football bearing a white star.", source: "https://en.wikipedia.org/wiki/Cuba_national_football_team" },
   ],
   "CV": [
     { id: "cv-official-national", category: "official", name: "Flag of Cape Verde", from: 1992, to: 9999, primary: true, path: "flags/cv.svg", design: "The national flag, adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde" },
@@ -901,7 +901,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gt-spanish", category: "historical", name: "Cross of Burgundy flag", from: 1524, to: 1821, sovereign: "Spain", path: "national-flags/gt/gt-spain.svg", design: "The Cross of Burgundy, the flag Spain flew across its American empire, over the Captaincy General of Guatemala until independence.", source: "https://en.wikipedia.org/wiki/Captaincy_General_of_Guatemala" },
     { id: "gt-arms", category: "coatofarms", name: "Coat of arms of Guatemala", from: 1871, to: 9999, path: "national-flags/gt/gt-arms.svg", design: "A resplendent quetzal on a scroll with the date of independence, over crossed rifles and swords in a laurel wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guatemala" },
     { id: "gt-passport", category: "passport", name: "Passport of Guatemala", path: "national-flags/gt/gt-passport.webp", design: "The cover of the Guatemala passport.", source: "https://gicg.net/passport/gt/" },
-    { id: "gt-football-crest", category: "footballcrest", name: "Crest of the Guatemala national football team", path: "national-flags/gt/gt-football-crest.svg", design: "The crest of the Guatemala national football team.", source: "https://en.wikipedia.org/wiki/Guatemala_national_football_team" },
+    { id: "gt-football-crest", category: "footballcrest", name: "Crest of the Guatemala national football team", path: "national-flags/gt/gt-football-crest.svg", design: "The crest of the Federación Nacional de Fútbol de Guatemala — a bronze shield outline with a blue resplendent quetzal in flight, lettered “FFG”.", source: "https://en.wikipedia.org/wiki/Guatemala_national_football_team" },
   ],
   "GU": [
     { id: "gu-official-national", category: "official", name: "Flag of Guam", from: 1948, to: 9999, path: "flags/sub/US/US-GU.svg", design: "A dark-blue field with a red border, bearing the slingstone-shaped territorial seal in the centre.", source: "https://en.wikipedia.org/wiki/Flag_of_Guam" },
@@ -942,7 +942,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "hn-spanish", category: "historical", name: "Cross of Burgundy flag", from: 1524, to: 1821, sovereign: "Spain", path: "national-flags/hn/hn-spain.svg", design: "The Cross of Burgundy, the flag Spain flew across its American empire, over Honduras until independence.", source: "https://en.wikipedia.org/wiki/New_Spain" },
     { id: "hn-arms", category: "coatofarms", name: "Coat of arms of Honduras", from: 1825, to: 9999, path: "national-flags/hn/hn-arms.svg", design: "A volcano between two towers rising from the sea, under a rainbow and a rising sun.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Honduras" },
     { id: "hn-passport", category: "passport", name: "Passport of Honduras", path: "national-flags/hn/hn-passport.webp", design: "The cover of the Honduras passport.", source: "https://gicg.net/passport/hn/" },
-    { id: "hn-football-crest", category: "footballcrest", name: "Crest of the Honduras national football team", path: "national-flags/hn/hn-football-crest.svg", design: "The crest of the Honduras national football team.", source: "https://en.wikipedia.org/wiki/Honduras_national_football_team" },
+    { id: "hn-football-crest", category: "footballcrest", name: "Crest of the Honduras national football team", path: "national-flags/hn/hn-football-crest.svg", design: "The crest of the Honduras national football team — a blue letter “H” lettered “Honduras” down one leg, with five white stars down the other.", source: "https://en.wikipedia.org/wiki/Honduras_national_football_team" },
   ],
   "HR": [
     { id: "hr-official-national", category: "official", name: "Flag of Croatia", from: 1990, to: 9999, primary: true, path: "flags/hr.svg", design: "The national flag of Croatia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
@@ -1107,7 +1107,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "jm-pm", category: "standard", name: "Standard of the Prime Minister of Jamaica", from: 1962, to: 9999, path: "national-flags/jm/jamaica-pm.svg", design: "The prime minister's standard.", source: "https://en.wikipedia.org/wiki/List_of_Jamaican_flags" },
     { id: "jm-arms", category: "coatofarms", name: "Coat of arms of Jamaica", from: 1962, to: 9999, path: "national-flags/jm/jamaica-arms.svg", design: "A white shield with a red cross bearing five pineapples, crested with a crocodile on a log, supported by a Taíno man and woman.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica" },
     { id: "jm-passport", category: "passport", name: "Passport of Jamaica", path: "national-flags/jm/jm-passport.webp", design: "The cover of the Jamaica passport.", source: "https://gicg.net/passport/jm/" },
-    { id: "jm-football-crest", category: "footballcrest", name: "Crest of the Jamaica national football team", path: "national-flags/jm/jm-football-crest.svg", design: "The crest of the Jamaica national football team.", source: "https://en.wikipedia.org/wiki/Jamaica_national_football_team" },
+    { id: "jm-football-crest", category: "footballcrest", name: "Crest of the Jamaica national football team", path: "national-flags/jm/jm-football-crest.svg", design: "The crest of the Jamaica Football Federation — a black-and-yellow pennant bearing the green-and-gold saltire of the national flag, lettered “Football Jamaica Federation”.", source: "https://en.wikipedia.org/wiki/Jamaica_national_football_team" },
   ],
   "JO": [
     { id: "jo-official-national", category: "official", name: "Flag of Jordan", from: 1928, to: 9999, primary: true, path: "flags/jo.svg", design: "The national flag of Jordan, in use since 1928.", source: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
@@ -1674,7 +1674,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pa-president", category: "standard", name: "Presidential standard of Panama", path: "national-flags/pa/panama-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Panamanian_flags" },
     { id: "pa-arms", category: "coatofarms", name: "Coat of arms of Panama", from: 1904, to: 9999, path: "national-flags/pa/panama-arms.svg", design: "A pointed shield of the isthmus at sunset with crossed sword and rifle, spade and hoe, a cornucopia and a winged wheel, beneath an eagle and nine stars.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
     { id: "pa-passport", category: "passport", name: "Passport of Panama", path: "national-flags/pa/pa-passport.webp", design: "The cover of the Panama passport.", source: "https://gicg.net/passport/pa/" },
-    { id: "pa-football-crest", category: "footballcrest", name: "Crest of the Panama national football team", path: "national-flags/pa/pa-football-crest.svg", design: "The crest of the Panama national football team.", source: "https://en.wikipedia.org/wiki/Panama_Football_Federation" },
+    { id: "pa-football-crest", category: "footballcrest", name: "Crest of the Panama national football team", path: "national-flags/pa/pa-football-crest.svg", design: "The crest of the Panamanian Football Federation — a shield lettered “Panamá”, bearing a harpy eagle with wings spread over a small shield in the blue-red-and-star pattern of the national flag.", source: "https://en.wikipedia.org/wiki/Panama_Football_Federation" },
   ],
   "PE": [
     { id: "pe-official-national", category: "official", name: "Flag of Peru", from: 1825, to: 9999, primary: true, path: "flags/pe.svg", design: "The national flag of Peru, in the form adopted in 1825.", source: "https://en.wikipedia.org/wiki/Flag_of_Peru" },
@@ -2141,7 +2141,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tt-president", category: "standard", name: "Flag of the President of Trinidad and Tobago", from: 1976, to: 9999, path: "national-flags/tt/trinidad-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
     { id: "tt-arms", category: "coatofarms", name: "Coat of arms of Trinidad and Tobago", from: 1962, to: 9999, path: "national-flags/tt/trinidad-arms.svg", design: "Two hummingbirds on a shield with three ships, held by a scarlet ibis and a cocrico, crested with a palm tree over a ship's wheel, on three islands.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago" },
     { id: "tt-passport", category: "passport", name: "Passport of Trinidad and Tobago", path: "national-flags/tt/tt-passport.webp", design: "The cover of the Trinidad and Tobago passport.", source: "https://gicg.net/passport/tt/" },
-    { id: "tt-football-crest", category: "footballcrest", name: "Crest of the Trinidad and Tobago national football team", path: "national-flags/tt/tt-football-crest.svg", design: "The crest of the Trinidad and Tobago national football team.", source: "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Football_Association" },
+    { id: "tt-football-crest", category: "footballcrest", name: "Crest of the Trinidad and Tobago national football team", path: "national-flags/tt/tt-football-crest.svg", design: "The crest of the Trinidad and Tobago Football Association — a red-white-and-black shield lettered “TTFA” and “Trinidad & Tobago Football Association”, with a football above a white silhouette map of the two islands.", source: "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Football_Association" },
   ],
   "TV": [
     { id: "tv-official-national", category: "official", name: "Flag of Tuvalu", from: 1997, to: 9999, primary: true, path: "flags/tv.svg", design: "The national flag of Tuvalu, in the form adopted in 1997.", source: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
@@ -2305,7 +2305,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ve-president", category: "standard", name: "Presidential standard of Venezuela", from: 2006, to: 9999, path: "national-flags/ve/venezuela-president.svg", design: "A square yellow field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
     { id: "ve-arms", category: "coatofarms", name: "Coat of arms of Venezuela", from: 1954, to: 9999, path: "national-flags/ve/venezuela-arms.svg", design: "A shield in the colours of the flag bearing a wheatsheaf, weapons and a running white horse, beneath two cornucopias and between olive and palm branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
     { id: "ve-passport", category: "passport", name: "Passport of Venezuela", path: "national-flags/ve/ve-passport.webp", design: "The cover of the Venezuela passport.", source: "https://gicg.net/passport/ve/" },
-    { id: "ve-football-crest", category: "footballcrest", name: "Crest of the Venezuela national football team", path: "national-flags/ve/ve-football-crest.svg", design: "The crest of the Venezuela national football team.", source: "https://en.wikipedia.org/wiki/Venezuela_national_football_team" },
+    { id: "ve-football-crest", category: "footballcrest", name: "Crest of the Venezuela national football team", path: "national-flags/ve/ve-football-crest.svg", design: "The crest of the Venezuela national football team — a gold-and-maroon shield bearing the yellow-blue-red of the national flag, with eight white stars across the blue band.", source: "https://en.wikipedia.org/wiki/Venezuela_national_football_team" },
   ],
   "VG": [
     { id: "vg-official-national", category: "official", name: "Flag of the British Virgin Islands", from: 1960, to: 9999, path: "flags/vg.svg", design: "A blue ensign with the Union Flag in the canton and the territory's coat of arms — Saint Ursula holding a golden lamp among eleven others — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_British_Virgin_Islands" },
@@ -2849,6 +2849,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Bolivian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Bolivian_passport" },
     ],
   },
+  "bo-football-crest": {
+    description: "The Andean condor crowns Bolivia's own national coat of arms, shown rising above the shield; one of South America's most iconic birds, it is read in Bolivian heraldry as a mark of strength, freedom and national pride. The shield's red, yellow and green repeat the colours of the national flag, and FBF is the federation's own initials, Federación Boliviana de Fútbol.",
+    sources: [
+      { title: "Coat of arms of Bolivia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bolivia" },
+    ],
+  },
   "br-1889-provisional": {
     description: "Raised on 15 November 1889, the day the republic was proclaimed, this flag closely copied the flag of the United States — thirteen stripes and a starred canton — as a deliberate statement that Brazil was now a federal republic on the American model. Deodoro da Fonseca rejected it four days later precisely because it imitated another nation's flag, and the green-and-yellow field of the imperial flag was kept instead, so that the change of regime did not read as a change of country.",
     sources: [
@@ -2926,6 +2932,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield quarters the emblems of the peoples who founded the country — the three lions of England, the lion of Scotland, the harp of Ireland and the fleurs-de-lis of royal France — above a distinctly Canadian sprig of maple leaves (drawn green in 1921, red since 1957). The English lion and Scottish unicorn supporters mirror the British royal arms, the unicorn's broken chain standing for resistance to oppression. The Latin motto, A mari usque ad mare — “from sea to sea” — is from Psalm 72. Granted by royal proclamation in 1921.",
     sources: [
       { title: "Arms of Canada — Wikipedia", url: "https://en.wikipedia.org/wiki/Arms_of_Canada" },
+    ],
+  },
+  "ca-football-crest": {
+    description: "The maple leaf is Canada's own national symbol, adopted by French Canadians along the Saint Lawrence River as early as the 1700s and formally centred on the national flag in 1965; the flag's own eleven-pointed leaf is stylised rather than any single maple species, standing for the many maple trees native to the country.",
+    sources: [
+      { title: "Maple leaf — Wikipedia", url: "https://en.wikipedia.org/wiki/Maple_leaf" },
     ],
   },
   "cd-arms": {
@@ -3050,6 +3062,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba" },
     ],
   },
+  "cu-football-crest": {
+    description: "The blue stripes and the white star both repeat Cuba's own national flag, first raised in 1849 and adopted at independence in 1902: the blue stripes originally stood for the three departments Cuba was then divided into, and the white star — the “Lone Star” — for the country's own, singular path to independence.",
+    sources: [
+      { title: "Flag of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
+    ],
+  },
   "cv-arms": {
     description: "Within a blue ring bearing the country's name, a torch and a triangle stand for freedom and national unity, and a golden plumb-bob for righteousness. Three chain links at the foot stand for the unity, equality and civil rights of a democratic society. The ten gold stars around the ring are the ten islands of the archipelago — the same ten stars as on the flag.",
     sources: [
@@ -3127,6 +3145,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "At the centre, on an open Bible showing the Gospel of John (8:31–32, “the truth shall make you free”) beneath a small golden cross, stands the flag of the republic — the Dominican Republic is the only country to carry a Bible on its arms. Six flags on lances fan out behind, framed by a branch of laurel for glory and a branch of palm for peace. The ribbon above reads Dios, Patria, Libertad — “God, Homeland, Liberty.”",
     sources: [
       { title: "Coat of arms of the Dominican Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Dominican_Republic" },
+    ],
+  },
+  "do-football-crest": {
+    description: "The white cross and the blue-and-red quarters repeat the Dominican Republic's own national flag, designed by independence leader Juan Pablo Duarte and first flown in 1844: the cross for peace and the unity of the Dominican people, blue for liberty, and red for the blood of the country's patriots.",
+    sources: [
+      { title: "Flag of the Dominican Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic" },
     ],
   },
   "dz-emblem": {
@@ -3395,6 +3419,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Guatemala — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guatemala" },
     ],
   },
+  "gt-football-crest": {
+    description: "The resplendent quetzal is Guatemala's own national bird, carried on its flag and coat of arms and giving its name to the national currency, the quetzal. The Maya revered it as sacred and, because captured quetzals were seen to die soon afterward, it became a symbol of liberty — a reading the national anthem itself repeats (“antes muerto que esclavo será”, “rather dead than enslaved”).",
+    sources: [
+      { title: "Resplendent quetzal — Wikipedia", url: "https://en.wikipedia.org/wiki/Resplendent_quetzal" },
+    ],
+  },
   "gu-seal": {
     description: "Approved in 1946, the seal takes the pointed shape of a Chamorro slingstone, the ancient weapon of the islands. Within it a coconut tree — the tree of life — bends but does not break, for a people tested by famine, war and calamity yet enduring; a flying proa, the swift Chamorro outrigger, speaks to their seafaring skill; and the Hagåtña river meeting the sea marks a willingness to share the land's resources. GUAM runs across the centre in red.",
     sources: [
@@ -3430,6 +3460,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "An oval seal shows a volcano between two castle towers rising from the sea, under a rainbow and a rising sun — the promise of a new nation. The words around it name the free, sovereign and independent Republic of Honduras and the date of independence, 15 September 1821. Oak and pine trees, quivers of arrows, cornucopias and mining tools around the seal stand for the country's forests, its peoples and its mineral wealth.",
     sources: [
       { title: "Coat of arms of Honduras — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Honduras" },
+    ],
+  },
+  "hn-football-crest": {
+    description: "The five stars repeat the five stars on Honduras's own national flag, standing for the five nations of the former Federal Republic of Central America — Guatemala, El Salvador, Honduras, Nicaragua and Costa Rica — and expressing the hope that they might one day reunite, after the federation dissolved in 1838.",
+    sources: [
+      { title: "Flag of Honduras — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
     ],
   },
   "hr-arms": {
@@ -3590,6 +3626,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "These are among the oldest arms in the Americas, granted to the colony of Jamaica by royal warrant in 1661 and designed by William Sancroft, later Archbishop of Canterbury — Jamaica kept them at independence rather than devising new ones. The shield is a red cross on white bearing five gold pineapples, the fruit the island exported; the crest is a crocodile standing on a log, native to the island's swamps; the supporters are a Taíno man and woman, the island's indigenous people, one holding a basket of fruit and the other a bow. What DID change was the motto: the original Latin, INDUS UTERQUE SERVIET UNI — \"the Indians twain shall serve one Lord\" — was replaced at independence in 1962 with \"Out of Many, One People\".",
     sources: [
       { title: "Coat of arms of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica" },
+    ],
+  },
+  "jm-football-crest": {
+    description: "The gold saltire on green-and-black repeats Jamaica's own national flag: black for the strength and creativity of the people in overcoming hardship, gold for the island's wealth and sunshine, and green for its vegetation and hope. The X-shaped saltire was chosen over stripes specifically so the flag would not resemble any other nation's.",
+    sources: [
+      { title: "Flag of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
     ],
   },
   "jo-arms": {
@@ -4085,6 +4127,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
     ],
   },
+  "pa-football-crest": {
+    description: "The harpy eagle is Panama's own national bird and crowns the country's national coat of arms, holding a scroll with the national motto in its beak; on the full coat of arms an arc of ten stars above it stands for Panama's ten provinces.",
+    sources: [
+      { title: "Coat of arms of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
+    ],
+  },
   "pe-arms": {
     description: "The 1825 law defines the shield as three fields standing for the riches of Peru in the three natural kingdoms: a vicuña on light blue for the animal kingdom, a cinchona tree on white for the vegetable — the tree whose bark gave the world quinine — and, on the smaller red field below, a cornucopia spilling coins for the mineral. The palm branch on one side and the laurel on the other, tied with a red and white ribbon, together with the holm-oak civic crown above, stand for victory and glory.",
     sources: [
@@ -4382,6 +4430,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador" },
     ],
   },
+  "sv-football-crest": {
+    description: "The badge's blue repeats the blue bands of El Salvador's own national flag, which stand for the Pacific and Atlantic oceans bordering Central America as a whole (El Salvador itself has no Atlantic coastline). ES is simply the country's own initials, and FESFUT the federation's own name, Federación Salvadoreña de Fútbol.",
+    sources: [
+      { title: "Flag of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
+    ],
+  },
   "sx-arms": {
     description: "Adopted on 7 November 1982. At the centre stands the courthouse of Philipsburg, the island's civic heart; beside it the border monument recalls the peaceful boundary that has divided the island between Dutch and French halves since 1648, and the orange-yellow sage is the national flower. A rising sun of hope fills the background, and a brown pelican — the national bird — crests the shield. The motto Semper Progrediens means 'Always progressing'; the orange border marks the tie to the Dutch royal house.",
     sources: [
@@ -4499,6 +4553,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Trinidad and Tobago — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago" },
     ],
   },
+  "tt-football-crest": {
+    description: "The red, white and black repeat Trinidad and Tobago's own national flag, adopted at independence in 1962: red for fire, the sun and courage; black for earth and dedication; and white for water, purity and equality.",
+    sources: [
+      { title: "Flag of Trinidad and Tobago — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
+    ],
+  },
   "tv-arms": {
     description: "Granted by royal warrant in 1976, the shield shows a maneapa — the traditional meeting house at the centre of island community life — above stylised gold-and-blue waves for the surrounding ocean. Eight banana leaves and eight mussel shells ring the border, one pair for each of the eight traditionally inhabited islands from which the name Tuvalu — “eight standing together” — is drawn. The motto reads Tuvalu mo te Atua — “Tuvalu for the Almighty” — also the title of the national anthem.",
     sources: [
@@ -4594,6 +4654,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield is divided into the three colours of the national flag. On the red field a sheaf of wheat stands for the union of the states and for the country's agricultural wealth; on the yellow field weapons and two national flags tied with laurel stand for the victory of the war of independence; and on the blue field below a white horse runs free, for independence and liberty. Above the shield two crossed cornucopias pour out the country's wealth, and it is flanked by an olive branch and a palm branch tied with a band in the national colours — yellow for the nation's wealth, blue for the ocean that separates Venezuela from Spain, and red for the blood and courage of its people. The arms in this form were established by the Law of the National Flag, Coat of Arms and Anthem of 17 February 1954; in 2006 the horse was turned to run to the dexter, the direction it had faced in the arms of 1863.",
     sources: [
       { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
+    ],
+  },
+  "ve-football-crest": {
+    description: "The eight stars repeat Venezuela's own national flag: seven for the provinces that signed the 1811 Declaration of Independence (Caracas, Cumaná, Barinas, Margarita, Barcelona, Mérida and Trujillo), and an eighth added by Simón Bolívar in 1817 for Guayana Province, restored to the flag in 2006 under President Hugo Chávez after decades' absence.",
+    sources: [
+      { title: "Flag of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Venezuela" },
     ],
   },
   "vg-arms": {
