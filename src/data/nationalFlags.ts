@@ -3956,6 +3956,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Shamrock — Wikipedia", url: "https://en.wikipedia.org/wiki/Shamrock" },
     ],
   },
+  "il-idf": {
+    description: "The sword represents military strength and readiness for combat; the olive branch expresses a yearning for peace; and the Star of David marks the Israel Defense Forces as the army of the Jewish state — the sword-and-branch design was inherited from the Haganah, the pre-statehood militia that formed the IDF's core in 1948.",
+    sources: [
+      { title: "Israel Defense Forces Emblem — Wikipedia", url: "https://en.wikipedia.org/wiki/Israel_Defense_Forces_Emblem" },
+    ],
+  },
   "il-civil-ensign": {
     description: "The Star of David, a widely recognised symbol of the Jewish people formally adopted by the First Zionist Congress in 1897, and the blue of the tallit (Jewish prayer shawl) together mark this ensign, worn by Israeli-flagged merchant ships, as a maritime variant of the national flag's own symbolism.",
     sources: [
@@ -5612,6 +5618,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Roman cuirass beneath an unsheathed sword topped by a Phrygian cap (a Revolutionary-era symbol of liberty) stands for readiness to defend the nation; the surrounding musket, cannon, drum and other implements represent the Army's tools, under the motto \"This We'll Defend\".",
     sources: [
       { title: "Seal and emblem of the United States Department of the Army — Grokipedia", url: "https://grokipedia.com/page/Seal_and_emblem_of_the_United_States_Department_of_the_Army" },
+    ],
+  },
+  "us-navy": {
+    description: "The bald eagle stands for vigilance, freedom and national power; the anchor represents the Navy's maritime heritage and reliability at sea; and the three-masted ship recalls the Continental Navy's own 1780 seal, together with the land signifying the Navy's shore facilities and amphibious reach.",
+    sources: [
+      { title: "United States Department of the Navy Seal — Symbols.com", url: "https://www.symbols.com/symbol/united-states-department-of-the-navy-seal" },
     ],
   },
   "us-marines": {
