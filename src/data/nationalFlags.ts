@@ -2816,6 +2816,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National Emblem of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
     ],
   },
+  "be-civil-ensign": {
+    description: "The black, yellow and red are Belgium's national colours, taken from the medieval heraldic arms of the Duchy of Brabant — a yellow lion with red claws and tongue on black — with black recalling the arms of Flanders and Namur and red those of Hainaut, Limburg and Luxembourg.",
+    sources: [
+      { title: "Flag of Belgium — Britannica", url: "https://www.britannica.com/topic/flag-of-Belgium" },
+    ],
+  },
+  "be-state-ensign": {
+    description: "Worn by Belgian government vessels, this variant defaces the national black-yellow-red tricolour — itself drawn from the medieval arms of the Duchy of Brabant — with the state emblem to mark official rather than merchant service.",
+    sources: [
+      { title: "Flag of Belgium — Britannica", url: "https://www.britannica.com/topic/flag-of-Belgium" },
+    ],
+  },
   "be-arms": {
     description: "The golden lion on black — the Leo Belgicus, whose lineage runs to the Duchy of Brabant that led the 1789 Brabant Revolution — stands for Belgium itself, here armed and langued red beneath the royal crown. Two lion supporters, the sceptre and hand of justice, and the collar of the Order of Leopold complete the greater arms, adopted by royal decree in 1837 after independence in 1830. The trilingual motto reads L'union fait la force / Eendracht maakt macht — “Unity makes strength.”",
     sources: [
@@ -2907,6 +2919,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Wiphala — Wikipedia", url: "https://en.wikipedia.org/wiki/Wiphala" },
       { title: "List of Bolivian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
+    ],
+  },
+  "bo-naval-ensign": {
+    description: "The nine stars stand for Bolivia's nine departments; the ensign is flown by the Bolivian Naval Force, which has patrolled the country's rivers and Lake Titicaca since Bolivia lost its Pacific coastline to Chile in the War of the Pacific in 1884.",
+    sources: [
+      { title: "Bolivian Naval Force — Wikipedia", url: "https://en.wikipedia.org/wiki/Bolivian_Naval_Force" },
     ],
   },
   "bo-state": {
@@ -4552,6 +4570,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
     ],
   },
+  "mx-president": {
+    description: "The coat of arms shows an eagle devouring a serpent while perched on a prickly pear cactus — the sign the Mexica people are said to have followed, on the guidance of the god Huitzilopochtli, to found Tenochtitlan (modern Mexico City); the eagle represented the sun god's power, the serpent the earth goddess Coatlicue, and the cactus the island city itself.",
+    sources: [
+      { title: "Coat of arms of Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
+    ],
+  },
   "mx-arms": {
     description: "The eagle on a nopal cactus devouring a serpent depicts the Aztec founding legend: the Mexica were told to build their capital, Tenochtitlan, where they saw an eagle on a cactus atop a lake — the site of modern Mexico City. In the original telling the eagle was the sun god Huitzilopochtli and the cactus the island of Tenochtitlan; a 16th-century European retelling recast the eagle as good overcoming the serpent. Oak and laurel branches, tied in the national colours, frame the device, which also appears at the centre of the flag.",
     sources: [
@@ -4891,6 +4915,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Palestine — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
     ],
   },
+  "pt-military": {
+    description: "The armillary sphere recalls the navigational instrument used during Portugal's Age of Discovery and was a personal emblem of King Manuel I; the seven gold castles commemorate Portuguese victories over Moorish strongholds in the Algarve, and the five small shields (each bearing five white dots) represent the five wounds of Christ, honouring a battlefield vow attributed to the country's first king, Afonso Henriques.",
+    sources: [
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
+    ],
+  },
+  "pt-naval-jack": {
+    description: "The national arms on this jack carry the same symbolism as Portugal's coat of arms: the armillary sphere recalling the Age of Discovery, the seven castles commemorating victories over Moorish strongholds, and the five small shields representing the five wounds of Christ.",
+    sources: [
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
+    ],
+  },
   "pt-arms": {
     description: "The five blue shields set in a cross — the quinas — are traditionally read as the Five Wounds of Christ, or the five Moorish kings said to have been defeated at Ourique; the five silver bezants on each recall the monarch's right to mint coin. The red border of seven golden castles, fixed at seven by King Sebastian, stands for strongholds taken from the Moors in the Reconquista. Beneath sits the golden armillary sphere, the navigator's instrument that marks Portugal's Age of Discovery. The same shields and castles appear on the national flag.",
     sources: [
@@ -4969,6 +5005,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Serbian cross — Wikipedia", url: "https://en.wikipedia.org/wiki/Serbian_cross" },
     ],
   },
+  "ru-airborne": {
+    description: "The blue field reflects the Russian Airborne Forces' own identity — its troops traditionally wear a blue beret and blue-striped undershirt — while the green stripe represents ground operations and the gold parachute and aircraft mark its role as an elite airborne assault force.",
+    sources: [
+      { title: "Russian Airborne Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Russian_Airborne_Forces" },
+    ],
+  },
   "ru-arms": {
     description: "The double-headed eagle came to Moscow from Byzantium after the fall of Constantinople in 1453 and has stood for the Russian state since Ivan III. The three crowns stand for the sovereignty of the Russian Federation as a whole and of its constituent republics and regions; the sceptre and orb in the eagle's talons are the traditional heraldic emblems of sovereign power and authority. On the eagle's breast the silver horseman spearing a dragon is Saint George, a device found on Muscovite seals from 1390 and formally identified as Saint George by imperial decree in 1730. The present drawing was made by Yevgeny Ukhnalyov and adopted by decree on 30 November 1993.",
     sources: [
@@ -5041,6 +5083,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The four colours repeat Sudan's own national flag and are the Pan-Arab colours: red for the country's struggles and its martyrs' sacrifice, white for the people and optimism (and for the anti-colonial White Flag League of 1924), black for Sudan itself (Arabic for \"land of the black people\") and for the 19th-century Mahdist Revolution's flag, and green for Islam and the land's prosperity.",
     sources: [
       { title: "Flag of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
+    ],
+  },
+  "se-royal": {
+    description: "The Tre Kronor (Three Crowns) on the greater arms date to the late 13th century and are Sweden's oldest national emblem; one long-standing explanation ties them to King Magnus Eriksson's 14th-century title \"King of Norway, Sweden and all of Scania\", uniting three realms under one crown.",
+    sources: [
+      { title: "Three Crowns — Wikipedia", url: "https://en.wikipedia.org/wiki/Three_Crowns" },
     ],
   },
   "se-sami": {

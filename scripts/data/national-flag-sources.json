@@ -2241,7 +2241,16 @@
           "design": "The black-yellow-red tricolour in the proportions used at sea.",
           "source": "https://en.wikipedia.org/wiki/List_of_Belgian_flags",
           "sha256": "b3642c9ad66f6f5ddbfe6e9eb32a06b4aeb0e9801e45ad90d5ef70a86eafa05e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The black, yellow and red are Belgium's national colours, taken from the medieval heraldic arms of the Duchy of Brabant — a yellow lion with red claws and tongue on black — with black recalling the arms of Flanders and Namur and red those of Hainaut, Limburg and Luxembourg.",
+            "sources": [
+              {
+                "title": "Flag of Belgium — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Belgium"
+              }
+            ]
+          }
         },
         {
           "id": "be-state-ensign",
@@ -2254,7 +2263,16 @@
           "design": "The tricolour defaced with the state emblem, worn by government vessels.",
           "source": "https://en.wikipedia.org/wiki/List_of_Belgian_flags",
           "sha256": "8bf0ec1fa1355d88916355e1c951ca38090470fa5245140add6542cc302497e7",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Worn by Belgian government vessels, this variant defaces the national black-yellow-red tricolour — itself drawn from the medieval arms of the Duchy of Brabant — with the state emblem to mark official rather than merchant service.",
+            "sources": [
+              {
+                "title": "Flag of Belgium — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Belgium"
+              }
+            ]
+          }
         },
         {
           "id": "be-naval-jack",
@@ -3134,7 +3152,16 @@
           "design": "A blue field bearing the tricolour and nine stars — one for each department, flown by a navy that patrols rivers and lakes since Bolivia lost its coastline in 1884.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
           "sha256": "0f66910b34e968c26fb583fe18ebdd1cb8fe91148efc84c83ee0efbab97b4582",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The nine stars stand for Bolivia's nine departments; the ensign is flown by the Bolivian Naval Force, which has patrolled the country's rivers and Lake Titicaca since Bolivia lost its Pacific coastline to Chile in the War of the Pacific in 1884.",
+            "sources": [
+              {
+                "title": "Bolivian Naval Force — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Bolivian_Naval_Force"
+              }
+            ]
+          }
         },
         {
           "id": "bo-naval-jack",
@@ -18101,7 +18128,16 @@
           "design": "The national tricolour bearing the coat of arms in gold beneath the arced legend Estados Unidos Mexicanos, flown to mark the presence of the President of Mexico.",
           "source": "https://en.wikipedia.org/wiki/List_of_Mexican_flags",
           "sha256": "bbaa99a7e34d7762ca1f13543eb6afebb472425ecc777a452f465e64f5cbacf6",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The coat of arms shows an eagle devouring a serpent while perched on a prickly pear cactus — the sign the Mexica people are said to have followed, on the guidance of the god Huitzilopochtli, to found Tenochtitlan (modern Mexico City); the eagle represented the sun god's power, the serpent the earth goddess Coatlicue, and the cactus the island city itself.",
+            "sources": [
+              {
+                "title": "Coat of arms of Mexico — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico"
+              }
+            ]
+          }
         },
         {
           "id": "mx-passport",
@@ -21545,7 +21581,16 @@
           "design": "The national flag in the square proportions used for regimental colours.",
           "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
           "sha256": "edaff23e03a588a1f9cf0e689c8c8d095a62f4a9e0c92ceb117d87754b679c63",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The armillary sphere recalls the navigational instrument used during Portugal's Age of Discovery and was a personal emblem of King Manuel I; the seven gold castles commemorate Portuguese victories over Moorish strongholds in the Algarve, and the five small shields (each bearing five white dots) represent the five wounds of Christ, honouring a battlefield vow attributed to the country's first king, Afonso Henriques.",
+            "sources": [
+              {
+                "title": "Coat of arms of Portugal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal"
+              }
+            ]
+          }
         },
         {
           "id": "pt-naval-jack",
@@ -21556,7 +21601,16 @@
           "design": "A square green-bordered red field charged with the national arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
           "sha256": "af22e3ebe087bc634bf95ab39103e620d002167b6430e5e87c08bfe7f69ef4f4",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The national arms on this jack carry the same symbolism as Portugal's coat of arms: the armillary sphere recalling the Age of Discovery, the seven castles commemorating victories over Moorish strongholds, and the five small shields representing the five wounds of Christ.",
+            "sources": [
+              {
+                "title": "Coat of arms of Portugal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal"
+              }
+            ]
+          }
         },
         {
           "id": "pt-president",
@@ -22436,7 +22490,16 @@
           "design": "A blue and green bicolour with a parachute and two aircraft.",
           "source": "https://en.wikipedia.org/wiki/List_of_Russian_flags",
           "sha256": "5112733af470b6d6ed63aa089d2f71f20054b58b8dfa32a9c06bbb3af0dd388c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The blue field reflects the Russian Airborne Forces' own identity — its troops traditionally wear a blue beret and blue-striped undershirt — while the green stripe represents ground operations and the gold parachute and aircraft mark its role as an elite airborne assault force.",
+            "sources": [
+              {
+                "title": "Russian Airborne Forces — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Russian_Airborne_Forces"
+              }
+            ]
+          }
         },
         {
           "id": "ru-arms",
@@ -23221,7 +23284,16 @@
           "design": "The triple-tailed war flag charged with the greater coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden",
           "sha256": "b4221ff8ddb92826427fafbf734663717eaa1455deb7aa034d67b6eeb073a8ae",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Tre Kronor (Three Crowns) on the greater arms date to the late 13th century and are Sweden's oldest national emblem; one long-standing explanation ties them to King Magnus Eriksson's 14th-century title \"King of Norway, Sweden and all of Scania\", uniting three realms under one crown.",
+            "sources": [
+              {
+                "title": "Three Crowns — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Three_Crowns"
+              }
+            ]
+          }
         },
         {
           "id": "se-royal-1844",
