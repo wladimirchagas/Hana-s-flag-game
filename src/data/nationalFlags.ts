@@ -5608,10 +5608,28 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Uganda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
     ],
   },
+  "us-army": {
+    description: "The Roman cuirass beneath an unsheathed sword topped by a Phrygian cap (a Revolutionary-era symbol of liberty) stands for readiness to defend the nation; the surrounding musket, cannon, drum and other implements represent the Army's tools, under the motto \"This We'll Defend\".",
+    sources: [
+      { title: "Seal and emblem of the United States Department of the Army — Grokipedia", url: "https://grokipedia.com/page/Seal_and_emblem_of_the_United_States_Department_of_the_Army" },
+    ],
+  },
   "us-marines": {
     description: "The eagle represents the United States; the globe, showing the Western Hemisphere, signifies the Marine Corps' worldwide service; and the anchor — part of the emblem since the Corps' 1775 founding — marks its naval tradition and amphibious role within the Department of the Navy.",
     sources: [
       { title: "Eagle, Globe, and Anchor — Wikipedia", url: "https://en.wikipedia.org/wiki/Eagle,_Globe,_and_Anchor" },
+    ],
+  },
+  "us-air-force": {
+    description: "The thunderbolt striking through a cloud-band represents air power and striking force, echoing the Roman god Jupiter's thunderbolt as a symbol of power from the skies; thirteen stars around the shield stand for the original Thirteen Colonies, with three separated by the eagle's wingtips marking the three original armed-service departments — Army, Navy and Air Force.",
+    sources: [
+      { title: "Flag of the United States Air Force — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Air_Force" },
+    ],
+  },
+  "us-coast-guard": {
+    description: "The gold eagle stands for the United States and for freedom and vigilance; the crossed anchors represent the Coast Guard's maritime role and stability at sea; and the year \"1790\" marks the founding of the Revenue Cutter Service, the Coast Guard's direct predecessor, under President Washington.",
+    sources: [
+      { title: "United States Coast Guard Symbol And Emblem Meaning", url: "https://www3.nnu.edu/united-states-coast-guard-symbol_59283.html" },
     ],
   },
   "us-president": {

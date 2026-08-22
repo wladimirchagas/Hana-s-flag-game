@@ -27477,7 +27477,16 @@
           "design": "The Army's war office seal in blue on white, with a scarlet scroll bearing the Army's name and the year 1775.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
           "sha256": "1566c81fc9552c8ddb9244fbf9e37d29a322b460d7c9179ead29190e6631e22d",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Roman cuirass beneath an unsheathed sword topped by a Phrygian cap (a Revolutionary-era symbol of liberty) stands for readiness to defend the nation; the surrounding musket, cannon, drum and other implements represent the Army's tools, under the motto \"This We'll Defend\".",
+            "sources": [
+              {
+                "title": "Seal and emblem of the United States Department of the Army — Grokipedia",
+                "url": "https://grokipedia.com/page/Seal_and_emblem_of_the_United_States_Department_of_the_Army"
+              }
+            ]
+          }
         },
         {
           "id": "us-navy",
@@ -27519,7 +27528,16 @@
           "design": "The Air Force coat of arms and thirteen white stars on an ultramarine field.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
           "sha256": "0267be20166d681294355b7f04303e8875456917867c65e96cff8441d13ac209",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The thunderbolt striking through a cloud-band represents air power and striking force, echoing the Roman god Jupiter's thunderbolt as a symbol of power from the skies; thirteen stars around the shield stand for the original Thirteen Colonies, with three separated by the eagle's wingtips marking the three original armed-service departments — Army, Navy and Air Force.",
+            "sources": [
+              {
+                "title": "Flag of the United States Air Force — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Air_Force"
+              }
+            ]
+          }
         },
         {
           "id": "us-space-force",
@@ -27541,7 +27559,16 @@
           "design": "The Coast Guard's seal on white, with the service's name and its founding year.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
           "sha256": "ff9515ad8b4a41458d33b52f9c11bf27099adb09c4d54ceab0c7a4d580114d5d",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The gold eagle stands for the United States and for freedom and vigilance; the crossed anchors represent the Coast Guard's maritime role and stability at sea; and the year \"1790\" marks the founding of the Revenue Cutter Service, the Coast Guard's direct predecessor, under President Washington.",
+            "sources": [
+              {
+                "title": "United States Coast Guard Symbol And Emblem Meaning",
+                "url": "https://www3.nnu.edu/united-states-coast-guard-symbol_59283.html"
+              }
+            ]
+          }
         },
         {
           "id": "us-coast-guard-ensign",
