@@ -2680,6 +2680,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Argentine Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Argentine_Football_Association" },
     ],
   },
+  "as-official-national": {
+    description: "The bald eagle represents American Samoa's ties to the United States; the Samoan war club (uatogi) it holds stands for the government's power to defend itself, and the fly-whisk (fue) for the wisdom of traditional Samoan orators — combining both cultures the territory belongs to.",
+    sources: [
+      { title: "Flag of American Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_American_Samoa" },
+    ],
+  },
   "as-seal": {
     description: "The seal is built from the emblems of the faʻamatai, the Samoan chiefly system: the fue (fly-whisk) for the wisdom of the talking chief, the toʻotoʻo (orator's staff) for his authority, and the tanoa (kava bowl) for service to the chief, all on a tapa-cloth ground for Samoan artistry. The motto reads Sāmoa Muamua Le Atua — “Samoa, let God be first.” The date 17 April 1900 marks the day American Samoa became a U.S. territory.",
     sources: [
@@ -2735,6 +2741,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Green and gold are Australia's national sporting colours — green for the country's eucalypts (“gum-tree green”), gold for the golden wattle, the national floral emblem (“wattle-gold”) — first adopted by an Australian sports team touring England in 1899 and carried since into the Socceroos' own kit and this Football Australia mark.",
     sources: [
       { title: "Green and gold — Wikipedia", url: "https://en.wikipedia.org/wiki/Green_and_gold" },
+    ],
+  },
+  "aw-official-national": {
+    description: "The two yellow stripes stand for the island's economic history (gold mining, aloe production, tourism) and its native flora; the red four-pointed star represents Aruba itself, its four points recalling the diverse origins of the Aruban people, set against the surrounding blue sea.",
+    sources: [
+      { title: "Flag of Aruba — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Aruba" },
     ],
   },
   "aw-arms": {
@@ -3128,6 +3140,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Colombia national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Colombia_national_football_team" },
     ],
   },
+  "cr-state": {
+    description: "The coat of arms charged on the state flag shows three volcanoes for the country's three mountain ranges, a merchant ship on each ocean for its maritime history, and an arc of seven stars for its seven provinces.",
+    sources: [
+      { title: "Coat of arms of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica" },
+    ],
+  },
   "cr-arms": {
     description: "The official description reads the arms as the country's geography: three volcanoes, one for each of its mountain ranges, and a broad valley between two oceans — the Pacific and the Caribbean — with a merchant ship on each, for the country's maritime history, under a rising sun. The stars above are a count that CHANGED: the 1848 design had five, one per province, and two more were added in 1964 to make seven when Puntarenas and Limón had reached provincial status. The arms are attributed to Pacífica Fernández, wife of President José María Castro Madriz, who designed the flag at the same time; the military trophies the original carried were removed by law in 1906.",
     sources: [
@@ -3162,6 +3180,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The ten stars echo Cape Verde's national flag, where they stand for the archipelago's ten main islands, and the shark reflects the national team's own nickname \"Tubarões Azuis\" (Blue Sharks), tying the crest to the islands' Atlantic setting and fishing culture.",
     sources: [
       { title: "Cape Verde national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Cape_Verde_national_football_team" },
+    ],
+  },
+  "cw-official-national": {
+    description: "The two white stars represent Curaçao and the smaller Klein Curaçao, each star's five points standing for the five continents from which the island's people descend; the yellow stripe represents the sun over the sea.",
+    sources: [
+      { title: "Flag of Curaçao — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao" },
     ],
   },
   "cw-arms": {
@@ -3593,6 +3617,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Resplendent quetzal — Wikipedia", url: "https://en.wikipedia.org/wiki/Resplendent_quetzal" },
     ],
   },
+  "gu-official-national": {
+    description: "The seal's almond shape recalls the sling stones used by the ancient Chamorro people; it depicts a proa (traditional outrigger canoe) sailing in Hagåtña Bay before the cliffs of the island's coastline.",
+    sources: [
+      { title: "Flag of Guam — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guam" },
+    ],
+  },
   "gu-seal": {
     description: "Approved in 1946, the seal takes the pointed shape of a Chamorro slingstone, the ancient weapon of the islands. Within it a coconut tree — the tree of life — bends but does not break, for a people tested by famine, war and calamity yet enduring; a flying proa, the swift Chamorro outrigger, speaks to their seafaring skill; and the Hagåtña river meeting the sea marks a willingness to share the land's resources. GUAM runs across the centre in red.",
     sources: [
@@ -3628,6 +3658,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The water lily is the Victoria Amazonica, Guyana's national flower, adopted at independence in 1966 and also shown on the national coat of arms; it symbolises the country's aquatic biodiversity and its identity as the \"Land of Many Waters\".",
     sources: [
       { title: "Coat of arms of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
+    ],
+  },
+  "hk-official-national": {
+    description: "The white bauhinia flower represents Hong Kong against China's red, and the five stars on its petals echo the five stars of China's national flag — together conveying that Hong Kong remains part of China after the 1997 handover.",
+    sources: [
+      { title: "Flag of Hong Kong — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
     ],
   },
   "hk-emblem": {
@@ -4228,6 +4264,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Mongolian horse — Wikipedia", url: "https://en.wikipedia.org/wiki/Mongolian_horse" },
     ],
   },
+  "mo-official-national": {
+    description: "The white lotus flower represents Macau, its three petals standing for the peninsula and the islands of Taipa and Coloane; the bridge and water beneath it depict the Governador Nobre de Carvalho Bridge, and the five gold stars above echo the flag of China, marking Macau's return to Chinese sovereignty in 1999.",
+    sources: [
+      { title: "Flag of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
+    ],
+  },
   "mo-emblem": {
     description: "The emblem repeats the flag's device on green. The white lotus is Macau's floral emblem; beneath it the Governor Nobre de Carvalho (Sai Van) Bridge is the landmark linking the Macau peninsula to Taipa, and the water below marks Macau's life as a port. The arc of five gold stars echoes China's national flag, showing Macau's tie to its sovereign state, and the green field stands for the territory's identity as a Special Administrative Region. Adopted at the 1999 handover.",
     sources: [
@@ -4238,6 +4280,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The lotus is Macau's regional flower and the central emblem of its own flag, where its three petals represent the peninsula and the islands of Taipa and Coloane, and the flower symbolises purity in Chinese culture.",
     sources: [
       { title: "Flag of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
+    ],
+  },
+  "mp-official-national": {
+    description: "The grey latte stone represents the indigenous Chamorro people and the floral mwarmwar garland represents the Carolinian people, the territory's two main indigenous populations; the white star stands for the United States and the blue field for the Pacific Ocean.",
+    sources: [
+      { title: "Flag of the Northern Mariana Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
     ],
   },
   "mp-seal": {
@@ -4579,6 +4627,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Pitcairn Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Pitcairn_Islands" },
     ],
   },
+  "pr-official-national": {
+    description: "The white star stands for Puerto Rico itself, and the red and white stripes represent the blood shed by those who fought for the island and the liberty, victory and peace that followed.",
+    sources: [
+      { title: "Flag of Puerto Rico — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico" },
+    ],
+  },
   "pr-arms": {
     description: "Granted by the Spanish Crown in 1511, it is the oldest coat of arms still in use in the Americas. At its centre the Lamb of God (Agnus Dei) rests on the Book of the Seven Seals — both for Saint John the Baptist, to whom the island was dedicated as San Juan Bautista, and the reason the motto reads Joannes Est Nomen Eius, “John is his name.” Around it the golden castles and lions are Castile and León, the F-and-arrows Ferdinand of Aragon and the Y-and-yoke Isabella of Castile, with the cross of Jerusalem — the devices of the Catholic Monarchs who granted it.",
     sources: [
@@ -4894,6 +4948,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
     ],
   },
+  "sx-official-national": {
+    description: "The coat of arms shows the Courthouse in Philipsburg and the Dutch-French friendship monument that marks the boundary between the island's two sides; a pelican before a rising sun crests the shield, and the green and yellow stand for the land's fertility and the energy of its people.",
+    sources: [
+      { title: "Flag of Sint Maarten — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten" },
+    ],
+  },
   "sx-arms": {
     description: "Adopted on 7 November 1982. At the centre stands the courthouse of Philipsburg, the island's civic heart; beside it the border monument recalls the peaceful boundary that has divided the island between Dutch and French halves since 1648, and the orange-yellow sage is the national flower. A rising sun of hope fills the background, and a brown pelican — the national bird — crests the shield. The motto Semper Progrediens means 'Always progressing'; the orange border marks the tie to the Dutch royal house.",
     sources: [
@@ -5134,6 +5194,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "The USMNT Crest, Explained — ColorWay Sports", url: "https://www.colorwaysports.com/stories/usmnt-crest-us-soccer-badge-explained" },
     ],
   },
+  "uy-artigas": {
+    description: "Designed in 1815 by national hero José Gervasio Artigas, the blue-and-white bars were adopted from Manuel Belgrano's proposed flag for a confederation of independent South American provinces, and the red diagonal band stands for federalism — the cause Artigas led.",
+    sources: [
+      { title: "Artigas flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Artigas_flag" },
+    ],
+  },
+  "uy-treinta-y-tres": {
+    description: "The blue stripe stands for greatness, the white for the Republic, and the red for the blood of those who died for independence; the motto \"Libertad o Muerte\" (\"Liberty or Death\") honours the Treinta y Tres Orientales, the thirty-three exiles who returned in 1825 to fight Brazilian rule and spark Uruguay's independence.",
+    sources: [
+      { title: "Flag of the Treinta y Tres — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Treinta_y_Tres" },
+    ],
+  },
   "uy-arms": {
     description: "Each of the four quarters carries one idea, and two of them are animals rather than emblems. The upper left holds golden scales for equality and justice; the upper right the Cerro de Montevideo with its fortress on the summit, for strength. Below, a galloping black horse stands for liberty and a golden ox for abundance and plenty. The rising Sun of May crowning the oval is the birth of the nation and the May Revolution, and the laurel branch on one side with the olive on the other are triumph and peace.",
     sources: [
@@ -5176,6 +5248,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Saint Vincent and the Grenadines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
     ],
   },
+  "ve-state": {
+    description: "The coat of arms charged on the state flag shows a wheat sheaf for the union and wealth of the republic's states, a white horse (recalling Simón Bolívar's horse Palomo) for independence and freedom, and swords, sabres and lances tied with laurel for triumph in the wars of independence.",
+    sources: [
+      { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
+    ],
+  },
   "ve-arms": {
     description: "The shield is divided into the three colours of the national flag. On the red field a sheaf of wheat stands for the union of the states and for the country's agricultural wealth; on the yellow field weapons and two national flags tied with laurel stand for the victory of the war of independence; and on the blue field below a white horse runs free, for independence and liberty. Above the shield two crossed cornucopias pour out the country's wealth, and it is flanked by an olive branch and a palm branch tied with a band in the national colours — yellow for the nation's wealth, blue for the ocean that separates Venezuela from Spain, and red for the blood and courage of its people. The arms in this form were established by the Law of the National Flag, Coat of Arms and Anthem of 17 February 1954; in 2006 the horse was turned to run to the dexter, the direction it had faced in the arms of 1863.",
     sources: [
@@ -5198,6 +5276,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The figure is Saint Ursula holding an oil lamp, taken from the territory's coat of arms; the eleven surrounding lamps each stand for 1,000 of the legendary 11,000 virgin martyrs who, with Saint Ursula, gave the British Virgin Islands their name after Columbus called them \"Santa Úrsula y las Once Mil Vírgenes\" in 1493.",
     sources: [
       { title: "Coat of arms of the British Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands" },
+    ],
+  },
+  "vi-official-national": {
+    description: "The eagle, adapted from the United States coat of arms, holds a laurel sprig for victory and three arrows for the territory's three main islands — Saint Croix, Saint Thomas and Saint John — set between the letters V and I for \"Virgin Islands\".",
+    sources: [
+      { title: "Flag of the United States Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
     ],
   },
   "vi-seal": {
