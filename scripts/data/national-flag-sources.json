@@ -16389,7 +16389,20 @@
           "design": "A defaced white ensign with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_flags",
           "sha256": "2f7cf63ec0811aa0b05cc7781e549186e51ad4988433a0ab23903890bbd25810",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Naval Ensign of Sri Lanka is a white flag with the national flag in the canton, adopted in July 1972 when the Dominion of Ceylon became the Democratic Socialist Republic of Sri Lanka and the Royal Ceylon Navy was renamed the Sri Lanka Navy; the red Cross of St George that the earlier Royal Ceylon Navy ensign carried was removed at the same time the country became a republic. The gold lion on the national flag in its canton stands for the bravery of the Sinhalese people, and the blue field for the sea that surrounds the island.",
+            "sources": [
+              {
+                "title": "Flags of the World — Sri Lanka: naval ensigns",
+                "url": "https://www.crwflags.com/fotw/flags/lk~.html"
+              },
+              {
+                "title": "Wikipedia — Sri Lanka Navy",
+                "url": "https://en.wikipedia.org/wiki/Sri_Lanka_Navy"
+              }
+            ]
+          }
         },
         {
           "id": "lk-air-force",
@@ -16402,7 +16415,20 @@
           "design": "A defaced sky blue ensign with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_flags",
           "sha256": "9e0c5d449742936750dac26dc49832ca52edd4b775a2fafa810e4f7888d91493",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Air Force Ensign is a sky-blue field with the national flag in the canton and the air force's own roundel in the fly. When the ensign was first designed for the Royal Ceylon Air Force in 1951, the standard RAF-style roundel was modified with wings in yellow and maroon taken from the colours of the lion flag then flying as the national flag — the same lion that appears on Sri Lanka's national flag today, drawn from the Mahavamsa chronicle's association of the legendary Sinha with the Sinhalese people, and read since as a symbol of their strength and valour.",
+            "sources": [
+              {
+                "title": "Sri Lanka Air Force — Air Force Emblem / Ensign / Roundel",
+                "url": "https://www.airforce.lk/pages.php?pages=air_force_symbols"
+              },
+              {
+                "title": "Wikipedia — Flag of Sri Lanka",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka"
+              }
+            ]
+          }
         },
         {
           "id": "lk-emblem",
@@ -16757,7 +16783,20 @@
           "design": "The air force's ensign.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania",
           "sha256": "4ec1b63c9ce06c23d8af2deedef088f935830be9e271ea5abbcd18cdf32ef7a9",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Air Force Ensign of Lithuania carries the national tricolour canton with the double-barred Cross of Vytis in the fly, the same emblem drawn from the coat of arms of Vytis — the mounted knight long associated with the medieval Grand Duchy of Lithuania and rulers such as Vytautas and Jogaila. The cross has been used across Lithuanian military insignia and aircraft markings since the air force's founding, tying the modern service to that medieval heraldic heritage.",
+            "sources": [
+              {
+                "title": "Flags of the World — Lithuania: Airforce Flags and Aircraft Marking",
+                "url": "https://www.fotw.info/flags/lt%5Eair.html"
+              },
+              {
+                "title": "Wikipedia — Lithuanian Air Force",
+                "url": "https://en.wikipedia.org/wiki/Lithuanian_Air_Force"
+              }
+            ]
+          }
         },
         {
           "id": "lt-naval-ensign",
@@ -17247,7 +17286,20 @@
           "design": "The flag of the Libyan Army.",
           "source": "https://en.wikipedia.org/wiki/Libyan_Army",
           "sha256": "949eb4203396d02b53e6ea19f022b446156d59ac76cda7bb65e373fca1e3adea",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The flag of the modern Libyan Army, adopted after the 2011 revolution, is a white field bearing a golden Eagle of Saladin facing the hoist, its breast charged with a shield in the colours of the post-revolution Libyan tricolour (red, black and green, with the crescent and star), above a green scroll naming the force. The Eagle of Saladin is a symbol of Arab nationalism and unity long used across the region; here it stands beside the reinstated tricolour of the pre-Gaddafi kingdom, which the 2011 revolution readopted as Libya's national flag.",
+            "sources": [
+              {
+                "title": "Wikipedia — National Emblem of Libya",
+                "url": "https://en.wikipedia.org/wiki/National_Emblem_of_Libya"
+              },
+              {
+                "title": "Wikipedia — Libyan Army",
+                "url": "https://en.wikipedia.org/wiki/Libyan_Army"
+              }
+            ]
+          }
         },
         {
           "id": "ly-airforce",
@@ -17773,7 +17825,20 @@
           "design": "The naval ensign.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro",
           "sha256": "1d3f23a6096ddf3c4cc74314c2be0fbe6ef8df05ceca30026494d237a58c80f7",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Montenegro's naval ensign is blue, bearing a white fouled anchor over three wavy lines in the fly and the national flag in the canton, adopted alongside the country's other military flags and emblems in 2010. The anchor over waves is the conventional maritime device marking the ensign as belonging to the navy specifically, distinguishing it from the plain national flag flown ashore.",
+            "sources": [
+              {
+                "title": "Flags of the World — Montenegro: Naval Ensign and Jack",
+                "url": "https://www.fotw.info/flags/me~nav.html"
+              },
+              {
+                "title": "Wikipedia — List of flags of Montenegro",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro"
+              }
+            ]
+          }
         },
         {
           "id": "me-arms",
@@ -19994,7 +20059,20 @@
           "design": "The air force's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Mozambican_flags",
           "sha256": "9074f76026d3b3f657e55032e4bb123d3b7bf30c93ce834ec2ddeebf4b68493a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Mozambique Air Force's flag carries the service's roundel: a black disc bearing a red upward-pointing triangle around a yellow emblem of a cog wheel encircling corn stalks and sugar cane, with an AK-47 crossed over a hoe above a red sun and an open white book. Each element repeats the meaning of the wider national emblem — the book for education, the hoe for agricultural production, the rifle for the defence of the revolution, and the cog wheel for industry — over a small green outline of Mozambique itself.",
+            "sources": [
+              {
+                "title": "Flags of the World — Mozambique Armed Forces",
+                "url": "https://www.crwflags.com/fotw/flags/mz%5E.html"
+              },
+              {
+                "title": "Wikipedia — Flag of Mozambique",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Mozambique"
+              }
+            ]
+          }
         },
         {
           "id": "mz-emblem",
@@ -21541,7 +21619,20 @@
           "design": "The ensign of the Royal Navy of Oman.",
           "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
           "sha256": "d6d3f70ce66057088dcf0fecbf7856e8f6012f3f38edf433060f3f5e0258f521",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The naval ensign of the Royal Navy of Oman carries the national emblem — a khanjar, the traditional curved Omani dagger, sheathed and set over two crossed swords and a belt — placed on a fouled anchor, the standard maritime addition marking it as the navy's own version of the badge shared across the Sultan's Armed Forces. The khanjar and swords were adopted in the 18th century as the badge of the Omani royal family before becoming the national emblem, and together stand for the traditional weaponry, strength and bravery of the Omani people.",
+            "sources": [
+              {
+                "title": "Flags of the World — Royal Navy of Oman and Other Naval Flags",
+                "url": "https://www.crwflags.com/fotw/flags/om~war.html"
+              },
+              {
+                "title": "Wikipedia — National emblem of Oman",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Oman"
+              }
+            ]
+          }
         },
         {
           "id": "om-army",
