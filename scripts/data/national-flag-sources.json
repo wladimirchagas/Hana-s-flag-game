@@ -17182,7 +17182,16 @@
           "design": "The presidential standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro",
           "sha256": "fcd7575ffea49bb303fa2ad60b326b27c545ae530851bfc1f934921246ed9ab3",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A red field bordered in gold bears an enlarged rendering of Montenegro's coat of arms: a golden double-headed eagle — a Byzantine-derived device symbolising the dual authority of church and state — holding a sceptre for temporal rule in one talon and a globus cruciger (an orb topped with a cross) for spiritual and Christian imperial authority in the other, with a golden lion on the eagle's central shield read as a mark of episcopal authority.",
+            "sources": [
+              {
+                "title": "Coat of arms of Montenegro — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro"
+              }
+            ]
+          }
         },
         {
           "id": "me-naval-ensign",
@@ -17701,7 +17710,16 @@
           "design": "A horizontal triband with the armed forces' emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Burmese_flags",
           "sha256": "4cfc2b967a20341c3390c9accb030494bb423b65f3ae3a804b1c03d3b2db3bca",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The armed forces' emblem shows crossed swords within a cogwheel beneath a five-pointed star, in gold: the cogwheel for industry, the star for unity, and the crossed swords for military strength, together marking the Tatmadaw's role in defence and nation-building since Myanmar's 1948 independence. A fuller coat-of-arms version rings the same core device with olive branches and traditional Burmese floral supporters, and serves as the cap badge common to the Army, Navy and Air Force.",
+            "sources": [
+              {
+                "title": "Emblem of Tatmadaw — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Tatmadaw"
+              }
+            ]
+          }
         },
         {
           "id": "mm-army",

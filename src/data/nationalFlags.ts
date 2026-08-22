@@ -4845,6 +4845,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
     ],
   },
+  "me-president": {
+    description: "A red field bordered in gold bears an enlarged rendering of Montenegro's coat of arms: a golden double-headed eagle — a Byzantine-derived device symbolising the dual authority of church and state — holding a sceptre for temporal rule in one talon and a globus cruciger (an orb topped with a cross) for spiritual and Christian imperial authority in the other, with a golden lion on the eagle's central shield read as a mark of episcopal authority.",
+    sources: [
+      { title: "Coat of arms of Montenegro — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro" },
+    ],
+  },
   "me-arms": {
     description: "The double-headed eagle is of Byzantine and ultimately Roman origin, and here stands for the close bond of church and state that defined Montenegro under its prince-bishops, the vladikas. On the breast shield the golden lion passant is a sign of episcopal authority, read as a figure of the Lion of Judah. The crown is that of the Petrović-Njegoš dynasty that ruled Montenegro — its inclusion was mildly controversial when the arms were adopted in 2004, since the country is now a secular republic; the modern design put the lion back on the shield in place of the earlier rulers' initials.",
     sources: [
@@ -4898,6 +4904,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Mali national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Mali_national_football_team" },
       { title: "Flag of Mali — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
+    ],
+  },
+  "mm-tatmadaw": {
+    description: "The armed forces' emblem shows crossed swords within a cogwheel beneath a five-pointed star, in gold: the cogwheel for industry, the star for unity, and the crossed swords for military strength, together marking the Tatmadaw's role in defence and nation-building since Myanmar's 1948 independence. A fuller coat-of-arms version rings the same core device with olive branches and traditional Burmese floral supporters, and serves as the cap badge common to the Army, Navy and Air Force.",
+    sources: [
+      { title: "Emblem of Tatmadaw — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Tatmadaw" },
     ],
   },
   "mm-seal": {
