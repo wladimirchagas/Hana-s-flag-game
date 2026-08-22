@@ -3386,6 +3386,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Curaçao — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao" },
     ],
   },
+  "cy-president": {
+    description: "A copper-yellow field — recalling Cyprus's large copper-ore deposits — bears the national coat of arms: a white dove carrying an olive branch, symbolising peace, above the founding year 1960, framed by a two-part olive wreath representing the island's two communities, Greek and Turkish Cypriots, whose reconciliation the emblem was designed to embody when it was adopted at independence.",
+    sources: [
+      { title: "Coat of arms of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus" },
+    ],
+  },
   "cy-arms": {
     description: "Every element is chosen, and two of them are the same idea twice: the white dove carrying an olive branch is peace, and the olive wreath framing the shield is peace again — a wish that carried real weight for an island independent in 1960 with a mixed Greek and Turkish population. The year 1960 records that independence from British rule. The shield's colour is the point most people miss: it is not gold but copper, specified as Pantone 1385 C, for the copper ore that Cyprus was famous for in antiquity — the island's name and the Latin word for copper, cuprum, are bound together.",
     sources: [
@@ -3517,6 +3523,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The crescent and star repeat Algeria's own national flag, and the two gold stars, read together as “1990”, mark the year Algeria won its first Africa Cup of Nations title, hosted and won on home soil in Algiers.",
     sources: [
       { title: "1990 African Cup of Nations — Wikipedia", url: "https://en.wikipedia.org/wiki/1990_African_Cup_of_Nations" },
+    ],
+  },
+  "ec-president": {
+    description: "The presidential standard bears Ecuador's national coat of arms: a condor with wings spread, standing for energy and vigilance, above an oval shield showing the sun with the zodiac signs of March–June (marking the months of events central to Ecuadorian nationhood), Mount Chimborazo with a river flowing from it, and a steamship bearing a caduceus for navigation and commerce; the shield rests on a bundle of consular rods (a symbol of republican dignity) and is wreathed with palm for the martyrs of independence and laurel for the republic's victories.",
+    sources: [
+      { title: "Coat of arms of Ecuador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador" },
     ],
   },
   "ec-arms": {

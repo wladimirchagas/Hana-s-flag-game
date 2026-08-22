@@ -6535,7 +6535,16 @@
           "design": "A field bearing the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cypriot_flags",
           "sha256": "8bd8ed9271c889bd35ff3b2e7b88193119d2fbf3b64c8e60816bdae14c0ceddf",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A copper-yellow field — recalling Cyprus's large copper-ore deposits — bears the national coat of arms: a white dove carrying an olive branch, symbolising peace, above the founding year 1960, framed by a two-part olive wreath representing the island's two communities, Greek and Turkish Cypriots, whose reconciliation the emblem was designed to embody when it was adopted at independence.",
+            "sources": [
+              {
+                "title": "Coat of arms of Cyprus — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus"
+              }
+            ]
+          }
         },
         {
           "id": "cy-naval-jack",
@@ -7525,7 +7534,16 @@
           "design": "The presidential standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
           "sha256": "2af36d2cf4bdd6b4b7584029c58d713dd18840b242eb76e613ddcabaa8497669",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential standard bears Ecuador's national coat of arms: a condor with wings spread, standing for energy and vigilance, above an oval shield showing the sun with the zodiac signs of March–June (marking the months of events central to Ecuadorian nationhood), Mount Chimborazo with a river flowing from it, and a steamship bearing a caduceus for navigation and commerce; the shield rests on a bundle of consular rods (a symbol of republican dignity) and is wreathed with palm for the martyrs of independence and laurel for the republic's victories.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ecuador — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador"
+              }
+            ]
+          }
         },
         {
           "id": "ec-army",
