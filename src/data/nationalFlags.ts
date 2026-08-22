@@ -4747,6 +4747,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Luxembourg — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
     ],
   },
+  "lv-naval-ensign": {
+    description: "A white field bears a burgundy-red cross fimbriated in white, extending to the flag's edges — a Nordic-cross-style design adapted to Latvia's own colours, first flown from 1919 to 1940 by the fledgling republic's Coast Guard Squadron (renamed the Latvian Navy in 1938 and presented its flag under the motto 'We are united by the holy name of Latvia') and restored in 1991 when the Navy was re-established after Latvia regained independence.",
+    sources: [
+      { title: "Latvian Naval Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Latvian_Naval_Forces" },
+    ],
+  },
+  "lv-pm": {
+    description: "A white field bears the same double-lined red cross as the presidential standard, but with the coat of arms — the rising sun of Latvia's shield — moved from the centre of the cross to the upper-left canton, distinguishing the Prime Minister's flag from the President's while keeping the same national colours and pattern.",
+    sources: [
+      { title: "Latvia - President and Prime Minister Flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lv-pres.html" },
+    ],
+  },
   "lv-arms": {
     description: "The arms combine symbols of Latvian statehood with the arms of the historical regions. The golden sun in the blue upper field is freedom: it had been the badge of the Latvian Riflemen units of the Imperial Russian Army in the First World War, drawn with 17 rays for the 17 Latvian-inhabited districts. The three golden stars above the shield are the three historical regions — Vidzeme, Latgale and Kurzeme. Below, the red lion is the lion of the arms of Courland, standing for Courland and Semigallia and appearing there as early as 1565, while the silver griffin is Vidzeme and Latgale. The oak branches at the foot are the national tree.",
     sources: [
@@ -6102,6 +6114,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The sixteen-pointed gold sun was added to the presidential flag in 1985; each of its sixteen points is popularly associated with one of the \"16 Great Turkic Empires\" said to precede the modern republic, though historians note the historicity of this list, introduced only in 1969, is not established.",
     sources: [
       { title: "16 Great Turkic Empires — Wikipedia", url: "https://en.wikipedia.org/wiki/16_Great_Turkic_Empires" },
+    ],
+  },
+  "tr-gnat": {
+    description: "A white field bears the seal of the Grand National Assembly: the crescent and star from the national flag, ringed by the Turkish name of the institution, 'Türkiye Büyük Millet Meclisi'. Adopted during the Turkish War of Independence, the seal deliberately kept the crescent and star while dropping the ornate dynastic emblems of Ottoman imperial seals, so its plain, parliamentary design itself asserted that sovereignty now rested with the elected Assembly rather than the sultan.",
+    sources: [
+      { title: "Government of the Grand National Assembly — Wikipedia", url: "https://en.wikipedia.org/wiki/Government_of_the_Grand_National_Assembly" },
     ],
   },
   "tr-arms": {
