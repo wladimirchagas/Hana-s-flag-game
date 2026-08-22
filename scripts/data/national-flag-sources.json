@@ -12274,7 +12274,16 @@
           "design": "Adopted in 1947 for ships of the Naval Service.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
           "sha256": "f33e56753fe13bcafbe24304ae26ee5c9765629e7bf9dd645fa68e0d01d7255d",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A green field bears the gold harp with silver strings — Ireland's unique national emblem, drawn from the country's arms since medieval heraldry and long a symbol of Irish identity — adopted in 1947 as the jack flown by ships of the Naval Service, Ireland's navy.",
+            "sources": [
+              {
+                "title": "List of flags of Ireland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland"
+              }
+            ]
+          }
         },
         {
           "id": "ie-naval-colour",
@@ -12287,7 +12296,16 @@
           "design": "A navy-blue colour bearing the Naval Service badge.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
           "sha256": "d9d562eb40a76fff9e51f8e321771a53ab4a10c315ebef48f9af492a3bb582e0",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A navy-blue colour bears the badge of the Naval Service — the Defence Forces' own sunburst badge, with the Gaelic letters 'FF' (for Fórsaí Cosanta Áitiúla / Óglaigh na hÉireann, the Irish name for the Defence Forces) at its centre — superimposed on two crossed silver fouled anchors, marking the flag as the maritime branch's own ceremonial colour.",
+            "sources": [
+              {
+                "title": "Irish Defence Forces cap badge — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Irish_Defence_Forces_cap_badge"
+              }
+            ]
+          }
         },
         {
           "id": "ie-royal-standard",
@@ -12381,7 +12399,16 @@
           "design": "The Air Corps' flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
           "sha256": "359fc65ed0edb4c6fb05c68fc88b55cdb57e48846f745053e381595a8a72a1d1",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A field split by diagonal red and yellow stripes bears the Defence Forces' sunburst emblem in the upper hoist and the Air Corps' own roundel in the lower fly, together marking the flag as that of Ireland's air arm within the wider Defence Forces.",
+            "sources": [
+              {
+                "title": "Ireland: the Naval Service — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ie-naval.html"
+              }
+            ]
+          }
         },
         {
           "id": "ie-arms",
@@ -12753,7 +12780,16 @@
           "design": "A white field with the national flag in the canton and the navy's octagonal crest in the fly, adopted in 2022.",
           "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
           "sha256": "a64f3573c76d9c8096927dd040fa0f8399e2b22a0d91326c0f95a9161752ff1c",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A navy-blue, gold-bordered octagon in the fly encloses the Indian Navy's crest: the golden Lion Capital of Ashoka (India's state emblem) resting on an anchor, over the motto 'Sam No Varunah' ('may the god of the seas, Varuna, be auspicious to us'). The octagonal shape is drawn from the royal seal (Rajmudra) of the 17th-century Maratha ruler Chhatrapati Shivaji, standing for the eight cardinal and intercardinal directions and the Navy's all-round maritime reach; adopted in 2022, replacing an earlier ensign that had carried the British-derived St George's Cross.",
+            "sources": [
+              {
+                "title": "The New Navy Ensign Of New (And Ancient) India — Swarajya",
+                "url": "https://swarajyamag.com/ideas/the-new-navy-ensign-of-new-and-ancient-india"
+              }
+            ]
+          }
         },
         {
           "id": "in-civil-ensign",
@@ -12775,7 +12811,16 @@
           "design": "A Blue Ensign with the national flag in the canton and a yellow anchor.",
           "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
           "sha256": "658e603d399e5835adca8f585e345fbb818f2ebba5ce1d0a2bfdb69a33fbd8ca",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A blue ensign bears the national flag in the canton and a plain yellow anchor in the fly — the anchor a traditional emblem of steadfastness, standing for the resolve of those who crew India's non-military government vessels.",
+            "sources": [
+              {
+                "title": "List of Indian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Indian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "in-president-1950",
@@ -12788,7 +12833,16 @@
           "design": "Quartered dark blue: the Lions of Sarnath, an elephant, a pair of scales and a lotus vase — discontinued in 1971 in favour of the national flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
           "sha256": "ccd58f3d0d1a782711d978958ce2efdf4ec196d38df6f03b461249ce05522e96",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Each of the four quarters carries one gold-outlined national symbol, all drawn from historic Indian art: the Lions of Sarnath (the Lion Capital of Ashoka, India's state emblem) for unity; an Indian elephant, based on a 5th-century painting from the Ajanta Caves, for patience and strength; a weighing scale, drawn from the 17th-century Red Fort in Delhi, for justice and economy; and a vase of Indian lotuses from Sarnath, for prosperity. The standard was flown from India's 1950 founding as a republic until 1971, when the President began flying the national flag instead.",
+            "sources": [
+              {
+                "title": "Presidential standard of India — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Presidential_standard_of_India"
+              }
+            ]
+          }
         },
         {
           "id": "in-uk-1858",

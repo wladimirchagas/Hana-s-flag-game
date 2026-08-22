@@ -4369,6 +4369,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
     ],
   },
+  "ie-naval-colour": {
+    description: "A navy-blue colour bears the badge of the Naval Service — the Defence Forces' own sunburst badge, with the Gaelic letters 'FF' (for Fórsaí Cosanta Áitiúla / Óglaigh na hÉireann, the Irish name for the Defence Forces) at its centre — superimposed on two crossed silver fouled anchors, marking the flag as the maritime branch's own ceremonial colour.",
+    sources: [
+      { title: "Irish Defence Forces cap badge — Wikipedia", url: "https://en.wikipedia.org/wiki/Irish_Defence_Forces_cap_badge" },
+    ],
+  },
+  "ie-air-corps": {
+    description: "A field split by diagonal red and yellow stripes bears the Defence Forces' sunburst emblem in the upper hoist and the Air Corps' own roundel in the lower fly, together marking the flag as that of Ireland's air arm within the wider Defence Forces.",
+    sources: [
+      { title: "Ireland: the Naval Service — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ie-naval.html" },
+    ],
+  },
+  "ie-naval-jack": {
+    description: "A green field bears the gold harp with silver strings — Ireland's unique national emblem, drawn from the country's arms since medieval heraldry and long a symbol of Irish identity — adopted in 1947 as the jack flown by ships of the Naval Service, Ireland's navy.",
+    sources: [
+      { title: "List of flags of Ireland — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
+    ],
+  },
   "ie-president": {
     description: "A blue field bears a gold harp with silver strings — Ireland's unique choice of a musical instrument as its national emblem, first recorded as the country's arms in medieval heraldry and adopted into the royal Standard of the Kingdom of Ireland when Henry VIII proclaimed himself its king in 1542; the design is modelled on the 14th-century Brian Boru harp held at Trinity College Dublin, and the harp had long since become, especially from the 17th century onward, a symbol of Irish identity and nationalism in its own right.",
     sources: [
@@ -4446,6 +4464,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The flag's three colours each stand for one of India's armed services: red for the Army, navy blue for the Navy, and light (sky) blue for the Air Force — a design based on the United Kingdom's own Joint Services flag.",
     sources: [
       { title: "List of Indian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Indian_flags" },
+    ],
+  },
+  "in-naval-ensign": {
+    description: "A navy-blue, gold-bordered octagon in the fly encloses the Indian Navy's crest: the golden Lion Capital of Ashoka (India's state emblem) resting on an anchor, over the motto 'Sam No Varunah' ('may the god of the seas, Varuna, be auspicious to us'). The octagonal shape is drawn from the royal seal (Rajmudra) of the 17th-century Maratha ruler Chhatrapati Shivaji, standing for the eight cardinal and intercardinal directions and the Navy's all-round maritime reach; adopted in 2022, replacing an earlier ensign that had carried the British-derived St George's Cross.",
+    sources: [
+      { title: "The New Navy Ensign Of New (And Ancient) India — Swarajya", url: "https://swarajyamag.com/ideas/the-new-navy-ensign-of-new-and-ancient-india" },
+    ],
+  },
+  "in-state-ensign": {
+    description: "A blue ensign bears the national flag in the canton and a plain yellow anchor in the fly — the anchor a traditional emblem of steadfastness, standing for the resolve of those who crew India's non-military government vessels.",
+    sources: [
+      { title: "List of Indian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Indian_flags" },
+    ],
+  },
+  "in-president-1950": {
+    description: "Each of the four quarters carries one gold-outlined national symbol, all drawn from historic Indian art: the Lions of Sarnath (the Lion Capital of Ashoka, India's state emblem) for unity; an Indian elephant, based on a 5th-century painting from the Ajanta Caves, for patience and strength; a weighing scale, drawn from the 17th-century Red Fort in Delhi, for justice and economy; and a vase of Indian lotuses from Sarnath, for prosperity. The standard was flown from India's 1950 founding as a republic until 1971, when the President began flying the national flag instead.",
+    sources: [
+      { title: "Presidential standard of India — Wikipedia", url: "https://en.wikipedia.org/wiki/Presidential_standard_of_India" },
     ],
   },
   "in-arms": {
