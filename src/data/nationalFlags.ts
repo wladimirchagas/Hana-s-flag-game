@@ -3498,6 +3498,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Union Jack — Wikipedia", url: "https://en.wikipedia.org/wiki/Union_Jack" },
     ],
   },
+  "gb-white-ensign": {
+    description: "The White Ensign has been flown by ships of the Royal Navy since the Royal Navy's separate coloured squadrons were abolished in 1864 and the White Ensign was reserved for the fighting fleet alone.",
+    sources: [
+      { title: "British ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/British_ensign" },
+    ],
+  },
+  "gb-red-ensign": {
+    description: "The Red Ensign has marked British merchant and passenger ships since 1707, and became the dedicated flag of the Merchant Navy once the Royal Navy's squadron colours were consolidated in 1864.",
+    sources: [
+      { title: "Red Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Red_Ensign" },
+    ],
+  },
+  "gb-blue-ensign": {
+    description: "The Blue Ensign was reserved in 1864 for non-military government vessels and for ships commanded by an officer of the Royal Naval Reserve, distinguishing them from the Royal Navy's White Ensign and the Merchant Navy's Red Ensign.",
+    sources: [
+      { title: "Blue Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Blue_Ensign" },
+    ],
+  },
   "gb-arms": {
     description: "The shield is a record of which crowns came together and when: the three lions of England in two quarters, the rampant lion of Scotland, and the harp of Ireland — quartered after James VI of Scotland inherited the English and Irish thrones in 1603, precisely to show the union of the crowns in one device. The lion supporter is England’s and the unicorn Scotland’s, the unicorn chained because a free unicorn was held to be dangerous. Wales appears nowhere on the shield, because it was already annexed to the English crown before the arms were composed, and is represented instead by separate royal badges. On the compartment below grow a thistle, a Tudor rose and a shamrock for Scotland, England and Ireland.",
     sources: [
@@ -3830,6 +3848,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Isle of Man — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Isle_of_Man" },
     ],
   },
+  "in-armed-forces": {
+    description: "The flag's three colours each stand for one of India's armed services: red for the Army, navy blue for the Navy, and light (sky) blue for the Air Force — a design based on the United Kingdom's own Joint Services flag.",
+    sources: [
+      { title: "List of Indian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Indian_flags" },
+    ],
+  },
   "in-arms": {
     description: "The emblem is an adaptation of the Lion Capital of Ashoka, carved in the third century BC and set up at Sarnath where the Buddha first taught — so independent India took its emblem not from heraldry but from its own antiquity. Four lions stand back to back on the original; the emblem shows three, the fourth hidden behind, which is why it appears to have three. Below them runs the abacus with a horse and a bull separated by the Dharma Chakra, the wheel of law — the same wheel that stands at the centre of the national flag. The motto beneath, Satyameva Jayate, “truth alone triumphs”, is a line from the Mundaka Upanishad.",
     sources: [
@@ -3897,6 +3921,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Landvættir — Wikipedia", url: "https://en.wikipedia.org/wiki/Landv%C3%A6ttir" },
     ],
   },
+  "it-civil-ensign": {
+    description: "The shield quartering the arms of Venice, Genoa, Pisa and Amalfi — Italy's medieval maritime republics — has marked the merchant ensign since 1947, honouring the seafaring and trading power these cities once wielded across the Mediterranean.",
+    sources: [
+      { title: "Maritime republics — Wikipedia", url: "https://en.wikipedia.org/wiki/Maritime_republics" },
+    ],
+  },
+  "it-state-ensign": {
+    description: "The same shield quartering the arms of Venice, Genoa, Pisa and Amalfi appears here beneath a mural crown — a heraldic emblem of civic authority — marking the ensign as reserved for vessels in state rather than merchant service.",
+    sources: [
+      { title: "Maritime republics — Wikipedia", url: "https://en.wikipedia.org/wiki/Maritime_republics" },
+    ],
+  },
+  "it-naval-jack": {
+    description: "The four quarters are the arms of Italy's medieval maritime republics — Venice's winged lion, Genoa's cross of Saint George, Pisa's cross pattée and Amalfi's octagonal cross — powerful port cities whose trade and naval strength once rivalled empires; their arms have marked the Italian Navy's and merchant marine's ensigns since 1947.",
+    sources: [
+      { title: "Maritime republics — Wikipedia", url: "https://en.wikipedia.org/wiki/Maritime_republics" },
+    ],
+  },
   "it-arms": {
     description: "Adopted in 1948, the emblem is built from republican symbols rather than dynastic heraldry. The white Stella d'Italia — the ancient Star of Italy — sits over a steel cogwheel standing for labour, the foundation the Constitution names in its first article (“a democratic republic founded on labour”). The olive branch to the left is peace; the oak branch to the right is strength and dignity (Latin robur means both oak and strength); the red ribbon binding them names the Repubblica Italiana.",
     sources: [
@@ -3938,6 +3980,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The seven-pointed star and the black-white-green-red colours are the same as on Jordan's own national flag: the colours are the Pan-Arab colours of the 1916 Arab Revolt, and the star's seven points stand for the unity of the Arab peoples and, in a religious reading, the seven verses of Al-Fatiha, the opening chapter of the Quran.",
     sources: [
       { title: "Flag of Jordan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
+    ],
+  },
+  "jp-jsdf": {
+    description: "The eight-ray sun disc is a Japan Ground Self-Defense Force flag adopted in 1972, descended from the Hinomaru sun-disc imagery long associated with Japan as the \"Land of the Rising Sun\"; sun rays of this kind have been used on Japanese military colours since the Imperial Japanese Army adopted a similar design in 1870.",
+    sources: [
+      { title: "Rising Sun Flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Rising_Sun_Flag" },
+    ],
+  },
+  "jp-jmsdf": {
+    description: "The sixteen-ray rising sun was re-adopted by the Japan Maritime Self-Defense Force in 1954, continuing the sun-ray naval ensign design first adopted by the Imperial Japanese Navy in 1889 and carrying forward Japan's long visual tradition of the rising sun.",
+    sources: [
+      { title: "Rising Sun Flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Rising_Sun_Flag" },
+    ],
+  },
+  "jp-ijn": {
+    description: "Adopted by the Imperial Japanese Navy in 1889, the sixteen-ray rising sun was flown throughout the Empire of Japan's wars, including the Second World War; the same sun-ray design (re-adopted in 1954) is flown today by the Japan Maritime Self-Defense Force.",
+    sources: [
+      { title: "Rising Sun Flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Rising_Sun_Flag" },
     ],
   },
   "jp-arms": {
@@ -5117,6 +5177,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Togo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
     ],
   },
+  "th-naval-ensign": {
+    description: "The white elephant, adopted for the naval ensign in 1917, recalls Thailand's own flag from 1855 to 1916, when a white elephant on red was the national flag; white elephants have long symbolised royal power and the prosperity of the kingdom under Thai monarchs.",
+    sources: [
+      { title: "The White Elephant — Cittra Collective", url: "https://cittra-collective.co.uk/blogs/thailand-culture-and-history/the-white-elephant-of-thailand" },
+    ],
+  },
   "th-emblem": {
     description: "The emblem is the Phra Khrut Pha — \"Garuda as the vehicle\" — the mount of the god Vishnu (Narayana) in Hindu and Buddhist tradition. Thai kingship drew on Indian doctrine in which the king is an incarnation of Narayana, so the god's mount became the king's own device: the Garuda stands for the sovereign himself rather than for the land or the people. In Buddhist tradition the emphasis falls on the Garuda's deeds, which portray him as righteous and merciful. Earlier kings used four great royal seals and, from 1873, a European-style coat of arms; Vajiravudh (Rama VI) abandoned that in 1910 in favour of the Garuda alone, and the Act on the Seals of State of 1911 established it as the emblem of the kingdom. It appears on the letterhead of almost every Thai government document and marks state property.",
     sources: [
@@ -5186,6 +5252,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Tonga — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tonga" },
     ],
   },
+  "tr-president": {
+    description: "The sixteen-pointed gold sun was added to the presidential flag in 1985; each of its sixteen points is popularly associated with one of the \"16 Great Turkic Empires\" said to precede the modern republic, though historians note the historicity of this list, introduced only in 1969, is not established.",
+    sources: [
+      { title: "16 Great Turkic Empires — Wikipedia", url: "https://en.wikipedia.org/wiki/16_Great_Turkic_Empires" },
+    ],
+  },
   "tr-arms": {
     description: "Turkey has no official national coat of arms at all — a deliberate republican break. When the sultanate was abolished on 1 November 1922 the Ottoman coat of arms went with it and was never replaced, so what the state uses in an emblem’s place is the star and crescent lifted straight from the flag, set in an oval with the country’s name. It appears on Turkish passports and identity cards and at Turkish diplomatic missions, which makes it an emblem in practice while remaining unofficial in law. The crescent and star themselves come from the Ottoman flag of 1844, which is also the basis of today’s flag.",
     sources: [
@@ -5248,6 +5320,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
     ],
   },
+  "ua-president": {
+    description: "The gold tryzub (trident) is Ukraine's national coat of arms, tracing back over a thousand years to the seal of the Rurikid princes of Kievan Rus'; adopted as the modern state's small coat of arms in 1992, it stands today as a symbol of Ukrainian sovereignty and national identity.",
+    sources: [
+      { title: "Coat of arms of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
+    ],
+  },
   "ua-arms": {
     description: "The tryzub is the oldest continuously used symbol on Ukrainian territory: it appears on the seals of the Rurik dynasty and was stamped on the gold and silver coins of Volodymyr the Great (980–1015), who passed it to his sons as a dynastic device, and on the bricks of the Church of the Tithes in Kyiv. Its original meaning is not settled — historians have read it as a falcon in flight, an arched bow, an anchor, or the Holy Trinity — and it was not treated as a NATIONAL symbol until 1917, when the historian Mykhailo Hrushevsky proposed it over rival candidates such as a crossbow or a Cossack with a musket. Vasyl Krychevsky's drawing was adopted by the Ukrainian People's Republic in February 1918, and the small coat of arms was readopted on 19 February 1992; the constitution provides for a great coat of arms that has still not been adopted.",
     sources: [
@@ -5270,6 +5348,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The black, yellow and red sash repeats the bands of Uganda's own national flag, adopted at independence in 1962.",
     sources: [
       { title: "Flag of Uganda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
+    ],
+  },
+  "us-marines": {
+    description: "The eagle represents the United States; the globe, showing the Western Hemisphere, signifies the Marine Corps' worldwide service; and the anchor — part of the emblem since the Corps' 1775 founding — marks its naval tradition and amphibious role within the Department of the Navy.",
+    sources: [
+      { title: "Eagle, Globe, and Anchor — Wikipedia", url: "https://en.wikipedia.org/wiki/Eagle,_Globe,_and_Anchor" },
     ],
   },
   "us-arms": {

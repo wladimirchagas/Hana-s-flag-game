@@ -8898,7 +8898,16 @@
           "design": "A white field with St George's cross and the Union Flag in the canton — flown by ships of the Royal Navy.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "7f117e0df4366a46e5b328a2dabc4ac6676b7c9477fd8ca227b5cf67a80df716",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The White Ensign has been flown by ships of the Royal Navy since the Royal Navy's separate coloured squadrons were abolished in 1864 and the White Ensign was reserved for the fighting fleet alone.",
+            "sources": [
+              {
+                "title": "British ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/British_ensign"
+              }
+            ]
+          }
         },
         {
           "id": "gb-red-ensign",
@@ -8911,7 +8920,16 @@
           "design": "A red field with the Union Flag in the canton — the flag of the British merchant fleet.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "9f4699a55f5ad0dce03e623b27c9d10950ec48956b8a6cdfd2cfbee150bb7949",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Red Ensign has marked British merchant and passenger ships since 1707, and became the dedicated flag of the Merchant Navy once the Royal Navy's squadron colours were consolidated in 1864.",
+            "sources": [
+              {
+                "title": "Red Ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Red_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "gb-blue-ensign",
@@ -8924,7 +8942,16 @@
           "design": "A blue field with the Union Flag in the canton, flown by government vessels and by organisations warranted to use it.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "a3aa47e3d99abe6e537e89687156de3a2b32715ae8e066aa16eec4524e629e68",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Blue Ensign was reserved in 1864 for non-military government vessels and for ships commanded by an officer of the Royal Naval Reserve, distinguishing them from the Royal Navy's White Ensign and the Merchant Navy's Red Ensign.",
+            "sources": [
+              {
+                "title": "Blue Ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Blue_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "gb-civil-jack",
@@ -11813,7 +11840,16 @@
           "design": "A horizontal tricolour of red, navy blue and sky blue — one colour for each service — with the tri-service crest.",
           "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
           "sha256": "923a26c3345767dbdd3e7f7c82438ecbb4d8714a99cc101e5426d2ccee59df99",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The flag's three colours each stand for one of India's armed services: red for the Army, navy blue for the Navy, and light (sky) blue for the Air Force — a design based on the United Kingdom's own Joint Services flag.",
+            "sources": [
+              {
+                "title": "List of Indian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Indian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "in-naval-ensign",
@@ -12571,7 +12607,16 @@
           "design": "The tricolour charged with a shield quartering the arms of the four maritime republics — Venice, Genoa, Amalfi and Pisa — without a crown.",
           "source": "https://en.wikipedia.org/wiki/List_of_Italian_flags",
           "sha256": "2ea26b4e96afd4bc8cef1cf1c0524877ea5b073322ab0e56545bea121ea89f1b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The shield quartering the arms of Venice, Genoa, Pisa and Amalfi — Italy's medieval maritime republics — has marked the merchant ensign since 1947, honouring the seafaring and trading power these cities once wielded across the Mediterranean.",
+            "sources": [
+              {
+                "title": "Maritime republics — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Maritime_republics"
+              }
+            ]
+          }
         },
         {
           "id": "it-state-ensign",
@@ -12584,7 +12629,16 @@
           "design": "The same quartered shield beneath a mural crown, worn by state vessels.",
           "source": "https://en.wikipedia.org/wiki/List_of_Italian_flags",
           "sha256": "e8d21a908555763c92fe87b716d03beba74a634aae3adbb29b309c24d37bd9e8",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The same shield quartering the arms of Venice, Genoa, Pisa and Amalfi appears here beneath a mural crown — a heraldic emblem of civic authority — marking the ensign as reserved for vessels in state rather than merchant service.",
+            "sources": [
+              {
+                "title": "Maritime republics — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Maritime_republics"
+              }
+            ]
+          }
         },
         {
           "id": "it-president",
@@ -12621,7 +12675,16 @@
           "design": "A shield divided into four quarters for the four Maritime Republics: Venice (the lion, top left), Genoa (top right), Amalfi (bottom left) and Pisa, shown by their respective crosses.",
           "source": "https://en.wikipedia.org/wiki/List_of_Italian_flags",
           "sha256": "d4545d4089fa9554ad32b1f8023327914bd181b8a8d5e569677a4b946587d300",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The four quarters are the arms of Italy's medieval maritime republics — Venice's winged lion, Genoa's cross of Saint George, Pisa's cross pattée and Amalfi's octagonal cross — powerful port cities whose trade and naval strength once rivalled empires; their arms have marked the Italian Navy's and merchant marine's ensigns since 1947.",
+            "sources": [
+              {
+                "title": "Maritime republics — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Maritime_republics"
+              }
+            ]
+          }
         },
         {
           "id": "it-arms",
@@ -13046,7 +13109,16 @@
           "design": "A sun disc with eight red rays, used by the Self-Defense Forces and the Ground Self-Defense Force.",
           "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags",
           "sha256": "fe4436d3ac4055dc027588e5de859e0ec05daede2d8aaedee3201b6547942712",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The eight-ray sun disc is a Japan Ground Self-Defense Force flag adopted in 1972, descended from the Hinomaru sun-disc imagery long associated with Japan as the \"Land of the Rising Sun\"; sun rays of this kind have been used on Japanese military colours since the Imperial Japanese Army adopted a similar design in 1870.",
+            "sources": [
+              {
+                "title": "Rising Sun Flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Rising_Sun_Flag"
+              }
+            ]
+          }
         },
         {
           "id": "jp-jmsdf",
@@ -13057,7 +13129,16 @@
           "design": "The rising-sun ensign: a sun disc offset toward the hoist with sixteen rays.",
           "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags",
           "sha256": "5385dee0a656bd1e468aefd229a76786392c19254af669b8ac58aa4008f0f6f7",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The sixteen-ray rising sun was re-adopted by the Japan Maritime Self-Defense Force in 1954, continuing the sun-ray naval ensign design first adopted by the Imperial Japanese Navy in 1889 and carrying forward Japan's long visual tradition of the rising sun.",
+            "sources": [
+              {
+                "title": "Rising Sun Flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Rising_Sun_Flag"
+              }
+            ]
+          }
         },
         {
           "id": "jp-ijn",
@@ -13070,7 +13151,16 @@
           "design": "The same sixteen-ray rising sun, flown by the navy of the Empire of Japan.",
           "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags",
           "sha256": "aede015730efd1f0bf4c1e05c20f0f700ca51a342235c8e8f812b6bdac783a2e",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Adopted by the Imperial Japanese Navy in 1889, the sixteen-ray rising sun was flown throughout the Empire of Japan's wars, including the Second World War; the same sun-ray design (re-adopted in 1954) is flown today by the Japan Maritime Self-Defense Force.",
+            "sources": [
+              {
+                "title": "Rising Sun Flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Rising_Sun_Flag"
+              }
+            ]
+          }
         },
         {
           "id": "jp-emperor",
@@ -24901,7 +24991,16 @@
           "design": "The national flag charged with a red disc containing a white elephant in regalia.",
           "source": "https://en.wikipedia.org/wiki/List_of_Thai_flags",
           "sha256": "a39e2c5185d11d78afe36578223bd8baf40eab485c48e1823f70618da106387b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The white elephant, adopted for the naval ensign in 1917, recalls Thailand's own flag from 1855 to 1916, when a white elephant on red was the national flag; white elephants have long symbolised royal power and the prosperity of the kingdom under Thai monarchs.",
+            "sources": [
+              {
+                "title": "The White Elephant — Cittra Collective",
+                "url": "https://cittra-collective.co.uk/blogs/thailand-culture-and-history/the-white-elephant-of-thailand"
+              }
+            ]
+          }
         },
         {
           "id": "th-naval-jack",
@@ -25608,7 +25707,16 @@
           "design": "The national flag with a golden sun of sixteen rays in the canton, one ray for each of the historic Turkic states.",
           "source": "https://en.wikipedia.org/wiki/List_of_Turkish_flags",
           "sha256": "27baeec71969c4911bcf1b505fae2cc539efacebc39782ed1da4084b616b83cd",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The sixteen-pointed gold sun was added to the presidential flag in 1985; each of its sixteen points is popularly associated with one of the \"16 Great Turkic Empires\" said to precede the modern republic, though historians note the historicity of this list, introduced only in 1969, is not established.",
+            "sources": [
+              {
+                "title": "16 Great Turkic Empires — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/16_Great_Turkic_Empires"
+              }
+            ]
+          }
         },
         {
           "id": "tr-gnat",
@@ -26266,7 +26374,16 @@
           "design": "A blue square bearing the gold tryzub within an ornamental border.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
           "sha256": "762ded01bfaba253656b947e9c47e4d3d054b4bd801efee76f78818de3c3644a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The gold tryzub (trident) is Ukraine's national coat of arms, tracing back over a thousand years to the seal of the Rurikid princes of Kievan Rus'; adopted as the modern state's small coat of arms in 1992, it stands today as a symbol of Ukrainian sovereignty and national identity.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ukraine — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine"
+              }
+            ]
+          }
         },
         {
           "id": "ua-mod",
@@ -26995,7 +27112,16 @@
           "design": "The Marine Corps emblem — eagle, globe and anchor — on a scarlet field.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
           "sha256": "0adb938f2a15c6aef24dd5337a2170bb4aba3bed64c1faa5d6ee4ee645e7a3b3",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The eagle represents the United States; the globe, showing the Western Hemisphere, signifies the Marine Corps' worldwide service; and the anchor — part of the emblem since the Corps' 1775 founding — marks its naval tradition and amphibious role within the Department of the Navy.",
+            "sources": [
+              {
+                "title": "Eagle, Globe, and Anchor — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Eagle,_Globe,_and_Anchor"
+              }
+            ]
+          }
         },
         {
           "id": "us-air-force",
