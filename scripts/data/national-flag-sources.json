@@ -24170,7 +24170,16 @@
           "design": "The royal standard as borne during the union with Norway’s later period.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden",
           "sha256": "77f3e68138115dd716f495500d58c624c5b3ffd133e4a4919213163626962634",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Sweden's national war flag charged with the combined union arms of Sweden and Norway, surrounded by the union mark of equally-distributed Swedish and Norwegian colours in the canton — the whole design expressing the personal union of the two kingdoms (1814–1905) under one monarch while affirming each nation's separate and equal status, with two crowns over the shield marking the two distinct kingdoms rather than one merged state.",
+            "sources": [
+              {
+                "title": "Union mark of Norway and Sweden — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Union_mark_of_Norway_and_Sweden"
+              }
+            ]
+          }
         },
         {
           "id": "se-arms",
@@ -24342,7 +24351,16 @@
           "design": "A red field with a white crescent and five stars.",
           "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
           "sha256": "d4c31fa37cc8a1838edc2b4c7c67a49a083f98717fb9a46a12f0c83dcf6c0719",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A red field — read as standing for universal brotherhood and the equality of all people — bears a white crescent moon for a young nation on the rise and five stars for the ideals of democracy, peace, progress, justice and equality, the same devices as the national flag's canton; the standard is flown from the highest point of the Istana whenever the President is in residence.",
+            "sources": [
+              {
+                "title": "Presidential Standard (Singapore) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/sg_presi.html"
+              }
+            ]
+          }
         },
         {
           "id": "sg-state-ensign",
@@ -24561,7 +24579,16 @@
           "design": "The armed forces' flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Slovenian_flags",
           "sha256": "5480788f61ca3fdbd59de5d42e387a76b3fe8de249cbb8edb5b8445f1eb024d4",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A white-blue-red field bears the Slovenian Army emblem: a stylised Mount Triglav, the country's highest peak and national coat of arms device, standing for national pride and identity, above two crossed swords; the emblem's three gold stars are drawn from the historic arms of the Counts of Celje, and its two wavy blue lines represent the Adriatic Sea and Slovenia's rivers.",
+            "sources": [
+              {
+                "title": "The Slovenian Flag Explained — ling-app.com",
+                "url": "https://ling-app.com/blog/slovenian-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "si-arms",
@@ -30081,7 +30108,16 @@
           "design": "The first post-apartheid defence-force ensign, replaced in 2003.",
           "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
           "sha256": "eecd27c6d6356d5e72164148c58dc0d04dae1dba3a13927c9a38bf8c8582cd20",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A green field bears the new post-1994 South African flag in the upper hoist and, in the fly, an emblem inherited from the earlier SADF ensign of 1981: the ground plan of the Castle of Good Hope in white, a dark-blue anchor for the Navy, a horizontal pair of steel-blue wings for the Air Force, and a pair of crossed orange swords for the Army. Approved on 11 July 1994 for the newly merged South African National Defence Force — which brought together the old SADF with the ANC's Umkhonto we Sizwe, the PAC's APLA and other forces — it kept the unified-service emblem while replacing the apartheid-era flag with the new national one, and was itself replaced in 2003.",
+            "sources": [
+              {
+                "title": "South African National Defence Force Flags — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/za-ndf.html"
+              }
+            ]
+          }
         },
         {
           "id": "za-uk",
