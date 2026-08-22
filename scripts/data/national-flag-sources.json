@@ -3116,7 +3116,16 @@
           "design": "The crest of the Bolivian Football Federation — a condor above a football lettered “FBF”, on a shield in the red, yellow and green of Bolivia.",
           "source": "https://en.wikipedia.org/wiki/Bolivian_Football_Federation",
           "sha256": "e4c5ee2e8d4b80c66c469fa3c0a21bfc02901a3e4b10081d115401f119c5ca70",
-          "fetched": "2026-08-16"
+          "fetched": "2026-08-16",
+          "meaning": {
+            "description": "The Andean condor crowns Bolivia's own national coat of arms, shown rising above the shield; one of South America's most iconic birds, it is read in Bolivian heraldry as a mark of strength, freedom and national pride. The shield's red, yellow and green repeat the colours of the national flag, and FBF is the federation's own initials, Federación Boliviana de Fútbol.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bolivia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bolivia"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -4263,7 +4272,16 @@
           "design": "The crest of Canada Soccer — a red maple leaf above a soccer ball and the word CANADA.",
           "source": "https://en.wikipedia.org/wiki/Canada_Soccer",
           "sha256": "56b1eca0df1b65f9e8d3ed940ddc3a4867dad83ca4e26ccd6c2f09057c4aae6e",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The maple leaf is Canada's own national symbol, adopted by French Canadians along the Saint Lawrence River as early as the 1700s and formally centred on the national flag in 1965; the flag's own eleven-pointed leaf is stylised rather than any single maple species, standing for the many maple trees native to the country.",
+            "sources": [
+              {
+                "title": "Maple leaf — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Maple_leaf"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -5692,7 +5710,7 @@
           "name": "Crest of the Costa Rica national football team",
           "commons": "Costa Rica national football team logo.svg",
           "file": "cr/cr-football-crest.svg",
-          "design": "The crest of the Costa Rica national football team.",
+          "design": "The crest of the Costa Rica national football team — a shield in navy, white, red and gold bearing a stylised “CR” monogram.",
           "source": "https://en.wikipedia.org/wiki/Costa_Rica_national_football_team",
           "sha256": "65cf7b28c0729a4c5809ff2646410948a0db90363106c7e5265492f6aab30d66",
           "fetched": "2026-08-18"
@@ -5831,10 +5849,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/a/a7/Cuba_national_football_team.png",
           "file": "cu/cu-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Cuba national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Cuba_national_football_team.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Cuba national football team.",
+          "design": "The crest of the Cuba national football team — a shield with blue vertical stripes echoing the national flag, lettered “Cuba”, over a red football bearing a white star.",
           "source": "https://en.wikipedia.org/wiki/Cuba_national_football_team",
           "sha256": "d847430a1a227a7d571ecf1fb86d76a4695b28b5eb6116f376a1176f8f366975",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The blue stripes and the white star both repeat Cuba's own national flag, first raised in 1849 and adopted at independence in 1902: the blue stripes originally stood for the three departments Cuba was then divided into, and the white star — the “Lone Star” — for the country's own, singular path to independence.",
+            "sources": [
+              {
+                "title": "Flag of Cuba — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Cuba"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -6737,7 +6764,16 @@
           "design": "The crest of the Dominican Republic national football team.",
           "source": "https://en.wikipedia.org/wiki/Dominican_Republic_national_football_team",
           "sha256": "7dbb20b5496c38dce34742796275e8ab0a0508ee9b0fa1057dd0827281947d29",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The white cross and the blue-and-red quarters repeat the Dominican Republic's own national flag, designed by independence leader Juan Pablo Duarte and first flown in 1844: the cross for peace and the unity of the Dominican people, blue for liberty, and red for the blood of the country's patriots.",
+            "sources": [
+              {
+                "title": "Flag of the Dominican Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -9860,10 +9896,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/be/Guatemala_national_football_team_logo.svg",
           "file": "gt/gt-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Guatemala national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Guatemala_national_football_team_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Guatemala national football team.",
+          "design": "The crest of the Federación Nacional de Fútbol de Guatemala — a bronze shield outline with a blue resplendent quetzal in flight, lettered “FFG”.",
           "source": "https://en.wikipedia.org/wiki/Guatemala_national_football_team",
           "sha256": "6b969bba7ac3384d28a6863b7e0cf259473183339dbd2f3155f2bc1290eb8f65",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The resplendent quetzal is Guatemala's own national bird, carried on its flag and coat of arms and giving its name to the national currency, the quetzal. The Maya revered it as sacred and, because captured quetzals were seen to die soon afterward, it became a symbol of liberty — a reading the national anthem itself repeats (“antes muerto que esclavo será”, “rather dead than enslaved”).",
+            "sources": [
+              {
+                "title": "Resplendent quetzal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Resplendent_quetzal"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -10349,10 +10394,19 @@
           "name": "Crest of the Honduras national football team",
           "commons": "Honduras football crest.svg",
           "file": "hn/hn-football-crest.svg",
-          "design": "The crest of the Honduras national football team.",
+          "design": "The crest of the Honduras national football team — a blue letter “H” lettered “Honduras” down one leg, with five white stars down the other.",
           "source": "https://en.wikipedia.org/wiki/Honduras_national_football_team",
           "sha256": "1e5f070dc0949e143d163b2329d19afed6d168a3373005c1d06b89aa7ee11b6b",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The five stars repeat the five stars on Honduras's own national flag, standing for the five nations of the former Federal Republic of Central America — Guatemala, El Salvador, Honduras, Nicaragua and Costa Rica — and expressing the hope that they might one day reunite, after the federation dissolved in 1838.",
+            "sources": [
+              {
+                "title": "Flag of Honduras — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Honduras"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -12370,10 +12424,19 @@
           "name": "Crest of the Jamaica national football team",
           "commons": "Jamaica FA.svg",
           "file": "jm/jm-football-crest.svg",
-          "design": "The crest of the Jamaica national football team.",
+          "design": "The crest of the Jamaica Football Federation — a black-and-yellow pennant bearing the green-and-gold saltire of the national flag, lettered “Football Jamaica Federation”.",
           "source": "https://en.wikipedia.org/wiki/Jamaica_national_football_team",
           "sha256": "f91b3fe03075ac267655ff0176d2d3ca0bd5fffef89cac06188d055e2f848b93",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The gold saltire on green-and-black repeats Jamaica's own national flag: black for the strength and creativity of the people in overcoming hardship, gold for the island's wealth and sunshine, and green for its vegetation and hope. The X-shaped saltire was chosen over stripes specifically so the flag would not resemble any other nation's.",
+            "sources": [
+              {
+                "title": "Flag of Jamaica — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Jamaica"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -19237,10 +19300,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/ee/Panamanian_Football_Federation_logo_2024.svg",
           "file": "pa/pa-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Panama national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Panamanian_Football_Federation_logo_2024.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Panama national football team.",
+          "design": "The crest of the Panamanian Football Federation — a shield lettered “Panamá”, bearing a harpy eagle with wings spread over a small shield in the blue-red-and-star pattern of the national flag.",
           "source": "https://en.wikipedia.org/wiki/Panama_Football_Federation",
           "sha256": "f9a49813699956da7c193583a3f9fe740764e56ad61082a4117de0e5b3380998",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The harpy eagle is Panama's own national bird and crowns the country's national coat of arms, holding a scroll with the national motto in its beak; on the full coat of arms an arc of ten stars above it stands for Panama's ten provinces.",
+            "sources": [
+              {
+                "title": "Coat of arms of Panama — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -23312,7 +23384,16 @@
           "design": "The crest of the Salvadoran Football Federation (FESFUT) — a football within a blue ring lettered “Federación Salvadoreña de Fútbol”, beside an “ES” badge.",
           "source": "https://en.wikipedia.org/wiki/Salvadoran_Football_Federation",
           "sha256": "a0eb256b584eb95def9393197bcf88388c96f0bcedb43de11c62067054f75b19",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The badge's blue repeats the blue bands of El Salvador's own national flag, which stand for the Pacific and Atlantic oceans bordering Central America as a whole (El Salvador itself has no Atlantic coastline). ES is simply the country's own initials, and FESFUT the federation's own name, Federación Salvadoreña de Fútbol.",
+            "sources": [
+              {
+                "title": "Flag of El Salvador — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_El_Salvador"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -24770,10 +24851,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/6/63/Trinidad_and_Tobago_Football_Association_logo.svg",
           "file": "tt/tt-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Trinidad and Tobago national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Trinidad_and_Tobago_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Trinidad and Tobago national football team.",
+          "design": "The crest of the Trinidad and Tobago Football Association — a red-white-and-black shield lettered “TTFA” and “Trinidad & Tobago Football Association”, with a football above a white silhouette map of the two islands.",
           "source": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Football_Association",
           "sha256": "6190080be8c5c24022ebea4f30e88cc9bd3f31802dfcd27c6a1d887fd2b640a0",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The red, white and black repeat Trinidad and Tobago's own national flag, adopted at independence in 1962: red for fire, the sun and courage; black for earth and dedication; and white for water, purity and equality.",
+            "sources": [
+              {
+                "title": "Flag of Trinidad and Tobago — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -26782,10 +26872,19 @@
           "name": "Crest of the Venezuela national football team",
           "commons": "Logotipo de la Federación Venezolana de Fútbol.svg",
           "file": "ve/ve-football-crest.svg",
-          "design": "The crest of the Venezuela national football team.",
+          "design": "The crest of the Venezuela national football team — a gold-and-maroon shield bearing the yellow-blue-red of the national flag, with eight white stars across the blue band.",
           "source": "https://en.wikipedia.org/wiki/Venezuela_national_football_team",
           "sha256": "695c50f2ae957bb75a1e82300ee8d6f4c882ee1ced38f2f066da9d77e98dfe96",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The eight stars repeat Venezuela's own national flag: seven for the provinces that signed the 1811 Declaration of Independence (Caracas, Cumaná, Barinas, Margarita, Barcelona, Mérida and Trujillo), and an eighth added by Simón Bolívar in 1817 for Guayana Province, restored to the flag in 2006 under President Hugo Chávez after decades' absence.",
+            "sources": [
+              {
+                "title": "Flag of Venezuela — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Venezuela"
+              }
+            ]
+          }
         }
       ],
       "independence": {
