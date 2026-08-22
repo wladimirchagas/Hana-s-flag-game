@@ -11854,7 +11854,20 @@
           "design": "The naval ensign of the Croatian Navy.",
           "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
           "sha256": "4c18d47c12cc8cc2e05feb4985a20eb00d5759ab30345bda8df7f6a12335c045",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The naval ensign repeats the red-white-blue tricolour and coat of arms of the civil ensign, with two yellow anchors added in saltire behind the shield to mark it as a naval, rather than merchant, vessel. The coat of arms itself is the historic šahovnica — a chequered shield of thirteen red and twelve white squares — crowned by five smaller shields representing Croatia's historic regions: the oldest Croatian shield alongside those of Dubrovnik, Dalmatia, Istria and Slavonia.",
+            "sources": [
+              {
+                "title": "Flags of the World — Croatia: Naval ensign and jack",
+                "url": "https://www.crwflags.com/fotw/flags/hr~nav1.html"
+              },
+              {
+                "title": "Wikipedia — Coat of arms of Croatia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia"
+              }
+            ]
+          }
         },
         {
           "id": "hr-arms",
@@ -12165,7 +12178,20 @@
           "design": "The tricolour charged with the arms, flown on the Danube.",
           "source": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags",
           "sha256": "bb222f74f93ade041b6a82812920b05fdbb29fd3fd5ebbd25f2b9b48f97360bb",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The naval ensign is the national tricolour bordered with a red-and-green sawtooth edge and charged, offset toward the hoist, with the Hungarian coat of arms flanked by an oak branch and an olive branch, flown by vessels of the Hungarian armed forces on the Danube. The arms combine the Árpád stripes — four red and four silver bands traditionally read as the country's four great rivers, the Danube, Tisza, Dráva and Száva — with the double cross of Hungarian statehood, over the triple mount representing the historic mountain ranges of the kingdom.",
+            "sources": [
+              {
+                "title": "Wikipedia — List of Hungarian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags"
+              },
+              {
+                "title": "Wikipedia — Coat of arms of Hungary",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary"
+              }
+            ]
+          }
         },
         {
           "id": "hu-arms",
@@ -12709,7 +12735,20 @@
           "design": "Five diagonal stripes with the ground arm's emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
           "sha256": "bfa1f5b4df544728111ce59479379db771334fe2e8c47c4408dad1b537ebb09c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Israeli Ground Forces flag carries five diagonal stripes, one for each of the arm's main branches, beneath the same emblem used across the Israel Defense Forces: a sword wrapped in an olive branch, here shown alone rather than set inside the Star of David used by the IDF's overall emblem. The sword stands for combat readiness and the olive branch for the hope of peace — a pairing the ground arm's version keeps without the wings or anchor that mark the air force's and navy's own flags.",
+            "sources": [
+              {
+                "title": "Wikipedia — Israel Defense Forces Emblem",
+                "url": "https://en.wikipedia.org/wiki/Israel_Defense_Forces_Emblem"
+              },
+              {
+                "title": "Flags of the World — Ground Forces (Land Arm) (Israel)",
+                "url": "https://www.crwflags.com/fotw/flags/il%5Earmy.html"
+              }
+            ]
+          }
         },
         {
           "id": "il-army-1983",
@@ -12904,7 +12943,20 @@
           "design": "A Red Ensign with the national flag in the canton, flown by Indian merchant ships.",
           "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
           "sha256": "bc7ef76fa60d4e018866170786c16f184c5cfc9837716924857b2300afd3f1e2",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The civil ensign is flown by Indian-registered merchant vessels under the Merchant Shipping Act, 1958, a red flag bearing the national tricolour in the canton. It descends from the Red Ensign flown by Indian-registered ships under British rule from 1880 to 1947, which then carried the Union Flag defaced with the Star of India in the canton; independent India kept the same red-field convention for its own merchant marine, replacing the colonial canton with its own national flag.",
+            "sources": [
+              {
+                "title": "Flags of the World — Indian Ensigns",
+                "url": "https://www.crwflags.com/fotw/flags/in~.html"
+              },
+              {
+                "title": "Wikipedia — Star of India (flag)",
+                "url": "https://en.wikipedia.org/wiki/Star_of_India_(flag)"
+              }
+            ]
+          }
         },
         {
           "id": "in-state-ensign",
@@ -13961,7 +14013,20 @@
           "design": "The prime minister's standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
           "sha256": "213d1108e4e5bdd40c4c372f1a3e40ba54a6c16018fb9315158dcf81e46af37b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Prime Minister's standard is a light blue flag with a white inner border, bearing on a white disc at the centre the shield of the Jamaican coat of arms surrounded by four small national flags, topped by a ribbon reading 'Prime Minister Jamaica' and flanked by the white letters 'PM'. The coat of arms shield depicts a red cross bearing five gold pineapples, granted to the colony of Jamaica by royal warrant in 1661, crested by a crocodile and flanked by two Taíno supporters bearing the national motto 'Out of Many, One People'.",
+            "sources": [
+              {
+                "title": "Flags of the World — Jamaica: Prime Minister Flag",
+                "url": "https://www.fotw.info/flags/jm_pm.html"
+              },
+              {
+                "title": "Wikipedia — Coat of arms of Jamaica",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica"
+              }
+            ]
+          }
         },
         {
           "id": "jm-defence-force",

@@ -4340,6 +4340,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — List of Croatian flags", url: "https://en.wikipedia.org/wiki/List_of_Croatian_flags" },
     ],
   },
+  "hr-naval-ensign": {
+    description: "The naval ensign repeats the red-white-blue tricolour and coat of arms of the civil ensign, with two yellow anchors added in saltire behind the shield to mark it as a naval, rather than merchant, vessel. The coat of arms itself is the historic šahovnica — a chequered shield of thirteen red and twelve white squares — crowned by five smaller shields representing Croatia's historic regions: the oldest Croatian shield alongside those of Dubrovnik, Dalmatia, Istria and Slavonia.",
+    sources: [
+      { title: "Flags of the World — Croatia: Naval ensign and jack", url: "https://www.crwflags.com/fotw/flags/hr~nav1.html" },
+      { title: "Wikipedia — Coat of arms of Croatia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia" },
+    ],
+  },
   "hr-naval-jack": {
     description: "The red-and-white checkerboard (šahovnica) is Croatia's central national symbol, used as a heraldic device since at least the 16th century; the five smaller shields above it represent Croatia's historic regions.",
     sources: [
@@ -4375,6 +4382,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The palm tree with a Phrygian cap above it is taken from Haiti's coat of arms, where the cap symbolises liberty and the surrounding cannons and flags commemorate Haiti's armed struggle for independence from France in 1804.",
     sources: [
       { title: "Coat of arms of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
+    ],
+  },
+  "hu-naval-ensign": {
+    description: "The naval ensign is the national tricolour bordered with a red-and-green sawtooth edge and charged, offset toward the hoist, with the Hungarian coat of arms flanked by an oak branch and an olive branch, flown by vessels of the Hungarian armed forces on the Danube. The arms combine the Árpád stripes — four red and four silver bands traditionally read as the country's four great rivers, the Danube, Tisza, Dráva and Száva — with the double cross of Hungarian statehood, over the triple mount representing the historic mountain ranges of the kingdom.",
+    sources: [
+      { title: "Wikipedia — List of Hungarian flags", url: "https://en.wikipedia.org/wiki/List_of_Hungarian_flags" },
+      { title: "Wikipedia — Coat of arms of Hungary", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary" },
     ],
   },
   "hu-president": {
@@ -4474,6 +4488,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Israel Defense Forces Emblem — Wikipedia", url: "https://en.wikipedia.org/wiki/Israel_Defense_Forces_Emblem" },
     ],
   },
+  "il-army": {
+    description: "The Israeli Ground Forces flag carries five diagonal stripes, one for each of the arm's main branches, beneath the same emblem used across the Israel Defense Forces: a sword wrapped in an olive branch, here shown alone rather than set inside the Star of David used by the IDF's overall emblem. The sword stands for combat readiness and the olive branch for the hope of peace — a pairing the ground arm's version keeps without the wings or anchor that mark the air force's and navy's own flags.",
+    sources: [
+      { title: "Wikipedia — Israel Defense Forces Emblem", url: "https://en.wikipedia.org/wiki/Israel_Defense_Forces_Emblem" },
+      { title: "Flags of the World — Ground Forces (Land Arm) (Israel)", url: "https://www.crwflags.com/fotw/flags/il%5Earmy.html" },
+    ],
+  },
   "il-civil-ensign": {
     description: "The Star of David, a widely recognised symbol of the Jewish people formally adopted by the First Zionist Congress in 1897, and the blue of the tallit (Jewish prayer shawl) together mark this ensign, worn by Israeli-flagged merchant ships, as a maritime variant of the national flag's own symbolism.",
     sources: [
@@ -4526,6 +4547,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A navy-blue, gold-bordered octagon in the fly encloses the Indian Navy's crest: the golden Lion Capital of Ashoka (India's state emblem) resting on an anchor, over the motto 'Sam No Varunah' ('may the god of the seas, Varuna, be auspicious to us'). The octagonal shape is drawn from the royal seal (Rajmudra) of the 17th-century Maratha ruler Chhatrapati Shivaji, standing for the eight cardinal and intercardinal directions and the Navy's all-round maritime reach; adopted in 2022, replacing an earlier ensign that had carried the British-derived St George's Cross.",
     sources: [
       { title: "The New Navy Ensign Of New (And Ancient) India — Swarajya", url: "https://swarajyamag.com/ideas/the-new-navy-ensign-of-new-and-ancient-india" },
+    ],
+  },
+  "in-civil-ensign": {
+    description: "The civil ensign is flown by Indian-registered merchant vessels under the Merchant Shipping Act, 1958, a red flag bearing the national tricolour in the canton. It descends from the Red Ensign flown by Indian-registered ships under British rule from 1880 to 1947, which then carried the Union Flag defaced with the Star of India in the canton; independent India kept the same red-field convention for its own merchant marine, replacing the colonial canton with its own national flag.",
+    sources: [
+      { title: "Flags of the World — Indian Ensigns", url: "https://www.crwflags.com/fotw/flags/in~.html" },
+      { title: "Wikipedia — Star of India (flag)", url: "https://en.wikipedia.org/wiki/Star_of_India_(flag)" },
     ],
   },
   "in-state-ensign": {
@@ -4674,6 +4702,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A blue field bears the crest from Jamaica's coat of arms: a Jamaican crocodile — a species native to the island — mounted on the royal helmet of the British monarchy, above the country's name; the crocodile stands alongside the coat of arms' other native species, the pineapple, as a mark of Jamaica's indigenous flora and fauna, on a flag that identifies the monarch's own representative on the island.",
     sources: [
       { title: "Coat of arms of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica" },
+    ],
+  },
+  "jm-pm": {
+    description: "The Prime Minister's standard is a light blue flag with a white inner border, bearing on a white disc at the centre the shield of the Jamaican coat of arms surrounded by four small national flags, topped by a ribbon reading 'Prime Minister Jamaica' and flanked by the white letters 'PM'. The coat of arms shield depicts a red cross bearing five gold pineapples, granted to the colony of Jamaica by royal warrant in 1661, crested by a crocodile and flanked by two Taíno supporters bearing the national motto 'Out of Many, One People'.",
+    sources: [
+      { title: "Flags of the World — Jamaica: Prime Minister Flag", url: "https://www.fotw.info/flags/jm_pm.html" },
+      { title: "Wikipedia — Coat of arms of Jamaica", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica" },
     ],
   },
   "jm-arms": {
