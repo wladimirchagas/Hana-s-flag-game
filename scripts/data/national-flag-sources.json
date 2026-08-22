@@ -17387,7 +17387,20 @@
           "design": "A red swallow-tailed field with yellow and green charges.",
           "source": "https://en.wikipedia.org/wiki/List_of_Moroccan_flags",
           "sha256": "c0a6a4bb88b98b1add7f17c3a6e9d1c177a13b84fe762ff984acaa20a742e51d",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Morocco's naval jack is a red, swallow-tailed flag bordered in yellow and bearing a green, yellow-bordered pentagram — the Seal of Solomon — at its centre, the same emblem added to the national flag in 1915. The pentagram is a symbol with roots stretching back to ancient Mesopotamia and was long used across the Islamic world as a protective and identifying device; green marks it as the colour of Islam, and the swallow-tailed shape distinguishes the jack from Morocco's plain rectangular national flag and ensign.",
+            "sources": [
+              {
+                "title": "Wikipedia — List of Moroccan flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Moroccan_flags"
+              },
+              {
+                "title": "Wikipedia — Seal of Solomon",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_Solomon"
+              }
+            ]
+          }
         },
         {
           "id": "ma-arms",
@@ -19802,7 +19815,20 @@
           "design": "A red field defaced with the crest of the Malaysian Army.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "26db6bb9555b5e2e68349445e427839d1dad25b515fa9a7e9a6c15754b733516",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Malaysian Army's flag is a red field bearing the army's crest, which combines two traditional bladed weapons drawn from the country's two halves: the keris, the wavy-bladed dagger long associated with the historic Malay warriors of Peninsular Malaysia, and the duku ilang, a weapon tied to the warrior traditions of the indigenous peoples of Malaysian Borneo. Together the two blades represent the army's roots across both regions that make up modern Malaysia.",
+            "sources": [
+              {
+                "title": "Wikipedia — Malaysian Army",
+                "url": "https://en.wikipedia.org/wiki/Malaysian_Army"
+              },
+              {
+                "title": "Wikipedia — List of Malaysian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "my-air-force",
@@ -20371,7 +20397,20 @@
           "design": "A sky-blue field with the national flag in the canton and the air force roundel.",
           "source": "https://en.wikipedia.org/wiki/List_of_Nigerian_flags",
           "sha256": "8d07364646b990de0c5c53a82fa8fba8cfbdf56ef0be2a1a429427ca0f1631f2",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The air force ensign carries the national flag in the canton and the Nigerian Air Force's roundel — concentric rings of green, white and green — in the same colours as the national flag. Green stands for Nigeria's forests and agricultural wealth and white for peace and unity, the same meanings the national flag carries, marking Nigerian military aircraft with the same identity flown on the ground.",
+            "sources": [
+              {
+                "title": "Flags of the World — Nigerian Air Force",
+                "url": "https://www.crwflags.com/fotw/flags/ng%5Eaf.html"
+              },
+              {
+                "title": "Wikipedia — Flag of Nigeria",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Nigeria"
+              }
+            ]
+          }
         },
         {
           "id": "ng-president",
@@ -21919,7 +21958,20 @@
           "design": "A dark blue field with the navy's emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
           "sha256": "0c24926cd7e6aa3dc33eb0c2b30933a24c025dbb75f994110c0abc5e56bdf2b7",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Peruvian Navy's flag bears the naval emblem: the shield of the national coat of arms set before two crossed silver anchors, with the golden sun of the coat of arms above and a ribbon reading 'Marina de Guerra del Perú' below. The anchors, replacing the crossed flags of the ordinary coat of arms, are the traditional maritime symbol marking the emblem as the navy's own version of the national arms.",
+            "sources": [
+              {
+                "title": "Flags of the World — Peruvian Navy",
+                "url": "https://www.crwflags.com/fotw/flags/pe~m.html"
+              },
+              {
+                "title": "Wikipedia — Coat of arms of Peru",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru"
+              }
+            ]
+          }
         },
         {
           "id": "pe-air-force",
@@ -21930,7 +21982,20 @@
           "design": "A blue field with the air force's emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
           "sha256": "ae2bdcf0da80c44e167957065d7d604100ae9ae493504e1a5423a007b24d7f50",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Peruvian Air Force's flag bears the service's emblem: a golden pair of wings representing the air force itself, alongside a silver upright sword for the army and crossed silver anchors for the navy, joined beneath a golden sun that stands over all three branches of Peru's armed forces. The emblem's ring also carries a stylised condor, a bird long significant in Andean and Peruvian heraldry, on a red ribbon lettered 'Fuerza Aérea del Perú'.",
+            "sources": [
+              {
+                "title": "Flags of the World — Peruvian Air Force",
+                "url": "https://www.crwflags.com/fotw/flags/pe%5Ea.html"
+              },
+              {
+                "title": "Wikipedia — Peruvian Air Force",
+                "url": "https://en.wikipedia.org/wiki/Peruvian_Air_Force"
+              }
+            ]
+          }
         },
         {
           "id": "pe-arms",
@@ -22613,7 +22678,20 @@
           "design": "The national flag defaced with the army's crossed-swords emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
           "sha256": "07df05ac039027fcad6eff02fc01a8a798fd42fca886e66544460e7671df985b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Pakistan Army's flag is the national flag — green with a white hoist-side stripe — defaced with the army's badge: crossed swords behind the national crescent and star. The crescent traditionally stands for progress and the star for light and knowledge, the same meaning they carry on the national flag; the crossed swords added over them mark the flag as belonging to the army specifically, signalling the force that defends those ideals.",
+            "sources": [
+              {
+                "title": "Flags of the World — Pakistan Armed Forces",
+                "url": "https://www.crwflags.com/fotw/flags/pk%5E.html"
+              },
+              {
+                "title": "Wikipedia — Flag of Pakistan",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Pakistan"
+              }
+            ]
+          }
         },
         {
           "id": "pk-air-force",
@@ -23663,7 +23741,20 @@
           "design": "The state coat of arms on the national tricolour.",
           "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
           "sha256": "e8450a7f762bae9169a063504e73a64d83e6439df6d2b1a3159dd19d8359ccca",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The battle flag of the Romanian Defence Staff bears the state coat of arms, adopted in 1992, at the centre of the national tricolour. The arms are led by a golden eagle bearing a cross, an emblem long associated with Wallachia's founding Basarab dynasty and read as a symbol of courage, power and the nation's soaring aspiration, surrounded by shields representing Romania's other historic provinces.",
+            "sources": [
+              {
+                "title": "Wikipedia — Coat of arms of Romania",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania"
+              },
+              {
+                "title": "Wikipedia — List of Romanian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Romanian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "ro-land-forces",
@@ -24473,7 +24564,20 @@
           "design": "The national flag with the navy's emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
           "sha256": "d7f646d450e99e156fb5e60110b5ef5978348edac1da3021133fe99980b3fdbf",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The naval ensign is the national flag charged with the navy's version of Saudi Arabia's national emblem: two crossed swords with a date palm rising between and above the blades, adopted in 1950. The palm stands for the kingdom's vitality and prosperity — its people, history and resources — while the crossed swords beneath it represent the strength that defends that prosperity, and are also read as recalling the Sultanate of Nejd and the Kingdom of Hejaz, the two territories united under Ibn Saud in 1926 to form Saudi Arabia.",
+            "sources": [
+              {
+                "title": "Wikipedia — Emblem of Saudi Arabia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia"
+              },
+              {
+                "title": "Wikipedia — List of Saudi Arabian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "sa-army",
