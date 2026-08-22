@@ -13821,7 +13821,16 @@
           "design": "A gold sixteen-petal chrysanthemum centred on red.",
           "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags",
           "sha256": "c8c4a10a4acf2c03c94c1d14f6912f55e54446de6c15be833ae40dda979ecb8a",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A sixteen-petal chrysanthemum in gold on red — the Imperial Seal, adopted as the personal emblem of Emperor Go-Toba in the Kamakura period (1185–1333) and used by the imperial household ever since. The chrysanthemum traditionally symbolises longevity, rejuvenation and nobility, and the seal itself embodies the authority of the Chrysanthemum Throne; a related sixteen-single-petal version, without the doubled outer row, marks items carrying the Emperor's own authority (passports, Diet members' pins), while other members of the imperial family use a fourteen-petal form.",
+            "sources": [
+              {
+                "title": "Imperial crest of Japan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Imperial_crest_of_Japan"
+              }
+            ]
+          }
         },
         {
           "id": "jp-arms",
@@ -14307,7 +14316,16 @@
           "design": "The royal standard bearing the arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia",
           "sha256": "f67c273ead2e0e869cba34d435a285746f1d1e3e494cc7be686b24d8fd6addaa",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The royal arms show a light-blue shield bearing an Ounalom (the Khmer form of the Buddhist Aum symbol) above a sword on ceremonial platters and a laurel wreath — the Ounalom representing the path to enlightenment — supported by the Gajasingha (a lion with an elephant's trunk) and the Rajasingha (the royal lion), each holding a five-tiered royal umbrella for the King and Queen, beneath the Royal Crown; blue marks the arms as those of the monarchy, and the motto beneath reads 'Ruler of the Kingdom of Cambodia'.",
+            "sources": [
+              {
+                "title": "Coat of arms of Cambodia — Monarchies Wiki",
+                "url": "https://monarchies.fandom.com/wiki/Coat_of_arms_of_Cambodia"
+              }
+            ]
+          }
         },
         {
           "id": "kh-army",
@@ -14820,7 +14838,16 @@
           "design": "A blue field bearing the presidential phoenix emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
           "sha256": "3956e742b30b63a7149591fc11b20d4ab67b890ba1b6e852166616459416c36f",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential emblem shows two Bonghwang (봉황, the Korean phoenix — a composite creature with a rooster's beak, a swallow's face, a snake's neck, a tortoise's back and a fish's tail) facing each other above a Mugunghwa (rose of Sharon, South Korea's national flower). The Bonghwang has long marked royalty and authority in Korean tradition; paired with the ever-blooming Mugunghwa, the emblem is read as expressing the presidency's wish for the Republic of Korea's freedom, peace and lasting prosperity.",
+            "sources": [
+              {
+                "title": "National symbols of South Korea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_symbols_of_South_Korea"
+              }
+            ]
+          }
         },
         {
           "id": "kr-army",
@@ -18224,7 +18251,16 @@
           "design": "A George Cross on a blue field within a red border.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Malta",
           "sha256": "77714d13f420201534546bdf81bf272104847f140634d2bbec94ac3a0e293d0c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A George Cross within a red border on blue: the George Cross was awarded to the whole island of Malta by King George VI in April 1942 in recognition of the Maltese people's resilience through the WWII Siege of Malta — a bombardment so sustained (1940–1943, some 6,700 tons of bombs over 154 days) that it cost roughly 7,000 civilian and Allied lives; the medal has been carried on Malta's national flag since 1943 and, on this jack, marks it as a distinctly Maltese naval device.",
+            "sources": [
+              {
+                "title": "Award of the George Cross to Malta — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Award_of_the_George_Cross_to_Malta"
+              }
+            ]
+          }
         },
         {
           "id": "mt-arms",
@@ -20079,7 +20115,16 @@
           "design": "The coat of arms of Norway on a red field.",
           "source": "https://en.wikipedia.org/wiki/List_of_Norwegian_flags",
           "sha256": "21b8d55c6cffdc8cddd1b00901b83edaf21788c39a7fccdd82f90ad697704942",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A red field bears a standing golden lion crowned in gold and holding a golden axe with a silver blade — one of the oldest royal arms in the world, in use since at least the 13th century. The crowned lion, introduced under King Haakon IV in Norway's medieval golden age, conveys royal power and Norway's ambitions as a major European kingdom, while the axe is the attribute of Saint Olav (King Olav II Haraldsson, killed at the Battle of Stiklestad in 1030), symbolising the reigning monarch as heir to Norway's patron saint and 'Eternal King'.",
+            "sources": [
+              {
+                "title": "Coat of arms of Norway — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway"
+              }
+            ]
+          }
         },
         {
           "id": "no-crown-prince",
@@ -20995,7 +21040,16 @@
           "design": "A white field bearing the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
           "sha256": "f906b2b303d76d48457dc59ab5e8f01f87489b923d26cbf102234a4961d22735",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential standard bears Peru's coat of arms, adopted in 1825: a vicuña for the country's fauna and animal wealth (and a symbol of liberty in its own right), a cinchona tree — source of the malaria drug quinine — for its plant life, and a cornucopia overflowing with gold coins for its mineral riches, together showcasing Peru's natural wealth across the animal, plant and mineral kingdoms.",
+            "sources": [
+              {
+                "title": "Coat of arms of Peru — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru"
+              }
+            ]
+          }
         },
         {
           "id": "pe-naval-jack",
@@ -21382,7 +21436,16 @@
           "design": "The presidential coat of arms on a blue field.",
           "source": "https://en.wikipedia.org/wiki/List_of_Philippine_flags",
           "sha256": "ef5f6bb97819e641a444c732181c52d102abdd28c6c582231f87953c082dd7de",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential coat of arms centres on a sea-lion — half lion, half fish, granted to the city of Manila by Philip II of Spain in 1596 and long a symbol of supreme authority in the islands — standing on a red equilateral triangle for the revolutionary ideals of liberty, equality and fraternity, its three corners marked by stars for Luzon, Visayas and Mindanao, above an eight-rayed sun recalling the eight provinces placed under martial law at the 1896 outbreak of the Philippine Revolution.",
+            "sources": [
+              {
+                "title": "Seal of the President of the Philippines — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_the_president_of_the_Philippines"
+              }
+            ]
+          }
         },
         {
           "id": "ph-naval-jack",
@@ -22654,7 +22717,16 @@
           "design": "A square flag bearing the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
           "sha256": "16eb9bf35ff8c0b37f18b04e8ec063b419f5ab4ce0d8350b1dd241ba2993ebdd",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The coat of arms centres on a golden eagle holding a sceptre (recalling Michael the Brave, first unifier of the Romanian lands) and a sabre (recalling Stephen the Great of Moldavia) — a device of the founding Basarab dynasty of Wallachia, standing for courage and sovereignty — with an Orthodox cross in its beak for Romania's Eastern Christian heritage, on a blue field, and a quartered escutcheon on its breast bearing the arms of Wallachia, Moldavia, Transylvania, Banat and Crișana, the historic provinces united in the modern state.",
+            "sources": [
+              {
+                "title": "Coat of arms of Romania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania"
+              }
+            ]
+          }
         },
         {
           "id": "ro-pm",
@@ -23010,7 +23082,16 @@
           "design": "A square tricolour charged with the state coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Russian_flags",
           "sha256": "87e551f34ff4d7d1ac67062887614df9eb5bb941ee40d4b0423e4b649aa1e4ed",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A square tricolour bears the double-headed eagle, adopted from Byzantium at the end of the 15th century when Grand Prince Ivan III married the last Byzantine emperor's niece: the two heads, one looking east and one west, signify vigilant protection of Russia's borders on both sides; three crowns above them mark sovereignty (originally commemorating the conquest of three khanates); the sceptre and orb in its talons stand for state power and a unified realm; and the horseman on its breast, slaying a serpent, is an ancient emblem of the struggle between good and evil and the defence of the homeland.",
+            "sources": [
+              {
+                "title": "Why is the double-headed eagle Russia's national symbol? — GW2RU",
+                "url": "https://www.gw2ru.com/basic-facts/231554-double-headed-eagle-russia-national-symbol"
+              }
+            ]
+          }
         },
         {
           "id": "ru-naval-ensign",
@@ -25773,7 +25854,16 @@
           "design": "A yellow square bearing a red Garuda.",
           "source": "https://en.wikipedia.org/wiki/List_of_Thai_flags",
           "sha256": "88ceb45b63fa6b52d3e0744757b16c89d1e6ca01814cd7947747f8e67b228896",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A yellow field — the colour of Thai royalty and, in this context, of Buddhism — bears the red Garuda, the mythical bird-man mount of the Hindu god Vishnu (Narayana). Thai kings have long been regarded as incarnations of Narayana, so the Garuda, shown tearing the serpent Naga, came to symbolise the divine authority and protective power of the monarchy; it has served this role since the Ayutthaya kingdom, and the standard's present form dates from Vajiravudh's (Rama VI's) 1910 design.",
+            "sources": [
+              {
+                "title": "Royal Standard of Thailand — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Royal_Standard_of_Thailand"
+              }
+            ]
+          }
         },
         {
           "id": "th-queen",
@@ -28884,7 +28974,16 @@
           "design": "A square yellow field bearing the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
           "sha256": "4b74cc1398d2a260b17d9935eeebc8315c7da21e0b01f4251b5a6520541da10e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential standard bears Venezuela's coat of arms: a sheaf of wheat for the union and agricultural wealth of the republic's states, a bundle of weapons and two flags bound with laurel for triumph in the war of independence, a wild white horse recalling Simón Bolívar's own horse Palomo as an emblem of freedom, and two crossed cornucopias overflowing with tropical fruit for the nation's abundance.",
+            "sources": [
+              {
+                "title": "Coat of arms of Venezuela — Grokipedia",
+                "url": "https://grokipedia.com/page/Coat_of_arms_of_Venezuela"
+              }
+            ]
+          }
         },
         {
           "id": "ve-mod",

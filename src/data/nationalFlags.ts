@@ -4432,6 +4432,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Rising Sun Flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Rising_Sun_Flag" },
     ],
   },
+  "jp-emperor": {
+    description: "A sixteen-petal chrysanthemum in gold on red — the Imperial Seal, adopted as the personal emblem of Emperor Go-Toba in the Kamakura period (1185–1333) and used by the imperial household ever since. The chrysanthemum traditionally symbolises longevity, rejuvenation and nobility, and the seal itself embodies the authority of the Chrysanthemum Throne; a related sixteen-single-petal version, without the doubled outer row, marks items carrying the Emperor's own authority (passports, Diet members' pins), while other members of the imperial family use a fourteen-petal form.",
+    sources: [
+      { title: "Imperial crest of Japan — Wikipedia", url: "https://en.wikipedia.org/wiki/Imperial_crest_of_Japan" },
+    ],
+  },
   "jp-arms": {
     description: "Japan has no coat of arms in the European sense; what stands in its place is a mon, a family crest. The sixteen-petal chrysanthemum is the crest of the Imperial House, used by the emperor since the thirteenth century and reserved by law to the imperial family — which is why other members of the family use a fourteen-petal or single-petal version rather than this one. It appears on Japanese passports and on the Order of the Chrysanthemum, so the state’s outward emblem is the dynasty’s crest rather than an emblem of its republican-style institutions. The government separately uses a paulownia crest, the Government Seal, for the cabinet and prime minister.",
     sources: [
@@ -4480,6 +4486,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Kyrgyzstan national under-17 football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Kyrgyzstan_national_under-17_football_team" },
       { title: "Flag of Kyrgyzstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
+    ],
+  },
+  "kh-royal-standard": {
+    description: "The royal arms show a light-blue shield bearing an Ounalom (the Khmer form of the Buddhist Aum symbol) above a sword on ceremonial platters and a laurel wreath — the Ounalom representing the path to enlightenment — supported by the Gajasingha (a lion with an elephant's trunk) and the Rajasingha (the royal lion), each holding a five-tiered royal umbrella for the King and Queen, beneath the Royal Crown; blue marks the arms as those of the monarchy, and the motto beneath reads 'Ruler of the Kingdom of Cambodia'.",
+    sources: [
+      { title: "Coat of arms of Cambodia — Monarchies Wiki", url: "https://monarchies.fandom.com/wiki/Coat_of_arms_of_Cambodia" },
     ],
   },
   "kh-arms": {
@@ -4534,6 +4546,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The crest carries North Korea's national-flag symbolism: the red star and red band stand for revolutionary tradition, the white stripes for the purity and homogeneity of the Korean people, and the blue bands for sovereignty, peace and friendship.",
     sources: [
       { title: "Flag of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
+    ],
+  },
+  "kr-president": {
+    description: "The presidential emblem shows two Bonghwang (봉황, the Korean phoenix — a composite creature with a rooster's beak, a swallow's face, a snake's neck, a tortoise's back and a fish's tail) facing each other above a Mugunghwa (rose of Sharon, South Korea's national flower). The Bonghwang has long marked royalty and authority in Korean tradition; paired with the ever-blooming Mugunghwa, the emblem is read as expressing the presidency's wish for the Republic of Korea's freedom, peace and lasting prosperity.",
+    sources: [
+      { title: "National symbols of South Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/National_symbols_of_South_Korea" },
     ],
   },
   "kr-arms": {
@@ -4888,6 +4906,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Montserrat — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat" },
     ],
   },
+  "mt-naval-jack": {
+    description: "A George Cross within a red border on blue: the George Cross was awarded to the whole island of Malta by King George VI in April 1942 in recognition of the Maltese people's resilience through the WWII Siege of Malta — a bombardment so sustained (1940–1943, some 6,700 tons of bombs over 154 days) that it cost roughly 7,000 civilian and Allied lives; the medal has been carried on Malta's national flag since 1943 and, on this jack, marks it as a distinctly Maltese naval device.",
+    sources: [
+      { title: "Award of the George Cross to Malta — Wikipedia", url: "https://en.wikipedia.org/wiki/Award_of_the_George_Cross_to_Malta" },
+    ],
+  },
   "mt-arms": {
     description: "The shield is simply the national flag — white and red with the George Cross that the United Kingdom awarded to the whole island in 1942 for its endurance under siege. Above it a golden mural crown with a sally port and five turrets stands for the fortifications of Malta and the city walls, the crown of a fortress rather than a monarch. The olive branch and palm branch framing the shield are peace and, by the palm, the endurance of the islanders; the scroll beneath reads Repubblika ta' Malta. The arms were adopted in 1988, replacing a 1975 emblem — Prime Minister Dom Mintoff had earlier objected to the 1964 arms because he took the mural crown for a royal one, which it is not.",
     sources: [
@@ -5071,6 +5095,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Swallowtail (flag) — Grokipedia", url: "https://grokipedia.com/page/Swallowtail_(flag)" },
     ],
   },
+  "no-royal": {
+    description: "A red field bears a standing golden lion crowned in gold and holding a golden axe with a silver blade — one of the oldest royal arms in the world, in use since at least the 13th century. The crowned lion, introduced under King Haakon IV in Norway's medieval golden age, conveys royal power and Norway's ambitions as a major European kingdom, while the axe is the attribute of Saint Olav (King Olav II Haraldsson, killed at the Battle of Stiklestad in 1030), symbolising the reigning monarch as heir to Norway's patron saint and 'Eternal King'.",
+    sources: [
+      { title: "Coat of arms of Norway — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway" },
+    ],
+  },
   "no-sami": {
     description: "Adopted in 1986 as the flag of the Sámi people across northern Norway, Sweden, Finland and Russia, its four colours — red, green, yellow and blue — are the Sámi national colours, drawn from traditional gákti dress. The off-centre circle is a sun-and-moon symbol taken from the drums of Sámi shamans: red for the sun, blue for the moon, reflecting the Sámi self-identity as “sons and daughters of the sun.”",
     sources: [
@@ -5173,6 +5203,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
     ],
   },
+  "pe-president": {
+    description: "The presidential standard bears Peru's coat of arms, adopted in 1825: a vicuña for the country's fauna and animal wealth (and a symbol of liberty in its own right), a cinchona tree — source of the malaria drug quinine — for its plant life, and a cornucopia overflowing with gold coins for its mineral riches, together showcasing Peru's natural wealth across the animal, plant and mineral kingdoms.",
+    sources: [
+      { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
+    ],
+  },
   "pe-arms": {
     description: "The 1825 law defines the shield as three fields standing for the riches of Peru in the three natural kingdoms: a vicuña on light blue for the animal kingdom, a cinchona tree on white for the vegetable — the tree whose bark gave the world quinine — and, on the smaller red field below, a cornucopia spilling coins for the mineral. The palm branch on one side and the laurel on the other, tied with a red and white ribbon, together with the holm-oak civic crown above, stand for victory and glory.",
     sources: [
@@ -5213,6 +5249,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The sun and three stars are taken from the national flag: the sun's eight rays stand for the eight provinces that rose against Spanish rule in 1896, and the three stars represent the Philippines' three principal island groups — Luzon, the Visayas and Mindanao.",
     sources: [
       { title: "Three Stars And A Sun: What Do They Mean? — ChoosePhilippines", url: "https://www.choosephilippines.com/do/history-and-culture/3114/three-stars-and-sun-what-do-they-mean/" },
+    ],
+  },
+  "ph-president": {
+    description: "The presidential coat of arms centres on a sea-lion — half lion, half fish, granted to the city of Manila by Philip II of Spain in 1596 and long a symbol of supreme authority in the islands — standing on a red equilateral triangle for the revolutionary ideals of liberty, equality and fraternity, its three corners marked by stars for Luzon, Visayas and Mindanao, above an eight-rayed sun recalling the eight provinces placed under martial law at the 1896 outbreak of the Philippine Revolution.",
+    sources: [
+      { title: "Seal of the President of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_president_of_the_Philippines" },
     ],
   },
   "ph-war-flag": {
@@ -5365,6 +5407,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Qatar Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Qatar_Football_Association" },
     ],
   },
+  "ro-president": {
+    description: "The coat of arms centres on a golden eagle holding a sceptre (recalling Michael the Brave, first unifier of the Romanian lands) and a sabre (recalling Stephen the Great of Moldavia) — a device of the founding Basarab dynasty of Wallachia, standing for courage and sovereignty — with an Orthodox cross in its beak for Romania's Eastern Christian heritage, on a blue field, and a quartered escutcheon on its breast bearing the arms of Wallachia, Moldavia, Transylvania, Banat and Crișana, the historic provinces united in the modern state.",
+    sources: [
+      { title: "Coat of arms of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
+    ],
+  },
   "ro-arms": {
     description: "The arms adopted by parliament on 10 September 1992 are based on the lesser arms of the interwar Kingdom of Romania, used from 1922 to 1947 and designed in 1921 by the Transylvanian Hungarian heraldist József Sebestyén of Cluj-Napoca. The golden aquila with a cross in its beak, a sword and a sceptre in its talons, is the historic emblem of Wallachia; the escutcheon quarters the arms of the lands the modern state is made of — Wallachia, Moldavia, Transylvania, Oltenia with the Banat, and Dobruja with its dolphins for the Black Sea coast. Since 11 July 2016 the aquila has been crowned with a heraldic Steel Crown, a token of the monarchy that ruled between 1881 and 1947. The arms carry a particular weight in Romania because the symbol of the 1989 revolution was the flag with the communist arms cut out of its middle.",
     sources: [
@@ -5405,6 +5453,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue saltire is the cross of Saint Andrew, patron saint of Russia since the 11th century and chosen for the navy because, as a fisherman, the apostle was said to have been called by Jesus on the water; Peter the Great established the design as the naval ensign in 1699, formalised in 1712.",
     sources: [
       { title: "Ensign of the Russian Navy — Wikipedia", url: "https://en.wikipedia.org/wiki/Ensign_of_the_Russian_Navy" },
+    ],
+  },
+  "ru-president": {
+    description: "A square tricolour bears the double-headed eagle, adopted from Byzantium at the end of the 15th century when Grand Prince Ivan III married the last Byzantine emperor's niece: the two heads, one looking east and one west, signify vigilant protection of Russia's borders on both sides; three crowns above them mark sovereignty (originally commemorating the conquest of three khanates); the sceptre and orb in its talons stand for state power and a unified realm; and the horseman on its breast, slaying a serpent, is an ancient emblem of the struggle between good and evil and the defence of the homeland.",
+    sources: [
+      { title: "Why is the double-headed eagle Russia's national symbol? — GW2RU", url: "https://www.gw2ru.com/basic-facts/231554-double-headed-eagle-russia-national-symbol" },
     ],
   },
   "ru-arms": {
@@ -5735,6 +5789,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "The Royal House of Chakri — KMUTT Library", url: "https://www.lib.kmutt.ac.th/en/king-ramaix-chapter1/" },
     ],
   },
+  "th-king": {
+    description: "A yellow field — the colour of Thai royalty and, in this context, of Buddhism — bears the red Garuda, the mythical bird-man mount of the Hindu god Vishnu (Narayana). Thai kings have long been regarded as incarnations of Narayana, so the Garuda, shown tearing the serpent Naga, came to symbolise the divine authority and protective power of the monarchy; it has served this role since the Ayutthaya kingdom, and the standard's present form dates from Vajiravudh's (Rama VI's) 1910 design.",
+    sources: [
+      { title: "Royal Standard of Thailand — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Standard_of_Thailand" },
+    ],
+  },
   "th-emblem": {
     description: "The emblem is the Phra Khrut Pha — \"Garuda as the vehicle\" — the mount of the god Vishnu (Narayana) in Hindu and Buddhist tradition. Thai kingship drew on Indian doctrine in which the king is an incarnation of Narayana, so the god's mount became the king's own device: the Garuda stands for the sovereign himself rather than for the land or the people. In Buddhist tradition the emphasis falls on the Garuda's deeds, which portray him as righteous and merciful. Earlier kings used four great royal seals and, from 1873, a European-style coat of arms; Vajiravudh (Rama VI) abandoned that in 1910 in favour of the Garuda alone, and the Act on the Seals of State of 1911 established it as the emblem of the kingdom. It appears on the letterhead of almost every Thai government document and marks state property.",
     sources: [
@@ -6020,6 +6080,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The coat of arms charged on the state flag shows a wheat sheaf for the union and wealth of the republic's states, a white horse (recalling Simón Bolívar's horse Palomo) for independence and freedom, and swords, sabres and lances tied with laurel for triumph in the wars of independence.",
     sources: [
       { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
+    ],
+  },
+  "ve-president": {
+    description: "The presidential standard bears Venezuela's coat of arms: a sheaf of wheat for the union and agricultural wealth of the republic's states, a bundle of weapons and two flags bound with laurel for triumph in the war of independence, a wild white horse recalling Simón Bolívar's own horse Palomo as an emblem of freedom, and two crossed cornucopias overflowing with tropical fruit for the nation's abundance.",
+    sources: [
+      { title: "Coat of arms of Venezuela — Grokipedia", url: "https://grokipedia.com/page/Coat_of_arms_of_Venezuela" },
     ],
   },
   "ve-arms": {
