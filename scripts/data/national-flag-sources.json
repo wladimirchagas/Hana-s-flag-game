@@ -21249,7 +21249,16 @@
           "design": "A square red flag with a white square bearing the arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
           "sha256": "f3bc0966840f57d302313e3188718608b40123ddd64c6632b07ed644e3bc7dc6",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A red field — read as standing for the blood of Peru's independence fighters — bears a white square charged with the national coat of arms: a vicuña for the country's fauna and wildlife, a cinchona tree for its flora and its use as a source of quinine, and a cornucopia of gold coins for mineral wealth. The jack, flown by Peruvian warships, breaks from the vertical triband used by the country's other flags to give the arms a square field of their own.",
+            "sources": [
+              {
+                "title": "Flag of Peru: History, Meaning & Symbolism",
+                "url": "https://worldcountryflags.com/flag-of-peru/"
+              }
+            ]
+          }
         },
         {
           "id": "pe-army",
@@ -21706,7 +21715,16 @@
           "design": "The seal of the Philippine Air Force on a blue field.",
           "source": "https://en.wikipedia.org/wiki/List_of_Philippine_flags",
           "sha256": "7f9d61fce147479bfd7f6641765b5c072b1880c6fc99b3e897aa312e7c296597",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Air Force's seal, adopted in 1999, bears a golden wing within a blue circle and three yellow stars, one for each of the country's major island groups — Luzon, Visayas and Mindanao — the same tripartite symbolism carried by the national flag, expressing the Air Force's commitment to defending the whole archipelago and its allegiance to that flag.",
+            "sources": [
+              {
+                "title": "Philippine Air Force Symbols and Insignia",
+                "url": "https://www.scribd.com/doc/531021/Philippine-Air-Force-PAF-Standards"
+              }
+            ]
+          }
         },
         {
           "id": "ph-marines",
@@ -21719,7 +21737,16 @@
           "design": "The arms of the Marine Corps on a blue field.",
           "source": "https://en.wikipedia.org/wiki/List_of_Philippine_flags",
           "sha256": "0b600d14faa2cafb3a55aba2d45ddf90193a30a985b4c263632e1e81ec1edf15",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Marine Corps' own arms centre on an anchor with a closed chain, marking the Corps as part of the Philippine Navy — the anchor for its naval affiliation, and the chain for the close, unbroken bond between the fleet and the marines who serve alongside it.",
+            "sources": [
+              {
+                "title": "Philippines Marine Corps — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ph%5Emc.html"
+              }
+            ]
+          }
         },
         {
           "id": "ph-arms",

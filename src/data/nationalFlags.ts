@@ -5329,6 +5329,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
     ],
   },
+  "pe-naval-jack": {
+    description: "A red field — read as standing for the blood of Peru's independence fighters — bears a white square charged with the national coat of arms: a vicuña for the country's fauna and wildlife, a cinchona tree for its flora and its use as a source of quinine, and a cornucopia of gold coins for mineral wealth. The jack, flown by Peruvian warships, breaks from the vertical triband used by the country's other flags to give the arms a square field of their own.",
+    sources: [
+      { title: "Flag of Peru: History, Meaning & Symbolism", url: "https://worldcountryflags.com/flag-of-peru/" },
+    ],
+  },
   "pe-president": {
     description: "The presidential standard bears Peru's coat of arms, adopted in 1825: a vicuña for the country's fauna and animal wealth (and a symbol of liberty in its own right), a cinchona tree — source of the malaria drug quinine — for its plant life, and a cornucopia overflowing with gold coins for its mineral riches, together showcasing Peru's natural wealth across the animal, plant and mineral kingdoms.",
     sources: [
@@ -5369,6 +5375,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The bird of paradise and the stars are taken from Papua New Guinea's national flag: the bird is a symbol of the country's tribal culture, shown in a soaring pose representing the nation's emergence, and the stars form the Southern Cross, marking the country's place in the southern hemisphere.",
     sources: [
       { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+    ],
+  },
+  "ph-air-force": {
+    description: "The Air Force's seal, adopted in 1999, bears a golden wing within a blue circle and three yellow stars, one for each of the country's major island groups — Luzon, Visayas and Mindanao — the same tripartite symbolism carried by the national flag, expressing the Air Force's commitment to defending the whole archipelago and its allegiance to that flag.",
+    sources: [
+      { title: "Philippine Air Force Symbols and Insignia", url: "https://www.scribd.com/doc/531021/Philippine-Air-Force-PAF-Standards" },
+    ],
+  },
+  "ph-marines": {
+    description: "The Marine Corps' own arms centre on an anchor with a closed chain, marking the Corps as part of the Philippine Navy — the anchor for its naval affiliation, and the chain for the close, unbroken bond between the fleet and the marines who serve alongside it.",
+    sources: [
+      { title: "Philippines Marine Corps — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ph%5Emc.html" },
     ],
   },
   "ph-naval-jack": {
