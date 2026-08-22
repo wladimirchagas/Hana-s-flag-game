@@ -926,7 +926,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gy-president", category: "standard", name: "Presidential Standard of Guyana", from: 2020, to: 9999, path: "national-flags/gy/guyana-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Guyanese_flags" },
     { id: "gy-arms", category: "coatofarms", name: "Coat of arms of Guyana", from: 1966, to: 9999, path: "national-flags/gy/guyana-arms.svg", design: "A shield of three wavy blue lines between the Victoria lily and the hoatzin, held by two jaguars with a pickaxe and sugar cane, crested with a Cacique's headdress, over a scroll bearing the country's name.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
     { id: "gy-passport", category: "passport", name: "Passport of Guyana", path: "national-flags/gy/gy-passport.webp", design: "The cover of the Guyana passport.", source: "https://gicg.net/passport/gy/" },
-    { id: "gy-football-crest", category: "footballcrest", name: "Crest of the Guyana national football team", path: "national-flags/gy/gy-football-crest.svg", design: "The crest of the Guyana national football team.", source: "https://en.wikipedia.org/wiki/Guyana_Football_Federation" },
+    { id: "gy-football-crest", category: "footballcrest", name: "Crest of the Guyana national football team", path: "national-flags/gy/gy-football-crest.svg", design: "A green circular badge reading \"GUYANA\", \"1902\" and \"GFF\" in gold, with a stylised gold Victoria amazonica water lily (leaves and bloom) beneath.", source: "https://en.wikipedia.org/wiki/Guyana_Football_Federation" },
   ],
   "HK": [
     { id: "hk-official-national", category: "official", name: "Flag of Hong Kong", from: 1997, to: 9999, path: "flags/sub/CN/CN-HK.svg", design: "The regional flag — a white bauhinia flower on red — flown since the 1997 handover.", source: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
@@ -934,7 +934,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "hk-uk", category: "historical", name: "Flag of the United Kingdom", from: 1841, to: 1959, sovereign: "the United Kingdom", path: "national-flags/hk/hk-uk.svg", design: "The Union Flag, flown over the British colony of Hong Kong from 1841 before the colony adopted its own ensign.", source: "https://en.wikipedia.org/wiki/British_Hong_Kong" },
     { id: "hk-emblem", category: "coatofarms", name: "Regional Emblem of Hong Kong", from: 1997, to: 9999, path: "national-flags/hk/hk-emblem.svg", design: "The white bauhinia of the flag within a red ring naming the Special Administrative Region.", source: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
     { id: "hk-passport", category: "passport", name: "Hong Kong SAR passport", path: "national-flags/hk/hk-passport.svg", design: "The dark-blue cover of the Hong Kong Special Administrative Region passport.", source: "https://en.wikipedia.org/wiki/Hong_Kong_Special_Administrative_Region_passport" },
-    { id: "hk-football-crest", category: "footballcrest", name: "Crest of the Hong Kong football association", path: "national-flags/hk/hk-football-crest.svg", design: "The crest of Hong Kong's national football association.", source: "https://en.wikipedia.org/wiki/Hong_Kong_Football_Association" },
+    { id: "hk-football-crest", category: "footballcrest", name: "Crest of the Hong Kong football association", path: "national-flags/hk/hk-football-crest.svg", design: "A black shield bearing a red Chinese dragon, framed by Chinese characters reading \"足球\" (football) and \"總會\" (association), ringed by \"THE FOOTBALL ASSOCIATION\" and \"HONG KONG, CHINA\" text.", source: "https://en.wikipedia.org/wiki/Hong_Kong_Football_Association" },
   ],
   "HN": [
     { id: "hn-official-national", category: "official", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "The national flag, in the form adopted in 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
@@ -965,7 +965,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ht-french", category: "historical", name: "Flag of France", from: 1794, to: 1804, sovereign: "France", path: "national-flags/ht/ht-french.svg", design: "The French Tricolour, flown over the colony of Saint-Domingue in its last decade, before the enslaved population overthrew French rule.", source: "https://en.wikipedia.org/wiki/Saint-Domingue" },
     { id: "ht-arms", category: "coatofarms", name: "Coat of arms of Haiti", from: 1807, to: 9999, path: "national-flags/ht/ht-arms.svg", design: "A palm topped with a liberty cap among war trophies and six flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
     { id: "ht-passport", category: "passport", name: "Passport of Haiti", path: "national-flags/ht/ht-passport.webp", design: "The cover of the Haiti passport.", source: "https://gicg.net/passport/ht/" },
-    { id: "ht-football-crest", category: "footballcrest", name: "Crest of the Haiti national football team", path: "national-flags/ht/ht-football-crest.png", design: "The crest of the Haiti national football team.", source: "https://en.wikipedia.org/wiki/Haiti_Football_Federation" },
+    { id: "ht-football-crest", category: "footballcrest", name: "Crest of the Haiti national football team", path: "national-flags/ht/ht-football-crest.png", design: "A circular badge reading \"FEDERATION HAITIENNE DE FOOTBALL\" and \"Est. 1904\", with a shield in Haiti's blue-over-red bearing a small palm-tree emblem on a gold diagonal band.", source: "https://en.wikipedia.org/wiki/Haiti_Football_Federation" },
   ],
   "HU": [
     { id: "hu-official-national", category: "official", name: "Flag of Hungary", from: 1957, to: 9999, primary: true, path: "flags/hu.svg", design: "The national flag of Hungary, in the form adopted in 1957.", source: "https://en.wikipedia.org/wiki/Flag_of_Hungary" },
@@ -1172,21 +1172,21 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ki-uk", category: "historical", name: "Flag of the United Kingdom", from: 1892, to: 1979, sovereign: "the United Kingdom", path: "national-flags/ki/ki-uk.svg", design: "The Union Flag, flown while the islands were the British Gilbert and Ellice Islands colony.", source: "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands" },
     { id: "ki-arms", category: "coatofarms", name: "Coat of arms of Kiribati", from: 1979, to: 9999, path: "national-flags/ki/ki-arms.svg", design: "A golden frigatebird over a rising sun and waves — the device of the flag.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kiribati" },
     { id: "ki-passport", category: "passport", name: "Passport of Kiribati", path: "national-flags/ki/ki-passport.webp", design: "The cover of the Kiribati passport.", source: "https://gicg.net/passport/ki/" },
-    { id: "ki-football-crest", category: "footballcrest", name: "Crest of the Kiribati national football team", path: "national-flags/ki/ki-football-crest.svg", design: "The crest of the Kiribati national football team.", source: "https://en.wikipedia.org/wiki/Kiribati_national_football_team" },
+    { id: "ki-football-crest", category: "footballcrest", name: "Crest of the Kiribati national football team", path: "national-flags/ki/ki-football-crest.svg", design: "A circular badge reading \"KIRIBATI ISLANDS FOOTBALL ASSOCIATION\", with a football-patterned globe showing two palm-tree islets over blue wavy sea.", source: "https://en.wikipedia.org/wiki/Kiribati_national_football_team" },
   ],
   "KM": [
     { id: "km-official-national", category: "official", name: "Flag of the Comoros", from: 2001, to: 9999, primary: true, path: "flags/km.svg", design: "The national flag, adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
     { id: "km-french", category: "historical", name: "Flag of France", from: 1886, to: 1975, sovereign: "France", path: "national-flags/km/km-french.svg", design: "The French Tricolour, flown over the Comoro Islands as a French colony.", source: "https://en.wikipedia.org/wiki/History_of_the_Comoros" },
     { id: "km-arms", category: "coatofarms", name: "Seal of the Comoros", from: 1978, to: 9999, path: "national-flags/km/km-arms.svg", design: "A crescent holding four stars beneath a rising sun, within olive branches and the country's name.", source: "https://en.wikipedia.org/wiki/National_seal_of_the_Comoros" },
     { id: "km-passport", category: "passport", name: "Passport of the Comoros", path: "national-flags/km/km-passport.webp", design: "The cover of the the Comoros passport.", source: "https://gicg.net/passport/km/" },
-    { id: "km-football-crest", category: "footballcrest", name: "Crest of the Comoros national football team", path: "national-flags/km/km-football-crest.svg", design: "The crest of the Comoros national football team.", source: "https://en.wikipedia.org/wiki/Comoros_Football_Federation" },
+    { id: "km-football-crest", category: "footballcrest", name: "Crest of the Comoros national football team", path: "national-flags/km/km-football-crest.svg", design: "A green circular badge reading \"FEDERATION DE FOOTBALL DES COMORES\", with a stylised gold-outlined \"FF\" and football forming a crescent shape, and four white stars beneath.", source: "https://en.wikipedia.org/wiki/Comoros_Football_Federation" },
   ],
   "KN": [
     { id: "kn-official-national", category: "official", name: "Flag of Saint Kitts and Nevis", from: 1983, to: 9999, primary: true, path: "flags/kn.svg", design: "The national flag, adopted at independence in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis" },
     { id: "kn-uk", category: "historical", name: "Flag of the United Kingdom", from: 1783, to: 1983, sovereign: "the United Kingdom", path: "national-flags/kn/kn-uk.svg", design: "The Union Flag, flown while the islands were a British colony.", source: "https://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla" },
     { id: "kn-arms", category: "coatofarms", name: "Coat of arms of Saint Kitts and Nevis", from: 1983, to: 9999, path: "national-flags/kn/kn-arms.svg", design: "A shield with a Carib's head, a fleur-de-lis and a rose, a ship and a palm, held by two pelicans.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Kitts_and_Nevis" },
     { id: "kn-passport", category: "passport", name: "Passport of Saint Kitts and Nevis", path: "national-flags/kn/kn-passport.webp", design: "The cover of the Saint Kitts and Nevis passport.", source: "https://gicg.net/passport/kn/" },
-    { id: "kn-football-crest", category: "footballcrest", name: "Crest of the Saint Kitts and Nevis national football team", path: "national-flags/kn/kn-football-crest.svg", design: "The crest of the Saint Kitts and Nevis national football team.", source: "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis_national_football_team" },
+    { id: "kn-football-crest", category: "footballcrest", name: "Crest of the Saint Kitts and Nevis national football team", path: "national-flags/kn/kn-football-crest.svg", design: "A brown pelican with wings spread, standing on a football, backed by a green-black-red-yellow rainbow arc and a banner reading \"S.K.N. F.A.\"", source: "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis_national_football_team" },
   ],
   "KP": [
     { id: "kp-official-national", category: "official", name: "Flag of North Korea", from: 1948, to: 9999, primary: true, path: "flags/kp.svg", design: "The national flag of North Korea, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
@@ -1226,7 +1226,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "KY": [
     { id: "ky-official-national", category: "official", name: "Flag of the Cayman Islands", from: 1958, to: 9999, path: "flags/ky.svg", design: "A blue ensign with the Union Flag in the canton and the Cayman Islands' coat of arms — a shield of three stars over wavy bands beneath a British lion — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Cayman_Islands" },
     { id: "ky-arms", category: "coatofarms", name: "Coat of arms of the Cayman Islands", from: 1958, to: 9999, path: "national-flags/ky/ky-arms.svg", design: "A shield with three green stars over blue-and-white wavy bands, a gold lion passant guardant on red in chief; crest a green turtle upon a coil of rope before a gold pineapple; motto 'He hath founded it upon the seas'.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands" },
-    { id: "ky-football-crest", category: "footballcrest", name: "Crest of the Cayman Islands football association", path: "national-flags/ky/ky-football-crest.svg", design: "The crest of Cayman Islands's national football association.", source: "https://en.wikipedia.org/wiki/Cayman_Islands_Football_Association" },
+    { id: "ky-football-crest", category: "footballcrest", name: "Crest of the Cayman Islands football association", path: "national-flags/ky/ky-football-crest.svg", design: "A shield reading \"CIFA\" with a gold lion passant on red in the upper third, over blue-and-white wavy bands bearing three green footballs.", source: "https://en.wikipedia.org/wiki/Cayman_Islands_Football_Association" },
   ],
   "KZ": [
     { id: "kz-official-national", category: "official", name: "Flag of Kazakhstan", from: 1992, to: 9999, primary: true, path: "flags/kz.svg", design: "The national flag of Kazakhstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
@@ -1265,14 +1265,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lc-uk", category: "historical", name: "Flag of the United Kingdom", from: 1814, to: 1979, sovereign: "the United Kingdom", path: "national-flags/lc/lc-uk.svg", design: "The Union Flag — Saint Lucia changed hands between Britain and France fourteen times before becoming a British colony in 1814.", source: "https://en.wikipedia.org/wiki/History_of_Saint_Lucia" },
     { id: "lc-arms", category: "coatofarms", name: "Coat of arms of Saint Lucia", from: 1967, to: 9999, path: "national-flags/lc/lc-arms.svg", design: "A black shield with a rose, a fleur-de-lys and an African stool, held by two parrots.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Lucia" },
     { id: "lc-passport", category: "passport", name: "Passport of Saint Lucia", path: "national-flags/lc/lc-passport.webp", design: "The cover of the Saint Lucia passport.", source: "https://gicg.net/passport/lc/" },
-    { id: "lc-football-crest", category: "footballcrest", name: "Crest of the Saint Lucia national football team", path: "national-flags/lc/lc-football-crest.png", design: "The crest of the Saint Lucia national football team.", source: "https://en.wikipedia.org/wiki/Saint_Lucia_Football_Association" },
+    { id: "lc-football-crest", category: "footballcrest", name: "Crest of the Saint Lucia national football team", path: "national-flags/lc/lc-football-crest.png", design: "A circular badge reading \"SAINT LUCIA FOOTBALL ASSOCIATION\", with a grey silhouette of the island — showing its twin-peaked southern coastline — set on a football.", source: "https://en.wikipedia.org/wiki/Saint_Lucia_Football_Association" },
   ],
   "LI": [
     { id: "li-official-national", category: "official", name: "Flag of Liechtenstein", from: 1937, to: 9999, primary: true, path: "flags/li.svg", design: "The national flag, in the form adopted in 1937.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
     { id: "li-1921", category: "historical", name: "Flag of Liechtenstein (1921–1937)", from: 1921, to: 1937, path: "national-flags/li/liechtenstein-1921.svg", design: "The plain blue-over-red horizontal bicolour, without the gold crown. The crown was added in 1937 after the 1936 Berlin Olympics revealed Liechtenstein's flag was identical to Haiti's.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
     { id: "li-arms", category: "coatofarms", name: "Coat of arms of Liechtenstein", from: 1957, to: 9999, path: "national-flags/li/li-arms.svg", design: "A quartered princely shield beneath a princely hat, on an ermine mantle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein" },
     { id: "li-passport", category: "passport", name: "Passport of Liechtenstein", path: "national-flags/li/li-passport.webp", design: "The cover of the Liechtenstein passport.", source: "https://gicg.net/passport/li/" },
-    { id: "li-football-crest", category: "footballcrest", name: "Crest of the Liechtenstein national football team", path: "national-flags/li/li-football-crest.svg", design: "The crest of the Liechtenstein Football Association — a gold-outlined shield shaped by three Alpine peaks, over a blue “Liechtenstein” banner and a football in the national red and blue.", source: "https://en.wikipedia.org/wiki/Liechtenstein_Football_Association" },
+    { id: "li-football-crest", category: "footballcrest", name: "Crest of the Liechtenstein national football team", path: "national-flags/li/li-football-crest.svg", design: "A shield shaped like three mountain peaks, reading \"LIECHTENSTEIN\" over a red-and-blue football.", source: "https://en.wikipedia.org/wiki/Liechtenstein_Football_Association" },
   ],
   "LK": [
     { id: "lk-official-national", category: "official", name: "Flag of Sri Lanka", from: 1972, to: 9999, primary: true, path: "flags/lk.svg", design: "The national flag of Sri Lanka, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
@@ -1289,7 +1289,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lr-commonwealth", category: "historical", name: "Flag of the Commonwealth of Liberia", from: 1839, to: 1847, priorPolity: "the Commonwealth of Liberia", path: "national-flags/lr/lr-acs.png", design: "The flag of the settler commonwealth before independence, bearing a white cross in the canton in place of the star.", source: "https://en.wikipedia.org/wiki/American_Colonization_Society" },
     { id: "lr-arms", category: "coatofarms", name: "Coat of arms of Liberia", from: 1847, to: 9999, path: "national-flags/lr/lr-arms.svg", design: "A ship arriving beneath a rising sun, with a palm tree, a plough and a dove.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liberia" },
     { id: "lr-passport", category: "passport", name: "Passport of Liberia", path: "national-flags/lr/lr-passport.webp", design: "The cover of the Liberia passport.", source: "https://gicg.net/passport/lr/" },
-    { id: "lr-football-crest", category: "footballcrest", name: "Crest of the Liberia national football team", path: "national-flags/lr/lr-football-crest.svg", design: "The crest of the Liberia national football team.", source: "https://en.wikipedia.org/wiki/Liberia_national_football_team" },
+    { id: "lr-football-crest", category: "footballcrest", name: "Crest of the Liberia national football team", path: "national-flags/lr/lr-football-crest.svg", design: "A shield reading \"LIBERIA\" beneath a white star on blue, with red-and-white vertical stripes, a football and \"LFA\" text.", source: "https://en.wikipedia.org/wiki/Liberia_national_football_team" },
   ],
   "LS": [
     { id: "ls-official-national", category: "official", name: "Flag of Lesotho", from: 2006, to: 9999, primary: true, path: "flags/ls.svg", design: "The national flag, adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
@@ -1319,7 +1319,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lu-grand-duke", category: "standard", name: "Standard of the Grand Duke of Luxembourg", from: 2001, to: 9999, path: "national-flags/lu/luxembourg-grand-duke.svg", design: "The arms of the Grand Duke.", source: "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags" },
     { id: "lu-arms", category: "coatofarms", name: "Coat of arms of Luxembourg", from: 1839, to: 9999, path: "national-flags/lu/luxembourg-arms.svg", design: "A red lion with a forked tail, crowned, on a field barry of ten silver and blue.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
     { id: "lu-passport", category: "passport", name: "Passport of Luxembourg", path: "national-flags/lu/lu-passport.webp", design: "The cover of the Luxembourg passport.", source: "https://gicg.net/passport/lu/" },
-    { id: "lu-football-crest", category: "footballcrest", name: "Crest of the Luxembourg national football team", path: "national-flags/lu/lu-football-crest.png", design: "The crest of the Luxembourg national football team.", source: "https://en.wikipedia.org/wiki/Luxembourg_national_football_team" },
+    { id: "lu-football-crest", category: "footballcrest", name: "Crest of the Luxembourg national football team", path: "national-flags/lu/lu-football-crest.png", design: "A shield reading \"LËTZEBUERG\" with a red crowned lion rampant on Luxembourg's horizontal blue-and-white stripes.", source: "https://en.wikipedia.org/wiki/Luxembourg_national_football_team" },
   ],
   "LV": [
     { id: "lv-official-national", category: "official", name: "Flag of Latvia", from: 1923, to: 9999, primary: true, path: "flags/lv.svg", design: "The national flag of Latvia, in the form adopted in 1923.", source: "https://en.wikipedia.org/wiki/Flag_of_Latvia" },
@@ -1332,7 +1332,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lv-pm", category: "standard", name: "Standard of the Prime Minister of Latvia", from: 1995, to: 9999, path: "national-flags/lv/latvia-pm.svg", design: "The prime minister's standard.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia" },
     { id: "lv-arms", category: "coatofarms", name: "Coat of arms of Latvia", from: 1921, to: 9999, path: "national-flags/lv/latvia-arms.svg", design: "A shield with a rising sun above a red lion and a silver griffin, beneath three golden stars, between oak branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
     { id: "lv-passport", category: "passport", name: "Passport of Latvia", path: "national-flags/lv/lv-passport.webp", design: "The cover of the Latvia passport.", source: "https://gicg.net/passport/lv/" },
-    { id: "lv-football-crest", category: "footballcrest", name: "Crest of the Latvia national football team", path: "national-flags/lv/lv-football-crest.png", design: "The crest of the Latvian Football Federation (Latvijas Futbola federācija) — “Latvija” lettering over a band of traditional Latvian geometric ornament, above a crimson shield-shaped badge bearing a stylised white football and wing motif.", source: "https://en.wikipedia.org/wiki/Latvia_national_football_team" },
+    { id: "lv-football-crest", category: "footballcrest", name: "Crest of the Latvia national football team", path: "national-flags/lv/lv-football-crest.png", design: "A red shield-shaped badge reading \"LATVIJA\" above a band of small traditional ornamental symbols, with a football rendered in white and red at its centre.", source: "https://en.wikipedia.org/wiki/Latvia_national_football_team" },
   ],
   "LY": [
     { id: "ly-official-national", category: "official", name: "Flag of Libya", from: 2011, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, restored in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
@@ -3624,10 +3624,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
     ],
   },
+  "gy-football-crest": {
+    description: "The water lily is the Victoria Amazonica, Guyana's national flower, adopted at independence in 1966 and also shown on the national coat of arms; it symbolises the country's aquatic biodiversity and its identity as the \"Land of Many Waters\".",
+    sources: [
+      { title: "Coat of arms of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
+    ],
+  },
   "hk-emblem": {
     description: "The emblem carries the same device as the flag: the white five-petal Bauhinia × blakeana, the orchid tree discovered in Hong Kong that stands for the territory itself. A red star sits on each petal, mirroring the stars of China's national flag to show that Hong Kong is part of China; the red field matches China's flag. Together the red and white embody the 'one country, two systems' framework. Adopted at the 1997 handover.",
     sources: [
       { title: "Flag of Hong Kong — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
+    ],
+  },
+  "hk-football-crest": {
+    description: "The dragon is a longstanding symbol of power, strength and good fortune in Chinese culture, historically associated with imperial authority.",
+    sources: [
+      { title: "Chinese dragon — Wikipedia", url: "https://en.wikipedia.org/wiki/Chinese_dragon" },
     ],
   },
   "hn-arms": {
@@ -3657,6 +3669,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ht-arms": {
     description: "On a green lawn a royal palm topped with the red liberty cap of freedom rises among the trophies of the war of independence — cannons, drums, bugles, cannonballs and anchors — and six national flags on their staffs. The scroll reads L'Union Fait La Force — “Unity Makes Strength.” The arms record the victory of 1804, when Haiti became the first independent Black republic.",
+    sources: [
+      { title: "Coat of arms of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
+    ],
+  },
+  "ht-football-crest": {
+    description: "The palm tree with a Phrygian cap above it is taken from Haiti's coat of arms, where the cap symbolises liberty and the surrounding cannons and flags commemorate Haiti's armed struggle for independence from France in 1804.",
     sources: [
       { title: "Coat of arms of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
     ],
@@ -3888,10 +3906,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National seal of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/National_seal_of_the_Comoros" },
     ],
   },
+  "km-football-crest": {
+    description: "The crescent-and-stars motif echoes the Comoros' national flag, where the green field and white crescent represent the country's Islamic faith and the four stars stand for its four main islands: Grande Comore, Anjouan, Mohéli and Mayotte.",
+    sources: [
+      { title: "Flag of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
+    ],
+  },
   "kn-arms": {
     description: "At the centre of the shield is a Carib's head — the islands' first people — flanked by a fleur-de-lis and a rose, for the French and British who later ruled. Below, a lighter (a small sailing boat) crosses the waves, and poinciana flowers and a coconut palm frame the arms. Two pelicans support the shield, and the motto reads “Country Above Self.”",
     sources: [
       { title: "Coat of arms of Saint Kitts and Nevis — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Kitts_and_Nevis" },
+    ],
+  },
+  "kn-football-crest": {
+    description: "The pelican is the brown pelican, Saint Kitts and Nevis' national bird, and the arc's green, black, red and yellow are the colours of the national flag.",
+    sources: [
+      { title: "St. Kitts and Nevis Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/St._Kitts_and_Nevis_Football_Association" },
     ],
   },
   "kp-arms": {
@@ -3933,6 +3963,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ky-arms": {
     description: "Granted by Royal Warrant on 14 May 1958. The three green stars are the three islands — Grand Cayman, Little Cayman and Cayman Brac — riding on blue-and-white wavy bands for the sea that surrounds them; the gold lion of England in the chief marks the British connection. Above the shield a green turtle recalls the islands' seafaring and turtling history, resting on a coil of rope for the traditional thatch-rope industry, with a pineapple behind it for the historic ties to Jamaica. The motto, from Psalm 24, 'He hath founded it upon the seas', speaks to both the islanders' Christian faith and their ocean setting.",
+    sources: [
+      { title: "Coat of arms of the Cayman Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands" },
+    ],
+  },
+  "ky-football-crest": {
+    description: "The lion and the wavy bands are taken from the Cayman Islands' coat of arms, where the gold lion represents the territory's constitutional ties to Britain and the wavy blue-and-white bands represent the surrounding sea.",
     sources: [
       { title: "Coat of arms of the Cayman Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands" },
     ],
@@ -3979,6 +4015,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Saint Lucia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Lucia" },
     ],
   },
+  "lc-football-crest": {
+    description: "The twin peaks are the Pitons, Saint Lucia's iconic volcanic spires and a UNESCO World Heritage Site; they are the island's best-known landmark and already appear on the national flag.",
+    sources: [
+      { title: "Pitons (Saint Lucia) — Wikipedia", url: "https://en.wikipedia.org/wiki/Pitons_(Saint_Lucia)" },
+    ],
+  },
   "li-arms": {
     description: "The quartered shield gathers the arms of the houses and lands the Princely Family of Liechtenstein has held — the Silesian eagle, and the arms of Kuenring, Troppau, East Frisia (Rietberg) and Jägerndorf — around a central shield of gold and red, the colours of the House itself. A princely hat crowns it, on an ermine mantle.",
     sources: [
@@ -4001,6 +4043,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield shows a ship arriving under sail — the vessel that brought the freed people from America who founded the country — on a sea beneath a rising sun, the birth of the nation. A palm tree, the most versatile source of food, stands for prosperity; a plough and a spade for the dignity of labour; and a white dove bearing a scroll for the message of peace. The ribbon reads “The Love of Liberty Brought Us Here.”",
     sources: [
       { title: "Coat of arms of Liberia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liberia" },
+    ],
+  },
+  "lr-football-crest": {
+    description: "The star and stripes are taken from Liberia's national flag: the single white star marks Liberia as Africa's first independent republic, and the eleven red-and-white stripes represent the signatories of its 1847 Declaration of Independence.",
+    sources: [
+      { title: "Flag of Liberia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
     ],
   },
   "ls-arms": {
@@ -4033,10 +4081,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Luxembourg — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
     ],
   },
+  "lu-football-crest": {
+    description: "The red lion is the Lion of Luxembourg, inherited from the medieval Lion of Limburg and a core symbol of Luxembourg's heraldic identity since the 13th century.",
+    sources: [
+      { title: "Coat of arms of Luxembourg — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
+    ],
+  },
   "lv-arms": {
     description: "The arms combine symbols of Latvian statehood with the arms of the historical regions. The golden sun in the blue upper field is freedom: it had been the badge of the Latvian Riflemen units of the Imperial Russian Army in the First World War, drawn with 17 rays for the 17 Latvian-inhabited districts. The three golden stars above the shield are the three historical regions — Vidzeme, Latgale and Kurzeme. Below, the red lion is the lion of the arms of Courland, standing for Courland and Semigallia and appearing there as early as 1565, while the silver griffin is Vidzeme and Latgale. The oak branches at the foot are the national tree.",
     sources: [
       { title: "Coat of arms of Latvia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
+    ],
+  },
+  "lv-football-crest": {
+    description: "The small symbols are traditional Latvian ornamental signs (zīmes) — ancient Baltic folk motifs such as the Auseklis (morning star) and Māra's cross that are still widely used in Latvian folk art and national dress.",
+    sources: [
+      { title: "Auseklis — Wikipedia", url: "https://en.wikipedia.org/wiki/Auseklis" },
     ],
   },
   "ly-football-crest": {

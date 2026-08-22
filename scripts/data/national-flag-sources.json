@@ -10469,10 +10469,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/3f/Guyana_Football_Federation_logo.svg",
           "file": "gy/gy-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Guyana national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Guyana_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Guyana national football team.",
+          "design": "A green circular badge reading \"GUYANA\", \"1902\" and \"GFF\" in gold, with a stylised gold Victoria amazonica water lily (leaves and bloom) beneath.",
           "source": "https://en.wikipedia.org/wiki/Guyana_Football_Federation",
           "sha256": "43a1e4e98a064d7c1519d7c32abc565edfef7a27405e0c1f08e58b4b9a9002e8",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The water lily is the Victoria Amazonica, Guyana's national flower, adopted at independence in 1966 and also shown on the national coat of arms; it symbolises the country's aquatic biodiversity and its identity as the \"Land of Many Waters\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Guyana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -10568,10 +10577,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/9/90/HKFA_logo_2023.svg",
           "file": "hk/hk-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Hong Kong football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:HKFA_logo_2023.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Hong Kong's national football association.",
+          "design": "A black shield bearing a red Chinese dragon, framed by Chinese characters reading \"足球\" (football) and \"總會\" (association), ringed by \"THE FOOTBALL ASSOCIATION\" and \"HONG KONG, CHINA\" text.",
           "source": "https://en.wikipedia.org/wiki/Hong_Kong_Football_Association",
           "sha256": "6be3543b0b013c962c3388b9f2c2e7b0373a0471c7e1229fb82feebe76e5bf48",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The dragon is a longstanding symbol of power, strength and good fortune in Chinese culture, historically associated with imperial authority.",
+            "sources": [
+              {
+                "title": "Chinese dragon — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Chinese_dragon"
+              }
+            ]
+          }
         }
       ]
     },
@@ -10951,10 +10969,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/e7/Federation_Haitienne_de_Football.png",
           "file": "ht/ht-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Haiti national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Federation_Haitienne_de_Football.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Haiti national football team.",
+          "design": "A circular badge reading \"FEDERATION HAITIENNE DE FOOTBALL\" and \"Est. 1904\", with a shield in Haiti's blue-over-red bearing a small palm-tree emblem on a gold diagonal band.",
           "source": "https://en.wikipedia.org/wiki/Haiti_Football_Federation",
           "sha256": "84bed22e85befd661eeb7ca0c3233dfd5f185492a834a8a8373958c71144ac37",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The palm tree with a Phrygian cap above it is taken from Haiti's coat of arms, where the cap symbolises liberty and the surrounding cannons and flags commemorate Haiti's armed struggle for independence from France in 1804.",
+            "sources": [
+              {
+                "title": "Coat of arms of Haiti — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -13525,7 +13552,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/7/7b/Kiribati_Football_Association.svg",
           "file": "ki/ki-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Kiribati national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Kiribati_Football_Association.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Kiribati national football team.",
+          "design": "A circular badge reading \"KIRIBATI ISLANDS FOOTBALL ASSOCIATION\", with a football-patterned globe showing two palm-tree islets over blue wavy sea.",
           "source": "https://en.wikipedia.org/wiki/Kiribati_national_football_team",
           "sha256": "dd1d8f80df9526fbbdadbdfa3f61ac44f285cbf4668e8d986a9f1e5a1f8ad33a",
           "fetched": "2026-08-18"
@@ -13605,10 +13632,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/d/d3/Comoros_Football_Federation_logo.svg",
           "file": "km/km-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Comoros national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Comoros_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Comoros national football team.",
+          "design": "A green circular badge reading \"FEDERATION DE FOOTBALL DES COMORES\", with a stylised gold-outlined \"FF\" and football forming a crescent shape, and four white stars beneath.",
           "source": "https://en.wikipedia.org/wiki/Comoros_Football_Federation",
           "sha256": "60bc07a7b6a11119031358b6e4c4ca8de6dab46e512886ed1ae3272835a402bd",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The crescent-and-stars motif echoes the Comoros' national flag, where the green field and white crescent represent the country's Islamic faith and the four stars stand for its four main islands: Grande Comore, Anjouan, Mohéli and Mayotte.",
+            "sources": [
+              {
+                "title": "Flag of the Comoros — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Comoros"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -13685,10 +13721,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/b0/Saint_Kitts_%26_Nevis_Football_Association.svg",
           "file": "kn/kn-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Saint Kitts and Nevis national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Saint_Kitts_&_Nevis_Football_Association.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Saint Kitts and Nevis national football team.",
+          "design": "A brown pelican with wings spread, standing on a football, backed by a green-black-red-yellow rainbow arc and a banner reading \"S.K.N. F.A.\"",
           "source": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis_national_football_team",
           "sha256": "d0f91d38b58c12be2f74302b0b0a17bae4e36315c1d6008117b58579b69eec2c",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The pelican is the brown pelican, Saint Kitts and Nevis' national bird, and the arc's green, black, red and yellow are the colours of the national flag.",
+            "sources": [
+              {
+                "title": "St. Kitts and Nevis Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/St._Kitts_and_Nevis_Football_Association"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -14186,10 +14231,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Cayman_Islands_Football_Association.svg",
           "file": "ky/ky-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Cayman Islands football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Cayman_Islands_Football_Association.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Cayman Islands's national football association.",
+          "design": "A shield reading \"CIFA\" with a gold lion passant on red in the upper third, over blue-and-white wavy bands bearing three green footballs.",
           "source": "https://en.wikipedia.org/wiki/Cayman_Islands_Football_Association",
           "sha256": "25bfbc8add768d261735219ff42f02e353dafacb8d16ee4d048265d069655cbf",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The lion and the wavy bands are taken from the Cayman Islands' coat of arms, where the gold lion represents the territory's constitutional ties to Britain and the wavy blue-and-white bands represent the surrounding sea.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Cayman Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands"
+              }
+            ]
+          }
         }
       ]
     },
@@ -14665,10 +14719,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/a/a4/Saint_Lucia_FA.png",
           "file": "lc/lc-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Saint Lucia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Saint_Lucia_FA.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Saint Lucia national football team.",
+          "design": "A circular badge reading \"SAINT LUCIA FOOTBALL ASSOCIATION\", with a grey silhouette of the island — showing its twin-peaked southern coastline — set on a football.",
           "source": "https://en.wikipedia.org/wiki/Saint_Lucia_Football_Association",
           "sha256": "dddf11485af537679d7293b976cecfc66067bf809584fdd14019962d97d673b7",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The twin peaks are the Pitons, Saint Lucia's iconic volcanic spires and a UNESCO World Heritage Site; they are the island's best-known landmark and already appear on the national flag.",
+            "sources": [
+              {
+                "title": "Pitons (Saint Lucia) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Pitons_(Saint_Lucia)"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -14744,7 +14807,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/2/24/Liechtenstein_Football_Association_logo.svg",
           "file": "li/li-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Liechtenstein national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Liechtenstein_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Liechtenstein Football Association — a gold-outlined shield shaped by three Alpine peaks, over a blue “Liechtenstein” banner and a football in the national red and blue.",
+          "design": "A shield shaped like three mountain peaks, reading \"LIECHTENSTEIN\" over a red-and-blue football.",
           "source": "https://en.wikipedia.org/wiki/Liechtenstein_Football_Association",
           "sha256": "175af5a449bc09d9b8edbf5d0471cacfd18774a294537804021329ca703bac67",
           "fetched": "2026-08-18"
@@ -14946,10 +15009,19 @@
           "name": "Crest of the Liberia national football team",
           "commons": "Liberia Football Association logo.svg",
           "file": "lr/lr-football-crest.svg",
-          "design": "The crest of the Liberia national football team.",
+          "design": "A shield reading \"LIBERIA\" beneath a white star on blue, with red-and-white vertical stripes, a football and \"LFA\" text.",
           "source": "https://en.wikipedia.org/wiki/Liberia_national_football_team",
           "sha256": "c380016a1e362d31d054e3bdfc62dcb5a831879f01f7ad76992bf5da96734e31",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The star and stripes are taken from Liberia's national flag: the single white star marks Liberia as Africa's first independent republic, and the eleven red-and-white stripes represent the signatories of its 1847 Declaration of Independence.",
+            "sources": [
+              {
+                "title": "Flag of Liberia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Liberia"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -15324,10 +15396,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/9/9d/Luxembourg_national_football_team_crest.png",
           "file": "lu/lu-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Luxembourg national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Luxembourg_national_football_team_crest.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Luxembourg national football team.",
+          "design": "A shield reading \"LËTZEBUERG\" with a red crowned lion rampant on Luxembourg's horizontal blue-and-white stripes.",
           "source": "https://en.wikipedia.org/wiki/Luxembourg_national_football_team",
           "sha256": "b69c964f8031b1da130119ff12d1885dd6cec6b2fa14bec9d836b35fb64c556f",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The red lion is the Lion of Luxembourg, inherited from the medieval Lion of Limburg and a core symbol of Luxembourg's heraldic identity since the 13th century.",
+            "sources": [
+              {
+                "title": "Coat of arms of Luxembourg — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -15485,10 +15566,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/7/7b/Latvia_national_team_logo.png",
           "file": "lv/lv-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Latvia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Latvia_national_team_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Latvian Football Federation (Latvijas Futbola federācija) — “Latvija” lettering over a band of traditional Latvian geometric ornament, above a crimson shield-shaped badge bearing a stylised white football and wing motif.",
+          "design": "A red shield-shaped badge reading \"LATVIJA\" above a band of small traditional ornamental symbols, with a football rendered in white and red at its centre.",
           "source": "https://en.wikipedia.org/wiki/Latvia_national_football_team",
           "sha256": "6ee350371812f1f4608af241795dabe92cb798af27aab218c7ffa2905230a139",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The small symbols are traditional Latvian ornamental signs (zīmes) — ancient Baltic folk motifs such as the Auseklis (morning star) and Māra's cross that are still widely used in Latvian folk art and national dress.",
+            "sources": [
+              {
+                "title": "Auseklis — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Auseklis"
+              }
+            ]
+          }
         }
       ],
       "independence": {
