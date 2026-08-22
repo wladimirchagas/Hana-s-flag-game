@@ -3327,7 +3327,16 @@
           "design": "A green field with a yellow and red double border.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
           "sha256": "778eb5f5e12b57dd87f9a4acc94be40edca7e52a66a1bfdb81693df30e51c622",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A green field bears the same colours as the national tricolour in a double border: red for the bravery of Bolivia's soldiers, and yellow for the country's mineral wealth, framing the green of its fertility and natural abundance — the naval jack of a navy that, though Bolivia has been landlocked since losing its coast in the 1879 War of the Pacific, still operates on the country's rivers and Lake Titicaca and keeps alive its claim to a return of maritime access.",
+            "sources": [
+              {
+                "title": "Flag of Bolivia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Bolivia"
+              }
+            ]
+          }
         },
         {
           "id": "bo-spain-1785",
@@ -19706,7 +19715,16 @@
           "design": "The flag of the Namibian Defence Force.",
           "source": "https://en.wikipedia.org/wiki/Namibian_Defence_Force",
           "sha256": "038909dd7beeaf5eb90192fa0ac63c0831959c04904a8149058731fcfe2fcaba",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Based on the Presidential Standard's design, the Namibian Defence Force flag places its own badge on a white triangle between a red triangle and a light-blue one — the same colours as the national flag: red for the heroism and determination of the Namibian people, white for peace and unity, and blue for the clear sky, the Atlantic Ocean and the country's precious water resources.",
+            "sources": [
+              {
+                "title": "NDF - Namibian Defence Force — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/na-ndf.html"
+              }
+            ]
+          }
         },
         {
           "id": "na-jack",

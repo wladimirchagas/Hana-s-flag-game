@@ -3029,6 +3029,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Bolivian Naval Force — Wikipedia", url: "https://en.wikipedia.org/wiki/Bolivian_Naval_Force" },
     ],
   },
+  "bo-naval-jack": {
+    description: "A green field bears the same colours as the national tricolour in a double border: red for the bravery of Bolivia's soldiers, and yellow for the country's mineral wealth, framing the green of its fertility and natural abundance — the naval jack of a navy that, though Bolivia has been landlocked since losing its coast in the 1879 War of the Pacific, still operates on the country's rivers and Lake Titicaca and keeps alive its claim to a return of maritime access.",
+    sources: [
+      { title: "Flag of Bolivia — Britannica", url: "https://www.britannica.com/topic/flag-of-Bolivia" },
+    ],
+  },
   "bo-state": {
     description: "Bolivia's plain red-yellow-green tricolour is flown by ordinary citizens, while the state flag adds the national coat of arms — showing Cerro Rico, an alpaca, a wheatsheaf and the sun — for use by government authorities and the armed forces.",
     sources: [
@@ -5236,6 +5242,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The star, rifle and hoe are drawn from Mozambique's own national emblem (and, on the country's flag, sit atop an open book): the rifle for defence and vigilance and in memory of the independence struggle, the hoe for the peasantry and agriculture, and the star for international solidarity. The emblem was adopted at independence from Portugal in 1975.",
     sources: [
       { title: "Coat of arms of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mozambique" },
+    ],
+  },
+  "na-ndf": {
+    description: "Based on the Presidential Standard's design, the Namibian Defence Force flag places its own badge on a white triangle between a red triangle and a light-blue one — the same colours as the national flag: red for the heroism and determination of the Namibian people, white for peace and unity, and blue for the clear sky, the Atlantic Ocean and the country's precious water resources.",
+    sources: [
+      { title: "NDF - Namibian Defence Force — Flags of the World", url: "https://www.crwflags.com/fotw/flags/na-ndf.html" },
     ],
   },
   "na-jack": {
