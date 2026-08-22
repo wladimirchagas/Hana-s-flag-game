@@ -1004,7 +1004,16 @@
           "design": "A white square bearing the Sun of May.",
           "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
           "sha256": "a9e8203f3d1552e79c7538c2a582fa0f74f2e40602ff1a723f41f136132f4c2c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Sun of May, a stylised human face surrounded by 32 alternating straight and wavy golden rays, commemorates the sun said to have broken through clouds over Buenos Aires on 25 May 1810 during the demonstrations that began Argentina's path to independence; its design is widely linked to Inti, the Inca sun god, tying the emblem to the region's indigenous heritage as well as its revolutionary history.",
+            "sources": [
+              {
+                "title": "Sun of May — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Sun_of_May"
+              }
+            ]
+          }
         },
         {
           "id": "ar-arms",
@@ -5564,7 +5573,16 @@
           "design": "The PLA flag with a green stripe along the bottom.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
           "sha256": "a7bb3ba68ebf3befcafadc82556aa60e420a6431e81709017c5ca9bdcc0836e1",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The green stripe stands for the green earth, expressing that the Ground Force is the branch of the People's Liberation Army that defends the nation's territory.",
+            "sources": [
+              {
+                "title": "Flag of the People's Liberation Army — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_People%27s_Liberation_Army"
+              }
+            ]
+          }
         },
         {
           "id": "cn-pla-navy",
@@ -5577,7 +5595,16 @@
           "design": "The PLA flag with blue and white stripes along the bottom.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
           "sha256": "c45aa430ec71ef0f8efec3ffc5538541628e715a954a72029455b789a10706ec",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The blue and white stripes represent the sea and its waves, expressing that the Navy is the branch of the People's Liberation Army that defends the nation's maritime territory.",
+            "sources": [
+              {
+                "title": "Flag of the People's Liberation Army — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_People%27s_Liberation_Army"
+              }
+            ]
+          }
         },
         {
           "id": "cn-pla-air",
@@ -5588,7 +5615,16 @@
           "design": "The PLA flag with a sky-blue stripe along the bottom.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
           "sha256": "e7162b6f695698d59c6af1123182120e083a8e62644a3e7de1889dadf6935814",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The sky-blue stripe represents the vast sky, expressing that the Air Force is the branch of the People's Liberation Army that defends the nation's airspace.",
+            "sources": [
+              {
+                "title": "Flag of the People's Liberation Army — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_People%27s_Liberation_Army"
+              }
+            ]
+          }
         },
         {
           "id": "cn-pla-rocket",
@@ -6702,7 +6738,16 @@
           "design": "A square gold field bearing the black federal eagle within a red border; first used in 1921 and reinstated in 1950.",
           "source": "https://en.wikipedia.org/wiki/List_of_German_flags",
           "sha256": "ebb935441db37abbfd1f6cef0da0c2c0fc91054e98bdd0aa6c2f3c0c7e8052fd",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The black eagle on gold descends from the medieval Reichsadler, recognised as the imperial coat of arms by around 1200 and rooted in the eagle's much older use across Europe as a symbol of the sun, sovereignty and supreme power; the design used today was introduced for the presidency of the Weimar Republic by decree of President Friedrich Ebert in 1919 and, after the interruption of Nazi rule, was reinstituted for the Federal Republic in 1950.",
+            "sources": [
+              {
+                "title": "Presidential standard of Germany — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Presidential_standard_of_Germany"
+              }
+            ]
+          }
         },
         {
           "id": "de-arms",
@@ -9152,7 +9197,16 @@
           "design": "The royal arms in their Scottish form, with the lion rampant taking precedence.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "b50c27cd631df070417a47239192dcb76c68d7119dfe56154e3014cc37c3e8fd",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The banner shows a gold field bearing a red lion rampant within a double border decorated with pairs of lilies — the Royal Arms of Scotland, recorded from the reign of Alexander II in the 13th century — and gives precedence to Scotland's own royal arms when the sovereign is in Scotland; the rampant (rearing, claws bared) lion is a heraldic symbol of strength, courage and nobility.",
+            "sources": [
+              {
+                "title": "Royal Banner of Scotland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Royal_Banner_of_Scotland"
+              }
+            ]
+          }
         },
         {
           "id": "gb-arms",
