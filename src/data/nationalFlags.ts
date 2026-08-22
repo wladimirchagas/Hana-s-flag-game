@@ -3729,6 +3729,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Estonian Land Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Estonian_Land_Forces" },
     ],
   },
+  "ee-land-forces": {
+    description: "A black field, standing for the earth, bears a golden crenellated wall on which stand the three blue lions of Estonia's national coat of arms — a device descending from the arms of Denmark's King Valdemar II, who conquered northern Estonia in 1219, and traditionally read as three separate acts of courage: in the ancient fight for freedom, in the Harjumaa uprisings, and in the modern struggle for independence — with a white double-edged sword standing upright behind the wall, adopted in 2005 as the flag of the Maavägi, Estonia's ground forces.",
+    sources: [
+      { title: "Coat of arms of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
+    ],
+  },
   "ee-naval-jack": {
     description: "A white field bearing a black saltire beneath a blue cross — a design that echoes the British Union Flag, reflecting British naval influence on the young Estonian navy during the 1918–1920 War of Independence; the blue draws on the national tricolour's own colour, read as standing for the sky, lakes and sea and for Estonians' devotion and faith in their country.",
     sources: [
@@ -5759,6 +5765,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The maroon-and-white and the nine-point serrated edge directly repeat Qatar's own national flag; the ball's engraved geometric pattern draws on traditional regional ornament rather than depicting a plain football. QFA is the association's own initials, the Qatar Football Association.",
     sources: [
       { title: "Qatar Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Qatar_Football_Association" },
+    ],
+  },
+  "ro-land-forces": {
+    description: "The Land Forces' own emblem bears a gold eagle holding a cross in its beak and a handful of lightning bolts in its claws — the thunderbolts of Zeus, a classical symbol of martial power — beneath a crown and flanked by two stars, resting on a laurel branch for victory and an oak branch for strength and endurance, joined by a scroll bearing the branch's name.",
+    sources: [
+      { title: "Flags of Romanian Army Staffs — Flags of the World", url: "https://www.fotw.info/flags/ro-staff.html" },
+    ],
+  },
+  "ro-air-force": {
+    description: "The Air Force's own emblem bears the same gold eagle clutching lightning bolts in its claws — a mark of martial power adapted for the service that commands the skies — shown here in flight among clouds and stars, flanked by two stars and resting on the same laurel-and-oak branches for victory and endurance as the Army's own emblem.",
+    sources: [
+      { title: "Flags of Romanian Army Staffs — Flags of the World", url: "https://www.fotw.info/flags/ro-staff.html" },
     ],
   },
   "ro-president": {
