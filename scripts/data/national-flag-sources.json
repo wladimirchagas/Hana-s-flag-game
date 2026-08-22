@@ -11881,7 +11881,16 @@
           "design": "A light blue field with the national flag in the canton and the IDF emblem — a sword and olive branch — in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
           "sha256": "874d1f0b97c1a6c61847aad9be0dd121252ca5034754247d8d55340fcacae0a1",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The sword represents military strength and readiness for combat; the olive branch expresses a yearning for peace; and the Star of David marks the Israel Defense Forces as the army of the Jewish state — the sword-and-branch design was inherited from the Haganah, the pre-statehood militia that formed the IDF's core in 1948.",
+            "sources": [
+              {
+                "title": "Israel Defense Forces Emblem — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Israel_Defense_Forces_Emblem"
+              }
+            ]
+          }
         },
         {
           "id": "il-army",
@@ -27497,7 +27506,16 @@
           "design": "The Navy's seal on a dark blue field, with a yellow scroll reading UNITED STATES NAVY.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
           "sha256": "4f79bae5a2518a0599366dc8e83bc347a0eda724071a79752c534d92542d013e",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The bald eagle stands for vigilance, freedom and national power; the anchor represents the Navy's maritime heritage and reliability at sea; and the three-masted ship recalls the Continental Navy's own 1780 seal, together with the land signifying the Navy's shore facilities and amphibious reach.",
+            "sources": [
+              {
+                "title": "United States Department of the Navy Seal — Symbols.com",
+                "url": "https://www.symbols.com/symbol/united-states-department-of-the-navy-seal"
+              }
+            ]
+          }
         },
         {
           "id": "us-marines",
