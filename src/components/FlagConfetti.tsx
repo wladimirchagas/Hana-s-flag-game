@@ -1,3 +1,5 @@
+import { GridImage } from "./GridImage";
+
 type Tile = {
   code: string;
   top: string;
@@ -72,12 +74,10 @@ export function FlagConfetti() {
 
 function FlagTile({ tile }: { tile: Tile }) {
   return (
-    <img
-      key={`https://flagcdn.com/${tile.code}.svg`}
+    <GridImage
       className="confetti__tile"
       src={`https://flagcdn.com/${tile.code}.svg`}
       alt=""
-      loading="lazy"
       style={{
         top: tile.top,
         left: tile.left,

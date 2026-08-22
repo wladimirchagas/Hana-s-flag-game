@@ -27,9 +27,23 @@
 //      flags, i.e. a flag not shown despite being selected.
 //
 // Keying the element by its src makes the invariant STRUCTURAL: a different
-// image is a different element, with no inherited bitmap, no inherited hidden
-// flag, and a fresh lazy-load. It costs nothing when the src is unchanged (the
-// key is unchanged, so React reuses the element exactly as before).
+// image is a different element, with no inherited bitmap and no inherited
+// hidden flag. It costs nothing when the src is unchanged (the key is
+// unchanged, so React reuses the element exactly as before).
+//
+// THE SECOND HALF, reported two days later on the same device: with the fresh
+// element in place, the Passports view showed NOTHING — every tile an empty
+// box, no image, no "—" placeholder, and no `error` event. An <img> that
+// occupies its box, paints nothing and never errors is one whose request was
+// never made: WebKit had deferred 195 freshly-inserted `loading="lazy"` images
+// and never started any of them. Native lazy loading in WebKit mis-handles
+// images whose loads are set up dynamically (inserted in a batch, or
+// re-pointed) while the page is scrolled — which is also what left the stale
+// crests above. So the grids do NOT hand WebKit a `loading="lazy"` attribute at
+// all: `src/components/GridImage.tsx` defers the load itself with an
+// IntersectionObserver, whose guaranteed initial callback is exactly the step
+// the native implementation gets wrong. This script forbids the attribute
+// coming back, and forbids GridImage losing its observer.
 //
 // Run: node scripts/check-image-element-keys.mjs   (part of `npm run flags:check`)
 
@@ -140,6 +154,41 @@ for (const file of tsxFiles(SRC)) {
   }
 }
 
+// Native lazy loading is banned outright: WebKit leaves such an image
+// permanently unloaded when it is inserted dynamically (the blank-Passports
+// bug). Deferral belongs to GridImage's IntersectionObserver instead.
+for (const file of tsxFiles(SRC)) {
+  const s = stripCommentLines(readFileSync(file, "utf8"));
+  const rel = relative(root, file);
+  const at = s.indexOf('loading="lazy"');
+  if (at !== -1) {
+    const line = s.slice(0, at).split("\n").length;
+    failures.push(
+      `${rel}:${line} — native loading="lazy" is banned; WebKit can leave such ` +
+        `an image permanently unloaded. Render it through <GridImage>, which ` +
+        `defers the load with an IntersectionObserver instead.`,
+    );
+  }
+}
+
+// GridImage is the mechanism the ban above relies on. If it stops deferring by
+// observer — or starts emitting a native lazy attribute — every grid silently
+// goes back to trusting WebKit.
+const gridImage = readFileSync(join(SRC, "components", "GridImage.tsx"), "utf8");
+if (!/new IntersectionObserver\(/.test(gridImage)) {
+  failures.push(
+    "src/components/GridImage.tsx — the IntersectionObserver is gone. Every " +
+      "grid thumbnail depends on it to load at all in WebKit.",
+  );
+}
+if (!/typeof IntersectionObserver === "undefined"/.test(gridImage)) {
+  failures.push(
+    "src/components/GridImage.tsx — the no-IntersectionObserver fallback is " +
+      "gone. Where the observer does not exist the image must load immediately, " +
+      "never never.",
+  );
+}
+
 // The Learn grid's thumbnail keys the whole fragment (image + "—" placeholder)
 // so the placeholder's imperatively-revealed state resets too. Guard that the
 // fragment key is still there — the <img> key alone would leave a stale "—".
@@ -164,4 +213,6 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log(`✓ image-element keys: all ${checked} <img> elements are keyed by their src`);
+console.log(
+  `✓ image elements: all ${checked} <img> keyed by their src; no native lazy loading`,
+);

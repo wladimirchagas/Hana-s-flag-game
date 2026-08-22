@@ -6,6 +6,7 @@ import { getSubdivisionDisputeLabel, DISPUTED_TERRITORY_HIERARCHY } from "../lib
 import { SUBDIVISION_GROUP_FLAGS, type SubdivisionGroupFlag } from "../data/subdivisionGroupFlags";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning } from "../data/flagMeanings";
+import { GridImage } from "./GridImage";
 
 type GroupMode = "none" | "alpha" | "type";
 
@@ -181,11 +182,9 @@ export function SubdivisionFlagGrid({
         >
           <span className="flag-grid__thumb">
             {flagUrl ? (
-              <img
-                key={flagUrl}
+              <GridImage
                 src={flagUrl}
                 alt=""
-                loading="lazy"
                 draggable={false}
                 className="flag-grid__thumb-img"
                 onError={(e) => { e.currentTarget.style.display = "none"; }}
@@ -239,11 +238,9 @@ export function SubdivisionFlagGrid({
                   >
                     <span className="flag-grid__thumb">
                       {flagUrl ? (
-                        <img
-                          key={flagUrl}
+                        <GridImage
                           src={flagUrl}
                           alt=""
-                          loading="lazy"
                           draggable={false}
                           className="flag-grid__thumb-img"
                           onError={(e) => { e.currentTarget.style.display = "none"; }}

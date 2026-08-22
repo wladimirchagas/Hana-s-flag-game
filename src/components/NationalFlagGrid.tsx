@@ -3,6 +3,7 @@ import { AutoFitName } from "./AutoFitName";
 import { NATIONAL_FLAGS, type NationalFlag, type NationalFlagCategory } from "../data/nationalFlags";
 import { flagYearLabel } from "../lib/nationalFlags";
 import { ENTITY_STATUS_LABEL, specialEntitiesOf, type SpecialEntity } from "../lib/specialEntities";
+import { GridImage } from "./GridImage";
 
 /**
  * "National symbols" tab of the country drill-down grid.
@@ -232,11 +233,9 @@ function FlagGroups({
                   >
                     <span className="flag-grid__thumb">
                       {flag.path ? (
-                        <img
-                          key={`${baseUrl}${flag.path}`}
+                        <GridImage
                           src={`${baseUrl}${flag.path}`}
                           alt=""
-                          loading="lazy"
                           draggable={false}
                           className="flag-grid__thumb-img"
                           onError={(e) => { e.currentTarget.style.display = "none"; }}

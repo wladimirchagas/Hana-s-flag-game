@@ -5,6 +5,7 @@ import { useHierarchyData, pluralizeType } from "../lib/hierarchyData";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning } from "../data/flagMeanings";
 import type { SubdivisionMeta } from "../types/subdivision";
+import { GridImage } from "./GridImage";
 
 /**
  * "Hierarchy chart" tab — an interactive org chart of a country's structure:
@@ -125,11 +126,9 @@ export function SubdivisionHierarchyChart({
           >
             <span className="hierarchy__thumb">
               {countryFlagUrl ? (
-                <img
-                  key={countryFlagUrl}
+                <GridImage
                   src={countryFlagUrl}
                   alt=""
-                  loading="lazy"
                   draggable={false}
                   className="hierarchy__thumb-img"
                 />
@@ -170,11 +169,9 @@ export function SubdivisionHierarchyChart({
                       >
                         <span className="hierarchy__thumb">
                           {flagPath ? (
-                            <img
-                              key={`${baseUrl}${flagPath}`}
+                            <GridImage
                               src={`${baseUrl}${flagPath}`}
                               alt=""
-                              loading="lazy"
                               draggable={false}
                               className="hierarchy__thumb-img"
                               onError={(e) => { e.currentTarget.style.display = "none"; }}
@@ -214,11 +211,9 @@ export function SubdivisionHierarchyChart({
                     >
                       <span className="hierarchy__group-flag-thumb">
                         {gf.flag.path ? (
-                          <img
-                            key={`${baseUrl}${gf.flag.path}`}
+                          <GridImage
                             src={`${baseUrl}${gf.flag.path}`}
                             alt=""
-                            loading="lazy"
                             draggable={false}
                             className="hierarchy__group-flag-img"
                             onError={(e) => { e.currentTarget.style.display = "none"; }}
@@ -257,11 +252,9 @@ export function SubdivisionHierarchyChart({
                       >
                         <span className="hierarchy__thumb">
                           {subFlag ? (
-                            <img
-                              key={subFlag}
+                            <GridImage
                               src={subFlag}
                               alt=""
-                              loading="lazy"
                               draggable={false}
                               className="hierarchy__thumb-img"
                               onError={(e) => { e.currentTarget.style.display = "none"; }}
@@ -312,11 +305,9 @@ export function SubdivisionHierarchyChart({
                                 >
                                   <span className="hierarchy__thumb">
                                     {leaf.flagPath ? (
-                                      <img
-                                        key={`${baseUrl}${leaf.flagPath}`}
+                                      <GridImage
                                         src={`${baseUrl}${leaf.flagPath}`}
                                         alt=""
-                                        loading="lazy"
                                         draggable={false}
                                         className="hierarchy__thumb-img"
                                         onError={(e) => { e.currentTarget.style.display = "none"; }}

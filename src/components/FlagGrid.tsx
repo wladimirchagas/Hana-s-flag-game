@@ -45,6 +45,7 @@ import {
 import { subnationalFootballCrests } from "../lib/nationalSymbolImages";
 import { NON_FIFA_GRID_CODES, fifaExtraCrests } from "../lib/fifaAssociations";
 import { MENS_WORLD_CUP_TITLES, WOMENS_WORLD_CUP_TITLES } from "../data/worldCupTitles";
+import { GridImage } from "./GridImage";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -673,11 +674,9 @@ export function FlagGrid({
                         // flags) leaks onto the next image, blanking a flag the
                         // user explicitly selected.
                         <Fragment key={url}>
-                          <img
-                            key={url}
+                          <GridImage
                             src={url}
                             alt=""
-                            loading="lazy"
                             draggable={false}
                             className="flag-grid__thumb-img"
                             onError={(e) => {
