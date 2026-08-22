@@ -2667,6 +2667,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Angola national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Angola_national_football_team" },
     ],
   },
+  "ar-naval-jack": {
+    description: "The Sun of May, a stylised human face surrounded by 32 alternating straight and wavy golden rays, commemorates the sun said to have broken through clouds over Buenos Aires on 25 May 1810 during the demonstrations that began Argentina's path to independence; its design is widely linked to Inti, the Inca sun god, tying the emblem to the region's indigenous heritage as well as its revolutionary history.",
+    sources: [
+      { title: "Sun of May — Wikipedia", url: "https://en.wikipedia.org/wiki/Sun_of_May" },
+    ],
+  },
   "ar-president": {
     description: "The Sun of May (Sol de Mayo) commemorates the sun said to have broken through cloud over Buenos Aires on 25 May 1810, during the uprising that began Argentina's path to independence; its design, by Juan de Dios Rivera, also pays homage to Inti, the Inca sun god.",
     sources: [
@@ -3212,6 +3218,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the People's Liberation Army — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_People's_Liberation_Army" },
     ],
   },
+  "cn-pla-ground": {
+    description: "The green stripe stands for the green earth, expressing that the Ground Force is the branch of the People's Liberation Army that defends the nation's territory.",
+    sources: [
+      { title: "Flag of the People's Liberation Army — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_People%27s_Liberation_Army" },
+    ],
+  },
+  "cn-pla-navy": {
+    description: "The blue and white stripes represent the sea and its waves, expressing that the Navy is the branch of the People's Liberation Army that defends the nation's maritime territory.",
+    sources: [
+      { title: "Flag of the People's Liberation Army — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_People%27s_Liberation_Army" },
+    ],
+  },
+  "cn-pla-air": {
+    description: "The sky-blue stripe represents the vast sky, expressing that the Air Force is the branch of the People's Liberation Army that defends the nation's airspace.",
+    sources: [
+      { title: "Flag of the People's Liberation Army — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_People%27s_Liberation_Army" },
+    ],
+  },
   "cn-arms": {
     description: "Every element is a claim about who the state belongs to. The ears of wheat and rice around the border stand for the peasantry and the cogwheel at the base for industrial workers — together the worker-peasant alliance the People’s Republic was founded on. Tiananmen Gate is where the republic was proclaimed in 1949 and stands for the fighting spirit of the Chinese people, dating the emblem to the revolution rather than to any dynasty. Above it the five gold stars repeat the national flag: the large star the Communist Party, the four smaller ones the people united behind it.",
     sources: [
@@ -3330,6 +3354,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The forked swallowtail shape, adopted in 1956, marks this as the German Navy's ensign, following a naval tradition — inherited via Denmark's 1625 regulations — of reserving a swallow-tailed flag for the battle fleet to distinguish it from merchant shipping's plain rectangular flag.",
     sources: [
       { title: "Swallowtail (flag) — Grokipedia", url: "https://grokipedia.com/page/Swallowtail_(flag)" },
+    ],
+  },
+  "de-president": {
+    description: "The black eagle on gold descends from the medieval Reichsadler, recognised as the imperial coat of arms by around 1200 and rooted in the eagle's much older use across Europe as a symbol of the sun, sovereignty and supreme power; the design used today was introduced for the presidency of the Weimar Republic by decree of President Friedrich Ebert in 1919 and, after the interruption of Nazi rule, was reinstituted for the Federal Republic in 1950.",
+    sources: [
+      { title: "Presidential standard of Germany — Wikipedia", url: "https://en.wikipedia.org/wiki/Presidential_standard_of_Germany" },
     ],
   },
   "de-state": {
@@ -3622,6 +3652,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Royal Standard quarters the historic royal arms: three gold lions for England (repeated in the first and fourth quarters), a red lion rampant for Scotland, and a gold harp for Ireland — Wales is not represented, its status as a Principality instead marked separately by the title Prince of Wales.",
     sources: [
       { title: "Royal Standard — royal.uk", url: "https://www.royal.uk/encyclopedia/royal-standard?page=1" },
+    ],
+  },
+  "gb-royal-standard-scotland": {
+    description: "The banner shows a gold field bearing a red lion rampant within a double border decorated with pairs of lilies — the Royal Arms of Scotland, recorded from the reign of Alexander II in the 13th century — and gives precedence to Scotland's own royal arms when the sovereign is in Scotland; the rampant (rearing, claws bared) lion is a heraldic symbol of strength, courage and nobility.",
+    sources: [
+      { title: "Royal Banner of Scotland — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Banner_of_Scotland" },
     ],
   },
   "gb-arms": {
