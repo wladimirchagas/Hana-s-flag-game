@@ -166,7 +166,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ao-president", category: "standard", name: "Standard of the President of Angola", from: 1975, to: 9999, path: "national-flags/ao/angola-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Angolan_flags" },
     { id: "ao-emblem", category: "coatofarms", name: "Emblem of Angola", from: 1990, to: 9999, path: "national-flags/ao/angola-emblem.svg", design: "A machete and hoe beneath a star and a rising sun, within a circle of a cogwheel and a cotton branch, above an open book and a banner.", source: "https://en.wikipedia.org/wiki/Emblem_of_Angola" },
     { id: "ao-passport", category: "passport", name: "Passport of Angola", path: "national-flags/ao/ao-passport.webp", design: "The cover of the Angola passport.", source: "https://gicg.net/passport/ao/" },
-    { id: "ao-football-crest", category: "footballcrest", name: "Crest of the Angola national football team", path: "national-flags/ao/ao-football-crest.svg", design: "The crest of the Angola national football team.", source: "https://en.wikipedia.org/wiki/Angola_Football_Federation" },
+    { id: "ao-football-crest", category: "footballcrest", name: "Crest of the Angola national football team", path: "national-flags/ao/ao-football-crest.svg", design: "The crest of the Angolan Football Federation — a gold shield with a red border, lettered “Federação Angolana de Futebol”, bearing a black giant sable antelope head over a red football and “F.A.F.”.", source: "https://en.wikipedia.org/wiki/Angola_Football_Federation" },
   ],
   "AR": [
     { id: "ar-official-national", category: "official", name: "Flag of Argentina", from: 1861, to: 9999, primary: true, path: "flags/ar.svg", design: "The national flag of Argentina, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Argentina" },
@@ -266,7 +266,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bd-pm", category: "standard", name: "Standard of the Prime Minister of Bangladesh", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-pm.svg", design: "The prime minister's standard.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
     { id: "bd-emblem", category: "coatofarms", name: "National emblem of Bangladesh", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-emblem.svg", design: "A water lily on water, bordered by rice sheaves, beneath four stars and three jute leaves.", source: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
     { id: "bd-passport", category: "passport", name: "Passport of Bangladesh", path: "national-flags/bd/bd-passport.webp", design: "The cover of the Bangladesh passport.", source: "https://gicg.net/passport/bd/" },
-    { id: "bd-football-crest", category: "footballcrest", name: "Crest of the Bangladesh national football team", path: "national-flags/bd/bd-football-crest.svg", design: "The crest of the Bangladesh national football team.", source: "https://en.wikipedia.org/wiki/Bangladesh_national_football_team" },
+    { id: "bd-football-crest", category: "footballcrest", name: "Crest of the Bangladesh national football team", path: "national-flags/bd/bd-football-crest.svg", design: "The crest of the Bangladesh Football Federation — a blue shield with a Bengali-script monogram, a football wreathed in laurel leaves, lettered “Bangladesh Football Federation”.", source: "https://en.wikipedia.org/wiki/Bangladesh_national_football_team" },
   ],
   "BE": [
     { id: "be-official-national", category: "official", name: "Flag of Belgium", from: 1831, to: 9999, primary: true, path: "flags/be.svg", design: "The national flag of Belgium, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
@@ -284,7 +284,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bf-french", category: "historical", name: "Flag of France", from: 1919, to: 1959, sovereign: "France", path: "national-flags/bf/bf-french.svg", design: "The French Tricolour, flown over the territory of Upper Volta as part of French West Africa.", source: "https://en.wikipedia.org/wiki/French_Upper_Volta" },
     { id: "bf-arms", category: "coatofarms", name: "Coat of arms of Burkina Faso", from: 1997, to: 9999, path: "national-flags/bf/bf-arms.svg", design: "A shield in the national colours, held by two white stallions, above ears of millet.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burkina_Faso" },
     { id: "bf-passport", category: "passport", name: "Passport of Burkina Faso", path: "national-flags/bf/bf-passport.webp", design: "The cover of the Burkina Faso passport.", source: "https://gicg.net/passport/bf/" },
-    { id: "bf-football-crest", category: "footballcrest", name: "Crest of the Burkina Faso national football team", path: "national-flags/bf/bf-football-crest.png", design: "The crest of the Burkina Faso national football team.", source: "https://en.wikipedia.org/wiki/Burkina_Faso_Football_Federation" },
+    { id: "bf-football-crest", category: "footballcrest", name: "Crest of the Burkina Faso national football team", path: "national-flags/bf/bf-football-crest.png", design: "The crest of the Burkinabé Football Federation — two confronted white horse heads flanking a football bearing Burkina Faso's national emblem, lettered “FBF” and “Fédération Burkinabé de Football”.", source: "https://en.wikipedia.org/wiki/Burkinab%C3%A9_Football_Federation" },
   ],
   "BG": [
     { id: "bg-official-national", category: "official", name: "Flag of Bulgaria", from: 1878, to: 9999, primary: true, path: "flags/bg.svg", design: "The national flag of Bulgaria, in use since 1878.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
@@ -452,7 +452,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cd-president", category: "standard", name: "Presidential standard of the Democratic Republic of the Congo", from: 2006, to: 9999, path: "national-flags/cd/cd-president.svg", design: "The standard of the President of the Democratic Republic of the Congo.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo" },
     { id: "cd-arms", category: "coatofarms", name: "Coat of arms of the Democratic Republic of the Congo", from: 2006, to: 9999, path: "national-flags/cd/cd-arms.svg", design: "A leopard's head flanked by an elephant tusk and a spear, over the motto “Justice – Paix – Travail.”", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Democratic_Republic_of_the_Congo" },
     { id: "cd-passport", category: "passport", name: "Passport of the Democratic Republic of the Congo", path: "national-flags/cd/cd-passport.webp", design: "The cover of the the Democratic Republic of the Congo passport.", source: "https://gicg.net/passport/cd/" },
-    { id: "cd-football-crest", category: "footballcrest", name: "Crest of the Congo (DRC) national football team", path: "national-flags/cd/cd-football-crest.png", design: "The crest of the Congo (DRC) national football team.", source: "https://en.wikipedia.org/wiki/Congolese_Association_Football_Federation" },
+    { id: "cd-football-crest", category: "footballcrest", name: "Crest of the Congo (DRC) national football team", path: "national-flags/cd/cd-football-crest.png", design: "The crest of the Congolese Football Association Federation — a yellow shield trimmed in sky-blue and red, with a leopard's head over a football lettered “RDC”, ringed by “Fédération Congolaise de Football Association” and “FECOFA”.", source: "https://en.wikipedia.org/wiki/Congolese_Association_Football_Federation" },
   ],
   "CF": [
     { id: "cf-official-national", category: "official", name: "Flag of the Central African Republic", from: 1958, to: 9999, primary: true, path: "flags/cf.svg", design: "The national flag, adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic" },
@@ -482,7 +482,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ci-french", category: "historical", name: "Flag of France", from: 1893, to: 1959, sovereign: "France", path: "national-flags/ci/ci-french.svg", design: "The French Tricolour, flown over Ivory Coast under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
     { id: "ci-arms", category: "coatofarms", name: "Coat of arms of Ivory Coast", from: 1960, to: 9999, path: "national-flags/ci/ci-arms.svg", design: "A rising sun over an elephant's head, above a banner with the country's name.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast" },
     { id: "ci-passport", category: "passport", name: "Passport of Ivory Coast", path: "national-flags/ci/ci-passport.webp", design: "The cover of the Ivory Coast passport.", source: "https://gicg.net/passport/ci/" },
-    { id: "ci-football-crest", category: "footballcrest", name: "Crest of the Côte d’Ivoire national football team", path: "national-flags/ci/ci-football-crest.svg", design: "The crest of the Côte d’Ivoire national football team.", source: "https://en.wikipedia.org/wiki/Ivory_Coast_national_football_team" },
+    { id: "ci-football-crest", category: "footballcrest", name: "Crest of the Côte d’Ivoire national football team", path: "national-flags/ci/ci-football-crest.svg", design: "The crest of the Fédération Ivoirienne de Football — a green-and-orange badge shaped like the outline of Côte d'Ivoire, lettered “Côte d'Ivoire”, with a white elephant head and a football lettered “FIF”.", source: "https://en.wikipedia.org/wiki/Ivory_Coast_national_football_team" },
   ],
   "CK": [
     { id: "ck-official-national", category: "official", name: "Flag of the Cook Islands", from: 1979, to: 9999, path: "flags/ck.svg", design: "A blue ensign with the Union Flag in the canton and a ring of fifteen white stars in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
@@ -655,7 +655,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "dz-president", category: "standard", name: "Presidential standard of Algeria", from: 1962, to: 9999, path: "national-flags/dz/algeria-president.svg", design: "The national flag charged with the presidential emblem.", source: "https://en.wikipedia.org/wiki/List_of_Algerian_flags" },
     { id: "dz-emblem", category: "coatofarms", name: "National emblem of Algeria", from: 1976, to: 9999, path: "national-flags/dz/algeria-emblem.svg", design: "A hand of Fatima before the Atlas Mountains under a rising sun, with buildings and plants below, within a crescent.", source: "https://en.wikipedia.org/wiki/Emblem_of_Algeria" },
     { id: "dz-passport", category: "passport", name: "Passport of Algeria", path: "national-flags/dz/dz-passport.webp", design: "The cover of the Algeria passport.", source: "https://gicg.net/passport/dz/" },
-    { id: "dz-football-crest", category: "footballcrest", name: "Crest of the Algeria national football team", path: "national-flags/dz/dz-football-crest.png", design: "The crest of the Algeria national football team.", source: "https://en.wikipedia.org/wiki/Algeria_national_football_team" },
+    { id: "dz-football-crest", category: "footballcrest", name: "Crest of the Algeria national football team", path: "national-flags/dz/dz-football-crest.png", design: "The crest of the Algerian Football Federation — a gold ring lettered “FAF” around a football bearing the green wing and red crescent-and-star of the national flag, lettered “الجزائر” (Algeria), with two gold stars marked “19” and “90” above.", source: "https://en.wikipedia.org/wiki/Algeria_national_football_team" },
   ],
   "EC": [
     { id: "ec-official-national", category: "official", name: "Flag of Ecuador", from: 1900, to: 9999, primary: true, path: "flags/ec.svg", design: "The national flag of Ecuador, in the form adopted in 1900.", source: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
@@ -986,7 +986,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "id-president", category: "standard", name: "Presidential Standard of Indonesia", path: "national-flags/id/indonesia-president.svg", design: "A yellow field bearing the national emblem and the presidential arms.", source: "https://en.wikipedia.org/wiki/List_of_Indonesian_flags" },
     { id: "id-emblem", category: "coatofarms", name: "Garuda Pancasila", from: 1950, to: 9999, path: "national-flags/id/indonesia-emblem.svg", design: "A golden Garuda bearing a shield of five charges, clutching a scroll with the national motto.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
     { id: "id-passport", category: "passport", name: "Passport of Indonesia", path: "national-flags/id/id-passport.webp", design: "The cover of the Indonesia passport.", source: "https://gicg.net/passport/id/" },
-    { id: "id-football-crest", category: "footballcrest", name: "Crest of the Indonesia national football team", path: "national-flags/id/id-football-crest.png", design: "The crest of the Indonesia national football team.", source: "https://en.wikipedia.org/wiki/Indonesia_national_football_team" },
+    { id: "id-football-crest", category: "footballcrest", name: "Crest of the Indonesia national football team", path: "national-flags/id/id-football-crest.png", design: "The crest of the Indonesia national football team — a shield lettered “Indonesia”, bearing the Garuda Pancasila, Indonesia's national emblem: a golden mythical eagle holding a shield of five symbols above the motto “Bhinneka Tunggal Ika”.", source: "https://en.wikipedia.org/wiki/Indonesia_national_football_team" },
   ],
   "IE": [
     { id: "ie-official-national", category: "official", name: "Flag of Ireland", from: 1922, to: 9999, primary: true, path: "flags/ie.svg", design: "The national flag of Ireland, in the form adopted in 1922.", source: "https://en.wikipedia.org/wiki/Flag_of_Ireland" },
@@ -1742,7 +1742,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pk-pm", category: "standard", name: "Standard of the Prime Minister of Pakistan", from: 1954, to: 9999, path: "national-flags/pk/pakistan-pm.svg", design: "The state emblem on a green field, distinguished from the president's.", source: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
     { id: "pk-emblem", category: "coatofarms", name: "State Emblem of Pakistan", from: 1954, to: 9999, path: "national-flags/pk/pakistan-emblem.svg", design: "A crescent and star above a quartered shield, within a floral wreath, over a scroll bearing the national motto.", source: "https://en.wikipedia.org/wiki/State_emblem_of_Pakistan" },
     { id: "pk-passport", category: "passport", name: "Passport of Pakistan", path: "national-flags/pk/pk-passport.webp", design: "The cover of the Pakistan passport.", source: "https://gicg.net/passport/pk/" },
-    { id: "pk-football-crest", category: "footballcrest", name: "Crest of the Pakistan national football team", path: "national-flags/pk/pk-football-crest.svg", design: "The crest of the Pakistan national football team.", source: "https://en.wikipedia.org/wiki/Pakistan_Football_Federation" },
+    { id: "pk-football-crest", category: "footballcrest", name: "Crest of the Pakistan national football team", path: "national-flags/pk/pk-football-crest.svg", design: "The crest of the Pakistan Football Federation — a circular badge lettered “Pakistan Football Federation”, bearing the national flag: a green field with a white crescent and star and a white vertical stripe.", source: "https://en.wikipedia.org/wiki/Pakistan_Football_Federation" },
   ],
   "PL": [
     { id: "pl-official-national", category: "official", name: "Flag of Poland", from: 1919, to: 9999, primary: true, path: "flags/pl.svg", design: "The national flag of Poland, in the form adopted in 1919.", source: "https://en.wikipedia.org/wiki/Flag_of_Poland" },
@@ -2072,7 +2072,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "th-regent", category: "standard", name: "Standard of the Regent of Thailand", from: 1936, to: 9999, path: "national-flags/th/thailand-regent.svg", design: "A white square bearing the Garuda above a shield.", source: "https://en.wikipedia.org/wiki/List_of_Thai_flags" },
     { id: "th-emblem", category: "coatofarms", name: "Emblem of Thailand (Phra Khrut Pha)", from: 1911, to: 9999, path: "national-flags/th/thailand-emblem.svg", design: "The Garuda, half-man and half-eagle, with wings spread.", source: "https://en.wikipedia.org/wiki/Emblem_of_Thailand" },
     { id: "th-passport", category: "passport", name: "Passport of Thailand", path: "national-flags/th/th-passport.webp", design: "The cover of the Thailand passport.", source: "https://gicg.net/passport/th/" },
-    { id: "th-football-crest", category: "footballcrest", name: "Crest of the Thailand national football team", path: "national-flags/th/th-football-crest.svg", design: "The crest of the Thailand national football team.", source: "https://en.wikipedia.org/wiki/Thailand_national_football_team" },
+    { id: "th-football-crest", category: "footballcrest", name: "Crest of the Thailand national football team", path: "national-flags/th/th-football-crest.svg", design: "The crest of the Thailand national football team — a shield in the red, white and blue of the national flag, lettered “Thailand”, bearing a stylised elephant's face.", source: "https://en.wikipedia.org/wiki/Thailand_national_football_team" },
   ],
   "TJ": [
     { id: "tj-official-national", category: "official", name: "Flag of Tajikistan", from: 1992, to: 9999, primary: true, path: "flags/tj.svg", design: "The national flag, adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Tajikistan" },
@@ -2392,7 +2392,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "zw-president", category: "standard", name: "Flag of the President of Zimbabwe", from: 1987, to: 9999, path: "national-flags/zw/zimbabwe-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags" },
     { id: "zw-arms", category: "coatofarms", name: "Coat of arms of Zimbabwe", from: 1981, to: 9999, path: "national-flags/zw/zimbabwe-arms.svg", design: "A green shield bearing Great Zimbabwe beneath wavy blue and white lines, crossed with a hoe and a rifle, supported by two kudus, crested with the Zimbabwe Bird on a red star.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zimbabwe" },
     { id: "zw-passport", category: "passport", name: "Passport of Zimbabwe", path: "national-flags/zw/zw-passport.webp", design: "The cover of the Zimbabwe passport.", source: "https://gicg.net/passport/zw/" },
-    { id: "zw-football-crest", category: "footballcrest", name: "Crest of the Zimbabwe national football team", path: "national-flags/zw/zw-football-crest.png", design: "The crest of the Zimbabwe national football team.", source: "https://en.wikipedia.org/wiki/Zimbabwe_national_football_team" },
+    { id: "zw-football-crest", category: "footballcrest", name: "Crest of the Zimbabwe national football team", path: "national-flags/zw/zw-football-crest.png", design: "The crest of the Zimbabwe Football Association — a green circular badge lettered “Zimbabwe Football Association”, with a gold Zimbabwe Bird over a red star above a silver shield lettered “ZIFA” and a football.", source: "https://en.wikipedia.org/wiki/Zimbabwe_national_football_team" },
   ],
 };
 
@@ -2648,6 +2648,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Angola — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Angola" },
     ],
   },
+  "ao-football-crest": {
+    description: "The giant sable antelope (palanca-negra-gigante) is Angola's own national symbol, native only to the region between the Cuango and Luando rivers and portrayed on the country's stamps, banknotes and passports. It gives the national football team its own nickname, the Palancas Negras.",
+    sources: [
+      { title: "What is the official animal of Angola? — Geographic FAQ Hub", url: "https://www.ncesc.com/geographic-faq/what-is-the-official-animal-of-angola/" },
+      { title: "Angola national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Angola_national_football_team" },
+    ],
+  },
   "ar-arms": {
     description: "The rising Sun of May at the top is the sun of the national anthem's line \"a new and glorious nation rises to the surface of the Earth\" — the birth of the country, not merely a decorative sun. In the oval, two clasped hands are the union of the provinces and stand for friendship, peace and brotherhood; they hold up a pike, which is power and the willingness to defend freedom, and the red Phrygian cap on its point is the liberty cap of the French Revolution. Read together, the hands and the cap are the national motto, \"en unión y libertad\" — in unity and freedom — the idea being that freedom is reached through unity. The laurel branches framing the whole are the classical crown of the victor, for triumph and glory.",
     sources: [
@@ -2771,6 +2778,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "bf-arms": {
     description: "The shield carries the red, green and gold star of the national flag. Two white stallions — the horse being an old emblem of the Mossi kingdoms — support it, standing over ears of millet, the staple grain. The upper ribbon gives the country's name, Burkina Faso (“land of upright people”), and the lower one the motto Unité, Progrès, Justice — “Unity, Progress, Justice.”",
     sources: [
+      { title: "Coat of arms of Burkina Faso — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burkina_Faso" },
+    ],
+  },
+  "bf-football-crest": {
+    description: "The two stallions are drawn from Burkina Faso's own coat of arms, which also carries them as supporters: they honour the legend of Princess Yennenga, the warrior mother of the Mossi people (the country's largest ethnic group), whose white horse carried her to found the Mossi kingdoms — a legend reflected in Burkinabè culture as freedom, courage and drive. FBF is the federation's own initials, Fédération Burkinabé de Football, and the national team's own nickname, Les Étalons (The Stallions), comes from the same legend.",
+    sources: [
+      { title: "Know the nicknames of Group D teams at the TotalEnergies AFCON 2023 — CAF Online", url: "https://www.cafonline.com/caf-africa-cup-of-nations/news/know-the-nicknames-of-group-d-teams-at-the-totalenergies-afcon-2023/" },
       { title: "Coat of arms of Burkina Faso — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burkina_Faso" },
     ],
   },
@@ -2920,6 +2934,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Democratic Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Democratic_Republic_of_the_Congo" },
     ],
   },
+  "cd-football-crest": {
+    description: "The leopard gives the national team its own nickname, Les Léopards, adopted in 1965; when President Mobutu Sese Seko — known for his trademark leopard-skin cap — was ousted in 1997, the team was briefly renamed Simbas (Swahili for lions) before reclaiming the Léopards name under the country's 2006 constitution.",
+    sources: [
+      { title: "DR Congo national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/DR_Congo_national_football_team" },
+      { title: "African football – What's in a nickname? — Al Jazeera", url: "https://www.aljazeera.com/features/2015/1/29/african-football-whats-in-a-nickname" },
+    ],
+  },
   "cf-arms": {
     description: "The shield gathers the country's emblems: an elephant and a baobab tree for its nature and its backbone; an open hand, the symbol of the party that led it to independence; and a gold star on a map of Africa, marking the Central African Republic at the continent's heart. A rising sun crowns it for the dawn of independence, and the Order of Operational Merit hangs below. Two ribbons carry the mottoes — in Sango, Zo Kwe Zo, “All people are people,” and in French, Unité, Dignité, Travail, “Unity, Dignity, Work.”",
     sources: [
@@ -2946,6 +2967,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ci-arms": {
     description: "The elephant's head is the country's namesake — Côte d'Ivoire, the Ivory Coast — and an emblem of its strength. Above it a rising sun stands for the new beginning of independence, and the banner carries the country's name. Together they speak to national solidarity in the face of adversity.",
+    sources: [
+      { title: "Coat of arms of Ivory Coast — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast" },
+    ],
+  },
+  "ci-football-crest": {
+    description: "The elephant is the centrepiece of Côte d'Ivoire's own national coat of arms and gives the country its name — “Côte d'Ivoire” (Ivory Coast) recalls its colonial-era role in the ivory trade — and its national football team its own nickname, Les Éléphants.",
     sources: [
       { title: "Coat of arms of Ivory Coast — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast" },
     ],
@@ -3106,6 +3133,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is a landscape read as a programme. The crescent that encircles it is the same crescent as on the national flag, and is the symbol of Islam. The hand of Fatima at the centre is a traditional protective symbol of the region; behind it stand the Atlas Mountains, the country's own geography, and above them a rising sun for a new era. The buildings at the foot stand for industry and the plants for agriculture — the two things the independent state set out to build. The present form, with the motto in Arabic rather than French, was adopted on 1 November 1976.",
     sources: [
       { title: "Emblem of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Algeria" },
+    ],
+  },
+  "dz-football-crest": {
+    description: "The crescent and star repeat Algeria's own national flag, and the two gold stars, read together as “1990”, mark the year Algeria won its first Africa Cup of Nations title, hosted and won on home soil in Algiers.",
+    sources: [
+      { title: "1990 African Cup of Nations — Wikipedia", url: "https://en.wikipedia.org/wiki/1990_African_Cup_of_Nations" },
     ],
   },
   "ec-arms": {
@@ -3432,6 +3465,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "id-emblem": {
     description: "The Garuda is the mount of Vishnu, and in Javanese and Balinese tradition stands for knowledge, power, bravery, loyalty and discipline — Bali venerates it as the lord of all flying creatures. Its feathers are counted, not merely drawn: they are arranged to spell the date of the proclamation of independence, 17 August 1945. The shield on its breast carries the five principles of Pancasila, the state philosophy, and the scroll in its talons reads \"Bhinneka Tunggal Ika\", a line of Old Javanese from the 14th-century poem Sutasoma by Empu Tantular of Majapahit. That line was written to reconcile the Hindu and Buddhist faiths — \"although diverse, both are truthful to Dharma; there is no duality in Truth\" — and is now read as unity in diversity.",
+    sources: [
+      { title: "National emblem of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
+    ],
+  },
+  "id-football-crest": {
+    description: "The Garuda Pancasila is Indonesia's own national emblem. The golden Garuda's feathers are counted to spell out the date of independence — 17 (wing) + 8 (tail) + 19 (base) + 45 (neck) for 17 August 1945 — and its shield carries the five principles of Pancasila: a star for belief in one God, a chain for just and civilised humanity, a banyan tree for national unity, a wild ox (banteng) for democracy guided by consensus, and rice and cotton for social justice. “Bhinneka Tunggal Ika” (“Unity in Diversity”) is drawn from a 14th-century Old Javanese poem.",
     sources: [
       { title: "National emblem of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
     ],
@@ -4076,10 +4115,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Philippines" },
     ],
   },
+  "ph-football-crest": {
+    description: "The blue and red of the goal frame repeat the colours of the Philippine flag: blue for peace, truth and justice, and red for patriotism and valour. 1907 is the year the federation traces its founding to, and PFF is its own initials, the Philippine Football Federation.",
+    sources: [
+      { title: "Flag of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Philippines" },
+    ],
+  },
   "pk-emblem": {
     description: "Adopted in 1954, the emblem sets out the ideological foundation of the state, the basis of its economy, its cultural heritage and its guiding principles. The crescent-and-star crest and the green of the emblem are the traditional symbols of Islam, on which the country was founded. The quartered shield below shows cotton, wheat, tea and jute — the four major crops of Pakistan at independence, and so its economic base. The wreath around the shield is of the floral design used in Mughal art, standing for the cultural heritage the country inherits, and the scroll beneath carries Muhammad Ali Jinnah's motto: Unity, Faith, Discipline.",
     sources: [
       { title: "State emblem of Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/State_emblem_of_Pakistan" },
+    ],
+  },
+  "pk-football-crest": {
+    description: "The badge simply reproduces Pakistan's own national flag: green for the country's Muslim majority, the white crescent for progress and the star for light and knowledge, and the white stripe at the hoist for Pakistan's religious minorities.",
+    sources: [
+      { title: "Flag of Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
     ],
   },
   "pl-arms": {
@@ -4373,6 +4424,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Thailand — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Thailand" },
     ],
   },
+  "th-football-crest": {
+    description: "The elephant gives the team its own Thai nickname, Changsuek (War Elephants), recalling the war elephants Thai (Siamese) armies rode into battle for centuries — famously including King Naresuan's 1593 duel on elephant-back with the Burmese crown prince — and continued to field, armed with mounted guns, into the 1893 Franco-Siamese conflict.",
+    sources: [
+      { title: "Thailand national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Thailand_national_football_team" },
+      { title: "War elephant — Wikipedia", url: "https://en.wikipedia.org/wiki/War_elephant" },
+    ],
+  },
   "tj-emblem": {
     description: "A golden crown beneath a semicircle of seven stars — the crown (toj) that names the country and the seven stars the Tajik people hold sacred — rises over a sun and the peaks of the Pamir mountains. A wreath of wheat ears and cotton bolls, bound in the red, white and green of the flag, frames the whole, and an open book sits at the foot for knowledge.",
     sources: [
@@ -4556,6 +4614,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Vietnam" },
     ],
   },
+  "vn-football-crest": {
+    description: "The gold star and red field repeat Vietnam's own national flag: red for revolution and bloodshed, and the star's five points read as standing for the country's intellectuals, farmers, workers, entrepreneurs and soldiers united as one nation. VFF is the federation's own initials, the Vietnam Football Federation.",
+    sources: [
+      { title: "Flag of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
+    ],
+  },
   "vu-arms": {
     description: "A Melanesian chief holding a spear stands on a mountain before a boar's tusk — the curved tusk a traditional sign of prosperity and rank — crossed with two namele fern leaves, which stand for peace and for the islands. The scroll reads Long God Yumi Stanap — “With God We Stand,” in Bislama.",
     sources: [
@@ -4609,6 +4673,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The government's own reading runs charge by charge. The green shield is the fertility of the country's soil and water, and the blue and white wavy lines above it are prosperity-bringing water; the stonework on it is Great Zimbabwe, the country's historical heritage and the source of its name. The hoe and the AK rifle crossed behind the shield are the transition from war to peace. The two kudu supporters are the unity of purpose of the country's ethnic groups — described as a harmonious blend of black, white and brown — and the earth mound they stand on carries the plants that give food and clothing. The wreath of gold and green is mining and agriculture, the national economy. The crest is the Great Zimbabwe Bird on a red star: the star is an ancient symbol of hope for the future, tinctured red to recall the suffering of the people and the need to avoid its recurrence.",
     sources: [
       { title: "Coat of arms of Zimbabwe — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zimbabwe" },
+    ],
+  },
+  "zw-football-crest": {
+    description: "The Zimbabwe Bird is the country's definitive national emblem, adapted from soapstone bird carvings unique to the ruins of Great Zimbabwe, the 11th-century city built by Shona ancestors; the birds are thought to have held spiritual significance, possibly representing the bateleur eagle as a messenger between the living and the ancestors. It has appeared on Zimbabwe's flag and coat of arms since independence in 1980 and today marks over a hundred national organisations.",
+    sources: [
+      { title: "Zimbabwe Bird — Wikipedia", url: "https://en.wikipedia.org/wiki/Zimbabwe_Bird" },
     ],
   },
 };
