@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { AutoFitName } from "./AutoFitName";
 import { countryCityFlags } from "../lib/cityFlags";
+import { GridImage } from "./GridImage";
 
 /**
  * "Capital cities" tab of the sub-national drill-down grid.
@@ -81,11 +82,9 @@ export function CityFlagGrid({
               aria-label={label}
             >
               <span className="flag-grid__thumb">
-                <img
-                  key={`${baseUrl}${entry.flagPath}`}
+                <GridImage
                   src={`${baseUrl}${entry.flagPath}`}
                   alt=""
-                  loading="lazy"
                   draggable={false}
                   className="flag-grid__thumb-img"
                   onError={(e) => { e.currentTarget.style.display = "none"; }}

@@ -6,6 +6,7 @@ import { useHierarchyData, pluralizeType, type HierarchyLeaf } from "../lib/hier
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning } from "../data/flagMeanings";
 import type { SubdivisionMeta } from "../types/subdivision";
+import { GridImage } from "./GridImage";
 
 /**
  * "Hierarchy chart" tab, table layout — the SAME nation → subdivision → capital
@@ -241,11 +242,9 @@ function FlagCell({
     >
       <span className="hierarchy-table__thumb">
         {flagPath ? (
-          <img
-            key={flagPath}
+          <GridImage
             src={flagPath}
             alt=""
-            loading="lazy"
             draggable={false}
             className="hierarchy-table__thumb-img"
             onError={(e) => { e.currentTarget.style.display = "none"; }}
@@ -385,7 +384,7 @@ export function SubdivisionHierarchyTable({
           >
             <span className="hierarchy-table__thumb">
               {countryFlagUrl ? (
-                <img key={countryFlagUrl} src={countryFlagUrl} alt="" loading="lazy" draggable={false} className="hierarchy-table__thumb-img" />
+                <GridImage src={countryFlagUrl} alt="" draggable={false} className="hierarchy-table__thumb-img" />
               ) : (
                 <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
               )}

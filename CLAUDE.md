@@ -2259,7 +2259,7 @@ polity/transition pairs resolved against the wrong era's ruler.
    directly — a fresh load hides this bug), then click a colony and confirm the "Ruled by" row and
    the flag match the NEW era. 1938 → 1945 → Cambodia must say France.
 
-## A swappable image must be a NEW element — key every `<img>` by its own `src` — hard rule, do not override without approval
+## An image slot must be a NEW element, and it must LOAD — key every `<img>` by its `src`, never `loading="lazy"` — hard rule, do not override without approval
 
 **Every `<img>` this app renders MUST carry a `key` derived from its own `src`. When what an image
 slot shows changes — the grid's "Show" dropdown switching between national flags, coats of arms,
@@ -2294,6 +2294,20 @@ flag. The defect was the ELEMENT. React reused each live `<img>` and re-pointed 
    failed to load stayed blank after switching back to National flags — a flag not shown despite
    being selected, which is the bug as the user experienced it.
 
+**Then the same device reported it again, two days later, wearing the opposite disguise: the
+Passports view showed NOTHING.** Every tile an empty box — no image, no "—" placeholder, and no
+`error` event. An `<img>` that occupies its box, paints nothing and never errors is one whose
+request was **never made**. The keyed remount had done its job (no stale picture to inherit), and
+WebKit had then deferred the load of all 195 freshly-inserted `loading="lazy"` images and started
+none of them. That is the SAME defect as the stale crests: WebKit's native lazy loader mis-handles
+images whose loads are set up dynamically — inserted in a batch, or re-pointed — while the page is
+scrolled. It is long-standing and widely reported, and the known workaround is to stop handing it
+the attribute. So the app does its own deferral: **`src/components/GridImage.tsx` withholds `src`
+until an IntersectionObserver reports the tile within 800px of the viewport**, then sets it. An
+observer always delivers an initial callback for its target, which is exactly the step the native
+implementation gets wrong — and the bandwidth win of lazy loading is kept (measured: 27 of 195
+tiles load on arrival, the rest as you scroll).
+
 ### Rules
 
 1. **Every `<img>` in `src/**` carries `key={<the same expression as its src>}`.** A `?? fallback`
@@ -2308,8 +2322,12 @@ flag. The defect was the ELEMENT. React reused each live `<img>` and re-pointed 
    render, re-assigning `src` in an effect, adding a `useEffect` that pokes `style.display`, or
    bumping a counter into the URL (`?v=2`, a cache-buster). Those are band-aids over element reuse
    and they defeat caching; mount a new element instead.
-4. **Never remove `loading="lazy"` to work around this.** Lazy loading is not the bug — reusing a
-   loaded element is. A freshly mounted lazy image is observed fresh and loads correctly.
+4. **Never write `loading="lazy"` on an `<img>`.** Every thumbnail — grid, chart, table, confetti —
+   renders through **`GridImage`**, which defers the load itself. Native lazy loading is what left
+   the Passports grid completely blank, and "it works in Chrome" is not evidence: the whole class of
+   bug in this rule was invisible in Chromium and obvious on an iPad. Equally, never delete
+   `GridImage`'s observer or its `typeof IntersectionObserver === "undefined"` fallback to "simplify"
+   it — without the fallback an engine that lacks the observer would show nothing, for ever.
 5. **A blank moment beats a wrong picture.** A newly mounted image shows nothing until it loads,
    rather than the previous symbol. That is the correct trade in this repo, and the same discipline
    as "a missing flag always beats a wrong one": a stale crest under a flag heading is a *wrong*
@@ -2318,15 +2336,23 @@ flag. The defect was the ELEMENT. React reused each live `<img>` and re-pointed 
    world map, set **Show → Football associations**, scroll well down the grid, switch back to
    **National flags**, and confirm EVERY tile in view shows its national flag — not the crest it
    showed a moment ago — and that a tile whose image failed once still shows the next view's image.
+   Then walk ALL FOUR views (flags → coats of arms → passports → football associations) and confirm
+   every tile in the viewport has actually PAINTED, not merely reserved its box; the passports are
+   the ones to check hardest, since they are the only category served as raster `.webp` and were the
+   ones that shipped blank. Assert it mechanically too — for every card in view,
+   `img.complete && img.naturalWidth > 0` — because an unloaded tile and a slow one look identical
+   in a screenshot.
 
 ### Enforcement
 
 `scripts/check-image-element-keys.mjs` (`npm run ui:check-image-keys`, in `npm run flags:check` and
 the `check-proportions` CI job) parses every `.tsx` under `src/` and **fails the build** when an
 `<img>` has no `key`, has a `key` that is not its own `src` expression, or has no dynamic `src` at
-all — and separately when `FlagGrid`'s `<Fragment key={url}>` thumbnail wrapper is removed. It reads
-the files as text, so it needs no build step and no TypeScript loader. Never weaken it, never add an
-exemption list, and never delete a key to make a diff smaller: the key IS the fix.
+all; when any `<img>` carries `loading="lazy"`; when `GridImage` loses its `IntersectionObserver` or
+its no-observer fallback; and when `FlagGrid`'s `<Fragment key={url}>` thumbnail wrapper is removed.
+It reads the files as text, so it needs no build step and no TypeScript loader. Never weaken it,
+never add an exemption list, and never delete a key to make a diff smaller: the key and the observer
+ARE the fix.
 
 ## The map's highlight and the detail panel must always be the same entity — hard rule, do not override without approval
 
