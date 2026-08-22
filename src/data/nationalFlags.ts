@@ -5161,6 +5161,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Norway — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway" },
     ],
   },
+  "no-crown-prince": {
+    description: "Identical in its central device to the King's own royal standard — Norway's crowned golden lion bearing an axe, the attribute of Saint Olav — but given a swallow-tailed (forked) fly instead of the King's rectangular field, a difference introduced by royal resolution in 1924 to visually distinguish the flag of the heir to the throne from the sovereign's own standard.",
+    sources: [
+      { title: "Royal standard of Norway — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_standard_of_Norway" },
+    ],
+  },
   "no-sami": {
     description: "Adopted in 1986 as the flag of the Sámi people across northern Norway, Sweden, Finland and Russia, its four colours — red, green, yellow and blue — are the Sámi national colours, drawn from traditional gákti dress. The off-centre circle is a sun-and-moon symbol taken from the drums of Sámi shamans: red for the sun, blue for the moon, reflecting the Sámi self-identity as “sons and daughters of the sun.”",
     sources: [
@@ -5177,6 +5183,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield's red field and blue-and-white cross repeat Norway's own national flag. The two confronted gold lions above are drawn from the crowned lion of Norway's state coat of arms, long a mark of royal authority. Framing the federation's own “NFF” monogram, the crest — introduced in 2014 by the Oslo agency Scandinavian Design Group — was designed around the Norwegian expression “å spille med flagget på brystet”, to play with the flag on your chest.",
     sources: [
       { title: "New Norway Crest Unveiled — Footy Headlines", url: "https://www.footyheadlines.com/2014/12/new-norway-crest-unveiled.html" },
+    ],
+  },
+  "np-royal": {
+    description: "The last royal standard, flown by King Gyanendra until Nepal's monarchy was abolished in 2008, bears a lion holding a banner charged with a six-pointed star and a vertical sword in place of the earlier standards' plain sun/moon circle device — the star read as standing for knowledge, and the sword for strength, both traditional royal attributes.",
+    sources: [
+      { title: "Nepal Royal Flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/np-royal.html" },
+    ],
+  },
+  "np-royal-1928": {
+    description: "The earlier royal standard bears a white lion beside a crescent moon (near the hoist) and a sun (toward the fly), both originally shown with human faces marked with a tilak, the sign of Vishnu, until the design was simplified in 1962. The moon was read as representing the King and the sun the Rana family, whose members held the hereditary premiership until 1951; together the two are said to express the hope that the Nepalese nation will endure as long as the sun and moon themselves.",
+    sources: [
+      { title: "Nepal Royal Flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/np-royal.html" },
     ],
   },
   "np-emblem": {
@@ -5209,6 +5227,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "New Zealand Red Ensign — nzhistory.govt.nz", url: "https://nzhistory.govt.nz/media/photo/new-zealand-red-ensign" },
     ],
   },
+  "nz-royal-1962": {
+    description: "A banner of the New Zealand coat of arms' shield — the four stars of the Southern Cross, a ship for maritime trade, a fleece for farming, a wheat sheaf for agriculture and crossed hammers for mining, with two fern leaves (the native silver fern) beneath — defaced with a blue disc bearing a crowned gold letter 'E' within a garland of roses: Queen Elizabeth II's own royal cypher. Approved in 1962 for the Queen's use while in New Zealand as its head of state, the flag went out of use on her death in September 2022.",
+    sources: [
+      { title: "Personal Flag of Queen Elizabeth II — Museum of New Zealand Te Papa Tongarewa", url: "https://collections.tepapa.govt.nz/object/2161288" },
+    ],
+  },
   "nz-maori": {
     description: "Designed by Hiraina Marsden in 1990 and recognised in 2009 as the national Māori flag, its colours follow the Māori creation account: black for Te Korekore, the realm of potential being; red for Te Whai Ao, the coming into being; and white for Te Ao Mārama, the world of light. The white koru — an unfurling fern frond — stands for renewal and hope, and the white also evokes Aotearoa, the “land of the long white cloud.”",
     sources: [
@@ -5225,6 +5249,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The silver fern has marked New Zealand sporting teams since the 1888–89 New Zealand Native rugby team's tour of Britain, and was carried by New Zealand's expeditionary forces in both World Wars — it is engraved on the Commonwealth war graves of fallen New Zealand soldiers. It is shared today across the country's national teams, including the women's football side, the Football Ferns.",
     sources: [
       { title: "Silver fern — Wikipedia", url: "https://en.wikipedia.org/wiki/Silver_fern" },
+    ],
+  },
+  "om-army": {
+    description: "The army's flag carries Oman's national emblem: a khanjar (a curved ceremonial dagger, still worn by Omani men on formal occasions and adopted as a badge of the ruling family in the 18th century) sheathed and set over two crossed swords, together standing for the traditional weapons of the Omani people; the same emblem marks the badges of every branch of the Sultan's Armed Forces.",
+    sources: [
+      { title: "National emblem of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
     ],
   },
   "om-royal": {
