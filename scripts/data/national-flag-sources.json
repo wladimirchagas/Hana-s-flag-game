@@ -2990,7 +2990,16 @@
           "design": "A yellow field bearing the crown and emblem of the sultan.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bruneian_flags",
           "sha256": "08ef1c49c740fda32c53fdb8a70febd34c04d6da5c943fe2b3bf0db8cc414189",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Sultan's yellow standard bears the national emblem rendered entirely in red: a crescent inscribed with the motto \"Always in service with God's guidance\" (marking Islam as the state religion), flanked by wings symbolising the protection of justice, tranquility, prosperity and peace, two hands representing the government's duty to safeguard the people's welfare, and the royal parasol (payung ubor-ubor), a traditional emblem of the sultanate reserved for the monarch; the Sultan's crown was added above the emblem around 1999.",
+            "sources": [
+              {
+                "title": "Emblem of Brunei — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Brunei"
+              }
+            ]
+          }
         },
         {
           "id": "bn-war-flag",
@@ -4355,7 +4364,16 @@
           "design": "A white field with the national flag in the canton and the Canadian Forces badge in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "1a492c626a65d36cceef48643a21859af91f2728fc13bf7e8d8f6c0fa5726858",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The badge shows a fouled anchor for the Royal Canadian Navy, a soaring eagle for the Royal Canadian Air Force, and two crossed swords for the Canadian Army, uniting the three services' emblems as the single badge of the Canadian Armed Forces.",
+            "sources": [
+              {
+                "title": "Canadian Forces (badge) — Canadian Vexillology",
+                "url": "https://www.canadianvexillology.com/blog/canadianforces"
+              }
+            ]
+          }
         },
         {
           "id": "ca-army",
@@ -4407,7 +4425,16 @@
           "design": "A banner of the arms of Canada, used by the sovereign in Canada.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "3ab2601b5838a90742f379793f82f7083706c76053a769959a822ba7af57f1d4",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A banner of the sovereign's Canadian coat of arms, adopted in 2023: three gold lions and a red lion rampant recall the historic royal arms of England and Scotland, a gold harp represents Ireland, three gold fleurs-de-lis represent France, and a sprig of three red maple leaves at the base stands for all Canadians — the maple leaf having been used as a symbol of Canadian identity since the early 19th century.",
+            "sources": [
+              {
+                "title": "Sovereign's Flag for Canada — Governor General of Canada",
+                "url": "https://www.gg.ca/en/heraldry/public-register/project/3535"
+              }
+            ]
+          }
         },
         {
           "id": "ca-gg",
@@ -5785,7 +5812,16 @@
           "design": "The national flag charged with the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
           "sha256": "2517638fc5792ebaa10f97540eec8eda628d229dcd486009fb95f6eadf2d7166",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential standard bears the national coat of arms: an Andean condor for freedom holding an olive crown, a scroll with the motto \"Libertad y Orden\" (Liberty and Order), and a shield showing two ships for the country's maritime history and trade, a Phrygian cap on a spear for liberty, and a pomegranate between two cornucopias recalling the name New Granada and the nation's mineral and agricultural wealth.",
+            "sources": [
+              {
+                "title": "Coat of arms of Colombia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia"
+              }
+            ]
+          }
         },
         {
           "id": "co-naval-ensign",
