@@ -3530,6 +3530,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Curaçao — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao" },
     ],
   },
+  "cy-naval-jack": {
+    description: "A blue field bears the national coat of arms: a white dove carrying an olive branch — echoing the biblical dove of Noah's Ark and the ancient Greek reading of the olive branch as a sign of peace — above the founding year 1960, framed by an olive wreath standing for peace between the island's Greek and Turkish Cypriot communities; the jack has marked ships of the Cyprus Navy since its establishment in 1964.",
+    sources: [
+      { title: "Coat of arms of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus" },
+    ],
+  },
   "cy-president": {
     description: "A copper-yellow field — recalling Cyprus's large copper-ore deposits — bears the national coat of arms: a white dove carrying an olive branch, symbolising peace, above the founding year 1960, framed by a two-part olive wreath representing the island's two communities, Greek and Turkish Cypriots, whose reconciliation the emblem was designed to embody when it was adopted at independence.",
     sources: [
@@ -5102,6 +5108,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Granted by Royal Warrant on 10 April 1909. The woman is Erin, the personification of Ireland, and the golden harp beside her is Ireland's own emblem — both honour the Irish settlers who came to Montserrat from 1632, so numerous that a 1678 census found seven in ten of the island's white inhabitants were of Irish descent, the 'Emerald Isle of the Caribbean'. Erin's embrace of the black cross marks the island's Christian faith.",
     sources: [
       { title: "Coat of arms of Montserrat — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat" },
+    ],
+  },
+  "mt-civil-ensign": {
+    description: "A red field bordered in white bears the white eight-pointed Maltese Cross — also called the Cross of St John, worn by the Knights Hospitaller who ruled Malta from 1530 to 1798 — whose eight points are traditionally read as the eight Beatitudes, or the eight obligations of a knight (to live in truth, have faith, repent one's sins, show humility, love justice, be merciful, be sincere, and endure persecution); this is the same flag the Knights of St John flew over Malta before 1798, now carried by Maltese-registered merchant shipping.",
+    sources: [
+      { title: "The Maltese Cross: Its origin and importance to Malta — Malta Uncovered", url: "https://www.maltauncovered.com/malta-history/maltese-cross/" },
     ],
   },
   "mt-naval-jack": {
