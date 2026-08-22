@@ -14026,7 +14026,16 @@
           "design": "The first standard adopted after independence.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
           "sha256": "5dd8529a17e5804db0ca5459a9d7dfadea685ac1381f72bf0fafdc043e084727",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The standard used by Kenya's first President, Jomo Kenyatta, from 1964 to 1970: the national flag's colours framing the full national coat of arms — a Maasai warrior's shield, rendered in the red, black and white of traditional cowhide shields and chosen for the Maasai's historical reputation as fierce defenders of their land, set over two crossed spears — on a black square, standing for the unity and defence of Kenya's newly won independence; it was replaced in 1970 by a standard on a blue field, the spears there also read as a play on Kenyatta's own name, which means 'burning spear'.",
+            "sources": [
+              {
+                "title": "Flag of Kenya: Shield, Spears, and Colors — ASYA BAYRAK LLC",
+                "url": "https://www.asyabayrakllc.com/blogs/news/kenya-flag-shield-spears-and-colors"
+              }
+            ]
+          }
         },
         {
           "id": "ke-defence",
@@ -18901,7 +18910,16 @@
           "design": "The royal standard of Malaysia's elected king.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "1d8fd0b1cc10c682f8b211638dec3d1252a299606b2d5d273882ba921fa4df24",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A yellow field — the colour of Malay royalty, standing for the sovereignty of the country's elected head of state — bears the Jata Negara, Malaysia's coat of arms, wreathed by two sheaves of paddy (rice) for abundance and prosperity; it is the standard of the Yang di-Pertuan Agong, the king elected every five years by and from the hereditary rulers of Malaysia's nine Malay states.",
+            "sources": [
+              {
+                "title": "Yang di-Pertuan Agong — Culture Wikia",
+                "url": "https://culture.fandom.com/wiki/Yang_di-Pertuan_Agong"
+              }
+            ]
+          }
         },
         {
           "id": "my-straits",
@@ -28714,7 +28732,16 @@
           "design": "The naval jack.",
           "source": "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags",
           "sha256": "4ecc3c3d78ea8337e7f8e96d4375a2b2fd59a11f6cd318928da776f4794ed2a2",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A white saltire bears the Sun of Uruguay at its centre — the same Sun of May carried by Argentina's flag and named for the May Revolution of 1810 that began the Río de la Plata's path to independence, most often explained as Inti, the Inca sun god, and read more broadly as a symbol of independence and freedom — though rendered in a more circular form on the naval jack than the sun shown on the national flag.",
+            "sources": [
+              {
+                "title": "Sun of May — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Sun_of_May"
+              }
+            ]
+          }
         },
         {
           "id": "uy-arms",
