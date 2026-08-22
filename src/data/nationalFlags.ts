@@ -4290,6 +4290,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Croatian checkerboard — Wikipedia", url: "https://en.wikipedia.org/wiki/Croatian_checkerboard" },
     ],
   },
+  "hr-president": {
+    description: "A blue square bears Croatia's coat of arms: the šahovnica, a red-and-white checkerboard of 25 fields dating to the Middle Ages and symbolising the country's long history of statehood, crowned by a five-part crest bearing the arms of Croatia's historic regions — Croatia proper, Dubrovnik, Dalmatia, Istria and Slavonia — expressing the unity of these territories within the modern republic.",
+    sources: [
+      { title: "Croatian checkerboard — Wikipedia", url: "https://en.wikipedia.org/wiki/Croatian_checkerboard" },
+    ],
+  },
   "hr-arms": {
     description: "The main shield is the šahovnica, a chequerboard of 13 red and 12 white fields, in use since the late 15th century and the country's principal emblem. The crown above it is made of five smaller shields, the historic arms of the lands that make up Croatia — the oldest Croatian arms, Dubrovnik, Dalmatia, Istria and Slavonia. The first arms of Croatia were in fact the three leopard's or lion's heads that now stand for Dalmatia; from the late 15th century those came to be read as Dalmatian, and after the 19th-century national revival — during which the Italian-Dalmatianist Autonomist Party appropriated the three heads — the chequerboard became the preferred national symbol.",
     sources: [
@@ -4313,6 +4319,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The palm tree with a Phrygian cap above it is taken from Haiti's coat of arms, where the cap symbolises liberty and the surrounding cannons and flags commemorate Haiti's armed struggle for independence from France in 1804.",
     sources: [
       { title: "Coat of arms of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
+    ],
+  },
+  "hu-president": {
+    description: "A square flag bears Hungary's coat of arms with angels as shield-holders — a form reserved for the President alone: a shield parted between the Árpád stripes (seven alternating red-and-white bands for the seven Magyar tribes that settled the Carpathian Basin in 896) and a green field with a silver double cross rising from a golden crown on three hills (for the Tátra, Fátra and Mátra mountain ranges), surmounted by the Holy Crown of Hungary — a symbol, in Hungarian constitutional tradition, that the Crown itself, not any one ruler, embodies the sovereignty of the state.",
+    sources: [
+      { title: "The Hungarian Flag and Coat of Arms through the Ages — Hungary Today", url: "https://hungarytoday.hu/the-hungarian-flag-and-coat-of-arms-through-the-ages/" },
     ],
   },
   "hu-state": {
@@ -4339,6 +4351,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "List of Indonesian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Indonesian_flags" },
     ],
   },
+  "id-president": {
+    description: "A yellow field bears Garuda Pancasila, Indonesia's national emblem: a golden mythical eagle-god drawn from pre-colonial Hindu-Javanese tradition, standing for power, strength and knowledge, its wing, tail and neck feathers numbering 17, 8 and 45 for the date of independence (17 August 1945); a shield on its breast carries the five Pancasila principles that underpin the state, and its claws grip a scroll reading 'Bhinneka Tunggal Ika' ('Unity in Diversity').",
+    sources: [
+      { title: "National emblem of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
+    ],
+  },
   "id-emblem": {
     description: "The Garuda is the mount of Vishnu, and in Javanese and Balinese tradition stands for knowledge, power, bravery, loyalty and discipline — Bali venerates it as the lord of all flying creatures. Its feathers are counted, not merely drawn: they are arranged to spell the date of the proclamation of independence, 17 August 1945. The shield on its breast carries the five principles of Pancasila, the state philosophy, and the scroll in its talons reads \"Bhinneka Tunggal Ika\", a line of Old Javanese from the 14th-century poem Sutasoma by Empu Tantular of Majapahit. That line was written to reconcile the Hindu and Buddhist faiths — \"although diverse, both are truthful to Dharma; there is no duality in Truth\" — and is now read as unity in diversity.",
     sources: [
@@ -4349,6 +4367,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Garuda Pancasila is Indonesia's own national emblem. The golden Garuda's feathers are counted to spell out the date of independence — 17 (wing) + 8 (tail) + 19 (base) + 45 (neck) for 17 August 1945 — and its shield carries the five principles of Pancasila: a star for belief in one God, a chain for just and civilised humanity, a banyan tree for national unity, a wild ox (banteng) for democracy guided by consensus, and rice and cotton for social justice. “Bhinneka Tunggal Ika” (“Unity in Diversity”) is drawn from a 14th-century Old Javanese poem.",
     sources: [
       { title: "National emblem of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
+    ],
+  },
+  "ie-president": {
+    description: "A blue field bears a gold harp with silver strings — Ireland's unique choice of a musical instrument as its national emblem, first recorded as the country's arms in medieval heraldry and adopted into the royal Standard of the Kingdom of Ireland when Henry VIII proclaimed himself its king in 1542; the design is modelled on the 14th-century Brian Boru harp held at Trinity College Dublin, and the harp had long since become, especially from the 17th century onward, a symbol of Irish identity and nationalism in its own right.",
+    sources: [
+      { title: "Ireland's Emblem — Ask About Ireland", url: "https://www.askaboutireland.ie/reading-room/life-society/life-society-in-ireland/overview-life-and-society/irelands-emblem/" },
     ],
   },
   "ie-st-patrick": {
@@ -4473,6 +4497,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
     ],
   },
+  "is-president": {
+    description: "The swallow-tailed state flag bears a square panel with Iceland's coat of arms: a shield showing the flag's own cross, held up by the four landvættir (guardian spirits) of Icelandic saga tradition — a dragon for the east, an eagle for the north, a bull for the west and a rock-giant for the south — standing on a plinth of columnar basalt, the volcanic rock characteristic of Iceland's landscape.",
+    sources: [
+      { title: "Coat of arms of Iceland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland" },
+    ],
+  },
   "is-state": {
     description: "Iceland flies its flag in swallow-tailed form for the state and the military, following the wider Scandinavian tradition of using a forked civil/state ensign distinction; the plain rectangular flag is used elsewhere.",
     sources: [
@@ -4507,6 +4537,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The four quarters are the arms of Italy's medieval maritime republics — Venice's winged lion, Genoa's cross of Saint George, Pisa's cross pattée and Amalfi's octagonal cross — powerful port cities whose trade and naval strength once rivalled empires; their arms have marked the Italian Navy's and merchant marine's ensigns since 1947.",
     sources: [
       { title: "Maritime republics — Wikipedia", url: "https://en.wikipedia.org/wiki/Maritime_republics" },
+    ],
+  },
+  "it-president": {
+    description: "A square blue field, bordered gold, bears the Emblem of the Italian Republic: a steel cogwheel for labour — recalling the constitution's opening line that Italy is a republic 'founded on work' — at the centre of a five-pointed white Star of Italy (the Stella d'Italia, an ancient national symbol dating to Graeco-Roman tradition, read as the country's shining destiny), ringed by an olive branch for peace and an oak branch for the strength and dignity of the Italian people; the square shape, adopted from the flag of the Napoleonic-era Italian Republic, and its blue border stand for the four branches of the armed forces the President commands.",
+    sources: [
+      { title: "Presidential standard of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Presidential_standard_of_Italy" },
     ],
   },
   "it-arms": {
