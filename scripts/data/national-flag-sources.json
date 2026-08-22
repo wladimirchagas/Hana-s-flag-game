@@ -21339,7 +21339,16 @@
           "design": "A swallow-tailed white-and-red bicolour charged with the national arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Polish_flags",
           "sha256": "26de4bd1f7be5ff18147c011c364ea53005b9ecb0f02063ca6b174decc980184",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The crowned white eagle of Poland's national arms — a symbol used by Polish rulers since the 13th century — marks this swallow-tailed bicolour as the Polish Navy's ensign.",
+            "sources": [
+              {
+                "title": "Flag of Poland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Poland"
+              }
+            ]
+          }
         },
         {
           "id": "pl-arms-flag",
@@ -22573,7 +22582,16 @@
           "design": "The blue saltire of Saint Andrew on white — the Imperial Russian Navy's ensign, revived in 1992.",
           "source": "https://en.wikipedia.org/wiki/List_of_Russian_flags",
           "sha256": "268a9e454af7b33e75ee4e81f38f9cb3ce7c776fc9ba4859b655f010c5f689ef",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The blue saltire is the cross of Saint Andrew, patron saint of Russia since the 11th century and chosen for the navy because, as a fisherman, the apostle was said to have been called by Jesus on the water; Peter the Great established the design as the naval ensign in 1699, formalised in 1712.",
+            "sources": [
+              {
+                "title": "Ensign of the Russian Navy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Ensign_of_the_Russian_Navy"
+              }
+            ]
+          }
         },
         {
           "id": "ru-mod",
@@ -25373,7 +25391,16 @@
           "design": "The national flag charged with the navy's chakra-and-anchor emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Thai_flags",
           "sha256": "9bdd90ea8eea02f5c43ac094660983d73f0b3ff4fec71cf329942cb3b27f32df",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The chakra (discus) is the emblem of the ruling Chakri dynasty, taken from the mythological weapon of the Hindu god Vishnu and representing time, cosmic order and the protective power of the monarchy; it was first adopted for royal naval vessels under King Rama I.",
+            "sources": [
+              {
+                "title": "The Royal House of Chakri — KMUTT Library",
+                "url": "https://www.lib.kmutt.ac.th/en/king-ramaix-chapter1/"
+              }
+            ]
+          }
         },
         {
           "id": "th-army",
