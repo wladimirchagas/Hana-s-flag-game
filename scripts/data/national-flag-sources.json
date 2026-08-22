@@ -2666,10 +2666,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/1/19/Football_Federation_of_Burundi_logo.png",
           "file": "bi/bi-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Burundi national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Burundi_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Burundi national football team.",
+          "design": "The crest of the Fédération de Football du Burundi — a red-white-green circular badge lettered “FFB” and “Burundi”, with a football.",
           "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Burundi",
           "sha256": "e40234105c222e3446389a88f7f201f0c688b64d1873920dfd63217b6f1bd659",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The red, white and green repeat Burundi's own national flag: white for peace, green for hope in the country's future development, and red for the suffering endured in its struggle for freedom.",
+            "sources": [
+              {
+                "title": "Flag of Burundi — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Burundi"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -4548,10 +4557,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/1/10/Central_African_Football_Federation_logo.svg",
           "file": "cf/cf-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Central African Republic national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Central_African_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Central African Republic national football team.",
+          "design": "The crest of the Fédération Centrafricaine de Football — a shield bearing the Central African Republic's own national flag (blue, white, green and yellow bands crossed by a red stripe and a gold star), lettered “R.C.A”, with a gold player figure in a laurel wreath.",
           "source": "https://en.wikipedia.org/wiki/Central_African_Republic_Football_Federation",
           "sha256": "49c37473dddf31c3dc18cbf4879deb9b7c12dc788d540b8a91cb4a3260ce5da6",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The flag deliberately combines the colours of France (blue and white) with the Pan-African colours (green and yellow): blue for the sky and freedom, white for peace and dignity, green for hope and faith, and yellow for tolerance. The red stripe crossing all four bands stands for the shared blood of humanity — designer Barthélemy Boganda's own expression of a willingness to shed blood for both Africa and the Central African Republic — and the gold star for the country's aspiration to a vibrant future.",
+            "sources": [
+              {
+                "title": "Flag of the Central African Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -4641,10 +4659,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/a/a6/Congolese_Football_Federation_logo.svg",
           "file": "cg/cg-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Congo national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Congolese_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Congo national football team.",
+          "design": "The crest of the Fédération Congolaise de Football — a shield in the green, yellow and red diagonal of the national flag, with a lion standing on a football, lettered “Congo Fecofoot”.",
           "source": "https://en.wikipedia.org/wiki/Congo_Football_Federation",
           "sha256": "c6660fff908aaed6a4bcac8562819517b3d9ca129f1a7068896948730ba67633",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The lion is drawn from the Republic of the Congo's own coat of arms, where a red lion holding a torch stands for the vigour and protection of the Congolese people. The green, yellow and red repeat the country's national flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Republic of the Congo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -6501,10 +6528,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/ed/Djiboutian_Football_Federation_logo.svg",
           "file": "dj/dj-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Djibouti national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Djiboutian_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Djibouti national football team.",
+          "design": "The crest of the Fédération Djiboutienne de Football — a shield in the light blue and green of the national flag with a red star, flanked by crossed spears and a gold wreath, lettered “Fédération de Football Djiboutienne Fondée 1979”.",
           "source": "https://en.wikipedia.org/wiki/Djiboutian_Football_Federation",
           "sha256": "cf9419d02d332d22cc05b9f6a540e6259414edff2081daccec4582a9e6f64225",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The design repeats Djibouti's own national flag: light blue for the sky, sea and the country's Somali population, green for the land and its Afar population, and the red star for unity, the blood of independence's martyrs, and Djibouti being one of the five regions the Somali people inhabit.",
+            "sources": [
+              {
+                "title": "Flag of Djibouti — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Djibouti"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -9539,10 +9575,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/b8/Gambia_Football_Federation_emblem.png",
           "file": "gm/gm-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Gambia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Gambia_Football_Federation_emblem.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Gambia national football team.",
+          "design": "The crest of the Gambia Football Federation — a shield in the red, blue and green bands of the national flag, with a black scorpion over a football, lettered “The Gambia Football Federation”.",
           "source": "https://en.wikipedia.org/wiki/Gambia_Football_Federation",
           "sha256": "28a2f51f020f677717b83126ca81478a7704cf45e1ebb576809571f4f023adec",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The scorpion gives the national team its own nickname, the Scorpions — named in 1985 by the country's Sports Minister with the reasoning \"like The Gambia, the Scorpion is small, but when it stings, you know it's no joke.\" The red, blue and green repeat the country's own national flag.",
+            "sources": [
+              {
+                "title": "Scorpions: The History Behind The Name — The Standard (Gambia)",
+                "url": "https://standard.gm/scorpions-the-history-behind-the-name/"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -9619,10 +9664,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/8/8a/Fgf_guinee_logo_shirt.png",
           "file": "gn/gn-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Guinea national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Fgf_guinee_logo_shirt.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Guinea national football team.",
+          "design": "The crest of the Fédération Guinéenne de Football — a shield in the red, yellow and green vertical bands of the national flag, lettered “FGF” and “Guinée”, with an elephant and a football.",
           "source": "https://en.wikipedia.org/wiki/Guinea_national_football_team",
           "sha256": "b79bd9fd2f34ee17af66930b4f27edee2f87d40336c5d256ff8db56851b64305",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The elephant gives the national team its own name, Syli National — syli means \"elephant\" in the Susu language, and was also the name of Guinea's national currency from 1971 to 1985. The red, yellow and green repeat the country's own national flag.",
+            "sources": [
+              {
+                "title": "Guinea national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Guinea_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -14805,10 +14859,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/e1/Lesotho_Football_Association_logo.svg",
           "file": "ls/ls-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Lesotho national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Lesotho_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Lesotho national football team.",
+          "design": "The crest of the Lesotho Football Association — a white outline map of Lesotho over blue and green bands from the national flag, with a football player and “LeFA” lettering.",
           "source": "https://en.wikipedia.org/wiki/Lesotho_Football_Association",
           "sha256": "3a6137bca06930a75be74286dab29893c607913351e754186fe74f8824635db1",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The blue and green repeat Lesotho's own national flag, adopted in 2006: blue for the sky and rain, and green for prosperity. The flag's own centrepiece, a black Basotho mokorotlo hat (not shown on this badge), replaced the shield, spear and club of the previous design to mark Lesotho as an internally and regionally peaceful state.",
+            "sources": [
+              {
+                "title": "Flag of Lesotho — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Lesotho"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -18035,10 +18098,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/8/80/Namibia_FA.png",
           "file": "na/na-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Namibia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Namibia_FA.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Namibia national football team.",
+          "design": "The crest of the Namibia Football Association — a black circular badge lettered “Namibia”, with a white African fish eagle, wings spread, in flight.",
           "source": "https://en.wikipedia.org/wiki/Namibia_national_football_team",
           "sha256": "1e5b0633a7ba98d2b2bbdbe8baf328c7769ff1af85e7b3303f361c312c20fa77",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The African fish eagle is the crest of Namibia's own national coat of arms, created for independence in 1990 to replace the arms used under South African administration.",
+            "sources": [
+              {
+                "title": "Coat of arms of Namibia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -23160,10 +23232,19 @@
           "name": "Crest of the Somalia national football team",
           "commons": "Somali Football Federation logo.svg",
           "file": "so/so-football-crest.svg",
-          "design": "The crest of the Somalia national football team.",
+          "design": "The crest of the Somali Football Federation — a light-blue football bearing a white star, on a gold rounded badge lettered “Somali Football Federation”, “Estd 1951” and “SFF”.",
           "source": "https://en.wikipedia.org/wiki/Somalia_national_football_team",
           "sha256": "e2f0356040b0629e958035ae8b82b430943e81d825366f0f4891d79bc4ff80c0",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The light blue and the white star repeat Somalia's own national flag: blue for the sky and the surrounding seas (chosen partly in tribute to the United Nations), and the star's five points for the five territories the Somali people inhabit — Somalia itself, Djibouti, Somaliland, Ethiopia's Somali Region and Kenya's North Eastern Province.",
+            "sources": [
+              {
+                "title": "Flag of Somalia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Somalia"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -23344,10 +23425,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/0/03/South_Sudan_Football_Association.png",
           "file": "ss/ss-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the South Sudan national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:South_Sudan_Football_Association.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the South Sudan national football team.",
+          "design": "The crest of the South Sudan Football Association — a shield reproducing the national flag (black, red and green bands separated by white, with a blue hoist triangle bearing a gold star), with a football.",
           "source": "https://en.wikipedia.org/wiki/South_Sudan_Football_Association",
           "sha256": "3cbe6ba260a4def38875cfdfc672f6d5dbd1ac1a9669493b8d6507bbec029771",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "Every element repeats South Sudan's own national flag, adopted in 2005: black for the people, red for the blood shed for independence, green for the land's agricultural wealth, white for peace, blue for the waters of the Nile, and the gold star for unity, hope and determination among the country's states.",
+            "sources": [
+              {
+                "title": "Flag of South Sudan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_South_Sudan"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -23771,10 +23861,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/7/74/Eswatini_Football_Association_logo.svg",
           "file": "sz/sz-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Eswatini national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Eswatini_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Eswatini national football team.",
+          "design": "The crest of the Eswatini Football Association — a shield in the blue, yellow and red of the national flag, lettered “EFA” and “Since 1968”, with a football flanked by two small Nguni shields.",
           "source": "https://en.wikipedia.org/wiki/Eswatini_Football_Association",
           "sha256": "e4c2a4bbedd4ee89223201a4259ea70002fb2072e20e31567b1ad50c130b43be",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The colours repeat Eswatini's own national flag: blue for peace and stability, red for past battles, and yellow for the country's resources. The small shields echo the flag's own black-and-white Nguni shield with spears — read as standing for the peaceful coexistence of black and white Swazi citizens, and for protection from the country's enemies.",
+            "sources": [
+              {
+                "title": "Flag of Eswatini — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Eswatini"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -23900,10 +23999,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/8/8a/Chadian_Football_Federation_logo.png",
           "file": "td/td-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Chad national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Chadian_Football_Federation_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Chad national football team.",
+          "design": "The crest of the Fédération Tchadienne de Football Association — a shield in the blue, yellow and red vertical bands of the national flag, lettered “Tchad” and “FTFA”, with a footballer kicking a ball.",
           "source": "https://en.wikipedia.org/wiki/Chad_Football_Federation",
           "sha256": "d54dbcc1cccf631de6c27f6c0c6b633e3fbf8f1ef8741c9c9c5056a91de3f0e2",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The colours repeat Chad's own national flag, which deliberately blends the French tricolour with the Pan-African palette: blue for Lake Chad and the country's Black African heritage, yellow for the sands of the Sahara, and red for the blood shed in the struggle for independence from France.",
+            "sources": [
+              {
+                "title": "Flag of Chad — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Chad"
+              }
+            ]
+          }
         }
       ],
       "independence": {
