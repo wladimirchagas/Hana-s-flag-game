@@ -6010,6 +6010,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
     ],
   },
+  "ua-mod": {
+    description: "A raspberry field bears the emblem of Ukraine's Ministry of Defence: the small State Emblem — a gold trident (tryzub), the thousand-year-old ancestral sign of Volodymyr the Great and the Rurik dynasty of Kyivan Rus', enshrined in the Constitution since 1996 — superimposed on crossed gold maces, a traditional symbol of military command authority.",
+    sources: [
+      { title: "Ukrainian Trident (Tryzub) — Ukraine.ua", url: "https://ukraine.ua/stories/trident-tryzub/" },
+    ],
+  },
+  "ua-armed-forces": {
+    description: "A raspberry field bears the emblem of the Armed Forces of Ukraine, centred on the gold trident (tryzub) — the ancestral sign of Volodymyr the Great and the Rurik princes of Kyivan Rus', over a thousand years old and the small State Emblem of modern Ukraine since 1992 — marking the flag, established by presidential decree in 2009, as belonging to the whole of the country's armed forces.",
+    sources: [
+      { title: "Ukrainian Trident (Tryzub) — Ukraine.ua", url: "https://ukraine.ua/stories/trident-tryzub/" },
+    ],
+  },
   "ua-president": {
     description: "The gold tryzub (trident) is Ukraine's national coat of arms, tracing back over a thousand years to the seal of the Rurikid princes of Kievan Rus'; adopted as the modern state's small coat of arms in 1992, it stands today as a symbol of Ukrainian sovereignty and national identity.",
     sources: [
@@ -6070,16 +6082,46 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the United States Air Force — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Air_Force" },
     ],
   },
+  "us-space-force": {
+    description: "The Delta — first used by Air Force Space Command in 1961 and carried forward as the Space Force's own emblem — sets two rocket-launch spires and the star Polaris within a black field for the darkness of deep space, bordered in silver for the defence of the space domain, with four beveled silver elements standing for the Army, Navy, Air Force and Marine Corps units that support space operations alongside the Space Force.",
+    sources: [
+      { title: "Space Force Delta — Wikipedia", url: "https://en.wikipedia.org/wiki/Space_Force_Delta" },
+    ],
+  },
   "us-coast-guard": {
     description: "The gold eagle stands for the United States and for freedom and vigilance; the crossed anchors represent the Coast Guard's maritime role and stability at sea; and the year \"1790\" marks the founding of the Revenue Cutter Service, the Coast Guard's direct predecessor, under President Washington.",
     sources: [
       { title: "United States Coast Guard Symbol And Emblem Meaning", url: "https://www3.nnu.edu/united-states-coast-guard-symbol_59283.html" },
     ],
   },
+  "us-coast-guard-ensign": {
+    description: "Sixteen vertical red-and-white stripes recall the sixteen states of the Union at the ensign's creation in 1799 for the Revenue Cutter Service, the Coast Guard's predecessor — one stripe for each of Connecticut, Delaware, Georgia, Kentucky, Maryland, Massachusetts, New Hampshire, New Jersey, New York, North Carolina, Pennsylvania, Rhode Island, South Carolina, Tennessee, Vermont and Virginia — with the Coast Guard's own emblem in the canton; it was designed to be flown by cutters at sea so ship captains could recognise which vessels carried legal authority to stop and board them, distinguishing it from the plain national flag flown by other ships.",
+    sources: [
+      { title: "History of Coast Guard Flags — Military.com", url: "https://www.military.com/coast-guard-birthday/history-of-coast-guard-flags.html" },
+    ],
+  },
+  "us-jack": {
+    description: "Fifty white stars on blue — the canton of the national flag flown alone at the bow of a moored or anchored US Navy vessel. First adopted in 1777 with thirteen stars for the founding colonies, the jack's star count grew with the Union until reaching fifty for Hawaii's 1959 statehood; the modern jack was reintroduced (after a period using a 'Don't Tread on Me' rattlesnake jack) on 4 June 2019, deliberately dated to the anniversary of the Battle of Midway, the turning-point US naval victory of the Second World War.",
+    sources: [
+      { title: "Jack of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Jack_of_the_United_States" },
+    ],
+  },
+  "us-yacht-ensign": {
+    description: "Thirteen alternating red-and-white stripes for the original colonies frame a canton of thirteen white stars circled around a white fouled anchor, in place of the fifty-star field of the national ensign. Devised by the New York Yacht Club and adopted by Congress in 1848–49 at Commodore John Cox Stevens' urging, it let licensed private yachts fly a distinct flag that exempted them from customs-inspection formalities required of commercial vessels — a signal, not a claim to naval rank, that recreational boats still fly today.",
+    sources: [
+      { title: "About the U.S. Yacht Ensign — Gettysburg Flag Works", url: "https://www.gettysburgflag.com/blog/about-the-us-yacht-ensign/" },
+    ],
+  },
   "us-president": {
     description: "The presidential coat of arms shows a bald eagle holding an olive branch of peace in one talon and arrows of war in the other, its beak bearing the motto \"E Pluribus Unum\" (\"Out of many, one\"); the ring of fifty stars — completed in 1960 after Hawaii's admission — represents the fifty states.",
     sources: [
       { title: "Flag of the president of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_president_of_the_United_States" },
+    ],
+  },
+  "us-vice-president": {
+    description: "A white field bears the Vice President's own coat of arms — a shield of thirteen alternating white and red stripes under a blue chief, echoing the Great Seal, with a bald eagle grasping an olive branch of thirteen leaves in one talon and a bundle of thirteen arrows in the other, a scroll in its beak reading \"E pluribus unum\" — with four dark-blue stars, one in each corner, a mark shared with Cabinet secretaries' flags to denote high executive rank. The arms and flag were first authorised by President Truman's 1948 executive order and given their present form in a 1975 redesign under President Ford.",
+    sources: [
+      { title: "Flag of the vice president of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_vice_president_of_the_United_States" },
     ],
   },
   "us-arms": {
