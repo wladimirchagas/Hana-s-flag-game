@@ -3035,6 +3035,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Brazil — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Brazil" },
     ],
   },
+  "br-army": {
+    description: "The Army's coat of arms is parted red and sky blue, bearing a gold griffin holding a silver eight-pointed star — the griffin, a mythical guardian creature part-eagle, part-lion, standing for vigilance and strength — beneath a knight's helmet, with a cockade bearing the Southern Cross constellation (Cruzeiro do Sul), the same star pattern at the centre of the national flag.",
+    sources: [
+      { title: "Armed Forces Flags (Brazil)", url: "http://flagwithmeaning.blogspot.com/2013/04/armed-forces-flags-brazil.html" },
+    ],
+  },
+  "br-air-force": {
+    description: "A sky-blue field, crossed by a diagonal band, bears the arms of the Aeronautics Command within a green-and-gold-bordered diamond: a shield divided green and yellow — Brazil's own national colours — surmounted by a star within concentric white-and-blue discs, tying the Air Force's own heraldry to the wider national symbolism of green, yellow and blue.",
+    sources: [
+      { title: "Brazilian Air Force — Flags of the World", url: "https://www.crwflags.com/fotw/flags/br%5Efab.html" },
+    ],
+  },
   "br-jack": {
     description: "The jack flown at the bow of Brazilian warships shows the Southern Cross constellation, from which the flag takes its name, and 21 stars for the provinces of the empire at the time it was adopted in 1847. It is the oldest Brazilian flag still in use, having survived both the fall of the empire and every redrawing of the national flag's star field.",
     sources: [
@@ -3983,6 +3995,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Guernsey — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey" },
     ],
   },
+  "gh-president": {
+    description: "The national tricolour is charged with Ghana's coat of arms, designed by Amon Kotei and introduced at independence on 4 March 1957: a shield supported by two golden tawny eagles, chosen as the strongest of all birds to signify the safety and defence of Ghana's newly won independence, each wearing the Order of the Star of Ghana.",
+    sources: [
+      { title: "Coat of arms of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
+    ],
+  },
   "gh-arms": {
     description: "Each quarter of the shield names one thing the country rests on: a chief's machete crossed with the linguist's ceremonial staff for traditional authority; Osu Castle on the Gulf of Guinea, the seat of the president, for the national government; a cocoa tree for the country's agricultural wealth; and a gold mine for its minerals — the wealth that gave the Gold Coast its colonial name. The green St George's Cross bearing a gold lion, on blue, is the continuing link with the Commonwealth. The crest is the Black Star of Africa, the same star that stands at the centre of the flag, and the two golden tawny eagles supporting the shield wear the Order of the Star of Ghana. The scroll beneath reads Freedom and Justice.",
     sources: [
@@ -4053,6 +4071,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The plain blue field with a white cross reaching to the edges continues a design first decreed in 1822 during the Greek War of Independence, when the cross stood for Orthodox Christianity — one of the unifying symbols of the revolution — and was described as representing \"the wisdom of God, freedom and country\".",
     sources: [
       { title: "Cross for the War of Independence 1821–29 — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_for_the_War_of_Independence_1821%E2%80%9329" },
+    ],
+  },
+  "gr-president": {
+    description: "The national flag is charged with the presidential arms: a white Greek cross on a blue shield, framed by two laurel branches for victory and honour — the current form adopted in 1975, after the fall of the 1967–1974 military junta, whose own presidential flag had instead carried a phoenix (a symbol of rebirth first added to Greek state emblems in the 1830s under Kapodistrias) so unpopular after the dictatorship that it was dropped entirely rather than revived.",
+    sources: [
+      { title: "Greece: President of the Republic — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gr_pres.html" },
     ],
   },
   "gr-arms": {
