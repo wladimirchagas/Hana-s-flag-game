@@ -2152,7 +2152,16 @@
           "design": "The joint flag of the three services.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
           "sha256": "adf2bdcb80d29bd151df012e4c81b999cd8ff78be2958b100a6bc3b8906d6714",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A red-and-blue tricolour bears the joint emblem of the three services: a circle divided into three fields by gold fimbriations, red for the Army's insignia, dark blue for the Navy's crest and light blue for the Air Force's, uniting the services under a single flag adopted in 1972 after independence.",
+            "sources": [
+              {
+                "title": "National symbols of Bangladesh — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+              }
+            ]
+          }
         },
         {
           "id": "bd-army",
@@ -2165,7 +2174,16 @@
           "design": "The army's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
           "sha256": "60e60977115a28355928049d49bcb4c3bde392339e440eeab8843ae14fd3c69f",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A green field — echoing the national flag's green for Bangladesh's vitality and youthful greenery — bears the Army's insignia: a gold water lily above two crossed gold swords, with the Kalima (the Islamic declaration of faith, in Arabic calligraphy) as its most prominent element, reflecting the central role of Islam in the identity and values of Bangladesh and its army.",
+            "sources": [
+              {
+                "title": "The Bangladesh Army Flag: History, Meaning, and Kalima",
+                "url": "https://wrasse.plymouth.ac.uk/ac-news/bangladesh-army-flag-history-meaning-and-kalima-1767646671"
+              }
+            ]
+          }
         },
         {
           "id": "bd-air-force",
@@ -7948,7 +7966,16 @@
           "design": "The national flag with the naval emblem in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
           "sha256": "39ba868f0add59e56d7fcddc06e20e226501c678cad55f4a7e680bb7e4b81b4b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The national flag — red for the blood of martyrs, white for peace and black for the dark years overcome before the 1952 revolution — is defaced in the canton with two white fouled (rope-wrapped) crossed anchors, a traditional maritime emblem marking the ensign, adopted in 1984, as that of the Egyptian Navy.",
+            "sources": [
+              {
+                "title": "Flags of the Egyptian Armed Forces — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_the_Egyptian_Armed_Forces"
+              }
+            ]
+          }
         },
         {
           "id": "eg-navy",
