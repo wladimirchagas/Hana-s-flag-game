@@ -3244,6 +3244,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Canadian Forces (badge) — Canadian Vexillology", url: "https://www.canadianvexillology.com/blog/canadianforces" },
     ],
   },
+  "ca-army": {
+    description: "The Canadian Army's flag bears its badge on a scarlet field: a white stylised maple leaf containing three red maple leaves over a pair of crossed silver swords with gold handles, topped by St. Edward's Crown. The maple leaf motif recalls the maple leaves worn on Canadian soldiers' collars at the Battle of Vimy Ridge in 1917, a battle regarded as a defining moment in the shaping of Canadian national identity.",
+    sources: [
+      { title: "Flags of the World — Army Flags, Canada", url: "https://www.crwflags.com/fotw/flags/ca%5Earmy.html" },
+      { title: "Juno Beach Centre — Canadian Flag in Normandy", url: "https://www.junobeach.org/canada-in-wwii/articles/the-normandy-campaign/canadian-flag-in-normandy/" },
+    ],
+  },
   "ca-navy": {
     description: "A white field bears the national flag in the canton and, in the fly, the Royal Canadian Navy's badge: a fouled anchor — the universal symbol of the sea, stability and the naval profession — beneath a naval crown, a circlet bearing the sterns and sails of three ancient ships of the line that (unlike an ordinary royal crown) marks the wearer specifically as a maritime service, a form of honour used in Britain for some three centuries.",
     sources: [
@@ -4744,6 +4751,27 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
     ],
   },
+  "jo-army": {
+    description: "The flag of the Royal Jordanian Army, flown since 1949, is a red ensign with the national flag in the canton and a green emblem — two crossed swords beneath a crown — in the fly. The crown stands for the Hashemite monarchy and the throne it sits upon, the crossed swords for the army's military strength, and the scarlet field for the sacrifice of those who serve, echoing the red of the national flag's own Hashemite banner.",
+    sources: [
+      { title: "Flags of the World — Army Flag (Jordan)", url: "https://www.crwflags.com/fotw/flags/jo%5Earmy.html" },
+      { title: "Wikipedia — Royal Jordanian Army", url: "https://en.wikipedia.org/wiki/Royal_Jordanian_Army" },
+    ],
+  },
+  "jo-airforce": {
+    description: "The Royal Jordanian Air Force's ensign, flown since 1955, carries the service's roundel — concentric rings of black, white and green with a red sector at the top bearing the seven-pointed star, the same colours and star found on the national flag itself. The star's seven points stand for the seven verses of the Quran's opening chapter, and the black, white and green bands recall the historic Abbasid, Umayyad and Fatimid caliphates, marking the roundel as a distinctly Jordanian and Arab identity on the country's military aircraft.",
+    sources: [
+      { title: "Flags of the World — Air Force Flag (Jordan)", url: "https://www.crwflags.com/fotw/flags/jo%5Eaf.html" },
+      { title: "Wikipedia — Flag of Jordan", url: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
+    ],
+  },
+  "jo-navy": {
+    description: "The naval ensign of Jordan, flown since 1970, is a white field with the national flag in the canton and a black emblem — an anchor, crossed swords, a length of rope and a crown — set to its side. The anchor marks the navy's maritime role, the crossed swords its military strength, and the crown the authority of the Hashemite monarchy under which the force serves, the same royal symbol used across Jordan's other armed-forces flags.",
+    sources: [
+      { title: "Flags of the World — Naval Flags (Jordan)", url: "https://www.crwflags.com/fotw/Flags/jo~war.html" },
+      { title: "Wikipedia — Flag of Jordan", url: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
+    ],
+  },
   "jo-arms": {
     description: "These are the royal arms of the Hashemite king. At the top the Hashemite crown rests on a red mantle standing for the royal throne, tipped by the point of a spear — the Hashemite banner. Below, a golden eagle — a symbol of power, fortitude and loftiness, and the eagle of Saladin — stands on a globe with its wings touching two Jordanian flags, for the spread of Islam and Arab civilisation. Around the shield are weapons (swords, spears, bows and arrows) and, at the foot, ears of wheat and a palm frond flanking the sash and star of the Order of Al-Hussein bin Ali.",
     sources: [
@@ -4902,6 +4930,34 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
     ],
   },
+  "kr-army": {
+    description: "The Republic of Korea Army's flag is a white field bearing the Army's emblem, whose design expresses the shape of the Baekdu Mountain tiger — a form long used to represent the Korean Peninsula and its terrain — overlaid on the outline of the peninsula itself, intended to convey the army's dynamic strength and forward momentum. The tiger has been a symbol of valour in Korean military tradition for centuries, once marking the rank badges of senior military officials under the Joseon dynasty.",
+    sources: [
+      { title: "Wikipedia — Republic of Korea Armed Forces", url: "https://en.wikipedia.org/wiki/Republic_of_Korea_Armed_Forces" },
+      { title: "Google Arts & Culture — The Korean Tiger: Icon of Myth and Culture", url: "https://artsandculture.google.com/story/the-korean-tiger-icon-of-myth-and-culture-national-museum-of-korea/yAUB_exZf_u-JA" },
+    ],
+  },
+  "kr-navy": {
+    description: "The Republic of Korea Navy's flag bears the service's anchor emblem, adopted when the navy was formally established on 15 August 1948. A 1956 revision added a turtle ship and a Mugunghwa (Rose of Sharon, Korea's national flower) in front of the crossed anchors, intended to capture both a distinctly Korean character and the spirit of Admiral Yi Sun-sin, whose turtle ships famously turned back a Japanese invasion fleet in the 16th century.",
+    sources: [
+      { title: "Wikipedia — Republic of Korea Armed Forces", url: "https://en.wikipedia.org/wiki/Republic_of_Korea_Armed_Forces" },
+      { title: "Korea Citation Index — The Navy Flag: the symbol of Republic of Korea Navy", url: "https://journal.kci.go.kr/imhc/archive/articleView?artiId=ART002819044" },
+    ],
+  },
+  "kr-airforce": {
+    description: "The Republic of Korea Air Force's flag bears the service's emblem: an eagle representing a bold, forward-looking air force defending Korean airspace, set within wings and stars that stand for air power reaching into sky and space, wreathed in the Mugunghwa (Rose of Sharon, South Korea's national flower) for patriotism and laurel for loyalty and the glory of victory. The current version of the associated roundel, redesigned in 2005, adds the Geon trigram from the national flag's taegeukgi to either side of its own taegeuk symbol.",
+    sources: [
+      { title: "Republic of Korea Air Force — ROKAF Mark", url: "https://www.airforce.mil.kr/user/indexSub.action?codyMenuSeq=49733&siteId=airforce-eng&menuUIType=sub" },
+      { title: "Wikipedia — Republic of Korea Armed Forces", url: "https://en.wikipedia.org/wiki/Republic_of_Korea_Armed_Forces" },
+    ],
+  },
+  "kr-marines": {
+    description: "The Republic of Korea Marine Corps' flag bears the Corps' emblem, modelled on the United States Marine Corps' Eagle, Globe and Anchor: an eagle representing the nation and a fouled anchor representing naval heritage, with the ROKMC's own gold star standing in place of the American globe. The design was adopted as the U.S. Marine Corps emblem became an influential model for marine forces elsewhere, including Thailand and Taiwan as well as South Korea.",
+    sources: [
+      { title: "Wikipedia — Eagle, Globe, and Anchor", url: "https://en.wikipedia.org/wiki/Eagle,_Globe,_and_Anchor" },
+      { title: "Wikipedia — Republic of Korea Armed Forces", url: "https://en.wikipedia.org/wiki/Republic_of_Korea_Armed_Forces" },
+    ],
+  },
   "kr-president": {
     description: "The presidential emblem shows two Bonghwang (봉황, the Korean phoenix — a composite creature with a rooster's beak, a swallow's face, a snake's neck, a tortoise's back and a fish's tail) facing each other above a Mugunghwa (rose of Sharon, South Korea's national flower). The Bonghwang has long marked royalty and authority in Korean tradition; paired with the ever-blooming Mugunghwa, the emblem is read as expressing the presidency's wish for the Republic of Korea's freedom, peace and lasting prosperity.",
     sources: [
@@ -4919,6 +4975,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "White Tiger (mythology) — Wikipedia", url: "https://en.wikipedia.org/wiki/White_Tiger_(mythology)" },
       { title: "Korea Football Association unveils updated emblem — Korea JoongAng Daily", url: "https://www.koreajoongangdaily.com/sports/korea-football-association-unveils-updated-emblem/10271720" },
+    ],
+  },
+  "kw-emir": {
+    description: "The Emir's standard, flown since 1961, is the national flag charged with a yellow crown on the green stripe, marking it as the personal standard of Kuwait's head of state. The flag's colours draw on a 13th-century poem by Ṣafi al-Din al-Hilli praising the Arabs: green for their fertile fields, white for the purity of their deeds, red for the blood on their swords, and black — the trapezoid at the hoist — for the battles in which their enemies were defeated.",
+    sources: [
+      { title: "Wikipedia — Flag of Kuwait", url: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
+      { title: "Wikipedia — List of Kuwaiti flags", url: "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags" },
     ],
   },
   "kw-emblem": {
@@ -4943,6 +5006,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The lion and the wavy bands are taken from the Cayman Islands' coat of arms, where the gold lion represents the territory's constitutional ties to Britain and the wavy blue-and-white bands represent the surrounding sea.",
     sources: [
       { title: "Coat of arms of the Cayman Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands" },
+    ],
+  },
+  "kz-armed-forces": {
+    description: "The war flag of the Kazakh Armed Forces is blue, bearing a red, gold-bordered star superimposed with a simplified version of the national emblem's sun and steppe eagle. The sun, with grain-shaped rays, stands for life, energy and abundance, while the eagle — a device that has flown on the banners of Kazakh tribes for centuries — represents freedom, power and the nation's flight toward the future.",
+    sources: [
+      { title: "Flags of the World — Kazakhstan Armed Forces", url: "https://www.crwflags.com/fotw/flags/kz%5E.html" },
+      { title: "Wikipedia — Flag of Kazakhstan", url: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
+    ],
+  },
+  "kz-army": {
+    description: "The Kazakh Ground Forces' flag is a turquoise field bearing the branch's emblem, built from the same sun, steppe eagle and red star seen across the country's armed forces flags, in versions simplified from the national coat of arms. Turquoise is a traditional colour of the Turkic peoples symbolising peace and unity, the sun stands for life and energy, and the steppe eagle — a device long used on the banners of Kazakh tribes — represents the freedom and lofty aspirations of the Kazakh state.",
+    sources: [
+      { title: "Flags of the World — Kazakhstan Armed Forces", url: "https://www.crwflags.com/fotw/flags/kz%5E.html" },
+      { title: "Wikipedia — Flag of Kazakhstan", url: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
     ],
   },
   "kz-president": {
