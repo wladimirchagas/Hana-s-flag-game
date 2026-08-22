@@ -3693,6 +3693,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Estonia — Flags for Use at Sea — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee~.html" },
     ],
   },
+  "ee-president": {
+    description: "The national blue-black-white tricolour — blue for faith, loyalty and Estonia's sky, sea and lakes; black for the nation's tragic past and the traditional dark jacket of the Estonian peasant; white for the striving toward enlightenment — is charged with the Suur riigivapp, Estonia's greater coat of arms, sized to five-sevenths of the flag's width; the presidential flag was re-established in 1993 after Estonia regained independence, reviving a design reserved for the head of state alone.",
+    sources: [
+      { title: "Presidential Flag (Estonia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-pres.html" },
+    ],
+  },
   "ee-arms": {
     description: "The three lions are borrowed, and the borrowing is the history: they come from the 13th-century royal arms of Denmark, because the Duchy of Estonia was Danish — Valdemar II's conquest — and they stayed as the central charge of the greater arms of Tallinn even after the Danish king sold his Estonian dominion to the Teutonic Order in 1346. From there the motif passed to the Duchy of Estonia under Sweden, to the Estonian Knighthood and to the Russian governorate, and so to the modern republic. The golden oak branches on either side are the national tree; the lesser arms are the shield alone. Stalin's regime banned the display of these arms with every other Estonian national symbol after the 1940 occupation.",
     sources: [
@@ -4156,6 +4162,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The black star and the red-yellow-green colours are taken from Guinea-Bissau's national flag: the black star symbolises the leadership of the PAIGC independence movement and the unity of the African people, red recalls the bloodshed of the war of independence, and yellow and green stand for the country's savannas and forests.",
     sources: [
       { title: "Flag of Guinea-Bissau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
+    ],
+  },
+  "gy-president": {
+    description: "The President's own coat of arms — distinct from the national one in that it omits the helmet, the monarchical insignia the national arms rest on — bears an Amerindian feather headdress (the Cacique Crown) marking Guyana's indigenous peoples, flanked by two diamonds for the mining industry; two jaguars hold a pickaxe, a sugar cane stalk and a rice stalk for labour and the country's two staple agricultural industries, on a shield showing the Victoria Regia lily (the national flower) and three wavy blue bars for Guyana's great rivers, with the Canje pheasant, a locally native bird, beneath.",
+    sources: [
+      { title: "Coat of arms of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
     ],
   },
   "gy-arms": {

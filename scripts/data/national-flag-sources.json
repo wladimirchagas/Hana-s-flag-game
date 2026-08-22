@@ -7899,7 +7899,16 @@
           "design": "The presidential flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
           "sha256": "862c8ed420b0480c0c44d4e4d7a70cb1403116e3334a6a72d9af2c2e931347bb",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The national blue-black-white tricolour — blue for faith, loyalty and Estonia's sky, sea and lakes; black for the nation's tragic past and the traditional dark jacket of the Estonian peasant; white for the striving toward enlightenment — is charged with the Suur riigivapp, Estonia's greater coat of arms, sized to five-sevenths of the flag's width; the presidential flag was re-established in 1993 after Estonia regained independence, reviving a design reserved for the head of state alone.",
+            "sources": [
+              {
+                "title": "Presidential Flag (Estonia) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ee-pres.html"
+              }
+            ]
+          }
         },
         {
           "id": "ee-defence",
@@ -11222,7 +11231,16 @@
           "design": "The presidential standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_Guyanese_flags",
           "sha256": "1be5360a38757d1d84901e727a3d6c56ea4db6213103bb089bd113af1f5e76f1",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The President's own coat of arms — distinct from the national one in that it omits the helmet, the monarchical insignia the national arms rest on — bears an Amerindian feather headdress (the Cacique Crown) marking Guyana's indigenous peoples, flanked by two diamonds for the mining industry; two jaguars hold a pickaxe, a sugar cane stalk and a rice stalk for labour and the country's two staple agricultural industries, on a shield showing the Victoria Regia lily (the national flower) and three wavy blue bars for Guyana's great rivers, with the Canje pheasant, a locally native bird, beneath.",
+            "sources": [
+              {
+                "title": "Coat of arms of Guyana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana"
+              }
+            ]
+          }
         },
         {
           "id": "gy-naval-ensign",
