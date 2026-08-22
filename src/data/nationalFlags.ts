@@ -4711,6 +4711,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Vytis — Wikipedia", url: "https://en.wikipedia.org/wiki/Vytis" },
     ],
   },
+  "lu-civil-ensign": {
+    description: "Known as 'de Roude Léiw' (the Red Lion), this banner shows the crowned, double-tailed red lion of Luxembourg's medieval arms on a field barred blue and white — a design dating to Count Henry V ('the Blond', 1216–1281), who added the double tail to the lion of neighbouring Limburg's arms to mark that he now ruled both territories. It is flown by shipping instead of the tricolour, which is near-identical to the flag of the Netherlands, and remains so popular it functions as an unofficial second national flag alongside the tricolour.",
+    sources: [
+      { title: "Roude Léiw — Wikipedia", url: "https://en.wikipedia.org/wiki/Roude_L%C3%A9iw" },
+    ],
+  },
+  "lu-grand-duke": {
+    description: "The Grand Duke's personal standard, adopted in 1897 (before the current design's 2001 update), bears the middle coat of arms of the House of Nassau-Weilburg: the crowned, double-tailed red lion of Luxembourg — a stylised emblem of courage constitutionally enshrined as a symbol of royal power — set against the dynasty's own quartered heraldry.",
+    sources: [
+      { title: "Luxembourg: Grand Duke's standard — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lu_duke.html" },
+    ],
+  },
   "lu-arms": {
     description: "The Red Lion of Luxembourg is one of the older arms of Europe, and it is not originally Luxembourg's own: it derives from the arms of the Duchy of Limburg. Henry V, Count of Luxembourg, was the first to adopt it in the 13th century — his father Waleran III, Duke of Limburg, had borne a red forked-tailed lion on white, and the son set that lion on a field striped silver and blue. The forked tail (queue fourchée) is the detail that marks it out. The national flag's red-white-blue tricolour is drawn from these same three colours, which is why the arms and the flag belong together.",
     sources: [
@@ -5101,6 +5113,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Nicaragua — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nicaragua" },
     ],
   },
+  "nl-naval-jack": {
+    description: "Twelve wedge-shaped segments of red, white and blue radiate from the centre — the 'Dubbele Prinsengeus' (Double Prince's Jack), reserved for the Royal Netherlands Navy (civilian vessels fly a version with fewer, usually eight, segments). 'Geus' descends from the French gueux (\"beggars\"), the nickname the Spanish crown gave 16th-century Dutch rebels that the rebels themselves adopted as a badge of honour — so the jack's very name commemorates the watergeuzen, the seaborne resistance fighters of the Dutch struggle for independence from Spain.",
+    sources: [
+      { title: "Geus — Wikipedia", url: "https://en.wikipedia.org/wiki/Geus" },
+    ],
+  },
   "nl-royal": {
     description: "The blue cross of Nassau divides the flag into quarters bearing the bugle horn of the Principality of Orange, referencing the House of Orange-Nassau; at its centre the royal arms carry a lion holding a sword (the will to defend liberty) and a bundle of arrows for the seven provinces of the old Dutch Republic, beneath the motto \"Je maintiendrai\" (\"I shall maintain\").",
     sources: [
@@ -5129,6 +5147,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The forked swallowtail shape marks this as Norway's state and war flag, distinguishing it from the plain rectangular civil flag flown by private citizens — a distinction inherited via Denmark from a 1625 regulation that reserved the swallow-tailed ensign for the battle fleet.",
     sources: [
       { title: "Swallowtail (flag) — Grokipedia", url: "https://grokipedia.com/page/Swallowtail_(flag)" },
+    ],
+  },
+  "no-naval-jack": {
+    description: "A square version of the national flag, used by the Royal Norwegian Navy. The square shape traces back to the 1844–1905 union between Sweden and Norway, when a shared union mark was placed in the canton of both countries' flags — square, matching Norway's own square-canton flags, rather than the rectangular mark Sweden's flags required; after the union dissolved in 1905, Norway kept a plain square edition of its own flag as the naval jack.",
+    sources: [
+      { title: "Union Jack of Sweden and Norway — Wikipedia", url: "https://en.wikipedia.org/wiki/Union_Jack_of_Sweden_and_Norway" },
     ],
   },
   "no-royal": {
