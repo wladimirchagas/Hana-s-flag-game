@@ -2594,6 +2594,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Andorra — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra" },
     ],
   },
+  "ae-president": {
+    description: "A flag bearing the golden Hawk of Quraish — named for the tribe of the Prophet Muhammad and, in Arab culture, a symbol of strength, courage and freedom — with seven tail feathers for the seven emirates of the federation and, held in its talons, a disc showing the national flag and seven stars, again for the seven emirates. Only the President may fly the flag bearing this emblem, distinguishing it from the plain national flag flown everywhere else.",
+    sources: [
+      { title: "From a golden falcon to a cup of coffee — The National", url: "https://www.thenationalnews.com/uae/heritage/2021/11/17/from-a-golden-falcon-to-a-cup-of-coffee-what-are-the-symbols-of-the-uae/" },
+    ],
+  },
   "ae-emblem": {
     description: "The bird is the Hawk of Quraish, the pan-Arab device named for the tribe the Prophet Muhammad belonged to, which recurs across the emblems of the Arabian peninsula. What makes this one the UAE's is the counting: the disc on the falcon's breast shows the national flag with SEVEN stars, one for each emirate of the federation, and the falcon's tail carries seven feathers for the same seven. In its talons it holds a red parchment bearing the name of the federation. The earlier emblem, used until 2008, had a dhow on the falcon's breast instead — the maritime device Kuwait and Qatar still carry.",
     sources: [
@@ -2652,6 +2658,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The red peak evokes Mount Ararat, Armenia's most sacred national symbol: the mountain where, by tradition, Noah's Ark came to rest after the Flood, and the centrepiece of Armenia's own national coat of arms — even though the mountain itself lies across the border in Turkey. Հ Ֆ Ֆ is the federation's own initials in Armenian, Հայաստանի Ֆուտբոլի Ֆեդերացիա (Football Federation of Armenia).",
     sources: [
       { title: "Coat of arms of Armenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Armenia" },
+    ],
+  },
+  "ao-president": {
+    description: "A red field bears the same emblem as the national flag — a half-cogwheel for industrial workers, a machete for agricultural labourers, and a five-pointed star for internationalism and progress — with two yellow olive branches added beneath it, echoing the hammer, sickle and star of the flags of the Marxist-Leninist states that supported Angola's independence movement, the MPLA, in the 1975 war of liberation from Portugal.",
+    sources: [
+      { title: "Flags, Symbols & Currency of Angola — World Atlas", url: "https://www.worldatlas.com/flags/angola" },
     ],
   },
   "ao-emblem": {
