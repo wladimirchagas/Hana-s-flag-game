@@ -681,7 +681,16 @@
           "design": "The presidential flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Armenian_flags",
           "sha256": "b02fe16e2ee706cbbcc79e7a1352a8c200c0dfb04f970cc74fbfcab356bb0602",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The national tricolour is defaced with the presidential seal, centred on Armenia's coat of arms: Mount Ararat bearing Noah's Ark — the mountain traditionally held to be where the Ark came to rest after the flood, and the enduring national symbol of the Armenian homeland — quartered with the arms of four historical Armenian royal dynasties (Bagratuni, Artsruni, Arshakuni and Rubenid), the shield upheld by an eagle and a lion recalling the ancient Kingdom of Urartu/Ararat, with a sword, a broken chain, a wheat sheaf and an olive branch beneath for strength, freedom from oppression, labour and peace.",
+            "sources": [
+              {
+                "title": "State symbols of the Republic of Armenia — Office of the President of Armenia",
+                "url": "https://www.president.am/en/state-symbols/"
+              }
+            ]
+          }
         },
         {
           "id": "am-arms",
@@ -2016,7 +2025,16 @@
           "design": "The presidential standard, adopted when Barbados became a republic in 2021.",
           "source": "https://en.wikipedia.org/wiki/List_of_Barbadian_flags",
           "sha256": "8d96fb3ab52bf5d5b2cd4a5bf4fe4407d729196c863859948e984138670ca698",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A dark blue field bears the Presidential Seal: Barbados' coat of arms — a shield with a bearded fig tree (for which the island is named) flanked by two Pride of Barbados flowers, supported by a dolphinfish and a pelican, with a crest showing a Barbadian arm grasping two crossed sugar canes for the island's plantation history — encircled by a golden wreath of Pride of Barbados blossoms, the national flower, introduced in 2021 when Barbados became a republic and is flown only by the President.",
+            "sources": [
+              {
+                "title": "Coat of arms of Barbados — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barbados"
+              }
+            ]
+          }
         },
         {
           "id": "bb-arms",
@@ -3847,7 +3865,16 @@
           "design": "A blue field with the royal crest and the country's name.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bahamian_flags",
           "sha256": "ee797047c3e1e85893ff1ebd5975d9e0d1ef9f9f162924e739edb706c73549fb",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A blue field bears the Royal Crest — a crowned lion standing on the arched St Edward's Crown, the heraldic mark of the sovereign's authority used across the Commonwealth realms' governors-general — above a scroll reading 'Commonwealth of The Bahamas', marking the flag as that of the King's own representative in the Bahamas.",
+            "sources": [
+              {
+                "title": "List of Bahamian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Bahamian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "bs-civil-ensign",
@@ -8149,7 +8176,16 @@
           "design": "The presidential standard of the Arab Republic before the 1984 redesign.",
           "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
           "sha256": "217a941f4b2e9b0ded1476ab616d9b5486f3e844f0ee8163b06e4d6d6da28b7c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The tricolour of the short-lived Federation of Arab Republics (Egypt, Syria and Libya), hoisted 1 January 1972, replaces the eagle of the modern flag with a golden Hawk of Quraish — named for the tribe of the Prophet Muhammad — deliberately dropping the colour green and the Eagle of Saladin associated with President Nasser as Anwar Sadat charted a new symbolic course; the hawk gave way in turn to a restored gold Eagle of Saladin in 1984, five years after the federation itself dissolved.",
+            "sources": [
+              {
+                "title": "Republic of Egypt (1972-1984) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/eg-1972.html"
+              }
+            ]
+          }
         },
         {
           "id": "eg-1972",
@@ -9998,7 +10034,16 @@
           "design": "The presidential flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
           "sha256": "5be9b0db53a24231937f76bd3d69357b479fe2b28b3cf172d1f52a96648ee5c1",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A white square, bordered red with a ring of wolf-teeth points, bears Georgia's lesser state coat of arms: on a purple field, Saint George — the country's patron saint, venerated since Late Antiquity — mounted on a silver horse, spearing a silver dragon with a spear tipped by a golden cross, expressing valour and triumph; adopted by presidential decree in 2020, the design omits the crown that tops the fuller state arms.",
+            "sources": [
+              {
+                "title": "Georgia: Standard of the President of the Republic — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ge_pres.html"
+              }
+            ]
+          }
         },
         {
           "id": "ge-war-flag",
