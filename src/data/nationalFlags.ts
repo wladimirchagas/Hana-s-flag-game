@@ -4463,6 +4463,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
   },
+  "ke-president-1964": {
+    description: "The standard used by Kenya's first President, Jomo Kenyatta, from 1964 to 1970: the national flag's colours framing the full national coat of arms — a Maasai warrior's shield, rendered in the red, black and white of traditional cowhide shields and chosen for the Maasai's historical reputation as fierce defenders of their land, set over two crossed spears — on a black square, standing for the unity and defence of Kenya's newly won independence; it was replaced in 1970 by a standard on a blue field, the spears there also read as a play on Kenyatta's own name, which means 'burning spear'.",
+    sources: [
+      { title: "Flag of Kenya: Shield, Spears, and Colors — ASYA BAYRAK LLC", url: "https://www.asyabayrakllc.com/blogs/news/kenya-flag-shield-spears-and-colors" },
+    ],
+  },
   "ke-arms": {
     description: "The two lions are protection; the shield and the spears they hold are unity and the defence of freedom, and the shield carries the national colours — black for the people of Kenya, red for the blood shed in the struggle for independence, green for the land and its natural wealth, and the white fimbriations for peace and unity. The compartment beneath represents Mount Kenya itself, with the country's produce growing on it. The scroll carries the motto Harambee, Swahili for \"pulling together\" — all for one.",
     sources: [
@@ -5007,6 +5013,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Coat of arms of Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
       { title: "Mexico national football team logo — 1000 Logos", url: "https://1000logos.net/seleccion-mexicana-de-futbol-logo/" },
+    ],
+  },
+  "my-agong": {
+    description: "A yellow field — the colour of Malay royalty, standing for the sovereignty of the country's elected head of state — bears the Jata Negara, Malaysia's coat of arms, wreathed by two sheaves of paddy (rice) for abundance and prosperity; it is the standard of the Yang di-Pertuan Agong, the king elected every five years by and from the hereditary rulers of Malaysia's nine Malay states.",
+    sources: [
+      { title: "Yang di-Pertuan Agong — Culture Wikia", url: "https://culture.fandom.com/wiki/Yang_di-Pertuan_Agong" },
     ],
   },
   "my-arms": {
@@ -6230,6 +6242,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue stripe stands for greatness, the white for the Republic, and the red for the blood of those who died for independence; the motto \"Libertad o Muerte\" (\"Liberty or Death\") honours the Treinta y Tres Orientales, the thirty-three exiles who returned in 1825 to fight Brazilian rule and spark Uruguay's independence.",
     sources: [
       { title: "Flag of the Treinta y Tres — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Treinta_y_Tres" },
+    ],
+  },
+  "uy-naval-jack": {
+    description: "A white saltire bears the Sun of Uruguay at its centre — the same Sun of May carried by Argentina's flag and named for the May Revolution of 1810 that began the Río de la Plata's path to independence, most often explained as Inti, the Inca sun god, and read more broadly as a symbol of independence and freedom — though rendered in a more circular form on the naval jack than the sun shown on the national flag.",
+    sources: [
+      { title: "Sun of May — Wikipedia", url: "https://en.wikipedia.org/wiki/Sun_of_May" },
     ],
   },
   "uy-arms": {
