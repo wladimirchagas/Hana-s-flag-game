@@ -98,7 +98,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/36/Andorran_Football_Federation_logo.svg",
           "file": "ad/ad-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Andorra national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Andorran_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Andorra national football team.",
+          "design": "A circular emblem of flowing navy, red and orange ribbon shapes forming an abstract \"F\", with the letters \"FAF\" at the centre.",
           "source": "https://en.wikipedia.org/wiki/Andorra_Football_Federation",
           "sha256": "8fc677d48c74d9e51e2804b44fcad3a3d4e115c38e18751486ddf95d30a4e6e5",
           "fetched": "2026-08-18"
@@ -286,7 +286,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/4/4e/Afghanistan_Football_Federation_logo.png",
           "file": "af/af-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Afghanistan national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Afghanistan_Football_Federation_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Afghanistan Football Federation — a green shield lettered “Afghanistan Football Federation” and “1922”, with a football over a black-red-green diagonal band.",
+          "design": "A shield reading \"AFGHANISTAN FOOTBALL FEDERATION\" with a football at its centre, a black-red-green diagonal band, and \"1922\" (the federation's founding year) beneath.",
           "source": "https://en.wikipedia.org/wiki/Afghanistan_national_football_team",
           "sha256": "d5df2da0ebe6bcd2c25c3fc2ea3b4477c3fc1a116ef62a7edb6f8d5465c07756",
           "fetched": "2026-08-18"
@@ -366,10 +366,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/e2/Antigua_and_Barbuda_Football.png",
           "file": "ag/ag-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Antigua and Barbuda national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Antigua_and_Barbuda_Football.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Antigua and Barbuda national football team.",
+          "design": "A circular badge with the letters \"ABFA\" and \"ANTIGUA BARBUDA FOOTBALL ASSOCIATION\", two deer rearing on either side of a football, standing on grass, above a banner reading \"FOUNDED 1928\" and \"EACH ENDEAVOURING ALL ACHIEVING\".",
           "source": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda_national_football_team",
           "sha256": "a456e02f92e72218623e1fe400622ee10dbb991ab3f4239ca2fee83989177fb0",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The two deer are taken from Antigua and Barbuda's coat of arms, where they represent the islands' wildlife (a population of fallow deer introduced under British colonial rule), and the motto \"Each endeavouring, all achieving\" is the country's own national motto.",
+            "sources": [
+              {
+                "title": "Coat of arms of Antigua and Barbuda — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -420,10 +429,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/6/63/Anguilla_Football_Association_%282020%29.png",
           "file": "ai/ai-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Anguilla football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Anguilla_Football_Association_(2020).png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Anguilla's national football association.",
+          "design": "A circular badge in navy and teal with three orange dolphins arranged in a circle around a football, ringed by \"ANGUILLA FOOTBALL ASSOCIATION\" text and the founding year \"1990\".",
           "source": "https://en.wikipedia.org/wiki/Anguilla_Football_Association",
           "sha256": "818ec36c2565da6a221909657260339b4dcf66f3a9141af3540d98ed7c138e63",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The three dolphins are taken directly from Anguilla's national flag and coat of arms, where they are arranged in a circle to represent unity, strength and endurance.",
+            "sources": [
+              {
+                "title": "Flag of Anguilla — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Anguilla"
+              }
+            ]
+          }
         }
       ]
     },
@@ -1079,10 +1097,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/30/Football_Federation_American_Samoa_%28badge%29.svg",
           "file": "as/as-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the American Samoa football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_American_Samoa_(badge).svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of American Samoa's national football association.",
+          "design": "A shield reading \"FFAS FOOTBALL FEDERATION AMERICAN SAMOA\" with a football, and beneath it a golden fue (fly-whisk), a tanoa (kava bowl) and crossed staffs.",
           "source": "https://en.wikipedia.org/wiki/Football_Federation_American_Samoa",
           "sha256": "434280802913dfd63c67ca9ce7e8c4cb37f247a85da593dfec9ad882d0f53de0",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The fue, tanoa and to'oto'o (orator's staff) are the traditional regalia of a Samoan talking chief and appear together on the Seal of American Samoa: the fue represents wisdom, the tanoa represents service to the chief, and the staff represents authority.",
+            "sources": [
+              {
+                "title": "Seal of American Samoa — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_American_Samoa"
+              }
+            ]
+          }
         }
       ]
     },
@@ -1782,7 +1809,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/d/da/Football_Association_of_Bosnia_and_Herzegovina_logo.svg",
           "file": "ba/ba-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Bosnia and Herzegovina national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Bosnia_and_Herzegovina_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Football Association of Bosnia and Herzegovina — a circular blue badge with a football and a blue silhouette map of Bosnia and Herzegovina, ringed by the country's name and the federation's name in Bosnian/Croatian, Serbian Cyrillic and English.",
+          "design": "A blue silhouette of Bosnia and Herzegovina's outline on a football, with gold hexagon panels at the corners, ringed by \"BOSNA I HERCEGOVINA\" / \"NOGOMETNI SAVEZ\" text in Latin and Cyrillic script.",
           "source": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_national_football_team",
           "sha256": "e8f2894ed2bc88b91462174ffad3bfe42526d78b1f9806c55612960082444125",
           "fetched": "2026-08-18"
@@ -1889,10 +1916,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/b5/Barbados_FA.png",
           "file": "bb/bb-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Barbados national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Barbados_FA.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Barbados national football team.",
+          "design": "A circular badge reading \"BARBADOS FOOTBALL ASSOCIATION\" and \"FOUNDED 1910\", with a football in blue and gold and a black trident head at its centre.",
           "source": "https://en.wikipedia.org/wiki/Barbados_Football_Association",
           "sha256": "0dc9503cdba55bc87a55cbe54b1da49d8d92cdb59be4914f03cd26ac3ee2a1a2",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The trident is taken from Barbados's national flag, where its broken shaft marks the country's break from British colonial rule and its three points stand for government of, for and by the people.",
+            "sources": [
+              {
+                "title": "Flag of Barbados — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Barbados"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -2112,7 +2148,7 @@
           "name": "Crest of the Bangladesh national football team",
           "commons": "Logo of Bangladesh Football Federation.svg",
           "file": "bd/bd-football-crest.svg",
-          "design": "The crest of the Bangladesh Football Federation — a blue shield with a Bengali-script monogram, a football wreathed in laurel leaves, lettered “Bangladesh Football Federation”.",
+          "design": "A shield with Bengali script above a football framed by a wreath, ringed by \"BANGLADESH FOOTBALL FEDERATION\" text.",
           "source": "https://en.wikipedia.org/wiki/Bangladesh_national_football_team",
           "sha256": "196f57079b4c0f4a41c3c7d4842ee22c56902adea2d4c1ab0a7c5cf800cbf643",
           "fetched": "2026-08-18"
@@ -2831,7 +2867,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/bb/Bermuda_FA_logo.svg",
           "file": "bm/bm-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Bermuda football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Bermuda_FA_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Bermuda's national football association.",
+          "design": "A circular emblem of abstract navy and pink shapes forming a stylised wave/shield motif, with \"Bermuda Football Association\" text beneath.",
           "source": "https://en.wikipedia.org/wiki/Bermuda_Football_Association",
           "sha256": "e07f2fd042eae2c949af5957480d85e375717f521a5198b6cbd6769b9a191edf",
           "fetched": "2026-08-18"
@@ -2953,7 +2989,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/a/af/Football_Association_of_Brunei_Darussalam_logo.svg",
           "file": "bn/bn-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Brunei national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Brunei_Darussalam_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Brunei national football team.",
+          "design": "A circular badge with a green-and-gold hexagon-patterned football on a black and yellow crescent field, ringed by Jawi and Latin text reading \"Football Association of Brunei Darussalam\".",
           "source": "https://en.wikipedia.org/wiki/Football_Association_of_Brunei_Darussalam",
           "sha256": "d2ce8c294334f8893e01e18ec1ac57d09c980a12795894893de74b9444e2635d",
           "fetched": "2026-08-18"
@@ -3629,10 +3665,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/b0/Bahamas_FA.png",
           "file": "bs/bs-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Bahamas national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Bahamas_FA.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Bahamas national football team.",
+          "design": "A circular badge reading \"BFA\" and \"BAHAMAS FOOTBALL ASSOC.\", with a football wreathed by yellow flowers.",
           "source": "https://en.wikipedia.org/wiki/Bahamas_national_football_team",
           "sha256": "960aad1df0edc1d02bdaf14313376609ca9df6e6746eba5f1fbb7f2941899c3b",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The yellow flowers are the Yellow Elder (Tecoma stans), the Bahamas' national flower, chosen for being native to the islands and blooming year-round, and taken to symbolise the country's natural beauty and resilience.",
+            "sources": [
+              {
+                "title": "The Yellow Elder — National Flower of The Bahamas, Government of The Bahamas",
+                "url": "https://www.bahamas.gov.bs/yellow-elder-national-flower"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -3708,10 +3753,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/6/64/Bhutan_FF_logo.svg",
           "file": "bt/bt-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Bhutan national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Bhutan_FF_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Bhutan national football team.",
+          "design": "A shield reading \"BHUTAN\" and \"FOOTBALL FEDERATION — HOME OF HAPPINESS\", with a football set inside a blue and gold roundel flanked by two red coiled dragon forms.",
           "source": "https://en.wikipedia.org/wiki/Bhutan_Football_Federation",
           "sha256": "c3e9da65ce8ac83c953f3f3a55d80a8261b173a9663e494809963cb0934124de",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The dragon forms are Bhutan's Druk (Thunder Dragon), the country's central national symbol and namesake, taken from the national flag, where the Druk's snarling mouth signifies the defence of Bhutan and the jewels in its claws represent the country's wealth and the security of its people.",
+            "sources": [
+              {
+                "title": "Flag of Bhutan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Bhutan"
+              }
+            ]
+          }
         }
       ]
     },
@@ -4058,10 +4112,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/f/f0/Belize_FA_2.svg",
           "file": "bz/bz-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Belize national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Belize_FA_2.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Belize national football team.",
+          "design": "A shield reading \"BELIZE\" and \"FOUNDED 1980\" in navy and yellow, enclosing Belize's national coat of arms (a mahogany tree, tools and a ship, flanked by two figures) inside a white five-pointed star.",
           "source": "https://en.wikipedia.org/wiki/Belize_national_football_team",
           "sha256": "8a7109be69f06f7eb3f9844a6a00e6f01c89bedce3c879505f3860de97a2a0a7",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The crest carries Belize's own coat of arms: the mahogany tree, woodcutter's tools and ship reflect the country's historical mahogany-export economy, the two supporting figures represent its Mestizo and Afro-Belizean population, and the motto \"Sub Umbra Floreo\" (\"Under the shade I flourish\") alludes both to its forests and to its founding under British protection.",
+            "sources": [
+              {
+                "title": "Coat of arms of Belize — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -4907,10 +4970,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/4/48/Cook_Islands_FA.svg",
           "file": "ck/ck-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Cook Islands football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Cook_Islands_FA.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Cook Islands's national football association.",
+          "design": "A shield reading \"COOK ISLANDS FOOTBALL ASSOCIATION\", with a football surrounded by a circle of gold stars on an olive-green field, flanked by palm fronds.",
           "source": "https://en.wikipedia.org/wiki/Cook_Islands_Football_Association",
           "sha256": "fd9a7568cf958555b860f4aba2fe98b3a57fb4ca994dde41c69bbbae5cf34304",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The circle of stars echoes the Cook Islands' national flag, whose fifteen stars represent the fifteen islands that make up the country.",
+            "sources": [
+              {
+                "title": "Flag of the Cook Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands"
+              }
+            ]
+          }
         }
       ]
     },
@@ -5755,10 +5827,19 @@
           "name": "Crest of the Costa Rica national football team",
           "commons": "Costa Rica national football team logo.svg",
           "file": "cr/cr-football-crest.svg",
-          "design": "The crest of the Costa Rica national football team — a shield in navy, white, red and gold bearing a stylised “CR” monogram.",
+          "design": "A shield in the shape of a stylised \"CR\" monogram, in Costa Rica's national blue, white and red.",
           "source": "https://en.wikipedia.org/wiki/Costa_Rica_national_football_team",
           "sha256": "65cf7b28c0729a4c5809ff2646410948a0db90363106c7e5265492f6aab30d66",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The colours are Costa Rica's national flag colours: blue for the sky and idealism, white for peace and clear thinking, and red for the warmth of the Costa Rican people and the blood shed for their freedom.",
+            "sources": [
+              {
+                "title": "Flag of Costa Rica — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -5996,10 +6077,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/c/ce/Cape_Verdean_Football_Federation_logo.svg",
           "file": "cv/cv-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Cabo Verde national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Cape_Verdean_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Cabo Verde national football team.",
+          "design": "A shield reading \"FCF\" above a ring of ten gold stars, with a stylised shark's head in blue and red at its centre.",
           "source": "https://en.wikipedia.org/wiki/Cape_Verdean_Football_Federation",
           "sha256": "03756f0ac882137f72503c170ff4e51e8b7ba98d8744f57a0740a1d52765841a",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The ten stars echo Cape Verde's national flag, where they stand for the archipelago's ten main islands, and the shark reflects the national team's own nickname \"Tubarões Azuis\" (Blue Sharks), tying the crest to the islands' Atlantic setting and fishing culture.",
+            "sources": [
+              {
+                "title": "Cape Verde national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cape_Verde_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -6050,10 +6140,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/1/1c/Curacao_Football_Federation.svg",
           "file": "cw/cw-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Curaçao football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Curacao_Football_Federation.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Curaçao's national football association.",
+          "design": "A circular badge reading \"Federashon Futbòl Kòrsou\", with a shield showing a sailing ship over blue-and-yellow wavy bands, framed by green laurel leaves and red dots.",
           "source": "https://en.wikipedia.org/wiki/Cura%C3%A7ao_Football_Federation",
           "sha256": "2a59e48911aed43fa8ad756f16e4fbf1a321e453e9041dc91739b25124c52c4e",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The ship is taken from Curaçao's coat of arms, where it represents the sailing ship of the Dutch West India Company, which founded the island's colonial trading economy.",
+            "sources": [
+              {
+                "title": "Coat of arms of Curaçao — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao"
+              }
+            ]
+          }
         }
       ]
     },
@@ -6736,10 +6835,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/8/8e/Dominica_Football_Association.svg",
           "file": "dm/dm-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Dominica national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Dominica_Football_Association.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Dominica national football team.",
+          "design": "A shield in Dominica's green, yellow, black and white cross pattern around a football, topped by a Sisserou parrot's head and ringed by ten red five-pointed stars, with \"DOMINICA FOOTBALL ASSOCIATION\" text.",
           "source": "https://en.wikipedia.org/wiki/Dominica_Football_Association",
           "sha256": "f7d2ded59b0e1d96aaa9689b5dced76709247c7599a6179d86417bde56f85850",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The Sisserou parrot and the ring of ten stars are taken from Dominica's national flag: the parrot is the country's endangered national bird, found only on Dominica, and the ten stars stand for the island's ten parishes.",
+            "sources": [
+              {
+                "title": "Flag of Dominica — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Dominica"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -7318,7 +7426,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/a/a2/Estonian_Football_Association_logo.svg",
           "file": "ee/ee-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Estonia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Estonian_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Estonian Football Association (Eesti Jalgpalli Liit) — a dark blue circle bearing a white multi-pointed star, ringed by the association's own name in white lettering on a lighter blue band.",
+          "design": "A blue circular badge reading \"EESTI JALGPALLI LIIT\" (Estonian Football Association), with a white seven-pointed star at its centre.",
           "source": "https://en.wikipedia.org/wiki/Estonian_Football_Association",
           "sha256": "fda2120ea7461264ad2e76283919dcaf77c6325f89eb529167a6d16689fa87a6",
           "fetched": "2026-08-18"
@@ -8203,7 +8311,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/0/06/Fiji_FA.svg",
           "file": "fj/fj-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Fiji national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Fiji_FA.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Fiji national football team.",
+          "design": "A circular badge reading \"FIJI FOOTBALL ASSOCIATION\" around a football, above a black hand holding a curved gold object.",
           "source": "https://en.wikipedia.org/wiki/Fiji_national_football_team",
           "sha256": "96a2bdc3fc43a5ff6b3b97ebc8bff40ce5f8d005f2eabfd70ee3eeb4a82a480b",
           "fetched": "2026-08-18"
@@ -8334,10 +8442,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/e2/F.S._Micronesia_Football_Association.png",
           "file": "fm/fm-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Micronesia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:F.S._Micronesia_Football_Association.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Micronesia national football team.",
+          "design": "A shield reading \"FEDERATED STATES OF MICRONESIA\" with a football at its peak, and four blue five-pointed stars above wavy blue lines representing the sea.",
           "source": "https://en.wikipedia.org/wiki/Federated_States_of_Micronesia_national_football_team",
           "sha256": "adb8b9cc641f2d9ae12f684df3a2aa61e378f70f55647d5111f2e5517aa3e648",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The four stars are taken directly from the national flag, where they represent the country's four states: Chuuk, Kosrae, Pohnpei and Yap.",
+            "sources": [
+              {
+                "title": "Flag of the Federated States of Micronesia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -8995,10 +9112,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/f/fd/Grenada_Football_Association_logo_2015.svg",
           "file": "gd/gd-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Grenada national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Grenada_Football_Association_logo_2015.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Grenada national football team.",
+          "design": "A shield reading \"GRENADA F.A.\" and \"Est. 1924\", in green and gold with sun rays, a red disc at the centre, gold stars around the border, and a football at the base.",
           "source": "https://en.wikipedia.org/wiki/Grenada_Football_Association",
           "sha256": "02fa791e75681a8930b527bd33d3fac0e1b503b2b318461b642d839d7a70f659",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The colours, stars and central disc are taken from Grenada's national flag: the gold stars stand for the country's parishes and its two sister islands of Carriacou and Petite Martinique, the green represents the islands' vegetation, and the gold evokes the sun and the warmth of Grenadians.",
+            "sources": [
+              {
+                "title": "Flag of Grenada — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Grenada"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -9463,10 +9589,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/f/fe/Gibraltar_Football_Association_%282020%29.svg",
           "file": "gi/gi-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Gibraltar football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Gibraltar_Football_Association_(2020).svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Gibraltar's national football association.",
+          "design": "A red shield reading \"GIBRALTAR FOOTBALL ASSOCIATION\", with a white triangular peak silhouette at its centre.",
           "source": "https://en.wikipedia.org/wiki/Gibraltar_Football_Association",
           "sha256": "59c79bf26bb6ad10a76b28762137f85c55d974a333ea36b7023e0c70488fc34c",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The triangular peak evokes the Rock of Gibraltar, the limestone promontory that gives the territory its name and dominates its skyline.",
+            "sources": [
+              {
+                "title": "Rock of Gibraltar — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Rock_of_Gibraltar"
+              }
+            ]
+          }
         }
       ]
     },
@@ -10205,10 +10340,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/bf/Football_Federation_of_Guinea-Bissau_logo.png",
           "file": "gw/gw-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Guinea-Bissau national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Guinea-Bissau_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Guinea-Bissau national football team.",
+          "design": "A circular badge reading \"FFGB\" and \"FEDERAÇÃO DE FUTEBOL DA GUINÉ-BISSAU\", with a black star over a football, framed by red, yellow and green ribbon shapes.",
           "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Guinea-Bissau",
           "sha256": "d9f93960dba04f3896e38a131e0280361b063cc843c01c10492c4fdddbfc80ba",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The black star and the red-yellow-green colours are taken from Guinea-Bissau's national flag: the black star symbolises the leadership of the PAIGC independence movement and the unity of the African people, red recalls the bloodshed of the war of independence, and yellow and green stand for the country's savannas and forests.",
+            "sources": [
+              {
+                "title": "Flag of Guinea-Bissau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau"
+              }
+            ]
+          }
         }
       ],
       "independence": {
