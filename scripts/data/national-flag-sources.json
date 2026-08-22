@@ -914,7 +914,16 @@
           "design": "The light-blue and white triband without the Sun of May — the optional civil flag, beside the state flag that carries the sun.",
           "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
           "sha256": "af25758f3de6cdf916d2e3dfccfaeac1d6ca71187b8780624be46255bd79ecba",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Argentina distinguishes a plain civil flag, flown by private citizens, from the state/war flag charged with the Sun of May (Sol de Mayo) — a sun face said to have appeared in the sky over Buenos Aires during the May Revolution of 1810, reserved for government and military use.",
+            "sources": [
+              {
+                "title": "Civil flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Civil_flag"
+              }
+            ]
+          }
         },
         {
           "id": "ar-president",
@@ -1158,7 +1167,16 @@
           "design": "The red-white-red triband charged with the federal eagle — the state flag, war flag and naval ensign, beside the plain civil flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Austrian_flags",
           "sha256": "d2049ba5974aee08e77fc65a90ac1b191b0d49f21cca99be803aaef6f6f558f2",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Austria's plain red-white-red tricolour is the civil flag flown by ordinary citizens; the state flag adds the federal eagle (holding a hammer and sickle, and with a broken chain at its feet, symbolising the country's liberation from its 1938 annexation by Nazi Germany) for use by state authorities, the military and diplomatic missions.",
+            "sources": [
+              {
+                "title": "State flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/State_flag"
+              }
+            ]
+          }
         },
         {
           "id": "at-arms",
@@ -3085,7 +3103,16 @@
           "design": "The tricolour charged with the coat of arms — flown by the state, while citizens fly the plain tricolour.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
           "sha256": "f3f83d423d20a64c069ddb1ce3a1d2f63363c7ffb76fe756d9fdeefd4143a57e",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Bolivia's plain red-yellow-green tricolour is flown by ordinary citizens, while the state flag adds the national coat of arms — showing Cerro Rico, an alpaca, a wheatsheaf and the sun — for use by government authorities and the armed forces.",
+            "sources": [
+              {
+                "title": "Flag of Bolivia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Bolivia"
+              }
+            ]
+          }
         },
         {
           "id": "bo-naval-ensign",
@@ -4171,7 +4198,16 @@
           "to": 9999,
           "reuse": "flags/gb.svg",
           "design": "The Union Flag, which Parliament resolved in 1964 that Canada would continue to fly on specified days as a symbol of its membership of the Commonwealth.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "meaning": {
+            "description": "A 1964 Canadian Parliament resolution confirmed the Union Flag would continue to be flown on specified days to symbolise Canada's membership of the Commonwealth and its historical ties to Britain, alongside the Maple Leaf as the country's national flag.",
+            "sources": [
+              {
+                "title": "List of Canadian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Canadian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "ca-red-ensign-1957",
@@ -6505,7 +6541,16 @@
           "design": "The black-red-gold tricolour charged with the federal shield and its eagle — flown by federal authorities, while the plain tricolour is the civil flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_German_flags",
           "sha256": "61e2ab80ddd1d76110011dbdf2d8281b6a330ca7d4c43066102c2b9fba35870c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Germany's plain black-red-gold tricolour is the civil flag flown by citizens; the state flag adds the federal shield's eagle — a symbol of German sovereignty dating back to the Holy Roman Empire — reserved for federal authorities.",
+            "sources": [
+              {
+                "title": "State flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/State_flag"
+              }
+            ]
+          }
         },
         {
           "id": "de-navy",
@@ -6705,7 +6750,16 @@
           "design": "The Dannebrog in swallow-tailed form, flown by the state, beside the rectangular civil flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Danish_flags",
           "sha256": "df3ca73ea2845de7910df52d01c4b314221104e84f5dcef624a2c41f90fc5909",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Denmark's Dannebrog is flown in swallow-tailed form by the state, the monarchy and the military, distinguishing official use from the plain rectangular civil flag flown by ordinary citizens — a Scandinavian convention shared with Norway and Sweden.",
+            "sources": [
+              {
+                "title": "State flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/State_flag"
+              }
+            ]
+          }
         },
         {
           "id": "dk-royal",
@@ -7868,7 +7922,16 @@
           "design": "The red-yellow-red bands without the coat of arms — the flag private citizens fly, alongside the state flag which bears the arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
           "sha256": "ed8d3e30b9f463f1f524cbc0f813bd159e7c8a07d1a6966b74fdf1a2a6d721dd",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Spain's civil flag omits the national coat of arms that the state flag carries in its central white band, following the common European convention of reserving the arms-bearing version for government, military and diplomatic use.",
+            "sources": [
+              {
+                "title": "Civil flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Civil_flag"
+              }
+            ]
+          }
         },
         {
           "id": "es-naval-jack",
@@ -8114,7 +8177,16 @@
           "design": "The blue Nordic cross charged with the national coat of arms — flown by the state, beside the plain civil flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
           "sha256": "e796012fdb01faa1e1c925467d9ec4db64a1e115ebc305ae8d3b64a61ca69a6c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Finland's civil flag is the plain blue Nordic cross on white; the state flag adds the national coat of arms — a crowned lion wielding a sword, trampling a sabre, on a red field — for use by state authorities and the military.",
+            "sources": [
+              {
+                "title": "Coat of arms of Finland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland"
+              }
+            ]
+          }
         },
         {
           "id": "fi-president",
@@ -11067,7 +11139,16 @@
           "design": "The red-white-green tricolour charged with the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags",
           "sha256": "e0c38fabaa83f0b0bd85f6d8e12a8adeaeb0421c75b3a0b2a39a62cbec43b315",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Hungary's state flag adds the national coat of arms — the Holy Crown of Hungary above a shield quartered with the Árpád stripes and the double cross of the Kingdom of Hungary — to the plain red-white-green tricolour used elsewhere.",
+            "sources": [
+              {
+                "title": "Coat of arms of Hungary — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary"
+              }
+            ]
+          }
         },
         {
           "id": "hu-arpad",
@@ -11383,7 +11464,16 @@
           "design": "A red saltire on white, used for Ireland in the Union Flag and still flown in some official contexts.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
           "sha256": "75071cc0792d8f4f5e5e4038f7ceab81b634b494262175bd692138fd9c0a8e2e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The red saltire was created in 1783 for the Order of Saint Patrick, a British chivalric order, and was combined with the crosses of England and Scotland to form the Union Flag after Ireland's 1801 union with Great Britain; its late, British-associated origin — despite the name — has long made it a controversial rather than universally accepted symbol of Ireland.",
+            "sources": [
+              {
+                "title": "Saint Patrick's Saltire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Saint_Patrick%27s_Saltire"
+              }
+            ]
+          }
         },
         {
           "id": "ie-president",
@@ -12357,7 +12447,16 @@
           "design": "The swallow-tailed form of the flag, flown by the state and used as the military flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags",
           "sha256": "36c401ca955bdab2bcf8e01d4d42df3191282bc69230b6f01ef8c979a80e2ddb",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Iceland flies its flag in swallow-tailed form for the state and the military, following the wider Scandinavian tradition of using a forked civil/state ensign distinction; the plain rectangular flag is used elsewhere.",
+            "sources": [
+              {
+                "title": "State flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/State_flag"
+              }
+            ]
+          }
         },
         {
           "id": "is-president",
@@ -19024,7 +19123,16 @@
           "design": "The government's own flag, flown at ministries.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands",
           "sha256": "2ca6997d138801ab345001412a8a39fa5962f4181ac3c4bfbe5c9a756bcbb6f8",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Dutch government flies its own flag — the national tricolour with an orange pennant above it — at ministries, referencing the House of Orange-Nassau, whose colour was displaced on the national flag itself by red in the 17th century.",
+            "sources": [
+              {
+                "title": "Flag of the Netherlands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Netherlands"
+              }
+            ]
+          }
         },
         {
           "id": "nl-arms",
@@ -20424,7 +20532,16 @@
           "design": "The national flag hoisted with the red band uppermost — flown only while the country is at war.",
           "source": "https://en.wikipedia.org/wiki/List_of_Philippine_flags",
           "sha256": "17a08e2dad4d800e0aab4e5cee2d57896d0c16bf4cf4f1c4d0d1a06e70b41b02",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Philippine flag is flown with its red band uppermost only when the country is officially at war, reversing the peacetime order (blue on top) — one of the few national flags in the world designed to signal a state of war through orientation alone, most notably flown red-up during the Japanese occupation of World War II.",
+            "sources": [
+              {
+                "title": "Flag of the Philippines — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Philippines"
+              }
+            ]
+          }
         },
         {
           "id": "ph-president",
@@ -20806,7 +20923,16 @@
           "design": "The white-and-red bicolour charged with the arms of the Republic — flown by state authorities and abroad, while citizens fly the plain bicolour.",
           "source": "https://en.wikipedia.org/wiki/List_of_Polish_flags",
           "sha256": "d039d7120dcff65809aba50d6e5352eedbb10b2b85a8d76f3cf5cd8e4aafcb31",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Poland's plain white-and-red bicolour is the civil flag; the state flag adds the crowned white eagle of the national coat of arms, reserved for state authorities and Polish missions abroad.",
+            "sources": [
+              {
+                "title": "Flag of Poland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Poland"
+              }
+            ]
+          }
         },
         {
           "id": "pl-naval-ensign",
@@ -20828,7 +20954,16 @@
           "design": "The white-and-red bicolour charged with the crowned eagle — flown by Polish missions abroad, at airports and on ships.",
           "source": "https://en.wikipedia.org/wiki/List_of_Polish_flags",
           "sha256": "d039d7120dcff65809aba50d6e5352eedbb10b2b85a8d76f3cf5cd8e4aafcb31",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "This variant, flown by Polish diplomatic missions, airports and ships, likewise carries the crowned white eagle of the national coat of arms — a symbol used by Polish rulers since the 13th century — on the plain white-and-red bicolour.",
+            "sources": [
+              {
+                "title": "Flag of Poland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Poland"
+              }
+            ]
+          }
         },
         {
           "id": "pl-navy",
@@ -21873,7 +22008,16 @@
           "design": "The plain red-blue-white tricolour, without the arms the state flag carries.",
           "source": "https://en.wikipedia.org/wiki/List_of_Serbian_flags",
           "sha256": "8a0742ab89a9985e4e0e0badbb4d73309c2db5d133765694d9bb032c9e7bb2ff",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Serbia's civil flag omits the national coat of arms that the state flag carries near the hoist, following the common European convention of reserving the arms-bearing version for government and military use.",
+            "sources": [
+              {
+                "title": "Civil flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Civil_flag"
+              }
+            ]
+          }
         },
         {
           "id": "rs-arms",
@@ -24075,7 +24219,16 @@
           "design": "The blue-white-blue triband with DIOS UNIÓN LIBERTAD in gold in place of the arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags",
           "sha256": "294f810fbdf2e4d6350d1bd11d27e90db87d5b525de5f2fd64bf3a07242d4dd9",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "El Salvador's civil flag replaces the state flag's coat of arms with the national motto \"DIOS UNIÓN LIBERTAD\" (\"God, Union, Liberty\") in gold on the central white band.",
+            "sources": [
+              {
+                "title": "Flag of El Salvador — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_El_Salvador"
+              }
+            ]
+          }
         },
         {
           "id": "sv-civil-ensign",
