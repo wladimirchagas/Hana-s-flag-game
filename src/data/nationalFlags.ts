@@ -120,7 +120,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "af-official-national", category: "official", name: "Flag of Afghanistan", from: 2021, to: 9999, primary: true, path: "flags/af.svg", design: "The national flag of Afghanistan, in the form adopted in 2021.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
     { id: "af-republic", category: "historical", name: "Flag of the Islamic Republic of Afghanistan", from: 2004, to: 2021, path: "national-flags/af/af-republic.svg", design: "The black-red-green vertical tricolour bearing the white national emblem, flown by the Islamic Republic until the Taliban takeover in August 2021 restored the white Islamic Emirate flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
     { id: "af-passport", category: "passport", name: "Passport of Afghanistan", path: "national-flags/af/af-passport.webp", design: "The cover of the Afghanistan passport.", source: "https://gicg.net/passport/af/" },
-    { id: "af-football-crest", category: "footballcrest", name: "Crest of the Afghanistan national football team", path: "national-flags/af/af-football-crest.png", design: "The crest of the Afghanistan national football team.", source: "https://en.wikipedia.org/wiki/Afghanistan_national_football_team" },
+    { id: "af-football-crest", category: "footballcrest", name: "Crest of the Afghanistan national football team", path: "national-flags/af/af-football-crest.png", design: "The crest of the Afghanistan Football Federation — a green shield lettered “Afghanistan Football Federation” and “1922”, with a football over a black-red-green diagonal band.", source: "https://en.wikipedia.org/wiki/Afghanistan_national_football_team" },
   ],
   "AG": [
     { id: "ag-official-national", category: "official", name: "Flag of Antigua and Barbuda", from: 1967, to: 9999, primary: true, path: "flags/ag.svg", design: "The national flag, adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
@@ -302,7 +302,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bh-uk", category: "historical", name: "Flag of the United Kingdom", from: 1861, to: 1971, sovereign: "the United Kingdom", path: "national-flags/bh/bh-uk.svg", design: "The Union Flag, flown while Bahrain was a British protectorate.", source: "https://en.wikipedia.org/wiki/History_of_Bahrain" },
     { id: "bh-arms", category: "coatofarms", name: "Coat of arms of Bahrain", from: 1932, to: 9999, path: "national-flags/bh/bh-arms.svg", design: "The serrated red-and-white shield of the flag, on red and white mantling.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain" },
     { id: "bh-passport", category: "passport", name: "Passport of Bahrain", path: "national-flags/bh/bh-passport.webp", design: "The cover of the Bahrain passport.", source: "https://gicg.net/passport/bh/" },
-    { id: "bh-football-crest", category: "footballcrest", name: "Crest of the Bahrain national football team", path: "national-flags/bh/bh-football-crest.svg", design: "The crest of the Bahrain national football team.", source: "https://en.wikipedia.org/wiki/Bahrain_national_football_team" },
+    { id: "bh-football-crest", category: "footballcrest", name: "Crest of the Bahrain national football team", path: "national-flags/bh/bh-football-crest.svg", design: "The crest of the Bahrain Football Association — a red-and-gold shield lettered “FA” and “Bahrain” in stylised Arabic-style lettering, with a red serrated emblem inside a football/globe shape.", source: "https://en.wikipedia.org/wiki/Bahrain_national_football_team" },
   ],
   "BI": [
     { id: "bi-official-national", category: "official", name: "Flag of Burundi", from: 1967, to: 9999, primary: true, path: "flags/bi.svg", design: "The national flag, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
@@ -668,7 +668,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ec-president", category: "standard", name: "Presidential standard of Ecuador", path: "national-flags/ec/ecuador-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags" },
     { id: "ec-arms", category: "coatofarms", name: "Coat of arms of Ecuador", from: 1900, to: 9999, path: "national-flags/ec/ecuador-arms.svg", design: "An oval shield with Chimborazo, the Guayas river and a steamship beneath a sun crossing the zodiac, crested with a condor, flanked by four flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador" },
     { id: "ec-passport", category: "passport", name: "Passport of Ecuador", path: "national-flags/ec/ec-passport.webp", design: "The cover of the Ecuador passport.", source: "https://gicg.net/passport/ec/" },
-    { id: "ec-football-crest", category: "footballcrest", name: "Crest of the Ecuador national football team", path: "national-flags/ec/ec-football-crest.svg", design: "The crest of the Ecuador national football team.", source: "https://en.wikipedia.org/wiki/Ecuador_national_football_team" },
+    { id: "ec-football-crest", category: "footballcrest", name: "Crest of the Ecuador national football team", path: "national-flags/ec/ec-football-crest.svg", design: "The crest of the Federación Ecuatoriana de Fútbol — a navy shield with a gold “FEF” monogram, under a small yellow-blue-red stripe from the national flag.", source: "https://en.wikipedia.org/wiki/Ecuador_national_football_team" },
   ],
   "EE": [
     { id: "ee-official-national", category: "official", name: "Flag of Estonia", from: 1918, to: 9999, primary: true, path: "flags/ee.svg", design: "The national flag of Estonia, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Estonia" },
@@ -786,7 +786,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ga-french", category: "historical", name: "Flag of France", from: 1910, to: 1960, sovereign: "France", path: "national-flags/ga/ga-french.svg", design: "The French Tricolour, flown over Gabon under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
     { id: "ga-arms", category: "coatofarms", name: "Coat of arms of Gabon", from: 1960, to: 9999, path: "national-flags/ga/ga-arms.svg", design: "A black shield with golden discs and a ship, supported by two panthers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon" },
     { id: "ga-passport", category: "passport", name: "Passport of Gabon", path: "national-flags/ga/ga-passport.webp", design: "The cover of the Gabon passport.", source: "https://gicg.net/passport/ga/" },
-    { id: "ga-football-crest", category: "footballcrest", name: "Crest of the Gabon national football team", path: "national-flags/ga/ga-football-crest.svg", design: "The crest of the Gabon national football team.", source: "https://en.wikipedia.org/wiki/Gabonese_Football_Federation" },
+    { id: "ga-football-crest", category: "footballcrest", name: "Crest of the Gabon national football team", path: "national-flags/ga/ga-football-crest.svg", design: "The crest of the Fédération Gabonaise de Football — a shield in the green, yellow and blue of the national flag, bearing a black panther's head over “1962” and “FEGAFOOT”.", source: "https://en.wikipedia.org/wiki/Gabonese_Football_Federation" },
   ],
   "GB": [
     { id: "gb-official-national", category: "official", name: "Union Flag", from: 1801, to: 9999, primary: true, path: "flags/gb.svg", design: "The national flag of the United Kingdom.", source: "https://en.wikipedia.org/wiki/Union_Jack" },
@@ -1221,7 +1221,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kw-emir", category: "standard", name: "Standard of the Emir of Kuwait", from: 1961, to: 9999, path: "national-flags/kw/kuwait-emir.svg", design: "The emir's standard.", source: "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags" },
     { id: "kw-emblem", category: "coatofarms", name: "Emblem of Kuwait", from: 1962, to: 9999, path: "national-flags/kw/kuwait-emblem.svg", design: "A golden falcon with wings spread, bearing a shield in the colours of the flag and holding a dhow sailing before a rising sun.", source: "https://en.wikipedia.org/wiki/Emblem_of_Kuwait" },
     { id: "kw-passport", category: "passport", name: "Passport of Kuwait", path: "national-flags/kw/kw-passport.webp", design: "The cover of the Kuwait passport.", source: "https://gicg.net/passport/kw/" },
-    { id: "kw-football-crest", category: "footballcrest", name: "Crest of the Kuwait national football team", path: "national-flags/kw/kw-football-crest.png", design: "The crest of the Kuwait national football team.", source: "https://en.wikipedia.org/wiki/Kuwait_national_football_team" },
+    { id: "kw-football-crest", category: "footballcrest", name: "Crest of the Kuwait national football team", path: "national-flags/kw/kw-football-crest.png", design: "The crest of the Kuwait Football Association — a shield in the green, white, red and black of the national flag, with Arabic lettering for “Kuwait Football Association”, “KUWAIT F.A” and a football.", source: "https://en.wikipedia.org/wiki/Kuwait_national_football_team" },
   ],
   "KY": [
     { id: "ky-official-national", category: "official", name: "Flag of the Cayman Islands", from: 1958, to: 9999, path: "flags/ky.svg", design: "A blue ensign with the Union Flag in the canton and the Cayman Islands' coat of arms — a shield of three stars over wavy bands beneath a British lion — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Cayman_Islands" },
@@ -1496,7 +1496,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mw-president", category: "standard", name: "Presidential standard of Malawi", from: 1964, to: 9999, path: "national-flags/mw/mw-president.svg", design: "The standard of the President of Malawi.", source: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
     { id: "mw-arms", category: "coatofarms", name: "Coat of arms of Malawi", from: 1964, to: 9999, path: "national-flags/mw/mw-arms.svg", design: "A shield of lake waves, a lion and a rising sun, with a fish eagle crest and a lion and leopard as supporters.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malawi" },
     { id: "mw-passport", category: "passport", name: "Passport of Malawi", path: "national-flags/mw/mw-passport.webp", design: "The cover of the Malawi passport.", source: "https://gicg.net/passport/mw/" },
-    { id: "mw-football-crest", category: "footballcrest", name: "Crest of the Malawi national football team", path: "national-flags/mw/mw-football-crest.png", design: "The crest of the Malawi national football team.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Malawi" },
+    { id: "mw-football-crest", category: "footballcrest", name: "Crest of the Malawi national football team", path: "national-flags/mw/mw-football-crest.png", design: "The crest of the Football Association of Malawi — a green shield with a red rising sun, lettered “Football Association of Malawi”, over a football wreathed in flames.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Malawi" },
   ],
   "MX": [
     { id: "mx-official-national", category: "official", name: "Flag of Mexico", from: 1968, to: 9999, primary: true, path: "flags/mx.svg", design: "The national flag of Mexico, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Mexico" },
@@ -1549,7 +1549,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mz-president", category: "standard", name: "Presidential Standard of Mozambique", from: 1990, to: 9999, path: "national-flags/mz/mozambique-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
     { id: "mz-emblem", category: "coatofarms", name: "Emblem of Mozambique", from: 1990, to: 9999, path: "national-flags/mz/mozambique-emblem.svg", design: "A rifle and hoe crossed over an open book, on a map of the country with a rising sun and waves, within maize and sugar cane beneath a red star.", source: "https://en.wikipedia.org/wiki/Emblem_of_Mozambique" },
     { id: "mz-passport", category: "passport", name: "Passport of Mozambique", path: "national-flags/mz/mz-passport.webp", design: "The cover of the Mozambique passport.", source: "https://gicg.net/passport/mz/" },
-    { id: "mz-football-crest", category: "footballcrest", name: "Crest of the Mozambique national football team", path: "national-flags/mz/mz-football-crest.svg", design: "The crest of the Mozambique national football team.", source: "https://en.wikipedia.org/wiki/Mozambique_Football_Federation" },
+    { id: "mz-football-crest", category: "footballcrest", name: "Crest of the Mozambique national football team", path: "national-flags/mz/mz-football-crest.svg", design: "The crest of the Federação Moçambicana de Futebol — a gold-and-black circular badge lettered “Federação Moçambicana de Futebol”, with a football under a crossed rifle and hoe beneath a star.", source: "https://en.wikipedia.org/wiki/Mozambique_Football_Federation" },
   ],
   "NA": [
     { id: "na-official-national", category: "official", name: "Flag of Namibia", from: 1990, to: 9999, primary: true, path: "flags/na.svg", design: "The national flag of Namibia, adopted at independence in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
@@ -1663,7 +1663,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "om-royal", category: "standard", name: "Royal Standard of Oman", from: 1749, to: 9999, path: "national-flags/om/oman-royal.svg", design: "A red field bearing the national emblem — the standard of the House of Al Said.", source: "https://en.wikipedia.org/wiki/List_of_Omani_flags" },
     { id: "om-emblem", category: "coatofarms", name: "National emblem of Oman", from: 1750, to: 9999, path: "national-flags/om/oman-emblem.svg", design: "A khanjar in its sheath superimposed on two crossed swords.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
     { id: "om-passport", category: "passport", name: "Passport of Oman", path: "national-flags/om/om-passport.webp", design: "The cover of the Oman passport.", source: "https://gicg.net/passport/om/" },
-    { id: "om-football-crest", category: "footballcrest", name: "Crest of the Oman national football team", path: "national-flags/om/om-football-crest.svg", design: "The crest of the Oman national football team.", source: "https://en.wikipedia.org/wiki/Oman_Football_Association" },
+    { id: "om-football-crest", category: "footballcrest", name: "Crest of the Oman national football team", path: "national-flags/om/om-football-crest.svg", design: "The crest of the Oman Football Association — a gold shield with Arabic lettering for “Oman Football Association”, a swirling football/globe shape in the white, red and green of the national flag, and “ofa.om”.", source: "https://en.wikipedia.org/wiki/Oman_Football_Association" },
   ],
   "PA": [
     { id: "pa-official-national", category: "official", name: "Flag of Panama", from: 1925, to: 9999, primary: true, path: "flags/pa.svg", design: "The national flag of Panama, in the form adopted in 1925.", source: "https://en.wikipedia.org/wiki/Flag_of_Panama" },
@@ -1769,7 +1769,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ps-mandate", category: "historical", name: "Flag of the United Kingdom", from: 1920, to: 1948, sovereign: "the United Kingdom", path: "national-flags/ps/ps-mandate.svg", design: "The Union Flag, flown as the official flag of the British Mandate for Palestine from 1920 until it ended in 1948.", source: "https://en.wikipedia.org/wiki/Mandatory_Palestine" },
     { id: "ps-arms", category: "coatofarms", name: "Coat of arms of the State of Palestine", from: 2013, to: 9999, path: "national-flags/ps/ps-arms.svg", design: "The Eagle of Saladin bearing a shield in the flag's colours, above a scroll reading Filastin (Palestine) in Arabic.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Palestine" },
     { id: "ps-passport", category: "passport", name: "Passport of Palestine", path: "national-flags/ps/ps-passport.webp", design: "The cover of the Palestine passport.", source: "https://gicg.net/passport/ps/" },
-    { id: "ps-football-crest", category: "footballcrest", name: "Crest of the Palestine national football team", path: "national-flags/ps/ps-football-crest.svg", design: "The crest of the Palestine national football team.", source: "https://en.wikipedia.org/wiki/Palestine_national_football_team" },
+    { id: "ps-football-crest", category: "footballcrest", name: "Crest of the Palestine national football team", path: "national-flags/ps/ps-football-crest.svg", design: "The crest of the Palestine national football team — a shield lettered “Palestine”, filled with the black-white-green bands and red hoist triangle of the Palestinian flag.", source: "https://en.wikipedia.org/wiki/Palestine_national_football_team" },
   ],
   "PT": [
     { id: "pt-official-national", category: "official", name: "Flag of Portugal", from: 1912, to: 9999, primary: true, path: "flags/pt.svg", design: "The national flag of Portugal, in the form adopted in 1912.", source: "https://en.wikipedia.org/wiki/Flag_of_Portugal" },
@@ -2028,7 +2028,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sy-mandate", category: "historical", name: "Flag of the French Mandate of Syria", from: 1920, to: 1932, sovereign: "France", path: "national-flags/sy/sy-mandate.svg", design: "The green-white-green flag of the early French Mandate, flown before the green-white-black independence flag was adopted in 1932.", source: "https://en.wikipedia.org/wiki/French_Mandate_for_Syria_and_the_Lebanon" },
     { id: "sy-arms", category: "coatofarms", name: "Emblem of Syria", from: 2025, to: 9999, path: "national-flags/sy/sy-arms.svg", design: "A golden eagle facing right, three stars in an arc above its head.", source: "https://en.wikipedia.org/wiki/Emblem_of_Syria" },
     { id: "sy-passport", category: "passport", name: "Passport of Syria", path: "national-flags/sy/sy-passport.webp", design: "The cover of the Syria passport.", source: "https://gicg.net/passport/sy/" },
-    { id: "sy-football-crest", category: "footballcrest", name: "Crest of the Syria national football team", path: "national-flags/sy/sy-football-crest.svg", design: "The crest of the Syria national football team.", source: "https://en.wikipedia.org/wiki/Syrian_Football_Association" },
+    { id: "sy-football-crest", category: "footballcrest", name: "Crest of the Syria national football team", path: "national-flags/sy/sy-football-crest.svg", design: "The crest of the Syrian Football Association — a shield with an eagle over a football, a green band with three red stars, and “SFA” lettering.", source: "https://en.wikipedia.org/wiki/Syrian_Football_Association" },
   ],
   "SZ": [
     { id: "sz-official-national", category: "official", name: "Flag of Eswatini", from: 1968, to: 9999, primary: true, path: "flags/sz.svg", design: "The national flag, adopted at independence in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
@@ -2359,7 +2359,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ye-kingdom", category: "historical", name: "Flag of the Mutawakkilite Kingdom of Yemen", from: 1927, to: 1962, path: "national-flags/ye/ye-kingdom.svg", design: "A red field bearing a white sword and stars — the flag of the imamate that ruled North Yemen until the 1962 revolution.", source: "https://en.wikipedia.org/wiki/Mutawakkilite_Kingdom_of_Yemen" },
     { id: "ye-emblem", category: "coatofarms", name: "Emblem of Yemen", from: 1990, to: 9999, path: "national-flags/ye/ye-emblem.svg", design: "A golden eagle bearing a shield of the coffee plant and the Marib Dam.", source: "https://en.wikipedia.org/wiki/Emblem_of_Yemen" },
     { id: "ye-passport", category: "passport", name: "Passport of Yemen", path: "national-flags/ye/ye-passport.webp", design: "The cover of the Yemen passport.", source: "https://gicg.net/passport/ye/" },
-    { id: "ye-football-crest", category: "footballcrest", name: "Crest of the Yemen national football team", path: "national-flags/ye/ye-football-crest.png", design: "The crest of the Yemen national football team.", source: "https://en.wikipedia.org/wiki/Yemen_national_football_team" },
+    { id: "ye-football-crest", category: "footballcrest", name: "Crest of the Yemen national football team", path: "national-flags/ye/ye-football-crest.png", design: "The crest of the Yemen Football Association — a circular badge lettered “YFA” and, in Arabic, “Yemen Football Association”, with a red-white-black swoosh, a coffee branch, a running player and a football.", source: "https://en.wikipedia.org/wiki/Yemen_national_football_team" },
   ],
   "ZA": [
     { id: "za-official-national", category: "official", name: "Flag of South Africa", from: 1994, to: 9999, primary: true, path: "flags/za.svg", design: "The national flag, first flown on 27 April 1994.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Africa" },
@@ -2379,7 +2379,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "zm-president", category: "standard", name: "Presidential standard of Zambia", from: 1964, to: 9999, path: "national-flags/zm/zm-president.svg", design: "The standard of the President of Zambia.", source: "https://en.wikipedia.org/wiki/Flag_of_Zambia" },
     { id: "zm-arms", category: "coatofarms", name: "Coat of arms of Zambia", from: 1964, to: 9999, path: "national-flags/zm/zm-arms.svg", design: "A fish eagle above a shield of black and white waves, held by a man and a woman.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia" },
     { id: "zm-passport", category: "passport", name: "Passport of Zambia", path: "national-flags/zm/zm-passport.webp", design: "The cover of the Zambia passport.", source: "https://gicg.net/passport/zm/" },
-    { id: "zm-football-crest", category: "footballcrest", name: "Crest of the Zambia national football team", path: "national-flags/zm/zm-football-crest.png", design: "The crest of the Zambia national football team.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Zambia" },
+    { id: "zm-football-crest", category: "footballcrest", name: "Crest of the Zambia national football team", path: "national-flags/zm/zm-football-crest.png", design: "The crest of the Football Association of Zambia — an orange African fish eagle above a football, ringed by “Football Association of Zambia” and a banner lettered “Zambia”.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Zambia" },
   ],
   "ZW": [
     { id: "zw-official-national", category: "official", name: "Flag of Zimbabwe", from: 1980, to: 9999, primary: true, path: "flags/zw.svg", design: "The national flag of Zimbabwe, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe" },
@@ -2806,6 +2806,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain" },
     ],
   },
+  "bh-football-crest": {
+    description: "The five-pointed serrated emblem repeats the five white triangles on Bahrain's own national flag, added to the flag's serrated edge in 2002 (an earlier version had 28, then 8, points) to stand for the Five Pillars of Islam.",
+    sources: [
+      { title: "Flag of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    ],
+  },
   "bi-arms": {
     description: "A red shield bears the head of a lion, and behind it three traditional African spears cross. The scroll below carries the national motto, Unité, Travail, Progrès — “Unity, Work, Progress.”",
     sources: [
@@ -3171,6 +3177,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Ecuador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador" },
     ],
   },
+  "ec-football-crest": {
+    description: "The stripe repeats the colours of Ecuador's own national flag, inherited from the flag of Gran Colombia: yellow for the country's crops and fertile soil, blue for its oceans and clear skies, and red for the blood of those who died fighting for its independence. FEF is the federation's own initials.",
+    sources: [
+      { title: "Flag of Ecuador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
+    ],
+  },
   "ee-arms": {
     description: "The three lions are borrowed, and the borrowing is the history: they come from the 13th-century royal arms of Denmark, because the Duchy of Estonia was Danish — Valdemar II's conquest — and they stayed as the central charge of the greater arms of Tallinn even after the Danish king sold his Estonian dominion to the Teutonic Order in 1346. From there the motif passed to the Duchy of Estonia under Sweden, to the Estonian Knighthood and to the Russian governorate, and so to the modern republic. The golden oak branches on either side are the national tree; the lesser arms are the shield alone. Stalin's regime banned the display of these arms with every other Estonian national symbol after the 1940 occupation.",
     sources: [
@@ -3280,6 +3292,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The black shield bears three golden discs for the country's mineral wealth and, below, a ship under sail for the timber trade that built its economy; a green okoumé tree rises behind. Two panthers guard it. Two mottoes appear: the Latin Uniti Progrediemur — “united we shall go forward” — on the scroll above, and the French Union, Travail, Justice — “Union, Work, Justice” — below.",
     sources: [
       { title: "Coat of arms of Gabon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon" },
+    ],
+  },
+  "ga-football-crest": {
+    description: "The panther gives the national team its own nickname, Les Panthères (The Panthers), adopted in 2000 after the side had earlier been known as the Azingo; 1962 is the year the Gabonese Football Federation traces its founding to.",
+    sources: [
+      { title: "Gabon national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Gabon_national_football_team" },
     ],
   },
   "gb-official-national": {
@@ -3732,6 +3750,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Kuwait — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kuwait" },
     ],
   },
+  "kw-football-crest": {
+    description: "The four colours repeat Kuwait's own national flag and are the Pan-Arab colours, drawn from a poem by the 13th-century Arab poet Safi al-Din al-Hilli: white for pure deeds, black for the enemies defeated in battle, green for the fertility of Arab lands, and red for the swords and blood of Arab warriors.",
+    sources: [
+      { title: "Flag of Kuwait — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
+    ],
+  },
   "ky-arms": {
     description: "Granted by Royal Warrant on 14 May 1958. The three green stars are the three islands — Grand Cayman, Little Cayman and Cayman Brac — riding on blue-and-white wavy bands for the sea that surrounds them; the gold lion of England in the chief marks the British connection. Above the shield a green turtle recalls the islands' seafaring and turtling history, resting on a coil of rope for the traditional thatch-rope industry, with a pineapple behind it for the historic ties to Jamaica. The motto, from Psalm 24, 'He hath founded it upon the seas', speaks to both the islanders' Christian faith and their ocean setting.",
     sources: [
@@ -3974,6 +3998,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malawi" },
     ],
   },
+  "mw-football-crest": {
+    description: "The red rising sun repeats the sun on Malawi's own national flag, adopted in 1964 to stand for the dawn of hope and freedom for Africa as more of the continent gained independence from colonial rule. The flames give the national team its own nickname, the Flames.",
+    sources: [
+      { title: "Flag of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
+    ],
+  },
   "mx-arms": {
     description: "The eagle on a nopal cactus devouring a serpent depicts the Aztec founding legend: the Mexica were told to build their capital, Tenochtitlan, where they saw an eagle on a cactus atop a lake — the site of modern Mexico City. In the original telling the eagle was the sun god Huitzilopochtli and the cactus the island of Tenochtitlan; a 16th-century European retelling recast the eagle as good overcoming the serpent. Oak and laurel branches, tied in the national colours, frame the device, which also appears at the centre of the flag.",
     sources: [
@@ -4010,6 +4040,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Article 194 of the constitution spells the emblem out charge by charge: the corn stalk and the sugar cane framing it are the country's agricultural wealth; the cogwheel is labour and industry; the book is education; the rifle stands for defence and vigilance, the hoe for the peasantry; the map is the country itself, with the rising sun for the building of a new nation and the waves for the sea and the rivers; and the red star at the top is the spirit of international solidarity of the Mozambican people.",
     sources: [
       { title: "Emblem of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mozambique" },
+    ],
+  },
+  "mz-football-crest": {
+    description: "The star, rifle and hoe are drawn from Mozambique's own national emblem (and, on the country's flag, sit atop an open book): the rifle for defence and vigilance and in memory of the independence struggle, the hoe for the peasantry and agriculture, and the star for international solidarity. The emblem was adopted at independence from Portugal in 1975.",
+    sources: [
+      { title: "Coat of arms of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mozambique" },
     ],
   },
   "na-arms": {
@@ -4121,6 +4157,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
     ],
   },
+  "om-football-crest": {
+    description: "The white, red and green repeat Oman's own national flag: white for peace and for the country's Imams, green for the fertility of the Jabal al-Akhdar (\"Green Mountains\"), and red — a colour shared with other Gulf state flags — for the battles Omanis fought to expel foreign invaders.",
+    sources: [
+      { title: "Flag of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
+    ],
+  },
   "pa-arms": {
     description: "The centre panel is a specific moment, not a landscape: the isthmus with its two seas, the moon rising over the waves as the sun sets behind the mountain — the solemn hour of the declaration of independence, 3 November 1903. The upper quarters carry a sword and rifle, laid down in the 1904 design to mean the end of civil wars but redefined by Law 28 of 1941 as an attitude of alert in defence of sovereignty, and a spade and hoe for work. The lower quarters carry a cornucopia for wealth and a winged wheel for progress. The eagle covering the shield with open wings is sovereignty, and the gold stars arched above it count the provinces of the republic — so their number changes as the country does.",
     sources: [
@@ -4209,6 +4251,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem centres on the Eagle of Saladin — a device dating to the Ayyubid sultan Salah ad-Din and adopted across the modern Arab world as a symbol of Arab victory and unity, shared in form with Egypt and Iraq. It bears a shield in the pan-Arab colours of the Palestinian flag and a scroll reading دولة فلسطين, “State of Palestine.” This wording replaced the earlier “Palestinian Authority” form after Palestine gained UN non-member observer-state status in 2012.",
     sources: [
       { title: "Coat of arms of Palestine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Palestine" },
+    ],
+  },
+  "ps-football-crest": {
+    description: "The flag is the Pan-Arab colours first combined in this pattern for the 1916 Arab Revolt flag, and adopted by the Palestine Liberation Organization in 1964: red for the Hashemid dynasty and the blood of warriors, white for the Umayyads and purity, green for the Fatimids and fertile land, and black for the Abbasids and victory in battle.",
+    sources: [
+      { title: "Flag of Palestine — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
     ],
   },
   "pt-arms": {
@@ -4445,6 +4493,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "sy-arms": {
     description: "Adopted on 3 July 2025 by the new government, the emblem replaces the Baʻathist Hawk of Quraish with a golden eagle drawn from the ancient motifs of Palmyra, standing for pride and leadership. The three stars above it are taken from the flag and stand for the people's liberation; the eagle's fourteen wing feathers are Syria's fourteen governorates, and its five tail feathers the country's five geographic regions — north, south, east, west and centre.",
     sources: [
+      { title: "Emblem of Syria — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Syria" },
+    ],
+  },
+  "sy-football-crest": {
+    description: "The Syrian Football Association changed its badge to green, white and black with three red stars after the fall of the Assad government in December 2024, matching the flag Syria's new authorities readopted — the country's own 1932–1958 and 1961–1963 independence-era flag. The eagle is a form of the Hawk of Quraysh, long used in Syrian state heraldry; the current national emblem's eagle carries 14 wing feathers for Syria's governorates and 5 tail feathers for its geographical regions.",
+    sources: [
+      { title: "Syrian Soccer Association and Clubs Alter Emblems to New Flag Colors — The Flag Chronicle", url: "https://flagchronicle.com/2024/12/08/syrian-soccer-association-and-clubs-alter-emblems-to-new-flag-colors/" },
       { title: "Emblem of Syria — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Syria" },
     ],
   },
@@ -4704,6 +4759,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Yemen — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Yemen" },
     ],
   },
+  "ye-football-crest": {
+    description: "The coffee branch reflects coffee's central place in Yemen's own national identity and emblem, whose shield likewise carries a coffee plant: the port of Mocha gave the world's coffee trade its name, and Yemen dominated the global coffee export market for close to two centuries. The red, white and black repeat Yemen's own national flag.",
+    sources: [
+      { title: "Mocha — Encyclopaedia Britannica", url: "https://www.britannica.com/place/Mocha-Yemen" },
+      { title: "Emblem of Yemen — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Yemen" },
+    ],
+  },
   "za-official-national": {
     description: "Designed by State Herald Frederick Brownell and first flown on 27 April 1994, the day of the first democratic election, the flag was drawn to carry no per-colour symbolism at all — the only South African national flag whose design has no official meaning attached to its colours. What the design does say is said by its shape: the horizontal Y, or pall, shows two paths converging into one, which the government describes as the convergence of diverse elements within South African society taking the road ahead in unity.",
     sources: [
@@ -4731,6 +4793,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "zm-arms": {
     description: "The fish eagle at the top, wings spread, stands for the conquest of freedom and the nation's hope for the future — the same bird as on the flag. The shield beneath is Victoria Falls, white water cascading over black rock, standing for the Zambezi river, from which the country takes its name. Around it are emblems of the sources of Zambia's wealth — a pick and hoe for mining and agriculture, an ear of maize, a mine headframe and a zebra. The shield is held by a man and a woman, the common people of the nation, and the ribbon reads “One Zambia, One Nation,” a call to unity across the country's many peoples.",
+    sources: [
+      { title: "Coat of arms of Zambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia" },
+    ],
+  },
+  "zm-football-crest": {
+    description: "The African fish eagle is Zambia's own national bird and crowns its national coat of arms — adapted from the 1927 arms of the British protectorate of Northern Rhodesia at independence in 1964 — where it is read as a symbol of the country's freedom, strength and aspiration to rise above adversity.",
     sources: [
       { title: "Coat of arms of Zambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia" },
     ],
