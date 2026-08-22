@@ -8195,7 +8195,20 @@
           "design": "The national flag defaced with the navy’s emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
           "sha256": "b5de62a6f51e02b80f259e0d07fbd2ed4f5a1276f151a6c5e28f417ab2c5b969",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Egyptian Navy's ensign is the national flag defaced with a gold-outlined rendering of the Eagle of Saladin, the national emblem also seen at the centre of the plain national flag. The eagle, adopted as Egypt's emblem after the 1952 revolution, recalls the 12th-century sultan Saladin, who united Egypt and Syria and is honoured as a symbol of Arab strength and unity; the shield on its breast carries the colours of the national flag.",
+            "sources": [
+              {
+                "title": "Wikipedia — Coat of arms of Egypt",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt"
+              },
+              {
+                "title": "Wikipedia — List of Egyptian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "eg-president",
@@ -11737,7 +11750,20 @@
           "design": "A blue field with the air force's emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
           "sha256": "4f81781c57779604c5849561ef789582bb304b33f9954b08e305941f45d3d504",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Croatian Air Force's flag is dark blue bearing the service's badge — a winged square — above the Croatian state coat of arms. The winged square marks the flag as belonging to the air arm of the armed forces, while the chequered shield beneath it ties the service to the Croatian state it defends, the same red-and-white checkerboard (šahovnica) used on the national coat of arms.",
+            "sources": [
+              {
+                "title": "Flags of the World — Croatia: Air Force",
+                "url": "https://www.crwflags.com/fotw/flags/hr%5Eaf.html"
+              },
+              {
+                "title": "Wikipedia — List of Croatian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Croatian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "hr-naval-ensign",
@@ -13627,7 +13653,20 @@
           "design": "A rectangular blue flag with the emblem of the Republic.",
           "source": "https://en.wikipedia.org/wiki/List_of_Italian_flags",
           "sha256": "6fe435707b2f0ea29aec12f5d8cdafb6843b9651d5fc22e7b3662febc51609df",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Prime Minister's standard is a blue flag bordered in gold bearing the Emblem of the Italian Republic at its centre. Adopted in 1948, the emblem's white star stands for Italy itself, an ancient symbol of the country long associated with its personification; the steel cogwheel represents work, recalling the Constitution's opening declaration that Italy is a republic founded on labour; and the olive branch and oak branch, framing the star and wheel, stand respectively for the nation's desire for peace and for the strength and dignity of its people.",
+            "sources": [
+              {
+                "title": "Wikipedia — Emblem of Italy",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Italy"
+              },
+              {
+                "title": "Wikipedia — List of Italian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Italian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "it-naval-jack",
@@ -22937,7 +22976,20 @@
           "design": "A green field bearing the national arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
           "sha256": "658e105637b6c706e8c31657a3c54e65bacec982425bace3368b36578c16a309",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential standard is a plain green flag bearing only the sphere and shield of the national coat of arms, without the surrounding wreath and ribbon used on the national flag. The armillary sphere recalls the navigational instrument used by Portuguese kings who sponsored the great voyages of exploration, and was a personal emblem of Prince Henry the Navigator; it had been abandoned as a state symbol in the 1820s after Brazil's independence but was revived in 1911, the year after the revolution that ended the monarchy and established the Portuguese Republic.",
+            "sources": [
+              {
+                "title": "Flags of the World — Portugal, Presidential Standard",
+                "url": "https://www.crwflags.com/fotw/flags/pt_pres.html"
+              },
+              {
+                "title": "Wikipedia — List of Portuguese flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags"
+              }
+            ]
+          }
         },
         {
           "id": "pt-pm",
@@ -26654,7 +26706,20 @@
           "design": "A white square bearing the Garuda above a shield.",
           "source": "https://en.wikipedia.org/wiki/List_of_Thai_flags",
           "sha256": "875a503907b57ab7f5d9981378baf3ba0534e1d5b32cc9b1783fdf7ff9580d45",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Standard of the Regent is a white square flag bearing the Garuda above a shield depicting the national flag, distinguishing it from the standards of the monarch. The Garuda, a mythical being part man and part bird, has been the emblem of Thai royal authority since the Ayutthaya kingdom and is regarded as the bearer of the god Vishnu and a protective spirit; it has served as the official seal of the Thai monarchy since this standard was established in 1936.",
+            "sources": [
+              {
+                "title": "Flags of the World — Thailand, Royal and Regent Standards",
+                "url": "https://www.crwflags.com/fotw/flags/th_roya.html"
+              },
+              {
+                "title": "Wikipedia — List of Thai flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Thai_flags"
+              }
+            ]
+          }
         },
         {
           "id": "th-naval-ensign",
