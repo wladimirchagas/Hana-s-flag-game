@@ -2636,6 +2636,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Anguilla — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Anguilla" },
     ],
   },
+  "al-president": {
+    description: "The presidential flag keeps the national flag's black double-headed eagle on red — a device drawn from the personal seal of the 15th-century national hero Skanderbeg, its two heads read as marking Albania's position between East and West and the union of its northern Gheg and southern Tosk halves — but adds a golden border around the red field, distinguishing the flag of the head of state from the plain national flag and marking the authority of the office.",
+    sources: [
+      { title: "Flag of Albania: History, Meaning & Symbolism", url: "https://albaniaturism.com/albanian-flag-history-meaning-and-symbolism-of-albanias-national-emblem/" },
+    ],
+  },
   "al-arms": {
     description: "The arms are the flag turned into a shield, and both descend from Skanderbeg — Gjergj Kastrioti, the 15th-century lord who led Albanian resistance to the Ottomans. The black double-headed eagle has been in documented use since 1458 and gives Albania its native name, Shqipëria, often glossed as the land of the eagles. Above the shield sits the gold helmet of Skanderbeg himself: the crown-like horned helm now held in the Kunsthistorisches Museum in Vienna, first recorded in the Ambras armoury inventory of 1593. So the emblem is not allegory but two relics of one man — his standard and his helmet.",
     sources: [
@@ -3553,6 +3559,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The state flag is charged with the royal coat of arms: three blue crowned lions on a gold field, surrounded by nine red hearts — officially called søblade (\"lake leaves\", a stylised water-lily pad) rather than hearts — an emblem recorded since the great seal of Canute VI around the 1190s and used ever since to mark the legitimacy and sovereignty of the Danish crown.",
     sources: [
       { title: "Coat of arms of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark" },
+    ],
+  },
+  "dk-regent": {
+    description: "A swallow-tailed Dannebrog bears the royal regalia — crown, sceptre, sword and orb — in its central field; first introduced in 1914, it is raised only when both the monarch and the Crown Prince are outside Denmark and a Rigsforstander (acting regent, always a close relative of the sovereign) has assumed the sovereign's duties in their absence.",
+    sources: [
+      { title: "The Royal Flags — Kongehuset (Danish Royal House)", url: "https://www.kongehuset.dk/en/the-monarchy-in-denmark/the-royal-symbols/the-royal-flags/" },
     ],
   },
   "dk-state": {
