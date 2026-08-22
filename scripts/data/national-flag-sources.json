@@ -4289,7 +4289,16 @@
           "design": "The air force's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
           "sha256": "977b1631bd81d6a9aab0727dbc80cd17f8c76a2f623642752716ef836a5b5a2b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Eight golden rays radiate from the Air Force's own emblem: stylised gold arrows, lightning bolts and wings within a wreath of oak (for strength) and laurel (for honour), set on a baroque-shaped blue shield topped by a five-pointed star — the arrows, lightning and wings together standing for the speed and striking power of air combat.",
+            "sources": [
+              {
+                "title": "Belarus - Air Force Flag and Aircraft Marking — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/by%5Eaf.html"
+              }
+            ]
+          }
         },
         {
           "id": "by-emblem",

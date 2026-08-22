@@ -3168,6 +3168,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "List of Belarusian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
     ],
   },
+  "by-air-force": {
+    description: "Eight golden rays radiate from the Air Force's own emblem: stylised gold arrows, lightning bolts and wings within a wreath of oak (for strength) and laurel (for honour), set on a baroque-shaped blue shield topped by a five-pointed star — the arrows, lightning and wings together standing for the speed and striking power of air combat.",
+    sources: [
+      { title: "Belarus - Air Force Flag and Aircraft Marking — Flags of the World", url: "https://www.crwflags.com/fotw/flags/by%5Eaf.html" },
+    ],
+  },
   "by-president": {
     description: "The national red-over-green flag, charged in gold and red with the national emblem: a golden outline of Belarus's own borders rising over a globe within a wreath of wheat, flax and clover for prosperity, topped by a red star for humanity's courage and aspirations — the globe expressing Belarus's wish to live in peace and cooperation with other nations.",
     sources: [
