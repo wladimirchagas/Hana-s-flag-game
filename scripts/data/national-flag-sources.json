@@ -1066,7 +1066,16 @@
           "name": "Flag of American Samoa",
           "reuse": "flags/sub/US/US-AS.svg",
           "design": "A red-edged white triangle on blue bearing a bald eagle that holds a Samoan war club (uatogi) and fly-whisk (fue).",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_American_Samoa"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_American_Samoa",
+          "meaning": {
+            "description": "The bald eagle represents American Samoa's ties to the United States; the Samoan war club (uatogi) it holds stands for the government's power to defend itself, and the fly-whisk (fue) for the wisdom of traditional Samoan orators — combining both cultures the territory belongs to.",
+            "sources": [
+              {
+                "title": "Flag of American Samoa — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_American_Samoa"
+              }
+            ]
+          }
         },
         {
           "id": "as-seal",
@@ -1492,7 +1501,16 @@
           "name": "Flag of Aruba",
           "reuse": "flags/sub/NL/NL-AW.svg",
           "design": "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Aruba"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Aruba",
+          "meaning": {
+            "description": "The two yellow stripes stand for the island's economic history (gold mining, aloe production, tourism) and its native flora; the red four-pointed star represents Aruba itself, its four points recalling the diverse origins of the Aruban people, set against the surrounding blue sea.",
+            "sources": [
+              {
+                "title": "Flag of Aruba — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Aruba"
+              }
+            ]
+          }
         },
         {
           "id": "aw-arms",
@@ -5734,7 +5752,16 @@
           "design": "The national flag charged with the full coat of arms — flown by the state, where the civil flag carries none.",
           "source": "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags",
           "sha256": "f622494dd5bf7c156ee4702a0cb16b8111024155f28cc1e2a1abe6e0c85e2e82",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The coat of arms charged on the state flag shows three volcanoes for the country's three mountain ranges, a merchant ship on each ocean for its maritime history, and an arc of seven stars for its seven provinces.",
+            "sources": [
+              {
+                "title": "Coat of arms of Costa Rica — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica"
+              }
+            ]
+          }
         },
         {
           "id": "cr-1823",
@@ -6109,7 +6136,16 @@
           "name": "Flag of Curaçao",
           "reuse": "flags/sub/NL/NL-CW.svg",
           "design": "A blue field with a horizontal yellow stripe below the centre and two white five-pointed stars in the canton.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao",
+          "meaning": {
+            "description": "The two white stars represent Curaçao and the smaller Klein Curaçao, each star's five points standing for the five continents from which the island's people descend; the yellow stripe represents the sun over the sea.",
+            "sources": [
+              {
+                "title": "Flag of Curaçao — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao"
+              }
+            ]
+          }
         },
         {
           "id": "cw-arms",
@@ -10185,7 +10221,16 @@
           "name": "Flag of Guam",
           "reuse": "flags/sub/US/US-GU.svg",
           "design": "A dark-blue field with a red border, bearing the slingstone-shaped territorial seal in the centre.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Guam"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Guam",
+          "meaning": {
+            "description": "The seal's almond shape recalls the sling stones used by the ancient Chamorro people; it depicts a proa (traditional outrigger canoe) sailing in Hagåtña Bay before the cliffs of the island's coastline.",
+            "sources": [
+              {
+                "title": "Flag of Guam — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Guam"
+              }
+            ]
+          }
         },
         {
           "id": "gu-burgundy",
@@ -10507,7 +10552,16 @@
           "name": "Flag of Hong Kong",
           "reuse": "flags/sub/CN/CN-HK.svg",
           "design": "The regional flag — a white bauhinia flower on red — flown since the 1997 handover.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong",
+          "meaning": {
+            "description": "The white bauhinia flower represents Hong Kong against China's red, and the five stars on its petals echo the five stars of China's national flag — together conveying that Hong Kong remains part of China after the 1997 handover.",
+            "sources": [
+              {
+                "title": "Flag of Hong Kong — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
+              }
+            ]
+          }
         },
         {
           "id": "hk-colonial",
@@ -16915,7 +16969,16 @@
           "name": "Flag of Macau",
           "reuse": "flags/sub/CN/CN-MO.svg",
           "design": "The regional flag — a white lotus over the Sai Van Bridge and water on green — flown since the 1999 handover.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Macau"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Macau",
+          "meaning": {
+            "description": "The white lotus flower represents Macau, its three petals standing for the peninsula and the islands of Taipa and Coloane; the bridge and water beneath it depict the Governador Nobre de Carvalho Bridge, and the five gold stars above echo the flag of China, marking Macau's return to Chinese sovereignty in 1999.",
+            "sources": [
+              {
+                "title": "Flag of Macau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Macau"
+              }
+            ]
+          }
         },
         {
           "id": "mo-portugal",
@@ -17002,7 +17065,16 @@
           "name": "Flag of the Northern Mariana Islands",
           "reuse": "flags/sub/US/US-MP.svg",
           "design": "A grey latte stone and white star before a mwarmwar garland, on a blue field.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands",
+          "meaning": {
+            "description": "The grey latte stone represents the indigenous Chamorro people and the floral mwarmwar garland represents the Carolinian people, the territory's two main indigenous populations; the white star stands for the United States and the blue field for the Pacific Ocean.",
+            "sources": [
+              {
+                "title": "Flag of the Northern Mariana Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
+              }
+            ]
+          }
         },
         {
           "id": "mp-burgundy",
@@ -20880,7 +20952,16 @@
           "name": "Flag of Puerto Rico",
           "reuse": "flags/sub/US/US-PR.svg",
           "design": "The single-star flag — five red and white stripes with a white star on a blue triangle — adopted as the commonwealth flag in 1952.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico",
+          "meaning": {
+            "description": "The white star stands for Puerto Rico itself, and the red and white stripes represent the blood shed by those who fought for the island and the liberty, victory and peace that followed.",
+            "sources": [
+              {
+                "title": "Flag of Puerto Rico — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico"
+              }
+            ]
+          }
         },
         {
           "id": "pr-burgundy",
@@ -24106,7 +24187,16 @@
           "name": "Flag of Sint Maarten",
           "reuse": "flags/sub/NL/NL-SX.svg",
           "design": "A red-over-blue horizontal bicolour with a white triangle at the hoist bearing the territory's coat of arms.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten",
+          "meaning": {
+            "description": "The coat of arms shows the Courthouse in Philipsburg and the Dutch-French friendship monument that marks the boundary between the island's two sides; a pelican before a rising sun crests the shield, and the green and yellow stand for the land's fertility and the energy of its people.",
+            "sources": [
+              {
+                "title": "Flag of Sint Maarten — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten"
+              }
+            ]
+          }
         },
         {
           "id": "sx-arms",
@@ -27019,7 +27109,16 @@
           "design": "The blue-white-blue flag with a red diagonal, of José Gervasio Artigas — one of the country's three official flags.",
           "source": "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags",
           "sha256": "9841f000bc871c232d5228e1d5e4f0bb738e387be4256e85ec509fdecf1bda64",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Designed in 1815 by national hero José Gervasio Artigas, the blue-and-white bars were adopted from Manuel Belgrano's proposed flag for a confederation of independent South American provinces, and the red diagonal band stands for federalism — the cause Artigas led.",
+            "sources": [
+              {
+                "title": "Artigas flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Artigas_flag"
+              }
+            ]
+          }
         },
         {
           "id": "uy-treinta-y-tres",
@@ -27032,7 +27131,16 @@
           "design": "The blue-white-red triband bearing the motto Libertad o Muerte, carried by the Thirty-Three Orientals in 1825 — the third official flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags",
           "sha256": "918dcdf9be0f4fb7bf592dcb08c6b87b9802b5b24b0bcfc46b45e266b2f11a4e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The blue stripe stands for greatness, the white for the Republic, and the red for the blood of those who died for independence; the motto \"Libertad o Muerte\" (\"Liberty or Death\") honours the Treinta y Tres Orientales, the thirty-three exiles who returned in 1825 to fight Brazilian rule and spark Uruguay's independence.",
+            "sources": [
+              {
+                "title": "Flag of the Treinta y Tres — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Treinta_y_Tres"
+              }
+            ]
+          }
         },
         {
           "id": "uy-army",
@@ -27499,7 +27607,16 @@
           "design": "The national tricolour charged with the coat of arms in the upper hoist.",
           "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
           "sha256": "d945d0d7f90d35c2c8cebaf6e69713012d82526a3613b20c25c24f3ba5c85d71",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The coat of arms charged on the state flag shows a wheat sheaf for the union and wealth of the republic's states, a white horse (recalling Simón Bolívar's horse Palomo) for independence and freedom, and swords, sabres and lances tied with laurel for triumph in the wars of independence.",
+            "sources": [
+              {
+                "title": "Coat of arms of Venezuela — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela"
+              }
+            ]
+          }
         },
         {
           "id": "ve-1954",
@@ -27767,7 +27884,16 @@
           "name": "Flag of the U.S. Virgin Islands",
           "reuse": "flags/sub/US/US-VI.svg",
           "design": "A white field bearing a simplified American eagle between the letters V and I.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands",
+          "meaning": {
+            "description": "The eagle, adapted from the United States coat of arms, holds a laurel sprig for victory and three arrows for the territory's three main islands — Saint Croix, Saint Thomas and Saint John — set between the letters V and I for \"Virgin Islands\".",
+            "sources": [
+              {
+                "title": "Flag of the United States Virgin Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
+              }
+            ]
+          }
         },
         {
           "id": "vi-denmark",
