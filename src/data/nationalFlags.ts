@@ -3084,6 +3084,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Maple leaf — Wikipedia", url: "https://en.wikipedia.org/wiki/Maple_leaf" },
     ],
   },
+  "cd-president": {
+    description: "The leopard's head represents the strength and vigilance of the state; the elephant tusk recalls the country's natural resources and historic ivory trade; and the spear marks its determination to defend its sovereignty — all beneath the motto \"Justice, Paix, Travail\" (\"Justice, Peace, Work\").",
+    sources: [
+      { title: "Emblem of the Democratic Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_Democratic_Republic_of_the_Congo" },
+    ],
+  },
   "cd-arms": {
     description: "Adopted by decree in 2006 and set in the 2005 constitution, the emblem places a leopard's head between an elephant tusk and a spear — traditional African emblems of the land and its people — above the national motto Justice, Paix, Travail (“Justice, Peace, Work”). It replaced a 2003 design of three interlocked hands.",
     sources: [
@@ -4291,6 +4297,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Pha That Luang — Wikipedia", url: "https://en.wikipedia.org/wiki/Pha_That_Luang" },
     ],
   },
+  "lb-jack": {
+    description: "The cedar tree has symbolised Lebanon for millennia — mentioned dozens of times in the Bible as an emblem of strength and endurance — and was carried on Christian Lebanese Legion flags in the First World War before becoming the centrepiece of the modern national flag in 1943.",
+    sources: [
+      { title: "Flag of Lebanon — Britannica", url: "https://www.britannica.com/topic/flag-of-Lebanon" },
+    ],
+  },
   "lb-arms": {
     description: "The arms carry the same device as the flag, arranged across a red shield: a white bend bearing a green cedar of Lebanon (Cedrus libani). The cedar is the country's oldest and most persistent emblem — the biblical “cedars of God,” a symbol of holiness, endurance and peace — and it became the prominent national symbol during the French mandate. The white recalls peace and the snow of the mountains; the red, the sacrifice of those who defended the country.",
     sources: [
@@ -4853,6 +4865,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The harpy eagle is Panama's own national bird and crowns the country's national coat of arms, holding a scroll with the national motto in its beak; on the full coat of arms an arc of ten stars above it stands for Panama's ten provinces.",
     sources: [
       { title: "Coat of arms of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
+    ],
+  },
+  "pe-war": {
+    description: "The national shield charged on this flag shows a vicuña for Peru's animal wealth, a cinchona tree for its plant wealth (the source of quinine), and a cornucopia spilling gold and silver coins for its mineral wealth — adopted in 1825 under Simón Bolívar to celebrate the newly independent nation's natural riches.",
+    sources: [
+      { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
     ],
   },
   "pe-arms": {
