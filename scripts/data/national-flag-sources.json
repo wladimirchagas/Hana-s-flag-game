@@ -2189,7 +2189,20 @@
           "design": "The presidential standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
           "sha256": "73dfa28b87e177826771f81358399e6ebb3f32282fd263f4c482456399fb5302",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential standard bears the National Emblem of Bangladesh, adopted shortly after independence in 1971: a water lily, the national flower, representing the country's many rivers, flanked by two sheaves of rice standing for its staple crop and agriculture, with four stars above symbolising the four founding principles written into the constitution — nationalism, socialism, democracy and secularism — and a sprig of jute, one of the country's main exports, between them.",
+            "sources": [
+              {
+                "title": "Flags of the World — Bangladesh: Presidential Flag",
+                "url": "https://www.crwflags.com/fotw/flags/bd_pres.html"
+              },
+              {
+                "title": "Wikipedia — National Emblem of Bangladesh",
+                "url": "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh"
+              }
+            ]
+          }
         },
         {
           "id": "bd-pm",
@@ -2259,7 +2272,20 @@
           "design": "A blue ensign with the national flag in the canton and the air force roundel in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
           "sha256": "600082dceeb243f4ba56434a0165480c30b5f78e399a2b66113bd6e8d1849309",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Air Force Ensign of Bangladesh carries the national flag in the canton and the air force's roundel — a green outer disc surrounding a smaller red disc — in the fly. The roundel repeats the colours and meaning of the national flag: green for the lush landscape of Bangladesh, and red for both the sun rising over Bengal and the blood of those who died in the 1971 war of independence.",
+            "sources": [
+              {
+                "title": "Flags of the World — Air Force: Bangladesh",
+                "url": "https://www.fotw.info/flags/bd%5Eaf.html"
+              },
+              {
+                "title": "Wikipedia — Flag of Bangladesh",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Bangladesh"
+              }
+            ]
+          }
         },
         {
           "id": "bd-naval-ensign",
@@ -6480,7 +6506,20 @@
           "design": "The navy's jack.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags",
           "sha256": "605ad49b0edc4f407d2084dba1a0761d53c34b11d6a99b8648467038b9eced86",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Cuba's naval jack is the Demajagua flag — also known as the flag of Yara — first raised on 10 October 1868 by Carlos Manuel de Céspedes at his sugar mill La Demajagua as he declared Cuban independence from Spain and freed his slaves, the opening act of the Ten Years' War. It was adopted as the navy's jack in 1869 in recognition of its place as one of the founding banners of the Cuban independence movement, distinct from the Cárdenas-born design that became the national flag.",
+            "sources": [
+              {
+                "title": "Wikipedia — List of Cuban flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Cuban_flags"
+              },
+              {
+                "title": "Flags of the World — Cuba: Flags for Use at Sea",
+                "url": "https://www.crwflags.com/fotw/flags/cu~.html"
+              }
+            ]
+          }
         },
         {
           "id": "cu-arms",
@@ -7652,7 +7691,20 @@
           "design": "The national flag charged with the presidential emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Algerian_flags",
           "sha256": "334912e6e28d9334eb8db3a7c066a02f36925f7cd3fda2bee9689a8ea8c62e57",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential standard is the national flag with the country's official name added in gold script over the crescent and star, and the presidential motto beneath it. The crescent and star are the traditional emblems of Islam, Algeria's state religion, with the crescent drawn deliberately more open than in other countries' flags in the belief that its longer horns bring happiness and good fortune.",
+            "sources": [
+              {
+                "title": "Wikipedia — Flag of Algeria",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Algeria"
+              },
+              {
+                "title": "Wikipedia — List of Algerian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Algerian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "dz-naval-ensign",
@@ -8966,7 +9018,20 @@
           "design": "The naval jack.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
           "sha256": "b0ea638b35022942e9cea9d182e5ef689b3f22ae62c0fab72be10405683222be",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Finland's naval jack, adopted in 1919, is a sea-blue Nordic cross on a white field, following the same Scandinavian cross pattern as the national flag. Flown at the bow rather than the stern, a naval jack of this kind marks a vessel as a warship rather than a merchant ship — a distinction that traces to 17th-century Danish naval regulations reserving swallow-tailed and jack ensigns for the royal battle fleet, a convention later adopted across the Nordic countries.",
+            "sources": [
+              {
+                "title": "Wikipedia — List of flags of Finland",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland"
+              },
+              {
+                "title": "Wikipedia — Swallowtail (flag)",
+                "url": "https://en.wikipedia.org/wiki/Swallowtail_(flag)"
+              }
+            ]
+          }
         },
         {
           "id": "fi-arms",
@@ -10395,7 +10460,20 @@
           "design": "A light blue field with the national flag in the canton and the air force roundel in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
           "sha256": "fce1d1029c6636e4e92e463ff4c84a9cd26304ecac19b4b9792bc369e51ebbdf",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Air Force Ensign of Ghana carries the national flag in the canton and the air force's green-yellow-red roundel in the fly, adopted when the force was formed in 1959. The roundel repeats the colours of the national flag — green for the nation's forests and farmland, yellow for its mineral wealth, and red for the blood shed in the struggle for independence — marking Ghanaian military aircraft with the same colours flown on the ground.",
+            "sources": [
+              {
+                "title": "Flags of the World — Ghanaian Air Force",
+                "url": "https://www.crwflags.com/fotw/flags/gh%5Eaf.html"
+              },
+              {
+                "title": "Wikipedia — Ghana Air Force",
+                "url": "https://en.wikipedia.org/wiki/Ghana_Air_Force"
+              }
+            ]
+          }
         },
         {
           "id": "gh-arms",
@@ -13318,7 +13396,20 @@
           "design": "A dark blue field bearing a yellow national emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
           "sha256": "025243d8aa5f5e877f5a19e8a2b79a9600690c9cd73271180cf3d77b964a2826",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The naval jack of the Islamic Republic of Iran Navy is a dark blue field bearing the national emblem in yellow — the same stylised device found at the centre of the national flag. Designed by the architect Hamid Nadimi and adopted after the 1979 revolution, the emblem can be read simultaneously as a tulip, a flower long associated with martyrdom in Iranian tradition, as a stylised rendering of the word 'Allah', and as two crescents; it replaced the monarchy's earlier lion-and-sun device.",
+            "sources": [
+              {
+                "title": "Wikipedia — Flag of Iran",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Iran"
+              },
+              {
+                "title": "Wikipedia — List of Iranian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Iranian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "ir-emblem",

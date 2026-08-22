@@ -2900,6 +2900,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "The Bangladesh Army Flag: History, Meaning, and Kalima", url: "https://wrasse.plymouth.ac.uk/ac-news/bangladesh-army-flag-history-meaning-and-kalima-1767646671" },
     ],
   },
+  "bd-air-force": {
+    description: "The Air Force Ensign of Bangladesh carries the national flag in the canton and the air force's roundel — a green outer disc surrounding a smaller red disc — in the fly. The roundel repeats the colours and meaning of the national flag: green for the lush landscape of Bangladesh, and red for both the sun rising over Bengal and the blood of those who died in the 1971 war of independence.",
+    sources: [
+      { title: "Flags of the World — Air Force: Bangladesh", url: "https://www.fotw.info/flags/bd%5Eaf.html" },
+      { title: "Wikipedia — Flag of Bangladesh", url: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
+    ],
+  },
+  "bd-president": {
+    description: "The presidential standard bears the National Emblem of Bangladesh, adopted shortly after independence in 1971: a water lily, the national flower, representing the country's many rivers, flanked by two sheaves of rice standing for its staple crop and agriculture, with four stars above symbolising the four founding principles written into the constitution — nationalism, socialism, democracy and secularism — and a sprig of jute, one of the country's main exports, between them.",
+    sources: [
+      { title: "Flags of the World — Bangladesh: Presidential Flag", url: "https://www.crwflags.com/fotw/flags/bd_pres.html" },
+      { title: "Wikipedia — National Emblem of Bangladesh", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
+    ],
+  },
   "bd-emblem": {
     description: "Adopted shortly after independence in 1971, every charge names something the country runs on. The water lily at the centre is the national flower and stands for the many rivers that cross Bangladesh; the rice sheaves flanking it are the staple food; the three jute leaves above are the crop the economy was built on; and the four stars stand for the four founding principles of the 1972 constitution — nationalism, secularism, socialism and democracy.",
     sources: [
@@ -3494,6 +3508,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
     ],
   },
+  "cu-naval-jack": {
+    description: "Cuba's naval jack is the Demajagua flag — also known as the flag of Yara — first raised on 10 October 1868 by Carlos Manuel de Céspedes at his sugar mill La Demajagua as he declared Cuban independence from Spain and freed his slaves, the opening act of the Ten Years' War. It was adopted as the navy's jack in 1869 in recognition of its place as one of the founding banners of the Cuban independence movement, distinct from the Cárdenas-born design that became the national flag.",
+    sources: [
+      { title: "Wikipedia — List of Cuban flags", url: "https://en.wikipedia.org/wiki/List_of_Cuban_flags" },
+      { title: "Flags of the World — Cuba: Flags for Use at Sea", url: "https://www.crwflags.com/fotw/flags/cu~.html" },
+    ],
+  },
   "cu-president": {
     description: "The presidential flag bears Cuba's coat of arms: a pointed shield showing the Sierra Maestra mountains beneath a rising sun, a golden key across the Straits of Florida marking Cuba's position as gateway to the Gulf of Mexico, and a royal palm, framed by oak and laurel branches bound in the national colours and topped by a red Phrygian cap on a fasces — the cap and bundled rods together a classical emblem of liberty — adopted in this form after the 1959 revolution.",
     sources: [
@@ -3705,6 +3726,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
     ],
   },
+  "dz-president": {
+    description: "The presidential standard is the national flag with the country's official name added in gold script over the crescent and star, and the presidential motto beneath it. The crescent and star are the traditional emblems of Islam, Algeria's state religion, with the crescent drawn deliberately more open than in other countries' flags in the belief that its longer horns bring happiness and good fortune.",
+    sources: [
+      { title: "Wikipedia — Flag of Algeria", url: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
+      { title: "Wikipedia — List of Algerian flags", url: "https://en.wikipedia.org/wiki/List_of_Algerian_flags" },
+    ],
+  },
   "dz-emblem": {
     description: "The emblem is a landscape read as a programme. The crescent that encircles it is the same crescent as on the national flag, and is the symbol of Islam. The hand of Fatima at the centre is a traditional protective symbol of the region; behind it stand the Atlas Mountains, the country's own geography, and above them a rising sun for a new era. The buildings at the foot stand for industry and the plants for agriculture — the two things the independent state set out to build. The present form, with the motto in Arabic rather than French, was adopted on 1 November 1976.",
     sources: [
@@ -3868,6 +3896,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The swallow-tailed shape and the national coat of arms — a crowned lion wielding a sword and trampling a sabre — mark this as Finland's war flag and naval ensign, distinguishing military and state use from the plain civil flag.",
     sources: [
       { title: "Coat of arms of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
+    ],
+  },
+  "fi-naval-jack": {
+    description: "Finland's naval jack, adopted in 1919, is a sea-blue Nordic cross on a white field, following the same Scandinavian cross pattern as the national flag. Flown at the bow rather than the stern, a naval jack of this kind marks a vessel as a warship rather than a merchant ship — a distinction that traces to 17th-century Danish naval regulations reserving swallow-tailed and jack ensigns for the royal battle fleet, a convention later adopted across the Nordic countries.",
+    sources: [
+      { title: "Wikipedia — List of flags of Finland", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
+      { title: "Wikipedia — Swallowtail (flag)", url: "https://en.wikipedia.org/wiki/Swallowtail_(flag)" },
     ],
   },
   "fi-president": {
@@ -4096,6 +4131,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Like Jersey and England, Guernsey bears the three gold lions of the Dukes of Normandy — a legacy of the Channel Islands' place in the Duchy of Normandy, which the islands kept when they stayed loyal to the English Crown after Normandy was lost to France in 1204. King Edward I granted a single joint seal for Guernsey and Jersey in 1279, and separate bailiwick seals followed in 1304. Guernsey's arms are distinguished from Jersey's otherwise identical lions by the small gold sprig of leaves — the rameau — set above the shield.",
     sources: [
       { title: "Coat of arms of Guernsey — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey" },
+    ],
+  },
+  "gh-air-force": {
+    description: "The Air Force Ensign of Ghana carries the national flag in the canton and the air force's green-yellow-red roundel in the fly, adopted when the force was formed in 1959. The roundel repeats the colours of the national flag — green for the nation's forests and farmland, yellow for its mineral wealth, and red for the blood shed in the struggle for independence — marking Ghanaian military aircraft with the same colours flown on the ground.",
+    sources: [
+      { title: "Flags of the World — Ghanaian Air Force", url: "https://www.crwflags.com/fotw/flags/gh%5Eaf.html" },
+      { title: "Wikipedia — Ghana Air Force", url: "https://en.wikipedia.org/wiki/Ghana_Air_Force" },
     ],
   },
   "gh-president": {
@@ -4533,6 +4575,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The badge repeats Iraq's own national flag: red for the blood of martyrs, white for a peaceful future, and black for the country's Islamic and Arab past, with the Takbir written in the ruler Saddam Hussein's own handwriting when it was added to the flag in 1991 — kept on the flag, and so on this badge, in the redesigns since 2004 and 2008.",
     sources: [
       { title: "Flag of Iraq — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    ],
+  },
+  "ir-naval-jack": {
+    description: "The naval jack of the Islamic Republic of Iran Navy is a dark blue field bearing the national emblem in yellow — the same stylised device found at the centre of the national flag. Designed by the architect Hamid Nadimi and adopted after the 1979 revolution, the emblem can be read simultaneously as a tulip, a flower long associated with martyrdom in Iranian tradition, as a stylised rendering of the word 'Allah', and as two crescents; it replaced the monarchy's earlier lion-and-sun device.",
+    sources: [
+      { title: "Wikipedia — Flag of Iran", url: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
+      { title: "Wikipedia — List of Iranian flags", url: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
     ],
   },
   "ir-emblem": {
