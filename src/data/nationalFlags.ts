@@ -2846,6 +2846,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Barbados — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
     ],
   },
+  "bd-armed-forces": {
+    description: "A red-and-blue tricolour bears the joint emblem of the three services: a circle divided into three fields by gold fimbriations, red for the Army's insignia, dark blue for the Navy's crest and light blue for the Air Force's, uniting the services under a single flag adopted in 1972 after independence.",
+    sources: [
+      { title: "National symbols of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh" },
+    ],
+  },
+  "bd-army": {
+    description: "A green field — echoing the national flag's green for Bangladesh's vitality and youthful greenery — bears the Army's insignia: a gold water lily above two crossed gold swords, with the Kalima (the Islamic declaration of faith, in Arabic calligraphy) as its most prominent element, reflecting the central role of Islam in the identity and values of Bangladesh and its army.",
+    sources: [
+      { title: "The Bangladesh Army Flag: History, Meaning, and Kalima", url: "https://wrasse.plymouth.ac.uk/ac-news/bangladesh-army-flag-history-meaning-and-kalima-1767646671" },
+    ],
+  },
   "bd-emblem": {
     description: "Adopted shortly after independence in 1971, every charge names something the country runs on. The water lily at the centre is the national flower and stands for the many rivers that cross Bangladesh; the rice sheaves flanking it are the staple food; the three jute leaves above are the crop the economy was built on; and the four stars stand for the four founding principles of the 1972 constitution — nationalism, secularism, socialism and democracy.",
     sources: [
@@ -3613,6 +3625,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The three lions are borrowed, and the borrowing is the history: they come from the 13th-century royal arms of Denmark, because the Duchy of Estonia was Danish — Valdemar II's conquest — and they stayed as the central charge of the greater arms of Tallinn even after the Danish king sold his Estonian dominion to the Teutonic Order in 1346. From there the motif passed to the Duchy of Estonia under Sweden, to the Estonian Knighthood and to the Russian governorate, and so to the modern republic. The golden oak branches on either side are the national tree; the lesser arms are the shield alone. Stalin's regime banned the display of these arms with every other Estonian national symbol after the 1940 occupation.",
     sources: [
       { title: "Coat of arms of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
+    ],
+  },
+  "eg-naval-ensign": {
+    description: "The national flag — red for the blood of martyrs, white for peace and black for the dark years overcome before the 1952 revolution — is defaced in the canton with two white fouled (rope-wrapped) crossed anchors, a traditional maritime emblem marking the ensign, adopted in 1984, as that of the Egyptian Navy.",
+    sources: [
+      { title: "Flags of the Egyptian Armed Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_Egyptian_Armed_Forces" },
     ],
   },
   "eg-royal": {
