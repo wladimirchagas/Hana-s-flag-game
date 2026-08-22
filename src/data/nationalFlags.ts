@@ -3338,6 +3338,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Colombia — Army — Flags of the World", url: "https://www.crwflags.com/fotw/flags/co%5Earmy.html" },
     ],
   },
+  "co-navy": {
+    description: "The Navy's own coat of arms bears a wooden stocked anchor with a rope made fast to its ring — the anchor, the seafarer's essential tool, standing for the firmness and conviction of the Navy's sailors — alongside a Phrygian cap for the liberty that has always characterised the Colombian people, and the Isthmus of Panama flanked by its two oceans with a ship on each, for Colombian sovereignty over both the Pacific and the Atlantic.",
+    sources: [
+      { title: "Escudo Simbólico de la Armada Nacional — Armada Nacional de Colombia", url: "https://www.armada.mil.co/es/content/escudo-simb%C3%B3lico-de-la-armada-nacional" },
+    ],
+  },
+  "co-air-force": {
+    description: "The Air Force's coat of arms bears two sable (black) wings — a symbol of nobility, power, constancy and wisdom, alluding to the legend of Icarus and honouring all who have given their lives in service of aviation — supported by a red eagle looking to the shield's dexter side, representing the dominion aviation holds over Colombia's skies, winds and storms.",
+    sources: [
+      { title: "Símbolos Fuerza Aérea — Fuerza Aérea Colombiana", url: "https://disan.fac.mil.co/es/conozcanos/simbolos-fuerza-aerea" },
+    ],
+  },
   "co-naval-ensign": {
     description: "The national tricolour is charged with Colombia's coat of arms — the Andean condor for freedom, the shield's Phrygian cap for liberty and its two ships for the country's maritime history and trade — beneath the words \"ARMADA NACIONAL\" (National Navy), marking the ensign flown by ships of the Colombian Navy, founded in 1824 after the Naval Battle of Maracaibo secured the country's independence at sea.",
     sources: [

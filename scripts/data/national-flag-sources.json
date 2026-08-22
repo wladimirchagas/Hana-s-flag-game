@@ -5995,7 +5995,16 @@
           "design": "The national flag charged with the navy's arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
           "sha256": "0365e89b7e68b900fbd995dcd658089d0179c6bf1a5ab99bc6665c0a8b36508d",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Navy's own coat of arms bears a wooden stocked anchor with a rope made fast to its ring — the anchor, the seafarer's essential tool, standing for the firmness and conviction of the Navy's sailors — alongside a Phrygian cap for the liberty that has always characterised the Colombian people, and the Isthmus of Panama flanked by its two oceans with a ship on each, for Colombian sovereignty over both the Pacific and the Atlantic.",
+            "sources": [
+              {
+                "title": "Escudo Simbólico de la Armada Nacional — Armada Nacional de Colombia",
+                "url": "https://www.armada.mil.co/es/content/escudo-simb%C3%B3lico-de-la-armada-nacional"
+              }
+            ]
+          }
         },
         {
           "id": "co-air-force",
@@ -6006,7 +6015,16 @@
           "design": "The national flag charged with the air force's arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
           "sha256": "89753ba3cf1cd25982b74980b45e3c808c975f932fdc626030a8322c3bec2496",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Air Force's coat of arms bears two sable (black) wings — a symbol of nobility, power, constancy and wisdom, alluding to the legend of Icarus and honouring all who have given their lives in service of aviation — supported by a red eagle looking to the shield's dexter side, representing the dominion aviation holds over Colombia's skies, winds and storms.",
+            "sources": [
+              {
+                "title": "Símbolos Fuerza Aérea — Fuerza Aérea Colombiana",
+                "url": "https://disan.fac.mil.co/es/conozcanos/simbolos-fuerza-aerea"
+              }
+            ]
+          }
         },
         {
           "id": "co-arms",
