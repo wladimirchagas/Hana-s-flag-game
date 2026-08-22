@@ -2785,10 +2785,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Royal Australian Air Force Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Australian_Air_Force_Ensign" },
     ],
   },
+  "au-red-ensign": {
+    description: "The same Commonwealth Star (seven points, one for each of the six states and the territories collectively) and Southern Cross (five stars marking the constellation visible only from the southern hemisphere) as the national flag, on a red field reserved for Australian-registered merchant shipping — a deliberate split from the 1908 design competition, which set the blue ensign aside for official and naval use and the red for the merchant fleet.",
+    sources: [
+      { title: "Australian red ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Australian_red_ensign" },
+    ],
+  },
   "au-royal": {
     description: "The banner reproduces Australia's national coat of arms, whose kangaroo and emu supporters — both unable to walk backwards — represent a nation moving only forward; its shield, quartered with the six states' own badges under an ermine border, represents the states unified under one federation.",
     sources: [
       { title: "Coat of arms of Australia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
+    ],
+  },
+  "au-gg": {
+    description: "A dark blue field bears the Royal Crest — a Tudor crown beneath a crowned lion, the heraldic mark of the sovereign's authority — above a scroll reading 'Commonwealth of Australia'. Introduced in this form for the dominions' governors-general in 1930 (to reflect their shift from representatives of the British government to personal representatives of the monarch) and readopted in 2024, it marks the Governor-General as the King's own representative in Australia, flying wherever they are in residence or travelling.",
+    sources: [
+      { title: "Flag of the governor-general of Australia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_governor-general_of_Australia" },
     ],
   },
   "au-arms": {
@@ -3045,6 +3057,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A sky-blue field, crossed by a diagonal band, bears the arms of the Aeronautics Command within a green-and-gold-bordered diamond: a shield divided green and yellow — Brazil's own national colours — surmounted by a star within concentric white-and-blue discs, tying the Air Force's own heraldry to the wider national symbolism of green, yellow and blue.",
     sources: [
       { title: "Brazilian Air Force — Flags of the World", url: "https://www.crwflags.com/fotw/flags/br%5Efab.html" },
+    ],
+  },
+  "br-marines": {
+    description: "The Marine Corps' arms bear a flaming grenade over crossed antique weapons — a battle-axe and a halberd — with a red fouled anchor (a naval device whose cable has wound around its stock, marking long naval service and tradition) in the corner, above the date 1808: the year the Portuguese royal court, fleeing Napoleon, relocated to Rio de Janeiro escorted by the Brigada Real da Marinha, the Royal Navy Brigade from which the modern Corps traces its origin.",
+    sources: [
+      { title: "Brazilian Marine Corps — Flags of the World", url: "https://www.crwflags.com/fotw/flags/br~%5Ecfn.html" },
     ],
   },
   "br-jack": {
