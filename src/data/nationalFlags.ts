@@ -5377,6 +5377,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
     ],
   },
+  "ph-afp": {
+    description: "The Armed Forces' coat of arms is built around a sun and three stars drawn from the national flag, a sampaguita (jasmine) garland, and a silver triangle for company-grade officers charged with a golden sun bearing the Baybayin letter 'Ka' — the initial of Katipunan, the revolutionary society that fought Spanish rule — together tying the modern armed forces to the Philippines' history of resistance from the Battle of Mactan onward.",
+    sources: [
+      { title: "AFP Coat of Arms: A Hero's Identity — Philippine Army", url: "https://army.mil.ph/home/index.php/featured-stories/518-afp-coat-of-arms-a-hero-s-identity" },
+    ],
+  },
+  "ph-army": {
+    description: "The Army's seal bears an eight-rayed golden sun, its rays for the eight provinces that first rose against Spanish rule in 1896 — Manila, Cavite, Bulacan, Pampanga, Nueva Ecija, Bataan, Laguna and Batangas — and three stars for the country's major island groups (also read as marking the Army's flag officers), the same tripartite symbolism as the national flag itself.",
+    sources: [
+      { title: "AFP Coat of Arms: A Hero's Identity — Philippine Army", url: "https://army.mil.ph/home/index.php/featured-stories/518-afp-coat-of-arms-a-hero-s-identity" },
+    ],
+  },
+  "ph-navy": {
+    description: "The Navy's seal shows a purple anchor for its maritime service, superimposed by the Philippine sea-lion — the same mythical half-lion, half-fish creature at the centre of the presidential seal, granted to Manila by Philip II of Spain in 1596 — within a roundel bordered by naval cable and reading 'Hukbong Dagat Pilipinas' (Naval Forces of the Philippines), with two stars.",
+    sources: [
+      { title: "Philippines Navy — Flags of the World", url: "https://www.fotw.info/flags/ph%5Enavy.html" },
+    ],
+  },
   "ph-air-force": {
     description: "The Air Force's seal, adopted in 1999, bears a golden wing within a blue circle and three yellow stars, one for each of the country's major island groups — Luzon, Visayas and Mindanao — the same tripartite symbolism carried by the national flag, expressing the Air Force's commitment to defending the whole archipelago and its allegiance to that flag.",
     sources: [
