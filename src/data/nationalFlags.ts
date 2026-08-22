@@ -5016,6 +5016,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Malaysia national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Malaysia_national_football_team" },
     ],
   },
+  "mz-president": {
+    description: "The presidential standard bears Mozambique's national emblem, adopted in this form in 1990: a yellow cog-wheel for labour and industry enclosing a map of the country over blue ocean waves, a rising red sun for the building of a new society, and — arranged in a triad — an open book for education, a hoe for peasantry and agricultural production, and an AK-47 rifle for defence and vigilance, framed by stalks of maize and sugar cane for the nation's agricultural wealth.",
+    sources: [
+      { title: "Coat of arms (crest) of National Arms of Mozambique — Heraldry Wiki", url: "https://www.heraldry-wiki.com/wiki/National_Arms_of_Mozambique" },
+    ],
+  },
   "mz-emblem": {
     description: "Article 194 of the constitution spells the emblem out charge by charge: the corn stalk and the sugar cane framing it are the country's agricultural wealth; the cogwheel is labour and industry; the book is education; the rifle stands for defence and vigilance, the hoe for the peasantry; the map is the country itself, with the rising sun for the building of a new nation and the waves for the sea and the rivers; and the red star at the top is the spirit of international solidarity of the Mozambican people.",
     sources: [
@@ -5030,6 +5036,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "na-jack": {
     description: "The coat of arms shows a fish eagle for Namibia's water resources and the far-sightedness of its leaders, two oryx as supporters for courage and pride, and a Welwitschia mirabilis plant at the base — a desert survivor prized as a symbol of the nation's endurance — beneath the motto \"Unity, Liberty, Justice\".",
+    sources: [
+      { title: "Coat of arms of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
+    ],
+  },
+  "na-president": {
+    description: "The presidential standard bears Namibia's coat of arms, introduced at independence in 1990: an African fish eagle as crest, standing for the country's water resources and for the far-sightedness of its leaders, above a blue-and-green shield charged with a golden twelve-rayed sun; the shield is supported by two oryx (gemsbok) — antelope indigenous to Namibia's semi-arid regions, prized for their courage and pride — and rests on a base of desert sand bearing a Welwitschia mirabilis, Namibia's national plant and a 'living fossil' whose survival in the harshest desert symbolises the country's fortitude and endurance.",
     sources: [
       { title: "Coat of arms of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
     ],
@@ -5207,6 +5219,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The white, red and green repeat Oman's own national flag: white for peace and for the country's Imams, green for the fertility of the Jabal al-Akhdar (\"Green Mountains\"), and red — a colour shared with other Gulf state flags — for the battles Omanis fought to expel foreign invaders.",
     sources: [
       { title: "Flag of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
+    ],
+  },
+  "pa-president": {
+    description: "The presidential standard bears Panama's coat of arms: a saber and rifle for the civil wars and struggle for independence from Spain and then Colombia, set against agricultural tools for the labour that built the Panama Canal (shown in the central band) and a winged wheel for transport, with a cornucopia for the nation's prosperity — read together as war giving way to peaceful labour and progress — beneath a bald eagle, included because the United States was the first country to recognise Panama's independence in 1903.",
+    sources: [
+      { title: "Coat of arms of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
     ],
   },
   "pa-arms": {
@@ -6010,6 +6028,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
     ],
   },
+  "ug-president": {
+    description: "The presidential flag, dating from Uganda's 1962 independence, carries the Crested Crane — the country's national bird, chosen originally by British colonial authorities precisely because it belonged to no single Ugandan region or people, and shown with one leg raised to symbolise the nation moving forward. Its gentle bearing is popularly read as reflecting the character of the Ugandan people, and it appears on both the national flag and the coat of arms granted the same year.",
+    sources: [
+      { title: "Flag of Uganda — Britannica", url: "https://www.britannica.com/topic/flag-of-Uganda" },
+    ],
+  },
   "ug-arms": {
     description: "The shield and the two spears behind it are the willingness of Ugandans to defend their country. The three charges on the shield are the waves of Lake Victoria and Lake Albert at the top, the sun in the centre for the country's many days of brilliant sunshine, and a traditional Ugandan drum below. The supporters are the crested crane, the national bird, and the Ugandan kob for the country's wildlife. The shield stands on a green mound of fertile land above a representation of the Nile, with the two main cash crops, coffee and cotton, on either side; the motto reads \"For God and My Country\". The drum's reading is contested: before Milton Obote's rule it stood for royalty and the authority of Uganda's kings, and the now-common explanation dates from after the 1966 crisis in which Obote attacked the Kabaka of Buganda.",
     sources: [
@@ -6292,6 +6316,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The African fish eagle is Zambia's own national bird and crowns its national coat of arms — adapted from the 1927 arms of the British protectorate of Northern Rhodesia at independence in 1964 — where it is read as a symbol of the country's freedom, strength and aspiration to rise above adversity.",
     sources: [
       { title: "Coat of arms of Zambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia" },
+    ],
+  },
+  "zw-president": {
+    description: "The presidential flag carries the Zimbabwe Bird — a soapstone bird statuette excavated at the ruins of Great Zimbabwe, probably representing the bateleur or African fish eagle, and the country's central national emblem since independence — set above a red five-pointed star; the bird stands for the country's deep history and the bond between its people, animals and land, while the star officially represents the nation's aspirations (though it is popularly read as a mark of the socialist and revolutionary struggle for independence).",
+    sources: [
+      { title: "Zimbabwe Bird — Wikipedia", url: "https://en.wikipedia.org/wiki/Zimbabwe_Bird" },
     ],
   },
   "zw-arms": {
