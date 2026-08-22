@@ -318,7 +318,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bj-french", category: "historical", name: "Flag of France", from: 1900, to: 1959, sovereign: "France", path: "national-flags/bj/bj-french.svg", design: "The French Tricolour, flown over the colony of Dahomey as part of French West Africa.", source: "https://en.wikipedia.org/wiki/French_Dahomey" },
     { id: "bj-arms", category: "coatofarms", name: "Coat of arms of Benin", from: 1964, to: 9999, path: "national-flags/bj/bj-arms.svg", design: "A quartered shield with a Somba castle, the Star of Benin, a ship and a palm tree, held by two leopards.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Benin" },
     { id: "bj-passport", category: "passport", name: "Passport of Benin", path: "national-flags/bj/bj-passport.webp", design: "The cover of the Benin passport.", source: "https://gicg.net/passport/bj/" },
-    { id: "bj-football-crest", category: "footballcrest", name: "Crest of the Benin national football team", path: "national-flags/bj/bj-football-crest.svg", design: "The crest of the Benin national football team.", source: "https://en.wikipedia.org/wiki/Benin_Football_Federation" },
+    { id: "bj-football-crest", category: "footballcrest", name: "Crest of the Benin national football team", path: "national-flags/bj/bj-football-crest.svg", design: "The crest of the Fédération Béninoise de Football — a green shield lettered “Bénin FBF”, with a yellow-and-red ribbon and a gold football.", source: "https://en.wikipedia.org/wiki/Benin_Football_Federation" },
   ],
   "BM": [
     { id: "bm-official-national", category: "official", name: "Flag of Bermuda", from: 1910, to: 9999, path: "flags/bm.svg", design: "A red ensign with the Union Flag in the canton and Bermuda's coat of arms — a red lion holding the wreck of the Sea Venture — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Bermuda" },
@@ -708,7 +708,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "er-italian", category: "historical", name: "Flag of Italy", from: 1890, to: 1941, sovereign: "Italy", path: "national-flags/er/er-italy.svg", design: "The flag of the Kingdom of Italy, which ruled Eritrea as its first colony from 1890 until 1941.", source: "https://en.wikipedia.org/wiki/Italian_Eritrea" },
     { id: "er-arms", category: "coatofarms", name: "Emblem of Eritrea", from: 1993, to: 9999, path: "national-flags/er/er-arms.svg", design: "A camel in the desert within a wreath of olive branches.", source: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
     { id: "er-passport", category: "passport", name: "Passport of Eritrea", path: "national-flags/er/er-passport.webp", design: "The cover of the Eritrea passport.", source: "https://gicg.net/passport/er/" },
-    { id: "er-football-crest", category: "footballcrest", name: "Crest of the Eritrea national football team", path: "national-flags/er/er-football-crest.png", design: "The crest of the Eritrea national football team.", source: "https://en.wikipedia.org/wiki/Eritrea_Football_Federation" },
+    { id: "er-football-crest", category: "footballcrest", name: "Crest of the Eritrea national football team", path: "national-flags/er/er-football-crest.png", design: "The crest of the Eritrean National Football Federation — a maroon shield lettered “ENFF Eritrea”, with a football inside a gold olive wreath.", source: "https://en.wikipedia.org/wiki/Eritrea_Football_Federation" },
   ],
   "ES": [
     { id: "es-official-national", category: "official", name: "Flag of Spain", from: 1981, to: 9999, primary: true, path: "flags/es.svg", design: "The national flag and ensign, under Article 4 of the Constitution.", source: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
@@ -733,7 +733,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "et-abyssinia", category: "historical", name: "Flag of the Ethiopian Empire (1270–1853)", from: 1270, to: 1853, priorPolity: "the Ethiopian Empire under the Solomonic dynasty", path: "national-flags/et/ethiopia-abyssinia.svg", design: "The banner of the Solomonic dynasty, before the tricolour.", source: "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags" },
     { id: "et-arms", category: "coatofarms", name: "Emblem of Ethiopia", from: 1996, to: 9999, path: "national-flags/et/et-arms.svg", design: "A golden interlaced pentagram radiating rays of light on a blue disc.", source: "https://en.wikipedia.org/wiki/Emblem_of_Ethiopia" },
     { id: "et-passport", category: "passport", name: "Passport of Ethiopia", path: "national-flags/et/et-passport.webp", design: "The cover of the Ethiopia passport.", source: "https://gicg.net/passport/et/" },
-    { id: "et-football-crest", category: "footballcrest", name: "Crest of the Ethiopia national football team", path: "national-flags/et/et-football-crest.svg", design: "The crest of the Ethiopia national football team.", source: "https://en.wikipedia.org/wiki/Ethiopia_national_football_team" },
+    { id: "et-football-crest", category: "footballcrest", name: "Crest of the Ethiopia national football team", path: "national-flags/et/et-football-crest.svg", design: "The crest of the Ethiopian Football Federation — green-yellow-red rings from the national flag around a blue disc with a gold star, lettered in Amharic and “EFF Founded 1943”, over a football.", source: "https://en.wikipedia.org/wiki/Ethiopia_national_football_team" },
   ],
   "FI": [
     { id: "fi-official-national", category: "official", name: "Flag of Finland", from: 1918, to: 9999, primary: true, path: "flags/fi.svg", design: "The national flag of Finland, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
@@ -1414,7 +1414,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ml-empire", category: "historical", name: "Imperial flag of the Mali Empire", from: 1324, to: 1325, priorPolity: "the Mali Empire", path: "national-flags/ml/mali-empire.svg", design: "A flag attributed to Mansa Musa I on 14th-century European maps — the medieval empire whose name the modern republic took, not the modern state.", source: "https://en.wikipedia.org/wiki/List_of_Malian_flags" },
     { id: "ml-emblem", category: "coatofarms", name: "Emblem of Mali", from: 1973, to: 9999, path: "national-flags/ml/mali-emblem.svg", design: "A circle bearing a bird above a mosque flanked by two bows and arrows, over a rising sun, with the name of the republic and its motto.", source: "https://en.wikipedia.org/wiki/Emblem_of_Mali" },
     { id: "ml-passport", category: "passport", name: "Passport of Mali", path: "national-flags/ml/ml-passport.webp", design: "The cover of the Mali passport.", source: "https://gicg.net/passport/ml/" },
-    { id: "ml-football-crest", category: "footballcrest", name: "Crest of the Mali national football team", path: "national-flags/ml/ml-football-crest.png", design: "The crest of the Mali national football team.", source: "https://en.wikipedia.org/wiki/Malian_Football_Federation" },
+    { id: "ml-football-crest", category: "footballcrest", name: "Crest of the Mali national football team", path: "national-flags/ml/ml-football-crest.png", design: "The crest of the Fédération Malienne de Football — a shield in the green, gold and red of the national flag, with an outline map of Mali and a black eagle perched on a football, lettered “Fédération Malienne de Football”.", source: "https://en.wikipedia.org/wiki/Malian_Football_Federation" },
   ],
   "MM": [
     { id: "mm-official-national", category: "official", name: "Flag of Myanmar", from: 2010, to: 9999, primary: true, path: "flags/mm.svg", design: "The national flag of Myanmar, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Myanmar" },
@@ -1458,7 +1458,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mr-french", category: "historical", name: "Flag of France", from: 1904, to: 1959, sovereign: "France", path: "national-flags/mr/mr-french.svg", design: "The French Tricolour, flown over Mauritania as part of French West Africa.", source: "https://en.wikipedia.org/wiki/French_West_Africa" },
     { id: "mr-arms", category: "coatofarms", name: "Seal of Mauritania", from: 2018, to: 9999, path: "national-flags/mr/mr-arms.svg", design: "A gold star and crescent between a date palm and an ear of millet, within a ring naming the republic.", source: "https://en.wikipedia.org/wiki/Seal_of_Mauritania" },
     { id: "mr-passport", category: "passport", name: "Passport of Mauritania", path: "national-flags/mr/mr-passport.webp", design: "The cover of the Mauritania passport.", source: "https://gicg.net/passport/mr/" },
-    { id: "mr-football-crest", category: "footballcrest", name: "Crest of the Mauritania national football team", path: "national-flags/mr/mr-football-crest.svg", design: "The crest of the Mauritania national football team.", source: "https://en.wikipedia.org/wiki/Mauritania_national_football_team" },
+    { id: "mr-football-crest", category: "footballcrest", name: "Crest of the Mauritania national football team", path: "national-flags/mr/mr-football-crest.svg", design: "The crest of the Football Federation of the Islamic Republic of Mauritania — a green shield bearing the national flag (a gold crescent and star between red bands) with Arabic lettering for “Mauritania”, “FFRIM” and a gold football.", source: "https://en.wikipedia.org/wiki/Mauritania_national_football_team" },
   ],
   "MS": [
     { id: "ms-official-national", category: "official", name: "Flag of Montserrat", from: 1909, to: 9999, path: "flags/ms.svg", design: "A blue ensign with the Union Flag in the canton and Montserrat's arms — the woman Erin embracing a cross and holding a golden harp — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Montserrat" },
@@ -1571,7 +1571,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ne-french", category: "historical", name: "Flag of France", from: 1922, to: 1959, sovereign: "France", path: "national-flags/ne/ne-french.svg", design: "The French Tricolour, flown over Niger under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
     { id: "ne-arms", category: "coatofarms", name: "Coat of arms of Niger", from: 1960, to: 9999, path: "national-flags/ne/ne-arms.svg", design: "A green shield bearing a sun, a spear and swords, millet and a zebu head, flanked by four flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger" },
     { id: "ne-passport", category: "passport", name: "Passport of Niger", path: "national-flags/ne/ne-passport.webp", design: "The cover of the Niger passport.", source: "https://gicg.net/passport/ne/" },
-    { id: "ne-football-crest", category: "footballcrest", name: "Crest of the Niger national football team", path: "national-flags/ne/ne-football-crest.png", design: "The crest of the Niger national football team.", source: "https://en.wikipedia.org/wiki/Niger_Football_Federation" },
+    { id: "ne-football-crest", category: "footballcrest", name: "Crest of the Niger national football team", path: "national-flags/ne/ne-football-crest.png", design: "The crest of the Fédération Nigérienne de Football — a green circular badge lettered “FENIFOOT”, “Fédération Nigérienne de Football” and “Mena Niger”, with two orange gazelles flanking a football.", source: "https://en.wikipedia.org/wiki/Niger_Football_Federation" },
   ],
   "NG": [
     { id: "ng-official-national", category: "official", name: "Flag of Nigeria", from: 1960, to: 9999, primary: true, path: "flags/ng.svg", design: "The national flag of Nigeria, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Nigeria" },
@@ -1803,7 +1803,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "py-president", category: "standard", name: "Flag of the President of Paraguay", from: 2013, to: 9999, path: "national-flags/py/paraguay-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags" },
     { id: "py-seal", category: "coatofarms", name: "National seal of Paraguay", from: 1842, to: 9999, path: "national-flags/py/paraguay-seal.svg", design: "A yellow five-pointed star within palm and olive branches, ringed by the name of the republic.", source: "https://en.wikipedia.org/wiki/Seal_of_Paraguay" },
     { id: "py-passport", category: "passport", name: "Passport of Paraguay", path: "national-flags/py/py-passport.webp", design: "The cover of the Paraguay passport.", source: "https://gicg.net/passport/py/" },
-    { id: "py-football-crest", category: "footballcrest", name: "Crest of the Paraguay national football team", path: "national-flags/py/py-football-crest.svg", design: "The crest of the Paraguay national football team.", source: "https://en.wikipedia.org/wiki/Paraguay_national_football_team" },
+    { id: "py-football-crest", category: "footballcrest", name: "Crest of the Paraguay national football team", path: "national-flags/py/py-football-crest.svg", design: "The crest of the Asociación Paraguaya de Fútbol — a circular badge lettered “APF” and “Paraguay”, with red-and-blue diagonal stripes from the national flag around a gold star.", source: "https://en.wikipedia.org/wiki/Paraguay_national_football_team" },
   ],
   "QA": [
     { id: "qa-official-national", category: "official", name: "Flag of Qatar", from: 1971, to: 9999, primary: true, path: "flags/qa.svg", design: "The national flag of Qatar, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Qatar" },
@@ -1863,7 +1863,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "rw-president", category: "standard", name: "Presidential standard of Rwanda", from: 2001, to: 9999, path: "national-flags/rw/rw-president.svg", design: "A white field bearing the national emblem — the standard of the President of Rwanda.", source: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
     { id: "rw-arms", category: "coatofarms", name: "Emblem of Rwanda", from: 2001, to: 9999, path: "national-flags/rw/rw-arms.svg", design: "The national emblem, adopted in 2001 in the green, yellow and blue of the flag.", source: "https://en.wikipedia.org/wiki/Emblem_of_Rwanda" },
     { id: "rw-passport", category: "passport", name: "Passport of Rwanda", path: "national-flags/rw/rw-passport.webp", design: "The cover of the Rwanda passport.", source: "https://gicg.net/passport/rw/" },
-    { id: "rw-football-crest", category: "footballcrest", name: "Crest of the Rwanda national football team", path: "national-flags/rw/rw-football-crest.png", design: "The crest of the Rwanda national football team.", source: "https://en.wikipedia.org/wiki/Rwanda_Football_Federation" },
+    { id: "rw-football-crest", category: "footballcrest", name: "Crest of the Rwanda national football team", path: "national-flags/rw/rw-football-crest.png", design: "The crest of the Fédération Rwandaise de Football Association — a shield in the blue, yellow and green of the national flag, lettered “FERWAFA”, with a football.", source: "https://en.wikipedia.org/wiki/Rwanda_Football_Federation" },
   ],
   "SA": [
     { id: "sa-official-national", category: "official", name: "Flag of Saudi Arabia", from: 1973, to: 9999, primary: true, path: "flags/sa.svg", design: "The national flag of Saudi Arabia, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" },
@@ -1906,7 +1906,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sd-president", category: "standard", name: "Presidential standard of Sudan", from: 1970, to: 9999, path: "national-flags/sd/sd-president.svg", design: "The standard of the President of Sudan.", source: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
     { id: "sd-arms", category: "coatofarms", name: "Emblem of Sudan", from: 1985, to: 9999, path: "national-flags/sd/sd-arms.svg", design: "A secretary bird bearing the Mahdi's shield, with scrolls reading “Victory is ours” and “Republic of the Sudan.”", source: "https://en.wikipedia.org/wiki/Emblem_of_Sudan" },
     { id: "sd-passport", category: "passport", name: "Passport of Sudan", path: "national-flags/sd/sd-passport.webp", design: "The cover of the Sudan passport.", source: "https://gicg.net/passport/sd/" },
-    { id: "sd-football-crest", category: "footballcrest", name: "Crest of the Sudan national football team", path: "national-flags/sd/sd-football-crest.png", design: "The crest of the Sudan national football team.", source: "https://en.wikipedia.org/wiki/Sudan_Football_Association" },
+    { id: "sd-football-crest", category: "footballcrest", name: "Crest of the Sudan national football team", path: "national-flags/sd/sd-football-crest.png", design: "The crest of the Sudan Football Association — a shield in the red, white, black and green of the national flag, with a wreathed football and “S.F.A” lettering.", source: "https://en.wikipedia.org/wiki/Sudan_Football_Association" },
   ],
   "SE": [
     { id: "se-official-national", category: "official", name: "Flag of Sweden", from: 1562, to: 9999, primary: true, path: "flags/se.svg", design: "The national flag of Sweden, in the form adopted in 1562.", source: "https://en.wikipedia.org/wiki/Flag_of_Sweden" },
@@ -2055,7 +2055,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tg-german", category: "historical", name: "Flag of the German Empire", from: 1884, to: 1914, sovereign: "the German Empire", path: "national-flags/tg/tg-german.svg", design: "The flag of the German Empire, which held the territory as the colony of Togoland until 1914.", source: "https://en.wikipedia.org/wiki/Togoland" },
     { id: "tg-arms", category: "coatofarms", name: "Coat of arms of Togo", from: 1960, to: 9999, path: "national-flags/tg/tg-arms.svg", design: "Two red lions flanking a golden shield lettered RT, beneath two national flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Togo" },
     { id: "tg-passport", category: "passport", name: "Passport of Togo", path: "national-flags/tg/tg-passport.webp", design: "The cover of the Togo passport.", source: "https://gicg.net/passport/tg/" },
-    { id: "tg-football-crest", category: "footballcrest", name: "Crest of the Togo national football team", path: "national-flags/tg/tg-football-crest.svg", design: "The crest of the Togo national football team.", source: "https://en.wikipedia.org/wiki/Togolese_Football_Federation" },
+    { id: "tg-football-crest", category: "footballcrest", name: "Crest of the Togo national football team", path: "national-flags/tg/tg-football-crest.svg", design: "The crest of the Fédération Togolaise de Football — a shield in the green and yellow bands of the national flag with a red canton bearing a white star, lettered “Fédération Togolaise de Football”, with hands clasping a football.", source: "https://en.wikipedia.org/wiki/Togolese_Football_Federation" },
   ],
   "TH": [
     { id: "th-official-national", category: "official", name: "Flag of Thailand", from: 1917, to: 9999, primary: true, path: "flags/th.svg", design: "The national flag of Thailand, in the form adopted in 1917.", source: "https://en.wikipedia.org/wiki/Flag_of_Thailand" },
@@ -2168,7 +2168,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tz-president", category: "standard", name: "Presidential flag of Tanzania", from: 1964, to: 9999, path: "national-flags/tz/tanzania-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags" },
     { id: "tz-arms", category: "coatofarms", name: "Coat of arms of Tanzania", from: 1964, to: 9999, path: "national-flags/tz/tanzania-arms.svg", design: "A warrior's shield bearing a torch, the flag, a spear and crossed axe and hoe, on Kilimanjaro, supported by a man and a woman holding elephant tusks.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tanzania" },
     { id: "tz-passport", category: "passport", name: "Passport of Tanzania", path: "national-flags/tz/tz-passport.webp", design: "The cover of the Tanzania passport.", source: "https://gicg.net/passport/tz/" },
-    { id: "tz-football-crest", category: "footballcrest", name: "Crest of the Tanzania national football team", path: "national-flags/tz/tz-football-crest.png", design: "The crest of the Tanzania national football team.", source: "https://en.wikipedia.org/wiki/Tanzania_Football_Federation" },
+    { id: "tz-football-crest", category: "footballcrest", name: "Crest of the Tanzania national football team", path: "national-flags/tz/tz-football-crest.png", design: "The crest of the Tanzania Football Federation — a football in the green, gold, black and blue diagonal of the national flag, ringed by “Tanzania Football Federation”, lettered “TFF” and, in Swahili, “Shirikisho la Mpira wa Miguu Tanzania”.", source: "https://en.wikipedia.org/wiki/Tanzania_Football_Federation" },
   ],
   "UA": [
     { id: "ua-official-national", category: "official", name: "Flag of Ukraine", from: 1992, to: 9999, primary: true, path: "flags/ua.svg", design: "The national flag of Ukraine, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Ukraine" },
@@ -2199,7 +2199,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ug-president", category: "standard", name: "Presidential flag of Uganda", from: 1962, to: 9999, path: "national-flags/ug/uganda-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Ugandan_flags" },
     { id: "ug-arms", category: "coatofarms", name: "Coat of arms of Uganda", from: 1962, to: 9999, path: "national-flags/ug/uganda-arms.svg", design: "A shield with waves, a sun and a drum, crossed with two spears, supported by a crested crane and a kob, on a mound above the Nile between coffee and cotton.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uganda" },
     { id: "ug-passport", category: "passport", name: "Passport of Uganda", path: "national-flags/ug/ug-passport.webp", design: "The cover of the Uganda passport.", source: "https://gicg.net/passport/ug/" },
-    { id: "ug-football-crest", category: "footballcrest", name: "Crest of the Uganda national football team", path: "national-flags/ug/ug-football-crest.png", design: "The crest of the Uganda national football team.", source: "https://en.wikipedia.org/wiki/Uganda_national_football_team" },
+    { id: "ug-football-crest", category: "footballcrest", name: "Crest of the Uganda national football team", path: "national-flags/ug/ug-football-crest.png", design: "The crest of the Federation of Uganda Football Associations — a badge lettered “FUFA” and “Since 1924”, with a football wrapped in a black-yellow-red sash from the national flag and five blue stars above.", source: "https://en.wikipedia.org/wiki/Uganda_national_football_team" },
   ],
   "US": [
     { id: "us-official-national", category: "official", name: "Flag of the United States", from: 1960, to: 9999, primary: true, path: "flags/us.svg", design: "The national flag, fifty stars since 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
@@ -2824,6 +2824,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Benin — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Benin" },
     ],
   },
+  "bj-football-crest": {
+    description: "The green, yellow and red repeat Benin's own national flag: green for hope in democracy, yellow for the nation's treasures, and red for the courage of its ancestors — the same three Pan-African colours Ethiopia's flag carries, adopted across the continent in tribute to the one African nation that was never colonised.",
+    sources: [
+      { title: "Flag of Benin — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
+    ],
+  },
   "bm-arms": {
     description: "Granted by Royal Warrant on 4 October 1910 though in use since the 1620s. A red lion — the lion of England, marking Bermuda's tie to Britain — holds a shield showing the wreck of the Sea Venture, the flagship bound for Jamestown that Sir George Somers deliberately ran onto Bermuda's reefs in a 1609 hurricane; its 150 survivors founded the colony, so the shipwreck that stranded them is remembered as the island's origin. The motto Quo Fata Ferunt — 'Whither the Fates Carry Us' — recalls that the settlers reached Bermuda by chance of storm.",
     sources: [
@@ -3207,6 +3213,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
     ],
   },
+  "er-football-crest": {
+    description: "The olive wreath is drawn from Eritrea's own national emblem, adopted in 1993 at independence, whose 30 leaves mark the 30 years of war fought to win it; the emblem's wreath normally encircles a dromedary camel, the beast of burden that carried supplies for the independence movement and stands for endurance and self-reliance.",
+    sources: [
+      { title: "Emblem of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
+    ],
+  },
   "es-arms": {
     description: "The shield is a list of the kingdoms that became Spain: the castle of Castile, the lion of León, the pallets of Aragón, the chains of Navarre, and the pomegranate of Granada in base — added for the last Muslim kingdom to fall, in 1492. At the centre sits the small escutcheon of the House of Bourbon, the reigning dynasty. Flanking the shield are the Pillars of Hercules, the classical name for the rock either side of the Strait of Gibraltar, wrapped in a ribbon reading Plus Ultra — “further beyond” — which inverts the older warning Non plus ultra, nothing further beyond, to claim the Atlantic crossing and the empire past it.",
     sources: [
@@ -3225,6 +3237,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 1996, the emblem is a golden interlaced pentagram radiating rays of light on a blue disc — the same device that sits at the centre of the national flag. The pentagram stands for the unity and equality of the nations, nationalities and peoples of the Federal Democratic Republic of Ethiopia; the radiating light for their shared prosperity and bright future.",
     sources: [
       { title: "Emblem of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Ethiopia" },
+    ],
+  },
+  "et-football-crest": {
+    description: "The green, yellow and red are Ethiopia's own national colours, adopted in 1897 after the country's victory at the Battle of Adwa — red for blood shed in Ethiopia's defence, yellow for peace among its peoples, and green for hope and the land's fertility; because Ethiopia was never colonised, newly independent African states later adopted the same colours in its honour, and they are known across the continent as the Pan-African colours. The gold star on blue, added to the flag in 1996, stands for Ethiopia's bright future and the equality of all Ethiopians, its rays shining equally in every direction.",
+    sources: [
+      { title: "Flag of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
     ],
   },
   "fi-sami": {
@@ -3938,6 +3956,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Mali — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mali" },
     ],
   },
+  "ml-football-crest": {
+    description: "The eagle gives the national team its own nickname, Les Aigles (The Eagles). The green, gold and red repeat Mali's own national flag, adopted at independence in 1961: green for the fertility of the land, gold for purity and mineral wealth, and red for the blood shed in the struggle against French colonial rule.",
+    sources: [
+      { title: "Mali national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Mali_national_football_team" },
+      { title: "Flag of Mali — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
+    ],
+  },
   "mm-seal": {
     description: "The law describing the seal explains each part. At the centre is the map of the country, standing for its territorial shape; on either side of it a sprig of Eugenia with fourteen leaves, a sign of victory — one leaf for each state and region. Flanking those are two Burmese royal lions, chinthe, one facing left and one facing right; the lions signify sovereignty, courage, diligence and the suppression of all dangers great and small with equal effort, and their placement guarding either side of the map is itself the meaning. The ribbon below carries the name of the state, split so that \"Union\" sits under the left lion, \"Republic\" under the map and \"Myanmar\" under the right.",
     sources: [
@@ -3966,6 +3991,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A gold star and crescent — the emblems of Islam — stand between a date palm and an ear of millet, the tree and the grain of the country, on the green of the flag. The ring around them names the Islamic Republic of Mauritania in Arabic and French.",
     sources: [
       { title: "Seal of Mauritania — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Mauritania" },
+    ],
+  },
+  "mr-football-crest": {
+    description: "The green field and the gold crescent and star are both symbols of Islam, carried on Mauritania's own national flag since 1959; the red bands were added in a 2017 referendum (passed with over 86% support) to commemorate the blood shed by Mauritanians who fought for independence from France.",
+    sources: [
+      { title: "Flag of Mauritania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
     ],
   },
   "ms-arms": {
@@ -4064,6 +4095,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "On the green shield four gold devices name the country's peoples and livelihoods: a sun; a spear flanked by two Tuareg swords (takoba); three heads of millet, the staple grain; and the head of a zebu, for the herding life. Four national flags stand behind. The motto is Fraternité, Travail, Progrès — “Fraternity, Work, Progress.”",
     sources: [
       { title: "Coat of arms of Niger — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger" },
+    ],
+  },
+  "ne-football-crest": {
+    description: "The gazelles are Dama gazelles, native to Niger's Sahel, whose Hausa name Ménas (or Meyna) gives the national team its own nickname, the Ménas — a national symbol read as standing for grace and resilience in the country's arid landscape.",
+    sources: [
+      { title: "Niger national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Niger_national_football_team" },
     ],
   },
   "ng-arms": {
@@ -4289,6 +4326,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Paraguay" },
     ],
   },
+  "py-football-crest": {
+    description: "The gold star is the Estrella de Mayo (\"May Star\") of Paraguay's own coat of arms, commemorating the country's May 1811 independence; the red and blue repeat the outer bands of the national flag.",
+    sources: [
+      { title: "Coat of arms of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Paraguay" },
+    ],
+  },
   "qa-emblem": {
     description: "The Amiri Diwan's own interpretation reads the emblem as the trinity of sand, sea and sky — the three elements Qatar's history is bound to. The dhow is the pearling fleet, the industry that drove the country's economic and social growth and largely made the state; the two palm trees and the island are the land; and the two crossed scimitars are Qatar's \"might as an Arab country\" and its standing as a safe haven for its people, a device it shares with Saudi Arabia, as it shares the palm. The present version, all in the maroon of the flag on white, was unveiled at the National Museum of Qatar on 15 September 2022, keeping every charge of the emblem it replaced.",
     sources: [
@@ -4343,6 +4386,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Rwanda" },
     ],
   },
+  "rw-football-crest": {
+    description: "The blue, yellow and green repeat Rwanda's own national flag, adopted in 2001 to mark a break from the flag flown during the 1994 genocide: blue for happiness and peace, yellow for economic development, and green for hope of prosperity.",
+    sources: [
+      { title: "Flag of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    ],
+  },
   "sa-emblem": {
     description: "The two crossed swords are the Kingdom of Hejaz and the Sultanate of Nejd and its dependencies, the two states Ibn Saud united in 1926 — so the emblem records the union the country is made of; they are also read as strength, stamina and sacrifice, and as justice. The date palm above them stands for growth, vitality and prosperity, and for the kingdom's own assets. The arrangement carries the reading that prosperity can be had only through justice: the palm rests on the swords, not the other way round.",
     sources: [
@@ -4373,6 +4422,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 1985, the emblem is built on a secretary bird — chosen as a distinctively Sudanese, indigenous counterpart to the Eagle of Saladin and Hawk of Quraish borne by other Arab states. On its breast is the shield of Muhammad Ahmad, the 19th-century Mahdi who briefly ruled Sudan. The upper scroll reads an-Naṣr lanā, “Victory is ours,” and the lower names the Republic of the Sudan.",
     sources: [
       { title: "Emblem of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sudan" },
+    ],
+  },
+  "sd-football-crest": {
+    description: "The four colours repeat Sudan's own national flag and are the Pan-Arab colours: red for the country's struggles and its martyrs' sacrifice, white for the people and optimism (and for the anti-colonial White Flag League of 1924), black for Sudan itself (Arabic for \"land of the black people\") and for the 19th-century Mahdist Revolution's flag, and green for Islam and the land's prosperity.",
+    sources: [
+      { title: "Flag of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
     ],
   },
   "se-sami": {
@@ -4527,6 +4582,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Togo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Togo" },
     ],
   },
+  "tg-football-crest": {
+    description: "The design repeats Togo's own national flag in full: the five green-and-yellow stripes for the country's five regions (green also for forests, agriculture and hope; yellow for natural resources, faith and maturity), the red canton for the blood shed in the independence struggle, and the white star for peace, intelligence and light.",
+    sources: [
+      { title: "Flag of Togo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
+    ],
+  },
   "th-emblem": {
     description: "The emblem is the Phra Khrut Pha — \"Garuda as the vehicle\" — the mount of the god Vishnu (Narayana) in Hindu and Buddhist tradition. Thai kingship drew on Indian doctrine in which the king is an incarnation of Narayana, so the god's mount became the king's own device: the Garuda stands for the sovereign himself rather than for the land or the people. In Buddhist tradition the emphasis falls on the Garuda's deeds, which portray him as righteous and merciful. Earlier kings used four great royal seals and, from 1873, a European-style coat of arms; Vajiravudh (Rama VI) abandoned that in 1910 in favour of the Garuda alone, and the Act on the Seals of State of 1911 established it as the emblem of the kingdom. It appears on the letterhead of almost every Thai government document and marks state property.",
     sources: [
@@ -4633,6 +4694,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tanzania" },
     ],
   },
+  "tz-football-crest": {
+    description: "The colours repeat Tanzania's own national flag: green for the country's vegetation and agriculture, black for its Swahili people, blue for the Indian Ocean and its lakes and rivers, and gold for its mineral wealth.",
+    sources: [
+      { title: "Flag of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
+    ],
+  },
   "ua-arms": {
     description: "The tryzub is the oldest continuously used symbol on Ukrainian territory: it appears on the seals of the Rurik dynasty and was stamped on the gold and silver coins of Volodymyr the Great (980–1015), who passed it to his sons as a dynastic device, and on the bricks of the Church of the Tithes in Kyiv. Its original meaning is not settled — historians have read it as a falcon in flight, an arched bow, an anchor, or the Holy Trinity — and it was not treated as a NATIONAL symbol until 1917, when the historian Mykhailo Hrushevsky proposed it over rival candidates such as a crossbow or a Cossack with a musket. Vasyl Krychevsky's drawing was adopted by the Ukrainian People's Republic in February 1918, and the small coat of arms was readopted on 19 February 1992; the constitution provides for a great coat of arms that has still not been adopted.",
     sources: [
@@ -4649,6 +4716,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield and the two spears behind it are the willingness of Ugandans to defend their country. The three charges on the shield are the waves of Lake Victoria and Lake Albert at the top, the sun in the centre for the country's many days of brilliant sunshine, and a traditional Ugandan drum below. The supporters are the crested crane, the national bird, and the Ugandan kob for the country's wildlife. The shield stands on a green mound of fertile land above a representation of the Nile, with the two main cash crops, coffee and cotton, on either side; the motto reads \"For God and My Country\". The drum's reading is contested: before Milton Obote's rule it stood for royalty and the authority of Uganda's kings, and the now-common explanation dates from after the 1966 crisis in which Obote attacked the Kabaka of Buganda.",
     sources: [
       { title: "Coat of arms of Uganda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uganda" },
+    ],
+  },
+  "ug-football-crest": {
+    description: "The black, yellow and red sash repeats the bands of Uganda's own national flag, adopted at independence in 1962.",
+    sources: [
+      { title: "Flag of Uganda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
     ],
   },
   "us-arms": {
