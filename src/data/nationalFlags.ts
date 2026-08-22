@@ -6741,6 +6741,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Ukrainian Trident (Tryzub) — Ukraine.ua", url: "https://ukraine.ua/stories/trident-tryzub/" },
     ],
   },
+  "ua-ground": {
+    description: "The Ground Forces' flag is a raspberry field bearing the branch's emblem — a golden trident (the tryzub, Ukraine's national symbol) above crossed rifles within a laurel wreath. The raspberry field recalls the banners of the Cossack hosts of the 16th to 18th centuries, whose colours ranged through crimson and raspberry shades, deliberately tying the modern mechanised army to that historic Cossack military tradition.",
+    sources: [
+      { title: "Wikipedia — List of Ukrainian flags", url: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+      { title: "Wikipedia — Ukrainian Ground Forces", url: "https://en.wikipedia.org/wiki/Ukrainian_Ground_Forces" },
+    ],
+  },
+  "ua-naval-ensign": {
+    description: "The naval ensign of Ukraine, adopted in 2006, is a white field bearing a straight blue cross reaching the edges, with the national flag in the canton. Its design readopts, with small changes, the ensign flown by Ukraine's short-lived navy in 1918, whose own cross-and-canton layout was likely inspired by the German Imperial Navy's ensign of that era.",
+    sources: [
+      { title: "Flags of the World — Ukraine: Naval Flags", url: "https://www.crwflags.com/fotw/flags/ua~.html" },
+      { title: "Wikipedia — List of Ukrainian flags", url: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    ],
+  },
   "ua-president": {
     description: "The gold tryzub (trident) is Ukraine's national coat of arms, tracing back over a thousand years to the seal of the Rurikid princes of Kievan Rus'; adopted as the modern state's small coat of arms in 1992, it stands today as a symbol of Ukrainian sovereignty and national identity.",
     sources: [
@@ -7107,6 +7121,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The African fish eagle is Zambia's own national bird and crowns its national coat of arms — adapted from the 1927 arms of the British protectorate of Northern Rhodesia at independence in 1964 — where it is read as a symbol of the country's freedom, strength and aspiration to rise above adversity.",
     sources: [
       { title: "Coat of arms of Zambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia" },
+    ],
+  },
+  "zw-army": {
+    description: "The Zimbabwe National Army's flag, flown since independence in 1980, is red bearing a yellow-fimbriated green shield charged with the Zimbabwe Bird, above a scroll naming the force. The bird reproduces the soapstone sculptures that once stood atop the walls of Great Zimbabwe, the medieval Shona capital built between the 12th and 15th centuries; read as a stylised bateleur eagle, a bird of protective and prophetic significance in Shona tradition, it represents an ancestral, pre-colonial source of Zimbabwean identity and appears in the same colour on the national flag itself.",
+    sources: [
+      { title: "Flags of the World — Zimbabwe National Army", url: "https://www.crwflags.com/fotw/flags/zw%5Earmy.html" },
+      { title: "Wikipedia — Zimbabwe Bird", url: "https://en.wikipedia.org/wiki/Zimbabwe_Bird" },
     ],
   },
   "zw-air-force": {
