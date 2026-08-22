@@ -5131,6 +5131,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Libya — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
     ],
   },
+  "ma-naval-jack": {
+    description: "Morocco's naval jack is a red, swallow-tailed flag bordered in yellow and bearing a green, yellow-bordered pentagram — the Seal of Solomon — at its centre, the same emblem added to the national flag in 1915. The pentagram is a symbol with roots stretching back to ancient Mesopotamia and was long used across the Islamic world as a protective and identifying device; green marks it as the colour of Islam, and the swallow-tailed shape distinguishes the jack from Morocco's plain rectangular national flag and ensign.",
+    sources: [
+      { title: "Wikipedia — List of Moroccan flags", url: "https://en.wikipedia.org/wiki/List_of_Moroccan_flags" },
+      { title: "Wikipedia — Seal of Solomon", url: "https://en.wikipedia.org/wiki/Seal_of_Solomon" },
+    ],
+  },
   "ma-royal": {
     description: "A green field — the colour of Islam and, in Morocco's royal usage, of the sultanate — carries the national flag in the canton, itself red bearing a green pentagram known as the Seal of Solomon: introduced by Sultan Yusef in 1915, the five-pointed star is read as standing for the five pillars of Islam, giving the standard's canton the same Islamic symbolism as the national flag it displays.",
     sources: [
@@ -5417,6 +5424,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Mexico national football team logo — 1000 Logos", url: "https://1000logos.net/seleccion-mexicana-de-futbol-logo/" },
     ],
   },
+  "my-army": {
+    description: "The Malaysian Army's flag is a red field bearing the army's crest, which combines two traditional bladed weapons drawn from the country's two halves: the keris, the wavy-bladed dagger long associated with the historic Malay warriors of Peninsular Malaysia, and the duku ilang, a weapon tied to the warrior traditions of the indigenous peoples of Malaysian Borneo. Together the two blades represent the army's roots across both regions that make up modern Malaysia.",
+    sources: [
+      { title: "Wikipedia — Malaysian Army", url: "https://en.wikipedia.org/wiki/Malaysian_Army" },
+      { title: "Wikipedia — List of Malaysian flags", url: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
+    ],
+  },
   "my-agong": {
     description: "A yellow field — the colour of Malay royalty, standing for the sovereignty of the country's elected head of state — bears the Jata Negara, Malaysia's coat of arms, wreathed by two sheaves of paddy (rice) for abundance and prosperity; it is the standard of the Yang di-Pertuan Agong, the king elected every five years by and from the hereditary rulers of Malaysia's nine Malay states.",
     sources: [
@@ -5512,6 +5526,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gazelles are Dama gazelles, native to Niger's Sahel, whose Hausa name Ménas (or Meyna) gives the national team its own nickname, the Ménas — a national symbol read as standing for grace and resilience in the country's arid landscape.",
     sources: [
       { title: "Niger national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Niger_national_football_team" },
+    ],
+  },
+  "ng-air-force": {
+    description: "The air force ensign carries the national flag in the canton and the Nigerian Air Force's roundel — concentric rings of green, white and green — in the same colours as the national flag. Green stands for Nigeria's forests and agricultural wealth and white for peace and unity, the same meanings the national flag carries, marking Nigerian military aircraft with the same identity flown on the ground.",
+    sources: [
+      { title: "Flags of the World — Nigerian Air Force", url: "https://www.crwflags.com/fotw/flags/ng%5Eaf.html" },
+      { title: "Wikipedia — Flag of Nigeria", url: "https://en.wikipedia.org/wiki/Flag_of_Nigeria" },
     ],
   },
   "ng-president": {
@@ -5725,6 +5746,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
     ],
   },
+  "pe-navy": {
+    description: "The Peruvian Navy's flag bears the naval emblem: the shield of the national coat of arms set before two crossed silver anchors, with the golden sun of the coat of arms above and a ribbon reading 'Marina de Guerra del Perú' below. The anchors, replacing the crossed flags of the ordinary coat of arms, are the traditional maritime symbol marking the emblem as the navy's own version of the national arms.",
+    sources: [
+      { title: "Flags of the World — Peruvian Navy", url: "https://www.crwflags.com/fotw/flags/pe~m.html" },
+      { title: "Wikipedia — Coat of arms of Peru", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
+    ],
+  },
+  "pe-air-force": {
+    description: "The Peruvian Air Force's flag bears the service's emblem: a golden pair of wings representing the air force itself, alongside a silver upright sword for the army and crossed silver anchors for the navy, joined beneath a golden sun that stands over all three branches of Peru's armed forces. The emblem's ring also carries a stylised condor, a bird long significant in Andean and Peruvian heraldry, on a red ribbon lettered 'Fuerza Aérea del Perú'.",
+    sources: [
+      { title: "Flags of the World — Peruvian Air Force", url: "https://www.crwflags.com/fotw/flags/pe%5Ea.html" },
+      { title: "Wikipedia — Peruvian Air Force", url: "https://en.wikipedia.org/wiki/Peruvian_Air_Force" },
+    ],
+  },
   "pe-naval-jack": {
     description: "A red field — read as standing for the blood of Peru's independence fighters — bears a white square charged with the national coat of arms: a vicuña for the country's fauna and wildlife, a cinchona tree for its flora and its use as a source of quinine, and a cornucopia of gold coins for mineral wealth. The jack, flown by Peruvian warships, breaks from the vertical triband used by the country's other flags to give the arms a square field of their own.",
     sources: [
@@ -5831,6 +5866,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue and red of the goal frame repeat the colours of the Philippine flag: blue for peace, truth and justice, and red for patriotism and valour. 1907 is the year the federation traces its founding to, and PFF is its own initials, the Philippine Football Federation.",
     sources: [
       { title: "Flag of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Philippines" },
+    ],
+  },
+  "pk-army": {
+    description: "The Pakistan Army's flag is the national flag — green with a white hoist-side stripe — defaced with the army's badge: crossed swords behind the national crescent and star. The crescent traditionally stands for progress and the star for light and knowledge, the same meaning they carry on the national flag; the crossed swords added over them mark the flag as belonging to the army specifically, signalling the force that defends those ideals.",
+    sources: [
+      { title: "Flags of the World — Pakistan Armed Forces", url: "https://www.crwflags.com/fotw/flags/pk%5E.html" },
+      { title: "Wikipedia — Flag of Pakistan", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
     ],
   },
   "pk-president": {
@@ -5984,6 +6026,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Qatar Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Qatar_Football_Association" },
     ],
   },
+  "ro-armed-forces": {
+    description: "The battle flag of the Romanian Defence Staff bears the state coat of arms, adopted in 1992, at the centre of the national tricolour. The arms are led by a golden eagle bearing a cross, an emblem long associated with Wallachia's founding Basarab dynasty and read as a symbol of courage, power and the nation's soaring aspiration, surrounded by shields representing Romania's other historic provinces.",
+    sources: [
+      { title: "Wikipedia — Coat of arms of Romania", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
+      { title: "Wikipedia — List of Romanian flags", url: "https://en.wikipedia.org/wiki/List_of_Romanian_flags" },
+    ],
+  },
   "ro-land-forces": {
     description: "The Land Forces' own emblem bears a gold eagle holding a cross in its beak and a handful of lightning bolts in its claws — the thunderbolts of Zeus, a classical symbol of martial power — beneath a crown and flanked by two stars, resting on a laurel branch for victory and an oak branch for strength and endurance, joined by a scroll bearing the branch's name.",
     sources: [
@@ -6102,6 +6151,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue, yellow and green repeat Rwanda's own national flag, adopted in 2001 to mark a break from the flag flown during the 1994 genocide: blue for happiness and peace, yellow for economic development, and green for hope of prosperity.",
     sources: [
       { title: "Flag of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    ],
+  },
+  "sa-naval-ensign": {
+    description: "The naval ensign is the national flag charged with the navy's version of Saudi Arabia's national emblem: two crossed swords with a date palm rising between and above the blades, adopted in 1950. The palm stands for the kingdom's vitality and prosperity — its people, history and resources — while the crossed swords beneath it represent the strength that defends that prosperity, and are also read as recalling the Sultanate of Nejd and the Kingdom of Hejaz, the two territories united under Ibn Saud in 1926 to form Saudi Arabia.",
+    sources: [
+      { title: "Wikipedia — Emblem of Saudi Arabia", url: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
+      { title: "Wikipedia — List of Saudi Arabian flags", url: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
     ],
   },
   "sa-king": {
