@@ -3558,6 +3558,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Blue Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Blue_Ensign" },
     ],
   },
+  "gb-royal-standard": {
+    description: "The Royal Standard quarters the historic royal arms: three gold lions for England (repeated in the first and fourth quarters), a red lion rampant for Scotland, and a gold harp for Ireland — Wales is not represented, its status as a Principality instead marked separately by the title Prince of Wales.",
+    sources: [
+      { title: "Royal Standard — royal.uk", url: "https://www.royal.uk/encyclopedia/royal-standard?page=1" },
+    ],
+  },
   "gb-arms": {
     description: "The shield is a record of which crowns came together and when: the three lions of England in two quarters, the rampant lion of Scotland, and the harp of Ireland — quartered after James VI of Scotland inherited the English and Irish thrones in 1603, precisely to show the union of the crowns in one device. The lion supporter is England’s and the unicorn Scotland’s, the unicorn chained because a free unicorn was held to be dangerous. Wales appears nowhere on the shield, because it was already annexed to the English crown before the arms were composed, and is represented instead by separate royal badges. On the compartment below grow a thistle, a Tudor rose and a shamrock for Scotland, England and Ireland.",
     sources: [
@@ -3693,6 +3699,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The six stars represent Equatorial Guinea's mainland territory and its islands, and the tree is a silk-cotton tree marking the site where the first treaty was signed between Portugal and a local ruler — both taken directly from the national coat of arms.",
     sources: [
       { title: "Coat of arms of Equatorial Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea" },
+    ],
+  },
+  "gr-naval-jack": {
+    description: "The plain blue field with a white cross reaching to the edges continues a design first decreed in 1822 during the Greek War of Independence, when the cross stood for Orthodox Christianity — one of the unifying symbols of the revolution — and was described as representing \"the wisdom of God, freedom and country\".",
+    sources: [
+      { title: "Cross for the War of Independence 1821–29 — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_for_the_War_of_Independence_1821%E2%80%9329" },
     ],
   },
   "gr-arms": {
@@ -5432,6 +5444,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The eagle represents the United States; the globe, showing the Western Hemisphere, signifies the Marine Corps' worldwide service; and the anchor — part of the emblem since the Corps' 1775 founding — marks its naval tradition and amphibious role within the Department of the Navy.",
     sources: [
       { title: "Eagle, Globe, and Anchor — Wikipedia", url: "https://en.wikipedia.org/wiki/Eagle,_Globe,_and_Anchor" },
+    ],
+  },
+  "us-president": {
+    description: "The presidential coat of arms shows a bald eagle holding an olive branch of peace in one talon and arrows of war in the other, its beak bearing the motto \"E Pluribus Unum\" (\"Out of many, one\"); the ring of fifty stars — completed in 1960 after Hawaii's admission — represents the fifty states.",
+    sources: [
+      { title: "Flag of the president of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_president_of_the_United_States" },
     ],
   },
   "us-arms": {
