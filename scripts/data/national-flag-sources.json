@@ -6773,7 +6773,16 @@
           "design": "The naval jack.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cypriot_flags",
           "sha256": "4eecbc4a1117e6e3a085fd7bd0d2d720e6879039cb73c25ee876d99a1937be3d",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A blue field bears the national coat of arms: a white dove carrying an olive branch — echoing the biblical dove of Noah's Ark and the ancient Greek reading of the olive branch as a sign of peace — above the founding year 1960, framed by an olive wreath standing for peace between the island's Greek and Turkish Cypriot communities; the jack has marked ships of the Cyprus Navy since its establishment in 1964.",
+            "sources": [
+              {
+                "title": "Coat of arms of Cyprus — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus"
+              }
+            ]
+          }
         },
         {
           "id": "cy-arms",
@@ -18546,7 +18555,16 @@
           "design": "A red field bordered white with a white Maltese cross.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Malta",
           "sha256": "fe44aa93249a34d4e69f2f76affb580823845d17eb4e851ea5260d3e5b879281",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A red field bordered in white bears the white eight-pointed Maltese Cross — also called the Cross of St John, worn by the Knights Hospitaller who ruled Malta from 1530 to 1798 — whose eight points are traditionally read as the eight Beatitudes, or the eight obligations of a knight (to live in truth, have faith, repent one's sins, show humility, love justice, be merciful, be sincere, and endure persecution); this is the same flag the Knights of St John flew over Malta before 1798, now carried by Maltese-registered merchant shipping.",
+            "sources": [
+              {
+                "title": "The Maltese Cross: Its origin and importance to Malta — Malta Uncovered",
+                "url": "https://www.maltauncovered.com/malta-history/maltese-cross/"
+              }
+            ]
+          }
         },
         {
           "id": "mt-naval-jack",
