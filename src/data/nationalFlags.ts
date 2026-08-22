@@ -3467,6 +3467,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
     ],
   },
+  "fi-war-flag": {
+    description: "The swallow-tailed shape and the national coat of arms — a crowned lion wielding a sword and trampling a sabre — mark this as Finland's war flag and naval ensign, distinguishing military and state use from the plain civil flag.",
+    sources: [
+      { title: "Coat of arms of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
+    ],
+  },
+  "fi-president": {
+    description: "The Cross of Liberty badge in the canton marks the President of Finland as Grand Master of the Order of the Cross of Liberty, one of Finland's three state orders; otherwise the flag is identical to the swallow-tailed state and war flag.",
+    sources: [
+      { title: "List of flags of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
+    ],
+  },
   "fi-state": {
     description: "Finland's civil flag is the plain blue Nordic cross on white; the state flag adds the national coat of arms — a crowned lion wielding a sword, trampling a sabre, on a red field — for use by state authorities and the military.",
     sources: [
@@ -4745,6 +4757,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted on 15 October 1975. The bright yellow field stands for the sunshine of Niue and the warmth the Niuean people feel towards New Zealand; the Union Flag marks the protection the United Kingdom granted in 1900 at the petition of Niue's kings and chiefs. On it four small yellow stars form the Southern Cross, for the association with New Zealand, and a larger star on a blue disc stands for the deep sea around the self-governing island.",
     sources: [
       { title: "Flag of Niue — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Niue" },
+    ],
+  },
+  "nz-civil-ensign": {
+    description: "The four stars are the same Southern Cross constellation shown on the national flag, positioned to match the real stars Acrux, Mimosa, Gacrux and Delta Crucis as seen from New Zealand; the ensign was adopted in 1901 for merchant vessels and can also be flown on land for occasions of Māori significance.",
+    sources: [
+      { title: "New Zealand Red Ensign — nzhistory.govt.nz", url: "https://nzhistory.govt.nz/media/photo/new-zealand-red-ensign" },
     ],
   },
   "nz-maori": {
