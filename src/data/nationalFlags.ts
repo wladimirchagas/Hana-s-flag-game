@@ -2845,6 +2845,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Åland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land" },
     ],
   },
+  "az-land-forces": {
+    description: "The Azerbaijani Land Forces' flag mirrors the national tricolour of blue, red and green, with the service's emblem at the centre and the green stripe charged in yellow with the words 'Azərbaycan Quru Qoşunları' (Azerbaijani Land Forces). It carries the same colour symbolism as the national flag: blue for the country's Turkic heritage, red for progress, and green for Islam, the same faith, ethnicity and modernity the tricolour was designed to express when it was first adopted in 1918.",
+    sources: [
+      { title: "Flags of the World — Azerbaijan: Armed Forces", url: "https://www.fotw.info/flags/az%5E.html" },
+      { title: "Wikipedia — Flag of Azerbaijan", url: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
+    ],
+  },
   "az-president": {
     description: "The standard bears the presidential coat of arms: a shield in the colours of the national flag charged with an eight-pointed star, and at its centre a flame — a reference to Azerbaijan's traditional epithet 'Land of Fires', drawn from the natural gas seeps and fire temples associated with the country. The eight-pointed star is also read as standing for the branches of the Turkic peoples, or for the eight letters of \"Azərbaycan\" in its old orthography.",
     sources: [
@@ -3180,6 +3187,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A red field bears the vertical rushnyk pattern (the traditional Belarusian folk embroidery also seen on the national flag) at the hoist and the national emblem at the fly; the red recalls the blood shed by Belarusian defenders through history — from the 1410 Battle of Grunwald to the Red Army's Second World War campaigns — while the rushnyk pattern stands for the cultural continuity and spiritual unity of the Belarusian people.",
     sources: [
       { title: "List of Belarusian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
+    ],
+  },
+  "by-land-forces": {
+    description: "The flag of the Belarusian Land Forces is a plain red field bearing the full-colour emblem of the ground forces at its centre, adopted in 2005. Red in Belarusian military symbolism commemorates the blood shed by the country's defenders through its history, recalling both the 1410 Battle of Grunwald, in which Lithuanian-Belarusian forces helped defeat the Teutonic Knights, and the Red Army's fight on Belarusian soil during the Second World War.",
+    sources: [
+      { title: "Wikipedia — Belarusian Ground Forces", url: "https://en.wikipedia.org/wiki/Belarusian_Ground_Forces" },
+      { title: "Wikipedia — List of Belarusian flags", url: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
     ],
   },
   "by-air-force": {
@@ -3773,6 +3787,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A black field, standing for the earth, bears a golden crenellated wall on which stand the three blue lions of Estonia's national coat of arms — a device descending from the arms of Denmark's King Valdemar II, who conquered northern Estonia in 1219, and traditionally read as three separate acts of courage: in the ancient fight for freedom, in the Harjumaa uprisings, and in the modern struggle for independence — with a white double-edged sword standing upright behind the wall, adopted in 2005 as the flag of the Maavägi, Estonia's ground forces.",
     sources: [
       { title: "Coat of arms of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
+    ],
+  },
+  "ee-air-force": {
+    description: "The Estonian Air Force's flag carries the national flag and greater coat of arms beneath the gold legend 'Eesti kodu kaitseks' ('For the defence of the Estonian home') on its obverse, with a plain white reverse bearing the service's badge beneath the word 'Õhuvägi' ('Air Force'). Estonian military aircraft themselves carry a triangular roundel in the national colours — blue for the sky, black for the soil, and white for snow and the bark of the birch — a marking used since the air force's founding and readopted after Estonia regained independence in 1991.",
+    sources: [
+      { title: "Flags of the World — Estonia: Air Force Flag and Aircraft Marking", url: "https://www.crwflags.com/fotw/flags/ee%5Eaf.html" },
+      { title: "Wikipedia — Flag of Estonia", url: "https://en.wikipedia.org/wiki/Flag_of_Estonia" },
     ],
   },
   "ee-naval-jack": {

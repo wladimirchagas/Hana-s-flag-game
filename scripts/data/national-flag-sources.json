@@ -1770,7 +1770,20 @@
           "design": "The land forces' flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags",
           "sha256": "adff7d544b826a2373275747f8dce48720735c571358859937635639aae617d2",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Azerbaijani Land Forces' flag mirrors the national tricolour of blue, red and green, with the service's emblem at the centre and the green stripe charged in yellow with the words 'Azərbaycan Quru Qoşunları' (Azerbaijani Land Forces). It carries the same colour symbolism as the national flag: blue for the country's Turkic heritage, red for progress, and green for Islam, the same faith, ethnicity and modernity the tricolour was designed to express when it was first adopted in 1918.",
+            "sources": [
+              {
+                "title": "Flags of the World — Azerbaijan: Armed Forces",
+                "url": "https://www.fotw.info/flags/az%5E.html"
+              },
+              {
+                "title": "Wikipedia — Flag of Azerbaijan",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan"
+              }
+            ]
+          }
         },
         {
           "id": "az-emblem",
@@ -4302,7 +4315,20 @@
           "design": "The land forces' flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
           "sha256": "ad6398334b69514c4f9eb54dfc7a68508181ee3ecdc727722bdcf12d861b2e34",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Belarusian Land Forces is a plain red field bearing the full-colour emblem of the ground forces at its centre, adopted in 2005. Red in Belarusian military symbolism commemorates the blood shed by the country's defenders through its history, recalling both the 1410 Battle of Grunwald, in which Lithuanian-Belarusian forces helped defeat the Teutonic Knights, and the Red Army's fight on Belarusian soil during the Second World War.",
+            "sources": [
+              {
+                "title": "Wikipedia — Belarusian Ground Forces",
+                "url": "https://en.wikipedia.org/wiki/Belarusian_Ground_Forces"
+              },
+              {
+                "title": "Wikipedia — List of Belarusian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "by-air-force",
@@ -8098,7 +8124,20 @@
           "design": "The air force's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
           "sha256": "d1923dbc9e50ffb0af2e15916eba3f2174dd2e9a1819b1b74f16832bf1b73468",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Estonian Air Force's flag carries the national flag and greater coat of arms beneath the gold legend 'Eesti kodu kaitseks' ('For the defence of the Estonian home') on its obverse, with a plain white reverse bearing the service's badge beneath the word 'Õhuvägi' ('Air Force'). Estonian military aircraft themselves carry a triangular roundel in the national colours — blue for the sky, black for the soil, and white for snow and the bark of the birch — a marking used since the air force's founding and readopted after Estonia regained independence in 1991.",
+            "sources": [
+              {
+                "title": "Flags of the World — Estonia: Air Force Flag and Aircraft Marking",
+                "url": "https://www.crwflags.com/fotw/flags/ee%5Eaf.html"
+              },
+              {
+                "title": "Wikipedia — Flag of Estonia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Estonia"
+              }
+            ]
+          }
         },
         {
           "id": "ee-naval-ensign",
