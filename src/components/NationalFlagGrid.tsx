@@ -233,6 +233,7 @@ function FlagGroups({
                     <span className="flag-grid__thumb">
                       {flag.path ? (
                         <img
+                          key={`${baseUrl}${flag.path}`}
                           src={`${baseUrl}${flag.path}`}
                           alt=""
                           loading="lazy"

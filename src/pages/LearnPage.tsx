@@ -1737,6 +1737,7 @@ export default function LearnPage() {
                         }
                       >
                         <img
+                          key={displayFlagUrl}
                           src={displayFlagUrl}
                           alt=""
                           className="learn-fs__flag-img"
@@ -1873,6 +1874,7 @@ export default function LearnPage() {
                           aria-label={`Enlarge ${subdivisionCountry.name} flag`}
                         >
                           <img
+                            key={subdivisionCountry.flagSvg}
                             src={subdivisionCountry.flagSvg}
                             alt=""
                             className="learn-fs__flag-img"
@@ -2032,6 +2034,7 @@ export default function LearnPage() {
                             aria-label={`Enlarge ${selectedSubdivision.name} flag`}
                           >
                             <img
+                              key={sdUrl}
                               src={sdUrl}
                               alt=""
                               className="learn-fs__flag-img"
@@ -2189,6 +2192,7 @@ export default function LearnPage() {
                           aria-label={`Enlarge ${cap.name} flag`}
                         >
                           <img
+                            key={flagUrl}
                             src={flagUrl}
                             alt=""
                             className="learn-fs__flag-img"
@@ -2242,6 +2246,7 @@ export default function LearnPage() {
           onClick={() => setZoomedFlagUrl(null)}
         >
           <img
+            key={zoomedFlagUrl}
             src={zoomedFlagUrl}
             alt=""
             className="flag-zoom__img"

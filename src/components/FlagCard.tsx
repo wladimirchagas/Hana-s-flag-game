@@ -44,6 +44,7 @@ export function FlagCard({ country, phase }: Props) {
         aria-label="Enlarge flag"
       >
         <img
+          key={country.flagSvg}
           src={country.flagSvg}
           alt=""
           className="flag-image"
@@ -66,6 +67,7 @@ export function FlagCard({ country, phase }: Props) {
           onClick={() => setZoomed(false)}
         >
           <img
+            key={country.flagSvg}
             src={country.flagSvg}
             alt=""
             className="flag-zoom__img"

@@ -2259,6 +2259,75 @@ polity/transition pairs resolved against the wrong era's ruler.
    directly — a fresh load hides this bug), then click a colony and confirm the "Ruled by" row and
    the flag match the NEW era. 1938 → 1945 → Cambodia must say France.
 
+## A swappable image must be a NEW element — key every `<img>` by its own `src` — hard rule, do not override without approval
+
+**Every `<img>` this app renders MUST carry a `key` derived from its own `src`. When what an image
+slot shows changes — the grid's "Show" dropdown switching between national flags, coats of arms,
+passports and football crests; the panel following a new selection; a card being reused for another
+country — a FRESH element must mount. Re-pointing a live `<img>` at a different URL is forbidden,
+because a live `<img>` carries two kinds of state React does not reset: the picture already painted
+in it, and whatever our own `onError` handler imperatively did to it.**
+
+### Why this rule exists
+
+Reported by the owner with a screenshot (2026-08-22): the Learn-map grid's "Show" dropdown read
+**National flags** and the heading read **"Flags of this era (195)"** — the 195 UN members, so React
+had re-rendered the correct list, with the correct groups (Caribbean 13) and the capital sub-labels
+that only the flag view shows — yet nearly every TILE still displayed the **football-association
+crest** from the view the user had just left. Australia showed the Football Australia logo under
+"Capital: Canberra". Exactly one card, the one the user had tapped, showed its national flag.
+
+Nothing was wrong with the data or the render logic: every `src` attribute in the DOM was the right
+flag. The defect was the ELEMENT. React reused each live `<img>` and re-pointed it, and a reused
+`<img>` keeps:
+
+1. **The previous picture.** A browser goes on painting the last decoded frame until the new `src`
+   loads — and WebKit (the report came from an iPad) does not re-run the lazy load for an
+   `<img loading="lazy">` that already loaded once and is off-screen when its `src` changes. The old
+   symbol can therefore stay on screen indefinitely. The one correct tile was simply the one in
+   view at the moment of the switch.
+2. **Imperative error state.** Our `onError` handlers mutate the DOM node directly —
+   `img.hidden = true`, `style.display = "none"`, `dataset.localRetry` / `dataset.fellBack`, and
+   revealing the "—" placeholder sibling. React neither manages nor resets any of that, so **one
+   image that failed once permanently blanks that slot for every DIFFERENT image shown there
+   afterwards.** This half is deterministic and was reproduced in a browser: a tile whose crest
+   failed to load stayed blank after switching back to National flags — a flag not shown despite
+   being selected, which is the bug as the user experienced it.
+
+### Rules
+
+1. **Every `<img>` in `src/**` carries `key={<the same expression as its src>}`.** A `?? fallback`
+   tail is fine on both sides. This costs nothing when the image does not change (same key, same
+   element, same reuse as before) and guarantees a fresh element, a fresh lazy-load and no inherited
+   `hidden`/`display`/`dataset` state the moment it does.
+2. **Key the whole thumbnail group when a sibling also carries imperative state.** `FlagGrid`'s tile
+   renders the image AND its "—" placeholder inside `<Fragment key={url}>`, because the error handler
+   reveals that sibling; keying the image alone would leave a stale "—" over a perfectly good flag.
+   Any future slot with the same shape does likewise.
+3. **Never "fix" a stale or blank image by resetting the DOM harder** — clearing `img.hidden` on
+   render, re-assigning `src` in an effect, adding a `useEffect` that pokes `style.display`, or
+   bumping a counter into the URL (`?v=2`, a cache-buster). Those are band-aids over element reuse
+   and they defeat caching; mount a new element instead.
+4. **Never remove `loading="lazy"` to work around this.** Lazy loading is not the bug — reusing a
+   loaded element is. A freshly mounted lazy image is observed fresh and loads correctly.
+5. **A blank moment beats a wrong picture.** A newly mounted image shows nothing until it loads,
+   rather than the previous symbol. That is the correct trade in this repo, and the same discipline
+   as "a missing flag always beats a wrong one": a stale crest under a flag heading is a *wrong*
+   flag, and the user cannot tell it is wrong by looking.
+6. **Verify in the running app** (the mandatory visual-verification rule applies): open the Learn
+   world map, set **Show → Football associations**, scroll well down the grid, switch back to
+   **National flags**, and confirm EVERY tile in view shows its national flag — not the crest it
+   showed a moment ago — and that a tile whose image failed once still shows the next view's image.
+
+### Enforcement
+
+`scripts/check-image-element-keys.mjs` (`npm run ui:check-image-keys`, in `npm run flags:check` and
+the `check-proportions` CI job) parses every `.tsx` under `src/` and **fails the build** when an
+`<img>` has no `key`, has a `key` that is not its own `src` expression, or has no dynamic `src` at
+all — and separately when `FlagGrid`'s `<Fragment key={url}>` thumbnail wrapper is removed. It reads
+the files as text, so it needs no build step and no TypeScript loader. Never weaken it, never add an
+exemption list, and never delete a key to make a diff smaller: the key IS the fix.
+
 ## The map's highlight and the detail panel must always be the same entity — hard rule, do not override without approval
 
 **Whatever the Learn-mode panel and flag grid describe is what the map highlights. A map component

@@ -49,6 +49,7 @@ function FlagColumn({
               {item.flagUrl && (
                 <div className="results-flags__flag-wrap">
                   <img
+                    key={item.flagUrl}
                     src={item.flagUrl}
                     alt=""
                     className="results-flags__flag"

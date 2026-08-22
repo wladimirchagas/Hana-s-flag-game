@@ -242,6 +242,7 @@ function FlagCell({
       <span className="hierarchy-table__thumb">
         {flagPath ? (
           <img
+            key={flagPath}
             src={flagPath}
             alt=""
             loading="lazy"
@@ -384,7 +385,7 @@ export function SubdivisionHierarchyTable({
           >
             <span className="hierarchy-table__thumb">
               {countryFlagUrl ? (
-                <img src={countryFlagUrl} alt="" loading="lazy" draggable={false} className="hierarchy-table__thumb-img" />
+                <img key={countryFlagUrl} src={countryFlagUrl} alt="" loading="lazy" draggable={false} className="hierarchy-table__thumb-img" />
               ) : (
                 <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
               )}

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import {
   continentOrder,
   type FlagListEntry,
@@ -664,8 +664,17 @@ export function FlagGrid({
                   >
                     <span className="flag-grid__thumb">
                       {url ? (
-                        <>
+                        // Keyed by the image URL so a change of "Show" (flag →
+                        // coat of arms → passport → crest) MOUNTS A FRESH <img>
+                        // rather than re-pointing the live one — see the
+                        // "swappable image" hard rule in CLAUDE.md. Without this
+                        // the browser can keep painting the previous symbol, and
+                        // the imperative error state below (img.hidden, the retry
+                        // flags) leaks onto the next image, blanking a flag the
+                        // user explicitly selected.
+                        <Fragment key={url}>
                           <img
+                            key={url}
                             src={url}
                             alt=""
                             loading="lazy"
@@ -713,7 +722,7 @@ export function FlagGrid({
                           <span className="flag-grid__thumb-empty" aria-hidden="true" hidden>
                             —
                           </span>
-                        </>
+                        </Fragment>
                       ) : (
                         <span className="flag-grid__thumb-empty" aria-hidden="true">
                           —

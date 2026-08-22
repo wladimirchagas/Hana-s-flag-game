@@ -78,6 +78,7 @@ function SubdivisionFlagCard({
         aria-label={`Enlarge ${typeLabel} flag`}
       >
         <img
+          key={flagUrl}
           src={flagUrl}
           alt=""
           className="flag-image"
@@ -95,6 +96,7 @@ function SubdivisionFlagCard({
           onClick={() => setZoomed(false)}
         >
           <img
+            key={flagUrl}
             src={flagUrl}
             alt=""
             className="flag-zoom__img"

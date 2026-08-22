@@ -18,6 +18,7 @@ export function MascotAvatar({
   if (isPhotoAvatar(avatarId)) {
     return (
       <img
+        key={avatarId}
         className="avatar avatar--photo"
         src={avatarId}
         alt={alt}

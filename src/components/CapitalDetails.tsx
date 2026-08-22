@@ -114,6 +114,7 @@ export function CapitalDetails({
               aria-label={`Enlarge ${capitalName} flag`}
             >
               <img
+                key={flagUrl}
                 src={flagUrl}
                 alt=""
                 className="learn-fs__flag-img"

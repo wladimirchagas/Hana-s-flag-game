@@ -107,6 +107,7 @@ export function FlagUnlockModal({
           aria-label={`Enlarge ${country.name} flag`}
         >
           <img
+            key={country.flagSvg}
             src={country.flagSvg}
             alt={`Flag of ${country.name}`}
             className="flag-unlock__flag"
@@ -160,6 +161,7 @@ export function FlagUnlockModal({
           onClick={() => setZoomed(false)}
         >
           <img
+            key={country.flagSvg}
             src={country.flagSvg}
             alt={`Flag of ${country.name}`}
             className="flag-zoom__img"
