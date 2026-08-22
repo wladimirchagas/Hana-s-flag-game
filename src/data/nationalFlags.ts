@@ -3337,6 +3337,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Cook Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
     ],
   },
+  "cl-air-force": {
+    description: "The Air Force's own coat of arms bears a silver Andean condor — a symbol of strength, independence and vigilance drawn from the bird most associated with the Andes — framed by golden olive branches beneath a white star, on a dark blue shield: the same condor, star and blue that appear in the national flag and the wider Chilean coat of arms, adapted to mark the service that defends the country's skies.",
+    sources: [
+      { title: "Chilean Air Force — Flags of the World", url: "https://www.crwflags.com/fotw/flags/cl%5Eaf.html" },
+    ],
+  },
   "cl-naval-jack": {
     description: "A blue square bearing a white five-pointed star, matching the canton of the national flag — the \"Estrella Solitaria\" (Lone Star); the blue stands for the sky and the Pacific Ocean, and the star for a guide to progress and honour, drawing on the star's significance to the region's indigenous Mapuche people.",
     sources: [
@@ -6778,6 +6784,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The African fish eagle is Zambia's own national bird and crowns its national coat of arms — adapted from the 1927 arms of the British protectorate of Northern Rhodesia at independence in 1964 — where it is read as a symbol of the country's freedom, strength and aspiration to rise above adversity.",
     sources: [
       { title: "Coat of arms of Zambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia" },
+    ],
+  },
+  "zw-air-force": {
+    description: "Adopted in 1980 when the Rhodesian Air Force became the Air Force of Zimbabwe at independence, the ensign's roundel bears a Bateleur eagle in flight — a bird native to the African savanna — replacing the colonial-era Rhodesian insignia (a lion and tusk within a green-and-white roundel) with a distinctively African emblem for the newly independent nation's air force.",
+    sources: [
+      { title: "Air Force of Zimbabwe — Wikipedia", url: "https://en.wikipedia.org/wiki/Air_Force_of_Zimbabwe" },
     ],
   },
   "zw-president": {
