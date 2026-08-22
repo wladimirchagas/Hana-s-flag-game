@@ -66,6 +66,7 @@ function DisputedFlagCard({
         aria-label={`Enlarge ${typeLabel} flag`}
       >
         <img
+          key={flagUrl}
           src={flagUrl}
           alt=""
           className="flag-image"
@@ -82,7 +83,7 @@ function DisputedFlagCard({
           aria-label={`Enlarged ${typeLabel} flag`}
           onClick={() => setZoomed(false)}
         >
-          <img src={flagUrl} alt="" className="flag-zoom__img" draggable={false} />
+          <img key={flagUrl} src={flagUrl} alt="" className="flag-zoom__img" draggable={false} />
           <button
             type="button"
             className="flag-zoom__close"

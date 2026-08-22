@@ -82,6 +82,7 @@ export function CityFlagGrid({
             >
               <span className="flag-grid__thumb">
                 <img
+                  key={`${baseUrl}${entry.flagPath}`}
                   src={`${baseUrl}${entry.flagPath}`}
                   alt=""
                   loading="lazy"

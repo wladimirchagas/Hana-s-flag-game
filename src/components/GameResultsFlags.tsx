@@ -69,6 +69,7 @@ function FlagColumn({
                 <li key={c.code} className="results-flags__item">
                   <div className="results-flags__flag-wrap">
                     <img
+                      key={c.flagSvg}
                       src={c.flagSvg}
                       alt=""
                       className="results-flags__flag"

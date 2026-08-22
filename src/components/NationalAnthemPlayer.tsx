@@ -757,7 +757,7 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
         {/* Header */}
         <div className="anthem-modal__header">
           {flagUrl && (
-            <img src={flagUrl} alt={`${countryName} flag`} className="anthem-modal__flag" draggable={false} />
+            <img key={flagUrl} src={flagUrl} alt={`${countryName} flag`} className="anthem-modal__flag" draggable={false} />
           )}
           <div className="anthem-modal__meta">
             <p className="anthem-modal__country">{countryName}</p>

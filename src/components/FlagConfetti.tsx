@@ -73,6 +73,7 @@ export function FlagConfetti() {
 function FlagTile({ tile }: { tile: Tile }) {
   return (
     <img
+      key={`https://flagcdn.com/${tile.code}.svg`}
       className="confetti__tile"
       src={`https://flagcdn.com/${tile.code}.svg`}
       alt=""

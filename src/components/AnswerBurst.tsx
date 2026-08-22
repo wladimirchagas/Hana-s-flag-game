@@ -60,6 +60,7 @@ export function AnswerBurst({ nonce, wasCorrect, active, correctCountry }: Props
           <p className="burst__reveal-label">The correct answer was…</p>
           {correctCountry.flagSvg && (
             <img
+              key={correctCountry.flagSvg}
               className="burst__reveal-flag"
               src={correctCountry.flagSvg}
               alt={`Flag of ${correctCountry.name}`}

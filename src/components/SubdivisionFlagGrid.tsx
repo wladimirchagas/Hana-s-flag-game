@@ -182,6 +182,7 @@ export function SubdivisionFlagGrid({
           <span className="flag-grid__thumb">
             {flagUrl ? (
               <img
+                key={flagUrl}
                 src={flagUrl}
                 alt=""
                 loading="lazy"
@@ -239,6 +240,7 @@ export function SubdivisionFlagGrid({
                     <span className="flag-grid__thumb">
                       {flagUrl ? (
                         <img
+                          key={flagUrl}
                           src={flagUrl}
                           alt=""
                           loading="lazy"

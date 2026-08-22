@@ -126,6 +126,7 @@ export function SubdivisionHierarchyChart({
             <span className="hierarchy__thumb">
               {countryFlagUrl ? (
                 <img
+                  key={countryFlagUrl}
                   src={countryFlagUrl}
                   alt=""
                   loading="lazy"
@@ -170,6 +171,7 @@ export function SubdivisionHierarchyChart({
                         <span className="hierarchy__thumb">
                           {flagPath ? (
                             <img
+                              key={`${baseUrl}${flagPath}`}
                               src={`${baseUrl}${flagPath}`}
                               alt=""
                               loading="lazy"
@@ -213,6 +215,7 @@ export function SubdivisionHierarchyChart({
                       <span className="hierarchy__group-flag-thumb">
                         {gf.flag.path ? (
                           <img
+                            key={`${baseUrl}${gf.flag.path}`}
                             src={`${baseUrl}${gf.flag.path}`}
                             alt=""
                             loading="lazy"
@@ -255,6 +258,7 @@ export function SubdivisionHierarchyChart({
                         <span className="hierarchy__thumb">
                           {subFlag ? (
                             <img
+                              key={subFlag}
                               src={subFlag}
                               alt=""
                               loading="lazy"
@@ -309,6 +313,7 @@ export function SubdivisionHierarchyChart({
                                   <span className="hierarchy__thumb">
                                     {leaf.flagPath ? (
                                       <img
+                                        key={`${baseUrl}${leaf.flagPath}`}
                                         src={`${baseUrl}${leaf.flagPath}`}
                                         alt=""
                                         loading="lazy"

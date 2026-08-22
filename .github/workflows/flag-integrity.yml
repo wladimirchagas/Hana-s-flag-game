@@ -88,6 +88,13 @@ on:
       # polity covers still reads as land rather than ocean (the "Greece looked like
       # an island" bug). A change here can break the coastline without touching data.
       - "src/components/HistoricalMap.tsx"
+      # Every <img> the app renders must be keyed by its own src, so switching
+      # what an image slot shows mounts a FRESH element instead of re-pointing a
+      # live one (which keeps painting the previous picture and inherits the
+      # imperative onError state that blanks a tile).
+      - "scripts/check-image-element-keys.mjs"
+      - "src/components/**"
+      - "src/pages/**"
 
 jobs:
   check-proportions:
@@ -120,6 +127,9 @@ jobs:
       # site at the default ratio.
       - name: Verify the flag aspect-ratio table covers every bundled flag
         run: node scripts/build-flag-aspect-ratios.mjs --check
+
+      - name: Verify every <img> is keyed by its src (no stale/blanked images)
+        run: node scripts/check-image-element-keys.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs

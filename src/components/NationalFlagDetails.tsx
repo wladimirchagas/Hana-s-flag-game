@@ -134,6 +134,7 @@ export function NationalFlagDetails({
             aria-label={`Enlarge ${flag.name}`}
           >
             <img
+              key={url ?? "no-image"}
               src={url ?? undefined}
               alt=""
               className="learn-fs__flag-img"
