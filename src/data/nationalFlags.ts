@@ -3458,6 +3458,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
     ],
   },
+  "cu-president": {
+    description: "The presidential flag bears Cuba's coat of arms: a pointed shield showing the Sierra Maestra mountains beneath a rising sun, a golden key across the Straits of Florida marking Cuba's position as gateway to the Gulf of Mexico, and a royal palm, framed by oak and laurel branches bound in the national colours and topped by a red Phrygian cap on a fasces — the cap and bundled rods together a classical emblem of liberty — adopted in this form after the 1959 revolution.",
+    sources: [
+      { title: "Coat of arms of Cuba — Grokipedia", url: "https://grokipedia.com/page/Coat_of_arms_of_Cuba" },
+    ],
+  },
+  "cu-president-1929": {
+    description: "A square light-blue flag bore the same national coat of arms — the Sierra Maestra under a rising sun, the golden key across the Straits of Florida, and the royal palm — with a white star in each corner, one specification succeeding an earlier 1909 design and itself formalised in 1929 to denote the President's rank; it remained in use until the 1959 revolution replaced it with the current standard.",
+    sources: [
+      { title: "The Presidential Flags of Cuba", url: "https://www.pdcnet.org/85257D7A006284F7/file/B99A5B4149F0C49585257DA9005DBFBC/$FILE/raven_2010_0017_0000_0086_0095.pdf" },
+    ],
+  },
   "cu-arms": {
     description: "Designed by Miguel Teurbe Tolón in 1849, the shield is read in three fields. The upper field is a sea between two capes — the Yucatán peninsula and Florida — with a golden key hanging between them beneath a rising sun: Cuba is the key to the Gulf of Mexico, the island commanding the strait, and the sun is the dawn of the new state. The lower left field carries the blue and white stripes of the flag, for the island's division into departments under Spanish rule; the lower right shows a royal palm, the national tree, standing for the country itself. Behind the shield the fasces topped with a red Phrygian cap is the classical emblem of authority and of liberty, and the oak branch and laurel wreath at the sides are strength and glory.",
     sources: [
@@ -4527,6 +4539,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Japan national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Japan_national_football_team" },
       { title: "Yatagarasu — Wikipedia", url: "https://en.wikipedia.org/wiki/Yatagarasu" },
+    ],
+  },
+  "ke-defence": {
+    description: "A tricolour of red, light blue and navy blue — one colour for each service, Army, Air Force and Navy — bears the national flag in the canton and, in the fly, the joint emblem: two black rifles crossed in saltire over a silver anchor, with a golden eagle above, uniting a symbol of each branch (rifles for the Army, anchor for the Navy, eagle for air power) under one Kenya Defence Forces badge.",
+    sources: [
+      { title: "Kenya Defence Forces (Joint Service flag) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ke%5E.html" },
     ],
   },
   "ke-president": {
