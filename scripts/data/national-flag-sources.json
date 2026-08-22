@@ -3416,7 +3416,16 @@
           "design": "A dark green field with the national coat of arms in the centre.",
           "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
           "sha256": "ddfa7920165a59c22a2c80a2cfe5a8de6e173b9b183007e3cac51c090e02df20",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The coat of arms at the centre shows a five-pointed star arrangement for the Southern Cross constellation, a wreath of coffee and tobacco branches for Brazil's historic agricultural wealth, and a ring of stars for the country's states and Federal District.",
+            "sources": [
+              {
+                "title": "Coat of arms of Brazil — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil"
+              }
+            ]
+          }
         },
         {
           "id": "br-vice-president",
@@ -4357,7 +4366,16 @@
           "design": "A blue field bearing the crest of the arms of Canada — a crowned lion holding a maple leaf.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "6aee12f877b2ae951443dcd543f54d66a693cebbda323d5710a5cc72b5d5a895",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The crest is taken from the Royal Coat of Arms of Canada: a crowned gold lion — a traditional emblem of the British Crown denoting strength and sovereignty — holding a red maple leaf, the symbol used for all Canadians since the early 19th century.",
+            "sources": [
+              {
+                "title": "Flag of the governor general of Canada — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_governor_general_of_Canada"
+              }
+            ]
+          }
         },
         {
           "id": "ca-arms",
@@ -6433,7 +6451,16 @@
           "design": "A white-bordered square bearing the greater coat of arms and the motto Pravda vítězí.",
           "source": "https://en.wikipedia.org/wiki/List_of_Czech_flags",
           "sha256": "230555ddf84b71783b2454ee929b8f28c3a2c4bf7ee4aab0d2560c6922874326",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The motto \"Pravda vítězí\" (\"Truth prevails\") was adopted by Czechoslovakia's first president, Tomáš Garrigue Masaryk, in 1918, tracing back to the teachings of the medieval reformer Jan Hus, and remains the motto of the Czech presidency today.",
+            "sources": [
+              {
+                "title": "Truth prevails — Wikidata",
+                "url": "https://www.wikidata.org/wiki/Q3274908"
+              }
+            ]
+          }
         },
         {
           "id": "cz-armed-forces",
@@ -7971,7 +7998,16 @@
           "design": "A square quartered with the arms of Castile, León, Aragón and Navarre.",
           "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
           "sha256": "3fbc55ac26c0f307a7a4a1c13ba6bcca40d3668c17b050979e0ece8ff957681a",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The four quarters are the historic arms of the medieval kingdoms whose union formed Spain: a gold tower for Castile, a red lion for León, four red bars for Aragon, and gold chains for Navarre.",
+            "sources": [
+              {
+                "title": "History of the coat of arms of Spain — Fascinating Spain",
+                "url": "https://www.fascinatingspain.com/articulo/spanish-culture/history-of-the-coat-of-arms-of-spain/20200722101903070410.html"
+              }
+            ]
+          }
         },
         {
           "id": "es-yacht",
@@ -15484,7 +15520,16 @@
           "design": "A red field bearing the Vytis, the mounted knight of the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania",
           "sha256": "8a04223a9e8c27b8c2e32de3dbd695cbc6dfbf16916309eac8d9b2ce268b53fc",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Vytis — a white armoured knight on a white horse, sword raised — is Lithuania's national coat of arms, one of Europe's oldest, tracing back to the seal of Grand Duke Algirdas in 1366; it traditionally represents the ruler's readiness to defend and pursue enemies of the land.",
+            "sources": [
+              {
+                "title": "Coat of arms of Lithuania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lithuania"
+              }
+            ]
+          }
         },
         {
           "id": "lt-air-force",
@@ -19221,7 +19266,16 @@
           "design": "An orange field quartered by a blue cross, bearing the royal arms with a lion in each quarter.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands",
           "sha256": "34901f316a7672c4cc899eeb949ea71e37c83f0c883d2e5b39fd5e0713a6b59e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The blue cross of Nassau divides the flag into quarters bearing the bugle horn of the Principality of Orange, referencing the House of Orange-Nassau; at its centre the royal arms carry a lion holding a sword (the will to defend liberty) and a bundle of arrows for the seven provinces of the old Dutch Republic, beneath the motto \"Je maintiendrai\" (\"I shall maintain\").",
+            "sources": [
+              {
+                "title": "Coat of arms of the Netherlands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Netherlands"
+              }
+            ]
+          }
         },
         {
           "id": "nl-navy",
@@ -20709,7 +20763,16 @@
           "design": "The eight-rayed golden sun and three stars of the national flag on an azure field.",
           "source": "https://en.wikipedia.org/wiki/List_of_Philippine_flags",
           "sha256": "80a7a20403a52a203bd00c067fd7e192877e9915112b1ee21829f61422ed90db",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The sun and three stars are taken from the national flag: the sun's eight rays stand for the eight provinces that rose against Spanish rule in 1896, and the three stars represent the Philippines' three principal island groups — Luzon, the Visayas and Mindanao.",
+            "sources": [
+              {
+                "title": "Three Stars And A Sun: What Do They Mean? — ChoosePhilippines",
+                "url": "https://www.choosephilippines.com/do/history-and-culture/3114/three-stars-and-sun-what-do-they-mean/"
+              }
+            ]
+          }
         },
         {
           "id": "ph-afp",
