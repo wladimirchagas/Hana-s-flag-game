@@ -3923,7 +3923,16 @@
           "design": "The flag of the Botswana Defence Force, formed in 1977.",
           "source": "https://en.wikipedia.org/wiki/Botswana_Defence_Force",
           "sha256": "6b223e916891cd6f08d068d689f19de837b1f3eded1421ff2dedbb30de2bce5a",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The upper light-blue band represents the traditional military uniform and the lower band the bush environment soldiers operate in; the red band stands for the blood shed and to be shed in defence of the nation; the two white stripes flanking it represent peace and the Defence Force's effort to contain and prevent bloodshed through deterrence; and the central badge, with the letters BDF, stands for the whole nation — its people, infrastructure and land — that the force, formed in 1977, exists to defend.",
+            "sources": [
+              {
+                "title": "Botswana Defence Force — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Botswana_Defence_Force"
+              }
+            ]
+          }
         },
         {
           "id": "bw-president",
@@ -6979,7 +6988,16 @@
           "design": "The state flag charged with the royal coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Danish_flags",
           "sha256": "6ea2167c9160fe69dc6e12933701c871ead93d619d756a6e7a56dfce0f2f3ff4",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The state flag is charged with the royal coat of arms: three blue crowned lions on a gold field, surrounded by nine red hearts — officially called søblade (\"lake leaves\", a stylised water-lily pad) rather than hearts — an emblem recorded since the great seal of Canute VI around the 1190s and used ever since to mark the legitimacy and sovereignty of the Danish crown.",
+            "sources": [
+              {
+                "title": "Coat of arms of Denmark — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark"
+              }
+            ]
+          }
         },
         {
           "id": "dk-regent",
@@ -8186,7 +8204,16 @@
           "design": "A crimson square bearing the arms of the sovereign.",
           "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
           "sha256": "1a038d09d3521a3c74d8f79d631e3fbc473231f36c320db04f10f13c12c6faf1",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The crimson square is the traditional colour of the Castilian and Spanish monarchy, and bears the sovereign's personal coat of arms at its centre — the quartered arms of the historic kingdoms of Castile, León, Aragon and Navarre, with the pomegranate of Granada at the base — surmounted by the royal crown; it is flown to mark the King's presence at official residences, events and units under royal patronage.",
+            "sources": [
+              {
+                "title": "Royal Standard of Spain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Royal_Standard_of_Spain"
+              }
+            ]
+          }
         },
         {
           "id": "es-arms",

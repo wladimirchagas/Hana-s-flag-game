@@ -3030,6 +3030,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Bhutan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
     ],
   },
+  "bw-bdf": {
+    description: "The upper light-blue band represents the traditional military uniform and the lower band the bush environment soldiers operate in; the red band stands for the blood shed and to be shed in defence of the nation; the two white stripes flanking it represent peace and the Defence Force's effort to contain and prevent bloodshed through deterrence; and the central badge, with the letters BDF, stands for the whole nation — its people, infrastructure and land — that the force, formed in 1977, exists to defend.",
+    sources: [
+      { title: "Botswana Defence Force — Wikipedia", url: "https://en.wikipedia.org/wiki/Botswana_Defence_Force" },
+    ],
+  },
   "bw-president": {
     description: "The coat of arms shows two zebras — their black-and-white stripes read as a symbol of racial equality — holding a sorghum stalk (a staple crop) and an elephant tusk (for wildlife); three cogwheels represent industrial progress, and three blue waves stand for water, echoing Botswana's national motto \"Pula\" (\"rain\").",
     sources: [
@@ -3417,6 +3423,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Djibouti — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
     ],
   },
+  "dk-royal": {
+    description: "The state flag is charged with the royal coat of arms: three blue crowned lions on a gold field, surrounded by nine red hearts — officially called søblade (\"lake leaves\", a stylised water-lily pad) rather than hearts — an emblem recorded since the great seal of Canute VI around the 1190s and used ever since to mark the legitimacy and sovereignty of the Danish crown.",
+    sources: [
+      { title: "Coat of arms of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark" },
+    ],
+  },
   "dk-state": {
     description: "Denmark's Dannebrog is flown in swallow-tailed form by the state, the monarchy and the military, distinguishing official use from the plain rectangular civil flag flown by ordinary citizens — a Scandinavian convention shared with Norway and Sweden.",
     sources: [
@@ -3517,6 +3529,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The four quarters are the historic arms of the medieval kingdoms whose union formed Spain: a gold tower for Castile, a red lion for León, four red bars for Aragon, and gold chains for Navarre.",
     sources: [
       { title: "History of the coat of arms of Spain — Fascinating Spain", url: "https://www.fascinatingspain.com/articulo/spanish-culture/history-of-the-coat-of-arms-of-spain/20200722101903070410.html" },
+    ],
+  },
+  "es-royal": {
+    description: "The crimson square is the traditional colour of the Castilian and Spanish monarchy, and bears the sovereign's personal coat of arms at its centre — the quartered arms of the historic kingdoms of Castile, León, Aragon and Navarre, with the pomegranate of Granada at the base — surmounted by the royal crown; it is flown to mark the King's presence at official residences, events and units under royal patronage.",
+    sources: [
+      { title: "Royal Standard of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Standard_of_Spain" },
     ],
   },
   "es-civil": {
