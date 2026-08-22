@@ -1887,7 +1887,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sb-uk", category: "historical", name: "Flag of the United Kingdom", from: 1893, to: 1978, sovereign: "the United Kingdom", path: "national-flags/sb/sb-uk.svg", design: "The Union Flag, flown while the islands were the British Solomon Islands Protectorate.", source: "https://en.wikipedia.org/wiki/British_Solomon_Islands" },
     { id: "sb-arms", category: "coatofarms", name: "Coat of arms of Solomon Islands", from: 1978, to: 9999, path: "national-flags/sb/sb-arms.svg", design: "A quartered shield of a frigate bird, a sea eagle, a turtle and weapons, held by a crocodile and a shark.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Solomon_Islands" },
     { id: "sb-passport", category: "passport", name: "Passport of the Solomon Islands", path: "national-flags/sb/sb-passport.webp", design: "The cover of the the Solomon Islands passport.", source: "https://gicg.net/passport/sb/" },
-    { id: "sb-football-crest", category: "footballcrest", name: "Crest of the Solomon Islands national football team", path: "national-flags/sb/sb-football-crest.svg", design: "The crest of the Solomon Islands national football team.", source: "https://en.wikipedia.org/wiki/Solomon_Islands_Football_Federation" },
+    { id: "sb-football-crest", category: "footballcrest", name: "Crest of the Solomon Islands national football team", path: "national-flags/sb/sb-football-crest.svg", design: "A stylised black \"S\"-shaped ribbon in blue, yellow and green stripes wrapped around a football, with five white stars and \"Solomon Islands Football Federation, Founded 1979\" text.", source: "https://en.wikipedia.org/wiki/Solomon_Islands_Football_Federation" },
   ],
   "SC": [
     { id: "sc-official-national", category: "official", name: "Flag of Seychelles", from: 1996, to: 9999, primary: true, path: "flags/sc.svg", design: "The national flag, adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Seychelles" },
@@ -1895,7 +1895,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sc-uk", category: "historical", name: "Flag of the United Kingdom", from: 1814, to: 1976, sovereign: "the United Kingdom", path: "national-flags/sc/sc-uk.svg", design: "The Union Flag, flown while Seychelles was a British colony, from 1814 until independence.", source: "https://en.wikipedia.org/wiki/British_Seychelles" },
     { id: "sc-arms", category: "coatofarms", name: "Coat of arms of Seychelles", from: 1976, to: 9999, path: "national-flags/sc/sc-arms.svg", design: "A giant tortoise before a coco-de-mer palm and a ship, with a tropicbird crest and two sailfish supporters.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
     { id: "sc-passport", category: "passport", name: "Passport of Seychelles", path: "national-flags/sc/sc-passport.webp", design: "The cover of the Seychelles passport.", source: "https://gicg.net/passport/sc/" },
-    { id: "sc-football-crest", category: "footballcrest", name: "Crest of the Seychelles national football team", path: "national-flags/sc/sc-football-crest.png", design: "The crest of the Seychelles national football team.", source: "https://en.wikipedia.org/wiki/Seychelles_Football_Federation" },
+    { id: "sc-football-crest", category: "footballcrest", name: "Crest of the Seychelles national football team", path: "national-flags/sc/sc-football-crest.png", design: "A shield reading \"SEYCHELLES\" and \"FOOTBALL FEDERATION\", with a white tropicbird in flight over palm-covered islands and a football on the water.", source: "https://en.wikipedia.org/wiki/Seychelles_Football_Federation" },
   ],
   "SD": [
     { id: "sd-official-national", category: "official", name: "Flag of Sudan", from: 1970, to: 9999, primary: true, path: "flags/sd.svg", design: "The national flag of Sudan, adopted in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
@@ -1933,7 +1933,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sg-president", category: "standard", name: "Presidential standard of Singapore", from: 1960, to: 9999, path: "national-flags/sg/singapore-president.svg", design: "A red field with a white crescent and five stars.", source: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
     { id: "sg-arms", category: "coatofarms", name: "Coat of arms of Singapore", from: 1959, to: 9999, path: "national-flags/sg/singapore-arms.svg", design: "A red shield with a white crescent and five stars, supported by a lion and a tiger, over a banner reading Majulah Singapura.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore" },
     { id: "sg-passport", category: "passport", name: "Passport of Singapore", path: "national-flags/sg/sg-passport.webp", design: "The cover of the Singapore passport.", source: "https://gicg.net/passport/sg/" },
-    { id: "sg-football-crest", category: "footballcrest", name: "Crest of the Singapore national football team", path: "national-flags/sg/sg-football-crest.svg", design: "The crest of the Singapore national football team.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Singapore" },
+    { id: "sg-football-crest", category: "footballcrest", name: "Crest of the Singapore national football team", path: "national-flags/sg/sg-football-crest.svg", design: "A blue circular badge reading \"FOOTBALL ASSOCIATION\" and \"SINGAPORE\", with the letters \"FAS\" merging into a lion's head, and \"Founded 1892\" beneath.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Singapore" },
   ],
   "SH": [
     { id: "sh-official-national", category: "official", name: "Flag of Saint Helena", from: 1984, to: 9999, path: "flags/sh.svg", design: "A blue ensign with the Union Flag in the canton and Saint Helena's arms — a wirebird above a three-masted ship and cliffs — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Helena" },
@@ -1967,7 +1967,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sm-official-national", category: "official", name: "Flag of San Marino", from: 1862, to: 9999, primary: true, path: "flags/sm.svg", design: "The national flag, in use since 1862.", source: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
     { id: "sm-arms", category: "coatofarms", name: "Coat of arms of San Marino", from: 1862, to: 9999, path: "national-flags/sm/sm-arms.svg", design: "Three feathered towers on three peaks beneath a crown, in a wreath, over the word LIBERTAS.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_San_Marino" },
     { id: "sm-passport", category: "passport", name: "Passport of San Marino", path: "national-flags/sm/sm-passport.webp", design: "The cover of the San Marino passport.", source: "https://gicg.net/passport/sm/" },
-    { id: "sm-football-crest", category: "footballcrest", name: "Crest of the San Marino national football team", path: "national-flags/sm/sm-football-crest.png", design: "The crest of the San Marino national football team.", source: "https://en.wikipedia.org/wiki/San_Marino_national_football_team" },
+    { id: "sm-football-crest", category: "footballcrest", name: "Crest of the San Marino national football team", path: "national-flags/sm/sm-football-crest.png", design: "A shield reading \"SAN MARINO\", showing three blue towers on a hillside, with a small gold emblem between the two rear towers.", source: "https://en.wikipedia.org/wiki/San_Marino_national_football_team" },
   ],
   "SN": [
     { id: "sn-official-national", category: "official", name: "Flag of Senegal", from: 1960, to: 9999, primary: true, path: "flags/sn.svg", design: "The national flag of Senegal, adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Senegal" },
@@ -1992,7 +1992,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sr-president", category: "standard", name: "Flag of the President of Suriname", from: 1975, to: 9999, path: "national-flags/sr/suriname-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Surinamese_flags" },
     { id: "sr-arms", category: "coatofarms", name: "Coat of arms of Suriname", from: 1975, to: 9999, path: "national-flags/sr/suriname-arms.svg", design: "A shield of a sailing ship and a royal palm with a diamond and a green star, held by two indigenous figures, over the motto Justitia, Pietas, Fides.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
     { id: "sr-passport", category: "passport", name: "Passport of Suriname", path: "national-flags/sr/sr-passport.webp", design: "The cover of the Suriname passport.", source: "https://gicg.net/passport/sr/" },
-    { id: "sr-football-crest", category: "footballcrest", name: "Crest of the Suriname national football team", path: "national-flags/sr/sr-football-crest.png", design: "The crest of the Suriname national football team.", source: "https://en.wikipedia.org/wiki/Surinamese_Football_Association" },
+    { id: "sr-football-crest", category: "footballcrest", name: "Crest of the Suriname national football team", path: "national-flags/sr/sr-football-crest.png", design: "A green shield reading \"SURINAAMSE VOETBAL BOND\", with white \"SVB\" letters framing a football, above a red band bearing a yellow star.", source: "https://en.wikipedia.org/wiki/Surinamese_Football_Association" },
   ],
   "SS": [
     { id: "ss-official-national", category: "official", name: "Flag of South Sudan", from: 2011, to: 9999, primary: true, path: "flags/ss.svg", design: "The national flag, adopted in 2005 and kept at independence in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
@@ -2006,7 +2006,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "st-portuguese", category: "historical", name: "Flag of Portugal", from: 1879, to: 1975, sovereign: "Portugal", path: "national-flags/st/st-pt.svg", design: "The flag of Portugal, flown over the colony of São Tomé and Príncipe.", source: "https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe" },
     { id: "st-arms", category: "coatofarms", name: "Coat of arms of São Tomé and Príncipe", from: 1975, to: 9999, path: "national-flags/st/st-arms.svg", design: "A cocoa-pod-shaped shield with a palm, held by a falcon and a parrot, beneath a blue star.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_São_Tomé_and_Príncipe" },
     { id: "st-passport", category: "passport", name: "Passport of São Tomé and Príncipe", path: "national-flags/st/st-passport.webp", design: "The cover of the São Tomé and Príncipe passport.", source: "https://gicg.net/passport/st/" },
-    { id: "st-football-crest", category: "footballcrest", name: "Crest of the São Tomé and Príncipe national football team", path: "national-flags/st/st-football-crest.png", design: "The crest of the São Tomé and Príncipe national football team.", source: "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe_Football_Federation" },
+    { id: "st-football-crest", category: "footballcrest", name: "Crest of the São Tomé and Príncipe national football team", path: "national-flags/st/st-football-crest.png", design: "Two brown-and-grey hawks as shield supporters flanking a black star, holding a football styled like a map, above a banner reading \"FEDERAÇÃO DE FUTEBOL SANTOMENSE\" and \"REPÚBLICA DEMOCRÁTICA DE STOMÉ E PRÍNCIPE\".", source: "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe_Football_Federation" },
   ],
   "SV": [
     { id: "sv-official-national", category: "official", name: "Flag of El Salvador", from: 1912, to: 9999, primary: true, path: "flags/sv.svg", design: "The national flag of El Salvador, in the form adopted in 1912.", source: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
@@ -2040,7 +2040,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "TC": [
     { id: "tc-official-national", category: "official", name: "Flag of the Turks and Caicos Islands", from: 1968, to: 9999, path: "flags/tc.svg", design: "A blue ensign with the Union Flag in the canton and the territory's coat of arms — conch shell, spiny lobster and Turk's-head cactus on gold — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands" },
     { id: "tc-arms", category: "coatofarms", name: "Coat of arms of the Turks and Caicos Islands", from: 1965, to: 9999, path: "national-flags/tc/tc-arms.svg", design: "Or, in chief a queen conch shell and a spiny lobster and in base a Turk's-head cactus proper; crest a pelican between two sisal plants; supporters two flamingos.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Turks_and_Caicos_Islands" },
-    { id: "tc-football-crest", category: "footballcrest", name: "Crest of the Turks and Caicos Islands football association", path: "national-flags/tc/tc-football-crest.png", design: "The crest of Turks and Caicos Islands's national football association.", source: "https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands_Football_Association" },
+    { id: "tc-football-crest", category: "footballcrest", name: "Crest of the Turks and Caicos Islands football association", path: "national-flags/tc/tc-football-crest.png", design: "A shield reading \"1996\" and \"TURKS & CAICOS ISLANDS FOOTBALL ASSOCIATION\", with a football at its base.", source: "https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands_Football_Association" },
   ],
   "TD": [
     { id: "td-official-national", category: "official", name: "Flag of Chad", from: 1959, to: 9999, primary: true, path: "flags/td.svg", design: "The national flag of Chad, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
@@ -2091,7 +2091,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tl-portuguese", category: "historical", name: "Flag of Portugal", from: 1702, to: 1975, sovereign: "Portugal", path: "national-flags/tl/tl-pt.svg", design: "The flag of Portugal, flown over the colony of Portuguese Timor until 1975.", source: "https://en.wikipedia.org/wiki/Portuguese_Timor" },
     { id: "tl-arms", category: "coatofarms", name: "National emblem of Timor-Leste", from: 2007, to: 9999, path: "national-flags/tl/tl-arms.svg", design: "The mountain of Tatamailau crowned by a white star, over an open book, a cog wheel and crossed weapons.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_East_Timor" },
     { id: "tl-passport", category: "passport", name: "Passport of Timor-Leste", path: "national-flags/tl/tl-passport.webp", design: "The cover of the Timor-Leste passport.", source: "https://gicg.net/passport/tl/" },
-    { id: "tl-football-crest", category: "footballcrest", name: "Crest of the Timor-Leste national football team", path: "national-flags/tl/tl-football-crest.svg", design: "The crest of the Timor-Leste national football team.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Timor-Leste" },
+    { id: "tl-football-crest", category: "footballcrest", name: "Crest of the Timor-Leste national football team", path: "national-flags/tl/tl-football-crest.svg", design: "A circular badge reading \"FEDERAÇÃO FUTEBOL TIMOR-LESTE\" / \"FFTL\", with a gold sunburst over a blue sky and green field, divided by black-red-yellow bands.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Timor-Leste" },
   ],
   "TM": [
     { id: "tm-official-national", category: "official", name: "Flag of Turkmenistan", from: 1997, to: 9999, primary: true, path: "flags/tm.svg", design: "The national flag, in the form adopted in 1997.", source: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
@@ -2118,7 +2118,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "to-uk", category: "historical", name: "Flag of the United Kingdom", from: 1900, to: 1970, sovereign: "the United Kingdom", path: "national-flags/to/to-uk.svg", design: "The Union Flag, flown while Tonga was a British-protected state.", source: "https://en.wikipedia.org/wiki/History_of_Tonga" },
     { id: "to-arms", category: "coatofarms", name: "Coat of arms of Tonga", from: 1875, to: 9999, path: "national-flags/to/to-arms.svg", design: "A shield of stars, a crown, a dove and swords, beneath the Crown of Tonga in a wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tonga" },
     { id: "to-passport", category: "passport", name: "Passport of Tonga", path: "national-flags/to/to-passport.webp", design: "The cover of the Tonga passport.", source: "https://gicg.net/passport/to/" },
-    { id: "to-football-crest", category: "footballcrest", name: "Crest of the Tonga national football team", path: "national-flags/to/to-football-crest.png", design: "The crest of the Tonga national football team.", source: "https://en.wikipedia.org/wiki/Tonga_Football_Association" },
+    { id: "to-football-crest", category: "footballcrest", name: "Crest of the Tonga national football team", path: "national-flags/to/to-football-crest.png", design: "A red shield reading \"TONGA FOOTBALL ASSOCIATION\" around a football, framed by green laurel leaves, with a blue banner reading \"ON THE MOVE\".", source: "https://en.wikipedia.org/wiki/Tonga_Football_Association" },
   ],
   "TR": [
     { id: "tr-official-national", category: "official", name: "Flag of Turkey", from: 1936, to: 9999, primary: true, path: "flags/tr.svg", design: "The national flag, under the Turkish Flag Law of 1936.", source: "https://en.wikipedia.org/wiki/Flag_of_Turkey" },
@@ -2156,7 +2156,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tw-qing", category: "historical", name: "Flag of the Qing dynasty", from: 1683, to: 1895, priorPolity: "the Qing Empire", path: "national-flags/tw/tw-qing.svg", design: "The yellow dragon banner of Qing China, which governed Taiwan until it was ceded to Japan in 1895.", source: "https://en.wikipedia.org/wiki/Taiwan_under_Qing_rule" },
     { id: "tw-emblem", category: "coatofarms", name: "National Emblem of the Republic of China", from: 1928, to: 9999, path: "national-flags/tw/tw-emblem.svg", design: "A white sun of twelve rays on a blue disc — the 'Blue Sky with a White Sun'.", source: "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China" },
     { id: "tw-passport", category: "passport", name: "Republic of China (Taiwan) passport", path: "national-flags/tw/tw-passport.svg", design: "The dark-green cover of the Republic of China (Taiwan) passport.", source: "https://en.wikipedia.org/wiki/Republic_of_China_passport" },
-    { id: "tw-football-crest", category: "footballcrest", name: "Crest of the Chinese Taipei football association", path: "national-flags/tw/tw-football-crest.svg", design: "The crest of Chinese Taipei's national football association.", source: "https://en.wikipedia.org/wiki/Chinese_Taipei_Football_Association" },
+    { id: "tw-football-crest", category: "footballcrest", name: "Crest of the Chinese Taipei football association", path: "national-flags/tw/tw-football-crest.svg", design: "A shield reading \"CTFA\" in red-white-blue vertical bands, with a blue-and-gold bird in flight holding a football in its talons.", source: "https://en.wikipedia.org/wiki/Chinese_Taipei_Football_Association" },
   ],
   "TZ": [
     { id: "tz-official-national", category: "official", name: "Flag of Tanzania", from: 1964, to: 9999, primary: true, path: "flags/tz.svg", design: "The national flag of Tanzania, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
@@ -2288,7 +2288,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "vc-uk", category: "historical", name: "Flag of the United Kingdom", from: 1763, to: 1979, sovereign: "the United Kingdom", path: "national-flags/vc/vc-uk.svg", design: "The Union Flag, flown while Saint Vincent was a British colony.", source: "https://en.wikipedia.org/wiki/History_of_Saint_Vincent_and_the_Grenadines" },
     { id: "vc-arms", category: "coatofarms", name: "Coat of arms of Saint Vincent and the Grenadines", from: 1979, to: 9999, path: "national-flags/vc/vc-arms.svg", design: "Two women representing Peace and Justice before an altar, with a cotton plant.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Vincent_and_the_Grenadines" },
     { id: "vc-passport", category: "passport", name: "Passport of Saint Vincent and the Grenadines", path: "national-flags/vc/vc-passport.webp", design: "The cover of the Saint Vincent and the Grenadines passport.", source: "https://gicg.net/passport/vc/" },
-    { id: "vc-football-crest", category: "footballcrest", name: "Crest of the Saint Vincent and the Grenadines national football team", path: "national-flags/vc/vc-football-crest.svg", design: "The crest of the Saint Vincent and the Grenadines national football team.", source: "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines_Football_Federation" },
+    { id: "vc-football-crest", category: "footballcrest", name: "Crest of the Saint Vincent and the Grenadines national football team", path: "national-flags/vc/vc-football-crest.svg", design: "A shield reading \"SVGFF\" and \"ST. VINCENT & THE GRENADINES FOOTBALL FEDERATION\", with three green diamonds arranged in a V shape above a football.", source: "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines_Football_Federation" },
   ],
   "VE": [
     { id: "ve-official-national", category: "official", name: "Flag of Venezuela", from: 2006, to: 9999, primary: true, path: "flags/ve.svg", design: "The national flag of Venezuela, in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Venezuela" },
@@ -2310,13 +2310,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "VG": [
     { id: "vg-official-national", category: "official", name: "Flag of the British Virgin Islands", from: 1960, to: 9999, path: "flags/vg.svg", design: "A blue ensign with the Union Flag in the canton and the territory's coat of arms — Saint Ursula holding a golden lamp among eleven others — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_British_Virgin_Islands" },
     { id: "vg-arms", category: "coatofarms", name: "Coat of arms of the British Virgin Islands", from: 1960, to: 9999, path: "national-flags/vg/vg-arms.svg", design: "Vert, a woman (Saint Ursula) robed argent holding a lit golden oil lamp, surrounded by eleven further golden lamps; motto VIGILATE.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands" },
-    { id: "vg-football-crest", category: "footballcrest", name: "Crest of the British Virgin Islands football association", path: "national-flags/vg/vg-football-crest.svg", design: "The crest of British Virgin Islands's national football association.", source: "https://en.wikipedia.org/wiki/British_Virgin_Islands_Football_Association" },
+    { id: "vg-football-crest", category: "footballcrest", name: "Crest of the British Virgin Islands football association", path: "national-flags/vg/vg-football-crest.svg", design: "A shield reading \"BVI FOOTBALL ASSOCIATION\", with a white robed figure holding a lamp, flanked by eleven small gold lamps, above a football.", source: "https://en.wikipedia.org/wiki/British_Virgin_Islands_Football_Association" },
   ],
   "VI": [
     { id: "vi-official-national", category: "official", name: "Flag of the U.S. Virgin Islands", from: 1921, to: 9999, path: "flags/sub/US/US-VI.svg", design: "A white field bearing a simplified American eagle between the letters V and I.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
     { id: "vi-denmark", category: "historical", name: "Flag of Denmark", from: 1672, to: 1917, sovereign: "Denmark", path: "flags/dk.svg", design: "The Dannebrog, flown over the Danish West Indies from the settlement of St Thomas in 1672 until the islands were sold to the United States in 1917.", source: "https://en.wikipedia.org/wiki/Danish_West_Indies" },
     { id: "vi-seal", category: "coatofarms", name: "Seal of the U.S. Virgin Islands", from: 1921, to: 9999, path: "national-flags/vi/vi-seal.svg", design: "An American eagle holding a laurel sprig and three arrows, between the letters V and I.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
-    { id: "vi-football-crest", category: "footballcrest", name: "Crest of the U.S. Virgin Islands football association", path: "national-flags/vi/vi-football-crest.svg", design: "The crest of U.S. Virgin Islands's national football association.", source: "https://en.wikipedia.org/wiki/U.S._Virgin_Islands_Soccer_Federation" },
+    { id: "vi-football-crest", category: "footballcrest", name: "Crest of the U.S. Virgin Islands football association", path: "national-flags/vi/vi-football-crest.svg", design: "A gold eagle with wings spread, holding an olive branch and a bundle of arrows, over a blue \"VI\" shield reading \"SOCCER\".", source: "https://en.wikipedia.org/wiki/U.S._Virgin_Islands_Soccer_Federation" },
   ],
   "VN": [
     { id: "vn-official-national", category: "official", name: "Flag of Vietnam", from: 1955, to: 9999, primary: true, path: "flags/vn.svg", design: "The national flag of Vietnam, in the form adopted in 1955.", source: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
@@ -2339,7 +2339,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "vu-france", category: "historical", name: "Flag of France", from: 1906, to: 1980, sovereign: "France", path: "national-flags/vu/vu-france.svg", design: "The French Tricolour — France shared the government of the New Hebrides with Britain until 1980.", source: "https://en.wikipedia.org/wiki/New_Hebrides" },
     { id: "vu-arms", category: "coatofarms", name: "Coat of arms of Vanuatu", from: 1980, to: 9999, path: "national-flags/vu/vu-arms.svg", design: "A Melanesian chief with a spear before a boar's tusk and crossed namele leaves.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vanuatu" },
     { id: "vu-passport", category: "passport", name: "Passport of Vanuatu", path: "national-flags/vu/vu-passport.webp", design: "The cover of the Vanuatu passport.", source: "https://gicg.net/passport/vu/" },
-    { id: "vu-football-crest", category: "footballcrest", name: "Crest of the Vanuatu national football team", path: "national-flags/vu/vu-football-crest.svg", design: "The crest of the Vanuatu national football team.", source: "https://en.wikipedia.org/wiki/Vanuatu_Football_Federation" },
+    { id: "vu-football-crest", category: "footballcrest", name: "Crest of the Vanuatu national football team", path: "national-flags/vu/vu-football-crest.svg", design: "A gold shield reading \"VANUATU FOOTBALL FEDERATION\", with a football reading \"VFF\" framed by crossed green palm fronds.", source: "https://en.wikipedia.org/wiki/Vanuatu_Football_Federation" },
   ],
   "WS": [
     { id: "ws-official-national", category: "official", name: "Flag of Samoa", from: 1949, to: 9999, primary: true, path: "flags/ws.svg", design: "The national flag, adopted in 1949 and kept at independence in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
@@ -2347,10 +2347,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ws-german", category: "historical", name: "Flag of the German Empire", from: 1900, to: 1914, sovereign: "the German Empire", path: "national-flags/ws/ws-german.svg", design: "The flag of the German Empire, which held the islands as German Samoa until 1914.", source: "https://en.wikipedia.org/wiki/German_Samoa" },
     { id: "ws-arms", category: "coatofarms", name: "Coat of arms of Samoa", from: 1962, to: 9999, path: "national-flags/ws/ws-arms.svg", design: "A shield bearing the Southern Cross over a coconut palm rising from the sea, surmounted by a cross, within a ring of olive leaves.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Samoa" },
     { id: "ws-passport", category: "passport", name: "Passport of Samoa", path: "national-flags/ws/ws-passport.webp", design: "The cover of the Samoa passport.", source: "https://gicg.net/passport/ws/" },
-    { id: "ws-football-crest", category: "footballcrest", name: "Crest of the Samoa national football team", path: "national-flags/ws/ws-football-crest.png", design: "The crest of the Samoa national football team.", source: "https://en.wikipedia.org/wiki/Samoa_national_football_team" },
+    { id: "ws-football-crest", category: "footballcrest", name: "Crest of the Samoa national football team", path: "national-flags/ws/ws-football-crest.png", design: "A shield reading \"SAMOA\" and \"FOOTBALL\", topped by a red crown-like ornament, with a patterned football above four white five-pointed stars on blue.", source: "https://en.wikipedia.org/wiki/Samoa_national_football_team" },
   ],
   "XK": [
-    { id: "xk-football-crest", category: "footballcrest", name: "Crest of the Kosovo football association", path: "national-flags/xk/xk-football-crest.svg", design: "The crest of Kosovo's national football association.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Kosovo" },
+    { id: "xk-football-crest", category: "footballcrest", name: "Crest of the Kosovo football association", path: "national-flags/xk/xk-football-crest.svg", design: "A blue shield edged in gold reading \"FFK\", with six white stars above a compass-like emblem and a football.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Kosovo" },
   ],
   "YE": [
     { id: "ye-official-national", category: "official", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, adopted at unification in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
@@ -4713,8 +4713,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Solomon Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Solomon_Islands" },
     ],
   },
+  "sb-football-crest": {
+    description: "The colours and stars are taken from the Solomon Islands' national flag: blue for water, green for the land, and the yellow diagonal for the sun, while the five stars originally stood for the country's five provinces at independence (Central, Western, Eastern, Malaita and the Honiara capital).",
+    sources: [
+      { title: "Flag of the Solomon Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Solomon_Islands" },
+    ],
+  },
   "sc-arms": {
     description: "A giant tortoise stands on green ground before a coco-de-mer palm — both found only in the Seychelles — with a sailing ship on the sea behind. A white-tailed tropicbird forms the crest, and two sailfish support the shield. The motto is Finis Coronat Opus — “The End Crowns the Work.”",
+    sources: [
+      { title: "Coat of arms of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
+    ],
+  },
+  "sc-football-crest": {
+    description: "The tropicbird is the white-tailed tropicbird, one of Seychelles' best-known native seabirds and a figure on the national coat of arms, where it represents the islands' wildlife of the air alongside a tortoise (land) and a fish (sea).",
     sources: [
       { title: "Coat of arms of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
     ],
@@ -4753,6 +4765,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield repeats the flag: red for the universal brotherhood and equality of man, white for pervading and everlasting purity and virtue, the crescent for a young nation on the ascendant and the five stars for the country's five ideals — democracy, peace, progress, justice and equality. The two supporters each carry a different history. The lion is Singapore's own name, Singapura, the lion city. The tiger is the Malayan tiger, which really did abound on the island in the 19th century when it was still dense jungle, and stands for the country's close historical ties to the Federation of Malaya, of which Singapore was briefly part. The banner reads Majulah Singapura — Onward Singapore — which is also the title of the national anthem. The arms were adopted in 1959, the year Singapore attained self-government.",
     sources: [
       { title: "Coat of arms of Singapore — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore" },
+    ],
+  },
+  "sg-football-crest": {
+    description: "The lion recalls the legend of Prince Sang Nila Utama, who is said to have sighted a lion on the island and named it Singapura — \"Lion City\" in Sanskrit/Malay — making the lion Singapore's best-known national symbol.",
+    sources: [
+      { title: "Merlion — Wikipedia", url: "https://en.wikipedia.org/wiki/Merlion" },
     ],
   },
   "sh-arms": {
@@ -4797,6 +4815,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of San Marino — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_San_Marino" },
     ],
   },
+  "sm-football-crest": {
+    description: "The three towers are the Three Towers of San Marino (Guaita, Cesta and Montale), the fortifications on Mount Titano that appear on the national flag and coat of arms and are the country's most recognisable symbol.",
+    sources: [
+      { title: "Flag of San Marino — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
+    ],
+  },
   "sn-arms": {
     description: "The arms gather devices already used on earlier Senegalese emblems. On the left a golden lion — the lion of the Sudan, the country's totem and the name of its highest honour, the National Order of the Lion — walks above a green wavy band standing for the River Senegal. On the right stands a baobab, the tree native to the country. At the crest is the same five-pointed green star that appears on the national flag: a star of hope, and for the great majority of Senegalese the star of Islam.",
     sources: [
@@ -4828,6 +4852,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
     ],
   },
+  "sr-football-crest": {
+    description: "The green, white, red and the central yellow star are Suriname's national flag colours: green for fertility, white for justice and freedom, red for love and progress, and the star for the unity of the country's ethnic groups.",
+    sources: [
+      { title: "Flag of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
+    ],
+  },
   "ss-arms": {
     description: "An African fish eagle — for strength, resilience, vision and majesty — spreads its wings above a shield bearing the national flag, crossed by a spear and a spade. The scroll reads “Justice, Liberty, Prosperity,” and above it the name of the Republic of South Sudan.",
     sources: [
@@ -4844,6 +4874,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A falcon and a grey parrot — birds of the islands — support a shield shaped like a cocoa pod, the crop on which the islands' economy was built, with a palm tree at its centre. A blue star crowns the arms. The ribbon reads Unidade, Disciplina, Trabalho — “Unity, Discipline, Work.”",
     sources: [
       { title: "Coat of arms of São Tomé and Príncipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_São_Tomé_and_Príncipe" },
+    ],
+  },
+  "st-football-crest": {
+    description: "The two hawks and the black star are taken from São Tomé and Príncipe's coat of arms and flag, where the star (one of two on the flag) stands for African independence and the birds are native falcons representing the country's two main islands.",
+    sources: [
+      { title: "Flag of São Tomé and Príncipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
     ],
   },
   "sv-arms": {
@@ -5032,6 +5068,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National Emblem of the Republic of China — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China" },
     ],
   },
+  "tw-football-crest": {
+    description: "The bird is the Formosan blue magpie, chosen as Taiwan's national bird in a public poll for being found nowhere else in the world; the CTFA adopted it as the emblem worn by both the men's and women's national teams from 2014, citing the bird's fierce defence of its nest as representative of the teamwork a match demands.",
+    sources: [
+      { title: "Chinese Taipei Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Chinese_Taipei_Football_Association" },
+    ],
+  },
   "tz-arms": {
     description: "The shield is read in bands from the top: the golden portion is the country's minerals; the national flag follows; the red band beneath it is the rich fertile soil of Africa; and the wavy bands at the foot are the land, sea, lakes and coastline of the united republic. On the golden part burns the Uhuru torch, signifying freedom, enlightenment and knowledge, with a spear for the defence of that freedom and a crossed axe and hoe, the tools the people use to develop the country. The shield stands on Mount Kilimanjaro. A man and a woman support it holding elephant tusks, with a clove bush at the man's feet and a cotton bush at the woman's — the crops of Zanzibar and of the mainland, placed there to show the co-operation of the two parts of the union.",
     sources: [
@@ -5128,6 +5170,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Saint Vincent and the Grenadines — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Vincent_and_the_Grenadines" },
     ],
   },
+  "vc-football-crest": {
+    description: "The three diamonds are taken directly from the national flag, where they are nicknamed \"the Gems\": they form the letter V for Vincent, evoke the country's nickname \"Gems of the Antilles\", and represent the geographic position of the islands within the Antilles.",
+    sources: [
+      { title: "Flag of Saint Vincent and the Grenadines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
+    ],
+  },
   "ve-arms": {
     description: "The shield is divided into the three colours of the national flag. On the red field a sheaf of wheat stands for the union of the states and for the country's agricultural wealth; on the yellow field weapons and two national flags tied with laurel stand for the victory of the war of independence; and on the blue field below a white horse runs free, for independence and liberty. Above the shield two crossed cornucopias pour out the country's wealth, and it is flanked by an olive branch and a palm branch tied with a band in the national colours — yellow for the nation's wealth, blue for the ocean that separates Venezuela from Spain, and red for the blood and courage of its people. The arms in this form were established by the Law of the National Flag, Coat of Arms and Anthem of 17 February 1954; in 2006 the horse was turned to run to the dexter, the direction it had faced in the arms of 1863.",
     sources: [
@@ -5146,10 +5194,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the British Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands" },
     ],
   },
+  "vg-football-crest": {
+    description: "The figure is Saint Ursula holding an oil lamp, taken from the territory's coat of arms; the eleven surrounding lamps each stand for 1,000 of the legendary 11,000 virgin martyrs who, with Saint Ursula, gave the British Virgin Islands their name after Columbus called them \"Santa Úrsula y las Once Mil Vírgenes\" in 1493.",
+    sources: [
+      { title: "Coat of arms of the British Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands" },
+    ],
+  },
   "vi-seal": {
     description: "The eagle carries a sprig of laurel for victory in one talon and three blue arrows in the other — one for each of the three main islands, Saint Croix, Saint Thomas and Saint John — flanked by the letters V and I for Virgin Islands. The blue of its breast shield matches the flag and shield of the United States, of which the territory has been part since it was bought from Denmark in 1917.",
     sources: [
       { title: "Flag of the United States Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
+    ],
+  },
+  "vi-football-crest": {
+    description: "The eagle, olive branch and arrows are taken from the Seal of the United States Virgin Islands, itself adapted from the Great Seal of the United States: the eagle represents the United States, the olive branch peace, and the (originally three) arrows the territory's three main islands — Saint Croix, Saint Thomas and Saint John.",
+    sources: [
+      { title: "Seal of the United States Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_United_States_Virgin_Islands" },
     ],
   },
   "vn-emblem": {
@@ -5174,6 +5234,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted at independence in 1962, the shield shows the five stars of the Southern Cross — the same constellation the national flag carries — above a green coconut palm rising from the Pacific, the ocean filling the lower field. A gold Christian cross surmounts the shield, and a ring of olive leaves echoes the United Nations emblem, marking Samoa's path from UN trust territory to statehood. Around it runs the motto Faʻavae i le Atua Sāmoa — “Samoa is founded on God.”",
     sources: [
       { title: "Coat of arms of Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Samoa" },
+    ],
+  },
+  "ws-football-crest": {
+    description: "The four stars echo Samoa's national flag, where five stars (four large and one small) form the Southern Cross constellation, visible in the night sky of the southern hemisphere.",
+    sources: [
+      { title: "Flag of Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
+    ],
+  },
+  "xk-football-crest": {
+    description: "The six stars are taken from Kosovo's national flag, where they represent the country's six major ethnic groups: Albanians, Serbs, Bosniaks, Turks, Romani and Gorani.",
+    sources: [
+      { title: "Flag of Kosovo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kosovo" },
     ],
   },
   "ye-emblem": {

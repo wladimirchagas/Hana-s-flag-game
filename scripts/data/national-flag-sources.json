@@ -22458,10 +22458,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/8/86/Solomon_Islands_FA.svg",
           "file": "sb/sb-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Solomon Islands national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Solomon_Islands_FA.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Solomon Islands national football team.",
+          "design": "A stylised black \"S\"-shaped ribbon in blue, yellow and green stripes wrapped around a football, with five white stars and \"Solomon Islands Football Federation, Founded 1979\" text.",
           "source": "https://en.wikipedia.org/wiki/Solomon_Islands_Football_Federation",
           "sha256": "41b3190f26c465058749be7c46de12e7132de63f6c9d646f901cad95ba96f857",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The colours and stars are taken from the Solomon Islands' national flag: blue for water, green for the land, and the yellow diagonal for the sun, while the five stars originally stood for the country's five provinces at independence (Central, Western, Eastern, Malaita and the Honiara capital).",
+            "sources": [
+              {
+                "title": "Flag of the Solomon Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Solomon_Islands"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -22551,10 +22560,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/1/11/Seychelles_Football_Federation.png",
           "file": "sc/sc-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Seychelles national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Seychelles_Football_Federation.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Seychelles national football team.",
+          "design": "A shield reading \"SEYCHELLES\" and \"FOOTBALL FEDERATION\", with a white tropicbird in flight over palm-covered islands and a football on the water.",
           "source": "https://en.wikipedia.org/wiki/Seychelles_Football_Federation",
           "sha256": "c975a066cd3b7f96f88fcbfa4da2c1dc2e1a98ffd00dda8568f528339c7c302d",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The tropicbird is the white-tailed tropicbird, one of Seychelles' best-known native seabirds and a figure on the national coat of arms, where it represents the islands' wildlife of the air alongside a tortoise (land) and a fish (sea).",
+            "sources": [
+              {
+                "title": "Coat of arms of Seychelles — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -23034,10 +23052,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/1/11/Football_Association_of_Singapore_crest.svg",
           "file": "sg/sg-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Singapore national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Singapore_crest.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Singapore national football team.",
+          "design": "A blue circular badge reading \"FOOTBALL ASSOCIATION\" and \"SINGAPORE\", with the letters \"FAS\" merging into a lion's head, and \"Founded 1892\" beneath.",
           "source": "https://en.wikipedia.org/wiki/Football_Association_of_Singapore",
           "sha256": "3f892d9bc0ac36c1e2ab2d700a73d9e26593505a9da65eec2955a4c05ef3801f",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The lion recalls the legend of Prince Sang Nila Utama, who is said to have sighted a lion on the island and named it Singapura — \"Lion City\" in Sanskrit/Malay — making the lion Singapore's best-known national symbol.",
+            "sources": [
+              {
+                "title": "Merlion — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Merlion"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -23429,10 +23456,19 @@
           "name": "Crest of the San Marino national football team",
           "commons": "San-marino-logo.png",
           "file": "sm/sm-football-crest.png",
-          "design": "The crest of the San Marino national football team.",
+          "design": "A shield reading \"SAN MARINO\", showing three blue towers on a hillside, with a small gold emblem between the two rear towers.",
           "source": "https://en.wikipedia.org/wiki/San_Marino_national_football_team",
           "sha256": "b86fa3e45249743fcbb661e335e95f1d2f95517fbd8f68bf22db8aed22e95a1d",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The three towers are the Three Towers of San Marino (Guaita, Cesta and Montale), the fortifications on Mount Titano that appear on the national flag and coat of arms and are the country's most recognisable symbol.",
+            "sources": [
+              {
+                "title": "Flag of San Marino — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_San_Marino"
+              }
+            ]
+          }
         }
       ]
     },
@@ -23736,10 +23772,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/6/6c/Surinamese_Football_Association_logo.png",
           "file": "sr/sr-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Suriname national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Surinamese_Football_Association_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Suriname national football team.",
+          "design": "A green shield reading \"SURINAAMSE VOETBAL BOND\", with white \"SVB\" letters framing a football, above a red band bearing a yellow star.",
           "source": "https://en.wikipedia.org/wiki/Surinamese_Football_Association",
           "sha256": "fbf64076f2abbdb02c2ea7fd2ebc6289822ad623040e298a931a4f2917f63601",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The green, white, red and the central yellow star are Suriname's national flag colours: green for fertility, white for justice and freedom, red for love and progress, and the star for the unity of the country's ethnic groups.",
+            "sources": [
+              {
+                "title": "Flag of Suriname — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Suriname"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -23905,10 +23950,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/e3/Federa%C3%A7%C3%A3o_Santomense_de_Futebol_Logo.png",
           "file": "st/st-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the São Tomé and Príncipe national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Federação_Santomense_de_Futebol_Logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the São Tomé and Príncipe national football team.",
+          "design": "Two brown-and-grey hawks as shield supporters flanking a black star, holding a football styled like a map, above a banner reading \"FEDERAÇÃO DE FUTEBOL SANTOMENSE\" and \"REPÚBLICA DEMOCRÁTICA DE STOMÉ E PRÍNCIPE\".",
           "source": "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe_Football_Federation",
           "sha256": "f988a5fc26891f66345298d46db5a9f8a10674f731e6880eed0c09fc72d90fe2",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The two hawks and the black star are taken from São Tomé and Príncipe's coat of arms and flag, where the star (one of two on the flag) stands for African independence and the birds are native falcons representing the country's two main islands.",
+            "sources": [
+              {
+                "title": "Flag of São Tomé and Príncipe — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -24315,7 +24369,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/b2/Turks_%26_Caicos_Islands_Football_Association_%282015%29.png",
           "file": "tc/tc-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Turks and Caicos Islands football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Turks_&_Caicos_Islands_Football_Association_(2015).png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Turks and Caicos Islands's national football association.",
+          "design": "A shield reading \"1996\" and \"TURKS & CAICOS ISLANDS FOOTBALL ASSOCIATION\", with a football at its base.",
           "source": "https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands_Football_Association",
           "sha256": "09f44bf1f55b1f3d61d19d8907089eca9c464303132469f51b9c5dafbfb9224c",
           "fetched": "2026-08-18"
@@ -24933,7 +24987,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/c/c8/Football_Federation_of_Timor-Leste_logo.svg",
           "file": "tl/tl-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Timor-Leste national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Timor-Leste_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Timor-Leste national football team.",
+          "design": "A circular badge reading \"FEDERAÇÃO FUTEBOL TIMOR-LESTE\" / \"FFTL\", with a gold sunburst over a blue sky and green field, divided by black-red-yellow bands.",
           "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Timor-Leste",
           "sha256": "7bd73f8ff4d518d4baa1522ae978dc50dd24eb782587a92b370e17f29b0f08a9",
           "fetched": "2026-08-18"
@@ -25276,7 +25330,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/d/dd/Tonga_FA_logo.png",
           "file": "to/to-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Tonga national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Tonga_FA_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Tonga national football team.",
+          "design": "A red shield reading \"TONGA FOOTBALL ASSOCIATION\" around a football, framed by green laurel leaves, with a blue banner reading \"ON THE MOVE\".",
           "source": "https://en.wikipedia.org/wiki/Tonga_Football_Association",
           "sha256": "ebebc10baf769d60a68f461fbb10cae899759b7ce922c7b9d824b6145cb7ec28",
           "fetched": "2026-08-18"
@@ -25744,10 +25798,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/9/9e/Chinese_Taipei_Football_Association_logo.svg",
           "file": "tw/tw-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Chinese Taipei football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Chinese_Taipei_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Chinese Taipei's national football association.",
+          "design": "A shield reading \"CTFA\" in red-white-blue vertical bands, with a blue-and-gold bird in flight holding a football in its talons.",
           "source": "https://en.wikipedia.org/wiki/Chinese_Taipei_Football_Association",
           "sha256": "9fb0b6a72072ca445a487523f9054ce987ba9c5d555591998dc5cfba0bd12ab3",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The bird is the Formosan blue magpie, chosen as Taiwan's national bird in a public poll for being found nowhere else in the world; the CTFA adopted it as the emblem worn by both the men's and women's national teams from 2014, citing the bird's fierce defence of its nest as representative of the teamwork a match demands.",
+            "sources": [
+              {
+                "title": "Chinese Taipei Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Chinese_Taipei_Football_Association"
+              }
+            ]
+          }
         }
       ]
     },
@@ -27392,10 +27455,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/e0/Saint_Vincent_and_the_Grenadines_Football_Federation_logo.svg",
           "file": "vc/vc-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Saint Vincent and the Grenadines national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Saint_Vincent_and_the_Grenadines_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Saint Vincent and the Grenadines national football team.",
+          "design": "A shield reading \"SVGFF\" and \"ST. VINCENT & THE GRENADINES FOOTBALL FEDERATION\", with three green diamonds arranged in a V shape above a football.",
           "source": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines_Football_Federation",
           "sha256": "ae74033ae3aaf6083422e3fdda794b243b96017356185ec32104b01e98b16853",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The three diamonds are taken directly from the national flag, where they are nicknamed \"the Gems\": they form the letter V for Vincent, evoke the country's nickname \"Gems of the Antilles\", and represent the geographic position of the islands within the Antilles.",
+            "sources": [
+              {
+                "title": "Flag of Saint Vincent and the Grenadines — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -27663,10 +27735,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/f/f1/British_Virgin_Islands_Football_Association.svg",
           "file": "vg/vg-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the British Virgin Islands football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:British_Virgin_Islands_Football_Association.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of British Virgin Islands's national football association.",
+          "design": "A shield reading \"BVI FOOTBALL ASSOCIATION\", with a white robed figure holding a lamp, flanked by eleven small gold lamps, above a football.",
           "source": "https://en.wikipedia.org/wiki/British_Virgin_Islands_Football_Association",
           "sha256": "c9f6284f63e8f6d1f2f287901d36cd9c9e34bbcd5eee62630a964cb49b9839d2",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The figure is Saint Ursula holding an oil lamp, taken from the territory's coat of arms; the eleven surrounding lamps each stand for 1,000 of the legendary 11,000 virgin martyrs who, with Saint Ursula, gave the British Virgin Islands their name after Columbus called them \"Santa Úrsula y las Once Mil Vírgenes\" in 1493.",
+            "sources": [
+              {
+                "title": "Coat of arms of the British Virgin Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands"
+              }
+            ]
+          }
         }
       ]
     },
@@ -27728,10 +27809,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/0/0a/US_Virgin_Islands_Soccer_Federation.svg",
           "file": "vi/vi-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the U.S. Virgin Islands football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:US_Virgin_Islands_Soccer_Federation.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of U.S. Virgin Islands's national football association.",
+          "design": "A gold eagle with wings spread, holding an olive branch and a bundle of arrows, over a blue \"VI\" shield reading \"SOCCER\".",
           "source": "https://en.wikipedia.org/wiki/U.S._Virgin_Islands_Soccer_Federation",
           "sha256": "6f05e7042edf88d5a20bf3db2f1a29807b6fc6af07785bd2c88d4728febdc269",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The eagle, olive branch and arrows are taken from the Seal of the United States Virgin Islands, itself adapted from the Great Seal of the United States: the eagle represents the United States, the olive branch peace, and the (originally three) arrows the territory's three main islands — Saint Croix, Saint Thomas and Saint John.",
+            "sources": [
+              {
+                "title": "Seal of the United States Virgin Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_the_United_States_Virgin_Islands"
+              }
+            ]
+          }
         }
       ]
     },
@@ -28011,7 +28101,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/a/ac/Vanuatu_Football_Federation_Logo.svg",
           "file": "vu/vu-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Vanuatu national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Vanuatu_Football_Federation_Logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Vanuatu national football team.",
+          "design": "A gold shield reading \"VANUATU FOOTBALL FEDERATION\", with a football reading \"VFF\" framed by crossed green palm fronds.",
           "source": "https://en.wikipedia.org/wiki/Vanuatu_Football_Federation",
           "sha256": "529c71e9fccfbf47b98df7b516a93b670cab1c1b628ea2232b35f27a77169777",
           "fetched": "2026-08-18"
@@ -28105,10 +28195,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/9/97/Football_Federation_Samoa_logo_%282025%29.png",
           "file": "ws/ws-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Samoa national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_Samoa_logo_(2025).png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Samoa national football team.",
+          "design": "A shield reading \"SAMOA\" and \"FOOTBALL\", topped by a red crown-like ornament, with a patterned football above four white five-pointed stars on blue.",
           "source": "https://en.wikipedia.org/wiki/Samoa_national_football_team",
           "sha256": "716c8331051c4f1ce7734cf935b329356eb9b9663d98189c855d0cc8ac40b2ed",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The four stars echo Samoa's national flag, where five stars (four large and one small) form the Southern Cross constellation, visible in the night sky of the southern hemisphere.",
+            "sources": [
+              {
+                "title": "Flag of Samoa — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Samoa"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -28127,10 +28226,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/1/11/Football_Federation_of_Kosovo_logo.svg",
           "file": "xk/xk-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Kosovo football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Kosovo_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Kosovo's national football association.",
+          "design": "A blue shield edged in gold reading \"FFK\", with six white stars above a compass-like emblem and a football.",
           "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Kosovo",
           "sha256": "c39a18946028bfaf05236231d2061c85dc7ec603fd0aa118623e57ee1bd9d63a",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The six stars are taken from Kosovo's national flag, where they represent the country's six major ethnic groups: Albanians, Serbs, Bosniaks, Turks, Romani and Gorani.",
+            "sources": [
+              {
+                "title": "Flag of Kosovo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Kosovo"
+              }
+            ]
+          }
         }
       ]
     },
