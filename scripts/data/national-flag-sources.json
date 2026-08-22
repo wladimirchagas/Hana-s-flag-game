@@ -2550,7 +2550,16 @@
           "design": "The naval ensign of the Bulgarian Navy.",
           "source": "https://en.wikipedia.org/wiki/Naval_ensign_of_Bulgaria",
           "sha256": "9ac519c73655ad0a144897a9d6a528e020d4478c9f8929786bdfaeb820bdf393",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The ensign bears, in a red canton, the golden rampant lion of Bulgaria's national coat of arms — an emblem of royal authority and sovereignty in Bulgarian heraldry since the Second Bulgarian Empire of the 13th–14th centuries and, by the time it was placed on the navy's own ensign, a symbol of bravery and strength standing for Bulgarian statehood itself; the current design, adopted after 1990, restores the lion to the canton in place of the communist-era red star.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bulgaria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria"
+              }
+            ]
+          }
         },
         {
           "id": "bg-arms",
@@ -7705,7 +7714,16 @@
           "design": "The defence forces' flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
           "sha256": "93f524069b8eca85cbfc9bff2316d959239cdadb7676793565baecc326e61e9a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Estonian Banner-of-Arms — bearing the same three lions as the national coat of arms — flown with five swallow-tail sleeves and golden fringes, carried on a staff topped with a spearhead hollowed in the shape of the three lions, as the flag of the whole of the Estonian Defence Forces.",
+            "sources": [
+              {
+                "title": "Estonian Land Forces — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Estonian_Land_Forces"
+              }
+            ]
+          }
         },
         {
           "id": "ee-land-forces",
@@ -7777,7 +7795,16 @@
           "design": "A white field with a black saltire and a blue cross.",
           "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
           "sha256": "175090e5e65bb1947f153e2e76673ca7995734db59f379078ad208ccb8b82326",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A white field bearing a black saltire beneath a blue cross — a design that echoes the British Union Flag, reflecting British naval influence on the young Estonian navy during the 1918–1920 War of Independence; the blue draws on the national tricolour's own colour, read as standing for the sky, lakes and sea and for Estonians' devotion and faith in their country.",
+            "sources": [
+              {
+                "title": "Estonia — Flags for Use at Sea — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ee~.html"
+              }
+            ]
+          }
         },
         {
           "id": "ee-passport",
@@ -8558,7 +8585,16 @@
           "design": "The standard of the regent, in the months when Finland was briefly to be a kingdom.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
           "sha256": "638d15bb3c152068440395cd672b84494ebb40c7ccd9b2fd1264acfcdd18d22b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The standard bears Finland's crowned lion coat of arms — a lion rampant on a red field, its right foreleg replaced by an armoured arm brandishing a sword and its hind paws trampling a sabre — the same arms adopted for the newly independent Finland in 1917 and used briefly for the Kingdom of Finland that was proclaimed, then abandoned, in 1918–1919 before the country became a republic.",
+            "sources": [
+              {
+                "title": "Coat of arms of Finland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland"
+              }
+            ]
+          }
         },
         {
           "id": "fi-war-flag",

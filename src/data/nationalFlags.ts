@@ -2884,6 +2884,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Burkina Faso — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burkina_Faso" },
     ],
   },
+  "bg-naval": {
+    description: "The ensign bears, in a red canton, the golden rampant lion of Bulgaria's national coat of arms — an emblem of royal authority and sovereignty in Bulgarian heraldry since the Second Bulgarian Empire of the 13th–14th centuries and, by the time it was placed on the navy's own ensign, a symbol of bravery and strength standing for Bulgarian statehood itself; the current design, adopted after 1990, restores the lion to the canton in place of the communist-era red star.",
+    sources: [
+      { title: "Coat of arms of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
+    ],
+  },
   "bg-arms": {
     description: "A crowned golden lion rampant on a dark-red shield, beneath the historical crown of the medieval Bulgarian tsars. The rampant lion has stood for Bulgaria since the Second Bulgarian Empire, and here it appears three times — once on the shield and again as the two crowned lions that support it, standing on a compartment of oak branches for strength and endurance. The white ribbon carries the national motto, Съединението прави силата — “Unity makes strength.”",
     sources: [
@@ -3543,6 +3549,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Ecuador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
     ],
   },
+  "ee-defence": {
+    description: "The Estonian Banner-of-Arms — bearing the same three lions as the national coat of arms — flown with five swallow-tail sleeves and golden fringes, carried on a staff topped with a spearhead hollowed in the shape of the three lions, as the flag of the whole of the Estonian Defence Forces.",
+    sources: [
+      { title: "Estonian Land Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Estonian_Land_Forces" },
+    ],
+  },
+  "ee-naval-jack": {
+    description: "A white field bearing a black saltire beneath a blue cross — a design that echoes the British Union Flag, reflecting British naval influence on the young Estonian navy during the 1918–1920 War of Independence; the blue draws on the national tricolour's own colour, read as standing for the sky, lakes and sea and for Estonians' devotion and faith in their country.",
+    sources: [
+      { title: "Estonia — Flags for Use at Sea — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee~.html" },
+    ],
+  },
   "ee-arms": {
     description: "The three lions are borrowed, and the borrowing is the history: they come from the 13th-century royal arms of Denmark, because the Duchy of Estonia was Danish — Valdemar II's conquest — and they stayed as the central charge of the greater arms of Tallinn even after the Danish king sold his Estonian dominion to the Teutonic Order in 1346. From there the motif passed to the Duchy of Estonia under Sweden, to the Estonian Knighthood and to the Russian governorate, and so to the modern republic. The golden oak branches on either side are the national tree; the lesser arms are the shield alone. Stalin's regime banned the display of these arms with every other Estonian national symbol after the 1940 occupation.",
     sources: [
@@ -3633,6 +3651,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Cross of Liberty badge in the canton marks the President of Finland as Grand Master of the Order of the Cross of Liberty, one of Finland's three state orders; otherwise the flag is identical to the swallow-tailed state and war flag.",
     sources: [
       { title: "List of flags of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
+    ],
+  },
+  "fi-regent": {
+    description: "The standard bears Finland's crowned lion coat of arms — a lion rampant on a red field, its right foreleg replaced by an armoured arm brandishing a sword and its hind paws trampling a sabre — the same arms adopted for the newly independent Finland in 1917 and used briefly for the Kingdom of Finland that was proclaimed, then abandoned, in 1918–1919 before the country became a republic.",
+    sources: [
+      { title: "Coat of arms of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
     ],
   },
   "fi-state": {
