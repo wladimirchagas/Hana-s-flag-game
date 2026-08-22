@@ -7230,7 +7230,16 @@
           "design": "The royal standard borne by Margrethe II.",
           "source": "https://en.wikipedia.org/wiki/List_of_Danish_flags",
           "sha256": "6d8a75adb055e2f210b196502cbb2bc5320e28a62db6a936e9420df4f66c25ce",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The same royal coat of arms as the modern standard — three blue crowned lions and nine red søblade (\"lake leaves\") on gold — borne throughout the 52-year reign of Margrethe II, who acceded on 14 January 1972 under the personal motto \"Guds hjælp, Folkets kærlighed, Danmarks styrke\" (God's help, the people's love, Denmark's strength); the standard was superseded when Frederik X acceded in 2024 and adopted his own reconfigured arms.",
+            "sources": [
+              {
+                "title": "Margrethe II — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Margrethe_II"
+              }
+            ]
+          }
         },
         {
           "id": "dk-arms",
