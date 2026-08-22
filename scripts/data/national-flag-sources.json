@@ -9753,10 +9753,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/4/43/Equatoguinean_Football_Federation_logo.png",
           "file": "gq/gq-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Equatorial Guinea national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Equatoguinean_Football_Federation_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Equatorial Guinea national football team.",
+          "design": "A shield of green-white-red vertical bands with a blue triangle and a tree, topped by six gold stars, ringed by a \"FEGUIFUT\" banner and a football.",
           "source": "https://en.wikipedia.org/wiki/Equatorial_Guinea_Football_Federation",
           "sha256": "3ada8388337936e3b9dfdcc638d4d593fb5d495044bfeabee8f54287d20e8274",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The six stars represent Equatorial Guinea's mainland territory and its islands, and the tree is a silk-cotton tree marking the site where the first treaty was signed between Portugal and a local ruler — both taken directly from the national coat of arms.",
+            "sources": [
+              {
+                "title": "Coat of arms of Equatorial Guinea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -13123,10 +13132,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/5/5c/Kyrgyz_Football_Union_logo.svg",
           "file": "kg/kg-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Kyrgyzstan national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Kyrgyz_Football_Union_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Kyrgyzstan national football team.",
+          "design": "A red badge shaped like a snow leopard's head, with a football bearing a gold sun/tunduk-like circular pattern at its centre.",
           "source": "https://en.wikipedia.org/wiki/Kyrgyz_Football_Union",
           "sha256": "fa4f735f92251ca7bfa79138d583929ecf93a0b48dd10861806ced70717a8277",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The snow leopard is Kyrgyzstan's national animal and gives Kyrgyz youth teams their \"Ак барстар\" (Snow Leopards) nickname; the sun-and-tunduk motif on the ball echoes the national flag, where the 40 rays represent the tribes united by the hero Manas and the tunduk at the centre is the crown of a traditional yurt, symbolising home and the unity of time and space.",
+            "sources": [
+              {
+                "title": "Kyrgyzstan national under-17 football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Kyrgyzstan_national_under-17_football_team"
+              },
+              {
+                "title": "Flag of Kyrgyzstan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -13269,10 +13291,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/e/e8/Football_Federation_of_Cambodia_logo.svg",
           "file": "kh/kh-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Cambodia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Cambodia_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Cambodia national football team.",
+          "design": "A blue line-art depiction of a four-faced Bayon-style tower, framed by a red decorative wreath, with a blue \"FFC\" ribbon and a football below.",
           "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Cambodia",
           "sha256": "9e5c5cd1fe57eb7a16676c19463cc614d04657270eaea5ce934c24e946201229",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The four-faced tower echoes the face-towers of the Bayon temple at Angkor, built under King Jayavarman VII in the late 12th–early 13th century — one of Cambodia's best-known Angkorian monuments and a symbol of the country's Khmer heritage.",
+            "sources": [
+              {
+                "title": "Bayon — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Bayon"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -13604,10 +13635,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/9/98/North_Korea_FA.png",
           "file": "kp/kp-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the North Korea national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:North_Korea_FA.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the North Korea national football team.",
+          "design": "A shield bearing the colours and red star of North Korea's national flag over a green field, with a football at the base.",
           "source": "https://en.wikipedia.org/wiki/North_Korea_national_football_team",
           "sha256": "26a4cd0c10ffb6209eb82eb148f42aa1e69b905061a80d8d65166526dce8e754",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The crest carries North Korea's national-flag symbolism: the red star and red band stand for revolutionary tradition, the white stripes for the purity and homogeneity of the Korean people, and the blue bands for sovereignty, peace and friendship.",
+            "sources": [
+              {
+                "title": "Flag of North Korea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_North_Korea"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -14265,10 +14305,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/a/a9/Lao_Football_Federation_logo.svg",
           "file": "la/la-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Laos national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Lao_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Laos national football team.",
+          "design": "A gold shield topped by Laos's national flag colours (red-blue-red with a white disc), enclosing a football that bears a gold multi-tiered stupa, with \"LAO FOOTBALL FEDERATION\" text.",
           "source": "https://en.wikipedia.org/wiki/Laos_national_football_team",
           "sha256": "de6a88b2c1413debe0f2260be4b18b720434d7e8949672c89bc6d18e72fa6d8e",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The stupa on the ball represents Pha That Luang (\"Great Stupa\"), Laos's most important national and religious monument and the centrepiece of the country's state emblem, which replaced the socialist hammer-and-sickle/red-star symbol there in 1991.",
+            "sources": [
+              {
+                "title": "Pha That Luang — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Pha_That_Luang"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -15442,10 +15491,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/0/01/Libyan_Football_Federation_Logo.png",
           "file": "ly/ly-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Libya national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Libyan_Football_Federation_Logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Libya national football team.",
+          "design": "A shield in Libya's red-black-green with a white crescent and star, topped by a gold star, ringed in gold with \"LFF\" and Arabic text, and a football at its base.",
           "source": "https://en.wikipedia.org/wiki/Libya_Football_Federation",
           "sha256": "26dc859c59ce996acc03002e2aa648f904e392bf9c49cc110e6c83e34cff0dc4",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The colours recall the flag designer Omar Faiek Shennib's stated symbolism: red for the blood sacrificed for Libya's freedom, black for the dark years under occupation, and green for agriculture and future prosperity; the crescent and star reference the Senussi dynasty's banner and King Idris, under whom Libya won independence in 1951.",
+            "sources": [
+              {
+                "title": "Flag of Libya — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Libya"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -16436,10 +16494,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/7/77/Myanmar_national_football_team_crest.svg",
           "file": "mm/mm-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Myanmar national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Myanmar_national_football_team_crest.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Myanmar national football team.",
+          "design": "A shield reading \"MYANMAR NATIONAL TEAM\" beneath Myanmar's national flag colours and white star, with a red chinthe (mythical lion) figure at its centre.",
           "source": "https://en.wikipedia.org/wiki/Myanmar_national_football_team",
           "sha256": "6438683f6db1c8c4daea66d96bbfb450f9a65c7d810d262869afac17e9a3d3dc",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The chinthe is a mythical guardian lion of Burmese tradition, traditionally placed at temple entrances to ward off evil, and is one of Myanmar's most recognisable national symbols of strength and protection.",
+            "sources": [
+              {
+                "title": "Chinthe — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Chinthe"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -16568,10 +16635,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/2/28/Mongolian_Football_Federation_logo.svg",
           "file": "mn/mn-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Mongolia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Mongolian_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Mongolia national football team.",
+          "design": "A red-and-blue silhouette of a horse's head above a football, with the Mongolian Cyrillic name of the Mongolian Football Federation.",
           "source": "https://en.wikipedia.org/wiki/Mongolian_Football_Federation",
           "sha256": "27defe7af497e57ac6d00dec78472abf7d8ea118efb6ef1b1e668479686dbef4",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The horse is Mongolia's most important cultural symbol, central to nomadic life, the Naadam festival and the historical Mongol Empire; it is treated with such reverence that a champion racehorse's mane and tail are traditionally left uncut.",
+            "sources": [
+              {
+                "title": "Mongolian horse — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Mongolian_horse"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -22973,10 +23049,19 @@
           "name": "Crest of the Sierra Leone national football team",
           "commons": "LOGO SLFA.png",
           "file": "sl/sl-football-crest.png",
-          "design": "The crest of the Sierra Leone national football team.",
+          "design": "A circular badge in green-white-blue horizontal bands reading \"SIERRA LEONE FOOTBALL ASSOCIATION\", \"SLFA\", the slogan \"RAISE YOUR GAME\" and \"EST. 1960\", with a football.",
           "source": "https://en.wikipedia.org/wiki/Sierra_Leone_national_football_team",
           "sha256": "4c72a9676b459144301e3664eb73489777a69d2230314337c11bb5f36e2fa9e0",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The bands are Sierra Leone's national colours: green for the country's mountains and agriculture, white for unity and justice, and blue for Freetown's natural harbour and the hope of contributing to world peace.",
+            "sources": [
+              {
+                "title": "Flag of Sierra Leone — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -24411,10 +24496,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/7/74/Tajikistan_Football_Federation_Logo.svg",
           "file": "tj/tj-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Tajikistan national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Tajikistan_Football_Federation_Logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Tajikistan national football team.",
+          "design": "A football coloured in Tajikistan's national red-white-green, above which a gold crowned figure holds a crown aloft, ringed by \"TAJIKISTAN FOOTBALL FEDERATION\" text.",
           "source": "https://en.wikipedia.org/wiki/Tajikistan_Football_Federation",
           "sha256": "5543ab351636a6f8647ddecdebfd7de3ff1b6fa1fe37346ac843ee1737ebfcb4",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The crown refers to the Persian word \"taj\" (crown), from which the Tajik people's name is said to derive, and is the same crown that sits at the centre of Tajikistan's state emblem and flag — a link strong enough that the national team is nicknamed \"The Crowns\".",
+            "sources": [
+              {
+                "title": "Emblem of Tajikistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Tajikistan"
+              },
+              {
+                "title": "Tajikistan national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Tajikistan_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -24623,10 +24721,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/0/04/Football_Federation_of_Turkmenistan_logo.svg",
           "file": "tm/tm-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Turkmenistan national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Turkmenistan_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Turkmenistan national football team.",
+          "design": "A green circular badge showing a footballer figure with small star-and-crescent motifs, ringed by \"TÜRKMENISTANYŇ FUTBOL FEDERASIYASY\" / \"TFF\" text.",
           "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Turkmenistan",
           "sha256": "07e242c29d69cc1d943a1aec153c9a17d54106a197a0175deeffda3ddbd9b30d",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The green field and the crescent-and-stars motif echo Turkmenistan's national flag, where green stands for life, land and prosperity, and the crescent symbolises the clear sky above the Turkmen people.",
+            "sources": [
+              {
+                "title": "Flag of Turkmenistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -26828,10 +26935,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/3d/Uzbekistan_Football_Association.svg",
           "file": "uz/uz-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Uzbekistan national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Uzbekistan_Football_Association.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Uzbekistan national football team.",
+          "design": "A dark green shield edged in white and red, with \"UZBEKISTAN FOOTBALL ASSOCIATION\" text and a football bearing a stylised pinwheel motif.",
           "source": "https://en.wikipedia.org/wiki/Uzbekistan_national_football_team",
           "sha256": "b17ac84775b3af0ebf2ae6b45ec839f188a4801af304e310c3ff72b855095472",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The shield's green, white and red echo the colours of Uzbekistan's national flag, where green stands for nature and a good harvest, white for peace, and red for the strength of life.",
+            "sources": [
+              {
+                "title": "Flag of Uzbekistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan"
+              }
+            ]
+          }
         }
       ],
       "independence": {

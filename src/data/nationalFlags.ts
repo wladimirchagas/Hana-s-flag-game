@@ -879,7 +879,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gq-spanish", category: "historical", name: "Flag of Spain", from: 1900, to: 1968, sovereign: "Spain", path: "national-flags/gq/gq-spain.svg", design: "The flag of Spain, flown over the colony of Spanish Guinea.", source: "https://en.wikipedia.org/wiki/Spanish_Guinea" },
     { id: "gq-arms", category: "coatofarms", name: "Coat of arms of Equatorial Guinea", from: 1968, to: 9999, path: "national-flags/gq/gq-arms.svg", design: "A silk-cotton tree beneath six gold stars, above the national motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea" },
     { id: "gq-passport", category: "passport", name: "Passport of Equatorial Guinea", path: "national-flags/gq/gq-passport.webp", design: "The cover of the Equatorial Guinea passport.", source: "https://gicg.net/passport/gq/" },
-    { id: "gq-football-crest", category: "footballcrest", name: "Crest of the Equatorial Guinea national football team", path: "national-flags/gq/gq-football-crest.png", design: "The crest of the Equatorial Guinea national football team.", source: "https://en.wikipedia.org/wiki/Equatorial_Guinea_Football_Federation" },
+    { id: "gq-football-crest", category: "footballcrest", name: "Crest of the Equatorial Guinea national football team", path: "national-flags/gq/gq-football-crest.png", design: "A shield of green-white-red vertical bands with a blue triangle and a tree, topped by six gold stars, ringed by a \"FEGUIFUT\" banner and a football.", source: "https://en.wikipedia.org/wiki/Equatorial_Guinea_Football_Federation" },
   ],
   "GR": [
     { id: "gr-official-national", category: "official", name: "Flag of Greece", from: 1822, to: 9999, primary: true, path: "flags/gr.svg", design: "The national flag of Greece, in the form adopted in 1822.", source: "https://en.wikipedia.org/wiki/Flag_of_Greece" },
@@ -1153,7 +1153,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kg-russian-empire", category: "historical", name: "Flag of the Russian Empire", from: 1876, to: 1917, sovereign: "the Russian Empire", path: "national-flags/kg/kg-russian-empire.svg", design: "The white-blue-red flag of the Russian Empire, which ruled the Kyrgyz lands from 1876 until the empire fell in 1917.", source: "https://en.wikipedia.org/wiki/Russian_Empire" },
     { id: "kg-emblem", category: "coatofarms", name: "Emblem of Kyrgyzstan", from: 1994, to: 9999, path: "national-flags/kg/kg-emblem.svg", design: "A white falcon with wings spread before the Tian Shan mountains and a rising sun, framed by wheat and cotton.", source: "https://en.wikipedia.org/wiki/Emblem_of_Kyrgyzstan" },
     { id: "kg-passport", category: "passport", name: "Passport of Kyrgyzstan", path: "national-flags/kg/kg-passport.webp", design: "The cover of the Kyrgyzstan passport.", source: "https://gicg.net/passport/kg/" },
-    { id: "kg-football-crest", category: "footballcrest", name: "Crest of the Kyrgyzstan national football team", path: "national-flags/kg/kg-football-crest.svg", design: "The crest of the Kyrgyzstan national football team.", source: "https://en.wikipedia.org/wiki/Kyrgyz_Football_Union" },
+    { id: "kg-football-crest", category: "footballcrest", name: "Crest of the Kyrgyzstan national football team", path: "national-flags/kg/kg-football-crest.svg", design: "A red badge shaped like a snow leopard's head, with a football bearing a gold sun/tunduk-like circular pattern at its centre.", source: "https://en.wikipedia.org/wiki/Kyrgyz_Football_Union" },
   ],
   "KH": [
     { id: "kh-official-national", category: "official", name: "Flag of Cambodia", from: 1948, to: 9999, primary: true, path: "flags/kh.svg", design: "The national flag of Cambodia, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Cambodia" },
@@ -1165,7 +1165,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kh-royal-standard", category: "standard", name: "Royal Standard of the King of Cambodia", from: 1993, to: 9999, path: "national-flags/kh/cambodia-royal-standard.svg", design: "The royal standard bearing the arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
     { id: "kh-arms", category: "coatofarms", name: "Royal arms of Cambodia", from: 1953, to: 9999, path: "national-flags/kh/cambodia-arms.svg", design: "A sacred sword on ceremonial trays beneath the Unalome, on a mantle held by a gajasingha and a rajasingha bearing two five-tiered parasols, over the motto Ruler of the Kingdom of Cambodia.", source: "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia" },
     { id: "kh-passport", category: "passport", name: "Passport of Cambodia", path: "national-flags/kh/kh-passport.webp", design: "The cover of the Cambodia passport.", source: "https://gicg.net/passport/kh/" },
-    { id: "kh-football-crest", category: "footballcrest", name: "Crest of the Cambodia national football team", path: "national-flags/kh/kh-football-crest.svg", design: "The crest of the Cambodia national football team.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Cambodia" },
+    { id: "kh-football-crest", category: "footballcrest", name: "Crest of the Cambodia national football team", path: "national-flags/kh/kh-football-crest.svg", design: "A blue line-art depiction of a four-faced Bayon-style tower, framed by a red decorative wreath, with a blue \"FFC\" ribbon and a football below.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Cambodia" },
   ],
   "KI": [
     { id: "ki-official-national", category: "official", name: "Flag of Kiribati", from: 1979, to: 9999, primary: true, path: "flags/ki.svg", design: "The national flag, adopted at independence in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
@@ -1194,7 +1194,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kp-korean-empire", category: "historical", name: "Flag of the Korean Empire", from: 1882, to: 1910, priorPolity: "the Korean Empire", path: "national-flags/kp/kp-korean-empire.svg", design: "The Taegukgi of the Korean Empire (and the preceding Joseon kingdom), the last flag of an independent Korean state before Japan annexed the peninsula in 1910.", source: "https://en.wikipedia.org/wiki/Korean_Empire" },
     { id: "kp-arms", category: "coatofarms", name: "Emblem of North Korea", from: 1948, to: 9999, path: "national-flags/kp/kp-arms.svg", design: "A hydroelectric dam beneath Mount Paektu and a red star, framed by ears of rice bound with a red ribbon.", source: "https://en.wikipedia.org/wiki/Emblem_of_North_Korea" },
     { id: "kp-passport", category: "passport", name: "Passport of North Korea", path: "national-flags/kp/kp-passport.webp", design: "The cover of the North Korea passport.", source: "https://gicg.net/passport/kp/" },
-    { id: "kp-football-crest", category: "footballcrest", name: "Crest of the North Korea national football team", path: "national-flags/kp/kp-football-crest.png", design: "The crest of the North Korea national football team.", source: "https://en.wikipedia.org/wiki/North_Korea_national_football_team" },
+    { id: "kp-football-crest", category: "footballcrest", name: "Crest of the North Korea national football team", path: "national-flags/kp/kp-football-crest.png", design: "A shield bearing the colours and red star of North Korea's national flag over a green field, with a football at the base.", source: "https://en.wikipedia.org/wiki/North_Korea_national_football_team" },
   ],
   "KR": [
     { id: "kr-official-national", category: "official", name: "Flag of South Korea", from: 1883, to: 9999, primary: true, path: "flags/kr.svg", design: "The national flag of South Korea, in the form adopted in 1883.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Korea" },
@@ -1248,7 +1248,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "la-france", category: "historical", name: "Flag of France", from: 1893, to: 1953, sovereign: "France", path: "national-flags/la/la-france.svg", design: "The flag of France, flown while Laos was a protectorate within French Indochina until independence in 1953.", source: "https://en.wikipedia.org/wiki/French_protectorate_of_Laos" },
     { id: "la-emblem", category: "coatofarms", name: "Emblem of Laos", from: 1991, to: 9999, path: "national-flags/la/laos-emblem.svg", design: "The Pha That Luang stupa above a dam, road and paddy field, framed by rice ears and a red ribbon with the name of the state.", source: "https://en.wikipedia.org/wiki/Emblem_of_Laos" },
     { id: "la-passport", category: "passport", name: "Passport of Laos", path: "national-flags/la/la-passport.webp", design: "The cover of the Laos passport.", source: "https://gicg.net/passport/la/" },
-    { id: "la-football-crest", category: "footballcrest", name: "Crest of the Laos national football team", path: "national-flags/la/la-football-crest.svg", design: "The crest of the Laos national football team.", source: "https://en.wikipedia.org/wiki/Laos_national_football_team" },
+    { id: "la-football-crest", category: "footballcrest", name: "Crest of the Laos national football team", path: "national-flags/la/la-football-crest.svg", design: "A gold shield topped by Laos's national flag colours (red-blue-red with a white disc), enclosing a football that bears a gold multi-tiered stupa, with \"LAO FOOTBALL FEDERATION\" text.", source: "https://en.wikipedia.org/wiki/Laos_national_football_team" },
   ],
   "LB": [
     { id: "lb-official-national", category: "official", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "The national flag of Lebanon, adopted at independence in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
@@ -1345,7 +1345,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ly-airforce", category: "military", name: "Flag of the Libyan Air Force", from: 2011, to: 9999, path: "national-flags/ly/ly-af.svg", design: "The flag of the Libyan Air Force.", source: "https://en.wikipedia.org/wiki/Libyan_Air_Force" },
     { id: "ly-jack", category: "maritime", name: "Naval ensign of Libya", from: 2011, to: 9999, path: "national-flags/ly/ly-jack.svg", design: "The naval ensign of Libya.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
     { id: "ly-passport", category: "passport", name: "Passport of Libya", path: "national-flags/ly/ly-passport.webp", design: "The cover of the Libya passport.", source: "https://gicg.net/passport/ly/" },
-    { id: "ly-football-crest", category: "footballcrest", name: "Crest of the Libya national football team", path: "national-flags/ly/ly-football-crest.png", design: "The crest of the Libya national football team.", source: "https://en.wikipedia.org/wiki/Libya_Football_Federation" },
+    { id: "ly-football-crest", category: "footballcrest", name: "Crest of the Libya national football team", path: "national-flags/ly/ly-football-crest.png", design: "A shield in Libya's red-black-green with a white crescent and star, topped by a gold star, ringed in gold with \"LFF\" and Arabic text, and a football at its base.", source: "https://en.wikipedia.org/wiki/Libya_Football_Federation" },
   ],
   "MA": [
     { id: "ma-official-national", category: "official", name: "Flag of Morocco", from: 1915, to: 9999, primary: true, path: "flags/ma.svg", design: "The national flag of Morocco, in the form adopted in 1915.", source: "https://en.wikipedia.org/wiki/Flag_of_Morocco" },
@@ -1424,7 +1424,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mm-mod", category: "military", name: "Flag of the Ministry of Defence", path: "national-flags/mm/myanmar-mod.svg", design: "The defence ministry's flag.", source: "https://en.wikipedia.org/wiki/List_of_Burmese_flags" },
     { id: "mm-seal", category: "coatofarms", name: "State Seal of Myanmar", from: 2010, to: 9999, path: "national-flags/mm/myanmar-seal.svg", design: "The map of the country between two Burmese royal lions, flanked by sprigs of Eugenia, over a ribbon bearing the name of the state.", source: "https://en.wikipedia.org/wiki/State_Seal_of_Myanmar" },
     { id: "mm-passport", category: "passport", name: "Passport of Myanmar", path: "national-flags/mm/mm-passport.webp", design: "The cover of the Myanmar passport.", source: "https://gicg.net/passport/mm/" },
-    { id: "mm-football-crest", category: "footballcrest", name: "Crest of the Myanmar national football team", path: "national-flags/mm/mm-football-crest.svg", design: "The crest of the Myanmar national football team.", source: "https://en.wikipedia.org/wiki/Myanmar_national_football_team" },
+    { id: "mm-football-crest", category: "footballcrest", name: "Crest of the Myanmar national football team", path: "national-flags/mm/mm-football-crest.svg", design: "A shield reading \"MYANMAR NATIONAL TEAM\" beneath Myanmar's national flag colours and white star, with a red chinthe (mythical lion) figure at its centre.", source: "https://en.wikipedia.org/wiki/Myanmar_national_football_team" },
   ],
   "MN": [
     { id: "mn-official-national", category: "official", name: "Flag of Mongolia", from: 1992, to: 9999, primary: true, path: "flags/mn.svg", design: "The national flag of Mongolia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
@@ -1435,7 +1435,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mn-air-force", category: "military", name: "Flag of the Mongolian Air Force", from: 2021, to: 9999, path: "national-flags/mn/mongolia-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Mongolian_flags" },
     { id: "mn-emblem", category: "coatofarms", name: "Emblem of Mongolia", from: 1992, to: 9999, path: "national-flags/mn/mongolia-emblem.svg", design: "The Soyombo above a wind horse on a blue disc, within a wheel of eternity, beneath a wish-granting jewel and above a lotus and mountains.", source: "https://en.wikipedia.org/wiki/Emblem_of_Mongolia" },
     { id: "mn-passport", category: "passport", name: "Passport of Mongolia", path: "national-flags/mn/mn-passport.webp", design: "The cover of the Mongolia passport.", source: "https://gicg.net/passport/mn/" },
-    { id: "mn-football-crest", category: "footballcrest", name: "Crest of the Mongolia national football team", path: "national-flags/mn/mn-football-crest.svg", design: "The crest of the Mongolia national football team.", source: "https://en.wikipedia.org/wiki/Mongolian_Football_Federation" },
+    { id: "mn-football-crest", category: "footballcrest", name: "Crest of the Mongolia national football team", path: "national-flags/mn/mn-football-crest.svg", design: "A red-and-blue silhouette of a horse's head above a football, with the Mongolian Cyrillic name of the Mongolian Football Federation.", source: "https://en.wikipedia.org/wiki/Mongolian_Football_Federation" },
   ],
   "MO": [
     { id: "mo-official-national", category: "official", name: "Flag of Macau", from: 1999, to: 9999, path: "flags/sub/CN/CN-MO.svg", design: "The regional flag — a white lotus over the Sai Van Bridge and water on green — flown since the 1999 handover.", source: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
@@ -1961,7 +1961,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sl-uk", category: "historical", name: "Flag of the United Kingdom", from: 1808, to: 1961, sovereign: "the United Kingdom", path: "national-flags/sl/sl-uk.svg", design: "The Union Flag, flown while Sierra Leone was a British Crown colony and protectorate.", source: "https://en.wikipedia.org/wiki/British_Sierra_Leone" },
     { id: "sl-arms", category: "coatofarms", name: "Coat of arms of Sierra Leone", from: 1960, to: 9999, path: "national-flags/sl/sl-arms.svg", design: "A green shield with a lion beneath a zigzag chief and three torches, supported by two lions.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sierra_Leone" },
     { id: "sl-passport", category: "passport", name: "Passport of Sierra Leone", path: "national-flags/sl/sl-passport.webp", design: "The cover of the Sierra Leone passport.", source: "https://gicg.net/passport/sl/" },
-    { id: "sl-football-crest", category: "footballcrest", name: "Crest of the Sierra Leone national football team", path: "national-flags/sl/sl-football-crest.png", design: "The crest of the Sierra Leone national football team.", source: "https://en.wikipedia.org/wiki/Sierra_Leone_national_football_team" },
+    { id: "sl-football-crest", category: "footballcrest", name: "Crest of the Sierra Leone national football team", path: "national-flags/sl/sl-football-crest.png", design: "A circular badge in green-white-blue horizontal bands reading \"SIERRA LEONE FOOTBALL ASSOCIATION\", \"SLFA\", the slogan \"RAISE YOUR GAME\" and \"EST. 1960\", with a football.", source: "https://en.wikipedia.org/wiki/Sierra_Leone_national_football_team" },
   ],
   "SM": [
     { id: "sm-official-national", category: "official", name: "Flag of San Marino", from: 1862, to: 9999, primary: true, path: "flags/sm.svg", design: "The national flag, in use since 1862.", source: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
@@ -2080,7 +2080,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tj-russian-empire", category: "historical", name: "Flag of the Russian Empire", from: 1868, to: 1917, sovereign: "the Russian Empire", path: "national-flags/tj/tj-russian-empire.svg", design: "The white-blue-red flag of the Russian Empire, which ruled the Tajik lands from 1868 until the empire fell in 1917.", source: "https://en.wikipedia.org/wiki/Russian_Empire" },
     { id: "tj-emblem", category: "coatofarms", name: "Emblem of Tajikistan", from: 1993, to: 9999, path: "national-flags/tj/tj-emblem.svg", design: "A crown and arc of stars over a sun and the Pamir mountains, in a wreath of wheat and cotton.", source: "https://en.wikipedia.org/wiki/Emblem_of_Tajikistan" },
     { id: "tj-passport", category: "passport", name: "Passport of Tajikistan", path: "national-flags/tj/tj-passport.webp", design: "The cover of the Tajikistan passport.", source: "https://gicg.net/passport/tj/" },
-    { id: "tj-football-crest", category: "footballcrest", name: "Crest of the Tajikistan national football team", path: "national-flags/tj/tj-football-crest.svg", design: "The crest of the Tajikistan national football team.", source: "https://en.wikipedia.org/wiki/Tajikistan_Football_Federation" },
+    { id: "tj-football-crest", category: "footballcrest", name: "Crest of the Tajikistan national football team", path: "national-flags/tj/tj-football-crest.svg", design: "A football coloured in Tajikistan's national red-white-green, above which a gold crowned figure holds a crown aloft, ringed by \"TAJIKISTAN FOOTBALL FEDERATION\" text.", source: "https://en.wikipedia.org/wiki/Tajikistan_Football_Federation" },
   ],
   "TK": [
     { id: "tk-official-national", category: "official", name: "Flag of Tokelau", from: 2009, to: 9999, path: "flags/tk.svg", design: "A blue field bearing a yellow Tokelauan canoe sailing towards the Southern Cross, shown as four white stars.", source: "https://en.wikipedia.org/wiki/Flag_of_Tokelau" },
@@ -2099,7 +2099,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tm-russian-empire", category: "historical", name: "Flag of the Russian Empire", from: 1881, to: 1917, sovereign: "the Russian Empire", path: "national-flags/tm/tm-russian-empire.svg", design: "The white-blue-red flag of the Russian Empire, which ruled Transcaspia from 1881 until the empire fell in 1917.", source: "https://en.wikipedia.org/wiki/Russian_Empire" },
     { id: "tm-emblem", category: "coatofarms", name: "Emblem of Turkmenistan", from: 1992, to: 9999, path: "national-flags/tm/tm-emblem.svg", design: "An Akhal-Teke horse ringed by carpet guls, wheat and cotton, beneath a crescent and five stars.", source: "https://en.wikipedia.org/wiki/Emblem_of_Turkmenistan" },
     { id: "tm-passport", category: "passport", name: "Passport of Turkmenistan", path: "national-flags/tm/tm-passport.webp", design: "The cover of the Turkmenistan passport.", source: "https://gicg.net/passport/tm/" },
-    { id: "tm-football-crest", category: "footballcrest", name: "Crest of the Turkmenistan national football team", path: "national-flags/tm/tm-football-crest.svg", design: "The crest of the Turkmenistan national football team.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Turkmenistan" },
+    { id: "tm-football-crest", category: "footballcrest", name: "Crest of the Turkmenistan national football team", path: "national-flags/tm/tm-football-crest.svg", design: "A green circular badge showing a footballer figure with small star-and-crescent motifs, ringed by \"TÜRKMENISTANYŇ FUTBOL FEDERASIYASY\" / \"TFF\" text.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Turkmenistan" },
   ],
   "TN": [
     { id: "tn-official-national", category: "official", name: "Flag of Tunisia", from: 1831, to: 9999, primary: true, path: "flags/tn.svg", design: "The national flag of Tunisia, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
@@ -2275,7 +2275,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "uz-president", category: "standard", name: "Presidential Standard of Uzbekistan", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
     { id: "uz-emblem", category: "coatofarms", name: "Emblem of Uzbekistan", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-emblem.svg", design: "A Huma bird with outstretched wings over a sunrise, mountains and two rivers, within cotton and wheat.", source: "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan" },
     { id: "uz-passport", category: "passport", name: "Passport of Uzbekistan", path: "national-flags/uz/uz-passport.webp", design: "The cover of the Uzbekistan passport.", source: "https://gicg.net/passport/uz/" },
-    { id: "uz-football-crest", category: "footballcrest", name: "Crest of the Uzbekistan national football team", path: "national-flags/uz/uz-football-crest.svg", design: "The crest of the Uzbekistan national football team.", source: "https://en.wikipedia.org/wiki/Uzbekistan_national_football_team" },
+    { id: "uz-football-crest", category: "footballcrest", name: "Crest of the Uzbekistan national football team", path: "national-flags/uz/uz-football-crest.svg", design: "A dark green shield edged in white and red, with \"UZBEKISTAN FOOTBALL ASSOCIATION\" text and a football bearing a stylised pinwheel motif.", source: "https://en.wikipedia.org/wiki/Uzbekistan_national_football_team" },
   ],
   "VA": [
     { id: "va-official-national", category: "official", name: "Flag of Vatican City", from: 1929, to: 9999, primary: true, path: "flags/va.svg", design: "The national flag of Vatican City, in the form adopted in 1929.", source: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
@@ -3467,6 +3467,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Equatorial Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea" },
     ],
   },
+  "gq-football-crest": {
+    description: "The six stars represent Equatorial Guinea's mainland territory and its islands, and the tree is a silk-cotton tree marking the site where the first treaty was signed between Portugal and a local ruler — both taken directly from the national coat of arms.",
+    sources: [
+      { title: "Coat of arms of Equatorial Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea" },
+    ],
+  },
   "gr-arms": {
     description: "The arms are a heraldic form of the national flag: a white Greek cross on a blue shield, the cross for the Orthodox Christian faith and the Byzantine inheritance that the 1821 revolution invoked. The two laurel branches around it stand for glory and honour. The blue shield with the white cross has been the core of every Greek coat of arms since 1833; the present version was adopted in 1975 with the restoration of the republic.",
     sources: [
@@ -3755,10 +3761,23 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Kyrgyzstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kyrgyzstan" },
     ],
   },
+  "kg-football-crest": {
+    description: "The snow leopard is Kyrgyzstan's national animal and gives Kyrgyz youth teams their \"Ак барстар\" (Snow Leopards) nickname; the sun-and-tunduk motif on the ball echoes the national flag, where the 40 rays represent the tribes united by the hero Manas and the tunduk at the centre is the crown of a traditional yurt, symbolising home and the unity of time and space.",
+    sources: [
+      { title: "Kyrgyzstan national under-17 football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Kyrgyzstan_national_under-17_football_team" },
+      { title: "Flag of Kyrgyzstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
+    ],
+  },
   "kh-arms": {
     description: "These are the arms of the Cambodian monarchy, existing since the independent Kingdom was founded in 1953 and carried on the reigning king's royal standard. At the centre a sacred sword rests on two pedestalled ceremonial trays (phan) beneath the Unalome, the Khmer form of the Aum sign, all on a royal mantle. The two mythical beasts supporting it are the gajasingha (part elephant, part lion) and the rajasingha (the royal lion), and between them they hold two five-tiered royal parasols standing for the King and the Queen — the tiered parasol being the mark of Southeast Asian kingship. The Khmer banner beneath reads \"Ruler of the Kingdom of Cambodia\". The arms were abolished under the Khmer Republic (1970–1975) and the Khmer Rouge, and restored in 1993 with the monarchy.",
     sources: [
       { title: "Royal arms of Cambodia — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia" },
+    ],
+  },
+  "kh-football-crest": {
+    description: "The four-faced tower echoes the face-towers of the Bayon temple at Angkor, built under King Jayavarman VII in the late 12th–early 13th century — one of Cambodia's best-known Angkorian monuments and a symbol of the country's Khmer heritage.",
+    sources: [
+      { title: "Bayon — Wikipedia", url: "https://en.wikipedia.org/wiki/Bayon" },
     ],
   },
   "ki-arms": {
@@ -3783,6 +3802,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 1948 and revised in 1993, the emblem shows the Sup'ung hydroelectric dam beneath a mountain — specified in 1993 as Mount Paektu, the peak tied in state ideology to the anti-Japanese revolutionary tradition — crowned by a red socialist star. The dam stands for the industrial power and self-sufficiency of the north, which produced most of Korea's electricity in 1948; the surrounding ears of rice, bound by a red ribbon carrying the state's name, stand for agriculture.",
     sources: [
       { title: "Emblem of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_North_Korea" },
+    ],
+  },
+  "kp-football-crest": {
+    description: "The crest carries North Korea's national-flag symbolism: the red star and red band stand for revolutionary tradition, the white stripes for the purity and homogeneity of the Korean people, and the blue bands for sovereignty, peace and friendship.",
+    sources: [
+      { title: "Flag of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
     ],
   },
   "kr-arms": {
@@ -3832,6 +3857,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A socialist-style emblem, and one that quietly recorded a political change. At its centre is the Pha That Luang, the golden stupa in Vientiane that is the national shrine — a Buddhist monument at the heart of a communist state's emblem. Around it are the country's development: the Nam Ngum dam for hydro-electric power, an asphalt road, a stylised irrigated paddy field, and a cogwheel for industry, framed by crescent-shaped stalks of ripe rice. When it was first adopted in 1975 the top carried a red star with a hammer and sickle; in August 1991, reacting to the fall of the Soviet Union, Laos replaced those with the Pha That Luang — putting the national shrine where the communist star had been.",
     sources: [
       { title: "Emblem of Laos — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Laos" },
+    ],
+  },
+  "la-football-crest": {
+    description: "The stupa on the ball represents Pha That Luang (\"Great Stupa\"), Laos's most important national and religious monument and the centrepiece of the country's state emblem, which replaced the socialist hammer-and-sickle/red-star symbol there in 1991.",
+    sources: [
+      { title: "Pha That Luang — Wikipedia", url: "https://en.wikipedia.org/wiki/Pha_That_Luang" },
     ],
   },
   "lb-arms": {
@@ -3910,6 +3941,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms combine symbols of Latvian statehood with the arms of the historical regions. The golden sun in the blue upper field is freedom: it had been the badge of the Latvian Riflemen units of the Imperial Russian Army in the First World War, drawn with 17 rays for the 17 Latvian-inhabited districts. The three golden stars above the shield are the three historical regions — Vidzeme, Latgale and Kurzeme. Below, the red lion is the lion of the arms of Courland, standing for Courland and Semigallia and appearing there as early as 1565, while the silver griffin is Vidzeme and Latgale. The oak branches at the foot are the national tree.",
     sources: [
       { title: "Coat of arms of Latvia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
+    ],
+  },
+  "ly-football-crest": {
+    description: "The colours recall the flag designer Omar Faiek Shennib's stated symbolism: red for the blood sacrificed for Libya's freedom, black for the dark years under occupation, and green for agriculture and future prosperity; the crescent and star reference the Senussi dynasty's banner and King Idris, under whom Libya won independence in 1951.",
+    sources: [
+      { title: "Flag of Libya — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
     ],
   },
   "ma-arms": {
@@ -4011,10 +4048,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "State Seal of Myanmar — Wikipedia", url: "https://en.wikipedia.org/wiki/State_Seal_of_Myanmar" },
     ],
   },
+  "mm-football-crest": {
+    description: "The chinthe is a mythical guardian lion of Burmese tradition, traditionally placed at temple entrances to ward off evil, and is one of Myanmar's most recognisable national symbols of strength and protection.",
+    sources: [
+      { title: "Chinthe — Wikipedia", url: "https://en.wikipedia.org/wiki/Chinthe" },
+    ],
+  },
   "mn-emblem": {
     description: "The circular blue field is the eternal blue sky, the object of the old Mongol reverence for Tengri; the rim around it is the tumen nasan, the endless knot of eternity. At the centre the Soyombo — the national ideograph that also heads the flag — sits above a wind horse, the treasured steed of Buddhist tradition carrying a wish-granting jewel, and together they stand for Mongolia's independence, sovereignty and spirit. Sun, moon and Mahayana Buddhist symbols complete it, over a lotus base and mountains. It replaced the People's Republic emblem of 1960–1991, which had shown an ordinary horseman and a rising sun over mountains with socialist devices in place of the Buddhist ones.",
     sources: [
       { title: "Emblem of Mongolia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mongolia" },
+    ],
+  },
+  "mn-football-crest": {
+    description: "The horse is Mongolia's most important cultural symbol, central to nomadic life, the Naadam festival and the historical Mongol Empire; it is treated with such reverence that a champion racehorse's mane and tail are traditionally left uncut.",
+    sources: [
+      { title: "Mongolian horse — Wikipedia", url: "https://en.wikipedia.org/wiki/Mongolian_horse" },
     ],
   },
   "mo-emblem": {
@@ -4532,6 +4581,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Sierra Leone — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sierra_Leone" },
     ],
   },
+  "sl-football-crest": {
+    description: "The bands are Sierra Leone's national colours: green for the country's mountains and agriculture, white for unity and justice, and blue for Freetown's natural harbour and the hope of contributing to world peace.",
+    sources: [
+      { title: "Flag of Sierra Leone — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone" },
+    ],
+  },
   "sm-arms": {
     description: "Three towers topped with ostrich feathers stand on the three summits of Monte Titano — the towers Guaita, Cesta and Montale that still guard the old republic. A crown sits above for the state's sovereignty, framed by branches of laurel and oak, and the scroll reads LIBERTAS — “Liberty,” the word San Marino, one of the world's oldest republics, has kept for centuries.",
     sources: [
@@ -4679,6 +4734,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Tajikistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Tajikistan" },
     ],
   },
+  "tj-football-crest": {
+    description: "The crown refers to the Persian word \"taj\" (crown), from which the Tajik people's name is said to derive, and is the same crown that sits at the centre of Tajikistan's state emblem and flag — a link strong enough that the national team is nicknamed \"The Crowns\".",
+    sources: [
+      { title: "Emblem of Tajikistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Tajikistan" },
+      { title: "Tajikistan national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Tajikistan_national_football_team" },
+    ],
+  },
   "tk-official-national": {
     description: "Tokelau's first official flag, presented on 7 September 2009. A yellow Tokelauan canoe sails across a blue field towards the Southern Cross — the four white stars — which serves as the navigator's guide. The voyaging canoe stands for Tokelau's own journey towards the system of governance that best fits its people, steered, like the ancient navigators, by the stars.",
     sources: [
@@ -4695,6 +4757,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "At the centre, on a blue disc, stands the Akhal-Teke stallion Yanardag — the prized Turkmen horse and a source of national pride. Around it a red ring carries the five carpet guls, the traditional weaving designs of the country's five regions, the same guls as on the flag. Ears of wheat and bolls of cotton frame the whole, and a white crescent with five stars sits above.",
     sources: [
       { title: "Emblem of Turkmenistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Turkmenistan" },
+    ],
+  },
+  "tm-football-crest": {
+    description: "The green field and the crescent-and-stars motif echo Turkmenistan's national flag, where green stands for life, land and prosperity, and the crescent symbolises the clear sky above the Turkmen people.",
+    sources: [
+      { title: "Flag of Turkmenistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
     ],
   },
   "tn-arms": {
@@ -4836,6 +4904,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is the country's natural wealth arranged around one legendary bird. On the left is a cotton plant — the crop that has dominated Uzbek industry and agriculture since the Soviet era, when the Uzbek SSR was one of the USSR's main suppliers — and on the right ears of wheat. At the centre the Huma, a legendary bird of Persian and Turkic myth, spreads its wings for peace, happiness and the striving for freedom. Enclosed by those wings are a rising sun over mountains and green pastures, and the two rivers that make the country's agriculture possible: the Amu Darya and the Syr Darya. Before the Soviet period the khanates and emirates here — Bukhara, Khiva — had no coat of arms in the Western sense at all.",
     sources: [
       { title: "Emblem of Uzbekistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan" },
+    ],
+  },
+  "uz-football-crest": {
+    description: "The shield's green, white and red echo the colours of Uzbekistan's national flag, where green stands for nature and a good harvest, white for peace, and red for the strength of life.",
+    sources: [
+      { title: "Flag of Uzbekistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan" },
     ],
   },
   "va-arms": {
