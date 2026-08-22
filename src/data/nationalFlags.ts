@@ -3765,6 +3765,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
     ],
   },
+  "eg-navy": {
+    description: "The Egyptian Navy's ensign is the national flag defaced with a gold-outlined rendering of the Eagle of Saladin, the national emblem also seen at the centre of the plain national flag. The eagle, adopted as Egypt's emblem after the 1952 revolution, recalls the 12th-century sultan Saladin, who united Egypt and Syria and is honoured as a symbol of Arab strength and unity; the shield on its breast carries the colours of the national flag.",
+    sources: [
+      { title: "Wikipedia — Coat of arms of Egypt", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt" },
+      { title: "Wikipedia — List of Egyptian flags", url: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
+    ],
+  },
   "eg-naval-ensign": {
     description: "The national flag — red for the blood of martyrs, white for peace and black for the dark years overcome before the 1952 revolution — is defaced in the canton with two white fouled (rope-wrapped) crossed anchors, a traditional maritime emblem marking the ensign, adopted in 1984, as that of the Egyptian Navy.",
     sources: [
@@ -4284,6 +4291,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Honduras — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
     ],
   },
+  "hr-air-force": {
+    description: "The Croatian Air Force's flag is dark blue bearing the service's badge — a winged square — above the Croatian state coat of arms. The winged square marks the flag as belonging to the air arm of the armed forces, while the chequered shield beneath it ties the service to the Croatian state it defends, the same red-and-white checkerboard (šahovnica) used on the national coat of arms.",
+    sources: [
+      { title: "Flags of the World — Croatia: Air Force", url: "https://www.crwflags.com/fotw/flags/hr%5Eaf.html" },
+      { title: "Wikipedia — List of Croatian flags", url: "https://en.wikipedia.org/wiki/List_of_Croatian_flags" },
+    ],
+  },
   "hr-naval-jack": {
     description: "The red-and-white checkerboard (šahovnica) is Croatia's central national symbol, used as a heraldic device since at least the 16th century; the five smaller shields above it represent Croatia's historic regions.",
     sources: [
@@ -4579,6 +4593,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A square blue field, bordered gold, bears the Emblem of the Italian Republic: a steel cogwheel for labour — recalling the constitution's opening line that Italy is a republic 'founded on work' — at the centre of a five-pointed white Star of Italy (the Stella d'Italia, an ancient national symbol dating to Graeco-Roman tradition, read as the country's shining destiny), ringed by an olive branch for peace and an oak branch for the strength and dignity of the Italian people; the square shape, adopted from the flag of the Napoleonic-era Italian Republic, and its blue border stand for the four branches of the armed forces the President commands.",
     sources: [
       { title: "Presidential standard of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Presidential_standard_of_Italy" },
+    ],
+  },
+  "it-pm": {
+    description: "The Prime Minister's standard is a blue flag bordered in gold bearing the Emblem of the Italian Republic at its centre. Adopted in 1948, the emblem's white star stands for Italy itself, an ancient symbol of the country long associated with its personification; the steel cogwheel represents work, recalling the Constitution's opening declaration that Italy is a republic founded on labour; and the olive branch and oak branch, framing the star and wheel, stand respectively for the nation's desire for peace and for the strength and dignity of its people.",
+    sources: [
+      { title: "Wikipedia — Emblem of Italy", url: "https://en.wikipedia.org/wiki/Emblem_of_Italy" },
+      { title: "Wikipedia — List of Italian flags", url: "https://en.wikipedia.org/wiki/List_of_Italian_flags" },
     ],
   },
   "it-arms": {
@@ -5803,6 +5824,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
     ],
   },
+  "pt-president": {
+    description: "The presidential standard is a plain green flag bearing only the sphere and shield of the national coat of arms, without the surrounding wreath and ribbon used on the national flag. The armillary sphere recalls the navigational instrument used by Portuguese kings who sponsored the great voyages of exploration, and was a personal emblem of Prince Henry the Navigator; it had been abandoned as a state symbol in the 1820s after Brazil's independence but was revived in 1911, the year after the revolution that ended the monarchy and established the Portuguese Republic.",
+    sources: [
+      { title: "Flags of the World — Portugal, Presidential Standard", url: "https://www.crwflags.com/fotw/flags/pt_pres.html" },
+      { title: "Wikipedia — List of Portuguese flags", url: "https://en.wikipedia.org/wiki/List_of_Portuguese_flags" },
+    ],
+  },
   "pt-arms": {
     description: "The five blue shields set in a cross — the quinas — are traditionally read as the Five Wounds of Christ, or the five Moorish kings said to have been defeated at Ourique; the five silver bezants on each recall the monarch's right to mint coin. The red border of seven golden castles, fixed at seven by King Sebastian, stands for strongholds taken from the Moors in the Reconquista. Beneath sits the golden armillary sphere, the navigator's instrument that marks Portugal's Age of Discovery. The same shields and castles appear on the national flag.",
     sources: [
@@ -6321,6 +6349,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A yellow field — the colour of Thai royalty and, in this context, of Buddhism — bears the red Garuda, the mythical bird-man mount of the Hindu god Vishnu (Narayana). Thai kings have long been regarded as incarnations of Narayana, so the Garuda, shown tearing the serpent Naga, came to symbolise the divine authority and protective power of the monarchy; it has served this role since the Ayutthaya kingdom, and the standard's present form dates from Vajiravudh's (Rama VI's) 1910 design.",
     sources: [
       { title: "Royal Standard of Thailand — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Standard_of_Thailand" },
+    ],
+  },
+  "th-regent": {
+    description: "The Standard of the Regent is a white square flag bearing the Garuda above a shield depicting the national flag, distinguishing it from the standards of the monarch. The Garuda, a mythical being part man and part bird, has been the emblem of Thai royal authority since the Ayutthaya kingdom and is regarded as the bearer of the god Vishnu and a protective spirit; it has served as the official seal of the Thai monarchy since this standard was established in 1936.",
+    sources: [
+      { title: "Flags of the World — Thailand, Royal and Regent Standards", url: "https://www.crwflags.com/fotw/flags/th_roya.html" },
+      { title: "Wikipedia — List of Thai flags", url: "https://en.wikipedia.org/wiki/List_of_Thai_flags" },
     ],
   },
   "th-emblem": {
