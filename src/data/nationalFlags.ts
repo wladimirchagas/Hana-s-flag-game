@@ -2755,6 +2755,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Australian Defence Force Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Australian_Defence_Force_Ensign" },
     ],
   },
+  "au-navy": {
+    description: "A defaced British White Ensign in which the red St George's Cross is replaced by the Commonwealth Star and the Southern Cross — the Commonwealth Star for Australia's federated states and territories, and the Southern Cross for its use in navigation by early explorers and its significance to First Nations peoples, some of whom saw it as the footprint of a giant wedge-tailed eagle. It was adopted in 1967 so the Royal Australian Navy would no longer fight under the ensign of another nation, as it had during the Vietnam War.",
+    sources: [
+      { title: "Australian white ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Australian_white_ensign" },
+    ],
+  },
+  "au-raaf": {
+    description: "Based on the national flag with the field changed to Air Force blue, the Southern Cross tilted to make room for the RAAF roundel — a red kangaroo 'in motion' within a dark blue ring, adopted in 1956 in place of the British roundel's plain red disc, chosen by the Air Board over alternatives like the Southern Cross and a sprig of wattle to give the RAAF a distinctively Australian national emblem.",
+    sources: [
+      { title: "Royal Australian Air Force Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Australian_Air_Force_Ensign" },
+    ],
+  },
   "au-royal": {
     description: "The banner reproduces Australia's national coat of arms, whose kangaroo and emu supporters — both unable to walk backwards — represent a nation moving only forward; its shield, quartered with the six states' own badges under an ermine border, represents the states unified under one federation.",
     sources: [
@@ -3651,6 +3663,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The silver ram — Veðrur — on a blue field is one of the Faroes' oldest symbols, carved on the medieval bishop's chairs at Kirkjubøur around the 15th century, and it speaks to the sheep on which Faroese life has long depended (the islands' Old Norse name means 'sheep islands'). It fell from use when the Løgting was abolished in 1816 and was readopted in 1948 with the Home Rule Act; a version modernised in 2004 took its colours from the Merkið flag.",
     sources: [
       { title: "Coat of arms of the Faroe Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands" },
+    ],
+  },
+  "fr-naval-ensign": {
+    description: "At sea the Tricolore's three stripes are woven in the unequal proportions 30:33:37 (blue:white:red) rather than the equal thirds used ashore — these were the flag's original 18th-century proportions, matching the historic flag of Paris, before Napoleon I equalised them; the Navy reverted to the unequal 'optical proportions' by regulation in 1853 because a flag flapping in the wind makes the sections farther from the halyard appear smaller, so the wider red band restores the illusion of three equal columns and improves visibility at sea.",
+    sources: [
+      { title: "French ensigns — Wikipedia", url: "https://en.wikipedia.org/wiki/French_ensigns" },
     ],
   },
   "fr-arms": {
