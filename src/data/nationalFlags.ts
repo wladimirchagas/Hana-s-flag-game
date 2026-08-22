@@ -4390,6 +4390,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Jersey — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey" },
     ],
   },
+  "jm-governor-general": {
+    description: "A blue field bears the crest from Jamaica's coat of arms: a Jamaican crocodile — a species native to the island — mounted on the royal helmet of the British monarchy, above the country's name; the crocodile stands alongside the coat of arms' other native species, the pineapple, as a mark of Jamaica's indigenous flora and fauna, on a flag that identifies the monarch's own representative on the island.",
+    sources: [
+      { title: "Coat of arms of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica" },
+    ],
+  },
   "jm-arms": {
     description: "These are among the oldest arms in the Americas, granted to the colony of Jamaica by royal warrant in 1661 and designed by William Sancroft, later Archbishop of Canterbury — Jamaica kept them at independence rather than devising new ones. The shield is a red cross on white bearing five gold pineapples, the fruit the island exported; the crest is a crocodile standing on a log, native to the island's swamps; the supporters are a Taíno man and woman, the island's indigenous people, one holding a basket of fruit and the other a bow. What DID change was the motto: the original Latin, INDUS UTERQUE SERVIET UNI — \"the Indians twain shall serve one Lord\" — was replaced at independence in 1962 with \"Out of Many, One People\".",
     sources: [
@@ -4984,6 +4990,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of the Maldives — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_Maldives" },
     ],
   },
+  "mw-president": {
+    description: "The presidential standard bears Malawi's coat of arms, granted on 30 June 1964 days before independence: a rising sun on the shield's black field, for the dawn of the new nation and, more broadly, the hope of freedom sweeping decolonising Africa; the shield is supported by a lion and a leopard for strength and agility, stands upon a representation of Mount Mulanje, and carries the motto 'Unity and Freedom' beneath.",
+    sources: [
+      { title: "Coat of arms of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malawi" },
+    ],
+  },
   "mw-arms": {
     description: "The shield is divided into three: the wavy blue and white bars are the waters of Lake Malawi, which fills much of the country; a red lion on a gold field stands for the country's ties within the Commonwealth; and a rising sun on black — the same rising sun as on the flag — for the dawn of freedom for Africa. Above, a fish eagle sits before another rising sun as the crest. A lion and a leopard support the shield, standing for courage and for the country's wildlife, and the ribbon below reads “Unity and Freedom.”",
     sources: [
@@ -5104,6 +5116,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gazelles are Dama gazelles, native to Niger's Sahel, whose Hausa name Ménas (or Meyna) gives the national team its own nickname, the Ménas — a national symbol read as standing for grace and resilience in the country's arid landscape.",
     sources: [
       { title: "Niger national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Niger_national_football_team" },
+    ],
+  },
+  "ng-president": {
+    description: "The presidential flag bears Nigeria's coat of arms: a black shield for the country's fertile soil, crossed by a white wavy pall marking the confluence of the Niger and Benue rivers at Lokoja, supported by two white horses for dignity and crowned by a red eagle for strength and national pride, with the Costus spectabilis — a flower found across Nigeria — beneath, and the national motto 'Unity and Faith, Peace and Progress'.",
+    sources: [
+      { title: "Coat of arms of Nigeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria" },
     ],
   },
   "ng-arms": {
@@ -6080,6 +6098,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The bird is the Formosan blue magpie, chosen as Taiwan's national bird in a public poll for being found nowhere else in the world; the CTFA adopted it as the emblem worn by both the men's and women's national teams from 2014, citing the bird's fierce defence of its nest as representative of the teamwork a match demands.",
     sources: [
       { title: "Chinese Taipei Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Chinese_Taipei_Football_Association" },
+    ],
+  },
+  "tz-president": {
+    description: "The presidential flag carries Tanzania's coat of arms (adopted 1961, three years before this flag): a warrior's shield quartered on a golden field — gold for the country's mineral wealth — with a burning torch in its first quarter symbolising the Uhuru Torch of Tanzanian independence, itself standing for freedom, enlightenment and knowledge; the shield is supported by a man and a woman, reflecting the country's ideal of shared nation-building.",
+    sources: [
+      { title: "Coat of arms of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tanzania" },
     ],
   },
   "tz-arms": {
