@@ -4262,6 +4262,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
     ],
   },
+  "il-president": {
+    description: "A square flag with a silver border bears the state emblem: the menorah drawn from its depiction on Rome's Arch of Titus — the seven-branched candelabrum carried off after the destruction of the Second Temple, now standing for the restored state and, per Isaiah 60, universal enlightenment — flanked by two olive branches for peace. The silver border marks this as the flag of the head of state, distinguishing it from the plain national flag.",
+    sources: [
+      { title: "Emblem of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Israel" },
+    ],
+  },
+  "il-pm": {
+    description: "A blue field bears the national flag in the canton and, in the fly, the state emblem: the menorah from the Arch of Titus, symbolising the restored Jewish state and, per Isaiah 60, universal enlightenment, flanked by olive branches for peace — marking the flag as that of the head of government.",
+    sources: [
+      { title: "Emblem of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Israel" },
+    ],
+  },
   "il-emblem": {
     description: "The menorah is drawn from the depiction on the Arch of Titus in Rome — the seven-branched candelabrum carried off from the Temple in Jerusalem after the First Jewish–Roman War — so the emblem opens with the object taken in the destruction that began the exile, now standing for the restored state. The menorah is described in the Bible as a feature of both the Tabernacle in the wilderness and the Temple, had served for centuries as a Jewish symbol in synagogues, and had already been used as an emblem by Zionist organisations. It stands for universal enlightenment, after Isaiah 60: \"Nations will come to your light, and kings to the brightness of your dawn\". The two olive branches flanking it are for peace. The design came out of a public competition held in 1948 and is based on the winning entry by Gabriel and Maxim Shamir, with elements taken from other submissions.",
     sources: [
