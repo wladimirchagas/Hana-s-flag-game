@@ -20227,7 +20227,16 @@
           "design": "The royal standard differenced for the heir.",
           "source": "https://en.wikipedia.org/wiki/List_of_Norwegian_flags",
           "sha256": "8a2925dd7ac748f34e55df9a76db643f358990ca987819eccd862212075cf66c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Identical in its central device to the King's own royal standard — Norway's crowned golden lion bearing an axe, the attribute of Saint Olav — but given a swallow-tailed (forked) fly instead of the King's rectangular field, a difference introduced by royal resolution in 1924 to visually distinguish the flag of the heir to the throne from the sovereign's own standard.",
+            "sources": [
+              {
+                "title": "Royal standard of Norway — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Royal_standard_of_Norway"
+              }
+            ]
+          }
         },
         {
           "id": "no-arms",
@@ -20358,7 +20367,16 @@
           "design": "The rectangular standard of the king, flown until the monarchy was abolished in 2008.",
           "source": "https://en.wikipedia.org/wiki/List_of_Nepalese_flags",
           "sha256": "72d4794779c787eab0e5da07850240a870be6383137f332a0daff78e40e9fbe0",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The last royal standard, flown by King Gyanendra until Nepal's monarchy was abolished in 2008, bears a lion holding a banner charged with a six-pointed star and a vertical sword in place of the earlier standards' plain sun/moon circle device — the star read as standing for knowledge, and the sword for strength, both traditional royal attributes.",
+            "sources": [
+              {
+                "title": "Nepal Royal Flags — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/np-royal.html"
+              }
+            ]
+          }
         },
         {
           "id": "np-royal-1928",
@@ -20371,7 +20389,16 @@
           "design": "The earlier royal standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_Nepalese_flags",
           "sha256": "cd516ef3b63b1e2688ceffcd00e21d288188ea432cab4e09b4bc8a6e4135fd09",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The earlier royal standard bears a white lion beside a crescent moon (near the hoist) and a sun (toward the fly), both originally shown with human faces marked with a tilak, the sign of Vishnu, until the design was simplified in 1962. The moon was read as representing the King and the sun the Rana family, whose members held the hereditary premiership until 1951; together the two are said to express the hope that the Nepalese nation will endure as long as the sun and moon themselves.",
+            "sources": [
+              {
+                "title": "Nepal Royal Flags — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/np-royal.html"
+              }
+            ]
+          }
         },
         {
           "id": "np-emblem",
@@ -20585,7 +20612,16 @@
           "design": "A banner of the New Zealand shield with the Queen’s personal cypher.",
           "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags",
           "sha256": "62bcdeeb6bbcc0ca485096a330005e3386cde074f93e579b63a9322829d41ad9",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A banner of the New Zealand coat of arms' shield — the four stars of the Southern Cross, a ship for maritime trade, a fleece for farming, a wheat sheaf for agriculture and crossed hammers for mining, with two fern leaves (the native silver fern) beneath — defaced with a blue disc bearing a crowned gold letter 'E' within a garland of roses: Queen Elizabeth II's own royal cypher. Approved in 1962 for the Queen's use while in New Zealand as its head of state, the flag went out of use on her death in September 2022.",
+            "sources": [
+              {
+                "title": "Personal Flag of Queen Elizabeth II — Museum of New Zealand Te Papa Tongarewa",
+                "url": "https://collections.tepapa.govt.nz/object/2161288"
+              }
+            ]
+          }
         },
         {
           "id": "nz-united-tribes",
@@ -20795,7 +20831,16 @@
           "design": "The army's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
           "sha256": "6384779410c36b857bfad13235e1aa3001d4d4f172cd47cc8f1fa1ed013ac725",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The army's flag carries Oman's national emblem: a khanjar (a curved ceremonial dagger, still worn by Omani men on formal occasions and adopted as a badge of the ruling family in the 18th century) sheathed and set over two crossed swords, together standing for the traditional weapons of the Omani people; the same emblem marks the badges of every branch of the Sultan's Armed Forces.",
+            "sources": [
+              {
+                "title": "National emblem of Oman — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Oman"
+              }
+            ]
+          }
         },
         {
           "id": "om-air-force",
