@@ -16728,7 +16728,16 @@
           "design": "A green field bearing the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Moroccan_flags",
           "sha256": "225306e952da1db0ab02224f1d4ea4720fdb2ab73349d1ea7bcc6317643432ac",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A green field — the colour of Islam and, in Morocco's royal usage, of the sultanate — carries the national flag in the canton, itself red bearing a green pentagram known as the Seal of Solomon: introduced by Sultan Yusef in 1915, the five-pointed star is read as standing for the five pillars of Islam, giving the standard's canton the same Islamic symbolism as the national flag it displays.",
+            "sources": [
+              {
+                "title": "Coat of arms of Morocco — Grokipedia",
+                "url": "https://grokipedia.com/page/Coat_of_arms_of_Morocco"
+              }
+            ]
+          }
         },
         {
           "id": "ma-naval-jack",
@@ -16939,7 +16948,16 @@
           "design": "The presidential standard bearing the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Moldovan_flags",
           "sha256": "2adb0e064328ae13f3300c12ce9e01119c024c7232109c7ec571579af6c945ae",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The standard bears Moldova's coat of arms: a shield with an auroch's head between an eight-pointed star, a five-petalled rose and a crescent — an emblem inherited from the historical Principality of Moldavia standing for endurance and identity — on the breast of a natural eagle (a device drawn from the interwar Kingdom of Romania's own arms) holding an olive branch for peace, a sceptre for authority, and a golden cross for the country's Christian heritage.",
+            "sources": [
+              {
+                "title": "Coat of arms of Moldova — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova"
+              }
+            ]
+          }
         },
         {
           "id": "md-arms",
@@ -18229,7 +18247,16 @@
           "design": "A blue field bearing the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Malta",
           "sha256": "7ecea7d115dc57a7928a04ebac864b0f952c47e4049894c4ed9faccab00e173c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The presidential standard bears Malta's full coat of arms: a shield showing the national flag itself — white and red, with the George Cross awarded to the whole island by King George VI in 1942 for its resilience under WWII siege — beneath a mural crown (a sally port and five turrets, marking Malta a republic), flanked by an olive branch for peace and a palm branch for endurance, tied with a ribbon bearing the country's name in Maltese.",
+            "sources": [
+              {
+                "title": "Coat of arms of Malta — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta"
+              }
+            ]
+          }
         },
         {
           "id": "mt-civil-ensign",
@@ -22918,7 +22945,16 @@
           "design": "A crimson square bearing the greater coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Serbian_flags",
           "sha256": "2e020f9bc024ba6efcd6f0c5ac1ef9044e335b69e9103bfa8699d924c704c51b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A crimson field bears Serbia's greater coat of arms: a silver double-headed eagle — inherited from Byzantium through the Nemanjić dynasty's marriages with the Palaiologan emperors, its two heads facing east and west for Serbia's ties to Orthodox Christianity and to wider European civilisation — bearing on its breast a small shield with the 'Serbian Cross', a cross flanked by four firesteels (ocila) descended from a Byzantine imperial motto adopted into Serbian use in the 14th century, flanked at the base by two golden fleurs-de-lis.",
+            "sources": [
+              {
+                "title": "Coat of arms of Serbia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Serbia"
+              }
+            ]
+          }
         },
         {
           "id": "rs-king",
@@ -23462,7 +23498,16 @@
           "design": "The national flag with the state emblem in the lower fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
           "sha256": "aae07e1ea0ecbe1301763a94305dc857ace851a87385418552d72fa883f8e9f4",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The national flag — green for Islam, bearing the Shahada and a sword — carries the state emblem in the lower fly: two crossed swords, representing the union of the Kingdoms of Hejaz and Nejd under Ibn Saud in 1926 (and read more broadly as strength and readiness to defend the nation), sheltering a central date palm tree for the country's people, heritage and natural abundance.",
+            "sources": [
+              {
+                "title": "National Symbols of Saudi Arabia — Saudipedia",
+                "url": "https://saudipedia.com/en/article/2477/government-and-politics/national-symbols/national-symbols-of-saudi-arabia"
+              }
+            ]
+          }
         },
         {
           "id": "sa-crown-prince",
@@ -26440,7 +26485,16 @@
           "design": "The national flag charged with the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Tunisian_flags",
           "sha256": "00293b16e8dc7f5b78f1e1261587cae5dc2e1d3f304e6cbb5e7405d9f0b8dff2",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The national flag is charged with Tunisia's coat of arms: a ship recalling the country's Phoenician maritime heritage and standing for freedom, a lion holding a sword for order, and a set of scales for justice — the three together illustrating the national motto written beneath them in Arabic: Freedom, Order, Justice (حرية، نظام، عدالة).",
+            "sources": [
+              {
+                "title": "Coat of arms of Tunisia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia"
+              }
+            ]
+          }
         },
         {
           "id": "tn-military",
