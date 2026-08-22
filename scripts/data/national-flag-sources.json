@@ -8325,7 +8325,20 @@
           "design": "The national flag charged with the presidential arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
           "sha256": "4f879f028d1e0441147a2980d87cb33b532713a5f7927a720b50c444cc2c9cf0",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential standard, adopted in 1984, is the national flag charged with the presidential version of the Eagle of Saladin: a golden eagle whose breast bears a vertical rendering of the flag's own red-white-black bands, its talons gripping a scroll naming the state in Kufic script. The eagle traces back to the personal emblem of Saladin, the medieval sultan who founded the Ayyubid dynasty, and was revived in its modern form after the 1952 revolution as a symbol of Arab strength, courage and determination.",
+            "sources": [
+              {
+                "title": "Wikipedia — Coat of arms of Egypt",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt"
+              },
+              {
+                "title": "Wikipedia — List of Egyptian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "eg-president-1972",
@@ -11032,7 +11045,20 @@
           "design": "The presidential flag of the Second Hellenic Republic.",
           "source": "https://en.wikipedia.org/wiki/List_of_Greek_flags",
           "sha256": "603d971566e79767a1c2eee1f3b47843d8fb3b74fc35bf1ff176fd5da971a4ed",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential flag of the Second Hellenic Republic (1924–1935) was a plain blue-and-white cross flag stripped of the royal crown that had marked earlier Greek state flags, reflecting the abolition of the monarchy and the proclamation of the republic in 1924. From 1930 a golden-bordered escutcheon bearing the cross, encircled by two golden laurel branches, distinguished it as the president's own flag — the laurel a classical Greek emblem of honour rather than a royal one.",
+            "sources": [
+              {
+                "title": "Flags of the World — Greece: President of the Republic",
+                "url": "https://www.fotw.info/flags/gr_pres.html"
+              },
+              {
+                "title": "Wikipedia — Second Hellenic Republic",
+                "url": "https://en.wikipedia.org/wiki/Second_Hellenic_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "gr-arms",
@@ -14964,7 +14990,20 @@
           "design": "The armed forces' flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia",
           "sha256": "bc281e15a05d775118398a9e789eaa59347afdf0045e5515e730d9a4c837a881",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The flag of the Royal Cambodian Armed Forces is red, bearing the emblem of the High Command at its centre with the command's name written beneath it in yellow Khmer script. Each of the force's own branches carries a distinct field colour with its own emblem — red for the Army, blue for the Navy, and dark blue for the Air Force — with the whole system of Armed Forces flags updated by new uniform, insignia and flag regulations issued in October 2023.",
+            "sources": [
+              {
+                "title": "Flags of the World — Military Flags (Cambodia)",
+                "url": "https://www.crwflags.com/fotw/flags/kh%5E.html"
+              },
+              {
+                "title": "Wikipedia — List of flags of Cambodia",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia"
+              }
+            ]
+          }
         },
         {
           "id": "kh-arms",
@@ -20943,7 +20982,20 @@
           "design": "A blue field bearing the navy’s emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands",
           "sha256": "cd1cd0639bdb6f2b6a3b551c10b5baa1882ab8a751c2895ca64ec1396624a04f",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The governmental flag of the Royal Netherlands Navy bears the navy's emblem: a fouled anchor beneath the royal crown, a pairing used across Dutch naval flags and insignia since at least the late 19th century. The anchor is the traditional maritime symbol of the service, and the crown marks the navy as a royal one, serving under the Dutch monarchy.",
+            "sources": [
+              {
+                "title": "Flags of the World — Netherlands: Royal Navy Reserve / Naval Jack",
+                "url": "https://www.crwflags.com/fotw/flags/nl-njack.html"
+              },
+              {
+                "title": "Wikipedia — List of flags of the Netherlands",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands"
+              }
+            ]
+          }
         },
         {
           "id": "nl-army",
@@ -20954,7 +21006,20 @@
           "design": "A blue field charged with the army’s emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands",
           "sha256": "7ab9d402c15ae5ed7a3d1716ed292385ecd4eaac56e5a6c44581b5ccd36fcfab",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Royal Netherlands Army's flag is a blue field bearing the army's emblem: the Dutch Republic lion, derived from the coat of arms of the House of Nassau, gripping a sword in one paw and a sheaf of seven arrows in the other. The seven arrows represent the seven provinces of the historic United Provinces of the Netherlands and stand for the strength found in their union, while the lion itself is a long-standing symbol of honour, strength and courage in Dutch heraldry.",
+            "sources": [
+              {
+                "title": "Wikipedia — National symbols of the Netherlands",
+                "url": "https://en.wikipedia.org/wiki/National_symbols_of_the_Netherlands"
+              },
+              {
+                "title": "Wikipedia — List of flags of the Netherlands",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands"
+              }
+            ]
+          }
         },
         {
           "id": "nl-government",
@@ -23095,7 +23160,20 @@
           "design": "The navy's own flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Polish_flags",
           "sha256": "398b18f718e1a925110f53e154c05d4ef87ec2d05b6b4ed52149a5fa8ed01df4",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Polish Navy is a swallow-tailed white-over-red bicolour with the national coat of arms — the crowned white eagle — set in the white stripe, a design flown by Poland's navy since 1919. The swallowtail shape is the conventional mark of a naval ensign distinguishing a warship from a merchant vessel, while the white eagle repeats the same state emblem carried on Poland's national flag.",
+            "sources": [
+              {
+                "title": "Wikipedia — Naval ensign of Poland",
+                "url": "https://en.wikipedia.org/wiki/Naval_ensign_of_Poland"
+              },
+              {
+                "title": "Wikipedia — List of Polish naval and maritime flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Polish_naval_and_maritime_flags"
+              }
+            ]
+          }
         },
         {
           "id": "pl-arms",
@@ -23841,7 +23919,20 @@
           "from": 1974,
           "to": 9999,
           "sha256": "940e96d6ac90b67f44570053b1ab3a38395bdb20ff70a3def8d30d7cde4e8b95",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Air Force Ensign of Qatar, flown since 1974, is a light-blue field with the national flag at the hoist and the air force's own roundel in maroon, gold and white. Maroon is the colour of the national flag itself, standardised in 1936 and long read as recalling the bloodshed of Qatar's historic conflicts and the valour of its people — the same meaning the colour carries on the ground below.",
+            "sources": [
+              {
+                "title": "Flags of the World — Armed Forces (Qatar)",
+                "url": "https://www.crwflags.com/fotw/flags/qa%5E.html"
+              },
+              {
+                "title": "Wikipedia — Flag of Qatar",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Qatar"
+              }
+            ]
+          }
         },
         {
           "id": "qa-emblem",
