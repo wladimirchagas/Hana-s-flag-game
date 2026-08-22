@@ -4951,6 +4951,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
     ],
   },
+  "pl-naval-ensign": {
+    description: "The crowned white eagle of Poland's national arms — a symbol used by Polish rulers since the 13th century — marks this swallow-tailed bicolour as the Polish Navy's ensign.",
+    sources: [
+      { title: "Flag of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Poland" },
+    ],
+  },
   "pl-state": {
     description: "Poland's plain white-and-red bicolour is the civil flag; the state flag adds the crowned white eagle of the national coat of arms, reserved for state authorities and Polish missions abroad.",
     sources: [
@@ -5099,6 +5105,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue field reflects the Russian Airborne Forces' own identity — its troops traditionally wear a blue beret and blue-striped undershirt — while the green stripe represents ground operations and the gold parachute and aircraft mark its role as an elite airborne assault force.",
     sources: [
       { title: "Russian Airborne Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Russian_Airborne_Forces" },
+    ],
+  },
+  "ru-naval-ensign": {
+    description: "The blue saltire is the cross of Saint Andrew, patron saint of Russia since the 11th century and chosen for the navy because, as a fisherman, the apostle was said to have been called by Jesus on the water; Peter the Great established the design as the naval ensign in 1699, formalised in 1712.",
+    sources: [
+      { title: "Ensign of the Russian Navy — Wikipedia", url: "https://en.wikipedia.org/wiki/Ensign_of_the_Russian_Navy" },
     ],
   },
   "ru-arms": {
@@ -5421,6 +5433,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The white elephant, adopted for the naval ensign in 1917, recalls Thailand's own flag from 1855 to 1916, when a white elephant on red was the national flag; white elephants have long symbolised royal power and the prosperity of the kingdom under Thai monarchs.",
     sources: [
       { title: "The White Elephant — Cittra Collective", url: "https://cittra-collective.co.uk/blogs/thailand-culture-and-history/the-white-elephant-of-thailand" },
+    ],
+  },
+  "th-naval-jack": {
+    description: "The chakra (discus) is the emblem of the ruling Chakri dynasty, taken from the mythological weapon of the Hindu god Vishnu and representing time, cosmic order and the protective power of the monarchy; it was first adopted for royal naval vessels under King Rama I.",
+    sources: [
+      { title: "The Royal House of Chakri — KMUTT Library", url: "https://www.lib.kmutt.ac.th/en/king-ramaix-chapter1/" },
     ],
   },
   "th-emblem": {
