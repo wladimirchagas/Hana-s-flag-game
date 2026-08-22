@@ -3883,6 +3883,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Hungary — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary" },
     ],
   },
+  "id-naval-jack": {
+    description: "Nicknamed \"Ular-ular Perang\" (\"war snakes\") for the snake-like look of its alternating stripes, this red-and-white striped jack traces back to the 13th-century Majapahit Empire's own naval banner, recorded in a 1294 inscription and flown by the fleet of one of Southeast Asia's great historical maritime powers.",
+    sources: [
+      { title: "List of Indonesian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Indonesian_flags" },
+    ],
+  },
   "id-emblem": {
     description: "The Garuda is the mount of Vishnu, and in Javanese and Balinese tradition stands for knowledge, power, bravery, loyalty and discipline — Bali venerates it as the lord of all flying creatures. Its feathers are counted, not merely drawn: they are arranged to spell the date of the proclamation of independence, 17 August 1945. The shield on its breast carries the five principles of Pancasila, the state philosophy, and the scroll in its talons reads \"Bhinneka Tunggal Ika\", a line of Old Javanese from the 14th-century poem Sutasoma by Empu Tantular of Majapahit. That line was written to reconcile the Hindu and Buddhist faiths — \"although diverse, both are truthful to Dharma; there is no duality in Truth\" — and is now read as unity in diversity.",
     sources: [
@@ -4632,6 +4638,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mozambique" },
     ],
   },
+  "na-jack": {
+    description: "The coat of arms shows a fish eagle for Namibia's water resources and the far-sightedness of its leaders, two oryx as supporters for courage and pride, and a Welwitschia mirabilis plant at the base — a desert survivor prized as a symbol of the nation's endurance — beneath the motto \"Unity, Liberty, Justice\".",
+    sources: [
+      { title: "Coat of arms of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
+    ],
+  },
   "na-arms": {
     description: "The shield carries the design of the national flag, its gold diamond pattern reading as the country's diamonds and mineral wealth. An African fish eagle rises above it as the crest. Two oryx (gemsbok) support the shield, animals prized for their courage, elegance and pride. On the golden sand of the compartment — the Namib desert that gives the country its name — grows a Welwitschia mirabilis, the desert plant that lives for centuries and stands for fortitude and survival, carried over from the former arms of South-West Africa. The motto reads “Unity, Liberty, Justice.”",
     sources: [
@@ -4781,6 +4793,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The silver fern has marked New Zealand sporting teams since the 1888–89 New Zealand Native rugby team's tour of Britain, and was carried by New Zealand's expeditionary forces in both World Wars — it is engraved on the Commonwealth war graves of fallen New Zealand soldiers. It is shared today across the country's national teams, including the women's football side, the Football Ferns.",
     sources: [
       { title: "Silver fern — Wikipedia", url: "https://en.wikipedia.org/wiki/Silver_fern" },
+    ],
+  },
+  "om-royal": {
+    description: "The khanjar (curved dagger) crossed with two swords is Oman's national emblem, adopted in the 18th century as the badge of the ruling House of Al Said; the khanjar is also traditional Omani dress, still worn by men on formal occasions as a mark of heritage and dignity.",
+    sources: [
+      { title: "National emblem of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
     ],
   },
   "om-emblem": {

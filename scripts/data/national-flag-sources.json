@@ -11451,7 +11451,16 @@
           "design": "Nine equal horizontal red and white stripes — the \"Ular-ular Perang\".",
           "source": "https://en.wikipedia.org/wiki/List_of_Indonesian_flags",
           "sha256": "f4f77eaa07b7e5b760724706ea96cca5cef16e8f5d4da8d3c0e5cdc3b7eef22f",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Nicknamed \"Ular-ular Perang\" (\"war snakes\") for the snake-like look of its alternating stripes, this red-and-white striped jack traces back to the 13th-century Majapahit Empire's own naval banner, recorded in a 1294 inscription and flown by the fleet of one of Southeast Asia's great historical maritime powers.",
+            "sources": [
+              {
+                "title": "List of Indonesian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Indonesian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "id-president",
@@ -18810,7 +18819,16 @@
           "design": "A white field bearing the national arms — the naval jack of Namibia.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Namibia",
           "sha256": "85cd2b28443452b76678ba3085de9f87665049e8d081006b7cb08598e6a58d6c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The coat of arms shows a fish eagle for Namibia's water resources and the far-sightedness of its leaders, two oryx as supporters for courage and pride, and a Welwitschia mirabilis plant at the base — a desert survivor prized as a symbol of the nation's endurance — beneath the motto \"Unity, Liberty, Justice\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Namibia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia"
+              }
+            ]
+          }
         },
         {
           "id": "na-president",
@@ -20094,7 +20112,16 @@
           "design": "A red field bearing the national emblem — the standard of the House of Al Said.",
           "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
           "sha256": "9e6e3e18eac6ba89ceabb4d92292c89d59b07149a5080879406d825031ab7872",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The khanjar (curved dagger) crossed with two swords is Oman's national emblem, adopted in the 18th century as the badge of the ruling House of Al Said; the khanjar is also traditional Omani dress, still worn by men on formal occasions as a mark of heritage and dignity.",
+            "sources": [
+              {
+                "title": "National emblem of Oman — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Oman"
+              }
+            ]
+          }
         },
         {
           "id": "om-navy",
