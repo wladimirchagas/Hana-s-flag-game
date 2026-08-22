@@ -128,7 +128,16 @@
           "design": "The presidential flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Emirati_flags",
           "sha256": "d4205219df72e6fc4bd2633ad902a038f54f0082835266fe256b8e9dbb4a3f83",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A flag bearing the golden Hawk of Quraish — named for the tribe of the Prophet Muhammad and, in Arab culture, a symbol of strength, courage and freedom — with seven tail feathers for the seven emirates of the federation and, held in its talons, a disc showing the national flag and seven stars, again for the seven emirates. Only the President may fly the flag bearing this emblem, distinguishing it from the plain national flag flown everywhere else.",
+            "sources": [
+              {
+                "title": "From a golden falcon to a cup of coffee — The National",
+                "url": "https://www.thenationalnews.com/uae/heritage/2021/11/17/from-a-golden-falcon-to-a-cup-of-coffee-what-are-the-symbols-of-the-uae/"
+              }
+            ]
+          }
         },
         {
           "id": "ae-civil-ensign",
@@ -822,7 +831,16 @@
           "design": "The presidential standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_Angolan_flags",
           "sha256": "68b40d82e3ddd48d268bc86bebdc666049fb58ff9204a4291dcb160332db29e8",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A red field bears the same emblem as the national flag — a half-cogwheel for industrial workers, a machete for agricultural labourers, and a five-pointed star for internationalism and progress — with two yellow olive branches added beneath it, echoing the hammer, sickle and star of the flags of the Marxist-Leninist states that supported Angola's independence movement, the MPLA, in the 1975 war of liberation from Portugal.",
+            "sources": [
+              {
+                "title": "Flags, Symbols & Currency of Angola — World Atlas",
+                "url": "https://www.worldatlas.com/flags/angola"
+              }
+            ]
+          }
         },
         {
           "id": "ao-emblem",
