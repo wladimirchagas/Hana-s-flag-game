@@ -6680,7 +6680,16 @@
           "design": "A swallowtailed version of the federal state flag, worn as ensign and jack by the German Navy.",
           "source": "https://en.wikipedia.org/wiki/List_of_German_flags",
           "sha256": "eb91428ac5d2b48bbcbdcd875db9cddf6ef1b5e5c8c16669ffa6c1b15228def2",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The forked swallowtail shape, adopted in 1956, marks this as the German Navy's ensign, following a naval tradition — inherited via Denmark's 1625 regulations — of reserving a swallow-tailed flag for the battle fleet to distinguish it from merchant shipping's plain rectangular flag.",
+            "sources": [
+              {
+                "title": "Swallowtail (flag) — Grokipedia",
+                "url": "https://grokipedia.com/page/Swallowtail_(flag)"
+              }
+            ]
+          }
         },
         {
           "id": "de-president",
