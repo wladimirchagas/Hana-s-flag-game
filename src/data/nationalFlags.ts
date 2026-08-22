@@ -2654,6 +2654,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Albania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
     ],
   },
+  "am-president": {
+    description: "The national tricolour is defaced with the presidential seal, centred on Armenia's coat of arms: Mount Ararat bearing Noah's Ark — the mountain traditionally held to be where the Ark came to rest after the flood, and the enduring national symbol of the Armenian homeland — quartered with the arms of four historical Armenian royal dynasties (Bagratuni, Artsruni, Arshakuni and Rubenid), the shield upheld by an eagle and a lion recalling the ancient Kingdom of Urartu/Ararat, with a sword, a broken chain, a wheat sheaf and an olive branch beneath for strength, freedom from oppression, labour and peace.",
+    sources: [
+      { title: "State symbols of the Republic of Armenia — Office of the President of Armenia", url: "https://www.president.am/en/state-symbols/" },
+    ],
+  },
   "am-arms": {
     description: "At the centre of the shield stands Mount Ararat with Noah's Ark on its summit — by tradition the ark came to rest there after the flood, and Ararat is the national symbol, though it has lain outside Armenia's borders since 1921. Around it are the emblems of four historic Armenian dynasties: the Bagratuni, the Arsacid, the Artaxiad and the Rubenid of Cilicia. The two supporters carry those dynasties too: the eagle was the emblem of the Artaxiads and later the Arsacids, the lion of the Bagratunis and later the Rubenids, and both animals were chosen for power, courage, patience, wisdom and nobility. The arms date in this form from the First Republic of 1918, whose version drew the eagle and lion with their tongues out.",
     sources: [
@@ -2862,6 +2868,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms simply repeat the national flag, adopted together in 1998. The three points of the shield stand for the country's three constituent peoples — Bosniaks, Croats and Serbs; the yellow triangle is read as the rough triangular shape of the country's territory, and its three sides again as the three peoples. The row of white stars, cut off top and bottom, stands for Europe and is deliberately open-ended, meant to be infinite. The design was chosen by the international High Representative when the country's communities could not agree, which is why it avoids the older national and religious symbols — the fleurs-de-lis of the medieval Kotromanić kings that the 1992 flag had carried had come to be read as a Bosniak emblem.",
     sources: [
       { title: "Coat of arms of Bosnia and Herzegovina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
+    ],
+  },
+  "bb-president": {
+    description: "A dark blue field bears the Presidential Seal: Barbados' coat of arms — a shield with a bearded fig tree (for which the island is named) flanked by two Pride of Barbados flowers, supported by a dolphinfish and a pelican, with a crest showing a Barbadian arm grasping two crossed sugar canes for the island's plantation history — encircled by a golden wreath of Pride of Barbados blossoms, the national flower, introduced in 2021 when Barbados became a republic and is flown only by the President.",
+    sources: [
+      { title: "Coat of arms of Barbados — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barbados" },
     ],
   },
   "bb-arms": {
@@ -3094,6 +3106,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
       { title: "Brazil national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Brazil_national_football_team" },
+    ],
+  },
+  "bs-governor-general": {
+    description: "A blue field bears the Royal Crest — a crowned lion standing on the arched St Edward's Crown, the heraldic mark of the sovereign's authority used across the Commonwealth realms' governors-general — above a scroll reading 'Commonwealth of The Bahamas', marking the flag as that of the King's own representative in the Bahamas.",
+    sources: [
+      { title: "List of Bahamian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Bahamian_flags" },
     ],
   },
   "bs-arms": {
@@ -3723,6 +3741,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flags of the Egyptian Armed Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_Egyptian_Armed_Forces" },
     ],
   },
+  "eg-president-1972": {
+    description: "The tricolour of the short-lived Federation of Arab Republics (Egypt, Syria and Libya), hoisted 1 January 1972, replaces the eagle of the modern flag with a golden Hawk of Quraish — named for the tribe of the Prophet Muhammad — deliberately dropping the colour green and the Eagle of Saladin associated with President Nasser as Anwar Sadat charted a new symbolic course; the hawk gave way in turn to a restored gold Eagle of Saladin in 1984, five years after the federation itself dissolved.",
+    sources: [
+      { title: "Republic of Egypt (1972-1984) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/eg-1972.html" },
+    ],
+  },
   "eg-royal": {
     description: "On a green field, a white crescent encloses three white stars, with two crossed anchors in the canton (marking the King as head of the navy) and the King's crowned monogram. The crescent was kept by King Fuad I to reflect Egypt's predominantly Muslim population; the three stars are variously read as standing for the kingdom's three constituent lands — Egypt, Nubia and Sudan — or for its Muslim, Christian and Jewish communities.",
     sources: [
@@ -4011,6 +4035,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The colours, stars and central disc are taken from Grenada's national flag: the gold stars stand for the country's parishes and its two sister islands of Carriacou and Petite Martinique, the green represents the islands' vegetation, and the gold evokes the sun and the warmth of Grenadians.",
     sources: [
       { title: "Flag of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
+    ],
+  },
+  "ge-president": {
+    description: "A white square, bordered red with a ring of wolf-teeth points, bears Georgia's lesser state coat of arms: on a purple field, Saint George — the country's patron saint, venerated since Late Antiquity — mounted on a silver horse, spearing a silver dragon with a spear tipped by a golden cross, expressing valour and triumph; adopted by presidential decree in 2020, the design omits the crown that tops the fuller state arms.",
+    sources: [
+      { title: "Georgia: Standard of the President of the Republic — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ge_pres.html" },
     ],
   },
   "ge-arms": {
