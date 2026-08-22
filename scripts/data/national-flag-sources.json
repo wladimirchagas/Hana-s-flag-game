@@ -16363,10 +16363,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/3a/Marshall_Islands_Soccer_Association_Logo.png",
           "file": "mh/mh-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Marshall Islands national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Marshall_Islands_Soccer_Association_Logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Marshall Islands national football team.",
+          "design": "A blue circular badge reading \"MARSHALL ISLANDS SOCCER FEDERATION\", with a shield showing wavy white lines, a white starburst, and orange-and-white bars at the sides.",
           "source": "https://en.wikipedia.org/wiki/Marshall_Islands_national_football_team",
           "sha256": "1deede4a889bbca5a8909efc5d733c8e2845d358485a4d25aebdf6f95befebdc",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The starburst and the orange-and-white colours echo the Marshall Islands' national flag, where the rising orange-and-white band represents the equator and the country's two island chains, and the star's points stand for the country's electoral districts and principal cultural centres.",
+            "sources": [
+              {
+                "title": "Flag of the Marshall Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -16961,10 +16970,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/7/73/Macau_Football_Association_logo.svg",
           "file": "mo/mo-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Macau football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Macau_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Macau's national football association.",
+          "design": "A circular badge reading \"ASSOCIAÇÃO DE FUTEBOL DE MACAU\" in Portuguese and Chinese, with a green lotus flower beneath a football.",
           "source": "https://en.wikipedia.org/wiki/Macau_Football_Association",
           "sha256": "0ab60fea2125b6529649445a85182f439d7724dd0b531de7a5b859e8aad4e6d7",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The lotus is Macau's regional flower and the central emblem of its own flag, where its three petals represent the peninsula and the islands of Taipa and Coloane, and the flower symbolises purity in Chinese culture.",
+            "sources": [
+              {
+                "title": "Flag of Macau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Macau"
+              }
+            ]
+          }
         }
       ]
     },
@@ -17204,7 +17222,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/5/55/Montserrat_Football_Association.svg",
           "file": "ms/ms-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Montserrat football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Montserrat_Football_Association.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Montserrat's national football association.",
+          "design": "A circular badge reading \"MONTSERRAT FOOTBALL ASSOCIATION\", with a green silhouette of the island set on a football.",
           "source": "https://en.wikipedia.org/wiki/Montserrat_Football_Association",
           "sha256": "bba53d2529238a2f760d3f013983f3590b0e3a79188106ca23aafa6891db41cb",
           "fetched": "2026-08-18"
@@ -17313,10 +17331,19 @@
           "name": "Crest of the Malta national football team",
           "commons": "Malta national football team crest.svg",
           "file": "mt/mt-football-crest.svg",
-          "design": "The crest of the Malta national football team.",
+          "design": "A red eight-pointed Maltese cross.",
           "source": "https://en.wikipedia.org/wiki/Malta_national_football_team",
           "sha256": "2a0ab79ae6facb7a76525c5dabd0097906c7d7d5e9865e7c07af4c8c1663996c",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The Maltese cross is Malta's best-known national symbol, associated with the Knights Hospitaller (Knights of Malta), who ruled the islands from 1530 to 1798; its eight points are traditionally read as the eight beatitudes or the eight langues (national groupings) of the Order's knights.",
+            "sources": [
+              {
+                "title": "Maltese cross — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Maltese_cross"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -17394,10 +17421,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/0/06/Mauritius_FA.png",
           "file": "mu/mu-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Mauritius national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Mauritius_FA.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Mauritius national football team.",
+          "design": "A shield reading \"M.F.A.\" and \"MAURITIUS FOOTBALL ASSOCIATION\", with a red-and-white sailing ship on a blue silhouette of the island, above a football and flanked by green laurel leaves.",
           "source": "https://en.wikipedia.org/wiki/Mauritius_Football_Association",
           "sha256": "588ed5f0b9859843ebefd80c3c28d5bd074f001d6e13a7b2ca50a375802b5251",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The ship is a lymphad, taken from Mauritius's coat of arms, where it represents the island's maritime history and the succession of colonial naval powers — Portugal, the Netherlands, France and Britain — that navigated the Indian Ocean and settled it.",
+            "sources": [
+              {
+                "title": "Coat of arms of Mauritius — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -17474,7 +17510,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/3a/Football_Association_of_Maldives_logo.svg",
           "file": "mv/mv-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Maldives national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Maldives_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Maldives national football team.",
+          "design": "A shield reading \"MALDIVES\" and \"F.A.M.\", in red, white and green with a black-and-white football.",
           "source": "https://en.wikipedia.org/wiki/Football_Association_of_Maldives",
           "sha256": "a65779175cb17df7ae0e37b0a8e63ee71b29af47c92da9eab13bebee81f785ac",
           "fetched": "2026-08-18"
@@ -18459,10 +18495,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/0/01/New_Caledonia_FA.svg",
           "file": "nc/nc-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the New Caledonia football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:New_Caledonia_FA.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of New Caledonia's national football association.",
+          "design": "A grey circular badge reading \"FÉDÉRATION CALÉDONIENNE DE FOOTBALL\", with a stylised white bird's head and neck above a football.",
           "source": "https://en.wikipedia.org/wiki/New_Caledonian_Football_Federation",
           "sha256": "b5fb6b88e8f498005c42588250a41668f071dfa7ade3783467448570232a9751",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The bird is the cagou (kagu), a flightless bird found only in New Caledonia and one of the territory's best-known natural and cultural symbols, known to the indigenous Kanak people as the \"ghost of the forest\".",
+            "sources": [
+              {
+                "title": "Kagu — One Earth",
+                "url": "https://www.oneearth.org/species-of-the-week-kagu/"
+              }
+            ]
+          }
         }
       ]
     },
@@ -18821,7 +18866,7 @@
           "name": "Crest of the Nicaragua national football team",
           "commons": "Nicaragua Football Crest.png",
           "file": "ni/ni-football-crest.png",
-          "design": "The crest of the Nicaragua national football team.",
+          "design": "A shield reading \"NICARAGUA\", with a white stylised \"N\" shape on Nicaragua's national blue and white.",
           "source": "https://en.wikipedia.org/wiki/Nicaragua_national_football_team",
           "sha256": "9326c5c52c1e6db7b9cc6ad80c4a95d3de4463849bf1c74e35d4d6ee44b73666",
           "fetched": "2026-08-18"
@@ -19254,10 +19299,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/30/Nepal_football_national_team_logo.png",
           "file": "np/np-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Nepal national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Nepal_football_national_team_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Nepal national football team.",
+          "design": "A shield reading \"NEPAL\", with a white silhouette of the Himalayas above a red field bearing a white crescent moon and a white sun, and a football at its base.",
           "source": "https://en.wikipedia.org/wiki/Nepal_national_football_team",
           "sha256": "a0eb81239c413972b1050e077d65dd36425e9ef6955c68ab70b7d3e5dc8403a7",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The moon and sun are taken from Nepal's national flag — the world's only non-quadrilateral national flag — where they are read as symbols of permanence, of Nepal's two main religions (Hinduism and Buddhism), and of the cool Himalayan north and the hot southern lowlands respectively.",
+            "sources": [
+              {
+                "title": "Flag of Nepal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Nepal"
+              }
+            ]
+          }
         }
       ]
     },
@@ -20072,10 +20126,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/a/a1/Tahiti_FA_%282016%E2%80%93%29.svg",
           "file": "pf/pf-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Tahiti football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Tahiti_FA_(2016–).svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of Tahiti's national football association.",
+          "design": "A shield reading \"TAHITI\" and \"F T F\", with a red-and-gold outrigger canoe over blue wavy lines and gold sun rays, flanked by red chevron bands.",
           "source": "https://en.wikipedia.org/wiki/Tahitian_Football_Federation",
           "sha256": "d09283c7cc1228343bc5573aec7c7a50699ebc7455c13467d929b42bb3cc4540",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The canoe and its crew of five stars are taken directly from French Polynesia's national flag, where they represent the territory's five island groups (archipelagos) riding the Pacific waves.",
+            "sources": [
+              {
+                "title": "Flag of French Polynesia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia"
+              }
+            ]
+          }
         }
       ]
     },
@@ -20161,10 +20224,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/bb/PNGFA_Logo.svg",
           "file": "pg/pg-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Papua New Guinea national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:PNGFA_Logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Papua New Guinea national football team.",
+          "design": "A red shield reading \"PNGFA\", with a gold silhouette of a bird of paradise beside a football and five white stars.",
           "source": "https://en.wikipedia.org/wiki/Papua_New_Guinea_national_football_team",
           "sha256": "8dd7766e7b0c76633808b3538d87abacb1a203d4b9ad05380059c960186d0978",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The bird of paradise and the stars are taken from Papua New Guinea's national flag: the bird is a symbol of the country's tribal culture, shown in a soaring pose representing the nation's emergence, and the stars form the Southern Cross, marking the country's place in the southern hemisphere.",
+            "sources": [
+              {
+                "title": "Flag of Papua New Guinea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -21197,7 +21269,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/4/44/Palau_FA_logo.png",
           "file": "pw/pw-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Palau national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Palau_FA_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Palau national football team.",
+          "design": "A blue shield reading \"PALAU FOOTBALL ASSOCIATION\", with a yellow football.",
           "source": "https://en.wikipedia.org/wiki/Palau_Football_Association",
           "sha256": "aa932dc11f14772c462ec7b5ec42ea3890f506eaf26984d44aa78f6895fd3aee",
           "fetched": "2026-08-18"

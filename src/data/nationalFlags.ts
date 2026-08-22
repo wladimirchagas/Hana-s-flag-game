@@ -1395,7 +1395,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mh-japan", category: "historical", name: "Flag of Japan", from: 1920, to: 1944, sovereign: "Japan", path: "national-flags/mh/mh-japan.svg", design: "The flag of Japan, which held the islands as the South Seas Mandate between the world wars.", source: "https://en.wikipedia.org/wiki/South_Seas_Mandate" },
     { id: "mh-arms", category: "coatofarms", name: "Seal of the Marshall Islands", from: 1992, to: 9999, path: "national-flags/mh/mh-arms.svg", design: "An angel over two islands with a canoe, a palm and a stick chart, on the blue of the sea.", source: "https://en.wikipedia.org/wiki/Seal_of_the_Marshall_Islands" },
     { id: "mh-passport", category: "passport", name: "Passport of the Marshall Islands", path: "national-flags/mh/mh-passport.webp", design: "The cover of the the Marshall Islands passport.", source: "https://gicg.net/passport/mh/" },
-    { id: "mh-football-crest", category: "footballcrest", name: "Crest of the Marshall Islands national football team", path: "national-flags/mh/mh-football-crest.png", design: "The crest of the Marshall Islands national football team.", source: "https://en.wikipedia.org/wiki/Marshall_Islands_national_football_team" },
+    { id: "mh-football-crest", category: "footballcrest", name: "Crest of the Marshall Islands national football team", path: "national-flags/mh/mh-football-crest.png", design: "A blue circular badge reading \"MARSHALL ISLANDS SOCCER FEDERATION\", with a shield showing wavy white lines, a white starburst, and orange-and-white bars at the sides.", source: "https://en.wikipedia.org/wiki/Marshall_Islands_national_football_team" },
   ],
   "MK": [
     { id: "mk-official-national", category: "official", name: "Flag of North Macedonia", from: 1995, to: 9999, primary: true, path: "flags/mk.svg", design: "The national flag of North Macedonia, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
@@ -1442,7 +1442,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mo-portugal", category: "historical", name: "Flag of Portugal", from: 1910, to: 1999, sovereign: "Portugal", path: "flags/pt.svg", design: "The flag of the Portuguese Republic; Macau flew only Portugal's own flag throughout its rule and adopted a flag of its own only at the 1999 handover.", source: "https://en.wikipedia.org/wiki/Portuguese_Macau" },
     { id: "mo-emblem", category: "coatofarms", name: "Regional Emblem of Macau", from: 1999, to: 9999, path: "national-flags/mo/mo-emblem.svg", design: "The lotus, bridge and water of the flag within a green ring naming the Special Administrative Region.", source: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
     { id: "mo-passport", category: "passport", name: "Macau SAR passport", path: "national-flags/mo/mo-passport.webp", design: "The cover of the Macau Special Administrative Region passport.", source: "https://gicg.net/passport/mo/" },
-    { id: "mo-football-crest", category: "footballcrest", name: "Crest of the Macau football association", path: "national-flags/mo/mo-football-crest.svg", design: "The crest of Macau's national football association.", source: "https://en.wikipedia.org/wiki/Macau_Football_Association" },
+    { id: "mo-football-crest", category: "footballcrest", name: "Crest of the Macau football association", path: "national-flags/mo/mo-football-crest.svg", design: "A circular badge reading \"ASSOCIAÇÃO DE FUTEBOL DE MACAU\" in Portuguese and Chinese, with a green lotus flower beneath a football.", source: "https://en.wikipedia.org/wiki/Macau_Football_Association" },
   ],
   "MP": [
     { id: "mp-official-national", category: "official", name: "Flag of the Northern Mariana Islands", from: 1985, to: 9999, path: "flags/sub/US/US-MP.svg", design: "A grey latte stone and white star before a mwarmwar garland, on a blue field.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
@@ -1463,7 +1463,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "MS": [
     { id: "ms-official-national", category: "official", name: "Flag of Montserrat", from: 1909, to: 9999, path: "flags/ms.svg", design: "A blue ensign with the Union Flag in the canton and Montserrat's arms — the woman Erin embracing a cross and holding a golden harp — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Montserrat" },
     { id: "ms-arms", category: "coatofarms", name: "Coat of arms of Montserrat", from: 1909, to: 9999, path: "national-flags/ms/ms-arms.svg", design: "A woman in a green dress (Erin, the personification of Ireland) embracing a black cross and holding a golden harp.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat" },
-    { id: "ms-football-crest", category: "footballcrest", name: "Crest of the Montserrat football association", path: "national-flags/ms/ms-football-crest.svg", design: "The crest of Montserrat's national football association.", source: "https://en.wikipedia.org/wiki/Montserrat_Football_Association" },
+    { id: "ms-football-crest", category: "footballcrest", name: "Crest of the Montserrat football association", path: "national-flags/ms/ms-football-crest.svg", design: "A circular badge reading \"MONTSERRAT FOOTBALL ASSOCIATION\", with a green silhouette of the island set on a football.", source: "https://en.wikipedia.org/wiki/Montserrat_Football_Association" },
   ],
   "MT": [
     { id: "mt-official-national", category: "official", name: "Flag of Malta", from: 1964, to: 9999, primary: true, path: "flags/mt.svg", design: "The national flag of Malta, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Malta" },
@@ -1473,21 +1473,21 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mt-president", category: "standard", name: "Flag of the President of Malta", from: 1988, to: 9999, path: "national-flags/mt/malta-president.svg", design: "A blue field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Malta" },
     { id: "mt-arms", category: "coatofarms", name: "Coat of arms of Malta", from: 1988, to: 9999, path: "national-flags/mt/malta-arms.svg", design: "A shield of the national flag beneath a mural crown, framed by an olive branch and a palm branch over a scroll reading Repubblika ta' Malta.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta" },
     { id: "mt-passport", category: "passport", name: "Passport of Malta", path: "national-flags/mt/mt-passport.webp", design: "The cover of the Malta passport.", source: "https://gicg.net/passport/mt/" },
-    { id: "mt-football-crest", category: "footballcrest", name: "Crest of the Malta national football team", path: "national-flags/mt/mt-football-crest.svg", design: "The crest of the Malta national football team.", source: "https://en.wikipedia.org/wiki/Malta_national_football_team" },
+    { id: "mt-football-crest", category: "footballcrest", name: "Crest of the Malta national football team", path: "national-flags/mt/mt-football-crest.svg", design: "A red eight-pointed Maltese cross.", source: "https://en.wikipedia.org/wiki/Malta_national_football_team" },
   ],
   "MU": [
     { id: "mu-official-national", category: "official", name: "Flag of Mauritius", from: 1968, to: 9999, primary: true, path: "flags/mu.svg", design: "The national flag, adopted at independence in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritius" },
     { id: "mu-uk", category: "historical", name: "Flag of the United Kingdom", from: 1810, to: 1968, sovereign: "the United Kingdom", path: "national-flags/mu/mu-uk.svg", design: "The Union Flag, flown while Mauritius was a British colony, from the 1810 capture of the island until independence.", source: "https://en.wikipedia.org/wiki/British_Mauritius" },
     { id: "mu-arms", category: "coatofarms", name: "Coat of arms of Mauritius", from: 1906, to: 9999, path: "national-flags/mu/mu-arms.svg", design: "A quartered shield with a ship, palm trees, a key and a star, held by a dodo and a deer.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius" },
     { id: "mu-passport", category: "passport", name: "Passport of Mauritius", path: "national-flags/mu/mu-passport.webp", design: "The cover of the Mauritius passport.", source: "https://gicg.net/passport/mu/" },
-    { id: "mu-football-crest", category: "footballcrest", name: "Crest of the Mauritius national football team", path: "national-flags/mu/mu-football-crest.png", design: "The crest of the Mauritius national football team.", source: "https://en.wikipedia.org/wiki/Mauritius_Football_Association" },
+    { id: "mu-football-crest", category: "footballcrest", name: "Crest of the Mauritius national football team", path: "national-flags/mu/mu-football-crest.png", design: "A shield reading \"M.F.A.\" and \"MAURITIUS FOOTBALL ASSOCIATION\", with a red-and-white sailing ship on a blue silhouette of the island, above a football and flanked by green laurel leaves.", source: "https://en.wikipedia.org/wiki/Mauritius_Football_Association" },
   ],
   "MV": [
     { id: "mv-official-national", category: "official", name: "Flag of the Maldives", from: 1965, to: 9999, primary: true, path: "flags/mv.svg", design: "The national flag, adopted at independence in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Maldives" },
     { id: "mv-uk", category: "historical", name: "Flag of the United Kingdom", from: 1887, to: 1965, sovereign: "the United Kingdom", path: "national-flags/mv/mv-uk.svg", design: "The Union Flag, flown while the Maldives was a British protectorate.", source: "https://en.wikipedia.org/wiki/History_of_the_Maldives" },
     { id: "mv-arms", category: "coatofarms", name: "Emblem of the Maldives", from: 1965, to: 9999, path: "national-flags/mv/mv-arms.svg", design: "A coconut palm between two national flags, over a crescent, star and scroll.", source: "https://en.wikipedia.org/wiki/Emblem_of_the_Maldives" },
     { id: "mv-passport", category: "passport", name: "Passport of the Maldives", path: "national-flags/mv/mv-passport.webp", design: "The cover of the the Maldives passport.", source: "https://gicg.net/passport/mv/" },
-    { id: "mv-football-crest", category: "footballcrest", name: "Crest of the Maldives national football team", path: "national-flags/mv/mv-football-crest.svg", design: "The crest of the Maldives national football team.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Maldives" },
+    { id: "mv-football-crest", category: "footballcrest", name: "Crest of the Maldives national football team", path: "national-flags/mv/mv-football-crest.svg", design: "A shield reading \"MALDIVES\" and \"F.A.M.\", in red, white and green with a black-and-white football.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Maldives" },
   ],
   "MW": [
     { id: "mw-official-national", category: "official", name: "Flag of Malawi", from: 1964, to: 9999, primary: true, path: "flags/mw.svg", design: "The national flag of Malawi, adopted at independence in 1964 (briefly changed 2010–2012, then restored).", source: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
@@ -1564,7 +1564,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "NC": [
     { id: "nc-kanak", category: "official", name: "Kanak flag (FLNKS)", from: 1980, to: 9999, path: "flags/nc.svg", design: "Horizontal blue, red and green bands with a yellow disc bearing a black flèche faîtière (roof-arrow).", source: "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia" },
-    { id: "nc-football-crest", category: "footballcrest", name: "Crest of the New Caledonia football association", path: "national-flags/nc/nc-football-crest.svg", design: "The crest of New Caledonia's national football association.", source: "https://en.wikipedia.org/wiki/New_Caledonian_Football_Federation" },
+    { id: "nc-football-crest", category: "footballcrest", name: "Crest of the New Caledonia football association", path: "national-flags/nc/nc-football-crest.svg", design: "A grey circular badge reading \"FÉDÉRATION CALÉDONIENNE DE FOOTBALL\", with a stylised white bird's head and neck above a football.", source: "https://en.wikipedia.org/wiki/New_Caledonian_Football_Federation" },
   ],
   "NE": [
     { id: "ne-official-national", category: "official", name: "Flag of Niger", from: 1959, to: 9999, primary: true, path: "flags/ne.svg", design: "The national flag of Niger, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
@@ -1594,7 +1594,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ni-burgundy", category: "historical", name: "Cross of Burgundy", from: 1524, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Cross of Burgundy, flag of New Spain.", source: "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags" },
     { id: "ni-arms", category: "coatofarms", name: "Coat of arms of Nicaragua", from: 1971, to: 9999, path: "national-flags/ni/nicaragua-arms.svg", design: "A triangle containing five volcanoes between two seas, beneath a rainbow and a Phrygian cap.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nicaragua" },
     { id: "ni-passport", category: "passport", name: "Passport of Nicaragua", path: "national-flags/ni/ni-passport.webp", design: "The cover of the Nicaragua passport.", source: "https://gicg.net/passport/ni/" },
-    { id: "ni-football-crest", category: "footballcrest", name: "Crest of the Nicaragua national football team", path: "national-flags/ni/ni-football-crest.png", design: "The crest of the Nicaragua national football team.", source: "https://en.wikipedia.org/wiki/Nicaragua_national_football_team" },
+    { id: "ni-football-crest", category: "footballcrest", name: "Crest of the Nicaragua national football team", path: "national-flags/ni/ni-football-crest.png", design: "A shield reading \"NICARAGUA\", with a white stylised \"N\" shape on Nicaragua's national blue and white.", source: "https://en.wikipedia.org/wiki/Nicaragua_national_football_team" },
   ],
   "NL": [
     { id: "nl-official-national", category: "official", name: "Flag of Netherlands", from: 1660, to: 9999, primary: true, path: "flags/nl.svg", design: "The national flag of Netherlands, in the form adopted in 1660.", source: "https://en.wikipedia.org/wiki/Flag_of_Netherlands" },
@@ -1629,7 +1629,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "np-royal-1928", category: "standard", name: "Royal Standard of Nepal (1928–1969)", from: 1928, to: 1969, path: "national-flags/np/nepal-royal-1928.svg", design: "The earlier royal standard.", source: "https://en.wikipedia.org/wiki/List_of_Nepalese_flags" },
     { id: "np-emblem", category: "coatofarms", name: "Emblem of Nepal", from: 2008, to: 9999, path: "national-flags/np/nepal-emblem.svg", design: "The flag, Mount Everest, green hills and a yellow plain above two joined hands, within a rhododendron wreath.", source: "https://en.wikipedia.org/wiki/Emblem_of_Nepal" },
     { id: "np-passport", category: "passport", name: "Passport of Nepal", path: "national-flags/np/np-passport.webp", design: "The cover of the Nepal passport.", source: "https://gicg.net/passport/np/" },
-    { id: "np-football-crest", category: "footballcrest", name: "Crest of the Nepal national football team", path: "national-flags/np/np-football-crest.png", design: "The crest of the Nepal national football team.", source: "https://en.wikipedia.org/wiki/Nepal_national_football_team" },
+    { id: "np-football-crest", category: "footballcrest", name: "Crest of the Nepal national football team", path: "national-flags/np/np-football-crest.png", design: "A shield reading \"NEPAL\", with a white silhouette of the Himalayas above a red field bearing a white crescent moon and a white sun, and a football at its base.", source: "https://en.wikipedia.org/wiki/Nepal_national_football_team" },
   ],
   "NR": [
     { id: "nr-official-national", category: "official", name: "Flag of Nauru", from: 1968, to: 9999, primary: true, path: "flags/nr.svg", design: "The national flag, adopted at independence in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Nauru" },
@@ -1696,7 +1696,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "PF": [
     { id: "pf-official-national", category: "official", name: "Flag of French Polynesia", from: 1984, to: 9999, path: "flags/pf.svg", design: "Two red bands enclosing a wide white band, a central emblem of a Polynesian canoe over sea and sun.", source: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
-    { id: "pf-football-crest", category: "footballcrest", name: "Crest of the Tahiti football association", path: "national-flags/pf/pf-football-crest.svg", design: "The crest of Tahiti's national football association.", source: "https://en.wikipedia.org/wiki/Tahitian_Football_Federation" },
+    { id: "pf-football-crest", category: "footballcrest", name: "Crest of the Tahiti football association", path: "national-flags/pf/pf-football-crest.svg", design: "A shield reading \"TAHITI\" and \"F T F\", with a red-and-gold outrigger canoe over blue wavy lines and gold sun rays, flanked by red chevron bands.", source: "https://en.wikipedia.org/wiki/Tahitian_Football_Federation" },
   ],
   "PG": [
     { id: "pg-official-national", category: "official", name: "Flag of Papua New Guinea", from: 1971, to: 9999, primary: true, path: "flags/pg.svg", design: "The national flag, adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
@@ -1704,7 +1704,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pg-german", category: "historical", name: "Flag of the German Empire", from: 1884, to: 1914, sovereign: "the German Empire", path: "national-flags/pg/pg-german.svg", design: "The flag of the German Empire, which held the north-east as German New Guinea until 1914.", source: "https://en.wikipedia.org/wiki/German_New_Guinea" },
     { id: "pg-arms", category: "coatofarms", name: "Emblem of Papua New Guinea", from: 1971, to: 9999, path: "national-flags/pg/pg-arms.svg", design: "A bird of paradise atop a spear and a kundu drum.", source: "https://en.wikipedia.org/wiki/Emblem_of_Papua_New_Guinea" },
     { id: "pg-passport", category: "passport", name: "Passport of Papua New Guinea", path: "national-flags/pg/pg-passport.webp", design: "The cover of the Papua New Guinea passport.", source: "https://gicg.net/passport/pg/" },
-    { id: "pg-football-crest", category: "footballcrest", name: "Crest of the Papua New Guinea national football team", path: "national-flags/pg/pg-football-crest.svg", design: "The crest of the Papua New Guinea national football team.", source: "https://en.wikipedia.org/wiki/Papua_New_Guinea_national_football_team" },
+    { id: "pg-football-crest", category: "footballcrest", name: "Crest of the Papua New Guinea national football team", path: "national-flags/pg/pg-football-crest.svg", design: "A red shield reading \"PNGFA\", with a gold silhouette of a bird of paradise beside a football and five white stars.", source: "https://en.wikipedia.org/wiki/Papua_New_Guinea_national_football_team" },
   ],
   "PH": [
     { id: "ph-official-national", category: "official", name: "Flag of Philippines", from: 1898, to: 9999, primary: true, path: "flags/ph.svg", design: "The national flag of Philippines, in the form adopted in 1898.", source: "https://en.wikipedia.org/wiki/Flag_of_Philippines" },
@@ -1791,7 +1791,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pw-tt", category: "historical", name: "Flag of the Trust Territory of the Pacific Islands", from: 1965, to: 1981, sovereign: "the United States", path: "national-flags/pw/pw-tt.svg", design: "The six-star flag of the US-administered Trust Territory, flown over Palau until it adopted its own flag in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Palau" },
     { id: "pw-arms", category: "coatofarms", name: "Seal of Palau", from: 1981, to: 9999, path: "national-flags/pw/pw-arms.svg", design: "A traditional bai (meeting house) on sixteen stones, ringed by the words Olbiil Era Kelulau and the year 1981.", source: "https://en.wikipedia.org/wiki/Seal_of_Palau" },
     { id: "pw-passport", category: "passport", name: "Passport of Palau", path: "national-flags/pw/pw-passport.webp", design: "The cover of the Palau passport.", source: "https://gicg.net/passport/pw/" },
-    { id: "pw-football-crest", category: "footballcrest", name: "Crest of the Palau national football team", path: "national-flags/pw/pw-football-crest.png", design: "The crest of the Palau national football team.", source: "https://en.wikipedia.org/wiki/Palau_Football_Association" },
+    { id: "pw-football-crest", category: "footballcrest", name: "Crest of the Palau national football team", path: "national-flags/pw/pw-football-crest.png", design: "A blue shield reading \"PALAU FOOTBALL ASSOCIATION\", with a yellow football.", source: "https://en.wikipedia.org/wiki/Palau_Football_Association" },
   ],
   "PY": [
     { id: "py-official-national", category: "official", name: "Flag of Paraguay", from: 1842, to: 9999, primary: true, path: "flags/py.svg", design: "The obverse (front) of Paraguay national flag, bearing the national coat of arms — a gold five-pointed star within a wreath of palm and olive. Paraguay is one of only a handful of countries whose flag is different on its two sides; the reverse is shown separately.", source: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
@@ -4173,6 +4173,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal of the Marshall Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_Marshall_Islands" },
     ],
   },
+  "mh-football-crest": {
+    description: "The starburst and the orange-and-white colours echo the Marshall Islands' national flag, where the rising orange-and-white band represents the equator and the country's two island chains, and the star's points stand for the country's electoral districts and principal cultural centres.",
+    sources: [
+      { title: "Flag of the Marshall Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands" },
+    ],
+  },
   "mk-emblem": {
     description: "North Macedonia is one of the very few countries still using a socialist-style national emblem — the others are Belarus and the breakaway Transnistria — and it is the only EU-candidate state to do so. The garlands framing it are the country's three signature crops: sheaves of wheat, tobacco leaves and opium-poppy fruits, tied with a ribbon of traditional Macedonian folk embroidery. Inside, a mountain, a stretch of water (the Vardar and the lakes) and a rising sun stand for the land and its freedom, and the red star at the top is the National Liberation War. The 1946 original showed the Pirin Mountains, which lie in Bulgaria — placed there to signal a hoped-for \"United Macedonia\" that never came about; the mountain was later left generic.",
     sources: [
@@ -4228,6 +4234,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
     ],
   },
+  "mo-football-crest": {
+    description: "The lotus is Macau's regional flower and the central emblem of its own flag, where its three petals represent the peninsula and the islands of Taipa and Coloane, and the flower symbolises purity in Chinese culture.",
+    sources: [
+      { title: "Flag of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
+    ],
+  },
   "mp-seal": {
     description: "The grey latte stone — the carved pillar on which the ancient Chamorro raised their houses — stands for the Chamorro people; the white star for the Commonwealth's union with the United States; and the mwarmwar, a garland of ylang-ylang, plumeria, peacock flower and Pacific basil, for the Carolinian people who also settled the islands. The blue field is the Pacific and the Mariana Trench.",
     sources: [
@@ -4258,8 +4270,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Malta — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta" },
     ],
   },
+  "mt-football-crest": {
+    description: "The Maltese cross is Malta's best-known national symbol, associated with the Knights Hospitaller (Knights of Malta), who ruled the islands from 1530 to 1798; its eight points are traditionally read as the eight beatitudes or the eight langues (national groupings) of the Order's knights.",
+    sources: [
+      { title: "Maltese cross — Wikipedia", url: "https://en.wikipedia.org/wiki/Maltese_cross" },
+    ],
+  },
   "mu-arms": {
     description: "The quartered shield shows a ship for the island's discovery and trade, three palm trees, a golden key, and a five-pointed star. The key and star give the motto, Stella Clavisque Maris Indici — “the Star and Key of the Indian Ocean,” Mauritius's place on the ocean routes. A dodo, the flightless bird found only here, and a sambar deer support the shield, each holding a stalk of sugarcane, the island's great crop.",
+    sources: [
+      { title: "Coat of arms of Mauritius — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius" },
+    ],
+  },
+  "mu-football-crest": {
+    description: "The ship is a lymphad, taken from Mauritius's coat of arms, where it represents the island's maritime history and the succession of colonial naval powers — Portugal, the Netherlands, France and Britain — that navigated the Indian Ocean and settled it.",
     sources: [
       { title: "Coat of arms of Mauritius — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius" },
     ],
@@ -4344,6 +4368,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flags of New Caledonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia" },
     ],
   },
+  "nc-football-crest": {
+    description: "The bird is the cagou (kagu), a flightless bird found only in New Caledonia and one of the territory's best-known natural and cultural symbols, known to the indigenous Kanak people as the \"ghost of the forest\".",
+    sources: [
+      { title: "Kagu — One Earth", url: "https://www.oneearth.org/species-of-the-week-kagu/" },
+    ],
+  },
   "ne-arms": {
     description: "On the green shield four gold devices name the country's peoples and livelihoods: a sun; a spear flanked by two Tuareg swords (takoba); three heads of millet, the staple grain; and the head of a zebu, for the herding life. Four national flags stand behind. The motto is Fraternité, Travail, Progrès — “Fraternity, Work, Progress.”",
     sources: [
@@ -4409,6 +4439,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is built from the country's own geography and one social claim. Mount Everest and the green hills below it are the mountain and hill regions; the yellow beneath them is the fertile Terai plain. The map of Nepal sits at the centre with the national flag above it. The joined hands of a man and a woman below stand for gender equality — an explicit statement, adopted with the emblem of the federal republic. Around the whole runs a wreath of rhododendron, the national flower, called lali gurans.",
     sources: [
       { title: "Emblem of Nepal — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Nepal" },
+    ],
+  },
+  "np-football-crest": {
+    description: "The moon and sun are taken from Nepal's national flag — the world's only non-quadrilateral national flag — where they are read as symbols of permanence, of Nepal's two main religions (Hinduism and Buddhism), and of the cool Himalayan north and the hot southern lowlands respectively.",
+    sources: [
+      { title: "Flag of Nepal — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
     ],
   },
   "nr-arms": {
@@ -4483,10 +4519,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of French Polynesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
     ],
   },
+  "pf-football-crest": {
+    description: "The canoe and its crew of five stars are taken directly from French Polynesia's national flag, where they represent the territory's five island groups (archipelagos) riding the Pacific waves.",
+    sources: [
+      { title: "Flag of French Polynesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
+    ],
+  },
   "pg-arms": {
     description: "A Raggiana bird of paradise — the national bird, also on the flag — perches above a spear and a kundu drum set crosswise, the traditional weapon and the traditional hand-drum of the country's peoples. The bird stands for the emerging nation, the drum and spear for its cultures.",
     sources: [
       { title: "Emblem of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Papua_New_Guinea" },
+    ],
+  },
+  "pg-football-crest": {
+    description: "The bird of paradise and the stars are taken from Papua New Guinea's national flag: the bird is a symbol of the country's tribal culture, shown in a soaring pose representing the nation's emergence, and the stars form the Southern Cross, marking the country's place in the southern hemisphere.",
+    sources: [
+      { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
     ],
   },
   "ph-arms": {
