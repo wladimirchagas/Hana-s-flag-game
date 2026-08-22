@@ -5023,6 +5023,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Liechtenstein — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein" },
     ],
   },
+  "lk-air-force": {
+    description: "The Air Force Ensign is a sky-blue field with the national flag in the canton and the air force's own roundel in the fly. When the ensign was first designed for the Royal Ceylon Air Force in 1951, the standard RAF-style roundel was modified with wings in yellow and maroon taken from the colours of the lion flag then flying as the national flag — the same lion that appears on Sri Lanka's national flag today, drawn from the Mahavamsa chronicle's association of the legendary Sinha with the Sinhalese people, and read since as a symbol of their strength and valour.",
+    sources: [
+      { title: "Sri Lanka Air Force — Air Force Emblem / Ensign / Roundel", url: "https://www.airforce.lk/pages.php?pages=air_force_symbols" },
+      { title: "Wikipedia — Flag of Sri Lanka", url: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
+    ],
+  },
+  "lk-naval-ensign": {
+    description: "The Naval Ensign of Sri Lanka is a white flag with the national flag in the canton, adopted in July 1972 when the Dominion of Ceylon became the Democratic Socialist Republic of Sri Lanka and the Royal Ceylon Navy was renamed the Sri Lanka Navy; the red Cross of St George that the earlier Royal Ceylon Navy ensign carried was removed at the same time the country became a republic. The gold lion on the national flag in its canton stands for the bravery of the Sinhalese people, and the blue field for the sea that surrounds the island.",
+    sources: [
+      { title: "Flags of the World — Sri Lanka: naval ensigns", url: "https://www.crwflags.com/fotw/flags/lk~.html" },
+      { title: "Wikipedia — Sri Lanka Navy", url: "https://en.wikipedia.org/wiki/Sri_Lanka_Navy" },
+    ],
+  },
   "lk-emblem": {
     description: "At the centre is the same gold lion holding a sword that appears on the national flag, ringed by the golden petals of the blue lotus, the national flower. The lion stands on a traditional grain vase sprouting sheaves of rice — the country's staple and its prosperity. The crest above is the Dharmacakra, the wheel of the Buddhist law, for the foremost place Buddhism holds in the country and for just rule; the supporters at either side are the traditional Sinhalese heraldic emblems of the sun and the moon. The present design was created in 1972 under the guidance of Nissanka Wijeyeratne, replacing the 1954 emblem adopted when Ceylon became a dominion.",
     sources: [
@@ -5057,6 +5071,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue and green repeat Lesotho's own national flag, adopted in 2006: blue for the sky and rain, and green for prosperity. The flag's own centrepiece, a black Basotho mokorotlo hat (not shown on this badge), replaced the shield, spear and club of the previous design to mark Lesotho as an internally and regionally peaceful state.",
     sources: [
       { title: "Flag of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    ],
+  },
+  "lt-air-force": {
+    description: "The Air Force Ensign of Lithuania carries the national tricolour canton with the double-barred Cross of Vytis in the fly, the same emblem drawn from the coat of arms of Vytis — the mounted knight long associated with the medieval Grand Duchy of Lithuania and rulers such as Vytautas and Jogaila. The cross has been used across Lithuanian military insignia and aircraft markings since the air force's founding, tying the modern service to that medieval heraldic heritage.",
+    sources: [
+      { title: "Flags of the World — Lithuania: Airforce Flags and Aircraft Marking", url: "https://www.fotw.info/flags/lt%5Eair.html" },
+      { title: "Wikipedia — Lithuanian Air Force", url: "https://en.wikipedia.org/wiki/Lithuanian_Air_Force" },
     ],
   },
   "lt-president": {
@@ -5123,6 +5144,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The small symbols are traditional Latvian ornamental signs (zīmes) — ancient Baltic folk motifs such as the Auseklis (morning star) and Māra's cross that are still widely used in Latvian folk art and national dress.",
     sources: [
       { title: "Auseklis — Wikipedia", url: "https://en.wikipedia.org/wiki/Auseklis" },
+    ],
+  },
+  "ly-army": {
+    description: "The flag of the modern Libyan Army, adopted after the 2011 revolution, is a white field bearing a golden Eagle of Saladin facing the hoist, its breast charged with a shield in the colours of the post-revolution Libyan tricolour (red, black and green, with the crescent and star), above a green scroll naming the force. The Eagle of Saladin is a symbol of Arab nationalism and unity long used across the region; here it stands beside the reinstated tricolour of the pre-Gaddafi kingdom, which the 2011 revolution readopted as Libya's national flag.",
+    sources: [
+      { title: "Wikipedia — National Emblem of Libya", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Libya" },
+      { title: "Wikipedia — Libyan Army", url: "https://en.wikipedia.org/wiki/Libyan_Army" },
     ],
   },
   "ly-football-crest": {
@@ -5192,6 +5220,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The eagle echoes Moldova's own national coat of arms, whose eagle derives from the interwar coat of arms of the Kingdom of Romania — a period when most of Moldova's territory was part of Romania, between the World Wars — while the shield's vertical blue-yellow-red repeats the national flag's own colours.",
     sources: [
       { title: "Coat of arms of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
+    ],
+  },
+  "me-naval-ensign": {
+    description: "Montenegro's naval ensign is blue, bearing a white fouled anchor over three wavy lines in the fly and the national flag in the canton, adopted alongside the country's other military flags and emblems in 2010. The anchor over waves is the conventional maritime device marking the ensign as belonging to the navy specifically, distinguishing it from the plain national flag flown ashore.",
+    sources: [
+      { title: "Flags of the World — Montenegro: Naval Ensign and Jack", url: "https://www.fotw.info/flags/me~nav.html" },
+      { title: "Wikipedia — List of flags of Montenegro", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro" },
     ],
   },
   "me-president": {
@@ -5456,6 +5491,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Malaysia national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Malaysia_national_football_team" },
     ],
   },
+  "mz-air-force": {
+    description: "The Mozambique Air Force's flag carries the service's roundel: a black disc bearing a red upward-pointing triangle around a yellow emblem of a cog wheel encircling corn stalks and sugar cane, with an AK-47 crossed over a hoe above a red sun and an open white book. Each element repeats the meaning of the wider national emblem — the book for education, the hoe for agricultural production, the rifle for the defence of the revolution, and the cog wheel for industry — over a small green outline of Mozambique itself.",
+    sources: [
+      { title: "Flags of the World — Mozambique Armed Forces", url: "https://www.crwflags.com/fotw/flags/mz%5E.html" },
+      { title: "Wikipedia — Flag of Mozambique", url: "https://en.wikipedia.org/wiki/Flag_of_Mozambique" },
+    ],
+  },
   "mz-president": {
     description: "The presidential standard bears Mozambique's national emblem, adopted in this form in 1990: a yellow cog-wheel for labour and industry enclosing a map of the country over blue ocean waves, a rising red sun for the building of a new society, and — arranged in a triad — an open book for education, a hoe for peasantry and agricultural production, and an AK-47 rifle for defence and vigilance, framed by stalks of maize and sugar cane for the nation's agricultural wealth.",
     sources: [
@@ -5702,6 +5744,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The army's flag carries Oman's national emblem: a khanjar (a curved ceremonial dagger, still worn by Omani men on formal occasions and adopted as a badge of the ruling family in the 18th century) sheathed and set over two crossed swords, together standing for the traditional weapons of the Omani people; the same emblem marks the badges of every branch of the Sultan's Armed Forces.",
     sources: [
       { title: "National emblem of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
+    ],
+  },
+  "om-navy": {
+    description: "The naval ensign of the Royal Navy of Oman carries the national emblem — a khanjar, the traditional curved Omani dagger, sheathed and set over two crossed swords and a belt — placed on a fouled anchor, the standard maritime addition marking it as the navy's own version of the badge shared across the Sultan's Armed Forces. The khanjar and swords were adopted in the 18th century as the badge of the Omani royal family before becoming the national emblem, and together stand for the traditional weaponry, strength and bravery of the Omani people.",
+    sources: [
+      { title: "Flags of the World — Royal Navy of Oman and Other Naval Flags", url: "https://www.crwflags.com/fotw/flags/om~war.html" },
+      { title: "Wikipedia — National emblem of Oman", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
     ],
   },
   "om-royal": {
