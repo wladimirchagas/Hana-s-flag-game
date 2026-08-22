@@ -3486,7 +3486,16 @@
           "design": "The coat of arms of the Brazilian Army on a white field.",
           "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
           "sha256": "81f9ac5154999f250978d9751b2ff51c52b62b206a1373ead35b563a3e609239",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Army's coat of arms is parted red and sky blue, bearing a gold griffin holding a silver eight-pointed star — the griffin, a mythical guardian creature part-eagle, part-lion, standing for vigilance and strength — beneath a knight's helmet, with a cockade bearing the Southern Cross constellation (Cruzeiro do Sul), the same star pattern at the centre of the national flag.",
+            "sources": [
+              {
+                "title": "Armed Forces Flags (Brazil)",
+                "url": "http://flagwithmeaning.blogspot.com/2013/04/armed-forces-flags-brazil.html"
+              }
+            ]
+          }
         },
         {
           "id": "br-navy",
@@ -3512,7 +3521,16 @@
           "design": "The arms of the Aeronautics Command on a sky-blue field crossed by a diagonal band.",
           "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
           "sha256": "25fc4e3f143d80bba1afbcf3eea24430cd97a5d8ec6a8568c15b12c54caa1306",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A sky-blue field, crossed by a diagonal band, bears the arms of the Aeronautics Command within a green-and-gold-bordered diamond: a shield divided green and yellow — Brazil's own national colours — surmounted by a star within concentric white-and-blue discs, tying the Air Force's own heraldry to the wider national symbolism of green, yellow and blue.",
+            "sources": [
+              {
+                "title": "Brazilian Air Force — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/br%5Efab.html"
+              }
+            ]
+          }
         },
         {
           "id": "br-marines",
@@ -10172,7 +10190,16 @@
           "design": "The national tricolour charged with the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
           "sha256": "c8d5da7fbfabb46cc5e2301c8c975e42a444d8648732895bbfa21aa40c515f8a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The national tricolour is charged with Ghana's coat of arms, designed by Amon Kotei and introduced at independence on 4 March 1957: a shield supported by two golden tawny eagles, chosen as the strongest of all birds to signify the safety and defence of Ghana's newly won independence, each wearing the Order of the Star of Ghana.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ghana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana"
+              }
+            ]
+          }
         },
         {
           "id": "gh-naval-ensign",
@@ -10696,7 +10723,16 @@
           "design": "The national flag charged with the presidential arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Greek_flags",
           "sha256": "104b0efcabf7aa573c934a4ed92e6b4829f63fe0fca46257d2223286a5767b5b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The national flag is charged with the presidential arms: a white Greek cross on a blue shield, framed by two laurel branches for victory and honour — the current form adopted in 1975, after the fall of the 1967–1974 military junta, whose own presidential flag had instead carried a phoenix (a symbol of rebirth first added to Greek state emblems in the 1830s under Kapodistrias) so unpopular after the dictatorship that it was dropped entirely rather than revived.",
+            "sources": [
+              {
+                "title": "Greece: President of the Republic — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/gr_pres.html"
+              }
+            ]
+          }
         },
         {
           "id": "gr-president-1924",
