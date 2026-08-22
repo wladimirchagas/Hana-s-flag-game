@@ -13494,7 +13494,16 @@
           "design": "A blue field with the royal crest and the country's name.",
           "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
           "sha256": "66e548c3aa4a59890ea5834c5fa9665d57f8c20b112fa2f108758e6a2a232d00",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A blue field bears the crest from Jamaica's coat of arms: a Jamaican crocodile — a species native to the island — mounted on the royal helmet of the British monarchy, above the country's name; the crocodile stands alongside the coat of arms' other native species, the pineapple, as a mark of Jamaica's indigenous flora and fauna, on a flag that identifies the monarch's own representative on the island.",
+            "sources": [
+              {
+                "title": "Coat of arms of Jamaica — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica"
+              }
+            ]
+          }
         },
         {
           "id": "jm-pm",
@@ -18607,7 +18616,16 @@
           "design": "The standard of the President of Malawi.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Malawi",
           "sha256": "db52574829d4fa7acb73264cb48277d053ca2380fb5fe45cb8fbbd665a1fc621",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The presidential standard bears Malawi's coat of arms, granted on 30 June 1964 days before independence: a rising sun on the shield's black field, for the dawn of the new nation and, more broadly, the hope of freedom sweeping decolonising Africa; the shield is supported by a lion and a leopard for strength and agility, stands upon a representation of Mount Mulanje, and carries the motto 'Unity and Freedom' beneath.",
+            "sources": [
+              {
+                "title": "Coat of arms of Malawi — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malawi"
+              }
+            ]
+          }
         },
         {
           "id": "mw-arms",
@@ -19725,7 +19743,16 @@
           "design": "The presidential flag of the Federal Republic.",
           "source": "https://en.wikipedia.org/wiki/List_of_Nigerian_flags",
           "sha256": "0d80e4daa88e513981909973fb11031e0960ecde43f0286cc587ac00ffda8063",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential flag bears Nigeria's coat of arms: a black shield for the country's fertile soil, crossed by a white wavy pall marking the confluence of the Niger and Benue rivers at Lokoja, supported by two white horses for dignity and crowned by a red eagle for strength and national pride, with the Costus spectabilis — a flower found across Nigeria — beneath, and the national motto 'Unity and Faith, Peace and Progress'.",
+            "sources": [
+              {
+                "title": "Coat of arms of Nigeria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria"
+              }
+            ]
+          }
         },
         {
           "id": "ng-civil-ensign",
@@ -27419,7 +27446,16 @@
           "design": "The presidential flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
           "sha256": "99c7ad00024cac833ff5d814bb1c3730e7030bdb5b3d9510e831c88f1c8cbae0",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential flag carries Tanzania's coat of arms (adopted 1961, three years before this flag): a warrior's shield quartered on a golden field — gold for the country's mineral wealth — with a burning torch in its first quarter symbolising the Uhuru Torch of Tanzanian independence, itself standing for freedom, enlightenment and knowledge; the shield is supported by a man and a woman, reflecting the country's ideal of shared nation-building.",
+            "sources": [
+              {
+                "title": "Coat of arms of Tanzania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tanzania"
+              }
+            ]
+          }
         },
         {
           "id": "tz-arms",
