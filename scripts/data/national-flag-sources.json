@@ -9040,7 +9040,16 @@
           "design": "A banner of the royal arms: the three lions of England quartered with the lion of Scotland and the harp of Ireland.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "1d45031d25e52ec2b7a378bdf218d060d3d28f1943942c1c1174b25beff46be9",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Royal Standard quarters the historic royal arms: three gold lions for England (repeated in the first and fourth quarters), a red lion rampant for Scotland, and a gold harp for Ireland — Wales is not represented, its status as a Principality instead marked separately by the title Prince of Wales.",
+            "sources": [
+              {
+                "title": "Royal Standard — royal.uk",
+                "url": "https://www.royal.uk/encyclopedia/royal-standard?page=1"
+              }
+            ]
+          }
         },
         {
           "id": "gb-royal-standard-scotland",
@@ -10143,7 +10152,16 @@
           "design": "A blue field with a white cross throughout — the jack the Hellenic Navy has flown since the war of independence.",
           "source": "https://en.wikipedia.org/wiki/List_of_Greek_flags",
           "sha256": "9d0cf7a097c5b679013d33a6d876311814cffffbc8bd74a5bb8958eaf1c20f37",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The plain blue field with a white cross reaching to the edges continues a design first decreed in 1822 during the Greek War of Independence, when the cross stood for Orthodox Christianity — one of the unifying symbols of the revolution — and was described as representing \"the wisdom of God, freedom and country\".",
+            "sources": [
+              {
+                "title": "Cross for the War of Independence 1821–29 — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_for_the_War_of_Independence_1821%E2%80%9329"
+              }
+            ]
+          }
         },
         {
           "id": "gr-president",
@@ -27315,7 +27333,16 @@
           "design": "The presidential coat of arms encircled by fifty stars on a dark blue field.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
           "sha256": "896bd74356a5bd2bcf1be6b22d6ee4cc819904877e88743411ce88a1feede9a2",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The presidential coat of arms shows a bald eagle holding an olive branch of peace in one talon and arrows of war in the other, its beak bearing the motto \"E Pluribus Unum\" (\"Out of many, one\"); the ring of fifty stars — completed in 1960 after Hawaii's admission — represents the fifty states.",
+            "sources": [
+              {
+                "title": "Flag of the president of the United States — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_president_of_the_United_States"
+              }
+            ]
+          }
         },
         {
           "id": "us-vice-president",
