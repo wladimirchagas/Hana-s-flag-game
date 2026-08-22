@@ -2945,6 +2945,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "List of Brazilian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
     ],
   },
+  "br-president": {
+    description: "The coat of arms at the centre shows a five-pointed star arrangement for the Southern Cross constellation, a wreath of coffee and tobacco branches for Brazil's historic agricultural wealth, and a ring of stars for the country's states and Federal District.",
+    sources: [
+      { title: "Coat of arms of Brazil — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil" },
+    ],
+  },
   "br-arms": {
     description: "Adopted on 19 November 1889, four days after the republic was proclaimed, and built to say what the new state was. The central emblem is charged with the Southern Cross, the constellation that stands for the southern sky over Brazil, and it is ringed by 27 stars — one for each state and one for the Federal District. Framing it are branches of coffee and tobacco, the crops that carried the country’s economy at the time, which is why the arms show plants rather than the heraldic beasts of a European coat of arms. The blue ribbon carries the state’s own name and, on its second line, the date of the proclamation of the republic.",
     sources: [
@@ -3022,6 +3028,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A 1964 Canadian Parliament resolution confirmed the Union Flag would continue to be flown on specified days to symbolise Canada's membership of the Commonwealth and its historical ties to Britain, alongside the Maple Leaf as the country's national flag.",
     sources: [
       { title: "List of Canadian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Canadian_flags" },
+    ],
+  },
+  "ca-gg": {
+    description: "The crest is taken from the Royal Coat of Arms of Canada: a crowned gold lion — a traditional emblem of the British Crown denoting strength and sovereignty — holding a red maple leaf, the symbol used for all Canadians since the early 19th century.",
+    sources: [
+      { title: "Flag of the governor general of Canada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_governor_general_of_Canada" },
     ],
   },
   "ca-metis": {
@@ -3254,6 +3266,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
     ],
   },
+  "cz-president": {
+    description: "The motto \"Pravda vítězí\" (\"Truth prevails\") was adopted by Czechoslovakia's first president, Tomáš Garrigue Masaryk, in 1918, tracing back to the teachings of the medieval reformer Jan Hus, and remains the motto of the Czech presidency today.",
+    sources: [
+      { title: "Truth prevails — Wikidata", url: "https://www.wikidata.org/wiki/Q3274908" },
+    ],
+  },
   "cz-arms": {
     description: "The greater arms quarter the three historical Czech lands the country is made of: Bohemia's silver double-tailed lion on red (twice, in the first and fourth quarters), Moravia's chequered eagle, and Silesia's black eagle with a crescent across its breast. The Bohemian lion has a history: the rulers of Bohemia originally used a flaming eagle of Saint Wenceslas, and Emperor Frederick granted King Vladislaus II a silver lion on red to mark his valour. It was drawn with a single tail at first; the second tail was added later, for further help given to the emperor. The lesser arms show that lion alone.",
     sources: [
@@ -3391,6 +3409,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The olive wreath is drawn from Eritrea's own national emblem, adopted in 1993 at independence, whose 30 leaves mark the 30 years of war fought to win it; the emblem's wreath normally encircles a dromedary camel, the beast of burden that carried supplies for the independence movement and stands for endurance and self-reliance.",
     sources: [
       { title: "Emblem of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
+    ],
+  },
+  "es-naval-jack": {
+    description: "The four quarters are the historic arms of the medieval kingdoms whose union formed Spain: a gold tower for Castile, a red lion for León, four red bars for Aragon, and gold chains for Navarre.",
+    sources: [
+      { title: "History of the coat of arms of Spain — Fascinating Spain", url: "https://www.fascinatingspain.com/articulo/spanish-culture/history-of-the-coat-of-arms-of-spain/20200722101903070410.html" },
     ],
   },
   "es-civil": {
@@ -4255,6 +4279,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
     ],
   },
+  "lt-president": {
+    description: "The Vytis — a white armoured knight on a white horse, sword raised — is Lithuania's national coat of arms, one of Europe's oldest, tracing back to the seal of Grand Duke Algirdas in 1366; it traditionally represents the ruler's readiness to defend and pursue enemies of the land.",
+    sources: [
+      { title: "Coat of arms of Lithuania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lithuania" },
+    ],
+  },
   "lt-arms": {
     description: "The Vytis — the pursuer — is a mounted knight charging with a raised sword, and it is one of the oldest coats of arms in Europe still in use. It began as the dynastic device of the Gediminid family and was formalised by Grand Duke Vytautas the Great in the early 15th century as the arms of the Grand Duchy of Lithuania, the last pagan state in Europe, which had formed in response to the Teutonic Order's forced Christianisation of Estonia and Latvia. The cross on the knight's shield is the Jagiellonian double cross, added after Lithuania's rulers accepted Christianity. The horseman was flown continuously as the state's emblem until the Soviet occupation and restored with independence in 1991.",
     sources: [
@@ -4609,6 +4639,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Nicaragua — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nicaragua" },
     ],
   },
+  "nl-royal": {
+    description: "The blue cross of Nassau divides the flag into quarters bearing the bugle horn of the Principality of Orange, referencing the House of Orange-Nassau; at its centre the royal arms carry a lion holding a sword (the will to defend liberty) and a bundle of arrows for the seven provinces of the old Dutch Republic, beneath the motto \"Je maintiendrai\" (\"I shall maintain\").",
+    sources: [
+      { title: "Coat of arms of the Netherlands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Netherlands" },
+    ],
+  },
   "nl-government": {
     description: "The Dutch government flies its own flag — the national tricolour with an orange pennant above it — at ministries, referencing the House of Orange-Nassau, whose colour was displaced on the national flag itself by red in the 17th century.",
     sources: [
@@ -4751,6 +4787,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The bird of paradise and the stars are taken from Papua New Guinea's national flag: the bird is a symbol of the country's tribal culture, shown in a soaring pose representing the nation's emergence, and the stars form the Southern Cross, marking the country's place in the southern hemisphere.",
     sources: [
       { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+    ],
+  },
+  "ph-naval-jack": {
+    description: "The sun and three stars are taken from the national flag: the sun's eight rays stand for the eight provinces that rose against Spanish rule in 1896, and the three stars represent the Philippines' three principal island groups — Luzon, the Visayas and Mindanao.",
+    sources: [
+      { title: "Three Stars And A Sun: What Do They Mean? — ChoosePhilippines", url: "https://www.choosephilippines.com/do/history-and-culture/3114/three-stars-and-sun-what-do-they-mean/" },
     ],
   },
   "ph-war-flag": {
