@@ -4435,7 +4435,16 @@
           "design": "A white field with the national flag in the canton and the naval badge in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "cbc0a2bc80bc1569df567a095838e78dce69ef2b43c95134c42cda8e9eb0e4b1",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A white field bears the national flag in the canton and, in the fly, the Royal Canadian Navy's badge: a fouled anchor — the universal symbol of the sea, stability and the naval profession — beneath a naval crown, a circlet bearing the sterns and sails of three ancient ships of the line that (unlike an ordinary royal crown) marks the wearer specifically as a maritime service, a form of honour used in Britain for some three centuries.",
+            "sources": [
+              {
+                "title": "Canadian Naval Ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Canadian_Naval_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "ca-air-force",
@@ -4448,7 +4457,16 @@
           "design": "An air-force-blue field with the national flag in the canton and the RCAF roundel in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "fec0685f70db35371e53b09daa01fab35656b74cf107218f74cca4d70b1313b6",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "An air-force-blue field bears the national flag in the canton and, in the fly, a roundel centred on a red maple leaf — adapted in 1940 from the Royal Air Force's own three-ring roundel (itself a First World War aircraft-identification device borrowed from the French) by replacing its red centre disc with the maple leaf, one of Canada's most recognised national symbols since the 19th century; the maple-leaf roundel became the RCAF's official insignia in 1946.",
+            "sources": [
+              {
+                "title": "Royal Canadian Air Force Ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Royal_Canadian_Air_Force_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "ca-sovereign",
@@ -9187,7 +9205,16 @@
           "design": "A red field bearing the badge of the British Army.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "d1738d544ef72462c9daf7b0871a8b789d6c71f35dd3344c3785325f2708106e",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A red field bears two crossed swords surmounted by the royal crest: the crossed swords stand for the Army, and the crown above them for the monarch the Army serves — as the King's or Queen's own forces, the British Army's ceremonial colour is properly the Union Flag itself, and this red flag is its non-ceremonial banner for recruiting and public events.",
+            "sources": [
+              {
+                "title": "United Kingdom: Army — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/gb%5Earmy.html"
+              }
+            ]
+          }
         },
         {
           "id": "gb-raf",
@@ -9200,7 +9227,16 @@
           "design": "An Air-Force-blue field with the Union Flag in the canton and the RAF roundel in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "eef43f288ec900483e97f26ea5f4870d8c7969800a0a4bf874cca30da61d6d6f",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "An Air-Force-blue field carries the Union Flag in the canton — placed there in 1921 on the suggestion of Air Vice-Marshal Sir John Salmond to mark British authority — and, in the fly, the RAF's red-white-blue roundel, adapted from the French-derived aircraft identification roundel the Royal Flying Corps adopted in the First World War to distinguish friendly aircraft from the enemy's.",
+            "sources": [
+              {
+                "title": "Royal Air Force Ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Royal_Air_Force_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "gb-white-ensign",
