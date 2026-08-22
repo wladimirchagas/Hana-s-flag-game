@@ -3326,6 +3326,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
     ],
   },
+  "de-navy": {
+    description: "The forked swallowtail shape, adopted in 1956, marks this as the German Navy's ensign, following a naval tradition — inherited via Denmark's 1625 regulations — of reserving a swallow-tailed flag for the battle fleet to distinguish it from merchant shipping's plain rectangular flag.",
+    sources: [
+      { title: "Swallowtail (flag) — Grokipedia", url: "https://grokipedia.com/page/Swallowtail_(flag)" },
+    ],
+  },
   "de-state": {
     description: "Germany's plain black-red-gold tricolour is the civil flag flown by citizens; the state flag adds the federal shield's eagle — a symbol of German sovereignty dating back to the Holy Roman Empire — reserved for federal authorities.",
     sources: [
