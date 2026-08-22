@@ -5951,6 +5951,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Togo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
     ],
   },
+  "th-army": {
+    description: "A red field bears the Army's emblem: a red Chakra (a discus, the weapon of Vishnu and the emblem of the ruling Chakri dynasty) beneath an Unalom, the Thai rendering of the sacred Buddhist syllable Aum, and the Phra Maha Mongkut (Great Crown), a device derived from the King's own personal seal — a play on the royal name Mongkut/Chom Klao, both of which mean 'crown' in Thai — marking the flag as bestowed by, and loyal to, the reigning monarch.",
+    sources: [
+      { title: "Royal Thai Army (Thailand) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/th%5Earmy.html" },
+    ],
+  },
+  "th-navy": {
+    description: "The Navy's emblem, in a white disc, is a white anchor — the traditional symbol of a naval force — threaded through a Chakra beneath a royal crown; the Chakra (disk) and its companion weapon the Trisula (trident), both weapons of the god Vishnu, together give their name to the ruling Chakri dynasty (Chakri = Chak + Tri), so the emblem marks the Navy as an arm of the King's own forces. The design descends from the Naval Officer's Flag created by royal command of King Rama VI in 1910.",
+    sources: [
+      { title: "Royal Thai Navy (Thailand) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/th~nav.html" },
+    ],
+  },
+  "th-air-force": {
+    description: "A sky-blue field — for the sky the Air Force defends — bears the service's winged emblem beneath the royal crown, adopted in this form in 1979; the wings mark the Air Force as a distinct branch of Thailand's armed forces, while the crown, as on the Army and Navy flags, ties the service to the reigning Chakri monarch.",
+    sources: [
+      { title: "Royal Thai Air Force (Thailand) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/th%5Eaf.html" },
+    ],
+  },
   "th-naval-ensign": {
     description: "The white elephant, adopted for the naval ensign in 1917, recalls Thailand's own flag from 1855 to 1916, when a white elephant on red was the national flag; white elephants have long symbolised royal power and the prosperity of the kingdom under Thai monarchs.",
     sources: [

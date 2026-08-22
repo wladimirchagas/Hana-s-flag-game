@@ -26205,7 +26205,16 @@
           "design": "A red field with the army's emblem — a chakra beneath the unalom and the royal crown.",
           "source": "https://en.wikipedia.org/wiki/List_of_Thai_flags",
           "sha256": "ff314b775588d25e28f14ceb9787a96ff088e0d093ed3d93636950ec411f1f6d",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A red field bears the Army's emblem: a red Chakra (a discus, the weapon of Vishnu and the emblem of the ruling Chakri dynasty) beneath an Unalom, the Thai rendering of the sacred Buddhist syllable Aum, and the Phra Maha Mongkut (Great Crown), a device derived from the King's own personal seal — a play on the royal name Mongkut/Chom Klao, both of which mean 'crown' in Thai — marking the flag as bestowed by, and loyal to, the reigning monarch.",
+            "sources": [
+              {
+                "title": "Royal Thai Army (Thailand) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/th%5Earmy.html"
+              }
+            ]
+          }
         },
         {
           "id": "th-navy",
@@ -26218,7 +26227,16 @@
           "design": "A navy blue field with the navy's emblem in a white disc.",
           "source": "https://en.wikipedia.org/wiki/List_of_Thai_flags",
           "sha256": "68ee0ceb1a17333fec8b665c954ffbe7d700b11d1a3f6b653eed3f158b4fafdd",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Navy's emblem, in a white disc, is a white anchor — the traditional symbol of a naval force — threaded through a Chakra beneath a royal crown; the Chakra (disk) and its companion weapon the Trisula (trident), both weapons of the god Vishnu, together give their name to the ruling Chakri dynasty (Chakri = Chak + Tri), so the emblem marks the Navy as an arm of the King's own forces. The design descends from the Naval Officer's Flag created by royal command of King Rama VI in 1910.",
+            "sources": [
+              {
+                "title": "Royal Thai Navy (Thailand) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/th~nav.html"
+              }
+            ]
+          }
         },
         {
           "id": "th-air-force",
@@ -26231,7 +26249,16 @@
           "design": "A sky blue field with the air force's winged emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Thai_flags",
           "sha256": "801a9a92fb3153542e59baf6160945c8e7056b0af923985e02f9f0e04d73f683",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A sky-blue field — for the sky the Air Force defends — bears the service's winged emblem beneath the royal crown, adopted in this form in 1979; the wings mark the Air Force as a distinct branch of Thailand's armed forces, while the crown, as on the Army and Navy flags, ties the service to the reigning Chakri monarch.",
+            "sources": [
+              {
+                "title": "Royal Thai Air Force (Thailand) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/th%5Eaf.html"
+              }
+            ]
+          }
         },
         {
           "id": "th-emblem",
