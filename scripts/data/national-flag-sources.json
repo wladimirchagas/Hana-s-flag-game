@@ -1696,7 +1696,16 @@
           "design": "The presidential standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags",
           "sha256": "eda93383dc942abb4cde5b21368e2c6c70d7bcac218c5d088e47b1797f01abde",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The standard bears the presidential coat of arms: a shield in the colours of the national flag charged with an eight-pointed star, and at its centre a flame — a reference to Azerbaijan's traditional epithet 'Land of Fires', drawn from the natural gas seeps and fire temples associated with the country. The eight-pointed star is also read as standing for the branches of the Turkic peoples, or for the eight letters of \"Azərbaycan\" in its old orthography.",
+            "sources": [
+              {
+                "title": "State Symbols — Official web-site of the President of Azerbaijan",
+                "url": "https://president.az/en/pages/view/azerbaijan/symbols"
+              }
+            ]
+          }
         },
         {
           "id": "az-land-forces",
@@ -4097,7 +4106,16 @@
           "design": "The presidential flag bearing the national emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
           "sha256": "92be6414910a9fabaf6eac0b21d1dfc24d65d2b88676ad87a1609aee24d82963",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The national red-over-green flag, charged in gold and red with the national emblem: a golden outline of Belarus's own borders rising over a globe within a wreath of wheat, flax and clover for prosperity, topped by a red star for humanity's courage and aspirations — the globe expressing Belarus's wish to live in peace and cooperation with other nations.",
+            "sources": [
+              {
+                "title": "National Coat of Arms of the Republic of Belarus — Official Internet Portal of the President of Belarus",
+                "url": "https://president.gov.by/en/gosudarstvo/simvolika/gerb"
+              }
+            ]
+          }
         },
         {
           "id": "by-armed-forces",
@@ -4110,7 +4128,16 @@
           "design": "The armed forces' flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
           "sha256": "48a5177490aaa5f15ee0649d12711e89ffd0d14297150b51ab3e0ade39092394",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A red field bears the vertical rushnyk pattern (the traditional Belarusian folk embroidery also seen on the national flag) at the hoist and the national emblem at the fly; the red recalls the blood shed by Belarusian defenders through history — from the 1410 Battle of Grunwald to the Red Army's Second World War campaigns — while the rushnyk pattern stands for the cultural continuity and spiritual unity of the Belarusian people.",
+            "sources": [
+              {
+                "title": "List of Belarusian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "by-land-forces",

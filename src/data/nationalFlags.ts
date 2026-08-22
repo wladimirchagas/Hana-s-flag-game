@@ -2809,6 +2809,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Åland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land" },
     ],
   },
+  "az-president": {
+    description: "The standard bears the presidential coat of arms: a shield in the colours of the national flag charged with an eight-pointed star, and at its centre a flame — a reference to Azerbaijan's traditional epithet 'Land of Fires', drawn from the natural gas seeps and fire temples associated with the country. The eight-pointed star is also read as standing for the branches of the Turkic peoples, or for the eight letters of \"Azərbaycan\" in its old orthography.",
+    sources: [
+      { title: "State Symbols — Official web-site of the President of Azerbaijan", url: "https://president.az/en/pages/view/azerbaijan/symbols" },
+    ],
+  },
   "az-emblem": {
     description: "The focal point is a stylised flame, a reference to the country's eternal oil and gas fires — the reason Azerbaijan is called the land of eternal fire. The shield behind it carries the colours of the national flag with its crescent and eight-pointed star. Supporting it are a crossed stalk of wheat and an oak bough: wheat is abundance, and wheat bread the country's staple food, while the oak stands for strength and endurance. The design is not new — the Azerbaijan Democratic Republic opened a competition for a national emblem on 30 January 1920 but fell in April before one could be approved; a design developed in 1919–1920 was taken up again after independence and confirmed, with alterations, by constitutional law on 19 January 1993.",
     sources: [
@@ -3070,6 +3076,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield is a Batswana ox-hide shield. Across its centre three cogwheels stand for industry; below them three wavy blue bands stand for water — the country's scarcest and most prized resource, the same idea the motto names. The bull's head at the foot is for the cattle on which Botswana's economy was built. Two zebras support the shield — their black-and-white a quiet emblem of racial harmony — one holding a head of sorghum for agriculture, the other an elephant's tusk for the country's wildlife and ivory. The single word on the ribbon, Pula, means “rain” (and “blessings,” and is the name of the currency): in a country three-quarters desert, rain is the highest blessing.",
     sources: [
       { title: "Coat of arms of Botswana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana" },
+    ],
+  },
+  "by-armed-forces": {
+    description: "A red field bears the vertical rushnyk pattern (the traditional Belarusian folk embroidery also seen on the national flag) at the hoist and the national emblem at the fly; the red recalls the blood shed by Belarusian defenders through history — from the 1410 Battle of Grunwald to the Red Army's Second World War campaigns — while the rushnyk pattern stands for the cultural continuity and spiritual unity of the Belarusian people.",
+    sources: [
+      { title: "List of Belarusian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
+    ],
+  },
+  "by-president": {
+    description: "The national red-over-green flag, charged in gold and red with the national emblem: a golden outline of Belarus's own borders rising over a globe within a wreath of wheat, flax and clover for prosperity, topped by a red star for humanity's courage and aspirations — the globe expressing Belarus's wish to live in peace and cooperation with other nations.",
+    sources: [
+      { title: "National Coat of Arms of the Republic of Belarus — Official Internet Portal of the President of Belarus", url: "https://president.gov.by/en/gosudarstvo/simvolika/gerb" },
     ],
   },
   "by-emblem": {
