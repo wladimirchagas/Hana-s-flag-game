@@ -934,7 +934,16 @@
           "design": "The national flag charged with the presidential arms, flown where the president is present.",
           "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
           "sha256": "d1d2933a9f45fe576aff3d94836823a65677b2fb8c7a9b4e37c5b031f14c9e59",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Sun of May (Sol de Mayo) commemorates the sun said to have broken through cloud over Buenos Aires on 25 May 1810, during the uprising that began Argentina's path to independence; its design, by Juan de Dios Rivera, also pays homage to Inti, the Inca sun god.",
+            "sources": [
+              {
+                "title": "Sun of May — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Sun_of_May"
+              }
+            ]
+          }
         },
         {
           "id": "ar-confederation",
@@ -11137,7 +11146,16 @@
           "design": "A blue field with a red and white border, bearing the national coat of arms and two crossed anchors in the centre.",
           "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
           "sha256": "bf65cac3ea794331f221c38b6ce037ca466dc4eba7daab036ec7be0d4fd6761d",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The red-and-white checkerboard (šahovnica) is Croatia's central national symbol, used as a heraldic device since at least the 16th century; the five smaller shields above it represent Croatia's historic regions.",
+            "sources": [
+              {
+                "title": "Croatian checkerboard — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Croatian_checkerboard"
+              }
+            ]
+          }
         },
         {
           "id": "hr-passport",
@@ -13518,7 +13536,16 @@
           "design": "A green field with the coat of arms and the incumbent's own device.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
           "sha256": "35fd089f7199828cff82a1384c7150b798fca7faa681eb3b15931066e227a18e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The coat of arms shows two lions holding a Maasai-style spear and shield in Kenya's national colours — black for the people, red for the blood shed in the independence struggle, green for agriculture and white for peace — with a rooster on the shield and Mount Kenya beneath, above the motto \"Harambee\" (\"let us all pull together\").",
+            "sources": [
+              {
+                "title": "Coat of arms of Kenya — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya"
+              }
+            ]
+          }
         },
         {
           "id": "ke-president-1964",

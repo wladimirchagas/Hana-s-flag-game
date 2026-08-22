@@ -2667,6 +2667,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Angola national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Angola_national_football_team" },
     ],
   },
+  "ar-president": {
+    description: "The Sun of May (Sol de Mayo) commemorates the sun said to have broken through cloud over Buenos Aires on 25 May 1810, during the uprising that began Argentina's path to independence; its design, by Juan de Dios Rivera, also pays homage to Inti, the Inca sun god.",
+    sources: [
+      { title: "Sun of May — Wikipedia", url: "https://en.wikipedia.org/wiki/Sun_of_May" },
+    ],
+  },
   "ar-civil": {
     description: "Argentina distinguishes a plain civil flag, flown by private citizens, from the state/war flag charged with the Sun of May (Sol de Mayo) — a sun face said to have appeared in the sky over Buenos Aires during the May Revolution of 1810, reserved for government and military use.",
     sources: [
@@ -3852,6 +3858,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Honduras — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
     ],
   },
+  "hr-naval-jack": {
+    description: "The red-and-white checkerboard (šahovnica) is Croatia's central national symbol, used as a heraldic device since at least the 16th century; the five smaller shields above it represent Croatia's historic regions.",
+    sources: [
+      { title: "Croatian checkerboard — Wikipedia", url: "https://en.wikipedia.org/wiki/Croatian_checkerboard" },
+    ],
+  },
   "hr-arms": {
     description: "The main shield is the šahovnica, a chequerboard of 13 red and 12 white fields, in use since the late 15th century and the country's principal emblem. The crown above it is made of five smaller shields, the historic arms of the lands that make up Croatia — the oldest Croatian arms, Dubrovnik, Dalmatia, Istria and Slavonia. The first arms of Croatia were in fact the three leopard's or lion's heads that now stand for Dalmatia; from the late 15th century those came to be read as Dalmatian, and after the 19th-century national revival — during which the Italian-Dalmatianist Autonomist Party appropriated the three heads — the chequerboard became the preferred national symbol.",
     sources: [
@@ -4131,6 +4143,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Japan national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Japan_national_football_team" },
       { title: "Yatagarasu — Wikipedia", url: "https://en.wikipedia.org/wiki/Yatagarasu" },
+    ],
+  },
+  "ke-president": {
+    description: "The coat of arms shows two lions holding a Maasai-style spear and shield in Kenya's national colours — black for the people, red for the blood shed in the independence struggle, green for agriculture and white for peace — with a rooster on the shield and Mount Kenya beneath, above the motto \"Harambee\" (\"let us all pull together\").",
+    sources: [
+      { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
   },
   "ke-arms": {
