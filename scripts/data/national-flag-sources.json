@@ -12289,7 +12289,16 @@
           "design": "A square silver-bordered flag bearing the emblem of the state.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
           "sha256": "251d480fa2de6e784e5fdec794f2d207f3f0248f2b05bbb92b852c382f93c920",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A square flag with a silver border bears the state emblem: the menorah drawn from its depiction on Rome's Arch of Titus — the seven-branched candelabrum carried off after the destruction of the Second Temple, now standing for the restored state and, per Isaiah 60, universal enlightenment — flanked by two olive branches for peace. The silver border marks this as the flag of the head of state, distinguishing it from the plain national flag.",
+            "sources": [
+              {
+                "title": "Emblem of Israel — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Israel"
+              }
+            ]
+          }
         },
         {
           "id": "il-pm",
@@ -12300,7 +12309,16 @@
           "design": "A blue field with the national flag in the canton and the state emblem in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
           "sha256": "cb5fd481879a873aa8bfb685487831d19dae3aabbbd03b81dc3f0b4c2e0bfe53",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A blue field bears the national flag in the canton and, in the fly, the state emblem: the menorah from the Arch of Titus, symbolising the restored Jewish state and, per Isaiah 60, universal enlightenment, flanked by olive branches for peace — marking the flag as that of the head of government.",
+            "sources": [
+              {
+                "title": "Emblem of Israel — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Israel"
+              }
+            ]
+          }
         },
         {
           "id": "il-idf",
