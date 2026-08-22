@@ -2667,6 +2667,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Angola national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Angola_national_football_team" },
     ],
   },
+  "ar-civil": {
+    description: "Argentina distinguishes a plain civil flag, flown by private citizens, from the state/war flag charged with the Sun of May (Sol de Mayo) — a sun face said to have appeared in the sky over Buenos Aires during the May Revolution of 1810, reserved for government and military use.",
+    sources: [
+      { title: "Civil flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Civil_flag" },
+    ],
+  },
   "ar-arms": {
     description: "The rising Sun of May at the top is the sun of the national anthem's line \"a new and glorious nation rises to the surface of the Earth\" — the birth of the country, not merely a decorative sun. In the oval, two clasped hands are the union of the provinces and stand for friendship, peace and brotherhood; they hold up a pike, which is power and the willingness to defend freedom, and the red Phrygian cap on its point is the liberty cap of the French Revolution. Read together, the hands and the cap are the national motto, \"en unión y libertad\" — in unity and freedom — the idea being that freedom is reached through unity. The laurel branches framing the whole are the classical crown of the victor, for triumph and glory.",
     sources: [
@@ -2696,6 +2702,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The fue, tanoa and to'oto'o (orator's staff) are the traditional regalia of a Samoan talking chief and appear together on the Seal of American Samoa: the fue represents wisdom, the tanoa represents service to the chief, and the staff represents authority.",
     sources: [
       { title: "Seal of American Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_American_Samoa" },
+    ],
+  },
+  "at-state": {
+    description: "Austria's plain red-white-red tricolour is the civil flag flown by ordinary citizens; the state flag adds the federal eagle (holding a hammer and sickle, and with a broken chain at its feet, symbolising the country's liberation from its 1938 annexation by Nazi Germany) for use by state authorities, the military and diplomatic missions.",
+    sources: [
+      { title: "State flag — Wikipedia", url: "https://en.wikipedia.org/wiki/State_flag" },
     ],
   },
   "at-arms": {
@@ -2891,6 +2903,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "List of Bolivian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
     ],
   },
+  "bo-state": {
+    description: "Bolivia's plain red-yellow-green tricolour is flown by ordinary citizens, while the state flag adds the national coat of arms — showing Cerro Rico, an alpaca, a wheatsheaf and the sun — for use by government authorities and the armed forces.",
+    sources: [
+      { title: "Flag of Bolivia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bolivia" },
+    ],
+  },
   "bo-arms": {
     description: "The cartouche is a portrait of the country’s wealth and land: the Cerro Rico of Potosí, the silver mountain that financed the Spanish empire, under a rising sun at dawn; a llama for the Andean highlands; a sheaf of wheat and a palm for the temperate valleys and the lowlands, so all three of Bolivia’s geographies appear at once. Around it are the arms of the state that won them — muskets, cannon, an axe carrying the Phrygian cap of liberty, and laurel for victory. The Andean condor above spreads its wings over the whole as the national bird and a guardian of freedom, and the stars beneath stand for the departments, including Litoral, the coastal department Bolivia lost to Chile in 1879 and has never removed.",
     sources: [
@@ -2992,6 +3010,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The crest carries Belize's own coat of arms: the mahogany tree, woodcutter's tools and ship reflect the country's historical mahogany-export economy, the two supporting figures represent its Mestizo and Afro-Belizean population, and the motto \"Sub Umbra Floreo\" (\"Under the shade I flourish\") alludes both to its forests and to its founding under British protection.",
     sources: [
       { title: "Coat of arms of Belize — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize" },
+    ],
+  },
+  "ca-royal-union": {
+    description: "A 1964 Canadian Parliament resolution confirmed the Union Flag would continue to be flown on specified days to symbolise Canada's membership of the Commonwealth and its historical ties to Britain, alongside the Maple Leaf as the country's national flag.",
+    sources: [
+      { title: "List of Canadian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Canadian_flags" },
     ],
   },
   "ca-metis": {
@@ -3224,6 +3248,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
     ],
   },
+  "de-state": {
+    description: "Germany's plain black-red-gold tricolour is the civil flag flown by citizens; the state flag adds the federal shield's eagle — a symbol of German sovereignty dating back to the Holy Roman Empire — reserved for federal authorities.",
+    sources: [
+      { title: "State flag — Wikipedia", url: "https://en.wikipedia.org/wiki/State_flag" },
+    ],
+  },
   "de-arms": {
     description: "The Bundesadler, or Federal Eagle, is a single-headed black eagle on gold whose lineage runs back through the Weimar Republic to the eagle of the Holy Roman Empire, a symbol traced to Charlemagne. The Federal Republic readopted the design in 1950. The single head — as opposed to the later double-headed imperial eagle — marks that this is the eagle of a German nation-state, not of the old multinational empire; today it stands for the federal institutions and the unity of the republic.",
     sources: [
@@ -3247,6 +3277,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The design repeats Djibouti's own national flag: light blue for the sky, sea and the country's Somali population, green for the land and its Afar population, and the red star for unity, the blood of independence's martyrs, and Djibouti being one of the five regions the Somali people inhabit.",
     sources: [
       { title: "Flag of Djibouti — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
+    ],
+  },
+  "dk-state": {
+    description: "Denmark's Dannebrog is flown in swallow-tailed form by the state, the monarchy and the military, distinguishing official use from the plain rectangular civil flag flown by ordinary citizens — a Scandinavian convention shared with Norway and Sweden.",
+    sources: [
+      { title: "State flag — Wikipedia", url: "https://en.wikipedia.org/wiki/State_flag" },
     ],
   },
   "dk-arms": {
@@ -3339,6 +3375,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
     ],
   },
+  "es-civil": {
+    description: "Spain's civil flag omits the national coat of arms that the state flag carries in its central white band, following the common European convention of reserving the arms-bearing version for government, military and diplomatic use.",
+    sources: [
+      { title: "Civil flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Civil_flag" },
+    ],
+  },
   "es-arms": {
     description: "The shield is a list of the kingdoms that became Spain: the castle of Castile, the lion of León, the pallets of Aragón, the chains of Navarre, and the pomegranate of Granada in base — added for the last Muslim kingdom to fall, in 1492. At the centre sits the small escutcheon of the House of Bourbon, the reigning dynasty. Flanking the shield are the Pillars of Hercules, the classical name for the rock either side of the Strait of Gibraltar, wrapped in a ribbon reading Plus Ultra — “further beyond” — which inverts the older warning Non plus ultra, nothing further beyond, to claim the Atlantic crossing and the empire past it.",
     sources: [
@@ -3363,6 +3405,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The green, yellow and red are Ethiopia's own national colours, adopted in 1897 after the country's victory at the Battle of Adwa — red for blood shed in Ethiopia's defence, yellow for peace among its peoples, and green for hope and the land's fertility; because Ethiopia was never colonised, newly independent African states later adopted the same colours in its honour, and they are known across the continent as the Pan-African colours. The gold star on blue, added to the flag in 1996, stands for Ethiopia's bright future and the equality of all Ethiopians, its rays shining equally in every direction.",
     sources: [
       { title: "Flag of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
+    ],
+  },
+  "fi-state": {
+    description: "Finland's civil flag is the plain blue Nordic cross on white; the state flag adds the national coat of arms — a crowned lion wielding a sword, trampling a sabre, on a red field — for use by state authorities and the military.",
+    sources: [
+      { title: "Coat of arms of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
     ],
   },
   "fi-sami": {
@@ -3715,6 +3763,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
     ],
   },
+  "hu-state": {
+    description: "Hungary's state flag adds the national coat of arms — the Holy Crown of Hungary above a shield quartered with the Árpád stripes and the double cross of the Kingdom of Hungary — to the plain red-white-green tricolour used elsewhere.",
+    sources: [
+      { title: "Coat of arms of Hungary — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary" },
+    ],
+  },
   "hu-arms": {
     description: "The dexter half carries the Árpád stripes, four red and four silver, the silver traditionally read as four rivers — the Danube, the Tisza, the Drava and the Sava. The sinister half sets a silver double cross on a golden crown standing on the middle of three green hills, the trimount for the Tátra, Mátra and Fátra ranges; the double cross itself is a symbol of royal power, which appeared under Béla III (1172–1196). Above the shield sits the Holy Crown of Hungary, the crown of Saint Stephen, whose tilted cross is reproduced exactly as it stands on the real object.",
     sources: [
@@ -3737,6 +3791,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Garuda Pancasila is Indonesia's own national emblem. The golden Garuda's feathers are counted to spell out the date of independence — 17 (wing) + 8 (tail) + 19 (base) + 45 (neck) for 17 August 1945 — and its shield carries the five principles of Pancasila: a star for belief in one God, a chain for just and civilised humanity, a banyan tree for national unity, a wild ox (banteng) for democracy guided by consensus, and rice and cotton for social justice. “Bhinneka Tunggal Ika” (“Unity in Diversity”) is drawn from a 14th-century Old Javanese poem.",
     sources: [
       { title: "National emblem of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
+    ],
+  },
+  "ie-st-patrick": {
+    description: "The red saltire was created in 1783 for the Order of Saint Patrick, a British chivalric order, and was combined with the crosses of England and Scotland to form the Union Flag after Ireland's 1801 union with Great Britain; its late, British-associated origin — despite the name — has long made it a controversial rather than universally accepted symbol of Ireland.",
+    sources: [
+      { title: "Saint Patrick's Saltire — Wikipedia", url: "https://en.wikipedia.org/wiki/Saint_Patrick%27s_Saltire" },
     ],
   },
   "ie-arms": {
@@ -3817,6 +3877,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The green-white-red repeats Iran's own national flag, and the red emblem on the white stripe is the flag's own central symbol: a stylised rendering of the word “Allah”, made of four crescents and a sword beneath a shaddah mark, adopted after the 1979 Islamic Revolution to replace the former Lion and Sun emblem associated with the monarchy.",
     sources: [
       { title: "Flag of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
+    ],
+  },
+  "is-state": {
+    description: "Iceland flies its flag in swallow-tailed form for the state and the military, following the wider Scandinavian tradition of using a forked civil/state ensign distinction; the plain rectangular flag is used elsewhere.",
+    sources: [
+      { title: "State flag — Wikipedia", url: "https://en.wikipedia.org/wiki/State_flag" },
     ],
   },
   "is-arms": {
@@ -4453,6 +4519,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Nicaragua — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nicaragua" },
     ],
   },
+  "nl-government": {
+    description: "The Dutch government flies its own flag — the national tricolour with an orange pennant above it — at ministries, referencing the House of Orange-Nassau, whose colour was displaced on the national flag itself by red in the 17th century.",
+    sources: [
+      { title: "Flag of the Netherlands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Netherlands" },
+    ],
+  },
   "nl-arms": {
     description: "Adopted in 1815 and modified in 1907, the arms fuse two inheritances: the blue field strewn with gold billets comes from the arms of the House of Nassau, and the lion from the arms of the former Dutch Republic. What the lion holds is the history — a sword in its right paw, and in its left SEVEN arrows bound together, one for each of the seven provinces of the Republic. The bundle is the old fable made heraldic: arrows that break singly and hold together bound. The monarch places the shield on a red mantle lined with ermine, beneath the royal crown.",
     sources: [
@@ -4585,6 +4657,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
     ],
   },
+  "ph-war-flag": {
+    description: "The Philippine flag is flown with its red band uppermost only when the country is officially at war, reversing the peacetime order (blue on top) — one of the few national flags in the world designed to signal a state of war through orientation alone, most notably flown red-up during the Japanese occupation of World War II.",
+    sources: [
+      { title: "Flag of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Philippines" },
+    ],
+  },
   "ph-arms": {
     description: "The eight rays of the sun stand for the eight provinces — Batangas, Bulacan, Cavite, Manila, Laguna, Nueva Ecija, Pampanga and Tarlac — placed under martial law by the Spanish governor-general at the outbreak of the 1896 revolution; the three stars stand for Luzon, the Visayas and Mindanao. The American bald eagle on the blue field and the lion rampant of the Kingdom of León on the red field represent the country's two colonial rulers, the United States and Spain. The present arms were designed by Galo B. Ocampo and approved under Commonwealth Act No. 731 on 3 July 1946, the day of full independence.",
     sources: [
@@ -4607,6 +4685,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The badge simply reproduces Pakistan's own national flag: green for the country's Muslim majority, the white crescent for progress and the star for light and knowledge, and the white stripe at the hoist for Pakistan's religious minorities.",
     sources: [
       { title: "Flag of Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
+    ],
+  },
+  "pl-state": {
+    description: "Poland's plain white-and-red bicolour is the civil flag; the state flag adds the crowned white eagle of the national coat of arms, reserved for state authorities and Polish missions abroad.",
+    sources: [
+      { title: "Flag of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Poland" },
+    ],
+  },
+  "pl-arms-flag": {
+    description: "This variant, flown by Polish diplomatic missions, airports and ships, likewise carries the crowned white eagle of the national coat of arms — a symbol used by Polish rulers since the 13th century — on the plain white-and-red bicolour.",
+    sources: [
+      { title: "Flag of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Poland" },
     ],
   },
   "pl-arms": {
@@ -4709,6 +4799,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The quarters are drawn from Romania's historical coat of arms, each standing for one of the country's constituent regions: a crowned eagle for Wallachia; an aurochs head with a star between its horns for Moldavia; a lion emerging from an arched bridge — Trajan's Bridge over the Danube — for Oltenia and Banat; and a second eagle for Transylvania. “România” is simply the country's own name.",
     sources: [
       { title: "Coat of arms of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
+    ],
+  },
+  "rs-civil": {
+    description: "Serbia's civil flag omits the national coat of arms that the state flag carries near the hoist, following the common European convention of reserving the arms-bearing version for government and military use.",
+    sources: [
+      { title: "Civil flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Civil_flag" },
     ],
   },
   "rs-arms": {
@@ -4934,6 +5030,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The two hawks and the black star are taken from São Tomé and Príncipe's coat of arms and flag, where the star (one of two on the flag) stands for African independence and the birds are native falcons representing the country's two main islands.",
     sources: [
       { title: "Flag of São Tomé and Príncipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
+    ],
+  },
+  "sv-civil": {
+    description: "El Salvador's civil flag replaces the state flag's coat of arms with the national motto \"DIOS UNIÓN LIBERTAD\" (\"God, Union, Liberty\") in gold on the central white band.",
+    sources: [
+      { title: "Flag of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
     ],
   },
   "sv-arms": {
