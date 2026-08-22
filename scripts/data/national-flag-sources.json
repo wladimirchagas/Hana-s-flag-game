@@ -1426,7 +1426,16 @@
           "design": "A Red Ensign with the Commonwealth Star and the Southern Cross — the flag of Australian-registered merchant ships.",
           "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
           "sha256": "8ccefde00623cc7b8ad57a0598ed58460b655bc12a2cf98e903a7cfb941e6181",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The same Commonwealth Star (seven points, one for each of the six states and the territories collectively) and Southern Cross (five stars marking the constellation visible only from the southern hemisphere) as the national flag, on a red field reserved for Australian-registered merchant shipping — a deliberate split from the 1908 design competition, which set the blue ensign aside for official and naval use and the red for the merchant fleet.",
+            "sources": [
+              {
+                "title": "Australian red ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Australian_red_ensign"
+              }
+            ]
+          }
         },
         {
           "id": "au-royal",
@@ -1461,7 +1470,16 @@
           "design": "A crowned lion standing on a crown, on a blue field.",
           "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
           "sha256": "b671f7eceebc9ee3d8d24fff793f3fe7e1a7040cc2c58e474d475afdba70c2f7",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A dark blue field bears the Royal Crest — a Tudor crown beneath a crowned lion, the heraldic mark of the sovereign's authority — above a scroll reading 'Commonwealth of Australia'. Introduced in this form for the dominions' governors-general in 1930 (to reflect their shift from representatives of the British government to personal representatives of the monarch) and readopted in 2024, it marks the Governor-General as the King's own representative in Australia, flying wherever they are in residence or travelling.",
+            "sources": [
+              {
+                "title": "Flag of the governor-general of Australia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_governor-general_of_Australia"
+              }
+            ]
+          }
         },
         {
           "id": "au-uk-1801",
@@ -3543,7 +3561,16 @@
           "design": "The arms of the Corpo de Fuzileiros Navais — the navy's marine corps.",
           "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
           "sha256": "a3ef4970441ad57ab2ffcfa3fcbaf56da5d976c1ef064919ec2867ff779754ee",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Marine Corps' arms bear a flaming grenade over crossed antique weapons — a battle-axe and a halberd — with a red fouled anchor (a naval device whose cable has wound around its stock, marking long naval service and tradition) in the corner, above the date 1808: the year the Portuguese royal court, fleeing Napoleon, relocated to Rio de Janeiro escorted by the Brigada Real da Marinha, the Royal Navy Brigade from which the modern Corps traces its origin.",
+            "sources": [
+              {
+                "title": "Brazilian Marine Corps — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/br~%5Ecfn.html"
+              }
+            ]
+          }
         },
         {
           "id": "br-jack",
