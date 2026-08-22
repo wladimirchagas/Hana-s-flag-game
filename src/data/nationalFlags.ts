@@ -3151,6 +3151,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Cook Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
     ],
   },
+  "cl-president": {
+    description: "The coat of arms is supported by an Andean condor and a huemul (a native Chilean deer), both wearing gold naval crowns honouring the Chilean Navy's actions in the War of the Pacific; the condor represents strength and independence, and the huemul the peace and gentleness of the Chilean people.",
+    sources: [
+      { title: "Coat of arms of Chile — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chile" },
+    ],
+  },
   "cl-mapuche": {
     description: "Adopted in 1992 by the Mapuche of Chile and Argentina, the Wenüfoye centres on the cultrún, the sacred drum, whose circular face carries the Meli Witran Mapu (the four cardinal points) with the sun, moon and stars. Blue is life and the sacred; green the earth, nature and the machi (healer); red strength and history; yellow the renewing sun; white healing and wisdom. The stepped cross (gemil) stands for Mapuche art, knowledge and writing.",
     sources: [
@@ -5722,6 +5728,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Flag of South Africa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Africa" },
       { title: "National flag — South African Government", url: "https://www.gov.za/about-sa/national-symbols/national-flag" },
+    ],
+  },
+  "za-sandf": {
+    description: "The nine-pointed star represents the sun of Africa and South Africa's nine provinces; the four spearheads, each in a different service colour, stand for the SANDF's four arms of service — Army, Air Force, Navy and Military Health Service — and the green and gold reflect Africa's natural and mineral wealth.",
+    sources: [
+      { title: "South African Defence Force Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/South_African_Defence_Force_Ensign" },
     ],
   },
   "za-arms": {
