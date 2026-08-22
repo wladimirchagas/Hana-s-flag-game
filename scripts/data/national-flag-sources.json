@@ -17820,7 +17820,16 @@
           "design": "The banner of the armed forces.",
           "source": "https://en.wikipedia.org/wiki/List_of_Mongolian_flags",
           "sha256": "75474a7bc1a49c5b5a7ed4338e6ee61f8180e0f0f81f4efcc35d7ae99363cc11",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A dark red banner bears a sulde — a pole with the tail hair of horses tied around its top, in the form of the spirit banners nomadic Mongol warriors have carried since Genghis Khan's time. To the warrior who carried it, the streaming horsehair banner held his destiny in life and, tradition holds, his soul after death; Genghis Khan himself kept a white sulde for peace and a black one for war. The words 'General banner of the Mongolian Armed Forces' appear beside it in traditional vertical Mongolian script, tying the modern military to that same warrior heritage.",
+            "sources": [
+              {
+                "title": "The Forgotten Spirit Banner of Genghis Khan — Mongol History",
+                "url": "https://mongolhistory.com/the-spirit-banner-of-genghis-khan/"
+              }
+            ]
+          }
         },
         {
           "id": "mn-ground",
@@ -23414,7 +23423,16 @@
           "design": "A red field with the ministry's emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Russian_flags",
           "sha256": "70c2355709bc9f4b48f055c402c79d509589ca83b2a72521a4e43b02df8c8bb3",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A red field bears the Ministry of Defence's emblem: a double-headed eagle adapted from the state coat of arms, holding a sword and a laurel wreath in its talons for military strength and victory, with a red shield on its breast showing a horseman spearing a dragon — Saint George and the Dragon, a central figure of Russian state symbolism — marking the emblem as the military authority's own variant of the national arms.",
+            "sources": [
+              {
+                "title": "Coat of arms of Russia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia"
+              }
+            ]
+          }
         },
         {
           "id": "ru-ground",
@@ -23427,7 +23445,16 @@
           "design": "A red field with the Ground Forces' emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Russian_flags",
           "sha256": "b3c8833b854ccefbb8a688879c7a39e3a9e8e2b52b86c74a34a36c745a4af4ba",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A red field bears the Ground Forces' emblem: a gold flaring grenade set against two crossed swords, both long-standing military devices marking the branch's combat role and its heritage as the oldest and largest of Russia's armed services.",
+            "sources": [
+              {
+                "title": "Russian Ground Forces — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Russian_Ground_Forces"
+              }
+            ]
+          }
         },
         {
           "id": "ru-aerospace",
@@ -23440,7 +23467,16 @@
           "design": "A blue field with the Aerospace Forces' emblem, adopted when the service was formed in 2015.",
           "source": "https://en.wikipedia.org/wiki/List_of_Russian_flags",
           "sha256": "edaeca9241814cd5576eb17698341fc5645288279367740ff837145e584d9637",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A blue field — for the sky and space the service defends — bears the gold double-headed eagle drawn from the state emblem, marking the Aerospace Forces, formed in 2015 by merging the Air Force with the Aerospace Defence Forces, as guardians of Russia's airspace and its reach into outer space, under the same sovereign symbol as the country's other armed services.",
+            "sources": [
+              {
+                "title": "Russian Aerospace Forces — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Russian_Aerospace_Forces"
+              }
+            ]
+          }
         },
         {
           "id": "ru-airborne",

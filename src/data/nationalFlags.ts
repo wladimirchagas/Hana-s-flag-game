@@ -4900,6 +4900,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Chinthe — Wikipedia", url: "https://en.wikipedia.org/wiki/Chinthe" },
     ],
   },
+  "mn-general-banner": {
+    description: "A dark red banner bears a sulde — a pole with the tail hair of horses tied around its top, in the form of the spirit banners nomadic Mongol warriors have carried since Genghis Khan's time. To the warrior who carried it, the streaming horsehair banner held his destiny in life and, tradition holds, his soul after death; Genghis Khan himself kept a white sulde for peace and a black one for war. The words 'General banner of the Mongolian Armed Forces' appear beside it in traditional vertical Mongolian script, tying the modern military to that same warrior heritage.",
+    sources: [
+      { title: "The Forgotten Spirit Banner of Genghis Khan — Mongol History", url: "https://mongolhistory.com/the-spirit-banner-of-genghis-khan/" },
+    ],
+  },
   "mn-emblem": {
     description: "The circular blue field is the eternal blue sky, the object of the old Mongol reverence for Tengri; the rim around it is the tumen nasan, the endless knot of eternity. At the centre the Soyombo — the national ideograph that also heads the flag — sits above a wind horse, the treasured steed of Buddhist tradition carrying a wish-granting jewel, and together they stand for Mongolia's independence, sovereignty and spirit. Sun, moon and Mahayana Buddhist symbols complete it, over a lotus base and mountains. It replaced the People's Republic emblem of 1960–1991, which had shown an ordinary horseman and a rising sun over mountains with socialist devices in place of the Buddhist ones.",
     sources: [
@@ -5633,6 +5639,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Serbian cross — a cross with four firesteels, popularly read since the 19th century as four Cyrillic “С” letters standing for the national motto “Само слога Србина спасава” (“Only unity saves the Serbs”) — is Serbia's own national heraldic symbol. It derives from the Byzantine emblem of the Palaiologos dynasty, adopted after Michael VIII Palaiologos restored the Byzantine Empire in 1261, and was in Serbian use by the reign of Despot Stefan Lazarević around 1397.",
     sources: [
       { title: "Serbian cross — Wikipedia", url: "https://en.wikipedia.org/wiki/Serbian_cross" },
+    ],
+  },
+  "ru-mod": {
+    description: "A red field bears the Ministry of Defence's emblem: a double-headed eagle adapted from the state coat of arms, holding a sword and a laurel wreath in its talons for military strength and victory, with a red shield on its breast showing a horseman spearing a dragon — Saint George and the Dragon, a central figure of Russian state symbolism — marking the emblem as the military authority's own variant of the national arms.",
+    sources: [
+      { title: "Coat of arms of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
+    ],
+  },
+  "ru-ground": {
+    description: "A red field bears the Ground Forces' emblem: a gold flaring grenade set against two crossed swords, both long-standing military devices marking the branch's combat role and its heritage as the oldest and largest of Russia's armed services.",
+    sources: [
+      { title: "Russian Ground Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Russian_Ground_Forces" },
+    ],
+  },
+  "ru-aerospace": {
+    description: "A blue field — for the sky and space the service defends — bears the gold double-headed eagle drawn from the state emblem, marking the Aerospace Forces, formed in 2015 by merging the Air Force with the Aerospace Defence Forces, as guardians of Russia's airspace and its reach into outer space, under the same sovereign symbol as the country's other armed services.",
+    sources: [
+      { title: "Russian Aerospace Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Russian_Aerospace_Forces" },
     ],
   },
   "ru-airborne": {
