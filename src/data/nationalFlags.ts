@@ -4735,6 +4735,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Libya — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
     ],
   },
+  "ma-royal": {
+    description: "A green field — the colour of Islam and, in Morocco's royal usage, of the sultanate — carries the national flag in the canton, itself red bearing a green pentagram known as the Seal of Solomon: introduced by Sultan Yusef in 1915, the five-pointed star is read as standing for the five pillars of Islam, giving the standard's canton the same Islamic symbolism as the national flag it displays.",
+    sources: [
+      { title: "Coat of arms of Morocco — Grokipedia", url: "https://grokipedia.com/page/Coat_of_arms_of_Morocco" },
+    ],
+  },
   "ma-arms": {
     description: "Adopted in 1957, the red shield carries a rising sun of fifteen rays on blue, the green pentagram of the national flag, and a band representing the Atlas Mountains. Two Atlas lions support it as guardians and the royal crown surmounts it. The Arabic motto beneath is from the Qur'an (Sura 47:7): “If you support God, He will support you.”",
     sources: [
@@ -4765,6 +4771,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Moldova is one of the very few countries whose flag has ever differed front and back. From 1990 to 2010 the reverse officially carried NO coat of arms — just the plain blue-yellow-red tricolour — so the eagle emblem appeared on the obverse alone. A 2010 law redefined the reverse as a mirror image of the obverse, placing the (reversed) arms on both sides and making the two faces symmetrical.",
     sources: [
       { title: "Flag of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
+    ],
+  },
+  "md-president": {
+    description: "The standard bears Moldova's coat of arms: a shield with an auroch's head between an eight-pointed star, a five-petalled rose and a crescent — an emblem inherited from the historical Principality of Moldavia standing for endurance and identity — on the breast of a natural eagle (a device drawn from the interwar Kingdom of Romania's own arms) holding an olive branch for peace, a sceptre for authority, and a golden cross for the country's Christian heritage.",
+    sources: [
+      { title: "Coat of arms of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
     ],
   },
   "md-arms": {
@@ -4910,6 +4922,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A George Cross within a red border on blue: the George Cross was awarded to the whole island of Malta by King George VI in April 1942 in recognition of the Maltese people's resilience through the WWII Siege of Malta — a bombardment so sustained (1940–1943, some 6,700 tons of bombs over 154 days) that it cost roughly 7,000 civilian and Allied lives; the medal has been carried on Malta's national flag since 1943 and, on this jack, marks it as a distinctly Maltese naval device.",
     sources: [
       { title: "Award of the George Cross to Malta — Wikipedia", url: "https://en.wikipedia.org/wiki/Award_of_the_George_Cross_to_Malta" },
+    ],
+  },
+  "mt-president": {
+    description: "The presidential standard bears Malta's full coat of arms: a shield showing the national flag itself — white and red, with the George Cross awarded to the whole island by King George VI in 1942 for its resilience under WWII siege — beneath a mural crown (a sally port and five turrets, marking Malta a republic), flanked by an olive branch for peace and a palm branch for endurance, tied with a ribbon bearing the country's name in Maltese.",
+    sources: [
+      { title: "Coat of arms of Malta — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta" },
     ],
   },
   "mt-arms": {
@@ -5425,6 +5443,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
     ],
   },
+  "rs-president": {
+    description: "A crimson field bears Serbia's greater coat of arms: a silver double-headed eagle — inherited from Byzantium through the Nemanjić dynasty's marriages with the Palaiologan emperors, its two heads facing east and west for Serbia's ties to Orthodox Christianity and to wider European civilisation — bearing on its breast a small shield with the 'Serbian Cross', a cross flanked by four firesteels (ocila) descended from a Byzantine imperial motto adopted into Serbian use in the 14th century, flanked at the base by two golden fleurs-de-lis.",
+    sources: [
+      { title: "Coat of arms of Serbia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Serbia" },
+    ],
+  },
   "rs-civil": {
     description: "Serbia's civil flag omits the national coat of arms that the state flag carries near the hoist, following the common European convention of reserving the arms-bearing version for government and military use.",
     sources: [
@@ -5489,6 +5513,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue, yellow and green repeat Rwanda's own national flag, adopted in 2001 to mark a break from the flag flown during the 1994 genocide: blue for happiness and peace, yellow for economic development, and green for hope of prosperity.",
     sources: [
       { title: "Flag of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    ],
+  },
+  "sa-king": {
+    description: "The national flag — green for Islam, bearing the Shahada and a sword — carries the state emblem in the lower fly: two crossed swords, representing the union of the Kingdoms of Hejaz and Nejd under Ibn Saud in 1926 (and read more broadly as strength and readiness to defend the nation), sheltering a central date palm tree for the country's people, heritage and natural abundance.",
+    sources: [
+      { title: "National Symbols of Saudi Arabia — Saudipedia", url: "https://saudipedia.com/en/article/2477/government-and-politics/national-symbols/national-symbols-of-saudi-arabia" },
     ],
   },
   "sa-emblem": {
@@ -5843,6 +5873,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The green field and the crescent-and-stars motif echo Turkmenistan's national flag, where green stands for life, land and prosperity, and the crescent symbolises the clear sky above the Turkmen people.",
     sources: [
       { title: "Flag of Turkmenistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
+    ],
+  },
+  "tn-president": {
+    description: "The national flag is charged with Tunisia's coat of arms: a ship recalling the country's Phoenician maritime heritage and standing for freedom, a lion holding a sword for order, and a set of scales for justice — the three together illustrating the national motto written beneath them in Arabic: Freedom, Order, Justice (حرية، نظام، عدالة).",
+    sources: [
+      { title: "Coat of arms of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia" },
     ],
   },
   "tn-arms": {
