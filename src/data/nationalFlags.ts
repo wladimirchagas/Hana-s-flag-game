@@ -3102,6 +3102,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Canadian Forces (badge) — Canadian Vexillology", url: "https://www.canadianvexillology.com/blog/canadianforces" },
     ],
   },
+  "ca-navy": {
+    description: "A white field bears the national flag in the canton and, in the fly, the Royal Canadian Navy's badge: a fouled anchor — the universal symbol of the sea, stability and the naval profession — beneath a naval crown, a circlet bearing the sterns and sails of three ancient ships of the line that (unlike an ordinary royal crown) marks the wearer specifically as a maritime service, a form of honour used in Britain for some three centuries.",
+    sources: [
+      { title: "Canadian Naval Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Canadian_Naval_Ensign" },
+    ],
+  },
+  "ca-air-force": {
+    description: "An air-force-blue field bears the national flag in the canton and, in the fly, a roundel centred on a red maple leaf — adapted in 1940 from the Royal Air Force's own three-ring roundel (itself a First World War aircraft-identification device borrowed from the French) by replacing its red centre disc with the maple leaf, one of Canada's most recognised national symbols since the 19th century; the maple-leaf roundel became the RCAF's official insignia in 1946.",
+    sources: [
+      { title: "Royal Canadian Air Force Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Canadian_Air_Force_Ensign" },
+    ],
+  },
   "ca-sovereign": {
     description: "A banner of the sovereign's Canadian coat of arms, adopted in 2023: three gold lions and a red lion rampant recall the historic royal arms of England and Scotland, a gold harp represents Ireland, three gold fleurs-de-lis represent France, and a sprig of three red maple leaves at the base stands for all Canadians — the maple leaf having been used as a symbol of Canadian identity since the early 19th century.",
     sources: [
@@ -3706,6 +3718,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Union Flag layers three patron saints' crosses in the order the kingdoms joined: England's red cross of St George on white, Scotland's white saltire of St Andrew on blue (joined at the union of the crowns in 1606) and the red saltire of St Patrick for Ireland, added when the Kingdom of Ireland joined the union in 1801. St Patrick's saltire is set counterchanged — offset from the centre of the white Scottish saltire — so that neither saltire appears to take precedence over the other, which is why the flag is not symmetrical and can be flown upside down.",
     sources: [
       { title: "Union Jack — Wikipedia", url: "https://en.wikipedia.org/wiki/Union_Jack" },
+    ],
+  },
+  "gb-army": {
+    description: "A red field bears two crossed swords surmounted by the royal crest: the crossed swords stand for the Army, and the crown above them for the monarch the Army serves — as the King's or Queen's own forces, the British Army's ceremonial colour is properly the Union Flag itself, and this red flag is its non-ceremonial banner for recruiting and public events.",
+    sources: [
+      { title: "United Kingdom: Army — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gb%5Earmy.html" },
+    ],
+  },
+  "gb-raf": {
+    description: "An Air-Force-blue field carries the Union Flag in the canton — placed there in 1921 on the suggestion of Air Vice-Marshal Sir John Salmond to mark British authority — and, in the fly, the RAF's red-white-blue roundel, adapted from the French-derived aircraft identification roundel the Royal Flying Corps adopted in the First World War to distinguish friendly aircraft from the enemy's.",
+    sources: [
+      { title: "Royal Air Force Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Air_Force_Ensign" },
     ],
   },
   "gb-white-ensign": {
