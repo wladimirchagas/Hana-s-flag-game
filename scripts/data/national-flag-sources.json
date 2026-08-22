@@ -28297,7 +28297,16 @@
           "design": "The defence force's flag in its 2019 form.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
           "sha256": "288745620beac81d02fe52527ccc861381075a98fee8508855edd2561c12ef6a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A diagonal split of green over light blue bears the Defence Force's badge in the upper field, with six narrow stripes in the national colours (black, yellow, red, repeated) along the bottom edge; this 2019 redesign replaced the flag the UPDF had carried since Uganda's 1962 independence, keeping the same national palette to tie the modern military to the country's founding symbols.",
+            "sources": [
+              {
+                "title": "UPDF Flags — Ministry of Defence and Veterans Affairs",
+                "url": "https://www.defence.go.ug/defence-doctrine/insignia/flags/"
+              }
+            ]
+          }
         },
         {
           "id": "ug-air-force",
@@ -28310,7 +28319,16 @@
           "design": "The air force's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
           "sha256": "cd8da562629ee0470e2c7dace29328d853e2bbbdf8d628b510ef5f924c1317ce",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A light-blue field bears six national-colour stripes along the bottom edge and a roundel of concentric black, yellow and red rings enclosing the head of the Crested Crane — Uganda's national bird, chosen originally by British colonial authorities because it belonged to no single Ugandan region or people, and used as the Air Force's badge since 1964, two years after independence.",
+            "sources": [
+              {
+                "title": "Uganda Air Force — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ug%5Eair.html"
+              }
+            ]
+          }
         },
         {
           "id": "ug-arms",

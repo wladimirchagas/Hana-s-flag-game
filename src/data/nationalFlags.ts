@@ -6430,6 +6430,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
     ],
   },
+  "ug-updf": {
+    description: "A diagonal split of green over light blue bears the Defence Force's badge in the upper field, with six narrow stripes in the national colours (black, yellow, red, repeated) along the bottom edge; this 2019 redesign replaced the flag the UPDF had carried since Uganda's 1962 independence, keeping the same national palette to tie the modern military to the country's founding symbols.",
+    sources: [
+      { title: "UPDF Flags — Ministry of Defence and Veterans Affairs", url: "https://www.defence.go.ug/defence-doctrine/insignia/flags/" },
+    ],
+  },
+  "ug-air-force": {
+    description: "A light-blue field bears six national-colour stripes along the bottom edge and a roundel of concentric black, yellow and red rings enclosing the head of the Crested Crane — Uganda's national bird, chosen originally by British colonial authorities because it belonged to no single Ugandan region or people, and used as the Air Force's badge since 1964, two years after independence.",
+    sources: [
+      { title: "Uganda Air Force — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ug%5Eair.html" },
+    ],
+  },
   "ug-president": {
     description: "The presidential flag, dating from Uganda's 1962 independence, carries the Crested Crane — the country's national bird, chosen originally by British colonial authorities precisely because it belonged to no single Ugandan region or people, and shown with one leg raised to symbolise the nation moving forward. Its gentle bearing is popularly read as reflecting the character of the Ugandan people, and it appears on both the national flag and the coat of arms granted the same year.",
     sources: [
