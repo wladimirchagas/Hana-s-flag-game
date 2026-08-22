@@ -8289,7 +8289,16 @@
           "design": "The war flag charged with the Cross of Liberty in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
           "sha256": "cb8a552a1db7575f968bf3a60e3b6bf29987a5e4fcc669671465ea43c8f20f90",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Cross of Liberty badge in the canton marks the President of Finland as Grand Master of the Order of the Cross of Liberty, one of Finland's three state orders; otherwise the flag is identical to the swallow-tailed state and war flag.",
+            "sources": [
+              {
+                "title": "List of flags of Finland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland"
+              }
+            ]
+          }
         },
         {
           "id": "fi-1918-war",
@@ -8328,7 +8337,16 @@
           "design": "The swallow-tailed flag with the coat of arms, flown by the defence forces.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
           "sha256": "daabab5e5671362cee6e1b01a3322c1f68c4966a45c4bbf52366489e96318eb0",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The swallow-tailed shape and the national coat of arms — a crowned lion wielding a sword and trampling a sabre — mark this as Finland's war flag and naval ensign, distinguishing military and state use from the plain civil flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of Finland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland"
+              }
+            ]
+          }
         },
         {
           "id": "fi-naval-jack",
@@ -19928,7 +19946,16 @@
           "design": "A red ensign with four white stars representing the Southern Cross.",
           "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags",
           "sha256": "74107658f0f5f3035811dd8bcfcf0019972977877d08f4844dd00dd551704a25",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The four stars are the same Southern Cross constellation shown on the national flag, positioned to match the real stars Acrux, Mimosa, Gacrux and Delta Crucis as seen from New Zealand; the ensign was adopted in 1901 for merchant vessels and can also be flown on land for occasions of Māori significance.",
+            "sources": [
+              {
+                "title": "New Zealand Red Ensign — nzhistory.govt.nz",
+                "url": "https://nzhistory.govt.nz/media/photo/new-zealand-red-ensign"
+              }
+            ]
+          }
         },
         {
           "id": "nz-arms",
