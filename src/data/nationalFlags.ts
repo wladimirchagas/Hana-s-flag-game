@@ -3567,6 +3567,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "The Royal Flags — Kongehuset (Danish Royal House)", url: "https://www.kongehuset.dk/en/the-monarchy-in-denmark/the-royal-symbols/the-royal-flags/" },
     ],
   },
+  "dk-royal-1972": {
+    description: "The same royal coat of arms as the modern standard — three blue crowned lions and nine red søblade (\"lake leaves\") on gold — borne throughout the 52-year reign of Margrethe II, who acceded on 14 January 1972 under the personal motto \"Guds hjælp, Folkets kærlighed, Danmarks styrke\" (God's help, the people's love, Denmark's strength); the standard was superseded when Frederik X acceded in 2024 and adopted his own reconfigured arms.",
+    sources: [
+      { title: "Margrethe II — Wikipedia", url: "https://en.wikipedia.org/wiki/Margrethe_II" },
+    ],
+  },
   "dk-state": {
     description: "Denmark's Dannebrog is flown in swallow-tailed form by the state, the monarchy and the military, distinguishing official use from the plain rectangular civil flag flown by ordinary citizens — a Scandinavian convention shared with Norway and Sweden.",
     sources: [
