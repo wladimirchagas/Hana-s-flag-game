@@ -103,7 +103,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ad-official-national", category: "official", name: "Flag of Andorra", from: 1866, to: 9999, primary: true, path: "flags/ad.svg", design: "The national flag, in use since 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Andorra" },
     { id: "ad-arms", category: "coatofarms", name: "Coat of arms of Andorra", from: 1866, to: 9999, path: "national-flags/ad/ad-arms.svg", design: "A shield quartered for the four historical lords of Andorra, beneath the motto Virtus Unita Fortior.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra" },
     { id: "ad-passport", category: "passport", name: "Passport of Andorra", path: "national-flags/ad/ad-passport.webp", design: "The cover of the Andorra passport.", source: "https://gicg.net/passport/ad/" },
-    { id: "ad-football-crest", category: "footballcrest", name: "Crest of the Andorra national football team", path: "national-flags/ad/ad-football-crest.svg", design: "The crest of the Andorra national football team.", source: "https://en.wikipedia.org/wiki/Andorra_Football_Federation" },
+    { id: "ad-football-crest", category: "footballcrest", name: "Crest of the Andorra national football team", path: "national-flags/ad/ad-football-crest.svg", design: "A circular emblem of flowing navy, red and orange ribbon shapes forming an abstract \"F\", with the letters \"FAF\" at the centre.", source: "https://en.wikipedia.org/wiki/Andorra_Football_Federation" },
   ],
   "AE": [
     { id: "ae-official-national", category: "official", name: "Flag of United Arab Emirates", from: 1971, to: 9999, primary: true, path: "flags/ae.svg", design: "The national flag of United Arab Emirates, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_United_Arab_Emirates" },
@@ -120,19 +120,19 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "af-official-national", category: "official", name: "Flag of Afghanistan", from: 2021, to: 9999, primary: true, path: "flags/af.svg", design: "The national flag of Afghanistan, in the form adopted in 2021.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
     { id: "af-republic", category: "historical", name: "Flag of the Islamic Republic of Afghanistan", from: 2004, to: 2021, path: "national-flags/af/af-republic.svg", design: "The black-red-green vertical tricolour bearing the white national emblem, flown by the Islamic Republic until the Taliban takeover in August 2021 restored the white Islamic Emirate flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
     { id: "af-passport", category: "passport", name: "Passport of Afghanistan", path: "national-flags/af/af-passport.webp", design: "The cover of the Afghanistan passport.", source: "https://gicg.net/passport/af/" },
-    { id: "af-football-crest", category: "footballcrest", name: "Crest of the Afghanistan national football team", path: "national-flags/af/af-football-crest.png", design: "The crest of the Afghanistan Football Federation — a green shield lettered “Afghanistan Football Federation” and “1922”, with a football over a black-red-green diagonal band.", source: "https://en.wikipedia.org/wiki/Afghanistan_national_football_team" },
+    { id: "af-football-crest", category: "footballcrest", name: "Crest of the Afghanistan national football team", path: "national-flags/af/af-football-crest.png", design: "A shield reading \"AFGHANISTAN FOOTBALL FEDERATION\" with a football at its centre, a black-red-green diagonal band, and \"1922\" (the federation's founding year) beneath.", source: "https://en.wikipedia.org/wiki/Afghanistan_national_football_team" },
   ],
   "AG": [
     { id: "ag-official-national", category: "official", name: "Flag of Antigua and Barbuda", from: 1967, to: 9999, primary: true, path: "flags/ag.svg", design: "The national flag, adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
     { id: "ag-uk", category: "historical", name: "Flag of the United Kingdom", from: 1632, to: 1981, sovereign: "the United Kingdom", path: "national-flags/ag/ag-uk.svg", design: "The Union Flag, flown while Antigua and Barbuda was a British colony.", source: "https://en.wikipedia.org/wiki/History_of_Antigua_and_Barbuda" },
     { id: "ag-arms", category: "coatofarms", name: "Coat of arms of Antigua and Barbuda", from: 1967, to: 9999, path: "national-flags/ag/ag-arms.svg", design: "A sugar mill and rising sun over the sea, held by two deer, crested with a pineapple.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda" },
     { id: "ag-passport", category: "passport", name: "Passport of Antigua and Barbuda", path: "national-flags/ag/ag-passport.webp", design: "The cover of the Antigua and Barbuda passport.", source: "https://gicg.net/passport/ag/" },
-    { id: "ag-football-crest", category: "footballcrest", name: "Crest of the Antigua and Barbuda national football team", path: "national-flags/ag/ag-football-crest.png", design: "The crest of the Antigua and Barbuda national football team.", source: "https://en.wikipedia.org/wiki/Antigua_and_Barbuda_national_football_team" },
+    { id: "ag-football-crest", category: "footballcrest", name: "Crest of the Antigua and Barbuda national football team", path: "national-flags/ag/ag-football-crest.png", design: "A circular badge with the letters \"ABFA\" and \"ANTIGUA BARBUDA FOOTBALL ASSOCIATION\", two deer rearing on either side of a football, standing on grass, above a banner reading \"FOUNDED 1928\" and \"EACH ENDEAVOURING ALL ACHIEVING\".", source: "https://en.wikipedia.org/wiki/Antigua_and_Barbuda_national_football_team" },
   ],
   "AI": [
     { id: "ai-official-national", category: "official", name: "Flag of Anguilla", from: 1990, to: 9999, path: "flags/ai.svg", design: "A blue ensign with the Union Flag in the canton and Anguilla's badge — three orange dolphins leaping in a circle above blue water — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Anguilla" },
     { id: "ai-arms", category: "coatofarms", name: "Coat of arms of Anguilla", from: 1990, to: 9999, path: "national-flags/ai/ai-arms.svg", design: "Argent, three orange dolphins embowed and leaping in a circle, in base a bar wavy azure for the sea.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Anguilla" },
-    { id: "ai-football-crest", category: "footballcrest", name: "Crest of the Anguilla football association", path: "national-flags/ai/ai-football-crest.png", design: "The crest of Anguilla's national football association.", source: "https://en.wikipedia.org/wiki/Anguilla_Football_Association" },
+    { id: "ai-football-crest", category: "footballcrest", name: "Crest of the Anguilla football association", path: "national-flags/ai/ai-football-crest.png", design: "A circular badge in navy and teal with three orange dolphins arranged in a circle around a football, ringed by \"ANGUILLA FOOTBALL ASSOCIATION\" text and the founding year \"1990\".", source: "https://en.wikipedia.org/wiki/Anguilla_Football_Association" },
   ],
   "AL": [
     { id: "al-official-national", category: "official", name: "Flag of Albania", from: 1992, to: 9999, primary: true, path: "flags/al.svg", design: "The national flag of Albania, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
@@ -184,7 +184,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "AS": [
     { id: "as-official-national", category: "official", name: "Flag of American Samoa", from: 1960, to: 9999, path: "flags/sub/US/US-AS.svg", design: "A red-edged white triangle on blue bearing a bald eagle that holds a Samoan war club (uatogi) and fly-whisk (fue).", source: "https://en.wikipedia.org/wiki/Flag_of_American_Samoa" },
     { id: "as-seal", category: "coatofarms", name: "Seal of American Samoa", from: 1973, to: 9999, path: "national-flags/as/as-seal.svg", design: "A crossed fue (fly-whisk) and toʻotoʻo (staff) above a tanoa (kava bowl) on tapa cloth, with the motto Sāmoa Muamua Le Atua.", source: "https://en.wikipedia.org/wiki/Seal_of_American_Samoa" },
-    { id: "as-football-crest", category: "footballcrest", name: "Crest of the American Samoa football association", path: "national-flags/as/as-football-crest.svg", design: "The crest of American Samoa's national football association.", source: "https://en.wikipedia.org/wiki/Football_Federation_American_Samoa" },
+    { id: "as-football-crest", category: "footballcrest", name: "Crest of the American Samoa football association", path: "national-flags/as/as-football-crest.svg", design: "A shield reading \"FFAS FOOTBALL FEDERATION AMERICAN SAMOA\" with a football, and beneath it a golden fue (fly-whisk), a tanoa (kava bowl) and crossed staffs.", source: "https://en.wikipedia.org/wiki/Football_Federation_American_Samoa" },
   ],
   "AT": [
     { id: "at-official-national", category: "official", name: "Flag of Austria", from: 1918, to: 9999, primary: true, path: "flags/at.svg", design: "The national flag of Austria, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
@@ -239,7 +239,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ba-austro", category: "historical", name: "Flag of the Condominium of Bosnia and Herzegovina", from: 1878, to: 1918, sovereign: "Austria-Hungary", path: "national-flags/ba/bosnia-austro.svg", design: "The red-and-yellow flag of the Austro-Hungarian condominium, after the 1878 occupation ended Ottoman rule.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina" },
     { id: "ba-arms", category: "coatofarms", name: "Coat of arms of Bosnia and Herzegovina", from: 1998, to: 9999, path: "national-flags/ba/bosnia-arms.svg", design: "A blue three-pointed shield with a yellow triangle and a diagonal row of white stars.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
     { id: "ba-passport", category: "passport", name: "Passport of Bosnia and Herzegovina", path: "national-flags/ba/ba-passport.webp", design: "The cover of the Bosnia and Herzegovina passport.", source: "https://gicg.net/passport/ba/" },
-    { id: "ba-football-crest", category: "footballcrest", name: "Crest of the Bosnia and Herzegovina national football team", path: "national-flags/ba/ba-football-crest.svg", design: "The crest of the Football Association of Bosnia and Herzegovina — a circular blue badge with a football and a blue silhouette map of Bosnia and Herzegovina, ringed by the country's name and the federation's name in Bosnian/Croatian, Serbian Cyrillic and English.", source: "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_national_football_team" },
+    { id: "ba-football-crest", category: "footballcrest", name: "Crest of the Bosnia and Herzegovina national football team", path: "national-flags/ba/ba-football-crest.svg", design: "A blue silhouette of Bosnia and Herzegovina's outline on a football, with gold hexagon panels at the corners, ringed by \"BOSNA I HERCEGOVINA\" / \"NOGOMETNI SAVEZ\" text in Latin and Cyrillic script.", source: "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_national_football_team" },
   ],
   "BB": [
     { id: "bb-official-national", category: "official", name: "Flag of Barbados", from: 1966, to: 9999, primary: true, path: "flags/bb.svg", design: "The national flag of Barbados, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
@@ -248,7 +248,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bb-president", category: "standard", name: "Standard of the President of Barbados", from: 2021, to: 9999, path: "national-flags/bb/barbados-president.svg", design: "The presidential standard, adopted when Barbados became a republic in 2021.", source: "https://en.wikipedia.org/wiki/List_of_Barbadian_flags" },
     { id: "bb-arms", category: "coatofarms", name: "Coat of arms of Barbados", from: 1966, to: 9999, path: "national-flags/bb/barbados-arms.svg", design: "A bearded fig tree between two Pride of Barbados flowers on gold, held by a dolphinfish and a pelican, crested with an arm holding two sugar canes, over the motto Pride and Industry.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barbados" },
     { id: "bb-passport", category: "passport", name: "Passport of Barbados", path: "national-flags/bb/bb-passport.webp", design: "The cover of the Barbados passport.", source: "https://gicg.net/passport/bb/" },
-    { id: "bb-football-crest", category: "footballcrest", name: "Crest of the Barbados national football team", path: "national-flags/bb/bb-football-crest.png", design: "The crest of the Barbados national football team.", source: "https://en.wikipedia.org/wiki/Barbados_Football_Association" },
+    { id: "bb-football-crest", category: "footballcrest", name: "Crest of the Barbados national football team", path: "national-flags/bb/bb-football-crest.png", design: "A circular badge reading \"BARBADOS FOOTBALL ASSOCIATION\" and \"FOUNDED 1910\", with a football in blue and gold and a black trident head at its centre.", source: "https://en.wikipedia.org/wiki/Barbados_Football_Association" },
   ],
   "BD": [
     { id: "bd-official-national", category: "official", name: "Flag of Bangladesh", from: 1972, to: 9999, primary: true, path: "flags/bd.svg", design: "The national flag of Bangladesh, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
@@ -266,7 +266,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bd-pm", category: "standard", name: "Standard of the Prime Minister of Bangladesh", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-pm.svg", design: "The prime minister's standard.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
     { id: "bd-emblem", category: "coatofarms", name: "National emblem of Bangladesh", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-emblem.svg", design: "A water lily on water, bordered by rice sheaves, beneath four stars and three jute leaves.", source: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
     { id: "bd-passport", category: "passport", name: "Passport of Bangladesh", path: "national-flags/bd/bd-passport.webp", design: "The cover of the Bangladesh passport.", source: "https://gicg.net/passport/bd/" },
-    { id: "bd-football-crest", category: "footballcrest", name: "Crest of the Bangladesh national football team", path: "national-flags/bd/bd-football-crest.svg", design: "The crest of the Bangladesh Football Federation — a blue shield with a Bengali-script monogram, a football wreathed in laurel leaves, lettered “Bangladesh Football Federation”.", source: "https://en.wikipedia.org/wiki/Bangladesh_national_football_team" },
+    { id: "bd-football-crest", category: "footballcrest", name: "Crest of the Bangladesh national football team", path: "national-flags/bd/bd-football-crest.svg", design: "A shield with Bengali script above a football framed by a wreath, ringed by \"BANGLADESH FOOTBALL FEDERATION\" text.", source: "https://en.wikipedia.org/wiki/Bangladesh_national_football_team" },
   ],
   "BE": [
     { id: "be-official-national", category: "official", name: "Flag of Belgium", from: 1831, to: 9999, primary: true, path: "flags/be.svg", design: "The national flag of Belgium, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
@@ -323,7 +323,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BM": [
     { id: "bm-official-national", category: "official", name: "Flag of Bermuda", from: 1910, to: 9999, path: "flags/bm.svg", design: "A red ensign with the Union Flag in the canton and Bermuda's coat of arms — a red lion holding the wreck of the Sea Venture — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Bermuda" },
     { id: "bm-arms", category: "coatofarms", name: "Coat of arms of Bermuda", from: 1910, to: 9999, path: "national-flags/bm/bm-arms.svg", design: "Argent, on a mount vert a lion sejant affronté gules supporting an antique shield azure charged with a representation of the wreck of the ship Sea Venture proper.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda" },
-    { id: "bm-football-crest", category: "footballcrest", name: "Crest of the Bermuda football association", path: "national-flags/bm/bm-football-crest.svg", design: "The crest of Bermuda's national football association.", source: "https://en.wikipedia.org/wiki/Bermuda_Football_Association" },
+    { id: "bm-football-crest", category: "footballcrest", name: "Crest of the Bermuda football association", path: "national-flags/bm/bm-football-crest.svg", design: "A circular emblem of abstract navy and pink shapes forming a stylised wave/shield motif, with \"Bermuda Football Association\" text beneath.", source: "https://en.wikipedia.org/wiki/Bermuda_Football_Association" },
   ],
   "BN": [
     { id: "bn-official-national", category: "official", name: "Flag of Brunei", from: 1959, to: 9999, primary: true, path: "flags/bn.svg", design: "The national flag of Brunei, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
@@ -334,7 +334,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bn-royal-standard", category: "standard", name: "Royal Standard of the Sultan of Brunei", path: "national-flags/bn/brunei-royal-standard.svg", design: "A yellow field bearing the crown and emblem of the sultan.", source: "https://en.wikipedia.org/wiki/List_of_Bruneian_flags" },
     { id: "bn-emblem", category: "coatofarms", name: "Emblem of Brunei", from: 1959, to: 9999, path: "national-flags/bn/brunei-emblem.svg", design: "A crescent and parasol with upraised wings and two hands, over a banner, all in yellow.", source: "https://en.wikipedia.org/wiki/Emblem_of_Brunei" },
     { id: "bn-passport", category: "passport", name: "Passport of Brunei", path: "national-flags/bn/bn-passport.webp", design: "The cover of the Brunei passport.", source: "https://gicg.net/passport/bn/" },
-    { id: "bn-football-crest", category: "footballcrest", name: "Crest of the Brunei national football team", path: "national-flags/bn/bn-football-crest.svg", design: "The crest of the Brunei national football team.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Brunei_Darussalam" },
+    { id: "bn-football-crest", category: "footballcrest", name: "Crest of the Brunei national football team", path: "national-flags/bn/bn-football-crest.svg", design: "A circular badge with a green-and-gold hexagon-patterned football on a black and yellow crescent field, ringed by Jawi and Latin text reading \"Football Association of Brunei Darussalam\".", source: "https://en.wikipedia.org/wiki/Football_Association_of_Brunei_Darussalam" },
   ],
   "BO": [
     { id: "bo-official-national", category: "official", name: "Flag of Bolivia", from: 1851, to: 9999, primary: true, path: "flags/bo.svg", design: "The national flag — one of the two flags Article 6 of the Constitution names, alongside the Wiphala.", source: "https://en.wikipedia.org/wiki/Flag_of_Bolivia" },
@@ -384,14 +384,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bs-governor-general", category: "standard", name: "Flag of the Governor-General of the Bahamas", from: 1973, to: 9999, path: "national-flags/bs/bahamas-governor-general.svg", design: "A blue field with the royal crest and the country's name.", source: "https://en.wikipedia.org/wiki/List_of_Bahamian_flags" },
     { id: "bs-arms", category: "coatofarms", name: "Coat of arms of the Bahamas", from: 1971, to: 9999, path: "national-flags/bs/bahamas-arms.svg", design: "Columbus's ship the Santa María beneath a sun, on a shield held by a marlin and a flamingo, crested with a conch shell and palm fronds, over the motto Pirates Expelled, Commerce Restored.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas" },
     { id: "bs-passport", category: "passport", name: "Passport of Bahamas", path: "national-flags/bs/bs-passport.webp", design: "The cover of the Bahamas passport.", source: "https://gicg.net/passport/bs/" },
-    { id: "bs-football-crest", category: "footballcrest", name: "Crest of the Bahamas national football team", path: "national-flags/bs/bs-football-crest.png", design: "The crest of the Bahamas national football team.", source: "https://en.wikipedia.org/wiki/Bahamas_national_football_team" },
+    { id: "bs-football-crest", category: "footballcrest", name: "Crest of the Bahamas national football team", path: "national-flags/bs/bs-football-crest.png", design: "A circular badge reading \"BFA\" and \"BAHAMAS FOOTBALL ASSOC.\", with a football wreathed by yellow flowers.", source: "https://en.wikipedia.org/wiki/Bahamas_national_football_team" },
   ],
   "BT": [
     { id: "bt-official-national", category: "official", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "The national flag, standardised in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
     { id: "bt-1956", category: "historical", name: "Flag of Bhutan (1956–1969)", from: 1956, to: 1969, path: "national-flags/bt/bhutan-1956.svg", design: "An earlier version of the Druk (Thunder Dragon) flag; the dragon and the diagonal division of the field were revised to the present design in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
     { id: "bt-arms", category: "coatofarms", name: "Emblem of Bhutan", from: 1980, to: 9999, path: "national-flags/bt/bt-arms.svg", design: "Two crossed vajras over a lotus, a jewel and two dragons, in a circle.", source: "https://en.wikipedia.org/wiki/Emblem_of_Bhutan" },
     { id: "bt-passport", category: "passport", name: "Passport of Bhutan", path: "national-flags/bt/bt-passport.webp", design: "The cover of the Bhutan passport.", source: "https://gicg.net/passport/bt/" },
-    { id: "bt-football-crest", category: "footballcrest", name: "Crest of the Bhutan national football team", path: "national-flags/bt/bt-football-crest.svg", design: "The crest of the Bhutan national football team.", source: "https://en.wikipedia.org/wiki/Bhutan_Football_Federation" },
+    { id: "bt-football-crest", category: "footballcrest", name: "Crest of the Bhutan national football team", path: "national-flags/bt/bt-football-crest.svg", design: "A shield reading \"BHUTAN\" and \"FOOTBALL FEDERATION — HOME OF HAPPINESS\", with a football set inside a blue and gold roundel flanked by two red coiled dragon forms.", source: "https://en.wikipedia.org/wiki/Bhutan_Football_Federation" },
   ],
   "BW": [
     { id: "bw-official-national", category: "official", name: "Flag of Botswana", from: 1966, to: 9999, primary: true, path: "flags/bw.svg", design: "The national flag of Botswana, adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Botswana" },
@@ -420,7 +420,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bz-uk", category: "historical", name: "Flag of the United Kingdom", from: 1862, to: 1981, sovereign: "the United Kingdom", path: "national-flags/bz/bz-uk.svg", design: "The Union Flag, flown while the territory was the British colony of British Honduras.", source: "https://en.wikipedia.org/wiki/British_Honduras" },
     { id: "bz-arms", category: "coatofarms", name: "Coat of arms of Belize", from: 1981, to: 9999, path: "national-flags/bz/bz-arms.svg", design: "A mahogany tree above a shield of woodcutter's tools and a ship, held by two woodcutters.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize" },
     { id: "bz-passport", category: "passport", name: "Passport of Belize", path: "national-flags/bz/bz-passport.webp", design: "The cover of the Belize passport.", source: "https://gicg.net/passport/bz/" },
-    { id: "bz-football-crest", category: "footballcrest", name: "Crest of the Belize national football team", path: "national-flags/bz/bz-football-crest.svg", design: "The crest of the Belize national football team.", source: "https://en.wikipedia.org/wiki/Belize_national_football_team" },
+    { id: "bz-football-crest", category: "footballcrest", name: "Crest of the Belize national football team", path: "national-flags/bz/bz-football-crest.svg", design: "A shield reading \"BELIZE\" and \"FOUNDED 1980\" in navy and yellow, enclosing Belize's national coat of arms (a mahogany tree, tools and a ship, flanked by two figures) inside a white five-pointed star.", source: "https://en.wikipedia.org/wiki/Belize_national_football_team" },
   ],
   "CA": [
     { id: "ca-official-national", category: "official", name: "Flag of Canada", from: 1965, to: 9999, primary: true, path: "flags/ca.svg", design: "The national flag of Canada, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Canada" },
@@ -487,7 +487,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "CK": [
     { id: "ck-official-national", category: "official", name: "Flag of the Cook Islands", from: 1979, to: 9999, path: "flags/ck.svg", design: "A blue ensign with the Union Flag in the canton and a ring of fifteen white stars in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
     { id: "ck-arms", category: "coatofarms", name: "Coat of arms of the Cook Islands", from: 1978, to: 9999, path: "national-flags/ck/ck-arms.svg", design: "Azure, fifteen white stars in a circle; supporters a flying fish and a white tern; crest a red-feather chieftain's headdress; a white cross and Rarotongan club in saltire behind; palm leaves and a pearl in base.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cook_Islands" },
-    { id: "ck-football-crest", category: "footballcrest", name: "Crest of the Cook Islands football association", path: "national-flags/ck/ck-football-crest.svg", design: "The crest of Cook Islands's national football association.", source: "https://en.wikipedia.org/wiki/Cook_Islands_Football_Association" },
+    { id: "ck-football-crest", category: "footballcrest", name: "Crest of the Cook Islands football association", path: "national-flags/ck/ck-football-crest.svg", design: "A shield reading \"COOK ISLANDS FOOTBALL ASSOCIATION\", with a football surrounded by a circle of gold stars on an olive-green field, flanked by palm fronds.", source: "https://en.wikipedia.org/wiki/Cook_Islands_Football_Association" },
   ],
   "CL": [
     { id: "cl-official-national", category: "official", name: "Flag of Chile", from: 1817, to: 9999, primary: true, path: "flags/cl.svg", design: "The national flag of Chile, in the form adopted in 1817.", source: "https://en.wikipedia.org/wiki/Flag_of_Chile" },
@@ -556,7 +556,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cr-burgundy", category: "historical", name: "Cross of Burgundy", from: 1541, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Cross of Burgundy, the flag of New Spain.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
     { id: "cr-arms", category: "coatofarms", name: "Coat of arms of Costa Rica", from: 1848, to: 9999, path: "national-flags/cr/costarica-arms.svg", design: "Three volcanoes in a valley between two oceans with a merchant ship in each, beneath a rising sun and seven stars.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica" },
     { id: "cr-passport", category: "passport", name: "Passport of Costa Rica", path: "national-flags/cr/cr-passport.webp", design: "The cover of the Costa Rica passport.", source: "https://gicg.net/passport/cr/" },
-    { id: "cr-football-crest", category: "footballcrest", name: "Crest of the Costa Rica national football team", path: "national-flags/cr/cr-football-crest.svg", design: "The crest of the Costa Rica national football team — a shield in navy, white, red and gold bearing a stylised “CR” monogram.", source: "https://en.wikipedia.org/wiki/Costa_Rica_national_football_team" },
+    { id: "cr-football-crest", category: "footballcrest", name: "Crest of the Costa Rica national football team", path: "national-flags/cr/cr-football-crest.svg", design: "A shield in the shape of a stylised \"CR\" monogram, in Costa Rica's national blue, white and red.", source: "https://en.wikipedia.org/wiki/Costa_Rica_national_football_team" },
   ],
   "CU": [
     { id: "cu-official-national", category: "official", name: "Flag of Cuba", from: 1849, to: 9999, primary: true, path: "flags/cu.svg", design: "The national flag of Cuba, in the form adopted in 1849.", source: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
@@ -576,12 +576,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cv-portuguese", category: "historical", name: "Flag of Portugal", from: 1879, to: 1975, sovereign: "Portugal", path: "national-flags/cv/cv-pt.svg", design: "The flag of Portugal, flown over the colony of Cape Verde.", source: "https://en.wikipedia.org/wiki/Cape_Verde" },
     { id: "cv-arms", category: "coatofarms", name: "National emblem of Cape Verde", from: 1992, to: 9999, path: "national-flags/cv/cv-arms.svg", design: "A blue ring of ten stars around a plumb-bob, torch and triangle, above three chain links.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde" },
     { id: "cv-passport", category: "passport", name: "Passport of Cape Verde", path: "national-flags/cv/cv-passport.webp", design: "The cover of the Cape Verde passport.", source: "https://gicg.net/passport/cv/" },
-    { id: "cv-football-crest", category: "footballcrest", name: "Crest of the Cabo Verde national football team", path: "national-flags/cv/cv-football-crest.svg", design: "The crest of the Cabo Verde national football team.", source: "https://en.wikipedia.org/wiki/Cape_Verdean_Football_Federation" },
+    { id: "cv-football-crest", category: "footballcrest", name: "Crest of the Cabo Verde national football team", path: "national-flags/cv/cv-football-crest.svg", design: "A shield reading \"FCF\" above a ring of ten gold stars, with a stylised shark's head in blue and red at its centre.", source: "https://en.wikipedia.org/wiki/Cape_Verdean_Football_Federation" },
   ],
   "CW": [
     { id: "cw-official-national", category: "official", name: "Flag of Curaçao", from: 1984, to: 9999, path: "flags/sub/NL/NL-CW.svg", design: "A blue field with a horizontal yellow stripe below the centre and two white five-pointed stars in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao" },
     { id: "cw-arms", category: "coatofarms", name: "Coat of arms of Curaçao", from: 1964, to: 9999, path: "national-flags/cw/cw-arms.svg", design: "A shield with a sailing ship in full sail on a blue sea and a green laraha (bitter-orange) tree, an inescutcheon of the arms of Amsterdam (three saltires).", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao" },
-    { id: "cw-football-crest", category: "footballcrest", name: "Crest of the Curaçao football association", path: "national-flags/cw/cw-football-crest.svg", design: "The crest of Curaçao's national football association.", source: "https://en.wikipedia.org/wiki/Cura%C3%A7ao_Football_Federation" },
+    { id: "cw-football-crest", category: "footballcrest", name: "Crest of the Curaçao football association", path: "national-flags/cw/cw-football-crest.svg", design: "A circular badge reading \"Federashon Futbòl Kòrsou\", with a shield showing a sailing ship over blue-and-yellow wavy bands, framed by green laurel leaves and red dots.", source: "https://en.wikipedia.org/wiki/Cura%C3%A7ao_Football_Federation" },
   ],
   "CY": [
     { id: "cy-official-national", category: "official", name: "Flag of Cyprus", from: 1960, to: 9999, primary: true, path: "flags/cy.svg", design: "The national flag of Cyprus, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
@@ -637,7 +637,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "dm-uk", category: "historical", name: "Flag of the United Kingdom", from: 1763, to: 1978, sovereign: "the United Kingdom", path: "national-flags/dm/dm-uk.svg", design: "The Union Flag, flown while Dominica was a British colony.", source: "https://en.wikipedia.org/wiki/History_of_Dominica" },
     { id: "dm-arms", category: "coatofarms", name: "Coat of arms of Dominica", from: 1978, to: 9999, path: "national-flags/dm/dm-arms.svg", design: "A quartered shield of a canoe, a banana tree, a palm and a frog, held by two Sisserou parrots.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Dominica" },
     { id: "dm-passport", category: "passport", name: "Passport of Dominica", path: "national-flags/dm/dm-passport.webp", design: "The cover of the Dominica passport.", source: "https://gicg.net/passport/dm/" },
-    { id: "dm-football-crest", category: "footballcrest", name: "Crest of the Dominica national football team", path: "national-flags/dm/dm-football-crest.svg", design: "The crest of the Dominica national football team.", source: "https://en.wikipedia.org/wiki/Dominica_Football_Association" },
+    { id: "dm-football-crest", category: "footballcrest", name: "Crest of the Dominica national football team", path: "national-flags/dm/dm-football-crest.svg", design: "A shield in Dominica's green, yellow, black and white cross pattern around a football, topped by a Sisserou parrot's head and ringed by ten red five-pointed stars, with \"DOMINICA FOOTBALL ASSOCIATION\" text.", source: "https://en.wikipedia.org/wiki/Dominica_Football_Association" },
   ],
   "DO": [
     { id: "do-official-national", category: "official", name: "Flag of the Dominican Republic", from: 1844, to: 9999, primary: true, path: "flags/do.svg", design: "The national flag, adopted at independence in 1844.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic" },
@@ -684,7 +684,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ee-president", category: "standard", name: "Flag of the President of Estonia", from: 1993, to: 9999, path: "national-flags/ee/estonia-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Estonian_flags" },
     { id: "ee-arms", category: "coatofarms", name: "Coat of arms of Estonia", from: 1990, to: 9999, path: "national-flags/ee/estonia-arms.svg", design: "Three blue lions passant guardant on a golden shield, between golden oak branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
     { id: "ee-passport", category: "passport", name: "Passport of Estonia", path: "national-flags/ee/ee-passport.webp", design: "The cover of the Estonia passport.", source: "https://gicg.net/passport/ee/" },
-    { id: "ee-football-crest", category: "footballcrest", name: "Crest of the Estonia national football team", path: "national-flags/ee/ee-football-crest.svg", design: "The crest of the Estonian Football Association (Eesti Jalgpalli Liit) — a dark blue circle bearing a white multi-pointed star, ringed by the association's own name in white lettering on a lighter blue band.", source: "https://en.wikipedia.org/wiki/Estonian_Football_Association" },
+    { id: "ee-football-crest", category: "footballcrest", name: "Crest of the Estonia national football team", path: "national-flags/ee/ee-football-crest.svg", design: "A blue circular badge reading \"EESTI JALGPALLI LIIT\" (Estonian Football Association), with a white seven-pointed star at its centre.", source: "https://en.wikipedia.org/wiki/Estonian_Football_Association" },
   ],
   "EG": [
     { id: "eg-official-national", category: "official", name: "Flag of Egypt", from: 1984, to: 9999, primary: true, path: "flags/eg.svg", design: "The national flag of Egypt, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Egypt" },
@@ -754,7 +754,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fj-uk", category: "historical", name: "Flag of the United Kingdom", from: 1874, to: 1970, sovereign: "the United Kingdom", path: "national-flags/fj/fj-uk.svg", design: "The Union Flag, flown while Fiji was a British Crown colony.", source: "https://en.wikipedia.org/wiki/Colony_of_Fiji" },
     { id: "fj-arms", category: "coatofarms", name: "Coat of arms of Fiji", from: 1908, to: 9999, path: "national-flags/fj/fj-arms.svg", design: "A shield of the St George's cross with a lion and island crops, held by two Fijian warriors.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji" },
     { id: "fj-passport", category: "passport", name: "Passport of Fiji", path: "national-flags/fj/fj-passport.webp", design: "The cover of the Fiji passport.", source: "https://gicg.net/passport/fj/" },
-    { id: "fj-football-crest", category: "footballcrest", name: "Crest of the Fiji national football team", path: "national-flags/fj/fj-football-crest.svg", design: "The crest of the Fiji national football team.", source: "https://en.wikipedia.org/wiki/Fiji_national_football_team" },
+    { id: "fj-football-crest", category: "footballcrest", name: "Crest of the Fiji national football team", path: "national-flags/fj/fj-football-crest.svg", design: "A circular badge reading \"FIJI FOOTBALL ASSOCIATION\" around a football, above a black hand holding a curved gold object.", source: "https://en.wikipedia.org/wiki/Fiji_national_football_team" },
   ],
   "FK": [
     { id: "fk-official-national", category: "official", name: "Flag of the Falkland Islands", from: 1948, to: 9999, path: "flags/fk.svg", design: "A blue ensign with the Union Flag in the canton and the Falklands' coat of arms — the ram Warrah above the ship Desire on a wavy sea — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Falkland_Islands" },
@@ -766,7 +766,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fm-japan", category: "historical", name: "Flag of Japan", from: 1920, to: 1944, sovereign: "Japan", path: "national-flags/fm/fm-japan.svg", design: "The flag of Japan, which held the islands as the South Seas Mandate between the world wars.", source: "https://en.wikipedia.org/wiki/South_Seas_Mandate" },
     { id: "fm-arms", category: "coatofarms", name: "Seal of the Federated States of Micronesia", from: 1986, to: 9999, path: "national-flags/fm/fm-arms.svg", design: "A sprouting coconut floating on the ocean beneath an arc of four white stars, with the motto and the year 1979.", source: "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia" },
     { id: "fm-passport", category: "passport", name: "Passport of the Federated States of Micronesia", path: "national-flags/fm/fm-passport.webp", design: "The cover of the the Federated States of Micronesia passport.", source: "https://gicg.net/passport/fm/" },
-    { id: "fm-football-crest", category: "footballcrest", name: "Crest of the Micronesia national football team", path: "national-flags/fm/fm-football-crest.png", design: "The crest of the Micronesia national football team.", source: "https://en.wikipedia.org/wiki/Federated_States_of_Micronesia_national_football_team" },
+    { id: "fm-football-crest", category: "footballcrest", name: "Crest of the Micronesia national football team", path: "national-flags/fm/fm-football-crest.png", design: "A shield reading \"FEDERATED STATES OF MICRONESIA\" with a football at its peak, and four blue five-pointed stars above wavy blue lines representing the sea.", source: "https://en.wikipedia.org/wiki/Federated_States_of_Micronesia_national_football_team" },
   ],
   "FO": [
     { id: "fo-official-national", category: "official", name: "Flag of the Faroe Islands", from: 1948, to: 9999, path: "flags/fo.svg", design: "Merkið — a red Nordic cross fimbriated in blue on a white field.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands" },
@@ -816,7 +816,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gd-uk", category: "historical", name: "Flag of the United Kingdom", from: 1763, to: 1974, sovereign: "the United Kingdom", path: "national-flags/gd/gd-uk.svg", design: "The Union Flag, flown while Grenada was a British colony.", source: "https://en.wikipedia.org/wiki/British_Windward_Islands" },
     { id: "gd-arms", category: "coatofarms", name: "Coat of arms of Grenada", from: 1974, to: 9999, path: "national-flags/gd/gd-arms.svg", design: "A cross of golden lions around Columbus's ship, held by an armadillo and a dove.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Grenada" },
     { id: "gd-passport", category: "passport", name: "Passport of Grenada", path: "national-flags/gd/gd-passport.webp", design: "The cover of the Grenada passport.", source: "https://gicg.net/passport/gd/" },
-    { id: "gd-football-crest", category: "footballcrest", name: "Crest of the Grenada national football team", path: "national-flags/gd/gd-football-crest.svg", design: "The crest of the Grenada national football team.", source: "https://en.wikipedia.org/wiki/Grenada_Football_Association" },
+    { id: "gd-football-crest", category: "footballcrest", name: "Crest of the Grenada national football team", path: "national-flags/gd/gd-football-crest.svg", design: "A shield reading \"GRENADA F.A.\" and \"Est. 1924\", in green and gold with sun rays, a red disc at the centre, gold stars around the border, and a football at the base.", source: "https://en.wikipedia.org/wiki/Grenada_Football_Association" },
   ],
   "GE": [
     { id: "ge-official-national", category: "official", name: "Flag of Georgia", from: 2004, to: 9999, primary: true, path: "flags/ge.svg", design: "The national flag of Georgia, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Georgia" },
@@ -854,7 +854,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "GI": [
     { id: "gi-official-national", category: "official", name: "Flag of Gibraltar", from: 1502, to: 9999, path: "flags/gi.svg", design: "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.", source: "https://en.wikipedia.org/wiki/Flag_of_Gibraltar" },
     { id: "gi-arms", category: "coatofarms", name: "Coat of arms of Gibraltar", from: 1502, to: 9999, path: "national-flags/gi/gi-arms.svg", design: "Argent, upon a base gules a castle triple-towered gules ported and windowed sable, a golden key pendent from the portal.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar" },
-    { id: "gi-football-crest", category: "footballcrest", name: "Crest of the Gibraltar football association", path: "national-flags/gi/gi-football-crest.svg", design: "The crest of Gibraltar's national football association.", source: "https://en.wikipedia.org/wiki/Gibraltar_Football_Association" },
+    { id: "gi-football-crest", category: "footballcrest", name: "Crest of the Gibraltar football association", path: "national-flags/gi/gi-football-crest.svg", design: "A red shield reading \"GIBRALTAR FOOTBALL ASSOCIATION\", with a white triangular peak silhouette at its centre.", source: "https://en.wikipedia.org/wiki/Gibraltar_Football_Association" },
   ],
   "GL": [
     { id: "gl-official-national", category: "official", name: "Flag of Greenland", from: 1985, to: 9999, path: "flags/gl.svg", design: "Erfalasorput — a horizontal white-over-red field bearing a counter-coloured disc, the sun setting into the ice.", source: "https://en.wikipedia.org/wiki/Flag_of_Greenland" },
@@ -916,7 +916,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gw-portuguese", category: "historical", name: "Flag of Portugal", from: 1879, to: 1974, sovereign: "Portugal", path: "national-flags/gw/gw-pt.svg", design: "The flag of Portugal, flown over the colony of Portuguese Guinea.", source: "https://en.wikipedia.org/wiki/Portuguese_Guinea" },
     { id: "gw-arms", category: "coatofarms", name: "Emblem of Guinea-Bissau", from: 1973, to: 9999, path: "national-flags/gw/gw-arms.svg", design: "A black star above a scallop shell, between two olive branches, over the national motto.", source: "https://en.wikipedia.org/wiki/Emblem_of_Guinea-Bissau" },
     { id: "gw-passport", category: "passport", name: "Passport of Guinea-Bissau", path: "national-flags/gw/gw-passport.webp", design: "The cover of the Guinea-Bissau passport.", source: "https://gicg.net/passport/gw/" },
-    { id: "gw-football-crest", category: "footballcrest", name: "Crest of the Guinea-Bissau national football team", path: "national-flags/gw/gw-football-crest.png", design: "The crest of the Guinea-Bissau national football team.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Guinea-Bissau" },
+    { id: "gw-football-crest", category: "footballcrest", name: "Crest of the Guinea-Bissau national football team", path: "national-flags/gw/gw-football-crest.png", design: "A circular badge reading \"FFGB\" and \"FEDERAÇÃO DE FUTEBOL DA GUINÉ-BISSAU\", with a black star over a football, framed by red, yellow and green ribbon shapes.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Guinea-Bissau" },
   ],
   "GY": [
     { id: "gy-official-national", category: "official", name: "Flag of Guyana", from: 1966, to: 9999, primary: true, path: "flags/gy.svg", design: "The national flag of Guyana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Guyana" },
@@ -2612,10 +2612,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Antigua and Barbuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda" },
     ],
   },
+  "ag-football-crest": {
+    description: "The two deer are taken from Antigua and Barbuda's coat of arms, where they represent the islands' wildlife (a population of fallow deer introduced under British colonial rule), and the motto \"Each endeavouring, all achieving\" is the country's own national motto.",
+    sources: [
+      { title: "Coat of arms of Antigua and Barbuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda" },
+    ],
+  },
   "ai-arms": {
     description: "The shield, adopted by Royal Warrant on 27 November 1990, shows three orange dolphins leaping in a ring for unity, strength and endurance — the island's motto — with the circle standing for continuity. The white field is peace and tranquillity; the blue at the base is the Caribbean Sea, and stands too for faith, youth and hope. The same design appears on Anguilla's flag.",
     sources: [
       { title: "Coat of arms of Anguilla — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Anguilla" },
+    ],
+  },
+  "ai-football-crest": {
+    description: "The three dolphins are taken directly from Anguilla's national flag and coat of arms, where they are arranged in a circle to represent unity, strength and endurance.",
+    sources: [
+      { title: "Flag of Anguilla — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Anguilla" },
     ],
   },
   "al-arms": {
@@ -2670,6 +2682,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "as-seal": {
     description: "The seal is built from the emblems of the faʻamatai, the Samoan chiefly system: the fue (fly-whisk) for the wisdom of the talking chief, the toʻotoʻo (orator's staff) for his authority, and the tanoa (kava bowl) for service to the chief, all on a tapa-cloth ground for Samoan artistry. The motto reads Sāmoa Muamua Le Atua — “Samoa, let God be first.” The date 17 April 1900 marks the day American Samoa became a U.S. territory.",
+    sources: [
+      { title: "Seal of American Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_American_Samoa" },
+    ],
+  },
+  "as-football-crest": {
+    description: "The fue, tanoa and to'oto'o (orator's staff) are the traditional regalia of a Samoan talking chief and appear together on the Seal of American Samoa: the fue represents wisdom, the tanoa represents service to the chief, and the staff represents authority.",
     sources: [
       { title: "Seal of American Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_American_Samoa" },
     ],
@@ -2754,6 +2772,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield names the island literally: the bearded fig tree is the Ficus citrifolia after which the Portuguese called the island Os Barbados, \"the bearded ones\", for the aerial roots that hang from it like beards; the two red flowers flanking it are the Pride of Barbados, the national flower. The supporters are a dolphinfish, for the fishing industry, and a pelican, for the small Pelican Island off Bridgetown. The crest is an arm holding two crossed sugar canes — the crop the colonial economy was built on — and the motto beneath reads \"Pride and Industry\". Granted by royal warrant in 1966, the year of independence.",
     sources: [
       { title: "Coat of arms of Barbados — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barbados" },
+    ],
+  },
+  "bb-football-crest": {
+    description: "The trident is taken from Barbados's national flag, where its broken shaft marks the country's break from British colonial rule and its three points stand for government of, for and by the people.",
+    sources: [
+      { title: "Flag of Barbados — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
     ],
   },
   "bd-emblem": {
@@ -2910,10 +2934,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Bahamas — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas" },
     ],
   },
+  "bs-football-crest": {
+    description: "The yellow flowers are the Yellow Elder (Tecoma stans), the Bahamas' national flower, chosen for being native to the islands and blooming year-round, and taken to symbolise the country's natural beauty and resilience.",
+    sources: [
+      { title: "The Yellow Elder — National Flower of The Bahamas, Government of The Bahamas", url: "https://www.bahamas.gov.bs/yellow-elder-national-flower" },
+    ],
+  },
   "bt-arms": {
     description: "The emblem keeps the symbols of the flag in a circle. Two crossed vajras (dorji, thunderbolts) rest on a lotus for purity, beneath a jewel for the sovereign, and two dragons — male and female — encircle the whole: the Druk, the thunder dragon that gives Bhutan its name, Druk Yul, “Land of the Thunder Dragon.” The crossed vajras stand for the harmony of secular and religious power.",
     sources: [
       { title: "Emblem of Bhutan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Bhutan" },
+    ],
+  },
+  "bt-football-crest": {
+    description: "The dragon forms are Bhutan's Druk (Thunder Dragon), the country's central national symbol and namesake, taken from the national flag, where the Druk's snarling mouth signifies the defence of Bhutan and the jewels in its claws represent the country's wealth and the security of its people.",
+    sources: [
+      { title: "Flag of Bhutan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
     ],
   },
   "bw-arms": {
@@ -2936,6 +2972,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "bz-arms": {
     description: "Behind the shield rises a mahogany tree, the timber on which the colonial economy was built. The shield shows a woodcutter's tools — an axe and a paddle, a saw and a squaring axe — above a ship under sail. Two woodcutters, one of African and one of mixed descent, support it, and the motto reads Sub Umbra Floreo — “Under the shade I flourish,” the shade of the mahogany.",
+    sources: [
+      { title: "Coat of arms of Belize — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize" },
+    ],
+  },
+  "bz-football-crest": {
+    description: "The crest carries Belize's own coat of arms: the mahogany tree, woodcutter's tools and ship reflect the country's historical mahogany-export economy, the two supporting figures represent its Mestizo and Afro-Belizean population, and the motto \"Sub Umbra Floreo\" (\"Under the shade I flourish\") alludes both to its forests and to its founding under British protection.",
     sources: [
       { title: "Coat of arms of Belize — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize" },
     ],
@@ -3025,6 +3067,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Cook Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cook_Islands" },
     ],
   },
+  "ck-football-crest": {
+    description: "The circle of stars echoes the Cook Islands' national flag, whose fifteen stars represent the fifteen islands that make up the country.",
+    sources: [
+      { title: "Flag of the Cook Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
+    ],
+  },
   "cl-mapuche": {
     description: "Adopted in 1992 by the Mapuche of Chile and Argentina, the Wenüfoye centres on the cultrún, the sacred drum, whose circular face carries the Meli Witran Mapu (the four cardinal points) with the sun, moon and stars. Blue is life and the sacred; green the earth, nature and the machi (healer); red strength and history; yellow the renewing sun; white healing and wisdom. The stepped cross (gemil) stands for Mapuche art, knowledge and writing.",
     sources: [
@@ -3086,6 +3134,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica" },
     ],
   },
+  "cr-football-crest": {
+    description: "The colours are Costa Rica's national flag colours: blue for the sky and idealism, white for peace and clear thinking, and red for the warmth of the Costa Rican people and the blood shed for their freedom.",
+    sources: [
+      { title: "Flag of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
+    ],
+  },
   "cu-arms": {
     description: "Designed by Miguel Teurbe Tolón in 1849, the shield is read in three fields. The upper field is a sea between two capes — the Yucatán peninsula and Florida — with a golden key hanging between them beneath a rising sun: Cuba is the key to the Gulf of Mexico, the island commanding the strait, and the sun is the dawn of the new state. The lower left field carries the blue and white stripes of the flag, for the island's division into departments under Spanish rule; the lower right shows a royal palm, the national tree, standing for the country itself. Behind the shield the fasces topped with a red Phrygian cap is the classical emblem of authority and of liberty, and the oak branch and laurel wreath at the sides are strength and glory.",
     sources: [
@@ -3104,8 +3158,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Cape Verde — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde" },
     ],
   },
+  "cv-football-crest": {
+    description: "The ten stars echo Cape Verde's national flag, where they stand for the archipelago's ten main islands, and the shark reflects the national team's own nickname \"Tubarões Azuis\" (Blue Sharks), tying the crest to the islands' Atlantic setting and fishing culture.",
+    sources: [
+      { title: "Cape Verde national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Cape_Verde_national_football_team" },
+    ],
+  },
   "cw-arms": {
     description: "Granted on 24 July 1964. The ship under full sail is a vessel of the Dutch West India Company, which settled Curaçao in 1634; the green laraha — the bitter Valencia orange whose peel gives the island's famous liqueur — stands for its flora and agriculture. The small central shield bears the three saltires of Amsterdam, the city that governed the colony, marking Curaçao's long tie to Amsterdam and the House of Orange-Nassau.",
+    sources: [
+      { title: "Coat of arms of Curaçao — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao" },
+    ],
+  },
+  "cw-football-crest": {
+    description: "The ship is taken from Curaçao's coat of arms, where it represents the sailing ship of the Dutch West India Company, which founded the island's colonial trading economy.",
     sources: [
       { title: "Coat of arms of Curaçao — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao" },
     ],
@@ -3175,6 +3241,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield is quartered by a cross: a canoe on the sea, a banana tree, a tall coconut palm and a crapaud, the mountain frog of the island. Two Sisserou parrots — the national bird, found only on Dominica — brace the shield, and a lion crowns the crest. The motto, in the island's French creole, reads Après Bondie C'est La Ter — “After God, the Earth.”",
     sources: [
       { title: "Coat of arms of Dominica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Dominica" },
+    ],
+  },
+  "dm-football-crest": {
+    description: "The Sisserou parrot and the ring of ten stars are taken from Dominica's national flag: the parrot is the country's endangered national bird, found only on Dominica, and the ten stars stand for the island's ten parishes.",
+    sources: [
+      { title: "Flag of Dominica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
     ],
   },
   "do-arms": {
@@ -3305,6 +3377,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal of the Federated States of Micronesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia" },
     ],
   },
+  "fm-football-crest": {
+    description: "The four stars are taken directly from the national flag, where they represent the country's four states: Chuuk, Kosrae, Pohnpei and Yap.",
+    sources: [
+      { title: "Flag of the Federated States of Micronesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia" },
+    ],
+  },
   "fo-arms": {
     description: "The silver ram — Veðrur — on a blue field is one of the Faroes' oldest symbols, carved on the medieval bishop's chairs at Kirkjubøur around the 15th century, and it speaks to the sheep on which Faroese life has long depended (the islands' Old Norse name means 'sheep islands'). It fell from use when the Løgting was abolished in 1816 and was readopted in 1948 with the Home Rule Act; a version modernised in 2004 took its colours from the Merkið flag.",
     sources: [
@@ -3395,6 +3473,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Grenada" },
     ],
   },
+  "gd-football-crest": {
+    description: "The colours, stars and central disc are taken from Grenada's national flag: the gold stars stand for the country's parishes and its two sister islands of Carriacou and Petite Martinique, the green represents the islands' vegetation, and the gold evokes the sun and the warmth of Grenadians.",
+    sources: [
+      { title: "Flag of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
+    ],
+  },
   "ge-arms": {
     description: "The arms are partly based on the medieval device of the Bagrationi royal house and centre on Saint George, the country's traditional patron saint and the source of its English name — a silver rider on a silver horse spearing a dragon, his lance tipped with a golden cross, on a purple field (usually drawn red). The shield is crowned with the Iberian crown of the old Georgian kingdom and supported by two golden lions; the scroll beneath carries the national motto, \"Strength is in Unity\". The same Saint George arms served the Democratic Republic of 1918–1921, though at that time there was some discussion of using Amirani, the Georgian Prometheus, instead. The current version was adopted after the 2004 Rose Revolution.",
     sources: [
@@ -3429,6 +3513,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Gibraltar's arms were granted by a Royal Warrant of Isabella I of Castile on 10 July 1502, during the Spanish period — the oldest continuously-used coat of arms of any British Overseas Territory. The red three-towered castle, drawn in the style of the arms of Castile, stands for Gibraltar's strength and its command of the Rock; the golden key hanging beneath it, the warrant said, marks Gibraltar as 'the key between these our kingdoms in the Eastern and Western Seas' — the sentinel that controls passage through the Strait. The flag flies these same arms as a banner.",
     sources: [
       { title: "Coat of arms of Gibraltar — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar" },
+    ],
+  },
+  "gi-football-crest": {
+    description: "The triangular peak evokes the Rock of Gibraltar, the limestone promontory that gives the territory its name and dominates its skyline.",
+    sources: [
+      { title: "Rock of Gibraltar — Wikipedia", url: "https://en.wikipedia.org/wiki/Rock_of_Gibraltar" },
     ],
   },
   "gl-arms": {
@@ -3520,6 +3610,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The black star is the Black Star of Africa, the emblem of the PAIGC that led the country to independence. Below it a scallop shell marks Guinea-Bissau's place on the West African coast, and two olive branches curve up on either side. The scroll reads Unidade, Luta, Progresso — “Unity, Struggle, Progress.”",
     sources: [
       { title: "Emblem of Guinea-Bissau — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Guinea-Bissau" },
+    ],
+  },
+  "gw-football-crest": {
+    description: "The black star and the red-yellow-green colours are taken from Guinea-Bissau's national flag: the black star symbolises the leadership of the PAIGC independence movement and the unity of the African people, red recalls the bloodshed of the war of independence, and yellow and green stand for the country's savannas and forests.",
+    sources: [
+      { title: "Flag of Guinea-Bissau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
     ],
   },
   "gy-arms": {
