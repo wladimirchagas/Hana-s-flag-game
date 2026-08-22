@@ -3332,6 +3332,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Tiananmen — Wikipedia", url: "https://en.wikipedia.org/wiki/Tiananmen" },
     ],
   },
+  "co-army": {
+    description: "The national tricolour, marked \"REPÚBLICA DE COLOMBIA\" above the Army's own coat of arms and \"EJÉRCITO\" below, bears crossed cannon tubes for the artillery's patron saint, Santa Bárbara; a gold three-towered castle on a purple field (a colour read as standing for modesty, prudence and hard-won triumph) for strength won through will and effort; and a burnished steel helmet crested with plumes in the national colours, a mark of legitimacy.",
+    sources: [
+      { title: "Colombia — Army — Flags of the World", url: "https://www.crwflags.com/fotw/flags/co%5Earmy.html" },
+    ],
+  },
+  "co-naval-ensign": {
+    description: "The national tricolour is charged with Colombia's coat of arms — the Andean condor for freedom, the shield's Phrygian cap for liberty and its two ships for the country's maritime history and trade — beneath the words \"ARMADA NACIONAL\" (National Navy), marking the ensign flown by ships of the Colombian Navy, founded in 1824 after the Naval Battle of Maracaibo secured the country's independence at sea.",
+    sources: [
+      { title: "Coat of arms of Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia" },
+    ],
+  },
+  "co-civil-ensign": {
+    description: "The national tricolour is defaced with a red-bordered blue oval enclosing a white eight-pointed star — a device added by Decree 309 of 1890 to identify Colombian merchant ships at sea. The star's eight points are read as standing for the eight provinces that originally formed the Sovereign State of Cartagena, one of the first territories of modern Colombia to declare independence from Spain, and echo the eight-pointed star used by the earlier federation of Gran Colombia.",
+    sources: [
+      { title: "Colombia — Flags for Use at Sea — Flags of the World", url: "https://www.fotw.info/flags/co~.html" },
+    ],
+  },
   "co-president": {
     description: "The presidential standard bears the national coat of arms: an Andean condor for freedom holding an olive crown, a scroll with the motto \"Libertad y Orden\" (Liberty and Order), and a shield showing two ships for the country's maritime history and trade, a Phrygian cap on a spear for liberty, and a pomegranate between two cornucopias recalling the name New Granada and the nation's mineral and agricultural wealth.",
     sources: [
