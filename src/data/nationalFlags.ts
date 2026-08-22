@@ -310,7 +310,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bi-german", category: "historical", name: "Flag of the German Empire", from: 1890, to: 1916, sovereign: "the German Empire", path: "national-flags/bi/bi-german.svg", design: "The flag of the German Empire, which held the territory as part of German East Africa until 1916.", source: "https://en.wikipedia.org/wiki/German_East_Africa" },
     { id: "bi-arms", category: "coatofarms", name: "Coat of arms of Burundi", from: 1966, to: 9999, path: "national-flags/bi/bi-arms.svg", design: "A lion's head on a red shield over three crossed spears.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burundi" },
     { id: "bi-passport", category: "passport", name: "Passport of Burundi", path: "national-flags/bi/bi-passport.webp", design: "The cover of the Burundi passport.", source: "https://gicg.net/passport/bi/" },
-    { id: "bi-football-crest", category: "footballcrest", name: "Crest of the Burundi national football team", path: "national-flags/bi/bi-football-crest.png", design: "The crest of the Burundi national football team.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Burundi" },
+    { id: "bi-football-crest", category: "footballcrest", name: "Crest of the Burundi national football team", path: "national-flags/bi/bi-football-crest.png", design: "The crest of the Fédération de Football du Burundi — a red-white-green circular badge lettered “FFB” and “Burundi”, with a football.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Burundi" },
   ],
   "BJ": [
     { id: "bj-official-national", category: "official", name: "Flag of Benin", from: 1959, to: 9999, primary: true, path: "flags/bj.svg", design: "The national flag, adopted in 1959 and restored in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
@@ -459,7 +459,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cf-french", category: "historical", name: "Flag of France", from: 1910, to: 1958, sovereign: "France", path: "national-flags/cf/cf-french.svg", design: "The French Tricolour, flown over the territory of Ubangi-Shari as part of French Equatorial Africa.", source: "https://en.wikipedia.org/wiki/Ubangi-Shari" },
     { id: "cf-arms", category: "coatofarms", name: "Coat of arms of the Central African Republic", from: 1963, to: 9999, path: "national-flags/cf/cf-arms.svg", design: "A quartered shield with an elephant, a baobab, a hand and a gold star on a map of Africa, beneath a rising sun.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Central_African_Republic" },
     { id: "cf-passport", category: "passport", name: "Passport of the Central African Republic", path: "national-flags/cf/cf-passport.webp", design: "The cover of the the Central African Republic passport.", source: "https://gicg.net/passport/cf/" },
-    { id: "cf-football-crest", category: "footballcrest", name: "Crest of the Central African Republic national football team", path: "national-flags/cf/cf-football-crest.svg", design: "The crest of the Central African Republic national football team.", source: "https://en.wikipedia.org/wiki/Central_African_Republic_Football_Federation" },
+    { id: "cf-football-crest", category: "footballcrest", name: "Crest of the Central African Republic national football team", path: "national-flags/cf/cf-football-crest.svg", design: "The crest of the Fédération Centrafricaine de Football — a shield bearing the Central African Republic's own national flag (blue, white, green and yellow bands crossed by a red stripe and a gold star), lettered “R.C.A”, with a gold player figure in a laurel wreath.", source: "https://en.wikipedia.org/wiki/Central_African_Republic_Football_Federation" },
   ],
   "CG": [
     { id: "cg-official-national", category: "official", name: "Flag of the Republic of the Congo", from: 1959, to: 9999, primary: true, path: "flags/cg.svg", design: "The national flag, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo" },
@@ -467,7 +467,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cg-french", category: "historical", name: "Flag of France", from: 1910, to: 1959, sovereign: "France", path: "national-flags/cg/cg-french.svg", design: "The French Tricolour, flown over the territory as part of French Equatorial Africa.", source: "https://en.wikipedia.org/wiki/French_Equatorial_Africa" },
     { id: "cg-arms", category: "coatofarms", name: "Coat of arms of the Republic of the Congo", from: 1960, to: 9999, path: "national-flags/cg/cg-arms.svg", design: "A gold shield with a green wavy stripe and a red lion holding a torch, held by two elephants.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo" },
     { id: "cg-passport", category: "passport", name: "Passport of the Republic of the Congo", path: "national-flags/cg/cg-passport.webp", design: "The cover of the the Republic of the Congo passport.", source: "https://gicg.net/passport/cg/" },
-    { id: "cg-football-crest", category: "footballcrest", name: "Crest of the Congo national football team", path: "national-flags/cg/cg-football-crest.svg", design: "The crest of the Congo national football team.", source: "https://en.wikipedia.org/wiki/Congo_Football_Federation" },
+    { id: "cg-football-crest", category: "footballcrest", name: "Crest of the Congo national football team", path: "national-flags/cg/cg-football-crest.svg", design: "The crest of the Fédération Congolaise de Football — a shield in the green, yellow and red diagonal of the national flag, with a lion standing on a football, lettered “Congo Fecofoot”.", source: "https://en.wikipedia.org/wiki/Congo_Football_Federation" },
   ],
   "CH": [
     { id: "ch-official-national", category: "official", name: "Flag of Switzerland", from: 1841, to: 9999, primary: true, path: "flags/ch.svg", design: "The national flag of Switzerland, in the form adopted in 1841.", source: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
@@ -620,7 +620,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "dj-french", category: "historical", name: "Flag of France", from: 1896, to: 1977, sovereign: "France", path: "national-flags/dj/dj-french.svg", design: "The French Tricolour, flown over French Somaliland and then the Territory of the Afars and the Issas.", source: "https://en.wikipedia.org/wiki/French_Somaliland" },
     { id: "dj-arms", category: "coatofarms", name: "Emblem of Djibouti", from: 1977, to: 9999, path: "national-flags/dj/dj-arms.svg", design: "An upright spear and shield between two hands holding machetes, beneath a red star, within laurel branches.", source: "https://en.wikipedia.org/wiki/Emblem_of_Djibouti" },
     { id: "dj-passport", category: "passport", name: "Passport of Djibouti", path: "national-flags/dj/dj-passport.webp", design: "The cover of the Djibouti passport.", source: "https://gicg.net/passport/dj/" },
-    { id: "dj-football-crest", category: "footballcrest", name: "Crest of the Djibouti national football team", path: "national-flags/dj/dj-football-crest.svg", design: "The crest of the Djibouti national football team.", source: "https://en.wikipedia.org/wiki/Djiboutian_Football_Federation" },
+    { id: "dj-football-crest", category: "footballcrest", name: "Crest of the Djibouti national football team", path: "national-flags/dj/dj-football-crest.svg", design: "The crest of the Fédération Djiboutienne de Football — a shield in the light blue and green of the national flag with a red star, flanked by crossed spears and a gold wreath, lettered “Fédération de Football Djiboutienne Fondée 1979”.", source: "https://en.wikipedia.org/wiki/Djiboutian_Football_Federation" },
   ],
   "DK": [
     { id: "dk-official-national", category: "official", name: "Flag of Denmark", from: 1625, to: 9999, primary: true, path: "flags/dk.svg", design: "The national flag of Denmark, in the form adopted in 1625.", source: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
@@ -865,14 +865,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gm-uk", category: "historical", name: "Flag of the United Kingdom", from: 1821, to: 1965, sovereign: "the United Kingdom", path: "national-flags/gm/gm-uk.svg", design: "The Union Flag, flown while the Gambia was a British colony.", source: "https://en.wikipedia.org/wiki/British_Gambia" },
     { id: "gm-arms", category: "coatofarms", name: "Coat of arms of the Gambia", from: 1964, to: 9999, path: "national-flags/gm/gm-arms.svg", design: "A blue shield with a crossed hoe and axe, held by two lions and crested with an oil palm.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Gambia" },
     { id: "gm-passport", category: "passport", name: "Passport of the Gambia", path: "national-flags/gm/gm-passport.webp", design: "The cover of the the Gambia passport.", source: "https://gicg.net/passport/gm/" },
-    { id: "gm-football-crest", category: "footballcrest", name: "Crest of the Gambia national football team", path: "national-flags/gm/gm-football-crest.png", design: "The crest of the Gambia national football team.", source: "https://en.wikipedia.org/wiki/Gambia_Football_Federation" },
+    { id: "gm-football-crest", category: "footballcrest", name: "Crest of the Gambia national football team", path: "national-flags/gm/gm-football-crest.png", design: "The crest of the Gambia Football Federation — a shield in the red, blue and green bands of the national flag, with a black scorpion over a football, lettered “The Gambia Football Federation”.", source: "https://en.wikipedia.org/wiki/Gambia_Football_Federation" },
   ],
   "GN": [
     { id: "gn-official-national", category: "official", name: "Flag of Guinea", from: 1958, to: 9999, primary: true, path: "flags/gn.svg", design: "The national flag, adopted at independence in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea" },
     { id: "gn-french", category: "historical", name: "Flag of France", from: 1891, to: 1958, sovereign: "France", path: "national-flags/gn/gn-french.svg", design: "The French Tricolour, flown over French Guinea as part of French West Africa.", source: "https://en.wikipedia.org/wiki/French_Guinea" },
     { id: "gn-arms", category: "coatofarms", name: "Coat of arms of Guinea", from: 1958, to: 9999, path: "national-flags/gn/gn-arms.svg", design: "A dove holding an olive branch, above a shield in the national colours and a ribbon with the national motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea" },
     { id: "gn-passport", category: "passport", name: "Passport of Guinea", path: "national-flags/gn/gn-passport.webp", design: "The cover of the Guinea passport.", source: "https://gicg.net/passport/gn/" },
-    { id: "gn-football-crest", category: "footballcrest", name: "Crest of the Guinea national football team", path: "national-flags/gn/gn-football-crest.png", design: "The crest of the Guinea national football team.", source: "https://en.wikipedia.org/wiki/Guinea_national_football_team" },
+    { id: "gn-football-crest", category: "footballcrest", name: "Crest of the Guinea national football team", path: "national-flags/gn/gn-football-crest.png", design: "The crest of the Fédération Guinéenne de Football — a shield in the red, yellow and green vertical bands of the national flag, lettered “FGF” and “Guinée”, with an elephant and a football.", source: "https://en.wikipedia.org/wiki/Guinea_national_football_team" },
   ],
   "GQ": [
     { id: "gq-official-national", category: "official", name: "Flag of Equatorial Guinea", from: 1968, to: 9999, primary: true, path: "flags/gq.svg", design: "The national flag, adopted at independence in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea" },
@@ -1298,7 +1298,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ls-uk", category: "historical", name: "Flag of the United Kingdom", from: 1884, to: 1966, sovereign: "the United Kingdom", path: "national-flags/ls/ls-uk.svg", design: "The Union Flag, flown while Basutoland was a British protectorate.", source: "https://en.wikipedia.org/wiki/Basutoland" },
     { id: "ls-arms", category: "coatofarms", name: "Coat of arms of Lesotho", from: 1966, to: 9999, path: "national-flags/ls/ls-arms.svg", design: "A crocodile on a Basotho shield with crossed assegai and knobkierie, supported by two horses before Thaba Bosiu.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lesotho" },
     { id: "ls-passport", category: "passport", name: "Passport of Lesotho", path: "national-flags/ls/ls-passport.webp", design: "The cover of the Lesotho passport.", source: "https://gicg.net/passport/ls/" },
-    { id: "ls-football-crest", category: "footballcrest", name: "Crest of the Lesotho national football team", path: "national-flags/ls/ls-football-crest.svg", design: "The crest of the Lesotho national football team.", source: "https://en.wikipedia.org/wiki/Lesotho_Football_Association" },
+    { id: "ls-football-crest", category: "footballcrest", name: "Crest of the Lesotho national football team", path: "national-flags/ls/ls-football-crest.svg", design: "The crest of the Lesotho Football Association — a white outline map of Lesotho over blue and green bands from the national flag, with a football player and “LeFA” lettering.", source: "https://en.wikipedia.org/wiki/Lesotho_Football_Association" },
   ],
   "LT": [
     { id: "lt-official-national", category: "official", name: "Flag of Lithuania", from: 1918, to: 9999, primary: true, path: "flags/lt.svg", design: "The national flag of Lithuania, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Lithuania" },
@@ -1560,7 +1560,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "na-president", category: "standard", name: "Presidential standard of Namibia", from: 1990, to: 9999, path: "national-flags/na/na-president.svg", design: "The standard of the President of Namibia.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
     { id: "na-arms", category: "coatofarms", name: "Coat of arms of Namibia", from: 1990, to: 9999, path: "national-flags/na/na-arms.svg", design: "The national arms, adopted at independence in 1990.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
     { id: "na-passport", category: "passport", name: "Passport of Namibia", path: "national-flags/na/na-passport.webp", design: "The cover of the Namibia passport.", source: "https://gicg.net/passport/na/" },
-    { id: "na-football-crest", category: "footballcrest", name: "Crest of the Namibia national football team", path: "national-flags/na/na-football-crest.png", design: "The crest of the Namibia national football team.", source: "https://en.wikipedia.org/wiki/Namibia_national_football_team" },
+    { id: "na-football-crest", category: "footballcrest", name: "Crest of the Namibia national football team", path: "national-flags/na/na-football-crest.png", design: "The crest of the Namibia Football Association — a black circular badge lettered “Namibia”, with a white African fish eagle, wings spread, in flight.", source: "https://en.wikipedia.org/wiki/Namibia_national_football_team" },
   ],
   "NC": [
     { id: "nc-kanak", category: "official", name: "Kanak flag (FLNKS)", from: 1980, to: 9999, path: "flags/nc.svg", design: "Horizontal blue, red and green bands with a yellow disc bearing a black flèche faîtière (roof-arrow).", source: "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia" },
@@ -1983,7 +1983,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "so-british", category: "historical", name: "Flag of the United Kingdom", from: 1884, to: 1960, sovereign: "the United Kingdom", path: "national-flags/so/so-uk.svg", design: "The Union Flag, flown over British Somaliland in the north until 1960.", source: "https://en.wikipedia.org/wiki/British_Somaliland" },
     { id: "so-arms", category: "coatofarms", name: "Coat of arms of Somalia", from: 1956, to: 9999, path: "national-flags/so/so-arms.svg", design: "A blue shield with the white star, held by two leopards on crossed spears.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Somalia" },
     { id: "so-passport", category: "passport", name: "Passport of Somalia", path: "national-flags/so/so-passport.webp", design: "The cover of the Somalia passport.", source: "https://gicg.net/passport/so/" },
-    { id: "so-football-crest", category: "footballcrest", name: "Crest of the Somalia national football team", path: "national-flags/so/so-football-crest.svg", design: "The crest of the Somalia national football team.", source: "https://en.wikipedia.org/wiki/Somalia_national_football_team" },
+    { id: "so-football-crest", category: "footballcrest", name: "Crest of the Somalia national football team", path: "national-flags/so/so-football-crest.svg", design: "The crest of the Somali Football Federation — a light-blue football bearing a white star, on a gold rounded badge lettered “Somali Football Federation”, “Estd 1951” and “SFF”.", source: "https://en.wikipedia.org/wiki/Somalia_national_football_team" },
   ],
   "SR": [
     { id: "sr-official-national", category: "official", name: "Flag of Suriname", from: 1975, to: 9999, primary: true, path: "flags/sr.svg", design: "The national flag of Suriname, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
@@ -1999,7 +1999,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ss-sudan", category: "historical", name: "Flag of Sudan", from: 1970, to: 2011, sovereign: "Sudan", path: "national-flags/ss/ss-sudan.svg", design: "The flag of Sudan, which governed the south from Khartoum until the 2011 secession.", source: "https://en.wikipedia.org/wiki/Sudan" },
     { id: "ss-arms", category: "coatofarms", name: "Coat of arms of South Sudan", from: 2011, to: 9999, path: "national-flags/ss/ss-arms.svg", design: "An African fish eagle with the national shield and spears.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Sudan" },
     { id: "ss-passport", category: "passport", name: "Passport of South Sudan", path: "national-flags/ss/ss-passport.webp", design: "The cover of the South Sudan passport.", source: "https://gicg.net/passport/ss/" },
-    { id: "ss-football-crest", category: "footballcrest", name: "Crest of the South Sudan national football team", path: "national-flags/ss/ss-football-crest.png", design: "The crest of the South Sudan national football team.", source: "https://en.wikipedia.org/wiki/South_Sudan_Football_Association" },
+    { id: "ss-football-crest", category: "footballcrest", name: "Crest of the South Sudan national football team", path: "national-flags/ss/ss-football-crest.png", design: "The crest of the South Sudan Football Association — a shield reproducing the national flag (black, red and green bands separated by white, with a blue hoist triangle bearing a gold star), with a football.", source: "https://en.wikipedia.org/wiki/South_Sudan_Football_Association" },
   ],
   "ST": [
     { id: "st-official-national", category: "official", name: "Flag of São Tomé and Príncipe", from: 1975, to: 9999, primary: true, path: "flags/st.svg", design: "The national flag, adopted at independence in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_São_Tomé_and_Príncipe" },
@@ -2035,7 +2035,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sz-uk", category: "historical", name: "Flag of the United Kingdom", from: 1903, to: 1968, sovereign: "the United Kingdom", path: "national-flags/sz/sz-uk.svg", design: "The Union Flag, flown while Swaziland was a British protectorate.", source: "https://en.wikipedia.org/wiki/Swaziland_Protectorate" },
     { id: "sz-arms", category: "coatofarms", name: "Coat of arms of Eswatini", from: 1968, to: 9999, path: "national-flags/sz/sz-arms.svg", design: "An Nguni shield on two spears, supported by a lion and an elephant, beneath a crown of feathers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Eswatini" },
     { id: "sz-passport", category: "passport", name: "Passport of Eswatini", path: "national-flags/sz/sz-passport.webp", design: "The cover of the Eswatini passport.", source: "https://gicg.net/passport/sz/" },
-    { id: "sz-football-crest", category: "footballcrest", name: "Crest of the Eswatini national football team", path: "national-flags/sz/sz-football-crest.svg", design: "The crest of the Eswatini national football team.", source: "https://en.wikipedia.org/wiki/Eswatini_Football_Association" },
+    { id: "sz-football-crest", category: "footballcrest", name: "Crest of the Eswatini national football team", path: "national-flags/sz/sz-football-crest.svg", design: "The crest of the Eswatini Football Association — a shield in the blue, yellow and red of the national flag, lettered “EFA” and “Since 1968”, with a football flanked by two small Nguni shields.", source: "https://en.wikipedia.org/wiki/Eswatini_Football_Association" },
   ],
   "TC": [
     { id: "tc-official-national", category: "official", name: "Flag of the Turks and Caicos Islands", from: 1968, to: 9999, path: "flags/tc.svg", design: "A blue ensign with the Union Flag in the canton and the territory's coat of arms — conch shell, spiny lobster and Turk's-head cactus on gold — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands" },
@@ -2047,7 +2047,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "td-french", category: "historical", name: "Flag of France", from: 1920, to: 1959, sovereign: "France", path: "national-flags/td/td-french.svg", design: "The French Tricolour, flown over Chad under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
     { id: "td-arms", category: "coatofarms", name: "Coat of arms of Chad", from: 1960, to: 9999, path: "national-flags/td/td-arms.svg", design: "A shield of blue and gold waves beneath a rising sun, supported by a goat and a lion.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chad" },
     { id: "td-passport", category: "passport", name: "Passport of Chad", path: "national-flags/td/td-passport.webp", design: "The cover of the Chad passport.", source: "https://gicg.net/passport/td/" },
-    { id: "td-football-crest", category: "footballcrest", name: "Crest of the Chad national football team", path: "national-flags/td/td-football-crest.png", design: "The crest of the Chad national football team.", source: "https://en.wikipedia.org/wiki/Chad_Football_Federation" },
+    { id: "td-football-crest", category: "footballcrest", name: "Crest of the Chad national football team", path: "national-flags/td/td-football-crest.png", design: "The crest of the Fédération Tchadienne de Football Association — a shield in the blue, yellow and red vertical bands of the national flag, lettered “Tchad” and “FTFA”, with a footballer kicking a ball.", source: "https://en.wikipedia.org/wiki/Chad_Football_Federation" },
   ],
   "TG": [
     { id: "tg-official-national", category: "official", name: "Flag of Togo", from: 1960, to: 9999, primary: true, path: "flags/tg.svg", design: "The national flag of Togo, adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
@@ -2818,6 +2818,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Burundi — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burundi" },
     ],
   },
+  "bi-football-crest": {
+    description: "The red, white and green repeat Burundi's own national flag: white for peace, green for hope in the country's future development, and red for the suffering endured in its struggle for freedom.",
+    sources: [
+      { title: "Flag of Burundi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
+    ],
+  },
   "bj-arms": {
     description: "The shield is quartered: a Somba tower-house for the country's own history; the Star of Benin, its highest decoration; a sailing ship for the arrival of the Europeans; and a palm tree. Two leopards — the national animal — support it, and beneath, two cornucopias pour out ears of corn. The ribbon reads Fraternité, Justice, Travail — “Fraternity, Justice, Work.”",
     sources: [
@@ -2971,8 +2977,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Central African Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Central_African_Republic" },
     ],
   },
+  "cf-football-crest": {
+    description: "The flag deliberately combines the colours of France (blue and white) with the Pan-African colours (green and yellow): blue for the sky and freedom, white for peace and dignity, green for hope and faith, and yellow for tolerance. The red stripe crossing all four bands stands for the shared blood of humanity — designer Barthélemy Boganda's own expression of a willingness to shed blood for both Africa and the Central African Republic — and the gold star for the country's aspiration to a vibrant future.",
+    sources: [
+      { title: "Flag of the Central African Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic" },
+    ],
+  },
   "cg-arms": {
     description: "On a gold shield a red lion holds a burning torch, above a green wavy band for the Congo River that names the country. A golden crown sits above, and two African elephants — the great animals of the Congo forests — support the shield. The ribbon carries the motto Unité, Travail, Progrès — “Unity, Work, Progress.”",
+    sources: [
+      { title: "Coat of arms of the Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo" },
+    ],
+  },
+  "cg-football-crest": {
+    description: "The lion is drawn from the Republic of the Congo's own coat of arms, where a red lion holding a torch stands for the vigour and protection of the Congolese people. The green, yellow and red repeat the country's national flag.",
     sources: [
       { title: "Coat of arms of the Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo" },
     ],
@@ -3133,6 +3151,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "An upright spear stands before a shield, and on either side a hand rises holding a large machete — the two hands for the country's two peoples, the Issa and the Afar. Above, a red star stands for the unity between them, the same star as on the flag. Laurel branches frame the whole.",
     sources: [
       { title: "Emblem of Djibouti — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Djibouti" },
+    ],
+  },
+  "dj-football-crest": {
+    description: "The design repeats Djibouti's own national flag: light blue for the sky, sea and the country's Somali population, green for the land and its Afar population, and the red star for unity, the blood of independence's martyrs, and Djibouti being one of the five regions the Somali people inhabit.",
+    sources: [
+      { title: "Flag of Djibouti — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
     ],
   },
   "dk-arms": {
@@ -3419,10 +3443,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Gambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Gambia" },
     ],
   },
+  "gm-football-crest": {
+    description: "The scorpion gives the national team its own nickname, the Scorpions — named in 1985 by the country's Sports Minister with the reasoning \"like The Gambia, the Scorpion is small, but when it stings, you know it's no joke.\" The red, blue and green repeat the country's own national flag.",
+    sources: [
+      { title: "Scorpions: The History Behind The Name — The Standard (Gambia)", url: "https://standard.gm/scorpions-the-history-behind-the-name/" },
+    ],
+  },
   "gn-arms": {
     description: "A white dove carrying an olive branch spreads its wings above a shield in the national red, yellow and green — the dove and branch for peace. The ribbon below carries the national motto, Travail, Justice, Solidarité — “Work, Justice, Solidarity.”",
     sources: [
       { title: "Coat of arms of Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea" },
+    ],
+  },
+  "gn-football-crest": {
+    description: "The elephant gives the national team its own name, Syli National — syli means \"elephant\" in the Susu language, and was also the name of Guinea's national currency from 1971 to 1985. The red, yellow and green repeat the country's own national flag.",
+    sources: [
+      { title: "Guinea national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Guinea_national_football_team" },
     ],
   },
   "gq-arms": {
@@ -3846,6 +3882,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lesotho" },
     ],
   },
+  "ls-football-crest": {
+    description: "The blue and green repeat Lesotho's own national flag, adopted in 2006: blue for the sky and rain, and green for prosperity. The flag's own centrepiece, a black Basotho mokorotlo hat (not shown on this badge), replaced the shield, spear and club of the previous design to mark Lesotho as an internally and regionally peaceful state.",
+    sources: [
+      { title: "Flag of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    ],
+  },
   "lt-arms": {
     description: "The Vytis — the pursuer — is a mounted knight charging with a raised sword, and it is one of the oldest coats of arms in Europe still in use. It began as the dynastic device of the Gediminid family and was formalised by Grand Duke Vytautas the Great in the early 15th century as the arms of the Grand Duchy of Lithuania, the last pagan state in Europe, which had formed in response to the Teutonic Order's forced Christianisation of Estonia and Latvia. The cross on the knight's shield is the Jagiellonian double cross, added after Lithuania's rulers accepted Christianity. The horseman was flown continuously as the state's emblem until the Soviet occupation and restored with independence in 1991.",
     sources: [
@@ -4081,6 +4123,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "na-arms": {
     description: "The shield carries the design of the national flag, its gold diamond pattern reading as the country's diamonds and mineral wealth. An African fish eagle rises above it as the crest. Two oryx (gemsbok) support the shield, animals prized for their courage, elegance and pride. On the golden sand of the compartment — the Namib desert that gives the country its name — grows a Welwitschia mirabilis, the desert plant that lives for centuries and stands for fortitude and survival, carried over from the former arms of South-West Africa. The motto reads “Unity, Liberty, Justice.”",
+    sources: [
+      { title: "Coat of arms of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
+    ],
+  },
+  "na-football-crest": {
+    description: "The African fish eagle is the crest of Namibia's own national coat of arms, created for independence in 1990 to replace the arms used under South African administration.",
     sources: [
       { title: "Coat of arms of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
     ],
@@ -4509,6 +4557,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Somalia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Somalia" },
     ],
   },
+  "so-football-crest": {
+    description: "The light blue and the white star repeat Somalia's own national flag: blue for the sky and the surrounding seas (chosen partly in tribute to the United Nations), and the star's five points for the five territories the Somali people inhabit — Somalia itself, Djibouti, Somaliland, Ethiopia's Somali Region and Kenya's North Eastern Province.",
+    sources: [
+      { title: "Flag of Somalia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
+    ],
+  },
   "sr-arms": {
     description: "Adopted at independence in 1975, the shield is halved. The sailing ship on the left is the country's colonial past as a source of cash crops and its present part in international trade; the royal palm on the right is the rainforest that covers two-thirds of Suriname and its agribusiness. The diamond between them is the mining industry, and the green five-pointed star at the centre stands for the unity of the country's many ethnic groups and for hope. The two supporters are indigenous figures — the arms were redrawn in 1975 specifically to acknowledge the indigenous population — and the scroll beneath reads Justitia, Pietas, Fides: Justice, Piety, Fidelity.",
     sources: [
@@ -4519,6 +4573,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "An African fish eagle — for strength, resilience, vision and majesty — spreads its wings above a shield bearing the national flag, crossed by a spear and a spade. The scroll reads “Justice, Liberty, Prosperity,” and above it the name of the Republic of South Sudan.",
     sources: [
       { title: "Coat of arms of South Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Sudan" },
+    ],
+  },
+  "ss-football-crest": {
+    description: "Every element repeats South Sudan's own national flag, adopted in 2005: black for the people, red for the blood shed for independence, green for the land's agricultural wealth, white for peace, blue for the waters of the Nile, and the gold star for unity, hope and determination among the country's states.",
+    sources: [
+      { title: "Flag of South Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
     ],
   },
   "st-arms": {
@@ -4564,6 +4624,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Eswatini — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Eswatini" },
     ],
   },
+  "sz-football-crest": {
+    description: "The colours repeat Eswatini's own national flag: blue for peace and stability, red for past battles, and yellow for the country's resources. The small shields echo the flag's own black-and-white Nguni shield with spears — read as standing for the peaceful coexistence of black and white Swazi citizens, and for protection from the country's enemies.",
+    sources: [
+      { title: "Flag of Eswatini — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
+    ],
+  },
   "tc-arms": {
     description: "Granted by Royal Warrant on 28 September 1965. On a gold shield the queen conch shell and the spiny lobster stand for the islands' mainstay industry of fishing, and the Turk's-head cactus — the plant that gave the Turks Islands their name — for the native flora. Above, a white pelican between two sisal plants recalls the old rope-making trade, and two flamingos support the shield, all of them creatures of the islands.",
     sources: [
@@ -4574,6 +4640,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield's jagged blue and gold bars are the waters of Lake Chad; above rises a sun, for the new beginning of independence. A goat of the desert north and a lion of the savanna south support the shield — the two halves of the country — each standing over a red arrow. The ribbon reads Unité, Travail, Progrès — “Unity, Work, Progress.”",
     sources: [
       { title: "Coat of arms of Chad — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chad" },
+    ],
+  },
+  "td-football-crest": {
+    description: "The colours repeat Chad's own national flag, which deliberately blends the French tricolour with the Pan-African palette: blue for Lake Chad and the country's Black African heritage, yellow for the sands of the Sahara, and red for the blood shed in the struggle for independence from France.",
+    sources: [
+      { title: "Flag of Chad — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
     ],
   },
   "tg-arms": {
