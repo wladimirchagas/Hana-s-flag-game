@@ -5667,6 +5667,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Three Crowns — Wikipedia", url: "https://en.wikipedia.org/wiki/Three_Crowns" },
     ],
   },
+  "se-royal-1844": {
+    description: "Sweden's national war flag charged with the combined union arms of Sweden and Norway, surrounded by the union mark of equally-distributed Swedish and Norwegian colours in the canton — the whole design expressing the personal union of the two kingdoms (1814–1905) under one monarch while affirming each nation's separate and equal status, with two crowns over the shield marking the two distinct kingdoms rather than one merged state.",
+    sources: [
+      { title: "Union mark of Norway and Sweden — Wikipedia", url: "https://en.wikipedia.org/wiki/Union_mark_of_Norway_and_Sweden" },
+    ],
+  },
   "se-sami": {
     description: "Adopted in 1986 as the flag of the Sámi people across northern Norway, Sweden, Finland and Russia, its four colours — red, green, yellow and blue — are the Sámi national colours, drawn from traditional gákti dress. The off-centre circle is a sun-and-moon symbol taken from the drums of Sámi shamans: red for the sun, blue for the moon, reflecting the Sámi self-identity as “sons and daughters of the sun.”",
     sources: [
@@ -5685,6 +5691,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Swedish Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Swedish_Football_Association" },
     ],
   },
+  "sg-president": {
+    description: "A red field — read as standing for universal brotherhood and the equality of all people — bears a white crescent moon for a young nation on the rise and five stars for the ideals of democracy, peace, progress, justice and equality, the same devices as the national flag's canton; the standard is flown from the highest point of the Istana whenever the President is in residence.",
+    sources: [
+      { title: "Presidential Standard (Singapore) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sg_presi.html" },
+    ],
+  },
   "sg-arms": {
     description: "The shield repeats the flag: red for the universal brotherhood and equality of man, white for pervading and everlasting purity and virtue, the crescent for a young nation on the ascendant and the five stars for the country's five ideals — democracy, peace, progress, justice and equality. The two supporters each carry a different history. The lion is Singapore's own name, Singapura, the lion city. The tiger is the Malayan tiger, which really did abound on the island in the 19th century when it was still dense jungle, and stands for the country's close historical ties to the Federation of Malaya, of which Singapore was briefly part. The banner reads Majulah Singapura — Onward Singapore — which is also the title of the national anthem. The arms were adopted in 1959, the year Singapore attained self-government.",
     sources: [
@@ -5701,6 +5713,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Authorised on 30 January 1984. On the chief stands the wirebird — the Saint Helena plover, the island's national bird, found nowhere else — and below it a three-masted East Indiaman flying the cross of St George sails between the island's steep cliffs, for Saint Helena's place on the East India Company's ocean route and its rugged coast. The motto, 'Loyal and Unshakeable', speaks to the islanders' steadfast allegiance.",
     sources: [
       { title: "Coat of arms of Saint Helena — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena" },
+    ],
+  },
+  "si-armed-forces": {
+    description: "A white-blue-red field bears the Slovenian Army emblem: a stylised Mount Triglav, the country's highest peak and national coat of arms device, standing for national pride and identity, above two crossed swords; the emblem's three gold stars are drawn from the historic arms of the Counts of Celje, and its two wavy blue lines represent the Adriatic Sea and Slovenia's rivers.",
+    sources: [
+      { title: "The Slovenian Flag Explained — ling-app.com", url: "https://ling-app.com/blog/slovenian-flag/" },
     ],
   },
   "si-arms": {
@@ -6382,6 +6400,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The nine-pointed star represents the sun of Africa and South Africa's nine provinces; the four spearheads, each in a different service colour, stand for the SANDF's four arms of service — Army, Air Force, Navy and Military Health Service — and the green and gold reflect Africa's natural and mineral wealth.",
     sources: [
       { title: "South African Defence Force Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/South_African_Defence_Force_Ensign" },
+    ],
+  },
+  "za-sandf-1994": {
+    description: "A green field bears the new post-1994 South African flag in the upper hoist and, in the fly, an emblem inherited from the earlier SADF ensign of 1981: the ground plan of the Castle of Good Hope in white, a dark-blue anchor for the Navy, a horizontal pair of steel-blue wings for the Air Force, and a pair of crossed orange swords for the Army. Approved on 11 July 1994 for the newly merged South African National Defence Force — which brought together the old SADF with the ANC's Umkhonto we Sizwe, the PAC's APLA and other forces — it kept the unified-service emblem while replacing the apartheid-era flag with the new national one, and was itself replaced in 2003.",
+    sources: [
+      { title: "South African National Defence Force Flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-ndf.html" },
     ],
   },
   "za-arms": {
