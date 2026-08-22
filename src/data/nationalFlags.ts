@@ -2920,6 +2920,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Bermuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda" },
     ],
   },
+  "bn-royal-standard": {
+    description: "The Sultan's yellow standard bears the national emblem rendered entirely in red: a crescent inscribed with the motto \"Always in service with God's guidance\" (marking Islam as the state religion), flanked by wings symbolising the protection of justice, tranquility, prosperity and peace, two hands representing the government's duty to safeguard the people's welfare, and the royal parasol (payung ubor-ubor), a traditional emblem of the sultanate reserved for the monarch; the Sultan's crown was added above the emblem around 1999.",
+    sources: [
+      { title: "Emblem of Brunei — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Brunei" },
+    ],
+  },
   "bn-emblem": {
     description: "The emblem, adopted in 1959 and carried on the national flag, has five parts. The small swallow-tailed flag and the royal parasol at the top are the regalia of the sultanate's monarchy. The upraised wings behind them stand for the protection of justice, tranquillity, prosperity and peace. The crescent beneath is Islam, the state religion, and it is inscribed in Arabic with the national motto, \"Always in service with God's guidance\"; the banner below carries the country's name, \"Brunei, the Abode of Peace\". The two upturned hands at the sides are the government's pledge to preserve and promote the welfare of the people.",
     sources: [
@@ -3064,6 +3070,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A 1964 Canadian Parliament resolution confirmed the Union Flag would continue to be flown on specified days to symbolise Canada's membership of the Commonwealth and its historical ties to Britain, alongside the Maple Leaf as the country's national flag.",
     sources: [
       { title: "List of Canadian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Canadian_flags" },
+    ],
+  },
+  "ca-forces": {
+    description: "The badge shows a fouled anchor for the Royal Canadian Navy, a soaring eagle for the Royal Canadian Air Force, and two crossed swords for the Canadian Army, uniting the three services' emblems as the single badge of the Canadian Armed Forces.",
+    sources: [
+      { title: "Canadian Forces (badge) — Canadian Vexillology", url: "https://www.canadianvexillology.com/blog/canadianforces" },
+    ],
+  },
+  "ca-sovereign": {
+    description: "A banner of the sovereign's Canadian coat of arms, adopted in 2023: three gold lions and a red lion rampant recall the historic royal arms of England and Scotland, a gold harp represents Ireland, three gold fleurs-de-lis represent France, and a sprig of three red maple leaves at the base stands for all Canadians — the maple leaf having been used as a symbol of Canadian identity since the early 19th century.",
+    sources: [
+      { title: "Sovereign's Flag for Canada — Governor General of Canada", url: "https://www.gg.ca/en/heraldry/public-register/project/3535" },
     ],
   },
   "ca-gg": {
@@ -3246,6 +3264,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold building is Tiananmen — the gate on Beijing's central axis from which the People's Republic of China was proclaimed in 1949 — a national symbol significant enough that it also appears on China's own national emblem. The red rings and green field are the colours of the national flag; CFA is the association's own initials, the Chinese Football Association, written above in Chinese as 中国足球协会.",
     sources: [
       { title: "Tiananmen — Wikipedia", url: "https://en.wikipedia.org/wiki/Tiananmen" },
+    ],
+  },
+  "co-president": {
+    description: "The presidential standard bears the national coat of arms: an Andean condor for freedom holding an olive crown, a scroll with the motto \"Libertad y Orden\" (Liberty and Order), and a shield showing two ships for the country's maritime history and trade, a Phrygian cap on a spear for liberty, and a pomegranate between two cornucopias recalling the name New Granada and the nation's mineral and agricultural wealth.",
+    sources: [
+      { title: "Coat of arms of Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia" },
     ],
   },
   "co-arms": {
