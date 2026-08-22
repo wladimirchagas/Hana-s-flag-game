@@ -15534,7 +15534,16 @@
           "design": "The flag of the Lebanese Armed Forces.",
           "source": "https://en.wikipedia.org/wiki/Lebanese_Armed_Forces",
           "sha256": "1a8a90ef4c8362c3cb676d09f6d7175dc88a718aafa32e37ac34748a87d5da0f",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Patterned after the Lebanese national flag — white between two red bands — with the green cedar of Lebanon at its centre, standing for immortality, resilience and the country's identity as the 'Land of the Cedars'; the Armed Forces' flag adds two wheat spikes flanking the cedar and the words 'Honour' and 'Homeland', echoing the army's own motto of Honour, Sacrifice, Loyalty.",
+            "sources": [
+              {
+                "title": "The Army Flag — Lebanese Army",
+                "url": "https://www.lebarmy.gov.lb/en/content/army-flag"
+              }
+            ]
+          }
         },
         {
           "id": "lb-airforce",
@@ -15547,7 +15556,16 @@
           "design": "The flag of the Lebanese Air Force.",
           "source": "https://en.wikipedia.org/wiki/Lebanese_Air_Force",
           "sha256": "8d8e91157e0bf8defacc9e5606b3f9834ad31ae7842ee3cf6e67f670dfc842cd",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Air Force's emblem shows a laurel wreath for glory embracing two eagle wings with a vertical sword between them for force and right, set within a triangle in a circle — the international convention for air-force roundels, also used on Lebanese military aircraft — against a blue field for the sky, the Air Force's own domain.",
+            "sources": [
+              {
+                "title": "Emblems And Banners — Lebanese Army",
+                "url": "https://www.lebarmy.gov.lb/en/insignia_and_banners/Air%20Forces%20&%20Navy"
+              }
+            ]
+          }
         },
         {
           "id": "lb-jack",
@@ -27241,7 +27259,16 @@
           "design": "The presidential flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags",
           "sha256": "cbcdd18056dc08f7fdde4311dd1444bf1e14c77eb2493cc140db452a0be745e8",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The presidential flag bears Trinidad and Tobago's coat of arms, adopted at independence in 1962: three golden ships for Columbus's Santa María, Niña and Pinta, marking the islands' European discovery, and two hummingbirds above them for Trinidad's renowned biodiversity — the island was traditionally known as the 'Land of the Hummingbird' — with the shield supported by the Scarlet Ibis, Trinidad's national bird, and the Cocrico, Tobago's own.",
+            "sources": [
+              {
+                "title": "Coat of arms of Trinidad and Tobago — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago"
+              }
+            ]
+          }
         },
         {
           "id": "tt-civil-ensign",
@@ -29545,7 +29572,16 @@
           "design": "The ministry's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
           "sha256": "608ea0d64140e578b267c9bd515eebf3fc14bf1cf44ec5db78758e215befdecb",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A red field reads 'MINISTERIO DEL PODER POPULAR PARA LA DEFENSA' (Ministry of People's Power for Defence, its name since 2007) around an emblem based on Venezuela's national coat of arms: a wheat sheaf for the union and wealth of the republic's states, a bundle of weapons and flags bound with laurel for triumph in the war of independence, and a running white horse for liberty, recalling Simón Bolívar's own horse Palomo.",
+            "sources": [
+              {
+                "title": "Ministry of Defense (Venezuela) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Ministry_of_Defense_(Venezuela)"
+              }
+            ]
+          }
         },
         {
           "id": "ve-arms",

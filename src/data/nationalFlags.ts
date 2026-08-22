@@ -4645,6 +4645,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Pha That Luang — Wikipedia", url: "https://en.wikipedia.org/wiki/Pha_That_Luang" },
     ],
   },
+  "lb-army": {
+    description: "Patterned after the Lebanese national flag — white between two red bands — with the green cedar of Lebanon at its centre, standing for immortality, resilience and the country's identity as the 'Land of the Cedars'; the Armed Forces' flag adds two wheat spikes flanking the cedar and the words 'Honour' and 'Homeland', echoing the army's own motto of Honour, Sacrifice, Loyalty.",
+    sources: [
+      { title: "The Army Flag — Lebanese Army", url: "https://www.lebarmy.gov.lb/en/content/army-flag" },
+    ],
+  },
+  "lb-airforce": {
+    description: "The Air Force's emblem shows a laurel wreath for glory embracing two eagle wings with a vertical sword between them for force and right, set within a triangle in a circle — the international convention for air-force roundels, also used on Lebanese military aircraft — against a blue field for the sky, the Air Force's own domain.",
+    sources: [
+      { title: "Emblems And Banners — Lebanese Army", url: "https://www.lebarmy.gov.lb/en/insignia_and_banners/Air%20Forces%20&%20Navy" },
+    ],
+  },
   "lb-jack": {
     description: "The cedar tree has symbolised Lebanon for millennia — mentioned dozens of times in the Bible as an emblem of strength and endurance — and was carried on Christian Lebanese Legion flags in the First World War before becoming the centrepiece of the modern national flag in 1943.",
     sources: [
@@ -6189,6 +6201,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Turkey national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Turkey_national_football_team" },
     ],
   },
+  "tt-president": {
+    description: "The presidential flag bears Trinidad and Tobago's coat of arms, adopted at independence in 1962: three golden ships for Columbus's Santa María, Niña and Pinta, marking the islands' European discovery, and two hummingbirds above them for Trinidad's renowned biodiversity — the island was traditionally known as the 'Land of the Hummingbird' — with the shield supported by the Scarlet Ibis, Trinidad's national bird, and the Cocrico, Tobago's own.",
+    sources: [
+      { title: "Coat of arms of Trinidad and Tobago — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago" },
+    ],
+  },
   "tt-arms": {
     description: "The shield carries the red, white and black of the national flag and their same meaning — the fire of the sun and the warmth of the people, the sea and purity, and the strength and dedication of the earth. The two golden birds on it are hummingbirds, from Trinidad's Amerindian name Iere, \"land of the hummingbird\". The three ships were Columbus's three vessels; the supporters are the two national birds, the scarlet ibis of Trinidad and the cocrico of Tobago, standing on a base of three hills for the Trinity peaks that gave Trinidad its name. The palm-tree crest was taken from Tobago's own colonial arms. (In 2024 the government announced it would replace Columbus's ships with the steelpan, the national instrument.)",
     sources: [
@@ -6446,6 +6464,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The coat of arms charged on the state flag shows a wheat sheaf for the union and wealth of the republic's states, a white horse (recalling Simón Bolívar's horse Palomo) for independence and freedom, and swords, sabres and lances tied with laurel for triumph in the wars of independence.",
     sources: [
       { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
+    ],
+  },
+  "ve-mod": {
+    description: "A red field reads 'MINISTERIO DEL PODER POPULAR PARA LA DEFENSA' (Ministry of People's Power for Defence, its name since 2007) around an emblem based on Venezuela's national coat of arms: a wheat sheaf for the union and wealth of the republic's states, a bundle of weapons and flags bound with laurel for triumph in the war of independence, and a running white horse for liberty, recalling Simón Bolívar's own horse Palomo.",
+    sources: [
+      { title: "Ministry of Defense (Venezuela) — Wikipedia", url: "https://en.wikipedia.org/wiki/Ministry_of_Defense_(Venezuela)" },
     ],
   },
   "ve-president": {
