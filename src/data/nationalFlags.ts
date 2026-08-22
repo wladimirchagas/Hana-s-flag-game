@@ -3012,6 +3012,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Bhutan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
     ],
   },
+  "bw-president": {
+    description: "The coat of arms shows two zebras — their black-and-white stripes read as a symbol of racial equality — holding a sorghum stalk (a staple crop) and an elephant tusk (for wildlife); three cogwheels represent industrial progress, and three blue waves stand for water, echoing Botswana's national motto \"Pula\" (\"rain\").",
+    sources: [
+      { title: "Coat of arms of Botswana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana" },
+    ],
+  },
   "bw-arms": {
     description: "The shield is a Batswana ox-hide shield. Across its centre three cogwheels stand for industry; below them three wavy blue bands stand for water — the country's scarcest and most prized resource, the same idea the motto names. The bull's head at the foot is for the cattle on which Botswana's economy was built. Two zebras support the shield — their black-and-white a quiet emblem of racial harmony — one holding a head of sorghum for agriculture, the other an elephant's tusk for the country's wildlife and ivory. The single word on the ribbon, Pula, means “rain” (and “blessings,” and is the name of the currency): in a country three-quarters desert, rain is the highest blessing.",
     sources: [
@@ -5065,6 +5071,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
     ],
   },
+  "rw-president": {
+    description: "The gold sun with 24 rays is taken from Rwanda's national flag, adopted in 2001 to replace a design associated with the 1994 genocide; the sun stands for enlightenment, transparency and the unity of the Rwandan people, and its rays are read as marking each hour of the day in a sign of enduring national progress.",
+    sources: [
+      { title: "Flag of Rwanda — Britannica", url: "https://www.britannica.com/topic/flag-of-Rwanda" },
+    ],
+  },
   "rw-arms": {
     description: "Rwanda's emblem replaced the older crossed-tools arms in 2001, in the colours of the new flag. Inside a ring closed by a traditional square knot — the knot standing for unity — sit the country's own devices: a stem of sorghum and a branch of coffee, the two staple crops, above a woven Rwandan basket (agaseke), itself an emblem of generosity. They rest on a cogwheel for industrial development, with the sun rising above; a Rwandan war-shield stands on each side to guard them. The ribbon below carries the motto Ubumwe, Umurimo, Gukunda Igihugu — “Unity, Work, Patriotism.”",
     sources: [
@@ -5179,6 +5191,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Mount Triglav, Slovenia's highest peak, and the wavy lines below it — read as the Triglav Lakes Valley, the Slovene coastline and the country's rivers — are both drawn from Slovenia's own national coat of arms, along with the three gold six-pointed stars, taken from the historical arms of the Counts of Celje and read as a symbol of democracy. NZS is the federation's own initials, Nogometna zveza Slovenije (Football Association of Slovenia).",
     sources: [
       { title: "Coat of arms of Slovenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia" },
+    ],
+  },
+  "sk-president": {
+    description: "The double cross on three blue hills is Slovakia's coat of arms: the cross, brought by Saints Cyril and Methodius, marks Slovakia as heir to a Christian tradition, and the three hills are read as the Tatra, Fatra and Matra mountain ranges of historic Upper Hungary.",
+    sources: [
+      { title: "Coat of arms of Slovakia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia" },
     ],
   },
   "sk-arms": {

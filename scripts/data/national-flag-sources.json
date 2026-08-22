@@ -3909,7 +3909,16 @@
           "design": "A light-blue field bearing the national arms — the standard of the President of Botswana.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Botswana",
           "sha256": "3e1e538a86d35f5bce45cfae62b704ce89bab45e9fab1b9ef09fa2e406758cea",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The coat of arms shows two zebras — their black-and-white stripes read as a symbol of racial equality — holding a sorghum stalk (a staple crop) and an elephant tusk (for wildlife); three cogwheels represent industrial progress, and three blue waves stand for water, echoing Botswana's national motto \"Pula\" (\"rain\").",
+            "sources": [
+              {
+                "title": "Coat of arms of Botswana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana"
+              }
+            ]
+          }
         },
         {
           "id": "bw-arms",
@@ -22686,7 +22695,16 @@
           "design": "A white field bearing the national emblem — the standard of the President of Rwanda.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Rwanda",
           "sha256": "f2989de794d799378bcc2f60a93277f3cf5d9f0144f20cf95dd0ba77684d78b2",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The gold sun with 24 rays is taken from Rwanda's national flag, adopted in 2001 to replace a design associated with the 1994 genocide; the sun stands for enlightenment, transparency and the unity of the Rwandan people, and its rays are read as marking each hour of the day in a sign of enduring national progress.",
+            "sources": [
+              {
+                "title": "Flag of Rwanda — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Rwanda"
+              }
+            ]
+          }
         },
         {
           "id": "rw-arms",
@@ -23861,7 +23879,16 @@
           "design": "The presidential flag — the coat of arms on a white field within a red-and-blue border.",
           "source": "https://en.wikipedia.org/wiki/List_of_Slovak_flags",
           "sha256": "96ffc7f54a5146ddd11a0d4da631ed97f53a90b81d832d7d38c7f99b42cd59c8",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The double cross on three blue hills is Slovakia's coat of arms: the cross, brought by Saints Cyril and Methodius, marks Slovakia as heir to a Christian tradition, and the three hills are read as the Tatra, Fatra and Matra mountain ranges of historic Upper Hungary.",
+            "sources": [
+              {
+                "title": "Coat of arms of Slovakia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia"
+              }
+            ]
+          }
         },
         {
           "id": "sk-arms",
