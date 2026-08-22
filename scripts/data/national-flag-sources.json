@@ -1333,7 +1333,16 @@
           "design": "A tricolour of navy, army red and air-force blue bearing the Defence Force badge.",
           "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
           "sha256": "f02f79fd51f441c014081a71c142e5579638f16e32018e151cc0b39aad22f81d",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The three stripes stand for the three armed services — red for the Army, dark blue for the Royal Australian Navy and light blue for the Royal Australian Air Force — and the central badge combines a symbol for each: crossed swords for the Army, an anchor for the Navy, and a wedge-tailed eagle for the Air Force, above a boomerang and below the seven-pointed Commonwealth Star; adopted in 2000 for use in joint Defence Force activities.",
+            "sources": [
+              {
+                "title": "Australian Defence Force Ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Australian_Defence_Force_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "au-navy",
@@ -5282,7 +5291,16 @@
           "design": "A square blue flag with a white star.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chilean_flags",
           "sha256": "da1f19d0dda936596c1513f0ec3224ad3edb8afa4e2a155660c570a1c0dfc646",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A blue square bearing a white five-pointed star, matching the canton of the national flag — the \"Estrella Solitaria\" (Lone Star); the blue stands for the sky and the Pacific Ocean, and the star for a guide to progress and honour, drawing on the star's significance to the region's indigenous Mapuche people.",
+            "sources": [
+              {
+                "title": "Flag of Chile — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Chile"
+              }
+            ]
+          }
         },
         {
           "id": "cl-army",
@@ -7896,7 +7914,16 @@
           "design": "The royal standard of the Kingdom of Egypt.",
           "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
           "sha256": "c724ff052570757a1a106d63eb7055d2b09f7557d18ae5e3f0e119a622c1bf0b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "On a green field, a white crescent encloses three white stars, with two crossed anchors in the canton (marking the King as head of the navy) and the King's crowned monogram. The crescent was kept by King Fuad I to reflect Egypt's predominantly Muslim population; the three stars are variously read as standing for the kingdom's three constituent lands — Egypt, Nubia and Sudan — or for its Muslim, Christian and Jewish communities.",
+            "sources": [
+              {
+                "title": "Egyptian Flags: A Century of Symbolism — Egyptian Streets",
+                "url": "https://egyptianstreets.com/2022/02/07/egyptian-flags-a-century-of-symbolism/"
+              }
+            ]
+          }
         },
         {
           "id": "eg-arms",
