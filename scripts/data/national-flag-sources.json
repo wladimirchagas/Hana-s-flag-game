@@ -11704,7 +11704,16 @@
           "design": "A blue square bearing the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
           "sha256": "ae9086e602de20790cc57323ebbd875f4e7adc181d13c3744d10a842ee5421ee",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A blue square bears Croatia's coat of arms: the šahovnica, a red-and-white checkerboard of 25 fields dating to the Middle Ages and symbolising the country's long history of statehood, crowned by a five-part crest bearing the arms of Croatia's historic regions — Croatia proper, Dubrovnik, Dalmatia, Istria and Slavonia — expressing the unity of these territories within the modern republic.",
+            "sources": [
+              {
+                "title": "Croatian checkerboard — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Croatian_checkerboard"
+              }
+            ]
+          }
         },
         {
           "id": "hr-army",
@@ -12030,7 +12039,16 @@
           "design": "A square flag bearing the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags",
           "sha256": "96a2f2d4e67298f2e36fd538bf64b38a77773873dc7e3f05b72586b45da68887",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A square flag bears Hungary's coat of arms with angels as shield-holders — a form reserved for the President alone: a shield parted between the Árpád stripes (seven alternating red-and-white bands for the seven Magyar tribes that settled the Carpathian Basin in 896) and a green field with a silver double cross rising from a golden crown on three hills (for the Tátra, Fátra and Mátra mountain ranges), surmounted by the Holy Crown of Hungary — a symbol, in Hungarian constitutional tradition, that the Crown itself, not any one ruler, embodies the sovereignty of the state.",
+            "sources": [
+              {
+                "title": "The Hungarian Flag and Coat of Arms through the Ages — Hungary Today",
+                "url": "https://hungarytoday.hu/the-hungarian-flag-and-coat-of-arms-through-the-ages/"
+              }
+            ]
+          }
         },
         {
           "id": "hu-naval-ensign",
@@ -12146,7 +12164,16 @@
           "design": "A yellow field bearing the national emblem and the presidential arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Indonesian_flags",
           "sha256": "00dd9c19f09d896c9505035761ef3a5080ffd129f91b768a74c19a7d00c32b11",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A yellow field bears Garuda Pancasila, Indonesia's national emblem: a golden mythical eagle-god drawn from pre-colonial Hindu-Javanese tradition, standing for power, strength and knowledge, its wing, tail and neck feathers numbering 17, 8 and 45 for the date of independence (17 August 1945); a shield on its breast carries the five Pancasila principles that underpin the state, and its claws grip a scroll reading 'Bhinneka Tunggal Ika' ('Unity in Diversity').",
+            "sources": [
+              {
+                "title": "National emblem of Indonesia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia"
+              }
+            ]
+          }
         },
         {
           "id": "id-emblem",
@@ -12323,7 +12350,16 @@
           "design": "A blue field bearing the gold harp.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
           "sha256": "a071a96804da736d7eee21693fc7e559fee0923568fd6d7b2eaf8386fee9b9f9",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A blue field bears a gold harp with silver strings — Ireland's unique choice of a musical instrument as its national emblem, first recorded as the country's arms in medieval heraldry and adopted into the royal Standard of the Kingdom of Ireland when Henry VIII proclaimed himself its king in 1542; the design is modelled on the 14th-century Brian Boru harp held at Trinity College Dublin, and the harp had long since become, especially from the 17th century onward, a symbol of Irish identity and nationalism in its own right.",
+            "sources": [
+              {
+                "title": "Ireland's Emblem — Ask About Ireland",
+                "url": "https://www.askaboutireland.ie/reading-room/life-society/life-society-in-ireland/overview-life-and-society/irelands-emblem/"
+              }
+            ]
+          }
         },
         {
           "id": "ie-defence-forces",
@@ -13360,7 +13396,16 @@
           "design": "The swallow-tailed state flag with a square panel bearing the coat of arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags",
           "sha256": "7d99cef41ff8a966f39ae2b2161b670a5e966e6643b8f36351283ae6b7bcd111",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The swallow-tailed state flag bears a square panel with Iceland's coat of arms: a shield showing the flag's own cross, held up by the four landvættir (guardian spirits) of Icelandic saga tradition — a dragon for the east, an eagle for the north, a bull for the west and a rock-giant for the south — standing on a plinth of columnar basalt, the volcanic rock characteristic of Iceland's landscape.",
+            "sources": [
+              {
+                "title": "Coat of arms of Iceland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland"
+              }
+            ]
+          }
         },
         {
           "id": "is-arms",
@@ -13506,7 +13551,16 @@
           "design": "A square blue flag bearing the emblem of the Republic within a gold border.",
           "source": "https://en.wikipedia.org/wiki/List_of_Italian_flags",
           "sha256": "53cec8ae95770363767dfefd9c725ee82e7d4a3b4131e891f578f0ead238a52e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A square blue field, bordered gold, bears the Emblem of the Italian Republic: a steel cogwheel for labour — recalling the constitution's opening line that Italy is a republic 'founded on work' — at the centre of a five-pointed white Star of Italy (the Stella d'Italia, an ancient national symbol dating to Graeco-Roman tradition, read as the country's shining destiny), ringed by an olive branch for peace and an oak branch for the strength and dignity of the Italian people; the square shape, adopted from the flag of the Napoleonic-era Italian Republic, and its blue border stand for the four branches of the armed forces the President commands.",
+            "sources": [
+              {
+                "title": "Presidential standard of Italy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Presidential_standard_of_Italy"
+              }
+            ]
+          }
         },
         {
           "id": "it-pm",
