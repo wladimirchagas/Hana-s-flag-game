@@ -28637,7 +28637,20 @@
           "design": "A raspberry field with the Ground Forces' emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
           "sha256": "cd315671e7a0d84984fe29402ea6d0bfaaf8cd47004b2410dd25f02994dbe164",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Ground Forces' flag is a raspberry field bearing the branch's emblem — a golden trident (the tryzub, Ukraine's national symbol) above crossed rifles within a laurel wreath. The raspberry field recalls the banners of the Cossack hosts of the 16th to 18th centuries, whose colours ranged through crimson and raspberry shades, deliberately tying the modern mechanised army to that historic Cossack military tradition.",
+            "sources": [
+              {
+                "title": "Wikipedia — List of Ukrainian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags"
+              },
+              {
+                "title": "Wikipedia — Ukrainian Ground Forces",
+                "url": "https://en.wikipedia.org/wiki/Ukrainian_Ground_Forces"
+              }
+            ]
+          }
         },
         {
           "id": "ua-air-force",
@@ -28687,7 +28700,20 @@
           "design": "A white field with a blue cross and the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
           "sha256": "98bcf70b1d29290b45ad85c0751a8603eca8a1a9abdc6bf8461766f69355168a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The naval ensign of Ukraine, adopted in 2006, is a white field bearing a straight blue cross reaching the edges, with the national flag in the canton. Its design readopts, with small changes, the ensign flown by Ukraine's short-lived navy in 1918, whose own cross-and-canton layout was likely inspired by the German Imperial Navy's ensign of that era.",
+            "sources": [
+              {
+                "title": "Flags of the World — Ukraine: Naval Flags",
+                "url": "https://www.crwflags.com/fotw/flags/ua~.html"
+              },
+              {
+                "title": "Wikipedia — List of Ukrainian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "ua-sea-guard",
@@ -31535,7 +31561,20 @@
           "design": "The army's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags",
           "sha256": "e2f1d57b6ddc0b1cc914643aae3b9c521540ab7ce6f9e4f1312e19db8ba4bc43",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Zimbabwe National Army's flag, flown since independence in 1980, is red bearing a yellow-fimbriated green shield charged with the Zimbabwe Bird, above a scroll naming the force. The bird reproduces the soapstone sculptures that once stood atop the walls of Great Zimbabwe, the medieval Shona capital built between the 12th and 15th centuries; read as a stylised bateleur eagle, a bird of protective and prophetic significance in Shona tradition, it represents an ancestral, pre-colonial source of Zimbabwean identity and appears in the same colour on the national flag itself.",
+            "sources": [
+              {
+                "title": "Flags of the World — Zimbabwe National Army",
+                "url": "https://www.crwflags.com/fotw/flags/zw%5Earmy.html"
+              },
+              {
+                "title": "Wikipedia — Zimbabwe Bird",
+                "url": "https://en.wikipedia.org/wiki/Zimbabwe_Bird"
+              }
+            ]
+          }
         },
         {
           "id": "zw-air-force",
