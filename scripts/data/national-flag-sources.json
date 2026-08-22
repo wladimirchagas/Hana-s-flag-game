@@ -15225,7 +15225,16 @@
           "design": "A sky blue square bearing the state emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Kazakh_flags",
           "sha256": "417adbe7cff41151128b07f84ad2176994fd627ae4dd9b4795397d42b330282a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A sky-blue field bears the state emblem: a golden shanyrak — the round, arched crown of a traditional Kazakh yurt — radiating uyks (roof supports) outward like sunbeams, standing for a shared home and family well-being, peace and calm; it is flanked by mythical winged horses (tulpars), whose galloping form stands for bravery and whose golden wings — likened to sheaves of grain — express both a long-held dream of a strong, prosperous nation and the labour underpinning it, all beneath a five-pointed star.",
+            "sources": [
+              {
+                "title": "National Emblem of Kazakhstan — Official website of the President of Kazakhstan",
+                "url": "https://www.akorda.kz/en/state_symbols/kazakhstan_emblem"
+              }
+            ]
+          }
         },
         {
           "id": "kz-armed-forces",
@@ -21646,7 +21655,16 @@
           "design": "The state emblem on a green field.",
           "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
           "sha256": "4fce54dc8ed9366eec82cacdd6edb1a577422564a14d6a14e3e611d849ad0e9d",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A green field bears Pakistan's state emblem: a crescent and star for Islam atop a shield quartered with cotton, wheat, tea and jute — the country's major crops at independence and the base of its economy — surrounded by a wreath of jasmine (the national flower, recalling traditional Mughal floral art) and, on a scroll below, the national motto in Urdu: Faith, Unity, Discipline.",
+            "sources": [
+              {
+                "title": "State emblem of Pakistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/State_emblem_of_Pakistan"
+              }
+            ]
+          }
         },
         {
           "id": "pk-president-1974",
@@ -21659,7 +21677,16 @@
           "design": "The crescent and star within wheat branches on green.",
           "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
           "sha256": "2c00b6d9d71b61ce7d60ebb565304b9ef8da35a3d67d560a075680ee54f9054d",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "An earlier form of the presidential standard, showing only the crescent and star for Islam set within branches of wheat for agriculture — the core religious and economic symbols later folded into the fuller state emblem (also including cotton, tea and jute, a jasmine wreath, and the national motto) adopted for the modern standard in 1998.",
+            "sources": [
+              {
+                "title": "List of Pakistani flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags"
+              }
+            ]
+          }
         },
         {
           "id": "pk-pm",
@@ -24988,7 +25015,16 @@
           "design": "The presidential flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Surinamese_flags",
           "sha256": "bf44a98c74c43676a4d51bd5fa2288513afb329a6c342b172cb40dfa3176d322",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The national flag is charged with a white panel bearing the state arms, adopted in 1975 (the same year as this flag): a shield showing a Dutch sailing ship for commerce and Suriname's colonial past, a palm tree for its rainforest and agriculture, and a diamond for mining, above a five-pointed star for the five continents from which Suriname's people came; two Arawak figures, the region's original inhabitants, support the shield, beneath the motto \"Justitia, Pietas, Fides\" (Justice, Piety, Loyalty).",
+            "sources": [
+              {
+                "title": "Coat of arms of Suriname — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname"
+              }
+            ]
+          }
         },
         {
           "id": "sr-arms",
@@ -28610,7 +28646,16 @@
           "design": "The presidential standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
           "sha256": "e46d5740602020442d861441b65d71f1cde7ed391a5662ad49a7e3da7e832eae",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The standard carries the state emblem adopted in 1992, the same year as this flag: a rising sun over a fertile valley crossed by the Syrdarya and Amudarya rivers, an eight-pointed star at the top enclosing the Islamic crescent and star, wheat on one side for prosperity and cotton on the other for the nation's wealth and the purity of its people's intentions, and at the centre the mythical bird Semurg with wings outstretched, symbolising national renewal.",
+            "sources": [
+              {
+                "title": "Emblem of Uzbekistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan"
+              }
+            ]
+          }
         },
         {
           "id": "uz-army",

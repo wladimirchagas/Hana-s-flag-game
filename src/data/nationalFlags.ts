@@ -4591,6 +4591,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Cayman Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands" },
     ],
   },
+  "kz-president": {
+    description: "A sky-blue field bears the state emblem: a golden shanyrak — the round, arched crown of a traditional Kazakh yurt — radiating uyks (roof supports) outward like sunbeams, standing for a shared home and family well-being, peace and calm; it is flanked by mythical winged horses (tulpars), whose galloping form stands for bravery and whose golden wings — likened to sheaves of grain — express both a long-held dream of a strong, prosperous nation and the labour underpinning it, all beneath a five-pointed star.",
+    sources: [
+      { title: "National Emblem of Kazakhstan — Official website of the President of Kazakhstan", url: "https://www.akorda.kz/en/state_symbols/kazakhstan_emblem" },
+    ],
+  },
   "kz-emblem": {
     description: "At the centre is the shanyrak, the dome-piece at the top of a yurt through which the smoke leaves and the light enters — in Kazakh usage the emblem of the family home, and here of the common home of all the country's peoples. Its uyks, the supports radiating from it, are drawn as sun rays. Flanking it are two tulpars, the winged horses of Turkic myth. The two colours carry their own meaning: the gold is the bright, clear future of the Kazakh people, and the sky blue is the aspiration to peace, accord, friendship and unity with all peoples. The emblem was adopted on 4 June 1992, chosen from 245 submitted designs; its authors were Jandarbek Melibekov and Shot-Aman Ualikhan.",
     sources: [
@@ -5293,6 +5299,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Philippines" },
     ],
   },
+  "pk-president": {
+    description: "A green field bears Pakistan's state emblem: a crescent and star for Islam atop a shield quartered with cotton, wheat, tea and jute — the country's major crops at independence and the base of its economy — surrounded by a wreath of jasmine (the national flower, recalling traditional Mughal floral art) and, on a scroll below, the national motto in Urdu: Faith, Unity, Discipline.",
+    sources: [
+      { title: "State emblem of Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/State_emblem_of_Pakistan" },
+    ],
+  },
+  "pk-president-1974": {
+    description: "An earlier form of the presidential standard, showing only the crescent and star for Islam set within branches of wheat for agriculture — the core religious and economic symbols later folded into the fuller state emblem (also including cotton, tea and jute, a jasmine wreath, and the national motto) adopted for the modern standard in 1998.",
+    sources: [
+      { title: "List of Pakistani flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    ],
+  },
   "pk-emblem": {
     description: "Adopted in 1954, the emblem sets out the ideological foundation of the state, the basis of its economy, its cultural heritage and its guiding principles. The crescent-and-star crest and the green of the emblem are the traditional symbols of Islam, on which the country was founded. The quartered shield below shows cotton, wheat, tea and jute — the four major crops of Pakistan at independence, and so its economic base. The wreath around the shield is of the floral design used in Mughal art, standing for the cultural heritage the country inherits, and the scroll beneath carries Muhammad Ali Jinnah's motto: Unity, Faith, Discipline.",
     sources: [
@@ -5684,6 +5702,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The light blue and the white star repeat Somalia's own national flag: blue for the sky and the surrounding seas (chosen partly in tribute to the United Nations), and the star's five points for the five territories the Somali people inhabit — Somalia itself, Djibouti, Somaliland, Ethiopia's Somali Region and Kenya's North Eastern Province.",
     sources: [
       { title: "Flag of Somalia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
+    ],
+  },
+  "sr-president": {
+    description: "The national flag is charged with a white panel bearing the state arms, adopted in 1975 (the same year as this flag): a shield showing a Dutch sailing ship for commerce and Suriname's colonial past, a palm tree for its rainforest and agriculture, and a diamond for mining, above a five-pointed star for the five continents from which Suriname's people came; two Arawak figures, the region's original inhabitants, support the shield, beneath the motto \"Justitia, Pietas, Fides\" (Justice, Piety, Loyalty).",
+    sources: [
+      { title: "Coat of arms of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
     ],
   },
   "sr-arms": {
@@ -6080,6 +6104,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "AUF is the association's own initials, Asociación Uruguaya de Fútbol. The four stars mark four FIFA-recognised world championships — the 1924 and 1928 Olympic football tournaments (the only Olympic titles ever retroactively treated as equivalent to a World Cup) and the 1930 and 1950 FIFA World Cups. Uruguay only added the stars in 1992, after the football historian Atilio Garrido produced Uruguay's own 1925 and 1929 submissions to FIFA claiming world-champion status for the Olympic wins; a FIFA staffer asked in 2021 that two of the four be removed, but FIFA withdrew the request once Uruguay presented that same historical evidence again, and all four stars remain.",
     sources: [
       { title: "Four stars above Uruguay's football crest — Wikipedia", url: "https://en.wikipedia.org/wiki/Four_stars_above_Uruguay%27s_football_crest" },
+    ],
+  },
+  "uz-president": {
+    description: "The standard carries the state emblem adopted in 1992, the same year as this flag: a rising sun over a fertile valley crossed by the Syrdarya and Amudarya rivers, an eight-pointed star at the top enclosing the Islamic crescent and star, wheat on one side for prosperity and cotton on the other for the nation's wealth and the purity of its people's intentions, and at the centre the mythical bird Semurg with wings outstretched, symbolising national renewal.",
+    sources: [
+      { title: "Emblem of Uzbekistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan" },
     ],
   },
   "uz-emblem": {
