@@ -286,7 +286,7 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/4/4e/Afghanistan_Football_Federation_logo.png",
           "file": "af/af-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Afghanistan national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Afghanistan_Football_Federation_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Afghanistan national football team.",
+          "design": "The crest of the Afghanistan Football Federation — a green shield lettered “Afghanistan Football Federation” and “1922”, with a football over a black-red-green diagonal band.",
           "source": "https://en.wikipedia.org/wiki/Afghanistan_national_football_team",
           "sha256": "d5df2da0ebe6bcd2c25c3fc2ea3b4477c3fc1a116ef62a7edb6f8d5465c07756",
           "fetched": "2026-08-18"
@@ -2563,10 +2563,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/Bahrain_FA_logo.svg",
           "file": "bh/bh-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Bahrain national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Bahrain_FA_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Bahrain national football team.",
+          "design": "The crest of the Bahrain Football Association — a red-and-gold shield lettered “FA” and “Bahrain” in stylised Arabic-style lettering, with a red serrated emblem inside a football/globe shape.",
           "source": "https://en.wikipedia.org/wiki/Bahrain_national_football_team",
           "sha256": "f12e48f5880a6d20a2d46850d24998a7f61d3b06f81eb9c952a3648f0f374007",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The five-pointed serrated emblem repeats the five white triangles on Bahrain's own national flag, added to the flag's serrated edge in 2002 (an earlier version had 28, then 8, points) to stand for the Five Pillars of Islam.",
+            "sources": [
+              {
+                "title": "Flag of Bahrain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Bahrain"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -7059,10 +7068,19 @@
           "name": "Crest of the Ecuador national football team",
           "commons": "Logo de la Federación Ecuatoriana de Fútbol (2).svg",
           "file": "ec/ec-football-crest.svg",
-          "design": "The crest of the Ecuador national football team.",
+          "design": "The crest of the Federación Ecuatoriana de Fútbol — a navy shield with a gold “FEF” monogram, under a small yellow-blue-red stripe from the national flag.",
           "source": "https://en.wikipedia.org/wiki/Ecuador_national_football_team",
           "sha256": "cf569e7ebc917df58b89eaa857c7fe1f49f7ca35b9ae60dc697c20e52d6f40d2",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The stripe repeats the colours of Ecuador's own national flag, inherited from the flag of Gran Colombia: yellow for the country's crops and fertile soil, blue for its oceans and clear skies, and red for the blood of those who died fighting for its independence. FEF is the federation's own initials.",
+            "sources": [
+              {
+                "title": "Flag of Ecuador — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Ecuador"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -8482,10 +8500,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/d/de/Gabonese_Football_Federation_logo.svg",
           "file": "ga/ga-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Gabon national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Gabonese_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Gabon national football team.",
+          "design": "The crest of the Fédération Gabonaise de Football — a shield in the green, yellow and blue of the national flag, bearing a black panther's head over “1962” and “FEGAFOOT”.",
           "source": "https://en.wikipedia.org/wiki/Gabonese_Football_Federation",
           "sha256": "bd331054e866c1bd92cdf8b4d5cb994f4ffed7d7fbd161ac19de2e9683d4569b",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The panther gives the national team its own nickname, Les Panthères (The Panthers), adopted in 2000 after the side had earlier been known as the Azingo; 1962 is the year the Gabonese Football Federation traces its founding to.",
+            "sources": [
+              {
+                "title": "Gabon national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Gabon_national_football_team"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -13831,10 +13858,19 @@
           "name": "Crest of the Kuwait national football team",
           "commons": "Kuwait Football Association logo.png",
           "file": "kw/kw-football-crest.png",
-          "design": "The crest of the Kuwait national football team.",
+          "design": "The crest of the Kuwait Football Association — a shield in the green, white, red and black of the national flag, with Arabic lettering for “Kuwait Football Association”, “KUWAIT F.A” and a football.",
           "source": "https://en.wikipedia.org/wiki/Kuwait_national_football_team",
           "sha256": "e817472687789e68071119a80de1133c672b164548b8f3e36f9d8ee90477eb39",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The four colours repeat Kuwait's own national flag and are the Pan-Arab colours, drawn from a poem by the 13th-century Arab poet Safi al-Din al-Hilli: white for pure deeds, black for the enemies defeated in battle, green for the fertility of Arab lands, and red for the swords and blood of Arab warriors.",
+            "sources": [
+              {
+                "title": "Flag of Kuwait — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Kuwait"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -17122,10 +17158,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/4/4c/Malawi_FA_%28logo%29.png",
           "file": "mw/mw-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Malawi national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Malawi_FA_(logo).png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Malawi national football team.",
+          "design": "The crest of the Football Association of Malawi — a green shield with a red rising sun, lettered “Football Association of Malawi”, over a football wreathed in flames.",
           "source": "https://en.wikipedia.org/wiki/Football_Association_of_Malawi",
           "sha256": "fc373eb4e0d3b28b2dd9573398eded62f15fffe1c48911a9bfc226d8cef5f29c",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The red rising sun repeats the sun on Malawi's own national flag, adopted in 1964 to stand for the dawn of hope and freedom for Africa as more of the continent gained independence from colonial rule. The flames give the national team its own nickname, the Flames.",
+            "sources": [
+              {
+                "title": "Flag of Malawi — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Malawi"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -17799,10 +17844,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/3/31/Mozambique_FA.svg",
           "file": "mz/mz-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Mozambique national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Mozambique_FA.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Mozambique national football team.",
+          "design": "The crest of the Federação Moçambicana de Futebol — a gold-and-black circular badge lettered “Federação Moçambicana de Futebol”, with a football under a crossed rifle and hoe beneath a star.",
           "source": "https://en.wikipedia.org/wiki/Mozambique_Football_Federation",
           "sha256": "87423e02639a7b99ee092ef26d854dc7242fb42cfe2fc5656c17a51442182dd8",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The star, rifle and hoe are drawn from Mozambique's own national emblem (and, on the country's flag, sit atop an open book): the rifle for defence and vigilance and in memory of the independence struggle, the hoe for the peasantry and agriculture, and the star for international solidarity. The emblem was adopted at independence from Portugal in 1975.",
+            "sources": [
+              {
+                "title": "Coat of arms of Mozambique — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mozambique"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -19170,10 +19224,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/b/bd/Oman_Football_Association_logo.svg",
           "file": "om/om-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Oman national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Oman_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Oman national football team.",
+          "design": "The crest of the Oman Football Association — a gold shield with Arabic lettering for “Oman Football Association”, a swirling football/globe shape in the white, red and green of the national flag, and “ofa.om”.",
           "source": "https://en.wikipedia.org/wiki/Oman_Football_Association",
           "sha256": "0cf3140f2cdaf6ff1a072674d74b6f2f62b74ffbc18ef2fec3d49d1bb6b09f95",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The white, red and green repeat Oman's own national flag: white for peace and for the country's Imams, green for the fertility of the Jabal al-Akhdar (\"Green Mountains\"), and red — a colour shared with other Gulf state flags — for the battles Omanis fought to expel foreign invaders.",
+            "sources": [
+              {
+                "title": "Flag of Oman — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Oman"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -20420,10 +20483,19 @@
           "name": "Crest of the Palestine national football team",
           "commons": "2024 Palestine Football National Team Badge.svg",
           "file": "ps/ps-football-crest.svg",
-          "design": "The crest of the Palestine national football team.",
+          "design": "The crest of the Palestine national football team — a shield lettered “Palestine”, filled with the black-white-green bands and red hoist triangle of the Palestinian flag.",
           "source": "https://en.wikipedia.org/wiki/Palestine_national_football_team",
           "sha256": "d28fcc1cc9bafb6b18b99359c9fc7fe87135e8dbf34fd0f25df25a44b134de61",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The flag is the Pan-Arab colours first combined in this pattern for the 1916 Arab Revolt flag, and adopted by the Palestine Liberation Organization in 1964: red for the Hashemid dynasty and the blood of warriors, white for the Umayyads and purity, green for the Fatimids and fertile land, and black for the Abbasids and victory in battle.",
+            "sources": [
+              {
+                "title": "Flag of Palestine — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Palestine"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -23521,10 +23593,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/8/8a/Syrian_Football_Association_logo.svg",
           "file": "sy/sy-football-crest.svg",
           "licenceNote": "Non-free logo. The crest of the Syria national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Syrian_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Syria national football team.",
+          "design": "The crest of the Syrian Football Association — a shield with an eagle over a football, a green band with three red stars, and “SFA” lettering.",
           "source": "https://en.wikipedia.org/wiki/Syrian_Football_Association",
           "sha256": "ff0b06610bc662fb18d5d6368a0bc699f60ca77e145fa9754ea1c71f6cf8f5f4",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The Syrian Football Association changed its badge to green, white and black with three red stars after the fall of the Assad government in December 2024, matching the flag Syria's new authorities readopted — the country's own 1932–1958 and 1961–1963 independence-era flag. The eagle is a form of the Hawk of Quraysh, long used in Syrian state heraldry; the current national emblem's eagle carries 14 wing feathers for Syria's governorates and 5 tail feathers for its geographical regions.",
+            "sources": [
+              {
+                "title": "Syrian Soccer Association and Clubs Alter Emblems to New Flag Colors — The Flag Chronicle",
+                "url": "https://flagchronicle.com/2024/12/08/syrian-soccer-association-and-clubs-alter-emblems-to-new-flag-colors/"
+              },
+              {
+                "title": "Emblem of Syria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Syria"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -27500,10 +27585,23 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/c/c5/Yemen_Football_Association.png",
           "file": "ye/ye-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Yemen national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Yemen_Football_Association.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Yemen national football team.",
+          "design": "The crest of the Yemen Football Association — a circular badge lettered “YFA” and, in Arabic, “Yemen Football Association”, with a red-white-black swoosh, a coffee branch, a running player and a football.",
           "source": "https://en.wikipedia.org/wiki/Yemen_national_football_team",
           "sha256": "01bf7611c8693f828871469ce59899b300485feed1f843f59090487ede5a87b0",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The coffee branch reflects coffee's central place in Yemen's own national identity and emblem, whose shield likewise carries a coffee plant: the port of Mocha gave the world's coffee trade its name, and Yemen dominated the global coffee export market for close to two centuries. The red, white and black repeat Yemen's own national flag.",
+            "sources": [
+              {
+                "title": "Mocha — Encyclopaedia Britannica",
+                "url": "https://www.britannica.com/place/Mocha-Yemen"
+              },
+              {
+                "title": "Emblem of Yemen — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Yemen"
+              }
+            ]
+          }
         }
       ]
     },
@@ -27761,10 +27859,19 @@
           "url": "https://upload.wikimedia.org/wikipedia/en/7/70/ZambiaFA.png",
           "file": "zm/zm-football-crest.png",
           "licenceNote": "Non-free logo. The crest of the Zambia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:ZambiaFA.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Zambia national football team.",
+          "design": "The crest of the Football Association of Zambia — an orange African fish eagle above a football, ringed by “Football Association of Zambia” and a banner lettered “Zambia”.",
           "source": "https://en.wikipedia.org/wiki/Football_Association_of_Zambia",
           "sha256": "cedca084015ee74eda08ff4a059f950e464dbea274459a3170f64b2c3ed4151f",
-          "fetched": "2026-08-18"
+          "fetched": "2026-08-18",
+          "meaning": {
+            "description": "The African fish eagle is Zambia's own national bird and crowns its national coat of arms — adapted from the 1927 arms of the British protectorate of Northern Rhodesia at independence in 1964 — where it is read as a symbol of the country's freedom, strength and aspiration to rise above adversity.",
+            "sources": [
+              {
+                "title": "Coat of arms of Zambia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia"
+              }
+            ]
+          }
         }
       ],
       "independence": {
