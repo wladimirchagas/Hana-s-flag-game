@@ -6384,7 +6384,16 @@
           "design": "The presidential flag adopted after the revolution.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags",
           "sha256": "506b04f3d2d7bcba9e32aa5d9f1485309f94caa388b7b38ee4516febfa89579c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential flag bears Cuba's coat of arms: a pointed shield showing the Sierra Maestra mountains beneath a rising sun, a golden key across the Straits of Florida marking Cuba's position as gateway to the Gulf of Mexico, and a royal palm, framed by oak and laurel branches bound in the national colours and topped by a red Phrygian cap on a fasces — the cap and bundled rods together a classical emblem of liberty — adopted in this form after the 1959 revolution.",
+            "sources": [
+              {
+                "title": "Coat of arms of Cuba — Grokipedia",
+                "url": "https://grokipedia.com/page/Coat_of_arms_of_Cuba"
+              }
+            ]
+          }
         },
         {
           "id": "cu-president-1929",
@@ -6397,7 +6406,16 @@
           "design": "The presidential standard of the pre-revolutionary republic.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags",
           "sha256": "5fee909cabe89c6ccdd7630774cd8f76b00d8a132939c56a24fa94451aad930c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A square light-blue flag bore the same national coat of arms — the Sierra Maestra under a rising sun, the golden key across the Straits of Florida, and the royal palm — with a white star in each corner, one specification succeeding an earlier 1909 design and itself formalised in 1929 to denote the President's rank; it remained in use until the 1959 revolution replaced it with the current standard.",
+            "sources": [
+              {
+                "title": "The Presidential Flags of Cuba",
+                "url": "https://www.pdcnet.org/85257D7A006284F7/file/B99A5B4149F0C49585257DA9005DBFBC/$FILE/raven_2010_0017_0000_0086_0095.pdf"
+              }
+            ]
+          }
         },
         {
           "id": "cu-naval-jack",
@@ -14156,7 +14174,16 @@
           "design": "The defence forces' flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
           "sha256": "d36cc6c1cfd34328f2bef139771633abe8779b1e882007a5f3ea22dc984ce028",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A tricolour of red, light blue and navy blue — one colour for each service, Army, Air Force and Navy — bears the national flag in the canton and, in the fly, the joint emblem: two black rifles crossed in saltire over a silver anchor, with a golden eagle above, uniting a symbol of each branch (rifles for the Army, anchor for the Navy, eagle for air power) under one Kenya Defence Forces badge.",
+            "sources": [
+              {
+                "title": "Kenya Defence Forces (Joint Service flag) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ke%5E.html"
+              }
+            ]
+          }
         },
         {
           "id": "ke-air-force",
