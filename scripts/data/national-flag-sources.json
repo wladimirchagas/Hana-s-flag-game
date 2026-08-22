@@ -1355,7 +1355,16 @@
           "design": "The national flag on a white field, with the Commonwealth Star and Southern Cross in blue.",
           "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
           "sha256": "e67ad0464e04a6b2a2e28ecf319eab400816b6bc3104536ba4b0e9b39b0aa037",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A defaced British White Ensign in which the red St George's Cross is replaced by the Commonwealth Star and the Southern Cross — the Commonwealth Star for Australia's federated states and territories, and the Southern Cross for its use in navigation by early explorers and its significance to First Nations peoples, some of whom saw it as the footprint of a giant wedge-tailed eagle. It was adopted in 1967 so the Royal Australian Navy would no longer fight under the ensign of another nation, as it had during the Vietnam War.",
+            "sources": [
+              {
+                "title": "Australian white ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Australian_white_ensign"
+              }
+            ]
+          }
         },
         {
           "id": "au-raaf",
@@ -1368,7 +1377,16 @@
           "design": "An Air-Force-blue field with the Union Jack, the RAAF roundel and the Southern Cross.",
           "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
           "sha256": "2c55dcce19182023e4fa3dbb20ef315b7c0b939f834d7ca98d99b31f19742969",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Based on the national flag with the field changed to Air Force blue, the Southern Cross tilted to make room for the RAAF roundel — a red kangaroo 'in motion' within a dark blue ring, adopted in 1956 in place of the British roundel's plain red disc, chosen by the Air Board over alternatives like the Southern Cross and a sprig of wattle to give the RAAF a distinctively Australian national emblem.",
+            "sources": [
+              {
+                "title": "Royal Australian Air Force Ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Royal_Australian_Air_Force_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "au-red-ensign",
@@ -8929,7 +8947,16 @@
           "design": "The Tricolore in the navy's own proportions, with the three bands of unequal width so they appear equal when flying.",
           "source": "https://en.wikipedia.org/wiki/List_of_French_flags",
           "sha256": "90e7bfcd21a982fec24883d1f3965098a62d328735126ca7c98390f16342118c",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "At sea the Tricolore's three stripes are woven in the unequal proportions 30:33:37 (blue:white:red) rather than the equal thirds used ashore — these were the flag's original 18th-century proportions, matching the historic flag of Paris, before Napoleon I equalised them; the Navy reverted to the unequal 'optical proportions' by regulation in 1853 because a flag flapping in the wind makes the sections farther from the halyard appear smaller, so the wider red band restores the illusion of three equal columns and improves visibility at sea.",
+            "sources": [
+              {
+                "title": "French ensigns — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/French_ensigns"
+              }
+            ]
+          }
         },
         {
           "id": "fr-arms",
