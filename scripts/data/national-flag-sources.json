@@ -15609,7 +15609,16 @@
           "design": "The tricolour with the Lion and Sun, in the proportions fixed in 1933.",
           "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
           "sha256": "4ccf4f9daea3f0d952b877b9e52266bbbc4f744f7974b64d030278cef441468a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Lion and Sun began not as a flag but as an astrological and royal emblem: in Persian tradition the sun in the zodiac sign of Leo signified strength and kingship, and the lion stood for power and guardianship, appearing on coins and manuscripts for centuries before it reached a flag. In the Safavid era it came to represent the twin pillars of state and religion, and under the Qajar and Pahlavi dynasties the lion was typically shown holding a sword, standing for bravery and sovereignty, until it was dropped from Iran's flag after the 1979 revolution.",
+            "sources": [
+              {
+                "title": "The Lion & Sun: A Symbol of Persian Legacy",
+                "url": "https://thelionandthesun.org/378/the-lion-sun-a-symbol-of-persian-legacy/"
+              }
+            ]
+          }
         },
         {
           "id": "ir-1907",
@@ -15635,7 +15644,16 @@
           "design": "The Qajar tricolour bearing the Lion and Sun, without red borders.",
           "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
           "sha256": "b3026a3f4d96df49db8a7896196e1818355974a89a1cd800b42118de5a54a9aa",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Lion and Sun began not as a flag but as an astrological and royal emblem: in Persian tradition the sun in the zodiac sign of Leo signified strength and kingship, and the lion stood for power and guardianship, appearing on coins and manuscripts for centuries before it reached a flag. In the Safavid era it came to represent the twin pillars of state and religion, and under the Qajar and Pahlavi dynasties the lion was typically shown holding a sword, standing for bravery and sovereignty, until it was dropped from Iran's flag after the 1979 revolution.",
+            "sources": [
+              {
+                "title": "The Lion & Sun: A Symbol of Persian Legacy",
+                "url": "https://thelionandthesun.org/378/the-lion-sun-a-symbol-of-persian-legacy/"
+              }
+            ]
+          }
         },
         {
           "id": "ir-safavid",
@@ -15834,7 +15852,16 @@
           "design": "The banner of the realms of the union of Denmark, Norway and Sweden.",
           "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags",
           "sha256": "f8dbe76e669888c7d302018f84024e41fe4a88c24c1541d5a67f320ba85dc8bc",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Kalmar Union's banner — a red Nordic cross, off-centre toward the hoist, on a yellow field — marked the 1397 union of Denmark, Norway and Sweden under one crown by Queen Margaret I. Its colours drew primarily from Norway's own royal arms, with the yellow field also echoing the arms of Sweden and Denmark, giving the three kingdoms a shared banner distinct from any one of their own.",
+            "sources": [
+              {
+                "title": "Emblems of the Kalmar Union — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblems_of_the_Kalmar_Union"
+              }
+            ]
+          }
         },
         {
           "id": "is-norway",
@@ -16470,7 +16497,16 @@
           "design": "The early flag of the Emirate of Transjordan, under the British mandate — the Arab Revolt bands with a red triangle but no star.",
           "source": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan",
           "sha256": "df1ab822ca22f24ba4512ff3d6b320fef5a65724d2946adfb15404cfebcf079b",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Emir Abdullah I's flag for Transjordan adapted the Arab Revolt's black-white-green horizontal tricolour, itself drawn from the pan-Arab colours: black for the Abbasid dynasty's banner, white for the Umayyads, and green for the Fatimids, in reference to the Prophet's own green cloak. Its red hoist triangle marked the ruling Hashemite dynasty and the 1916 Arab Revolt against Ottoman rule; a seven-pointed star was added to the triangle only later, in the flag Jordan still flies today.",
+            "sources": [
+              {
+                "title": "Flag of the Arab Revolt — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Arab_Revolt"
+              }
+            ]
+          }
         },
         {
           "id": "jo-army",
