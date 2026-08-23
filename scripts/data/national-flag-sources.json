@@ -17256,7 +17256,20 @@
           "design": "The presidential flag, restored in 1995 in its 1923 form.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia",
           "sha256": "8d16b63d0225a3facccbbc8e0e1b017c90bf427cf4e4a865f4499e5511cf4bcd",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The presidential flag, restored in 1995 in the form first used in 1923, bears the Great Coat of Arms of Latvia at its centre. The shield combines a rising golden sun for Vidzeme, a red lion for the historic duchies of Courland and Semigallia (Kurzeme and Zemgale), and a silver griffin gripping a sword for Latgale — a device that entered Latvian heraldry in 1566, when the region came under Lithuanian rule — bringing together emblems of the country's historic regions into a single national symbol.",
+            "sources": [
+              {
+                "title": "Wikipedia — Coat of arms of Latvia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia"
+              },
+              {
+                "title": "Wikipedia — List of flags of Latvia",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia"
+              }
+            ]
+          }
         },
         {
           "id": "lv-pm",
@@ -24079,7 +24092,20 @@
           "design": "A square flag distinguished for the head of government.",
           "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
           "sha256": "2ce6f5599a22385320bbbee15cf63cf830f231eef3b364c6d6327ac034aae595",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Prime Minister of Romania is a square version of the national tricolour bordered in yellow, without the fringes or tassels of the presidential flag, marking it as belonging to the head of government rather than the head of state. Where the presidential flag's border is blue, the prime minister's is yellow — the same distinguishing device the socialist-era predecessor of this flag used, in a design descending from Romania's earlier state standards.",
+            "sources": [
+              {
+                "title": "Wikipedia — List of Romanian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Romanian_flags"
+              },
+              {
+                "title": "Wikipedia — Flag of Romania",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Romania"
+              }
+            ]
+          }
         },
         {
           "id": "ro-armed-forces",
@@ -25702,7 +25728,20 @@
           "design": "The air force's colour.",
           "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
           "sha256": "77c582516110c23d5115f9b090d55b9b9055cfa11a0f0116a89729e323262d35",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Colour of the Republic of Singapore Air Force, carried since 1990, is the national flag with the air force's badge on the lower fly: a red lion's head set within a roundel. The roundel is the conventional aviation marking signifying unity of purpose, while the lion — adopted for the RSAF's badge in 1990, replacing an earlier yin-yang emblem used from 1973 — stands for courage, strength and resolve, echoing the lion motif drawn from Singapore's own name, Singapura, 'Lion City'.",
+            "sources": [
+              {
+                "title": "Flags of the World — Air Force Flags (Singapore)",
+                "url": "https://www.crwflags.com/fotw/flags/sg%5Eairfo.html"
+              },
+              {
+                "title": "National Library Board Singapore — Past and present emblems of the Republic of Singapore Air Force",
+                "url": "https://www.nlb.gov.sg/main/image-detail?cmsuuid=616ae5da-8059-46f6-b2b8-c7493889ede3"
+              }
+            ]
+          }
         },
         {
           "id": "sg-arms",
@@ -27395,7 +27434,20 @@
           "design": "The King's Standard in 2:3 with a swallow-tailed fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_Thai_flags",
           "sha256": "5916c53eef43e6b6f67a76c5084ee2e035631b1ecfc308c69f2eefe6aecf8ab1",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Standard of the Queen of Thailand repeats the King's yellow standard and its central Garuda emblem, but with a swallow-tailed fly added to the end. The swallow-tail distinguishes the flags of the Queen and other female members of the royal family from the plain square standards of male royals, a convention set out in a Royal Decree issued in 1911 under King Rama VI specifically to give the Queen her own pair of standards.",
+            "sources": [
+              {
+                "title": "Flags of the World — Queen's Royal Standard and Pennant (Thailand)",
+                "url": "https://www.fotw.info/flags/th%5Equeen.html"
+              },
+              {
+                "title": "Wikipedia — Royal Standard of Thailand",
+                "url": "https://en.wikipedia.org/wiki/Royal_Standard_of_Thailand"
+              }
+            ]
+          }
         },
         {
           "id": "th-regent",
