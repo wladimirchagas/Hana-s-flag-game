@@ -20130,7 +20130,20 @@
           "design": "A blue field bearing the agency's crest, with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "ec7054022a56bb5d972fc4c664bec034feff8c3ab65d2d0678b58fd5accd3626",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The ensign of the Malaysian Maritime Enforcement Agency, formed on 15 February 2005 and known internationally as the Malaysian Coast Guard, is a blue field bearing the agency's own crest with the national flag in the canton. The agency's motto, 'Mengawal, Melindung, Menyelamat' ('Guard, Protect, Save'), sets out its role of enforcing maritime law and coordinating search-and-rescue operations across Malaysia's waters.",
+            "sources": [
+              {
+                "title": "Wikipedia — Malaysian Maritime Enforcement Agency",
+                "url": "https://en.wikipedia.org/wiki/Malaysian_Maritime_Enforcement_Agency"
+              },
+              {
+                "title": "Wikipedia — List of Malaysian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "my-agong",
@@ -20424,7 +20437,20 @@
           "design": "A sky-blue field with the national flag in the canton and the air force roundel in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "10fea80bb8c38c68d5acc1b6ab89f621faf3906d103e90b3f3b25a3f564af539",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Royal Malaysian Air Force's ensign carries the national flag in the canton and the service's own roundel in the fly, a gold star on a blue field bordered in dark blue. The star echoes the federal star of the national flag, whose points represent Malaysia's constituent states and federal territories, marking the roundel as a distinctly Malaysian aviation emblem in the same tradition as other Commonwealth air forces' national markings.",
+            "sources": [
+              {
+                "title": "Flags of the World — Royal Malaysian Air Force (Malaysia)",
+                "url": "https://www.crwflags.com/fotw/flags/my%5Eairfo.html"
+              },
+              {
+                "title": "Wikipedia — Coat of arms of Malaysia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia"
+              }
+            ]
+          }
         },
         {
           "id": "my-armed-forces",
@@ -20435,7 +20461,20 @@
           "design": "Three horizontal bands of sky blue, red and dark blue — one for each service — with the armed forces crest.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "7ce5157b2082b49bfc2b750aa0837a003b186c47b34fc80c536d336f58a5782f",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The flag of the Malaysian Armed Forces carries three horizontal bands of sky blue, red and dark blue — one for each of the air force, army and navy — with the joint armed forces crest at the centre, uniting the three services' own branch colours in a single flag. The crest draws on the same national symbols as Malaysia's coat of arms: the crescent for Islam, gold for the sovereignty of the Malay Rulers, and the federal star's points for the country's constituent states.",
+            "sources": [
+              {
+                "title": "Flags of the World — Malaysian Defence Force",
+                "url": "https://www.crwflags.com/fotw/flags/my%5Emdf.html"
+              },
+              {
+                "title": "Wikipedia — Coat of arms of Malaysia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia"
+              }
+            ]
+          }
         },
         {
           "id": "my-football-crest",
