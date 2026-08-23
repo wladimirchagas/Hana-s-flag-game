@@ -23000,7 +23000,20 @@
           "design": "The state emblem on a green field, distinguished from the president's.",
           "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
           "sha256": "b9e371742b8a9964f01dc13da732a5c1f53ba9a2913ab6fc28634e674890931b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Prime Minister's standard is a plain dark green field bearing the State Emblem of Pakistan, approved in 1954, in gold at its centre. The emblem's crescent and star stand for progress and enlightenment, a four-part shield beneath them displays cotton, wheat, tea and jute — the country's principal crops — within a wreath modelled on traditional Mughal floral art, and a scroll below carries Muhammad Ali Jinnah's motto 'Faith, Unity, Discipline' in Urdu.",
+            "sources": [
+              {
+                "title": "Wikipedia — State emblem of Pakistan",
+                "url": "https://en.wikipedia.org/wiki/State_emblem_of_Pakistan"
+              },
+              {
+                "title": "Flags of the World — Pakistan: Prime Minister Flag",
+                "url": "https://www.crwflags.com/fotw/flags/pk_pmin.html"
+              }
+            ]
+          }
         },
         {
           "id": "pk-civil-ensign",
@@ -23035,7 +23048,20 @@
           "design": "The navy's badge on a blue field.",
           "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
           "sha256": "0d7392798c2afa38f788bbe08f1b7bd6011d51a79888e8c5a1bee13faf0907ff",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The naval jack of the Pakistan Navy is a dark blue field bearing the navy's own badge — a white crescent and star — at its centre, a colour adopted in 1960 in place of the green field the jack had carried since 1956, the year Pakistan became an Islamic republic and the Royal Navy's white ensign and Queen's colour were replaced with the country's own naval flags. The crescent and star are the same symbols carried on the national flag, traditionally read as standing for progress and enlightenment.",
+            "sources": [
+              {
+                "title": "Flags of the World — Pakistan: naval ensigns",
+                "url": "https://www.crwflags.com/fotw/flags/pk~.html"
+              },
+              {
+                "title": "Wikipedia — Flag of Pakistan",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Pakistan"
+              }
+            ]
+          }
         },
         {
           "id": "pk-air-ensign",
