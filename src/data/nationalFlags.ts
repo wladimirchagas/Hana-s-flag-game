@@ -6175,6 +6175,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Mauritius — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius" },
     ],
   },
+  "mu-passport": {
+    description: "Mauritius's navy-blue passport bears the national coat of arms in gold, its shield flanked by a dodo — the flightless bird once native to Mauritius and extinct since the 17th century, holding a sugarcane stalk — and a sambar deer, also bearing sugarcane, marking the crop central to the island's economy. A key and a white star in the shield's lower quarters are named in the Latin motto \"Stella Clavisque Maris Indici\" — \"The Star and the Key of the Indian Ocean\" — a nod to the island's strategic position on historic trade and shipping routes.",
+    sources: [
+      { title: "Coat of arms of Mauritius — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius" },
+    ],
+  },
   "mu-football-crest": {
     description: "The ship is a lymphad, taken from Mauritius's coat of arms, where it represents the island's maritime history and the succession of colonial naval powers — Portugal, the Netherlands, France and Britain — that navigated the Indian Ocean and settled it.",
     sources: [
@@ -6195,6 +6201,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "mw-arms": {
     description: "The shield is divided into three: the wavy blue and white bars are the waters of Lake Malawi, which fills much of the country; a red lion on a gold field stands for the country's ties within the Commonwealth; and a rising sun on black — the same rising sun as on the flag — for the dawn of freedom for Africa. Above, a fish eagle sits before another rising sun as the crest. A lion and a leopard support the shield, standing for courage and for the country's wildlife, and the ribbon below reads “Unity and Freedom.”",
+    sources: [
+      { title: "Coat of arms of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malawi" },
+    ],
+  },
+  "mw-passport": {
+    description: "Malawi's black passport bears the national coat of arms in gold: wavy lines for Lake Malawi above a lion — the Lion of England, kept from the colonial-era arms — and a rising sun below, symbolising the birth of the new nation at independence. Standing astride the shield are a lion and a leopard, the country's two largest predators, the whole resting on a depiction of the Mulanje Massif, Malawi's highest mountain range.",
     sources: [
       { title: "Coat of arms of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malawi" },
     ],
@@ -6357,6 +6369,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "na-arms": {
     description: "The shield carries the design of the national flag, its gold diamond pattern reading as the country's diamonds and mineral wealth. An African fish eagle rises above it as the crest. Two oryx (gemsbok) support the shield, animals prized for their courage, elegance and pride. On the golden sand of the compartment — the Namib desert that gives the country its name — grows a Welwitschia mirabilis, the desert plant that lives for centuries and stands for fortitude and survival, carried over from the former arms of South-West Africa. The motto reads “Unity, Liberty, Justice.”",
+    sources: [
+      { title: "Coat of arms of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
+    ],
+  },
+  "na-passport": {
+    description: "Namibia's green passport bears the national coat of arms, whose shield reproduces the national flag itself. Above it, a fish eagle — crested for its keen eyesight, read as the farsightedness of the country's leaders — represents the north and Namibia's water resources; below, two oryx antelope, prized for their courage and elegance, support the shield while standing on a Welwitschia mirabilis, a desert plant found almost nowhere else on Earth and a symbol of endurance. A headband patterned with diamonds nods to the country's diamond industry, beneath the motto \"Unity, Liberty, Justice\".",
     sources: [
       { title: "Coat of arms of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
     ],
@@ -8444,6 +8462,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The government's own reading runs charge by charge. The green shield is the fertility of the country's soil and water, and the blue and white wavy lines above it are prosperity-bringing water; the stonework on it is Great Zimbabwe, the country's historical heritage and the source of its name. The hoe and the AK rifle crossed behind the shield are the transition from war to peace. The two kudu supporters are the unity of purpose of the country's ethnic groups — described as a harmonious blend of black, white and brown — and the earth mound they stand on carries the plants that give food and clothing. The wreath of gold and green is mining and agriculture, the national economy. The crest is the Great Zimbabwe Bird on a red star: the star is an ancient symbol of hope for the future, tinctured red to recall the suffering of the people and the need to avoid its recurrence.",
     sources: [
       { title: "Coat of arms of Zimbabwe — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zimbabwe" },
+    ],
+  },
+  "zw-passport": {
+    description: "Zimbabwe's passport bears the national coat of arms, crested by the Zimbabwe Bird — a design taken directly from soapstone bird sculptures found among the ruins of Great Zimbabwe, the medieval stone city that gave the modern country its name. In Shona tradition the bird is read as either the bateleur eagle (chapungu), a messenger between the living, the ancestors and the divine, or the African fish eagle (hungwe), a symbol of power and leadership; either way it links the modern republic directly to its pre-colonial heritage, and appears on the flag, currency and state documents alike.",
+    sources: [
+      { title: "Zimbabwe Bird — Wikipedia", url: "https://en.wikipedia.org/wiki/Zimbabwe_Bird" },
     ],
   },
   "zw-football-crest": {

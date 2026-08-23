@@ -20499,7 +20499,16 @@
           "design": "The cover of the Mauritius passport.",
           "source": "https://gicg.net/passport/mu/",
           "sha256": "6f9c21cc14db9b69438f8ec5f95232ffee6d04207cc167dc3462a5761e1ec8e3",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Mauritius's navy-blue passport bears the national coat of arms in gold, its shield flanked by a dodo — the flightless bird once native to Mauritius and extinct since the 17th century, holding a sugarcane stalk — and a sambar deer, also bearing sugarcane, marking the crop central to the island's economy. A key and a white star in the shield's lower quarters are named in the Latin motto \"Stella Clavisque Maris Indici\" — \"The Star and the Key of the Indian Ocean\" — a nod to the island's strategic position on historic trade and shipping routes.",
+            "sources": [
+              {
+                "title": "Coat of arms of Mauritius — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius"
+              }
+            ]
+          }
         },
         {
           "id": "mu-football-crest",
@@ -20703,7 +20712,16 @@
           "design": "The cover of the Malawi passport.",
           "source": "https://gicg.net/passport/mw/",
           "sha256": "7e57810db968cd334918d5b45b04ed2aa8d5ac3e015788117e9c3d310462145c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Malawi's black passport bears the national coat of arms in gold: wavy lines for Lake Malawi above a lion — the Lion of England, kept from the colonial-era arms — and a rising sun below, symbolising the birth of the new nation at independence. Standing astride the shield are a lion and a leopard, the country's two largest predators, the whole resting on a depiction of the Mulanje Massif, Malawi's highest mountain range.",
+            "sources": [
+              {
+                "title": "Coat of arms of Malawi — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malawi"
+              }
+            ]
+          }
         },
         {
           "id": "mw-football-crest",
@@ -21715,7 +21733,16 @@
           "design": "The cover of the Namibia passport.",
           "source": "https://gicg.net/passport/na/",
           "sha256": "52526367783a309731d817d70ac02fb5492f09b4c9a61ca3982be2fa59b9c39f",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Namibia's green passport bears the national coat of arms, whose shield reproduces the national flag itself. Above it, a fish eagle — crested for its keen eyesight, read as the farsightedness of the country's leaders — represents the north and Namibia's water resources; below, two oryx antelope, prized for their courage and elegance, support the shield while standing on a Welwitschia mirabilis, a desert plant found almost nowhere else on Earth and a symbol of endurance. A headband patterned with diamonds nods to the country's diamond industry, beneath the motto \"Unity, Liberty, Justice\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Namibia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia"
+              }
+            ]
+          }
         },
         {
           "id": "na-football-crest",
@@ -33913,7 +33940,16 @@
           "design": "The cover of the Zimbabwe passport.",
           "source": "https://gicg.net/passport/zw/",
           "sha256": "54f2fc330baa3fb4e39437cd532c4ddc738397f39559c56a8b83d620072aacca",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Zimbabwe's passport bears the national coat of arms, crested by the Zimbabwe Bird — a design taken directly from soapstone bird sculptures found among the ruins of Great Zimbabwe, the medieval stone city that gave the modern country its name. In Shona tradition the bird is read as either the bateleur eagle (chapungu), a messenger between the living, the ancestors and the divine, or the African fish eagle (hungwe), a symbol of power and leadership; either way it links the modern republic directly to its pre-colonial heritage, and appears on the flag, currency and state documents alike.",
+            "sources": [
+              {
+                "title": "Zimbabwe Bird — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Zimbabwe_Bird"
+              }
+            ]
+          }
         },
         {
           "id": "zw-football-crest",
