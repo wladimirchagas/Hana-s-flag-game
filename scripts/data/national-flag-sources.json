@@ -23623,7 +23623,16 @@
           "design": "A British Blue Ensign defaced with the leopard-on-a-rock badge of the Nyasaland protectorate.",
           "source": "https://en.wikipedia.org/wiki/Nyasaland",
           "sha256": "6e40bd1e5830f80d3ab25618fa7793a482044172ed9acbb50a85756ffd17ebe6",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Granted by royal warrant on 11 May 1914, Nyasaland's arms showed a leopard standing on a rock beneath a rising sun, placed on the protectorate's Blue Ensign from 1925 (an earlier 1919 version had set the badge within a white disc). It flew until the protectorate joined the Federation of Rhodesia and Nyasaland in 1953, and Nyasaland itself became independent Malawi in 1964 with an entirely new flag.",
+            "sources": [
+              {
+                "title": "Nyasaland (pre-independence Malaŵi) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/mw_his.html"
+              }
+            ]
+          }
         },
         {
           "id": "mw-president",
@@ -26248,7 +26257,16 @@
           "design": "The first New Zealand flag based on the Blue Ensign, defaced with the letters NZ.",
           "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags",
           "sha256": "b40e771167caf8c3c01d6f9badb894632a9417e4b41b0fbbec49691c5b52a204",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted by a warrant of Governor Sir George Grey published 10 January 1867, this flag set the red letters 'NZ', bordered white, on a British Blue Ensign — New Zealand's first officially devised colonial emblem, created after two government steamers were reprimanded by visiting Royal Navy ships in 1866 for flying a plain, unbadged Blue Ensign, in breach of Britain's 1865 Colonial Naval Defence Act. The letters were replaced in 1869 by the four-star Southern Cross device that, redrawn over the following decades, remains on New Zealand's flag today.",
+            "sources": [
+              {
+                "title": "New Zealand ensign proclaimed — NZ History",
+                "url": "https://nzhistory.govt.nz/page/new-zealand-ensign-proclaimed"
+              }
+            ]
+          }
         },
         {
           "id": "nz-union-flag",
@@ -29562,7 +29580,16 @@
           "design": "The tricolour with a red star, as a constituent republic of Yugoslavia.",
           "source": "https://en.wikipedia.org/wiki/List_of_Serbian_flags",
           "sha256": "6792e88a902ae0801b477a22274734703e90e858750bdfa9956682f35eef18df",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the People's (later Socialist) Republic of Serbia within socialist Yugoslavia, officially adopted 17 January 1947: the red-blue-white tricolour Serbia had flown since 1835 — itself based on the Pan-Slavic colours of Russia's own flag — with a five-pointed red star, bordered gold, added at the centre to mark Serbia's place within the Yugoslav federation.",
+            "sources": [
+              {
+                "title": "Republic of Serbia (Socialist Yugoslavia) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/yu_fy-sr.html"
+              }
+            ]
+          }
         },
         {
           "id": "rs-principality",
@@ -31179,7 +31206,16 @@
           "design": "The crown colony's blue ensign, flown until self-government in 1959.",
           "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
           "sha256": "e90ec8d2e4fcf7a6a4064c34a11a4d96ff3985b4094f577db760a54ca476c9c0",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "After Singapore became a separate Crown colony in 1946 on the dissolution of the Straits Settlements, its Blue Ensign carried a badge showing a lion — a recurring device in Singapore's heraldry recalling the very name Singapura, 'Lion City', even though the island has no native lions — granted formally in the colony's 1948 coat of arms. This colonial flag flew until Singapore achieved self-government in 1959.",
+            "sources": [
+              {
+                "title": "The Lions of the Lion City: How Heraldry Shaped Singapore's Identity — BiblioAsia",
+                "url": "https://biblioasia.nlb.gov.sg/all-sections/vol-22-issue-2-jul-sep-2026-the-lions-of-the-lion-city/"
+              }
+            ]
+          }
         },
         {
           "id": "sg-straits",
@@ -31501,7 +31537,16 @@
           "design": "The white-blue-red tricolour with a red star, as a constituent republic of Yugoslavia.",
           "source": "https://en.wikipedia.org/wiki/List_of_Slovenian_flags",
           "sha256": "1ef929b58a8dfa8885f90ac4d9f1a0b95d16c661b1cd30752746f48f81110c42",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted in 1945 as Slovenia became a constituent republic of the new socialist Yugoslavia, this flag placed a red star at the centre of the white-blue-red tricolour Slovenia had used since the 19th century Pan-Slavic movement. The star was removed only in 1991, after Slovenia fought and won its brief Ten-Day War of independence from Yugoslavia.",
+            "sources": [
+              {
+                "title": "The story of the Slovenian flag — THE Slovenia",
+                "url": "https://the-slovenia.com/en/slovenia/the-story-of-the-slovenian-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "si-yugoslavia",
@@ -34957,7 +35002,16 @@
           "design": "The red flag of the sultanate as flown under the British protectorate.",
           "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
           "sha256": "8e573bc3fc3836039fe0252ca79e31f5c45a720ac2f39c56da67eb9530dcfd77",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A plain red flag, in the tradition of red flags flown by Alawite-descended Islamic dynasties, served as the Sultanate of Zanzibar's flag both before and throughout the British protectorate established under the 1890 Heligoland–Zanzibar Treaty. Zanzibar's ruling dynasty itself traced its roots to Oman, of which Zanzibar had briefly been the Omani Empire's own capital in the 19th century; British protection ended in December 1963, shortly before the 1964 revolution that overthrew the sultanate.",
+            "sources": [
+              {
+                "title": "The Tanzania Flag along with Tanganyika and Zanzibar — Young Pioneer Tours",
+                "url": "https://www.youngpioneertours.com/the-tanzania-flag-tanganyika-zanzibar/"
+              }
+            ]
+          }
         },
         {
           "id": "tz-tanganyika-territory",
@@ -35536,7 +35590,16 @@
           "design": "A British Blue Ensign defaced with the protectorate's badge, the crested crane.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
           "sha256": "f6a073e02dd3cd691199bf0283d0e49f83b4e25a86fb1a7ff22ba73ac33fb2b2",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted for the Uganda Protectorate in 1914, this Blue Ensign's badge showed a grey crowned crane — deliberately chosen by British colonial authorities as a neutral national symbol, to avoid favouring any of the powerful kingdoms within the protectorate, such as Buganda, which already had its own flag. The crane, standing with one leg raised as if stepping forward, remained popular enough that independent Uganda kept it as the central emblem of its own new flag in 1962.",
+            "sources": [
+              {
+                "title": "The Flag of Uganda: A Constant through Turbulent Times — Young Pioneer Tours",
+                "url": "https://www.youngpioneertours.com/the-flag-of-uganda/"
+              }
+            ]
+          }
         },
         {
           "id": "ug-ibeac",

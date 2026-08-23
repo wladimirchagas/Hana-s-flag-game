@@ -8168,6 +8168,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Malawi's Flag Change — Political Geography Now", url: "https://www.polgeonow.com/2012/09/malawi-flag-change.html" },
     ],
   },
+  "mw-nyasaland": {
+    description: "Granted by royal warrant on 11 May 1914, Nyasaland's arms showed a leopard standing on a rock beneath a rising sun, placed on the protectorate's Blue Ensign from 1925 (an earlier 1919 version had set the badge within a white disc). It flew until the protectorate joined the Federation of Rhodesia and Nyasaland in 1953, and Nyasaland itself became independent Malawi in 1964 with an entirely new flag.",
+    sources: [
+      { title: "Nyasaland (pre-independence Malaŵi) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/mw_his.html" },
+    ],
+  },
   "mw-president": {
     description: "The presidential standard bears Malawi's coat of arms, granted on 30 June 1964 days before independence: a rising sun on the shield's black field, for the dawn of the new nation and, more broadly, the hope of freedom sweeping decolonising Africa; the shield is supported by a lion and a leopard for strength and agility, stands upon a representation of Mount Mulanje, and carries the motto 'Unity and Freedom' beneath.",
     sources: [
@@ -8797,6 +8803,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted on 15 October 1975. The bright yellow field stands for the sunshine of Niue and the warmth the Niuean people feel towards New Zealand; the Union Flag marks the protection the United Kingdom granted in 1900 at the petition of Niue's kings and chiefs. On it four small yellow stars form the Southern Cross, for the association with New Zealand, and a larger star on a blue disc stands for the deep sea around the self-governing island.",
     sources: [
       { title: "Flag of Niue — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Niue" },
+    ],
+  },
+  "nz-1867": {
+    description: "Adopted by a warrant of Governor Sir George Grey published 10 January 1867, this flag set the red letters 'NZ', bordered white, on a British Blue Ensign — New Zealand's first officially devised colonial emblem, created after two government steamers were reprimanded by visiting Royal Navy ships in 1866 for flying a plain, unbadged Blue Ensign, in breach of Britain's 1865 Colonial Naval Defence Act. The letters were replaced in 1869 by the four-star Southern Cross device that, redrawn over the following decades, remains on New Zealand's flag today.",
+    sources: [
+      { title: "New Zealand ensign proclaimed — NZ History", url: "https://nzhistory.govt.nz/page/new-zealand-ensign-proclaimed" },
     ],
   },
   "nz-union-flag": {
@@ -9630,6 +9642,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Serbia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Serbia" },
     ],
   },
+  "rs-ssr": {
+    description: "The flag of the People's (later Socialist) Republic of Serbia within socialist Yugoslavia, officially adopted 17 January 1947: the red-blue-white tricolour Serbia had flown since 1835 — itself based on the Pan-Slavic colours of Russia's own flag — with a five-pointed red star, bordered gold, added at the centre to mark Serbia's place within the Yugoslav federation.",
+    sources: [
+      { title: "Republic of Serbia (Socialist Yugoslavia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/yu_fy-sr.html" },
+    ],
+  },
   "rs-principality": {
     description: "Serbia's red-blue-white tricolour traces to the 1804 uprising against Ottoman rule, when Serbian rebels adopted the white-blue-red flag of Russia with its stripes rearranged; the Ottoman sultan formally recognised the design for the autonomous Principality of Serbia in 1835. Serbia's colours became known as the pan-Slavic colours and were adopted by several other Slavic peoples during the revolutionary movements of 1848.",
     sources: [
@@ -10024,6 +10042,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Swedish Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Swedish_Football_Association" },
     ],
   },
+  "sg-1952": {
+    description: "After Singapore became a separate Crown colony in 1946 on the dissolution of the Straits Settlements, its Blue Ensign carried a badge showing a lion — a recurring device in Singapore's heraldry recalling the very name Singapura, 'Lion City', even though the island has no native lions — granted formally in the colony's 1948 coat of arms. This colonial flag flew until Singapore achieved self-government in 1959.",
+    sources: [
+      { title: "The Lions of the Lion City: How Heraldry Shaped Singapore's Identity — BiblioAsia", url: "https://biblioasia.nlb.gov.sg/all-sections/vol-22-issue-2-jul-sep-2026-the-lions-of-the-lion-city/" },
+    ],
+  },
   "sg-straits": {
     description: "The Straits Settlements' badge — three gold imperial crowns separated by a red inverted pall (an upside-down Y) — represented the colony's three constituent settlements: Penang, Malacca and Singapore, one crown for each, set on a British Blue Ensign.",
     sources: [
@@ -10092,6 +10116,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Authorised on 30 January 1984. On the chief stands the wirebird — the Saint Helena plover, the island's national bird, found nowhere else — and below it a three-masted East Indiaman flying the cross of St George sails between the island's steep cliffs, for Saint Helena's place on the East India Company's ocean route and its rugged coast. The motto, 'Loyal and Unshakeable', speaks to the islanders' steadfast allegiance.",
     sources: [
       { title: "Coat of arms of Saint Helena — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena" },
+    ],
+  },
+  "si-sr": {
+    description: "Adopted in 1945 as Slovenia became a constituent republic of the new socialist Yugoslavia, this flag placed a red star at the centre of the white-blue-red tricolour Slovenia had used since the 19th century Pan-Slavic movement. The star was removed only in 1991, after Slovenia fought and won its brief Ten-Day War of independence from Yugoslavia.",
+    sources: [
+      { title: "The story of the Slovenian flag — THE Slovenia", url: "https://the-slovenia.com/en/slovenia/the-story-of-the-slovenian-flag/" },
     ],
   },
   "si-yugoslavia": {
@@ -10876,6 +10906,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Tanganyika Territory — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tanganyika_Territory" },
     ],
   },
+  "tz-zanzibar": {
+    description: "A plain red flag, in the tradition of red flags flown by Alawite-descended Islamic dynasties, served as the Sultanate of Zanzibar's flag both before and throughout the British protectorate established under the 1890 Heligoland–Zanzibar Treaty. Zanzibar's ruling dynasty itself traced its roots to Oman, of which Zanzibar had briefly been the Omani Empire's own capital in the 19th century; British protection ended in December 1963, shortly before the 1964 revolution that overthrew the sultanate.",
+    sources: [
+      { title: "The Tanzania Flag along with Tanganyika and Zanzibar — Young Pioneer Tours", url: "https://www.youngpioneertours.com/the-tanzania-flag-tanganyika-zanzibar/" },
+    ],
+  },
   "tz-german": {
     description: "The Reichskolonialflagge combined the black-white-red of the German Empire's own flag with a crowned imperial eagle on a white disc. Used from the early 1900s, it asserted the authority of the German Empire across its overseas possessions, flying over government stations, harbours and barracks in Germany's African, Chinese and Pacific colonies just as the plain imperial flag did at home.",
     sources: [
@@ -11012,6 +11048,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Proposed by the Democratic Party government ahead of independence, this blue-green flag striped with yellow and centred on a crested crane silhouette used the Democratic Party's own colours — but when the Uganda People's Congress won the April 1962 election, it rejected the design in favour of its own party's black-yellow-red tricolour, keeping only the crested crane (the bird Britain had already chosen as Uganda's colonial badge) as the white central disc still flown on Uganda's flag today.",
     sources: [
       { title: "Uganda National Flag: Symbolism & History of Black, Gold, Red, and the Grey-Crowned Crane — uganda.uk.com", url: "https://uganda.uk.com/uganda-national-flag-symbolism-history-of-black-gold-red-and-the-grey-crowned-crane/" },
+    ],
+  },
+  "ug-protectorate": {
+    description: "Adopted for the Uganda Protectorate in 1914, this Blue Ensign's badge showed a grey crowned crane — deliberately chosen by British colonial authorities as a neutral national symbol, to avoid favouring any of the powerful kingdoms within the protectorate, such as Buganda, which already had its own flag. The crane, standing with one leg raised as if stepping forward, remained popular enough that independent Uganda kept it as the central emblem of its own new flag in 1962.",
+    sources: [
+      { title: "The Flag of Uganda: A Constant through Turbulent Times — Young Pioneer Tours", url: "https://www.youngpioneertours.com/the-flag-of-uganda/" },
     ],
   },
   "ug-ibeac": {
