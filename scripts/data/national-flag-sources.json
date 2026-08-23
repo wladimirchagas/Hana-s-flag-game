@@ -7944,7 +7944,20 @@
           "design": "The naval jack.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
           "sha256": "a1f318a091d5cb6615eda87bdd4cb74e8d8a00888c5760fd1282607c5eed9a2c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Ecuador's naval jack bears a condor together with an anchor and a length of rope. The condor is the same bird that crests the national coat of arms, standing atop the shield with wings outstretched as a symbol of the country's size, power and readiness to defend itself, while the anchor and rope are the conventional maritime devices marking the jack as belonging to the navy.",
+            "sources": [
+              {
+                "title": "Flags of the World — Ecuador: Naval Flags",
+                "url": "https://www.crwflags.com/fotw/flags/ec~.html"
+              },
+              {
+                "title": "Wikipedia — Coat of arms of Ecuador",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador"
+              }
+            ]
+          }
         },
         {
           "id": "ec-arms",
@@ -18587,7 +18600,20 @@
           "design": "The army's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Burmese_flags",
           "sha256": "85b58339279f9e58c77fe7921fb82153347e0ffccffb1ec25b594e71a348277e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Myanmar Army's flag is red bearing the Tatmadaw emblem in gold: a cogwheel, a star and crossed swords, encircled by olive branches with thirty leaves on each side and Burmese floral arabesques (kanote) as supporters. The cogwheel stands for industry, the star for national unity, and the crossed swords for military strength — the same emblem worn as the cap badge across the army, navy and air force.",
+            "sources": [
+              {
+                "title": "Wikipedia — Emblem of Tatmadaw",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Tatmadaw"
+              },
+              {
+                "title": "Flags of the World — Myanmar (Burma): Army flags",
+                "url": "https://www.crwflags.com/fotw/flags/mm%5Earmy.html"
+              }
+            ]
+          }
         },
         {
           "id": "mm-mod",

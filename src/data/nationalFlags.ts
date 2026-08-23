@@ -3766,6 +3766,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "1990 African Cup of Nations — Wikipedia", url: "https://en.wikipedia.org/wiki/1990_African_Cup_of_Nations" },
     ],
   },
+  "ec-naval-jack": {
+    description: "Ecuador's naval jack bears a condor together with an anchor and a length of rope. The condor is the same bird that crests the national coat of arms, standing atop the shield with wings outstretched as a symbol of the country's size, power and readiness to defend itself, while the anchor and rope are the conventional maritime devices marking the jack as belonging to the navy.",
+    sources: [
+      { title: "Flags of the World — Ecuador: Naval Flags", url: "https://www.crwflags.com/fotw/flags/ec~.html" },
+      { title: "Wikipedia — Coat of arms of Ecuador", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador" },
+    ],
+  },
   "ec-president": {
     description: "The presidential standard bears Ecuador's national coat of arms: a condor with wings spread, standing for energy and vigilance, above an oval shield showing the sun with the zodiac signs of March–June (marking the months of events central to Ecuadorian nationhood), Mount Chimborazo with a river flowing from it, and a steamship bearing a caduceus for navigation and commerce; the shield rests on a bundle of consular rods (a symbol of republican dignity) and is wreathed with palm for the martyrs of independence and laurel for the republic's victories.",
     sources: [
@@ -5413,6 +5420,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The armed forces' emblem shows crossed swords within a cogwheel beneath a five-pointed star, in gold: the cogwheel for industry, the star for unity, and the crossed swords for military strength, together marking the Tatmadaw's role in defence and nation-building since Myanmar's 1948 independence. A fuller coat-of-arms version rings the same core device with olive branches and traditional Burmese floral supporters, and serves as the cap badge common to the Army, Navy and Air Force.",
     sources: [
       { title: "Emblem of Tatmadaw — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Tatmadaw" },
+    ],
+  },
+  "mm-army": {
+    description: "The Myanmar Army's flag is red bearing the Tatmadaw emblem in gold: a cogwheel, a star and crossed swords, encircled by olive branches with thirty leaves on each side and Burmese floral arabesques (kanote) as supporters. The cogwheel stands for industry, the star for national unity, and the crossed swords for military strength — the same emblem worn as the cap badge across the army, navy and air force.",
+    sources: [
+      { title: "Wikipedia — Emblem of Tatmadaw", url: "https://en.wikipedia.org/wiki/Emblem_of_Tatmadaw" },
+      { title: "Flags of the World — Myanmar (Burma): Army flags", url: "https://www.crwflags.com/fotw/flags/mm%5Earmy.html" },
     ],
   },
   "mm-seal": {
