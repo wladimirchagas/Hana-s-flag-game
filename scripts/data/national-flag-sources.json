@@ -20104,7 +20104,20 @@
           "design": "St George's Cross on a white field with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "be2f2df7d01d9ee46c7bc6d89250086ccfa8460d6150e369762bff0185f85170",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Royal Malaysian Navy's ensign, flown from the formation of Malaysia in 1963 until 1968, kept the same White Ensign layout used by Malaya's navy before it — a red St George's Cross on white — updating only the canton to the flag of the newly formed Federation of Malaysia, which had just united Malaya with Singapore, Sabah and Sarawak. The design changed again in 1968 to the blue-crossed ensign the Royal Malaysian Navy has flown since.",
+            "sources": [
+              {
+                "title": "Flags of the World — War Ensign 1963-1968 (Malaysia)",
+                "url": "https://www.crwflags.com/fotw/flags/my~w1963.html"
+              },
+              {
+                "title": "Wikipedia — List of Malaysian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "my-coast-guard",
@@ -20280,7 +20293,20 @@
           "design": "St George's Cross on a white field with the flag of Malaya in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "819425ce71f8a15b6aafee07f79d30521b053c21d265bbf20924e17e48040f72",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Royal Malayan Navy's ensign, flown from independence in 1957 until 1963, followed the Royal Navy's own White Ensign pattern — a red St George's Cross on white — with the Union Flag in the canton replaced by the flag of the newly independent Federation of Malaya. The design reflects Malaya's transition from British colonial rule while retaining the naval flag conventions of the Commonwealth navies it had trained and served alongside.",
+            "sources": [
+              {
+                "title": "Flags of the World — War Ensign 1957-1963 (Malaya)",
+                "url": "https://www.crwflags.com/fotw/flags/my~w1957.html"
+              },
+              {
+                "title": "Wikipedia — White Ensign",
+                "url": "https://en.wikipedia.org/wiki/White_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "my-civil-ensign-malaya",

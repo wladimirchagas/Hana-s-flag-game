@@ -5732,6 +5732,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — List of Malaysian flags", url: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     ],
   },
+  "my-navy-1963": {
+    description: "The Royal Malaysian Navy's ensign, flown from the formation of Malaysia in 1963 until 1968, kept the same White Ensign layout used by Malaya's navy before it — a red St George's Cross on white — updating only the canton to the flag of the newly formed Federation of Malaysia, which had just united Malaya with Singapore, Sabah and Sarawak. The design changed again in 1968 to the blue-crossed ensign the Royal Malaysian Navy has flown since.",
+    sources: [
+      { title: "Flags of the World — War Ensign 1963-1968 (Malaysia)", url: "https://www.crwflags.com/fotw/flags/my~w1963.html" },
+      { title: "Wikipedia — List of Malaysian flags", url: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
+    ],
+  },
+  "my-navy-1957": {
+    description: "The Royal Malayan Navy's ensign, flown from independence in 1957 until 1963, followed the Royal Navy's own White Ensign pattern — a red St George's Cross on white — with the Union Flag in the canton replaced by the flag of the newly independent Federation of Malaya. The design reflects Malaya's transition from British colonial rule while retaining the naval flag conventions of the Commonwealth navies it had trained and served alongside.",
+    sources: [
+      { title: "Flags of the World — War Ensign 1957-1963 (Malaya)", url: "https://www.crwflags.com/fotw/flags/my~w1957.html" },
+      { title: "Wikipedia — White Ensign", url: "https://en.wikipedia.org/wiki/White_Ensign" },
+    ],
+  },
   "my-agong": {
     description: "A yellow field — the colour of Malay royalty, standing for the sovereignty of the country's elected head of state — bears the Jata Negara, Malaysia's coat of arms, wreathed by two sheaves of paddy (rice) for abundance and prosperity; it is the standard of the Yang di-Pertuan Agong, the king elected every five years by and from the hereditary rulers of Malaysia's nine Malay states.",
     sources: [
