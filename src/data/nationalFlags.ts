@@ -6748,6 +6748,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Yatagarasu — Wikipedia", url: "https://en.wikipedia.org/wiki/Yatagarasu" },
     ],
   },
+  "ke-1895": {
+    description: "The East Africa Protectorate's Blue Ensign badge — a red lion, drawn from the royal arms of England, set on a white disc — asserted direct Crown authority over the territory, replacing the earlier commercial flags of the Imperial British East Africa Company. The white disc gave the red lion a contrasting background, visible at distance against the ensign's blue field, following the standard Colonial Office pattern used across British protectorates.",
+    sources: [
+      { title: "Kenya (British Colony) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ke-hist.html" },
+    ],
+  },
   "ke-ibeac": {
     description: "The company's own Union Flag carried this sun-and-crown badge on a white disc at its centre, surrounded by a laurel garland. The Imperial British East Africa Company's badge — a golden sun in splendour beneath the Imperial Crown — was designed to represent the company's motto \"Lux et Libertas\" (\"Light and Liberty\"). The chartered company administered the territory until 1895, when financial insolvency forced it to surrender its charter and the British government took over direct administration.",
     sources: [
@@ -8251,6 +8257,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Straits Settlements' badge — three gold imperial crowns separated by a red inverted pall (an upside-down Y) — represented the colony's three constituent settlements: Penang, Malacca and Singapore, one crown for each, set on a British Blue Ensign.",
     sources: [
       { title: "Flag of the British Straits Settlements (1874-1942) — SembangKuala", url: "https://sembangkuala.wordpress.com/2009/06/28/flag-of-the-british-straits-settlements-1874-1942/" },
+    ],
+  },
+  "my-north-borneo": {
+    description: "The badge of the North Borneo Chartered Company — chartered in 1881 to administer and exploit the resources of North Borneo, now Sabah — blazoned a red lion passant guardant on a gold disc, authorised for use on the defaced Union Flag, Blue Ensign and Red Ensign by an 1882 Admiralty warrant. The Company's administration continued even after North Borneo became a British protectorate in 1888, ending only in 1946 when North Borneo became a Crown colony.",
+    sources: [
+      { title: "British North Borneo 1881–1963 (Malaysia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/my-sa_nb.html" },
     ],
   },
   "my-fms": {
@@ -10838,6 +10850,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Tanganyika's 1961 independence flag took its green-black-green scheme from the Tanganyika African National Union (TANU), the party that led the country to independence: green for the land and its agricultural resources, black for the Tanganyikan people. Yellow fimbriations were added at Britain's suggestion; the design flew until Tanganyika united with Zanzibar in 1964 to form Tanzania.",
     sources: [
       { title: "Flag of Tanzania — Edarabia", url: "https://www.edarabia.com/tanzania/flag/" },
+    ],
+  },
+  "tz-tanganyika-territory": {
+    description: "Designed by Sir Horace Byatt, Tanganyika's first governor after Britain took the former German territory as a League of Nations mandate in 1919, this badge placed a giraffe's head on a white disc, following the practice among British East African territories of adopting a native animal as a badge — the giraffe chosen for its abundance across Tanganyika. It flew on the territory's ensign through the mandate and later UN trusteeship period, until Tanganyika's 1961 independence, when its own new national flag replaced it.",
+    sources: [
+      { title: "Flag of Tanganyika Territory — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tanganyika_Territory" },
     ],
   },
   "tz-german": {

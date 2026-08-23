@@ -17566,7 +17566,16 @@
           "design": "A British Blue Ensign defaced with the protectorate's badge.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
           "sha256": "f443c5c234dbdd0b924bce813eb593e57827e95e1a6b184ffaf4b581719f4a5c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The East Africa Protectorate's Blue Ensign badge — a red lion, drawn from the royal arms of England, set on a white disc — asserted direct Crown authority over the territory, replacing the earlier commercial flags of the Imperial British East Africa Company. The white disc gave the red lion a contrasting background, visible at distance against the ensign's blue field, following the standard Colonial Office pattern used across British protectorates.",
+            "sources": [
+              {
+                "title": "Kenya (British Colony) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ke-hist.html"
+              }
+            ]
+          }
         },
         {
           "id": "ke-ibeac",
@@ -24284,7 +24293,16 @@
           "design": "A Blue Ensign defaced with the badge of the North Borneo Chartered Company, which administered the territory that is now Sabah.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "6abe11272bd96b50ec454656fb6083d71a1589fa541ce9a69e61576af56ac765",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The badge of the North Borneo Chartered Company — chartered in 1881 to administer and exploit the resources of North Borneo, now Sabah — blazoned a red lion passant guardant on a gold disc, authorised for use on the defaced Union Flag, Blue Ensign and Red Ensign by an 1882 Admiralty warrant. The Company's administration continued even after North Borneo became a British protectorate in 1888, ending only in 1946 when North Borneo became a Crown colony.",
+            "sources": [
+              {
+                "title": "British North Borneo 1881–1963 (Malaysia) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/my-sa_nb.html"
+              }
+            ]
+          }
         },
         {
           "id": "my-north-borneo-crown",
@@ -34926,7 +34944,16 @@
           "design": "A British Blue Ensign defaced with the territory's giraffe badge, flown over the League of Nations mandate and then the UN trust territory.",
           "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
           "sha256": "33b859c07db427fbba63ad2709a63a9682993d2853a236db105c8a38a686700c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Designed by Sir Horace Byatt, Tanganyika's first governor after Britain took the former German territory as a League of Nations mandate in 1919, this badge placed a giraffe's head on a white disc, following the practice among British East African territories of adopting a native animal as a badge — the giraffe chosen for its abundance across Tanganyika. It flew on the territory's ensign through the mandate and later UN trusteeship period, until Tanganyika's 1961 independence, when its own new national flag replaced it.",
+            "sources": [
+              {
+                "title": "Flag of Tanganyika Territory — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Tanganyika_Territory"
+              }
+            ]
+          }
         },
         {
           "id": "tz-german",
