@@ -278,7 +278,16 @@
           "design": "The Union Flag, flown while the emirates were the British-protected Trucial States.",
           "source": "https://en.wikipedia.org/wiki/Trucial_States",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "ae-football-crest",
@@ -397,7 +406,16 @@
           "design": "The Union Flag, flown while Antigua and Barbuda was a British colony.",
           "source": "https://en.wikipedia.org/wiki/History_of_Antigua_and_Barbuda",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "ag-arms",
@@ -832,7 +850,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled Eastern Armenia from 1828 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "am-football-crest",
@@ -1623,7 +1650,16 @@
           "sovereign": "the United Kingdom",
           "reuse": "flags/gb.svg",
           "design": "The Union Flag of the United Kingdom, the flag flown over the Australian colonies until federation.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "au-gb-1770",
@@ -1979,7 +2015,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled the Azerbaijani khanates from 1828 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "az-football-crest",
@@ -2777,7 +2822,16 @@
           "design": "The French Tricolour, flown over the territory of Upper Volta as part of French West Africa.",
           "source": "https://en.wikipedia.org/wiki/French_Upper_Volta",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "bf-arms",
@@ -3080,7 +3134,16 @@
           "design": "The Union Flag, flown while Bahrain was a British protectorate.",
           "source": "https://en.wikipedia.org/wiki/History_of_Bahrain",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "bh-football-crest",
@@ -3259,7 +3322,16 @@
           "design": "The French Tricolour, flown over the colony of Dahomey as part of French West Africa.",
           "source": "https://en.wikipedia.org/wiki/French_Dahomey",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "bj-arms",
@@ -3540,7 +3612,16 @@
           "design": "The Union Flag, flown while Brunei was a British protected state until independence in 1984.",
           "source": "https://en.wikipedia.org/wiki/History_of_Brunei",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "bn-football-crest",
@@ -3702,7 +3783,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "A red ragged saltire on white — the ensign of the Spanish Empire, flown over Upper Peru from the conquest.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "bo-arms",
@@ -4486,7 +4576,16 @@
           "design": "The Union Flag, flown while Britain governed the territory as the Bechuanaland Protectorate.",
           "source": "https://en.wikipedia.org/wiki/Bechuanaland_Protectorate",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "bw-bdf",
@@ -4787,7 +4886,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled Belarus from 1795 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "by-football-crest",
@@ -4841,7 +4949,16 @@
           "design": "The Union Flag, flown while the territory was the British colony of British Honduras.",
           "source": "https://en.wikipedia.org/wiki/British_Honduras",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "bz-arms",
@@ -4997,7 +5114,16 @@
           "to": 1964,
           "reuse": "flags/gb.svg",
           "design": "The Union Flag, flown over Canada from the union with Ireland in 1801 until the Maple Leaf was adopted.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "ca-france-royal",
@@ -5460,7 +5586,16 @@
           "design": "The French Tricolour, flown over the territory of Ubangi-Shari as part of French Equatorial Africa.",
           "source": "https://en.wikipedia.org/wiki/Ubangi-Shari",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "cf-arms",
@@ -5571,7 +5706,16 @@
           "design": "The French Tricolour, flown over the territory as part of French Equatorial Africa.",
           "source": "https://en.wikipedia.org/wiki/French_Equatorial_Africa",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "cg-arms",
@@ -5787,7 +5931,16 @@
           "design": "The French Tricolour, flown over Ivory Coast under French colonial rule.",
           "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "ci-arms",
@@ -5991,7 +6144,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The ragged saltire of Burgundy, carried by Spanish forces from the conquest of Chile.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Chilean_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Chilean_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "cl-president",
@@ -6612,7 +6774,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The ragged saltire of Burgundy, flown over the New Kingdom of Granada.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "co-president",
@@ -6896,7 +7067,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The Cross of Burgundy, the flag of New Spain.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "cr-arms",
@@ -7004,7 +7184,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The ragged saltire of Burgundy, the Spanish military flag flown over the island.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "cu-spain",
@@ -7856,7 +8045,16 @@
           "design": "The French Tricolour, flown over French Somaliland and then the Territory of the Afars and the Issas.",
           "source": "https://en.wikipedia.org/wiki/French_Somaliland",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "dj-arms",
@@ -8122,7 +8320,16 @@
           "design": "The Union Flag, flown while Dominica was a British colony.",
           "source": "https://en.wikipedia.org/wiki/History_of_Dominica",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "dm-arms",
@@ -8220,7 +8427,16 @@
           "design": "The Cross of Burgundy, the flag Spain flew across its American empire, over Santo Domingo — the oldest European colony in the Americas.",
           "source": "https://en.wikipedia.org/wiki/Captaincy_General_of_Santo_Domingo",
           "sha256": "da25fa0124af5873cbf404c3c0349ac0beed61a96ed5fb65d77367a8969ee637",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "do-arms",
@@ -8525,7 +8741,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The Spanish military flag, flown from the founding of Quito in 1534.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "ec-president",
@@ -8706,7 +8931,16 @@
           "sovereign": "the Russian Empire",
           "reuse": "historical-flags/russian-empire.png",
           "design": "The white-blue-red tricolour of the empire, which had held the Estonian governorates since 1721.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "ee-teutonic",
@@ -8920,7 +9154,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled Estonia from 1721 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "ee-football-crest",
@@ -9393,7 +9636,16 @@
           "to": 1785,
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "A red ragged saltire on white — the ensign of Habsburg and early Bourbon Spain.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "es-civil",
@@ -9904,7 +10156,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled Finland from 1809 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "fi-football-crest",
@@ -9957,7 +10218,16 @@
           "design": "The Union Flag, flown while Fiji was a British Crown colony.",
           "source": "https://en.wikipedia.org/wiki/Colony_of_Fiji",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "fj-arms",
@@ -10353,7 +10623,16 @@
           "design": "The French Tricolour, flown over Gabon under French colonial rule.",
           "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "ga-arms",
@@ -10888,7 +11167,16 @@
           "design": "The Union Flag, flown while Grenada was a British colony.",
           "source": "https://en.wikipedia.org/wiki/British_Windward_Islands",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "gd-arms",
@@ -11136,7 +11424,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled Georgia from 1801 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "ge-football-crest",
@@ -11591,7 +11888,16 @@
           "design": "The Union Flag, flown while the Gambia was a British colony.",
           "source": "https://en.wikipedia.org/wiki/British_Gambia",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "gm-arms",
@@ -11689,7 +11995,16 @@
           "design": "The French Tricolour, flown over French Guinea as part of French West Africa.",
           "source": "https://en.wikipedia.org/wiki/French_Guinea",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "gn-arms",
@@ -12100,7 +12415,16 @@
           "design": "The Cross of Burgundy, the flag Spain flew across its American empire, over the Captaincy General of Guatemala until independence.",
           "source": "https://en.wikipedia.org/wiki/Captaincy_General_of_Guatemala",
           "sha256": "da25fa0124af5873cbf404c3c0349ac0beed61a96ed5fb65d77367a8969ee637",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "gt-arms",
@@ -12214,7 +12538,16 @@
           "reuse": "historical-flags/spain-burgundy.png",
           "sovereign": "Spain",
           "design": "The ensign of the Spanish Empire, flown over Guam from the founding of the Spanish mission in 1668.",
-          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "gu-spain-1785",
@@ -12602,7 +12935,16 @@
           "design": "The Union Flag, flown over the British colony of Hong Kong from 1841 before the colony adopted its own ensign.",
           "source": "https://en.wikipedia.org/wiki/British_Hong_Kong",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "hk-emblem",
@@ -12706,7 +13048,16 @@
           "design": "The Cross of Burgundy, the flag Spain flew across its American empire, over Honduras until independence.",
           "source": "https://en.wikipedia.org/wiki/New_Spain",
           "sha256": "da25fa0124af5873cbf404c3c0349ac0beed61a96ed5fb65d77367a8969ee637",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "hn-arms",
@@ -13072,7 +13423,16 @@
           "design": "The French Tricolour, flown over the colony of Saint-Domingue in its last decade, before the enslaved population overthrew French rule.",
           "source": "https://en.wikipedia.org/wiki/Saint-Domingue",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "ht-arms",
@@ -13982,7 +14342,16 @@
           "design": "The Union Flag, the Union Flag of the British Mandate for Palestine.",
           "source": "https://en.wikipedia.org/wiki/Mandatory_Palestine",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "il-football-crest",
@@ -14168,7 +14537,16 @@
           "sovereign": "the United Kingdom",
           "reuse": "flags/gb.svg",
           "design": "The Union Flag, the official flag over British India from the Crown's assumption of rule in 1858 until independence.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "in-raj-ensign",
@@ -14479,7 +14857,16 @@
           "design": "The Union Flag, the Union Flag of the British Mandate for Mesopotamia.",
           "source": "https://en.wikipedia.org/wiki/Mandatory_Iraq",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "iq-football-crest",
@@ -16079,7 +16466,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled the Kyrgyz lands from 1876 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "kg-football-crest",
@@ -16324,7 +16720,16 @@
           "design": "The Union Flag, flown while the islands were the British Gilbert and Ellice Islands colony.",
           "source": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "ki-arms",
@@ -16413,7 +16818,16 @@
           "design": "The French Tricolour, flown over the Comoro Islands as a French colony.",
           "source": "https://en.wikipedia.org/wiki/History_of_the_Comoros",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "km-arms",
@@ -16511,7 +16925,16 @@
           "design": "The Union Flag, flown while the islands were a British colony.",
           "source": "https://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "kn-arms",
@@ -17414,7 +17837,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled the Kazakh steppe from 1731 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "kz-football-crest",
@@ -17526,7 +17958,16 @@
           "design": "The flag of France, flown while Laos was a protectorate within French Indochina until independence in 1953.",
           "source": "https://en.wikipedia.org/wiki/French_protectorate_of_Laos",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "la-football-crest",
@@ -17743,7 +18184,16 @@
           "design": "The Union Flag — Saint Lucia changed hands between Britain and France fourteen times before becoming a British colony in 1814.",
           "source": "https://en.wikipedia.org/wiki/History_of_Saint_Lucia",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "lc-arms",
@@ -18050,7 +18500,16 @@
           "design": "The Union Flag, flown while Ceylon (now Sri Lanka) was a British Crown colony.",
           "source": "https://en.wikipedia.org/wiki/British_Ceylon",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "lk-football-crest",
@@ -18227,7 +18686,16 @@
           "design": "The Union Flag, flown while Basutoland was a British protectorate.",
           "source": "https://en.wikipedia.org/wiki/Basutoland",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "ls-arms",
@@ -18471,7 +18939,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled Lithuania from 1795 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "lt-football-crest",
@@ -18570,7 +19047,16 @@
           "design": "The ragged saltire flown over Luxembourg as part of the Spanish Netherlands.",
           "source": "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags",
           "sha256": "da25fa0124af5873cbf404c3c0349ac0beed61a96ed5fb65d77367a8969ee637",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "lu-arms",
@@ -18837,7 +19323,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled the Latvian lands from 1795 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "lv-football-crest",
@@ -19202,7 +19697,16 @@
           "design": "The flag of France, flown over the French protectorate of Morocco until independence in 1956.",
           "source": "https://en.wikipedia.org/wiki/French_protectorate_in_Morocco",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "ma-football-crest",
@@ -19443,7 +19947,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled Bessarabia from 1812 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "md-football-crest",
@@ -19656,7 +20169,16 @@
           "design": "The French Tricolour, flown over Madagascar as a French colony from the 1896 annexation until the 1958 flag.",
           "source": "https://en.wikipedia.org/wiki/History_of_Madagascar",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "mg-arms",
@@ -20225,7 +20747,16 @@
           "design": "The Union Flag, flown while Burma (now Myanmar) was a British colony.",
           "source": "https://en.wikipedia.org/wiki/British_rule_in_Burma",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "mm-football-crest",
@@ -20581,7 +21112,16 @@
           "reuse": "historical-flags/spain-burgundy.png",
           "sovereign": "Spain",
           "design": "The ensign of the Spanish Empire, which claimed the Marianas from 1565.",
-          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "mp-spain-1785",
@@ -20683,7 +21223,16 @@
           "design": "The French Tricolour, flown over Mauritania as part of French West Africa.",
           "source": "https://en.wikipedia.org/wiki/French_West_Africa",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "mr-arms",
@@ -20990,7 +21539,16 @@
           "design": "The Union Flag, flown while Mauritius was a British colony, from the 1810 capture of the island until independence.",
           "source": "https://en.wikipedia.org/wiki/British_Mauritius",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "mu-arms",
@@ -21132,7 +21690,16 @@
           "design": "The Union Flag, flown while the Maldives was a British protectorate.",
           "source": "https://en.wikipedia.org/wiki/History_of_the_Maldives",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "mv-football-crest",
@@ -21423,7 +21990,16 @@
           "reuse": "historical-flags/spain-burgundy.png",
           "sovereign": "Spain",
           "design": "A red ragged saltire on white — the ensign of the Spanish Empire, flown over New Spain from the conquest.",
-          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "mx-spain-1785",
@@ -22395,7 +22971,16 @@
           "design": "The French Tricolour, flown over Niger under French colonial rule.",
           "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "ne-arms",
@@ -22655,7 +23240,16 @@
           "design": "The Union Flag, flown over the British colony of Nigeria until independence in 1960.",
           "source": "https://en.wikipedia.org/wiki/Colonial_Nigeria",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "ng-football-crest",
@@ -22762,7 +23356,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The Cross of Burgundy, flag of New Spain.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "ni-arms",
@@ -23547,7 +24150,16 @@
           "sovereign": "the United Kingdom",
           "reuse": "flags/gb.svg",
           "design": "The Union Flag, which served as New Zealand’s flag from the Treaty of Waitangi until a distinct colonial ensign was granted.",
-          "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "nz-royal-1962",
@@ -24178,7 +24790,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The ragged saltire of Burgundy, flown over the Viceroyalty of Peru from its foundation in 1542.",
-          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru"
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "pe-president",
@@ -24620,7 +25241,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The ragged saltire of Burgundy, flown when the islands were governed from New Spain.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Philippine_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Philippine_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "ph-war-flag",
@@ -25181,7 +25811,16 @@
           "design": "The Union Flag, flown over British India until partition and independence in 1947.",
           "source": "https://en.wikipedia.org/wiki/British_Raj",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "pk-football-crest",
@@ -25446,7 +26085,16 @@
           "reuse": "historical-flags/spain-burgundy.png",
           "sovereign": "Spain",
           "design": "A red ragged saltire on white — the ensign of the Spanish Empire, flown over Puerto Rico from the conquest.",
-          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "pr-spain-1785",
@@ -25507,7 +26155,16 @@
           "design": "The Union Flag, flown as the official flag of the British Mandate for Palestine from 1920 until it ended in 1948.",
           "source": "https://en.wikipedia.org/wiki/Mandatory_Palestine",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "ps-arms",
@@ -26061,7 +26718,16 @@
           "reuse": "historical-flags/spain-burgundy.png",
           "sovereign": "Spain",
           "design": "A red ragged saltire on white — the ensign of the Spanish Empire, flown over the Río de la Plata from the conquest.",
-          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "py-spain-1785",
@@ -26712,7 +27378,16 @@
           "priorPolity": "the Russian Empire",
           "reuse": "historical-flags/russian-empire.png",
           "design": "The white-blue-red tricolour, naval from 1693 and the empire's national flag from 1896 until the revolution.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Russia"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Russia",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "ru-empire-state",
@@ -27380,7 +28055,16 @@
           "design": "The Union Flag, flown while the islands were the British Solomon Islands Protectorate.",
           "source": "https://en.wikipedia.org/wiki/British_Solomon_Islands",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "sb-arms",
@@ -27491,7 +28175,16 @@
           "design": "The Union Flag, flown while Seychelles was a British colony, from 1814 until independence.",
           "source": "https://en.wikipedia.org/wiki/British_Seychelles",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "sc-arms",
@@ -27711,7 +28404,16 @@
           "design": "The Union Flag of the Anglo-Egyptian condominium that governed Sudan until independence in 1956.",
           "source": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "sd-football-crest",
@@ -28517,7 +29219,16 @@
           "design": "The Union Flag, flown while Sierra Leone was a British Crown colony and protectorate.",
           "source": "https://en.wikipedia.org/wiki/British_Sierra_Leone",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "sl-arms",
@@ -28705,7 +29416,16 @@
           "design": "The French Tricolour, flown over Senegal as part of French West Africa.",
           "source": "https://en.wikipedia.org/wiki/French_West_Africa",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "sn-arms",
@@ -28821,7 +29541,16 @@
           "design": "The Union Flag, flown over British Somaliland in the north until 1960.",
           "source": "https://en.wikipedia.org/wiki/British_Somaliland",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "so-arms",
@@ -29301,7 +30030,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The Cross of Burgundy, flown from the Spanish conquest.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "sv-arms",
@@ -29561,7 +30299,16 @@
           "design": "The Union Flag, flown while Swaziland was a British protectorate.",
           "source": "https://en.wikipedia.org/wiki/Swaziland_Protectorate",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "sz-arms",
@@ -29708,7 +30455,16 @@
           "design": "The French Tricolour, flown over Chad under French colonial rule.",
           "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "td-arms",
@@ -29806,7 +30562,16 @@
           "design": "The French Tricolour, flown over Togo under French colonial rule.",
           "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "tg-german",
@@ -30271,7 +31036,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled the Tajik lands from 1868 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "tj-football-crest",
@@ -30514,7 +31288,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled Transcaspia from 1881 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "tm-football-crest",
@@ -30803,7 +31586,16 @@
           "design": "The Union Flag, flown while Tonga was a British-protected state.",
           "source": "https://en.wikipedia.org/wiki/History_of_Tonga",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "to-football-crest",
@@ -31009,7 +31801,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The Cross of Burgundy, flown over Trinidad through the long Spanish colonial period before the island passed to Britain.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "tt-president",
@@ -31864,7 +32665,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled much of Ukraine from 1793 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "ua-football-crest",
@@ -33209,7 +34019,16 @@
           "design": "The white-blue-red flag of the Russian Empire, which ruled the Uzbek lands from 1876 until the empire fell in 1917.",
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "uz-football-crest",
@@ -33334,7 +34153,16 @@
           "design": "The Union Flag, flown while Saint Vincent was a British colony.",
           "source": "https://en.wikipedia.org/wiki/History_of_Saint_Vincent_and_the_Grenadines",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "vc-arms",
@@ -33543,7 +34371,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The ragged saltire of Burgundy, the Spanish military flag flown in the Americas.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "ve-president",
@@ -34068,7 +34905,16 @@
           "design": "The Union Flag — the New Hebrides were governed jointly by Britain and France as a condominium until 1980.",
           "source": "https://en.wikipedia.org/wiki/New_Hebrides",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "vu-france",
@@ -34082,7 +34928,16 @@
           "design": "The French Tricolour — France shared the government of the New Hebrides with Britain until 1980.",
           "source": "https://en.wikipedia.org/wiki/New_Hebrides",
           "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+            "sources": [
+              {
+                "title": "Flag of France — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-France"
+              }
+            ]
+          }
         },
         {
           "id": "vu-arms",
@@ -34488,7 +35343,16 @@
           "sovereign": "the United Kingdom",
           "reuse": "flags/gb.svg",
           "design": "The Union Flag of the United Kingdom, flown over the Cape and Natal colonies until union.",
-          "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
+          "meaning": {
+            "description": "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+            "sources": [
+              {
+                "title": "Flag of the United Kingdom — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
+              }
+            ]
+          }
         },
         {
           "id": "za-voc",

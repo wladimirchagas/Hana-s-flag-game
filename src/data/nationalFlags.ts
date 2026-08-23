@@ -2600,6 +2600,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Andorra — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra" },
     ],
   },
+  "ae-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "ae-armed-forces": {
     description: "The flag of the UAE Armed Forces bears the national emblem: a golden falcon, a bird long revered in Arab culture as a symbol of strength, courage and freedom, its breast bearing a disc with the national flag encircled by seven stars. The seven stars and the falcon's seven tail feathers both stand for the seven emirates of the federation, while the falcon grips a red scroll naming the country in Kufic Arabic script.",
     sources: [
@@ -2649,6 +2655,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Afghan passports issued today still bear the name \"Islamic Republic of Afghanistan\" — the state's title before the Taliban's 2021 return to power and renaming of the country to the \"Islamic Emirate of Afghanistan\" — because that older republican-era document format remains the one accepted for international travel, leaving the passport's own cover a step behind the country's current official name.",
     sources: [
       { title: "Afghan passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Afghan_passport" },
+    ],
+  },
+  "ag-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "ag-arms": {
@@ -2703,6 +2715,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The black double-headed eagle on red repeats Albania's own national flag. It was a common heraldic symbol among Albanian noble families in the late Middle Ages, and became identified with Albanians generally after the 15th-century lord Skanderbeg adopted the same double-headed-eagle design used in Eastern Roman (Byzantine) imperial heraldry for his revolt against Ottoman rule; the eagle remained a symbol of Albanian national identity through Ottoman rule and was raised as the flag of the newly independent state in 1912. FSHF is the federation's own initials, the Federata Shqiptare e Futbollit (Albanian Football Federation).",
     sources: [
       { title: "Flag of Albania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
+    ],
+  },
+  "am-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
   "am-president": {
@@ -2849,6 +2867,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Australian flags — Department of the Prime Minister and Cabinet", url: "https://www.pmc.gov.au/government/australian-national-symbols/australian-flags" },
     ],
   },
+  "au-uk-1801": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "au-adf": {
     description: "The three stripes stand for the three armed services — red for the Army, dark blue for the Royal Australian Navy and light blue for the Royal Australian Air Force — and the central badge combines a symbol for each: crossed swords for the Army, an anchor for the Navy, and a wedge-tailed eagle for the Air Force, above a boomerang and below the seven-pointed Commonwealth Star; adopted in 2000 for use in joint Defence Force activities.",
     sources: [
@@ -2919,6 +2943,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The golden stag on blue has an unusual origin: the arms were granted to the Swedish province of Öland in 1560 and passed to Åland through a centuries-long heraldic mix-up of the two near-identically-named provinces, becoming Åland's official arms only on 10 December 1952. The stag's own symbolism is not recorded; Åland's earliest known seal, from 1326, instead showed Saint Olaf, the islands' patron saint.",
     sources: [
       { title: "Coat of arms of Åland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land" },
+    ],
+  },
+  "az-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
   "az-land-forces": {
@@ -3085,6 +3115,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Belgium national football team logo — 1000 Logos", url: "https://1000logos.net/belgium-national-football-team-logo/" },
     ],
   },
+  "bf-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
+    ],
+  },
   "bf-arms": {
     description: "The shield carries the red, green and gold star of the national flag. Two white stallions — the horse being an old emblem of the Mossi kingdoms — support it, standing over ears of millet, the staple grain. The upper ribbon gives the country's name, Burkina Faso (“land of upright people”), and the lower one the motto Unité, Progrès, Justice — “Unity, Progress, Justice.”",
     sources: [
@@ -3128,6 +3164,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
     ],
   },
+  "bh-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "bh-arms": {
     description: "The arms are simply the shield of the flag — white and red divided by the serrated line whose white points stand for the five pillars of Islam — set on red and white mantling, and unusually for heraldry, without a helm. The same serrated shield forms the hoist of the national flag.",
     sources: [
@@ -3164,6 +3206,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Burundi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
     ],
   },
+  "bj-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
+    ],
+  },
   "bj-arms": {
     description: "The shield is quartered: a Somba tower-house for the country's own history; the Star of Benin, its highest decoration; a sailing ship for the arrival of the Europeans; and a palm tree. Two leopards — the national animal — support it, and beneath, two cornucopias pour out ears of corn. The ribbon reads Fraternité, Justice, Travail — “Fraternity, Justice, Work.”",
     sources: [
@@ -3187,6 +3235,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Granted by Royal Warrant on 4 October 1910 though in use since the 1620s. A red lion — the lion of England, marking Bermuda's tie to Britain — holds a shield showing the wreck of the Sea Venture, the flagship bound for Jamestown that Sir George Somers deliberately ran onto Bermuda's reefs in a 1609 hurricane; its 150 survivors founded the colony, so the shipwreck that stranded them is remembered as the island's origin. The motto Quo Fata Ferunt — 'Whither the Fates Carry Us' — recalls that the settlers reached Bermuda by chance of storm.",
     sources: [
       { title: "Coat of arms of Bermuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda" },
+    ],
+  },
+  "bn-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "bn-war-flag": {
@@ -3227,6 +3281,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Wiphala — Wikipedia", url: "https://en.wikipedia.org/wiki/Wiphala" },
       { title: "List of Bolivian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
+    ],
+  },
+  "bo-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "bo-naval-ensign": {
@@ -3384,6 +3444,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Bhutan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
     ],
   },
+  "bw-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "bw-bdf": {
     description: "The upper light-blue band represents the traditional military uniform and the lower band the bush environment soldiers operate in; the red band stands for the blood shed and to be shed in defence of the nation; the two white stripes flanking it represent peace and the Defence Force's effort to contain and prevent bloodshed through deterrence; and the central badge, with the letters BDF, stands for the whole nation — its people, infrastructure and land — that the force, formed in 1977, exists to defend.",
     sources: [
@@ -3406,6 +3472,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Botswana's blue passport bears the national coat of arms, adopted in 1966: a shield flanked by two zebras — deliberately chosen because the animal belongs to no single tribe's totem, making it politically neutral, and because its black-and-white stripes were read as symbolising the unity of the country's people as one nation, an idea the national flag repeats. Three cogwheels above the shield represent industry, three wavy blue bands stand for water — echoing the national motto \"Pula\", meaning \"rain\" — and a bull's head marks the importance of cattle herding to Botswana's economy.",
     sources: [
       { title: "Coat of arms of Botswana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana" },
+    ],
+  },
+  "by-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
   "by-armed-forces": {
@@ -3452,6 +3524,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Corporate style of Association «Belarus Football Federation» — a-v-c.by", url: "https://www.a-v-c.by/en/projects/corporate-style-of-association-belarus-football-federation/" },
     ],
   },
+  "bz-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "bz-arms": {
     description: "Behind the shield rises a mahogany tree, the timber on which the colonial economy was built. The shield shows a woodcutter's tools — an axe and a paddle, a saw and a squaring axe — above a ship under sail. Two woodcutters, one of African and one of mixed descent, support it, and the motto reads Sub Umbra Floreo — “Under the shade I flourish,” the shade of the mahogany.",
     sources: [
@@ -3475,6 +3553,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A 1964 Canadian Parliament resolution confirmed the Union Flag would continue to be flown on specified days to symbolise Canada's membership of the Commonwealth and its historical ties to Britain, alongside the Maple Leaf as the country's national flag.",
     sources: [
       { title: "List of Canadian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Canadian_flags" },
+    ],
+  },
+  "ca-union-flag": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "ca-forces": {
@@ -3564,6 +3648,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "African football – What's in a nickname? — Al Jazeera", url: "https://www.aljazeera.com/features/2015/1/29/african-football-whats-in-a-nickname" },
     ],
   },
+  "cf-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
+    ],
+  },
   "cf-arms": {
     description: "The shield gathers the country's emblems: an elephant and a baobab tree for its nature and its backbone; an open hand, the symbol of the party that led it to independence; and a gold star on a map of Africa, marking the Central African Republic at the continent's heart. A rising sun crowns it for the dawn of independence, and the Order of Operational Merit hangs below. Two ribbons carry the mottoes — in Sango, Zo Kwe Zo, “All people are people,” and in French, Unité, Dignité, Travail, “Unity, Dignity, Work.”",
     sources: [
@@ -3580,6 +3670,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The flag deliberately combines the colours of France (blue and white) with the Pan-African colours (green and yellow): blue for the sky and freedom, white for peace and dignity, green for hope and faith, and yellow for tolerance. The red stripe crossing all four bands stands for the shared blood of humanity — designer Barthélemy Boganda's own expression of a willingness to shed blood for both Africa and the Central African Republic — and the gold star for the country's aspiration to a vibrant future.",
     sources: [
       { title: "Flag of the Central African Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic" },
+    ],
+  },
+  "cg-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
     ],
   },
   "cg-arms": {
@@ -3625,6 +3721,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Swiss Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Swiss_Football_Association" },
     ],
   },
+  "ci-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
+    ],
+  },
   "ci-arms": {
     description: "The elephant's head is the country's namesake — Côte d'Ivoire, the Ivory Coast — and an emblem of its strength. Above it a rising sun stands for the new beginning of independence, and the banner carries the country's name. Together they speak to national solidarity in the face of adversity.",
     sources: [
@@ -3653,6 +3755,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The circle of stars echoes the Cook Islands' national flag, whose fifteen stars represent the fifteen islands that make up the country.",
     sources: [
       { title: "Flag of the Cook Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
+    ],
+  },
+  "cl-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "cl-army": {
@@ -3765,6 +3873,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Tiananmen — Wikipedia", url: "https://en.wikipedia.org/wiki/Tiananmen" },
     ],
   },
+  "co-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    ],
+  },
   "co-army": {
     description: "The national tricolour, marked \"REPÚBLICA DE COLOMBIA\" above the Army's own coat of arms and \"EJÉRCITO\" below, bears crossed cannon tubes for the artillery's patron saint, Santa Bárbara; a gold three-towered castle on a purple field (a colour read as standing for modesty, prudence and hard-won triumph) for strength won through will and effort; and a burnished steel helmet crested with plumes in the national colours, a mark of legitimacy.",
     sources: [
@@ -3826,6 +3940,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica" },
     ],
   },
+  "cr-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    ],
+  },
   "cr-arms": {
     description: "The official description reads the arms as the country's geography: three volcanoes, one for each of its mountain ranges, and a broad valley between two oceans — the Pacific and the Caribbean — with a merchant ship on each, for the country's maritime history, under a rising sun. The stars above are a count that CHANGED: the 1848 design had five, one per province, and two more were added in 1964 to make seven when Puntarenas and Limón had reached provincial status. The arms are attributed to Pacífica Fernández, wife of President José María Castro Madriz, who designed the flag at the same time; the military trophies the original carried were removed by law in 1906.",
     sources: [
@@ -3842,6 +3962,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The colours are Costa Rica's national flag colours: blue for the sky and idealism, white for peace and clear thinking, and red for the warmth of the Costa Rican people and the blood shed for their freedom.",
     sources: [
       { title: "Flag of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
+    ],
+  },
+  "cu-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "cu-naval-jack": {
@@ -4015,6 +4141,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
     ],
   },
+  "dj-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
+    ],
+  },
   "dj-arms": {
     description: "An upright spear stands before a shield, and on either side a hand rises holding a large machete — the two hands for the country's two peoples, the Issa and the Afar. Above, a red star stands for the unity between them, the same star as on the flag. Laurel branches frame the whole.",
     sources: [
@@ -4076,6 +4208,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Danish Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Danish_Football_Association" },
     ],
   },
+  "dm-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "dm-arms": {
     description: "The shield is quartered by a cross: a canoe on the sea, a banana tree, a tall coconut palm and a crapaud, the mountain frog of the island. Two Sisserou parrots — the national bird, found only on Dominica — brace the shield, and a lion crowns the crest. The motto, in the island's French creole, reads Après Bondie C'est La Ter — “After God, the Earth.”",
     sources: [
@@ -4092,6 +4230,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Sisserou parrot and the ring of ten stars are taken from Dominica's national flag: the parrot is the country's endangered national bird, found only on Dominica, and the ten stars stand for the island's ten parishes.",
     sources: [
       { title: "Flag of Dominica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
+    ],
+  },
+  "do-spanish": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "do-arms": {
@@ -4143,6 +4287,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "1990 African Cup of Nations — Wikipedia", url: "https://en.wikipedia.org/wiki/1990_African_Cup_of_Nations" },
     ],
   },
+  "ec-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    ],
+  },
   "ec-army": {
     description: "The flag of the Ecuadorian Army is a plain red field bearing the army's own coat of arms, officially adopted in 1954 alongside the force's shield and anthem. It traces back to an 1812 document describing 'a flag of red taffeta, with a white cross', a design the army later took up as its own on the way to its modern form.",
     sources: [
@@ -4180,6 +4330,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The stripe repeats the colours of Ecuador's own national flag, inherited from the flag of Gran Colombia: yellow for the country's crops and fertile soil, blue for its oceans and clear skies, and red for the blood of those who died fighting for its independence. FEF is the federation's own initials.",
     sources: [
       { title: "Flag of Ecuador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
+    ],
+  },
+  "ee-russia": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
+    ],
+  },
+  "ee-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
   "ee-defence": {
@@ -4301,6 +4463,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
     ],
   },
+  "es-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    ],
+  },
   "es-naval-jack": {
     description: "The four quarters are the historic arms of the medieval kingdoms whose union formed Spain: a gold tower for Castile, a red lion for León, four red bars for Aragon, and gold chains for Navarre.",
     sources: [
@@ -4363,6 +4531,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
     ],
   },
+  "fi-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
+    ],
+  },
   "fi-war-flag": {
     description: "The swallow-tailed shape and the national coat of arms — a crowned lion wielding a sword and trampling a sabre — mark this as Finland's war flag and naval ensign, distinguishing military and state use from the plain civil flag.",
     sources: [
@@ -4417,6 +4591,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue Nordic cross on white repeats Finland's own national flag, adopted in 1918 after independence from Russia; its cross shape follows the same Scandinavian tradition shared with Sweden, Norway and Denmark. Blue is popularly read as the country's lakes and sky, white as the snow that covers the land in winter. “Suomi” is simply the Finnish name for Finland.",
     sources: [
       { title: "Flag of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
+    ],
+  },
+  "fj-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "fj-arms": {
@@ -4484,6 +4664,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Gallic rooster — Wikipedia", url: "https://en.wikipedia.org/wiki/Gallic_rooster" },
       { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
+    ],
+  },
+  "ga-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
     ],
   },
   "ga-arms": {
@@ -4612,6 +4798,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Shamrock — Wikipedia", url: "https://en.wikipedia.org/wiki/Shamrock" },
     ],
   },
+  "gd-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "gd-arms": {
     description: "A cross divides the shield, a golden lion of England in each quarter, with the Santa María — the ship of Columbus, who sighted the island — at the centre. The crest is a garland of bougainvillea holding seven golden roses for the seven parishes. An armadillo with a nutmeg branch and a Grenada dove support the shield before Mount St Catherine, a lake and a banana tree. The motto reads “Ever Conscious of God We Aspire, Build and Advance as One People.”",
     sources: [
@@ -4628,6 +4820,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The colours, stars and central disc are taken from Grenada's national flag: the gold stars stand for the country's parishes and its two sister islands of Carriacou and Petite Martinique, the green represents the islands' vegetation, and the gold evokes the sun and the warmth of Grenadians.",
     sources: [
       { title: "Flag of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
+    ],
+  },
+  "ge-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
   "ge-army": {
@@ -4732,6 +4930,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Greenland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greenland" },
     ],
   },
+  "gm-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "gm-arms": {
     description: "Two lions — recalling the country's time within the British Empire — hold a hoe and an axe and support a blue shield bearing the same hoe and axe crossed, for the farming on which the country depends and for the two peoples who work the land. Above the shield a heraldic helm bears an oil palm as its crest. The ribbon reads “Progress, Peace, Prosperity.”",
     sources: [
@@ -4748,6 +4952,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The scorpion gives the national team its own nickname, the Scorpions — named in 1985 by the country's Sports Minister with the reasoning \"like The Gambia, the Scorpion is small, but when it stings, you know it's no joke.\" The red, blue and green repeat the country's own national flag.",
     sources: [
       { title: "Scorpions: The History Behind The Name — The Standard (Gambia)", url: "https://standard.gm/scorpions-the-history-behind-the-name/" },
+    ],
+  },
+  "gn-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
     ],
   },
   "gn-arms": {
@@ -4830,6 +5040,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of South Georgia and the South Sandwich Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Georgia_and_the_South_Sandwich_Islands" },
     ],
   },
+  "gt-spanish": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    ],
+  },
   "gt-arms": {
     description: "A resplendent quetzal — the free-flying national bird, long believed to die in captivity, and so an emblem of liberty and sovereignty — perches on a scroll reading Libertad 15 de Septiembre de 1821, the date of independence. Crossed Remington rifles stand for the readiness to defend the country and crossed swords for justice and honour, all within a wreath of laurel for victory.",
     sources: [
@@ -4853,6 +5069,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The seal's almond shape recalls the sling stones used by the ancient Chamorro people; it depicts a proa (traditional outrigger canoe) sailing in Hagåtña Bay before the cliffs of the island's coastline.",
     sources: [
       { title: "Flag of Guam — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guam" },
+    ],
+  },
+  "gu-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "gu-seal": {
@@ -4923,6 +5145,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Hong Kong — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
     ],
   },
+  "hk-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "hk-emblem": {
     description: "The emblem carries the same device as the flag: the white five-petal Bauhinia × blakeana, the orchid tree discovered in Hong Kong that stands for the territory itself. A red star sits on each petal, mirroring the stars of China's national flag to show that Hong Kong is part of China; the red field matches China's flag. Together the red and white embody the 'one country, two systems' framework. Adopted at the 1997 handover.",
     sources: [
@@ -4939,6 +5167,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The dragon is a longstanding symbol of power, strength and good fortune in Chinese culture, historically associated with imperial authority.",
     sources: [
       { title: "Chinese dragon — Wikipedia", url: "https://en.wikipedia.org/wiki/Chinese_dragon" },
+    ],
+  },
+  "hn-spanish": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "hn-arms": {
@@ -5008,6 +5242,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Croatian checkerboard — Wikipedia", url: "https://en.wikipedia.org/wiki/Croatian_checkerboard" },
       { title: "Croatian Football Federation — Wikipedia", url: "https://en.wikipedia.org/wiki/Croatian_Football_Federation" },
+    ],
+  },
+  "ht-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
     ],
   },
   "ht-arms": {
@@ -5153,6 +5393,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Shamrock — Wikipedia", url: "https://en.wikipedia.org/wiki/Shamrock" },
     ],
   },
+  "il-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "il-idf": {
     description: "The sword represents military strength and readiness for combat; the olive branch expresses a yearning for peace; and the Star of David marks the Israel Defense Forces as the army of the Jewish state — the sword-and-branch design was inherited from the Haganah, the pre-statehood militia that formed the IDF's core in 1948.",
     sources: [
@@ -5228,6 +5474,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Isle of Man — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Isle_of_Man" },
     ],
   },
+  "in-uk-1858": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "in-armed-forces": {
     description: "The flag's three colours each stand for one of India's armed services: red for the Army, navy blue for the Navy, and light (sky) blue for the Air Force — a design based on the United Kingdom's own Joint Services flag.",
     sources: [
@@ -5282,6 +5534,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "The new AIFF logo — Indian Football (official) via X/Twitter", url: "https://x.com/IndianFootball/status/781020193900339200" },
       { title: "AIFF gets a new logo — Business Standard", url: "https://www.business-standard.com/article/pti-stories/aiff-gets-a-new-logo-116092801000_1.html" },
+    ],
+  },
+  "iq-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "iq-ground-forces": {
@@ -5598,6 +5856,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
   },
+  "kg-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
+    ],
+  },
   "kg-emblem": {
     description: "A white falcon with wings spread — the falcon of Manas, the hero of the national epic, standing for freedom and vision — flies before the peaks of the Tian Shan and a rising sun whose golden rays light the land. Ears of wheat and bolls of cotton frame the emblem, with Lake Issyk-Kul in the design below.",
     sources: [
@@ -5648,6 +5912,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Bayon — Wikipedia", url: "https://en.wikipedia.org/wiki/Bayon" },
     ],
   },
+  "ki-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "ki-arms": {
     description: "A golden frigatebird flies over a rising sun on the wavy sea — the same device the flag carries. The rays of the sun stand for the sixteen Gilbert Islands and Banaba, the three wave-bands for the three island groups (the Gilberts, the Phoenix and the Line Islands), and the frigatebird for command of the sea. The motto, in Gilbertese, reads Te Mauri, Te Raoi ao Te Tabomoa — “Health, Peace and Prosperity.”",
     sources: [
@@ -5658,6 +5928,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Kiribati's passport bears the national coat of arms: a golden frigatebird flying over a rising sun on a red field, above blue and white wavy stripes representing the Pacific Ocean. The frigatebird symbolises power, freedom and Kiribati's connection to sea and sky, while the sun's rays represent the 16 Gilbert Islands and Banaba, and the three pairs of wave stripes represent the nation's three archipelagos — the Gilbert, Phoenix and Line Islands.",
     sources: [
       { title: "Coat of arms of Kiribati — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kiribati" },
+    ],
+  },
+  "km-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
     ],
   },
   "km-arms": {
@@ -5676,6 +5952,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The crescent-and-stars motif echoes the Comoros' national flag, where the green field and white crescent represent the country's Islamic faith and the four stars stand for its four main islands: Grande Comore, Anjouan, Mohéli and Mayotte.",
     sources: [
       { title: "Flag of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
+    ],
+  },
+  "kn-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "kn-arms": {
@@ -5810,6 +6092,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Cayman Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands" },
     ],
   },
+  "kz-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
+    ],
+  },
   "kz-armed-forces": {
     description: "The war flag of the Kazakh Armed Forces is blue, bearing a red, gold-bordered star superimposed with a simplified version of the national emblem's sun and steppe eagle. The sun, with grain-shaped rays, stands for life, energy and abundance, while the eagle — a device that has flown on the banners of Kazakh tribes for centuries — represents freedom, power and the nation's flight toward the future.",
     sources: [
@@ -5860,6 +6148,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The golden sun and soaring eagle both repeat Kazakhstan's own national flag: the sun stands for life, energy and abundance, its rays shaped like grain; the steppe eagle has flown on the standards of Kazakh tribes for centuries and stands for freedom, power and the flight to the future. KFF is simply the federation's own initials, the Kazakhstan Football Federation.",
     sources: [
       { title: "Flag of Kazakhstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
+    ],
+  },
+  "la-france": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
     ],
   },
   "la-emblem": {
@@ -5916,6 +6210,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Lebanon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
     ],
   },
+  "lc-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "lc-arms": {
     description: "On a black shield, two stalks of bamboo form a cross around a Tudor rose and a fleur-de-lys — the rose for Britain and the lily for France, the two powers that fought over the island — with an African stool at the centre for the islanders' heritage. Two Saint Lucia parrots, the national bird, support the shield, and a hand holding a torch crowns it. The motto reads “The Land, The People, The Light.”",
     sources: [
@@ -5945,6 +6245,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Coat of arms of Liechtenstein — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein" },
       { title: "How the Principality of Liechtenstein came into being — Swiss National Museum", url: "https://blog.nationalmuseum.ch/en/2024/08/how-the-principality-of-liechtenstein-came-into-being/" },
+    ],
+  },
+  "lk-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "lk-air-force": {
@@ -6004,6 +6310,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Liberia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
     ],
   },
+  "ls-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "ls-arms": {
     description: "On a Basotho shield sits a crocodile — the totem of the royal Bakoena clan, carried over from the arms of Basutoland. Behind the shield are crossed an assegai (spear) and a knobkierie (club), and two Basotho horses support it, standing before Thaba Bosiu, the mountain stronghold of King Moshoeshoe I who founded the nation. The ribbon reads Khotso, Pula, Nala — “Peace, Rain, Prosperity.”",
     sources: [
@@ -6020,6 +6332,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue and green repeat Lesotho's own national flag, adopted in 2006: blue for the sky and rain, and green for prosperity. The flag's own centrepiece, a black Basotho mokorotlo hat (not shown on this badge), replaced the shield, spear and club of the previous design to mark Lesotho as an internally and regionally peaceful state.",
     sources: [
       { title: "Flag of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    ],
+  },
+  "lt-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
   "lt-air-force": {
@@ -6060,6 +6378,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Vytis — Wikipedia", url: "https://en.wikipedia.org/wiki/Vytis" },
     ],
   },
+  "lu-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    ],
+  },
   "lu-civil-ensign": {
     description: "Known as 'de Roude Léiw' (the Red Lion), this banner shows the crowned, double-tailed red lion of Luxembourg's medieval arms on a field barred blue and white — a design dating to Count Henry V ('the Blond', 1216–1281), who added the double tail to the lion of neighbouring Limburg's arms to mark that he now ruled both territories. It is flown by shipping instead of the tricolour, which is near-identical to the flag of the Netherlands, and remains so popular it functions as an unofficial second national flag alongside the tricolour.",
     sources: [
@@ -6088,6 +6412,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The red lion is the Lion of Luxembourg, inherited from the medieval Lion of Limburg and a core symbol of Luxembourg's heraldic identity since the 13th century.",
     sources: [
       { title: "Coat of arms of Luxembourg — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
+    ],
+  },
+  "lv-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
   "lv-naval-ensign": {
@@ -6167,6 +6497,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Libya — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
     ],
   },
+  "ma-france": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
+    ],
+  },
   "ma-naval-jack": {
     description: "Morocco's naval jack is a red, swallow-tailed flag bordered in yellow and bearing a green, yellow-bordered pentagram — the Seal of Solomon — at its centre, the same emblem added to the national flag in 1915. The pentagram is a symbol with roots stretching back to ancient Mesopotamia and was long used across the Islamic world as a protective and identifying device; green marks it as the colour of Islam, and the swallow-tailed shape distinguishes the jack from Morocco's plain rectangular national flag and ensign.",
     sources: [
@@ -6224,6 +6560,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
     ],
   },
+  "md-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
+    ],
+  },
   "md-president": {
     description: "The standard bears Moldova's coat of arms: a shield with an auroch's head between an eight-pointed star, a five-petalled rose and a crescent — an emblem inherited from the historical Principality of Moldavia standing for endurance and identity — on the breast of a natural eagle (a device drawn from the interwar Kingdom of Romania's own arms) holding an olive branch for peace, a sceptre for authority, and a golden cross for the country's Christian heritage.",
     sources: [
@@ -6277,6 +6619,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The double-headed eagle and the lion are both Montenegro's own state coat of arms: the eagle is of Byzantine origin (its current layout adapted from Imperial Russia's, reflecting the historic ties between Montenegro's ruling Petrović-Njegoš dynasty and Russia), while the lion — read as a Lion of Judah figure — marks the centuries when Montenegro's prince-bishops held both religious and political authority. FS CG is the federation's own initials, Fudbalski savez Crne Gore.",
     sources: [
       { title: "Coat of arms of Montenegro — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro" },
+    ],
+  },
+  "mg-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
     ],
   },
   "mg-arms": {
@@ -6344,6 +6692,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Mali national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Mali_national_football_team" },
       { title: "Flag of Mali — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
+    ],
+  },
+  "mm-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "mm-tatmadaw": {
@@ -6452,10 +6806,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Northern Mariana Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
     ],
   },
+  "mp-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    ],
+  },
   "mp-seal": {
     description: "The grey latte stone — the carved pillar on which the ancient Chamorro raised their houses — stands for the Chamorro people; the white star for the Commonwealth's union with the United States; and the mwarmwar, a garland of ylang-ylang, plumeria, peacock flower and Pacific basil, for the Carolinian people who also settled the islands. The blue field is the Pacific and the Mariana Trench.",
     sources: [
       { title: "Flag of the Northern Mariana Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
+    ],
+  },
+  "mr-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
     ],
   },
   "mr-arms": {
@@ -6518,6 +6884,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Maltese cross — Wikipedia", url: "https://en.wikipedia.org/wiki/Maltese_cross" },
     ],
   },
+  "mu-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "mu-arms": {
     description: "The quartered shield shows a ship for the island's discovery and trade, three palm trees, a golden key, and a five-pointed star. The key and star give the motto, Stella Clavisque Maris Indici — “the Star and Key of the Indian Ocean,” Mauritius's place on the ocean routes. A dodo, the flightless bird found only here, and a sambar deer support the shield, each holding a stalk of sugarcane, the island's great crop.",
     sources: [
@@ -6534,6 +6906,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The ship is a lymphad, taken from Mauritius's coat of arms, where it represents the island's maritime history and the succession of colonial naval powers — Portugal, the Netherlands, France and Britain — that navigated the Indian Ocean and settled it.",
     sources: [
       { title: "Coat of arms of Mauritius — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius" },
+    ],
+  },
+  "mv-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "mv-arms": {
@@ -6570,6 +6948,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The red rising sun repeats the sun on Malawi's own national flag, adopted in 1964 to stand for the dawn of hope and freedom for Africa as more of the continent gained independence from colonial rule. The flames give the national team its own nickname, the Flames.",
     sources: [
       { title: "Flag of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
+    ],
+  },
+  "mx-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "mx-president": {
@@ -6764,6 +7148,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Kagu — One Earth", url: "https://www.oneearth.org/species-of-the-week-kagu/" },
     ],
   },
+  "ne-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
+    ],
+  },
   "ne-arms": {
     description: "On the green shield four gold devices name the country's peoples and livelihoods: a sun; a spear flanked by two Tuareg swords (takoba); three heads of millet, the staple grain; and the head of a zebu, for the herding life. Four national flags stand behind. The motto is Fraternité, Travail, Progrès — “Fraternity, Work, Progress.”",
     sources: [
@@ -6780,6 +7170,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gazelles are Dama gazelles, native to Niger's Sahel, whose Hausa name Ménas (or Meyna) gives the national team its own nickname, the Ménas — a national symbol read as standing for grace and resilience in the country's arid landscape.",
     sources: [
       { title: "Niger national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Niger_national_football_team" },
+    ],
+  },
+  "ng-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "ng-air-force": {
@@ -6833,6 +7229,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Nigeria national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Nigeria_national_football_team" },
       { title: "Nigeria Football Federation — Wikipedia", url: "https://en.wikipedia.org/wiki/Nigeria_Football_Federation" },
+    ],
+  },
+  "ni-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "ni-arms": {
@@ -6993,6 +7395,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Niue — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Niue" },
     ],
   },
+  "nz-union-flag": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "nz-civil-ensign": {
     description: "The four stars are the same Southern Cross constellation shown on the national flag, positioned to match the real stars Acrux, Mimosa, Gacrux and Delta Crucis as seen from New Zealand; the ensign was adopted in 1901 for merchant vessels and can also be flown on land for occasions of Māori significance.",
     sources: [
@@ -7098,6 +7506,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
     ],
   },
+  "pe-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    ],
+  },
   "pe-war": {
     description: "The national shield charged on this flag shows a vicuña for Peru's animal wealth, a cinchona tree for its plant wealth (the source of quinine), and a cornucopia spilling gold and silver coins for its mineral wealth — adopted in 1825 under Simón Bolívar to celebrate the newly independent nation's natural riches.",
     sources: [
@@ -7186,6 +7600,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
     ],
   },
+  "ph-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    ],
+  },
   "ph-afp": {
     description: "The Armed Forces' coat of arms is built around a sun and three stars drawn from the national flag, a sampaguita (jasmine) garland, and a silver triangle for company-grade officers charged with a golden sun bearing the Baybayin letter 'Ka' — the initial of Katipunan, the revolutionary society that fought Spanish rule — together tying the modern armed forces to the Philippines' history of resistance from the Battle of Mactan onward.",
     sources: [
@@ -7251,6 +7671,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue and red of the goal frame repeat the colours of the Philippine flag: blue for peace, truth and justice, and red for patriotism and valour. 1907 is the year the federation traces its founding to, and PFF is its own initials, the Philippine Football Federation.",
     sources: [
       { title: "Flag of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Philippines" },
+    ],
+  },
+  "pk-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "pk-armed-forces": {
@@ -7394,10 +7820,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Puerto Rico — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico" },
     ],
   },
+  "pr-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    ],
+  },
   "pr-arms": {
     description: "Granted by the Spanish Crown in 1511, it is the oldest coat of arms still in use in the Americas. At its centre the Lamb of God (Agnus Dei) rests on the Book of the Seven Seals — both for Saint John the Baptist, to whom the island was dedicated as San Juan Bautista, and the reason the motto reads Joannes Est Nomen Eius, “John is his name.” Around it the golden castles and lions are Castile and León, the F-and-arrows Ferdinand of Aragon and the Y-and-yoke Isabella of Castile, with the cross of Jerusalem — the devices of the Catholic Monarchs who granted it.",
     sources: [
       { title: "Coat of arms of Puerto Rico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Puerto_Rico" },
+    ],
+  },
+  "ps-mandate": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "ps-arms": {
@@ -7478,6 +7916,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Paraguay flies one of the world only two-sided national flags: the two faces carry different emblems. The obverse shows the national coat of arms — the May Star, a gold five-pointed star for the independence of 14 May 1811, ringed by a palm and an olive branch and the words REPUBLICA DEL PARAGUAY. The reverse shows the seal of the treasury (Hacienda): a gold lion guarding a staff topped by the red Phrygian cap of liberty, above the national motto PAZ Y JUSTICIA, \"Peace and Justice\".",
     sources: [
       { title: "Flag of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
+    ],
+  },
+  "py-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "py-air-force": {
@@ -7639,6 +8083,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Serbian cross — Wikipedia", url: "https://en.wikipedia.org/wiki/Serbian_cross" },
     ],
   },
+  "ru-empire-tricolour": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
+    ],
+  },
   "ru-mod": {
     description: "A red field bears the Ministry of Defence's emblem: a double-headed eagle adapted from the state coat of arms, holding a sword and a laurel wreath in its talons for military strength and victory, with a red shield on its breast showing a horseman spearing a dragon — Saint George and the Dragon, a central figure of Russian state symbolism — marking the emblem as the military authority's own variant of the national arms.",
     sources: [
@@ -7771,6 +8221,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
     ],
   },
+  "sb-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "sb-arms": {
     description: "The quartered shield carries a frigate bird, a sea eagle, a turtle and the traditional weapons of the islands — spears, a bow and arrow, and a shield. A crocodile and a shark flank it as supporters, and a stylised sun crowns the crest above a decorated helm. The motto reads “To Lead Is to Serve.”",
     sources: [
@@ -7789,6 +8245,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Solomon Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Solomon_Islands" },
     ],
   },
+  "sc-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "sc-arms": {
     description: "A giant tortoise stands on green ground before a coco-de-mer palm — both found only in the Seychelles — with a sailing ship on the sea behind. A white-tailed tropicbird forms the crest, and two sailfish support the shield. The motto is Finis Coronat Opus — “The End Crowns the Work.”",
     sources: [
@@ -7805,6 +8267,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The tropicbird is the white-tailed tropicbird, one of Seychelles' best-known native seabirds and a figure on the national coat of arms, where it represents the islands' wildlife of the air alongside a tortoise (land) and a fish (sea).",
     sources: [
       { title: "Coat of arms of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
+    ],
+  },
+  "sd-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "sd-airforce": {
@@ -7989,6 +8457,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Slovakia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia" },
     ],
   },
+  "sl-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "sl-arms": {
     description: "The green shield carries a lion beneath a zigzag chief — the zigzag for the Lion Mountains (Serra Lyoa) that gave the country its name — and three golden torches for enlightenment, peace and dignity. Wavy blue and white bars for the sea run beneath. Two lions support the shield, and the green, white and blue of the field are the colours of the national flag. The motto reads “Unity, Freedom, Justice.”",
     sources: [
@@ -8025,6 +8499,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of San Marino — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
     ],
   },
+  "sn-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
+    ],
+  },
   "sn-arms": {
     description: "The arms gather devices already used on earlier Senegalese emblems. On the left a golden lion — the lion of the Sudan, the country's totem and the name of its highest honour, the National Order of the Lion — walks above a green wavy band standing for the River Senegal. On the right stands a baobab, the tree native to the country. At the crest is the same five-pointed green star that appears on the national flag: a star of hope, and for the great majority of Senegalese the star of Islam.",
     sources: [
@@ -8042,6 +8522,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Senegal national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Senegal_national_football_team" },
       { title: "Senegalese Spirit: Discovering the Meaning of Teranga — The Culture Trip", url: "https://theculturetrip.com/africa/senegal/articles/why-senegal-is-the-country-of-teranga" },
+    ],
+  },
+  "so-british": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "so-arms": {
@@ -8122,6 +8608,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of São Tomé and Príncipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
     ],
   },
+  "sv-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    ],
+  },
   "sv-civil-ensign": {
     description: "El Salvador's civil ensign — flown by merchant shipping and private citizens — is the blue-white-blue triband without the national coat of arms, bearing instead the national motto \"DIOS, UNIÓN, LIBERTAD\" (God, Union, Liberty) in gold across the white stripe. The triband itself traces to the flag of the United Provinces of Central America, adopted in 1823, whose blue-white-blue design was in turn inspired by Argentina's own flag of independence; the plain, arms-free design keeps the civil ensign visually simpler than the state flag, which carries the full coat of arms.",
     sources: [
@@ -8184,6 +8676,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Syria — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Syria" },
     ],
   },
+  "sz-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "sz-arms": {
     description: "A black-and-white Nguni shield rests on two spears and a staff hung with the blue royal tassels (injobo). A lion and an elephant support it — the lion for the King, the elephant for the Queen Mother, the two pillars of the Swazi monarchy — and above sits a crown of feathers of the kind worn at the Incwala, the festival of the first fruits. The scroll reads Siyinqaba — “We are the fortress.”",
     sources: [
@@ -8208,6 +8706,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Turks and Caicos Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Turks_and_Caicos_Islands" },
     ],
   },
+  "td-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
+    ],
+  },
   "td-arms": {
     description: "The shield's jagged blue and gold bars are the waters of Lake Chad; above rises a sun, for the new beginning of independence. A goat of the desert north and a lion of the savanna south support the shield — the two halves of the country — each standing over a red arrow. The ribbon reads Unité, Travail, Progrès — “Unity, Work, Progress.”",
     sources: [
@@ -8224,6 +8728,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The colours repeat Chad's own national flag, which deliberately blends the French tricolour with the Pan-African palette: blue for Lake Chad and the country's Black African heritage, yellow for the sands of the Sahara, and red for the blood shed in the struggle for independence from France.",
     sources: [
       { title: "Flag of Chad — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
+    ],
+  },
+  "tg-french": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
     ],
   },
   "tg-arms": {
@@ -8313,6 +8823,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "War elephant — Wikipedia", url: "https://en.wikipedia.org/wiki/War_elephant" },
     ],
   },
+  "tj-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
+    ],
+  },
   "tj-emblem": {
     description: "A golden crown beneath a semicircle of seven stars — the crown (toj) that names the country and the seven stars the Tajik people hold sacred — rises over a sun and the peaks of the Pamir mountains. A wreath of wheat ears and cotton bolls, bound in the red, white and green of the flag, frames the whole, and an open book sits at the foot for knowledge.",
     sources: [
@@ -8348,6 +8864,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Timor-Leste's passport bears the national emblem: a five-pointed white star over a black-and-white mountain — Mount Ramelau, the country's highest peak — representing guidance and the five principles of independence, unity, justice, social solidarity and equality, ringed by rice and maize for agriculture and the people's wisdom. Yellow signifies wealth, black the darkness the nation had to overcome, and red the love of homeland and the struggle for independence.",
     sources: [
       { title: "National emblem of Timor-Leste — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Timor-Leste" },
+    ],
+  },
+  "tm-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
   "tm-emblem": {
@@ -8400,6 +8922,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
     ],
   },
+  "to-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "to-arms": {
     description: "The shield, designed with the 1875 constitution, is quartered: three stars for the country's three main island groups, a crown for the monarchy, a dove with an olive branch for peace, and three swords for the three lines of kings. A red star at the centre stands for Christianity. The Crown of Tonga sits above within an olive wreath, and the motto reads Ko e ʻOtua mo Tonga ko hoku Tofiʻa — “God and Tonga are my Inheritance.”",
     sources: [
@@ -8441,6 +8969,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Ay yıldız — Wikipedia", url: "https://en.wikipedia.org/wiki/Ayy%C4%B1ld%C4%B1z" },
       { title: "Turkey national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Turkey_national_football_team" },
+    ],
+  },
+  "tt-colonial": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "tt-civil-ensign": {
@@ -8534,6 +9068,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The colours repeat Tanzania's own national flag: green for the country's vegetation and agriculture, black for its Swahili people, blue for the Indian Ocean and its lakes and rivers, and gold for its mineral wealth.",
     sources: [
       { title: "Flag of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
+    ],
+  },
+  "ua-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
   "ua-mod": {
@@ -8795,6 +9335,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Four stars above Uruguay's football crest — Wikipedia", url: "https://en.wikipedia.org/wiki/Four_stars_above_Uruguay%27s_football_crest" },
     ],
   },
+  "uz-russian-empire": {
+    description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
+    ],
+  },
   "uz-president": {
     description: "The standard carries the state emblem adopted in 1992, the same year as this flag: a rising sun over a fertile valley crossed by the Syrdarya and Amudarya rivers, an eight-pointed star at the top enclosing the Islamic crescent and star, wheat on one side for prosperity and cotton on the other for the nation's wealth and the purity of its people's intentions, and at the centre the mythical bird Semurg with wings outstretched, symbolising national renewal.",
     sources: [
@@ -8831,6 +9377,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Vatican City — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vatican_City" },
     ],
   },
+  "vc-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
   "vc-arms": {
     description: "Two women in classical Roman dress stand for the country's ideals — Peace, holding an olive branch, and Justice, kneeling with golden scales before an altar. The green shield between them bears a cotton plant, a mainstay of the old island economy. The motto reads Pax et Justitia — “Peace and Justice.”",
     sources: [
@@ -8853,6 +9405,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The coat of arms charged on the state flag shows a wheat sheaf for the union and wealth of the republic's states, a white horse (recalling Simón Bolívar's horse Palomo) for independence and freedom, and swords, sabres and lances tied with laurel for triumph in the wars of independence.",
     sources: [
       { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
+    ],
+  },
+  "ve-burgundy": {
+    description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "ve-mod": {
@@ -8954,6 +9512,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
     ],
   },
+  "vu-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
+  "vu-france": {
+    description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
+    sources: [
+      { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
+    ],
+  },
   "vu-arms": {
     description: "A Melanesian chief holding a spear stands on a mountain before a boar's tusk — the curved tusk a traditional sign of prosperity and rank — crossed with two namele fern leaves, which stand for peace and for the islands. The scroll reads Long God Yumi Stanap — “With God We Stand,” in Bislama.",
     sources: [
@@ -9014,6 +9584,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Flag of South Africa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Africa" },
       { title: "National flag — South African Government", url: "https://www.gov.za/about-sa/national-symbols/national-flag" },
+    ],
+  },
+  "za-uk": {
+    description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
+    sources: [
+      { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
   "za-sandf": {
