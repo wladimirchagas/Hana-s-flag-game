@@ -4322,6 +4322,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Fiji — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji" },
     ],
   },
+  "fj-passport": {
+    description: "Fiji's passport bears the national coat of arms: a shield quartered by a red St George's Cross, topped with a golden lion holding a cocoa pod — both inherited from the arms of the United Kingdom, Fiji's former colonial ruler. Each quarter shows a crop central to the islands' economy — sugar cane, a coconut palm, bananas — and a white dove carrying an olive branch, a peace symbol already used on Fiji's flag under 19th-century King Cakobau. Two Fijian warriors flank the shield beneath the motto \"Rerevaka na Kalou ka Doka na Tui\" — \"Fear God and Honour the King\" (traditionally rendered \"Queen\" in the colonial-era arms).",
+    sources: [
+      { title: "Coat of arms of Fiji — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji" },
+    ],
+  },
   "fk-arms": {
     description: "Granted by Royal Warrant on 29 September 1948. A ram standing on tussock grass — the islands' native vegetation — stands for sheep farming, historically the Falklands' principal industry; below, on a blue-and-white wavy sea, sails the Desire, the ship of the English navigator John Davis, credited with sighting the islands in 1592. The motto 'Desire the Right' plays on the ship's name, and the arms flew throughout except during the brief Argentine occupation of 1982.",
     sources: [
@@ -5627,6 +5633,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Laos — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Laos" },
     ],
   },
+  "la-passport": {
+    description: "Laos's passport bears the national emblem, revised in 1991 to remove the communist star, hammer and sickle: at its centre stands Pha That Luang, the gold-covered Buddhist stupa in Vientiane that is Laos's most sacred national monument, above depictions of forest, paddy fields, a road and the Nam Ngum hydropower dam — together signifying advances in agriculture, forestry, transport and energy. A red cogwheel below stands for industry, and ribbons on either side carry the mottos \"Peace, Independence, Democracy\" and \"Unity and Prosperity\".",
+    sources: [
+      { title: "Emblem of Laos — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Laos" },
+    ],
+  },
   "la-football-crest": {
     description: "The stupa on the ball represents Pha That Luang (\"Great Stupa\"), Laos's most important national and religious monument and the centrepiece of the country's state emblem, which replaced the socialist hammer-and-sickle/red-star symbol there in 1991.",
     sources: [
@@ -6101,6 +6113,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The circular blue field is the eternal blue sky, the object of the old Mongol reverence for Tengri; the rim around it is the tumen nasan, the endless knot of eternity. At the centre the Soyombo — the national ideograph that also heads the flag — sits above a wind horse, the treasured steed of Buddhist tradition carrying a wish-granting jewel, and together they stand for Mongolia's independence, sovereignty and spirit. Sun, moon and Mahayana Buddhist symbols complete it, over a lotus base and mountains. It replaced the People's Republic emblem of 1960–1991, which had shown an ordinary horseman and a rising sun over mountains with socialist devices in place of the Buddhist ones.",
     sources: [
       { title: "Emblem of Mongolia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mongolia" },
+    ],
+  },
+  "mn-passport": {
+    description: "Mongolia's passport bears the Soyombo, a symbol created in 1686 by the Buddhist monk Zanabazar as part of a script he devised, and today used on the flag, coat of arms, currency and military insignia alike. Rising flames stand for eternal growth and represent the past, present and future; the sun and moon assert that the Mongolian nation will endure as long as the eternal blue sky; two downward-pointing triangles announce the defeat of enemies within and without; and a yin-yang disc, read locally as two ever-open-eyed fish, symbolises vigilance and the balance of opposites.",
+    sources: [
+      { title: "Soyombo symbol — Wikipedia", url: "https://en.wikipedia.org/wiki/Soyombo_symbol" },
     ],
   },
   "mn-football-crest": {
