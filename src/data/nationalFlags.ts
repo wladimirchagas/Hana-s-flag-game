@@ -3441,6 +3441,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
+  "bn-old": {
+    description: "Before around 1906, Brunei had no formal state flag at all — only the personal standards of the Sultan and his senior officials, the wazirs — and the plain yellow banner shown here represented the Sultan alone, yellow being the traditional royal colour of Borneo's rulers. Diagonal white and black stripes were added in 1906, one for each of the Sultan's two chief ministers, giving Brunei its first proper national flag.",
+    sources: [
+      { title: "Flag of Brunei — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
+    ],
+  },
   "bn-war-flag": {
     description: "Brunei's War Flag — the flag of the Royal Brunei Armed Forces — takes the national flag's yellow, black and white design and adds a red stripe between the black and white bands, with the armed forces' own badge replacing the national coat of arms. The colours retain their national meaning (yellow for the Sultan and the sultanate, white and black for the two chief ministers who assisted the third Sultan), while the added red band and military badge, together with the flag's distinct 2:3 proportions, mark it out as the armed forces' own banner rather than the state flag.",
     sources: [
@@ -8247,6 +8253,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Mexico national football team logo — 1000 Logos", url: "https://1000logos.net/seleccion-mexicana-de-futbol-logo/" },
     ],
   },
+  "my-penang-colony": {
+    description: "Adopted 17 June 1952 after Penang became a separate Crown colony on the 1946 dissolution of the Straits Settlements, this badge simplified Penang's 1949 grant of arms into an areca-nut palm on a grassy mound, framed by a blue-and-white wreath — the areca-nut palm (pokok pinang in Malay) being the very tree Penang, 'betel-nut island', is named for.",
+    sources: [
+      { title: "Flag of Penang — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Penang" },
+    ],
+  },
+  "my-malacca-colony": {
+    description: "Malacca's colonial badge, instituted after its 14 August 1951 grant of arms, kept the A Famosa gateway — the Porta de Santiago, one of the last surviving fragments of the Portuguese fortress built in 1511 and largely demolished by the British in the early 19th century — as the settlement's own emblem, preserving on its flag a landmark from the era of Portuguese rule that long preceded British Malacca.",
+    sources: [
+      { title: "A Famosa — Wikipedia", url: "https://en.wikipedia.org/wiki/A_Famosa" },
+    ],
+  },
   "my-malaya": {
     description: "The Federation of Malaya's 1950 flag used eleven alternating red and white stripes for its eleven constituent states, with a yellow crescent and eleven-pointed star for Islam and for royal sovereignty under the Malay rulers. Red, white and blue also marked Malaya's membership of the Commonwealth; the design's stripe and star count both grew as more states joined what became Malaysia.",
     sources: [
@@ -11762,6 +11780,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The badge joins the game itself — a football — with a gold silhouette of the country's own map, standing for South African football as a national institution. SAFA was formed on 23 March 1991, when the previously racially-segregated football associations that had existed under apartheid united into a single, non-racial governing body.",
     sources: [
       { title: "South African Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/South_African_Football_Association" },
+    ],
+  },
+  "zm-northern-rhodesia": {
+    description: "Northern Rhodesia's colonial badge, granted in 1927 but for years used only on the territory's official seal (Colonial Office correspondence in 1938 noted the badge had never actually been flown, since the government kept no official vessel), eventually appeared on the colony's Blue Ensign; its black-and-white wavy lines, representing the Zambezi and other rivers, were later carried into the arms of the Federation of Rhodesia and Nyasaland.",
+    sources: [
+      { title: "Northern Rhodesia (Zambia pre-independence) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/zm_nr.html" },
     ],
   },
   "zm-president": {
