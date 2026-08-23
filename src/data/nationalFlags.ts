@@ -3427,6 +3427,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Cook Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
     ],
   },
+  "cl-army": {
+    description: "The flag of the Chilean Army is the national coat of arms on a red field. The arms are supported by an Andean condor and a huemul, a native Andean deer, each wearing a golden naval crown honouring the Chilean Navy's exploits in the War of the Pacific, above a white star for the unity of the state and the motto 'Por la razón o la fuerza' ('By reason or by force').",
+    sources: [
+      { title: "Flags of the World — Chilean Army", url: "https://www.crwflags.com/fotw/flags/cl%5Ea.html" },
+      { title: "Wikipedia — Coat of arms of Chile", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chile" },
+    ],
+  },
   "cl-air-force": {
     description: "The Air Force's own coat of arms bears a silver Andean condor — a symbol of strength, independence and vigilance drawn from the bird most associated with the Andes — framed by golden olive branches beneath a white star, on a dark blue shield: the same condor, star and blue that appear in the national flag and the wider Chilean coat of arms, adapted to mark the service that defends the country's skies.",
     sources: [
@@ -6192,6 +6199,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The national shield charged on this flag shows a vicuña for Peru's animal wealth, a cinchona tree for its plant wealth (the source of quinine), and a cornucopia spilling gold and silver coins for its mineral wealth — adopted in 1825 under Simón Bolívar to celebrate the newly independent nation's natural riches.",
     sources: [
       { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
+    ],
+  },
+  "pe-army": {
+    description: "The Peruvian Army's flag bears the service's emblem: a silver upright sword representing the army, alongside a golden pair of wings for the air force and crossed silver anchors for the navy, joined beneath a golden sun that stands over all three branches of Peru's armed forces. The emblem's ring also carries a stylised condor on a red ribbon lettered 'Ejército del Perú', the condor being a bird of long-standing significance in Andean and Peruvian heraldry.",
+    sources: [
+      { title: "Flags of the World — Peru: Coat of Arms and National Emblem", url: "https://www.crwflags.com/fotw/flags/pe).html" },
+      { title: "Wikipedia — List of flags of Peru", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
     ],
   },
   "pe-navy": {

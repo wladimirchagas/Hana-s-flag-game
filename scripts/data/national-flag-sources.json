@@ -5674,7 +5674,20 @@
           "design": "A red field with the army's emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chilean_flags",
           "sha256": "469c425ab7cd4229123f2e828e2a29ee48ae93e17c059836d87609f92a21b0ad",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Chilean Army is the national coat of arms on a red field. The arms are supported by an Andean condor and a huemul, a native Andean deer, each wearing a golden naval crown honouring the Chilean Navy's exploits in the War of the Pacific, above a white star for the unity of the state and the motto 'Por la razón o la fuerza' ('By reason or by force').",
+            "sources": [
+              {
+                "title": "Flags of the World — Chilean Army",
+                "url": "https://www.crwflags.com/fotw/flags/cl%5Ea.html"
+              },
+              {
+                "title": "Wikipedia — Coat of arms of Chile",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chile"
+              }
+            ]
+          }
         },
         {
           "id": "cl-air-force",
@@ -22779,7 +22792,20 @@
           "design": "A green field with the army's emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
           "sha256": "2f3d25ed8a164ff7cecb71c49acd1e053811d4dee70a4fb66ebc46abc9cf7fcd",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Peruvian Army's flag bears the service's emblem: a silver upright sword representing the army, alongside a golden pair of wings for the air force and crossed silver anchors for the navy, joined beneath a golden sun that stands over all three branches of Peru's armed forces. The emblem's ring also carries a stylised condor on a red ribbon lettered 'Ejército del Perú', the condor being a bird of long-standing significance in Andean and Peruvian heraldry.",
+            "sources": [
+              {
+                "title": "Flags of the World — Peru: Coat of Arms and National Emblem",
+                "url": "https://www.crwflags.com/fotw/flags/pe).html"
+              },
+              {
+                "title": "Wikipedia — List of flags of Peru",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru"
+              }
+            ]
+          }
         },
         {
           "id": "pe-navy",
