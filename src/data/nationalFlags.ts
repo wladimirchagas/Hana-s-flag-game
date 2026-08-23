@@ -6506,6 +6506,30 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
     ],
   },
+  "kr-1997": {
+    description: "South Korea's Taegukgi carries forward the design first adopted by Joseon Korea in 1883: a central taegeuk circle split into red and blue, representing the harmony of yin and yang from which all things arise, surrounded by four black trigrams drawn from the I Ching standing for sky, earth, water and fire. Only the flag's exact proportions and trigram placement were standardised over the decades — most recently in 1997 — while the core symbolism has remained unchanged since the design's 19th-century origin.",
+    sources: [
+      { title: "The creation of a Korean national flag, 1880s–1910s — Smarthistory", url: "https://smarthistory.org/korean-national-flag/" },
+    ],
+  },
+  "kr-1984": {
+    description: "South Korea's Taegukgi carries forward the design first adopted by Joseon Korea in 1883: a central taegeuk circle split into red and blue, representing the harmony of yin and yang from which all things arise, surrounded by four black trigrams drawn from the I Ching standing for sky, earth, water and fire. Only the flag's exact proportions and trigram placement were standardised over the decades — most recently in 1997 — while the core symbolism has remained unchanged since the design's 19th-century origin.",
+    sources: [
+      { title: "The creation of a Korean national flag, 1880s–1910s — Smarthistory", url: "https://smarthistory.org/korean-national-flag/" },
+    ],
+  },
+  "kr-1949": {
+    description: "South Korea's Taegukgi carries forward the design first adopted by Joseon Korea in 1883: a central taegeuk circle split into red and blue, representing the harmony of yin and yang from which all things arise, surrounded by four black trigrams drawn from the I Ching standing for sky, earth, water and fire. Only the flag's exact proportions and trigram placement were standardised over the decades — most recently in 1997 — while the core symbolism has remained unchanged since the design's 19th-century origin.",
+    sources: [
+      { title: "The creation of a Korean national flag, 1880s–1910s — Smarthistory", url: "https://smarthistory.org/korean-national-flag/" },
+    ],
+  },
+  "kr-1948": {
+    description: "South Korea's Taegukgi carries forward the design first adopted by Joseon Korea in 1883: a central taegeuk circle split into red and blue, representing the harmony of yin and yang from which all things arise, surrounded by four black trigrams drawn from the I Ching standing for sky, earth, water and fire. Only the flag's exact proportions and trigram placement were standardised over the decades — most recently in 1997 — while the core symbolism has remained unchanged since the design's 19th-century origin.",
+    sources: [
+      { title: "The creation of a Korean national flag, 1880s–1910s — Smarthistory", url: "https://smarthistory.org/korean-national-flag/" },
+    ],
+  },
   "kr-japan": {
     description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
     sources: [
@@ -7016,6 +7040,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Auseklis — Wikipedia", url: "https://en.wikipedia.org/wiki/Auseklis" },
     ],
   },
+  "ly-green": {
+    description: "Muammar Gaddafi's plain green flag, adopted in 1977, was the only national flag in the world with a single colour and no design. Green traditionally symbolised Islam, echoing the historic banners of the Fatimid Caliphate, and Gaddafi also tied it to his own \"Green Book\" political philosophy and to Libya's fertile agricultural regions; the design was abandoned during the 2011 revolution that overthrew him, when Libya restored its earlier 1951 tricolour.",
+    sources: [
+      { title: "Discover the Unique Color of Libya's Flag", url: "https://libyaprospect.com/unveiling-the-unique-color-of-libyas-national-flag/" },
+    ],
+  },
   "ly-kingdom": {
     description: "Designed by Omar Faiek Shennib for Libya's 1951 independence, the kingdom's flag used red, black and green stripes for its three uniting provinces — Fezzan, Cyrenaica and Tripolitania respectively — with black also read as a reminder of the dark years of Italian occupation, red for the blood shed for freedom, and green for the nation's agricultural wealth. A white crescent and star at the centre marked the Islamic calendar and stood for hope after that darkness; the same design was restored as Libya's national flag in 2011.",
     sources: [
@@ -7152,6 +7182,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The eagle echoes Moldova's own national coat of arms, whose eagle derives from the interwar coat of arms of the Kingdom of Romania — a period when most of Moldova's territory was part of Romania, between the World Wars — while the shield's vertical blue-yellow-red repeats the national flag's own colours.",
     sources: [
       { title: "Coat of arms of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
+    ],
+  },
+  "me-kingdom": {
+    description: "Montenegro's state flag, sanctioned with the 1905 constitution, set the royal cypher \"H I\" — the monogram of King Nicholas I, in the Cyrillic initial for Nikola — beneath a crown at the centre of a red-blue-white tricolour, marking it for official and royal use until Montenegro was absorbed into the Kingdom of Serbs, Croats and Slovenes in 1918.",
+    sources: [
+      { title: "Principality / Kingdom of Montenegro (1782-1918) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/me_k.html" },
     ],
   },
   "me-naval-ensign": {

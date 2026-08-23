@@ -17911,7 +17911,16 @@
           "design": "The Taegukgi as standardised in 1997, before the 2011 specification adjusted its colours.",
           "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
           "sha256": "d4015bb54bd00e7a125aa660f0df82b79887b7b91f9980903317a97c51b50219",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "South Korea's Taegukgi carries forward the design first adopted by Joseon Korea in 1883: a central taegeuk circle split into red and blue, representing the harmony of yin and yang from which all things arise, surrounded by four black trigrams drawn from the I Ching standing for sky, earth, water and fire. Only the flag's exact proportions and trigram placement were standardised over the decades — most recently in 1997 — while the core symbolism has remained unchanged since the design's 19th-century origin.",
+            "sources": [
+              {
+                "title": "The creation of a Korean national flag, 1880s–1910s — Smarthistory",
+                "url": "https://smarthistory.org/korean-national-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "kr-1984",
@@ -17924,7 +17933,16 @@
           "design": "The Taegukgi of the Fifth and Sixth Republics.",
           "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
           "sha256": "dfd866de016fb21641d668bee4083e33fa6b22836936c6c14b38eaa5051c7b36",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "South Korea's Taegukgi carries forward the design first adopted by Joseon Korea in 1883: a central taegeuk circle split into red and blue, representing the harmony of yin and yang from which all things arise, surrounded by four black trigrams drawn from the I Ching standing for sky, earth, water and fire. Only the flag's exact proportions and trigram placement were standardised over the decades — most recently in 1997 — while the core symbolism has remained unchanged since the design's 19th-century origin.",
+            "sources": [
+              {
+                "title": "The creation of a Korean national flag, 1880s–1910s — Smarthistory",
+                "url": "https://smarthistory.org/korean-national-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "kr-1949",
@@ -17937,7 +17955,16 @@
           "design": "The Taegukgi as fixed by the 1949 presidential proclamation, flown through the First to Fifth Republics.",
           "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
           "sha256": "2bc462bee0226c669c78bd3da381f8c11f98a9e6b419b7ee82a9f737936e6255",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "South Korea's Taegukgi carries forward the design first adopted by Joseon Korea in 1883: a central taegeuk circle split into red and blue, representing the harmony of yin and yang from which all things arise, surrounded by four black trigrams drawn from the I Ching standing for sky, earth, water and fire. Only the flag's exact proportions and trigram placement were standardised over the decades — most recently in 1997 — while the core symbolism has remained unchanged since the design's 19th-century origin.",
+            "sources": [
+              {
+                "title": "The creation of a Korean national flag, 1880s–1910s — Smarthistory",
+                "url": "https://smarthistory.org/korean-national-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "kr-1948",
@@ -17950,7 +17977,16 @@
           "design": "The flag of the First Republic, before the 1949 standardisation.",
           "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
           "sha256": "9525c62c101b932e167b5d268a6585edf170bbd6eae06047546c1157e6d3b9a5",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "South Korea's Taegukgi carries forward the design first adopted by Joseon Korea in 1883: a central taegeuk circle split into red and blue, representing the harmony of yin and yang from which all things arise, surrounded by four black trigrams drawn from the I Ching standing for sky, earth, water and fire. Only the flag's exact proportions and trigram placement were standardised over the decades — most recently in 1997 — while the core symbolism has remained unchanged since the design's 19th-century origin.",
+            "sources": [
+              {
+                "title": "The creation of a Korean national flag, 1880s–1910s — Smarthistory",
+                "url": "https://smarthistory.org/korean-national-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "kr-president",
@@ -20265,7 +20301,16 @@
           "design": "A plain green field — the only single-colour national flag in the world — flown under Gaddafi's Jamahiriya from 1977 to 2011.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Libya",
           "sha256": "72235529a9ac0f4d4983ef60c25f9844db05b415ea48069369ded820256938ff",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Muammar Gaddafi's plain green flag, adopted in 1977, was the only national flag in the world with a single colour and no design. Green traditionally symbolised Islam, echoing the historic banners of the Fatimid Caliphate, and Gaddafi also tied it to his own \"Green Book\" political philosophy and to Libya's fertile agricultural regions; the design was abandoned during the 2011 revolution that overthrew him, when Libya restored its earlier 1951 tricolour.",
+            "sources": [
+              {
+                "title": "Discover the Unique Color of Libya's Flag",
+                "url": "https://libyaprospect.com/unveiling-the-unique-color-of-libyas-national-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "ly-army",
@@ -20859,7 +20904,16 @@
           "design": "The red-blue-white tricolour charged with the royal cypher of Nicholas I, before Montenegro was absorbed into Yugoslavia in 1918.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro",
           "sha256": "8a6a02080e071203be66229834ce13638525ac1b846337bfe6f426735789bfd7",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Montenegro's state flag, sanctioned with the 1905 constitution, set the royal cypher \"H I\" — the monogram of King Nicholas I, in the Cyrillic initial for Nikola — beneath a crown at the centre of a red-blue-white tricolour, marking it for official and royal use until Montenegro was absorbed into the Kingdom of Serbs, Croats and Slovenes in 1918.",
+            "sources": [
+              {
+                "title": "Principality / Kingdom of Montenegro (1782-1918) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/me_k.html"
+              }
+            ]
+          }
         },
         {
           "id": "me-1852",
