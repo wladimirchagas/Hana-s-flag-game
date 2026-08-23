@@ -3142,6 +3142,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Brazil national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Brazil_national_football_team" },
     ],
   },
+  "bs-civil-ensign": {
+    description: "The civil ensign of the Bahamas, adopted in 1973, is a red field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the Red Ensign marked a merchant vessel, distinct from the White Ensign flown by warships and the Blue Ensign flown by government service ships. The Bahamas retained this colour-coded convention after independence, keeping its merchant fleet flying red while replacing the Union Flag in the canton with the national flag.",
+    sources: [
+      { title: "Flags of the World — Bahamas: Ensigns", url: "https://www.crwflags.com/fotw/flags/bs~.html" },
+      { title: "Wikipedia — Red Ensign", url: "https://en.wikipedia.org/wiki/Red_Ensign" },
+    ],
+  },
+  "bs-naval-ensign": {
+    description: "The naval ensign of the Bahamas, adopted in 1973, is a white St George's Cross flag with the national flag in the canton, following the British Ensign system introduced in 1864 in which a White Ensign marked a naval vessel, distinguishing it from the Red Ensign flown by merchant ships and the Blue Ensign flown by government service vessels. The Bahamas kept this colour-coded system after independence, replacing only the Union Flag in the canton with its own national flag.",
+    sources: [
+      { title: "Flags of the World — Bahamas: Ensigns", url: "https://www.crwflags.com/fotw/flags/bs~.html" },
+      { title: "Wikipedia — White Ensign", url: "https://en.wikipedia.org/wiki/White_Ensign" },
+    ],
+  },
   "bs-governor-general": {
     description: "A blue field bears the Royal Crest — a crowned lion standing on the arched St Edward's Crown, the heraldic mark of the sovereign's authority used across the Commonwealth realms' governors-general — above a scroll reading 'Commonwealth of The Bahamas', marking the flag as that of the King's own representative in the Bahamas.",
     sources: [
@@ -6987,6 +7001,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Ay yıldız — Wikipedia", url: "https://en.wikipedia.org/wiki/Ayy%C4%B1ld%C4%B1z" },
       { title: "Turkey national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Turkey_national_football_team" },
+    ],
+  },
+  "tt-civil-ensign": {
+    description: "Trinidad and Tobago's civil ensign, adopted at independence in 1962, is a red field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the Red Ensign marked a merchant vessel — distinct from the White Ensign flown by warships and the Blue Ensign flown by government service ships. The newly independent country kept this colour-coded convention, replacing only the Union Flag in the canton with its own.",
+    sources: [
+      { title: "Wikipedia — Red Ensign", url: "https://en.wikipedia.org/wiki/Red_Ensign" },
+      { title: "Wikipedia — List of Trinidadian and Tobagonian flags", url: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    ],
+  },
+  "tt-naval-ensign": {
+    description: "Trinidad and Tobago's naval ensign, adopted at independence in 1962, is a white field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the White Ensign marked a naval vessel — distinct from the Red Ensign flown by merchant ships and the Blue Ensign flown by government service vessels. The newly independent country kept this colour-coded convention, replacing only the Union Flag in the canton with its own.",
+    sources: [
+      { title: "Wikipedia — White Ensign", url: "https://en.wikipedia.org/wiki/White_Ensign" },
+      { title: "Wikipedia — List of Trinidadian and Tobagonian flags", url: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
     ],
   },
   "tt-president": {

@@ -3948,7 +3948,20 @@
           "design": "A red ensign with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bahamian_flags",
           "sha256": "7e7f1c8616a5d043cd3629d00a5c133e90ba32502531e219e0a284abee52f844",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The civil ensign of the Bahamas, adopted in 1973, is a red field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the Red Ensign marked a merchant vessel, distinct from the White Ensign flown by warships and the Blue Ensign flown by government service ships. The Bahamas retained this colour-coded convention after independence, keeping its merchant fleet flying red while replacing the Union Flag in the canton with the national flag.",
+            "sources": [
+              {
+                "title": "Flags of the World — Bahamas: Ensigns",
+                "url": "https://www.crwflags.com/fotw/flags/bs~.html"
+              },
+              {
+                "title": "Wikipedia — Red Ensign",
+                "url": "https://en.wikipedia.org/wiki/Red_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "bs-naval-ensign",
@@ -3961,7 +3974,20 @@
           "design": "A white ensign with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bahamian_flags",
           "sha256": "027b7613abe7ad9784f51d96a72a8d21b53096649b1c601ff0a3e10be7ee9750",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The naval ensign of the Bahamas, adopted in 1973, is a white St George's Cross flag with the national flag in the canton, following the British Ensign system introduced in 1864 in which a White Ensign marked a naval vessel, distinguishing it from the Red Ensign flown by merchant ships and the Blue Ensign flown by government service vessels. The Bahamas kept this colour-coded system after independence, replacing only the Union Flag in the canton with its own national flag.",
+            "sources": [
+              {
+                "title": "Flags of the World — Bahamas: Ensigns",
+                "url": "https://www.crwflags.com/fotw/flags/bs~.html"
+              },
+              {
+                "title": "Wikipedia — White Ensign",
+                "url": "https://en.wikipedia.org/wiki/White_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "bs-arms",
@@ -28663,7 +28689,20 @@
           "design": "A red ensign with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags",
           "sha256": "943c4e12d85de5e6a389e35cfef76458bc43b5d623b6d50f9a5e3b78498b1709",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Trinidad and Tobago's civil ensign, adopted at independence in 1962, is a red field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the Red Ensign marked a merchant vessel — distinct from the White Ensign flown by warships and the Blue Ensign flown by government service ships. The newly independent country kept this colour-coded convention, replacing only the Union Flag in the canton with its own.",
+            "sources": [
+              {
+                "title": "Wikipedia — Red Ensign",
+                "url": "https://en.wikipedia.org/wiki/Red_Ensign"
+              },
+              {
+                "title": "Wikipedia — List of Trinidadian and Tobagonian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "tt-naval-ensign",
@@ -28676,7 +28715,20 @@
           "design": "A white ensign with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags",
           "sha256": "d3e49878e404b002bfbe5e5281ec568c1fd4590ccab95a2ea4e14125ba40abd7",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Trinidad and Tobago's naval ensign, adopted at independence in 1962, is a white field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the White Ensign marked a naval vessel — distinct from the Red Ensign flown by merchant ships and the Blue Ensign flown by government service vessels. The newly independent country kept this colour-coded convention, replacing only the Union Flag in the canton with its own.",
+            "sources": [
+              {
+                "title": "Wikipedia — White Ensign",
+                "url": "https://en.wikipedia.org/wiki/White_Ensign"
+              },
+              {
+                "title": "Wikipedia — List of Trinidadian and Tobagonian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "tt-defence-force",
