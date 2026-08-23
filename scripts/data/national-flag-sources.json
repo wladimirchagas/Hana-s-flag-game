@@ -31714,7 +31714,20 @@
           "design": "The People's Army flag with the navy's branch colours below.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
           "sha256": "defdb4a777c2ad878c462601f1237bfb71deeaa462d76606296451c820ad53a8",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Vietnam People's Navy is the People's Army's own flag — the national flag charged with the gold motto 'Quyết thắng' ('Determination to Win') — with a dark blue band added below for the navy's own branch colour. Dark blue marks naval personnel across the Vietnam People's Army's insignia, distinguishing the navy from the red of the ground forces and the azure of the air force.",
+            "sources": [
+              {
+                "title": "Wikipedia — Vietnamese military ranks and insignia",
+                "url": "https://en.wikipedia.org/wiki/Vietnamese_military_ranks_and_insignia"
+              },
+              {
+                "title": "Wikipedia — List of flags of Vietnam",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam"
+              }
+            ]
+          }
         },
         {
           "id": "vn-air-force",
@@ -31727,7 +31740,20 @@
           "design": "The People's Army flag with the air force's branch colours below.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
           "sha256": "07a625bccffcc6c73379638da96a7cad39c4cdab35599ff0cbd8974f5b654939",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Vietnam People's Air Force, flown since 1959, is the People's Army's own flag — the national flag charged with the gold motto 'Quyết thắng' ('Determination to Win') — with an azure band added below for the air force's own branch colour. Azure marks air force personnel across the Vietnam People's Army's insignia, distinguishing the air force from the red of the ground forces and the dark blue of the navy.",
+            "sources": [
+              {
+                "title": "Wikipedia — Vietnamese military ranks and insignia",
+                "url": "https://en.wikipedia.org/wiki/Vietnamese_military_ranks_and_insignia"
+              },
+              {
+                "title": "Wikipedia — List of flags of Vietnam",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam"
+              }
+            ]
+          }
         },
         {
           "id": "vn-coast-guard",
