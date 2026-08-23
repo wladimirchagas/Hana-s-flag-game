@@ -5663,6 +5663,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Liechtenstein — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein" },
     ],
   },
+  "li-passport": {
+    description: "Liechtenstein's passport bears the arms of the princely House of Liechtenstein: a shield divided gold over red, topped with a golden crown. The crown is read as representing the bond between the Prince and the people of Liechtenstein — a fitting symbol for a country whose ruling family gave it its name, having purchased the historic lordships of Schellenberg (1699) and Vaduz (1712) that became the principality, without any prince setting foot in the territory himself until 1842.",
+    sources: [
+      { title: "Coat of arms of Liechtenstein — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein" },
+      { title: "How the Principality of Liechtenstein came into being — Swiss National Museum", url: "https://blog.nationalmuseum.ch/en/2024/08/how-the-principality-of-liechtenstein-came-into-being/" },
+    ],
+  },
   "lk-air-force": {
     description: "The Air Force Ensign is a sky-blue field with the national flag in the canton and the air force's own roundel in the fly. When the ensign was first designed for the Royal Ceylon Air Force in 1951, the standard RAF-style roundel was modified with wings in yellow and maroon taken from the colours of the lion flag then flying as the national flag — the same lion that appears on Sri Lanka's national flag today, drawn from the Mahavamsa chronicle's association of the legendary Sinha with the Sinhalese people, and read since as a symbol of their strength and valour.",
     sources: [
@@ -5887,6 +5894,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "mc-arms": {
     description: "The shield of red and white lozenges is the arms of the House of Grimaldi, sovereigns of Monaco since 1297, and it is held by two friars brandishing swords. They recall François Grimaldi, who in 1297 seized the fortress of Monaco by disguising himself and his men as Franciscan monks. A princely crown and an ermine mantle surround the arms, and the motto reads Deo Juvante — “With God's Help.”",
+    sources: [
+      { title: "Coat of arms of Monaco — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco" },
+    ],
+  },
+  "mc-passport": {
+    description: "Monaco's passport bears the coat of arms of the ruling Grimaldi family: a shield of alternating red and silver lozenges — a pattern the family carried before it ever ruled Monaco — supported by two sword-wielding friars, and crowned with a princely crown. The friars recall the legend of François Grimaldi's 1297 seizure of Monaco's fortress, when he and his men reportedly disguised themselves as Franciscan monks to gain entry and take the stronghold by surprise. Beneath the shield runs the family motto, \"Deo Juvante\" — \"With God's help\".",
     sources: [
       { title: "Coat of arms of Monaco — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco" },
     ],
@@ -6653,6 +6666,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "pa-arms": {
     description: "The centre panel is a specific moment, not a landscape: the isthmus with its two seas, the moon rising over the waves as the sun sets behind the mountain — the solemn hour of the declaration of independence, 3 November 1903. The upper quarters carry a sword and rifle, laid down in the 1904 design to mean the end of civil wars but redefined by Law 28 of 1941 as an attitude of alert in defence of sovereignty, and a spade and hoe for work. The lower quarters carry a cornucopia for wealth and a winged wheel for progress. The eagle covering the shield with open wings is sovereignty, and the gold stars arched above it count the provinces of the republic — so their number changes as the country does.",
+    sources: [
+      { title: "Coat of arms of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
+    ],
+  },
+  "pa-passport": {
+    description: "Panama's dark-blue passport bears the national coat of arms, centred on the isthmus between two oceans beneath a sky where the sun sets in the west and the moon rises in the east — marking the twilight hour of independence from Colombia, declared on 3 November 1903. Four quarters surround it: crossed sabre and rifle for defence, crossed shovel and pickaxe for labour and agriculture, a cornucopia spilling coins for prosperity, and a winged wheel for industry and commerce. An eagle spreads its wings over the shield, carrying a ribbon inscribed with the motto \"Pro Mundi Beneficio\" — \"For the benefit of the world\", a reference to the Panama Canal's role connecting global trade.",
     sources: [
       { title: "Coat of arms of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
     ],
