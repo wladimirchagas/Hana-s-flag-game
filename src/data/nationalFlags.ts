@@ -7784,6 +7784,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mozambique" },
     ],
   },
+  "na-sa": {
+    description: "South Africa's 1928 flag, nicknamed \"Oranje, Blanje, Blou\" (Afrikaans for orange, white, blue), based its tricolour on the 17th-century Dutch Prince's Flag and set three small flags on its white band — the Union Jack, the vertical flag of the former Orange Free State, and the flag of the former South African Republic (Transvaal) — as a compromise between the country's British and Afrikaner populations. No symbol represented the Black African majority, or the Coloured and Indian populations, and the flag became strongly associated with the apartheid system it flew over until 1994.",
+    sources: [
+      { title: "Flag of South Africa (1928–1994) — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Africa_(1928%E2%80%931994)" },
+    ],
+  },
   "na-german": {
     description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
     sources: [
@@ -8119,6 +8125,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
     sources: [
       { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
+  "nz-united-tribes": {
+    description: "Chosen by a gathering of Māori chiefs at Waitangi on 20 March 1834 — the design that won a vote among several submitted flags — the United Tribes flag combined a red St George's cross with a smaller blue-and-black-bordered cross bearing four white eight-pointed stars. It was adopted so New Zealand-built ships would not be seized for lacking a flag of registry, but its deeper significance was that Britain's recognition of it acknowledged Māori chiefs' mana and marked the first act of collective Māori nationhood, uniting previously separate tribes under one flag.",
+    sources: [
+      { title: "United Tribes flag — NZ History (Ministry for Culture and Heritage)", url: "https://nzhistory.govt.nz/politics/flags-of-new-zealand/united-tribes-flag" },
     ],
   },
   "nz-civil-ensign": {

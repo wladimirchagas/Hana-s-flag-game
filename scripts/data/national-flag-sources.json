@@ -23776,7 +23776,16 @@
           "design": "The orange-white-blue flag of the Union, later Republic, of South Africa, which administered the territory as South West Africa.",
           "source": "https://en.wikipedia.org/wiki/South_West_Africa",
           "sha256": "54edacfc75a66e4708a3ab5eae49694cdf98ed66a96219347c0a27708b1cd4dc",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "South Africa's 1928 flag, nicknamed \"Oranje, Blanje, Blou\" (Afrikaans for orange, white, blue), based its tricolour on the 17th-century Dutch Prince's Flag and set three small flags on its white band — the Union Jack, the vertical flag of the former Orange Free State, and the flag of the former South African Republic (Transvaal) — as a compromise between the country's British and Afrikaner populations. No symbol represented the Black African majority, or the Coloured and Indian populations, and the flag became strongly associated with the apartheid system it flew over until 1994.",
+            "sources": [
+              {
+                "title": "Flag of South Africa (1928–1994) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_South_Africa_(1928%E2%80%931994)"
+              }
+            ]
+          }
         },
         {
           "id": "na-german",
@@ -25278,7 +25287,16 @@
           "design": "A St George’s cross on white, with a second cross and four stars in the canton — chosen by 25 northern chiefs in 1834 so New Zealand-built ships could be registered.",
           "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags",
           "sha256": "f6d00197df06601326fbfee57fd4415c1cffd35eea99df6686b9111ded458559",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Chosen by a gathering of Māori chiefs at Waitangi on 20 March 1834 — the design that won a vote among several submitted flags — the United Tribes flag combined a red St George's cross with a smaller blue-and-black-bordered cross bearing four white eight-pointed stars. It was adopted so New Zealand-built ships would not be seized for lacking a flag of registry, but its deeper significance was that Britain's recognition of it acknowledged Māori chiefs' mana and marked the first act of collective Māori nationhood, uniting previously separate tribes under one flag.",
+            "sources": [
+              {
+                "title": "United Tribes flag — NZ History (Ministry for Culture and Heritage)",
+                "url": "https://nzhistory.govt.nz/politics/flags-of-new-zealand/united-tribes-flag"
+              }
+            ]
+          }
         },
         {
           "id": "nz-civil-ensign",
