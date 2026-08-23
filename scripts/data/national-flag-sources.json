@@ -24527,7 +24527,16 @@
           "design": "Orange, white and blue horizontal bands — the flag of the Dutch Revolt under William of Orange from the 1570s. Through the 17th century the orange band was gradually replaced by red, producing today's red-white-blue.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Netherlands",
           "sha256": "f0f1b0de25ce97b0b31638835dff15419fbf7700ec2f34f2ca43bc163da51b35",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "The Prinsenvlag flew orange, white and blue horizontal bands as the flag of the Dutch Revolt against Spanish rule from the 1570s, its colours taken from the livery of William of Orange, leader of the revolt. Through the 17th century the orange band was gradually replaced by red, producing the red-white-blue tricolour the Netherlands flies today.",
+            "sources": [
+              {
+                "title": "Prince's Flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Prince's_Flag"
+              }
+            ]
+          }
         },
         {
           "id": "nl-royal",
@@ -25887,7 +25896,16 @@
           "design": "The diagonally quartered flag created by José de San Martín at the declaration of independence.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
           "sha256": "a35ce659ac10fdfc4ecf7ffde68fa6d98409ef389b33929fca2b3026121b6a6f",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "José de San Martín's first flag for Peru, decreed in 1820 and raised over Lima's main square at the 1821 declaration of independence, divided the field diagonally into red and white quarters around a central sun rising over mountains and sea within a laurel wreath. Red is read as the blood shed for independence and white as purity and peace; a popular story holds San Martín took the colours from a flock of red-and-white flamingos he saw in the Paracas desert, though historians also point to the red of Chile's flag and the white of Argentina's, honouring the mixed army he led.",
+            "sources": [
+              {
+                "title": "History of the Peruvian Flag (October 1820) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/pe_1820o.html"
+              }
+            ]
+          }
         },
         {
           "id": "pe-spain",
@@ -26317,7 +26335,16 @@
           "design": "The flag conceived by Emilio Aguinaldo and first unfurled at the 1898 declaration of independence, with a mythical-sun face on the triangle.",
           "source": "https://en.wikipedia.org/wiki/List_of_Philippine_flags",
           "sha256": "835580003cfcc7bfabb039e80c49c66b8ec469ce2200b77c5dbe2397c64c69db",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Conceived by Emilio Aguinaldo and first unfurled at the 1898 declaration of independence, this flag set a golden sun with a mythical face and eight rays inside a white triangle — the triangle recalling the Katipunan's own Masonic-influenced emblems — with three five-pointed stars at its corners. The eight rays stood for the first eight provinces to rise against Spanish rule in 1896, and the three stars for the Philippines' three main island groups: Luzon, the Visayas and Mindanao.",
+            "sources": [
+              {
+                "title": "History of the Philippines Flag — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ph-hist.html"
+              }
+            ]
+          }
         },
         {
           "id": "ph-1936",
