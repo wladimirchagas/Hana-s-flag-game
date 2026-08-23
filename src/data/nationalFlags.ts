@@ -10252,6 +10252,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Turkmenistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
     ],
   },
+  "tn-1959": {
+    description: "Proclaimed the state flag of the Republic of Tunisia on 1 June 1959 under the new constitution, this design continued the beylik's red field, white disc, crescent and star unchanged, until a 1999 law fixed its exact proportions and technical specifications in the version flown today.",
+    sources: [
+      { title: "Flag of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
+    ],
+  },
+  "tn-beylik": {
+    description: "Traced to the reign of Al-Husayn II ibn Mahmud, who after the 1827 Battle of Navarino wanted a distinct ensign for his own fleet rather than the general Ottoman flag, this red field with a white disc bearing a red crescent and star became the beylik's recognised standard by 1831 and continued through the era of the French protectorate. Red recalls the blood of those who resisted invasion, and white stands for peace; the crescent represents Islam and unity, and the five-pointed star the Five Pillars of Islam.",
+    sources: [
+      { title: "Flag of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
+    ],
+  },
   "tn-military": {
     description: "The military flag of Tunisia, flown since 1956 — the year of independence — bears the armed forces' emblem drawn from Tunisia's coat of arms adopted that same year: a lion on a red field and a set of scales on a yellow field, with the national motto in Arabic beneath. The lion and scales, both retained from earlier Tunisian arms, stand for strength and justice respectively, while the crescent and star appearing across the Tunisian military's emblems are the traditional symbols of Islam and the country's Muslim-majority identity.",
     sources: [
@@ -10973,10 +10985,40 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
     ],
   },
+  "ve-1954": {
+    description: "Set by the 1954 Flag, Coat of Arms and National Anthem Law, this version placed Venezuela's national coat of arms in the canton alongside the seven-star arc on the blue stripe. It remained the flag until 2006, when President Hugo Chávez's government added an eighth star — for the province of Guayana, which had not signed the 1811 declaration — and altered the coat of arms.",
+    sources: [
+      { title: "Flag of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Venezuela" },
+    ],
+  },
+  "ve-1930": {
+    description: "The 1930 flag of the Republic of Venezuela arranged the same seven stars honouring the founding provinces into an arc across the blue stripe, a form that continued as the country's sole national flag — without a coat of arms on the field itself — until the 1954 law added the arms to the canton.",
+    sources: [
+      { title: "Venezuela — Historical Flags (1930–2006), Flags of the World", url: "https://www.crwflags.com/fotw/flags/ve_1930.html" },
+    ],
+  },
+  "ve-1863": {
+    description: "Adopted in 1863 as the flag of the newly federal United States of Venezuela, this version set seven white five-pointed stars on the blue band, one for each of the original seven provinces that had signed Venezuela's 1811 declaration of independence from Spain — a count of stars that, itself rearranged several times since, is still carried on the flag today.",
+    sources: [
+      { title: "The History Behind Venezuela's Flag — Marlon Correa (Medium)", url: "https://medium.com/ask-a-venezuelan/the-history-behind-venezuelas-flag-7b8b66972d17" },
+    ],
+  },
   "ve-gran-colombia": {
     description: "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
     sources: [
       { title: "Flag of Gran Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Gran_Colombia" },
+    ],
+  },
+  "ve-1811": {
+    description: "Adopted by the National Congress after Venezuela's 5 July 1811 declaration of independence, this first republican flag kept Miranda's yellow-blue-red tricolour but added an allegorical seated indigenous woman in the canton, representing the liberated American continent.",
+    sources: [
+      { title: "First Republic of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/First_Republic_of_Venezuela" },
+    ],
+  },
+  "ve-miranda": {
+    description: "First hoisted by Francisco de Miranda at Jacmel, Haiti on 12 March 1806 and flown on Venezuelan soil that August at La Vela de Coro, this yellow-blue-red tricolour became the basis of Venezuela's flag once independence was declared in 1811 — and, through Miranda's and Simón Bolívar's shared campaigns, an ancestor of the flags of Colombia and Ecuador too. Yellow is read as the wealth of the land, blue as the sea separating Venezuela from Spain, and red as the blood shed in the fight for independence.",
+    sources: [
+      { title: "Flag of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Venezuela" },
     ],
   },
   "ve-spain": {
@@ -11148,6 +11190,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The six stars are taken from Kosovo's national flag, where they represent the country's six major ethnic groups: Albanians, Serbs, Bosniaks, Turks, Romani and Gorani.",
     sources: [
       { title: "Flag of Kosovo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kosovo" },
+    ],
+  },
+  "ye-south": {
+    description: "Flown by South Yemen from independence from Britain in 1967 until the 1990 unification, this flag placed a red star inside a pale blue triangle at the hoist of the Arab Liberation red-white-black triband — the light-blue triangle and red star both drawn from Communist and Arab-nationalist symbolism, marking South Yemen as the Arab world's only Marxist–Leninist state.",
+    sources: [
+      { title: "South Yemen (1967–1990) — Flags of the World", url: "https://www.fotw.info/flags/ye-south.html" },
+    ],
+  },
+  "ye-north": {
+    description: "Adopted by the Yemen Arab Republic after the 1962 revolution overthrew the imamate, this red-white-black tricolour — the Arab Liberation colours shared with Egypt, Syria and Iraq — carried a single green star on the white band, distinguishing North Yemen's flag from the plain tricolours of its fellow Arab republics until North and South Yemen united in 1990.",
+    sources: [
+      { title: "Flags, Symbols & Currency of Yemen — World Atlas", url: "https://www.worldatlas.com/flags/yemen" },
+    ],
+  },
+  "ye-kingdom": {
+    description: "The flag of the Mutawakkilite Kingdom of Yemen, the Zaydi imamate that ruled North Yemen until the 1962 revolution: a plain red field from 1918, joined by Arabic script (the shahada) from 1923, then in 1927 replaced with the white sword and five-pointed stars seen in this later version — the sword a traditional Arabian emblem of the imamate's authority.",
+    sources: [
+      { title: "Flags, Symbols & Currency of Yemen — World Atlas", url: "https://www.worldatlas.com/flags/yemen" },
     ],
   },
   "ye-emblem": {
