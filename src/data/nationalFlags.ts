@@ -5760,6 +5760,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — List of Malaysian flags", url: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     ],
   },
+  "my-civil-ensign": {
+    description: "Malaysia's civil ensign, worn by the country's merchant ships, is a red field with the national flag in a blue-fimbriated canton — the thin blue border separating canton from field being a traditional heraldic device in the same British-derived tradition that gives the Red Ensign to merchant vessels and the Blue Ensign to government ones. Malaysia, formed from former British territories, inherited this red-for-merchant convention alongside its Commonwealth naval and civil flag system.",
+    sources: [
+      { title: "Flags of the World — Civil Ensign (Malaysia)", url: "https://www.crwflags.com/fotw/flags/my~c.html" },
+      { title: "Wikipedia — Red Ensign", url: "https://en.wikipedia.org/wiki/Red_Ensign" },
+    ],
+  },
+  "my-government-ensign": {
+    description: "Malaysia's government ensign, worn by non-military government vessels, is a blue field with the national flag in the canton — following the same British-derived convention used across Commonwealth states, in which a Blue Ensign marks a government ship, distinct from the Red Ensign flown by merchant vessels and any naval ensign flown by warships. Malaysia inherited this colour-coded system from its constituent territories' British colonial administrations.",
+    sources: [
+      { title: "Flags of the World — Blue Ensign (Malaysia)", url: "https://www.crwflags.com/fotw/flags/my~b.html" },
+      { title: "Wikipedia — Blue Ensign", url: "https://en.wikipedia.org/wiki/Blue_Ensign" },
+    ],
+  },
   "my-navy-1957": {
     description: "The Royal Malayan Navy's ensign, flown from independence in 1957 until 1963, followed the Royal Navy's own White Ensign pattern — a red St George's Cross on white — with the Union Flag in the canton replaced by the flag of the newly independent Federation of Malaya. The design reflects Malaya's transition from British colonial rule while retaining the naval flag conventions of the Commonwealth navies it had trained and served alongside.",
     sources: [
@@ -7236,6 +7250,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Wikipedia — List of Ukrainian flags", url: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
       { title: "Wikipedia — Ukrainian Ground Forces", url: "https://en.wikipedia.org/wiki/Ukrainian_Ground_Forces" },
+    ],
+  },
+  "ua-air-assault": {
+    description: "The flag of the Ukrainian Air Assault Forces is maroon bearing the service's emblem: a parachute dome, symbolising airborne units everywhere, together with the wings and flaming sword of Archangel Michael, the patron protector traditionally invoked against Ukraine's enemies. Maroon became the service's colour on 21 November 2017, the first Air Assault Forces Day marked on that date rather than the Soviet-era 2 August, deliberately breaking from the paratroopers' earlier Soviet traditions.",
+    sources: [
+      { title: "Ukrainian Air Assault Forces — Symbols", url: "https://dshv.mil.gov.ua/en/page/symbols" },
+      { title: "Wikipedia — Ukrainian Air Assault Forces", url: "https://en.wikipedia.org/wiki/Ukrainian_Air_Assault_Forces" },
     ],
   },
   "ua-naval-ensign": {

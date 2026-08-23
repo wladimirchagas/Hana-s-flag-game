@@ -20282,7 +20282,20 @@
           "design": "A red field with the flag of Malaysia in a blue-fimbriated canton — worn by Malaysian merchant ships.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "a4727b0bd8dc350ca6639bbe3eafd984f64a00e11acf0383cf70d5d9ca58f9b1",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Malaysia's civil ensign, worn by the country's merchant ships, is a red field with the national flag in a blue-fimbriated canton — the thin blue border separating canton from field being a traditional heraldic device in the same British-derived tradition that gives the Red Ensign to merchant vessels and the Blue Ensign to government ones. Malaysia, formed from former British territories, inherited this red-for-merchant convention alongside its Commonwealth naval and civil flag system.",
+            "sources": [
+              {
+                "title": "Flags of the World — Civil Ensign (Malaysia)",
+                "url": "https://www.crwflags.com/fotw/flags/my~c.html"
+              },
+              {
+                "title": "Wikipedia — Red Ensign",
+                "url": "https://en.wikipedia.org/wiki/Red_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "my-government-ensign",
@@ -20293,7 +20306,20 @@
           "design": "A blue field with the flag of Malaysia in the canton — worn by government vessels.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "a87cedfc2997f647c1051e5d907e3e245e253f9f17cae110fb3f1909596d6af0",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Malaysia's government ensign, worn by non-military government vessels, is a blue field with the national flag in the canton — following the same British-derived convention used across Commonwealth states, in which a Blue Ensign marks a government ship, distinct from the Red Ensign flown by merchant vessels and any naval ensign flown by warships. Malaysia inherited this colour-coded system from its constituent territories' British colonial administrations.",
+            "sources": [
+              {
+                "title": "Flags of the World — Blue Ensign (Malaysia)",
+                "url": "https://www.crwflags.com/fotw/flags/my~b.html"
+              },
+              {
+                "title": "Wikipedia — Blue Ensign",
+                "url": "https://en.wikipedia.org/wiki/Blue_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "my-navy-1957",
@@ -29584,7 +29610,20 @@
           "design": "A maroon field with the service's emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
           "sha256": "609f1f51270262a510de875854715fec6629ec6c41262f2175c51702b227a244",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Ukrainian Air Assault Forces is maroon bearing the service's emblem: a parachute dome, symbolising airborne units everywhere, together with the wings and flaming sword of Archangel Michael, the patron protector traditionally invoked against Ukraine's enemies. Maroon became the service's colour on 21 November 2017, the first Air Assault Forces Day marked on that date rather than the Soviet-era 2 August, deliberately breaking from the paratroopers' earlier Soviet traditions.",
+            "sources": [
+              {
+                "title": "Ukrainian Air Assault Forces — Symbols",
+                "url": "https://dshv.mil.gov.ua/en/page/symbols"
+              },
+              {
+                "title": "Wikipedia — Ukrainian Air Assault Forces",
+                "url": "https://en.wikipedia.org/wiki/Ukrainian_Air_Assault_Forces"
+              }
+            ]
+          }
         },
         {
           "id": "ua-marines",
