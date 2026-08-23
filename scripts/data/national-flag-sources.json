@@ -24744,7 +24744,16 @@
           "design": "The red-white-blue Nordic cross defaced in the canton with the Swedish–Norwegian union badge (popularly the 'herring salad'), flown during the union with Sweden; the badge was removed from the civil flag in 1899.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Norway",
           "sha256": "0140825b8efd3434e2275c610c1658b05b2d51edbdc67ddd785d261c5e45a692",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "From 1844, Norway's Nordic-cross flag carried the Swedish-Norwegian union badge in its canton — a device combining both kingdoms' colours in equal measure, introduced by King Oscar I to assert Norway's equal status within their personal union after Norwegians had objected to an earlier, more Sweden-centred design. Detractors nicknamed it \"the herring salad\" (sillsallaten) for its resemblance to the classic Scandinavian dish of pickled herring, beetroot and potato; the badge was dropped from Norway's civil flag in 1899 and the union itself ended in 1905.",
+            "sources": [
+              {
+                "title": "Union mark of Norway and Sweden — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Union_mark_of_Norway_and_Sweden"
+              }
+            ]
+          }
         },
         {
           "id": "no-1814",
@@ -27699,7 +27708,16 @@
           "design": "The six-star flag of the US-administered Trust Territory, flown over Palau until it adopted its own flag in 1981.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Palau",
           "sha256": "633a4e494c8b50e593942671609045870cd8dcdf72d28a7dfaac55f36566593a",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The flag of the US-administered Trust Territory of the Pacific Islands, the winning entry in a design contest by government employee Gonzalo Santos, set six white stars on light blue — colours drawn from the flag of the United Nations, whose trusteeship the territory was held under — for its six administrative districts: the Marianas, the Marshall Islands, Yap, Chuuk, Pohnpei and Palau. Blue was read as freedom and loyalty; several of those districts, including Palau, later became independent nations with flags of their own.",
+            "sources": [
+              {
+                "title": "Flag of the Trust Territory of the Pacific Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Trust_Territory_of_the_Pacific_Islands"
+              }
+            ]
+          }
         },
         {
           "id": "pw-arms",
@@ -29023,7 +29041,16 @@
           "design": "A green field with the shahada and a sword, before the 1973 specification.",
           "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
           "sha256": "6248c6f8df0a2a6f6f4fdb7a8a194a718cc6588eb24eb1a28d2cd34d1868812f",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The shahada — the Islamic declaration of faith, \"There is no god but God; Muhammad is the messenger of God\" — on plain green traces to the Wahhabi reform movement of the late 18th century, whose religious authority the House of Saud first rose to power alongside; green itself was chosen for its association with Islam. A horizontal sword was added beneath the shahada in 1902, when Abdulaziz ibn Saud took the title Sultan of Nejd, standing for justice and for the strength by which the kingdom was won.",
+            "sources": [
+              {
+                "title": "The Saudi National Flag — Saudipedia",
+                "url": "https://saudipedia.com/en/article/1691/government-and-politics/national-symbols/the-saudi-national-flag"
+              }
+            ]
+          }
         },
         {
           "id": "sa-1934",
