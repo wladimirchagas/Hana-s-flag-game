@@ -2778,6 +2778,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Argentina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina" },
     ],
   },
+  "ar-passport": {
+    description: "Argentina's navy-blue passport bears the national coat of arms: two clasped hands, for the unity of the country's provinces, holding aloft a pike topped by a red Phrygian cap — the liberty cap of the French Revolution, standing for freedom — inside an oval shield in the flag's own blue and white. A golden Sun of May, the same sun on the national flag and named for the 1810 May Revolution that began Argentina's independence struggle, rises above, framed by a laurel wreath for victory. Together the hands, pike and cap illustrate the national motto \"En unión y libertad\" — \"In unity and freedom\".",
+    sources: [
+      { title: "Coat of arms of Argentina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina" },
+      { title: "Sun of May — Wikipedia", url: "https://en.wikipedia.org/wiki/Sun_of_May" },
+    ],
+  },
   "ar-football-crest": {
     description: "AFA is simply the association's own initials, Asociación del Fútbol Argentino. FIFA's rules let a champion display one star per World Cup on its shirt; the three above the shield mark Argentina's titles, won in 1978, 1986 and 2022.",
     sources: [
@@ -6071,6 +6078,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Morocco — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Morocco" },
     ],
   },
+  "ma-passport": {
+    description: "Morocco's green ordinary passport (diplomatic passports are burgundy, special ones blue, service ones brown) bears the national coat of arms, designed in 1957: a green five-pointed star — the Seal of Solomon, echoed on the national flag — set before a golden rising sun with 15 rays on a blue field. The star is widely read as representing the five pillars of Islam; green stands for peace, Islam and the country's agricultural wealth, while red on the wider arms recalls the struggle for independence.",
+    sources: [
+      { title: "Coat of arms of Morocco — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Morocco" },
+    ],
+  },
   "ma-football-crest": {
     description: "The green five-pointed star is the same Seal of Solomon that appears on Morocco's own national flag, introduced by Sultan Yusef's 1915 proclamation; by tradition it stands for the five pillars of Islam, while the flag's red is said to stand for the blood and unity of the nation's ancestors. The crown marks the federation's royal patronage — FRMF is French for Royal Moroccan Football Federation. The team's own nickname, the Atlas Lions, refers to the Atlas Mountains and the now-extinct Barbary (Atlas) lion once native to them, though this particular badge carries no lion.",
     sources: [
@@ -6852,6 +6865,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield reads the country's making: the four stars of the Southern Cross, a golden fleece for wool, a wheat sheaf for farming, crossed hammers for mining, and three ships down the centre for sea trade and the immigrant character of New Zealanders. The supporters embody its bicultural identity — a European woman holding the national flag and a Māori rangatira bearing a taiaha. St Edward's Crown marks the monarchy, and silver fern fronds flank the “New Zealand” scroll. Granted in 1911 and revised to the present form in 1956.",
     sources: [
       { title: "Coat of arms of New Zealand — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_New_Zealand" },
+    ],
+  },
+  "nz-passport": {
+    description: "New Zealand's passport bears the national coat of arms: a shield showing the four stars of the Southern Cross, three ships for maritime trade, a fleece and a sheaf of wheat for farming, and crossed hammers for mining, crowned to mark the country's status as a constitutional monarchy. The shield is flanked by two supporters — a Māori rangatira (chief) holding a taiaha and a European woman holding the New Zealand flag — representing the country's two founding peoples, with fern branches, a native plant and a longstanding national emblem, framing the base.",
+    sources: [
+      { title: "Coat of arms of New Zealand — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_New_Zealand" },
+      { title: "New Zealand passport — Te Ara Encyclopedia of New Zealand", url: "https://teara.govt.nz/en/photograph/35050/new-zealand-passport" },
     ],
   },
   "nz-football-crest": {

@@ -1186,7 +1186,20 @@
           "design": "The cover of the Argentina passport.",
           "source": "https://gicg.net/passport/ar/",
           "sha256": "bf6d52572c4c494e2c5c66efa2d19b9612645b90c657ecee2ee67820b2531e5a",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Argentina's navy-blue passport bears the national coat of arms: two clasped hands, for the unity of the country's provinces, holding aloft a pike topped by a red Phrygian cap — the liberty cap of the French Revolution, standing for freedom — inside an oval shield in the flag's own blue and white. A golden Sun of May, the same sun on the national flag and named for the 1810 May Revolution that began Argentina's independence struggle, rises above, framed by a laurel wreath for victory. Together the hands, pike and cap illustrate the national motto \"En unión y libertad\" — \"In unity and freedom\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Argentina — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina"
+              },
+              {
+                "title": "Sun of May — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Sun_of_May"
+              }
+            ]
+          }
         },
         {
           "id": "ar-football-crest",
@@ -19004,7 +19017,16 @@
           "design": "The cover of the Morocco passport.",
           "source": "https://gicg.net/passport/ma/",
           "sha256": "c622a9494f40ae440300904cc942112ef7c7b7e260e6f97692d3e00dadb54bc7",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Morocco's green ordinary passport (diplomatic passports are burgundy, special ones blue, service ones brown) bears the national coat of arms, designed in 1957: a green five-pointed star — the Seal of Solomon, echoed on the national flag — set before a golden rising sun with 15 rays on a blue field. The star is widely read as representing the five pillars of Islam; green stands for peace, Islam and the country's agricultural wealth, while red on the wider arms recalls the struggle for independence.",
+            "sources": [
+              {
+                "title": "Coat of arms of Morocco — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Morocco"
+              }
+            ]
+          }
         },
         {
           "id": "ma-france",
@@ -23393,7 +23415,20 @@
           "design": "The cover of the New Zealand passport.",
           "source": "https://gicg.net/passport/nz/",
           "sha256": "b5afa466fc286bb85f8fc02340d3d176d5c90325534617818931a7e1f75fc102",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "New Zealand's passport bears the national coat of arms: a shield showing the four stars of the Southern Cross, three ships for maritime trade, a fleece and a sheaf of wheat for farming, and crossed hammers for mining, crowned to mark the country's status as a constitutional monarchy. The shield is flanked by two supporters — a Māori rangatira (chief) holding a taiaha and a European woman holding the New Zealand flag — representing the country's two founding peoples, with fern branches, a native plant and a longstanding national emblem, framing the base.",
+            "sources": [
+              {
+                "title": "Coat of arms of New Zealand — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_New_Zealand"
+              },
+              {
+                "title": "New Zealand passport — Te Ara Encyclopedia of New Zealand",
+                "url": "https://teara.govt.nz/en/photograph/35050/new-zealand-passport"
+              }
+            ]
+          }
         },
         {
           "id": "nz-maori",
