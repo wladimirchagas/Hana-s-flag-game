@@ -4740,6 +4740,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "AIFF gets a new logo — Business Standard", url: "https://www.business-standard.com/article/pti-stories/aiff-gets-a-new-logo-116092801000_1.html" },
     ],
   },
+  "iq-ground-forces": {
+    description: "The flag of the Iraqi Ground Forces is divided into black and green sections bisected by a red line, with a white silhouette map of Iraq and the force's seal laid over the field. Black and green are drawn from the same Pan-Arab palette as the national flag, where a 13th-century poem reads black as battles overcome and the historic Abbasid Caliphate, and green as Arab fields and the Fatimid Caliphate — the same two colours that flank the white stripe of Iraq's own tricolour.",
+    sources: [
+      { title: "Wikipedia — Flag of Iraq", url: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+      { title: "Wikipedia — Iraqi Ground Forces", url: "https://en.wikipedia.org/wiki/Iraqi_Ground_Forces" },
+    ],
+  },
   "iq-arms": {
     description: "The republic's arms are the Eagle of Saladin — named for the 12th-century sultan, who was born in Tikrit — holding a shield bearing the national flag turned to a vertical arrangement, above a scroll with the name of the state in Arabic. The eagle is a pan-Arab device shared with Egypt and Palestine, adopted after the 1958 revolution replaced the Hashemite monarchy; the monarchy's own arms had been a very different thing, a golden crown of five arches on a royal mantle standing for sacrifice and purity, with two stars for Ishtar and Shamash recalling Iraq's pre-Islamic past.",
     sources: [

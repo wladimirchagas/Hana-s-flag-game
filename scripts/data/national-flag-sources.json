@@ -13498,7 +13498,20 @@
           "design": "The ground forces' flag.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq",
           "sha256": "3fcdb0bf5723c177d18e596589b6974c66e5d835c034a5e1668768f244802f91",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Iraqi Ground Forces is divided into black and green sections bisected by a red line, with a white silhouette map of Iraq and the force's seal laid over the field. Black and green are drawn from the same Pan-Arab palette as the national flag, where a 13th-century poem reads black as battles overcome and the historic Abbasid Caliphate, and green as Arab fields and the Fatimid Caliphate — the same two colours that flank the white stripe of Iraq's own tricolour.",
+            "sources": [
+              {
+                "title": "Wikipedia — Flag of Iraq",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Iraq"
+              },
+              {
+                "title": "Wikipedia — Iraqi Ground Forces",
+                "url": "https://en.wikipedia.org/wiki/Iraqi_Ground_Forces"
+              }
+            ]
+          }
         },
         {
           "id": "iq-air-force",
