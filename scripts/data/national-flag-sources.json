@@ -18962,7 +18962,20 @@
           "design": "The defence ministry's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Burmese_flags",
           "sha256": "8008701ed2077b582da913ee30a413270f88976287a4ae851ee90bfbafa81e88",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of Myanmar's Ministry of Defence bears the Tatmadaw emblem: a cogwheel, a star and crossed swords in gold, encircled by olive branches with thirty leaves on each side and Burmese floral arabesques (kanote) as supporters. The cogwheel stands for industry, the star for national unity, and the crossed swords for military strength — the same emblem worn as the cap badge across the army, navy and air force, here representing the ministry that oversees all three.",
+            "sources": [
+              {
+                "title": "Wikipedia — Emblem of Tatmadaw",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Tatmadaw"
+              },
+              {
+                "title": "Wikipedia — List of Burmese flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Burmese_flags"
+              }
+            ]
+          }
         },
         {
           "id": "mm-seal",
@@ -29831,7 +29844,20 @@
           "design": "A teal field with the corps' emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
           "sha256": "673da03e5dcbc875b28012ccf7a5854948000798c188eae85d860f86cb48a250",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Flag of the Marine Corps, adopted in 2023, is teal bearing the corps' emblem, built around the tryzub — the trident that has served as Ukraine's state emblem since at least the era of Volodymyr the Great and now stands for the will and invincibility of the Ukrainian people. Teal was chosen as the corps' own distinguishing colour, separate from the maroon of the Air Assault Forces and the colours of Ukraine's other military branches.",
+            "sources": [
+              {
+                "title": "Wikipedia — Ukrainian Marine Corps",
+                "url": "https://en.wikipedia.org/wiki/Ukrainian_Marine_Corps"
+              },
+              {
+                "title": "Wikipedia — List of Ukrainian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "ua-naval-ensign",
