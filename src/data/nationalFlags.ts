@@ -2723,6 +2723,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Albania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
     ],
   },
+  "am-ssr": {
+    description: "The Armenian SSR's flag, adopted in 1952, followed the Soviet Union's own red field and gold hammer-and-sickle-and-star canton, adding a horizontal blue stripe to distinguish the republic. Red stood for the revolutionary struggle of the working masses, and the hammer and sickle for the union of factory workers and peasants under Soviet rule.",
+    sources: [
+      { title: "Flag of the Armenian Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Armenian_Soviet_Socialist_Republic" },
+    ],
+  },
   "am-russian-empire": {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
     sources: [
@@ -2967,6 +2973,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The golden stag on blue has an unusual origin: the arms were granted to the Swedish province of Öland in 1560 and passed to Åland through a centuries-long heraldic mix-up of the two near-identically-named provinces, becoming Åland's official arms only on 10 December 1952. The stag's own symbolism is not recorded; Åland's earliest known seal, from 1326, instead showed Saint Olaf, the islands' patron saint.",
     sources: [
       { title: "Coat of arms of Åland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land" },
+    ],
+  },
+  "az-ssr": {
+    description: "The Azerbaijan SSR's flag, adopted in 1952, followed the Soviet Union's own red field and gold hammer-and-sickle-and-star canton, with a horizontal blue band along the bottom representing the Caspian Sea on the republic's coast. Red stood for the revolutionary struggle of the working masses, and the hammer and sickle for the union of factory workers and peasants under Soviet rule.",
+    sources: [
+      { title: "Flag of the Azerbaijan Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Azerbaijan_Soviet_Socialist_Republic" },
+    ],
+  },
+  "az-adr": {
+    description: "The 1918 tricolour of the Azerbaijan Democratic Republic reads blue as the Turkic origin of the Azerbaijani people, red as the desire to build a modern, democratic society, and green as belonging to Islamic civilisation — summed up by the republic's chairman as \"Turkish national culture, Muslim civilisation and the democratic foundations of modern Europe\". The eight-pointed star on the red stripe refers to the eight Turkic peoples recognised before the Soviet era.",
+    sources: [
+      { title: "State Symbols — Republic of Azerbaijan Ministry of Foreign Affairs", url: "https://www.mfa.gov.az/en/category/state-symbols" },
     ],
   },
   "az-russian-empire": {
