@@ -5386,6 +5386,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Equatorial Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea" },
     ],
   },
+  "gr-kingdom": {
+    description: "The Kingdom of Greece's state flag set a royal crown at the centre of the plain blue-and-white cross flag, marking it for official and royal use once Prince William of Denmark took the Greek throne as George I in 1863, beginning the House of Glücksburg's reign. The cross itself stands for Greece's Orthodox Christian faith, blue for sea and sky, and white for the purity of the struggle for independence; the crown was dropped whenever the monarchy itself was abolished.",
+    sources: [
+      { title: "Flag of Greece — Britannica", url: "https://www.britannica.com/topic/flag-of-Greece" },
+    ],
+  },
   "gr-naval-jack": {
     description: "The plain blue field with a white cross reaching to the edges continues a design first decreed in 1822 during the Greek War of Independence, when the cross stood for Orthodox Christianity — one of the unifying symbols of the revolution — and was described as representing \"the wisdom of God, freedom and country\".",
     sources: [
@@ -6367,6 +6373,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Kyrgyzstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
     ],
   },
+  "kh-democratic": {
+    description: "Democratic Kampuchea's flag, adopted in 1976, showed a golden three-towered silhouette resembling Angkor Wat — a recurring motif on Cambodian flags standing for the nation's heritage — on a red field read as revolutionary struggle. It flew over the Khmer Rouge regime responsible for the Cambodian genocide, which killed an estimated 1.5 to 2 million people between 1975 and 1979, and was retained afterward by the exiled, Khmer Rouge–led coalition that continued to hold Cambodia's UN seat into the 1990s.",
+    sources: [
+      { title: "Flag of Democratic Kampuchea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Democratic_Kampuchea" },
+    ],
+  },
   "kh-army": {
     description: "The flag of the Royal Cambodian Armed Forces is red, bearing the emblem of the High Command at its centre with the command's name written beneath it in yellow Khmer script. Each of the force's own branches carries a distinct field colour with its own emblem — red for the Army, blue for the Navy, and dark blue for the Air Force — with the whole system of Armed Forces flags updated by new uniform, insignia and flag regulations issued in October 2023.",
     sources: [
@@ -6606,6 +6618,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The lion and the wavy bands are taken from the Cayman Islands' coat of arms, where the gold lion represents the territory's constitutional ties to Britain and the wavy blue-and-white bands represent the surrounding sea.",
     sources: [
       { title: "Coat of arms of the Cayman Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands" },
+    ],
+  },
+  "kz-ssr": {
+    description: "The Kazakh SSR's flag followed standard Soviet design — a red field with a gold hammer, sickle and star — but was unique among Soviet republics for the sky-blue stripe along its base, thought to echo the flag of the historic Kazakh Khanate and so preserving a visual link to Kazakh identity through the Soviet era. Independent Kazakhstan's own flag, adopted in 1992, carries the same gold and light-blue colours forward.",
+    sources: [
+      { title: "Flag of the Kazakh Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Kazakh_Soviet_Socialist_Republic" },
     ],
   },
   "kz-russian-empire": {
