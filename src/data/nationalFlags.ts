@@ -5904,6 +5904,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
     ],
   },
+  "md-passport": {
+    description: "Moldova's passport bears the national coat of arms: an aurochs head — descended from the medieval arms of the Principality of Moldavia and symbolising strength and historical continuity — with an eight-pointed star between its horns, flanked by a rose to the right and a crescent moon to the left. The shield is held by a golden eagle carrying a cross in its beak and an olive branch and sceptre in its talons, a supporter borrowed from the interwar coat of arms of the Kingdom of Romania and asserting Moldova's Latin, Romanian-speaking heritage.",
+    sources: [
+      { title: "Coat of arms of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
+    ],
+  },
   "md-football-crest": {
     description: "The eagle echoes Moldova's own national coat of arms, whose eagle derives from the interwar coat of arms of the Kingdom of Romania — a period when most of Moldova's territory was part of Romania, between the World Wars — while the shield's vertical blue-yellow-red repeats the national flag's own colours.",
     sources: [
@@ -5925,6 +5931,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "me-arms": {
     description: "The double-headed eagle is of Byzantine and ultimately Roman origin, and here stands for the close bond of church and state that defined Montenegro under its prince-bishops, the vladikas. On the breast shield the golden lion passant is a sign of episcopal authority, read as a figure of the Lion of Judah. The crown is that of the Petrović-Njegoš dynasty that ruled Montenegro — its inclusion was mildly controversial when the arms were adopted in 2004, since the country is now a secular republic; the modern design put the lion back on the shield in place of the earlier rulers' initials.",
+    sources: [
+      { title: "Coat of arms of Montenegro — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro" },
+    ],
+  },
+  "me-passport": {
+    description: "Montenegro's red passport bears the national coat of arms, adopted in 2004: a golden double-headed eagle in flight on red, holding a sceptre and a globus cruciger (an orb topped with a cross) — a design inspired by the arms of the Russian Empire, with which the historic ruling House of Petrović-Njegoš had close dynastic ties. On the eagle's breast is a smaller shield showing a golden lion passant on blue over green, the Lion of Judah, read as a biblical symbol of resurrection.",
     sources: [
       { title: "Coat of arms of Montenegro — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro" },
     ],
@@ -7131,6 +7143,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Serbia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Serbia" },
     ],
   },
+  "rs-passport": {
+    description: "Serbia's burgundy passport bears the national coat of arms: a crowned white double-headed eagle on red, holding a sceptre and orb, its design tracing to the medieval Nemanjić dynasty and, further back, to the Byzantine Empire's own use of the double-headed eagle to represent unified spiritual and temporal power. On the eagle's breast sits a smaller shield bearing the Serbian cross — a white cross with four C-shaped firesteels (ocila) in its quarters — which evokes Serbia's Christian heritage and the 1389 Battle of Kosovo, and is traditionally read through the national motto \"Само слога Србина спасава\" (\"Only unity saves the Serbs\").",
+    sources: [
+      { title: "Serbian eagle — Wikipedia", url: "https://en.wikipedia.org/wiki/Serbian_eagle" },
+    ],
+  },
   "rs-football-crest": {
     description: "The Serbian cross — a cross with four firesteels, popularly read since the 19th century as four Cyrillic “С” letters standing for the national motto “Само слога Србина спасава” (“Only unity saves the Serbs”) — is Serbia's own national heraldic symbol. It derives from the Byzantine emblem of the Palaiologos dynasty, adopted after Michael VIII Palaiologos restored the Byzantine Empire in 1261, and was in Serbian use by the reign of Despot Stefan Lazarević around 1397.",
     sources: [
@@ -7930,6 +7948,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The tryzub is the oldest continuously used symbol on Ukrainian territory: it appears on the seals of the Rurik dynasty and was stamped on the gold and silver coins of Volodymyr the Great (980–1015), who passed it to his sons as a dynastic device, and on the bricks of the Church of the Tithes in Kyiv. Its original meaning is not settled — historians have read it as a falcon in flight, an arched bow, an anchor, or the Holy Trinity — and it was not treated as a NATIONAL symbol until 1917, when the historian Mykhailo Hrushevsky proposed it over rival candidates such as a crossbow or a Cossack with a musket. Vasyl Krychevsky's drawing was adopted by the Ukrainian People's Republic in February 1918, and the small coat of arms was readopted on 19 February 1992; the constitution provides for a great coat of arms that has still not been adopted.",
     sources: [
       { title: "Coat of arms of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
+    ],
+  },
+  "ua-passport": {
+    description: "Ukraine's passport carries the state's small coat of arms — the tryzub (trident), gold on blue, the same colours as the national flag — used officially on every state document since Ukraine's parliament adopted it in 1992 and enshrined it in the 1996 constitution. The symbol dates to Kyivan Rus', where it served as the emblem of the ruling Rurikid dynasty; its exact original meaning is debated (readings range from a stylised falcon to a trinity symbol), but a popular modern interpretation finds the letters of the Ukrainian word \"ВОЛЯ\" — meaning both \"will\" and \"freedom\" — traced within its shape. The current design is based on a 1918 version by artist Vasyl Krychevskyi, created for the short-lived Ukrainian People's Republic.",
+    sources: [
+      { title: "The origins and meaning of the tryzub, the Ukrainian coat of arms — The Kyiv Independent", url: "https://kyivindependent.com/the-origins-and-meaning-of-the-tryzub-the-ukrainian-coat-of-arms/" },
     ],
   },
   "ua-football-crest": {
