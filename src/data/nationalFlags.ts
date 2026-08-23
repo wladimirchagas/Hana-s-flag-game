@@ -5732,10 +5732,31 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — List of Malaysian flags", url: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     ],
   },
+  "my-air-force": {
+    description: "The Royal Malaysian Air Force's ensign carries the national flag in the canton and the service's own roundel in the fly, a gold star on a blue field bordered in dark blue. The star echoes the federal star of the national flag, whose points represent Malaysia's constituent states and federal territories, marking the roundel as a distinctly Malaysian aviation emblem in the same tradition as other Commonwealth air forces' national markings.",
+    sources: [
+      { title: "Flags of the World — Royal Malaysian Air Force (Malaysia)", url: "https://www.crwflags.com/fotw/flags/my%5Eairfo.html" },
+      { title: "Wikipedia — Coat of arms of Malaysia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia" },
+    ],
+  },
+  "my-armed-forces": {
+    description: "The flag of the Malaysian Armed Forces carries three horizontal bands of sky blue, red and dark blue — one for each of the air force, army and navy — with the joint armed forces crest at the centre, uniting the three services' own branch colours in a single flag. The crest draws on the same national symbols as Malaysia's coat of arms: the crescent for Islam, gold for the sovereignty of the Malay Rulers, and the federal star's points for the country's constituent states.",
+    sources: [
+      { title: "Flags of the World — Malaysian Defence Force", url: "https://www.crwflags.com/fotw/flags/my%5Emdf.html" },
+      { title: "Wikipedia — Coat of arms of Malaysia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia" },
+    ],
+  },
   "my-navy-1963": {
     description: "The Royal Malaysian Navy's ensign, flown from the formation of Malaysia in 1963 until 1968, kept the same White Ensign layout used by Malaya's navy before it — a red St George's Cross on white — updating only the canton to the flag of the newly formed Federation of Malaysia, which had just united Malaya with Singapore, Sabah and Sarawak. The design changed again in 1968 to the blue-crossed ensign the Royal Malaysian Navy has flown since.",
     sources: [
       { title: "Flags of the World — War Ensign 1963-1968 (Malaysia)", url: "https://www.crwflags.com/fotw/flags/my~w1963.html" },
+      { title: "Wikipedia — List of Malaysian flags", url: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
+    ],
+  },
+  "my-coast-guard": {
+    description: "The ensign of the Malaysian Maritime Enforcement Agency, formed on 15 February 2005 and known internationally as the Malaysian Coast Guard, is a blue field bearing the agency's own crest with the national flag in the canton. The agency's motto, 'Mengawal, Melindung, Menyelamat' ('Guard, Protect, Save'), sets out its role of enforcing maritime law and coordinating search-and-rescue operations across Malaysia's waters.",
+    sources: [
+      { title: "Wikipedia — Malaysian Maritime Enforcement Agency", url: "https://en.wikipedia.org/wiki/Malaysian_Maritime_Enforcement_Agency" },
       { title: "Wikipedia — List of Malaysian flags", url: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     ],
   },
