@@ -15950,7 +15950,16 @@
           "design": "The cover of the Cambodia passport.",
           "source": "https://gicg.net/passport/kh/",
           "sha256": "914f3fc383f06e6d21c817415fb4a9768992ccd1936be7d729b3b3a327690ab3",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Cambodia's passport bears the national coat of arms: a gajasingha (a mythical creature with a lion's body and an elephant's trunk) and a rajasingha (a royal lion) standing as supporters, each holding a royal five-tiered umbrella — one representing the King, the other the Queen — flanking a royal crown topped with a diamond at the centre.",
+            "sources": [
+              {
+                "title": "Coat of arms of Cambodia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cambodia"
+              }
+            ]
+          }
         },
         {
           "id": "kh-football-crest",
@@ -17627,7 +17636,16 @@
           "design": "The cover of the Sri Lanka passport.",
           "source": "https://gicg.net/passport/lk/",
           "sha256": "b14202ef5fe1a6c7043853633f4d0cf6a58292efbfc8c23019412a6328f4270f",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Sri Lanka's maroon passport bears the national emblem, in use since 1972: a golden lion holding a kastane sword, tracing to the royal banners of pre-colonial Sinhalese kings and representing valour and sovereignty, set against the maroon field that marks the country's Sinhalese majority. The lion sits within petals of the blue water lily, Sri Lanka's national flower, symbolising purity and the Buddhist path, beneath a Dharmachakra — the Wheel of Dharma — representing the Eightfold Path of Buddhist teaching.",
+            "sources": [
+              {
+                "title": "Emblem of Sri Lanka — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka"
+              }
+            ]
+          }
         },
         {
           "id": "lk-uk",
@@ -22819,7 +22837,16 @@
           "design": "The cover of the Nepal passport.",
           "source": "https://gicg.net/passport/np/",
           "sha256": "ca98f5846063acb54681caac025887bef4bf88b47d1f6b5c342f0d30e2eb01e5",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Nepal's passport bears the national emblem, redesigned in 2006: Mount Everest — Sagarmatha in Nepali, the world's highest peak and a source of national pride — rising above green hills for the country's mid-hill region, over a yellow band for the fertile Terai lowlands. Clasped male and female hands, symbolising gender equality, are draped with a garland of rhododendron, the national flower, above a scroll bearing the Sanskrit motto \"Mother and Motherland are greater than heaven\".",
+            "sources": [
+              {
+                "title": "Emblem of Nepal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Nepal"
+              }
+            ]
+          }
         },
         {
           "id": "np-football-crest",
