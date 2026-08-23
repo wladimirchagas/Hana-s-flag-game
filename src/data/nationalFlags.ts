@@ -5645,6 +5645,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Kazakhstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kazakhstan" },
     ],
   },
+  "kz-passport": {
+    description: "Kazakhstan's passport bears the state emblem, centred on the shanyrak — the circular wooden crown at the top of a traditional Kazakh yurt, from which wooden supports radiate outward like sunrays — set against a sky-blue field. The shanyrak is read as a symbol of the shared home and homeland of all who live in Kazakhstan: just as a yurt's stability depends on every one of its radiating supports holding firm, the country's own stability is said to depend on the wellbeing of each of its citizens.",
+    sources: [
+      { title: "National Emblem of Kazakhstan — Official website of the President of the Republic of Kazakhstan", url: "https://www.akorda.kz/en/state_symbols/kazakhstan_emblem" },
+    ],
+  },
   "kz-football-crest": {
     description: "The golden sun and soaring eagle both repeat Kazakhstan's own national flag: the sun stands for life, energy and abundance, its rays shaped like grain; the steppe eagle has flown on the standards of Kazakh tribes for centuries and stands for freedom, power and the flight to the future. KFF is simply the federation's own initials, the Kazakhstan Football Federation.",
     sources: [
@@ -7922,6 +7928,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Turkmenistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Turkmenistan" },
     ],
   },
+  "tm-passport": {
+    description: "Turkmenistan's passport bears the national coat of arms, created after independence in 1991: an Akhal-Teke horse — a breed native to Turkmenistan prized for its endurance and golden coat, and a longstanding source of national pride — set on a blue disc within a green eight-pointed star (the Rub el Hizb, an Islamic symbol). A red band around the disc carries five traditional carpet motifs, one for each of the country's major tribes (Teke, Yomut, Arsary, Chowdur and Saryk), and the whole is wreathed in wheat, a nod to the Turkmen tradition of welcoming guests with bread.",
+    sources: [
+      { title: "Emblem of Turkmenistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Turkmenistan" },
+    ],
+  },
   "tm-football-crest": {
     description: "The green field and the crescent-and-stars motif echo Turkmenistan's national flag, where green stands for life, land and prosperity, and the crescent symbolises the clear sky above the Turkmen people.",
     sources: [
@@ -8329,6 +8341,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is the country's natural wealth arranged around one legendary bird. On the left is a cotton plant — the crop that has dominated Uzbek industry and agriculture since the Soviet era, when the Uzbek SSR was one of the USSR's main suppliers — and on the right ears of wheat. At the centre the Huma, a legendary bird of Persian and Turkic myth, spreads its wings for peace, happiness and the striving for freedom. Enclosed by those wings are a rising sun over mountains and green pastures, and the two rivers that make the country's agriculture possible: the Amu Darya and the Syr Darya. Before the Soviet period the khanates and emirates here — Bukhara, Khiva — had no coat of arms in the Western sense at all.",
     sources: [
       { title: "Emblem of Uzbekistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan" },
+    ],
+  },
+  "uz-passport": {
+    description: "Uzbekistan's passport bears the state coat of arms, adopted in 1992 following independence: a white Huma bird at its centre — a mythical creature from Persian mythology celebrated in the poetry of Alisher Navoi as the kindest of all living beings, and read here as a symbol of love, happiness and freedom. Above it sits an eight-pointed star with a crescent moon, referencing the country's Islamic heritage, while a rising sun and two flowing rivers — the Amu Darya and Syr Darya, Central Asia's two great waterways — represent the land itself.",
+    sources: [
+      { title: "National emblem of Uzbekistan — Advantour", url: "https://www.advantour.com/uzbekistan/emblem.htm" },
     ],
   },
   "uz-football-crest": {

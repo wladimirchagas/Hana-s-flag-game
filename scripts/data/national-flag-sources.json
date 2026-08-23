@@ -17081,7 +17081,16 @@
           "design": "The cover of the Kazakhstan passport.",
           "source": "https://gicg.net/passport/kz/",
           "sha256": "d9a3dafbb0f312bf0f7d7d4f14c32b087493d5b96db95456b3c18d565a7e3a19",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Kazakhstan's passport bears the state emblem, centred on the shanyrak — the circular wooden crown at the top of a traditional Kazakh yurt, from which wooden supports radiate outward like sunrays — set against a sky-blue field. The shanyrak is read as a symbol of the shared home and homeland of all who live in Kazakhstan: just as a yurt's stability depends on every one of its radiating supports holding firm, the country's own stability is said to depend on the wellbeing of each of its citizens.",
+            "sources": [
+              {
+                "title": "National Emblem of Kazakhstan — Official website of the President of the Republic of Kazakhstan",
+                "url": "https://www.akorda.kz/en/state_symbols/kazakhstan_emblem"
+              }
+            ]
+          }
         },
         {
           "id": "kz-russian-empire",
@@ -29835,7 +29844,16 @@
           "design": "The cover of the Turkmenistan passport.",
           "source": "https://gicg.net/passport/tm/",
           "sha256": "b87786da1d3164484c03bef8d0eb76a688df05a78dac5fb741766a09a13b4866",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Turkmenistan's passport bears the national coat of arms, created after independence in 1991: an Akhal-Teke horse — a breed native to Turkmenistan prized for its endurance and golden coat, and a longstanding source of national pride — set on a blue disc within a green eight-pointed star (the Rub el Hizb, an Islamic symbol). A red band around the disc carries five traditional carpet motifs, one for each of the country's major tribes (Teke, Yomut, Arsary, Chowdur and Saryk), and the whole is wreathed in wheat, a nod to the Turkmen tradition of welcoming guests with bread.",
+            "sources": [
+              {
+                "title": "Emblem of Turkmenistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Turkmenistan"
+              }
+            ]
+          }
         },
         {
           "id": "tm-russian-empire",
@@ -32453,7 +32471,16 @@
           "design": "The cover of the Uzbekistan passport.",
           "source": "https://gicg.net/passport/uz/",
           "sha256": "31ebd547b4541d68b362ec0188e8c386cf85845c1221d3c54864210bdfacb65b",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Uzbekistan's passport bears the state coat of arms, adopted in 1992 following independence: a white Huma bird at its centre — a mythical creature from Persian mythology celebrated in the poetry of Alisher Navoi as the kindest of all living beings, and read here as a symbol of love, happiness and freedom. Above it sits an eight-pointed star with a crescent moon, referencing the country's Islamic heritage, while a rising sun and two flowing rivers — the Amu Darya and Syr Darya, Central Asia's two great waterways — represent the land itself.",
+            "sources": [
+              {
+                "title": "National emblem of Uzbekistan — Advantour",
+                "url": "https://www.advantour.com/uzbekistan/emblem.htm"
+              }
+            ]
+          }
         },
         {
           "id": "uz-ssr",
