@@ -9888,7 +9888,20 @@
           "design": "The Union Flag within a white border, flown as a jack by British merchant ships.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "fe6217a944b0baa3fb0339ed8dbd3ace157b7bb4e0f847c3234c3b3c151b833f",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Civil Jack — historically known as the Pilot Jack — is the Union Flag bordered in white, introduced in 1823 as a signal flown by merchant ships requesting a harbour pilot, and formally adopted by the Royal Navy as the pilot signal used worldwide in 1826. It ceased to serve that signalling function in 1970 but remains in legal use today as the civil jack flown by British-registered merchant and recreational vessels, its white border distinguishing it from the plain Union Flag flown as the Royal Navy's own jack.",
+            "sources": [
+              {
+                "title": "Flags of the World — Pilot flag: United Kingdom",
+                "url": "https://www.crwflags.com/fotw/flags/gb-pilot.html"
+              },
+              {
+                "title": "Royal Museums Greenwich — Pilot Jack",
+                "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-1053"
+              }
+            ]
+          }
         },
         {
           "id": "gb-royal-standard",
@@ -14823,7 +14836,20 @@
           "design": "A white ensign with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
           "sha256": "23545a35c8add6e88c069fdca2c62f83cca476694f306640009f1d0048462444",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The naval ensign of Kenya, adopted at independence in 1964, is a white field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the White Ensign marked a naval vessel — distinct from the Red Ensign flown by merchant ships and the Blue Ensign flown by government service vessels. Kenya kept this colour-coded convention after independence, replacing the Union Flag in the canton with its own national flag.",
+            "sources": [
+              {
+                "title": "Wikipedia — White Ensign",
+                "url": "https://en.wikipedia.org/wiki/White_Ensign"
+              },
+              {
+                "title": "Wikipedia — List of flags of Kenya",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya"
+              }
+            ]
+          }
         },
         {
           "id": "ke-arms",
@@ -16675,7 +16701,20 @@
           "design": "A blue ensign with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_flags",
           "sha256": "827d91446c5aa31f4c760234e9e48adfd056d54e769c4cc494f2f2a901eb4303",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Government Ensign of Sri Lanka, flown since 1972, is a blue field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the Blue Ensign marked a non-military government vessel — distinct from the White Ensign flown by warships and the Red Ensign flown by merchant ships. Sri Lanka kept this colour-coded convention after independence, replacing the Union Flag in the canton with its own national flag.",
+            "sources": [
+              {
+                "title": "Wikipedia — Blue Ensign",
+                "url": "https://en.wikipedia.org/wiki/Blue_Ensign"
+              },
+              {
+                "title": "Wikipedia — List of Sri Lankan flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_flags"
+              }
+            ]
+          }
         },
         {
           "id": "lk-naval-ensign",
@@ -23143,7 +23182,20 @@
           "design": "A red ensign with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
           "sha256": "adb635970d86148bfa14a326ba1e21b382ce873b6d1e286f06afb8418c74815b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Civil Ensign of Pakistan, flown since independence in 1947, is a red field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the Red Ensign marked a merchant vessel — distinct from the White Ensign flown by warships and the Blue Ensign flown by government service ships. Pakistan inherited this colour-coded convention from British India, replacing the Union Flag in the canton with its own.",
+            "sources": [
+              {
+                "title": "Wikipedia — Red Ensign",
+                "url": "https://en.wikipedia.org/wiki/Red_Ensign"
+              },
+              {
+                "title": "Wikipedia — List of Pakistani flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags"
+              }
+            ]
+          }
         },
         {
           "id": "pk-naval-ensign",
