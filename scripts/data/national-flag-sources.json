@@ -25641,7 +25641,20 @@
           "design": "The national flag with the land forces' emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
           "sha256": "6278980bc174b1bed3107419288325ea87f3450649ccc0eaf56ab75736fb59aa",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Royal Saudi Land Forces is the national flag charged with the land forces' version of Saudi Arabia's emblem: a white palm rising above two crossed white swords. The palm stands for the kingdom's vitality and prosperity, while the crossed swords represent the strength that defends it, the same national emblem carried across the country's other armed-forces flags.",
+            "sources": [
+              {
+                "title": "Flags of the World — Armed Forces (Saudi Arabia)",
+                "url": "https://www.crwflags.com/fotw/flags/sa%5E.html"
+              },
+              {
+                "title": "Wikipedia — Emblem of Saudi Arabia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia"
+              }
+            ]
+          }
         },
         {
           "id": "sa-air-force",
@@ -25652,7 +25665,20 @@
           "design": "The air force's ensign.",
           "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
           "sha256": "443655b611bef7d9acfb874559abe35d7ed7d50fef7f173c383f1c9d7684fc36",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Air Force Ensign of Saudi Arabia carries the service's own roundel — concentric green-white-green rings — with the national emblem in the central panel: a date palm rising above two crossed swords. The palm stands for the kingdom's vitality and prosperity, while the crossed swords represent the strength that defends it, also read as recalling the Sultanate of Nejd and the Kingdom of Hejaz that united in 1926 to form Saudi Arabia.",
+            "sources": [
+              {
+                "title": "Flags of the World — Royal Saudi Air Force (Saudi Arabia)",
+                "url": "https://www.crwflags.com/fotw/flags/sa%5Ersaf.html"
+              },
+              {
+                "title": "Wikipedia — Emblem of Saudi Arabia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia"
+              }
+            ]
+          }
         },
         {
           "id": "sa-emblem",
