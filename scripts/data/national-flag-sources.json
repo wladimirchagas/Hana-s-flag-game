@@ -11160,7 +11160,20 @@
           "design": "The cover of the Ghana passport.",
           "source": "https://gicg.net/passport/gh/",
           "sha256": "4cb6b4255d82444a1d0e310fdd8a746ba34d8fa75b738782c74931db30be12e3",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "As an ECOWAS member, Ghana's passport carries the bloc's English and French headings — \"Economic Community of West African States (ECOWAS)\" and \"Communauté économique des États de l'Afrique de l'Ouest (CEDEAO)\" — above \"Republic of Ghana\" and the national coat of arms. That shield is quartered by a green St George's Cross bearing a gold lion (marking Ghana's continued Commonwealth ties), crested by a black star — the lodestar of African freedom — and supported by two eagles, each wearing a black star on a red-gold-green ribbon, standing watch over charges representing local government, national government, and the country's agricultural and mineral wealth.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ghana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana"
+              },
+              {
+                "title": "Ghanaian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Ghanaian_passport"
+              }
+            ]
+          }
         },
         {
           "id": "gh-football-crest",
@@ -11344,7 +11357,16 @@
           "design": "The cover of the the Gambia passport.",
           "source": "https://gicg.net/passport/gm/",
           "sha256": "4b762da1158323fcefee1680851fc92512c6ee9eeee93509330cb3f7d2a5b468",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Gambia's biometric passport carries the ECOWAS emblem — a stylised drum and circle motif representing West African cultural heritage and regional unity — rather than the country's own coat of arms, which the earlier machine-readable passport had shown instead. The switch reflects The Gambia's membership of the Economic Community of West African States and its adoption of the bloc's shared passport symbol.",
+            "sources": [
+              {
+                "title": "ECOWAS passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/ECOWAS_passport"
+              }
+            ]
+          }
         },
         {
           "id": "gm-football-crest",
@@ -16406,7 +16428,16 @@
           "design": "The cover of the South Korea passport.",
           "source": "https://gicg.net/passport/kr/",
           "sha256": "1c739bfb008012df673d123a07abcda713cf173cbdb295e25a30a16ad3840b90",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "South Korea's passport cover shows the national emblem: the Taegeuk symbol (the red-and-blue swirl at the centre of the national flag, representing the balance of yin and yang) encircled by petals of the mugunghwa, the rose of Sharon that is South Korea's national flower and a longstanding symbol of resilience and continuity in Korean culture. The interior pages depict the country's national treasures and cultural heritage sites.",
+            "sources": [
+              {
+                "title": "South Korean passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/South_Korean_passport"
+              }
+            ]
+          }
         },
         {
           "id": "kr-japan",
@@ -21816,7 +21847,16 @@
           "design": "The cover of the Nigeria passport.",
           "source": "https://gicg.net/passport/ng/",
           "sha256": "3f436db30714e444381b0bbc076b418f4f5d474d92f5acf7117d1021eac04ee4",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Nigeria's green passport bears the ECOWAS emblem (as a West African bloc member) alongside the national coat of arms in hot-foil stamping. The arms' black shield represents Nigeria's fertile soil, marked by a white \"Y\" for the point where the Niger and Benue rivers meet; two horses stand for dignity and endurance, an eagle above for strength, and a wreath of green and white — green for the country's vegetation and agricultural wealth, white for peace — carries the national motto, \"Unity and Faith, Peace and Progress\".",
+            "sources": [
+              {
+                "title": "Nigeria Coat of Arms Meaning Explained: Symbols & History",
+                "url": "https://firstnigerian.com/nigeria-coat-of-arms-meaning/"
+              }
+            ]
+          }
         },
         {
           "id": "ng-uk",
