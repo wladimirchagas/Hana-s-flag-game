@@ -25660,7 +25660,16 @@
           "design": "The flag flown at the separation from Colombia, before the present design was adopted.",
           "source": "https://en.wikipedia.org/wiki/List_of_Panamanian_flags",
           "sha256": "439a11f0020a3079a3353665c812947447fc12cde51968d79807ae31542b4acf",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Designed by Philippe Bunau-Varilla's wife and modelled on the Stars and Stripes, this proposed first flag of Panama used thirteen alternating red and yellow stripes — yellow standing in for the American flag's white, echoing the colours shared by Spain's and Colombia's own flags — with two gold suns joined by a bar in the blue canton, representing North and South America linked by the Panamanian isthmus. Panama's leadership rejected it in favour of a flag designed by the family of first president Manuel Amador Guerrero, the one Panama still flies today.",
+            "sources": [
+              {
+                "title": "Panama - Historical Flags — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/pa_hist.html"
+              }
+            ]
+          }
         },
         {
           "id": "pa-colombia",
@@ -28123,7 +28132,16 @@
           "design": "The blue-yellow-red tricolour charged in the yellow band with the emblem of the Socialist Republic of Romania — a wooded mountain landscape beneath a rising sun with a derrick and a star, within a wheat wreath. Torn out by revolutionaries in December 1989, leaving the plain tricolour.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Romania",
           "sha256": "c978a916e8105dd2b0ac245e44cb2eac0c65e4fb4662d5121c4b28e769849ac0",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "Communist Romania's flag charged the country's blue-yellow-red tricolour with a state emblem modelled on the Soviet Union's own: a landscape of forested Carpathian mountains and an oil derrick beneath a rising sun, the sun for the socialist system and the mountains, forest and derrick for the country's natural resources and industry, framed by wheat sheaves for the peasantry beneath a red star for the ruling regime. When the communist government fell in December 1989, revolutionaries cut the emblem bodily out of flags across the country, leaving a hole where it had been — a gesture so widely repeated it became the revolution's own emblem.",
+            "sources": [
+              {
+                "title": "Emblem of the Socialist Republic of Romania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_the_Socialist_Republic_of_Romania"
+              }
+            ]
+          }
         },
         {
           "id": "ro-president",
@@ -28576,7 +28594,16 @@
           "priorPolity": "the Soviet Union",
           "reuse": "historical-flags/ussr.png",
           "design": "The red flag with gold hammer, sickle and star, flown over Russia while it was the largest republic of the USSR.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Soviet_Union"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Soviet_Union",
+          "meaning": {
+            "description": "The Soviet flag's gold hammer and sickle, adopted in its final form in 1924, stood for the alliance between industrial workers (the hammer) and agricultural labourers (the sickle) that underlay Soviet ideology. Red was a traditional symbol of revolution, also read as the blood shed by workers and peasants in the 1917 revolution, and the gold-bordered red star above represented the Communist Party and the hoped-for triumph of communism across the world's five inhabited continents.",
+            "sources": [
+              {
+                "title": "5 main symbols of the Soviets EXPLAINED — Russia Beyond",
+                "url": "https://www.rbth.com/history/334284-5-main-symbols-of-soviets"
+              }
+            ]
+          }
         },
         {
           "id": "ru-empire-tricolour",
