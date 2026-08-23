@@ -19718,7 +19718,16 @@
           "design": "The cover of the Mali passport.",
           "source": "https://gicg.net/passport/ml/",
           "sha256": "899a65e6dd2142e62f5266e5d96fc798829cf4c29d7cfae6eebec327bab434db",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Mali's dark-brown passport bears the state seal, in use since 1973: a legendary vulture from Malian folklore at the top, the Great Mosque of Djenné at the centre — the world's largest mudbrick building, representing Islam, the country's majority faith — flanked by two bows and arrows for the strength and independence of the Malian people, above a rising sun for renewal and prosperity. Below runs the national motto, \"Un Peuple, Un But, Une Foi\" — \"One People, One Goal, One Faith\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Mali — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mali"
+              }
+            ]
+          }
         },
         {
           "id": "ml-football-crest",
@@ -28049,7 +28058,16 @@
           "design": "The cover of the Sierra Leone passport.",
           "source": "https://gicg.net/passport/sl/",
           "sha256": "5cbda0261b8f9b0a46088c2fa0c87cc219d62d6c0b14465cbbf2337818fea65b",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Sierra Leone's passport bears the national coat of arms: a lion beneath a zigzag border representing the Lion Mountains that gave the country its name (from the Portuguese \"Serra Leoa\"), three torches symbolising peace and dignity, and wavy bars at the base depicting the sea.",
+            "sources": [
+              {
+                "title": "Coat of arms of Sierra Leone — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sierra_Leone"
+              }
+            ]
+          }
         },
         {
           "id": "sl-football-crest",
@@ -28228,7 +28246,16 @@
           "design": "The cover of the Senegal passport.",
           "source": "https://gicg.net/passport/sn/",
           "sha256": "0f3f5928d5e43381d1664c25ac39dfe0d03b6b43a8f4fb2b1c81bd45e35708c7",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Senegal's burgundy passport bears the national coat of arms: a shield split between a golden lion, standing for courage, strength and wisdom, and a baobab tree, the iconic African tree that serves as a traditional village gathering place and here represents resilience, endurance and community. Palm branches flank the shield beneath a green five-pointed star.",
+            "sources": [
+              {
+                "title": "🇸🇳 Senegal Flag Unveiled: Colors, Meaning, Coat of Arms, Flag Map, and Similar Flags — Mappr",
+                "url": "https://www.mappr.co/flag-maps/senegal/"
+              }
+            ]
+          }
         },
         {
           "id": "sn-football-crest",
@@ -29280,7 +29307,16 @@
           "design": "The cover of the Togo passport.",
           "source": "https://gicg.net/passport/tg/",
           "sha256": "071a3ea602a99165ab578e724b6bd5941f57d1ffc4040f48c3e562c81516fe4c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Togo's passport bears the national coat of arms, adopted in 1962: two red lions standing back-to-back, each armed with a bow and arrow, expressing the vigilance of the Togolese people in defending their independence and the idea that true freedom rests in their own hands and traditions. A golden shield bearing the letters \"RT\" (République Togolaise) sits between them, with the national flag displayed twice above and the motto \"Travail, Liberté, Patrie\" — \"Work, Liberty, Homeland\" — on a ribbon below.",
+            "sources": [
+              {
+                "title": "Coat of arms of Togo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Togo"
+              }
+            ]
+          }
         },
         {
           "id": "tg-football-crest",
