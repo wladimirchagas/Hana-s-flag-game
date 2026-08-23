@@ -2907,7 +2907,16 @@
           "design": "The cover of the Bulgaria passport.",
           "source": "https://gicg.net/passport/bg/",
           "sha256": "39a0659502abb8cbf312d64e3aa90e999c3b4979799fe9f280f93bbfee9cfe51",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Bulgaria's burgundy EU passport bears the national coat of arms: a rampant gold crowned lion on a dark red shield, topped by a large crown modelled on those worn by the tsars of the medieval Second Bulgarian Empire, itself surmounted by a cross pattée and flanked by five more. The rampant lion has been Bulgaria's heraldic emblem since the medieval period, long predating the modern republic.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bulgaria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria"
+              }
+            ]
+          }
         },
         {
           "id": "bg-football-crest",
@@ -5618,7 +5627,20 @@
           "design": "The cover of the Switzerland passport.",
           "source": "https://gicg.net/passport/ch/",
           "sha256": "0941b90eb7de960ea3e937bb646590df464e292f1ebb314b5fa457f22abdc257",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Unlike most passports, which carry a full coat of arms, Switzerland's poppy-red cover bears only a small white cross embossed in the upper corner — echoing the plain cross of the national flag rather than a heraldic shield. The design, created in 1985 by graphic designer Fritz Gottschalk, embosses a repeating pattern of small crosses across the cover and prints \"Swiss Passport\" in the country's four official languages. The white-on-red cross itself dates to the 14th century, when Swiss Confederation troops used it as a battlefield marker to recognise their own allies before it became the country's national emblem.",
+            "sources": [
+              {
+                "title": "Flag of Switzerland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Switzerland"
+              },
+              {
+                "title": "White on Red: the Swiss Cross — Swiss Federal Archives",
+                "url": "https://www.bar.admin.ch/bar/en/home/research/research-tips/topics/die-alte-eidgenossenschaft/weiss-auf-rot--das-schweizer-kreuz.html"
+              }
+            ]
+          }
         },
         {
           "id": "ch-football-crest",
@@ -7269,7 +7291,16 @@
           "design": "The cover of the Cyprus passport.",
           "source": "https://gicg.net/passport/cy/",
           "sha256": "3faef0164a8bf27c2f2e5ebe9ab49d34e3c43609ba4b314fe415436225f81198",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "As an EU member, Cyprus issues the common burgundy-cover passport, bearing the Republic's own coat of arms: a white dove carrying an olive branch — a peace symbol — above the number \"1960\", the year of Cypriot independence from British rule, all set on a copper-yellow field that recalls the island's historic copper deposits (Cyprus's own name is linked to the Latin word for copper, cuprum).",
+            "sources": [
+              {
+                "title": "Coat of arms of Cyprus — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus"
+              }
+            ]
+          }
         },
         {
           "id": "cy-football-crest",
@@ -7401,7 +7432,16 @@
           "design": "The cover of the Czechia passport.",
           "source": "https://gicg.net/passport/cz/",
           "sha256": "b05de80be72e6376294466d541c71c7202a896155f6a8760d97e4206fea004e7",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Czech passport's burgundy EU cover bears the national coat of arms — quartered between the silver double-tailed Bohemian lion (repeated twice) and the emblems of Moravia and Silesia, the three historical Czech lands the modern state unites. Both this and the simpler single-lion \"lesser\" version used elsewhere were designed by heraldist Jiří Louda and adopted in 1992, as Czechoslovakia was dividing into the Czech Republic and Slovakia.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Czech Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "cz-football-crest",
@@ -7576,7 +7616,20 @@
           "design": "The cover of the Germany passport.",
           "source": "https://gicg.net/passport/de/",
           "sha256": "1f6b5b401822f50a5cc14fed6d75ef598a80a7eca99d230a75e741a98ff12cfe",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Germany's passport carries the standard EU burgundy cover, bearing the Bundesadler (Federal Eagle) — a black eagle with red beak, tongue and feet on a gold field — the same eagle used as Germany's coat of arms since the Weimar Republic, its imperial crown removed to mark the shift from empire to republic. The burgundy colour itself is not unique to Germany but the common format EU member states adopted for their passports.",
+            "sources": [
+              {
+                "title": "German passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/German_passport"
+              },
+              {
+                "title": "Coat of arms of Germany — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany"
+              }
+            ]
+          }
         },
         {
           "id": "de-football-crest",
@@ -7825,7 +7878,20 @@
           "design": "The cover of the Denmark passport.",
           "source": "https://gicg.net/passport/dk/",
           "sha256": "c44547fc8e7aa67eeeae43ea39f0c44f9df0f001f9aebe706811cf6f06be1da8",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Denmark's passport uses the EU's common burgundy cover, bearing the national coat of arms: three pale-blue crowned lions passant over nine red hearts (stylised water-lily leaves in the arms' original medieval form) on a gold shield, topped with the royal crown. The three lions are among the oldest state emblems still in use in Europe, first recorded on Danish royal seals in the 12th century.",
+            "sources": [
+              {
+                "title": "Coat of arms of Denmark — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark"
+              },
+              {
+                "title": "Passports of the European Union — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Passports_of_the_European_Union"
+              }
+            ]
+          }
         },
         {
           "id": "dk-football-crest",
@@ -8604,7 +8670,20 @@
           "design": "The cover of the Estonia passport.",
           "source": "https://gicg.net/passport/ee/",
           "sha256": "cd0bbe216b0d79d77fb673560ea6bc3a04ec872885aab9341a3f8083d4a54a82",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Estonia's burgundy EU passport bears the national coat of arms at its centre: three blue lions passant guardant on a gold shield, framed by gilded oak branches whose stems cross at the base — oak being a tree long associated with strength and endurance in Estonian and wider Baltic tradition. The three-lion design dates back to the 13th-century Danish rule of Estonia and was readopted as the republic's own arms on independence.",
+            "sources": [
+              {
+                "title": "Passport of Estonia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Passport_of_Estonia"
+              },
+              {
+                "title": "Coat of arms of Estonia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia"
+              }
+            ]
+          }
         },
         {
           "id": "ee-russian-empire",
@@ -9192,7 +9271,16 @@
           "design": "A burgundy cover reading UNIÓN EUROPEA above ESPAÑA, with the Spanish coat of arms in gold.",
           "source": "https://en.wikipedia.org/wiki/Spanish_passport",
           "sha256": "3689dca26890188130be88d4ec8936fffb8271c62c60cbd0732f90300a515ebe",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The burgundy EU cover bears Spain's coat of arms in gold: a shield quartering the arms of the medieval kingdoms that united to form Spain (Castile, León, Aragon and Navarre), a central point for Granada, and the House of Bourbon's own arms, topped by the royal crown and flanked by the Pillars of Hercules wound with a ribbon reading \"PLUS ULTRA\" — \"further beyond\", a motto that once marked the limit of the known world and, after Spain's transatlantic voyages, came to celebrate the reach of its overseas empire instead.",
+            "sources": [
+              {
+                "title": "Coat of arms of Spain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain"
+              }
+            ]
+          }
         },
         {
           "id": "es-official-national",
@@ -9517,7 +9605,20 @@
           "design": "The cover of the Finland passport.",
           "source": "https://gicg.net/passport/fi/",
           "sha256": "171cf060467fe7b527e8623b8ae89128373b55ad1ca4846a51136b1ed66b9f5a",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Since 1996, Finland's passport has used the standard EU burgundy cover, with the Finnish coat of arms at the centre: a crowned lion on a red field, its right foreleg replaced by an armoured human arm brandishing a sword, its hind paws trampling a curved sabre. The design recalls medieval conflicts between Finland (then under Swedish rule) and Novgorod to its east, the sabre traditionally read as an Eastern weapon being trodden underfoot.",
+            "sources": [
+              {
+                "title": "Finnish passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Finnish_passport"
+              },
+              {
+                "title": "Coat of arms of Finland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland"
+              }
+            ]
+          }
         },
         {
           "id": "fi-sami",
@@ -11535,7 +11636,20 @@
           "design": "The cover of the Greece passport.",
           "source": "https://gicg.net/passport/gr/",
           "sha256": "55eea47c594c89f24b602538dd4a570d6850d8089da1ea939d1c26cfdc62d7e3",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Greece's passport follows the standard EU burgundy cover, bearing the national emblem in current use since 1975: a white cross on a blue shield, surrounded by two laurel branches — laurel being the ancient Greek symbol of victory and honour, awarded as a wreath to winners in Panhellenic athletic and poetic contests since antiquity. Greece also issues a black-covered diplomatic passport of the same size and design.",
+            "sources": [
+              {
+                "title": "Greek passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Greek_passport"
+              },
+              {
+                "title": "Coat of arms of Greece — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greece"
+              }
+            ]
+          }
         },
         {
           "id": "gr-football-crest",
