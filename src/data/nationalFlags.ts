@@ -6036,6 +6036,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Philippines" },
     ],
   },
+  "pk-armed-forces": {
+    description: "The flag of the Pakistan Armed Forces is a vertical tricolour of red, dark blue and light blue — one colour representing each of the three services — bearing the joint services emblem at the centre: spreading wings for the air force, an anchor for the navy, and two crossed sabres for the army. Combining all three services' own colours and insignia into one flag, it represents the unified command of Pakistan's military under a single Chairman of the Joint Chiefs of Staff Committee.",
+    sources: [
+      { title: "Flags of the World — Pakistan Armed Forces", url: "https://www.crwflags.com/fotw/flags/pk%5E.html" },
+      { title: "Wikipedia — List of Pakistani flags", url: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    ],
+  },
   "pk-army": {
     description: "The Pakistan Army's flag is the national flag — green with a white hoist-side stripe — defaced with the army's badge: crossed swords behind the national crescent and star. The crescent traditionally stands for progress and the star for light and knowledge, the same meaning they carry on the national flag; the crossed swords added over them mark the flag as belonging to the army specifically, signalling the force that defends those ideals.",
     sources: [
@@ -7305,6 +7312,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The badge joins the game itself — a football — with a gold silhouette of the country's own map, standing for South African football as a national institution. SAFA was formed on 23 March 1991, when the previously racially-segregated football associations that had existed under apartheid united into a single, non-racial governing body.",
     sources: [
       { title: "South African Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/South_African_Football_Association" },
+    ],
+  },
+  "zm-president": {
+    description: "The presidential standard, flown since Zambian independence in 1964, is a green field bearing an orange fish eagle in flight over the same block of red-black-orange vertical stripes carried on the national flag. The eagle stands for the freedom of the Zambian people and their ability to rise above the challenges facing the nation, while the block's colours repeat the national flag's own meaning: red for the struggle for freedom, black for the people, and orange for the country's mineral wealth.",
+    sources: [
+      { title: "Wikipedia — Flag of Zambia", url: "https://en.wikipedia.org/wiki/Flag_of_Zambia" },
+      { title: "Parliament of Zambia — National Flag and Armorial Ensigns Act", url: "https://www.parliament.gov.zm/sites/default/files/documents/acts/National%20Flag%20and%20Armorial%20Ensigns%20Act.pdf" },
     ],
   },
   "zm-arms": {
