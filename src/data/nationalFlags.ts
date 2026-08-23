@@ -8220,6 +8220,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
     ],
   },
+  "pa-1903": {
+    description: "Designed by Philippe Bunau-Varilla's wife and modelled on the Stars and Stripes, this proposed first flag of Panama used thirteen alternating red and yellow stripes — yellow standing in for the American flag's white, echoing the colours shared by Spain's and Colombia's own flags — with two gold suns joined by a bar in the blue canton, representing North and South America linked by the Panamanian isthmus. Panama's leadership rejected it in favour of a flag designed by the family of first president Manuel Amador Guerrero, the one Panama still flies today.",
+    sources: [
+      { title: "Panama - Historical Flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pa_hist.html" },
+    ],
+  },
   "pa-gran-colombia": {
     description: "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
     sources: [
@@ -8786,6 +8792,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Qatar Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Qatar_Football_Association" },
     ],
   },
+  "ro-communist": {
+    description: "Communist Romania's flag charged the country's blue-yellow-red tricolour with a state emblem modelled on the Soviet Union's own: a landscape of forested Carpathian mountains and an oil derrick beneath a rising sun, the sun for the socialist system and the mountains, forest and derrick for the country's natural resources and industry, framed by wheat sheaves for the peasantry beneath a red star for the ruling regime. When the communist government fell in December 1989, revolutionaries cut the emblem bodily out of flags across the country, leaving a hole where it had been — a gesture so widely repeated it became the revolution's own emblem.",
+    sources: [
+      { title: "Emblem of the Socialist Republic of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_Socialist_Republic_of_Romania" },
+    ],
+  },
   "ro-armed-forces": {
     description: "The battle flag of the Romanian Defence Staff bears the state coat of arms, adopted in 1992, at the centre of the national tricolour. The arms are led by a golden eagle bearing a cross, an emblem long associated with Wallachia's founding Basarab dynasty and read as a symbol of courage, power and the nation's soaring aspiration, surrounded by shields representing Romania's other historic provinces.",
     sources: [
@@ -8885,6 +8897,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Serbian cross — a cross with four firesteels, popularly read since the 19th century as four Cyrillic “С” letters standing for the national motto “Само слога Србина спасава” (“Only unity saves the Serbs”) — is Serbia's own national heraldic symbol. It derives from the Byzantine emblem of the Palaiologos dynasty, adopted after Michael VIII Palaiologos restored the Byzantine Empire in 1261, and was in Serbian use by the reign of Despot Stefan Lazarević around 1397.",
     sources: [
       { title: "Serbian cross — Wikipedia", url: "https://en.wikipedia.org/wiki/Serbian_cross" },
+    ],
+  },
+  "ru-ussr": {
+    description: "The Soviet flag's gold hammer and sickle, adopted in its final form in 1924, stood for the alliance between industrial workers (the hammer) and agricultural labourers (the sickle) that underlay Soviet ideology. Red was a traditional symbol of revolution, also read as the blood shed by workers and peasants in the 1917 revolution, and the gold-bordered red star above represented the Communist Party and the hoped-for triumph of communism across the world's five inhabited continents.",
+    sources: [
+      { title: "5 main symbols of the Soviets EXPLAINED — Russia Beyond", url: "https://www.rbth.com/history/334284-5-main-symbols-of-soviets" },
     ],
   },
   "ru-empire-tricolour": {
