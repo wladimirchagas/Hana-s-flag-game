@@ -18704,7 +18704,16 @@
           "design": "The red flag with a white three-headed elephant beneath a parasol, on a five-tiered dais — the flag of the kingdom, ended when the communists took power in 1975.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Laos",
           "sha256": "0b3851f05f0e271f4e5d7507b32027532d2c3d94b60b77a9745feedc219148f4",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Kingdom of Laos's flag showed Erawan, the mythical three-headed white elephant that carries the god Indra in Hindu-Buddhist tradition, standing on a five-tiered pedestal beneath a nine-tiered ceremonial parasol — a symbol of royal authority rooted in the sacred Mount Meru of Buddhist cosmology. The elephant's three heads stood for the three historic kingdoms — Vientiane, Luang Prabang and Champasak — united under one crown, together symbolising royalty, strength and unity until the communist takeover of 1975.",
+            "sources": [
+              {
+                "title": "Laos, 1952-1975 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/la-1952.html"
+              }
+            ]
+          }
         },
         {
           "id": "la-emblem",
@@ -19611,7 +19620,16 @@
           "design": "The flag imposed after the Soviet occupation of 1940, while Lithuania's own tricolour was banned.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania",
           "sha256": "00210a0f19400b545fab8b403dce6f0fea4fa06551813456c3ea42cd42bd0053",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Lithuanian SSR's flag — red with a gold hammer and sickle and the republic's initials — was imposed after the Soviet Union's forcible 1940 occupation and annexation of Lithuania, carried out under the secret protocol of the Molotov–Ribbentrop Pact. Lithuania's own tricolour was banned outright until independence was restored in 1990.",
+            "sources": [
+              {
+                "title": "Flag of the Lithuanian Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Lithuanian_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "lt-president",
@@ -19959,7 +19977,16 @@
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia",
           "sha256": "b5376a3cb71822434634b3a9eaef7703b42b00c877eb5815384a3cc82a2926d9",
           "fetched": "2026-08-08",
-          "occupier": "the Soviet Union"
+          "occupier": "the Soviet Union",
+          "meaning": {
+            "description": "The Latvian SSR's flag — red with a gold hammer and sickle and the republic's initials — was imposed after the Soviet Union's forcible 1940 occupation and annexation of Latvia, carried out under the secret protocol of the Molotov–Ribbentrop Pact. Latvia's own flag was banned outright until independence was restored in 1990.",
+            "sources": [
+              {
+                "title": "Flag of the Latvian Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Latvian_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "lv-courland",
@@ -20190,7 +20217,16 @@
           "design": "The flag of the Kingdom of Libya, first flown at independence in 1951 — the same design restored as the national flag in 2011.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Libya",
           "sha256": "f2a61cb08640dbdf133f21e02c69b89fe601ec415bb9785e6cdad492ff47987a",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Designed by Omar Faiek Shennib for Libya's 1951 independence, the kingdom's flag used red, black and green stripes for its three uniting provinces — Fezzan, Cyrenaica and Tripolitania respectively — with black also read as a reminder of the dark years of Italian occupation, red for the blood shed for freedom, and green for the nation's agricultural wealth. A white crescent and star at the centre marked the Islamic calendar and stood for hope after that darkness; the same design was restored as Libya's national flag in 2011.",
+            "sources": [
+              {
+                "title": "Libya, 1951-1972 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ly_1951.html"
+              }
+            ]
+          }
         },
         {
           "id": "ly-1969",
