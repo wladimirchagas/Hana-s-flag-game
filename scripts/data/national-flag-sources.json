@@ -16157,7 +16157,16 @@
           "design": "The national guard's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags",
           "sha256": "88f66f17765da2fa680247d372ebe84e015af6c51354b254a0bdcb3947418857",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Kuwait National Guard's flag, in use since the force's establishment in 1967, is a green-over-yellow bicolour bearing the Guard's own emblem — a colour scheme distinct from the national flag's green-white-red-black Pan-Arab bands, chosen to give the National Guard its own visual identity. Green and yellow together are described as symbolising the force's vitality and its sovereign authority, continuing green's broader association in Kuwaiti symbolism with the country's land and agricultural heritage.",
+            "sources": [
+              {
+                "title": "Kuwait: National Guard — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/kw%5Eng.html"
+              }
+            ]
+          }
         },
         {
           "id": "kw-emblem",

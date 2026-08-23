@@ -5200,6 +5200,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Korea Football Association unveils updated emblem — Korea JoongAng Daily", url: "https://www.koreajoongangdaily.com/sports/korea-football-association-unveils-updated-emblem/10271720" },
     ],
   },
+  "kw-national-guard": {
+    description: "The Kuwait National Guard's flag, in use since the force's establishment in 1967, is a green-over-yellow bicolour bearing the Guard's own emblem — a colour scheme distinct from the national flag's green-white-red-black Pan-Arab bands, chosen to give the National Guard its own visual identity. Green and yellow together are described as symbolising the force's vitality and its sovereign authority, continuing green's broader association in Kuwaiti symbolism with the country's land and agricultural heritage.",
+    sources: [
+      { title: "Kuwait: National Guard — Flags of the World", url: "https://www.crwflags.com/fotw/flags/kw%5Eng.html" },
+    ],
+  },
   "kw-emir": {
     description: "The Emir's standard, flown since 1961, is the national flag charged with a yellow crown on the green stripe, marking it as the personal standard of Kuwait's head of state. The flag's colours draw on a 13th-century poem by Ṣafi al-Din al-Hilli praising the Arabs: green for their fertile fields, white for the purity of their deeds, red for the blood on their swords, and black — the trapezoid at the hoist — for the battles in which their enemies were defeated.",
     sources: [
