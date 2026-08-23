@@ -12342,7 +12342,16 @@
           "design": "The red-gold-green tricolour with three black stars, for the union of Ghana, Guinea and Mali.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
           "sha256": "e57f5f016c42abca3b585f0bc11ba87d1f16c1a3ccce187be5491375578ba4cb",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Union of African States linked Ghana, Guinea and (from 1961) Mali in a short-lived attempt at pan-African political union. Its flag kept Ghana's own red-gold-green tricolour but placed one black star in the gold band for each member state — building on Ghana's own Black Star, itself named for the Black Star Line steamship company of Marcus Garvey's Pan-Africanist movement — so the flag read as Ghana's own symbol multiplied to represent the union.",
+            "sources": [
+              {
+                "title": "Union of African States — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/int-uas.html"
+              }
+            ]
+          }
         },
         {
           "id": "gh-gold-coast",
@@ -14021,7 +14030,16 @@
           "design": "The red-white-blue tricolour with a red star, as a constituent republic of Yugoslavia.",
           "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
           "sha256": "9d9c2c559a4b655d1659350c0e7cc3c79c32502597a4595eb9380de382f0ee54",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted 18 January 1947, the flag of the Socialist Republic of Croatia was the traditional Croatian red-white-blue horizontal tricolour, unchanged from the flag flown since 1848, with a five-pointed red star bordered in gold added to the centre to mark Croatia's status as one of Yugoslavia's constituent socialist republics. The star was replaced by Croatia's chequered šahovnica coat of arms in 1990 after the country's first multi-party elections.",
+            "sources": [
+              {
+                "title": "Flag of Croatia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Croatia"
+              }
+            ]
+          }
         },
         {
           "id": "hr-banovina",
@@ -14035,7 +14053,16 @@
           "design": "The tricolour of the autonomous banovina created within the Kingdom of Yugoslavia in 1939.",
           "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
           "sha256": "fab4c6e3bfbc70a316dfc5419ad13b09d60a3940f5858651e18e0281fd738dc5",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The tricolour flown by the Banovina of Croatia, the autonomous unit created within the Kingdom of Yugoslavia by the August 1939 Cvetković–Maček Agreement in an attempt to satisfy Croatian demands for self-government — a settlement cut short less than two years later by the Axis invasion of Yugoslavia in April 1941.",
+            "sources": [
+              {
+                "title": "Flag of Croatia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Croatia"
+              }
+            ]
+          }
         },
         {
           "id": "hr-triune",
@@ -14049,7 +14076,16 @@
           "design": "The unofficial but widely flown tricolour of Croatia, Slavonia and Dalmatia under the Habsburg crown.",
           "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
           "sha256": "bf78ac34d1797de53a6358790a89b234e3f4244a5c1cbc7ec1a71e9b5aa4e7b8",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The red-white-blue tricolour flown, without official sanction, from the pan-Slavic movements of 1848 onward as the flag of the 'Triune Kingdom' — the historic association of Croatia, Slavonia and Dalmatia — while the lands themselves remained under the Habsburg crown. From 1939 it was charged with the red-and-white chequered šahovnica shield representing the three regions, the same device that centres Croatia's flag today.",
+            "sources": [
+              {
+                "title": "Flag of Croatia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Croatia"
+              }
+            ]
+          }
         },
         {
           "id": "hr-president",
@@ -14464,7 +14500,16 @@
           "design": "The tricolour flown by the revolutionaries of March 1848, from which the modern flag descends.",
           "source": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags",
           "sha256": "78dfbc1c5f30da30fc745d7284df0bdca1d49805fc19a1125996a5a88114c6b4",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Raised for the first time over the Royal Palace in Buda on 15 March 1848 and adopted by the Hungarian parliament that April, this red-white-green tricolour — inspired by the French Revolutionary flag — became the banner of the 1848–49 uprising against Habsburg rule. Red recalled the banners of the tribes of King Árpád, white the colour of King Stephen, and green the royal coat of arms; banned after the revolution's defeat, the tricolour became Hungary's legal national flag once the 1867 Compromise restored self-government.",
+            "sources": [
+              {
+                "title": "Flag of Hungary — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Hungary"
+              }
+            ]
+          }
         },
         {
           "id": "hu-president",
@@ -19382,7 +19427,16 @@
           "design": "The plain blue-over-red horizontal bicolour, without the gold crown. The crown was added in 1937 after the 1936 Berlin Olympics revealed Liechtenstein's flag was identical to Haiti's.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein",
           "sha256": "510bf0cc2f1f182a050d0d6fd33ffac7e25860190a2cdf8678245cd4cf1d66dc",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "Adopted in 1921, this plain blue-over-red bicolour — colours chosen instead of the gold and red of the princely coat of arms — served as Liechtenstein's flag until the 1936 Berlin Olympics, when its delegation discovered the flag was identical to Haiti's. To distinguish the two, Liechtenstein added a gold princely crown to the hoist of the blue band, officially adopting the crowned design on 24 June 1937.",
+            "sources": [
+              {
+                "title": "Flag of Liechtenstein — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein"
+              }
+            ]
+          }
         },
         {
           "id": "li-arms",
@@ -19751,7 +19805,16 @@
           "design": "A diagonal design in blue, white and green bearing a brown Basotho shield with an assegai and knobkierie — adopted by the military government of 1986.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Lesotho",
           "sha256": "00370bdf4182b9fe026642c8fbf7d261b0bbcbfaea5b80e7e7b7c15f1a511a48",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted 20 January 1987 after a January 1986 military coup ousted the Basotho National Party government, this flag replaced the mokorotlo hat with a brown traditional Basotho shield flanked by an assegai (spear) and a knobkierrie (club), on diagonal bands of white for peace, blue for rain and green for prosperity — emblems declaring the nation's readiness to defend itself. It was replaced in 2006 by a flag restoring the mokorotlo, this time coloured black.",
+            "sources": [
+              {
+                "title": "Flag of Lesotho — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Lesotho"
+              }
+            ]
+          }
         },
         {
           "id": "ls-1966",
@@ -19764,7 +19827,16 @@
           "design": "A blue field with a white Basotho hat, beside vertical green and red bands — the first national flag, flown from independence in 1966.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Lesotho",
           "sha256": "476715bef1c5954fc5b20b188b4bbd4cb1e3de21a79ab9e4d095e619e6fb1ee4",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Lesotho's first national flag, raised at independence on 4 October 1966, set a white mokorotlo — the traditional conical straw hat of the Basotho people — on a blue field, beside vertical green and red bands. Blue stood for the sky and rain (rain being especially prized in this mountain kingdom), white for peace, green for the land, and red for the faith of the Basotho nation.",
+            "sources": [
+              {
+                "title": "Flag of Lesotho — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Lesotho"
+              }
+            ]
+          }
         },
         {
           "id": "ls-uk",
@@ -19885,7 +19957,16 @@
           "design": "The yellow-green-red tricolour of the interwar republic, in a darker green than the 2004 standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania",
           "sha256": "038567c31b0802fead66900d3b2d106631ab5665257d0bbb3383403c89e8a2d2",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted 25 April 1918 as Lithuania declared independence from Russian and German rule, this yellow-green-red horizontal tricolour remained the flag of the interwar republic until Soviet occupation in June 1940. Yellow stood for the sun, light and prosperity; green for the beauty of nature, freedom and hope; and red for the land and for the blood shed defending the homeland.",
+            "sources": [
+              {
+                "title": "Flag of Lithuania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Lithuania"
+              }
+            ]
+          }
         },
         {
           "id": "lt-ssr",
@@ -21528,7 +21609,16 @@
           "design": "The red flag with the sixteen-rayed Vergina Sun, flown at independence and changed in 1995 after Greece objected to the ancient Macedonian emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia",
           "sha256": "3a35e9e9352b6a0ed674a6a1ab80b4e617d2dfc914944d60f5305d7481e065a0",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The first flag of independent Macedonia, adopted in 1992 and designed by Todor Petrov, set a golden sixteen-rayed star — the 'Vergina Sun', found on a royal larnax excavated at Vergina in northern Greece and associated with the ancient Macedonian dynasty of Philip II — on a red field. Greece objected that the ancient Macedonian emblem implied a claim on Greek history and territory; the dispute was resolved by a 1995 UN-brokered agreement under which the country adopted a new flag with a stylised eight-rayed sun.",
+            "sources": [
+              {
+                "title": "Vergina Sun — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Vergina_Sun"
+              }
+            ]
+          }
         },
         {
           "id": "mk-sr",
@@ -21542,7 +21632,16 @@
           "design": "The red flag with a red star bordered gold in the canton, as a constituent republic of Yugoslavia.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia",
           "sha256": "870c25de4b706b65d6b7c6bb5a7162b329984f77dc182ca60ba4aa2c6ff754ec",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The flag of the Socialist Republic of Macedonia, a plain red field bearing a five-pointed red star bordered in gold in the canton, marked its status as one of the six constituent republics of socialist Yugoslavia; the star was dropped and the Vergina Sun added when the country became independent in 1992.",
+            "sources": [
+              {
+                "title": "Flag of North Macedonia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia"
+              }
+            ]
+          }
         },
         {
           "id": "mk-krusevo",
