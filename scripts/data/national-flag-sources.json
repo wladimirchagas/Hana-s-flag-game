@@ -2117,7 +2117,16 @@
           "design": "The blue flag with the white shield and gold fleurs-de-lis of the Kotromanić dynasty, flown from independence until the current design was imposed in 1998.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina",
           "sha256": "bf2da26a5184ffabbe52b0da6f7e75a19969a00cdd2de85a6ab6ce2f58d4c370",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Independent Bosnia and Herzegovina's first flag showed the gold fleurs-de-lis of the House of Kotromanić, the medieval dynasty that ruled the Kingdom of Bosnia, on a blue field. The fleur-de-lis had been adopted by the kingdom's first crowned king, Tvrtko I, in recognition of French royal support for his accession, and was revived in 1992 as a national symbol before an internationally imposed, ethnically neutral design replaced it in 1998.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bosnia and Herzegovina — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina"
+              }
+            ]
+          }
         },
         {
           "id": "ba-sr",
@@ -6481,7 +6490,16 @@
           "design": "The imperial colonial flag flown over Kamerun until the First World War partitioned it.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags",
           "sha256": "b49d33d061227edd65beffea373c0ff438f48a3b4083a161dca5ff1f16ee6716",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Reichskolonialflagge combined the black-white-red of the German Empire's own flag with a crowned imperial eagle on a white disc. Used from the early 1900s, it asserted the authority of the German Empire across its overseas possessions, flying over government stations, harbours and barracks in Germany's African, Chinese and Pacific colonies just as the plain imperial flag did at home.",
+            "sources": [
+              {
+                "title": "FG-004 – Imperial Flag – Reichsdienstflagge c. 1905–1912 — Flaggeek",
+                "url": "https://www.flaggeek.net/p/imperial-german-colonial-flag-ca.html"
+              }
+            ]
+          }
         },
         {
           "id": "cm-bornu",
@@ -9641,7 +9659,16 @@
           "design": "The flag of the Kingdom of Italy, which ruled Eritrea as its first colony from 1890 until 1941.",
           "source": "https://en.wikipedia.org/wiki/Italian_Eritrea",
           "sha256": "ca49da45ef1110dff1148e2c21cc0c6b9667a3e07367a9b3940d71228dfae391",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Kingdom of Italy's flag was the green-white-red tricolour of Italian unification, charged with the coat of arms of the ruling House of Savoy — a white cross on a red shield within a blue border. Flown from unification in 1861, the arms were dropped after the 1946 referendum ended the monarchy, leaving the plain tricolour still used today.",
+            "sources": [
+              {
+                "title": "Flag of Italy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Italy"
+              }
+            ]
+          }
         },
         {
           "id": "er-ethiopian",
@@ -22603,7 +22630,16 @@
           "design": "A Blue Ensign with the badge of the Straits Settlements — Penang, Malacca and Singapore under direct British rule.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "25865ea6de291845b94c85382fe7b338fb8f161daa79a696e55574423e59092f",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Straits Settlements' badge — three gold imperial crowns separated by a red inverted pall (an upside-down Y) — represented the colony's three constituent settlements: Penang, Malacca and Singapore, one crown for each, set on a British Blue Ensign.",
+            "sources": [
+              {
+                "title": "Flag of the British Straits Settlements (1874-1942) — SembangKuala",
+                "url": "https://sembangkuala.wordpress.com/2009/06/28/flag-of-the-british-straits-settlements-1874-1942/"
+              }
+            ]
+          }
         },
         {
           "id": "my-fms",
@@ -29270,7 +29306,16 @@
           "design": "The blue ensign of the Straits Settlements, of which Singapore was the seat of government.",
           "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
           "sha256": "25865ea6de291845b94c85382fe7b338fb8f161daa79a696e55574423e59092f",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Straits Settlements' badge — three gold imperial crowns separated by a red inverted pall (an upside-down Y) — represented the colony's three constituent settlements: Penang, Malacca and Singapore, one crown for each, set on a British Blue Ensign.",
+            "sources": [
+              {
+                "title": "Flag of the British Straits Settlements (1874-1942) — SembangKuala",
+                "url": "https://sembangkuala.wordpress.com/2009/06/28/flag-of-the-british-straits-settlements-1874-1942/"
+              }
+            ]
+          }
         },
         {
           "id": "sg-eic",
@@ -30139,7 +30184,16 @@
           "design": "The flag of Italy, which administered the south as the UN Trust Territory of Somalia until 1960.",
           "source": "https://en.wikipedia.org/wiki/Trust_Territory_of_Somaliland",
           "sha256": "c939e50605c5a08df1aaf19818f74d2919a9d3c3b7aa7cd90520b8bfc9c5dddc",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Italy's green-white-red tricolour, adopted by the republic in 1946, traces back to a Milanese cockade accepted by Napoleon in 1796, itself based on the French tricolour with blue replaced by green. During the Napoleonic period the colours were read as hope (green), faith (white) and love (red) — the three theological virtues — and are also given a geographic reading: green for the country's plains, white for its Alpine snow, red for the blood shed in the wars of independence.",
+            "sources": [
+              {
+                "title": "Flag of Italy — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Italy"
+              }
+            ]
+          }
         },
         {
           "id": "so-british",
@@ -32918,7 +32972,16 @@
           "design": "The imperial colonial flag flown over German East Africa.",
           "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
           "sha256": "b49d33d061227edd65beffea373c0ff438f48a3b4083a161dca5ff1f16ee6716",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Reichskolonialflagge combined the black-white-red of the German Empire's own flag with a crowned imperial eagle on a white disc. Used from the early 1900s, it asserted the authority of the German Empire across its overseas possessions, flying over government stations, harbours and barracks in Germany's African, Chinese and Pacific colonies just as the plain imperial flag did at home.",
+            "sources": [
+              {
+                "title": "FG-004 – Imperial Flag – Reichsdienstflagge c. 1905–1912 — Flaggeek",
+                "url": "https://www.flaggeek.net/p/imperial-german-colonial-flag-ca.html"
+              }
+            ]
+          }
         },
         {
           "id": "tz-portugal",

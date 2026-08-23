@@ -3007,6 +3007,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Eternal flame: How Azerbaijan became the 'Land of Fire' — CNN Travel", url: "https://www.cnn.com/travel/article/yanar-dag-azerbaijan-land-of-fire" },
     ],
   },
+  "ba-1992": {
+    description: "Independent Bosnia and Herzegovina's first flag showed the gold fleurs-de-lis of the House of Kotromanić, the medieval dynasty that ruled the Kingdom of Bosnia, on a blue field. The fleur-de-lis had been adopted by the kingdom's first crowned king, Tvrtko I, in recognition of French royal support for his accession, and was revived in 1992 as a national symbol before an internationally imposed, ethnically neutral design replaced it in 1998.",
+    sources: [
+      { title: "Coat of arms of Bosnia and Herzegovina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
+    ],
+  },
   "ba-arms": {
     description: "The arms simply repeat the national flag, adopted together in 1998. The three points of the shield stand for the country's three constituent peoples — Bosniaks, Croats and Serbs; the yellow triangle is read as the rough triangular shape of the country's territory, and its three sides again as the three peoples. The row of white stars, cut off top and bottom, stands for Europe and is deliberately open-ended, meant to be infinite. The design was chosen by the international High Representative when the country's communities could not agree, which is why it avoids the older national and religious symbols — the fleurs-de-lis of the medieval Kotromanić kings that the 1992 flag had carried had come to be read as a Bosniak emblem.",
     sources: [
@@ -3866,6 +3872,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Chile national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Chile_national_football_team" },
     ],
   },
+  "cm-german": {
+    description: "The Reichskolonialflagge combined the black-white-red of the German Empire's own flag with a crowned imperial eagle on a white disc. Used from the early 1900s, it asserted the authority of the German Empire across its overseas possessions, flying over government stations, harbours and barracks in Germany's African, Chinese and Pacific colonies just as the plain imperial flag did at home.",
+    sources: [
+      { title: "FG-004 – Imperial Flag – Reichsdienstflagge c. 1905–1912 — Flaggeek", url: "https://www.flaggeek.net/p/imperial-german-colonial-flag-ca.html" },
+    ],
+  },
   "cm-arms": {
     description: "The shield repeats the colour pattern of the national flag and carries a map of the country at its centre, with the scales of justice superimposed on the map — added in 1984 and standing for the rule of law over the whole territory. Two fasces cross behind the shield, the classical emblem of state authority; the banners above and below carry the name of the republic and its motto, \"Peace, Work, Fatherland\". A separate set of arms had been designed for the German colony in 1914, but the war broke out before the project was finished and they were never used.",
     sources: [
@@ -4551,6 +4563,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The red, white and black rays repeat Egypt's own national flag. الاتحاد المصري لكرة القدم is simply the association's own name in Arabic — literally “the Egyptian Federation for Football”.",
     sources: [
       { title: "Egyptian Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Egyptian_Football_Association" },
+    ],
+  },
+  "er-italian": {
+    description: "The Kingdom of Italy's flag was the green-white-red tricolour of Italian unification, charged with the coat of arms of the ruling House of Savoy — a white cross on a red shield within a blue border. Flown from unification in 1861, the arms were dropped after the 1946 referendum ended the monarchy, leaving the plain tricolour still used today.",
+    sources: [
+      { title: "Flag of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
     ],
   },
   "er-arms": {
@@ -7269,6 +7287,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Mexico national football team logo — 1000 Logos", url: "https://1000logos.net/seleccion-mexicana-de-futbol-logo/" },
     ],
   },
+  "my-straits": {
+    description: "The Straits Settlements' badge — three gold imperial crowns separated by a red inverted pall (an upside-down Y) — represented the colony's three constituent settlements: Penang, Malacca and Singapore, one crown for each, set on a British Blue Ensign.",
+    sources: [
+      { title: "Flag of the British Straits Settlements (1874-1942) — SembangKuala", url: "https://sembangkuala.wordpress.com/2009/06/28/flag-of-the-british-straits-settlements-1874-1942/" },
+    ],
+  },
   "my-army": {
     description: "The Malaysian Army's flag is a red field bearing the army's crest, which combines two traditional bladed weapons drawn from the country's two halves: the keris, the wavy-bladed dagger long associated with the historic Malay warriors of Peninsular Malaysia, and the duku ilang, a weapon tied to the warrior traditions of the indigenous peoples of Malaysian Borneo. Together the two blades represent the army's roots across both regions that make up modern Malaysia.",
     sources: [
@@ -8746,6 +8770,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Swedish Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Swedish_Football_Association" },
     ],
   },
+  "sg-straits": {
+    description: "The Straits Settlements' badge — three gold imperial crowns separated by a red inverted pall (an upside-down Y) — represented the colony's three constituent settlements: Penang, Malacca and Singapore, one crown for each, set on a British Blue Ensign.",
+    sources: [
+      { title: "Flag of the British Straits Settlements (1874-1942) — SembangKuala", url: "https://sembangkuala.wordpress.com/2009/06/28/flag-of-the-british-straits-settlements-1874-1942/" },
+    ],
+  },
   "sg-eic": {
     description: "The East India Company's ensign combined alternating red and white horizontal stripes — usually nine to thirteen — with the Union Flag in the canton, the canton itself changing over time from the Cross of St George to the full Union Jack as Great Britain's own flag evolved. Its striped design, adopted decades before the United States existed, bears a famous resemblance to the American Stars and Stripes.",
     sources: [
@@ -8930,6 +8960,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Senegal national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Senegal_national_football_team" },
       { title: "Senegalese Spirit: Discovering the Meaning of Teranga — The Culture Trip", url: "https://theculturetrip.com/africa/senegal/articles/why-senegal-is-the-country-of-teranga" },
+    ],
+  },
+  "so-italian": {
+    description: "Italy's green-white-red tricolour, adopted by the republic in 1946, traces back to a Milanese cockade accepted by Napoleon in 1796, itself based on the French tricolour with blue replaced by green. During the Napoleonic period the colours were read as hope (green), faith (white) and love (red) — the three theological virtues — and are also given a geographic reading: green for the country's plains, white for its Alpine snow, red for the blood shed in the wars of independence.",
+    sources: [
+      { title: "Flag of Italy — Britannica", url: "https://www.britannica.com/topic/flag-of-Italy" },
     ],
   },
   "so-british": {
@@ -9494,6 +9530,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The bird is the Formosan blue magpie, chosen as Taiwan's national bird in a public poll for being found nowhere else in the world; the CTFA adopted it as the emblem worn by both the men's and women's national teams from 2014, citing the bird's fierce defence of its nest as representative of the teamwork a match demands.",
     sources: [
       { title: "Chinese Taipei Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Chinese_Taipei_Football_Association" },
+    ],
+  },
+  "tz-german": {
+    description: "The Reichskolonialflagge combined the black-white-red of the German Empire's own flag with a crowned imperial eagle on a white disc. Used from the early 1900s, it asserted the authority of the German Empire across its overseas possessions, flying over government stations, harbours and barracks in Germany's African, Chinese and Pacific colonies just as the plain imperial flag did at home.",
+    sources: [
+      { title: "FG-004 – Imperial Flag – Reichsdienstflagge c. 1905–1912 — Flaggeek", url: "https://www.flaggeek.net/p/imperial-german-colonial-flag-ca.html" },
     ],
   },
   "tz-president": {
