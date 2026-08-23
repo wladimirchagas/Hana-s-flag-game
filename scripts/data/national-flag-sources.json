@@ -2592,7 +2592,16 @@
           "design": "The Mughal alam, flown over Bengal from Akbar's conquest until Plassey.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
           "sha256": "d26991da464a0fcefd8e41331def4400eda17de9b7ec695d2d074ece65158626",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The alam, the Mughal Empire's principal imperial standard, was a moss-green field bearing a lion and rising sun facing the hoist — an emblem the dynasty traced back to its ancestor Timur. Carried before the emperor on campaign and displayed beside his throne, it flew over Bengal from Emperor Akbar's conquest of the province in the 1570s until the 1757 Battle of Plassey, after which the East India Company's growing power in Bengal ended real Mughal authority there.",
+            "sources": [
+              {
+                "title": "Flags of the Mughal Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_the_Mughal_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "bd-president",
@@ -8242,7 +8251,16 @@
           "design": "A British Blue Ensign defaced with the colony's badge, two red lions on white.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cypriot_flags",
           "sha256": "e985324280fadd9e3b241793f3817d2eb80f3a8e078ac5191acd1a4cff3b1f61",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "From 1922, Cyprus's colonial Blue Ensign carried a badge of two red lions passant guardant on white, based on the shield of Richard the Lionheart, who had conquered Cyprus in 1191 after being shipwrecked there en route to the Third Crusade; the design had already been used unofficially by British colonial officials since 1905, when it was approved by King Edward VII, replacing an earlier badge that simply read 'CHC' for the Cyprus High Commission. It flew until the Republic of Cyprus was established on 16 August 1960.",
+            "sources": [
+              {
+                "title": "Cyprus: British rule (1878–1960) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/cy_br.html"
+              }
+            ]
+          }
         },
         {
           "id": "cy-ottoman",
