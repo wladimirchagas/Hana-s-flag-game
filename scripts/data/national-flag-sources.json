@@ -12699,7 +12699,16 @@
           "design": "The cover of the Croatia passport.",
           "source": "https://gicg.net/passport/hr/",
           "sha256": "060f5991bbd964377abbfaa036d806315191394f666ba808d21c7eeb80dcad39",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Croatia's burgundy EU passport bears the national coat of arms: the šahovnica, a 5×5 red-and-white checkerboard shield that has marked Croatian rulers since at least the 10th century, officially adopted at the 1527 election of a Habsburg king in Cetin. Above it sits a crown formed from five smaller shields representing Croatia's own historic regions — Croatia proper, Dubrovnik, Dalmatia, Istria and Slavonia — asserting the unity of lands with distinct histories under one coat of arms.",
+            "sources": [
+              {
+                "title": "Coat of arms of Croatia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia"
+              }
+            ]
+          }
         },
         {
           "id": "hr-football-crest",
@@ -12992,7 +13001,20 @@
           "design": "The cover of the Hungary passport.",
           "source": "https://gicg.net/passport/hu/",
           "sha256": "7626c3248b859c1aa43e49ff9ebdb1b5884e4a661d077cf79d26dbc2e04904ce",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Hungary's burgundy EU passport bears the national coat of arms: a shield split between the Árpád stripes — four red and four silver bars first recorded on a royal seal in 1202 and traditionally read as the Danube, Tisza, Dráva and Száva rivers, named for Hungary's founding Árpád dynasty — and three green hills bearing a golden crown from which a silver patriarchal cross rises, a symbol already appearing on Hungarian coinage by the late 12th century. Above the shield sits the Holy Crown of Hungary, the crown of Saint Stephen and the single most sacred object in Hungarian national identity, kept today in the Parliament Building in Budapest.",
+            "sources": [
+              {
+                "title": "Coat of arms of Hungary — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary"
+              },
+              {
+                "title": "Árpád stripes — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/%C3%81rp%C3%A1d_stripes"
+              }
+            ]
+          }
         },
         {
           "id": "hu-football-crest",
@@ -17950,7 +17972,16 @@
           "design": "The cover of the Lithuania passport.",
           "source": "https://gicg.net/passport/lt/",
           "sha256": "224b4a736d996d679c9e76f4d24ec30b8b59f983c21e00faccb31ea7738c70ab",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Lithuania's burgundy EU passport bears the Vytis: a silver armoured knight on a galloping silver horse, sword raised overhead, on a red field. One of the oldest state coats of arms still in use in Europe, official since the early 15th century, the Vytis (\"the Chase\" or \"the Pursuer\") depicts the Grand Duke riding out to defend the realm and remains Lithuania's enduring national emblem.",
+            "sources": [
+              {
+                "title": "Armorial of Lithuania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Armorial_of_Lithuania"
+              }
+            ]
+          }
         },
         {
           "id": "lt-russian-empire",
@@ -18298,7 +18329,16 @@
           "design": "The cover of the Latvia passport.",
           "source": "https://gicg.net/passport/lv/",
           "sha256": "95f13358b2b8662ecbebfc3c2770ff985992143d62f1b8d1744b4db4a1fb8fa2",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Latvia's burgundy EU passport bears the national coat of arms: a golden sun rising in a blue field, echoing the badge worn by the Latvian Riflemen and symbolising freedom and self-determination, beneath three golden six-pointed stars representing the country's three historical regions — Vidzeme, Latgale and Kurzeme — united as one nation.",
+            "sources": [
+              {
+                "title": "Coat of arms of Latvia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia"
+              }
+            ]
+          }
         },
         {
           "id": "lv-russian-empire",
@@ -27459,7 +27499,16 @@
           "design": "The cover of the Slovenia passport.",
           "source": "https://gicg.net/passport/si/",
           "sha256": "f53de22b00b92554fc3a3400b7c36ad9697b6e5ccfd83cd895f674500b5220d6",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Slovenia's burgundy EU passport bears the national coat of arms, designed by Marko Pogačnik and adopted at independence in 1991 after Slovenia rejected several rival proposals: a blue shield showing Mount Triglav in white, the country's highest peak and a longstanding national symbol; below it, two wavy lines representing Slovenia's seas and rivers; and above, three six-pointed gold stars arranged in an inverted triangle, taken from the historic arms of the Counts of Celje, a medieval dynasty that once ruled much of Slovenian territory.",
+            "sources": [
+              {
+                "title": "Coat of arms of Slovenia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia"
+              }
+            ]
+          }
         },
         {
           "id": "si-football-crest",
