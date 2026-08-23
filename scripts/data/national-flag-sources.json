@@ -198,7 +198,20 @@
           "design": "The air force's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Emirati_flags",
           "sha256": "a0ab4177020255a8243939cc136bbdd073144d1f4edb17a246252a53e5354c8e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the UAE Air Force is a light-blue field bearing the Air Force's badge, based on the national emblem's golden falcon — the Hawk of Quraysh, a symbol of strength and Arab heritage — holding a disc showing the UAE flag. The falcon's seven tail feathers, like the emblem's seven-pointed star, represent the seven emirates united in the federation, the same unity symbolism carried across every branch badge derived from the national emblem.",
+            "sources": [
+              {
+                "title": "National symbols of the United Arab Emirates — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_symbols_of_the_United_Arab_Emirates"
+              },
+              {
+                "title": "United Arab Emirates Air Force & Air Defense — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ae%5Eaf.html"
+              }
+            ]
+          }
         },
         {
           "id": "ae-emblem",
@@ -13117,7 +13130,20 @@
           "design": "A light blue field with the air force's winged emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
           "sha256": "3151b6527d90988a03c03505e4f14c7a40440711b239d13c8cb0771eb3328a19",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Israeli Air Force's flag is a light-blue field bearing the force's badge, a winged variant of the Israel Defense Forces emblem: a sword crossed with an olive branch inside a Star of David. The sword represents combat readiness and the olive branch the yearning for peace — together expressing the IDF's founding principle of fighting only when peace cannot be kept — while the Star of David marks the emblem, and the force built on it, as an expression of the Jewish people and their history. The added wings mark the badge as the Air Force's own, distinguishing it from the plain IDF emblem used by the general military.",
+            "sources": [
+              {
+                "title": "The Israeli Air Force: The Meaning of an Emblem — Israeli Air Force (official)",
+                "url": "https://www.iaf.org.il/4476-50413-en/IAF.aspx"
+              },
+              {
+                "title": "Israel Defense Forces Emblem — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Israel_Defense_Forces_Emblem"
+              }
+            ]
+          }
         },
         {
           "id": "il-emblem",
@@ -17902,7 +17928,20 @@
           "design": "The flag of the Libyan Air Force.",
           "source": "https://en.wikipedia.org/wiki/Libyan_Air_Force",
           "sha256": "8cd57b380f901ba028a9fb6370cb3a0f9c1ff16a9ff6d105f52a61c942b753f6",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Libyan Air Force's flag is a cyan field bearing the national emblem: a horizontal triband of red, black and green — red for the blood of those who died for Libya's freedom, black for the dark days of Italian occupation, and green for the country's fertile land and Islamic faith — with a white star and crescent centred on the black band. The design descends from the flag of the Emirate of Cyrenaica and the Senussi dynasty, restored as Libya's national flag after the 2011 revolution.",
+            "sources": [
+              {
+                "title": "Flag of Libya — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Libya"
+              },
+              {
+                "title": "Air Force, Libya — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ly%5Eaf.html"
+              }
+            ]
+          }
         },
         {
           "id": "ly-jack",
@@ -23601,7 +23640,20 @@
           "design": "The national flag in 1:2 proportions.",
           "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
           "sha256": "5618b28f1119e229790d3093552753c6adc470bb007ad552ca4bfe1fa36682cf",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Pakistan Navy's ensign is simply the national flag itself, flown in the elongated 1:2 proportions traditional for naval ensigns, and it carries the same national symbolism to sea: the dark green field and crescent-and-star represent Pakistan's Muslim majority and are associated with progress and light, while the white vertical stripe at the hoist represents the country's religious minorities. It replaced the Royal Navy's White Ensign in 1956, when Pakistan's own naval ensign and jack took over from the Queen's Colour that had flown over the fleet inherited at independence.",
+            "sources": [
+              {
+                "title": "Flag of Pakistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Pakistan"
+              },
+              {
+                "title": "Pakistan — naval ensigns — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/pk~.html"
+              }
+            ]
+          }
         },
         {
           "id": "pk-naval-jack",
@@ -25663,7 +25715,20 @@
           "design": "The national flag distinguished for the crown prince.",
           "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
           "sha256": "3591b68dde9dd1ab8fddd677d8a02b0dd013198e4381e08d08b8b82240475545",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Crown Prince's royal standard is a green field bearing the Shahada (the Islamic declaration of faith, \"There is no god but God, Muhammad is the messenger of God\") in white Arabic script above a white sword, with the national emblem in silver placed in the lower canton to mark the flag as a state office's own standard rather than the national flag itself. Green reflects the country's Islamic identity, the Shahada asserts the kingdom's religious foundation, and the sword — carried on Saudi flags since the early 20th century — signifies the enforcement of justice and of God's law.",
+            "sources": [
+              {
+                "title": "List of Saudi Arabian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags"
+              },
+              {
+                "title": "Royal Standards (Saudi Arabia) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/sa_royal.html"
+              }
+            ]
+          }
         },
         {
           "id": "sa-civil-ensign",
