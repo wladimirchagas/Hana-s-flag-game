@@ -10878,7 +10878,16 @@
           "design": "The cover of the Grenada passport.",
           "source": "https://gicg.net/passport/gd/",
           "sha256": "7f794a1560acb406f3904f5c2b5e138fe6fea3d0a3357f8973fc48def88216fd",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Grenada's CARICOM-format passport bears the national coat of arms: a shield divided by a gold cross, with Christopher Columbus's flagship the Santa María at the centre, since Columbus sighted Grenada on his third voyage in 1498. A British lion appears in two quarters and a crescent moon sprouting a lily — a mark of the island's historic dedication to the Virgin Mary — in the other two, surrounded by seven red roses for Grenada's six parishes plus the Southern Grenadines. An armadillo before a corn stalk and a Grenada dove before a banana plant — the dove found only on Grenada — support the shield on either side.",
+            "sources": [
+              {
+                "title": "Coat of arms of Grenada — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Grenada"
+              }
+            ]
+          }
         },
         {
           "id": "gd-football-crest",
@@ -16447,7 +16456,16 @@
           "design": "The cover of the Saint Kitts and Nevis passport.",
           "source": "https://gicg.net/passport/kn/",
           "sha256": "b8a03385ed26b94d2a7b9922aae21fbbb9d7601d2886f8cd3273acbd7682a422",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Saint Kitts and Nevis's CARICOM-format passport bears the national coat of arms, adopted in 1983: a Carib's head at the top of the shield — for the islands' original inhabitants — flanked by a fleur-de-lis and a rose marking the French and British colonial periods, above a lighter (small sailing vessel) and two poinciana flowers. The crest shows a flaming torch held by three hands — African, European and Indian — representing the shared struggle for freedom of the islands' diverse peoples, while two pelicans, the national bird, support the shield beside sugar cane and coconut palm, the islands' traditional crops, beneath the motto \"Country Above Self\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Saint Kitts and Nevis — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Kitts_and_Nevis"
+              }
+            ]
+          }
         },
         {
           "id": "kn-football-crest",
@@ -17661,7 +17679,16 @@
           "design": "The cover of the Saint Lucia passport.",
           "source": "https://gicg.net/passport/lc/",
           "sha256": "cde97db1609464de809d98b85a41350a1323a88cb76aad9cea7e3e41e60e19e9",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Saint Lucia's passport bears the national coat of arms, designed in 1967: a rose for the island's period under British administration and a fleur-de-lis for the French rule that preceded it — Saint Lucia changed hands between the two powers some fourteen times — alongside an African spearhead recalling the ancestors brought to the island during the transatlantic slave trade, and a torch held aloft to light the nation's way forward. The shield is supported by two Saint Lucia parrots (Amazona versicolor), the island's national bird, found nowhere else in the world.",
+            "sources": [
+              {
+                "title": "Coat of arms of Saint Lucia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Lucia"
+              }
+            ]
+          }
         },
         {
           "id": "lc-football-crest",
@@ -33063,7 +33090,16 @@
           "design": "The cover of the Saint Vincent and the Grenadines passport.",
           "source": "https://gicg.net/passport/vc/",
           "sha256": "9dc48f34446a1acd3a5b12731242fc2046fbed03d8c150ca8c94c4dfc93cd01a",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Saint Vincent and the Grenadines' passport bears the national coat of arms, adopted in 1979 and based on a colonial badge used since 1907: two women in classical dress flank a gold altar, one holding an olive branch for peace, the other kneeling with the scales of justice, beneath the Latin motto \"Pax et Justitia\" — \"Peace and Justice\". A cotton plant crowns the design, marking the crop that was once central to the islands' economy.",
+            "sources": [
+              {
+                "title": "Coat of arms of Saint Vincent and the Grenadines — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Vincent_and_the_Grenadines"
+              }
+            ]
+          }
         },
         {
           "id": "vc-football-crest",
