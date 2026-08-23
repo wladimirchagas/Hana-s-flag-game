@@ -6835,6 +6835,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Democratic Kampuchea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Democratic_Kampuchea" },
     ],
   },
+  "kh-french": {
+    description: "Adopted when Cambodia became a French protectorate in 1863, this flag set a white depiction of Angkor Wat's three towers — the medieval Khmer temple complex that has remained the country's central national symbol ever since — on a red field framed by a wide blue border, using the same red-white-blue palette common to France's own flag and to many of its Southeast Asian colonies.",
+    sources: [
+      { title: "Cambodian Flag History — Flags of the World", url: "https://www.crwflags.com/fotw/flags/kh_hstry.html" },
+    ],
+  },
   "kh-army": {
     description: "The flag of the Royal Cambodian Armed Forces is red, bearing the emblem of the High Command at its centre with the command's name written beneath it in yellow Khmer script. Each of the force's own branches carries a distinct field colour with its own emblem — red for the Army, blue for the Navy, and dark blue for the Air Force — with the whole system of Armed Forces flags updated by new uniform, insignia and flag regulations issued in October 2023.",
     sources: [
@@ -7601,6 +7607,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
     ],
   },
+  "ma-alawi": {
+    description: "A plain red field, without any emblem, was the flag of Morocco's Alawi Sultanate from 1666, red having long carried historic significance in Morocco through its association with the Alawi dynasty. Sultan Yusef added a green pentagram to the centre by decree on 17 November 1915 to distinguish Morocco's flag from other plain red flags in use elsewhere — the design, with the star representing the Five Pillars of Islam, that Morocco still flies today.",
+    sources: [
+      { title: "Flag of Morocco — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Morocco" },
+    ],
+  },
   "ma-naval-jack": {
     description: "Morocco's naval jack is a red, swallow-tailed flag bordered in yellow and bearing a green, yellow-bordered pentagram — the Seal of Solomon — at its centre, the same emblem added to the national flag in 1915. The pentagram is a symbol with roots stretching back to ancient Mesopotamia and was long used across the Islamic world as a protective and identifying device; green marks it as the colour of Islam, and the swallow-tailed shape distinguishes the jack from Morocco's plain rectangular national flag and ensign.",
     sources: [
@@ -8040,6 +8052,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Granted by Royal Warrant on 10 April 1909. The woman is Erin, the personification of Ireland, and the golden harp beside her is Ireland's own emblem — both honour the Irish settlers who came to Montserrat from 1632, so numerous that a 1678 census found seven in ten of the island's white inhabitants were of Irish descent, the 'Emerald Isle of the Caribbean'. Erin's embrace of the black cross marks the island's Christian faith.",
     sources: [
       { title: "Coat of arms of Montserrat — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat" },
+    ],
+  },
+  "mt-colonial": {
+    description: "By royal warrant of 28 December 1943, Malta's colonial Blue Ensign was defaced with a shield bearing the George Cross — the decoration King George VI had awarded that April to the entire island and its people, not any individual, for their endurance under the Axis siege of Malta during the Second World War, the first such collective award in the medal's history. It flew until Malta's 1964 independence, when the George Cross was carried onto the new national flag's white canton without the blue ensign field around it.",
+    sources: [
+      { title: "The Malta flag and the George Cross — Malta Uncovered", url: "https://www.maltauncovered.com/malta-history/malta-flag/" },
     ],
   },
   "mt-civil-ensign": {
@@ -10940,6 +10958,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The trident (tryzub) is Ukraine's own state coat of arms. Its earliest known form appears on the seals and coins of the Kyivan Rus' ruler Volodymyr the Great around the year 1000; historians have proposed it may originally have depicted a falcon, an anchor, a bow or the Holy Trinity, and some theories trace it to Khazar rather than purely Ukrainian origins. It was first adopted as a national emblem by the short-lived Ukrainian People's Republic on 25 February 1918, and was readopted as Ukraine's coat of arms on 19 February 1992, after independence.",
     sources: [
       { title: "Coat of arms of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
+    ],
+  },
+  "ug-1962-dominion": {
+    description: "Proposed by the Democratic Party government ahead of independence, this blue-green flag striped with yellow and centred on a crested crane silhouette used the Democratic Party's own colours — but when the Uganda People's Congress won the April 1962 election, it rejected the design in favour of its own party's black-yellow-red tricolour, keeping only the crested crane (the bird Britain had already chosen as Uganda's colonial badge) as the white central disc still flown on Uganda's flag today.",
+    sources: [
+      { title: "Uganda National Flag: Symbolism & History of Black, Gold, Red, and the Grey-Crowned Crane — uganda.uk.com", url: "https://uganda.uk.com/uganda-national-flag-symbolism-history-of-black-gold-red-and-the-grey-crowned-crane/" },
     ],
   },
   "ug-ibeac": {

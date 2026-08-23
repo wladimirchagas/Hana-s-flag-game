@@ -18009,7 +18009,16 @@
           "design": "The blue-bordered red flag with a white temple, flown under the French protectorate.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia",
           "sha256": "35fbb8688078eda18f47c4ff1b7660b8022d07f4a733faa90c27a8cf5828a22b",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted when Cambodia became a French protectorate in 1863, this flag set a white depiction of Angkor Wat's three towers — the medieval Khmer temple complex that has remained the country's central national symbol ever since — on a red field framed by a wide blue border, using the same red-white-blue palette common to France's own flag and to many of its Southeast Asian colonies.",
+            "sources": [
+              {
+                "title": "Cambodian Flag History — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/kh_hstry.html"
+              }
+            ]
+          }
         },
         {
           "id": "kh-royal-standard",
@@ -21243,7 +21252,16 @@
           "design": "A plain red field — the flag of the sultanate before the pentagram was added in 1915.",
           "source": "https://en.wikipedia.org/wiki/List_of_Moroccan_flags",
           "sha256": "4ec08813328483de084aade1fffa1fa18d56127bca50fd17fa44b1ad40333267",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A plain red field, without any emblem, was the flag of Morocco's Alawi Sultanate from 1666, red having long carried historic significance in Morocco through its association with the Alawi dynasty. Sultan Yusef added a green pentagram to the centre by decree on 17 November 1915 to distinguish Morocco's flag from other plain red flags in use elsewhere — the design, with the star representing the Five Pillars of Islam, that Morocco still flies today.",
+            "sources": [
+              {
+                "title": "Flag of Morocco — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Morocco"
+              }
+            ]
+          }
         },
         {
           "id": "ma-royal",
@@ -23173,7 +23191,16 @@
           "design": "The colony's blue ensign in its final form, defaced with the shield bearing the George Cross awarded in 1942.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Malta",
           "sha256": "ecde3ca0c1d0c044cb2e9f4f218e3e56bc40919b013209d64b7f2ecf383e6dea",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "By royal warrant of 28 December 1943, Malta's colonial Blue Ensign was defaced with a shield bearing the George Cross — the decoration King George VI had awarded that April to the entire island and its people, not any individual, for their endurance under the Axis siege of Malta during the Second World War, the first such collective award in the medal's history. It flew until Malta's 1964 independence, when the George Cross was carried onto the new national flag's white canton without the blue ensign field around it.",
+            "sources": [
+              {
+                "title": "The Malta flag and the George Cross — Malta Uncovered",
+                "url": "https://www.maltauncovered.com/malta-history/malta-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "mt-president",
@@ -35414,7 +35441,16 @@
           "design": "The blue flag with the crested crane proposed before independence, replaced within the year by the present design.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
           "sha256": "69640ccaf39ecc091dcb5d54a707dd1aa76b219762e206ee84d59522f0ad2d01",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Proposed by the Democratic Party government ahead of independence, this blue-green flag striped with yellow and centred on a crested crane silhouette used the Democratic Party's own colours — but when the Uganda People's Congress won the April 1962 election, it rejected the design in favour of its own party's black-yellow-red tricolour, keeping only the crested crane (the bird Britain had already chosen as Uganda's colonial badge) as the white central disc still flown on Uganda's flag today.",
+            "sources": [
+              {
+                "title": "Uganda National Flag: Symbolism & History of Black, Gold, Red, and the Grey-Crowned Crane — uganda.uk.com",
+                "url": "https://uganda.uk.com/uganda-national-flag-symbolism-history-of-black-gold-red-and-the-grey-crowned-crane/"
+              }
+            ]
+          }
         },
         {
           "id": "ug-protectorate",
