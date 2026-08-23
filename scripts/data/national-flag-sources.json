@@ -751,7 +751,16 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Armenian_flags",
           "sha256": "c6311c743571bafb8c80254a6b183ad579addc942f0b003409adce5742baded1",
           "fetched": "2026-08-08",
-          "priorPolity": "the Armenian Soviet Socialist Republic"
+          "priorPolity": "the Armenian Soviet Socialist Republic",
+          "meaning": {
+            "description": "The Armenian SSR's flag, adopted in 1952, followed the Soviet Union's own red field and gold hammer-and-sickle-and-star canton, adding a horizontal blue stripe to distinguish the republic. Red stood for the revolutionary struggle of the working masses, and the hammer and sickle for the union of factory workers and peasants under Soviet rule.",
+            "sources": [
+              {
+                "title": "Flag of the Armenian Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Armenian_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "am-transcaucasian",
@@ -1919,7 +1928,16 @@
           "design": "The blue-red-green tricolour with the crescent and star, adopted by the first republic and restored in 1991.",
           "source": "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags",
           "sha256": "71df3bac612378eea6ee60a92d1c54d73110c386b983f63ceb87e94102d65100",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The 1918 tricolour of the Azerbaijan Democratic Republic reads blue as the Turkic origin of the Azerbaijani people, red as the desire to build a modern, democratic society, and green as belonging to Islamic civilisation — summed up by the republic's chairman as \"Turkish national culture, Muslim civilisation and the democratic foundations of modern Europe\". The eight-pointed star on the red stripe refers to the eight Turkic peoples recognised before the Soviet era.",
+            "sources": [
+              {
+                "title": "State Symbols — Republic of Azerbaijan Ministry of Foreign Affairs",
+                "url": "https://www.mfa.gov.az/en/category/state-symbols"
+              }
+            ]
+          }
         },
         {
           "id": "az-nakhichevan",
@@ -2037,7 +2055,16 @@
           "design": "Red with a blue stripe and the gold hammer, sickle and star — the republic's flag within the Soviet Union.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan",
           "sha256": "aa7cf16a34856cd47b9af6e2f2cf1a232ca7945ab38b51273fe3bed1c6d2e6cd",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Azerbaijan SSR's flag, adopted in 1952, followed the Soviet Union's own red field and gold hammer-and-sickle-and-star canton, with a horizontal blue band along the bottom representing the Caspian Sea on the republic's coast. Red stood for the revolutionary struggle of the working masses, and the hammer and sickle for the union of factory workers and peasants under Soviet rule.",
+            "sources": [
+              {
+                "title": "Flag of the Azerbaijan Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Azerbaijan_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "az-russian-empire",
