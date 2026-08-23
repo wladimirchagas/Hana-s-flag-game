@@ -5764,6 +5764,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Luxembourg — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
     ],
   },
+  "lu-passport": {
+    description: "Luxembourg's burgundy EU passport bears the country's coat of arms — the Roude Léiw (\"Red Lion\") — a red rampant lion, crowned and armed, on a blue-and-white-striped shield, supported by two more crowned lions and topped with a royal crown. The design descends from the medieval Duchy of Limburg and was first used by Count Henry V of Luxembourg in the 13th century, making it one of the oldest continuously used symbols of Luxembourgish identity.",
+    sources: [
+      { title: "Roude Léiw — Wikipedia", url: "https://en.wikipedia.org/wiki/Roude_L%C3%A9iw" },
+    ],
+  },
   "lu-football-crest": {
     description: "The red lion is the Lion of Luxembourg, inherited from the medieval Lion of Limburg and a core symbol of Luxembourg's heraldic identity since the 13th century.",
     sources: [
@@ -5949,6 +5955,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "mk-emblem": {
     description: "North Macedonia is one of the very few countries still using a socialist-style national emblem — the others are Belarus and the breakaway Transnistria — and it is the only EU-candidate state to do so. The garlands framing it are the country's three signature crops: sheaves of wheat, tobacco leaves and opium-poppy fruits, tied with a ribbon of traditional Macedonian folk embroidery. Inside, a mountain, a stretch of water (the Vardar and the lakes) and a rising sun stand for the land and its freedom, and the red star at the top is the National Liberation War. The 1946 original showed the Pirin Mountains, which lie in Bulgaria — placed there to signal a hoped-for \"United Macedonia\" that never came about; the mountain was later left generic.",
+    sources: [
+      { title: "National emblem of North Macedonia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_North_Macedonia" },
+    ],
+  },
+  "mk-passport": {
+    description: "North Macedonia's passport bears the national emblem — a design kept largely from the Socialist era, though its communist red star was removed in a 2009 revision: a rising sun for freedom over Mount Korab, the river Vardar and Lake Ohrid, framed by two garlands of wheat sheaves, tobacco leaves and opium-poppy fruits (poppy cultivation dating to Ottoman-era introduction in the 19th century) tied with a ribbon of traditional Macedonian folk embroidery — together said to represent the country's agricultural richness and its struggle for freedom.",
     sources: [
       { title: "National emblem of North Macedonia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_North_Macedonia" },
     ],
@@ -6957,6 +6969,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "pt-arms": {
     description: "The five blue shields set in a cross — the quinas — are traditionally read as the Five Wounds of Christ, or the five Moorish kings said to have been defeated at Ourique; the five silver bezants on each recall the monarch's right to mint coin. The red border of seven golden castles, fixed at seven by King Sebastian, stands for strongholds taken from the Moors in the Reconquista. Beneath sits the golden armillary sphere, the navigator's instrument that marks Portugal's Age of Discovery. The same shields and castles appear on the national flag.",
+    sources: [
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
+    ],
+  },
+  "pt-passport": {
+    description: "Portugal's passport bears the national coat of arms — formalised in 1911 — a shield of five smaller blue shields arranged in a cross, each bearing five white dots (the quinas), traditionally linked to the legend of the \"Miracle of Ourique\", in which King Afonso I was assured of divine favour before battle. A red border studded with seven gold castles, recalling fortresses taken during the Reconquista, surrounds the shield, which rests over a golden armillary sphere — a sailor's instrument for measuring the stars — commemorating Portugal's Age of Discovery.",
     sources: [
       { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
     ],
