@@ -2476,7 +2476,16 @@
           "design": "The green field with a red disc bearing a golden map of the country, flown by the provisional government during the liberation war.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
           "sha256": "fe14e955212ac1716111f25ede34978b55f8f39597b11de2707b84a3d779ece4",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Mukti Bahini's provisional flag, first raised by student activists at Dhaka University in March 1971, set a golden map of the country within a red disc on green — the red for the sunrise over Bengal and for the blood of those killed in the fight against Pakistani rule, the green for the land's fertility and its people's youthful spirit. The map was dropped when Bangladesh formally adopted its flag in January 1972, leaving the plain red disc on green flown today.",
+            "sources": [
+              {
+                "title": "Flag of Bangladesh — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Bangladesh"
+              }
+            ]
+          }
         },
         {
           "id": "bd-pakistan",
@@ -5363,7 +5372,16 @@
           "design": "The 1957 version of the Canadian Red Ensign, which had evolved into the de facto national flag before the Maple Leaf replaced it.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "c61ea4f5437fdfaefd739404b490a5c72e1eb9be0397106fe67bbc7d5bf9ac91",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Canadian Red Ensign combined the British Red Ensign — the flag long flown by British merchant ships — with a shield representing Canada in the fly, its quarters standing for the founding nations England, Scotland, Ireland and France. Though never formally adopted as Canada's national flag, it was widely flown as one from the 1870s, becoming a popular patriotic emblem in the First World War, until the Maple Leaf flag replaced it in 1965; the Canadian arms in its shield were redrawn twice, in 1922 and 1957, as the design evolved.",
+            "sources": [
+              {
+                "title": "Canadian Red Ensign — The Canadian Encyclopedia",
+                "url": "https://www.thecanadianencyclopedia.ca/en/article/red-ensign"
+              }
+            ]
+          }
         },
         {
           "id": "ca-red-ensign-1922",
@@ -5376,7 +5394,16 @@
           "design": "The 1922 version of the Canadian Red Ensign, flown after the grant of the arms of Canada.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "12e8dc87be137bcf7fc5c5c811f6319635375fa25d8762538c34099983ffa311",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Canadian Red Ensign combined the British Red Ensign — the flag long flown by British merchant ships — with a shield representing Canada in the fly, its quarters standing for the founding nations England, Scotland, Ireland and France. Though never formally adopted as Canada's national flag, it was widely flown as one from the 1870s, becoming a popular patriotic emblem in the First World War, until the Maple Leaf flag replaced it in 1965; the Canadian arms in its shield were redrawn twice, in 1922 and 1957, as the design evolved.",
+            "sources": [
+              {
+                "title": "Canadian Red Ensign — The Canadian Encyclopedia",
+                "url": "https://www.thecanadianencyclopedia.ca/en/article/red-ensign"
+              }
+            ]
+          }
         },
         {
           "id": "ca-red-ensign-1892",
@@ -5389,7 +5416,16 @@
           "design": "The Canadian Red Ensign as authorised for use as a civil ensign by Admiralty warrant.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "e14e351904dc7166506f58bc6a501c521ba8a30bdb360fc9cf8b4b75e70816eb",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Canadian Red Ensign combined the British Red Ensign — the flag long flown by British merchant ships — with a shield representing Canada in the fly, its quarters standing for the founding nations England, Scotland, Ireland and France. Though never formally adopted as Canada's national flag, it was widely flown as one from the 1870s, becoming a popular patriotic emblem in the First World War, until the Maple Leaf flag replaced it in 1965; the Canadian arms in its shield were redrawn twice, in 1922 and 1957, as the design evolved.",
+            "sources": [
+              {
+                "title": "Canadian Red Ensign — The Canadian Encyclopedia",
+                "url": "https://www.thecanadianencyclopedia.ca/en/article/red-ensign"
+              }
+            ]
+          }
         },
         {
           "id": "ca-union-flag",
