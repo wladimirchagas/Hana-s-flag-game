@@ -7269,6 +7269,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Marshall Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands" },
     ],
   },
+  "mk-krusevo": {
+    description: "A plain red flag was raised over Kruševo in August 1903 at the initiative of Nikola Karev during the Ilinden Uprising against Ottoman rule, the red standing for the blood of those who died fighting for Macedonian freedom. The traditional black-and-red flag carried by the uprising's fighters is read the same way its slogan was — \"Freedom (red) or Death (black)\" — and the plain red field was revived in 1946 as the flag of the Yugoslav Republic of Macedonia, in memory of Kruševo's short-lived republic.",
+    sources: [
+      { title: "The Ilinden Uprising and the Republic of Kruševo — Flags of the World", url: "https://www.fotw.info/flags/mk_1903.html" },
+    ],
+  },
   "mk-emblem": {
     description: "North Macedonia is one of the very few countries still using a socialist-style national emblem — the others are Belarus and the breakaway Transnistria — and it is the only EU-candidate state to do so. The garlands framing it are the country's three signature crops: sheaves of wheat, tobacco leaves and opium-poppy fruits, tied with a ribbon of traditional Macedonian folk embroidery. Inside, a mountain, a stretch of water (the Vardar and the lakes) and a rising sun stand for the land and its freedom, and the red star at the top is the National Liberation War. The 1946 original showed the Pirin Mountains, which lie in Bulgaria — placed there to signal a hoped-for \"United Macedonia\" that never came about; the mountain was later left generic.",
     sources: [
@@ -7598,6 +7604,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Mexico 1821-1823 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/mx_1821.html" },
     ],
   },
+  "mx-three-guarantees": {
+    description: "Mexico's first national flag, made for Agustín de Iturbide in 1821 to mark the Plan of Iguala, crossed the field with three diagonal stripes — white, green and red — each bearing its own gold star and each standing for one of the plan's \"three guarantees\": white for the Catholic religion, green for independence, and red for the union of Mexicans, summed up in the motto \"Religión, Independencia, Unión\". It gave way within the year to the vertical tricolour that became Mexico's lasting flag.",
+    sources: [
+      { title: "Flag of the Three Guarantees — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Three_Guarantees" },
+    ],
+  },
   "mx-spain-1785": {
     description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
     sources: [
@@ -7633,6 +7645,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Coat of arms of Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
       { title: "Mexico national football team logo — 1000 Logos", url: "https://1000logos.net/seleccion-mexicana-de-futbol-logo/" },
+    ],
+  },
+  "my-malaya": {
+    description: "The Federation of Malaya's 1950 flag used eleven alternating red and white stripes for its eleven constituent states, with a yellow crescent and eleven-pointed star for Islam and for royal sovereignty under the Malay rulers. Red, white and blue also marked Malaya's membership of the Commonwealth; the design's stripe and star count both grew as more states joined what became Malaysia.",
+    sources: [
+      { title: "Flag of Malaysia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
     ],
   },
   "my-straits": {
