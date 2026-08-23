@@ -3151,6 +3151,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
     ],
   },
+  "bd-raj": {
+    description: "The Star of India Red Ensign served as the civil flag for merchant vessels registered in British India from 1880, defacing the plain Red Ensign with the badge of the Most Exalted Order of the Star of India — an eleven-pointed radiant star around a blue disc bearing the motto 'Heaven's Light Our Guide', created by Queen Victoria in 1861 to honour service in India in a form acceptable across the subcontinent's religious communities. The Union Flag remained British India's official flag throughout, and this ensign was retired at independence and partition in 1947.",
+    sources: [
+      { title: "Flags of British India — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_British_India" },
+    ],
+  },
   "bd-armed-forces": {
     description: "A red-and-blue tricolour bears the joint emblem of the three services: a circle divided into three fields by gold fimbriations, red for the Army's insignia, dark blue for the Navy's crest and light blue for the Air Force's, uniting the services under a single flag adopted in 1972 after independence.",
     sources: [
@@ -4204,6 +4210,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Five-Coloured Flag of China's early republic set five horizontal stripes — red, yellow, blue, white and black — for the Han, Manchu, Mongol, Hui and Tibetan peoples, embodying Sun Yat-sen's principle of \"Five Races Under One Union\": that a nation's people, whatever their ethnicity, could stand united as one under the new republic.",
     sources: [
       { title: "Five-color flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Five-color_flag" },
+    ],
+  },
+  "cn-qing": {
+    description: "Adopted in 1889 as China's first true national flag — its predecessor, an 1862 naval pennant, was merely triangular — the Yellow Dragon Flag set an azure dragon chasing a flaming red pearl on a plain yellow field, the rectangular design chosen by Empress Dowager Cixi on the recommendation of the statesman Li Hongzhang. Yellow was the colour reserved exclusively for the Manchu emperors; the coiling dragon stood for imperial power and sovereignty, and the pearl for wealth and good fortune. It flew until the 1911 Xinhai Revolution ended the Qing dynasty, replaced by the New Republic's Five-Coloured Flag in January 1912.",
+    sources: [
+      { title: "Flag of the Qing dynasty — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Qing_dynasty" },
     ],
   },
   "cn-pla": {
@@ -6105,6 +6117,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "How the Harp Became the Symbol of Ireland — EPIC Museum", url: "https://epicchq.com/story/how-the-harp-became-the-symbol-of-ireland/" },
     ],
   },
+  "ie-lordship": {
+    description: "The arms of the medieval Lordship of Ireland (1171–1541, under the English crown): three gold crowns arranged vertically on blue within a white border, confirmed by a commission under Edward IV around 1467–8. The design is thought to descend from arms Irish lords adopted while fighting alongside Edward I in his Scottish campaigns, continuing in use even after Henry VIII's 1541 elevation of Ireland to a kingdom, before Henry's break with the Papacy saw the three crowns eventually give way to the harp as Ireland's emblem.",
+    sources: [
+      { title: "Lordship of Ireland — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gb_loi.html" },
+    ],
+  },
   "ie-naval-colour": {
     description: "A navy-blue colour bears the badge of the Naval Service — the Defence Forces' own sunburst badge, with the Gaelic letters 'FF' (for Fórsaí Cosanta Áitiúla / Óglaigh na hÉireann, the Irish name for the Defence Forces) at its centre — superimposed on two crossed silver fouled anchors, marking the flag as the maritime branch's own ceremonial colour.",
     sources: [
@@ -6240,6 +6258,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The triskelion — three armoured running legs joined at the thigh — has stood for Mann since the late 13th century, appearing after Scotland took the island in 1265; scholars link it to the three-legged emblem of Sicily, perhaps carried north through the royal houses of Scotland and Sicily. The Latin motto Quocunque Jeceris Stabit — 'whichever way you throw it, it will stand' — plays on the figure's balance: however it falls, a leg is always planted. It first appeared on the island's coinage in 1668. The peregrine falcon recalls the pair of falcons the Lords of Mann rendered to English kings at their coronation. The present arms were granted by Queen Elizabeth II on 12 July 1996.",
     sources: [
       { title: "Coat of arms of the Isle of Man — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Isle_of_Man" },
+    ],
+  },
+  "in-raj-ensign": {
+    description: "The Star of India Red Ensign served as the civil flag for merchant vessels registered in British India from 1880, defacing the plain Red Ensign with the badge of the Most Exalted Order of the Star of India — an eleven-pointed radiant star around a blue disc bearing the motto 'Heaven's Light Our Guide', created by Queen Victoria in 1861 to honour service in India in a form acceptable across the subcontinent's religious communities. The Union Flag remained British India's official flag throughout, and this ensign was retired at independence and partition in 1947.",
+    sources: [
+      { title: "Flags of British India — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_British_India" },
     ],
   },
   "in-uk-1858": {
