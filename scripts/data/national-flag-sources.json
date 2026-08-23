@@ -19555,7 +19555,16 @@
           "design": "The French Tricolour charged with a cedar, flown over the State of Greater Lebanon during the French mandate.",
           "source": "https://en.wikipedia.org/wiki/Greater_Lebanon",
           "sha256": "6958927f63cf4debe6b495594d778d839faa19c2d16a7d48e5517cc2aad52f18",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Designed by Naoum Mokarzel of the Lebanese Renaissance Movement for the State of Greater Lebanon proclaimed under the French Mandate on 1 September 1920, this flag placed a green cedar tree — a device the Lebanese Legion had already carried on its own plain flag during the First World War, and a biblical symbol of strength and endurance long associated with Lebanon's Christian communities — in the white band of the French Tricolour. When Lebanon became independent in 1943 the cedar was kept, moved onto a white field between two red bands, in the flag flown today.",
+            "sources": [
+              {
+                "title": "The Lebanon Flag: Meaning & History — SimCorner",
+                "url": "https://simcorner.com/en-eu/blogs/travel-guides/lebanon-flag-meaning-history-symbolism"
+              }
+            ]
+          }
         },
         {
           "id": "lb-army",
@@ -22223,7 +22232,16 @@
           "design": "A flag attributed to Mansa Musa I on 14th-century European maps — the medieval empire whose name the modern republic took, not the modern state.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malian_flags",
           "sha256": "20b58443732f3c9b1267845d0006a6268c81d57de1edef1207e88ffd573b0185",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Rather than a flag flown by the Mali Empire itself, this design is a European artistic convention: the 1375 Catalan Atlas, the most celebrated map of its age, depicts Mansa Musa I — the Mali Empire's fabulously wealthy 14th-century ruler, renowned across the Mediterranean world after his lavish 1324 pilgrimage to Mecca — enthroned and crowned in the European heraldic manner, holding an orb and sceptre as Christian kings were shown. It reflects how profoundly Mansa Musa's wealth and power impressed European cartographers, rather than any banner the empire actually used.",
+            "sources": [
+              {
+                "title": "The Catalan Atlas (1375) — Gilder Lehrman Institute of American History",
+                "url": "https://www.gilderlehrman.org/ap-african-american-studies/unit-1/west-africa/catalan-atlas-1375"
+              }
+            ]
+          }
         },
         {
           "id": "ml-wassoulou",
@@ -23501,7 +23519,16 @@
           "design": "A short-lived redesign with a full white sun centred on a red band, adopted in 2010 and repealed in 2012 when the 1964 flag was restored.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Malawi",
           "sha256": "6ed1c3e3b9f3a5b11f8c90e7fc89ce6804f16daedd192fa601e8c8696ff96448",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted 29 July 2010 under President Bingu wa Mutharika, this redesign reordered Malawi's stripes to red-black-green and replaced the rising half-sun of the 1964 independence flag with a full white sun of 45 rays — explained as marking Malawi's maturity as a nation, in contrast to the half-sun's symbolism of a newly emerging state. Widely unpopular and nicknamed 'Bingu's flag', it was repealed by Parliament on 28 May 2012, under President Joyce Banda, restoring the original 1964 flag.",
+            "sources": [
+              {
+                "title": "Malawi's Flag Change — Political Geography Now",
+                "url": "https://www.polgeonow.com/2012/09/malawi-flag-change.html"
+              }
+            ]
+          }
         },
         {
           "id": "mw-nyasaland",
@@ -26556,7 +26583,16 @@
           "design": "The flag of Panama as a sovereign state within the United States of Colombia.",
           "source": "https://en.wikipedia.org/wiki/List_of_Panamanian_flags",
           "sha256": "c51aeebb55cc4aa83c6248ade886e2518f1d1b6e37d92d0e417418c77bef69a3",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "As the Sovereign State of Panama within the federal United States of Colombia (1863–1886), Panama flew its own distinct flag bearing its state coat of arms — an eagle with outstretched wings above a shield, carrying a ribbon inscribed 'Pro Mundi Beneficio' ('For the benefit of the world') and ten gold stars for the state's provinces — rather than the flag of Colombia itself. Panama remained a state within Colombia until a stricter unitary constitution dissolved the federal states in 1886, and did not become fully independent until 1903.",
+            "sources": [
+              {
+                "title": "State of Panama — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/State_of_Panama"
+              }
+            ]
+          }
         },
         {
           "id": "pa-gran-colombia",
@@ -31362,7 +31398,16 @@
           "design": "The blue-white-red tricolour of the Kingdom of Serbs, Croats and Slovenes, to which the Slovene Lands belonged.",
           "source": "https://en.wikipedia.org/wiki/List_of_Slovenian_flags",
           "sha256": "6aae7baeb583cd90543fecf3433e1811b6e0f1667df8414a380619355ff4d8d7",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted when Slovenia joined the new Kingdom of Serbs, Croats and Slovenes on 1 December 1918 (renamed the Kingdom of Yugoslavia in 1929), this blue-white-red tricolour drew on the Pan-Slavic colours agreed at the 1848 Prague Slavic Congress, chosen to express the unity of the newly joined South Slavic peoples. It was formally established by the 1921 Vidovdan Constitution and flown until the Axis occupation of Yugoslavia in April 1941.",
+            "sources": [
+              {
+                "title": "Flag of Yugoslavia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Yugoslavia"
+              }
+            ]
+          }
         },
         {
           "id": "si-president",
@@ -35348,7 +35393,16 @@
           "design": "The flag of the kingdom at the heart of what became Uganda, before British rule.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
           "sha256": "2d91f57bca76ff0ccd29c1fa6cb95f43348cdf858a4155e9bfe39f0ae58b7b17",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "One of the few pre-colonial African states to fly its own flag, the Kingdom of Buganda was recorded by the explorer Frederick Lugard in 1892 flying 'an enormous home-made flag' beside two lances and a shield on a red ground — emblems of the Kabaka's authority that Buganda kept using through the colonial period, even as British administrators chose the crested crane as Uganda's own colonial badge specifically to avoid favouring the kingdom over the protectorate's other regions.",
+            "sources": [
+              {
+                "title": "The Flag of Uganda: A Constant through Turbulent Times — Young Pioneer Tours",
+                "url": "https://www.youngpioneertours.com/the-flag-of-uganda/"
+              }
+            ]
+          }
         },
         {
           "id": "ug-president",
@@ -38360,7 +38414,16 @@
           "design": "The Dutch tricolour charged with the company's monogram — flown at the Cape from the founding of the refreshment station in 1652.",
           "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
           "sha256": "a2837de97c9ad4b167e8d7eae91993e6856749756b0015cb42985f300c00eadb",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Dutch tricolour charged with the intertwined letters VOC — for the Vereenigde Oostindische Compagnie, the Dutch East India Company — flew over the Cape of Good Hope from 1652, when Jan van Riebeeck established a refreshment station there to resupply Company ships trading with Asia, until the Company's collapse at the end of the 18th century.",
+            "sources": [
+              {
+                "title": "Netherlands East India Company — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/nl-indco.html"
+              }
+            ]
+          }
         },
         {
           "id": "za-arms",
