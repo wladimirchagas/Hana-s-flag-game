@@ -3840,6 +3840,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
+  "ca-france-royal": {
+    description: "The Bourbon royal banner — a blue field bearing three gold fleurs-de-lis, the 'France moderne' arms Charles V had fixed in 1376 — was the flag most commonly flown over New France from Jacques Cartier's era through French colonisation of the Saint Lawrence valley, until the 1763 Treaty of Paris ceded the colony to Britain after the Seven Years' War. The fleurs-de-lis are traditionally read as honouring the Holy Trinity, and the design remains echoed in the fleur-de-lis at the centre of Quebec's own modern flag.",
+    sources: [
+      { title: "Kingdom of France (843?–1792) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/fr_mon.html" },
+    ],
+  },
   "ca-forces": {
     description: "The badge shows a fouled anchor for the Royal Canadian Navy, a soaring eagle for the Royal Canadian Air Force, and two crossed swords for the Canadian Army, uniting the three services' emblems as the single badge of the Canadian Armed Forces.",
     sources: [
@@ -3985,6 +3991,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The flag deliberately combines the colours of France (blue and white) with the Pan-African colours (green and yellow): blue for the sky and freedom, white for peace and dignity, green for hope and faith, and yellow for tolerance. The red stripe crossing all four bands stands for the shared blood of humanity — designer Barthélemy Boganda's own expression of a willingness to shed blood for both Africa and the Central African Republic — and the gold star for the country's aspiration to a vibrant future.",
     sources: [
       { title: "Flag of the Central African Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic" },
+    ],
+  },
+  "cg-communist": {
+    description: "Adopted in 1970 when the Republic of the Congo declared itself the People's Republic of the Congo under a Marxist–Leninist one-party government, this plain red flag bore the state emblem of a crossed hoe and hammer — for the peasantry and industrial workers — beneath a five-pointed star, encircled by a wreath, a set of socialist symbols shared in form with the emblems of other Soviet-aligned states of the era. It was replaced by the country's earlier green-yellow-red tricolour in 1991 as one-party rule ended.",
+    sources: [
+      { title: "Flag of the Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo" },
     ],
   },
   "cg-french": {
@@ -4725,6 +4737,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The white cross and the blue-and-red quarters repeat the Dominican Republic's own national flag, designed by independence leader Juan Pablo Duarte and first flown in 1844: the cross for peace and the unity of the Dominican people, blue for liberty, and red for the blood of the country's patriots.",
     sources: [
       { title: "Flag of the Dominican Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic" },
+    ],
+  },
+  "dz-french": {
+    description: "The plain French Tricolour, flown from 1848 as the merchant ensign of French Algeria's shipping, following the decree that year which formally incorporated Algeria into metropolitan France as French départements rather than a mere colony — the same flag France itself has flown since the Revolution, with no distinct Algerian symbol added to it.",
+    sources: [
+      { title: "Flag of France — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_France" },
     ],
   },
   "dz-naval-ensign": {
@@ -5538,6 +5556,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Blue Ensign of the Gold Coast — Royal Museums Greenwich", url: "https://www.rmg.co.uk/collections/objects/rmgc-object-719" },
     ],
   },
+  "gh-denmark": {
+    description: "The Dannebrog — a white Scandinavian cross on red, traditionally Europe's oldest continuously used flag design — flew over the Danish Gold Coast's trading forts (including Christiansborg, now Ghana's Osu Castle) from Denmark's 17th-century arrival on the coast until Denmark sold its Gold Coast possessions to Britain in 1850, ending Danish involvement in West Africa.",
+    sources: [
+      { title: "Flag of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
+    ],
+  },
   "gh-air-force": {
     description: "The Air Force Ensign of Ghana carries the national flag in the canton and the air force's green-yellow-red roundel in the fly, adopted when the force was formed in 1959. The roundel repeats the colours of the national flag — green for the nation's forests and farmland, yellow for its mineral wealth, and red for the blood shed in the struggle for independence — marking Ghanaian military aircraft with the same colours flown on the ground.",
     sources: [
@@ -5820,6 +5844,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "British Guiana's Blue Ensign badge, introduced in 1875 and revised to an oval, garter-bordered form in 1906, showed a three-masted sailing ship under the Latin motto 'Damus petimusque vicissim' — 'We give and expect in return' — a device marking the colony's importance to British maritime trade.",
     sources: [
       { title: "Guyana — Historical Flags, Part 1 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gy_hist.html" },
+    ],
+  },
+  "gy-dutch": {
+    description: "The Prinsenvlag — an orange-white-blue tricolour named for William of Orange, leader of the Dutch revolt against Spain — flew over the Dutch colonies of Essequibo, Demerara and Berbice, the three territories along South America's northern coast that Britain later merged into British Guiana, now Guyana. The Dutch West India Company established these settlements in the early 17th century, and the flag remained in use until British control was confirmed in 1815.",
+    sources: [
+      { title: "Flag of the Netherlands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Netherlands" },
     ],
   },
   "gy-naval-ensign": {
@@ -6540,6 +6570,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The three gold lions on red are the arms of the Dukes of Normandy, the same lions from which England's royal arms descend, and mark Jersey's origin as part of the Duchy of Normandy. When King John lost mainland Normandy to France in 1204 the Channel Islanders kept their allegiance to the English Crown, and the lions stayed as the island's own arms. King Edward VII formally sanctioned the shield in 1907; a Royal Warrant of 10 December 1980 added the Plantagenet crown above it, the States Assembly approving the design in 1981 — the crown marks Jersey's loyalty to the Crown as its own possession, not part of the United Kingdom.",
     sources: [
       { title: "Coat of arms of Jersey — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey" },
+    ],
+  },
+  "jm-1957": {
+    description: "The final form of Jamaica's colonial Blue Ensign, flown until independence from Britain on 6 August 1962, when the black-gold-green diagonal design still used today — chosen from among competing proposals for its distinctiveness — replaced it as the new nation's own flag.",
+    sources: [
+      { title: "Flag of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
+    ],
+  },
+  "jm-1875": {
+    description: "Jamaica's first badged Blue Ensign, introduced in 1875, defaced the British Blue Ensign with the colony's badge: a scene showing Christopher Columbus's arrival, framed by pineapples in a nod to the island's agricultural exports — the design that, refined over the following decades, gave Jamaica its colonial flag until independence in 1962.",
+    sources: [
+      { title: "Flag of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
+    ],
+  },
+  "jm-spain": {
+    description: "The Cross of Burgundy — a red saltire of gnarled, rope-like branches on white, the flag of the Spanish Habsburgs inherited from the Dukes of Burgundy — flew over Jamaica from Spanish settlement beginning in 1509 until an English expedition seized the island in 1655, ending 146 years of Spanish colonial rule.",
+    sources: [
+      { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
   "jm-defence-force": {

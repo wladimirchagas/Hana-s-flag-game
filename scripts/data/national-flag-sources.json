@@ -5557,7 +5557,16 @@
           "design": "The Bourbon banner, the flag most commonly flown over New France.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "221a080b4231b758960de05c16b46cb45a9da23d1136f558cdd1e39d12e7e5dd",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Bourbon royal banner — a blue field bearing three gold fleurs-de-lis, the 'France moderne' arms Charles V had fixed in 1376 — was the flag most commonly flown over New France from Jacques Cartier's era through French colonisation of the Saint Lawrence valley, until the 1763 Treaty of Paris ceded the colony to Britain after the Seven Years' War. The fleurs-de-lis are traditionally read as honouring the Holy Trinity, and the design remains echoed in the fleur-de-lis at the centre of Quebec's own modern flag.",
+            "sources": [
+              {
+                "title": "Kingdom of France (843?–1792) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/fr_mon.html"
+              }
+            ]
+          }
         },
         {
           "id": "ca-forces",
@@ -6166,7 +6175,16 @@
           "design": "A red field with the Marxist state emblem — crossed hoe and hammer beneath a star, in a wreath — flown by the People's Republic of the Congo.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo",
           "sha256": "b30519adac8b3342dd8b91e3e1db5a6c22119dbfa5bcddf9f6fa10903b2cf5f0",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted in 1970 when the Republic of the Congo declared itself the People's Republic of the Congo under a Marxist–Leninist one-party government, this plain red flag bore the state emblem of a crossed hoe and hammer — for the peasantry and industrial workers — beneath a five-pointed star, encircled by a wreath, a set of socialist symbols shared in form with the emblems of other Soviet-aligned states of the era. It was replaced by the country's earlier green-yellow-red tricolour in 1991 as one-party rule ended.",
+            "sources": [
+              {
+                "title": "Flag of the Republic of the Congo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo"
+              }
+            ]
+          }
         },
         {
           "id": "cg-french",
@@ -9241,7 +9259,16 @@
           "design": "The merchant flag flown by shipping of French Algeria.",
           "source": "https://en.wikipedia.org/wiki/List_of_Algerian_flags",
           "sha256": "d93dfedfe01589771be19c8a6d8b8668c4f6e735ca4780f093a7ad4f7e1c2e37",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The plain French Tricolour, flown from 1848 as the merchant ensign of French Algeria's shipping, following the decree that year which formally incorporated Algeria into metropolitan France as French départements rather than a mere colony — the same flag France itself has flown since the Revolution, with no distinct Algerian symbol added to it.",
+            "sources": [
+              {
+                "title": "Flag of France — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_France"
+              }
+            ]
+          }
         },
         {
           "id": "dz-regency",
@@ -12588,7 +12615,16 @@
           "sovereign": "Denmark–Norway",
           "reuse": "flags/dk.svg",
           "design": "The Dannebrog, flown over the Danish Gold Coast forts until they were sold to Britain in 1850.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
+          "meaning": {
+            "description": "The Dannebrog — a white Scandinavian cross on red, traditionally Europe's oldest continuously used flag design — flew over the Danish Gold Coast's trading forts (including Christiansborg, now Ghana's Osu Castle) from Denmark's 17th-century arrival on the coast until Denmark sold its Gold Coast possessions to Britain in 1850, ending Danish involvement in West Africa.",
+            "sources": [
+              {
+                "title": "Flag of Denmark — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Denmark"
+              }
+            ]
+          }
         },
         {
           "id": "gh-portugal",
@@ -13833,7 +13869,16 @@
           "design": "The orange-white-blue Prinsenvlag, flown over the Dutch colonies of Essequibo, Demerara and Berbice that became Guyana.",
           "source": "https://en.wikipedia.org/wiki/List_of_Guyanese_flags",
           "sha256": "f0f1b0de25ce97b0b31638835dff15419fbf7700ec2f34f2ca43bc163da51b35",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Prinsenvlag — an orange-white-blue tricolour named for William of Orange, leader of the Dutch revolt against Spain — flew over the Dutch colonies of Essequibo, Demerara and Berbice, the three territories along South America's northern coast that Britain later merged into British Guiana, now Guyana. The Dutch West India Company established these settlements in the early 17th century, and the flag remained in use until British control was confirmed in 1815.",
+            "sources": [
+              {
+                "title": "Flag of the Netherlands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Netherlands"
+              }
+            ]
+          }
         },
         {
           "id": "gy-president",
@@ -16847,7 +16892,16 @@
           "design": "The colony's blue ensign in its final form, flown until independence.",
           "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
           "sha256": "5ba06d6681ed3f6f66c611ed72a1adb928e2efe76f51d8b4ba77a5c0a845e742",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The final form of Jamaica's colonial Blue Ensign, flown until independence from Britain on 6 August 1962, when the black-gold-green diagonal design still used today — chosen from among competing proposals for its distinctiveness — replaced it as the new nation's own flag.",
+            "sources": [
+              {
+                "title": "Flag of Jamaica — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Jamaica"
+              }
+            ]
+          }
         },
         {
           "id": "jm-1875",
@@ -16861,7 +16915,16 @@
           "design": "The colony's first badged blue ensign.",
           "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
           "sha256": "c641046c0df7397ca6f1a7d454423128a3b9441c5e2e5ac9f09b7f26daf40601",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Jamaica's first badged Blue Ensign, introduced in 1875, defaced the British Blue Ensign with the colony's badge: a scene showing Christopher Columbus's arrival, framed by pineapples in a nod to the island's agricultural exports — the design that, refined over the following decades, gave Jamaica its colonial flag until independence in 1962.",
+            "sources": [
+              {
+                "title": "Flag of Jamaica — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Jamaica"
+              }
+            ]
+          }
         },
         {
           "id": "jm-spain",
@@ -16872,7 +16935,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "The Cross of Burgundy, flown over the island from the Spanish settlement until the English conquest of 1655.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
+          "meaning": {
+            "description": "The Cross of Burgundy — a red saltire of gnarled, rope-like branches on white, the flag of the Spanish Habsburgs inherited from the Dukes of Burgundy — flew over Jamaica from Spanish settlement beginning in 1509 until an English expedition seized the island in 1655, ending 146 years of Spanish colonial rule.",
+            "sources": [
+              {
+                "title": "Cross of Burgundy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+              }
+            ]
+          }
         },
         {
           "id": "jm-governor-general",
