@@ -2949,6 +2949,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — National Emblem of Bangladesh", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
     ],
   },
+  "bd-pm": {
+    description: "The Prime Minister's standard is identical to the Presidential standard — a dark maroon field bearing the national emblem in gold, with a title inscribed beneath — except that the wording reads \"Prime Minister\" rather than \"President\", following a 1972 Cabinet decision that gave both offices matching flags distinguished only by that title. The shared emblem's four stars represent Bangladesh's founding state principles (nationalism, socialism, democracy and secularism); the water lily is the national flower, rising from waves that recall the country's rivers, framed by sprays of rice (the staple crop) and jute (the historic export crop).",
+    sources: [
+      { title: "Bangladesh — Presidential and Prime Ministerial standards — Flags of the World", url: "https://www.crwflags.com/fotw/flags/bd_pres.html" },
+    ],
+  },
   "bd-emblem": {
     description: "Adopted shortly after independence in 1971, every charge names something the country runs on. The water lily at the centre is the national flower and stands for the many rivers that cross Bangladesh; the rice sheaves flanking it are the staple food; the three jute leaves above are the crop the economy was built on; and the four stars stand for the four founding principles of the 1972 constitution — nationalism, secularism, socialism and democracy.",
     sources: [
@@ -3058,6 +3064,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Granted by Royal Warrant on 4 October 1910 though in use since the 1620s. A red lion — the lion of England, marking Bermuda's tie to Britain — holds a shield showing the wreck of the Sea Venture, the flagship bound for Jamestown that Sir George Somers deliberately ran onto Bermuda's reefs in a 1609 hurricane; its 150 survivors founded the colony, so the shipwreck that stranded them is remembered as the island's origin. The motto Quo Fata Ferunt — 'Whither the Fates Carry Us' — recalls that the settlers reached Bermuda by chance of storm.",
     sources: [
       { title: "Coat of arms of Bermuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda" },
+    ],
+  },
+  "bn-war-flag": {
+    description: "Brunei's War Flag — the flag of the Royal Brunei Armed Forces — takes the national flag's yellow, black and white design and adds a red stripe between the black and white bands, with the armed forces' own badge replacing the national coat of arms. The colours retain their national meaning (yellow for the Sultan and the sultanate, white and black for the two chief ministers who assisted the third Sultan), while the added red band and military badge, together with the flag's distinct 2:3 proportions, mark it out as the armed forces' own banner rather than the state flag.",
+    sources: [
+      { title: "List of Bruneian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Bruneian_flags" },
+      { title: "Flag of Brunei — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
     ],
   },
   "bn-naval-ensign": {
@@ -4501,6 +4514,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Coat of arms of Croatia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia" },
     ],
   },
+  "hr-civil-ensign": {
+    description: "Croatia's civil and state ensign is identical in colour and symbolism to the national flag flown ashore — the same red-white-blue tricolour bearing the Croatian coat of arms — but is flown in 2:3 proportions rather than the 1:2 ratio used on land, the standard wider format for ensigns flown at sea. The ensign carries no separate symbolism of its own: every element of the national flag's meaning (the checkerboard shield representing Croatia's historic regions, crowned by the five smaller shields of Croatia, Dubrovnik, Dalmatia, Istria and Slavonia) applies equally to the ensign.",
+    sources: [
+      { title: "Flag of Croatia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
+    ],
+  },
   "hr-naval-jack": {
     description: "The red-and-white checkerboard (šahovnica) is Croatia's central national symbol, used as a heraldic device since at least the 16th century; the five smaller shields above it represent Croatia's historic regions.",
     sources: [
@@ -5816,6 +5835,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Coat of arms of Malaysia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia" },
     ],
   },
+  "my-navy": {
+    description: "The Royal Malaysian Navy's ensign follows the British Royal Navy's White Ensign pattern inherited from Malaya's colonial-era fleet: a white field crossed by a broad cross throughout — rendered in blue rather than the Royal Navy's red St George's Cross — with the national flag placed in the canton. The blue cross keeps the historic Commonwealth naval-ensign format (a white field marking naval as opposed to civil or merchant vessels) while recolouring it to give Malaysia's own navy a visually distinct identity from the Royal Navy's original design.",
+    sources: [
+      { title: "List of Malaysian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
+      { title: "War Ensign (Malaysia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/my~w.html" },
+    ],
+  },
   "my-navy-1963": {
     description: "The Royal Malaysian Navy's ensign, flown from the formation of Malaysia in 1963 until 1968, kept the same White Ensign layout used by Malaya's navy before it — a red St George's Cross on white — updating only the canton to the flag of the newly formed Federation of Malaysia, which had just united Malaya with Singapore, Sabah and Sarawak. The design changed again in 1968 to the blue-crossed ensign the Royal Malaysian Navy has flown since.",
     sources: [
@@ -6503,6 +6529,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — List of Portuguese flags", url: "https://en.wikipedia.org/wiki/List_of_Portuguese_flags" },
     ],
   },
+  "pt-pm": {
+    description: "The Prime Minister's flag (adopted 1972) follows the same design as the President's standard but on a white field: a green saltire, the national coat of arms at the centre, and a red border with gold laurel leaves. The arms carry Portugal's own heraldic history — the shield's silver bezants and the border's castles recall the medieval kingdom — while the armillary sphere on the President's own standard nods to the Age of Discovery. The white field distinguishes the Prime Minister's flag from the President's (which uses a different field colour), while keeping the shared laurel border and arms that mark both as flags of state office.",
+    sources: [
+      { title: "List of Portuguese flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Portuguese_flags" },
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
+    ],
+  },
   "pt-arms": {
     description: "The five blue shields set in a cross — the quinas — are traditionally read as the Five Wounds of Christ, or the five Moorish kings said to have been defeated at Ourique; the five silver bezants on each recall the monarch's right to mint coin. The red border of seven golden castles, fixed at seven by King Sebastian, stands for strongholds taken from the Moors in the Reconquista. Beneath sits the golden armillary sphere, the navigator's instrument that marks Portugal's Age of Discovery. The same shields and castles appear on the national flag.",
     sources: [
@@ -6799,6 +6832,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Sudanese Air Force", url: "https://en.wikipedia.org/wiki/Sudanese_Air_Force" },
     ],
   },
+  "sd-president": {
+    description: "The Presidential Standard of Sudan is based on the national tricolour — red, white and black horizontal bands with a green triangle at the hoist — with the national coat of arms rendered in gold at the centre of the white band to mark it as the flag of the head of state. The tricolour's own symbolism carries over: red for the struggle for independence, white for peace and light, black for the people of Sudan (and for the name \"Sudan\" itself, from the Arabic for \"land of the blacks\"), and green for Islam and the fertility of the land.",
+    sources: [
+      { title: "Sudan — Presidential Standard — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sd_pre.html" },
+      { title: "Flag of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
+    ],
+  },
   "sd-arms": {
     description: "Adopted in 1985, the emblem is built on a secretary bird — chosen as a distinctively Sudanese, indigenous counterpart to the Eagle of Saladin and Hawk of Quraish borne by other Arab states. On its breast is the shield of Muhammad Ahmad, the 19th-century Mahdi who briefly ruled Sudan. The upper scroll reads an-Naṣr lanā, “Victory is ours,” and the lower names the Republic of the Sudan.",
     sources: [
@@ -7026,6 +7066,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The two hawks and the black star are taken from São Tomé and Príncipe's coat of arms and flag, where the star (one of two on the flag) stands for African independence and the birds are native falcons representing the country's two main islands.",
     sources: [
       { title: "Flag of São Tomé and Príncipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
+    ],
+  },
+  "sv-civil-ensign": {
+    description: "El Salvador's civil ensign — flown by merchant shipping and private citizens — is the blue-white-blue triband without the national coat of arms, bearing instead the national motto \"DIOS, UNIÓN, LIBERTAD\" (God, Union, Liberty) in gold across the white stripe. The triband itself traces to the flag of the United Provinces of Central America, adopted in 1823, whose blue-white-blue design was in turn inspired by Argentina's own flag of independence; the plain, arms-free design keeps the civil ensign visually simpler than the state flag, which carries the full coat of arms.",
+    sources: [
+      { title: "Flag of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
+      { title: "El Salvador — Civil Ensign and Alternative State Flag — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sv-gov.html" },
     ],
   },
   "sv-civil": {
@@ -7385,6 +7432,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — List of Ukrainian flags", url: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
     ],
   },
+  "ua-sea-guard": {
+    description: "The ensign of Ukraine's Sea Guard (the maritime branch of the State Border Guard Service) is a green field bearing a white cross, with the national flag in the canton. The green field continues the colour used by Soviet-era border troops on their insignia and uniform trim, a practice Ukraine's own Border Guard Service has kept since independence; the white cross marks the flag as a guard/protection ensign distinct from the Navy's own ensign, while the canton asserts the vessel's national identity.",
+    sources: [
+      { title: "Ukrainian Sea Guard — Wikipedia", url: "https://en.wikipedia.org/wiki/Ukrainian_Sea_Guard" },
+      { title: "Ukraine — Border Guard Flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ua~bgrd.html" },
+    ],
+  },
   "ua-president": {
     description: "The gold tryzub (trident) is Ukraine's national coat of arms, tracing back over a thousand years to the seal of the Rurikid princes of Kievan Rus'; adopted as the modern state's small coat of arms in 1992, it stands today as a symbol of Ukrainian sovereignty and national identity.",
     sources: [
@@ -7533,6 +7587,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue stripe stands for greatness, the white for the Republic, and the red for the blood of those who died for independence; the motto \"Libertad o Muerte\" (\"Liberty or Death\") honours the Treinta y Tres Orientales, the thirty-three exiles who returned in 1825 to fight Brazilian rule and spark Uruguay's independence.",
     sources: [
       { title: "Flag of the Treinta y Tres — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Treinta_y_Tres" },
+    ],
+  },
+  "uy-air-force": {
+    description: "The flag of the Uruguayan Air Force (Fuerza Aérea Uruguaya) is a blue field bearing the force's badge at the centre, which incorporates a circular rendering of the historic Artigas flag — the banner of independence leader José Gervasio Artigas — reproduced in a distinct sky-blue, white and red colour scheme rather than the national flag's own blue and white. This deliberately differentiated palette links the Air Force to Uruguay's founding independence struggle while giving the badge its own identity distinct from the national flag and the other armed services.",
+    sources: [
+      { title: "Uruguay — Air Force flag — Flags of the World", url: "https://www.crwflags.com/fotw/Flags/uy%5Eaf.html" },
     ],
   },
   "uy-naval-jack": {

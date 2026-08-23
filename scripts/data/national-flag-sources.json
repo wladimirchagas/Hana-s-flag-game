@@ -2254,7 +2254,16 @@
           "design": "The prime minister's standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
           "sha256": "ba2c96aac15e3b187bc07c57d2a2c534a91cd649e5ee8d254aa1b0c79955cece",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Prime Minister's standard is identical to the Presidential standard — a dark maroon field bearing the national emblem in gold, with a title inscribed beneath — except that the wording reads \"Prime Minister\" rather than \"President\", following a 1972 Cabinet decision that gave both offices matching flags distinguished only by that title. The shared emblem's four stars represent Bangladesh's founding state principles (nationalism, socialism, democracy and secularism); the water lily is the national flower, rising from waves that recall the country's rivers, framed by sprays of rice (the staple crop) and jute (the historic export crop).",
+            "sources": [
+              {
+                "title": "Bangladesh — Presidential and Prime Ministerial standards — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/bd_pres.html"
+              }
+            ]
+          }
         },
         {
           "id": "bd-armed-forces",
@@ -3240,7 +3249,20 @@
           "design": "The flag of the Royal Brunei Armed Forces.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bruneian_flags",
           "sha256": "99f7a4182e6ca8065fc1d2df53c2ed25205d056cff2100e287fec43ecbea42bb",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Brunei's War Flag — the flag of the Royal Brunei Armed Forces — takes the national flag's yellow, black and white design and adds a red stripe between the black and white bands, with the armed forces' own badge replacing the national coat of arms. The colours retain their national meaning (yellow for the Sultan and the sultanate, white and black for the two chief ministers who assisted the third Sultan), while the added red band and military badge, together with the flag's distinct 2:3 proportions, mark it out as the armed forces' own banner rather than the state flag.",
+            "sources": [
+              {
+                "title": "List of Bruneian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Bruneian_flags"
+              },
+              {
+                "title": "Flag of Brunei — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Brunei"
+              }
+            ]
+          }
         },
         {
           "id": "bn-naval-ensign",
@@ -12186,7 +12208,16 @@
           "design": "Identical to the national flag, but in 2:3 proportions.",
           "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
           "sha256": "38d593a73a8dbb4cef687b66a6d173d4dd11c244c810411203774e56f98b1662",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Croatia's civil and state ensign is identical in colour and symbolism to the national flag flown ashore — the same red-white-blue tricolour bearing the Croatian coat of arms — but is flown in 2:3 proportions rather than the 1:2 ratio used on land, the standard wider format for ensigns flown at sea. The ensign carries no separate symbolism of its own: every element of the national flag's meaning (the checkerboard shield representing Croatia's historic regions, crowned by the five smaller shields of Croatia, Dubrovnik, Dalmatia, Istria and Slavonia) applies equally to the ensign.",
+            "sources": [
+              {
+                "title": "Flag of Croatia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Croatia"
+              }
+            ]
+          }
         },
         {
           "id": "hr-naval-jack",
@@ -20221,7 +20252,20 @@
           "design": "A white field with blue crosses and the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "179049b0747eba6d744d6742b60ba26071f05c331320b7e307def233c8d30247",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Royal Malaysian Navy's ensign follows the British Royal Navy's White Ensign pattern inherited from Malaya's colonial-era fleet: a white field crossed by a broad cross throughout — rendered in blue rather than the Royal Navy's red St George's Cross — with the national flag placed in the canton. The blue cross keeps the historic Commonwealth naval-ensign format (a white field marking naval as opposed to civil or merchant vessels) while recolouring it to give Malaysia's own navy a visually distinct identity from the Royal Navy's original design.",
+            "sources": [
+              {
+                "title": "List of Malaysian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags"
+              },
+              {
+                "title": "War Ensign (Malaysia) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/my~w.html"
+              }
+            ]
+          }
         },
         {
           "id": "my-navy-1963",
@@ -24250,7 +24294,20 @@
           "design": "As the president’s flag, but on white.",
           "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
           "sha256": "197897507c5624b9d9e3f6d62854841b39799aa3f2d0857a870c7fdeccb1a3f0",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Prime Minister's flag (adopted 1972) follows the same design as the President's standard but on a white field: a green saltire, the national coat of arms at the centre, and a red border with gold laurel leaves. The arms carry Portugal's own heraldic history — the shield's silver bezants and the border's castles recall the medieval kingdom — while the armillary sphere on the President's own standard nods to the Age of Discovery. The white field distinguishes the Prime Minister's flag from the President's (which uses a different field colour), while keeping the shared laurel border and arms that mark both as flags of state office.",
+            "sources": [
+              {
+                "title": "List of Portuguese flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags"
+              },
+              {
+                "title": "Coat of arms of Portugal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal"
+              }
+            ]
+          }
         },
         {
           "id": "pt-arms",
@@ -26025,7 +26082,20 @@
           "design": "The standard of the President of Sudan.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sudan",
           "sha256": "6af7a26fae29b067edd853fabcfd7d384b06691b173840dab3be53e65fe7adf2",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Presidential Standard of Sudan is based on the national tricolour — red, white and black horizontal bands with a green triangle at the hoist — with the national coat of arms rendered in gold at the centre of the white band to mark it as the flag of the head of state. The tricolour's own symbolism carries over: red for the struggle for independence, white for peace and light, black for the people of Sudan (and for the name \"Sudan\" itself, from the Arabic for \"land of the blacks\"), and green for Islam and the fertility of the land.",
+            "sources": [
+              {
+                "title": "Sudan — Presidential Standard — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/sd_pre.html"
+              },
+              {
+                "title": "Flag of Sudan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Sudan"
+              }
+            ]
+          }
         },
         {
           "id": "sd-arms",
@@ -27530,7 +27600,20 @@
           "design": "The plain triband flown by merchant shipping.",
           "source": "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags",
           "sha256": "aeae0575d4903e3ef620f24b4503605c06dc01a57dc38b4f0312a2a0c486aa7b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "El Salvador's civil ensign — flown by merchant shipping and private citizens — is the blue-white-blue triband without the national coat of arms, bearing instead the national motto \"DIOS, UNIÓN, LIBERTAD\" (God, Union, Liberty) in gold across the white stripe. The triband itself traces to the flag of the United Provinces of Central America, adopted in 1823, whose blue-white-blue design was in turn inspired by Argentina's own flag of independence; the plain, arms-free design keeps the civil ensign visually simpler than the state flag, which carries the full coat of arms.",
+            "sources": [
+              {
+                "title": "Flag of El Salvador — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_El_Salvador"
+              },
+              {
+                "title": "El Salvador — Civil Ensign and Alternative State Flag — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/sv-gov.html"
+              }
+            ]
+          }
         },
         {
           "id": "sv-spain",
@@ -29896,7 +29979,20 @@
           "design": "A white field with a green cross and the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
           "sha256": "877307f4687bc695b29288322e7f861f3dc351dbf35a99856ad1bf31e232a110",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The ensign of Ukraine's Sea Guard (the maritime branch of the State Border Guard Service) is a green field bearing a white cross, with the national flag in the canton. The green field continues the colour used by Soviet-era border troops on their insignia and uniform trim, a practice Ukraine's own Border Guard Service has kept since independence; the white cross marks the flag as a guard/protection ensign distinct from the Navy's own ensign, while the canton asserts the vessel's national identity.",
+            "sources": [
+              {
+                "title": "Ukrainian Sea Guard — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Ukrainian_Sea_Guard"
+              },
+              {
+                "title": "Ukraine — Border Guard Flags — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ua~bgrd.html"
+              }
+            ]
+          }
         },
         {
           "id": "ua-arms",
@@ -30975,7 +31071,16 @@
           "design": "The air force's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags",
           "sha256": "382165b31a695ffb72c0ff6e301b124fa82cfd2a62080307a5458dabd6e54e96",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Uruguayan Air Force (Fuerza Aérea Uruguaya) is a blue field bearing the force's badge at the centre, which incorporates a circular rendering of the historic Artigas flag — the banner of independence leader José Gervasio Artigas — reproduced in a distinct sky-blue, white and red colour scheme rather than the national flag's own blue and white. This deliberately differentiated palette links the Air Force to Uruguay's founding independence struggle while giving the badge its own identity distinct from the national flag and the other armed services.",
+            "sources": [
+              {
+                "title": "Uruguay — Air Force flag — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/Flags/uy%5Eaf.html"
+              }
+            ]
+          }
         },
         {
           "id": "uy-naval-jack",
