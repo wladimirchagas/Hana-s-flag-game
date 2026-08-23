@@ -5883,6 +5883,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lesotho" },
     ],
   },
+  "ls-passport": {
+    description: "Lesotho's green passport bears the national coat of arms: a crocodile on the shield, the traditional emblem of the Bakoena — Lesotho's largest clan and the royal Koena dynasty founded by King Moshoeshoe I, who was himself known by the crocodile's name for the wisdom and strength the animal represents in Basotho tradition. The traditional conical Basotho hat, the mokorotlo, and two crossed spears complete the arms, standing for the country's heritage and its people's readiness to defend it.",
+    sources: [
+      { title: "Coat of arms of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lesotho" },
+    ],
+  },
   "ls-football-crest": {
     description: "The blue and green repeat Lesotho's own national flag, adopted in 2006: blue for the sky and rain, and green for prosperity. The flag's own centrepiece, a black Basotho mokorotlo hat (not shown on this badge), replaced the shield, spear and club of the previous design to mark Lesotho as an internally and regionally peaceful state.",
     sources: [
@@ -7796,6 +7802,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Somalia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Somalia" },
     ],
   },
+  "so-passport": {
+    description: "Somalia's passport bears the national coat of arms, adopted 10 October 1956: a gold-framed shield showing the national flag's own blue field and white star, supported by two leopards standing on spears. Leopards are a longstanding Somali cultural motif — the same animal supported the territory's arms even under earlier colonial administration — and here stand for the vigilance, courage and strength of the Somali people.",
+    sources: [
+      { title: "Coat of arms of Somalia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Somalia" },
+    ],
+  },
   "so-football-crest": {
     description: "The light blue and the white star repeat Somalia's own national flag: blue for the sky and the surrounding seas (chosen partly in tribute to the United Nations), and the star's five points for the five territories the Somali people inhabit — Somalia itself, Djibouti, Somaliland, Ethiopia's Somali Region and Kenya's North Eastern Province.",
     sources: [
@@ -7836,6 +7848,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A falcon and a grey parrot — birds of the islands — support a shield shaped like a cocoa pod, the crop on which the islands' economy was built, with a palm tree at its centre. A blue star crowns the arms. The ribbon reads Unidade, Disciplina, Trabalho — “Unity, Discipline, Work.”",
     sources: [
       { title: "Coat of arms of São Tomé and Príncipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_São_Tomé_and_Príncipe" },
+    ],
+  },
+  "st-passport": {
+    description: "São Tomé and Príncipe's passport bears the national coat of arms, adopted at independence from Portugal on 12 July 1975: a golden palm tree on a shield, held by a peregrine falcon and a grey parrot representing the islands' native wildlife, crested with a blue five-pointed star. The motto in Portuguese below reads \"Unidade, Disciplina, Trabalho\" — \"Unity, Discipline, Work\".",
+    sources: [
+      { title: "Coat of arms of São Tomé and Príncipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
     ],
   },
   "st-football-crest": {

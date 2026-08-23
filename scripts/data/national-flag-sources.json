@@ -18069,7 +18069,16 @@
           "design": "The cover of the Lesotho passport.",
           "source": "https://gicg.net/passport/ls/",
           "sha256": "36a8e7a145fbd0f9ca22980efe92d598264d6675332b4985d79b7109a0cf530e",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Lesotho's green passport bears the national coat of arms: a crocodile on the shield, the traditional emblem of the Bakoena — Lesotho's largest clan and the royal Koena dynasty founded by King Moshoeshoe I, who was himself known by the crocodile's name for the wisdom and strength the animal represents in Basotho tradition. The traditional conical Basotho hat, the mokorotlo, and two crossed spears complete the arms, standing for the country's heritage and its people's readiness to defend it.",
+            "sources": [
+              {
+                "title": "Coat of arms of Lesotho — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lesotho"
+              }
+            ]
+          }
         },
         {
           "id": "ls-football-crest",
@@ -28470,7 +28479,16 @@
           "design": "The cover of the Somalia passport.",
           "source": "https://gicg.net/passport/so/",
           "sha256": "fc71aa9da333b5554e89e1eedca98d64be163b4cc1d9db91db64ecf5394b073f",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Somalia's passport bears the national coat of arms, adopted 10 October 1956: a gold-framed shield showing the national flag's own blue field and white star, supported by two leopards standing on spears. Leopards are a longstanding Somali cultural motif — the same animal supported the territory's arms even under earlier colonial administration — and here stand for the vigilance, courage and strength of the Somali people.",
+            "sources": [
+              {
+                "title": "Coat of arms of Somalia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Somalia"
+              }
+            ]
+          }
         },
         {
           "id": "so-football-crest",
@@ -28769,7 +28787,16 @@
           "design": "The cover of the São Tomé and Príncipe passport.",
           "source": "https://gicg.net/passport/st/",
           "sha256": "6585804a0c7c86147a1978ab5c2bfd1e7b201fb3dcc43fbc360d1549985311cb",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "São Tomé and Príncipe's passport bears the national coat of arms, adopted at independence from Portugal on 12 July 1975: a golden palm tree on a shield, held by a peregrine falcon and a grey parrot representing the islands' native wildlife, crested with a blue five-pointed star. The motto in Portuguese below reads \"Unidade, Disciplina, Trabalho\" — \"Unity, Discipline, Work\".",
+            "sources": [
+              {
+                "title": "Coat of arms of São Tomé and Príncipe — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
+              }
+            ]
+          }
         },
         {
           "id": "st-football-crest",
