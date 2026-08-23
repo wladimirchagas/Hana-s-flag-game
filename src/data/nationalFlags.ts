@@ -4020,6 +4020,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Cameroon national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Cameroon_national_football_team" },
     ],
   },
+  "cn-roc-1928": {
+    description: "China's \"Blue Sky, White Sun, Wholly Red Earth\" flag, adopted in 1928, embodies Sun Yat-sen's Three Principles of the People: blue for nationalism, white for democracy, and red for the people's livelihood. The white sun's twelve rays represent the twelve traditional Chinese two-hour periods of the day, and by extension the twelve months of the year, symbolising unceasing progress; the blue-and-white sun emblem itself dates to the 1890s, when Lu Haodong designed it for Sun Yat-sen's revolutionary movement, well before the red field was added.",
+    sources: [
+      { title: "Flag of the Republic of China — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China" },
+    ],
+  },
+  "cn-roc-1912": {
+    description: "The Five-Coloured Flag of China's early republic set five horizontal stripes — red, yellow, blue, white and black — for the Han, Manchu, Mongol, Hui and Tibetan peoples, embodying Sun Yat-sen's principle of \"Five Races Under One Union\": that a nation's people, whatever their ethnicity, could stand united as one under the new republic.",
+    sources: [
+      { title: "Five-color flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Five-color_flag" },
+    ],
+  },
   "cn-pla": {
     description: "The gold star and the characters 八一 (\"eight-one\", for 1 August) commemorate the Nanchang uprising of 1 August 1927, the armed rebellion the Chinese Communist Party marks as the birth of the People's Liberation Army.",
     sources: [
@@ -4268,6 +4280,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Curaçao — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao" },
     ],
   },
+  "cy-1960": {
+    description: "Cyprus's flag, adopted at independence in 1960 under a constitutional mandate for neutrality, deliberately avoids the national colours of either community on the island: a copper-orange silhouette of Cyprus — copper for the island's historic mineral deposits, from which its name is thought to derive — sits on a white field for peace, above two crossed olive branches symbolising the hoped-for reconciliation between the Greek and Turkish Cypriot communities.",
+    sources: [
+      { title: "Flag of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
+    ],
+  },
   "cy-ottoman": {
     description: "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
     sources: [
@@ -4332,6 +4350,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The silver double-tailed crowned lion is the Bohemian lion — the arms of the medieval Kingdom of Bohemia and today the senior element of the Czech Republic's own coat of arms. It dates to the 12th century, when Holy Roman Emperor Frederick I granted Duke Vladislaus II a silver lion on red to mark his valour in battle; a second tail was added later, according to legend, to commemorate King Přemysl Otakar I's help fighting the Saxons. The narrow band above is simply the blue-white-red of the national flag.",
     sources: [
       { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
+    ],
+  },
+  "de-east-germany": {
+    description: "East Germany's flag added the state emblem to the German black-red-gold tricolour: a hammer, a compass and a ring of rye, standing respectively for industrial workers, the intelligentsia, and farmers — an emblem of the alliance the German Democratic Republic claimed to represent between these classes under socialism. The hammer and rye ring appeared first, in 1955; the compass was added to bring the intellectual and technical classes into the symbolism before the emblem reached the flag itself in 1959.",
+    sources: [
+      { title: "National emblem of East Germany — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_East_Germany" },
+    ],
+  },
+  "de-nazi": {
+    description: "Nazi Germany's flag set a black swastika on a white disc against a red field. Hitler himself wrote that white stood for nationalism, red for the socialist idea, and the swastika for the struggle for the victory of what the regime called the \"Aryan\" race; the red-white-black scheme was deliberately drawn from the flag of the German Empire (1871–1918) to invoke historical continuity. The Reich Flag Law of 15 September 1935 made it Germany's sole national flag, banning the Weimar Republic's black-red-gold tricolour, until the flag was abolished with the regime's defeat in 1945.",
+    sources: [
+      { title: "History of the Swastika & Its Use as a Nazi Symbol — Holocaust Encyclopedia, USHMM", url: "https://encyclopedia.ushmm.org/content/en/article/history-of-the-swastika" },
     ],
   },
   "de-empire": {
@@ -4638,6 +4668,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
     ],
   },
+  "eg-uar": {
+    description: "The United Arab Republic's flag, adopted in 1958 when Egypt and Syria united, used the pan-Arab colours: black for the era of colonial oppression Arabs had endured, white for peace and the hoped-for future of independent Arab states, and red for the sacrifices and bloodshed of the fight for liberation. Two green stars at its centre stood for the union's two constituent states and, in green, for Islam.",
+    sources: [
+      { title: "Flag of the United Arab Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Republic" },
+    ],
+  },
   "eg-navy": {
     description: "The Egyptian Navy's ensign is the national flag defaced with a gold-outlined rendering of the Eagle of Saladin, the national emblem also seen at the centre of the plain national flag. The eagle, adopted as Egypt's emblem after the 1952 revolution, recalls the 12th-century sultan Saladin, who united Egypt and Syria and is honoured as a symbol of Arab strength and unity; the shield on its breast carries the colours of the national flag.",
     sources: [
@@ -4710,6 +4746,15 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The olive wreath is drawn from Eritrea's own national emblem, adopted in 1993 at independence, whose 30 leaves mark the 30 years of war fought to win it; the emblem's wreath normally encircles a dromedary camel, the beast of burden that carried supplies for the independence movement and stands for endurance and self-reliance.",
     sources: [
       { title: "Emblem of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
+    ],
+  },
+  "es-1931": {
+    description: "The Second Spanish Republic's flag, adopted in 1931, replaced the lower red stripe of the monarchy's red-yellow-red flag with purple (murrey) to mark the new republican era, drawing on an early-20th-century republican belief that purple had been the colour of a legendary banner carried by the Comuneros of Castile in their 1520–21 revolt against Charles V.",
+    myths: [
+      { claim: "Purple was the historical colour of the Castilian Comuneros' banner, and the republic revived their true colours.", reality: "The identification of purple with the Comuneros traces only to 19th-century republican writers; the Comuneros' own banner is verified to have been deep red, not purple. The republic's purple stripe reflects this later, mistaken tradition rather than the historical record." },
+    ],
+    sources: [
+      { title: "Flag of the Second Spanish Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Second_Spanish_Republic" },
     ],
   },
   "es-burgundy": {
