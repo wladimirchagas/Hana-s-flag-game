@@ -246,7 +246,16 @@
           "design": "The cover of the United Arab Emirates passport.",
           "source": "https://gicg.net/passport/ae/",
           "sha256": "288fb8466964a156bbc6ebcf91751676c3f9e1c68af6ce16e2db1491a93892ae",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The UAE's ordinary passport is navy blue, bearing the national coat of arms below \"United Arab Emirates\" in Arabic and English; other colours mark other classes of holder — red for diplomats, green for special passports, cyan for service and temporary travel documents. Following Arabic script convention, the passport opens right to left rather than left to right, unlike most passports issued elsewhere.",
+            "sources": [
+              {
+                "title": "Emirati passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emirati_passport"
+              }
+            ]
+          }
         },
         {
           "id": "ae-uk",
@@ -325,7 +334,16 @@
           "design": "The cover of the Afghanistan passport.",
           "source": "https://gicg.net/passport/af/",
           "sha256": "f984562f923f5239e349504bb1127ef3ab73429dde7f372799b8f5ad0ba85268",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Afghan passports issued today still bear the name \"Islamic Republic of Afghanistan\" — the state's title before the Taliban's 2021 return to power and renaming of the country to the \"Islamic Emirate of Afghanistan\" — because that older republican-era document format remains the one accepted for international travel, leaving the passport's own cover a step behind the country's current official name.",
+            "sources": [
+              {
+                "title": "Afghan passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Afghan_passport"
+              }
+            ]
+          }
         },
         {
           "id": "af-football-crest",
@@ -405,7 +423,16 @@
           "design": "The cover of the Antigua and Barbuda passport.",
           "source": "https://gicg.net/passport/ag/",
           "sha256": "0b2718d94cb1d96770a087041b545a68a64c4e50298c19c132e5f4dc598ca8fc",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Above the country's own name runs \"CARIBBEAN COMMUNITY\" with the CARICOM logo, because Antigua and Barbuda issues the shared CARICOM-format passport most member states adopted — so the cover announces the regional community before the nation. The national coat of arms sits centred beneath that heading; a burgundy cover is used for diplomatic passports and green for official ones, the same tricolour-by-purpose convention CARICOM states share.",
+            "sources": [
+              {
+                "title": "Antiguan and Barbudan passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Antiguan_and_Barbudan_passport"
+              }
+            ]
+          }
         },
         {
           "id": "ag-football-crest",
@@ -626,7 +653,16 @@
           "design": "The cover of the Albania passport.",
           "source": "https://gicg.net/passport/al/",
           "sha256": "ba517b9484eaa1ed1e82781008395cde2a9ef163f82cc1272b5e83287cf4562a",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Albania's biometric passport, introduced in 2009, adopted a burgundy cover specifically to align with the European Union's own passport-colour guidelines — a deliberate signal of the country's EU-candidate status, worn on the cover even though Albania is not yet a member. The document is produced to ICAO standard by the French security firm Sagem Sécurité.",
+            "sources": [
+              {
+                "title": "Albanian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Albanian_passport"
+              }
+            ]
+          }
         },
         {
           "id": "al-football-crest",
@@ -764,7 +800,16 @@
           "design": "The cover of the Armenia passport.",
           "source": "https://gicg.net/passport/am/",
           "sha256": "da365aca62aa41acf3e816b8ec9b61ccb84fc553f7f428069d2b4b1e540b8cef",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Armenia's passport was redesigned to a dark red cover from the previous blue, and — not being an EU member — carries no bloc heading, reading only \"Republic of Armenia\" in Armenian and English around the state coat of arms in gold. The redesign's interior pages carry an unusually explicit heritage brief: depictions of Hayk Nahapet, Armenia's legendary founding patriarch; petroglyphs from the Geghama Mountains and Ukhtasar; the cuneiform inscription marking Yerevan's founding; boundary stones from the ancient Artaxiad kingdom; the Mother See of Holy Etchmiadzin; and regional traditions such as lavash bread-baking and the deer of Jermuk — a passport designed as a compact tour of Armenian history and culture.",
+            "sources": [
+              {
+                "title": "Armenian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Armenian_passport"
+              }
+            ]
+          }
         },
         {
           "id": "am-russian-empire",
@@ -1304,7 +1349,16 @@
           "design": "The cover of the Austria passport.",
           "source": "https://gicg.net/passport/at/",
           "sha256": "4c1f41f8eb7d77ef3fd3f376ff62edeaa8193d45067fe76e271ad477bcb0513d",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The burgundy cover follows the common EU format: \"EUROPÄISCHE UNION\" (European Union) above \"REPUBLIK ÖSTERREICH\", with the Austrian coat of arms — the black eagle bearing hammer, sickle and mural crown, its broken chains recalling the end of Nazi occupation — at the centre. A distinctive interior touch goes beyond the cover: each inside page carries the coat of arms of a different Austrian federal state in the background, giving the passport's pages their own small tour of the country's regions.",
+            "sources": [
+              {
+                "title": "Austrian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Austrian_passport"
+              }
+            ]
+          }
         },
         {
           "id": "at-football-crest",
@@ -1857,7 +1911,16 @@
           "design": "The cover of the Azerbaijan passport.",
           "source": "https://gicg.net/passport/az/",
           "sha256": "f1aa61c9b62fb70712527ccc0ad6cdfdacbbb9e2449b6a212c1a5d4504fbd691",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Azerbaijan issues its passport in three colours by purpose — dark green for ordinary holders, dark blue for officials, and dark red for diplomats — each bearing the state coat of arms in relief beneath \"Republic of Azerbaijan\" in Azerbaijani and English. Not being an EU member, the cover carries no supranational heading, leaving the tricolour-by-rank scheme as the passport's main visual signal of the holder's status.",
+            "sources": [
+              {
+                "title": "Azerbaijani passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Azerbaijani_passport"
+              }
+            ]
+          }
         },
         {
           "id": "az-ssr",
@@ -2121,7 +2184,16 @@
           "design": "The cover of the Barbados passport.",
           "source": "https://gicg.net/passport/bb/",
           "sha256": "3313813b4d3d777985f4394443d8aed838eaca574ad12b94df31989002c973d0",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The cover carries the CARICOM logo and \"CARIBBEAN COMMUNITY\" heading above \"BARBADOS\", the shared format most CARICOM member states issue — so, like Antigua and Barbuda's, it announces the regional community before the island nation. The Barbados coat of arms is emblazoned centrally beneath the heading, with a separate burgundy cover reading \"DIPLOMATIC PASSPORT\" for diplomatic holders.",
+            "sources": [
+              {
+                "title": "Barbadian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Barbadian_passport"
+              }
+            ]
+          }
         },
         {
           "id": "bb-football-crest",
@@ -2433,7 +2505,16 @@
           "design": "The cover of the Bangladesh passport.",
           "source": "https://gicg.net/passport/bd/",
           "sha256": "be65755e58a9b3d6f7d5e920ca3ced3e963fb5357dde744058043ada4247d192",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Bangladesh's passport cover is dark green, bearing the Seal of the Government of Bangladesh in gold beneath \"Passport\" and above \"People's Republic of Bangladesh\", printed in Bengali and English together with the international e-passport symbol. The cover material is a tough textile chosen to resist tearing, chemicals, sweat and heat, while the visa pages inside depict Bangladeshi historical landmarks and tourist sites labelled in both languages — celebrating the country's heritage within a deliberately durable design.",
+            "sources": [
+              {
+                "title": "Bangladeshi passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Bangladeshi_passport"
+              }
+            ]
+          }
         },
         {
           "id": "bd-football-crest",
@@ -2581,7 +2662,16 @@
           "design": "The cover of the Belgium passport.",
           "source": "https://gicg.net/passport/be/",
           "sha256": "4ac51eecaae979344b9eb5c0a220205d6bed64ad63741c2a6411d81a0cbc129c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The burgundy cover carries the common EU heading in all four national/EU languages (Dutch, French, German, English) above the Belgian lesser coat of arms and the kingdom's name, itself printed in the same four languages — with the order of Dutch, French and German varying depending on the linguistic community of the individual holder, a small but deliberate reflection of Belgium's language politics. A 2022 redesign carried this local character further, adding illustrations from Belgian comic-strip heritage — Tintin, the Smurfs, Lucky Luke — to the passport's interior visa pages.",
+            "sources": [
+              {
+                "title": "Belgian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Belgian_passport"
+              }
+            ]
+          }
         },
         {
           "id": "be-football-crest",
@@ -2682,7 +2772,16 @@
           "design": "The cover of the Burkina Faso passport.",
           "source": "https://gicg.net/passport/bf/",
           "sha256": "e5244243113c7cb6a6340252a968026844be499b3b149044758b3e4a9547edb9",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Burkina Faso's passport has changed its regional heading twice in quick succession, tracking the country's own shifting alliances: it formerly carried the ECOWAS (Economic Community of West African States) name and logo as a member state, then dropped that heading after withdrawing from ECOWAS alongside Mali and Niger, and a February 2025 redesign added the logo and name of the new bloc those three states formed instead — the Alliance of Sahel States (AES).",
+            "sources": [
+              {
+                "title": "Burkinabe passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Burkinabe_passport"
+              }
+            ]
+          }
         },
         {
           "id": "bf-football-crest",
@@ -3026,7 +3125,16 @@
           "design": "The cover of the Burundi passport.",
           "source": "https://gicg.net/passport/bi/",
           "sha256": "1cf76c4dad6f62c9073376c9f01104a22544dfc5639eb4a71a933992b9f204e4",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Burundi's passport cover is blue, stamped in gold leaf with the state coat of arms, and printed with \"East African Community\" beneath the country's name — a regional heading rather than the ECOWAS/CEMAC bloc names used further west, since Burundi belongs to the East African Community instead. The interior's first page repeats the country's name in Kirundi, French and English alongside an outline map of Burundi.",
+            "sources": [
+              {
+                "title": "Burundian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Burundian_passport"
+              }
+            ]
+          }
         },
         {
           "id": "bi-football-crest",
@@ -3128,7 +3236,20 @@
           "design": "The cover of the Benin passport.",
           "source": "https://gicg.net/passport/bj/",
           "sha256": "3824918c89123ed407a665429524612447038928d638a6e72be2ad52077c196d",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Benin's passport cover is dark green, with \"Republic of Benin\" above the national coat of arms and \"Passport\"/\"Passeport\" below. As an ECOWAS member state, Benin issues its passport to the bloc's common format, whose covers carry the Economic Community of West African States' own name and CEDEAO heading alongside the member state's — colour-coded green for ordinary passports, blue for official ones and burgundy for diplomatic ones across the whole community.",
+            "sources": [
+              {
+                "title": "Beninese passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Beninese_passport"
+              },
+              {
+                "title": "ECOWAS passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/ECOWAS_passport"
+              }
+            ]
+          }
         },
         {
           "id": "bj-football-crest",
@@ -3334,7 +3455,20 @@
           "design": "The cover of the Brunei passport.",
           "source": "https://gicg.net/passport/bn/",
           "sha256": "54bf262e3fdc257148e2b4daa9bef21c5d62b37b9c197c4333eb43100db50230",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Brunei's passport cover is red, bearing the national emblem below the country's name. The emblem, adopted in 1959 and rendered entirely in red, combines a crescent (for Islam, the state religion) inscribed with the national motto, a royal parasol for the monarchy, wings representing the protection of justice, tranquility, prosperity and peace, two upraised hands standing for the government's duty to preserve its people's welfare, and a banner reading \"Brunei Darussalam\" — \"Abode of Peace\".",
+            "sources": [
+              {
+                "title": "Bruneian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Bruneian_passport"
+              },
+              {
+                "title": "Emblem of Brunei — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Brunei"
+              }
+            ]
+          }
         },
         {
           "id": "bn-uk",
@@ -4135,7 +4269,16 @@
           "design": "The cover of the Bahamas passport.",
           "source": "https://gicg.net/passport/bs/",
           "sha256": "41491650a947f14b458da1911bbac75194fadae692262e977df487dc139b5d20",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Unlike several of its CARICOM neighbours, the Bahamas does not use the shared CARICOM cover design: its navy-blue passport carries no CARICOM branding, reading instead \"COMMONWEALTH OF THE BAHAMAS\" above the national coat of arms, asserting the country's own Commonwealth-realm identity rather than the regional community's.",
+            "sources": [
+              {
+                "title": "Bahamian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Bahamian_passport"
+              }
+            ]
+          }
         },
         {
           "id": "bs-football-crest",
@@ -4223,7 +4366,20 @@
           "design": "The cover of the Bhutan passport.",
           "source": "https://gicg.net/passport/bt/",
           "sha256": "8c8b6dc8664938138daf2cc87e7a4644c7609931f83594db753b3ec604e19a2c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Bhutan's ordinary passport cover is blue (official passports are green, diplomatic ones red), bearing the national emblem: a circular design centred on a double diamond-thunderbolt (dorje), symbolising the harmony of secular and religious authority, resting on a lotus for purity beneath a jewel representing sovereign power, the whole framed by two dragons — a reference to the country's own name, Druk Yul, \"Land of the Thunder Dragon\" — proclaiming the state's authority with their voice, in the Mahayana Buddhist idiom the emblem draws on throughout.",
+            "sources": [
+              {
+                "title": "Bhutanese passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Bhutanese_passport"
+              },
+              {
+                "title": "Emblem of Bhutan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Bhutan"
+              }
+            ]
+          }
         },
         {
           "id": "bt-football-crest",
@@ -4537,7 +4693,20 @@
           "design": "The cover of the Belarus passport.",
           "source": "https://gicg.net/passport/by/",
           "sha256": "816bab0e60f3186633a4471c64b42561aecf451831f412a95c3416e28b7fa964",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Belarus's blue passport bears the state coat of arms: an orange silhouette of the country over golden sun rays and a globe, wheat and clover on one side, flax flowers on the other, a red-and-green ribbon (the national flag's own colours) at the base, and a red star at the top. Wikipedia notes the emblem carries no official statement of symbolism — it is a post-Soviet reworking of the Byelorussian SSR's own arms, keeping the wheat, globe and star while removing the hammer and sickle, repurposed rather than freshly designed for independence.",
+            "sources": [
+              {
+                "title": "Belarusian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Belarusian_passport"
+              },
+              {
+                "title": "Coat of arms of Belarus — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belarus"
+              }
+            ]
+          }
         },
         {
           "id": "by-russian-empire",
@@ -4640,7 +4809,20 @@
           "design": "The cover of the Belize passport.",
           "source": "https://gicg.net/passport/bz/",
           "sha256": "8acaeddb37d99d492e35eda67a2b7cb8ad8a94f49ecce212196d9e7843623b88",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Belize adopted the shared CARICOM passport format in 2009, becoming the community's twelfth issuing member state; the cover carries the CARICOM logo and \"CARIBBEAN COMMUNITY\" heading above the national coat of arms and \"BELIZE\". The 2009 redesign also added security features — intaglio printing, a guilloché pattern on the inside pages, and a \"ghost image\" on the biodata page — alongside joining the common regional design.",
+            "sources": [
+              {
+                "title": "Belizean passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Belizean_passport"
+              },
+              {
+                "title": "Belize becomes twelfth member state to issue CARICOM passport — CARICOM",
+                "url": "https://caricom.org/belize-becomes-twelfth-member-state-to-issue-caricom-passport-belize-becomes-twelfth-member-state-to-issue-caricom-passport/"
+              }
+            ]
+          }
         },
         {
           "id": "bz-football-crest",

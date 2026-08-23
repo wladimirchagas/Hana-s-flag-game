@@ -2627,16 +2627,34 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_United_Arab_Emirates" },
     ],
   },
+  "ae-passport": {
+    description: "The UAE's ordinary passport is navy blue, bearing the national coat of arms below \"United Arab Emirates\" in Arabic and English; other colours mark other classes of holder — red for diplomats, green for special passports, cyan for service and temporary travel documents. Following Arabic script convention, the passport opens right to left rather than left to right, unlike most passports issued elsewhere.",
+    sources: [
+      { title: "Emirati passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Emirati_passport" },
+    ],
+  },
   "ae-football-crest": {
     description: "The colours are the Pan-Arab colours carried on the UAE's own national flag: red for energy and the sacrifices made for the nation, green for growth and prosperity, white for peace and purity, and black for dignity — colours shared with flags across the Arab world to express Arab sovereignty and unity.",
     sources: [
       { title: "Flag of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates" },
     ],
   },
+  "af-passport": {
+    description: "Afghan passports issued today still bear the name \"Islamic Republic of Afghanistan\" — the state's title before the Taliban's 2021 return to power and renaming of the country to the \"Islamic Emirate of Afghanistan\" — because that older republican-era document format remains the one accepted for international travel, leaving the passport's own cover a step behind the country's current official name.",
+    sources: [
+      { title: "Afghan passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Afghan_passport" },
+    ],
+  },
   "ag-arms": {
     description: "A stylised sugar mill on a blue-and-white sea sits beneath the rising sun of the flag, for the sugar trade the islands were built on. Two deer support the shield for the wildlife, and a pineapple — the fruit Antigua is famous for — crowns it, flanked by hibiscus, sugarcane and the century plant. The motto reads “Each Endeavouring, All Achieving.”",
     sources: [
       { title: "Coat of arms of Antigua and Barbuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda" },
+    ],
+  },
+  "ag-passport": {
+    description: "Above the country's own name runs \"CARIBBEAN COMMUNITY\" with the CARICOM logo, because Antigua and Barbuda issues the shared CARICOM-format passport most member states adopted — so the cover announces the regional community before the nation. The national coat of arms sits centred beneath that heading; a burgundy cover is used for diplomatic passports and green for official ones, the same tricolour-by-purpose convention CARICOM states share.",
+    sources: [
+      { title: "Antiguan and Barbudan passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Antiguan_and_Barbudan_passport" },
     ],
   },
   "ag-football-crest": {
@@ -2669,6 +2687,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Albania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Albania" },
     ],
   },
+  "al-passport": {
+    description: "Albania's biometric passport, introduced in 2009, adopted a burgundy cover specifically to align with the European Union's own passport-colour guidelines — a deliberate signal of the country's EU-candidate status, worn on the cover even though Albania is not yet a member. The document is produced to ICAO standard by the French security firm Sagem Sécurité.",
+    sources: [
+      { title: "Albanian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Albanian_passport" },
+    ],
+  },
   "al-football-crest": {
     description: "The black double-headed eagle on red repeats Albania's own national flag. It was a common heraldic symbol among Albanian noble families in the late Middle Ages, and became identified with Albanians generally after the 15th-century lord Skanderbeg adopted the same double-headed-eagle design used in Eastern Roman (Byzantine) imperial heraldry for his revolt against Ottoman rule; the eagle remained a symbol of Albanian national identity through Ottoman rule and was raised as the flag of the newly independent state in 1912. FSHF is the federation's own initials, the Federata Shqiptare e Futbollit (Albanian Football Federation).",
     sources: [
@@ -2685,6 +2709,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "At the centre of the shield stands Mount Ararat with Noah's Ark on its summit — by tradition the ark came to rest there after the flood, and Ararat is the national symbol, though it has lain outside Armenia's borders since 1921. Around it are the emblems of four historic Armenian dynasties: the Bagratuni, the Arsacid, the Artaxiad and the Rubenid of Cilicia. The two supporters carry those dynasties too: the eagle was the emblem of the Artaxiads and later the Arsacids, the lion of the Bagratunis and later the Rubenids, and both animals were chosen for power, courage, patience, wisdom and nobility. The arms date in this form from the First Republic of 1918, whose version drew the eagle and lion with their tongues out.",
     sources: [
       { title: "Coat of arms of Armenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Armenia" },
+    ],
+  },
+  "am-passport": {
+    description: "Armenia's passport was redesigned to a dark red cover from the previous blue, and — not being an EU member — carries no bloc heading, reading only \"Republic of Armenia\" in Armenian and English around the state coat of arms in gold. The redesign's interior pages carry an unusually explicit heritage brief: depictions of Hayk Nahapet, Armenia's legendary founding patriarch; petroglyphs from the Geghama Mountains and Ukhtasar; the cuneiform inscription marking Yerevan's founding; boundary stones from the ancient Artaxiad kingdom; the Mother See of Holy Etchmiadzin; and regional traditions such as lavash bread-baking and the deer of Jermuk — a passport designed as a compact tour of Armenian history and culture.",
+    sources: [
+      { title: "Armenian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Armenian_passport" },
     ],
   },
   "am-football-crest": {
@@ -2771,6 +2801,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The single-headed black eagle carries emblems of the republic's classes, added in 1919: a hammer for the workers, a sickle for the farmers, and a mural crown for the townspeople (bourgeoisie), with the red-white-red shield of Austria on its breast. The broken chains around its talons were added in 1945 to mark liberation from German annexation. The design was first adopted in 1919 and codified in the 1984 arms act.",
     sources: [
       { title: "Coat of arms of Austria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Austria" },
+    ],
+  },
+  "at-passport": {
+    description: "The burgundy cover follows the common EU format: \"EUROPÄISCHE UNION\" (European Union) above \"REPUBLIK ÖSTERREICH\", with the Austrian coat of arms — the black eagle bearing hammer, sickle and mural crown, its broken chains recalling the end of Nazi occupation — at the centre. A distinctive interior touch goes beyond the cover: each inside page carries the coat of arms of a different Austrian federal state in the background, giving the passport's pages their own small tour of the country's regions.",
+    sources: [
+      { title: "Austrian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Austrian_passport" },
     ],
   },
   "at-football-crest": {
@@ -2885,6 +2921,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Azerbaijan — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Azerbaijan" },
     ],
   },
+  "az-passport": {
+    description: "Azerbaijan issues its passport in three colours by purpose — dark green for ordinary holders, dark blue for officials, and dark red for diplomats — each bearing the state coat of arms in relief beneath \"Republic of Azerbaijan\" in Azerbaijani and English. Not being an EU member, the cover carries no supranational heading, leaving the tricolour-by-rank scheme as the passport's main visual signal of the holder's status.",
+    sources: [
+      { title: "Azerbaijani passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Azerbaijani_passport" },
+    ],
+  },
   "az-football-crest": {
     description: "The flame is a reference to Azerbaijan's nickname “the Land of Fire”: natural gas seeping from the ground around the Absheron Peninsula has burned as naturally-occurring eternal flames for millennia — the Yanar Dag hillside and the Ateshgah fire temple among them — and made the region a historic centre of Zoroastrian fire-worship. The flame is coloured in the blue, red and green of Azerbaijan's own national flag, and the white crescent and eight-pointed star set into it are the flag's own emblem; a popular, disputed reading ties the star's eight points to the eight letters of “Azerbaijan” in Arabic script, or to eight historical Turkic peoples. AFFA is the federation's own initials, the Azerbaijan Football Federations Association.",
     sources: [
@@ -2908,6 +2950,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield names the island literally: the bearded fig tree is the Ficus citrifolia after which the Portuguese called the island Os Barbados, \"the bearded ones\", for the aerial roots that hang from it like beards; the two red flowers flanking it are the Pride of Barbados, the national flower. The supporters are a dolphinfish, for the fishing industry, and a pelican, for the small Pelican Island off Bridgetown. The crest is an arm holding two crossed sugar canes — the crop the colonial economy was built on — and the motto beneath reads \"Pride and Industry\". Granted by royal warrant in 1966, the year of independence.",
     sources: [
       { title: "Coat of arms of Barbados — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barbados" },
+    ],
+  },
+  "bb-passport": {
+    description: "The cover carries the CARICOM logo and \"CARIBBEAN COMMUNITY\" heading above \"BARBADOS\", the shared format most CARICOM member states issue — so, like Antigua and Barbuda's, it announces the regional community before the island nation. The Barbados coat of arms is emblazoned centrally beneath the heading, with a separate burgundy cover reading \"DIPLOMATIC PASSPORT\" for diplomatic holders.",
+    sources: [
+      { title: "Barbadian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Barbadian_passport" },
     ],
   },
   "bb-football-crest": {
@@ -2968,6 +3016,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National Emblem of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
     ],
   },
+  "bd-passport": {
+    description: "Bangladesh's passport cover is dark green, bearing the Seal of the Government of Bangladesh in gold beneath \"Passport\" and above \"People's Republic of Bangladesh\", printed in Bengali and English together with the international e-passport symbol. The cover material is a tough textile chosen to resist tearing, chemicals, sweat and heat, while the visa pages inside depict Bangladeshi historical landmarks and tourist sites labelled in both languages — celebrating the country's heritage within a deliberately durable design.",
+    sources: [
+      { title: "Bangladeshi passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Bangladeshi_passport" },
+    ],
+  },
   "be-civil-ensign": {
     description: "The black, yellow and red are Belgium's national colours, taken from the medieval heraldic arms of the Duchy of Brabant — a yellow lion with red claws and tongue on black — with black recalling the arms of Flanders and Namur and red those of Hainaut, Limburg and Luxembourg.",
     sources: [
@@ -2993,6 +3047,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Belgium — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belgium" },
     ],
   },
+  "be-passport": {
+    description: "The burgundy cover carries the common EU heading in all four national/EU languages (Dutch, French, German, English) above the Belgian lesser coat of arms and the kingdom's name, itself printed in the same four languages — with the order of Dutch, French and German varying depending on the linguistic community of the individual holder, a small but deliberate reflection of Belgium's language politics. A 2022 redesign carried this local character further, adding illustrations from Belgian comic-strip heritage — Tintin, the Smurfs, Lucky Luke — to the passport's interior visa pages.",
+    sources: [
+      { title: "Belgian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Belgian_passport" },
+    ],
+  },
   "be-football-crest": {
     description: "The black-yellow-red bands are Belgium's own national colours, and the crown marks the federation's royal patronage — the source of “Royal” in its name. “1895” is the year the Royal Belgian Football Association was founded. An earlier badge carried the Belgian lion from the national coat of arms and briefly gave the team a mascot, Diabolix — blending “diable” (devil) with the heraldic lion — before the popular nickname the Red Devils (coined in 1906, after a Dutch journalist had called three Belgian players “devils” the previous year) took over; the lion itself was dropped from the crest in 1981.",
     sources: [
@@ -3004,6 +3064,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield carries the red, green and gold star of the national flag. Two white stallions — the horse being an old emblem of the Mossi kingdoms — support it, standing over ears of millet, the staple grain. The upper ribbon gives the country's name, Burkina Faso (“land of upright people”), and the lower one the motto Unité, Progrès, Justice — “Unity, Progress, Justice.”",
     sources: [
       { title: "Coat of arms of Burkina Faso — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burkina_Faso" },
+    ],
+  },
+  "bf-passport": {
+    description: "Burkina Faso's passport has changed its regional heading twice in quick succession, tracking the country's own shifting alliances: it formerly carried the ECOWAS (Economic Community of West African States) name and logo as a member state, then dropped that heading after withdrawing from ECOWAS alongside Mali and Niger, and a February 2025 redesign added the logo and name of the new bloc those three states formed instead — the Alliance of Sahel States (AES).",
+    sources: [
+      { title: "Burkinabe passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Burkinabe_passport" },
     ],
   },
   "bf-football-crest": {
@@ -3049,6 +3115,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Burundi — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burundi" },
     ],
   },
+  "bi-passport": {
+    description: "Burundi's passport cover is blue, stamped in gold leaf with the state coat of arms, and printed with \"East African Community\" beneath the country's name — a regional heading rather than the ECOWAS/CEMAC bloc names used further west, since Burundi belongs to the East African Community instead. The interior's first page repeats the country's name in Kirundi, French and English alongside an outline map of Burundi.",
+    sources: [
+      { title: "Burundian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Burundian_passport" },
+    ],
+  },
   "bi-football-crest": {
     description: "The red, white and green repeat Burundi's own national flag: white for peace, green for hope in the country's future development, and red for the suffering endured in its struggle for freedom.",
     sources: [
@@ -3059,6 +3131,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield is quartered: a Somba tower-house for the country's own history; the Star of Benin, its highest decoration; a sailing ship for the arrival of the Europeans; and a palm tree. Two leopards — the national animal — support it, and beneath, two cornucopias pour out ears of corn. The ribbon reads Fraternité, Justice, Travail — “Fraternity, Justice, Work.”",
     sources: [
       { title: "Coat of arms of Benin — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Benin" },
+    ],
+  },
+  "bj-passport": {
+    description: "Benin's passport cover is dark green, with \"Republic of Benin\" above the national coat of arms and \"Passport\"/\"Passeport\" below. As an ECOWAS member state, Benin issues its passport to the bloc's common format, whose covers carry the Economic Community of West African States' own name and CEDEAO heading alongside the member state's — colour-coded green for ordinary passports, blue for official ones and burgundy for diplomatic ones across the whole community.",
+    sources: [
+      { title: "Beninese passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Beninese_passport" },
+      { title: "ECOWAS passport — Wikipedia", url: "https://en.wikipedia.org/wiki/ECOWAS_passport" },
     ],
   },
   "bj-football-crest": {
@@ -3096,6 +3175,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "bn-emblem": {
     description: "The emblem, adopted in 1959 and carried on the national flag, has five parts. The small swallow-tailed flag and the royal parasol at the top are the regalia of the sultanate's monarchy. The upraised wings behind them stand for the protection of justice, tranquillity, prosperity and peace. The crescent beneath is Islam, the state religion, and it is inscribed in Arabic with the national motto, \"Always in service with God's guidance\"; the banner below carries the country's name, \"Brunei, the Abode of Peace\". The two upturned hands at the sides are the government's pledge to preserve and promote the welfare of the people.",
     sources: [
+      { title: "Emblem of Brunei — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Brunei" },
+    ],
+  },
+  "bn-passport": {
+    description: "Brunei's passport cover is red, bearing the national emblem below the country's name. The emblem, adopted in 1959 and rendered entirely in red, combines a crescent (for Islam, the state religion) inscribed with the national motto, a royal parasol for the monarchy, wings representing the protection of justice, tranquility, prosperity and peace, two upraised hands standing for the government's duty to preserve its people's welfare, and a banner reading \"Brunei Darussalam\" — \"Abode of Peace\".",
+    sources: [
+      { title: "Bruneian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Bruneian_passport" },
       { title: "Emblem of Brunei — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Brunei" },
     ],
   },
@@ -3230,6 +3316,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Bahamas — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas" },
     ],
   },
+  "bs-passport": {
+    description: "Unlike several of its CARICOM neighbours, the Bahamas does not use the shared CARICOM cover design: its navy-blue passport carries no CARICOM branding, reading instead \"COMMONWEALTH OF THE BAHAMAS\" above the national coat of arms, asserting the country's own Commonwealth-realm identity rather than the regional community's.",
+    sources: [
+      { title: "Bahamian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Bahamian_passport" },
+    ],
+  },
   "bs-football-crest": {
     description: "The yellow flowers are the Yellow Elder (Tecoma stans), the Bahamas' national flower, chosen for being native to the islands and blooming year-round, and taken to symbolise the country's natural beauty and resilience.",
     sources: [
@@ -3239,6 +3331,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "bt-arms": {
     description: "The emblem keeps the symbols of the flag in a circle. Two crossed vajras (dorji, thunderbolts) rest on a lotus for purity, beneath a jewel for the sovereign, and two dragons — male and female — encircle the whole: the Druk, the thunder dragon that gives Bhutan its name, Druk Yul, “Land of the Thunder Dragon.” The crossed vajras stand for the harmony of secular and religious power.",
     sources: [
+      { title: "Emblem of Bhutan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Bhutan" },
+    ],
+  },
+  "bt-passport": {
+    description: "Bhutan's ordinary passport cover is blue (official passports are green, diplomatic ones red), bearing the national emblem: a circular design centred on a double diamond-thunderbolt (dorje), symbolising the harmony of secular and religious authority, resting on a lotus for purity beneath a jewel representing sovereign power, the whole framed by two dragons — a reference to the country's own name, Druk Yul, \"Land of the Thunder Dragon\" — proclaiming the state's authority with their voice, in the Mahayana Buddhist idiom the emblem draws on throughout.",
+    sources: [
+      { title: "Bhutanese passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Bhutanese_passport" },
       { title: "Emblem of Bhutan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Bhutan" },
     ],
   },
@@ -3297,6 +3396,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Belarus — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Belarus" },
     ],
   },
+  "by-passport": {
+    description: "Belarus's blue passport bears the state coat of arms: an orange silhouette of the country over golden sun rays and a globe, wheat and clover on one side, flax flowers on the other, a red-and-green ribbon (the national flag's own colours) at the base, and a red star at the top. Wikipedia notes the emblem carries no official statement of symbolism — it is a post-Soviet reworking of the Byelorussian SSR's own arms, keeping the wheat, globe and star while removing the hammer and sickle, repurposed rather than freshly designed for independence.",
+    sources: [
+      { title: "Belarusian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Belarusian_passport" },
+      { title: "Coat of arms of Belarus — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belarus" },
+    ],
+  },
   "by-football-crest": {
     description: "The European bison (zubr) is Belarus's own unofficial national symbol, closely tied to the wisents of the Białowieża Forest that straddles its border with Poland, and was chosen for the federation's crest as an image that steadily associates with Belarus and its national character. АБФФ is the federation's own initials in Cyrillic, the Association “Belarusian Football Federation”.",
     sources: [
@@ -3307,6 +3413,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Behind the shield rises a mahogany tree, the timber on which the colonial economy was built. The shield shows a woodcutter's tools — an axe and a paddle, a saw and a squaring axe — above a ship under sail. Two woodcutters, one of African and one of mixed descent, support it, and the motto reads Sub Umbra Floreo — “Under the shade I flourish,” the shade of the mahogany.",
     sources: [
       { title: "Coat of arms of Belize — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize" },
+    ],
+  },
+  "bz-passport": {
+    description: "Belize adopted the shared CARICOM passport format in 2009, becoming the community's twelfth issuing member state; the cover carries the CARICOM logo and \"CARIBBEAN COMMUNITY\" heading above the national coat of arms and \"BELIZE\". The 2009 redesign also added security features — intaglio printing, a guilloché pattern on the inside pages, and a \"ghost image\" on the biodata page — alongside joining the common regional design.",
+    sources: [
+      { title: "Belizean passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Belizean_passport" },
+      { title: "Belize becomes twelfth member state to issue CARICOM passport — CARICOM", url: "https://caricom.org/belize-becomes-twelfth-member-state-to-issue-caricom-passport-belize-becomes-twelfth-member-state-to-issue-caricom-passport/" },
     ],
   },
   "bz-football-crest": {
