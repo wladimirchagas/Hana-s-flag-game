@@ -4125,6 +4125,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Algeria" },
     ],
   },
+  "dz-passport": {
+    description: "Algeria's passport bears the national emblem: a star and crescent for Islam, echoing the national flag, above the Hand of Fatima — a traditional North African protective symbol associated with the five pillars of Islam — grasping an olive branch for peace, set before the Atlas Mountains with a rising sun for a new era. An electoral urn crowned with corn cobs and oak leaves represents democracy and agriculture on one side; an olive branch, palm and industrial rooftops, chimneys and oil derricks represent Algeria's agricultural and industrial development on the other.",
+    sources: [
+      { title: "Emblem of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Algeria" },
+    ],
+  },
   "dz-football-crest": {
     description: "The crescent and star repeat Algeria's own national flag, and the two gold stars, read together as “1990”, mark the year Algeria won its first Africa Cup of Nations title, hosted and won on home soil in Algiers.",
     sources: [
@@ -7796,6 +7802,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Singapore — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore" },
     ],
   },
+  "sg-passport": {
+    description: "Singapore's passport is bound in red, a colour chosen for luck and prosperity, and bears the national coat of arms: a lion and a tiger supporting a shield with a white crescent moon and five stars on red, echoing the national flag, below a banner reading \"MAJULAH SINGAPURA\" (\"Onward Singapore\"). The lion represents Singapore itself, recalling the \"Singapura\"/Lion City founding legend, while the tiger recalls the country's historical ties to Malaya.",
+    sources: [
+      { title: "Coat of arms of Singapore — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore" },
+    ],
+  },
   "sg-football-crest": {
     description: "The lion recalls the legend of Prince Sang Nila Utama, who is said to have sighted a lion on the island and named it Singapura — \"Lion City\" in Sanskrit/Malay — making the lion Singapore's best-known national symbol.",
     sources: [
@@ -8790,6 +8802,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is defined by the constitution as a circle bearing a five-pointed gold star on red, framed by ears of rice above half a cogwheel and the name of the state. The two framing charges are the two halves of the workforce the socialist republic is founded on: the rice stands for agriculture and the cogwheel for industry. The designer Bùi Trang Chước first drew an anvil at the foot of the wreath; Hồ Chí Minh asked for it to be replaced because an anvil is an individual craftsman's tool, and modern industry needed a modern symbol — so the cogwheel took its place. The star and the red field are those of the national flag.",
     sources: [
       { title: "Emblem of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Vietnam" },
+    ],
+  },
+  "vn-passport": {
+    description: "Vietnam's passport bears the national emblem: a five-pointed gold star on a red field, echoing the national flag and standing for the leadership of the Communist Party of Vietnam, framed by sheaves of rice representing the peasantry and set above a cogwheel for the industrial working class — together an emblem of the worker-peasant alliance under Party leadership that underlies the country's founding ideology.",
+    sources: [
+      { title: "Vietnam's National Emblem - History and Meaning — Vietnam Online", url: "https://www.vietnamonline.com/culture/national-emblem.html" },
     ],
   },
   "vn-football-crest": {
