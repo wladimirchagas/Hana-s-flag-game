@@ -4831,6 +4831,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Jersey — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey" },
     ],
   },
+  "jm-defence-force": {
+    description: "The flag of the Jamaica Defence Force, flown since 1962, is dark blue bearing the force's badge — a Jamaican crocodile mounted on the Royal Helmet of the British monarchy, with mantling — above the words 'Defence Force'. The crocodile is drawn from the crest of Jamaica's own national coat of arms, tying the modern military to the same heraldry granted to the island in 1661.",
+    sources: [
+      { title: "Flags of the World — Jamaica: Military Flags", url: "https://www.crwflags.com/fotw/flags/jm%5E.html" },
+      { title: "Wikipedia — Coat of arms of Jamaica", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica" },
+    ],
+  },
   "jm-naval-ensign": {
     description: "Jamaica's naval ensign, adopted on 6 August 1962 — the day the country gained independence from the United Kingdom — follows the White Ensign pattern of the Royal Navy, with a St George's Cross and the Jamaican national flag in the canton in place of the Union Flag. In practice the ensign is flown mainly by the Jamaica Defence Force Coast Guard, since Jamaica maintains no separate navy, and its adoption at the moment of independence shows how newly sovereign Commonwealth states often kept British naval flag conventions even as they raised their own colours.",
     sources: [
