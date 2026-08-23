@@ -6824,6 +6824,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Papua_New_Guinea" },
     ],
   },
+  "pg-passport": {
+    description: "Papua New Guinea's passport bears the national emblem, designed by Australian artist Hal Holman: a raggiana bird-of-paradise in display, perched on a kundu drum with a ceremonial spear behind it. The bird — endemic to New Guinea and a longstanding emblem of the island's tribal cultures — represents the nation's emergence, while the drum and spear stand for Papua New Guinea's indigenous traditions.",
+    sources: [
+      { title: "Emblem of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Papua_New_Guinea" },
+    ],
+  },
   "pg-football-crest": {
     description: "The bird of paradise and the stars are taken from Papua New Guinea's national flag: the bird is a symbol of the country's tribal culture, shown in a soaring pose representing the nation's emergence, and the stars form the Southern Cross, marking the country's place in the southern hemisphere.",
     sources: [
@@ -7900,6 +7906,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Tonga — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tonga" },
     ],
   },
+  "to-passport": {
+    description: "Tonga's passport bears the national coat of arms, designed in 1875 alongside the country's constitution: three white stars for the main island groups of Tongatapu, Vava'u and Ha'apai; a gold royal crown for the ruling monarchy; a dove with an olive branch for peace; and three crossed swords commemorating the three historic dynasties of Tongan kings. At the centre a red couped cross on a white star represents the blood of Christ, beneath the motto \"Ko e 'Otua mo Tonga ko hoku Tofi'a\" — \"God and Tonga are my inheritance\".",
+    sources: [
+      { title: "Coat of arms of Tonga — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tonga" },
+    ],
+  },
   "tr-president": {
     description: "The sixteen-pointed gold sun was added to the presidential flag in 1985; each of its sixteen points is popularly associated with one of the \"16 Great Turkic Empires\" said to precede the modern republic, though historians note the historicity of this list, introduced only in 1969, is not established.",
     sources: [
@@ -8400,8 +8412,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Vanuatu — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vanuatu" },
     ],
   },
+  "vu-passport": {
+    description: "Vanuatu's passport bears the national coat of arms: a ni-Vanuatu warrior holding a spear before a mountain, standing within a circular boar's tusk — a traditional symbol of wealth, status and ceremonial importance in ni-Vanuatu culture, once used as a form of currency — wound with two crossed namele fern fronds, which represent traditional law, peace and stability. Below runs the national motto in Bislama, \"Long God Yumi Stanap\" — \"With God we stand\".",
+    sources: [
+      { title: "Coat of arms of Vanuatu — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vanuatu" },
+    ],
+  },
   "ws-arms": {
     description: "Adopted at independence in 1962, the shield shows the five stars of the Southern Cross — the same constellation the national flag carries — above a green coconut palm rising from the Pacific, the ocean filling the lower field. A gold Christian cross surmounts the shield, and a ring of olive leaves echoes the United Nations emblem, marking Samoa's path from UN trust territory to statehood. Around it runs the motto Faʻavae i le Atua Sāmoa — “Samoa is founded on God.”",
+    sources: [
+      { title: "Coat of arms of Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Samoa" },
+    ],
+  },
+  "ws-passport": {
+    description: "Samoa's passport bears the national seal: a silver shield, its lower two-thirds blue and studded with five silver stars representing the Southern Cross constellation, above a green sea and coconut palm topped with a gold cross. The motto below reads \"Fa'avae i le Atua Samoa\" — \"Samoa is founded on God\".",
     sources: [
       { title: "Coat of arms of Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Samoa" },
     ],

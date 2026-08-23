@@ -23957,7 +23957,16 @@
           "design": "The cover of the Papua New Guinea passport.",
           "source": "https://gicg.net/passport/pg/",
           "sha256": "98f9727356bc5209e4551945ca02937284e5ecf2c8147df406fa5734192ffc98",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Papua New Guinea's passport bears the national emblem, designed by Australian artist Hal Holman: a raggiana bird-of-paradise in display, perched on a kundu drum with a ceremonial spear behind it. The bird — endemic to New Guinea and a longstanding emblem of the island's tribal cultures — represents the nation's emergence, while the drum and spear stand for Papua New Guinea's indigenous traditions.",
+            "sources": [
+              {
+                "title": "Emblem of Papua New Guinea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Papua_New_Guinea"
+              }
+            ]
+          }
         },
         {
           "id": "pg-football-crest",
@@ -30016,7 +30025,16 @@
           "design": "The cover of the Tonga passport.",
           "source": "https://gicg.net/passport/to/",
           "sha256": "0b6d8c525dfdf3fe986fdfe434662be647290e3eccde204e352195d015f4bf42",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Tonga's passport bears the national coat of arms, designed in 1875 alongside the country's constitution: three white stars for the main island groups of Tongatapu, Vava'u and Ha'apai; a gold royal crown for the ruling monarchy; a dove with an olive branch for peace; and three crossed swords commemorating the three historic dynasties of Tongan kings. At the centre a red couped cross on a white star represents the blood of Christ, beneath the motto \"Ko e 'Otua mo Tonga ko hoku Tofi'a\" — \"God and Tonga are my inheritance\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Tonga — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tonga"
+              }
+            ]
+          }
         },
         {
           "id": "to-uk",
@@ -33272,7 +33290,16 @@
           "design": "The cover of the Vanuatu passport.",
           "source": "https://gicg.net/passport/vu/",
           "sha256": "f4f316625208b6399bcfa5930b83ddf6a22e1bcebc98d6d43decfee97b1b7d46",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Vanuatu's passport bears the national coat of arms: a ni-Vanuatu warrior holding a spear before a mountain, standing within a circular boar's tusk — a traditional symbol of wealth, status and ceremonial importance in ni-Vanuatu culture, once used as a form of currency — wound with two crossed namele fern fronds, which represent traditional law, peace and stability. Below runs the national motto in Bislama, \"Long God Yumi Stanap\" — \"With God we stand\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Vanuatu — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vanuatu"
+              }
+            ]
+          }
         },
         {
           "id": "vu-football-crest",
@@ -33366,7 +33393,16 @@
           "design": "The cover of the Samoa passport.",
           "source": "https://gicg.net/passport/ws/",
           "sha256": "5373ed09212fa50a02253e1b1d65888bece6313f7744f1044c68b1b76f0f34e0",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Samoa's passport bears the national seal: a silver shield, its lower two-thirds blue and studded with five silver stars representing the Southern Cross constellation, above a green sea and coconut palm topped with a gold cross. The motto below reads \"Fa'avae i le Atua Samoa\" — \"Samoa is founded on God\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Samoa — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Samoa"
+              }
+            ]
+          }
         },
         {
           "id": "ws-football-crest",
