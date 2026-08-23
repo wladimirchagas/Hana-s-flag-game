@@ -2476,7 +2476,16 @@
           "design": "The green field with a red disc bearing a golden map of the country, flown by the provisional government during the liberation war.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
           "sha256": "fe14e955212ac1716111f25ede34978b55f8f39597b11de2707b84a3d779ece4",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Mukti Bahini's provisional flag, first raised by student activists at Dhaka University in March 1971, set a golden map of the country within a red disc on green — the red for the sunrise over Bengal and for the blood of those killed in the fight against Pakistani rule, the green for the land's fertility and its people's youthful spirit. The map was dropped when Bangladesh formally adopted its flag in January 1972, leaving the plain red disc on green flown today.",
+            "sources": [
+              {
+                "title": "Flag of Bangladesh — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Bangladesh"
+              }
+            ]
+          }
         },
         {
           "id": "bd-pakistan",
@@ -3872,7 +3881,16 @@
           "design": "The second design: yellow over red over green, before the red and yellow were reversed in 1851.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
           "sha256": "cceaa4816203e7a0755cf480b1c95a4a81d31e56a6262d5fb305c0984a4fdd5f",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Adopted on 25 July 1826, this second design placed yellow above red above green, with the national seal still at the centre — the arrangement used until the red and yellow bands were swapped in 1851 to reach today's order. The three colours, long used in Aymara and Quechua textiles, came to stand for the army's valour (red), the country's mineral wealth (yellow) and the fertility of its land (green).",
+            "sources": [
+              {
+                "title": "The Surprising Symbolism of Bolivia's National Flag — Spanish Academy",
+                "url": "https://www.spanish.academy/blog/the-surprising-symbolism-of-bolivias-national-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "bo-1825",
@@ -3885,7 +3903,16 @@
           "design": "The first flag of the new republic: a vertical triband of green, red and green with five stars.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
           "sha256": "07851d5c6f863050cfcbed08997e0c42170325425d5b751c61eb94d3095ec492",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Bolivia's first national flag, adopted 17 August 1825 — just eleven days after independence — was a vertical triband of green, dark red and green, with five oval wreaths of laurel and olive branches on the red band, each enclosing a gilded star for one of the republic's original five departments.",
+            "sources": [
+              {
+                "title": "Bolivian flag of 1825–1826 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/bo_1825.html"
+              }
+            ]
+          }
         },
         {
           "id": "bo-wiphala",
@@ -4972,7 +4999,16 @@
           "design": "The flag readopted by the 1995 referendum, before the 2012 revision of the ornament.",
           "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
           "sha256": "33062a93e2a04de52a496ded44fdec1fa5d2ab06bbdd53b3d934084144f76c2d",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Readopted by a May 1995 referendum, this design revived the essential colours of the Byelorussian SSR flag (minus its hammer and sickle) with a decorative ornament at the hoist: two-thirds red, one-third green, and a woven pattern first embroidered in 1917 by Matrena Markevich, a peasant craftswoman from the Vitebsk region. Red recalls the victorious banners of Belarusian regiments at Grunwald in 1410 and the Red Army and partisan units that fought Nazi occupation in the Second World War; green stands for the country's hope and its forests. A 2012 revision refined the drawing of the ornament without changing its proportions or colours.",
+            "sources": [
+              {
+                "title": "Flag of Belarus — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Belarus"
+              }
+            ]
+          }
         },
         {
           "id": "by-1991",
@@ -5363,7 +5399,16 @@
           "design": "The 1957 version of the Canadian Red Ensign, which had evolved into the de facto national flag before the Maple Leaf replaced it.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "c61ea4f5437fdfaefd739404b490a5c72e1eb9be0397106fe67bbc7d5bf9ac91",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Canadian Red Ensign combined the British Red Ensign — the flag long flown by British merchant ships — with a shield representing Canada in the fly, its quarters standing for the founding nations England, Scotland, Ireland and France. Though never formally adopted as Canada's national flag, it was widely flown as one from the 1870s, becoming a popular patriotic emblem in the First World War, until the Maple Leaf flag replaced it in 1965; the Canadian arms in its shield were redrawn twice, in 1922 and 1957, as the design evolved.",
+            "sources": [
+              {
+                "title": "Canadian Red Ensign — The Canadian Encyclopedia",
+                "url": "https://www.thecanadianencyclopedia.ca/en/article/red-ensign"
+              }
+            ]
+          }
         },
         {
           "id": "ca-red-ensign-1922",
@@ -5376,7 +5421,16 @@
           "design": "The 1922 version of the Canadian Red Ensign, flown after the grant of the arms of Canada.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "12e8dc87be137bcf7fc5c5c811f6319635375fa25d8762538c34099983ffa311",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Canadian Red Ensign combined the British Red Ensign — the flag long flown by British merchant ships — with a shield representing Canada in the fly, its quarters standing for the founding nations England, Scotland, Ireland and France. Though never formally adopted as Canada's national flag, it was widely flown as one from the 1870s, becoming a popular patriotic emblem in the First World War, until the Maple Leaf flag replaced it in 1965; the Canadian arms in its shield were redrawn twice, in 1922 and 1957, as the design evolved.",
+            "sources": [
+              {
+                "title": "Canadian Red Ensign — The Canadian Encyclopedia",
+                "url": "https://www.thecanadianencyclopedia.ca/en/article/red-ensign"
+              }
+            ]
+          }
         },
         {
           "id": "ca-red-ensign-1892",
@@ -5389,7 +5443,16 @@
           "design": "The Canadian Red Ensign as authorised for use as a civil ensign by Admiralty warrant.",
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "e14e351904dc7166506f58bc6a501c521ba8a30bdb360fc9cf8b4b75e70816eb",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Canadian Red Ensign combined the British Red Ensign — the flag long flown by British merchant ships — with a shield representing Canada in the fly, its quarters standing for the founding nations England, Scotland, Ireland and France. Though never formally adopted as Canada's national flag, it was widely flown as one from the 1870s, becoming a popular patriotic emblem in the First World War, until the Maple Leaf flag replaced it in 1965; the Canadian arms in its shield were redrawn twice, in 1922 and 1957, as the design evolved.",
+            "sources": [
+              {
+                "title": "Canadian Red Ensign — The Canadian Encyclopedia",
+                "url": "https://www.thecanadianencyclopedia.ca/en/article/red-ensign"
+              }
+            ]
+          }
         },
         {
           "id": "ca-union-flag",
@@ -5681,7 +5744,16 @@
           "design": "The flag flown after the fall of Mobutu, when the country resumed the name Democratic Republic of the Congo.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
           "sha256": "ae3fd041d024988eecdd5b445edd3650e761ee992702a6441a37110f3f76238a",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "When Laurent-Désiré Kabila's rebellion overthrew Mobutu Sese Seko in May 1997, he restored the country's 1960 independence-era flag — Lumumba's blue field with the large star and six provincial stars — in place of Mobutu's Zairean flag, presenting it as a revival of the hope the country held at its birth.",
+            "sources": [
+              {
+                "title": "Flag of the Democratic Republic of the Congo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo"
+              }
+            ]
+          }
         },
         {
           "id": "cd-zaire",
@@ -5716,7 +5788,16 @@
           "design": "The flag of the Second Congolese Republic.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
           "sha256": "1cd045cf85e960ac60cad3138597feb0467b65c5e12b144255d22f4f9da39819",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A refinement of the 1963 flag adopted in 1966 under the Second Republic, keeping the yellow-bordered red diagonal stripe on blue with a yellow star in the canton; the same design continued after the country's 1964 renaming to the Democratic Republic of the Congo. Blue stood for peace, red for the nation's martyrs, and yellow for its wealth.",
+            "sources": [
+              {
+                "title": "Flag of the Democratic Republic of the Congo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo"
+              }
+            ]
+          }
         },
         {
           "id": "cd-1963",
@@ -5729,7 +5810,16 @@
           "design": "The flag of the Republic of the Congo (Léopoldville) from 1963.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
           "sha256": "0be6da23c446a60058e0f7b714f77d9e517434f4498ef2f7a5fdb1ad1fbd56d8",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted in 1963 after the number of provinces was increased, replacing the six small stars with a yellow-bordered red diagonal stripe running from the lower hoist to the upper fly, with a single larger yellow star kept in the upper hoist corner. Blue continued to represent peace, yellow the country's mineral wealth, and red the blood of those who died for independence.",
+            "sources": [
+              {
+                "title": "Flag of the Democratic Republic of the Congo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo"
+              }
+            ]
+          }
         },
         {
           "id": "cd-1960",
@@ -5742,7 +5832,16 @@
           "design": "The flag flown at independence in 1960 — blue with a large yellow star and six small stars for the provinces.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
           "sha256": "71969af7c8fc191e4048852c5bbaafae72649bc241c38861cd068f8f4ef68f65",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The flag flown at independence on 30 June 1960: blue for peace and hope, with a large yellow star in the canton and six smaller stars arranged around it representing the country's six provinces at the time. The design, inherited from the flag of the Mouvement National Congolais led by Patrice Lumumba, expressed the aspiration for unity among the provinces of the newly independent Congo.",
+            "sources": [
+              {
+                "title": "Flag of the Democratic Republic of the Congo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo"
+              }
+            ]
+          }
         },
         {
           "id": "cd-colonial",
@@ -6115,7 +6214,16 @@
           "design": "A green-red-yellow horizontal tricolour, the flag of the short-lived Helvetic Republic set up under French influence from 1798 to 1803. The white cross on red returned when the Confederation was restored.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Switzerland",
           "sha256": "30e920460b2fa00647259fc9573a6a6c2a3a0759c6449466681513da4142281b",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "Imposed under French Revolutionary influence, the Helvetic Republic's Directorate decreed on 13 February 1799 a horizontal tricolour of green, red and yellow, with the country's name lettered across the red band in German, French or Italian depending on the canton. Green — honouring Vaud, an early centre of the fight for liberty, whose own flag had already used it as a colour of freedom — replaced an originally proposed black; red carried the traditional Swiss colour forward. The design lasted only until the Republic's collapse in 1803, when Switzerland's white cross on red returned.",
+            "sources": [
+              {
+                "title": "Helvetic Republic (1798–1803) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ch-1798.html"
+              }
+            ]
+          }
         },
         {
           "id": "ch-civil-ensign",
@@ -6398,7 +6506,16 @@
           "design": "The present design as first drawn, with the star tilted.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chilean_flags",
           "sha256": "49bd911ab4deea9d72db616245d5b28fd9588256bd3e2c3f8d7d65dfe86af9fc",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Decreed by Supreme Director Bernardo O'Higgins on 18 October 1817 and first flown in 1818, La Estrella Solitaria (the Lone Star) set a white five-pointed star, tilted so its upper point leans toward the hoist, in a blue canton beside white-over-red stripes. Blue stands for the sky, white for the snow of the Andes, and red for the blood shed for independence; the star was described as a guide to progress and honour.",
+            "sources": [
+              {
+                "title": "Flag of Chile — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Chile"
+              }
+            ]
+          }
         },
         {
           "id": "cl-1817",
@@ -6411,7 +6528,16 @@
           "design": "A horizontal tricolour of blue, white and red, flown between the Patria Vieja flag and the present design.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chilean_flags",
           "sha256": "39f80a3028714803c2b1321c3459de1f0a1a2dcfffee3cbb06f9eab737fc6606",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted on 26 May 1817 after the victory at the Battle of Chacabuco opened the Patria Nueva period, this transitional flag kept the Patria Vieja's blue-white stripes but replaced yellow with red, so that red could stand for the blood shed in the struggle for independence, before it was itself replaced within the year by the present Lone Star design.",
+            "sources": [
+              {
+                "title": "Flag of Chile — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Chile"
+              }
+            ]
+          }
         },
         {
           "id": "cl-1812",
@@ -6425,7 +6551,16 @@
           "design": "A horizontal tricolour of blue, white and yellow, raised by the first autonomous government before Spanish rule was reimposed in 1814.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chilean_flags",
           "sha256": "ca30279962fed074ecd73e171b0e12fad2b2cf409cf7819ef6d02bc32d43712b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted on 30 September 1812 under the Patria Vieja (Old Fatherland) government led by José Miguel Carrera, this horizontal tricolour of blue over white over yellow represented the sky, the snow of the Andes and Chile's golden wheat fields, before Spanish forces reimposed royal rule in 1814.",
+            "sources": [
+              {
+                "title": "Flag of Chile — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Chile"
+              }
+            ]
+          }
         },
         {
           "id": "cl-spain",
