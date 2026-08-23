@@ -2960,6 +2960,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Belgium — Britannica", url: "https://www.britannica.com/topic/flag-of-Belgium" },
     ],
   },
+  "be-naval-jack": {
+    description: "The naval jack of Belgium is a square rendition of the national tricolour — vertical bands of black, yellow and red, coloured after the arms of the medieval Duchy of Brabant and adopted as Belgium's flag in 1831 — with no additional charge. Squaring off the tricolour, formalised by a 1950 order of the Prince Regent, is a functional device: flown at the bow, it identifies a commissioned warship, distinguishing it from the rectangular tricolour flown by merchant vessels.",
+    sources: [
+      { title: "Flags of the World — Belgium: Naval ensign and jack", url: "https://www.crwflags.com/fotw/flags/be~nav.html" },
+      { title: "Wikipedia — Flag of Belgium", url: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
+    ],
+  },
   "be-arms": {
     description: "The golden lion on black — the Leo Belgicus, whose lineage runs to the Duchy of Brabant that led the 1789 Brabant Revolution — stands for Belgium itself, here armed and langued red beneath the royal crown. Two lion supporters, the sceptre and hand of justice, and the collar of the Order of Leopold complete the greater arms, adopted by royal decree in 1837 after independence in 1830. The trilingual motto reads L'union fait la force / Eendracht maakt macht — “Unity makes strength.”",
     sources: [
@@ -4626,6 +4633,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Wikipedia — Israel Defense Forces Emblem", url: "https://en.wikipedia.org/wiki/Israel_Defense_Forces_Emblem" },
       { title: "Flags of the World — Ground Forces (Land Arm) (Israel)", url: "https://www.crwflags.com/fotw/flags/il%5Earmy.html" },
+    ],
+  },
+  "il-army-1983": {
+    description: "The Israeli Ground Forces' flag flown from 1983 to 2016 carried five diagonal stripes — red, white, green, black and red — each colour standing for one of the arm's branches: black for armour, green for infantry, red for artillery, and orange (shown here as the outer red-orange bands) for engineering. It carried the same sword-and-olive-branch emblem used across the Israel Defense Forces, shown alone without the wings or anchor that mark the air force's and navy's own flags, before the design was updated in 2016.",
+    sources: [
+      { title: "Flags of the World — Ground Forces (Land Arm) (Israel)", url: "https://www.crwflags.com/fotw/flags/il%5Earmy.html" },
+      { title: "Wikipedia — List of flags of Israel", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Israel" },
     ],
   },
   "il-civil-ensign": {
