@@ -8325,7 +8325,16 @@
           "design": "A white-over-red horizontal bicolour, the historic flag of the Kingdom of Bohemia and the Czech lands. It served as Czechoslovakia's first national flag from 1918 until the blue hoist triangle — used to distinguish it from Poland's flag — was added in 1920.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Czech_Republic",
           "sha256": "79db197a4342eb8bad6af1d21e051f7287c5e79930815197eabc285ec5ec1e03",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "A plain white-over-red bicolour, the historic colours drawn from the arms of the medieval Kings of Bohemia (a silver lion on a red field) and carried by the 19th-century Czech national movement, which the new state of Czechoslovakia flew as its flag from independence in 1918. Because the design was near-identical to Poland's own white-over-red flag, a 1920 competition — won by the Interior Ministry archivist Jaroslav Kursa — added a blue triangle at the hoist to tell the two apart.",
+            "sources": [
+              {
+                "title": "Flag of Bohemia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Bohemia"
+              }
+            ]
+          }
         },
         {
           "id": "cz-president",
@@ -10288,7 +10297,16 @@
           "design": "The transition-era flag: the eagle of Saint John retained, with the wings raised.",
           "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
           "sha256": "850799139926ec9617a31464f6ef0cb9408dd2f4b4991f3e97ec42e9a88d0a1b",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A transitional redrawing, kept for four years after Francisco Franco's 1975 death as Spain moved toward democracy: the same red-yellow-red field and Eagle of Saint John as the Francoist flag, but with the eagle's wings raised rather than lowered. The eagle was dropped entirely in 1981, leaving the plain red-yellow-red tricolour flown today.",
+            "sources": [
+              {
+                "title": "Flag of Spain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+              }
+            ]
+          }
         },
         {
           "id": "es-1945",
@@ -10298,7 +10316,16 @@
           "to": 1977,
           "reuse": "historical-flags/spain-1945.svg",
           "design": "Francoist Spain — red-yellow-red charged with the Eagle of Saint John in its 1945 arrangement.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
+          "meaning": {
+            "description": "Restored by General Cabanellas's decree of 29 August 1936 during the Spanish Civil War, reviving the red-yellow-red of the pre-Republican flag, and charged from 1945 with the Eagle of Saint John — an emblem of the Catholic Monarchs, Ferdinand and Isabella — bearing the national arms on its breast, in the arrangement used through most of the Francoist dictatorship until the eagle's wings were redrawn raised in 1977.",
+            "sources": [
+              {
+                "title": "Flag of Spain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+              }
+            ]
+          }
         },
         {
           "id": "es-1938",
@@ -10358,7 +10385,16 @@
           "to": 1931,
           "reuse": "historical-flags/spain-1785.png",
           "design": "The red-yellow-red ensign chosen by Charles III in 1785 so Spanish ships could be told apart at sea, with the royal arms.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
+          "meaning": {
+            "description": "Chosen personally by Charles III from twelve designs submitted by Antonio Valdés y Bazán, this naval ensign of red-yellow-red — the yellow band twice as wide as each red one — was adopted in 1785 because red and yellow could be told apart at sea more easily than Spain's older, harder-to-distinguish white ensign. It remained a naval flag for decades before Queen Isabel II made it the flag for land use too, in 1843, and its colours (without the royal arms) remain Spain's flag today.",
+            "sources": [
+              {
+                "title": "Flag of Spain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+              }
+            ]
+          }
         },
         {
           "id": "es-burgundy",
@@ -11266,7 +11302,16 @@
           "to": 1792,
           "reuse": "historical-flags/france-royal-banner.svg",
           "design": "Azure with three gold fleurs-de-lis — \"France moderne\", after Charles V reduced the strewn field to three flowers in 1376.",
-          "source": "https://en.wikipedia.org/wiki/List_of_French_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_French_flags",
+          "meaning": {
+            "description": "The banner of the Kingdom of France from 1376 until the Revolution: a blue field bearing three gold fleurs-de-lis, known heraldically as 'France moderne'. Charles V ordered the reduction from the earlier 'France ancienne' — a field strewn with countless fleurs-de-lis — to just three, said to honour the Holy Trinity, a design that then remained the kingdom's arms and banner for over four centuries.",
+            "sources": [
+              {
+                "title": "Kingdom of France (843?–1792) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/fr_mon.html"
+              }
+            ]
+          }
         },
         {
           "id": "fr-naval-ensign",
@@ -12068,7 +12113,16 @@
           "design": "The wine-red flag with a black-and-white canton, flown from the restoration of independence until the Rose Revolution brought back the five-cross flag in 2004.",
           "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
           "sha256": "8159ff4b28f79d009e3ee042498961e3be8b2874227bf0d4fc19911ef1ba5cbc",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Georgia readopted its 1918 republican flag — wine-red with a black-and-white striped canton — on 14 November 1990 as it moved to restore independence from the Soviet Union, and kept it as the national flag until the 2003 Rose Revolution, when the medieval five-cross flag was adopted in 2004. The colours carried the same meaning as in 1918: wine-red for the nation's past and its blood, black for the tragedy of foreign domination, and white for hope.",
+            "sources": [
+              {
+                "title": "Flag of Georgia (country) — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Georgia-national-flag"
+              }
+            ]
+          }
         },
         {
           "id": "ge-1918",
@@ -12082,7 +12136,16 @@
           "design": "The dark-red flag with a black-and-white stripe of the first Georgian republic, ended by the Soviet invasion of 1921.",
           "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
           "sha256": "aec9c6ecbd24ae53400b39f7c7f432f1ae72782ab762d272f99dca43480a2a40",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted by law on 10 September 1918 by the newly independent Democratic Republic of Georgia, after a competition won by the sculptor Iakob Nikoladze, this flag set a black-and-white striped canton on a dark wine-red field. Wine-red recalled Georgia's past and the blood shed defending it; black stood for the years of tragedy and foreign rule the country had endured, and white for hope and the nation's future. Soviet Russia's 1921 invasion ended the republic and the flag with it.",
+            "sources": [
+              {
+                "title": "Flag of Georgia: history and symbols — GoToFlags",
+                "url": "https://gotoflags.com/flag-of-georgia/"
+              }
+            ]
+          }
         },
         {
           "id": "ge-ssr",
@@ -12328,7 +12391,16 @@
           "design": "The tricolour with a white middle band, flown under the one-party state before the 1957 design was restored.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
           "sha256": "b908bdbc30bd92466b756d26aa8d7f23dafd25ab076cb14383dfca2085234d21",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted 1 January 1964 under Kwame Nkrumah's one-party state, this variant of Ghana's flag replaced the gold band with white — echoing the colours of the ruling Convention People's Party — while keeping the black Lodestar in the centre. It was abandoned within the same month Nkrumah was overthrown in the February 1966 coup, when the original 1957 gold-centred design, already closely tied in Ghanaians' minds to independence, was restored.",
+            "sources": [
+              {
+                "title": "Flag of Ghana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Ghana"
+              }
+            ]
+          }
         },
         {
           "id": "gh-uas",

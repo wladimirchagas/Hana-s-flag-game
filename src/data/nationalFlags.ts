@@ -4478,6 +4478,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
     ],
   },
+  "cz-bohemia": {
+    description: "A plain white-over-red bicolour, the historic colours drawn from the arms of the medieval Kings of Bohemia (a silver lion on a red field) and carried by the 19th-century Czech national movement, which the new state of Czechoslovakia flew as its flag from independence in 1918. Because the design was near-identical to Poland's own white-over-red flag, a 1920 competition — won by the Interior Ministry archivist Jaroslav Kursa — added a blue triangle at the hoist to tell the two apart.",
+    sources: [
+      { title: "Flag of Bohemia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bohemia" },
+    ],
+  },
   "cz-armed-forces": {
     description: "The war flag bears the quartered arms of the Czech Republic — Bohemia's silver double-tailed crowned lion on red, Moravia's silver-and-red chequered eagle on blue, and Silesia's black eagle bearing a silver crescent on its breast, on gold — within a border of white, red and blue \"flames\"; the blue was added to Czechoslovakia's original white-over-red Bohemian flag in 1920, both for Moravia's own arms and as the third Pan-Slavic colour, so the flag would no longer be almost identical to Poland's.",
     sources: [
@@ -4934,6 +4940,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
     ],
   },
+  "es-1977": {
+    description: "A transitional redrawing, kept for four years after Francisco Franco's 1975 death as Spain moved toward democracy: the same red-yellow-red field and Eagle of Saint John as the Francoist flag, but with the eagle's wings raised rather than lowered. The eagle was dropped entirely in 1981, leaving the plain red-yellow-red tricolour flown today.",
+    sources: [
+      { title: "Flag of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
+    ],
+  },
+  "es-1945": {
+    description: "Restored by General Cabanellas's decree of 29 August 1936 during the Spanish Civil War, reviving the red-yellow-red of the pre-Republican flag, and charged from 1945 with the Eagle of Saint John — an emblem of the Catholic Monarchs, Ferdinand and Isabella — bearing the national arms on its breast, in the arrangement used through most of the Francoist dictatorship until the eagle's wings were redrawn raised in 1977.",
+    sources: [
+      { title: "Flag of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
+    ],
+  },
   "es-1938": {
     description: "The first Francoist coat of arms placed the crowned royal shield before a black eagle spreading its wings — the Eagle of Saint John, a heraldic device tied to the Catholic Monarchs Ferdinand and Isabella that Franco's regime revived to claim their religious and imperial legacy. It bore the Pillars of Hercules, the yoke and arrows of the Catholic Monarchs, and a scroll reading \"Una, Grande y Libre\" (\"One, Great and Free\"), summing up the Nationalist regime's ideology of unity and authoritarian rule.",
     sources: [
@@ -4947,6 +4965,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
     sources: [
       { title: "Flag of the Second Spanish Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Second_Spanish_Republic" },
+    ],
+  },
+  "es-1785": {
+    description: "Chosen personally by Charles III from twelve designs submitted by Antonio Valdés y Bazán, this naval ensign of red-yellow-red — the yellow band twice as wide as each red one — was adopted in 1785 because red and yellow could be told apart at sea more easily than Spain's older, harder-to-distinguish white ensign. It remained a naval flag for decades before Queen Isabel II made it the flag for land use too, in 1843, and its colours (without the royal arms) remain Spain's flag today.",
+    sources: [
+      { title: "Flag of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
     ],
   },
   "es-burgundy": {
@@ -5151,6 +5175,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "The Fleur-de-lis and Its Meanings and Uses — FamilySearch", url: "https://www.familysearch.org/en/newsroom/the-fleur-de-lis-and-its-meanings-and-uses" },
     ],
   },
+  "fr-royal-banner": {
+    description: "The banner of the Kingdom of France from 1376 until the Revolution: a blue field bearing three gold fleurs-de-lis, known heraldically as 'France moderne'. Charles V ordered the reduction from the earlier 'France ancienne' — a field strewn with countless fleurs-de-lis — to just three, said to honour the Holy Trinity, a design that then remained the kingdom's arms and banner for over four centuries.",
+    sources: [
+      { title: "Kingdom of France (843?–1792) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/fr_mon.html" },
+    ],
+  },
   "fr-naval-ensign": {
     description: "At sea the Tricolore's three stripes are woven in the unequal proportions 30:33:37 (blue:white:red) rather than the equal thirds used ashore — these were the flag's original 18th-century proportions, matching the historic flag of Paris, before Napoleon I equalised them; the Navy reverted to the unequal 'optical proportions' by regulation in 1853 because a flag flapping in the wind makes the sections farther from the halyard appear smaller, so the wider red band restores the illusion of three equal columns and improves visibility at sea.",
     sources: [
@@ -5350,10 +5380,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
     ],
   },
+  "ge-1990": {
+    description: "Georgia readopted its 1918 republican flag — wine-red with a black-and-white striped canton — on 14 November 1990 as it moved to restore independence from the Soviet Union, and kept it as the national flag until the 2003 Rose Revolution, when the medieval five-cross flag was adopted in 2004. The colours carried the same meaning as in 1918: wine-red for the nation's past and its blood, black for the tragedy of foreign domination, and white for hope.",
+    sources: [
+      { title: "Flag of Georgia (country) — Britannica", url: "https://www.britannica.com/topic/flag-of-Georgia-national-flag" },
+    ],
+  },
   "ge-ssr": {
     description: "The Georgian SSR's flag carried a red hammer and sickle beneath a red star inside a blue sun in the canton, with a blue stripe along the top — uniquely among Soviet republics, its hammer and sickle were red rather than the usual gold. No official Soviet-era document explained the blue elements, but they are popularly read as the sky and the Black Sea coast of Georgia.",
     sources: [
       { title: "Flag of the Georgian Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Georgian_Soviet_Socialist_Republic" },
+    ],
+  },
+  "ge-1918": {
+    description: "Adopted by law on 10 September 1918 by the newly independent Democratic Republic of Georgia, after a competition won by the sculptor Iakob Nikoladze, this flag set a black-and-white striped canton on a dark wine-red field. Wine-red recalled Georgia's past and the blood shed defending it; black stood for the years of tragedy and foreign rule the country had endured, and white for hope and the nation's future. Soviet Russia's 1921 invasion ended the republic and the flag with it.",
+    sources: [
+      { title: "Flag of Georgia: history and symbols — GoToFlags", url: "https://gotoflags.com/flag-of-georgia/" },
     ],
   },
   "ge-russian-empire": {
@@ -5398,6 +5440,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Like Jersey and England, Guernsey bears the three gold lions of the Dukes of Normandy — a legacy of the Channel Islands' place in the Duchy of Normandy, which the islands kept when they stayed loyal to the English Crown after Normandy was lost to France in 1204. King Edward I granted a single joint seal for Guernsey and Jersey in 1279, and separate bailiwick seals followed in 1304. Guernsey's arms are distinguished from Jersey's otherwise identical lions by the small gold sprig of leaves — the rameau — set above the shield.",
     sources: [
       { title: "Coat of arms of Guernsey — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey" },
+    ],
+  },
+  "gh-1964": {
+    description: "Adopted 1 January 1964 under Kwame Nkrumah's one-party state, this variant of Ghana's flag replaced the gold band with white — echoing the colours of the ruling Convention People's Party — while keeping the black Lodestar in the centre. It was abandoned within the same month Nkrumah was overthrown in the February 1966 coup, when the original 1957 gold-centred design, already closely tied in Ghanaians' minds to independence, was restored.",
+    sources: [
+      { title: "Flag of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ghana" },
     ],
   },
   "gh-uas": {
