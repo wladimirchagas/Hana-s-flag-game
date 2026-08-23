@@ -6791,7 +6791,16 @@
           "design": "The Blue Sky with a White Sun in the canton of a red field — the national flag of China from the Northern Expedition until 1949.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
           "sha256": "11a8acaecfcc6258cfeedc15555fbc4dbe2b1df640497be2d5dcb4f60a5c4167",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "China's \"Blue Sky, White Sun, Wholly Red Earth\" flag, adopted in 1928, embodies Sun Yat-sen's Three Principles of the People: blue for nationalism, white for democracy, and red for the people's livelihood. The white sun's twelve rays represent the twelve traditional Chinese two-hour periods of the day, and by extension the twelve months of the year, symbolising unceasing progress; the blue-and-white sun emblem itself dates to the 1890s, when Lu Haodong designed it for Sun Yat-sen's revolutionary movement, well before the red field was added.",
+            "sources": [
+              {
+                "title": "Flag of the Republic of China — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China"
+              }
+            ]
+          }
         },
         {
           "id": "cn-roc-1912",
@@ -6804,7 +6813,16 @@
           "design": "The Five-Races-Under-One-Union flag: red, yellow, blue, white and black stripes for the Han, Manchu, Mongol, Hui and Tibetan peoples.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
           "sha256": "910e67712859a32a742b2edeb3b95647f0b2c985424c9fc1f0bb660013d5cbad",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Five-Coloured Flag of China's early republic set five horizontal stripes — red, yellow, blue, white and black — for the Han, Manchu, Mongol, Hui and Tibetan peoples, embodying Sun Yat-sen's principle of \"Five Races Under One Union\": that a nation's people, whatever their ethnicity, could stand united as one under the new republic.",
+            "sources": [
+              {
+                "title": "Five-color flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Five-color_flag"
+              }
+            ]
+          }
         },
         {
           "id": "cn-qing",
@@ -7886,7 +7904,16 @@
           "design": "The first flag of the republic, with the island in a deeper copper-orange than the 2006 revision.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cypriot_flags",
           "sha256": "dd090e7307736a81f4bba9ffbd8ffb0f2740e5365cc33f626b578ac0c6144950",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Cyprus's flag, adopted at independence in 1960 under a constitutional mandate for neutrality, deliberately avoids the national colours of either community on the island: a copper-orange silhouette of Cyprus — copper for the island's historic mineral deposits, from which its name is thought to derive — sits on a white field for peace, above two crossed olive branches symbolising the hoped-for reconciliation between the Greek and Turkish Cypriot communities.",
+            "sources": [
+              {
+                "title": "Flag of Cyprus — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Cyprus"
+              }
+            ]
+          }
         },
         {
           "id": "cy-british",
@@ -8200,7 +8227,16 @@
           "design": "The black-red-gold tricolour charged with the state emblem of the German Democratic Republic — a hammer and a pair of compasses within a ring of rye. Used from 1959; before that East Germany flew the plain tricolour. East Germany reunified with the Federal Republic in 1990.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_East_Germany",
           "sha256": "a56cc5793f494284e649b5fcbfae6195fb1fe7cfe177eb9c7cacf32e2d9b585f",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "East Germany's flag added the state emblem to the German black-red-gold tricolour: a hammer, a compass and a ring of rye, standing respectively for industrial workers, the intelligentsia, and farmers — an emblem of the alliance the German Democratic Republic claimed to represent between these classes under socialism. The hammer and rye ring appeared first, in 1955; the compass was added to bring the intellectual and technical classes into the symbolism before the emblem reached the flag itself in 1959.",
+            "sources": [
+              {
+                "title": "National emblem of East Germany — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_East_Germany"
+              }
+            ]
+          }
         },
         {
           "id": "de-nazi",
@@ -8213,7 +8249,16 @@
           "design": "A red field bearing a white disc charged with a black swastika. Under Nazi rule it was made the sole national flag of Germany in 1935 and flown until the regime's defeat in 1945, when it was abolished.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Germany",
           "sha256": "0b33cd62cebd0ffa8cbd848a8d68957b407cdf53f29def4a0610d8a86db3b153",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "Nazi Germany's flag set a black swastika on a white disc against a red field. Hitler himself wrote that white stood for nationalism, red for the socialist idea, and the swastika for the struggle for the victory of what the regime called the \"Aryan\" race; the red-white-black scheme was deliberately drawn from the flag of the German Empire (1871–1918) to invoke historical continuity. The Reich Flag Law of 15 September 1935 made it Germany's sole national flag, banning the Weimar Republic's black-red-gold tricolour, until the flag was abolished with the regime's defeat in 1945.",
+            "sources": [
+              {
+                "title": "History of the Swastika & Its Use as a Nazi Symbol — Holocaust Encyclopedia, USHMM",
+                "url": "https://encyclopedia.ushmm.org/content/en/article/history-of-the-swastika"
+              }
+            ]
+          }
         },
         {
           "id": "de-empire",
@@ -9683,7 +9728,16 @@
           "design": "The tricolour with two green stars for the two members of the union with Syria.",
           "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
           "sha256": "331d12374444f1c149149292314b12eccf532b16d06468a6dd9b8f581fd969e5",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The United Arab Republic's flag, adopted in 1958 when Egypt and Syria united, used the pan-Arab colours: black for the era of colonial oppression Arabs had endured, white for peace and the hoped-for future of independent Arab states, and red for the sacrifices and bloodshed of the fight for liberation. Two green stars at its centre stood for the union's two constituent states and, in green, for Islam.",
+            "sources": [
+              {
+                "title": "Flag of the United Arab Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "eg-1923",
@@ -9991,7 +10045,22 @@
           "design": "A horizontal tricolour of red, yellow and murrey with the republican arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
           "sha256": "45a5dfbddf8404b0e9c63da30edb2de71cd945d9e35e011c3f8b3673ac9e2435",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Second Spanish Republic's flag, adopted in 1931, replaced the lower red stripe of the monarchy's red-yellow-red flag with purple (murrey) to mark the new republican era, drawing on an early-20th-century republican belief that purple had been the colour of a legendary banner carried by the Comuneros of Castile in their 1520–21 revolt against Charles V.",
+            "myths": [
+              {
+                "claim": "Purple was the historical colour of the Castilian Comuneros' banner, and the republic revived their true colours.",
+                "reality": "The identification of purple with the Comuneros traces only to 19th-century republican writers; the Comuneros' own banner is verified to have been deep red, not purple. The republic's purple stripe reflects this later, mistaken tradition rather than the historical record."
+              }
+            ],
+            "sources": [
+              {
+                "title": "Flag of the Second Spanish Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Second_Spanish_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "es-1785",
