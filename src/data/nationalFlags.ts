@@ -4189,6 +4189,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Ghana Air Force", url: "https://en.wikipedia.org/wiki/Ghana_Air_Force" },
     ],
   },
+  "gh-naval-ensign": {
+    description: "The Naval Ensign of Ghana, flown since 1966, follows the pattern of the Royal Navy's White Ensign — a red St George's Cross on white — substituting Ghana's own national flag for the Union Flag in the canton. The design reflects Ghana's history as the former British colony of the Gold Coast, adapting the Royal Navy's own ensign convention for the newly independent state's navy after 1957.",
+    sources: [
+      { title: "Flags of the World — Ghanaian Navy", url: "https://www.crwflags.com/fotw/flags/gh~nav.html" },
+      { title: "Wikipedia — White Ensign", url: "https://en.wikipedia.org/wiki/White_Ensign" },
+    ],
+  },
   "gh-president": {
     description: "The national tricolour is charged with Ghana's coat of arms, designed by Amon Kotei and introduced at independence on 4 March 1957: a shield supported by two golden tawny eagles, chosen as the strongest of all birds to signify the safety and defence of Ghana's newly won independence, each wearing the Order of the Star of Ghana.",
     sources: [
@@ -4759,6 +4766,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The three gold lions on red are the arms of the Dukes of Normandy, the same lions from which England's royal arms descend, and mark Jersey's origin as part of the Duchy of Normandy. When King John lost mainland Normandy to France in 1204 the Channel Islanders kept their allegiance to the English Crown, and the lions stayed as the island's own arms. King Edward VII formally sanctioned the shield in 1907; a Royal Warrant of 10 December 1980 added the Plantagenet crown above it, the States Assembly approving the design in 1981 — the crown marks Jersey's loyalty to the Crown as its own possession, not part of the United Kingdom.",
     sources: [
       { title: "Coat of arms of Jersey — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey" },
+    ],
+  },
+  "jm-naval-ensign": {
+    description: "Jamaica's naval ensign, adopted on 6 August 1962 — the day the country gained independence from the United Kingdom — follows the White Ensign pattern of the Royal Navy, with a St George's Cross and the Jamaican national flag in the canton in place of the Union Flag. In practice the ensign is flown mainly by the Jamaica Defence Force Coast Guard, since Jamaica maintains no separate navy, and its adoption at the moment of independence shows how newly sovereign Commonwealth states often kept British naval flag conventions even as they raised their own colours.",
+    sources: [
+      { title: "Wikipedia — Flag of Jamaica", url: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
+      { title: "Wikipedia — White Ensign", url: "https://en.wikipedia.org/wiki/White_Ensign" },
     ],
   },
   "jm-governor-general": {
