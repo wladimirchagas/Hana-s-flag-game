@@ -7060,6 +7060,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Paraguay" },
     ],
   },
+  "py-passport": {
+    description: "As a Mercosur member, Paraguay issues the bloc's shared passport, headed \"MERCOSUR\" above the national coat of arms — one of the few in the world with different designs on its front and back. The obverse shows a golden five-pointed star on white, flanked by a palm branch (victory) and an olive branch (peace) tied together, ringed by \"REPÚBLICA DEL PARAGUAY\"; the reverse depicts a golden lion — for the valour of the Paraguayan people in defending their independence — before a staff bearing the Phrygian cap of liberty, beneath the motto \"PAZ Y JUSTICIA\" (\"Peace and Justice\").",
+    sources: [
+      { title: "Passports of the Mercosur — Wikipedia", url: "https://en.wikipedia.org/wiki/Passports_of_the_Mercosur" },
+      { title: "Coat of arms of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Paraguay" },
+    ],
+  },
   "py-football-crest": {
     description: "The gold star is the Estrella de Mayo (\"May Star\") of Paraguay's own coat of arms, commemorating the country's May 1811 independence; the red and blue repeat the outer bands of the national flag.",
     sources: [
@@ -8161,6 +8168,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Uruguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uruguay" },
     ],
   },
+  "uy-passport": {
+    description: "As a Mercosur member, Uruguay issues the bloc's shared passport, headed \"MERCOSUR\" above the national coat of arms. That shield's four quarters each carry a symbol: a golden scale for equality and justice, the fortified Cerro de Montevideo for strength, a galloping horse for liberty, and an ox for abundance. Above it sits the Sun of May, the same golden sun on the national flag, symbolising the 1810 May Revolution against Spanish rule; laurel and olive branches, tied with the light-blue ribbon of the historic Uruguayan cockade, frame the whole for triumph and peace.",
+    sources: [
+      { title: "Passports of the Mercosur — Wikipedia", url: "https://en.wikipedia.org/wiki/Passports_of_the_Mercosur" },
+      { title: "Coat of arms of Uruguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uruguay" },
+    ],
+  },
   "uy-football-crest": {
     description: "AUF is the association's own initials, Asociación Uruguaya de Fútbol. The four stars mark four FIFA-recognised world championships — the 1924 and 1928 Olympic football tournaments (the only Olympic titles ever retroactively treated as equivalent to a World Cup) and the 1930 and 1950 FIFA World Cups. Uruguay only added the stars in 1992, after the football historian Atilio Garrido produced Uruguay's own 1925 and 1929 submissions to FIFA claiming world-champion status for the Olympic wins; a FIFA staffer asked in 2021 that two of the four be removed, but FIFA withdrew the request once Uruguay presented that same historical evidence again, and all four stars remain.",
     sources: [
@@ -8230,6 +8244,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "ve-arms": {
     description: "The shield is divided into the three colours of the national flag. On the red field a sheaf of wheat stands for the union of the states and for the country's agricultural wealth; on the yellow field weapons and two national flags tied with laurel stand for the victory of the war of independence; and on the blue field below a white horse runs free, for independence and liberty. Above the shield two crossed cornucopias pour out the country's wealth, and it is flanked by an olive branch and a palm branch tied with a band in the national colours — yellow for the nation's wealth, blue for the ocean that separates Venezuela from Spain, and red for the blood and courage of its people. The arms in this form were established by the Law of the National Flag, Coat of Arms and Anthem of 17 February 1954; in 2006 the horse was turned to run to the dexter, the direction it had faced in the arms of 1863.",
     sources: [
+      { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
+    ],
+  },
+  "ve-passport": {
+    description: "As a Mercosur member, Venezuela issues the bloc's shared deep-blue passport, headed \"MERCOSUR\" above the country's own name and coat of arms. That shield shows a wild white horse running free on blue, an emblem of independence, above crossed swords, sabres and lances tied with a laurel branch for victory in war, beneath two crossed cornucopias pouring out wealth; olive and palm branches flank the whole, bound by a ribbon in the national tricolour — yellow for the country's riches, blue for the ocean separating Venezuela from Spain, and red for the courage of its people.",
+    sources: [
+      { title: "Passports of the Mercosur — Wikipedia", url: "https://en.wikipedia.org/wiki/Passports_of_the_Mercosur" },
       { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
     ],
   },
