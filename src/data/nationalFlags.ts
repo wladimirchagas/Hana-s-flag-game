@@ -2876,6 +2876,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal of American Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_American_Samoa" },
     ],
   },
+  "at-habsburg": {
+    description: "The Habsburg Monarchy's black-over-gold flag drew on colours long used by the House of Habsburg as Holy Roman Emperors, themselves derived from the black double-headed eagle on a gold field that symbolised imperial authority over both secular and religious, western and eastern, realms. Adopted in 1804 as the Austrian Empire's own flag and flown through Austria-Hungary until 1918, it was set aside when the empire fell in favour of the far older red-white-red associated with the medieval Babenberg dukes.",
+    sources: [
+      { title: "Flag of the Habsburg monarchy — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Habsburg_monarchy" },
+    ],
+  },
   "at-state": {
     description: "Austria's plain red-white-red tricolour is the civil flag flown by ordinary citizens; the state flag adds the federal eagle (holding a hammer and sickle, and with a broken chain at its feet, symbolising the country's liberation from its 1938 annexation by Nazi Germany) for use by state authorities, the military and diplomatic missions.",
     sources: [
@@ -2913,6 +2919,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Torres Strait Islander flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Torres_Strait_Islander_flag" },
       { title: "Australian flags — Department of the Prime Minister and Cabinet", url: "https://www.pmc.gov.au/government/australian-national-symbols/australian-flags" },
+    ],
+  },
+  "au-1903": {
+    description: "Australia's first Commonwealth flag was chosen from over 32,000 entries in the 1901 Federal Flag design competition, combining the Union Jack — acknowledging British settlement — with a Commonwealth Star of six points, one for each of the six original states, and the Southern Cross marking Australia's place in the southern sky. King Edward VII's 1903 approval standardised every Southern Cross star to seven points; the seventh point of the Commonwealth Star, for the territories, was added later still in 1908.",
+    sources: [
+      { title: "The Australian National Flag — Australian Government", url: "https://www.pmc.gov.au/resources/australian-symbols-booklet/national-symbols/australian-national-flag" },
+    ],
+  },
+  "au-1901": {
+    description: "Australia's first Commonwealth flag was chosen from over 32,000 entries in the 1901 Federal Flag design competition, combining the Union Jack — acknowledging British settlement — with a Commonwealth Star of six points, one for each of the six original states, and the Southern Cross marking Australia's place in the southern sky. King Edward VII's 1903 approval standardised every Southern Cross star to seven points; the seventh point of the Commonwealth Star, for the territories, was added later still in 1908.",
+    sources: [
+      { title: "The Australian National Flag — Australian Government", url: "https://www.pmc.gov.au/resources/australian-symbols-booklet/national-symbols/australian-national-flag" },
     ],
   },
   "au-uk-1801": {
@@ -3193,6 +3211,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Belgium national football team logo — 1000 Logos", url: "https://1000logos.net/belgium-national-football-team-logo/" },
     ],
   },
+  "bf-upper-volta": {
+    description: "Upper Volta's flag used black, white and red horizontal bands for the country's three namesake rivers — the Black Volta, White Volta and Red Volta. When the country was renamed Burkina Faso in 1984, this geographic scheme was replaced by the pan-African red-green-gold now flown.",
+    sources: [
+      { title: "Upper Volta (Burkina Faso, 1959-1984) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/bf_uv.html" },
+    ],
+  },
   "bf-french": {
     description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
     sources: [
@@ -3252,6 +3276,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold crowned lion rampant is Bulgaria's own state symbol — lion imagery has marked Bulgarian rule since at least the Chatalar Inscription of 815–834 AD, and the emblem was preserved as a sign of national identity even through Ottoman rule after 1396. On the national coat of arms the lion stands for the independence and sovereignty of the Bulgarian people and state; the gold laurel wreath framing the badge is the ordinary heraldic mark of honour and victory.",
     sources: [
       { title: "Coat of arms of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
+    ],
+  },
+  "bh-1972": {
+    description: "Bahrain's flag pairs a red field, for the blood of its people, with a white band marking the maritime treaty Bahrain signed with Britain in 1820 — the white stripe distinguished it from the plain red flags historically flown by pirates in the Gulf. The serrated boundary between the two colours, introduced in 1932 to set Bahrain's flag apart from its neighbours', carried eight points in this version, before the number was fixed at five — one for each pillar of Islam — in 2002.",
+    sources: [
+      { title: "Flag of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    ],
+  },
+  "bh-1932": {
+    description: "Bahrain's flag pairs a red field, for the blood of its people, with a white band marking the maritime treaty Bahrain signed with Britain in 1820 — the white stripe distinguished it from the plain red flags historically flown by pirates in the Gulf. In 1932 the boundary between the two colours was serrated for the first time, so Bahrain's flag could be told apart from its neighbours' at a glance; the exact number of points has varied since.",
+    sources: [
+      { title: "Flag of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
     ],
   },
   "bh-uk": {
