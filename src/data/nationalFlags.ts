@@ -6116,6 +6116,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Mali — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mali" },
     ],
   },
+  "ml-passport": {
+    description: "Mali's dark-brown passport bears the state seal, in use since 1973: a legendary vulture from Malian folklore at the top, the Great Mosque of Djenné at the centre — the world's largest mudbrick building, representing Islam, the country's majority faith — flanked by two bows and arrows for the strength and independence of the Malian people, above a rising sun for renewal and prosperity. Below runs the national motto, \"Un Peuple, Un But, Une Foi\" — \"One People, One Goal, One Faith\".",
+    sources: [
+      { title: "Coat of arms of Mali — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mali" },
+    ],
+  },
   "ml-football-crest": {
     description: "The eagle gives the national team its own nickname, Les Aigles (The Eagles). The green, gold and red repeat Mali's own national flag, adopted at independence in 1961: green for the fertility of the land, gold for purity and mineral wealth, and red for the blood shed in the struggle against French colonial rule.",
     sources: [
@@ -7663,6 +7669,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Sierra Leone — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sierra_Leone" },
     ],
   },
+  "sl-passport": {
+    description: "Sierra Leone's passport bears the national coat of arms: a lion beneath a zigzag border representing the Lion Mountains that gave the country its name (from the Portuguese \"Serra Leoa\"), three torches symbolising peace and dignity, and wavy bars at the base depicting the sea.",
+    sources: [
+      { title: "Coat of arms of Sierra Leone — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sierra_Leone" },
+    ],
+  },
   "sl-football-crest": {
     description: "The bands are Sierra Leone's national colours: green for the country's mountains and agriculture, white for unity and justice, and blue for Freetown's natural harbour and the hope of contributing to world peace.",
     sources: [
@@ -7691,6 +7703,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms gather devices already used on earlier Senegalese emblems. On the left a golden lion — the lion of the Sudan, the country's totem and the name of its highest honour, the National Order of the Lion — walks above a green wavy band standing for the River Senegal. On the right stands a baobab, the tree native to the country. At the crest is the same five-pointed green star that appears on the national flag: a star of hope, and for the great majority of Senegalese the star of Islam.",
     sources: [
       { title: "Coat of arms of Senegal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Senegal" },
+    ],
+  },
+  "sn-passport": {
+    description: "Senegal's burgundy passport bears the national coat of arms: a shield split between a golden lion, standing for courage, strength and wisdom, and a baobab tree, the iconic African tree that serves as a traditional village gathering place and here represents resilience, endurance and community. Palm branches flank the shield beneath a green five-pointed star.",
+    sources: [
+      { title: "🇸🇳 Senegal Flag Unveiled: Colors, Meaning, Coat of Arms, Flag Map, and Similar Flags — Mappr", url: "https://www.mappr.co/flag-maps/senegal/" },
     ],
   },
   "sn-football-crest": {
@@ -7848,6 +7866,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "tg-arms": {
     description: "Two red lions rear up on either side, for the courage of the Togolese people, each holding a bow and arrow. Between them a golden shield carries the letters RT, for République Togolaise, and two national flags fly above. The motto reads Travail, Liberté, Patrie — “Work, Liberty, Homeland.”",
+    sources: [
+      { title: "Coat of arms of Togo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Togo" },
+    ],
+  },
+  "tg-passport": {
+    description: "Togo's passport bears the national coat of arms, adopted in 1962: two red lions standing back-to-back, each armed with a bow and arrow, expressing the vigilance of the Togolese people in defending their independence and the idea that true freedom rests in their own hands and traditions. A golden shield bearing the letters \"RT\" (République Togolaise) sits between them, with the national flag displayed twice above and the motto \"Travail, Liberté, Patrie\" — \"Work, Liberty, Homeland\" — on a ribbon below.",
     sources: [
       { title: "Coat of arms of Togo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Togo" },
     ],
