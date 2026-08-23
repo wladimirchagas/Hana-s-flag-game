@@ -25372,7 +25372,20 @@
           "design": "The cover of the Paraguay passport.",
           "source": "https://gicg.net/passport/py/",
           "sha256": "86c84728176154343d2d2ce0f5f9a8f9ba780b0a520bd54e9c9a1a66a35592a6",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "As a Mercosur member, Paraguay issues the bloc's shared passport, headed \"MERCOSUR\" above the national coat of arms — one of the few in the world with different designs on its front and back. The obverse shows a golden five-pointed star on white, flanked by a palm branch (victory) and an olive branch (peace) tied together, ringed by \"REPÚBLICA DEL PARAGUAY\"; the reverse depicts a golden lion — for the valour of the Paraguayan people in defending their independence — before a staff bearing the Phrygian cap of liberty, beneath the motto \"PAZ Y JUSTICIA\" (\"Peace and Justice\").",
+            "sources": [
+              {
+                "title": "Passports of the Mercosur — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Passports_of_the_Mercosur"
+              },
+              {
+                "title": "Coat of arms of Paraguay — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Paraguay"
+              }
+            ]
+          }
         },
         {
           "id": "py-burgundy",
@@ -32046,7 +32059,20 @@
           "design": "The cover of the Uruguay passport.",
           "source": "https://gicg.net/passport/uy/",
           "sha256": "a61cea7b7080297eca647572a2cb51623f5c18db1dd9e571589ba6ce4c807aa2",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "As a Mercosur member, Uruguay issues the bloc's shared passport, headed \"MERCOSUR\" above the national coat of arms. That shield's four quarters each carry a symbol: a golden scale for equality and justice, the fortified Cerro de Montevideo for strength, a galloping horse for liberty, and an ox for abundance. Above it sits the Sun of May, the same golden sun on the national flag, symbolising the 1810 May Revolution against Spanish rule; laurel and olive branches, tied with the light-blue ribbon of the historic Uruguayan cockade, frame the whole for triumph and peace.",
+            "sources": [
+              {
+                "title": "Passports of the Mercosur — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Passports_of_the_Mercosur"
+              },
+              {
+                "title": "Coat of arms of Uruguay — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uruguay"
+              }
+            ]
+          }
         },
         {
           "id": "uy-football-crest",
@@ -32652,7 +32678,20 @@
           "design": "The cover of the Venezuela passport.",
           "source": "https://gicg.net/passport/ve/",
           "sha256": "4509a02218e466d716ecaeb9ed3c008d208103021de320281e42242e7ac657a4",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "As a Mercosur member, Venezuela issues the bloc's shared deep-blue passport, headed \"MERCOSUR\" above the country's own name and coat of arms. That shield shows a wild white horse running free on blue, an emblem of independence, above crossed swords, sabres and lances tied with a laurel branch for victory in war, beneath two crossed cornucopias pouring out wealth; olive and palm branches flank the whole, bound by a ribbon in the national tricolour — yellow for the country's riches, blue for the ocean separating Venezuela from Spain, and red for the courage of its people.",
+            "sources": [
+              {
+                "title": "Passports of the Mercosur — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Passports_of_the_Mercosur"
+              },
+              {
+                "title": "Coat of arms of Venezuela — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela"
+              }
+            ]
+          }
         },
         {
           "id": "ve-football-crest",
