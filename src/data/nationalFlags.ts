@@ -3734,6 +3734,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of China — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_China" },
     ],
   },
+  "cn-passport": {
+    description: "China's passport bears the national emblem, adopted 20 September 1950: Tiananmen — the Gate of Heavenly Peace in Beijing, symbolising the Chinese people's struggle against imperialism and feudalism — ringed by a border of wheat and rice sheaves for agricultural workers, over a cogwheel for industrial workers. Five gold stars sit above: the large star for the Communist Party of China, and four smaller stars for the social classes the Party holds itself to unite — workers, peasants, the urban petite bourgeoisie and the national bourgeoisie.",
+    sources: [
+      { title: "National emblem of China — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_China" },
+    ],
+  },
   "cn-football-crest": {
     description: "The gold building is Tiananmen — the gate on Beijing's central axis from which the People's Republic of China was proclaimed in 1949 — a national symbol significant enough that it also appears on China's own national emblem. The red rings and green field are the colours of the national flag; CFA is the association's own initials, the Chinese Football Association, written above in Chinese as 中国足球协会.",
     sources: [
@@ -6427,6 +6433,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
     ],
   },
+  "mx-passport": {
+    description: "Mexico's passport bears the national coat of arms: a golden eagle perched on a prickly pear cactus, devouring a rattlesnake — the sign the wandering Aztec people were said to have watched for, per legend, to know where to found their capital, Tenochtitlan, on the site of what is now Mexico City. Oak and laurel branches encircle the eagle, added as European symbols of victory and peace when Mexico adopted the arms on gaining independence.",
+    sources: [
+      { title: "Coat of arms of Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
+    ],
+  },
   "mx-football-crest": {
     description: "The eagle is redrawn from Mexico's own coat of arms, whose eagle, cactus and serpent recall the Aztec founding legend of Tenochtitlán: the god Huitzilopochtli told the wandering Mexica people to build their city wherever they saw an eagle perched on a prickly pear cactus devouring a serpent, and they found the sign on an island in Lake Texcoco. The green, white and red are the colours of the national flag.",
     sources: [
@@ -7143,6 +7155,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 1954, the emblem sets out the ideological foundation of the state, the basis of its economy, its cultural heritage and its guiding principles. The crescent-and-star crest and the green of the emblem are the traditional symbols of Islam, on which the country was founded. The quartered shield below shows cotton, wheat, tea and jute — the four major crops of Pakistan at independence, and so its economic base. The wreath around the shield is of the floral design used in Mughal art, standing for the cultural heritage the country inherits, and the scroll beneath carries Muhammad Ali Jinnah's motto: Unity, Faith, Discipline.",
     sources: [
       { title: "State emblem of Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/State_emblem_of_Pakistan" },
+    ],
+  },
+  "pk-passport": {
+    description: "Pakistan's passport bears the state emblem, adopted in 1954: a crescent and star, standard symbols of Islam read here as progress and enlightenment, above a shield quartered with the crops central to Pakistan's economy at independence — cotton, jute, tea and wheat. A wreath of jasmine, the national flower and a nod to the country's Mughal-era heritage, frames the shield, above a scroll bearing the national motto coined by founder Muhammad Ali Jinnah: \"Iman, Ittehad, Nazm\" — \"Faith, Unity, Discipline\".",
+    sources: [
+      { title: "Coat of Arms of Pakistan facts for kids", url: "https://kids.kiddle.co/Coat_of_Arms_of_Pakistan" },
     ],
   },
   "pk-football-crest": {
@@ -8050,6 +8068,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is the Phra Khrut Pha — \"Garuda as the vehicle\" — the mount of the god Vishnu (Narayana) in Hindu and Buddhist tradition. Thai kingship drew on Indian doctrine in which the king is an incarnation of Narayana, so the god's mount became the king's own device: the Garuda stands for the sovereign himself rather than for the land or the people. In Buddhist tradition the emphasis falls on the Garuda's deeds, which portray him as righteous and merciful. Earlier kings used four great royal seals and, from 1873, a European-style coat of arms; Vajiravudh (Rama VI) abandoned that in 1910 in favour of the Garuda alone, and the Act on the Seals of State of 1911 established it as the emblem of the kingdom. It appears on the letterhead of almost every Thai government document and marks state property.",
     sources: [
       { title: "Emblem of Thailand — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Thailand" },
+    ],
+  },
+  "th-passport": {
+    description: "Thailand's passport bears the Garuda, the mythical bird-like mount of the Hindu god Vishnu (Narayana): Thailand's kings traditionally regarded themselves as an incarnation of Narayana, so the Garuda — known formally as the Phra Khrut Pha — came to symbolise the divine power and authority of the Thai monarchy, and by extension the Thai state itself.",
+    sources: [
+      { title: "The Garuda: Thailand's National Emblem — Thaizer", url: "https://www.thaizer.com/the-garuda-thailands-national-emblem/" },
     ],
   },
   "th-football-crest": {
