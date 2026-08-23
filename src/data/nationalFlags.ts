@@ -5447,6 +5447,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "The Forgotten Spirit Banner of Genghis Khan — Mongol History", url: "https://mongolhistory.com/the-spirit-banner-of-genghis-khan/" },
     ],
   },
+  "mn-ground": {
+    description: "The Mongolian Ground Force's flag is olive green, bearing a stylised mounted archer — a horseman drawing a bow — as its branch emblem alongside the service's name in Mongolian. The mounted archer recalls the horse-borne warrior tradition long associated with the Mongols, from the era of Genghis Khan's cavalry armies onward, marking the ground force's own identity apart from the Soyombo carried on the air force's flag.",
+    sources: [
+      { title: "Flags of the World — Mongolian Army and Governmental Flags", url: "https://www.crwflags.com/fotw/flags/mn%5E.html" },
+      { title: "Wikipedia — List of Mongolian flags", url: "https://en.wikipedia.org/wiki/List_of_Mongolian_flags" },
+    ],
+  },
+  "mn-air-force": {
+    description: "The Mongolian Air Force's flag is light blue, bearing a winged version of the Soyombo — the same national symbol found on Mongolia's own flag — alongside the service's name in Mongolian. The Soyombo was created in 1686 by the Buddhist scholar-monk Zanabazar and combines fire, sun and moon, and a pair of fish into one abstract emblem read as standing for eternity, sovereignty, vigilance, unity and justice; here it is given wings to mark it as the air force's own.",
+    sources: [
+      { title: "Flags of the World — Mongolian Army and Governmental Flags", url: "https://www.crwflags.com/fotw/flags/mn%5E.html" },
+      { title: "Wikipedia — Soyombo symbol", url: "https://en.wikipedia.org/wiki/Soyombo_symbol" },
+    ],
+  },
   "mn-emblem": {
     description: "The circular blue field is the eternal blue sky, the object of the old Mongol reverence for Tengri; the rim around it is the tumen nasan, the endless knot of eternity. At the centre the Soyombo — the national ideograph that also heads the flag — sits above a wind horse, the treasured steed of Buddhist tradition carrying a wish-granting jewel, and together they stand for Mongolia's independence, sovereignty and spirit. Sun, moon and Mahayana Buddhist symbols complete it, over a lotus base and mountains. It replaced the People's Republic emblem of 1960–1991, which had shown an ordinary horseman and a rising sun over mountains with socialist devices in place of the Buddhist ones.",
     sources: [
@@ -6447,6 +6461,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The tropicbird is the white-tailed tropicbird, one of Seychelles' best-known native seabirds and a figure on the national coat of arms, where it represents the islands' wildlife of the air alongside a tortoise (land) and a fish (sea).",
     sources: [
       { title: "Coat of arms of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
+    ],
+  },
+  "sd-airforce": {
+    description: "The Sudanese Air Force's ensign, flown since 1956, is a light-blue field bearing the national flag in the canton and the air force's roundel in the fly, modelled directly on the Royal Air Force Ensign. The design reflects Sudan's history: the air force was founded the same year the country gained independence from Britain, with British personnel assisting in its establishment, and the RAF-style layout of its ensign has been kept ever since.",
+    sources: [
+      { title: "Flags of the World — Sudanese Air Force", url: "https://www.crwflags.com/fotw/flags/sd_air.html" },
+      { title: "Wikipedia — Sudanese Air Force", url: "https://en.wikipedia.org/wiki/Sudanese_Air_Force" },
     ],
   },
   "sd-arms": {
