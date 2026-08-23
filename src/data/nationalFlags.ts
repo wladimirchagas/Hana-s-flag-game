@@ -8999,6 +8999,39 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Palestine — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
     ],
   },
+  "pt-1485": {
+    description: "A variant of Portugal's arms bearing eight castles in the bordure, from the long period before King Sebastião's 1557 decree fixed the number permanently at seven; the exact castle count fluctuated across the 15th and early 16th centuries until that reform standardised it.",
+    sources: [
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
+    ],
+  },
+  "pt-1385": {
+    description: "The same quinas-and-castles arms established under Afonso III, carried forward unchanged into the reign of John I, founder of the House of Aviz, after the 1383–85 succession crisis — a deliberate continuity, asserting the new dynasty's claim as heir to the kingdom rather than adopting arms of its own.",
+    sources: [
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
+    ],
+  },
+  "pt-1248": {
+    description: "King Afonso III added a red bordure charged with gold castles around the five escutcheons, commemorating the Moorish strongholds taken during the Reconquista as Portugal's southern frontier was pushed to its final extent under his reign.",
+    sources: [
+      { title: "Coat of arms of Portugal facts for kids", url: "https://kids.kiddle.co/Coat_of_arms_of_Portugal" },
+    ],
+  },
+  "pt-1185": {
+    description: "Under Afonso Henriques's son Sancho I, the five blue escutcheons — each charged with silver bezants — were separated out from the earlier cross design and arranged as independent charges, becoming the quinas at the heart of Portugal's arms ever since. Tradition holds the five shields recall Afonso Henriques's victory over five Moorish kings at Ourique, the bezants read either as the five wounds of Christ, said to have appeared to him in a vision before the battle, or as marking the five defeated kings; the story is a later legend without conclusive evidence predating the 13th century.",
+    myths: [
+      { claim: "The five escutcheons and their bezants are a direct, contemporary record of Afonso Henriques's 1139 battlefield vision.", reality: "The vision-and-five-kings story is a later legend; no source predating the 13th century documents it, so historians treat the escutcheons' origin as legendary rather than an established historical fact." },
+    ],
+    sources: [
+      { title: "The rich history of the Portuguese coat of arms — Azores Adventures", url: "https://www.azores-adventures.com/2023/12/the-rich-history-of-the-portuguese-coat-of-arms-.html" },
+    ],
+  },
+  "pt-1143": {
+    description: "The earliest recorded banner of Afonso Henriques, who took the title King of Portugal after the 1139 Battle of Ourique and secured recognition of Portugal's independence from León in 1143: a plain blue cross on white, before the five blue escutcheons of the Portuguese arms — the quinas — later grew out of it.",
+    sources: [
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
+    ],
+  },
   "pt-military": {
     description: "The armillary sphere recalls the navigational instrument used during Portugal's Age of Discovery and was a personal emblem of King Manuel I; the seven gold castles commemorate Portuguese victories over Moorish strongholds in the Algarve, and the five small shields (each bearing five white dots) represent the five wounds of Christ, honouring a battlefield vow attributed to the country's first king, Afonso Henriques.",
     sources: [
@@ -9211,6 +9244,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The quarters are drawn from Romania's historical coat of arms, each standing for one of the country's constituent regions: a crowned eagle for Wallachia; an aurochs head with a star between its horns for Moldavia; a lion emerging from an arched bridge — Trajan's Bridge over the Danube — for Oltenia and Banat; and a second eagle for Transylvania. “România” is simply the country's own name.",
     sources: [
       { title: "Coat of arms of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
+    ],
+  },
+  "rs-1992": {
+    description: "After a 1992 referendum, independent Serbia flew the traditional red-blue-white Pan-Slavic tricolour with no central emblem at all — the red star of socialist Yugoslavia removed and no replacement coat of arms yet restored. The Serbian royal arms were added near the hoist only in 2004, giving today's state flag; the plain tricolour continues in use as Serbia's civil flag.",
+    sources: [
+      { title: "Flag of Serbia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Serbia" },
     ],
   },
   "rs-principality": {
@@ -10057,6 +10096,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "King Mongkut (Rama IV) decreed this flag in 1855, placing a white elephant on a plain red field. The white elephant had been a royal symbol in Siam since the 13th-century reign of King Ramkhamhaeng, and Mongkut added it because a plain red flag — already used by ships of several other nations — could not distinguish Siamese vessels from foreign ones; the design served as Siam's flag for 61 years until it was replaced in 1917.",
     sources: [
       { title: "Flag 1855-1916 (Thailand) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/th1855.html" },
+    ],
+  },
+  "th-1817": {
+    description: "King Rama II placed a white elephant inside the chakra on Siam's red flag, reportedly to mark the birth of three white elephants during his reign; the white elephant had long symbolised the Siamese monarchy, tracing back to the 13th-century king Ramkhamhaeng, and remained the country's flag until 1855, when the elephant alone (without the chakra) was set on a plain red field.",
+    sources: [
+      { title: "Flag 1817–1855 (Thailand) — Flags of the World", url: "https://www.fotw.info/flags/th1817.html" },
+    ],
+  },
+  "th-1782": {
+    description: "Under King Rama I, founder of the Chakri dynasty, a white chakra — the discus weapon of the Hindu god Vishnu, and the dynasty's own emblem — was added to Siam's plain red naval ensign for use on royal ships, while ordinary vessels continued to fly the plain red flag.",
+    sources: [
+      { title: "Flag 1782–1817 (Thailand) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/th1782.html" },
     ],
   },
   "th-army": {
