@@ -6684,6 +6684,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Kazakhstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
     ],
   },
+  "la-1952": {
+    description: "The Kingdom of Laos's flag showed Erawan, the mythical three-headed white elephant that carries the god Indra in Hindu-Buddhist tradition, standing on a five-tiered pedestal beneath a nine-tiered ceremonial parasol — a symbol of royal authority rooted in the sacred Mount Meru of Buddhist cosmology. The elephant's three heads stood for the three historic kingdoms — Vientiane, Luang Prabang and Champasak — united under one crown, together symbolising royalty, strength and unity until the communist takeover of 1975.",
+    sources: [
+      { title: "Laos, 1952-1975 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/la-1952.html" },
+    ],
+  },
   "la-france": {
     description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
     sources: [
@@ -6868,6 +6874,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
     ],
   },
+  "lt-ssr": {
+    description: "The Lithuanian SSR's flag — red with a gold hammer and sickle and the republic's initials — was imposed after the Soviet Union's forcible 1940 occupation and annexation of Lithuania, carried out under the secret protocol of the Molotov–Ribbentrop Pact. Lithuania's own tricolour was banned outright until independence was restored in 1990.",
+    sources: [
+      { title: "Flag of the Lithuanian Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Lithuanian_Soviet_Socialist_Republic" },
+    ],
+  },
   "lt-russian-empire": {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
     sources: [
@@ -6948,6 +6960,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Luxembourg — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
     ],
   },
+  "lv-ssr": {
+    description: "The Latvian SSR's flag — red with a gold hammer and sickle and the republic's initials — was imposed after the Soviet Union's forcible 1940 occupation and annexation of Latvia, carried out under the secret protocol of the Molotov–Ribbentrop Pact. Latvia's own flag was banned outright until independence was restored in 1990.",
+    sources: [
+      { title: "Flag of the Latvian Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Latvian_Soviet_Socialist_Republic" },
+    ],
+  },
   "lv-russian-empire": {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
     sources: [
@@ -6996,6 +7014,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The small symbols are traditional Latvian ornamental signs (zīmes) — ancient Baltic folk motifs such as the Auseklis (morning star) and Māra's cross that are still widely used in Latvian folk art and national dress.",
     sources: [
       { title: "Auseklis — Wikipedia", url: "https://en.wikipedia.org/wiki/Auseklis" },
+    ],
+  },
+  "ly-kingdom": {
+    description: "Designed by Omar Faiek Shennib for Libya's 1951 independence, the kingdom's flag used red, black and green stripes for its three uniting provinces — Fezzan, Cyrenaica and Tripolitania respectively — with black also read as a reminder of the dark years of Italian occupation, red for the blood shed for freedom, and green for the nation's agricultural wealth. A white crescent and star at the centre marked the Islamic calendar and stood for hope after that darkness; the same design was restored as Libya's national flag in 2011.",
+    sources: [
+      { title: "Libya, 1951-1972 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ly_1951.html" },
     ],
   },
   "ly-italy": {
