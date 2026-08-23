@@ -3779,7 +3779,16 @@
           "design": "The plain yellow flag of the Bruneian Sultanate, before the diagonal stripes and emblem were added under British protection.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bruneian_flags",
           "sha256": "d09861e6789a0c17f70390087d5dd9e6d83e14a9698adf519645fff93e2cdbbf",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Before around 1906, Brunei had no formal state flag at all — only the personal standards of the Sultan and his senior officials, the wazirs — and the plain yellow banner shown here represented the Sultan alone, yellow being the traditional royal colour of Borneo's rulers. Diagonal white and black stripes were added in 1906, one for each of the Sultan's two chief ministers, giving Brunei its first proper national flag.",
+            "sources": [
+              {
+                "title": "Flag of Brunei — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Brunei"
+              }
+            ]
+          }
         },
         {
           "id": "bn-royal-standard",
@@ -24344,7 +24353,16 @@
           "design": "A Blue Ensign whose badge shows the areca nut palm on a mound within a wreath, flown after the Straits Settlements were dissolved.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "61a24d0d013805f576eb914dac84fb79fe7a66c80e3be4cb8e45c6fca5b8b3f0",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted 17 June 1952 after Penang became a separate Crown colony on the 1946 dissolution of the Straits Settlements, this badge simplified Penang's 1949 grant of arms into an areca-nut palm on a grassy mound, framed by a blue-and-white wreath — the areca-nut palm (pokok pinang in Malay) being the very tree Penang, 'betel-nut island', is named for.",
+            "sources": [
+              {
+                "title": "Flag of Penang — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Penang"
+              }
+            ]
+          }
         },
         {
           "id": "my-malacca-colony",
@@ -24358,7 +24376,16 @@
           "design": "A Blue Ensign defaced with the A Famosa gateway, the Portuguese fortress the British badge kept as Malacca's emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "1d5c8fd6d5d66feaccd5d3a4efd3a52174ce6418b886fbdcd673aa4367f9dd48",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Malacca's colonial badge, instituted after its 14 August 1951 grant of arms, kept the A Famosa gateway — the Porta de Santiago, one of the last surviving fragments of the Portuguese fortress built in 1511 and largely demolished by the British in the early 19th century — as the settlement's own emblem, preserving on its flag a landmark from the era of Portuguese rule that long preceded British Malacca.",
+            "sources": [
+              {
+                "title": "A Famosa — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/A_Famosa"
+              }
+            ]
+          }
         },
         {
           "id": "my-army",
@@ -38705,7 +38732,16 @@
           "design": "A British Blue Ensign defaced with the colony's badge, flown over the Northern Rhodesia protectorate.",
           "source": "https://en.wikipedia.org/wiki/Northern_Rhodesia",
           "sha256": "0c04a19a335fa490a9b7914b8297bc2c993e006d6f3336006889d96ee0b43d29",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Northern Rhodesia's colonial badge, granted in 1927 but for years used only on the territory's official seal (Colonial Office correspondence in 1938 noted the badge had never actually been flown, since the government kept no official vessel), eventually appeared on the colony's Blue Ensign; its black-and-white wavy lines, representing the Zambezi and other rivers, were later carried into the arms of the Federation of Rhodesia and Nyasaland.",
+            "sources": [
+              {
+                "title": "Northern Rhodesia (Zambia pre-independence) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/zm_nr.html"
+              }
+            ]
+          }
         },
         {
           "id": "zm-president",
