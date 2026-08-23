@@ -17946,7 +17946,16 @@
           "design": "The cover of the Liberia passport.",
           "source": "https://gicg.net/passport/lr/",
           "sha256": "777aa717bf142536c37f00fa4f98347b276f8582de13d3cb14cdf9b30c3266d1",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Liberia's passport bears the national coat of arms, adopted 16 July 1847: a ship on the sea, recalling the vessels that carried freed and formerly enslaved African-Americans from the United States to found Liberia, above a plow and shovel for the dignity of labour and a rising sun for the nation's birth. A palm tree stands for prosperity and a white dove carrying a scroll for peace, beneath the motto \"The Love of Liberty Brought Us Here\" — a direct statement of the country's founding purpose.",
+            "sources": [
+              {
+                "title": "Coat of arms of Liberia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liberia"
+              }
+            ]
+          }
         },
         {
           "id": "lr-football-crest",
@@ -22138,7 +22147,16 @@
           "design": "The cover of the Niger passport.",
           "source": "https://gicg.net/passport/ne/",
           "sha256": "caa4029a7c6260594a78e1cf44813304c8287217f53761f7b8e7c4da4efcc8ba",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Niger's passport bears the national coat of arms: a golden sun at the centre, flanked by a vertical spear crossed with two Tuareg swords on one side — for the nomadic peoples of the Sahara — and three heads of pearl millet on the other, the staple crop of the Sahel region, above a zebu's head representing the livestock central to Niger's economy.",
+            "sources": [
+              {
+                "title": "Coat of arms of Niger — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger"
+              }
+            ]
+          }
         },
         {
           "id": "ne-football-crest",
@@ -29156,7 +29174,16 @@
           "design": "The cover of the Eswatini passport.",
           "source": "https://gicg.net/passport/sz/",
           "sha256": "ca361d91a6182f75be3ab13eb967226a1ddb71b653117f7280520e38046c54a5",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Eswatini's passport bears the national coat of arms: a lion, representing the King, and an elephant, representing the Queen Mother, supporting a traditional Nguni shield for protection, framed by palm leaves recalling the traditional Swazi crown. Above the shield sits the lidlabe, the king's feathered headdress worn during the Incwala harvest festival, beneath the national motto \"Siyinqaba\" — \"We are the fortress\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Eswatini — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Eswatini"
+              }
+            ]
+          }
         },
         {
           "id": "sz-football-crest",

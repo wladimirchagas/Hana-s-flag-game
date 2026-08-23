@@ -5865,6 +5865,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Liberia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liberia" },
     ],
   },
+  "lr-passport": {
+    description: "Liberia's passport bears the national coat of arms, adopted 16 July 1847: a ship on the sea, recalling the vessels that carried freed and formerly enslaved African-Americans from the United States to found Liberia, above a plow and shovel for the dignity of labour and a rising sun for the nation's birth. A palm tree stands for prosperity and a white dove carrying a scroll for peace, beneath the motto \"The Love of Liberty Brought Us Here\" — a direct statement of the country's founding purpose.",
+    sources: [
+      { title: "Coat of arms of Liberia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liberia" },
+    ],
+  },
   "lr-football-crest": {
     description: "The star and stripes are taken from Liberia's national flag: the single white star marks Liberia as Africa's first independent republic, and the eleven red-and-white stripes represent the signatories of its 1847 Declaration of Independence.",
     sources: [
@@ -6573,6 +6579,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ne-arms": {
     description: "On the green shield four gold devices name the country's peoples and livelihoods: a sun; a spear flanked by two Tuareg swords (takoba); three heads of millet, the staple grain; and the head of a zebu, for the herding life. Four national flags stand behind. The motto is Fraternité, Travail, Progrès — “Fraternity, Work, Progress.”",
+    sources: [
+      { title: "Coat of arms of Niger — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger" },
+    ],
+  },
+  "ne-passport": {
+    description: "Niger's passport bears the national coat of arms: a golden sun at the centre, flanked by a vertical spear crossed with two Tuareg swords on one side — for the nomadic peoples of the Sahara — and three heads of pearl millet on the other, the staple crop of the Sahel region, above a zebu's head representing the livestock central to Niger's economy.",
     sources: [
       { title: "Coat of arms of Niger — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger" },
     ],
@@ -7896,6 +7908,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "sz-arms": {
     description: "A black-and-white Nguni shield rests on two spears and a staff hung with the blue royal tassels (injobo). A lion and an elephant support it — the lion for the King, the elephant for the Queen Mother, the two pillars of the Swazi monarchy — and above sits a crown of feathers of the kind worn at the Incwala, the festival of the first fruits. The scroll reads Siyinqaba — “We are the fortress.”",
+    sources: [
+      { title: "Coat of arms of Eswatini — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Eswatini" },
+    ],
+  },
+  "sz-passport": {
+    description: "Eswatini's passport bears the national coat of arms: a lion, representing the King, and an elephant, representing the Queen Mother, supporting a traditional Nguni shield for protection, framed by palm leaves recalling the traditional Swazi crown. Above the shield sits the lidlabe, the king's feathered headdress worn during the Incwala harvest festival, beneath the national motto \"Siyinqaba\" — \"We are the fortress\".",
     sources: [
       { title: "Coat of arms of Eswatini — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Eswatini" },
     ],
