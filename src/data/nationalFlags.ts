@@ -4665,6 +4665,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea" },
     ],
   },
+  "gn-passport": {
+    description: "Guinea's passport bears the national coat of arms adopted in 1993: a white dove holding a golden olive branch, the classic symbols of peace, over a ribbon reading \"Travail, Justice, Solidarité\" — \"Work, Justice, Solidarity\". This peaceable design replaced an earlier arms bearing a rifle and sword, introduced after the death of Guinea's first president in 1984, which had itself replaced the country's original 1958 arms showing a yellow elephant.",
+    sources: [
+      { title: "Coat of arms of Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea" },
+    ],
+  },
   "gn-football-crest": {
     description: "The elephant gives the national team its own name, Syli National — syli means \"elephant\" in the Susu language, and was also the name of Guinea's national currency from 1971 to 1985. The red, yellow and green repeat the country's own national flag.",
     sources: [
@@ -4773,6 +4779,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "gw-arms": {
     description: "The black star is the Black Star of Africa, the emblem of the PAIGC that led the country to independence. Below it a scallop shell marks Guinea-Bissau's place on the West African coast, and two olive branches curve up on either side. The scroll reads Unidade, Luta, Progresso — “Unity, Struggle, Progress.”",
+    sources: [
+      { title: "Emblem of Guinea-Bissau — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Guinea-Bissau" },
+    ],
+  },
+  "gw-passport": {
+    description: "Guinea-Bissau's passport bears the national emblem, adopted shortly after independence from Portugal in 1973: a black star — the Black Star of Africa, a Pan-African symbol of unity and freedom — above a seashell marking the country's position on West Africa's Atlantic coast, flanked by olive branches for peace. The motto below, on a red banner, reads \"Unidade, Luta, Progresso\" — \"Unity, Struggle, Progress\".",
     sources: [
       { title: "Emblem of Guinea-Bissau — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Guinea-Bissau" },
     ],
@@ -7884,6 +7896,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "td-arms": {
     description: "The shield's jagged blue and gold bars are the waters of Lake Chad; above rises a sun, for the new beginning of independence. A goat of the desert north and a lion of the savanna south support the shield — the two halves of the country — each standing over a red arrow. The ribbon reads Unité, Travail, Progrès — “Unity, Work, Progress.”",
+    sources: [
+      { title: "Coat of arms of Chad — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chad" },
+    ],
+  },
+  "td-passport": {
+    description: "Chad's passport bears the national coat of arms, adopted 11 August 1970: wavy blue bars on a gold shield for Lake Chad, crested by a rising sun for a new beginning. A goat supports the shield on one side, representing Chad's arid north, and a lion on the other, representing its more fertile south; red arrows in their fur stand for salt, a historically valuable trade good. Below runs the motto \"Unité, Travail, Progrès\" — \"Unity, Work, Progress\".",
     sources: [
       { title: "Coat of arms of Chad — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chad" },
     ],
