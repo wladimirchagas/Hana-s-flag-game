@@ -7198,6 +7198,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
     ],
   },
+  "lr-commonwealth": {
+    description: "The flag of the Commonwealth of Liberia — the settlement established under the American Colonization Society for freed and freeborn African Americans — copied the American flag's stripes but replaced the canton's stars with a single white cross, expressing the Christian character the colonisation societies gave both this settlement and the related Maryland colony. The cross was replaced by a single white star when Liberia declared independence in 1847 and adopted its own national flag that August.",
+    sources: [
+      { title: "Historical Spotlight on the 1827 and 1847 Liberian Flags — Edwin Genoway (Medium)", url: "https://medium.com/@edwingenoway420/historical-spotlight-on-the-1827-and-1847-liberian-flags-a-thought-provoking-masterpiece-1966891d3180" },
+    ],
+  },
   "lr-arms": {
     description: "The shield shows a ship arriving under sail — the vessel that brought the freed people from America who founded the country — on a sea beneath a rising sun, the birth of the nation. A palm tree, the most versatile source of food, stands for prosperity; a plough and a spade for the dignity of labour; and a white dove bearing a scroll for the message of peace. The ribbon reads “The Love of Liberty Brought Us Here.”",
     sources: [
@@ -7554,6 +7560,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Montenegro's state flag, sanctioned with the 1905 constitution, set the royal cypher \"H I\" — the monogram of King Nicholas I, in the Cyrillic initial for Nikola — beneath a crown at the centre of a red-blue-white tricolour, marking it for official and royal use until Montenegro was absorbed into the Kingdom of Serbs, Croats and Slovenes in 1918.",
     sources: [
       { title: "Principality / Kingdom of Montenegro (1782-1918) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/me_k.html" },
+    ],
+  },
+  "me-1852": {
+    description: "When Prince Danilo I Petrović-Njegoš secularised Montenegro's church-led principality into a secular state in 1852, he added his own gold cypher ('Д', for Danilo) to the plain red, white-bordered flag long used by the Petrović-Njegoš prince-bishops — a flag descended from an even earlier design bearing a white cross for the Christian faith the family's rulers had defended for generations against Ottoman pressure.",
+    sources: [
+      { title: "Principality / Kingdom of Montenegro (1782–1918) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/me_k.html" },
     ],
   },
   "me-naval-ensign": {
@@ -8153,6 +8165,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "LOGO | FAM", url: "https://fam.org.my/logo" },
       { title: "Malaysia national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Malaysia_national_football_team" },
+    ],
+  },
+  "mz-1975": {
+    description: "Adopted 25 June 1975 — the anniversary of FRELIMO's founding, and the day Mozambique's independence became formal — this flag radiated diagonal Pan-African-coloured triangles from the upper hoist, bearing a hoe and rifle crossed beneath an open book, a cogwheel for the industrial working class, and a red star for proletarian internationalism, as the country became the socialist People's Republic of Mozambique. A 1983 redesign simplified the diagonal bands into the horizontal stripes flown today.",
+    sources: [
+      { title: "Flag of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mozambique" },
+    ],
+  },
+  "mz-1974": {
+    description: "Flown alongside Portugal's own flag during the year-long transitional government that followed the September 1974 Lusaka Accord between Portugal and FRELIMO, this flag was nearly identical to the design Mozambique adopted at full independence the following year, but without the star and emblem that would crown it.",
+    sources: [
+      { title: "The Flag of Mozambique: A Symbol of Liberation and Independence — Young Pioneer Tours", url: "https://www.youngpioneertours.com/flag-of-mozambique/" },
     ],
   },
   "mz-portugal": {
@@ -11274,6 +11298,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal of the United States Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_United_States_Virgin_Islands" },
     ],
   },
+  "vn-south": {
+    description: "First introduced 2 June 1948 as the flag of the French-associated State of Vietnam and continued by the Republic of Vietnam (South Vietnam) after 1955, this yellow flag with three horizontal red stripes revived a design Emperor Thành Thái had used in 1890. The three stripes are read as representing Càn (Qian), the heaven trigram of the I Ching, and the flag disappeared when Vietnam was reunified under the North's flag on 2 July 1976.",
+    sources: [
+      { title: "Flag of South Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Vietnam" },
+    ],
+  },
+  "vn-north": {
+    description: "Adopted by decree on 5 September 1945, three days after Ho Chi Minh proclaimed Vietnamese independence, this red flag bearing a yellow five-pointed star was the banner of the Việt Minh, the communist-led movement that had fought Japanese occupation, and became the flag of the new Democratic Republic of Vietnam (North Vietnam). Red stands for the revolution and the blood shed for it, and the star's five points for the alliance of workers, peasants, soldiers, intellectuals and youth; a 1955 revision straightened the star's points and reduced its size, and the same flag became Vietnam's national flag at reunification in 1976.",
+    sources: [
+      { title: "Discover the Vietnamese flag: history, meaning, and symbols — Parfum d'Automne", url: "https://parfumdautomne.fr/en/discover-the-vietnamese-flag-history-meaning-and-symbols/" },
+    ],
+  },
   "vn-pavn": {
     description: "The motto \"Quyết thắng\" (\"Determined to win\"), added to the national flag's canton, is a longstanding rallying phrase of Vietnamese military tradition, carried on the People's Army of Vietnam's own flag since its wars for independence and reunification.",
     sources: [
@@ -11481,6 +11517,30 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The African fish eagle is Zambia's own national bird and crowns its national coat of arms — adapted from the 1927 arms of the British protectorate of Northern Rhodesia at independence in 1964 — where it is read as a symbol of the country's freedom, strength and aspiration to rise above adversity.",
     sources: [
       { title: "Coat of arms of Zambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia" },
+    ],
+  },
+  "zw-zimbabwe-rhodesia": {
+    description: "The flag of Zimbabwe Rhodesia, the biracial transitional government formed under the 1978 internal settlement, added the same soapstone Zimbabwe Bird from the old Rhodesian arms — a device recalling the medieval Great Zimbabwe ruins — to a new field. Like its predecessor it went unrecognised by any state, and lasted barely six months in 1979 before Britain resumed direct rule for the Lancaster House negotiations that led to Zimbabwe's internationally recognised independence in 1980.",
+    sources: [
+      { title: "Zimbabwe Rhodesia (1979) — Flags of the World", url: "https://www.fotw.info/flags/zw-zrhod.html" },
+    ],
+  },
+  "zw-rhodesia-1968": {
+    description: "Adopted for Rhodesia's declared independence, raised at ceremonies across the country on 11 November 1968, this green-white-green flag centred the Rhodesian coat of arms on the white band — a lion and thistles taken from the personal arms of Cecil Rhodes, a soapstone bird recalling the Great Zimbabwe ruins, and a gold pick for the country's mining industry. No foreign government recognised Rhodesia's white-minority government, which had unilaterally declared independence from Britain in 1965; the flag flew until the 1979 internal settlement.",
+    sources: [
+      { title: "Zimbabwe: Rhodesia (1968–1979) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/zw-rhod.html" },
+    ],
+  },
+  "zw-southern-rhodesia": {
+    description: "Southern Rhodesia's Blue Ensign, defaced with the colony's arms after Royal Warrant granted them on 11 August 1924: a shield bearing a red lion passant and two thistles, drawn from the personal coat of arms of Cecil Rhodes, after whom the territory was named when it became a self-governing British colony in 1923.",
+    sources: [
+      { title: "Flag of Southern Rhodesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Southern_Rhodesia" },
+    ],
+  },
+  "zw-bsac": {
+    description: "Adopted in 1892, the flag of the British South Africa Company — the chartered company through which Cecil Rhodes administered the territory that became Rhodesia under an 1889 royal charter — defaced the Union Flag with a white disc bearing a lion and elephant tusk above the initials 'B.S.A.C.'. Company rule ended in 1923, when Southern Rhodesia was granted responsible self-government and adopted the plain British Union Flag before a colonial ensign followed.",
+    sources: [
+      { title: "Flag of the British South Africa Company — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_British_South_Africa_Company" },
     ],
   },
   "zw-army": {
