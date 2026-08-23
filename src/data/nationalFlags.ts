@@ -6017,6 +6017,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Iraq — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
     ],
   },
+  "ir-1933": {
+    description: "The Lion and Sun began not as a flag but as an astrological and royal emblem: in Persian tradition the sun in the zodiac sign of Leo signified strength and kingship, and the lion stood for power and guardianship, appearing on coins and manuscripts for centuries before it reached a flag. In the Safavid era it came to represent the twin pillars of state and religion, and under the Qajar and Pahlavi dynasties the lion was typically shown holding a sword, standing for bravery and sovereignty, until it was dropped from Iran's flag after the 1979 revolution.",
+    sources: [
+      { title: "The Lion & Sun: A Symbol of Persian Legacy", url: "https://thelionandthesun.org/378/the-lion-sun-a-symbol-of-persian-legacy/" },
+    ],
+  },
+  "ir-qajar": {
+    description: "The Lion and Sun began not as a flag but as an astrological and royal emblem: in Persian tradition the sun in the zodiac sign of Leo signified strength and kingship, and the lion stood for power and guardianship, appearing on coins and manuscripts for centuries before it reached a flag. In the Safavid era it came to represent the twin pillars of state and religion, and under the Qajar and Pahlavi dynasties the lion was typically shown holding a sword, standing for bravery and sovereignty, until it was dropped from Iran's flag after the 1979 revolution.",
+    sources: [
+      { title: "The Lion & Sun: A Symbol of Persian Legacy", url: "https://thelionandthesun.org/378/the-lion-sun-a-symbol-of-persian-legacy/" },
+    ],
+  },
   "ir-naval-jack": {
     description: "The naval jack of the Islamic Republic of Iran Navy is a dark blue field bearing the national emblem in yellow — the same stylised device found at the centre of the national flag. Designed by the architect Hamid Nadimi and adopted after the 1979 revolution, the emblem can be read simultaneously as a tulip, a flower long associated with martyrdom in Iranian tradition, as a stylised rendering of the word 'Allah', and as two crescents; it replaced the monarchy's earlier lion-and-sun device.",
     sources: [
@@ -6046,6 +6058,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Dannebrog — a white Scandinavian cross, offset toward the hoist, on a red field — is Denmark's flag and, by a legend dating it to a battle near Tallinn in 1219, one of the world's oldest continuously used flag designs, though its first confirmed use dates to the 14th century. The white cross stands for Christianity and the red field for the Danish people; its off-centre cross design became the template every other Nordic country's flag later followed.",
     sources: [
       { title: "800 years of Dannebrog — denmark.dk", url: "https://denmark.dk/people-and-culture/dannebrog-800-years/" },
+    ],
+  },
+  "is-kalmar": {
+    description: "The Kalmar Union's banner — a red Nordic cross, off-centre toward the hoist, on a yellow field — marked the 1397 union of Denmark, Norway and Sweden under one crown by Queen Margaret I. Its colours drew primarily from Norway's own royal arms, with the yellow field also echoing the arms of Sweden and Denmark, giving the three kingdoms a shared banner distinct from any one of their own.",
+    sources: [
+      { title: "Emblems of the Kalmar Union — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblems_of_the_Kalmar_Union" },
     ],
   },
   "is-president": {
@@ -6184,6 +6202,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold saltire on green-and-black repeats Jamaica's own national flag: black for the strength and creativity of the people in overcoming hardship, gold for the island's wealth and sunshine, and green for its vegetation and hope. The X-shaped saltire was chosen over stripes specifically so the flag would not resemble any other nation's.",
     sources: [
       { title: "Flag of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
+    ],
+  },
+  "jo-transjordan": {
+    description: "Emir Abdullah I's flag for Transjordan adapted the Arab Revolt's black-white-green horizontal tricolour, itself drawn from the pan-Arab colours: black for the Abbasid dynasty's banner, white for the Umayyads, and green for the Fatimids, in reference to the Prophet's own green cloak. Its red hoist triangle marked the ruling Hashemite dynasty and the 1916 Arab Revolt against Ottoman rule; a seven-pointed star was added to the triangle only later, in the flag Jordan still flies today.",
+    sources: [
+      { title: "Flag of the Arab Revolt — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Arab_Revolt" },
     ],
   },
   "jo-army": {
