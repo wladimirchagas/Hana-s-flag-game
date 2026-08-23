@@ -6372,6 +6372,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "State Seal of Myanmar — Wikipedia", url: "https://en.wikipedia.org/wiki/State_Seal_of_Myanmar" },
     ],
   },
+  "mm-passport": {
+    description: "Myanmar's passport bears the state seal: a map of the country at its centre, flanked by two chinthe — mythical half-lion, half-dragon guardian creatures found at the entrances of Burmese pagodas and temples. In Buddhist tradition the chinthe is a symbol of goodness and protection, and here the pair stand for the state's protection of the nation shown on the map between them.",
+    sources: [
+      { title: "National symbols of Myanmar — Wikipedia", url: "https://en.wikipedia.org/wiki/National_symbols_of_Myanmar" },
+    ],
+  },
   "mm-football-crest": {
     description: "The chinthe is a mythical guardian lion of Burmese tradition, traditionally placed at temple entrances to ward off evil, and is one of Myanmar's most recognisable national symbols of strength and protection.",
     sources: [
@@ -6454,6 +6460,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "mr-arms": {
     description: "A gold star and crescent — the emblems of Islam — stand between a date palm and an ear of millet, the tree and the grain of the country, on the green of the flag. The ring around them names the Islamic Republic of Mauritania in Arabic and French.",
+    sources: [
+      { title: "Seal of Mauritania — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Mauritania" },
+    ],
+  },
+  "mr-passport": {
+    description: "Mauritania's passport bears the national seal, based on the design of the national flag adopted in 2017: a gold crescent and star for Islam on a field of green — for Islam — and red, for the bloodshed of those who fought for independence, ringed with the country's name in Arabic and French.",
     sources: [
       { title: "Seal of Mauritania — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Mauritania" },
     ],

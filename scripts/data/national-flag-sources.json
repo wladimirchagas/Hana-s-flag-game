@@ -20202,7 +20202,16 @@
           "design": "The cover of the Myanmar passport.",
           "source": "https://gicg.net/passport/mm/",
           "sha256": "573c4dec4980d885d13a8c223bce1335186295e90e56293a9366fc4d1b16ed52",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Myanmar's passport bears the state seal: a map of the country at its centre, flanked by two chinthe — mythical half-lion, half-dragon guardian creatures found at the entrances of Burmese pagodas and temples. In Buddhist tradition the chinthe is a symbol of goodness and protection, and here the pair stand for the state's protection of the nation shown on the map between them.",
+            "sources": [
+              {
+                "title": "National symbols of Myanmar — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_symbols_of_Myanmar"
+              }
+            ]
+          }
         },
         {
           "id": "mm-uk",
@@ -20709,7 +20718,16 @@
           "design": "The cover of the Mauritania passport.",
           "source": "https://gicg.net/passport/mr/",
           "sha256": "e13bdb40291efdf0ce7a2a85b56053b3c1392647927f668398afa6378140d2f2",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Mauritania's passport bears the national seal, based on the design of the national flag adopted in 2017: a gold crescent and star for Islam on a field of green — for Islam — and red, for the bloodshed of those who fought for independence, ringed with the country's name in Arabic and French.",
+            "sources": [
+              {
+                "title": "Seal of Mauritania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_Mauritania"
+              }
+            ]
+          }
         },
         {
           "id": "mr-football-crest",
