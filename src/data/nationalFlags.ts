@@ -6798,6 +6798,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
   },
+  "kg-ssr": {
+    description: "The red field, gold hammer and sickle and five-pointed star marked every Soviet republic's flag as part of the USSR, the hammer for industrial workers and the sickle for the peasantry; the Kirghiz SSR's light-blue stripes and white central band were widely read as recalling Kyrgyzstan's mountain skies and snow.",
+    sources: [
+      { title: "Flag of the Kirghiz Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Kirghiz_Soviet_Socialist_Republic" },
+    ],
+  },
   "kg-russian-empire": {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
     sources: [
@@ -7650,6 +7656,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Moldova is one of the very few countries whose flag has ever differed front and back. From 1990 to 2010 the reverse officially carried NO coat of arms — just the plain blue-yellow-red tricolour — so the eagle emblem appeared on the obverse alone. A 2010 law redefined the reverse as a mirror image of the obverse, placing the (reversed) arms on both sides and making the two faces symmetrical.",
     sources: [
       { title: "Flag of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
+    ],
+  },
+  "md-ssr": {
+    description: "The red field, gold hammer and sickle and five-pointed star marked every Soviet republic's flag as part of the USSR, the hammer for industrial workers and the sickle for the peasantry; the Moldavian SSR's own green central stripe distinguished its flag from its neighbours' and echoed the green found in the flag Moldova adopted at independence in 1990.",
+    sources: [
+      { title: "Flag of the Moldavian Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Moldavian_Soviet_Socialist_Republic" },
     ],
   },
   "md-russian-empire": {
@@ -8774,6 +8786,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The silver fern has marked New Zealand sporting teams since the 1888–89 New Zealand Native rugby team's tour of Britain, and was carried by New Zealand's expeditionary forces in both World Wars — it is engraved on the Commonwealth war graves of fallen New Zealand soldiers. It is shared today across the country's national teams, including the women's football side, the Football Ferns.",
     sources: [
       { title: "Silver fern — Wikipedia", url: "https://en.wikipedia.org/wiki/Silver_fern" },
+    ],
+  },
+  "om-muscat": {
+    description: "A plain red banner — the customary colour of Omani and wider Gulf Arab flags for centuries, with roots reportedly reaching back over a millennium — flew alone as the flag of the Sultanate of Muscat and Oman until 1970, when Sultan Qaboos bin Said, having deposed his father, added white and green bands and the crest of the ruling Al Said dynasty to modernise the flag as part of his wider reform of the state.",
+    sources: [
+      { title: "Sultanate of Muscat and Oman until 1970 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/om_musca.html" },
     ],
   },
   "om-army": {
@@ -10509,6 +10527,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "War elephant — Wikipedia", url: "https://en.wikipedia.org/wiki/War_elephant" },
     ],
   },
+  "tj-ssr": {
+    description: "The red field, gold hammer and sickle and five-pointed star marked every Soviet republic's flag as part of the USSR, the hammer for industrial workers and the sickle for the peasantry; the Tajik SSR was distinctive among the Soviet republics for using the Pan-Iranian colours — red, white and green — in its central stripes, a nod to Tajikistan's Persian-descended culture and language, setting it apart from its Turkic-speaking Central Asian neighbours.",
+    sources: [
+      { title: "Flag of the Tajik Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Tajik_Soviet_Socialist_Republic" },
+    ],
+  },
   "tj-russian-empire": {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
     sources: [
@@ -10540,6 +10564,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Tokelau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tokelau" },
     ],
   },
+  "tl-indonesian": {
+    description: "Indonesia's own national flag was flown over East Timor for the entire 24 years of Indonesian occupation, from the December 1975 invasion — a week after East Timor's Fretilin movement had declared independence from Portugal — through Indonesia's unilateral 1976 annexation of the territory as its 27th province, which the United Nations never recognised, until a 1999 UN-sponsored referendum led to East Timor's independence in 2002. Estimates of deaths during the occupation, from violence, forced resettlement and famine, range as high as 100,000–200,000 or more, in a period widely characterised as genocide.",
+    sources: [
+      { title: "Indonesian occupation of East Timor — Wikipedia", url: "https://en.wikipedia.org/wiki/Indonesian_occupation_of_East_Timor" },
+    ],
+  },
   "tl-portuguese": {
     description: "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
     sources: [
@@ -10556,6 +10586,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Timor-Leste's passport bears the national emblem: a five-pointed white star over a black-and-white mountain — Mount Ramelau, the country's highest peak — representing guidance and the five principles of independence, unity, justice, social solidarity and equality, ringed by rice and maize for agriculture and the people's wisdom. Yellow signifies wealth, black the darkness the nation had to overcome, and red the love of homeland and the struggle for independence.",
     sources: [
       { title: "National emblem of Timor-Leste — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Timor-Leste" },
+    ],
+  },
+  "tm-ssr": {
+    description: "The red field, gold hammer and sickle and five-pointed star marked every Soviet republic's flag as part of the USSR, the hammer for industrial workers and the sickle for the peasantry; Turkmenistan's SSR flag was otherwise nearly plain scarlet, without the coloured central stripe most other republics used to assert a distinct national identity — a choice later reversed dramatically at independence in 1991, when Turkmenistan adopted one of the world's most elaborately patterned flags, its green field bearing a column of traditional carpet-weaving guls.",
+    sources: [
+      { title: "Flag of the Turkmen Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Turkmen_Soviet_Socialist_Republic" },
     ],
   },
   "tm-russian-empire": {
@@ -10592,6 +10628,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Traced to the reign of Al-Husayn II ibn Mahmud, who after the 1827 Battle of Navarino wanted a distinct ensign for his own fleet rather than the general Ottoman flag, this red field with a white disc bearing a red crescent and star became the beylik's recognised standard by 1831 and continued through the era of the French protectorate. Red recalls the blood of those who resisted invasion, and white stands for peace; the crescent represents Islam and unity, and the five-pointed star the Five Pillars of Islam.",
     sources: [
       { title: "Flag of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
+    ],
+  },
+  "tn-hafsid": {
+    description: "The Hafsid dynasty, which ruled Ifriqiya (roughly modern Tunisia, together with parts of eastern Algeria and western Libya) from 1229 to 1574, was recorded by European sources from at least the 14th century flying a yellow or red flag bearing a white or yellow crescent — common Islamic iconography of the wider Maghreb. Documentation of the exact Hafsid design is sparse and largely reconstructed from foreign accounts and later manuscripts, such as the 1375 Catalan Atlas.",
+    sources: [
+      { title: "Hafsid dynasty — Wikipedia (IPFS mirror)", url: "https://en.wikipedia-on-ipfs.org/wiki/Hafsid_dynasty" },
     ],
   },
   "tn-military": {
@@ -10802,6 +10844,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The colours repeat Tanzania's own national flag: green for the country's vegetation and agriculture, black for its Swahili people, blue for the Indian Ocean and its lakes and rivers, and gold for its mineral wealth.",
     sources: [
       { title: "Flag of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
+    ],
+  },
+  "ua-1991": {
+    description: "As Ukraine restored independence in 1991, the historic blue-over-yellow flag — banned since the Soviet era, when it had been the flag of the short-lived Ukrainian People's Republic (1917–1921) — was provisionally readopted that September in a lighter sky-blue shade before parliament fixed the darker, more practical azure blue used today when it formally confirmed the flag on 28 January 1992.",
+    sources: [
+      { title: "Flag of Ukraine: History and meaning — ukraine.ua", url: "https://ukraine.ua/faq/flag-of-ukraine-history-and-meaning/" },
     ],
   },
   "ua-ssr": {
@@ -11259,6 +11307,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "AUF is the association's own initials, Asociación Uruguaya de Fútbol. The four stars mark four FIFA-recognised world championships — the 1924 and 1928 Olympic football tournaments (the only Olympic titles ever retroactively treated as equivalent to a World Cup) and the 1930 and 1950 FIFA World Cups. Uruguay only added the stars in 1992, after the football historian Atilio Garrido produced Uruguay's own 1925 and 1929 submissions to FIFA claiming world-champion status for the Olympic wins; a FIFA staffer asked in 2021 that two of the four be removed, but FIFA withdrew the request once Uruguay presented that same historical evidence again, and all four stars remain.",
     sources: [
       { title: "Four stars above Uruguay's football crest — Wikipedia", url: "https://en.wikipedia.org/wiki/Four_stars_above_Uruguay%27s_football_crest" },
+    ],
+  },
+  "uz-ssr": {
+    description: "The red field, gold hammer and sickle and five-pointed star marked every Soviet republic's flag as part of the USSR, the hammer for industrial workers and the sickle for the peasantry; the Uzbek SSR's white-edged blue stripe running the length of the flag anticipated the blue band that leads Uzbekistan's own post-independence flag, adopted in 1991.",
+    sources: [
+      { title: "Flag of the Uzbek Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Uzbek_Soviet_Socialist_Republic" },
     ],
   },
   "uz-russian-empire": {
