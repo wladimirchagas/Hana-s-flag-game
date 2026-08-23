@@ -3532,6 +3532,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Democratic Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Democratic_Republic_of_the_Congo" },
     ],
   },
+  "cd-passport": {
+    description: "The Democratic Republic of the Congo's passport bears the national emblem, introduced in 2006: a leopard's head at the centre, one of the most respected animals in Congolese culture and a symbol of the state's authority, courage and vigilance, flanked by an elephant tusk (recalling the historic ivory trade and the country's wildlife) and a spear (for readiness to defend sovereignty) — both traditional symbols of power among the region's 19th-century local rulers, and part of the country's arms since 1963. Below runs the national motto, \"Justice, Paix, Travail\" — \"Justice, Peace, Work\".",
+    sources: [
+      { title: "Emblem of the Democratic Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_Democratic_Republic_of_the_Congo" },
+    ],
+  },
   "cd-football-crest": {
     description: "The leopard gives the national team its own nickname, Les Léopards, adopted in 1965; when President Mobutu Sese Seko — known for his trademark leopard-skin cap — was ousted in 1997, the team was briefly renamed Simbas (Swahili for lions) before reclaiming the Léopards name under the country's 2006 constitution.",
     sources: [
@@ -3545,6 +3551,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Central African Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Central_African_Republic" },
     ],
   },
+  "cf-passport": {
+    description: "The Central African Republic's passport bears the national coat of arms, adopted 17 May 1963: an elephant and baobab tree for the country's nature, a gold star on a map of Africa marking the country's location on the continent, three diamonds for its mineral wealth, and an open hand — the emblem of MESAN, the dominant political party at independence. A sun rises over the shield beneath two mottos: \"Zo kwe zo\" in Sango, \"All people are people\", and the French \"Unité, Dignité, Travail\" — \"Unity, Dignity, Labour\".",
+    sources: [
+      { title: "Coat of arms of the Central African Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Central_African_Republic" },
+    ],
+  },
   "cf-football-crest": {
     description: "The flag deliberately combines the colours of France (blue and white) with the Pan-African colours (green and yellow): blue for the sky and freedom, white for peace and dignity, green for hope and faith, and yellow for tolerance. The red stripe crossing all four bands stands for the shared blood of humanity — designer Barthélemy Boganda's own expression of a willingness to shed blood for both Africa and the Central African Republic — and the gold star for the country's aspiration to a vibrant future.",
     sources: [
@@ -3553,6 +3565,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "cg-arms": {
     description: "On a gold shield a red lion holds a burning torch, above a green wavy band for the Congo River that names the country. A golden crown sits above, and two African elephants — the great animals of the Congo forests — support the shield. The ribbon carries the motto Unité, Travail, Progrès — “Unity, Work, Progress.”",
+    sources: [
+      { title: "Coat of arms of the Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo" },
+    ],
+  },
+  "cg-passport": {
+    description: "The Republic of the Congo's passport bears the national coat of arms, adopted in 1960 and readopted in 1991 after being replaced by a simpler socialist-era emblem during the 1970–1991 People's Republic period: a red lion holding a torch on a gold shield crossed by a green wavy stripe, supported by two African elephants. The lion represents courage and strength, its torch the light of freedom, and the gold field the country's natural riches; the motto beneath reads \"Unité, Travail, Progrès\" — \"Unity, Work, Progress\".",
     sources: [
       { title: "Coat of arms of the Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo" },
     ],
