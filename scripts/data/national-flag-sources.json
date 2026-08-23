@@ -10068,7 +10068,16 @@
           "design": "The first Francoist arms, with the eagle's wings spread wide.",
           "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
           "sha256": "e5656a5287146dfcf768e1f211fc2825f91c9e78f134d614d8bbeeab72cc4744",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The first Francoist coat of arms placed the crowned royal shield before a black eagle spreading its wings — the Eagle of Saint John, a heraldic device tied to the Catholic Monarchs Ferdinand and Isabella that Franco's regime revived to claim their religious and imperial legacy. It bore the Pillars of Hercules, the yoke and arrows of the Catholic Monarchs, and a scroll reading \"Una, Grande y Libre\" (\"One, Great and Free\"), summing up the Nationalist regime's ideology of unity and authoritarian rule.",
+            "sources": [
+              {
+                "title": "Symbols of Francoism — Grokipedia",
+                "url": "https://grokipedia.com/page/Symbols_of_Francoism"
+              }
+            ]
+          }
         },
         {
           "id": "es-1931",
@@ -10319,7 +10328,16 @@
           "design": "A horizontal tricolour of green, yellow and red — the first rectangular Ethiopian flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags",
           "sha256": "df437917ec7d927645e3f23780db85a25034972e594ab8a802ad0ca85ce636ac",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Ethiopia's green-yellow-red tricolour, introduced under Emperor Menelik II in 1897 shortly after Ethiopia's victory over Italy at the Battle of Adwa, was the first rectangular Ethiopian flag and is counted as the oldest tricolour flown by an independent African state. Its colours were later adopted by many other African nations at independence, in a deliberate nod to Ethiopia as a symbol of African sovereignty that had never been colonised.",
+            "sources": [
+              {
+                "title": "Flag of Ethiopia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Ethiopia"
+              }
+            ]
+          }
         },
         {
           "id": "et-1875",
@@ -11826,7 +11844,16 @@
           "design": "The red flag with a blue-bordered hammer, sickle and sun in the canton — the republic's flag within the Soviet Union.",
           "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
           "sha256": "9f56dd85ffac80efaed70b943d90a01f8117c1977bbef236cbdb83dcb43b7c61",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Georgian SSR's flag carried a red hammer and sickle beneath a red star inside a blue sun in the canton, with a blue stripe along the top — uniquely among Soviet republics, its hammer and sickle were red rather than the usual gold. No official Soviet-era document explained the blue elements, but they are popularly read as the sky and the Black Sea coast of Georgia.",
+            "sources": [
+              {
+                "title": "Flag of the Georgian Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Georgian_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "ge-president",
@@ -13988,7 +14015,16 @@
           "design": "The black-and-red flag of the Duvalier dictatorship, which replaced the blue and red from 1964 until 1986.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Haiti",
           "sha256": "a47cf5a1bac646da53759cad52aa6bf8357e22196cd3e1f18548148bbcc72ff7",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "François \"Papa Doc\" Duvalier replaced Haiti's blue-and-red flag with black and red in 1964, arguing these were the nation's true colours and framing the change as part of a \"noiriste\" black-revolution ideology asserting Haiti's African heritage over its mixed-race elite. The black-and-red flag remained official until the Duvalier dynasty's fall in 1986, when Haiti restored its earlier blue-and-red design.",
+            "sources": [
+              {
+                "title": "Haiti - Historical Flags — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ht-hist.html"
+              }
+            ]
+          }
         },
         {
           "id": "ht-french",

@@ -4772,6 +4772,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
     ],
   },
+  "es-1938": {
+    description: "The first Francoist coat of arms placed the crowned royal shield before a black eagle spreading its wings — the Eagle of Saint John, a heraldic device tied to the Catholic Monarchs Ferdinand and Isabella that Franco's regime revived to claim their religious and imperial legacy. It bore the Pillars of Hercules, the yoke and arrows of the Catholic Monarchs, and a scroll reading \"Una, Grande y Libre\" (\"One, Great and Free\"), summing up the Nationalist regime's ideology of unity and authoritarian rule.",
+    sources: [
+      { title: "Symbols of Francoism — Grokipedia", url: "https://grokipedia.com/page/Symbols_of_Francoism" },
+    ],
+  },
   "es-1931": {
     description: "The Second Spanish Republic's flag, adopted in 1931, replaced the lower red stripe of the monarchy's red-yellow-red flag with purple (murrey) to mark the new republican era, drawing on an early-20th-century republican belief that purple had been the colour of a legendary banner carried by the Comuneros of Castile in their 1520–21 revolt against Charles V.",
     myths: [
@@ -4829,6 +4835,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain" },
       { title: "Royal Spanish Football Federation — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Spanish_Football_Federation" },
       { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
+    ],
+  },
+  "et-1897": {
+    description: "Ethiopia's green-yellow-red tricolour, introduced under Emperor Menelik II in 1897 shortly after Ethiopia's victory over Italy at the Battle of Adwa, was the first rectangular Ethiopian flag and is counted as the oldest tricolour flown by an independent African state. Its colours were later adopted by many other African nations at independence, in a deliberate nod to Ethiopia as a symbol of African sovereignty that had never been colonised.",
+    sources: [
+      { title: "Flag of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
     ],
   },
   "et-arms": {
@@ -5168,6 +5180,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The colours, stars and central disc are taken from Grenada's national flag: the gold stars stand for the country's parishes and its two sister islands of Carriacou and Petite Martinique, the green represents the islands' vegetation, and the gold evokes the sun and the warmth of Grenadians.",
     sources: [
       { title: "Flag of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
+    ],
+  },
+  "ge-ssr": {
+    description: "The Georgian SSR's flag carried a red hammer and sickle beneath a red star inside a blue sun in the canton, with a blue stripe along the top — uniquely among Soviet republics, its hammer and sickle were red rather than the usual gold. No official Soviet-era document explained the blue elements, but they are popularly read as the sky and the Black Sea coast of Georgia.",
+    sources: [
+      { title: "Flag of the Georgian Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Georgian_Soviet_Socialist_Republic" },
     ],
   },
   "ge-russian-empire": {
@@ -5626,6 +5644,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Croatian checkerboard — Wikipedia", url: "https://en.wikipedia.org/wiki/Croatian_checkerboard" },
       { title: "Croatian Football Federation — Wikipedia", url: "https://en.wikipedia.org/wiki/Croatian_Football_Federation" },
+    ],
+  },
+  "ht-duvalier": {
+    description: "François \"Papa Doc\" Duvalier replaced Haiti's blue-and-red flag with black and red in 1964, arguing these were the nation's true colours and framing the change as part of a \"noiriste\" black-revolution ideology asserting Haiti's African heritage over its mixed-race elite. The black-and-red flag remained official until the Duvalier dynasty's fall in 1986, when Haiti restored its earlier blue-and-red design.",
+    sources: [
+      { title: "Haiti - Historical Flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ht-hist.html" },
     ],
   },
   "ht-french": {
