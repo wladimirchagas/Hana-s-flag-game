@@ -4255,6 +4255,14 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
     ],
   },
+  "ge-army": {
+    description: "The Georgian Land Force's flag reverses the colours of the national Five Cross Flag: a red field bearing the cross pattern in white, rather than the national flag's white field with red crosses. The large central cross recalls Saint George, Georgia's patron saint, symbolising the country's Christian Orthodox faith and history of resistance; the four smaller Bolnisi crosses — an ancient Georgian cross form named for the 5th-century Bolnisi Sioni church — traditionally represent the four Evangelists (Matthew, Mark, Luke and John).",
+    sources: [
+      { title: "List of Georgian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Georgian_flags" },
+      { title: "Georgia: Military flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ge%5Emil.html" },
+      { title: "Flag of Georgia (country) — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Georgia_(country)" },
+    ],
+  },
   "ge-president": {
     description: "A white square, bordered red with a ring of wolf-teeth points, bears Georgia's lesser state coat of arms: on a purple field, Saint George — the country's patron saint, venerated since Late Antiquity — mounted on a silver horse, spearing a silver dragon with a spear tipped by a golden cross, expressing valour and triumph; adopted by presidential decree in 2020, the design omits the crown that tops the fuller state arms.",
     sources: [

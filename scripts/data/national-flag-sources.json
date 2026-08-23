@@ -10461,7 +10461,24 @@
           "design": "The land force's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
           "sha256": "dcf5d404f178b177544aee9dc203b5228308eda982290fde62c8b07d05bfad26",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Georgian Land Force's flag reverses the colours of the national Five Cross Flag: a red field bearing the cross pattern in white, rather than the national flag's white field with red crosses. The large central cross recalls Saint George, Georgia's patron saint, symbolising the country's Christian Orthodox faith and history of resistance; the four smaller Bolnisi crosses — an ancient Georgian cross form named for the 5th-century Bolnisi Sioni church — traditionally represent the four Evangelists (Matthew, Mark, Luke and John).",
+            "sources": [
+              {
+                "title": "List of Georgian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Georgian_flags"
+              },
+              {
+                "title": "Georgia: Military flags — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ge%5Emil.html"
+              },
+              {
+                "title": "Flag of Georgia (country) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Georgia_(country)"
+              }
+            ]
+          }
         },
         {
           "id": "ge-arms",
