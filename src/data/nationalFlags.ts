@@ -5423,6 +5423,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Kyrgyzstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kyrgyzstan" },
     ],
   },
+  "kg-passport": {
+    description: "Kyrgyzstan's passport bears the state coat of arms: a white falcon, Ak-Shumkar, wings spread wide as a symbol of freedom, generosity and vigilance, framing Lake Issyk-Kul ringed by the snow-capped peaks of the Ala-Too range — the country's own \"land of mountains\" landscape. Stalks of wheat and cotton flank the emblem, representing Kyrgyzstan's agriculture.",
+    sources: [
+      { title: "National Emblem of Kyrgyzstan — Advantour", url: "https://www.advantour.com/kyrgyzstan/emblem.htm" },
+    ],
+  },
   "kg-football-crest": {
     description: "The snow leopard is Kyrgyzstan's national animal and gives Kyrgyz youth teams their \"Ак барстар\" (Snow Leopards) nickname; the sun-and-tunduk motif on the ball echoes the national flag, where the 40 rays represent the tribes united by the hero Manas and the tunduk at the centre is the crown of a traditional yurt, symbolising home and the unity of time and space.",
     sources: [
@@ -5571,6 +5577,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "kw-emblem": {
     description: "Adopted in 1962, a year after independence, and designed by Mohammed Husni Zaki after the council of ministers asked for an emblem of Kuwait's past, present and future. The falcon is the Hawk of Quraish, the device of the line the Prophet Muhammad belonged to, found across the emblems of the Arabian peninsula; on its breast it carries a shield in the colours of the national flag. The dhow sailing before the rising sun is the country's maritime tradition — the pearling and trading fleet Kuwait was built on — and it is the same device Qatar still carries and the UAE carried until 2008. It replaced an older emblem of a falcon between two crossed flags.",
+    sources: [
+      { title: "Emblem of Kuwait — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kuwait" },
+    ],
+  },
+  "kw-passport": {
+    description: "Kuwait's passport bears the national emblem, adopted in 1962: a golden falcon with wings displayed, its breast bearing the national flag's own shield design. The falcon recalls the Banu Quraish, the tribal line of the Prophet Muhammad, and appears across many coats of arms on the Arabian Peninsula; falconry itself is a historic pastime of Gulf rulers, making the bird a natural emblem of prestige. The falcon supports a disc showing a traditional dhow sailing vessel, a nod to Kuwait's seafaring and pearling heritage.",
     sources: [
       { title: "Emblem of Kuwait — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kuwait" },
     ],
@@ -7182,6 +7194,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Qatar — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Qatar" },
     ],
   },
+  "qa-passport": {
+    description: "Qatar's maroon passport bears the national emblem: two crossed swords for the country's readiness to defend its sovereignty, framing a traditional dhow named Fath al-Khair (\"Bringer of Goodness\") — the country's first motorised wooden vessel, built in 1900 for pearl diving and trade, and a symbol of the pearling industry that drove Qatar's early economic growth — flanked by two palm trees representing Arab dignity and hospitality.",
+    sources: [
+      { title: "Have you really seen Qatar's National Emblem? — Qatar Living", url: "https://www.qatarliving.com/en/article/have-you-really-seen-qatars-national-emblem" },
+    ],
+  },
   "qa-football-crest": {
     description: "The maroon-and-white and the nine-point serrated edge directly repeat Qatar's own national flag; the ball's engraved geometric pattern draws on traditional regional ornament rather than depicting a plain football. QFA is the association's own initials, the Qatar Football Association.",
     sources: [
@@ -7871,6 +7889,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A golden crown beneath a semicircle of seven stars — the crown (toj) that names the country and the seven stars the Tajik people hold sacred — rises over a sun and the peaks of the Pamir mountains. A wreath of wheat ears and cotton bolls, bound in the red, white and green of the flag, frames the whole, and an open book sits at the foot for knowledge.",
     sources: [
       { title: "Emblem of Tajikistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Tajikistan" },
+    ],
+  },
+  "tj-passport": {
+    description: "Tajikistan's passport bears the state emblem: a stylised crown beneath a semicircle of seven stars, rising in the rays of a sun over snow-capped mountains, framed by wheat ears on one side and cotton branches on the other, with an open book below. The crown is a deliberate reference to the Persian word \"taj\", meaning crown — the very root from which the Tajik people traditionally take their name.",
+    sources: [
+      { title: "Coat of arms — meteo.tj (Tajikistan)", url: "https://www.meteo.tj/en/national-emblem" },
     ],
   },
   "tj-football-crest": {
