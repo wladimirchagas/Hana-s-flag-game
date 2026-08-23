@@ -9159,6 +9159,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
     ],
   },
+  "se-union-1844": {
+    description: "From 1844, Sweden's blue-and-yellow Nordic cross carried the Swedish-Norwegian union badge in its canton — a device combining both kingdoms' colours in equal measure, introduced by King Oscar I to assert the two realms' equal status within their personal union. Detractors on both sides of the union nicknamed it \"the herring salad\" (sillsallaten) for its resemblance to the classic Scandinavian dish of pickled herring, beetroot and potato; the badge was dropped when the union with Norway was dissolved in 1905.",
+    sources: [
+      { title: "Union mark of Norway and Sweden — Wikipedia", url: "https://en.wikipedia.org/wiki/Union_mark_of_Norway_and_Sweden" },
+    ],
+  },
   "se-naval-ensign": {
     description: "Sweden's war flag and naval ensign is a triple-tailed ('tretungad') version of the national flag, reserved for the armed forces and the state, adopted in its modern form in 1905. The distinctive swallowtail-with-tongue shape descends from the King's own personal banner, which had grown a two-pointed tail by the mid-17th century and was formally reserved for state and military use by royal warrant in 1663 — making it one of the oldest naval ensign designs still flown anywhere in the world.",
     sources: [
@@ -9551,6 +9557,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Sint Maarten — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sint_Maarten" },
     ],
   },
+  "sy-baath": {
+    description: "Syria's Ba'athist-era flag reused the pan-Arab red-white-black tricolour and two green stars first adopted for the United Arab Republic (Egypt's 1958–1961 union with Syria): black for the era of colonial oppression Arabs had endured, white for peace and the hoped-for future of independent Arab states, red for the sacrifices and bloodshed of the fight for liberation, and green — the colour of the two stars — for Islam. Syria kept flying this design from 1980 until the fall of the Assad government in 2024, even though the union it once marked had long since dissolved.",
+    sources: [
+      { title: "Flag of the United Arab Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Republic" },
+    ],
+  },
   "sy-arms": {
     description: "Adopted on 3 July 2025 by the new government, the emblem replaces the Baʻathist Hawk of Quraish with a golden eagle drawn from the ancient motifs of Palmyra, standing for pride and leadership. The three stars above it are taken from the flag and stand for the people's liberation; the eagle's fourteen wing feathers are Syria's fourteen governorates, and its five tail feathers the country's five geographic regions — north, south, east, west and centre.",
     sources: [
@@ -9652,6 +9664,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The design repeats Togo's own national flag in full: the five green-and-yellow stripes for the country's five regions (green also for forests, agriculture and hope; yellow for natural resources, faith and maturity), the red canton for the blood shed in the independence struggle, and the white star for peace, intelligence and light.",
     sources: [
       { title: "Flag of Togo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
+    ],
+  },
+  "th-1855": {
+    description: "King Mongkut (Rama IV) decreed this flag in 1855, placing a white elephant on a plain red field. The white elephant had been a royal symbol in Siam since the 13th-century reign of King Ramkhamhaeng, and Mongkut added it because a plain red flag — already used by ships of several other nations — could not distinguish Siamese vessels from foreign ones; the design served as Siam's flag for 61 years until it was replaced in 1917.",
+    sources: [
+      { title: "Flag 1855-1916 (Thailand) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/th1855.html" },
     ],
   },
   "th-army": {
