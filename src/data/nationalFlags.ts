@@ -5412,6 +5412,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Libyan Army", url: "https://en.wikipedia.org/wiki/Libyan_Army" },
     ],
   },
+  "ly-jack": {
+    description: "Libya's naval ensign, flown since the 2011 revolution restored the pre-Gaddafi tricolour as the national flag, is a cerulean field with that flag in the canton and a white anchor in the fly. The anchor is the conventional maritime device marking the ensign as belonging to the navy, distinguishing it from the plain national flag flown ashore.",
+    sources: [
+      { title: "Flags of the World — Naval Forces, Libya", url: "https://www.crwflags.com/fotw/flags/ly~.html" },
+      { title: "Wikipedia — Flag of Libya", url: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    ],
+  },
   "ly-football-crest": {
     description: "The colours recall the flag designer Omar Faiek Shennib's stated symbolism: red for the blood sacrificed for Libya's freedom, black for the dark years under occupation, and green for agriculture and future prosperity; the crescent and star reference the Senussi dynasty's banner and King Idris, under whom Libya won independence in 1951.",
     sources: [
