@@ -16233,7 +16233,20 @@
           "design": "The air force's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Kazakh_flags",
           "sha256": "3740870d388330754133a68ab957a45a93bae102ce852cc429caf032b9ea5e05",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Kazakhstan Air Force's flag bears the same simplified sun-and-eagle emblem used across the country's armed forces flags, set within a red, gold-bordered star. The sun, shown here with fewer rays than the 32 on the national flag, stands for life and energy, while the steppe eagle — a device long used on the banners of Kazakh tribes — represents the freedom and lofty aspirations the national flag's own eagle expresses, adapted here to mark the air force specifically.",
+            "sources": [
+              {
+                "title": "Flags of the World — Kazakhstan Armed Forces",
+                "url": "https://www.crwflags.com/fotw/flags/kz%5E.html"
+              },
+              {
+                "title": "Wikipedia — Flag of Kazakhstan",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan"
+              }
+            ]
+          }
         },
         {
           "id": "kz-naval-ensign",
@@ -23495,7 +23508,20 @@
           "design": "A light blue ensign with the national flag in the canton and the air force roundel in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
           "sha256": "8e17ba5a7bc089f02867c1ca290ba490c01dc7c745e69bb46689938ff73cd7f9",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Ensign of the Pakistan Air Force is a light-blue field with the national flag in the canton and the service's own roundel — white and green rings around a spread eagle — in the fly. The eagle is the Shaheen, a bird of eastern heraldic tradition celebrated in the poetry of Allama Iqbal as an image of the ideal believer's grace, majesty and self-reliance, adopted as the emblem of the air force founded on Pakistan's independence in 1947.",
+            "sources": [
+              {
+                "title": "Flags of the World — Pakistan Air Force",
+                "url": "https://www.crwflags.com/fotw/flags/pk%5Eaf.html"
+              },
+              {
+                "title": "Wikipedia — List of Pakistani flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags"
+              }
+            ]
+          }
         },
         {
           "id": "pk-emblem",
