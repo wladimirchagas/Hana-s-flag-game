@@ -6659,7 +6659,20 @@
           "design": "The cover of the Colombia passport.",
           "source": "https://gicg.net/passport/co/",
           "sha256": "9c87fdb631bce4d5cd9382f3ce6962ed3f0d07059b77da10c69c7475ebd6a4c3",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "As a full Andean Community member, Colombia issues the bloc's shared bordeaux passport, reading \"COMUNIDAD ANDINA\" above the national coat of arms. That shield is divided into three: a pomegranate flanked by cornucopias of coins and tropical fruit at the top, recalling the colonial Viceroyalty of New Granada and its wealth; a Phrygian cap for liberty in the centre; and two ships below, representing the Isthmus of Panama (once part of Colombia) and, today, the country's coastlines on both the Atlantic and Pacific. An Andean condor perches above the shield holding an olive crown, beneath the motto \"Libertad y Orden\" — Liberty and Order.",
+            "sources": [
+              {
+                "title": "Andean passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Andean_passport"
+              },
+              {
+                "title": "Coat of arms of Colombia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia"
+              }
+            ]
+          }
         },
         {
           "id": "co-football-crest",
@@ -13082,7 +13095,20 @@
           "design": "The cover of the Indonesia passport.",
           "source": "https://gicg.net/passport/id/",
           "sha256": "966b8f614d8e910387a556dc5f304588bc495a504766c716504f55ef6448b878",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Indonesia's turquoise-green passport (in use since 2014) bears the Garuda Pancasila emblem in gold: a mythical golden eagle drawn from Hindu-Buddhist mythology, its golden colour signifying divine glory and sovereignty, gripping a scroll reading \"Bhinneka Tunggal Ika\" (\"Unity in Diversity\"). The shield on its breast carries the five symbols of Pancasila, Indonesia's founding national ideology, while the eagle's feather counts — 17 on each wing, 8 on the tail, 45 on the neck — encode the date of Indonesian independence: 17 August 1945.",
+            "sources": [
+              {
+                "title": "National emblem of Indonesia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia"
+              },
+              {
+                "title": "Indonesian Passport: Types, Validity, Application Process, and Features",
+                "url": "https://embassies.info/indonesia/passports"
+              }
+            ]
+          }
         },
         {
           "id": "id-nl",
@@ -23955,7 +23981,20 @@
           "design": "The cover of the Philippines passport.",
           "source": "https://gicg.net/passport/ph/",
           "sha256": "0b5183e4a858b314ade8e1dc507753fc899dbcc5edff65f37a99e3ebb5b783bb",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Philippine passport's maroon cover bears the national coat of arms in gold: an eight-rayed sun (for the eight provinces placed under martial law at the start of the 1896 Philippine Revolution) and three five-pointed stars for the country's three main island groups — Luzon, the Visayas and Mindanao — on a shield flanked by the American bald eagle, holding an olive branch and arrows, and the Spanish rampant lion. A 1998 law provided for removing the eagle and lion as colonial-era holdovers, but the constitutionally required referendum to ratify that change was never held, so both remain on the arms today.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Philippines — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Philippines"
+              },
+              {
+                "title": "Outdated Philippine coat of arms — Philippine Daily Inquirer",
+                "url": "https://opinion.inquirer.net/114149/outdated-philippine-coat-arms"
+              }
+            ]
+          }
         },
         {
           "id": "ph-football-crest",
