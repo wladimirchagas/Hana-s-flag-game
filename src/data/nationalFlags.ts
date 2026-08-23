@@ -3489,6 +3489,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Arms of Canada — Wikipedia", url: "https://en.wikipedia.org/wiki/Arms_of_Canada" },
     ],
   },
+  "ca-passport": {
+    description: "Canada's passport carries the Royal Coat of Arms — a lion and unicorn supporting a shield combining English, Scottish, Irish and French royal emblems, with three red maple leaves added as the arms' distinctively Canadian element, under the motto \"A Mari Usque Ad Mare\" (\"From Sea to Sea\"). The 2023 redesign moved the crest to the lower corner to make room for a partial maple-leaf outline across the cover, alongside interior pages that now favour Canadian nature scenes over the historical figures shown previously.",
+    sources: [
+      { title: "Maple leaf — Wikipedia", url: "https://en.wikipedia.org/wiki/Maple_leaf" },
+      { title: "Canada's new passport to show more nature and less history — CBC News", url: "https://www.cbc.ca/news/politics/canada-new-passport-more-nature-fewer-history-1.6838308" },
+    ],
+  },
   "ca-football-crest": {
     description: "The maple leaf is Canada's own national symbol, adopted by French Canadians along the Saint Lawrence River as early as the 1700s and formally centred on the national flag in 1965; the flag's own eleven-pointed leaf is stylised rather than any single maple species, standing for the many maple trees native to the country.",
     sources: [
@@ -3624,6 +3631,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Chile — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chile" },
     ],
   },
+  "cl-passport": {
+    description: "Chile's current passport (launched December 2024) uses a royal-blue cover matching the national flag's own blue, with \"República de Chile\" in copper-coloured lettering above the national coat of arms. Though several of Chile's South American neighbours issue the shared Andean Community passport, Chile itself does not — it is only an associate member of the Andean Community, not a full one, so its passport remains its own distinct design rather than the bloc's common bordeaux format.",
+    sources: [
+      { title: "Andean passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Andean_passport" },
+    ],
+  },
   "cl-football-crest": {
     description: "The badge repeats Chile's own national flag exactly — the blue canton, white star and red lower field — rather than drawing on the condor and huemul deer of the country's coat of arms. Federación de Fútbol de Chile is simply the association's own name, the Football Federation of Chile.",
     sources: [
@@ -3737,6 +3750,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The official description reads the arms as the country's geography: three volcanoes, one for each of its mountain ranges, and a broad valley between two oceans — the Pacific and the Caribbean — with a merchant ship on each, for the country's maritime history, under a rising sun. The stars above are a count that CHANGED: the 1848 design had five, one per province, and two more were added in 1964 to make seven when Puntarenas and Limón had reached provincial status. The arms are attributed to Pacífica Fernández, wife of President José María Castro Madriz, who designed the flag at the same time; the military trophies the original carried were removed by law in 1906.",
     sources: [
       { title: "Coat of arms of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica" },
+    ],
+  },
+  "cr-passport": {
+    description: "Costa Rica's passport also carries the inscription \"América Central\", following the same regional convention as its Central America-4 neighbours, even though Costa Rica is not itself a party to the CA-4 Border Control Agreement that lets Guatemala, Honduras, El Salvador and Nicaragua's citizens cross their shared borders without a passport check.",
+    sources: [
+      { title: "Central America-4 passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Central_America-4_passport" },
     ],
   },
   "cr-football-crest": {
@@ -4031,6 +4050,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "ec-arms": {
     description: "The law describing the arms is unusually specific. The sun at the top crosses the part of the zodiac holding the signs for March, April, May and June — the four months of the 1845 Marcist revolution. Below it stands Chimborazo, the highest mountain in Ecuador and the point on the earth's surface furthest from its centre, with the river rising at its foot standing for the Guayas; on the river is a steamship whose mast is a caduceus, for commerce and industry. The condor above spreads its wings for the power, greatness and strength of Ecuador, and is read as always ready to strike at an enemy. The laurel at one side is the republic's victories and the palm at the other its martyrs; four national flags flank the whole.",
     sources: [
+      { title: "Coat of arms of Ecuador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador" },
+    ],
+  },
+  "ec-passport": {
+    description: "As a full Andean Community member, Ecuador issues the bloc's shared bordeaux passport: \"COMUNIDAD ANDINA\" in gold above the national seal and the country's own name below. Ecuador's coat of arms itself carries a distinctly Andean design — a condor with wings spread above a sun bearing the zodiac signs of March through June (the months of the 1845 revolution), rising behind Mount Chimborazo, with a steamship in the foreground whose mast is topped by a caduceus, representing trade and navigation.",
+    sources: [
+      { title: "Andean passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Andean_passport" },
       { title: "Coat of arms of Ecuador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador" },
     ],
   },
@@ -4609,6 +4635,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Guatemala — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guatemala" },
     ],
   },
+  "gt-passport": {
+    description: "Since a January 2006 redesign, Guatemala's navy-blue passport has read \"Centroamérica\" across the cover, with a map of Central America — Guatemala's own territory picked out in gold — replacing the individual national coat of arms the earlier design carried. This is the shared CA-4 format issued by Guatemala, Honduras, El Salvador and Nicaragua under their Central America-4 Border Control Agreement, which lets citizens of all four move across their shared borders without a passport check.",
+    sources: [
+      { title: "Guatemalan passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Guatemalan_passport" },
+      { title: "Central America-4 passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Central_America-4_passport" },
+    ],
+  },
   "gt-football-crest": {
     description: "The resplendent quetzal is Guatemala's own national bird, carried on its flag and coat of arms and giving its name to the national currency, the quetzal. The Maya revered it as sacred and, because captured quetzals were seen to die soon afterward, it became a symbol of liberty — a reading the national anthem itself repeats (“antes muerto que esclavo será”, “rather dead than enslaved”).",
     sources: [
@@ -4693,6 +4726,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "An oval seal shows a volcano between two castle towers rising from the sea, under a rainbow and a rising sun — the promise of a new nation. The words around it name the free, sovereign and independent Republic of Honduras and the date of independence, 15 September 1821. Oak and pine trees, quivers of arrows, cornucopias and mining tools around the seal stand for the country's forests, its peoples and its mineral wealth.",
     sources: [
       { title: "Coat of arms of Honduras — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Honduras" },
+    ],
+  },
+  "hn-passport": {
+    description: "Honduras issues the shared CA-4 passport: a navy-blue cover reading \"Centroamérica\" over a map of Central America with Honduras's own territory highlighted in gold, rather than the country's individual coat of arms. The format is common to Honduras, Guatemala, El Salvador and Nicaragua under their Central America-4 Border Control Agreement, which allows citizens of the four countries to cross their shared borders without a passport check.",
+    sources: [
+      { title: "Central America-4 passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Central_America-4_passport" },
     ],
   },
   "hn-football-crest": {
@@ -5130,6 +5169,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "jm-arms": {
     description: "These are among the oldest arms in the Americas, granted to the colony of Jamaica by royal warrant in 1661 and designed by William Sancroft, later Archbishop of Canterbury — Jamaica kept them at independence rather than devising new ones. The shield is a red cross on white bearing five gold pineapples, the fruit the island exported; the crest is a crocodile standing on a log, native to the island's swamps; the supporters are a Taíno man and woman, the island's indigenous people, one holding a basket of fruit and the other a bow. What DID change was the motto: the original Latin, INDUS UTERQUE SERVIET UNI — \"the Indians twain shall serve one Lord\" — was replaced at independence in 1962 with \"Out of Many, One People\".",
     sources: [
+      { title: "Coat of arms of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica" },
+    ],
+  },
+  "jm-passport": {
+    description: "Jamaica's passport carries the CARICOM logo and \"Caribbean Community\" heading above the national coat of arms in gold foil. The arms show a silver shield bearing a red St George's Cross charged with five golden pineapples — recalling one of the island's earliest agricultural exports — crested by a Jamaican crocodile, and flanked by a male and female Taíno figure, the island's indigenous people, holding a bow and a basket of fruit. Beneath the shield runs the national motto, \"Out of Many, One People\", asserting unity across Jamaica's diverse population.",
+    sources: [
+      { title: "Jamaican passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Jamaican_passport" },
       { title: "Coat of arms of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica" },
     ],
   },
@@ -6255,6 +6301,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Nicaragua — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nicaragua" },
     ],
   },
+  "ni-passport": {
+    description: "Nicaragua's design predates the wider CA-4 agreement: it and El Salvador had already been using the navy-blue \"Centroamérica\" cover, showing a map of Central America with the issuing country's own territory highlighted in gold, since the mid-1990s — before the format became the standard for all four Central America-4 states (adding Guatemala and Honduras) in January 2006.",
+    sources: [
+      { title: "Central America-4 passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Central_America-4_passport" },
+    ],
+  },
   "nl-navy": {
     description: "The governmental flag of the Royal Netherlands Navy bears the navy's emblem: a fouled anchor beneath the royal crown, a pairing used across Dutch naval flags and insignia since at least the late 19th century. The anchor is the traditional maritime symbol of the service, and the crown marks the navy as a royal one, serving under the Dutch monarchy.",
     sources: [
@@ -7327,6 +7379,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The triangle stands for the three branches of government — executive, legislative and judiciary — and for equality. Inside it the five volcanoes rising between the Pacific and the Caribbean are the five states of the Central American federation, not five Salvadoran mountains. Above them the red Phrygian cap on a staff is liberty, the rainbow is peace, and the date 15 DE SEPTIEMBRE DE 1821 is Central America's declaration of independence from Spain. The laurel wreath around the whole is divided into fourteen clusters for the country's fourteen departments, and the five flags behind it are again the five federated states; the motto beneath reads DIOS UNIÓN LIBERTAD.",
     sources: [
       { title: "Coat of arms of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador" },
+    ],
+  },
+  "sv-passport": {
+    description: "El Salvador's design predates the wider CA-4 agreement: it and Nicaragua had already been using the navy-blue \"Centroamérica\" cover, showing a map of Central America with the issuing country's own territory highlighted in gold, since the mid-1990s — before the format became the standard for all four Central America-4 states (adding Guatemala and Honduras) in January 2006.",
+    sources: [
+      { title: "Central America-4 passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Central_America-4_passport" },
     ],
   },
   "sv-football-crest": {
