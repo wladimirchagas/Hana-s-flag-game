@@ -7194,6 +7194,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Pha That Luang — Wikipedia", url: "https://en.wikipedia.org/wiki/Pha_That_Luang" },
     ],
   },
+  "lb-greater-lebanon": {
+    description: "Designed by Naoum Mokarzel of the Lebanese Renaissance Movement for the State of Greater Lebanon proclaimed under the French Mandate on 1 September 1920, this flag placed a green cedar tree — a device the Lebanese Legion had already carried on its own plain flag during the First World War, and a biblical symbol of strength and endurance long associated with Lebanon's Christian communities — in the white band of the French Tricolour. When Lebanon became independent in 1943 the cedar was kept, moved onto a white field between two red bands, in the flag flown today.",
+    sources: [
+      { title: "The Lebanon Flag: Meaning & History — SimCorner", url: "https://simcorner.com/en-eu/blogs/travel-guides/lebanon-flag-meaning-history-symbolism" },
+    ],
+  },
   "lb-army": {
     description: "Patterned after the Lebanese national flag — white between two red bands — with the green cedar of Lebanon at its centre, standing for immortality, resilience and the country's identity as the 'Land of the Cedars'; the Armed Forces' flag adds two wheat spikes flanking the cedar and the words 'Honour' and 'Homeland', echoing the army's own motto of Honour, Sacrifice, Loyalty.",
     sources: [
@@ -7809,6 +7815,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Mali — Britannica", url: "https://www.britannica.com/topic/flag-of-Mali" },
     ],
   },
+  "ml-empire": {
+    description: "Rather than a flag flown by the Mali Empire itself, this design is a European artistic convention: the 1375 Catalan Atlas, the most celebrated map of its age, depicts Mansa Musa I — the Mali Empire's fabulously wealthy 14th-century ruler, renowned across the Mediterranean world after his lavish 1324 pilgrimage to Mecca — enthroned and crowned in the European heraldic manner, holding an orb and sceptre as Christian kings were shown. It reflects how profoundly Mansa Musa's wealth and power impressed European cartographers, rather than any banner the empire actually used.",
+    sources: [
+      { title: "The Catalan Atlas (1375) — Gilder Lehrman Institute of American History", url: "https://www.gilderlehrman.org/ap-african-american-studies/unit-1/west-africa/catalan-atlas-1375" },
+    ],
+  },
   "ml-emblem": {
     description: "Adopted in 1973, thirteen years after independence, the seal is read from its centre outward. The mosque at the middle is a specific building — the Great Mosque of Djenné, the largest mud-brick structure in the world and the country's best-known monument. Above it flies a bird, and below it the sun rises; the two bows and arrows flanking the mosque stand for the country's defence. The legend around the circle carries the name of the republic and the motto \"Un Peuple, Un But, Une Foi\" — One People, One Goal, One Faith — which is word for word the motto of Senegal, the country Mali was federated with for the two months before independence.",
     sources: [
@@ -8094,6 +8106,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Maldives' passport bears the national emblem: a coconut palm — representing the nation's traditional livelihood, since Maldivians use every part of the tree — flanked by two crossed national flags, above a crescent and star for the country's Islamic faith and state authority, with a scroll bearing the historic Arabic state title \"Ad-Dawlat Al-Mahaldibiyya\".",
     sources: [
       { title: "Emblem of the Maldives — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_Maldives" },
+    ],
+  },
+  "mw-2010": {
+    description: "Adopted 29 July 2010 under President Bingu wa Mutharika, this redesign reordered Malawi's stripes to red-black-green and replaced the rising half-sun of the 1964 independence flag with a full white sun of 45 rays — explained as marking Malawi's maturity as a nation, in contrast to the half-sun's symbolism of a newly emerging state. Widely unpopular and nicknamed 'Bingu's flag', it was repealed by Parliament on 28 May 2012, under President Joyce Banda, restoring the original 1964 flag.",
+    sources: [
+      { title: "Malawi's Flag Change — Political Geography Now", url: "https://www.polgeonow.com/2012/09/malawi-flag-change.html" },
     ],
   },
   "mw-president": {
@@ -8806,6 +8824,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Designed by Philippe Bunau-Varilla's wife and modelled on the Stars and Stripes, this proposed first flag of Panama used thirteen alternating red and yellow stripes — yellow standing in for the American flag's white, echoing the colours shared by Spain's and Colombia's own flags — with two gold suns joined by a bar in the blue canton, representing North and South America linked by the Panamanian isthmus. Panama's leadership rejected it in favour of a flag designed by the family of first president Manuel Amador Guerrero, the one Panama still flies today.",
     sources: [
       { title: "Panama - Historical Flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pa_hist.html" },
+    ],
+  },
+  "pa-colombia": {
+    description: "As the Sovereign State of Panama within the federal United States of Colombia (1863–1886), Panama flew its own distinct flag bearing its state coat of arms — an eagle with outstretched wings above a shield, carrying a ribbon inscribed 'Pro Mundi Beneficio' ('For the benefit of the world') and ten gold stars for the state's provinces — rather than the flag of Colombia itself. Panama remained a state within Colombia until a stricter unitary constitution dissolved the federal states in 1886, and did not become fully independent until 1903.",
+    sources: [
+      { title: "State of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/State_of_Panama" },
     ],
   },
   "pa-gran-colombia": {
@@ -9992,6 +10016,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Saint Helena — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena" },
     ],
   },
+  "si-yugoslavia": {
+    description: "Adopted when Slovenia joined the new Kingdom of Serbs, Croats and Slovenes on 1 December 1918 (renamed the Kingdom of Yugoslavia in 1929), this blue-white-red tricolour drew on the Pan-Slavic colours agreed at the 1848 Prague Slavic Congress, chosen to express the unity of the newly joined South Slavic peoples. It was formally established by the 1921 Vidovdan Constitution and flown until the Axis occupation of Yugoslavia in April 1941.",
+    sources: [
+      { title: "Flag of Yugoslavia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Yugoslavia" },
+    ],
+  },
   "si-armed-forces": {
     description: "A white-blue-red field bears the Slovenian Army emblem: a stylised Mount Triglav, the country's highest peak and national coat of arms device, standing for national pride and identity, above two crossed swords; the emblem's three gold stars are drawn from the historic arms of the Counts of Celje, and its two wavy blue lines represent the Adriatic Sea and Slovenia's rivers.",
     sources: [
@@ -10870,6 +10900,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flags of Empire: British Africa", url: "https://imperialflags.blogspot.com/2009/01/imperial-british-east-africa-company.html" },
     ],
   },
+  "ug-buganda": {
+    description: "One of the few pre-colonial African states to fly its own flag, the Kingdom of Buganda was recorded by the explorer Frederick Lugard in 1892 flying 'an enormous home-made flag' beside two lances and a shield on a red ground — emblems of the Kabaka's authority that Buganda kept using through the colonial period, even as British administrators chose the crested crane as Uganda's own colonial badge specifically to avoid favouring the kingdom over the protectorate's other regions.",
+    sources: [
+      { title: "The Flag of Uganda: A Constant through Turbulent Times — Young Pioneer Tours", url: "https://www.youngpioneertours.com/the-flag-of-uganda/" },
+    ],
+  },
   "ug-updf": {
     description: "A diagonal split of green over light blue bears the Defence Force's badge in the upper field, with six narrow stripes in the national colours (black, yellow, red, repeated) along the bottom edge; this 2019 redesign replaced the flag the UPDF had carried since Uganda's 1962 independence, keeping the same national palette to tie the modern military to the country's founding symbols.",
     sources: [
@@ -11582,6 +11618,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
     sources: [
       { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
+  "za-voc": {
+    description: "The Dutch tricolour charged with the intertwined letters VOC — for the Vereenigde Oostindische Compagnie, the Dutch East India Company — flew over the Cape of Good Hope from 1652, when Jan van Riebeeck established a refreshment station there to resupply Company ships trading with Asia, until the Company's collapse at the end of the 18th century.",
+    sources: [
+      { title: "Netherlands East India Company — Flags of the World", url: "https://www.crwflags.com/fotw/flags/nl-indco.html" },
     ],
   },
   "za-sandf": {
