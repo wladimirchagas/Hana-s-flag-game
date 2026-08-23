@@ -3612,6 +3612,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Ivory Coast — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast" },
     ],
   },
+  "ci-passport": {
+    description: "Ivory Coast's passport bears the national coat of arms, adopted in 1964: a forest elephant's head, the largest animal found in the country and the source of the ivory trade that gave Côte d'Ivoire its name, flanked by two golden palm trees and crowned by a rising sun for a new beginning.",
+    sources: [
+      { title: "Coat of arms of Ivory Coast — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast" },
+    ],
+  },
   "ci-football-crest": {
     description: "The elephant is the centrepiece of Côte d'Ivoire's own national coat of arms and gives the country its name — “Côte d'Ivoire” (Ivory Coast) recalls its colonial-era role in the ivory trade — and its national football team its own nickname, Les Éléphants.",
     sources: [
@@ -3683,6 +3689,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield repeats the colour pattern of the national flag and carries a map of the country at its centre, with the scales of justice superimposed on the map — added in 1984 and standing for the rule of law over the whole territory. Two fasces cross behind the shield, the classical emblem of state authority; the banners above and below carry the name of the republic and its motto, \"Peace, Work, Fatherland\". A separate set of arms had been designed for the German colony in 1914, but the war broke out before the project was finished and they were never used.",
     sources: [
       { title: "Coat of arms of Cameroon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cameroon" },
+    ],
+  },
+  "cm-passport": {
+    description: "Cameroon's passport bears the national coat of arms: a shield in the flag's own green, red and yellow, a gold star in the green field for unity, and an outline map of Cameroon in the red field bearing a golden scale of justice — the whole supported by two crossed fasces topped with axes, standing for the defence and authority of the state. Below runs the bilingual motto \"Paix – Travail – Patrie\" — \"Peace – Work – Fatherland\".",
+    sources: [
+      { title: "Cameroon Coat of Arms: Symbolism and History — Kingsgate Lifestyle", url: "https://mykingsgate.co.za/info/code-of-arms-cameroon-26558/" },
     ],
   },
   "cm-football-crest": {
@@ -3840,6 +3852,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "cv-arms": {
     description: "Within a blue ring bearing the country's name, a torch and a triangle stand for freedom and national unity, and a golden plumb-bob for righteousness. Three chain links at the foot stand for the unity, equality and civil rights of a democratic society. The ten gold stars around the ring are the ten islands of the archipelago — the same ten stars as on the flag.",
+    sources: [
+      { title: "National emblem of Cape Verde — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde" },
+    ],
+  },
+  "cv-passport": {
+    description: "Cape Verde's passport bears the national emblem, adopted in 1992 alongside the current flag: a blue triangle within a circle of ten five-pointed stars — one for each of the country's main islands — flanked by a torch for liberty, a plumb line for moral uprightness and justice, and broken chain links for emancipation.",
     sources: [
       { title: "National emblem of Cape Verde — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde" },
     ],

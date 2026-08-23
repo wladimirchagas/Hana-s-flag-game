@@ -5791,7 +5791,16 @@
           "design": "The cover of the Ivory Coast passport.",
           "source": "https://gicg.net/passport/ci/",
           "sha256": "8ed9d4e0e2ab931eb63c31120f114aea5a3423ae860a89b6c926a9106dea5db9",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Ivory Coast's passport bears the national coat of arms, adopted in 1964: a forest elephant's head, the largest animal found in the country and the source of the ivory trade that gave Côte d'Ivoire its name, flanked by two golden palm trees and crowned by a rising sun for a new beginning.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ivory Coast — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast"
+              }
+            ]
+          }
         },
         {
           "id": "ci-football-crest",
@@ -6247,7 +6256,16 @@
           "design": "The cover of the Cameroon passport.",
           "source": "https://gicg.net/passport/cm/",
           "sha256": "d405bd1a4ae5a98e2ae1a81eea32ea9cf2c0801c17a9a2fbf4f7169f200ec479",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Cameroon's passport bears the national coat of arms: a shield in the flag's own green, red and yellow, a gold star in the green field for unity, and an outline map of Cameroon in the red field bearing a golden scale of justice — the whole supported by two crossed fasces topped with axes, standing for the defence and authority of the state. Below runs the bilingual motto \"Paix – Travail – Patrie\" — \"Peace – Work – Fatherland\".",
+            "sources": [
+              {
+                "title": "Cameroon Coat of Arms: Symbolism and History — Kingsgate Lifestyle",
+                "url": "https://mykingsgate.co.za/info/code-of-arms-cameroon-26558/"
+              }
+            ]
+          }
         },
         {
           "id": "cm-football-crest",
@@ -7162,7 +7180,16 @@
           "design": "The cover of the Cape Verde passport.",
           "source": "https://gicg.net/passport/cv/",
           "sha256": "a97975df433c688a9df821bc5112b980d7ae9cc2dd55c3d7b411847cc24db373",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Cape Verde's passport bears the national emblem, adopted in 1992 alongside the current flag: a blue triangle within a circle of ten five-pointed stars — one for each of the country's main islands — flanked by a torch for liberty, a plumb line for moral uprightness and justice, and broken chain links for emancipation.",
+            "sources": [
+              {
+                "title": "National emblem of Cape Verde — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde"
+              }
+            ]
+          }
         },
         {
           "id": "cv-football-crest",
