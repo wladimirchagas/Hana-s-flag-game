@@ -28684,7 +28684,20 @@
           "design": "The flag of the Tunisian armed forces.",
           "source": "https://en.wikipedia.org/wiki/List_of_Tunisian_flags",
           "sha256": "8d19cb4d75b1bdfa2728ca8cf65f1f26a407b0059615789d26280825b6f61635",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The military flag of Tunisia, flown since 1956 — the year of independence — bears the armed forces' emblem drawn from Tunisia's coat of arms adopted that same year: a lion on a red field and a set of scales on a yellow field, with the national motto in Arabic beneath. The lion and scales, both retained from earlier Tunisian arms, stand for strength and justice respectively, while the crescent and star appearing across the Tunisian military's emblems are the traditional symbols of Islam and the country's Muslim-majority identity.",
+            "sources": [
+              {
+                "title": "Wikipedia — Coat of arms of Tunisia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia"
+              },
+              {
+                "title": "Wikipedia — List of Tunisian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Tunisian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "tn-arms",
