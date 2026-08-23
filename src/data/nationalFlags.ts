@@ -5611,6 +5611,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flags of the World — Myanmar (Burma): Army flags", url: "https://www.crwflags.com/fotw/flags/mm%5Earmy.html" },
     ],
   },
+  "mm-mod": {
+    description: "The flag of Myanmar's Ministry of Defence bears the Tatmadaw emblem: a cogwheel, a star and crossed swords in gold, encircled by olive branches with thirty leaves on each side and Burmese floral arabesques (kanote) as supporters. The cogwheel stands for industry, the star for national unity, and the crossed swords for military strength — the same emblem worn as the cap badge across the army, navy and air force, here representing the ministry that oversees all three.",
+    sources: [
+      { title: "Wikipedia — Emblem of Tatmadaw", url: "https://en.wikipedia.org/wiki/Emblem_of_Tatmadaw" },
+      { title: "Wikipedia — List of Burmese flags", url: "https://en.wikipedia.org/wiki/List_of_Burmese_flags" },
+    ],
+  },
   "mm-seal": {
     description: "The law describing the seal explains each part. At the centre is the map of the country, standing for its territorial shape; on either side of it a sprig of Eugenia with fourteen leaves, a sign of victory — one leaf for each state and region. Flanking those are two Burmese royal lions, chinthe, one facing left and one facing right; the lions signify sovereignty, courage, diligence and the suppression of all dangers great and small with equal effort, and their placement guarding either side of the map is itself the meaning. The ribbon below carries the name of the state, split so that \"Union\" sits under the left lion, \"Republic\" under the map and \"Myanmar\" under the right.",
     sources: [
@@ -7362,6 +7369,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Ukrainian Air Assault Forces — Symbols", url: "https://dshv.mil.gov.ua/en/page/symbols" },
       { title: "Wikipedia — Ukrainian Air Assault Forces", url: "https://en.wikipedia.org/wiki/Ukrainian_Air_Assault_Forces" },
+    ],
+  },
+  "ua-marines": {
+    description: "The Flag of the Marine Corps, adopted in 2023, is teal bearing the corps' emblem, built around the tryzub — the trident that has served as Ukraine's state emblem since at least the era of Volodymyr the Great and now stands for the will and invincibility of the Ukrainian people. Teal was chosen as the corps' own distinguishing colour, separate from the maroon of the Air Assault Forces and the colours of Ukraine's other military branches.",
+    sources: [
+      { title: "Wikipedia — Ukrainian Marine Corps", url: "https://en.wikipedia.org/wiki/Ukrainian_Marine_Corps" },
+      { title: "Wikipedia — List of Ukrainian flags", url: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
     ],
   },
   "ua-naval-ensign": {
