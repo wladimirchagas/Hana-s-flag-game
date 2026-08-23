@@ -2541,7 +2541,16 @@
           "sovereign": "Pakistan",
           "reuse": "flags/pk.svg",
           "design": "The flag of Pakistan, flown over East Pakistan until the liberation war of 1971.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "meaning": {
+            "description": "Pakistan's own national flag — adopted by the Constituent Assembly on 11 August 1947, a green field with a white crescent and star and a white vertical stripe at the hoist — flew over East Pakistan (present-day Bangladesh) from independence until the 1971 Bangladesh Liberation War. Green represents Pakistan's Muslim majority, the white stripe its religious minorities, the crescent progress, and the star light and knowledge.",
+            "sources": [
+              {
+                "title": "Flag of Pakistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Pakistan"
+              }
+            ]
+          }
         },
         {
           "id": "bd-raj",
@@ -17994,7 +18003,16 @@
           "design": "The red flag with a golden five-towered Angkor Wat, of the Vietnamese-backed state that followed the Khmer Rouge.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia",
           "sha256": "5b83b49c033e52bd2c9fde95a0f7c80a47b53063eaf096cb1648f2c351ce41bb",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted 7 January 1979, the day the Vietnamese-backed Kampuchean United Front for National Salvation captured Phnom Penh and overthrew the Khmer Rouge, this flag revived a design the Front had already used, itself descended from the flag of the Khmer Issarak anti-French resistance movement. Red stands for revolution, and the golden five-towered silhouette of Angkor Wat for the unity of Kampuchea's soldiers, workers, peasants, traders and intellectuals; the People's Republic of Kampuchea it represented lasted until 1989.",
+            "sources": [
+              {
+                "title": "Flag of the People's Republic of Kampuchea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_People%27s_Republic_of_Kampuchea"
+              }
+            ]
+          }
         },
         {
           "id": "kh-democratic",
@@ -18031,7 +18049,16 @@
           "design": "The blue flag with Angkor Wat and three stars, of the republic that deposed the monarchy in 1970.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia",
           "sha256": "cb893943c7baa5841330ab2729805a497321305eab49c1d5ddc25e5f457105b3",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Introduced 9 October 1970 by the Lon Nol government that had just deposed the monarchy in a military coup, this flag set a white silhouette of Angkor Wat's three towers and three white stars in the canton on a blue field with a red border — the three stars read as standing for the nation, the state and Buddhism. It flew until the Khmer Rouge's victory in April 1975 ended the Khmer Republic.",
+            "sources": [
+              {
+                "title": "Flag of the Khmer Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Khmer_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "kh-french",
@@ -22290,7 +22317,16 @@
           "design": "The flag of the autonomous French Sudan, the colony that became Mali.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malian_flags",
           "sha256": "93cb3bb6c9b61d30163e5ecb322e7cbbb4d57b1f8177dee1150d9f1618bf93cf",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "As French Sudan became an autonomous republic within the French Community on 24 November 1958, it flew the French Tricolour charged with a black kanaga — a Dogon ritual mask symbol — a flag it kept until 4 April 1959, when it merged with Senegal to form the Mali Federation. The new federation's own flag, proposed by the future Senegalese president Léopold Sédar Senghor, moved the kanaga onto vertical green-yellow-red Pan-African stripes; after Senegal seceded in 1960, Mali dropped the kanaga in 1961, leaving the plain tricolour it flies today.",
+            "sources": [
+              {
+                "title": "Flag of French Sudan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_French_Sudan"
+              }
+            ]
+          }
         },
         {
           "id": "ml-empire",
@@ -32412,7 +32448,16 @@
           "design": "The flag of Sudan, which governed the south from Khartoum until the 2011 secession.",
           "source": "https://en.wikipedia.org/wiki/Sudan",
           "sha256": "1f7504f8d4b352eb1726d81a563212c650a8d316d67c97c6167b96895ffa703d",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Sudan's own national flag — adopted 20 May 1970 after the coup that brought General Gaafar Nimeiry to power, combining the Pan-Arab colours of the 1916 Arab Revolt Flag with a green triangle at the hoist for Islam and prosperity — governed present-day South Sudan from Khartoum until the south's 2011 secession, after which South Sudan adopted its own new flag.",
+            "sources": [
+              {
+                "title": "The Sudan Flag: With Hope for Better Times — Young Pioneer Tours",
+                "url": "https://www.youngpioneertours.com/sudan-flag-with-hope-for-a-better-time/"
+              }
+            ]
+          }
         },
         {
           "id": "ss-arms",
@@ -32858,7 +32903,16 @@
           "design": "The green-white-green flag of the early French Mandate, flown before the green-white-black independence flag was adopted in 1932.",
           "source": "https://en.wikipedia.org/wiki/French_Mandate_for_Syria_and_the_Lebanon",
           "sha256": "036a2ea2c8eda10550aa1e7633fa0eda1b12d6c168a8e42051003be1e6b1fa03",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Adopted for the loose federation of Syrian states — Damascus, Aleppo, Latakia and Jebel Druze — that France organised under its mandate from 1922, this green-white-green flag with the French Tricolour in the canton continued in use as the federation evolved into the State of Syria in 1925, deliberately structured to show consideration for the mandate's varied religious communities. It gave way to Syria's own green-white-black tricolour, with three red stars, when the country became a republic around 1930.",
+            "sources": [
+              {
+                "title": "Historical Flags Until 1932 (Syria) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/sy-his.html"
+              }
+            ]
+          }
         },
         {
           "id": "sy-arms",
