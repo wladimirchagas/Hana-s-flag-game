@@ -3025,6 +3025,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Bermuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda" },
     ],
   },
+  "bn-naval-ensign": {
+    description: "The Naval Ensign of Brunei is a white field with the national flag in the canton and the Royal Brunei Navy's own emblem, adapted from Brunei's national emblem, in the fly. That emblem's wings each carry four feathers standing for justice, tranquillity, prosperity and peace, the royal parasol represents the sovereignty of the monarchy, the upraised hands the government's duty of care to its people, and the crescent bears the national motto 'Always in service with God's guidance' — together expressing Brunei's identity as a Malay Islamic monarchy.",
+    sources: [
+      { title: "Wikipedia — Emblem of Brunei", url: "https://en.wikipedia.org/wiki/Emblem_of_Brunei" },
+      { title: "Flags of the World — Ensigns (Brunei)", url: "https://www.crwflags.com/fotw/flags/bn~.html" },
+    ],
+  },
   "bn-royal-standard": {
     description: "The Sultan's yellow standard bears the national emblem rendered entirely in red: a crescent inscribed with the motto \"Always in service with God's guidance\" (marking Islam as the state religion), flanked by wings symbolising the protection of justice, tranquility, prosperity and peace, two hands representing the government's duty to safeguard the people's welfare, and the royal parasol (payung ubor-ubor), a traditional emblem of the sultanate reserved for the monarch; the Sultan's crown was added above the emblem around 1999.",
     sources: [
@@ -5722,6 +5729,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Flags of the World — Nigerian Air Force", url: "https://www.crwflags.com/fotw/flags/ng%5Eaf.html" },
       { title: "Wikipedia — Flag of Nigeria", url: "https://en.wikipedia.org/wiki/Flag_of_Nigeria" },
+    ],
+  },
+  "ng-naval-ensign": {
+    description: "The naval ensign of Nigeria, flown since 1998, is white with the national flag in the canton and the Nigerian Navy's badge in the fly: a red eagle — the crest of the national coat of arms, standing for strength — perched above a white fouled anchor, the universal maritime symbol, within a yellow border reading 'Nigerian Navy' and the service's motto 'Onward Together'.",
+    sources: [
+      { title: "Flags of the World — Nigerian Naval Flags", url: "https://www.crwflags.com/fotw/flags/ng%5Enav.html" },
+      { title: "Wikipedia — Coat of arms of Nigeria", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria" },
     ],
   },
   "ng-president": {

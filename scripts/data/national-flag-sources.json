@@ -3186,7 +3186,20 @@
           "design": "The ensign of the Royal Brunei Navy.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bruneian_flags",
           "sha256": "99c3ef1b2300054173105bac93ed7acdc14606c377f1a79c997e96d0747f9c7c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Naval Ensign of Brunei is a white field with the national flag in the canton and the Royal Brunei Navy's own emblem, adapted from Brunei's national emblem, in the fly. That emblem's wings each carry four feathers standing for justice, tranquillity, prosperity and peace, the royal parasol represents the sovereignty of the monarchy, the upraised hands the government's duty of care to its people, and the crescent bears the national motto 'Always in service with God's guidance' — together expressing Brunei's identity as a Malay Islamic monarchy.",
+            "sources": [
+              {
+                "title": "Wikipedia — Emblem of Brunei",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Brunei"
+              },
+              {
+                "title": "Flags of the World — Ensigns (Brunei)",
+                "url": "https://www.crwflags.com/fotw/flags/bn~.html"
+              }
+            ]
+          }
         },
         {
           "id": "bn-emblem",
@@ -20737,7 +20750,20 @@
           "design": "A white field with the national flag in the canton and the naval badge in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_Nigerian_flags",
           "sha256": "84d1d8b7af3e0f62a82337e5034be51ac21bcf99de16e3c5727c451841d3eb59",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The naval ensign of Nigeria, flown since 1998, is white with the national flag in the canton and the Nigerian Navy's badge in the fly: a red eagle — the crest of the national coat of arms, standing for strength — perched above a white fouled anchor, the universal maritime symbol, within a yellow border reading 'Nigerian Navy' and the service's motto 'Onward Together'.",
+            "sources": [
+              {
+                "title": "Flags of the World — Nigerian Naval Flags",
+                "url": "https://www.crwflags.com/fotw/flags/ng%5Enav.html"
+              },
+              {
+                "title": "Wikipedia — Coat of arms of Nigeria",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria"
+              }
+            ]
+          }
         },
         {
           "id": "ng-air-force",
