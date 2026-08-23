@@ -7100,7 +7100,16 @@
           "design": "The cover of the Cuba passport.",
           "source": "https://gicg.net/passport/cu/",
           "sha256": "3b40a2cd05ca6413f4c0dcd063c80cc844b461a2000922e0980690fe97d6f030",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Cuba's passport bears the national coat of arms, adopted 24 April 1906: a golden key set across a blue sea between two coastal cliffs, representing Cuba's position between Florida and the Yucatán Peninsula as \"the key to the Gulf of Mexico\". The shield sits before a bundle of rods crossed with red rope, symbolising the union of all Cubans, crowned by a red Phrygian cap bearing a white star — the same liberty symbol used across Latin American independence movements — and flanked by an oak branch and a royal palm, the characteristic Cuban tree read as an emblem of the Cuban people's upright, unbending character.",
+            "sources": [
+              {
+                "title": "Coat of arms of Cuba — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba"
+              }
+            ]
+          }
         },
         {
           "id": "cu-football-crest",
@@ -8219,7 +8228,16 @@
           "design": "The cover of the the Dominican Republic passport.",
           "source": "https://gicg.net/passport/do/",
           "sha256": "a71add7b6a5f589022279f01f947f4c7d6a54895e4273f9930d196f4569106ef",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Dominican Republic's passport bears the national coat of arms, adopted 6 November 1844: a Bible opened to John 8:31–32 (\"the truth shall make you free\"), topped with a small gold cross, symbolising faith, truth and freedom, at the centre of a shield in the flag's own blue, red and white. Laurel and palm branches frame the shield for immortality and liberty, bound by a ribbon reading the national motto \"Dios, Patria, Libertad\" — \"God, Homeland, Liberty\".",
+            "sources": [
+              {
+                "title": "Coat of arms of the Dominican Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Dominican_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "do-football-crest",
@@ -13017,7 +13035,16 @@
           "design": "The cover of the Haiti passport.",
           "source": "https://gicg.net/passport/ht/",
           "sha256": "1d13c95629af12107f44295af98bb2b9ae935998161bc8944cf2946baa23543c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Haiti's passport bears the national coat of arms, in its current form since 1986: a royal palm tree at the centre, symbolising the independence Haiti won as the first nation founded by a successful slave revolt, topped with a red Phrygian cap — the liberty cap that traces to that same revolutionary origin — and flanked by a trophy of weapons. Below runs the national motto, \"L'Union Fait La Force\" — \"In Union There Is Strength\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Haiti — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti"
+              }
+            ]
+          }
         },
         {
           "id": "ht-football-crest",
