@@ -2594,6 +2594,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Andorra — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra" },
     ],
   },
+  "ad-passport": {
+    description: "Andorra's passport cover is embossed with \"Principat d'Andorra\" and the national coat of arms — a shield quartered between the emblems of Andorra's two historic co-princes, the Bishop of Urgell (a mitre) and the Count of Foix (three red bars), alongside the arms of Catalonia (four red bars, the Royal Sign of Aragon) and the Viscounty of Béarn (two red cows), reflecting the surrounding territories tied to Andorra's unusual system of co-principality. Beneath the shield runs the motto \"Virtus Unita Fortior\" — \"Strength united is stronger\".",
+    sources: [
+      { title: "Coat of arms of Andorra — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra" },
+    ],
+  },
   "ae-armed-forces": {
     description: "The flag of the UAE Armed Forces bears the national emblem: a golden falcon, a bird long revered in Arab culture as a symbol of strength, courage and freedom, its breast bearing a disc with the national flag encircled by seven stars. The seven stars and the falcon's seven tail feathers both stand for the seven emirates of the federation, while the falcon grips a red scroll naming the country in Kufic Arabic script.",
     sources: [
@@ -4489,6 +4495,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ge-arms": {
     description: "The arms are partly based on the medieval device of the Bagrationi royal house and centre on Saint George, the country's traditional patron saint and the source of its English name — a silver rider on a silver horse spearing a dragon, his lance tipped with a golden cross, on a purple field (usually drawn red). The shield is crowned with the Iberian crown of the old Georgian kingdom and supported by two golden lions; the scroll beneath carries the national motto, \"Strength is in Unity\". The same Saint George arms served the Democratic Republic of 1918–1921, though at that time there was some discussion of using Amirani, the Georgian Prometheus, instead. The current version was adopted after the 2004 Rose Revolution.",
+    sources: [
+      { title: "Coat of arms of Georgia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia" },
+    ],
+  },
+  "ge-passport": {
+    description: "Georgia's passport bears the national coat of arms: a silver rider on a silver horse, a golden-haloed Saint George, spearing a dragon with a cross-tipped lance. Saint George is Georgia's patron saint, and according to a medieval chronicle he appeared as a heavenly warrior at the decisive Battle of Didgori in 1121, leading a small Georgian army to victory over Seljuk forces — since which he has been regarded as the people's intercessor. The arms are topped with the Iverian crown and carry the motto \"Strength is in Unity\".",
     sources: [
       { title: "Coat of arms of Georgia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia" },
     ],
@@ -7197,6 +7209,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
     ],
   },
+  "ru-passport": {
+    description: "Russia's passport bears the double-headed eagle, crowned with three crowns representing the sovereignty of the federation and its constituent regions, holding a sceptre and orb that stand for state power and unity. The symbol entered Russian heraldry in 1497, inherited via the marriage of Grand Prince Ivan III of Moscow to the Byzantine princess Sophia Palaiologina — a dynastic link through which Russia, like several other nations, adopted the Byzantine Empire's own eagle, its two heads traditionally read as looking simultaneously east and west.",
+    sources: [
+      { title: "Why is the double-headed eagle Russia's national symbol?", url: "https://www.gw2ru.com/basic-facts/231554-double-headed-eagle-russia-national-symbol" },
+    ],
+  },
   "ru-football-crest": {
     description: "The double-headed eagle is Russia's own state coat of arms, adopted from Byzantine imperial tradition: after the fall of Constantinople in 1453, the Grand Dukes of Muscovy took up the emblem to assert their claim as successors to Roman imperial power, and Ivan III's seal first recorded it in 1472. The crowns are read as standing for the unity and sovereignty of Russia as a whole together with its constituent republics and regions.",
     sources: [
@@ -7473,6 +7491,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Three towers topped with ostrich feathers stand on the three summits of Monte Titano — the towers Guaita, Cesta and Montale that still guard the old republic. A crown sits above for the state's sovereignty, framed by branches of laurel and oak, and the scroll reads LIBERTAS — “Liberty,” the word San Marino, one of the world's oldest republics, has kept for centuries.",
     sources: [
       { title: "Coat of arms of San Marino — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_San_Marino" },
+    ],
+  },
+  "sm-passport": {
+    description: "San Marino's passport bears the national coat of arms: three silver towers — La Guaita, La Cesta and La Montale, San Marino's historic fortifications, each topped with an ostrich feather — standing on three green peaks representing Monte Titano, the mountain the republic was founded on. A closed crown above the shield symbolises sovereignty, flanked by branches of oak and laurel for stability and defence, beneath a scroll reading the national motto, \"Libertas\" — Liberty.",
+    sources: [
+      { title: "San Marino's Coat of Arms and Flag — Consulate of San Marino in the Philippines", url: "https://sanmarinophil.wordpress.com/2021/07/03/san-marinos-coat-of-arms-and-flag/" },
     ],
   },
   "sm-football-crest": {
@@ -8144,6 +8168,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "va-arms": {
     description: "Established with the Vatican City State by the Lateran Treaty of 1929, the arms show the two crossed keys of Saint Peter — the gold key of spiritual authority and the silver key of temporal authority, bound by a red cord — beneath the papal tiara, the triple crown standing for the Pope's threefold office of teaching, governing and sanctifying. The same keys and tiara appear on the fly of the national flag.",
+    sources: [
+      { title: "Coat of arms of Vatican City — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vatican_City" },
+    ],
+  },
+  "va-passport": {
+    description: "Vatican City's passport bears the emblem of the Holy See: two crossed keys — gold for spiritual authority, silver for worldly authority — beneath the papal tiara, a triple crown traditionally read as symbolising the Pope's threefold office. The keys reference Matthew 16:19, in which Jesus tells Saint Peter, \"I will give you the keys to the kingdom of heaven\", asserting the Pope's authority as Peter's successor.",
     sources: [
       { title: "Coat of arms of Vatican City — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vatican_City" },
     ],
