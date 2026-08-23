@@ -3151,6 +3151,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
     ],
   },
+  "bd-pakistan": {
+    description: "Pakistan's own national flag — adopted by the Constituent Assembly on 11 August 1947, a green field with a white crescent and star and a white vertical stripe at the hoist — flew over East Pakistan (present-day Bangladesh) from independence until the 1971 Bangladesh Liberation War. Green represents Pakistan's Muslim majority, the white stripe its religious minorities, the crescent progress, and the star light and knowledge.",
+    sources: [
+      { title: "Flag of Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
+    ],
+  },
   "bd-raj": {
     description: "The Star of India Red Ensign served as the civil flag for merchant vessels registered in British India from 1880, defacing the plain Red Ensign with the badge of the Most Exalted Order of the Star of India — an eleven-pointed radiant star around a blue disc bearing the motto 'Heaven's Light Our Guide', created by Queen Victoria in 1861 to honour service in India in a form acceptable across the subcontinent's religious communities. The Union Flag remained British India's official flag throughout, and this ensign was retired at independence and partition in 1947.",
     sources: [
@@ -6853,10 +6859,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Kyrgyzstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
     ],
   },
+  "kh-kampuchea-pr": {
+    description: "Adopted 7 January 1979, the day the Vietnamese-backed Kampuchean United Front for National Salvation captured Phnom Penh and overthrew the Khmer Rouge, this flag revived a design the Front had already used, itself descended from the flag of the Khmer Issarak anti-French resistance movement. Red stands for revolution, and the golden five-towered silhouette of Angkor Wat for the unity of Kampuchea's soldiers, workers, peasants, traders and intellectuals; the People's Republic of Kampuchea it represented lasted until 1989.",
+    sources: [
+      { title: "Flag of the People's Republic of Kampuchea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_People%27s_Republic_of_Kampuchea" },
+    ],
+  },
   "kh-democratic": {
     description: "Democratic Kampuchea's flag, adopted in 1976, showed a golden three-towered silhouette resembling Angkor Wat — a recurring motif on Cambodian flags standing for the nation's heritage — on a red field read as revolutionary struggle. It flew over the Khmer Rouge regime responsible for the Cambodian genocide, which killed an estimated 1.5 to 2 million people between 1975 and 1979, and was retained afterward by the exiled, Khmer Rouge–led coalition that continued to hold Cambodia's UN seat into the 1990s.",
     sources: [
       { title: "Flag of Democratic Kampuchea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Democratic_Kampuchea" },
+    ],
+  },
+  "kh-khmer-republic": {
+    description: "Introduced 9 October 1970 by the Lon Nol government that had just deposed the monarchy in a military coup, this flag set a white silhouette of Angkor Wat's three towers and three white stars in the canton on a blue field with a red border — the three stars read as standing for the nation, the state and Buddhism. It flew until the Khmer Rouge's victory in April 1975 ended the Khmer Republic.",
+    sources: [
+      { title: "Flag of the Khmer Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Khmer_Republic" },
     ],
   },
   "kh-french": {
@@ -7861,6 +7879,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Mali Federation's flag kept the green-yellow-red tricolour but replaced the black star with a black kanaga figure — a stylised human form with arms raised skyward, drawn from the art of Mali's Dogon people and adopted by the Négritude movement as a symbol of strength and African identity. When Senegal and Mali split and Mali objected to a human figure on religious grounds, the kanaga was removed in 1961, leaving the plain tricolour Mali flies today.",
     sources: [
       { title: "Flag of Mali — Britannica", url: "https://www.britannica.com/topic/flag-of-Mali" },
+    ],
+  },
+  "ml-french-sudan": {
+    description: "As French Sudan became an autonomous republic within the French Community on 24 November 1958, it flew the French Tricolour charged with a black kanaga — a Dogon ritual mask symbol — a flag it kept until 4 April 1959, when it merged with Senegal to form the Mali Federation. The new federation's own flag, proposed by the future Senegalese president Léopold Sédar Senghor, moved the kanaga onto vertical green-yellow-red Pan-African stripes; after Senegal seceded in 1960, Mali dropped the kanaga in 1961, leaving the plain tricolour it flies today.",
+    sources: [
+      { title: "Flag of French Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_French_Sudan" },
     ],
   },
   "ml-empire": {
@@ -10324,6 +10348,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
     ],
   },
+  "ss-sudan": {
+    description: "Sudan's own national flag — adopted 20 May 1970 after the coup that brought General Gaafar Nimeiry to power, combining the Pan-Arab colours of the 1916 Arab Revolt Flag with a green triangle at the hoist for Islam and prosperity — governed present-day South Sudan from Khartoum until the south's 2011 secession, after which South Sudan adopted its own new flag.",
+    sources: [
+      { title: "The Sudan Flag: With Hope for Better Times — Young Pioneer Tours", url: "https://www.youngpioneertours.com/sudan-flag-with-hope-for-a-better-time/" },
+    ],
+  },
   "ss-arms": {
     description: "An African fish eagle — for strength, resilience, vision and majesty — spreads its wings above a shield bearing the national flag, crossed by a spear and a spade. The scroll reads “Justice, Liberty, Prosperity,” and above it the name of the Republic of South Sudan.",
     sources: [
@@ -10425,6 +10455,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Syria's Ba'athist-era flag reused the pan-Arab red-white-black tricolour and two green stars first adopted for the United Arab Republic (Egypt's 1958–1961 union with Syria): black for the era of colonial oppression Arabs had endured, white for peace and the hoped-for future of independent Arab states, red for the sacrifices and bloodshed of the fight for liberation, and green — the colour of the two stars — for Islam. Syria kept flying this design from 1980 until the fall of the Assad government in 2024, even though the union it once marked had long since dissolved.",
     sources: [
       { title: "Flag of the United Arab Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Republic" },
+    ],
+  },
+  "sy-mandate": {
+    description: "Adopted for the loose federation of Syrian states — Damascus, Aleppo, Latakia and Jebel Druze — that France organised under its mandate from 1922, this green-white-green flag with the French Tricolour in the canton continued in use as the federation evolved into the State of Syria in 1925, deliberately structured to show consideration for the mandate's varied religious communities. It gave way to Syria's own green-white-black tricolour, with three red stars, when the country became a republic around 1930.",
+    sources: [
+      { title: "Historical Flags Until 1932 (Syria) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sy-his.html" },
     ],
   },
   "sy-arms": {
