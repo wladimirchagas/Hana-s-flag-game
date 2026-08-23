@@ -5041,6 +5041,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Israel" },
     ],
   },
+  "il-passport": {
+    description: "Israel's passport bears the state emblem: a menorah — the seven-branched candelabrum that once stood in the Holy Temple in Jerusalem — flanked by two olive branches. The design deliberately echoes the menorah carved on Rome's Arch of Titus, which for centuries had commemorated the Temple's destruction and the exile that followed; Israel's founders reclaimed the same image after independence as a symbol of hope and renewal. The flanking olive branches, drawn from a vision in the Book of Zechariah, represent peace and prosperity, while the menorah itself is read (via Isaiah 60) as a symbol of universal enlightenment.",
+    sources: [
+      { title: "Emblem of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Israel" },
+    ],
+  },
   "il-football-crest": {
     description: "The Star of David (Magen David) is Israel's own national symbol, carried on its flag, and one of the most widely recognised marks of Jewish identity — first adopted as an emblem of the Zionist movement at the First Zionist Congress in 1897. Interlacing it with a globe reads as the game's own worldwide reach.",
     sources: [
@@ -5304,6 +5310,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "These are the royal arms of the Hashemite king. At the top the Hashemite crown rests on a red mantle standing for the royal throne, tipped by the point of a spear — the Hashemite banner. Below, a golden eagle — a symbol of power, fortitude and loftiness, and the eagle of Saladin — stands on a globe with its wings touching two Jordanian flags, for the spread of Islam and Arab civilisation. Around the shield are weapons (swords, spears, bows and arrows) and, at the foot, ears of wheat and a palm frond flanking the sash and star of the Order of Al-Hussein bin Ali.",
     sources: [
       { title: "Coat of arms of Jordan — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jordan" },
+    ],
+  },
+  "jo-passport": {
+    description: "Jordan's passport bears the national coat of arms: a golden eagle with outstretched wings, coloured for the banner and turban of the Prophet Muhammad, standing atop a blue globe that represents the worldwide reach of Islamic civilisation. A bronze shield bearing a chrysanthemum motif sits before the globe, symbolising the defence of righteousness, flanked by golden swords, spears, bows and arrows; a spray of wheat on one side and a palm frond on the other complete the design, beneath a seven-pointed star for the seven verses of the Quran's opening chapter, al-Fatiha.",
+    sources: [
+      { title: "Coat of Arms — The Royal Hashemite Court", url: "https://rhc.jo/en/coat-of-arms" },
     ],
   },
   "jo-football-crest": {
@@ -5667,6 +5679,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms carry the same device as the flag, arranged across a red shield: a white bend bearing a green cedar of Lebanon (Cedrus libani). The cedar is the country's oldest and most persistent emblem — the biblical “cedars of God,” a symbol of holiness, endurance and peace — and it became the prominent national symbol during the French mandate. The white recalls peace and the snow of the mountains; the red, the sacrifice of those who defended the country.",
     sources: [
       { title: "Coat of arms of Lebanon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon" },
+    ],
+  },
+  "lb-passport": {
+    description: "Lebanon's navy-blue passport — its colour specifically requested by the Ministry of Interior to evoke the Mediterranean Sea — is centred on an embossed cedar tree, the same tree that stands at the centre of the national flag. The cedar has grown on Mount Lebanon since antiquity and stands for longevity, resilience and immortality, giving Lebanon its enduring epithet, the \"Land of the Cedars\".",
+    sources: [
+      { title: "Talking to the design agency behind the new Lebanese passport — Bananapook", url: "http://www.bananapook.com/2016/11/lebanese-passport-design.html" },
     ],
   },
   "lb-football-crest": {
