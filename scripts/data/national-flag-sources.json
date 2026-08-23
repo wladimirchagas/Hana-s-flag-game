@@ -22356,7 +22356,20 @@
           "design": "The air force's ensign.",
           "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
           "sha256": "eb528dbf8c77c8df0d814118e5deebcd5d64a0660dec2b49436746a4c311fb48",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Air Force Ensign of Oman, flown since the Royal Air Force of Oman was formed in 1959, is a light-blue field with the national flag in the canton and a red, white-edged roundel bearing a white silhouette of the national emblem in the lower fly. That emblem — a khanjar, the traditional curved Omani dagger, sheathed over two crossed swords — was adopted in the 18th century as the badge of the Omani royal family before becoming the national symbol, and stands for the traditional weaponry, strength and courage of the Omani people.",
+            "sources": [
+              {
+                "title": "Flags of the World — Royal Air Force of Oman and Aircraft Markings",
+                "url": "https://www.crwflags.com/fotw/flags/om%5Eair.html"
+              },
+              {
+                "title": "Wikipedia — National emblem of Oman",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Oman"
+              }
+            ]
+          }
         },
         {
           "id": "om-emblem",
