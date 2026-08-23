@@ -6117,6 +6117,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
     ],
   },
+  "om-air-force": {
+    description: "The Air Force Ensign of Oman, flown since the Royal Air Force of Oman was formed in 1959, is a light-blue field with the national flag in the canton and a red, white-edged roundel bearing a white silhouette of the national emblem in the lower fly. That emblem — a khanjar, the traditional curved Omani dagger, sheathed over two crossed swords — was adopted in the 18th century as the badge of the Omani royal family before becoming the national symbol, and stands for the traditional weaponry, strength and courage of the Omani people.",
+    sources: [
+      { title: "Flags of the World — Royal Air Force of Oman and Aircraft Markings", url: "https://www.crwflags.com/fotw/flags/om%5Eair.html" },
+      { title: "Wikipedia — National emblem of Oman", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
+    ],
+  },
   "om-navy": {
     description: "The naval ensign of the Royal Navy of Oman carries the national emblem — a khanjar, the traditional curved Omani dagger, sheathed and set over two crossed swords and a belt — placed on a fouled anchor, the standard maritime addition marking it as the navy's own version of the badge shared across the Sultan's Armed Forces. The khanjar and swords were adopted in the 18th century as the badge of the Omani royal family before becoming the national emblem, and together stand for the traditional weaponry, strength and bravery of the Omani people.",
     sources: [
