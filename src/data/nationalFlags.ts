@@ -8874,6 +8874,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
     ],
   },
+  "rs-principality": {
+    description: "Serbia's red-blue-white tricolour traces to the 1804 uprising against Ottoman rule, when Serbian rebels adopted the white-blue-red flag of Russia with its stripes rearranged; the Ottoman sultan formally recognised the design for the autonomous Principality of Serbia in 1835. Serbia's colours became known as the pan-Slavic colours and were adopted by several other Slavic peoples during the revolutionary movements of 1848.",
+    sources: [
+      { title: "Principality of Serbia (1830-1882) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/rs_pr.html" },
+    ],
+  },
   "rs-president": {
     description: "A crimson field bears Serbia's greater coat of arms: a silver double-headed eagle — inherited from Byzantium through the Nemanjić dynasty's marriages with the Palaiologan emperors, its two heads facing east and west for Serbia's ties to Orthodox Christianity and to wider European civilisation — bearing on its breast a small shield with the 'Serbian Cross', a cross flanked by four firesteels (ocila) descended from a Byzantine imperial motto adopted into Serbian use in the 14th century, flanked at the base by two golden fleurs-de-lis.",
     sources: [
@@ -8919,6 +8925,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ru-empire-tricolour": {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
+    sources: [
+      { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
+    ],
+  },
+  "ru-empire-state": {
+    description: "The black-yellow-white flag was approved by Emperor Alexander II in 1858, drawing its colours from the imperial coat of arms — black for the Byzantine double-headed eagle, yellow (gold) for the eagle's field, and white for the horse of Saint George shown on Moscow's own emblem. It never displaced the white-blue-red flag in everyday use and remained largely a heraldic, official banner until Emperor Nicholas II formally recognised the white-blue-red as Russia's national flag in 1896.",
     sources: [
       { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
@@ -9982,6 +9994,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Chinese Taipei Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Chinese_Taipei_Football_Association" },
     ],
   },
+  "tz-tanganyika": {
+    description: "Tanganyika's 1961 independence flag took its green-black-green scheme from the Tanganyika African National Union (TANU), the party that led the country to independence: green for the land and its agricultural resources, black for the Tanganyikan people. Yellow fimbriations were added at Britain's suggestion; the design flew until Tanganyika united with Zanzibar in 1964 to form Tanzania.",
+    sources: [
+      { title: "Flag of Tanzania — Edarabia", url: "https://www.edarabia.com/tanzania/flag/" },
+    ],
+  },
   "tz-german": {
     description: "The Reichskolonialflagge combined the black-white-red of the German Empire's own flag with a crowned imperial eagle on a white disc. Used from the early 1900s, it asserted the authority of the German Empire across its overseas possessions, flying over government stations, harbours and barracks in Germany's African, Chinese and Pacific colonies just as the plain imperial flag did at home.",
     sources: [
@@ -10010,6 +10028,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The colours repeat Tanzania's own national flag: green for the country's vegetation and agriculture, black for its Swahili people, blue for the Indian Ocean and its lakes and rivers, and gold for its mineral wealth.",
     sources: [
       { title: "Flag of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
+    ],
+  },
+  "ua-ssr": {
+    description: "The Ukrainian SSR's flag followed the Soviet Union's own red field and gold hammer-and-sickle-and-star canton, adding a horizontal azure stripe along the base from 1949 to distinguish the republic. Red stood for the revolutionary struggle of the working masses and the hammer and sickle for the union of factory workers and peasants; Ukraine had been a founding republic of the USSR since 1922, and this flag remained official until independence in 1991.",
+    sources: [
+      { title: "Flag of the Soviet Union — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Soviet_Union" },
     ],
   },
   "ua-russian-empire": {
