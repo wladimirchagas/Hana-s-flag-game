@@ -4525,7 +4525,16 @@
           "design": "The cover of the Botswana passport.",
           "source": "https://gicg.net/passport/bw/",
           "sha256": "439e997a93cf153c0cf78422d6cdb07136c315e7f312f8500cf574e1655882c5",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Botswana's blue passport bears the national coat of arms, adopted in 1966: a shield flanked by two zebras — deliberately chosen because the animal belongs to no single tribe's totem, making it politically neutral, and because its black-and-white stripes were read as symbolising the unity of the country's people as one nation, an idea the national flag repeats. Three cogwheels above the shield represent industry, three wavy blue bands stand for water — echoing the national motto \"Pula\", meaning \"rain\" — and a bull's head marks the importance of cattle herding to Botswana's economy.",
+            "sources": [
+              {
+                "title": "Coat of arms of Botswana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -9483,7 +9492,16 @@
           "design": "The cover of the Ethiopia passport.",
           "source": "https://gicg.net/passport/et/",
           "sha256": "f4ab900ef0cd0e68586fe19d36d189577f15847f5126de55c5a3f539b15595b3",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Ethiopia's burgundy passport bears the national emblem, in use since 1996: a yellow interlaced pentagram radiating light on a blue field. The star stands for the unity of Ethiopia's many nationalities, its rays for their shared bright future; blue represents peace, and yellow hope, justice and equality — the same values the national flag's own colours carry.",
+            "sources": [
+              {
+                "title": "Emblem of Ethiopia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Ethiopia"
+              }
+            ]
+          }
         },
         {
           "id": "et-football-crest",
@@ -26385,7 +26403,16 @@
           "design": "The cover of the Rwanda passport.",
           "source": "https://gicg.net/passport/rw/",
           "sha256": "e52eba5794ec55d5d19d1002cb2c4510bd7eda2f769aff50b0cf35611e6c7c54",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Rwanda's passport bears the national coat of arms, adopted in 2001: a golden sun with 24 rays — one for each hour of the day, read as a symbol of enlightenment and a nation's enduring progress — above a shield showing a sorghum stem, a coffee branch and a traditional woven basket, representing food crops, cash crops and craftsmanship. A green ring binding the design stands for the unity of all Rwandans working toward a shared future, while two shields flanking the emblem stand for patriotism and the defence of national sovereignty.",
+            "sources": [
+              {
+                "title": "Emblem of Rwanda — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Rwanda"
+              }
+            ]
+          }
         },
         {
           "id": "rw-football-crest",

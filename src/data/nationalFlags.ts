@@ -3377,6 +3377,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Botswana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana" },
     ],
   },
+  "bw-passport": {
+    description: "Botswana's blue passport bears the national coat of arms, adopted in 1966: a shield flanked by two zebras — deliberately chosen because the animal belongs to no single tribe's totem, making it politically neutral, and because its black-and-white stripes were read as symbolising the unity of the country's people as one nation, an idea the national flag repeats. Three cogwheels above the shield represent industry, three wavy blue bands stand for water — echoing the national motto \"Pula\", meaning \"rain\" — and a bull's head marks the importance of cattle herding to Botswana's economy.",
+    sources: [
+      { title: "Coat of arms of Botswana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana" },
+    ],
+  },
   "by-armed-forces": {
     description: "A red field bears the vertical rushnyk pattern (the traditional Belarusian folk embroidery also seen on the national flag) at the hoist and the national emblem at the fly; the red recalls the blood shed by Belarusian defenders through history — from the 1410 Battle of Grunwald to the Red Army's Second World War campaigns — while the rushnyk pattern stands for the cultural continuity and spiritual unity of the Belarusian people.",
     sources: [
@@ -4238,6 +4244,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "et-arms": {
     description: "Adopted in 1996, the emblem is a golden interlaced pentagram radiating rays of light on a blue disc — the same device that sits at the centre of the national flag. The pentagram stands for the unity and equality of the nations, nationalities and peoples of the Federal Democratic Republic of Ethiopia; the radiating light for their shared prosperity and bright future.",
+    sources: [
+      { title: "Emblem of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Ethiopia" },
+    ],
+  },
+  "et-passport": {
+    description: "Ethiopia's burgundy passport bears the national emblem, in use since 1996: a yellow interlaced pentagram radiating light on a blue field. The star stands for the unity of Ethiopia's many nationalities, its rays for their shared bright future; blue represents peace, and yellow hope, justice and equality — the same values the national flag's own colours carry.",
     sources: [
       { title: "Emblem of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Ethiopia" },
     ],
@@ -7273,6 +7285,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "rw-arms": {
     description: "Rwanda's emblem replaced the older crossed-tools arms in 2001, in the colours of the new flag. Inside a ring closed by a traditional square knot — the knot standing for unity — sit the country's own devices: a stem of sorghum and a branch of coffee, the two staple crops, above a woven Rwandan basket (agaseke), itself an emblem of generosity. They rest on a cogwheel for industrial development, with the sun rising above; a Rwandan war-shield stands on each side to guard them. The ribbon below carries the motto Ubumwe, Umurimo, Gukunda Igihugu — “Unity, Work, Patriotism.”",
+    sources: [
+      { title: "Emblem of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Rwanda" },
+    ],
+  },
+  "rw-passport": {
+    description: "Rwanda's passport bears the national coat of arms, adopted in 2001: a golden sun with 24 rays — one for each hour of the day, read as a symbol of enlightenment and a nation's enduring progress — above a shield showing a sorghum stem, a coffee branch and a traditional woven basket, representing food crops, cash crops and craftsmanship. A green ring binding the design stands for the unity of all Rwandans working toward a shared future, while two shields flanking the emblem stand for patriotism and the defence of national sovereignty.",
     sources: [
       { title: "Emblem of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Rwanda" },
     ],
