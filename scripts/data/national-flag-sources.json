@@ -12617,7 +12617,16 @@
           "design": "The dark-blue cover of the Hong Kong Special Administrative Region passport.",
           "source": "https://en.wikipedia.org/wiki/Hong_Kong_Special_Administrative_Region_passport",
           "sha256": "dc0cb19b5ae3dbc4f89235eed936ff7cbea38e53be535ef29ce7a51cad227289",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Hong Kong SAR passport bears the bauhinia flower — the region's floral emblem, chosen by the Basic Law Drafting Committee to represent Hong Kong's local spirit — embossed in gold. On Hong Kong's own flag and emblem the flower's five petals each carry a red star echoing China's flag, expressing that Hong Kong is an inalienable part of China that retains its own identity under \"one country, two systems.\"",
+            "sources": [
+              {
+                "title": "Emblem of Hong Kong — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Hong_Kong"
+              }
+            ]
+          }
         },
         {
           "id": "hk-football-crest",
@@ -14429,7 +14438,16 @@
           "design": "The cover of the Iraq passport.",
           "source": "https://gicg.net/passport/iq/",
           "sha256": "1bac7477f7d501f815423088bca1e8d46429ac118ab2f205bd481511e6c5913b",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Iraq's passport bears the Eagle of Saladin: a golden-black eagle facing left, bearing on its breast a shield in the colours of the national flag and grasping a scroll inscribed \"Republic of Iraq\" in Arabic. The eagle became a symbol of pan-Arabism after the 1952 Egyptian revolution and was adopted into Iraq's own emblem in 1965, since revised in 1991, 2004 and 2008.",
+            "sources": [
+              {
+                "title": "Coat of arms of Iraq — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq"
+              }
+            ]
+          }
         },
         {
           "id": "iq-uk",
@@ -16604,7 +16622,16 @@
           "design": "The cover of the North Korea passport.",
           "source": "https://gicg.net/passport/kp/",
           "sha256": "d9fc2325681413eeb10d8ea024f0eba5b576885574c8f55552cb84df6cdad642",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "North Korea's passport bears the national emblem: Mount Paektu, revered as the birthplace of the Korean revolutionary tradition, shown with a hydroelectric power station at its base symbolising self-sufficiency in electricity, framed by an oval of rice sheaves for the socialist system, lit by the rays of a red five-pointed star for revolutionary tradition, and bound by a ribbon inscribed with the country's name.",
+            "sources": [
+              {
+                "title": "Emblem of North Korea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_North_Korea"
+              }
+            ]
+          }
         },
         {
           "id": "kp-football-crest",
@@ -18958,7 +18985,16 @@
           "design": "The cover of the Libya passport.",
           "source": "https://gicg.net/passport/ly/",
           "sha256": "ecd1cb7430707bddd0f6fb90058a7e7fef7a042264bfd764f29a82e3a6459989",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Libya has had no officially legislated coat of arms since the 2011 revolution, but since 2013 its passport has carried a crescent moon and star — a widely recognised symbol of Islam — as its de facto emblem, adopted in place of the ousted Gaddafi government's Eagle of Saladin.",
+            "sources": [
+              {
+                "title": "National Emblem of Libya — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_Emblem_of_Libya"
+              }
+            ]
+          }
         },
         {
           "id": "ly-italy",
@@ -20421,7 +20457,16 @@
           "design": "The cover of the Macau Special Administrative Region passport.",
           "source": "https://gicg.net/passport/mo/",
           "sha256": "5ab08e2ede06d4189ec85fe68cf735bfdfa63245eba19fa11195b4d64594ac6a",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Macau SAR passport bears the lotus flower, Macau's floral emblem, standing above a stylised rendering of the Governor Nobre de Carvalho Bridge and water, beneath an arc of five gold five-pointed stars echoing the flag of China. The lotus's three petals represent Macau's three main areas — the peninsula, Taipa and Coloane — while the stars express Macau's relationship to its sovereign state under \"one country, two systems.\"",
+            "sources": [
+              {
+                "title": "Emblem of Macau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Macau"
+              }
+            ]
+          }
         },
         {
           "id": "mo-football-crest",
@@ -21991,7 +22036,16 @@
           "design": "The cover of the Mozambique passport.",
           "source": "https://gicg.net/passport/mz/",
           "sha256": "4477c351e797d7c8e87fddd9c99fff8702aa28bdd1745b49213254658c7ded7c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Mozambique's passport bears the national emblem: a rising red sun over a map of Mozambique on green and blue waves, with a book for education crossed by a hoe for agriculture and an AK-47 rifle for the country's defence of its 1975 independence, all bordered by corn and sugar cane for agricultural wealth and a cogwheel for industry — a set of elements the constitution itself defines.",
+            "sources": [
+              {
+                "title": "Emblem of Mozambique — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Mozambique"
+              }
+            ]
+          }
         },
         {
           "id": "mz-football-crest",
@@ -27698,7 +27752,16 @@
           "design": "The cover of the Sweden passport.",
           "source": "https://gicg.net/passport/se/",
           "sha256": "45ed863e90ca661b528100688681a740ec4db11099ab5a2a8629375ff098e0cf",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Sweden's passport bears the Tre Kronor (Three Crowns) — three gold coronets on blue, arranged two above and one below — Sweden's oldest national emblem, attested on the royal seal since the late 13th century. Its original meaning is debated: theories link it to a union of three kingdoms, to the legendary Magi of Cologne Cathedral, or to the three Uppland districts once entitled to help elect the king, but it has endured for over 700 years as Sweden's enduring symbol of statehood.",
+            "sources": [
+              {
+                "title": "Tre kronor — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Tre_kronor"
+              }
+            ]
+          }
         },
         {
           "id": "se-sami",
@@ -31144,7 +31207,16 @@
           "design": "The dark-green cover of the Republic of China (Taiwan) passport.",
           "source": "https://en.wikipedia.org/wiki/Republic_of_China_passport",
           "sha256": "f7408332cb8b4dcdc98b8ea522d8a1060a7c1042472ada21bb32d8faaf72fc93",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Taiwan's passport bears the Republic of China's national emblem, \"Blue Sky with a White Sun\": a white twelve-pointed sun on a blue disc, drawn from the same device at the canton of the national flag. Its twelve rays represent the twelve traditional Chinese two-hour periods that make up a day, and by extension the twelve months of the year, symbolising a spirit of unceasing progress.",
+            "sources": [
+              {
+                "title": "Blue Sky with a White Sun — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Blue_Sky_with_a_White_Sun"
+              }
+            ]
+          }
         },
         {
           "id": "tw-football-crest",

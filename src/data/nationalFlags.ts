@@ -4917,6 +4917,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Hong Kong — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
     ],
   },
+  "hk-passport": {
+    description: "The Hong Kong SAR passport bears the bauhinia flower — the region's floral emblem, chosen by the Basic Law Drafting Committee to represent Hong Kong's local spirit — embossed in gold. On Hong Kong's own flag and emblem the flower's five petals each carry a red star echoing China's flag, expressing that Hong Kong is an inalienable part of China that retains its own identity under \"one country, two systems.\"",
+    sources: [
+      { title: "Emblem of Hong Kong — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Hong_Kong" },
+    ],
+  },
   "hk-football-crest": {
     description: "The dragon is a longstanding symbol of power, strength and good fortune in Chinese culture, historically associated with imperial authority.",
     sources: [
@@ -5275,6 +5281,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "iq-arms": {
     description: "The republic's arms are the Eagle of Saladin — named for the 12th-century sultan, who was born in Tikrit — holding a shield bearing the national flag turned to a vertical arrangement, above a scroll with the name of the state in Arabic. The eagle is a pan-Arab device shared with Egypt and Palestine, adopted after the 1958 revolution replaced the Hashemite monarchy; the monarchy's own arms had been a very different thing, a golden crown of five arches on a royal mantle standing for sacrifice and purity, with two stars for Ishtar and Shamash recalling Iraq's pre-Islamic past.",
+    sources: [
+      { title: "Coat of arms of Iraq — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq" },
+    ],
+  },
+  "iq-passport": {
+    description: "Iraq's passport bears the Eagle of Saladin: a golden-black eagle facing left, bearing on its breast a shield in the colours of the national flag and grasping a scroll inscribed \"Republic of Iraq\" in Arabic. The eagle became a symbol of pan-Arabism after the 1952 Egyptian revolution and was adopted into Iraq's own emblem in 1965, since revised in 1991, 2004 and 2008.",
     sources: [
       { title: "Coat of arms of Iraq — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq" },
     ],
@@ -5662,6 +5674,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "kp-arms": {
     description: "Adopted in 1948 and revised in 1993, the emblem shows the Sup'ung hydroelectric dam beneath a mountain — specified in 1993 as Mount Paektu, the peak tied in state ideology to the anti-Japanese revolutionary tradition — crowned by a red socialist star. The dam stands for the industrial power and self-sufficiency of the north, which produced most of Korea's electricity in 1948; the surrounding ears of rice, bound by a red ribbon carrying the state's name, stand for agriculture.",
+    sources: [
+      { title: "Emblem of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_North_Korea" },
+    ],
+  },
+  "kp-passport": {
+    description: "North Korea's passport bears the national emblem: Mount Paektu, revered as the birthplace of the Korean revolutionary tradition, shown with a hydroelectric power station at its base symbolising self-sufficiency in electricity, framed by an oval of rice sheaves for the socialist system, lit by the rays of a red five-pointed star for revolutionary tradition, and bound by a ribbon inscribed with the country's name.",
     sources: [
       { title: "Emblem of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_North_Korea" },
     ],
@@ -6113,6 +6131,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Flag of Libya", url: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
     ],
   },
+  "ly-passport": {
+    description: "Libya has had no officially legislated coat of arms since the 2011 revolution, but since 2013 its passport has carried a crescent moon and star — a widely recognised symbol of Islam — as its de facto emblem, adopted in place of the ousted Gaddafi government's Eagle of Saladin.",
+    sources: [
+      { title: "National Emblem of Libya — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Libya" },
+    ],
+  },
   "ly-football-crest": {
     description: "The colours recall the flag designer Omar Faiek Shennib's stated symbolism: red for the blood sacrificed for Libya's freedom, black for the dark years under occupation, and green for agriculture and future prosperity; the crescent and star reference the Senussi dynasty's banner and King Idris, under whom Libya won independence in 1951.",
     sources: [
@@ -6374,6 +6398,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
     ],
   },
+  "mo-passport": {
+    description: "The Macau SAR passport bears the lotus flower, Macau's floral emblem, standing above a stylised rendering of the Governor Nobre de Carvalho Bridge and water, beneath an arc of five gold five-pointed stars echoing the flag of China. The lotus's three petals represent Macau's three main areas — the peninsula, Taipa and Coloane — while the stars express Macau's relationship to its sovereign state under \"one country, two systems.\"",
+    sources: [
+      { title: "Emblem of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Macau" },
+    ],
+  },
   "mo-football-crest": {
     description: "The lotus is Macau's regional flower and the central emblem of its own flag, where its three petals represent the peninsula and the islands of Taipa and Coloane, and the flower symbolises purity in Chinese culture.",
     sources: [
@@ -6622,6 +6652,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "mz-emblem": {
     description: "Article 194 of the constitution spells the emblem out charge by charge: the corn stalk and the sugar cane framing it are the country's agricultural wealth; the cogwheel is labour and industry; the book is education; the rifle stands for defence and vigilance, the hoe for the peasantry; the map is the country itself, with the rising sun for the building of a new nation and the waves for the sea and the rivers; and the red star at the top is the spirit of international solidarity of the Mozambican people.",
+    sources: [
+      { title: "Emblem of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mozambique" },
+    ],
+  },
+  "mz-passport": {
+    description: "Mozambique's passport bears the national emblem: a rising red sun over a map of Mozambique on green and blue waves, with a book for education crossed by a hoe for agriculture and an AK-47 rifle for the country's defence of its 1975 independence, all bordered by corn and sugar cane for agricultural wealth and a cogwheel for industry — a set of elements the constitution itself defines.",
     sources: [
       { title: "Emblem of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mozambique" },
     ],
@@ -7756,6 +7792,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Sweden — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sweden" },
     ],
   },
+  "se-passport": {
+    description: "Sweden's passport bears the Tre Kronor (Three Crowns) — three gold coronets on blue, arranged two above and one below — Sweden's oldest national emblem, attested on the royal seal since the late 13th century. Its original meaning is debated: theories link it to a union of three kingdoms, to the legendary Magi of Cologne Cathedral, or to the three Uppland districts once entitled to help elect the king, but it has endured for over 700 years as Sweden's enduring symbol of statehood.",
+    sources: [
+      { title: "Tre kronor — Wikipedia", url: "https://en.wikipedia.org/wiki/Tre_kronor" },
+    ],
+  },
   "se-football-crest": {
     description: "The blue-and-yellow cross is Sweden's own national flag. Svenska Fotbollförbundet — simply Swedish for “Swedish Football Association” — was founded in Stockholm on 18 December 1904, the year on the badge; “Sverige” is the Swedish name for Sweden.",
     sources: [
@@ -8366,6 +8408,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The 'Blue Sky with a White Sun', designed by Lu Haodong in 1895 and adopted as the national emblem in 1928. The blue disc is the vastness of the sky and the white sun the light of revolution. Its twelve triangular rays stand for the twelve months and the twelve traditional Chinese two-hour periods (shíchen), a call to unceasing progress; the rays stop short of the rim — the breadth of the sky — which distinguishes the state emblem from the Kuomintang party badge whose rays reach the edge.",
     sources: [
       { title: "National Emblem of the Republic of China — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China" },
+    ],
+  },
+  "tw-passport": {
+    description: "Taiwan's passport bears the Republic of China's national emblem, \"Blue Sky with a White Sun\": a white twelve-pointed sun on a blue disc, drawn from the same device at the canton of the national flag. Its twelve rays represent the twelve traditional Chinese two-hour periods that make up a day, and by extension the twelve months of the year, symbolising a spirit of unceasing progress.",
+    sources: [
+      { title: "Blue Sky with a White Sun — Wikipedia", url: "https://en.wikipedia.org/wiki/Blue_Sky_with_a_White_Sun" },
     ],
   },
   "tw-football-crest": {
