@@ -6298,6 +6298,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Yatagarasu — Wikipedia", url: "https://en.wikipedia.org/wiki/Yatagarasu" },
     ],
   },
+  "ke-ibeac": {
+    description: "The company's own Union Flag carried this sun-and-crown badge on a white disc at its centre, surrounded by a laurel garland. The Imperial British East Africa Company's badge — a golden sun in splendour beneath the Imperial Crown — was designed to represent the company's motto \"Lux et Libertas\" (\"Light and Liberty\"). The chartered company administered the territory until 1895, when financial insolvency forced it to surrender its charter and the British government took over direct administration.",
+    sources: [
+      { title: "Flags of Empire: British Africa", url: "https://imperialflags.blogspot.com/2009/01/imperial-british-east-africa-company.html" },
+    ],
+  },
+  "ke-portugal": {
+    description: "This royal standard set the Portuguese coat of arms on a plain white field, a format the monarchy used with variations from the reign of João II until 1830. At its centre, five small blue shields arranged in a cross each carry five white discs — together read as the five wounds of Christ and the five Moorish kings said to have been defeated at the Battle of Ourique — while seven gold castles ring the shield, traditionally symbolising victories over Moorish strongholds.",
+    sources: [
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
+    ],
+  },
   "ke-defence": {
     description: "A tricolour of red, light blue and navy blue — one colour for each service, Army, Air Force and Navy — bears the national flag in the canton and, in the fly, the joint emblem: two black rifles crossed in saltire over a silver anchor, with a golden eagle above, uniting a symbol of each branch (rifles for the Army, anchor for the Navy, eagle for air power) under one Kenya Defence Forces badge.",
     sources: [
@@ -10018,6 +10030,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "FG-004 – Imperial Flag – Reichsdienstflagge c. 1905–1912 — Flaggeek", url: "https://www.flaggeek.net/p/imperial-german-colonial-flag-ca.html" },
     ],
   },
+  "tz-portugal": {
+    description: "This royal standard set the Portuguese coat of arms on a plain white field, a format the monarchy used with variations from the reign of João II until 1830. At its centre, five small blue shields arranged in a cross each carry five white discs — together read as the five wounds of Christ and the five Moorish kings said to have been defeated at the Battle of Ourique — while seven gold castles ring the shield, traditionally symbolising victories over Moorish strongholds.",
+    sources: [
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
+    ],
+  },
   "tz-president": {
     description: "The presidential flag carries Tanzania's coat of arms (adopted 1961, three years before this flag): a warrior's shield quartered on a golden field — gold for the country's mineral wealth — with a burning torch in its first quarter symbolising the Uhuru Torch of Tanzanian independence, itself standing for freedom, enlightenment and knowledge; the shield is supported by a man and a woman, reflecting the country's ideal of shared nation-building.",
     sources: [
@@ -10130,6 +10148,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The trident (tryzub) is Ukraine's own state coat of arms. Its earliest known form appears on the seals and coins of the Kyivan Rus' ruler Volodymyr the Great around the year 1000; historians have proposed it may originally have depicted a falcon, an anchor, a bow or the Holy Trinity, and some theories trace it to Khazar rather than purely Ukrainian origins. It was first adopted as a national emblem by the short-lived Ukrainian People's Republic on 25 February 1918, and was readopted as Ukraine's coat of arms on 19 February 1992, after independence.",
     sources: [
       { title: "Coat of arms of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
+    ],
+  },
+  "ug-ibeac": {
+    description: "The company's blue ensign carried this sun-and-crown badge in the fly. The Imperial British East Africa Company's badge — a golden sun in splendour beneath the Imperial Crown — was designed to represent the company's motto \"Lux et Libertas\" (\"Light and Liberty\"). The chartered company administered the territory until 1895, when financial insolvency forced it to surrender its charter and the British government took over direct administration.",
+    sources: [
+      { title: "Flags of Empire: British Africa", url: "https://imperialflags.blogspot.com/2009/01/imperial-british-east-africa-company.html" },
     ],
   },
   "ug-updf": {
