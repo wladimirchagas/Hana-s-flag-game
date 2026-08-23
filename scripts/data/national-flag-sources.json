@@ -23785,7 +23785,20 @@
           "design": "The naval jack.",
           "source": "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags",
           "sha256": "db7319d431abeaa578a4b603b63a24549e3affb268582402a798abfec9cf71f7",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Paraguay's naval jack, flown since 1811, is a white field bearing a red-and-blue saltire with a white disc charged with a golden star at the centre. The star recurs across Paraguay's national emblems as a device commemorating the country's May 1811 independence movement, and the red, white and blue used throughout the design are the same colours — inspired by the French tricolour — carried by the national flag itself, understood locally as standing for independence and liberty.",
+            "sources": [
+              {
+                "title": "Wikipedia — List of Paraguayan flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags"
+              },
+              {
+                "title": "Wikipedia — Flag of Paraguay",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Paraguay"
+              }
+            ]
+          }
         },
         {
           "id": "py-air-force",
@@ -23796,7 +23809,20 @@
           "design": "The air force's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags",
           "sha256": "2da1a2d258eea4e69fb08ed33957c466e588207117dd4734783b365059ea5944",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Paraguayan Air Force's flag is a blue field with four yellow five-pointed stars at the corners around a central roundel of red, white and blue rings augmented with gold wings. The star is a recurring symbol in Paraguay's national emblems, drawn from the coat of arms adopted to commemorate the May 1811 independence movement, where it stands for the freedom the country has held since.",
+            "sources": [
+              {
+                "title": "Flags of the World — Flag of Paraguay",
+                "url": "https://www.globalmilitary.net/flags/pry/"
+              },
+              {
+                "title": "Wikipedia — List of Paraguayan flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags"
+              }
+            ]
+          }
         },
         {
           "id": "py-seal",
@@ -24141,7 +24167,20 @@
           "design": "A light blue flag with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
           "sha256": "0db59015b48102c1dfb5f963e3001f9af583bb2f15804f3cea6bb02b944c4a10",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Romania's naval jack, in use since 2019, is light blue with the national flag in the canton and a black anchor in the fly. Light blue is the colour long associated with the Romanian Naval Forces' own insignia, and the anchor is the conventional maritime device marking the jack as belonging to the navy rather than the plain national flag flown ashore.",
+            "sources": [
+              {
+                "title": "Flags of the World — Romania: Military and Naval Colors Since 1989",
+                "url": "https://www.crwflags.com/fotw/flags/ro-mil.html"
+              },
+              {
+                "title": "Wikipedia — List of Romanian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Romanian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "ro-arms",
@@ -25360,7 +25399,20 @@
           "design": "A triple-tailed version of the national flag, flown by the armed forces.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden",
           "sha256": "ddc7da1923d0bbf6ebb858a56c544c955c6c72732ff49851f84e876a8410c642",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Sweden's war flag and naval ensign is a triple-tailed ('tretungad') version of the national flag, reserved for the armed forces and the state, adopted in its modern form in 1905. The distinctive swallowtail-with-tongue shape descends from the King's own personal banner, which had grown a two-pointed tail by the mid-17th century and was formally reserved for state and military use by royal warrant in 1663 — making it one of the oldest naval ensign designs still flown anywhere in the world.",
+            "sources": [
+              {
+                "title": "Wikipedia — List of flags of Sweden",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden"
+              },
+              {
+                "title": "Wikipedia — Flag of Sweden",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Sweden"
+              }
+            ]
+          }
         },
         {
           "id": "se-royal",
@@ -25624,7 +25676,20 @@
           "design": "The army's colour.",
           "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
           "sha256": "d7342be8ebcbd06acacbd66fa273303041c5b658eeb41c5dd98b99a117d69cf6",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Colour of the Singapore Army, carried since 1965, bears the canton of the national flag with the Singapore Armed Forces crest in the fly. The crest is the state crest — the same shield, lion and tiger supporters used on Singapore's coat of arms — encircled by a laurel wreath and the words 'Tentera Singapura' (Singapore Armed Forces), the laurel standing for the honour, glory and excellence the SAF strives toward.",
+            "sources": [
+              {
+                "title": "Flags of the World — Army Flags (Singapore)",
+                "url": "https://www.crwflags.com/fotw/flags/sg%5Earmy.html"
+              },
+              {
+                "title": "Wikipedia — List of Singaporean flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags"
+              }
+            ]
+          }
         },
         {
           "id": "sg-air-force",
@@ -25791,7 +25856,20 @@
           "design": "The presidential flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Slovenian_flags",
           "sha256": "b315b236b8118887a7a850ad65563eae38fce6a9697098d071084444fd07adb0",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The presidential flag, flown since 1991, is white bordered in blue and red bearing the Slovenian coat of arms at its centre. The arms depict Mount Triglav, Slovenia's highest peak, in white on a blue field, above two wavy lines representing the country's rivers flowing to the Adriatic, with three golden six-pointed stars arranged point-down above — stars drawn from the historic arms of the Counts of Celje and read today as a symbol of Slovenian independence.",
+            "sources": [
+              {
+                "title": "Wikipedia — Flag of Slovenia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Slovenia"
+              },
+              {
+                "title": "Wikipedia — List of Slovenian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Slovenian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "si-armed-forces",

@@ -6170,6 +6170,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
     ],
   },
+  "py-air-force": {
+    description: "The Paraguayan Air Force's flag is a blue field with four yellow five-pointed stars at the corners around a central roundel of red, white and blue rings augmented with gold wings. The star is a recurring symbol in Paraguay's national emblems, drawn from the coat of arms adopted to commemorate the May 1811 independence movement, where it stands for the freedom the country has held since.",
+    sources: [
+      { title: "Flags of the World — Flag of Paraguay", url: "https://www.globalmilitary.net/flags/pry/" },
+      { title: "Wikipedia — List of Paraguayan flags", url: "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags" },
+    ],
+  },
+  "py-naval-jack": {
+    description: "Paraguay's naval jack, flown since 1811, is a white field bearing a red-and-blue saltire with a white disc charged with a golden star at the centre. The star recurs across Paraguay's national emblems as a device commemorating the country's May 1811 independence movement, and the red, white and blue used throughout the design are the same colours — inspired by the French tricolour — carried by the national flag itself, understood locally as standing for independence and liberty.",
+    sources: [
+      { title: "Wikipedia — List of Paraguayan flags", url: "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags" },
+      { title: "Wikipedia — Flag of Paraguay", url: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
+    ],
+  },
   "py-seal": {
     description: "Paraguay's seal is the reason its flag is unique among national flags — it is the only one whose two sides differ, because the OBVERSE and the REVERSE of the seal are different devices and the flag carries one on each. The obverse, on the front of the flag, is the yellow star of May between a palm branch and an olive branch, ringed by the words República del Paraguay. The reverse, on the back, is a golden lion guarding a staff topped with a red Phrygian cap, above the motto Paz y Justicia — Peace and Justice. The first design dates from 1820, under the dictatorship of José Gaspar Rodríguez de Francia.",
     sources: [
@@ -6218,6 +6232,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Air Force's own emblem bears the same gold eagle clutching lightning bolts in its claws — a mark of martial power adapted for the service that commands the skies — shown here in flight among clouds and stars, flanked by two stars and resting on the same laurel-and-oak branches for victory and endurance as the Army's own emblem.",
     sources: [
       { title: "Flags of Romanian Army Staffs — Flags of the World", url: "https://www.fotw.info/flags/ro-staff.html" },
+    ],
+  },
+  "ro-naval-jack": {
+    description: "Romania's naval jack, in use since 2019, is light blue with the national flag in the canton and a black anchor in the fly. Light blue is the colour long associated with the Romanian Naval Forces' own insignia, and the anchor is the conventional maritime device marking the jack as belonging to the navy rather than the plain national flag flown ashore.",
+    sources: [
+      { title: "Flags of the World — Romania: Military and Naval Colors Since 1989", url: "https://www.crwflags.com/fotw/flags/ro-mil.html" },
+      { title: "Wikipedia — List of Romanian flags", url: "https://en.wikipedia.org/wiki/List_of_Romanian_flags" },
     ],
   },
   "ro-president": {
@@ -6391,6 +6412,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
     ],
   },
+  "se-naval-ensign": {
+    description: "Sweden's war flag and naval ensign is a triple-tailed ('tretungad') version of the national flag, reserved for the armed forces and the state, adopted in its modern form in 1905. The distinctive swallowtail-with-tongue shape descends from the King's own personal banner, which had grown a two-pointed tail by the mid-17th century and was formally reserved for state and military use by royal warrant in 1663 — making it one of the oldest naval ensign designs still flown anywhere in the world.",
+    sources: [
+      { title: "Wikipedia — List of flags of Sweden", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden" },
+      { title: "Wikipedia — Flag of Sweden", url: "https://en.wikipedia.org/wiki/Flag_of_Sweden" },
+    ],
+  },
   "se-royal": {
     description: "The Tre Kronor (Three Crowns) on the greater arms date to the late 13th century and are Sweden's oldest national emblem; one long-standing explanation ties them to King Magnus Eriksson's 14th-century title \"King of Norway, Sweden and all of Scania\", uniting three realms under one crown.",
     sources: [
@@ -6421,6 +6449,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Swedish Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Swedish_Football_Association" },
     ],
   },
+  "sg-army": {
+    description: "The Colour of the Singapore Army, carried since 1965, bears the canton of the national flag with the Singapore Armed Forces crest in the fly. The crest is the state crest — the same shield, lion and tiger supporters used on Singapore's coat of arms — encircled by a laurel wreath and the words 'Tentera Singapura' (Singapore Armed Forces), the laurel standing for the honour, glory and excellence the SAF strives toward.",
+    sources: [
+      { title: "Flags of the World — Army Flags (Singapore)", url: "https://www.crwflags.com/fotw/flags/sg%5Earmy.html" },
+      { title: "Wikipedia — List of Singaporean flags", url: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    ],
+  },
   "sg-president": {
     description: "A red field — read as standing for universal brotherhood and the equality of all people — bears a white crescent moon for a young nation on the rise and five stars for the ideals of democracy, peace, progress, justice and equality, the same devices as the national flag's canton; the standard is flown from the highest point of the Istana whenever the President is in residence.",
     sources: [
@@ -6449,6 +6484,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A white-blue-red field bears the Slovenian Army emblem: a stylised Mount Triglav, the country's highest peak and national coat of arms device, standing for national pride and identity, above two crossed swords; the emblem's three gold stars are drawn from the historic arms of the Counts of Celje, and its two wavy blue lines represent the Adriatic Sea and Slovenia's rivers.",
     sources: [
       { title: "The Slovenian Flag Explained — ling-app.com", url: "https://ling-app.com/blog/slovenian-flag/" },
+    ],
+  },
+  "si-president": {
+    description: "The presidential flag, flown since 1991, is white bordered in blue and red bearing the Slovenian coat of arms at its centre. The arms depict Mount Triglav, Slovenia's highest peak, in white on a blue field, above two wavy lines representing the country's rivers flowing to the Adriatic, with three golden six-pointed stars arranged point-down above — stars drawn from the historic arms of the Counts of Celje and read today as a symbol of Slovenian independence.",
+    sources: [
+      { title: "Wikipedia — Flag of Slovenia", url: "https://en.wikipedia.org/wiki/Flag_of_Slovenia" },
+      { title: "Wikipedia — List of Slovenian flags", url: "https://en.wikipedia.org/wiki/List_of_Slovenian_flags" },
     ],
   },
   "si-arms": {
