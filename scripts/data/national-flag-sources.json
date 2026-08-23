@@ -15782,7 +15782,16 @@
           "design": "The cover of the Kyrgyzstan passport.",
           "source": "https://gicg.net/passport/kg/",
           "sha256": "6c4fb476239c7b692e082e1f7182f11c4ab59c9dab49f54dcb0c049e224963bd",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Kyrgyzstan's passport bears the state coat of arms: a white falcon, Ak-Shumkar, wings spread wide as a symbol of freedom, generosity and vigilance, framing Lake Issyk-Kul ringed by the snow-capped peaks of the Ala-Too range — the country's own \"land of mountains\" landscape. Stalks of wheat and cotton flank the emblem, representing Kyrgyzstan's agriculture.",
+            "sources": [
+              {
+                "title": "National Emblem of Kyrgyzstan — Advantour",
+                "url": "https://www.advantour.com/kyrgyzstan/emblem.htm"
+              }
+            ]
+          }
         },
         {
           "id": "kg-russian-empire",
@@ -16785,7 +16794,16 @@
           "design": "The cover of the Kuwait passport.",
           "source": "https://gicg.net/passport/kw/",
           "sha256": "51b6c42598cafd2dce0417729a3a6ef7d7fe2a7b0252637c1bf9dc81a0d2d639",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Kuwait's passport bears the national emblem, adopted in 1962: a golden falcon with wings displayed, its breast bearing the national flag's own shield design. The falcon recalls the Banu Quraish, the tribal line of the Prophet Muhammad, and appears across many coats of arms on the Arabian Peninsula; falconry itself is a historic pastime of Gulf rulers, making the bird a natural emblem of prestige. The falcon supports a disc showing a traditional dhow sailing vessel, a nod to Kuwait's seafaring and pearling heritage.",
+            "sources": [
+              {
+                "title": "Emblem of Kuwait — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Kuwait"
+              }
+            ]
+          }
         },
         {
           "id": "kw-football-crest",
@@ -25665,7 +25683,16 @@
           "design": "The cover of the Qatar passport.",
           "source": "https://gicg.net/passport/qa/",
           "sha256": "4fdfdf987af04d4e684391052d745dd7fc2eafd180e152f06212733f048c9e5b",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Qatar's maroon passport bears the national emblem: two crossed swords for the country's readiness to defend its sovereignty, framing a traditional dhow named Fath al-Khair (\"Bringer of Goodness\") — the country's first motorised wooden vessel, built in 1900 for pearl diving and trade, and a symbol of the pearling industry that drove Qatar's early economic growth — flanked by two palm trees representing Arab dignity and hospitality.",
+            "sources": [
+              {
+                "title": "Have you really seen Qatar's National Emblem? — Qatar Living",
+                "url": "https://www.qatarliving.com/en/article/have-you-really-seen-qatars-national-emblem"
+              }
+            ]
+          }
         },
         {
           "id": "qa-football-crest",
@@ -29574,7 +29601,16 @@
           "design": "The cover of the Tajikistan passport.",
           "source": "https://gicg.net/passport/tj/",
           "sha256": "db61e5fb9c9e8f3bd79e3efa5a9486c6423ded2136181a469c26d22b868bb9d9",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Tajikistan's passport bears the state emblem: a stylised crown beneath a semicircle of seven stars, rising in the rays of a sun over snow-capped mountains, framed by wheat ears on one side and cotton branches on the other, with an open book below. The crown is a deliberate reference to the Persian word \"taj\", meaning crown — the very root from which the Tajik people traditionally take their name.",
+            "sources": [
+              {
+                "title": "Coat of arms — meteo.tj (Tajikistan)",
+                "url": "https://www.meteo.tj/en/national-emblem"
+              }
+            ]
+          }
         },
         {
           "id": "tj-russian-empire",
