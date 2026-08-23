@@ -3734,6 +3734,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia" },
     ],
   },
+  "co-passport": {
+    description: "As a full Andean Community member, Colombia issues the bloc's shared bordeaux passport, reading \"COMUNIDAD ANDINA\" above the national coat of arms. That shield is divided into three: a pomegranate flanked by cornucopias of coins and tropical fruit at the top, recalling the colonial Viceroyalty of New Granada and its wealth; a Phrygian cap for liberty in the centre; and two ships below, representing the Isthmus of Panama (once part of Colombia) and, today, the country's coastlines on both the Atlantic and Pacific. An Andean condor perches above the shield holding an olive crown, beneath the motto \"Libertad y Orden\" — Liberty and Order.",
+    sources: [
+      { title: "Andean passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Andean_passport" },
+      { title: "Coat of arms of Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia" },
+    ],
+  },
   "co-football-crest": {
     description: "The yellow, blue and red repeat Colombia's own national flag. Federación Colombiana de Fútbol is simply the association's own name — the Colombian Football Federation.",
     sources: [
@@ -4857,6 +4864,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Garuda is the mount of Vishnu, and in Javanese and Balinese tradition stands for knowledge, power, bravery, loyalty and discipline — Bali venerates it as the lord of all flying creatures. Its feathers are counted, not merely drawn: they are arranged to spell the date of the proclamation of independence, 17 August 1945. The shield on its breast carries the five principles of Pancasila, the state philosophy, and the scroll in its talons reads \"Bhinneka Tunggal Ika\", a line of Old Javanese from the 14th-century poem Sutasoma by Empu Tantular of Majapahit. That line was written to reconcile the Hindu and Buddhist faiths — \"although diverse, both are truthful to Dharma; there is no duality in Truth\" — and is now read as unity in diversity.",
     sources: [
       { title: "National emblem of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
+    ],
+  },
+  "id-passport": {
+    description: "Indonesia's turquoise-green passport (in use since 2014) bears the Garuda Pancasila emblem in gold: a mythical golden eagle drawn from Hindu-Buddhist mythology, its golden colour signifying divine glory and sovereignty, gripping a scroll reading \"Bhinneka Tunggal Ika\" (\"Unity in Diversity\"). The shield on its breast carries the five symbols of Pancasila, Indonesia's founding national ideology, while the eagle's feather counts — 17 on each wing, 8 on the tail, 45 on the neck — encode the date of Indonesian independence: 17 August 1945.",
+    sources: [
+      { title: "National emblem of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
+      { title: "Indonesian Passport: Types, Validity, Application Process, and Features", url: "https://embassies.info/indonesia/passports" },
     ],
   },
   "id-football-crest": {
@@ -6667,6 +6681,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The eight rays of the sun stand for the eight provinces — Batangas, Bulacan, Cavite, Manila, Laguna, Nueva Ecija, Pampanga and Tarlac — placed under martial law by the Spanish governor-general at the outbreak of the 1896 revolution; the three stars stand for Luzon, the Visayas and Mindanao. The American bald eagle on the blue field and the lion rampant of the Kingdom of León on the red field represent the country's two colonial rulers, the United States and Spain. The present arms were designed by Galo B. Ocampo and approved under Commonwealth Act No. 731 on 3 July 1946, the day of full independence.",
     sources: [
       { title: "Coat of arms of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Philippines" },
+    ],
+  },
+  "ph-passport": {
+    description: "The Philippine passport's maroon cover bears the national coat of arms in gold: an eight-rayed sun (for the eight provinces placed under martial law at the start of the 1896 Philippine Revolution) and three five-pointed stars for the country's three main island groups — Luzon, the Visayas and Mindanao — on a shield flanked by the American bald eagle, holding an olive branch and arrows, and the Spanish rampant lion. A 1998 law provided for removing the eagle and lion as colonial-era holdovers, but the constitutionally required referendum to ratify that change was never held, so both remain on the arms today.",
+    sources: [
+      { title: "Coat of arms of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Philippines" },
+      { title: "Outdated Philippine coat of arms — Philippine Daily Inquirer", url: "https://opinion.inquirer.net/114149/outdated-philippine-coat-arms" },
     ],
   },
   "ph-football-crest": {
