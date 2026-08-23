@@ -2753,6 +2753,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Armenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Armenia" },
     ],
   },
+  "ao-portugal-1911": {
+    description: "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+    sources: [
+      { title: "Meaning of the Portuguese Flag — Portugal.com", url: "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/" },
+    ],
+  },
   "ao-president": {
     description: "A red field bears the same emblem as the national flag — a half-cogwheel for industrial workers, a machete for agricultural labourers, and a five-pointed star for internationalism and progress — with two yellow olive branches added beneath it, echoing the hammer, sickle and star of the flags of the Marxist-Leninist states that supported Angola's independence movement, the MPLA, in the 1975 war of liberation from Portugal.",
     sources: [
@@ -3001,6 +3007,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Eternal flame: How Azerbaijan became the 'Land of Fire' — CNN Travel", url: "https://www.cnn.com/travel/article/yanar-dag-azerbaijan-land-of-fire" },
     ],
   },
+  "ba-1992": {
+    description: "Independent Bosnia and Herzegovina's first flag showed the gold fleurs-de-lis of the House of Kotromanić, the medieval dynasty that ruled the Kingdom of Bosnia, on a blue field. The fleur-de-lis had been adopted by the kingdom's first crowned king, Tvrtko I, in recognition of French royal support for his accession, and was revived in 1992 as a national symbol before an internationally imposed, ethnically neutral design replaced it in 1998.",
+    sources: [
+      { title: "Coat of arms of Bosnia and Herzegovina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
+    ],
+  },
   "ba-arms": {
     description: "The arms simply repeat the national flag, adopted together in 1998. The three points of the shield stand for the country's three constituent peoples — Bosniaks, Croats and Serbs; the yellow triangle is read as the rough triangular shape of the country's territory, and its three sides again as the three peoples. The row of white stars, cut off top and bottom, stands for Europe and is deliberately open-ended, meant to be infinite. The design was chosen by the international High Representative when the country's communities could not agree, which is why it avoids the older national and religious symbols — the fleurs-de-lis of the medieval Kotromanić kings that the 1992 flag had carried had come to be read as a Bosniak emblem.",
     sources: [
@@ -3210,6 +3222,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The five-pointed serrated emblem repeats the five white triangles on Bahrain's own national flag, added to the flag's serrated edge in 2002 (an earlier version had 28, then 8, points) to stand for the Five Pillars of Islam.",
     sources: [
       { title: "Flag of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    ],
+  },
+  "bi-belgium": {
+    description: "Belgium's black-yellow-red tricolour is drawn from the heraldry of the Duchy of Brabant — a yellow lion with red claws and tongue on a black shield. The black recalls the shield's field, yellow the fertile land and the values of liberty and justice, and red the lion's claws and the courage and sacrifice of the Belgian people; the medieval Brabant tricolour evolved into today's flag over the following centuries.",
+    sources: [
+      { title: "Why is the Belgium flag black yellow and red?", url: "https://www.colorwithleo.com/why-is-the-belgium-flag-black-yellow-and-red/" },
     ],
   },
   "bi-german": {
@@ -3852,6 +3870,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The badge repeats Chile's own national flag exactly — the blue canton, white star and red lower field — rather than drawing on the condor and huemul deer of the country's coat of arms. Federación de Fútbol de Chile is simply the association's own name, the Football Federation of Chile.",
     sources: [
       { title: "Chile national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Chile_national_football_team" },
+    ],
+  },
+  "cm-german": {
+    description: "The Reichskolonialflagge combined the black-white-red of the German Empire's own flag with a crowned imperial eagle on a white disc. Used from the early 1900s, it asserted the authority of the German Empire across its overseas possessions, flying over government stations, harbours and barracks in Germany's African, Chinese and Pacific colonies just as the plain imperial flag did at home.",
+    sources: [
+      { title: "FG-004 – Imperial Flag – Reichsdienstflagge c. 1905–1912 — Flaggeek", url: "https://www.flaggeek.net/p/imperial-german-colonial-flag-ca.html" },
     ],
   },
   "cm-arms": {
@@ -4541,6 +4565,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Egyptian Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Egyptian_Football_Association" },
     ],
   },
+  "er-italian": {
+    description: "The Kingdom of Italy's flag was the green-white-red tricolour of Italian unification, charged with the coat of arms of the ruling House of Savoy — a white cross on a red shield within a blue border. Flown from unification in 1861, the arms were dropped after the 1946 referendum ended the monarchy, leaving the plain tricolour still used today.",
+    sources: [
+      { title: "Flag of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
+    ],
+  },
   "er-arms": {
     description: "A camel stands in the desert within a wreath of olive branches. The camel — the patient beast that carried the Eritrean people and their liberation fighters across the lowlands through the long war of independence — is the country's chosen emblem, and the olive wreath, echoing the olive branch on the flag, stands for the peace that followed.",
     sources: [
@@ -4713,6 +4743,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Falkland Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Falkland_Islands" },
     ],
   },
+  "fm-us": {
+    description: "The Stars and Stripes carries thirteen horizontal red and white stripes for the original thirteen colonies that declared independence, and a star for every current state — fifty since 1960 — in the blue canton. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
   "fm-japan": {
     description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
     sources: [
@@ -4802,6 +4838,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The pre-1801 Union Flag combined the red cross of Saint George, patron saint of England, with the white saltire of Saint Andrew, patron saint of Scotland, on a blue field — first prescribed by royal proclamation in 1606 and used at sea from that year, more widely after the 1707 union of the two kingdoms. It was retired in 1801 when Saint Patrick's cross was added to mark the union with Ireland, forming today's Union Jack.",
     sources: [
       { title: "United Kingdom — History of the Flag — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gb-hist.html" },
+    ],
+  },
+  "gb-commonwealth-1651": {
+    description: "The Commonwealth's naval flag combined the red Cross of St George for England with a gold harp for Ireland on a red field, asserting the republic's authority over both nations after the 1649 execution of Charles I; Scotland's white saltire, a reminder of monarchy, was dropped. A saltire returned to the design once Scotland was formally united with the Commonwealth, restoring a symbol for all three kingdoms under Cromwell's republic.",
+    sources: [
+      { title: "United Kingdom: Flags of the Interregnum, 1649-1660 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gb-inter.html" },
+    ],
+  },
+  "gb-commonwealth-1649": {
+    description: "The Commonwealth's naval flag combined the red Cross of St George for England with a gold harp for Ireland on a red field, asserting the republic's authority over both nations after the 1649 execution of Charles I; Scotland's white saltire, a reminder of monarchy, was dropped. A saltire returned to the design once Scotland was formally united with the Commonwealth, restoring a symbol for all three kingdoms under Cromwell's republic.",
+    sources: [
+      { title: "United Kingdom: Flags of the Interregnum, 1649-1660 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gb-inter.html" },
     ],
   },
   "gb-army": {
@@ -5450,6 +5498,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Hungary — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary" },
     ],
   },
+  "id-nl": {
+    description: "The Dutch tricolour began as an orange-white-blue banner, the livery colours of William of Orange, leader of the Dutch revolt against Spain. Orange gradually gave way to red between roughly 1630 and 1660, marking the Republic's growing distance from the House of Orange, and red-white-blue became the sole official flag in 1795 when republican Patriots proscribed the old Prince's Flag; the colours were formally fixed by royal decree in 1937.",
+    sources: [
+      { title: "Flag of the Netherlands — Britannica", url: "https://www.britannica.com/topic/flag-of-the-Netherlands" },
+    ],
+  },
   "id-naval-jack": {
     description: "Nicknamed \"Ular-ular Perang\" (\"war snakes\") for the snake-like look of its alternating stripes, this red-and-white striped jack traces back to the 13th-century Majapahit Empire's own naval banner, recorded in a 1294 inscription and flown by the fleet of one of Southeast Asia's great historical maritime powers.",
     sources: [
@@ -5624,6 +5678,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
     ],
   },
+  "in-eic": {
+    description: "The East India Company's ensign combined alternating red and white horizontal stripes — usually nine to thirteen — with the Union Flag in the canton, the canton itself changing over time from the Cross of St George to the full Union Jack as Great Britain's own flag evolved. Its striped design, adopted decades before the United States existed, bears a famous resemblance to the American Stars and Stripes.",
+    sources: [
+      { title: "The Striped Flag of the East India Company — Flags of the World", url: "https://www.fotw.info/flags/gb-eic2.html" },
+    ],
+  },
   "in-armed-forces": {
     description: "The flag's three colours each stand for one of India's armed services: red for the Army, navy blue for the Navy, and light (sky) blue for the Air Force — a design based on the United Kingdom's own Joint Services flag.",
     sources: [
@@ -5736,6 +5796,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
     ],
   },
+  "is-denmark": {
+    description: "The Dannebrog — a white Scandinavian cross, offset toward the hoist, on a red field — is Denmark's flag and, by a legend dating it to a battle near Tallinn in 1219, one of the world's oldest continuously used flag designs, though its first confirmed use dates to the 14th century. The white cross stands for Christianity and the red field for the Danish people; its off-centre cross design became the template every other Nordic country's flag later followed.",
+    sources: [
+      { title: "800 years of Dannebrog — denmark.dk", url: "https://denmark.dk/people-and-culture/dannebrog-800-years/" },
+    ],
+  },
   "is-president": {
     description: "The swallow-tailed state flag bears a square panel with Iceland's coat of arms: a shield showing the flag's own cross, held up by the four landvættir (guardian spirits) of Icelandic saga tradition — a dragon for the east, an eagle for the north, a bull for the west and a rock-giant for the south — standing on a plinth of columnar basalt, the volcanic rock characteristic of Iceland's landscape.",
     sources: [
@@ -5764,6 +5830,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The four figures are the Landvættir, Iceland's legendary guardian spirits. In the medieval saga Heimskringla, King Harald Bluetooth of Denmark sends a scout in whale form to size up Iceland for invasion, and the scout is driven back at each coast — by a dragon and serpents in the east, a great bird in the north, a bull in the west, and a giant with an iron staff in the south. The four have stood as supporters on Iceland's coat of arms since it became an independent republic in 1944, and this 2020 badge interweaves all four into a single mark, replacing an older crest built from the association's initials, the flag and a ball.",
     sources: [
       { title: "Landvættir — Wikipedia", url: "https://en.wikipedia.org/wiki/Landv%C3%A6ttir" },
+    ],
+  },
+  "it-kingdom": {
+    description: "The Kingdom of Italy's flag was the green-white-red tricolour of Italian unification, charged with the coat of arms of the ruling House of Savoy — a white cross on a red shield within a blue border. Flown from unification in 1861, the arms were dropped after the 1946 referendum ended the monarchy, leaving the plain tricolour still used today.",
+    sources: [
+      { title: "Flag of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
     ],
   },
   "it-civil-ensign": {
@@ -6128,6 +6200,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com", url: "https://www.nippon.com/en/japan-topics/g02615/" },
     ],
   },
+  "kp-korean-empire": {
+    description: "The Taegukgi was first devised in the early 1880s and formally adopted in 1883, flying over the Korean Empire until Japan's 1910 annexation. Its central taegeuk circle, split into red and blue, represents the harmony of yin and yang, the complementary forces from which all things arise; the four black trigrams at its corners are drawn from the I Ching and stand for sky, earth, water and fire.",
+    sources: [
+      { title: "The creation of a Korean national flag, 1880s–1910s — Smarthistory", url: "https://smarthistory.org/korean-national-flag/" },
+    ],
+  },
   "kp-arms": {
     description: "Adopted in 1948 and revised in 1993, the emblem shows the Sup'ung hydroelectric dam beneath a mountain — specified in 1993 as Mount Paektu, the peak tied in state ideology to the anti-Japanese revolutionary tradition — crowned by a red socialist star. The dam stands for the industrial power and self-sufficiency of the north, which produced most of Korea's electricity in 1948; the surrounding ears of rice, bound by a red ribbon carrying the state's name, stand for agriculture.",
     sources: [
@@ -6150,6 +6228,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
     sources: [
       { title: "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com", url: "https://www.nippon.com/en/japan-topics/g02615/" },
+    ],
+  },
+  "kr-korean-empire": {
+    description: "The Taegukgi was first devised in the early 1880s and formally adopted in 1883, flying over the Korean Empire until Japan's 1910 annexation. Its central taegeuk circle, split into red and blue, represents the harmony of yin and yang, the complementary forces from which all things arise; the four black trigrams at its corners are drawn from the I Ching and stand for sky, earth, water and fire.",
+    sources: [
+      { title: "The creation of a Korean national flag, 1880s–1910s — Smarthistory", url: "https://smarthistory.org/korean-national-flag/" },
     ],
   },
   "kr-army": {
@@ -6626,6 +6710,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Auseklis — Wikipedia", url: "https://en.wikipedia.org/wiki/Auseklis" },
     ],
   },
+  "ly-italy": {
+    description: "The Kingdom of Italy's flag was the green-white-red tricolour of Italian unification, charged with the coat of arms of the ruling House of Savoy — a white cross on a red shield within a blue border. Flown from unification in 1861, the arms were dropped after the 1946 referendum ended the monarchy, leaving the plain tricolour still used today.",
+    sources: [
+      { title: "Flag of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
+    ],
+  },
   "ly-army": {
     description: "The flag of the modern Libyan Army, adopted after the 2011 revolution, is a white field bearing a golden Eagle of Saladin facing the hoist, its breast charged with a shield in the colours of the post-revolution Libyan tricolour (red, black and green, with the crescent and star), above a green scroll naming the force. The Eagle of Saladin is a symbol of Arab nationalism and unity long used across the region; here it stands beside the reinstated tricolour of the pre-Gaddafi kingdom, which the 2011 revolution readopted as Libya's national flag.",
     sources: [
@@ -6801,6 +6891,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Madagascar — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Madagascar" },
     ],
   },
+  "mh-us": {
+    description: "The Stars and Stripes carries thirteen horizontal red and white stripes for the original thirteen colonies that declared independence, and a star for every current state — fifty since 1960 — in the blue canton. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
   "mh-japan": {
     description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
     sources: [
@@ -6841,6 +6937,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The golden sunburst echoes the eight-rayed sun on North Macedonia's own national flag, adopted in 1995 to replace the earlier Vergina Sun (itself dropped after Greece objected to its use of a symbol from ancient Greek royal heraldry). The flag's sun is described as the “new sun of Liberty” named in the national anthem. ФФМ is the federation's own Cyrillic initials, Фудбалска федерација на Македонија (Football Federation of Macedonia).",
     sources: [
       { title: "Flag of North Macedonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
+    ],
+  },
+  "ml-1959": {
+    description: "The Mali Federation's flag kept the green-yellow-red tricolour but replaced the black star with a black kanaga figure — a stylised human form with arms raised skyward, drawn from the art of Mali's Dogon people and adopted by the Négritude movement as a symbol of strength and African identity. When Senegal and Mali split and Mali objected to a human figure on religious grounds, the kanaga was removed in 1961, leaving the plain tricolour Mali flies today.",
+    sources: [
+      { title: "Flag of Mali — Britannica", url: "https://www.britannica.com/topic/flag-of-Mali" },
     ],
   },
   "ml-emblem": {
@@ -7185,6 +7287,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Mexico national football team logo — 1000 Logos", url: "https://1000logos.net/seleccion-mexicana-de-futbol-logo/" },
     ],
   },
+  "my-straits": {
+    description: "The Straits Settlements' badge — three gold imperial crowns separated by a red inverted pall (an upside-down Y) — represented the colony's three constituent settlements: Penang, Malacca and Singapore, one crown for each, set on a British Blue Ensign.",
+    sources: [
+      { title: "Flag of the British Straits Settlements (1874-1942) — SembangKuala", url: "https://sembangkuala.wordpress.com/2009/06/28/flag-of-the-british-straits-settlements-1874-1942/" },
+    ],
+  },
   "my-army": {
     description: "The Malaysian Army's flag is a red field bearing the army's crest, which combines two traditional bladed weapons drawn from the country's two halves: the keris, the wavy-bladed dagger long associated with the historic Malay warriors of Peninsular Malaysia, and the duku ilang, a weapon tied to the warrior traditions of the indigenous peoples of Malaysian Borneo. Together the two blades represent the army's roots across both regions that make up modern Malaysia.",
     sources: [
@@ -7271,6 +7379,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "LOGO | FAM", url: "https://fam.org.my/logo" },
       { title: "Malaysia national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Malaysia_national_football_team" },
+    ],
+  },
+  "mz-portugal": {
+    description: "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+    sources: [
+      { title: "Meaning of the Portuguese Flag — Portugal.com", url: "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/" },
     ],
   },
   "mz-air-force": {
@@ -7605,6 +7719,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Nepal — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
     ],
   },
+  "nr-australia": {
+    description: "Australia's flag carries the Union Jack in the canton to acknowledge the history of British settlement, a seven-pointed Commonwealth Star below it — six points for the original states, the seventh for the territories — and the five stars of the Southern Cross, marking Australia's position in the southern sky and a constellation long used by navigators across the region.",
+    sources: [
+      { title: "The Australian National Flag — Australian Government", url: "https://www.pmc.gov.au/resources/australian-symbols-booklet/national-symbols/australian-national-flag" },
+    ],
+  },
   "nr-german": {
     description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
     sources: [
@@ -7832,6 +7952,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The canoe and its crew of five stars are taken directly from French Polynesia's national flag, where they represent the territory's five island groups (archipelagos) riding the Pacific waves.",
     sources: [
       { title: "Flag of French Polynesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
+    ],
+  },
+  "pg-australian": {
+    description: "Australia's flag carries the Union Jack in the canton to acknowledge the history of British settlement, a seven-pointed Commonwealth Star below it — six points for the original states, the seventh for the territories — and the five stars of the Southern Cross, marking Australia's position in the southern sky and a constellation long used by navigators across the region.",
+    sources: [
+      { title: "The Australian National Flag — Australian Government", url: "https://www.pmc.gov.au/resources/australian-symbols-booklet/national-symbols/australian-national-flag" },
     ],
   },
   "pg-german": {
@@ -8425,6 +8551,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
     ],
   },
+  "rw-belgium": {
+    description: "Belgium's black-yellow-red tricolour is drawn from the heraldry of the Duchy of Brabant — a yellow lion with red claws and tongue on a black shield. The black recalls the shield's field, yellow the fertile land and the values of liberty and justice, and red the lion's claws and the courage and sacrifice of the Belgian people; the medieval Brabant tricolour evolved into today's flag over the following centuries.",
+    sources: [
+      { title: "Why is the Belgium flag black yellow and red?", url: "https://www.colorwithleo.com/why-is-the-belgium-flag-black-yellow-and-red/" },
+    ],
+  },
   "rw-german": {
     description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
     sources: [
@@ -8638,6 +8770,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Swedish Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Swedish_Football_Association" },
     ],
   },
+  "sg-straits": {
+    description: "The Straits Settlements' badge — three gold imperial crowns separated by a red inverted pall (an upside-down Y) — represented the colony's three constituent settlements: Penang, Malacca and Singapore, one crown for each, set on a British Blue Ensign.",
+    sources: [
+      { title: "Flag of the British Straits Settlements (1874-1942) — SembangKuala", url: "https://sembangkuala.wordpress.com/2009/06/28/flag-of-the-british-straits-settlements-1874-1942/" },
+    ],
+  },
+  "sg-eic": {
+    description: "The East India Company's ensign combined alternating red and white horizontal stripes — usually nine to thirteen — with the Union Flag in the canton, the canton itself changing over time from the Cross of St George to the full Union Jack as Great Britain's own flag evolved. Its striped design, adopted decades before the United States existed, bears a famous resemblance to the American Stars and Stripes.",
+    sources: [
+      { title: "The Striped Flag of the East India Company — Flags of the World", url: "https://www.fotw.info/flags/gb-eic2.html" },
+    ],
+  },
   "sg-army": {
     description: "The Colour of the Singapore Army, carried since 1965, bears the canton of the national flag with the Singapore Armed Forces crest in the fly. The crest is the state crest — the same shield, lion and tiger supporters used on Singapore's coat of arms — encircled by a laurel wreath and the words 'Tentera Singapura' (Singapore Armed Forces), the laurel standing for the honour, glory and excellence the SAF strives toward.",
     sources: [
@@ -8787,6 +8931,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of San Marino — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
     ],
   },
+  "sn-mali": {
+    description: "The Mali Federation's flag kept the green-yellow-red tricolour but replaced the black star with a black kanaga figure — a stylised human form with arms raised skyward, drawn from the art of Mali's Dogon people and adopted by the Négritude movement as a symbol of strength and African identity. When Senegal and Mali split and Mali objected to a human figure on religious grounds, the kanaga was removed in 1961, leaving the plain tricolour Mali flies today.",
+    sources: [
+      { title: "Flag of Mali — Britannica", url: "https://www.britannica.com/topic/flag-of-Mali" },
+    ],
+  },
   "sn-french": {
     description: "The French Tricolour combines blue and red — the traditional colours of Paris — with white, the colour of the Bourbon monarchy, to signify national unity. Emerging during the French Revolution and decreed the official flag in 1794, it came to embody the revolutionary ideals of liberty, equality and fraternity, one interpretation reading blue for liberty, white for equality and red for fraternity. It has been France's constitutional national emblem since 1958.",
     sources: [
@@ -8812,6 +8962,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Senegalese Spirit: Discovering the Meaning of Teranga — The Culture Trip", url: "https://theculturetrip.com/africa/senegal/articles/why-senegal-is-the-country-of-teranga" },
     ],
   },
+  "so-italian": {
+    description: "Italy's green-white-red tricolour, adopted by the republic in 1946, traces back to a Milanese cockade accepted by Napoleon in 1796, itself based on the French tricolour with blue replaced by green. During the Napoleonic period the colours were read as hope (green), faith (white) and love (red) — the three theological virtues — and are also given a geographic reading: green for the country's plains, white for its Alpine snow, red for the blood shed in the wars of independence.",
+    sources: [
+      { title: "Flag of Italy — Britannica", url: "https://www.britannica.com/topic/flag-of-Italy" },
+    ],
+  },
   "so-british": {
     description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
     sources: [
@@ -8834,6 +8990,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The light blue and the white star repeat Somalia's own national flag: blue for the sky and the surrounding seas (chosen partly in tribute to the United Nations), and the star's five points for the five territories the Somali people inhabit — Somalia itself, Djibouti, Somaliland, Ethiopia's Somali Region and Kenya's North Eastern Province.",
     sources: [
       { title: "Flag of Somalia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
+    ],
+  },
+  "sr-dutch": {
+    description: "The Dutch tricolour began as an orange-white-blue banner, the livery colours of William of Orange, leader of the Dutch revolt against Spain. Orange gradually gave way to red between roughly 1630 and 1660, marking the Republic's growing distance from the House of Orange, and red-white-blue became the sole official flag in 1795 when republican Patriots proscribed the old Prince's Flag; the colours were formally fixed by royal decree in 1937.",
+    sources: [
+      { title: "Flag of the Netherlands — Britannica", url: "https://www.britannica.com/topic/flag-of-the-Netherlands" },
     ],
   },
   "sr-president": {
@@ -9370,6 +9532,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Chinese Taipei Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Chinese_Taipei_Football_Association" },
     ],
   },
+  "tz-german": {
+    description: "The Reichskolonialflagge combined the black-white-red of the German Empire's own flag with a crowned imperial eagle on a white disc. Used from the early 1900s, it asserted the authority of the German Empire across its overseas possessions, flying over government stations, harbours and barracks in Germany's African, Chinese and Pacific colonies just as the plain imperial flag did at home.",
+    sources: [
+      { title: "FG-004 – Imperial Flag – Reichsdienstflagge c. 1905–1912 — Flaggeek", url: "https://www.flaggeek.net/p/imperial-german-colonial-flag-ca.html" },
+    ],
+  },
   "tz-president": {
     description: "The presidential flag carries Tanzania's coat of arms (adopted 1961, three years before this flag): a warrior's shield quartered on a golden field — gold for the country's mineral wealth — with a burning torch in its first quarter symbolising the Uhuru Torch of Tanzanian independence, itself standing for freedom, enlightenment and knowledge; the shield is supported by a man and a woman, reflecting the country's ideal of shared nation-building.",
     sources: [
@@ -9802,6 +9970,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The eagle, adapted from the United States coat of arms, holds a laurel sprig for victory and three arrows for the territory's three main islands — Saint Croix, Saint Thomas and Saint John — set between the letters V and I for \"Virgin Islands\".",
     sources: [
       { title: "Flag of the United States Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
+    ],
+  },
+  "vi-denmark": {
+    description: "The Dannebrog — a white Scandinavian cross, offset toward the hoist, on a red field — is Denmark's flag and, by a legend dating it to a battle near Tallinn in 1219, one of the world's oldest continuously used flag designs, though its first confirmed use dates to the 14th century. The white cross stands for Christianity and the red field for the Danish people; its off-centre cross design became the template every other Nordic country's flag later followed.",
+    sources: [
+      { title: "800 years of Dannebrog — denmark.dk", url: "https://denmark.dk/people-and-culture/dannebrog-800-years/" },
     ],
   },
   "vi-seal": {
