@@ -6720,6 +6720,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
     ],
   },
+  "sa-army": {
+    description: "The flag of the Royal Saudi Land Forces is the national flag charged with the land forces' version of Saudi Arabia's emblem: a white palm rising above two crossed white swords. The palm stands for the kingdom's vitality and prosperity, while the crossed swords represent the strength that defends it, the same national emblem carried across the country's other armed-forces flags.",
+    sources: [
+      { title: "Flags of the World — Armed Forces (Saudi Arabia)", url: "https://www.crwflags.com/fotw/flags/sa%5E.html" },
+      { title: "Wikipedia — Emblem of Saudi Arabia", url: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
+    ],
+  },
+  "sa-air-force": {
+    description: "The Air Force Ensign of Saudi Arabia carries the service's own roundel — concentric green-white-green rings — with the national emblem in the central panel: a date palm rising above two crossed swords. The palm stands for the kingdom's vitality and prosperity, while the crossed swords represent the strength that defends it, also read as recalling the Sultanate of Nejd and the Kingdom of Hejaz that united in 1926 to form Saudi Arabia.",
+    sources: [
+      { title: "Flags of the World — Royal Saudi Air Force (Saudi Arabia)", url: "https://www.crwflags.com/fotw/flags/sa%5Ersaf.html" },
+      { title: "Wikipedia — Emblem of Saudi Arabia", url: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
+    ],
+  },
   "sa-naval-ensign": {
     description: "The naval ensign is the national flag charged with the navy's version of Saudi Arabia's national emblem: two crossed swords with a date palm rising between and above the blades, adopted in 1950. The palm stands for the kingdom's vitality and prosperity — its people, history and resources — while the crossed swords beneath it represent the strength that defends that prosperity, and are also read as recalling the Sultanate of Nejd and the Kingdom of Hejaz, the two territories united under Ibn Saud in 1926 to form Saudi Arabia.",
     sources: [
