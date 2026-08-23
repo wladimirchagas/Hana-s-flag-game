@@ -3157,6 +3157,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flags of British India — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_British_India" },
     ],
   },
+  "bd-mughal": {
+    description: "The alam, the Mughal Empire's principal imperial standard, was a moss-green field bearing a lion and rising sun facing the hoist — an emblem the dynasty traced back to its ancestor Timur. Carried before the emperor on campaign and displayed beside his throne, it flew over Bengal from Emperor Akbar's conquest of the province in the 1570s until the 1757 Battle of Plassey, after which the East India Company's growing power in Bengal ended real Mughal authority there.",
+    sources: [
+      { title: "Flags of the Mughal Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_Mughal_Empire" },
+    ],
+  },
   "bd-armed-forces": {
     description: "A red-and-blue tricolour bears the joint emblem of the three services: a circle divided into three fields by gold fimbriations, red for the Army's insignia, dark blue for the Navy's crest and light blue for the Air Force's, uniting the services under a single flag adopted in 1972 after independence.",
     sources: [
@@ -4494,6 +4500,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Cyprus's flag, adopted at independence in 1960 under a constitutional mandate for neutrality, deliberately avoids the national colours of either community on the island: a copper-orange silhouette of Cyprus — copper for the island's historic mineral deposits, from which its name is thought to derive — sits on a white field for peace, above two crossed olive branches symbolising the hoped-for reconciliation between the Greek and Turkish Cypriot communities.",
     sources: [
       { title: "Flag of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
+    ],
+  },
+  "cy-british": {
+    description: "From 1922, Cyprus's colonial Blue Ensign carried a badge of two red lions passant guardant on white, based on the shield of Richard the Lionheart, who had conquered Cyprus in 1191 after being shipwrecked there en route to the Third Crusade; the design had already been used unofficially by British colonial officials since 1905, when it was approved by King Edward VII, replacing an earlier badge that simply read 'CHC' for the Cyprus High Commission. It flew until the Republic of Cyprus was established on 16 August 1960.",
+    sources: [
+      { title: "Cyprus: British rule (1878–1960) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/cy_br.html" },
     ],
   },
   "cy-ottoman": {
