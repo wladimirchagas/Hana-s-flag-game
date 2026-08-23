@@ -9367,7 +9367,16 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
           "sha256": "c62944dd7a2068c1dbc5445aa0ca0abf53a2e36ebaaa3c3d0e73e90a276c8a41",
           "fetched": "2026-08-08",
-          "occupier": "the Soviet Union"
+          "occupier": "the Soviet Union",
+          "meaning": {
+            "description": "The Estonian SSR's flag — a red field with a gold hammer, sickle and star, and a wavy blue stripe near the base for the Baltic Sea — was imposed after the Soviet Union's forcible 1940 occupation of Estonia, carried out under the secret protocol of the Molotov–Ribbentrop Pact. Estonia's own blue-black-white tricolour was banned outright; flying it, or even possessing one, could bring deportation or imprisonment until independence was restored in 1991.",
+            "sources": [
+              {
+                "title": "Emblem of the Estonian Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_the_Estonian_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "ee-russia",
@@ -9786,7 +9795,16 @@
           "design": "A green field with a white crescent and three stars.",
           "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
           "sha256": "488d86f4b93ba4a2657c07b1c5dd6e1ff5786e96c032be39989d76af7201832e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Kingdom of Egypt's flag, readopted in 1923 when King Fuad I took the royal title, set a white crescent and three white stars on green: green for the fertile fields of the Nile Valley and Delta, and the crescent for Egypt's mostly Muslim population. The three stars have been read in more than one way — as the kingdom's three constituent lands of Egypt, Nubia and Sudan, or as the country's three main religious communities, Islam, Christianity and Judaism.",
+            "sources": [
+              {
+                "title": "Kingdom of Egypt (1922-1952) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/eg-kingd.html"
+              }
+            ]
+          }
         },
         {
           "id": "eg-1914",
@@ -11004,7 +11022,16 @@
           "to": 1830,
           "reuse": "historical-flags/france-bourbon.png",
           "design": "A plain white field strewn with gold fleurs-de-lis. Not flown between 1790 and 1814, when the Revolution and the First Empire intervened.",
-          "source": "https://en.wikipedia.org/wiki/List_of_French_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_French_flags",
+          "meaning": {
+            "description": "The Bourbon monarchy's plain white flag, flown from the reign of Henry IV until the 1789 Revolution, could be strewn with gold fleurs-de-lis — the ancient emblem of the French crown. White had long stood for purity and, in French royal tradition, for the Virgin Mary, while the gold fleurs-de-lis represented glory, faith and the dynasty's claimed legitimacy to rule.",
+            "sources": [
+              {
+                "title": "The Fleur-de-lis and Its Meanings and Uses — FamilySearch",
+                "url": "https://www.familysearch.org/en/newsroom/the-fleur-de-lis-and-its-meanings-and-uses"
+              }
+            ]
+          }
         },
         {
           "id": "fr-royal-banner",
@@ -14167,7 +14194,16 @@
           "design": "Eight horizontal red and silver stripes — the Árpád stripes, still the dexter half of the country's arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags",
           "sha256": "21c10274267c1bb4a604acbf70a7c24f77d40af0aaa2b17ff73aa077943dd65b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Árpád stripes — eight alternating bars of red and silver — have marked Hungarian heraldry since the early 13th century, tied to the House of Árpád, Hungary's founding royal dynasty. Tradition sometimes reads the four silver stripes as the country's four great rivers, the Danube, Tisza, Sava and Drava; the pattern survives today in the left half of Hungary's national coat of arms.",
+            "sources": [
+              {
+                "title": "Árpád stripes — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/%C3%81rp%C3%A1d_stripes"
+              }
+            ]
+          }
         },
         {
           "id": "hu-bela",
@@ -15370,7 +15406,16 @@
           "design": "A black-white-green horizontal triband with a red trapezoid at the hoist bearing two white stars — the first flag of the Iraqi state, adopted 10 July 1924.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq",
           "sha256": "521fb9f92f7cb038fb80a32c239be0e04bd55d3bf4ca4826052424770c0d6363",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Kingdom of Iraq's first flag, adopted in 1924, followed a colour scheme long associated with the Arab cause — attributed to a 13th-century verse by Safi al-Din al-Hilli reading black for the darkness of past battles, white for the purity of deeds, green for Arab fields, and red for the blood willingly shed in their defence. Its two seven-pointed white stars, on a red trapezoid at the hoist, marked the ruling Hashemite dynasty; other readings link them to the Tigris and Euphrates, or to the country's Arab and Kurdish peoples.",
+            "sources": [
+              {
+                "title": "Kingdom of Iraq (1924-1958) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/iq_kingd.html"
+              }
+            ]
+          }
         },
         {
           "id": "iq-arab-federation",
