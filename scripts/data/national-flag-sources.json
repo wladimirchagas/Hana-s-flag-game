@@ -6466,7 +6466,16 @@
           "design": "A dark red cover with the national emblem in gold, reading 中华人民共和国护照.",
           "source": "https://en.wikipedia.org/wiki/Chinese_passport",
           "sha256": "0cf3118d54122b8b2812f100c90b2c1b84250b9a6e447f47584ea5df8e6d1f99",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "China's passport bears the national emblem, adopted 20 September 1950: Tiananmen — the Gate of Heavenly Peace in Beijing, symbolising the Chinese people's struggle against imperialism and feudalism — ringed by a border of wheat and rice sheaves for agricultural workers, over a cogwheel for industrial workers. Five gold stars sit above: the large star for the Communist Party of China, and four smaller stars for the social classes the Party holds itself to unite — workers, peasants, the urban petite bourgeoisie and the national bourgeoisie.",
+            "sources": [
+              {
+                "title": "National emblem of China — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_China"
+              }
+            ]
+          }
         },
         {
           "id": "cn-official-national",
@@ -21165,7 +21174,16 @@
           "design": "The cover of the Mexico passport.",
           "source": "https://gicg.net/passport/mx/",
           "sha256": "235807f4fab6e84e2949e59e07fee223329d9e90778c4a78519360b422dc276f",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Mexico's passport bears the national coat of arms: a golden eagle perched on a prickly pear cactus, devouring a rattlesnake — the sign the wandering Aztec people were said to have watched for, per legend, to know where to found their capital, Tenochtitlan, on the site of what is now Mexico City. Oak and laurel branches encircle the eagle, added as European symbols of victory and peace when Mexico adopted the arms on gaining independence.",
+            "sources": [
+              {
+                "title": "Coat of arms of Mexico — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico"
+              }
+            ]
+          }
         },
         {
           "id": "mx-burgundy",
@@ -24880,7 +24898,16 @@
           "design": "The cover of the Pakistan passport.",
           "source": "https://gicg.net/passport/pk/",
           "sha256": "7183c87bf133fce03b900541603f3868514bb6302f7cf5ae132e83393537b24e",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Pakistan's passport bears the state emblem, adopted in 1954: a crescent and star, standard symbols of Islam read here as progress and enlightenment, above a shield quartered with the crops central to Pakistan's economy at independence — cotton, jute, tea and wheat. A wreath of jasmine, the national flower and a nod to the country's Mughal-era heritage, frames the shield, above a scroll bearing the national motto coined by founder Muhammad Ali Jinnah: \"Iman, Ittehad, Nazm\" — \"Faith, Unity, Discipline\".",
+            "sources": [
+              {
+                "title": "Coat of Arms of Pakistan facts for kids",
+                "url": "https://kids.kiddle.co/Coat_of_Arms_of_Pakistan"
+              }
+            ]
+          }
         },
         {
           "id": "pk-uk",
@@ -29774,7 +29801,16 @@
           "design": "The cover of the Thailand passport.",
           "source": "https://gicg.net/passport/th/",
           "sha256": "1e851e4bd8fb057144ebd11357170333acc1a21aadcf1542d097831501d8abb9",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Thailand's passport bears the Garuda, the mythical bird-like mount of the Hindu god Vishnu (Narayana): Thailand's kings traditionally regarded themselves as an incarnation of Narayana, so the Garuda — known formally as the Phra Khrut Pha — came to symbolise the divine power and authority of the Thai monarchy, and by extension the Thai state itself.",
+            "sources": [
+              {
+                "title": "The Garuda: Thailand's National Emblem — Thaizer",
+                "url": "https://www.thaizer.com/the-garuda-thailands-national-emblem/"
+              }
+            ]
+          }
         },
         {
           "id": "th-football-crest",
