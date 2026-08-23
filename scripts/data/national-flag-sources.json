@@ -8416,7 +8416,16 @@
           "design": "The cover of the Algeria passport.",
           "source": "https://gicg.net/passport/dz/",
           "sha256": "ef78ae98d767125ca2ab0582d0fe091f9ec77532944d7312d2a8ba02c46c0c11",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Algeria's passport bears the national emblem: a star and crescent for Islam, echoing the national flag, above the Hand of Fatima — a traditional North African protective symbol associated with the five pillars of Islam — grasping an olive branch for peace, set before the Atlas Mountains with a rising sun for a new era. An electoral urn crowned with corn cobs and oak leaves represents democracy and agriculture on one side; an olive branch, palm and industrial rooftops, chimneys and oil derricks represent Algeria's agricultural and industrial development on the other.",
+            "sources": [
+              {
+                "title": "Emblem of Algeria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Algeria"
+              }
+            ]
+          }
         },
         {
           "id": "dz-football-crest",
@@ -27974,7 +27983,16 @@
           "design": "The cover of the Singapore passport.",
           "source": "https://gicg.net/passport/sg/",
           "sha256": "72280b523652154d39e05c0a46c7fe59708c44f8869fa98f5c5ea4886bfaedd9",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Singapore's passport is bound in red, a colour chosen for luck and prosperity, and bears the national coat of arms: a lion and a tiger supporting a shield with a white crescent moon and five stars on red, echoing the national flag, below a banner reading \"MAJULAH SINGAPURA\" (\"Onward Singapore\"). The lion represents Singapore itself, recalling the \"Singapura\"/Lion City founding legend, while the tiger recalls the country's historical ties to Malaya.",
+            "sources": [
+              {
+                "title": "Coat of arms of Singapore — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore"
+              }
+            ]
+          }
         },
         {
           "id": "sg-football-crest",
@@ -33779,7 +33797,16 @@
           "design": "The cover of the Vietnam passport.",
           "source": "https://gicg.net/passport/vn/",
           "sha256": "f0f5fd3259de814250d239dba92adc2be10d48e20cf7b899881387a8c1d28244",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Vietnam's passport bears the national emblem: a five-pointed gold star on a red field, echoing the national flag and standing for the leadership of the Communist Party of Vietnam, framed by sheaves of rice representing the peasantry and set above a cogwheel for the industrial working class — together an emblem of the worker-peasant alliance under Party leadership that underlies the country's founding ideology.",
+            "sources": [
+              {
+                "title": "Vietnam's National Emblem - History and Meaning — Vietnam Online",
+                "url": "https://www.vietnamonline.com/culture/national-emblem.html"
+              }
+            ]
+          }
         },
         {
           "id": "vn-football-crest",
