@@ -2594,6 +2594,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Andorra — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra" },
     ],
   },
+  "ae-civil-ensign": {
+    description: "The Civil Ensign of the United Arab Emirates, flown since independence in 1971, is a red field with the national flag in the canton, echoing a maritime tradition specific to the region: the Gulf sheikhdoms that became the Trucial States flew plain red flags under an 1820 treaty with Britain, which required a white border be added as a mark of peaceful intent, a red-and-white flag tradition that outlasted British influence in the Gulf and left red as the natural colour for the modern UAE's own merchant ensign.",
+    sources: [
+      { title: "Wikipedia — Flag of the United Arab Emirates", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates" },
+      { title: "Wikipedia — Red Ensign", url: "https://en.wikipedia.org/wiki/Red_Ensign" },
+    ],
+  },
   "ae-president": {
     description: "A flag bearing the golden Hawk of Quraish — named for the tribe of the Prophet Muhammad and, in Arab culture, a symbol of strength, courage and freedom — with seven tail feathers for the seven emirates of the federation and, held in its talons, a disc showing the national flag and seven stars, again for the seven emirates. Only the President may fly the flag bearing this emblem, distinguishing it from the plain national flag flown everywhere else.",
     sources: [
@@ -2911,6 +2918,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Air Force Ensign of Bangladesh carries the national flag in the canton and the air force's roundel — a green outer disc surrounding a smaller red disc — in the fly. The roundel repeats the colours and meaning of the national flag: green for the lush landscape of Bangladesh, and red for both the sun rising over Bengal and the blood of those who died in the 1971 war of independence.",
     sources: [
       { title: "Flags of the World — Air Force: Bangladesh", url: "https://www.fotw.info/flags/bd%5Eaf.html" },
+      { title: "Wikipedia — Flag of Bangladesh", url: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
+    ],
+  },
+  "bd-naval-ensign": {
+    description: "The Ensign of the Bangladesh Navy, adopted in 1972 after independence, is a white field with the national flag in the canton, following the British Ensign system in which the White Ensign marks a naval vessel — distinct from the Red Ensign flown by merchant ships. The convention reached Bangladesh through British India and Pakistan, from which it broke away, and was kept for its own navy once it removed the wartime yellow map that briefly appeared inside the flag's red disc during the 1971 Liberation War.",
+    sources: [
+      { title: "Flags of the World — Naval Flags: Bangladesh", url: "https://www.crwflags.com/fotw/flags/bd%5Enav.html" },
+      { title: "Wikipedia — Flag of Bangladesh", url: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
+    ],
+  },
+  "bd-civil-ensign": {
+    description: "The Civil Ensign of Bangladesh, adopted in 1972, is a red field with the national flag in the canton, following the British Ensign system in which the Red Ensign marks a merchant vessel — distinct from the White Ensign flown by warships. The convention reached Bangladesh through British India and Pakistan, kept for its own merchant fleet once the country gained independence in 1971.",
+    sources: [
+      { title: "Wikipedia — Red Ensign", url: "https://en.wikipedia.org/wiki/Red_Ensign" },
       { title: "Wikipedia — Flag of Bangladesh", url: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
     ],
   },
@@ -6657,6 +6678,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Flags of the World — Air Force Flags (Singapore)", url: "https://www.crwflags.com/fotw/flags/sg%5Eairfo.html" },
       { title: "National Library Board Singapore — Past and present emblems of the Republic of Singapore Air Force", url: "https://www.nlb.gov.sg/main/image-detail?cmsuuid=616ae5da-8059-46f6-b2b8-c7493889ede3" },
+    ],
+  },
+  "sg-state-ensign": {
+    description: "The state ensign, flown by Singapore's non-military government vessels such as coast guard ships, is blue with the national flag's crescent and stars in a red canton and an eight-pointed red-and-white compass rose in the fly. The compass device marks the ensign as belonging to a government vessel rather than a merchant ship, distinguishing it from the plain red civil ensign flown by Singapore's private merchant fleet.",
+    sources: [
+      { title: "Flags of the World — State Ensign (Singapore)", url: "https://www.crwflags.com/fotw/flags/sg~state.html" },
+      { title: "Wikipedia — List of Singaporean flags", url: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    ],
+  },
+  "sg-civil-ensign": {
+    description: "The civil ensign of Singapore, created by law in 1966 for use by privately owned, Singapore-registered merchant ships, is a red field bearing the white crescent and five stars taken from the national flag, in elongated 1:2 proportions. The red repeats the national flag's own meaning of universal brotherhood and equality of all people, while the crescent stands for a young nation on the rise and the five stars for democracy, peace, progress, justice and equality.",
+    sources: [
+      { title: "Wikipedia — Red Ensign of Singapore", url: "https://en.wikipedia.org/wiki/Red_Ensign_of_Singapore" },
+      { title: "Flags of the World — Civil Ensign (Singapore)", url: "https://www.crwflags.com/fotw/flags/sg~civil.html" },
     ],
   },
   "sg-president": {
