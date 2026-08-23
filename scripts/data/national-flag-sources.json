@@ -9006,7 +9006,16 @@
           "design": "The cover of the Egypt passport.",
           "source": "https://gicg.net/passport/eg/",
           "sha256": "a9ac1397eba7170b7be8ceab2434f199d1a2c145393ac124cac2c66db2129b9b",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Egypt's passport bears the national coat of arms, the Eagle of Saladin: a golden heraldic eagle facing left, its breast bearing a small shield in the flag's own red, white and black. Adopted in 1984, the eagle honours Salah ad-Din (Saladin), the 12th-century sultan who founded the Ayyubid dynasty and led the recapture of Jerusalem, and stands more broadly as a symbol of Arab unity; its talons grip a scroll naming the state, \"Arab Republic of Egypt\", in Kufic script.",
+            "sources": [
+              {
+                "title": "Coat of arms of Egypt — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt"
+              }
+            ]
+          }
         },
         {
           "id": "eg-football-crest",
@@ -15563,7 +15572,16 @@
           "design": "The cover of the Kenya passport.",
           "source": "https://gicg.net/passport/ke/",
           "sha256": "1bfff6546561e6c205e87f2152fdcd1f6786504f054e2070bac50ecc6814ede4",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Kenya's passport bears the national coat of arms: two lions holding spears and a traditional East African shield, its colours matching the flag — black for the people, red for the blood shed in the struggle for independence, green for the land's agriculture and natural resources, white for unity and peace. A rooster carrying an axe strides across the shield, a symbol carried over from the Kenya African National Union, the party that led the country to independence; the whole stands on a depiction of Mount Kenya amid the country's crops, above a scroll reading \"Harambee\" — Swahili for \"pulling together\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Kenya — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya"
+              }
+            ]
+          }
         },
         {
           "id": "ke-football-crest",
@@ -23499,7 +23517,20 @@
           "design": "The cover of the Peru passport.",
           "source": "https://gicg.net/passport/pe/",
           "sha256": "007f3eaf2fec74779c3612512194331d65d8b0d20dc1ab58fc8079a6bd4cc05f",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "As an Andean Community member, Peru issues the bloc's shared bordeaux passport, headed \"COMUNIDAD ANDINA\" above \"REPÚBLICA DEL PERÚ\" and the national coat of arms. The shield is divided into three: a blue field with a vicuña (the wild Andean camelid whose wool is prized above alpaca and llama), a white field with a cinchona tree (the source of quinine, discovered in Peru), and a red field with a cornucopia spilling coins — together representing the animal, plant and mineral wealth of Peru's three natural realms.",
+            "sources": [
+              {
+                "title": "Andean passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Andean_passport"
+              },
+              {
+                "title": "Coat of arms of Peru — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru"
+              }
+            ]
+          }
         },
         {
           "id": "pe-football-crest",
@@ -30310,7 +30341,16 @@
           "design": "The cover of the Tanzania passport.",
           "source": "https://gicg.net/passport/tz/",
           "sha256": "90883ebf5f9b7972fb7911be8780dd595d47ddd6588c904fb77215d04680240c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Since January 2018, Tanzania has issued the shared East African Community e-passport format as part of the bloc's regional integration plans, still carrying the national coat of arms. That shield's gold represents the country's mineral wealth and red the fertile soil of Africa, over wavy bands for its land, lakes and coastline; above it a burning torch stands for freedom (Uhuru) and knowledge, crossed by a spear, axe and hoe representing the defence of that freedom and the tools of everyday work. A man and woman support the shield, with elephant tusks, a clove bush and a cotton bush at their feet symbolising the country's natural and agricultural resources.",
+            "sources": [
+              {
+                "title": "What You Need to Know About the Tanzanian Coat of Arms",
+                "url": "https://unitedrepublicoftanzania.com/government-of-tanzania-and-the-society/education-in-tanzania-system/laws-of-tanzania/what-you-need-to-know-about-the-tanzanian-coat-of-arms/"
+              }
+            ]
+          }
         },
         {
           "id": "tz-football-crest",
@@ -30838,7 +30878,16 @@
           "design": "The cover of the Uganda passport.",
           "source": "https://gicg.net/passport/ug/",
           "sha256": "22a5e17def1b3526a4b1dabeb4664f69de1b32be33476ae032e790e457cd5409",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Uganda's passport bears the national coat of arms, adopted in 1962, centred on a grey crowned crane — the national bird — standing on one leg in a pose meant to symbolise vigilance and readiness to defend the country. The crane's own plumage carries the national colours (black, yellow and red), while the wider arms show it holding a spear and an ear of maize, flanked by supporters representing the country's wildlife and agriculture.",
+            "sources": [
+              {
+                "title": "The Significance of Uganda's National Emblem — Medium",
+                "url": "https://medium.com/@rudra.komala/the-significance-of-ugandas-national-emblem-a-symbolic-journey-c87669eb1077"
+              }
+            ]
+          }
         },
         {
           "id": "ug-football-crest",
@@ -33346,7 +33395,16 @@
           "design": "The cover of the Zambia passport.",
           "source": "https://gicg.net/passport/zm/",
           "sha256": "55d99d2c8ec13f802f3ca0797dd5e10fb1a8dbc152d9f490e5212c5b2dfaaffd",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Zambia's passport bears the national coat of arms, whose shield depicts Victoria Falls — white cascading water over black rock — beneath supporters that include an African fish eagle, standing for the country's hard-won freedom and hopes for the future, and tools such as a hoe and pickaxe representing agriculture and mining, the twin pillars of Zambia's economy.",
+            "sources": [
+              {
+                "title": "Coat of arms of Zambia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia"
+              }
+            ]
+          }
         },
         {
           "id": "zm-football-crest",

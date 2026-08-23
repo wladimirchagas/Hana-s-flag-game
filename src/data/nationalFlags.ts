@@ -4162,6 +4162,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Egypt — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt" },
     ],
   },
+  "eg-passport": {
+    description: "Egypt's passport bears the national coat of arms, the Eagle of Saladin: a golden heraldic eagle facing left, its breast bearing a small shield in the flag's own red, white and black. Adopted in 1984, the eagle honours Salah ad-Din (Saladin), the 12th-century sultan who founded the Ayyubid dynasty and led the recapture of Jerusalem, and stands more broadly as a symbol of Arab unity; its talons grip a scroll naming the state, \"Arab Republic of Egypt\", in Kufic script.",
+    sources: [
+      { title: "Coat of arms of Egypt — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt" },
+    ],
+  },
   "eg-football-crest": {
     description: "The red, white and black rays repeat Egypt's own national flag. الاتحاد المصري لكرة القدم is simply the association's own name in Arabic — literally “the Egyptian Federation for Football”.",
     sources: [
@@ -5322,6 +5328,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ke-arms": {
     description: "The two lions are protection; the shield and the spears they hold are unity and the defence of freedom, and the shield carries the national colours — black for the people of Kenya, red for the blood shed in the struggle for independence, green for the land and its natural wealth, and the white fimbriations for peace and unity. The compartment beneath represents Mount Kenya itself, with the country's produce growing on it. The scroll carries the motto Harambee, Swahili for \"pulling together\" — all for one.",
+    sources: [
+      { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
+    ],
+  },
+  "ke-passport": {
+    description: "Kenya's passport bears the national coat of arms: two lions holding spears and a traditional East African shield, its colours matching the flag — black for the people, red for the blood shed in the struggle for independence, green for the land's agriculture and natural resources, white for unity and peace. A rooster carrying an axe strides across the shield, a symbol carried over from the Kenya African National Union, the party that led the country to independence; the whole stands on a depiction of Mount Kenya amid the country's crops, above a scroll reading \"Harambee\" — Swahili for \"pulling together\".",
     sources: [
       { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
@@ -6599,6 +6611,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
     ],
   },
+  "pe-passport": {
+    description: "As an Andean Community member, Peru issues the bloc's shared bordeaux passport, headed \"COMUNIDAD ANDINA\" above \"REPÚBLICA DEL PERÚ\" and the national coat of arms. The shield is divided into three: a blue field with a vicuña (the wild Andean camelid whose wool is prized above alpaca and llama), a white field with a cinchona tree (the source of quinine, discovered in Peru), and a red field with a cornucopia spilling coins — together representing the animal, plant and mineral wealth of Peru's three natural realms.",
+    sources: [
+      { title: "Andean passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Andean_passport" },
+      { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
+    ],
+  },
   "pe-football-crest": {
     description: "The red-white-red bands repeat Peru's own national flag. FPF is the association's own initials, Federación Peruana de Fútbol (Peruvian Football Federation).",
     sources: [
@@ -7732,6 +7751,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tanzania" },
     ],
   },
+  "tz-passport": {
+    description: "Since January 2018, Tanzania has issued the shared East African Community e-passport format as part of the bloc's regional integration plans, still carrying the national coat of arms. That shield's gold represents the country's mineral wealth and red the fertile soil of Africa, over wavy bands for its land, lakes and coastline; above it a burning torch stands for freedom (Uhuru) and knowledge, crossed by a spear, axe and hoe representing the defence of that freedom and the tools of everyday work. A man and woman support the shield, with elephant tusks, a clove bush and a cotton bush at their feet symbolising the country's natural and agricultural resources.",
+    sources: [
+      { title: "What You Need to Know About the Tanzanian Coat of Arms", url: "https://unitedrepublicoftanzania.com/government-of-tanzania-and-the-society/education-in-tanzania-system/laws-of-tanzania/what-you-need-to-know-about-the-tanzanian-coat-of-arms/" },
+    ],
+  },
   "tz-football-crest": {
     description: "The colours repeat Tanzania's own national flag: green for the country's vegetation and agriculture, black for its Swahili people, blue for the Indian Ocean and its lakes and rivers, and gold for its mineral wealth.",
     sources: [
@@ -7832,6 +7857,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield and the two spears behind it are the willingness of Ugandans to defend their country. The three charges on the shield are the waves of Lake Victoria and Lake Albert at the top, the sun in the centre for the country's many days of brilliant sunshine, and a traditional Ugandan drum below. The supporters are the crested crane, the national bird, and the Ugandan kob for the country's wildlife. The shield stands on a green mound of fertile land above a representation of the Nile, with the two main cash crops, coffee and cotton, on either side; the motto reads \"For God and My Country\". The drum's reading is contested: before Milton Obote's rule it stood for royalty and the authority of Uganda's kings, and the now-common explanation dates from after the 1966 crisis in which Obote attacked the Kabaka of Buganda.",
     sources: [
       { title: "Coat of arms of Uganda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uganda" },
+    ],
+  },
+  "ug-passport": {
+    description: "Uganda's passport bears the national coat of arms, adopted in 1962, centred on a grey crowned crane — the national bird — standing on one leg in a pose meant to symbolise vigilance and readiness to defend the country. The crane's own plumage carries the national colours (black, yellow and red), while the wider arms show it holding a spear and an ear of maize, flanked by supporters representing the country's wildlife and agriculture.",
+    sources: [
+      { title: "The Significance of Uganda's National Emblem — Medium", url: "https://medium.com/@rudra.komala/the-significance-of-ugandas-national-emblem-a-symbolic-journey-c87669eb1077" },
     ],
   },
   "ug-football-crest": {
@@ -8177,6 +8208,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "zm-arms": {
     description: "The fish eagle at the top, wings spread, stands for the conquest of freedom and the nation's hope for the future — the same bird as on the flag. The shield beneath is Victoria Falls, white water cascading over black rock, standing for the Zambezi river, from which the country takes its name. Around it are emblems of the sources of Zambia's wealth — a pick and hoe for mining and agriculture, an ear of maize, a mine headframe and a zebra. The shield is held by a man and a woman, the common people of the nation, and the ribbon reads “One Zambia, One Nation,” a call to unity across the country's many peoples.",
+    sources: [
+      { title: "Coat of arms of Zambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia" },
+    ],
+  },
+  "zm-passport": {
+    description: "Zambia's passport bears the national coat of arms, whose shield depicts Victoria Falls — white cascading water over black rock — beneath supporters that include an African fish eagle, standing for the country's hard-won freedom and hopes for the future, and tools such as a hoe and pickaxe representing agriculture and mining, the twin pillars of Zambia's economy.",
     sources: [
       { title: "Coat of arms of Zambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia" },
     ],
