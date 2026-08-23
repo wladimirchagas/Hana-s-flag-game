@@ -2651,6 +2651,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates" },
     ],
   },
+  "af-republic": {
+    description: "Afghanistan's 2004 flag bore a white national emblem showing a mihrab (prayer niche) and minbar (pulpit), the architectural heart of a mosque, signalling that the republic's values were grounded in Islamic faith. Above them sat the Shahada — the Islamic declaration of faith — and a rising sun, the whole ringed by wheat sheaves with the country's name and founding year below.",
+    sources: [
+      { title: "National Emblem — Embassy of the Islamic Republic of Afghanistan, Geneva", url: "https://www.afghanistanmission.ch/en/about-afghanistan/national-emblem.html" },
+    ],
+  },
   "af-passport": {
     description: "Afghan passports issued today still bear the name \"Islamic Republic of Afghanistan\" — the state's title before the Taliban's 2021 return to power and renaming of the country to the \"Islamic Emirate of Afghanistan\" — because that older republican-era document format remains the one accepted for international travel, leaving the passport's own cover a step behind the country's current official name.",
     sources: [
@@ -2691,6 +2697,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The three dolphins are taken directly from Anguilla's national flag and coat of arms, where they are arranged in a circle to represent unity, strength and endurance.",
     sources: [
       { title: "Flag of Anguilla — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Anguilla" },
+    ],
+  },
+  "al-people": {
+    description: "Albania's flag centres on a black double-headed eagle, a symbol reaching back through Skanderbeg's 15th-century banner against Ottoman rule to the Byzantine Empire, whose two heads once looked toward Rome and Constantinople; in Albania it is read as facing the country's historic position between East and West. Under the communist People's Socialist Republic the eagle flew beneath a gold-bordered red star, the standard Communist-era emblem of the ruling party's authority.",
+    sources: [
+      { title: "The story of the double-headed eagle Albanian Flag — Visit Tirana", url: "https://www.visit-tirana.com/news/the-story-of-the-double-headed-eagle-flag/" },
+    ],
+  },
+  "al-kingdom": {
+    description: "Albania's flag centres on a black double-headed eagle, a symbol reaching back through Skanderbeg's 15th-century banner against Ottoman rule to the Byzantine Empire, whose two heads once looked toward Rome and Constantinople; in Albania it is read as facing the country's historic position between East and West. Under King Zog I's kingdom the eagle was crowned with a helmet, evoking Skanderbeg's own war helm.",
+    sources: [
+      { title: "The story of the double-headed eagle Albanian Flag — Visit Tirana", url: "https://www.visit-tirana.com/news/the-story-of-the-double-headed-eagle-flag/" },
     ],
   },
   "al-ottoman": {
@@ -2763,6 +2781,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
     sources: [
       { title: "Meaning of the Portuguese Flag — Portugal.com", url: "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/" },
+    ],
+  },
+  "ao-portugal-1834": {
+    description: "Portugal's monarchy flag, introduced by Queen Maria II in 1830 and flown until the 1910 republican revolution, set the royal coat of arms on a blue-and-white field — blue standing for royalty. Unlike the later republican flag, its arms carried no armillary sphere (that emblem, added in 1816 to represent Brazil, had been dropped once Brazil became independent) and were topped instead with a royal crown.",
+    sources: [
+      { title: "Portugal - 1830 historical flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pt_1830.html" },
     ],
   },
   "ao-president": {

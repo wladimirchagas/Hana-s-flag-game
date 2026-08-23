@@ -339,7 +339,16 @@
           "design": "The black-red-green vertical tricolour bearing the white national emblem, flown by the Islamic Republic until the Taliban takeover in August 2021 restored the white Islamic Emirate flag.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Afghanistan",
           "sha256": "95b0f7f331c4dc216a8434ada0db1656bae973b555573ca021bdefbbf32cd57c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Afghanistan's 2004 flag bore a white national emblem showing a mihrab (prayer niche) and minbar (pulpit), the architectural heart of a mosque, signalling that the republic's values were grounded in Islamic faith. Above them sat the Shahada — the Islamic declaration of faith — and a rising sun, the whole ringed by wheat sheaves with the country's name and founding year below.",
+            "sources": [
+              {
+                "title": "National Emblem — Embassy of the Islamic Republic of Afghanistan, Geneva",
+                "url": "https://www.afghanistanmission.ch/en/about-afghanistan/national-emblem.html"
+              }
+            ]
+          }
         },
         {
           "id": "af-passport",
@@ -571,7 +580,16 @@
           "design": "The red flag with the double-headed eagle beneath a gold-bordered red star, under the communist state.",
           "source": "https://en.wikipedia.org/wiki/List_of_Albanian_flags",
           "sha256": "279543b43c703fc975c7558f5100d74452008e4211b786964deddfdb0652c713",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Albania's flag centres on a black double-headed eagle, a symbol reaching back through Skanderbeg's 15th-century banner against Ottoman rule to the Byzantine Empire, whose two heads once looked toward Rome and Constantinople; in Albania it is read as facing the country's historic position between East and West. Under the communist People's Socialist Republic the eagle flew beneath a gold-bordered red star, the standard Communist-era emblem of the ruling party's authority.",
+            "sources": [
+              {
+                "title": "The story of the double-headed eagle Albanian Flag — Visit Tirana",
+                "url": "https://www.visit-tirana.com/news/the-story-of-the-double-headed-eagle-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "al-kingdom",
@@ -585,7 +603,16 @@
           "design": "The double-headed eagle beneath a helmet, under King Zog I.",
           "source": "https://en.wikipedia.org/wiki/List_of_Albanian_flags",
           "sha256": "dd02ea334d57d50457cc82d1aaabfca96fe03129460fce061918920c349f7b2c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Albania's flag centres on a black double-headed eagle, a symbol reaching back through Skanderbeg's 15th-century banner against Ottoman rule to the Byzantine Empire, whose two heads once looked toward Rome and Constantinople; in Albania it is read as facing the country's historic position between East and West. Under King Zog I's kingdom the eagle was crowned with a helmet, evoking Skanderbeg's own war helm.",
+            "sources": [
+              {
+                "title": "The story of the double-headed eagle Albanian Flag — Visit Tirana",
+                "url": "https://www.visit-tirana.com/news/the-story-of-the-double-headed-eagle-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "al-ottoman",
@@ -955,7 +982,16 @@
           "design": "The blue-and-white monarchy flag of Portugal.",
           "source": "https://en.wikipedia.org/wiki/List_of_Angolan_flags",
           "sha256": "58873278e9e1b4ac283aa62d24a79edc2936ef80dc477ce75221bc8bb95d9530",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Portugal's monarchy flag, introduced by Queen Maria II in 1830 and flown until the 1910 republican revolution, set the royal coat of arms on a blue-and-white field — blue standing for royalty. Unlike the later republican flag, its arms carried no armillary sphere (that emblem, added in 1816 to represent Brazil, had been dropped once Brazil became independent) and were topped instead with a royal crown.",
+            "sources": [
+              {
+                "title": "Portugal - 1830 historical flags — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/pt_1830.html"
+              }
+            ]
+          }
         },
         {
           "id": "ao-kongo",
