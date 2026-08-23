@@ -5847,6 +5847,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Hong Kong — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
     ],
   },
+  "hk-colonial": {
+    description: "Granted by the College of Arms in 1959, Hong Kong's colonial arms — a heraldic sea with two junks at its base, a gold naval crown commemorating the Second World War in the chief, and an embattled (castle-like) design — were placed in a white disc on the British Blue Ensign, the territory's flag until sovereignty passed to China on 1 July 1997.",
+    sources: [
+      { title: "Colonial Hong Kong — blue ensign — Flags of the World", url: "https://www.crwflags.com/fotw/flags/hk-colon.html" },
+    ],
+  },
   "hk-uk": {
     description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
     sources: [
@@ -6012,6 +6018,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Árpád stripes — Wikipedia", url: "https://en.wikipedia.org/wiki/%C3%81rp%C3%A1d_stripes" },
     ],
   },
+  "hu-bela": {
+    description: "The double (patriarchal) cross first appeared on Hungarian coinage and the royal arms under King Béla III (r. 1172–1196), who had spent part of his youth at the Byzantine imperial court and adopted this Byzantine ecclesiastical symbol as a mark of royal authority. It has remained part of Hungary's coat of arms ever since, today shown rising from a crown atop three green hills on the country's arms.",
+    sources: [
+      { title: "Béla III of Hungary — Wikipedia", url: "https://en.wikipedia.org/wiki/B%C3%A9la_III_of_Hungary" },
+    ],
+  },
   "hu-naval-ensign": {
     description: "The naval ensign is the national tricolour bordered with a red-and-green sawtooth edge and charged, offset toward the hoist, with the Hungarian coat of arms flanked by an oak branch and an olive branch, flown by vessels of the Hungarian armed forces on the Danube. The arms combine the Árpád stripes — four red and four silver bands traditionally read as the country's four great rivers, the Danube, Tisza, Dráva and Száva — with the double cross of Hungarian statehood, over the triple mount representing the historic mountain ranges of the kingdom.",
     sources: [
@@ -6085,6 +6097,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Garuda Pancasila is Indonesia's own national emblem. The golden Garuda's feathers are counted to spell out the date of independence — 17 (wing) + 8 (tail) + 19 (base) + 45 (neck) for 17 August 1945 — and its shield carries the five principles of Pancasila: a star for belief in one God, a chain for just and civilised humanity, a banyan tree for national unity, a wild ox (banteng) for democracy guided by consensus, and rice and cotton for social justice. “Bhinneka Tunggal Ika” (“Unity in Diversity”) is drawn from a 14th-century Old Javanese poem.",
     sources: [
       { title: "National emblem of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
+    ],
+  },
+  "ie-royal-standard": {
+    description: "When the Crown of Ireland Act 1542 made Henry VIII King of Ireland — elevating the country from a lordship to a kingdom — its standard became a gold harp with silver strings on blue, a design drawn from the crowned harp Henry had already placed on Irish coinage. The harp, tradition holds, represents the sovereignty of Ireland reaching back into early Irish mythology; James I later incorporated the same harp into the royal arms of England, Scotland and Ireland after 1603.",
+    sources: [
+      { title: "How the Harp Became the Symbol of Ireland — EPIC Museum", url: "https://epicchq.com/story/how-the-harp-became-the-symbol-of-ireland/" },
     ],
   },
   "ie-naval-colour": {
@@ -6298,6 +6316,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Kingdom of Iraq (1924-1958) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/iq_kingd.html" },
     ],
   },
+  "iq-arab-federation": {
+    description: "Flown by the Hashemite Kingdom of Iraq from 1921 under the British Mandate, this flag used the black-white-green Pan-Arab stripes and red hoist triangle of the 1916 Arab Revolt flag — the banner Hashemite Sharif Hussein raised against Ottoman rule, adopted by his sons' new kingdoms in Iraq and Transjordan alike. The same design served again in 1958, when Iraq and Jordan briefly joined as the Arab Federation to counter the rival Egyptian-Syrian union, before the federation collapsed within six months in the Iraqi Revolution of July 1958.",
+    sources: [
+      { title: "Arab Federation of Jordan and Iraq — Flags of the World", url: "https://www.fotw.info/flags/xo-auji.html" },
+    ],
+  },
   "iq-uk": {
     description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
     sources: [
@@ -6329,16 +6353,34 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Iraq — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
     ],
   },
+  "ir-1964": {
+    description: "The state flag of Pahlavi Iran, crowning the green-white-red tricolour's Lion and Sun emblem with the imperial crown — a symbol of the monarchy's authority alongside the faith, peace and valour already carried by the flag's three colours. The Islamic Republic removed the Lion and Sun entirely after the 1979 revolution, replacing it with a stylised tulip-shaped emblem.",
+    sources: [
+      { title: "The symbolism of Iran's flag — and why it's controversial today — National Geographic", url: "https://www.nationalgeographic.com/history/article/iran-flag-symbolism-history-meaning-controversy" },
+    ],
+  },
   "ir-1933": {
     description: "The Lion and Sun began not as a flag but as an astrological and royal emblem: in Persian tradition the sun in the zodiac sign of Leo signified strength and kingship, and the lion stood for power and guardianship, appearing on coins and manuscripts for centuries before it reached a flag. In the Safavid era it came to represent the twin pillars of state and religion, and under the Qajar and Pahlavi dynasties the lion was typically shown holding a sword, standing for bravery and sovereignty, until it was dropped from Iran's flag after the 1979 revolution.",
     sources: [
       { title: "The Lion & Sun: A Symbol of Persian Legacy", url: "https://thelionandthesun.org/378/the-lion-sun-a-symbol-of-persian-legacy/" },
     ],
   },
+  "ir-1907": {
+    description: "Following Persia's 1906 constitutional revolution, this green-white-red tricolour was formally recognised, with the traditional Lion and Sun emblem set on the white band: green for the country's Islamic faith, white for peace, and red for valour. The design, its proportions later refined under the early Pahlavi state, carried the Lion and Sun through to the 1979 revolution.",
+    sources: [
+      { title: "The symbolism of Iran's flag — and why it's controversial today — National Geographic", url: "https://www.nationalgeographic.com/history/article/iran-flag-symbolism-history-meaning-controversy" },
+    ],
+  },
   "ir-qajar": {
     description: "The Lion and Sun began not as a flag but as an astrological and royal emblem: in Persian tradition the sun in the zodiac sign of Leo signified strength and kingship, and the lion stood for power and guardianship, appearing on coins and manuscripts for centuries before it reached a flag. In the Safavid era it came to represent the twin pillars of state and religion, and under the Qajar and Pahlavi dynasties the lion was typically shown holding a sword, standing for bravery and sovereignty, until it was dropped from Iran's flag after the 1979 revolution.",
     sources: [
       { title: "The Lion & Sun: A Symbol of Persian Legacy", url: "https://thelionandthesun.org/378/the-lion-sun-a-symbol-of-persian-legacy/" },
+    ],
+  },
+  "ir-safavid": {
+    description: "Under the later Safavid shahs, Iran's Lion and Sun emblem — a motif reaching back to 12th-century Persian astrology, where the sun in the house of Leo signified power and royalty — was understood to stand for the twin pillars of Safavid society, state and religion, and had become one of the dynasty's most widely used emblems by the era of Shah Abbas.",
+    sources: [
+      { title: "The Meaning Behind The Lion & Sun: A Symbol of Persian Legacy", url: "https://thelionandthesun.org/378/the-lion-sun-a-symbol-of-persian-legacy/" },
     ],
   },
   "ir-naval-jack": {
@@ -6364,6 +6406,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The green-white-red repeats Iran's own national flag, and the red emblem on the white stripe is the flag's own central symbol: a stylised rendering of the word “Allah”, made of four crescents and a sword beneath a shaddah mark, adopted after the 1979 Islamic Revolution to replace the former Lion and Sun emblem associated with the monarchy.",
     sources: [
       { title: "Flag of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
+    ],
+  },
+  "is-1918": {
+    description: "Adopted under the 1918 Danish–Icelandic Act of Union, which made Iceland a sovereign kingdom in personal union with Denmark's king rather than a Danish possession, this lighter-blue version of Iceland's cross flag marked the country's newly recognised statehood even while it shared its monarch, and delegated foreign affairs and defence, with Denmark. The union — and the kingdom itself — ended in 1944, when a wartime referendum established the Republic of Iceland.",
+    sources: [
+      { title: "Danish–Icelandic Act of Union — Wikipedia", url: "https://en.wikipedia.org/wiki/Danish%E2%80%93Icelandic_Act_of_Union" },
     ],
   },
   "is-denmark": {
