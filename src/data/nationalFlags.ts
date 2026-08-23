@@ -7592,6 +7592,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Discover the Unique Color of Libya's Flag", url: "https://libyaprospect.com/unveiling-the-unique-color-of-libyas-national-flag/" },
     ],
   },
+  "ly-1972": {
+    description: "Adopted when Libya joined Egypt and Syria in the Federation of Arab Republics in 1972, this flag kept the red-white-black tricolour Egypt's 1958 United Arab Republic had used but replaced its two green stars with a single golden Hawk of Quraish — the falcon of the tribe to which the Prophet Muhammad belonged — as the federation's shared emblem. Libya replaced it in 1977, when Muammar Gaddafi adopted an unadorned plain green flag as the sole colour of his 'Green Book' ideology.",
+    sources: [
+      { title: "Flag of the Federation of Arab Republics — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Federation_of_Arab_Republics" },
+    ],
+  },
   "ly-1969": {
     description: "Adopted after Muammar Gaddafi's bloodless coup overthrew King Idris I on 1 September 1969, this red-white-black tricolour was the Arab Liberation Flag — shared with Egypt, Syria and Iraq — chosen to align the new republic with contemporary Arab nationalist ideals of unity, anti-colonialism and socialism. It gave way in 1972 to the Federation of Arab Republics flag when Libya joined Egypt and Syria in that short-lived union.",
     sources: [
@@ -11730,6 +11736,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Vanuatu's passport bears the national coat of arms: a ni-Vanuatu warrior holding a spear before a mountain, standing within a circular boar's tusk — a traditional symbol of wealth, status and ceremonial importance in ni-Vanuatu culture, once used as a form of currency — wound with two crossed namele fern fronds, which represent traditional law, peace and stability. Below runs the national motto in Bislama, \"Long God Yumi Stanap\" — \"With God we stand\".",
     sources: [
       { title: "Coat of arms of Vanuatu — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vanuatu" },
+    ],
+  },
+  "ws-nz": {
+    description: "New Zealand's own flag — a Blue Ensign combining the Union Jack (itself uniting England's St George's Cross, Scotland's St Andrew's Cross and Ireland's St Patrick's Cross) with four red, white-bordered stars for the Southern Cross constellation — was flown over Western Samoa from New Zealand's 1914 occupation of the former German colony, through its League of Nations mandate and later UN trusteeship, until Samoa adopted its own flag in 1948 ahead of full independence in 1962.",
+    sources: [
+      { title: "Samoa — Historical flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ws_hist.html" },
     ],
   },
   "ws-german": {
