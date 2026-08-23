@@ -7550,6 +7550,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "People's Army of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/People's_Army_of_Vietnam" },
     ],
   },
+  "vn-navy": {
+    description: "The flag of the Vietnam People's Navy is the People's Army's own flag — the national flag charged with the gold motto 'Quyết thắng' ('Determination to Win') — with a dark blue band added below for the navy's own branch colour. Dark blue marks naval personnel across the Vietnam People's Army's insignia, distinguishing the navy from the red of the ground forces and the azure of the air force.",
+    sources: [
+      { title: "Wikipedia — Vietnamese military ranks and insignia", url: "https://en.wikipedia.org/wiki/Vietnamese_military_ranks_and_insignia" },
+      { title: "Wikipedia — List of flags of Vietnam", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
+    ],
+  },
+  "vn-air-force": {
+    description: "The flag of the Vietnam People's Air Force, flown since 1959, is the People's Army's own flag — the national flag charged with the gold motto 'Quyết thắng' ('Determination to Win') — with an azure band added below for the air force's own branch colour. Azure marks air force personnel across the Vietnam People's Army's insignia, distinguishing the air force from the red of the ground forces and the dark blue of the navy.",
+    sources: [
+      { title: "Wikipedia — Vietnamese military ranks and insignia", url: "https://en.wikipedia.org/wiki/Vietnamese_military_ranks_and_insignia" },
+      { title: "Wikipedia — List of flags of Vietnam", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
+    ],
+  },
   "vn-emblem": {
     description: "The emblem is defined by the constitution as a circle bearing a five-pointed gold star on red, framed by ears of rice above half a cogwheel and the name of the state. The two framing charges are the two halves of the workforce the socialist republic is founded on: the rice stands for agriculture and the cogwheel for industry. The designer Bùi Trang Chước first drew an anvil at the foot of the wreath; Hồ Chí Minh asked for it to be replaced because an anvil is an individual craftsman's tool, and modern industry needed a modern symbol — so the cogwheel took its place. The star and the red field are those of the national flag.",
     sources: [
