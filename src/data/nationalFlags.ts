@@ -3154,6 +3154,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Armed Forces Flags (Brazil)", url: "http://flagwithmeaning.blogspot.com/2013/04/armed-forces-flags-brazil.html" },
     ],
   },
+  "br-navy": {
+    description: "The Brazilian Navy's flag bears its own coat of arms on a white field: a shield with wavy silver-and-blue bands evoking the sea the Armada's ships sail, topped by a naval crown and a gold rope oval, over a gold anchor crossed saltire-wise with the caduceus of Mercury (both black-filleted), with a 16th-century arquebus and sword above. Per the Navy's own heraldic office: the anchor over the caduceus represents the Navy's vigilance over merchant shipping and the growth of maritime trade; the caduceus itself (associated with Mercury, Roman god of commerce) stands for trade relations between peoples since antiquity; and the arquebus and sword recall the armed state whose forces set out from the coast to explore Brazil's interior.",
+    sources: [
+      { title: "Heráldica — Diretoria do Patrimônio Histórico e Documentação da Marinha (official)", url: "https://www.marinha.mil.br/dphdm/heraldica" },
+      { title: "List of Brazilian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
+    ],
+  },
   "br-air-force": {
     description: "A sky-blue field, crossed by a diagonal band, bears the arms of the Aeronautics Command within a green-and-gold-bordered diamond: a shield divided green and yellow — Brazil's own national colours — surmounted by a star within concentric white-and-blue discs, tying the Air Force's own heraldry to the wider national symbolism of green, yellow and blue.",
     sources: [
@@ -6454,6 +6461,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Flag of Pakistan", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
     ],
   },
+  "pk-air-ensign": {
+    description: "Pakistan's Civil Air Ensign follows the pattern of the British Civil Air Ensign — a light-blue field with the national flag in the canton — used across former British territories to mark civil aviation. Where the British original bears a red cross reaching to the edges of the field, Pakistan's designers deliberately omitted it: a cross being a Christian symbol was considered inappropriate for an Islamic republic, so the ensign was left as a plain light-blue field bearing only the Pakistani flag.",
+    sources: [
+      { title: "List of Pakistani flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+      { title: "Civil air ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Civil_air_ensign" },
+    ],
+  },
   "pk-president": {
     description: "A green field bears Pakistan's state emblem: a crescent and star for Islam atop a shield quartered with cotton, wheat, tea and jute — the country's major crops at independence and the base of its economy — surrounded by a wreath of jasmine (the national flower, recalling traditional Mughal floral art) and, on a scroll below, the national motto in Urdu: Faith, Unity, Discipline.",
     sources: [
@@ -7458,6 +7472,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Wikipedia — List of Ukrainian flags", url: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
       { title: "Wikipedia — Ukrainian Ground Forces", url: "https://en.wikipedia.org/wiki/Ukrainian_Ground_Forces" },
+    ],
+  },
+  "ua-air-force": {
+    description: "The Air Force's ensign is a blue field bearing the service's badge: a gold Tryzub (trident) on a shield, the same trident that forms Ukraine's state coat of arms. The trident is an ancient dynastic symbol tracing to the Rurikid princes of Kievan Rus', readopted as Ukraine's emblem on independence in 1992; on the Air Force's badge it is combined with wings to mark the branch as the aerial arm of the same national symbol carried by the Army and Navy's own service flags.",
+    sources: [
+      { title: "List of Ukrainian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+      { title: "Ukraine – State Arms (The Trident) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ua-arms.html" },
     ],
   },
   "ua-air-assault": {
