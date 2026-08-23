@@ -10627,7 +10627,16 @@
           "design": "The same blue cover and Royal Arms, headed DIPLOMATIC PASSPORT.",
           "source": "https://en.wikipedia.org/wiki/British_passport",
           "sha256": "302904a674d0d3c8fc20ba0c5f8b71069ba39c4d48993cdccba5b32a6140f3cd",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Like the ordinary blue passport, this cover bears the Royal Coat of Arms: a shield supported by a crowned gold lion for England and a silver unicorn for Scotland, beneath the motto \"Dieu et mon droit\" — French for \"God and my right\" — first used as a battle cry by Richard I and standardised as the monarch's own motto by 1714, a holdover from the centuries when French was the language of the English royal court. The \"Diplomatic Passport\" heading marks it as issued to diplomats and their families on official government business.",
+            "sources": [
+              {
+                "title": "Dieu et mon droit — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Dieu_et_mon_droit"
+              }
+            ]
+          }
         },
         {
           "id": "gb-passport-official",
@@ -10638,7 +10647,16 @@
           "design": "The same blue cover and Royal Arms, headed OFFICIAL PASSPORT.",
           "source": "https://en.wikipedia.org/wiki/British_passport",
           "sha256": "182118fed9f47460ddd5b6ef2f624e9201ce2ccc6cd344078aca37c3941aabc5",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Like the ordinary blue passport, this cover bears the Royal Coat of Arms: a shield supported by a crowned gold lion for England and a silver unicorn for Scotland, beneath the motto \"Dieu et mon droit\" — French for \"God and my right\" — first used as a battle cry by Richard I and standardised as the monarch's own motto by 1714. The \"Official Passport\" heading marks it as issued to civil servants and others travelling on UK government business, distinct from the ordinary citizen passport.",
+            "sources": [
+              {
+                "title": "Dieu et mon droit — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Dieu_et_mon_droit"
+              }
+            ]
+          }
         },
         {
           "id": "gb-official-national",
@@ -32312,7 +32330,16 @@
           "design": "A maroon cover with the Great Seal, headed OFFICIAL PASSPORT — issued to government employees travelling on duty.",
           "source": "https://en.wikipedia.org/wiki/United_States_passport",
           "sha256": "a0188865dc2afb089b5dc16c92f600288cc10abb48fe88e100aa56501066d40f",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Like the ordinary blue passport, this cover bears the obverse of the Great Seal of the United States: a bald eagle holding an olive branch (peace) in one talon and thirteen arrows (readiness for war) in the other, a shield of thirteen red-and-white stripes for the original states beneath a blue band representing Congress uniting them, and the motto \"E Pluribus Unum\" — \"Out of many, one\" — in its beak. The maroon cover and \"Official Passport\" heading mark it as issued to government employees travelling on official government business rather than personal travel.",
+            "sources": [
+              {
+                "title": "Great Seal of the United States — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States"
+              }
+            ]
+          }
         },
         {
           "id": "us-passport-service",
@@ -32323,7 +32350,16 @@
           "design": "A grey cover with the Great Seal, headed SERVICE PASSPORT.",
           "source": "https://en.wikipedia.org/wiki/United_States_passport",
           "sha256": "7da53e2ea07eb6cf21f681fb54f4cb7a63a9466416c4ebc533a2e6d8a3fd071e",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Like the ordinary blue passport, this cover bears the obverse of the Great Seal of the United States: a bald eagle holding an olive branch (peace) in one talon and thirteen arrows (readiness for war) in the other, beneath the motto \"E Pluribus Unum\" — \"Out of many, one\". The grey cover and \"Service Passport\" heading distinguish it as issued for a specific category of government-related travel, separate from the ordinary citizen passport.",
+            "sources": [
+              {
+                "title": "Great Seal of the United States — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States"
+              }
+            ]
+          }
         },
         {
           "id": "us-passport-emergency",

@@ -4517,6 +4517,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "British nationality law — Wikipedia", url: "https://en.wikipedia.org/wiki/British_nationality_law" },
     ],
   },
+  "gb-passport-diplomatic": {
+    description: "Like the ordinary blue passport, this cover bears the Royal Coat of Arms: a shield supported by a crowned gold lion for England and a silver unicorn for Scotland, beneath the motto \"Dieu et mon droit\" — French for \"God and my right\" — first used as a battle cry by Richard I and standardised as the monarch's own motto by 1714, a holdover from the centuries when French was the language of the English royal court. The \"Diplomatic Passport\" heading marks it as issued to diplomats and their families on official government business.",
+    sources: [
+      { title: "Dieu et mon droit — Wikipedia", url: "https://en.wikipedia.org/wiki/Dieu_et_mon_droit" },
+    ],
+  },
+  "gb-passport-official": {
+    description: "Like the ordinary blue passport, this cover bears the Royal Coat of Arms: a shield supported by a crowned gold lion for England and a silver unicorn for Scotland, beneath the motto \"Dieu et mon droit\" — French for \"God and my right\" — first used as a battle cry by Richard I and standardised as the monarch's own motto by 1714. The \"Official Passport\" heading marks it as issued to civil servants and others travelling on UK government business, distinct from the ordinary citizen passport.",
+    sources: [
+      { title: "Dieu et mon droit — Wikipedia", url: "https://en.wikipedia.org/wiki/Dieu_et_mon_droit" },
+    ],
+  },
   "gb-eng-football-crest": {
     description: "The three lions descend from the arms of Richard I (“the Lionheart”), which originally stood for the three territories he ruled — England, Normandy and Aquitaine — and were worn by England teams from the FA's earliest internationals. The Tudor rose is England's own heraldic flower, its five white inner petals for the House of York and five red outer petals for the House of Lancaster marking their union under the Tudor dynasty; the FA was formally granted this coat of arms by the College of Arms on 30 March 1949, with ten roses scattered between the lions. Why exactly ten is not actually recorded: the FA's own history notes only that eleven (one per player) might have suited the game better, and it is unclear whether the number was meant for the FA's ten regional divisions at the time or was simply the College of Arms' own choice. The single star above the shield marks England's one FIFA World Cup title, won in 1966.",
     sources: [
@@ -8436,6 +8448,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The United States issues its passports in four colours by type, and the colour IS the classification: blue for ordinary, black for diplomatic, maroon for official, and grey for no-fee travel. The device is the Great Seal, whose eagle, olive branch and thirteen arrows are the same emblem the country's arms carry.",
     sources: [
       { title: "United States passport — Wikipedia", url: "https://en.wikipedia.org/wiki/United_States_passport" },
+    ],
+  },
+  "us-passport-official": {
+    description: "Like the ordinary blue passport, this cover bears the obverse of the Great Seal of the United States: a bald eagle holding an olive branch (peace) in one talon and thirteen arrows (readiness for war) in the other, a shield of thirteen red-and-white stripes for the original states beneath a blue band representing Congress uniting them, and the motto \"E Pluribus Unum\" — \"Out of many, one\" — in its beak. The maroon cover and \"Official Passport\" heading mark it as issued to government employees travelling on official government business rather than personal travel.",
+    sources: [
+      { title: "Great Seal of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States" },
+    ],
+  },
+  "us-passport-service": {
+    description: "Like the ordinary blue passport, this cover bears the obverse of the Great Seal of the United States: a bald eagle holding an olive branch (peace) in one talon and thirteen arrows (readiness for war) in the other, beneath the motto \"E Pluribus Unum\" — \"Out of many, one\". The grey cover and \"Service Passport\" heading distinguish it as issued for a specific category of government-related travel, separate from the ordinary citizen passport.",
+    sources: [
+      { title: "Great Seal of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States" },
     ],
   },
   "us-football-crest": {
