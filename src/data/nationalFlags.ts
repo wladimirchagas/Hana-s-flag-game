@@ -5400,6 +5400,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Guernsey — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey" },
     ],
   },
+  "gh-uas": {
+    description: "The Union of African States linked Ghana, Guinea and (from 1961) Mali in a short-lived attempt at pan-African political union. Its flag kept Ghana's own red-gold-green tricolour but placed one black star in the gold band for each member state — building on Ghana's own Black Star, itself named for the Black Star Line steamship company of Marcus Garvey's Pan-Africanist movement — so the flag read as Ghana's own symbol multiplied to represent the union.",
+    sources: [
+      { title: "Union of African States — Flags of the World", url: "https://www.crwflags.com/fotw/flags/int-uas.html" },
+    ],
+  },
   "gh-air-force": {
     description: "The Air Force Ensign of Ghana carries the national flag in the canton and the air force's green-yellow-red roundel in the fly, adopted when the force was formed in 1959. The roundel repeats the colours of the national flag — green for the nation's forests and farmland, yellow for its mineral wealth, and red for the blood shed in the struggle for independence — marking Ghanaian military aircraft with the same colours flown on the ground.",
     sources: [
@@ -5769,6 +5775,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Honduras — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
     ],
   },
+  "hr-1945": {
+    description: "Adopted 18 January 1947, the flag of the Socialist Republic of Croatia was the traditional Croatian red-white-blue horizontal tricolour, unchanged from the flag flown since 1848, with a five-pointed red star bordered in gold added to the centre to mark Croatia's status as one of Yugoslavia's constituent socialist republics. The star was replaced by Croatia's chequered šahovnica coat of arms in 1990 after the country's first multi-party elections.",
+    sources: [
+      { title: "Flag of Croatia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
+    ],
+  },
+  "hr-banovina": {
+    description: "The tricolour flown by the Banovina of Croatia, the autonomous unit created within the Kingdom of Yugoslavia by the August 1939 Cvetković–Maček Agreement in an attempt to satisfy Croatian demands for self-government — a settlement cut short less than two years later by the Axis invasion of Yugoslavia in April 1941.",
+    sources: [
+      { title: "Flag of Croatia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
+    ],
+  },
+  "hr-triune": {
+    description: "The red-white-blue tricolour flown, without official sanction, from the pan-Slavic movements of 1848 onward as the flag of the 'Triune Kingdom' — the historic association of Croatia, Slavonia and Dalmatia — while the lands themselves remained under the Habsburg crown. From 1939 it was charged with the red-and-white chequered šahovnica shield representing the three regions, the same device that centres Croatia's flag today.",
+    sources: [
+      { title: "Flag of Croatia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
+    ],
+  },
   "hr-air-force": {
     description: "The Croatian Air Force's flag is dark blue bearing the service's badge — a winged square — above the Croatian state coat of arms. The winged square marks the flag as belonging to the air arm of the armed forces, while the chequered shield beneath it ties the service to the Croatian state it defends, the same red-and-white checkerboard (šahovnica) used on the national coat of arms.",
     sources: [
@@ -5848,6 +5872,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The palm tree with a Phrygian cap above it is taken from Haiti's coat of arms, where the cap symbolises liberty and the surrounding cannons and flags commemorate Haiti's armed struggle for independence from France in 1804.",
     sources: [
       { title: "Coat of arms of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
+    ],
+  },
+  "hu-1848": {
+    description: "Raised for the first time over the Royal Palace in Buda on 15 March 1848 and adopted by the Hungarian parliament that April, this red-white-green tricolour — inspired by the French Revolutionary flag — became the banner of the 1848–49 uprising against Habsburg rule. Red recalled the banners of the tribes of King Árpád, white the colour of King Stephen, and green the royal coat of arms; banned after the revolution's defeat, the tricolour became Hungary's legal national flag once the 1867 Compromise restored self-government.",
+    sources: [
+      { title: "Flag of Hungary — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hungary" },
     ],
   },
   "hu-arpad": {
@@ -6960,6 +6990,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Pitons (Saint Lucia) — Wikipedia", url: "https://en.wikipedia.org/wiki/Pitons_(Saint_Lucia)" },
     ],
   },
+  "li-1921": {
+    description: "Adopted in 1921, this plain blue-over-red bicolour — colours chosen instead of the gold and red of the princely coat of arms — served as Liechtenstein's flag until the 1936 Berlin Olympics, when its delegation discovered the flag was identical to Haiti's. To distinguish the two, Liechtenstein added a gold princely crown to the hoist of the blue band, officially adopting the crowned design on 24 June 1937.",
+    sources: [
+      { title: "Flag of Liechtenstein — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
+    ],
+  },
   "li-arms": {
     description: "The quartered shield gathers the arms of the houses and lands the Princely Family of Liechtenstein has held — the Silesian eagle, and the arms of Kuenring, Troppau, East Frisia (Rietberg) and Jägerndorf — around a central shield of gold and red, the colours of the House itself. A princely hat crowns it, on an ermine mantle.",
     sources: [
@@ -7036,6 +7072,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Liberia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
     ],
   },
+  "ls-1987": {
+    description: "Adopted 20 January 1987 after a January 1986 military coup ousted the Basotho National Party government, this flag replaced the mokorotlo hat with a brown traditional Basotho shield flanked by an assegai (spear) and a knobkierrie (club), on diagonal bands of white for peace, blue for rain and green for prosperity — emblems declaring the nation's readiness to defend itself. It was replaced in 2006 by a flag restoring the mokorotlo, this time coloured black.",
+    sources: [
+      { title: "Flag of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    ],
+  },
+  "ls-1966": {
+    description: "Lesotho's first national flag, raised at independence on 4 October 1966, set a white mokorotlo — the traditional conical straw hat of the Basotho people — on a blue field, beside vertical green and red bands. Blue stood for the sky and rain (rain being especially prized in this mountain kingdom), white for peace, green for the land, and red for the faith of the Basotho nation.",
+    sources: [
+      { title: "Flag of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    ],
+  },
   "ls-uk": {
     description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
     sources: [
@@ -7064,6 +7112,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Lithuanian SSR's flag — red with a gold hammer and sickle and the republic's initials — was imposed after the Soviet Union's forcible 1940 occupation and annexation of Lithuania, carried out under the secret protocol of the Molotov–Ribbentrop Pact. Lithuania's own tricolour was banned outright until independence was restored in 1990.",
     sources: [
       { title: "Flag of the Lithuanian Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Lithuanian_Soviet_Socialist_Republic" },
+    ],
+  },
+  "lt-1918": {
+    description: "Adopted 25 April 1918 as Lithuania declared independence from Russian and German rule, this yellow-green-red horizontal tricolour remained the flag of the interwar republic until Soviet occupation in June 1940. Yellow stood for the sun, light and prosperity; green for the beauty of nature, freedom and hope; and red for the land and for the blood shed defending the homeland.",
+    sources: [
+      { title: "Flag of Lithuania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lithuania" },
     ],
   },
   "lt-russian-empire": {
@@ -7429,6 +7483,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The starburst and the orange-and-white colours echo the Marshall Islands' national flag, where the rising orange-and-white band represents the equator and the country's two island chains, and the star's points stand for the country's electoral districts and principal cultural centres.",
     sources: [
       { title: "Flag of the Marshall Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands" },
+    ],
+  },
+  "mk-1992": {
+    description: "The first flag of independent Macedonia, adopted in 1992 and designed by Todor Petrov, set a golden sixteen-rayed star — the 'Vergina Sun', found on a royal larnax excavated at Vergina in northern Greece and associated with the ancient Macedonian dynasty of Philip II — on a red field. Greece objected that the ancient Macedonian emblem implied a claim on Greek history and territory; the dispute was resolved by a 1995 UN-brokered agreement under which the country adopted a new flag with a stylised eight-rayed sun.",
+    sources: [
+      { title: "Vergina Sun — Wikipedia", url: "https://en.wikipedia.org/wiki/Vergina_Sun" },
+    ],
+  },
+  "mk-sr": {
+    description: "The flag of the Socialist Republic of Macedonia, a plain red field bearing a five-pointed red star bordered in gold in the canton, marked its status as one of the six constituent republics of socialist Yugoslavia; the star was dropped and the Vergina Sun added when the country became independent in 1992.",
+    sources: [
+      { title: "Flag of North Macedonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
     ],
   },
   "mk-krusevo": {
