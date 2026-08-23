@@ -2741,6 +2741,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Angola — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Angola" },
     ],
   },
+  "ao-passport": {
+    description: "Angola's passport bears the national emblem: a segment of a cogwheel for industrial workers, sheaves of maize, coffee and cotton for the country's peasantry and agriculture, a crossed machete and hoe recalling the start of the armed liberation struggle, and an open book for education and culture. A rising sun represents the new nation, and a gold star at the top stands for international solidarity and progress — the same three elements rendered in yellow to signify the country's wealth.",
+    sources: [
+      { title: "🇦🇴 Angola Flag Unveiled: Colors, Meaning, Coat of Arms, Flag Map, and Similar Flags — Mappr", url: "https://www.mappr.co/flag-maps/angola/" },
+    ],
+  },
   "ao-football-crest": {
     description: "The giant sable antelope (palanca-negra-gigante) is Angola's own national symbol, native only to the region between the Cuango and Luando rivers and portrayed on the country's stamps, banknotes and passports. It gives the national football team its own nickname, the Palancas Negras.",
     sources: [
@@ -3948,6 +3954,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Djibouti — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Djibouti" },
     ],
   },
+  "dj-passport": {
+    description: "Djibouti's blue passport bears the national coat of arms: two arms, each holding a shark-tooth knife, representing the country's two main peoples, the Afar and the Issa Somali, flanking a spear and round shield for defensive readiness. The spear is topped with a red star symbolising the unity between the Issa and Afar peoples.",
+    sources: [
+      { title: "Emblem of Djibouti — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Djibouti" },
+    ],
+  },
   "dj-football-crest": {
     description: "The design repeats Djibouti's own national flag: light blue for the sky, sea and the country's Somali population, green for the land and its Afar population, and the red star for unity, the blood of independence's martyrs, and Djibouti being one of the five regions the Somali people inhabit.",
     sources: [
@@ -4192,6 +4204,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
     ],
   },
+  "er-passport": {
+    description: "Eritrea's passport bears the national emblem: a dromedary camel standing in the desert, encircled by an olive wreath. The camel was the pack animal that carried supplies and equipment for Eritrean independence fighters during the country's decades-long war of independence from Ethiopia, and is honoured on the emblem as instrumental to that struggle's success.",
+    sources: [
+      { title: "The emblem of Eritrea — Eritrea Ministry of Information", url: "https://shabait.com/2013/06/14/the-emblem-of-eritrea/" },
+    ],
+  },
   "er-football-crest": {
     description: "The olive wreath is drawn from Eritrea's own national emblem, adopted in 1993 at independence, whose 30 leaves mark the 30 years of war fought to win it; the emblem's wreath normally encircles a dromedary camel, the beast of burden that carried supplies for the independence movement and stands for endurance and self-reliance.",
     sources: [
@@ -4379,6 +4397,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ga-arms": {
     description: "The black shield bears three golden discs for the country's mineral wealth and, below, a ship under sail for the timber trade that built its economy; a green okoumé tree rises behind. Two panthers guard it. Two mottoes appear: the Latin Uniti Progrediemur — “united we shall go forward” — on the scroll above, and the French Union, Travail, Justice — “Union, Work, Justice” — below.",
+    sources: [
+      { title: "Coat of arms of Gabon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon" },
+    ],
+  },
+  "ga-passport": {
+    description: "Gabon's passport bears the national coat of arms: an okoumé tree at the top, marking the timber trade central to the country's economy, above a shield in the national flag's own colours — green for the country's dense forests, yellow for the sun, and (on the wider arms) blue for the sea — with a ship below representing Gabon's course toward a brighter future. The motto beneath reads \"Union, Travail, Justice\" — \"Unity, Work, Justice\".",
     sources: [
       { title: "Coat of arms of Gabon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon" },
     ],
@@ -4631,6 +4655,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "gq-arms": {
     description: "The silver silk-cotton tree at the centre is the “God tree” (árbol de Dios), under which the first treaty between a local ruler and Spain is said to have been signed. Six six-pointed gold stars above stand for the mainland (Río Muni) and the five inhabited islands. The scroll reads Unidad, Paz, Justicia — “Unity, Peace, Justice.”",
+    sources: [
+      { title: "Coat of arms of Equatorial Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea" },
+    ],
+  },
+  "gq-passport": {
+    description: "Equatorial Guinea's passport bears the national coat of arms, unchanged across currency, official seals and diplomatic documents alike: a grey shield bearing a silk-cotton tree, marking the spot where the first treaty was signed between Portugal and the local ruler that opened the territory to European contact. Six six-pointed stars above the shield stand for the mainland region and the country's five main islands, beneath the motto \"Unidad, Paz, Justicia\" — \"Unity, Peace, Justice\".",
     sources: [
       { title: "Coat of arms of Equatorial Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea" },
     ],
