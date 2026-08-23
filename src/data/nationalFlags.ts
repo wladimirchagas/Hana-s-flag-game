@@ -6092,6 +6092,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Flag of Pakistan", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
     ],
   },
+  "pk-naval-jack": {
+    description: "The naval jack of the Pakistan Navy is a dark blue field bearing the navy's own badge — a white crescent and star — at its centre, a colour adopted in 1960 in place of the green field the jack had carried since 1956, the year Pakistan became an Islamic republic and the Royal Navy's white ensign and Queen's colour were replaced with the country's own naval flags. The crescent and star are the same symbols carried on the national flag, traditionally read as standing for progress and enlightenment.",
+    sources: [
+      { title: "Flags of the World — Pakistan: naval ensigns", url: "https://www.crwflags.com/fotw/flags/pk~.html" },
+      { title: "Wikipedia — Flag of Pakistan", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
+    ],
+  },
   "pk-president": {
     description: "A green field bears Pakistan's state emblem: a crescent and star for Islam atop a shield quartered with cotton, wheat, tea and jute — the country's major crops at independence and the base of its economy — surrounded by a wreath of jasmine (the national flower, recalling traditional Mughal floral art) and, on a scroll below, the national motto in Urdu: Faith, Unity, Discipline.",
     sources: [
@@ -6102,6 +6109,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "An earlier form of the presidential standard, showing only the crescent and star for Islam set within branches of wheat for agriculture — the core religious and economic symbols later folded into the fuller state emblem (also including cotton, tea and jute, a jasmine wreath, and the national motto) adopted for the modern standard in 1998.",
     sources: [
       { title: "List of Pakistani flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    ],
+  },
+  "pk-pm": {
+    description: "The Prime Minister's standard is a plain dark green field bearing the State Emblem of Pakistan, approved in 1954, in gold at its centre. The emblem's crescent and star stand for progress and enlightenment, a four-part shield beneath them displays cotton, wheat, tea and jute — the country's principal crops — within a wreath modelled on traditional Mughal floral art, and a scroll below carries Muhammad Ali Jinnah's motto 'Faith, Unity, Discipline' in Urdu.",
+    sources: [
+      { title: "Wikipedia — State emblem of Pakistan", url: "https://en.wikipedia.org/wiki/State_emblem_of_Pakistan" },
+      { title: "Flags of the World — Pakistan: Prime Minister Flag", url: "https://www.crwflags.com/fotw/flags/pk_pmin.html" },
     ],
   },
   "pk-emblem": {
