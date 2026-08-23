@@ -21313,7 +21313,16 @@
           "design": "The flag of the ten-day republic proclaimed during the Ilinden uprising against Ottoman rule in 1903.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia",
           "sha256": "3990c8f2fe10d9e672c86df848e429672c35215d80cc28bdac384f12226acc4a",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "A plain red flag was raised over Kruševo in August 1903 at the initiative of Nikola Karev during the Ilinden Uprising against Ottoman rule, the red standing for the blood of those who died fighting for Macedonian freedom. The traditional black-and-red flag carried by the uprising's fighters is read the same way its slogan was — \"Freedom (red) or Death (black)\" — and the plain red field was revived in 1946 as the flag of the Yugoslav Republic of Macedonia, in memory of Kruševo's short-lived republic.",
+            "sources": [
+              {
+                "title": "The Ilinden Uprising and the Republic of Kruševo — Flags of the World",
+                "url": "https://www.fotw.info/flags/mk_1903.html"
+              }
+            ]
+          }
         },
         {
           "id": "mk-emblem",
@@ -22890,7 +22899,16 @@
           "design": "The flag of the Army of the Three Guarantees, decreed by Agustín de Iturbide in November 1821 — the first flag of independent Mexico.",
           "source": "https://en.wikipedia.org/wiki/List_of_Mexican_flags",
           "sha256": "dd6bd401fb1eeb500fd220e3e35c939b9ad9c7116b1041548571ef9abc784a6f",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Mexico's first national flag, made for Agustín de Iturbide in 1821 to mark the Plan of Iguala, crossed the field with three diagonal stripes — white, green and red — each bearing its own gold star and each standing for one of the plan's \"three guarantees\": white for the Catholic religion, green for independence, and red for the union of Mexicans, summed up in the motto \"Religión, Independencia, Unión\". It gave way within the year to the vertical tricolour that became Mexico's lasting flag.",
+            "sources": [
+              {
+                "title": "Flag of the Three Guarantees — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Three_Guarantees"
+              }
+            ]
+          }
         },
         {
           "id": "mx-arms",
@@ -23041,7 +23059,16 @@
           "design": "Eleven red and white stripes with a crescent and an eleven-point star — one for each state of the Federation.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "9666f425f72dde775d816cf8318c072f82ef85f70b2e4fb92cf02e8309f69bee",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Federation of Malaya's 1950 flag used eleven alternating red and white stripes for its eleven constituent states, with a yellow crescent and eleven-pointed star for Islam and for royal sovereignty under the Malay rulers. Red, white and blue also marked Malaya's membership of the Commonwealth; the design's stripe and star count both grew as more states joined what became Malaysia.",
+            "sources": [
+              {
+                "title": "Flag of Malaysia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
+              }
+            ]
+          }
         },
         {
           "id": "my-navy",
