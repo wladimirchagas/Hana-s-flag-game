@@ -8254,7 +8254,20 @@
           "design": "The naval ensign, restored in 1994 in the form used from 1927 to 1940.",
           "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
           "sha256": "c0a5f7f328a9722de1e7ca4ab41f7f138ce3a407d567dc7edb80ec52c63a850d",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Estonia's naval ensign, restored in 1994 in the form first used from 1927 to 1940, is the national tricolour cut into a swallow-tailed shape, defaced with the shield of the state arms set off toward the hoist. The swallowtail — a forked, two-pointed fly end — is a traditional naval flag shape distinguishing the ensign from the plain rectangular national flag flown ashore, restored alongside the country's independence after the Soviet occupation ended.",
+            "sources": [
+              {
+                "title": "Flags of the World — Estonia: Flags for Use at Sea",
+                "url": "https://www.crwflags.com/fotw/flags/ee~.html"
+              },
+              {
+                "title": "Wikipedia — Swallowtail (flag)",
+                "url": "https://en.wikipedia.org/wiki/Swallowtail_(flag)"
+              }
+            ]
+          }
         },
         {
           "id": "ee-arms",
@@ -24526,7 +24539,20 @@
           "design": "A dark blue field with the naval forces' emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
           "sha256": "6cd7f5bd9d5b5cf95e4a0502b748cf4fb9675495d66b948b3c43896c02d67495",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Romanian Naval Forces is dark blue bearing the service's own coat of arms at its centre. Dark blue has marked the Romanian navy since 1861, when it was introduced into the uniforms of the country's first river flotilla, and has remained the service's distinguishing colour ever since, setting it apart from the colours used by the army and air force.",
+            "sources": [
+              {
+                "title": "Romanian Naval Forces — History",
+                "url": "https://www.navy.ro/despre/istoric/istoric_index_en.php"
+              },
+              {
+                "title": "Flags of the World — Romania: Military and Naval Colors Since 1989",
+                "url": "https://www.crwflags.com/fotw/flags/ro-mil.html"
+              }
+            ]
+          }
         },
         {
           "id": "ro-air-force",
@@ -24716,7 +24742,20 @@
           "design": "The royal standard of the Kingdom of Serbia.",
           "source": "https://en.wikipedia.org/wiki/List_of_Serbian_flags",
           "sha256": "dc6912b79db16d4d45d916c432becad5d7c7e654cf33d0b3dbd8e3da07006067",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The royal standard of the Kingdom of Serbia, flown from 1882 — when Milan I was proclaimed the country's first king — until the kingdom's end in 1918, bore the greater national arms: a white double-headed eagle beneath a royal crown, its breast charged with a smaller shield of arms, above two golden fleurs-de-lis. The double-headed eagle drew on the Byzantine imperial tradition long associated with Serbian and other Balkan Orthodox monarchies, marking the standard as belonging specifically to the sovereign rather than the state at large.",
+            "sources": [
+              {
+                "title": "Flags of the World — Kingdom of Serbia (1882-1918)",
+                "url": "https://www.crwflags.com/fotw/flags/rs_k.html"
+              },
+              {
+                "title": "Wikipedia — Kingdom of Serbia",
+                "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+              }
+            ]
+          }
         },
         {
           "id": "rs-civil",
