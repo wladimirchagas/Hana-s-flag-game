@@ -3651,6 +3651,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Botswana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana" },
     ],
   },
+  "by-1991": {
+    description: "The white-red-white flag was designed in 1917 by the engineer Klaudziy Duzh-Dushewski, drawing its colours from traditional Belarusian folk costume and from military banners of the Grand Duchy of Lithuania, whose territory once included modern Belarus. It became the flag of the short-lived Belarusian Democratic Republic in 1918, was flown by Belarusian partisans and émigré organisations between the wars, and was restored as the flag of independent Belarus in 1991 before a 1995 referendum replaced it with a Soviet-derived design.",
+    sources: [
+      { title: "The white-red-white flag of Belarus — Rada of the Belarusian Democratic Republic", url: "https://www.radabnr.org/en/the-white-red-white-flag-of-belarus/" },
+    ],
+  },
+  "by-ssr": {
+    description: "The Byelorussian SSR's flag paired a red band — read as the bloodshed and sacrifice of Belarusian history, and as the struggle for freedom — with a green band for the republic's forests and agricultural heritage, the gold hammer, sickle and star marking Soviet rule. Along the hoist ran the vyshyvanka, a white-on-red ornamental pattern drawn from traditional Belarusian embroidery designed by the artisan Matrona Markevich in 1917, which the modern Belarusian flag still carries.",
+    sources: [
+      { title: "Flag of the Byelorussian Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Byelorussian_Soviet_Socialist_Republic" },
+    ],
+  },
   "by-russian-empire": {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
     sources: [
@@ -3798,6 +3810,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The maple leaf is Canada's own national symbol, adopted by French Canadians along the Saint Lawrence River as early as the 1700s and formally centred on the national flag in 1965; the flag's own eleven-pointed leaf is stylised rather than any single maple species, standing for the many maple trees native to the country.",
     sources: [
       { title: "Maple leaf — Wikipedia", url: "https://en.wikipedia.org/wiki/Maple_leaf" },
+    ],
+  },
+  "cd-zaire": {
+    description: "Zaire's flag, introduced by President Mobutu Sese Seko in 1971 as part of his \"authenticité\" campaign to strip away colonial-era symbols and reassert African identity, showed a yellow disc bearing the ruling party's emblem — an arm holding a flaming red torch — on green. Green stood for hope, the golden disc for the country's natural wealth, and the red flame for the blood of those who died for the revolution.",
+    sources: [
+      { title: "Flag Review: Zaire (1971-1997)", url: "http://flag-review.blogspot.com/2013/10/zaire-1971-1997.html" },
+    ],
+  },
+  "cd-colonial": {
+    description: "The Congo Free State's flag was blue with a single gold star, a design its ruler King Leopold II of Belgium drew from the flag of the old Kingdom of Kongo. Leopold presented the star as a light of civilisation and Christianity for what colonial Europe called the \"Dark Continent\" — while in practice his personal rule over the territory inflicted forced labour, mutilation and mass death on the Congolese population, among the worst atrocities of the colonial era.",
+    sources: [
+      { title: "Congo: Pre-independence flags (1877–1960) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/cd_prind.html" },
     ],
   },
   "cd-president": {
