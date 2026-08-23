@@ -2814,6 +2814,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Angola national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Angola_national_football_team" },
     ],
   },
+  "ar-1835": {
+    description: "Under the governorship of Juan Manuel de Rosas, the Sun of May was rendered in red rather than gold, with red decorative devices added at its corners — one of many provincial and political variations the sun's design went through across the 19th century before the flag was fixed nationwide in 1860.",
+    sources: [
+      { title: "Flag of Argentina — Britannica", url: "https://www.britannica.com/topic/flag-of-Argentina" },
+    ],
+  },
+  "ar-1818": {
+    description: "On 25 February 1818, Congress added the golden Sun of May to the centre of the celeste-white-celeste flag first raised by General Manuel Belgrano in 1812 — a design credited to Juan de Dios Rivera Túpac Amaru, a descendant of Inca nobility, evoking the Inca sun god Inti and commemorating the clearing skies said to have marked the 25 May 1810 revolution in Buenos Aires. The pale-blue-and-white bands are traditionally linked to the sky and to the cockades worn by the May 1810 patriots.",
+    sources: [
+      { title: "Argentina's Flag: The Sun of May and Its Inca Origins", url: "https://simyak.com/blogs/countries/flag-of-argentina" },
+    ],
+  },
   "ar-spain": {
     description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
     sources: [
@@ -5045,6 +5057,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Ethiopia's green-yellow-red tricolour, introduced under Emperor Menelik II in 1897 shortly after Ethiopia's victory over Italy at the Battle of Adwa, was the first rectangular Ethiopian flag and is counted as the oldest tricolour flown by an independent African state. Its colours were later adopted by many other African nations at independence, in a deliberate nod to Ethiopia as a symbol of African sovereignty that had never been colonised.",
     sources: [
       { title: "Flag of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
+    ],
+  },
+  "et-1875": {
+    description: "One of several tricolour arrangements Ethiopia experimented with before Emperor Menelik II fixed the red-yellow-green order in 1897, this 1875–1881 version used purple (amethyst) alongside white, colours of Tigrayan origin that were dropped from later designs as the flag's modern red-yellow-green pattern took hold.",
+    sources: [
+      { title: "Imperial Ethiopia (until 1975) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et_e.html" },
     ],
   },
   "et-arms": {
@@ -7340,6 +7358,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Discover the Unique Color of Libya's Flag", url: "https://libyaprospect.com/unveiling-the-unique-color-of-libyas-national-flag/" },
     ],
   },
+  "ly-1969": {
+    description: "Adopted after Muammar Gaddafi's bloodless coup overthrew King Idris I on 1 September 1969, this red-white-black tricolour was the Arab Liberation Flag — shared with Egypt, Syria and Iraq — chosen to align the new republic with contemporary Arab nationalist ideals of unity, anti-colonialism and socialism. It gave way in 1972 to the Federation of Arab Republics flag when Libya joined Egypt and Syria in that short-lived union.",
+    sources: [
+      { title: "Flag of Libya — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    ],
+  },
   "ly-kingdom": {
     description: "Designed by Omar Faiek Shennib for Libya's 1951 independence, the kingdom's flag used red, black and green stripes for its three uniting provinces — Fezzan, Cyrenaica and Tripolitania respectively — with black also read as a reminder of the dark years of Italian occupation, red for the blood shed for freedom, and green for the nation's agricultural wealth. A white crescent and star at the centre marked the Islamic calendar and stood for hope after that darkness; the same design was restored as Libya's national flag in 2011.",
     sources: [
@@ -7668,6 +7692,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Chinthe — Wikipedia", url: "https://en.wikipedia.org/wiki/Chinthe" },
     ],
   },
+  "mn-1992": {
+    description: "Adopted 12 January 1992 as Mongolia's peaceful Democratic Revolution ended one-party communist rule, this flag kept the same red-blue-red bands and golden Soyombo emblem as the socialist-era flag but removed the five-pointed star that had crowned the Soyombo. Blue stands for the eternal sky central to Mongolian belief and red for the country's thriving vitality; the Soyombo itself combines fire, sun, moon, earth, water and the yin-yang symbol. The exact shade of blue was only formally standardised in 2011.",
+    sources: [
+      { title: "Flag of Mongolia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
+    ],
+  },
   "mn-general-banner": {
     description: "A dark red banner bears a sulde — a pole with the tail hair of horses tied around its top, in the form of the spirit banners nomadic Mongol warriors have carried since Genghis Khan's time. To the warrior who carried it, the streaming horsehair banner held his destiny in life and, tradition holds, his soul after death; Genghis Khan himself kept a white sulde for peace and a black one for war. The words 'General banner of the Mongolian Armed Forces' appear beside it in traditional vertical Mongolian script, tying the modern military to that same warrior heritage.",
     sources: [
@@ -7770,6 +7800,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The grey latte stone — the carved pillar on which the ancient Chamorro raised their houses — stands for the Chamorro people; the white star for the Commonwealth's union with the United States; and the mwarmwar, a garland of ylang-ylang, plumeria, peacock flower and Pacific basil, for the Carolinian people who also settled the islands. The blue field is the Pacific and the Mariana Trench.",
     sources: [
       { title: "Flag of the Northern Mariana Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
+    ],
+  },
+  "mr-1959": {
+    description: "Introduced in 1959, a year before independence, by Moktar Ould Daddah — who became Mauritania's first president — this original flag set a golden crescent and star, both symbols of Islam, Mauritania's state religion, on a plain green field. It remained unchanged until a 2017 referendum added two red bands, top and bottom, for the blood shed in the struggle for freedom from France.",
+    sources: [
+      { title: "Flag of Mauritania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
     ],
   },
   "mr-french": {
@@ -7902,6 +7938,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The red rising sun repeats the sun on Malawi's own national flag, adopted in 1964 to stand for the dawn of hope and freedom for Africa as more of the continent gained independence from colonial rule. The flames give the national team its own nickname, the Flames.",
     sources: [
       { title: "Flag of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
+    ],
+  },
+  "mx-1893": {
+    description: "Decreed by Porfirio Díaz on 30 December 1880 and in use from 1893, this redrawing of Mexico's eagle emblem — now facing forward with wings spread, gripping the serpent in its beak on the nopal cactus, semi-encircled by a laurel wreath — replaced the varied earlier renderings of the eagle with a single unified design, in keeping with Díaz's drive for order and modern national symbolism.",
+    sources: [
+      { title: "History of the flags of Mexico — Grokipedia", url: "https://grokipedia.com/page/history_of_the_flags_of_mexico" },
+    ],
+  },
+  "mx-1823": {
+    description: "Adopted by decree on 14 April 1823 after the fall of Agustín de Iturbide's short-lived empire, this republican tricolour kept the green-white-red bands and the eagle perched on a nopal cactus devouring a serpent — the Aztec foundation legend of Tenochtitlan — but removed the imperial crown from above the eagle. It flew (with an interruption during the Second Mexican Empire of 1864–1867) until 1880, when the eagle's pose was redrawn.",
+    sources: [
+      { title: "Mexico 1823–1880 or 1823–1863 and 1867–1880 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/mx_1823.html" },
     ],
   },
   "mx-1821-empire": {
@@ -8713,6 +8761,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
     ],
   },
+  "ph-1936": {
+    description: "Defined by President Manuel L. Quezon's Executive Order No. 23 of 25 March 1936, this order fixed the flag's technical specifications — the equilateral hoist triangle, 1:2 proportions, the precise angles of the three stars and the sun's eight rays — and formally removed the mythical human face that had earlier been drawn on the sun. The exact colour shades were standardised only later, in 1955.",
+    sources: [
+      { title: "Flag of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Philippines" },
+    ],
+  },
   "ph-us48": {
     description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
     sources: [
@@ -9293,6 +9347,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Serbian cross — a cross with four firesteels, popularly read since the 19th century as four Cyrillic “С” letters standing for the national motto “Само слога Србина спасава” (“Only unity saves the Serbs”) — is Serbia's own national heraldic symbol. It derives from the Byzantine emblem of the Palaiologos dynasty, adopted after Michael VIII Palaiologos restored the Byzantine Empire in 1261, and was in Serbian use by the reign of Despot Stefan Lazarević around 1397.",
     sources: [
       { title: "Serbian cross — Wikipedia", url: "https://en.wikipedia.org/wiki/Serbian_cross" },
+    ],
+  },
+  "ru-1991": {
+    description: "Adopted 21 August 1991, months before the Soviet Union's formal dissolution, this flag restored the white-azure-red tricolour flown by Imperial Russia before 1917 — chosen as a symbol of national revival and a break from communist rule. This first version used 1:2 proportions and a lighter azure middle stripe; a December 1993 decree by President Boris Yeltsin changed the proportions to 2:3 and the shades to plain blue and red, fixing the flag flown today.",
+    sources: [
+      { title: "Flag of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Russia" },
     ],
   },
   "ru-ussr": {
