@@ -3857,6 +3857,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba" },
     ],
   },
+  "cu-passport": {
+    description: "Cuba's passport bears the national coat of arms, adopted 24 April 1906: a golden key set across a blue sea between two coastal cliffs, representing Cuba's position between Florida and the Yucatán Peninsula as \"the key to the Gulf of Mexico\". The shield sits before a bundle of rods crossed with red rope, symbolising the union of all Cubans, crowned by a red Phrygian cap bearing a white star — the same liberty symbol used across Latin American independence movements — and flanked by an oak branch and a royal palm, the characteristic Cuban tree read as an emblem of the Cuban people's upright, unbending character.",
+    sources: [
+      { title: "Coat of arms of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba" },
+    ],
+  },
   "cu-football-crest": {
     description: "The blue stripes and the white star both repeat Cuba's own national flag, first raised in 1849 and adopted at independence in 1902: the blue stripes originally stood for the three departments Cuba was then divided into, and the white star — the “Lone Star” — for the country's own, singular path to independence.",
     sources: [
@@ -4072,6 +4078,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "do-arms": {
     description: "At the centre, on an open Bible showing the Gospel of John (8:31–32, “the truth shall make you free”) beneath a small golden cross, stands the flag of the republic — the Dominican Republic is the only country to carry a Bible on its arms. Six flags on lances fan out behind, framed by a branch of laurel for glory and a branch of palm for peace. The ribbon above reads Dios, Patria, Libertad — “God, Homeland, Liberty.”",
+    sources: [
+      { title: "Coat of arms of the Dominican Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Dominican_Republic" },
+    ],
+  },
+  "do-passport": {
+    description: "The Dominican Republic's passport bears the national coat of arms, adopted 6 November 1844: a Bible opened to John 8:31–32 (\"the truth shall make you free\"), topped with a small gold cross, symbolising faith, truth and freedom, at the centre of a shield in the flag's own blue, red and white. Laurel and palm branches frame the shield for immortality and liberty, bound by a ribbon reading the national motto \"Dios, Patria, Libertad\" — \"God, Homeland, Liberty\".",
     sources: [
       { title: "Coat of arms of the Dominican Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Dominican_Republic" },
     ],
@@ -4952,6 +4964,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ht-arms": {
     description: "On a green lawn a royal palm topped with the red liberty cap of freedom rises among the trophies of the war of independence — cannons, drums, bugles, cannonballs and anchors — and six national flags on their staffs. The scroll reads L'Union Fait La Force — “Unity Makes Strength.” The arms record the victory of 1804, when Haiti became the first independent Black republic.",
+    sources: [
+      { title: "Coat of arms of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
+    ],
+  },
+  "ht-passport": {
+    description: "Haiti's passport bears the national coat of arms, in its current form since 1986: a royal palm tree at the centre, symbolising the independence Haiti won as the first nation founded by a successful slave revolt, topped with a red Phrygian cap — the liberty cap that traces to that same revolutionary origin — and flanked by a trophy of weapons. Below runs the national motto, \"L'Union Fait La Force\" — \"In Union There Is Strength\".",
     sources: [
       { title: "Coat of arms of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
     ],
