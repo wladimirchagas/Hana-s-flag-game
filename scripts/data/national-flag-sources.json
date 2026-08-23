@@ -923,7 +923,16 @@
           "design": "The republican flag of Portugal, flown over Angola until independence in 1975.",
           "source": "https://en.wikipedia.org/wiki/List_of_Angolan_flags",
           "sha256": "211074edc5a100b857e52521993ba68929bad8e67fe78de47c06705b1a86c3ba",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+            "sources": [
+              {
+                "title": "Meaning of the Portuguese Flag — Portugal.com",
+                "url": "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "ao-portugal-1834",
@@ -3233,7 +3242,16 @@
           "design": "The flag of Belgium, which administered the territory as the League of Nations mandate, then UN trust territory, of Ruanda-Urundi.",
           "source": "https://en.wikipedia.org/wiki/Ruanda-Urundi",
           "sha256": "b3642c9ad66f6f5ddbfe6e9eb32a06b4aeb0e9801e45ad90d5ef70a86eafa05e",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Belgium's black-yellow-red tricolour is drawn from the heraldry of the Duchy of Brabant — a yellow lion with red claws and tongue on a black shield. The black recalls the shield's field, yellow the fertile land and the values of liberty and justice, and red the lion's claws and the courage and sacrifice of the Belgian people; the medieval Brabant tricolour evolved into today's flag over the following centuries.",
+            "sources": [
+              {
+                "title": "Why is the Belgium flag black yellow and red?",
+                "url": "https://www.colorwithleo.com/why-is-the-belgium-flag-black-yellow-and-red/"
+              }
+            ]
+          }
         },
         {
           "id": "bi-german",
@@ -10497,7 +10515,16 @@
           "design": "The flag of the United States, which administered the islands as the UN Trust Territory of the Pacific Islands until 1986.",
           "source": "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands",
           "sha256": "48f0d3e4a7bf2d5c0c8d09cd975696acb2f3af601aaca80c537933ad9ec166ec",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Stars and Stripes carries thirteen horizontal red and white stripes for the original thirteen colonies that declared independence, and a star for every current state — fifty since 1960 — in the blue canton. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+            "sources": [
+              {
+                "title": "Flag of the United States — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_United_States"
+              }
+            ]
+          }
         },
         {
           "id": "fm-japan",
@@ -10907,7 +10934,16 @@
           "design": "St George's cross quartered with St Andrew's cross and an Irish harp.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "ef3a62b3a31f3c390bf68e7f8461d5dd5ba8c6c1040904ee7423afc6b0cd072f",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Commonwealth's naval flag combined the red Cross of St George for England with a gold harp for Ireland on a red field, asserting the republic's authority over both nations after the 1649 execution of Charles I; Scotland's white saltire, a reminder of monarchy, was dropped. A saltire returned to the design once Scotland was formally united with the Commonwealth, restoring a symbol for all three kingdoms under Cromwell's republic.",
+            "sources": [
+              {
+                "title": "United Kingdom: Flags of the Interregnum, 1649-1660 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/gb-inter.html"
+              }
+            ]
+          }
         },
         {
           "id": "gb-commonwealth-1649",
@@ -10920,7 +10956,16 @@
           "design": "St George's cross joined with an Irish harp, adopted after the execution of Charles I.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "92f3d9291b82e38bcc600f22b77758260f1e5f755e6a11e7b4e1a57737ad1ebb",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Commonwealth's naval flag combined the red Cross of St George for England with a gold harp for Ireland on a red field, asserting the republic's authority over both nations after the 1649 execution of Charles I; Scotland's white saltire, a reminder of monarchy, was dropped. A saltire returned to the design once Scotland was formally united with the Commonwealth, restoring a symbol for all three kingdoms under Cromwell's republic.",
+            "sources": [
+              {
+                "title": "United Kingdom: Flags of the Interregnum, 1649-1660 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/gb-inter.html"
+              }
+            ]
+          }
         },
         {
           "id": "gb-army",
@@ -14030,7 +14075,16 @@
           "design": "The flag of the Netherlands, flown over the Netherlands East Indies until 1945.",
           "source": "https://en.wikipedia.org/wiki/Dutch_East_Indies",
           "sha256": "9c2a624a9ca5a82940d8902a7b818230d7bc2efde991837d6f78bc78c1b27110",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Dutch tricolour began as an orange-white-blue banner, the livery colours of William of Orange, leader of the Dutch revolt against Spain. Orange gradually gave way to red between roughly 1630 and 1660, marking the Republic's growing distance from the House of Orange, and red-white-blue became the sole official flag in 1795 when republican Patriots proscribed the old Prince's Flag; the colours were formally fixed by royal decree in 1937.",
+            "sources": [
+              {
+                "title": "Flag of the Netherlands — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-Netherlands"
+              }
+            ]
+          }
         },
         {
           "id": "id-football-crest",
@@ -14790,7 +14844,16 @@
           "design": "Red and white stripes with the Union Flag in the canton, flown by the company that ruled much of India until the Crown took over in 1858.",
           "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
           "sha256": "54b0596d4ea2979b2a45c5c74e0f9e5f35cd3aa2c050b13cb24fcda50d1efdea",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The East India Company's ensign combined alternating red and white horizontal stripes — usually nine to thirteen — with the Union Flag in the canton, the canton itself changing over time from the Cross of St George to the full Union Jack as Great Britain's own flag evolved. Its striped design, adopted decades before the United States existed, bears a famous resemblance to the American Stars and Stripes.",
+            "sources": [
+              {
+                "title": "The Striped Flag of the East India Company — Flags of the World",
+                "url": "https://www.fotw.info/flags/gb-eic2.html"
+              }
+            ]
+          }
         },
         {
           "id": "in-arms",
@@ -15349,7 +15412,16 @@
           "sovereign": "Denmark",
           "reuse": "flags/dk.svg",
           "design": "The Dannebrog, flown over Iceland from the collapse of the Kalmar Union until home rule.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags",
+          "meaning": {
+            "description": "The Dannebrog — a white Scandinavian cross, offset toward the hoist, on a red field — is Denmark's flag and, by a legend dating it to a battle near Tallinn in 1219, one of the world's oldest continuously used flag designs, though its first confirmed use dates to the 14th century. The white cross stands for Christianity and the red field for the Danish people; its off-centre cross design became the template every other Nordic country's flag later followed.",
+            "sources": [
+              {
+                "title": "800 years of Dannebrog — denmark.dk",
+                "url": "https://denmark.dk/people-and-culture/dannebrog-800-years/"
+              }
+            ]
+          }
         },
         {
           "id": "is-kalmar",
@@ -15519,7 +15591,16 @@
           "design": "The green-white-red tricolour charged with the coat of arms of the House of Savoy — a white cross on red within a blue border. Flown by the Kingdom of Italy from unification in 1861 until the 1946 referendum made Italy a republic and left the plain tricolour.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Italy",
           "sha256": "ca49da45ef1110dff1148e2c21cc0c6b9667a3e07367a9b3940d71228dfae391",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "The Kingdom of Italy's flag was the green-white-red tricolour of Italian unification, charged with the coat of arms of the ruling House of Savoy — a white cross on a red shield within a blue border. Flown from unification in 1861, the arms were dropped after the 1946 referendum ended the monarchy, leaving the plain tricolour still used today.",
+            "sources": [
+              {
+                "title": "Flag of Italy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Italy"
+              }
+            ]
+          }
         },
         {
           "id": "it-civil-ensign",
@@ -17271,7 +17352,16 @@
           "design": "The Taegukgi of the Korean Empire (and the preceding Joseon kingdom), the last flag of an independent Korean state before Japan annexed the peninsula in 1910.",
           "source": "https://en.wikipedia.org/wiki/Korean_Empire",
           "sha256": "ccd1c71a03df3441bef4edb1abcce22a41806bce674c0cde937efec1b5a83ccd",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Taegukgi was first devised in the early 1880s and formally adopted in 1883, flying over the Korean Empire until Japan's 1910 annexation. Its central taegeuk circle, split into red and blue, represents the harmony of yin and yang, the complementary forces from which all things arise; the four black trigrams at its corners are drawn from the I Ching and stand for sky, earth, water and fire.",
+            "sources": [
+              {
+                "title": "The creation of a Korean national flag, 1880s–1910s — Smarthistory",
+                "url": "https://smarthistory.org/korean-national-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "kp-arms",
@@ -17606,7 +17696,16 @@
           "design": "The Taegukgi of the Korean Empire (and the preceding Joseon kingdom), the last flag of an independent Korean state before Japan annexed the peninsula in 1910.",
           "source": "https://en.wikipedia.org/wiki/Korean_Empire",
           "sha256": "ccd1c71a03df3441bef4edb1abcce22a41806bce674c0cde937efec1b5a83ccd",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Taegukgi was first devised in the early 1880s and formally adopted in 1883, flying over the Korean Empire until Japan's 1910 annexation. Its central taegeuk circle, split into red and blue, represents the harmony of yin and yang, the complementary forces from which all things arise; the four black trigrams at its corners are drawn from the I Ching and stand for sky, earth, water and fire.",
+            "sources": [
+              {
+                "title": "The creation of a Korean national flag, 1880s–1910s — Smarthistory",
+                "url": "https://smarthistory.org/korean-national-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "kr-football-crest",
@@ -19782,7 +19881,16 @@
           "design": "The flag of the Kingdom of Italy, flown over Italian Libya from 1911 until the Italian defeat in 1943; Libya became independent in 1951.",
           "source": "https://en.wikipedia.org/wiki/Italian_Libya",
           "sha256": "ca49da45ef1110dff1148e2c21cc0c6b9667a3e07367a9b3940d71228dfae391",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Kingdom of Italy's flag was the green-white-red tricolour of Italian unification, charged with the coat of arms of the ruling House of Savoy — a white cross on a red shield within a blue border. Flown from unification in 1861, the arms were dropped after the 1946 referendum ended the monarchy, leaving the plain tricolour still used today.",
+            "sources": [
+              {
+                "title": "Flag of Italy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Italy"
+              }
+            ]
+          }
         },
         {
           "id": "ly-football-crest",
@@ -20496,7 +20604,16 @@
           "design": "The flag of the United States, which administered the islands as the UN Trust Territory of the Pacific Islands until 1986.",
           "source": "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands",
           "sha256": "48f0d3e4a7bf2d5c0c8d09cd975696acb2f3af601aaca80c537933ad9ec166ec",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Stars and Stripes carries thirteen horizontal red and white stripes for the original thirteen colonies that declared independence, and a star for every current state — fifty since 1960 — in the blue canton. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+            "sources": [
+              {
+                "title": "Flag of the United States — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_United_States"
+              }
+            ]
+          }
         },
         {
           "id": "mh-japan",
@@ -20743,7 +20860,16 @@
           "design": "The green-yellow-red tricolour with a black kanaga figure, flown by the short-lived federation and kept by Mali until 1961.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malian_flags",
           "sha256": "a00ae7677a6094750ac26b9bacc3fc93abb199a96febbe46431f05a19e260902",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Mali Federation's flag kept the green-yellow-red tricolour but replaced the black star with a black kanaga figure — a stylised human form with arms raised skyward, drawn from the art of Mali's Dogon people and adopted by the Négritude movement as a symbol of strength and African identity. When Senegal and Mali split and Mali objected to a human figure on religious grounds, the kanaga was removed in 1961, leaving the plain tricolour Mali flies today.",
+            "sources": [
+              {
+                "title": "Flag of Mali — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Mali"
+              }
+            ]
+          }
         },
         {
           "id": "ml-french-sudan",
@@ -22882,7 +23008,16 @@
           "design": "The republican flag of Portugal, flown over Mozambique until independence.",
           "source": "https://en.wikipedia.org/wiki/List_of_Mozambican_flags",
           "sha256": "211074edc5a100b857e52521993ba68929bad8e67fe78de47c06705b1a86c3ba",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+            "sources": [
+              {
+                "title": "Meaning of the Portuguese Flag — Portugal.com",
+                "url": "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "mz-portugal-1667",
@@ -24366,7 +24501,16 @@
           "design": "The flag of Australia, which administered Nauru under a League of Nations mandate and then a UN trusteeship (jointly with Britain and New Zealand) until 1968.",
           "source": "https://en.wikipedia.org/wiki/Nauru",
           "sha256": "8ccf95cf3507e88d10aa57a1e3b3853d72933c6784e6f67fe3cd3bf12ea68a4d",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Australia's flag carries the Union Jack in the canton to acknowledge the history of British settlement, a seven-pointed Commonwealth Star below it — six points for the original states, the seventh for the territories — and the five stars of the Southern Cross, marking Australia's position in the southern sky and a constellation long used by navigators across the region.",
+            "sources": [
+              {
+                "title": "The Australian National Flag — Australian Government",
+                "url": "https://www.pmc.gov.au/resources/australian-symbols-booklet/national-symbols/australian-national-flag"
+              }
+            ]
+          }
         },
         {
           "id": "nr-german",
@@ -25437,7 +25581,16 @@
           "design": "The flag of Australia, which administered the Territory of Papua and New Guinea until independence.",
           "source": "https://en.wikipedia.org/wiki/Territory_of_Papua_and_New_Guinea",
           "sha256": "8ccf95cf3507e88d10aa57a1e3b3853d72933c6784e6f67fe3cd3bf12ea68a4d",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Australia's flag carries the Union Jack in the canton to acknowledge the history of British settlement, a seven-pointed Commonwealth Star below it — six points for the original states, the seventh for the territories — and the five stars of the Southern Cross, marking Australia's position in the southern sky and a constellation long used by navigators across the region.",
+            "sources": [
+              {
+                "title": "The Australian National Flag — Australian Government",
+                "url": "https://www.pmc.gov.au/resources/australian-symbols-booklet/national-symbols/australian-national-flag"
+              }
+            ]
+          }
         },
         {
           "id": "pg-german",
@@ -28059,7 +28212,16 @@
           "design": "The flag of Belgium, which administered the territory as the League of Nations mandate, then UN trust territory, of Ruanda-Urundi.",
           "source": "https://en.wikipedia.org/wiki/Ruanda-Urundi",
           "sha256": "b3642c9ad66f6f5ddbfe6e9eb32a06b4aeb0e9801e45ad90d5ef70a86eafa05e",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Belgium's black-yellow-red tricolour is drawn from the heraldry of the Duchy of Brabant — a yellow lion with red claws and tongue on a black shield. The black recalls the shield's field, yellow the fertile land and the values of liberty and justice, and red the lion's claws and the courage and sacrifice of the Belgian people; the medieval Brabant tricolour evolved into today's flag over the following centuries.",
+            "sources": [
+              {
+                "title": "Why is the Belgium flag black yellow and red?",
+                "url": "https://www.colorwithleo.com/why-is-the-belgium-flag-black-yellow-and-red/"
+              }
+            ]
+          }
         },
         {
           "id": "rw-german",
@@ -29122,7 +29284,16 @@
           "design": "The company's striped ensign, flown from Raffles's founding of the settlement in 1819 until the Crown took it over.",
           "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
           "sha256": "54b0596d4ea2979b2a45c5c74e0f9e5f35cd3aa2c050b13cb24fcda50d1efdea",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The East India Company's ensign combined alternating red and white horizontal stripes — usually nine to thirteen — with the Union Flag in the canton, the canton itself changing over time from the Cross of St George to the full Union Jack as Great Britain's own flag evolved. Its striped design, adopted decades before the United States existed, bears a famous resemblance to the American Stars and Stripes.",
+            "sources": [
+              {
+                "title": "The Striped Flag of the East India Company — Flags of the World",
+                "url": "https://www.fotw.info/flags/gb-eic2.html"
+              }
+            ]
+          }
         },
         {
           "id": "sg-johor",
@@ -29834,7 +30005,16 @@
           "design": "The flag of the Mali Federation, the short-lived union of Senegal and the Sudanese Republic that Senegal belonged to at independence — the same tricolour bearing a black kanaga figure in place of the star.",
           "source": "https://en.wikipedia.org/wiki/Mali_Federation",
           "sha256": "a00ae7677a6094750ac26b9bacc3fc93abb199a96febbe46431f05a19e260902",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Mali Federation's flag kept the green-yellow-red tricolour but replaced the black star with a black kanaga figure — a stylised human form with arms raised skyward, drawn from the art of Mali's Dogon people and adopted by the Négritude movement as a symbol of strength and African identity. When Senegal and Mali split and Mali objected to a human figure on religious grounds, the kanaga was removed in 1961, leaving the plain tricolour Mali flies today.",
+            "sources": [
+              {
+                "title": "Flag of Mali — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Mali"
+              }
+            ]
+          }
         },
         {
           "id": "sn-french",
@@ -30090,7 +30270,16 @@
           "sovereign": "the Netherlands",
           "reuse": "flags/nl.svg",
           "design": "The Dutch tricolour, flown over the colony of Surinam from 1816 until independence.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Surinamese_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Surinamese_flags",
+          "meaning": {
+            "description": "The Dutch tricolour began as an orange-white-blue banner, the livery colours of William of Orange, leader of the Dutch revolt against Spain. Orange gradually gave way to red between roughly 1630 and 1660, marking the Republic's growing distance from the House of Orange, and red-white-blue became the sole official flag in 1795 when republican Patriots proscribed the old Prince's Flag; the colours were formally fixed by royal decree in 1937.",
+            "sources": [
+              {
+                "title": "Flag of the Netherlands — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-the-Netherlands"
+              }
+            ]
+          }
         },
         {
           "id": "sr-president",
@@ -35109,7 +35298,16 @@
           "sovereign": "Denmark",
           "reuse": "flags/dk.svg",
           "design": "The Dannebrog, flown over the Danish West Indies from the settlement of St Thomas in 1672 until the islands were sold to the United States in 1917.",
-          "source": "https://en.wikipedia.org/wiki/Danish_West_Indies"
+          "source": "https://en.wikipedia.org/wiki/Danish_West_Indies",
+          "meaning": {
+            "description": "The Dannebrog — a white Scandinavian cross, offset toward the hoist, on a red field — is Denmark's flag and, by a legend dating it to a battle near Tallinn in 1219, one of the world's oldest continuously used flag designs, though its first confirmed use dates to the 14th century. The white cross stands for Christianity and the red field for the Danish people; its off-centre cross design became the template every other Nordic country's flag later followed.",
+            "sources": [
+              {
+                "title": "800 years of Dannebrog — denmark.dk",
+                "url": "https://denmark.dk/people-and-culture/dannebrog-800-years/"
+              }
+            ]
+          }
         },
         {
           "id": "vi-seal",
