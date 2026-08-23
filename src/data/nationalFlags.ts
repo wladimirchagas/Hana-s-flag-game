@@ -3852,6 +3852,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Flag of Estonia", url: "https://en.wikipedia.org/wiki/Flag_of_Estonia" },
     ],
   },
+  "ee-naval-ensign": {
+    description: "Estonia's naval ensign, restored in 1994 in the form first used from 1927 to 1940, is the national tricolour cut into a swallow-tailed shape, defaced with the shield of the state arms set off toward the hoist. The swallowtail — a forked, two-pointed fly end — is a traditional naval flag shape distinguishing the ensign from the plain rectangular national flag flown ashore, restored alongside the country's independence after the Soviet occupation ended.",
+    sources: [
+      { title: "Flags of the World — Estonia: Flags for Use at Sea", url: "https://www.crwflags.com/fotw/flags/ee~.html" },
+      { title: "Wikipedia — Swallowtail (flag)", url: "https://en.wikipedia.org/wiki/Swallowtail_(flag)" },
+    ],
+  },
   "ee-naval-jack": {
     description: "A white field bearing a black saltire beneath a blue cross — a design that echoes the British Union Flag, reflecting British naval influence on the young Estonian navy during the 1918–1920 War of Independence; the blue draws on the national tricolour's own colour, read as standing for the sky, lakes and sea and for Estonians' devotion and faith in their country.",
     sources: [
@@ -6431,6 +6438,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flags of Romanian Army Staffs — Flags of the World", url: "https://www.fotw.info/flags/ro-staff.html" },
     ],
   },
+  "ro-naval-forces": {
+    description: "The flag of the Romanian Naval Forces is dark blue bearing the service's own coat of arms at its centre. Dark blue has marked the Romanian navy since 1861, when it was introduced into the uniforms of the country's first river flotilla, and has remained the service's distinguishing colour ever since, setting it apart from the colours used by the army and air force.",
+    sources: [
+      { title: "Romanian Naval Forces — History", url: "https://www.navy.ro/despre/istoric/istoric_index_en.php" },
+      { title: "Flags of the World — Romania: Military and Naval Colors Since 1989", url: "https://www.crwflags.com/fotw/flags/ro-mil.html" },
+    ],
+  },
   "ro-air-force": {
     description: "The Air Force's own emblem bears the same gold eagle clutching lightning bolts in its claws — a mark of martial power adapted for the service that commands the skies — shown here in flight among clouds and stars, flanked by two stars and resting on the same laurel-and-oak branches for victory and endurance as the Army's own emblem.",
     sources: [
@@ -6473,6 +6487,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A crimson field bears Serbia's greater coat of arms: a silver double-headed eagle — inherited from Byzantium through the Nemanjić dynasty's marriages with the Palaiologan emperors, its two heads facing east and west for Serbia's ties to Orthodox Christianity and to wider European civilisation — bearing on its breast a small shield with the 'Serbian Cross', a cross flanked by four firesteels (ocila) descended from a Byzantine imperial motto adopted into Serbian use in the 14th century, flanked at the base by two golden fleurs-de-lis.",
     sources: [
       { title: "Coat of arms of Serbia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Serbia" },
+    ],
+  },
+  "rs-king": {
+    description: "The royal standard of the Kingdom of Serbia, flown from 1882 — when Milan I was proclaimed the country's first king — until the kingdom's end in 1918, bore the greater national arms: a white double-headed eagle beneath a royal crown, its breast charged with a smaller shield of arms, above two golden fleurs-de-lis. The double-headed eagle drew on the Byzantine imperial tradition long associated with Serbian and other Balkan Orthodox monarchies, marking the standard as belonging specifically to the sovereign rather than the state at large.",
+    sources: [
+      { title: "Flags of the World — Kingdom of Serbia (1882-1918)", url: "https://www.crwflags.com/fotw/flags/rs_k.html" },
+      { title: "Wikipedia — Kingdom of Serbia", url: "https://en.wikipedia.org/wiki/Kingdom_of_Serbia" },
     ],
   },
   "rs-civil": {
