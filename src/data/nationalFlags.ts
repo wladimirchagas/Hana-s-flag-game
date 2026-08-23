@@ -2693,6 +2693,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Anguilla — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Anguilla" },
     ],
   },
+  "al-ottoman": {
+    description: "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+    sources: [
+      { title: "Flags of the Ottoman Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire" },
+    ],
+  },
   "al-president": {
     description: "The presidential flag keeps the national flag's black double-headed eagle on red — a device drawn from the personal seal of the 15th-century national hero Skanderbeg, its two heads read as marking Albania's position between East and West and the union of its northern Gheg and southern Tosk halves — but adds a golden border around the red field, distinguishing the flag of the head of state from the plain national flag and marking the authority of the office.",
     sources: [
@@ -2770,6 +2776,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "What is the official animal of Angola? — Geographic FAQ Hub", url: "https://www.ncesc.com/geographic-faq/what-is-the-official-animal-of-angola/" },
       { title: "Angola national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Angola_national_football_team" },
+    ],
+  },
+  "ar-spain": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
     ],
   },
   "ar-naval-jack": {
@@ -2871,6 +2883,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Union Flag superimposes the crosses of three patron saints: Saint George's red cross on white for England, Saint Andrew's white saltire on blue for Scotland, and Saint Patrick's red saltire on white for Ireland. Combined in its current form in 1801 to mark the union of Great Britain and Ireland, it represents the political union of the United Kingdom's constituent nations.",
     sources: [
       { title: "Flag of the United Kingdom — Britannica", url: "https://www.britannica.com/topic/flag-of-the-United-Kingdom" },
+    ],
+  },
+  "au-gb-1770": {
+    description: "The pre-1801 Union Flag combined the red cross of Saint George, patron saint of England, with the white saltire of Saint Andrew, patron saint of Scotland, on a blue field — first prescribed by royal proclamation in 1606 and used at sea from that year, more widely after the 1707 union of the two kingdoms. It was retired in 1801 when Saint Patrick's cross was added to mark the union with Ireland, forming today's Union Jack.",
+    sources: [
+      { title: "United Kingdom — History of the Flag — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gb-hist.html" },
     ],
   },
   "au-adf": {
@@ -3140,6 +3158,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Burkina Faso — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burkina_Faso" },
     ],
   },
+  "bg-ottoman": {
+    description: "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+    sources: [
+      { title: "Flags of the Ottoman Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire" },
+    ],
+  },
   "bg-naval": {
     description: "The ensign bears, in a red canton, the golden rampant lion of Bulgaria's national coat of arms — an emblem of royal authority and sovereignty in Bulgarian heraldry since the Second Bulgarian Empire of the 13th–14th centuries and, by the time it was placed on the navy's own ensign, a symbol of bravery and strength standing for Bulgarian statehood itself; the current design, adopted after 1990, restores the lion to the canton in place of the communist-era red star.",
     sources: [
@@ -3186,6 +3210,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The five-pointed serrated emblem repeats the five white triangles on Bahrain's own national flag, added to the flag's serrated edge in 2002 (an earlier version had 28, then 8, points) to stand for the Five Pillars of Islam.",
     sources: [
       { title: "Flag of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    ],
+  },
+  "bi-german": {
+    description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+    sources: [
+      { title: "Flag of the German Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire" },
     ],
   },
   "bi-arms": {
@@ -3281,6 +3311,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Wiphala — Wikipedia", url: "https://en.wikipedia.org/wiki/Wiphala" },
       { title: "List of Bolivian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
+    ],
+  },
+  "bo-spain-1785": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
     ],
   },
   "bo-burgundy": {
@@ -3757,6 +3793,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Cook Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
     ],
   },
+  "cl-spain": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
+    ],
+  },
   "cl-burgundy": {
     description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
     sources: [
@@ -3873,6 +3915,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Tiananmen — Wikipedia", url: "https://en.wikipedia.org/wiki/Tiananmen" },
     ],
   },
+  "co-gran-colombia": {
+    description: "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
+    sources: [
+      { title: "Flag of Gran Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Gran_Colombia" },
+    ],
+  },
+  "co-spain": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
+    ],
+  },
   "co-burgundy": {
     description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
     sources: [
@@ -3940,6 +3994,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica" },
     ],
   },
+  "cr-mexican-empire": {
+    description: "Agustín de Iturbide's imperial tricolour of green, white and red bore a crowned eagle on a nopal cactus at its centre, ringed by a laurel wreath. The colours stood for the empire's Three Guarantees — green for independence, white for the primacy of Catholicism, red for the equality and union of Mexicans — while the crown marked Iturbide's own imperial authority; it was removed when the monarchy fell and the republic adopted the eagle without it in 1823.",
+    sources: [
+      { title: "Mexico 1821-1823 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/mx_1821.html" },
+    ],
+  },
+  "cr-spain": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
+    ],
+  },
   "cr-burgundy": {
     description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
     sources: [
@@ -3962,6 +4028,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The colours are Costa Rica's national flag colours: blue for the sky and idealism, white for peace and clear thinking, and red for the warmth of the Costa Rican people and the blood shed for their freedom.",
     sources: [
       { title: "Flag of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
+    ],
+  },
+  "cu-spain": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
     ],
   },
   "cu-burgundy": {
@@ -4007,6 +4079,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
     ],
   },
+  "cv-portuguese": {
+    description: "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+    sources: [
+      { title: "Meaning of the Portuguese Flag — Portugal.com", url: "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/" },
+    ],
+  },
   "cv-arms": {
     description: "Within a blue ring bearing the country's name, a torch and a triangle stand for freedom and national unity, and a golden plumb-bob for righteousness. Three chain links at the foot stand for the unity, equality and civil rights of a democratic society. The ten gold stars around the ring are the ten islands of the archipelago — the same ten stars as on the flag.",
     sources: [
@@ -4041,6 +4119,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The ship is taken from Curaçao's coat of arms, where it represents the sailing ship of the Dutch West India Company, which founded the island's colonial trading economy.",
     sources: [
       { title: "Coat of arms of Curaçao — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao" },
+    ],
+  },
+  "cy-ottoman": {
+    description: "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+    sources: [
+      { title: "Flags of the Ottoman Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire" },
     ],
   },
   "cy-naval-jack": {
@@ -4101,6 +4185,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The silver double-tailed crowned lion is the Bohemian lion — the arms of the medieval Kingdom of Bohemia and today the senior element of the Czech Republic's own coat of arms. It dates to the 12th century, when Holy Roman Emperor Frederick I granted Duke Vladislaus II a silver lion on red to mark his valour in battle; a second tail was added later, according to legend, to commemorate King Přemysl Otakar I's help fighting the Saxons. The narrow band above is simply the blue-white-red of the national flag.",
     sources: [
       { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
+    ],
+  },
+  "de-empire": {
+    description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+    sources: [
+      { title: "Flag of the German Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire" },
     ],
   },
   "de-navy": {
@@ -4285,6 +4375,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The crescent and star repeat Algeria's own national flag, and the two gold stars, read together as “1990”, mark the year Algeria won its first Africa Cup of Nations title, hosted and won on home soil in Algiers.",
     sources: [
       { title: "1990 African Cup of Nations — Wikipedia", url: "https://en.wikipedia.org/wiki/1990_African_Cup_of_Nations" },
+    ],
+  },
+  "ec-gran-colombia": {
+    description: "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
+    sources: [
+      { title: "Flag of Gran Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Gran_Colombia" },
     ],
   },
   "ec-burgundy": {
@@ -4617,6 +4713,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Falkland Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Falkland_Islands" },
     ],
   },
+  "fm-japan": {
+    description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+    sources: [
+      { title: "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com", url: "https://www.nippon.com/en/japan-topics/g02615/" },
+    ],
+  },
   "fm-arms": {
     description: "Adopted in 1986, the seal shows a sprouted coconut adrift on a light-blue sea — the island nation's maritime heritage — beneath an arc of four white stars, one for each of the federated states: Chuuk, Kosrae, Pohnpei and Yap, exactly as on the national flag. The banner carries the motto “Peace, Unity, Liberty” and the year 1979, when the Constitution came into force. The design continues the earlier seal of the US-administered Trust Territory of the Pacific Islands.",
     sources: [
@@ -4694,6 +4796,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Union Flag layers three patron saints' crosses in the order the kingdoms joined: England's red cross of St George on white, Scotland's white saltire of St Andrew on blue (joined at the union of the crowns in 1606) and the red saltire of St Patrick for Ireland, added when the Kingdom of Ireland joined the union in 1801. St Patrick's saltire is set counterchanged — offset from the centre of the white Scottish saltire — so that neither saltire appears to take precedence over the other, which is why the flag is not symmetrical and can be flown upside down.",
     sources: [
       { title: "Union Jack — Wikipedia", url: "https://en.wikipedia.org/wiki/Union_Jack" },
+    ],
+  },
+  "gb-1707": {
+    description: "The pre-1801 Union Flag combined the red cross of Saint George, patron saint of England, with the white saltire of Saint Andrew, patron saint of Scotland, on a blue field — first prescribed by royal proclamation in 1606 and used at sea from that year, more widely after the 1707 union of the two kingdoms. It was retired in 1801 when Saint Patrick's cross was added to mark the union with Ireland, forming today's Union Jack.",
+    sources: [
+      { title: "United Kingdom — History of the Flag — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gb-hist.html" },
     ],
   },
   "gb-army": {
@@ -4978,6 +5086,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Guinea national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Guinea_national_football_team" },
     ],
   },
+  "gq-spanish": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
+    ],
+  },
   "gq-arms": {
     description: "The silver silk-cotton tree at the centre is the “God tree” (árbol de Dios), under which the first treaty between a local ruler and Spain is said to have been signed. Six six-pointed gold stars above stand for the mainland (Río Muni) and the five inhabited islands. The scroll reads Unidad, Paz, Justicia — “Unity, Peace, Justice.”",
     sources: [
@@ -5040,6 +5154,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of South Georgia and the South Sandwich Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Georgia_and_the_South_Sandwich_Islands" },
     ],
   },
+  "gt-federation": {
+    description: "The blue-white-blue flag of the Federal Republic of Central America, designed in 1823 by Manuel José Arce, uses its two blue bands to represent the Pacific Ocean and the Caribbean Sea bordering the isthmus, with the white band between them standing for the land itself and for peace. The scheme survives today in the flags of Guatemala, Honduras, El Salvador and Nicaragua, all once part of the federation.",
+    sources: [
+      { title: "Flags of Central America: Meanings, History & Evolution", url: "https://arkfoundationus.org/flags-central-america-meanings-history" },
+    ],
+  },
   "gt-spanish": {
     description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
     sources: [
@@ -5071,6 +5191,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Guam — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guam" },
     ],
   },
+  "gu-japan": {
+    description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+    sources: [
+      { title: "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com", url: "https://www.nippon.com/en/japan-topics/g02615/" },
+    ],
+  },
+  "gu-spain-1785": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
+    ],
+  },
   "gu-burgundy": {
     description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
     sources: [
@@ -5088,6 +5220,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Guam — Wikipedia", url: "https://en.wikipedia.org/wiki/Guam" },
       { title: "Latte stone — Wikipedia", url: "https://en.wikipedia.org/wiki/Latte_stone" },
+    ],
+  },
+  "gw-portuguese": {
+    description: "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+    sources: [
+      { title: "Meaning of the Portuguese Flag — Portugal.com", url: "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/" },
     ],
   },
   "gw-arms": {
@@ -5167,6 +5305,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The dragon is a longstanding symbol of power, strength and good fortune in Chinese culture, historically associated with imperial authority.",
     sources: [
       { title: "Chinese dragon — Wikipedia", url: "https://en.wikipedia.org/wiki/Chinese_dragon" },
+    ],
+  },
+  "hn-federation": {
+    description: "The blue-white-blue flag of the Federal Republic of Central America, designed in 1823 by Manuel José Arce, uses its two blue bands to represent the Pacific Ocean and the Caribbean Sea bordering the isthmus, with the white band between them standing for the land itself and for peace. The scheme survives today in the flags of Guatemala, Honduras, El Salvador and Nicaragua, all once part of the federation.",
+    sources: [
+      { title: "Flags of Central America: Meanings, History & Evolution", url: "https://arkfoundationus.org/flags-central-america-meanings-history" },
     ],
   },
   "hn-spanish": {
@@ -5978,6 +6122,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "St. Kitts and Nevis Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/St._Kitts_and_Nevis_Football_Association" },
     ],
   },
+  "kp-japan": {
+    description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+    sources: [
+      { title: "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com", url: "https://www.nippon.com/en/japan-topics/g02615/" },
+    ],
+  },
   "kp-arms": {
     description: "Adopted in 1948 and revised in 1993, the emblem shows the Sup'ung hydroelectric dam beneath a mountain — specified in 1993 as Mount Paektu, the peak tied in state ideology to the anti-Japanese revolutionary tradition — crowned by a red socialist star. The dam stands for the industrial power and self-sufficiency of the north, which produced most of Korea's electricity in 1948; the surrounding ears of rice, bound by a red ribbon carrying the state's name, stand for agriculture.",
     sources: [
@@ -5994,6 +6144,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The crest carries North Korea's national-flag symbolism: the red star and red band stand for revolutionary tradition, the white stripes for the purity and homogeneity of the Korean people, and the blue bands for sovereignty, peace and friendship.",
     sources: [
       { title: "Flag of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
+    ],
+  },
+  "kr-japan": {
+    description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+    sources: [
+      { title: "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com", url: "https://www.nippon.com/en/japan-topics/g02615/" },
     ],
   },
   "kr-army": {
@@ -6047,6 +6203,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "White Tiger (mythology) — Wikipedia", url: "https://en.wikipedia.org/wiki/White_Tiger_(mythology)" },
       { title: "Korea Football Association unveils updated emblem — Korea JoongAng Daily", url: "https://www.koreajoongangdaily.com/sports/korea-football-association-unveils-updated-emblem/10271720" },
+    ],
+  },
+  "kw-ottoman": {
+    description: "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+    sources: [
+      { title: "Flags of the Ottoman Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire" },
     ],
   },
   "kw-national-guard": {
@@ -6639,6 +6801,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Madagascar — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Madagascar" },
     ],
   },
+  "mh-japan": {
+    description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+    sources: [
+      { title: "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com", url: "https://www.nippon.com/en/japan-topics/g02615/" },
+    ],
+  },
   "mh-arms": {
     description: "On a blue field for the sea, an angel with outstretched wings stands for peace above the shield. Below are two islands with a palm tree and an outrigger canoe, and a stick chart — the traditional Marshallese navigation chart of shells and palm ribs. The motto reads Jepilpilin ke Ejukaan — “Accomplishment Through Joint Effort.”",
     sources: [
@@ -6782,6 +6950,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
     ],
   },
+  "mo-portugal": {
+    description: "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+    sources: [
+      { title: "Meaning of the Portuguese Flag — Portugal.com", url: "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/" },
+    ],
+  },
   "mo-emblem": {
     description: "The emblem repeats the flag's device on green. The white lotus is Macau's floral emblem; beneath it the Governor Nobre de Carvalho (Sai Van) Bridge is the landmark linking the Macau peninsula to Taipa, and the water below marks Macau's life as a port. The arc of five gold stars echoes China's national flag, showing Macau's tie to its sovereign state, and the green field stands for the territory's identity as a Special Administrative Region. Adopted at the 1999 handover.",
     sources: [
@@ -6804,6 +6978,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The grey latte stone represents the indigenous Chamorro people and the floral mwarmwar garland represents the Carolinian people, the territory's two main indigenous populations; the white star stands for the United States and the blue field for the Pacific Ocean.",
     sources: [
       { title: "Flag of the Northern Mariana Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
+    ],
+  },
+  "mp-japan": {
+    description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+    sources: [
+      { title: "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com", url: "https://www.nippon.com/en/japan-topics/g02615/" },
+    ],
+  },
+  "mp-germany": {
+    description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+    sources: [
+      { title: "Flag of the German Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire" },
+    ],
+  },
+  "mp-spain-1785": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
     ],
   },
   "mp-burgundy": {
@@ -6948,6 +7140,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The red rising sun repeats the sun on Malawi's own national flag, adopted in 1964 to stand for the dawn of hope and freedom for Africa as more of the continent gained independence from colonial rule. The flames give the national team its own nickname, the Flames.",
     sources: [
       { title: "Flag of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
+    ],
+  },
+  "mx-1821-empire": {
+    description: "Agustín de Iturbide's imperial tricolour of green, white and red bore a crowned eagle on a nopal cactus at its centre, ringed by a laurel wreath. The colours stood for the empire's Three Guarantees — green for independence, white for the primacy of Catholicism, red for the equality and union of Mexicans — while the crown marked Iturbide's own imperial authority; it was removed when the monarchy fell and the republic adopted the eagle without it in 1823.",
+    sources: [
+      { title: "Mexico 1821-1823 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/mx_1821.html" },
+    ],
+  },
+  "mx-spain-1785": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
     ],
   },
   "mx-burgundy": {
@@ -7100,6 +7304,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mozambique" },
     ],
   },
+  "na-german": {
+    description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+    sources: [
+      { title: "Flag of the German Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire" },
+    ],
+  },
   "na-ndf": {
     description: "Based on the Presidential Standard's design, the Namibian Defence Force flag places its own badge on a white triangle between a red triangle and a light-blue one — the same colours as the national flag: red for the heroism and determination of the Namibian people, white for peace and unity, and blue for the clear sky, the Atlantic Ocean and the country's precious water resources.",
     sources: [
@@ -7229,6 +7439,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Nigeria national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Nigeria_national_football_team" },
       { title: "Nigeria Football Federation — Wikipedia", url: "https://en.wikipedia.org/wiki/Nigeria_Football_Federation" },
+    ],
+  },
+  "ni-federal": {
+    description: "The blue-white-blue flag of the Federal Republic of Central America, designed in 1823 by Manuel José Arce, uses its two blue bands to represent the Pacific Ocean and the Caribbean Sea bordering the isthmus, with the white band between them standing for the land itself and for peace. The scheme survives today in the flags of Guatemala, Honduras, El Salvador and Nicaragua, all once part of the federation.",
+    sources: [
+      { title: "Flags of Central America: Meanings, History & Evolution", url: "https://arkfoundationus.org/flags-central-america-meanings-history" },
+    ],
+  },
+  "ni-mexican-empire": {
+    description: "Agustín de Iturbide's imperial tricolour of green, white and red bore a crowned eagle on a nopal cactus at its centre, ringed by a laurel wreath. The colours stood for the empire's Three Guarantees — green for independence, white for the primacy of Catholicism, red for the equality and union of Mexicans — while the crown marked Iturbide's own imperial authority; it was removed when the monarchy fell and the republic adopted the eagle without it in 1823.",
+    sources: [
+      { title: "Mexico 1821-1823 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/mx_1821.html" },
+    ],
+  },
+  "ni-spain": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
     ],
   },
   "ni-burgundy": {
@@ -7377,6 +7605,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Nepal — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
     ],
   },
+  "nr-german": {
+    description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+    sources: [
+      { title: "Flag of the German Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire" },
+    ],
+  },
   "nr-arms": {
     description: "A frigatebird perches over the blue ocean, and the top of the shield carries the alchemical sign for phosphorus — the phosphate rock on which the island's wealth was built. A twelve-pointed star, as on the flag, sits above, framed by palm fronds, frigatebird feathers and shark teeth. The scroll reads “God's Will First.”",
     sources: [
@@ -7482,6 +7716,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
     ],
   },
+  "pa-gran-colombia": {
+    description: "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
+    sources: [
+      { title: "Flag of Gran Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Gran_Colombia" },
+    ],
+  },
+  "pa-spain": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
+    ],
+  },
   "pa-president": {
     description: "The presidential standard bears Panama's coat of arms: a saber and rifle for the civil wars and struggle for independence from Spain and then Colombia, set against agricultural tools for the labour that built the Panama Canal (shown in the central band) and a winged wheel for transport, with a cornucopia for the nation's prosperity — read together as war giving way to peaceful labour and progress — beneath a bald eagle, included because the United States was the first country to recognise Panama's independence in 1903.",
     sources: [
@@ -7504,6 +7750,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The harpy eagle is Panama's own national bird and crowns the country's national coat of arms, holding a scroll with the national motto in its beak; on the full coat of arms an arc of ten stars above it stands for Panama's ten provinces.",
     sources: [
       { title: "Coat of arms of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
+    ],
+  },
+  "pe-spain": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
     ],
   },
   "pe-burgundy": {
@@ -7582,6 +7834,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of French Polynesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
     ],
   },
+  "pg-german": {
+    description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+    sources: [
+      { title: "Flag of the German Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire" },
+    ],
+  },
   "pg-arms": {
     description: "A Raggiana bird of paradise — the national bird, also on the flag — perches above a spear and a kundu drum set crosswise, the traditional weapon and the traditional hand-drum of the country's peoples. The bird stands for the emerging nation, the drum and spear for its cultures.",
     sources: [
@@ -7598,6 +7856,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The bird of paradise and the stars are taken from Papua New Guinea's national flag: the bird is a symbol of the country's tribal culture, shown in a soaring pose representing the nation's emergence, and the stars form the Southern Cross, marking the country's place in the southern hemisphere.",
     sources: [
       { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+    ],
+  },
+  "ph-spain": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
     ],
   },
   "ph-burgundy": {
@@ -7820,6 +8084,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Puerto Rico — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico" },
     ],
   },
+  "pr-spain-1785": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
+    ],
+  },
   "pr-burgundy": {
     description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
     sources: [
@@ -7918,6 +8188,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
     ],
   },
+  "py-spain-1785": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
+    ],
+  },
   "py-burgundy": {
     description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
     sources: [
@@ -7955,6 +8231,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold star is the Estrella de Mayo (\"May Star\") of Paraguay's own coat of arms, commemorating the country's May 1811 independence; the red and blue repeat the outer bands of the national flag.",
     sources: [
       { title: "Coat of arms of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Paraguay" },
+    ],
+  },
+  "qa-ottoman": {
+    description: "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+    sources: [
+      { title: "Flags of the Ottoman Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire" },
     ],
   },
   "qa-air-force": {
@@ -8141,6 +8423,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The double-headed eagle is Russia's own state coat of arms, adopted from Byzantine imperial tradition: after the fall of Constantinople in 1453, the Grand Dukes of Muscovy took up the emblem to assert their claim as successors to Roman imperial power, and Ivan III's seal first recorded it in 1472. The crowns are read as standing for the unity and sovereignty of Russia as a whole together with its constituent republics and regions.",
     sources: [
       { title: "Coat of arms of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
+    ],
+  },
+  "rw-german": {
+    description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+    sources: [
+      { title: "Flag of the German Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire" },
     ],
   },
   "rw-president": {
@@ -8590,6 +8878,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of South Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
     ],
   },
+  "st-portuguese": {
+    description: "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+    sources: [
+      { title: "Meaning of the Portuguese Flag — Portugal.com", url: "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/" },
+    ],
+  },
   "st-arms": {
     description: "A falcon and a grey parrot — birds of the islands — support a shield shaped like a cocoa pod, the crop on which the islands' economy was built, with a palm tree at its centre. A blue star crowns the arms. The ribbon reads Unidade, Disciplina, Trabalho — “Unity, Discipline, Work.”",
     sources: [
@@ -8606,6 +8900,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The two hawks and the black star are taken from São Tomé and Príncipe's coat of arms and flag, where the star (one of two on the flag) stands for African independence and the birds are native falcons representing the country's two main islands.",
     sources: [
       { title: "Flag of São Tomé and Príncipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
+    ],
+  },
+  "sv-spain": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
     ],
   },
   "sv-burgundy": {
@@ -8736,6 +9036,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of France — Britannica", url: "https://www.britannica.com/topic/flag-of-France" },
     ],
   },
+  "tg-german": {
+    description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+    sources: [
+      { title: "Flag of the German Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire" },
+    ],
+  },
   "tg-arms": {
     description: "Two red lions rear up on either side, for the courage of the Togolese people, each holding a bow and arrow. Between them a golden shield carries the letters RT, for République Togolaise, and two national flags fly above. The motto reads Travail, Liberté, Patrie — “Work, Liberty, Homeland.”",
     sources: [
@@ -8854,6 +9160,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Tokelau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tokelau" },
     ],
   },
+  "tl-portuguese": {
+    description: "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+    sources: [
+      { title: "Meaning of the Portuguese Flag — Portugal.com", url: "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/" },
+    ],
+  },
   "tl-arms": {
     description: "Adopted in 2007, the emblem centres on Tatamailau, the country's highest mountain, its four corners standing for the separation of powers. The white star at the summit is the light of generosity and honesty leading the people to peace; the open book before a golden cog is education and the people's capacity to advance in culture, agriculture and industry; the ear of rice and the corncob are agricultural development; and the crossed Kalashnikov, spear and traditional bow honour the centuries-long struggle for national liberation. The Portuguese motto reads Unidade, Acção, Progresso — “Unity, Action, Progress.”",
     sources: [
@@ -8938,6 +9250,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Tonga's passport bears the national coat of arms, designed in 1875 alongside the country's constitution: three white stars for the main island groups of Tongatapu, Vava'u and Ha'apai; a gold royal crown for the ruling monarchy; a dove with an olive branch for peace; and three crossed swords commemorating the three historic dynasties of Tongan kings. At the centre a red couped cross on a white star represents the blood of Christ, beneath the motto \"Ko e 'Otua mo Tonga ko hoku Tofi'a\" — \"God and Tonga are my inheritance\".",
     sources: [
       { title: "Coat of arms of Tonga — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tonga" },
+    ],
+  },
+  "tr-ottoman": {
+    description: "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+    sources: [
+      { title: "Flags of the Ottoman Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire" },
     ],
   },
   "tr-president": {
@@ -9026,6 +9344,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Tuvalu's passport bears the national coat of arms: a maneapa (traditional meeting house) on green ground beneath a blue sky, above wavy bars of gold and blue for the ocean, within a gold border alternately charged with eight mitre shells and eight banana leaves for the islands' marine and agricultural life. The motto reads \"Tuvalu mo te Atua\" — \"Tuvalu for the Almighty\" — also the title of the national anthem.",
     sources: [
       { title: "Coat of arms of Tuvalu — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tuvalu" },
+    ],
+  },
+  "tw-japan": {
+    description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+    sources: [
+      { title: "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com", url: "https://www.nippon.com/en/japan-topics/g02615/" },
     ],
   },
   "tw-emblem": {
@@ -9188,6 +9512,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The black, yellow and red sash repeats the bands of Uganda's own national flag, adopted at independence in 1962.",
     sources: [
       { title: "Flag of Uganda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
+    ],
+  },
+  "us-gb-1707": {
+    description: "The pre-1801 Union Flag combined the red cross of Saint George, patron saint of England, with the white saltire of Saint Andrew, patron saint of Scotland, on a blue field — first prescribed by royal proclamation in 1606 and used at sea from that year, more widely after the 1707 union of the two kingdoms. It was retired in 1801 when Saint Patrick's cross was added to mark the union with Ireland, forming today's Union Jack.",
+    sources: [
+      { title: "United Kingdom — History of the Flag — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gb-hist.html" },
     ],
   },
   "us-army": {
@@ -9407,6 +9737,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
     ],
   },
+  "ve-gran-colombia": {
+    description: "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
+    sources: [
+      { title: "Flag of Gran Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Gran_Colombia" },
+    ],
+  },
+  "ve-spain": {
+    description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+    sources: [
+      { title: "The 1785 War Ensign Contest (Spain) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es!1785.html" },
+    ],
+  },
   "ve-burgundy": {
     description: "The Cross of Burgundy is a red saltire — an X-shaped cross of two roughly-pruned branches — on a white field. It represents the cross on which Saint Andrew, patron saint of Burgundy, was crucified; its ragged, branch-like form recalled the Passion of Christ to soldiers who carried it. Adopted by supporters of the Duke of Burgundy in the early 15th century, it was brought to Spain by Philip I and flown across the Spanish Empire from 1516.",
     sources: [
@@ -9534,6 +9876,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Vanuatu's passport bears the national coat of arms: a ni-Vanuatu warrior holding a spear before a mountain, standing within a circular boar's tusk — a traditional symbol of wealth, status and ceremonial importance in ni-Vanuatu culture, once used as a form of currency — wound with two crossed namele fern fronds, which represent traditional law, peace and stability. Below runs the national motto in Bislama, \"Long God Yumi Stanap\" — \"With God we stand\".",
     sources: [
       { title: "Coat of arms of Vanuatu — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vanuatu" },
+    ],
+  },
+  "ws-german": {
+    description: "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+    sources: [
+      { title: "Flag of the German Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire" },
     ],
   },
   "ws-arms": {

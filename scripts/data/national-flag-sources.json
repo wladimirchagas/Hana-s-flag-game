@@ -599,7 +599,16 @@
           "design": "The red flag with a white crescent and star, flown over Albania until independence in 1912.",
           "source": "https://en.wikipedia.org/wiki/List_of_Albanian_flags",
           "sha256": "7ff6e694d31e48144ce36c67bed5a4e1742d5e6924cad50ca760b594b3d49822",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+            "sources": [
+              {
+                "title": "Flags of the Ottoman Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "al-president",
@@ -1158,7 +1167,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The Spanish ensign of 1785, the last to fly over the Viceroyalty of the Río de la Plata.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "ar-naval-jack",
@@ -1670,7 +1688,16 @@
           "sovereign": "the Kingdom of Great Britain",
           "reuse": "national-flags/gb/great-britain-1707.svg",
           "design": "The pre-1801 Union Flag, first raised on the east coast by James Cook in 1770.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
+          "meaning": {
+            "description": "The pre-1801 Union Flag combined the red cross of Saint George, patron saint of England, with the white saltire of Saint Andrew, patron saint of Scotland, on a blue field — first prescribed by royal proclamation in 1606 and used at sea from that year, more widely after the 1707 union of the two kingdoms. It was retired in 1801 when Saint Patrick's cross was added to mark the union with Ireland, forming today's Union Jack.",
+            "sources": [
+              {
+                "title": "United Kingdom — History of the Flag — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/gb-hist.html"
+              }
+            ]
+          }
         },
         {
           "id": "au-torres-strait",
@@ -2946,7 +2973,16 @@
           "design": "The flag of the Ottoman Empire, which ruled the Bulgarian lands until liberation in 1878.",
           "source": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria",
           "sha256": "7ff6e694d31e48144ce36c67bed5a4e1742d5e6924cad50ca760b594b3d49822",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+            "sources": [
+              {
+                "title": "Flags of the Ottoman Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "bg-naval",
@@ -3211,7 +3247,16 @@
           "design": "The flag of the German Empire, which held the territory as part of German East Africa until 1916.",
           "source": "https://en.wikipedia.org/wiki/German_East_Africa",
           "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+            "sources": [
+              {
+                "title": "Flag of the German Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "bi-arms",
@@ -3772,7 +3817,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The red-yellow-red ensign of 1785 with the royal arms, flown over Upper Peru in the last decades of Spanish rule.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "bo-burgundy",
@@ -6133,7 +6187,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The red-yellow-red ensign adopted by Spain in 1785, flown over the Captaincy General of Chile.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Chilean_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Chilean_flags",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "cl-burgundy",
@@ -6752,7 +6815,16 @@
           "design": "The third flag of the union of Colombia, Venezuela, Ecuador and Panama.",
           "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
           "sha256": "ef2218dd8bca23df5aed79366b05b7897ead1e55107abf59dc89dc2f929747d1",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
+            "sources": [
+              {
+                "title": "Flag of Gran Colombia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Gran_Colombia"
+              }
+            ]
+          }
         },
         {
           "id": "co-spain",
@@ -6763,7 +6835,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The war ensign adopted by Spain in 1785, flown over the Viceroyalty of New Granada.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "co-burgundy",
@@ -7045,7 +7126,16 @@
           "design": "The flag of Iturbide's empire, which Central America joined for two years after separating from Spain.",
           "source": "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags",
           "sha256": "73a1548d87c678e560c683cb1924b60a4f899a56a197144f44d59b69a1d24b59",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Agustín de Iturbide's imperial tricolour of green, white and red bore a crowned eagle on a nopal cactus at its centre, ringed by a laurel wreath. The colours stood for the empire's Three Guarantees — green for independence, white for the primacy of Catholicism, red for the equality and union of Mexicans — while the crown marked Iturbide's own imperial authority; it was removed when the monarchy fell and the republic adopted the eagle without it in 1823.",
+            "sources": [
+              {
+                "title": "Mexico 1821-1823 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/mx_1821.html"
+              }
+            ]
+          }
         },
         {
           "id": "cr-spain",
@@ -7056,7 +7146,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The Spanish ensign of 1785, the last flown over the province.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "cr-burgundy",
@@ -7204,7 +7303,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The Spanish ensign of 1785, flown until the Spanish–American War ended Spanish rule in 1898.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "cu-president",
@@ -7383,7 +7491,16 @@
           "design": "The flag of Portugal, flown over the colony of Cape Verde.",
           "source": "https://en.wikipedia.org/wiki/Cape_Verde",
           "sha256": "20ddeda8a3c2960f6d8d7cf88cec827aad537143431a0828e789f55d0cd923ce",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+            "sources": [
+              {
+                "title": "Meaning of the Portuguese Flag — Portugal.com",
+                "url": "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "cv-arms",
@@ -7575,7 +7692,16 @@
           "design": "The Ottoman flag, flown over Cyprus until Britain took over its administration in 1878.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cypriot_flags",
           "sha256": "7ff6e694d31e48144ce36c67bed5a4e1742d5e6924cad50ca760b594b3d49822",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+            "sources": [
+              {
+                "title": "Flags of the Ottoman Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "cy-president",
@@ -7878,7 +8004,16 @@
           "design": "The black-white-red horizontal tricolour, first of the North German Confederation from 1867 and then of the German Empire from 1871, flown until the empire fell in 1918.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Germany",
           "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+            "sources": [
+              {
+                "title": "Flag of the German Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "de-state",
@@ -8730,7 +8865,16 @@
           "design": "The flag of the union Ecuador belonged to until it seceded in 1830.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
           "sha256": "ef2218dd8bca23df5aed79366b05b7897ead1e55107abf59dc89dc2f929747d1",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
+            "sources": [
+              {
+                "title": "Flag of Gran Colombia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Gran_Colombia"
+              }
+            ]
+          }
         },
         {
           "id": "ec-burgundy",
@@ -10367,7 +10511,16 @@
           "design": "The flag of Japan, which held the islands as the South Seas Mandate between the world wars.",
           "source": "https://en.wikipedia.org/wiki/South_Seas_Mandate",
           "sha256": "35e785339e19d1ec1987cb9c3d8e66fc97f29a287db0b0b590b8dfdd96d4766b",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+            "sources": [
+              {
+                "title": "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com",
+                "url": "https://www.nippon.com/en/japan-topics/g02615/"
+              }
+            ]
+          }
         },
         {
           "id": "fm-arms",
@@ -10719,7 +10872,16 @@
           "design": "The first Union Flag: St George's cross over St Andrew's saltire, without the Irish saltire.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "499f1f86ed388b08e98ec3982e7c5ec7527bbaeaf9632f8092adbac4937e0fd0",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The pre-1801 Union Flag combined the red cross of Saint George, patron saint of England, with the white saltire of Saint Andrew, patron saint of Scotland, on a blue field — first prescribed by royal proclamation in 1606 and used at sea from that year, more widely after the 1707 union of the two kingdoms. It was retired in 1801 when Saint Patrick's cross was added to mark the union with Ireland, forming today's Union Jack.",
+            "sources": [
+              {
+                "title": "United Kingdom — History of the Flag — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/gb-hist.html"
+              }
+            ]
+          }
         },
         {
           "id": "gb-protectorate",
@@ -12102,7 +12264,16 @@
           "design": "The flag of Spain, flown over the colony of Spanish Guinea.",
           "source": "https://en.wikipedia.org/wiki/Spanish_Guinea",
           "sha256": "16de7afac54eb150e963299bf0ccbff83b099c110fbdc8416408373231a852ea",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "gq-arms",
@@ -12401,7 +12572,16 @@
           "design": "The blue-white-blue flag of the Federal Republic of Central America, of which Guatemala was a part after independence from Spain.",
           "source": "https://en.wikipedia.org/wiki/Federal_Republic_of_Central_America",
           "sha256": "91b1f03c3d5c6b209ac868e2f378c4b03be679d5f421863affa0fd703acaa8d9",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The blue-white-blue flag of the Federal Republic of Central America, designed in 1823 by Manuel José Arce, uses its two blue bands to represent the Pacific Ocean and the Caribbean Sea bordering the isthmus, with the white band between them standing for the land itself and for peace. The scheme survives today in the flags of Guatemala, Honduras, El Salvador and Nicaragua, all once part of the federation.",
+            "sources": [
+              {
+                "title": "Flags of Central America: Meanings, History & Evolution",
+                "url": "https://arkfoundationus.org/flags-central-america-meanings-history"
+              }
+            ]
+          }
         },
         {
           "id": "gt-spanish",
@@ -12558,7 +12738,16 @@
           "reuse": "historical-flags/spain-1785.png",
           "sovereign": "Spain",
           "design": "The 1785 Spanish ensign, flown over Guam until it was ceded to the United States in 1898.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "gu-japan",
@@ -12572,7 +12761,16 @@
           "design": "The Hinomaru, flown during the Japanese military occupation of Guam from 1941 until the island was retaken by the United States in 1944.",
           "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Guam",
           "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+            "sources": [
+              {
+                "title": "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com",
+                "url": "https://www.nippon.com/en/japan-topics/g02615/"
+              }
+            ]
+          }
         },
         {
           "id": "gu-seal",
@@ -12647,7 +12845,16 @@
           "design": "The flag of Portugal, flown over the colony of Portuguese Guinea.",
           "source": "https://en.wikipedia.org/wiki/Portuguese_Guinea",
           "sha256": "20ddeda8a3c2960f6d8d7cf88cec827aad537143431a0828e789f55d0cd923ce",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+            "sources": [
+              {
+                "title": "Meaning of the Portuguese Flag — Portugal.com",
+                "url": "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "gw-arms",
@@ -13034,7 +13241,16 @@
           "design": "The blue-white-blue flag of the Federal Republic of Central America, of which Honduras was a part after independence from Spain.",
           "source": "https://en.wikipedia.org/wiki/Federal_Republic_of_Central_America",
           "sha256": "91b1f03c3d5c6b209ac868e2f378c4b03be679d5f421863affa0fd703acaa8d9",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The blue-white-blue flag of the Federal Republic of Central America, designed in 1823 by Manuel José Arce, uses its two blue bands to represent the Pacific Ocean and the Caribbean Sea bordering the isthmus, with the white band between them standing for the land itself and for peace. The scheme survives today in the flags of Guatemala, Honduras, El Salvador and Nicaragua, all once part of the federation.",
+            "sources": [
+              {
+                "title": "Flags of Central America: Meanings, History & Evolution",
+                "url": "https://arkfoundationus.org/flags-central-america-meanings-history"
+              }
+            ]
+          }
         },
         {
           "id": "hn-spanish",
@@ -17032,7 +17248,16 @@
           "design": "The Hinomaru, flown over Korea throughout Japanese colonial rule from the 1910 annexation until liberation in 1945.",
           "source": "https://en.wikipedia.org/wiki/Korea_under_Japanese_rule",
           "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+            "sources": [
+              {
+                "title": "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com",
+                "url": "https://www.nippon.com/en/japan-topics/g02615/"
+              }
+            ]
+          }
         },
         {
           "id": "kp-korean-empire",
@@ -17358,7 +17583,16 @@
           "design": "The Hinomaru, flown over Korea throughout Japanese colonial rule from the 1910 annexation until liberation in 1945.",
           "source": "https://en.wikipedia.org/wiki/Korea_under_Japanese_rule",
           "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+            "sources": [
+              {
+                "title": "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com",
+                "url": "https://www.nippon.com/en/japan-topics/g02615/"
+              }
+            ]
+          }
         },
         {
           "id": "kr-korean-empire",
@@ -17444,7 +17678,16 @@
           "design": "The red flag with a white crescent and star, under Ottoman suzerainty before the British protectorate.",
           "source": "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags",
           "sha256": "7ff6e694d31e48144ce36c67bed5a4e1742d5e6924cad50ca760b594b3d49822",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+            "sources": [
+              {
+                "title": "Flags of the Ottoman Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "kw-emir",
@@ -20267,7 +20510,16 @@
           "design": "The flag of Japan, which held the islands as the South Seas Mandate between the world wars.",
           "source": "https://en.wikipedia.org/wiki/South_Seas_Mandate",
           "sha256": "35e785339e19d1ec1987cb9c3d8e66fc97f29a287db0b0b590b8dfdd96d4766b",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+            "sources": [
+              {
+                "title": "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com",
+                "url": "https://www.nippon.com/en/japan-topics/g02615/"
+              }
+            ]
+          }
         },
         {
           "id": "mh-arms",
@@ -21007,7 +21259,16 @@
           "sovereign": "Portugal",
           "reuse": "flags/pt.svg",
           "design": "The flag of the Portuguese Republic; Macau flew only Portugal's own flag throughout its rule and adopted a flag of its own only at the 1999 handover.",
-          "source": "https://en.wikipedia.org/wiki/Portuguese_Macau"
+          "source": "https://en.wikipedia.org/wiki/Portuguese_Macau",
+          "meaning": {
+            "description": "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+            "sources": [
+              {
+                "title": "Meaning of the Portuguese Flag — Portugal.com",
+                "url": "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "mo-emblem",
@@ -21132,7 +21393,16 @@
           "reuse": "historical-flags/spain-1785.png",
           "sovereign": "Spain",
           "design": "The 1785 Spanish ensign, flown until Spain sold the northern Marianas to Germany in 1899.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "mp-germany",
@@ -21146,7 +21416,16 @@
           "design": "The black-white-red flag of the German Empire, which bought the northern Marianas from Spain in 1899 and held them until 1914.",
           "source": "https://en.wikipedia.org/wiki/German_New_Guinea",
           "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+            "sources": [
+              {
+                "title": "Flag of the German Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "mp-japan",
@@ -21160,7 +21439,16 @@
           "design": "The Hinomaru, flown while Japan governed the islands under a League of Nations mandate from 1914 until the United States took them in 1944.",
           "source": "https://en.wikipedia.org/wiki/South_Seas_Mandate",
           "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+            "sources": [
+              {
+                "title": "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com",
+                "url": "https://www.nippon.com/en/japan-topics/g02615/"
+              }
+            ]
+          }
         },
         {
           "id": "mp-seal",
@@ -21902,7 +22190,16 @@
           "design": "The tricolour with the crowned eagle of Agustín de Iturbide’s empire.",
           "source": "https://en.wikipedia.org/wiki/List_of_Mexican_flags",
           "sha256": "0f046fd0026d60a484edaf4510dec3e4d747ee262a34bf2934735328d037793d",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Agustín de Iturbide's imperial tricolour of green, white and red bore a crowned eagle on a nopal cactus at its centre, ringed by a laurel wreath. The colours stood for the empire's Three Guarantees — green for independence, white for the primacy of Catholicism, red for the equality and union of Mexicans — while the crown marked Iturbide's own imperial authority; it was removed when the monarchy fell and the republic adopted the eagle without it in 1823.",
+            "sources": [
+              {
+                "title": "Mexico 1821-1823 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/mx_1821.html"
+              }
+            ]
+          }
         },
         {
           "id": "mx-three-guarantees",
@@ -22010,7 +22307,16 @@
           "reuse": "historical-flags/spain-1785.png",
           "sovereign": "Spain",
           "design": "The red-yellow-red ensign of 1785 with the royal arms, flown in the last decades of Spanish rule.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "mx-football-crest",
@@ -22761,7 +23067,16 @@
           "design": "The flag of the German Empire, which held the territory as German South-West Africa until 1915.",
           "source": "https://en.wikipedia.org/wiki/German_South-West_Africa",
           "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+            "sources": [
+              {
+                "title": "Flag of the German Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "na-ndf",
@@ -23320,7 +23635,16 @@
           "design": "The blue-white-blue flag of the federation from which Nicaragua's own flag directly descends.",
           "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags",
           "sha256": "91b1f03c3d5c6b209ac868e2f378c4b03be679d5f421863affa0fd703acaa8d9",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The blue-white-blue flag of the Federal Republic of Central America, designed in 1823 by Manuel José Arce, uses its two blue bands to represent the Pacific Ocean and the Caribbean Sea bordering the isthmus, with the white band between them standing for the land itself and for peace. The scheme survives today in the flags of Guatemala, Honduras, El Salvador and Nicaragua, all once part of the federation.",
+            "sources": [
+              {
+                "title": "Flags of Central America: Meanings, History & Evolution",
+                "url": "https://arkfoundationus.org/flags-central-america-meanings-history"
+              }
+            ]
+          }
         },
         {
           "id": "ni-mexican-empire",
@@ -23334,7 +23658,16 @@
           "design": "Iturbide's imperial flag, flown over Central America in the two years after separation from Spain.",
           "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags",
           "sha256": "73a1548d87c678e560c683cb1924b60a4f899a56a197144f44d59b69a1d24b59",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Agustín de Iturbide's imperial tricolour of green, white and red bore a crowned eagle on a nopal cactus at its centre, ringed by a laurel wreath. The colours stood for the empire's Three Guarantees — green for independence, white for the primacy of Catholicism, red for the equality and union of Mexicans — while the crown marked Iturbide's own imperial authority; it was removed when the monarchy fell and the republic adopted the eagle without it in 1823.",
+            "sources": [
+              {
+                "title": "Mexico 1821-1823 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/mx_1821.html"
+              }
+            ]
+          }
         },
         {
           "id": "ni-spain",
@@ -23345,7 +23678,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The last Spanish flag flown over the province.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "ni-burgundy",
@@ -24038,7 +24380,16 @@
           "design": "The flag of the German Empire, which annexed Nauru as a protectorate in 1888 and held it until 1914.",
           "source": "https://en.wikipedia.org/wiki/History_of_Nauru",
           "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+            "sources": [
+              {
+                "title": "Flag of the German Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "nr-arms",
@@ -24578,7 +24929,16 @@
           "design": "The flag of the union the isthmus joined on separating from Spain in 1821.",
           "source": "https://en.wikipedia.org/wiki/List_of_Panamanian_flags",
           "sha256": "ef2218dd8bca23df5aed79366b05b7897ead1e55107abf59dc89dc2f929747d1",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
+            "sources": [
+              {
+                "title": "Flag of Gran Colombia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Gran_Colombia"
+              }
+            ]
+          }
         },
         {
           "id": "pa-spain",
@@ -24589,7 +24949,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The Spanish ensign of 1785, flown over the isthmus until 1821.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Panamanian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Panamanian_flags",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "pa-president",
@@ -24779,7 +25148,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The Spanish ensign of 1785, the last to fly over the Viceroyalty of Peru.",
-          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru"
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "pe-burgundy",
@@ -25073,7 +25451,16 @@
           "design": "The flag of the German Empire, which held the north-east as German New Guinea until 1914.",
           "source": "https://en.wikipedia.org/wiki/German_New_Guinea",
           "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+            "sources": [
+              {
+                "title": "Flag of the German Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "pg-arms",
@@ -25230,7 +25617,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The red-yellow-red ensign of Spain, flown over the Spanish East Indies until 1898.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Philippine_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Philippine_flags",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "ph-burgundy",
@@ -26105,7 +26501,16 @@
           "reuse": "historical-flags/spain-1785.png",
           "sovereign": "Spain",
           "design": "The red-yellow-red ensign of 1785 with the royal arms, flown over Puerto Rico until it was ceded to the United States in 1898.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "pr-arms",
@@ -26738,7 +27143,16 @@
           "reuse": "historical-flags/spain-1785.png",
           "sovereign": "Spain",
           "design": "The red-yellow-red ensign of 1785 with the royal arms, flown in the last decades of Spanish rule.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "py-football-crest",
@@ -26791,7 +27205,16 @@
           "design": "The Ottoman flag, flown over Qatar until the empire renounced its claim.",
           "source": "https://en.wikipedia.org/wiki/List_of_Qatari_flags",
           "sha256": "7ff6e694d31e48144ce36c67bed5a4e1742d5e6924cad50ca760b594b3d49822",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+            "sources": [
+              {
+                "title": "Flags of the Ottoman Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "qa-air-force",
@@ -27650,7 +28073,16 @@
           "design": "The flag of the German Empire, which held the territory as part of German East Africa until 1916.",
           "source": "https://en.wikipedia.org/wiki/German_East_Africa",
           "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+            "sources": [
+              {
+                "title": "Flag of the German Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "rw-president",
@@ -29876,7 +30308,16 @@
           "design": "The flag of Portugal, flown over the colony of São Tomé and Príncipe.",
           "source": "https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe",
           "sha256": "20ddeda8a3c2960f6d8d7cf88cec827aad537143431a0828e789f55d0cd923ce",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+            "sources": [
+              {
+                "title": "Meaning of the Portuguese Flag — Portugal.com",
+                "url": "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "st-arms",
@@ -30019,7 +30460,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The last Spanish flag flown over the province, to 15 September 1821.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "sv-burgundy",
@@ -30585,7 +31035,16 @@
           "design": "The flag of the German Empire, which held the territory as the colony of Togoland until 1914.",
           "source": "https://en.wikipedia.org/wiki/Togoland",
           "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+            "sources": [
+              {
+                "title": "Flag of the German Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "tg-arms",
@@ -31127,7 +31586,16 @@
           "design": "The flag of Portugal, flown over the colony of Portuguese Timor until 1975.",
           "source": "https://en.wikipedia.org/wiki/Portuguese_Timor",
           "sha256": "20ddeda8a3c2960f6d8d7cf88cec827aad537143431a0828e789f55d0cd923ce",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
+            "sources": [
+              {
+                "title": "Meaning of the Portuguese Flag — Portugal.com",
+                "url": "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "tl-indonesian",
@@ -31626,7 +32094,16 @@
           "to": 1922,
           "reuse": "historical-flags/ottoman-empire.png",
           "design": "Red with a white crescent and five-pointed star, as fixed by the Tanzimat regulation of 1844.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Turkish_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Turkish_flags",
+          "meaning": {
+            "description": "The Ottoman flag's white crescent and five-pointed star on red were formally adopted in 1844 as part of the Tanzimat reforms, replacing an earlier eight-pointed star. The crescent represented Islam and the star was read as guidance and the empire's authority extending across its territories, while red was a traditional Turkic colour of bravery and imperial power.",
+            "sources": [
+              {
+                "title": "Flags of the Ottoman Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "tr-president",
@@ -32096,7 +32573,16 @@
           "design": "The Hinomaru, flown over Taiwan during 50 years of Japanese colonial rule after Qing China ceded the island in 1895.",
           "source": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule",
           "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
+            "sources": [
+              {
+                "title": "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com",
+                "url": "https://www.nippon.com/en/japan-topics/g02615/"
+              }
+            ]
+          }
         },
         {
           "id": "tw-qing",
@@ -33490,7 +33976,16 @@
           "sovereign": "the Kingdom of Great Britain",
           "reuse": "national-flags/gb/great-britain-1707.svg",
           "design": "The pre-1801 Union Flag, flown over the Thirteen Colonies until independence.",
-          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States"
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "meaning": {
+            "description": "The pre-1801 Union Flag combined the red cross of Saint George, patron saint of England, with the white saltire of Saint Andrew, patron saint of Scotland, on a blue field — first prescribed by royal proclamation in 1606 and used at sea from that year, more widely after the 1707 union of the two kingdoms. It was retired in 1801 when Saint Patrick's cross was added to mark the union with Ireland, forming today's Union Jack.",
+            "sources": [
+              {
+                "title": "United Kingdom — History of the Flag — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/gb-hist.html"
+              }
+            ]
+          }
         },
         {
           "id": "us-arms",
@@ -34321,7 +34816,16 @@
           "design": "The third flag of the union Venezuela belonged to until 1830.",
           "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
           "sha256": "ef2218dd8bca23df5aed79366b05b7897ead1e55107abf59dc89dc2f929747d1",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
+            "sources": [
+              {
+                "title": "Flag of Gran Colombia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Gran_Colombia"
+              }
+            ]
+          }
         },
         {
           "id": "ve-1811",
@@ -34360,7 +34864,16 @@
           "sovereign": "Spain",
           "reuse": "historical-flags/spain-1785.png",
           "design": "The Spanish war ensign of 1785, used by the Captaincy General of Venezuela.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
+          "meaning": {
+            "description": "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
+            "sources": [
+              {
+                "title": "The 1785 War Ensign Contest (Spain) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/es!1785.html"
+              }
+            ]
+          }
         },
         {
           "id": "ve-burgundy",
@@ -35040,7 +35553,16 @@
           "design": "The flag of the German Empire, which held the islands as German Samoa until 1914.",
           "source": "https://en.wikipedia.org/wiki/German_Samoa",
           "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The black-white-red flag of the German Empire combined the black and white of the Kingdom of Prussia, the dominant power within the empire, with red drawn from the Hanseatic League, representing the trading cities' unity and independence. Carried over from the North German Confederation at unification in 1871 and formally adopted in 1892, it remained the empire's flag until the 1918–19 revolution.",
+            "sources": [
+              {
+                "title": "Flag of the German Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_German_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "ws-arms",
