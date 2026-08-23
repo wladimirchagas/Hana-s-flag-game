@@ -11585,7 +11585,16 @@
           "design": "The cover of the Guinea passport.",
           "source": "https://gicg.net/passport/gn/",
           "sha256": "a948563e296aa314b9eaaabe7749ea330346d8ca1adbc1d6bc45de3b8986f89b",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Guinea's passport bears the national coat of arms adopted in 1993: a white dove holding a golden olive branch, the classic symbols of peace, over a ribbon reading \"Travail, Justice, Solidarité\" — \"Work, Justice, Solidarity\". This peaceable design replaced an earlier arms bearing a rifle and sword, introduced after the death of Guinea's first president in 1984, which had itself replaced the country's original 1958 arms showing a yellow elephant.",
+            "sources": [
+              {
+                "title": "Coat of arms of Guinea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea"
+              }
+            ]
+          }
         },
         {
           "id": "gn-football-crest",
@@ -12201,7 +12210,16 @@
           "design": "The cover of the Guinea-Bissau passport.",
           "source": "https://gicg.net/passport/gw/",
           "sha256": "14a182779830c04a083729a3f26d5be8bbd3da5e5f4d4e10c404a7803dd332e3",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Guinea-Bissau's passport bears the national emblem, adopted shortly after independence from Portugal in 1973: a black star — the Black Star of Africa, a Pan-African symbol of unity and freedom — above a seashell marking the country's position on West Africa's Atlantic coast, flanked by olive branches for peace. The motto below, on a red banner, reads \"Unidade, Luta, Progresso\" — \"Unity, Struggle, Progress\".",
+            "sources": [
+              {
+                "title": "Emblem of Guinea-Bissau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Guinea-Bissau"
+              }
+            ]
+          }
         },
         {
           "id": "gw-football-crest",
@@ -29249,7 +29267,16 @@
           "design": "The cover of the Chad passport.",
           "source": "https://gicg.net/passport/td/",
           "sha256": "371e0049ed6f014504396a34f7dbd618921c89a8125732ee2dd3e5c5b2457d73",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Chad's passport bears the national coat of arms, adopted 11 August 1970: wavy blue bars on a gold shield for Lake Chad, crested by a rising sun for a new beginning. A goat supports the shield on one side, representing Chad's arid north, and a lion on the other, representing its more fertile south; red arrows in their fur stand for salt, a historically valuable trade good. Below runs the motto \"Unité, Travail, Progrès\" — \"Unity, Work, Progress\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Chad — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chad"
+              }
+            ]
+          }
         },
         {
           "id": "td-football-crest",
