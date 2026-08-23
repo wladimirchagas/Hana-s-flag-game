@@ -27418,7 +27418,16 @@
           "design": "The cover of the Sudan passport.",
           "source": "https://gicg.net/passport/sd/",
           "sha256": "8e4d60137edb13ae5bf634efbe40706cc4f1f389bf95b1dbef95d36f06899557",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Sudan's passport bears the national emblem, in use since 1985: a secretary bird holding a shield from the era of Muhammad Ahmad, the self-proclaimed Mahdi who briefly ruled Sudan in the 1880s. The secretary bird was chosen as a distinctly Sudanese alternative to the Eagle of Saladin and Hawk of Quraish used by several other Arab states, embodying vigilance and strength through its keen eyesight and its ability to hunt snakes across vast distances. The upper scroll reads the national motto \"النصر لنا\" — \"Victory is ours\".",
+            "sources": [
+              {
+                "title": "Emblem of Sudan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Sudan"
+              }
+            ]
+          }
         },
         {
           "id": "sd-uk",
@@ -28778,7 +28787,16 @@
           "design": "The cover of the South Sudan passport.",
           "source": "https://gicg.net/passport/ss/",
           "sha256": "cf70eed60957ac58ee68f61a04edb4cf06ccce34d080acf6e8818b58a8532d54",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "South Sudan's passport bears the national coat of arms, adopted at independence in July 2011: an African fish eagle, a bird common across South Sudan, standing for strength, resilience and vision, holding a scroll naming the state and a crossed spear and spade — the people's resolve to both defend and feed their new republic. The shield beneath repeats the national flag's black, white, green and red: black for African heritage, red for the blood of those lost in the decades-long war for independence from Sudan, and green for the country's fertile, resource-rich land.",
+            "sources": [
+              {
+                "title": "Coat of arms of South Sudan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Sudan"
+              }
+            ]
+          }
         },
         {
           "id": "ss-football-crest",
@@ -30368,7 +30386,16 @@
           "design": "The cover of the Tunisia passport.",
           "source": "https://gicg.net/passport/tn/",
           "sha256": "9705f72dcf45d55186bb7d524baab91f8cdeeaf7ae08db4f616aada73e519244",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Tunisia's passport bears the national emblem: a Carthaginian galley for freedom, evoking Tunisia's ancient Carthaginian heritage and its path to independence; a lion holding a sword for order and the strength of the Tunisian people to maintain peace; and a set of scales for justice. Beneath the ship runs the national motto in Arabic: \"حرية، نظام، عدالة\" — \"Freedom, Order, Justice\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Tunisia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia"
+              }
+            ]
+          }
         },
         {
           "id": "tn-football-crest",
