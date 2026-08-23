@@ -2392,7 +2392,16 @@
           "design": "A British Blue Ensign defaced with the colony's badge, Britannia in a chariot.",
           "source": "https://en.wikipedia.org/wiki/List_of_Barbadian_flags",
           "sha256": "19d7d057465e62ab46d83759bd95ece48a0c7b9c9a3de442c49b2d6da9166710",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Flown from 1870 until independence in 1966, this Blue Ensign was defaced with Barbados's colonial badge: Britannia riding a conch-shell chariot drawn by sea horses, trident raised to signify British rule over the waves. The trident later resurfaced in Barbados's own coat of arms, broken into three pieces to represent the country's break from its colonial past.",
+            "sources": [
+              {
+                "title": "Flag of Barbados — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Barbados"
+              }
+            ]
+          }
         },
         {
           "id": "bb-president",
@@ -4647,7 +4656,16 @@
           "design": "A British Blue Ensign defaced with the colony's badge, a ship pursuing pirates.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bahamian_flags",
           "sha256": "1b790173bd7f3976bf493907e49abf4eae34473b607b7c8dffd6c49fe65fe716",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Bahamas' Blue Ensign carried a badge, in use from around 1850, showing a British ship chasing two pirate vessels, ringed by the Latin motto 'Expulsis piratis restituta commercia' — 'Pirates expelled, commerce restored' — commemorating the suppression of the piracy that had plagued the islands in earlier centuries.",
+            "sources": [
+              {
+                "title": "Flag of Bahamas: Its predecessor showed a pirate chase — Flags and Anthems",
+                "url": "https://www.flags-and-anthems.com/flag-bahamas.html"
+              }
+            ]
+          }
         },
         {
           "id": "bs-governor-general",
@@ -9662,7 +9680,16 @@
           "design": "The black cross on white of the order that bought the Danish duchy of Estonia in 1346.",
           "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
           "sha256": "4315280824bba4e82bfc4a66d141aa1574441179ab560687c0e2d7452eb262ff",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The black cross on white first granted to the Teutonic Order in 1198 — the same emblem that later inspired the Prussian and German Iron Cross — flew over Estonia and Livonia from 1346, when the Teutonic Order bought the Danish-held duchy of Estonia, until the Livonian Order's collapse in the Livonian War ended its 215-year rule over Tallinn in 1561.",
+            "sources": [
+              {
+                "title": "The Teutonic Order in Medieval Livonia — Tallinn Museum of Orders of Knighthood",
+                "url": "https://tallinnmuseum.com/2018/10/13/the-teutonic-order-in-medieval-livonia/"
+              }
+            ]
+          }
         },
         {
           "id": "ee-president",
@@ -12509,7 +12536,16 @@
           "design": "A British Blue Ensign defaced with the colony's badge.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
           "sha256": "171c7a0e26975bd6d8f8547f5c0b0f7ef8031f7681357cb20cbafaf3f61c3733",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Gold Coast's colonial Blue Ensign badge depicted a brown elephant standing before a palm tree between green hills — a design Britain reused, with only the initial letters changed, for its other West African possessions of Gambia and Sierra Leone.",
+            "sources": [
+              {
+                "title": "Blue Ensign of the Gold Coast — Royal Museums Greenwich",
+                "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-719"
+              }
+            ]
+          }
         },
         {
           "id": "gh-togoland",
@@ -13756,7 +13792,16 @@
           "design": "A British Blue Ensign defaced with the colony's badge, a sailing ship.",
           "source": "https://en.wikipedia.org/wiki/List_of_Guyanese_flags",
           "sha256": "0964146a4f8db880ea1023510a6d7f4e9060ecb884ae1516296c33cc92e13d2b",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "British Guiana's Blue Ensign badge, introduced in 1875 and revised to an oval, garter-bordered form in 1906, showed a three-masted sailing ship under the Latin motto 'Damus petimusque vicissim' — 'We give and expect in return' — a device marking the colony's importance to British maritime trade.",
+            "sources": [
+              {
+                "title": "Guyana — Historical Flags, Part 1 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/gy_hist.html"
+              }
+            ]
+          }
         },
         {
           "id": "gy-dutch",

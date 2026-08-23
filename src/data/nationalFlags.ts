@@ -3115,6 +3115,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "The West Indies Federation Flag — The Flag Institute", url: "https://www.flaginstitute.org/wp/flag-facts/the-west-indies-federation-flag/" },
     ],
   },
+  "bb-colonial": {
+    description: "Flown from 1870 until independence in 1966, this Blue Ensign was defaced with Barbados's colonial badge: Britannia riding a conch-shell chariot drawn by sea horses, trident raised to signify British rule over the waves. The trident later resurfaced in Barbados's own coat of arms, broken into three pieces to represent the country's break from its colonial past.",
+    sources: [
+      { title: "Flag of Barbados — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
+    ],
+  },
   "bb-president": {
     description: "A dark blue field bears the Presidential Seal: Barbados' coat of arms — a shield with a bearded fig tree (for which the island is named) flanked by two Pride of Barbados flowers, supported by a dolphinfish and a pelican, with a crest showing a Barbadian arm grasping two crossed sugar canes for the island's plantation history — encircled by a golden wreath of Pride of Barbados blossoms, the national flower, introduced in 2021 when Barbados became a republic and is flown only by the President.",
     sources: [
@@ -3610,6 +3616,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
       { title: "Brazil national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Brazil_national_football_team" },
+    ],
+  },
+  "bs-colonial": {
+    description: "The Bahamas' Blue Ensign carried a badge, in use from around 1850, showing a British ship chasing two pirate vessels, ringed by the Latin motto 'Expulsis piratis restituta commercia' — 'Pirates expelled, commerce restored' — commemorating the suppression of the piracy that had plagued the islands in earlier centuries.",
+    sources: [
+      { title: "Flag of Bahamas: Its predecessor showed a pirate chase — Flags and Anthems", url: "https://www.flags-and-anthems.com/flag-bahamas.html" },
     ],
   },
   "bs-civil-ensign": {
@@ -4815,6 +4827,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
+  "ee-teutonic": {
+    description: "The black cross on white first granted to the Teutonic Order in 1198 — the same emblem that later inspired the Prussian and German Iron Cross — flew over Estonia and Livonia from 1346, when the Teutonic Order bought the Danish-held duchy of Estonia, until the Livonian Order's collapse in the Livonian War ended its 215-year rule over Tallinn in 1561.",
+    sources: [
+      { title: "The Teutonic Order in Medieval Livonia — Tallinn Museum of Orders of Knighthood", url: "https://tallinnmuseum.com/2018/10/13/the-teutonic-order-in-medieval-livonia/" },
+    ],
+  },
   "ee-defence": {
     description: "The Estonian Banner-of-Arms — bearing the same three lions as the national coat of arms — flown with five swallow-tail sleeves and golden fringes, carried on a staff topped with a spearhead hollowed in the shape of the three lions, as the flag of the whole of the Estonian Defence Forces.",
     sources: [
@@ -5502,6 +5520,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Union of African States — Flags of the World", url: "https://www.crwflags.com/fotw/flags/int-uas.html" },
     ],
   },
+  "gh-gold-coast": {
+    description: "The Gold Coast's colonial Blue Ensign badge depicted a brown elephant standing before a palm tree between green hills — a design Britain reused, with only the initial letters changed, for its other West African possessions of Gambia and Sierra Leone.",
+    sources: [
+      { title: "Blue Ensign of the Gold Coast — Royal Museums Greenwich", url: "https://www.rmg.co.uk/collections/objects/rmgc-object-719" },
+    ],
+  },
   "gh-air-force": {
     description: "The Air Force Ensign of Ghana carries the national flag in the canton and the air force's green-yellow-red roundel in the fly, adopted when the force was formed in 1959. The roundel repeats the colours of the national flag — green for the nation's forests and farmland, yellow for its mineral wealth, and red for the blood shed in the struggle for independence — marking Ghanaian military aircraft with the same colours flown on the ground.",
     sources: [
@@ -5778,6 +5802,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The black star and the red-yellow-green colours are taken from Guinea-Bissau's national flag: the black star symbolises the leadership of the PAIGC independence movement and the unity of the African people, red recalls the bloodshed of the war of independence, and yellow and green stand for the country's savannas and forests.",
     sources: [
       { title: "Flag of Guinea-Bissau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
+    ],
+  },
+  "gy-british": {
+    description: "British Guiana's Blue Ensign badge, introduced in 1875 and revised to an oval, garter-bordered form in 1906, showed a three-masted sailing ship under the Latin motto 'Damus petimusque vicissim' — 'We give and expect in return' — a device marking the colony's importance to British maritime trade.",
+    sources: [
+      { title: "Guyana — Historical Flags, Part 1 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gy_hist.html" },
     ],
   },
   "gy-naval-ensign": {
