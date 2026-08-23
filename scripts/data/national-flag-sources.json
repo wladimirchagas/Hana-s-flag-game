@@ -89,7 +89,16 @@
           "design": "The cover of the Andorra passport.",
           "source": "https://gicg.net/passport/ad/",
           "sha256": "dd52abf2c061ccfe332ece7784f32c6b223ee6fbefe9c4c2cb089eae5266aac2",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Andorra's passport cover is embossed with \"Principat d'Andorra\" and the national coat of arms — a shield quartered between the emblems of Andorra's two historic co-princes, the Bishop of Urgell (a mitre) and the Count of Foix (three red bars), alongside the arms of Catalonia (four red bars, the Royal Sign of Aragon) and the Viscounty of Béarn (two red cows), reflecting the surrounding territories tied to Andorra's unusual system of co-principality. Beneath the shield runs the motto \"Virtus Unita Fortior\" — \"Strength united is stronger\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Andorra — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra"
+              }
+            ]
+          }
         },
         {
           "id": "ad-football-crest",
@@ -10875,7 +10884,16 @@
           "design": "The cover of the Georgia passport.",
           "source": "https://gicg.net/passport/ge/",
           "sha256": "8658f07f02a507bdc70defb99619beea90ac6af0cae30968afc90a09ffa66fc1",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Georgia's passport bears the national coat of arms: a silver rider on a silver horse, a golden-haloed Saint George, spearing a dragon with a cross-tipped lance. Saint George is Georgia's patron saint, and according to a medieval chronicle he appeared as a heavenly warrior at the decisive Battle of Didgori in 1121, leading a small Georgian army to victory over Seljuk forces — since which he has been regarded as the people's intercessor. The arms are topped with the Iverian crown and carry the motto \"Strength is in Unity\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Georgia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia"
+              }
+            ]
+          }
         },
         {
           "id": "ge-russian-empire",
@@ -26154,7 +26172,16 @@
           "design": "The cover of the Russia passport.",
           "source": "https://gicg.net/passport/ru/",
           "sha256": "7cf104acba98ffdbfaa7e878dc2a7ddd4b86847ca31bcbe80d0d257f22b8fce5",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Russia's passport bears the double-headed eagle, crowned with three crowns representing the sovereignty of the federation and its constituent regions, holding a sceptre and orb that stand for state power and unity. The symbol entered Russian heraldry in 1497, inherited via the marriage of Grand Prince Ivan III of Moscow to the Byzantine princess Sophia Palaiologina — a dynastic link through which Russia, like several other nations, adopted the Byzantine Empire's own eagle, its two heads traditionally read as looking simultaneously east and west.",
+            "sources": [
+              {
+                "title": "Why is the double-headed eagle Russia's national symbol?",
+                "url": "https://www.gw2ru.com/basic-facts/231554-double-headed-eagle-russia-national-symbol"
+              }
+            ]
+          }
         },
         {
           "id": "ru-football-crest",
@@ -27818,7 +27845,16 @@
           "design": "The cover of the San Marino passport.",
           "source": "https://gicg.net/passport/sm/",
           "sha256": "62c3c3a939d198717423bfb624405b67c0a29db19c42ec4d017c18783b268d9b",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "San Marino's passport bears the national coat of arms: three silver towers — La Guaita, La Cesta and La Montale, San Marino's historic fortifications, each topped with an ostrich feather — standing on three green peaks representing Monte Titano, the mountain the republic was founded on. A closed crown above the shield symbolises sovereignty, flanked by branches of oak and laurel for stability and defence, beneath a scroll reading the national motto, \"Libertas\" — Liberty.",
+            "sources": [
+              {
+                "title": "San Marino's Coat of Arms and Flag — Consulate of San Marino in the Philippines",
+                "url": "https://sanmarinophil.wordpress.com/2021/07/03/san-marinos-coat-of-arms-and-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "sm-football-crest",
@@ -32269,7 +32305,16 @@
           "design": "The cover of the Vatican City passport.",
           "source": "https://gicg.net/passport/va/",
           "sha256": "bcdabb3664be82348d48b0b5d9a0e0dd8bfbb0bb977c49fb51b179bb5bb78dee",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Vatican City's passport bears the emblem of the Holy See: two crossed keys — gold for spiritual authority, silver for worldly authority — beneath the papal tiara, a triple crown traditionally read as symbolising the Pope's threefold office. The keys reference Matthew 16:19, in which Jesus tells Saint Peter, \"I will give you the keys to the kingdom of heaven\", asserting the Pope's authority as Peter's successor.",
+            "sources": [
+              {
+                "title": "Coat of arms of Vatican City — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vatican_City"
+              }
+            ]
+          }
         }
       ]
     },
