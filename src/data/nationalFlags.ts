@@ -5071,6 +5071,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Flag of Kazakhstan", url: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
     ],
   },
+  "kz-naval-ensign": {
+    description: "The naval ensign of the Kazakh Naval Forces, designed by Alexander Basov to coincide with the founding of the country's Caspian Sea fleet in August 1996, is a white-over-light-blue bicolour bearing the national sun and steppe eagle emblem, with a red star enclosing a blue anchor in the upper hoist canton. The anchor within the star marks the ensign as belonging to a commissioned warship, distinguishing it from the plain national flag flown by civilian vessels on the Caspian.",
+    sources: [
+      { title: "Flags of the World — Kazakhstan Naval Flags", url: "https://www.crwflags.com/fotw/flags/kz~.html" },
+      { title: "Wikipedia — List of Kazakh flags", url: "https://en.wikipedia.org/wiki/List_of_Kazakh_flags" },
+    ],
+  },
   "kz-president": {
     description: "A sky-blue field bears the state emblem: a golden shanyrak — the round, arched crown of a traditional Kazakh yurt — radiating uyks (roof supports) outward like sunbeams, standing for a shared home and family well-being, peace and calm; it is flanked by mythical winged horses (tulpars), whose galloping form stands for bravery and whose golden wings — likened to sheaves of grain — express both a long-held dream of a strong, prosperous nation and the labour underpinning it, all beneath a five-pointed star.",
     sources: [
@@ -5252,6 +5259,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A white field bears a burgundy-red cross fimbriated in white, extending to the flag's edges — a Nordic-cross-style design adapted to Latvia's own colours, first flown from 1919 to 1940 by the fledgling republic's Coast Guard Squadron (renamed the Latvian Navy in 1938 and presented its flag under the motto 'We are united by the holy name of Latvia') and restored in 1991 when the Navy was re-established after Latvia regained independence.",
     sources: [
       { title: "Latvian Naval Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Latvian_Naval_Forces" },
+    ],
+  },
+  "lv-naval-jack": {
+    description: "Latvia's naval jack, flown since 1991, combines a saltire and a cross in the national red and white — a Union Flag-style layout shared with several other Baltic and former Russian naval jacks, each adapting the same British pattern into their own national colours. Red and white have been associated with the Latvian people since at least the 13th century, when Latvian tribes are recorded flying flags of these colours, well before they were adopted for the modern national flag.",
+    sources: [
+      { title: "Flags of the World — Latvia: Naval Flags", url: "https://www.crwflags.com/fotw/flags/lv-ensgn.html" },
+      { title: "Wikipedia — List of flags of Latvia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia" },
     ],
   },
   "lv-president": {
