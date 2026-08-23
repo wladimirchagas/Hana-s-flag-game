@@ -5213,6 +5213,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Lithuanian Air Force", url: "https://en.wikipedia.org/wiki/Lithuanian_Air_Force" },
     ],
   },
+  "lt-naval-ensign": {
+    description: "Lithuania's naval ensign, restored in 1992 after independence, carries the same double-barred Cross of Vytis used across the country's other military flags, set within a red shield on the national tricolour. The cross is drawn from the heraldry of Vytis, the mounted knight that has served as Lithuania's coat of arms since the early 15th century — one of the oldest state emblems in Europe — and whose name, 'the Chaser', reflects a centuries-old association with defending the nation.",
+    sources: [
+      { title: "Flags of the World — Lithuania: Naval Flags", url: "https://www.crwflags.com/fotw/flags/lt-nav.html" },
+      { title: "Wikipedia — Coat of Arms of Lithuania", url: "https://en.wikipedia.org/wiki/Coat_of_Arms_of_Lithuania" },
+    ],
+  },
   "lt-president": {
     description: "The Vytis — a white armoured knight on a white horse, sword raised — is Lithuania's national coat of arms, one of Europe's oldest, tracing back to the seal of Grand Duke Algirdas in 1366; it traditionally represents the ruler's readiness to defend and pursue enemies of the land.",
     sources: [
