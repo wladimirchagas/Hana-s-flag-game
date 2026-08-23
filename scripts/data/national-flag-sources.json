@@ -14286,7 +14286,20 @@
           "design": "The defence force's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
           "sha256": "9f03ab5cd9e8b9cc7b37cb2190b42fc2f33fae3ef96fc5523e44cb34befba847",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Jamaica Defence Force, flown since 1962, is dark blue bearing the force's badge — a Jamaican crocodile mounted on the Royal Helmet of the British monarchy, with mantling — above the words 'Defence Force'. The crocodile is drawn from the crest of Jamaica's own national coat of arms, tying the modern military to the same heraldry granted to the island in 1661.",
+            "sources": [
+              {
+                "title": "Flags of the World — Jamaica: Military Flags",
+                "url": "https://www.crwflags.com/fotw/flags/jm%5E.html"
+              },
+              {
+                "title": "Wikipedia — Coat of arms of Jamaica",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica"
+              }
+            ]
+          }
         },
         {
           "id": "jm-naval-ensign",
