@@ -4070,6 +4070,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Dominica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Dominica" },
     ],
   },
+  "dm-passport": {
+    description: "Dominica's passport bears the national coat of arms, adopted 21 July 1961: two Sisserou parrots — Dominica's endangered national bird, found nowhere else on Earth — supporting a shield divided into a cross, referencing the island's own name (sighted and named for a Sunday landing). The quarters show the island's black volcanic soil bearing a coconut tree and a banana stem heavy with fruit, reflecting the agriculture-based economy, beneath the Creole motto \"Après Bondie C'est La Ter\" — \"After God, the Earth\".",
+    sources: [
+      { title: "Coat of arms of Dominica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Dominica" },
+    ],
+  },
   "dm-football-crest": {
     description: "The Sisserou parrot and the ring of ten stars are taken from Dominica's national flag: the parrot is the country's endangered national bird, found only on Dominica, and the ten stars stand for the island's ten parishes.",
     sources: [
@@ -4871,6 +4877,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "gy-arms": {
     description: "Every charge is a piece of the country. The crest is an Amerindian feather headdress, the Cacique's Crown, for the indigenous peoples, with a diamond on each side for the mining industry. The shield carries the Victoria regia water lily, the national flower, above three wavy blue bars for Guyana's three great rivers — the country's name comes from an indigenous word for \"land of many waters\" — and below them the hoatzin, the Canje pheasant, the national bird. The two jaguar supporters hold a pickaxe for mining and a stalk of sugar cane and a rice sheaf for agriculture. The scroll beneath reads \"One People, One Nation, One Destiny\".",
+    sources: [
+      { title: "Coat of arms of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
+    ],
+  },
+  "gy-passport": {
+    description: "Guyana's CARICOM-format passport bears the national coat of arms, granted 25 February 1966: a Canje pheasant (hoatzin), the national bird found in this part of South America, at the base of a shield showing three wavy blue bars for the country's great rivers, crested by an Amerindian Cacique Crown honouring Guyana's indigenous peoples. Two jaguars support the shield, holding a pickaxe, a sugar cane stalk and a rice stalk between them, representing labour and Guyana's two leading agricultural industries.",
     sources: [
       { title: "Coat of arms of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
     ],
@@ -7914,6 +7926,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "sr-arms": {
     description: "Adopted at independence in 1975, the shield is halved. The sailing ship on the left is the country's colonial past as a source of cash crops and its present part in international trade; the royal palm on the right is the rainforest that covers two-thirds of Suriname and its agribusiness. The diamond between them is the mining industry, and the green five-pointed star at the centre stands for the unity of the country's many ethnic groups and for hope. The two supporters are indigenous figures — the arms were redrawn in 1975 specifically to acknowledge the indigenous population — and the scroll beneath reads Justitia, Pietas, Fides: Justice, Piety, Fidelity.",
+    sources: [
+      { title: "Coat of arms of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
+    ],
+  },
+  "sr-passport": {
+    description: "Suriname's blue passport bears the national coat of arms, adopted 25 November 1975: a sailing ship, for Suriname's colonial-era trade and continuing role in international commerce, beside a royal palm for the rainforest covering two-thirds of the country and its agricultural industry. A green diamond bearing a yellow five-pointed star sits at the centre, its points read as the five continents from which Suriname's people descend, held by two indigenous men — the region's original inhabitants — beneath the motto \"Justitia, Pietas, Fides\" — \"Justice, Piety, Fidelity\".",
     sources: [
       { title: "Coat of arms of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
     ],

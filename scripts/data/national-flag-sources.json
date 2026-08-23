@@ -8139,7 +8139,16 @@
           "design": "The cover of the Dominica passport.",
           "source": "https://gicg.net/passport/dm/",
           "sha256": "d1429d88f3e3dfe2da62f59fecbb50bb8350a1dbfe713759cd92e90b651061d4",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Dominica's passport bears the national coat of arms, adopted 21 July 1961: two Sisserou parrots — Dominica's endangered national bird, found nowhere else on Earth — supporting a shield divided into a cross, referencing the island's own name (sighted and named for a Sunday landing). The quarters show the island's black volcanic soil bearing a coconut tree and a banana stem heavy with fruit, reflecting the agriculture-based economy, beneath the Creole motto \"Après Bondie C'est La Ter\" — \"After God, the Earth\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Dominica — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Dominica"
+              }
+            ]
+          }
         },
         {
           "id": "dm-football-crest",
@@ -12464,7 +12473,16 @@
           "design": "The cover of the Guyana passport.",
           "source": "https://gicg.net/passport/gy/",
           "sha256": "3b9ca6b310ad522ae66146a916fe34fe16cd7d02a43e1f63be68cbb178d02085",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Guyana's CARICOM-format passport bears the national coat of arms, granted 25 February 1966: a Canje pheasant (hoatzin), the national bird found in this part of South America, at the base of a shield showing three wavy blue bars for the country's great rivers, crested by an Amerindian Cacique Crown honouring Guyana's indigenous peoples. Two jaguars support the shield, holding a pickaxe, a sugar cane stalk and a rice stalk between them, representing labour and Guyana's two leading agricultural industries.",
+            "sources": [
+              {
+                "title": "Coat of arms of Guyana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana"
+              }
+            ]
+          }
         },
         {
           "id": "gy-football-crest",
@@ -28752,7 +28770,16 @@
           "design": "The cover of the Suriname passport.",
           "source": "https://gicg.net/passport/sr/",
           "sha256": "c7934a234b7f1f91c3bf0a5b55484d7032eeafab55e4b7b50b9f8e0aa155495f",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Suriname's blue passport bears the national coat of arms, adopted 25 November 1975: a sailing ship, for Suriname's colonial-era trade and continuing role in international commerce, beside a royal palm for the rainforest covering two-thirds of the country and its agricultural industry. A green diamond bearing a yellow five-pointed star sits at the centre, its points read as the five continents from which Suriname's people descend, held by two indigenous men — the region's original inhabitants — beneath the motto \"Justitia, Pietas, Fides\" — \"Justice, Piety, Fidelity\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Suriname — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname"
+              }
+            ]
+          }
         },
         {
           "id": "sr-football-crest",
