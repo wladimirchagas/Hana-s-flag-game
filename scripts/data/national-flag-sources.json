@@ -2555,7 +2555,16 @@
           "design": "A Red Ensign defaced with the Star of India — the civil flag used in British India.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
           "sha256": "69a5f3f0327ee56cb005df5b5f7f0c4e0e516dab7bd8e757a58180c00b8595a5",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Star of India Red Ensign served as the civil flag for merchant vessels registered in British India from 1880, defacing the plain Red Ensign with the badge of the Most Exalted Order of the Star of India — an eleven-pointed radiant star around a blue disc bearing the motto 'Heaven's Light Our Guide', created by Queen Victoria in 1861 to honour service in India in a form acceptable across the subcontinent's religious communities. The Union Flag remained British India's official flag throughout, and this ensign was retired at independence and partition in 1947.",
+            "sources": [
+              {
+                "title": "Flags of British India — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_British_India"
+              }
+            ]
+          }
         },
         {
           "id": "bd-bengal",
@@ -7093,7 +7102,16 @@
           "to": 1912,
           "reuse": "historical-flags/qing-dynasty.png",
           "design": "A rectangular yellow field with a blue dragon chasing a red pearl. The triangular version dates from 1862; before that China had no national flag.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
+          "meaning": {
+            "description": "Adopted in 1889 as China's first true national flag — its predecessor, an 1862 naval pennant, was merely triangular — the Yellow Dragon Flag set an azure dragon chasing a flaming red pearl on a plain yellow field, the rectangular design chosen by Empress Dowager Cixi on the recommendation of the statesman Li Hongzhang. Yellow was the colour reserved exclusively for the Manchu emperors; the coiling dragon stood for imperial power and sovereignty, and the pearl for wealth and good fortune. It flew until the 1911 Xinhai Revolution ended the Qing dynasty, replaced by the New Republic's Five-Coloured Flag in January 1912.",
+            "sources": [
+              {
+                "title": "Flag of the Qing dynasty — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Qing_dynasty"
+              }
+            ]
+          }
         },
         {
           "id": "cn-pla",
@@ -15080,7 +15098,16 @@
           "design": "The heraldic banner of the medieval lordship — three crowns in pale, not the harp.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
           "sha256": "26fb561cf1f3667e1643671e2a74b406476fd6e70f157566955d2757162a86cd",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The arms of the medieval Lordship of Ireland (1171–1541, under the English crown): three gold crowns arranged vertically on blue within a white border, confirmed by a commission under Edward IV around 1467–8. The design is thought to descend from arms Irish lords adopted while fighting alongside Edward I in his Scottish campaigns, continuing in use even after Henry VIII's 1541 elevation of Ireland to a kingdom, before Henry's break with the Papacy saw the three crowns eventually give way to the harp as Ireland's emblem.",
+            "sources": [
+              {
+                "title": "Lordship of Ireland — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/gb_loi.html"
+              }
+            ]
+          }
         },
         {
           "id": "ie-st-patrick",
@@ -15715,7 +15742,16 @@
           "design": "A Red Ensign defaced with the Star of India — the ensign associated with British India, though the Union Flag was the official flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
           "sha256": "69a5f3f0327ee56cb005df5b5f7f0c4e0e516dab7bd8e757a58180c00b8595a5",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Star of India Red Ensign served as the civil flag for merchant vessels registered in British India from 1880, defacing the plain Red Ensign with the badge of the Most Exalted Order of the Star of India — an eleven-pointed radiant star around a blue disc bearing the motto 'Heaven's Light Our Guide', created by Queen Victoria in 1861 to honour service in India in a form acceptable across the subcontinent's religious communities. The Union Flag remained British India's official flag throughout, and this ensign was retired at independence and partition in 1947.",
+            "sources": [
+              {
+                "title": "Flags of British India — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_British_India"
+              }
+            ]
+          }
         },
         {
           "id": "in-eic",
