@@ -12596,7 +12596,20 @@
           "design": "The Defence Forces' flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
           "sha256": "0fc5168a0c87e2348e629378836267b849348b3ac4bbdf1a10658001577478de",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Irish Defence Forces is based on the national tricolour bearing the 'Óglaigh na hÉireann' emblem, the joint badge shared across the army, naval service and air corps. The emblem's name and design link the modern Defence Forces back to the Irish Volunteers, founded in November 1913, from which the state's military tradition descends.",
+            "sources": [
+              {
+                "title": "Defence Forces Ireland — Our Emblems",
+                "url": "https://irish-defence-forces.squarespace.com/our-emblems"
+              },
+              {
+                "title": "Wikipedia — List of flags of Ireland",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland"
+              }
+            ]
+          }
         },
         {
           "id": "ie-air-corps",
@@ -14706,7 +14719,20 @@
           "design": "A light blue ensign with the national flag in the canton and the air force roundel in the fly.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
           "sha256": "771888631a6d0b2f895817e2b3245b49604c8860e02e68682e50401024f2bb36",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Air Force Ensign of Kenya, flown since 1964, follows the same pattern the RAF Ensign set for former British colonies: a light blue field with the national flag in the canton and the air force's own roundel — concentric rings of black, white, red and green — in the fly. The roundel's colours repeat the national flag's own: black for the Kenyan people, red for the blood shed in the struggle for independence, and green for the land, separated by the white that stands for peace.",
+            "sources": [
+              {
+                "title": "Flags of the World — Kenyan Air Force flags",
+                "url": "https://www.crwflags.com/fotw/flags/ke%5Eaf.html"
+              },
+              {
+                "title": "Wikipedia — List of flags of Kenya",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya"
+              }
+            ]
+          }
         },
         {
           "id": "ke-naval-ensign",
