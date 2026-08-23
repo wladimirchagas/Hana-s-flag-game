@@ -4804,6 +4804,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Croatia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia" },
     ],
   },
+  "hr-passport": {
+    description: "Croatia's burgundy EU passport bears the national coat of arms: the šahovnica, a 5×5 red-and-white checkerboard shield that has marked Croatian rulers since at least the 10th century, officially adopted at the 1527 election of a Habsburg king in Cetin. Above it sits a crown formed from five smaller shields representing Croatia's own historic regions — Croatia proper, Dubrovnik, Dalmatia, Istria and Slavonia — asserting the unity of lands with distinct histories under one coat of arms.",
+    sources: [
+      { title: "Coat of arms of Croatia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia" },
+    ],
+  },
   "hr-football-crest": {
     description: "The šahovnica (checkerboard) is the national symbol of Croatia and Croats, in use since at least the 11th century and confirmed in an official Croatian coat of arms by 1495. A popular legend credits King Stjepan Držislav with winning the pattern in a chess match against a Venetian ruler, but the earliest records of that story date from long after the events it describes, so historians treat it as legend rather than fact. HNS is simply the federation's own initials, Hrvatski nogometni savez (Croatian Football Federation).",
     sources: [
@@ -4846,6 +4852,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The dexter half carries the Árpád stripes, four red and four silver, the silver traditionally read as four rivers — the Danube, the Tisza, the Drava and the Sava. The sinister half sets a silver double cross on a golden crown standing on the middle of three green hills, the trimount for the Tátra, Mátra and Fátra ranges; the double cross itself is a symbol of royal power, which appeared under Béla III (1172–1196). Above the shield sits the Holy Crown of Hungary, the crown of Saint Stephen, whose tilted cross is reproduced exactly as it stands on the real object.",
     sources: [
       { title: "Coat of arms of Hungary — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary" },
+    ],
+  },
+  "hu-passport": {
+    description: "Hungary's burgundy EU passport bears the national coat of arms: a shield split between the Árpád stripes — four red and four silver bars first recorded on a royal seal in 1202 and traditionally read as the Danube, Tisza, Dráva and Száva rivers, named for Hungary's founding Árpád dynasty — and three green hills bearing a golden crown from which a silver patriarchal cross rises, a symbol already appearing on Hungarian coinage by the late 12th century. Above the shield sits the Holy Crown of Hungary, the crown of Saint Stephen and the single most sacred object in Hungarian national identity, kept today in the Parliament Building in Budapest.",
+    sources: [
+      { title: "Coat of arms of Hungary — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary" },
+      { title: "Árpád stripes — Wikipedia", url: "https://en.wikipedia.org/wiki/%C3%81rp%C3%A1d_stripes" },
     ],
   },
   "hu-football-crest": {
@@ -5721,6 +5734,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Lithuania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lithuania" },
     ],
   },
+  "lt-passport": {
+    description: "Lithuania's burgundy EU passport bears the Vytis: a silver armoured knight on a galloping silver horse, sword raised overhead, on a red field. One of the oldest state coats of arms still in use in Europe, official since the early 15th century, the Vytis (\"the Chase\" or \"the Pursuer\") depicts the Grand Duke riding out to defend the realm and remains Lithuania's enduring national emblem.",
+    sources: [
+      { title: "Armorial of Lithuania — Wikipedia", url: "https://en.wikipedia.org/wiki/Armorial_of_Lithuania" },
+    ],
+  },
   "lt-football-crest": {
     description: "The knight and shield are a stylised Vytis — the armoured, sword-bearing knight of Lithuania's own coat of arms — carrying the double “Jagiellonian” cross adopted after Grand Duke Jogaila's baptism and 1386 marriage into the Polish crown. Read for centuries as the country's ruler or defender, the image took on a new meaning during Lithuania's 19th–20th century independence movements: a knight chasing invaders from his native land. “Lietuva” is simply the Lithuanian name for Lithuania.",
     sources: [
@@ -5779,6 +5798,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "lv-arms": {
     description: "The arms combine symbols of Latvian statehood with the arms of the historical regions. The golden sun in the blue upper field is freedom: it had been the badge of the Latvian Riflemen units of the Imperial Russian Army in the First World War, drawn with 17 rays for the 17 Latvian-inhabited districts. The three golden stars above the shield are the three historical regions — Vidzeme, Latgale and Kurzeme. Below, the red lion is the lion of the arms of Courland, standing for Courland and Semigallia and appearing there as early as 1565, while the silver griffin is Vidzeme and Latgale. The oak branches at the foot are the national tree.",
+    sources: [
+      { title: "Coat of arms of Latvia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
+    ],
+  },
+  "lv-passport": {
+    description: "Latvia's burgundy EU passport bears the national coat of arms: a golden sun rising in a blue field, echoing the badge worn by the Latvian Riflemen and symbolising freedom and self-determination, beneath three golden six-pointed stars representing the country's three historical regions — Vidzeme, Latgale and Kurzeme — united as one nation.",
     sources: [
       { title: "Coat of arms of Latvia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
     ],
@@ -7362,6 +7387,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "si-arms": {
     description: "The white three-peaked mountain is Triglav, Slovenia's highest and its national symbol; the two wavy lines beneath it are the country's rivers and its Adriatic coast. The three gold six-pointed stars arranged above are borrowed from the arms of the Counts of Celje, the most powerful medieval dynasty of the Slovene lands. Until Austria-Hungary dissolved, the Slovene lands had no single coat of arms — each historic province carried its own — so this emblem, designed at independence in 1991, is the first that represents the whole nation; the Triglav-and-sea motif had already appeared on the socialist-era emblem.",
+    sources: [
+      { title: "Coat of arms of Slovenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia" },
+    ],
+  },
+  "si-passport": {
+    description: "Slovenia's burgundy EU passport bears the national coat of arms, designed by Marko Pogačnik and adopted at independence in 1991 after Slovenia rejected several rival proposals: a blue shield showing Mount Triglav in white, the country's highest peak and a longstanding national symbol; below it, two wavy lines representing Slovenia's seas and rivers; and above, three six-pointed gold stars arranged in an inverted triangle, taken from the historic arms of the Counts of Celje, a medieval dynasty that once ruled much of Slovenian territory.",
     sources: [
       { title: "Coat of arms of Slovenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia" },
     ],
