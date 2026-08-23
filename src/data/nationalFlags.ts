@@ -5226,6 +5226,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Latvian Naval Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Latvian_Naval_Forces" },
     ],
   },
+  "lv-president": {
+    description: "The presidential flag, restored in 1995 in the form first used in 1923, bears the Great Coat of Arms of Latvia at its centre. The shield combines a rising golden sun for Vidzeme, a red lion for the historic duchies of Courland and Semigallia (Kurzeme and Zemgale), and a silver griffin gripping a sword for Latgale — a device that entered Latvian heraldry in 1566, when the region came under Lithuanian rule — bringing together emblems of the country's historic regions into a single national symbol.",
+    sources: [
+      { title: "Wikipedia — Coat of arms of Latvia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
+      { title: "Wikipedia — List of flags of Latvia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia" },
+    ],
+  },
   "lv-pm": {
     description: "A white field bears the same double-lined red cross as the presidential standard, but with the coat of arms — the rising sun of Latvia's shield — moved from the centre of the cross to the upper-left canton, distinguishing the Prime Minister's flag from the President's while keeping the same national colours and pattern.",
     sources: [
@@ -6247,6 +6254,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
     ],
   },
+  "ro-pm": {
+    description: "The flag of the Prime Minister of Romania is a square version of the national tricolour bordered in yellow, without the fringes or tassels of the presidential flag, marking it as belonging to the head of government rather than the head of state. Where the presidential flag's border is blue, the prime minister's is yellow — the same distinguishing device the socialist-era predecessor of this flag used, in a design descending from Romania's earlier state standards.",
+    sources: [
+      { title: "Wikipedia — List of Romanian flags", url: "https://en.wikipedia.org/wiki/List_of_Romanian_flags" },
+      { title: "Wikipedia — Flag of Romania", url: "https://en.wikipedia.org/wiki/Flag_of_Romania" },
+    ],
+  },
   "ro-arms": {
     description: "The arms adopted by parliament on 10 September 1992 are based on the lesser arms of the interwar Kingdom of Romania, used from 1922 to 1947 and designed in 1921 by the Transylvanian Hungarian heraldist József Sebestyén of Cluj-Napoca. The golden aquila with a cross in its beak, a sword and a sceptre in its talons, is the historic emblem of Wallachia; the escutcheon quarters the arms of the lands the modern state is made of — Wallachia, Moldavia, Transylvania, Oltenia with the Banat, and Dobruja with its dolphins for the Black Sea coast. Since 11 July 2016 the aquila has been crowned with a heraldic Steel Crown, a token of the monarchy that ruled between 1881 and 1947. The arms carry a particular weight in Romania because the symbol of the 1989 revolution was the flag with the communist arms cut out of its middle.",
     sources: [
@@ -6454,6 +6468,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Flags of the World — Army Flags (Singapore)", url: "https://www.crwflags.com/fotw/flags/sg%5Earmy.html" },
       { title: "Wikipedia — List of Singaporean flags", url: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    ],
+  },
+  "sg-air-force": {
+    description: "The Colour of the Republic of Singapore Air Force, carried since 1990, is the national flag with the air force's badge on the lower fly: a red lion's head set within a roundel. The roundel is the conventional aviation marking signifying unity of purpose, while the lion — adopted for the RSAF's badge in 1990, replacing an earlier yin-yang emblem used from 1973 — stands for courage, strength and resolve, echoing the lion motif drawn from Singapore's own name, Singapura, 'Lion City'.",
+    sources: [
+      { title: "Flags of the World — Air Force Flags (Singapore)", url: "https://www.crwflags.com/fotw/flags/sg%5Eairfo.html" },
+      { title: "National Library Board Singapore — Past and present emblems of the Republic of Singapore Air Force", url: "https://www.nlb.gov.sg/main/image-detail?cmsuuid=616ae5da-8059-46f6-b2b8-c7493889ede3" },
     ],
   },
   "sg-president": {
@@ -6727,6 +6748,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A yellow field — the colour of Thai royalty and, in this context, of Buddhism — bears the red Garuda, the mythical bird-man mount of the Hindu god Vishnu (Narayana). Thai kings have long been regarded as incarnations of Narayana, so the Garuda, shown tearing the serpent Naga, came to symbolise the divine authority and protective power of the monarchy; it has served this role since the Ayutthaya kingdom, and the standard's present form dates from Vajiravudh's (Rama VI's) 1910 design.",
     sources: [
       { title: "Royal Standard of Thailand — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Standard_of_Thailand" },
+    ],
+  },
+  "th-queen": {
+    description: "The Standard of the Queen of Thailand repeats the King's yellow standard and its central Garuda emblem, but with a swallow-tailed fly added to the end. The swallow-tail distinguishes the flags of the Queen and other female members of the royal family from the plain square standards of male royals, a convention set out in a Royal Decree issued in 1911 under King Rama VI specifically to give the Queen her own pair of standards.",
+    sources: [
+      { title: "Flags of the World — Queen's Royal Standard and Pennant (Thailand)", url: "https://www.fotw.info/flags/th%5Equeen.html" },
+      { title: "Wikipedia — Royal Standard of Thailand", url: "https://en.wikipedia.org/wiki/Royal_Standard_of_Thailand" },
     ],
   },
   "th-regent": {
