@@ -1422,7 +1422,16 @@
           "design": "A black-over-gold horizontal bicolour, the dynastic colours of the House of Habsburg, flown as the flag of the Austrian Empire and Austria-Hungary until the monarchy fell in 1918. The red-white-red now flown is far older, dating to the medieval Babenberg dukes.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Austria",
           "sha256": "90526cda3e3240f189c776274108f49fe46a4bc83af28317793759e00f4d6549",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "The Habsburg Monarchy's black-over-gold flag drew on colours long used by the House of Habsburg as Holy Roman Emperors, themselves derived from the black double-headed eagle on a gold field that symbolised imperial authority over both secular and religious, western and eastern, realms. Adopted in 1804 as the Austrian Empire's own flag and flown through Austria-Hungary until 1918, it was set aside when the empire fell in favour of the far older red-white-red associated with the medieval Babenberg dukes.",
+            "sources": [
+              {
+                "title": "Flag of the Habsburg monarchy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Habsburg_monarchy"
+              }
+            ]
+          }
         },
         {
           "id": "at-state",
@@ -1530,7 +1539,16 @@
           "design": "The design as approved by Edward VII, with every star of the Southern Cross given seven points.",
           "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
           "sha256": "9c0331bb58b398a14eeeaf7d53db6fac87b54c80cbd80027756b1a44e7464f4b",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Australia's first Commonwealth flag was chosen from over 32,000 entries in the 1901 Federal Flag design competition, combining the Union Jack — acknowledging British settlement — with a Commonwealth Star of six points, one for each of the six original states, and the Southern Cross marking Australia's place in the southern sky. King Edward VII's 1903 approval standardised every Southern Cross star to seven points; the seventh point of the Commonwealth Star, for the territories, was added later still in 1908.",
+            "sources": [
+              {
+                "title": "The Australian National Flag — Australian Government",
+                "url": "https://www.pmc.gov.au/resources/australian-symbols-booklet/national-symbols/australian-national-flag"
+              }
+            ]
+          }
         },
         {
           "id": "au-1901",
@@ -1543,7 +1561,16 @@
           "design": "The winning entry in the 1901 Federal Flag design competition: a six-pointed Commonwealth Star, and Southern Cross stars of differing point counts.",
           "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
           "sha256": "b999573ceced52d6fc3c1f4dfb3f7295e83fb85ba9b9f7ef183590d455e9e242",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Australia's first Commonwealth flag was chosen from over 32,000 entries in the 1901 Federal Flag design competition, combining the Union Jack — acknowledging British settlement — with a Commonwealth Star of six points, one for each of the six original states, and the Southern Cross marking Australia's place in the southern sky. King Edward VII's 1903 approval standardised every Southern Cross star to seven points; the seventh point of the Commonwealth Star, for the territories, was added later still in 1908.",
+            "sources": [
+              {
+                "title": "The Australian National Flag — Australian Government",
+                "url": "https://www.pmc.gov.au/resources/australian-symbols-booklet/national-symbols/australian-national-flag"
+              }
+            ]
+          }
         },
         {
           "id": "au-official-national",
@@ -2306,7 +2333,16 @@
           "design": "The blue flag with wavy white lines and a gold sun, of the short-lived federation of British Caribbean colonies Barbados belonged to.",
           "source": "https://en.wikipedia.org/wiki/List_of_Barbadian_flags",
           "sha256": "30be5b49804366875b68cc52e75be1868c74489379b22d4855a1b9c59c10144e",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Designed by the artist Edna Manley, the West Indies Federation's flag showed four wavy white stripes on blue, representing the Caribbean Sea, with an orange-gold disc at the centre for the sun shining on its waters — a design meant to evoke the shared sea uniting the federation's scattered island territories.",
+            "sources": [
+              {
+                "title": "The West Indies Federation Flag — The Flag Institute",
+                "url": "https://www.flaginstitute.org/wp/flag-facts/the-west-indies-federation-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "bb-colonial",
@@ -2916,7 +2952,16 @@
           "design": "Black, white and red horizontal bands — for the three Volta rivers (the Black, White and Red Volta) — flown by the Republic of Upper Volta until it was renamed in 1984.",
           "source": "https://en.wikipedia.org/wiki/Republic_of_Upper_Volta",
           "sha256": "5f4545154b54982935b11ff323556da55ce58366668b63c4537c6e353054dd30",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Upper Volta's flag used black, white and red horizontal bands for the country's three namesake rivers — the Black Volta, White Volta and Red Volta. When the country was renamed Burkina Faso in 1984, this geographic scheme was replaced by the pan-African red-green-gold now flown.",
+            "sources": [
+              {
+                "title": "Upper Volta (Burkina Faso, 1959-1984) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/bf_uv.html"
+              }
+            ]
+          }
         },
         {
           "id": "bf-french",
@@ -3040,7 +3085,16 @@
           "design": "The national tricolour defaced in the canton with the socialist state emblem — the lion, gearwheel and wheat of the People's Republic.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bulgaria",
           "sha256": "ddcbce86adfa4a2c5f6f097fe6ed22d14ea0953fb39cb55602dfc63f729f6f8a",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The communist-era flag defaced Bulgaria's white-green-red tricolour with the People's Republic's state emblem: a lion — Bulgaria's historic heraldic symbol — wreathed in wheat for prosperity under the planned economy, above a cogwheel for industry, crowned by a red star for communism, with the dates 681 (the founding of the first Bulgarian state) and 1944 (liberation from Nazi occupation) on a ribbon below.",
+            "sources": [
+              {
+                "title": "Emblem of the People's Republic of Bulgaria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_the_People's_Republic_of_Bulgaria"
+              }
+            ]
+          }
         },
         {
           "id": "bg-ottoman",
@@ -3180,7 +3234,16 @@
           "design": "The earlier flag, with eight white points along the serration, before the number was reduced to five in 2002.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bahrain",
           "sha256": "eadfc68c4ef3f3e666c94fccf800404a895cad77909cc28ddf3be2add4ba6082",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Bahrain's flag pairs a red field, for the blood of its people, with a white band marking the maritime treaty Bahrain signed with Britain in 1820 — the white stripe distinguished it from the plain red flags historically flown by pirates in the Gulf. The serrated boundary between the two colours, introduced in 1932 to set Bahrain's flag apart from its neighbours', carried eight points in this version, before the number was fixed at five — one for each pillar of Islam — in 2002.",
+            "sources": [
+              {
+                "title": "Flag of Bahrain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Bahrain"
+              }
+            ]
+          }
         },
         {
           "id": "bh-1932",
@@ -3193,7 +3256,16 @@
           "design": "The first serrated flag, adopted in 1932 to distinguish Bahrain's red banner from those of its neighbours.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bahrain",
           "sha256": "0a72e9838577e9022826f075821230931b9be5bfefdeb41bbb826907fea94324",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Bahrain's flag pairs a red field, for the blood of its people, with a white band marking the maritime treaty Bahrain signed with Britain in 1820 — the white stripe distinguished it from the plain red flags historically flown by pirates in the Gulf. In 1932 the boundary between the two colours was serrated for the first time, so Bahrain's flag could be told apart from its neighbours' at a glance; the exact number of points has varied since.",
+            "sources": [
+              {
+                "title": "Flag of Bahrain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Bahrain"
+              }
+            ]
+          }
         },
         {
           "id": "bh-arms",
@@ -3443,7 +3515,16 @@
           "design": "A green field with a red star in the canton, flown by the Marxist-Leninist People's Republic of Benin.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Benin",
           "sha256": "6023dff4058a876872207c9c35ac732a0c2fa1b2f04303e3fc69e477c49854b3",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The People's Republic of Benin's flag, adopted after the 1975 turn to Marxism-Leninism, set a red star in the canton of a plain green field — green for agriculture, red for revolution and socialism, and the star for the unity of all revolutionary forces against the country's enemies. It was itself a colour-inversion of the ruling People's Revolutionary Party's own red flag, and was retired when Benin abandoned Marxism in 1990.",
+            "sources": [
+              {
+                "title": "People's Republic of Benin (1975-1990) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/bj-prb.html"
+              }
+            ]
+          }
         },
         {
           "id": "bj-french",
@@ -4031,7 +4112,16 @@
           "design": "23 stars — the celestial sphere as redrawn when Acre's star and Guanabara's were both carried.",
           "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
           "sha256": "7af6098bc795d5ec5d0cd9e509be38cc39c7be210eefdb60bd71d1ed56ede5e1",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Brazil's republican flag keeps the green field and yellow rhombus of the empire it replaced, but sets a blue celestial sphere at the centre showing the night sky exactly as it appeared over Rio de Janeiro on the morning the Republic was proclaimed, 15 November 1889 — each star a Brazilian state, their number growing as new states joined the union. The curved banner reads \"Ordem e Progresso\" (\"Order and Progress\"), a motto drawn from the positivist philosopher Auguste Comte that inspired the Republic's founders.",
+            "sources": [
+              {
+                "title": "Flag of Brazil — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+              }
+            ]
+          }
         },
         {
           "id": "br-1960",
@@ -4041,7 +4131,16 @@
           "to": 1968,
           "reuse": "historical-flags/brazil-1960.svg",
           "design": "22 stars — Guanabara's admission as a state added the 22nd.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "meaning": {
+            "description": "Brazil's republican flag keeps the green field and yellow rhombus of the empire it replaced, but sets a blue celestial sphere at the centre showing the night sky exactly as it appeared over Rio de Janeiro on the morning the Republic was proclaimed, 15 November 1889 — each star a Brazilian state, their number growing as new states joined the union. The curved banner reads \"Ordem e Progresso\" (\"Order and Progress\"), a motto drawn from the positivist philosopher Auguste Comte that inspired the Republic's founders.",
+            "sources": [
+              {
+                "title": "Flag of Brazil — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+              }
+            ]
+          }
         },
         {
           "id": "br-1889-republic",
@@ -4051,7 +4150,16 @@
           "to": 1960,
           "reuse": "historical-flags/brazil-1889.svg",
           "design": "The first republican flag, with 21 stars, adopted 19 November 1889.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "meaning": {
+            "description": "Brazil's republican flag keeps the green field and yellow rhombus of the empire it replaced, but sets a blue celestial sphere at the centre showing the night sky exactly as it appeared over Rio de Janeiro on the morning the Republic was proclaimed, 15 November 1889 — each star a Brazilian state, their number growing as new states joined the union. The curved banner reads \"Ordem e Progresso\" (\"Order and Progress\"), a motto drawn from the positivist philosopher Auguste Comte that inspired the Republic's founders.",
+            "sources": [
+              {
+                "title": "Flag of Brazil — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+              }
+            ]
+          }
         },
         {
           "id": "br-1889-provisional",
@@ -4083,7 +4191,22 @@
           "to": 1889,
           "reuse": "historical-flags/empire-of-brazil.png",
           "design": "The imperial arms on a yellow rhombus on a green field; the arms were redrawn in 1853 as provinces were added.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "meaning": {
+            "description": "The Empire of Brazil's flag set the imperial coat of arms on a yellow rhombus over a green field. Emperor Pedro I's 1822 decree gave the colours a patriotic reading — green for spring, yellow for gold — but they were in fact the dynastic colours of his own House of Braganza (green) and his wife Maria Leopoldina's House of Habsburg (yellow); the arms themselves carried the imperial crown, the cross of the Order of Christ, and branches of coffee and tobacco, two of the empire's main exports, ringed by stars for its provinces.",
+            "myths": [
+              {
+                "claim": "Green represents Brazil's forests and yellow represents its gold and mineral wealth.",
+                "reality": "This reading was popularised only in 1889, after the monarchy fell, specifically to obscure the flag's dynastic origin: green was the colour of the ruling House of Braganza, yellow of the Habsburgs Pedro I had married into. The republic kept the same field colours for its own flag, and the forests-and-gold story has been retold ever since as if it were the original meaning."
+              }
+            ],
+            "sources": [
+              {
+                "title": "Empire of Brazil, 1822-1889 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/br_emp.html"
+              }
+            ]
+          }
         },
         {
           "id": "br-1822-kingdom",
