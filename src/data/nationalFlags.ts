@@ -4217,6 +4217,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — White Ensign", url: "https://en.wikipedia.org/wiki/White_Ensign" },
     ],
   },
+  "gh-civil-ensign": {
+    description: "Ghana's civil ensign is a red field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the Red Ensign marked a merchant vessel — distinct from the White Ensign flown by warships and the Blue Ensign flown by government service ships. Ghana, the former British colony of the Gold Coast, kept this colour-coded convention after independence in 1957, replacing the Union Flag in the canton with its own.",
+    sources: [
+      { title: "Wikipedia — Red Ensign", url: "https://en.wikipedia.org/wiki/Red_Ensign" },
+      { title: "Wikipedia — List of Ghanaian flags", url: "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags" },
+    ],
+  },
   "gh-president": {
     description: "The national tricolour is charged with Ghana's coat of arms, designed by Amon Kotei and introduced at independence on 4 March 1957: a shield supported by two golden tawny eagles, chosen as the strongest of all birds to signify the safety and defence of Ghana's newly won independence, each wearing the Order of the Star of Ghana.",
     sources: [
@@ -5806,6 +5813,20 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Flags of the World — Nigerian Naval Flags", url: "https://www.crwflags.com/fotw/flags/ng%5Enav.html" },
       { title: "Wikipedia — Coat of arms of Nigeria", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria" },
+    ],
+  },
+  "ng-civil-ensign": {
+    description: "Nigeria's civil ensign is a red field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the Red Ensign marked a merchant vessel — distinct from the White Ensign flown by warships and the Blue Ensign flown by government service ships. Nigeria, formerly a British colony and protectorate, kept this colour-coded convention after independence in 1960, replacing the Union Flag in the canton with its own.",
+    sources: [
+      { title: "Wikipedia — Red Ensign", url: "https://en.wikipedia.org/wiki/Red_Ensign" },
+      { title: "Wikipedia — List of Nigerian flags", url: "https://en.wikipedia.org/wiki/List_of_Nigerian_flags" },
+    ],
+  },
+  "ng-state-ensign": {
+    description: "Nigeria's state ensign is a blue field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the Blue Ensign marked a non-military government vessel — distinct from the White Ensign flown by warships and the Red Ensign flown by merchant ships. Nigeria, formerly a British colony and protectorate, kept this colour-coded convention after independence in 1960, replacing the Union Flag in the canton with its own.",
+    sources: [
+      { title: "Wikipedia — Blue Ensign", url: "https://en.wikipedia.org/wiki/Blue_Ensign" },
+      { title: "Wikipedia — List of Nigerian flags", url: "https://en.wikipedia.org/wiki/List_of_Nigerian_flags" },
     ],
   },
   "ng-president": {
