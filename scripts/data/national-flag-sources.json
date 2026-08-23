@@ -20285,7 +20285,16 @@
           "design": "The cover of the Malta passport.",
           "source": "https://gicg.net/passport/mt/",
           "sha256": "ea86a583a3c1020acd7149f549d5efd9afb571a321a918272d0ed8e5a0df2236",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Malta's burgundy EU passport bears the country's coat of arms, whose shield shows the national flag's own white-and-red halves charged with the George Cross — awarded to the island by King George VI in 1942 for its people's resistance under siege in the Second World War, and kept on the flag and arms ever since as a permanent mark that \"Malta does not break\". A mural crown of five towers above the shield represents the island's fortress walls, flanked by an olive branch for peace and a palm branch for victory and honour.",
+            "sources": [
+              {
+                "title": "The Hidden Power Behind the Coat of Arms of Malta — Cultural Malta",
+                "url": "https://culturalmalta.org/coat-of-arms-of-malta/"
+              }
+            ]
+          }
         },
         {
           "id": "mt-football-crest",
@@ -24558,7 +24567,16 @@
           "design": "The cover of the Poland passport.",
           "source": "https://gicg.net/passport/pl/",
           "sha256": "1f26694ada89ecd74d15803e58cacdce4b3aee26fecfb6288b248b533e4d0026",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Poland's burgundy EU passport bears the White Eagle, crowned, on a red field, its head turned to the right — a design dating to the 13th century and given its modern form in 1919, after Poland regained independence following the First World War. The eagle's crown was stripped away under communist rule (1944–1989) to erase the symbol's monarchical associations, then restored the moment Poland threw off communist government, making the crowned eagle itself a marker of the country's return to sovereignty.",
+            "sources": [
+              {
+                "title": "Why the Polish Eagle? The Story Behind Poland's Loved Symbol",
+                "url": "https://www.expatspoland.com/polish-eagle-means-poland/"
+              }
+            ]
+          }
         },
         {
           "id": "pl-football-crest",
@@ -25604,7 +25622,16 @@
           "design": "The cover of the Romania passport.",
           "source": "https://gicg.net/passport/ro/",
           "sha256": "f0bba6895249bee239ce6fd44d8e7f3c1b965ee3328356f37178fac325d07a98",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Romania's passport bears the national coat of arms: a golden eagle holding a cross in its beak and a mace and sword in its talons — the eagle recalling ancient Roman and Dacian heraldic tradition, from which Romania takes both its name and its claim to descent from Rome, while the cross, mace and sword together assert the country's Christian faith and its readiness to defend it.",
+            "sources": [
+              {
+                "title": "Coat of arms of Romania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania"
+              }
+            ]
+          }
         },
         {
           "id": "ro-football-crest",
@@ -27542,7 +27569,16 @@
           "design": "The cover of the Slovakia passport.",
           "source": "https://gicg.net/passport/sk/",
           "sha256": "ea9d46fe727e8d8a84e9df1d747d29367b5756194be3c3f367c2178bbbee42c4",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Slovakia's passport bears the national coat of arms on its cover: a red, early-Gothic shield charged with a silver double cross standing on the central peak of a dark-blue three-peaked mountain. The double cross marks Slovakia's Christian heritage, while the three peaks are traditionally read as the Tatra, Fatra and Matra mountain ranges — historic high points of the wider Slovak lands.",
+            "sources": [
+              {
+                "title": "Coat of arms of Slovakia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia"
+              }
+            ]
+          }
         }
       ]
     },

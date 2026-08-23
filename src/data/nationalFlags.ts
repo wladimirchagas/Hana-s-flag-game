@@ -6083,6 +6083,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Malta — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta" },
     ],
   },
+  "mt-passport": {
+    description: "Malta's burgundy EU passport bears the country's coat of arms, whose shield shows the national flag's own white-and-red halves charged with the George Cross — awarded to the island by King George VI in 1942 for its people's resistance under siege in the Second World War, and kept on the flag and arms ever since as a permanent mark that \"Malta does not break\". A mural crown of five towers above the shield represents the island's fortress walls, flanked by an olive branch for peace and a palm branch for victory and honour.",
+    sources: [
+      { title: "The Hidden Power Behind the Coat of Arms of Malta — Cultural Malta", url: "https://culturalmalta.org/coat-of-arms-of-malta/" },
+    ],
+  },
   "mt-football-crest": {
     description: "The Maltese cross is Malta's best-known national symbol, associated with the Knights Hospitaller (Knights of Malta), who ruled the islands from 1530 to 1798; its eight points are traditionally read as the eight beatitudes or the eight langues (national groupings) of the Order's knights.",
     sources: [
@@ -6856,6 +6862,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Poland" },
     ],
   },
+  "pl-passport": {
+    description: "Poland's burgundy EU passport bears the White Eagle, crowned, on a red field, its head turned to the right — a design dating to the 13th century and given its modern form in 1919, after Poland regained independence following the First World War. The eagle's crown was stripped away under communist rule (1944–1989) to erase the symbol's monarchical associations, then restored the moment Poland threw off communist government, making the crowned eagle itself a marker of the country's return to sovereignty.",
+    sources: [
+      { title: "Why the Polish Eagle? The Story Behind Poland's Loved Symbol", url: "https://www.expatspoland.com/polish-eagle-means-poland/" },
+    ],
+  },
   "pl-football-crest": {
     description: "Poland's white eagle is a centuries-old national emblem, and this 2011 redesign keeps the eagle and the ball — the two elements the federation's own supporters most wanted retained — reworked into an abstract, dynamic form rather than the literal bird of the older crests. PZPN is the association's own initials, Polski Związek Piłki Nożnej (Polish Football Association).",
     sources: [
@@ -7035,6 +7047,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ro-arms": {
     description: "The arms adopted by parliament on 10 September 1992 are based on the lesser arms of the interwar Kingdom of Romania, used from 1922 to 1947 and designed in 1921 by the Transylvanian Hungarian heraldist József Sebestyén of Cluj-Napoca. The golden aquila with a cross in its beak, a sword and a sceptre in its talons, is the historic emblem of Wallachia; the escutcheon quarters the arms of the lands the modern state is made of — Wallachia, Moldavia, Transylvania, Oltenia with the Banat, and Dobruja with its dolphins for the Black Sea coast. Since 11 July 2016 the aquila has been crowned with a heraldic Steel Crown, a token of the monarchy that ruled between 1881 and 1947. The arms carry a particular weight in Romania because the symbol of the 1989 revolution was the flag with the communist arms cut out of its middle.",
+    sources: [
+      { title: "Coat of arms of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
+    ],
+  },
+  "ro-passport": {
+    description: "Romania's passport bears the national coat of arms: a golden eagle holding a cross in its beak and a mace and sword in its talons — the eagle recalling ancient Roman and Dacian heraldic tradition, from which Romania takes both its name and its claim to descent from Rome, while the cross, mace and sword together assert the country's Christian faith and its readiness to defend it.",
     sources: [
       { title: "Coat of arms of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
     ],
@@ -7362,6 +7380,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "sk-arms": {
     description: "The emblem runs through three periods that follow on from each other — Byzantine (6th–12th centuries), Hungarian (12th–20th) and Slovak (19th–20th). The double cross came into the region's heraldry from Byzantium and is read in modern interpretation as Slovakia standing heir and guardian to the Christian tradition. The three peaks it stands on are the mountain ranges Tatra, Mátra and Fátra, which stood for the northern mountainous part of the Kingdom of Hungary — the Tatra and the Fátra lie in present-day Slovakia. The current drawing was made in 1990 by the painter Ladislav Čisárik and the heraldist Ladislav Vrtel, commissioned after the Velvet Revolution.",
+    sources: [
+      { title: "Coat of arms of Slovakia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia" },
+    ],
+  },
+  "sk-passport": {
+    description: "Slovakia's passport bears the national coat of arms on its cover: a red, early-Gothic shield charged with a silver double cross standing on the central peak of a dark-blue three-peaked mountain. The double cross marks Slovakia's Christian heritage, while the three peaks are traditionally read as the Tatra, Fatra and Matra mountain ranges — historic high points of the wider Slovak lands.",
     sources: [
       { title: "Coat of arms of Slovakia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia" },
     ],
