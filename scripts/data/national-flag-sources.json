@@ -11673,7 +11673,20 @@
           "design": "The naval ensign.",
           "source": "https://en.wikipedia.org/wiki/List_of_Guyanese_flags",
           "sha256": "68fb7a5b34e4515ce63c283ea167fc112aa77af201d115bbb574ed0a520244ed",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Guyana's naval ensign is the 'Golden Arrowhead' national flag stretched to elongated 1:2 proportions for maritime display, in place of the flag's standard 3:5 shape flown ashore. It replaced the colonial-era Blue Ensign defaced with Guyana's territorial badge once the country gained independence in 1966, keeping the same design — green for agriculture and forests, gold for mineral wealth, red for zeal, black for endurance and white for the country's rivers — that the new national flag had itself just adopted.",
+            "sources": [
+              {
+                "title": "Flags of the World — Guyana: Military Flags",
+                "url": "https://www.crwflags.com/fotw/flags/gy%5E.html"
+              },
+              {
+                "title": "Wikipedia — Flag of Guyana",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Guyana"
+              }
+            ]
+          }
         },
         {
           "id": "gy-arms",

@@ -4404,6 +4404,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Guinea-Bissau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
     ],
   },
+  "gy-naval-ensign": {
+    description: "Guyana's naval ensign is the 'Golden Arrowhead' national flag stretched to elongated 1:2 proportions for maritime display, in place of the flag's standard 3:5 shape flown ashore. It replaced the colonial-era Blue Ensign defaced with Guyana's territorial badge once the country gained independence in 1966, keeping the same design — green for agriculture and forests, gold for mineral wealth, red for zeal, black for endurance and white for the country's rivers — that the new national flag had itself just adopted.",
+    sources: [
+      { title: "Flags of the World — Guyana: Military Flags", url: "https://www.crwflags.com/fotw/flags/gy%5E.html" },
+      { title: "Wikipedia — Flag of Guyana", url: "https://en.wikipedia.org/wiki/Flag_of_Guyana" },
+    ],
+  },
   "gy-president": {
     description: "The President's own coat of arms — distinct from the national one in that it omits the helmet, the monarchical insignia the national arms rest on — bears an Amerindian feather headdress (the Cacique Crown) marking Guyana's indigenous peoples, flanked by two diamonds for the mining industry; two jaguars hold a pickaxe, a sugar cane stalk and a rice stalk for labour and the country's two staple agricultural industries, on a shield showing the Victoria Regia lily (the national flower) and three wavy blue bars for Guyana's great rivers, with the Canje pheasant, a locally native bird, beneath.",
     sources: [
