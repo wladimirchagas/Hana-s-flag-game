@@ -28439,7 +28439,16 @@
           "design": "The tricolour of the autonomous principality, before full independence in 1878.",
           "source": "https://en.wikipedia.org/wiki/List_of_Serbian_flags",
           "sha256": "fa20173a7afb89e69c10b91d7c04220ee457736eacb06e823e7f55b1f8e50055",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Serbia's red-blue-white tricolour traces to the 1804 uprising against Ottoman rule, when Serbian rebels adopted the white-blue-red flag of Russia with its stripes rearranged; the Ottoman sultan formally recognised the design for the autonomous Principality of Serbia in 1835. Serbia's colours became known as the pan-Slavic colours and were adopted by several other Slavic peoples during the revolutionary movements of 1848.",
+            "sources": [
+              {
+                "title": "Principality of Serbia (1830-1882) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/rs_pr.html"
+              }
+            ]
+          }
         },
         {
           "id": "rs-president",
@@ -28652,7 +28661,16 @@
           "priorPolity": "the Russian Empire",
           "reuse": "historical-flags/russia-1858.svg",
           "design": "Black over yellow over white — the empire's state flag under Alexander II's 1858 decree, replaced by the tricolour in 1896.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Russia"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Russia",
+          "meaning": {
+            "description": "The black-yellow-white flag was approved by Emperor Alexander II in 1858, drawing its colours from the imperial coat of arms — black for the Byzantine double-headed eagle, yellow (gold) for the eagle's field, and white for the horse of Saint George shown on Moscow's own emblem. It never displaced the white-blue-red flag in everyday use and remained largely a heraldic, official banner until Emperor Nicholas II formally recognised the white-blue-red as Russia's national flag in 1896.",
+            "sources": [
+              {
+                "title": "Flag of Russia — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Russia"
+              }
+            ]
+          }
         },
         {
           "id": "ru-president",
@@ -33608,7 +33626,16 @@
           "design": "The green-black-green flag of independent Tanganyika, which united with Zanzibar in 1964 to form Tanzania.",
           "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
           "sha256": "d450f2fdf3abf4bcb60a84bb3b420dc5ef48d7ad5cd7b7522d82305ef3c23615",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Tanganyika's 1961 independence flag took its green-black-green scheme from the Tanganyika African National Union (TANU), the party that led the country to independence: green for the land and its agricultural resources, black for the Tanganyikan people. Yellow fimbriations were added at Britain's suggestion; the design flew until Tanganyika united with Zanzibar in 1964 to form Tanzania.",
+            "sources": [
+              {
+                "title": "Flag of Tanzania — Edarabia",
+                "url": "https://www.edarabia.com/tanzania/flag/"
+              }
+            ]
+          }
         },
         {
           "id": "tz-zanzibar",
@@ -33807,7 +33834,16 @@
           "design": "Red over azure with the gold hammer, sickle and star — the republic's flag within the Soviet Union.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
           "sha256": "8611d36301f6b0d65f5d91ea77bdda2c81b194c9d5d731a2c22f59ea82f8c8ea",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Ukrainian SSR's flag followed the Soviet Union's own red field and gold hammer-and-sickle-and-star canton, adding a horizontal azure stripe along the base from 1949 to distinguish the republic. Red stood for the revolutionary struggle of the working masses and the hammer and sickle for the union of factory workers and peasants; Ukraine had been a founding republic of the USSR since 1922, and this flag remained official until independence in 1991.",
+            "sources": [
+              {
+                "title": "Flag of the Soviet Union — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Soviet_Union"
+              }
+            ]
+          }
         },
         {
           "id": "ua-president",
