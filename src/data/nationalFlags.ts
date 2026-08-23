@@ -8574,6 +8574,27 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
     ],
   },
+  "pe-1884": {
+    description: "A 1884 standardisation of the 1825 vertical triband and arms, used as Peru's single national flag until a 1950 decree split the design into three purposes still used today: a plain triband without arms for general civil use, and the arms-bearing version reserved for state and naval/war use.",
+    sources: [
+      { title: "List of flags of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    ],
+  },
+  "pe-1825": {
+    description: "Fixed by Congress in 1825, this fourth flag set the vertical red-white-red triband still flown today and replaced the earlier sun emblem with Peru's national coat of arms — a vicuña, a cinchona tree and a cornucopia spilling coins, representing the country's animal, plant and mineral wealth.",
+    sources: [
+      { title: "Flag of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Peru" },
+    ],
+  },
+  "pe-1822": {
+    description: "Designed by José Bernardo de Tagle, Marquis of Torre Tagle, this third flag of independent Peru replaced San Martín's earlier diagonally-quartered design with plainer red-and-white bands bearing a red rising sun — a nod to Inti, the Inca sun god. Red and white are traditionally read as standing for the blood shed for independence and for peace, though the popular story that San Martín chose them after seeing red-and-white flamingos on the Peruvian coast is a later legend, first recorded by the writer Abraham Valdelomar, rather than a contemporary account.",
+    myths: [
+      { claim: "San Martín chose Peru's red and white after seeing flocks of red-and-white flamingos on the coast at Pisco.", reality: "This is a popular legend recorded decades later by the writer Abraham Valdelomar, not a contemporary account of San Martín's reasoning; historians treat it as folklore rather than an established fact." },
+    ],
+    sources: [
+      { title: "The History of the Peruvian National Flag — LimaEasy", url: "https://www.limaeasy.com/peru-guide/history-of-peru/national-symbols-of-peru/the-history-of-the-peruvian-national-flag" },
+    ],
+  },
   "pe-1821": {
     description: "José de San Martín's first flag for Peru, decreed in 1820 and raised over Lima's main square at the 1821 declaration of independence, divided the field diagonally into red and white quarters around a central sun rising over mountains and sea within a laurel wreath. Red is read as the blood shed for independence and white as purity and peace; a popular story holds San Martín took the colours from a flock of red-and-white flamingos he saw in the Paracas desert, though historians also point to the red of Chile's flag and the white of Argentina's, honouring the mixed army he led.",
     sources: [
@@ -9307,6 +9328,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
     ],
   },
+  "rw-1962": {
+    description: "Flown unchanged from independence in 1962 until 2001, this red-yellow-green vertical tricolour used the same Pan-African colours as neighbouring Guinea's flag, with a black letter R added at the centre in September 1961 to tell the two apart — standing for Rwanda, and also read as marking the country's 1961 revolution and referendum that abolished the monarchy. The government retired the flag in 2001, explaining that its colours and associations had become tied to the ethnic violence culminating in the 1994 genocide, and adopted a new design alongside a new national anthem.",
+    sources: [
+      { title: "Flag of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    ],
+  },
   "rw-belgium": {
     description: "Belgium's black-yellow-red tricolour is drawn from the heraldry of the Duchy of Brabant — a yellow lion with red claws and tongue on a black shield. The black recalls the shield's field, yellow the fertile land and the values of liberty and justice, and red the lion's claws and the courage and sacrifice of the Belgian people; the medieval Brabant tricolour evolved into today's flag over the following centuries.",
     sources: [
@@ -9347,6 +9374,30 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shahada — the Islamic declaration of faith, \"There is no god but God; Muhammad is the messenger of God\" — on plain green traces to the Wahhabi reform movement of the late 18th century, whose religious authority the House of Saud first rose to power alongside; green itself was chosen for its association with Islam. A horizontal sword was added beneath the shahada in 1902, when Abdulaziz ibn Saud took the title Sultan of Nejd, standing for justice and for the strength by which the kingdom was won.",
     sources: [
       { title: "The Saudi National Flag — Saudipedia", url: "https://saudipedia.com/en/article/1691/government-and-politics/national-symbols/the-saudi-national-flag" },
+    ],
+  },
+  "sa-1934": {
+    description: "A 1934 revision of the 1932 kingdom flag that narrowed the white vertical stripe at the hoist, an intermediate step on the way to the plain green field (without any white stripe) reached by 1938 and the horizontally-set shahada-and-sword design standardised in 1973.",
+    sources: [
+      { title: "Historic Flags (Saudi Arabia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sa_hist.html" },
+    ],
+  },
+  "sa-1932": {
+    description: "Adopted when the Kingdom of Hejaz and Nejd was proclaimed the Kingdom of Saudi Arabia in 1932, this green flag carried the shahada with a white vertical stripe at the hoist and a sheathed scimitar sword — the sword had first appeared on the Nejdi flag in 1902, when Abdulaziz ibn Saud took the title Sultan of Nejd, and stood for the security and justice brought by the House of Saud.",
+    sources: [
+      { title: "Flag of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" },
+    ],
+  },
+  "sa-nejd": {
+    description: "The flag of the Sultanate of Nejd, proclaimed by Abdulaziz ibn Saud in 1921: the same green field and shahada of the earlier Saudi states, with a plain white band added at the hoist. Nejd united with the Hejaz in 1932 to form the Kingdom of Saudi Arabia.",
+    sources: [
+      { title: "Historic Flags (Saudi Arabia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sa_hist.html" },
+    ],
+  },
+  "sa-diriyah": {
+    description: "The plain green flag bearing the shahada — the Islamic declaration of faith, 'There is no god but God, Muhammad is the messenger of God' — flown by the Emirate of Diriyah from its founding in 1744, the first Saudi state and the direct ancestor of the flag's green field and script carried forward by every later Saudi state, including the kingdom today.",
+    sources: [
+      { title: "Flag of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" },
     ],
   },
   "sa-army": {
@@ -9449,6 +9500,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The tropicbird is the white-tailed tropicbird, one of Seychelles' best-known native seabirds and a figure on the national coat of arms, where it represents the islands' wildlife of the air alongside a tortoise (land) and a fish (sea).",
     sources: [
       { title: "Coat of arms of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
+    ],
+  },
+  "sd-1956": {
+    description: "Sudan's first national flag, flown from independence on 1 January 1956 until the 1969 military coup that brought in the current flag in 1970, was designed by the poet Mohammed Salih Mackie Sufi as a horizontal tricolour of blue, yellow and green. It was intended as a deliberately neutral design for the country's diverse population: blue for the Nile, yellow for the Sahara Desert in the north, and green for the farmland and forest of the south.",
+    sources: [
+      { title: "The Sudan Flag: With Hope for Better Times — Young Pioneer Tours", url: "https://www.youngpioneertours.com/sudan-flag-with-hope-for-a-better-time/" },
     ],
   },
   "sd-uk": {

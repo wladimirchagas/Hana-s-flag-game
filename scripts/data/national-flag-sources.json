@@ -26334,7 +26334,16 @@
           "design": "The vertical triband as standardised in 1884, before the 1950 division into national, state and war flags.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
           "sha256": "f8ce2f8ec5b5de7570cb1108f792fb72569c6a512312ca592d76521df3ca80da",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A 1884 standardisation of the 1825 vertical triband and arms, used as Peru's single national flag until a 1950 decree split the design into three purposes still used today: a plain triband without arms for general civil use, and the arms-bearing version reserved for state and naval/war use.",
+            "sources": [
+              {
+                "title": "List of flags of Peru — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru"
+              }
+            ]
+          }
         },
         {
           "id": "pe-1825",
@@ -26347,7 +26356,16 @@
           "design": "The fourth flag of Peru, which fixed the vertical triband and the present arms.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
           "sha256": "57021e637fd4240e26bc70075b02ad0036e2d4c9ab0ce9c8d28210473f387ca8",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Fixed by Congress in 1825, this fourth flag set the vertical red-white-red triband still flown today and replaced the earlier sun emblem with Peru's national coat of arms — a vicuña, a cinchona tree and a cornucopia spilling coins, representing the country's animal, plant and mineral wealth.",
+            "sources": [
+              {
+                "title": "Flag of Peru — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Peru"
+              }
+            ]
+          }
         },
         {
           "id": "pe-1822",
@@ -26360,7 +26378,22 @@
           "design": "The third flag, designed by José Bernardo de Tagle.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
           "sha256": "5e5735c2f1bf73c2132fae034dff249c1384eb18b9859272d5b036906a3ebf8f",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Designed by José Bernardo de Tagle, Marquis of Torre Tagle, this third flag of independent Peru replaced San Martín's earlier diagonally-quartered design with plainer red-and-white bands bearing a red rising sun — a nod to Inti, the Inca sun god. Red and white are traditionally read as standing for the blood shed for independence and for peace, though the popular story that San Martín chose them after seeing red-and-white flamingos on the Peruvian coast is a later legend, first recorded by the writer Abraham Valdelomar, rather than a contemporary account.",
+            "sources": [
+              {
+                "title": "The History of the Peruvian National Flag — LimaEasy",
+                "url": "https://www.limaeasy.com/peru-guide/history-of-peru/national-symbols-of-peru/the-history-of-the-peruvian-national-flag"
+              }
+            ],
+            "myths": [
+              {
+                "claim": "San Martín chose Peru's red and white after seeing flocks of red-and-white flamingos on the coast at Pisco.",
+                "reality": "This is a popular legend recorded decades later by the writer Abraham Valdelomar, not a contemporary account of San Martín's reasoning; historians treat it as folklore rather than an established fact."
+              }
+            ]
+          }
         },
         {
           "id": "pe-1821",
@@ -29371,7 +29404,16 @@
           "design": "A vertical red-yellow-green tricolour charged with a black letter R, flown from independence until 2001.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Rwanda",
           "sha256": "b3063c3bd7372372d4ee727103610947e9043a8296925a1c7a95a00d41fcfa39",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Flown unchanged from independence in 1962 until 2001, this red-yellow-green vertical tricolour used the same Pan-African colours as neighbouring Guinea's flag, with a black letter R added at the centre in September 1961 to tell the two apart — standing for Rwanda, and also read as marking the country's 1961 revolution and referendum that abolished the monarchy. The government retired the flag in 2001, explaining that its colours and associations had become tied to the ethnic violence culminating in the 1994 genocide, and adopted a new design alongside a new national anthem.",
+            "sources": [
+              {
+                "title": "Flag of Rwanda — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Rwanda"
+              }
+            ]
+          }
         },
         {
           "id": "rw-belgium",
@@ -29558,7 +29600,16 @@
           "design": "A green field with the shahada and a sword with a white band at the hoist.",
           "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
           "sha256": "e15bb735ef03d20ad3ad334e88f88542b6658388b00657ae69119184abb3866b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A 1934 revision of the 1932 kingdom flag that narrowed the white vertical stripe at the hoist, an intermediate step on the way to the plain green field (without any white stripe) reached by 1938 and the horizontally-set shahada-and-sword design standardised in 1973.",
+            "sources": [
+              {
+                "title": "Historic Flags (Saudi Arabia) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/sa_hist.html"
+              }
+            ]
+          }
         },
         {
           "id": "sa-1932",
@@ -29571,7 +29622,16 @@
           "design": "The first flag of the unified kingdom.",
           "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
           "sha256": "3a0b1cfd364fb897b5e97a8a5cb923eb18dc53a68a15bc2ec2556c687e5139ae",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted when the Kingdom of Hejaz and Nejd was proclaimed the Kingdom of Saudi Arabia in 1932, this green flag carried the shahada with a white vertical stripe at the hoist and a sheathed scimitar sword — the sword had first appeared on the Nejdi flag in 1902, when Abdulaziz ibn Saud took the title Sultan of Nejd, and stood for the security and justice brought by the House of Saud.",
+            "sources": [
+              {
+                "title": "Flag of Saudi Arabia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia"
+              }
+            ]
+          }
         },
         {
           "id": "sa-nejd",
@@ -29585,7 +29645,16 @@
           "design": "A green field with the shahada and a white band at the hoist — the flag of the state that became Saudi Arabia in 1932.",
           "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
           "sha256": "eed94bf4f9f17a8e3baa5ab204877f3106094cb060e14d3f4b2c7f741d601030",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Sultanate of Nejd, proclaimed by Abdulaziz ibn Saud in 1921: the same green field and shahada of the earlier Saudi states, with a plain white band added at the hoist. Nejd united with the Hejaz in 1932 to form the Kingdom of Saudi Arabia.",
+            "sources": [
+              {
+                "title": "Historic Flags (Saudi Arabia) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/sa_hist.html"
+              }
+            ]
+          }
         },
         {
           "id": "sa-diriyah",
@@ -29599,7 +29668,16 @@
           "design": "A green field with the shahada — the flag of the first Saudi state.",
           "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
           "sha256": "592abcb3255fdf702ac17a71dd76c6de1b4435bc52e9e7fdfadb1cb1d4dd32eb",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The plain green flag bearing the shahada — the Islamic declaration of faith, 'There is no god but God, Muhammad is the messenger of God' — flown by the Emirate of Diriyah from its founding in 1744, the first Saudi state and the direct ancestor of the flag's green field and script carried forward by every later Saudi state, including the kingdom today.",
+            "sources": [
+              {
+                "title": "Flag of Saudi Arabia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia"
+              }
+            ]
+          }
         },
         {
           "id": "sa-king",
@@ -30057,7 +30135,16 @@
           "design": "A blue-yellow-green horizontal tricolour — the first national flag, flown from independence in 1956 until 1970.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sudan",
           "sha256": "06519843d7abf9f7e53c18d719544621e0f6ca5160fd9a94ea86ced7ea9e97a3",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Sudan's first national flag, flown from independence on 1 January 1956 until the 1969 military coup that brought in the current flag in 1970, was designed by the poet Mohammed Salih Mackie Sufi as a horizontal tricolour of blue, yellow and green. It was intended as a deliberately neutral design for the country's diverse population: blue for the Nile, yellow for the Sahara Desert in the north, and green for the farmland and forest of the south.",
+            "sources": [
+              {
+                "title": "The Sudan Flag: With Hope for Better Times — Young Pioneer Tours",
+                "url": "https://www.youngpioneertours.com/sudan-flag-with-hope-for-a-better-time/"
+              }
+            ]
+          }
         },
         {
           "id": "sd-airforce",
