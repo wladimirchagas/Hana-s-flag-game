@@ -17824,7 +17824,16 @@
           "design": "The Soviet-era flag — a red field with light-blue stripes and the hammer, sickle and star — flown while Kyrgyzstan was a republic of the USSR.",
           "source": "https://en.wikipedia.org/wiki/Kirghiz_Soviet_Socialist_Republic",
           "sha256": "f1e78e87aba1a3aaa2143426f9a4e5e078f9fcf9adbbfe03f1951c1c6946d8e2",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The red field, gold hammer and sickle and five-pointed star marked every Soviet republic's flag as part of the USSR, the hammer for industrial workers and the sickle for the peasantry; the Kirghiz SSR's light-blue stripes and white central band were widely read as recalling Kyrgyzstan's mountain skies and snow.",
+            "sources": [
+              {
+                "title": "Flag of the Kirghiz Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Kirghiz_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "kg-emblem",
@@ -21574,7 +21583,16 @@
           "design": "Red with a central green stripe and the gold hammer, sickle and star — the republic's flag within the Soviet Union.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Moldova",
           "sha256": "259489dfa9fc7f6f1411023be7fac979bb931b5b15802f2f34742bb73d0f583f",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The red field, gold hammer and sickle and five-pointed star marked every Soviet republic's flag as part of the USSR, the hammer for industrial workers and the sickle for the peasantry; the Moldavian SSR's own green central stripe distinguished its flag from its neighbours' and echoed the green found in the flag Moldova adopted at independence in 1990.",
+            "sources": [
+              {
+                "title": "Flag of the Moldavian Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Moldavian_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "md-russian-empire",
@@ -26352,7 +26370,16 @@
           "design": "The plain red flag of the sultanate, before the white and green were added in the 20th century.",
           "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
           "sha256": "f3f058d638d5867d8de528452d99a68f8e8b6fdc7900966758c3633880b4cd3c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A plain red banner — the customary colour of Omani and wider Gulf Arab flags for centuries, with roots reportedly reaching back over a millennium — flew alone as the flag of the Sultanate of Muscat and Oman until 1970, when Sultan Qaboos bin Said, having deposed his father, added white and green bands and the crest of the ruling Al Said dynasty to modernise the flag as part of his wider reform of the state.",
+            "sources": [
+              {
+                "title": "Sultanate of Muscat and Oman until 1970 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/om_musca.html"
+              }
+            ]
+          }
         },
         {
           "id": "om-portugal",
@@ -33513,7 +33540,16 @@
           "design": "The Soviet-era flag — a red field with white and green stripes and the hammer, sickle and star — flown while Tajikistan was a republic of the USSR.",
           "source": "https://en.wikipedia.org/wiki/Tajik_Soviet_Socialist_Republic",
           "sha256": "00c121bb811f00506bbd6ecbca5b542a95f803f410297a8ea123d5f0c8642d51",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The red field, gold hammer and sickle and five-pointed star marked every Soviet republic's flag as part of the USSR, the hammer for industrial workers and the sickle for the peasantry; the Tajik SSR was distinctive among the Soviet republics for using the Pan-Iranian colours — red, white and green — in its central stripes, a nod to Tajikistan's Persian-descended culture and language, setting it apart from its Turkic-speaking Central Asian neighbours.",
+            "sources": [
+              {
+                "title": "Flag of the Tajik Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Tajik_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "tj-emblem",
@@ -33685,7 +33721,16 @@
           "design": "The flag of Indonesia, which invaded in 1975 and annexed the territory as its 27th province until 1999 — an occupation the United Nations never recognised.",
           "source": "https://en.wikipedia.org/wiki/Indonesian_occupation_of_East_Timor",
           "sha256": "2ab57d2d418baba7b0ff55729435d0c780ca52a98b754f92d44e96cd1399dae5",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Indonesia's own national flag was flown over East Timor for the entire 24 years of Indonesian occupation, from the December 1975 invasion — a week after East Timor's Fretilin movement had declared independence from Portugal — through Indonesia's unilateral 1976 annexation of the territory as its 27th province, which the United Nations never recognised, until a 1999 UN-sponsored referendum led to East Timor's independence in 2002. Estimates of deaths during the occupation, from violence, forced resettlement and famine, range as high as 100,000–200,000 or more, in a period widely characterised as genocide.",
+            "sources": [
+              {
+                "title": "Indonesian occupation of East Timor — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Indonesian_occupation_of_East_Timor"
+              }
+            ]
+          }
         },
         {
           "id": "tl-arms",
@@ -33774,7 +33819,16 @@
           "design": "The Soviet-era flag — a red field with two light-blue stripes and the hammer, sickle and star — flown while Turkmenistan was a republic of the USSR.",
           "source": "https://en.wikipedia.org/wiki/Turkmen_Soviet_Socialist_Republic",
           "sha256": "7d7341b9c2ecdd337b1b5a5e4ce2449e5860c4d767c61bfb79600c4b97c3e2d3",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The red field, gold hammer and sickle and five-pointed star marked every Soviet republic's flag as part of the USSR, the hammer for industrial workers and the sickle for the peasantry; Turkmenistan's SSR flag was otherwise nearly plain scarlet, without the coloured central stripe most other republics used to assert a distinct national identity — a choice later reversed dramatically at independence in 1991, when Turkmenistan adopted one of the world's most elaborately patterned flags, its green field bearing a column of traditional carpet-weaving guls.",
+            "sources": [
+              {
+                "title": "Flag of the Turkmen Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Turkmen_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "tm-emblem",
@@ -33954,7 +34008,16 @@
           "design": "A yellow field with a white crescent — the flag of the dynasty that ruled Ifriqiya from Tunis.",
           "source": "https://en.wikipedia.org/wiki/List_of_Tunisian_flags",
           "sha256": "936792051129e27b70e1a52dcc9e90f22486758a4e5709de26a2717a7c57d597",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Hafsid dynasty, which ruled Ifriqiya (roughly modern Tunisia, together with parts of eastern Algeria and western Libya) from 1229 to 1574, was recorded by European sources from at least the 14th century flying a yellow or red flag bearing a white or yellow crescent — common Islamic iconography of the wider Maghreb. Documentation of the exact Hafsid design is sparse and largely reconstructed from foreign accounts and later manuscripts, such as the 1375 Catalan Atlas.",
+            "sources": [
+              {
+                "title": "Hafsid dynasty — Wikipedia (IPFS mirror)",
+                "url": "https://en.wikipedia-on-ipfs.org/wiki/Hafsid_dynasty"
+              }
+            ]
+          }
         },
         {
           "id": "tn-president",
@@ -34984,7 +35047,16 @@
           "design": "The blue-and-yellow bicolour as first restored in 1991, in a lighter blue than the 1992 standard.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
           "sha256": "502b76f87aa795b0ef758617fc203434c7054fdb2c30a9f86c1bca38ec5db1ae",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "As Ukraine restored independence in 1991, the historic blue-over-yellow flag — banned since the Soviet era, when it had been the flag of the short-lived Ukrainian People's Republic (1917–1921) — was provisionally readopted that September in a lighter sky-blue shade before parliament fixed the darker, more practical azure blue used today when it formally confirmed the flag on 28 January 1992.",
+            "sources": [
+              {
+                "title": "Flag of Ukraine: History and meaning — ukraine.ua",
+                "url": "https://ukraine.ua/faq/flag-of-ukraine-history-and-meaning/"
+              }
+            ]
+          }
         },
         {
           "id": "ua-ssr",
@@ -36900,7 +36972,16 @@
           "design": "Red with a white-edged blue stripe and the gold hammer, sickle and star — the republic's flag within the Soviet Union.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan",
           "sha256": "880d5603d8f9ab695f02f62b3e2103d553e0f3618aa395f01086dbef938ef2f9",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The red field, gold hammer and sickle and five-pointed star marked every Soviet republic's flag as part of the USSR, the hammer for industrial workers and the sickle for the peasantry; the Uzbek SSR's white-edged blue stripe running the length of the flag anticipated the blue band that leads Uzbekistan's own post-independence flag, adopted in 1991.",
+            "sources": [
+              {
+                "title": "Flag of the Uzbek Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Uzbek_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "uz-russian-empire",
