@@ -5431,6 +5431,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Royal arms of Cambodia — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia" },
     ],
   },
+  "kh-passport": {
+    description: "Cambodia's passport bears the national coat of arms: a gajasingha (a mythical creature with a lion's body and an elephant's trunk) and a rajasingha (a royal lion) standing as supporters, each holding a royal five-tiered umbrella — one representing the King, the other the Queen — flanking a royal crown topped with a diamond at the centre.",
+    sources: [
+      { title: "Coat of arms of Cambodia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cambodia" },
+    ],
+  },
   "kh-football-crest": {
     description: "The four-faced tower echoes the face-towers of the Bayon temple at Angkor, built under King Jayavarman VII in the late 12th–early 13th century — one of Cambodia's best-known Angkorian monuments and a symbol of the country's Khmer heritage.",
     sources: [
@@ -5705,6 +5711,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "lk-emblem": {
     description: "At the centre is the same gold lion holding a sword that appears on the national flag, ringed by the golden petals of the blue lotus, the national flower. The lion stands on a traditional grain vase sprouting sheaves of rice — the country's staple and its prosperity. The crest above is the Dharmacakra, the wheel of the Buddhist law, for the foremost place Buddhism holds in the country and for just rule; the supporters at either side are the traditional Sinhalese heraldic emblems of the sun and the moon. The present design was created in 1972 under the guidance of Nissanka Wijeyeratne, replacing the 1954 emblem adopted when Ceylon became a dominion.",
+    sources: [
+      { title: "Emblem of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
+    ],
+  },
+  "lk-passport": {
+    description: "Sri Lanka's maroon passport bears the national emblem, in use since 1972: a golden lion holding a kastane sword, tracing to the royal banners of pre-colonial Sinhalese kings and representing valour and sovereignty, set against the maroon field that marks the country's Sinhalese majority. The lion sits within petals of the blue water lily, Sri Lanka's national flower, symbolising purity and the Buddhist path, beneath a Dharmachakra — the Wheel of Dharma — representing the Eightfold Path of Buddhist teaching.",
     sources: [
       { title: "Emblem of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
     ],
@@ -6598,6 +6610,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "np-emblem": {
     description: "The emblem is built from the country's own geography and one social claim. Mount Everest and the green hills below it are the mountain and hill regions; the yellow beneath them is the fertile Terai plain. The map of Nepal sits at the centre with the national flag above it. The joined hands of a man and a woman below stand for gender equality — an explicit statement, adopted with the emblem of the federal republic. Around the whole runs a wreath of rhododendron, the national flower, called lali gurans.",
+    sources: [
+      { title: "Emblem of Nepal — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Nepal" },
+    ],
+  },
+  "np-passport": {
+    description: "Nepal's passport bears the national emblem, redesigned in 2006: Mount Everest — Sagarmatha in Nepali, the world's highest peak and a source of national pride — rising above green hills for the country's mid-hill region, over a yellow band for the fertile Terai lowlands. Clasped male and female hands, symbolising gender equality, are draped with a garland of rhododendron, the national flower, above a scroll bearing the Sanskrit motto \"Mother and Motherland are greater than heaven\".",
     sources: [
       { title: "Emblem of Nepal — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Nepal" },
     ],
