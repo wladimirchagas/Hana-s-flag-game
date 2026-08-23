@@ -16905,7 +16905,16 @@
           "design": "A Union Flag defaced with the company's sun badge and motto — the chartered company that administered the territory before the Crown took it over.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
           "sha256": "fda20299a8428f8ee1610ac05400a25c9ee54ad452a3e99c8618c396fb8c15c2",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The company's own Union Flag carried this sun-and-crown badge on a white disc at its centre, surrounded by a laurel garland. The Imperial British East Africa Company's badge — a golden sun in splendour beneath the Imperial Crown — was designed to represent the company's motto \"Lux et Libertas\" (\"Light and Liberty\"). The chartered company administered the territory until 1895, when financial insolvency forced it to surrender its charter and the British government took over direct administration.",
+            "sources": [
+              {
+                "title": "Flags of Empire: British Africa",
+                "url": "https://imperialflags.blogspot.com/2009/01/imperial-british-east-africa-company.html"
+              }
+            ]
+          }
         },
         {
           "id": "ke-oman",
@@ -16933,7 +16942,16 @@
           "design": "The white field with the Portuguese royal arms in its 1667 pattern, flown over the coast until the Omani capture of Fort Jesus in 1698.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
           "sha256": "f8867c2f08581286fc2d36f698257875f47488eb108af58e2ea209981c6c80b4",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "This royal standard set the Portuguese coat of arms on a plain white field, a format the monarchy used with variations from the reign of João II until 1830. At its centre, five small blue shields arranged in a cross each carry five white discs — together read as the five wounds of Christ and the five Moorish kings said to have been defeated at the Battle of Ourique — while seven gold castles ring the shield, traditionally symbolising victories over Moorish strongholds.",
+            "sources": [
+              {
+                "title": "Coat of arms of Portugal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal"
+              }
+            ]
+          }
         },
         {
           "id": "ke-president",
@@ -33718,7 +33736,16 @@
           "design": "The Portuguese royal arms in their 1667 pattern, flown over Zanzibar until the Omani takeover.",
           "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
           "sha256": "f8867c2f08581286fc2d36f698257875f47488eb108af58e2ea209981c6c80b4",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "This royal standard set the Portuguese coat of arms on a plain white field, a format the monarchy used with variations from the reign of João II until 1830. At its centre, five small blue shields arranged in a cross each carry five white discs — together read as the five wounds of Christ and the five Moorish kings said to have been defeated at the Battle of Ourique — while seven gold castles ring the shield, traditionally symbolising victories over Moorish strongholds.",
+            "sources": [
+              {
+                "title": "Coat of arms of Portugal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal"
+              }
+            ]
+          }
         },
         {
           "id": "tz-president",
@@ -34224,7 +34251,16 @@
           "design": "The company's blue ensign, flown while a chartered company administered the territory.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
           "sha256": "8a6aab4c1f3a58c00fd4c86dd6c35237a89167b854b758d2c522ffeccd024bc9",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The company's blue ensign carried this sun-and-crown badge in the fly. The Imperial British East Africa Company's badge — a golden sun in splendour beneath the Imperial Crown — was designed to represent the company's motto \"Lux et Libertas\" (\"Light and Liberty\"). The chartered company administered the territory until 1895, when financial insolvency forced it to surrender its charter and the British government took over direct administration.",
+            "sources": [
+              {
+                "title": "Flags of Empire: British Africa",
+                "url": "https://imperialflags.blogspot.com/2009/01/imperial-british-east-africa-company.html"
+              }
+            ]
+          }
         },
         {
           "id": "ug-buganda",
