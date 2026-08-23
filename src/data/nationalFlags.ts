@@ -8386,6 +8386,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
     ],
   },
+  "ph-us48": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "ph-us45": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
   "ph-1898": {
     description: "Conceived by Emilio Aguinaldo and first unfurled at the 1898 declaration of independence, this flag set a golden sun with a mythical face and eight rays inside a white triangle — the triangle recalling the Katipunan's own Masonic-influenced emblems — with three five-pointed stars at its corners. The eight rays stood for the first eight provinces to rise against Spanish rule in 1896, and the three stars for the Philippines' three main island groups: Luzon, the Visayas and Mindanao.",
     sources: [
@@ -10154,6 +10166,162 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The black, yellow and red sash repeats the bands of Uganda's own national flag, adopted at independence in 1962.",
     sources: [
       { title: "Flag of Uganda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
+    ],
+  },
+  "us-1959": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1912": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1908": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1896": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1891": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1890": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1877": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1867": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1865": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1863": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1861": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1859": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1858": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1851": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1848": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1847": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1846": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1845": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1837": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1836": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1822": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1820": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1819": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1818": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1795": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+  "us-1777": {
+    description: "The Stars and Stripes was fixed by the Continental Congress's 1777 Flag Resolution at thirteen stars and thirteen stripes for the original thirteen colonies that declared independence. From 1818 the stripes were permanently fixed at thirteen while a star was added for every new state, traditionally on the 4th of July following its admission — the one exception being the 1795–1818 fifteen-stripe flag, expanded briefly to add a stripe as well as a star for Vermont and Kentucky before Congress reverted to thirteen. Red is popularly read as valour, white as purity, and blue as vigilance, justice and perseverance, an interpretation dating to Charles Thomson's 1782 description of the Great Seal's colours, though the flag's own colours were never officially assigned a meaning by Congress.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
     ],
   },
   "us-gb-1707": {
