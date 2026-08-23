@@ -7647,6 +7647,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sudan" },
     ],
   },
+  "sd-passport": {
+    description: "Sudan's passport bears the national emblem, in use since 1985: a secretary bird holding a shield from the era of Muhammad Ahmad, the self-proclaimed Mahdi who briefly ruled Sudan in the 1880s. The secretary bird was chosen as a distinctly Sudanese alternative to the Eagle of Saladin and Hawk of Quraish used by several other Arab states, embodying vigilance and strength through its keen eyesight and its ability to hunt snakes across vast distances. The upper scroll reads the national motto \"النصر لنا\" — \"Victory is ours\".",
+    sources: [
+      { title: "Emblem of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sudan" },
+    ],
+  },
   "sd-football-crest": {
     description: "The four colours repeat Sudan's own national flag and are the Pan-Arab colours: red for the country's struggles and its martyrs' sacrifice, white for the people and optimism (and for the anti-colonial White Flag League of 1924), black for Sudan itself (Arabic for \"land of the black people\") and for the 19th-century Mahdist Revolution's flag, and green for Islam and the land's prosperity.",
     sources: [
@@ -7884,6 +7890,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ss-arms": {
     description: "An African fish eagle — for strength, resilience, vision and majesty — spreads its wings above a shield bearing the national flag, crossed by a spear and a spade. The scroll reads “Justice, Liberty, Prosperity,” and above it the name of the Republic of South Sudan.",
+    sources: [
+      { title: "Coat of arms of South Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Sudan" },
+    ],
+  },
+  "ss-passport": {
+    description: "South Sudan's passport bears the national coat of arms, adopted at independence in July 2011: an African fish eagle, a bird common across South Sudan, standing for strength, resilience and vision, holding a scroll naming the state and a crossed spear and spade — the people's resolve to both defend and feed their new republic. The shield beneath repeats the national flag's black, white, green and red: black for African heritage, red for the blood of those lost in the decades-long war for independence from Sudan, and green for the country's fertile, resource-rich land.",
     sources: [
       { title: "Coat of arms of South Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Sudan" },
     ],
@@ -8167,6 +8179,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "tn-arms": {
     description: "Each of the three parts carries one word of the national motto. The Carthaginian galley sailing in the upper field is freedom — and reaches back past the modern state to Carthage itself. Below, the black scale is justice, and the black lion grasping a silver scimitar is order. The banner spells the three out: Freedom, Order, Justice. The law of 30 May 1963 rewrote the arms of the beylik that preceded them, removing the beylical spears and banners, swapping the positions of the scales and the lion, making the field uniformly gold, and changing the order of the motto.",
+    sources: [
+      { title: "Coat of arms of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia" },
+    ],
+  },
+  "tn-passport": {
+    description: "Tunisia's passport bears the national emblem: a Carthaginian galley for freedom, evoking Tunisia's ancient Carthaginian heritage and its path to independence; a lion holding a sword for order and the strength of the Tunisian people to maintain peace; and a set of scales for justice. Beneath the ship runs the national motto in Arabic: \"حرية، نظام، عدالة\" — \"Freedom, Order, Justice\".",
     sources: [
       { title: "Coat of arms of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia" },
     ],
