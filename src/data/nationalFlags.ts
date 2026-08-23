@@ -5509,6 +5509,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National seal of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/National_seal_of_the_Comoros" },
     ],
   },
+  "km-passport": {
+    description: "The Comoros' passport bears the national seal: a crescent moon, echoing the national flag and symbolising the country's Islamic faith, enclosing four stars — one for each of the Comoro Islands — beneath a rising sun whose rays represent hope and a new dawn. Two olive branches frame the seal beneath the motto \"Unité, Solidarité, Développement\" — \"Unity, Solidarity, Development\".",
+    sources: [
+      { title: "National seal of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/National_seal_of_the_Comoros" },
+    ],
+  },
   "km-football-crest": {
     description: "The crescent-and-stars motif echoes the Comoros' national flag, where the green field and white crescent represent the country's Islamic faith and the four stars stand for its four main islands: Grande Comore, Anjouan, Mohéli and Mayotte.",
     sources: [
@@ -6076,6 +6082,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "mg-arms": {
     description: "At the centre of the disc is the outline of the island itself, and below it the head of a zebu, the humped ox that is the mainstay of Malagasy life and wealth. From the map rays spread outward, so the device reads at once as a rising sun and as the fronds of the ravinala, the “traveller's tree” that is the island's signature plant. Sprigs of rice frame the foot, for the staple crop, and the ribbon carries the country's name, Repoblikan'i Madagasikara.",
+    sources: [
+      { title: "Emblem of Madagascar — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Madagascar" },
+    ],
+  },
+  "mg-passport": {
+    description: "Madagascar's passport bears the national emblem: an outline map of Madagascar and its nearby smaller islands, ringed by red and green rays evoking both the sun and the ravinala (traveller's tree, a plant emblematic of the island), above a zebu's head — the humped cattle considered a symbol of power and solidarity in Malagasy culture, and depicted on the country's coins and banknotes as well. The emblem reads \"Repoblikan'i Madagasikara\" (\"Republic of Madagascar\") above the motto \"Tanindrazana, Firaisankina, Fanorenana\" — \"Homeland, Solidarity, Renew\".",
     sources: [
       { title: "Emblem of Madagascar — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Madagascar" },
     ],

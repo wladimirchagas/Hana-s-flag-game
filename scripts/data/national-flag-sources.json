@@ -16210,7 +16210,16 @@
           "design": "The cover of the the Comoros passport.",
           "source": "https://gicg.net/passport/km/",
           "sha256": "9037e4abd8dc53388e47d55d6e6bd4eb118f31e4391ace4f134420613eacef32",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Comoros' passport bears the national seal: a crescent moon, echoing the national flag and symbolising the country's Islamic faith, enclosing four stars — one for each of the Comoro Islands — beneath a rising sun whose rays represent hope and a new dawn. Two olive branches frame the seal beneath the motto \"Unité, Solidarité, Développement\" — \"Unity, Solidarity, Development\".",
+            "sources": [
+              {
+                "title": "National seal of the Comoros — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_seal_of_the_Comoros"
+              }
+            ]
+          }
         },
         {
           "id": "km-football-crest",
@@ -19379,7 +19388,16 @@
           "design": "The cover of the Madagascar passport.",
           "source": "https://gicg.net/passport/mg/",
           "sha256": "0b513bfc88120d42a05bb5a9b968bdc531de206f328f08970c42aa7dfce30eef",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Madagascar's passport bears the national emblem: an outline map of Madagascar and its nearby smaller islands, ringed by red and green rays evoking both the sun and the ravinala (traveller's tree, a plant emblematic of the island), above a zebu's head — the humped cattle considered a symbol of power and solidarity in Malagasy culture, and depicted on the country's coins and banknotes as well. The emblem reads \"Repoblikan'i Madagasikara\" (\"Republic of Madagascar\") above the motto \"Tanindrazana, Firaisankina, Fanorenana\" — \"Homeland, Solidarity, Renew\".",
+            "sources": [
+              {
+                "title": "Emblem of Madagascar — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Madagascar"
+              }
+            ]
+          }
         }
       ],
       "independence": {
