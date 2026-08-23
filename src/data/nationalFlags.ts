@@ -3128,6 +3128,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain" },
     ],
   },
+  "bh-passport": {
+    description: "Bahrain's green passport bears the national coat of arms, originally designed in 1932: a red shield topped by a white serrated band of five points, matching the toothed line that divides red and white on the national flag. Red recalls the blood of Bahrain's ancestors in their struggle for sovereignty, while white's five points are read as the Five Pillars of Islam. A palm tree, Bahrain's national tree, stands behind the shield, symbolising the prosperity date cultivation has brought to the arid archipelago.",
+    sources: [
+      { title: "Coat of arms of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain" },
+    ],
+  },
   "bh-football-crest": {
     description: "The five-pointed serrated emblem repeats the five white triangles on Bahrain's own national flag, added to the flag's serrated edge in 2002 (an earlier version had 28, then 8, points) to stand for the Five Pillars of Islam.",
     sources: [
@@ -7643,6 +7649,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
     ],
   },
+  "sa-passport": {
+    description: "Saudi Arabia's passport bears the national emblem, adopted in 1950: a date palm tree between two crossed shamshir (curved swords), each blade representing one of the two kingdoms — Hejaz and Najd — whose 1932 union formed modern Saudi Arabia. The swords stand for justice and strength rooted in faith, while the palm tree, central to the economy and culture of the peninsula for millennia, represents vitality and growth.",
+    sources: [
+      { title: "Coat of Arms of Saudi Arabia facts for kids", url: "https://kids.kiddle.co/Coat_of_Arms_of_Saudi_Arabia" },
+    ],
+  },
   "sa-football-crest": {
     description: "The falcon is long associated with Saudi Arabia's desert hunting tradition and stands for speed, precision and strength; it gives the men's team its own nickname, the Green Falcons (Saqr, “falcon”, in Arabic). Green is the colour of Islam and runs throughout Saudi national symbols, including the flag. The federation also describes the same swept shape as evoking a palm frond, echoing the palm tree on the kingdom's own coat of arms.",
     sources: [
@@ -8317,6 +8329,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield carries the red, white and black of the national flag and their same meaning — the fire of the sun and the warmth of the people, the sea and purity, and the strength and dedication of the earth. The two golden birds on it are hummingbirds, from Trinidad's Amerindian name Iere, \"land of the hummingbird\". The three ships were Columbus's three vessels; the supporters are the two national birds, the scarlet ibis of Trinidad and the cocrico of Tobago, standing on a base of three hills for the Trinity peaks that gave Trinidad its name. The palm-tree crest was taken from Tobago's own colonial arms. (In 2024 the government announced it would replace Columbus's ships with the steelpan, the national instrument.)",
     sources: [
       { title: "Coat of arms of Trinidad and Tobago — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago" },
+    ],
+  },
+  "tt-passport": {
+    description: "Trinidad and Tobago's passport bears the national coat of arms, which in January 2025 replaced the three gold ships of Christopher Columbus at its centre — a design element unanimously voted out by the House of Representatives — with a gold steelpan and pan sticks, honouring the steelpan's Trinbagonian origin and its journey to become a global symbol of the islands' creativity and resilience. The shield is flanked by the scarlet ibis and the cocrico, the national birds of Trinidad and Tobago respectively, and crested by a hummingbird.",
+    sources: [
+      { title: "'Proud moment' as new-look coat of arms unveiled — Trinidad Express", url: "https://trinidadexpress.com/news/local/proud-moment-as-new-look-coat-of-arms-unveiled/article_cb95ade6-d6d3-11ef-a414-8b6d4118897d.html" },
     ],
   },
   "tt-football-crest": {

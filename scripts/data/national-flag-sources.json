@@ -3048,7 +3048,16 @@
           "design": "The cover of the Bahrain passport.",
           "source": "https://gicg.net/passport/bh/",
           "sha256": "1171489890742dbe089a4ea0b88199d1b5be3331ca0fd5eb664437eb68529ff1",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Bahrain's green passport bears the national coat of arms, originally designed in 1932: a red shield topped by a white serrated band of five points, matching the toothed line that divides red and white on the national flag. Red recalls the blood of Bahrain's ancestors in their struggle for sovereignty, while white's five points are read as the Five Pillars of Islam. A palm tree, Bahrain's national tree, stands behind the shield, symbolising the prosperity date cultivation has brought to the arid archipelago.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bahrain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain"
+              }
+            ]
+          }
         },
         {
           "id": "bh-uk",
@@ -27143,7 +27152,16 @@
           "design": "The cover of the Saudi Arabia passport.",
           "source": "https://gicg.net/passport/sa/",
           "sha256": "810d8fb2bf51f6e496c917e84b7565a0f6fdce4964c44b784466ce7a4b5e83d5",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Saudi Arabia's passport bears the national emblem, adopted in 1950: a date palm tree between two crossed shamshir (curved swords), each blade representing one of the two kingdoms — Hejaz and Najd — whose 1932 union formed modern Saudi Arabia. The swords stand for justice and strength rooted in faith, while the palm tree, central to the economy and culture of the peninsula for millennia, represents vitality and growth.",
+            "sources": [
+              {
+                "title": "Coat of Arms of Saudi Arabia facts for kids",
+                "url": "https://kids.kiddle.co/Coat_of_Arms_of_Saudi_Arabia"
+              }
+            ]
+          }
         },
         {
           "id": "sa-football-crest",
@@ -30906,7 +30924,16 @@
           "design": "The cover of the Trinidad and Tobago passport.",
           "source": "https://gicg.net/passport/tt/",
           "sha256": "0f106757e9a874ccbb6d9d277962a9664e0a12a256d2a2233cafcbd6aa08ca79",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Trinidad and Tobago's passport bears the national coat of arms, which in January 2025 replaced the three gold ships of Christopher Columbus at its centre — a design element unanimously voted out by the House of Representatives — with a gold steelpan and pan sticks, honouring the steelpan's Trinbagonian origin and its journey to become a global symbol of the islands' creativity and resilience. The shield is flanked by the scarlet ibis and the cocrico, the national birds of Trinidad and Tobago respectively, and crested by a hummingbird.",
+            "sources": [
+              {
+                "title": "'Proud moment' as new-look coat of arms unveiled — Trinidad Express",
+                "url": "https://trinidadexpress.com/news/local/proud-moment-as-new-look-coat-of-arms-unveiled/article_cb95ade6-d6d3-11ef-a414-8b6d4118897d.html"
+              }
+            ]
+          }
         },
         {
           "id": "tt-football-crest",
