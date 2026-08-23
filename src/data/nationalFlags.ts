@@ -7963,6 +7963,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Central America-4 passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Central_America-4_passport" },
     ],
   },
+  "nl-prinsenvlag": {
+    description: "The Prinsenvlag flew orange, white and blue horizontal bands as the flag of the Dutch Revolt against Spanish rule from the 1570s, its colours taken from the livery of William of Orange, leader of the revolt. Through the 17th century the orange band was gradually replaced by red, producing the red-white-blue tricolour the Netherlands flies today.",
+    sources: [
+      { title: "Prince's Flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Prince's_Flag" },
+    ],
+  },
   "nl-navy": {
     description: "The governmental flag of the Royal Netherlands Navy bears the navy's emblem: a fouled anchor beneath the royal crown, a pairing used across Dutch naval flags and insignia since at least the late 19th century. The anchor is the traditional maritime symbol of the service, and the crown marks the navy as a royal one, serving under the Dutch monarchy.",
     sources: [
@@ -8250,6 +8256,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
     ],
   },
+  "pe-1821": {
+    description: "José de San Martín's first flag for Peru, decreed in 1820 and raised over Lima's main square at the 1821 declaration of independence, divided the field diagonally into red and white quarters around a central sun rising over mountains and sea within a laurel wreath. Red is read as the blood shed for independence and white as purity and peace; a popular story holds San Martín took the colours from a flock of red-and-white flamingos he saw in the Paracas desert, though historians also point to the red of Chile's flag and the white of Argentina's, honouring the mixed army he led.",
+    sources: [
+      { title: "History of the Peruvian Flag (October 1820) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pe_1820o.html" },
+    ],
+  },
   "pe-spain": {
     description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
     sources: [
@@ -8360,6 +8372,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The bird of paradise and the stars are taken from Papua New Guinea's national flag: the bird is a symbol of the country's tribal culture, shown in a soaring pose representing the nation's emergence, and the stars form the Southern Cross, marking the country's place in the southern hemisphere.",
     sources: [
       { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+    ],
+  },
+  "ph-1898": {
+    description: "Conceived by Emilio Aguinaldo and first unfurled at the 1898 declaration of independence, this flag set a golden sun with a mythical face and eight rays inside a white triangle — the triangle recalling the Katipunan's own Masonic-influenced emblems — with three five-pointed stars at its corners. The eight rays stood for the first eight provinces to rise against Spanish rule in 1896, and the three stars for the Philippines' three main island groups: Luzon, the Visayas and Mindanao.",
+    sources: [
+      { title: "History of the Philippines Flag — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ph-hist.html" },
     ],
   },
   "ph-spain": {
