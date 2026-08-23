@@ -4928,6 +4928,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Ireland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ireland" },
     ],
   },
+  "ie-passport": {
+    description: "Ireland's passport bears the golden harp — the country's official emblem since the Irish Free State's separation from the United Kingdom in 1922, though the harp had already stood for Ireland in heraldry since at least the 13th century, and became a symbol of nationalism and resistance under British rule. The design used today is based on the historic Brian Boru harp and was drawn by English artist Percy Metcalfe for Irish coinage in the 1920s; it is always rendered gold-stringed on blue, a shade sometimes called \"St Patrick's blue\".",
+    sources: [
+      { title: "Coat of arms of Ireland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ireland" },
+    ],
+  },
   "ie-football-crest": {
     description: "The shamrock is Ireland's own traditional national emblem, adopted as a patriotic symbol alongside the colour green by revolutionary groups from the late 18th century; the Football Association of Ireland restored it to the men's and women's national crests in 2023, having last carried it in 2004. The green, white and orange repeat the Irish tricolour.",
     sources: [
@@ -5116,6 +5122,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Iceland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland" },
     ],
   },
+  "is-passport": {
+    description: "Iceland's passport bears the coat of arms adopted on 17 June 1944, the day Iceland declared itself an independent republic: a silver-edged red cross on a blue shield, standing on a block of columnar basalt and supported by the four landvættir — guardian spirits described in the medieval Heimskringla saga as protecting the four quarters of the island: a bull in the north-west, an eagle in the north-east, a dragon in the south-east, and a rock-giant in the south-west. Iceland is the only country in the world whose coat of arms has four supporters.",
+    sources: [
+      { title: "Coat of arms of Iceland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland" },
+    ],
+  },
   "is-football-crest": {
     description: "The four figures are the Landvættir, Iceland's legendary guardian spirits. In the medieval saga Heimskringla, King Harald Bluetooth of Denmark sends a scout in whale form to size up Iceland for invasion, and the scout is driven back at each coast — by a dragon and serpents in the east, a great bird in the north, a bull in the west, and a giant with an iron staff in the south. The four have stood as supporters on Iceland's coat of arms since it became an independent republic in 1944, and this 2020 badge interweaves all four into a single mark, replacing an older crest built from the association's initials, the flag and a ball.",
     sources: [
@@ -5155,6 +5167,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "it-arms": {
     description: "Adopted in 1948, the emblem is built from republican symbols rather than dynastic heraldry. The white Stella d'Italia — the ancient Star of Italy — sits over a steel cogwheel standing for labour, the foundation the Constitution names in its first article (“a democratic republic founded on labour”). The olive branch to the left is peace; the oak branch to the right is strength and dignity (Latin robur means both oak and strength); the red ribbon binding them names the Repubblica Italiana.",
+    sources: [
+      { title: "Emblem of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Italy" },
+    ],
+  },
+  "it-passport": {
+    description: "Italy's burgundy EU passport bears the national emblem — a white five-pointed star (the Stella d'Italia, associated with the nation since the 19th-century Risorgimento) on a five-spoked cogwheel standing for labour, a direct reference to Article 1 of the Italian Constitution: \"Italy is a democratic Republic, founded on labour\". The star and wheel sit between an olive branch, for peace and for southern Italy, and an oak branch, for strength and for the north, bound by a ribbon reading \"REPUBBLICA ITALIANA\". The emblem was adopted on 5 May 1948, shortly after the Republic itself.",
     sources: [
       { title: "Emblem of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Italy" },
     ],
@@ -6396,6 +6414,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Netherlands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Netherlands" },
     ],
   },
+  "nl-passport": {
+    description: "The original coat of arms design still appears on the cover of every Dutch passport: a golden lion, crowned and armed with red claws and tongue, gripping a silver sword in one paw and a bundle of seven arrows in the other. The lion descends from the House of Nassau's own arms and became a symbol of Dutch resistance during William of Orange's 16th-century revolt against Spanish rule; the sword represents the determination to defend that freedom, and the seven arrows stand for the seven provinces that united to form the Republic of the United Provinces.",
+    sources: [
+      { title: "Coat of arms of the Netherlands facts for kids", url: "https://kids.kiddle.co/Coat_of_arms_of_the_Netherlands" },
+    ],
+  },
   "nl-football-crest": {
     description: "The lion is the Netherlands' national and royal animal, drawn from Dutch heraldry, and has featured on the crest since the team's first international in 1907. Orange is the country's historic national colour, taken from the House of Orange-Nassau, the royal family descended from William the Silent, Prince of Orange — the same tie that gives the team its orange kit. KNVB is the association's own initials, Koninklijke Nederlandse Voetbalbond (Royal Dutch Football Association).",
     sources: [
@@ -6434,6 +6458,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "no-arms": {
     description: "These are arms of dominion — they stand for the monarch and the kingdom at once. They began in the 13th century as the arms of the Sverre dynasty, a plain golden lion on red; the silver axe was added late in that century, and it is not a weapon but a relic: it is the axe of Olav II, Saint Olav, the Rex Perpetuus Norvegiae, the eternal king of Norway. The lion carried Norway on coins and seals through the union with Denmark (1523–1814) and the personal union with Sweden. After the 1905 dissolution Eilif Peterssen drew a medieval-style escutcheon, and the state archivist Hallvard Trætteberg redrew it far more simply in 1937 — the form still in use.",
+    sources: [
+      { title: "Coat of arms of Norway — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway" },
+    ],
+  },
+  "no-passport": {
+    description: "Norway's passport bears the royal coat of arms — a crowned golden lion on a red field, holding a silver-bladed axe — among the oldest state emblems in Europe, in use since at least the early 13th century. The axe represents Saint Olaf, the Viking-age king martyred in 1030 and venerated as Norway's patron saint (Rex Perpetuus Norvegiae, \"Norway's Eternal King\"); giving the lion his axe asserted that the reigning monarch ruled as Olaf's rightful heir.",
     sources: [
       { title: "Coat of arms of Norway — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway" },
     ],

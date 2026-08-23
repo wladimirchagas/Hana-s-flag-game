@@ -13365,7 +13365,16 @@
           "design": "The cover of the Ireland passport.",
           "source": "https://gicg.net/passport/ie/",
           "sha256": "ab8acdef7305d738976cdc0fc42b1db43bc30bbf52e06e665c6b6f2571f80fb5",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Ireland's passport bears the golden harp — the country's official emblem since the Irish Free State's separation from the United Kingdom in 1922, though the harp had already stood for Ireland in heraldry since at least the 13th century, and became a symbol of nationalism and resistance under British rule. The design used today is based on the historic Brian Boru harp and was drawn by English artist Percy Metcalfe for Irish coinage in the 1920s; it is always rendered gold-stringed on blue, a shade sometimes called \"St Patrick's blue\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Ireland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ireland"
+              }
+            ]
+          }
         },
         {
           "id": "ie-football-crest",
@@ -14494,7 +14503,16 @@
           "design": "The cover of the Iceland passport.",
           "source": "https://gicg.net/passport/is/",
           "sha256": "b10401b7777d264a3b24c494242942ef31dc62ab38ce47550fd238ea69865d1f",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Iceland's passport bears the coat of arms adopted on 17 June 1944, the day Iceland declared itself an independent republic: a silver-edged red cross on a blue shield, standing on a block of columnar basalt and supported by the four landvættir — guardian spirits described in the medieval Heimskringla saga as protecting the four quarters of the island: a bull in the north-west, an eagle in the north-east, a dragon in the south-east, and a rock-giant in the south-west. Iceland is the only country in the world whose coat of arms has four supporters.",
+            "sources": [
+              {
+                "title": "Coat of arms of Iceland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland"
+              }
+            ]
+          }
         },
         {
           "id": "is-football-crest",
@@ -14695,7 +14713,16 @@
           "design": "The cover of the Italy passport.",
           "source": "https://gicg.net/passport/it/",
           "sha256": "3b8c01907e96a417a211b6a71a119d2f72f702ec2b8d686ea55693b0763d5aa4",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Italy's burgundy EU passport bears the national emblem — a white five-pointed star (the Stella d'Italia, associated with the nation since the 19th-century Risorgimento) on a five-spoked cogwheel standing for labour, a direct reference to Article 1 of the Italian Constitution: \"Italy is a democratic Republic, founded on labour\". The star and wheel sit between an olive branch, for peace and for southern Italy, and an oak branch, for strength and for the north, bound by a ribbon reading \"REPUBBLICA ITALIANA\". The emblem was adopted on 5 May 1948, shortly after the Republic itself.",
+            "sources": [
+              {
+                "title": "Emblem of Italy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Italy"
+              }
+            ]
+          }
         },
         {
           "id": "it-football-crest",
@@ -22260,7 +22287,16 @@
           "design": "The cover of the Netherlands passport.",
           "source": "https://gicg.net/passport/nl/",
           "sha256": "6714d3fd4e296d4c1deccaf949096b7873eca9984ba346a18562b718d2a20969",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The original coat of arms design still appears on the cover of every Dutch passport: a golden lion, crowned and armed with red claws and tongue, gripping a silver sword in one paw and a bundle of seven arrows in the other. The lion descends from the House of Nassau's own arms and became a symbol of Dutch resistance during William of Orange's 16th-century revolt against Spanish rule; the sword represents the determination to defend that freedom, and the seven arrows stand for the seven provinces that united to form the Republic of the United Provinces.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Netherlands facts for kids",
+                "url": "https://kids.kiddle.co/Coat_of_arms_of_the_Netherlands"
+              }
+            ]
+          }
         },
         {
           "id": "nl-football-crest",
@@ -22442,7 +22478,16 @@
           "design": "The cover of the Norway passport.",
           "source": "https://gicg.net/passport/no/",
           "sha256": "0c26674b02251acfd3299124f68cc7b7ba00e107afc03301f852f864ed046268",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Norway's passport bears the royal coat of arms — a crowned golden lion on a red field, holding a silver-bladed axe — among the oldest state emblems in Europe, in use since at least the early 13th century. The axe represents Saint Olaf, the Viking-age king martyred in 1030 and venerated as Norway's patron saint (Rex Perpetuus Norvegiae, \"Norway's Eternal King\"); giving the lion his axe asserted that the reigning monarch ruled as Olaf's rightful heir.",
+            "sources": [
+              {
+                "title": "Coat of arms of Norway — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway"
+              }
+            ]
+          }
         },
         {
           "id": "no-sami",
