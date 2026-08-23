@@ -4339,6 +4339,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
     ],
   },
+  "cu-1902": {
+    description: "Flown from Cuba's independence on 20 May 1902 — when Cuba's own Lone Star flag, first raised by independence fighters in 1850, was hoisted over Havana as the flag of a sovereign republic — this version used a lighter, less standardised sky-blue in its three blue stripes. In 1906 President Tomás Estrada Palma fixed the flag's exact proportions and colours by decree, formally specifying the deeper azul turquí blue used ever since.",
+    sources: [
+      { title: "Flag of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
+    ],
+  },
   "cu-spain": {
     description: "In 1785 King Charles III of Spain replaced the plain white naval ensign — too easily confused with those of other Bourbon-ruled states and Britain's white ensign — with a red-yellow-red triband bearing the royal arms, the central yellow band twice the width of each red one. Red and yellow were chosen simply because they were vivid and easy to tell apart at a distance at sea; this scheme still underlies Spain's national flag today.",
     sources: [
@@ -4716,6 +4722,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "1990 African Cup of Nations — Wikipedia", url: "https://en.wikipedia.org/wiki/1990_African_Cup_of_Nations" },
     ],
   },
+  "ec-1845": {
+    description: "Adopted after the March 1845 Marcista Revolution and fixed by the Cuenca Convention that November, this vertical blue-white-blue tricolour replaced Gran Colombia's yellow-blue-red as a deliberate break from the old order; the convention set seven white stars on the blue bands, one for each of the republic's seven provinces at the time. It gave way in 1860 to the return of the yellow-blue-red tricolour still flown today.",
+    sources: [
+      { title: "History of Ecuador (1830–1860) — Wikipedia", url: "https://en.wikipedia.org/wiki/History_of_Ecuador_(1830%E2%80%931860)" },
+    ],
+  },
+  "ec-1830": {
+    description: "When Ecuador seceded from Gran Colombia in 1830, it initially kept flying Gran Colombia's own yellow-blue-red tricolour, without the union's coat of arms, as its provisional flag — a continuation later ended when the 1835 Convention of Ambato simplified and darkened the design, before Ecuador moved to a blue-and-white flag in 1845.",
+    sources: [
+      { title: "History of Ecuador (1830–1860) — Wikipedia", url: "https://en.wikipedia.org/wiki/History_of_Ecuador_(1830%E2%80%931860)" },
+    ],
+  },
   "ec-gran-colombia": {
     description: "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
     sources: [
@@ -5047,6 +5065,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
     ],
   },
+  "fi-1918-war": {
+    description: "The swallow-tailed war flag and naval ensign of newly independent Finland, flown under the Flag Act passed by parliament on 29 May 1918 in the aftermath of the Finnish Civil War — the same white field and blue Nordic cross adopted as the state flag, extended into a forked military form. It remained in use until the 1920 flag act refined the design.",
+    sources: [
+      { title: "List of flags of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
+    ],
+  },
   "fi-russian-empire": {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
     sources: [
@@ -5240,6 +5264,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The pre-1801 Union Flag combined the red cross of Saint George, patron saint of England, with the white saltire of Saint Andrew, patron saint of Scotland, on a blue field — first prescribed by royal proclamation in 1606 and used at sea from that year, more widely after the 1707 union of the two kingdoms. It was retired in 1801 when Saint Patrick's cross was added to mark the union with Ireland, forming today's Union Jack.",
     sources: [
       { title: "United Kingdom — History of the Flag — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gb-hist.html" },
+    ],
+  },
+  "gb-protectorate": {
+    description: "Adopted in 1658 as Oliver Cromwell's Commonwealth neared its end, the Protectorate Jack took the 1606 Union Flag — the crosses of St George and St Andrew combined for the union of England and Scotland — and added a gold harp on blue at the centre for Ireland, the same harp that had represented Ireland in English royal arms since the 16th century. It fell out of use with the 1660 Restoration of the monarchy, when the plain pre-union royal flags returned.",
+    sources: [
+      { title: "Flags of the English Interregnum — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_English_Interregnum" },
     ],
   },
   "gb-commonwealth-1651": {

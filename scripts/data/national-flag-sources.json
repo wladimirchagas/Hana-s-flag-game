@@ -7737,7 +7737,16 @@
           "design": "The sky-blue variant flown in the republic's first years.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags",
           "sha256": "493aa1a064e335a0f5550eb635bf4d4bf327bbcc872c8a0786e14eeb804f0fd9",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Flown from Cuba's independence on 20 May 1902 — when Cuba's own Lone Star flag, first raised by independence fighters in 1850, was hoisted over Havana as the flag of a sovereign republic — this version used a lighter, less standardised sky-blue in its three blue stripes. In 1906 President Tomás Estrada Palma fixed the flag's exact proportions and colours by decree, formally specifying the deeper azul turquí blue used ever since.",
+            "sources": [
+              {
+                "title": "Flag of Cuba — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Cuba"
+              }
+            ]
+          }
         },
         {
           "id": "cu-burgundy",
@@ -9348,7 +9357,16 @@
           "design": "The white-and-blue flag fixed by the Cuenca Convention, before the yellow-blue-red was readopted in 1860.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
           "sha256": "643e1c3a8709635c6b084af792add4774f1cbbd2f8dc4e329fa4a16ac772eeda",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted after the March 1845 Marcista Revolution and fixed by the Cuenca Convention that November, this vertical blue-white-blue tricolour replaced Gran Colombia's yellow-blue-red as a deliberate break from the old order; the convention set seven white stars on the blue bands, one for each of the republic's seven provinces at the time. It gave way in 1860 to the return of the yellow-blue-red tricolour still flown today.",
+            "sources": [
+              {
+                "title": "History of Ecuador (1830–1860) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/History_of_Ecuador_(1830%E2%80%931860)"
+              }
+            ]
+          }
         },
         {
           "id": "ec-1830",
@@ -9361,7 +9379,16 @@
           "design": "The provisional flag of the new republic after leaving Gran Colombia.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
           "sha256": "47f1db2e7116dea12b3d933c42c4b24999304b25f85790e02634887d4b20c9c1",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "When Ecuador seceded from Gran Colombia in 1830, it initially kept flying Gran Colombia's own yellow-blue-red tricolour, without the union's coat of arms, as its provisional flag — a continuation later ended when the 1835 Convention of Ambato simplified and darkened the design, before Ecuador moved to a blue-and-white flag in 1845.",
+            "sources": [
+              {
+                "title": "History of Ecuador (1830–1860) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/History_of_Ecuador_(1830%E2%80%931860)"
+              }
+            ]
+          }
         },
         {
           "id": "ec-gran-colombia",
@@ -10779,7 +10806,16 @@
           "design": "The first war flag and ensign of the independent republic, before the 1920 flag act.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
           "sha256": "60bcdbbb252291913b33143b68f7e9b18be37cc0b0dcafafafa0dad40d93bc5c",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The swallow-tailed war flag and naval ensign of newly independent Finland, flown under the Flag Act passed by parliament on 29 May 1918 in the aftermath of the Finnish Civil War — the same white field and blue Nordic cross adopted as the state flag, extended into a forked military form. It remained in use until the 1920 flag act refined the design.",
+            "sources": [
+              {
+                "title": "List of flags of Finland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland"
+              }
+            ]
+          }
         },
         {
           "id": "fi-regent",
@@ -11554,7 +11590,16 @@
           "design": "The 1606 Union Flag defaced with an Irish harp, flown under Oliver Cromwell.",
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "9933367ca48d2d64c09104a4611775f9b3220480b5eb44f52f44e59bbf312359",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Adopted in 1658 as Oliver Cromwell's Commonwealth neared its end, the Protectorate Jack took the 1606 Union Flag — the crosses of St George and St Andrew combined for the union of England and Scotland — and added a gold harp on blue at the centre for Ireland, the same harp that had represented Ireland in English royal arms since the 16th century. It fell out of use with the 1660 Restoration of the monarchy, when the plain pre-union royal flags returned.",
+            "sources": [
+              {
+                "title": "Flags of the English Interregnum — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_the_English_Interregnum"
+              }
+            ]
+          }
         },
         {
           "id": "gb-commonwealth-1651",
