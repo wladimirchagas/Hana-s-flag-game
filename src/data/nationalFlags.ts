@@ -4629,6 +4629,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Ecuador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
     ],
   },
+  "ee-ssr": {
+    description: "The Estonian SSR's flag — a red field with a gold hammer, sickle and star, and a wavy blue stripe near the base for the Baltic Sea — was imposed after the Soviet Union's forcible 1940 occupation of Estonia, carried out under the secret protocol of the Molotov–Ribbentrop Pact. Estonia's own blue-black-white tricolour was banned outright; flying it, or even possessing one, could bring deportation or imprisonment until independence was restored in 1991.",
+    sources: [
+      { title: "Emblem of the Estonian Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_Estonian_Soviet_Socialist_Republic" },
+    ],
+  },
   "ee-russia": {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
     sources: [
@@ -4696,6 +4702,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The United Arab Republic's flag, adopted in 1958 when Egypt and Syria united, used the pan-Arab colours: black for the era of colonial oppression Arabs had endured, white for peace and the hoped-for future of independent Arab states, and red for the sacrifices and bloodshed of the fight for liberation. Two green stars at its centre stood for the union's two constituent states and, in green, for Islam.",
     sources: [
       { title: "Flag of the United Arab Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Republic" },
+    ],
+  },
+  "eg-1923": {
+    description: "The Kingdom of Egypt's flag, readopted in 1923 when King Fuad I took the royal title, set a white crescent and three white stars on green: green for the fertile fields of the Nile Valley and Delta, and the crescent for Egypt's mostly Muslim population. The three stars have been read in more than one way — as the kingdom's three constituent lands of Egypt, Nubia and Sudan, or as the country's three main religious communities, Islam, Christianity and Judaism.",
+    sources: [
+      { title: "Kingdom of Egypt (1922-1952) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/eg-kingd.html" },
     ],
   },
   "eg-navy": {
@@ -4981,6 +4993,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The silver ram — Veðrur — on a blue field is one of the Faroes' oldest symbols, carved on the medieval bishop's chairs at Kirkjubøur around the 15th century, and it speaks to the sheep on which Faroese life has long depended (the islands' Old Norse name means 'sheep islands'). It fell from use when the Løgting was abolished in 1816 and was readopted in 1948 with the Home Rule Act; a version modernised in 2004 took its colours from the Merkið flag.",
     sources: [
       { title: "Coat of arms of the Faroe Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands" },
+    ],
+  },
+  "fr-bourbon": {
+    description: "The Bourbon monarchy's plain white flag, flown from the reign of Henry IV until the 1789 Revolution, could be strewn with gold fleurs-de-lis — the ancient emblem of the French crown. White had long stood for purity and, in French royal tradition, for the Virgin Mary, while the gold fleurs-de-lis represented glory, faith and the dynasty's claimed legitimacy to rule.",
+    sources: [
+      { title: "The Fleur-de-lis and Its Meanings and Uses — FamilySearch", url: "https://www.familysearch.org/en/newsroom/the-fleur-de-lis-and-its-meanings-and-uses" },
     ],
   },
   "fr-naval-ensign": {
@@ -5676,6 +5694,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
     ],
   },
+  "hu-arpad": {
+    description: "The Árpád stripes — eight alternating bars of red and silver — have marked Hungarian heraldry since the early 13th century, tied to the House of Árpád, Hungary's founding royal dynasty. Tradition sometimes reads the four silver stripes as the country's four great rivers, the Danube, Tisza, Sava and Drava; the pattern survives today in the left half of Hungary's national coat of arms.",
+    sources: [
+      { title: "Árpád stripes — Wikipedia", url: "https://en.wikipedia.org/wiki/%C3%81rp%C3%A1d_stripes" },
+    ],
+  },
   "hu-naval-ensign": {
     description: "The naval ensign is the national tricolour bordered with a red-and-green sawtooth edge and charged, offset toward the hoist, with the Hungarian coat of arms flanked by an oak branch and an olive branch, flown by vessels of the Hungarian armed forces on the Danube. The arms combine the Árpád stripes — four red and four silver bands traditionally read as the country's four great rivers, the Danube, Tisza, Dráva and Száva — with the double cross of Hungarian statehood, over the triple mount representing the historic mountain ranges of the kingdom.",
     sources: [
@@ -5954,6 +5978,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "The new AIFF logo — Indian Football (official) via X/Twitter", url: "https://x.com/IndianFootball/status/781020193900339200" },
       { title: "AIFF gets a new logo — Business Standard", url: "https://www.business-standard.com/article/pti-stories/aiff-gets-a-new-logo-116092801000_1.html" },
+    ],
+  },
+  "iq-1924": {
+    description: "The Kingdom of Iraq's first flag, adopted in 1924, followed a colour scheme long associated with the Arab cause — attributed to a 13th-century verse by Safi al-Din al-Hilli reading black for the darkness of past battles, white for the purity of deeds, green for Arab fields, and red for the blood willingly shed in their defence. Its two seven-pointed white stars, on a red trapezoid at the hoist, marked the ruling Hashemite dynasty; other readings link them to the Tigris and Euphrates, or to the country's Arab and Kurdish peoples.",
+    sources: [
+      { title: "Kingdom of Iraq (1924-1958) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/iq_kingd.html" },
     ],
   },
   "iq-uk": {
