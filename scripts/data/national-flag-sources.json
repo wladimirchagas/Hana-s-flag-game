@@ -5362,7 +5362,16 @@
           "design": "The cover of the the Democratic Republic of the Congo passport.",
           "source": "https://gicg.net/passport/cd/",
           "sha256": "7ae3562f886b11dd366545886603551f4967582ff934c00dda689c6fd8f11e08",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Democratic Republic of the Congo's passport bears the national emblem, introduced in 2006: a leopard's head at the centre, one of the most respected animals in Congolese culture and a symbol of the state's authority, courage and vigilance, flanked by an elephant tusk (recalling the historic ivory trade and the country's wildlife) and a spear (for readiness to defend sovereignty) — both traditional symbols of power among the region's 19th-century local rulers, and part of the country's arms since 1963. Below runs the national motto, \"Justice, Paix, Travail\" — \"Justice, Peace, Work\".",
+            "sources": [
+              {
+                "title": "Emblem of the Democratic Republic of the Congo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_the_Democratic_Republic_of_the_Congo"
+              }
+            ]
+          }
         },
         {
           "id": "cd-football-crest",
@@ -5455,7 +5464,16 @@
           "design": "The cover of the the Central African Republic passport.",
           "source": "https://gicg.net/passport/cf/",
           "sha256": "961032d8ed694d1dd8931e465149b137248a29b7a556f9f93b520b6022728e50",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Central African Republic's passport bears the national coat of arms, adopted 17 May 1963: an elephant and baobab tree for the country's nature, a gold star on a map of Africa marking the country's location on the continent, three diamonds for its mineral wealth, and an open hand — the emblem of MESAN, the dominant political party at independence. A sun rises over the shield beneath two mottos: \"Zo kwe zo\" in Sango, \"All people are people\", and the French \"Unité, Dignité, Travail\" — \"Unity, Dignity, Labour\".",
+            "sources": [
+              {
+                "title": "Coat of arms of the Central African Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Central_African_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "cf-football-crest",
@@ -5557,7 +5575,16 @@
           "design": "The cover of the the Republic of the Congo passport.",
           "source": "https://gicg.net/passport/cg/",
           "sha256": "5cafc144f3c900ef362e0cc026f430aa363991f7a1079dafb319da94b6a7954b",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Republic of the Congo's passport bears the national coat of arms, adopted in 1960 and readopted in 1991 after being replaced by a simpler socialist-era emblem during the 1970–1991 People's Republic period: a red lion holding a torch on a gold shield crossed by a green wavy stripe, supported by two African elephants. The lion represents courage and strength, its torch the light of freedom, and the gold field the country's natural riches; the motto beneath reads \"Unité, Travail, Progrès\" — \"Unity, Work, Progress\".",
+            "sources": [
+              {
+                "title": "Coat of arms of the Republic of the Congo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo"
+              }
+            ]
+          }
         },
         {
           "id": "cg-football-crest",
