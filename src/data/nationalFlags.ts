@@ -4487,6 +4487,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Irish Defence Forces cap badge — Wikipedia", url: "https://en.wikipedia.org/wiki/Irish_Defence_Forces_cap_badge" },
     ],
   },
+  "ie-defence-forces": {
+    description: "The flag of the Irish Defence Forces is based on the national tricolour bearing the 'Óglaigh na hÉireann' emblem, the joint badge shared across the army, naval service and air corps. The emblem's name and design link the modern Defence Forces back to the Irish Volunteers, founded in November 1913, from which the state's military tradition descends.",
+    sources: [
+      { title: "Defence Forces Ireland — Our Emblems", url: "https://irish-defence-forces.squarespace.com/our-emblems" },
+      { title: "Wikipedia — List of flags of Ireland", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
+    ],
+  },
   "ie-air-corps": {
     description: "A field split by diagonal red and yellow stripes bears the Defence Forces' sunburst emblem in the upper hoist and the Air Corps' own roundel in the lower fly, together marking the flag as that of Ireland's air arm within the wider Defence Forces.",
     sources: [
@@ -4845,6 +4852,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A tricolour of red, light blue and navy blue — one colour for each service, Army, Air Force and Navy — bears the national flag in the canton and, in the fly, the joint emblem: two black rifles crossed in saltire over a silver anchor, with a golden eagle above, uniting a symbol of each branch (rifles for the Army, anchor for the Navy, eagle for air power) under one Kenya Defence Forces badge.",
     sources: [
       { title: "Kenya Defence Forces (Joint Service flag) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ke%5E.html" },
+    ],
+  },
+  "ke-air-force": {
+    description: "The Air Force Ensign of Kenya, flown since 1964, follows the same pattern the RAF Ensign set for former British colonies: a light blue field with the national flag in the canton and the air force's own roundel — concentric rings of black, white, red and green — in the fly. The roundel's colours repeat the national flag's own: black for the Kenyan people, red for the blood shed in the struggle for independence, and green for the land, separated by the white that stands for peace.",
+    sources: [
+      { title: "Flags of the World — Kenyan Air Force flags", url: "https://www.crwflags.com/fotw/flags/ke%5Eaf.html" },
+      { title: "Wikipedia — List of flags of Kenya", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
     ],
   },
   "ke-president": {
