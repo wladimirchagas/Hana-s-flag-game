@@ -4985,7 +4985,16 @@
           "design": "The white-red-white flag of the 1918 Belarusian Democratic Republic, restored at independence in 1991 and replaced by referendum in 1995.",
           "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
           "sha256": "ab40283d6c504ed74f9b64808135beb70e8fa6097f7ea7a670547e0db7ef7e7a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The white-red-white flag was designed in 1917 by the engineer Klaudziy Duzh-Dushewski, drawing its colours from traditional Belarusian folk costume and from military banners of the Grand Duchy of Lithuania, whose territory once included modern Belarus. It became the flag of the short-lived Belarusian Democratic Republic in 1918, was flown by Belarusian partisans and émigré organisations between the wars, and was restored as the flag of independent Belarus in 1991 before a 1995 referendum replaced it with a Soviet-derived design.",
+            "sources": [
+              {
+                "title": "The white-red-white flag of Belarus — Rada of the Belarusian Democratic Republic",
+                "url": "https://www.radabnr.org/en/the-white-red-white-flag-of-belarus/"
+              }
+            ]
+          }
         },
         {
           "id": "by-ssr",
@@ -4999,7 +5008,16 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
           "sha256": "14eb7024ce018e148148dee1de38b3a9ff1ac3d450ce7bbbf0b2bd120165bd44",
           "fetched": "2026-08-08",
-          "priorPolity": "the Byelorussian Soviet Socialist Republic"
+          "priorPolity": "the Byelorussian Soviet Socialist Republic",
+          "meaning": {
+            "description": "The Byelorussian SSR's flag paired a red band — read as the bloodshed and sacrifice of Belarusian history, and as the struggle for freedom — with a green band for the republic's forests and agricultural heritage, the gold hammer, sickle and star marking Soviet rule. Along the hoist ran the vyshyvanka, a white-on-red ornamental pattern drawn from traditional Belarusian embroidery designed by the artisan Matrona Markevich in 1917, which the modern Belarusian flag still carries.",
+            "sources": [
+              {
+                "title": "Flag of the Byelorussian Soviet Socialist Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Byelorussian_Soviet_Socialist_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "by-president",
@@ -5676,7 +5694,16 @@
           "design": "The green flag of Mobutu's Zaire — a yellow disc bearing an arm holding a flaming torch.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
           "sha256": "4d9d167735254b34ee9d84e588a90767c5017f796a23315c33b5f7521218e7bd",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Zaire's flag, introduced by President Mobutu Sese Seko in 1971 as part of his \"authenticité\" campaign to strip away colonial-era symbols and reassert African identity, showed a yellow disc bearing the ruling party's emblem — an arm holding a flaming red torch — on green. Green stood for hope, the golden disc for the country's natural wealth, and the red flame for the blood of those who died for the revolution.",
+            "sources": [
+              {
+                "title": "Flag Review: Zaire (1971-1997)",
+                "url": "http://flag-review.blogspot.com/2013/10/zaire-1971-1997.html"
+              }
+            ]
+          }
         },
         {
           "id": "cd-1966",
@@ -5729,7 +5756,16 @@
           "design": "A blue field with a single gold star — the flag of the Congo Free State and, from 1908, of the Belgian Congo.",
           "source": "https://en.wikipedia.org/wiki/Congo_Free_State",
           "sha256": "c2982fda4448981a610609461c8c8149232dbc8c3455b76ce555e7d395a021c9",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The Congo Free State's flag was blue with a single gold star, a design its ruler King Leopold II of Belgium drew from the flag of the old Kingdom of Kongo. Leopold presented the star as a light of civilisation and Christianity for what colonial Europe called the \"Dark Continent\" — while in practice his personal rule over the territory inflicted forced labour, mutilation and mass death on the Congolese population, among the worst atrocities of the colonial era.",
+            "sources": [
+              {
+                "title": "Congo: Pre-independence flags (1877–1960) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/cd_prind.html"
+              }
+            ]
+          }
         },
         {
           "id": "cd-president",
