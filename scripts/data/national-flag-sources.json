@@ -2306,7 +2306,16 @@
           "design": "The blue flag with wavy white lines and a gold sun, of the short-lived federation of British Caribbean colonies Barbados belonged to.",
           "source": "https://en.wikipedia.org/wiki/List_of_Barbadian_flags",
           "sha256": "30be5b49804366875b68cc52e75be1868c74489379b22d4855a1b9c59c10144e",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Designed by the artist Edna Manley, the West Indies Federation's flag showed four wavy white stripes on blue, representing the Caribbean Sea, with an orange-gold disc at the centre for the sun shining on its waters — a design meant to evoke the shared sea uniting the federation's scattered island territories.",
+            "sources": [
+              {
+                "title": "The West Indies Federation Flag — The Flag Institute",
+                "url": "https://www.flaginstitute.org/wp/flag-facts/the-west-indies-federation-flag/"
+              }
+            ]
+          }
         },
         {
           "id": "bb-colonial",
@@ -3040,7 +3049,16 @@
           "design": "The national tricolour defaced in the canton with the socialist state emblem — the lion, gearwheel and wheat of the People's Republic.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bulgaria",
           "sha256": "ddcbce86adfa4a2c5f6f097fe6ed22d14ea0953fb39cb55602dfc63f729f6f8a",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The communist-era flag defaced Bulgaria's white-green-red tricolour with the People's Republic's state emblem: a lion — Bulgaria's historic heraldic symbol — wreathed in wheat for prosperity under the planned economy, above a cogwheel for industry, crowned by a red star for communism, with the dates 681 (the founding of the first Bulgarian state) and 1944 (liberation from Nazi occupation) on a ribbon below.",
+            "sources": [
+              {
+                "title": "Emblem of the People's Republic of Bulgaria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_the_People's_Republic_of_Bulgaria"
+              }
+            ]
+          }
         },
         {
           "id": "bg-ottoman",
@@ -3443,7 +3461,16 @@
           "design": "A green field with a red star in the canton, flown by the Marxist-Leninist People's Republic of Benin.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Benin",
           "sha256": "6023dff4058a876872207c9c35ac732a0c2fa1b2f04303e3fc69e477c49854b3",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The People's Republic of Benin's flag, adopted after the 1975 turn to Marxism-Leninism, set a red star in the canton of a plain green field — green for agriculture, red for revolution and socialism, and the star for the unity of all revolutionary forces against the country's enemies. It was itself a colour-inversion of the ruling People's Revolutionary Party's own red flag, and was retired when Benin abandoned Marxism in 1990.",
+            "sources": [
+              {
+                "title": "People's Republic of Benin (1975-1990) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/bj-prb.html"
+              }
+            ]
+          }
         },
         {
           "id": "bj-french",
@@ -4031,7 +4058,16 @@
           "design": "23 stars — the celestial sphere as redrawn when Acre's star and Guanabara's were both carried.",
           "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
           "sha256": "7af6098bc795d5ec5d0cd9e509be38cc39c7be210eefdb60bd71d1ed56ede5e1",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Brazil's republican flag keeps the green field and yellow rhombus of the empire it replaced, but sets a blue celestial sphere at the centre showing the night sky exactly as it appeared over Rio de Janeiro on the morning the Republic was proclaimed, 15 November 1889 — each star a Brazilian state, their number growing as new states joined the union. The curved banner reads \"Ordem e Progresso\" (\"Order and Progress\"), a motto drawn from the positivist philosopher Auguste Comte that inspired the Republic's founders.",
+            "sources": [
+              {
+                "title": "Flag of Brazil — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+              }
+            ]
+          }
         },
         {
           "id": "br-1960",
@@ -4041,7 +4077,16 @@
           "to": 1968,
           "reuse": "historical-flags/brazil-1960.svg",
           "design": "22 stars — Guanabara's admission as a state added the 22nd.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "meaning": {
+            "description": "Brazil's republican flag keeps the green field and yellow rhombus of the empire it replaced, but sets a blue celestial sphere at the centre showing the night sky exactly as it appeared over Rio de Janeiro on the morning the Republic was proclaimed, 15 November 1889 — each star a Brazilian state, their number growing as new states joined the union. The curved banner reads \"Ordem e Progresso\" (\"Order and Progress\"), a motto drawn from the positivist philosopher Auguste Comte that inspired the Republic's founders.",
+            "sources": [
+              {
+                "title": "Flag of Brazil — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+              }
+            ]
+          }
         },
         {
           "id": "br-1889-republic",
@@ -4051,7 +4096,16 @@
           "to": 1960,
           "reuse": "historical-flags/brazil-1889.svg",
           "design": "The first republican flag, with 21 stars, adopted 19 November 1889.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "meaning": {
+            "description": "Brazil's republican flag keeps the green field and yellow rhombus of the empire it replaced, but sets a blue celestial sphere at the centre showing the night sky exactly as it appeared over Rio de Janeiro on the morning the Republic was proclaimed, 15 November 1889 — each star a Brazilian state, their number growing as new states joined the union. The curved banner reads \"Ordem e Progresso\" (\"Order and Progress\"), a motto drawn from the positivist philosopher Auguste Comte that inspired the Republic's founders.",
+            "sources": [
+              {
+                "title": "Flag of Brazil — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+              }
+            ]
+          }
         },
         {
           "id": "br-1889-provisional",
@@ -4083,7 +4137,22 @@
           "to": 1889,
           "reuse": "historical-flags/empire-of-brazil.png",
           "design": "The imperial arms on a yellow rhombus on a green field; the arms were redrawn in 1853 as provinces were added.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "meaning": {
+            "description": "The Empire of Brazil's flag set the imperial coat of arms on a yellow rhombus over a green field. Emperor Pedro I's 1822 decree gave the colours a patriotic reading — green for spring, yellow for gold — but they were in fact the dynastic colours of his own House of Braganza (green) and his wife Maria Leopoldina's House of Habsburg (yellow); the arms themselves carried the imperial crown, the cross of the Order of Christ, and branches of coffee and tobacco, two of the empire's main exports, ringed by stars for its provinces.",
+            "myths": [
+              {
+                "claim": "Green represents Brazil's forests and yellow represents its gold and mineral wealth.",
+                "reality": "This reading was popularised only in 1889, after the monarchy fell, specifically to obscure the flag's dynastic origin: green was the colour of the ruling House of Braganza, yellow of the Habsburgs Pedro I had married into. The republic kept the same field colours for its own flag, and the forests-and-gold story has been retold ever since as if it were the original meaning."
+              }
+            ],
+            "sources": [
+              {
+                "title": "Empire of Brazil, 1822-1889 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/br_emp.html"
+              }
+            ]
+          }
         },
         {
           "id": "br-1822-kingdom",
