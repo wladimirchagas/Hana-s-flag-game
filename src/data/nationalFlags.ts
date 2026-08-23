@@ -4588,6 +4588,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Grenada" },
     ],
   },
+  "gd-passport": {
+    description: "Grenada's CARICOM-format passport bears the national coat of arms: a shield divided by a gold cross, with Christopher Columbus's flagship the Santa María at the centre, since Columbus sighted Grenada on his third voyage in 1498. A British lion appears in two quarters and a crescent moon sprouting a lily — a mark of the island's historic dedication to the Virgin Mary — in the other two, surrounded by seven red roses for Grenada's six parishes plus the Southern Grenadines. An armadillo before a corn stalk and a Grenada dove before a banana plant — the dove found only on Grenada — support the shield on either side.",
+    sources: [
+      { title: "Coat of arms of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Grenada" },
+    ],
+  },
   "gd-football-crest": {
     description: "The colours, stars and central disc are taken from Grenada's national flag: the gold stars stand for the country's parishes and its two sister islands of Carriacou and Petite Martinique, the green represents the islands' vegetation, and the gold evokes the sun and the warmth of Grenadians.",
     sources: [
@@ -5618,6 +5624,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Saint Kitts and Nevis — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Kitts_and_Nevis" },
     ],
   },
+  "kn-passport": {
+    description: "Saint Kitts and Nevis's CARICOM-format passport bears the national coat of arms, adopted in 1983: a Carib's head at the top of the shield — for the islands' original inhabitants — flanked by a fleur-de-lis and a rose marking the French and British colonial periods, above a lighter (small sailing vessel) and two poinciana flowers. The crest shows a flaming torch held by three hands — African, European and Indian — representing the shared struggle for freedom of the islands' diverse peoples, while two pelicans, the national bird, support the shield beside sugar cane and coconut palm, the islands' traditional crops, beneath the motto \"Country Above Self\".",
+    sources: [
+      { title: "Coat of arms of Saint Kitts and Nevis — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Kitts_and_Nevis" },
+    ],
+  },
   "kn-football-crest": {
     description: "The pelican is the brown pelican, Saint Kitts and Nevis' national bird, and the arc's green, black, red and yellow are the colours of the national flag.",
     sources: [
@@ -5840,6 +5852,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "lc-arms": {
     description: "On a black shield, two stalks of bamboo form a cross around a Tudor rose and a fleur-de-lys — the rose for Britain and the lily for France, the two powers that fought over the island — with an African stool at the centre for the islanders' heritage. Two Saint Lucia parrots, the national bird, support the shield, and a hand holding a torch crowns it. The motto reads “The Land, The People, The Light.”",
+    sources: [
+      { title: "Coat of arms of Saint Lucia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Lucia" },
+    ],
+  },
+  "lc-passport": {
+    description: "Saint Lucia's passport bears the national coat of arms, designed in 1967: a rose for the island's period under British administration and a fleur-de-lis for the French rule that preceded it — Saint Lucia changed hands between the two powers some fourteen times — alongside an African spearhead recalling the ancestors brought to the island during the transatlantic slave trade, and a torch held aloft to light the nation's way forward. The shield is supported by two Saint Lucia parrots (Amazona versicolor), the island's national bird, found nowhere else in the world.",
     sources: [
       { title: "Coat of arms of Saint Lucia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Lucia" },
     ],
@@ -8629,6 +8647,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "vc-arms": {
     description: "Two women in classical Roman dress stand for the country's ideals — Peace, holding an olive branch, and Justice, kneeling with golden scales before an altar. The green shield between them bears a cotton plant, a mainstay of the old island economy. The motto reads Pax et Justitia — “Peace and Justice.”",
+    sources: [
+      { title: "Coat of arms of Saint Vincent and the Grenadines — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Vincent_and_the_Grenadines" },
+    ],
+  },
+  "vc-passport": {
+    description: "Saint Vincent and the Grenadines' passport bears the national coat of arms, adopted in 1979 and based on a colonial badge used since 1907: two women in classical dress flank a gold altar, one holding an olive branch for peace, the other kneeling with the scales of justice, beneath the Latin motto \"Pax et Justitia\" — \"Peace and Justice\". A cotton plant crowns the design, marking the crop that was once central to the islands' economy.",
     sources: [
       { title: "Coat of arms of Saint Vincent and the Grenadines — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Vincent_and_the_Grenadines" },
     ],
