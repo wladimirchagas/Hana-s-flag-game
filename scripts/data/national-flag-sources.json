@@ -24965,7 +24965,16 @@
           "design": "The blue-white-blue flag with the arms, before the 1971 revision of the shade and emblem.",
           "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags",
           "sha256": "9b5827807daf39f4708ba9d362fc53fe7ee0ca3e13e7cc69ef7ce1647baa87bc",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Readopted 4 September 1908 from the blue-white-blue triband of the earlier Federal Republic of Central America, with Nicaragua's own coat of arms centred on the white band, this flag stood (with the arms twice redrawn, in 1908 and again in 1971) until a 1971 law finally gave the design formal legal status. The two blue bands represent the Pacific Ocean and the Caribbean Sea framing the country, white stands for peace, and the arms' five volcanoes between the oceans recall the five original states of the Central American federation.",
+            "sources": [
+              {
+                "title": "Flag of Nicaragua — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Nicaragua"
+              }
+            ]
+          }
         },
         {
           "id": "ni-federal",
@@ -30273,7 +30282,16 @@
           "design": "The flag of the one-party era — red over green divided by a white wavy band — flown after the 1977 coup.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Seychelles",
           "sha256": "e0a73c03a3849e32b87eec9233fee76ddb47e5c79ed3c8da11f90e0d8cc120bd",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted after France-Albert René's 1977 coup deposed President James Mancham, this flag — red over green divided by a wavy white band — was based on the banner of René's Seychelles People's United Party, the country's sole legal party under the one-party constitution that followed. Red stood for socialism and revolution, green for the land, and the wavy white band for the surrounding ocean and national unity; it flew until multiparty democracy returned in 1996.",
+            "sources": [
+              {
+                "title": "Flag of Seychelles — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Seychelles"
+              }
+            ]
+          }
         },
         {
           "id": "sc-uk",
@@ -31273,7 +31291,16 @@
           "design": "The plain white-blue-red Pan-Slavic tricolour without the national arms, flown by the first Slovak Republic (1939–1945). Slovakia's present flag added the coat of arms in 1992 to distinguish the tricolour from Russia's and Slovenia's.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Slovakia",
           "sha256": "af72b7769e6b0c73a9bb777a613f91871b0c7f1ca7ad077c2e33343a8162d37d",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "The flag of the First Slovak Republic, a Nazi Germany client state under President Jozef Tiso from 1939 to 1945: the same white-blue-red Pan-Slavic tricolour Slovakia's modern flag uses, but without any coat of arms to mark it apart from Russia's or a future Slovenia's identical stripes. The Slovak coat of arms was added only in 1992, when the country again needed a flag distinct from its neighbours' as Czechoslovakia dissolved.",
+            "sources": [
+              {
+                "title": "Slovak Republic (1939–1945) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Slovak_Republic_(1939%E2%80%931945)"
+              }
+            ]
+          }
         },
         {
           "id": "sk-president",
@@ -31813,7 +31840,16 @@
           "design": "The white flag with five coloured stars linked by an ellipse, flown while Suriname was an autonomous country within the Kingdom of the Netherlands.",
           "source": "https://en.wikipedia.org/wiki/List_of_Surinamese_flags",
           "sha256": "c2ada50bae201668bb09f51c6c5a507cbb9c107ff21a2ec0b2a47719424ff195",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted after Suriname gained autonomous-country status within the Kingdom of the Netherlands under the 1954 Charter, this white flag set five five-pointed stars — yellow, red, white, black and brown — on a black ellipse, one colour for each of the territory's major population groups: yellow for the Chinese community, red for Indigenous Americans, white for Europeans, black for Afro-Surinamese Creoles, and brown for Indian (Hindustani) Surinamese. Criticised for foregrounding ethnic division rather than national unity, it was replaced at independence in 1975 by a design emphasising a single people.",
+            "sources": [
+              {
+                "title": "Flag of Suriname — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Suriname"
+              }
+            ]
+          }
         },
         {
           "id": "sr-dutch",
@@ -35249,7 +35285,16 @@
           "design": "Thirteen stripes with the British Union Flag in the canton — flown before the Stars and Stripes.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
           "sha256": "a6266325837516f3bc51af3e62b36408cc9f05f5dcc1abd2113516d789bc7dca",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "First flown 3 December 1775 aboard the Continental Navy ship Alfred, the Continental Union Flag (also called the Grand Union or Cambridge Flag) combined thirteen alternating red-and-white stripes for the thirteen united colonies with the British Union Flag — England's St George's Cross and Scotland's St Andrew's Cross, before Ireland's cross was added in 1801 — in the canton, expressing both the colonies' unity and their still-unresolved allegiance to the Crown. It served as the de facto flag of the United Colonies and then the United States until the Continental Congress adopted the star-spangled Stars and Stripes on 14 June 1777.",
+            "sources": [
+              {
+                "title": "Continental Union Flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Continental_Union_Flag"
+              }
+            ]
+          }
         },
         {
           "id": "us-1777",
@@ -36234,7 +36279,16 @@
           "design": "Uruguay's first national flag, with seventeen blue-and-white stripes and the Sun of May in the canton. The stripes were reduced to the present nine in 1830.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Uruguay",
           "sha256": "4b5c0478c0d81138b566db35fd1608279e20ed2f08cb16143435df54f9a67038",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "Adopted by law on 18 December 1828 and designed by head of state Joaquín Suárez, Uruguay's first flag set the Sun of May — the same emblem adopted by Argentina, with sixteen rays alternating straight and wavy — in a white canton beside seventeen alternating blue-and-white stripes, one for each department the new republic then had. Considered too complex, the design was simplified on 11 July 1830 to the nine stripes flown today, one for each of the departments existing at that later date.",
+            "sources": [
+              {
+                "title": "Flag of Uruguay — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Uruguay"
+              }
+            ]
+          }
         },
         {
           "id": "uy-artigas",
@@ -36652,7 +36706,16 @@
           "design": "The gold-and-white flag of the Papal States, charged with the crossed keys of Saint Peter beneath the papal tiara. When Vatican City was founded in 1929 it kept these colours and this emblem.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Vatican_City",
           "sha256": "6efc3456ce6095dc7dee086d616d0ba6d8af1f52a431b5fa82118775288558fa",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "The Papal States' yellow-and-white flag, adopted in this form when Pope Leo XII fixed the colours in 1825 (replacing an earlier red-and-yellow scheme traditional to the Roman Senate and people), bore the crossed gold and silver keys of Saint Peter beneath the triple-crowned papal tiara — the gold key for spiritual authority, the silver for temporal power, and the tiara marking the Pope's sovereignty. When the Lateran Treaty of 1929 created Vatican City as a sovereign state after the loss of the Papal States in 1870, it kept this same colour scheme and emblem for its own flag.",
+            "sources": [
+              {
+                "title": "Flag of Vatican City — Britannica",
+                "url": "https://www.britannica.com/topic/flag-of-Vatican-City"
+              }
+            ]
+          }
         },
         {
           "id": "va-arms",
@@ -37954,7 +38017,16 @@
           "design": "The orange-white-blue \"Oranje-Blanje-Blou\" with the three small flags at its centre, in the lighter shades specified in 1982.",
           "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
           "sha256": "54edacfc75a66e4708a3ab5eae49694cdf98ed66a96219347c0a27708b1cd4dc",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "A 1982 refinement of South Africa's 1928 flag, specifying lighter shades for the orange-white-blue field while keeping the same three small flags — Union Jack, Orange Free State, Transvaal — at its centre; a 1948 National Party attempt to remove the Union Jack, which opponents nicknamed the flag's 'blood stain', had failed to gain the votes needed to change the design.",
+            "sources": [
+              {
+                "title": "South Africa (1928–1994) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/za_old.html"
+              }
+            ]
+          }
         },
         {
           "id": "za-1928",
@@ -37967,7 +38039,16 @@
           "design": "Orange, white and blue, with the Union Flag, the Orange Free State flag and the Transvaal flag together in the centre.",
           "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
           "sha256": "6f717ad6e125a61dd5c2e88a8e7e1fa2e8856b5f3b4240d735dc95f3e5491e97",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "First hoisted 31 May 1928 after years of parliamentary compromise, this flag placed the Union Jack, the vertical Orange Free State flag and the Transvaal (South African Republic) flag together on the white band of an orange-white-blue field derived from the 17th-century Dutch Prince's Flag — nicknamed 'Oranje, Blanje, Blou'. It remained South Africa's flag through the apartheid era until 1994, when the country's first democratic election brought the current flag; its continued display is now restricted by a 2019 Equality Court ruling that treats gratuitous public displays of it as hate speech, while permitting artistic, academic and journalistic use.",
+            "sources": [
+              {
+                "title": "Flag of South Africa (1928–1994) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_South_Africa_(1928%E2%80%931994)"
+              }
+            ]
+          }
         },
         {
           "id": "za-sandf",
