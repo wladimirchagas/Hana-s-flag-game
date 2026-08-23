@@ -2099,7 +2099,16 @@
           "design": "The cover of the Bosnia and Herzegovina passport.",
           "source": "https://gicg.net/passport/ba/",
           "sha256": "0df8b4455e06944bc8793b691f2a911c938b3915268144a1a8dcf9796c703e64",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Bosnia and Herzegovina's passport bears the national coat of arms, adopted in 1998 to replace the independence-era fleur-de-lis emblem: a blue, three-pointed shield following the design of the national flag, with a yellow triangle and a diagonal row of white stars. The three-pointed shape symbolises both the country's three constituent peoples — Bosniaks, Croats and Serbs — and the outline of Bosnia and Herzegovina's own territory.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bosnia and Herzegovina — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina"
+              }
+            ]
+          }
         },
         {
           "id": "ba-football-crest",
@@ -10123,7 +10132,16 @@
           "design": "The cover of the the Federated States of Micronesia passport.",
           "source": "https://gicg.net/passport/fm/",
           "sha256": "ddb8fc3e7a5e3c02038bb11bc1294db681410e4996e2035860018bd521203f8b",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Federated States of Micronesia's passport bears the national seal: a sprouted coconut floating on the Pacific Ocean, topped by four five-pointed white stars for the federation's four states — Chuuk, Kosrae, Pohnpei and Yap — with the motto \"Peace Unity Liberty\" and the founding year 1979. The coconut stands for life and sustenance, central to the Micronesian way of life.",
+            "sources": [
+              {
+                "title": "Seal of the Federated States of Micronesia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia"
+              }
+            ]
+          }
         },
         {
           "id": "fm-football-crest",
@@ -14659,7 +14677,16 @@
           "design": "The cover of the Iran passport.",
           "source": "https://gicg.net/passport/ir/",
           "sha256": "b4690f3cd6a33d9504fd4f8c29b556cb507c31e4690184240bff50d220cfb2b1",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Iran's passport bears the national emblem, adopted in 1980: a stylised composition of four crescents and a sword that together spell the word \"Allah\" in Arabic script, surmounted by a shadda mark, with the whole shape also evoking a tulip — a flower long linked in Iranian tradition to those who die for their country. Its five parts are read as representing the five pillars of Shia Islam.",
+            "sources": [
+              {
+                "title": "Emblem of Iran — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Iran"
+              }
+            ]
+          }
         },
         {
           "id": "ir-football-crest",
@@ -16332,7 +16359,16 @@
           "design": "The cover of the Kiribati passport.",
           "source": "https://gicg.net/passport/ki/",
           "sha256": "3fceecf4c19f4f4e4cbba7fa95429a933359e4f37725f6f16a8756b364aae5c4",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Kiribati's passport bears the national coat of arms: a golden frigatebird flying over a rising sun on a red field, above blue and white wavy stripes representing the Pacific Ocean. The frigatebird symbolises power, freedom and Kiribati's connection to sea and sky, while the sun's rays represent the 16 Gilbert Islands and Banaba, and the three pairs of wave stripes represent the nation's three archipelagos — the Gilbert, Phoenix and Line Islands.",
+            "sources": [
+              {
+                "title": "Coat of arms of Kiribati — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kiribati"
+              }
+            ]
+          }
         },
         {
           "id": "ki-football-crest",
@@ -19744,7 +19780,16 @@
           "design": "The cover of the the Marshall Islands passport.",
           "source": "https://gicg.net/passport/mh/",
           "sha256": "5c647c56666699c9f00009a3f5bf90be6d5640fb21c1b9d86cff7ba8244c2339",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Marshall Islands' passport bears the national seal: a 24-point star — each point a municipal district, its four main points marking Majuro, Kwajalein, Jaluit and Wotje — with rays alternating orange for bravery and white for peace, also representing the nation's two atoll chains, the sunrise Ratak and sunset Ralik. An outrigger sailing canoe recalls the Marshallese tradition of ocean navigation, and a fishing net marks the fish that form the staple diet.",
+            "sources": [
+              {
+                "title": "Seal of the Marshall Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_the_Marshall_Islands"
+              }
+            ]
+          }
         },
         {
           "id": "mh-football-crest",
@@ -21046,7 +21091,16 @@
           "design": "The cover of the the Maldives passport.",
           "source": "https://gicg.net/passport/mv/",
           "sha256": "28e54f7dff4f63420bce09f560b981f05f845b0959fcf1f21a1a7642499d5015",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Maldives' passport bears the national emblem: a coconut palm — representing the nation's traditional livelihood, since Maldivians use every part of the tree — flanked by two crossed national flags, above a crescent and star for the country's Islamic faith and state authority, with a scroll bearing the historic Arabic state title \"Ad-Dawlat Al-Mahaldibiyya\".",
+            "sources": [
+              {
+                "title": "Emblem of the Maldives — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_the_Maldives"
+              }
+            ]
+          }
         },
         {
           "id": "mv-uk",
@@ -23398,7 +23452,16 @@
           "design": "The cover of the Nauru passport.",
           "source": "https://gicg.net/passport/nr/",
           "sha256": "00603999dd26404a02e9e501b69052608827c47518c9e609e8670ee66a62fc9f",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Nauru's passport bears the national coat of arms: a twelve-pointed gold star above a shield, each point representing one of Nauru's twelve indigenous tribes, over the alchemical symbol for phosphorus on a woven background — for the phosphate mining that once dominated the economy and the people who wove it. A black frigatebird perched over ocean waves fills the shield's lower half, and a branch of calophyllum flowers stands beside it; the shield is ringed with ropes of palm leaves, frigatebird feathers and shark teeth from traditional chiefly regalia.",
+            "sources": [
+              {
+                "title": "Coat of arms of Nauru — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru"
+              }
+            ]
+          }
         }
       ],
       "independence": {
@@ -25461,7 +25524,16 @@
           "design": "The cover of the Palestine passport.",
           "source": "https://gicg.net/passport/ps/",
           "sha256": "8c2084fe17a81d5ac849c84b9494522b440a194c908bc60ea3d0efd44d73e259",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Palestine's passport bears the Eagle of Saladin, a symbol dating to the Ayyubid dynasty founded by Sultan Salah al-Din, who recaptured Jerusalem in 1187 — used by Palestinian authorities as an emblem of Arab nationalist heritage, courage and resilience. The eagle bears on its breast a shield in the pan-Arab colours of the Palestinian flag, and a scroll below reads \"Palestine\" in Arabic.",
+            "sources": [
+              {
+                "title": "Coat of arms of Palestine — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Palestine"
+              }
+            ]
+          }
         },
         {
           "id": "ps-football-crest",
@@ -25787,7 +25859,16 @@
           "design": "The cover of the Palau passport.",
           "source": "https://gicg.net/passport/pw/",
           "sha256": "a0e86d6bbe384f6dde1cf4f9a36409366158dad771b548d137cfada5c042ebc9",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Palau's passport bears the national seal: a traditional bai — a Palauan meeting-house — with a flag flying from its staff. The bai's decorated gable is a widely used Palauan symbol, appearing on most of the country's state and national seals, and the seal's design resembles the earlier seal of the Trust Territory of the Pacific Islands, the UN trusteeship that formerly administered Palau.",
+            "sources": [
+              {
+                "title": "Seal of Palau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_Palau"
+              }
+            ]
+          }
         },
         {
           "id": "pw-football-crest",
@@ -27316,7 +27397,16 @@
           "design": "The cover of the the Solomon Islands passport.",
           "source": "https://gicg.net/passport/sb/",
           "sha256": "da96de7b742976baf442e8cb2b82f2e4230f381af971b7e1b08d50bbe188e6b6",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The Solomon Islands' passport bears the national coat of arms: a shield of turtles, spears and a traditional dancing shield representing the country's provinces, crowned by a sun-topped helm and flanked by a crocodile and a shark, with a Sanford's sea eagle and two frigatebirds above symbolising freedom and courage. The shield is held by a stylised frigatebird and carries the national motto \"To Lead Is to Serve\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Solomon Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Solomon_Islands"
+              }
+            ]
+          }
         },
         {
           "id": "sb-football-crest",
@@ -27418,7 +27508,16 @@
           "design": "The cover of the Seychelles passport.",
           "source": "https://gicg.net/passport/sc/",
           "sha256": "affdc730e08ad5cc9f6c2566d196e5e4a62ebf2fa0e35a244eb237a5993f1e26",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Seychelles' passport bears the national coat of arms: an Aldabra giant tortoise on a green shield before a Seychelles palm tree and the Indian Ocean, with two islands and a schooner symbolising trade between them, supported by two Indo-Pacific sailfish for the country's marine wealth and topped by a white-tailed tropicbird. The tortoise stands for the archipelago's unique biodiversity and longevity, and the motto below reads \"Finis Coronat Opus\" — \"The End Crowns the Work\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Seychelles — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles"
+              }
+            ]
+          }
         },
         {
           "id": "sc-football-crest",
@@ -30285,7 +30384,16 @@
           "design": "The cover of the Timor-Leste passport.",
           "source": "https://gicg.net/passport/tl/",
           "sha256": "569b5ea912f0d1ed49a1479505e0d46b543dba6eb1d48f87cb1a960a0bfee148",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Timor-Leste's passport bears the national emblem: a five-pointed white star over a black-and-white mountain — Mount Ramelau, the country's highest peak — representing guidance and the five principles of independence, unity, justice, social solidarity and equality, ringed by rice and maize for agriculture and the people's wisdom. Yellow signifies wealth, black the darkness the nation had to overcome, and red the love of homeland and the struggle for independence.",
+            "sources": [
+              {
+                "title": "National emblem of Timor-Leste — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Timor-Leste"
+              }
+            ]
+          }
         },
         {
           "id": "tl-football-crest",
@@ -31121,7 +31229,16 @@
           "design": "The cover of the Tuvalu passport.",
           "source": "https://gicg.net/passport/tv/",
           "sha256": "93c970ce671db2b7607fecdd6c7ac426ae7cf8182ba3b1e6b5510861e7ecb1ab",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Tuvalu's passport bears the national coat of arms: a maneapa (traditional meeting house) on green ground beneath a blue sky, above wavy bars of gold and blue for the ocean, within a gold border alternately charged with eight mitre shells and eight banana leaves for the islands' marine and agricultural life. The motto reads \"Tuvalu mo te Atua\" — \"Tuvalu for the Almighty\" — also the title of the national anthem.",
+            "sources": [
+              {
+                "title": "Coat of arms of Tuvalu — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tuvalu"
+              }
+            ]
+          }
         }
       ],
       "independence": {
