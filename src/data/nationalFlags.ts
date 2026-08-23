@@ -5155,6 +5155,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Flag of Kazakhstan", url: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
     ],
   },
+  "kz-air-force": {
+    description: "The Kazakhstan Air Force's flag bears the same simplified sun-and-eagle emblem used across the country's armed forces flags, set within a red, gold-bordered star. The sun, shown here with fewer rays than the 32 on the national flag, stands for life and energy, while the steppe eagle — a device long used on the banners of Kazakh tribes — represents the freedom and lofty aspirations the national flag's own eagle expresses, adapted here to mark the air force specifically.",
+    sources: [
+      { title: "Flags of the World — Kazakhstan Armed Forces", url: "https://www.crwflags.com/fotw/flags/kz%5E.html" },
+      { title: "Wikipedia — Flag of Kazakhstan", url: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
+    ],
+  },
   "kz-naval-ensign": {
     description: "The naval ensign of the Kazakh Naval Forces, designed by Alexander Basov to coincide with the founding of the country's Caspian Sea fleet in August 1996, is a white-over-light-blue bicolour bearing the national sun and steppe eagle emblem, with a red star enclosing a blue anchor in the upper hoist canton. The anchor within the star marks the ensign as belonging to a commissioned warship, distinguishing it from the plain national flag flown by civilian vessels on the Caspian.",
     sources: [
@@ -6279,6 +6286,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Flags of the World — Pakistan Armed Forces", url: "https://www.crwflags.com/fotw/flags/pk%5E.html" },
       { title: "Wikipedia — Flag of Pakistan", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
+    ],
+  },
+  "pk-air-force": {
+    description: "The Ensign of the Pakistan Air Force is a light-blue field with the national flag in the canton and the service's own roundel — white and green rings around a spread eagle — in the fly. The eagle is the Shaheen, a bird of eastern heraldic tradition celebrated in the poetry of Allama Iqbal as an image of the ideal believer's grace, majesty and self-reliance, adopted as the emblem of the air force founded on Pakistan's independence in 1947.",
+    sources: [
+      { title: "Flags of the World — Pakistan Air Force", url: "https://www.crwflags.com/fotw/flags/pk%5Eaf.html" },
+      { title: "Wikipedia — List of Pakistani flags", url: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
     ],
   },
   "pk-civil-ensign": {
