@@ -2959,6 +2959,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Bosnia and Herzegovina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
     ],
   },
+  "ba-passport": {
+    description: "Bosnia and Herzegovina's passport bears the national coat of arms, adopted in 1998 to replace the independence-era fleur-de-lis emblem: a blue, three-pointed shield following the design of the national flag, with a yellow triangle and a diagonal row of white stars. The three-pointed shape symbolises both the country's three constituent peoples — Bosniaks, Croats and Serbs — and the outline of Bosnia and Herzegovina's own territory.",
+    sources: [
+      { title: "Coat of arms of Bosnia and Herzegovina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
+    ],
+  },
   "bb-president": {
     description: "A dark blue field bears the Presidential Seal: Barbados' coat of arms — a shield with a bearded fig tree (for which the island is named) flanked by two Pride of Barbados flowers, supported by a dolphinfish and a pelican, with a crest showing a Barbadian arm grasping two crossed sugar canes for the island's plantation history — encircled by a golden wreath of Pride of Barbados blossoms, the national flower, introduced in 2021 when Barbados became a republic and is flown only by the President.",
     sources: [
@@ -4437,6 +4443,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal of the Federated States of Micronesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia" },
     ],
   },
+  "fm-passport": {
+    description: "The Federated States of Micronesia's passport bears the national seal: a sprouted coconut floating on the Pacific Ocean, topped by four five-pointed white stars for the federation's four states — Chuuk, Kosrae, Pohnpei and Yap — with the motto \"Peace Unity Liberty\" and the founding year 1979. The coconut stands for life and sustenance, central to the Micronesian way of life.",
+    sources: [
+      { title: "Seal of the Federated States of Micronesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia" },
+    ],
+  },
   "fm-football-crest": {
     description: "The four stars are taken directly from the national flag, where they represent the country's four states: Chuuk, Kosrae, Pohnpei and Yap.",
     sources: [
@@ -5310,6 +5322,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Iran" },
     ],
   },
+  "ir-passport": {
+    description: "Iran's passport bears the national emblem, adopted in 1980: a stylised composition of four crescents and a sword that together spell the word \"Allah\" in Arabic script, surmounted by a shadda mark, with the whole shape also evoking a tulip — a flower long linked in Iranian tradition to those who die for their country. Its five parts are read as representing the five pillars of Shia Islam.",
+    sources: [
+      { title: "Emblem of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Iran" },
+    ],
+  },
   "ir-football-crest": {
     description: "The green-white-red repeats Iran's own national flag, and the red emblem on the white stripe is the flag's own central symbol: a stylised rendering of the word “Allah”, made of four crescents and a sword beneath a shaddah mark, adopted after the 1979 Islamic Revolution to replace the former Lion and Sun emblem associated with the monarchy.",
     sources: [
@@ -5632,6 +5650,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ki-arms": {
     description: "A golden frigatebird flies over a rising sun on the wavy sea — the same device the flag carries. The rays of the sun stand for the sixteen Gilbert Islands and Banaba, the three wave-bands for the three island groups (the Gilberts, the Phoenix and the Line Islands), and the frigatebird for command of the sea. The motto, in Gilbertese, reads Te Mauri, Te Raoi ao Te Tabomoa — “Health, Peace and Prosperity.”",
+    sources: [
+      { title: "Coat of arms of Kiribati — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kiribati" },
+    ],
+  },
+  "ki-passport": {
+    description: "Kiribati's passport bears the national coat of arms: a golden frigatebird flying over a rising sun on a red field, above blue and white wavy stripes representing the Pacific Ocean. The frigatebird symbolises power, freedom and Kiribati's connection to sea and sky, while the sun's rays represent the 16 Gilbert Islands and Banaba, and the three pairs of wave stripes represent the nation's three archipelagos — the Gilbert, Phoenix and Line Islands.",
     sources: [
       { title: "Coat of arms of Kiribati — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kiribati" },
     ],
@@ -6273,6 +6297,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal of the Marshall Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_Marshall_Islands" },
     ],
   },
+  "mh-passport": {
+    description: "The Marshall Islands' passport bears the national seal: a 24-point star — each point a municipal district, its four main points marking Majuro, Kwajalein, Jaluit and Wotje — with rays alternating orange for bravery and white for peace, also representing the nation's two atoll chains, the sunrise Ratak and sunset Ralik. An outrigger sailing canoe recalls the Marshallese tradition of ocean navigation, and a fishing net marks the fish that form the staple diet.",
+    sources: [
+      { title: "Seal of the Marshall Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_Marshall_Islands" },
+    ],
+  },
   "mh-football-crest": {
     description: "The starburst and the orange-and-white colours echo the Marshall Islands' national flag, where the rising orange-and-white band represents the equator and the country's two island chains, and the star's points stand for the country's electoral districts and principal cultural centres.",
     sources: [
@@ -6496,6 +6526,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "mv-arms": {
     description: "A coconut palm — the tree that sustains the islanders — rises between two national flags, above a crescent and star for the Islamic faith of the state and its authority, over a scroll bearing the country's traditional title, Ad-Dawlat Al-Mahaldheebiyya.",
+    sources: [
+      { title: "Emblem of the Maldives — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_Maldives" },
+    ],
+  },
+  "mv-passport": {
+    description: "The Maldives' passport bears the national emblem: a coconut palm — representing the nation's traditional livelihood, since Maldivians use every part of the tree — flanked by two crossed national flags, above a crescent and star for the country's Islamic faith and state authority, with a scroll bearing the historic Arabic state title \"Ad-Dawlat Al-Mahaldibiyya\".",
     sources: [
       { title: "Emblem of the Maldives — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_Maldives" },
     ],
@@ -6933,6 +6969,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Nauru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru" },
     ],
   },
+  "nr-passport": {
+    description: "Nauru's passport bears the national coat of arms: a twelve-pointed gold star above a shield, each point representing one of Nauru's twelve indigenous tribes, over the alchemical symbol for phosphorus on a woven background — for the phosphate mining that once dominated the economy and the people who wove it. A black frigatebird perched over ocean waves fills the shield's lower half, and a branch of calophyllum flowers stands beside it; the shield is ringed with ropes of palm leaves, frigatebird feathers and shark teeth from traditional chiefly regalia.",
+    sources: [
+      { title: "Coat of arms of Nauru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru" },
+    ],
+  },
   "nu-official-national": {
     description: "Adopted on 15 October 1975. The bright yellow field stands for the sunshine of Niue and the warmth the Niuean people feel towards New Zealand; the Union Flag marks the protection the United Kingdom granted in 1900 at the petition of Niue's kings and chiefs. On it four small yellow stars form the Southern Cross, for the association with New Zealand, and a larger star on a blue disc stands for the deep sea around the self-governing island.",
     sources: [
@@ -7352,6 +7394,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Palestine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Palestine" },
     ],
   },
+  "ps-passport": {
+    description: "Palestine's passport bears the Eagle of Saladin, a symbol dating to the Ayyubid dynasty founded by Sultan Salah al-Din, who recaptured Jerusalem in 1187 — used by Palestinian authorities as an emblem of Arab nationalist heritage, courage and resilience. The eagle bears on its breast a shield in the pan-Arab colours of the Palestinian flag, and a scroll below reads \"Palestine\" in Arabic.",
+    sources: [
+      { title: "Coat of arms of Palestine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Palestine" },
+    ],
+  },
   "ps-football-crest": {
     description: "The flag is the Pan-Arab colours first combined in this pattern for the 1916 Arab Revolt flag, and adopted by the Palestine Liberation Organization in 1964: red for the Hashemid dynasty and the blood of warriors, white for the Umayyads and purity, green for the Fatimids and fertile land, and black for the Abbasids and victory in battle.",
     sources: [
@@ -7404,6 +7452,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "pw-arms": {
     description: "Adopted in 1981, the seal is dominated by a bai, the traditional Palauan meeting house that is the seat of community decision-making, standing on sixteen stones. The surrounding words Olbiil Era Kelulau — “the House of Whispered Decisions” — name the national congress, and the date 1981 marks the founding of the Republic. The bai's central place reflects how traditional governance remains at the heart of Palauan identity.",
+    sources: [
+      { title: "Seal of Palau — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Palau" },
+    ],
+  },
+  "pw-passport": {
+    description: "Palau's passport bears the national seal: a traditional bai — a Palauan meeting-house — with a flag flying from its staff. The bai's decorated gable is a widely used Palauan symbol, appearing on most of the country's state and national seals, and the seal's design resembles the earlier seal of the Trust Territory of the Pacific Islands, the UN trusteeship that formerly administered Palau.",
     sources: [
       { title: "Seal of Palau — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Palau" },
     ],
@@ -7711,6 +7765,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Solomon Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Solomon_Islands" },
     ],
   },
+  "sb-passport": {
+    description: "The Solomon Islands' passport bears the national coat of arms: a shield of turtles, spears and a traditional dancing shield representing the country's provinces, crowned by a sun-topped helm and flanked by a crocodile and a shark, with a Sanford's sea eagle and two frigatebirds above symbolising freedom and courage. The shield is held by a stylised frigatebird and carries the national motto \"To Lead Is to Serve\".",
+    sources: [
+      { title: "Coat of arms of Solomon Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Solomon_Islands" },
+    ],
+  },
   "sb-football-crest": {
     description: "The colours and stars are taken from the Solomon Islands' national flag: blue for water, green for the land, and the yellow diagonal for the sun, while the five stars originally stood for the country's five provinces at independence (Central, Western, Eastern, Malaita and the Honiara capital).",
     sources: [
@@ -7719,6 +7779,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "sc-arms": {
     description: "A giant tortoise stands on green ground before a coco-de-mer palm — both found only in the Seychelles — with a sailing ship on the sea behind. A white-tailed tropicbird forms the crest, and two sailfish support the shield. The motto is Finis Coronat Opus — “The End Crowns the Work.”",
+    sources: [
+      { title: "Coat of arms of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
+    ],
+  },
+  "sc-passport": {
+    description: "Seychelles' passport bears the national coat of arms: an Aldabra giant tortoise on a green shield before a Seychelles palm tree and the Indian Ocean, with two islands and a schooner symbolising trade between them, supported by two Indo-Pacific sailfish for the country's marine wealth and topped by a white-tailed tropicbird. The tortoise stands for the archipelago's unique biodiversity and longevity, and the motto below reads \"Finis Coronat Opus\" — \"The End Crowns the Work\".",
     sources: [
       { title: "Coat of arms of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
     ],
@@ -8266,6 +8332,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of East Timor — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_East_Timor" },
     ],
   },
+  "tl-passport": {
+    description: "Timor-Leste's passport bears the national emblem: a five-pointed white star over a black-and-white mountain — Mount Ramelau, the country's highest peak — representing guidance and the five principles of independence, unity, justice, social solidarity and equality, ringed by rice and maize for agriculture and the people's wisdom. Yellow signifies wealth, black the darkness the nation had to overcome, and red the love of homeland and the struggle for independence.",
+    sources: [
+      { title: "National emblem of Timor-Leste — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Timor-Leste" },
+    ],
+  },
   "tm-emblem": {
     description: "At the centre, on a blue disc, stands the Akhal-Teke stallion Yanardag — the prized Turkmen horse and a source of national pride. Around it a red ring carries the five carpet guls, the traditional weaving designs of the country's five regions, the same guls as on the flag. Ears of wheat and bolls of cotton frame the whole, and a white crescent with five stars sits above.",
     sources: [
@@ -8402,6 +8474,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Coat of arms of Tuvalu — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tuvalu" },
       { title: "Flag of Tuvalu — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
+    ],
+  },
+  "tv-passport": {
+    description: "Tuvalu's passport bears the national coat of arms: a maneapa (traditional meeting house) on green ground beneath a blue sky, above wavy bars of gold and blue for the ocean, within a gold border alternately charged with eight mitre shells and eight banana leaves for the islands' marine and agricultural life. The motto reads \"Tuvalu mo te Atua\" — \"Tuvalu for the Almighty\" — also the title of the national anthem.",
+    sources: [
+      { title: "Coat of arms of Tuvalu — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tuvalu" },
     ],
   },
   "tw-emblem": {
