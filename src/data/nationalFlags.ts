@@ -3073,6 +3073,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Bosnia and Herzegovina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
     ],
   },
+  "ba-sr": {
+    description: "Adopted 31 December 1946, the flag of the Socialist Republic of Bosnia and Herzegovina was a plain red field bearing a small version of Yugoslavia's own red-white-blue flag, with its red star, in the canton. Unlike Yugoslavia's other constituent republics, which flew variants of pan-Slavic tricolours reflecting a dominant national group, multi-ethnic Bosnia and Herzegovina never adopted symbols of its own during the socialist period, and instead flew this plain marker of its place within the federation.",
+    sources: [
+      { title: "Flag of Bosnia and Herzegovina — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Bosnia_and_Herzegovina" },
+    ],
+  },
+  "ba-austro": {
+    description: "Adopted in late 1878 after Austria-Hungary occupied Bosnia and Herzegovina and administered it as a corpus separatum belonging to neither Austria nor Hungary, this flag divided red over yellow — colours drawn from the 15th-century flag of western Bosnia — with the territory's coat of arms, itself modelled on the arms of the medieval Bosnian noble Stjepan Vukčić Hrvatinić, set at the centre. After the 1908 annexation the same red-and-yellow field continued in use with the arms removed.",
+    sources: [
+      { title: "Bosnia and Herzegovina in the Austro-Hungarian Empire (1878–1918) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ba-ah.html" },
+    ],
+  },
   "ba-arms": {
     description: "The arms simply repeat the national flag, adopted together in 1998. The three points of the shield stand for the country's three constituent peoples — Bosniaks, Croats and Serbs; the yellow triangle is read as the rough triangular shape of the country's territory, and its three sides again as the three peoples. The row of white stars, cut off top and bottom, stands for Europe and is deliberately open-ended, meant to be infinite. The design was chosen by the international High Representative when the country's communities could not agree, which is why it avoids the older national and religious symbols — the fleurs-de-lis of the medieval Kotromanić kings that the 1992 flag had carried had come to be read as a Bosniak emblem.",
     sources: [
@@ -3177,6 +3189,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Bangladesh's passport cover is dark green, bearing the Seal of the Government of Bangladesh in gold beneath \"Passport\" and above \"People's Republic of Bangladesh\", printed in Bengali and English together with the international e-passport symbol. The cover material is a tough textile chosen to resist tearing, chemicals, sweat and heat, while the visa pages inside depict Bangladeshi historical landmarks and tourist sites labelled in both languages — celebrating the country's heritage within a deliberately durable design.",
     sources: [
       { title: "Bangladeshi passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Bangladeshi_passport" },
+    ],
+  },
+  "be-1830": {
+    description: "First sewn for the September 1830 revolution and formally adopted by the provisional government on 30 September 1830, this early flag arranged black, yellow and red horizontally — red at top, black in the middle, yellow at the bottom — before Belgium's flag was fixed as the vertical black-yellow-red tricolour still flown today. The three colours came from the arms of the medieval Duchy of Brabant: a gold (yellow) lion with red claws and tongue on a black field.",
+    sources: [
+      { title: "How Belgium got its flag — and why the colours are black, yellow and red — The Brussels Times", url: "https://www.brusselstimes.com/belgium/1669908/how-belgium-got-its-flag-and-why-the-colours-are-black-yellow-and-red" },
     ],
   },
   "be-civil-ensign": {
@@ -4109,6 +4127,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Chile national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Chile_national_football_team" },
     ],
   },
+  "cm-1961": {
+    description: "Adopted on 1 October 1961 when British Southern Cameroons joined the Republic of Cameroon to form a federal republic, this version added two gold stars to the green band, one for each of the federation's two states, East and West Cameroon. The stars were merged into a single star at the flag's centre in 1975 when the federation gave way to a unitary state.",
+    sources: [
+      { title: "Flag of Cameroon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" },
+    ],
+  },
+  "cm-1960": {
+    description: "Adopted at independence on 1 January 1960, this plain green-red-yellow vertical tricolour continued the design first raised in 1957 under self-government. Green stood for the vegetation of the south, yellow for the savannas of the north, and red — drawn from the party colours of the independence movement — for the unity binding them; the same colours had symbolised Africans' post-war struggle for self-government across the continent.",
+    sources: [
+      { title: "Flag of Cameroon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" },
+    ],
+  },
+  "cm-british": {
+    description: "From 1922 the League of Nations mandate (later UN trust territory) of British Cameroons flew this dark-blue ensign, a Union Flag in the canton beside a white disc bearing the territory's badge. It was used until 1961, when a UN-supervised plebiscite let the territory's northern and southern sections each vote separately on whether to join Nigeria or the newly independent Republic of Cameroon.",
+    sources: [
+      { title: "File:Flag of British Cameroon.svg — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Flag_of_British_Cameroon.svg" },
+    ],
+  },
   "cm-german": {
     description: "The Reichskolonialflagge combined the black-white-red of the German Empire's own flag with a crowned imperial eagle on a white disc. Used from the early 1900s, it asserted the authority of the German Empire across its overseas possessions, flying over government stations, harbours and barracks in Germany's African, Chinese and Pacific colonies just as the plain imperial flag did at home.",
     sources: [
@@ -4350,6 +4386,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue stripes and the white star both repeat Cuba's own national flag, first raised in 1849 and adopted at independence in 1902: the blue stripes originally stood for the three departments Cuba was then divided into, and the white star — the “Lone Star” — for the country's own, singular path to independence.",
     sources: [
       { title: "Flag of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
+    ],
+  },
+  "cv-1975": {
+    description: "Cape Verde's first national flag, hoisted at independence on 5 July 1975 and confirmed by law in 1976, was based on the flag of the PAIGC — the party that had led the joint liberation struggle of Cape Verde and Guinea-Bissau from Portugal. It set a black star, bordered by a wreath of maize ears and a scallop shell, at the hoist of red, yellow and green bands: the Pan-African colours, with the black star for African unity and dignity, and the maize and shell for the islands' agriculture and the sea. It was replaced in 1992 after Cape Verde abandoned plans to unite with Guinea-Bissau.",
+    sources: [
+      { title: "Flag of Cape Verde — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde" },
     ],
   },
   "cv-portuguese": {
@@ -4788,6 +4830,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
     ],
   },
+  "eg-1972": {
+    description: "Adopted when Egypt joined the Federation of Arab Republics with Libya and Syria in 1972, this flag kept the red-white-black tricolour of the 1958 United Arab Republic but replaced its two green stars with a single golden Hawk of Quraish — the falcon of the tribe to which the Prophet Muhammad belonged — as the federation's shared emblem. Egypt kept the flag until 1984, when the golden eagle of Saladin replaced the hawk.",
+    sources: [
+      { title: "Flag of the Federation of Arab Republics — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Federation_of_Arab_Republics" },
+    ],
+  },
   "eg-uar": {
     description: "The United Arab Republic's flag, adopted in 1958 when Egypt and Syria united, used the pan-Arab colours: black for the era of colonial oppression Arabs had endured, white for peace and the hoped-for future of independent Arab states, and red for the sacrifices and bloodshed of the fight for liberation. Two green stars at its centre stood for the union's two constituent states and, in green, for Islam.",
     sources: [
@@ -4798,6 +4846,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Kingdom of Egypt's flag, readopted in 1923 when King Fuad I took the royal title, set a white crescent and three white stars on green: green for the fertile fields of the Nile Valley and Delta, and the crescent for Egypt's mostly Muslim population. The three stars have been read in more than one way — as the kingdom's three constituent lands of Egypt, Nubia and Sudan, or as the country's three main religious communities, Islam, Christianity and Judaism.",
     sources: [
       { title: "Kingdom of Egypt (1922-1952) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/eg-kingd.html" },
+    ],
+  },
+  "eg-1914": {
+    description: "A red field bearing a white crescent and three stars, flown from the British occupation of 1882 through the 1914 declaration of the Sultanate of Egypt (severing Ottoman suzerainty) until 1922. Its red field and star-and-crescent motif descended from the flag of Muhammad Ali's dynasty, whose stars had been read as marking his rule's reach across Egypt, Sudan and the Hejaz. King Fuad I retired the design at independence in 1922, replacing it with a green flag bearing a crescent and three stars.",
+    sources: [
+      { title: "The Evolution of the Flag of Egypt — Egyplore", url: "https://letsegyplore.com/2024/08/25/the-evolution-of-the-flag-of-egypt/" },
+    ],
+  },
+  "eg-1881": {
+    description: "A plain red field with a white crescent and single star, the Ottoman-derived flag flown by the Khedivate of Egypt from Ottoman suzerainty into the early years of the 1882 British occupation, before a version with three stars came into use under the Sultanate.",
+    sources: [
+      { title: "Flag of Egypt facts for kids", url: "https://kids.kiddle.co/Flag_of_Egypt" },
     ],
   },
   "eg-navy": {
