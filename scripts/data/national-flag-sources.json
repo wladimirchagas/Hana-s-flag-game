@@ -8037,7 +8037,20 @@
           "design": "The army's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
           "sha256": "3a82423fc7adbe49ee080a63371329a7067b7a68f3561c85c70c3ab743cd6e5e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Ecuadorian Army is a plain red field bearing the army's own coat of arms, officially adopted in 1954 alongside the force's shield and anthem. It traces back to an 1812 document describing 'a flag of red taffeta, with a white cross', a design the army later took up as its own on the way to its modern form.",
+            "sources": [
+              {
+                "title": "Flags of the World — Ecuador: Military Flags",
+                "url": "https://www.crwflags.com/fotw/flags/ec%5E.html"
+              },
+              {
+                "title": "Wikipedia — List of Ecuadorian flags",
+                "url": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "ec-naval-jack",

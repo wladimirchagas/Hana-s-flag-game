@@ -3822,6 +3822,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "1990 African Cup of Nations — Wikipedia", url: "https://en.wikipedia.org/wiki/1990_African_Cup_of_Nations" },
     ],
   },
+  "ec-army": {
+    description: "The flag of the Ecuadorian Army is a plain red field bearing the army's own coat of arms, officially adopted in 1954 alongside the force's shield and anthem. It traces back to an 1812 document describing 'a flag of red taffeta, with a white cross', a design the army later took up as its own on the way to its modern form.",
+    sources: [
+      { title: "Flags of the World — Ecuador: Military Flags", url: "https://www.crwflags.com/fotw/flags/ec%5E.html" },
+      { title: "Wikipedia — List of Ecuadorian flags", url: "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags" },
+    ],
+  },
   "ec-naval-jack": {
     description: "Ecuador's naval jack bears a condor together with an anchor and a length of rope. The condor is the same bird that crests the national coat of arms, standing atop the shield with wings outstretched as a symbol of the country's size, power and readiness to defend itself, while the anchor and rope are the conventional maritime devices marking the jack as belonging to the navy.",
     sources: [
