@@ -10525,7 +10525,20 @@
           "design": "A red St George's Cross on white with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
           "sha256": "aa0683f0fb00bd70c9f2fdc99da4a4f8c7a111ae22bfff2886421d30841db36a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Naval Ensign of Ghana, flown since 1966, follows the pattern of the Royal Navy's White Ensign — a red St George's Cross on white — substituting Ghana's own national flag for the Union Flag in the canton. The design reflects Ghana's history as the former British colony of the Gold Coast, adapting the Royal Navy's own ensign convention for the newly independent state's navy after 1957.",
+            "sources": [
+              {
+                "title": "Flags of the World — Ghanaian Navy",
+                "url": "https://www.crwflags.com/fotw/flags/gh~nav.html"
+              },
+              {
+                "title": "Wikipedia — White Ensign",
+                "url": "https://en.wikipedia.org/wiki/White_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "gh-civil-ensign",
@@ -14169,7 +14182,20 @@
           "design": "A white ensign with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
           "sha256": "ef584414ec3a27e320189660b3a40710fdbbc874ddce01753635016dd2b05389",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Jamaica's naval ensign, adopted on 6 August 1962 — the day the country gained independence from the United Kingdom — follows the White Ensign pattern of the Royal Navy, with a St George's Cross and the Jamaican national flag in the canton in place of the Union Flag. In practice the ensign is flown mainly by the Jamaica Defence Force Coast Guard, since Jamaica maintains no separate navy, and its adoption at the moment of independence shows how newly sovereign Commonwealth states often kept British naval flag conventions even as they raised their own colours.",
+            "sources": [
+              {
+                "title": "Wikipedia — Flag of Jamaica",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Jamaica"
+              },
+              {
+                "title": "Wikipedia — White Ensign",
+                "url": "https://en.wikipedia.org/wiki/White_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "jm-arms",
