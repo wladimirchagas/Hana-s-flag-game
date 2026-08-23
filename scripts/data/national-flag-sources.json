@@ -17457,7 +17457,20 @@
           "design": "The cover of the Liechtenstein passport.",
           "source": "https://gicg.net/passport/li/",
           "sha256": "97ac39abd8f49f8b163e129d5bd731a542df0030af44053e389e76040bfc9fcc",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Liechtenstein's passport bears the arms of the princely House of Liechtenstein: a shield divided gold over red, topped with a golden crown. The crown is read as representing the bond between the Prince and the people of Liechtenstein — a fitting symbol for a country whose ruling family gave it its name, having purchased the historic lordships of Schellenberg (1699) and Vaduz (1712) that became the principality, without any prince setting foot in the territory himself until 1842.",
+            "sources": [
+              {
+                "title": "Coat of arms of Liechtenstein — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein"
+              },
+              {
+                "title": "How the Principality of Liechtenstein came into being — Swiss National Museum",
+                "url": "https://blog.nationalmuseum.ch/en/2024/08/how-the-principality-of-liechtenstein-came-into-being/"
+              }
+            ]
+          }
         },
         {
           "id": "li-football-crest",
@@ -18805,7 +18818,16 @@
           "design": "The cover of the Monaco passport.",
           "source": "https://gicg.net/passport/mc/",
           "sha256": "906a9a6148e9866f514643ab39892d8131950f7b6dc577036c719902a8080b83",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Monaco's passport bears the coat of arms of the ruling Grimaldi family: a shield of alternating red and silver lozenges — a pattern the family carried before it ever ruled Monaco — supported by two sword-wielding friars, and crowned with a princely crown. The friars recall the legend of François Grimaldi's 1297 seizure of Monaco's fortress, when he and his men reportedly disguised themselves as Franciscan monks to gain entry and take the stronghold by surprise. Beneath the shield runs the family motto, \"Deo Juvante\" — \"With God's help\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Monaco — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco"
+              }
+            ]
+          }
         },
         {
           "id": "mc-football-crest",
@@ -23381,7 +23403,16 @@
           "design": "The cover of the Panama passport.",
           "source": "https://gicg.net/passport/pa/",
           "sha256": "cfb6c442c82e46dffaab311d97eebf6970ff0fb5de6a8ac7b478cc459e4a1ce5",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Panama's dark-blue passport bears the national coat of arms, centred on the isthmus between two oceans beneath a sky where the sun sets in the west and the moon rises in the east — marking the twilight hour of independence from Colombia, declared on 3 November 1903. Four quarters surround it: crossed sabre and rifle for defence, crossed shovel and pickaxe for labour and agriculture, a cornucopia spilling coins for prosperity, and a winged wheel for industry and commerce. An eagle spreads its wings over the shield, carrying a ribbon inscribed with the motto \"Pro Mundi Beneficio\" — \"For the benefit of the world\", a reference to the Panama Canal's role connecting global trade.",
+            "sources": [
+              {
+                "title": "Coat of arms of Panama — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama"
+              }
+            ]
+          }
         },
         {
           "id": "pa-football-crest",
