@@ -3091,6 +3091,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
     ],
   },
+  "bg-passport": {
+    description: "Bulgaria's burgundy EU passport bears the national coat of arms: a rampant gold crowned lion on a dark red shield, topped by a large crown modelled on those worn by the tsars of the medieval Second Bulgarian Empire, itself surmounted by a cross pattée and flanked by five more. The rampant lion has been Bulgaria's heraldic emblem since the medieval period, long predating the modern republic.",
+    sources: [
+      { title: "Coat of arms of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
+    ],
+  },
   "bg-football-crest": {
     description: "The gold crowned lion rampant is Bulgaria's own state symbol — lion imagery has marked Bulgarian rule since at least the Chatalar Inscription of 815–834 AD, and the emblem was preserved as a sign of national identity even through Ottoman rule after 1396. On the national coat of arms the lion stands for the independence and sovereignty of the Bulgarian people and state; the gold laurel wreath framing the badge is the ordinary heraldic mark of honour and victory.",
     sources: [
@@ -3544,6 +3550,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Switzerland" },
     ],
   },
+  "ch-passport": {
+    description: "Unlike most passports, which carry a full coat of arms, Switzerland's poppy-red cover bears only a small white cross embossed in the upper corner — echoing the plain cross of the national flag rather than a heraldic shield. The design, created in 1985 by graphic designer Fritz Gottschalk, embosses a repeating pattern of small crosses across the cover and prints \"Swiss Passport\" in the country's four official languages. The white-on-red cross itself dates to the 14th century, when Swiss Confederation troops used it as a battlefield marker to recognise their own allies before it became the country's national emblem.",
+    sources: [
+      { title: "Flag of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
+      { title: "White on Red: the Swiss Cross — Swiss Federal Archives", url: "https://www.bar.admin.ch/bar/en/home/research/research-tips/topics/die-alte-eidgenossenschaft/weiss-auf-rot--das-schweizer-kreuz.html" },
+    ],
+  },
   "ch-football-crest": {
     description: "ASF and SFV are the association's own name in two of Switzerland's official languages — Association Suisse de Football (French) and Schweizerischer Fussballverband (German) — reflecting the country's multilingual federal structure rather than a single national language. The two sets of initials are drawn together into the outline of a player striking the ball.",
     sources: [
@@ -3811,6 +3824,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus" },
     ],
   },
+  "cy-passport": {
+    description: "As an EU member, Cyprus issues the common burgundy-cover passport, bearing the Republic's own coat of arms: a white dove carrying an olive branch — a peace symbol — above the number \"1960\", the year of Cypriot independence from British rule, all set on a copper-yellow field that recalls the island's historic copper deposits (Cyprus's own name is linked to the Latin word for copper, cuprum).",
+    sources: [
+      { title: "Coat of arms of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus" },
+    ],
+  },
   "cy-football-crest": {
     description: "The copper-coloured island silhouette and the two olive branches are the same symbols carried on Cyprus's own national flag: copper for the large deposits of copper ore that may have given the island its name, and the olive branches for peace. Together with a neutral field, they were chosen to stand for reconciliation between the island's Greek and Turkish Cypriot communities rather than favour either — an aspiration the flag's own article notes has not yet been realised.",
     sources: [
@@ -3831,6 +3850,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "cz-arms": {
     description: "The greater arms quarter the three historical Czech lands the country is made of: Bohemia's silver double-tailed lion on red (twice, in the first and fourth quarters), Moravia's chequered eagle, and Silesia's black eagle with a crescent across its breast. The Bohemian lion has a history: the rulers of Bohemia originally used a flaming eagle of Saint Wenceslas, and Emperor Frederick granted King Vladislaus II a silver lion on red to mark his valour. It was drawn with a single tail at first; the second tail was added later, for further help given to the emperor. The lesser arms show that lion alone.",
+    sources: [
+      { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
+    ],
+  },
+  "cz-passport": {
+    description: "The Czech passport's burgundy EU cover bears the national coat of arms — quartered between the silver double-tailed Bohemian lion (repeated twice) and the emblems of Moravia and Silesia, the three historical Czech lands the modern state unites. Both this and the simpler single-lion \"lesser\" version used elsewhere were designed by heraldist Jiří Louda and adopted in 1992, as Czechoslovakia was dividing into the Czech Republic and Slovakia.",
     sources: [
       { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
     ],
@@ -3862,6 +3887,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "de-arms": {
     description: "The Bundesadler, or Federal Eagle, is a single-headed black eagle on gold whose lineage runs back through the Weimar Republic to the eagle of the Holy Roman Empire, a symbol traced to Charlemagne. The Federal Republic readopted the design in 1950. The single head — as opposed to the later double-headed imperial eagle — marks that this is the eagle of a German nation-state, not of the old multinational empire; today it stands for the federal institutions and the unity of the republic.",
     sources: [
+      { title: "Coat of arms of Germany — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany" },
+    ],
+  },
+  "de-passport": {
+    description: "Germany's passport carries the standard EU burgundy cover, bearing the Bundesadler (Federal Eagle) — a black eagle with red beak, tongue and feet on a gold field — the same eagle used as Germany's coat of arms since the Weimar Republic, its imperial crown removed to mark the shift from empire to republic. The burgundy colour itself is not unique to Germany but the common format EU member states adopted for their passports.",
+    sources: [
+      { title: "German passport — Wikipedia", url: "https://en.wikipedia.org/wiki/German_passport" },
       { title: "Coat of arms of Germany — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany" },
     ],
   },
@@ -3912,6 +3944,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "These are among the oldest arms in continuous national use anywhere: the earliest known depiction is on a seal of King Canute VI around 1194, and the earliest documentation of the colours is around 1270. The red figures scattered around the lions are commonly drawn as hearts, but they are not hearts — a royal decree of 1972 still specifies them as søblade, water-lily leaves, and that is what they originally were. Their number was historically unregulated and could be far higher; Frederick VI fixed it at nine in 1819, in the same act that declared the beasts to be lions and turned them to face forward.",
     sources: [
       { title: "Coat of arms of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark" },
+    ],
+  },
+  "dk-passport": {
+    description: "Denmark's passport uses the EU's common burgundy cover, bearing the national coat of arms: three pale-blue crowned lions passant over nine red hearts (stylised water-lily leaves in the arms' original medieval form) on a gold shield, topped with the royal crown. The three lions are among the oldest state emblems still in use in Europe, first recorded on Danish royal seals in the 12th century.",
+    sources: [
+      { title: "Coat of arms of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark" },
+      { title: "Passports of the European Union — Wikipedia", url: "https://en.wikipedia.org/wiki/Passports_of_the_European_Union" },
     ],
   },
   "dk-football-crest": {
@@ -4045,6 +4084,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
     ],
   },
+  "ee-passport": {
+    description: "Estonia's burgundy EU passport bears the national coat of arms at its centre: three blue lions passant guardant on a gold shield, framed by gilded oak branches whose stems cross at the base — oak being a tree long associated with strength and endurance in Estonian and wider Baltic tradition. The three-lion design dates back to the 13th-century Danish rule of Estonia and was readopted as the republic's own arms on independence.",
+    sources: [
+      { title: "Passport of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Passport_of_Estonia" },
+      { title: "Coat of arms of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
+    ],
+  },
   "eg-navy": {
     description: "The Egyptian Navy's ensign is the national flag defaced with a gold-outlined rendering of the Eagle of Saladin, the national emblem also seen at the centre of the plain national flag. The eagle, adopted as Egypt's emblem after the 1952 revolution, recalls the 12th-century sultan Saladin, who united Egypt and Syria and is honoured as a symbol of Arab strength and unity; the shield on its breast carries the colours of the national flag.",
     sources: [
@@ -4131,6 +4177,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain" },
     ],
   },
+  "es-passport": {
+    description: "The burgundy EU cover bears Spain's coat of arms in gold: a shield quartering the arms of the medieval kingdoms that united to form Spain (Castile, León, Aragon and Navarre), a central point for Granada, and the House of Bourbon's own arms, topped by the royal crown and flanked by the Pillars of Hercules wound with a ribbon reading \"PLUS ULTRA\" — \"further beyond\", a motto that once marked the limit of the known world and, after Spain's transatlantic voyages, came to celebrate the reach of its overseas empire instead.",
+    sources: [
+      { title: "Coat of arms of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain" },
+    ],
+  },
   "es-football-crest": {
     description: "The Pillars of Hercules — the twin rocks either side of the Strait of Gibraltar, said in antiquity to mark the edge of the known world — carry the motto PLVS VLTRA, Latin for “further beyond”: a reversal of the old warning “Ne plus ultra” (“nothing further beyond”), adopted after Spain's Atlantic voyages showed the ancients wrong. The quartered shield repeats the arms of the medieval kingdoms that united to form Spain — a castle for Castile, a lion for León, gold-and-red bars for Aragon, and a chain border for Navarre — with a pomegranate at the base for Granada, the last Moorish kingdom conquered in 1492. The royal crown marks the constitutional monarchy. FIFA's rules let a champion display one star per World Cup on its shirt; Spain's two mark its titles, won in 2010 and 2026.",
     sources: [
@@ -4191,6 +4243,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "fi-arms": {
     description: "Created around 1580, the arms are read as a political statement in heraldry: the lion is the Nordic heraldic lion — first found in Denmark's arms in the later 12th century and taken up in Sweden, into whose kingdom Finland was incorporated from the 13th century — and it holds a straight Western sword in an armoured arm while trampling a curved Eastern sabre underfoot. The two blades are the point of the design: Finland's position between West and East, drawn at a time when the Swedish crown was contesting the territory with Russia.",
     sources: [
+      { title: "Coat of arms of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
+    ],
+  },
+  "fi-passport": {
+    description: "Since 1996, Finland's passport has used the standard EU burgundy cover, with the Finnish coat of arms at the centre: a crowned lion on a red field, its right foreleg replaced by an armoured human arm brandishing a sword, its hind paws trampling a curved sabre. The design recalls medieval conflicts between Finland (then under Swedish rule) and Novgorod to its east, the sabre traditionally read as an Eastern weapon being trodden underfoot.",
+    sources: [
+      { title: "Finnish passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Finnish_passport" },
       { title: "Coat of arms of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
     ],
   },
@@ -4522,6 +4581,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "gr-arms": {
     description: "The arms are a heraldic form of the national flag: a white Greek cross on a blue shield, the cross for the Orthodox Christian faith and the Byzantine inheritance that the 1821 revolution invoked. The two laurel branches around it stand for glory and honour. The blue shield with the white cross has been the core of every Greek coat of arms since 1833; the present version was adopted in 1975 with the restoration of the republic.",
     sources: [
+      { title: "Coat of arms of Greece — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greece" },
+    ],
+  },
+  "gr-passport": {
+    description: "Greece's passport follows the standard EU burgundy cover, bearing the national emblem in current use since 1975: a white cross on a blue shield, surrounded by two laurel branches — laurel being the ancient Greek symbol of victory and honour, awarded as a wreath to winners in Panhellenic athletic and poetic contests since antiquity. Greece also issues a black-covered diplomatic passport of the same size and design.",
+    sources: [
+      { title: "Greek passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Greek_passport" },
       { title: "Coat of arms of Greece — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greece" },
     ],
   },
