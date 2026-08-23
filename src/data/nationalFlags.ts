@@ -2594,6 +2594,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Andorra — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra" },
     ],
   },
+  "ae-armed-forces": {
+    description: "The flag of the UAE Armed Forces bears the national emblem: a golden falcon, a bird long revered in Arab culture as a symbol of strength, courage and freedom, its breast bearing a disc with the national flag encircled by seven stars. The seven stars and the falcon's seven tail feathers both stand for the seven emirates of the federation, while the falcon grips a red scroll naming the country in Kufic Arabic script.",
+    sources: [
+      { title: "Wikipedia — Emblem of the United Arab Emirates", url: "https://en.wikipedia.org/wiki/Emblem_of_the_United_Arab_Emirates" },
+      { title: "Wikipedia — List of Emirati flags", url: "https://en.wikipedia.org/wiki/List_of_Emirati_flags" },
+    ],
+  },
   "ae-civil-ensign": {
     description: "The Civil Ensign of the United Arab Emirates, flown since independence in 1971, is a red field with the national flag in the canton, echoing a maritime tradition specific to the region: the Gulf sheikhdoms that became the Trucial States flew plain red flags under an 1820 treaty with Britain, which required a white border be added as a mark of peaceful intent, a red-and-white flag tradition that outlasted British influence in the Gulf and left red as the natural colour for the modern UAE's own merchant ensign.",
     sources: [
