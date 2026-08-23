@@ -18129,7 +18129,16 @@
           "design": "The cover of the Luxembourg passport.",
           "source": "https://gicg.net/passport/lu/",
           "sha256": "8aca4a5dbddae16287796940a31aeef2765a31832b5bfcc18f19fadbccfd5f10",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Luxembourg's burgundy EU passport bears the country's coat of arms — the Roude Léiw (\"Red Lion\") — a red rampant lion, crowned and armed, on a blue-and-white-striped shield, supported by two more crowned lions and topped with a royal crown. The design descends from the medieval Duchy of Limburg and was first used by Count Henry V of Luxembourg in the 13th century, making it one of the oldest continuously used symbols of Luxembourgish identity.",
+            "sources": [
+              {
+                "title": "Roude Léiw — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Roude_L%C3%A9iw"
+              }
+            ]
+          }
         },
         {
           "id": "lu-football-crest",
@@ -19357,7 +19366,16 @@
           "design": "The cover of the North Macedonia passport.",
           "source": "https://gicg.net/passport/mk/",
           "sha256": "c2cf217966998bb74636e3c6b92d4be1c877dc10a5eb304fff3e316590cdc768",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "North Macedonia's passport bears the national emblem — a design kept largely from the Socialist era, though its communist red star was removed in a 2009 revision: a rising sun for freedom over Mount Korab, the river Vardar and Lake Ohrid, framed by two garlands of wheat sheaves, tobacco leaves and opium-poppy fruits (poppy cultivation dating to Ottoman-era introduction in the 19th century) tied with a ribbon of traditional Macedonian folk embroidery — together said to represent the country's agricultural richness and its struggle for freedom.",
+            "sources": [
+              {
+                "title": "National emblem of North Macedonia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_North_Macedonia"
+              }
+            ]
+          }
         },
         {
           "id": "mk-football-crest",
@@ -25043,7 +25061,16 @@
           "design": "The cover of the Portugal passport.",
           "source": "https://gicg.net/passport/pt/",
           "sha256": "cf4d82335e4d46097d634dadd73f54847d738a958919d5e2121f3e6bed3b5a60",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Portugal's passport bears the national coat of arms — formalised in 1911 — a shield of five smaller blue shields arranged in a cross, each bearing five white dots (the quinas), traditionally linked to the legend of the \"Miracle of Ourique\", in which King Afonso I was assured of divine favour before battle. A red border studded with seven gold castles, recalling fortresses taken during the Reconquista, surrounds the shield, which rests over a golden armillary sphere — a sailor's instrument for measuring the stars — commemorating Portugal's Age of Discovery.",
+            "sources": [
+              {
+                "title": "Coat of arms of Portugal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal"
+              }
+            ]
+          }
         },
         {
           "id": "pt-football-crest",
