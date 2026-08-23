@@ -17056,7 +17056,20 @@
           "design": "The naval ensign.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania",
           "sha256": "5d34e26dfae802b17f8bd8eaa38d6fbffb1398179aa1d825e5e36bbd3065765c",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Lithuania's naval ensign, restored in 1992 after independence, carries the same double-barred Cross of Vytis used across the country's other military flags, set within a red shield on the national tricolour. The cross is drawn from the heraldry of Vytis, the mounted knight that has served as Lithuania's coat of arms since the early 15th century — one of the oldest state emblems in Europe — and whose name, 'the Chaser', reflects a centuries-old association with defending the nation.",
+            "sources": [
+              {
+                "title": "Flags of the World — Lithuania: Naval Flags",
+                "url": "https://www.crwflags.com/fotw/flags/lt-nav.html"
+              },
+              {
+                "title": "Wikipedia — Coat of Arms of Lithuania",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_Arms_of_Lithuania"
+              }
+            ]
+          }
         },
         {
           "id": "lt-arms",
