@@ -2498,7 +2498,20 @@
           "design": "The jack of the Belgian Navy.",
           "source": "https://en.wikipedia.org/wiki/List_of_Belgian_flags",
           "sha256": "ad45d054bbeac73c05c03475a98f268d37086b80c1aa9782c43b538902214573",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The naval jack of Belgium is a square rendition of the national tricolour — vertical bands of black, yellow and red, coloured after the arms of the medieval Duchy of Brabant and adopted as Belgium's flag in 1831 — with no additional charge. Squaring off the tricolour, formalised by a 1950 order of the Prince Regent, is a functional device: flown at the bow, it identifies a commissioned warship, distinguishing it from the rectangular tricolour flown by merchant vessels.",
+            "sources": [
+              {
+                "title": "Flags of the World — Belgium: Naval ensign and jack",
+                "url": "https://www.crwflags.com/fotw/flags/be~nav.html"
+              },
+              {
+                "title": "Wikipedia — Flag of Belgium",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Belgium"
+              }
+            ]
+          }
         },
         {
           "id": "be-arms",
@@ -13008,7 +13021,20 @@
           "design": "The earlier five-striped ground arm flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
           "sha256": "80285f7b51767a43dc2c4e814936538d9a3749426bf24bc16636a3b67ef91bb2",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Israeli Ground Forces' flag flown from 1983 to 2016 carried five diagonal stripes — red, white, green, black and red — each colour standing for one of the arm's branches: black for armour, green for infantry, red for artillery, and orange (shown here as the outer red-orange bands) for engineering. It carried the same sword-and-olive-branch emblem used across the Israel Defense Forces, shown alone without the wings or anchor that mark the air force's and navy's own flags, before the design was updated in 2016.",
+            "sources": [
+              {
+                "title": "Flags of the World — Ground Forces (Land Arm) (Israel)",
+                "url": "https://www.crwflags.com/fotw/flags/il%5Earmy.html"
+              },
+              {
+                "title": "Wikipedia — List of flags of Israel",
+                "url": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel"
+              }
+            ]
+          }
         },
         {
           "id": "il-air-force",
