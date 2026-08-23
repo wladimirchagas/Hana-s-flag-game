@@ -23381,7 +23381,16 @@
           "design": "The cover of the Oman passport.",
           "source": "https://gicg.net/passport/om/",
           "sha256": "f09d804ec755ab8d4cff8b222484851a1dea47cac55256b0f0a758b426c65aee",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Oman's maroon passport bears the national emblem, nicknamed the Khanjar Bo Sayfain (\"khanjar and two swords\"): a sheathed khanjar, the curved ceremonial dagger still worn by Omani men on formal occasions, superimposed on two crossed swords. Adopted in the 18th century as the badge of the ruling Al Said royal family before becoming the national emblem, the design commemorates the traditional weaponry of Oman's people and their history of martial strength.",
+            "sources": [
+              {
+                "title": "National emblem of Oman — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Oman"
+              }
+            ]
+          }
         },
         {
           "id": "om-football-crest",
@@ -28847,7 +28856,16 @@
           "design": "The cover of the Syria passport.",
           "source": "https://gicg.net/passport/sy/",
           "sha256": "f748b4e4efcef4b41af8f8db68e68a6ea0ff6ea68530ff53e22d4773f114f5ce",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Syria's dark-blue passport bears the national emblem introduced after the country's 2024 change of government: a golden eagle beneath three five-pointed stars, its five tail feathers standing for Syria's main geographic regions (north, south, east, west and centre) and its 14 wing feathers for the country's 14 governorates — together asserting the unity and indivisibility of Syrian territory under a single, centralised state. The three stars above the eagle's head represent the people, positioned to signify their role as guardians of the state.",
+            "sources": [
+              {
+                "title": "Syria unveils gold eagle emblem: What it means — Al-Monitor",
+                "url": "https://www.al-monitor.com/originals/2025/07/syria-unveils-gold-eagle-emblem-what-it-means"
+              }
+            ]
+          }
         },
         {
           "id": "sy-football-crest",
@@ -33569,7 +33587,16 @@
           "design": "The cover of the Yemen passport.",
           "source": "https://gicg.net/passport/ye/",
           "sha256": "4e4a5adc787936f55cbb35323be06992d4728d0a3989e7e029e57dce59d3fc45",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Yemen's dark-blue passport bears the national emblem: a golden Eagle of Saladin holding a scroll inscribed with the country's Arabic name, its wings grasping two flagstaffs bearing the Yemeni flag. On the eagle's breast sits a shield depicting a coffee plant above the Marib Dam and seven wavy blue stripes for water — coffee having been cultivated in Yemen's highlands for centuries, and the dam (rebuilt in modern times on an ancient site) being central to the country's irrigation.",
+            "sources": [
+              {
+                "title": "Emblem of Yemen — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Yemen"
+              }
+            ]
+          }
         },
         {
           "id": "ye-football-crest",

@@ -6736,6 +6736,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
     ],
   },
+  "om-passport": {
+    description: "Oman's maroon passport bears the national emblem, nicknamed the Khanjar Bo Sayfain (\"khanjar and two swords\"): a sheathed khanjar, the curved ceremonial dagger still worn by Omani men on formal occasions, superimposed on two crossed swords. Adopted in the 18th century as the badge of the ruling Al Said royal family before becoming the national emblem, the design commemorates the traditional weaponry of Oman's people and their history of martial strength.",
+    sources: [
+      { title: "National emblem of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
+    ],
+  },
   "om-football-crest": {
     description: "The white, red and green repeat Oman's own national flag: white for peace and for the country's Imams, green for the fertility of the Jabal al-Akhdar (\"Green Mountains\"), and red — a colour shared with other Gulf state flags — for the battles Omanis fought to expel foreign invaders.",
     sources: [
@@ -7743,6 +7749,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Syria — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Syria" },
     ],
   },
+  "sy-passport": {
+    description: "Syria's dark-blue passport bears the national emblem introduced after the country's 2024 change of government: a golden eagle beneath three five-pointed stars, its five tail feathers standing for Syria's main geographic regions (north, south, east, west and centre) and its 14 wing feathers for the country's 14 governorates — together asserting the unity and indivisibility of Syrian territory under a single, centralised state. The three stars above the eagle's head represent the people, positioned to signify their role as guardians of the state.",
+    sources: [
+      { title: "Syria unveils gold eagle emblem: What it means — Al-Monitor", url: "https://www.al-monitor.com/originals/2025/07/syria-unveils-gold-eagle-emblem-what-it-means" },
+    ],
+  },
   "sy-football-crest": {
     description: "The Syrian Football Association changed its badge to green, white and black with three red stars after the fall of the Assad government in December 2024, matching the flag Syria's new authorities readopted — the country's own 1932–1958 and 1961–1963 independence-era flag. The eagle is a form of the Hawk of Quraysh, long used in Syrian state heraldry; the current national emblem's eagle carries 14 wing feathers for Syria's governorates and 5 tail feathers for its geographical regions.",
     sources: [
@@ -8462,6 +8474,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "ye-emblem": {
     description: "The golden eagle of Saladin holds the national flag in its talons and a scroll reading “The Yemeni Republic.” On its breast a shield shows a coffee plant — the crop that made the port of Mocha famous — above the Marib Dam, the great irrigation work of the ancient Sabaean kingdom, and seven blue wavy bands. The eagle bearing two flags, and the seven bands, speak to the union of the formerly separate North and South.",
+    sources: [
+      { title: "Emblem of Yemen — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Yemen" },
+    ],
+  },
+  "ye-passport": {
+    description: "Yemen's dark-blue passport bears the national emblem: a golden Eagle of Saladin holding a scroll inscribed with the country's Arabic name, its wings grasping two flagstaffs bearing the Yemeni flag. On the eagle's breast sits a shield depicting a coffee plant above the Marib Dam and seven wavy blue stripes for water — coffee having been cultivated in Yemen's highlands for centuries, and the dam (rebuilt in modern times on an ancient site) being central to the country's irrigation.",
     sources: [
       { title: "Emblem of Yemen — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Yemen" },
     ],
