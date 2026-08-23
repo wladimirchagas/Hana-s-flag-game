@@ -2230,7 +2230,16 @@
           "design": "The red flag with a red star bordered gold in the canton, as a constituent republic of Yugoslavia.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina",
           "sha256": "6200e4a164ffeef004ae92d020518c27c1366305ebe716bc3c009d4cfca064f7",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted 31 December 1946, the flag of the Socialist Republic of Bosnia and Herzegovina was a plain red field bearing a small version of Yugoslavia's own red-white-blue flag, with its red star, in the canton. Unlike Yugoslavia's other constituent republics, which flew variants of pan-Slavic tricolours reflecting a dominant national group, multi-ethnic Bosnia and Herzegovina never adopted symbols of its own during the socialist period, and instead flew this plain marker of its place within the federation.",
+            "sources": [
+              {
+                "title": "Flag of Bosnia and Herzegovina — Vexillology Wiki",
+                "url": "https://vexillology.fandom.com/wiki/Bosnia_and_Herzegovina"
+              }
+            ]
+          }
         },
         {
           "id": "ba-austro",
@@ -2244,7 +2253,16 @@
           "design": "The red-and-yellow flag of the Austro-Hungarian condominium, after the 1878 occupation ended Ottoman rule.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina",
           "sha256": "b43d072d036845e59b12d78d80ef577ccf7238dbd2ce2af55dbfb01a3af6e0ce",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Adopted in late 1878 after Austria-Hungary occupied Bosnia and Herzegovina and administered it as a corpus separatum belonging to neither Austria nor Hungary, this flag divided red over yellow — colours drawn from the 15th-century flag of western Bosnia — with the territory's coat of arms, itself modelled on the arms of the medieval Bosnian noble Stjepan Vukčić Hrvatinić, set at the centre. After the 1908 annexation the same red-and-yellow field continued in use with the arms removed.",
+            "sources": [
+              {
+                "title": "Bosnia and Herzegovina in the Austro-Hungarian Empire (1878–1918) — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ba-ah.html"
+              }
+            ]
+          }
         },
         {
           "id": "ba-arms",
@@ -2795,7 +2813,16 @@
           "design": "An early horizontal arrangement of the black, yellow and red colours of the 1830 revolution, replaced in 1831 by the vertical black-yellow-red tricolour flown today.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Belgium",
           "sha256": "b759a15b0e169c205cb55d53f7fbffcd9176173df4f81d57678432e3d8e88d7f",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "First sewn for the September 1830 revolution and formally adopted by the provisional government on 30 September 1830, this early flag arranged black, yellow and red horizontally — red at top, black in the middle, yellow at the bottom — before Belgium's flag was fixed as the vertical black-yellow-red tricolour still flown today. The three colours came from the arms of the medieval Duchy of Brabant: a gold (yellow) lion with red claws and tongue on a black field.",
+            "sources": [
+              {
+                "title": "How Belgium got its flag — and why the colours are black, yellow and red — The Brussels Times",
+                "url": "https://www.brusselstimes.com/belgium/1669908/how-belgium-got-its-flag-and-why-the-colours-are-black-yellow-and-red"
+              }
+            ]
+          }
         },
         {
           "id": "be-civil-ensign",
@@ -6806,7 +6833,16 @@
           "design": "The tricolour with two stars in the green band, for the two states of the federal republic.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags",
           "sha256": "bacd31a08b6764992cb6c670a29305a39a27955d450e3704a1d98ddc9b79bc58",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted on 1 October 1961 when British Southern Cameroons joined the Republic of Cameroon to form a federal republic, this version added two gold stars to the green band, one for each of the federation's two states, East and West Cameroon. The stars were merged into a single star at the flag's centre in 1975 when the federation gave way to a unitary state.",
+            "sources": [
+              {
+                "title": "Flag of Cameroon — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Cameroon"
+              }
+            ]
+          }
         },
         {
           "id": "cm-1960",
@@ -6819,7 +6855,16 @@
           "design": "The plain green-red-yellow tricolour adopted at independence.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags",
           "sha256": "6c738dc8a9b4913adfdf0ec0a92a55964ca9acf4d225dd0970246e279b378db3",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted at independence on 1 January 1960, this plain green-red-yellow vertical tricolour continued the design first raised in 1957 under self-government. Green stood for the vegetation of the south, yellow for the savannas of the north, and red — drawn from the party colours of the independence movement — for the unity binding them; the same colours had symbolised Africans' post-war struggle for self-government across the continent.",
+            "sources": [
+              {
+                "title": "Flag of Cameroon — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Cameroon"
+              }
+            ]
+          }
         },
         {
           "id": "cm-british",
@@ -6833,7 +6878,16 @@
           "design": "The flag of the British-administered part of the territory, which voted in 1961 on which country to join.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags",
           "sha256": "3022652ae548d8820d46600ddb16ffaa46f41a9c230fb9f1b51a748d1fc3bbc7",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "From 1922 the League of Nations mandate (later UN trust territory) of British Cameroons flew this dark-blue ensign, a Union Flag in the canton beside a white disc bearing the territory's badge. It was used until 1961, when a UN-supervised plebiscite let the territory's northern and southern sections each vote separately on whether to join Nigeria or the newly independent Republic of Cameroon.",
+            "sources": [
+              {
+                "title": "File:Flag of British Cameroon.svg — Wikimedia Commons",
+                "url": "https://commons.wikimedia.org/wiki/File:Flag_of_British_Cameroon.svg"
+              }
+            ]
+          }
         },
         {
           "id": "cm-german",
@@ -7888,7 +7942,16 @@
           "design": "The first national flag — red, yellow and green with a black star in a wreath of maize — the shared emblem of the PAIGC, close to Guinea-Bissau's flag.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde",
           "sha256": "7a11da3578f0d98a742048634d48c7349eb4ab108a7fccb7edd5b383eb752669",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Cape Verde's first national flag, hoisted at independence on 5 July 1975 and confirmed by law in 1976, was based on the flag of the PAIGC — the party that had led the joint liberation struggle of Cape Verde and Guinea-Bissau from Portugal. It set a black star, bordered by a wreath of maize ears and a scallop shell, at the hoist of red, yellow and green bands: the Pan-African colours, with the black star for African unity and dignity, and the maize and shell for the islands' agriculture and the sea. It was replaced in 1992 after Cape Verde abandoned plans to unite with Guinea-Bissau.",
+            "sources": [
+              {
+                "title": "Flag of Cape Verde — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde"
+              }
+            ]
+          }
         },
         {
           "id": "cv-portuguese",
@@ -9895,7 +9958,16 @@
           "design": "The tricolour bearing the golden Hawk of Quraish, as a member of the Federation of Arab Republics.",
           "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
           "sha256": "fc85f906ed39f477abc7e94c66835d17844d8978495af23d7d8a72528ff88f39",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted when Egypt joined the Federation of Arab Republics with Libya and Syria in 1972, this flag kept the red-white-black tricolour of the 1958 United Arab Republic but replaced its two green stars with a single golden Hawk of Quraish — the falcon of the tribe to which the Prophet Muhammad belonged — as the federation's shared emblem. Egypt kept the flag until 1984, when the golden eagle of Saladin replaced the hawk.",
+            "sources": [
+              {
+                "title": "Flag of the Federation of Arab Republics — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Federation_of_Arab_Republics"
+              }
+            ]
+          }
         },
         {
           "id": "eg-uar",
@@ -9953,7 +10025,16 @@
           "design": "A red field with a white crescent and three stars, flown under the British protectorate.",
           "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
           "sha256": "de720a5b76faed34b5b23b63690434f9206f6b6f55f19ed4ab53302b9f121834",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A red field bearing a white crescent and three stars, flown from the British occupation of 1882 through the 1914 declaration of the Sultanate of Egypt (severing Ottoman suzerainty) until 1922. Its red field and star-and-crescent motif descended from the flag of Muhammad Ali's dynasty, whose stars had been read as marking his rule's reach across Egypt, Sudan and the Hejaz. King Fuad I retired the design at independence in 1922, replacing it with a green flag bearing a crescent and three stars.",
+            "sources": [
+              {
+                "title": "The Evolution of the Flag of Egypt — Egyplore",
+                "url": "https://letsegyplore.com/2024/08/25/the-evolution-of-the-flag-of-egypt/"
+              }
+            ]
+          }
         },
         {
           "id": "eg-1881",
@@ -9967,7 +10048,16 @@
           "design": "A red field with a white crescent and star, flown by the khedivate under Ottoman suzerainty and then British occupation.",
           "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
           "sha256": "f0a9b83ed93d6fd71265530fbf5aaf7d6e24c6989c1b58839be77a4537f4a532",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A plain red field with a white crescent and single star, the Ottoman-derived flag flown by the Khedivate of Egypt from Ottoman suzerainty into the early years of the 1882 British occupation, before a version with three stars came into use under the Sultanate.",
+            "sources": [
+              {
+                "title": "Flag of Egypt facts for kids",
+                "url": "https://kids.kiddle.co/Flag_of_Egypt"
+              }
+            ]
+          }
         },
         {
           "id": "eg-royal",
