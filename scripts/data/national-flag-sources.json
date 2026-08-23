@@ -986,7 +986,16 @@
           "design": "The cover of the Angola passport.",
           "source": "https://gicg.net/passport/ao/",
           "sha256": "e98cfa8e4bfd9de2201e794a490ec5517daa5add0050544cf7696179dffde276",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Angola's passport bears the national emblem: a segment of a cogwheel for industrial workers, sheaves of maize, coffee and cotton for the country's peasantry and agriculture, a crossed machete and hoe recalling the start of the armed liberation struggle, and an open book for education and culture. A rising sun represents the new nation, and a gold star at the top stands for international solidarity and progress — the same three elements rendered in yellow to signify the country's wealth.",
+            "sources": [
+              {
+                "title": "🇦🇴 Angola Flag Unveiled: Colors, Meaning, Coat of Arms, Flag Map, and Similar Flags — Mappr",
+                "url": "https://www.mappr.co/flag-maps/angola/"
+              }
+            ]
+          }
         },
         {
           "id": "ao-football-crest",
@@ -7779,7 +7788,16 @@
           "design": "The cover of the Djibouti passport.",
           "source": "https://gicg.net/passport/dj/",
           "sha256": "905ce77b2ee4b786b08a0e42a24c09e88bb7450f053d794c10f9abf3c3cd3db5",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Djibouti's blue passport bears the national coat of arms: two arms, each holding a shark-tooth knife, representing the country's two main peoples, the Afar and the Issa Somali, flanking a spear and round shield for defensive readiness. The spear is topped with a red star symbolising the unity between the Issa and Afar peoples.",
+            "sources": [
+              {
+                "title": "Emblem of Djibouti — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Djibouti"
+              }
+            ]
+          }
         },
         {
           "id": "dj-football-crest",
@@ -9137,7 +9155,16 @@
           "design": "The cover of the Eritrea passport.",
           "source": "https://gicg.net/passport/er/",
           "sha256": "354c4389ab0ca521af1f07851392e125acb4893d04d94d67f00d907e4d33e831",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Eritrea's passport bears the national emblem: a dromedary camel standing in the desert, encircled by an olive wreath. The camel was the pack animal that carried supplies and equipment for Eritrean independence fighters during the country's decades-long war of independence from Ethiopia, and is honoured on the emblem as instrumental to that struggle's success.",
+            "sources": [
+              {
+                "title": "The emblem of Eritrea — Eritrea Ministry of Information",
+                "url": "https://shabait.com/2013/06/14/the-emblem-of-eritrea/"
+              }
+            ]
+          }
         },
         {
           "id": "er-football-crest",
@@ -10222,7 +10249,16 @@
           "design": "The cover of the Gabon passport.",
           "source": "https://gicg.net/passport/ga/",
           "sha256": "4b6c6937a78c46fada503d3dcb49d86bfe371063f99a4068901190ee3bcce7b1",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Gabon's passport bears the national coat of arms: an okoumé tree at the top, marking the timber trade central to the country's economy, above a shield in the national flag's own colours — green for the country's dense forests, yellow for the sun, and (on the wider arms) blue for the sea — with a ship below representing Gabon's course toward a brighter future. The motto beneath reads \"Union, Travail, Justice\" — \"Unity, Work, Justice\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Gabon — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon"
+              }
+            ]
+          }
         },
         {
           "id": "ga-football-crest",
@@ -11611,7 +11647,16 @@
           "design": "The cover of the Equatorial Guinea passport.",
           "source": "https://gicg.net/passport/gq/",
           "sha256": "6b1ed645529acced5e2b8b0eaabd6b205502c9471aeaec9fef580cbbba5c8331",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Equatorial Guinea's passport bears the national coat of arms, unchanged across currency, official seals and diplomatic documents alike: a grey shield bearing a silk-cotton tree, marking the spot where the first treaty was signed between Portugal and the local ruler that opened the territory to European contact. Six six-pointed stars above the shield stand for the mainland region and the country's five main islands, beneath the motto \"Unidad, Paz, Justicia\" — \"Unity, Peace, Justice\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Equatorial Guinea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea"
+              }
+            ]
+          }
         },
         {
           "id": "gq-football-crest",
