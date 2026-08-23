@@ -4525,6 +4525,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
     ],
   },
+  "gh-passport": {
+    description: "As an ECOWAS member, Ghana's passport carries the bloc's English and French headings — \"Economic Community of West African States (ECOWAS)\" and \"Communauté économique des États de l'Afrique de l'Ouest (CEDEAO)\" — above \"Republic of Ghana\" and the national coat of arms. That shield is quartered by a green St George's Cross bearing a gold lion (marking Ghana's continued Commonwealth ties), crested by a black star — the lodestar of African freedom — and supported by two eagles, each wearing a black star on a red-gold-green ribbon, standing watch over charges representing local government, national government, and the country's agricultural and mineral wealth.",
+    sources: [
+      { title: "Coat of arms of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
+      { title: "Ghanaian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Ghanaian_passport" },
+    ],
+  },
   "gh-football-crest": {
     description: "The red-yellow-green and the black star repeat Ghana's own national flag. The black star was adopted from the flag of the Black Star Line, the shipping company Marcus Garvey ran from 1919 to 1922 as part of his Pan-Africanist movement, and stands for the emancipation of Africa and unity against colonialism — Ghana raised it on its own flag in 1957, when it became the first sub-Saharan African country to gain independence. It gives the team its own nickname, the Black Stars.",
     sources: [
@@ -4553,6 +4560,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Two lions — recalling the country's time within the British Empire — hold a hoe and an axe and support a blue shield bearing the same hoe and axe crossed, for the farming on which the country depends and for the two peoples who work the land. Above the shield a heraldic helm bears an oil palm as its crest. The ribbon reads “Progress, Peace, Prosperity.”",
     sources: [
       { title: "Coat of arms of the Gambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Gambia" },
+    ],
+  },
+  "gm-passport": {
+    description: "The Gambia's biometric passport carries the ECOWAS emblem — a stylised drum and circle motif representing West African cultural heritage and regional unity — rather than the country's own coat of arms, which the earlier machine-readable passport had shown instead. The switch reflects The Gambia's membership of the Economic Community of West African States and its adoption of the bloc's shared passport symbol.",
+    sources: [
+      { title: "ECOWAS passport — Wikipedia", url: "https://en.wikipedia.org/wiki/ECOWAS_passport" },
     ],
   },
   "gm-football-crest": {
@@ -5425,6 +5438,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of South Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_South_Korea" },
     ],
   },
+  "kr-passport": {
+    description: "South Korea's passport cover shows the national emblem: the Taegeuk symbol (the red-and-blue swirl at the centre of the national flag, representing the balance of yin and yang) encircled by petals of the mugunghwa, the rose of Sharon that is South Korea's national flower and a longstanding symbol of resilience and continuity in Korean culture. The interior pages depict the country's national treasures and cultural heritage sites.",
+    sources: [
+      { title: "South Korean passport — Wikipedia", url: "https://en.wikipedia.org/wiki/South_Korean_passport" },
+    ],
+  },
   "kr-football-crest": {
     description: "The white tiger, nicknamed Baekho, is one of the Four Symbols of East Asian mythology — the guardian of the west — and was adopted by the Korea Football Association in 2001 to replace the national flag itself as the shirt badge, as a mark of the Korean people's own spirit ahead of the 2002 World Cup it co-hosted. The badge's blue and red border repeats the Taegeuk colours of the national flag.",
     sources: [
@@ -6286,6 +6305,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted at independence in 1960, the black shield stands for Nigeria's fertile soil, and the white Y — a wavy pall — for the meeting of the Niger and Benue rivers at Lokoja. Two white horses represent dignity, and the red eagle above them strength. The Costus spectabilis flowers at the base are the national flower, found across the country. The scroll reads “Unity and Faith, Peace and Progress.”",
     sources: [
       { title: "Coat of arms of Nigeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria" },
+    ],
+  },
+  "ng-passport": {
+    description: "Nigeria's green passport bears the ECOWAS emblem (as a West African bloc member) alongside the national coat of arms in hot-foil stamping. The arms' black shield represents Nigeria's fertile soil, marked by a white \"Y\" for the point where the Niger and Benue rivers meet; two horses stand for dignity and endurance, an eagle above for strength, and a wreath of green and white — green for the country's vegetation and agricultural wealth, white for peace — carries the national motto, \"Unity and Faith, Peace and Progress\".",
+    sources: [
+      { title: "Nigeria Coat of Arms Meaning Explained: Symbols & History", url: "https://firstnigerian.com/nigeria-coat-of-arms-meaning/" },
     ],
   },
   "ng-football-crest": {
