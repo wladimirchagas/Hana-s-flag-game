@@ -8019,6 +8019,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Netherlands national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Netherlands_national_football_team" },
     ],
   },
+  "no-union-1844": {
+    description: "From 1844, Norway's Nordic-cross flag carried the Swedish-Norwegian union badge in its canton — a device combining both kingdoms' colours in equal measure, introduced by King Oscar I to assert Norway's equal status within their personal union after Norwegians had objected to an earlier, more Sweden-centred design. Detractors nicknamed it \"the herring salad\" (sillsallaten) for its resemblance to the classic Scandinavian dish of pickled herring, beetroot and potato; the badge was dropped from Norway's civil flag in 1899 and the union itself ended in 1905.",
+    sources: [
+      { title: "Union mark of Norway and Sweden — Wikipedia", url: "https://en.wikipedia.org/wiki/Union_mark_of_Norway_and_Sweden" },
+    ],
+  },
   "no-war-flag": {
     description: "The forked swallowtail shape marks this as Norway's state and war flag, distinguishing it from the plain rectangular civil flag flown by private citizens — a distinction inherited via Denmark from a 1625 regulation that reserved the swallow-tailed ensign for the battle fleet.",
     sources: [
@@ -8698,6 +8704,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
     ],
   },
+  "pw-tt": {
+    description: "The flag of the US-administered Trust Territory of the Pacific Islands, the winning entry in a design contest by government employee Gonzalo Santos, set six white stars on light blue — colours drawn from the flag of the United Nations, whose trusteeship the territory was held under — for its six administrative districts: the Marianas, the Marshall Islands, Yap, Chuuk, Pohnpei and Palau. Blue was read as freedom and loyalty; several of those districts, including Palau, later became independent nations with flags of their own.",
+    sources: [
+      { title: "Flag of the Trust Territory of the Pacific Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Trust_Territory_of_the_Pacific_Islands" },
+    ],
+  },
   "pw-arms": {
     description: "Adopted in 1981, the seal is dominated by a bai, the traditional Palauan meeting house that is the seat of community decision-making, standing on sixteen stones. The surrounding words Olbiil Era Kelulau — “the House of Whispered Decisions” — name the national congress, and the date 1981 marks the founding of the Republic. The bai's central place reflects how traditional governance remains at the heart of Palauan identity.",
     sources: [
@@ -8999,6 +9011,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The blue, yellow and green repeat Rwanda's own national flag, adopted in 2001 to mark a break from the flag flown during the 1994 genocide: blue for happiness and peace, yellow for economic development, and green for hope of prosperity.",
     sources: [
       { title: "Flag of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    ],
+  },
+  "sa-1938": {
+    description: "The shahada — the Islamic declaration of faith, \"There is no god but God; Muhammad is the messenger of God\" — on plain green traces to the Wahhabi reform movement of the late 18th century, whose religious authority the House of Saud first rose to power alongside; green itself was chosen for its association with Islam. A horizontal sword was added beneath the shahada in 1902, when Abdulaziz ibn Saud took the title Sultan of Nejd, standing for justice and for the strength by which the kingdom was won.",
+    sources: [
+      { title: "The Saudi National Flag — Saudipedia", url: "https://saudipedia.com/en/article/1691/government-and-politics/national-symbols/the-saudi-national-flag" },
     ],
   },
   "sa-army": {
