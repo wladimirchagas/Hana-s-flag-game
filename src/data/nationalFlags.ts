@@ -7143,6 +7143,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Turkmenistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
     ],
   },
+  "tn-military": {
+    description: "The military flag of Tunisia, flown since 1956 — the year of independence — bears the armed forces' emblem drawn from Tunisia's coat of arms adopted that same year: a lion on a red field and a set of scales on a yellow field, with the national motto in Arabic beneath. The lion and scales, both retained from earlier Tunisian arms, stand for strength and justice respectively, while the crescent and star appearing across the Tunisian military's emblems are the traditional symbols of Islam and the country's Muslim-majority identity.",
+    sources: [
+      { title: "Wikipedia — Coat of arms of Tunisia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia" },
+      { title: "Wikipedia — List of Tunisian flags", url: "https://en.wikipedia.org/wiki/List_of_Tunisian_flags" },
+    ],
+  },
   "tn-president": {
     description: "The national flag is charged with Tunisia's coat of arms: a ship recalling the country's Phoenician maritime heritage and standing for freedom, a lion holding a sword for order, and a set of scales for justice — the three together illustrating the national motto written beneath them in Arabic: Freedom, Order, Justice (حرية، نظام، عدالة).",
     sources: [
