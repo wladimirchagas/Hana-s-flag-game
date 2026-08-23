@@ -17135,7 +17135,16 @@
           "to": 1999,
           "reuse": "historical-flags/japan-1870.svg",
           "design": "The Meiji Hinomaru of Proclamation 57 of 1870: 7:10, with the disc set slightly toward the hoist.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags",
+          "meaning": {
+            "description": "Japan's first legally proclaimed national flag: Proclamation No. 57 of the Grand Council of State, issued 27 January 1870, set the Hinomaru's red sun disc in 7:10 proportions, offset slightly toward the hoist, for use as the flag of Japanese merchant vessels. A separate October 1870 order fixed the naval ensign at 2:3 with the disc centred; the merchant version's offset disc endured, essentially unchanged, until Japan's 1999 Act on National Flag and Anthem finally codified the design in law.",
+            "sources": [
+              {
+                "title": "Flag of Japan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Japan"
+              }
+            ]
+          }
         },
         {
           "id": "jp-shogunate",
@@ -17145,7 +17154,16 @@
           "to": 1868,
           "reuse": "historical-flags/japan-shogunate.png",
           "design": "The naka-guro — a white field with a broad black horizontal band.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags",
+          "meaning": {
+            "description": "The naka-guro — literally 'black in the middle' — was the Tokugawa shogunate's plain white ensign crossed by a single broad black horizontal band, flown by shogunate vessels alongside the Hinomaru (adopted as the civil ensign for Japanese ships in 1854) in the final years before the Meiji Restoration replaced shogunal rule.",
+            "sources": [
+              {
+                "title": "Daimyo Flags, 19th Century — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/jp_daimy.html"
+              }
+            ]
+          }
         },
         {
           "id": "jp-jsdf",
@@ -18729,7 +18747,16 @@
           "design": "The red flag with the country's name in white, flown under the British protectorate until independence.",
           "source": "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags",
           "sha256": "d569b29d3e4524b91487344cf104c5dfd6bd641a180f40ebdc34f1e9f056793b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Flown under the British protectorate that lasted from 1899 to 1961, this plain red flag bore Kuwait's name written in white Arabic script — plain red having long been the customary colour of Gulf Arab flags before the modern Pan-Arab colours were adopted at independence in 1961.",
+            "sources": [
+              {
+                "title": "Flag of Kuwait — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Kuwait"
+              }
+            ]
+          }
         },
         {
           "id": "kw-ottoman",
@@ -23781,7 +23808,16 @@
           "design": "Four horizontal stripes of white, red, yellow and black with a tiger in the centre — the four protected states under British residency.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "faa43787a3b96109c02df225dbc5845f505a1826daf3890a1922391aeb1415e5",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Introduced in 1905 for the Federated Malay States — the British-administered federation of Perak, Selangor, Negeri Sembilan and Pahang formed in 1895 — this flag set a leaping Malayan tiger inside a white oval on four horizontal stripes, each colour combination drawn from one member state's own flag: white and black for Pahang, black, white and yellow for Perak, red and yellow for Selangor, and red, black and yellow for Negeri Sembilan.",
+            "sources": [
+              {
+                "title": "Flag of Malaya (1896–1950) facts for kids",
+                "url": "https://kids.kiddle.co/Flag_of_Malaya_(1896%E2%80%931950)"
+              }
+            ]
+          }
         },
         {
           "id": "my-dutch-malacca",
@@ -25342,7 +25378,16 @@
           "design": "The Dano-Norwegian Dannebrog — a red field with a white-bordered red cross — defaced in the canton with the gold Norwegian lion bearing an axe, flown in the years after 1814 before the modern flag was adopted in 1821.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Norway",
           "sha256": "c6149b6bb51ea5b9364342a3373489d8bdfa7385a7e67f05c22818eedf00168e",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "Declared by the short-lived Norwegian regent Christian Frederik on 27 February 1814, this flag defaced the Dano-Norwegian Dannebrog — a legacy of the centuries-long union with Denmark — with Norway's own gold lion bearing an axe in the canton, asserting a distinct Norwegian identity even as the country was forced that same year into a new union, this time with Sweden. It remained the merchant flag until 1821, when the modern Norwegian tricolour, designed by parliamentarian Fredrik Meltzer, was adopted.",
+            "sources": [
+              {
+                "title": "Norwegian flag of 1814 — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/no-1814.html"
+              }
+            ]
+          }
         },
         {
           "id": "no-war-flag",
@@ -25542,7 +25587,16 @@
           "design": "The double pennon with the sun and moon still bearing human faces, before the 1962 constitution fixed the present design.",
           "source": "https://en.wikipedia.org/wiki/List_of_Nepalese_flags",
           "sha256": "13ed2c898f4b94c47fb52df92e7ff0fda90c6bcf365eb9845dc8a6bfce13ea21",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A refinement of Nepal's double-pennon flag from around 1930, replacing the earlier green border with blue while keeping the human-faced sun and moon of the Rana-era design. The faces were removed only in 1962, when King Mahendra's new constitution fixed the flag's present form, standardised geometrically by the civil engineer Shankar Nath Rimal.",
+            "sources": [
+              {
+                "title": "Nepal: The mysterious, mathematical origins of the world's most unusually-shaped national flag — CNN",
+                "url": "https://www.cnn.com/travel/nepal-flag-shape-explainer-history-intl-hnk"
+              }
+            ]
+          }
         },
         {
           "id": "np-1856",
@@ -25555,7 +25609,16 @@
           "design": "An earlier form of the double pennon.",
           "source": "https://en.wikipedia.org/wiki/List_of_Nepalese_flags",
           "sha256": "d0b220a570497d961b81fb9abd2f85d1f7a130f6c37c3a6036ce8b01d2c20557",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted around 1856 under the powerful chief minister Jung Bahadur Rana, this early form of Nepal's double-pennon flag stacked two crimson triangles bordered in green, the upper bearing a crescent moon and the lower a twelve-rayed sun — both given human faces, a device credited to the Rana rulers weaving solar and lunar dynastic symbolism into the state's standard.",
+            "sources": [
+              {
+                "title": "History of Flags~Nepal — Fandom",
+                "url": "https://johnny-otgs-world.fandom.com/wiki/History_of_Flags~Nepal"
+              }
+            ]
+          }
         },
         {
           "id": "np-royal",

@@ -6561,6 +6561,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Jordan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
     ],
   },
+  "jp-1870": {
+    description: "Japan's first legally proclaimed national flag: Proclamation No. 57 of the Grand Council of State, issued 27 January 1870, set the Hinomaru's red sun disc in 7:10 proportions, offset slightly toward the hoist, for use as the flag of Japanese merchant vessels. A separate October 1870 order fixed the naval ensign at 2:3 with the disc centred; the merchant version's offset disc endured, essentially unchanged, until Japan's 1999 Act on National Flag and Anthem finally codified the design in law.",
+    sources: [
+      { title: "Flag of Japan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Japan" },
+    ],
+  },
+  "jp-shogunate": {
+    description: "The naka-guro — literally 'black in the middle' — was the Tokugawa shogunate's plain white ensign crossed by a single broad black horizontal band, flown by shogunate vessels alongside the Hinomaru (adopted as the civil ensign for Japanese ships in 1854) in the final years before the Meiji Restoration replaced shogunal rule.",
+    sources: [
+      { title: "Daimyo Flags, 19th Century — Flags of the World", url: "https://www.crwflags.com/fotw/flags/jp_daimy.html" },
+    ],
+  },
   "jp-jsdf": {
     description: "The eight-ray sun disc is a Japan Ground Self-Defense Force flag adopted in 1972, descended from the Hinomaru sun-disc imagery long associated with Japan as the \"Land of the Rising Sun\"; sun rays of this kind have been used on Japanese military colours since the Imperial Japanese Army adopted a similar design in 1870.",
     sources: [
@@ -6911,6 +6923,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "White Tiger (mythology) — Wikipedia", url: "https://en.wikipedia.org/wiki/White_Tiger_(mythology)" },
       { title: "Korea Football Association unveils updated emblem — Korea JoongAng Daily", url: "https://www.koreajoongangdaily.com/sports/korea-football-association-unveils-updated-emblem/10271720" },
+    ],
+  },
+  "kw-1940": {
+    description: "Flown under the British protectorate that lasted from 1899 to 1961, this plain red flag bore Kuwait's name written in white Arabic script — plain red having long been the customary colour of Gulf Arab flags before the modern Pan-Arab colours were adopted at independence in 1961.",
+    sources: [
+      { title: "Flag of Kuwait — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
     ],
   },
   "kw-ottoman": {
@@ -8043,6 +8061,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the British Straits Settlements (1874-1942) — SembangKuala", url: "https://sembangkuala.wordpress.com/2009/06/28/flag-of-the-british-straits-settlements-1874-1942/" },
     ],
   },
+  "my-fms": {
+    description: "Introduced in 1905 for the Federated Malay States — the British-administered federation of Perak, Selangor, Negeri Sembilan and Pahang formed in 1895 — this flag set a leaping Malayan tiger inside a white oval on four horizontal stripes, each colour combination drawn from one member state's own flag: white and black for Pahang, black, white and yellow for Perak, red and yellow for Selangor, and red, black and yellow for Negeri Sembilan.",
+    sources: [
+      { title: "Flag of Malaya (1896–1950) facts for kids", url: "https://kids.kiddle.co/Flag_of_Malaya_(1896%E2%80%931950)" },
+    ],
+  },
   "my-army": {
     description: "The Malaysian Army's flag is a red field bearing the army's crest, which combines two traditional bladed weapons drawn from the country's two halves: the keris, the wavy-bladed dagger long associated with the historic Malay warriors of Peninsular Malaysia, and the duku ilang, a weapon tied to the warrior traditions of the indigenous peoples of Malaysian Borneo. Together the two blades represent the army's roots across both regions that make up modern Malaysia.",
     sources: [
@@ -8409,6 +8433,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Union mark of Norway and Sweden — Wikipedia", url: "https://en.wikipedia.org/wiki/Union_mark_of_Norway_and_Sweden" },
     ],
   },
+  "no-1814": {
+    description: "Declared by the short-lived Norwegian regent Christian Frederik on 27 February 1814, this flag defaced the Dano-Norwegian Dannebrog — a legacy of the centuries-long union with Denmark — with Norway's own gold lion bearing an axe in the canton, asserting a distinct Norwegian identity even as the country was forced that same year into a new union, this time with Sweden. It remained the merchant flag until 1821, when the modern Norwegian tricolour, designed by parliamentarian Fredrik Meltzer, was adopted.",
+    sources: [
+      { title: "Norwegian flag of 1814 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/no-1814.html" },
+    ],
+  },
   "no-war-flag": {
     description: "The forked swallowtail shape marks this as Norway's state and war flag, distinguishing it from the plain rectangular civil flag flown by private citizens — a distinction inherited via Denmark from a 1625 regulation that reserved the swallow-tailed ensign for the battle fleet.",
     sources: [
@@ -8455,6 +8485,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield's red field and blue-and-white cross repeat Norway's own national flag. The two confronted gold lions above are drawn from the crowned lion of Norway's state coat of arms, long a mark of royal authority. Framing the federation's own “NFF” monogram, the crest — introduced in 2014 by the Oslo agency Scandinavian Design Group — was designed around the Norwegian expression “å spille med flagget på brystet”, to play with the flag on your chest.",
     sources: [
       { title: "New Norway Crest Unveiled — Footy Headlines", url: "https://www.footyheadlines.com/2014/12/new-norway-crest-unveiled.html" },
+    ],
+  },
+  "np-1930": {
+    description: "A refinement of Nepal's double-pennon flag from around 1930, replacing the earlier green border with blue while keeping the human-faced sun and moon of the Rana-era design. The faces were removed only in 1962, when King Mahendra's new constitution fixed the flag's present form, standardised geometrically by the civil engineer Shankar Nath Rimal.",
+    sources: [
+      { title: "Nepal: The mysterious, mathematical origins of the world's most unusually-shaped national flag — CNN", url: "https://www.cnn.com/travel/nepal-flag-shape-explainer-history-intl-hnk" },
+    ],
+  },
+  "np-1856": {
+    description: "Adopted around 1856 under the powerful chief minister Jung Bahadur Rana, this early form of Nepal's double-pennon flag stacked two crimson triangles bordered in green, the upper bearing a crescent moon and the lower a twelve-rayed sun — both given human faces, a device credited to the Rana rulers weaving solar and lunar dynastic symbolism into the state's standard.",
+    sources: [
+      { title: "History of Flags~Nepal — Fandom", url: "https://johnny-otgs-world.fandom.com/wiki/History_of_Flags~Nepal" },
     ],
   },
   "np-royal": {
