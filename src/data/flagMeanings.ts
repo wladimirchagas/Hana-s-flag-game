@@ -14895,6 +14895,70 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal and flag of Nueva Vizcaya — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_and_flag_of_Nueva_Vizcaya" },
     ],
   },
+  "PH-ABR": {
+    description:
+      "Abra's seal shows a prancing stallion over a mountain gorge with a meandering river and terraced " +
+      "fields — the province's name comes from the Spanish “abra” (gorge, pass or breach), first used for " +
+      "the gap above Banaoang where the Abra River cuts through to the sea, and the seal's mountains, river " +
+      "and fields reflect that rugged terrain alongside the province's agriculture.",
+    sources: [
+      { title: "Abra (province) — Wikipedia", url: "https://en.wikipedia.org/wiki/Abra_(province)" },
+    ],
+  },
+  "PH-APA": {
+    description:
+      "Apayao's seal shows flying birds for the joy of the province's 1995 separation from Kalinga, red and " +
+      "blue — the dominant colours of the Philippine flag — for its alignment with national government " +
+      "programmes, a beaded border for the ancient culture of its tribes and their wish to preserve it, and " +
+      "a cord encircling the seal for the cooperation and unity of its people.",
+    sources: [
+      { title: "About Apayao — Apayao Ipasindayaw", url: "https://apayao.gov.ph/background" },
+    ],
+  },
+  "PH-BEN": {
+    description:
+      "Benguet's seal, approved in 1968, depicts the province's resources and industries: a miner's pick and " +
+      "headgear for mining, the Ambuklao dam spillway for hydroelectric energy, terraced gardens and " +
+      "vegetables for agriculture, a “kayabang” basket for indigenous handicraft, and pine-covered mountains " +
+      "for eco-tourism. At the centre sits a “gangsa” gong, for the distinct indigenous culture of the " +
+      "Benguet people, beneath the motto “Unity, Industry, Prosperity”.",
+    sources: [
+      { title: "About the Province — Province of Benguet", url: "https://benguet.gov.ph/about-the-province/" },
+    ],
+  },
+  "PH-KAL": {
+    description:
+      "Kalinga's seal sets the province's five highest mountain peaks along its top, above the “laga” " +
+      "backstrap-woven textile that is central to Kalinga craft and now taught in local schools, and the base " +
+      "of a traditional “byanga” cooking vessel. A kalasag (shield) stands for the strength of Kalinga " +
+      "warriors defending their community.",
+    sources: [
+      { title: "What is new in the NEW Kalinga Provincial Seal? — Guru Press Cordillera", url: "https://www.gurupress-cordillera.com/post/enhanced-kalinga-provincial-seal-approved" },
+    ],
+  },
+  "PH-LUN": {
+    description:
+      "La Union's seven-pointed shield divides into four: an upper blue triangle shows three clasped hands " +
+      "for the people united from parts of Pangasinan, Ilocos and Benguet when the province was formed in " +
+      "1850; a red panel shows cotton and tobacco for the province's cash crops; another red panel shows a " +
+      "native spinning wheel for its weaving industry; and a lower blue triangle shows a ship's wheel for the " +
+      "fishing and maritime trade centred on the port of San Fernando. The motto reads “Love, Union, Concord”.",
+    sources: [
+      { title: "La Union Seal — Provincial Government of La Union", url: "https://launion.gov.ph/la-union-seal/" },
+    ],
+  },
+  "PH-SLE": {
+    description:
+      "Southern Leyte's flag sets a green field — for agriculture, the province's main industry — behind a " +
+      "cross formed by white stripes, recalling the first Catholic Mass held on Philippine soil at nearby " +
+      "Limasawa island in 1521, framed by abaca and coconut leaves for the province's two major crops and " +
+      "four orchid flowers native to Leyte. Its seal depicts a handclasp between a native Filipino and a " +
+      "Spaniard, standing for the hospitality the islanders showed Magellan's expedition, beside a cross and " +
+      "galleons marking that first Mass and the arrival of Christianity.",
+    sources: [
+      { title: "Provincial Flag — Province of Southern Leyte", url: "https://southernleyte.gov.ph/provincial-flag/" },
+    ],
+  },
   "PH-AGN": {
     description:
       "Agusan del Norte's seal recalls the old province of Agusan, once known as “Manobo Country”: a " +
