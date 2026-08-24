@@ -11171,6 +11171,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Trinidad and Tobago — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
     ],
   },
+  "tv-1996": {
+    description: "Pro-republican Prime Minister Kamuta Latasi introduced this flag in 1996, dropping the Union Jack and the coat of arms in favour of nine stars alone, as a step toward severing ties with the British monarchy. The change proved deeply unpopular — many Tuvaluans saw it as disrespectful to Queen Elizabeth II — and after Latasi lost a no-confidence vote in 1997, the original 1978 independence flag, Union Jack and all, was restored.",
+    sources: [
+      { title: "Flag of Tuvalu — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
+    ],
+  },
+  "tv-geic": {
+    description: "The colonial badge at the centre of the Blue Ensign — designed in 1931 by the colonial administrator Sir Arthur Grimble and granted in 1937 — shows a golden frigatebird flying above a rising sun over the ocean. The frigatebird was chosen for its significance to the islands' own people, for whom the bird traditionally signified sovereignty, high birth and mastery of the sea.",
+    sources: [
+      { title: "Flag of Kiribati — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
+    ],
+  },
   "tv-arms": {
     description: "Granted by royal warrant in 1976, the shield shows a maneapa — the traditional meeting house at the centre of island community life — above stylised gold-and-blue waves for the surrounding ocean. Eight banana leaves and eight mussel shells ring the border, one pair for each of the eight traditionally inhabited islands from which the name Tuvalu — “eight standing together” — is drawn. The motto reads Tuvalu mo te Atua — “Tuvalu for the Almighty” — also the title of the national anthem.",
     sources: [
@@ -11188,6 +11200,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Hinomaru (\"circle of the sun\") shows a red disc on a white field, representing Japan as the Land of the Rising Sun. The red disc recalls the sun, long central to Japanese mythology and linked to the Shinto sun goddess Amaterasu, regarded as the mythical ancestress of the imperial line; white is read as purity, red as vitality and courage. Used at court since the 8th century and by shogunate-era merchant ships, it was designated the national flag by the Meiji government in 1870.",
     sources: [
       { title: "Hinomaru: The Symbolism and History of Japan's National Flag — Nippon.com", url: "https://www.nippon.com/en/japan-topics/g02615/" },
+    ],
+  },
+  "tw-qing": {
+    description: "Standardised in 1889 as Qing China's first official national flag, the Yellow Dragon Flag used yellow — reserved exclusively for the Manchu emperors — as its field, with a five-clawed dragon (a form reserved for the Emperor alone) coiling toward a flaming pearl, standing for imperial power and sovereignty. It flew over Taiwan as part of the Qing Empire until the 1895 Treaty of Shimonoseki ceded the island to Japan following the First Sino-Japanese War.",
+    sources: [
+      { title: "Flag of the Qing dynasty — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Qing_dynasty" },
     ],
   },
   "tw-emblem": {
@@ -11755,10 +11773,34 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Uzbek Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Uzbek_Soviet_Socialist_Republic" },
     ],
   },
+  "uz-khiva": {
+    description: "Flown during the Khivan civil war that followed the 1917 Russian Revolution, the flag combined broad green stripes framing a black field with a yellow crescent and star at the centre — the crescent and star a traditional mark of the khanate's Islamic identity. The khanate's last ruler, Khan Sayid Abdullah, abdicated in February 1920 as Bolshevik-backed forces prevailed, and the Khorezm People's Soviet Republic was proclaimed weeks later.",
+    sources: [
+      { title: "Khanate of Khiva — Wikipedia", url: "https://en.wikipedia.org/wiki/Khanate_of_Khiva" },
+    ],
+  },
+  "uz-turkestan": {
+    description: "Hoisted in December 1917 when the short-lived Turkestan (Kokand) Autonomy declared self-rule under Mustafa Chokai-Beg, the flag was deliberately modelled on the Ottoman Turkish flag — red over dark blue with a white star and crescent — asserting the Turkic and Islamic identity the autonomy's leaders wanted the new state to represent, before Bolshevik forces crushed it in February 1918.",
+    sources: [
+      { title: "Turkestan Autonomy — Wikipedia", url: "https://en.wikipedia.org/wiki/Turkestan_Autonomy" },
+    ],
+  },
   "uz-russian-empire": {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
     sources: [
       { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
+    ],
+  },
+  "uz-bukhara": {
+    description: "This was the personal royal standard of Emir Mohammed Alim Khan (r. 1910–1920), not a national flag in the modern sense — it is not established that Bukhara had one. On a light-green field bordered in orange, it combined a gold crescent and star, the Hand of Fatima as a sign of protection, and the words of the Islamic declaration of faith alongside the phrase \"the sultan is the shadow of God,\" asserting the Emir's religious as well as temporal authority over the emirate.",
+    sources: [
+      { title: "Flag of the Emirate of Bukhara — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Flag_of_the_Emirate_of_Bukhara.svg" },
+    ],
+  },
+  "uz-timur": {
+    description: "Three equal rings arranged in a triangle formed the personal emblem of Timur (Tamerlane), attested on his seal and coinage by contemporaries including the Castilian ambassador Ruy González de Clavijo and the Arab historian Ibn Arabshah. The sign illustrated Timur's own title \"Sahib-Qiran,\" an astrological epithet meaning \"Lord of the Fortunate Conjunction\" (of the benevolent planets Jupiter and Venus), and was read as a mark of the empire's claimed sovereignty over the known world.",
+    sources: [
+      { title: "Timurid Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Timurid_Empire" },
     ],
   },
   "uz-president": {
@@ -11958,6 +12000,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted by decree on 5 September 1945, three days after Ho Chi Minh proclaimed Vietnamese independence, this red flag bearing a yellow five-pointed star was the banner of the Việt Minh, the communist-led movement that had fought Japanese occupation, and became the flag of the new Democratic Republic of Vietnam (North Vietnam). Red stands for the revolution and the blood shed for it, and the star's five points for the alliance of workers, peasants, soldiers, intellectuals and youth; a 1955 revision straightened the star's points and reduced its size, and the same flag became Vietnam's national flag at reunification in 1976.",
     sources: [
       { title: "Discover the Vietnamese flag: history, meaning, and symbols — Parfum d'Automne", url: "https://parfumdautomne.fr/en/discover-the-vietnamese-flag-history-meaning-and-symbols/" },
+    ],
+  },
+  "vn-nguyen-1920": {
+    description: "Designed under Emperor Khải Định and flown ceremonially from 1924, the cờ Long tinh (\"dragon star flag\") became Đại Nam's formal national flag around 1941 and remained in use under Bảo Đại until 1945. As explained in a period speech recorded at a Hải Phòng school, the flag's red stood for the happiness of the people, while the surrounding yellow — the colour traditionally reserved for the Emperor — symbolised his dignity and authority.",
+    sources: [
+      { title: "Long tinh flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Long_tinh_flag" },
     ],
   },
   "vn-dai-nam": {
