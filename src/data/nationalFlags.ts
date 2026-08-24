@@ -4338,6 +4338,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of China — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_China" },
     ],
   },
+  "cn-passport-seafarer": {
+    description: "Issued under the Measures for the Administration of Seafarer's Passports, in effect since 1 December 1989 (replacing 1976 interim rules), this travel document is granted by China's Maritime Safety Administration to Chinese seafarers serving on Chinese-flagged ships on international routes, or dispatched to serve on foreign-flagged vessels — a specialised credential separate from the ordinary Chinese passport, valid for five years.",
+    sources: [
+      { title: "The People's Republic of China Seafarer's Passport — Wikidata", url: "https://www.wikidata.org/wiki/Q10876041" },
+    ],
+  },
   "cn-football-crest": {
     description: "The gold building is Tiananmen — the gate on Beijing's central axis from which the People's Republic of China was proclaimed in 1949 — a national symbol significant enough that it also appears on China's own national emblem. The red rings and green field are the colours of the national flag; CFA is the association's own initials, the Chinese Football Association, written above in Chinese as 中国足球协会.",
     sources: [
@@ -6439,6 +6445,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "India colour-codes by holder: navy blue for an ordinary passport, white for government officials travelling on duty, and maroon for diplomats — so a border officer can tell the bearer’s standing from the cover before opening it.",
     sources: [
       { title: "Indian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Indian_passport" },
+    ],
+  },
+  "in-passport-official": {
+    description: "India issues its passports in three colours by type: blue for ordinary citizens, maroon for diplomats, and white for government officials travelling abroad on official business who are not diplomats — civil servants such as IAS and IPS officers on official duty, rather than personal travel.",
+    sources: [
+      { title: "India's Passport Colours: A Guide to Understanding Blue, Maroon and White — Travel And Tour World", url: "https://www.travelandtourworld.com/news/article/indias-passport-colours-a-guide-to-understanding-blue-maroon-white-and-orange/" },
+    ],
+  },
+  "in-passport-emergency": {
+    description: "The Emergency Certificate is a one-way travel document issued by an Indian mission abroad when a national's passport has been lost, stolen, damaged or expired and a full replacement passport cannot be issued in time — granted only after the holder's existing passport is formally cancelled, and valid for one month, solely to allow the bearer to travel back to India.",
+    sources: [
+      { title: "Emergency Travel Document (Emergency Certificate – EC) — Consulate General of India, San Francisco", url: "https://www.cgisf.gov.in/page/emergency-travel-document-emergency-certificate-ec/" },
     ],
   },
   "in-football-crest": {
@@ -10944,6 +10962,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Turkish passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Turkish_passport" },
     ],
   },
+  "tr-passport-diplomatic": {
+    description: "Turkey's black diplomatic passport is reserved for senior government officials and diplomats, and carries the most extensive visa-free travel privileges of the country's four passport types (red ordinary, green special, grey service, black diplomatic) — the cover colour itself functioning as the classification, exactly as in the equivalent multi-colour passport systems used by many other states.",
+    sources: [
+      { title: "Turkish Passports: What Each Color Means — Istanbul Airport", url: "https://www.istairport.com/en/blog/turkish-passports-color-which-color-means-what?locale=en" },
+    ],
+  },
+  "tr-passport-special": {
+    description: "Known as the 'yeşil pasaport' (green passport), Turkey's special passport is issued to senior officials, university professors of high academic rank, and former ministers and members of parliament. Unlike the grey service passport, it is treated as an acquired right its holder keeps for personal as well as official travel, and it grants Schengen-area visa exemption for short stays.",
+    sources: [
+      { title: "Turkish Green Passport (Hususi): Eligibility & Visa-Free Countries — Ista Property", url: "https://istaproperty.com/blog/turkish-green-passport-guide" },
+    ],
+  },
+  "tr-passport-service": {
+    description: "Turkey's grey service passport is issued to state officers, academics, researchers, athletes representing the country and journalists travelling abroad on official work who do not qualify for the green special passport. Unlike the green passport, it is strictly for official missions and must be returned once the mission concludes.",
+    sources: [
+      { title: "Turkish Passports: What Each Color Means — Istanbul Airport", url: "https://www.istairport.com/en/blog/turkish-passports-color-which-color-means-what?locale=en" },
+    ],
+  },
   "tr-football-crest": {
     description: "The white crescent and star repeat Turkey's own national flag — the ay yıldız (“moon star”) — and “1923” marks the founding of the Turkish Football Federation, the same year the Republic of Turkey itself was proclaimed.",
     sources: [
@@ -11504,6 +11540,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Like the ordinary blue passport, this cover bears the obverse of the Great Seal of the United States: a bald eagle holding an olive branch (peace) in one talon and thirteen arrows (readiness for war) in the other, beneath the motto \"E Pluribus Unum\" — \"Out of many, one\". The grey cover and \"Service Passport\" heading distinguish it as issued for a specific category of government-related travel, separate from the ordinary citizen passport.",
     sources: [
       { title: "Great Seal of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States" },
+    ],
+  },
+  "us-passport-emergency": {
+    description: "Beyond the four standard colours the United States issues by passport type (blue ordinary, black diplomatic, maroon official, grey no-fee), a distinctive purple-covered emergency passport is issued overseas — typically valid for only a few days, occasionally up to a year at a consular officer's discretion — to citizens who have lost their passport or face an urgent need to return to the United States and cannot wait for a fully valid replacement.",
+    sources: [
+      { title: "Understanding Limited Validity U.S. Passports — US Passport Service", url: "https://www.uspassport.com/post/understanding-limited-validity-us-passports" },
     ],
   },
   "us-football-crest": {

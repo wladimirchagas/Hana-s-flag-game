@@ -7397,7 +7397,16 @@
           "design": "A cover for merchant seafarers, issued alongside the ordinary passport.",
           "source": "https://en.wikipedia.org/wiki/Chinese_passport",
           "sha256": "3b36a63e32d9573b41b19a318070a47ecf8c92fa96a4bf390679ef974354812e",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Issued under the Measures for the Administration of Seafarer's Passports, in effect since 1 December 1989 (replacing 1976 interim rules), this travel document is granted by China's Maritime Safety Administration to Chinese seafarers serving on Chinese-flagged ships on international routes, or dispatched to serve on foreign-flagged vessels — a specialised credential separate from the ordinary Chinese passport, valid for five years.",
+            "sources": [
+              {
+                "title": "The People's Republic of China Seafarer's Passport — Wikidata",
+                "url": "https://www.wikidata.org/wiki/Q10876041"
+              }
+            ]
+          }
         },
         {
           "id": "cn-football-crest",
@@ -16026,7 +16035,16 @@
           "design": "A white cover with the State Emblem, issued to officials travelling on government business.",
           "source": "https://en.wikipedia.org/wiki/Indian_passport",
           "sha256": "7a3598cdaf1f993dc579f5c67f1226a18c89782e32c3ba20daa5859d048efe09",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "India issues its passports in three colours by type: blue for ordinary citizens, maroon for diplomats, and white for government officials travelling abroad on official business who are not diplomats — civil servants such as IAS and IPS officers on official duty, rather than personal travel.",
+            "sources": [
+              {
+                "title": "India's Passport Colours: A Guide to Understanding Blue, Maroon and White — Travel And Tour World",
+                "url": "https://www.travelandtourworld.com/news/article/indias-passport-colours-a-guide-to-understanding-blue-maroon-white-and-orange/"
+              }
+            ]
+          }
         },
         {
           "id": "in-passport-emergency",
@@ -16037,7 +16055,16 @@
           "design": "A one-way travel document issued by Indian missions abroad to nationals without a valid passport.",
           "source": "https://en.wikipedia.org/wiki/Indian_passport",
           "sha256": "532d31c6b8b96be07aa5bf129829d29c34d5d188d611fb686e0514167ac57725",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Emergency Certificate is a one-way travel document issued by an Indian mission abroad when a national's passport has been lost, stolen, damaged or expired and a full replacement passport cannot be issued in time — granted only after the holder's existing passport is formally cancelled, and valid for one month, solely to allow the bearer to travel back to India.",
+            "sources": [
+              {
+                "title": "Emergency Travel Document (Emergency Certificate – EC) — Consulate General of India, San Francisco",
+                "url": "https://www.cgisf.gov.in/page/emergency-travel-document-emergency-certificate-ec/"
+              }
+            ]
+          }
         },
         {
           "id": "in-football-crest",
@@ -34695,7 +34722,16 @@
           "design": "A black cover with the same emblem, headed DİPLOMATİK PASAPORT.",
           "source": "https://en.wikipedia.org/wiki/Turkish_passport",
           "sha256": "86849197399d454b9dab72b9486e4b2221bd01eb6d4f5ac7470c3b01f86239b8",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Turkey's black diplomatic passport is reserved for senior government officials and diplomats, and carries the most extensive visa-free travel privileges of the country's four passport types (red ordinary, green special, grey service, black diplomatic) — the cover colour itself functioning as the classification, exactly as in the equivalent multi-colour passport systems used by many other states.",
+            "sources": [
+              {
+                "title": "Turkish Passports: What Each Color Means — Istanbul Airport",
+                "url": "https://www.istairport.com/en/blog/turkish-passports-color-which-color-means-what?locale=en"
+              }
+            ]
+          }
         },
         {
           "id": "tr-passport-special",
@@ -34706,7 +34742,16 @@
           "design": "A green cover — the “yeşil pasaport” issued to senior officials and former members of parliament.",
           "source": "https://en.wikipedia.org/wiki/Turkish_passport",
           "sha256": "1381ea7a0605745d0a6b34119bc1bbbde52b0171b91d933e9c3a93e67690aa1e",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Known as the 'yeşil pasaport' (green passport), Turkey's special passport is issued to senior officials, university professors of high academic rank, and former ministers and members of parliament. Unlike the grey service passport, it is treated as an acquired right its holder keeps for personal as well as official travel, and it grants Schengen-area visa exemption for short stays.",
+            "sources": [
+              {
+                "title": "Turkish Green Passport (Hususi): Eligibility & Visa-Free Countries — Ista Property",
+                "url": "https://istaproperty.com/blog/turkish-green-passport-guide"
+              }
+            ]
+          }
         },
         {
           "id": "tr-passport-service",
@@ -34717,7 +34762,16 @@
           "design": "A grey cover, issued to officials travelling on state business.",
           "source": "https://en.wikipedia.org/wiki/Turkish_passport",
           "sha256": "7208585ca5837a5822eacb71ae1bc1895d4f41ab85a80d3e8e16790997391d12",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Turkey's grey service passport is issued to state officers, academics, researchers, athletes representing the country and journalists travelling abroad on official work who do not qualify for the green special passport. Unlike the green passport, it is strictly for official missions and must be returned once the mission concludes.",
+            "sources": [
+              {
+                "title": "Turkish Passports: What Each Color Means — Istanbul Airport",
+                "url": "https://www.istairport.com/en/blog/turkish-passports-color-which-color-means-what?locale=en"
+              }
+            ]
+          }
         },
         {
           "id": "tr-official-national",
@@ -36947,7 +37001,16 @@
           "design": "A limited-validity passport issued abroad when a traveller's own is lost or stolen.",
           "source": "https://en.wikipedia.org/wiki/United_States_passport",
           "sha256": "75cec6ecb43e5eba47d71eb89dfa043f1151a0fa2b22d39a69774b7935ff6b1f",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Beyond the four standard colours the United States issues by passport type (blue ordinary, black diplomatic, maroon official, grey no-fee), a distinctive purple-covered emergency passport is issued overseas — typically valid for only a few days, occasionally up to a year at a consular officer's discretion — to citizens who have lost their passport or face an urgent need to return to the United States and cannot wait for a fully valid replacement.",
+            "sources": [
+              {
+                "title": "Understanding Limited Validity U.S. Passports — US Passport Service",
+                "url": "https://www.uspassport.com/post/understanding-limited-validity-us-passports"
+              }
+            ]
+          }
         },
         {
           "id": "us-football-crest",
