@@ -371,7 +371,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "br-marines", category: "military", name: "Flag of the Brazilian Marine Corps", from: 1931, to: 9999, path: "national-flags/br/brazil-marines.svg", design: "The arms of the Corpo de Fuzileiros Navais — the navy's marine corps.", source: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
     { id: "br-jack", category: "maritime", name: "Naval jack (Bandeira do Cruzeiro)", from: 1847, to: 9999, path: "national-flags/br/brazil-naval-jack.svg", design: "Dark blue with 21 white stars in a cross — 13 across and 9 down.", source: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
     { id: "br-president", category: "standard", name: "Presidential Standard of Brazil", from: 1992, to: 9999, path: "national-flags/br/brazil-president.svg", design: "A dark green field with the national coat of arms in the centre.", source: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
-    { id: "br-vice-president", category: "standard", name: "Vice-Presidential Standard of Brazil", from: 1992, to: 9999, path: "national-flags/br/brazil-vice-president.svg", design: "A yellow field with 21 blue stars in a cross and the coat of arms at the centre.", source: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
+    { id: "br-vice-president", category: "standard", name: "Vice-Presidential Standard of Brazil", from: 1992, to: 9999, path: "national-flags/br/brazil-vice-president.svg", design: "A yellow field with 23 blue five-pointed stars arranged in a cross (15 stars along the horizontal arm, one at the centre) and the coat of arms of Brazil in the upper-left quadrant.", source: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
     { id: "br-arms", category: "coatofarms", name: "Coat of arms of Brazil", path: "national-flags/br/brazil-arms.svg", design: "A blue disc bearing the Southern Cross, ringed by 27 stars, on a star-shaped emblem framed by coffee and tobacco branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil" },
     { id: "br-passport", category: "passport", name: "Brazilian passport", path: "national-flags/br/brazil-passport.webp", design: "A blue Mercosur cover: MERCOSUL/MERCOSUR across the top, REPÚBLICA FEDERATIVA DO BRASIL, the national arms in gold, and PASSAPORTE beneath.", source: "https://gicg.net/passport/br/" },
     { id: "br-football-crest", category: "footballcrest", name: "Crest of the Brazilian Football Confederation (CBF)", path: "national-flags/br/br-football-crest.svg", design: "The crest of the Brazilian Football Confederation — a blue shield bearing the green-and-yellow “CBF” monogram, beneath an arc of five green stars.", source: "https://en.wikipedia.org/wiki/Brazilian_Football_Confederation" },
@@ -2717,6 +2717,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flags of the Ottoman Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire" },
     ],
   },
+  "al-naval-ensign": {
+    description: "The naval ensign places Albania's national flag — the black double-headed eagle of the medieval Kastrioti dynasty on red, revived as the national emblem for its association with Gjergj Kastrioti Skanderbeg's 15th-century resistance to Ottoman rule — in the canton of a plain white field, distinguishing vessels of the Albanian Naval Defence Force from the merchant and state variants that fly the plain national flag.",
+    sources: [
+      { title: "List of Albanian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Albanian_flags" },
+      { title: "Flag of Albania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
+    ],
+  },
   "al-president": {
     description: "The presidential flag keeps the national flag's black double-headed eagle on red — a device drawn from the personal seal of the 15th-century national hero Skanderbeg, its two heads read as marking Albania's position between East and West and the union of its northern Gheg and southern Tosk halves — but adds a golden border around the red field, distinguishing the flag of the head of state from the plain national flag and marking the authority of the office.",
     sources: [
@@ -3675,6 +3682,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The coat of arms at the centre shows a five-pointed star arrangement for the Southern Cross constellation, a wreath of coffee and tobacco branches for Brazil's historic agricultural wealth, and a ring of stars for the country's states and Federal District.",
     sources: [
       { title: "Coat of arms of Brazil — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil" },
+    ],
+  },
+  "br-vice-president": {
+    description: "The Vice-Presidential standard uses the same yellow as the national flag for visual continuity with Brazil's central emblem, while its own arrangement of 23 blue stars in a cross — distinct from both the national flag's 27-star globe and the Presidential standard's own design — exists purely to mark the office and distinguish the Vice-President from other civil authorities in ceremonial and naval protocol. The coat of arms in the upper-left quadrant carries the Republic's own symbolism (see the flag's own \"What this flag means\" entry).",
+    sources: [
+      { title: "Bandeira vice-presidencial do Brasil — Wikipédia", url: "https://pt.wikipedia.org/wiki/Bandeira_vice-presidencial_do_Brasil" },
     ],
   },
   "br-arms": {
@@ -4832,6 +4845,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "dz-naval-ensign": {
     description: "A vertical green-and-white bicolour bears the red crescent and five-pointed star of the national flag — symbolising Islamic heritage and the sacrifice of Algeria's war of independence, and drawing on the 19th-century standard of Emir Abdelkader and the earlier flag of the Regency of Algiers — overlaid in the canton with two crossed fouled anchors, changed from red to white in the 2004 redesign of the ensign.",
     sources: [
+      { title: "Flag of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
+    ],
+  },
+  "dz-naval-jack": {
+    description: "The naval jack is simply Algeria's national flag flown at the bow in the smaller proportions used for a jack rather than an ensign. Its green half stands for Islam and hope, its white half for peace and purity, and the red crescent and five-pointed star — carried over from the flag flown by the National Liberation Front during the war of independence — for Islam and for the blood of those who died in the struggle against French colonial rule.",
+    sources: [
+      { title: "List of Algerian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Algerian_flags" },
       { title: "Flag of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
     ],
   },
@@ -8490,6 +8510,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — White Ensign", url: "https://en.wikipedia.org/wiki/White_Ensign" },
     ],
   },
+  "my-civil-ensign-malaya": {
+    description: "The civil ensign follows the British \"red ensign\" convention — a plain red field with the national flag in the canton, historically reserved for merchant shipping and adopted across the Commonwealth — carrying the flag of the newly independent Federation of Malaya: eleven alternating red-and-white stripes and an eleven-pointed star for the eleven states of the federation, beside a crescent for Islam as the state religion.",
+    sources: [
+      { title: "List of Malaysian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
+      { title: "British ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/British_ensign" },
+    ],
+  },
   "my-agong": {
     description: "A yellow field — the colour of Malay royalty, standing for the sovereignty of the country's elected head of state — bears the Jata Negara, Malaysia's coat of arms, wreathed by two sheaves of paddy (rice) for abundance and prosperity; it is the standard of the Yang di-Pertuan Agong, the king elected every five years by and from the hereditary rulers of Malaysia's nine Malay states.",
     sources: [
@@ -9999,6 +10026,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — Emblem of Saudi Arabia", url: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
     ],
   },
+  "sa-civil-ensign": {
+    description: "The civil ensign flown by Saudi merchant vessels places the national flag — green for Islam, bearing the shahada (\"There is no god but God; Muhammad is the messenger of God\") in white Thuluth script above a horizontal sword standing for justice and for the kingdom's 1926 unification under Ibn Saud — as a white-bordered canton on a plain green field, one-third the ensign's size, distinguishing merchant shipping from the naval and state variants.",
+    sources: [
+      { title: "List of Saudi Arabian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+      { title: "Flag of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" },
+    ],
+  },
   "sa-naval-ensign": {
     description: "The naval ensign is the national flag charged with the navy's version of Saudi Arabia's national emblem: two crossed swords with a date palm rising between and above the blades, adopted in 1950. The palm stands for the kingdom's vitality and prosperity — its people, history and resources — while the crossed swords beneath it represent the strength that defends that prosperity, and are also read as recalling the Sultanate of Nejd and the Kingdom of Hejaz, the two territories united under Ibn Saud in 1926 to form Saudi Arabia.",
     sources: [
@@ -10110,6 +10144,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Flags of the World — Sudanese Air Force", url: "https://www.crwflags.com/fotw/flags/sd_air.html" },
       { title: "Wikipedia — Sudanese Air Force", url: "https://en.wikipedia.org/wiki/Sudanese_Air_Force" },
+    ],
+  },
+  "sd-navy": {
+    description: "The naval ensign follows the pattern several former British-administered states adopted for their own navies after independence — a plain white field, echoing the Royal Navy's historic White Ensign, with the national flag in the canton — distinguishing naval vessels from merchant shipping. Sudan's flag in the canton carries the pan-Arab colours: red for the independence struggle's martyrs, white for the 1924 revolutionary flag and for peace, black for al-Mahdī and for the country's own Arabic name (\"the black land\"), and green, in the hoist triangle, for Islam and for prosperity.",
+    sources: [
+      { title: "Flag of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
+      { title: "White Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/White_Ensign" },
     ],
   },
   "sd-president": {
