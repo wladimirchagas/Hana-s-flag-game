@@ -14809,6 +14809,26 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "PH-BAS": {
+    description:
+      "Basilan's seal is shaped like a rhombus, following the outline of the province's main island, with a " +
+      "bolo knife and a rising sun over the sea — the bolo a traditional working and defence tool of the " +
+      "island's people, and the sunrise standing for new beginnings.",
+    sources: [
+      { title: "#JuanPhilippines: Autonomous Region in Muslim Mindanao (ARMM) — Timow's Turf", url: "https://timowsturf.wordpress.com/side-project-juanphilippines/juanphilippines-autonomous-region-in-muslim-mindanao-armm/" },
+    ],
+  },
+  "PH-MSC": {
+    description:
+      "Misamis Occidental's seal divides into four quadrants: a fort standing for Ozamiz City, the seat of " +
+      "the provincial government; the coconut industry; the province's fishing grounds across Panguil Bay, " +
+      "the Mindanao Sea and Iligan Bay; and rice fields set against Mount Malindang. Corn and banana trees " +
+      "along one edge stand for the province's other major crops.",
+    sources: [
+      { title: "Misamis Occidental Province — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Misamis_Occidental_Province" },
+    ],
+  },
+
   "PH-PAN": {
     description:
       "Pangasinan's name means “place of salt-making”, and its seal reflects that directly: the lower third " +
