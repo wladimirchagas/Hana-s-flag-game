@@ -2587,7 +2587,16 @@
           "design": "The flag of the Bengal Presidency under British rule.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
           "sha256": "9b573864358216cd419ccf406350f4a927a537d698fefcf71b37e618d40b052e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of the Bengal Presidency — the largest of British India's three administrative presidencies, governing Bengal and much of eastern India from Calcutta — set a blue field with a badge showing a striding (passant) tiger above a sailing ship, emblems of the region's wildlife and its importance to British maritime trade. It flew from the early 19th century until the presidency system was formally abolished with the reorganisation of British India in 1947.",
+            "sources": [
+              {
+                "title": "Flags of British India — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_British_Raj"
+              }
+            ]
+          }
         },
         {
           "id": "bd-mughal",
@@ -16532,7 +16541,16 @@
           "design": "The banner of the Norwegian crown, to which the Icelandic Commonwealth submitted in 1262.",
           "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags",
           "sha256": "6443b8440d4b9fc058df9aa2ce4b223a003ce940858179d1a38ed51efe9ca4de",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The banner of the Norwegian crown — a crowned gold lion bearing an axe on a red field, the lion drawn from Norway's royal arms since the 13th century and the axe recalling Saint Olaf, Norway's patron king — represented the authority Iceland submitted to in 1262, when the Icelandic Commonwealth's chieftains accepted the King of Norway's rule under the Old Covenant, ending Iceland's four centuries as an independent republic.",
+            "sources": [
+              {
+                "title": "Coat of arms of Norway — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway"
+              }
+            ]
+          }
         },
         {
           "id": "is-state",
@@ -27510,7 +27528,16 @@
           "design": "The short-lived shade change ordered by Executive Order No. 1010 of 1985, reversed the following year.",
           "source": "https://en.wikipedia.org/wiki/List_of_Philippine_flags",
           "sha256": "1ddeab1f96909b4ce4b051bb407b8e70846d7fed45989cf7c9789ea6d85dc6b5",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "By Executive Order No. 1010, signed 25 February 1985, President Ferdinand Marcos ordered the Philippine flag's blue changed from a dark navy to a lighter shade, arguing this restored the paler blue said to have been used in the original 1898 flag sewn by Marcela Agoncillo. The change was controversial — Agoncillo's own daughter and several legislators publicly opposed it as historically dubious — and Marcos's fall in the 1986 People Power Revolution saw the darker navy blue restored within the year, before a 1996 study fixed the flag's official 'royal blue' shade, later written into law in 1998.",
+            "sources": [
+              {
+                "title": "1985: A Year of Three Shades of Blue — National Historical Commission of the Philippines",
+                "url": "https://nhcp.gov.ph/articles/1985-a-year-of-three-shades-of-blue/"
+              }
+            ]
+          }
         },
         {
           "id": "ph-us48",

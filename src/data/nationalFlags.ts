@@ -3163,6 +3163,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flags of British India — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_British_India" },
     ],
   },
+  "bd-bengal": {
+    description: "The flag of the Bengal Presidency — the largest of British India's three administrative presidencies, governing Bengal and much of eastern India from Calcutta — set a blue field with a badge showing a striding (passant) tiger above a sailing ship, emblems of the region's wildlife and its importance to British maritime trade. It flew from the early 19th century until the presidency system was formally abolished with the reorganisation of British India in 1947.",
+    sources: [
+      { title: "Flags of British India — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_British_Raj" },
+    ],
+  },
   "bd-mughal": {
     description: "The alam, the Mughal Empire's principal imperial standard, was a moss-green field bearing a lion and rising sun facing the hoist — an emblem the dynasty traced back to its ancestor Timur. Carried before the emperor on campaign and displayed beside his throne, it flew over Bengal from Emperor Akbar's conquest of the province in the 1570s until the 1757 Battle of Plassey, after which the East India Company's growing power in Bengal ended real Mughal authority there.",
     sources: [
@@ -6504,6 +6510,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblems of the Kalmar Union — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblems_of_the_Kalmar_Union" },
     ],
   },
+  "is-norway": {
+    description: "The banner of the Norwegian crown — a crowned gold lion bearing an axe on a red field, the lion drawn from Norway's royal arms since the 13th century and the axe recalling Saint Olaf, Norway's patron king — represented the authority Iceland submitted to in 1262, when the Icelandic Commonwealth's chieftains accepted the King of Norway's rule under the Old Covenant, ending Iceland's four centuries as an independent republic.",
+    sources: [
+      { title: "Coat of arms of Norway — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway" },
+    ],
+  },
   "is-president": {
     description: "The swallow-tailed state flag bears a square panel with Iceland's coat of arms: a shield showing the flag's own cross, held up by the four landvættir (guardian spirits) of Icelandic saga tradition — a dragon for the east, an eagle for the north, a bull for the west and a rock-giant for the south — standing on a plinth of columnar basalt, the volcanic rock characteristic of Iceland's landscape.",
     sources: [
@@ -9125,6 +9137,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The bird of paradise and the stars are taken from Papua New Guinea's national flag: the bird is a symbol of the country's tribal culture, shown in a soaring pose representing the nation's emergence, and the stars form the Southern Cross, marking the country's place in the southern hemisphere.",
     sources: [
       { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+    ],
+  },
+  "ph-1985": {
+    description: "By Executive Order No. 1010, signed 25 February 1985, President Ferdinand Marcos ordered the Philippine flag's blue changed from a dark navy to a lighter shade, arguing this restored the paler blue said to have been used in the original 1898 flag sewn by Marcela Agoncillo. The change was controversial — Agoncillo's own daughter and several legislators publicly opposed it as historically dubious — and Marcos's fall in the 1986 People Power Revolution saw the darker navy blue restored within the year, before a 1996 study fixed the flag's official 'royal blue' shade, later written into law in 1998.",
+    sources: [
+      { title: "1985: A Year of Three Shades of Blue — National Historical Commission of the Philippines", url: "https://nhcp.gov.ph/articles/1985-a-year-of-three-shades-of-blue/" },
     ],
   },
   "ph-1936": {
