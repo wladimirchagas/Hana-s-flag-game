@@ -14809,6 +14809,29 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "NG-OS": {
+    description:
+      "Osun State's coat of arms sets a lion on a bed of ferns for Yoruba nobility, dignity and courage, " +
+      "above a Y-shaped device for the Niger and Benue rivers linking Osun to the Nigerian federation. A " +
+      "chief's sword (Ida) stands for the authority of the Obas and a mace for the legislature and the power " +
+      "of the people, while the Ori Olokun bust represents the shared origin of the Yoruba and their skill in " +
+      "the arts, ringed by a garland for chivalry and triumph. Indigo in the shield's upper half recalls the " +
+      "Adire cloth traditional to Yorubaland, and ruby red in the lower half signifies nobility.",
+    sources: [
+      { title: "Osun Fact File: The Coat of Arms — Osun State Official Website", url: "https://www.osunstate.gov.ng/2017/01/osun-fact-file-coat-arms/" },
+    ],
+  },
+  "NG-LA": {
+    description:
+      "Lagos State's coat of arms, designed in 1967, shows the white cap “Keremesi” worn by chiefs of the " +
+      "Oba of Lagos's cabinet, a symbol of traditional authority, resting beneath Akoko leaves — used at the " +
+      "installation of Obas and chiefs across Yoruba land to signify longevity. Coconut trees and green " +
+      "grass stand for the state's agricultural history and its coconut produce, while a wheel on a red " +
+      "field represents Lagos's status as Nigeria's industrial hub and its power generation.",
+    sources: [
+      { title: "Lagos State Coat Of Arms: Meaning Of The Logo — Nigerian Search Guide", url: "https://nigeriansearchguide.com/lagos-state-coat-of-arms-meaning-of-the-logo/" },
+    ],
+  },
   "PH-NER": {
     description:
       "Negros Oriental's seal shows the Cuernos de Negros mountain range, the Provincial Capitol standing " +
