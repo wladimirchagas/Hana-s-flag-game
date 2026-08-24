@@ -15198,6 +15198,38 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       },
     ],
   },
+  "RO-BH": {
+    description:
+      "Bihor County's coat of arms, adopted in 1998 and corrected in 2013, quarters a castle for the " +
+      "medieval Castle of Bihor with five wheat stalks and a bunch of grapes for the county's agriculture, " +
+      "over a band bearing three fish for its rivers and fisheries. A scroll bears the opening words of " +
+      "Romania's national anthem, “Deșteaptă-te, române!” — corrected in the 2013 redesign after a local " +
+      "teacher discovered the earlier version had mistakenly rendered the text in the Greek alphabet rather " +
+      "than Latin or Cyrillic.",
+    sources: [
+      { title: "Bihor County — Wikipedia", url: "https://en.wikipedia.org/wiki/Bihor_County" },
+    ],
+  },
+  "RO-MM": {
+    description:
+      "Mureș County's coat of arms bears a scale, the heraldic sign of social justice, standing for the " +
+      "balance and temperance of the county's people and the role of trade in social progress, above silver " +
+      "bands representing the county's rich river network and, in particular, the Mureș River from which it " +
+      "takes its name.",
+    sources: [
+      { title: "The Coat of Arms of Romania — Mureș County Council", url: "https://en.cjmures.ro/county/symbols/the-coat-of-arms-of-romania/" },
+    ],
+  },
+  "RO-CT": {
+    description:
+      "Constanța County's coat of arms is drawn from a statuary group unearthed in the city in 1962, " +
+      "depicting the Roman goddess Fortuna beside the sea-god Pontus — an image that has become emblematic " +
+      "of the county's continuity from the ancient Greek colony of Tomis (Constanța's predecessor) to the " +
+      "present day.",
+    sources: [
+      { title: "Constanța — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/Constan%C8%9Ba" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
