@@ -3592,6 +3592,54 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Empire of Brazil, 1822-1889 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/br_emp.html" },
     ],
   },
+  "br-1822-kingdom": {
+    description: "In the months between Prince Pedro's 7 September 1822 declaration of Brazilian independence and his coronation as Emperor Pedro I that December, Brazil briefly flew his personal standard as Prince Regent — bearing a royal rather than imperial crown, since the imperial title and its own crown did not yet exist — before the country's first flag as an independent empire replaced it.",
+    sources: [
+      { title: "Pedro I of Brazil — Wikipedia", url: "https://en.wikipedia.org/wiki/Pedro_I_of_Brazil" },
+    ],
+  },
+  "br-ukpba": {
+    description: "When Portugal's exiled royal court, having fled Napoleon's 1807 invasion, decreed Brazil elevated from colony to kingdom on 16 December 1815 — forming the United Kingdom of Portugal, Brazil and the Algarves — the union's flag placed the armillary sphere, Brazil's own emblem, directly behind the Portuguese shield, visually asserting Brazil's new equal status within the union rather than its old subordinate one.",
+    sources: [
+      { title: "United Kingdom of Portugal, Brazil and the Algarve — Wikipedia", url: "https://en.wikipedia.org/wiki/United_Kingdom_of_Portugal,_Brazil_and_the_Algarve" },
+    ],
+  },
+  "br-pedro-ii": {
+    description: "Flown over Brazil under King Pedro II, who ruled Portugal first as regent for his mentally unwell brother Afonso VI and then in his own right from 1683, a reign that saw Brazil's gold rush begin in earnest in the 1690s in Minas Gerais — discoveries that would make 18th-century Brazil the colony's most lucrative period for the Portuguese crown.",
+    sources: [
+      { title: "Pedro II of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Pedro_II_of_Portugal" },
+    ],
+  },
+  "br-princes": {
+    description: "From 1645, Portuguese Brazil's flag carried the armillary sphere — an astronomical instrument for plotting the stars, adopted as a personal emblem by King Manuel I to celebrate Portugal's navigational mastery during the Age of Discovery. By the late 17th century it had become the recognised, if unofficial, ensign for ships on the Brazil trade route, and it endured on Brazilian flags for over 170 years — through the colony's 1815 elevation to a kingdom — until independence in 1822, when Brazil chose its own new emblem.",
+    sources: [
+      { title: "Flag of Brazil — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Brazil" },
+    ],
+  },
+  "br-john-iv": {
+    description: "Flown over Brazil during the Portuguese Restoration War (1640–1668), in which the House of Braganza under John IV fought to end the Iberian Union and restore Portuguese independence from Spanish Habsburg rule — a war whose early decades overlapped with the Dutch invasion of northeastern Brazil, which Portuguese and Brazilian-born forces expelled by 1654.",
+    sources: [
+      { title: "Portuguese Restoration War — Wikipedia", url: "https://en.wikipedia.org/wiki/Portuguese_Restoration_War" },
+    ],
+  },
+  "br-1616": {
+    description: "From 1580 to 1640, Portugal and its colony of Brazil were ruled by the same Habsburg kings as Spain, in the personal union historians call the Iberian Union — the two crowns and their colonial empires kept formally separate even as they shared a monarch. This Brazilian variant set the royal Portuguese arms above a green base, continuing to fly over Portuguese America through six decades of Spanish Habsburg rule.",
+    sources: [
+      { title: "Iberian Union — Wikipedia", url: "https://en.wikipedia.org/wiki/Iberian_Union" },
+    ],
+  },
+  "br-1521": {
+    description: "The plain royal Portuguese arms on white flew over Portuguese Brazil through the reign of John III, who in 1534 divided the new colony into fifteen hereditary captaincies to encourage settlement and, in 1549, established a royal governor-general at Salvador — the first steps that turned Cabral's landfall into an organised colony.",
+    sources: [
+      { title: "List of Portuguese flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Portuguese_flags" },
+    ],
+  },
+  "br-1500": {
+    description: "The flag flown by Pedro Álvares Cabral's fleet when it reached the coast of what became Brazil on 22 April 1500: a white field bearing the royal Portuguese shield beside the red cross of the Order of Christ, the successor to the Knights Templar in Portugal, which had bankrolled and blessed the maritime expeditions of Henry the Navigator's era and continued to mark Portuguese ships and conquests into the Age of Discovery.",
+    sources: [
+      { title: "Flag of Brazil — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Brazil" },
+    ],
+  },
   "br-army": {
     description: "The Army's coat of arms is parted red and sky blue, bearing a gold griffin holding a silver eight-pointed star — the griffin, a mythical guardian creature part-eagle, part-lion, standing for vigilance and strength — beneath a knight's helmet, with a cockade bearing the Southern Cross constellation (Cruzeiro do Sul), the same star pattern at the centre of the national flag.",
     sources: [
