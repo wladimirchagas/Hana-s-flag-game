@@ -14895,6 +14895,90 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal and flag of Nueva Vizcaya — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_and_flag_of_Nueva_Vizcaya" },
     ],
   },
+  "PH-AUR": {
+    description:
+      "Aurora's seal writes the province's name in forest green, since 70% of Aurora is covered by forest, " +
+      "beneath a sun of eight rays for continuous growth across the province's eight municipalities, each " +
+      "represented by its own colour band. The Dimadimalangat Reef marks the capital, Baler; a fishing boat " +
+      "and the sea reflect the province's Pacific coastline; and coconut fronds and rice sheaves stand for " +
+      "its main agricultural products.",
+    sources: [
+      { title: "Provincial Seal of Aurora, Philippines", url: "https://www.aurora.ph/seal.html" },
+    ],
+  },
+  "PH-MAD": {
+    description:
+      "Marinduque's seal is heart-shaped, for the island's role as the geographical heart of the " +
+      "Philippines, with a six-pointed star for the province's municipalities.",
+    sources: [
+      { title: "Marinduque — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Marinduque" },
+    ],
+  },
+  "PH-MDC": {
+    description:
+      "Occidental Mindoro's seal centres a tamaraw head, urging protection of the endangered wild buffalo " +
+      "found only on Mindoro island, above rice fields and two mountains for mainland Mindoro and the Lubang " +
+      "island group. A green field stands for the province's forests, and the shield's gold recalls the " +
+      "province's name — from the Spanish “Mina de Oro”, mine of gold.",
+    sources: [
+      { title: "Seal of Occidental Mindoro — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Occidental_Mindoro" },
+    ],
+  },
+  "PH-MDR": {
+    description:
+      "Oriental Mindoro's seal, like its western counterpart, centres a tamaraw — the endangered wild " +
+      "buffalo found only on Mindoro island — as the province's signature symbol.",
+    sources: [
+      { title: "Oriental Mindoro Province — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Oriental_Mindoro_Province" },
+    ],
+  },
+  "PH-QUI": {
+    description:
+      "Quirino's seal shows the Sierra Madre range to the east and the Caraballo and Mamparang ranges to the " +
+      "south, trees for the province's place in the upper Cagayan River watershed, bundled rice, tobacco and " +
+      "corn for its three main crops, and water below for the Cagayan River and its tributaries flowing " +
+      "toward Aparri.",
+    sources: [
+      { title: "Provincial Seal and the Physical Profile of the Province — I Love Quirino", url: "http://ilovequirinoprov.blogspot.com/2013/07/provincial-seal-and-physical-profile-of.html" },
+    ],
+  },
+  "PH-ROM": {
+    description:
+      "Romblon's seal shows a blue circular border for the seas that surround the archipelago, enclosing a " +
+      "white outline map of the province's three principal islands — Romblon, Tablas and Sibuyan. The white " +
+      "colouring stands for Romblon's renowned marble quarries, which have earned it the title Marble " +
+      "Capital of the Philippines.",
+    sources: [
+      { title: "Romblon Province — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Romblon_Province" },
+    ],
+  },
+  "PH-ISA": {
+    description:
+      "Isabela's seal — named for Queen Isabella II of Spain, in whose reign the province was created — sets " +
+      "rice and corn at its centre for its status as the country's rice granary and a leading corn producer, " +
+      "alongside a device for engineering standing for the province's fast-growing industrialisation.",
+    sources: [
+      { title: "Isabela PPO Seal — Isabela Police Provincial Office", url: "https://isabelappo.pro2.pnp.gov.ph/2022/05/17/isabela-ppo-seal/" },
+    ],
+  },
+  "PH-NEC": {
+    description:
+      "Negros Occidental's seal, first approved in 1950, shows the active Kanlaon Volcano and the sugarcane " +
+      "fields that have made the province the country's leading sugar producer at the top, the Provincial " +
+      "Capitol at the centre, and the province's fishing industry at the base.",
+    sources: [
+      { title: "The seal / coat of arms of Negros Occidental — Philippines Heraldry", url: "https://x.com/duasmoon_/status/1701468179606983153" },
+    ],
+  },
+  "PH-DAO": {
+    description:
+      "Davao Oriental's official seal takes the citadel shape of Spanish-era heraldry, its red, white and " +
+      "blue standing for the sovereignty of the Republic and azure blue for the Philippine sky and the " +
+      "province's aspiration to liberty and freedom.",
+    sources: [
+      { title: "File:Official Seal of Davao Oriental.svg — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Official_Seal_of_Davao_Oriental.svg" },
+    ],
+  },
   "PH-ABR": {
     description:
       "Abra's seal shows a prancing stallion over a mountain gorge with a meandering river and terraced " +
