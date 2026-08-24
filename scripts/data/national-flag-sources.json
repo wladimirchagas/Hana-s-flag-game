@@ -35255,7 +35255,16 @@
           "design": "The short-lived redesign that dropped the Union Jack; unpopular as a step toward a republic, it was reverted to the 1978 flag in 1997.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Tuvalu",
           "sha256": "696015dcbbd709a52310ba75148abc6a9a68a6ec819aa62ca3a8abe4f8b90c2c",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Pro-republican Prime Minister Kamuta Latasi introduced this flag in 1996, dropping the Union Jack and the coat of arms in favour of nine stars alone, as a step toward severing ties with the British monarchy. The change proved deeply unpopular — many Tuvaluans saw it as disrespectful to Queen Elizabeth II — and after Latasi lost a no-confidence vote in 1997, the original 1978 independence flag, Union Jack and all, was restored.",
+            "sources": [
+              {
+                "title": "Flag of Tuvalu — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Tuvalu"
+              }
+            ]
+          }
         },
         {
           "id": "tv-geic",
@@ -35269,7 +35278,16 @@
           "design": "The British Blue Ensign of the Gilbert and Ellice Islands Colony, which included Tuvalu (the Ellice Islands) until it separated in 1975.",
           "source": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands",
           "sha256": "a3c9e6a9dbe6fe4e6128ffc2f0bc224f55a8c84458d315948f166fbd37619edb",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "The colonial badge at the centre of the Blue Ensign — designed in 1931 by the colonial administrator Sir Arthur Grimble and granted in 1937 — shows a golden frigatebird flying above a rising sun over the ocean. The frigatebird was chosen for its significance to the islands' own people, for whom the bird traditionally signified sovereignty, high birth and mastery of the sea.",
+            "sources": [
+              {
+                "title": "Flag of Kiribati — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Kiribati"
+              }
+            ]
+          }
         },
         {
           "id": "tv-arms",
@@ -35379,7 +35397,16 @@
           "design": "The yellow dragon banner of Qing China, which governed Taiwan until it was ceded to Japan in 1895.",
           "source": "https://en.wikipedia.org/wiki/Taiwan_under_Qing_rule",
           "sha256": "d543652386810308fe568ced9de449dffe673a5cf8cb74553a76626c67648f76",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Standardised in 1889 as Qing China's first official national flag, the Yellow Dragon Flag used yellow — reserved exclusively for the Manchu emperors — as its field, with a five-clawed dragon (a form reserved for the Emperor alone) coiling toward a flaming pearl, standing for imperial power and sovereignty. It flew over Taiwan as part of the Qing Empire until the 1895 Treaty of Shimonoseki ceded the island to Japan following the First Sino-Japanese War.",
+            "sources": [
+              {
+                "title": "Flag of the Qing dynasty — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Qing_dynasty"
+              }
+            ]
+          }
         },
         {
           "id": "tw-emblem",
@@ -37504,7 +37531,16 @@
           "design": "The flag of the emirate that ruled from Bukhara before the Russian protectorate.",
           "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
           "sha256": "8e221b947b6b059ad2cb29ff7ba3fa18b76268a8a93b1726a3df2b4f10ef7c53",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "This was the personal royal standard of Emir Mohammed Alim Khan (r. 1910–1920), not a national flag in the modern sense — it is not established that Bukhara had one. On a light-green field bordered in orange, it combined a gold crescent and star, the Hand of Fatima as a sign of protection, and the words of the Islamic declaration of faith alongside the phrase \"the sultan is the shadow of God,\" asserting the Emir's religious as well as temporal authority over the emirate.",
+            "sources": [
+              {
+                "title": "Flag of the Emirate of Bukhara — Wikimedia Commons",
+                "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Emirate_of_Bukhara.svg"
+              }
+            ]
+          }
         },
         {
           "id": "uz-khiva",
@@ -37518,7 +37554,16 @@
           "design": "The flag of the Qungrat dynasty's khanate, ended by the Soviet advance in 1920.",
           "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
           "sha256": "2e78a8525c0806e2f8cee0b45726d18afc3944e06e6fdec6df755626d20c8802",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Flown during the Khivan civil war that followed the 1917 Russian Revolution, the flag combined broad green stripes framing a black field with a yellow crescent and star at the centre — the crescent and star a traditional mark of the khanate's Islamic identity. The khanate's last ruler, Khan Sayid Abdullah, abdicated in February 1920 as Bolshevik-backed forces prevailed, and the Khorezm People's Soviet Republic was proclaimed weeks later.",
+            "sources": [
+              {
+                "title": "Khanate of Khiva — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva"
+              }
+            ]
+          }
         },
         {
           "id": "uz-timur",
@@ -37532,7 +37577,16 @@
           "design": "The banner attributed to Tamerlane, whose empire was ruled from Samarkand.",
           "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
           "sha256": "76eef232dc90da6549280bfb8c539bd5d487ca6295a76460378f044d46155fe8",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Three equal rings arranged in a triangle formed the personal emblem of Timur (Tamerlane), attested on his seal and coinage by contemporaries including the Castilian ambassador Ruy González de Clavijo and the Arab historian Ibn Arabshah. The sign illustrated Timur's own title \"Sahib-Qiran,\" an astrological epithet meaning \"Lord of the Fortunate Conjunction\" (of the benevolent planets Jupiter and Venus), and was read as a mark of the empire's claimed sovereignty over the known world.",
+            "sources": [
+              {
+                "title": "Timurid Empire — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Timurid_Empire"
+              }
+            ]
+          }
         },
         {
           "id": "uz-turkestan",
@@ -37546,7 +37600,16 @@
           "design": "The flag of the short-lived Muslim autonomous government at Kokand, crushed in 1918.",
           "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
           "sha256": "3b62c38f06eb9dd587c158bb3b877241b9f77f69f43328a8b23eae7e09070cd0",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Hoisted in December 1917 when the short-lived Turkestan (Kokand) Autonomy declared self-rule under Mustafa Chokai-Beg, the flag was deliberately modelled on the Ottoman Turkish flag — red over dark blue with a white star and crescent — asserting the Turkic and Islamic identity the autonomy's leaders wanted the new state to represent, before Bolshevik forces crushed it in February 1918.",
+            "sources": [
+              {
+                "title": "Turkestan Autonomy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Turkestan_Autonomy"
+              }
+            ]
+          }
         },
         {
           "id": "uz-president",
@@ -38448,7 +38511,16 @@
           "design": "A yellow field with a single red stripe, the cờ Long tinh or \"dragon star flag\" — the flag of emperors Khải Định and Bảo Đại, under the French protectorate.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
           "sha256": "25780dfb0de85079ef7b4536a845a05ca70bd7379c4fc9c45ac45f6937f78fd2",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Designed under Emperor Khải Định and flown ceremonially from 1924, the cờ Long tinh (\"dragon star flag\") became Đại Nam's formal national flag around 1941 and remained in use under Bảo Đại until 1945. As explained in a period speech recorded at a Hải Phòng school, the flag's red stood for the happiness of the people, while the surrounding yellow — the colour traditionally reserved for the Emperor — symbolised his dignity and authority.",
+            "sources": [
+              {
+                "title": "Long tinh flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Long_tinh_flag"
+              }
+            ]
+          }
         },
         {
           "id": "vn-nguyen-1890",
