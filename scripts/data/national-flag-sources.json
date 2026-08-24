@@ -38174,7 +38174,16 @@
           "design": "A plain yellow field — the diplomatic flag of the Empire of Đại Nam, before the French protectorate.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
           "sha256": "47b886dcc13d3a61563f38ca360bc0a4949c36a88f4923e4ceac8b61dafbe2dd",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Originally the personal imperial standard of Emperor Gia Long, founder of the Nguyễn dynasty, this plain yellow flag was adopted around 1863 as a diplomatic national flag for the Empire of Đại Nam once contact with European powers introduced the very notion of a national flag to the Vietnamese court — yellow being the colour long reserved for the Vietnamese emperor alone. It flew until the 1880s, when growing French control over Vietnam ended Đại Nam's independent conduct of foreign affairs.",
+            "sources": [
+              {
+                "title": "Long tinh flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Long_tinh_flag"
+              }
+            ]
+          }
         },
         {
           "id": "vn-pavn",

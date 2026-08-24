@@ -11772,6 +11772,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Discover the Vietnamese flag: history, meaning, and symbols — Parfum d'Automne", url: "https://parfumdautomne.fr/en/discover-the-vietnamese-flag-history-meaning-and-symbols/" },
     ],
   },
+  "vn-dai-nam": {
+    description: "Originally the personal imperial standard of Emperor Gia Long, founder of the Nguyễn dynasty, this plain yellow flag was adopted around 1863 as a diplomatic national flag for the Empire of Đại Nam once contact with European powers introduced the very notion of a national flag to the Vietnamese court — yellow being the colour long reserved for the Vietnamese emperor alone. It flew until the 1880s, when growing French control over Vietnam ended Đại Nam's independent conduct of foreign affairs.",
+    sources: [
+      { title: "Long tinh flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Long_tinh_flag" },
+    ],
+  },
   "vn-pavn": {
     description: "The motto \"Quyết thắng\" (\"Determined to win\"), added to the national flag's canton, is a longstanding rallying phrase of Vietnamese military tradition, carried on the People's Army of Vietnam's own flag since its wars for independence and reunification.",
     sources: [
