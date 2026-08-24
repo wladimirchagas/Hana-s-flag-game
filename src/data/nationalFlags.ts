@@ -525,7 +525,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cn-pla-ground", category: "military", name: "Ensign of the PLA Ground Force", from: 1992, to: 9999, path: "national-flags/cn/china-pla-ground.svg", design: "The PLA flag with a green stripe along the bottom.", source: "https://en.wikipedia.org/wiki/List_of_Chinese_flags" },
     { id: "cn-pla-navy", category: "military", name: "Ensign of the PLA Navy", from: 1992, to: 9999, path: "national-flags/cn/china-pla-navy.svg", design: "The PLA flag with blue and white stripes along the bottom.", source: "https://en.wikipedia.org/wiki/List_of_Chinese_flags" },
     { id: "cn-pla-air", category: "military", name: "Ensign of the PLA Air Force", path: "national-flags/cn/china-pla-air.svg", design: "The PLA flag with a sky-blue stripe along the bottom.", source: "https://en.wikipedia.org/wiki/List_of_Chinese_flags" },
-    { id: "cn-pla-rocket", category: "military", name: "Ensign of the PLA Rocket Force", from: 2016, to: 9999, path: "national-flags/cn/china-pla-rocket.svg", design: "The PLA flag with a gold-and-blue stripe along the bottom.", source: "https://en.wikipedia.org/wiki/List_of_Chinese_flags" },
+    { id: "cn-pla-rocket", category: "military", name: "Ensign of the PLA Rocket Force", from: 2016, to: 9999, path: "national-flags/cn/china-pla-rocket.svg", design: "The PLA flag (red field, gold star, gold characters) with a plain gold stripe along the bottom.", source: "https://en.wikipedia.org/wiki/List_of_Chinese_flags" },
     { id: "cn-arms", category: "coatofarms", name: "National Emblem of China", path: "national-flags/cn/china-emblem.svg", design: "Tiananmen Gate beneath five gold stars, in a red circle framed by ears of grain and a cogwheel.", source: "https://en.wikipedia.org/wiki/National_emblem_of_China" },
     { id: "cn-passport", category: "passport", name: "Chinese passport", path: "national-flags/cn/china-passport.svg", design: "A dark red cover with the national emblem in gold, reading 中华人民共和国护照.", source: "https://en.wikipedia.org/wiki/Chinese_passport" },
     { id: "cn-passport-seafarer", category: "passport", name: "Chinese seafarer's passport", path: "national-flags/cn/china-passport-seafarer.svg", design: "A cover for merchant seafarers, issued alongside the ordinary passport.", source: "https://en.wikipedia.org/wiki/Chinese_passport" },
@@ -4335,6 +4335,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "cn-pla-air": {
     description: "The sky-blue stripe represents the vast sky, expressing that the Air Force is the branch of the People's Liberation Army that defends the nation's airspace.",
+    sources: [
+      { title: "Flag of the People's Liberation Army — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_People%27s_Liberation_Army" },
+    ],
+  },
+  "cn-pla-rocket": {
+    description: "Every People's Liberation Army service ensign keeps the PLA's own red field, gold star and gold characters in the upper portion and adds a coloured stripe along the bottom identifying the branch: forest green for the Army (the earth), navy blue-and-white for the Navy (the seas), sky blue for the Air Force (the sky) — and, for the Rocket Force, plain gold, representing the bright flash of a missile launch.",
     sources: [
       { title: "Flag of the People's Liberation Army — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_People%27s_Liberation_Army" },
     ],
