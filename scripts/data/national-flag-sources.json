@@ -14516,7 +14516,16 @@
           "design": "The army's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
           "sha256": "dca04a615fe3a0de87691e97283f1a0343641f29b4c6d2acec01f2e1c7ff3cdf",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Croatian Army's flag descends from 1991, the year the Croatian War of Independence began, combining elements of the flag of the Croatian Defence Council and the emblem of the Croatian National Guard — the paramilitary force raised that same year, before Croatia had a fully constituted regular army, to defend the country's newly declared independence from Yugoslavia.",
+            "sources": [
+              {
+                "title": "File:Flag of Croatian Army.svg — Wikimedia Commons",
+                "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Croatian_Army.svg"
+              }
+            ]
+          }
         },
         {
           "id": "hr-air-force",
@@ -37126,7 +37135,16 @@
           "design": "The army's flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags",
           "sha256": "40f8bdb62f862815b0bf214e5da55524ce5fa4d9f0a96b36029cd993a2205231",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The flag of Uruguay's army is the Artigas flag — blue-white-blue horizontal bands crossed by a red diagonal stripe — designed in 1815 by José Gervasio Artigas, the country's founding national hero, adapting the pale-blue-and-white flag Manuel Belgrano had created for Argentina in 1812 by adding the red diagonal to stand for federalism. Originally the banner of the Federal League Artigas led, it is one of Uruguay's three official flags today and has traditionally served as the flag and emblem of the country's armed forces, its cockade still worn on military uniforms.",
+            "sources": [
+              {
+                "title": "Artigas flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Artigas_flag"
+              }
+            ]
+          }
         },
         {
           "id": "uy-air-force",
