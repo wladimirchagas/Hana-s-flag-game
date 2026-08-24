@@ -14808,6 +14808,145 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "North West — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-nw.html" },
     ],
   },
+
+  "PH-PAN": {
+    description:
+      "Pangasinan's name means “place of salt-making”, and its seal reflects that directly: the lower third " +
+      "shows salt being cooked over a fire, the source of the province's historic livelihood. The upper third " +
+      "shows the Provincial Capitol and two sailboats, and the centre shows milkfish over waves beside a " +
+      "triangle of bricks — the province's fishing industry and its salt trade side by side.",
+    sources: [
+      {
+        title: "An Ordinance Adopting the Official Seal and the Official Flag of the Province of Pangasinan",
+        url: "https://www.pangasinan.gov.ph/issuances/an-ordinance-adopting-the-official-seal-and-the-official-flag-of-the-province-of-pangasinan/",
+      },
+    ],
+  },
+  "PH-BAN": {
+    description:
+      "Bataan's seal centres a flaming sword symbolising the bravery of the soldiers and guerrilla fighters " +
+      "who defended the province during the Second World War. Its red and blue panels recall the battles " +
+      "fought on Bataan's soil and the peace that followed, and three gold stars stand for the three " +
+      "geographic regions of the province whose sons joined the resistance.",
+    sources: [
+      { title: "Seal of the week: Bataan — Behold Bataan", url: "https://beholdbataan.ph/seal-of-the-week-bataan/" },
+    ],
+  },
+  "PH-CAV": {
+    description:
+      "Cavite's seal — an escudo (shield) standing for bravery and fortitude, in red, white, blue and a gold " +
+      "sun with rays — marks the province's role as one of the first to rise in arms against Spanish rule in " +
+      "the 1896 revolution. A white triangle bearing the letters KKK, for the Katipunan revolutionary " +
+      "society, is set over the red portion of the shield.",
+    sources: [
+      {
+        title: "Province of Cavite Official Seal",
+        url: "http://chonzskypedia.blogspot.com/2012/09/province-of-cavite-official-seal.html",
+      },
+    ],
+  },
+  "PH-QUE": {
+    description:
+      "Quezon Province's seal bears a stylised bust of President Manuel L. Quezon, after whom it is named, " +
+      "flanked by two lion-headed dolphins — a device long used in Philippine heraldry. Below, a coconut palm " +
+      "represents the province's main industry, Mount Banahaw rises against the sky, and a rainbow above the " +
+      "palm stands for hope and aspiration for a better future.",
+    sources: [
+      { title: "Quezon Province — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Quezon_Province" },
+    ],
+  },
+  "PH-LAG": {
+    description:
+      "Laguna's flag is a plain yellow field bearing the heater-shaped shield from the provincial seal, with " +
+      "four green-outlined stars beside it — one for each of the province's four congressional districts. " +
+      "The shield itself stands for service and justice, blue for peace and equality, and gold for integrity.",
+    sources: [
+      { title: "Laguna Province — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Laguna_Province" },
+    ],
+  },
+  "PH-ALB": {
+    description:
+      "Albay's seal shows a rufous hornbill inside a triangle beside the active Mayon Volcano, with " +
+      "lightning bolts to the volcano's side — the hornbill a bird native to the province, the volcano its " +
+      "most famous landmark, and the lightning a reference to the typhoons the province regularly weathers " +
+      "because of its location.",
+    sources: [
+      { title: "Albay Province — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Albay_Province" },
+    ],
+  },
+  "PH-BOH": {
+    description:
+      "Bohol's flag divides blue and red diagonally with white between them — blue for nobility, white for " +
+      "purity, red for courage. Its seal depicts the Sandugo, the 1565 blood compact between the Spanish " +
+      "conquistador Miguel López de Legazpi and the Boholano chieftain Datu Sikatuna, read as a symbol of " +
+      "the Boholano love of peace; the Chocolate Hills stand for the province's natural beauty, the green " +
+      "background for its agriculture, and a single star for Carlos P. Garcia, the only Philippine president " +
+      "the province has produced.",
+    sources: [
+      { title: "List of Bohol provincial symbols — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Bohol_provincial_symbols" },
+    ],
+  },
+  "PH-NUV": {
+    description:
+      "Nueva Vizcaya's seal shows two bundles of rice (palay) over a green field, representing the " +
+      "province's abundant rice harvests, beneath three mountains standing for the Cordillera, Caraballo and " +
+      "Sierra Madre ranges that surround the province.",
+    sources: [
+      { title: "Seal and flag of Nueva Vizcaya — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_and_flag_of_Nueva_Vizcaya" },
+    ],
+  },
+  "PH-AGN": {
+    description:
+      "Agusan del Norte's seal recalls the old province of Agusan, once known as “Manobo Country”: a " +
+      "Manobo brass shield, two crosses and Manobo garment colours (red, green, yellow, black) mark the " +
+      "province's indigenous origins. Above them, a factory represents the wallboard, lumber and forest " +
+      "products industries, and a symbol of mining stands for operations along the Diwata mountain range; " +
+      "the waling-waling orchid, jackfruit, magcono tree and hornbill are the province's official flower, " +
+      "fruit, tree and bird.",
+    sources: [
+      { title: "ADNPPO Seal and Symbolism — Agusan del Norte Police Provincial Office", url: "https://adnppo.pro13.pnp.gov.ph/adnppo-seal-and-symbolism/" },
+    ],
+  },
+  "PH-AGS": {
+    description:
+      "Agusan del Sur's seal depicts trees standing for the province's natural wealth as a timber corridor, " +
+      "beside a wheel and a factory representing the Agusanon people's resilience in adopting new ways of " +
+      "producing goods and services.",
+    sources: [
+      { title: "Provincial Seal of Agusan del Sur — Provincial Government of Agusan del Sur", url: "https://agusandelsur.gov.ph/the-province-of-agusan-del-sur-1__trashed/provincial-seal/" },
+    ],
+  },
+  "PH-SCO": {
+    description:
+      "South Cotabato's seal places a plow and draft animals at its base, standing for the agriculture and " +
+      "stock-raising that anchor the province's economy.",
+    sources: [
+      { title: "South Cotabato Province — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/South_Cotabato_Province" },
+    ],
+  },
+  "PH-SUK": {
+    description:
+      "Sultan Kudarat's seal centres a light-green emblem combining the pre-Hispanic Baybayin syllables “su” " +
+      "and “ku” — for the province's name — flanked by a gold panicle of rice at the hoist side and an " +
+      "emerald frond of African oil palm at the fly, standing for the province's agricultural economy, which " +
+      "ranges from peanuts and potatoes to coconuts, oil palms and orchids.",
+    sources: [
+      { title: "Sultan Kudarat Province — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Sultan_Kudarat_Province" },
+    ],
+  },
+  "PH-PAM": {
+    description:
+      "Pampanga's own flag colours — kundiman (red), aluntian (green) and dilo (yellow) — are one of the " +
+      "eight rays of the sun on the Philippine national flag, honouring Pampanga as one of the eight " +
+      "provinces that rose first against Spanish rule in 1896. Red stands for Pangulu, upper Pampanga; green " +
+      "for Paroba, lower Pampanga; and yellow for Mount Arayat, the extinct volcano at the province's centre.",
+    sources: [
+      {
+        title: "23 Official Seals of Pampanga Province, its Towns and Cities — The Kapampangan Listorian",
+        url: "http://kaplistorian.blogspot.com/2016/11/25-23-official-seals-of-pampanga.html",
+      },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
