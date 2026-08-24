@@ -5640,6 +5640,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
     ],
   },
+  "gh-portugal": {
+    description: "The Portuguese royal arms flew over São Jorge da Mina — now Elmina Castle, the oldest European building south of the Sahara — from its construction in 1482 under King John II, built to protect Portugal's monopoly on the Gold Coast's gold trade after negotiating access with the local ruler Kwamena Ansah. The fort later became a major hub of the transatlantic slave trade under both Portuguese and, from 1637, Dutch control, before passing to Britain in 1872.",
+    sources: [
+      { title: "Elmina Castle — Wikipedia", url: "https://en.wikipedia.org/wiki/Elmina_Castle" },
+    ],
+  },
   "gh-air-force": {
     description: "The Air Force Ensign of Ghana carries the national flag in the canton and the air force's green-yellow-red roundel in the fly, adopted when the force was formed in 1959. The roundel repeats the colours of the national flag — green for the nation's forests and farmland, yellow for its mineral wealth, and red for the blood shed in the struggle for independence — marking Ghanaian military aircraft with the same colours flown on the ground.",
     sources: [
@@ -8385,6 +8391,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Malaya (1896–1950) facts for kids", url: "https://kids.kiddle.co/Flag_of_Malaya_(1896%E2%80%931950)" },
     ],
   },
+  "my-dutch-malacca": {
+    description: "The Dutch Republic's Prinsenvlag flew over Malacca from January 1641, when the Dutch East India Company, allied with the Sultanate of Johor, besieged and captured the port from Portugal after a five-month siege that ended a century and a half of Portuguese rule — part of the wider Dutch campaign to break Portugal's hold on the Asian spice trade. Dutch rule lasted until the British occupied Malacca in 1795 during the Napoleonic Wars.",
+    sources: [
+      { title: "Dutch Malacca — Wikipedia", url: "https://en.wikipedia.org/wiki/Dutch_Malacca" },
+    ],
+  },
+  "my-portuguese-malacca": {
+    description: "The Portuguese royal arms flew over Malacca from August 1511, when the Portuguese governor of India, Afonso de Albuquerque, captured the strategically vital port — commanding the strait through which nearly all seaborne trade between China and India passed — after a failed first assault that July. Albuquerque immediately built the A Famosa fortress to hold the city, a landmark whose surviving gateway later became Malacca's own colonial emblem under British rule.",
+    sources: [
+      { title: "Capture of Malacca (1511) — Wikipedia", url: "https://en.wikipedia.org/wiki/Capture_of_Malacca_(1511)" },
+    ],
+  },
   "my-army": {
     description: "The Malaysian Army's flag is a red field bearing the army's crest, which combines two traditional bladed weapons drawn from the country's two halves: the keris, the wavy-bladed dagger long associated with the historic Malay warriors of Peninsular Malaysia, and the duku ilang, a weapon tied to the warrior traditions of the indigenous peoples of Malaysian Borneo. Together the two blades represent the army's roots across both regions that make up modern Malaysia.",
     sources: [
@@ -8954,6 +8972,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A plain red banner — the customary colour of Omani and wider Gulf Arab flags for centuries, with roots reportedly reaching back over a millennium — flew alone as the flag of the Sultanate of Muscat and Oman until 1970, when Sultan Qaboos bin Said, having deposed his father, added white and green bands and the crest of the ruling Al Said dynasty to modernise the flag as part of his wider reform of the state.",
     sources: [
       { title: "Sultanate of Muscat and Oman until 1970 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/om_musca.html" },
+    ],
+  },
+  "om-portugal": {
+    description: "The Portuguese royal arms flew over Muscat through the Iberian Union era (1580–1640), when Portugal and Spain shared the same Habsburg king; Muscat's own fort was rebuilt in the 1580s under King Philip I of Portugal (Philip II of Spain) after Ottoman raids had twice sacked the town. Portuguese control of Muscat, first won in 1507 to secure Indian Ocean trade routes, ultimately ended in 1650 when Sultan bin Saif's Omani forces expelled the garrison after a prolonged siege.",
+    sources: [
+      { title: "Portuguese Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/Portuguese_Oman" },
     ],
   },
   "om-army": {

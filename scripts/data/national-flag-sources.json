@@ -12755,7 +12755,16 @@
           "design": "The white field with the Portuguese royal arms, flown from Elmina — the first European fort on the coast.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
           "sha256": "bbedf2d8ecde8d5e0a5feda2642ed4eb2d08e2f20aa4ef2ab0b969075ed2c40d",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Portuguese royal arms flew over São Jorge da Mina — now Elmina Castle, the oldest European building south of the Sahara — from its construction in 1482 under King John II, built to protect Portugal's monopoly on the Gold Coast's gold trade after negotiating access with the local ruler Kwamena Ansah. The fort later became a major hub of the transatlantic slave trade under both Portuguese and, from 1637, Dutch control, before passing to Britain in 1872.",
+            "sources": [
+              {
+                "title": "Elmina Castle — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Elmina_Castle"
+              }
+            ]
+          }
         },
         {
           "id": "gh-president",
@@ -24281,7 +24290,16 @@
           "design": "The orange-white-blue flag of the Dutch Republic, flown over Malacca after the Dutch took it from Portugal.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "f0f1b0de25ce97b0b31638835dff15419fbf7700ec2f34f2ca43bc163da51b35",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Dutch Republic's Prinsenvlag flew over Malacca from January 1641, when the Dutch East India Company, allied with the Sultanate of Johor, besieged and captured the port from Portugal after a five-month siege that ended a century and a half of Portuguese rule — part of the wider Dutch campaign to break Portugal's hold on the Asian spice trade. Dutch rule lasted until the British occupied Malacca in 1795 during the Napoleonic Wars.",
+            "sources": [
+              {
+                "title": "Dutch Malacca — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Dutch_Malacca"
+              }
+            ]
+          }
         },
         {
           "id": "my-portuguese-malacca",
@@ -24295,7 +24313,16 @@
           "design": "The royal Portuguese arms, flown over Malacca after its capture in 1511.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "bbedf2d8ecde8d5e0a5feda2642ed4eb2d08e2f20aa4ef2ab0b969075ed2c40d",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Portuguese royal arms flew over Malacca from August 1511, when the Portuguese governor of India, Afonso de Albuquerque, captured the strategically vital port — commanding the strait through which nearly all seaborne trade between China and India passed — after a failed first assault that July. Albuquerque immediately built the A Famosa fortress to hold the city, a landmark whose surviving gateway later became Malacca's own colonial emblem under British rule.",
+            "sources": [
+              {
+                "title": "Capture of Malacca (1511) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Capture_of_Malacca_(1511)"
+              }
+            ]
+          }
         },
         {
           "id": "my-arms",
@@ -26636,7 +26663,16 @@
           "design": "The Portuguese royal arms, flown over Muscat during the occupation of the Omani coast.",
           "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
           "sha256": "31f969be4e37ebf075f0dd2922358e63e8b3057769bd1d45fabe49e4cb4df949",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Portuguese royal arms flew over Muscat through the Iberian Union era (1580–1640), when Portugal and Spain shared the same Habsburg king; Muscat's own fort was rebuilt in the 1580s under King Philip I of Portugal (Philip II of Spain) after Ottoman raids had twice sacked the town. Portuguese control of Muscat, first won in 1507 to secure Indian Ocean trade routes, ultimately ended in 1650 when Sultan bin Saif's Omani forces expelled the garrison after a prolonged siege.",
+            "sources": [
+              {
+                "title": "Portuguese Oman — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Portuguese_Oman"
+              }
+            ]
+          }
         },
         {
           "id": "om-royal",
