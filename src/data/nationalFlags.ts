@@ -8492,6 +8492,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Malaysia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
     ],
   },
+  "my-north-borneo-crown": {
+    description: "The colonial badge at the centre of the Blue Ensign — adopted in 1882 after consultation with local chiefs — paired British and indigenous symbols: a shield of three silver stars over a red stripe, flanked by a sun bear and a rhinoceros, two animals native to Borneo. It was one of the few colonial badges also authorised for use on the Red Ensign, and remained the territory's badge through the postwar Crown Colony period until North Borneo joined Malaysia as Sabah in 1963.",
+    sources: [
+      { title: "Flag of North Borneo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Borneo" },
+    ],
+  },
   "my-straits": {
     description: "The Straits Settlements' badge — three gold imperial crowns separated by a red inverted pall (an upside-down Y) — represented the colony's three constituent settlements: Penang, Malacca and Singapore, one crown for each, set on a British Blue Ensign.",
     sources: [
@@ -8633,6 +8639,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Portugal's flag, adopted in 1911 after the republican revolution overthrew the monarchy, is divided vertically into green and red — red for the blood of those who fought for the republic, green for hope in the nation's future — with a gold armillary sphere and the historic royal shield at the centre. The armillary sphere, a navigational instrument, recalls Portugal's Age of Discoveries; the shield, the country's oldest symbol, was carried over from the monarchy's own flag to preserve continuity.",
     sources: [
       { title: "Meaning of the Portuguese Flag — Portugal.com", url: "https://www.portugal.com/history-and-culture/meaning-of-the-portuguese-flag/" },
+    ],
+  },
+  "mz-portugal-1667": {
+    description: "The Portuguese royal arms combine two elements standardised under King Sebastião in 1557: the quinas — five blue escutcheons, each bearing five silver bezants in a cross, traditionally read as the five wounds of Christ multiplied across the shields of a legendary vision granted to Afonso I before his 1139 victory at Ourique — and a border of seven gold castles, standing for Moorish strongholds Portugal conquered during the Reconquista. This 1667 pattern of the arms flew over Portugal's early captaincies on the Mozambican coast.",
+    sources: [
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
     ],
   },
   "mz-air-force": {
@@ -10994,6 +11006,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   },
   "tn-beylik": {
     description: "Traced to the reign of Al-Husayn II ibn Mahmud, who after the 1827 Battle of Navarino wanted a distinct ensign for his own fleet rather than the general Ottoman flag, this red field with a white disc bearing a red crescent and star became the beylik's recognised standard by 1831 and continued through the era of the French protectorate. Red recalls the blood of those who resisted invasion, and white stands for peace; the crescent represents Islam and unity, and the five-pointed star the Five Pillars of Islam.",
+    sources: [
+      { title: "Flag of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
+    ],
+  },
+  "tn-ottoman": {
+    description: "The Eyalet of Tunis flew a red field bearing three gold crescents, echoing the crescent long associated with the Ottoman military and with Constantinople after its 1453 conquest — a mark of the eyalet's formal place within the Ottoman Empire, even as the Husainid beys who actually governed Tunis held growing autonomy. The crescent motif carried through into Tunisia's own national flag, adopted in 1831 under Ottoman suzerainty and still flown today.",
     sources: [
       { title: "Flag of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
     ],
