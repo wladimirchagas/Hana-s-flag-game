@@ -24700,7 +24700,16 @@
           "design": "The Blue Ensign flown after the Second World War, when North Borneo became a Crown colony until it joined Malaysia in 1963 as Sabah.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "298725114d82a95a794dd3538134e3958770132ac56e44ca8c229f17fdc8baee",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The colonial badge at the centre of the Blue Ensign — adopted in 1882 after consultation with local chiefs — paired British and indigenous symbols: a shield of three silver stars over a red stripe, flanked by a sun bear and a rhinoceros, two animals native to Borneo. It was one of the few colonial badges also authorised for use on the Red Ensign, and remained the territory's badge through the postwar Crown Colony period until North Borneo joined Malaysia as Sabah in 1963.",
+            "sources": [
+              {
+                "title": "Flag of North Borneo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_North_Borneo"
+              }
+            ]
+          }
         },
         {
           "id": "my-labuan-colony",
@@ -24957,7 +24966,16 @@
           "design": "The Portuguese royal arms in their 1667 pattern, from the era of the coastal captaincies.",
           "source": "https://en.wikipedia.org/wiki/List_of_Mozambican_flags",
           "sha256": "f8867c2f08581286fc2d36f698257875f47488eb108af58e2ea209981c6c80b4",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Portuguese royal arms combine two elements standardised under King Sebastião in 1557: the quinas — five blue escutcheons, each bearing five silver bezants in a cross, traditionally read as the five wounds of Christ multiplied across the shields of a legendary vision granted to Afonso I before his 1139 victory at Ourique — and a border of seven gold castles, standing for Moorish strongholds Portugal conquered during the Reconquista. This 1667 pattern of the arms flew over Portugal's early captaincies on the Mozambican coast.",
+            "sources": [
+              {
+                "title": "Coat of arms of Portugal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal"
+              }
+            ]
+          }
         },
         {
           "id": "mz-president",
@@ -34566,7 +34584,16 @@
           "design": "The flag of the Ottoman eyalet of Tunis.",
           "source": "https://en.wikipedia.org/wiki/List_of_Tunisian_flags",
           "sha256": "6c3c5bf8851207fd02df6d624fec247914b39b954dbb750de4846462d9e877ce",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Eyalet of Tunis flew a red field bearing three gold crescents, echoing the crescent long associated with the Ottoman military and with Constantinople after its 1453 conquest — a mark of the eyalet's formal place within the Ottoman Empire, even as the Husainid beys who actually governed Tunis held growing autonomy. The crescent motif carried through into Tunisia's own national flag, adopted in 1831 under Ottoman suzerainty and still flown today.",
+            "sources": [
+              {
+                "title": "Flag of Tunisia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Tunisia"
+              }
+            ]
+          }
         },
         {
           "id": "tn-hafsid",
