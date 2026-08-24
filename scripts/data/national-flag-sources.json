@@ -31264,7 +31264,16 @@
           "sovereign": "Malaysia",
           "reuse": "flags/my.svg",
           "design": "The flag of Malaysia, flown over Singapore during the two years it was a Malaysian state before separation in 1965.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags"
+          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
+          "meaning": {
+            "description": "When Malaysia's flag was revised on 16 September 1963, the stripes and star points were increased from eleven to fourteen specifically to add Singapore alongside Sabah and Sarawak to the federation's existing eleven Malayan states — the crescent for Islam, the blue canton for national unity, and the star and crescent's gold for the royal colour of the Malay rulers. Singapore separated from the federation in 1965, but Malaysia kept the fourteen stripes and points on its own flag, now representing its thirteen states and federal territories together.",
+            "sources": [
+              {
+                "title": "Flag of Malaysia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
+              }
+            ]
+          }
         },
         {
           "id": "sg-1952",

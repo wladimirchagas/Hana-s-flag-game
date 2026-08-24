@@ -10090,6 +10090,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Swedish Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Swedish_Football_Association" },
     ],
   },
+  "sg-malaysia": {
+    description: "When Malaysia's flag was revised on 16 September 1963, the stripes and star points were increased from eleven to fourteen specifically to add Singapore alongside Sabah and Sarawak to the federation's existing eleven Malayan states — the crescent for Islam, the blue canton for national unity, and the star and crescent's gold for the royal colour of the Malay rulers. Singapore separated from the federation in 1965, but Malaysia kept the fourteen stripes and points on its own flag, now representing its thirteen states and federal territories together.",
+    sources: [
+      { title: "Flag of Malaysia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
+    ],
+  },
   "sg-1952": {
     description: "After Singapore became a separate Crown colony in 1946 on the dissolution of the Straits Settlements, its Blue Ensign carried a badge showing a lion — a recurring device in Singapore's heraldry recalling the very name Singapura, 'Lion City', even though the island has no native lions — granted formally in the colony's 1948 coat of arms. This colonial flag flew until Singapore achieved self-government in 1959.",
     sources: [
