@@ -170,7 +170,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "AR": [
     { id: "ar-official-national", category: "official", name: "Flag of Argentina", from: 1861, to: 9999, primary: true, path: "flags/ar.svg", design: "The national flag of Argentina, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Argentina" },
-    { id: "ar-confederation", category: "historical", name: "Flag of the Argentine Confederation", from: 1850, to: 1861, path: "national-flags/ar/argentina-confederation.svg", design: "The light blue and white triband of the Confederation, before the present flag was fixed in 1861.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
+    { id: "ar-confederation", category: "historical", name: "Flag of the Argentine Confederation", from: 1850, to: 1861, path: "national-flags/ar/argentina-confederation.svg", design: "The light blue and white triband restored after the 1852 Battle of Caseros, with the golden Sun of May at the centre.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
     { id: "ar-1835", category: "historical", name: "Flag of Argentina (1835–1852)", from: 1835, to: 1852, path: "national-flags/ar/argentina-1835.svg", design: "The triband under the Rosas government, with red devices at the corners of the Sun of May.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
     { id: "ar-1818", category: "historical", name: "Flag of the United Provinces of the Río de la Plata", from: 1818, to: 1835, path: "national-flags/ar/argentina-1818.svg", design: "The triband as it stood when the Sun of May was added in 1818.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
     { id: "ar-spain", category: "historical", name: "Flag of Spain", from: 1785, to: 1816, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The Spanish ensign of 1785, the last to fly over the Viceroyalty of the Río de la Plata.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
@@ -2760,6 +2760,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
+  "am-cilicia": {
+    description: "The Rubenid dynasty that ruled the Armenian Kingdom of Cilicia used a crowned red lion — the rampant \"Lion of Cilicia\" — as its royal emblem across the kingdom's coinage, seals and banners, a symbol of royal power and authority carried over onto the kingdom's coat of arms. The lion later travelled far beyond Cilicia: a version of it was adopted for the Republic of Venice's own winged Lion of Saint Mark after centuries of Cilician-Venetian trade and diplomatic contact.",
+    sources: [
+      { title: "List of Armenian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Armenian_flags" },
+    ],
+  },
   "am-president": {
     description: "The national tricolour is defaced with the presidential seal, centred on Armenia's coat of arms: Mount Ararat bearing Noah's Ark — the mountain traditionally held to be where the Ark came to rest after the flood, and the enduring national symbol of the Armenian homeland — quartered with the arms of four historical Armenian royal dynasties (Bagratuni, Artsruni, Arshakuni and Rubenid), the shield upheld by an eagle and a lion recalling the ancient Kingdom of Urartu/Ararat, with a sword, a broken chain, a wheat sheaf and an olive branch beneath for strength, freedom from oppression, labour and peace.",
     sources: [
@@ -2796,6 +2802,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Portugal - 1830 historical flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pt_1830.html" },
     ],
   },
+  "ao-kongo": {
+    description: "King Afonso I of Kongo, who converted the kingdom to Christianity, told the Portuguese crown that he had won a decisive 1509 succession battle only after a heavenly vision of Saint James the Greater and the Virgin Mary appeared to aid his forces. He commissioned a coat of arms commemorating that vision, brought to Kongo from Portugal in 1512, and it was used on official documents and royal regalia by every Kongolese king that followed until 1860 — a banner whose design records the kingdom's embrace of Christianity under Afonso's rule.",
+    sources: [
+      { title: "Royal banner of Kongo (Afonso I) — Wikipedia", url: "https://en.wikipedia.org/wiki/File:Royal_banner_of_Kongo_(Afonso_I).svg" },
+      { title: "List of Angolan flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Angolan_flags" },
+    ],
+  },
   "ao-president": {
     description: "A red field bears the same emblem as the national flag — a half-cogwheel for industrial workers, a machete for agricultural labourers, and a five-pointed star for internationalism and progress — with two yellow olive branches added beneath it, echoing the hammer, sickle and star of the flags of the Marxist-Leninist states that supported Angola's independence movement, the MPLA, in the 1975 war of liberation from Portugal.",
     sources: [
@@ -2819,6 +2832,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "What is the official animal of Angola? — Geographic FAQ Hub", url: "https://www.ncesc.com/geographic-faq/what-is-the-official-animal-of-angola/" },
       { title: "Angola national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Angola_national_football_team" },
+    ],
+  },
+  "ar-confederation": {
+    description: "After defeating Juan Manuel de Rosas at the Battle of Caseros in 1852, Justo José de Urquiza reversed Rosas's wartime changes to the flag — a darker turquoise field and a red sun — restoring the lighter \"celeste\" blue and the golden Sun of May at the centre, the same emblem that appeared in the sky over Buenos Aires during the May 1810 revolution and is read as representing the Inca sun god Inti as well as the dawn of Argentine independence. This restored design flew over the Argentine Confederation until Buenos Aires's 1861 reincorporation fixed the present national flag.",
+    sources: [
+      { title: "Flag of Argentina — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Argentina" },
     ],
   },
   "ar-1835": {
@@ -3751,6 +3770,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The yellow flowers are the Yellow Elder (Tecoma stans), the Bahamas' national flower, chosen for being native to the islands and blooming year-round, and taken to symbolise the country's natural beauty and resilience.",
     sources: [
       { title: "The Yellow Elder — National Flower of The Bahamas, Government of The Bahamas", url: "https://www.bahamas.gov.bs/yellow-elder-national-flower" },
+    ],
+  },
+  "bt-1956": {
+    description: "This 1956 version already carried Bhutan's white Druk (Thunder Dragon) — standing for the country's own name, Druk Yul, \"Land of the Thunder Dragon\" — clutching jewels in its claws for the nation's wealth, on a diagonally divided field. It differed from the current 1969 design in several ways still visible on comparison: the dragon faced right rather than left, was drawn more tightly coiled, held only two jewels rather than four, and sat on a field whose lower triangle was a deeper red rather than the present orange — orange for the Drukpa Kagyu and Nyingma Buddhist traditions, and yellow for the secular authority of the King.",
+    sources: [
+      { title: "Flag of Bhutan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
     ],
   },
   "bt-arms": {
