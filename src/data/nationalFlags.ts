@@ -4394,6 +4394,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Tiananmen — Wikipedia", url: "https://en.wikipedia.org/wiki/Tiananmen" },
     ],
   },
+  "co-new-granada-1834": {
+    description: "Adopted 9 May 1834 for the Republic of New Granada and the Granadine Confederation that followed it, the most widely accepted reading of the tricolour holds that yellow stood for the people's love of the federation of the earlier United Provinces of New Granada, blue for the separation from Spain, and red for the blood shed in the independence struggle — the same colours, in the same order, that Colombia's flag still carries today.",
+    sources: [
+      { title: "Republic of New Granada — Wikipedia", url: "https://en.wikipedia.org/wiki/Republic_of_New_Granada" },
+      { title: "Flag of Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Colombia" },
+    ],
+  },
   "co-gran-colombia": {
     description: "The yellow-blue-red tricolour was devised in 1807 by independence forerunner Francisco de Miranda and later ratified by Simón Bolívar as the flag of Gran Colombia, the short-lived union of Colombia, Venezuela, Ecuador and Panama. The most widely accepted reading takes yellow for the nation's natural wealth, blue for the surrounding seas, and red for the blood shed in the wars of independence from Spain.",
     sources: [
@@ -4873,6 +4880,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of France — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_France" },
     ],
   },
+  "dz-regency": {
+    description: "The Regency of Algiers, an autonomous Ottoman vassal state ruled by a Dey, flew a plain red banner with no crescent or star — a deliberate departure, the historian Abd al-Rahman al-Jilali argued, from the crescent-and-star flags of the Ottoman imperial centre, marking the regency's assertion of effective independence even while it formally acknowledged the Sultan's authority.",
+    sources: [
+      { title: "Regency of Algiers — Wikipedia", url: "https://en.wikipedia.org/wiki/Regency_of_Algiers" },
+    ],
+  },
   "dz-naval-ensign": {
     description: "A vertical green-and-white bicolour bears the red crescent and five-pointed star of the national flag — symbolising Islamic heritage and the sacrifice of Algeria's war of independence, and drawing on the 19th-century standard of Emir Abdelkader and the earlier flag of the Regency of Algiers — overlaid in the canton with two crossed fouled anchors, changed from red to white in the 2004 redesign of the ensign.",
     sources: [
@@ -5129,6 +5142,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Egyptian Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Egyptian_Football_Association" },
     ],
   },
+  "er-ethiopian": {
+    description: "The imperial flag paired Ethiopia's green-yellow-red tricolour with the Lion of Judah — a golden crowned lion bearing a cross-topped staff — the personal emblem of the Solomonic emperors, who traced their line to a legendary union between King Solomon and the Queen of Sheba. Emperor Haile Selassie, titled the \"Conquering Lion of the Tribe of Judah,\" flew this flag over Eritrea from its 1952 federation with Ethiopia until Ethiopia's 1962 annexation dissolved the federation altogether.",
+    sources: [
+      { title: "Flag of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
+    ],
+  },
   "er-italian": {
     description: "The Kingdom of Italy's flag was the green-white-red tricolour of Italian unification, charged with the coat of arms of the ruling House of Savoy — a white cross on a red shield within a blue border. Flown from unification in 1861, the arms were dropped after the 1946 referendum ended the monarchy, leaving the plain tricolour still used today.",
     sources: [
@@ -5246,6 +5265,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "One of several tricolour arrangements Ethiopia experimented with before Emperor Menelik II fixed the red-yellow-green order in 1897, this 1875–1881 version used purple (amethyst) alongside white, colours of Tigrayan origin that were dropped from later designs as the flag's modern red-yellow-green pattern took hold.",
     sources: [
       { title: "Imperial Ethiopia (until 1975) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et_e.html" },
+    ],
+  },
+  "et-abyssinia": {
+    description: "Long before Menelik II fixed the green-yellow-red tricolour in 1897, the Solomonic emperors of Ethiopia flew personal and state banners centred on the Lion of Judah — a crowned lion advancing with a cross-topped staff, asserting the dynasty's claimed descent from King Solomon and the Queen of Sheba. Red, yellow and green had already carried meaning tied to the Solomonic dynasty and the Holy Trinity of the Ethiopian Orthodox Church since at least the early 17th century, though the precise banners flown across this six-century span are not documented in detail.",
+    sources: [
+      { title: "Flag of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
     ],
   },
   "et-arms": {
@@ -5683,6 +5708,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Union of African States linked Ghana, Guinea and (from 1961) Mali in a short-lived attempt at pan-African political union. Its flag kept Ghana's own red-gold-green tricolour but placed one black star in the gold band for each member state — building on Ghana's own Black Star, itself named for the Black Star Line steamship company of Marcus Garvey's Pan-Africanist movement — so the flag read as Ghana's own symbol multiplied to represent the union.",
     sources: [
       { title: "Union of African States — Flags of the World", url: "https://www.crwflags.com/fotw/flags/int-uas.html" },
+    ],
+  },
+  "gh-togoland": {
+    description: "British Togoland, administered as a League of Nations then UN trust territory alongside the Gold Coast, flew the standard British colonial Blue Ensign — the Union Flag in the canton on a plain blue field — defaced with the Gold Coast's own badge: a shield bearing an elephant, a palm tree and mountains. Voters in the 1956 UN plebiscite chose union with the Gold Coast over separation, and the territory joined the new independent Ghana in 1957.",
+    sources: [
+      { title: "Blue Ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/Blue_Ensign" },
+      { title: "British ensign — Wikipedia", url: "https://en.wikipedia.org/wiki/British_ensign" },
     ],
   },
   "gh-gold-coast": {
