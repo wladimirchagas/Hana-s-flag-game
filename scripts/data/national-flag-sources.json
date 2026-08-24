@@ -7526,7 +7526,20 @@
           "design": "The yellow-blue-red horizontal tricolour as flown by New Granada and the Granadine Confederation.",
           "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
           "sha256": "62aaa8a1c0c02dc530620d2363030e09b7a7b4843a13212e1b8b76d938757afb",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Adopted 9 May 1834 for the Republic of New Granada and the Granadine Confederation that followed it, the most widely accepted reading of the tricolour holds that yellow stood for the people's love of the federation of the earlier United Provinces of New Granada, blue for the separation from Spain, and red for the blood shed in the independence struggle — the same colours, in the same order, that Colombia's flag still carries today.",
+            "sources": [
+              {
+                "title": "Republic of New Granada — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Republic_of_New_Granada"
+              },
+              {
+                "title": "Flag of Colombia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Colombia"
+              }
+            ]
+          }
         },
         {
           "id": "co-gran-colombia",
@@ -9479,7 +9492,16 @@
           "design": "The flag of the Dey of Algiers, the Ottoman-era regency that governed the territory before the French conquest.",
           "source": "https://en.wikipedia.org/wiki/List_of_Algerian_flags",
           "sha256": "67c8df24a369af5c3d5a434fbf83ad15138991450360d31bf8490dbf0a40049e",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Regency of Algiers, an autonomous Ottoman vassal state ruled by a Dey, flew a plain red banner with no crescent or star — a deliberate departure, the historian Abd al-Rahman al-Jilali argued, from the crescent-and-star flags of the Ottoman imperial centre, marking the regency's assertion of effective independence even while it formally acknowledged the Sultan's authority.",
+            "sources": [
+              {
+                "title": "Regency of Algiers — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Regency_of_Algiers"
+              }
+            ]
+          }
         },
         {
           "id": "dz-president",
@@ -10537,7 +10559,16 @@
           "design": "The imperial flag of Ethiopia, which federated with and then annexed Eritrea from 1952.",
           "source": "https://en.wikipedia.org/wiki/Federation_of_Ethiopia_and_Eritrea",
           "sha256": "10a05888cc206f816c5cfda5f7cf0fd48d09ea9dfd4219eee0d6f5e0977ebed6",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The imperial flag paired Ethiopia's green-yellow-red tricolour with the Lion of Judah — a golden crowned lion bearing a cross-topped staff — the personal emblem of the Solomonic emperors, who traced their line to a legendary union between King Solomon and the Queen of Sheba. Emperor Haile Selassie, titled the \"Conquering Lion of the Tribe of Judah,\" flew this flag over Eritrea from its 1952 federation with Ethiopia until Ethiopia's 1962 annexation dissolved the federation altogether.",
+            "sources": [
+              {
+                "title": "Flag of Ethiopia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Ethiopia"
+              }
+            ]
+          }
         },
         {
           "id": "er-arms",
@@ -10979,7 +11010,16 @@
           "design": "The banner of the Solomonic dynasty, before the tricolour.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags",
           "sha256": "779fabb0acad46accfa4b4f950bb4c1ce41f507b170366bac1efb1f11a8bc6fb",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Long before Menelik II fixed the green-yellow-red tricolour in 1897, the Solomonic emperors of Ethiopia flew personal and state banners centred on the Lion of Judah — a crowned lion advancing with a cross-topped staff, asserting the dynasty's claimed descent from King Solomon and the Queen of Sheba. Red, yellow and green had already carried meaning tied to the Solomonic dynasty and the Holy Trinity of the Ethiopian Orthodox Church since at least the early 17th century, though the precise banners flown across this six-century span are not documented in detail.",
+            "sources": [
+              {
+                "title": "Flag of Ethiopia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Ethiopia"
+              }
+            ]
+          }
         },
         {
           "id": "et-arms",
@@ -12814,7 +12854,20 @@
           "design": "A Blue Ensign for the trust territory that voted to join Ghana in 1956.",
           "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
           "sha256": "d16bda9e8ca503ee5dfff817876f3f6948e9714bae412bb7467850bcc7362656",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "British Togoland, administered as a League of Nations then UN trust territory alongside the Gold Coast, flew the standard British colonial Blue Ensign — the Union Flag in the canton on a plain blue field — defaced with the Gold Coast's own badge: a shield bearing an elephant, a palm tree and mountains. Voters in the 1956 UN plebiscite chose union with the Gold Coast over separation, and the territory joined the new independent Ghana in 1957.",
+            "sources": [
+              {
+                "title": "Blue Ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Blue_Ensign"
+              },
+              {
+                "title": "British ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/British_ensign"
+              }
+            ]
+          }
         },
         {
           "id": "gh-denmark",
