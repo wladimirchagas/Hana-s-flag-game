@@ -14895,6 +14895,26 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal and flag of Nueva Vizcaya — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_and_flag_of_Nueva_Vizcaya" },
     ],
   },
+  "PH-ILN": {
+    description:
+      "Ilocos Norte's seal shows Paoay Church, a symbol of Ilocano resilience, alongside the Bangui wind " +
+      "turbines for the province's pioneering role in Southeast Asian renewable energy and the Patapat " +
+      "Viaduct for its natural and engineered landmarks. Garlic, rice stalks and tobacco leaves, carried over " +
+      "from the earlier seal, stand for the province's agriculture and food self-sufficiency.",
+    sources: [
+      { title: "Gov. Imee Marcos unveils new I. Norte corporate seal — Tawid News Magazine", url: "https://tawidnewsmag.com/gov-imee-marcos-unveils-new-i-norte-corporate-seal/" },
+    ],
+  },
+  "PH-LEY": {
+    description:
+      "Leyte's seal shows Freedom Park at Palo, commemorating General Douglas MacArthur's 1944 landing " +
+      "during the liberation of the Philippines, alongside a white cross for Ferdinand Magellan's stop on " +
+      "the island in 1521, its letter L standing for Leyte. Stars ringing the inner circle represent the " +
+      "province's 41 towns, and an eternal flame honours the soldiers who died in the Second World War.",
+    sources: [
+      { title: "Official Provincial Seal of Leyte", url: "https://www.scribd.com/doc/247916084/Seal-Explanations" },
+    ],
+  },
   "PH-AUR": {
     description:
       "Aurora's seal writes the province's name in forest green, since 70% of Aurora is covered by forest, " +
