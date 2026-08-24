@@ -6933,6 +6933,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Yatagarasu — Wikipedia", url: "https://en.wikipedia.org/wiki/Yatagarasu" },
     ],
   },
+  "ke-1921": {
+    description: "The red lion, taken from the royal arms of England, asserted direct Crown rule over Kenya after 1920 — replacing the delegated commercial authority of the earlier Imperial British East Africa Company period — and was set on a white disc so it stood out clearly against the Blue Ensign's field, a practical aid to identifying the flag at a distance.",
+    sources: [
+      { title: "Flag of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kenya" },
+    ],
+  },
   "ke-1895": {
     description: "The East Africa Protectorate's Blue Ensign badge — a red lion, drawn from the royal arms of England, set on a white disc — asserted direct Crown authority over the territory, replacing the earlier commercial flags of the Imperial British East Africa Company. The white disc gave the red lion a contrasting background, visible at distance against the ensign's blue field, following the standard Colonial Office pattern used across British protectorates.",
     sources: [
@@ -8139,6 +8145,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted 12 January 1992 as Mongolia's peaceful Democratic Revolution ended one-party communist rule, this flag kept the same red-blue-red bands and golden Soyombo emblem as the socialist-era flag but removed the five-pointed star that had crowned the Soyombo. Blue stands for the eternal sky central to Mongolian belief and red for the country's thriving vitality; the Soyombo itself combines fire, sun, moon, earth, water and the yin-yang symbol. The exact shade of blue was only formally standardised in 2011.",
     sources: [
       { title: "Flag of Mongolia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
+    ],
+  },
+  "mn-qing": {
+    description: "Standardised in 1889 as China's first official national flag, the Yellow Dragon Flag used yellow — the colour reserved exclusively for the Manchu emperors — as its field, with a five-clawed dragon (a form reserved for the Emperor alone; lesser dragons had four claws) coiling toward a flaming pearl. The dragon stood for imperial power and sovereignty and, in traditional Chinese cosmology, for the east; the flag flew over Outer Mongolia as part of the Qing Empire until Mongolia declared independence in 1911.",
+    sources: [
+      { title: "Flag of the Qing dynasty — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Qing_dynasty" },
     ],
   },
   "mn-general-banner": {
