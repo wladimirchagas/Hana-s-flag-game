@@ -17842,7 +17842,16 @@
           "design": "A British Blue Ensign defaced with the colony's badge, a red lion on a white disc.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
           "sha256": "69fbf53786253cd252b83a21a92ce961b8a72fd87ef9c97de189b80a7b232666",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The red lion, taken from the royal arms of England, asserted direct Crown rule over Kenya after 1920 — replacing the delegated commercial authority of the earlier Imperial British East Africa Company period — and was set on a white disc so it stood out clearly against the Blue Ensign's field, a practical aid to identifying the flag at a distance.",
+            "sources": [
+              {
+                "title": "Flag of Kenya — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Kenya"
+              }
+            ]
+          }
         },
         {
           "id": "ke-1895",
@@ -23061,7 +23070,16 @@
           "design": "The yellow dragon banner of Qing China, whose rule over Outer Mongolia ended when it declared independence in 1911.",
           "source": "https://en.wikipedia.org/wiki/Bogd_Khanate_of_Mongolia",
           "sha256": "d543652386810308fe568ced9de449dffe673a5cf8cb74553a76626c67648f76",
-          "fetched": "2026-08-12"
+          "fetched": "2026-08-12",
+          "meaning": {
+            "description": "Standardised in 1889 as China's first official national flag, the Yellow Dragon Flag used yellow — the colour reserved exclusively for the Manchu emperors — as its field, with a five-clawed dragon (a form reserved for the Emperor alone; lesser dragons had four claws) coiling toward a flaming pearl. The dragon stood for imperial power and sovereignty and, in traditional Chinese cosmology, for the east; the flag flew over Outer Mongolia as part of the Qing Empire until Mongolia declared independence in 1911.",
+            "sources": [
+              {
+                "title": "Flag of the Qing dynasty — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Qing_dynasty"
+              }
+            ]
+          }
         },
         {
           "id": "mn-football-crest",
