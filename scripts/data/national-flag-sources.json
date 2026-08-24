@@ -828,7 +828,16 @@
           "design": "The flag of the Armenian kingdom on the Mediterranean coast, a separate state from the Armenian highland.",
           "source": "https://en.wikipedia.org/wiki/List_of_Armenian_flags",
           "sha256": "bc6ff1f45eb21df5de8a1f235067cccf4721b8dd2eb482cb23ea934f1af502f5",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Rubenid dynasty that ruled the Armenian Kingdom of Cilicia used a crowned red lion — the rampant \"Lion of Cilicia\" — as its royal emblem across the kingdom's coinage, seals and banners, a symbol of royal power and authority carried over onto the kingdom's coat of arms. The lion later travelled far beyond Cilicia: a version of it was adopted for the Republic of Venice's own winged Lion of Saint Mark after centuries of Cilician-Venetian trade and diplomatic contact.",
+            "sources": [
+              {
+                "title": "List of Armenian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Armenian_flags"
+              }
+            ]
+          }
         },
         {
           "id": "am-president",
@@ -1018,7 +1027,20 @@
           "design": "The banner of Manikongo Afonso I, of the kingdom that stood on this ground before Portuguese rule.",
           "source": "https://en.wikipedia.org/wiki/List_of_Angolan_flags",
           "sha256": "3d34d080c42f8944d1f401805c13f57a0a1937ed63740c26fbb72914975e990a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "King Afonso I of Kongo, who converted the kingdom to Christianity, told the Portuguese crown that he had won a decisive 1509 succession battle only after a heavenly vision of Saint James the Greater and the Virgin Mary appeared to aid his forces. He commissioned a coat of arms commemorating that vision, brought to Kongo from Portugal in 1512, and it was used on official documents and royal regalia by every Kongolese king that followed until 1860 — a banner whose design records the kingdom's embrace of Christianity under Afonso's rule.",
+            "sources": [
+              {
+                "title": "Royal banner of Kongo (Afonso I) — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/File:Royal_banner_of_Kongo_(Afonso_I).svg"
+              },
+              {
+                "title": "List of Angolan flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Angolan_flags"
+              }
+            ]
+          }
         },
         {
           "id": "ao-ndongo",
@@ -1194,10 +1216,19 @@
           "to": 1861,
           "commons": "Flag of the Argentine Confederation.svg",
           "file": "ar/argentina-confederation.svg",
-          "design": "The light blue and white triband of the Confederation, before the present flag was fixed in 1861.",
+          "design": "The light blue and white triband restored after the 1852 Battle of Caseros, with the golden Sun of May at the centre.",
           "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
           "sha256": "04fa3b8a127f5aa08eaae715abde525fc5348a64641373bdc9741967617cef5a",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "After defeating Juan Manuel de Rosas at the Battle of Caseros in 1852, Justo José de Urquiza reversed Rosas's wartime changes to the flag — a darker turquoise field and a red sun — restoring the lighter \"celeste\" blue and the golden Sun of May at the centre, the same emblem that appeared in the sky over Buenos Aires during the May 1810 revolution and is read as representing the Inca sun god Inti as well as the dawn of Argentine independence. This restored design flew over the Argentine Confederation until Buenos Aires's 1861 reincorporation fixed the present national flag.",
+            "sources": [
+              {
+                "title": "Flag of Argentina — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Argentina"
+              }
+            ]
+          }
         },
         {
           "id": "ar-1835",
@@ -4975,7 +5006,16 @@
           "design": "An earlier version of the Druk (Thunder Dragon) flag; the dragon and the diagonal division of the field were revised to the present design in 1969.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bhutan",
           "sha256": "49690b505038a574a55f18f94d8a0e08df1580256e75887faaa471710644412c",
-          "fetched": "2026-08-13"
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "This 1956 version already carried Bhutan's white Druk (Thunder Dragon) — standing for the country's own name, Druk Yul, \"Land of the Thunder Dragon\" — clutching jewels in its claws for the nation's wealth, on a diagonally divided field. It differed from the current 1969 design in several ways still visible on comparison: the dragon faced right rather than left, was drawn more tightly coiled, held only two jewels rather than four, and sat on a field whose lower triangle was a deeper red rather than the present orange — orange for the Drukpa Kagyu and Nyingma Buddhist traditions, and yellow for the secular authority of the King.",
+            "sources": [
+              {
+                "title": "Flag of Bhutan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Bhutan"
+              }
+            ]
+          }
         },
         {
           "id": "bt-arms",
