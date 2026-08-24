@@ -7355,10 +7355,19 @@
           "to": 9999,
           "commons": "Rocket Force Flag of the People's Republic of China.svg",
           "file": "cn/china-pla-rocket.svg",
-          "design": "The PLA flag with a gold-and-blue stripe along the bottom.",
+          "design": "The PLA flag (red field, gold star, gold characters) with a plain gold stripe along the bottom.",
           "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
           "sha256": "5f985a81843aebcf6de7f4ca230f601d5d5780a3b1eaaf7cc01bfdab496e3e69",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "Every People's Liberation Army service ensign keeps the PLA's own red field, gold star and gold characters in the upper portion and adds a coloured stripe along the bottom identifying the branch: forest green for the Army (the earth), navy blue-and-white for the Navy (the seas), sky blue for the Air Force (the sky) — and, for the Rocket Force, plain gold, representing the bright flash of a missile launch.",
+            "sources": [
+              {
+                "title": "Flag of the People's Liberation Army — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_People%27s_Liberation_Army"
+              }
+            ]
+          }
         },
         {
           "id": "cn-arms",
