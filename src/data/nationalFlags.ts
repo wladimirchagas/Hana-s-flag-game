@@ -6057,6 +6057,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Croatia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
     ],
   },
+  "hr-army": {
+    description: "The Croatian Army's flag descends from 1991, the year the Croatian War of Independence began, combining elements of the flag of the Croatian Defence Council and the emblem of the Croatian National Guard — the paramilitary force raised that same year, before Croatia had a fully constituted regular army, to defend the country's newly declared independence from Yugoslavia.",
+    sources: [
+      { title: "File:Flag of Croatian Army.svg — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Flag_of_Croatian_Army.svg" },
+    ],
+  },
   "hr-air-force": {
     description: "The Croatian Air Force's flag is dark blue bearing the service's badge — a winged square — above the Croatian state coat of arms. The winged square marks the flag as belonging to the air arm of the armed forces, while the chequered shield beneath it ties the service to the Croatian state it defends, the same red-and-white checkerboard (šahovnica) used on the national coat of arms.",
     sources: [
@@ -11570,6 +11576,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted by law on 18 December 1828 and designed by head of state Joaquín Suárez, Uruguay's first flag set the Sun of May — the same emblem adopted by Argentina, with sixteen rays alternating straight and wavy — in a white canton beside seventeen alternating blue-and-white stripes, one for each department the new republic then had. Considered too complex, the design was simplified on 11 July 1830 to the nine stripes flown today, one for each of the departments existing at that later date.",
     sources: [
       { title: "Flag of Uruguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uruguay" },
+    ],
+  },
+  "uy-army": {
+    description: "The flag of Uruguay's army is the Artigas flag — blue-white-blue horizontal bands crossed by a red diagonal stripe — designed in 1815 by José Gervasio Artigas, the country's founding national hero, adapting the pale-blue-and-white flag Manuel Belgrano had created for Argentina in 1812 by adding the red diagonal to stand for federalism. Originally the banner of the Federal League Artigas led, it is one of Uruguay's three official flags today and has traditionally served as the flag and emblem of the country's armed forces, its cockade still worn on military uniforms.",
+    sources: [
+      { title: "Artigas flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Artigas_flag" },
     ],
   },
   "uy-air-force": {
