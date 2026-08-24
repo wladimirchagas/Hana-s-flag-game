@@ -14895,6 +14895,26 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal and flag of Nueva Vizcaya — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_and_flag_of_Nueva_Vizcaya" },
     ],
   },
+  "PH-RIZ": {
+    description:
+      "Rizal's seal centres a portrait of Dr. José Rizal, the national hero the province is named for, " +
+      "beneath a sun, a wreath of laurel leaves and a dove standing for the peace and tranquility the " +
+      "province enjoys, and a crown for the Rizaleño devotion to Our Lady of Peace and Good Voyage, whose " +
+      "image is enshrined at Antipolo Cathedral.",
+    sources: [
+      { title: "Official Seal — Pililla Rizal Official Website", url: "https://pilillarizal.gov.ph/official-seal/" },
+    ],
+  },
+  "PH-SOR": {
+    description:
+      "Sorsogon's seal shows Mount Bulusan, one of the country's active volcanoes, above the sea for the " +
+      "province's coast and marine resources, coconut and abaca for its main crops, a carabao for the " +
+      "hard work of its people, and a gear for progress and development. Sixteen sun rays represent the " +
+      "province's sixteen municipalities, and the date 1894 marks the year Sorsogon became a province.",
+    sources: [
+      { title: "Sorsogon Province — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Sorsogon_Province" },
+    ],
+  },
   "PH-ILN": {
     description:
       "Ilocos Norte's seal shows Paoay Church, a symbol of Ilocano resilience, alongside the Bangui wind " +
