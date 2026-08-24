@@ -14809,6 +14809,26 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "PH-NER": {
+    description:
+      "Negros Oriental's seal shows the Cuernos de Negros mountain range, the Provincial Capitol standing " +
+      "for local governance, and the portals of Silliman University for the province's importance as a " +
+      "centre of education. Its lower portion depicts the province's key industries — lumber, coconut and " +
+      "sugar milling — beneath the motto “Via, Veritas, Vita” (Way, Truth, Life).",
+    sources: [
+      { title: "Explain the meaning of the official seal of Negros Oriental — Brainly", url: "https://brainly.com/question/19561007" },
+    ],
+  },
+  "PH-NSA": {
+    description:
+      "Northern Samar's seal uses tangerine for the cheerfulness and optimism of its people, yellow for " +
+      "golden harvests and abundant resources, and white for transparent governance. A torch stands for the " +
+      "provincial government's commitment to education, and a rope encircling the emblem represents equality " +
+      "before the law and unity for peace and development.",
+    sources: [
+      { title: "Northern Samar Province — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Northern_Samar_Province" },
+    ],
+  },
   "PH-BAS": {
     description:
       "Basilan's seal is shaped like a rhombus, following the outline of the province's main island, with a " +
