@@ -681,7 +681,20 @@
           "design": "A white ensign with the national flag in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Albanian_flags",
           "sha256": "f503eb76106a975b4553a9b29ec2ae8af63f25757f792bb69371da7b9ec80c03",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The naval ensign places Albania's national flag — the black double-headed eagle of the medieval Kastrioti dynasty on red, revived as the national emblem for its association with Gjergj Kastrioti Skanderbeg's 15th-century resistance to Ottoman rule — in the canton of a plain white field, distinguishing vessels of the Albanian Naval Defence Force from the merchant and state variants that fly the plain national flag.",
+            "sources": [
+              {
+                "title": "List of Albanian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Albanian_flags"
+              },
+              {
+                "title": "Flag of Albania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Albania"
+              }
+            ]
+          }
         },
         {
           "id": "al-arms",
@@ -4500,10 +4513,19 @@
           "to": 9999,
           "commons": "Flag of the Vice President of Brazil.svg",
           "file": "br/brazil-vice-president.svg",
-          "design": "A yellow field with 21 blue stars in a cross and the coat of arms at the centre.",
+          "design": "A yellow field with 23 blue five-pointed stars arranged in a cross (15 stars along the horizontal arm, one at the centre) and the coat of arms of Brazil in the upper-left quadrant.",
           "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
           "sha256": "c4274984c7d4510ec010fc6d46f5fe99469436cb6e2dc721099ae810902e020c",
-          "fetched": "2026-08-07"
+          "fetched": "2026-08-07",
+          "meaning": {
+            "description": "The Vice-Presidential standard uses the same yellow as the national flag for visual continuity with Brazil's central emblem, while its own arrangement of 23 blue stars in a cross — distinct from both the national flag's 27-star globe and the Presidential standard's own design — exists purely to mark the office and distinguish the Vice-President from other civil authorities in ceremonial and naval protocol. The coat of arms in the upper-left quadrant carries the Republic's own symbolism (see the flag's own \"What this flag means\" entry).",
+            "sources": [
+              {
+                "title": "Bandeira vice-presidencial do Brasil — Wikipédia",
+                "url": "https://pt.wikipedia.org/wiki/Bandeira_vice-presidencial_do_Brasil"
+              }
+            ]
+          }
         },
         {
           "id": "br-ukpba",
@@ -9467,7 +9489,20 @@
           "design": "The national flag in the jack's proportions.",
           "source": "https://en.wikipedia.org/wiki/List_of_Algerian_flags",
           "sha256": "62d32aca75cc3b006673ad644e093c2c7a4a85dcce25779290405cc5786eb1aa",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The naval jack is simply Algeria's national flag flown at the bow in the smaller proportions used for a jack rather than an ensign. Its green half stands for Islam and hope, its white half for peace and purity, and the red crescent and five-pointed star — carried over from the flag flown by the National Liberation Front during the war of independence — for Islam and for the blood of those who died in the struggle against French colonial rule.",
+            "sources": [
+              {
+                "title": "List of Algerian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Algerian_flags"
+              },
+              {
+                "title": "Flag of Algeria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Algeria"
+              }
+            ]
+          }
         },
         {
           "id": "dz-emblem",
@@ -24495,7 +24530,20 @@
           "design": "A red field with the flag of Malaya in a blue-fimbriated canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "7b23a6f755e5902f5ace7b32062bf97803d830e00233de3411d5401c202c2305",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The civil ensign follows the British \"red ensign\" convention — a plain red field with the national flag in the canton, historically reserved for merchant shipping and adopted across the Commonwealth — carrying the flag of the newly independent Federation of Malaya: eleven alternating red-and-white stripes and an eleven-pointed star for the eleven states of the federation, beside a crescent for Islam as the state religion.",
+            "sources": [
+              {
+                "title": "List of Malaysian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags"
+              },
+              {
+                "title": "British ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/British_ensign"
+              }
+            ]
+          }
         },
         {
           "id": "my-north-borneo",
@@ -30615,7 +30663,20 @@
           "design": "The national flag with a green-bordered white panel.",
           "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
           "sha256": "b0af2f4a2a3783973a3be755bfd62a28b2ef2f8a29dcb04e21cb76d52b71c830",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The civil ensign flown by Saudi merchant vessels places the national flag — green for Islam, bearing the shahada (\"There is no god but God; Muhammad is the messenger of God\") in white Thuluth script above a horizontal sword standing for justice and for the kingdom's 1926 unification under Ibn Saud — as a white-bordered canton on a plain green field, one-third the ensign's size, distinguishing merchant shipping from the naval and state variants.",
+            "sources": [
+              {
+                "title": "List of Saudi Arabian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags"
+              },
+              {
+                "title": "Flag of Saudi Arabia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia"
+              }
+            ]
+          }
         },
         {
           "id": "sa-naval-ensign",
@@ -31071,7 +31132,20 @@
           "design": "The naval ensign of Sudan.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sudan",
           "sha256": "a91ba6b4f0bc8096f2a1c78d2db18e54f0e0b02179b893387e5fd6061113ecd1",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The naval ensign follows the pattern several former British-administered states adopted for their own navies after independence — a plain white field, echoing the Royal Navy's historic White Ensign, with the national flag in the canton — distinguishing naval vessels from merchant shipping. Sudan's flag in the canton carries the pan-Arab colours: red for the independence struggle's martyrs, white for the 1924 revolutionary flag and for peace, black for al-Mahdī and for the country's own Arabic name (\"the black land\"), and green, in the hoist triangle, for Islam and for prosperity.",
+            "sources": [
+              {
+                "title": "Flag of Sudan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Sudan"
+              },
+              {
+                "title": "White Ensign — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/White_Ensign"
+              }
+            ]
+          }
         },
         {
           "id": "sd-president",
