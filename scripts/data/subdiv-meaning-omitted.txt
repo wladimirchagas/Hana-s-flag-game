@@ -142,7 +142,7 @@ DK-81 DK-82 DK-83 DK-84 DK-85
 #   Nigerian state flags are inconsistent and largely unofficial (many are the national coat of arms in a
 #   ring; some states revived pre-1975 designs), documented mainly on blogs, not authoritative sources with
 #   per-element symbolism. Confirmed wall — stays omitted.
-NG-AD NG-AK NG-AN NG-BA NG-BE NG-BY NG-EB NG-ED NG-EN NG-FC NG-GO NG-IM NG-JI NG-KD NG-KE NG-KN NG-KO NG-KT NG-KW NG-LA NG-NA NG-NI NG-OG NG-ON NG-OS NG-OY NG-PL NG-RI NG-SO NG-TA NG-YO NG-ZA
+NG-AD NG-AK NG-AN NG-BA NG-BE NG-BY NG-EB NG-ED NG-EN NG-FC NG-GO NG-IM NG-JI NG-KD NG-KE NG-KN NG-KO NG-KT NG-KW NG-NA NG-NI NG-OG NG-ON NG-OY NG-PL NG-RI NG-SO NG-TA NG-YO NG-ZA
 # EG (governorate emblems image-only) — 26 codes
 EG-ALX EG-ASN EG-AST EG-BA EG-BH EG-BNS EG-C EG-DK EG-DT EG-FYM EG-GH EG-GZ EG-IS EG-JS EG-KB EG-KFS EG-KN EG-LX EG-MNF EG-MT EG-PTS EG-SHG EG-SHR EG-SIN EG-SUZ EG-WAD
 # SI (municipal arms image-only) — 25 codes
