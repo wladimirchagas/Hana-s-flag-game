@@ -16389,10 +16389,19 @@
           "name": "Flag of the Iraqi Air Force",
           "commons": "Flag of the Iraqi Air Force.svg",
           "file": "iq/iraq-air-force.svg",
-          "design": "The air force's flag.",
+          "design": "A sky-blue field bearing a large white silhouette of Iraq (with the Tigris and Euphrates traced across it), overlaid by a red-ringed roundel showing a gold eagle with a small flag-coloured shield, and \"IRAQI AIR FORCE\" lettered below.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq",
           "sha256": "25d8321d481f18a4cfdd2b33d4fe96d5e15e56bb30b861a2cb9d6a6c84a5d466",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The eagle draws on the Eagle of Saladin — the gold eagle bearing a shield of the national flag's colours that Iraq adopted for its own state emblem in 1965, a design popularised across the Arab world after Egypt's 1952 revolution as a symbol of pan-Arab unity, strength and sovereignty. Setting the badge against the outline of Iraq itself, with its two defining rivers traced across the silhouette, ties the emblem to the specific territory and airspace the force is charged with defending.",
+            "sources": [
+              {
+                "title": "Coat of arms of Iraq — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq"
+              }
+            ]
+          }
         },
         {
           "id": "iq-navy",
@@ -16402,10 +16411,19 @@
           "to": 9999,
           "commons": "Flag of the Iraqi Navy.svg",
           "file": "iq/iraq-navy.svg",
-          "design": "The navy's flag.",
+          "design": "A navy-blue field bearing a rope-bordered roundel: an olive-wreathed gold anchor set over a silhouette of Iraq coloured in the national flag's red-white-black, with \"IRAQI NAVY\" lettered below.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq",
           "sha256": "7317fe9cc5fe05a5c582fbd00fb005c74553f540356c0f59ac549151071e4724",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The anchor is the near-universal naval emblem, standing for the sea and for steadfastness, framed by an olive wreath — a mark of honour and peace common to military insignia across the region. Placing it over the silhouette of Iraq itself, rather than the flag alone, identifies the emblem specifically with the territory the Navy defends.",
+            "sources": [
+              {
+                "title": "Iraqi Navy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Iraqi_Navy"
+              }
+            ]
+          }
         },
         {
           "id": "iq-arms",

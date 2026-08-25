@@ -1047,8 +1047,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "iq-arab-federation", category: "historical", name: "Flag of the Arab Federation", from: 1921, to: 1924, sovereign: "the United Kingdom", path: "national-flags/iq/iraq-arab-federation.svg", design: "The Hashemite flag of the Kingdom of Iraq, flown from 1921 under the British Mandate; the same design served again in 1958 for the short-lived Arab Federation with Jordan.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
     { id: "iq-uk", category: "historical", name: "Flag of the United Kingdom", from: 1920, to: 1932, sovereign: "the United Kingdom", path: "national-flags/iq/iq-uk.svg", design: "The Union Flag, the Union Flag of the British Mandate for Mesopotamia.", source: "https://en.wikipedia.org/wiki/Mandatory_Iraq" },
     { id: "iq-ground-forces", category: "military", name: "Flag of the Iraqi Ground Forces", path: "national-flags/iq/iraq-ground-forces.svg", design: "The ground forces' flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
-    { id: "iq-air-force", category: "military", name: "Flag of the Iraqi Air Force", path: "national-flags/iq/iraq-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
-    { id: "iq-navy", category: "military", name: "Flag of the Iraqi Navy", from: 2003, to: 9999, path: "national-flags/iq/iraq-navy.svg", design: "The navy's flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    { id: "iq-air-force", category: "military", name: "Flag of the Iraqi Air Force", path: "national-flags/iq/iraq-air-force.svg", design: "A sky-blue field bearing a large white silhouette of Iraq (with the Tigris and Euphrates traced across it), overlaid by a red-ringed roundel showing a gold eagle with a small flag-coloured shield, and \"IRAQI AIR FORCE\" lettered below.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    { id: "iq-navy", category: "military", name: "Flag of the Iraqi Navy", from: 2003, to: 9999, path: "national-flags/iq/iraq-navy.svg", design: "A navy-blue field bearing a rope-bordered roundel: an olive-wreathed gold anchor set over a silhouette of Iraq coloured in the national flag's red-white-black, with \"IRAQI NAVY\" lettered below.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
     { id: "iq-arms", category: "coatofarms", name: "Coat of arms of Iraq", from: 1965, to: 9999, path: "national-flags/iq/iraq-arms.svg", design: "The golden Eagle of Saladin bearing a shield in the colours of the national flag, above a scroll reading الجمهورية العراقية.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq" },
     { id: "iq-passport", category: "passport", name: "Passport of Iraq", path: "national-flags/iq/iq-passport.webp", design: "The cover of the Iraq passport.", source: "https://gicg.net/passport/iq/" },
     { id: "iq-football-crest", category: "footballcrest", name: "Crest of the Iraq national football team", path: "national-flags/iq/iq-football-crest.svg", design: "The crest of the Iraq national football team — a shield reading “IRAQ” above the national flag's own red, white and black bands, with the Takbir (“Allahu Akbar”, “God is greatest”) written across the white band.", source: "https://en.wikipedia.org/wiki/Iraq_national_football_team" },
@@ -6604,6 +6604,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Wikipedia — Flag of Iraq", url: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
       { title: "Wikipedia — Iraqi Ground Forces", url: "https://en.wikipedia.org/wiki/Iraqi_Ground_Forces" },
+    ],
+  },
+  "iq-air-force": {
+    description: "The eagle draws on the Eagle of Saladin — the gold eagle bearing a shield of the national flag's colours that Iraq adopted for its own state emblem in 1965, a design popularised across the Arab world after Egypt's 1952 revolution as a symbol of pan-Arab unity, strength and sovereignty. Setting the badge against the outline of Iraq itself, with its two defining rivers traced across the silhouette, ties the emblem to the specific territory and airspace the force is charged with defending.",
+    sources: [
+      { title: "Coat of arms of Iraq — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq" },
+    ],
+  },
+  "iq-navy": {
+    description: "The anchor is the near-universal naval emblem, standing for the sea and for steadfastness, framed by an olive wreath — a mark of honour and peace common to military insignia across the region. Placing it over the silhouette of Iraq itself, rather than the flag alone, identifies the emblem specifically with the territory the Navy defends.",
+    sources: [
+      { title: "Iraqi Navy — Wikipedia", url: "https://en.wikipedia.org/wiki/Iraqi_Navy" },
     ],
   },
   "iq-arms": {
