@@ -1060,9 +1060,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ir-1907", category: "historical", name: "State flag of Persia (1907–1933)", from: 1907, to: 1933, path: "national-flags/ir/iran-1907.svg", design: "The longer tricolour of the late Qajar and early Pahlavi state.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
     { id: "ir-qajar", category: "historical", name: "Flag of the Qajar dynasty (1852–1907)", from: 1852, to: 1907, path: "national-flags/ir/iran-qajar.svg", design: "The Qajar tricolour bearing the Lion and Sun, without red borders.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
     { id: "ir-safavid", category: "historical", name: "Flag of the Safavid dynasty (1576–1732)", from: 1576, to: 1732, path: "national-flags/ir/iran-safavid.svg", design: "The Lion and Sun on a green field, under the later Safavid shahs.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
-    { id: "ir-army", category: "military", name: "Flag of the Islamic Republic of Iran Army", path: "national-flags/ir/iran-army.svg", design: "The national flag charged with the army's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
-    { id: "ir-navy", category: "military", name: "Flag of the Islamic Republic of Iran Navy", path: "national-flags/ir/iran-navy.svg", design: "The national flag charged with the navy's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
-    { id: "ir-air-force", category: "military", name: "Flag of the Islamic Republic of Iran Air Force", path: "national-flags/ir/iran-air-force.svg", design: "The national flag charged with the air force's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-army", category: "military", name: "Flag of the Islamic Republic of Iran Army", path: "national-flags/ir/iran-army.svg", design: "An olive-green field bordered in gold Quranic calligraphy, with the national tricolour as a diagonal ribbon in each corner and a wreathed emblem — a shield, eagle and crossed swords — at the centre.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-navy", category: "military", name: "Flag of the Islamic Republic of Iran Navy", path: "national-flags/ir/iran-navy.svg", design: "A white field bordered in navy blue with gold Quranic calligraphy, the national tricolour as a diagonal ribbon in each corner, and a roped medallion at the centre bearing a gold anchor rising from blue waves.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-air-force", category: "military", name: "Flag of the Islamic Republic of Iran Air Force", path: "national-flags/ir/iran-air-force.svg", design: "A sky-blue field bordered in navy blue with gold Quranic calligraphy, the national tricolour as a diagonal ribbon in each corner, and a roped medallion at the centre bearing silver wings around a green-white-red roundel.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
     { id: "ir-naval-jack", category: "maritime", name: "Naval jack of Iran", from: 1980, to: 9999, path: "national-flags/ir/iran-naval-jack.svg", design: "A dark blue field bearing a yellow national emblem.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
     { id: "ir-emblem", category: "coatofarms", name: "Emblem of Iran", from: 1980, to: 9999, path: "national-flags/ir/iran-emblem.svg", design: "Four crescents and a sword beneath a shadda, in the shape of a tulip.", source: "https://en.wikipedia.org/wiki/Emblem_of_Iran" },
     { id: "ir-passport", category: "passport", name: "Passport of Iran", path: "national-flags/ir/ir-passport.webp", design: "The cover of the Iran passport.", source: "https://gicg.net/passport/ir/" },
@@ -6652,6 +6652,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Under the later Safavid shahs, Iran's Lion and Sun emblem — a motif reaching back to 12th-century Persian astrology, where the sun in the house of Leo signified power and royalty — was understood to stand for the twin pillars of Safavid society, state and religion, and had become one of the dynasty's most widely used emblems by the era of Shah Abbas.",
     sources: [
       { title: "The Meaning Behind The Lion & Sun: A Symbol of Persian Legacy", url: "https://thelionandthesun.org/378/the-lion-sun-a-symbol-of-persian-legacy/" },
+    ],
+  },
+  "ir-army": {
+    description: "The border is set in ornate Thuluth calligraphy quoting two Quranic verses shared across Iran's armed forces (Army, Revolutionary Guard and police alike) — 61:4, \"those who fight in His cause in ranks as if they were one concrete structure,\" and 8:60, \"prepare against them what you can of military power\" — drawn straight from the Quran rather than from Shia-specific tradition, to keep the wording neutral between Shia and Sunni Muslims. Iran's tricolour appears as a diagonal ribbon in each corner of the field, tying the branch flag back to the national flag. At the centre, a laurel wreath and the Army's own crest — a shield bearing an eagle over crossed swords, below the Islamic Republic's emblem — mark it as the flag of the ground forces (Artesh).",
+    sources: [
+      { title: "Pasdaran — Army of the Guardians of the Islamic Revolution, Iran — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ir%5Epasdr.html" },
+    ],
+  },
+  "ir-navy": {
+    description: "The border is set in ornate Thuluth calligraphy quoting two Quranic verses shared across Iran's armed forces (Army, Revolutionary Guard and police alike) — 61:4, \"those who fight in His cause in ranks as if they were one concrete structure,\" and 8:60, \"prepare against them what you can of military power\" — drawn straight from the Quran rather than from Shia-specific tradition, to keep the wording neutral between Shia and Sunni Muslims. Iran's tricolour appears as a diagonal ribbon in each corner of the field, tying the branch flag back to the national flag. At the centre, a gold anchor rising from blue waves within a roped circle identifies the Navy, with the Islamic Republic's emblem above and the force's own name lettered around the border of the medallion.",
+    sources: [
+      { title: "Pasdaran — Army of the Guardians of the Islamic Revolution, Iran — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ir%5Epasdr.html" },
+    ],
+  },
+  "ir-air-force": {
+    description: "The border is set in ornate Thuluth calligraphy quoting two Quranic verses shared across Iran's armed forces (Army, Revolutionary Guard and police alike) — 61:4, \"those who fight in His cause in ranks as if they were one concrete structure,\" and 8:60, \"prepare against them what you can of military power\" — drawn straight from the Quran rather than from Shia-specific tradition, to keep the wording neutral between Shia and Sunni Muslims. Iran's tricolour appears as a diagonal ribbon in each corner of the field, tying the branch flag back to the national flag. At the centre, silver wings flank a roundel in the national colours — green, white and red concentric rings, the standard mark used to identify friendly aircraft — beneath a wreath and the Islamic Republic's emblem, identifying the flag as the Air Force's own.",
+    sources: [
+      { title: "Pasdaran — Army of the Guardians of the Islamic Revolution, Iran — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ir%5Epasdr.html" },
     ],
   },
   "ir-naval-jack": {
