@@ -2,8 +2,7 @@
 #   FOTW has no flag page for either (my-labuan, my-putrajaya both 404). Their flags are modern territory
 #   designs with no reachable per-element symbolism. US-UM (US Minor Outlying Islands) is a group of
 #   uninhabited islands with no flag of its own. Confirmed walls.
-MY-15 MY-16
-US-UM
+MY-15 MY-16 US-UM
 
 # MT local councils — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/mt-NN.html).
 #   NOTE: FOTW's mt-NN page numbers are NOT the ISO 3166-2 MT-NN codes — FOTW numbers the 11 cities first
@@ -17,14 +16,6 @@ US-UM
 #   Żabbar (MT-64), Żebbuġ (MT-65), Żebbuġ Gozo (MT-66) — all now sourced in flagMeanings.ts. The councils
 #   below have a FOTW page giving only a bare blazon with NO stated per-element meaning — genuine walls.
 MT-01 MT-02 MT-04 MT-07 MT-08 MT-11 MT-12 MT-13 MT-15 MT-16 MT-17 MT-18 MT-19 MT-33 MT-34 MT-35 MT-36 MT-37 MT-38 MT-44 MT-46 MT-48 MT-54 MT-55 MT-59 MT-60 MT-67 MT-68
-HR-21
-PT-01
-PT-02
-PT-03
-PT-04
-PT-05
-PT-06
-PT-07
 # MX states — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/mx-XX.html).
 #   Most Mexican states use the coat of arms on a plain white field as a de-facto flag. FOTW
 #   documents per-element arms symbolism for Mexico City (MX-CMX), Colima (MX-COL), Hidalgo (MX-HID),
@@ -57,15 +48,10 @@ EC-A EC-B EC-C EC-G EC-H EC-L EC-N EC-O EC-R EC-S EC-U EC-W
 #   Chuquisaca (BO-H), Oruro (BO-O) and Pando (BO-N) — all now sourced in flagMeanings.ts. Walls:
 #   Potosí (BO-P, a 16th-c Vicuñas pennant, no per-element meaning) and Tarija (BO-T, no symbolism).
 BO-P BO-T
-PH-14
-PH-15
-PH-AKL
 PH-ANT
 PH-BIL
 PH-COM
 PH-DAV
-PH-DIN
-PH-DVO
 PH-EAS
 PH-GUI
 PH-IFU
@@ -89,28 +75,6 @@ PH-ZAN
 PH-ZAS
 PH-ZMB
 PH-ZSI
-KR-27
-KR-28
-KR-29
-KR-30
-KR-31
-KR-41
-KR-42
-KR-43
-KR-44
-KR-45
-KR-46
-KR-47
-KR-48
-KR-49
-KR-50
-FM-KSA
-FM-PNI
-FM-TRK
-FM-YAP
-GB-POW
-GB-ANS
-GB-GWN
 TH-30
 
 # HU cities with county rights — RE-VERIFIED against Flags of the World 2026-07. FOTW documents Győr's
