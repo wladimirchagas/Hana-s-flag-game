@@ -2717,6 +2717,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flags of the Ottoman Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_the_Ottoman_Empire" },
     ],
   },
+  "al-armed-forces": {
+    description: "This ceremonial flag places Albania's national coat of arms — the black double-headed eagle of the medieval Kastrioti dynasty on a red field, adopted for its association with Gjergj Kastrioti Skanderbeg's 15th-century resistance to Ottoman rule — at the centre, in the parade-flag style the Albanian Armed Forces use to carry the national emblem before troops on ceremonial occasions, distinct from the working national flag flown day to day.",
+    sources: [
+      { title: "List of Albanian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Albanian_flags" },
+      { title: "Flag of Albania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
+    ],
+  },
   "al-naval-ensign": {
     description: "The naval ensign places Albania's national flag — the black double-headed eagle of the medieval Kastrioti dynasty on red, revived as the national emblem for its association with Gjergj Kastrioti Skanderbeg's 15th-century resistance to Ottoman rule — in the canton of a plain white field, distinguishing vessels of the Albanian Naval Defence Force from the merchant and state variants that fly the plain national flag.",
     sources: [
@@ -5658,6 +5665,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
     sources: [
       { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
+    ],
+  },
+  "ge-war-flag": {
+    description: "Set out in a 2019 decree of Georgia's Ministry of Defence, the war flag of the Defence Forces is a scarlet field bearing a white cross reaching all four edges — representing Saint George, Georgia's patron saint — with a small stylised Bolnisi cross (bolnur-katskhuri, an early Georgian Christian form) in each corner. At the cross's centre sits a shield beneath a golden \"Iberian crown,\" recalling the ancient kingdom of Iberia (Kartli); the shield bears a crossed golden sword and a golden sling — the sling recalling the biblical King David, from whom the Bagrationi royal dynasty claimed descent.",
+    sources: [
+      { title: "Decree No. 46 of the Minister of Defence of Georgia (21 December 2019) — heraldika.ge", url: "https://www.heraldika.ge/uploads/tavdacva_saitistvis.pdf" },
     ],
   },
   "ge-army": {

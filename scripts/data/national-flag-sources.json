@@ -670,7 +670,20 @@
           "design": "The armed forces' flag.",
           "source": "https://en.wikipedia.org/wiki/List_of_Albanian_flags",
           "sha256": "3b5b932bcb6be6715240864280932e419ad0a290c5d4d2d25ef41060bfc92a88",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "This ceremonial flag places Albania's national coat of arms — the black double-headed eagle of the medieval Kastrioti dynasty on a red field, adopted for its association with Gjergj Kastrioti Skanderbeg's 15th-century resistance to Ottoman rule — at the centre, in the parade-flag style the Albanian Armed Forces use to carry the national emblem before troops on ceremonial occasions, distinct from the working national flag flown day to day.",
+            "sources": [
+              {
+                "title": "List of Albanian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Albanian_flags"
+              },
+              {
+                "title": "Flag of Albania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Albania"
+              }
+            ]
+          }
         },
         {
           "id": "al-naval-ensign",
@@ -12597,7 +12610,16 @@
           "design": "The military flag of the Defence Forces.",
           "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
           "sha256": "7575f1081c4f7f7bb98cd23904d4203e532036b1fa711d2d8789cd2fed9b5ca1",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "Set out in a 2019 decree of Georgia's Ministry of Defence, the war flag of the Defence Forces is a scarlet field bearing a white cross reaching all four edges — representing Saint George, Georgia's patron saint — with a small stylised Bolnisi cross (bolnur-katskhuri, an early Georgian Christian form) in each corner. At the cross's centre sits a shield beneath a golden \"Iberian crown,\" recalling the ancient kingdom of Iberia (Kartli); the shield bears a crossed golden sword and a golden sling — the sling recalling the biblical King David, from whom the Bagrationi royal dynasty claimed descent.",
+            "sources": [
+              {
+                "title": "Decree No. 46 of the Minister of Defence of Georgia (21 December 2019) — heraldika.ge",
+                "url": "https://www.heraldika.ge/uploads/tavdacva_saitistvis.pdf"
+              }
+            ]
+          }
         },
         {
           "id": "ge-army",
