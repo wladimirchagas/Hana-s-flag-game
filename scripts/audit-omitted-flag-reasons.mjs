@@ -35,7 +35,7 @@ let current = null;
 for (const raw of lines) {
   const line = raw.replace(/\r$/, "");
   if (line.trim().startsWith("#")) {
-    if (current) current = null; // a new comment run starts a new reason
+    current = null; // a new comment run starts a new reason
     pending.push(line.trim().replace(/^#\s?/, ""));
   } else if (isCode(line)) {
     if (pending.length) {
@@ -44,10 +44,18 @@ for (const raw of lines) {
       pending = [];
     }
     if (!current) {
+      // No comment immediately precedes this code line — it is NOT a continuation
+      // of whatever reason came before (that block already closed). Each such
+      // code-only line is its own reasonless block, so it is never silently
+      // absorbed into an unrelated, already-verified block above it.
       current = { reason: "(NO REASON GIVEN)", codes: [] };
       blocks.push(current);
     }
     current.codes.push(...codesOf(line));
+    current = null; // every legitimate reason puts all its codes on ONE line; a
+    // reason spanning several code lines (e.g. "MY-15 MY-16" + "US-UM") must name
+    // every group explicitly in its own comment text, not rely on this parser
+    // silently carrying a stale reason across unrelated lines below it.
   }
   // blank / other lines: keep the active reason, don't reset
 }

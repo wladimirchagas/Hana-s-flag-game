@@ -28,7 +28,7 @@ const shown = new Set([...meta.matchAll(/code:\s*"([A-Z]{2}-[A-Z0-9~]+)"/g)].map
 // universe = displayed ∩ flagged  (the subdivisions that appear in the flag grid with a flag)
 const universe = new Set([...shown].filter(c=>flagged.has(c)));
 const subs = read("src/api/subdivisions.ts");
-const suppressed = codesFrom(subs, "SUPPRESSED_SUBDIVISION_FLAGS");
+const suppressed = codesFrom(subs, "const SUPPRESSED_SUBDIVISION_FLAGS");
 for (const s of suppressed) universe.delete(s);
 const fm = read("src/data/flagMeanings.ts");
 const have = new Set([...fm.matchAll(/^  "?([A-Z]{2}-[A-Z0-9~]+)"?: \{/gm)].map(m=>m[1]));

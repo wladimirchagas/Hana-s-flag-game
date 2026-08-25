@@ -15230,6 +15230,198 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Constanța — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/Constan%C8%9Ba" },
     ],
   },
+
+  "PH-AKL": {
+    description:
+      "Aklan's provincial seal, adopted with the province's own 1956 creation, shows a sailboat and wavy " +
+      "lines for its coastal fishing communities, corn for the interior's staple crops, and coconut palms " +
+      "for its agroforestry — a shield Flags of the World reads as illustrating the province's economy " +
+      "directly, citing the Philippines' own \"Symbols of the State\" reference on local-government seals.",
+    sources: [
+      {
+        title: "Philippines Provincial Flags: Western Visayas — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/ph-vi.html",
+      },
+    ],
+  },
+  "KR-27": {
+    description:
+      "Daegu's flag, adopted 10 October 1996 and revised 29 December 2001, carries the city's official logo — three triangles and an oval — on a green field. Korean Wikipedia's dedicated flag article explains the shapes as Palgongsan, the mountain that rings the city, and the Nakdong River that runs through it, together expressing a forward-looking, outward-reaching Daegu.",
+    sources: [
+      { title: "대구광역시기 — 위키백과", url: "https://ko.wikipedia.org/wiki/대구광역시기" },
+    ],
+  },
+  "KR-28": {
+    description:
+      "Incheon's flag, adopted 8 April 1996, shows the city's official logo — combining the Hangul consonant ㅇ (from \"Incheon\"), the Hanja character 川 (\"cheon\", stream) and a wave motif — on a white field, per Korean Wikipedia's dedicated flag article. Together they represent ceaseless movement and the city's limitless potential as a trading hub whose port and airport move goods, services and information, and as Northeast Asia's gateway to the world.",
+    sources: [
+      { title: "인천광역시기 — 위키백과", url: "https://ko.wikipedia.org/wiki/인천광역시기" },
+    ],
+  },
+  "KR-29": {
+    description:
+      "Gwangju's flag, adopted 1 November 2000, centres the city's official logo on a white field: an orange circle for the sun and four white curves for people and for \"gwang\" (光, light) — the city's own name. Korean Wikipedia's dedicated flag article gives the sun and human figures as the design's core motifs, with a navy trapezoid and orange parallelogram beneath.",
+    sources: [
+      { title: "광주광역시기 — 위키백과", url: "https://ko.wikipedia.org/wiki/광주광역시기" },
+    ],
+  },
+  "KR-30": {
+    description:
+      "Daejeon's symbol mark, explained on the city's own government site, uses green petal shapes standing for farmland, home ground and the mugunghwa (rose of Sharon, Korea's national flower); the overall form evokes the Hanja character 大 (\"great\", Daejeon's own first syllable) and dynamic, outward growth — expressing the city's ambition to lead as Korea's hub of land, transport, administration, science, culture and logistics.",
+    sources: [
+      { title: "심벌마크 — 대전광역시청", url: "https://www.daejeon.go.kr/drh/DrhContentsHtmlView.do?menuSeq=1711" },
+    ],
+  },
+  "KR-31": {
+    description:
+      "Ulsan's flag, adopted 1 January 1995, carries the city's official logo on a white field: a teal dragon clutching a red yeouiju (a wish-fulfilling jewel) as it soars, per Korean Wikipedia's dedicated flag article. It expresses Ulsan's pioneering ambition as an advanced industrial and cultural city for the Pacific Rim era, and a future-facing image where nature and people, industry and culture, come together.",
+    sources: [
+      { title: "울산광역시기 — 위키백과", url: "https://ko.wikipedia.org/wiki/울산광역시기" },
+    ],
+  },
+  "KR-42": {
+    description:
+      "Gangwon's flag was adopted 9 June 2023, taking effect 11 June 2023 when Gangwon-do became Gangwon Special Self-Governing Province. Its official logo, built from the province's own name, uses an ascending motif: Korean Wikipedia's dedicated flag article reads the consonant ㄱ (from \"Gang\") and vowel ㅜ (from \"won\") as styled after ㄱ, the first letter of Hunminjeongeum and the Hangul alphabet's own first consonant — marking Gangwon as the place where a new chapter of Korea's history, and a new departure, begins.",
+    sources: [
+      { title: "강원특별자치도기 — 위키백과", url: "https://ko.wikipedia.org/wiki/강원특별자치도기" },
+    ],
+  },
+  "KR-43": {
+    description:
+      "North Chungcheong's flag, adopted 6 October 2023, shows the province's official logo on a white field. Korean Wikipedia's dedicated flag article reads the design as the mirrored consonants ㅊ and ㅂ (from \"Chungbuk\"), symmetrical left and right to express balanced growth toward the centre in every field, with an arrow-shaped space between them standing for the province's ambition to soar past the centre of Korea toward the centre of the world; the white ground stands for the purity of Chungbuk's people and their unlimited potential to reach the world.",
+    sources: [
+      { title: "충청북도기 — 위키백과", url: "https://ko.wikipedia.org/wiki/충청북도기" },
+    ],
+  },
+  "KR-44": {
+    description:
+      "South Chungcheong's flag, adopted 5 November 2012, carries the province's official logo on a white field — white standing, per Korean Wikipedia's dedicated flag article, for the plainness of Chungnam's people as descendants of the \"white-clad people\" and their will to create something from nothing. The logo itself is built on the motif of a great old tree, long regarded as a symbol of harmony, coexistence, abundance, peace, happiness, trust and communication — a gathering-place where neighbours shared affection and courtesy — expressing a wish for a happy Chungnam centred on its own people.",
+    sources: [
+      { title: "충청남도기 — 위키백과", url: "https://ko.wikipedia.org/wiki/충청남도기" },
+    ],
+  },
+  "KR-45": {
+    description:
+      "North Jeolla's flag was adopted 29 December 2023, taking effect 18 January 2024 when Jeollabuk-do became Jeonbuk Special Self-Governing Province. Its logo, per Korean Wikipedia's dedicated flag article, is built on the province's own name combined with the horizon seen across the Saemangeum reclamation area and the Honam plain — joining the land's historical memory with its unlimited possibility, and expressing Jeonbuk opening a new horizon toward the future. A green semicircle stretches along the flag's base.",
+    sources: [
+      { title: "전북특별자치도기 — 위키백과", url: "https://ko.wikipedia.org/wiki/전북특별자치도기" },
+    ],
+  },
+  "KR-46": {
+    description:
+      "South Jeolla's flag, established 3 January 2000 and revised 1 August 2016, shows the province's official logo on a white field: a gold square holding an orange circle, a rhythmic green leafy curve and a blue wave pattern, per Korean Wikipedia's dedicated flag article. Together they depict Jeonnam's own landscape — golden fields, the sun, green nature and the blue sea — with gold, the design's dominant colour, standing for abundance and the gold square for the province's fertile, golden fields and the hope-filled richness of its land.",
+    sources: [
+      { title: "전라남도기 — 위키백과", url: "https://ko.wikipedia.org/wiki/전라남도기" },
+    ],
+  },
+  "KR-47": {
+    description:
+      "North Gyeongsang's diamond-shaped symbol, explained on the province's own government site, draws on traditional patterns: the upper section reads as mountains stretching grandly, the right-centre as the East Sea advancing toward the world, and the lower-left as abundant plains. At the centre a crane flies above a river — the Nakdong, called \"the lifeblood of Yeongnam\" — for future development and prosperity, the whole expressing the pride, unity and pioneering spirit of \"Great Province Gyeongbuk\".",
+    sources: [
+      { title: "경북의 상징 — 심볼마크 — 경상북도청", url: "https://www.gb.go.kr/Main/page.do?mnu_uid=6808&LARGE_CODE=720&MEDIUM_CODE=60&SMALL_CODE=10&SMALL_CODE2=40" },
+    ],
+  },
+  "KR-48": {
+    description:
+      "South Gyeongsang's flag centres a circular mark of five coloured sections around a white core, documented in detail by Flags of the World: red at the top for the passionate spirit of Gyeongnam's people, who love their province and nation; green at the left for nature and industry in harmony; yellow at the right for the fertile earth as the base of life; blue at the bottom for the cleanliness of the Nakdong River and the South Sea; and white at the centre for a strong Gyeongnam that shines like the rising sun — the circle as a whole expressing unity, balanced development and the province's aspiration for continued growth.",
+    sources: [
+      { title: "South Gyeongsang Province, South Korea — Flags of the World", url: "https://www.crwflags.com/fotw/flags/kr-48.html" },
+    ],
+  },
+  "KR-49": {
+    description:
+      "Jeju's flag, adopted 20 April 2009, is built from three coloured semicircles, per Korean Wikipedia's dedicated flag article: blue for the clean sea facing the Pacific, green for Hallasan — the sacred, highest mountain at Jeju's centre — and orange for Jeju's status as a UNESCO World Natural Heritage site and international free city, standing for its rising 21st-century vision.",
+    sources: [
+      { title: "제주특별자치도기 — 위키백과", url: "https://ko.wikipedia.org/wiki/제주특별자치도기" },
+    ],
+  },
+  "KR-50": {
+    description:
+      "Sejong's CI, explained on the city's own government site, takes the Hangul letter ㅅ as its core motif — marking Sejong as Korea's first Hangul-named city — shaped into a traditional roof tile to express \"a happy living city built on optimal environmental infrastructure.\" The design also draws on the four trigrams of Korea's own national flag (乾坤坎離) for \"harmony and balance, creation and development,\" with upturned eaves for a forward-looking, globally exemplary city image; its three official colours — Sejong Sky Blue, Sejong Blue and Sejong Gray — are read as conveying a smart, future-oriented, developed city.",
+    sources: [
+      { title: "상징물(CI) — 세종특별자치시청", url: "https://www.sejong.go.kr/kor/sub01_0301.do" },
+    ],
+  },
+  "KR-41": {
+    description:
+      "Gyeonggi's current flag, adopted in 2021, is built from two diagonal wing-like shapes on a white field, per the province's own government site and Korean Wikipedia: green for a straight road moving forward, and for nature and peace, and blue for a flexible yet resolute spirit, trust, energy and future value — together expressing Gyeonggi's own onward momentum.",
+    sources: [
+      { title: "경기도기 — 위키백과", url: "https://ko.wikipedia.org/wiki/경기도기" },
+      { title: "경기도청 — 도기(道旗)", url: "https://www.gg.go.kr/" },
+    ],
+  },
+  "FM-KSA": {
+    description:
+      "Kosrae's state flag, adopted in 1983, sets a white silhouette of the island on a deep blue field for the Pacific Ocean surrounding it. Four white five-pointed stars are arranged in a diamond above the island, one for each of the Federated States of Micronesia's four states — Kosrae, Pohnpei, Chuuk and Yap — while a fafa pounding stone below stands for Kosrae's own distinct culture.",
+    sources: [
+      { title: "Kosrae (Micronesia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/fm-kos.html" },
+    ],
+  },
+  "FM-PNI": {
+    description:
+      "Pohnpei's state flag, adopted in December 1977 after a design competition won by student Rosendo Alex, shows a half coconut shell — a sakau cup, for the ceremonial drink central to Pohnpeian culture — at the centre of a blue field for the surrounding ocean. Eleven stars circle the cup, one for each of Pohnpei's municipalities, and a wreath of coconut leaves frames the whole design for the plant's importance to the state's economy and culture.",
+    sources: [
+      { title: "Pohnpei (Micronesia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/fm-pon.html" },
+    ],
+  },
+  "FM-TRK": {
+    description:
+      "Chuuk's state flag, first adopted in 1979 when the state was still called Truk, rings a white coconut palm at the centre of a blue field — for the Pacific Ocean — with 38 white stars, one for each of Chuuk's municipalities. The coconut tree stands for the state's natural resources and cultural heritage, and the circle of stars for the unity and harmony among its municipalities.",
+    sources: [
+      { title: "Chuuk State — Vexillology Wiki", url: "https://vexillology.miraheze.org/wiki/Chuuk_State" },
+    ],
+  },
+  "FM-YAP": {
+    description:
+      "Yap's state flag, adopted 30 May 1980 and first raised 1 March 1981, sets two of the state's own traditions on a blue field for the surrounding Pacific: a large white ring around a blue disc is Yap's famous rai — stone money carved with a hole through its centre, standing for wealth, history, trust and community — and beside it the silhouette of a traditional Yapese sailing canoe honours the navigators who read stars, wind and current to cross the ocean. A white five-pointed star inside the rai's centre marks Yap as one of the Federated States of Micronesia's four states.",
+    sources: [
+      { title: "Understanding the Yap State Flag — Visit Yap", url: "https://www.visityap.com/wp/yapblog/understanding-the-yap-state-flag/" },
+      { title: "Emblems and Symbols — Yap State Code, Title 1, Chapter 5", url: "http://fsmlaw.org/yap/code/title01/T01_Ch05.htm" },
+    ],
+  },
+  "HR-21": {
+    description:
+      "Zagreb's flag is blue bearing the city's coat of arms bordered in yellow: a silver three-towered castle on a green hill, with a golden eight-pointed star and a silver crescent moon above. The castle stands for the city on its hill, while the star and crescent — widely used in medieval heraldry as symbols of eternity — reach back to Gradec's own historical seals, the oldest of which survives from the 14th century, not long after King Béla IV granted Gradec status as a Free Royal City by the Golden Bull.",
+    sources: [
+      { title: "Coat of arms of Zagreb — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zagreb" },
+      { title: "Coat of arms (crest) of Zagreb — Heraldry-Wiki", url: "https://www.heraldry-wiki.com/wiki/Zagreb" },
+    ],
+  },
+  "TH-30": {
+    description:
+      "Nakhon Ratchasima's provincial seal, on an orange field, shows the Thao Suranari Monument before the city's Chumphon Gate. The monument depicts Khun Ying Mo — later honoured with the royally-bestowed title Thao Suranari — commemorating her role rallying the city's people to defeat the invading army of Chao Anouvong of Vientiane in 1826; the Chumphon Gate behind her is a surviving gate of the old city wall, built in the reign of King Narai.",
+    sources: [
+      { title: "ตราสัญลักษณ์ จังหวัดนครราชสีมา — nakhonratchasima.go.th", url: "https://www2.nakhonratchasima.go.th/content/logo" },
+    ],
+  },
+  "VE-W": {
+    description:
+      "The Federal Dependencies' flag is a green-white-blue horizontal triband with a red fish on the white band. Green stands for the diversity of flora found across Venezuela's federally-administered islands, white for the peace, tranquility and hospitality of their inhabitants, and the red fish for the sea as the islands' economic base — the source of both their fishing livelihood and their tourism.",
+    sources: [
+      { title: "Federal Dependencies of Venezuela — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Federal_Dependencies_of_Venezuela" },
+    ],
+  },
+  "PH-ILI": {
+    description:
+      "Iloilo's provincial seal, per the province's own government site, divides its shield into three fields: three green mountain peaks at the top for the range separating Iloilo from Capiz and Antique; a carabao head over waves at the left for agriculture and the province's rice production; and a ship before a smoking factory at the right for commerce, trade and industry.",
+    sources: [
+      { title: "Vision, Mission — Iloilo Provincial Government", url: "https://iloilo.gov.ph/en/vision-mission" },
+    ],
+  },
+  "PH-SLU": {
+    description:
+      "Sulu's provincial seal quarters a shield with a red field bearing a Christian cross, a yellow field bearing the Philippine sun, and a green field bearing a Muslim crescent and star, framing a walled structure at the centre — the province's own emblem deliberately joining Christian and Muslim symbols, alongside the national sun, in one design.",
+    sources: [
+      { title: "Sulu, Philippines — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ph-armm.html" },
+    ],
+  },
+  "PH-ZAS": {
+    description:
+      "Zamboanga del Sur's provincial seal, dated 1952, quarters trees for the forested land the province held at its creation, a fish for its rich fishing resources, coloured bands for its agricultural produce, and — in the centre — a vinta, the outrigger sail-boat emblematic of the Muslim-majority communities across Mindanao's southern coast, over logs for its lumber industry and ore for its mining potential, per the province's own official explanation.",
+    sources: [
+      { title: "Zamboanga Peninsula, Region IX, Philippines — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ph-ix.html" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */

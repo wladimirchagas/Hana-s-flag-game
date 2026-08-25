@@ -2,8 +2,7 @@
 #   FOTW has no flag page for either (my-labuan, my-putrajaya both 404). Their flags are modern territory
 #   designs with no reachable per-element symbolism. US-UM (US Minor Outlying Islands) is a group of
 #   uninhabited islands with no flag of its own. Confirmed walls.
-MY-15 MY-16
-US-UM
+MY-15 MY-16 US-UM
 
 # MT local councils — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/mt-NN.html).
 #   NOTE: FOTW's mt-NN page numbers are NOT the ISO 3166-2 MT-NN codes — FOTW numbers the 11 cities first
@@ -17,14 +16,6 @@ US-UM
 #   Żabbar (MT-64), Żebbuġ (MT-65), Żebbuġ Gozo (MT-66) — all now sourced in flagMeanings.ts. The councils
 #   below have a FOTW page giving only a bare blazon with NO stated per-element meaning — genuine walls.
 MT-01 MT-02 MT-04 MT-07 MT-08 MT-11 MT-12 MT-13 MT-15 MT-16 MT-17 MT-18 MT-19 MT-33 MT-34 MT-35 MT-36 MT-37 MT-38 MT-44 MT-46 MT-48 MT-54 MT-55 MT-59 MT-60 MT-67 MT-68
-HR-21
-PT-01
-PT-02
-PT-03
-PT-04
-PT-05
-PT-06
-PT-07
 # MX states — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/mx-XX.html).
 #   Most Mexican states use the coat of arms on a plain white field as a de-facto flag. FOTW
 #   documents per-element arms symbolism for Mexico City (MX-CMX), Colima (MX-COL), Hidalgo (MX-HID),
@@ -43,7 +34,6 @@ MX-AGU MX-BCN MX-CAM MX-CHH MX-CHP MX-COA MX-MOR MX-NAY MX-OAX MX-SIN MX-TAB MX-
 #   only (Tarragona, Cáceres, Pontevedra), or only the arms with no meaning (Girona, Las Palmas,
 #   Santa Cruz de Tenerife) — genuine walls.
 ES-CO ES-VA ES-T ES-GI ES-ZA ES-CC ES-PO ES-GC ES-TF
-VE-W
 # EC provinces — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/ec-X.html;
 #   FOTW uses one-letter codes, e.g. Orellana=ec-v, Cotopaxi=ec-x, Santo Domingo=ec-k, Santa Elena=ec-j).
 #   FOTW documents per-element symbolism for Orellana (EC-D), Esmeraldas (EC-E), Cañar (EC-F),
@@ -57,61 +47,40 @@ EC-A EC-B EC-C EC-G EC-H EC-L EC-N EC-O EC-R EC-S EC-U EC-W
 #   Chuquisaca (BO-H), Oruro (BO-O) and Pando (BO-N) — all now sourced in flagMeanings.ts. Walls:
 #   Potosí (BO-P, a 16th-c Vicuñas pennant, no per-element meaning) and Tarija (BO-T, no symbolism).
 BO-P BO-T
-PH-14
-PH-15
-PH-AKL
-PH-ANT
-PH-BIL
-PH-COM
-PH-DAV
-PH-DIN
-PH-DVO
-PH-EAS
-PH-GUI
-PH-IFU
-PH-ILI
-PH-ILS
-PH-LAN
-PH-LAS
-PH-MAS
-PH-MOU
-PH-MSR
-PH-NCO
-PH-PLW
-PH-SAR
-PH-SIG
-PH-SLU
-PH-SUN
-PH-SUR
-PH-TAR
-PH-TAW
-PH-ZAN
-PH-ZAS
-PH-ZMB
-PH-ZSI
-KR-27
-KR-28
-KR-29
-KR-30
-KR-31
-KR-41
-KR-42
-KR-43
-KR-44
-KR-45
-KR-46
-KR-47
-KR-48
-KR-49
-KR-50
-FM-KSA
-FM-PNI
-FM-TRK
-FM-YAP
-GB-POW
-GB-ANS
-GB-GWN
-TH-30
+# PH provinces — RE-VERIFIED against Flags of the World's regional pages 2026-08 (each province's flag
+#   is its seal on a plain field; FOTW's per-region pages were checked for every code below, plus a
+#   further web search per province for a dedicated government/heraldry source). Iloilo (PH-ILI), Sulu
+#   (PH-SLU) and Zamboanga del Sur (PH-ZAS) were recovered this way and are now sourced in
+#   flagMeanings.ts. The provinces below have no reachable per-element seal symbolism — genuine walls:
+#   Antique, Guimaras (crwflags.com/fotw/flags/ph-vi.html — seal exists, no meaning given);
+#   Biliran, Eastern Samar (ph-viii.html — seal exists, no meaning given);
+#   Siquijor (ph-vii.html — seal exists, no meaning given);
+#   Ilocos Sur (ph-i.html — seal exists, no meaning given; Commons/Wikipedia file pages describe the
+#     seal's visual elements — a tricolour shield, grass and trees — but not what they symbolise);
+#   Mountain Province, Ifugao (ph-car.html — no meaning given for either; Ifugao's flower and the
+#     Banaue Rice Terraces are documented provincial symbols but the SEAL itself has no sourced blazon);
+#   Tarlac (a 2019-redesigned seal; only its three stars, for the province's three congressional
+#     districts, are sourced — every other element is undocumented), Zambales (ph-ix.html — seal
+#     exists, no meaning given despite a Facebook post title promising "Symbols & Meanings");
+#   Masbate (ph-v.html — only the founding-year numerals "19"/"01" are sourced; the province's own
+#     "Official Seal and Symbolism" page, masbate.gov.ph/official-seal-and-symbolism/, returns HTTP 403
+#     and its mirror is empty, so the rest of the seal's symbolism could not be read);
+#   Davao de Oro (ph-xi.html — "Flag not known"; only the province's general gold-themed branding
+#     around its 2019 renaming is sourced, not the seal's own elements), Davao del Norte (ph-xi.html —
+#     FOTW's own wording is a hedge, "probably accounts for the gold cross on the shield", too
+#     speculative to state as fact);
+#   Sarangani (ph-xii.html — "Flag not known"), Cotabato (ph-xii.html describes a wavy kris sword that
+#     does NOT match the bundled seal's actual mountain/bridge/bird design — a mismatched source, not a
+#     confirmed one; the province's own cotabatoprov.gov.ph seal page carries no explanatory text);
+#   Lanao del Norte, Misamis Oriental (ph-x.html — seals exist, no meaning given for either);
+#   Lanao del Sur, Tawi-Tawi (ph-armm.html — seals exist, no meaning given for either);
+#   Zamboanga del Norte, Zamboanga Sibugay (ph-ix.html — "Flag not known" for Sibugay; no meaning for
+#     Zamboanga del Norte);
+#   Surigao del Sur (ph-xiii.html — seal exists, no meaning given), Dinagat Islands (not documented on
+#     FOTW's Caraga page at all);
+#   Palawan (ph-ivb.html — only Puerto Princesa city's flag, not the province's own, has a documented
+#     — and FOTW-hedged, "probably" — meaning).
+PH-ANT PH-BIL PH-COM PH-DAV PH-EAS PH-GUI PH-IFU PH-ILS PH-LAN PH-LAS PH-MAS PH-MOU PH-MSR PH-NCO PH-PLW PH-SAR PH-SIG PH-SUN PH-SUR PH-TAR PH-TAW PH-ZAN PH-ZMB PH-ZSI
 
 # HU cities with county rights — RE-VERIFIED against Flags of the World 2026-07. FOTW documents Győr's
 #   arms symbolism (crwflags.com/fotw/flags/hu-gyor.html) — now sourced in flagMeanings.ts. FOTW's simple
