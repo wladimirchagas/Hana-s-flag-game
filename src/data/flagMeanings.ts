@@ -15387,6 +15387,41 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms (crest) of Zagreb — Heraldry-Wiki", url: "https://www.heraldry-wiki.com/wiki/Zagreb" },
     ],
   },
+  "TH-30": {
+    description:
+      "Nakhon Ratchasima's provincial seal, on an orange field, shows the Thao Suranari Monument before the city's Chumphon Gate. The monument depicts Khun Ying Mo — later honoured with the royally-bestowed title Thao Suranari — commemorating her role rallying the city's people to defeat the invading army of Chao Anouvong of Vientiane in 1826; the Chumphon Gate behind her is a surviving gate of the old city wall, built in the reign of King Narai.",
+    sources: [
+      { title: "ตราสัญลักษณ์ จังหวัดนครราชสีมา — nakhonratchasima.go.th", url: "https://www2.nakhonratchasima.go.th/content/logo" },
+    ],
+  },
+  "VE-W": {
+    description:
+      "The Federal Dependencies' flag is a green-white-blue horizontal triband with a red fish on the white band. Green stands for the diversity of flora found across Venezuela's federally-administered islands, white for the peace, tranquility and hospitality of their inhabitants, and the red fish for the sea as the islands' economic base — the source of both their fishing livelihood and their tourism.",
+    sources: [
+      { title: "Federal Dependencies of Venezuela — Vexillology Wiki", url: "https://vexillology.fandom.com/wiki/Federal_Dependencies_of_Venezuela" },
+    ],
+  },
+  "PH-ILI": {
+    description:
+      "Iloilo's provincial seal, per the province's own government site, divides its shield into three fields: three green mountain peaks at the top for the range separating Iloilo from Capiz and Antique; a carabao head over waves at the left for agriculture and the province's rice production; and a ship before a smoking factory at the right for commerce, trade and industry.",
+    sources: [
+      { title: "Vision, Mission — Iloilo Provincial Government", url: "https://iloilo.gov.ph/en/vision-mission" },
+    ],
+  },
+  "PH-SLU": {
+    description:
+      "Sulu's provincial seal quarters a shield with a red field bearing a Christian cross, a yellow field bearing the Philippine sun, and a green field bearing a Muslim crescent and star, framing a walled structure at the centre — the province's own emblem deliberately joining Christian and Muslim symbols, alongside the national sun, in one design.",
+    sources: [
+      { title: "Sulu, Philippines — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ph-armm.html" },
+    ],
+  },
+  "PH-ZAS": {
+    description:
+      "Zamboanga del Sur's provincial seal, dated 1952, quarters trees for the forested land the province held at its creation, a fish for its rich fishing resources, coloured bands for its agricultural produce, and — in the centre — a vinta, the outrigger sail-boat emblematic of the Muslim-majority communities across Mindanao's southern coast, over logs for its lumber industry and ore for its mining potential, per the province's own official explanation.",
+    sources: [
+      { title: "Zamboanga Peninsula, Region IX, Philippines — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ph-ix.html" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
