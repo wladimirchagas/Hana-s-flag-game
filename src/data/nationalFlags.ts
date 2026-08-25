@@ -550,7 +550,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "CR": [
     { id: "cr-official-national", category: "official", name: "Flag of Costa Rica", from: 1848, to: 9999, primary: true, path: "flags/cr.svg", design: "The national flag of Costa Rica, in the form adopted in 1848.", source: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
     { id: "cr-state", category: "official", name: "State flag and ensign of Costa Rica", from: 1998, to: 9999, path: "national-flags/cr/costarica-state.svg", design: "The national flag charged with the full coat of arms — flown by the state, where the civil flag carries none.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
-    { id: "cr-1823", category: "historical", name: "First flag of Costa Rica", from: 1823, to: 1823, priorPolity: "the Free State of Costa Rica within the Federal Republic of Central America", path: "national-flags/cr/costarica-1823.svg", design: "The first flag flown by Costa Rica itself, as a free state inside the Central American federation.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
+    { id: "cr-1823", category: "historical", name: "First flag of Costa Rica", from: 1823, to: 1823, priorPolity: "the Free State of Costa Rica within the Federal Republic of Central America", path: "national-flags/cr/costarica-1823.svg", design: "A horizontal triband of sky-blue, gold and sky-blue, from Costa Rica's first years as a free province after independence — a chaotic period in which the flag changed repeatedly before the present tricolour was fixed in 1848.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
     { id: "cr-mexican-empire", category: "historical", name: "Flag of the First Mexican Empire", from: 1821, to: 1823, sovereign: "the First Mexican Empire", path: "national-flags/cr/costarica-mexican-empire.svg", design: "The flag of Iturbide's empire, which Central America joined for two years after separating from Spain.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
     { id: "cr-spain", category: "historical", name: "War ensign of Spain", from: 1785, to: 1821, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The Spanish ensign of 1785, the last flown over the province.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
     { id: "cr-burgundy", category: "historical", name: "Cross of Burgundy", from: 1541, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Cross of Burgundy, the flag of New Spain.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
@@ -4510,6 +4510,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The coat of arms charged on the state flag shows three volcanoes for the country's three mountain ranges, a merchant ship on each ocean for its maritime history, and an arc of seven stars for its seven provinces.",
     sources: [
       { title: "Coat of arms of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica" },
+    ],
+  },
+  "cr-1823": {
+    description: "The central gold stripe is said to have stood for \"América de oro\" — a \"Golden America\" — an aspirational image of the newly independent isthmus's promise, framed by the sky-blue bands. Costa Rica's flag changed repeatedly in its first turbulent years of independence (1821–1848), and sources disagree on the precise dates each design flew; this blue-gold-blue triband is among the earliest, predating the blue-white-blue flag Costa Rica flew as a state of the Central American Federation.",
+    sources: [
+      { title: "Historia — Bandera de Costa Rica", url: "https://www.banderadecostarica.net/historia" },
     ],
   },
   "cr-mexican-empire": {
