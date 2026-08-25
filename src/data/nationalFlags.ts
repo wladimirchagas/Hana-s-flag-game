@@ -2761,6 +2761,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Armenian Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Armenian_Soviet_Socialist_Republic" },
     ],
   },
+  "am-transcaucasian": {
+    description: "The federation's yellow-black-red tricolour flew for barely five weeks — declared on 22 April 1918 and dissolved on 26 May — because its three constituent peoples could never agree on how to respond to the advancing Ottoman army. Georgian leaders, facing demands for territorial concessions they judged unacceptable, concluded (in the words of the Georgian Menshevik leader Irakli Tsereteli) that the federation was \"unable to continue\" for want of unity, and withdrew to declare independence; Armenia and Azerbaijan followed within two days, each raising its own separate national tricolour instead.",
+    sources: [
+      { title: "Transcaucasian Democratic Federative Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Transcaucasian_Democratic_Federative_Republic" },
+    ],
+  },
   "am-russian-empire": {
     description: "The white-blue-red flag of the Russian Empire draws on the arms of the Grand Principality of Moscow, showing Saint George — cloaked in blue, mounted on a white horse — spearing a dragon on a red field. Tradition reads red as courage and the battle for faith, blue as fidelity and the protection of the Mother of God, and white as the Tsar, the fatherland and the nobility. Recognised for land use from 1883, it remained the empire's flag until the 1917 revolution.",
     sources: [
@@ -2807,6 +2813,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Portugal's monarchy flag, introduced by Queen Maria II in 1830 and flown until the 1910 republican revolution, set the royal coat of arms on a blue-and-white field — blue standing for royalty. Unlike the later republican flag, its arms carried no armillary sphere (that emblem, added in 1816 to represent Brazil, had been dropped once Brazil became independent) and were topped instead with a royal crown.",
     sources: [
       { title: "Portugal - 1830 historical flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pt_1830.html" },
+    ],
+  },
+  "ao-ndongo": {
+    description: "This flag bearing a cross is recorded in the illustrated 1687 \"Istorica Descrizione\" of the Italian Capuchin missionary Giovanni Cavazzi da Montecuccolo, who served for years at the Ndongo and Matamba court of Queen Njinga. The cross reflects the era's Portuguese Catholic missionary contact with the kingdom — Njinga herself was baptised in 1622, taking the name Dona Ana de Sousa as part of a political bid for Portuguese recognition of her claim to the throne, though she later renounced that faith when she felt betrayed by her Portuguese allies. No independent source documents a symbolic meaning specific to this flag beyond Cavazzi's own illustration.",
+    sources: [
+      { title: "Nzinga of Ndongo and Matamba — Wikipedia", url: "https://en.wikipedia.org/wiki/Nzinga_of_Ndongo_and_Matamba" },
+      { title: "Flag of the Kingdom of Ndongo — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Flag_of_the_Kingdom_of_Ndongo.svg" },
     ],
   },
   "ao-kongo": {
@@ -6964,6 +6977,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flags of Empire: British Africa", url: "https://imperialflags.blogspot.com/2009/01/imperial-british-east-africa-company.html" },
     ],
   },
+  "ke-oman": {
+    description: "White has traditionally been associated with the Imam, the elected religious leader of Oman's Ibadi Muslim community — historically a separate and sometimes rival authority to the Sultan, the temporal ruler in Muscat under whose Al Bu Said dynasty Zanzibar and the Swahili coast were governed. The sword reflects the crossed-swords-and-khanjar royal crest the Al Bu Said dynasty adopted in the mid-18th century, the same emblem that, elaborated, remains Oman's national emblem today.",
+    sources: [
+      { title: "Flag of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
+      { title: "National emblem of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
+    ],
+  },
   "ke-portugal": {
     description: "This royal standard set the Portuguese coat of arms on a plain white field, a format the monarchy used with variations from the reign of João II until 1830. At its centre, five small blue shields arranged in a cross each carry five white discs — together read as the five wounds of Christ and the five Moorish kings said to have been defeated at the Battle of Ourique — while seven gold castles ring the shield, traditionally symbolising victories over Moorish strongholds.",
     sources: [
@@ -7350,6 +7370,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Kazakh SSR's flag followed standard Soviet design — a red field with a gold hammer, sickle and star — but was unique among Soviet republics for the sky-blue stripe along its base, thought to echo the flag of the historic Kazakh Khanate and so preserving a visual link to Kazakh identity through the Soviet era. Independent Kazakhstan's own flag, adopted in 1992, carries the same gold and light-blue colours forward.",
     sources: [
       { title: "Flag of the Kazakh Soviet Socialist Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Kazakh_Soviet_Socialist_Republic" },
+    ],
+  },
+  "kz-alash": {
+    description: "A draft constitution prepared by Barlybek Syrtanov for the Alash Autonomy's leader Alikhan Bukeikhanov specified a green-red-yellow horizontal tricolour with a crescent and star, and gave each colour an explicit meaning: green for the country's devotion to Islam, red for the blood shed defending the country, and yellow for the wide Kazakh steppe and freedom. Other units flying different banners are also documented from the autonomy's brief, decentralised existence (1917–1920) — including a green flag bearing the shahada flown by the Uil cavalry regiment — reflecting how unsettled its symbols remained before the Bolshevik advance ended the autonomy.",
+    sources: [
+      { title: "Флаг Алашской автономии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D0%BB%D0%B0%D1%88%D1%81%D0%BA%D0%BE%D0%B9_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%B8" },
     ],
   },
   "kz-russian-empire": {

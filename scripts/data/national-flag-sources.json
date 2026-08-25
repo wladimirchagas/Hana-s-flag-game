@@ -827,7 +827,16 @@
           "design": "The flag of the five-week federation of Armenia, Azerbaijan and Georgia in April–May 1918.",
           "source": "https://en.wikipedia.org/wiki/List_of_Armenian_flags",
           "sha256": "f9264e518b001613760a983e0097ad28c52fa90b1cb6f7426425453cf7101f75",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The federation's yellow-black-red tricolour flew for barely five weeks — declared on 22 April 1918 and dissolved on 26 May — because its three constituent peoples could never agree on how to respond to the advancing Ottoman army. Georgian leaders, facing demands for territorial concessions they judged unacceptable, concluded (in the words of the Georgian Menshevik leader Irakli Tsereteli) that the federation was \"unable to continue\" for want of unity, and withdrew to declare independence; Armenia and Azerbaijan followed within two days, each raising its own separate national tricolour instead.",
+            "sources": [
+              {
+                "title": "Transcaucasian Democratic Federative Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Transcaucasian_Democratic_Federative_Republic"
+              }
+            ]
+          }
         },
         {
           "id": "am-cilicia",
@@ -1067,7 +1076,20 @@
           "design": "A 17th-century flag of Ndongo as recorded by the missionary Giovanni Cavazzi da Montecuccolo.",
           "source": "https://en.wikipedia.org/wiki/List_of_Angolan_flags",
           "sha256": "45fcc0eea0ba247553eae8fad1a322e12f5032029230a34806c9ad43abaf0ad7",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "This flag bearing a cross is recorded in the illustrated 1687 \"Istorica Descrizione\" of the Italian Capuchin missionary Giovanni Cavazzi da Montecuccolo, who served for years at the Ndongo and Matamba court of Queen Njinga. The cross reflects the era's Portuguese Catholic missionary contact with the kingdom — Njinga herself was baptised in 1622, taking the name Dona Ana de Sousa as part of a political bid for Portuguese recognition of her claim to the throne, though she later renounced that faith when she felt betrayed by her Portuguese allies. No independent source documents a symbolic meaning specific to this flag beyond Cavazzi's own illustration.",
+            "sources": [
+              {
+                "title": "Nzinga of Ndongo and Matamba — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Nzinga_of_Ndongo_and_Matamba"
+              },
+              {
+                "title": "Flag of the Kingdom of Ndongo — Wikimedia Commons",
+                "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Kingdom_of_Ndongo.svg"
+              }
+            ]
+          }
         },
         {
           "id": "ao-president",
@@ -17933,7 +17955,20 @@
           "design": "A white field bearing a red sword and inscription — the flag flown along the Swahili coast while it was ruled from Muscat and then Zanzibar.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
           "sha256": "149c47c07b00e2fb9b767d08b8ecb8cee6df700b0f2ed2d905ca782d570c1531",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "White has traditionally been associated with the Imam, the elected religious leader of Oman's Ibadi Muslim community — historically a separate and sometimes rival authority to the Sultan, the temporal ruler in Muscat under whose Al Bu Said dynasty Zanzibar and the Swahili coast were governed. The sword reflects the crossed-swords-and-khanjar royal crest the Al Bu Said dynasty adopted in the mid-18th century, the same emblem that, elaborated, remains Oman's national emblem today.",
+            "sources": [
+              {
+                "title": "Flag of Oman — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Oman"
+              },
+              {
+                "title": "National emblem of Oman — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Oman"
+              }
+            ]
+          }
         },
         {
           "id": "ke-portugal",
@@ -19569,7 +19604,16 @@
           "design": "The flag of the short-lived Kazakh autonomous government of 1917–1920.",
           "source": "https://en.wikipedia.org/wiki/List_of_Kazakh_flags",
           "sha256": "6be577d896d104bd1497e499010a8b9f7650fdb7090c1157b7eb0f777b18c78d",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "A draft constitution prepared by Barlybek Syrtanov for the Alash Autonomy's leader Alikhan Bukeikhanov specified a green-red-yellow horizontal tricolour with a crescent and star, and gave each colour an explicit meaning: green for the country's devotion to Islam, red for the blood shed defending the country, and yellow for the wide Kazakh steppe and freedom. Other units flying different banners are also documented from the autonomy's brief, decentralised existence (1917–1920) — including a green flag bearing the shahada flown by the Uil cavalry regiment — reflecting how unsettled its symbols remained before the Bolshevik advance ended the autonomy.",
+            "sources": [
+              {
+                "title": "Флаг Алашской автономии — Википедия",
+                "url": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D0%BB%D0%B0%D1%88%D1%81%D0%BA%D0%BE%D0%B9_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%B8"
+              }
+            ]
+          }
         },
         {
           "id": "kz-president",
