@@ -16629,10 +16629,19 @@
           "name": "Flag of the Islamic Republic of Iran Army",
           "commons": "Flag of the Islamic Republic of Iran Army.svg",
           "file": "ir/iran-army.svg",
-          "design": "The national flag charged with the army's emblem.",
+          "design": "An olive-green field bordered in gold Quranic calligraphy, with the national tricolour as a diagonal ribbon in each corner and a wreathed emblem — a shield, eagle and crossed swords — at the centre.",
           "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
           "sha256": "8ba8ff21c343ba7ceb20cf2c6470d53b5cb63e8017c110d3b7474e86556a28b0",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The border is set in ornate Thuluth calligraphy quoting two Quranic verses shared across Iran's armed forces (Army, Revolutionary Guard and police alike) — 61:4, \"those who fight in His cause in ranks as if they were one concrete structure,\" and 8:60, \"prepare against them what you can of military power\" — drawn straight from the Quran rather than from Shia-specific tradition, to keep the wording neutral between Shia and Sunni Muslims. Iran's tricolour appears as a diagonal ribbon in each corner of the field, tying the branch flag back to the national flag. At the centre, a laurel wreath and the Army's own crest — a shield bearing an eagle over crossed swords, below the Islamic Republic's emblem — mark it as the flag of the ground forces (Artesh).",
+            "sources": [
+              {
+                "title": "Pasdaran — Army of the Guardians of the Islamic Revolution, Iran — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ir%5Epasdr.html"
+              }
+            ]
+          }
         },
         {
           "id": "ir-navy",
@@ -16640,10 +16649,19 @@
           "name": "Flag of the Islamic Republic of Iran Navy",
           "commons": "Flag of the Islamic Republic of Iran Navy.svg",
           "file": "ir/iran-navy.svg",
-          "design": "The national flag charged with the navy's emblem.",
+          "design": "A white field bordered in navy blue with gold Quranic calligraphy, the national tricolour as a diagonal ribbon in each corner, and a roped medallion at the centre bearing a gold anchor rising from blue waves.",
           "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
           "sha256": "1eb394a844b8fb2bf498985a3d5cd0349b4dfa9a790a028a2afb8bc48c78db80",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The border is set in ornate Thuluth calligraphy quoting two Quranic verses shared across Iran's armed forces (Army, Revolutionary Guard and police alike) — 61:4, \"those who fight in His cause in ranks as if they were one concrete structure,\" and 8:60, \"prepare against them what you can of military power\" — drawn straight from the Quran rather than from Shia-specific tradition, to keep the wording neutral between Shia and Sunni Muslims. Iran's tricolour appears as a diagonal ribbon in each corner of the field, tying the branch flag back to the national flag. At the centre, a gold anchor rising from blue waves within a roped circle identifies the Navy, with the Islamic Republic's emblem above and the force's own name lettered around the border of the medallion.",
+            "sources": [
+              {
+                "title": "Pasdaran — Army of the Guardians of the Islamic Revolution, Iran — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ir%5Epasdr.html"
+              }
+            ]
+          }
         },
         {
           "id": "ir-air-force",
@@ -16651,10 +16669,19 @@
           "name": "Flag of the Islamic Republic of Iran Air Force",
           "commons": "Flag of the Islamic Republic of Iran Air Force.svg",
           "file": "ir/iran-air-force.svg",
-          "design": "The national flag charged with the air force's emblem.",
+          "design": "A sky-blue field bordered in navy blue with gold Quranic calligraphy, the national tricolour as a diagonal ribbon in each corner, and a roped medallion at the centre bearing silver wings around a green-white-red roundel.",
           "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
           "sha256": "d94cd9e7200b6f96fba540d59b662b7439ce855be3e9fb253e910faa062e4ac9",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The border is set in ornate Thuluth calligraphy quoting two Quranic verses shared across Iran's armed forces (Army, Revolutionary Guard and police alike) — 61:4, \"those who fight in His cause in ranks as if they were one concrete structure,\" and 8:60, \"prepare against them what you can of military power\" — drawn straight from the Quran rather than from Shia-specific tradition, to keep the wording neutral between Shia and Sunni Muslims. Iran's tricolour appears as a diagonal ribbon in each corner of the field, tying the branch flag back to the national flag. At the centre, silver wings flank a roundel in the national colours — green, white and red concentric rings, the standard mark used to identify friendly aircraft — beneath a wreath and the Islamic Republic's emblem, identifying the flag as the Air Force's own.",
+            "sources": [
+              {
+                "title": "Pasdaran — Army of the Guardians of the Islamic Revolution, Iran — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/ir%5Epasdr.html"
+              }
+            ]
+          }
         },
         {
           "id": "ir-naval-jack",
