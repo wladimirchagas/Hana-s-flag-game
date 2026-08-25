@@ -38708,7 +38708,16 @@
           "design": "A dark blue pennant bearing the national flag at the hoist.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
           "sha256": "f95d46434da30a49a391e2144bd3a99c29c4e1b6d0d5c3fab202c21c624a62f9",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "Set out in Article 27 of Decree 61/2019/NĐ-CP, the pennant's sea-blue field reflects the force's maritime role, patrolling and enforcing law in Vietnam's territorial waters and exclusive economic zone. It bears the national emblem at the centre with a yellow arrow running horizontally behind it, and every Coast Guard vessel — plus any civilian ship cooperating with the Coast Guard during an operation — is required to fly it.",
+            "sources": [
+              {
+                "title": "Decree 61/2019/NĐ-CP, Article 27 — LuatVietnam",
+                "url": "https://luatvietnam.vn/an-ninh-quoc-gia/nghi-dinh-61-2019-nd-cp-huong-dan-luat-canh-sat-bien-viet-nam-175235-d1.html"
+              }
+            ]
+          }
         },
         {
           "id": "vn-emblem",
