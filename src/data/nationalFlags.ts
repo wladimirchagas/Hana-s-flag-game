@@ -1544,7 +1544,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mz-1974", category: "historical", name: "First flag of Mozambique", from: 1974, to: 1975, path: "national-flags/mz/mozambique-1974.svg", design: "The FRELIMO-derived flag of the transitional government.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
     { id: "mz-portugal", category: "historical", name: "Flag of Portugal (1911–1975)", from: 1911, to: 1975, sovereign: "Portugal", path: "national-flags/mz/mozambique-portugal.svg", design: "The republican flag of Portugal, flown over Mozambique until independence.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
     { id: "mz-portugal-1667", category: "historical", name: "Flag of the Kingdom of Portugal (1667–1707)", from: 1667, to: 1707, sovereign: "Portugal", path: "national-flags/mz/mozambique-portugal-1667.svg", design: "The Portuguese royal arms in their 1667 pattern, from the era of the coastal captaincies.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
-    { id: "mz-armed-forces", category: "military", name: "Flag of the Mozambique Defence Armed Forces", from: 1990, to: 9999, path: "national-flags/mz/mozambique-armed-forces.svg", design: "The armed forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
+    { id: "mz-armed-forces", category: "military", name: "Flag of the Mozambique Defence Armed Forces", from: 1990, to: 9999, path: "national-flags/mz/mozambique-armed-forces.svg", design: "A red field bordered by a gold zigzag pattern, with an emblem at the centre combining a lion's head, crossed rifles, an eagle over an anchor, and maize and palm sprays, wrapped in a scroll reading \"Forças Armadas de Defesa de Moçambique.\"", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
     { id: "mz-air-force", category: "military", name: "Flag of the Mozambique Air Force", path: "national-flags/mz/mozambique-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
     { id: "mz-president", category: "standard", name: "Presidential Standard of Mozambique", from: 1990, to: 9999, path: "national-flags/mz/mozambique-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
     { id: "mz-emblem", category: "coatofarms", name: "Emblem of Mozambique", from: 1990, to: 9999, path: "national-flags/mz/mozambique-emblem.svg", design: "A rifle and hoe crossed over an open book, on a map of the country with a rising sun and waves, within maize and sugar cane beneath a red star.", source: "https://en.wikipedia.org/wiki/Emblem_of_Mozambique" },
@@ -2135,7 +2135,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "TT": [
     { id: "tt-official-national", category: "official", name: "Flag of Trinidad and Tobago", from: 1962, to: 9999, primary: true, path: "flags/tt.svg", design: "The national flag of Trinidad and Tobago, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
     { id: "tt-colonial", category: "historical", name: "Cross of Burgundy", from: 1516, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Cross of Burgundy, flown over Trinidad through the long Spanish colonial period before the island passed to Britain.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
-    { id: "tt-defence-force", category: "military", name: "Flag of the Trinidad and Tobago Defence Force", from: 1962, to: 9999, path: "national-flags/tt/trinidad-defence-force.svg", design: "The defence force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    { id: "tt-defence-force", category: "military", name: "Flag of the Trinidad and Tobago Defence Force", from: 1962, to: 9999, path: "national-flags/tt/trinidad-defence-force.svg", design: "A red-navy-cyan horizontal triband with, at the centre, a gold-winged anchor and crossed spears above a shield bearing two birds and three gold ships, and a scroll reading \"Trinidad and Tobago Defence Force.\"", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
     { id: "tt-civil-ensign", category: "maritime", name: "Civil Ensign of Trinidad and Tobago", from: 1962, to: 9999, path: "national-flags/tt/trinidad-civil-ensign.svg", design: "A red ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
     { id: "tt-naval-ensign", category: "maritime", name: "Naval Ensign of Trinidad and Tobago", from: 1962, to: 9999, path: "national-flags/tt/trinidad-naval-ensign.svg", design: "A white ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
     { id: "tt-president", category: "standard", name: "Flag of the President of Trinidad and Tobago", from: 1976, to: 9999, path: "national-flags/tt/trinidad-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
@@ -2270,8 +2270,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "uz-russian-empire", category: "historical", name: "Flag of the Russian Empire", from: 1876, to: 1917, sovereign: "the Russian Empire", path: "national-flags/uz/uz-russian-empire.svg", design: "The white-blue-red flag of the Russian Empire, which ruled the Uzbek lands from 1876 until the empire fell in 1917.", source: "https://en.wikipedia.org/wiki/Russian_Empire" },
     { id: "uz-bukhara", category: "historical", name: "Flag of the Emirate of Bukhara", from: 1785, to: 1870, priorPolity: "the Emirate of Bukhara", path: "national-flags/uz/uzbekistan-bukhara.svg", design: "The flag of the emirate that ruled from Bukhara before the Russian protectorate.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
     { id: "uz-timur", category: "historical", name: "Banner of Timur", from: 1370, to: 1507, priorPolity: "the Timurid Empire", path: "national-flags/uz/uzbekistan-timur.svg", design: "The banner attributed to Tamerlane, whose empire was ruled from Samarkand.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
-    { id: "uz-army", category: "military", name: "Flag of the Uzbek Ground Forces", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-army.svg", design: "The ground forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
-    { id: "uz-air-force", category: "military", name: "Flag of the Uzbek Air and Air Defence Forces", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-air-force.svg", design: "The air and air defence forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
+    { id: "uz-army", category: "military", name: "Flag of the Uzbek Ground Forces", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-army.svg", design: "Uzbekistan's national flag (blue-white-green, divided by narrow red fillets, with a white crescent and twelve stars in the canton) captioned in gold across the white stripe: \"O'zbekiston Respublikasi Qurolli Kuchlari\" (Armed Forces of the Republic of Uzbekistan).", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
+    { id: "uz-air-force", category: "military", name: "Flag of the Uzbek Air and Air Defence Forces", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-air-force.svg", design: "A sunburst of alternating teal and yellow triangular rays radiating from a red-white-green roundel at the centre.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
     { id: "uz-president", category: "standard", name: "Presidential Standard of Uzbekistan", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
     { id: "uz-emblem", category: "coatofarms", name: "Emblem of Uzbekistan", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-emblem.svg", design: "A Huma bird with outstretched wings over a sunrise, mountains and two rivers, within cotton and wheat.", source: "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan" },
     { id: "uz-passport", category: "passport", name: "Passport of Uzbekistan", path: "national-flags/uz/uz-passport.webp", design: "The cover of the Uzbekistan passport.", source: "https://gicg.net/passport/uz/" },
@@ -8716,6 +8716,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
     ],
   },
+  "mz-armed-forces": {
+    description: "The emblem visibly combines the badges of all three services under one command: crossed rifles for the Army, an eagle for the Air Force, and an anchor for the Navy, framed by maize and other crop sprays echoing the produce shown on Mozambique's own national emblem. FADM itself was formed in 1994 by merging the formerly-opposed FPLM (the governing Frelimo party's army) and Renamo's guerrilla forces after the civil war, so a single flag visibly uniting all branches under one badge also reflects the force's own origin as a unification.",
+    sources: [
+      { title: "Mozambique Defence Armed Forces — Wikipedia", url: "https://en.wikipedia.org/wiki/Mozambique_Defence_Armed_Forces" },
+    ],
+  },
   "mz-air-force": {
     description: "The Mozambique Air Force's flag carries the service's roundel: a black disc bearing a red upward-pointing triangle around a yellow emblem of a cog wheel encircling corn stalks and sugar cane, with an AK-47 crossed over a hoe above a red sun and an open white book. Each element repeats the meaning of the wider national emblem — the book for education, the hoe for agricultural production, the rifle for the defence of the revolution, and the cog wheel for industry — over a small green outline of Mozambique itself.",
     sources: [
@@ -11202,6 +11208,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Cross of Burgundy — Wikipedia", url: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     ],
   },
+  "tt-defence-force": {
+    description: "The shield reproduces the charges of Trinidad and Tobago's own 1962 coat of arms: three gold ships for the Santa María, the Pinta and the Niña, the vessels of Christopher Columbus's 1498 voyage on which he sighted Trinidad, and two birds representing the hummingbird — Trinidad is nicknamed \"the Land of the Hummingbird\" for the sixteen-plus species recorded there — and the cocrico, native to Tobago.",
+    sources: [
+      { title: "Coat of arms of Trinidad and Tobago — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago" },
+    ],
+  },
   "tt-civil-ensign": {
     description: "Trinidad and Tobago's civil ensign, adopted at independence in 1962, is a red field with the national flag in the canton, following the British Ensign system introduced in 1864 in which the Red Ensign marked a merchant vessel — distinct from the White Ensign flown by warships and the Blue Ensign flown by government service ships. The newly independent country kept this colour-coded convention, replacing only the Union Flag in the canton with its own.",
     sources: [
@@ -11870,6 +11882,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Three equal rings arranged in a triangle formed the personal emblem of Timur (Tamerlane), attested on his seal and coinage by contemporaries including the Castilian ambassador Ruy González de Clavijo and the Arab historian Ibn Arabshah. The sign illustrated Timur's own title \"Sahib-Qiran,\" an astrological epithet meaning \"Lord of the Fortunate Conjunction\" (of the benevolent planets Jupiter and Venus), and was read as a mark of the empire's claimed sovereignty over the known world.",
     sources: [
       { title: "Timurid Empire — Wikipedia", url: "https://en.wikipedia.org/wiki/Timurid_Empire" },
+    ],
+  },
+  "uz-army": {
+    description: "The Ground Forces fly the national flag itself, simply captioned with the force's name, rather than a distinct badge — so the flag carries the same symbolism as Uzbekistan's national flag: blue for the sky and water, white for peace, green for nature (and, by tradition, Islam), the red fillets for the life force running through all living things, the crescent for the new state's rebirth, and twelve stars for the months and signs of the ancient Central Asian calendar.",
+    sources: [
+      { title: "Flag of Uzbekistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan" },
+    ],
+  },
+  "uz-air-force": {
+    description: "The roundel follows the convention most air forces worldwide use to mark friendly aircraft with a set of concentric national-coloured rings, here rendered in the red, white and green found in Uzbekistan's own state symbols. The radiating sunburst behind it is a common air-force motif standing for the sky and flight rather than a documented Uzbekistan-specific emblem.",
+    sources: [
+      { title: "Aircraft Roundels and Fin Flashes — Flags of the World", url: "https://www.crwflags.com/fotw/flags/xf-rou.html" },
     ],
   },
   "uz-president": {
