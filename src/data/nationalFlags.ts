@@ -7808,6 +7808,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
+  "lv-courland": {
+    description: "No source documents a specific rationale for this plain red-over-white state flag's own design. The same two colours, however, are independently attested on Courland's separate merchant ensign — a quartered red-and-white flag flown by the trading ships Duke Jacob Kettler sent as far as the duchy's own overseas colonies in Tobago and the Gambia during his reign (1642–1682), the peak of Courland's prosperity and international standing. Latvian historians cite this Courland precedent as evidence that red and white carried a genuine local pedigree in the region long before the 20th-century Latvian national flag was adopted.",
+    sources: [
+      { title: "Sarkanbaltās krāsas Latvijas vēsturē — pro un contra — Barikadopēdija", url: "https://www.barikadopedija.lv/raksti/054942" },
+    ],
+  },
   "lv-naval-ensign": {
     description: "A white field bears a burgundy-red cross fimbriated in white, extending to the flag's edges — a Nordic-cross-style design adapted to Latvia's own colours, first flown from 1919 to 1940 by the fledgling republic's Coast Guard Squadron (renamed the Latvian Navy in 1938 and presented its flag under the motto 'We are united by the holy name of Latvia') and restored in 1991 when the Navy was re-established after Latvia regained independence.",
     sources: [
