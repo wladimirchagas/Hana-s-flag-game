@@ -511,7 +511,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cm-1960", category: "historical", name: "First flag of Cameroon", from: 1960, to: 1961, path: "national-flags/cm/cameroon-1960.svg", design: "The plain green-red-yellow tricolour adopted at independence.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
     { id: "cm-british", category: "historical", name: "Flag of British Cameroons", from: 1916, to: 1961, sovereign: "the United Kingdom", path: "national-flags/cm/cameroon-british.svg", design: "The flag of the British-administered part of the territory, which voted in 1961 on which country to join.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
     { id: "cm-german", category: "historical", name: "Colonial flag of the German Empire", from: 1884, to: 1916, sovereign: "the German Empire", path: "national-flags/cm/cameroon-german.svg", design: "The imperial colonial flag flown over Kamerun until the First World War partitioned it.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
-    { id: "cm-bornu", category: "historical", name: "Flag of the Bornu Empire", from: 1380, to: 1884, priorPolity: "the Bornu Empire", path: "national-flags/cm/cameroon-bornu.svg", design: "The flag of the empire that held the country's far north for five centuries before European rule.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
+    { id: "cm-bornu", category: "historical", name: "Flag of the Bornu Empire", from: 1380, to: 1884, priorPolity: "the Bornu Empire", path: "national-flags/cm/cameroon-bornu.svg", design: "A brown field bearing a white crescent shape, recorded as a detail on the 1439 Vallseca Atlas.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
     { id: "cm-arms", category: "coatofarms", name: "Coat of arms of Cameroon", from: 1986, to: 9999, path: "national-flags/cm/cameroon-arms.svg", design: "A shield in the flag's colours bearing a map of the country and the scales of justice, over crossed fasces, between two banners.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cameroon" },
     { id: "cm-passport", category: "passport", name: "Passport of Cameroon", path: "national-flags/cm/cm-passport.webp", design: "The cover of the Cameroon passport.", source: "https://gicg.net/passport/cm/" },
     { id: "cm-football-crest", category: "footballcrest", name: "Crest of the Cameroon national football team", path: "national-flags/cm/cm-football-crest.png", design: "The crest of the Cameroon national football team — a shield in Cameroon's national colours (green, red and gold) bearing a football beneath a gold star, on a banner reading “FECA FOOT”.", source: "https://en.wikipedia.org/wiki/Cameroon_national_football_team" },
@@ -1518,7 +1518,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "my-malaya", category: "historical", name: "Flag of the Federation of Malaya", from: 1950, to: 1963, path: "national-flags/my/malaya-1950.svg", design: "Eleven red and white stripes with a crescent and an eleven-point star — one for each state of the Federation.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-north-borneo-crown", category: "historical", name: "Flag of the Crown Colony of North Borneo", from: 1948, to: 1963, sovereign: "the United Kingdom", path: "national-flags/my/north-borneo-1948.svg", design: "The Blue Ensign flown after the Second World War, when North Borneo became a Crown colony until it joined Malaysia in 1963 as Sabah.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-straits", category: "historical", name: "Flag of the Straits Settlements", from: 1925, to: 1946, sovereign: "the United Kingdom", path: "national-flags/my/straits-settlements.svg", design: "A Blue Ensign with the badge of the Straits Settlements — Penang, Malacca and Singapore under direct British rule.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
-    { id: "my-labuan-colony", category: "historical", name: "Flag of the Crown Colony of Labuan", from: 1912, to: 1946, sovereign: "the United Kingdom", path: "national-flags/my/labuan-colony.svg", design: "A Blue Ensign defaced with a ship, flown over the island now one of Malaysia's three Federal Territories.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
+    { id: "my-labuan-colony", category: "historical", name: "Flag of the Crown Colony of Labuan", from: 1912, to: 1946, sovereign: "the United Kingdom", path: "national-flags/my/labuan-colony.svg", design: "A Blue Ensign defaced with a badge showing the silhouette of Labuan island, a rising sun, and a schooner sailing in the foreground.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-north-borneo", category: "historical", name: "Flag of North Borneo", from: 1902, to: 1946, sovereign: "the United Kingdom", path: "national-flags/my/north-borneo-1902.svg", design: "A Blue Ensign defaced with the badge of the North Borneo Chartered Company, which administered the territory that is now Sabah.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-fms", category: "historical", name: "Flag of the Federated Malay States", from: 1895, to: 1946, sovereign: "the United Kingdom", path: "national-flags/my/federated-malay-states.svg", design: "Four horizontal stripes of white, red, yellow and black with a tiger in the centre — the four protected states under British residency.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-dutch-malacca", category: "historical", name: "The Prince's Flag, Dutch Malacca", from: 1641, to: 1795, sovereign: "the Dutch Republic", path: "national-flags/my/dutch-malacca.svg", design: "The orange-white-blue flag of the Dutch Republic, flown over Malacca after the Dutch took it from Portugal.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
@@ -3093,6 +3093,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Russia — Britannica", url: "https://www.britannica.com/topic/flag-of-Russia" },
     ],
   },
+  "az-nakhichevan": {
+    description: "This is not a reconstruction: the flag itself was captured by Russian troops around 1827, during the campaign that ended with the khanate's surrender that June, and it is preserved today in a museum collection in St Petersburg — one of the few khanate-era flags from the region whose physical object, rather than merely a documented description, survives. The khanate was formally annexed to the Russian Empire in 1828 under the Treaty of Turkmenchay. No source documents a specific meaning for the eight-pointed star.",
+    sources: [
+      { title: "Azeri Khanates — Flags of the World", url: "https://www.crwflags.com/fotw/flags/az_khan.html" },
+    ],
+  },
   "az-land-forces": {
     description: "The Azerbaijani Land Forces' flag mirrors the national tricolour of blue, red and green, with the service's emblem at the centre and the green stripe charged in yellow with the words 'Azərbaycan Quru Qoşunları' (Azerbaijani Land Forces). It carries the same colour symbolism as the national flag: blue for the country's Turkic heritage, red for progress, and green for Islam, the same faith, ethnicity and modernity the tricolour was designed to express when it was first adopted in 1918.",
     sources: [
@@ -4321,6 +4327,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Reichskolonialflagge combined the black-white-red of the German Empire's own flag with a crowned imperial eagle on a white disc. Used from the early 1900s, it asserted the authority of the German Empire across its overseas possessions, flying over government stations, harbours and barracks in Germany's African, Chinese and Pacific colonies just as the plain imperial flag did at home.",
     sources: [
       { title: "FG-004 – Imperial Flag – Reichsdienstflagge c. 1905–1912 — Flaggeek", url: "https://www.flaggeek.net/p/imperial-german-colonial-flag-ca.html" },
+    ],
+  },
+  "cm-bornu": {
+    description: "This flag is drawn from a single source: a detail on the Gabriel de Vallseca Atlas of 1439, a Majorcan portolan chart of the kind Mediterranean cartographers compiled from merchants' and travellers' reports of distant kingdoms. Such 15th-century European atlases are the earliest surviving record of many West African polities' heraldry, but they document only what the cartographer was told or imagined, not an explanation of the design — no source states what the crescent was meant to represent.",
+    sources: [
+      { title: "Flag of the Bornu Empire — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Flag_of_the_Bornu_Empire.svg" },
     ],
   },
   "cm-arms": {
@@ -8571,6 +8583,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Straits Settlements' badge — three gold imperial crowns separated by a red inverted pall (an upside-down Y) — represented the colony's three constituent settlements: Penang, Malacca and Singapore, one crown for each, set on a British Blue Ensign.",
     sources: [
       { title: "Flag of the British Straits Settlements (1874-1942) — SembangKuala", url: "https://sembangkuala.wordpress.com/2009/06/28/flag-of-the-british-straits-settlements-1874-1942/" },
+    ],
+  },
+  "my-labuan-colony": {
+    description: "The badge depicts the island itself — Labuan's own silhouette rather than a generic coastal scene — with a schooner under sail in the foreground, reflecting the colony's role as a coaling station and free port on the shipping route between Singapore and Hong Kong after the Royal Navy established it in 1848 chiefly to help suppress piracy in the South China Sea.",
+    sources: [
+      { title: "Labuan — Flag in Lexicon and Shop", url: "https://www.flag-encyclopedia.com/flabuan_me.htm" },
+      { title: "Crown Colony of Labuan — Wikipedia", url: "https://en.wikipedia.org/wiki/Crown_Colony_of_Labuan" },
     ],
   },
   "my-north-borneo": {

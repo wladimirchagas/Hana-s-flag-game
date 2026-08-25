@@ -2111,7 +2111,16 @@
           "design": "The banner of one of the khanates that governed the territory before the Russian conquest.",
           "source": "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags",
           "sha256": "0f3652656faf15f2c407938dcc9eda54595d2fcea8685e05c4e3d6d50b2f2dd1",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "This is not a reconstruction: the flag itself was captured by Russian troops around 1827, during the campaign that ended with the khanate's surrender that June, and it is preserved today in a museum collection in St Petersburg — one of the few khanate-era flags from the region whose physical object, rather than merely a documented description, survives. The khanate was formally annexed to the Russian Empire in 1828 under the Treaty of Turkmenchay. No source documents a specific meaning for the eight-pointed star.",
+            "sources": [
+              {
+                "title": "Azeri Khanates — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/az_khan.html"
+              }
+            ]
+          }
         },
         {
           "id": "az-president",
@@ -7189,10 +7198,19 @@
           "priorPolity": "the Bornu Empire",
           "commons": "Flag of the Bornu Empire.svg",
           "file": "cm/cameroon-bornu.svg",
-          "design": "The flag of the empire that held the country's far north for five centuries before European rule.",
+          "design": "A brown field bearing a white crescent shape, recorded as a detail on the 1439 Vallseca Atlas.",
           "source": "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags",
           "sha256": "4ed9389e4e0f91bb871852c68eb8e150af390e186bb3d276903d0747d2f7682b",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "This flag is drawn from a single source: a detail on the Gabriel de Vallseca Atlas of 1439, a Majorcan portolan chart of the kind Mediterranean cartographers compiled from merchants' and travellers' reports of distant kingdoms. Such 15th-century European atlases are the earliest surviving record of many West African polities' heraldry, but they document only what the cartographer was told or imagined, not an explanation of the design — no source states what the crescent was meant to represent.",
+            "sources": [
+              {
+                "title": "Flag of the Bornu Empire — Wikimedia Commons",
+                "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Bornu_Empire.svg"
+              }
+            ]
+          }
         },
         {
           "id": "cm-arms",
@@ -24831,10 +24849,23 @@
           "sovereign": "the United Kingdom",
           "commons": "Flag of Labuan (1912–1946).svg",
           "file": "my/labuan-colony.svg",
-          "design": "A Blue Ensign defaced with a ship, flown over the island now one of Malaysia's three Federal Territories.",
+          "design": "A Blue Ensign defaced with a badge showing the silhouette of Labuan island, a rising sun, and a schooner sailing in the foreground.",
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "f0bf3c67f218a9baceb9b32b0e09146d81153a2f223bbb984169d9ee67807cd5",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The badge depicts the island itself — Labuan's own silhouette rather than a generic coastal scene — with a schooner under sail in the foreground, reflecting the colony's role as a coaling station and free port on the shipping route between Singapore and Hong Kong after the Royal Navy established it in 1848 chiefly to help suppress piracy in the South China Sea.",
+            "sources": [
+              {
+                "title": "Labuan — Flag in Lexicon and Shop",
+                "url": "https://www.flag-encyclopedia.com/flabuan_me.htm"
+              },
+              {
+                "title": "Crown Colony of Labuan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Crown_Colony_of_Labuan"
+              }
+            ]
+          }
         },
         {
           "id": "my-penang-colony",
