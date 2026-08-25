@@ -21274,7 +21274,16 @@
           "design": "The state flag of the duchy that held western Latvia — a small Baltic state that briefly held colonies in Tobago and the Gambia.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia",
           "sha256": "148090c74e0209af5b846ed2e081a5fc68e0cf9fd8785871b1d841b9a2ce9ede",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "No source documents a specific rationale for this plain red-over-white state flag's own design. The same two colours, however, are independently attested on Courland's separate merchant ensign — a quartered red-and-white flag flown by the trading ships Duke Jacob Kettler sent as far as the duchy's own overseas colonies in Tobago and the Gambia during his reign (1642–1682), the peak of Courland's prosperity and international standing. Latvian historians cite this Courland precedent as evidence that red and white carried a genuine local pedigree in the region long before the 20th-century Latvian national flag was adopted.",
+            "sources": [
+              {
+                "title": "Sarkanbaltās krāsas Latvijas vēsturē — pro un contra — Barikadopēdija",
+                "url": "https://www.barikadopedija.lv/raksti/054942"
+              }
+            ]
+          }
         },
         {
           "id": "lv-president",
