@@ -25118,10 +25118,19 @@
           "to": 9999,
           "commons": "Flag of the Mozambique Defence Armed Forces.svg",
           "file": "mz/mozambique-armed-forces.svg",
-          "design": "The armed forces' flag.",
+          "design": "A red field bordered by a gold zigzag pattern, with an emblem at the centre combining a lion's head, crossed rifles, an eagle over an anchor, and maize and palm sprays, wrapped in a scroll reading \"Forças Armadas de Defesa de Moçambique.\"",
           "source": "https://en.wikipedia.org/wiki/List_of_Mozambican_flags",
           "sha256": "99f4987bead51dfb98bf9ce6458eafbe87a07d8eae38fa38f6338d86c66adeb7",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The emblem visibly combines the badges of all three services under one command: crossed rifles for the Army, an eagle for the Air Force, and an anchor for the Navy, framed by maize and other crop sprays echoing the produce shown on Mozambique's own national emblem. FADM itself was formed in 1994 by merging the formerly-opposed FPLM (the governing Frelimo party's army) and Renamo's guerrilla forces after the civil war, so a single flag visibly uniting all branches under one badge also reflects the force's own origin as a unification.",
+            "sources": [
+              {
+                "title": "Mozambique Defence Armed Forces — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Mozambique_Defence_Armed_Forces"
+              }
+            ]
+          }
         },
         {
           "id": "mz-air-force",
@@ -35265,10 +35274,19 @@
           "to": 9999,
           "commons": "Trinidad and Tobago Defence Force Flag.svg",
           "file": "tt/trinidad-defence-force.svg",
-          "design": "The defence force's flag.",
+          "design": "A red-navy-cyan horizontal triband with, at the centre, a gold-winged anchor and crossed spears above a shield bearing two birds and three gold ships, and a scroll reading \"Trinidad and Tobago Defence Force.\"",
           "source": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags",
           "sha256": "81b7da37ea44b2995e97b48d3953c15d2b58c042574fb98ab404494ea9b4a0d8",
-          "fetched": "2026-08-11"
+          "fetched": "2026-08-11",
+          "meaning": {
+            "description": "The shield reproduces the charges of Trinidad and Tobago's own 1962 coat of arms: three gold ships for the Santa María, the Pinta and the Niña, the vessels of Christopher Columbus's 1498 voyage on which he sighted Trinidad, and two birds representing the hummingbird — Trinidad is nicknamed \"the Land of the Hummingbird\" for the sixteen-plus species recorded there — and the cocrico, native to Tobago.",
+            "sources": [
+              {
+                "title": "Coat of arms of Trinidad and Tobago — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago"
+              }
+            ]
+          }
         },
         {
           "id": "tt-arms",
@@ -37752,10 +37770,19 @@
           "to": 9999,
           "commons": "Uzbekistan Armed Forces (Latin script).svg",
           "file": "uz/uzbekistan-army.svg",
-          "design": "The ground forces' flag.",
+          "design": "Uzbekistan's national flag (blue-white-green, divided by narrow red fillets, with a white crescent and twelve stars in the canton) captioned in gold across the white stripe: \"O'zbekiston Respublikasi Qurolli Kuchlari\" (Armed Forces of the Republic of Uzbekistan).",
           "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
           "sha256": "520065942496da35a3e42ba4ded3754f6e095da8b4af7ac7cda048e4966969fb",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The Ground Forces fly the national flag itself, simply captioned with the force's name, rather than a distinct badge — so the flag carries the same symbolism as Uzbekistan's national flag: blue for the sky and water, white for peace, green for nature (and, by tradition, Islam), the red fillets for the life force running through all living things, the crescent for the new state's rebirth, and twelve stars for the months and signs of the ancient Central Asian calendar.",
+            "sources": [
+              {
+                "title": "Flag of Uzbekistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan"
+              }
+            ]
+          }
         },
         {
           "id": "uz-air-force",
@@ -37765,10 +37792,19 @@
           "to": 9999,
           "commons": "Flag of the Uzbekistan Air and Air Defence Forces.svg",
           "file": "uz/uzbekistan-air-force.svg",
-          "design": "The air and air defence forces' flag.",
+          "design": "A sunburst of alternating teal and yellow triangular rays radiating from a red-white-green roundel at the centre.",
           "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
           "sha256": "c830ea5ee8bd06ae200ea17be825b1e9d5633fb70652f9c2ee2e75d6be8dc600",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "meaning": {
+            "description": "The roundel follows the convention most air forces worldwide use to mark friendly aircraft with a set of concentric national-coloured rings, here rendered in the red, white and green found in Uzbekistan's own state symbols. The radiating sunburst behind it is a common air-force motif standing for the sky and flight rather than a documented Uzbekistan-specific emblem.",
+            "sources": [
+              {
+                "title": "Aircraft Roundels and Fin Flashes — Flags of the World",
+                "url": "https://www.crwflags.com/fotw/flags/xf-rou.html"
+              }
+            ]
+          }
         },
         {
           "id": "uz-emblem",
