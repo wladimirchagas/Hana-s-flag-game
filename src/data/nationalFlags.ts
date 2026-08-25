@@ -12073,6 +12073,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wikipedia — List of flags of Vietnam", url: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
     ],
   },
+  "vn-coast-guard": {
+    description: "Set out in Article 27 of Decree 61/2019/NĐ-CP, the pennant's sea-blue field reflects the force's maritime role, patrolling and enforcing law in Vietnam's territorial waters and exclusive economic zone. It bears the national emblem at the centre with a yellow arrow running horizontally behind it, and every Coast Guard vessel — plus any civilian ship cooperating with the Coast Guard during an operation — is required to fly it.",
+    sources: [
+      { title: "Decree 61/2019/NĐ-CP, Article 27 — LuatVietnam", url: "https://luatvietnam.vn/an-ninh-quoc-gia/nghi-dinh-61-2019-nd-cp-huong-dan-luat-canh-sat-bien-viet-nam-175235-d1.html" },
+    ],
+  },
   "vn-emblem": {
     description: "The emblem is defined by the constitution as a circle bearing a five-pointed gold star on red, framed by ears of rice above half a cogwheel and the name of the state. The two framing charges are the two halves of the workforce the socialist republic is founded on: the rice stands for agriculture and the cogwheel for industry. The designer Bùi Trang Chước first drew an anvil at the foot of the wreath; Hồ Chí Minh asked for it to be replaced because an anvil is an individual craftsman's tool, and modern industry needed a modern symbol — so the cogwheel took its place. The star and the red field are those of the national flag.",
     sources: [
