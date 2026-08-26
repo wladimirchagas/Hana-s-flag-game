@@ -2,6 +2,7 @@ import { UN_MEMBER_CODES } from "../lib/unMemberStates";
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
 import { CONTINENT_GROUPS, SUBREGION_GROUPS } from "../lib/continentGroups";
 import { COUNTRY_FACTS } from "../data/countryFacts";
+import type { QuizSymbol, SymbolClue } from "../lib/quizSymbols";
 
 export type Country = {
   name: string;
@@ -21,6 +22,22 @@ export type Country = {
   languages?: string[];
   /** Currencies — one per row in the panel summary. */
   currencies?: { code: string; name: string; symbol?: string }[];
+  /**
+   * Set only when the game is quizzing a national SYMBOL rather than the flag
+   * (a coat of arms, a passport cover, a football crest, a former flag …).
+   * `flagSvg` then holds that symbol's image, so every consumer — the card, the
+   * answer burst, the results grid — shows what was actually asked without
+   * knowing packs exist. The three fields below carry what only a symbol
+   * question needs.
+   */
+  symbolPack?: QuizSymbol;
+  /** The symbol's name, dates and sourced attribution, shown on reveal. */
+  symbolCaption?: string;
+  /** The sourced explainer, for the text pack (which shows no image at all). */
+  symbolClue?: SymbolClue;
+  /** The country's real national flag, kept so "Match the pair" can offer it as
+   *  an ANSWER while `flagSvg` shows the arms as the question. */
+  nationalFlagSvg?: string;
 };
 
 export type Continent =

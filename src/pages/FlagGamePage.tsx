@@ -34,11 +34,23 @@ import {
   paramsToGameConfig,
   type GameConfig,
 } from "../lib/gameShareUrl";
+import { HistoricalFlagGamePage } from "./HistoricalFlagGamePage";
+import {
+  QUIZ_SYMBOL_LABELS,
+  QUIZ_SYMBOL_NOUNS,
+  QUIZ_SYMBOL_NOUNS_PLURAL,
+  QUIZ_SYMBOL_PROMPTS,
+  QUIZ_SYMBOL_SLUGS,
+  answersAreFlags,
+} from "../lib/quizSymbols";
 import "../App.css";
 
 type QuizState = {
   flagCount: number;
 };
+
+/** Answer buttons shown per question in the "Match the pair" deck. */
+const MATCH_PAIR_OPTIONS = 6;
 
 /**
  * Resolve the game config from router state (set when launched in-app) or,
@@ -55,6 +67,17 @@ function useResolvedGameConfig(): GameConfig {
 
 export default function FlagGamePage() {
   const config = useResolvedGameConfig();
+
+  // The two historical decks answer with a ruling power or a period, not a
+  // country, so they get their own component tree (hooks are never conditional).
+  if (config.historical) {
+    return (
+      <HistoricalFlagGamePage
+        ask={config.historical.ask}
+        questionCount={config.historical.questionCount}
+      />
+    );
+  }
 
   // Disputed territories game: separate component tree so hooks aren't conditional
   if (config.disputedTerritories) {
@@ -114,14 +137,20 @@ function FlagGameInner({
   // and the empty-config default (All 195 World Flags). Flag Master answers
   // are always chosen from the dropdown, never a button grid (owner rule).
   const isFlagMaster = !isQuickQuiz && !isCustomGame;
+  const symbol = config.symbol ?? "flag";
+  const isSymbolGame = symbol !== "flag";
   const game = useGame({
     filterCodes,
     allowRetry: isCustomGame || isQuickQuiz,
     flagCount: quiz?.flagCount ?? null,
     // optionCount matches flagCount so the answer choices scale with the quiz size.
-    optionCount: quiz?.flagCount ?? null,
+    // "Match the pair" always needs a bounded, visible set: its answers are flag
+    // images, which the search dropdown cannot render, so it is the one Flag
+    // Master deck that answers with buttons.
+    optionCount: quiz?.flagCount ?? (answersAreFlags(symbol) ? MATCH_PAIR_OPTIONS : null),
     maxAttemptsPerFlag: isQuickQuiz ? 1 : Infinity,
     useFullAlternatives: isGroupGame && groupGame.hardcore,
+    symbol,
   });
   const { saveGameToLeaderboard, openLeaderboard } = useLeaderboard();
   const { activeProfile } = useProfile();
@@ -165,17 +194,20 @@ function FlagGameInner({
 
   // Derive a stable game mode string used for leaderboard filtering.
   const gameMode = useMemo((): string => {
-    if (isQuickQuiz && quiz) return `quiz-${quiz.flagCount}`;
-    if (isCustomGame) return "hana";
+    // A symbol round and a flag round are not comparable scores, so each pack
+    // gets its own board rather than mixing into the flag one.
+    const packSuffix = isSymbolGame ? `-${QUIZ_SYMBOL_SLUGS[symbol]}` : "";
+    if (isQuickQuiz && quiz) return `quiz-${quiz.flagCount}${packSuffix}`;
+    if (isCustomGame) return `hana${packSuffix}`;
     if (isGroupGame && groupGame) {
       const slug = groupGame.groupLabel
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/^-|-$/g, "");
-      return `group${groupGame.hardcore ? "-hardcore" : ""}-${slug}`;
+      return `group${groupGame.hardcore ? "-hardcore" : ""}-${slug}${packSuffix}`;
     }
-    return "all-195";
-  }, [isQuickQuiz, isCustomGame, isGroupGame, quiz, groupGame]);
+    return `all-195${packSuffix}`;
+  }, [isQuickQuiz, isCustomGame, isGroupGame, quiz, groupGame, isSymbolGame, symbol]);
 
   const leaderboardFilter = useMemo((): LeaderboardFilter => {
     let label: string;
@@ -188,8 +220,19 @@ function FlagGameInner({
     } else {
       label = "Flag Master";
     }
+    if (isSymbolGame) label = `${label} · ${QUIZ_SYMBOL_LABELS[symbol]}`;
     return { gameMode, totalFlags: game.totalFlags, label };
-  }, [gameMode, game.totalFlags, isQuickQuiz, isCustomGame, isGroupGame, quiz, groupGame]);
+  }, [
+    gameMode,
+    game.totalFlags,
+    isQuickQuiz,
+    isCustomGame,
+    isGroupGame,
+    quiz,
+    groupGame,
+    isSymbolGame,
+    symbol,
+  ]);
 
   // Show the big finish celebration overlay when the game ends, until the
   // player dismisses it. Reset if the player somehow ends up back in the
@@ -437,6 +480,8 @@ function FlagGameInner({
           totalAnswered={game.totalAnswered}
           totalFlags={game.totalFlags}
           playedAllFlags={playedAllFlags}
+          itemNoun={QUIZ_SYMBOL_NOUNS[symbol]}
+          itemNounPlural={QUIZ_SYMBOL_NOUNS_PLURAL[symbol]}
           elapsedMs={elapsedMs}
           playerName={playerName}
           onPlayerNameChange={(name) => {
@@ -477,7 +522,7 @@ function FlagGameInner({
       <main className="card">
         <header className="card-header">
           <h1>
-            Guess the Flag{" "}
+            {isSymbolGame ? "Guess the Country" : "Guess the Flag"}{" "}
             {isCustomGame && <span className="card-header__chip">Hana's Game</span>}
             {isQuickQuiz && (
               <span className="card-header__chip">Quick Quiz</span>
@@ -487,9 +532,16 @@ function FlagGameInner({
                 {groupGame.hardcore ? "Hardcore" : groupGame.modeLabel}
               </span>
             )}
+            {isSymbolGame && (
+              <span className="card-header__chip card-header__chip--symbol">
+                {QUIZ_SYMBOL_LABELS[symbol]}
+              </span>
+            )}
           </h1>
           <p className="tagline">
-            {isFinished
+            {isSymbolGame && !isFinished
+              ? QUIZ_SYMBOL_PROMPTS[symbol]
+              : isFinished
               ? playedAllFlags
                 ? "All flags played. Game complete."
                 : "Game ended early."
@@ -519,8 +571,10 @@ function FlagGameInner({
             ALL choices fit on screen, falling back to the dropdown for
             larger pools. The Confirm button stays in every layout so the
             wrong-guess / retry flow is unchanged. */}
-        {!isFlagMaster &&
-        (isCustomGame || shouldUseButtons(alternatives.length)) ? (
+        {(answersAreFlags(symbol) || !isFlagMaster) &&
+        (answersAreFlags(symbol) ||
+          isCustomGame ||
+          shouldUseButtons(alternatives.length)) ? (
           <div className="answer-row answer-row--buttons">
             <AnswerOptions
               countries={alternatives}
@@ -528,6 +582,11 @@ function FlagGameInner({
               onChange={game.setSelected}
               disabled={isRevealed || isFinished || game.phase === "loading"}
               label="Your answer"
+              imageFor={
+                answersAreFlags(symbol)
+                  ? (c) => c.nationalFlagSvg ?? c.flagSvg
+                  : undefined
+              }
             />
             {!isFinished && !isRevealed && (
               <button
@@ -604,8 +663,8 @@ function FlagGameInner({
             <p className="game-complete__title">Game over</p>
             <p className="game-complete__text">
               {playedAllFlags
-                ? `You answered all ${game.totalFlags} flags in this run.`
-                : `You ended the game after ${game.totalAnswered} of ${game.totalFlags} flags.`}
+                ? `You answered all ${game.totalFlags} ${QUIZ_SYMBOL_NOUNS_PLURAL[symbol]} in this run.`
+                : `You ended the game after ${game.totalAnswered} of ${game.totalFlags} ${QUIZ_SYMBOL_NOUNS_PLURAL[symbol]}.`}
             </p>
           </div>
         )}

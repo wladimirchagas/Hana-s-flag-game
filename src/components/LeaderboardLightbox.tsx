@@ -146,11 +146,40 @@ const SLUG_TO_LABEL: Record<string, string> = {
   "quiz-easy": "Easy",
   "quiz-moderate": "Moderate",
   "quiz-hard": "Hard",
+  "historical-ruler": "Under whose rule?",
+  "historical-era": "Date the flag",
 };
 
 const SLUG_ORDER = ["all-195", "quiz-easy", "quiz-moderate", "quiz-hard", "hana"];
 
+/**
+ * A symbol round and a flag round are scored separately, so every pack has its
+ * own slug — `all-195-arms`, `group-europe-passport` — and its own board. The
+ * suffix is stripped off here and re-appended as a readable label, so the
+ * boards stay legible without a second table of mode names to keep in sync.
+ */
+const PACK_SUFFIX_LABEL: Record<string, string> = {
+  arms: "Coats of arms",
+  passport: "Passports",
+  crest: "Football crests",
+  former: "Former flags",
+  service: "Service flags",
+  meaning: "Meanings",
+  match: "Match the pair",
+};
+
+function splitPack(slug: string): { base: string; pack: string | null } {
+  for (const suffix of Object.keys(PACK_SUFFIX_LABEL)) {
+    if (slug.endsWith(`-${suffix}`)) {
+      return { base: slug.slice(0, -(suffix.length + 1)), pack: suffix };
+    }
+  }
+  return { base: slug, pack: null };
+}
+
 function gameModeLabel(slug: string): string {
+  const { base, pack } = splitPack(slug);
+  if (pack) return `${gameModeLabel(base)} · ${PACK_SUFFIX_LABEL[pack]}`;
   if (SLUG_TO_LABEL[slug]) return SLUG_TO_LABEL[slug];
   if (slug.startsWith("group-hardcore-")) return "Hardcore";
   if (slug.startsWith("group-")) {

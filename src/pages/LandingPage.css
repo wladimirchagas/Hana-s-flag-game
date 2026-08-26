@@ -1615,3 +1615,76 @@
   background: rgba(26, 34, 56, 0.08);
   outline: none;
 }
+
+/* The Flag Master modal is a fixed-height flex column whose FOOTER holds the
+   Play button. Its chip section is a flex ITEM, so it must be allowed to shrink
+   and scroll — otherwise adding rows (the Show axis, and the two historical
+   decks) pushes the footer off a phone screen, where the overlay locks body
+   scrolling and the Play button becomes unreachable. min-height:0 is the part
+   that actually lets a flex item shrink below its content. */
+.all195 .qquiz__body {
+  flex: 0 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* The Flag Master mode list has grown to eight decks, and the Show axis sits
+   below it, so the chips are tightened HERE (not globally — the Quick Quiz
+   modal's larger chips are right for its three choices) to keep both sections
+   reachable without a long scroll on a phone. */
+.all195 .qquiz__choices--modes .qquiz__chip {
+  font-size: 1rem;
+  padding: 0.45rem 0.8rem;
+  line-height: 1.25;
+}
+
+.all195 .qquiz__body {
+  gap: 0.85rem;
+}
+
+/* ── Flag Master: the "Show" axis ──────────────────────────────────────────
+   What the cards display, orthogonal to the mode above. Rendered even on the
+   modes that cannot take a symbol (disabled, with a one-line reason), so the
+   choice reads as a property of the game rather than a mode hidden elsewhere. */
+.all195__show {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.all195__show .qquiz__choices--modes {
+  gap: 0.4rem;
+}
+
+.qquiz__chip--symbol {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.45rem;
+  font-size: 0.98rem;
+  padding: 0.45rem 0.9rem;
+}
+
+.qquiz__chip--symbol:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: 0 2px 0 var(--ink);
+  transform: none;
+}
+
+/* The deck size, straight from the data — a pack can never advertise a count
+   the game will not deliver. */
+.qquiz__chip-count {
+  font-size: 0.78rem;
+  font-weight: 700;
+  opacity: 0.7;
+  font-variant-numeric: tabular-nums;
+}
+
+.all195__show-note {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: var(--ink-soft, var(--ink));
+  opacity: 0.8;
+}

@@ -56,7 +56,9 @@ export default function LandingPage() {
   const playFlagMaster = (start: AllFlagsStart) => {
     setFlagMasterOpen(false)
     if (start.type === 'all195') {
-      startGame({})
+      startGame({ symbol: start.symbol })
+    } else if (start.type === 'historical') {
+      startGame({ historical: { ask: start.ask, questionCount: start.questionCount } })
     } else if (start.type === 'similarity') {
       startGame({
         groupGame: {
@@ -74,6 +76,7 @@ export default function LandingPage() {
           hardcore: false,
           modeLabel: 'By Continent',
         },
+        symbol: start.symbol,
       })
     } else if (start.type === 'subregion') {
       startGame({
@@ -83,6 +86,7 @@ export default function LandingPage() {
           hardcore: false,
           modeLabel: 'By Sub-Continent',
         },
+        symbol: start.symbol,
       })
     } else if (start.type === 'subnational') {
       startGame({
@@ -218,8 +222,8 @@ export default function LandingPage() {
           >
             <h2 className="card-sticker__title">Flag Master</h2>
             <p className="card-sticker__sub">
-              All 195 flags, by continent, by sub-continent, or similar flags
-              only — the ultimate test of how many you really know.
+              All 195 flags — or the same modes played on coats of arms,
+              passports, football crests and the flags countries used to fly.
             </p>
             <span className="card-sticker__cta card-sticker__cta--lime">PLAY →</span>
           </button>

@@ -22,6 +22,13 @@ export type AnswerOptionsProps = {
   onChange: (c: Country | null) => void;
   disabled: boolean;
   label: string;
+  /**
+   * When set, each option shows this image above its name — the "Match the
+   * pair" deck, where the question is a coat of arms and the ANSWERS are the
+   * national flags. Return null for a country with no image and the button
+   * falls back to its name alone, never a broken thumbnail.
+   */
+  imageFor?: (c: Country) => string | null;
 };
 
 export const MAX_BUTTON_OPTIONS = 15;
@@ -36,6 +43,7 @@ export function AnswerOptions({
   onChange,
   disabled,
   label,
+  imageFor,
 }: AnswerOptionsProps) {
   const n = countries.length;
   // Map count → CSS class. Smaller buckets get larger min column widths
@@ -71,7 +79,22 @@ export function AnswerOptions({
                 }`}
                 onClick={() => onChange(c)}
               >
-                {c.name}
+                {(() => {
+                  const src = imageFor?.(c) ?? null;
+                  // Keyed by its own src so switching decks mounts a NEW element
+                  // rather than re-pointing a live one (CLAUDE.md, "An image slot
+                  // must be a NEW element").
+                  return src ? (
+                    <img
+                      key={src}
+                      src={src}
+                      alt=""
+                      className="answer-options__thumb"
+                      draggable={false}
+                    />
+                  ) : null;
+                })()}
+                <span className="answer-options__name">{c.name}</span>
               </button>
             </li>
           );

@@ -2874,3 +2874,134 @@
   box-shadow: 0 6px 0 var(--ink);
   outline: none;
 }
+
+/* ── Symbol packs ─────────────────────────────────────────────────────────
+   The card can now show a coat of arms, a passport cover, a football crest or
+   a former flag instead of the national flag — and, for the text pack, a
+   sourced explainer with no picture at all. */
+
+.card-header__chip--symbol {
+  background: var(--lime, var(--sky));
+}
+
+/* The text pack: a sourced explainer IS the question, so it is set as reading
+   matter — left-aligned, generous measure — not as a caption under a picture. */
+.flag-card--clue {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.flag-card__clue-text {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  max-width: 60ch;
+}
+
+/* Withheld until the reveal — the citation names the country. */
+.flag-card__clue-source {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+/* "Match the pair": the question is a coat of arms and the ANSWERS are flags,
+   so each option button carries its country's flag above the name. */
+.answer-options__btn:has(.answer-options__thumb) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.answer-options__thumb {
+  /* A fixed BOX height with object-fit: contain keeps every option button the
+     same height while each flag keeps its own real-world proportions — never
+     stretched, never cropped (see the flag-aspect-ratio hard rule). */
+  height: 3rem;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  background: var(--paper);
+}
+
+.answer-options__name {
+  display: block;
+}
+
+/* The reveal's teaching line: the symbol's sourced name, dates and — for a flag
+   the country did not choose — who flew it. */
+.feedback__caption {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+/* ── Historical decks ("Under whose rule?" / "Date the flag") ─────────────── */
+.historical-hint {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.historical-results {
+  margin-top: 1.5rem;
+}
+
+.historical-results__list {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.historical-results__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.65rem;
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  background: var(--paper);
+}
+
+.historical-results__item--correct {
+  background: var(--mint, #d8f5e3);
+  color: var(--ink-fixed);
+}
+
+.historical-results__item--wrong {
+  background: var(--blush, #ffdada);
+  color: var(--ink-fixed);
+}
+
+.historical-results__flag {
+  width: 3.5rem;
+  height: auto;
+  max-height: 2.6rem;
+  object-fit: contain;
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  flex: none;
+  background: #fff;
+}
+
+.historical-results__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.historical-results__text small {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
