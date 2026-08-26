@@ -771,6 +771,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "FO": [
     { id: "fo-official-national", category: "official", name: "Flag of the Faroe Islands", from: 1948, to: 9999, path: "flags/fo.svg", design: "Merkið — a red Nordic cross fimbriated in blue on a white field.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands" },
     { id: "fo-arms", category: "coatofarms", name: "Coat of arms of the Faroe Islands", from: 1948, to: 9999, path: "national-flags/fo/fo-arms.svg", design: "Azure, a ram passant argent, langued gules, armed and unguled Or.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands" },
+    { id: "fo-football-crest", category: "footballcrest", name: "Crest of the Faroe Islands Football Association", path: "national-flags/fo/fo-football-crest.svg", design: "A red disc, cut by a white S-shaped band, flanked by two light-blue letters F facing inward with feathered wingtips, over the founding year \"1979\" in blue.", source: "https://en.wikipedia.org/wiki/Faroe_Islands_Football_Association" },
   ],
   "FR": [
     { id: "fr-official-national", category: "official", name: "Flag of France", from: 1830, to: 9999, primary: true, path: "flags/fr.svg", design: "The national flag, named in Article 2 of the Constitution.", source: "https://en.wikipedia.org/wiki/Flag_of_France" },
@@ -1763,6 +1764,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pr-spain-1785", category: "historical", name: "Flag of the Kingdom of Spain", from: 1785, to: 1898, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The red-yellow-red ensign of 1785 with the royal arms, flown over Puerto Rico until it was ceded to the United States in 1898.", source: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
     { id: "pr-burgundy", category: "historical", name: "Cross of Burgundy", from: 1508, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "A red ragged saltire on white — the ensign of the Spanish Empire, flown over Puerto Rico from the conquest.", source: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     { id: "pr-arms", category: "coatofarms", name: "Coat of arms of Puerto Rico", from: 1511, to: 9999, path: "national-flags/pr/pr-arms.svg", design: "A green shield bearing the Lamb of God on the Book of the Seven Seals, ringed by castles, lions, crosses and royal devices.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Puerto_Rico" },
+    { id: "pr-football-crest", category: "footballcrest", name: "Crest of the Puerto Rico national football team", path: "national-flags/pr/pr-football-crest.svg", design: "A navy-blue shield edged in red, bearing a large white five-pointed star at its centre with four light-blue triangular rays at the star's points, and \"FPF\" lettered in white at the base.", source: "https://fpfpuertorico.com/la-federacion-puertorriquena-de-futbol-revela-su-nueva-identidad/" },
   ],
   "PS": [
     { id: "ps-official-national", category: "official", name: "Flag of Palestine", from: 1988, to: 9999, primary: true, path: "flags/ps.svg", design: "The national flag of Palestine, in the form adopted in 1988.", source: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
@@ -5455,6 +5457,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The silver ram — Veðrur — on a blue field is one of the Faroes' oldest symbols, carved on the medieval bishop's chairs at Kirkjubøur around the 15th century, and it speaks to the sheep on which Faroese life has long depended (the islands' Old Norse name means 'sheep islands'). It fell from use when the Løgting was abolished in 1816 and was readopted in 1948 with the Home Rule Act; a version modernised in 2004 took its colours from the Merkið flag.",
     sources: [
       { title: "Coat of arms of the Faroe Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands" },
+    ],
+  },
+  "fo-football-crest": {
+    description: "The two light-blue \"F\"s facing an S — Fótbóltssamband Føroya, the Faroese initials read straight across the badge — flank the founding year 1979, when the Faroe Islands Football Association separated from the general Faroese Sports Association (ÍSF), which had governed all Faroese football since 1942. The FSF went on to join FIFA in 1988 and UEFA in 1990.",
+    sources: [
+      { title: "Faroe Islands Football Association — Wikipedia", url: "https://en.wikipedia.org/wiki/Faroe_Islands_Football_Association" },
     ],
   },
   "fr-bourbon": {
@@ -9727,6 +9735,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Granted by the Spanish Crown in 1511, it is the oldest coat of arms still in use in the Americas. At its centre the Lamb of God (Agnus Dei) rests on the Book of the Seven Seals — both for Saint John the Baptist, to whom the island was dedicated as San Juan Bautista, and the reason the motto reads Joannes Est Nomen Eius, “John is his name.” Around it the golden castles and lions are Castile and León, the F-and-arrows Ferdinand of Aragon and the Y-and-yoke Isabella of Castile, with the cross of Jerusalem — the devices of the Catholic Monarchs who granted it.",
     sources: [
       { title: "Coat of arms of Puerto Rico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Puerto_Rico" },
+    ],
+  },
+  "pr-football-crest": {
+    description: "The Puerto Rican Football Federation's own unveiling of this logo explains each element: the white star repeats the island's own flag, \"incorporating the brightness and radiance of our lone star\" with added motion for the sport's progress; the light-blue triangles honour Puerto Rico's skies and together form a symbolic ball at the centre; the navy-blue shield stands for the Caribbean Sea, \"which unites us to other lands and footballing cultures\"; and the red edge marks the passion and sacrifice of the island's players, coaches and fans.",
+    sources: [
+      { title: "La Federación Puertorriqueña de Fútbol revela su nueva identidad — FPF", url: "https://fpfpuertorico.com/la-federacion-puertorriquena-de-futbol-revela-su-nueva-identidad/" },
     ],
   },
   "ps-mandate": {
