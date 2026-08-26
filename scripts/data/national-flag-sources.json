@@ -11717,6 +11717,26 @@
           },
           "sha256": "b2419e75971021b860c953d501dcae8c9af8db8961b046c36ee8720fe000abab",
           "fetched": "2026-08-13"
+        },
+        {
+          "id": "fo-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Faroe Islands Football Association",
+          "commons": "Faroe Islands Football Association logo.svg",
+          "file": "fo/fo-football-crest.svg",
+          "design": "A red disc, cut by a white S-shaped band, flanked by two light-blue letters F facing inward with feathered wingtips, over the founding year \"1979\" in blue.",
+          "source": "https://en.wikipedia.org/wiki/Faroe_Islands_Football_Association",
+          "sha256": "fecc9f1fc0bb7c7182b0ad0cdbd9968cf92dfce9716502522955e64060ae84b1",
+          "fetched": "2026-08-25",
+          "meaning": {
+            "description": "The two light-blue \"F\"s facing an S — Fótbóltssamband Føroya, the Faroese initials read straight across the badge — flank the founding year 1979, when the Faroe Islands Football Association separated from the general Faroese Sports Association (ÍSF), which had governed all Faroese football since 1942. The FSF went on to join FIFA in 1988 and UEFA in 1990.",
+            "sources": [
+              {
+                "title": "Faroe Islands Football Association — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Faroe_Islands_Football_Association"
+              }
+            ]
+          }
         }
       ]
     },
@@ -29003,6 +29023,26 @@
           },
           "sha256": "e8dc2d76143dcf3a4357d01737160fcd183360fb33b9d8bd551f0982ccaea848",
           "fetched": "2026-08-13"
+        },
+        {
+          "id": "pr-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Puerto Rico national football team",
+          "commons": "Puerto Rican Football Federation logo.svg",
+          "file": "pr/pr-football-crest.svg",
+          "design": "A navy-blue shield edged in red, bearing a large white five-pointed star at its centre with four light-blue triangular rays at the star's points, and \"FPF\" lettered in white at the base.",
+          "source": "https://fpfpuertorico.com/la-federacion-puertorriquena-de-futbol-revela-su-nueva-identidad/",
+          "sha256": "494ac549b19be97abf244914d162c0e751a24f54e72d95c20d319a3ebeb3d215",
+          "fetched": "2026-08-25",
+          "meaning": {
+            "description": "The Puerto Rican Football Federation's own unveiling of this logo explains each element: the white star repeats the island's own flag, \"incorporating the brightness and radiance of our lone star\" with added motion for the sport's progress; the light-blue triangles honour Puerto Rico's skies and together form a symbolic ball at the centre; the navy-blue shield stands for the Caribbean Sea, \"which unites us to other lands and footballing cultures\"; and the red edge marks the passion and sacrifice of the island's players, coaches and fans.",
+            "sources": [
+              {
+                "title": "La Federación Puertorriqueña de Fútbol revela su nueva identidad — FPF",
+                "url": "https://fpfpuertorico.com/la-federacion-puertorriquena-de-futbol-revela-su-nueva-identidad/"
+              }
+            ]
+          }
         }
       ]
     },
