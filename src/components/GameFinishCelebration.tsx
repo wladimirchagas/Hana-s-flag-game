@@ -18,6 +18,14 @@ export type GameFinishCelebrationProps = {
   totalAnswered: number;
   totalFlags: number;
   playedAllFlags: boolean;
+  /**
+   * What the deck was made of. Defaults to "flag"; a symbol pack passes its own
+   * noun so the celebration never calls a passport or a coat of arms a flag
+   * (CLAUDE.md: "never call something a flag that is not one").
+   */
+  itemNoun?: string;
+  /** Its plural — "coats of arms", never "coat of armss". */
+  itemNounPlural?: string;
   elapsedMs: number | null;
   playerName: string;
   onPlayerNameChange: (name: string) => void;
@@ -45,6 +53,8 @@ export function GameFinishCelebration({
   totalAnswered,
   totalFlags,
   playedAllFlags,
+  itemNoun = "flag",
+  itemNounPlural = "flags",
   elapsedMs,
   playerName,
   onPlayerNameChange,
@@ -120,8 +130,8 @@ export function GameFinishCelebration({
           </h2>
           <p className="finish__subtitle">
             {playedAllFlags
-              ? `You played every flag — all ${totalFlags} of them! 🌍`
-              : `Great run — ${totalAnswered} of ${totalFlags} flags!`}
+              ? `You played every ${itemNoun} — all ${totalFlags} of them! 🌍`
+              : `Great run — ${totalAnswered} of ${totalFlags} ${itemNounPlural}!`}
           </p>
 
           <div className="finish__stats">

@@ -5,6 +5,12 @@ import {
   codesForDifficulty,
   type Difficulty,
 } from "../lib/flagDifficulty";
+import {
+  pickSymbolEntry,
+  symbolCaption,
+  symbolClueFor,
+  type QuizSymbol,
+} from "../lib/quizSymbols";
 
 export type GamePhase =
   | "loading"
@@ -87,7 +93,46 @@ export type UseGameOptions = {
    * the full world dropdown.
    */
   useFullAlternatives?: boolean;
+  /**
+   * Which symbol the card shows. `flag` (the default) is the game that has
+   * always shipped; every other pack quizzes a national symbol from the
+   * Learn-mode data instead — the question, the answer space and the scoring
+   * are identical, only the picture changes. Countries with no such symbol are
+   * dropped from the deck (see `codesForSymbol`).
+   */
+  symbol?: QuizSymbol;
 };
+
+
+/**
+ * Re-point a country list at a symbol pack's images.
+ *
+ * `flagSvg` becomes the symbol's image, so the flag card, the answer burst and
+ * the results grid all render the thing that was asked with no knowledge of
+ * packs; the country's real flag is kept in `nationalFlagSvg` so "Match the
+ * pair" can offer it as an ANSWER while the arms are the question. A country
+ * whose symbol is missing, imageless or ambiguous is dropped by
+ * `pickSymbolEntry`, never shown blank.
+ */
+function packCountries(list: Country[], symbol: QuizSymbol): Country[] {
+  const base = import.meta.env.BASE_URL;
+  const out: Country[] = [];
+  for (const c of list) {
+    const entry = pickSymbolEntry(c.code, symbol);
+    if (!entry?.path) continue;
+    const clue = symbol === "meaning" ? symbolClueFor(entry, c.code) : null;
+    if (symbol === "meaning" && !clue) continue;
+    out.push({
+      ...c,
+      nationalFlagSvg: c.flagSvg,
+      flagSvg: `${base}${entry.path}`,
+      symbolPack: symbol,
+      symbolCaption: symbolCaption(entry),
+      ...(clue ? { symbolClue: clue } : {}),
+    });
+  }
+  return out;
+}
 
 export function useGame(options: UseGameOptions = {}): UseGameResult {
   const {
@@ -98,6 +143,7 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
     flagCount = null,
     optionCount = null,
     useFullAlternatives = false,
+    symbol = "flag",
   } = options;
   const [countries, setCountries] = useState<Country[]>([]);
   const [current, setCurrent] = useState<Country | null>(null);
@@ -219,16 +265,20 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
         const fullList = await fetchCountries();
         if (cancelled) return;
         allCountriesRef.current = fullList;
-        let list = fullList;
+        // Symbol packs replace the image on the card. Applied FIRST, so every
+        // later step (code filter, Quick-Quiz sampling, the "empty deck" error)
+        // sees the deck the player will actually get.
+        const packed = symbol === "flag" ? fullList : packCountries(fullList, symbol);
+        let list = packed;
         if (filterCodes && filterCodes.length > 0) {
           const allow = new Set(filterCodes.map((c) => c.toUpperCase()));
-          list = fullList.filter((c) => allow.has(c.code));
+          list = packed.filter((c) => allow.has(c.code));
         }
         // Quick Quiz mode: random sample of `flagCount` countries from the
         // full 195-country pool. Difficulty only controls optionCount (number
         // of answer choices), not which flags appear in the game.
         if (flagCount && flagCount > 0) {
-          const shuffled = fullList.slice();
+          const shuffled = packed.slice();
           for (let i = shuffled.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [shuffled[i], shuffled[j]] = [shuffled[j]!, shuffled[i]!];
@@ -237,7 +287,9 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
         }
         if (list.length === 0) {
           setError(
-            filterCodes && filterCodes.length > 0
+            symbol !== "flag"
+              ? "No countries in this group have that symbol bundled yet."
+              : filterCodes && filterCodes.length > 0
               ? "None of the selected countries are available."
               : difficulty
               ? `No countries found for difficulty: ${difficulty}.`

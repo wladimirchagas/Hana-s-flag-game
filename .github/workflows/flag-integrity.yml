@@ -38,6 +38,13 @@ on:
       - "scripts/check-capital-subdivision-collision.mjs"
       - "scripts/build-capital-details.mjs"
       - "scripts/check-hierarchy-type-colors.mjs"
+      # Flag Master's symbol packs — the decks are derived from the national-symbols
+      # data above, so a change to either the data or the builders must re-run the gate.
+      - "scripts/check-quiz-symbol-decks.mjs"
+      - "src/lib/quizSymbols.ts"
+      - "src/lib/historicalQuiz.ts"
+      - "src/hooks/useGame.ts"
+      - "src/hooks/useHistoricalFlagGame.ts"
       - "src/components/SubdivisionHierarchyTable.tsx"
       - "src/pages/LearnPage.css"
       - "src/index.css"
@@ -230,6 +237,16 @@ jobs:
       # same Node 24 that can load historicalEras.ts directly.
       - name: Verify every polity is filed on a continent its own land is on
         run: node scripts/check-era-continents.mjs
+
+      # Flag Master's symbol packs (coats of arms, passports, football crests, former
+      # flags, service flags, meanings) are built from the same national-symbols data
+      # this job already validates, and the deck builders import it directly — so this
+      # check lives in the Node 24 job too. It fails the build if a quiz question could
+      # have more than one correct answer, if the current national flag leaked into
+      # another pack, if a deck went empty, or if the deck builders stopped being wired
+      # into the game.
+      - name: Verify every quiz symbol deck has one answer per question
+        run: node scripts/check-quiz-symbol-decks.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest

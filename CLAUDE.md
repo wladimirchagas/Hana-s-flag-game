@@ -3185,6 +3185,76 @@ deceptive "named in `paths:`/a comment"), or when a `.ts`-importing script sits 
 needs no installed dependency. Both branches are exercised: re-adding the ungated checks and
 planting an era check in the Node 20 job each make it fail.
 
+## A quiz question must have exactly ONE correct answer — hard rule, do not override without approval
+
+**Flag Master can be played on any of the Learn-mode national symbols — coats of arms, passport
+covers, football crests, the flags countries used to fly, service/maritime/standard flags, and the
+sourced explainers themselves. That data was gathered for DISPLAY, where several properties are
+perfectly correct on a reference page and fatal in a quiz. Every deck the game builds MUST come from
+`src/lib/quizSymbols.ts` / `src/lib/historicalQuiz.ts`, which enforce the rules below; never build a
+question set by iterating `NATIONAL_FLAGS` directly.**
+
+The "Show" axis in the Flag Master setup modal (`AllFlagsSetupModal`) picks the PACK; the mode picks
+the DECK. They are orthogonal: any country-answer mode (All 195 / by continent / by sub-continent)
+can be played on any pack. Similarity groups are defined by flag DESIGN and the sub-national and
+disputed decks answer with subdivisions, so those three stay flag-only.
+
+### Why this rule exists
+
+Learn mode legitimately lists the SAME image under many countries, because there it is captioned by
+the page you are on: the Union Flag is bundled under six countries, the Cross of Burgundy under
+nineteen. As a quiz prompt that image has many correct answers — the question is not hard, it is
+broken. Ten such images cover 50 country-entries in the current data. The same data carries three
+more traps: every country's CURRENT national flag is an `official` entry (quizzing it in another pack
+silently re-asks the All-195 game); an entry may carry `noImageReason` instead of an image, which is
+exactly what makes an unpicturable symbol visible in Learn mode and unusable in a quiz; and the crest
+data covers ~211 FIFA associations, including the four UK home nations — the United Kingdom has NO
+single national crest, so it can never be an answer in a crest deck.
+
+### Rules
+
+1. **One image, one answer.** An image bundled under more than one country is excluded from every
+   "which country?" deck. It is not wasted: it is the ideal prompt for **"Under whose rule?"**, where
+   the ruling power IS the single correct answer.
+2. **A pre-independence flag is never shown bare, and never as the country's own.** A `sovereign`
+   entry is the RULING POWER's flag: it is excluded from the "Former flags" deck and every reveal
+   renders the sourced attribution — "under {power}", or "**imposed by** {power}" for an `occupier`
+   (naming an occupier a sovereign asserts the very claim the occupied country denies), or "flown by
+   {polity}" for a `priorPolity`. Never drop `symbolCaption` from a reveal.
+3. **Never call something a flag that is not one.** Prompts, headings, the end-of-game copy and aria
+   labels take their noun from the pack (`QUIZ_SYMBOL_NOUNS`, `QUIZ_SYMBOL_NOUNS_PLURAL` — the plural
+   is a table, not an appended "s", or the celebration reads "coat of armss"). The same discipline as
+   the National-symbols tab's rule 8a.
+4. **A clue must not contain its own answer.** The text pack ("What does it mean?") shows a sourced
+   explainer written for a page that already names the country, so `symbolClueFor` redacts the
+   country's names and any word built on them, and **drops** a clue that still names its answer rather
+   than shipping it half-masked. Its citation is withheld until the reveal — the source title names
+   the country.
+5. **A symbol image has no CDN fallback.** `FlagCard` reaches for flagcdn ONLY for the flag pack;
+   doing it for a symbol would serve the country's FLAG in place of its coat of arms, which is the
+   wrong-image class of bug this repo exists to prevent.
+6. **Separate leaderboards.** A passport round and a flag round are not comparable scores, so every
+   pack gets its own `gameMode` slug (`all-195-passport`, `group-europe-arms`, `historical-ruler`).
+   Adding a pack means adding its label in `LeaderboardLightbox` in the same change.
+7. **Never weaken the deck check to make a pack playable.** If `check-quiz-symbol-decks.mjs` fires,
+   the question has more than one answer — fix the deck, not the check.
+8. **Verify in the running app** (the mandatory visual-verification rule applies): walk all seven
+   packs plus both historical decks, confirm each card PAINTS (`img.complete && img.naturalWidth > 0`,
+   not merely reserves its box), that the prompt names the right thing, that the reveal shows the
+   sourced caption, that "Match the pair" offers flag thumbnails at their real proportions, and that
+   the text pack's clue shows no country name.
+
+### Enforcement
+
+`scripts/check-quiz-symbol-decks.mjs` (`npm run quiz:check-decks`, in `npm run flags:check` and the
+`check-era-maps` CI job — it imports `.ts` modules, so it needs Node 22.18+) **fails the build** when
+a deck would contain an ambiguous image, a `primary` flag inside another pack, an imageless entry, a
+crest that is not the country's own, a `sovereign` flag in the "Former flags" deck, a clue that leaks
+its answer, a deck below 20 countries, an askable ruling power that no question asks about — or when
+any of the deck builders stops being wired into the game (the same "a rule nothing calls enforces
+nothing" discipline as `check-image-element-keys.mjs`). Both branches are exercised: removing the
+ambiguity guard makes it fail, restoring it makes it pass.
+
 ## Token-efficient work — hard rule, do not override without approval
 
 **Every agent working in this repo MUST minimise token usage on every task. Efficiency is a

@@ -19,6 +19,12 @@ import {
   type FlagSimilarity,
 } from "./flagSimilarity";
 import { ALL_COUNTRY_OPTIONS } from "./countrySelection";
+import {
+  QUIZ_SYMBOL_SLUGS,
+  symbolFromSlug,
+  type QuizSymbol,
+} from "./quizSymbols";
+import type { HistoricalAsk } from "./historicalQuiz";
 
 export type GroupGameConfig = {
   groupCodes: string[];
@@ -42,6 +48,14 @@ export type GameConfig = {
     includeCapitals?: boolean;
   };
   disputedTerritories?: boolean;
+  /**
+   * Which symbol the cards show — a coat of arms, a passport, a football crest,
+   * a former flag … Absent (or "flag") is the game that has always shipped, so
+   * every existing link keeps its exact meaning.
+   */
+  symbol?: QuizSymbol;
+  /** The two historical decks whose answer is a ruling power or a period. */
+  historical?: { ask: HistoricalAsk; questionCount: number };
 };
 
 // similarity group key -> member country codes (same derivation as the modal).
@@ -70,13 +84,24 @@ export function hasGameMode(c: GameConfig | null | undefined): c is GameConfig {
     c.quiz ||
     c.groupGame ||
     c.subnational ||
-    c.disputedTerritories
+    c.disputedTerritories ||
+    c.historical ||
+    // A symbol pack on the plain All-195 deck carries no other field, so
+    // without this the router state would look empty and the game would fall
+    // back to parsing the URL for it.
+    (c.symbol && c.symbol !== "flag")
   );
 }
 
 /** Serialise a game config to query-string params for a shareable link. */
 export function gameConfigToParams(c: GameConfig): URLSearchParams {
   const p = new URLSearchParams();
+  if (c.historical) {
+    p.set("mode", "historical");
+    p.set("ask", c.historical.ask);
+    p.set("count", String(c.historical.questionCount));
+    return p;
+  }
   if (c.disputedTerritories) {
     p.set("mode", "disputed");
   } else if (c.subnational) {
@@ -111,6 +136,10 @@ export function gameConfigToParams(c: GameConfig): URLSearchParams {
   } else {
     p.set("mode", "all195");
   }
+  // The symbol is orthogonal to the mode, so it rides alongside whatever mode
+  // was written above — and is omitted for the flag pack so pre-existing links
+  // are byte-identical to what they were before packs existed.
+  if (c.symbol && c.symbol !== "flag") p.set("symbol", QUIZ_SYMBOL_SLUGS[c.symbol]);
   return p;
 }
 
@@ -122,22 +151,38 @@ export function gameConfigToParams(c: GameConfig): URLSearchParams {
 export function paramsToGameConfig(p: URLSearchParams): GameConfig | null {
   const mode = p.get("mode");
   if (!mode) return null;
+  const symbol = symbolFromSlug(p.get("symbol"));
+  const withSymbol = (c: GameConfig | null): GameConfig | null =>
+    c && symbol && symbol !== "flag" ? { ...c, symbol } : c;
 
   switch (mode) {
+    case "historical": {
+      const ask = p.get("ask");
+      if (ask !== "ruler" && ask !== "era") return null;
+      const n = Number(p.get("count"));
+      return {
+        historical: {
+          ask: ask as HistoricalAsk,
+          questionCount: Number.isFinite(n) && n > 0 ? n : 20,
+        },
+      };
+    }
     case "all195":
-      return {};
+      return withSymbol({});
     case "disputed":
       return { disputedTerritories: true };
     case "quiz": {
       const n = Number(p.get("count"));
-      return Number.isFinite(n) && n > 0 ? { quiz: { flagCount: n } } : {};
+      return withSymbol(
+        Number.isFinite(n) && n > 0 ? { quiz: { flagCount: n } } : {},
+      );
     }
     case "hana": {
       const codes = (p.get("codes") ?? "")
         .split(",")
         .map((s) => s.trim().toUpperCase())
         .filter(Boolean);
-      return codes.length > 0 ? { codes } : null;
+      return withSymbol(codes.length > 0 ? { codes } : null);
     }
     case "subnational": {
       const code = (p.get("country") ?? "").toUpperCase();
@@ -163,7 +208,8 @@ export function paramsToGameConfig(p: URLSearchParams): GameConfig | null {
     case "continent": {
       const label = p.get("group") ?? "";
       const codes = CONTINENT_GROUPS[label as Continent];
-      return codes
+      return withSymbol(
+        codes
         ? {
             groupGame: {
               groupCodes: [...codes],
@@ -172,12 +218,14 @@ export function paramsToGameConfig(p: URLSearchParams): GameConfig | null {
               modeLabel: "By Continent",
             },
           }
-        : null;
+        : null,
+      );
     }
     case "subregion": {
       const label = p.get("group") ?? "";
       const sg = SUBREGION_GROUPS.find((s) => s.label === label);
-      return sg
+      return withSymbol(
+        sg
         ? {
             groupGame: {
               groupCodes: [...sg.codes],
@@ -186,7 +234,8 @@ export function paramsToGameConfig(p: URLSearchParams): GameConfig | null {
               modeLabel: "By Sub-Continent",
             },
           }
-        : null;
+        : null,
+      );
     }
     case "similarity": {
       const key = (p.get("group") ?? "") as FlagSimilarity;

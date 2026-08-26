@@ -13,6 +13,19 @@ import {
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import {
+  QUIZ_SYMBOL_HINTS,
+  QUIZ_SYMBOL_LABELS,
+  QUIZ_SYMBOL_ORDER,
+  symbolDeckSize,
+  type QuizSymbol,
+} from "../lib/quizSymbols";
+import {
+  HISTORICAL_ASK_HINTS,
+  HISTORICAL_ASK_LABELS,
+  buildHistoricalDeck,
+  type HistoricalAsk,
+} from "../lib/historicalQuiz";
+import {
   getPlayableCapitalSubdivisions,
   playableCapitalFlagCount,
   playableCapitalName,
@@ -80,10 +93,11 @@ function saveIncludePref(pref: { divisions: boolean; capitals: boolean }) {
 }
 
 export type AllFlagsStart =
-  | { type: "all195" }
+  | { type: "all195"; symbol: QuizSymbol }
   | { type: "similarity"; groupCodes: string[]; groupLabel: string; hardcore: boolean }
-  | { type: "continent"; groupCodes: string[]; groupLabel: string }
-  | { type: "subregion"; groupCodes: string[]; groupLabel: string }
+  | { type: "continent"; groupCodes: string[]; groupLabel: string; symbol: QuizSymbol }
+  | { type: "subregion"; groupCodes: string[]; groupLabel: string; symbol: QuizSymbol }
+  | { type: "historical"; ask: HistoricalAsk; questionCount: number }
   | {
       type: "subnational";
       countryCode: string;
@@ -99,7 +113,15 @@ export type AllFlagsSetupModalProps = {
   onStart: (start: AllFlagsStart) => void;
 };
 
-type FlagMasterMode = "all195" | "continent" | "subregion" | "similarity" | "subnational" | "disputed";
+type FlagMasterMode =
+  | "all195"
+  | "continent"
+  | "subregion"
+  | "similarity"
+  | "subnational"
+  | "disputed"
+  | "ruler"
+  | "era";
 
 const MODE_LABELS: Record<FlagMasterMode, string> = {
   all195:      "All 195 World Flags",
@@ -108,9 +130,70 @@ const MODE_LABELS: Record<FlagMasterMode, string> = {
   similarity:  "Similar flags only",
   subnational: "Sub-national flags",
   disputed:    "Disputed & Claimed Territories",
+  ruler:       HISTORICAL_ASK_LABELS.ruler,
+  era:         HISTORICAL_ASK_LABELS.era,
 };
 
-const MODE_ORDER: readonly FlagMasterMode[] = ["all195", "continent", "subregion", "similarity", "subnational", "disputed"];
+const MODE_ORDER: readonly FlagMasterMode[] = [
+  "all195",
+  "continent",
+  "subregion",
+  "similarity",
+  "subnational",
+  "disputed",
+  "ruler",
+  "era",
+];
+
+/**
+ * The modes that answer with a COUNTRY, and can therefore be played on any
+ * symbol pack. The other three cannot: similarity groups are defined by flag
+ * DESIGN (they mean nothing for a passport), and the sub-national and disputed
+ * decks answer with subdivisions, which carry no national-symbol data.
+ */
+const SYMBOL_CAPABLE_MODES: ReadonlySet<FlagMasterMode> = new Set([
+  "all195",
+  "continent",
+  "subregion",
+]);
+
+/** Deck sizes are derived from the data, so a pack can never advertise a count
+ *  the game will not deliver. Computed once — the manifest never changes at
+ *  runtime. */
+const SYMBOL_DECK_SIZE: Record<string, number> = Object.fromEntries(
+  QUIZ_SYMBOL_ORDER.map((s) => [s, symbolDeckSize(s)]),
+);
+
+const HISTORICAL_DECK_SIZE: Record<HistoricalAsk, number> = {
+  ruler: buildHistoricalDeck("ruler").length,
+  era: buildHistoricalDeck("era").length,
+};
+
+/** Question counts offered for the two historical decks. */
+const HISTORICAL_COUNTS = [10, 20, 30] as const;
+
+/** Per-device memory of the last-used symbol pack. */
+const SYMBOL_PREF_KEY = "flagGame.flagMaster.symbol";
+
+function loadSymbolPref(): QuizSymbol {
+  try {
+    const raw = localStorage.getItem(SYMBOL_PREF_KEY);
+    if (raw && (QUIZ_SYMBOL_ORDER as readonly string[]).includes(raw)) {
+      return raw as QuizSymbol;
+    }
+  } catch {
+    // Unreadable storage — fall through to the flag pack.
+  }
+  return "flag";
+}
+
+function saveSymbolPref(symbol: QuizSymbol) {
+  try {
+    localStorage.setItem(SYMBOL_PREF_KEY, symbol);
+  } catch {
+    // Storage unavailable (private mode) — the preference just isn't remembered.
+  }
+}
 
 export function AllFlagsSetupModal({
   open,
@@ -121,6 +204,8 @@ export function AllFlagsSetupModal({
   const [subnationalCountry, setSubnationalCountry] = useState(
     SUBNATIONAL_COUNTRIES[0]?.code ?? ""
   );
+  const [symbol, setSymbol] = useState<QuizSymbol>(loadSymbolPref);
+  const [historicalCount, setHistoricalCount] = useState<number>(20);
   const [includePref] = useState(loadIncludePref);
   const [includeDivisions, setIncludeDivisions] = useState(includePref.divisions);
   const [includeCapitals, setIncludeCapitals] = useState(includePref.capitals);
@@ -168,6 +253,8 @@ export function AllFlagsSetupModal({
   useEffect(() => {
     if (!open) {
       setMode("all195");
+      setSymbol(loadSymbolPref());
+      setHistoricalCount(20);
       setSubnationalCountry(SUBNATIONAL_COUNTRIES[0]?.code ?? "");
       const pref = loadIncludePref();
       setIncludeDivisions(pref.divisions);
@@ -177,8 +264,19 @@ export function AllFlagsSetupModal({
 
   if (!open) return null;
 
+  const supportsSymbol = SYMBOL_CAPABLE_MODES.has(mode);
+  const activeSymbol: QuizSymbol = supportsSymbol ? symbol : "flag";
+  const start = (s: AllFlagsStart) => {
+    if (supportsSymbol) saveSymbolPref(activeSymbol);
+    onStart(s);
+  };
+
   const hint =
-    mode === "all195"
+    mode === "ruler" || mode === "era"
+      ? HISTORICAL_ASK_HINTS[mode === "ruler" ? "ruler" : "era"]
+      : supportsSymbol && activeSymbol !== "flag"
+      ? QUIZ_SYMBOL_HINTS[activeSymbol]
+      : mode === "all195"
       ? "Every UN member flag in random order. One guess each — no retries."
       : mode === "continent"
       ? "Pick a continent — you'll guess every flag from it."
@@ -236,6 +334,46 @@ export function AllFlagsSetupModal({
               </button>
             ))}
           </div>
+
+          {/* The SHOW axis — what the cards display. Orthogonal to the mode
+              above: any country-answer mode can be played on any pack. It stays
+              visible (disabled) on the three modes that cannot take one, so the
+              choice reads as a property of the game rather than a hidden mode. */}
+          <div className="all195__show">
+            <span className="all195__subnational-label" id="flag-master-show-label">
+              Show
+            </span>
+            <div
+              className="qquiz__choices qquiz__choices--modes"
+              role="group"
+              aria-labelledby="flag-master-show-label"
+            >
+              {QUIZ_SYMBOL_ORDER.map((sym) => (
+                <button
+                  key={sym}
+                  type="button"
+                  className={`qquiz__chip qquiz__chip--symbol ${
+                    sym === activeSymbol && supportsSymbol ? "qquiz__chip--active" : ""
+                  }`}
+                  disabled={!supportsSymbol}
+                  onClick={() => setSymbol(sym)}
+                  aria-pressed={sym === activeSymbol && supportsSymbol}
+                >
+                  {QUIZ_SYMBOL_LABELS[sym]}
+                  <small className="qquiz__chip-count">{SYMBOL_DECK_SIZE[sym]}</small>
+                </button>
+              ))}
+            </div>
+            {!supportsSymbol && (
+              <p className="all195__show-note">
+                {mode === "similarity"
+                  ? "Similar-flag groups are defined by flag design, so they are played on flags."
+                  : mode === "ruler" || mode === "era"
+                  ? "This deck asks about the flags themselves, so it has no symbol choice."
+                  : "These decks answer with subdivisions, which have no national symbols."}
+              </p>
+            )}
+          </div>
         </div>
 
         {/* ── All 195 World Flags ── */}
@@ -247,9 +385,11 @@ export function AllFlagsSetupModal({
             <button
               type="button"
               className="qquiz__play"
-              onClick={() => onStart({ type: "all195" })}
+              onClick={() => start({ type: "all195", symbol: activeSymbol })}
             >
-              Play all 195
+              {activeSymbol === "flag"
+                ? "Play all 195"
+                : `Play all ${SYMBOL_DECK_SIZE[activeSymbol]}`}
             </button>
           </footer>
         )}
@@ -266,7 +406,12 @@ export function AllFlagsSetupModal({
                     type="button"
                     className="all195__group-row"
                     onClick={() =>
-                      onStart({ type: "continent", groupCodes: [...codes], groupLabel: c })
+                      start({
+                        type: "continent",
+                        groupCodes: [...codes],
+                        groupLabel: c,
+                        symbol: activeSymbol,
+                      })
                     }
                   >
                     <span className="all195__group-label">{c}</span>
@@ -301,7 +446,12 @@ export function AllFlagsSetupModal({
                       type="button"
                       className="all195__group-row"
                       onClick={() =>
-                        onStart({ type: "subregion", groupCodes: [...sg.codes], groupLabel: sg.label })
+                        start({
+                          type: "subregion",
+                          groupCodes: [...sg.codes],
+                          groupLabel: sg.label,
+                          symbol: activeSymbol,
+                        })
                       }
                     >
                       <span className="all195__group-label">{sg.label}</span>
@@ -361,6 +511,57 @@ export function AllFlagsSetupModal({
             </footer>
           </>
         )}
+
+        {/* ── Under whose rule? / Date the flag — the two historical decks whose
+            answer is a ruling power or a period, not a country ── */}
+        {(mode === "ruler" || mode === "era") && (() => {
+          const ask: HistoricalAsk = mode === "ruler" ? "ruler" : "era";
+          const available = HISTORICAL_DECK_SIZE[ask];
+          return (
+            <>
+              <div className="all195__body all195__body--subnational">
+                <p className="all195__subnational-count">
+                  {available} sourced, dated flags in this deck.
+                </p>
+                <span className="all195__subnational-label">Questions</span>
+                <div className="qquiz__choices">
+                  {HISTORICAL_COUNTS.map((n) => (
+                    <button
+                      key={n}
+                      type="button"
+                      className={`qquiz__chip ${
+                        n === historicalCount ? "qquiz__chip--active" : ""
+                      }`}
+                      disabled={n > available}
+                      onClick={() => setHistoricalCount(n)}
+                      aria-pressed={n === historicalCount}
+                    >
+                      {n}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <footer className="all195__footer">
+                <button type="button" className="all195__cancel" onClick={onClose}>
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  className="qquiz__play"
+                  onClick={() =>
+                    start({
+                      type: "historical",
+                      ask,
+                      questionCount: Math.min(historicalCount, available),
+                    })
+                  }
+                >
+                  Play
+                </button>
+              </footer>
+            </>
+          );
+        })()}
 
         {/* ── Disputed & Claimed Territories ── */}
         {mode === "disputed" && (
