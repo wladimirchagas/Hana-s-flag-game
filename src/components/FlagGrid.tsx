@@ -45,11 +45,6 @@ import {
 import { subnationalFootballCrests } from "../lib/nationalSymbolImages";
 import { NON_FIFA_GRID_CODES, fifaExtraCrests } from "../lib/fifaAssociations";
 import { MENS_WORLD_CUP_TITLES, WOMENS_WORLD_CUP_TITLES } from "../data/worldCupTitles";
-import {
-  IDEOLOGY_POSITION_LABELS,
-  IDEOLOGY_POSITION_ORDER,
-} from "../data/politicalParties";
-import { partiesForCountry, coalitionForParty } from "../lib/politicalParties";
 import { GridImage } from "./GridImage";
 
 /**
@@ -101,9 +96,7 @@ type GroupMode =
   | "aspect-ratio"
   | "passport-color"
   | "wc-men"
-  | "wc-women"
-  | "party-ideology"
-  | "party-country";
+  | "wc-women";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -121,9 +114,6 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   // Football-crests-view only — buckets by FIFA World Cup titles won.
   "wc-men": "FIFA Men's World Cups",
   "wc-women": "FIFA Women's World Cups",
-  // Political-parties-view only.
-  "party-ideology": "By ideology",
-  "party-country": "By country",
 };
 
 // The chosen grouping is remembered across visits (per the UX revision: the
@@ -166,9 +156,6 @@ const PASSPORT_ONLY_MODES = new Set<GroupMode>(["passport-color"]);
 // FIFA World Cup titles they have won (men's and women's, separately).
 const FOOTBALL_CREST_ONLY_MODES = new Set<GroupMode>(["wc-men", "wc-women"]);
 
-// Modes offered ONLY in the Political-parties view.
-const PARTY_ONLY_MODES = new Set<GroupMode>(["party-ideology", "party-country"]);
-
 /** Whether a grouping mode is offered for the given view. The flag-appearance
  *  modes (shape/family/colour/…) describe a FLAG and show only in the modern
  *  flag view; "passport-color" shows only in the Passports view; everything else
@@ -180,7 +167,6 @@ function groupModeAvailableFor(
 ): boolean {
   if (PASSPORT_ONLY_MODES.has(m)) return isModernEra && contentType === "passport";
   if (FOOTBALL_CREST_ONLY_MODES.has(m)) return isModernEra && contentType === "footballcrest";
-  if (PARTY_ONLY_MODES.has(m)) return isModernEra && contentType === "party";
   if (TODAY_ONLY_MODES.has(m)) return isModernEra && contentType === "flag";
   return true;
 }
@@ -278,39 +264,7 @@ export function FlagGrid({
   //   3. append the non-UN FIFA member associations (Gibraltar, Faroe Islands,
   //      Hong Kong, the Caribbean/Pacific associations, Kosovo, …), each sorting
   //      by its own name and selecting its parent country on click.
-  // Political-parties view: unlike every other "Show" view (one image per
-  // country), a country can contribute MANY cards — one per party currently
-  // holding a seat in its national chamber. Countries with no sourced party
-  // data (the dataset is an incrementally-growing sweep — see
-  // src/data/politicalParties.ts) simply contribute zero cards, exactly like
-  // an uncovered country contributes no coat-of-arms/passport tile.
   const displayEntries = useMemo(() => {
-    if (effectiveContentType === "party") {
-      const countryMeta = new Map(entries.map((e) => [e.id, e]));
-      const out: FlagListEntry[] = [];
-      for (const code of countryMeta.keys()) {
-        const parties = partiesForCountry(code);
-        if (parties.length === 0) continue;
-        const meta = countryMeta.get(code);
-        for (const p of parties) {
-          const coalition = coalitionForParty(p);
-          out.push({
-            id: p.id,
-            name: p.shortName,
-            flag: null,
-            continent: meta?.continent ?? "Other",
-            subcontinent: meta?.subcontinent ?? "Other",
-            partyLogo: p.logo ?? null,
-            partyCountry: meta?.name ?? code,
-            partyIdeologyRank: IDEOLOGY_POSITION_ORDER.indexOf(p.ideologyPosition),
-            partyInPower: p.inPower,
-            partyCoalitionName: coalition?.name ?? null,
-            selectId: code,
-          });
-        }
-      }
-      return out;
-    }
     if (effectiveContentType !== "footballcrest") return entries;
     const out: FlagListEntry[] = [];
     for (const e of entries) {
@@ -368,20 +322,9 @@ export function FlagGrid({
   // alphabetise within a group; the headings themselves are ordered by
   // a per-mode comparator below.
   const groups = useMemo(() => {
-    // Political parties default to a progressive → conservative order (owner
-    // request) rather than alphabetical, even with "No grouping" active — a
-    // country's parties read naturally left-to-right along the spectrum.
-    const sorted =
-      effectiveContentType === "party"
-        ? [...filteredEntries].sort((a, b) => {
-            const ra = a.partyIdeologyRank ?? 999;
-            const rb = b.partyIdeologyRank ?? 999;
-            if (ra !== rb) return ra - rb;
-            const ca = (a.partyCountry ?? "").localeCompare(b.partyCountry ?? "", "en");
-            if (ca !== 0) return ca;
-            return a.name.localeCompare(b.name, "en");
-          })
-        : [...filteredEntries].sort((a, b) => a.name.localeCompare(b.name, "en"));
+    const sorted = [...filteredEntries].sort((a, b) =>
+      a.name.localeCompare(b.name, "en"),
+    );
 
     if (groupMode === "none") {
       return [{ heading: null, items: sorted }];
@@ -495,14 +438,6 @@ export function FlagGrid({
         const fam = passportColorGroup(e.id);
         push(fam ?? PASSPORT_NO_COVER_GROUP, e);
       }
-    } else if (groupMode === "party-ideology") {
-      for (const e of sorted) {
-        const rank = e.partyIdeologyRank ?? IDEOLOGY_POSITION_ORDER.length - 1;
-        const key = IDEOLOGY_POSITION_ORDER[rank] ?? "other";
-        push(IDEOLOGY_POSITION_LABELS[key], e);
-      }
-    } else if (groupMode === "party-country") {
-      for (const e of sorted) push(e.partyCountry ?? "Other", e);
     } else if (groupMode === "wc-men" || groupMode === "wc-women") {
       // Bucket associations by FIFA World Cup titles won. Keyed by the card's id
       // (a country code, or the England home-nation card for England's 1966
@@ -563,12 +498,6 @@ export function FlagGrid({
         // Most titles first; "No World Cup title" last.
         const oa = worldCupHeadingOrder(a);
         const ob = worldCupHeadingOrder(b);
-        if (oa !== ob) return oa - ob;
-      }
-      if (groupMode === "party-ideology") {
-        // Progressive → conservative; "Other / unclassified" last.
-        const oa = ideologyHeadingOrder(a);
-        const ob = ideologyHeadingOrder(b);
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "alpha") {
@@ -702,9 +631,7 @@ export function FlagGrid({
                     ? item.passport ?? null
                     : effectiveContentType === "footballcrest"
                       ? item.footballCrest ?? null
-                      : effectiveContentType === "party"
-                        ? item.partyLogo ?? null
-                        : item.flag;
+                      : item.flag;
               const url = rawImage ? resolveFlag(rawImage) : null;
               const isLearned = learnedCodes.has(item.id);
               // In shape mode, the same id can appear in multiple
@@ -724,12 +651,9 @@ export function FlagGrid({
                       onSelect(
                         item.selectId ?? item.id,
                         // A home-nation / FIFA-entity crest card carries its own
-                        // `{code}-football-crest` id, and a party card carries its
-                        // own party id — pass it so the panel shows that specific
-                        // crest/party, not just the parent country.
-                        item.id.endsWith("-football-crest") || effectiveContentType === "party"
-                          ? item.id
-                          : undefined,
+                        // `{code}-football-crest` id — pass it so the panel shows
+                        // that crest, not the parent country's.
+                        item.id.endsWith("-football-crest") ? item.id : undefined,
                       )
                     }
                     aria-pressed={active}
@@ -823,27 +747,6 @@ export function FlagGrid({
                           Capital: {item.capital}
                         </span>
                       )}
-                      {/* Political-parties view: the card's own name IS the
-                          party, so its country needs its own subtitle — plus
-                          "In power" / coalition badges (owner request). */}
-                      {effectiveContentType === "party" && item.partyCountry && (
-                        <span className="flag-grid__city-sub">{item.partyCountry}</span>
-                      )}
-                      {effectiveContentType === "party" &&
-                        (item.partyInPower || item.partyCoalitionName) && (
-                          <span className="flag-grid__party-badges">
-                            {item.partyInPower && (
-                              <span className="flag-grid__party-badge flag-grid__party-badge--power">
-                                In power
-                              </span>
-                            )}
-                            {item.partyCoalitionName && (
-                              <span className="flag-grid__party-badge flag-grid__party-badge--coalition">
-                                {item.partyCoalitionName}
-                              </span>
-                            )}
-                          </span>
-                        )}
                     </span>
                   </button>
                 </li>
@@ -893,13 +796,6 @@ function similarityHeadingOrder(heading: string): number {
     if (FLAG_SIMILARITY_LABELS[FLAG_SIMILARITY_ORDER[i]] === heading) return i;
   }
   return 100;
-}
-
-function ideologyHeadingOrder(heading: string): number {
-  for (let i = 0; i < IDEOLOGY_POSITION_ORDER.length; i++) {
-    if (IDEOLOGY_POSITION_LABELS[IDEOLOGY_POSITION_ORDER[i]] === heading) return i;
-  }
-  return 999;
 }
 
 function aspectRatioHeadingOrder(heading: string): number {

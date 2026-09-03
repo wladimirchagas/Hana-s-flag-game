@@ -5,10 +5,13 @@ import { CityFlagGrid } from "./CityFlagGrid";
 import { NationalFlagGrid } from "./NationalFlagGrid";
 import { SubdivisionHierarchyChart } from "./SubdivisionHierarchyChart";
 import { SubdivisionHierarchyTable } from "./SubdivisionHierarchyTable";
+import { PoliticalPartyGrid } from "./PoliticalPartyGrid";
 import { countryCityFlagCount } from "../lib/cityFlags";
 import { totalNationalFlagCount } from "../lib/specialEntities";
+import { partiesForCountry } from "../lib/politicalParties";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning } from "../data/flagMeanings";
+import type { PoliticalParty } from "../data/politicalParties";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 
 /**
@@ -26,15 +29,23 @@ import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
  *     chart, with a table/chart layout toggle: the table renders the SAME
  *     entities as a flat 3-column table (type, sub-national flag, capital city
  *     flag) instead of an org chart — see `SubdivisionHierarchyTable`.
+ *  4. Political parties      — every party currently holding a seat in the
+ *     country's national chamber, grouped progressive → conservative by
+ *     ideology, badged "In power" / by coalition. Trails Hierarchy (owner
+ *     request) and, like National symbols, drives nothing on the map — a
+ *     party belongs to the whole country. Coverage is an incrementally
+ *     growing sourced sweep (see `src/data/politicalParties.ts`), so it
+ *     appears only once a country has any covered parties.
  *
- * All three drive the SAME selection callbacks, so picking a flag in any tab
- * updates the world/subdivision map highlight and the country/subdivision widget.
+ * All four drive the SAME selection callbacks, so picking a flag/party in any
+ * tab updates the world/subdivision map highlight and the country/subdivision
+ * widget (political parties are the one exception that never touch the map).
  *
  * The selected top-level tab and hierarchy layout are persisted to
  * localStorage so they survive switching countries or reloading the page,
  * instead of resetting to the default every time.
  */
-type TabId = "sub" | "city" | "nat" | "tree";
+type TabId = "sub" | "city" | "nat" | "tree" | "party";
 type TreeLayout = "table" | "chart";
 
 const TAB_STORAGE_KEY = "hana-flag-game.subdivision-flag-tab";
@@ -43,7 +54,9 @@ const LAYOUT_STORAGE_KEY = "hana-flag-game.hierarchy-layout";
 function loadTab(): TabId {
   try {
     const raw = localStorage.getItem(TAB_STORAGE_KEY);
-    if (raw === "sub" || raw === "city" || raw === "nat" || raw === "tree") return raw;
+    if (raw === "sub" || raw === "city" || raw === "nat" || raw === "tree" || raw === "party") {
+      return raw;
+    }
   } catch {
     // ignore — quota or no-storage browser
   }
@@ -102,6 +115,9 @@ type Props = {
   /** A collective subdivision-group flag (Malaysia's Federal Territories), shown
    *  in the hierarchy — opens its own widget with its sourced meaning. */
   onSelectGroupFlag: (flag: NationalFlag, meaning: FlagMeaning | null) => void;
+  /** id of the political party whose widget is open (if any). */
+  selectedPartyId: string | null;
+  onSelectParty: (party: PoliticalParty) => void;
 };
 
 export function SubdivisionFlagTabs({
@@ -121,6 +137,8 @@ export function SubdivisionFlagTabs({
   selectedNationalFlagId,
   onSelectNationalFlag,
   onSelectGroupFlag,
+  selectedPartyId,
+  onSelectParty,
 }: Props) {
   const [tab, setTabState] = useState<TabId>(loadTab);
   const [treeLayout, setTreeLayoutState] = useState<TreeLayout>(loadLayout);
@@ -145,6 +163,10 @@ export function SubdivisionFlagTabs({
   // Includes the country's own symbols AND any special-status entities grouped
   // under it (China → Hong Kong, Macau, Taiwan), so the count matches the grid.
   const natCount = useMemo(() => totalNationalFlagCount(countryCode), [countryCode]);
+  // Coverage grows via an incremental sourced sweep (see politicalParties.ts) —
+  // a country with none simply has no Political parties tab, exactly like a
+  // country with no national symbols has no National-symbols tab.
+  const partyCount = useMemo(() => partiesForCountry(countryCode).length, [countryCode]);
 
   const hasDivisions = divisions.length > 0;
 
@@ -154,6 +176,9 @@ export function SubdivisionFlagTabs({
   // subdivisions, so they appear only when the country HAS subdivisions; a country
   // with none (e.g. Kiribati, Monaco) still shows its National symbols tab — the
   // whole section must never vanish just because there are no divisions.
+  // "Political parties" trails Hierarchy (owner request) and, being a national-
+  // level fact like National symbols, appears independently of whether the
+  // country has subdivisions.
   const TABS: { id: TabId; label: string; count?: number }[] = [
     ...(natCount > 0
       ? [{ id: "nat" as const, label: "National symbols", count: natCount }]
@@ -165,10 +190,16 @@ export function SubdivisionFlagTabs({
           { id: "tree" as const, label: "Hierarchy" },
         ]
       : []),
+    // Trails Hierarchy when the country has one; otherwise still appears after
+    // National symbols (a national-level fact, independent of subdivisions —
+    // same reasoning as National symbols itself).
+    ...(partyCount > 0
+      ? [{ id: "party" as const, label: "Political parties", count: partyCount }]
+      : []),
   ];
 
-  // Render nothing only when the country has no content at all — no subdivisions
-  // AND no national symbols.
+  // Render nothing only when the country has no content at all — no subdivisions,
+  // no national symbols, and no political parties.
   if (TABS.length === 0) return null;
 
   // Fall the active tab back to the first available one whenever the persisted
@@ -296,6 +327,15 @@ export function SubdivisionFlagTabs({
               />
             )}
           </>
+        )}
+        {activeTab === "party" && (
+          <PoliticalPartyGrid
+            countryCode={countryCode}
+            countryName={countryName}
+            selectedPartyId={selectedPartyId}
+            baseUrl={baseUrl}
+            onSelect={onSelectParty}
+          />
         )}
       </div>
     </section>
