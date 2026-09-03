@@ -55,6 +55,25 @@ export type FlagListEntry = {
   /** Resolved football-association crest image URL for the grid's "Football
    *  crests" view. null / undefined when the country has no bundled crest. */
   footballCrest?: string | null;
+  /** Resolved political-party logo image URL for the grid's "Political
+   *  parties" view — set only on the synthetic per-party cards that view
+   *  builds (one country card never carries this; see FlagGrid's party
+   *  expansion). null when the party has no bundled logo. */
+  partyLogo?: string | null;
+  /** The party's own country name, shown as a subtitle under its logo/name in
+   *  the Political parties view (a party card's `name` is the party itself,
+   *  so the country needs its own field, unlike the single-country cards
+   *  every other view shows). */
+  partyCountry?: string;
+  /** Ordinal position in `IDEOLOGY_POSITION_ORDER` — drives the default
+   *  progressive → conservative sort order for the Political parties view. */
+  partyIdeologyRank?: number;
+  /** Whether this party is currently part of its country's governing
+   *  coalition/cabinet — shown as an "In power" badge on its card. */
+  partyInPower?: boolean;
+  /** The name of the national coalition/federation this party belongs to, if
+   *  any — shown as a badge on its card. */
+  partyCoalitionName?: string | null;
   /**
    * Country code to select when this card is clicked, when it differs from `id`.
    * A home-nation football-crest card carries the parent country's code (GB) so a
