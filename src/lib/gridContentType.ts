@@ -9,13 +9,14 @@
  * is being shown). Only meaningful on the modern world map — historical polities
  * carry no national-symbols data, so consumers force "flag" for past eras.
  */
-export type GridContentType = "flag" | "coatofarms" | "passport" | "footballcrest";
+export type GridContentType = "flag" | "coatofarms" | "passport" | "footballcrest" | "party";
 
 export const GRID_CONTENT_TYPE_LABELS: Record<GridContentType, string> = {
   flag: "National flags",
   coatofarms: "Coats of arms",
   passport: "Passports",
   footballcrest: "Football associations",
+  party: "Political parties",
 };
 
 export const GRID_CONTENT_TYPE_ORDER: readonly GridContentType[] = [
@@ -23,6 +24,7 @@ export const GRID_CONTENT_TYPE_ORDER: readonly GridContentType[] = [
   "coatofarms",
   "passport",
   "footballcrest",
+  "party",
 ];
 
 const STORAGE_KEY = "flagGame.learn.contentType";

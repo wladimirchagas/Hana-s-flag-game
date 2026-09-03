@@ -54,6 +54,8 @@ import { formatPopulation } from "../lib/formatPopulation";
 import { normalizeForSearch } from "../lib/searchNormalize";
 import { CapitalDetails } from "../components/CapitalDetails";
 import { NationalFlagDetails } from "../components/NationalFlagDetails";
+import { PoliticalPartyFacts } from "../components/PoliticalPartyFacts";
+import { partyById } from "../lib/politicalParties";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning as FlagMeaningData } from "../data/flagMeanings";
 import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
@@ -356,10 +358,16 @@ export default function LearnPage() {
   // its parent country so the panel shows that crest only while the parent stays
   // selected, then self-clears when the user navigates to another country.
   const [gridCrest, setGridCrest] = useState<{ id: string; parent: string } | null>(null);
+  // Same shape as gridCrest, but for a specific Political-parties grid card —
+  // a country can show MANY parties, so (unlike a coat of arms/passport, which
+  // auto-picks the country's one bundled image) the panel only swaps to a
+  // party's logo once a specific card has actually been clicked.
+  const [gridParty, setGridParty] = useState<{ id: string; parent: string } | null>(null);
   const chooseGridContentType = (type: GridContentType) => {
     setGridContentType(type);
     saveGridContentType(type);
     setGridCrest(null);
+    setGridParty(null);
   };
   // Captured at "Play" click time so the modal stays open even if the
   // hovered-country display clears while the user moves the mouse.
@@ -1312,14 +1320,38 @@ export default function LearnPage() {
     activeGridCrest ??
     (!subdivisionMode &&
     display?.kind === "modern" &&
-    effectiveGridContentType !== "flag"
+    effectiveGridContentType !== "flag" &&
+    effectiveGridContentType !== "party"
       ? nationalSymbolEntry(display.country.code, effectiveGridContentType)
       : null);
-  // The image the panel actually shows: the symbol when one is selected and
-  // bundled, otherwise the national flag (a country with no coat of arms /
-  // passport falls back to its flag rather than a blank panel).
-  const displayFlagUrl =
-    panelSymbol?.path ? resolveFlag(panelSymbol.path) : flagUrl;
+  // A specific political-party card clicked in the grid — unlike a coat of
+  // arms/passport/crest (one bundled image per country, auto-picked), a
+  // country can carry MANY parties, so nothing shows here until the user has
+  // actually clicked a specific party's own card.
+  const activeGridParty =
+    !subdivisionMode &&
+    gridParty != null &&
+    effectiveGridContentType === "party" &&
+    display?.kind === "modern" &&
+    display.country.code === gridParty.parent
+      ? partyById(gridParty.id)
+      : null;
+  const panelParty = activeGridParty;
+  // The image the panel actually shows: the symbol/party logo when one is
+  // selected and bundled, otherwise the national flag (a country with no
+  // coat of arms / passport falls back to its flag rather than a blank
+  // panel). A political party with NO bundled logo is the one exception:
+  // falling back to the national flag there would show it under a "Party
+  // logo" label, misattributing the country's flag as the party's own — so
+  // `displayFlagUrl` stays null and a dedicated branch below renders the
+  // party's facts with no image, never a wrong one.
+  const displayFlagUrl = panelParty
+    ? panelParty.logo
+      ? resolveFlag(panelParty.logo)
+      : null
+    : panelSymbol?.path
+      ? resolveFlag(panelSymbol.path)
+      : flagUrl;
   // Reset load-failed state whenever the displayed image changes.
   // NOTE: this ref MUST be declared before the loadError early-return below —
   // hooks after a conditional return violate the Rules of Hooks, and when
@@ -1409,7 +1441,12 @@ export default function LearnPage() {
       // panel shows THAT crest instead of the parent country's flag or crest. A
       // plain country card clears it. Keyed to the parent so it self-clears when
       // the user later selects a different country from the map or search.
-      setGridCrest(crestId ? { id: crestId, parent: c.code } : null);
+      setGridCrest(
+        crestId && gridContentType === "footballcrest" ? { id: crestId, parent: c.code } : null,
+      );
+      // Same idea for a specific political-party card — a country can have many
+      // parties, so the panel only shows one once its own card was clicked.
+      setGridParty(crestId && gridContentType === "party" ? { id: crestId, parent: c.code } : null);
     } else {
       const sel = selectionFromPolityName(id);
       if (!sel) return;
@@ -1731,9 +1768,11 @@ export default function LearnPage() {
                         className="learn-fs__flag"
                         onClick={() => setZoomedFlagUrl(displayFlagUrl)}
                         aria-label={
-                          panelSymbol
-                            ? `Enlarge ${panelSymbol.name}`
-                            : `Enlarge ${selectionName(display, eraId)} flag`
+                          panelParty
+                            ? `Enlarge ${panelParty.shortName} logo`
+                            : panelSymbol
+                              ? `Enlarge ${panelSymbol.name}`
+                              : `Enlarge ${selectionName(display, eraId)} flag`
                         }
                       >
                         <img
@@ -1756,11 +1795,17 @@ export default function LearnPage() {
                         </span>
                       </button>,
                       // A symbol carries its own noun so the block never labels a
-                      // coat of arms or a passport "Flag".
-                      panelSymbol ? symbolNoun(panelSymbol.category) : "Flag",
+                      // coat of arms or a passport "Flag" — a party's logo isn't
+                      // a flag either.
+                      panelParty ? "Party logo" : panelSymbol ? symbolNoun(panelSymbol.category) : "Flag",
                     )}
                     {display.kind === "modern" &&
-                      (panelSymbol ? (
+                      (panelParty ? (
+                        // The full sourced fact-sheet (ideology, coalition, leader,
+                        // seats…) plus the logo's own explainer — see
+                        // PoliticalPartyFacts.
+                        <PoliticalPartyFacts party={panelParty} />
+                      ) : panelSymbol ? (
                         // The explainer follows what's displayed: the symbol's own
                         // sourced description + meaning (same wording as the National
                         // symbols tab), not the national flag's.
@@ -1775,6 +1820,17 @@ export default function LearnPage() {
                       ) : (
                         <FlagMeaning code={display.country.code} />
                       ))}
+                  </div>
+                ) : panelParty ? (
+                  // A political party the user selected has no bundled logo
+                  // (see displayFlagUrl above) — show its full sourced fact
+                  // sheet with an honest "no image" note, never the country's
+                  // flag mislabelled as the party's own.
+                  <div className="learn-fs__flag-box">
+                    <p className="learn-fs__no-flag">
+                      {panelParty.noImageReason ?? `No logo image is bundled for ${panelParty.name}.`}
+                    </p>
+                    <PoliticalPartyFacts party={panelParty} />
                   </div>
                 ) : display.kind === "historical" && display.noFlagReason ? (
                   // Curated, sourced explanation for THIS polity at THIS date — always
@@ -2337,7 +2393,9 @@ export default function LearnPage() {
       })() : (
         <FlagGrid
           entries={flagEntries}
-          selectedId={activeGridCrest ? gridCrest!.id : selectedId}
+          selectedId={
+            activeGridCrest ? gridCrest!.id : activeGridParty ? gridParty!.id : selectedId
+          }
           onSelect={handleGridSelect}
           resolveFlag={resolveFlag}
           isModernEra={isModernEra}

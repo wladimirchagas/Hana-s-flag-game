@@ -1904,6 +1904,34 @@
   color: var(--ink-fixed);
 }
 
+/* "In power" / coalition-name badges on a Political-parties grid card. */
+.flag-grid__party-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-top: 0.25em;
+}
+
+.flag-grid__party-badge {
+  padding: 0.12em 0.55em;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  border: 1px solid var(--ink-faint);
+  background: var(--cream-deep);
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.flag-grid__party-badge--power {
+  border-color: var(--sky);
+  background: var(--sky);
+  color: var(--ink-fixed);
+}
+
 /* === Hierarchy org chart ============================================= */
 
 /* A pure-CSS org chart: national root, a horizontal bus of subdivision
