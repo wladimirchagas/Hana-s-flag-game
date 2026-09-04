@@ -292,7 +292,7 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
 };
 
 export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
-  "AU": [
+"AU": [
     {
       "id": "AU-ALP",
       "country": "AU",
@@ -2436,6 +2436,92 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        }
+      ]
+    }
+  ],
+  US: [
+    {
+      "id": "US-DEM",
+      "country": "US",
+      "shortName": "Democrats",
+      "name": "Democratic Party",
+      "logo": "party-logos/us/dem.svg",
+      "sha256": "adc44cd1733b002c1bc4b7883bdbfa0e32812ee9a9f7a1dcdcb89f8c229538a5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:US_Democratic_Party_Logo.svg",
+      "ideology": [
+        "Liberalism (US)",
+        "Progressivism (US)"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Center to center-left",
+      "founded": 1828,
+      "leader": "Hakeem Jeffries",
+      "leaderTitle": "House Minority Leader",
+      "inPower": false,
+      "seats": 214,
+      "seatsTotal": 435,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Democratic Party (United States) - Wikipedia (infobox: ideology, political position, founded, chair)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(United_States)"
+        },
+        {
+          "title": "United States House of Representatives - Wikipedia (infobox political groups: seat counts by party, as of Sept 2, 2026)",
+          "url": "https://en.wikipedia.org/wiki/United_States_House_of_Representatives"
+        },
+        {
+          "title": "List of current members of the United States House of Representatives - Wikipedia (composition table)",
+          "url": "https://en.wikipedia.org/wiki/List_of_current_members_of_the_United_States_House_of_Representatives"
+        },
+        {
+          "title": "US_Democratic_Party_Logo.svg - Wikimedia Commons (PD-textlogo)",
+          "url": "https://commons.wikimedia.org/wiki/File:US_Democratic_Party_Logo.svg"
+        }
+      ]
+    },
+    {
+      "id": "US-REP",
+      "country": "US",
+      "shortName": "Republicans",
+      "name": "Republican Party",
+      "logo": "party-logos/us/rep.svg",
+      "sha256": "d8242a695ee0c5a081c973ae71aa47c75c1efdf831c6a8ce93299640eeeac5ee",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:GOP_logo_(positive).svg",
+      "ideology": [
+        "Right-wing populism",
+        "American neo-nationalism",
+        "Conservatism (US)",
+        "Christian right",
+        "Right-libertarianism (US)"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 1854,
+      "leader": "Mike Johnson",
+      "leaderTitle": "Speaker of the House",
+      "inPower": true,
+      "timeInPower": "2025–present",
+      "seats": 218,
+      "seatsTotal": 435,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Republican Party (United States) - Wikipedia (infobox: ideology, political position, founded, chair)",
+          "url": "https://en.wikipedia.org/wiki/Republican_Party_(United_States)"
+        },
+        {
+          "title": "United States House of Representatives - Wikipedia (infobox political groups: seat counts by party, as of Sept 2, 2026)",
+          "url": "https://en.wikipedia.org/wiki/United_States_House_of_Representatives"
+        },
+        {
+          "title": "List of current members of the United States House of Representatives - Wikipedia (composition table)",
+          "url": "https://en.wikipedia.org/wiki/List_of_current_members_of_the_United_States_House_of_Representatives"
+        },
+        {
+          "title": "GOP_logo_(positive).svg - Wikimedia Commons (public domain)",
+          "url": "https://commons.wikimedia.org/wiki/File:GOP_logo_(positive).svg"
         }
       ]
     }
