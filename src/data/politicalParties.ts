@@ -485,6 +485,46 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "url": "https://en.wikipedia.org/wiki/Jetten_cabinet"
     },
     "note": "Minority coalition of D66, VVD and CDA (66 of 150 seats), sworn in 23 February 2026 under Prime Minister Rob Jetten (D66) — the first Dutch cabinet to govern as a minority in the House of Representatives without a confidence-and-supply agreement since 1918."
+  },
+  "za-gnu": {
+    "id": "za-gnu",
+    "name": "Government of National Unity",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "ZA-ANC",
+      "ZA-DA",
+      "ZA-IFP",
+      "ZA-PA",
+      "ZA-FFPLUS",
+      "ZA-UDM",
+      "ZA-RISEMZANSI",
+      "ZA-ALJAMAAH",
+      "ZA-PAC",
+      "ZA-GOOD"
+    ],
+    "source": {
+      "title": "Government of National Unity (South Africa) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Government_of_National_Unity_(South_Africa)"
+    },
+    "note": "Formed after the ANC lost its outright majority in the May 2024 general election; ten parties (ANC, DA, IFP, PA, FF Plus, UDM, Rise Mzansi, Al Jama-ah, PAC, GOOD) jointly hold 287 of 400 National Assembly seats, led by ANC President Cyril Ramaphosa. As of the November 2025 leaders' retreat the same ten-party composition remained in place."
+  },
+  "pl-tusk-coalition": {
+    "id": "pl-tusk-coalition",
+    "name": "Koalicja rządząca (Trzeci rząd Donalda Tuska)",
+    "nameEn": "Governing coalition (Third Tusk cabinet)",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "PL-KO",
+      "PL-PSL",
+      "PL-PL2050",
+      "PL-CENTRUM",
+      "PL-LEWICA"
+    ],
+    "source": {
+      "title": "Third Tusk cabinet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Third_Tusk_cabinet"
+    },
+    "note": "Formed 13 December 2023 by Civic Coalition, Third Way (Poland 2050 + PSL) and The Left after the October 2023 election ended eight years of PiS government; the Centre party (split from Poland 2050 in February 2026) has stayed within the ruling coalition."
   }
 };
 
@@ -8194,6 +8234,1019 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "House of Representatives (Nigeria) - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nigeria)"
+        }
+      ]
+    }
+  ],
+  "ZA": [
+    {
+      "id": "ZA-ANC",
+      "country": "ZA",
+      "shortName": "ANC",
+      "name": "African National Congress",
+      "logo": "party-logos/za/anc.svg",
+      "sha256": "8aa88f8a8ab9f010ace54bea28320672551e414a0f780704b87ed238ad00e6a9",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:African_National_Congress_logo.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Social democracy",
+        "South African nationalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1912,
+      "coalitionId": "za-gnu",
+      "leader": "Cyril Ramaphosa",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "1994-present",
+      "seats": 159,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "African National Congress - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/African_National_Congress"
+        },
+        {
+          "title": "2024 South African general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_South_African_general_election"
+        }
+      ]
+    },
+    {
+      "id": "ZA-DA",
+      "country": "ZA",
+      "shortName": "DA",
+      "name": "Democratic Alliance",
+      "logo": "party-logos/za/da.svg",
+      "sha256": "e5df3e0f679cdeee5f7df69642ea7bd7d6e67b4f89c917147107c4044ffbe23c",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Democratic_Alliance_(SA)_logo.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Federalism",
+        "Conservative liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2000,
+      "coalitionId": "za-gnu",
+      "leader": "Geordin Hill-Lewis",
+      "leaderTitle": "Federal Leader",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 87,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Democratic Alliance (South Africa) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Alliance_(South_Africa)"
+        },
+        {
+          "title": "South Africa's second-biggest party elects new leader - The Washington Post",
+          "url": "https://www.washingtonpost.com/world/2026/04/12/south-africa-democratic-alliance-leader/0d75c616-366d-11f1-90c4-9772c7fabc03_story.html"
+        }
+      ]
+    },
+    {
+      "id": "ZA-MK",
+      "country": "ZA",
+      "shortName": "MK",
+      "name": "uMkhonto weSizwe Party",
+      "logo": "party-logos/za/mk.png",
+      "sha256": "fcfca402decca470e9264387b62428847680b750e9dc4de5c99064b6721da251",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_uMkhonto_we_Sizwe_(political_party).png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Radical economic transformation",
+        "Anti-imperialism",
+        "Nationalism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Economic: left-wing to far-left (disputed); Social: right-wing to far-right",
+      "founded": 2023,
+      "leader": "Jacob Zuma",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 58,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "uMkhonto weSizwe (political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/UMkhonto_we_Sizwe_(political_party)"
+        }
+      ]
+    },
+    {
+      "id": "ZA-EFF",
+      "country": "ZA",
+      "shortName": "EFF",
+      "name": "Economic Freedom Fighters",
+      "logo": "party-logos/za/eff.svg",
+      "sha256": "58cf2b1e37203e35928a00698e1e73036da02835852292752d0390ab3e5b58e5",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Economic_Freedom_Fighters.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism",
+        "Sankarism",
+        "Anti-capitalism",
+        "Black nationalism",
+        "Pan-Africanism",
+        "Left-wing populism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 2013,
+      "leader": "Julius Malema",
+      "leaderTitle": "President and Commander-in-Chief",
+      "inPower": false,
+      "seats": 39,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Economic Freedom Fighters - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Economic_Freedom_Fighters"
+        }
+      ]
+    },
+    {
+      "id": "ZA-IFP",
+      "country": "ZA",
+      "shortName": "IFP",
+      "name": "Inkatha Freedom Party",
+      "logo": "party-logos/za/ifp.svg",
+      "sha256": "0a1c813a990548d58a6580312e58df33a325c34fc8053663e5c7bfdde9a1bc2a",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Inkatha_Freedom_Party_logo.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Social conservatism",
+        "Economic conservatism",
+        "Anti-communism",
+        "Zulu royalism",
+        "Constitutional monarchism",
+        "KwaZulu-Natal regionalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1975,
+      "coalitionId": "za-gnu",
+      "leader": "Velenkosini Hlabisa",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 17,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Inkatha Freedom Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Inkatha_Freedom_Party"
+        }
+      ]
+    },
+    {
+      "id": "ZA-PA",
+      "country": "ZA",
+      "shortName": "PA",
+      "name": "Patriotic Alliance",
+      "logo": "party-logos/za/pa.png",
+      "sha256": "a2add62cd92e7479264c89b3e4d5c32a039f62877d8dd60e8c721d6c0164fc6e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Patriotic_Alliance_(South_Africa).png",
+      "ideology": [
+        "National conservatism",
+        "South African nationalism",
+        "Coloured interests",
+        "Right-wing populism",
+        "Anti-immigration"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2013,
+      "coalitionId": "za-gnu",
+      "leader": "Gayton McKenzie",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 9,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Patriotic Alliance (South Africa) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Patriotic_Alliance_(South_Africa)"
+        }
+      ]
+    },
+    {
+      "id": "ZA-FFPLUS",
+      "country": "ZA",
+      "shortName": "FF Plus",
+      "name": "Freedom Front Plus",
+      "logo": "party-logos/za/ffplus.svg",
+      "sha256": "cc675ecf81f49f758619af9d8bb3617461382a83dc6eac3b1afb9046e2f93331",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Freedom_Front_Plus.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Afrikaner nationalism",
+        "Conservatism",
+        "Anti-communism",
+        "Federalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1994,
+      "previousNames": [
+        {
+          "name": "Freedom Front",
+          "years": "1994–2004"
+        }
+      ],
+      "coalitionId": "za-gnu",
+      "leader": "Corné Mulder",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 6,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Freedom Front Plus - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Freedom_Front_Plus"
+        },
+        {
+          "title": "ANALYSIS: The who, why and what of the Freedom Front Plus - News24",
+          "url": "https://news24.com/amp/news24/elections/elections-voices/analysis-the-who-why-and-what-of-the-freedom-front-plus-20190513"
+        }
+      ]
+    },
+    {
+      "id": "ZA-ACTIONSA",
+      "country": "ZA",
+      "shortName": "ActionSA",
+      "name": "ActionSA",
+      "logo": "party-logos/za/actionsa.svg",
+      "sha256": "1bf44ddd48ca2de8763f786acec44113f2d237c9cbb2073db88d4880b4551f89",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_ActionSA.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Classical liberalism",
+        "Non-racialism",
+        "Anti-immigration",
+        "Anti-corruption",
+        "South African nationalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2020,
+      "leader": "Herman Mashaba",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "ActionSA - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/ActionSA"
+        }
+      ]
+    },
+    {
+      "id": "ZA-ACDP",
+      "country": "ZA",
+      "shortName": "ACDP",
+      "name": "African Christian Democratic Party",
+      "logo": "party-logos/za/acdp.svg",
+      "sha256": "b1a31800146eca5b60792d2a3330987026fe47658538ae1fbb5e4916c46e5dba",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:ACDP_logo.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Christian right",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1993,
+      "leader": "Kenneth Meshoe",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "African Christian Democratic Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/African_Christian_Democratic_Party"
+        }
+      ]
+    },
+    {
+      "id": "ZA-UDM",
+      "country": "ZA",
+      "shortName": "UDM",
+      "name": "United Democratic Movement",
+      "logo": "party-logos/za/udm.svg",
+      "sha256": "9b7d3a4e183060651c94c117175eab507a2c65ae68d1056bbb9fab96d6338b79",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:UDM_SA_logo.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1997,
+      "coalitionId": "za-gnu",
+      "leader": "Bantu Holomisa",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 3,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "United Democratic Movement (South Africa) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/United_Democratic_Movement"
+        }
+      ]
+    },
+    {
+      "id": "ZA-RISEMZANSI",
+      "country": "ZA",
+      "shortName": "Rise Mzansi",
+      "name": "Rise Mzansi",
+      "logo": "party-logos/za/risemzansi.svg",
+      "sha256": "f38a88d2d756ece55c65f63e54923117b495a135dc6087027902795cb47f362e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Rise_Mzansi_logo.svg",
+      "ideology": [
+        "Neoliberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2023,
+      "coalitionId": "za-gnu",
+      "leader": "Songezo Zibi",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 2,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Rise Mzansi - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rise_Mzansi"
+        }
+      ]
+    },
+    {
+      "id": "ZA-BOSA",
+      "country": "ZA",
+      "shortName": "BOSA",
+      "name": "Build One South Africa",
+      "logo": "party-logos/za/bosa.svg",
+      "sha256": "1fa8ad5aaf44451554a6a430b441ad84d56c19abf5904eaab4291397f296d02e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Build_One_South_Africa.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Liberalism",
+        "Ubuntu"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2022,
+      "leader": "Mmusi Maimane",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Build One South Africa - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Build_One_South_Africa"
+        }
+      ]
+    },
+    {
+      "id": "ZA-ATM",
+      "country": "ZA",
+      "shortName": "ATM",
+      "name": "African Transformation Movement",
+      "logo": "party-logos/za/atm.svg",
+      "sha256": "be58f4c92b4dc3410f32597d0e4f256d77f3dd50fe115fc094a644d4570885e8",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:African_Transformation_Movement_logo.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Conservatism",
+        "Christian democracy",
+        "Right-wing populism",
+        "Anti-immigration"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2018,
+      "leader": "Caesar Nongqunga",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "African Transformation Movement - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/African_Transformation_Movement"
+        }
+      ]
+    },
+    {
+      "id": "ZA-ALJAMAAH",
+      "country": "ZA",
+      "shortName": "Al Jama-ah",
+      "name": "Al Jama-ah",
+      "logo": "party-logos/za/aljamaah.svg",
+      "sha256": "92866801b2b778733142ac6c59307097c57053239921d589b796b7a5b3823bf1",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Al_Jama-ah_logo.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Islamic democracy",
+        "Social democracy",
+        "Social conservatism",
+        "Anti-Zionism",
+        "Ubuntu"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Social: right-wing; Fiscal: left-wing",
+      "founded": 2007,
+      "coalitionId": "za-gnu",
+      "leader": "Ganief Hendricks",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 2,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Al Jama-ah - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Al_Jama-ah"
+        }
+      ]
+    },
+    {
+      "id": "ZA-NCC",
+      "country": "ZA",
+      "shortName": "NCC",
+      "name": "National Coloured Congress",
+      "logo": "party-logos/za/ncc.png",
+      "sha256": "9714d6f9be07aed80810bd888fb478e4f4aa1c77e50d6efb205ed4dbae048acc",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Cape_Coloured_Congress_Logo.png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Coloured interests"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2020,
+      "previousNames": [
+        {
+          "name": "Cape Coloured Congress",
+          "years": "2020-2023"
+        }
+      ],
+      "leader": "Fadiel Adams",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "National Coloured Congress - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Coloured_Congress"
+        }
+      ]
+    },
+    {
+      "id": "ZA-PAC",
+      "country": "ZA",
+      "shortName": "PAC",
+      "name": "Pan Africanist Congress of Azania",
+      "logo": "party-logos/za/pac.svg",
+      "sha256": "79113aeca2d015f1daf8da7e826194a554993e2fc6258376f11cbddb4ead383c",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Pan_Africanist_Congress_of_Azania_logo.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Black nationalism",
+        "Pan-Africanism",
+        "African socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1959,
+      "coalitionId": "za-gnu",
+      "leader": "Mzwanele Nyhontso",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 1,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pan Africanist Congress of Azania - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pan_Africanist_Congress_of_Azania"
+        }
+      ]
+    },
+    {
+      "id": "ZA-UAT",
+      "country": "ZA",
+      "shortName": "UAT",
+      "name": "United Africans Transformation",
+      "logo": "party-logos/za/uat.png",
+      "sha256": "8461f598d4dc21ea52e9ca494a3927f85d2550966cbf5c93098e126e88a8d3ac",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_United_Africans_Transformation.png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use/logo rationale (not Commons-licensed); bundled here solely to identify the party.",
+      "ideology": [
+        "Pan-Africanism",
+        "Socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2022,
+      "leader": "Wonder Mahlatsi",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "United Africans Transformation - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/United_Africans_Transformation"
+        }
+      ]
+    },
+    {
+      "id": "ZA-GOOD",
+      "country": "ZA",
+      "shortName": "GOOD",
+      "name": "GOOD",
+      "logo": "party-logos/za/good.svg",
+      "sha256": "9c501aa1d1ff27281fea0189c252cc89e5dd95c29bd61430bafc08a24b09575c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:GOOD_(political_party).svg",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2018,
+      "coalitionId": "za-gnu",
+      "leader": "Patricia de Lille",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 1,
+      "seatsTotal": 400,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "GOOD (political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/GOOD_(political_party)"
+        }
+      ]
+    }
+  ],
+  "PL": [
+    {
+      "id": "PL-PIS",
+      "country": "PL",
+      "shortName": "PiS",
+      "name": "Prawo i Sprawiedliwość",
+      "nameEn": "Law and Justice",
+      "logo": "party-logos/pl/pis.svg",
+      "sha256": "d12316ebebca0e8bd645826dc35b5dd35dd6c969169f68f6a3aa48027447cc8c",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/2/2a/Logo_of_the_Law_and_Justice.svg",
+      "licenceNote": "Non-free party logo hosted in the English Wikipedia file namespace (not Wikimedia Commons) under a fair-use rationale for identifying the party in its infobox; reused here solely for the same identification purpose.",
+      "ideology": [
+        "National conservatism",
+        "Paternalistic conservatism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2001,
+      "leader": "Jarosław Kaczyński",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 146,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Law and Justice - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Law_and_Justice"
+        },
+        {
+          "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
+          "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
+        }
+      ]
+    },
+    {
+      "id": "PL-KO",
+      "country": "PL",
+      "shortName": "KO",
+      "name": "Koalicja Obywatelska",
+      "nameEn": "Civic Coalition",
+      "logo": "party-logos/pl/ko.svg",
+      "sha256": "3bce32caf522ca188dcb2226ad04650a8d7da70a7fc9c0842f8dc9dce28d4a87",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Logo_Koalicja_Obywatelska_2023.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2025,
+      "previousNames": [
+        {
+          "name": "Koalicja Obywatelska (electoral coalition)",
+          "nameEn": "Civic Coalition (electoral alliance)",
+          "years": "2018-2025"
+        }
+      ],
+      "coalitionId": "pl-tusk-coalition",
+      "leader": "Donald Tusk",
+      "leaderTitle": "Party Chairman",
+      "inPower": true,
+      "timeInPower": "2023-present",
+      "seats": 156,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Civic Coalition (party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Civic_Coalition_(party)"
+        },
+        {
+          "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
+          "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
+        }
+      ]
+    },
+    {
+      "id": "PL-PSL",
+      "country": "PL",
+      "shortName": "PSL",
+      "name": "Polskie Stronnictwo Ludowe",
+      "nameEn": "Polish People's Party",
+      "noImageReason": "Wikimedia's media CDN (upload.wikimedia.org) returned HTTP 429 (rate-limited) on every one of 15 spaced retry attempts over roughly 13 minutes; the correct, resolved source file is https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_of_the_Polish_People%27s_Party_%282019_color%29.svg (Commons file 'Logo of the Polish People's Party (2019 color).svg') and a future session should retry that exact URL rather than guessing a filename.",
+      "ideology": [
+        "Conservatism",
+        "Christian democracy",
+        "Social conservatism",
+        "Pro-Europeanism",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing (historically centre to centre-left agrarianism)",
+      "founded": 1990,
+      "coalitionId": "pl-tusk-coalition",
+      "leader": "Władysław Kosiniak-Kamysz",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2023-present",
+      "seats": 32,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Polish People's Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Polish_People%27s_Party"
+        },
+        {
+          "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
+          "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
+        }
+      ]
+    },
+    {
+      "id": "PL-PL2050",
+      "country": "PL",
+      "shortName": "PL2050",
+      "name": "Polska 2050",
+      "nameEn": "Poland 2050",
+      "logo": "party-logos/pl/pl2050.svg",
+      "sha256": "9a91f0e1abf030f71dcd9ad6e07e4d59337723e1f547d0f30a6a014d9201f9b6",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pl2050.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2020,
+      "coalitionId": "pl-tusk-coalition",
+      "leader": "Katarzyna Pełczyńska-Nałęcz",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2023-present",
+      "seats": 15,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Poland 2050 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Poland_2050"
+        },
+        {
+          "title": "2026 Poland 2050 leadership election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Poland_2050_leadership_election"
+        },
+        {
+          "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
+          "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
+        }
+      ]
+    },
+    {
+      "id": "PL-CENTRUM",
+      "country": "PL",
+      "shortName": "Centrum",
+      "name": "Unia Centrum",
+      "nameEn": "Centre Union",
+      "logo": "party-logos/pl/centrum.png",
+      "sha256": "63945df7b887c7c161dbb6b12a950132f125669f842e0120e8ff57a44eea5226",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/d/de/Centrum_parliamentary_circle_logo.png",
+      "licenceNote": "Non-free parliamentary-circle/party logo hosted in the English Wikipedia file namespace (not Wikimedia Commons) under a fair-use rationale for identification purposes; reused here solely to identify the party.",
+      "ideology": [
+        "Liberalism",
+        "Neoliberalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2026,
+      "previousNames": [
+        {
+          "name": "Centrum (parliamentary circle)",
+          "nameEn": "Centre (parliamentary group)",
+          "years": "2026"
+        },
+        {
+          "name": "Centrum Polska",
+          "nameEn": "Centre Poland",
+          "years": "2026"
+        }
+      ],
+      "coalitionId": "pl-tusk-coalition",
+      "leader": "Paulina Hennig-Kloska",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2026-present",
+      "seats": 15,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Centre Poland - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Centre_Poland"
+        },
+        {
+          "title": "Centre (Polish parliamentary group) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Centre_(Polish_parliamentary_group)"
+        },
+        {
+          "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
+          "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
+        }
+      ]
+    },
+    {
+      "id": "PL-LEWICA",
+      "country": "PL",
+      "shortName": "Lewica",
+      "name": "Nowa Lewica",
+      "nameEn": "New Left",
+      "noImageReason": "Wikimedia's media CDN (upload.wikimedia.org) returned HTTP 429 (rate-limited) on every one of 15 spaced retry attempts over roughly 13 minutes; the correct, resolved source file is https://upload.wikimedia.org/wikipedia/commons/2/20/Lewica_01.svg (Commons file 'Lewica_01.svg') and a future session should retry that exact URL rather than guessing a filename.",
+      "ideology": [
+        "Social democracy",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2021,
+      "coalitionId": "pl-tusk-coalition",
+      "leader": "Włodzimierz Czarzasty",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2023-present",
+      "seats": 21,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "New Left (Poland) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Left_(Poland)"
+        },
+        {
+          "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
+          "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
+        }
+      ]
+    },
+    {
+      "id": "PL-KONF",
+      "country": "PL",
+      "shortName": "Konfederacja",
+      "name": "Konfederacja Wolność i Niepodległość",
+      "nameEn": "Confederation Liberty and Independence",
+      "logo": "party-logos/pl/konfederacja.svg",
+      "sha256": "ba828882bcea2c2f43b958b28dbc221bd4e0ed0a6d526542c2ebf11945c133a0",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/d/df/Logo_of_the_Confederation_Liberty_and_Independence.svg",
+      "licenceNote": "Non-free party logo hosted in the English Wikipedia file namespace (not Wikimedia Commons) under a fair-use rationale for identifying the party in its infobox; reused here solely for the same identification purpose.",
+      "ideology": [
+        "Right-wing populism",
+        "Economic liberalism",
+        "National conservatism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2018,
+      "leader": "Sławomir Mentzen and Krzysztof Bosak",
+      "leaderTitle": "Co-Chairmen",
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Confederation Liberty and Independence - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Confederation_Liberty_and_Independence"
+        },
+        {
+          "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
+          "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
+        }
+      ]
+    },
+    {
+      "id": "PL-RPLUS",
+      "country": "PL",
+      "shortName": "Rozwój Plus",
+      "name": "Rozwój Plus",
+      "nameEn": "Development Plus",
+      "noImageReason": "Wikimedia's media CDN (upload.wikimedia.org) returned HTTP 429 (rate-limited) on every one of 15 spaced retry attempts over roughly 13 minutes; the correct, resolved source file is https://upload.wikimedia.org/wikipedia/commons/c/cf/Rozw%C3%B3j_Plus.svg (Commons file 'Rozwój Plus.svg') and a future session should retry that exact URL rather than guessing a filename.",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2026,
+      "leader": "Mateusz Morawiecki",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 41,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Development Plus - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Development_Plus"
+        },
+        {
+          "title": "Morawiecki confirms breakaway Polish opposition group will form new party - Notes From Poland",
+          "url": "https://notesfrompoland.com/2026/08/04/morawiecki-confirms-breakaway-polish-opposition-group-will-form-new-party/"
+        },
+        {
+          "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
+          "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
+        }
+      ]
+    },
+    {
+      "id": "PL-KKP",
+      "country": "PL",
+      "shortName": "KKP",
+      "name": "Konfederacja Korony Polskiej",
+      "nameEn": "Confederation of the Polish Crown",
+      "logo": "party-logos/pl/kkp.png",
+      "sha256": "e192509d34784e18b459b64f0c7576c713018143182b52dabdca1909f40311c5",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Confederation_of_the_Polish_Crown_logo.png",
+      "ideology": [
+        "Ultranationalism",
+        "Ultraconservatism",
+        "Hard Euroscepticism",
+        "Enthronement",
+        "Nationalist populism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2019,
+      "leader": "Grzegorz Braun",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Confederation of the Polish Crown - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Confederation_of_the_Polish_Crown"
+        },
+        {
+          "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
+          "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
+        }
+      ]
+    },
+    {
+      "id": "PL-RAZEM",
+      "country": "PL",
+      "shortName": "Razem",
+      "name": "Partia Razem",
+      "nameEn": "Together Party",
+      "logo": "party-logos/pl/razem.png",
+      "sha256": "18404a91c4913ca8947ef7e16a213ce40d024b5f93e857ec46c429d8ca483dd7",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Razem.png",
+      "ideology": [
+        "Social democracy",
+        "Social liberalism",
+        "Democratic socialism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2015,
+      "leader": "Adrian Zandberg and Aleksandra Owca",
+      "leaderTitle": "Co-Leaders",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Razem - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Razem"
+        },
+        {
+          "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
+          "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
+        }
+      ]
+    },
+    {
+      "id": "PL-DB",
+      "country": "PL",
+      "shortName": "Demokracja Bezpośrednia",
+      "name": "Demokracja Bezpośrednia",
+      "nameEn": "Direct Democracy",
+      "logo": "party-logos/pl/db.jpg",
+      "sha256": "174ccfd429d99b9833671d4c9af59278509140638aa204676f5dacf89811b057",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/a/ac/Direct_Democracy_%28Polish_parliamentary_group%29_logo.jpg",
+      "licenceNote": "Non-free parliamentary-group logo hosted in the English Wikipedia file namespace (not Wikimedia Commons) under a fair-use rationale for identification purposes; reused here solely to identify the group.",
+      "ideology": [
+        "Conservatism",
+        "Right-wing populism",
+        "Polish nationalism",
+        "Agrarianism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2024,
+      "previousNames": [
+        {
+          "name": "Wolni Republikanie",
+          "nameEn": "Free Republicans",
+          "years": "2024-2026"
+        }
+      ],
+      "leader": "Jarosław Sachajko",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Direct Democracy (Polish parliamentary group) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Direct_Democracy_(Polish_parliamentary_group)"
+        },
+        {
+          "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
+          "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
         }
       ]
     }
