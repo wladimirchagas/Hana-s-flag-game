@@ -288,11 +288,41 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "title": "Gabungan Rakyat Sabah",
       "url": "https://en.wikipedia.org/wiki/Gabungan_Rakyat_Sabah"
     }
+  },
+  "DE-CDUCSUSPD": {
+    "id": "DE-CDUCSUSPD",
+    "name": "Koalition aus CDU, CSU und SPD",
+    "nameEn": "CDU/CSU–SPD coalition (\"grand coalition\")",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "DE-CDU",
+      "DE-CSU",
+      "DE-SPD"
+    ],
+    "source": {
+      "title": "Merz cabinet – Wikipedia (coalition agreement signed 5 May 2025 between CDU, CSU and SPD; Friedrich Merz elected Chancellor 6 May 2025)",
+      "url": "https://en.wikipedia.org/wiki/Merz_cabinet"
+    },
+    "note": "This id represents ONLY the 2025 governing coalition cabinet (CDU+CSU+SPD under Chancellor Friedrich Merz). It is NOT used to represent the CDU/CSU's separate, permanent sister-party Fraktion pact, which the two parties maintain regardless of who is in government."
+  },
+  "ldp-jip-2025": {
+    "id": "ldp-jip-2025",
+    "name": "Liberal Democratic Party–Japan Innovation Party coalition",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "JP-LDP",
+      "JP-ISHIN"
+    ],
+    "source": {
+      "title": "Liberal Democratic Party (Japan) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Liberal_Democratic_Party_(Japan)"
+    },
+    "note": "Confidence-and-supply / coalition arrangement between the LDP and the Japan Innovation Party (JIP), agreed 20 October 2025 after the collapse of the 26-year LDP–Komeito coalition (Komeito withdrew over disagreements with incoming LDP leader Sanae Takaichi). The arrangement continued after, and was reinforced by, the LDP-JIP landslide in the 8 February 2026 general election; Takaichi was reconfirmed as Prime Minister 18 February 2026 with a two-thirds supermajority."
   }
 };
 
 export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
-"AU": [
+  "AU": [
     {
       "id": "AU-ALP",
       "country": "AU",
@@ -2440,7 +2470,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
-  US: [
+  "US": [
     {
       "id": "US-DEM",
       "country": "US",
@@ -2522,6 +2552,1189 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "GOP_logo_(positive).svg - Wikimedia Commons (public domain)",
           "url": "https://commons.wikimedia.org/wiki/File:GOP_logo_(positive).svg"
+        }
+      ]
+    }
+  ],
+  "GB": [
+    {
+      "id": "GB-LAB",
+      "country": "GB",
+      "shortName": "Labour",
+      "name": "Labour Party",
+      "logo": "party-logos/gb/labour.svg",
+      "sha256": "ab47261debf135f500f108b76abab8167ec0955265be57f5e51b0c4fc0f940ac",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/c/c1/Labour_Party_%28UK%29_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Labour Party (UK) logo.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
+      "ideology": [
+        "Social democracy",
+        "Democratic socialism",
+        "Trade unionism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1900,
+      "previousNames": [
+        {
+          "name": "Labour Representation Committee",
+          "years": "1900–1906"
+        }
+      ],
+      "leader": "Andy Burnham",
+      "leaderTitle": "Leader of the Labour Party and Prime Minister",
+      "inPower": true,
+      "timeInPower": "5 July 2024 – present (Keir Starmer 2024–2026; Andy Burnham from 20 July 2026)",
+      "seats": 403,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Labour Party (UK) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Labour_Party_(UK)"
+        },
+        {
+          "title": "Premiership of Andy Burnham — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Premiership_of_Andy_Burnham"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-CON",
+      "country": "GB",
+      "shortName": "Conservative",
+      "name": "Conservative and Unionist Party",
+      "logo": "party-logos/gb/con.svg",
+      "sha256": "5972cfc94f63f04e9bff0ae071b4e4dc0557cb2b5c0eba8c24000161a102a6ca",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/a/a0/Conservatives_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia (not Commons) under fair use, used there to identify the Conservative Party; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Conservatism",
+        "British unionism",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1834,
+      "leader": "Kemi Badenoch",
+      "leaderTitle": "Leader of the Conservative Party",
+      "inPower": false,
+      "seats": 118,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Conservative Party (UK) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Conservative_Party_(UK)"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-LD",
+      "country": "GB",
+      "shortName": "Liberal Democrats",
+      "name": "Liberal Democrats",
+      "logo": "party-logos/gb/ld.svg",
+      "sha256": "37cdd6730265ba43ac86e23507b50822962b8ba3466862fb565f5996b00e5ef4",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Liberal_Democrats_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Liberal Democrats logo.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
+      "ideology": [
+        "Liberalism",
+        "Social liberalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1988,
+      "leader": "Ed Davey",
+      "leaderTitle": "Leader of the Liberal Democrats",
+      "inPower": false,
+      "seats": 71,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Liberal Democrats (UK) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Democrats_(UK)"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-SNP",
+      "country": "GB",
+      "shortName": "SNP",
+      "name": "Scottish National Party",
+      "logo": "party-logos/gb/snp.svg",
+      "sha256": "84fc0ee714fb0a8bc7e83ca9c931d2bbeef67d1fe657adef1d7dbf82f355eef4",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/0/0f/Scottish_National_Party_logo_2016.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia (not Commons) under fair use, used there to identify the Scottish National Party; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Scottish nationalism",
+        "Scottish independence",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1934,
+      "leader": "John Swinney",
+      "leaderTitle": "Leader of the Scottish National Party (Westminster leader: Dave Doogan, since 12 May 2026)",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Scottish National Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Scottish_National_Party"
+        },
+        {
+          "title": "Dave Doogan — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dave_Doogan"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-REFORM",
+      "country": "GB",
+      "shortName": "Reform UK",
+      "name": "Reform UK",
+      "logo": "party-logos/gb/reform.svg",
+      "sha256": "9fddd4ecb2c92e208221f9f1c787a3d146fdfb0718a0855daeaca28903c3d5d1",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Logo_of_the_Reform_UK.svg",
+      "ideology": [
+        "Right-wing populism",
+        "Hard Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2018,
+      "previousNames": [
+        {
+          "name": "The Brexit Party",
+          "years": "2018–2021"
+        }
+      ],
+      "leader": "Nigel Farage",
+      "leaderTitle": "Leader of Reform UK",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Reform UK — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Reform_UK"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-SF",
+      "country": "GB",
+      "shortName": "Sinn Féin",
+      "name": "Sinn Féin",
+      "nameEn": "We Ourselves",
+      "logo": "party-logos/gb/sf.svg",
+      "sha256": "bd37b761a63b5f990ffd82a4937edf05e60ac2a44acef333460763b59c2c9dce",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/4/46/Logo_of_the_Sinn_F%C3%A9in.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Logo of the Sinn Féin.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
+      "ideology": [
+        "Irish republicanism",
+        "Democratic socialism",
+        "Left-wing nationalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1905,
+      "leader": "Mary Lou McDonald",
+      "leaderTitle": "President of Sinn Féin",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Sinn Féin — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sinn_F%C3%A9in"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-DUP",
+      "country": "GB",
+      "shortName": "DUP",
+      "name": "Democratic Unionist Party",
+      "logo": "party-logos/gb/dup.svg",
+      "sha256": "91d300a38cabc865d4c3c759331c8d556459baff1c3941aa6e90b481f6e19a06",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/f/f2/Democratic_Unionist_Party_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Democratic Unionist Party logo.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
+      "ideology": [
+        "British unionism",
+        "British nationalism",
+        "Ulster loyalism",
+        "National conservatism",
+        "Social conservatism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1971,
+      "leader": "Gavin Robinson",
+      "leaderTitle": "Leader of the Democratic Unionist Party",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Democratic Unionist Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Unionist_Party"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-GREEN",
+      "country": "GB",
+      "shortName": "Green Party",
+      "name": "Green Party of England and Wales",
+      "logo": "party-logos/gb/green.svg",
+      "sha256": "13383962c2a4140996a29ffc204d03e287de09fa5f8de3051a6fd1bb6b2760b4",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/a/ab/Green_Party_of_England_and_Wales_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Green Party of England and Wales logo.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
+      "ideology": [
+        "Green politics",
+        "Progressivism",
+        "Anti-capitalism (faction)",
+        "Eco-socialism (faction)"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1990,
+      "previousNames": [
+        {
+          "name": "PEOPLE Party",
+          "years": "1972–1975"
+        },
+        {
+          "name": "Ecology Party",
+          "years": "1975–1985"
+        },
+        {
+          "name": "Green Party (UK-wide)",
+          "years": "1985–1990"
+        }
+      ],
+      "leader": "Zack Polanski",
+      "leaderTitle": "Leader of the Green Party of England and Wales (sole leader since 2 September 2025)",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Green Party of England and Wales — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_of_England_and_Wales"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-PC",
+      "country": "GB",
+      "shortName": "Plaid Cymru",
+      "name": "Plaid Cymru",
+      "nameEn": "Party of Wales",
+      "logo": "party-logos/gb/pc.svg",
+      "sha256": "630729c2e83fe5c8f799d600cbc1bbb13d5ac5354f69eb812e9ed5dc8c01c0ce",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/9/99/Plaid_Cymru_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Plaid Cymru logo.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
+      "ideology": [
+        "Welsh nationalism",
+        "Welsh independence",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1925,
+      "leader": "Rhun ap Iorwerth",
+      "leaderTitle": "Leader of Plaid Cymru",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Plaid Cymru — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Plaid_Cymru"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-SDLP",
+      "country": "GB",
+      "shortName": "SDLP",
+      "name": "Social Democratic and Labour Party",
+      "logo": "party-logos/gb/sdlp.svg",
+      "sha256": "e6b3cbb541f65cb4ea91f2ad2904701e9a156f3c9ea0013569597a8398eb4bb1",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/SDLP_Logo_2025.svg",
+      "ideology": [
+        "Social democracy",
+        "Irish reunification",
+        "Irish nationalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1970,
+      "leader": "Claire Hanna",
+      "leaderTitle": "Leader of the Social Democratic and Labour Party",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Social Democratic and Labour Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_and_Labour_Party"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-YOURPARTY",
+      "country": "GB",
+      "shortName": "Your Party",
+      "name": "Your Party",
+      "logo": "party-logos/gb/yourparty.svg",
+      "sha256": "25614b3ca0e29050a316e3f5672678254673fa8212194e26e1d81bf823c69fb0",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Your_Party_logo.svg",
+      "ideology": [
+        "Socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2025,
+      "leader": "Jeremy Corbyn",
+      "leaderTitle": "Parliamentary Leader of Your Party (party uses collective leadership via a Central Executive Committee; no single overall leader)",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Your Party (UK) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Your_Party_(UK)"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-APNI",
+      "country": "GB",
+      "shortName": "Alliance",
+      "name": "Alliance Party of Northern Ireland",
+      "logo": "party-logos/gb/apni.svg",
+      "sha256": "a9471c3df4bee10b009fcd939a8f94c3ac968f90c7ff1852370470d8f3a33d30",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Alliance_Party_of_Northern_Ireland_logo.svg",
+      "ideology": [
+        "Liberalism",
+        "Social liberalism",
+        "Nonsectarianism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1970,
+      "leader": "Naomi Long",
+      "leaderTitle": "Leader of the Alliance Party of Northern Ireland",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Alliance Party of Northern Ireland — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alliance_Party_of_Northern_Ireland"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-UUP",
+      "country": "GB",
+      "shortName": "UUP",
+      "name": "Ulster Unionist Party",
+      "logo": "party-logos/gb/uup.svg",
+      "sha256": "b0e28301a7f304ea5d5569ac50304ab3b4ac494300a6441ca17e8dbd63013c85",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/5/5e/Ulster_Unionist_Party_logo_%282017%29.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Ulster Unionist Party logo (2017).svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
+      "ideology": [
+        "British unionism",
+        "Conservatism",
+        "Social liberalism (minor faction)"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1905,
+      "leader": "Jon Burrows",
+      "leaderTitle": "Leader of the Ulster Unionist Party (since 31 January 2026)",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Ulster Unionist Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ulster_Unionist_Party"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-TUV",
+      "country": "GB",
+      "shortName": "TUV",
+      "name": "Traditional Unionist Voice",
+      "logo": "party-logos/gb/tuv.svg",
+      "sha256": "e1464f9fab020208be30f1ebd0c030c3d90850ff59cac685c9ace822a556360e",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Logo_of_the_Traditional_Unionist_Voice.svg",
+      "ideology": [
+        "British unionism",
+        "National conservatism",
+        "Social conservatism",
+        "Anti-Good Friday Agreement",
+        "Hard Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2007,
+      "leader": "Jim Allister",
+      "leaderTitle": "Leader of Traditional Unionist Voice",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Traditional Unionist Voice — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Traditional_Unionist_Voice"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    },
+    {
+      "id": "GB-RESTORE",
+      "country": "GB",
+      "shortName": "Restore Britain",
+      "name": "Restore Britain",
+      "logo": "party-logos/gb/restore.svg",
+      "sha256": "09e599aba3100ab927dba572064a7479e2683dda28097c558ce9db87dcef3642",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/3/32/Restore_Britain_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Restore Britain logo.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
+      "ideology": [
+        "Ethnic nationalism",
+        "Far-right politics"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2026,
+      "leader": "Rupert Lowe",
+      "leaderTitle": "Leader of Restore Britain",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Restore Britain — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Restore_Britain"
+        },
+        {
+          "title": "Template:UK House of Commons composition — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Template:UK_House_of_Commons_composition"
+        }
+      ]
+    }
+  ],
+  "DE": [
+    {
+      "id": "DE-CDU",
+      "country": "DE",
+      "shortName": "CDU",
+      "name": "Christlich Demokratische Union Deutschlands",
+      "nameEn": "Christian Democratic Union of Germany",
+      "logo": "party-logos/de/cdu.svg",
+      "sha256": "91571409a6b3d6013c79b2ff1307309878c30d9c279f434446139eaee76d9c55",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CDU_Logo_2023.svg",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism (German)"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1945,
+      "coalitionId": "DE-CDUCSUSPD",
+      "leader": "Friedrich Merz",
+      "leaderTitle": "Federal Chairman",
+      "inPower": true,
+      "timeInPower": "6 May 2025–present (leads the Merz cabinet, in coalition with the CSU and SPD)",
+      "seats": 164,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "Christian Democratic Union of Germany – Wikipedia (infobox: founded 26 June 1945, ideology, political position, leader Friedrich Merz)",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democratic_Union_of_Germany"
+        },
+        {
+          "title": "2025 German federal election – Wikipedia (CDU/CSU 208 combined seats; CDU 164 of those)",
+          "url": "https://en.wikipedia.org/wiki/2025_German_federal_election"
+        },
+        {
+          "title": "21st Bundestag – Wikipedia (current composition: CDU 164, CSU 44, CDU/CSU 208 total)",
+          "url": "https://en.wikipedia.org/wiki/21st_Bundestag"
+        },
+        {
+          "title": "Merz cabinet – Wikipedia (Friedrich Merz elected Chancellor 6 May 2025, heading a CDU/CSU–SPD coalition)",
+          "url": "https://en.wikipedia.org/wiki/Merz_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "DE-CSU",
+      "country": "DE",
+      "shortName": "CSU",
+      "name": "Christlich-Soziale Union in Bayern",
+      "nameEn": "Christian Social Union in Bavaria",
+      "logo": "party-logos/de/csu.svg",
+      "sha256": "6e76ac151cfdd746785391468589583ef8ee233aff6db6533f06c856c97ca1c5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CSU_Logo_since_2016.svg",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism (German)",
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1945,
+      "coalitionId": "DE-CDUCSUSPD",
+      "leader": "Markus Söder",
+      "leaderTitle": "Party Chairman",
+      "inPower": true,
+      "timeInPower": "6 May 2025–present (junior partner, with the CDU, in the Merz cabinet, in coalition with the SPD)",
+      "seats": 44,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "Christian Social Union in Bavaria – Wikipedia (infobox: founded 13 October 1945, ideology, political position, leader Markus Söder)",
+          "url": "https://en.wikipedia.org/wiki/Christian_Social_Union_in_Bavaria"
+        },
+        {
+          "title": "2025 German federal election – Wikipedia (CDU/CSU 208 combined seats; CSU 44 of those)",
+          "url": "https://en.wikipedia.org/wiki/2025_German_federal_election"
+        },
+        {
+          "title": "21st Bundestag – Wikipedia (current composition: CDU 164, CSU 44, CDU/CSU 208 total)",
+          "url": "https://en.wikipedia.org/wiki/21st_Bundestag"
+        },
+        {
+          "title": "Merz cabinet – Wikipedia (CDU/CSU–SPD coalition formed 6 May 2025)",
+          "url": "https://en.wikipedia.org/wiki/Merz_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "DE-SPD",
+      "country": "DE",
+      "shortName": "SPD",
+      "name": "Sozialdemokratische Partei Deutschlands",
+      "nameEn": "Social Democratic Party of Germany",
+      "logo": "party-logos/de/spd.svg",
+      "sha256": "7bd74a096f0522f8629d45d8b59eaf1d23ce90f61479ca3950b524edbcaa8d8b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SPD-Logo_2022_(rot).svg",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1875,
+      "previousNames": [
+        {
+          "name": "Sozialistische Arbeiterpartei Deutschlands",
+          "nameEn": "Socialist Workers' Party of Germany",
+          "years": "1875–1890"
+        }
+      ],
+      "coalitionId": "DE-CDUCSUSPD",
+      "leader": "Bärbel Bas and Lars Klingbeil",
+      "leaderTitle": "Co-leaders",
+      "inPower": true,
+      "timeInPower": "6 May 2025–present (junior coalition partner in the Merz cabinet)",
+      "seats": 120,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "Social Democratic Party of Germany – Wikipedia (infobox: founded 1875 as SAPD, renamed SPD 1890; ideology, political position, co-leaders Bärbel Bas and Lars Klingbeil)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_of_Germany"
+        },
+        {
+          "title": "2025 German federal election – Wikipedia (SPD 120 seats, 16.4%)",
+          "url": "https://en.wikipedia.org/wiki/2025_German_federal_election"
+        },
+        {
+          "title": "21st Bundestag – Wikipedia (current composition: SPD 120)",
+          "url": "https://en.wikipedia.org/wiki/21st_Bundestag"
+        },
+        {
+          "title": "Merz cabinet – Wikipedia (SPD joined the governing coalition 6 May 2025)",
+          "url": "https://en.wikipedia.org/wiki/Merz_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "DE-AFD",
+      "country": "DE",
+      "shortName": "AfD",
+      "name": "Alternative für Deutschland",
+      "nameEn": "Alternative for Germany",
+      "logo": "party-logos/de/afd.svg",
+      "sha256": "5f262a1faae387b5ed171cb4e1ed14e18db61fe2004821f5e508f2ed40fef6f6",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:AfD_Logo_2021.svg",
+      "ideology": [
+        "Right-wing populism",
+        "National conservatism",
+        "Euroscepticism",
+        "Völkisch nationalism (faction)"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2013,
+      "leader": "Tino Chrupalla and Alice Weidel",
+      "leaderTitle": "Co-leaders",
+      "inPower": false,
+      "seats": 152,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "Alternative for Germany – Wikipedia (infobox: founded 6 February 2013, ideology, political position, co-leaders Tino Chrupalla and Alice Weidel)",
+          "url": "https://en.wikipedia.org/wiki/Alternative_for_Germany"
+        },
+        {
+          "title": "2025 German federal election – Wikipedia (AfD 152 seats, 20.8%, largest opposition party)",
+          "url": "https://en.wikipedia.org/wiki/2025_German_federal_election"
+        },
+        {
+          "title": "21st Bundestag – Wikipedia (current AfD Fraktion 150, down 2 from the 152 won at the election after two members left the party/Fraktion in mid-2025 following the BfV's, since temporarily suspended, extremism classification; those 2 seats are now held by non-attached members, not reassigned to another party)",
+          "url": "https://en.wikipedia.org/wiki/21st_Bundestag"
+        }
+      ]
+    },
+    {
+      "id": "DE-GRUENE",
+      "country": "DE",
+      "shortName": "Greens",
+      "name": "Bündnis 90/Die Grünen",
+      "nameEn": "Alliance 90/The Greens",
+      "logo": "party-logos/de/gruene.svg",
+      "sha256": "b0877cdfb209b42075e6674ea1727e19100b8a6f62bf5635dd9d93e3bd089662",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Bündnis_90_-_Die_Grünen_Logo.svg",
+      "ideology": [
+        "Green politics",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1993,
+      "leader": "Felix Banaszak and Franziska Brantner",
+      "leaderTitle": "Co-leaders",
+      "inPower": false,
+      "seats": 85,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "Alliance 90/The Greens – Wikipedia (infobox: founded 1993 by the merger of Die Grünen, founded 1980 in West Germany, and Bündnis 90, founded 1990 in East Germany; ideology, political position, co-leaders Felix Banaszak and Franziska Brantner as of Nov 2024)",
+          "url": "https://en.wikipedia.org/wiki/Alliance_90/The_Greens"
+        },
+        {
+          "title": "2025 German federal election – Wikipedia (Greens 85 seats, 11.6%)",
+          "url": "https://en.wikipedia.org/wiki/2025_German_federal_election"
+        },
+        {
+          "title": "21st Bundestag – Wikipedia (current composition: Alliance 90/The Greens 85, in opposition)",
+          "url": "https://en.wikipedia.org/wiki/21st_Bundestag"
+        }
+      ]
+    },
+    {
+      "id": "DE-LINKE",
+      "country": "DE",
+      "shortName": "Linke",
+      "name": "Die Linke",
+      "nameEn": "The Left",
+      "logo": "party-logos/de/linke.svg",
+      "sha256": "641255b63abca5e7d9a23fc22dab1e9e2975d317d8eca74d2de6c5651c0b52f9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Die_Linke_(2023).svg",
+      "ideology": [
+        "Democratic socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2007,
+      "leader": "Ines Schwerdtner and Luigi Pantisano",
+      "leaderTitle": "Chairpersons",
+      "inPower": false,
+      "seats": 64,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "The Left (Germany) – Wikipedia (infobox: founded 16 June 2007 by the merger of the Party of Democratic Socialism, PDS, and Labour and Social Justice – The Electoral Alternative, WASG; ideology, political position, chairpersons Ines Schwerdtner and Luigi Pantisano since June 2026)",
+          "url": "https://en.wikipedia.org/wiki/The_Left_(Germany)"
+        },
+        {
+          "title": "2025 German federal election – Wikipedia (Die Linke 64 seats, 8.8%)",
+          "url": "https://en.wikipedia.org/wiki/2025_German_federal_election"
+        },
+        {
+          "title": "21st Bundestag – Wikipedia (current composition: The Left 64, in opposition, though a junior coalition partner in the Bremen and Mecklenburg-Vorpommern state governments)",
+          "url": "https://en.wikipedia.org/wiki/21st_Bundestag"
+        }
+      ]
+    },
+    {
+      "id": "DE-SSW",
+      "country": "DE",
+      "shortName": "SSW",
+      "name": "Südschleswigscher Wählerverband",
+      "nameEn": "South Schleswig Voters' Association",
+      "logo": "party-logos/de/ssw.svg",
+      "sha256": "42d83d16ecd1ff89b5cd412d80e9eb5b53dce2fbf37b186cec3b61b130504238",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Südschleswigscher_Wählerverband,_Logo.svg",
+      "ideology": [
+        "Regionalism",
+        "Danish minority interests",
+        "Frisian minority interests",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Declines to identify itself with a scale of left–right politics; models its policies on the Nordic welfare-state model",
+      "founded": 1948,
+      "leader": "Christian Dirschauer",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "South Schleswig Voters' Association – Wikipedia (infobox: founded 30 June 1948, ideology, chairman Christian Dirschauer; party representing the Danish and Frisian minorities, exempt from the federal 5% electoral threshold as a national-minority party)",
+          "url": "https://en.wikipedia.org/wiki/South_Schleswig_Voters%27_Association"
+        },
+        {
+          "title": "2025 German federal election – Wikipedia (SSW retained its 1 seat with 76,138 votes / 0.15% nationally, exempt from the 5% threshold as a national-minority party)",
+          "url": "https://en.wikipedia.org/wiki/2025_German_federal_election"
+        },
+        {
+          "title": "21st Bundestag – Wikipedia (SSW holds 1 of the 630 seats; too small to form its own Fraktion, so its member sits among the chamber's non-attached members)",
+          "url": "https://en.wikipedia.org/wiki/21st_Bundestag"
+        }
+      ]
+    }
+  ],
+  "JP": [
+    {
+      "id": "JP-LDP",
+      "country": "JP",
+      "shortName": "LDP",
+      "name": "自由民主党",
+      "nameEn": "Liberal Democratic Party",
+      "logo": "party-logos/jp/ldp.svg",
+      "sha256": "afdf688f9ab96e80cf22ca9115ee602e8d5766ea9ab24d52faa4579a9233580b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Liberal_Democratic_Party_of_Japan_logo.svg",
+      "ideology": [
+        "Conservatism (Japanese)",
+        "Japanese nationalism",
+        "Big-tent"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Centre-right to far-right (functions as a big-tent conservative party)",
+      "founded": 1955,
+      "coalitionId": "ldp-jip-2025",
+      "leader": "Sanae Takaichi",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2012-12-26–present (continuously the senior governing party since the Second Abe Cabinet; Sanae Takaichi became party President 4 October 2025 and Prime Minister 21 October 2025)",
+      "seats": 316,
+      "seatsTotal": 465,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Liberal Democratic Party (Japan) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Democratic_Party_(Japan)"
+        },
+        {
+          "title": "2026 Japanese general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Japanese_general_election"
+        },
+        {
+          "title": "House of Representatives (Japan) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Japan)"
+        }
+      ]
+    },
+    {
+      "id": "JP-CRA",
+      "country": "JP",
+      "shortName": "CRA",
+      "name": "中道改革連合",
+      "nameEn": "Centrist Reform Alliance",
+      "logo": "party-logos/jp/cra.svg",
+      "sha256": "1141392cc5cb12b0cdcd6d234f54167647f00e455b5c675f875e6db0ab55d7c4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Centrist_Reform_Alliance_Logo.svg",
+      "ideology": [
+        "Centrism",
+        "Liberalism",
+        "Constitutionalism",
+        "Citizens-first (生活者ファースト)"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2026,
+      "leader": "Junya Ogawa",
+      "leaderTitle": "Representative",
+      "inPower": false,
+      "seats": 49,
+      "seatsTotal": 465,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Centrist Reform Alliance - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Centrist_Reform_Alliance"
+        },
+        {
+          "title": "中道改革連合 - Wikipedia (ja)",
+          "url": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E9%81%93%E6%94%B9%E9%9D%A9%E9%80%A3%E5%90%88"
+        },
+        {
+          "title": "Komeito - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Komeito"
+        },
+        {
+          "title": "After collapse of merger talks, centrist parties seek unity without unification - The Japan Times (2026-09-01)",
+          "url": "https://www.japantimes.co.jp/news/2026/09/01/japan/politics/cra-merger-collapse/"
+        }
+      ]
+    },
+    {
+      "id": "JP-ISHIN",
+      "country": "JP",
+      "shortName": "Ishin",
+      "name": "日本維新の会",
+      "nameEn": "Japan Innovation Party",
+      "logo": "party-logos/jp/ishin.svg",
+      "sha256": "01ce451cadd917e090ca1e1105da2c32fa54b47e3a117b1ae5b2ffe83009d9f2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Japan_Innovation_Party.svg",
+      "ideology": [
+        "Libertarian conservatism",
+        "Neoliberalism",
+        "Economic liberalism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2015,
+      "coalitionId": "ldp-jip-2025",
+      "leader": "Hirofumi Yoshimura",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2025-10-20–present (confidence-and-supply/coalition partner of the LDP)",
+      "seats": 36,
+      "seatsTotal": 465,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Japan Innovation Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Japan_Innovation_Party"
+        },
+        {
+          "title": "2026 Japanese general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Japanese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JP-DPFP",
+      "country": "JP",
+      "shortName": "DPFP",
+      "name": "国民民主党",
+      "nameEn": "Democratic Party For the People",
+      "logo": "party-logos/jp/dpfp.svg",
+      "sha256": "335a32fd9bfda1025189fcd23bd417a2c1931cbc1f3c83c555ba3674b766c2e6",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Democratic_Party_For_the_People.svg",
+      "ideology": [
+        "Conservatism",
+        "Populism",
+        "Expansionary fiscal policy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2020,
+      "leader": "Yuichiro Tamaki",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 28,
+      "seatsTotal": 465,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Democratic Party For the People - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_For_the_People"
+        },
+        {
+          "title": "2026 Japanese general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Japanese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JP-SANSEITO",
+      "country": "JP",
+      "shortName": "Sanseito",
+      "name": "参政党",
+      "nameEn": "Sanseitō (\"Party of Do It Yourself\")",
+      "logo": "party-logos/jp/sanseito.svg",
+      "sha256": "40e0eefe5f37e4661c698a9aa6aed3efd9bba9d762d5e2b0dda2aba80be868fc",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Sanseito_Logo_(2025).svg",
+      "ideology": [
+        "Japanese nationalism",
+        "Ultraconservatism",
+        "Right-wing populism",
+        "Anti-immigration"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2020,
+      "leader": "Sohei Kamiya",
+      "leaderTitle": "Representative (also concurrently Secretary-General)",
+      "inPower": false,
+      "seats": 15,
+      "seatsTotal": 465,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Sanseitō - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sanseit%C5%8D"
+        },
+        {
+          "title": "2026 Japanese general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Japanese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JP-TEAMMIRAI",
+      "country": "JP",
+      "shortName": "Team Mirai",
+      "name": "チームみらい",
+      "nameEn": "Team Mirai (\"Team Future\")",
+      "logo": "party-logos/jp/team-mirai.svg",
+      "sha256": "5b2c840d572dcf47389b8c6765bda37c32cdd4baa139096b6ab4892e4dcf374f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Team_Mirai_logo.svg",
+      "ideology": [
+        "E-democracy",
+        "Plurality",
+        "Technocracy",
+        "Social liberalism",
+        "Third Way"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2025,
+      "leader": "Takahiro Anno",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 11,
+      "seatsTotal": 465,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Team Mirai - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Team_Mirai"
+        },
+        {
+          "title": "2026 Japanese general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Japanese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JP-JCP",
+      "country": "JP",
+      "shortName": "JCP",
+      "name": "日本共産党",
+      "nameEn": "Japanese Communist Party",
+      "logo": "party-logos/jp/jcp.svg",
+      "sha256": "307ebd5cfe850d4bc0ed004f60822302ff9d485bcb21bfb211c99e8514173cc6",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Nihon_Kyosan-to_logo_2026.svg",
+      "ideology": [
+        "Communism",
+        "Democratic socialism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 1922,
+      "leader": "Tomoko Tamura",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 465,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Japanese Communist Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Japanese_Communist_Party"
+        },
+        {
+          "title": "2026 Japanese general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Japanese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JP-INOCHI",
+      "country": "JP",
+      "shortName": "Party of Life",
+      "name": "いのちの党",
+      "nameEn": "Party of Life",
+      "noImageReason": "The party (as Reiwa Shinsengumi) suffered a near-collapse in the 8 February 2026 election (8 to 1 seat) and founder/leader Taro Yamamoto resigned in July 2026 for health and legal reasons. New leader Jōji Yamamoto, elected 31 July 2026, announced the party's rename to 'いのちの党' (Party of Life) on 6 August 2026, explicitly to refresh the party's image away from its founder. As of the most recent Wikipedia update (the dedicated 'いのちの党 (2026)' article), no new logo has been published yet: the infobox itself states the logo is 'ロゴ製作中' (logo under production) and a press conference to unveil new branding, planned for late August 2026, had not yet resulted in a published logo file. The party's OLD Reiwa Shinsengumi branding is a different, superseded party identity and would misrepresent the current party if shown as its logo.",
+      "ideology": [
+        "Left-wing populism",
+        "Anti-austerity",
+        "Expansionary fiscal policy",
+        "Nuclear phase-out",
+        "Green New Deal"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing populism",
+      "founded": 2019,
+      "previousNames": [
+        {
+          "name": "れいわ新選組",
+          "nameEn": "Reiwa Shinsengumi",
+          "years": "2019-2026"
+        }
+      ],
+      "leader": "Jōji Yamamoto",
+      "leaderTitle": "Representative (Co-Representative: Daisuke Amahata)",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 465,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "れいわ新選組 / いのちの党 (2026) - Wikipedia (ja)",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%8C%E3%81%84%E3%82%8F%E6%96%B0%E9%81%B8%E7%B5%84"
+        },
+        {
+          "title": "いのちの党 (2026) - Wikipedia (ja)",
+          "url": "https://ja.wikipedia.org/wiki/%E3%81%84%E3%81%AE%E3%81%A1%E3%81%AE%E5%85%9A_(2026)"
+        },
+        {
+          "title": "2026年れいわ新選組代表選挙 - Wikipedia (ja)",
+          "url": "https://ja.wikipedia.org/wiki/2026%E5%B9%B4%E3%82%8C%E3%81%84%E3%82%8F%E6%96%B0%E9%81%B8%E7%B5%84%E4%BB%A3%E8%A1%A8%E9%81%B8%E6%8C%99"
+        },
+        {
+          "title": "2026 Japanese general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Japanese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JP-GENZEIYUKOKU",
+      "country": "JP",
+      "shortName": "Genzei-Yukoku",
+      "name": "減税日本・ゆうこく連合",
+      "nameEn": "Tax Cuts Japan and Yūkoku Alliance",
+      "logo": "party-logos/jp/genzei-yukoku.png",
+      "sha256": "4f03872d815f4236154055c058a36f45e2e61c06d7a2911c6b0b46baa64ec42c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Tax_Cuts_Japan_and_Yukoku_Alliance_Logo.svg",
+      "ideology": [
+        "Tax reduction",
+        "Anti-corruption / government waste oversight",
+        "Education expansion"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Mixed / internally disputed: co-representative Kazuhiro Haraguchi favours abolishing the consumption tax and holds that Japan's Self-Defense Forces are constitutional as-is; co-representative Takashi Kawamura favours a flat 5% consumption tax and supports revising Article 9",
+      "founded": 2026,
+      "leader": "Kazuhiro Haraguchi and Takashi Kawamura",
+      "leaderTitle": "Co-Representatives",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 465,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "減税日本・ゆうこく連合 - Wikipedia (ja)",
+          "url": "https://ja.wikipedia.org/wiki/%E6%B8%9B%E7%A8%8E%E6%97%A5%E6%9C%AC%E3%83%BB%E3%82%86%E3%81%86%E3%81%93%E3%81%8F%E9%80%A3%E5%90%88"
+        },
+        {
+          "title": "2026 Japanese general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Japanese_general_election"
+        },
+        {
+          "title": "減税日本・ゆうこく連合、政党要件失う - 時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=2026020901480&g=pol"
         }
       ]
     }
