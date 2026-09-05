@@ -421,6 +421,37 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "url": "https://en.wikipedia.org/wiki/New_Popular_Front"
     },
     "note": "Left-wing electoral alliance formed for the June–July 2024 snap legislative election, comprising La France Insoumise, the Socialist Party, the Ecologists/Greens and the Communist-led GDR grouping."
+  },
+  "es-psoe-sumar": {
+    "id": "es-psoe-sumar",
+    "name": "Gobierno de coalición PSOE-Sumar",
+    "nameEn": "PSOE–Sumar coalition government",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "ES-PSOE",
+      "ES-SUMAR"
+    ],
+    "source": {
+      "title": "Third government of Pedro Sánchez - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Third_government_of_Pedro_S%C3%A1nchez"
+    },
+    "note": "Spain's coalition cabinet, sworn in November 2023, formally comprises only PSOE and Sumar ministers. Pedro Sánchez's investiture and the government's subsequent confidence votes have additionally relied on external parliamentary support (not cabinet membership) from ERC, Junts, PNV, EH Bildu, BNG and Coalición Canaria — a confidence-and-supply arrangement, distinct from formal coalition membership."
+  },
+  "mx-shh": {
+    "id": "mx-shh",
+    "name": "Sigamos Haciendo Historia",
+    "nameEn": "Let's Keep Making History",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "MX-MORENA",
+      "MX-PT",
+      "MX-PVEM"
+    ],
+    "source": {
+      "title": "Sigamos Haciendo Historia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sigamos_Haciendo_Historia"
+    },
+    "note": "Successor to the 2018-2021 'Juntos Hacemos Historia' alliance; formed 19 November 2023 by Morena, PT and PVEM for the 2024 general election. The coalition governs Mexico under President Claudia Sheinbaum and holds 364 of 500 Chamber of Deputies seats in the current (LXVI) legislature."
   }
 };
 
@@ -4409,7 +4440,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "FdI",
       "name": "Fratelli d'Italia",
       "nameEn": "Brothers of Italy",
-      "noImageReason": "Wikimedia's media CDN (upload.wikimedia.org) and the Commons API (commons.wikimedia.org/w/api.php) both returned HTTP 429 (rate limited) for this session's shared egress IP; the pre-existing public/party-logos/it/fdi.svg was inspected and found to be a saved Wikimedia 429 error/redirect HTML page, not a real image. Target file: File:Brothers_of_Italy.svg on Wikimedia Commons — retry download and sha1-verify against the MediaWiki API in a future session once egress clears.",
+      "logo": "party-logos/it/fdi.svg",
+      "sha256": "4b642e7dad1b0f8b625a34c903963389d78d1e13b843452fed16237320f81962",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Brothers_of_Italy.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Brothers of Italy.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
       "ideology": [
         "National conservatism",
         "Right-wing populism",
@@ -4462,7 +4496,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Lega",
       "name": "Lega per Salvini Premier",
       "nameEn": "League for Salvini Premier",
-      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/lega.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:League_-_Salvini_premier.svg on Wikimedia Commons - retry once egress clears.",
+      "logo": "party-logos/it/lega.svg",
+      "sha256": "866b9b07f718a16c2aac0a181d78308138df16557ebe54c5a479d83d78aba9d6",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:League_-_Salvini_premier.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:League - Salvini premier.svg), used to identify the Lega party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
       "ideology": [
         "Right-wing populism",
         "Conservatism",
@@ -4505,7 +4542,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "FI",
       "name": "Forza Italia",
       "nameEn": "Go Italy",
-      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/fi.svg was inspected and found to be a saved Wikimedia 'too many requests' error page (429), not a real image. Target file: File:Logo_Forza_Italia.svg on Wikimedia Commons - retry once egress clears.",
+      "logo": "party-logos/it/fi.svg",
+      "sha256": "d19f2823dbcfbf81eb7de437ddb60c2e16cd6cb2cbf9a8e6d90ff83f3e3aff4c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Forza_Italia.svg",
       "ideology": [
         "Liberal conservatism",
         "Christian democracy",
@@ -4542,7 +4581,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "NM",
       "name": "Noi Moderati",
       "nameEn": "Us Moderates",
-      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/nm.svg was inspected and found to be a saved Wikimedia 'too many requests' error page (429), not a real image. Target file: File:Noi_Moderati_-_logo_(Italy,_2024).svg on Wikimedia Commons - retry once egress clears.",
+      "logo": "party-logos/it/nm.svg",
+      "sha256": "3fd40c604f01f7c6467e1f0c687486c692d7b24969e4b15ae23cca0571d22118",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Noi_Moderati_-_logo_(Italy,_2024).svg",
       "ideology": [
         "Liberal conservatism",
         "Christian democracy"
@@ -4571,7 +4612,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PD",
       "name": "Partito Democratico",
       "nameEn": "Democratic Party",
-      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/pd.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:Partito_Democratico_Logo.svg on Wikimedia Commons - retry once egress clears.",
+      "logo": "party-logos/it/pd.svg",
+      "sha256": "e483c8d4f39be8288bc98aa795072bd40055027935a442b83951910359d0bbb4",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partito_Democratico_Logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Partito Democratico Logo.svg), used to identify the Democratic Party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
       "ideology": [
         "Social democracy"
       ],
@@ -4597,7 +4641,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "M5S",
       "name": "Movimento 5 Stelle",
       "nameEn": "Five Star Movement",
-      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/m5s.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:M5S_logo_2050.svg on Wikimedia Commons - retry once egress clears.",
+      "logo": "party-logos/it/m5s.svg",
+      "sha256": "9b19c5ec7cb39d18aba572b566ea03015a0d6fad2f39d86881e3f79d065185d2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:M5S_logo_2050.svg",
       "ideology": [
         "Populism",
         "Green politics"
@@ -4624,7 +4670,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "AVS",
       "name": "Alleanza Verdi e Sinistra",
       "nameEn": "Greens and Left Alliance",
-      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/avs.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:Logo_of_the_Greens_and_Left_Alliance.svg on Wikimedia Commons - retry once egress clears.",
+      "logo": "party-logos/it/avs.svg",
+      "sha256": "67f2aa5768d3f471de48601bd4c1ff16bea6bf03b768c7749a3d781096a4028a",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Greens_and_Left_Alliance.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Logo of the Greens and Left Alliance.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
       "ideology": [
         "Democratic socialism",
         "Green politics"
@@ -4651,7 +4700,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Azione",
       "name": "Azione",
       "nameEn": "Action",
-      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/azione.svg was inspected and found to be a saved Wikimedia 'too many requests' error page (429), not a real image. Target file: File:Azione_-_logo_(Italy,_2021-).svg on Wikimedia Commons - retry once egress clears.",
+      "logo": "party-logos/it/azione.svg",
+      "sha256": "bb63f42c47d949b864ed24e01d0a53396844cd652e75ff0b516f3ba20a0fe9d1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Azione_-_logo_(Italy,_2021-).svg",
       "ideology": [
         "Liberalism"
       ],
@@ -4677,7 +4728,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "IV",
       "name": "Italia Viva",
       "nameEn": "Italy Alive",
-      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/iv.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:Logo_of_the_Italia_Viva.svg on Wikimedia Commons - retry once egress clears.",
+      "logo": "party-logos/it/iv.svg",
+      "sha256": "32a29741139a402eee4653da6bbd25bd385c2f982e583526d816507f45047dc8",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Italia_Viva.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Logo of the Italia Viva.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
       "ideology": [
         "Liberalism",
         "Reformism",
@@ -4705,7 +4759,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "FN",
       "name": "Futuro Nazionale con Roberto Vannacci",
       "nameEn": "National Future with Roberto Vannacci",
-      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/fn.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:Futuro_Nazionale_logo.svg on Wikimedia Commons - retry once egress clears.",
+      "logo": "party-logos/it/fn.svg",
+      "sha256": "7132dc020bad304eacfefe8398fd1b63d168c2f01d76c4cd91aefae86f2e092d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Futuro_Nazionale_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Futuro Nazionale logo.svg), used to identify the newly-founded party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
       "ideology": [
         "Nationalism",
         "Right-wing populism",
@@ -4738,7 +4795,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "LLA",
       "name": "La Libertad Avanza",
       "nameEn": "Freedom Advances",
-      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) to this environment's egress IP during every download attempt made while compiling this dataset; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:La_Libertad_Avanza_2021.svg and should be bundled once egress succeeds.",
+      "logo": "party-logos/ar/lla.svg",
+      "sha256": "e18f334bb0d0ec47b17e272e12c894dc1a15e372f1f2656ebef308e195b426ef",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:La_Libertad_Avanza_full_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:La Libertad Avanza full logo.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse. The Commons file \"La_Libertad_Avanza_2021.svg\" originally identified for this entry was checked and found to actually be an unrelated Buenos Aires province map, not the party's logo — this Wikipedia infobox file is the verified correct one.",
       "ideology": [
         "Right-libertarianism",
         "Libertarian conservatism",
@@ -4780,7 +4840,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "UxP",
       "name": "Unión por la Patria",
       "nameEn": "Union for the Homeland",
-      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) to this environment's egress IP during every download attempt; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:Logo_Union_por_la_Patria.svg and should be bundled once egress succeeds.",
+      "logo": "party-logos/ar/uxp.svg",
+      "sha256": "c33ca6db59ba2a3d5555505249e50f706e70380eaaa209d95b95c0bb1d358425",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Union_por_la_Patria.svg",
       "ideology": [
         "Peronism",
         "Kirchnerism",
@@ -4862,7 +4924,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PRO",
       "name": "Propuesta Republicana",
       "nameEn": "Republican Proposal",
-      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:Logo_PRO.svg and should be bundled once egress succeeds.",
+      "logo": "party-logos/ar/pro.svg",
+      "sha256": "a7eeb4a26f16f8eb1b4823653bbaa32b8fa5c5276eb714de8282258a4ca8bd44",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PRO.svg",
       "ideology": [
         "Conservative liberalism",
         "Liberal conservatism"
@@ -4929,7 +4993,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "UCR",
       "name": "Unión Cívica Radical",
       "nameEn": "Radical Civic Union",
-      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:Ucr_modern_logo.svg and should be bundled once egress succeeds.",
+      "logo": "party-logos/ar/ucr.svg",
+      "sha256": "8e41c969c79818b92c7d45129950be270a6e18b8ca75793deacd638bfe82372f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Ucr_modern_logo.svg",
       "ideology": [
         "Social liberalism",
         "Social democracy",
@@ -4962,7 +5028,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "FIT-U",
       "name": "Frente de Izquierda y de Trabajadores - Unidad",
       "nameEn": "Left and Workers' Front - Unity",
-      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:Logo_Frente_de_Izquierda_y_de_Trabajadores-Unidad.svg and should be bundled once egress succeeds.",
+      "logo": "party-logos/ar/fitu.svg",
+      "sha256": "a5e7d90758cdc841cf5c64530d04fa0606749733c7df4c856793b6e73781614a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Frente_de_Izquierda_y_de_Trabajadores-Unidad.svg",
       "ideology": [
         "Trotskyism",
         "Communism",
@@ -5133,7 +5201,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "CC-ARI",
       "name": "Coalición Cívica ARI",
       "nameEn": "Civic Coalition ARI",
-      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:Coalicion_Civica.svg and should be bundled once egress succeeds.",
+      "logo": "party-logos/ar/ccari.svg",
+      "sha256": "42af5b9cada6ad1cb30a8279ad5374734259a75663af4ce92cba4e981898f232",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Coalicion_Civica.svg",
       "ideology": [
         "Socioliberalism",
         "Progressivism",
@@ -5166,7 +5236,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "MID",
       "name": "Movimiento de Integración y Desarrollo",
       "nameEn": "Integration and Development Movement",
-      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo (\"Movimiento de Integración y Desarrollo 2018.png\") exists on Wikimedia Commons and should be bundled once egress succeeds.",
+      "logo": "party-logos/ar/mid.png",
+      "sha256": "217dbea960bd90ff48166938b7ac3a71d1de41f213c1b3bf47448b8012e28ddb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Movimiento_de_Integración_y_Desarrollo_2018.png",
       "ideology": [
         "Developmentalism (desarrollismo)"
       ],
@@ -5386,7 +5458,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "RN",
       "name": "Rassemblement National",
       "nameEn": "National Rally",
-      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff (immediate, 10s, 30s, 60s, 90s) during this research session, so the logo could not be bundled. Identified file: Commons File:Logo_Rassemblement_National.svg (the tricolour flame emblem), per the current English Wikipedia infobox for National Rally. A future session should retry downloading this exact file.",
+      "logo": "party-logos/fr/rn.svg",
+      "sha256": "17ba1e49132cab4606c62f0c4266704061d65df4fa2be192cce0a1a23608e52e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Rassemblement_National.svg",
       "ideology": [
         "French nationalism",
         "National conservatism",
@@ -5425,7 +5499,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "EPR",
       "name": "Renaissance",
       "nameEn": "Renaissance",
-      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Renaissance_parti_logo.svg (the current official logo, circled 'R'/'E' monogram), per the current English Wikipedia infobox for Renaissance (French political party). A future session should retry downloading this exact file.",
+      "logo": "party-logos/fr/epr.svg",
+      "sha256": "02a8259218da8e6bcea91dc510f0210011b6a0c1073e1f7fc122bf82b770668d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Renaissance_parti_logo.svg",
       "ideology": [
         "Liberalism (French)",
         "Social liberalism",
@@ -5471,7 +5547,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "LFI",
       "name": "La France Insoumise",
       "nameEn": "France Unbowed",
-      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons/en-Wikipedia File:LOGO-LFI-2026.png (the current 2026 party logo shown in the English Wikipedia infobox for La France Insoumise; an older File:LFI_Logo_2024.svg also exists on Commons). A future session should retry downloading one of these exact files.",
+      "logo": "party-logos/fr/lfi.png",
+      "sha256": "ba825d2824da071efe8c20329b3d34e7243e6c7035e66840a8ac56d3b0dc338a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:LOGO-LFI-2026.png",
       "ideology": [
         "Democratic socialism",
         "Anti-neoliberalism",
@@ -5506,7 +5584,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PS",
       "name": "Parti Socialiste",
       "nameEn": "Socialist Party",
-      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Socialist_Party_(France)_2024_logo.svg (the current 'rose au poing' logo), per the current English Wikipedia infobox for Socialist Party (France). A future session should retry downloading this exact file.",
+      "logo": "party-logos/fr/ps.svg",
+      "sha256": "8f89b987279b2fe05efbafc568e70147b33b482d6724590114b899452f134e9d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Socialist_Party_(France)_2024_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Socialist Party (France) 2024 logo.svg), used to identify the Socialist Party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
       "ideology": [
         "Social democracy",
         "Pro-Europeanism"
@@ -5548,7 +5629,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "LR",
       "name": "Les Républicains",
       "nameEn": "The Republicans",
-      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Les_Républicains_-_logo_(France,_2023).svg, per the current English Wikipedia infobox for The Republicans (France). A future session should retry downloading this exact file.",
+      "logo": "party-logos/fr/lr.svg",
+      "sha256": "1fbe38ebce06656b535255f56ea030a7b88c820faec72b64afa9105e122babd9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Les_Républicains_-_logo_(France,_2023).svg",
       "ideology": [
         "Conservatism (French)",
         "Neo-Gaullism"
@@ -5580,7 +5663,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "LE",
       "name": "Les Écologistes",
       "nameEn": "The Ecologists",
-      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Logo_of_The_Ecologists_(France).svg, per the current English Wikipedia infobox for The Ecologists; an older File:Europe_Ecologie-Les_Verts_Logo.svg also exists on Commons for the pre-2023 name. A future session should retry downloading the current file.",
+      "logo": "party-logos/fr/eelv.svg",
+      "sha256": "371f971972c47d9ec72db1e5d770557c5d186fe6e8c71e176e6eef1ca65e2557",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_The_Ecologists_(France).svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:Logo of The Ecologists (France).svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse.",
       "ideology": [
         "Green politics",
         "Alter-globalization"
@@ -5615,7 +5701,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "MoDem",
       "name": "Mouvement Démocrate",
       "nameEn": "Democratic Movement",
-      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:MoDem_logo_2019.svg, per the current English Wikipedia infobox for Democratic Movement (France). A future session should retry downloading this exact file.",
+      "logo": "party-logos/fr/modem.svg",
+      "sha256": "f3208ec0accf32f2173153ba74b89bed50c28842cc0aa2a5d4219fa38d8671e0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MoDem_logo_2019.svg",
       "ideology": [
         "Social liberalism",
         "Christian democracy",
@@ -5649,7 +5737,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "HOR",
       "name": "Horizons",
       "nameEn": "Horizons",
-      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Logo_Parti_Politique_Horizons_-_2021.svg, per the current English Wikipedia infobox for Horizons (political party). A future session should retry downloading this exact file.",
+      "logo": "party-logos/fr/hor.svg",
+      "sha256": "5f847b77373e891fe73b7aa621685a3d0a68745938fe1a1b59be334e4900f8b2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Parti_Politique_Horizons_-_2021.svg",
       "ideology": [
         "Liberal conservatism",
         "Pro-Europeanism"
@@ -5682,7 +5772,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "LIOT",
       "name": "Groupe Libertés, Indépendants, Outre-mer et Territoires",
       "nameEn": "Liberties, Independents, Overseas and Territories group",
-      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:LIOT_Group.png. A future session should retry downloading this exact file.",
+      "logo": "party-logos/fr/liot.png",
+      "sha256": "b8d1d604015d9192ee1f8a5a6959f6ad51551972cbd8d880266dc0e73b0f5dc4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:LIOT_Group.png",
       "ideology": [
         "Centrism",
         "Regionalism"
@@ -5720,7 +5812,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "GDR",
       "name": "Gauche Démocrate et Républicaine",
       "nameEn": "Democratic and Republican Left",
-      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Logo_GDR.svg. A future session should retry downloading this exact file.",
+      "logo": "party-logos/fr/gdr.svg",
+      "sha256": "fefa57657cb8835107f6d499e3a202b4c06d29b30cbc6d307721c68ed99067b0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_GDR.svg",
       "ideology": [
         "Communism",
         "Democratic socialism",
@@ -5753,7 +5847,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "UDR",
       "name": "Union des Droites pour la République",
       "nameEn": "Union of the Right for the Republic",
-      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:UDR_logo.svg. A future session should retry downloading this exact file.",
+      "logo": "party-logos/fr/udr.svg",
+      "sha256": "47e3e88c6637affd116dd4341520f85d2ca3ed9b310e8c0eead2c47514e5d78b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:UDR_logo.svg",
       "ideology": [
         "Right-libertarianism",
         "Right-wing populism"
@@ -5775,6 +5871,823 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "UDR group - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/UDR_group"
+        }
+      ]
+    }
+  ],
+  "CA": [
+    {
+      "id": "CA-LPC",
+      "country": "CA",
+      "shortName": "Liberal",
+      "name": "Liberal Party of Canada",
+      "nameEn": "Liberal Party of Canada (Parti libéral du Canada)",
+      "logo": "party-logos/ca/lpc.svg",
+      "sha256": "bb4018fd39dee8bf32d5c1dcacafce90ba4db481b6c5d8395db33598ece2a026",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Liberal_Party_of_Canada_Logo_2014.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia (not Commons); used here under the same fair-use/trademark rationale as the Wikipedia infobox, which displays it as the party's official current logo.",
+      "ideology": [
+        "Liberalism",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1867,
+      "leader": "Mark Carney",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2015-present",
+      "seats": 173,
+      "seatsTotal": 343,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Liberal Party of Canada - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Party_of_Canada"
+        },
+        {
+          "title": "45th Canadian Parliament - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/45th_Canadian_Parliament"
+        }
+      ]
+    },
+    {
+      "id": "CA-CPC",
+      "country": "CA",
+      "shortName": "Conservative",
+      "name": "Conservative Party of Canada",
+      "nameEn": "Conservative Party of Canada (Parti conservateur du Canada)",
+      "logo": "party-logos/ca/cpc.svg",
+      "sha256": "6bc2aff7539bbfc56605af73a327a1d9bcf65975bfb45fc0b6445145ec7a7399",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Conservative_Party_of_Canada_(2023%E2%80%93present).svg",
+      "ideology": [
+        "Conservatism",
+        "Economic liberalism",
+        "Federalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2003,
+      "previousNames": [
+        {
+          "name": "Progressive Conservative Party of Canada",
+          "years": "1942-2003"
+        },
+        {
+          "name": "Canadian Alliance",
+          "years": "2000-2003"
+        }
+      ],
+      "leader": "Pierre Poilievre",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 138,
+      "seatsTotal": 343,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Conservative Party of Canada - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Conservative_Party_of_Canada"
+        },
+        {
+          "title": "45th Canadian Parliament - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/45th_Canadian_Parliament"
+        }
+      ]
+    },
+    {
+      "id": "CA-BQ",
+      "country": "CA",
+      "shortName": "Bloc Québécois",
+      "name": "Bloc Québécois",
+      "nameEn": "Québécois Bloc",
+      "logo": "party-logos/ca/bq.png",
+      "sha256": "d6927a71af5a1317bd12587a601d0ec9eea73f646913b70743066c3bb6bae694",
+      "logoSourceUrl": "https://fr.wikipedia.org/wiki/File:BlocQuebecois_Logo2015.png",
+      "licenceNote": "Non-free party logo hosted locally on French Wikipedia (not Commons); used here under the same fair-use/trademark rationale as the Wikipedia infobox, which displays it as the party's official current logo.",
+      "ideology": [
+        "Quebec nationalism",
+        "Social democracy",
+        "Quebec sovereigntism",
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1991,
+      "leader": "Yves-François Blanchet",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 21,
+      "seatsTotal": 343,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Bloc Québécois - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bloc_Qu%C3%A9b%C3%A9cois"
+        },
+        {
+          "title": "45th Canadian Parliament - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/45th_Canadian_Parliament"
+        }
+      ]
+    },
+    {
+      "id": "CA-NDP",
+      "country": "CA",
+      "shortName": "NDP",
+      "name": "New Democratic Party",
+      "nameEn": "New Democratic Party (French: Nouveau Parti démocratique)",
+      "logo": "party-logos/ca/ndp.svg",
+      "sha256": "2824eab7142c1ca9b7e10b502570a88974dc69738f8e9847e6722270c413bb6b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Orange_NDP_logo_English.svg",
+      "ideology": [
+        "Social democracy",
+        "Democratic socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1961,
+      "leader": "Avi Lewis",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 343,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "New Democratic Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Democratic_Party"
+        },
+        {
+          "title": "45th Canadian Parliament - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/45th_Canadian_Parliament"
+        }
+      ]
+    },
+    {
+      "id": "CA-GPC",
+      "country": "CA",
+      "shortName": "Green",
+      "name": "Green Party of Canada",
+      "nameEn": "Green Party of Canada (Parti vert du Canada)",
+      "logo": "party-logos/ca/gpc.svg",
+      "sha256": "3654235d9a23d135cfd8fe0bc87824fdf2bd325ee7d66a57d6226e266ada62b4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_2025_Green_Party_of_Canada.svg",
+      "ideology": [
+        "Green politics",
+        "Eco-capitalism",
+        "Eco-socialism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Officially rejects the traditional left-right spectrum (\"Not Left. Not Right. Forward Together.\"); commonly described by commentators as centre-left/left-leaning in practice",
+      "founded": 1983,
+      "leader": "Elizabeth May",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 343,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Green Party of Canada - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_of_Canada"
+        },
+        {
+          "title": "45th Canadian Parliament - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/45th_Canadian_Parliament"
+        }
+      ]
+    }
+  ],
+  "ES": [
+    {
+      "id": "ES-PSOE",
+      "country": "ES",
+      "shortName": "PSOE",
+      "name": "Partido Socialista Obrero Español",
+      "nameEn": "Spanish Socialist Workers' Party",
+      "logo": "party-logos/es/psoe.svg",
+      "sha256": "6ec6a6a9eaaa5fc584149286952497d85a4d0e7b0c4936b3e6f2f4d1ef74c80e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PSOE_41_Congreso.svg",
+      "ideology": [
+        "Social democracy",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1879,
+      "coalitionId": "es-psoe-sumar",
+      "leader": "Pedro Sánchez",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "timeInPower": "2018-present",
+      "seats": 121,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "logoMeaning": {
+        "description": "The current PSOE emblem, created by graphic designer José María Cruz Novillo, is a clenched fist holding a red rose — the 'puño y rosa' (fist and rose), a social-democratic symbol shared with several European sister parties. It replaced the party's earlier hammer-and-book emblem in 1979, the year the PSOE formally dropped Marxism from its statutes and repositioned itself as a social-democratic, rather than Marxist, party.",
+        "sources": [
+          {
+            "title": "Spanish Socialist Workers' Party - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Spanish_Socialist_Workers%27_Party"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Spanish Socialist Workers' Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Spanish_Socialist_Workers%27_Party"
+        },
+        {
+          "title": "Results breakdown of the 2023 Spanish general election (Congress) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2023_Spanish_general_election_(Congress)"
+        }
+      ]
+    },
+    {
+      "id": "ES-PP",
+      "country": "ES",
+      "shortName": "PP",
+      "name": "Partido Popular",
+      "nameEn": "People's Party",
+      "logo": "party-logos/es/pp.svg",
+      "sha256": "3e9b0fbd98e1b4cd6547c4148000fa849e655281ca809c093339acc733c45c97",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_del_PP_(2022).svg",
+      "ideology": [
+        "Conservatism",
+        "Christian democracy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1989,
+      "leader": "Alberto Núñez Feijóo",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 137,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "sources": [
+        {
+          "title": "People's Party (Spain) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Party_(Spain)"
+        },
+        {
+          "title": "Results breakdown of the 2023 Spanish general election (Congress) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2023_Spanish_general_election_(Congress)"
+        }
+      ]
+    },
+    {
+      "id": "ES-VOX",
+      "country": "ES",
+      "shortName": "Vox",
+      "name": "Vox",
+      "logo": "party-logos/es/vox.svg",
+      "sha256": "83b369bd57528a6c55930afbfe8c7ff1358a32bfbedda0e2b106a0d3705ec54a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:VOX_logo.svg",
+      "ideology": [
+        "Ultranationalism",
+        "National conservatism",
+        "Right-wing populism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2013,
+      "leader": "Santiago Abascal",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 33,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "sources": [
+        {
+          "title": "Vox (political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vox_(political_party)"
+        },
+        {
+          "title": "Results breakdown of the 2023 Spanish general election (Congress) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2023_Spanish_general_election_(Congress)"
+        }
+      ]
+    },
+    {
+      "id": "ES-SUMAR",
+      "country": "ES",
+      "shortName": "Sumar",
+      "name": "Movimiento Sumar",
+      "nameEn": "Sumar Movement",
+      "logo": "party-logos/es/sumar.svg",
+      "sha256": "53fb54bd7330b0134e8f6c0096f6797dd1279e6b553de372771946e7e1aea366",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Sumar_logo.svg",
+      "ideology": [
+        "Progressivism",
+        "Green politics",
+        "Social democracy",
+        "Democratic socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2022,
+      "coalitionId": "es-psoe-sumar",
+      "leader": "Rosa Martínez",
+      "leaderTitle": "General Coordinator",
+      "inPower": true,
+      "timeInPower": "2023-present",
+      "seats": 31,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "sources": [
+        {
+          "title": "Sumar (electoral platform) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sumar_(electoral_platform)"
+        },
+        {
+          "title": "Sucesión de Yolanda Díaz: la nueva líder de Sumar plantea redefinir el partido - Moncloa.com",
+          "url": "https://www.moncloa.com/2026/08/30/sucesion-yolanda-diaz-sumar-podemos-3423322"
+        },
+        {
+          "title": "Results breakdown of the 2023 Spanish general election (Congress) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2023_Spanish_general_election_(Congress)"
+        }
+      ]
+    },
+    {
+      "id": "ES-ERC",
+      "country": "ES",
+      "shortName": "ERC",
+      "name": "Esquerra Republicana de Catalunya",
+      "nameEn": "Republican Left of Catalonia",
+      "logo": "party-logos/es/erc.svg",
+      "sha256": "e0422b0de0be5c0b94c12943553938d16355e12fa1f43f4945dba3967edcfecb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:ERC_logo_2025.svg",
+      "ideology": [
+        "Catalan independence",
+        "Left-wing nationalism",
+        "Democratic socialism",
+        "Republicanism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1931,
+      "leader": "Oriol Junqueras",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "sources": [
+        {
+          "title": "Republican Left of Catalonia - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Republican_Left_of_Catalonia"
+        },
+        {
+          "title": "Results breakdown of the 2023 Spanish general election (Congress) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2023_Spanish_general_election_(Congress)"
+        }
+      ]
+    },
+    {
+      "id": "ES-JUNTS",
+      "country": "ES",
+      "shortName": "Junts",
+      "name": "Junts per Catalunya",
+      "nameEn": "Together for Catalonia",
+      "logo": "party-logos/es/junts.svg",
+      "sha256": "6185f752aa9b8009f6711f810afe81d01ea8c156aad9bbbe7b0fa5102be08110",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logotip_Junts_per_Catalunya.svg",
+      "ideology": [
+        "Catalan independence",
+        "Populism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2020,
+      "leader": "Carles Puigdemont",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "sources": [
+        {
+          "title": "Together for Catalonia (2020) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Together_for_Catalonia_(2020)"
+        },
+        {
+          "title": "Results breakdown of the 2023 Spanish general election (Congress) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2023_Spanish_general_election_(Congress)"
+        }
+      ]
+    },
+    {
+      "id": "ES-EHBILDU",
+      "country": "ES",
+      "shortName": "EH Bildu",
+      "name": "Euskal Herria Bildu",
+      "nameEn": "Basque Country Unite",
+      "logo": "party-logos/es/ehbildu.svg",
+      "sha256": "9e063ba9b6591790572b0659ea662cd4e2d467eaffa95eabb900f6b9ce24247a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_de_EH_Bildu_(2023).svg",
+      "ideology": [
+        "Basque independence",
+        "Left-wing nationalism",
+        "Socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 2012,
+      "leader": "Arnaldo Otegi",
+      "leaderTitle": "General Coordinator",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "sources": [
+        {
+          "title": "EH Bildu - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/EH_Bildu"
+        },
+        {
+          "title": "Results breakdown of the 2023 Spanish general election (Congress) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2023_Spanish_general_election_(Congress)"
+        }
+      ]
+    },
+    {
+      "id": "ES-PNV",
+      "country": "ES",
+      "shortName": "PNV",
+      "name": "Euzko Alderdi Jeltzalea",
+      "nameEn": "Basque Nationalist Party",
+      "logo": "party-logos/es/pnv.svg",
+      "sha256": "8ca829c7ae9eae44fec86c6ef54d4e7c8f9cb148be55dbeb4273217105982672",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PNV_2025.svg",
+      "ideology": [
+        "Basque nationalism",
+        "Christian democracy",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1895,
+      "leader": "Aitor Esteban",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "sources": [
+        {
+          "title": "Basque Nationalist Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Basque_Nationalist_Party"
+        },
+        {
+          "title": "Results breakdown of the 2023 Spanish general election (Congress) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2023_Spanish_general_election_(Congress)"
+        }
+      ]
+    },
+    {
+      "id": "ES-BNG",
+      "country": "ES",
+      "shortName": "BNG",
+      "name": "Bloque Nacionalista Galego",
+      "nameEn": "Galician Nationalist Bloc",
+      "logo": "party-logos/es/bng.svg",
+      "sha256": "21202aa3c0f4d0920a2daced3913a950e4540a74c18b7be3d85218d6fd5ba61c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Bloque_Nacionalista_Galego.svg",
+      "ideology": [
+        "Galician nationalism",
+        "Left-wing nationalism",
+        "Socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1982,
+      "leader": "Ana Pontón",
+      "leaderTitle": "National Spokesperson",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "sources": [
+        {
+          "title": "Galician Nationalist Bloc - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Galician_Nationalist_Bloc"
+        },
+        {
+          "title": "Results breakdown of the 2023 Spanish general election (Congress) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2023_Spanish_general_election_(Congress)"
+        }
+      ]
+    },
+    {
+      "id": "ES-CC",
+      "country": "ES",
+      "shortName": "CC",
+      "name": "Coalición Canaria",
+      "nameEn": "Canarian Coalition",
+      "logo": "party-logos/es/cc.svg",
+      "sha256": "583674f1af33535daeb5ab9e0422a1d2a2d52ade13332b6eb2f2de1ffeae6426",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Coalici%C3%B3n_Canaria.svg",
+      "ideology": [
+        "Canarian nationalism",
+        "Regionalism",
+        "Centrism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1993,
+      "leader": "Fernando Clavijo",
+      "leaderTitle": "General Secretary",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "sources": [
+        {
+          "title": "Canarian Coalition - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Canarian_Coalition"
+        },
+        {
+          "title": "Results breakdown of the 2023 Spanish general election (Congress) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2023_Spanish_general_election_(Congress)"
+        }
+      ]
+    },
+    {
+      "id": "ES-UPN",
+      "country": "ES",
+      "shortName": "UPN",
+      "name": "Unión del Pueblo Navarro",
+      "nameEn": "Navarrese People's Union",
+      "logo": "party-logos/es/upn.svg",
+      "sha256": "a57d628dddf33086046049ee005ffb7031c681db961e355d968e744f10f589d0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_UPN_2017.svg",
+      "ideology": [
+        "Conservatism",
+        "Christian democracy",
+        "Navarrese regionalism",
+        "Spanish unionism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1979,
+      "leader": "Cristina Ibarrola",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "sources": [
+        {
+          "title": "Navarrese People's Union - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Navarrese_People%27s_Union"
+        },
+        {
+          "title": "Results breakdown of the 2023 Spanish general election (Congress) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2023_Spanish_general_election_(Congress)"
+        }
+      ]
+    }
+  ],
+  "MX": [
+    {
+      "id": "MX-MORENA",
+      "country": "MX",
+      "shortName": "Morena",
+      "name": "Movimiento de Regeneración Nacional",
+      "nameEn": "National Regeneration Movement",
+      "logo": "party-logos/mx/morena.svg",
+      "sha256": "4e072dfe1ef0b591c7eaf741034648e11ad7cc0f431d2cdc90714ccb648a537b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Morena_Party_(Mexico).svg",
+      "ideology": [
+        "Anti-neoliberalism",
+        "Social democracy",
+        "Progressivism",
+        "Left-wing nationalism",
+        "Left-wing populism",
+        "Energy nationalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2014,
+      "coalitionId": "mx-shh",
+      "leader": "Ariadna Montiel Reyes",
+      "leaderTitle": "National President",
+      "inPower": true,
+      "timeInPower": "2018-present",
+      "seats": 253,
+      "seatsTotal": 500,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Morena (political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Morena_(political_party)"
+        },
+        {
+          "title": "Chamber of Deputies (Mexico) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Mexico)"
+        }
+      ]
+    },
+    {
+      "id": "MX-PT",
+      "country": "MX",
+      "shortName": "PT",
+      "name": "Partido del Trabajo",
+      "nameEn": "Labor Party",
+      "logo": "party-logos/mx/pt.svg",
+      "sha256": "6164f8117489d561b55e342a550cdf0c7359089cda1953769402e019bd19fcb7",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Worker's_Party_logo_(Mexico).svg",
+      "ideology": [
+        "Socialism",
+        "Maoism",
+        "Socialism of the 21st century"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Left-wing",
+      "founded": 1990,
+      "coalitionId": "mx-shh",
+      "leader": "Alberto Anaya",
+      "leaderTitle": "President of the National Executive Committee",
+      "inPower": true,
+      "timeInPower": "2018-present",
+      "seats": 49,
+      "seatsTotal": 500,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Labor Party (Mexico) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Labor_Party_(Mexico)"
+        },
+        {
+          "title": "Chamber of Deputies (Mexico) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Mexico)"
+        }
+      ]
+    },
+    {
+      "id": "MX-PVEM",
+      "country": "MX",
+      "shortName": "PVEM",
+      "name": "Partido Verde Ecologista de México",
+      "nameEn": "Ecologist Green Party of Mexico",
+      "logo": "party-logos/mx/pvem.svg",
+      "sha256": "62e2a2c45201b98e83aff536c10787d38f5d5e279f725e05528cb8eb8acdf046",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_Verde_(México).svg",
+      "ideology": [
+        "Green politics",
+        "Green conservatism",
+        "Environmentalism",
+        "Pragmatism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1993,
+      "coalitionId": "mx-shh",
+      "leader": "Karen Castrejón Trujillo",
+      "leaderTitle": "National President",
+      "inPower": true,
+      "timeInPower": "2018-present",
+      "seats": 62,
+      "seatsTotal": 500,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Ecologist Green Party of Mexico - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ecologist_Green_Party_of_Mexico"
+        },
+        {
+          "title": "Chamber of Deputies (Mexico) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Mexico)"
+        }
+      ]
+    },
+    {
+      "id": "MX-PAN",
+      "country": "MX",
+      "shortName": "PAN",
+      "name": "Partido Acción Nacional",
+      "nameEn": "National Action Party",
+      "logo": "party-logos/mx/pan.svg",
+      "sha256": "c74c5570047746b8d306cf874ae52103ba72ff8e2c68557a6d9cb012aa4caa08",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PAN_(Mexico)_2025_logo.svg",
+      "ideology": [
+        "National conservatism",
+        "Religious conservatism",
+        "Christian democracy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1939,
+      "leader": "Jorge Romero Herrera",
+      "leaderTitle": "National President",
+      "inPower": false,
+      "seats": 69,
+      "seatsTotal": 500,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "National Action Party (Mexico) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Action_Party_(Mexico)"
+        },
+        {
+          "title": "Chamber of Deputies (Mexico) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Mexico)"
+        }
+      ]
+    },
+    {
+      "id": "MX-PRI",
+      "country": "MX",
+      "shortName": "PRI",
+      "name": "Partido Revolucionario Institucional",
+      "nameEn": "Institutional Revolutionary Party",
+      "logo": "party-logos/mx/pri.svg",
+      "sha256": "e7e34bce05fbd6c0d0b4a1c420fcf1628e06e641f5ffdce8486dbfd789bdeb69",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PRI_logo_(Mexico).svg",
+      "ideology": [
+        "Catch-all politics",
+        "Pragmatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right (historically left-wing)",
+      "founded": 1929,
+      "previousNames": [
+        {
+          "name": "Partido Nacional Revolucionario",
+          "nameEn": "National Revolutionary Party",
+          "years": "1929-1938"
+        },
+        {
+          "name": "Partido de la Revolución Mexicana",
+          "nameEn": "Party of the Mexican Revolution",
+          "years": "1938-1946"
+        }
+      ],
+      "leader": "Alejandro Moreno Cárdenas",
+      "leaderTitle": "National President",
+      "inPower": false,
+      "seats": 37,
+      "seatsTotal": 500,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Institutional Revolutionary Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Institutional_Revolutionary_Party"
+        },
+        {
+          "title": "Chamber of Deputies (Mexico) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Mexico)"
+        }
+      ]
+    },
+    {
+      "id": "MX-MC",
+      "country": "MX",
+      "shortName": "MC",
+      "name": "Movimiento Ciudadano",
+      "nameEn": "Citizens' Movement",
+      "logo": "party-logos/mx/mc.svg",
+      "sha256": "c30b1f4f1f4d08b3bdedfecd42b098d4ba5bd18bcc0bb66855c0ba465d4fc6e1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_Movimiento_Ciudadano_(México).svg",
+      "ideology": [
+        "Social democracy",
+        "Social liberalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left (also described as left-wing)",
+      "founded": 1999,
+      "previousNames": [
+        {
+          "name": "Convergencia por la Democracia",
+          "nameEn": "Convergence for Democracy",
+          "years": "1999-2002"
+        },
+        {
+          "name": "Convergencia",
+          "nameEn": "Convergence",
+          "years": "2002-2011"
+        }
+      ],
+      "leader": "Jorge Álvarez Máynez",
+      "leaderTitle": "National Leader",
+      "inPower": false,
+      "seats": 29,
+      "seatsTotal": 500,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Citizens' Movement (Mexico) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Citizens%27_Movement_(Mexico)"
+        },
+        {
+          "title": "Chamber of Deputies (Mexico) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Mexico)"
         }
       ]
     }
