@@ -452,6 +452,39 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "url": "https://en.wikipedia.org/wiki/Sigamos_Haciendo_Historia"
     },
     "note": "Successor to the 2018-2021 'Juntos Hacemos Historia' alliance; formed 19 November 2023 by Morena, PT and PVEM for the 2024 general election. The coalition governs Mexico under President Claudia Sheinbaum and holds 364 of 500 Chamber of Deputies seats in the current (LXVI) legislature."
+  },
+  "se-tido": {
+    "id": "se-tido",
+    "name": "Tidöavtalet",
+    "nameEn": "Tidö Agreement / Kristersson cabinet",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "SE-M",
+      "SE-KD",
+      "SE-L",
+      "SE-SD"
+    ],
+    "source": {
+      "title": "Tidö Agreement - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tid%C3%B6_Agreement"
+    },
+    "note": "Following the September 2022 election, the Moderate Party (M), Christian Democrats (KD) and Liberals (L) formed the formal Kristersson cabinet. The Sweden Democrats (SD) are not cabinet members but provide confidence-and-supply support under the Tidö Agreement, a co-operation agreement among all four parties covering policy concessions in exchange for parliamentary support. Only M, KD and L hold ministerial posts (inPower: true); SD supports the government from outside cabinet (inPower: false)."
+  },
+  "nl-jetten-cabinet": {
+    "id": "nl-jetten-cabinet",
+    "name": "Kabinet-Jetten",
+    "nameEn": "Jetten cabinet",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "NL-D66",
+      "NL-VVD",
+      "NL-CDA"
+    ],
+    "source": {
+      "title": "Jetten cabinet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jetten_cabinet"
+    },
+    "note": "Minority coalition of D66, VVD and CDA (66 of 150 seats), sworn in 23 February 2026 under Prime Minister Rob Jetten (D66) — the first Dutch cabinet to govern as a minority in the House of Representatives without a confidence-and-supply agreement since 1918."
   }
 };
 
@@ -6688,6 +6721,1176 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Chamber of Deputies (Mexico) - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Mexico)"
+        }
+      ]
+    }
+  ],
+  "KR": [
+    {
+      "id": "KR-DP",
+      "country": "KR",
+      "shortName": "DP",
+      "name": "더불어민주당",
+      "nameEn": "Democratic Party of Korea",
+      "logo": "party-logos/kr/dp.svg",
+      "sha256": "2412cc144df411f119f5f3725d37dc073aa9dc6b508e47fe74ac7608306c8bda",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/2024_Logo_of_the_Democratic_Party_of_Korea.svg",
+      "ideology": [
+        "Liberalism (South Korean)",
+        "Social liberalism",
+        "Centrist reformism",
+        "Economic interventionism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2014,
+      "previousNames": [
+        {
+          "name": "새정치민주연합",
+          "nameEn": "New Politics Alliance for Democracy",
+          "years": "2014–2015"
+        }
+      ],
+      "leader": "Kim Min-seok",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2025-present",
+      "seats": 161,
+      "seatsTotal": 300,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Democratic Party of Korea - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_of_Korea"
+        },
+        {
+          "title": "Kim Min-seok wins DPK leadership race over Jung Chung-rae - The Korea Times",
+          "url": "https://www.koreatimes.co.kr/southkorea/politics/20260817/kim-min-seok-wins-dpk-leadership-race-over-jung-chung-rae"
+        },
+        {
+          "title": "List of members of the National Assembly (South Korea), 2024–2028 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_members_of_the_National_Assembly_(South_Korea),_2024%E2%80%932028"
+        }
+      ]
+    },
+    {
+      "id": "KR-PPP",
+      "country": "KR",
+      "shortName": "PPP",
+      "name": "국민의힘",
+      "nameEn": "People Power Party",
+      "logo": "party-logos/kr/ppp.svg",
+      "sha256": "27c5c1fef677593256a07f0533a12387270c31552ad719ec2ca3e1e0145df25e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_People_Power_Party_of_Korea.svg",
+      "ideology": [
+        "Conservatism (South Korean)",
+        "South Korean nationalism",
+        "Right-wing populism",
+        "Anti-communism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2020,
+      "previousNames": [
+        {
+          "name": "미래통합당",
+          "nameEn": "United Future Party",
+          "years": "2020"
+        }
+      ],
+      "leader": "Jang Dong-hyeok",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 109,
+      "seatsTotal": 300,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "People Power Party (South Korea) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People_Power_Party_(South_Korea)"
+        },
+        {
+          "title": "List of members of the National Assembly (South Korea), 2024–2028 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_members_of_the_National_Assembly_(South_Korea),_2024%E2%80%932028"
+        }
+      ]
+    },
+    {
+      "id": "KR-RKP",
+      "country": "KR",
+      "shortName": "RKP",
+      "name": "조국혁신당",
+      "nameEn": "Rebuilding Korea Party",
+      "noImageReason": "Logo file could not be fetched: upload.wikimedia.org/wikipedia/commons/6/6b/조국혁신당_로고.svg (Rebuilding Korea Party logo) returned HTTP 429 (rate-limited) on repeated retries spaced 6-10s apart over several minutes on 2026-09-05; a future session should retry this exact resolved URL.",
+      "ideology": [
+        "South Korean progressivism",
+        "South Korean liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2024,
+      "leader": "Shin Jang-sik",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 300,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Rebuilding Korea Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rebuilding_Korea_Party"
+        },
+        {
+          "title": "List of members of the National Assembly (South Korea), 2024–2028 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_members_of_the_National_Assembly_(South_Korea),_2024%E2%80%932028"
+        }
+      ]
+    },
+    {
+      "id": "KR-PP",
+      "country": "KR",
+      "shortName": "PP",
+      "name": "진보당",
+      "nameEn": "Progressive Party",
+      "logo": "party-logos/kr/pp.jpg",
+      "sha256": "ddff911e007feda37c64799a709e99bd662566dec85fd8ece0295a258692f7b7",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Logo_of_Progressive_Party_%28South_Korea%29.jpg",
+      "ideology": [
+        "South Korean progressivism",
+        "Anti-imperialism",
+        "Left-wing nationalism",
+        "Left-wing populism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 2017,
+      "leader": "Kim Jong-hoon",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 300,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Progressive Party (South Korea, 2017) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Progressive_Party_(South_Korea,_2017)"
+        },
+        {
+          "title": "List of members of the National Assembly (South Korea), 2024–2028 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_members_of_the_National_Assembly_(South_Korea),_2024%E2%80%932028"
+        }
+      ]
+    },
+    {
+      "id": "KR-NRP",
+      "country": "KR",
+      "shortName": "NRP",
+      "name": "개혁신당",
+      "nameEn": "New Reform Party",
+      "logo": "party-logos/kr/nrp.svg",
+      "sha256": "8f26806a055fd2312c737646d118a0f407d0177fdc79da5689a69d9e844a554c",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Logo_of_the_New_Reform_Party_%28South_Korea%29.svg",
+      "ideology": [
+        "Conservatism (South Korean)",
+        "Libertarian conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2024,
+      "leader": "Cheon Ha-ram",
+      "leaderTitle": "Acting Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 300,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "New Reform Party (South Korea) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Reform_Party_(South_Korea)"
+        },
+        {
+          "title": "List of members of the National Assembly (South Korea), 2024–2028 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_members_of_the_National_Assembly_(South_Korea),_2024%E2%80%932028"
+        }
+      ]
+    },
+    {
+      "id": "KR-BIP",
+      "country": "KR",
+      "shortName": "BIP",
+      "name": "기본소득당",
+      "nameEn": "Basic Income Party",
+      "logo": "party-logos/kr/bip.svg",
+      "sha256": "f95b8b9d87b542c84ccc4efe18932a831ce3b0aa1e1a2ee8e3b918628dd6e389",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_of_the_Basic_Income_Party.svg",
+      "ideology": [
+        "Universal basic income",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2020,
+      "leader": "Yong Hye-in",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 300,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Basic Income Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Basic_Income_Party"
+        },
+        {
+          "title": "List of members of the National Assembly (South Korea), 2024–2028 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_members_of_the_National_Assembly_(South_Korea),_2024%E2%80%932028"
+        }
+      ]
+    },
+    {
+      "id": "KR-SDP",
+      "country": "KR",
+      "shortName": "SDP",
+      "name": "사회민주당",
+      "nameEn": "Social Democratic Party",
+      "noImageReason": "Logo file could not be fetched: upload.wikimedia.org/wikipedia/commons/c/c3/Logo_of_the_Social_Democratic_Party_%28South_Korea%2C_2024%29.svg returned HTTP 429 (rate-limited) on repeated retries spaced 6-10s apart over several minutes on 2026-09-05; a future session should retry this exact resolved URL.",
+      "ideology": [
+        "Social democracy",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2024,
+      "leader": "Han Chang-min",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 300,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Social Democratic Party (South Korea) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(South_Korea)"
+        },
+        {
+          "title": "List of members of the National Assembly (South Korea), 2024–2028 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_members_of_the_National_Assembly_(South_Korea),_2024%E2%80%932028"
+        }
+      ]
+    }
+  ],
+  "SE": [
+    {
+      "id": "SE-S",
+      "country": "SE",
+      "shortName": "S",
+      "name": "Sveriges socialdemokratiska arbetareparti",
+      "nameEn": "Swedish Social Democratic Party",
+      "logo": "party-logos/se/s.svg",
+      "sha256": "7a0a702fa8d76fdb575bfb50221700b13ab307c44cc4114feaf955795d7e501e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Swedish_Social_Democratic_Worker%27s_Party_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia (not Wikimedia Commons); used there under a fair-use rationale for identification of the party in an infobox, and is also a registered trademark. Bundled here for the same identification purpose.",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1889,
+      "leader": "Magdalena Andersson",
+      "leaderTitle": "Party Leader (Chairperson)",
+      "inPower": false,
+      "seats": 107,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Swedish Social Democratic Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Swedish_Social_Democratic_Party"
+        },
+        {
+          "title": "Results of the 2022 Swedish general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_of_the_2022_Swedish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "SE-SD",
+      "country": "SE",
+      "shortName": "SD",
+      "name": "Sverigedemokraterna",
+      "nameEn": "Sweden Democrats",
+      "logo": "party-logos/se/sd.svg",
+      "sha256": "b22bf267e7f1756bcd73e6294770d2ac74a70d4587fa66790a06b07f5e921541",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Sweden_Democrats_logo_and_initials.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia (not Wikimedia Commons); used there under a fair-use rationale for identification of the party in an infobox, and is also a registered trademark. Bundled here for the same identification purpose.",
+      "ideology": [
+        "National conservatism",
+        "Right-wing populism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 1988,
+      "coalitionId": "se-tido",
+      "leader": "Jimmie Åkesson",
+      "leaderTitle": "Party Leader (Chairperson)",
+      "inPower": false,
+      "seats": 73,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Sweden Democrats - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sweden_Democrats"
+        },
+        {
+          "title": "Results of the 2022 Swedish general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_of_the_2022_Swedish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "SE-M",
+      "country": "SE",
+      "shortName": "M",
+      "name": "Moderata samlingspartiet",
+      "nameEn": "Moderate Party",
+      "logo": "party-logos/se/m.svg",
+      "sha256": "a3a9cabc1a486422d236345f8037611fd99489620bb7d56dfd64b1382e14f061",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:M_v1.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1904,
+      "coalitionId": "se-tido",
+      "leader": "Ulf Kristersson",
+      "leaderTitle": "Party Leader (Chairperson); Prime Minister of Sweden",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 68,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Moderate Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moderate_Party"
+        },
+        {
+          "title": "Results of the 2022 Swedish general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_of_the_2022_Swedish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "SE-MP",
+      "country": "SE",
+      "shortName": "MP",
+      "name": "Miljöpartiet de gröna",
+      "nameEn": "Green Party",
+      "logo": "party-logos/se/mp.svg",
+      "sha256": "9bfaf53036b1dcf1b4287942e21b3b4c5624515273e15a823d4bbd1a2fd363bf",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Swedish_Green_Party_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia (not Wikimedia Commons); used there under a fair-use rationale for identification of the party in an infobox, and is also a registered trademark. Bundled here for the same identification purpose.",
+      "ideology": [
+        "Green politics",
+        "Ecofeminism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1981,
+      "leader": "Daniel Helldén and Amanda Lind",
+      "leaderTitle": "Co-Spokespersons (Språkrör)",
+      "inPower": false,
+      "seats": 18,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Green Party (Sweden) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_(Sweden)"
+        },
+        {
+          "title": "Results of the 2022 Swedish general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_of_the_2022_Swedish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "SE-C",
+      "country": "SE",
+      "shortName": "C",
+      "name": "Centerpartiet",
+      "nameEn": "Centre Party",
+      "logo": "party-logos/se/c.svg",
+      "sha256": "2a213f55e2518d74d0cad324e2913ccd69822503af9551de1a95c2b8ae28a3ac",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:C_v1.svg",
+      "ideology": [
+        "Liberalism (Swedish)",
+        "Agrarianism (Nordic)"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1913,
+      "leader": "Elisabeth Thand Ringqvist",
+      "leaderTitle": "Party Leader (Chairperson)",
+      "inPower": false,
+      "seats": 24,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Centre Party (Sweden) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Centre_Party_(Sweden)"
+        },
+        {
+          "title": "Elisabeth Thand Ringqvist - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Elisabeth_Thand_Ringqvist"
+        },
+        {
+          "title": "Results of the 2022 Swedish general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_of_the_2022_Swedish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "SE-V",
+      "country": "SE",
+      "shortName": "V",
+      "name": "Vänsterpartiet",
+      "nameEn": "Left Party",
+      "logo": "party-logos/se/v.svg",
+      "sha256": "9fe5ad598ba69bc52646ecc7cff19c79c3cdc86a90fa51bb8e555dcb6989c38f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Left_Party_(Sweden)_logo.svg",
+      "licenceNote": "Non-free logo hosted locally on English Wikipedia (not Wikimedia Commons); used there under a fair-use rationale for identification of the party in an infobox, and is also a registered trademark. Bundled here for the same identification purpose.",
+      "ideology": [
+        "Socialism",
+        "Eco-socialism",
+        "Euroscepticism",
+        "Republicanism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1917,
+      "previousNames": [
+        {
+          "name": "Vänsterpartiet Kommunisterna",
+          "nameEn": "Left Party–the Communists",
+          "years": "1967–1990"
+        },
+        {
+          "name": "Sveriges Kommunistiska Parti",
+          "nameEn": "Communist Party of Sweden",
+          "years": "1921–1967"
+        }
+      ],
+      "leader": "Nooshi Dadgostar",
+      "leaderTitle": "Party Leader (Chairperson)",
+      "inPower": false,
+      "seats": 24,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Left Party (Sweden) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Left_Party_(Sweden)"
+        },
+        {
+          "title": "Results of the 2022 Swedish general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_of_the_2022_Swedish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "SE-KD",
+      "country": "SE",
+      "shortName": "KD",
+      "name": "Kristdemokraterna",
+      "nameEn": "Christian Democrats",
+      "logo": "party-logos/se/kd.svg",
+      "sha256": "26736d68c0adc700e647d08e96bf6bb2bef51f062edeb950960f7efe92d7885d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Christian_Democrats_Sweden_logo_2017.svg",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism",
+        "Social conservatism",
+        "Agrarianism (Nordic)"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1964,
+      "coalitionId": "se-tido",
+      "leader": "Ebba Busch",
+      "leaderTitle": "Party Leader (Chairperson, since 25 April 2015)",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 19,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Christian Democrats (Sweden) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democrats_(Sweden)"
+        },
+        {
+          "title": "Results of the 2022 Swedish general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_of_the_2022_Swedish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "SE-L",
+      "country": "SE",
+      "shortName": "L",
+      "name": "Liberalerna",
+      "nameEn": "Liberals",
+      "logo": "party-logos/se/l.svg",
+      "sha256": "df4d48377f5733328605ce19bc67c29e709d931182a919bc5222851a0703007c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Liberals_(Sweden)_logo.svg",
+      "ideology": [
+        "Conservative liberalism",
+        "Liberalism (Swedish)"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1934,
+      "previousNames": [
+        {
+          "name": "Folkpartiet liberalerna",
+          "nameEn": "People's Party – The Liberals",
+          "years": "1934–2015"
+        }
+      ],
+      "coalitionId": "se-tido",
+      "leader": "Simona Mohamsson",
+      "leaderTitle": "Party Leader (Chairperson, since 24 June 2025)",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 16,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Liberals (Sweden) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Liberals_(Sweden)"
+        },
+        {
+          "title": "Results of the 2022 Swedish general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_of_the_2022_Swedish_general_election"
+        }
+      ]
+    }
+  ],
+  "NL": [
+    {
+      "id": "NL-D66",
+      "country": "NL",
+      "shortName": "D66",
+      "name": "Democraten 66",
+      "nameEn": "Democrats 66",
+      "logo": "party-logos/nl/d66.svg",
+      "sha256": "458c32803493649029348d8d55950938e0adbba614a84ebb946082e10f2fbf86",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:D66_logo_(2019%E2%80%93present).svg",
+      "ideology": [
+        "Social liberalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1966,
+      "coalitionId": "nl-jetten-cabinet",
+      "leader": "Rob Jetten",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026-present",
+      "seats": 26,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "logoMeaning": {
+        "description": "D66's logo is a wordmark of the party's name. The name itself (dropping the original apostrophe, 'D'66, in 1985) refers to the party's founding goal of radical democratisation of the Dutch political system and to 1966, the year it was founded, intended to convey a modern image.",
+        "sources": [
+          {
+            "title": "Democrats 66 - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Democrats_66"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Democrats 66 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democrats_66"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        },
+        {
+          "title": "Jetten cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jetten_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "NL-PVV",
+      "country": "NL",
+      "shortName": "PVV",
+      "name": "Partij voor de Vrijheid",
+      "nameEn": "Party for Freedom",
+      "logo": "party-logos/nl/pvv.svg",
+      "sha256": "67319ebf6553b8f1bac1b5aaf617c170577d5faba7340185e8f68d5b2f12efde",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PVV-logo.svg",
+      "ideology": [
+        "Nationalism",
+        "Right-wing populism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2006,
+      "leader": "Geert Wilders",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 26,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "logoMeaning": {
+        "description": "The PVV emblem is a stylised gull rendered in red, white and blue — the colours of the Dutch flag — intended to represent freedom or liberty.",
+        "sources": [
+          {
+            "title": "Party for Freedom - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+          }
+        ],
+        "myths": [
+          {
+            "claim": "The PVV's gull logo was adopted because it was the historical emblem of the National Socialist Movement in the Netherlands (NSB).",
+            "reality": "The same gull symbol was historically used by the NSB, but party founder Geert Wilders has denied that this history inspired the PVV's choice of emblem."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Party for Freedom - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-VVD",
+      "country": "NL",
+      "shortName": "VVD",
+      "name": "Volkspartij voor Vrijheid en Democratie",
+      "nameEn": "People's Party for Freedom and Democracy",
+      "logo": "party-logos/nl/vvd.svg",
+      "sha256": "b116d5cb8a59d8474c6c1cb0e3c6a98b81c4386c4d39700ff992e8a703561702",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:VVD_logo_(2020%E2%80%93present).svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Conservative liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1948,
+      "coalitionId": "nl-jetten-cabinet",
+      "leader": "Dilan Yeşilgöz",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026-present",
+      "seats": 22,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "People's Party for Freedom and Democracy - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Party_for_Freedom_and_Democracy"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        },
+        {
+          "title": "Jetten cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jetten_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "NL-PRO",
+      "country": "NL",
+      "shortName": "PRO",
+      "name": "Progressief Nederland",
+      "nameEn": "Progressive Netherlands",
+      "logo": "party-logos/nl/pro.svg",
+      "sha256": "206a9c6568f7d6fb58cf0f50d5abc814a1ad148d0d5a7fd39341586067fe0f07",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Progressief_Nederland_Logo_Staand.svg",
+      "ideology": [
+        "Social democracy",
+        "Green politics",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2026,
+      "previousNames": [
+        {
+          "name": "GroenLinks–PvdA",
+          "nameEn": "GreenLeft–Labour Party",
+          "years": "2023-2026"
+        },
+        {
+          "name": "GroenLinks",
+          "nameEn": "GreenLeft",
+          "years": "1990-2026"
+        },
+        {
+          "name": "Partij van de Arbeid",
+          "nameEn": "Labour Party",
+          "years": "1946-2026"
+        }
+      ],
+      "leader": "Jesse Klaver",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 20,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "logoMeaning": {
+        "description": "Progressief Nederland (PRO) uses a green rose as its visual emblem, combining red, green, pink and mint-green tones drawn from the heritage colours of its predecessor parties GroenLinks (green) and the Labour Party/PvdA (red rose), with the party name stylised as \"PRO\" in capitals.",
+        "sources": [
+          {
+            "title": "Progressief Nederland - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Progressief_Nederland"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Progressief Nederland - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Progressief_Nederland"
+        },
+        {
+          "title": "GroenLinks–PvdA union unveils new name: Progressief Nederland (PRO) - NL Times",
+          "url": "https://nltimes.nl/2026/03/26/groenlinks-pvda-union-unveils-new-name-progressief-nederland-pro"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-CDA",
+      "country": "NL",
+      "shortName": "CDA",
+      "name": "Christen-Democratisch Appèl",
+      "nameEn": "Christian Democratic Appeal",
+      "logo": "party-logos/nl/cda.svg",
+      "sha256": "3d729d4225472f7b1326a222619e89c276499b4eae3b1635e07029634c84132f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CDA_logo_2021.svg",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1980,
+      "coalitionId": "nl-jetten-cabinet",
+      "leader": "Henri Bontenbal",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026-present",
+      "seats": 18,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Christian Democratic Appeal - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democratic_Appeal"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        },
+        {
+          "title": "Jetten cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jetten_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "NL-JA21",
+      "country": "NL",
+      "shortName": "JA21",
+      "name": "JA21",
+      "logo": "party-logos/nl/ja21.svg",
+      "sha256": "d030b91b9560e62af9f955e74bc4dc8aa4276ce9aedfd1506a46bb739d5fce30",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:JA21_logo.svg",
+      "ideology": [
+        "Right-wing populism",
+        "Conservative liberalism",
+        "Fortuynism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2020,
+      "leader": "Joost Eerdmans",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 9,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "logoMeaning": {
+        "description": "The party's name \"JA21\" — shown as the logo's wordmark — was chosen by co-founders Joost Eerdmans and Annabel Nanninga to reference their own first initials while also standing for \"het Juiste Antwoord\" (\"the Right Answer\") and \"Jouw Alternatief\" (\"Your Alternative\"); \"ja\" is also the Dutch word for \"yes\".",
+        "sources": [
+          {
+            "title": "JA21 - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/JA21"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "JA21 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/JA21"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-FVD",
+      "country": "NL",
+      "shortName": "FvD",
+      "name": "Forum voor Democratie",
+      "nameEn": "Forum for Democracy",
+      "logo": "party-logos/nl/fvd.svg",
+      "sha256": "2fd4549e126656dbb12115ebf476b4af83e86e0f1f6199ac502cad1ba5878ef7",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:FVD_logo.svg",
+      "ideology": [
+        "National conservatism",
+        "Right-wing populism",
+        "Neo-fascism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2016,
+      "leader": "Lidewij de Vos",
+      "leaderTitle": "Leader in the House of Representatives",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Forum for Democracy - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Forum_for_Democracy"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-BBB",
+      "country": "NL",
+      "shortName": "BBB",
+      "name": "BoerBurgerBeweging",
+      "nameEn": "Farmer–Citizen Movement",
+      "logo": "party-logos/nl/bbb.svg",
+      "sha256": "8591c64955e75d6ea2ad3cd7caa2b71910dab6cfe2debd30e7704d7fe558b2e8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:BoerBurgerBeweging_logo.svg",
+      "ideology": [
+        "Agrarianism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2019,
+      "leader": "Henk Vermeer",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Farmer–Citizen Movement - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Farmer%E2%80%93Citizen_Movement"
+        },
+        {
+          "title": "Caroline van der Plas steps down as BBB Leader, Henk Vermeer takes over - NL Times",
+          "url": "https://nltimes.nl/2026/02/20/caroline-van-der-plas-steps-bbb-leader-henk-vermeer-takes"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-DENK",
+      "country": "NL",
+      "shortName": "Denk",
+      "name": "Denk",
+      "logo": "party-logos/nl/denk.svg",
+      "sha256": "d984053ab2027c512d22127a064c0f2e7e2813210a90d70b4198479692b7d165",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:DENK_logo_(2020%E2%80%93present).svg",
+      "ideology": [
+        "Social democracy",
+        "Social conservatism",
+        "Minority interests"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2015,
+      "leader": "Stephan van Baarle",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "logoMeaning": {
+        "description": "The party's name carries a deliberate dual meaning: \"denk\" is Dutch for \"think\" and also the Turkish word for \"equal\"/\"balanced\", reflecting the party's origins among Dutch politicians of Turkish descent.",
+        "sources": [
+          {
+            "title": "Denk (political party) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Denk_(political_party)"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Denk (political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Denk_(political_party)"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-SGP",
+      "country": "NL",
+      "shortName": "SGP",
+      "name": "Staatkundig Gereformeerde Partij",
+      "nameEn": "Reformed Political Party",
+      "logo": "party-logos/nl/sgp.svg",
+      "sha256": "d8e8363032bac0676bf0971954c654f4d4f4e341e6c4883f0c3ff4dee61436c8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Staatkundig_Gereformeerde_Partij_logo.svg",
+      "ideology": [
+        "Christian right",
+        "Social conservatism",
+        "Theocracy"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1918,
+      "leader": "Chris Stoffer",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Reformed Political Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Reformed_Political_Party"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-PVDD",
+      "country": "NL",
+      "shortName": "PvdD",
+      "name": "Partij voor de Dieren",
+      "nameEn": "Party for the Animals",
+      "logo": "party-logos/nl/pvdd.svg",
+      "sha256": "55a07abeadb76bc2cce23db687fbc6bd9956398cf3a2fa0c9e9106e958b30030",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Party_for_the_Animals_logo.svg",
+      "ideology": [
+        "Animal rights",
+        "Animal welfare",
+        "Anti-capitalism",
+        "Environmentalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 2002,
+      "leader": "Christine Teunissen",
+      "leaderTitle": "Political Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Party for the Animals - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Party_for_the_Animals"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-CU",
+      "country": "NL",
+      "shortName": "CU",
+      "name": "ChristenUnie",
+      "nameEn": "Christian Union",
+      "logo": "party-logos/nl/cu.svg",
+      "sha256": "615fecbdc89752ded2c7553a6e8fe0ee8814baee56ac91583b7ea62bc7fd3c2e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:ChristenUnie_logo.svg",
+      "ideology": [
+        "Christian democracy",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2000,
+      "leader": "Mirjam Bikker",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Christian Union (Netherlands) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/ChristianUnion"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-SP",
+      "country": "NL",
+      "shortName": "SP",
+      "name": "Socialistische Partij",
+      "nameEn": "Socialist Party",
+      "logo": "party-logos/nl/sp.svg",
+      "sha256": "0145d6a175a6c8a7ec2478db0be0d8506a941029b3d79cc68f59c5673fa64a6f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Socialistische_Partij_(nl_2006)_Logo.svg",
+      "ideology": [
+        "Democratic socialism",
+        "Left-wing populism",
+        "Social democracy",
+        "Cultural conservatism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1971,
+      "leader": "Jimmy Dijk",
+      "leaderTitle": "Parliamentary Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Socialist Party (Netherlands) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_(Netherlands)"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-50PLUS",
+      "country": "NL",
+      "shortName": "50PLUS",
+      "name": "50PLUS",
+      "logo": "party-logos/nl/50plus.svg",
+      "sha256": "8f572c5eaa92675794c584b447e202cbf90937db8600c6b3ba537fce7383c98b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:50PLUS_(nl)_Logo.svg",
+      "ideology": [
+        "Pensioners' interests",
+        "Populism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2009,
+      "previousNames": [
+        {
+          "name": "Onafhankelijke Ouderen en Kinderen Unie",
+          "nameEn": "Independent Elderly and Children Union",
+          "years": "2009-2010"
+        }
+      ],
+      "leader": "Jan Struijs",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "50PLUS - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/50PLUS"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-VOLT",
+      "country": "NL",
+      "shortName": "Volt",
+      "name": "Volt Nederland",
+      "nameEn": "Volt Netherlands",
+      "logo": "party-logos/nl/volt.svg",
+      "sha256": "f0c869a03260c98eee2bcd418ad05a0cd32af3909751c78464c22e8964c52ae2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Volt_Netherlands.svg",
+      "ideology": [
+        "Social liberalism",
+        "European federalism",
+        "Pro-Europeanism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2018,
+      "leader": "Laurens Dassen",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Volt Netherlands - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Volt_Netherlands"
+        },
+        {
+          "title": "2025 Dutch general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
         }
       ]
     }
