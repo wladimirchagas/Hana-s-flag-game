@@ -353,6 +353,74 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "url": "https://en.wikipedia.org/wiki/Advanced_Indonesia_Coalition"
     },
     "note": "Formed by Gerindra, Golkar, PAN, Demokrat and others to back Prabowo Subianto's 2024 presidential bid and government; expanded as 'KIM Plus' from August 2024 to also include PKB, NasDem, PKS and the non-parliamentary PPP. PDI-P is the only DPR party that remains outside the coalition, in opposition."
+  },
+  "it-centre-right": {
+    "id": "it-centre-right",
+    "name": "Coalizione di centrodestra",
+    "nameEn": "Centre-right coalition",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "IT-FDI",
+      "IT-LEGA",
+      "IT-FI",
+      "IT-NM"
+    ],
+    "source": {
+      "title": "Centre-right coalition (Italy) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Centre-right_coalition_(Italy)"
+    },
+    "note": "Governing coalition since the 2022 general election, backing the Meloni cabinet; Giorgia Meloni (FdI) has served as Prime Minister since 22 October 2022."
+  },
+  "ar-fuerza-cambio": {
+    "id": "ar-fuerza-cambio",
+    "name": "Fuerza del Cambio",
+    "nameEn": "Force of Change",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "AR-PRO",
+      "AR-UCR",
+      "AR-MID",
+      "AR-SANTACRUZ",
+      "AR-ABSAS"
+    ],
+    "source": {
+      "title": "PRO, UCR, MID y otras fuerzas lanzaron un nuevo interbloque de 22 diputados nacionales - La Nueva",
+      "url": "https://www.lanueva.com/puntaalta/nota/2025-12-16-18-41-0-el-pro-la-ucr-el-mid-y-otras-fuerzas-lanzaron-un-nuevo-interbloque-de-22-diputados-nacionales"
+    },
+    "note": "This is a procedural 'interbloque' (inter-bloc alliance) formed in the Chamber of Deputies on 16 December 2025, initially known as the revived 'Juntos por el Cambio' mini-interbloque before being formalised as 'Fuerza del Cambio'. It groups several already-distinct parliamentary blocs (PRO, UCR, MID, Por Santa Cruz, Adelante Buenos Aires) for procedural purposes (speaking time, committee seats) without merging their separate identities or ideologies — each retains its own bloc and vote."
+  },
+  "fr-ensemble": {
+    "id": "fr-ensemble",
+    "name": "Ensemble",
+    "nameEn": "Together",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "FR-EPR",
+      "FR-MODEM",
+      "FR-HOR"
+    ],
+    "source": {
+      "title": "Ensemble (French political alliance) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ensemble_(French_political_alliance)"
+    },
+    "note": "Presidential-majority electoral and parliamentary alliance of Renaissance, MoDem and Horizons, used for the 2022 and 2024 legislative elections and continuing as the governing bloc; Les Républicains (FR-LR) also participates in the current Lecornu government (inPower) but is not a member of the Ensemble alliance itself."
+  },
+  "fr-nfp": {
+    "id": "fr-nfp",
+    "name": "Nouveau Front Populaire",
+    "nameEn": "New Popular Front",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "FR-LFI",
+      "FR-PS",
+      "FR-EELV",
+      "FR-GDR"
+    ],
+    "source": {
+      "title": "New Popular Front - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/New_Popular_Front"
+    },
+    "note": "Left-wing electoral alliance formed for the June–July 2024 snap legislative election, comprising La France Insoumise, the Socialist Party, the Ecologists/Greens and the Communist-led GDR grouping."
   }
 };
 
@@ -4330,6 +4398,1383 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Indonesian legislative election - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Indonesian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "IT": [
+    {
+      "id": "IT-FDI",
+      "country": "IT",
+      "shortName": "FdI",
+      "name": "Fratelli d'Italia",
+      "nameEn": "Brothers of Italy",
+      "noImageReason": "Wikimedia's media CDN (upload.wikimedia.org) and the Commons API (commons.wikimedia.org/w/api.php) both returned HTTP 429 (rate limited) for this session's shared egress IP; the pre-existing public/party-logos/it/fdi.svg was inspected and found to be a saved Wikimedia 429 error/redirect HTML page, not a real image. Target file: File:Brothers_of_Italy.svg on Wikimedia Commons — retry download and sha1-verify against the MediaWiki API in a future session once egress clears.",
+      "ideology": [
+        "National conservatism",
+        "Right-wing populism",
+        "Post-fascism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2012,
+      "coalitionId": "it-centre-right",
+      "leader": "Giorgia Meloni",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 118,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "logoMeaning": {
+        "description": "FdI's logo is the tricolour flame (green-white-red) rising from a stylised base, inherited unchanged from the neo-fascist Italian Social Movement (MSI, founded 1946) and carried through National Alliance to Fratelli d'Italia in 2012. The MSI's founders adopted a flame in the Italian national colours as their party symbol; the flame is widely understood among historians and commentators as evoking the eternal flame said to burn on Mussolini's tomb, and the trapezoid base beneath it has often been read as representing a coffin — making the symbol, for those who recognise the lineage, a form of tribute to the MSI and its founder Giorgio Almirante rather than a neutral national-colours device.",
+        "sources": [
+          {
+            "title": "Fratelli d'Italia's Burning Flame - why the medium is the message for Giorgia Meloni (Engelsberg Ideas)",
+            "url": "https://engelsbergideas.com/notebook/fratelli-ditalias-burning-flame-why-the-medium-is-the-message-for-giorgia-meloni/"
+          },
+          {
+            "title": "Fascism's return to Italy? The meaning of the Fratelli d'Italia (International Socialism Journal)",
+            "url": "https://isj.org.uk/the-fratelli-ditalia/"
+          }
+        ],
+        "myths": [
+          {
+            "claim": "The tricolour flame is simply a patriotic emblem in the colours of the Italian flag, with no further significance.",
+            "reality": "The flame design and its trapezoid base were carried over unaltered from the MSI's 1946 logo; multiple historians and journalists identify it as a memorial/funerary symbol referencing Mussolini's tomb and as a deliberate marker of ideological continuity with the MSI, not a generic patriotic device."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Brothers of Italy - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Brothers_of_Italy"
+        },
+        {
+          "title": "Centre-right coalition (Italy) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Centre-right_coalition_(Italy)"
+        }
+      ]
+    },
+    {
+      "id": "IT-LEGA",
+      "country": "IT",
+      "shortName": "Lega",
+      "name": "Lega per Salvini Premier",
+      "nameEn": "League for Salvini Premier",
+      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/lega.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:League_-_Salvini_premier.svg on Wikimedia Commons - retry once egress clears.",
+      "ideology": [
+        "Right-wing populism",
+        "Conservatism",
+        "Nationalism",
+        "Regionalism",
+        "Federalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 1989,
+      "previousNames": [
+        {
+          "name": "Lega Nord",
+          "nameEn": "Northern League",
+          "years": "1989/1991-2017"
+        }
+      ],
+      "coalitionId": "it-centre-right",
+      "leader": "Matteo Salvini",
+      "leaderTitle": "Federal Secretary",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 57,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Lega (political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lega_(political_party)"
+        },
+        {
+          "title": "Lega Nord - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lega_Nord"
+        }
+      ]
+    },
+    {
+      "id": "IT-FI",
+      "country": "IT",
+      "shortName": "FI",
+      "name": "Forza Italia",
+      "nameEn": "Go Italy",
+      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/fi.svg was inspected and found to be a saved Wikimedia 'too many requests' error page (429), not a real image. Target file: File:Logo_Forza_Italia.svg on Wikimedia Commons - retry once egress clears.",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy",
+        "Populism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2013,
+      "previousNames": [
+        {
+          "name": "Forza Italia",
+          "nameEn": "Go Italy",
+          "years": "1994-2009 (original party, merged into The People of Freedom)"
+        }
+      ],
+      "coalitionId": "it-centre-right",
+      "leader": "Antonio Tajani",
+      "leaderTitle": "Secretary",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 52,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Forza Italia (2013) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Forza_Italia_(2013)"
+        }
+      ]
+    },
+    {
+      "id": "IT-NM",
+      "country": "IT",
+      "shortName": "NM",
+      "name": "Noi Moderati",
+      "nameEn": "Us Moderates",
+      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/nm.svg was inspected and found to be a saved Wikimedia 'too many requests' error page (429), not a real image. Target file: File:Noi_Moderati_-_logo_(Italy,_2024).svg on Wikimedia Commons - retry once egress clears.",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2022,
+      "coalitionId": "it-centre-right",
+      "leader": "Maurizio Lupi",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 7,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Us Moderates - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Us_Moderates"
+        }
+      ]
+    },
+    {
+      "id": "IT-PD",
+      "country": "IT",
+      "shortName": "PD",
+      "name": "Partito Democratico",
+      "nameEn": "Democratic Party",
+      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/pd.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:Partito_Democratico_Logo.svg on Wikimedia Commons - retry once egress clears.",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2007,
+      "leader": "Elly Schlein",
+      "leaderTitle": "Secretary",
+      "inPower": false,
+      "seats": 68,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Democratic Party (Italy) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Italy)"
+        }
+      ]
+    },
+    {
+      "id": "IT-M5S",
+      "country": "IT",
+      "shortName": "M5S",
+      "name": "Movimento 5 Stelle",
+      "nameEn": "Five Star Movement",
+      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/m5s.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:M5S_logo_2050.svg on Wikimedia Commons - retry once egress clears.",
+      "ideology": [
+        "Populism",
+        "Green politics"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing (self-described as post-ideological; formerly catch-all/syncretic)",
+      "founded": 2009,
+      "leader": "Giuseppe Conte",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 48,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Five Star Movement - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+        }
+      ]
+    },
+    {
+      "id": "IT-AVS",
+      "country": "IT",
+      "shortName": "AVS",
+      "name": "Alleanza Verdi e Sinistra",
+      "nameEn": "Greens and Left Alliance",
+      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/avs.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:Logo_of_the_Greens_and_Left_Alliance.svg on Wikimedia Commons - retry once egress clears.",
+      "ideology": [
+        "Democratic socialism",
+        "Green politics"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2022,
+      "leader": "Angelo Bonelli / Nicola Fratoianni",
+      "leaderTitle": "Co-spokespersons",
+      "inPower": false,
+      "seats": 10,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Greens and Left Alliance - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Greens_and_Left_Alliance"
+        }
+      ]
+    },
+    {
+      "id": "IT-AZIONE",
+      "country": "IT",
+      "shortName": "Azione",
+      "name": "Azione",
+      "nameEn": "Action",
+      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/azione.svg was inspected and found to be a saved Wikimedia 'too many requests' error page (429), not a real image. Target file: File:Azione_-_logo_(Italy,_2021-).svg on Wikimedia Commons - retry once egress clears.",
+      "ideology": [
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2019,
+      "leader": "Carlo Calenda",
+      "leaderTitle": "Secretary",
+      "inPower": false,
+      "seats": 10,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Action (Italian political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Action_(Italian_political_party)"
+        }
+      ]
+    },
+    {
+      "id": "IT-IV",
+      "country": "IT",
+      "shortName": "IV",
+      "name": "Italia Viva",
+      "nameEn": "Italy Alive",
+      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/iv.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:Logo_of_the_Italia_Viva.svg on Wikimedia Commons - retry once egress clears.",
+      "ideology": [
+        "Liberalism",
+        "Reformism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2019,
+      "leader": "Matteo Renzi",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Italia Viva - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Italia_Viva"
+        }
+      ]
+    },
+    {
+      "id": "IT-FN",
+      "country": "IT",
+      "shortName": "FN",
+      "name": "Futuro Nazionale con Roberto Vannacci",
+      "nameEn": "National Future with Roberto Vannacci",
+      "noImageReason": "Wikimedia CDN and Commons API both returned HTTP 429 during this session; the pre-existing public/party-logos/it/fn.svg was inspected and found to be a saved Wikimedia error/redirect HTML page, not a real image. Target file: File:Futuro_Nazionale_logo.svg on Wikimedia Commons - retry once egress clears.",
+      "ideology": [
+        "Nationalism",
+        "Right-wing populism",
+        "National conservatism",
+        "Social conservatism",
+        "Euroscepticism",
+        "Neo-fascism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2026,
+      "leader": "Roberto Vannacci",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "National Future - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Future"
+        }
+      ]
+    }
+  ],
+  "AR": [
+    {
+      "id": "AR-LLA",
+      "country": "AR",
+      "shortName": "LLA",
+      "name": "La Libertad Avanza",
+      "nameEn": "Freedom Advances",
+      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) to this environment's egress IP during every download attempt made while compiling this dataset; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:La_Libertad_Avanza_2021.svg and should be bundled once egress succeeds.",
+      "ideology": [
+        "Right-libertarianism",
+        "Libertarian conservatism",
+        "Ultraconservatism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2021,
+      "leader": "Gabriel Bornoroni",
+      "leaderTitle": "President of the La Libertad Avanza bloc in the Chamber of Deputies",
+      "inPower": true,
+      "timeInPower": "2023-present",
+      "seats": 95,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "La Libertad Avanza - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/La_Libertad_Avanza"
+        },
+        {
+          "title": "Uno por uno, cómo quedan los bloques de la Cámara de Diputados y cuántos legisladores tendrán - Infobae",
+          "url": "https://www.infobae.com/politica/2025/12/03/uno-por-uno-como-quedan-los-bloques-de-la-camara-de-diputados-y-cuantos-legisladores-tendran/"
+        },
+        {
+          "title": "Quién es Gabriel Bornoroni, el nuevo jefe del bloque de Diputados de La Libertad Avanza - Página/12",
+          "url": "https://www.pagina12.com.ar/728224-quien-es-gabriel-bornoroni-el-nuevo-jefe-del-bloque-de-diput/"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados: cómo quedaron y quiénes son sus referentes - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-UXP",
+      "country": "AR",
+      "shortName": "UxP",
+      "name": "Unión por la Patria",
+      "nameEn": "Union for the Homeland",
+      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) to this environment's egress IP during every download attempt; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:Logo_Union_por_la_Patria.svg and should be bundled once egress succeeds.",
+      "ideology": [
+        "Peronism",
+        "Kirchnerism",
+        "Progressivism",
+        "Anti-neoliberalism",
+        "Left-wing populism",
+        "Left-wing nationalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2023,
+      "previousNames": [
+        {
+          "name": "Frente de Todos",
+          "nameEn": "Front for All",
+          "years": "2019-2023"
+        }
+      ],
+      "leader": "Germán Martínez",
+      "leaderTitle": "President of the Unión por la Patria bloc in the Chamber of Deputies",
+      "inPower": false,
+      "seats": 93,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Unión por la Patria - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Uni%C3%B3n_por_la_Patria"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados: cómo quedaron y quiénes son sus referentes - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Uno por uno, cómo quedan los bloques de la Cámara de Diputados - Infobae",
+          "url": "https://www.infobae.com/politica/2025/12/03/uno-por-uno-como-quedan-los-bloques-de-la-camara-de-diputados-y-cuantos-legisladores-tendran/"
+        }
+      ]
+    },
+    {
+      "id": "AR-PU",
+      "country": "AR",
+      "shortName": "PU",
+      "name": "Provincias Unidas",
+      "nameEn": "United Provinces",
+      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo (\"Logo de 'Provincias Unidas'\") exists on Wikimedia Commons and should be bundled once egress succeeds.",
+      "ideology": [
+        "Federal Peronism",
+        "Federalism",
+        "Provincial regionalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2025,
+      "leader": "Gisela Scaglia",
+      "leaderTitle": "President of the Provincias Unidas bloc in the Chamber of Deputies",
+      "inPower": false,
+      "seats": 18,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "United Provinces (political coalition) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/United_Provinces_(political_coalition)"
+        },
+        {
+          "title": "Provincias Unidas: se conforma un nuevo bloque de 22 diputados que será la tercera fuerza - Mirador Provincial",
+          "url": "https://www.miradorprovincial.com/2025/12/03/provincias-unidas-se-conforma-un-nuevo-bloque-de-22-diputados-que-sera-la-tercera-fuerza/"
+        },
+        {
+          "title": "Diputados: Provincias Unidas tendrá el bloque de gobernadores más grande - LetraP",
+          "url": "https://www.letrap.com.ar/politica/diputados-provincias-unidas-tendra-el-bloque-gobernadores-mas-grande-aportes-valdes-y-vidal-n5420571"
+        }
+      ]
+    },
+    {
+      "id": "AR-PRO",
+      "country": "AR",
+      "shortName": "PRO",
+      "name": "Propuesta Republicana",
+      "nameEn": "Republican Proposal",
+      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:Logo_PRO.svg and should be bundled once egress succeeds.",
+      "ideology": [
+        "Conservative liberalism",
+        "Liberal conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2005,
+      "coalitionId": "ar-fuerza-cambio",
+      "leader": "Cristian Ritondo",
+      "leaderTitle": "President of the PRO bloc in the Chamber of Deputies",
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Republican Proposal - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Republican_Proposal"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-INNFED",
+      "country": "AR",
+      "shortName": "IF",
+      "name": "Innovación Federal",
+      "nameEn": "Federal Innovation",
+      "noImageReason": "This is a provincial parliamentary bloc (deputies from Salta, Misiones, Río Negro, Neuquén, Formosa and San Luis) rather than a registered national party with its own emblem; no distinct, freely-licensed logo could be located.",
+      "ideology": [
+        "Federalism",
+        "Provincial regionalism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Cross-spectrum provincial/federalist bloc aligned with regional governors; no single left-right classification is documented",
+      "founded": 2023,
+      "leader": "Alberto Arrúa",
+      "leaderTitle": "President of the Innovación Federal bloc in the Chamber of Deputies",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Innovación Federal - Wikipedia (es)",
+          "url": "https://es.wikipedia.org/wiki/Innovaci%C3%B3n_Federal"
+        },
+        {
+          "title": "Innovación Federal: quiénes son y a qué apuestan en el bloque de los renovadores en Diputados - Primera Edición",
+          "url": "https://www.primeraedicion.com.ar/nota/100868684/innovacion-federal-quienes-son-y-a-que-apuestan-en-el-bloque-de-los-renovadores-en-diputados/"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-UCR",
+      "country": "AR",
+      "shortName": "UCR",
+      "name": "Unión Cívica Radical",
+      "nameEn": "Radical Civic Union",
+      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:Ucr_modern_logo.svg and should be bundled once egress succeeds.",
+      "ideology": [
+        "Social liberalism",
+        "Social democracy",
+        "Conservative liberalism (faction)"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre; historically centre to centre-left",
+      "founded": 1891,
+      "coalitionId": "ar-fuerza-cambio",
+      "leader": "Pamela Verasay",
+      "leaderTitle": "President of the UCR bloc in the Chamber of Deputies",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Radical Civic Union - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Radical_Civic_Union"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-FITU",
+      "country": "AR",
+      "shortName": "FIT-U",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "nameEn": "Left and Workers' Front - Unity",
+      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:Logo_Frente_de_Izquierda_y_de_Trabajadores-Unidad.svg and should be bundled once egress succeeds.",
+      "ideology": [
+        "Trotskyism",
+        "Communism",
+        "Socialism",
+        "Anti-capitalism",
+        "Anti-imperialism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 2011,
+      "leader": "Myriam Bregman",
+      "leaderTitle": "National Deputy and lead spokesperson (the bloc is led collectively by its four member parties: PO, PTS, IS, MST)",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Frente de Izquierda y de Trabajadores - Unidad - Wikipedia (es)",
+          "url": "https://es.wikipedia.org/wiki/Frente_de_Izquierda_y_de_Trabajadores_-_Unidad"
+        },
+        {
+          "title": "Elecciones 2025: el Frente de Izquierda obtuvo cerca de 4 puntos a nivel nacional y pierde una banca en el Congreso - La Nación",
+          "url": "https://www.lanacion.com.ar/politica/el-frente-de-izquierda-obtuvo-cerca-de-4-puntos-a-nivel-nacional-y-pierde-una-banca-en-el-congreso-nid26102025/"
+        }
+      ]
+    },
+    {
+      "id": "AR-COHERENCIA",
+      "country": "AR",
+      "shortName": "Coherencia",
+      "name": "Coherencia",
+      "noImageReason": "Coherencia is a small parliamentary splinter bloc formed by deputies who left La Libertad Avanza in August 2025; it has no registered party emblem distinct from its member deputies' own campaign material, and no freely-licensed logo could be located.",
+      "ideology": [
+        "Libertarianism",
+        "Anti-corruption"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing libertarian; splinter from La Libertad Avanza, positions itself as more independent of the ruling Milei/Karina Milei leadership",
+      "founded": 2025,
+      "leader": "Marcela Pagano",
+      "leaderTitle": "Founding member; the bloc has been reorganised multiple times since August 2025 and Pagano currently holds it as a single-member bloc",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Se volvió a romper el oficialismo en Diputados: cuatro ex libertarios formarán el bloque \"Coherencia\" - Infobae",
+          "url": "https://www.infobae.com/politica/2025/08/20/se-volvio-a-romper-el-oficialismo-en-diputados-cuatro-ex-libertarios-formaran-el-bloque-coherencia/"
+        },
+        {
+          "title": "País Federal se fracturó y Pagano reflotó Coherencia como bloque unipersonal - Parlamentario",
+          "url": "https://www.parlamentario.com/2025/12/30/pais-federal-se-fracturo-y-pagano-refloto-coherencia-como-bloque-unipersonal/"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-INDEP",
+      "country": "AR",
+      "shortName": "Independencia",
+      "name": "Independencia",
+      "noImageReason": "Independencia is a three-member provincial (Tucumán) parliamentary bloc, not a registered national party; no distinct, freely-licensed logo could be located.",
+      "ideology": [
+        "Federal Peronism",
+        "Provincial pragmatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Peronismo federal, described by es.wikipedia as pragmatic and positioned toward the right within Peronism",
+      "founded": 2024,
+      "leader": "Gladys Medina",
+      "leaderTitle": "President of the Independencia bloc in the Chamber of Deputies",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Independencia (bloque legislativo) - Wikipedia (es)",
+          "url": "https://es.wikipedia.org/wiki/Independencia_(bloque_legislativo)"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-CATAMARCA",
+      "country": "AR",
+      "shortName": "Elijo Catamarca",
+      "name": "Elijo Catamarca",
+      "nameEn": "I Choose Catamarca",
+      "noImageReason": "Elijo Catamarca is a three-member provincial (Catamarca) parliamentary bloc formed in December 2025, not a registered national party; no distinct, freely-licensed logo could be located.",
+      "ideology": [
+        "Provincial governismo",
+        "Federal Peronism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Governor-aligned provincial bloc (Raúl Jalil); breakaway from Unión por la Patria signalling openness to cooperating with the Milei government; no left-right classification is documented",
+      "founded": 2025,
+      "leader": "Sebastián Nóblega",
+      "leaderTitle": "President of the Elijo Catamarca bloc in the Chamber of Deputies",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Jalil pateó el tablero: nace \"Elijo Catamarca\" - BAE Negocios",
+          "url": "https://www.baenegocios.com/politica/Jalil-pateo-el-tablero-nace-Elijo-Catamarca-y-el-mapa-de-Diputados-queda-al-borde-del-empate-20251202-0036.html"
+        },
+        {
+          "title": "Tres diputados de Catamarca confirmaron que dejan el bloque de Unión por la Patria - Infobae",
+          "url": "https://www.infobae.com/politica/2025/12/02/tres-diputados-de-catamarca-confirmaron-que-dejan-el-bloque-de-union-por-la-patria-y-la-libertad-avanza-se-quedara-con-la-primera-minoria/"
+        }
+      ]
+    },
+    {
+      "id": "AR-ENCFED",
+      "country": "AR",
+      "shortName": "Encuentro Federal",
+      "name": "Encuentro Federal",
+      "nameEn": "Federal Encounter",
+      "noImageReason": "Encuentro Federal is a small remnant parliamentary bloc (2 deputies as of December 2025, after most members joined Provincias Unidas) rather than a distinct registered national party; no freely-licensed logo could be located.",
+      "ideology": [
+        "Peronismo Republicano",
+        "Federalism",
+        "Institucionalismo"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2023,
+      "previousNames": [
+        {
+          "name": "Hacemos Coalición Federal",
+          "years": "2023-2024"
+        },
+        {
+          "name": "Cambio Federal",
+          "years": "2023"
+        }
+      ],
+      "leader": "Miguel Ángel Pichetto",
+      "leaderTitle": "Founder of the Encuentro Federal / Peronismo Republicano space",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Hacemos Coalición Federal - Wikipedia (es)",
+          "url": "https://es.wikipedia.org/wiki/Hacemos_Coalici%C3%B3n_Federal"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-CCARI",
+      "country": "AR",
+      "shortName": "CC-ARI",
+      "name": "Coalición Cívica ARI",
+      "nameEn": "Civic Coalition ARI",
+      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo exists at https://commons.wikimedia.org/wiki/File:Coalicion_Civica.svg and should be bundled once egress succeeds.",
+      "ideology": [
+        "Socioliberalism",
+        "Progressivism",
+        "Radical centrism",
+        "Developmentalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2002,
+      "leader": "Maximiliano Ferraro",
+      "leaderTitle": "President of Coalición Cívica ARI",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Coalición Cívica ARI - Wikipedia (es)",
+          "url": "https://es.wikipedia.org/wiki/Coalici%C3%B3n_C%C3%ADvica_ARI"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-MID",
+      "country": "AR",
+      "shortName": "MID",
+      "name": "Movimiento de Integración y Desarrollo",
+      "nameEn": "Integration and Development Movement",
+      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo (\"Movimiento de Integración y Desarrollo 2018.png\") exists on Wikimedia Commons and should be bundled once egress succeeds.",
+      "ideology": [
+        "Developmentalism (desarrollismo)"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right, with internal factions ranging from centre to right",
+      "founded": 1964,
+      "coalitionId": "ar-fuerza-cambio",
+      "leader": "Juan Pablo Carrique",
+      "leaderTitle": "President of the Movimiento de Integración y Desarrollo",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Movimiento de Integración y Desarrollo - Wikipedia (es)",
+          "url": "https://es.wikipedia.org/wiki/Movimiento_de_Integraci%C3%B3n_y_Desarrollo"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-PYT",
+      "country": "AR",
+      "shortName": "PyT",
+      "name": "Producción y Trabajo",
+      "nameEn": "Production and Labour",
+      "noImageReason": "This San Juan provincial party's article and available Commons categories carry no freely-licensed logo file; only non-free/social-media imagery could be located.",
+      "ideology": [
+        "Regionalism",
+        "Conservatism",
+        "Republicanism",
+        "Federal Peronism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2005,
+      "leader": "Marcelo Orrego",
+      "leaderTitle": "Governor of San Juan; current leader of Producción y Trabajo",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Producción y Trabajo - Wikipedia (es)",
+          "url": "https://es.wikipedia.org/wiki/Producci%C3%B3n_y_Trabajo"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-NEUQ",
+      "country": "AR",
+      "shortName": "La Neuquinidad",
+      "name": "La Neuquinidad",
+      "noImageReason": "La Neuquinidad is a provincial (Neuquén) electoral front launched in March 2025 that won a single Chamber seat; no freely-licensed party logo could be located.",
+      "ideology": [
+        "Provincial regionalism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Cross-spectrum provincialist front combining sectors of PRO, provincial Peronism and dissident libertarians around Governor Rolando Figueroa; no single left-right classification is documented",
+      "founded": 2025,
+      "leader": "Rolando Figueroa",
+      "leaderTitle": "Governor of Neuquén; founder of La Neuquinidad",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Neuquén: Rolando Figueroa armó el frente La Neuquinidad y primerea en el año electoral - LetraP",
+          "url": "https://www.letrap.com.ar/politica/neuquen-rolando-figueroa-armo-el-frente-la-neuquinidad-y-primerea-el-ano-electoral-n5413581"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-CBA",
+      "country": "AR",
+      "shortName": "Defendamos Córdoba",
+      "name": "Defendamos Córdoba",
+      "nameEn": "Let's Defend Córdoba",
+      "noImageReason": "Single-deputy provincial (Córdoba) electoral alliance launched for the 2025 elections; only a non-free campaign wordmark image could be located, no freely-licensed logo.",
+      "ideology": [
+        "Peronism",
+        "Federalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Peronist and federalist; positions itself as centrist, opposing both the Milei government and Kirchnerismo",
+      "founded": 2025,
+      "leader": "Natalia de la Sota",
+      "leaderTitle": "Founder and sole National Deputy of the Defendamos Córdoba bloc",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Defendamos Córdoba - Wikipedia (es)",
+          "url": "https://es.wikipedia.org/wiki/Defendamos_C%C3%B3rdoba"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-ABSAS",
+      "country": "AR",
+      "shortName": "Adelante Buenos Aires",
+      "name": "Adelante Buenos Aires",
+      "nameEn": "Forward Buenos Aires",
+      "noImageReason": "Single-deputy monobloque formed by a deputy who broke from the UCR; no freely-licensed distinct logo could be located.",
+      "ideology": [
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre; formed by a deputy who left the more traditional UCR bloc",
+      "founded": 2025,
+      "coalitionId": "ar-fuerza-cambio",
+      "leader": "Karina Banfi",
+      "leaderTitle": "Founder and sole National Deputy of the Adelante Buenos Aires bloc",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "PRO, UCR, MID y otras fuerzas lanzaron un nuevo interbloque de 22 diputados nacionales - La Nueva",
+          "url": "https://www.lanueva.com/puntaalta/nota/2025-12-16-18-41-0-el-pro-la-ucr-el-mid-y-otras-fuerzas-lanzaron-un-nuevo-interbloque-de-22-diputados-nacionales"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-PJSL",
+      "country": "AR",
+      "shortName": "PJ San Luis",
+      "name": "Partido Justicialista (San Luis)",
+      "nameEn": "Justicialist Party (San Luis)",
+      "noImageReason": "This entry represents a single National Deputy elected on the San Luis PJ/Frente Justicialista list who sits apart from the main Unión por la Patria bloc; no distinct freely-licensed provincial-branch logo (separate from the national PJ emblem) could be located, and the national PJ emblem would misrepresent this as the national party rather than the provincial bloc.",
+      "ideology": [
+        "Peronism",
+        "Justicialism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Justicialist/Peronist; the San Luis provincial PJ under the Rodríguez Saá family has historically positioned itself as a distinct, more conservative Peronist current",
+      "founded": 1945,
+      "leader": "Alberto Rodríguez Saá",
+      "leaderTitle": "President of the Justicialist Party's San Luis provincial branch",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Alberto Rodríguez Saá apartó del PJ de San Luis a un intendente que lo desafiaba con una interna - La Nación",
+          "url": "https://www.lanacion.com.ar/politica/alberto-rodriguez-saa-aparto-del-pj-de-san-luis-a-un-intendente-que-lo-desafiaba-con-una-interna-nid18082024/"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    },
+    {
+      "id": "AR-SANTACRUZ",
+      "country": "AR",
+      "shortName": "Por Santa Cruz",
+      "name": "Por Santa Cruz",
+      "nameEn": "For Santa Cruz",
+      "noImageReason": "Single-deputy provincial (Santa Cruz) electoral front tied to Governor Claudio Vidal; no freely-licensed distinct party logo could be located.",
+      "ideology": [
+        "Provincial regionalism",
+        "Unionism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Provincial governismo aligned with Governor Claudio Vidal, a former union leader; no single left-right classification is documented",
+      "founded": 2023,
+      "coalitionId": "ar-fuerza-cambio",
+      "leader": "José Luis Garrido",
+      "leaderTitle": "National Deputy for the Por Santa Cruz bloc",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "PRO, UCR, MID y otras fuerzas lanzaron un nuevo interbloque de 22 diputados nacionales - La Nueva",
+          "url": "https://www.lanueva.com/puntaalta/nota/2025-12-16-18-41-0-el-pro-la-ucr-el-mid-y-otras-fuerzas-lanzaron-un-nuevo-interbloque-de-22-diputados-nacionales"
+        },
+        {
+          "title": "Radiografía de los bloques en Diputados - Ámbito",
+          "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        }
+      ]
+    }
+  ],
+  "FR": [
+    {
+      "id": "FR-RN",
+      "country": "FR",
+      "shortName": "RN",
+      "name": "Rassemblement National",
+      "nameEn": "National Rally",
+      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff (immediate, 10s, 30s, 60s, 90s) during this research session, so the logo could not be bundled. Identified file: Commons File:Logo_Rassemblement_National.svg (the tricolour flame emblem), per the current English Wikipedia infobox for National Rally. A future session should retry downloading this exact file.",
+      "ideology": [
+        "French nationalism",
+        "National conservatism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1972,
+      "previousNames": [
+        {
+          "name": "Front National",
+          "nameEn": "National Front",
+          "years": "1972–2018"
+        }
+      ],
+      "leader": "Jordan Bardella",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 122,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "National Rally - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Rally"
+        },
+        {
+          "title": "National Rally group - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Rally_group"
+        }
+      ]
+    },
+    {
+      "id": "FR-EPR",
+      "country": "FR",
+      "shortName": "EPR",
+      "name": "Renaissance",
+      "nameEn": "Renaissance",
+      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Renaissance_parti_logo.svg (the current official logo, circled 'R'/'E' monogram), per the current English Wikipedia infobox for Renaissance (French political party). A future session should retry downloading this exact file.",
+      "ideology": [
+        "Liberalism (French)",
+        "Social liberalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2016,
+      "previousNames": [
+        {
+          "name": "En Marche !",
+          "nameEn": "Onwards!",
+          "years": "2016–2017"
+        },
+        {
+          "name": "La République En Marche",
+          "nameEn": "The Republic on the Move",
+          "years": "2017–2022"
+        }
+      ],
+      "coalitionId": "fr-ensemble",
+      "leader": "Gabriel Attal",
+      "leaderTitle": "Secretary General",
+      "inPower": true,
+      "timeInPower": "2017-present",
+      "seats": 90,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Renaissance (French political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)"
+        },
+        {
+          "title": "Ensemble pour la République - Assemblée nationale",
+          "url": "https://www.assemblee-nationale.fr/dyn/org/PO845407?cible=composition"
+        }
+      ]
+    },
+    {
+      "id": "FR-LFI",
+      "country": "FR",
+      "shortName": "LFI",
+      "name": "La France Insoumise",
+      "nameEn": "France Unbowed",
+      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons/en-Wikipedia File:LOGO-LFI-2026.png (the current 2026 party logo shown in the English Wikipedia infobox for La France Insoumise; an older File:LFI_Logo_2024.svg also exists on Commons). A future session should retry downloading one of these exact files.",
+      "ideology": [
+        "Democratic socialism",
+        "Anti-neoliberalism",
+        "Souverainism",
+        "Eco-socialism",
+        "Left-wing populism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 2016,
+      "coalitionId": "fr-nfp",
+      "leader": "Manuel Bompard",
+      "leaderTitle": "Coordinator",
+      "inPower": false,
+      "seats": 71,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "La France Insoumise - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/La_France_Insoumise"
+        },
+        {
+          "title": "La France Insoumise group - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/La_France_Insoumise_group"
+        }
+      ]
+    },
+    {
+      "id": "FR-PS",
+      "country": "FR",
+      "shortName": "PS",
+      "name": "Parti Socialiste",
+      "nameEn": "Socialist Party",
+      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Socialist_Party_(France)_2024_logo.svg (the current 'rose au poing' logo), per the current English Wikipedia infobox for Socialist Party (France). A future session should retry downloading this exact file.",
+      "ideology": [
+        "Social democracy",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1969,
+      "coalitionId": "fr-nfp",
+      "leader": "Olivier Faure",
+      "leaderTitle": "First Secretary",
+      "inPower": false,
+      "seats": 68,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "logoMeaning": {
+        "description": "The party's emblem, 'le poing et la rose' (the fist and the rose), was adopted in September 1971 at the Épinay congress, created by activist Yann Berriet and illustrator Marc Bonnet. It was explained at the time as: the flourishing (the rose) that only socialism will allow will only be achieved through struggle (the fist raised behind it). Since the 1980s the design has evolved so the rose is more prominent and the fist is fainter, but both elements remain in the current logo.",
+        "sources": [
+          {
+            "title": "Pourquoi le poing et la rose ? - Parti Socialiste",
+            "url": "https://www.parti-socialiste.fr/pourquoi_le_poing_et_la_rose"
+          },
+          {
+            "title": "« Le poing et la rose », la saga d'un logo - Vingtième Siècle (Persée)",
+            "url": "https://www.persee.fr/doc/xxs_0294-1759_1996_num_49_1_3481"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Socialist Party (France) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-LR",
+      "country": "FR",
+      "shortName": "LR",
+      "name": "Les Républicains",
+      "nameEn": "The Republicans",
+      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Les_Républicains_-_logo_(France,_2023).svg, per the current English Wikipedia infobox for The Republicans (France). A future session should retry downloading this exact file.",
+      "ideology": [
+        "Conservatism (French)",
+        "Neo-Gaullism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2015,
+      "leader": "Bruno Retailleau",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2025-present",
+      "seats": 48,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "The Republicans (France) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Republicans_(France)"
+        },
+        {
+          "title": "Droite Républicaine - Assemblée nationale",
+          "url": "https://www2.assemblee-nationale.fr/17/les-groupes-politiques/droite-republicaine"
+        }
+      ]
+    },
+    {
+      "id": "FR-EELV",
+      "country": "FR",
+      "shortName": "LE",
+      "name": "Les Écologistes",
+      "nameEn": "The Ecologists",
+      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Logo_of_The_Ecologists_(France).svg, per the current English Wikipedia infobox for The Ecologists; an older File:Europe_Ecologie-Les_Verts_Logo.svg also exists on Commons for the pre-2023 name. A future session should retry downloading the current file.",
+      "ideology": [
+        "Green politics",
+        "Alter-globalization"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2010,
+      "previousNames": [
+        {
+          "name": "Europe Écologie Les Verts",
+          "nameEn": "Europe Ecology – The Greens",
+          "years": "2010–2023"
+        }
+      ],
+      "coalitionId": "fr-nfp",
+      "leader": "Marine Tondelier",
+      "leaderTitle": "National Secretary",
+      "inPower": false,
+      "seats": 38,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "The Ecologists - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Ecologists"
+        }
+      ]
+    },
+    {
+      "id": "FR-MODEM",
+      "country": "FR",
+      "shortName": "MoDem",
+      "name": "Mouvement Démocrate",
+      "nameEn": "Democratic Movement",
+      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:MoDem_logo_2019.svg, per the current English Wikipedia infobox for Democratic Movement (France). A future session should retry downloading this exact file.",
+      "ideology": [
+        "Social liberalism",
+        "Christian democracy",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2007,
+      "coalitionId": "fr-ensemble",
+      "leader": "François Bayrou",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2017-present",
+      "seats": 37,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Democratic Movement (France) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Movement_(France)"
+        },
+        {
+          "title": "The Democrats group - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Democrats_group"
+        }
+      ]
+    },
+    {
+      "id": "FR-HOR",
+      "country": "FR",
+      "shortName": "HOR",
+      "name": "Horizons",
+      "nameEn": "Horizons",
+      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Logo_Parti_Politique_Horizons_-_2021.svg, per the current English Wikipedia infobox for Horizons (political party). A future session should retry downloading this exact file.",
+      "ideology": [
+        "Liberal conservatism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2021,
+      "coalitionId": "fr-ensemble",
+      "leader": "Édouard Philippe",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 36,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Horizons (political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Horizons_(political_party)"
+        },
+        {
+          "title": "Horizons group (National Assembly) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Horizons_group_(National_Assembly)"
+        }
+      ]
+    },
+    {
+      "id": "FR-LIOT",
+      "country": "FR",
+      "shortName": "LIOT",
+      "name": "Groupe Libertés, Indépendants, Outre-mer et Territoires",
+      "nameEn": "Liberties, Independents, Overseas and Territories group",
+      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:LIOT_Group.png. A future session should retry downloading this exact file.",
+      "ideology": [
+        "Centrism",
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centrist, independent (mixed cross-party group)",
+      "founded": 2018,
+      "previousNames": [
+        {
+          "name": "Groupe Libertés et Territoires",
+          "nameEn": "Liberties and Territories group",
+          "years": "2018–2022"
+        }
+      ],
+      "leader": "Christophe Naegelen",
+      "leaderTitle": "Group President",
+      "inPower": false,
+      "seats": 23,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Groupe Libertés, indépendants, outre-mer et territoires - Wikipédia (French)",
+          "url": "https://fr.wikipedia.org/wiki/Groupe_Libert%C3%A9s,_ind%C3%A9pendants,_outre-mer_et_territoires"
+        },
+        {
+          "title": "Libertés, Indépendants, Outre-mer et Territoires (LIOT) - Assemblée Nationale | Datan",
+          "url": "https://datan.fr/groupes/legislature-17/liot"
+        }
+      ]
+    },
+    {
+      "id": "FR-GDR",
+      "country": "FR",
+      "shortName": "GDR",
+      "name": "Gauche Démocrate et Républicaine",
+      "nameEn": "Democratic and Republican Left",
+      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:Logo_GDR.svg. A future session should retry downloading this exact file.",
+      "ideology": [
+        "Communism",
+        "Democratic socialism",
+        "Regionalism (overseas territories)"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left (mixed group led by the French Communist Party)",
+      "founded": 1997,
+      "coalitionId": "fr-nfp",
+      "leader": "Stéphane Peu and Émeline K/Bidi",
+      "leaderTitle": "Co-Presidents of the GDR group",
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Democratic and Republican Left group - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_and_Republican_Left_group"
+        },
+        {
+          "title": "French Communist Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/French_Communist_Party"
+        }
+      ]
+    },
+    {
+      "id": "FR-UDR",
+      "country": "FR",
+      "shortName": "UDR",
+      "name": "Union des Droites pour la République",
+      "nameEn": "Union of the Right for the Republic",
+      "noImageReason": "Wikimedia CDN (upload.wikimedia.org) returned HTTP 429 rate-limit errors on every attempt across ~15 minutes of retries with backoff during this research session. Identified file: Commons File:UDR_logo.svg. A future session should retry downloading this exact file.",
+      "ideology": [
+        "Right-libertarianism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2024,
+      "leader": "Éric Ciotti",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Union of the Right for the Republic - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Union_of_the_Right_for_the_Republic"
+        },
+        {
+          "title": "UDR group - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/UDR_group"
         }
       ]
     }
