@@ -318,6 +318,41 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "url": "https://en.wikipedia.org/wiki/Liberal_Democratic_Party_(Japan)"
     },
     "note": "Confidence-and-supply / coalition arrangement between the LDP and the Japan Innovation Party (JIP), agreed 20 October 2025 after the collapse of the 26-year LDP–Komeito coalition (Komeito withdrew over disagreements with incoming LDP leader Sanae Takaichi). The arrangement continued after, and was reinforced by, the LDP-JIP landslide in the 8 February 2026 general election; Takaichi was reconfirmed as Prime Minister 18 February 2026 with a two-thirds supermajority."
+  },
+  "NZ-COALITION": {
+    "id": "NZ-COALITION",
+    "name": "Sixth National Government of New Zealand",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "NZ-NAT",
+      "NZ-ACT",
+      "NZ-NZF"
+    ],
+    "source": {
+      "title": "Sixth National Government of New Zealand – Wikipedia (infobox: political parties National, ACT, New Zealand First; date formed 27 November 2023)",
+      "url": "https://en.wikipedia.org/wiki/Sixth_National_Government_of_New_Zealand"
+    },
+    "note": "Coalition agreement announced 24 November 2023; Christopher Luxon (National) sworn in as Prime Minister 27 November 2023, governing with ACT and New Zealand First under the 2023 coalition agreements."
+  },
+  "id-koalisi-indonesia-maju": {
+    "id": "id-koalisi-indonesia-maju",
+    "name": "Koalisi Indonesia Maju Plus",
+    "nameEn": "Advanced Indonesia Coalition Plus",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "ID-GERINDRA",
+      "ID-GOLKAR",
+      "ID-PAN",
+      "ID-DEMOKRAT",
+      "ID-PKB",
+      "ID-NASDEM",
+      "ID-PKS"
+    ],
+    "source": {
+      "title": "Advanced Indonesia Coalition - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Advanced_Indonesia_Coalition"
+    },
+    "note": "Formed by Gerindra, Golkar, PAN, Demokrat and others to back Prabowo Subianto's 2024 presidential bid and government; expanded as 'KIM Plus' from August 2024 to also include PKB, NasDem, PKS and the non-parliamentary PPP. PDI-P is the only DPR party that remains outside the coalition, in opposition."
   }
 };
 
@@ -3735,6 +3770,566 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "減税日本・ゆうこく連合、政党要件失う - 時事ドットコム",
           "url": "https://www.jiji.com/jc/article?k=2026020901480&g=pol"
+        }
+      ]
+    }
+  ],
+  "NZ": [
+    {
+      "id": "NZ-NAT",
+      "country": "NZ",
+      "shortName": "National",
+      "name": "New Zealand National Party",
+      "logo": "party-logos/nz/nat.svg",
+      "sha256": "4d05df78de46901a6cbb1ce24965bd3ae48410e315dabc99abaaac9eff7257b4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_National_Party_logo_(2017%E2%80%93present).svg",
+      "ideology": [
+        "Conservatism",
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1936,
+      "coalitionId": "NZ-COALITION",
+      "leader": "Christopher Luxon",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2023–present",
+      "seats": 48,
+      "seatsTotal": 123,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "New Zealand National Party – Wikipedia (infobox: founded 14 May 1936, ideology, position, leader, seats)",
+          "url": "https://en.wikipedia.org/wiki/New_Zealand_National_Party"
+        },
+        {
+          "title": "54th New Zealand Parliament – Wikipedia (current seat composition; National reduced to 48 of 123 after Judith Collins' May 2026 resignation)",
+          "url": "https://en.wikipedia.org/wiki/54th_New_Zealand_Parliament"
+        }
+      ]
+    },
+    {
+      "id": "NZ-LAB",
+      "country": "NZ",
+      "shortName": "Labour",
+      "name": "New Zealand Labour Party",
+      "logo": "party-logos/nz/lab.svg",
+      "sha256": "844122da88962f047b791bead705f1d661a33a03a4096d6cedaa733d1fdee93f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:New_Zealand_Labour_Party_logo.svg",
+      "licenceNote": "Hosted locally on English Wikipedia (not Commons) under a non-free-use rationale (WP:NFCC) as the party's 2020-adopted logo; used here solely to identify the New Zealand Labour Party, not to imply endorsement. Verified 2026-09-05: local file's SHA-1 (27900535d3d0fce36ca1acd92f26203634c9df31) matches the current English-Wikipedia file exactly.",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1916,
+      "leader": "Chris Hipkins",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 34,
+      "seatsTotal": 123,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "New Zealand Labour Party – Wikipedia (infobox: founded 7 July 1916, ideology, position, leader, seats)",
+          "url": "https://en.wikipedia.org/wiki/New_Zealand_Labour_Party"
+        },
+        {
+          "title": "54th New Zealand Parliament – Wikipedia (current seat composition: Labour 34 of 123)",
+          "url": "https://en.wikipedia.org/wiki/54th_New_Zealand_Parliament"
+        }
+      ]
+    },
+    {
+      "id": "NZ-GRN",
+      "country": "NZ",
+      "shortName": "Green",
+      "name": "Green Party of Aotearoa New Zealand",
+      "logo": "party-logos/nz/grn.svg",
+      "sha256": "cdaa24f55ae870fd1c52e63dc21398377889c3e5578c61cda7e1da2ed9b5f0c8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Green_Party_of_Aotearoa_New_Zealand_logo.svg",
+      "ideology": [
+        "Green politics",
+        "Social democracy",
+        "Socialism (faction)"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1990,
+      "leader": "Marama Davidson & Chlöe Swarbrick",
+      "leaderTitle": "Co-leaders",
+      "inPower": false,
+      "seats": 15,
+      "seatsTotal": 123,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Green Party of Aotearoa New Zealand – Wikipedia (infobox: founded 26 May 1990, ideology, position, co-leaders, seats)",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_of_Aotearoa_New_Zealand"
+        },
+        {
+          "title": "54th New Zealand Parliament – Wikipedia (current seat composition: Green 15 of 123)",
+          "url": "https://en.wikipedia.org/wiki/54th_New_Zealand_Parliament"
+        }
+      ]
+    },
+    {
+      "id": "NZ-ACT",
+      "country": "NZ",
+      "shortName": "ACT",
+      "name": "ACT New Zealand",
+      "logo": "party-logos/nz/act.svg",
+      "sha256": "d8b49e16e17efdee540e55580655b5440783c21243fb3adf59f6cff0f95a8e93",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_ACT_New_Zealand.svg",
+      "ideology": [
+        "Classical liberalism",
+        "Right-libertarianism",
+        "Conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1994,
+      "coalitionId": "NZ-COALITION",
+      "leader": "David Seymour",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2023–present",
+      "seats": 11,
+      "seatsTotal": 123,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "ACT New Zealand – Wikipedia (infobox: founded 1994 from the 1993 Association of Consumers and Taxpayers, ideology, position, leader, seats)",
+          "url": "https://en.wikipedia.org/wiki/ACT_New_Zealand"
+        },
+        {
+          "title": "54th New Zealand Parliament – Wikipedia (current seat composition: ACT 11 of 123)",
+          "url": "https://en.wikipedia.org/wiki/54th_New_Zealand_Parliament"
+        }
+      ]
+    },
+    {
+      "id": "NZ-NZF",
+      "country": "NZ",
+      "shortName": "NZ First",
+      "name": "New Zealand First",
+      "logo": "party-logos/nz/nzf.svg",
+      "sha256": "092f05ed240e3aded1f0e709fd753ba51b12922a28b6e3a8702eadedd3d4e48c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_First_logo_2026.svg",
+      "ideology": [
+        "Right-wing populism",
+        "Nationalism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing populist",
+      "founded": 1993,
+      "coalitionId": "NZ-COALITION",
+      "leader": "Winston Peters",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2023–present",
+      "seats": 8,
+      "seatsTotal": 123,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "New Zealand First – Wikipedia (infobox: founded 18 July 1993, ideology, leader, seats; lead sentence describes it as a right-wing populist party)",
+          "url": "https://en.wikipedia.org/wiki/New_Zealand_First"
+        },
+        {
+          "title": "54th New Zealand Parliament – Wikipedia (current seat composition: NZ First 8 of 123)",
+          "url": "https://en.wikipedia.org/wiki/54th_New_Zealand_Parliament"
+        }
+      ]
+    },
+    {
+      "id": "NZ-TPM",
+      "country": "NZ",
+      "shortName": "Te Pāti Māori",
+      "name": "Te Pāti Māori",
+      "nameEn": "The Māori Party",
+      "logo": "party-logos/nz/tpm.svg",
+      "sha256": "4e779122389546c81cc1d7e86ef9763954c9c3fd2ddf994544490d988fdda7a1",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Te_P%C4%81ti_M%C4%81ori_logo.svg",
+      "licenceNote": "Hosted locally on English Wikipedia (not Commons) under a non-free-use rationale (WP:NFCC) as the party's current logo; used here solely to identify Te Pāti Māori, not to imply endorsement. Verified 2026-09-05: local file's SHA-1 (132a041dba5ab2d3b21d27085f806b8ae034ba01) matches the current English-Wikipedia file exactly.",
+      "ideology": [
+        "Māori rights",
+        "Tino rangatiratanga",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2004,
+      "leader": "Debbie Ngarewa-Packer & Rawiri Waititi",
+      "leaderTitle": "Co-leaders",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 123,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Te Pāti Māori – Wikipedia (infobox: founded 7 July 2004, ideology, position, co-leaders, seats — currently 4 of 123 after two MPs, Tākuta Ferris and Mariameno Kapa-Kingi, left the parliamentary party in late 2025/2026)",
+          "url": "https://en.wikipedia.org/wiki/Te_P%C4%81ti_M%C4%81ori"
+        },
+        {
+          "title": "54th New Zealand Parliament – Wikipedia (current seat composition table, \"As of November 2025\": Te Pāti Māori 4, Independent 2)",
+          "url": "https://en.wikipedia.org/wiki/54th_New_Zealand_Parliament"
+        },
+        {
+          "title": "Mariameno Kapa-Kingi – Wikipedia (departure from the Te Pāti Māori parliamentary caucus, 11 May 2026, to form a new party for the 2026 election)",
+          "url": "https://en.wikipedia.org/wiki/Mariameno_Kapa-Kingi"
+        }
+      ]
+    }
+  ],
+  "ID": [
+    {
+      "id": "ID-PDIP",
+      "country": "ID",
+      "shortName": "PDI-P",
+      "name": "Partai Demokrasi Indonesia Perjuangan",
+      "nameEn": "Indonesian Democratic Party of Struggle",
+      "logo": "party-logos/id/pdip.svg",
+      "sha256": "f3f761dfa60b9774ff50f70e8cfc2f7f8f280ff8c5bc024fc29577c33ecb189b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PDI_Perjuangan.svg",
+      "ideology": [
+        "Pancasila",
+        "Indonesian nationalism",
+        "Sukarnoism",
+        "Marhaenism",
+        "Social democracy",
+        "Populism",
+        "Progressivism",
+        "Secularism",
+        "Social liberalism",
+        "Economic nationalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1973,
+      "previousNames": [
+        {
+          "name": "Partai Demokrasi Indonesia",
+          "nameEn": "Indonesian Democratic Party",
+          "years": "1973-1999"
+        }
+      ],
+      "leader": "Megawati Soekarnoputri",
+      "leaderTitle": "Ketua Umum",
+      "inPower": false,
+      "seats": 110,
+      "seatsTotal": 580,
+      "chamberName": "Dewan Perwakilan Rakyat",
+      "sources": [
+        {
+          "title": "Indonesian Democratic Party of Struggle - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Indonesian_Democratic_Party_of_Struggle"
+        },
+        {
+          "title": "2024 Indonesian legislative election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "ID-GOLKAR",
+      "country": "ID",
+      "shortName": "Golkar",
+      "name": "Partai Golongan Karya",
+      "nameEn": "Party of the Functional Groups",
+      "logo": "party-logos/id/golkar.png",
+      "sha256": "8121fb18393cf961dedce4f81eb4b425e607d10471a503a00ac6b341938d5961",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Golkar.svg",
+      "ideology": [
+        "Pancasila",
+        "Conservatism",
+        "National conservatism",
+        "Developmentalism",
+        "Pancasila economics",
+        "Economic liberalism",
+        "Indonesian nationalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1964,
+      "previousNames": [
+        {
+          "name": "Sekretariat Bersama Golongan Karya (Sekber Golkar)",
+          "nameEn": "Joint Secretariat of Functional Groups",
+          "years": "1964-1971"
+        }
+      ],
+      "coalitionId": "id-koalisi-indonesia-maju",
+      "leader": "Bahlil Lahadalia",
+      "leaderTitle": "Ketua Umum",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 102,
+      "seatsTotal": 580,
+      "chamberName": "Dewan Perwakilan Rakyat",
+      "sources": [
+        {
+          "title": "Golkar - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Golkar"
+        },
+        {
+          "title": "2024 Indonesian legislative election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "ID-GERINDRA",
+      "country": "ID",
+      "shortName": "Gerindra",
+      "name": "Partai Gerakan Indonesia Raya",
+      "nameEn": "Great Indonesia Movement Party",
+      "logo": "party-logos/id/gerindra.svg",
+      "sha256": "cfd32e248c7f832c6f4af23f2bdf84e10d096e7e975ced034652c62eb005801f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partai_Gerakan_Indonesia_Raya_Logo.svg",
+      "licenceNote": "Used on English Wikipedia under a non-free-logo fair-use rationale (not hosted on Wikimedia Commons); credited by the uploader to the party's own website, partaigerindra.or.id, as a low-resolution reproduction of the party's official golden-eagle-head emblem for identification purposes.",
+      "ideology": [
+        "Pancasila",
+        "Indonesian nationalism",
+        "Anti-communism",
+        "National conservatism",
+        "Right-wing populism",
+        "Protectionism",
+        "National liberalism",
+        "Pancasila economics",
+        "State capitalism",
+        "Ultranationalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2008,
+      "coalitionId": "id-koalisi-indonesia-maju",
+      "leader": "Prabowo Subianto",
+      "leaderTitle": "Ketua Umum",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 86,
+      "seatsTotal": 580,
+      "chamberName": "Dewan Perwakilan Rakyat",
+      "sources": [
+        {
+          "title": "Gerindra Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gerindra_Party"
+        },
+        {
+          "title": "2024 Indonesian legislative election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "ID-PKB",
+      "country": "ID",
+      "shortName": "PKB",
+      "name": "Partai Kebangkitan Bangsa",
+      "nameEn": "National Awakening Party",
+      "logo": "party-logos/id/pkb.png",
+      "sha256": "09385eb1b1039061ce9d7a763adf53c4da5512327c4846ea197e660ad142da4b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PKB_2024.png",
+      "ideology": [
+        "Pancasila",
+        "Islamic democracy",
+        "Pluralism",
+        "Liberalism",
+        "Indonesian nationalism",
+        "Centrism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre; historically centre to centre-left",
+      "founded": 1998,
+      "coalitionId": "id-koalisi-indonesia-maju",
+      "leader": "Muhaimin Iskandar",
+      "leaderTitle": "Ketua Umum",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 68,
+      "seatsTotal": 580,
+      "chamberName": "Dewan Perwakilan Rakyat",
+      "sources": [
+        {
+          "title": "National Awakening Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Awakening_Party"
+        },
+        {
+          "title": "2024 Indonesian legislative election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "ID-NASDEM",
+      "country": "ID",
+      "shortName": "NasDem",
+      "name": "Partai NasDem",
+      "nameEn": "National Democratic Party",
+      "logo": "party-logos/id/nasdem.png",
+      "sha256": "de9ca7560ba8f93095e4a7b9146e712504020405bac74dc0e65e560e42280b30",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Utama_Partai_NasDem.png",
+      "ideology": [
+        "Pancasila",
+        "Indonesian nationalism",
+        "Secularism",
+        "Social democracy",
+        "Social liberalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2011,
+      "coalitionId": "id-koalisi-indonesia-maju",
+      "leader": "Surya Paloh",
+      "leaderTitle": "Ketua Umum",
+      "inPower": true,
+      "seats": 69,
+      "seatsTotal": 580,
+      "chamberName": "Dewan Perwakilan Rakyat",
+      "sources": [
+        {
+          "title": "NasDem Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/NasDem_Party"
+        },
+        {
+          "title": "Advanced Indonesia Coalition - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Advanced_Indonesia_Coalition"
+        },
+        {
+          "title": "2024 Indonesian legislative election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "ID-PKS",
+      "country": "ID",
+      "shortName": "PKS",
+      "name": "Partai Keadilan Sejahtera",
+      "nameEn": "Prosperous Justice Party",
+      "logo": "party-logos/id/pks.svg",
+      "sha256": "98e09bbcc6029c94b9cba0b1c450fac22c0acf82d2563faa123150059084a789",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PKS_logo_2020.svg",
+      "ideology": [
+        "Pancasila (de jure)",
+        "Islamism",
+        "Islamic fundamentalism",
+        "Social conservatism",
+        "Islamic nationalism",
+        "Islamic economics"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing; centre-right to right-wing in the early Reform era",
+      "founded": 1998,
+      "previousNames": [
+        {
+          "name": "Partai Keadilan",
+          "nameEn": "Justice Party",
+          "years": "1998-2003"
+        }
+      ],
+      "coalitionId": "id-koalisi-indonesia-maju",
+      "leader": "Al Muzzammil Yusuf",
+      "leaderTitle": "Presiden",
+      "inPower": true,
+      "seats": 53,
+      "seatsTotal": 580,
+      "chamberName": "Dewan Perwakilan Rakyat",
+      "sources": [
+        {
+          "title": "Prosperous Justice Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Prosperous_Justice_Party"
+        },
+        {
+          "title": "Profil Al Muzzammil Yusuf, Presiden PKS - Kompas",
+          "url": "https://nasional.kompas.com/read/2025/06/04/16302321/profil-al-muzzammil-yusuf-presiden-pks-yang-pernah-jadi-co-capt-timnas-anies"
+        },
+        {
+          "title": "2024 Indonesian legislative election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "ID-PAN",
+      "country": "ID",
+      "shortName": "PAN",
+      "name": "Partai Amanat Nasional",
+      "nameEn": "National Mandate Party",
+      "logo": "party-logos/id/pan.png",
+      "sha256": "77d9ce0e91c990ecd7a13fe74eb6678d9d4deb4434627d51dd3ee58b44efff8f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partai_Amanat_Nasional_2024.png",
+      "ideology": [
+        "Pancasila",
+        "Islamic democracy",
+        "Religious nationalism",
+        "Religious conservatism (faction)"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right, with a right-wing faction",
+      "founded": 1998,
+      "coalitionId": "id-koalisi-indonesia-maju",
+      "leader": "Zulkifli Hasan",
+      "leaderTitle": "Ketua Umum",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 48,
+      "seatsTotal": 580,
+      "chamberName": "Dewan Perwakilan Rakyat",
+      "sources": [
+        {
+          "title": "National Mandate Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Mandate_Party"
+        },
+        {
+          "title": "2024 Indonesian legislative election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "ID-DEMOKRAT",
+      "country": "ID",
+      "shortName": "Demokrat",
+      "name": "Partai Demokrat",
+      "nameEn": "Democratic Party",
+      "logo": "party-logos/id/demokrat.svg",
+      "sha256": "f3123603fa1de57283a925c3455a9d5e533897d7449ef26556283a775057feb9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Democratic_Party_(Indonesia).svg",
+      "ideology": [
+        "Pancasila",
+        "Indonesian nationalism",
+        "Economic liberalism",
+        "Neoliberalism",
+        "Pluralism",
+        "Secularism",
+        "Constitutionalism",
+        "Populism",
+        "Centrism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Social: Centre; Fiscal: Centre-right",
+      "founded": 2001,
+      "coalitionId": "id-koalisi-indonesia-maju",
+      "leader": "Agus Harimurti Yudhoyono",
+      "leaderTitle": "Ketua Umum",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 44,
+      "seatsTotal": 580,
+      "chamberName": "Dewan Perwakilan Rakyat",
+      "sources": [
+        {
+          "title": "Democratic Party (Indonesia) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Indonesia)"
+        },
+        {
+          "title": "2024 Indonesian legislative election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_legislative_election"
         }
       ]
     }
