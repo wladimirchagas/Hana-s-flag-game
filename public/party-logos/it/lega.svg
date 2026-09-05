@@ -1,580 +1,75 @@
-<!DOCTYPE html>
-<html class="client-nojs vector-feature-language-in-header-disabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available skin-thumbsize-clientpref-standard" lang="en" dir="ltr">
-<head>
-<meta charset="UTF-8">
-<title>Redirect by file, user, page, revision, or log ID - Wikimedia Commons</title>
-<script>(function(){var className="client-js vector-feature-language-in-header-disabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available skin-thumbsize-clientpref-standard";var cookie=document.cookie.match(/(?:^|; )commonswikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":true,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"53e99a56-1914-4b26-8277-ca6be7e22a56","wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"Redirect","wgNamespaceNumber":-1,"wgPageName":"Special:Redirect/file/League_-_Salvini_premier.svg","wgTitle":"Redirect/file/League - Salvini premier.svg","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Special:Redirect/file/League_-_Salvini_premier.svg","wgRelevantArticleId":0,"wgTempUserName":null,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgNoticeProject":"commons","wgConfirmEditCaptchaNeededForGenericEdit":false,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgMediaViewerMobileBeta":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":true,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":0,"wgTestKitchenUserExperiments":{"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[]},"upwizPropertyTitles":{"P180":"Main subjects visible in this work"},"upwizPropertyPlaceholders":{"P180":"e.g., Angolan giraffe"},"upwizPropertyCopyLabels":{"P180":"Main subjects"},"wgEditSubmitButtonLabelPublish":true,"wgVisualEditorPageIsDisambiguation":false,"wgULSPosition":"personal","wgULSisCompactLinksEnabled":true,"wgVector2022LanguageInHeader":false,"wgULSisLanguageSelectorEmpty":true,"wgULSLanguageSelectorV2Enabled":true,"wbmiDefaultProperties":["P180"],"wbmiPropertyTitles":{"P180":"Items portrayed in this file"},"wbmiPropertyTypes":{"P180":"wikibase-item"},"wbmiRepoApiUrl":"/w/api.php","wbmiHelpUrls":{"P180":"https://commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Depicts"},"wbmiExternalEntitySearchBaseUri":"https://www.wikidata.org/w/api.php","wbmiSupportedDataTypes":["wikibase-item","string","quantity","time","monolingualtext","external-id","globe-coordinate","url"],"wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"]};
-RLSTATE={"ext.gadget.Long-Image-Names-in-Categories":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.wikimediamessages.styles":"ready","oojs-ui-core.styles":"ready","oojs-ui.styles.indicators":"ready","mediawiki.widgets.styles":"ready","oojs-ui-core.icons":"ready","mediawiki.htmlform.ooui.styles":"ready","mediawiki.htmlform.styles":"ready","mediawiki.codex.messagebox.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.pt":"ready"};RLPAGEMODULES=["mediawiki.htmlform","mediawiki.htmlform.ooui","site","mediawiki.page.ready","skins.vector.js","ext.centralNotice.geoIP","ext.gadget.Slideshow","ext.gadget.ZoomViewer","ext.gadget.CollapsibleTemplates","ext.gadget.fastcci","ext.gadget.Stockphoto","ext.gadget.WatchlistNotice","ext.gadget.AjaxQuickDelete","ext.gadget.WikiMiniAtlas","ext.gadget.LanguageSelect","ext.gadget.PictureOfTheYearEnhancements","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.testKitchen","ext.visualEditor.desktopArticleTarget.init","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.wikimediaEvents.wikibase","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","wikibase.databox.fromWikidata","ext.checkUser.clientHints"];</script>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
-}];});});</script>
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.uls.pt%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.codex.messagebox.styles%7Cmediawiki.htmlform.ooui.styles%7Cmediawiki.htmlform.styles%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles&amp;only=styles&amp;skin=vector-2022">
-<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
-<meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.Long-Image-Names-in-Categories&amp;only=styles&amp;skin=vector-2022">
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
-<meta name="generator" content="MediaWiki 1.47.0-wmf.18">
-<meta name="referrer" content="origin">
-<meta name="referrer" content="origin-when-cross-origin">
-<meta name="robots" content="noindex,nofollow,max-image-preview:standard">
-<meta name="format-detection" content="telephone=no">
-<meta name="viewport" content="width=1120">
-<meta property="og:title" content="Redirect by file, user, page, revision, or log ID - Wikimedia Commons">
-<meta property="og:type" content="website">
-<link rel="apple-touch-icon" href="/static/apple-touch/commons.png">
-<link rel="icon" href="/static/favicon/commons.ico">
-<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikimedia Commons">
-<link rel="EditURI" type="application/rsd+xml" href="//commons.wikimedia.org/w/api.php?action=rsd">
-<link rel="canonical" href="https://commons.wikimedia.org/wiki/Special:Redirect/file/League_-_Salvini_premier.svg">
-<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
-<link rel="alternate" type="application/atom+xml" title="Wikimedia Commons Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
-<link rel="dns-prefetch" href="auth.wikimedia.org">
-</head>
-<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-Redirect page-Special_Redirect_file_League_-_Salvini_premier_svg rootpage-Special_Redirect_file_League_-_Salvini_premier_svg skin-vector-2022 action-view">
-<div id="mw-aria-live-region" class="mw-aria-live-region" aria-live="polite"></div><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
-<div class="vector-header-container">
-	<header class="vector-header mw-header no-font-mode-scale">
-		<div class="vector-header-start">
-			<nav class="vector-main-menu-landmark" aria-label="Site">
-				
-<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
-	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"   >
-	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Main menu</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
-		
-<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
-	data-feature-name="main-menu-pinned"
-	data-pinnable-element-id="vector-main-menu"
-	data-pinned-container-id="vector-main-menu-pinned-container"
-	data-unpinned-container-id="vector-main-menu-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Main menu</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin" aria-label="Move Main menu to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin" aria-label="Hide Main menu">hide</button>
-</div>
-
-	
-<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
-	<div class="vector-menu-heading">
-		Navigate
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-welcome" class="mw-list-item"><a href="/wiki/Commons:Welcome"><span>Welcome</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Commons:Community_portal" title="About the project, what you can do, where to find things"><span>Community portal</span></a></li><li id="n-village-pump" class="mw-list-item"><a href="/wiki/Commons:Village_pump"><span>Village pump</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/Special:MyLanguage/Help:Contents" title="The place to find out"><span>Help center</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-participate" class="vector-menu mw-portlet mw-portlet-participate"  >
-	<div class="vector-menu-heading">
-		Participate
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="n-uploadbtn" class="mw-list-item"><a href="/wiki/Special:UploadWizard"><span>Upload file</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-latestfiles" class="mw-list-item"><a href="/wiki/Special:NewFiles"><span>Latest files</span></a></li><li id="n-randomimage" class="mw-list-item"><a href="/wiki/Special:Random/File" title="Load a random file [x]" accesskey="x"><span>Random file</span></a></li><li id="n-contact" class="mw-list-item"><a href="/wiki/Commons:Contact_us"><span>Contact us</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-</div>
-
-				</div>
-
-	</div>
-</div>
-
-		</nav>
-			
-<a href="/wiki/Main_Page" class="mw-logo">
-	<img class="mw-logo-icon" src="/static/images/icons/commonswiki.svg" alt="" aria-hidden="true" height="50" width="50">
-	<span class="mw-logo-container skin-invert">
-		<img class="mw-logo-wordmark" alt="Wikimedia Commons" src="/static/images/mobile/copyright/commonswiki-wordmark.svg" style="width: 7.1875em; height: 2em;">
-	</span>
-</a>
-
-		</div>
-		<div class="vector-header-end">
-			
-<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box">
-	<a href="/wiki/Special:MediaSearch" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikimedia Commons [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
-
-<span>Search</span>
-	</a>
-	<div class="vector-typeahead-search-container">
-		<div class="cdx-typeahead-search">
-			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
-				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
-					<div class="cdx-text-input cdx-text-input--has-start-icon">
-						<input
-							class="cdx-text-input__input mw-searchInput" autocomplete="off"
-							 type="search" name="search" placeholder="Search Wikimedia Commons" aria-label="Search Wikimedia Commons" autocapitalize="none" spellcheck="false" title="Search Wikimedia Commons [f]" accesskey="f" id="searchInput"
-							>
-						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
-					</div>
-					<input type="hidden" name="title" value="Special:MediaSearch">
-				</div>
-				<button class="cdx-button cdx-search-input__end-button">Search</button>
-			</form>
-		</div>
-	</div>
-</div>
-
-			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
-	<div class="vector-user-links-main">
-	
-<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="ca-uls" class="mw-list-item active vector-menu-item--collapsible"><a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet uls-trigger" id=""><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language cdx-button__icon"></span>
-
-<span>English</span>
-</a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-	<nav class="vector-appearance-landmark" aria-label="Appearance">
-		
-<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
-	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"   >
-	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Appearance</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
-				
-			</div>
-		
-	</div>
-</div>
-
-	</nav>
-	
-<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="pt-sitesupport-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=commons.wikimedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span>Donate</span></a>
-</li>
-<li id="pt-createaccount-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3ARedirect%2Ffile%2FLeague+-+Salvini+premier.svg" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
-</li>
-<li id="pt-login-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3ARedirect%2Ffile%2FLeague+-+Salvini+premier.svg" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o" class=""><span>Log in</span></a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	</div>
-	
-<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out vector-user-links-dropdown--collapsible"  title="More options" >
-	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"   >
-	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Personal tools</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-		
-<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal"  title="User menu" >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="pt-sitesupport" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=commons.wikimedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart cdx-button__icon"></span>
-
-<span>Donate</span></a>
-</li>
-<li id="pt-createaccount" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3ARedirect%2Ffile%2FLeague+-+Salvini+premier.svg" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
-
-<span>Create account</span></a>
-</li>
-<li id="pt-login" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3ARedirect%2Ffile%2FLeague+-+Salvini+premier.svg" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o" class=""><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn cdx-button__icon"></span>
-
-<span>Log in</span></a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-	</div>
-</div>
-
-</nav>
-
-		</div>
-	</header>
-</div>
-<div class="mw-page-container">
-	<div class="mw-page-container-inner">
-		<div class="vector-sitenotice-container">
-			<div id="siteNotice"><!-- CentralNotice --></div>
-		</div>
-		<div class="vector-column-start">
-			<div class="vector-main-menu-container">
-		<div id="mw-navigation">
-			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
-				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
-				
-				</div>
-		</nav>
-		</div>
-	</div>
-</div>
-		<div class="mw-content-container">
-			<main id="content" class="mw-body">
-				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
-					<h1 id="firstHeading" class="firstHeading mw-first-heading">Redirect by file, user, page, revision, or log ID</h1>
-		<div class="mw-indicators">
-	</div>
-</header>
-				<div class="vector-page-toolbar">
-					<div class="vector-page-toolbar-container">
-						<div id="left-navigation">
-							<nav aria-label="Namespaces">
-								
-<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-								
-<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
-	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"    >
-	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-					
-<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-				
-	</div>
-</div>
-
-							</nav>
-						</div>
-						<div id="right-navigation" class="vector-collapsible">
-							<nav aria-label="Views">
-			    
-<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-			</nav>
-
-							<nav class="vector-page-tools-landmark" aria-label="Page tools">
-								
-<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
-	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"   >
-	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-verticalEllipsis mw-ui-icon-wikimedia-verticalEllipsis cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Tools</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
-						
-<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
-	data-feature-name="page-tools-pinned"
-	data-pinnable-element-id="vector-page-tools"
-	data-pinned-container-id="vector-page-tools-pinned-container"
-	data-unpinned-container-id="vector-page-tools-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Tools</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin" aria-label="Move Tools to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin" aria-label="Hide Tools">hide</button>
-</div>
-
-	
-<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet"  >
-	<div class="vector-menu-heading">
-		Actions
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
-	<div class="vector-menu-heading">
-		General
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FLeague_-_Salvini_premier.svg"><span>Get shortened URL</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet"  >
-	<div class="vector-menu-heading">
-		In other projects
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-</div>
-
-									</div>
-				
-	</div>
-</div>
-
-							</nav>
-						</div>
-					</div>
-				</div>
-				<div class="vector-column-end no-font-mode-scale">
-					<div class="vector-sticky-pinned-container">
-						<nav class="vector-page-tools-landmark" aria-label="Page tools">
-							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
-				
-							</div>
-		</nav>
-						<nav class="vector-appearance-landmark" aria-label="Appearance">
-							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
-				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
-	data-feature-name="appearance-pinned"
-	data-pinnable-element-id="vector-appearance"
-	data-pinned-container-id="vector-appearance-pinned-container"
-	data-unpinned-container-id="vector-appearance-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Appearance</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin" aria-label="Move Appearance to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin" aria-label="Hide Appearance">hide</button>
-</div>
-
-
-</div>
-
-							</div>
-		</nav>
-					</div>
-				</div>
-				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
-					<div class="vector-body-before-content">
-					
-						
-					</div>
-					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
-					
-					
-					<div id="mw-content-text" class="mw-body-content"><div class="mw-specialpage-summary">
-<p>This special page redirects to a file (given the filename), a page (given a revision ID or page ID), a user page (given a numeric user ID), or a log entry (given the log ID). Usage: <a href="/wiki/Special:Redirect/file/Example.jpg" title="Special:Redirect/file/Example.jpg">Special:Redirect/file/Example.jpg</a>, <a href="/wiki/Special:Redirect/page/64308" title="Special:Redirect/page/64308">Special:Redirect/page/64308</a>, <a href="/wiki/Special:Redirect/revision/328429" title="Special:Redirect/revision/328429">Special:Redirect/revision/328429</a>, <a href="/wiki/Special:Redirect/user/101" title="Special:Redirect/user/101">Special:Redirect/user/101</a>, or <a href="/wiki/Special:Redirect/logid/186" title="Special:Redirect/logid/186">Special:Redirect/logid/186</a>.
-</p>
-</div><div class='mw-htmlform-ooui-wrapper oo-ui-layout oo-ui-panelLayout'><form action='/wiki/Special:Redirect/file/League_-_Salvini_premier.svg' method='get' enctype='application/x-www-form-urlencoded' class='mw-htmlform mw-htmlform-ooui oo-ui-layout oo-ui-formLayout'><div class='mw-htmlform-ooui-header mw-htmlform-ooui-header-errors oo-ui-layout oo-ui-fieldLayout oo-ui-fieldLayout-align-top'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label id='ooui-php-1' class='oo-ui-labelElement-label'></label></span><div class='oo-ui-fieldLayout-field'><div aria-labelledby='ooui-php-1' class='oo-ui-widget oo-ui-widget-enabled'></div></div></div><div class='oo-ui-fieldLayout-messages'><div role='alert' class='oo-ui-widget oo-ui-widget-enabled oo-ui-labelElement oo-ui-flaggedElement-error oo-ui-iconElement oo-ui-messageWidget'><span class='oo-ui-iconElement-icon oo-ui-icon-error oo-ui-image-error'></span><span class='oo-ui-labelElement-label'>Value not found</span></div></div></div><div id='ooui-php-4' class='mw-htmlform-field-HTMLSelectField mw-htmlform-autoinfuse oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-top' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-input-wptype"},"align":"top","helpInline":true,"$overlay":true,"label":{"html":"Lookup:"},"classes":["mw-htmlform-field-HTMLSelectField","mw-htmlform-autoinfuse"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label for='ooui-php-2' class='oo-ui-labelElement-label'>Lookup:</label></span><div class='oo-ui-fieldLayout-field'><div id='mw-input-wptype' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-dropdownInputWidget oo-ui-dropdownInputWidget-php' data-ooui='{"_":"OO.ui.DropdownInputWidget","options":[{"data":"user","label":"User ID"},{"data":"page","label":"Page ID"},{"data":"revision","label":"Page revision"},{"data":"file","label":"Filename"},{"data":"logid","label":"Log ID"}],"$overlay":true,"name":"wptype","value":"file","inputId":"ooui-php-2","required":false}'><select tabindex='0' name='wptype' id='ooui-php-2' class='oo-ui-inputWidget-input'><option value='user'>User ID</option><option value='page'>Page ID</option><option value='revision'>Page revision</option><option value='file' selected='selected'>Filename</option><option value='logid'>Log ID</option></select><span class='oo-ui-widget oo-ui-widget-enabled oo-ui-indicatorElement-indicator oo-ui-indicator-down oo-ui-indicatorElement oo-ui-labelElement-invisible oo-ui-indicatorWidget'></span></div></div></div></div><div id='ooui-php-5' class='mw-htmlform-field-HTMLTextField oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-top' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-input-wpvalue"},"align":"top","helpInline":true,"$overlay":true,"label":{"html":"Value:"},"classes":["mw-htmlform-field-HTMLTextField"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label for='ooui-php-3' class='oo-ui-labelElement-label'>Value:</label></span><div class='oo-ui-fieldLayout-field'><div id='mw-input-wpvalue' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-indicatorElement oo-ui-textInputWidget oo-ui-textInputWidget-type-text oo-ui-textInputWidget-php' data-ooui='{"_":"OO.ui.TextInputWidget","name":"wpvalue","value":"League_-_Salvini_premier.svg","inputId":"ooui-php-3","indicator":"required","required":true}'><input type='text' tabindex='0' name='wpvalue' value='League_-_Salvini_premier.svg' required='' id='ooui-php-3' class='oo-ui-inputWidget-input' /><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon'></span><span class='oo-ui-indicatorElement-indicator oo-ui-indicator-required'></span></div></div></div></div><div class="mw-htmlform-submit-buttons">
-<span id='ooui-php-6' class='mw-htmlform-submit oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-buttonElement-size-medium oo-ui-labelElement oo-ui-flaggedElement-primary oo-ui-flaggedElement-progressive oo-ui-buttonInputWidget' data-ooui='{"_":"OO.ui.ButtonInputWidget","type":"submit","value":"Go","label":"Go","flags":["primary","progressive"],"classes":["mw-htmlform-submit"]}'><button type='submit' tabindex='0' value='Go' class='oo-ui-inputWidget-input oo-ui-buttonElement-button'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon oo-ui-image-invert'></span><span class='oo-ui-labelElement-label'>Go</span><span class='oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator oo-ui-image-invert'></span></button></span></div>
-</form></div><noscript><img src="https://commons.wikimedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
-<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://commons.wikimedia.org/wiki/Special:Redirect/file/League_-_Salvini_premier.svg">https://commons.wikimedia.org/wiki/Special:Redirect/file/League_-_Salvini_premier.svg</a>"</div></div>
-					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw-interface=""></div>
-				</div>
-			</main>
-			
-		</div>
-		<div class="mw-footer-container">
-			<footer id="footer" class="mw-footer" >
-				<ul id="footer-info" class="mw-portlet mw-portlet-footer-info emptyPortlet">
-</ul>
-
-				<ul id="footer-places" class="mw-portlet mw-portlet-footer-places">
-	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
-	<li id="footer-places-about"><a href="/wiki/Commons:Welcome">About Wikimedia Commons</a></li>
-	<li id="footer-places-disclaimers"><a href="/wiki/Commons:General_disclaimer">Disclaimers</a></li>
-	<li id="footer-places-legal-safety-contacts"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information">Legal &amp; safety contacts</a></li>
-	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
-	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
-	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/commons.wikimedia.org">Statistics</a></li>
-	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
-	<li id="footer-places-mobileview"><a href="//commons.wikimedia.org/w/index.php?title=Special:Redirect/file/League_-_Salvini_premier.svg&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
-</ul>
-
-				<ul id="footer-icons" class="mw-portlet mw-portlet-footer-icons noprint">
-	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
-	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
-</ul>
-
-			</footer>
-		</div>
-	</div> 
-</div> 
-<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
-	<div id="vector-sticky-header" class="vector-sticky-header">
-		<div class="vector-sticky-header-start">
-			<div class="vector-sticky-header-icon-start vector-button-flush-left" aria-hidden="true">
-				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
-
-<span>Search</span>
-			</button>
-		</div>
-			
-		<div role="search" class="vector-search-box-vue vector-search-box">
-			<div class="vector-typeahead-search-container">
-				<div class="cdx-typeahead-search">
-					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
-						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
-							<div class="cdx-text-input cdx-text-input--has-start-icon">
-								<input
-									class="cdx-text-input__input mw-searchInput" autocomplete="off"
-									
-									type="search" name="search" placeholder="Search Wikimedia Commons">
-								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
-							</div>
-							<input type="hidden" name="title" value="Special:MediaSearch">
-						</div>
-						<button class="cdx-button cdx-search-input__end-button">Search</button>
-					</form>
-				</div>
-			</div>
-		</div>
-		<div class="vector-sticky-header-context-bar">
-				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" >Redirect by file, user, page, revision, or log ID</div>
-			</div>
-		</div>
-		<div class="vector-sticky-header-end" aria-hidden="true">
-			<div class="vector-sticky-header-icons">
-				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock cdx-button__icon"></span>
-
-<span></span>
-			</a>
-		</div>
-			<div class="vector-sticky-header-buttons">
-				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive cdx-button__icon"></span>
-
-<span>Add topic</span>
-			</a>
-		</div>
-			<div class="vector-sticky-header-icon-end">
-				<div class="vector-user-links">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
-	<ul>
-		
-	</ul>
-</div>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-79449b7dcf-6zbp2","wgBackendResponseTime":74});});</script>
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300"
+   height="300"
+   viewBox="0 0 260.039 260.14999">
+  <g
+     transform="translate(604.02911,202.62347)">
+    <ellipse
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.26621056;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4498"
+       cx="-474.00961"
+       cy="-72.54847"
+       rx="130.0195"
+       ry="130.075" />
+    <path
+       style="fill:#203087;fill-opacity:1;stroke-width:0.35774648"
+       d="m -484.68143,57.18342 c -25.99616,-2.13637 -50.4172,-11.956423 -71.40746,-28.713993 -4.74868,-3.79111 -14.63977,-13.68631 -18.73499,-18.7427806 -16.10692,-19.8876494 -25.3453,-41.9798094 -28.53141,-68.2284994 -1.22323,-10.077557 -0.74304,-25.455315 1.13386,-36.311272 3.17556,-18.367375 10.64556,-36.647955 21.19697,-51.873245 5.93409,-8.56265 15.43014,-19.01692 23.13786,-25.47263 20.28198,-16.98746 43.94489,-26.99325 71.00037,-30.02229 5.21255,-0.58358 20.75898,-0.5911 25.93662,-0.0125 30.90643,3.45352 57.36103,16.06074 78.90177,37.60148 21.17328,21.17328 33.84371,47.34636 37.41711,77.291905 0.75904,6.360839 0.86802,21.863469 0.19491,27.725352 -1.96967,17.153199 -6.24658,31.71114 -13.50543,45.97042 -4.20399,8.2583094 -8.56502,14.9878494 -14.90765,23.0040894 -3.62319,4.5792406 -14.70455,15.6677606 -19.34301,19.3555406 -21.12244,16.79321 -45.35283,26.382213 -71.93993,28.469723 -5.33087,0.41855 -15.19543,0.39875 -20.54959,-0.0413 z m 21.5522,-83.524873 c 0.88392,-0.3392 1.35443,-2.80984 1.45778,-7.65477 0.0525,-2.45951 0.35414,-5.614601 0.6704,-7.011311 0.45723,-2.01929 0.55247,-4.17376 0.46496,-10.51767 -0.10752,-7.795679 -0.12859,-7.993199 -0.92106,-8.6349 -0.64417,-0.521623 -0.96194,-0.575944 -1.5447,-0.264064 -0.69759,0.373341 -0.72203,0.598732 -0.49691,4.582154 0.19356,3.42501 0.12979,4.4785 -0.34946,5.77328 -0.47149,1.27379 -0.57272,2.79459 -0.51723,7.76993 l 0.069,6.186161 -1.69988,1.56076 c -1.60702,1.4755 -1.70842,1.67878 -1.85616,3.72129 -0.12857,1.77745 -0.0169,2.38609 0.62995,3.43266 0.67984,1.10001 0.97192,1.27213 2.15876,1.27213 0.75491,0 1.62545,-0.097 1.93455,-0.21565 z m -5.3011,-3.98787 c -0.007,-1.13137 0.28104,-3.58641 0.64024,-5.45563 0.55204,-2.872771 0.61524,-4.367221 0.40852,-9.659161 -0.36044,-9.22707 -0.36392,-10.90485 -0.0309,-14.880504 0.29743,-3.55033 0.28824,-3.621517 -0.54269,-4.203521 -1.24777,-0.873967 -4.62633,-0.786484 -6.49778,0.168255 -0.81965,0.418156 -3.26827,2.485687 -5.44138,4.594517 -2.38021,2.309803 -5.37344,4.764573 -7.52857,6.174243 -4.50327,2.94557 -9.46153,7.59467 -12.71219,11.91957 -2.83697,3.774481 -4.66831,5.480901 -7.27763,6.781181 -3.28833,1.63864 -4.51879,1.02273 -4.51382,-2.25942 0.005,-3.359201 1.70988,-5.948121 5.25093,-7.974101 1.50034,-0.85841 2.52614,-1.88577 4.38081,-4.38744 2.47769,-3.34205 4.08316,-4.85347 8.36549,-7.87543 3.18147,-2.245109 4.74387,-4.389367 5.39594,-7.405467 0.10989,-0.508297 0.82523,-1.635198 1.58965,-2.504225 1.44312,-1.640612 4.63905,-9.074931 5.41288,-12.591346 0.20696,-0.940437 1.08361,-3.033254 1.94811,-4.650704 l 1.57183,-2.940816 0.0181,-10.911269 c 0.019,-11.440549 -0.24607,-14.627739 -1.78486,-21.464789 -0.4207,-1.86922 -1.239,-4.51501 -1.81844,-5.87953 -0.70838,-1.66816 -1.19955,-3.68322 -1.49925,-6.15083 -0.36425,-2.99902 -0.62891,-3.93422 -1.4478,-5.11587 -0.8271,-1.19351 -1.05819,-2.02473 -1.32345,-4.76044 -0.17677,-1.82295 -0.38439,-3.49337 -0.46138,-3.71203 -0.0886,-0.25178 -0.83986,-0.34069 -2.04842,-0.24246 l -1.90843,0.15512 2.07641,-1.90402 2.07641,-1.90403 -1.82572,-7.69154 c -2.12532,-8.95371 -5.52087,-24.60926 -6.27572,-28.9349 -0.28777,-1.64904 -0.51594,-3.82235 -0.50705,-4.82957 l 0.0162,-1.83131 0.86938,1.60986 c 1.55565,2.88066 9.15495,27.06933 11.80121,37.56338 0.75889,3.00944 1.2113,3.66521 3.64208,5.27916 l 2.01442,1.3375 -1.232,0.20026 c -0.6776,0.11014 -1.42777,0.32124 -1.66704,0.46912 -0.59499,0.36773 -0.54722,1.73029 0.0902,2.57305 0.33857,0.44762 0.52929,1.5567 0.53662,3.12051 0.0134,2.86896 0.75009,5.24844 3.40207,10.98942 1.04526,2.26274 2.01085,4.59704 2.14578,5.18732 0.42768,1.8711 1.70274,4.50332 2.11539,4.36698 0.21859,-0.0722 0.49567,-1.08434 0.61574,-2.24915 0.42653,-4.13806 3.8219,-9.45163 6.03957,-9.45163 2.3796,0 4.55742,3.57202 5.9353,9.73502 0.94438,4.22404 0.83919,6.00582 -0.35458,6.00582 -0.28676,0 -0.62163,0.31589 -0.74417,0.70198 -0.37327,1.17607 1.19725,3.59098 2.33537,3.59098 0.66081,0 1.49892,1.06489 1.94294,2.46866 0.1494,0.47234 1.27343,2.34667 2.49783,4.16519 1.22441,1.81851 2.59202,4.28459 3.03914,5.480169 1.4394,3.848926 2.04658,3.792477 5.99422,-0.557279 1.53397,-1.69021 3.51346,-3.62762 4.39889,-4.30535 l 1.60986,-1.23223 1.69604,1.84141 c 2.01203,2.18449 4.18005,5.735269 5.71863,9.365972 0.84845,2.002149 1.15271,3.33248 1.27703,5.583546 0.20044,3.629356 -0.61622,6.220117 -4.08667,12.964561 -5.25806,10.218452 -12.366,17.992397 -23.55105,25.757747 -2.21746,1.5395 -2.33504,1.69586 -2.6902,3.57746 -0.20426,1.08219 -0.61312,3.175 -0.90857,4.65071 -0.29546,1.4757 -0.60487,4.775911 -0.6876,7.333801 -0.0827,2.55789 -0.26084,5.01292 -0.39581,5.45564 l -0.24539,0.80493 h 53.68394 53.68394 l 1.64407,-5.03047 c 9.44567,-28.90155 8.0223,-61.243632 -3.92612,-89.208737 -12.15512,-28.44892 -34.50802,-51.84661 -62.25171,-65.16142 -12.79344,-6.13985 -26.52263,-10.10803 -40.96198,-11.83934 -7.14397,-0.85658 -21.49047,-0.85557 -28.61972,0.002 -16.66327,2.00444 -32.72911,7.09369 -46.68591,14.7889 -30.10147,16.59672 -52.03625,43.8732 -61.51274,76.4927 -7.11674,24.496856 -6.72452,50.832646 1.11679,74.988957 l 1.61245,4.96739 h 62.68457 62.68457 l -0.0128,-2.05705 z m 61.21581,-78.834957 -3.8621,-4.25847 2.66694,-4.73674 c 1.46682,-2.6052 3.02911,-5.48803 3.47175,-6.40628 l 0.80481,-1.66955 -0.99053,-1.19242 c -1.68164,-2.02441 -9.57374,-10.67271 -9.7395,-10.67271 -0.33561,0 -6.55357,2.64586 -9.86847,4.19922 -1.92053,0.89996 -3.53039,1.56694 -3.57746,1.48218 -0.0471,-0.0848 -1.02116,-1.13069 -2.16463,-2.32429 l -2.07903,-2.17019 4.941,-1.71745 c 8.10042,-2.81564 25.0918,-8.95203 34.35569,-12.40746 l 8.66538,-3.23219 1.73153,1.88311 1.73152,1.8831 -8.63323,17.20269 c -4.74827,9.46148 -9.7253,19.69797 -11.06005,22.74776 -1.33475,3.04979 -2.45038,5.56827 -2.47917,5.59661 -0.0288,0.0283 -1.7903,-1.86476 -3.91445,-4.20692 z m 9.17569,-28.60523 c 2.13543,-4.1423 3.80882,-7.60524 3.71864,-7.69542 -0.19646,-0.19646 -6.34066,1.98681 -12.16008,4.32095 l -4.20108,1.68503 0.80249,1.00616 c 1.8817,2.35926 7.2714,8.16781 7.59968,8.19026 0.19676,0.0134 2.10492,-3.36468 4.24035,-7.50698 z m -146.62346,29.87081 c -6.63636,-5.39289 -22.72085,-17.21366 -30.14036,-22.15069 l -4.74035,-3.1543 1.24128,-1.46458 c 0.6827,-0.80552 2.14976,-2.79741 3.26013,-4.42643 1.3527,-1.98454 2.15314,-2.86032 2.42584,-2.65417 0.22384,0.16923 2.01684,1.59213 3.98445,3.16201 8.30581,6.6269 29.04621,21.70374 29.48425,21.43302 0.4081,-0.25222 4.84718,-6.78194 6.8223,-10.03534 0.83617,-1.37733 1.58344,-2.57298 1.66061,-2.65702 0.0772,-0.084 0.58133,0.25734 1.12037,0.75862 0.53904,0.50127 1.46303,1.2055 2.05331,1.56494 0.59028,0.35944 1.12847,0.69041 1.19599,0.73548 0.0675,0.0451 -1.95318,2.87081 -4.49042,6.27941 -2.53723,3.40859 -6.03288,8.16952 -7.7681,10.57984 -1.73522,2.41031 -3.17573,4.37621 -3.20113,4.36865 -0.0254,-0.007 -1.33408,-1.0603 -2.90817,-2.33944 z m 24.32506,-28.50245 c -2.19969,-5.07767 -13.67764,-28.07251 -16.74098,-33.53874 -1.26807,-2.26275 -2.20535,-4.22052 -2.08286,-4.35062 0.1225,-0.1301 3.28146,-1.66987 7.01991,-3.42173 3.73845,-1.75186 8.88219,-4.31749 11.43053,-5.70141 l 4.63334,-2.51623 1.27109,2.53936 1.27108,2.53936 -5.54668,2.35827 c -3.05068,1.29705 -6.22538,2.70615 -7.0549,3.13133 l -1.50822,0.77306 1.55781,3.30811 c 3.94432,8.376 4.87212,10.28416 5.00044,10.28416 0.0758,0 3.17352,-1.66168 6.88389,-3.69261 l 6.74613,-3.69262 0.44176,1.22684 c 0.24297,0.67476 0.78454,1.78145 1.20349,2.45932 0.41894,0.67787 0.7031,1.28774 0.63147,1.35527 -0.0716,0.0675 -2.22306,1.04498 -4.78095,2.17211 -4.13526,1.8222 -8.73245,4.00269 -9.0634,4.29886 -0.14613,0.13076 6.88874,14.05573 7.5752,14.99452 0.46697,0.63862 0.63506,0.59031 3.67189,-1.05544 1.75038,-0.94858 4.76681,-2.67692 6.70319,-3.84075 1.93637,-1.16383 3.54623,-2.06368 3.57746,-1.99965 0.0312,0.064 0.57578,1.15361 1.21011,2.42131 0.63432,1.26769 1.11728,2.3365 1.07324,2.37512 -0.15145,0.13282 -23.15047,11.59744 -23.26546,11.59744 -0.0633,0 -0.89965,-1.81109 -1.85858,-4.02464 z m 66.40698,-6.02099 c -14.66435,-1.90049 -23.77377,-8.65367 -26.01988,-19.28958 -0.67718,-3.20661 -0.49481,-6.7525 0.56118,-10.91127 2.30034,-9.05933 8.28502,-15.3004 17.02448,-17.75384 2.35203,-0.66028 3.74597,-0.79831 8.03317,-0.79541 4.42492,0.003 5.7657,0.14592 9.12254,0.9725 2.16436,0.53295 5.2231,1.60304 6.79718,2.37799 3.01325,1.48347 6.40015,3.79832 6.17183,4.21828 -0.0742,0.13645 -0.76369,1.57622 -1.53223,3.1995 -0.76854,1.62327 -1.57383,2.95141 -1.78954,2.95141 -0.2157,0 -0.6451,-0.53037 -0.95422,-1.17859 -1.44142,-3.0227 -6.12035,-6.78828 -9.40852,-7.57194 -6.81126,-1.62331 -12.06149,-0.21642 -16.68733,4.47167 -4.07018,4.12495 -6.29408,9.59554 -6.64716,16.35135 -0.34053,6.51584 1.15584,10.96911 4.87911,14.52051 2.42008,2.30836 4.20072,3.27338 7.41586,4.01902 2.53272,0.58738 7.89954,0.84803 8.58534,0.41696 0.46227,-0.29056 1.66993,-6.41837 2.39737,-12.16462 0.26824,-2.1189 0.55196,-3.91679 0.63049,-3.99532 0.0785,-0.0785 1.02684,0.0865 2.10736,0.36683 1.08053,0.28028 3.29846,0.70246 4.92874,0.93818 1.99339,0.28821 2.91121,0.56655 2.80248,0.84989 -0.36582,0.95332 -2.01025,8.86968 -2.75205,13.24852 l -0.79512,4.69359 -2.3593,0.22288 c -3.11599,0.29437 -9.65674,0.2115 -12.51178,-0.15851 z m -47.72779,101.897046 c 0.4048,-0.44271 1.01876,-1.36838 1.36437,-2.05704 0.80295,-1.60003 7.06675,-7.74923 9.61991,-9.44392 3.01914,-2.00399 4.37231,-4.07674 3.33721,-5.11183 -1.7617,-1.761709 -9.69915,3.92926 -13.55684,9.71993 -1.35532,2.03443 -1.5259,2.16254 -3.10433,2.33159 -1.38246,0.14806 -1.68953,0.31474 -1.78239,0.96752 -0.0617,0.43376 0.25775,1.31918 0.70987,1.96761 1.93443,2.77428 2.23249,2.91632 3.4122,1.62614 z m 44.97175,-11.80564 c 0.28792,-0.44271 0.63017,-1.60986 0.76056,-2.59366 0.20556,-1.55098 0.38672,-1.86005 1.36293,-2.32535 l 1.12587,-0.53662 -0.0744,-2.877401 c -0.17182,-6.642558 -2.62105,-8.033587 -3.71599,-2.110482 -0.21468,1.161313 -0.61681,2.549441 -0.89362,3.084733 -0.51906,1.003761 -0.73462,7.45539 -0.26479,7.92521 0.46614,0.46615 1.18342,0.22708 1.69947,-0.56643 z m -26.94548,-5.90517 c 0.51102,-0.343039 1.83915,-1.611133 2.95141,-2.817994 1.46255,-1.586931 2.0223,-2.473946 2.0223,-3.204632 0,-1.446112 2.28201,-3.721762 3.73951,-3.729085 1.62279,-0.0082 2.06278,-0.436877 1.93776,-1.888101 -0.0715,-0.829635 0.10509,-1.513224 0.505,-1.955124 0.75466,-0.833889 0.77501,-1.29702 0.0822,-1.871972 -0.29297,-0.24315 -0.46745,-0.547621 -0.38774,-0.676606 0.0797,-0.128986 -0.15807,-0.875431 -0.52842,-1.658764 -0.87173,-1.843807 -0.86053,-2.277968 0.0847,-3.284087 0.97321,-1.035937 0.58257,-1.519729 -1.44693,-1.791938 -1.0301,-0.138165 -1.73526,-0.02082 -2.36867,0.394222 -0.8706,0.570445 -0.90339,0.7304 -0.94424,4.60736 -0.0233,2.20902 -0.14555,4.49936 -0.27171,5.089641 -0.21087,0.98659 -0.38129,1.091814 -2.11083,1.303289 -1.0348,0.126524 -2.11717,0.425675 -2.40527,0.664775 -0.82498,0.684673 -1.2474,2.776714 -1.24956,6.188435 -10e-4,2.118693 -0.18046,3.493172 -0.5478,4.203522 -0.62418,1.207029 -0.38547,1.315679 0.93829,0.427059 z m 23.07029,-3.77923 c 0.0217,-0.232063 0.064,-0.771799 0.094,-1.199414 0.03,-0.427617 0.45696,-1.255786 0.94886,-1.840376 0.93771,-1.114416 1.18738,-3.004216 0.52851,-4.000454 -0.30081,-0.454828 -0.46343,-0.400304 -1.0669,0.357747 -0.72661,0.912736 -1.78697,3.913199 -1.78697,5.05655 0,1.478702 1.15873,2.94773 1.2825,1.625947 z m 11.368,-13.300807 c -0.15528,-0.404665 0.0622,-0.53662 0.88448,-0.53662 1.41688,0 1.79954,-0.658093 0.81463,-1.401007 -0.56249,-0.424291 -0.75428,-0.907224 -0.69085,-1.739646 0.0832,-1.092214 0.16312,-1.152559 1.53213,-1.157188 0.79438,-0.0029 1.77621,-0.09402 2.18184,-0.202968 0.60008,-0.161172 0.80883,0.03431 1.12025,1.048999 0.43171,1.406645 0.0929,2.017211 -1.12438,2.026301 -0.90505,0.0068 -1.87326,0.58376 -1.53954,0.917477 0.13551,0.135503 0.83203,0.310906 1.54783,0.389786 0.7158,0.07888 1.4798,0.178004 1.69778,0.220268 0.21798,0.04227 0.56114,-0.285367 0.76257,-0.728079 0.20143,-0.442711 0.48904,-0.804929 0.63915,-0.804929 0.1501,0 0.27291,-0.482958 0.27291,-1.07324 0,-1.240232 0.31682,-1.331883 1.44529,-0.418105 0.62629,0.507141 0.75492,0.870809 0.56943,1.609859 -0.14326,0.570803 -0.48863,0.956929 -0.85886,0.960202 -0.34058,0.0029 -0.86072,0.163999 -1.15586,0.357747 -0.47595,0.312441 -0.47616,0.391113 -0.002,0.695828 0.29413,0.188958 1.04995,0.324193 1.6796,0.300521 0.87322,-0.03284 1.23587,-0.262861 1.52862,-0.969615 0.21109,-0.509617 0.36962,-1.00707 0.3523,-1.105451 -0.0173,-0.09838 0.13681,-0.621584 0.34253,-1.162676 0.25404,-0.668181 0.25625,-0.983803 0.007,-0.983803 -0.20193,0 -0.60041,-0.558281 -0.88551,-1.240621 -0.63083,-1.509784 -0.65707,-1.903155 -0.0891,-1.335153 0.23611,0.236112 0.76737,0.429295 1.18056,0.429295 1.16378,0 1.60986,-0.707872 1.60986,-2.55466 0,-2.314026 0.75488,-2.639897 1.74777,-0.754495 0.55149,1.047239 1.02477,1.026686 1.02477,-0.0445 0,-0.617671 -0.33979,-1.01146 -1.24535,-1.443293 -1.6829,-0.802489 -2.24275,-0.305719 -2.24275,1.990012 0,2.275951 -0.78919,2.696568 -2.11909,1.129398 -0.50696,-0.597419 -1.56569,-1.295597 -2.35274,-1.551511 -0.85854,-0.27916 -1.21632,-0.534931 -0.89436,-0.639368 0.29514,-0.09574 0.61723,-0.270674 0.71576,-0.388741 0.60954,-0.730418 2.64204,-1.421277 3.61116,-1.227454 0.81406,0.162811 1.3733,0.006 2.22534,-0.623924 1.55879,-1.152466 3.10753,-2.551981 3.10387,-2.804822 -0.002,-0.115044 -0.89078,-0.245178 -1.97581,-0.28918 -1.08504,-0.044 -3.6192,-0.486543 -5.63149,-0.983424 -4.54413,-1.122054 -6.20601,-1.156459 -7.27666,-0.150636 l -0.8021,0.753539 -0.76992,-0.717293 c -1.04995,-0.978168 -2.36715,-1.176867 -3.13058,-0.472254 -0.92035,0.849452 -2.20222,4.164248 -1.83466,4.74427 0.16843,0.265798 0.30871,0.92598 0.31172,1.467072 0.003,0.541091 0.20671,0.996513 0.45266,1.012047 0.35537,0.02243 0.35492,0.06544 -0.002,0.209428 -0.24718,0.09965 -0.36769,0.313407 -0.26781,0.475012 0.0999,0.161605 -0.1406,0.209572 -0.53439,0.106594 -0.39388,-0.102981 -0.71607,-0.396522 -0.71607,-0.652318 0,-0.255796 -0.1782,-0.524482 -0.396,-0.597083 -0.45386,-0.151287 -0.562,-6.297322 -0.15632,-8.884652 0.18943,-1.208149 0.0712,-2.166316 -0.4625,-3.747096 -0.39436,-1.16813 -0.63983,-2.248769 -0.54548,-2.401429 0.0943,-0.15265 0.72549,-0.27755 1.40254,-0.27755 1.13286,0 1.231,-0.0867 1.231,-1.08749 0,-0.59812 -0.36222,-1.73544 -0.80493,-2.52738 -0.44272,-0.79195 -1.36838,-2.51613 -2.05705,-3.83153 -0.97647,-1.86513 -1.49609,-2.47049 -2.36042,-2.74988 -1.69665,-0.54844 -2.23404,-1.16887 -2.48982,-2.87458 -0.12904,-0.86046 -0.4484,-1.85346 -0.7097,-2.20666 -0.4356,-0.58883 -0.52403,-0.52591 -1.064,0.75719 -0.6507,1.54618 -0.48532,3.42475 0.37743,4.28751 0.85066,0.85065 0.604,0.95867 -0.73312,0.32104 -1.85698,-0.88553 -2.2578,-0.21542 -0.89607,1.4981 0.59827,0.75282 1.01131,1.44522 0.91787,1.53866 -0.31805,0.31805 -3.71476,-2.10262 -5.17816,-3.69022 -0.86138,-0.93448 -1.45837,-1.93361 -1.45837,-2.4407 0,-0.47221 -0.25076,-1.06667 -0.55724,-1.32103 -1.05699,-0.87722 -2.22872,-3.38774 -2.59653,-5.56329 -0.40898,-2.41895 -1.1057,-4.15918 -2.20618,-5.51044 -0.40092,-0.4923 -1.35888,-2.71467 -2.1288,-4.93862 -1.42831,-4.12578 -2.00583,-5.22152 -2.56869,-4.87365 -0.59197,0.36586 -0.32053,2.32292 0.90445,6.52081 0.67191,2.30259 1.40159,4.65352 1.62151,5.22429 0.24103,0.62553 0.30726,1.85634 0.16672,3.09848 -0.22116,1.95484 -0.15405,2.20483 1.30603,4.86506 0.84655,1.54238 2.07312,3.58708 2.72571,4.54377 0.91721,1.34461 1.18832,2.11605 1.19439,3.39859 0.008,1.79303 1.12656,4.7 1.80769,4.7 0.29025,0 0.36881,0.61167 0.25493,1.98495 -0.15458,1.863999 -0.10169,2.029749 0.86787,2.720139 0.56786,0.40435 2.80581,1.3312 4.97323,2.05967 2.16742,0.728465 3.93995,1.476484 3.93896,1.662259 -10e-4,0.185774 -0.65544,0.481387 -1.45433,0.656912 -0.7989,0.175528 -1.45254,0.429192 -1.45254,0.563697 0,0.134506 0.40247,0.622651 0.89437,1.08477 1.09521,1.0289 1.1219,1.347398 0.12533,1.495541 -0.42297,0.06287 -1.09835,0.557029 -1.50084,1.098121 l -0.7318,0.983803 0.73168,0.98001 c 0.5145,0.689102 1.19839,1.059681 2.30394,1.248414 2.12744,0.363181 2.7164,0.108347 3.55679,-1.538943 0.39422,-0.772736 0.81392,-1.404974 0.93266,-1.404974 0.49734,0 -0.13633,3.89221 -0.73037,4.486252 -0.48686,0.48686 -0.52461,0.688948 -0.16964,0.908325 0.25109,0.155187 0.56995,0.212065 0.70857,0.126396 0.13861,-0.08567 0.17535,0.137431 0.0816,0.495779 -0.20063,0.767184 0.97489,1.954244 1.2185,1.230473 0.10959,-0.325568 0.33506,-0.345051 0.84359,-0.0729 0.38171,0.204288 0.84653,0.277175 1.03294,0.161973 0.1864,-0.115205 0.85521,0.283944 1.48625,0.886993 0.85408,0.816206 1.22136,0.979811 1.43694,0.640102 0.1753,-0.276216 0.29178,0.118901 0.2951,1.000971 0.005,1.388099 -0.0582,1.473075 -1.33608,1.788733 -1.93369,0.477681 -1.82402,1.516437 0.26831,2.541402 1.94294,0.951781 2.18466,0.988858 1.91811,0.294229 z m 7.04196,-4.798937 c -0.27689,-0.517369 -0.28233,-0.746134 -0.0178,-0.746134 0.4337,0 0.90604,1.003304 0.61116,1.29818 -0.10675,0.106748 -0.37378,-0.141675 -0.5934,-0.552046 z m -6.50917,-1.193646 c 0.27075,-0.27075 0.53175,-0.290412 0.76457,-0.05759 0.23282,0.232818 0.0925,0.373148 -0.41108,0.411079 -0.57584,0.04338 -0.6631,-0.04388 -0.35349,-0.353485 z m -2.73331,-0.818209 c -0.38112,-0.432122 -0.36558,-0.523011 0.0894,-0.523011 0.30291,0 0.55073,0.241478 0.55073,0.536619 0,0.652412 -0.0538,0.651267 -0.64016,-0.01359 z m 0.99791,-1.217154 c 0,-0.258043 -0.23272,-0.366343 -0.53662,-0.249725 -0.365,0.140065 -0.53662,-0.01932 -0.53662,-0.498345 0,-0.387346 0.15533,-0.704266 0.34516,-0.704266 0.43428,0 1.21603,1.420035 0.93594,1.700122 -0.11432,0.114321 -0.20786,0.0029 -0.20786,-0.247786 z m 3.24797,-0.587781 c 0.0172,-0.416757 0.10193,-0.501525 0.21613,-0.21614 0.10334,0.258247 0.0906,0.566806 -0.0282,0.685682 -0.11887,0.118876 -0.20343,-0.09242 -0.18789,-0.469542 z m -3.15853,-1.837011 c -0.71241,-0.255549 -0.51749,-0.777107 0.26831,-0.717914 0.71527,0.05388 0.9532,0.440493 0.44718,0.726615 -0.14757,0.08344 -0.46954,0.07952 -0.71549,-0.0087 z m 3.13028,-0.522016 c -0.5889,-0.247496 -0.72963,-0.437216 -0.41205,-0.555466 0.26528,-0.09877 0.74249,0.08057 1.06047,0.398555 0.66052,0.660521 0.5903,0.677514 -0.64842,0.156911 z m -4.5464,-1.278064 c -0.12704,-0.344331 -0.38065,-0.726672 -0.56358,-0.849648 -0.19882,-0.133654 -0.1837,-0.315618 0.0376,-0.452377 0.2036,-0.125834 0.48396,0.135768 0.62303,0.581338 0.13906,0.44557 0.43238,0.928398 0.65181,1.072957 0.27772,0.182958 0.25966,0.264496 -0.0594,0.26831 -0.25213,0.0029 -0.56236,-0.276249 -0.6894,-0.62058 z m 2.39992,0.131662 c 0,-0.295141 0.16099,-0.636113 0.35775,-0.757718 0.19676,-0.121605 0.35775,0.02039 0.35775,0.315522 0,0.29514 -0.16099,0.636112 -0.35775,0.757717 -0.19676,0.121606 -0.35775,-0.02039 -0.35775,-0.315521 z m -19.03211,-3.512366 c 0.52057,-0.520568 0.55907,-2.402507 0.0752,-3.675205 -0.54974,-1.445922 -2.14751,-2.782463 -2.73924,-2.29137 -0.73201,0.607511 -0.65126,4.902741 0.10794,5.741645 0.67635,0.747354 1.9239,0.857136 2.5561,0.22493 z m 5.94881,-26.248367 c 0.31705,-0.31706 0.56218,-1.16482 0.56218,-1.94432 0,-0.76018 0.15493,-1.78965 0.34429,-2.2877 0.42087,-1.10698 -0.11983,-1.75536 -1.9742,-2.36736 -1.90964,-0.63023 -3.61912,-0.18444 -4.29349,1.11965 -0.30744,0.59453 -0.50907,1.51298 -0.44808,2.04101 0.0985,0.85274 0.28084,0.97234 1.63133,1.07005 1.24749,0.0903 1.52043,0.23898 1.52043,0.82845 0,1.85396 1.48382,2.71394 2.65754,1.54022 z m 4.13964,-0.99046 c 0,-4.47545 -3.40204,-12.75723 -5.2405,-12.75723 -1.2433,0 -2.11169,4.53249 -1.1095,5.791 0.24595,0.30885 1.07083,0.65471 1.83306,0.76857 0.76223,0.11386 1.46946,0.2906 1.57161,0.39276 0.10216,0.10216 0.41372,1.50581 0.69235,3.11922 0.56582,3.27644 0.9582,4.23831 1.72895,4.23831 0.37972,0 0.52403,-0.42759 0.52403,-1.55263 z"
+       id="path4496"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssssscsssscccccscsccscscsccsccccsccccccccccccccccsscssccccccsccccsscccccscccssscscccccccsssccccccccsssscssscccccccccccsccccsscccssccscscccscsccccccccccccscccscsccccsccsscccccscssccccscsssccccccscsssccssscccscssccscscccccscccsccccccscccccsccccccccscccccccscccscccccccscssscccccccccsscsscscscsccscccsccccccccscscsccsssscccsccccsscccccscccccscssccscccccssssccccccscccscccscccccccccssccscssssccccccsccccccccccccccssscsccsccccssccccscssscscss" />
+    <path
+       style="fill:#f7e833;fill-opacity:1;stroke-width:0.35610265"
+       d="m -552.69317,13.12545 c -3.43527,-0.311725 -6.33299,-1.157155 -9.31197,-2.716824 -4.08293,-2.1376496 -4.06033,-1.9881046 -0.98141,-6.4955556 l 2.64377,-3.87040903 0.95659,0.681138 c 2.43854,1.73635103 5.72534,2.92479503 8.53946,3.08770203 3.0546,0.176828 3.85779,-0.147111 3.85779,-1.555899 0,-1.127163 -1.06119,-1.78298403 -4.62616,-2.85895103 -4.34032,-1.30998697 -8.04159,-3.17876197 -9.82196,-4.95912897 -3.72226,-3.722265 -3.35742,-10.9578104 0.74311,-14.7375584 2.95978,-2.728234 5.66242,-3.631608 10.84629,-3.625455 5.21988,0.0062 9.42052,1.194626 12.9023,3.650275 l 0.96295,0.679157 -2.35529,3.63743 c -1.29542,2.000589 -2.46282,3.762582 -2.59425,3.915542 -0.1315,0.152959 -1.50795,-0.324684 -3.05894,-1.061428 -2.18014,-1.035598 -3.36626,-1.370464 -5.22754,-1.475844 -2.6618,-0.150705 -3.46814,0.217416 -3.46814,1.583324 0,1.020132 1.46797,1.841803 5.34154,2.989823 8.12393,2.4077144 11.73926,5.8674434 11.74791,11.2423094 0.005,3.232707 -0.80505,5.485328 -2.75188,7.650676 -1.99555,2.2195276 -4.9896,3.7644216 -7.88784,4.0700256 -1.09915,0.115895 -2.39906,0.256149 -2.8887,0.311669 -0.48965,0.05551 -2.09508,-0.0083 -3.56763,-0.142018 z m 15.32527,-0.421614 c 0.004,-0.05381 2.7907,-8.1902796 6.19392,-18.0810306 l 6.18768,-17.9831844 h 5.95367 5.95366 l 6.0822,17.7161074 c 3.3452,9.743859 6.17153,17.7161236 6.28072,17.7161496 0.10915,2.4e-5 0.19852,-7.9722236 0.19852,-17.7161056 V -23.360379 h 5.51959 5.5196 l 0.0935,13.086773 0.0934,13.0867724 h 6.76156 6.76156 v 4.985533 4.9855336 l -18.31936,-0.0069 -18.31938,-0.0069 -0.82115,-2.574982 -0.82115,-2.5749536 h -5.13946 -5.13944 l -0.74773,2.4927186 -0.74772,2.492719 -5.77518,0.09785 c -3.17636,0.05382 -5.77238,0.05382 -5.76893,0 z m 20.25465,-15.8553886 c -0.3844,-1.322031 -0.96021,-3.325108 -1.27962,-4.451283 -0.31939,-1.126175 -0.67464,-2.047029 -0.78941,-2.046344 -0.17062,10e-4 -1.13611,3.263032 -2.39749,8.100089 -0.20303,0.77857897 -0.13297,0.80122997 2.47823,0.80122997 h 2.68717 z m 42.46932,-2.233939 -6.0578,-18.1695324 6.09008,0.09732 6.09006,0.09732 2.76586,9.792824 c 1.52121,5.3860514 2.78469,9.8729444 2.80772,9.9708744 0.0334,0.141864 3.60973,-12.2829064 5.35569,-18.6063644 l 0.36871,-1.335384 h 5.86196 c 3.22408,0 5.86198,0.118439 5.86198,0.263187 0,0.144755 -2.68294,8.31731 -5.96208,18.1612354 l -5.96208,17.8980466 h -5.58115 -5.58116 z m 31.63698,0.0083 V -23.538426 h 5.51959 5.51959 V -5.3771916 12.784043 h -5.51959 -5.51959 z m 14.24409,-0.0095 V -23.557447 l 5.25253,0.09855 5.2525,0.09855 4.98544,7.430664 4.98543,7.4306634 0.0961,-7.5196894 0.0961,-7.519689 h 5.51251 5.5125 V -5.3673846 12.803626 l -5.05739,-0.0988 -5.05737,-0.0988 -5.35863,-7.9442106 -5.3586,-7.944211 -0.0957,8.033236 -0.0957,8.0332366 h -5.33485 -5.33486 V -5.3866876 Z m 34.89807,0.0095 V -23.538426 h 5.51959 5.51958 V -5.3771916 12.784043 h -5.51958 -5.51959 z"
+       id="path4530"
+       inkscape:connector-curvature="0" />
+    <g
+       style="font-style:normal;font-weight:normal;font-size:19.93776703px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.49844414"
+       id="text4488">
+      <path
+         d="m -541.27058,32.505222 h 1.97326 v -3.866797 h 2.91007 c 1.41516,0 2.53135,-0.358775 3.36849,-1.076325 0.83715,-0.71755 1.25572,-1.714147 1.25572,-3.009723 0,-1.235781 -0.41857,-2.212446 -1.23578,-2.929996 -0.83715,-0.71755 -1.95333,-1.076325 -3.34857,-1.076325 h -4.92319 z m 7.47448,-7.932913 c 0,0.797277 -0.23918,1.375304 -0.69762,1.754011 -0.47837,0.398639 -1.11619,0.578026 -1.9334,0.578026 h -2.8702 v -4.604279 h 2.85027 c 0.81721,0 1.45503,0.199319 1.9334,0.578026 0.47837,0.398639 0.71755,0.956734 0.71755,1.694216 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.93194389px;font-family:TextaAlt-Bold;-inkscape-font-specification:TextaAlt-Bold;letter-spacing:10.05416679px;fill:#ffffff;stroke-width:0.49844414"
+         id="path4508"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -519.73219,20.546056 v 11.959166 h 1.97326 v -3.946525 h 2.85027 l 2.85027,3.946525 h 2.17258 v -0.279047 l -2.8702,-3.886729 v -0.09966 c 0.77735,-0.279047 1.39524,-0.737482 1.85367,-1.375304 0.4385,-0.637822 0.67769,-1.395236 0.67769,-2.312105 0,-1.235781 -0.41857,-2.212446 -1.23578,-2.929996 -0.83714,-0.71755 -1.95333,-1.076325 -3.34857,-1.076325 z m 7.45455,4.026253 c 0,0.737482 -0.23919,1.295576 -0.69762,1.674283 -0.45844,0.378707 -1.05639,0.558094 -1.81381,0.558094 h -2.96986 v -4.504619 h 2.85027 c 0.81721,0 1.45503,0.199319 1.9334,0.578026 0.45843,0.398639 0.69762,0.956734 0.69762,1.694216 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.93194389px;font-family:TextaAlt-Bold;-inkscape-font-specification:TextaAlt-Bold;letter-spacing:10.05416679px;fill:#ffffff;stroke-width:0.49844414"
+         id="path4510"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -490.19237,25.60877 h -5.56101 v -3.308703 h 6.53768 v -1.754011 h -8.51094 v 11.959166 h 8.51094 v -1.754011 h -6.53768 v -3.468158 h 5.56101 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.93194389px;font-family:TextaAlt-Bold;-inkscape-font-specification:TextaAlt-Bold;letter-spacing:10.05416679px;fill:#ffffff;stroke-width:0.49844414"
+         id="path4512"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -467.36058,32.505222 h 1.95333 l -0.0199,-11.959166 h -1.47497 l -4.26543,5.580944 -4.24551,-5.580944 h -1.51482 v 11.959166 h 1.97326 v -8.271756 l 3.42829,4.444823 h 0.71755 l 3.44823,-4.504619 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.93194389px;font-family:TextaAlt-Bold;-inkscape-font-specification:TextaAlt-Bold;letter-spacing:10.05416679px;fill:#ffffff;stroke-width:0.49844414"
+         id="path4514"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -450.41868,20.546056 h -1.97326 v 11.959166 h 1.97326 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.93194389px;font-family:TextaAlt-Bold;-inkscape-font-specification:TextaAlt-Bold;letter-spacing:10.05416679px;fill:#ffffff;stroke-width:0.49844414"
+         id="path4516"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -429.85944,25.60877 h -5.56102 v -3.308703 h 6.53768 v -1.754011 h -8.51094 v 11.959166 h 8.51094 v -1.754011 h -6.53768 v -3.468158 h 5.56102 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.93194389px;font-family:TextaAlt-Bold;-inkscape-font-specification:TextaAlt-Bold;letter-spacing:10.05416679px;fill:#ffffff;stroke-width:0.49844414"
+         id="path4518"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -416.59499,20.546056 v 11.959166 h 1.97326 v -3.946525 h 2.85027 l 2.85027,3.946525 h 2.17258 v -0.279047 l -2.8702,-3.886729 v -0.09966 c 0.77735,-0.279047 1.39524,-0.737482 1.85367,-1.375304 0.4385,-0.637822 0.67769,-1.395236 0.67769,-2.312105 0,-1.235781 -0.41857,-2.212446 -1.23578,-2.929996 -0.83714,-0.71755 -1.95333,-1.076325 -3.34857,-1.076325 z m 7.45455,4.026253 c 0,0.737482 -0.23919,1.295576 -0.69762,1.674283 -0.45844,0.378707 -1.05639,0.558094 -1.81381,0.558094 h -2.96986 v -4.504619 h 2.85027 c 0.81721,0 1.45503,0.199319 1.9334,0.578026 0.45843,0.398639 0.69762,0.956734 0.69762,1.694216 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.93194389px;font-family:TextaAlt-Bold;-inkscape-font-specification:TextaAlt-Bold;letter-spacing:10.05416679px;fill:#ffffff;stroke-width:0.49844414"
+         id="path4520"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

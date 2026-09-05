@@ -1,580 +1,550 @@
-<!DOCTYPE html>
-<html class="client-nojs vector-feature-language-in-header-disabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available skin-thumbsize-clientpref-standard" lang="en" dir="ltr">
-<head>
-<meta charset="UTF-8">
-<title>Redirect by file, user, page, revision, or log ID - Wikimedia Commons</title>
-<script>(function(){var className="client-js vector-feature-language-in-header-disabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available skin-thumbsize-clientpref-standard";var cookie=document.cookie.match(/(?:^|; )commonswikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":true,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"1289dfe6-3835-4532-b463-1078387c24d4","wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"Redirect","wgNamespaceNumber":-1,"wgPageName":"Special:Redirect/file/Logo_of_the_Greens_and_Left_Alliance.svg","wgTitle":"Redirect/file/Logo of the Greens and Left Alliance.svg","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Special:Redirect/file/Logo_of_the_Greens_and_Left_Alliance.svg","wgRelevantArticleId":0,"wgTempUserName":null,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgNoticeProject":"commons","wgConfirmEditCaptchaNeededForGenericEdit":false,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgMediaViewerMobileBeta":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":true,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":0,"wgTestKitchenUserExperiments":{"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[]},"upwizPropertyTitles":{"P180":"Main subjects visible in this work"},"upwizPropertyPlaceholders":{"P180":"e.g., Angolan giraffe"},"upwizPropertyCopyLabels":{"P180":"Main subjects"},"wgEditSubmitButtonLabelPublish":true,"wgVisualEditorPageIsDisambiguation":false,"wgULSPosition":"personal","wgULSisCompactLinksEnabled":true,"wgVector2022LanguageInHeader":false,"wgULSisLanguageSelectorEmpty":true,"wgULSLanguageSelectorV2Enabled":true,"wbmiDefaultProperties":["P180"],"wbmiPropertyTitles":{"P180":"Items portrayed in this file"},"wbmiPropertyTypes":{"P180":"wikibase-item"},"wbmiRepoApiUrl":"/w/api.php","wbmiHelpUrls":{"P180":"https://commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Depicts"},"wbmiExternalEntitySearchBaseUri":"https://www.wikidata.org/w/api.php","wbmiSupportedDataTypes":["wikibase-item","string","quantity","time","monolingualtext","external-id","globe-coordinate","url"],"wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"]};
-RLSTATE={"ext.gadget.Long-Image-Names-in-Categories":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.wikimediamessages.styles":"ready","oojs-ui-core.styles":"ready","oojs-ui.styles.indicators":"ready","mediawiki.widgets.styles":"ready","oojs-ui-core.icons":"ready","mediawiki.htmlform.ooui.styles":"ready","mediawiki.htmlform.styles":"ready","mediawiki.codex.messagebox.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.pt":"ready"};RLPAGEMODULES=["mediawiki.htmlform","mediawiki.htmlform.ooui","site","mediawiki.page.ready","skins.vector.js","ext.centralNotice.geoIP","ext.gadget.Slideshow","ext.gadget.ZoomViewer","ext.gadget.CollapsibleTemplates","ext.gadget.fastcci","ext.gadget.Stockphoto","ext.gadget.WatchlistNotice","ext.gadget.AjaxQuickDelete","ext.gadget.WikiMiniAtlas","ext.gadget.LanguageSelect","ext.gadget.PictureOfTheYearEnhancements","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.testKitchen","ext.visualEditor.desktopArticleTarget.init","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.wikimediaEvents.wikibase","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","wikibase.databox.fromWikidata","ext.checkUser.clientHints"];</script>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
-}];});});</script>
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.uls.pt%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.codex.messagebox.styles%7Cmediawiki.htmlform.ooui.styles%7Cmediawiki.htmlform.styles%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles&amp;only=styles&amp;skin=vector-2022">
-<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
-<meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.Long-Image-Names-in-Categories&amp;only=styles&amp;skin=vector-2022">
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
-<meta name="generator" content="MediaWiki 1.47.0-wmf.18">
-<meta name="referrer" content="origin">
-<meta name="referrer" content="origin-when-cross-origin">
-<meta name="robots" content="noindex,nofollow,max-image-preview:standard">
-<meta name="format-detection" content="telephone=no">
-<meta name="viewport" content="width=1120">
-<meta property="og:title" content="Redirect by file, user, page, revision, or log ID - Wikimedia Commons">
-<meta property="og:type" content="website">
-<link rel="apple-touch-icon" href="/static/apple-touch/commons.png">
-<link rel="icon" href="/static/favicon/commons.ico">
-<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikimedia Commons">
-<link rel="EditURI" type="application/rsd+xml" href="//commons.wikimedia.org/w/api.php?action=rsd">
-<link rel="canonical" href="https://commons.wikimedia.org/wiki/Special:Redirect/file/Logo_of_the_Greens_and_Left_Alliance.svg">
-<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
-<link rel="alternate" type="application/atom+xml" title="Wikimedia Commons Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
-<link rel="dns-prefetch" href="auth.wikimedia.org">
-</head>
-<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-Redirect page-Special_Redirect_file_Logo_of_the_Greens_and_Left_Alliance_svg rootpage-Special_Redirect_file_Logo_of_the_Greens_and_Left_Alliance_svg skin-vector-2022 action-view">
-<div id="mw-aria-live-region" class="mw-aria-live-region" aria-live="polite"></div><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
-<div class="vector-header-container">
-	<header class="vector-header mw-header no-font-mode-scale">
-		<div class="vector-header-start">
-			<nav class="vector-main-menu-landmark" aria-label="Site">
-				
-<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
-	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"   >
-	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Main menu</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
-		
-<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
-	data-feature-name="main-menu-pinned"
-	data-pinnable-element-id="vector-main-menu"
-	data-pinned-container-id="vector-main-menu-pinned-container"
-	data-unpinned-container-id="vector-main-menu-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Main menu</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin" aria-label="Move Main menu to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin" aria-label="Hide Main menu">hide</button>
-</div>
-
-	
-<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
-	<div class="vector-menu-heading">
-		Navigate
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-welcome" class="mw-list-item"><a href="/wiki/Commons:Welcome"><span>Welcome</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Commons:Community_portal" title="About the project, what you can do, where to find things"><span>Community portal</span></a></li><li id="n-village-pump" class="mw-list-item"><a href="/wiki/Commons:Village_pump"><span>Village pump</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/Special:MyLanguage/Help:Contents" title="The place to find out"><span>Help center</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-participate" class="vector-menu mw-portlet mw-portlet-participate"  >
-	<div class="vector-menu-heading">
-		Participate
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="n-uploadbtn" class="mw-list-item"><a href="/wiki/Special:UploadWizard"><span>Upload file</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-latestfiles" class="mw-list-item"><a href="/wiki/Special:NewFiles"><span>Latest files</span></a></li><li id="n-randomimage" class="mw-list-item"><a href="/wiki/Special:Random/File" title="Load a random file [x]" accesskey="x"><span>Random file</span></a></li><li id="n-contact" class="mw-list-item"><a href="/wiki/Commons:Contact_us"><span>Contact us</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-</div>
-
-				</div>
-
-	</div>
-</div>
-
-		</nav>
-			
-<a href="/wiki/Main_Page" class="mw-logo">
-	<img class="mw-logo-icon" src="/static/images/icons/commonswiki.svg" alt="" aria-hidden="true" height="50" width="50">
-	<span class="mw-logo-container skin-invert">
-		<img class="mw-logo-wordmark" alt="Wikimedia Commons" src="/static/images/mobile/copyright/commonswiki-wordmark.svg" style="width: 7.1875em; height: 2em;">
-	</span>
-</a>
-
-		</div>
-		<div class="vector-header-end">
-			
-<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box">
-	<a href="/wiki/Special:MediaSearch" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikimedia Commons [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
-
-<span>Search</span>
-	</a>
-	<div class="vector-typeahead-search-container">
-		<div class="cdx-typeahead-search">
-			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
-				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
-					<div class="cdx-text-input cdx-text-input--has-start-icon">
-						<input
-							class="cdx-text-input__input mw-searchInput" autocomplete="off"
-							 type="search" name="search" placeholder="Search Wikimedia Commons" aria-label="Search Wikimedia Commons" autocapitalize="none" spellcheck="false" title="Search Wikimedia Commons [f]" accesskey="f" id="searchInput"
-							>
-						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
-					</div>
-					<input type="hidden" name="title" value="Special:MediaSearch">
-				</div>
-				<button class="cdx-button cdx-search-input__end-button">Search</button>
-			</form>
-		</div>
-	</div>
-</div>
-
-			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
-	<div class="vector-user-links-main">
-	
-<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="ca-uls" class="mw-list-item active vector-menu-item--collapsible"><a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet uls-trigger" id=""><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language cdx-button__icon"></span>
-
-<span>English</span>
-</a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-	<nav class="vector-appearance-landmark" aria-label="Appearance">
-		
-<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
-	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"   >
-	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Appearance</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
-				
-			</div>
-		
-	</div>
-</div>
-
-	</nav>
-	
-<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="pt-sitesupport-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=commons.wikimedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span>Donate</span></a>
-</li>
-<li id="pt-createaccount-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3ARedirect%2Ffile%2FLogo+of+the+Greens+and+Left+Alliance.svg" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
-</li>
-<li id="pt-login-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3ARedirect%2Ffile%2FLogo+of+the+Greens+and+Left+Alliance.svg" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o" class=""><span>Log in</span></a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	</div>
-	
-<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out vector-user-links-dropdown--collapsible"  title="More options" >
-	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"   >
-	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Personal tools</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-		
-<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal"  title="User menu" >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="pt-sitesupport" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=commons.wikimedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart cdx-button__icon"></span>
-
-<span>Donate</span></a>
-</li>
-<li id="pt-createaccount" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3ARedirect%2Ffile%2FLogo+of+the+Greens+and+Left+Alliance.svg" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
-
-<span>Create account</span></a>
-</li>
-<li id="pt-login" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3ARedirect%2Ffile%2FLogo+of+the+Greens+and+Left+Alliance.svg" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o" class=""><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn cdx-button__icon"></span>
-
-<span>Log in</span></a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-	</div>
-</div>
-
-</nav>
-
-		</div>
-	</header>
-</div>
-<div class="mw-page-container">
-	<div class="mw-page-container-inner">
-		<div class="vector-sitenotice-container">
-			<div id="siteNotice"><!-- CentralNotice --></div>
-		</div>
-		<div class="vector-column-start">
-			<div class="vector-main-menu-container">
-		<div id="mw-navigation">
-			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
-				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
-				
-				</div>
-		</nav>
-		</div>
-	</div>
-</div>
-		<div class="mw-content-container">
-			<main id="content" class="mw-body">
-				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
-					<h1 id="firstHeading" class="firstHeading mw-first-heading">Redirect by file, user, page, revision, or log ID</h1>
-		<div class="mw-indicators">
-	</div>
-</header>
-				<div class="vector-page-toolbar">
-					<div class="vector-page-toolbar-container">
-						<div id="left-navigation">
-							<nav aria-label="Namespaces">
-								
-<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-								
-<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
-	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"    >
-	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-					
-<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-				
-	</div>
-</div>
-
-							</nav>
-						</div>
-						<div id="right-navigation" class="vector-collapsible">
-							<nav aria-label="Views">
-			    
-<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-			</nav>
-
-							<nav class="vector-page-tools-landmark" aria-label="Page tools">
-								
-<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
-	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"   >
-	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-verticalEllipsis mw-ui-icon-wikimedia-verticalEllipsis cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Tools</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
-						
-<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
-	data-feature-name="page-tools-pinned"
-	data-pinnable-element-id="vector-page-tools"
-	data-pinned-container-id="vector-page-tools-pinned-container"
-	data-unpinned-container-id="vector-page-tools-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Tools</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin" aria-label="Move Tools to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin" aria-label="Hide Tools">hide</button>
-</div>
-
-	
-<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet"  >
-	<div class="vector-menu-heading">
-		Actions
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
-	<div class="vector-menu-heading">
-		General
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FLogo_of_the_Greens_and_Left_Alliance.svg"><span>Get shortened URL</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet"  >
-	<div class="vector-menu-heading">
-		In other projects
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-</div>
-
-									</div>
-				
-	</div>
-</div>
-
-							</nav>
-						</div>
-					</div>
-				</div>
-				<div class="vector-column-end no-font-mode-scale">
-					<div class="vector-sticky-pinned-container">
-						<nav class="vector-page-tools-landmark" aria-label="Page tools">
-							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
-				
-							</div>
-		</nav>
-						<nav class="vector-appearance-landmark" aria-label="Appearance">
-							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
-				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
-	data-feature-name="appearance-pinned"
-	data-pinnable-element-id="vector-appearance"
-	data-pinned-container-id="vector-appearance-pinned-container"
-	data-unpinned-container-id="vector-appearance-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Appearance</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin" aria-label="Move Appearance to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin" aria-label="Hide Appearance">hide</button>
-</div>
-
-
-</div>
-
-							</div>
-		</nav>
-					</div>
-				</div>
-				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
-					<div class="vector-body-before-content">
-					
-						
-					</div>
-					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
-					
-					
-					<div id="mw-content-text" class="mw-body-content"><div class="mw-specialpage-summary">
-<p>This special page redirects to a file (given the filename), a page (given a revision ID or page ID), a user page (given a numeric user ID), or a log entry (given the log ID). Usage: <a href="/wiki/Special:Redirect/file/Example.jpg" title="Special:Redirect/file/Example.jpg">Special:Redirect/file/Example.jpg</a>, <a href="/wiki/Special:Redirect/page/64308" title="Special:Redirect/page/64308">Special:Redirect/page/64308</a>, <a href="/wiki/Special:Redirect/revision/328429" title="Special:Redirect/revision/328429">Special:Redirect/revision/328429</a>, <a href="/wiki/Special:Redirect/user/101" title="Special:Redirect/user/101">Special:Redirect/user/101</a>, or <a href="/wiki/Special:Redirect/logid/186" title="Special:Redirect/logid/186">Special:Redirect/logid/186</a>.
-</p>
-</div><div class='mw-htmlform-ooui-wrapper oo-ui-layout oo-ui-panelLayout'><form action='/wiki/Special:Redirect/file/Logo_of_the_Greens_and_Left_Alliance.svg' method='get' enctype='application/x-www-form-urlencoded' class='mw-htmlform mw-htmlform-ooui oo-ui-layout oo-ui-formLayout'><div class='mw-htmlform-ooui-header mw-htmlform-ooui-header-errors oo-ui-layout oo-ui-fieldLayout oo-ui-fieldLayout-align-top'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label id='ooui-php-1' class='oo-ui-labelElement-label'></label></span><div class='oo-ui-fieldLayout-field'><div aria-labelledby='ooui-php-1' class='oo-ui-widget oo-ui-widget-enabled'></div></div></div><div class='oo-ui-fieldLayout-messages'><div role='alert' class='oo-ui-widget oo-ui-widget-enabled oo-ui-labelElement oo-ui-flaggedElement-error oo-ui-iconElement oo-ui-messageWidget'><span class='oo-ui-iconElement-icon oo-ui-icon-error oo-ui-image-error'></span><span class='oo-ui-labelElement-label'>Value not found</span></div></div></div><div id='ooui-php-4' class='mw-htmlform-field-HTMLSelectField mw-htmlform-autoinfuse oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-top' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-input-wptype"},"align":"top","helpInline":true,"$overlay":true,"label":{"html":"Lookup:"},"classes":["mw-htmlform-field-HTMLSelectField","mw-htmlform-autoinfuse"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label for='ooui-php-2' class='oo-ui-labelElement-label'>Lookup:</label></span><div class='oo-ui-fieldLayout-field'><div id='mw-input-wptype' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-dropdownInputWidget oo-ui-dropdownInputWidget-php' data-ooui='{"_":"OO.ui.DropdownInputWidget","options":[{"data":"user","label":"User ID"},{"data":"page","label":"Page ID"},{"data":"revision","label":"Page revision"},{"data":"file","label":"Filename"},{"data":"logid","label":"Log ID"}],"$overlay":true,"name":"wptype","value":"file","inputId":"ooui-php-2","required":false}'><select tabindex='0' name='wptype' id='ooui-php-2' class='oo-ui-inputWidget-input'><option value='user'>User ID</option><option value='page'>Page ID</option><option value='revision'>Page revision</option><option value='file' selected='selected'>Filename</option><option value='logid'>Log ID</option></select><span class='oo-ui-widget oo-ui-widget-enabled oo-ui-indicatorElement-indicator oo-ui-indicator-down oo-ui-indicatorElement oo-ui-labelElement-invisible oo-ui-indicatorWidget'></span></div></div></div></div><div id='ooui-php-5' class='mw-htmlform-field-HTMLTextField oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-top' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-input-wpvalue"},"align":"top","helpInline":true,"$overlay":true,"label":{"html":"Value:"},"classes":["mw-htmlform-field-HTMLTextField"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label for='ooui-php-3' class='oo-ui-labelElement-label'>Value:</label></span><div class='oo-ui-fieldLayout-field'><div id='mw-input-wpvalue' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-indicatorElement oo-ui-textInputWidget oo-ui-textInputWidget-type-text oo-ui-textInputWidget-php' data-ooui='{"_":"OO.ui.TextInputWidget","name":"wpvalue","value":"Logo_of_the_Greens_and_Left_Alliance.svg","inputId":"ooui-php-3","indicator":"required","required":true}'><input type='text' tabindex='0' name='wpvalue' value='Logo_of_the_Greens_and_Left_Alliance.svg' required='' id='ooui-php-3' class='oo-ui-inputWidget-input' /><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon'></span><span class='oo-ui-indicatorElement-indicator oo-ui-indicator-required'></span></div></div></div></div><div class="mw-htmlform-submit-buttons">
-<span id='ooui-php-6' class='mw-htmlform-submit oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-buttonElement-size-medium oo-ui-labelElement oo-ui-flaggedElement-primary oo-ui-flaggedElement-progressive oo-ui-buttonInputWidget' data-ooui='{"_":"OO.ui.ButtonInputWidget","type":"submit","value":"Go","label":"Go","flags":["primary","progressive"],"classes":["mw-htmlform-submit"]}'><button type='submit' tabindex='0' value='Go' class='oo-ui-inputWidget-input oo-ui-buttonElement-button'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon oo-ui-image-invert'></span><span class='oo-ui-labelElement-label'>Go</span><span class='oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator oo-ui-image-invert'></span></button></span></div>
-</form></div><noscript><img src="https://commons.wikimedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
-<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://commons.wikimedia.org/wiki/Special:Redirect/file/Logo_of_the_Greens_and_Left_Alliance.svg">https://commons.wikimedia.org/wiki/Special:Redirect/file/Logo_of_the_Greens_and_Left_Alliance.svg</a>"</div></div>
-					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw-interface=""></div>
-				</div>
-			</main>
-			
-		</div>
-		<div class="mw-footer-container">
-			<footer id="footer" class="mw-footer" >
-				<ul id="footer-info" class="mw-portlet mw-portlet-footer-info emptyPortlet">
-</ul>
-
-				<ul id="footer-places" class="mw-portlet mw-portlet-footer-places">
-	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
-	<li id="footer-places-about"><a href="/wiki/Commons:Welcome">About Wikimedia Commons</a></li>
-	<li id="footer-places-disclaimers"><a href="/wiki/Commons:General_disclaimer">Disclaimers</a></li>
-	<li id="footer-places-legal-safety-contacts"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information">Legal &amp; safety contacts</a></li>
-	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
-	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
-	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/commons.wikimedia.org">Statistics</a></li>
-	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
-	<li id="footer-places-mobileview"><a href="//commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Logo_of_the_Greens_and_Left_Alliance.svg&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
-</ul>
-
-				<ul id="footer-icons" class="mw-portlet mw-portlet-footer-icons noprint">
-	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
-	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
-</ul>
-
-			</footer>
-		</div>
-	</div> 
-</div> 
-<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
-	<div id="vector-sticky-header" class="vector-sticky-header">
-		<div class="vector-sticky-header-start">
-			<div class="vector-sticky-header-icon-start vector-button-flush-left" aria-hidden="true">
-				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
-
-<span>Search</span>
-			</button>
-		</div>
-			
-		<div role="search" class="vector-search-box-vue vector-search-box">
-			<div class="vector-typeahead-search-container">
-				<div class="cdx-typeahead-search">
-					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
-						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
-							<div class="cdx-text-input cdx-text-input--has-start-icon">
-								<input
-									class="cdx-text-input__input mw-searchInput" autocomplete="off"
-									
-									type="search" name="search" placeholder="Search Wikimedia Commons">
-								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
-							</div>
-							<input type="hidden" name="title" value="Special:MediaSearch">
-						</div>
-						<button class="cdx-button cdx-search-input__end-button">Search</button>
-					</form>
-				</div>
-			</div>
-		</div>
-		<div class="vector-sticky-header-context-bar">
-				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" >Redirect by file, user, page, revision, or log ID</div>
-			</div>
-		</div>
-		<div class="vector-sticky-header-end" aria-hidden="true">
-			<div class="vector-sticky-header-icons">
-				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock cdx-button__icon"></span>
-
-<span></span>
-			</a>
-		</div>
-			<div class="vector-sticky-header-buttons">
-				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive cdx-button__icon"></span>
-
-<span>Add topic</span>
-			</a>
-		</div>
-			<div class="vector-sticky-header-icon-end">
-				<div class="vector-user-links">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
-	<ul>
-		
-	</ul>
-</div>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-79449b7dcf-ffktf","wgBackendResponseTime":87});});</script>
-</body>
-</html>
+<?xml version="1.0"?>
+<svg
+   width="300"
+   height="300"
+   viewBox="0 0 378.07212 378.07212"
+   xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <clipPath clipPathUnits="userSpaceOnUse" id="clipPath16">
+  <path d="M 0,311.811 H 311.811 V 0 H 0 Z" />
+ </clipPath>
+</defs>
+<g
+     transform="matrix(1.3333333,0,0,-1.3333333,-18.837866,396.90999)"><g
+       id="g10"><g
+         id="g12"
+         clip-path="url(#clipPath16)"><g
+           id="g18"
+           transform="translate(297.6824,155.9055)"><path
+             d="m 0,0 c 0,-78.301 -63.476,-141.777 -141.777,-141.777 -78.301,0 -141.777,63.476 -141.777,141.777 0,78.301 63.476,141.777 141.777,141.777 C -63.476,141.777 0,78.301 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path20" /></g><g
+           id="g22"
+           transform="translate(91.1408,198.7207)"><path
+             d="m 0,0 c 0,0 3.585,-3.276 7.569,-3.276 1.594,0 3.321,0.62 3.321,2.523 0,3.763 -14.255,3.63 -14.255,13.369 0,5.843 4.914,9.694 11.2,9.694 6.817,0 10.181,-3.585 10.181,-3.585 l -3.276,-6.33 c 0,0 -3.187,2.789 -6.993,2.789 -1.594,0 -3.365,-0.709 -3.365,-2.48 0,-3.984 14.254,-3.275 14.254,-13.28 0,-5.268 -4.028,-9.827 -11.155,-9.827 -7.437,0 -11.554,4.515 -11.554,4.515 z"
+             style="fill:#ef2d38;fill-rule:nonzero;stroke:none"
+             id="path24" /></g><path
+           d="m 110.97,220.5 h 7.482 v -5.977 h -7.482 z m -0.089,-8.854 h 7.658 v -22.798 h -7.658 z"
+           style="fill:#ef2d38;fill-rule:nonzero;stroke:none"
+           id="path26" /><g
+           id="g28"
+           transform="translate(120.8844,211.6463)"><path
+             d="m 0,0 h 7.348 v -1.992 c 0,-0.752 -0.088,-1.416 -0.088,-1.416 h 0.088 c 1.063,1.77 3.232,3.939 7.26,3.939 4.604,0 8.19,-2.124 8.19,-8.543 v -14.786 h -7.659 v 13.369 c 0,2.125 -0.841,3.01 -2.523,3.01 -2.39,0 -3.851,-1.328 -4.515,-3.275 -0.31,-0.886 -0.443,-1.904 -0.443,-3.011 V -22.798 H 0 Z"
+             style="fill:#ef2d38;fill-rule:nonzero;stroke:none"
+             id="path30" /></g><path
+           d="m 145.803,220.5 h 7.482 v -5.977 h -7.482 z m -0.088,-8.854 h 7.658 v -22.798 h -7.658 z"
+           style="fill:#ef2d38;fill-rule:nonzero;stroke:none"
+           id="path32" /><g
+           id="g34"
+           transform="translate(157.2231,196.817)"><path
+             d="m 0,0 c 0,0 2.524,-2.302 5.799,-2.302 1.151,0 2.258,0.309 2.258,1.062 0,1.993 -10.668,2.213 -10.668,9.65 0,4.295 4.116,6.95 9.384,6.95 5.312,0 8.012,-2.611 8.012,-2.611 L 12.173,7.304 c 0,0 -2.213,1.859 -5.4,1.859 -1.151,0 -2.257,-0.309 -2.257,-1.107 0,-1.726 10.668,-1.992 10.668,-9.34 0,-3.895 -3.453,-7.215 -9.341,-7.215 -5.71,0 -9.119,3.364 -9.119,3.364 z"
+             style="fill:#ef2d38;fill-rule:nonzero;stroke:none"
+             id="path36" /></g><g
+           id="g38"
+           transform="translate(174.3969,205.2723)"><path
+             d="m 0,0 h -2.922 v 5.976 h 3.143 v 6.551 H 7.658 V 5.976 h 4.781 V 0 H 7.658 v -6.995 c 0,-2.567 2.612,-2.921 4.073,-2.921 0.62,0 1.018,0.044 1.018,0.044 v -6.64 c 0,0 -0.841,-0.133 -2.08,-0.133 C 7.038,-16.645 0,-15.671 0,-8.013 Z"
+             style="fill:#ef2d38;fill-rule:nonzero;stroke:none"
+             id="path40" /></g><g
+           id="g42"
+           transform="translate(188.2948,211.6463)"><path
+             d="m 0,0 h 7.348 v -3.851 c 0,-0.753 -0.088,-1.417 -0.088,-1.417 h 0.088 c 0.974,3.099 3.852,5.666 7.26,5.666 0.443,0 0.886,-0.089 0.886,-0.089 v -7.524 c 0,0 -0.62,0.132 -1.55,0.132 -1.815,0 -4.781,-0.575 -5.887,-3.984 -0.266,-0.84 -0.399,-1.859 -0.399,-3.098 v -8.633 H 0 Z"
+             style="fill:#ef2d38;fill-rule:nonzero;stroke:none"
+             id="path44" /></g><g
+           id="g46"
+           transform="translate(212.1535,194.1606)"><path
+             d="M 0,0 C 1.992,0 3.762,2.169 3.762,4.029 V 4.515 H 3.054 C 0.619,4.515 -2.169,3.807 -2.169,1.904 -2.169,0.842 -1.505,0 0,0 m 3.364,8.898 h 0.31 v 0.398 c 0,1.904 -1.461,2.524 -3.365,2.524 -2.877,0 -6.152,-2.17 -6.152,-2.17 l -2.656,5.401 c 0,0 3.939,2.966 9.561,2.966 6.419,0 10.27,-3.497 10.27,-9.296 V -5.312 H 4.338 v 1.373 c 0,0.753 0.088,1.416 0.088,1.416 H 4.338 c 0,0 -1.682,-3.32 -6.463,-3.32 -4.25,0 -7.747,2.833 -7.747,7.348 0,6.641 9.695,7.393 13.236,7.393"
+             style="fill:#ef2d38;fill-rule:nonzero;stroke:none"
+             id="path48" /></g><g
+           id="g50"
+           transform="translate(125.0271,254.4151)"><path
+             d="m 0,0 h 8.411 l 5.577,-18.017 c 0.62,-1.992 1.196,-5.091 1.196,-5.091 h 0.088 c 0,0 0.576,3.099 1.195,5.091 L 22.134,0 h 8.277 L 19.256,-31.651 H 11.2 Z"
+             style="fill:#00a650;fill-rule:nonzero;stroke:none"
+             id="path52" /></g><g
+           id="g54"
+           transform="translate(166.5468,237.0621)"><path
+             d="M 0,0 C 0,1.726 -1.195,3.275 -3.01,3.275 -5.223,3.275 -6.286,1.682 -6.684,0 Z m -2.833,9.03 c 6.728,0 10.535,-4.692 10.535,-11.022 0,-0.752 -0.177,-2.39 -0.177,-2.39 H -6.862 c 0.576,-2.79 2.878,-4.073 5.313,-4.073 3.276,0 6.285,2.302 6.285,2.302 l 2.833,-5.356 c 0,0 -3.674,-3.32 -9.738,-3.32 -8.145,0 -12.528,5.887 -12.528,11.952 0,6.684 4.516,11.907 11.864,11.907"
+             style="fill:#00a650;fill-rule:nonzero;stroke:none"
+             id="path56" /></g><g
+           id="g58"
+           transform="translate(175.0876,245.5614)"><path
+             d="m 0,0 h 7.348 v -3.851 c 0,-0.753 -0.088,-1.417 -0.088,-1.417 h 0.088 c 0.974,3.099 3.852,5.666 7.26,5.666 0.443,0 0.886,-0.089 0.886,-0.089 v -7.524 c 0,0 -0.62,0.132 -1.55,0.132 -1.815,0 -4.781,-0.575 -5.887,-3.984 -0.266,-0.84 -0.399,-1.859 -0.399,-3.098 v -8.633 H 0 Z"
+             style="fill:#00a650;fill-rule:nonzero;stroke:none"
+             id="path60" /></g><g
+           id="g62"
+           transform="translate(201.4245,228.5628)"><path
+             d="M 0,0 C 2.302,0 4.471,1.682 4.471,5.622 4.471,8.367 3.01,11.067 0,11.067 -2.39,11.067 -4.471,9.119 -4.471,5.622 -4.471,2.213 -2.656,0 0,0 m -1.771,17.53 c 4.604,0 5.976,-1.815 5.976,-1.815 h 0.089 c 0,0 -0.044,0.443 -0.044,1.018 v 9.119 h 7.658 V -5.799 H 4.737 v 1.505 c 0,0.708 0.044,1.284 0.044,1.284 H 4.692 c 0,0 -1.903,-3.32 -6.596,-3.32 -6.197,0 -10.269,4.87 -10.269,11.952 0,7.216 4.338,11.908 10.402,11.908"
+             style="fill:#00a650;fill-rule:nonzero;stroke:none"
+             id="path64" /></g><path
+           d="m 215.764,254.415 h 7.482 v -5.977 h -7.482 z m -0.088,-8.854 h 7.658 v -22.798 h -7.658 z"
+           style="fill:#00a650;fill-rule:nonzero;stroke:none"
+           id="path66" /><g
+           id="g68"
+           transform="translate(136.4337,265.1744)"><path
+             d="M 0,0 -2.213,6.934 -4.425,0 Z m 1.295,-4.049 h -7.016 l -0.944,-2.967 h -4.723 l 6.423,18.888 H 0.539 L 6.962,-7.016 H 2.24 Z"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path70" /></g><path
+           d="m 143.529,277.857 h 4.048 v -19.699 h -4.048 z"
+           style="fill:#16433e;fill-rule:nonzero;stroke:none"
+           id="path72" /><path
+           d="m 149.195,277.857 h 4.048 v -19.699 h -4.048 z"
+           style="fill:#16433e;fill-rule:nonzero;stroke:none"
+           id="path74" /><g
+           id="g76"
+           transform="translate(164.1984,266.3068)"><path
+             d="M 0,0 C -0.432,1.566 -1.646,2.132 -2.86,2.132 -4.399,2.132 -5.424,1.377 -5.802,0 Z m -2.483,-4.911 c 1.106,0 2.051,0.432 2.591,1.026 l 3.238,-1.862 c -1.322,-1.836 -3.319,-2.78 -5.883,-2.78 -4.614,0 -7.474,3.104 -7.474,7.124 0,4.021 2.914,7.124 7.177,7.124 3.94,0 6.855,-3.049 6.855,-7.124 0,-0.566 -0.054,-1.106 -0.162,-1.619 h -9.58 c 0.513,-1.403 1.754,-1.889 3.238,-1.889"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path78" /></g><g
+           id="g80"
+           transform="translate(178.8232,264.904)"><path
+             d="m 0,0 c 0,2.024 -1.349,3.292 -3.211,3.292 -1.862,0 -3.211,-1.268 -3.211,-3.292 0,-2.024 1.349,-3.292 3.211,-3.292 C -1.349,-3.292 0,-2.024 0,0 M 4.048,6.746 V -6.746 H 0 v 1.268 c -0.891,-1.025 -2.213,-1.646 -4.021,-1.646 -3.535,0 -6.449,3.104 -6.449,7.124 0,4.021 2.914,7.124 6.449,7.124 1.808,0 3.13,-0.62 4.021,-1.646 v 1.268 z"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path82" /></g><g
+           id="g84"
+           transform="translate(197.4409,266.4425)"><path
+             d="m 0,0 v -8.285 h -4.048 v 7.691 c 0,1.673 -1.052,2.456 -2.347,2.456 -1.484,0 -2.509,-0.864 -2.509,-2.78 v -7.367 h -4.048 V 5.207 h 4.048 V 3.939 c 0.728,0.999 2.077,1.646 3.858,1.646 C -2.321,5.585 0,3.642 0,0"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path86" /></g><g
+           id="g88"
+           transform="translate(209.1247,261.9361)"><path
+             d="m 0,0 v -3.778 h -10.794 v 2.698 l 5.1,7.017 h -4.83 V 9.714 H -0.27 V 7.015 L -5.37,0 Z"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path90" /></g><g
+           id="g92"
+           transform="translate(219.1894,264.904)"><path
+             d="m 0,0 c 0,2.024 -1.349,3.292 -3.211,3.292 -1.862,0 -3.211,-1.268 -3.211,-3.292 0,-2.024 1.349,-3.292 3.211,-3.292 C -1.349,-3.292 0,-2.024 0,0 M 4.048,6.746 V -6.746 H 0 v 1.268 c -0.891,-1.025 -2.213,-1.646 -4.021,-1.646 -3.535,0 -6.449,3.104 -6.449,7.124 0,4.021 2.914,7.124 6.449,7.124 1.808,0 3.13,-0.62 4.021,-1.646 v 1.268 z"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path94" /></g><g
+           id="g96"
+           transform="translate(220.8163,217.701)"><path
+             d="M 0,0 C -0.225,0.815 -0.858,1.111 -1.491,1.111 -2.293,1.111 -2.827,0.717 -3.024,0 Z m -1.294,-2.56 c 0.576,0 1.069,0.225 1.35,0.534 l 1.688,-0.97 c -0.689,-0.956 -1.73,-1.449 -3.066,-1.449 -2.405,0 -3.896,1.618 -3.896,3.714 0,2.095 1.519,3.712 3.741,3.712 2.053,0 3.573,-1.589 3.573,-3.712 0,-0.296 -0.029,-0.577 -0.085,-0.845 h -4.992 c 0.267,-0.731 0.913,-0.984 1.687,-0.984"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path98" /></g><g
+           id="g100"
+           transform="translate(82.7942,257.2983)"><path
+             d="M 0,0 C -1.909,1.355 -3.131,2.35 -3.172,2.384 -3.697,2.816 -4.435,2.88 -5.029,2.541 -5.62,2.201 -5.938,1.532 -5.828,0.859 c 0.124,-0.767 0.27,-1.497 0.421,-2.215 0.118,-0.557 0.244,-1.098 0.377,-1.626 l 7.69,1.179 C 1.681,-1.169 0.781,-0.554 0,0"
+             style="fill:#542791;fill-rule:nonzero;stroke:none"
+             id="path102" /></g><g
+           id="g104"
+           transform="translate(121.4134,254.6977)"><path
+             d="M 0,0 C -2.024,2.518 -3.981,4.026 -4.934,4.312 -5.512,4.485 -6.072,4.54 -6.072,4.54 -6.553,4.586 -7.061,4.574 -7.596,4.487 c -1.41,-0.23 -2.627,-0.902 -3.726,-1.778 -0.135,-0.107 -0.271,-0.218 -0.422,-0.349 -1.825,-1.592 -3.122,-3.365 -3.383,-3.714 -0.101,-0.136 -0.484,-0.644 -1.08,-1.256 l 13.916,2.135 C -1.299,-0.122 -0.343,-0.027 0,0"
+             style="fill:#176fc1;fill-rule:nonzero;stroke:none"
+             id="path106" /></g><g
+           id="g108"
+           transform="translate(90.5114,252.4954)"><path
+             d="M 0,0 C -0.173,0.064 -0.637,0.369 -1.279,0.722 -1.287,0.727 -1.29,0.734 -1.298,0.738 -2.635,1.477 -3.902,2.252 -5.058,3 l -7.689,-1.179 c 0.423,-1.685 0.922,-3.229 1.48,-4.647 0.2,-0.507 0.41,-0.993 0.623,-1.469 L 4.175,-2.022 C 2.566,-1.287 1.124,-0.418 0,0"
+             style="fill:#176fc1;fill-rule:nonzero;stroke:none"
+             id="path110" /></g><g
+           id="g112"
+           transform="translate(116.031,248.7882)"><path
+             d="M 0,0 C 0.018,0.602 0.074,2.435 0.668,3.563 1.179,4.532 2.151,5.099 3.092,5.434 L -10.824,3.299 c -0.916,-0.941 -2.342,-2.13 -4.067,-2.607 -2.223,-0.615 -4.466,0.086 -6.453,0.994 l -14.819,-2.274 c 0.747,-1.664 1.577,-3.147 2.475,-4.45 0.34,-0.494 0.69,-0.96 1.047,-1.407 l 32.613,5.003 C -0.02,-0.807 -0.007,-0.229 0,0"
+             style="fill:#33bdf2;fill-rule:nonzero;stroke:none"
+             id="path114" /></g><g
+           id="g116"
+           transform="translate(115.9787,245.4916)"><path
+             d="m 0,0 c 0.01,0.523 0.016,1.031 0.021,1.502 0,0.119 0.002,0.236 0.003,0.353 l -32.613,-5.003 c 1.277,-1.603 2.645,-2.92 4.04,-4.013 0.685,-0.537 1.375,-1.01 2.064,-1.448 l 26.187,4.017 C -0.102,-2.97 -0.026,-1.4 0,0"
+             style="fill:#00a650;fill-rule:nonzero;stroke:none"
+             id="path118" /></g><g
+           id="g120"
+           transform="translate(115.318,238.5869)"><path
+             d="m 0,0 c 0.159,0.778 0.27,1.549 0.362,2.312 l -26.187,-4.017 c 0.995,-0.633 1.985,-1.184 2.948,-1.645 -0.649,-0.527 -1.338,-1.026 -1.868,-1.319 -3.165,-1.746 -8.535,-2.024 -8.59,-2.029 -0.505,-0.021 -0.973,-0.279 -1.264,-0.696 -0.273,-0.392 -0.353,-0.883 -0.234,-1.344 0.007,-0.027 0.007,-0.054 0.016,-0.081 0.072,-0.231 0.147,-0.445 0.22,-0.67 l 33.168,5.088 C -0.765,-2.986 -0.306,-1.494 0,0"
+             style="fill:#fff200;fill-rule:nonzero;stroke:none"
+             id="path122" /></g><g
+           id="g124"
+           transform="translate(109.5575,228.8293)"><path
+             d="m 0,0 c 0.912,0.658 1.68,1.405 2.351,2.206 0.816,0.974 1.46,2.04 1.981,3.151 L -28.836,0.269 c 0.653,-2.002 1.349,-3.781 2.113,-5.356 0.111,-0.229 0.228,-0.444 0.342,-0.665 l 21.53,3.303 C -3.061,-1.801 -1.389,-1.003 0,0"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path126" /></g><g
+           id="g128"
+           transform="translate(87.3069,218.4011)"><path
+             d="M 0,0 C 0.02,0.003 0.04,0.007 0.061,0.012 0.664,0.133 1.147,0.584 1.313,1.176 2.08,3.941 5.318,5.343 7.911,5.708 10.878,6.191 14.315,6.861 17.4,7.979 L -4.13,4.676 C -3.344,3.149 -2.493,1.796 -1.546,0.601 -1.177,0.133 -0.585,-0.095 0,0"
+             style="fill:#ed1c24;fill-rule:nonzero;stroke:none"
+             id="path130" /></g><g
+           id="g132"
+           transform="translate(155.9055,296.6824)"><path
+             d="m 0,0 c -77.625,0 -140.777,-63.152 -140.777,-140.777 0,-77.624 63.152,-140.777 140.777,-140.777 77.625,0 140.777,63.153 140.777,140.777 C 140.777,-63.152 77.625,0 0,0 m 0,-282.554 c -78.176,0 -141.777,63.601 -141.777,141.777 C -141.777,-62.601 -78.176,1 0,1 78.176,1 141.777,-62.601 141.777,-140.777 141.777,-218.953 78.176,-282.554 0,-282.554"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path134" /></g><g
+           id="g136"
+           transform="translate(155.8209,177.6878)"><path
+             d="M 0,0 C -1.372,-0.015 -2.74,-0.025 -4.127,-0.061 -66.666,-1.65 -113.135,-23.135 -135.814,-35.538 -128.635,-104.661 -69.419,-157.594 0,-157.52 Z"
+             style="fill:#54c15d;fill-rule:nonzero;stroke:none"
+             id="path138" /></g><g
+           id="g140"
+           transform="translate(155.4725,177.683)"><path
+             d="m 0,0 v -157.516 c 0.754,-0.001 1.508,-0.005 2.265,0.007 69.993,1.059 128.457,55.749 133.897,125.419 C 113.444,-20.408 64.804,0.797 0,0"
+             style="fill:#ef2d38;fill-rule:nonzero;stroke:none"
+             id="path142" /></g><path
+           d="m 233.887,114.951 h -13.721 v 2.18 h 13.721 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path144" /><path
+           d="m 233.887,119.81 h -13.721 v 2.181 h 13.721 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path146" /><path
+           d="m 233.887,124.67 h -13.721 v 2.18 h 13.721 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path148" /><path
+           d="m 233.522,130.107 h -2.18 v 29.27 h 2.18 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path150" /><path
+           d="m 227.995,130.107 h -2.18 v 29.27 h 2.18 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path152" /><path
+           d="m 222.468,130.107 h -2.181 v 29.27 h 2.181 z"
+           style="fill:#ef2d38;fill-rule:nonzero;stroke:none"
+           id="path154" /><path
+           d="m 222.468,130.107 h -2.181 v 29.27 h 2.181 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path156" /><g
+           id="g158"
+           transform="translate(216.3065,128.8938)"><path
+             d="m 0,0 c 0,-6.511 -3.968,-11.535 -10.885,-13.782 -2.339,-0.76 -5.002,-1.162 -7.701,-1.162 -2.306,0 -4.585,0.281 -6.773,0.837 -5.151,1.309 -9.466,4.051 -12.156,7.724 l 1.756,1.275 c 2.394,-3.262 6.274,-5.71 10.935,-6.894 4.42,-1.123 9.256,-1.019 13.269,0.285 2.811,0.913 5.142,2.39 6.744,4.269 1.751,2.056 2.639,4.561 2.639,7.448 0,7.172 -7.673,9.79 -13.839,11.894 -3.886,1.327 -7.558,2.58 -7.558,5.125 0,1.465 1.143,3.945 5.424,3.945 5.087,0 9.79,-3.182 10.366,-3.586 l -1.267,-1.764 c -0.518,0.355 -4.762,3.178 -9.099,3.178 -1.638,0 -2.822,-0.533 -3.017,-1.357 -0.143,-0.613 0.315,-1.251 1.227,-1.706 1.181,-0.589 2.932,-1.202 4.625,-1.78 3.238,-1.104 6.907,-2.357 9.894,-4.412 C -1.823,7.064 0,3.855 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path160" /></g><g
+           id="g162"
+           transform="translate(184.4959,152.2236)"><path
+             d="m 0,0 c -1.298,-1.783 -1.984,-3.755 -1.984,-5.701 0,-7.931 7.787,-10.607 14.044,-12.759 4.182,-1.437 7.484,-2.573 7.484,-5.182 0,-2.991 -3.422,-4.056 -6.623,-4.056 -6.079,0 -9.673,3.933 -10.116,4.447 l 1.674,1.385 c 0.4,-0.447 3.46,-3.661 8.442,-3.661 2.604,0 4.223,0.74 4.223,1.93 0,1.176 -2.225,1.906 -4.579,2.68 -0.4,0.131 -0.813,0.266 -1.211,0.403 -3.283,1.129 -7.003,2.409 -10.036,4.588 -3.632,2.608 -5.473,6.05 -5.473,10.225 0,4.86 3.317,9.495 8.658,12.096 3.558,1.732 7.646,2.376 11.826,1.862 4.744,-0.581 9.342,-2.589 13.669,-5.966 L 28.659,0.583 C 24.648,3.712 20.411,5.57 16.064,6.104 12.303,6.566 8.634,5.991 5.454,4.443 3.204,3.348 1.318,1.811 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path164" /></g><g
+           id="g166"
+           transform="translate(188.4841,146.1559)"><path
+             d="m 0,0 c 0,-4.124 5,-5.905 10.293,-7.79 2.706,-0.963 5.505,-1.959 7.624,-3.327 2.59,-1.672 3.849,-3.695 3.849,-6.186 0,-3.273 -1.467,-5.896 -4.242,-7.585 -2.874,-1.75 -6.471,-2.117 -8.984,-2.117 -8.881,0 -13.639,5.839 -14.146,6.495 l 1.749,1.304 c 0.214,-0.268 1.295,-1.557 3.145,-2.808 2.759,-1.865 5.872,-2.811 9.252,-2.811 3.203,0 5.917,0.622 7.851,1.798 2.12,1.291 3.196,3.217 3.196,5.724 0,3.89 -4.87,5.625 -10.025,7.46 -2.763,0.983 -5.619,2 -7.796,3.42 -2.656,1.73 -3.946,3.831 -3.946,6.423 0,2.964 2.27,6.011 5.784,7.763 2.714,1.353 10.043,3.725 19.555,-3.409 L 21.848,2.613 C 13.31,9.015 6.928,6.985 4.577,5.812 1.882,4.468 0,2.078 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path168" /></g><g
+           id="g170"
+           transform="translate(165.6138,95.3279)"><path
+             d="m 0,0 2.136,1.498 c 0.875,-1.231 2.492,-2.076 4.642,-2.076 1.913,0 2.803,0.4 2.803,1.231 0,0.652 -0.445,0.919 -1.69,1.053 L 4.657,2.062 C 2.091,2.343 0.831,3.293 0.831,5.236 c 0,2.091 2.046,3.337 5.65,3.337 2.655,0 4.732,-0.697 6.052,-2.18 L 10.634,4.806 C 9.863,5.859 8.35,6.481 6.333,6.481 4.702,6.481 3.827,6.096 3.827,5.369 c 0,-0.638 0.43,-0.89 1.779,-1.023 L 8.499,4.049 c 2.907,-0.296 4.108,-1.157 4.108,-3.1 0,-2.343 -2.165,-3.648 -5.977,-3.648 C 3.515,-2.699 1.083,-1.661 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path172" /></g><path
+           d="m 180.075,103.53 h 2.996 V 93 h -2.996 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path174" /><g
+           id="g176"
+           transform="translate(185.8005,103.5298)"><path
+             d="m 0,0 h 3.204 l 5.473,-5.977 c 0.341,-0.415 0.637,-0.771 0.83,-1.187 H 9.566 V -5.651 0 h 2.715 V -10.53 H 9.3 l -5.681,6.036 c -0.282,0.326 -0.682,0.86 -0.845,1.201 H 2.714 V -4.761 -10.53 H 0 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path178" /></g><path
+           d="m 200.811,103.53 h 2.996 V 93 h -2.996 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path180" /><g
+           id="g182"
+           transform="translate(205.1717,95.3279)"><path
+             d="m 0,0 2.136,1.498 c 0.875,-1.231 2.492,-2.076 4.642,-2.076 1.913,0 2.803,0.4 2.803,1.231 0,0.652 -0.445,0.919 -1.69,1.053 L 4.657,2.062 C 2.091,2.343 0.831,3.293 0.831,5.236 c 0,2.091 2.046,3.337 5.65,3.337 2.655,0 4.732,-0.697 6.052,-2.18 L 10.634,4.806 C 9.863,5.859 8.35,6.481 6.333,6.481 4.702,6.481 3.827,6.096 3.827,5.369 c 0,-0.638 0.43,-0.89 1.779,-1.023 L 8.499,4.049 c 2.907,-0.296 4.108,-1.157 4.108,-3.1 0,-2.343 -2.165,-3.648 -5.977,-3.648 C 3.515,-2.699 1.083,-1.661 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path184" /></g><g
+           id="g186"
+           transform="translate(230.1639,101.2012)"><path
+             d="M 0,0 H -4.375 V -8.202 H -7.372 V 0 h -4.375 V 2.329 H 0 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path188" /></g><g
+           id="g190"
+           transform="translate(234.6734,98.6354)"><path
+             d="m 0,0 h 3.5 c 1.439,0 1.869,0.727 1.869,1.468 0,0.727 -0.43,1.424 -1.869,1.424 H 0 Z M 3.04,-1.913 H 0 v -3.723 h -2.996 v 10.53 h 7.178 c 3.382,0 4.361,-1.735 4.361,-3.337 0,-1.171 -0.593,-2.551 -2.358,-3.129 L 8.929,-5.636 H 5.547 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path192" /></g><g
+           id="g194"
+           transform="translate(253.3621,97.0484)"><path
+             d="M 0,0 -1.038,2.269 C -1.557,3.352 -1.824,3.945 -2.017,4.702 H -2.062 C -2.254,3.945 -2.521,3.352 -3.041,2.269 L -4.079,0 Z m 0.89,-1.928 h -5.859 l -0.964,-2.121 h -3.233 l 5.25,10.53 h 3.753 l 5.25,-10.53 H 1.854 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path196" /></g><path
+           d="m 166.445,84.318 h 2.996 v -10.53 h -2.996 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path198" /><g
+           id="g200"
+           transform="translate(182.7003,81.9893)"><path
+             d="M 0,0 H -4.375 V -8.202 H -7.372 V 0 h -4.375 V 2.329 H 0 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path202" /></g><g
+           id="g204"
+           transform="translate(192.1637,77.8365)"><path
+             d="M 0,0 -1.038,2.269 C -1.557,3.352 -1.824,3.945 -2.017,4.702 H -2.062 C -2.254,3.945 -2.521,3.352 -3.041,2.269 L -4.079,0 Z m 0.89,-1.928 h -5.859 l -0.964,-2.121 h -3.233 l 5.25,10.53 h 3.753 l 5.25,-10.53 H 1.854 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path206" /></g><g
+           id="g208"
+           transform="translate(198.7645,84.3178)"><path
+             d="M 0,0 H 2.996 V -8.187 H 10.13 V -10.53 H 0 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path210" /></g><path
+           d="m 210.66,84.318 h 2.996 v -10.53 h -2.996 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path212" /><g
+           id="g214"
+           transform="translate(224.335,77.8365)"><path
+             d="M 0,0 -1.038,2.269 C -1.557,3.352 -1.824,3.945 -2.017,4.702 H -2.062 C -2.254,3.945 -2.521,3.352 -3.041,2.269 L -4.079,0 Z m 0.89,-1.928 h -5.859 l -0.964,-2.121 h -3.233 l 5.25,10.53 h 3.753 l 5.25,-10.53 H 1.854 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path216" /></g><g
+           id="g218"
+           transform="translate(230.9358,84.3178)"><path
+             d="m 0,0 h 3.204 l 5.473,-5.977 c 0.341,-0.415 0.637,-0.771 0.83,-1.187 H 9.566 V -5.651 0 h 2.715 V -10.53 H 9.3 l -5.681,6.036 c -0.282,0.326 -0.682,0.86 -0.845,1.201 H 2.714 V -4.761 -10.53 H 0 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path220" /></g><g
+           id="g222"
+           transform="translate(253.8962,77.8365)"><path
+             d="M 0,0 -1.038,2.269 C -1.557,3.352 -1.824,3.945 -2.017,4.702 H -2.062 C -2.254,3.945 -2.521,3.352 -3.041,2.269 L -4.079,0 Z m 0.89,-1.928 h -5.859 l -0.964,-2.121 h -3.233 l 5.25,10.53 h 3.753 l 5.25,-10.53 H 1.854 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path224" /></g><path
+           d="m 258.77,87.689 h -92.9 v 1.591 h 92.9 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path226" /><path
+           d="m 258.77,69.267 h -92.9 v 1.591 h 92.9 z"
+           style="fill:#FFF;fill-rule:nonzero;stroke:none"
+           id="path228" /><g
+           id="g230"
+           transform="translate(103.3378,161.7986)"><path
+             d="m 0,0 v 0 c 0.001,-0.003 -0.26,-0.384 -0.66,-1.021 -0.4,-0.638 -0.941,-1.531 -1.499,-2.559 -0.559,-1.027 -1.135,-2.189 -1.607,-3.362 -0.473,-1.173 -0.841,-2.358 -0.982,-3.431 -0.142,-1.079 -0.038,-1.951 0.196,-2.652 0.235,-0.702 0.601,-1.233 0.985,-1.629 0.383,-0.397 0.785,-0.658 1.091,-0.821 0.306,-0.162 0.516,-0.226 0.517,-0.225 0.001,0 0.244,0.202 0.617,0.574 0.373,0.373 0.875,0.914 1.392,1.592 0.519,0.678 1.053,1.493 1.489,2.41 0.437,0.918 0.777,1.939 0.906,3.029 0.128,1.093 0.039,2.146 -0.166,3.11 -0.205,0.964 -0.527,1.839 -0.864,2.578 -0.337,0.738 -0.691,1.34 -0.96,1.757 C 0.186,-0.233 0.001,0 0,0"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path232" /></g><g
+           id="g234"
+           transform="translate(84.9615,137.8553)"><path
+             d="M 0,0 C -0.006,-0.001 -0.012,-0.002 -0.017,-0.002 -0.023,-0.003 -0.029,-0.004 -0.035,-0.005 -0.041,-0.006 -0.047,-0.007 -0.052,-0.007 -0.058,-0.008 -0.064,-0.009 -0.07,-0.01 -1.249,-0.208 -2.483,-0.487 -3.675,-0.796 -4.868,-1.105 -6.019,-1.444 -7.033,-1.76 c -1.015,-0.315 -1.893,-0.607 -2.539,-0.824 -0.646,-0.216 -1.061,-0.357 -1.148,-0.369 -0.003,-0.001 -0.005,-0.001 -0.007,-0.001 -0.003,0 -0.005,0 -0.006,0 -10e-4,0 -0.003,0 -0.003,0.001 -10e-4,0 -10e-4,10e-4 -10e-4,0.002 -0.004,-0.018 0.293,-0.274 0.817,-0.637 0.525,-0.364 1.276,-0.835 2.182,-1.282 0.906,-0.448 1.965,-0.872 3.105,-1.141 1.14,-0.27 2.36,-0.384 3.587,-0.212 0.005,10e-4 0.01,0.002 0.015,0.002 0.005,0.001 0.011,0.002 0.016,0.003 0.005,0 0.011,0.001 0.016,0.002 0.005,0.001 0.011,0.001 0.016,0.002 0.009,0.001 0.018,0.003 0.027,0.004 0.009,0.001 0.017,0.002 0.026,0.003 0.009,10e-4 0.018,0.003 0.026,0.004 0.009,0.001 0.018,0.003 0.027,0.004 0.602,0.084 1.173,0.217 1.712,0.386 0.539,0.169 1.046,0.374 1.518,0.6 0.472,0.227 0.911,0.475 1.313,0.731 0.402,0.257 0.769,0.523 1.098,0.783 0.33,0.259 0.621,0.513 0.874,0.749 0.253,0.236 0.466,0.452 0.639,0.637 0.172,0.184 0.305,0.336 0.394,0.442 0.09,0.106 0.137,0.166 0.141,0.167 v 0 C 6.813,-1.692 6.688,-1.537 6.426,-1.322 6.164,-1.107 5.764,-0.832 5.213,-0.58 4.663,-0.327 3.962,-0.098 3.097,0.027 2.232,0.151 1.204,0.17 0,0"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path236" /></g><g
+           id="g238"
+           transform="translate(116.9947,145.6546)"><path
+             d="m 0,0 c -0.016,-0.002 -0.032,-0.004 -0.048,-0.007 -0.016,-0.002 -0.031,-0.004 -0.047,-0.007 -0.016,-0.002 -0.032,-0.005 -0.048,-0.007 -0.016,-0.003 -0.032,-0.006 -0.048,-0.008 -1.214,-0.178 -2.3,-0.558 -3.246,-1.03 -0.947,-0.471 -1.754,-1.034 -2.411,-1.573 -0.656,-0.541 -1.162,-1.059 -1.506,-1.442 -0.343,-0.384 -0.525,-0.633 -0.533,-0.633 v 0 c -0.002,-0.01 0.127,-0.171 0.399,-0.398 0.273,-0.225 0.688,-0.516 1.257,-0.786 0.57,-0.269 1.294,-0.517 2.184,-0.658 0.889,-0.141 1.945,-0.174 3.178,-0.014 1.211,0.18 2.466,0.463 3.671,0.786 1.205,0.323 2.36,0.687 3.37,1.03 1.01,0.342 1.874,0.663 2.501,0.901 0.626,0.237 1.013,0.39 1.067,0.398 0.002,0 0.002,0 0.003,0 h 0.002 0.001 c 10e-4,0 10e-4,0 10e-4,0 -0.005,0.028 -0.316,0.3 -0.854,0.682 -0.539,0.382 -1.305,0.873 -2.221,1.34 C 5.756,-0.96 4.69,-0.518 3.552,-0.236 2.415,0.047 1.205,0.17 0,0 m 9.747,-3.448 v 0 -10e-4 0 0 z"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path240" /></g><g
+           id="g242"
+           transform="translate(79.3821,145.6557)"><path
+             d="m 0,0 v 0 -0.001 c 0,-0.001 0,-0.001 0,-0.001 0,-0.001 0.001,-0.001 0.001,-0.002 0.001,0 0.001,0 0.001,-0.001 0,0.001 0,0.002 -0.001,0.002 0,0.001 0,0.001 -0.001,0.002 C 0,-0.001 0,0 0,0 V 0 M 0.002,-0.005 C 0.021,-0.048 0.166,-0.398 0.431,-0.919 0.698,-1.441 1.085,-2.137 1.59,-2.873 2.095,-3.61 2.717,-4.389 3.452,-5.076 4.188,-5.763 5.038,-6.36 5.996,-6.734 c 0.314,-0.123 0.63,-0.218 0.945,-0.29 0.316,-0.071 0.63,-0.118 0.942,-0.144 0.311,-0.027 0.62,-0.033 0.924,-0.022 0.303,0.011 0.602,0.039 0.892,0.08 0.306,0.043 0.602,0.1 0.888,0.168 0.286,0.067 0.56,0.145 0.822,0.229 0.261,0.083 0.509,0.173 0.74,0.264 0.231,0.091 0.446,0.184 0.642,0.275 0.196,0.09 0.373,0.178 0.529,0.258 0.155,0.081 0.289,0.155 0.398,0.217 0.109,0.063 0.194,0.114 0.252,0.149 0.058,0.036 0.089,0.056 0.09,0.056 0.002,0.006 0.015,0.236 -0.027,0.597 -0.042,0.36 -0.139,0.85 -0.36,1.375 -0.22,0.526 -0.564,1.087 -1.098,1.588 -0.534,0.502 -1.259,0.944 -2.242,1.232 -0.974,0.249 -2.099,0.408 -3.241,0.51 -1.141,0.102 -2.299,0.145 -3.338,0.162 -1.04,0.017 -1.962,0.007 -2.632,10e-4 -0.67,-0.007 -1.088,-0.009 -1.12,0.024"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path244" /></g><g
+           id="g246"
+           transform="translate(89.9927,154.8969)"><path
+             d="m 0,0 v 0 m 0,0 c 0,0 -0.072,-0.363 -0.15,-0.956 -0.078,-0.592 -0.163,-1.415 -0.188,-2.335 -0.025,-0.921 0.009,-1.94 0.17,-2.925 0.16,-0.985 0.447,-1.936 0.926,-2.721 0.385,-0.633 0.868,-1.1 1.393,-1.44 0.525,-0.34 1.093,-0.554 1.648,-0.685 0.556,-0.129 1.1,-0.175 1.577,-0.178 0.477,-0.003 0.888,0.037 1.177,0.078 0.071,0.009 0.134,0.02 0.19,0.029 0.055,0.01 0.103,0.018 0.141,0.026 0.039,0.008 0.069,0.015 0.089,0.02 0.02,0.004 0.03,0.008 0.03,0.008 v 0 c 0.002,0 0.15,0.25 0.341,0.671 0.19,0.422 0.423,1.014 0.594,1.699 0.171,0.686 0.28,1.465 0.223,2.258 -0.057,0.793 -0.279,1.601 -0.772,2.345 -0.494,0.729 -1.205,1.345 -1.991,1.861 -0.786,0.516 -1.649,0.932 -2.45,1.259 -0.8,0.327 -1.539,0.564 -2.076,0.725 C 0.334,-0.101 -0.003,-0.017 0,0"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path248" /></g><g
+           id="g250"
+           transform="translate(121.3101,154.5835)"><path
+             d="M 0,0 C -0.557,-0.079 -1.163,-0.187 -1.796,-0.334 -2.43,-0.48 -3.092,-0.665 -3.76,-0.897 c -0.669,-0.231 -1.345,-0.51 -2.007,-0.845 -0.662,-0.335 -1.31,-0.726 -1.923,-1.182 -1.117,-0.794 -2.001,-1.64 -2.7,-2.463 -0.7,-0.822 -1.214,-1.621 -1.588,-2.321 -0.374,-0.7 -0.609,-1.3 -0.75,-1.725 -0.142,-0.425 -0.189,-0.676 -0.189,-0.676 -10e-4,-0.002 0.059,-0.013 0.173,-0.025 0.114,-0.012 0.282,-0.026 0.499,-0.032 0.217,-0.007 0.482,-0.006 0.789,0.009 0.307,0.016 0.656,0.046 1.041,0.101 0.372,0.052 0.777,0.126 1.21,0.23 0.432,0.104 0.893,0.236 1.376,0.405 0.483,0.17 0.988,0.376 1.509,0.626 0.521,0.251 1.059,0.545 1.607,0.891 1.117,0.707 2.167,1.562 3.115,2.446 0.948,0.885 1.793,1.799 2.497,2.626 0.705,0.827 1.271,1.565 1.66,2.098 C 2.947,-0.201 3.16,0.127 3.16,0.131 3.162,0.147 3.081,0.164 2.93,0.175 2.779,0.187 2.557,0.193 2.278,0.189 1.998,0.184 1.661,0.17 1.277,0.14 0.893,0.111 0.464,0.065 0,0"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path252" /></g><g
+           id="g254"
+           transform="translate(115.9617,162.503)"><path
+             d="m 0,0 c -0.027,-0.004 -0.423,-0.267 -1.046,-0.73 -0.623,-0.463 -1.474,-1.127 -2.412,-1.932 -0.938,-0.806 -1.963,-1.753 -2.934,-2.784 -0.971,-1.03 -1.888,-2.144 -2.61,-3.283 -0.728,-1.132 -1.18,-2.161 -1.449,-3.066 -0.269,-0.906 -0.354,-1.689 -0.348,-2.331 0.006,-0.642 0.103,-1.142 0.198,-1.483 0.096,-0.34 0.19,-0.52 0.191,-0.522 0,0.003 0.275,0.099 0.731,0.31 0.457,0.212 1.096,0.537 1.824,0.999 0.728,0.462 1.545,1.06 2.36,1.816 0.814,0.755 1.626,1.668 2.341,2.759 0.715,1.094 1.27,2.281 1.699,3.447 0.43,1.165 0.735,2.309 0.95,3.316 0.215,1.006 0.342,1.876 0.414,2.496 0.073,0.618 0.091,0.986 0.093,0.987 V 0 c 0,0 -0.001,0 -0.001,0 v 0 z"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path256" /></g><g
+           id="g258"
+           transform="translate(99.4917,130.9732)"><path
+             d="M 0,0 V 0 C 0,-0.002 -0.247,-0.199 -0.627,-0.563 -1.006,-0.927 -1.519,-1.456 -2.05,-2.12 -2.58,-2.785 -3.128,-3.584 -3.58,-4.488 -4.031,-5.391 -4.385,-6.4 -4.527,-7.482 c -0.143,-1.084 -0.055,-2.146 0.156,-3.13 0.213,-0.984 0.549,-1.889 0.904,-2.66 0.354,-0.771 0.727,-1.406 1.012,-1.848 0.284,-0.443 0.48,-0.694 0.482,-0.695 0.002,0 0.276,0.369 0.693,0.992 0.417,0.623 0.979,1.499 1.556,2.512 0.577,1.013 1.169,2.163 1.65,3.335 0.48,1.171 0.849,2.364 0.978,3.462 C 3.033,-4.416 2.918,-3.522 2.671,-2.8 2.425,-2.077 2.047,-1.524 1.653,-1.11 1.258,-0.695 0.847,-0.417 0.534,-0.244 0.22,-0.07 0.004,0 0,0"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path260" /></g><g
+           id="g262"
+           transform="translate(89.8181,132.6355)"><path
+             d="m 0,0 c -0.371,-0.052 -0.773,-0.124 -1.203,-0.224 -0.43,-0.099 -0.887,-0.225 -1.366,-0.385 -0.479,-0.16 -0.98,-0.354 -1.499,-0.587 -0.518,-0.233 -1.054,-0.507 -1.602,-0.827 -1.14,-0.669 -2.228,-1.463 -3.219,-2.278 -0.992,-0.816 -1.886,-1.652 -2.638,-2.404 -0.752,-0.753 -1.363,-1.422 -1.785,-1.904 -0.422,-0.481 -0.656,-0.775 -0.657,-0.777 -0.003,-0.019 0.112,-0.044 0.324,-0.065 0.213,-0.021 0.523,-0.039 0.909,-0.044 0.387,-0.004 0.852,0.005 1.373,0.036 0.521,0.031 1.098,0.085 1.713,0.171 0.529,0.074 1.086,0.172 1.657,0.299 0.571,0.128 1.156,0.286 1.742,0.479 0.586,0.194 1.174,0.424 1.749,0.695 0.575,0.272 1.138,0.585 1.676,0.947 1.152,0.741 2.067,1.543 2.791,2.331 0.725,0.787 1.259,1.559 1.65,2.238 0.39,0.68 0.637,1.267 0.787,1.685 0.149,0.418 0.202,0.666 0.204,0.668 C 2.605,0.057 2.541,0.07 2.421,0.083 2.302,0.096 2.126,0.11 1.901,0.116 1.675,0.123 1.4,0.122 1.081,0.105 0.762,0.088 0.4,0.056 0,0 m 2.606,0.054 z"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path264" /></g><g
+           id="g266"
+           transform="translate(95.2538,130.803)"><path
+             d="m 0,0 c 0,-0.002 -0.278,-0.093 -0.741,-0.294 -0.463,-0.202 -1.112,-0.513 -1.855,-0.954 -0.743,-0.442 -1.581,-1.013 -2.42,-1.734 -0.841,-0.721 -1.683,-1.593 -2.437,-2.634 -0.755,-1.043 -1.353,-2.178 -1.823,-3.294 -0.471,-1.117 -0.815,-2.214 -1.066,-3.182 -0.25,-0.969 -0.405,-1.807 -0.498,-2.404 -0.094,-0.598 -0.124,-0.954 -0.124,-0.959 0,0 0,0 0.001,0 v -10e-4 h 10e-4 0.002 c 0.041,0.006 0.466,0.241 1.127,0.659 0.662,0.418 1.559,1.019 2.544,1.759 0.986,0.739 2.059,1.615 3.074,2.584 1.014,0.968 1.969,2.029 2.716,3.136 0.756,1.102 1.227,2.111 1.508,3.004 0.282,0.893 0.374,1.671 0.372,2.31 -0.002,0.64 -0.098,1.141 -0.193,1.483 C 0.093,-0.18 -0.001,0.001 0,0"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path268" /></g><g
+           id="g270"
+           transform="translate(111.774,138.4055)"><path
+             d="m 0,0 c -0.299,-0.042 -0.589,-0.098 -0.868,-0.163 -0.279,-0.066 -0.546,-0.141 -0.8,-0.223 -0.254,-0.081 -0.494,-0.167 -0.718,-0.256 -0.224,-0.088 -0.432,-0.178 -0.621,-0.265 -0.19,-0.087 -0.361,-0.172 -0.512,-0.25 -0.15,-0.078 -0.28,-0.148 -0.386,-0.209 -0.106,-0.059 -0.189,-0.109 -0.246,-0.143 -0.057,-0.034 -0.089,-0.054 -0.092,-0.054 -10e-4,-0.008 -0.011,-0.244 0.038,-0.615 0.049,-0.371 0.158,-0.877 0.395,-1.426 0.237,-0.548 0.602,-1.139 1.163,-1.678 0.561,-0.54 1.32,-1.029 2.343,-1.375 1.017,-0.304 2.187,-0.526 3.372,-0.689 1.185,-0.164 2.385,-0.269 3.463,-0.341 1.078,-0.071 2.033,-0.109 2.727,-0.137 0.695,-0.028 1.128,-0.046 1.164,-0.08 C 10.4,-7.856 10.231,-7.469 9.927,-6.89 9.624,-6.311 9.187,-5.539 8.629,-4.723 8.071,-3.906 7.391,-3.044 6.604,-2.284 5.817,-1.524 4.921,-0.865 3.93,-0.453 3.592,-0.312 3.253,-0.202 2.917,-0.12 2.58,-0.038 2.245,0.017 1.914,0.049 1.583,0.081 1.257,0.09 0.937,0.081 0.617,0.071 0.304,0.043 0,0 m 10.422,-7.904 c 0,-0.001 10e-4,-0.002 10e-4,-0.002 0,-0.001 0,-0.001 10e-4,-0.002 0,0 0,-10e-4 0,-10e-4 v 0 10e-4 c 0,0.001 0,0.001 0,0.001 0,0.001 -10e-4,0.001 -10e-4,0.002 0,0 -10e-4,0 -10e-4,0.001"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path272" /></g><g
+           id="g274"
+           transform="translate(104.3295,133.2862)"><path
+             d="m 0,0 c -0.048,-0.007 -0.09,-0.013 -0.127,-0.019 -0.036,-0.006 -0.068,-0.012 -0.093,-0.017 -0.026,-0.004 -0.045,-0.008 -0.059,-0.011 -0.013,-0.003 -0.02,-0.004 -0.02,-0.005 0.001,-0.001 -0.148,-0.25 -0.338,-0.673 -0.19,-0.422 -0.423,-1.017 -0.591,-1.71 -0.168,-0.694 -0.271,-1.486 -0.202,-2.302 0.069,-0.815 0.309,-1.655 0.828,-2.443 0.523,-0.768 1.276,-1.447 2.112,-2.034 0.836,-0.588 1.755,-1.084 2.608,-1.487 0.854,-0.403 1.642,-0.712 2.216,-0.926 0.574,-0.213 0.935,-0.331 0.933,-0.351 v 0 c 10e-4,0 0.063,0.381 0.122,1.007 0.059,0.625 0.116,1.494 0.107,2.468 C 7.488,-7.528 7.414,-6.449 7.212,-5.401 7.011,-4.354 6.681,-3.339 6.161,-2.494 5.722,-1.78 5.182,-1.257 4.602,-0.878 4.021,-0.5 3.402,-0.263 2.805,-0.122 2.209,0.02 1.635,0.069 1.147,0.073 0.659,0.076 0.255,0.036 0,0"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path276" /></g><g
+           id="g278"
+           transform="translate(131.0815,68.3026)"><path
+             d="m 0,0 v 22.179 h 14.293 c 0.35,-0.572 0.525,-1.207 0.525,-1.875 0,-0.699 -0.175,-1.334 -0.525,-1.938 H 5.78 v -5.179 h 7.182 c 0.35,-0.541 0.525,-1.144 0.525,-1.843 0,-0.636 -0.175,-1.24 -0.525,-1.812 H 5.78 V 3.813 h 8.723 C 14.853,3.241 15.028,2.606 15.028,1.938 15.028,1.239 14.853,0.604 14.503,0 Z m -7.6,10.931 c 0,4.957 -1.506,6.99 -5.01,6.99 h -2.487 V 3.845 c 0.666,-0.159 1.507,-0.223 2.487,-0.223 3.328,0 5.01,2.447 5.01,7.309 M -20.877,0.572 v 21.607 h 7.217 c 7.952,0 12.05,-3.845 12.05,-11.248 0,-3.591 -1.016,-6.419 -3.082,-8.453 -2.067,-2.033 -4.975,-3.05 -8.653,-3.05 -3.153,0 -5.675,0.381 -7.532,1.144 m -13.591,17.921 v -6.418 h 2.277 c 2.803,0 4.204,1.112 4.204,3.304 0,2.002 -1.401,3.114 -4.028,3.114 z M -21.331,0.667 C -22.277,0.222 -23.258,0 -24.344,0 c -1.226,0 -2.277,0.222 -3.187,0.667 l -4.975,8.103 h -1.962 V 0.54 C -35.273,0.191 -36.219,0 -37.34,0 c -1.086,0 -2.067,0.191 -2.908,0.54 v 21.639 h 7.217 c 7.041,0 10.824,-2.288 10.824,-6.768 0,-3.051 -1.751,-5.211 -4.694,-6.133 z M -56.886,0 v 22.179 h 14.293 c 0.35,-0.572 0.525,-1.207 0.525,-1.875 0,-0.699 -0.175,-1.334 -0.525,-1.938 h -8.513 v -5.179 h 7.182 c 0.35,-0.541 0.525,-1.144 0.525,-1.843 0,-0.636 -0.175,-1.24 -0.525,-1.812 h -7.182 V 3.813 h 8.723 c 0.35,-0.572 0.526,-1.207 0.526,-1.875 0,-0.699 -0.176,-1.334 -0.526,-1.938 z m -14.116,0.636 -6.621,21.162 c 0.736,0.349 1.752,0.54 2.978,0.54 1.296,0 2.277,-0.191 3.013,-0.54 l 4.344,-17.222 h 0.105 l 4.308,17.222 c 0.736,0.349 1.717,0.54 2.978,0.54 1.226,0 2.242,-0.191 2.978,-0.54 L -63.4,0.636 C -64.591,0.222 -65.852,0 -67.183,0 c -1.297,0 -2.558,0.222 -3.819,0.636"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path280" /></g><g
+           id="g282"
+           transform="translate(53.4258,94.3103)"><path
+             d="m 0,0 v 18.138 h 11.236 c 0.285,-0.493 0.441,-1.064 0.441,-1.764 0,-0.649 -0.156,-1.298 -0.441,-1.921 H 5.19 v -3.451 h 5.086 c 0.285,-0.493 0.441,-1.063 0.441,-1.764 0,-0.675 -0.156,-1.272 -0.441,-1.765 H 5.19 V 3.685 h 6.124 C 11.599,3.14 11.755,2.543 11.755,1.894 11.755,1.245 11.599,0.623 11.314,0 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path284" /></g><g
+           id="g286"
+           transform="translate(81.4785,112.1371)"><path
+             d="m 0,0 v -11.418 c 0,-4.463 -2.621,-6.902 -7.421,-6.902 -4.801,0 -7.422,2.439 -7.422,6.902 V 0 c 0.649,0.337 1.531,0.519 2.621,0.519 1.064,0 1.92,-0.182 2.569,-0.519 v -11.677 c 0,-1.868 0.753,-2.803 2.232,-2.803 1.479,0 2.231,0.935 2.231,2.803 L -5.19,0 c 0.649,0.337 1.505,0.519 2.569,0.519 C -1.531,0.519 -0.649,0.337 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path288" /></g><g
+           id="g290"
+           transform="translate(88.7989,108.8934)"><path
+             d="m 0,0 v -4.437 h 1.427 c 1.661,0 2.491,0.752 2.491,2.283 C 3.918,-0.726 3.114,0 1.479,0 Z m 9.679,-13.908 c -0.804,-0.442 -1.687,-0.675 -2.621,-0.675 -1.116,0 -2.05,0.233 -2.854,0.675 L 0.726,-7.499 H 0 v -6.591 c -0.701,-0.338 -1.557,-0.493 -2.569,-0.493 -1.064,0 -1.92,0.155 -2.621,0.493 V 3.555 h 5.683 c 5.683,0 8.537,-1.868 8.537,-5.631 0,-2.491 -1.245,-4.333 -3.295,-5.06 z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path292" /></g><g
+           id="g294"
+           transform="translate(121.8626,103.6779)"><path
+             d="M 0,0 H 1.427 C 3.088,0 3.918,0.83 3.918,2.465 3.918,4.1 3.114,4.93 1.479,4.93 H 0 Z M -5.19,-8.875 V 8.771 h 5.683 c 5.527,0 8.537,-2.128 8.537,-6.072 0,-4.152 -2.958,-6.41 -8.485,-6.41 H 0 v -5.164 c -0.701,-0.337 -1.557,-0.493 -2.569,-0.493 -1.064,0 -1.92,0.156 -2.621,0.493"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path296" /></g><g
+           id="g298"
+           transform="translate(135.9033,101.4983)"><path
+             d="M 0,0 H 3.14 L 1.609,7.447 H 1.531 Z m -6.643,-6.695 4.645,17.334 c 1.168,0.337 2.335,0.519 3.503,0.519 1.375,0 2.569,-0.182 3.633,-0.519 L 9.783,-6.695 C 9.186,-7.032 8.304,-7.188 7.162,-7.188 c -1.194,0 -2.102,0.156 -2.725,0.493 l -0.622,3.062 h -4.49 l -0.622,-3.062 c -0.623,-0.337 -1.531,-0.493 -2.699,-0.493 -1.142,0 -2.024,0.156 -2.647,0.493"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path300" /></g><g
+           id="g302"
+           transform="translate(116.9844,105.3344)"><path
+             d="m 0,0 c 0,0 -2.724,0.73 -1.419,2.751 0,0 -2.951,-0.111 -2.099,2.471 0,0 -2.668,-0.898 -2.326,2.246 0,0 -2.44,-2.863 -3.461,0.899 0,0 -1.589,-4.043 -3.178,-0.899 0,0 -0.794,-3.481 -3.461,-0.898 0,0 0.794,-3.425 -2.609,-2.752 0,0 1.304,-2.47 -1.192,-2.358 0,0 1.532,-2.134 -1.021,-2.92 0,0 3.413,-1.815 0.341,-4.033 0,0 3.583,0 2.408,-2.963 0,0 1.85,0.915 2.796,-0.1 0.495,-0.609 0.746,-1.465 0.257,-2.64 0,0 2.759,3.152 3.78,-0.61 0,0 1.601,3.66 3.19,0.516 0,0 0.795,3.481 3.461,0.898 0,0 -1.108,3.176 2.078,1.839 -0.007,0.013 -1.034,2.949 1.661,2.264 0,0 -1.752,1.627 0.567,2.92 0,0 -1.646,1.741 0.227,3.369"
+             style="fill:#fcd205;fill-rule:nonzero;stroke:none"
+             id="path304" /></g><g
+           id="g306"
+           transform="translate(102.0969,106.7217)"><path
+             d="m 0,0 c 0,0 1.868,0.274 2.417,-1.264 0,0 -0.181,-0.553 -0.549,-0.439 0,0 -0.495,1.044 -1.923,0.906 0,0 -1.044,0.027 -1.922,-1.676 0,0 -0.358,-0.247 -0.358,0.138 0,0 0.358,1.813 2.335,2.335"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path308" /></g><g
+           id="g310"
+           transform="translate(106.2719,106.1995)"><path
+             d="m 0,0 c 0,0 -0.494,-2.088 1.511,-3.9 0,0 0,-0.11 0.302,0 0,0 0.302,0.164 0.193,0.576 0,0 -1.539,1.429 -1.484,3.214 0,0 -0.083,0.357 -0.522,0.11"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path312" /></g><g
+           id="g314"
+           transform="translate(110.2845,107.2456)"><path
+             d="m 0,0 c 0,0 1.995,0.004 2.388,-1.582 0,0 -0.345,-0.449 -0.7,-0.299 0,0 -0.388,1.088 -1.822,1.094 0,0 -0.982,0.241 -2.026,-1.366 0,0 -0.352,-0.128 -0.314,0.255 0,0 0.454,1.576 2.474,1.898"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path316" /></g><g
+           id="g318"
+           transform="translate(112.3979,102.4638)"><path
+             d="m 0,0 c 0,0 -2.96,-5.425 -9.882,-1.415 l 0.11,0.152 c 0,0 -0.002,0.21 -0.172,0.088 -0.24,-0.171 -0.295,-0.37 -0.398,-0.556 -0.054,-0.096 -0.041,-0.323 0.096,-0.137 0,0 0.117,0.254 0.302,-0.027 0,0 7.664,-5.356 9.944,1.895"
+             style="fill:#16433e;fill-rule:nonzero;stroke:none"
+             id="path320" /></g><g
+           id="g322"
+           transform="translate(93.5453,62.6843)"><path
+             d="m 0,0 v -0.586 h -2.787 v 3.765 h 2.713 V 2.593 H -2.097 V 1.614 h 1.794 V 1.038 H -2.097 V 0 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path324" /></g><g
+           id="g326"
+           transform="translate(96.7057,64.9704)"><path
+             d="m 0,0 v -2.872 h -0.632 v 0.365 c -0.212,-0.263 -0.547,-0.402 -0.913,-0.402 -0.727,0 -1.221,0.402 -1.221,1.269 V 0 h 0.664 v -1.549 c 0,-0.522 0.244,-0.77 0.664,-0.77 0.461,0 0.774,0.292 0.774,0.867 V 0 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path328" /></g><g
+           id="g330"
+           transform="translate(98.953,65.0031)"><path
+             d="m 0,0 v -0.64 c -0.059,0.01 -0.106,0.016 -0.154,0.016 -0.504,0 -0.823,-0.301 -0.823,-0.888 V -2.905 H -1.64 v 2.872 h 0.631 V -0.452 C -0.817,-0.151 -0.473,0 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path332" /></g><g
+           id="g334"
+           transform="translate(101.3432,63.5348)"><path
+             d="m 0,0 c 0,0.548 -0.361,0.898 -0.844,0.898 -0.477,0 -0.839,-0.35 -0.839,-0.898 0,-0.549 0.362,-0.899 0.839,-0.899 C -0.361,-0.899 0,-0.549 0,0 m -2.351,0 c 0,0.861 0.636,1.468 1.507,1.468 0.882,0 1.513,-0.607 1.513,-1.468 0,-0.861 -0.631,-1.474 -1.513,-1.474 -0.871,0 -1.507,0.613 -1.507,1.474"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path336" /></g><g
+           id="g338"
+           transform="translate(104.7207,63.5348)"><path
+             d="m 0,0 c 0,0.548 -0.361,0.898 -0.839,0.898 -0.477,0 -0.844,-0.35 -0.844,-0.898 0,-0.549 0.367,-0.899 0.844,-0.899 C -0.361,-0.899 0,-0.549 0,0 m 0.674,0 c 0,-0.893 -0.61,-1.474 -1.438,-1.474 -0.361,0 -0.68,0.123 -0.908,0.387 v -1.394 h -0.664 v 3.917 h 0.632 V 1.059 c 0.223,0.274 0.552,0.409 0.94,0.409 0.828,0 1.438,-0.58 1.438,-1.468"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path340" /></g><g
+           id="g342"
+           transform="translate(106.1877,63.7655)"><path
+             d="M 0,0 H 1.608 C 1.555,0.414 1.242,0.7 0.807,0.7 0.377,0.7 0.064,0.42 0,0 M 2.23,-0.447 H 0.005 c 0.08,-0.419 0.425,-0.688 0.919,-0.688 0.318,0 0.568,0.102 0.769,0.313 L 2.049,-1.238 C 1.794,-1.544 1.396,-1.704 0.908,-1.704 c -0.951,0 -1.566,0.617 -1.566,1.473 0,0.855 0.621,1.469 1.465,1.469 0.828,0 1.434,-0.587 1.434,-1.486 0,-0.054 -0.006,-0.133 -0.011,-0.199"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path344" /></g><g
+           id="g346"
+           transform="translate(110.431,62.9959)"><path
+             d="m 0,0 v 0.334 h -0.685 c -0.451,0 -0.573,-0.172 -0.573,-0.382 0,-0.242 0.202,-0.398 0.541,-0.398 0.324,0 0.606,0.151 0.717,0.446 M 0.663,0.786 V -0.898 H 0.037 v 0.35 c -0.159,-0.247 -0.467,-0.387 -0.892,-0.387 -0.648,0 -1.056,0.36 -1.056,0.861 0,0.478 0.318,0.855 1.178,0.855 H 0 v 0.043 c 0,0.392 -0.234,0.624 -0.706,0.624 -0.319,0 -0.648,-0.108 -0.86,-0.286 l -0.261,0.49 c 0.303,0.237 0.744,0.355 1.2,0.355 0.818,0 1.29,-0.393 1.29,-1.221"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path348" /></g><g
+           id="g350"
+           transform="translate(114.4722,63.7441)"><path
+             d="m 0,0 v -1.646 h -0.664 v 1.561 c 0,0.51 -0.249,0.758 -0.674,0.758 -0.472,0 -0.791,-0.29 -0.791,-0.867 v -1.452 h -0.663 v 2.872 h 0.631 V 0.855 c 0.218,0.264 0.563,0.404 0.977,0.404 C -0.505,1.259 0,0.866 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path352" /></g><g
+           id="g354"
+           transform="translate(118.8543,64.0242)"><path
+             d="M 0,0 H 0.653 V -1.501 C 0.266,-1.818 -0.276,-1.98 -0.802,-1.98 c -1.152,0 -2.001,0.812 -2.001,1.936 0,1.125 0.849,1.937 2.012,1.937 0.621,0 1.141,-0.21 1.492,-0.613 L 0.266,0.849 c -0.292,0.296 -0.627,0.431 -1.025,0.431 -0.791,0 -1.348,-0.543 -1.348,-1.324 0,-0.764 0.557,-1.323 1.343,-1.323 0.265,0 0.525,0.054 0.764,0.194 z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path356" /></g><g
+           id="g358"
+           transform="translate(121.7283,65.0031)"><path
+             d="m 0,0 v -0.64 c -0.059,0.01 -0.106,0.016 -0.154,0.016 -0.504,0 -0.823,-0.301 -0.823,-0.888 V -2.905 H -1.64 v 2.872 h 0.631 V -0.452 C -0.817,-0.151 -0.473,0 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path360" /></g><g
+           id="g362"
+           transform="translate(122.4253,63.7655)"><path
+             d="M 0,0 H 1.608 C 1.555,0.414 1.242,0.7 0.807,0.7 0.377,0.7 0.064,0.42 0,0 M 2.23,-0.447 H 0.005 c 0.08,-0.419 0.425,-0.688 0.919,-0.688 0.318,0 0.568,0.102 0.769,0.313 L 2.049,-1.238 C 1.794,-1.544 1.396,-1.704 0.908,-1.704 c -0.951,0 -1.566,0.617 -1.566,1.473 0,0.855 0.621,1.469 1.465,1.469 0.828,0 1.433,-0.587 1.433,-1.486 0,-0.054 -0.005,-0.133 -0.01,-0.199"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path364" /></g><g
+           id="g366"
+           transform="translate(125.463,63.7655)"><path
+             d="M 0,0 H 1.608 C 1.555,0.414 1.242,0.7 0.807,0.7 0.377,0.7 0.064,0.42 0,0 M 2.23,-0.447 H 0.005 c 0.08,-0.419 0.425,-0.688 0.919,-0.688 0.318,0 0.568,0.102 0.769,0.313 L 2.049,-1.238 C 1.794,-1.544 1.396,-1.704 0.908,-1.704 c -0.951,0 -1.566,0.617 -1.566,1.473 0,0.855 0.621,1.469 1.465,1.469 0.828,0 1.433,-0.587 1.433,-1.486 0,-0.054 -0.005,-0.133 -0.01,-0.199"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path368" /></g><g
+           id="g370"
+           transform="translate(130.869,63.7441)"><path
+             d="m 0,0 v -1.646 h -0.664 v 1.561 c 0,0.51 -0.249,0.758 -0.674,0.758 -0.472,0 -0.791,-0.29 -0.791,-0.867 v -1.452 h -0.663 v 2.872 h 0.631 V 0.855 c 0.218,0.264 0.563,0.404 0.977,0.404 C -0.505,1.259 0,0.866 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path372" /></g><g
+           id="g374"
+           transform="translate(135.129,64.5238)"><path
+             d="m 0,0 c 0,0.474 -0.313,0.748 -0.919,0.748 h -0.806 v -1.495 h 0.806 C -0.313,-0.747 0,-0.473 0,0 m 0.696,0 c 0,-0.828 -0.605,-1.339 -1.583,-1.339 H -1.725 V -2.426 H -2.416 V 1.34 h 1.529 C 0.091,1.34 0.696,0.834 0.696,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path376" /></g><g
+           id="g378"
+           transform="translate(137.8703,62.9959)"><path
+             d="m 0,0 v 0.334 h -0.685 c -0.451,0 -0.573,-0.172 -0.573,-0.382 0,-0.242 0.202,-0.398 0.541,-0.398 0.324,0 0.606,0.151 0.717,0.446 M 0.663,0.786 V -0.898 H 0.037 v 0.35 c -0.159,-0.247 -0.467,-0.387 -0.892,-0.387 -0.648,0 -1.056,0.36 -1.056,0.861 0,0.478 0.318,0.855 1.178,0.855 H 0 v 0.043 c 0,0.392 -0.234,0.624 -0.706,0.624 -0.319,0 -0.648,-0.108 -0.86,-0.286 l -0.261,0.49 c 0.303,0.237 0.744,0.355 1.2,0.355 0.818,0 1.29,-0.393 1.29,-1.221"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path380" /></g><g
+           id="g382"
+           transform="translate(140.7594,65.0031)"><path
+             d="m 0,0 v -0.64 c -0.059,0.01 -0.106,0.016 -0.154,0.016 -0.504,0 -0.823,-0.301 -0.823,-0.888 V -2.905 H -1.64 v 2.872 h 0.631 V -0.452 C -0.817,-0.151 -0.473,0 0,0"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path384" /></g><g
+           id="g386"
+           transform="translate(142.8684,62.2545)"><path
+             d="m 0,0 c -0.159,-0.129 -0.398,-0.194 -0.637,-0.194 -0.621,0 -0.977,0.333 -0.977,0.968 v 1.383 h -0.467 v 0.538 h 0.467 V 3.35 H -0.95 V 2.695 h 0.759 V 2.157 H -0.95 V 0.791 c 0,-0.28 0.138,-0.431 0.393,-0.431 0.138,0 0.271,0.037 0.371,0.118 z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path388" /></g><g
+           id="g390"
+           transform="translate(145.7525,64.9704)"><path
+             d="m 0,0 -1.328,-3.104 c -0.259,-0.65 -0.621,-0.849 -1.093,-0.849 -0.281,0 -0.579,0.096 -0.759,0.263 l 0.265,0.495 c 0.128,-0.124 0.308,-0.199 0.489,-0.199 0.233,0 0.371,0.113 0.499,0.398 L -1.879,-2.884 -3.116,0 h 0.69 L -1.535,-2.124 -0.637,0 Z"
+             style="fill:#FFF;fill-rule:nonzero;stroke:none"
+             id="path392" /></g><g
+           id="g394"
+           transform="translate(29.5751,165.8299)"><path
+             d="M 0,0 C 0.075,0.974 -0.417,1.623 -1.407,1.7 -2.345,1.772 -2.927,1.467 -3.046,-0.062 L -3.125,-1.086 -0.102,-1.32 Z M -5.965,-3.925 -5.632,0.4 c 0.098,1.269 0.232,1.871 0.482,2.392 0.647,1.365 1.983,2.154 3.79,2.015 1.32,-0.102 2.714,-0.838 3.245,-2.12 L 1.919,2.684 c 0,0 0.24,0.156 0.784,0.412 L 7.232,5.175 6.97,1.788 2.614,-0.097 2.504,-1.521 6.69,-1.844 6.456,-4.883 Z"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path396" /></g><g
+           id="g398"
+           transform="translate(32.2372,177.6932)"><path
+             d="m 0,0 c -0.671,0.108 -1.349,-0.258 -1.463,-0.964 -0.14,-0.86 0.413,-1.374 1.041,-1.635 z M -3.688,-0.531 C -3.264,2.083 -1.2,3.267 1.261,2.866 1.552,2.819 2.178,2.647 2.178,2.647 L 1.27,-2.943 c 1.12,0.047 1.764,0.86 1.918,1.805 C 3.395,0.136 2.69,1.451 2.69,1.451 l 2.261,0.763 c 0,0 1.058,-1.637 0.675,-3.994 -0.514,-3.165 -3.079,-4.496 -5.436,-4.113 -2.598,0.422 -4.342,2.506 -3.878,5.362"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path400" /></g><g
+           id="g402"
+           transform="translate(32.3461,182.6668)"><path
+             d="m 0,0 -0.259,-1.12 -2.29,0.528 0.278,1.206 -2.512,0.579 0.658,2.852 2.512,-0.58 L -1.19,5.298 1.101,4.769 0.677,2.937 3.359,2.316 C 4.343,2.09 4.71,3.06 4.839,3.62 4.894,3.856 4.913,4.014 4.913,4.014 L 7.458,3.427 c 0,0 -0.023,-0.335 -0.133,-0.811 C 7.003,1.226 6.007,-1.388 3.071,-0.709 Z"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path404" /></g><g
+           id="g406"
+           transform="translate(31.4599,189.6463)"><path
+             d="M 0,0 0.815,2.899 9.449,0.473 8.634,-2.428 Z M -3.344,0.976 -2.547,3.809 -0.284,3.173 -1.081,0.34 Z"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path408" /></g><g
+           id="g410"
+           transform="translate(32.7387,205.203)"><path
+             d="m 0,0 c 1.121,2.873 3.337,3.712 3.337,3.712 l 1.63,-2.151 c 0,0 -1.692,-0.837 -2.319,-2.443 -0.868,-2.224 0.36,-3.92 2.032,-4.572 1.721,-0.671 3.934,-0.226 4.77,1.918 0.684,1.753 -0.225,3.641 -0.225,3.641 l 2.648,0.651 c 0,0 1.308,-2.401 0.124,-5.437 C 10.578,-8.316 7.04,-9.76 3.599,-8.418 0.222,-7.101 -1.362,-3.489 0,0"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path412" /></g><g
+           id="g414"
+           transform="translate(38.7206,209.825)"><path
+             d="M 0,0 1.286,2.727 9.403,-1.101 8.117,-3.828 Z M -3.138,1.519 -1.881,4.182 0.246,3.179 -1.01,0.515 Z"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path416" /></g><g
+           id="g418"
+           transform="translate(40.371,213.4881)"><path
+             d="M 0,0 1.517,2.785 6.375,1.726 C 6.964,1.604 7.896,1.274 7.896,1.274 l 0.016,0.032 c 0,0 -0.766,0.595 -1.203,1.032 L 3.175,5.83 4.7,8.63 11.122,1.661 9.363,-1.568 Z"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path420" /></g><g
+           id="g422"
+           transform="translate(45.6557,222.9305)"><path
+             d="m 0,0 1.59,2.561 7.621,-4.733 -1.59,-2.56 z M -2.941,1.867 -1.389,4.368 0.61,3.128 -0.943,0.627 Z"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path424" /></g><g
+           id="g426"
+           transform="translate(50.7021,230.9862)"><path
+             d="m 0,0 c 1.404,1.996 3.168,2.141 3.168,2.141 l 0.921,-2.205 c 0,0 -1.214,-0.21 -1.926,-1.222 -0.823,-1.169 -0.351,-2.376 0.519,-2.988 0.87,-0.612 2.246,-0.685 3.118,0.555 0.723,1.027 0.532,2.631 0.532,2.631 l 2.356,-0.314 c 0,0 0.439,-1.952 -1.005,-4.003 C 5.836,-8.028 2.979,-8.212 0.955,-6.788 -1.012,-5.403 -1.856,-2.636 0,0"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path428" /></g><g
+           id="g430"
+           transform="translate(51.3192,237.4149)"><path
+             d="m 0,0 1.931,2.314 3.024,-2.522 c 0.348,-0.29 0.566,-0.518 0.566,-0.518 l 0.022,0.027 C 5.185,0.258 5.44,1.407 6.199,2.317 c 1.16,1.391 2.706,1.94 4.647,0.321 l 4.468,-3.728 -1.931,-2.314 -4.04,3.371 C 8.701,0.502 8.221,0.471 7.797,-0.036 7.205,-0.746 7.229,-1.562 7.664,-2.263 7.854,-2.58 8.126,-2.853 8.447,-3.12 l 3.05,-2.545 -1.931,-2.314 z"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path432" /></g><g
+           id="g434"
+           transform="translate(67.1952,244.9608)"><path
+             d="M 0,0 C -0.484,0.476 -1.249,0.568 -1.75,0.06 -2.361,-0.561 -2.207,-1.299 -1.845,-1.874 Z M -3.314,1.697 C -1.457,3.586 0.91,3.357 2.685,1.609 2.896,1.402 3.307,0.9 3.307,0.9 l -3.972,-4.034 c 0.941,-0.608 1.936,-0.318 2.608,0.365 0.905,0.918 1.09,2.399 1.09,2.399 l 2.284,-0.685 c 0,0 -0.083,-1.946 -1.757,-3.648 -2.249,-2.283 -5.109,-1.888 -6.81,-0.213 -1.875,1.846 -2.093,4.555 -0.064,6.613"
+             style="fill:#f68712;fill-rule:nonzero;stroke:none"
+             id="path436" /></g></g></g></g></svg>
