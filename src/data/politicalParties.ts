@@ -7894,5 +7894,308 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "NG": [
+    {
+      "id": "NG-APC",
+      "country": "NG",
+      "shortName": "APC",
+      "name": "All Progressives Congress",
+      "logo": "party-logos/ng/apc.png",
+      "sha256": "a02070eed6cd22b71a05546d7eed20cc1a253df654d26195b069525d231a1a3d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:All_Progressives_Congress_logo.png",
+      "licenceNote": "Non-free party logo used under fair use, hosted on English Wikipedia (not Wikimedia Commons) at File:All Progressives Congress logo.png.",
+      "ideology": [
+        "Big tent",
+        "Social conservatism",
+        "Buharism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2013,
+      "leader": "Nentawe Yilwatda",
+      "leaderTitle": "National Chairman",
+      "inPower": true,
+      "timeInPower": "2023-present",
+      "seats": 242,
+      "seatsTotal": 360,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "All Progressives Congress - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/All_Progressives_Congress"
+        },
+        {
+          "title": "List of political parties in Nigeria - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Nigeria"
+        },
+        {
+          "title": "House of Representatives (Nigeria) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nigeria)"
+        }
+      ]
+    },
+    {
+      "id": "NG-PDP",
+      "country": "NG",
+      "shortName": "PDP",
+      "name": "Peoples Democratic Party",
+      "logo": "party-logos/ng/pdp.png",
+      "sha256": "52eb76e59256b571aee546073fb495fd931e8c87ca476147ac1b10ded9293655",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Peoples_Democratic_Party_(Nigeria).png",
+      "licenceNote": "Non-free party logo used under fair use, hosted on English Wikipedia (not Wikimedia Commons) at File:Logo of the Peoples Democratic Party (Nigeria).png.",
+      "ideology": [
+        "Social conservatism",
+        "Economic liberalism",
+        "Big tent"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1998,
+      "leader": "Kabiru Tanimu Turaki",
+      "leaderTitle": "National Chairman",
+      "inPower": false,
+      "seats": 72,
+      "seatsTotal": 360,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Peoples Democratic Party (Nigeria) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Peoples_Democratic_Party_(Nigeria)"
+        },
+        {
+          "title": "House of Representatives (Nigeria) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nigeria)"
+        }
+      ]
+    },
+    {
+      "id": "NG-LP",
+      "country": "NG",
+      "shortName": "LP",
+      "name": "Labour Party",
+      "logo": "party-logos/ng/lp.png",
+      "sha256": "940e3cd967d3b6c11bc837fbe24a38493b257666b6e7b6b374c1747576fe3587",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Labour_Party_(Nigeria)_logo.png",
+      "licenceNote": "Non-free party logo used under fair use, hosted on English Wikipedia (not Wikimedia Commons) at File:Labour Party (Nigeria) logo.png.",
+      "ideology": [
+        "Social democracy",
+        "Populism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2002,
+      "previousNames": [
+        {
+          "name": "Party for Social Democracy",
+          "years": "2002-2003"
+        }
+      ],
+      "leader": "Nenadi Usman",
+      "leaderTitle": "National Chairman",
+      "inPower": false,
+      "seats": 22,
+      "seatsTotal": 360,
+      "chamberName": "House of Representatives",
+      "logoMeaning": {
+        "description": "The party emblem is a wheel with a man, a woman and a child engraved at its centre. The wheel stands for industry and work as the basis for the economic empowerment of the populace and the prosperity of the nation, while the human figures signify that governance and economic and social development must lead to the advancement of human beings.",
+        "sources": [
+          {
+            "title": "Labour Party (Nigeria) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Labour_Party_(Nigeria)"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Labour Party (Nigeria) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Labour_Party_(Nigeria)"
+        },
+        {
+          "title": "House of Representatives (Nigeria) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nigeria)"
+        }
+      ]
+    },
+    {
+      "id": "NG-NNPP",
+      "country": "NG",
+      "shortName": "NNPP",
+      "name": "New Nigeria Peoples Party",
+      "logo": "party-logos/ng/nnpp.png",
+      "sha256": "54c1d515def34c8e399fb09206df4464f380226d67d04711de0d5f9e2b39fb3c",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_New_Nigeria_People%27s_Party.png",
+      "licenceNote": "Non-free party logo used under fair use, hosted on English Wikipedia (not Wikimedia Commons) at File:Logo of the New Nigeria People's Party.png.",
+      "ideology": [
+        "Welfarism",
+        "Social conservatism",
+        "Populism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Syncretic",
+      "founded": 2020,
+      "leader": "Rabiu Kwankwaso",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 15,
+      "seatsTotal": 360,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "New Nigeria Peoples Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Nigeria_Peoples_Party"
+        },
+        {
+          "title": "List of political parties in Nigeria - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Nigeria"
+        },
+        {
+          "title": "House of Representatives (Nigeria) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nigeria)"
+        }
+      ]
+    },
+    {
+      "id": "NG-APGA",
+      "country": "NG",
+      "shortName": "APGA",
+      "name": "All Progressives Grand Alliance",
+      "logo": "party-logos/ng/apga.png",
+      "sha256": "6950042a2477637a5cdbf394b83676b2fcf8a11ef4d53e8c469e6c8f07a2cba7",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:APGA_Nigeria_Logo.png",
+      "licenceNote": "Non-free party logo used under fair use, hosted on English Wikipedia (not Wikimedia Commons) at File:APGA Nigeria Logo.png.",
+      "ideology": [
+        "Nationalism",
+        "Federalism",
+        "Pluralism",
+        "Pan-Africanism",
+        "Progressivism",
+        "Decentralization"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Big tent",
+      "founded": 2002,
+      "leader": "Sly Ezeokenwa",
+      "leaderTitle": "National Chairman",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 360,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "All Progressives Grand Alliance - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/All_Progressives_Grand_Alliance"
+        },
+        {
+          "title": "House of Representatives (Nigeria) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nigeria)"
+        }
+      ]
+    },
+    {
+      "id": "NG-SDP",
+      "country": "NG",
+      "shortName": "SDP",
+      "name": "Social Democratic Party",
+      "noImageReason": "No freely-licensed or fair-use SDP (Nigeria) logo file exists on English Wikipedia or Wikimedia Commons as of this writing; searches of both (including Special:Search in the File namespace and Commons MediaSearch for 'Social Democratic Party Nigeria logo') returned no results.",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1989,
+      "leader": "Sadiq Umar Abubakar",
+      "leaderTitle": "Ag. National Chairman",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 360,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Social Democratic Party (Nigeria) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Nigeria)"
+        },
+        {
+          "title": "Social Democratic Party - INEC Nigeria",
+          "url": "https://wp1.inecnigeria.org/?poltical_parties=social-democratic-party"
+        },
+        {
+          "title": "House of Representatives (Nigeria) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nigeria)"
+        }
+      ]
+    },
+    {
+      "id": "NG-ADC",
+      "country": "NG",
+      "shortName": "ADC",
+      "name": "African Democratic Congress",
+      "logo": "party-logos/ng/adc.png",
+      "sha256": "ed221240f91c0c4caf47082414fe32edc5469df3e5eb019f11a1a7750991d919",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:African_Democratic_Congress_logo.png",
+      "licenceNote": "Non-free party logo used under fair use, hosted on English Wikipedia (not Wikimedia Commons) at File:African Democratic Congress logo.png.",
+      "ideology": [
+        "Big tent",
+        "Decentralization"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Big tent",
+      "founded": 2005,
+      "previousNames": [
+        {
+          "name": "Alliance for Democratic Change",
+          "years": "founded as, renamed on INEC registration in 2005"
+        }
+      ],
+      "leader": "David Mark",
+      "leaderTitle": "National Chairman",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 360,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "African Democratic Congress - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/African_Democratic_Congress"
+        },
+        {
+          "title": "House of Representatives (Nigeria) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nigeria)"
+        }
+      ]
+    },
+    {
+      "id": "NG-YPP",
+      "country": "NG",
+      "shortName": "YPP",
+      "name": "Young Progressives Party",
+      "logo": "party-logos/ng/ypp.png",
+      "sha256": "8e8828574410f66e934fd6cd292826e1807afb2923cbb8aa113ba07dadf62682",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Ypp-logo-design.png",
+      "ideology": [
+        "Social democracy",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2017,
+      "leader": "Bishop Amakiri",
+      "leaderTitle": "National Chairman",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 360,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Young Progressives Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Young_Progressives_Party"
+        },
+        {
+          "title": "House of Representatives (Nigeria) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nigeria)"
+        }
+      ]
+    }
   ]
 };
