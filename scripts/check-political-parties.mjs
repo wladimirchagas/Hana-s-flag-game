@@ -170,7 +170,14 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
           if (digest !== p.sha256) fail(id, `logo "${p.logo}" does not match its recorded sha256 (file changed after fetch)`);
         }
       }
-      const fromCommons = typeof p.logoSourceUrl === "string" && p.logoSourceUrl.includes("commons.wikimedia.org");
+      // A Commons file is referenced either via its wiki page (commons.wikimedia.org)
+      // or via the shared media CDN's /wikipedia/commons/ path; anything else —
+      // notably /wikipedia/en/ (or any other single-project code) — is that
+      // project's own LOCAL, non-free upload and needs a licenceNote.
+      const fromCommons =
+        typeof p.logoSourceUrl === "string" &&
+        (p.logoSourceUrl.includes("commons.wikimedia.org") ||
+          p.logoSourceUrl.includes("/wikipedia/commons/"));
       if (!fromCommons && (p.licenceNote ?? "").trim().length < 40) {
         fail(id, "logo is not from commons.wikimedia.org and has no (or too short a) licenceNote stating its copyright position");
       }
