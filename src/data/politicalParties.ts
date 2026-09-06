@@ -525,6 +525,65 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "url": "https://en.wikipedia.org/wiki/Third_Tusk_cabinet"
     },
     "note": "Formed 13 December 2023 by Civic Coalition, Third Way (Poland 2050 + PSL) and The Left after the October 2023 election ended eight years of PiS government; the Centre party (split from Poland 2050 in February 2026) has stayed within the ruling coalition."
+  },
+  "ke-kenya-kwanza": {
+    "id": "ke-kenya-kwanza",
+    "name": "Kenya Kwanza",
+    "nameEn": "Kenya First",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "KE-UDA",
+      "KE-ANC",
+      "KE-FORD-K"
+    ],
+    "source": {
+      "title": "Kenya Kwanza - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kenya_Kwanza"
+    },
+    "note": "Governing electoral alliance since the 2022 general election, led by President William Ruto (UDA). UDA, ANC and FORD–Kenya are its three founding parties; several smaller parties (not modelled here) also joined."
+  },
+  "ke-azimio": {
+    "id": "ke-azimio",
+    "name": "Azimio la Umoja–One Kenya Coalition Party",
+    "nameEn": "Resolution for Unity–One Kenya Coalition Party",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "KE-ODM",
+      "KE-JUBILEE",
+      "KE-WPF",
+      "KE-KANU"
+    ],
+    "source": {
+      "title": "Azimio la Umoja - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Azimio_la_Umoja"
+    },
+    "note": "Main opposition coalition in the National Assembly since the 2022 election, originally fronting Raila Odinga (ODM) for president. Since a March 2025 memorandum of understanding, ODM has cooperated with the Kenya Kwanza government (including cabinet seats) while remaining formally part of Azimio; in 2026 ODM and Kenya Kwanza announced plans to form a joint coalition for the 2027 election."
+  },
+  "th-anutin-coalition": {
+    "id": "th-anutin-coalition",
+    "name": "Second Anutin cabinet coalition government",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "TH-BJT",
+      "TH-PT",
+      "TH-PPRP",
+      "TH-PCC",
+      "TH-ECON",
+      "TH-PCT",
+      "TH-TST",
+      "TH-UTN",
+      "TH-NEW",
+      "TH-NAP",
+      "TH-NDP",
+      "TH-NOP",
+      "TH-RJT",
+      "TH-PPP"
+    ],
+    "source": {
+      "title": "Second Anutin cabinet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+    },
+    "note": "16-party coalition (293 of 500 House seats) formed by Bhumjaithai leader Anutin Charnvirakul after the 8 February 2026 election; sworn in 30 March 2026 as the 66th Council of Ministers. Kla Tham, the Democrat Party and Thai Ruam Palang were excluded and sit in opposition alongside the People's Party."
   }
 };
 
@@ -9247,6 +9306,1529 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Sejm term 10 - list of parliamentary clubs (api.sejm.gov.pl)",
           "url": "https://api.sejm.gov.pl/sejm/term10/clubs"
+        }
+      ]
+    }
+  ],
+  "KE": [
+    {
+      "id": "KE-UDA",
+      "country": "KE",
+      "shortName": "UDA",
+      "name": "United Democratic Alliance",
+      "logo": "party-logos/ke/uda.png",
+      "sha256": "691467bfd898b226fdb30b754987ebf4cc287f77db8585d43ed3adf37525bdb7",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/0/07/United_Democratic_Alliance_%28Kenya%29_logo.png",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia (not Wikimedia Commons) under a fair-use rationale for identifying the political party in its own article; used here for the same identifying purpose.",
+      "ideology": [
+        "Conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2020,
+      "previousNames": [
+        {
+          "name": "Party of Action",
+          "years": "2012–2016"
+        },
+        {
+          "name": "Party of Development and Reforms",
+          "years": "2016–2020"
+        }
+      ],
+      "coalitionId": "ke-kenya-kwanza",
+      "leader": "William Ruto",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 143,
+      "seatsTotal": 349,
+      "chamberName": "National Assembly",
+      "logoMeaning": {
+        "description": "UDA's emblem is a wheelbarrow, chosen by founder William Ruto to represent his 'hustler' economic message and the dignity of manual labour and small-scale trade — the same wheelbarrow motif later appeared on Ruto's presidential standard after he became President in 2022. The party's earlier incarnation (Party of Development and Reforms) had used a bull as its symbol before the 2020 rebrand to UDA and the wheelbarrow.",
+        "sources": [
+          {
+            "title": "DP Ruto defends choice of the wheelbarrow as symbol of his UDA party - Citizen Digital",
+            "url": "https://www.citizen.digital/news/dp-ruto-defends-choice-of-the-wheelbarrow-as-symbol-of-his-uda-party-13099734"
+          },
+          {
+            "title": "Wheelbarrow to feature in Ruto's presidential Standard - Capital News",
+            "url": "https://www.capitalfm.co.ke/news/2022/09/wheelbarrow-to-feature-in-rutos-presidential-standard/"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "United Democratic Alliance (Kenya) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/United_Democratic_Alliance_(Kenya)"
+        }
+      ]
+    },
+    {
+      "id": "KE-ANC",
+      "country": "KE",
+      "shortName": "ANC",
+      "name": "Amani National Congress",
+      "noImageReason": "Attempted to bundle the Commons-hosted infobox logo at https://upload.wikimedia.org/wikipedia/commons/a/ab/Amani_National_Congress.png (from https://en.wikipedia.org/wiki/Amani_National_Congress), but upload.wikimedia.org returned HTTP 429 (rate limited) on every retry this session; a leftover file at this path from a prior session was also confirmed to be a saved 429 error page, not image data. A future session should retry this exact URL.",
+      "ideology": [
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2015,
+      "coalitionId": "ke-kenya-kwanza",
+      "leader": "Musalia Mudavadi",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 7,
+      "seatsTotal": 349,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Amani National Congress - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Amani_National_Congress"
+        }
+      ]
+    },
+    {
+      "id": "KE-FORD-K",
+      "country": "KE",
+      "shortName": "FORD-K",
+      "name": "Forum for the Restoration of Democracy–Kenya",
+      "logo": "party-logos/ke/ford-k.png",
+      "sha256": "7cea86ee6d3addd2173b86f9cbc5f421348d7102157da9866b77949ea92d8aa9",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/1/17/FORD_-_KENYA_logo.png",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia (not Wikimedia Commons) under a fair-use rationale for identifying the political party in its own article; used here for the same identifying purpose.",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1992,
+      "previousNames": [
+        {
+          "name": "Forum for the Restoration of Democracy",
+          "years": "1991–1992"
+        }
+      ],
+      "coalitionId": "ke-kenya-kwanza",
+      "leader": "Moses Wetangula",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 6,
+      "seatsTotal": 349,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Forum for the Restoration of Democracy – Kenya - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Forum_for_the_Restoration_of_Democracy_%E2%80%93_Kenya"
+        }
+      ]
+    },
+    {
+      "id": "KE-JUBILEE",
+      "country": "KE",
+      "shortName": "Jubilee",
+      "name": "Jubilee Party of Kenya",
+      "logo": "party-logos/ke/jubilee.svg",
+      "sha256": "0d0285b228247839ba15649db07ee74616d7c851438466ed95c3148a6789c4a1",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/7/74/Logo_for_the_Kenyan_polticial_party_Jubilee%2C_taken_from_its_official_website_jubileeparty.ke.svg",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia (not Wikimedia Commons), taken from the party's own website (jubileeparty.ke) under a fair-use rationale; used here for the same identifying purpose.",
+      "ideology": [
+        "Conservatism",
+        "National conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2016,
+      "coalitionId": "ke-azimio",
+      "leader": "Uhuru Kenyatta",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 30,
+      "seatsTotal": 349,
+      "chamberName": "National Assembly",
+      "logoMeaning": {
+        "description": "Jubilee's 2016 logo combined the red of founding member The National Alliance with the yellow and black of the United Republican Party. After the 2018 Kenyatta–Odinga 'handshake' and the 2021–2022 falling-out between President Kenyatta and his deputy William Ruto, the party rebranded to a red-and-white design in which the former handshake emblem was replaced by a dove carrying an olive branch, symbolising peace and a fresh direction, while dropping URP's yellow and black as a visual break from Ruto.",
+        "sources": [
+          {
+            "title": "Jubilee Rebrands With New Slogan, Ditches Ruto Colours - Kenyans.co.ke",
+            "url": "https://www.kenyans.co.ke/news/71755-jubilee-rebrands-new-slogan-ditches-ruto-colours"
+          },
+          {
+            "title": "New Jubilee Party logo and colours in rebrand plan - Daily Nation",
+            "url": "https://nation.africa/kenya/news/politics/new-jubilee-logo-colours-in-rebrand-plan-3461462"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Jubilee Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jubilee_Party"
+        }
+      ]
+    },
+    {
+      "id": "KE-KANU",
+      "country": "KE",
+      "shortName": "KANU",
+      "name": "Kenya African National Union",
+      "logo": "party-logos/ke/kanu.png",
+      "sha256": "77adb13b037ddd551c6ac34ab18d0f4d9e33589eeb62d3f282bc7a8787d02cd7",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/4/41/Kenya_African_National_Union_flag.png",
+      "licenceNote": "Non-free party flag/logo hosted on English Wikipedia (not Wikimedia Commons) under a fair-use rationale for identifying the political party in its own article; used here for the same identifying purpose.",
+      "ideology": [
+        "Kenyan nationalism",
+        "Conservatism",
+        "African nationalism",
+        "Pan-Africanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1960,
+      "previousNames": [
+        {
+          "name": "Kenya African Union",
+          "years": "1944–1960"
+        }
+      ],
+      "coalitionId": "ke-azimio",
+      "leader": "Gideon Moi",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 349,
+      "chamberName": "National Assembly",
+      "logoMeaning": {
+        "description": "KANU's flag and emblem feature a white cockerel (rooster) on a black-red-green tricolour. In African tradition the rooster is the fowl that announces the dawn, and it was adopted to symbolise the 'break of a new dawn' — Kenyan independence, which KANU led. The design directly inspired Kenya's national flag (the same black-red-green bands), though the cockerel itself was replaced by the Maasai shield and crossed spears on the national flag at independence.",
+        "sources": [
+          {
+            "title": "Flags, Symbols, & Currencies of Kenya - World Atlas",
+            "url": "https://www.worldatlas.com/flags/kenya"
+          },
+          {
+            "title": "Kenya African National Union (KANU) flag - Flags of the World",
+            "url": "https://www.crwflags.com/fotw/flags/ke%7Dkanu.html"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Kenya African National Union - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kenya_African_National_Union"
+        }
+      ]
+    },
+    {
+      "id": "KE-ODM",
+      "country": "KE",
+      "shortName": "ODM",
+      "name": "Orange Democratic Movement",
+      "logo": "party-logos/ke/odm.png",
+      "sha256": "a28a6527bf8100764491d5e372354f3ebf53beec5a316694d5fdce741c427ff8",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/4/43/ODM_Party_Logo.png",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia (not Wikimedia Commons) under a fair-use rationale for identifying the political party in its own article; used here for the same identifying purpose.",
+      "ideology": [
+        "Social democracy",
+        "Populism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2005,
+      "previousNames": [
+        {
+          "name": "Orange Democratic Movement–Kenya",
+          "years": "2005–2007"
+        }
+      ],
+      "coalitionId": "ke-azimio",
+      "leader": "Oburu Odinga",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 89,
+      "seatsTotal": 349,
+      "chamberName": "National Assembly",
+      "logoMeaning": {
+        "description": "ODM takes its name and orange colour from the 2005 constitutional referendum, in which ballot symbols represented each side of the vote: a banana for 'yes' and an orange for 'no'. The 'no' campaign, which won with 58% of the vote, adopted the orange as its rallying symbol, and the coalition that grew out of it — later a registered party — kept the name and colour.",
+        "sources": [
+          {
+            "title": "United stand in vote against 2005 constitution gave birth to Orange - Daily Nation",
+            "url": "https://nation.africa/kenya/news/Orange-Democratic-Movement/1950946-2223566-format-xhtml-xh57ti/index.html"
+          },
+          {
+            "title": "Orange Democratic Movement - Mzalendo",
+            "url": "https://info.mzalendo.com/organisation/odm/"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Orange Democratic Movement - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Orange_Democratic_Movement"
+        }
+      ]
+    },
+    {
+      "id": "KE-WPF",
+      "country": "KE",
+      "shortName": "WPF",
+      "name": "Wiper Patriotic Front",
+      "logo": "party-logos/ke/wpf.png",
+      "sha256": "eb17d6155d7fa4bf418baa86977940dd072eadc82af0f19a66e069348efb5434",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/8/83/Logo_of_the_Wiper_Patriotic_Front.png",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia (not Wikimedia Commons) under a fair-use rationale for identifying the political party in its own article; used here for the same identifying purpose.",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2006,
+      "previousNames": [
+        {
+          "name": "Orange Democratic Movement–Kenya",
+          "years": "2006–2007"
+        },
+        {
+          "name": "Wiper Democratic Movement–Kenya",
+          "years": "2007–2025"
+        }
+      ],
+      "coalitionId": "ke-azimio",
+      "leader": "Kalonzo Musyoka",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 26,
+      "seatsTotal": 349,
+      "chamberName": "National Assembly",
+      "logoMeaning": {
+        "description": "The umbrella has been the party's consistent emblem through each of its renamings (from ODM-Kenya through Wiper Democratic Movement to today's Wiper Patriotic Front), and was retained even when the party dropped 'Kenya' from its name in a 2021 rebrand. The party states its colours are meant to embody dependability and understanding (royal blue), purity and clarity (white) and power and life (earth red), with the umbrella itself standing for shelter, unity and resilience.",
+        "sources": [
+          {
+            "title": "Kalonzo launches 5-day challenge for Wiper logo redesign - People Daily",
+            "url": "https://peopledaily.digital/news/kalonzo-launches-5-day-challenge-for-wiper-logo-redesign"
+          },
+          {
+            "title": "Why Kalonzo is dropping Wiper from his party name - Daily Nation",
+            "url": "https://nation.africa/kenya/news/politics/why-kalonzo-is-dropping-wiper-from-his-party-name--5017504"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Wiper Patriotic Front - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Wiper_Patriotic_Front"
+        }
+      ]
+    }
+  ],
+  "PH": [
+    {
+      "id": "PH-LAKAS",
+      "country": "PH",
+      "shortName": "Lakas-CMD",
+      "name": "Lakas–Christian Muslim Democrats",
+      "logo": "party-logos/ph/lakas.svg",
+      "sha256": "978408e0f89bf74622d4a9dd038c51c6a83159243b6de2e59e340b7c1cfdb192",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/f/f9/Lakas_CMD.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia (not Commons) and used there under a fair-use rationale to identify the political party in infoboxes and articles about it.",
+      "ideology": [
+        "Christian democracy",
+        "Islamic democracy",
+        "Conservatism",
+        "Economic liberalism",
+        "Filipino nationalism",
+        "Social market economy"
+      ],
+      "ideologyPosition": "centre-right",
+      "founded": 2008,
+      "previousNames": [
+        {
+          "name": "Lakas–Kampi–CMD",
+          "years": "2008–2011"
+        }
+      ],
+      "leader": "Martin Romualdez",
+      "leaderTitle": "National President",
+      "inPower": false,
+      "seats": 77,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Lakas–CMD - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lakas%E2%80%93CMD"
+        },
+        {
+          "title": "20th Congress of the Philippines - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-NUP",
+      "country": "PH",
+      "shortName": "NUP",
+      "name": "Partido ng Pambansang Pagkakaisa",
+      "nameEn": "National Unity Party",
+      "logo": "party-logos/ph/nup.svg",
+      "sha256": "507053489d3ea274e275782c359c6d282c61ddbb4ad714f8beb8a7c642471c8d",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/2/27/National_Unity_Party.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia (not Commons) and used there under a fair-use rationale to identify the political party in infoboxes and articles about it.",
+      "ideology": [
+        "Christian democracy",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "founded": 2010,
+      "leader": "Ronaldo V. Puno",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 55,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "National Unity Party (Philippines) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Unity_Party_(Philippines)"
+        },
+        {
+          "title": "20th Congress of the Philippines - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-PFP",
+      "country": "PH",
+      "shortName": "PFP",
+      "name": "Partido Federal ng Pilipinas",
+      "nameEn": "Federal Party of the Philippines",
+      "logo": "party-logos/ph/pfp.png",
+      "sha256": "080a46c3a890b064322b95d3e0c526d228a8ee6cfcd06c65ada5788ee840ff65",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/6/64/Logo_of_the_Federal_Party_of_the_Philippines.png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia (not Commons) and used there under a fair-use rationale to identify the political party in infoboxes and articles about it.",
+      "ideology": [
+        "Federalism",
+        "Populism",
+        "Conservatism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Big tent",
+      "founded": 2018,
+      "leader": "Bongbong Marcos",
+      "leaderTitle": "National Chairman",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 52,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Partido Federal ng Pilipinas - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Partido_Federal_ng_Pilipinas"
+        },
+        {
+          "title": "20th Congress of the Philippines - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-NPC",
+      "country": "PH",
+      "shortName": "NPC",
+      "name": "Makabayang Koalisyon ng Mamamayan",
+      "nameEn": "Nationalist People's Coalition",
+      "logo": "party-logos/ph/npc.svg",
+      "sha256": "740d40ad88c9604db38788fb0e420f19b8bd2d8de58c8041cf35f030705711dd",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/0/04/Nationalist_People%27s_Coalition.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia (not Commons) and used there under a fair-use rationale to identify the political party in infoboxes and articles about it.",
+      "ideology": [
+        "Filipino nationalism",
+        "Conservatism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "founded": 1992,
+      "previousNames": [
+        {
+          "name": "Partido Pilipino",
+          "years": "1991–1992"
+        }
+      ],
+      "leader": "Tito Sotto",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 34,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Nationalist People's Coalition - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nationalist_People%27s_Coalition"
+        },
+        {
+          "title": "20th Congress of the Philippines - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-NACIONALISTA",
+      "country": "PH",
+      "shortName": "Nacionalista",
+      "name": "Partido Nacionalista",
+      "nameEn": "Nacionalista Party",
+      "logo": "party-logos/ph/nacionalista.svg",
+      "sha256": "9ea575e245af2053ea0420476e5b04cbd302ac4fc76d9cf7067997ea45832fab",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/f/f9/Nacionalista_Party_logo.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia (not Commons) and used there under a fair-use rationale to identify the political party in infoboxes and articles about it.",
+      "ideology": [
+        "Conservatism",
+        "National conservatism",
+        "Filipino nationalism",
+        "Economic liberalism",
+        "Populism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1907,
+      "leader": "Manny Villar",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 18,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Nacionalista Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nacionalista_Party"
+        },
+        {
+          "title": "20th Congress of the Philippines - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-LIBERAL",
+      "country": "PH",
+      "shortName": "Liberal Party",
+      "name": "Partido Liberal ng Pilipinas",
+      "nameEn": "Liberal Party of the Philippines",
+      "logo": "party-logos/ph/liberal.svg",
+      "sha256": "dbf9b929cd55fbcae4876823957503434e5b37c2ff0e5d47ada7133c06eb3fae",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/c/cd/Liberal_Party_of_the_Philippines_%28LP%29.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia (not Commons) and used there under a fair-use rationale to identify the political party in infoboxes and articles about it.",
+      "ideology": [
+        "Liberalism",
+        "Social liberalism",
+        "Progressivism",
+        "Aquinoism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1946,
+      "leader": "Erin Tañada",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Liberal Party (Philippines) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Party_(Philippines)"
+        },
+        {
+          "title": "20th Congress of the Philippines - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-PDPLABAN",
+      "country": "PH",
+      "shortName": "PDP–Laban",
+      "name": "Partido Demokratiko Pilipino",
+      "nameEn": "Philippine Democratic Party",
+      "logo": "party-logos/ph/pdplaban.png",
+      "sha256": "e190ff1b6fe8fd8671b6bbb3c7b953c44553a61627a05e15d2b0285e926b0516",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/a/a0/Partido_Demokratiko_Pilipino_seal.png",
+      "licenceNote": "Non-free party seal hosted locally on English Wikipedia (not Commons) and used there under a fair-use rationale to identify the political party in infoboxes and articles about it.",
+      "ideology": [
+        "Populism",
+        "Federalism",
+        "Dutertism",
+        "Sinophilia"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Syncretic (historically centre-left to left-wing; more recently blends left-wing populist rhetoric with right-wing populist policy)",
+      "founded": 1983,
+      "previousNames": [
+        {
+          "name": "Partido Demokratiko Pilipino–Lakas ng Bayan",
+          "years": "1983–2024"
+        }
+      ],
+      "leader": "Sebastian Duterte",
+      "leaderTitle": "President (Rodrigo Duterte is Chairman)",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "PDP–Laban - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/PDP%E2%80%93Laban"
+        },
+        {
+          "title": "20th Congress of the Philippines - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-HTL",
+      "country": "PH",
+      "shortName": "HTL",
+      "name": "Hugpong sa Tawong Lungsod",
+      "nameEn": "Party of the City People",
+      "logo": "party-logos/ph/htl.jpg",
+      "sha256": "663bd42689ff3a99a8849dc2c1d5be48546ae5d62e353f51268d1967a25c8353",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Hugpong_Sa_Tawong_Lungsod_Party_Logo.jpg",
+      "ideology": [
+        "Populism",
+        "Localism",
+        "Dutertism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Local political party based in Davao City; no formal left-right position stated",
+      "founded": 2011,
+      "leader": "Leoncio Evasco Jr.",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Hugpong sa Tawong Lungsod - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hugpong_sa_Tawong_Lungsod"
+        },
+        {
+          "title": "20th Congress of the Philippines - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-MKTZNU",
+      "country": "PH",
+      "shortName": "Makatizens",
+      "name": "Makatizens United Party",
+      "noImageReason": "Makatizens United Party's English Wikipedia article (https://en.wikipedia.org/wiki/Makatizens_United_Party) has no infobox image/logo field at all — this is a local Makati-based party with no depicted emblem found on Wikipedia or Commons after checking.",
+      "ideology": [
+        "Localism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Local political organization based in Makati; no formal left-right position stated",
+      "founded": 2021,
+      "leader": "Abigail Binay",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Makatizens United Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Makatizens_United_Party"
+        },
+        {
+          "title": "20th Congress of the Philippines - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-AKBAYAN",
+      "country": "PH",
+      "shortName": "Akbayan",
+      "name": "Akbayan Citizens' Action Party",
+      "logo": "party-logos/ph/akbayan.svg",
+      "sha256": "329eeece5117934c8fbf02002a659872438a6e75fa2b30258968fa0a1a9bbad5",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/1/1d/Akbayan_Party.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia (not Commons) and used there under a fair-use rationale to identify the political party in infoboxes and articles about it.",
+      "ideology": [
+        "Progressivism",
+        "Democratic socialism",
+        "Social democracy",
+        "Participatory politics"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1998,
+      "leader": "Rafaela David",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Akbayan - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Akbayan"
+        },
+        {
+          "title": "LIST: Which party-list groups won in the 2025 elections? - Rappler",
+          "url": "https://www.rappler.com/philippines/elections/party-list-groups-results-house-representatives-seats-2025/"
+        }
+      ]
+    },
+    {
+      "id": "PH-TINGOG",
+      "country": "PH",
+      "shortName": "Tingog",
+      "name": "Tingog Sinirangan",
+      "nameEn": "Voice of the East",
+      "logo": "party-logos/ph/tingog.png",
+      "sha256": "968330e62dc0ec806bc693122b476c717f4ff3867a49209de94aadf4b5497688",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/b/bc/Tingog_Party_List.png",
+      "licenceNote": "Non-free party-list logo hosted locally on English Wikipedia (not Commons) and used there under a fair-use rationale to identify the organization in infoboxes and articles about it.",
+      "ideology": [
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right regionalist party representing Eastern Visayas",
+      "founded": 2012,
+      "leader": "Glenn Jaro Capucion",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Tingog Sinirangan - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tingog_Sinirangan"
+        },
+        {
+          "title": "LIST: Which party-list groups won in the 2025 elections? - Rappler",
+          "url": "https://www.rappler.com/philippines/elections/party-list-groups-results-house-representatives-seats-2025/"
+        }
+      ]
+    },
+    {
+      "id": "PH-4PS",
+      "country": "PH",
+      "shortName": "4Ps",
+      "name": "Pagtibayin at Palaguin ang Pangkabuhayang Pilipino",
+      "nameEn": "Strengthen and Grow the Filipino Livelihood (4Ps Party-list)",
+      "logo": "party-logos/ph/fourps.png",
+      "sha256": "530629cf6d880697d1c7035e9cb2fa9f591013158e34b67101b754064f4d6f88",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/7/7f/4Ps_Party-list_Logo.png",
+      "licenceNote": "Non-free party-list logo hosted locally on English Wikipedia (not Commons) and used there under a fair-use rationale to identify the organization in infoboxes and articles about it.",
+      "ideology": [
+        "Social welfare advocacy"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Not formally stated on Wikipedia; sectoral party-list focused on poverty alleviation, social welfare and 4Ps (Pantawid Pamilyang Pilipino Program) beneficiaries",
+      "founded": 2019,
+      "leader": "Marcelino Libanan",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "4Ps Party-list - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/4Ps_Party-list"
+        },
+        {
+          "title": "LIST: Which party-list groups won in the 2025 elections? - Rappler",
+          "url": "https://www.rappler.com/philippines/elections/party-list-groups-results-house-representatives-seats-2025/"
+        }
+      ]
+    },
+    {
+      "id": "PH-AKOBICOL",
+      "country": "PH",
+      "shortName": "Ako Bicol",
+      "name": "Ako Bicol Political Party",
+      "logo": "party-logos/ph/akobicol.png",
+      "sha256": "e0a5ef8df14bad333e77c2e05dc2ce830a5df996e947d336323c4bc744d62285",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/0/0b/Ako_Bicol_logo.png",
+      "licenceNote": "Non-free party-list logo hosted locally on English Wikipedia (not Commons) and used there under a fair-use rationale to identify the organization in infoboxes and articles about it.",
+      "ideology": [
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right regionalist party representing the Bicol Region and Bicolano people",
+      "founded": 2006,
+      "leader": "Zaldy Co",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Ako Bicol - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ako_Bicol"
+        },
+        {
+          "title": "LIST: Which party-list groups won in the 2025 elections? - Rappler",
+          "url": "https://www.rappler.com/philippines/elections/party-list-groups-results-house-representatives-seats-2025/"
+        }
+      ]
+    }
+  ],
+  "TH": [
+    {
+      "id": "TH-PP",
+      "country": "TH",
+      "shortName": "People's Party",
+      "name": "พรรคประชาชน",
+      "nameEn": "People's Party",
+      "logo": "party-logos/th/pp.svg",
+      "sha256": "388337fb0aeed7f50f0f516bb509a795dde9b01c959de31ff0a5206b6c4399b8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:People%27s_Party_Logo-EN_(Thailand,_2024).svg",
+      "ideology": [
+        "Progressivism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "founded": 2024,
+      "previousNames": [
+        {
+          "name": "พรรคก้าวไกล",
+          "nameEn": "Move Forward Party",
+          "years": "2020–2024 (dissolved by the Constitutional Court, 7 August 2024, over its 2021 campaign to amend the lèse-majesté law)"
+        },
+        {
+          "name": "พรรคอนาคตใหม่",
+          "nameEn": "Future Forward Party",
+          "years": "2018–2020 (dissolved by the Constitutional Court, 21 February 2020)"
+        }
+      ],
+      "leader": "Natthaphong Ruengpanyawut",
+      "leaderTitle": "Leader of the Opposition and Party Leader",
+      "inPower": false,
+      "seats": 120,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "People's Party (Thailand) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Party_(Thailand)"
+        },
+        {
+          "title": "Results of the 2026 Thai general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Results_of_the_2026_Thai_general_election"
+        },
+        {
+          "title": "2026 Thai general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        },
+        {
+          "title": "People's Party chief formally named opposition leader - Bangkok Post",
+          "url": "https://www.bangkokpost.com/thailand/politics/3254993/peoples-party-chief-formally-named-opposition-leader"
+        }
+      ]
+    },
+    {
+      "id": "TH-BJT",
+      "country": "TH",
+      "shortName": "Bhumjaithai Party",
+      "name": "พรรคภูมิใจไทย",
+      "nameEn": "Bhumjaithai Party",
+      "logo": "party-logos/th/bjt.svg",
+      "sha256": "6960385fc6acfbb09fafc99c6a872b43364e7d0d9eed1beb4d8c19a43ab9df2a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Bhumjaithai_Party.svg",
+      "ideology": [
+        "Conservatism",
+        "Economic liberalism",
+        "Monarchism",
+        "Populism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2008,
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Anutin Charnvirakul",
+      "leaderTitle": "Prime Minister and Party Leader",
+      "inPower": true,
+      "timeInPower": "2025–present",
+      "seats": 192,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Bhumjaithai Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bhumjaithai_Party"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "2026 Thai general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        }
+      ]
+    },
+    {
+      "id": "TH-PT",
+      "country": "TH",
+      "shortName": "Pheu Thai Party",
+      "name": "พรรคเพื่อไทย",
+      "nameEn": "Pheu Thai Party",
+      "logo": "party-logos/th/pt.svg",
+      "sha256": "da659c6ff9cce8079652234732a6fbd4718b318efb16ed0183c3eaa56f84d25a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Pheu_Thai_Party.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Economic liberalism",
+        "Thaksinomics",
+        "Populism"
+      ],
+      "ideologyPosition": "centre-right",
+      "founded": 2007,
+      "previousNames": [
+        {
+          "name": "People's Power Party",
+          "years": "2007–2008 (dissolved by the Constitutional Court, 2 December 2008)"
+        }
+      ],
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Julapun Amornvivat",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 74,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Pheu Thai Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pheu_Thai_Party"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-DEM",
+      "country": "TH",
+      "shortName": "Democrat Party",
+      "name": "พรรคประชาธิปัตย์",
+      "nameEn": "Democrat Party",
+      "logo": "party-logos/th/dem.svg",
+      "sha256": "3065c5d3b9baea53ba333a0109b610fdf3b1909d19ad88789978e4e31b98fce8",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Democrat_TH_Logo.svg",
+      "licenceNote": "Logo hosted locally on English Wikipedia (not Commons) as a non-free file used under fair use solely to identify the Democrat Party; it is not freely licensed for general reuse.",
+      "ideology": [
+        "Conservative liberalism",
+        "Classical liberalism",
+        "Constitutional monarchism",
+        "Neoliberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "founded": 1946,
+      "leader": "Abhisit Vejjajiva",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 21,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Democrat Party (Thailand) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democrat_Party_(Thailand)"
+        },
+        {
+          "title": "2026 Thai general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        }
+      ]
+    },
+    {
+      "id": "TH-KT",
+      "country": "TH",
+      "shortName": "Kla Tham Party",
+      "name": "พรรคกล้าธรรม",
+      "nameEn": "Kla Tham Party",
+      "logo": "party-logos/th/kt.png",
+      "sha256": "9ddf2415e06e4484d912ea5a82e0a984880e33fa10160960ce71a212298c6809",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Kla_Tham_Party_logo.png",
+      "licenceNote": "Logo hosted locally on English Wikipedia (not Commons) as a non-free file used under fair use solely to identify the Kla Tham Party; it is not freely licensed for general reuse.",
+      "ideology": [],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Not stated in the party's own Wikipedia infobox (left blank); described by regional analysts as a conservative, patronage-based party allied with the Bhumjaithai-led coalition bloc",
+      "founded": 2023,
+      "previousNames": [
+        {
+          "name": "Thai Economic Party",
+          "years": "2020–2023 (registered under this name before rebranding)"
+        }
+      ],
+      "leader": "Narumon Pinyosinwat",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 58,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Kla Tham Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kla_Tham_Party"
+        },
+        {
+          "title": "2026 Thai general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        },
+        {
+          "title": "Thailand's Conservatives Consolidate Power After 2026 Snap Polls - The Diplomat",
+          "url": "https://thediplomat.com/2026/02/thailands-conservatives-consolidate-power-after-2026-snap-polls/"
+        }
+      ]
+    },
+    {
+      "id": "TH-ECON",
+      "country": "TH",
+      "shortName": "Economic Party",
+      "name": "พรรคเศรษฐกิจ",
+      "nameEn": "Economic Party",
+      "logo": "party-logos/th/econ.png",
+      "sha256": "214200f17ef66b318c18352f33a56e6c3d197677fcbfe99acb8229c1317bd98a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:ECON_party_logo.png",
+      "ideology": [
+        "Right-libertarianism",
+        "Anti-immigration"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2025,
+      "previousNames": [
+        {
+          "name": "Thai Civil Power Party",
+          "years": "2018–2023"
+        },
+        {
+          "name": "Zen-dai Party",
+          "years": "2023–2025"
+        }
+      ],
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Rangsi Kitiyansap",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 3,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Economic Party (Thailand) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Economic_Party_(Thailand)"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-UTN",
+      "country": "TH",
+      "shortName": "United Thai Nation Party",
+      "name": "พรรครวมไทยสร้างชาติ",
+      "nameEn": "United Thai Nation Party",
+      "logo": "party-logos/th/utn.svg",
+      "sha256": "082fe90071045689e2ccd0647c498476e3dd0eb67dd6d84f8165d7512546d91f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_United_Thai_Nation.svg",
+      "ideology": [],
+      "ideologyPosition": "far-right",
+      "founded": 2021,
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Pirapan Salirathavibhaga",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 2,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "United Thai Nation Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/United_Thai_Nation_Party"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-PCT",
+      "country": "TH",
+      "shortName": "Pheu Chart Thai Party",
+      "name": "พรรคเพื่อชาติไทย",
+      "nameEn": "Pheu Chart Thai Party",
+      "logo": "party-logos/th/pct.png",
+      "sha256": "564d0b77b7a20862374c3f91dd2c41e1fadf9c67472c81d87d9a088f6af3ab88",
+      "logoSourceUrl": "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C:Pheu_Chart_Thai_Party_Logo.png",
+      "licenceNote": "Logo hosted locally on Thai Wikipedia (not Commons) as a party-identification logo file; not confirmed as freely licensed for general reuse beyond identification purposes.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "positionRaw": "No ideology or left-right position documented in the party's Thai Wikipedia infobox",
+      "founded": 2021,
+      "previousNames": [
+        {
+          "name": "พรรคพลังไทยรักไทย",
+          "nameEn": "Palang Thai Rak Thai Party",
+          "years": "2018–2021"
+        }
+      ],
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Pongthawat Techadejruangkul",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 2,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "พรรคเพื่อชาติไทย - วิกิพีเดีย (Pheu Chart Thai Party - Thai Wikipedia)",
+          "url": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%84%E0%B8%97%E0%B8%A2"
+        },
+        {
+          "title": "2026 Thai general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-RJT",
+      "country": "TH",
+      "shortName": "Ruam Jai Thai Party",
+      "name": "พรรครวมใจไทย",
+      "nameEn": "Ruam Jai Thai Party",
+      "logo": "party-logos/th/rjt.jpg",
+      "sha256": "480db32b913596a606492a57c1f1c29b50c8bfef746587f300dcf9d52d5c3325",
+      "logoSourceUrl": "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C:RUAM_JAI_THAI_PARTY_logo.jpg",
+      "licenceNote": "Logo hosted locally on Thai Wikipedia (not Commons) as a party-identification logo file; not confirmed as freely licensed for general reuse beyond identification purposes.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "positionRaw": "No ideology or left-right position documented on Thai Wikipedia",
+      "founded": 2023,
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Boonrawee Yomjinda",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 1,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "พรรครวมใจไทย (พ.ศ. 2566) - วิกิพีเดีย (Ruam Jai Thai Party (2023) - Thai Wikipedia)",
+          "url": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B9%83%E0%B8%88%E0%B9%84%E0%B8%97%E0%B8%A2_(%E0%B8%9E.%E0%B8%A8._2566)"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-PCC",
+      "country": "TH",
+      "shortName": "Prachachat Party",
+      "name": "พรรคประชาชาติ",
+      "nameEn": "Prachachat Party",
+      "logo": "party-logos/th/pcc.png",
+      "sha256": "7a9290903c50d97fced9cba930f664122182ca6ec12d8afe73d7a46117633ea3",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Prachachart_Party.png",
+      "licenceNote": "Logo hosted locally on English Wikipedia (not Commons) as a non-free file used under fair use solely to identify the Prachachat Party; it is not freely licensed for general reuse.",
+      "ideology": [
+        "Social democracy",
+        "Social conservatism",
+        "Islamic democracy",
+        "Multiculturalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Fiscal: centre-left; Social: right-wing",
+      "founded": 2018,
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Tawee Sodsong",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 5,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Prachachat Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Prachachat_Party"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-NEW",
+      "country": "TH",
+      "shortName": "New Party",
+      "name": "พรรคใหม่",
+      "nameEn": "New Party",
+      "noImageReason": "No logo file is specified in the 'logo' field of the English Wikipedia 'New Party (Thailand)' infobox, and no corresponding file was found on Wikimedia Commons or Wikidata as of September 2026.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "positionRaw": "No ideology or left-right position stated in the sourced infobox; Wikipedia categorizes the article only under 'Progressive parties in Thailand'",
+      "founded": 2022,
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Kriditaj Sangthanyothin",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 1,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "New Party (Thailand) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Party_(Thailand)"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-NDP",
+      "country": "TH",
+      "shortName": "New Democracy Party",
+      "name": "พรรคประชาธิปไตยใหม่",
+      "nameEn": "New Democracy Party",
+      "logo": "party-logos/th/ndp.jpg",
+      "sha256": "819ba13cddf6db32d134700e86558f18bc4b3d0a7b9e38e2872c22056dd65c9f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:New_Democracy_Party_th_logo.jpg",
+      "licenceNote": "Logo hosted locally on English Wikipedia (not Commons) as a non-free file used under fair use solely to identify the New Democracy Party; it is not freely licensed for general reuse.",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "founded": 2011,
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Suratin Pichan",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 1,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "New Democracy Party (Thailand) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Democracy_Party_(Thailand)"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-TPD",
+      "country": "TH",
+      "shortName": "Thai Pakdee Party",
+      "name": "พรรคไทยภักดี",
+      "nameEn": "Thai Pakdee Party",
+      "logo": "party-logos/th/tpk.png",
+      "sha256": "a966410f75bf0cf4acc4b70d2e0738921aa5916edbce778f06dc93f298752b83",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Thaipakdee-logo-2568.png",
+      "ideology": [
+        "Monarchism",
+        "Reactionary conservatism",
+        "Right-wing populism",
+        "Anti-immigration"
+      ],
+      "ideologyPosition": "far-right",
+      "founded": 2021,
+      "leader": "Issaraporn Narin",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Thai Pakdee Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Thai_Pakdee_Party"
+        },
+        {
+          "title": "2026 Thai general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        }
+      ]
+    },
+    {
+      "id": "TH-TST",
+      "country": "TH",
+      "shortName": "Thai Sang Thai Party",
+      "name": "พรรคไทยสร้างไทย",
+      "nameEn": "Thai Sang Thai Party",
+      "logo": "party-logos/th/tst.svg",
+      "sha256": "6b60f18bd734f691d5bc78d925041778e2c2ee0fab2dc27c622f5cbd6752c8ac",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Thai_Sang_Thai_Party_logo_(2025)_with_name.svg",
+      "ideology": [
+        "Progressive conservatism",
+        "Neoliberalism",
+        "Antimilitarism",
+        "Constitutional monarchism"
+      ],
+      "ideologyPosition": "centre-right",
+      "founded": 2021,
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Vacant (Sudarat Keyuraphan resigned as party leader on 12 February 2026, saying \"there is no place for idealists\" in current Thai politics)",
+      "leaderTitle": "Party Leader (vacant)",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 2,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Thai Sang Thai Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Thai_Sang_Thai_Party"
+        },
+        {
+          "title": "2026 Thai general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-PPP",
+      "country": "TH",
+      "shortName": "People's Power Party",
+      "name": "People's Power Party",
+      "nameEn": "People's Power Party",
+      "noImageReason": "No Wikipedia article (English or Thai) or Wikidata entry could be located for this 2025-founded party as of September 2026, so no logo could be sourced. It is distinct from the unrelated, older People's Power Party (Thailand) of 1998–2008. The Thai-script official name could likewise not be independently verified and is left as the English name used in Wikipedia's election-results table, rather than guessed.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "positionRaw": "Not documented in any accessible source",
+      "founded": 2025,
+      "coalitionId": "th-anutin-coalition",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 1,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "2026 Thai general election - Wikipedia (party-list results table, party linked as 'People's Power Party (Thailand, 2025)')",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-TLP",
+      "country": "TH",
+      "shortName": "Thai Liberal Party",
+      "name": "พรรคเสรีรวมไทย",
+      "nameEn": "Thai Liberal Party",
+      "logo": "party-logos/th/tlp.png",
+      "sha256": "115df3e108249214d440dea2f8efc4da52c00c0ebfbd3bb0d2fa7d92a3b20c94",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Thai_Liberal_Party_logo.png",
+      "licenceNote": "Logo hosted locally on English Wikipedia (not Commons) as a non-free file used under fair use solely to identify the Thai Liberal Party; it is not freely licensed for general reuse.",
+      "ideology": [
+        "Progressive conservatism",
+        "Antimilitarism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2013,
+      "leader": "Sereepisuth Temeeyaves",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Thai Liberal Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Thai_Liberal_Party"
+        },
+        {
+          "title": "2026 Thai general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        }
+      ]
+    },
+    {
+      "id": "TH-NAP",
+      "country": "TH",
+      "shortName": "New Alternative Party",
+      "name": "พรรคทางเลือกใหม่",
+      "nameEn": "New Alternative Party",
+      "noImageReason": "The 'logo' field in the English Wikipedia 'New Alternative Party (Thailand)' infobox is blank, and no corresponding file was found on Wikimedia Commons or Wikidata as of September 2026.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "positionRaw": "No ideology or left-right position documented in the sourced infobox",
+      "founded": 2018,
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Rachen Tagunviang",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 1,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "New Alternative Party (Thailand) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Alternative_Party_(Thailand)"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-TRP",
+      "country": "TH",
+      "shortName": "Thai Ruam Palang Party",
+      "name": "พรรคไทรวมพลัง",
+      "nameEn": "Thai Ruam Palang Party",
+      "logo": "party-logos/th/trp.jpg",
+      "sha256": "5bcdbd75adce7e72afcf9e9a3d41b4f6def41cc8c420c692fbfa80357d9a17c4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Thai_Ruamphalang_Party_Logo.jpg",
+      "ideology": [],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Not explicitly stated in the infobox; Wikipedia categorizes the article under 'Centre-right parties in Asia', 'Liberal conservative parties' and 'Populist parties'",
+      "founded": 2021,
+      "previousNames": [
+        {
+          "name": "Pheu Thai Ruam Power Party",
+          "years": "2021–2024 (renamed to Thai Ruamphalang/Thai Ruam Palang in April 2024)"
+        }
+      ],
+      "leader": "Wasawat Puangphonsri",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Thai Ruam Palang Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Thai_Ruam_Palang_Party"
+        },
+        {
+          "title": "2026 Thai general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        }
+      ]
+    },
+    {
+      "id": "TH-PPRP",
+      "country": "TH",
+      "shortName": "Palang Pracharath Party",
+      "name": "พรรคพลังประชารัฐ",
+      "nameEn": "Palang Pracharath Party",
+      "logo": "party-logos/th/pprp.png",
+      "sha256": "682d3062430bf35ff25271b51d7afa003a41da975eb1e571d8bfcb3ce798f19b",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Palang_Pracharath_Party_(2025).png",
+      "licenceNote": "Logo hosted locally on English Wikipedia (not Commons) as a non-free file used under fair use solely to identify the Palang Pracharath Party; it is not freely licensed for general reuse.",
+      "ideology": [
+        "Militarism",
+        "National conservatism",
+        "Right-wing populism",
+        "Monarchism",
+        "Economic populism"
+      ],
+      "ideologyPosition": "right",
+      "founded": 2018,
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Trinuch Thienthong",
+      "leaderTitle": "Acting Party Leader",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 5,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Palang Pracharath Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Palang_Pracharath_Party"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "TH-NOP",
+      "country": "TH",
+      "shortName": "New Opportunity Party",
+      "name": "พรรคโอกาสใหม่",
+      "nameEn": "New Opportunity Party",
+      "noImageReason": "The 'logo' field in the English Wikipedia 'New Opportunity Party' infobox is blank, and no corresponding file was found on Wikimedia Commons or Wikidata as of September 2026.",
+      "ideology": [
+        "Neoconservatism",
+        "Monarchism"
+      ],
+      "ideologyPosition": "centre-right",
+      "founded": 2025,
+      "coalitionId": "th-anutin-coalition",
+      "leader": "Jatuporn Buruspat",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2026–present",
+      "seats": 1,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "New Opportunity Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Opportunity_Party"
+        },
+        {
+          "title": "Second Anutin cabinet - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
         }
       ]
     }
