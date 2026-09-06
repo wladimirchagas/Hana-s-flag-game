@@ -672,6 +672,52 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
     },
     "note": "PML-N-led coalition formed after the February 2024 general election; Shehbaz Sharif was elected Prime Minister on 3 March 2024 and the coalition (PML-N, MQM-P, PML-Q, IPP, PML-Z, BAP, NP) was sworn in on 11 March 2024. PPP does not hold federal cabinet seats but is included here as a documented coalition/support party: it backs the government in confidence-and-supply votes and its co-chairman Asif Ali Zardari holds the Presidency."
+  },
+  "cl-unidad-por-chile": {
+    "id": "cl-unidad-por-chile",
+    "name": "Unidad por Chile",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "CL-FA",
+      "CL-PS",
+      "CL-PC",
+      "CL-PDC",
+      "CL-PPD",
+      "CL-PL"
+    ],
+    "source": {
+      "title": "2025 Chilean general election - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+    },
+    "note": "The centre-left to left electoral coalition (successor to Boric's governing bloc) that contested the 16 November 2025 parliamentary election together; it became the largest bloc in the Chamber of Deputies (61 of 155 seats) but moved into opposition after José Antonio Kast won the presidential runoff. One member party of the original list, the Radical Party (2 seats), was legally dissolved by Chile's Electoral Service (Servel) in February 2026 for failing to meet the 5%/four-parliamentarian threshold and is therefore excluded here."
+  },
+  "cl-cambio-por-chile": {
+    "id": "cl-cambio-por-chile",
+    "name": "Cambio por Chile",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "CL-PRCH",
+      "CL-PNL"
+    ],
+    "source": {
+      "title": "2025 Chilean general election - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+    },
+    "note": "The hard-right electoral coalition led by José Antonio Kast's Republican Party that contested the November 2025 parliamentary election, winning 42 of 155 Chamber seats. A third list member, the Christian Social Party (3 seats), was dissolved by Servel in February 2026 for missing the legal vote/seat threshold. The National Libertarian Party (Johannes Kaiser), while a member of this electoral list, declined to join Kast's government and describes itself as a 'friendly opposition' rather than a governing partner."
+  },
+  "cl-chile-grande-y-unido": {
+    "id": "cl-chile-grande-y-unido",
+    "name": "Chile Grande y Unido",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "CL-UDI",
+      "CL-RN"
+    ],
+    "source": {
+      "title": "2025 Chilean general election - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+    },
+    "note": "The traditional centre-right electoral coalition (built around the historic Chile Vamos alliance) that contested the November 2025 parliamentary election, winning 34 of 155 Chamber seats. Two list members, Evópoli (2 seats) and Demócratas (1 seat), were dissolved by Servel in February 2026 for missing the legal vote/seat threshold. UDI and RN both hold cabinet portfolios in José Antonio Kast's government, formed 11 March 2026."
   }
 };
 
@@ -13197,6 +13243,783 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "National Assembly of Pakistan – Wikipedia (current composition)",
           "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    }
+  ],
+  "GH": [
+    {
+      "id": "GH-NDC",
+      "country": "GH",
+      "shortName": "NDC",
+      "name": "National Democratic Congress",
+      "logo": "party-logos/gh/ndc.svg",
+      "sha256": "53e6bde1e12316b7b30a462d77530e3f7e5245785ce06cdb29c0e0cb405948a6",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_National_Democratic_Congress_(Ghana).svg",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1992,
+      "leader": "John Mahama",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "Since 7 January 2025 (John Mahama sworn in as President; NDC holds a parliamentary majority)",
+      "seats": 185,
+      "seatsTotal": 276,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "National Democratic Congress (Ghana) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Democratic_Congress_(Ghana)"
+        },
+        {
+          "title": "Parliament of Ghana – Wikipedia (9th Parliament composition infobox)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Ghana"
+        },
+        {
+          "title": "2024 Ghanaian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Ghanaian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "GH-NPP",
+      "country": "GH",
+      "shortName": "NPP",
+      "name": "New Patriotic Party",
+      "logo": "party-logos/gh/npp.svg",
+      "sha256": "f990862893bd233ef0a1e5441b0f64aebf0af4701960e632a4b25efd780b4a36",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:NewPatrioticParty_logo.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1992,
+      "leader": "Mahamudu Bawumia",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 87,
+      "seatsTotal": 276,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "New Patriotic Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Patriotic_Party"
+        },
+        {
+          "title": "Parliament of Ghana – Wikipedia (9th Parliament composition infobox)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Ghana"
+        },
+        {
+          "title": "2024 Ghanaian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Ghanaian_general_election"
+        }
+      ]
+    }
+  ],
+  "PE": [
+    {
+      "id": "PE-FP",
+      "country": "PE",
+      "shortName": "FP",
+      "name": "Fuerza Popular",
+      "nameEn": "Popular Force",
+      "logo": "party-logos/pe/fuerza-popular.svg",
+      "sha256": "1b8981d4ef5179f643fa6b65b285c450db4864f91feafb10cc77dcffc04bcee9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Popular_Force_(2024).svg",
+      "ideology": [
+        "Fujimorism",
+        "Conservatism",
+        "Neoliberalism",
+        "Right-wing populism",
+        "Anti-communism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2010,
+      "previousNames": [
+        {
+          "name": "Fuerza 2011",
+          "years": "2010–2012"
+        }
+      ],
+      "leader": "Keiko Fujimori",
+      "leaderTitle": "President of the Republic of Peru; President of Fuerza Popular",
+      "inPower": true,
+      "timeInPower": "Since 28 July 2026 (presidency); largest bloc in Congress since 2026 election",
+      "seats": 41,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Popular Force - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Popular_Force"
+        },
+        {
+          "title": "Fuerza Popular - Wikipedia (Spanish)",
+          "url": "https://es.wikipedia.org/wiki/Fuerza_Popular"
+        },
+        {
+          "title": "2026 Peruvian general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Peruvian_general_election"
+        },
+        {
+          "title": "Elecciones parlamentarias de Perú de 2026 - Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/Elecciones_parlamentarias_de_Per%C3%BA_de_2026"
+        },
+        {
+          "title": "Keiko Fujimori sworn in as Peru president after narrow election win - Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/28/keiko-fujimori-sworn-in-as-peru-president-after-narrow-election-win"
+        }
+      ]
+    },
+    {
+      "id": "PE-JP",
+      "country": "PE",
+      "shortName": "JP",
+      "name": "Juntos por el Perú",
+      "nameEn": "Together for Peru",
+      "logo": "party-logos/pe/juntos-por-el-peru.svg",
+      "sha256": "67bf3974a9f2718c266ccbcf7f22b3303d22ef2baf6a0bc78064b6d4bdac62f5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_juntos_por_el_Peru.svg",
+      "ideology": [
+        "Anti-Fujimorism",
+        "Anti-neoliberalism",
+        "Democratic socialism",
+        "Progressivism",
+        "Decentralization"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2017,
+      "previousNames": [
+        {
+          "name": "Partido Humanista Peruano (registration reused to found JP)",
+          "years": "2001–2017"
+        }
+      ],
+      "leader": "Roberto Sánchez",
+      "leaderTitle": "President of Juntos por el Perú",
+      "inPower": false,
+      "timeInPower": "",
+      "seats": 32,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Together for Peru - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Together_for_Peru"
+        },
+        {
+          "title": "Juntos por el Perú - Wikipedia (Spanish)",
+          "url": "https://es.wikipedia.org/wiki/Juntos_por_el_Per%C3%BA"
+        },
+        {
+          "title": "Elecciones parlamentarias de Perú de 2026 - Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/Elecciones_parlamentarias_de_Per%C3%BA_de_2026"
+        }
+      ]
+    },
+    {
+      "id": "PE-RP",
+      "country": "PE",
+      "shortName": "RP",
+      "name": "Renovación Popular",
+      "nameEn": "Popular Renewal",
+      "logo": "party-logos/pe/renovacion-popular.svg",
+      "sha256": "92855663ee2ef3623c90c7f2fd9b421a091f9efd71c2510db93d51905c091991",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Renovaci%C3%B3n_Popular_logo.svg",
+      "ideology": [
+        "Ultraconservatism",
+        "Christian right",
+        "Neo-fascism",
+        "Right-wing populism",
+        "Neoliberalism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2020,
+      "previousNames": [
+        {
+          "name": "Partido Solidaridad Nacional (National Solidarity)",
+          "years": "1998–2020"
+        }
+      ],
+      "leader": "Rafael López Aliaga",
+      "leaderTitle": "President of Renovación Popular",
+      "inPower": false,
+      "timeInPower": "",
+      "seats": 15,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Popular Renewal - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Popular_Renewal"
+        },
+        {
+          "title": "Renovación Popular - Wikipedia (Spanish)",
+          "url": "https://es.wikipedia.org/wiki/Renovaci%C3%B3n_Popular"
+        },
+        {
+          "title": "National Solidarity (Peru) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Solidarity_(Peru)"
+        },
+        {
+          "title": "Elecciones 2021: Solidaridad Nacional cambia de nombre a Renovación Popular - Andina",
+          "url": "https://andina.pe/agencia/noticia-elecciones-2021-solidaridad-nacional-cambia-nombre-a-renovacion-popular-816933.aspx"
+        }
+      ]
+    },
+    {
+      "id": "PE-PBG",
+      "country": "PE",
+      "shortName": "PBG",
+      "name": "Partido del Buen Gobierno",
+      "nameEn": "Party of Good Government",
+      "logo": "party-logos/pe/partido-buen-gobierno.jpg",
+      "sha256": "e7a2289ec1025004d9901874a780576f6ceb60e4f1c5bbeee53bdceaf4e8e666",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PBG_Logo.jpg",
+      "ideology": [
+        "Social liberalism",
+        "Humanism",
+        "Reformism",
+        "Progressivism",
+        "Third way"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2020,
+      "leader": "Jorge Nieto",
+      "leaderTitle": "President of the Partido del Buen Gobierno",
+      "inPower": false,
+      "timeInPower": "",
+      "seats": 18,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "logoMeaning": {
+        "description": "The party's emblem is the Inti (Inca sun deity), drawn in the style of Felipe Guamán Poma de Ayala's 17th-century illustrated chronicle Nueva corónica y buen gobierno — the very work the party's name ('Good Government') references. The choice is meant to connect the party's identity to pre-Hispanic and Indigenous Andean heritage.",
+        "sources": [
+          {
+            "title": "Party of Good Government - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Party_of_Good_Government"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Party of Good Government - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Party_of_Good_Government"
+        },
+        {
+          "title": "Partido del Buen Gobierno - Wikipedia (Spanish)",
+          "url": "https://es.wikipedia.org/wiki/Partido_del_Buen_Gobierno"
+        },
+        {
+          "title": "Jorge Nieto - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jorge_Nieto"
+        }
+      ]
+    },
+    {
+      "id": "PE-OBRAS",
+      "country": "PE",
+      "shortName": "OBRAS",
+      "name": "Partido Cívico Obras",
+      "nameEn": "Civic Party OBRAS",
+      "logo": "party-logos/pe/obras.png",
+      "sha256": "30bdff939019e54ab05fd4cb9c232dc6b9a8844153e7bf760684109186e2bb17",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Civic_Party_OBRAS.png",
+      "ideology": [
+        "Populism",
+        "Nationalism",
+        "Developmentalism",
+        "Third way",
+        "Anti-Fujimorism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre, with factions leaning centre-left and centre-right",
+      "founded": 1989,
+      "previousNames": [
+        {
+          "name": "Movimiento Cívico Independiente OBRAS (Independent Civic Movement OBRAS)",
+          "years": "1989–1995"
+        }
+      ],
+      "leader": "Ricardo Belmont",
+      "leaderTitle": "President of the Partido Cívico OBRAS",
+      "inPower": false,
+      "timeInPower": "",
+      "seats": 14,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Civic Party OBRAS - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Civic_Party_OBRAS"
+        },
+        {
+          "title": "Partido Cívico OBRAS - Wikipedia (Spanish)",
+          "url": "https://es.wikipedia.org/wiki/Partido_C%C3%ADvico_OBRAS"
+        },
+        {
+          "title": "Ricardo Belmont - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ricardo_Belmont"
+        }
+      ]
+    },
+    {
+      "id": "PE-AN",
+      "country": "PE",
+      "shortName": "AN",
+      "name": "Ahora Nación",
+      "nameEn": "Now Nation",
+      "logo": "party-logos/pe/ahora-nacion.jpg",
+      "sha256": "3f6d072d21eddf5a9406e559f606f7aa5d2310a0eb352c3adfacc8c07964b58c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Ahora_Naci%C3%B3n_2026.jpg",
+      "ideology": [
+        "Social democracy",
+        "Left-wing nationalism",
+        "Progressivism",
+        "Anti-Fujimorism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2023,
+      "leader": "Alfonso López-Chau",
+      "leaderTitle": "Leader of Ahora Nación",
+      "inPower": false,
+      "timeInPower": "",
+      "seats": 10,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Now Nation - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Now_Nation"
+        },
+        {
+          "title": "Ahora Nación - Wikipedia (Spanish)",
+          "url": "https://es.wikipedia.org/wiki/Ahora_Naci%C3%B3n"
+        }
+      ]
+    }
+  ],
+  "CL": [
+    {
+      "id": "CL-FA",
+      "country": "CL",
+      "shortName": "FA",
+      "name": "Frente Amplio",
+      "nameEn": "Broad Front",
+      "logo": "party-logos/cl/fa.svg",
+      "sha256": "6c5330dd9e82ca8f58e6dedc6576e69928021ba0a5e6f31143e4535394fe1153",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Broad_Front_(Chile,_2024).svg",
+      "licenceNote": "Non-free logo used under English Wikipedia's fair-use rationale for logos (low-resolution image used only for identification of the organisation); not freely licensed on Wikimedia Commons.",
+      "ideology": [
+        "Democratic socialism",
+        "Left-wing populism",
+        "Radical democracy",
+        "Feminism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2024,
+      "previousNames": [
+        {
+          "name": "Frente Amplio (electoral coalition of left-wing parties and movements)",
+          "years": "2017-2024"
+        }
+      ],
+      "coalitionId": "cl-unidad-por-chile",
+      "leader": "Constanza Martínez",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "Governed 2022-2026 under President Gabriel Boric (a founding FA figure); in opposition since Kast's inauguration on 11 March 2026",
+      "seats": 17,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Frente Amplio (Chilean political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Frente_Amplio_(Chilean_political_party)"
+        },
+        {
+          "title": "2025 Chilean general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CL-PS",
+      "country": "CL",
+      "shortName": "PS",
+      "name": "Partido Socialista de Chile",
+      "nameEn": "Socialist Party of Chile",
+      "logo": "party-logos/cl/ps.svg",
+      "sha256": "c9099f43f894f149daa64fb323fbeaa905ba21c7402da1566b86b7d49a9390d8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Socialist_Party_of_Chile.svg",
+      "ideology": [
+        "Social democracy",
+        "Democratic socialism",
+        "Reformism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1933,
+      "coalitionId": "cl-unidad-por-chile",
+      "leader": "Paulina Vodanovic",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "Led the government under President Gabriel Boric 2022-2026; in opposition since 11 March 2026",
+      "seats": 11,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Socialist Party of Chile - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_of_Chile"
+        },
+        {
+          "title": "2025 Chilean general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CL-PC",
+      "country": "CL",
+      "shortName": "PC",
+      "name": "Partido Comunista de Chile",
+      "nameEn": "Communist Party of Chile",
+      "logo": "party-logos/cl/pc.svg",
+      "sha256": "cd3368bf728e2c81f6b6f9aca46d8cf7fcdab449845269a83ed7842b6405e0d1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Comunista_de_Chile.svg",
+      "ideology": [
+        "Communism",
+        "Marxism-Leninism",
+        "Left-wing populism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 1912,
+      "previousNames": [
+        {
+          "name": "Partido Obrero Socialista (Socialist Workers' Party)",
+          "years": "1912-1922"
+        }
+      ],
+      "coalitionId": "cl-unidad-por-chile",
+      "leader": "Lautaro Carmona Soto",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "Part of Gabriel Boric's governing coalition 2022-2026 (PC's Jeannette Jara was the coalition's 2025 presidential candidate, losing the runoff to Kast); in opposition since 11 March 2026",
+      "seats": 11,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Communist Party of Chile - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Chile"
+        },
+        {
+          "title": "2025 Chilean general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CL-PDC",
+      "country": "CL",
+      "shortName": "PDC",
+      "name": "Partido Demócrata Cristiano",
+      "nameEn": "Christian Democratic Party",
+      "logo": "party-logos/cl/pdc.svg",
+      "sha256": "c0639d126df0c236c6ac11a5c5776e9a423e1655a5ded9f085d2ea3b75dcfadf",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Christian_Democrat_Party_of_Chile.svg",
+      "ideology": [
+        "Christian democracy",
+        "Political Catholicism",
+        "Third Way"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1957,
+      "coalitionId": "cl-unidad-por-chile",
+      "leader": "Álvaro Ortiz Vera",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "In opposition since 11 March 2026",
+      "seats": 8,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Christian Democratic Party (Chile) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democratic_Party_(Chile)"
+        },
+        {
+          "title": "2025 Chilean general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CL-PPD",
+      "country": "CL",
+      "shortName": "PPD",
+      "name": "Partido por la Democracia",
+      "nameEn": "Party for Democracy",
+      "logo": "party-logos/cl/ppd.png",
+      "sha256": "44324071494d91cc1c8460d830d6911399c556e7007cff20f508f150379abeb0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Party_for_Democracy_(Chile).png",
+      "ideology": [
+        "Progressivism",
+        "Third Way",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1987,
+      "coalitionId": "cl-unidad-por-chile",
+      "leader": "Raúl Soto",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "In opposition since 11 March 2026",
+      "seats": 9,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Party for Democracy (Chile) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Party_for_Democracy_(Chile)"
+        },
+        {
+          "title": "2025 Chilean general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CL-PL",
+      "country": "CL",
+      "shortName": "PL",
+      "name": "Partido Liberal de Chile",
+      "nameEn": "Liberal Party of Chile",
+      "logo": "party-logos/cl/pl.svg",
+      "sha256": "8e0fe5fb9626a9cf6d36d130e1e0489c27c8ea315589f18eebce9005735edf5c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Liberal_Party_of_Chile.svg",
+      "ideology": [
+        "Social liberalism",
+        "Progressivism",
+        "Green liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2013,
+      "coalitionId": "cl-unidad-por-chile",
+      "leader": "Juan Carlos Urzúa",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "In opposition since 11 March 2026",
+      "seats": 3,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Liberal Party (Chile, 2013) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Party_(Chile,_2013)"
+        },
+        {
+          "title": "2025 Chilean general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CL-PRCH",
+      "country": "CL",
+      "shortName": "PRCh",
+      "name": "Partido Republicano de Chile",
+      "nameEn": "Republican Party of Chile",
+      "logo": "party-logos/cl/prch.svg",
+      "sha256": "64828f923732cca4503abf628e3e3c0bbccf9ea908a6b00e7b0c2da59b63e785",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Republican_Party_of_Chile_logo.svg",
+      "ideology": [
+        "National conservatism",
+        "Economic liberalism",
+        "Right-wing populism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2019,
+      "coalitionId": "cl-cambio-por-chile",
+      "leader": "Arturo Squella",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Since 11 March 2026 (party founder José Antonio Kast won the presidency in the December 2025 runoff and took office 11 March 2026; he resigned the party presidency after his election)",
+      "seats": 31,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Republican Party (Chile) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Republican_Party_(Chile)"
+        },
+        {
+          "title": "2025 Chilean general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CL-PNL",
+      "country": "CL",
+      "shortName": "PNL",
+      "name": "Partido Nacional Libertario",
+      "nameEn": "National Libertarian Party",
+      "logo": "party-logos/cl/pnl.svg",
+      "sha256": "fe5736af263d64f2f0845b4f0f0d83080870363c0642ab4e96a1c3ebc52b1e0a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Nacional_Libertario.svg",
+      "ideology": [
+        "Paleolibertarianism",
+        "Market fundamentalism",
+        "Ultraconservatism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2024,
+      "coalitionId": "cl-cambio-por-chile",
+      "leader": "Johannes Kaiser",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "timeInPower": "Not part of the Kast government: leader Johannes Kaiser declined a cabinet post (the Ministry of Mining) and the party positions itself as a 'friendly opposition' outside the governing coalition",
+      "seats": 8,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "National Libertarian Party (Chile) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Libertarian_Party_(Chile)"
+        },
+        {
+          "title": "El plan de Kaiser para presionar al gobierno de Kast desde la derecha - The Clinic",
+          "url": "https://www.theclinic.cl/2026/08/02/el-plan-de-kaiser-para-tensionar-al-gobierno-de-kast-desde-la-derecha-aciertos-traspies-y-la-hoja-de-ruta-con-la-que-busca-pavimentar-el-camino-hacia-la-moneda/"
+        }
+      ]
+    },
+    {
+      "id": "CL-UDI",
+      "country": "CL",
+      "shortName": "UDI",
+      "name": "Unión Demócrata Independiente",
+      "nameEn": "Independent Democratic Union",
+      "logo": "party-logos/cl/udi.png",
+      "sha256": "0d17428274d18a55ac9580c55f5654671d4d5a2d4730429eb01305e71a7520ab",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Independent_Democratic_Union_(Chile).png",
+      "ideology": [
+        "Conservatism",
+        "Christian right",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 1983,
+      "coalitionId": "cl-chile-grande-y-unido",
+      "leader": "Guillermo Ramírez",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Holds a cabinet portfolio in José Antonio Kast's government, formed 11 March 2026",
+      "seats": 18,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Independent Democratic Union - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Independent_Democratic_Union"
+        },
+        {
+          "title": "2025 Chilean general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CL-RN",
+      "country": "CL",
+      "shortName": "RN",
+      "name": "Renovación Nacional",
+      "nameEn": "National Renewal",
+      "logo": "party-logos/cl/rn.svg",
+      "sha256": "fd868a0f974075142f40cd0ec2ecd827b559566418089a5314672d84bfa29b16",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_del_Partido_pol%C3%ADtico_Renovaci%C3%B3n_Nacional_(RN),_Chile.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Economic liberalism",
+        "Reformism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1987,
+      "coalitionId": "cl-chile-grande-y-unido",
+      "leader": "Andrea Balladares",
+      "leaderTitle": "President (2026-2028)",
+      "inPower": true,
+      "timeInPower": "Holds a cabinet portfolio in José Antonio Kast's government, formed 11 March 2026",
+      "seats": 13,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "National Renewal (Chile) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Renovation_(Chile)"
+        },
+        {
+          "title": "2025 Chilean general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CL-PDG",
+      "country": "CL",
+      "shortName": "PDG",
+      "name": "Partido de la Gente",
+      "nameEn": "Party of the People",
+      "logo": "party-logos/cl/pdg.png",
+      "sha256": "595ffe1e5dd6624b124dcfb669cb06bff2d6a3e5e5ff6f76af9aa39910ee665d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Pdg_logo_new.png",
+      "ideology": [
+        "Populism",
+        "Catch-all",
+        "Anti-establishment",
+        "E-democracy"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Big tent / syncretic; described by some sources as right-wing populist, but the party itself rejects a left-right classification",
+      "founded": 2019,
+      "leader": "Franco Parisi",
+      "leaderTitle": "General Secretary and Leader",
+      "inPower": false,
+      "timeInPower": "Ran its own presidential and parliamentary lists (not part of a governing or opposition electoral coalition) and holds no cabinet post in the Kast government",
+      "seats": 14,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Party of the People (Chile) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Party_of_the_People_(Chile)"
+        },
+        {
+          "title": "2025 Chilean general election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
         }
       ]
     }
