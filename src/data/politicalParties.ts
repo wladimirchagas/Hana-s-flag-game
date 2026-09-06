@@ -608,6 +608,50 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "url": "https://en.wikipedia.org/wiki/National_Unified_List_for_Egypt"
     },
     "note": "A pro-government electoral alliance of parties supporting President Abdel Fattah el-Sisi, formed in 2020 and re-formed for the 2025 House of Representatives election; it swept the great majority of seats in both elections."
+  },
+  "tr-cumhur": {
+    "id": "tr-cumhur",
+    "name": "People's Alliance (Cumhur İttifakı)",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "TR-AKP",
+      "TR-MHP"
+    ],
+    "source": {
+      "title": "People's Alliance (Turkey) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/People%27s_Alliance_(Turkey)"
+    },
+    "note": "Formal electoral and governing alliance led by the AKP; the Grand National Assembly's own current-composition table lists only AKP and MHP under this affiliation, with HÜDA PAR and DSP treated as separate confidence-and-supply supporters of the government rather than formal alliance members."
+  },
+  "tr-emek-ozgurluk": {
+    "id": "tr-emek-ozgurluk",
+    "name": "Labour and Freedom Alliance (Emek ve Özgürlük İttifakı)",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "TR-DEM",
+      "TR-TIP",
+      "TR-DBP",
+      "TR-EMEP"
+    ],
+    "source": {
+      "title": "Labour and Freedom Alliance — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Labour_and_Freedom_Alliance"
+    },
+    "note": "Kurdish-left-led electoral bloc formed in 2022; the four parties caucus together in the Grand National Assembly (63 seats combined) though each holds its own seats."
+  },
+  "tr-yeni-yol": {
+    "id": "tr-yeni-yol",
+    "name": "New Path (Yeni Yol)",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "TR-DEVA",
+      "TR-SAADET"
+    ],
+    "source": {
+      "title": "New Path — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/New_Path"
+    },
+    "note": "A joint parliamentary group (officially registered as its own party in January 2025) formed by DEVA and Felicity Party MPs plus independents to meet the 20-member threshold required for group status in the Grand National Assembly; each constituent party keeps its own leadership, ideology and programme."
   }
 };
 
@@ -11600,6 +11644,573 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2025 Egyptian parliamentary election - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "TR": [
+    {
+      "id": "TR-AKP",
+      "country": "TR",
+      "shortName": "AKP",
+      "name": "Adalet ve Kalkınma Partisi",
+      "nameEn": "Justice and Development Party",
+      "logo": "party-logos/tr/akp.svg",
+      "sha256": "3b09b17dbd378b7c63abec768cfd583a229caac4e735d9bc69a8078cab8be16d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Justice_and_Development_Party_(Turkey)_logo.svg",
+      "licenceNote": "Bundled from the party's own logo file as hosted on English Wikipedia (used under fair use / as the party's own trademark logo for identification); not a Wikimedia Commons free-licence file.",
+      "ideology": [
+        "Erdoğanism",
+        "National conservatism",
+        "Islamic democracy",
+        "Right-wing populism",
+        "Neo-Ottomanism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2001,
+      "coalitionId": "tr-cumhur",
+      "leader": "Recep Tayyip Erdoğan",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2002–present",
+      "seats": 280,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Justice and Development Party (Turkey) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Justice_and_Development_Party"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-YENI",
+      "country": "TR",
+      "shortName": "YENİ Parti",
+      "name": "Yeni Parti",
+      "nameEn": "New Party",
+      "logo": "party-logos/tr/yeni.svg",
+      "sha256": "d886baba06364c89626990953577ef6fa39f26abd67e627d1a3c6c35f0c1adf1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Yeni_Parti_(T%C3%BCrkiye,_2026)_logo_compress_transparan.svg",
+      "ideology": [
+        "Social democracy",
+        "Kemalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2026,
+      "leader": "Özgür Özel",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 91,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "New Party (Turkey, 2026) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Party_(Turkey,_2026)"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-DEM",
+      "country": "TR",
+      "shortName": "DEM Parti",
+      "name": "Halkların Eşitlik ve Demokrasi Partisi",
+      "nameEn": "Peoples' Equality and Democracy Party",
+      "logo": "party-logos/tr/dem.png",
+      "sha256": "1aca2fa111e1a72dc180095f5d7a2ad456d15016d8db16d65f6affe7203dbe44",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:DEM_PART%C4%B0_LOGOSU.png",
+      "ideology": [
+        "Kurdish minority interests",
+        "Left-wing politics",
+        "Green politics",
+        "Feminism",
+        "Regionalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2023,
+      "coalitionId": "tr-emek-ozgurluk",
+      "leader": "Tülay Hatimoğulları & Tuncer Bakırhan",
+      "leaderTitle": "Co-Chairs",
+      "inPower": false,
+      "seats": 56,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Peoples' Equality and Democracy Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Peoples%27_Equality_and_Democracy_Party"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-MHP",
+      "country": "TR",
+      "shortName": "MHP",
+      "name": "Milliyetçi Hareket Partisi",
+      "nameEn": "Nationalist Movement Party",
+      "logo": "party-logos/tr/mhp.svg",
+      "sha256": "d9784cd04604b414065667d81c3565e65560d8e00e0eb9a129a743efa6d272eb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Milliyet%C3%A7i_Hareket_Partisi_Logo.svg",
+      "ideology": [
+        "Ultranationalism",
+        "Pan-Turkism",
+        "Turkish nationalism",
+        "Anti-communism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1969,
+      "coalitionId": "tr-cumhur",
+      "leader": "Devlet Bahçeli",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 46,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Nationalist Movement Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nationalist_Movement_Party"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-CHP",
+      "country": "TR",
+      "shortName": "CHP",
+      "name": "Cumhuriyet Halk Partisi",
+      "nameEn": "Republican People's Party",
+      "logo": "party-logos/tr/chp.svg",
+      "sha256": "2e512777ce281077f38c531ce12ed1c718a06c9c60c03b55a5e4606e88853abc",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Republican_People%27s_Party",
+      "licenceNote": "Bundled from the party's own logo file as hosted on English Wikipedia (used under fair use / as the party's own trademark logo for identification); not a Wikimedia Commons free-licence file.",
+      "ideology": [
+        "Social democracy",
+        "Kemalism",
+        "Social liberalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1923,
+      "previousNames": [
+        {
+          "name": "Banned 1981–1992 under military rule; re-established in its current form",
+          "years": "1981–1992"
+        }
+      ],
+      "leader": "Kemal Kılıçdaroğlu",
+      "leaderTitle": "Chairman (acting, court-reinstated)",
+      "inPower": false,
+      "seats": 44,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Republican People's Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Republican_People%27s_Party"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-IYI",
+      "country": "TR",
+      "shortName": "İYİ Parti",
+      "name": "İYİ Parti",
+      "nameEn": "Good Party",
+      "logo": "party-logos/tr/iyi.svg",
+      "sha256": "eb7859fa02f9a7c72d6885305b1183a79c95f2bba65cea45fd49a6743d432d06",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Good_Party.svg",
+      "ideology": [
+        "Kemalism",
+        "Turkish nationalism",
+        "National conservatism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2017,
+      "leader": "Müsavat Dervişoğlu",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 27,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Good Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Good_Party"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-DEVA",
+      "country": "TR",
+      "shortName": "DEVA",
+      "name": "Demokrasi ve Atılım Partisi",
+      "nameEn": "Democracy and Progress Party",
+      "logo": "party-logos/tr/deva.svg",
+      "sha256": "c22e98f1ace06381cbf97b997cdb9c032bca2a4723f0509d7e1d1b7e42ec90fc",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Deva_Party_Logo.svg",
+      "licenceNote": "Bundled from the party's own logo file as hosted on English Wikipedia (used under fair use / as the party's own trademark logo for identification); not a Wikimedia Commons free-licence file.",
+      "ideology": [
+        "Liberal conservatism",
+        "Economic liberalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2020,
+      "coalitionId": "tr-yeni-yol",
+      "leader": "Ali Babacan",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Democracy and Progress Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democracy_and_Progress_Party"
+        },
+        {
+          "title": "New Path — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Path"
+        }
+      ]
+    },
+    {
+      "id": "TR-HUDAPAR",
+      "country": "TR",
+      "shortName": "HÜDA PAR",
+      "name": "Hür Dava Partisi",
+      "nameEn": "Free Cause Party",
+      "logo": "party-logos/tr/hudapar.png",
+      "sha256": "149cfbc0775b7aec28f8ce0abcb27169d42eaba4a58ddfc9e7d6222d98f50fa6",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Huda-par-logo.png",
+      "licenceNote": "Bundled from the party's own logo file as hosted on English Wikipedia (used under fair use / as the party's own trademark logo for identification); not a Wikimedia Commons free-licence file.",
+      "ideology": [
+        "Islamism",
+        "Kurdish-Islamic synthesis",
+        "Pan-Islamism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2012,
+      "leader": "Zekeriya Yapıcıoğlu",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "timeInPower": "Confidence-and-supply partner of the AKP government",
+      "seats": 4,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Free Cause Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Free_Cause_Party"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-YRP",
+      "country": "TR",
+      "shortName": "YRP",
+      "name": "Yeniden Refah Partisi",
+      "nameEn": "New Welfare Party",
+      "logo": "party-logos/tr/yrp.svg",
+      "sha256": "751cba4f7b18459c28433a4b4c07af1627ca42f878441e5c74bb308d9edf6178",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Yeniden_Refah_Partisi_logo.svg",
+      "ideology": [
+        "Millî Görüş",
+        "Islamism",
+        "Neo-Ottomanism",
+        "Ultraconservatism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2018,
+      "leader": "Fatih Erbakan",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "New Welfare Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Welfare_Party"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-TIP",
+      "country": "TR",
+      "shortName": "TİP",
+      "name": "Türkiye İşçi Partisi",
+      "nameEn": "Workers' Party of Turkey",
+      "logo": "party-logos/tr/tip.svg",
+      "sha256": "1459afed22d86ae017981de18d00494c57f2e17f838118ba036c4e48f312c4e3",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:T%C3%BCrkiye_%C4%B0%C5%9F%C3%A7i_Partisi.svg",
+      "ideology": [
+        "Socialism",
+        "Marxism",
+        "Anti-capitalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 2017,
+      "coalitionId": "tr-emek-ozgurluk",
+      "leader": "Erkan Baş",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Workers' Party of Turkey (2017) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Workers%27_Party_of_Turkey_(2017)"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-DBP",
+      "country": "TR",
+      "shortName": "DBP",
+      "name": "Demokratik Bölgeler Partisi",
+      "nameEn": "Democratic Regions Party",
+      "logo": "party-logos/tr/dbp.png",
+      "sha256": "39fc632c746e420a693b94faaae2d1a043bd202c5570c9b9dfeecaab83930866",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Dbp_logo.png",
+      "licenceNote": "Bundled from the party's own logo file as hosted on English Wikipedia (used under fair use / as the party's own trademark logo for identification); not a Wikimedia Commons free-licence file.",
+      "ideology": [
+        "Kurdish nationalism",
+        "Democratic socialism",
+        "Regionalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2014,
+      "previousNames": [
+        {
+          "name": "Peace and Democracy Party (Barış ve Demokrasi Partisi, BDP)",
+          "years": "2008–2014"
+        }
+      ],
+      "coalitionId": "tr-emek-ozgurluk",
+      "leader": "Çiğdem Kılıçgün Uçar & Keskin Bayındır",
+      "leaderTitle": "Co-Chairs",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Democratic Regions Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Regions_Party"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-EMEP",
+      "country": "TR",
+      "shortName": "EMEP",
+      "name": "Emek Partisi",
+      "nameEn": "Labour Party",
+      "logo": "party-logos/tr/emep.svg",
+      "sha256": "2f9bb6461ef0c8404de36c2c4d475e6dd9e68aa56d1a896c810cfe1e64b22526",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emek_Partisi_Logo.svg",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism",
+        "Hoxhaism",
+        "Anti-revisionism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 1996,
+      "coalitionId": "tr-emek-ozgurluk",
+      "leader": "Seyit Aslan",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Labour Party (Turkey) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Labour_Party_(Turkey)"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-DP",
+      "country": "TR",
+      "shortName": "DP",
+      "name": "Demokrat Parti",
+      "nameEn": "Democrat Party",
+      "logo": "party-logos/tr/dp.svg",
+      "sha256": "df2c483a65b3543c30f050163661e3fb53e2cc468bab64db07e7184600275227",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Democratic_Party_(Turkey,_2007).svg",
+      "licenceNote": "Bundled from the party's own logo file as hosted on English Wikipedia (used under fair use / as the party's own trademark logo for identification); not a Wikimedia Commons free-licence file.",
+      "ideology": [
+        "Liberal conservatism",
+        "Turkish nationalism",
+        "Kemalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2007,
+      "previousNames": [
+        {
+          "name": "True Path Party (Doğru Yol Partisi, DYP)",
+          "years": "1983–2007"
+        }
+      ],
+      "leader": "Gültekin Uysal",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Democrat Party (Turkey, current) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democrat_Party_(Turkey,_2007)"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-SAADET",
+      "country": "TR",
+      "shortName": "SAADET",
+      "name": "Saadet Partisi",
+      "nameEn": "Felicity Party",
+      "logo": "party-logos/tr/saadet.svg",
+      "sha256": "af6646b60d8eebf3751ba4c36973beb45694da22f52a10e021808250d6cb3400",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Saadet_Partisi_Kare_Logo.svg",
+      "ideology": [
+        "Islamism",
+        "Millî Görüş",
+        "Religious conservatism",
+        "Religious nationalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2001,
+      "coalitionId": "tr-yeni-yol",
+      "leader": "Mahmut Arıkan",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 9,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Felicity Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Felicity_Party"
+        },
+        {
+          "title": "New Path — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Path"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
+        }
+      ]
+    },
+    {
+      "id": "TR-DSP",
+      "country": "TR",
+      "shortName": "DSP",
+      "name": "Demokratik Sol Parti",
+      "nameEn": "Democratic Left Party",
+      "logo": "party-logos/tr/dsp.png",
+      "sha256": "80f9bf8760749d6fbc269e352b29e78d0baaa2a22e3aae722a0545a60f2303d5",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Demokratik_Sol_Parti_(logo).png",
+      "licenceNote": "Bundled from the party's own logo file as hosted on English Wikipedia (used under fair use / as the party's own trademark logo for identification); not a Wikimedia Commons free-licence file.",
+      "ideology": [
+        "Ecevitism",
+        "Kemalism",
+        "Social democracy",
+        "Left-wing nationalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1985,
+      "leader": "Önder Aksakal",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "timeInPower": "Confidence-and-supply partner of the AKP government",
+      "seats": 1,
+      "seatsTotal": 600,
+      "chamberName": "Grand National Assembly",
+      "sources": [
+        {
+          "title": "Democratic Left Party (Turkey) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Left_Party_(Turkey)"
+        },
+        {
+          "title": "Grand National Assembly of Turkey — Current composition",
+          "url": "https://en.wikipedia.org/wiki/Grand_National_Assembly_of_Turkey"
         }
       ]
     }
