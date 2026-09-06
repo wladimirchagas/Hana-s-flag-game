@@ -12214,5 +12214,82 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "VN": [
+    {
+      "id": "VN-CPV",
+      "country": "VN",
+      "shortName": "CPV",
+      "name": "Đảng Cộng sản Việt Nam",
+      "nameEn": "Communist Party of Vietnam",
+      "logo": "party-logos/vn/cpv.svg",
+      "sha256": "39479cb61a0da56a473e2d2da356b8e311e803b8763476f8de49b59346e0d7ea",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Communist_Party_of_Vietnam_flag_logo.svg",
+      "ideology": [
+        "Communism",
+        "Marxism-Leninism",
+        "Ho Chi Minh Thought"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 1930,
+      "previousNames": [
+        {
+          "name": "Communist Party of Vietnam",
+          "years": "3 Feb 1930 – Oct 1930"
+        },
+        {
+          "name": "Indochinese Communist Party",
+          "years": "1930–1951"
+        },
+        {
+          "name": "Vietnamese Workers' Party (Lao Động)",
+          "years": "1951–1976"
+        },
+        {
+          "name": "Communist Party of Vietnam",
+          "years": "1976–present"
+        }
+      ],
+      "leader": "Tô Lâm",
+      "leaderTitle": "General Secretary",
+      "inPower": true,
+      "timeInPower": "1945-present (sole ruling party since reunification in 1975/76)",
+      "seats": 482,
+      "seatsTotal": 500,
+      "chamberName": "National Assembly",
+      "logoMeaning": {
+        "description": "The party's flag/emblem is a red field bearing a gold hammer and sickle, the standard international communist symbol representing the alliance of industrial workers (hammer) and peasants (sickle) under Marxist-Leninist ideology. Red symbolises revolution and communism, following the Soviet-derived tradition adopted by communist parties worldwide, including the CPV since its founding.",
+        "sources": [
+          {
+            "title": "Communist Party of Vietnam - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Vietnam"
+          },
+          {
+            "title": "File:Communist Party of Vietnam flag logo.svg - Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Communist_Party_of_Vietnam_flag_logo.svg"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Communist Party of Vietnam - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Vietnam"
+        },
+        {
+          "title": "16th National Assembly of Vietnam - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/16th_National_Assembly_of_Vietnam"
+        },
+        {
+          "title": "15th National Assembly of Vietnam - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/15th_National_Assembly_of_Vietnam"
+        },
+        {
+          "title": "Vietnam's To Lam wins second term, extends top position for 5 more years - Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/1/23/vietnams-to-lam-wins-second-term-extends-top-position-for-5-more-years"
+        }
+      ]
+    }
   ]
 };
