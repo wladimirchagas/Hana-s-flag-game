@@ -652,6 +652,26 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "url": "https://en.wikipedia.org/wiki/New_Path"
     },
     "note": "A joint parliamentary group (officially registered as its own party in January 2025) formed by DEVA and Felicity Party MPs plus independents to meet the 20-member threshold required for group status in the Grand National Assembly; each constituent party keeps its own leadership, ideology and programme."
+  },
+  "pk-second-shehbaz-coalition": {
+    "id": "pk-second-shehbaz-coalition",
+    "name": "Second Shehbaz Sharif coalition government (2024– )",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "PK-PMLN",
+      "PK-PPP",
+      "PK-MQMP",
+      "PK-PMLQ",
+      "PK-IPP",
+      "PK-PMLZ",
+      "PK-BAP",
+      "PK-NP"
+    ],
+    "source": {
+      "title": "Second Shehbaz Sharif government – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+    },
+    "note": "PML-N-led coalition formed after the February 2024 general election; Shehbaz Sharif was elected Prime Minister on 3 March 2024 and the coalition (PML-N, MQM-P, PML-Q, IPP, PML-Z, BAP, NP) was sworn in on 11 March 2024. PPP does not hold federal cabinet seats but is included here as a documented coalition/support party: it backs the government in confidence-and-supply votes and its co-chairman Asif Ali Zardari holds the Presidency."
   }
 };
 
@@ -12288,6 +12308,895 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Vietnam's To Lam wins second term, extends top position for 5 more years - Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/1/23/vietnams-to-lam-wins-second-term-extends-top-position-for-5-more-years"
+        }
+      ]
+    }
+  ],
+  "CO": [
+    {
+      "id": "CO-PACTO",
+      "country": "CO",
+      "shortName": "Pacto Histórico",
+      "name": "Pacto Histórico",
+      "nameEn": "Historic Pact",
+      "logo": "party-logos/co/pacto.svg",
+      "sha256": "51812243ffa0dbde136e388826621a11ce429920057fa6d8ac419cc17024cbdc",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Historic_Pact_for_Colombia.svg",
+      "licenceNote": "Hosted locally on English Wikipedia (not Commons) under a non-free \"fair use\" rationale for identifying the Historic Pact for Colombia in the context of that Wikipedia article; used here only to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Progressivism",
+        "Petrismo",
+        "Social democracy",
+        "Welfare state",
+        "Left-wing populism (faction)"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2021,
+      "leader": "Gustavo Petro",
+      "leaderTitle": "President of the Party",
+      "inPower": false,
+      "seats": 36,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "2026 Colombian parliamentary election – Wikipedia (Chamber of Representatives results: Historic Pact 3,880,148 votes, 20.63%, 36 seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Colombian_parliamentary_election"
+        },
+        {
+          "title": "Pacto Histórico (partido político) – Wikipedia en español (founded 11 Feb 2021 as coalition; granted legal personality as a unified party 17 Sept 2025 via merger of Colombia Humana, Polo Democrático Alternativo, Unión Patriótica, Partido Comunista Colombiano, Progresistas and Minga Indígena; president Gustavo Petro; ideology, position)",
+          "url": "https://es.wikipedia.org/wiki/Pacto_Hist%C3%B3rico_(partido_pol%C3%ADtico)"
+        },
+        {
+          "title": "CNE reconoció la personería jurídica del Pacto Histórico: confirmada la fusión del Partido Comunista, la Unión Patriótica y el Polo Democrático – Infobae (3 Dec 2025)",
+          "url": "https://www.infobae.com/colombia/2025/12/03/cne-reconocio-la-personeria-juridica-del-pacto-historico-resultado-de-la-fusion-entre-los-partidos-comunista-union-patriotica-y-polo-democratico/"
+        }
+      ]
+    },
+    {
+      "id": "CO-LIBERAL",
+      "country": "CO",
+      "shortName": "Liberal",
+      "name": "Partido Liberal Colombiano",
+      "nameEn": "Colombian Liberal Party",
+      "logo": "party-logos/co/liberal.png",
+      "sha256": "8a6f729a146f39a047af40cc996408c04258251ab0a20265a22fa1e30e1c8f4c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Liberal_Colombiano_Registradur%C3%ADa.png",
+      "ideology": [
+        "Liberalism",
+        "Social liberalism",
+        "Social democracy (faction)"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1848,
+      "leader": "César Gaviria",
+      "leaderTitle": "President of the Party",
+      "inPower": false,
+      "seats": 25,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "2026 Colombian parliamentary election – Wikipedia (Chamber of Representatives results: Colombian Liberal Party 2,103,122 votes, 11.18%, 25 seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Colombian_parliamentary_election"
+        },
+        {
+          "title": "Colombian Liberal Party – Wikipedia (infobox: founded 16 July 1848, ideology, political position, president César Gaviria)",
+          "url": "https://en.wikipedia.org/wiki/Colombian_Liberal_Party"
+        }
+      ]
+    },
+    {
+      "id": "CO-CD",
+      "country": "CO",
+      "shortName": "Centro Democrático",
+      "name": "Centro Democrático",
+      "nameEn": "Democratic Centre",
+      "logo": "party-logos/co/centro-democratico.svg",
+      "sha256": "bf6b448291ec6b1ae4a28aaf58b956b313414ac46857b5afe7080c23578dcbab",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Centro_Democr%C3%A1tico.svg",
+      "ideology": [
+        "Conservatism",
+        "Economic liberalism",
+        "Right-wing populism",
+        "Uribismo"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2013,
+      "leader": "Álvaro Uribe",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 24,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "2026 Colombian parliamentary election – Wikipedia (Chamber of Representatives results: Democratic Centre 2,527,214 votes, 13.44%, 24 seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Colombian_parliamentary_election"
+        },
+        {
+          "title": "Democratic Centre (Colombia) – Wikipedia (infobox: founded 20 Jan 2013 as movement, registered as party 15 July 2014, ideology, political position, leader Álvaro Uribe, president Gabriel Vallejo)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Centre_(Colombia)"
+        }
+      ]
+    },
+    {
+      "id": "CO-CONSERVADOR",
+      "country": "CO",
+      "shortName": "Conservador",
+      "name": "Partido Conservador Colombiano",
+      "nameEn": "Colombian Conservative Party",
+      "logo": "party-logos/co/conservador.png",
+      "sha256": "5427911b9f359284397abaefc76b9857b3ecad7c3882319bafc668883d3e8b8a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Conservador_Colombiano_Registradur%C3%ADa.png",
+      "ideology": [
+        "Conservatism",
+        "Christian democracy",
+        "Neoliberalism (faction)"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1849,
+      "leader": "Nadia Blel",
+      "leaderTitle": "President of the Party",
+      "inPower": false,
+      "seats": 18,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "2026 Colombian parliamentary election – Wikipedia (Chamber of Representatives results: Colombian Conservative Party 1,957,004 votes, 10.41%, 18 seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Colombian_parliamentary_election"
+        },
+        {
+          "title": "Colombian Conservative Party – Wikipedia (infobox: founded 4 Oct 1849, ideology, political position, president Nadia Blel)",
+          "url": "https://en.wikipedia.org/wiki/Colombian_Conservative_Party"
+        }
+      ]
+    },
+    {
+      "id": "CO-PARTIDOU",
+      "country": "CO",
+      "shortName": "Partido de la U",
+      "name": "Partido de la Unión por la Gente",
+      "nameEn": "Union Party for the People",
+      "logo": "party-logos/co/partido-u.png",
+      "sha256": "607fe865d3c88f6f519bbc88096fb74504aa47717dada6491a2eb4f1b514f64d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_U_Colombia.png",
+      "ideology": [
+        "Liberalism",
+        "Conservatism (faction)",
+        "Third Way",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2005,
+      "previousNames": [
+        {
+          "name": "Partido Social de Unidad Nacional (Partido de la U)",
+          "years": "2005–2021"
+        }
+      ],
+      "leader": "Dilian Francisca Toro",
+      "leaderTitle": "President of the Party",
+      "inPower": false,
+      "seats": 11,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "2026 Colombian parliamentary election – Wikipedia (Chamber of Representatives results: Party of the U 1,043,537 votes, 5.55%, 11 seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Colombian_parliamentary_election"
+        },
+        {
+          "title": "Union Party for the People – Wikipedia (infobox: founded 2005 as Partido Social de Unidad Nacional \"Partido de la U\", renamed 2021, ideology, position, president Dilian Francisca Toro)",
+          "url": "https://en.wikipedia.org/wiki/Union_Party_for_the_People"
+        }
+      ]
+    },
+    {
+      "id": "CO-CAMBIORADICAL",
+      "country": "CO",
+      "shortName": "Cambio Radical",
+      "name": "Cambio Radical",
+      "nameEn": "Radical Change",
+      "logo": "party-logos/co/cambio-radical.svg",
+      "sha256": "cbb60d0fdac0a2b09356ef5a976e9c51e97d8972d17bbc792972c461332f52b2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Cambio_Radical_logo.svg",
+      "ideology": [
+        "Conservative liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1998,
+      "leader": "Germán Córdoba",
+      "leaderTitle": "President of the Party",
+      "inPower": false,
+      "seats": 9,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "2026 Colombian parliamentary election – Wikipedia (Chamber of Representatives results: Radical Change 806,205 votes, 4.29%, 9 seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Colombian_parliamentary_election"
+        },
+        {
+          "title": "Radical Change – Wikipedia (infobox: founded 15 Jan 1998, ideology \"conservative liberalism\", political position, president Germán Córdoba)",
+          "url": "https://en.wikipedia.org/wiki/Radical_Change"
+        }
+      ]
+    },
+    {
+      "id": "CO-VERDE",
+      "country": "CO",
+      "shortName": "Alianza Verde",
+      "name": "Alianza Verde",
+      "nameEn": "Green Alliance",
+      "logo": "party-logos/co/verde.webp",
+      "sha256": "d8147c41ebcd3aa9d7d61df0d96ae4f427c7dfbaeed52f4bb0a850ccdc8c2ab7",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:AlianzaVerde.webp",
+      "ideology": [
+        "Green politics",
+        "Progressivism",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left, with a right-wing (\"Green Blue\") faction",
+      "founded": 2005,
+      "leader": "Luis Carlos Avellaneda & Antonio Sanguino",
+      "leaderTitle": "Co-Presidents",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "2026 Colombian parliamentary election – Wikipedia (Chamber of Representatives results: Green Alliance 654,197 votes, 3.48%, 4 seats; a further 4 seats were won via the joint Historic Pact–Green Alliance list)",
+          "url": "https://en.wikipedia.org/wiki/2026_Colombian_parliamentary_election"
+        },
+        {
+          "title": "Green Alliance (Colombia) – Wikipedia (infobox: founded 2005, ideology, political position, Co-Presidents Luis Carlos Avellaneda and Antonio Sanguino)",
+          "url": "https://en.wikipedia.org/wiki/Green_Alliance_(Colombia)"
+        }
+      ]
+    },
+    {
+      "id": "CO-MSN",
+      "country": "CO",
+      "shortName": "Salvación Nacional",
+      "name": "Movimiento de Salvación Nacional",
+      "nameEn": "National Salvation Movement",
+      "logo": "party-logos/co/msn.svg",
+      "sha256": "93560046267e5a7581b9c2e40950adf953c417464328bb346c1ca7aaf0c172a1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Salvaci%C3%B3n_Nacional_(Colombia).svg",
+      "ideology": [
+        "National conservatism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1990,
+      "leader": "Enrique Gómez Martínez",
+      "leaderTitle": "President of the Party",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "2026 Colombian parliamentary election – Wikipedia (Chamber of Representatives results: National Salvation Movement 410,416 votes, 2.18%, 1 seat)",
+          "url": "https://en.wikipedia.org/wiki/2026_Colombian_parliamentary_election"
+        },
+        {
+          "title": "National Salvation Movement – Wikipedia (founded 1990 by Álvaro Gómez Hurtado, dissolved 2006, re-established 2021; ideology, political position, president Enrique Gómez Martínez)",
+          "url": "https://en.wikipedia.org/wiki/National_Salvation_Movement"
+        },
+        {
+          "title": "Estos son los primeros afiliados del partido político Defensores de la Patria, del presidente electo Abelardo de la Espriella – Infobae (notes de la Espriella's 2026 presidential candidacy ran on the National Salvation Movement ballot line alongside the new Defensores de la Patria movement)",
+          "url": "https://www.infobae.com/colombia/2026/08/04/estos-son-los-primeros-afiliados-del-partido-politico-defensores-de-la-patria-del-presidente-electo-abelardo-de-la-espriella/"
+        }
+      ]
+    },
+    {
+      "id": "CO-ASI",
+      "country": "CO",
+      "shortName": "ASI",
+      "name": "Alianza Social Independiente",
+      "nameEn": "Independent Social Alliance",
+      "logo": "party-logos/co/asi.svg",
+      "sha256": "44fe2e8b271ad87ec46b7c5ab47cfabb2edfb9549654d3cf587613458dab5c0c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:ASI_Logo.svg",
+      "ideology": [
+        "Indigenous rights",
+        "Multiethnic pluralism",
+        "Social welfare"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1991,
+      "previousNames": [
+        {
+          "name": "Alianza Social Indígena",
+          "years": "1991–2011"
+        }
+      ],
+      "leader": "Berenice Bedoya",
+      "leaderTitle": "President and Legal Representative",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "2026 Colombian parliamentary election – Wikipedia (Chamber of Representatives results: Independent Social Alliance 65,315 votes, 0.35%, 2 seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Colombian_parliamentary_election"
+        },
+        {
+          "title": "Independent Social Alliance – Wikipedia en español (founded 1991 as Alianza Social Indígena, renamed 2011 by CNE authorization, ideology, president Berenice Bedoya per XIII National Convention Jan 2023)",
+          "url": "https://es.wikipedia.org/wiki/Alianza_Social_Independiente"
+        }
+      ]
+    }
+  ],
+  "PK": [
+    {
+      "id": "PK-PMLN",
+      "country": "PK",
+      "shortName": "PML-N",
+      "name": "پاکستان مسلم لیگ (ن)",
+      "nameEn": "Pakistan Muslim League (Nawaz)",
+      "logo": "party-logos/pk/pmln.svg",
+      "sha256": "515c559c02541d139997800f7a8608067626454b0d91c089bd62b9763a707ff9",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Pakistan_Muslim_League_Nawaz_logo.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use rationale for identifying the organisation in an article discussing it; used here only for identification purposes.",
+      "ideology": [
+        "Conservatism",
+        "Liberal conservatism",
+        "Fiscal conservatism",
+        "Pakistani nationalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1992,
+      "coalitionId": "pk-second-shehbaz-coalition",
+      "leader": "Nawaz Sharif",
+      "leaderTitle": "Quaid (Supreme Leader); the party's president, Shehbaz Sharif, also serves as Prime Minister of Pakistan",
+      "inPower": true,
+      "timeInPower": "Leads the federal coalition government since 3 March 2024, when Shehbaz Sharif was elected Prime Minister; PML-N previously led governments in 1990–1993, 1997–1999, 2013–2017 and headed the PDM coalition 2022–2023.",
+      "seats": 133,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "logoMeaning": {
+        "description": "PML-N's election symbol is a tiger, chosen because a lion (used to portray Nawaz Sharif, popularly styled 'Sher-e-Punjab', the Lion of Punjab) was not on the Election Commission's approved list of symbols; in Urdu the word 'sher' covers both lion and tiger, so the party and its supporters use the two interchangeably in its imagery, and live tigers/lions have been paraded at PML-N rallies as a reference to the symbol.",
+        "sources": [
+          {
+            "title": "Nawaz Sharif: The old 'lion' of Pakistan roars back – France 24",
+            "url": "https://www.france24.com/en/20130510-pakistan-nawaz-sharif-lion-punjab-mangy-cat-pml-n"
+          },
+          {
+            "title": "In Pakistan, election symbols speak louder than words – Arab News",
+            "url": "https://www.arabnews.pk/node/1343941/pakistan"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Pakistan Muslim League (N) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pakistan_Muslim_League_(N)"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        },
+        {
+          "title": "Second Shehbaz Sharif government – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+        }
+      ]
+    },
+    {
+      "id": "PK-PPP",
+      "country": "PK",
+      "shortName": "PPP",
+      "name": "پاکستان پیپلز پارٹی",
+      "nameEn": "Pakistan Peoples Party",
+      "logo": "party-logos/pk/ppp.png",
+      "sha256": "8b59414cef96e9667324cd59495b2403f8abbfcea880089f9e87013fd913f664",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Pakistan_Peoples_Party_Logo.png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use rationale for identifying the organisation in an article discussing it; used here only for identification purposes.",
+      "ideology": [
+        "Social democracy",
+        "Third Way",
+        "Islamic democracy",
+        "Big tent"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left (historically left-wing)",
+      "founded": 1967,
+      "coalitionId": "pk-second-shehbaz-coalition",
+      "leader": "Bilawal Bhutto Zardari",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "Supports the PML-N-led federal coalition government since March 2024 (a confidence-and-supply arrangement; it holds no federal cabinet seats) and holds the Presidency, with PPP co-chairman Asif Ali Zardari serving as President of Pakistan since March 2024. PPP previously led federal governments in 1971–1977, 1988–1990, 1993–1996 and 2008–2013.",
+      "seats": 74,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "logoMeaning": {
+        "description": "The PPP flag/logo uses red, black and green with an arrow as the election symbol. In the party's own long-standing usage, green represents Islam, red represents socialism and revolution, and black represents the poverty, injustice and unemployment the party says it was founded to fight.",
+        "sources": [
+          {
+            "title": "Different flags, different philosophies: reality behind political flags – Dunya News",
+            "url": "https://dunyanews.tv/en/Pakistan/448090-Different-flags-different-philosophies-reality-behind-political-flags"
+          }
+        ],
+        "myths": []
+      },
+      "sources": [
+        {
+          "title": "Pakistan Peoples Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pakistan_Peoples_Party"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        },
+        {
+          "title": "Second Shehbaz Sharif government – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+        }
+      ]
+    },
+    {
+      "id": "PK-MQMP",
+      "country": "PK",
+      "shortName": "MQM-P",
+      "name": "متحدہ قومی موومنٹ پاکستان",
+      "nameEn": "Muttahida Qaumi Movement – Pakistan",
+      "logo": "party-logos/pk/mqmp.png",
+      "sha256": "9c50389320d9fe5da9af684c3b6928cef81dddde94ed47ca351bc6566a820185",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:MQMworld_(transparented).png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use rationale for identifying the organisation in an article discussing it; used here only for identification purposes.",
+      "ideology": [
+        "Pakistani nationalism",
+        "Muhajir nationalism",
+        "Social liberalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2016,
+      "previousNames": [
+        {
+          "name": "Muttahida Qaumi Movement",
+          "years": "1997–2016 (undivided MQM, before the 2016 split from the London-based faction led by Altaf Hussain)"
+        }
+      ],
+      "coalitionId": "pk-second-shehbaz-coalition",
+      "leader": "Khalid Maqbool Siddiqui",
+      "leaderTitle": "Convener",
+      "inPower": true,
+      "timeInPower": "Coalition partner in the federal government since March 2024, holding ministries in the Shehbaz Sharif cabinet.",
+      "seats": 22,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Muttahida Qaumi Movement – Pakistan – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Muttahida_Qaumi_Movement_Pakistan"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-JUIF",
+      "country": "PK",
+      "shortName": "JUI-F",
+      "name": "جمعیت علماء اسلام (ف)",
+      "nameEn": "Jamiat Ulema-e-Islam (F)",
+      "logo": "party-logos/pk/juif.png",
+      "sha256": "9ee995382bb1313c48094104f2fee3f7ec5917d15c0d3393a4d60799b06fa364",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Jamiat_Ulema-e-Islam_Logo.png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use rationale for identifying the organisation in an article discussing it; used here only for identification purposes.",
+      "ideology": [
+        "Islamic fundamentalism",
+        "Islamism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1945,
+      "previousNames": [
+        {
+          "name": "Jamiat Ulema-e-Islam (undivided)",
+          "years": "1945–1988 (before the 1988 split that produced the 'F' faction led by Fazlur Rehman)"
+        }
+      ],
+      "leader": "Fazlur Rehman",
+      "leaderTitle": "Ameer (President)",
+      "inPower": false,
+      "timeInPower": "In opposition since the 2024 general election; JUI-F held cabinet portfolios in the PDM-led federal coalition government from 2022 to 2023.",
+      "seats": 10,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "logoMeaning": {
+        "description": "JUI-F's election symbol is a closed book, chosen to reflect the party's identity as an organisation of Islamic religious scholars ('ulema', literally 'people of knowledge/the book').",
+        "sources": [
+          {
+            "title": "Election symbol controversy: Court rules in JUI-F's favour of 'closed book' – The Express Tribune",
+            "url": "https://tribune.com.pk/story/524657/election-symbol-controvers-court-rules-in-jui-fs-favour-of-closed-book"
+          },
+          {
+            "title": "JUI-F's electoral symbol is a 'book', clarifies ECP – Geo News",
+            "url": "https://www.geo.tv/latest/335122-jui-fs-electoral-symbol-is-book-clarifies-ecp"
+          }
+        ],
+        "myths": [
+          {
+            "claim": "The book on JUI-F's symbol/flag is specifically the Holy Quran.",
+            "reality": "The Election Commission's official symbol is a generic closed book, not a depiction of the Quran; the Commission has had to publicly clarify this after candidates described it as the Quran during campaigning to invoke religious sentiment."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Jamiat Ulema-e-Islam (F) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jamiat_Ulema-e-Islam_(F)"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-PMLQ",
+      "country": "PK",
+      "shortName": "PML-Q",
+      "name": "پاکستان مسلم لیگ (ق)",
+      "nameEn": "Pakistan Muslim League (Quaid)",
+      "logo": "party-logos/pk/pmlq.png",
+      "sha256": "0772be1be0512be07232982901598102bb7c7130b9f86cc30a37415ef729bbba",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PML-Q_Logo.png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use rationale for identifying the organisation in an article discussing it; used here only for identification purposes.",
+      "ideology": [
+        "Conservatism",
+        "Moderate conservatism",
+        "Pakistani nationalism",
+        "Economic liberalism",
+        "Third Way"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2002,
+      "coalitionId": "pk-second-shehbaz-coalition",
+      "leader": "Chaudhry Shujaat Hussain",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Coalition partner in the federal government since March 2024; previously the dominant governing party 2002–2007 under President Pervez Musharraf.",
+      "seats": 5,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pakistan Muslim League (Q) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pakistan_Muslim_League_(Q)"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-IPP",
+      "country": "PK",
+      "shortName": "IPP",
+      "name": "استحکامِ پاکستان پارٹی",
+      "nameEn": "Istehkam-e-Pakistan Party",
+      "logo": "party-logos/pk/ipp.png",
+      "sha256": "b456c6bcb5b6f0be2ee630423bf89a29d16b63580a105a25a213308327177541",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Istehkam-e-Pakistan_Party.png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use rationale for identifying the organisation in an article discussing it; used here only for identification purposes.",
+      "ideology": [
+        "Populism",
+        "Pakistani nationalism",
+        "Islamic democracy",
+        "Islamic socialism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centrism",
+      "founded": 2023,
+      "coalitionId": "pk-second-shehbaz-coalition",
+      "leader": "Aleem Khan",
+      "leaderTitle": "President (party founder and Chief Executive Jahangir Tareen holds no elected seat)",
+      "inPower": true,
+      "timeInPower": "Coalition partner in the federal government since March 2024, its first electoral test after being founded in June 2023 mostly by defectors from Pakistan Tehreek-e-Insaf.",
+      "seats": 4,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Istehkam-e-Pakistan Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Istehkam-e-Pakistan_Party"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-PMLZ",
+      "country": "PK",
+      "shortName": "PML-Z",
+      "name": "پاکستان مسلم لیگ (ض)",
+      "nameEn": "Pakistan Muslim League (Zia)",
+      "logo": "party-logos/pk/pmlz.png",
+      "sha256": "4bf53c90e7672c8a6ddf03c4ed5a0aa08ca30272f3743937551b874191bf7a99",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Pakistan_Muslim_League_(Z).png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use rationale for identifying the organisation in an article discussing it; used here only for identification purposes.",
+      "ideology": [
+        "Ziaism",
+        "Islamism",
+        "Conservatism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2002,
+      "coalitionId": "pk-second-shehbaz-coalition",
+      "leader": "Ijaz-ul-Haq",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Coalition partner in the federal government since March 2024; has otherwise held no federal cabinet office since it was founded in 2002.",
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pakistan Muslim League (Z) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pakistan_Muslim_League_(Z)"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-NP",
+      "country": "PK",
+      "shortName": "NP",
+      "name": "نیشنل پارٹی",
+      "nameEn": "National Party",
+      "logo": "party-logos/pk/np.png",
+      "sha256": "c793e990b34c367db87ccf2ecf8cca0733fb406fdfb1f9f60805eb378acc6f52",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:National_Party_(Pakistan)_Logo.png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use rationale for identifying the organisation in an article discussing it; used here only for identification purposes.",
+      "ideology": [
+        "Secularism",
+        "Social democracy",
+        "Baloch nationalism",
+        "Civic nationalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2003,
+      "coalitionId": "pk-second-shehbaz-coalition",
+      "leader": "Abdul Malik Baloch",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Coalition partner in the federal government since March 2024; Abdul Malik Baloch previously served as Chief Minister of Balochistan 2013–2015.",
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "National Party (Pakistan) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Party_(Pakistan)"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-BAP",
+      "country": "PK",
+      "shortName": "BAP",
+      "name": "بلوچستان عوامی پارٹی",
+      "nameEn": "Balochistan Awami Party",
+      "logo": "party-logos/pk/bap.png",
+      "sha256": "e3ec8a7226bc1dbda91d0e5c03e49e8b4744dad581dd2172882b83846dda954d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Balochistan_Awami_Party_(BAP)_logo.png",
+      "ideology": [
+        "Pakistani nationalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2018,
+      "coalitionId": "pk-second-shehbaz-coalition",
+      "leader": "Khalid Hussain Magsi",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Coalition partner in the federal government since March 2024; BAP formed the provincial government of Balochistan after both the 2018 and 2024 elections.",
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Balochistan Awami Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Balochistan_Awami_Party"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-SIC",
+      "country": "PK",
+      "shortName": "SIC",
+      "name": "سنی اتحاد کونسل",
+      "nameEn": "Sunni Ittehad Council",
+      "logo": "party-logos/pk/sic.png",
+      "sha256": "b589afc989817f3ea2732e748d36ffddea54d247f4e52a532f0eefa09d2896ca",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Sunni_Ittihad_Council.png",
+      "ideology": [
+        "Pan-Islamism",
+        "Sunni Islamism",
+        "Barelvism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2009,
+      "leader": "Sahibzada Hamid Raza",
+      "leaderTitle": "Chairman (in detention since November 2025; his brother Hasan Raza has acted as de facto chairman since then)",
+      "inPower": false,
+      "timeInPower": "In opposition; has never held federal cabinet office. After the February 2024 election, around 80 independent MNAs backed by Pakistan Tehreek-e-Insaf (which was denied its election symbol) affiliated with SIC to gain access to reserved seats; the Election Commission refused SIC those reserved seats, and after a protracted Supreme Court case the reserved seats ultimately went to the coalition parties. Most of those PTI-aligned MNAs remain formally registered as independents rather than as SIC members; only SIC's own directly elected candidate holds a seat under the SIC party label.",
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Sunni Ittehad Council – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sunni_Ittehad_Council"
+        },
+        {
+          "title": "Reserved seats case – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Reserved_seats_case"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-MWM",
+      "country": "PK",
+      "shortName": "MWM",
+      "name": "مجلس وحدت مسلمین",
+      "nameEn": "Majlis Wahdat-e-Muslimeen",
+      "logo": "party-logos/pk/mwm.svg",
+      "sha256": "dc35665fe3480a9a74d0531641fca3cd88c17b3ef9b9e9198ac340b5775e6571",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Majlis_Wahdat-e-Muslimeen_Logo.svg",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use rationale for identifying the organisation in an article discussing it; used here only for identification purposes.",
+      "ideology": [
+        "Islamic democracy",
+        "Islamic socialism",
+        "Islamism",
+        "Shia–Sunni unity"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2009,
+      "leader": "Raja Nasir Abbas Jafri",
+      "leaderTitle": "Chairman (a Senator); Hameed Hussain is the party's sole member and parliamentary leader in the National Assembly",
+      "inPower": false,
+      "timeInPower": "In opposition since the 2024 general election; has never held federal cabinet office.",
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Majlis Wahdat-e-Muslimeen – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Majlis_Wahdat-e-Muslimeen"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-PKMAP",
+      "country": "PK",
+      "shortName": "PkMAP",
+      "name": "پشتونخوا ملی عوامی پارٹی",
+      "nameEn": "Pashtunkhwa Milli Awami Party",
+      "logo": "party-logos/pk/pkmap.png",
+      "sha256": "1ea936e0f5a7f4eef9911fb1f50f8f77c7e95d58cf64c8a6ca1f86118a7edbc5",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PKMAP_Logo.png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use rationale for identifying the organisation in an article discussing it; used here only for identification purposes.",
+      "ideology": [
+        "Pashtun nationalism",
+        "Democratic socialism",
+        "Social justice",
+        "Secularism",
+        "Federalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1989,
+      "leader": "Mahmood Khan Achakzai",
+      "leaderTitle": "Chairman; Leader of the Opposition in the National Assembly since 16 January 2026",
+      "inPower": false,
+      "timeInPower": "In opposition since the 2024 general election. Its leader Mahmood Khan Achakzai was nominated Leader of the Opposition in the National Assembly by Imran Khan in August 2025, and formally assumed the post on 16 January 2026 after a dispute over his notification was resolved.",
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pashtunkhwa Milli Awami Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pashtunkhwa_Milli_Awami_Party"
+        },
+        {
+          "title": "Mahmood Khan Achakzai – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mahmood_Khan_Achakzai"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-PKNAP",
+      "country": "PK",
+      "shortName": "PKNAP",
+      "name": "پشتونخوا نیشنل عوامی پارٹی",
+      "nameEn": "Pashtunkhwa National Awami Party",
+      "logo": "party-logos/pk/pknap.png",
+      "sha256": "e75a2f6f3f04c449aac5ed5d06f2cf8c802a9bff5340ba9db73303f1d1439402",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PKNAP_Logo.png",
+      "licenceNote": "Non-free party logo hosted locally on English Wikipedia under a fair-use rationale for identifying the organisation in an article discussing it; used here only for identification purposes.",
+      "ideology": [
+        "Pashtun nationalism",
+        "Egalitarianism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Not stated on an explicit left–right spectrum by its own infobox; described only by ideology (Pashtun nationalism, egalitarianism)",
+      "founded": 2022,
+      "previousNames": [],
+      "leader": "Khushal Khan Kakar",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "timeInPower": "In opposition since winning its first National Assembly seat in the 2024 general election; has never held federal office. The party was formed in December 2022 as a breakaway from the Pashtunkhwa Milli Awami Party and registered with the Election Commission on 1 January 2024.",
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pashtunkhwa National Awami Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pashtunkhwa_National_Awami_Party"
+        },
+        {
+          "title": "Khushal Khan Kakar – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khushal_Khan_Kakar"
+        },
+        {
+          "title": "National Assembly of Pakistan – Wikipedia (current composition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
         }
       ]
     }
