@@ -10832,5 +10832,208 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "UA": [
+    {
+      "id": "UA-SN",
+      "country": "UA",
+      "shortName": "Servant of the People",
+      "name": "Слуга народу",
+      "nameEn": "Servant of the People",
+      "logo": "party-logos/ua/sn.svg",
+      "sha256": "09310b2f4a0e4408ee07b4911ecaa178bee1514feb87a9f1ee6652cd30f2ae27",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Servant_of_the_People_Party_Logo.svg",
+      "ideology": [
+        "Ukrainian liberalism",
+        "Valence populism"
+      ],
+      "ideologyPosition": "centre",
+      "founded": 2017,
+      "leader": "Oleksandr Korniyenko",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2019-present",
+      "seats": 226,
+      "seatsTotal": 450,
+      "chamberName": "Verkhovna Rada",
+      "sources": [
+        {
+          "title": "Servant of the People - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Servant_of_the_People"
+        },
+        {
+          "title": "9th Ukrainian Verkhovna Rada - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/9th_Ukrainian_Verkhovna_Rada"
+        }
+      ]
+    },
+    {
+      "id": "UA-ES",
+      "country": "UA",
+      "shortName": "European Solidarity",
+      "name": "Європейська солідарність",
+      "nameEn": "European Solidarity",
+      "logo": "party-logos/ua/es.svg",
+      "sha256": "f749e29fc057ddba7dfaa621856dcf3418bb643d16d20bfef8343258ca354c5d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:European_Solidarity_2021.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy",
+        "National democracy",
+        "Anti-corruption",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "founded": 2000,
+      "previousNames": [
+        {
+          "name": "Солідарність",
+          "nameEn": "Solidarity",
+          "years": "2000–2013"
+        },
+        {
+          "name": "Блок Петра Порошенка",
+          "nameEn": "Petro Poroshenko Bloc",
+          "years": "2014–2019"
+        }
+      ],
+      "leader": "Petro Poroshenko",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 26,
+      "seatsTotal": 450,
+      "chamberName": "Verkhovna Rada",
+      "sources": [
+        {
+          "title": "European Solidarity - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/European_Solidarity"
+        }
+      ]
+    },
+    {
+      "id": "UA-BT",
+      "country": "UA",
+      "shortName": "Batkivshchyna",
+      "name": "Всеукраїнське об'єднання \"Батьківщина\"",
+      "nameEn": "All-Ukrainian Union \"Fatherland\"",
+      "logo": "party-logos/ua/bt.svg",
+      "sha256": "3900bac1e764e5a07a3bbea0ca7ed774581147a9a2b5044238bf48b164e33c19",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_All-Ukrainian_Union_%22Fatherland%22.svg",
+      "licenceNote": "Bundled from Wikimedia Commons under CC BY-SA 4.0 (author: Ivan Ch RU); attribution and share-alike terms apply per the Commons file page.",
+      "ideology": [
+        "Populism",
+        "Social democracy",
+        "National democracy",
+        "Ukrainian nationalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left overall (party); centre to centre-right (parliamentary faction, per Wikipedia)",
+      "founded": 1999,
+      "leader": "Yulia Tymoshenko",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 25,
+      "seatsTotal": 450,
+      "chamberName": "Verkhovna Rada",
+      "sources": [
+        {
+          "title": "Batkivshchyna - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Batkivshchyna"
+        }
+      ]
+    },
+    {
+      "id": "UA-HL",
+      "country": "UA",
+      "shortName": "Holos",
+      "name": "Голос",
+      "nameEn": "Voice",
+      "logo": "party-logos/ua/hl.svg",
+      "sha256": "0645d1179decbe1c2fc2cb60c69eefd8fe043bbb2531bade1a6bab14fb424263",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Holos_logo_2020.svg",
+      "ideology": [
+        "Ukrainian liberalism",
+        "Anti-corruption",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "founded": 2019,
+      "leader": "Kira Rudik",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 19,
+      "seatsTotal": 450,
+      "chamberName": "Verkhovna Rada",
+      "sources": [
+        {
+          "title": "Holos (political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Holos_(political_party)"
+        }
+      ]
+    },
+    {
+      "id": "UA-DV",
+      "country": "UA",
+      "shortName": "Dovira",
+      "name": "Довіра",
+      "nameEn": "Trust",
+      "noImageReason": "No infobox logo image is present on either the English (en.wikipedia.org/wiki/Dovira) or Ukrainian (uk.wikipedia.org/wiki/Довіра_(політична_партія)) Wikipedia articles for this party as of 2026-09; no Wikimedia Commons file for a Dovira party logo could be located either. Retry by searching commons.wikimedia.org/wiki/Category:Logos_of_political_parties_in_Ukraine for a 'Dovira'/'Довіра' entry in a future session.",
+      "ideology": [
+        "Regionalism",
+        "Big tent"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "No left-right position is stated in sourced infoboxes (described as a big-tent/regionalist group of formerly non-partisan deputies)",
+      "founded": 2019,
+      "leader": "Oleh Kulinich",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 19,
+      "seatsTotal": 450,
+      "chamberName": "Verkhovna Rada",
+      "sources": [
+        {
+          "title": "Dovira - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dovira"
+        }
+      ]
+    },
+    {
+      "id": "UA-FT",
+      "country": "UA",
+      "shortName": "For the Future",
+      "name": "За майбутнє",
+      "nameEn": "For the Future",
+      "logo": "party-logos/ua/ft.svg",
+      "sha256": "1d768476ef40e0ee451895280d2481ded08f36cb4bf3a36f7bece1bfd01cd37b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BE%D0%BB%D1%96%D1%82%D0%B8%D1%87%D0%BD%D0%B0_%D0%BF%D0%B0%D1%80%D1%82%D1%96%D1%8F_%C2%AB%D0%97%D0%B0_%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%94%C2%BB_(%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_2020).svg",
+      "ideology": [
+        "Liberalism",
+        "Economic nationalism",
+        "Populism"
+      ],
+      "ideologyPosition": "centre-right",
+      "founded": 2007,
+      "previousNames": [
+        {
+          "name": "Україна майбутнього",
+          "nameEn": "Ukraine of the Future",
+          "years": "2007–2019"
+        }
+      ],
+      "leader": "Ihor Palytsia",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 450,
+      "chamberName": "Verkhovna Rada",
+      "sources": [
+        {
+          "title": "For the Future (political party) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/For_the_Future_(political_party)"
+        }
+      ]
+    }
   ]
 };
