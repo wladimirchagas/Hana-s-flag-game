@@ -584,6 +584,30 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
     },
     "note": "16-party coalition (293 of 500 House seats) formed by Bhumjaithai leader Anutin Charnvirakul after the 8 February 2026 election; sworn in 30 March 2026 as the 66th Council of Ministers. Kla Tham, the Democrat Party and Thai Ruam Palang were excluded and sit in opposition alongside the People's Party."
+  },
+  "eg-national-unified-list": {
+    "id": "eg-national-unified-list",
+    "name": "National Unified List for Egypt",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "EG-MOSTAQBAL",
+      "EG-HOMAT",
+      "EG-NATFRONT",
+      "EG-REPUBPEOPLE",
+      "EG-SOCDEM",
+      "EG-WAFD",
+      "EG-JUSTICE",
+      "EG-REFORMDEV",
+      "EG-TAGAMMU",
+      "EG-CONGRESS",
+      "EG-FREEDOM",
+      "EG-ERADETGEEL"
+    ],
+    "source": {
+      "title": "National Unified List for Egypt - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/National_Unified_List_for_Egypt"
+    },
+    "note": "A pro-government electoral alliance of parties supporting President Abdel Fattah el-Sisi, formed in 2020 and re-formed for the 2025 House of Representatives election; it swept the great majority of seats in both elections."
   }
 };
 
@@ -11032,6 +11056,550 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "For the Future (political party) - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/For_the_Future_(political_party)"
+        }
+      ]
+    }
+  ],
+  "EG": [
+    {
+      "id": "EG-MOSTAQBAL",
+      "country": "EG",
+      "shortName": "Nation's Future",
+      "name": "حزب مستقبل وطن",
+      "nameEn": "Nation's Future Party",
+      "logo": "party-logos/eg/mostaqbal.png",
+      "sha256": "36978a5c3bd8c1e36307c08a4c2edd05fca5a8537c7540f501e57de0fc50e03d",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/e/e1/Future_of_the_Nation.png",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Egyptian nationalism",
+        "Post-Islamism",
+        "Militarism",
+        "Support for President Sisi"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right; described as a 'party of power' created to support President Abdel Fattah el-Sisi",
+      "founded": 2014,
+      "coalitionId": "eg-national-unified-list",
+      "leader": "Abdel-Wahab Abdel-Razeq",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "Since 2020 (largest party in the House of Representatives)",
+      "seats": 231,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Nation's Future Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nation%27s_Future_Party"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-HOMAT",
+      "country": "EG",
+      "shortName": "Homeland Defenders",
+      "name": "حزب حماة الوطن",
+      "nameEn": "Homeland Defenders Party",
+      "logo": "party-logos/eg/homat-alwatan.png",
+      "sha256": "1a677f5e31ae24484dea4aac5beca3ac25a9dc4dddd644784e2cec2dc6a5e20e",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/4/4a/Homeland_Defenders_Party_logo.png",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Centrism",
+        "Support for President Sisi"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centrist; supportive of President Abdel Fattah el-Sisi",
+      "founded": 2013,
+      "coalitionId": "eg-national-unified-list",
+      "leader": "Ahmed El Awadi",
+      "leaderTitle": "Acting Chairman (following the death of founder Galal Haridy in January 2026)",
+      "inPower": true,
+      "timeInPower": "Since 2020",
+      "seats": 91,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Homeland Defenders Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Homeland_Defenders_Party"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-NATFRONT",
+      "country": "EG",
+      "shortName": "National Front",
+      "name": "حزب الجبهة الوطنية",
+      "nameEn": "National Front Party",
+      "logo": "party-logos/eg/national-front.png",
+      "sha256": "07cacc006fcf997d6dcb2be52bef5d07390a5c6ca0481508861d51eeca72052d",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/8/85/National_Front_Party_Egypt.png",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Pragmatism",
+        "Support for President Sisi"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Big tent / pragmatism (realpolitik)",
+      "founded": 2024,
+      "coalitionId": "eg-national-unified-list",
+      "leader": "Assem el Gazzar",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "Since 2025",
+      "seats": 70,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "National Front Party (Egypt) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Front_Party_(Egypt)"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-REPUBPEOPLE",
+      "country": "EG",
+      "shortName": "Republican People's",
+      "name": "حزب الشعب الجمهوري",
+      "nameEn": "Republican People's Party",
+      "logo": "party-logos/eg/republican-peoples.png",
+      "sha256": "296b27057fccd24c959ffa9f3f6841f76d4e49f45afc7ad9ba23c40f0ac9e0a5",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/3/3a/Republican_People%27s_Party_%28Egypt%29.png",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Centrism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre; made up largely of former government ministers",
+      "founded": 2012,
+      "coalitionId": "eg-national-unified-list",
+      "leader": "Hazem Omar",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Since 2020",
+      "seats": 28,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Republican People's Party (Egypt) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Republican_People%27s_Party_(Egypt)"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-SOCDEM",
+      "country": "EG",
+      "shortName": "Social Democratic",
+      "name": "الحزب المصري الديمقراطي الاجتماعي",
+      "nameEn": "Egyptian Social Democratic Party",
+      "logo": "party-logos/eg/social-democratic.svg",
+      "sha256": "082359241dd1af9c8a70be1b09b981367e4b986228a6f3f2ab709b1f4cdac15b",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/1/1b/Egyptian_Social_Democratic_Party_logo.svg",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Social democracy",
+        "Social liberalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2011,
+      "coalitionId": "eg-national-unified-list",
+      "leader": "Farid Zahran",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Since 2020",
+      "seats": 12,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Egyptian Social Democratic Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Egyptian_Social_Democratic_Party"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-WAFD",
+      "country": "EG",
+      "shortName": "New Wafd",
+      "name": "حزب الوفد المصري",
+      "nameEn": "Egyptian (New) Wafd Party",
+      "logo": "party-logos/eg/wafd.png",
+      "sha256": "62a3fa3eeff9358deee7303a47a341b940baa45cafe810853a04cf4ab10495df",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Wafd_Party_logo.png",
+      "ideology": [
+        "National liberalism",
+        "Liberal conservatism",
+        "Economic liberalism",
+        "Conservative liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1978,
+      "coalitionId": "eg-national-unified-list",
+      "leader": "El-Sayyid el-Badawi",
+      "leaderTitle": "Chairperson (since January 2026)",
+      "inPower": true,
+      "timeInPower": "Since 2020",
+      "seats": 12,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "New Wafd Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Wafd_Party"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-JUSTICE",
+      "country": "EG",
+      "shortName": "Justice",
+      "name": "حزب العدل",
+      "nameEn": "Justice Party",
+      "logo": "party-logos/eg/justice.svg",
+      "sha256": "b188dc0b940e6bc40ed554bbd451ea010e5f8d30f49e12ab5000afae14da4439",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerechtigkeitspartei_Logo.svg",
+      "ideology": [
+        "Big tent",
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centrism; describes itself as a party of political programs rather than a fixed ideology",
+      "founded": 2011,
+      "coalitionId": "eg-national-unified-list",
+      "leader": "Abdel-Moneim Imam",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Since 2020",
+      "seats": 11,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Justice Party (Egypt) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Justice_Party_(Egypt)"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-REFORMDEV",
+      "country": "EG",
+      "shortName": "Reform and Development",
+      "name": "حزب الإصلاح والتنمية",
+      "nameEn": "Reform and Development Party",
+      "logo": "party-logos/eg/reform-development.png",
+      "sha256": "2e29ecf54dc13c617b020837891af759b6a3ef4498ad6a0a235068a2fbd662d4",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/a/a5/Reform_and_Development_Party_EG.png",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Liberalism",
+        "Reformism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left; has gradually distanced itself from President Sisi",
+      "founded": 2009,
+      "coalitionId": "eg-national-unified-list",
+      "leader": "Mohamed Anwar Esmat Sadat",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "Since 2025 (confirmed October 2025 as a National Unified List member)",
+      "seats": 11,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Reform and Development Party (Egypt) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Reform_and_Development_Party_(Egypt)"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-NOUR",
+      "country": "EG",
+      "shortName": "Al-Nour",
+      "name": "حزب النور",
+      "nameEn": "Al-Nour Party (Party of the Light)",
+      "logo": "party-logos/eg/al-nour.png",
+      "sha256": "0b1ffc9af5297c07bd6f9f48b4a7e558073b8dda3351cf8ada25a5cd927c0854",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/a/a4/Logo_of_the_Al-Nour_Party.png",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Salafism",
+        "Sunni Islamism",
+        "Religious conservatism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Right-wing to far-right; ultra-conservative Islamist, the political arm of the Salafi Call Society",
+      "founded": 2011,
+      "leader": "Yunis Makhyun",
+      "leaderTitle": "Chairperson",
+      "inPower": true,
+      "timeInPower": "Since 2012 (continuously represented in parliament)",
+      "seats": 6,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Al-Nour Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Al-Nour_Party"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-TAGAMMU",
+      "country": "EG",
+      "shortName": "Tagammu",
+      "name": "حزب التجمع الوطني التقدمي الوحدوي",
+      "nameEn": "National Progressive Unionist Rally Party (Tagammu)",
+      "logo": "party-logos/eg/tagammu.png",
+      "sha256": "4d5f556bd66c1fdfdd55363360423dd0175c9f204672521a883bd1043f0fa907",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/0/0a/Logo_of_the_National_Progressive_Unionist_Party.png",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Socialism",
+        "Arab nationalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing; defends the social gains of the 1952 Egyptian Revolution",
+      "founded": 1977,
+      "coalitionId": "eg-national-unified-list",
+      "leader": "Sayed Abdel Aal",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Since 2020",
+      "seats": 5,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "National Progressive Unionist Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Progressive_Unionist_Party"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-CONGRESS",
+      "country": "EG",
+      "shortName": "Egyptian Congress",
+      "name": "حزب المؤتمر المصري",
+      "nameEn": "Egyptian Congress Party",
+      "logo": "party-logos/eg/egyptian-congress.png",
+      "sha256": "fc4b18cff7756c67dcf3d8bf364c22662798dae6d20d1757ebdc9784e8e43604",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/b/ba/Egyptian_Congress_Party_logo.png",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Secularism",
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left; secularist, formed from a merger of 25 liberal and leftist parties",
+      "founded": 2012,
+      "coalitionId": "eg-national-unified-list",
+      "leader": "Omar El-Mokhtar Semeida",
+      "leaderTitle": "Chairperson",
+      "inPower": true,
+      "timeInPower": "Since 2020",
+      "seats": 4,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Egyptian Congress Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Egyptian_Congress_Party"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-FREEDOM",
+      "country": "EG",
+      "shortName": "Egyptian Freedom",
+      "name": "حزب الحرية المصري",
+      "nameEn": "Egyptian Freedom Party",
+      "logo": "party-logos/eg/egyptian-freedom.png",
+      "sha256": "d551c2edfd0d97ae4cfe96073a9c414e26a12624953b7cbe7405287101aded42",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/d/dd/Logo_of_the_Egyptian_Freedom_Party.png",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2011,
+      "coalitionId": "eg-national-unified-list",
+      "leader": "Mamdouh Hassan",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "Since 2020",
+      "seats": 2,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Egyptian Freedom Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Egyptian_Freedom_Party"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-ERADETGEEL",
+      "country": "EG",
+      "shortName": "Eradet Geel",
+      "name": "حزب إرادة جيل",
+      "nameEn": "Will of a Generation Party",
+      "logo": "party-logos/eg/eradet-geel.png",
+      "sha256": "ddcb7957fb8a1f56dea183964ca10e8962e2f4ff3e78b2147dfbd5ad651121d3",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/d/d9/Will_of_a_Generation_Party.png",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Egyptian nationalism",
+        "Statism",
+        "Pragmatism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre; pro-state alliance member",
+      "founded": 2018,
+      "previousNames": [
+        {
+          "name": "Free Social Constitutional Party",
+          "years": "until 25 December 2018"
+        }
+      ],
+      "coalitionId": "eg-national-unified-list",
+      "leader": "Tayseer Matar",
+      "leaderTitle": "Founder and Chairman",
+      "inPower": true,
+      "timeInPower": "Since 2020",
+      "seats": 2,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Will of a Generation Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Will_of_a_Generation_Party"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-CONSCIOUSNESS",
+      "country": "EG",
+      "shortName": "Consciousness",
+      "name": "حزب الوعي",
+      "nameEn": "Consciousness Party (Awareness Party)",
+      "noImageReason": "No freely licensed party logo/emblem could be located: the party's article on both English and Arabic Wikipedia is a short stub carrying no infobox image, and no dedicated logo file for it was found on Wikimedia Commons.",
+      "ideology": [
+        "Liberalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Liberal/secular; originally part of the liberal-leftist Egyptian Bloc alliance",
+      "founded": 2011,
+      "leader": "Mahmoud Taher",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "Since 2025",
+      "seats": 1,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Consciousness Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Consciousness_Party"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "EG-CONSERVATIVE",
+      "country": "EG",
+      "shortName": "Conservative",
+      "name": "حزب المحافظين",
+      "nameEn": "Conservative Party",
+      "logo": "party-logos/eg/conservative.png",
+      "sha256": "5a03f86646685ea72d1b49500a845ada247731a4d61f7cb3436808424df876e7",
+      "logoSourceUrl": "https://upload.wikimedia.org/wikipedia/en/1/14/Conservative_Party_%28Egypt%29.png",
+      "licenceNote": "Non-free logo hosted in the English Wikipedia file namespace (used under fair use/non-free logo policy to identify the subject); not on Wikimedia Commons.",
+      "ideology": [
+        "Conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Opposition to the government; conservative",
+      "founded": 2006,
+      "leader": "Akmal Kortam",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "Opposition party; holds 1 seat since the 2025 election, contested as part of the Free Path Alliance with the Constitution Party",
+      "seats": 1,
+      "seatsTotal": 596,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Conservative Party (Egypt) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Conservative_Party_(Egypt)"
+        },
+        {
+          "title": "2025 Egyptian parliamentary election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Egyptian_parliamentary_election"
         }
       ]
     }
