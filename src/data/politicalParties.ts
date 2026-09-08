@@ -4967,7 +4967,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "BJP",
       "name": "Bharatiya Janata Party",
       "logo": "party-logos/in/bjp.svg",
-      "sha256": "8e3f5c7a9d1b2e4f6c8a9b1d3e5f7a9c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9c",
+      "sha256": "c1c64f357233396c696b0b39c1f5502919eed8b1e439fa05b1ae7ca76f242807",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Bharatiya_Janata_Party_Logo.svg",
       "ideology": [
         "Hindu nationalism",
@@ -5007,7 +5007,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "INC",
       "name": "Indian National Congress",
       "logo": "party-logos/in/inc.svg",
-      "sha256": "7f2e4d6a8c1b3e5d7a9c2e4f6a8c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9b1d3e",
+      "sha256": "a8c088394ade18af44d1ab98cc1e937b35a9300e82b23224cdad02c8593b8070",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_National_Congress_Logo.svg",
       "ideology": [
         "Social democracy",
@@ -5128,7 +5128,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "DMK",
       "name": "Dravida Munnetra Kazhagam",
       "logo": "party-logos/in/dmk.svg",
-      "sha256": "3c5e7a9d1b3f5e7a2c4d6a8c0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c",
+      "sha256": "273f4f3aafed8cc64cc62bdf23e54f4202704150ae97d193324b2f9df01690b9",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:DMK_logo.svg",
       "ideology": [
         "Dravidian ideology",
@@ -5167,7 +5167,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "TMC",
       "name": "Trinamool Congress",
       "logo": "party-logos/in/tmc.svg",
-      "sha256": "2b4d6e8a0c2e4f6a8c0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f",
+      "sha256": "78645c88535538e502756ff0ad429aeab772c2a31890493bf03a52b6eb9f70b6",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Trinamool_Congress_Logo.svg",
       "ideology": [
         "Bengali regionalism",
@@ -5244,8 +5244,8 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IN",
       "shortName": "YSRCP",
       "name": "Yuvajana Sramika Rythu Congress Party",
-      "logo": "party-logos/in/ysrcp.svg",
-      "sha256": "4d6e8a0c2e4f6a8c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9b1d3e5f7a9b1d3e5f",
+      "logo": "party-logos/in/ysrcp.jpg",
+      "sha256": "9a62f35293ece040593937464fb225295cf6d513afa7721034c7afa38b0fe9fd",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:YSR_Congress_Logo.svg",
       "ideology": [
         "Andhra Pradesh regionalism",
@@ -5283,7 +5283,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "BJD",
       "name": "Biju Janata Dal",
       "logo": "party-logos/in/bjd.svg",
-      "sha256": "6f8a0c2e4d6a8c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9b1d3e5f7a9b1d3e5f7a",
+      "sha256": "2ec629d36cf413879fbf28b3ef1f7e7806202865d83dd61b255262c0d82be63c",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Biju_Janata_Dal_Logo.svg",
       "ideology": [
         "Odisha regionalism",
@@ -5359,8 +5359,8 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IN",
       "shortName": "NCP (Aghdikar)",
       "name": "Nationalist Congress Party Aghdikar",
-      "logo": "party-logos/in/ncp-aghdikar.svg",
-      "sha256": "0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e",
+      "logo": "party-logos/in/ncp-aghdikar.png",
+      "sha256": "d3d5c72fa89e2b1e9543f4bfeb3c53c13e15caa56058e9bf1c30f0b0ab427a75",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:NCP_Logo.svg",
       "ideology": [
         "Secularism",
@@ -16053,6 +16053,8 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ],
       "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
     },
+  ],
+  DK: [
     {
       "id": "DK-S",
       "country": "DK",
@@ -16301,6 +16303,8 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ],
       "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
     },
+  ],
+  FI: [
     {
       "id": "FI-KOK",
       "country": "FI",
