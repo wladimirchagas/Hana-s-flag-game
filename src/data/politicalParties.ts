@@ -19702,5 +19702,512 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "BT": [
+    {
+      "id": "BT-DNT",
+      "country": "BT",
+      "shortName": "DNT",
+      "name": "Druk Nyamshel Tshogpa",
+      "ideology": ["Conservatism", "Monarchy"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2013,
+      "leader": "Lotay Tshering",
+      "leaderTitle": "Party Chairperson",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 47,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Druk_Nyamshel_Tshogpa",
+      "sources": [
+        {
+          "title": "Druk Nyamshel Tshogpa – Wikipedia (founded 2013, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Druk_Nyamshel_Tshogpa"
+        },
+        {
+          "title": "2023 Bhutanese general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Bhutanese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BT-DPT",
+      "country": "BT",
+      "shortName": "DPT",
+      "name": "Druk Phuensum Tshogpa",
+      "ideology": ["Social democracy", "Monarchy"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2007,
+      "leader": "Jigmi Y. Thinley",
+      "leaderTitle": "Party Chairman",
+      "inPower": true,
+      "timeInPower": "2013–2018, 2023–present",
+      "seats": 25,
+      "seatsTotal": 47,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Druk_Phuensum_Tshogpa",
+      "sources": [
+        {
+          "title": "Druk Phuensum Tshogpa – Wikipedia (founded 2007, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Druk_Phuensum_Tshogpa"
+        },
+        {
+          "title": "2023 Bhutanese general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Bhutanese_general_election"
+        }
+      ]
+    }
+  ],
+  "BW": [
+    {
+      "id": "BW-BDP",
+      "country": "BW",
+      "shortName": "BDP",
+      "name": "Botswana Democratic Party",
+      "ideology": ["Liberal conservatism", "Centre-right"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1961,
+      "leader": "Mokgweetsi Masisi",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "timeInPower": "1966–present",
+      "seats": 31,
+      "seatsTotal": 63,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Botswana_Democratic_Party",
+      "sources": [
+        {
+          "title": "Botswana Democratic Party – Wikipedia (founded 1961, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Botswana_Democratic_Party"
+        },
+        {
+          "title": "2023 Botswanan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Botswanan_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BW-UDC",
+      "country": "BW",
+      "shortName": "UDC",
+      "name": "Umbrella for Democratic Change",
+      "ideology": ["Centre-left", "Social democracy"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2019,
+      "leader": "Duma Boko",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 31,
+      "seatsTotal": 63,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Umbrella_for_Democratic_Change",
+      "sources": [
+        {
+          "title": "Umbrella for Democratic Change – Wikipedia (founded 2019, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Umbrella_for_Democratic_Change"
+        },
+        {
+          "title": "2023 Botswanan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Botswanan_general_election"
+        }
+      ]
+    }
+  ],
+  "BZ": [
+    {
+      "id": "BZ-PUP",
+      "country": "BZ",
+      "shortName": "PUP",
+      "name": "People's United Party",
+      "ideology": ["Centre-left", "Social liberalism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1950,
+      "leader": "John Briceño",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2020–present",
+      "seats": 26,
+      "seatsTotal": 31,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/People%27s_United_Party_(Belize)",
+      "sources": [
+        {
+          "title": "People's United Party (Belize) – Wikipedia (founded 1950, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_United_Party_(Belize)"
+        },
+        {
+          "title": "2020 Belizean general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Belizean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BZ-UDP",
+      "country": "BZ",
+      "shortName": "UDP",
+      "name": "United Democratic Party",
+      "ideology": ["Centre-right", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1988,
+      "leader": "Moses "Shyne" Barrow",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 31,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/United_Democratic_Party_(Belize)",
+      "sources": [
+        {
+          "title": "United Democratic Party (Belize) – Wikipedia (founded 1988, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/United_Democratic_Party_(Belize)"
+        },
+        {
+          "title": "2020 Belizean general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Belizean_general_election"
+        }
+      ]
+    }
+  ],
+  "CM": [
+    {
+      "id": "CM-CPDM",
+      "country": "CM",
+      "shortName": "CPDM",
+      "name": "Cameroon People's Democratic Movement",
+      "ideology": ["Authoritarianism", "Centralism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1985,
+      "leader": "Paul Biya",
+      "leaderTitle": "National Chairman",
+      "inPower": true,
+      "timeInPower": "1985–present",
+      "seats": 148,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Cameroon_People%27s_Democratic_Movement",
+      "sources": [
+        {
+          "title": "Cameroon People's Democratic Movement – Wikipedia (founded 1985, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Cameroon_People%27s_Democratic_Movement"
+        },
+        {
+          "title": "2020 Cameroonian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Cameroonian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "CM-SDF",
+      "country": "CM",
+      "shortName": "SDF",
+      "name": "Social Democratic Front",
+      "ideology": ["Social democracy", "Centre-left"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1990,
+      "leader": "John Fru Ndi",
+      "leaderTitle": "National Chairman",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Social_Democratic_Front_(Cameroon)",
+      "sources": [
+        {
+          "title": "Social Democratic Front (Cameroon) – Wikipedia (founded 1990, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Front_(Cameroon)"
+        },
+        {
+          "title": "2020 Cameroonian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Cameroonian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "CR": [
+    {
+      "id": "CR-PAC",
+      "country": "CR",
+      "shortName": "PAC",
+      "name": "Citizens' Action Party",
+      "ideology": ["Centrism", "Social liberalism"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1951,
+      "leader": "Óscar López Arias",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 15,
+      "seatsTotal": 57,
+      "chamberName": "Legislative Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Citizens%27_Action_Party",
+      "sources": [
+        {
+          "title": "Citizens' Action Party – Wikipedia (founded 1951, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Citizens%27_Action_Party"
+        },
+        {
+          "title": "2022 Costa Rican general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Costa_Rican_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CR-PUSC",
+      "country": "CR",
+      "shortName": "PUSC",
+      "name": "Social Christian Unity Party",
+      "ideology": ["Christian democracy", "Centre-right"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1983,
+      "leader": "Guido Sánchez Rodríguez",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "timeInPower": "2018–present",
+      "seats": 25,
+      "seatsTotal": 57,
+      "chamberName": "Legislative Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Social_Christian_Unity_Party",
+      "sources": [
+        {
+          "title": "Social Christian Unity Party – Wikipedia (founded 1983, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Social_Christian_Unity_Party"
+        },
+        {
+          "title": "2022 Costa Rican general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Costa_Rican_general_election"
+        }
+      ]
+    }
+  ],
+  "CU": [
+    {
+      "id": "CU-PCC",
+      "country": "CU",
+      "shortName": "PCC",
+      "name": "Communist Party of Cuba",
+      "ideology": ["Marxism–Leninism", "One-party state"],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 1965,
+      "leader": "Díaz-Canel",
+      "leaderTitle": "First Secretary",
+      "inPower": true,
+      "timeInPower": "1965–present",
+      "seats": 470,
+      "seatsTotal": 474,
+      "chamberName": "National Assembly of People's Power",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Communist_Party_of_Cuba",
+      "sources": [
+        {
+          "title": "Communist Party of Cuba – Wikipedia (founded 1965, Marxism–Leninism ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Cuba"
+        },
+        {
+          "title": "2023 Cuban legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Cuban_legislative_election"
+        }
+      ]
+    }
+  ],
+  "DJ": [
+    {
+      "id": "DJ-RPP",
+      "country": "DJ",
+      "shortName": "RPP",
+      "name": "Rassemblement Populaire pour le Progrès",
+      "nameEn": "People's Rally for Progress",
+      "ideology": ["Authoritarianism", "Nationalism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1979,
+      "leader": "Ismail Omar Guelleh",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "timeInPower": "1979–present",
+      "seats": 52,
+      "seatsTotal": 65,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/People%27s_Rally_for_Progress",
+      "sources": [
+        {
+          "title": "People's Rally for Progress – Wikipedia (founded 1979, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Rally_for_Progress"
+        },
+        {
+          "title": "2023 Djiboutian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Djiboutian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "DO": [
+    {
+      "id": "DO-PLD",
+      "country": "DO",
+      "shortName": "PLD",
+      "name": "Dominican Liberation Party",
+      "ideology": ["Centre-right", "Social liberalism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1973,
+      "leader": "Luis Abinader Corona",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "timeInPower": "2020–present",
+      "seats": 74,
+      "seatsTotal": 190,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Dominican_Liberation_Party",
+      "sources": [
+        {
+          "title": "Dominican Liberation Party – Wikipedia (founded 1973, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Dominican_Liberation_Party"
+        },
+        {
+          "title": "2020 Dominican legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Dominican_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "DO-PRD",
+      "country": "DO",
+      "shortName": "PRD",
+      "name": "Dominican Revolutionary Party",
+      "ideology": ["Centre-left", "Social democracy"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1939,
+      "leader": "Miguel Vargas Maldonado",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 75,
+      "seatsTotal": 190,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Dominican_Revolutionary_Party",
+      "sources": [
+        {
+          "title": "Dominican Revolutionary Party – Wikipedia (founded 1939, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Dominican_Revolutionary_Party"
+        },
+        {
+          "title": "2020 Dominican legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Dominican_legislative_election"
+        }
+      ]
+    }
+  ],
+  "EE": [
+    {
+      "id": "EE-KE",
+      "country": "EE",
+      "shortName": "KE",
+      "name": "Estonian Reform Party",
+      "ideology": ["Liberalism", "Centre-right"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1994,
+      "leader": "Kaja Kallas",
+      "leaderTitle": "Chair",
+      "inPower": true,
+      "timeInPower": "2023–present",
+      "seats": 37,
+      "seatsTotal": 101,
+      "chamberName": "Riigikogu",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Estonian_Reform_Party",
+      "sources": [
+        {
+          "title": "Estonian Reform Party – Wikipedia (founded 1994, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Estonian_Reform_Party"
+        },
+        {
+          "title": "2023 Estonian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Estonian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "EE-EKRE",
+      "country": "EE",
+      "shortName": "EKRE",
+      "name": "Estonian Conservative People's Party",
+      "ideology": ["Right-wing populism", "National conservatism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2012,
+      "leader": "Mart Helme",
+      "leaderTitle": "Chair",
+      "inPower": false,
+      "seats": 37,
+      "seatsTotal": 101,
+      "chamberName": "Riigikogu",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Estonian_Conservative_People%27s_Party",
+      "sources": [
+        {
+          "title": "Estonian Conservative People's Party – Wikipedia (founded 2012, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Estonian_Conservative_People%27s_Party"
+        },
+        {
+          "title": "2023 Estonian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Estonian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "ET": [
+    {
+      "id": "ET-EPRDF",
+      "country": "ET",
+      "shortName": "EPRDF",
+      "name": "Prosperity Party",
+      "ideology": ["Developmentalism", "Authoritarianism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2019,
+      "leader": "Abiy Ahmed",
+      "leaderTitle": "Party Chair",
+      "inPower": true,
+      "timeInPower": "2018–present",
+      "seats": 410,
+      "seatsTotal": 547,
+      "chamberName": "House of People's Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Prosperity_Party_of_Ethiopia",
+      "sources": [
+        {
+          "title": "Prosperity Party of Ethiopia – Wikipedia (founded 2019, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Prosperity_Party_of_Ethiopia"
+        },
+        {
+          "title": "2020 Ethiopian federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Ethiopian_federal_election"
+        }
+      ]
+    }
   ]
 };
