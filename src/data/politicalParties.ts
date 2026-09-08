@@ -1456,6 +1456,479 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
     }
   ],
+  "BG": [
+    {
+      "id": "BG-GERB",
+      "country": "BG",
+      "shortName": "GERB",
+      "name": "Граждане за европейско развитие на България",
+      "nameEn": "Citizens for European Development of Bulgaria",
+      "ideology": ["Liberalism", "Conservatism", "Pro-European"],
+      "ideologyPosition": "centre-right",
+      "founded": 2006,
+      "leader": "Boyko Borisov",
+      "leaderTitle": "Party Chairman",
+      "inPower": false,
+      "seats": 69,
+      "seatsTotal": 240,
+      "chamberName": "Narodno Sobranie",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "GERB (political party) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/GERB_(political_party)"
+        },
+        {
+          "title": "Bulgarian parliamentary election, 2024 – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Bulgarian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "BG-PP",
+      "country": "BG",
+      "shortName": "PP",
+      "name": "Продължаваме промяната",
+      "nameEn": "We Continue the Change",
+      "ideology": ["Progressivism", "Anti-corruption", "Pro-European"],
+      "ideologyPosition": "centre-left",
+      "founded": 2021,
+      "leader": "Asen Vassilev",
+      "leaderTitle": "Co-leader",
+      "inPower": true,
+      "seats": 67,
+      "seatsTotal": 240,
+      "chamberName": "Narodno Sobranie",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "We Continue the Change – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/We_Continue_the_Change"
+        },
+        {
+          "title": "Bulgarian parliamentary election, 2024 – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Bulgarian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "BG-DPS",
+      "country": "BG",
+      "shortName": "DPS",
+      "name": "Движение за права и свободи",
+      "nameEn": "Movement for Rights and Freedoms",
+      "ideology": ["Minority representation", "Liberalism", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 1990,
+      "leader": "Mustafa Karadayi",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 49,
+      "seatsTotal": 240,
+      "chamberName": "Narodno Sobranie",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Movement for Rights and Freedoms – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Movement_for_Rights_and_Freedoms"
+        },
+        {
+          "title": "Bulgarian parliamentary election, 2024 – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Bulgarian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "BG-ITN",
+      "country": "BG",
+      "shortName": "ITN",
+      "name": "Има такъв народ",
+      "nameEn": "There Is Such a People",
+      "ideology": ["Populism", "Anti-corruption", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 2018,
+      "leader": "Slavi Trifonov",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 37,
+      "seatsTotal": 240,
+      "chamberName": "Narodno Sobranie",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "There Is Such a People – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/There_Is_Such_a_People"
+        },
+        {
+          "title": "Bulgarian parliamentary election, 2024 – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Bulgarian_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "HR": [
+    {
+      "id": "HR-HDZ",
+      "country": "HR",
+      "shortName": "HDZ",
+      "name": "Hrvatska demokratska zajednica",
+      "nameEn": "Croatian Democratic Union",
+      "ideology": ["Christian democracy", "Conservatism", "Pro-European"],
+      "ideologyPosition": "centre-right",
+      "founded": 1989,
+      "leader": "Andrej Plenković",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 61,
+      "seatsTotal": 151,
+      "chamberName": "Hrvatski sabor",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Croatian Democratic Union – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Croatian_Democratic_Union"
+        },
+        {
+          "title": "2024 Croatian parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Croatian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "HR-SDP",
+      "country": "HR",
+      "shortName": "SDP",
+      "name": "Socijaldemokratska partija Hrvatske",
+      "nameEn": "Social Democratic Party of Croatia",
+      "ideology": ["Social democracy", "Progressivism", "Pro-European"],
+      "ideologyPosition": "centre-left",
+      "founded": 1990,
+      "leader": "Ivana Kekin",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 26,
+      "seatsTotal": 151,
+      "chamberName": "Hrvatski sabor",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Social Democratic Party of Croatia – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_of_Croatia"
+        },
+        {
+          "title": "2024 Croatian parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Croatian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "HR-DPVM",
+      "country": "HR",
+      "shortName": "DP",
+      "name": "Domovinsko-patriotska koalicija",
+      "nameEn": "Homeland-Patriotic Coalition",
+      "ideology": ["Right-wing populism", "Nationalism", "Euroscepticism"],
+      "ideologyPosition": "far-right",
+      "founded": 2020,
+      "leader": "Miroslav Škoro",
+      "leaderTitle": "Coalition Leader",
+      "inPower": false,
+      "seats": 31,
+      "seatsTotal": 151,
+      "chamberName": "Hrvatski sabor",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Homeland-Patriotic Coalition – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Homeland-Patriotic_Coalition"
+        },
+        {
+          "title": "2024 Croatian parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Croatian_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "CY": [
+    {
+      "id": "CY-AKEL",
+      "country": "CY",
+      "shortName": "AKEL",
+      "name": "Ανορθωτικό Κόμμα Εργαζόμενου Λαού",
+      "nameEn": "Progressive Party of the Working People",
+      "ideology": ["Communism", "Socialism", "Left-wing"],
+      "ideologyPosition": "left",
+      "founded": 1926,
+      "leader": "Stefanos Stefanou",
+      "leaderTitle": "Party General Secretary",
+      "inPower": false,
+      "seats": 19,
+      "seatsTotal": 56,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Progressive Party of the Working People – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Progressive_Party_of_the_Working_People"
+        },
+        {
+          "title": "2024 Cypriot legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Cypriot_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "CY-DISY",
+      "country": "CY",
+      "shortName": "DISY",
+      "name": "Δημοκρατικός Συναγερμός",
+      "nameEn": "Democratic Rally",
+      "ideology": ["Conservatism", "Liberalism", "Pro-European"],
+      "ideologyPosition": "centre-right",
+      "founded": 1976,
+      "leader": "Nicos Christodoulides",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 56,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Democratic Rally – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Rally"
+        },
+        {
+          "title": "2024 Cypriot legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Cypriot_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "CY-MOAT",
+      "country": "CY",
+      "shortName": "MOAT",
+      "name": "Κίνημα Οικολόγων",
+      "nameEn": "Greens Party",
+      "ideology": ["Environmentalism", "Left-wing progressivism", "Feminism"],
+      "ideologyPosition": "left",
+      "founded": 1991,
+      "leader": "Charalambos Theopemptou",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 56,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Greens Party (Cyprus) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Greens_Party_(Cyprus)"
+        },
+        {
+          "title": "2024 Cypriot legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Cypriot_legislative_election"
+        }
+      ]
+    }
+  ],
+  "CZ": [
+    {
+      "id": "CZ-SPOLUANS",
+      "country": "CZ",
+      "shortName": "SPOLU",
+      "name": "SPOLU – Občanská demokratická strana a Starostové a nezávislí",
+      "nameEn": "SPOLU – Civic Democratic Party and Mayors and Independents",
+      "ideology": ["Conservatism", "Liberalism", "Pro-European"],
+      "ideologyPosition": "centre-right",
+      "founded": 1991,
+      "leader": "Petr Fiala",
+      "leaderTitle": "Prime Minister & SPOLU Leader",
+      "inPower": true,
+      "seats": 108,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "SPOLU (Czech political alliance) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/SPOLU_(Czech_political_alliance)"
+        },
+        {
+          "title": "Civic Democratic Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Civic_Democratic_Party_(Czech_Republic)"
+        },
+        {
+          "title": "2023 Czech legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Czech_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "CZ-ANO",
+      "country": "CZ",
+      "shortName": "ANO",
+      "name": "Hnutí ANO 2011",
+      "nameEn": "ANO 2011 Movement",
+      "ideology": ["Populism", "Centrism", "Pragmatism"],
+      "ideologyPosition": "centre",
+      "founded": 2011,
+      "leader": "Andrej Babiš",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 72,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "ANO 2011 – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/ANO_2011"
+        },
+        {
+          "title": "2023 Czech legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Czech_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "CZ-Pirates",
+      "country": "CZ",
+      "shortName": "Piráti",
+      "name": "Česká pirátská strana",
+      "nameEn": "Czech Pirate Party",
+      "ideology": ["Liberalism", "Digitalism", "Left-wing progressivism"],
+      "ideologyPosition": "centre-left",
+      "founded": 2009,
+      "leader": "Ivan Bartoš",
+      "leaderTitle": "Party Vice-Chair",
+      "inPower": true,
+      "seats": 4,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Czech Pirate Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Czech_Pirate_Party"
+        },
+        {
+          "title": "2023 Czech legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Czech_legislative_election"
+        }
+      ]
+    }
+  ],
+  "DK": [
+    {
+      "id": "DK-SDAN",
+      "country": "DK",
+      "shortName": "S",
+      "name": "Socialdemokraterne",
+      "nameEn": "Social Democrats",
+      "ideology": ["Social democracy", "Progressivism", "Pro-European"],
+      "ideologyPosition": "centre-left",
+      "founded": 1871,
+      "leader": "Mette Frederiksen",
+      "leaderTitle": "Prime Minister & Party Chairwoman",
+      "inPower": true,
+      "seats": 49,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Social Democrats (Denmark) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democrats_(Denmark)"
+        },
+        {
+          "title": "2022 Danish parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "DK-RV",
+      "country": "DK",
+      "shortName": "RV",
+      "name": "Radikale Venstre",
+      "nameEn": "Radical Liberal Party",
+      "ideology": ["Liberalism", "Social liberalism", "Pro-European"],
+      "ideologyPosition": "centre-left",
+      "founded": 1905,
+      "leader": "Sofie Carsten Nielsen",
+      "leaderTitle": "Party Spokesperson",
+      "inPower": true,
+      "seats": 16,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Radical Liberal Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Radical_Liberal_Party_(Denmark)"
+        },
+        {
+          "title": "2022 Danish parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "DK-Enhedslisten",
+      "country": "DK",
+      "shortName": "Ø",
+      "name": "Enhedslisten – De Rød-Grønne",
+      "nameEn": "The Unity List – The Reds",
+      "ideology": ["Socialism", "Environmentalism", "Left-wing"],
+      "ideologyPosition": "left",
+      "founded": 1986,
+      "leader": "Søren Egge Rasmussen",
+      "leaderTitle": "Spokesperson",
+      "inPower": true,
+      "seats": 9,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Enhedslisten – De Rød-Grønne – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Enhedslisten_%E2%80%93_De_R%C3%B8d-Gr%C3%B8nne"
+        },
+        {
+          "title": "2022 Danish parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "DK-V",
+      "country": "DK",
+      "shortName": "V",
+      "name": "Venstre, Danmarks Liberale Parti",
+      "nameEn": "Venstre, the Danish Liberal Party",
+      "ideology": ["Liberalism", "Conservatism", "Pro-European"],
+      "ideologyPosition": "centre-right",
+      "founded": 1870,
+      "leader": "Jakob Ellemann-Jensen",
+      "leaderTitle": "Party Chairman",
+      "inPower": false,
+      "seats": 41,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Venstre (Denmark) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Venstre_(Denmark)"
+        },
+        {
+          "title": "2022 Danish parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_parliamentary_election"
+        }
+      ]
+    }
+  ],
   "BR": [
     {
       "id": "BR-UNIAO",
