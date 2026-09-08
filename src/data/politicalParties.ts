@@ -16052,6 +16052,254 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ],
       "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "DK-S",
+      "country": "DK",
+      "shortName": "S",
+      "name": "Social Democrats",
+      "ideology": [
+        "Social democracy",
+        "Progressivism",
+        "Welfare state"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1871,
+      "leader": "Mette Frederiksen",
+      "leaderTitle": "Party Leader & Prime Minister",
+      "inPower": true,
+      "seats": 52,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Social Democrats (Denmark) – Wikipedia (founded 1871, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democrats_(Denmark)"
+        },
+        {
+          "title": "2022 Danish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "DK-V",
+      "country": "DK",
+      "shortName": "V",
+      "name": "Venstre",
+      "ideology": [
+        "Conservatism",
+        "Liberalism",
+        "Free-market economy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1872,
+      "leader": "Jakob Ellemann Jensen",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 43,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Venstre (Denmark) – Wikipedia (founded 1872, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Venstre_(Denmark)"
+        },
+        {
+          "title": "2022 Danish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "DK-F",
+      "country": "DK",
+      "shortName": "F",
+      "name": "Free Democrats",
+      "ideology": [
+        "Centrism",
+        "Liberalism",
+        "Pragmatism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1998,
+      "leader": "Kristian Jensen",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 50,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Free Democrats (Denmark) – Wikipedia (founded 1998, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Free_Democrats_(Denmark)"
+        },
+        {
+          "title": "2022 Danish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "DK-SF",
+      "country": "DK",
+      "shortName": "SF",
+      "name": "Socialist People's Party",
+      "ideology": [
+        "Democratic socialism",
+        "Left-wing",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 1966,
+      "leader": "Pia Olsen Dyhr",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 15,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Socialist People's Party (Denmark) – Wikipedia (founded 1966, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Socialist_People%27s_Party_(Denmark)"
+        },
+        {
+          "title": "2022 Danish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "DK-Å",
+      "country": "DK",
+      "shortName": "Å",
+      "name": "The Alternatives",
+      "ideology": [
+        "Centrism",
+        "Environmentalism",
+        "Anti-establishment"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2013,
+      "leader": "Uffe Elbæk",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 13,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "The Alternatives (Denmark) – Wikipedia (founded 2013, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/The_Alternatives_(Denmark)"
+        },
+        {
+          "title": "2022 Danish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "DK-M",
+      "country": "DK",
+      "shortName": "M",
+      "name": "Moderates",
+      "ideology": [
+        "Conservatism",
+        "Centrist conservatism",
+        "Pragmatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2013,
+      "leader": "Lars Løkke Rasmussen",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 12,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Moderates (Denmark) – Wikipedia (founded 2013, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Moderates_(Denmark)"
+        },
+        {
+          "title": "2022 Danish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "DK-DF",
+      "country": "DK",
+      "shortName": "DF",
+      "name": "Danish People's Party",
+      "ideology": [
+        "Right-wing populism",
+        "National conservatism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1995,
+      "leader": "Morten Messerschmidt",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Danish People's Party – Wikipedia (founded 1995, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Danish_People%27s_Party"
+        },
+        {
+          "title": "2022 Danish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "DK-NY",
+      "country": "DK",
+      "shortName": "NY",
+      "name": "New Right",
+      "ideology": [
+        "Right-wing populism",
+        "Libertarianism",
+        "Immigration skepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2017,
+      "leader": "Rasmus Paludan",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "New Right (Denmark) – Wikipedia (founded 2017, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/New_Right_(Denmark)"
+        },
+        {
+          "title": "2022 Danish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
     }
   ]
 };
