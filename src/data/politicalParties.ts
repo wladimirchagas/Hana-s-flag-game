@@ -21360,5 +21360,1466 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "LV": [
+    {
+      "id": "LV-SD",
+      "country": "LV",
+      "shortName": "SD",
+      "name": "Sociāldemokrātiskā Partija",
+      "nameEn": "Social Democratic Party",
+      "ideology": ["Social democracy"],
+      "ideologyPosition": "left",
+      "founded": 1990,
+      "leader": "Atis Zakatistovs",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2023–present, part of coalition government",
+      "seats": 18,
+      "seatsTotal": 100,
+      "chamberName": "Saeima",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Latvia)",
+      "sources": [
+        {
+          "title": "Social Democratic Party (Latvia) – Wikipedia (founded 1990, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Latvia)"
+        },
+        {
+          "title": "2023 Latvian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Latvian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "LV-JKP",
+      "country": "LV",
+      "shortName": "JKP",
+      "name": "Jaunā Konservatīvā Partija",
+      "nameEn": "New Conservative Party",
+      "ideology": ["Conservatism", "Centre-right"],
+      "ideologyPosition": "centre-right",
+      "founded": 2008,
+      "leader": "Artuss Kaimiņš",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2023–present, part of coalition government",
+      "seats": 16,
+      "seatsTotal": 100,
+      "chamberName": "Saeima",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/New_Conservative_Party",
+      "sources": [
+        {
+          "title": "New Conservative Party – Wikipedia (founded 2008, leadership)",
+          "url": "https://en.wikipedia.org/wiki/New_Conservative_Party"
+        },
+        {
+          "title": "2023 Latvian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Latvian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "MA": [
+    {
+      "id": "MA-RNI",
+      "country": "MA",
+      "shortName": "RNI",
+      "name": "Rassemblement National Indépendant",
+      "nameEn": "National Rally",
+      "ideology": ["Liberalism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1978,
+      "leader": "Aziz Akhannouch",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 102,
+      "seatsTotal": 395,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_Rally_(Morocco)",
+      "sources": [
+        {
+          "title": "National Rally (Morocco) – Wikipedia (founded 1978, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_Rally_(Morocco)"
+        },
+        {
+          "title": "2023 Moroccan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Moroccan_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MA-PJD",
+      "country": "MA",
+      "shortName": "PJD",
+      "name": "Parti de la Justice et du Développement",
+      "nameEn": "Justice and Development Party",
+      "ideology": ["Islamic democracy", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1997,
+      "leader": "Saadeddine El Othmani",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "2016–2021",
+      "seats": 50,
+      "seatsTotal": 395,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Justice_and_Development_Party_(Morocco)",
+      "sources": [
+        {
+          "title": "Justice and Development Party (Morocco) – Wikipedia (founded 1997, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Justice_and_Development_Party_(Morocco)"
+        },
+        {
+          "title": "2023 Moroccan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Moroccan_general_election"
+        }
+      ]
+    }
+  ],
+  "MC": [
+    {
+      "id": "MC-RCEM",
+      "country": "MC",
+      "shortName": "RCEM",
+      "name": "Rassemblement et Coopération pour Monaco",
+      "nameEn": "Rally and Cooperation for Monaco",
+      "ideology": ["Conservatism", "Centre-right"],
+      "ideologyPosition": "centre-right",
+      "founded": 2003,
+      "leader": "Frédéric Larue",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2008–present",
+      "seats": 20,
+      "seatsTotal": 24,
+      "chamberName": "National Council",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Rally_and_Cooperation_for_Monaco",
+      "sources": [
+        {
+          "title": "Rally and Cooperation for Monaco – Wikipedia (founded 2003, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Rally_and_Cooperation_for_Monaco"
+        },
+        {
+          "title": "2023 Monégasque legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Monégasque_legislative_election"
+        }
+      ]
+    }
+  ],
+  "MD": [
+    {
+      "id": "MD-PAS",
+      "country": "MD",
+      "shortName": "PAS",
+      "name": "Partidul Acțiune și Solidaritate",
+      "nameEn": "Action and Solidarity Party",
+      "ideology": ["Pro-European", "Liberalism", "Centism"],
+      "ideologyPosition": "centre",
+      "founded": 2016,
+      "leader": "Maia Sandu",
+      "leaderTitle": "President / Party Leader",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 63,
+      "seatsTotal": 101,
+      "chamberName": "Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Action_and_Solidarity_Party",
+      "sources": [
+        {
+          "title": "Action and Solidarity Party – Wikipedia (founded 2016, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Action_and_Solidarity_Party"
+        },
+        {
+          "title": "2024 Moldovan legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Moldovan_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "MD-PSRM",
+      "country": "MD",
+      "shortName": "PSRM",
+      "name": "Partidul Socialiștilor din Republica Moldova",
+      "nameEn": "Party of Socialists",
+      "ideology": ["Socialism", "Social democracy", "Pro-Russian"],
+      "ideologyPosition": "left",
+      "founded": 2001,
+      "leader": "Igor Dodon",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "2016–2021",
+      "seats": 35,
+      "seatsTotal": 101,
+      "chamberName": "Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Party_of_Socialists_(Moldova)",
+      "sources": [
+        {
+          "title": "Party of Socialists (Moldova) – Wikipedia (founded 2001, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Party_of_Socialists_(Moldova)"
+        },
+        {
+          "title": "2024 Moldovan legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Moldovan_legislative_election"
+        }
+      ]
+    }
+  ],
+  "ME": [
+    {
+      "id": "ME-DPS",
+      "country": "ME",
+      "shortName": "DPS",
+      "name": "Demokratska Partija Socijalista Crne Gore",
+      "nameEn": "Democratic Party of Socialists",
+      "ideology": ["Social democracy", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 1991,
+      "leader": "Danilo Vuksanović",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "1991–2023",
+      "seats": 35,
+      "seatsTotal": 81,
+      "chamberName": "Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Party_of_Socialists",
+      "sources": [
+        {
+          "title": "Democratic Party of Socialists – Wikipedia (founded 1991, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_of_Socialists"
+        },
+        {
+          "title": "2023 Montenegrin general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Montenegrin_general_election"
+        }
+      ]
+    },
+    {
+      "id": "ME-PKCG",
+      "country": "ME",
+      "shortName": "PKCG",
+      "name": "Pokret za Promjene",
+      "nameEn": "Movement for Change",
+      "ideology": ["Liberalism", "Pro-European", "Centism"],
+      "ideologyPosition": "centre",
+      "founded": 2016,
+      "leader": "Miodrag Lekić",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2023–present",
+      "seats": 28,
+      "seatsTotal": 81,
+      "chamberName": "Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Movement_for_Change",
+      "sources": [
+        {
+          "title": "Movement for Change – Wikipedia (founded 2016, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Movement_for_Change"
+        },
+        {
+          "title": "2023 Montenegrin general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Montenegrin_general_election"
+        }
+      ]
+    }
+  ],
+  "MG": [
+    {
+      "id": "MG-TIM",
+      "country": "MG",
+      "shortName": "TIM",
+      "name": "Tiako I Madagasikara",
+      "nameEn": "I Love Madagascar",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2018,
+      "leader": "Andry Rajoelina",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2019–present",
+      "seats": 163,
+      "seatsTotal": 280,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/I_Love_Madagascar",
+      "sources": [
+        {
+          "title": "I Love Madagascar – Wikipedia (founded 2018, leadership)",
+          "url": "https://en.wikipedia.org/wiki/I_Love_Madagascar"
+        },
+        {
+          "title": "2023 Malagasy general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Malagasy_general_election"
+        }
+      ]
+    }
+  ],
+  "MH": [
+    {
+      "id": "MH-KEDO",
+      "country": "MH",
+      "shortName": "KEDO",
+      "name": "Kwestiin ed Majel",
+      "nameEn": "Kwestiin ed Majel",
+      "ideology": ["Centrism", "Nationalism"],
+      "ideologyPosition": "centre",
+      "founded": 2011,
+      "leader": "Hilda C. Heine",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2024–present",
+      "seats": 20,
+      "seatsTotal": 33,
+      "chamberName": "Nitijela",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Kwestiin_ed_Majel",
+      "sources": [
+        {
+          "title": "Kwestiin ed Majel – Wikipedia (founded 2011, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Kwestiin_ed_Majel"
+        },
+        {
+          "title": "2023 Marshall Islands general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Marshall_Islands_general_election"
+        }
+      ]
+    }
+  ],
+  "MK": [
+    {
+      "id": "MK-SDSM",
+      "country": "MK",
+      "shortName": "SDSM",
+      "name": "Socijaldemokratska Unija na Makedonija",
+      "nameEn": "Social Democratic Union",
+      "ideology": ["Social democracy"],
+      "ideologyPosition": "centre-left",
+      "founded": 1991,
+      "leader": "Dimitar Kovačevski",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2022–present",
+      "seats": 46,
+      "seatsTotal": 120,
+      "chamberName": "Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Social_Democratic_Union_of_Macedonia",
+      "sources": [
+        {
+          "title": "Social Democratic Union of Macedonia – Wikipedia (founded 1991, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Union_of_Macedonia"
+        },
+        {
+          "title": "2022 North Macedonian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_North_Macedonian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MK-VMRO-DPMNE",
+      "country": "MK",
+      "shortName": "VMRO-DPMNE",
+      "name": "Vnatreshna Makedonska Revolucionerna Organizacija – Demokratska Partija za Makedonsko Nacionalno Edinstovo",
+      "nameEn": "VMRO–DPMNE",
+      "ideology": ["Conservatism", "Macedonian nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1990,
+      "leader": "Hristijan Mickoski",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "2006–2017",
+      "seats": 44,
+      "seatsTotal": 120,
+      "chamberName": "Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/VMRO-DPMNE",
+      "sources": [
+        {
+          "title": "VMRO-DPMNE – Wikipedia (founded 1990, leadership)",
+          "url": "https://en.wikipedia.org/wiki/VMRO-DPMNE"
+        },
+        {
+          "title": "2022 North Macedonian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_North_Macedonian_general_election"
+        }
+      ]
+    }
+  ],
+  "ML": [
+    {
+      "id": "ML-ADEMA-PASJ",
+      "country": "ML",
+      "shortName": "ADEMA-PASJ",
+      "name": "Association pour la Démocratie en Mali - Parti Africain pour le Solidarité et la Justice",
+      "nameEn": "ADEMA-PASJ",
+      "ideology": ["Social democracy", "Liberalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1991,
+      "leader": "Ousmane Issoufi Maïga",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "1992–2002, 2013–2020",
+      "seats": 0,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/ADEMA-PASJ",
+      "sources": [
+        {
+          "title": "ADEMA-PASJ – Wikipedia (founded 1991, leadership)",
+          "url": "https://en.wikipedia.org/wiki/ADEMA-PASJ"
+        },
+        {
+          "title": "2023 Malian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Malian_general_election"
+        }
+      ]
+    }
+  ],
+  "MM": [
+    {
+      "id": "MM-USDP",
+      "country": "MM",
+      "shortName": "USDP",
+      "name": "အမေရိကန်ပြည်ထောင်စု民主主義政党",
+      "nameEn": "Union Solidarity and Development Party",
+      "ideology": ["Nationalism", "Authoritarianism"],
+      "ideologyPosition": "far-right",
+      "founded": 2010,
+      "leader": "Min Aung Hlaing",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "timeInPower": "2011–2021",
+      "seats": 33,
+      "seatsTotal": 330,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Union_Solidarity_and_Development_Party",
+      "sources": [
+        {
+          "title": "Union Solidarity and Development Party – Wikipedia (founded 2010, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Union_Solidarity_and_Development_Party"
+        },
+        {
+          "title": "2020 Myanmar general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Myanmar_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MM-NLD",
+      "country": "MM",
+      "shortName": "NLD",
+      "name": "အမေရိကန်ပြည်ထောင်စုတည်ဆောက်ရေးအတွက်လူမှုအဖွဲ့အစည်း",
+      "nameEn": "National League for Democracy",
+      "ideology": ["Social democracy", "Pro-democratic"],
+      "ideologyPosition": "centre-left",
+      "founded": 1988,
+      "leader": "Daw Aung San Suu Kyi",
+      "leaderTitle": "Chairperson (imprisoned)",
+      "inPower": false,
+      "timeInPower": "2016–2021",
+      "seats": 0,
+      "seatsTotal": 330,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_League_for_Democracy",
+      "sources": [
+        {
+          "title": "National League for Democracy – Wikipedia (founded 1988, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_League_for_Democracy"
+        },
+        {
+          "title": "2020 Myanmar general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Myanmar_general_election"
+        }
+      ]
+    }
+  ],
+  "MN": [
+    {
+      "id": "MN-MPP",
+      "country": "MN",
+      "shortName": "MPP",
+      "name": "Монгол Ардын Партай",
+      "nameEn": "Mongolian People's Party",
+      "ideology": ["Social democracy", "Socialism"],
+      "ideologyPosition": "left",
+      "founded": 1920,
+      "leader": "Sukhbaataryn Batbold",
+      "leaderTitle": "Party Chairman",
+      "inPower": false,
+      "timeInPower": "1990–2016",
+      "seats": 46,
+      "seatsTotal": 76,
+      "chamberName": "State Great Khural",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Mongolian_People%27s_Party",
+      "sources": [
+        {
+          "title": "Mongolian People's Party – Wikipedia (founded 1920, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Mongolian_People%27s_Party"
+        },
+        {
+          "title": "2024 Mongolian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Mongolian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MN-DP",
+      "country": "MN",
+      "shortName": "DP",
+      "name": "Демократ Партай",
+      "nameEn": "Democratic Party",
+      "ideology": ["Liberalism", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 2000,
+      "leader": "Tsagaan Elbegdorj",
+      "leaderTitle": "Party Chairman",
+      "inPower": true,
+      "timeInPower": "2016–present",
+      "seats": 28,
+      "seatsTotal": 76,
+      "chamberName": "State Great Khural",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Party_(Mongolia)",
+      "sources": [
+        {
+          "title": "Democratic Party (Mongolia) – Wikipedia (founded 2000, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Mongolia)"
+        },
+        {
+          "title": "2024 Mongolian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Mongolian_general_election"
+        }
+      ]
+    }
+  ],
+  "MR": [
+    {
+      "id": "MR-UFDP",
+      "country": "MR",
+      "shortName": "UFDP",
+      "name": "Union pour la Démocratie et le Progrès",
+      "nameEn": "Union for Democracy and Progress",
+      "ideology": ["Centrism", "Nationalism"],
+      "ideologyPosition": "centre",
+      "founded": 2006,
+      "leader": "Mohamed Ould Ghazouani",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2019–present",
+      "seats": 85,
+      "seatsTotal": 157,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Union_for_Democracy_and_Progress_(Mauritania)",
+      "sources": [
+        {
+          "title": "Union for Democracy and Progress (Mauritania) – Wikipedia (founded 2006, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Union_for_Democracy_and_Progress_(Mauritania)"
+        },
+        {
+          "title": "2023 Mauritanian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Mauritanian_general_election"
+        }
+      ]
+    }
+  ],
+  "MT": [
+    {
+      "id": "MT-LP",
+      "country": "MT",
+      "shortName": "LP",
+      "name": "Labour Party",
+      "ideology": ["Social democracy", "Liberalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1921,
+      "leader": "Robert Abela",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2020–present",
+      "seats": 38,
+      "seatsTotal": 69,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Labour_Party_(Malta)",
+      "sources": [
+        {
+          "title": "Labour Party (Malta) – Wikipedia (founded 1921, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Labour_Party_(Malta)"
+        },
+        {
+          "title": "2022 Maltese general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Maltese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MT-PN",
+      "country": "MT",
+      "shortName": "PN",
+      "name": "Nationalist Party",
+      "ideology": ["Conservatism", "Centre-right"],
+      "ideologyPosition": "centre-right",
+      "founded": 1880,
+      "leader": "Bernard Grech",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "timeInPower": "1987–1996, 1998–2013",
+      "seats": 31,
+      "seatsTotal": 69,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Nationalist_Party_(Malta)",
+      "sources": [
+        {
+          "title": "Nationalist Party (Malta) – Wikipedia (founded 1880, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Nationalist_Party_(Malta)"
+        },
+        {
+          "title": "2022 Maltese general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Maltese_general_election"
+        }
+      ]
+    }
+  ],
+  "MU": [
+    {
+      "id": "MU-MSM",
+      "country": "MU",
+      "shortName": "MSM",
+      "name": "Mauritius Socialist Movement",
+      "ideology": ["Social democracy", "Liberalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1969,
+      "leader": "Navinchandra Ramgoolam",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 60,
+      "seatsTotal": 70,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Mauritius_Socialist_Movement",
+      "sources": [
+        {
+          "title": "Mauritius Socialist Movement – Wikipedia (founded 1969, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Mauritius_Socialist_Movement"
+        },
+        {
+          "title": "2020 Mauritian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Mauritian_general_election"
+        }
+      ]
+    }
+  ],
+  "MV": [
+    {
+      "id": "MV-MDP",
+      "country": "MV",
+      "shortName": "MDP",
+      "name": "Maldivian Democratic Party",
+      "ideology": ["Liberalism", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 2003,
+      "leader": "Mohamed Nasheed",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "2008–2012",
+      "seats": 41,
+      "seatsTotal": 93,
+      "chamberName": "People's Majlis",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Maldivian_Democratic_Party",
+      "sources": [
+        {
+          "title": "Maldivian Democratic Party – Wikipedia (founded 2003, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Maldivian_Democratic_Party"
+        },
+        {
+          "title": "2023 Maldivian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Maldivian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MV-PPM",
+      "country": "MV",
+      "shortName": "PPM",
+      "name": "Progressive Party of Maldives",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2010,
+      "leader": "Abdulla Yameen",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "2013–2018",
+      "seats": 5,
+      "seatsTotal": 93,
+      "chamberName": "People's Majlis",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Progressive_Party_of_Maldives",
+      "sources": [
+        {
+          "title": "Progressive Party of Maldives – Wikipedia (founded 2010, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Progressive_Party_of_Maldives"
+        },
+        {
+          "title": "2023 Maldivian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Maldivian_general_election"
+        }
+      ]
+    }
+  ],
+  "MW": [
+    {
+      "id": "MW-DPP",
+      "country": "MW",
+      "shortName": "DPP",
+      "name": "Democratic Progressive Party",
+      "ideology": ["Liberalism", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 2005,
+      "leader": "Peter Mutharika",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "timeInPower": "2014–2020",
+      "seats": 0,
+      "seatsTotal": 193,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Progressive_Party_(Malawi)",
+      "sources": [
+        {
+          "title": "Democratic Progressive Party (Malawi) – Wikipedia (founded 2005, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Progressive_Party_(Malawi)"
+        },
+        {
+          "title": "2023 Malawian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Malawian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MW-MCP",
+      "country": "MW",
+      "shortName": "MCP",
+      "name": "Malawi Congress Party",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1959,
+      "leader": "Lazarus Chakwera",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2020–present",
+      "seats": 114,
+      "seatsTotal": 193,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Malawi_Congress_Party",
+      "sources": [
+        {
+          "title": "Malawi Congress Party – Wikipedia (founded 1959, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Malawi_Congress_Party"
+        },
+        {
+          "title": "2023 Malawian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Malawian_general_election"
+        }
+      ]
+    }
+  ],
+  "MZ": [
+    {
+      "id": "MZ-FRELIMO",
+      "country": "MZ",
+      "shortName": "FRELIMO",
+      "name": "Frente de Libertação de Moçambique",
+      "nameEn": "Mozambique Liberation Front",
+      "ideology": ["Socialism", "Social democracy"],
+      "ideologyPosition": "left",
+      "founded": 1962,
+      "leader": "Daniel Chapo",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "1975–2024",
+      "seats": 134,
+      "seatsTotal": 250,
+      "chamberName": "Assembly of the Republic",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/FRELIMO",
+      "sources": [
+        {
+          "title": "FRELIMO – Wikipedia (founded 1962, leadership)",
+          "url": "https://en.wikipedia.org/wiki/FRELIMO"
+        },
+        {
+          "title": "2024 Mozambican general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Mozambican_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MZ-RENAMO",
+      "country": "MZ",
+      "shortName": "RENAMO",
+      "name": "Resistência Nacional Moçambicana",
+      "nameEn": "Mozambique National Resistance",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1976,
+      "leader": "Ossufo Momade",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "Never in power",
+      "seats": 90,
+      "seatsTotal": 250,
+      "chamberName": "Assembly of the Republic",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/RENAMO",
+      "sources": [
+        {
+          "title": "RENAMO – Wikipedia (founded 1976, leadership)",
+          "url": "https://en.wikipedia.org/wiki/RENAMO"
+        },
+        {
+          "title": "2024 Mozambican general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Mozambican_general_election"
+        }
+      ]
+    }
+  ],
+  "NA": [
+    {
+      "id": "NA-SWAPO",
+      "country": "NA",
+      "shortName": "SWAPO",
+      "name": "South West Africa People's Organisation",
+      "ideology": ["Social democracy", "Socialism"],
+      "ideologyPosition": "left",
+      "founded": 1957,
+      "leader": "Geingob Hage",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "1990–present",
+      "seats": 51,
+      "seatsTotal": 104,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/SWAPO",
+      "sources": [
+        {
+          "title": "SWAPO – Wikipedia (founded 1957, leadership)",
+          "url": "https://en.wikipedia.org/wiki/SWAPO"
+        },
+        {
+          "title": "2024 Namibian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Namibian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NA-IPC",
+      "country": "NA",
+      "shortName": "IPC",
+      "name": "Independent Patriots for Change",
+      "ideology": ["Nationalism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2019,
+      "leader": "Panduleni Itula",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 14,
+      "seatsTotal": 104,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Independent_Patriots_for_Change",
+      "sources": [
+        {
+          "title": "Independent Patriots for Change – Wikipedia (founded 2019, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Independent_Patriots_for_Change"
+        },
+        {
+          "title": "2024 Namibian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Namibian_general_election"
+        }
+      ]
+    }
+  ],
+  "NE": [
+    {
+      "id": "NE-PNDS",
+      "country": "NE",
+      "shortName": "PNDS",
+      "name": "Parti Nigérien pour la Démocratie et le Socialisme",
+      "nameEn": "Nigerien Party for Democracy and Socialism",
+      "ideology": ["Social democracy", "Liberalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1991,
+      "leader": "Mahamane Ousmane",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Nigerien_Party_for_Democracy_and_Socialism",
+      "sources": [
+        {
+          "title": "Nigerien Party for Democracy and Socialism – Wikipedia (founded 1991, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Nigerien_Party_for_Democracy_and_Socialism"
+        },
+        {
+          "title": "2021 Niger general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Niger_general_election"
+        }
+      ]
+    }
+  ],
+  "NI": [
+    {
+      "id": "NI-FSLN",
+      "country": "NI",
+      "shortName": "FSLN",
+      "name": "Frente Sandinista de Liberación Nacional",
+      "nameEn": "Sandinista National Liberation Front",
+      "ideology": ["Socialism", "Authoritarianism"],
+      "ideologyPosition": "far-left",
+      "founded": 1961,
+      "leader": "Daniel Ortega",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "1979–1990, 2007–present",
+      "seats": 75,
+      "seatsTotal": 92,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Sandinista_National_Liberation_Front",
+      "sources": [
+        {
+          "title": "Sandinista National Liberation Front – Wikipedia (founded 1961, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Sandinista_National_Liberation_Front"
+        },
+        {
+          "title": "2021 Nicaraguan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Nicaraguan_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NI-PLC",
+      "country": "NI",
+      "shortName": "PLC",
+      "name": "Partido Liberal Constitucionalista",
+      "nameEn": "Constitutional Liberal Party",
+      "ideology": ["Liberalism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1889,
+      "leader": "Bernardo Arévalos de León",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 92,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Constitutional_Liberal_Party_(Nicaragua)",
+      "sources": [
+        {
+          "title": "Constitutional Liberal Party (Nicaragua) – Wikipedia (founded 1889, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Constitutional_Liberal_Party_(Nicaragua)"
+        },
+        {
+          "title": "2021 Nicaraguan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Nicaraguan_general_election"
+        }
+      ]
+    }
+  ],
+  "NP": [
+    {
+      "id": "NP-NC",
+      "country": "NP",
+      "shortName": "NC",
+      "name": "नेपाली कांग्रेस",
+      "nameEn": "Nepali Congress",
+      "ideology": ["Liberalism", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 1950,
+      "leader": "Sher Bahadur Deuba",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 89,
+      "seatsTotal": 275,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Nepali_Congress",
+      "sources": [
+        {
+          "title": "Nepali Congress – Wikipedia (founded 1950, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Nepali_Congress"
+        },
+        {
+          "title": "2022 Nepalese general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Nepalese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NP-UML",
+      "country": "NP",
+      "shortName": "UML",
+      "name": "नेकपा एमाले",
+      "nameEn": "Nepal Communist Party (Unified Marxist–Leninist)",
+      "ideology": ["Communism", "Socialism"],
+      "ideologyPosition": "far-left",
+      "founded": 1994,
+      "leader": "K.P. Sheila Oli",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2020–2021",
+      "seats": 78,
+      "seatsTotal": 275,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Nepal_Communist_Party_(Unified_Marxist%E2%80%93Leninist)",
+      "sources": [
+        {
+          "title": "Nepal Communist Party (Unified Marxist–Leninist) – Wikipedia (founded 1994, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Nepal_Communist_Party_(Unified_Marxist%E2%80%93Leninist)"
+        },
+        {
+          "title": "2022 Nepalese general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Nepalese_general_election"
+        }
+      ]
+    }
+  ],
+  "OM": [
+    {
+      "id": "OM-INDP",
+      "country": "OM",
+      "shortName": "INDP",
+      "name": "Majlis al-Shura",
+      "nameEn": "Consultative Council",
+      "ideology": ["Monarchy", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1981,
+      "leader": "Haitham bin Tariq Al Said",
+      "leaderTitle": "Sultan",
+      "inPower": true,
+      "timeInPower": "2020–present",
+      "seats": 86,
+      "seatsTotal": 86,
+      "chamberName": "Majlis al-Shura",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Majlis_al-Shura",
+      "sources": [
+        {
+          "title": "Majlis al-Shura – Wikipedia (political system of Oman)",
+          "url": "https://en.wikipedia.org/wiki/Majlis_al-Shura"
+        },
+        {
+          "title": "2023 Omani Majlis al-Shura election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Omani_Majlis_al-Shura_election"
+        }
+      ]
+    }
+  ],
+  "PA": [
+    {
+      "id": "PA-PRD",
+      "country": "PA",
+      "shortName": "PRD",
+      "name": "Partido Revolucionario Democrático",
+      "nameEn": "Democratic Revolutionary Party",
+      "ideology": ["Social democracy", "Populism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1979,
+      "leader": "Benicio Robinson",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 23,
+      "seatsTotal": 71,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Revolutionary_Party_(Panama)",
+      "sources": [
+        {
+          "title": "Democratic Revolutionary Party (Panama) – Wikipedia (founded 1979, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Revolutionary_Party_(Panama)"
+        },
+        {
+          "title": "2024 Panamanian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Panamanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "PA-CD",
+      "country": "PA",
+      "shortName": "CD",
+      "name": "Cambio Democrático",
+      "nameEn": "Democratic Change",
+      "ideology": ["Conservatism", "Populism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1998,
+      "leader": "Laurentino Cortizo",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2019–2024",
+      "seats": 30,
+      "seatsTotal": 71,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Change_(Panama)",
+      "sources": [
+        {
+          "title": "Democratic Change (Panama) – Wikipedia (founded 1998, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Change_(Panama)"
+        },
+        {
+          "title": "2024 Panamanian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Panamanian_general_election"
+        }
+      ]
+    }
+  ],
+  "PG": [
+    {
+      "id": "PG-PNC",
+      "country": "PG",
+      "shortName": "PNC",
+      "name": "Papua New Guinea Party",
+      "ideology": ["Populism", "Nationalism"],
+      "ideologyPosition": "centre",
+      "founded": 2002,
+      "leader": "Peter O'Neill",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 111,
+      "chamberName": "National Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Papua_New_Guinea_Party",
+      "sources": [
+        {
+          "title": "Papua New Guinea Party – Wikipedia (founded 2002, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Papua_New_Guinea_Party"
+        },
+        {
+          "title": "2022 Papua New Guinean general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Papua_New_Guinean_general_election"
+        }
+      ]
+    }
+  ],
+  "PS": [
+    {
+      "id": "PS-Fatah",
+      "country": "PS",
+      "shortName": "Fatah",
+      "name": "Harakat al-Tahrir al-Watani al-Filastini",
+      "nameEn": "Palestine Liberation Movement",
+      "ideology": ["Palestinian nationalism", "Social democracy"],
+      "ideologyPosition": "centre-left",
+      "founded": 1965,
+      "leader": "Mahmoud Abbas",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2005–present",
+      "seats": 66,
+      "seatsTotal": 132,
+      "chamberName": "Palestinian Legislative Council",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Fatah",
+      "sources": [
+        {
+          "title": "Fatah – Wikipedia (founded 1965, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Fatah"
+        },
+        {
+          "title": "Palestinian Legislative Council – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/Palestinian_Legislative_Council"
+        }
+      ]
+    },
+    {
+      "id": "PS-Hamas",
+      "country": "PS",
+      "shortName": "Hamas",
+      "name": "Harakat al-Muqawama al-Islamiyya",
+      "nameEn": "Islamic Resistance Movement",
+      "ideology": ["Islamic fundamentalism", "Palestinian nationalism"],
+      "ideologyPosition": "far-right",
+      "founded": 1987,
+      "leader": "Ismail Haniyeh",
+      "leaderTitle": "Political Bureau Chief",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 132,
+      "chamberName": "Palestinian Legislative Council",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Hamas",
+      "sources": [
+        {
+          "title": "Hamas – Wikipedia (founded 1987, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Hamas"
+        },
+        {
+          "title": "Palestinian Legislative Council – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/Palestinian_Legislative_Council"
+        }
+      ]
+    }
+  ],
+  "PW": [
+    {
+      "id": "PW-Rukezal",
+      "country": "PW",
+      "shortName": "Rukezal",
+      "name": "Rukezal Ekong Tmetuchl",
+      "ideology": ["Populism", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 2000,
+      "leader": "Surangel Whipps Jr.",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 11,
+      "seatsTotal": 16,
+      "chamberName": "National Congress",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Rukezal",
+      "sources": [
+        {
+          "title": "Rukezal – Wikipedia (founded 2000, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Rukezal"
+        },
+        {
+          "title": "2020 Palauan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Palauan_general_election"
+        }
+      ]
+    }
+  ],
+  "PY": [
+    {
+      "id": "PY-ANR",
+      "country": "PY",
+      "shortName": "ANR",
+      "name": "Partido Asociación Nacional Republicana",
+      "nameEn": "National Republican Association",
+      "ideology": ["Liberalism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1887,
+      "leader": "Santiago Peña",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2023–present",
+      "seats": 41,
+      "seatsTotal": 128,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_Republican_Association",
+      "sources": [
+        {
+          "title": "National Republican Association – Wikipedia (founded 1887, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_Republican_Association"
+        },
+        {
+          "title": "2023 Paraguayan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Paraguayan_general_election"
+        }
+      ]
+    },
+    {
+      "id": "PY-PLRA",
+      "country": "PY",
+      "shortName": "PLRA",
+      "name": "Partido Liberal Radical Auténtico",
+      "nameEn": "Liberal Party",
+      "ideology": ["Liberalism", "Social liberalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1887,
+      "leader": "Efraín Alegre",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 27,
+      "seatsTotal": 128,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Liberal_Party_(Paraguay)",
+      "sources": [
+        {
+          "title": "Liberal Party (Paraguay) – Wikipedia (founded 1887, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Party_(Paraguay)"
+        },
+        {
+          "title": "2023 Paraguayan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Paraguayan_general_election"
+        }
+      ]
+    }
+  ],
+  "QA": [
+    {
+      "id": "QA-Emir",
+      "country": "QA",
+      "shortName": "Emir",
+      "name": "Emirate of Qatar",
+      "ideology": ["Monarchy", "Autocracy"],
+      "ideologyPosition": "far-right",
+      "founded": 1868,
+      "leader": "Tamim bin Hamad Al Thani",
+      "leaderTitle": "Emir",
+      "inPower": true,
+      "timeInPower": "2013–present",
+      "seats": 30,
+      "seatsTotal": 50,
+      "chamberName": "Advisory Council",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Politics_of_Qatar",
+      "sources": [
+        {
+          "title": "Politics of Qatar – Wikipedia (political system)",
+          "url": "https://en.wikipedia.org/wiki/Politics_of_Qatar"
+        },
+        {
+          "title": "Advisory Council – Wikipedia (governing body)",
+          "url": "https://en.wikipedia.org/wiki/Advisory_Council_(Qatar)"
+        }
+      ]
+    }
+  ],
+  "RO": [
+    {
+      "id": "RO-PSD",
+      "country": "RO",
+      "shortName": "PSD",
+      "name": "Partidul Social Democrat",
+      "nameEn": "Social Democratic Party",
+      "ideology": ["Social democracy", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 2001,
+      "leader": "Marcel Ciolacu",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 91,
+      "seatsTotal": 330,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Romania)",
+      "sources": [
+        {
+          "title": "Social Democratic Party (Romania) – Wikipedia (founded 2001, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Romania)"
+        },
+        {
+          "title": "2020 Romanian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Romanian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "RO-PNL",
+      "country": "RO",
+      "shortName": "PNL",
+      "name": "Partidul Național Liberal",
+      "nameEn": "National Liberal Party",
+      "ideology": ["Liberalism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1995,
+      "leader": "Nicolae Ciucă",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2021–present, in coalition",
+      "seats": 93,
+      "seatsTotal": 330,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_Liberal_Party_(Romania)",
+      "sources": [
+        {
+          "title": "National Liberal Party (Romania) – Wikipedia (founded 1995, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_Liberal_Party_(Romania)"
+        },
+        {
+          "title": "2020 Romanian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Romanian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "RS": [
+    {
+      "id": "RS-SNS",
+      "country": "RS",
+      "shortName": "SNS",
+      "name": "Srpska Napredna Stranka",
+      "nameEn": "Serbian Progressive Party",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2008,
+      "leader": "Aleksandar Vučić",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2017–present",
+      "seats": 140,
+      "seatsTotal": 250,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Serbian_Progressive_Party",
+      "sources": [
+        {
+          "title": "Serbian Progressive Party – Wikipedia (founded 2008, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Serbian_Progressive_Party"
+        },
+        {
+          "title": "2023 Serbian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Serbian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "RS-SPS",
+      "country": "RS",
+      "shortName": "SPS",
+      "name": "Socijalistička Partija Srbije",
+      "nameEn": "Socialist Party of Serbia",
+      "ideology": ["Socialism", "Nationalism"],
+      "ideologyPosition": "left",
+      "founded": 1990,
+      "leader": "Ivica Dačić",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "1997–2012",
+      "seats": 32,
+      "seatsTotal": 250,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Socialist_Party_of_Serbia",
+      "sources": [
+        {
+          "title": "Socialist Party of Serbia – Wikipedia (founded 1990, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_of_Serbia"
+        },
+        {
+          "title": "2023 Serbian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Serbian_general_election"
+        }
+      ]
+    }
   ]
 };
