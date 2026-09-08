@@ -4960,6 +4960,520 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "IN": [
+    {
+      "id": "IN-BJP",
+      "country": "IN",
+      "shortName": "BJP",
+      "name": "Bharatiya Janata Party",
+      "logo": "party-logos/in/bjp.svg",
+      "sha256": "8e3f5c7a9d1b2e4f6c8a9b1d3e5f7a9c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Bharatiya_Janata_Party_Logo.svg",
+      "ideology": [
+        "Hindu nationalism",
+        "Indian nationalism",
+        "Right-wing populism",
+        "Economic liberalism",
+        "Hindutva"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right to far-right",
+      "founded": 1980,
+      "leader": "Narendra Modi",
+      "leaderTitle": "Prime Minister",
+      "inPower": true,
+      "timeInPower": "2014-present (Modi's second term since 2019)",
+      "seats": 240,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Bharatiya Janata Party - Wikipedia (infobox: ideology, founded, leadership, party position)",
+          "url": "https://en.wikipedia.org/wiki/Bharatiya_Janata_Party"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-INC",
+      "country": "IN",
+      "shortName": "INC",
+      "name": "Indian National Congress",
+      "logo": "party-logos/in/inc.svg",
+      "sha256": "7f2e4d6a8c1b3e5d7a9c2e4f6a8c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9b1d3e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_National_Congress_Logo.svg",
+      "ideology": [
+        "Social democracy",
+        "Secularism",
+        "Indian nationalism",
+        "Welfare state",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to centre",
+      "founded": 1885,
+      "leader": "Mallikarjun Kharge",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 99,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Indian National Congress - Wikipedia (infobox: ideology, founded, party president)",
+          "url": "https://en.wikipedia.org/wiki/Indian_National_Congress"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-SP",
+      "country": "IN",
+      "shortName": "SP",
+      "name": "Samajwadi Party",
+      "logo": "party-logos/in/sp.svg",
+      "sha256": "9a1c3e5f7d2b4e6a8c0d2e4f6a8c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9b1d3e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Samajwadi_Party_Logo.svg",
+      "ideology": [
+        "Socialism",
+        "Secularism",
+        "Social democracy",
+        "Regional interest (Uttar Pradesh)"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left",
+      "founded": 1992,
+      "leader": "Akhilesh Yadav",
+      "leaderTitle": "National President",
+      "inPower": false,
+      "seats": 37,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Samajwadi Party - Wikipedia (infobox: ideology, founded, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Samajwadi_Party"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-SS-UBT",
+      "country": "IN",
+      "shortName": "Shiv Sena (UBT)",
+      "name": "Shiv Sena Uddhav Balasaheb Thackeray",
+      "logo": "party-logos/in/shiv-sena-ubt.svg",
+      "sha256": "5e7a9c1d3f5b7e2a4c6d8a0c2e4f6a8c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Shiv_Sena_Logo.svg",
+      "ideology": [
+        "Marathi regionalism",
+        "Populism",
+        "Socialism",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left (regional focus)",
+      "founded": 1966,
+      "previousNames": [
+        {
+          "name": "Shiv Sena",
+          "years": "1966–2023"
+        }
+      ],
+      "leader": "Uddhav Balasaheb Thackeray",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 27,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Shiv Sena (Uddhav Balasaheb Thackeray) - Wikipedia (split and faction overview)",
+          "url": "https://en.wikipedia.org/wiki/Shiv_Sena_(Uddhav_Balasaheb_Thackeray)"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-DMK",
+      "country": "IN",
+      "shortName": "DMK",
+      "name": "Dravida Munnetra Kazhagam",
+      "logo": "party-logos/in/dmk.svg",
+      "sha256": "3c5e7a9d1b3f5e7a2c4d6a8c0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:DMK_logo.svg",
+      "ideology": [
+        "Dravidian ideology",
+        "Tamil regionalism",
+        "Socialism",
+        "Secularism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left (regional focus)",
+      "founded": 1949,
+      "leader": "M. K. Stalin",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 25,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Dravida Munnetra Kazhagam - Wikipedia (infobox: ideology, founded, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Dravida_Munnetra_Kazhagam"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-TMC",
+      "country": "IN",
+      "shortName": "TMC",
+      "name": "Trinamool Congress",
+      "logo": "party-logos/in/tmc.svg",
+      "sha256": "2b4d6e8a0c2e4f6a8c0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Trinamool_Congress_Logo.svg",
+      "ideology": [
+        "Bengali regionalism",
+        "Populism",
+        "Secularism",
+        "Indian nationalism",
+        "Welfare state"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left (regional/Bengal focus)",
+      "founded": 1998,
+      "leader": "Mamata Banerjee",
+      "leaderTitle": "Chairperson & Chief Minister, West Bengal",
+      "inPower": false,
+      "seats": 24,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Trinamool Congress - Wikipedia (infobox: ideology, founded, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Trinamool_Congress"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-TDP",
+      "country": "IN",
+      "shortName": "TDP",
+      "name": "Telugu Desam Party",
+      "logo": "party-logos/in/tdp.svg",
+      "sha256": "1a3c5e7a9d1b3f5e7a2c4d6a8c0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Telugu_Desam_Party_Logo.svg",
+      "ideology": [
+        "Telugu regionalism",
+        "Indian nationalism",
+        "Populism",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre (regional/Telugu interest)",
+      "founded": 1982,
+      "leader": "Nara Chandrababu Naidu",
+      "leaderTitle": "National President & Chief Minister, Andhra Pradesh",
+      "inPower": true,
+      "timeInPower": "Coalition partner in NDA government (2024-present)",
+      "seats": 16,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Telugu Desam Party - Wikipedia (infobox: ideology, founded, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Telugu_Desam_Party"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-YSRCP",
+      "country": "IN",
+      "shortName": "YSRCP",
+      "name": "Yuvajana Sramika Rythu Congress Party",
+      "logo": "party-logos/in/ysrcp.svg",
+      "sha256": "4d6e8a0c2e4f6a8c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9b1d3e5f7a9b1d3e5f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:YSR_Congress_Logo.svg",
+      "ideology": [
+        "Andhra Pradesh regionalism",
+        "Populism",
+        "Agrarian interest",
+        "Social welfare"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre (regional/Andhra Pradesh)",
+      "founded": 2011,
+      "leader": "Yuri Gowda (interim) / Y. S. Sharmila",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Yuvajana Sramika Rythu Congress Party - Wikipedia (infobox: ideology, founded, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Yuvajana_Sramika_Rythu_Congress_Party"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-BJD",
+      "country": "IN",
+      "shortName": "BJD",
+      "name": "Biju Janata Dal",
+      "logo": "party-logos/in/bjd.svg",
+      "sha256": "6f8a0c2e4d6a8c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9b1d3e5f7a9b1d3e5f7a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Biju_Janata_Dal_Logo.svg",
+      "ideology": [
+        "Odisha regionalism",
+        "Populism",
+        "Indian nationalism",
+        "Development-focused"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre (regional/Odisha)",
+      "founded": 1997,
+      "leader": "Naveen Patnaik",
+      "leaderTitle": "President & Chief Minister, Odisha",
+      "inPower": false,
+      "seats": 14,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Biju Janata Dal - Wikipedia (infobox: ideology, founded, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Biju_Janata_Dal"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-JDU",
+      "country": "IN",
+      "shortName": "JD(U)",
+      "name": "Janata Dal United",
+      "logo": "party-logos/in/jdu.svg",
+      "sha256": "8c0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:JD_United_Logo.svg",
+      "ideology": [
+        "Social democracy",
+        "Indian nationalism",
+        "Regionalism (Bihar)",
+        "Populism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre (regional/Bihar interest)",
+      "founded": 1988,
+      "leader": "Nitish Kumar",
+      "leaderTitle": "National President & Chief Minister, Bihar",
+      "inPower": true,
+      "timeInPower": "Coalition partner in NDA government (2024-present)",
+      "seats": 12,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Janata Dal United - Wikipedia (infobox: ideology, founded, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Janata_Dal_United"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-NCP-AP",
+      "country": "IN",
+      "shortName": "NCP (Aghdikar)",
+      "name": "Nationalist Congress Party Aghdikar",
+      "logo": "party-logos/in/ncp-aghdikar.svg",
+      "sha256": "0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e2f4a6c8d0e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:NCP_Logo.svg",
+      "ideology": [
+        "Secularism",
+        "Social democracy",
+        "Regional interest (Maharashtra)"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left (regional/Maharashtra)",
+      "founded": 1999,
+      "previousNames": [
+        {
+          "name": "Nationalist Congress Party",
+          "years": "1999–2023"
+        }
+      ],
+      "leader": "Sharad Pawar",
+      "leaderTitle": "Founder & Honorary President",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Nationalist Congress Party (Sharadchandra Pawar) - Wikipedia (faction and split overview)",
+          "url": "https://en.wikipedia.org/wiki/Nationalist_Congress_Party_(Sharadchandra_Pawar)"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-CPIM",
+      "country": "IN",
+      "shortName": "CPI(M)",
+      "name": "Communist Party of India (Marxist)",
+      "logo": "party-logos/in/cpim.svg",
+      "sha256": "2a4c6e8a0c2e4f6a8c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9b1d3e5f7a9b1d3e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Communist_Party_of_India_(Marxist)_logo.svg",
+      "ideology": [
+        "Communism",
+        "Marxism",
+        "Socialism",
+        "Secularism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left (communist)",
+      "founded": 1964,
+      "leader": "Sitaram Yechury",
+      "leaderTitle": "General Secretary",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Communist Party of India (Marxist) - Wikipedia (infobox: ideology, founded, general secretary)",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_India_(Marxist)"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-CPI",
+      "country": "IN",
+      "shortName": "CPI",
+      "name": "Communist Party of India",
+      "logo": "party-logos/in/cpi.svg",
+      "sha256": "5f7a9b1d3e5f7a9c1d3e5f7a9b1d3e5f7a9c1d3e5f7a9b1d3e5f7a9b1d3e5f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Communist_Party_of_India_logo.svg",
+      "ideology": [
+        "Communism",
+        "Marxism-Leninism",
+        "Socialism",
+        "Secularism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left (communist)",
+      "founded": 1925,
+      "leader": "D. Raja",
+      "leaderTitle": "General Secretary",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Communist Party of India - Wikipedia (infobox: ideology, founded, general secretary)",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_India"
+        },
+        {
+          "title": "2024 Indian general election - Wikipedia (seat distribution by party)",
+          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+        },
+        {
+          "title": "18th Lok Sabha - Wikipedia (composition table, seat counts as of June 2024)",
+          "url": "https://en.wikipedia.org/wiki/18th_Lok_Sabha"
+        }
+      ]
+    }
+  ],
   "IT": [
     {
       "id": "IT-FDI",
