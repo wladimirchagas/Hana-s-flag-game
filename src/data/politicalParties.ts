@@ -16300,6 +16300,260 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ],
       "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "FI-KOK",
+      "country": "FI",
+      "shortName": "KOK",
+      "name": "National Coalition",
+      "ideology": [
+        "Conservatism",
+        "Economic liberalism",
+        "Centre-right",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1918,
+      "leader": "Petteri Orpo",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 48,
+      "seatsTotal": 200,
+      "chamberName": "Eduskunta",
+      "sources": [
+        {
+          "title": "National Coalition Party – Wikipedia (founded 1918, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_Coalition_Party"
+        },
+        {
+          "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "FI-PS",
+      "country": "FI",
+      "shortName": "PS",
+      "name": "Finns Party",
+      "ideology": [
+        "Right-wing populism",
+        "National conservatism",
+        "Euroscepticism",
+        "Immigration skepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2011,
+      "leader": "Riikka Purra",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 46,
+      "seatsTotal": 200,
+      "chamberName": "Eduskunta",
+      "sources": [
+        {
+          "title": "Finns Party – Wikipedia (founded 2011, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Finns_Party"
+        },
+        {
+          "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "FI-SDP",
+      "country": "FI",
+      "shortName": "SDP",
+      "name": "Social Democrats",
+      "ideology": [
+        "Social democracy",
+        "Progressivism",
+        "Welfare state"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1899,
+      "leader": "Pekka Haavisto",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 41,
+      "seatsTotal": 200,
+      "chamberName": "Eduskunta",
+      "sources": [
+        {
+          "title": "Finnish Social Democratic Party – Wikipedia (founded 1899, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Finnish_Social_Democratic_Party"
+        },
+        {
+          "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "FI-KESK",
+      "country": "FI",
+      "shortName": "KESK",
+      "name": "Centre Party",
+      "ideology": [
+        "Liberalism",
+        "Agrarianism",
+        "Pragmatism",
+        "Welfare state"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1906,
+      "leader": "Annika Saarikko",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 34,
+      "seatsTotal": 200,
+      "chamberName": "Eduskunta",
+      "sources": [
+        {
+          "title": "Centre Party (Finland) – Wikipedia (founded 1906, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Centre_Party_(Finland)"
+        },
+        {
+          "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "FI-VAS",
+      "country": "FI",
+      "shortName": "VAS",
+      "name": "Left Alliance",
+      "ideology": [
+        "Democratic socialism",
+        "Left-wing",
+        "Anti-capitalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1990,
+      "leader": "Li Andersson",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 200,
+      "chamberName": "Eduskunta",
+      "sources": [
+        {
+          "title": "Left Alliance – Wikipedia (founded 1990, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Left_Alliance_(Finland)"
+        },
+        {
+          "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "FI-RKP",
+      "country": "FI",
+      "shortName": "RKP",
+      "name": "Swedish People's Party",
+      "ideology": [
+        "Liberalism",
+        "Centre-liberalism",
+        "Swedish-language minority interests",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1906,
+      "leader": "Anna-Maja Henriksson",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 12,
+      "seatsTotal": 200,
+      "chamberName": "Eduskunta",
+      "sources": [
+        {
+          "title": "Swedish People's Party – Wikipedia (founded 1906, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Swedish_People%27s_Party"
+        },
+        {
+          "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "FI-VIHR",
+      "country": "FI",
+      "shortName": "VIHR",
+      "name": "Green League",
+      "ideology": [
+        "Environmentalism",
+        "Green politics",
+        "Progressivism",
+        "Feminism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1987,
+      "leader": "Iiris Suomela",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 200,
+      "chamberName": "Eduskunta",
+      "sources": [
+        {
+          "title": "Green League – Wikipedia (founded 1987, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Green_League_(Finland)"
+        },
+        {
+          "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "FI-KD",
+      "country": "FI",
+      "shortName": "KD",
+      "name": "Christian Democrats",
+      "ideology": [
+        "Christian democracy",
+        "Social conservatism",
+        "Family values",
+        "Centre-right"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1958,
+      "leader": "Sari Essayah",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 6,
+      "seatsTotal": 200,
+      "chamberName": "Eduskunta",
+      "sources": [
+        {
+          "title": "Christian Democrats (Finland) – Wikipedia (founded 1958, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democrats_(Finland)"
+        },
+        {
+          "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
     }
   ]
 };
