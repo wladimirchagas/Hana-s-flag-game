@@ -13672,6 +13672,175 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "GR": [
+    {
+      "id": "GR-ND",
+      "country": "GR",
+      "shortName": "ND",
+      "name": "New Democracy",
+      "ideology": ["right", "centre-right", "centre", "liberal", "conservative", "nationalism", "business-friendly", "pro-EU"],
+      "ideologyPosition": "right",
+      "founded": 1974,
+      "leader": "Kyriakos Mitsotakis",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "In government since June 2019 (reelected with increased majority in 2023). Won 41.1% of the vote in the 2023 legislative election.",
+      "seats": 158,
+      "seatsTotal": 300,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "New Democracy (Greece) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Democracy_(Greece)"
+        },
+        {
+          "title": "2023 Greek legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Greek_legislative_election"
+        },
+        {
+          "title": "Kyriakos Mitsotakis – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kyriakos_Mitsotakis"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "GR-SYR",
+      "country": "GR",
+      "shortName": "SYRIZA",
+      "name": "SYRIZA – Progressive Alliance",
+      "ideology": ["left", "centre-left", "socialist", "anti-austerity", "pro-workers", "environmental", "progressive", "anti-establishment"],
+      "ideologyPosition": "left",
+      "founded": 2012,
+      "previousNames": [
+        {
+          "name": "Coalition of the Radical Left",
+          "years": "2004–2012"
+        }
+      ],
+      "leader": "Stefanos Kasselakis",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "In opposition since June 2019. Governed Greece from January 2015 to June 2019. Won 20.7% of the vote in the 2023 legislative election.",
+      "seats": 84,
+      "seatsTotal": 300,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Syriza – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Syriza"
+        },
+        {
+          "title": "2023 Greek legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Greek_legislative_election"
+        },
+        {
+          "title": "Stefanos Kasselakis – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Stefanos_Kasselakis"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "GR-PASOK",
+      "country": "GR",
+      "shortName": "PASOK",
+      "name": "PASOK – Socialists",
+      "ideology": ["centre-left", "social-democratic", "progressive", "pro-EU", "centre", "liberal", "environmental", "reformist"],
+      "ideologyPosition": "centre-left",
+      "founded": 1974,
+      "previousNames": [
+        {
+          "name": "Panhellenic Socialist Movement",
+          "years": "1974–2004"
+        }
+      ],
+      "leader": "Nikos Androulakis",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "In opposition since June 2019. Last governed Greece as PASOK from 1981 to 1989 and 1993 to 2004. Won 11.6% of the vote in the 2023 legislative election.",
+      "seats": 46,
+      "seatsTotal": 300,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "PASOK – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/PASOK"
+        },
+        {
+          "title": "2023 Greek legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Greek_legislative_election"
+        },
+        {
+          "title": "Nikos Androulakis – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nikos_Androulakis"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "GR-EL",
+      "country": "GR",
+      "shortName": "Greek Solution",
+      "name": "Greek Solution",
+      "ideology": ["right", "far-right", "populist", "nationalist", "anti-immigration", "socially-conservative", "euro-skeptic", "authoritarian"],
+      "ideologyPosition": "far-right",
+      "founded": 2016,
+      "leader": "Kyriakos Velopoulos",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "In opposition since 2023. Entered parliament for the first time in the 2019 election. Won 7.8% of the vote in the 2023 legislative election.",
+      "seats": 26,
+      "seatsTotal": 300,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Greek Solution – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Greek_Solution"
+        },
+        {
+          "title": "2023 Greek legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Greek_legislative_election"
+        },
+        {
+          "title": "Kyriakos Velopoulos – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kyriakos_Velopoulos"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "GR-KKE",
+      "country": "GR",
+      "shortName": "KKE",
+      "name": "Communist Party of Greece",
+      "ideology": ["far-left", "communist", "marxist", "anti-capitalism", "anti-imperialism", "working-class", "internationalist", "revolutionary"],
+      "ideologyPosition": "far-left",
+      "founded": 1918,
+      "leader": "Dimitris Koutsoumbas",
+      "leaderTitle": "General Secretary",
+      "inPower": false,
+      "timeInPower": "In opposition throughout the post-1974 democratic period. Won 7.2% of the vote in the 2023 legislative election.",
+      "seats": 24,
+      "seatsTotal": 300,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Communist Party of Greece – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Greece"
+        },
+        {
+          "title": "2023 Greek legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Greek_legislative_election"
+        },
+        {
+          "title": "Dimitris Koutsoumbas – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dimitris_Koutsoumbas"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    }
+  ],
   "GH": [
     {
       "id": "GH-NDC",
