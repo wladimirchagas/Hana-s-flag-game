@@ -15770,5 +15770,288 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ],
       "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
     }
+  ],
+  "NO": [
+    {
+      "id": "NO-AP",
+      "country": "NO",
+      "shortName": "Ap",
+      "name": "Labour Party",
+      "ideology": [
+        "Social democracy",
+        "Welfarism",
+        "Norwegian nationalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-of-centre",
+      "founded": 1887,
+      "leader": "Jonas Gahr Støre",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 48,
+      "seatsTotal": 169,
+      "chamberName": "Stortinget",
+      "sources": [
+        {
+          "title": "Labour Party (Norway) – Wikipedia (founded 1887, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Labour_Party_(Norway)"
+        },
+        {
+          "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "NO-H",
+      "country": "NO",
+      "shortName": "H",
+      "name": "Conservative Party",
+      "ideology": [
+        "Conservatism",
+        "Liberalism",
+        "Market economy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1884,
+      "leader": "Erna Solberg",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 45,
+      "seatsTotal": 169,
+      "chamberName": "Stortinget",
+      "sources": [
+        {
+          "title": "Conservative Party (Norway) – Wikipedia (founded 1884, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Conservative_Party_(Norway)"
+        },
+        {
+          "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "NO-FRP",
+      "country": "NO",
+      "shortName": "Frp",
+      "name": "Progress Party",
+      "ideology": [
+        "Right-wing populism",
+        "Economic liberalism",
+        "Nationalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1973,
+      "leader": "Sylvi Listhaug",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 36,
+      "seatsTotal": 169,
+      "chamberName": "Stortinget",
+      "sources": [
+        {
+          "title": "Progress Party (Norway) – Wikipedia (founded 1973, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Progress_Party_(Norway)"
+        },
+        {
+          "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "NO-SV",
+      "country": "NO",
+      "shortName": "SV",
+      "name": "Socialist Left Party",
+      "ideology": [
+        "Democratic socialism",
+        "Environmentalism",
+        "Anti-militarism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1975,
+      "leader": "Audun Lysbakken",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 13,
+      "seatsTotal": 169,
+      "chamberName": "Stortinget",
+      "sources": [
+        {
+          "title": "Socialist Left Party (Norway) – Wikipedia (founded 1975, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Left_Party_(Norway)"
+        },
+        {
+          "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "NO-SP",
+      "country": "NO",
+      "shortName": "Sp",
+      "name": "Centre Party",
+      "ideology": [
+        "Agrarianism",
+        "Regionalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1920,
+      "leader": "Trygve Slagsvold Vedum",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2021–present (junior coalition partner)",
+      "seats": 13,
+      "seatsTotal": 169,
+      "chamberName": "Stortinget",
+      "sources": [
+        {
+          "title": "Centre Party (Norway) – Wikipedia (founded 1920, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Centre_Party_(Norway)"
+        },
+        {
+          "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "NO-MDG",
+      "country": "NO",
+      "shortName": "MDG",
+      "name": "Green Party",
+      "ideology": [
+        "Green politics",
+        "Environmentalism",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left",
+      "founded": 1988,
+      "leader": "Rasmus Hansson",
+      "leaderTitle": "Party Speaker",
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 169,
+      "chamberName": "Stortinget",
+      "sources": [
+        {
+          "title": "Green Party (Norway) – Wikipedia (founded 1988, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_(Norway)"
+        },
+        {
+          "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "NO-KRF",
+      "country": "NO",
+      "shortName": "KrF",
+      "name": "Christian Democrats",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1933,
+      "leader": "Kjell Ingolf Ropstad",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 169,
+      "chamberName": "Stortinget",
+      "sources": [
+        {
+          "title": "Christian Democrats (Norway) – Wikipedia (founded 1933, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democrats_(Norway)"
+        },
+        {
+          "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "NO-R",
+      "country": "NO",
+      "shortName": "R",
+      "name": "Red Party",
+      "ideology": [
+        "Communism",
+        "Marxism",
+        "Anti-imperialism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 1990,
+      "leader": "Bjørnar Moxnes",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 169,
+      "chamberName": "Stortinget",
+      "sources": [
+        {
+          "title": "Red Party (Norway) – Wikipedia (founded 1990, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Red_Party_(Norway)"
+        },
+        {
+          "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "NO-V",
+      "country": "NO",
+      "shortName": "V",
+      "name": "Liberal Party",
+      "ideology": [
+        "Liberalism",
+        "Social liberalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1884,
+      "leader": "Guri Melby",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 169,
+      "chamberName": "Stortinget",
+      "sources": [
+        {
+          "title": "Liberal Party (Norway) – Wikipedia (founded 1884, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Party_(Norway)"
+        },
+        {
+          "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    }
   ]
 };
