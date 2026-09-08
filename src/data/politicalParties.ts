@@ -718,6 +718,22 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
     },
     "note": "The traditional centre-right electoral coalition (built around the historic Chile Vamos alliance) that contested the November 2025 parliamentary election, winning 34 of 155 Chamber seats. Two list members, Evópoli (2 seats) and Demócratas (1 seat), were dissolved by Servel in February 2026 for missing the legal vote/seat threshold. UDI and RN both hold cabinet portfolios in José Antonio Kast's government, formed 11 March 2026."
+  },
+  "bd-bnp-plus": {
+    "id": "bd-bnp-plus",
+    "name": "BNP+ (BNP-led governing alliance)",
+    "kind": "coalition",
+    "memberPartyIds": [
+      "BD-BNP",
+      "BD-JATIYA-PARTY",
+      "BD-GOP",
+      "BD-GANOSANHATI"
+    ],
+    "source": {
+      "title": "Tarique Rahman ministry - Wikipedia (coalition cabinet member parties: BNP, Bangladesh Jatiya Party, Gono Odhikar Parishad, Ganosamhati Andolan)",
+      "url": "https://en.wikipedia.org/wiki/Tarique_Rahman_ministry"
+    },
+    "note": "The governing coalition formed after the February 2026 general election; the four parties hold cabinet posts in the Tarique Rahman ministry sworn in 17 February 2026."
   }
 };
 
@@ -14020,6 +14036,403 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2025 Chilean general election - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2025_Chilean_general_election"
+        }
+      ]
+    }
+  ],
+  "BD": [
+    {
+      "id": "BD-BNP",
+      "country": "BD",
+      "shortName": "BNP",
+      "name": "বাংলাদেশ জাতীয়তাবাদী দল",
+      "nameEn": "Bangladesh Nationalist Party",
+      "logo": "party-logos/bd/bnp.png",
+      "sha256": "02bfaa736c96f82cb32e8ce50147d752efc89a7024349ef73e70d80763622086",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:BNP_logo.png",
+      "ideology": [
+        "Conservatism",
+        "Economic liberalism",
+        "Bangladeshi nationalism",
+        "Big tent"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1978,
+      "coalitionId": "bd-bnp-plus",
+      "leader": "Tarique Rahman",
+      "leaderTitle": "Chairperson; Prime Minister of Bangladesh",
+      "inPower": true,
+      "timeInPower": "February 2026–present",
+      "seats": 246,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Bangladesh Nationalist Party - Wikipedia (infobox: founder, founding, ideology, chairperson)",
+          "url": "https://en.wikipedia.org/wiki/Bangladesh_Nationalist_Party"
+        },
+        {
+          "title": "13th Jatiya Sangsad - Wikipedia (party-wise seat distribution table)",
+          "url": "https://en.wikipedia.org/wiki/13th_Jatiya_Sangsad"
+        },
+        {
+          "title": "2026 Bangladeshi general election - Wikipedia (results, BNP 209 directly-elected seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Bangladeshi_general_election"
+        },
+        {
+          "title": "Tarique Rahman ministry - Wikipedia (sworn in as Prime Minister 17 Feb 2026)",
+          "url": "https://en.wikipedia.org/wiki/Tarique_Rahman_ministry"
+        }
+      ]
+    },
+    {
+      "id": "BD-JAMAAT",
+      "country": "BD",
+      "shortName": "Jamaat-e-Islami",
+      "name": "বাংলাদেশ জামায়াতে ইসলামী",
+      "nameEn": "Bangladesh Jamaat-e-Islami",
+      "logo": "party-logos/bd/jamaat.svg",
+      "sha256": "a3961d14c6ac10e1da9ce5652517524d6482affa462afd2776ecb3e1381383eb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Bangladesh_Jamaat-e-Islami_Emblem.svg",
+      "ideology": [
+        "Islamism",
+        "Conservatism",
+        "Neo-Islamism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 1979,
+      "leader": "Shafiqur Rahman",
+      "leaderTitle": "Ameer (Emir)",
+      "inPower": false,
+      "seats": 76,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Bangladesh Jamaat-e-Islami - Wikipedia (infobox: founding, ideology, Ameer; 2024–2025 ban and reinstatement)",
+          "url": "https://en.wikipedia.org/wiki/Bangladesh_Jamaat-e-Islami"
+        },
+        {
+          "title": "13th Jatiya Sangsad - Wikipedia (party-wise seat distribution table)",
+          "url": "https://en.wikipedia.org/wiki/13th_Jatiya_Sangsad"
+        },
+        {
+          "title": "2026 Bangladeshi general election - Wikipedia (Jamaat became main opposition, 68 directly-elected seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Bangladeshi_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BD-NCP",
+      "country": "BD",
+      "shortName": "NCP",
+      "name": "জাতীয় নাগরিক পার্টি",
+      "nameEn": "National Citizen Party",
+      "logo": "party-logos/bd/ncp.svg",
+      "sha256": "791ac965021ab6fd0bf9954b5ca1ea8bf45f86c18d01edb76d81ce133d301bb9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%A8%E0%A6%BE%E0%A6%97%E0%A6%B0%E0%A6%BF%E0%A6%95_%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%B0_%E0%A6%B2%E0%A7%8B%E0%A6%97%E0%A7%8B.svg",
+      "ideology": [
+        "Reformism",
+        "Third Way",
+        "Pluralism",
+        "Centrism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2025,
+      "leader": "Nahid Islam",
+      "leaderTitle": "Convener",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "National Citizen Party - Wikipedia (infobox: founding 28 Feb 2025, ideology, Convener; formed by leaders of the July 2024 uprising)",
+          "url": "https://en.wikipedia.org/wiki/National_Citizen_Party"
+        },
+        {
+          "title": "13th Jatiya Sangsad - Wikipedia (party-wise seat distribution table)",
+          "url": "https://en.wikipedia.org/wiki/13th_Jatiya_Sangsad"
+        }
+      ]
+    },
+    {
+      "id": "BD-BKM",
+      "country": "BD",
+      "shortName": "Bangladesh Khelafat Majlis",
+      "name": "বাংলাদেশ খেলাফত মজলিস",
+      "nameEn": "Bangladesh Khelafat Majlis",
+      "logo": "party-logos/bd/bkm.svg",
+      "sha256": "35ad0cd647ecf8d40973b530a3b8adf999c41e9736ddff6858f956ba6d53b684",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%96%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A6%AB%E0%A6%A4_%E0%A6%AE%E0%A6%9C%E0%A6%B2%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A6%BE.svg",
+      "licenceNote": "Bundled from commons.wikimedia.org (CC BY-SA 4.0, uploaded by Aftabuzzaman); no standalone party 'logo' file exists in the Commons category for this party (only its election symbol, a lapel pin, and this flag), so the party's own flag is used here as its visual identifier.",
+      "ideology": [
+        "Islamism",
+        "Pan-Islamism",
+        "Caliphatism",
+        "Social conservatism",
+        "Deobandism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1989,
+      "leader": "Mamunul Haque",
+      "leaderTitle": "Emir",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Bangladesh Khelafat Majlis - search-derived (founding 8 Dec 1989 as a merger of part of Bangladesh Khilafat Andolon and Islami Jubo Shibir; split from Khelafat Majlis in 2005; Mamunul Haque Emir since 11 Jan 2025)",
+          "url": "https://en.wikipedia.org/wiki/Bangladesh_Khelafat_Majlis"
+        },
+        {
+          "title": "13th Jatiya Sangsad - Wikipedia (party-wise seat distribution table: BKM 3 seats)",
+          "url": "https://en.wikipedia.org/wiki/13th_Jatiya_Sangsad"
+        },
+        {
+          "title": "Mamunul Haque - Wikipedia (Emir of Bangladesh Khelafat Majlis since 11 January 2025)",
+          "url": "https://en.wikipedia.org/wiki/Mamunul_Haque"
+        }
+      ]
+    },
+    {
+      "id": "BD-JATIYA-PARTY",
+      "country": "BD",
+      "shortName": "Bangladesh JP",
+      "name": "বাংলাদেশ জাতীয় পার্টি",
+      "nameEn": "Bangladesh Jatiya Party",
+      "logo": "party-logos/bd/jatiya-party-naziur.png",
+      "sha256": "d26a015fd179e14e70250f38565d74624e51b51925ec64b7677b84f688899cca",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Bangladesh_Jatiya_Party_Naizur.png",
+      "licenceNote": "Bundled from commons.wikimedia.org (CC BY-SA 4.0, uploaded by Darkedgeblood); listed here to distinguish it from the unrelated Bharatiya Janata Party (India), which is never abbreviated the same way in this game's own country-scoped data.",
+      "ideology": [
+        "Bangladeshi nationalism",
+        "Conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right (Conservative)",
+      "founded": 2001,
+      "coalitionId": "bd-bnp-plus",
+      "leader": "Andaleeve Rahman Partho",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "February 2026–present",
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Bangladesh Jatiya Party - search-derived (splinter of Jatiya Party (Ershad), founded 5 Aug 2001 by Naziur Rahman Manzur; Andaleeve Rahman Partho leader since 2008)",
+          "url": "https://en.wikipedia.org/wiki/Bangladesh_Jatiya_Party"
+        },
+        {
+          "title": "13th Jatiya Sangsad - Wikipedia (party-wise seat distribution table: BJP 1 seat, Andaleeve Rahman won Bhola-1)",
+          "url": "https://en.wikipedia.org/wiki/13th_Jatiya_Sangsad"
+        },
+        {
+          "title": "Tarique Rahman ministry - Wikipedia (coalition cabinet member party)",
+          "url": "https://en.wikipedia.org/wiki/Tarique_Rahman_ministry"
+        }
+      ]
+    },
+    {
+      "id": "BD-GANOSANHATI",
+      "country": "BD",
+      "shortName": "Ganosanhati Andolan",
+      "name": "গণসংহতি আন্দোলন",
+      "nameEn": "Ganosanhati Andolan",
+      "logo": "party-logos/bd/ganosanhati.svg",
+      "sha256": "11a3eeb1ba5ad43b1e7984a46e044af254b7fc54ba5ccc1a2265a4a94e658c52",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%A6%97%E0%A6%A3%E0%A6%B8%E0%A6%82%E0%A6%B9%E0%A6%A4%E0%A6%BF_%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8B%E0%A6%B2%E0%A6%A8.svg",
+      "ideology": [
+        "Egalitarianism",
+        "\"People's politics\" (based on Abdul Hamid Khan Bhasani's philosophy)",
+        "Democratic state and political system",
+        "Social equality and human dignity",
+        "Social justice"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2002,
+      "coalitionId": "bd-bnp-plus",
+      "leader": "Dewan Abdur Rashid Nilu",
+      "leaderTitle": "Acting Chief Coordinator (Zonayed Saki, the party's long-time Chief Coordinator and its elected MP for Brahmanbaria-6, stepped down from the party post in 2026 on becoming State Minister for Finance and Planning)",
+      "inPower": true,
+      "timeInPower": "February 2026–present",
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Ganosanhati Andolan - Wikipedia (infobox: founding 29 Aug 2002, ideology, formation from multiple left organisations)",
+          "url": "https://en.wikipedia.org/wiki/Ganosanhati_Andolan"
+        },
+        {
+          "title": "Zonayed Saki quits as Ganosamhati Andolan chief coordinator - Dhaka Tribune (resignation on becoming state minister; Dewan Abdur Rashid Nilu acting chief coordinator)",
+          "url": "https://www.dhakatribune.com/bangladesh/406923/zonayed-saki-quits-as-ganosamhati-andolan-chief"
+        },
+        {
+          "title": "13th Jatiya Sangsad - Wikipedia (party-wise seat distribution table: GSA 1 seat, Zonayed Saki won Brahmanbaria-6)",
+          "url": "https://en.wikipedia.org/wiki/13th_Jatiya_Sangsad"
+        },
+        {
+          "title": "Tarique Rahman ministry - Wikipedia (coalition cabinet member party)",
+          "url": "https://en.wikipedia.org/wiki/Tarique_Rahman_ministry"
+        }
+      ]
+    },
+    {
+      "id": "BD-GOP",
+      "country": "BD",
+      "shortName": "Gono Odhikar Parishad",
+      "name": "গণ অধিকার পরিষদ",
+      "nameEn": "Gono Odhikar Parishad",
+      "logo": "party-logos/bd/gono-odhikar-parishad.svg",
+      "sha256": "ceef62b1471ce0552d3a7aeae81cd99568873f190874e4c46020f2a14b95afb5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%A6%97%E0%A6%A3%E0%A6%85%E0%A6%A7%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0_%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B7%E0%A6%A6%E0%A7%87%E0%A6%B0_%E0%A6%B2%E0%A7%8B%E0%A6%97%E0%A7%8B.svg",
+      "ideology": [
+        "Democracy",
+        "Justice",
+        "Rights-based politics",
+        "National interest"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centrism",
+      "founded": 2021,
+      "coalitionId": "bd-bnp-plus",
+      "leader": "Nurul Haque Nur",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "February 2026–present",
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Gono Odhikar Parishad - Wikipedia (infobox: founding 26 Oct 2021, ideology, President; evolved from Bangladesh Chhatra Odhikar Parishad, registered with the Election Commission 2 Sept 2024)",
+          "url": "https://en.wikipedia.org/wiki/Gono_Odhikar_Parishad"
+        },
+        {
+          "title": "13th Jatiya Sangsad - Wikipedia (party-wise seat distribution table: GOP 1 seat, Nurul Haque Nur won Patuakhali-3)",
+          "url": "https://en.wikipedia.org/wiki/13th_Jatiya_Sangsad"
+        },
+        {
+          "title": "Tarique Rahman ministry - Wikipedia (coalition cabinet member party)",
+          "url": "https://en.wikipedia.org/wiki/Tarique_Rahman_ministry"
+        }
+      ]
+    },
+    {
+      "id": "BD-KM",
+      "country": "BD",
+      "shortName": "Khelafat Majlis",
+      "name": "খেলাফত মজলিস",
+      "nameEn": "Khelafat Majlis",
+      "logo": "party-logos/bd/khelafat-majlis.png",
+      "sha256": "5b41bb8df59a405bae575e92215f7e0353ced593e7da72eba9bccb01f6c0f3ad",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Khelafat_Majlis_Official_Logo.png",
+      "ideology": [
+        "Islamism",
+        "Islamic fundamentalism",
+        "Pan-Islamism",
+        "Caliphatism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1989,
+      "previousNames": [
+        {
+          "name": "Khelafat Majlis (undivided, with Bangladesh Khelafat Majlis)",
+          "years": "1989–2005"
+        }
+      ],
+      "leader": "Abdul Basit Azad",
+      "leaderTitle": "Leader (Emir)",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Khelafat Majlis - search-derived (founded 8 Dec 1989 by Azizul Haque and Ahmad Abdul Qadir; split into Khelafat Majlis (Muhammad Ishaq faction) and Bangladesh Khelafat Majlish in 2005; only ever previously held 1 parliamentary seat)",
+          "url": "https://en.wikipedia.org/wiki/Khelafat_Majlis"
+        },
+        {
+          "title": "13th Jatiya Sangsad - Wikipedia (party-wise seat distribution table: KM 1 seat, leader Abdul Basit Azad lost his own seat)",
+          "url": "https://en.wikipedia.org/wiki/13th_Jatiya_Sangsad"
+        }
+      ]
+    },
+    {
+      "id": "BD-JAGPA",
+      "country": "BD",
+      "shortName": "JaGPa",
+      "name": "জাতীয় গণতান্ত্রিক পার্টি",
+      "nameEn": "Jatiya Ganotantrik Party",
+      "logo": "party-logos/bd/jagpa.png",
+      "sha256": "0efb96188d17907ac3f8097f67227c470645290cea78b94dcaa4b00d4e1f61ca",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Jatiya_Gonotantrik_Party_Election_Symbol.png",
+      "ideology": [
+        "Bangladeshi nationalism",
+        "Conservatism",
+        "Islamic democracy"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1980,
+      "leader": "Tasmia Pradhan",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Jatiya Ganotantrik Party - search-derived (founded 6 April 1980 by Shafiul Alam Pradhan; Tasmia Pradhan, his daughter, is current Chairperson)",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Ganotantrik_Party"
+        },
+        {
+          "title": "13th Jatiya Sangsad - Wikipedia (party-wise seat distribution table: JaGPa 1 seat)",
+          "url": "https://en.wikipedia.org/wiki/13th_Jatiya_Sangsad"
+        }
+      ]
+    },
+    {
+      "id": "BD-IAB",
+      "country": "BD",
+      "shortName": "Islami Andolan",
+      "name": "ইসলামী আন্দোলন বাংলাদেশ",
+      "nameEn": "Islami Andolan Bangladesh",
+      "logo": "party-logos/bd/iab.svg",
+      "sha256": "8836a5245afaefc53bf1ee8398919d73ff12fd8489e7e19a9c0d0389ac3be865",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Symbol_of_Islami_Andolan_Bangladesh.svg",
+      "ideology": [
+        "Islamism",
+        "Reactionary Islamism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1987,
+      "leader": "Syed Rezaul Karim",
+      "leaderTitle": "Ameer",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Islami Andolan Bangladesh - Wikipedia (infobox: founding 13 March 1987, founder Syed Fazlul Karim, ideology, Ameer Syed Rezaul Karim; election symbol a hand fan)",
+          "url": "https://en.wikipedia.org/wiki/Islami_Andolan_Bangladesh"
+        },
+        {
+          "title": "13th Jatiya Sangsad - Wikipedia (party-wise seat distribution table: IAB 1 seat)",
+          "url": "https://en.wikipedia.org/wiki/13th_Jatiya_Sangsad"
         }
       ]
     }
