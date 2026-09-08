@@ -20209,5 +20209,583 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "FJ": [
+    {
+      "id": "FJ-SDL",
+      "country": "FJ",
+      "shortName": "SDL",
+      "name": "Social Democratic Liberal Party",
+      "ideology": ["Social democracy", "Liberalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1979,
+      "leader": "Viliame Naupoto",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 11,
+      "seatsTotal": 55,
+      "chamberName": "Parliament of Fiji",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Social_Democratic_Liberal_Party",
+      "sources": [
+        {
+          "title": "Social Democratic Liberal Party – Wikipedia (founded 1979, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Liberal_Party"
+        },
+        {
+          "title": "2022 Fijian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Fijian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "FJ-FLP",
+      "country": "FJ",
+      "shortName": "FLP",
+      "name": "Fiji Labour Party",
+      "ideology": ["Socialism", "Labour", "Fijian nationalism"],
+      "ideologyPosition": "left",
+      "founded": 1985,
+      "leader": "Mahendra Chaudhry",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 55,
+      "chamberName": "Parliament of Fiji",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Fiji_Labour_Party",
+      "sources": [
+        {
+          "title": "Fiji Labour Party – Wikipedia (founded 1985, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Fiji_Labour_Party"
+        },
+        {
+          "title": "2022 Fijian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Fijian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "FJ-FFP",
+      "country": "FJ",
+      "shortName": "FFP",
+      "name": "Fijian People's Party",
+      "ideology": ["Populism", "Fijian nationalism"],
+      "ideologyPosition": "right",
+      "founded": 2019,
+      "leader": "Naiqama Lalabalavu",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2022–present",
+      "seats": 27,
+      "seatsTotal": 55,
+      "chamberName": "Parliament of Fiji",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Fijian_People%27s_Party",
+      "sources": [
+        {
+          "title": "Fijian People's Party – Wikipedia (founded 2019, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Fijian_People%27s_Party"
+        },
+        {
+          "title": "2022 Fijian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Fijian_general_election"
+        }
+      ]
+    }
+  ],
+  "GA": [
+    {
+      "id": "GA-PDG",
+      "country": "GA",
+      "shortName": "PDG",
+      "name": "Parti Démocratique Gabonais",
+      "nameEn": "Gabonese Democratic Party",
+      "ideology": ["Centre-right", "Gabon nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1968,
+      "leader": "Ali Bongo Ondimba",
+      "leaderTitle": "President / Party Leader",
+      "inPower": true,
+      "timeInPower": "2009–present",
+      "seats": 98,
+      "seatsTotal": 147,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Gabonese_Democratic_Party",
+      "sources": [
+        {
+          "title": "Gabonese Democratic Party – Wikipedia (founded 1968, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Gabonese_Democratic_Party"
+        },
+        {
+          "title": "2023 Gabonese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Gabonese_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "GA-UDSG",
+      "country": "GA",
+      "shortName": "UDSG",
+      "name": "Union Gabonaise – Rassemblement pour le Changement",
+      "nameEn": "Gabonese Union – Rally for Change",
+      "ideology": ["Opposition", "Reform"],
+      "ideologyPosition": "centre-left",
+      "founded": 2011,
+      "leader": "Léon Chambrier",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 147,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Union_Gabonaise_%E2%80%93_Rassemblement_pour_le_Changement",
+      "sources": [
+        {
+          "title": "Union Gabonaise – Rassemblement pour le Changement – Wikipedia (founded 2011, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Union_Gabonaise_%E2%80%93_Rassemblement_pour_le_Changement"
+        },
+        {
+          "title": "2023 Gabonese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Gabonese_legislative_election"
+        }
+      ]
+    }
+  ],
+  "GD": [
+    {
+      "id": "GD-NNP",
+      "country": "GD",
+      "shortName": "NNP",
+      "name": "New National Party",
+      "ideology": ["Centre-right", "Grenada nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1984,
+      "leader": "Dickon Mitchell",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2022–present",
+      "seats": 9,
+      "seatsTotal": 15,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/New_National_Party_(Grenada)",
+      "sources": [
+        {
+          "title": "New National Party (Grenada) – Wikipedia (founded 1984, leadership)",
+          "url": "https://en.wikipedia.org/wiki/New_National_Party_(Grenada)"
+        },
+        {
+          "title": "2022 Grenadian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Grenadian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "GD-NDC",
+      "country": "GD",
+      "shortName": "NDC",
+      "name": "National Democratic Congress",
+      "ideology": ["Social democracy", "Centre-left"],
+      "ideologyPosition": "centre-left",
+      "founded": 1987,
+      "leader": "Nazim Burke",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 15,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_Democratic_Congress_(Grenada)",
+      "sources": [
+        {
+          "title": "National Democratic Congress (Grenada) – Wikipedia (founded 1987, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_Democratic_Congress_(Grenada)"
+        },
+        {
+          "title": "2022 Grenadian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Grenadian_general_election"
+        }
+      ]
+    }
+  ],
+  "GE": [
+    {
+      "id": "GE-GD",
+      "country": "GE",
+      "shortName": "GD",
+      "name": "Georgian Dream",
+      "ideology": ["Conservatism", "Georgian nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2012,
+      "leader": "Irakli Kobakhidze",
+      "leaderTitle": "Prime Minister / Party Leader",
+      "inPower": true,
+      "timeInPower": "2012–2024 (out of power 2024–present due to disputed 2024 election)",
+      "seats": 89,
+      "seatsTotal": 150,
+      "chamberName": "Parliament of Georgia",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Georgian_Dream",
+      "sources": [
+        {
+          "title": "Georgian Dream – Wikipedia (founded 2012, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Georgian_Dream"
+        },
+        {
+          "title": "2024 Georgian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Georgian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "GE-UNM",
+      "country": "GE",
+      "shortName": "UNM",
+      "name": "United National Movement",
+      "ideology": ["Right-wing", "Georgian nationalism", "Pro-NATO"],
+      "ideologyPosition": "right",
+      "founded": 2001,
+      "leader": "Nika Melia",
+      "leaderTitle": "Chair",
+      "inPower": false,
+      "seats": 28,
+      "seatsTotal": 150,
+      "chamberName": "Parliament of Georgia",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/United_National_Movement",
+      "sources": [
+        {
+          "title": "United National Movement – Wikipedia (founded 2001, leadership)",
+          "url": "https://en.wikipedia.org/wiki/United_National_Movement"
+        },
+        {
+          "title": "2024 Georgian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Georgian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "GM": [
+    {
+      "id": "GM-APRC",
+      "country": "GM",
+      "shortName": "APRC",
+      "name": "Alliance for Patriotic Reorientation and Construction",
+      "ideology": ["Authoritarian", "Gambian nationalism"],
+      "ideologyPosition": "other",
+      "founded": 1996,
+      "leader": "Yahya Jammeh",
+      "leaderTitle": "Founder",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 58,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Alliance_for_Patriotic_Reorientation_and_Construction",
+      "sources": [
+        {
+          "title": "Alliance for Patriotic Reorientation and Construction – Wikipedia (founded 1996)",
+          "url": "https://en.wikipedia.org/wiki/Alliance_for_Patriotic_Reorientation_and_Construction"
+        },
+        {
+          "title": "2022 Gambian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Gambian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "GM-UDP",
+      "country": "GM",
+      "shortName": "UDP",
+      "name": "United Democratic Party",
+      "ideology": ["Centre-left", "Democracy"],
+      "ideologyPosition": "centre-left",
+      "founded": 1996,
+      "leader": "Ousainou Darboe",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2017–present",
+      "seats": 28,
+      "seatsTotal": 58,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/United_Democratic_Party_(Gambia)",
+      "sources": [
+        {
+          "title": "United Democratic Party (Gambia) – Wikipedia (founded 1996, leadership)",
+          "url": "https://en.wikipedia.org/wiki/United_Democratic_Party_(Gambia)"
+        },
+        {
+          "title": "2022 Gambian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Gambian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "GN": [
+    {
+      "id": "GN-RPG",
+      "country": "GN",
+      "shortName": "RPG",
+      "name": "Rassemblement du Peuple de Guinée",
+      "nameEn": "Rally of the People of Guinea",
+      "ideology": ["Socialism", "Guinean nationalism"],
+      "ideologyPosition": "left",
+      "founded": 1958,
+      "leader": "Alpha Condé",
+      "leaderTitle": "Founder",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Rassemblement_du_Peuple_de_Guin%C3%A9e",
+      "sources": [
+        {
+          "title": "Rassemblement du Peuple de Guinée – Wikipedia (founded 1958)",
+          "url": "https://en.wikipedia.org/wiki/Rassemblement_du_Peuple_de_Guin%C3%A9e"
+        },
+        {
+          "title": "2020 Guinean general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Guinean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "GN-UFDG",
+      "country": "GN",
+      "shortName": "UFDG",
+      "name": "Union des Forces Démocratiques de Guinée",
+      "nameEn": "Union of Democratic Forces of Guinea",
+      "ideology": ["Centre-left", "Democracy", "Guinean nationalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1992,
+      "leader": "Cellou Dalein Diallo",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Union_of_Democratic_Forces_of_Guinea",
+      "sources": [
+        {
+          "title": "Union of Democratic Forces of Guinea – Wikipedia (founded 1992, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Union_of_Democratic_Forces_of_Guinea"
+        },
+        {
+          "title": "2020 Guinean general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Guinean_general_election"
+        }
+      ]
+    }
+  ],
+  "GQ": [
+    {
+      "id": "GQ-PDGE",
+      "country": "GQ",
+      "shortName": "PDGE",
+      "name": "Partido Democrático de Guinea Ecuatorial",
+      "nameEn": "Democratic Party of Equatorial Guinea",
+      "ideology": ["Authoritarianism", "Equatorial Guinea nationalism"],
+      "ideologyPosition": "other",
+      "founded": 1973,
+      "leader": "Teodoro Nguema Obiang Mangue",
+      "leaderTitle": "Vice President / Party Leader",
+      "inPower": true,
+      "timeInPower": "1979–present",
+      "seats": 99,
+      "seatsTotal": 100,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Party_of_Equatorial_Guinea",
+      "sources": [
+        {
+          "title": "Democratic Party of Equatorial Guinea – Wikipedia (founded 1973)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_of_Equatorial_Guinea"
+        },
+        {
+          "title": "2024 Equatorial Guinean general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Equatorial_Guinean_general_election"
+        }
+      ]
+    }
+  ],
+  "GT": [
+    {
+      "id": "GT-UNE",
+      "country": "GT",
+      "shortName": "UNE",
+      "name": "Unidad Nacional de la Esperanza",
+      "nameEn": "National Unity of Hope",
+      "ideology": ["Social democracy", "Centre-left"],
+      "ideologyPosition": "centre-left",
+      "founded": 2002,
+      "leader": "Sandra Torres",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 31,
+      "seatsTotal": 160,
+      "chamberName": "Congress of the Republic",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_Unity_of_Hope",
+      "sources": [
+        {
+          "title": "National Unity of Hope – Wikipedia (founded 2002, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_Unity_of_Hope"
+        },
+        {
+          "title": "2023 Guatemalan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Guatemalan_general_election"
+        }
+      ]
+    },
+    {
+      "id": "GT-PP",
+      "country": "GT",
+      "shortName": "PP",
+      "name": "Partido Patriota",
+      "nameEn": "Patriotic Party",
+      "ideology": ["Right-wing", "Conservatism"],
+      "ideologyPosition": "right",
+      "founded": 2002,
+      "leader": "Zury Ríos",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2020–present",
+      "seats": 35,
+      "seatsTotal": 160,
+      "chamberName": "Congress of the Republic",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Patriotic_Party_(Guatemala)",
+      "sources": [
+        {
+          "title": "Patriotic Party (Guatemala) – Wikipedia (founded 2002, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Patriotic_Party_(Guatemala)"
+        },
+        {
+          "title": "2023 Guatemalan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Guatemalan_general_election"
+        }
+      ]
+    }
+  ],
+  "GW": [
+    {
+      "id": "GW-PAIGC",
+      "country": "GW",
+      "shortName": "PAIGC",
+      "name": "Partido Africano da Independência da Guiné e Cabo Verde",
+      "nameEn": "African Party for the Independence of Guinea and Cape Verde",
+      "ideology": ["Socialism", "Guinea-Bissau nationalism"],
+      "ideologyPosition": "left",
+      "founded": 1956,
+      "leader": "Domingos Simões Pereira",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 54,
+      "seatsTotal": 102,
+      "chamberName": "National People's Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/African_Party_for_the_Independence_of_Guinea_and_Cape_Verde",
+      "sources": [
+        {
+          "title": "African Party for the Independence of Guinea and Cape Verde – Wikipedia (founded 1956, leadership)",
+          "url": "https://en.wikipedia.org/wiki/African_Party_for_the_Independence_of_Guinea_and_Cape_Verde"
+        },
+        {
+          "title": "2024 Guinea-Bissau legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Guinea-Bissau_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "GW-RGFB",
+      "country": "GW",
+      "shortName": "RGFB",
+      "name": "Resistência Gás de Bijagó",
+      "nameEn": "Resistance of Bijagó",
+      "ideology": ["Right-wing", "Bijagó ethnicity"],
+      "ideologyPosition": "right",
+      "founded": 2015,
+      "leader": "João Gomes Canda",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2023–present",
+      "seats": 29,
+      "seatsTotal": 102,
+      "chamberName": "National People's Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Resistance_of_Bijag%C3%B3",
+      "sources": [
+        {
+          "title": "Resistance of Bijagó – Wikipedia (founded 2015, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Resistance_of_Bijag%C3%B3"
+        },
+        {
+          "title": "2024 Guinea-Bissau legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Guinea-Bissau_legislative_election"
+        }
+      ]
+    }
+  ],
+  "GY": [
+    {
+      "id": "GY-PPP",
+      "country": "GY",
+      "shortName": "PPP",
+      "name": "People's Progressive Party",
+      "ideology": ["Socialism", "Guyana nationalism"],
+      "ideologyPosition": "left",
+      "founded": 1950,
+      "leader": "Bharrat Jagdeo",
+      "leaderTitle": "President / Party Leader",
+      "inPower": true,
+      "timeInPower": "2020–present",
+      "seats": 32,
+      "seatsTotal": 65,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/People%27s_Progressive_Party_(Guyana)",
+      "sources": [
+        {
+          "title": "People's Progressive Party (Guyana) – Wikipedia (founded 1950, leadership)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Progressive_Party_(Guyana)"
+        },
+        {
+          "title": "2020 Guyanese general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Guyanese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "GY-APNU",
+      "country": "GY",
+      "shortName": "APNU",
+      "name": "A Partnership for National Unity",
+      "ideology": ["Centre-right", "Guyana nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2008,
+      "leader": "Aubrey Norton",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 25,
+      "seatsTotal": 65,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/A_Partnership_for_National_Unity",
+      "sources": [
+        {
+          "title": "A Partnership for National Unity – Wikipedia (founded 2008, leadership)",
+          "url": "https://en.wikipedia.org/wiki/A_Partnership_for_National_Unity"
+        },
+        {
+          "title": "2020 Guyanese general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Guyanese_general_election"
+        }
+      ]
+    }
   ]
 };
