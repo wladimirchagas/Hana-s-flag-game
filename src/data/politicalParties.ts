@@ -12489,6 +12489,364 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "FI": [
+    {
+      "id": "FI-NCP",
+      "country": "FI",
+      "shortName": "KOK",
+      "name": "Kansallinen Kokoomus",
+      "nameEn": "National Coalition Party",
+      "ideology": ["Conservatism", "Liberalism", "Pro-European"],
+      "ideologyPosition": "centre-right",
+      "founded": 1918,
+      "leader": "Petteri Orpo",
+      "leaderTitle": "Party Chairman",
+      "inPower": true,
+      "seats": 48,
+      "seatsTotal": 200,
+      "chamberName": "Eduskunta",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "National Coalition Party (Finland) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Coalition_Party_(Finland)"
+        },
+        {
+          "title": "2023 Finnish parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "FI-SDP",
+      "country": "FI",
+      "shortName": "SDP",
+      "name": "Suomen Sosialidemokraattinen Puolue",
+      "nameEn": "Social Democratic Party of Finland",
+      "ideology": ["Social democracy", "Progressivism", "Pro-European"],
+      "ideologyPosition": "centre-left",
+      "founded": 1899,
+      "leader": "Antti Lindtman",
+      "leaderTitle": "Party Chairperson",
+      "inPower": true,
+      "seats": 41,
+      "seatsTotal": 200,
+      "chamberName": "Eduskunta",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Social Democratic Party of Finland – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_of_Finland"
+        },
+        {
+          "title": "2023 Finnish parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "FI-PS",
+      "country": "FI",
+      "shortName": "Ps",
+      "name": "Perussuomalaiset",
+      "nameEn": "Finns Party",
+      "ideology": ["Right-wing populism", "Nationalism", "Euroscepticism"],
+      "ideologyPosition": "far-right",
+      "founded": 2011,
+      "leader": "Riikka Purra",
+      "leaderTitle": "Party Chairwoman",
+      "inPower": false,
+      "seats": 46,
+      "seatsTotal": 200,
+      "chamberName": "Eduskunta",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Finns Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Finns_Party"
+        },
+        {
+          "title": "2023 Finnish parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "HU": [
+    {
+      "id": "HU-FIDESZ",
+      "country": "HU",
+      "shortName": "Fidesz",
+      "name": "Fidesz – Magyar Polgári Союз",
+      "nameEn": "Fidesz – Hungarian Civic Union",
+      "ideology": ["Conservatism", "Christian democracy", "Nationalism"],
+      "ideologyPosition": "right",
+      "founded": 1988,
+      "leader": "Viktor Orbán",
+      "leaderTitle": "Prime Minister & Party Chairman",
+      "inPower": true,
+      "seats": 133,
+      "seatsTotal": 199,
+      "chamberName": "National Assembly",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Fidesz – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fidesz"
+        },
+        {
+          "title": "2022 Hungarian parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Hungarian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "HU-MSZP",
+      "country": "HU",
+      "shortName": "MSZP",
+      "name": "Magyarországi Szocialista Párt",
+      "nameEn": "Hungarian Socialist Party",
+      "ideology": ["Social democracy", "Progressivism", "Pro-European"],
+      "ideologyPosition": "centre-left",
+      "founded": 1989,
+      "leader": "Péter Takács",
+      "leaderTitle": "Party Chairman",
+      "inPower": false,
+      "seats": 26,
+      "seatsTotal": 199,
+      "chamberName": "National Assembly",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Hungarian Socialist Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hungarian_Socialist_Party"
+        },
+        {
+          "title": "2022 Hungarian parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Hungarian_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "IS": [
+    {
+      "id": "IS-IP",
+      "country": "IS",
+      "shortName": "IP",
+      "name": "Sjálfstæðisflokkur",
+      "nameEn": "Independence Party",
+      "ideology": ["Conservatism", "Liberalism", "Pro-European"],
+      "ideologyPosition": "centre-right",
+      "founded": 1929,
+      "leader": "Bjarni Benediktsson",
+      "leaderTitle": "Party Chairman",
+      "inPower": true,
+      "seats": 16,
+      "seatsTotal": 63,
+      "chamberName": "Althingi",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Independence Party (Iceland) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Independence_Party_(Iceland)"
+        },
+        {
+          "title": "2024 Icelandic parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Icelandic_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IS-LG",
+      "country": "IS",
+      "shortName": "LG",
+      "name": "Vinstri grænt framboð",
+      "nameEn": "Left-Green Movement",
+      "ideology": ["Socialism", "Environmentalism", "Left-wing"],
+      "ideologyPosition": "left",
+      "founded": 1999,
+      "leader": "Vilhjálmur Þór Kjartansson",
+      "leaderTitle": "Parliamentary Group Leader",
+      "inPower": true,
+      "seats": 8,
+      "seatsTotal": 63,
+      "chamberName": "Althingi",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Left-Green Movement – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Left-Green_Movement"
+        },
+        {
+          "title": "2024 Icelandic parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Icelandic_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IS-PP",
+      "country": "IS",
+      "shortName": "PP",
+      "name": "Píratar",
+      "nameEn": "Pirate Party",
+      "ideology": ["Liberalism", "Digitalism", "Direct democracy"],
+      "ideologyPosition": "centre",
+      "founded": 2012,
+      "leader": "Reykjávík City Council members",
+      "leaderTitle": "Party Members",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 63,
+      "chamberName": "Althingi",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Pirate Party (Iceland) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pirate_Party_(Iceland)"
+        },
+        {
+          "title": "2024 Icelandic parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Icelandic_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "IE": [
+    {
+      "id": "IE-FF",
+      "country": "IE",
+      "shortName": "FF",
+      "name": "Fianna Fáil",
+      "ideology": ["Centrism", "Irish republicanism", "Pro-European"],
+      "ideologyPosition": "centre",
+      "founded": 1926,
+      "leader": "Micheál Martin",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 47,
+      "seatsTotal": 160,
+      "chamberName": "Dáil Éireann",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Fianna Fáil – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fianna_F%C3%A1il"
+        },
+        {
+          "title": "2024 Irish general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "IE-FG",
+      "country": "IE",
+      "shortName": "FG",
+      "name": "Fine Gael",
+      "ideology": ["Liberalism", "Christian democracy", "Pro-European"],
+      "ideologyPosition": "centre-right",
+      "founded": 1933,
+      "leader": "Leo Varadkar",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 38,
+      "seatsTotal": 160,
+      "chamberName": "Dáil Éireann",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Fine Gael – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fine_Gael"
+        },
+        {
+          "title": "2024 Irish general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "IE-SF",
+      "country": "IE",
+      "shortName": "SF",
+      "name": "Sinn Féin",
+      "ideology": ["Irish republicanism", "Socialism", "Left-wing nationalism"],
+      "ideologyPosition": "left",
+      "founded": 1905,
+      "leader": "Mary Lou McDonald",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 37,
+      "seatsTotal": 160,
+      "chamberName": "Dáil Éireann",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Sinn Féin – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sinn_F%C3%A9in"
+        },
+        {
+          "title": "2024 Irish general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
+        }
+      ]
+    }
+  ],
+  "IL": [
+    {
+      "id": "IL-Likud",
+      "country": "IL",
+      "shortName": "Likud",
+      "name": "הליכוד",
+      "nameEn": "Likud",
+      "ideology": ["Right-wing nationalism", "Conservatism", "Zionism"],
+      "ideologyPosition": "right",
+      "founded": 1973,
+      "leader": "Benjamin Netanyahu",
+      "leaderTitle": "Prime Minister & Party Leader",
+      "inPower": true,
+      "seats": 32,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Likud – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Likud"
+        },
+        {
+          "title": "2024 Israeli legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Israeli_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "IL-Labor",
+      "country": "IL",
+      "shortName": "Labor",
+      "name": "מפלגת העבודה",
+      "nameEn": "Labor Party",
+      "ideology": ["Social democracy", "Progressivism", "Zionism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1968,
+      "leader": "Yair Lapid",
+      "leaderTitle": "Party Chairman",
+      "inPower": false,
+      "seats": 24,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Labor Party (Israel) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Labor_Party_(Israel)"
+        },
+        {
+          "title": "2024 Israeli legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Israeli_legislative_election"
+        }
+      ]
+    }
+  ],
   "EG": [
     {
       "id": "EG-MOSTAQBAL",
@@ -16952,6 +17310,2395 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  FR: [
+    {
+      "id": "FR-LREM",
+      "country": "FR",
+      "shortName": "LREM",
+      "name": "Renaissance",
+      "ideology": [
+        "Centreism",
+        "Liberalism",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2016,
+      "leader": "Gabriel Attal",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 250,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Renaissance_(political_party)",
+      "sources": [
+        {
+          "title": "Renaissance (political party) – Wikipedia (founded 2016, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Renaissance_(political_party)"
+        },
+        {
+          "title": "2022 French legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_French_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "FR-LR",
+      "country": "FR",
+      "shortName": "LR",
+      "name": "Republicans",
+      "ideology": [
+        "Centre-right",
+        "Conservatism",
+        "Gaullism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2015,
+      "leader": "Éric Ciotti",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 61,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/The_Republicans_(France)",
+      "sources": [
+        {
+          "title": "The Republicans (France) – Wikipedia (founded 2015, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/The_Republicans_(France)"
+        },
+        {
+          "title": "2022 French legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_French_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "FR-NFP",
+      "country": "FR",
+      "shortName": "NFP",
+      "name": "New Popular Front",
+      "ideology": [
+        "Left-wing alliance",
+        "Socialism",
+        "Environmentalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 2024,
+      "inPower": false,
+      "seats": 193,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "noImageReason": "Alliance / coalition — no independent party logo",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/New_Popular_Front",
+      "sources": [
+        {
+          "title": "New Popular Front – Wikipedia (coalition, ideology)",
+          "url": "https://en.wikipedia.org/wiki/New_Popular_Front"
+        },
+        {
+          "title": "2024 French legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_French_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "FR-RN",
+      "country": "FR",
+      "shortName": "RN",
+      "name": "National Rally",
+      "ideology": [
+        "Right-wing populism",
+        "National conservatism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1972,
+      "leader": "Marine Le Pen",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 88,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_Rally_(France)",
+      "sources": [
+        {
+          "title": "National Rally (France) – Wikipedia (founded 1972, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_Rally_(France)"
+        },
+        {
+          "title": "2024 French legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_French_legislative_election"
+        }
+      ]
+    }
+  ],
+  DE: [
+    {
+      "id": "DE-CDU-CSU",
+      "country": "DE",
+      "shortName": "CDU/CSU",
+      "name": "Christian Democratic Union / Christian Social Union",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism",
+        "Social market economy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1945,
+      "leader": "Friedrich Merz",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 196,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Christian_Democratic_Union_(Germany)",
+      "sources": [
+        {
+          "title": "Christian Democratic Union (Germany) – Wikipedia (founded 1945, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democratic_Union_(Germany)"
+        },
+        {
+          "title": "2021 German federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_German_federal_election"
+        }
+      ]
+    },
+    {
+      "id": "DE-SPD",
+      "country": "DE",
+      "shortName": "SPD",
+      "name": "Social Democratic Party",
+      "ideology": [
+        "Social democracy",
+        "Progressivism",
+        "Welfare state"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1863,
+      "leader": "Olaf Scholz",
+      "leaderTitle": "Party Leader & Chancellor",
+      "inPower": true,
+      "seats": 214,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Germany)",
+      "sources": [
+        {
+          "title": "Social Democratic Party (Germany) – Wikipedia (founded 1863, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Germany)"
+        },
+        {
+          "title": "2021 German federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_German_federal_election"
+        }
+      ]
+    },
+    {
+      "id": "DE-GREENS",
+      "country": "DE",
+      "shortName": "Greens",
+      "name": "Alliance 90 / The Greens",
+      "ideology": [
+        "Environmentalism",
+        "Green politics",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1993,
+      "leader": "Omid Nouripour",
+      "leaderTitle": "Co-Chair",
+      "inPower": true,
+      "seats": 118,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Alliance_90/The_Greens",
+      "sources": [
+        {
+          "title": "Alliance 90/The Greens – Wikipedia (founded 1993, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Alliance_90/The_Greens"
+        },
+        {
+          "title": "2021 German federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_German_federal_election"
+        }
+      ]
+    },
+    {
+      "id": "DE-FDP",
+      "country": "DE",
+      "shortName": "FDP",
+      "name": "Free Democratic Party",
+      "ideology": [
+        "Classical liberalism",
+        "Economic liberalism",
+        "Centre-right"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1948,
+      "leader": "Christian Lindner",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 92,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Free_Democratic_Party_(Germany)",
+      "sources": [
+        {
+          "title": "Free Democratic Party (Germany) – Wikipedia (founded 1948, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Free_Democratic_Party_(Germany)"
+        },
+        {
+          "title": "2021 German federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_German_federal_election"
+        }
+      ]
+    },
+    {
+      "id": "DE-LEFTPARTY",
+      "country": "DE",
+      "shortName": "Left",
+      "name": "The Left",
+      "ideology": [
+        "Left-wing",
+        "Socialism",
+        "Anti-capitalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 2007,
+      "leader": "Janine Wissler",
+      "leaderTitle": "Co-Chair",
+      "inPower": false,
+      "seats": 39,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/The_Left_(Germany)",
+      "sources": [
+        {
+          "title": "The Left (Germany) – Wikipedia (founded 2007, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/The_Left_(Germany)"
+        },
+        {
+          "title": "2021 German federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_German_federal_election"
+        }
+      ]
+    },
+    {
+      "id": "DE-AFD",
+      "country": "DE",
+      "shortName": "AfD",
+      "name": "Alternative for Germany",
+      "ideology": [
+        "Right-wing populism",
+        "National conservatism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2013,
+      "leader": "Tino Chrupalla",
+      "leaderTitle": "Party Co-Chair",
+      "inPower": false,
+      "seats": 78,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Alternative_for_Germany",
+      "sources": [
+        {
+          "title": "Alternative for Germany – Wikipedia (founded 2013, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Alternative_for_Germany"
+        },
+        {
+          "title": "2021 German federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_German_federal_election"
+        }
+      ]
+    }
+  ],
+  GR: [
+    {
+      "id": "GR-ND",
+      "country": "GR",
+      "shortName": "ND",
+      "name": "New Democracy",
+      "ideology": [
+        "Conservatism",
+        "Right-wing liberalism",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1974,
+      "leader": "Kyriakos Mitsotakis",
+      "leaderTitle": "Party Leader & Prime Minister",
+      "inPower": true,
+      "seats": 158,
+      "seatsTotal": 300,
+      "chamberName": "Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/New_Democracy_(Greece)",
+      "sources": [
+        {
+          "title": "New Democracy (Greece) – Wikipedia (founded 1974, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/New_Democracy_(Greece)"
+        },
+        {
+          "title": "2023 Greek legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Greek_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "GR-SYRIZA",
+      "country": "GR",
+      "shortName": "SYRIZA",
+      "name": "SYRIZA",
+      "ideology": [
+        "Left-wing",
+        "Anti-austerity",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 2004,
+      "leader": "Alexis Tsipras",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 71,
+      "seatsTotal": 300,
+      "chamberName": "Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Syriza",
+      "sources": [
+        {
+          "title": "Syriza – Wikipedia (founded 2004, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Syriza"
+        },
+        {
+          "title": "2023 Greek legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Greek_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "GR-PASOK",
+      "country": "GR",
+      "shortName": "PASOK",
+      "name": "Panhellenic Socialist Movement",
+      "ideology": [
+        "Social democracy",
+        "Progressivism",
+        "Centre-left"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1974,
+      "leader": "Nikos Androulakis",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 31,
+      "seatsTotal": 300,
+      "chamberName": "Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Panhellenic_Socialist_Movement",
+      "sources": [
+        {
+          "title": "Panhellenic Socialist Movement – Wikipedia (founded 1974, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Panhellenic_Socialist_Movement"
+        },
+        {
+          "title": "2023 Greek legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Greek_legislative_election"
+        }
+      ]
+    }
+  ],
+  HU: [
+    {
+      "id": "HU-FIDESZ",
+      "country": "HU",
+      "shortName": "Fidesz",
+      "name": "Fidesz",
+      "ideology": [
+        "Christian conservatism",
+        "Right-wing populism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1988,
+      "leader": "Viktor Orbán",
+      "leaderTitle": "Party Leader & Prime Minister",
+      "inPower": true,
+      "seats": 188,
+      "seatsTotal": 199,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Fidesz",
+      "sources": [
+        {
+          "title": "Fidesz – Wikipedia (founded 1988, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Fidesz"
+        },
+        {
+          "title": "2022 Hungarian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Hungarian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "HU-MSZP",
+      "country": "HU",
+      "shortName": "MSZP",
+      "name": "Hungarian Socialist Party",
+      "ideology": [
+        "Social democracy",
+        "Centre-left",
+        "Anti-Orbán"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1989,
+      "leader": "Péter Molnár",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 199,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Hungarian_Socialist_Party",
+      "sources": [
+        {
+          "title": "Hungarian Socialist Party – Wikipedia (founded 1989, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Hungarian_Socialist_Party"
+        },
+        {
+          "title": "2022 Hungarian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Hungarian_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  IS: [
+    {
+      "id": "IS-IP",
+      "country": "IS",
+      "shortName": "IP",
+      "name": "Independence Party",
+      "ideology": [
+        "Conservatism",
+        "Right-wing liberalism",
+        "Pro-Iceland independence"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1874,
+      "leader": "Bjarni Benediktsson",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 16,
+      "seatsTotal": 63,
+      "chamberName": "Althing",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Independence_Party_(Iceland)",
+      "sources": [
+        {
+          "title": "Independence Party (Iceland) – Wikipedia (founded 1874, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Independence_Party_(Iceland)"
+        },
+        {
+          "title": "2023 Icelandic parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Icelandic_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IS-LG",
+      "country": "IS",
+      "shortName": "LG",
+      "name": "Left-Green Movement",
+      "ideology": [
+        "Left-wing",
+        "Environmentalism",
+        "Anti-neoliberalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 1999,
+      "leader": "Svandís Svavarsdóttir",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 8,
+      "seatsTotal": 63,
+      "chamberName": "Althing",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Left-Green_Movement",
+      "sources": [
+        {
+          "title": "Left-Green Movement – Wikipedia (founded 1999, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Left-Green_Movement"
+        },
+        {
+          "title": "2023 Icelandic parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Icelandic_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IS-PP",
+      "country": "IS",
+      "shortName": "PP",
+      "name": "Pirate Party",
+      "ideology": [
+        "Pirate politics",
+        "Direct democracy",
+        "Anti-establishment"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2012,
+      "leader": "Reykjavík municipal delegation",
+      "leaderTitle": "Party Delegates",
+      "inPower": true,
+      "seats": 8,
+      "seatsTotal": 63,
+      "chamberName": "Althing",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Pirate_Party_(Iceland)",
+      "sources": [
+        {
+          "title": "Pirate Party (Iceland) – Wikipedia (founded 2012, ideology)",
+          "url": "https://en.wikipedia.org/wiki/Pirate_Party_(Iceland)"
+        },
+        {
+          "title": "2023 Icelandic parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Icelandic_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  IE: [
+    {
+      "id": "IE-FF",
+      "country": "IE",
+      "shortName": "FF",
+      "name": "Fianna Fáil",
+      "ideology": [
+        "Centreism",
+        "Populism",
+        "Irish nationalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1926,
+      "leader": "Micheál Martin",
+      "leaderTitle": "Party Leader & Taoiseach",
+      "inPower": true,
+      "seats": 48,
+      "seatsTotal": 160,
+      "chamberName": "Dáil Éireann",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Fianna_Fáil",
+      "sources": [
+        {
+          "title": "Fianna Fáil – Wikipedia (founded 1926, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Fianna_F%C3%A1il"
+        },
+        {
+          "title": "2024 Irish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "IE-FG",
+      "country": "IE",
+      "shortName": "FG",
+      "name": "Fine Gael",
+      "ideology": [
+        "Centre-right",
+        "Conservatism",
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1933,
+      "leader": "Simon Harris",
+      "leaderTitle": "Party Leader & Taoiseach",
+      "inPower": true,
+      "seats": 38,
+      "seatsTotal": 160,
+      "chamberName": "Dáil Éireann",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Fine_Gael",
+      "sources": [
+        {
+          "title": "Fine Gael – Wikipedia (founded 1933, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Fine_Gael"
+        },
+        {
+          "title": "2024 Irish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "IE-SF",
+      "country": "IE",
+      "shortName": "SF",
+      "name": "Sinn Féin",
+      "ideology": [
+        "Left-wing",
+        "Irish republicanism",
+        "Anti-establishment"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 1905,
+      "leader": "Mary Lou McDonald",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 37,
+      "seatsTotal": 160,
+      "chamberName": "Dáil Éireann",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Sinn_Féin",
+      "sources": [
+        {
+          "title": "Sinn Féin – Wikipedia (founded 1905, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Sinn_F%C3%A9in"
+        },
+        {
+          "title": "2024 Irish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
+        }
+      ]
+    }
+  ],
+  IL: [
+    {
+      "id": "IL-LIKUD",
+      "country": "IL",
+      "shortName": "Likud",
+      "name": "Likud",
+      "ideology": [
+        "Right-wing",
+        "Zionism",
+        "Jewish nationalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right",
+      "founded": 1973,
+      "leader": "Benjamin Netanyahu",
+      "leaderTitle": "Party Leader & Prime Minister",
+      "inPower": true,
+      "seats": 32,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Likud",
+      "sources": [
+        {
+          "title": "Likud – Wikipedia (founded 1973, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Likud"
+        },
+        {
+          "title": "2022 Israeli legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Israeli_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "IL-LABOR",
+      "country": "IL",
+      "shortName": "Labor",
+      "name": "Labor Party",
+      "ideology": [
+        "Social democracy",
+        "Zionism",
+        "Centre-left"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1968,
+      "leader": "Yair Golan",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Labor_Party_(Israel)",
+      "sources": [
+        {
+          "title": "Labor Party (Israel) – Wikipedia (founded 1968, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Labor_Party_(Israel)"
+        },
+        {
+          "title": "2022 Israeli legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Israeli_legislative_election"
+        }
+      ]
+    }
+  ],
+  IT: [
+    {
+      "id": "IT-FDI",
+      "country": "IT",
+      "shortName": "FDI",
+      "name": "Brothers of Italy",
+      "ideology": [
+        "Right-wing populism",
+        "National conservatism",
+        "Anti-immigration"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2012,
+      "leader": "Giorgia Meloni",
+      "leaderTitle": "Party Leader & Prime Minister",
+      "inPower": true,
+      "seats": 115,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Brothers_of_Italy",
+      "sources": [
+        {
+          "title": "Brothers of Italy – Wikipedia (founded 2012, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Brothers_of_Italy"
+        },
+        {
+          "title": "2022 Italian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Italian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "IT-LEGA",
+      "country": "IT",
+      "shortName": "Lega",
+      "name": "Lega",
+      "ideology": [
+        "Right-wing populism",
+        "Anti-immigration",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right",
+      "founded": 1991,
+      "leader": "Matteo Salvini",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 28,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Lega_Nord",
+      "sources": [
+        {
+          "title": "Lega Nord – Wikipedia (founded 1991, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Lega_Nord"
+        },
+        {
+          "title": "2022 Italian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Italian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "IT-FORZA",
+      "country": "IT",
+      "shortName": "Forza Italia",
+      "name": "Forza Italia",
+      "ideology": [
+        "Centre-right",
+        "Conservatism",
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1994,
+      "leader": "Silvio Berlusconi",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 59,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Forza_Italia",
+      "sources": [
+        {
+          "title": "Forza Italia – Wikipedia (founded 1994, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Forza_Italia"
+        },
+        {
+          "title": "2022 Italian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Italian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "IT-PD",
+      "country": "IT",
+      "shortName": "PD",
+      "name": "Democratic Party",
+      "ideology": [
+        "Centre-left",
+        "Social democracy",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2007,
+      "leader": "Elly Schlein",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 69,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Party_(Italy)",
+      "sources": [
+        {
+          "title": "Democratic Party (Italy) – Wikipedia (founded 2007, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Italy)"
+        },
+        {
+          "title": "2022 Italian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Italian_general_election"
+        }
+      ]
+    }
+  ],
+  NL: [
+    {
+      "id": "NL-VVD",
+      "country": "NL",
+      "shortName": "VVD",
+      "name": "People's Party for Freedom and Democracy",
+      "ideology": [
+        "Liberalism",
+        "Economic liberalism",
+        "Centre-right"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1948,
+      "leader": "Dilan Yesilgöz",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 35,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/People%27s_Party_for_Freedom_and_Democracy",
+      "sources": [
+        {
+          "title": "People's Party for Freedom and Democracy – Wikipedia (founded 1948, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Party_for_Freedom_and_Democracy"
+        },
+        {
+          "title": "2023 Dutch general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-PVV",
+      "country": "NL",
+      "shortName": "PVV",
+      "name": "Party for Freedom",
+      "ideology": [
+        "Right-wing populism",
+        "Anti-immigration",
+        "Nationalism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2006,
+      "leader": "Geert Wilders",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 37,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Party_for_Freedom",
+      "sources": [
+        {
+          "title": "Party for Freedom – Wikipedia (founded 2006, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+        },
+        {
+          "title": "2023 Dutch general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-NSC",
+      "country": "NL",
+      "shortName": "NSC",
+      "name": "New Social Contract",
+      "ideology": [
+        "Centreism",
+        "Social liberalism",
+        "Middle-class focus"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2021,
+      "leader": "Pieter Omtzigt",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 29,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/New_Social_Contract",
+      "sources": [
+        {
+          "title": "New Social Contract – Wikipedia (founded 2021, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/New_Social_Contract"
+        },
+        {
+          "title": "2023 Dutch general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Dutch_general_election"
+        }
+      ]
+    },
+    {
+      "id": "NL-D66",
+      "country": "NL",
+      "shortName": "D66",
+      "name": "Democrats 66",
+      "ideology": [
+        "Social liberalism",
+        "Progressivism",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1966,
+      "leader": "Rob Jetten",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 13,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democrats_66",
+      "sources": [
+        {
+          "title": "Democrats 66 – Wikipedia (founded 1966, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democrats_66"
+        },
+        {
+          "title": "2023 Dutch general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Dutch_general_election"
+        }
+      ]
+    }
+  ],
+  PL: [
+    {
+      "id": "PL-PIS",
+      "country": "PL",
+      "shortName": "PiS",
+      "name": "Law and Justice",
+      "ideology": [
+        "Right-wing conservatism",
+        "National conservatism",
+        "Catholic values"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2001,
+      "leader": "Jarosław Kaczyński",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 194,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Law_and_Justice",
+      "sources": [
+        {
+          "title": "Law and Justice – Wikipedia (founded 2001, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Law_and_Justice"
+        },
+        {
+          "title": "2023 Polish parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Polish_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "PL-PO",
+      "country": "PL",
+      "shortName": "PO",
+      "name": "Civic Platform",
+      "ideology": [
+        "Liberalism",
+        "Centre-right",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2001,
+      "leader": "Donald Tusk",
+      "leaderTitle": "Party Leader & Prime Minister",
+      "inPower": true,
+      "seats": 147,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Civic_Platform",
+      "sources": [
+        {
+          "title": "Civic Platform – Wikipedia (founded 2001, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Civic_Platform"
+        },
+        {
+          "title": "2023 Polish parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Polish_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "PL-PSL",
+      "country": "PL",
+      "shortName": "PSL",
+      "name": "Polish People's Party",
+      "ideology": [
+        "Agrarianism",
+        "Centre",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1990,
+      "leader": "Władysław Kosiniak-Kamysz",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 30,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Polish_People%27s_Party",
+      "sources": [
+        {
+          "title": "Polish People's Party – Wikipedia (founded 1990, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Polish_People%27s_Party"
+        },
+        {
+          "title": "2023 Polish parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Polish_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  PT: [
+    {
+      "id": "PT-PS",
+      "country": "PT",
+      "shortName": "PS",
+      "name": "Socialist Party",
+      "ideology": [
+        "Social democracy",
+        "Progressivism",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1973,
+      "leader": "Pedro Nuno Santos",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 120,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Socialist_Party_(Portugal)",
+      "sources": [
+        {
+          "title": "Socialist Party (Portugal) – Wikipedia (founded 1973, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_(Portugal)"
+        },
+        {
+          "title": "2024 Portuguese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "PT-AD",
+      "country": "PT",
+      "shortName": "AD",
+      "name": "Democratic Alliance",
+      "ideology": [
+        "Centre-right",
+        "Conservatism",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2020,
+      "leader": "Luis Montenegro",
+      "leaderTitle": "Party Leader & Prime Minister",
+      "inPower": true,
+      "seats": 80,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Alliance_(Portugal)",
+      "sources": [
+        {
+          "title": "Democratic Alliance (Portugal) – Wikipedia (founded 2020, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Alliance_(Portugal)"
+        },
+        {
+          "title": "2024 Portuguese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "PT-BE",
+      "country": "PT",
+      "shortName": "BE",
+      "name": "Bloco de Esquerda",
+      "ideology": [
+        "Left-wing",
+        "Socialism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 1997,
+      "leader": "Mariana Mortágua",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Bloco_de_Esquerda",
+      "sources": [
+        {
+          "title": "Bloco de Esquerda – Wikipedia (founded 1997, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Bloco_de_Esquerda"
+        },
+        {
+          "title": "2024 Portuguese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+        }
+      ]
+    }
+  ],
+  ES: [
+    {
+      "id": "ES-PP",
+      "country": "ES",
+      "shortName": "PP",
+      "name": "People's Party",
+      "ideology": [
+        "Conservatism",
+        "Centre-right",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1976,
+      "leader": "Alberto Núñez Feijóo",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 137,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/People%27s_Party_(Spain)",
+      "sources": [
+        {
+          "title": "People's Party (Spain) – Wikipedia (founded 1976, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Party_(Spain)"
+        },
+        {
+          "title": "2023 Spanish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Spanish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "ES-PSOE",
+      "country": "ES",
+      "shortName": "PSOE",
+      "name": "Spanish Socialist Workers' Party",
+      "ideology": [
+        "Social democracy",
+        "Progressivism",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1879,
+      "leader": "Pedro Sánchez",
+      "leaderTitle": "Party Leader & Prime Minister",
+      "inPower": true,
+      "seats": 121,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Spanish_Socialist_Workers%27_Party",
+      "sources": [
+        {
+          "title": "Spanish Socialist Workers' Party – Wikipedia (founded 1879, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Spanish_Socialist_Workers%27_Party"
+        },
+        {
+          "title": "2023 Spanish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Spanish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "ES-VOX",
+      "country": "ES",
+      "shortName": "Vox",
+      "name": "Vox",
+      "ideology": [
+        "Right-wing populism",
+        "National conservatism",
+        "Anti-immigration"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2013,
+      "leader": "Santiago Abascal",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 33,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Vox_(political_party)",
+      "sources": [
+        {
+          "title": "Vox (political party) – Wikipedia (founded 2013, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Vox_(political_party)"
+        },
+        {
+          "title": "2023 Spanish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Spanish_general_election"
+        }
+      ]
+    }
+  ],
+  SE: [
+    {
+      "id": "SE-S",
+      "country": "SE",
+      "shortName": "S",
+      "name": "Social Democrats",
+      "ideology": [
+        "Social democracy",
+        "Progressivism",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1889,
+      "leader": "Magdalena Andersson",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 113,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Swedish_Social_Democratic_Party",
+      "sources": [
+        {
+          "title": "Swedish Social Democratic Party – Wikipedia (founded 1889, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Swedish_Social_Democratic_Party"
+        },
+        {
+          "title": "2022 Swedish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Swedish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "SE-M",
+      "country": "SE",
+      "shortName": "M",
+      "name": "Moderate Party",
+      "ideology": [
+        "Conservatism",
+        "Centre-right",
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1904,
+      "leader": "Ulf Kristersson",
+      "leaderTitle": "Party Leader & Prime Minister",
+      "inPower": true,
+      "seats": 68,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Moderate_Party_(Sweden)",
+      "sources": [
+        {
+          "title": "Moderate Party (Sweden) – Wikipedia (founded 1904, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Moderate_Party_(Sweden)"
+        },
+        {
+          "title": "2022 Swedish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Swedish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "SE-SD",
+      "country": "SE",
+      "shortName": "SD",
+      "name": "Sweden Democrats",
+      "ideology": [
+        "Right-wing populism",
+        "National conservatism",
+        "Anti-immigration"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1988,
+      "leader": "Jimmie Åkesson",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 73,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Sweden_Democrats",
+      "sources": [
+        {
+          "title": "Sweden Democrats – Wikipedia (founded 1988, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Sweden_Democrats"
+        },
+        {
+          "title": "2022 Swedish general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Swedish_general_election"
+        }
+      ]
+    }
+  ],
+  CH: [
+    {
+      "id": "CH-SVP",
+      "country": "CH",
+      "shortName": "SVP",
+      "name": "Swiss People's Party",
+      "ideology": [
+        "Right-wing conservatism",
+        "National conservatism",
+        "Anti-immigration"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right",
+      "founded": 1971,
+      "leader": "Marco Chiesa",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 62,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Swiss_People%27s_Party",
+      "sources": [
+        {
+          "title": "Swiss People's Party – Wikipedia (founded 1971, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Swiss_People%27s_Party"
+        },
+        {
+          "title": "2023 Swiss federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+        }
+      ]
+    },
+    {
+      "id": "CH-SP",
+      "country": "CH",
+      "shortName": "SP",
+      "name": "Social Democratic Party",
+      "ideology": [
+        "Social democracy",
+        "Progressivism",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1863,
+      "leader": "Karin Keller-Sütter",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 43,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Switzerland)",
+      "sources": [
+        {
+          "title": "Social Democratic Party (Switzerland) – Wikipedia (founded 1863, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Switzerland)"
+        },
+        {
+          "title": "2023 Swiss federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+        }
+      ]
+    },
+    {
+      "id": "CH-FDP",
+      "country": "CH",
+      "shortName": "FDP",
+      "name": "Free Democratic Party",
+      "ideology": [
+        "Liberalism",
+        "Classical liberalism",
+        "Centre-right"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1919,
+      "leader": "Beatrice Kappeler",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 29,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Free_Democratic_Party_(Switzerland)",
+      "sources": [
+        {
+          "title": "Free Democratic Party (Switzerland) – Wikipedia (founded 1919, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Free_Democratic_Party_(Switzerland)"
+        },
+        {
+          "title": "2023 Swiss federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+        }
+      ]
+    }
+  ],
+  GB: [
+    {
+      "id": "GB-CON",
+      "country": "GB",
+      "shortName": "Con",
+      "name": "Conservative Party",
+      "ideology": [
+        "Conservatism",
+        "Right-wing liberalism",
+        "Pro-monarchy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1834,
+      "leader": "Rishi Sunak",
+      "leaderTitle": "Party Leader & Prime Minister",
+      "inPower": true,
+      "seats": 258,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Conservative_Party_(UK)",
+      "sources": [
+        {
+          "title": "Conservative Party (UK) – Wikipedia (founded 1834, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Conservative_Party_(UK)"
+        },
+        {
+          "title": "2019 United Kingdom general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2019_United_Kingdom_general_election"
+        }
+      ]
+    },
+    {
+      "id": "GB-LAB",
+      "country": "GB",
+      "shortName": "Lab",
+      "name": "Labour Party",
+      "ideology": [
+        "Social democracy",
+        "Centre-left",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1900,
+      "leader": "Keir Starmer",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 202,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Labour_Party_(UK)",
+      "sources": [
+        {
+          "title": "Labour Party (UK) – Wikipedia (founded 1900, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Labour_Party_(UK)"
+        },
+        {
+          "title": "2019 United Kingdom general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2019_United_Kingdom_general_election"
+        }
+      ]
+    },
+    {
+      "id": "GB-LD",
+      "country": "GB",
+      "shortName": "LD",
+      "name": "Liberal Democrats",
+      "ideology": [
+        "Social liberalism",
+        "Centre",
+        "Pro-EU"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1988,
+      "leader": "Ed Davey",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 72,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Liberal_Democrats",
+      "sources": [
+        {
+          "title": "Liberal Democrats – Wikipedia (founded 1988, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Democrats"
+        },
+        {
+          "title": "2019 United Kingdom general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2019_United_Kingdom_general_election"
+        }
+      ]
+    }
+  ],
+  US: [
+    {
+      "id": "US-DEM",
+      "country": "US",
+      "shortName": "Dem",
+      "name": "Democratic Party",
+      "ideology": [
+        "Social liberalism",
+        "Progressivism",
+        "Centre-left"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1828,
+      "leader": "Joe Biden",
+      "leaderTitle": "Party Leader & President",
+      "inPower": true,
+      "seats": 223,
+      "seatsTotal": 435,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Party_(United_States)",
+      "sources": [
+        {
+          "title": "Democratic Party (United States) – Wikipedia (founded 1828, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(United_States)"
+        },
+        {
+          "title": "2022 United States House of Representatives elections – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections"
+        }
+      ]
+    },
+    {
+      "id": "US-REP",
+      "country": "US",
+      "shortName": "Rep",
+      "name": "Republican Party",
+      "ideology": [
+        "Conservatism",
+        "Right-wing populism",
+        "Centre-right to far-right"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right",
+      "founded": 1854,
+      "leader": "Donald Trump",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 222,
+      "seatsTotal": 435,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Republican_Party_(United_States)",
+      "sources": [
+        {
+          "title": "Republican Party (United States) – Wikipedia (founded 1854, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Republican_Party_(United_States)"
+        },
+        {
+          "title": "2022 United States House of Representatives elections – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections"
+        }
+      ]
+    }
+  ],
+  CA: [
+    {
+      "id": "CA-LIB",
+      "country": "CA",
+      "shortName": "Lib",
+      "name": "Liberal Party",
+      "ideology": [
+        "Social liberalism",
+        "Centre",
+        "Pro-multiculturalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1867,
+      "leader": "Justin Trudeau",
+      "leaderTitle": "Party Leader & Prime Minister",
+      "inPower": true,
+      "seats": 160,
+      "seatsTotal": 338,
+      "chamberName": "House of Commons",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Liberal_Party_of_Canada",
+      "sources": [
+        {
+          "title": "Liberal Party of Canada – Wikipedia (founded 1867, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Party_of_Canada"
+        },
+        {
+          "title": "2021 Canadian federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Canadian_federal_election"
+        }
+      ]
+    },
+    {
+      "id": "CA-CPC",
+      "country": "CA",
+      "shortName": "CPC",
+      "name": "Conservative Party of Canada",
+      "ideology": [
+        "Conservatism",
+        "Right-wing liberalism",
+        "Centre-right"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2003,
+      "leader": "Pierre Poilievre",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 119,
+      "seatsTotal": 338,
+      "chamberName": "House of Commons",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Conservative_Party_of_Canada",
+      "sources": [
+        {
+          "title": "Conservative Party of Canada – Wikipedia (founded 2003, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Conservative_Party_of_Canada"
+        },
+        {
+          "title": "2021 Canadian federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Canadian_federal_election"
+        }
+      ]
+    },
+    {
+      "id": "CA-NDP",
+      "country": "CA",
+      "shortName": "NDP",
+      "name": "New Democratic Party",
+      "ideology": [
+        "Social democracy",
+        "Progressivism",
+        "Left-wing"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 1961,
+      "leader": "Jagmeet Singh",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 25,
+      "seatsTotal": 338,
+      "chamberName": "House of Commons",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/New_Democratic_Party",
+      "sources": [
+        {
+          "title": "New Democratic Party – Wikipedia (founded 1961, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/New_Democratic_Party"
+        },
+        {
+          "title": "2021 Canadian federal election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Canadian_federal_election"
+        }
+      ]
+    }
+  ],
+  MX: [
+    {
+      "id": "MX-MORENA",
+      "country": "MX",
+      "shortName": "MORENA",
+      "name": "Morena",
+      "ideology": [
+        "Left-wing populism",
+        "Anti-corruption",
+        "Social justice"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 2014,
+      "leader": "Mario Delgado",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 288,
+      "seatsTotal": 500,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Morena_(political_party)",
+      "sources": [
+        {
+          "title": "Morena (political party) – Wikipedia (founded 2014, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Morena_(political_party)"
+        },
+        {
+          "title": "2021 Mexican general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Mexican_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MX-PAN",
+      "country": "MX",
+      "shortName": "PAN",
+      "name": "National Action Party",
+      "ideology": [
+        "Centre-right",
+        "Conservatism",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1939,
+      "leader": "Marko Cortés",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 72,
+      "seatsTotal": 500,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_Action_Party_(Mexico)",
+      "sources": [
+        {
+          "title": "National Action Party (Mexico) – Wikipedia (founded 1939, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_Action_Party_(Mexico)"
+        },
+        {
+          "title": "2021 Mexican general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Mexican_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MX-PRI",
+      "country": "MX",
+      "shortName": "PRI",
+      "name": "Institutional Revolutionary Party",
+      "ideology": [
+        "Centre",
+        "Populism",
+        "Mixed economy"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1929,
+      "leader": "Alejandro Moreno",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 59,
+      "seatsTotal": 500,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Institutional_Revolutionary_Party",
+      "sources": [
+        {
+          "title": "Institutional Revolutionary Party – Wikipedia (founded 1929, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Institutional_Revolutionary_Party"
+        },
+        {
+          "title": "2021 Mexican general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Mexican_general_election"
+        }
+      ]
+    }
+  ],
+  "AF": [
+    {
+      "id": "AF-IEA",
+      "country": "AF",
+      "shortName": "IEA",
+      "name": "Islamic Emirate of Afghanistan",
+      "ideology": ["Islamic fundamentalism", "Authoritarianism"],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2021,
+      "leader": "Hibatullah Akhundzada",
+      "leaderTitle": "Supreme Leader",
+      "inPower": true,
+      "seats": 0,
+      "seatsTotal": 0,
+      "chamberName": "Islamic Emirate (appointed leadership)",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Islamic_Emirate_of_Afghanistan",
+      "sources": [
+        {
+          "title": "Islamic Emirate of Afghanistan – Wikipedia (established 2021, Taliban re-took power)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Emirate_of_Afghanistan"
+        },
+        {
+          "title": "Taliban – Wikipedia (leadership, ideology, Islamic fundamentalism)",
+          "url": "https://en.wikipedia.org/wiki/Taliban"
+        }
+      ]
+    }
+  ],
+  "AG": [
+    {
+      "id": "AG-ALP",
+      "country": "AG",
+      "shortName": "ALP",
+      "name": "Antigua and Barbuda Labour Party",
+      "ideology": ["Social democracy", "Centre-left"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1946,
+      "leader": "Gaston Browne",
+      "leaderTitle": "Political Leader",
+      "inPower": true,
+      "timeInPower": "2014–present",
+      "seats": 15,
+      "seatsTotal": 17,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda_Labour_Party",
+      "sources": [
+        {
+          "title": "Antigua and Barbuda Labour Party – Wikipedia (founded 1946, ideology, leader)",
+          "url": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda_Labour_Party"
+        },
+        {
+          "title": "2023 Antiguan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Antiguan_general_election"
+        }
+      ]
+    },
+    {
+      "id": "AG-UPP",
+      "country": "AG",
+      "shortName": "UPP",
+      "name": "United Progressive Party",
+      "ideology": ["Centrism", "National conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1992,
+      "leader": "Harold Lovindeer",
+      "leaderTitle": "Political Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 17,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/United_Progressive_Party_(Antigua_and_Barbuda)",
+      "sources": [
+        {
+          "title": "United Progressive Party (Antigua and Barbuda) – Wikipedia (founded 1992, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/United_Progressive_Party_(Antigua_and_Barbuda)"
+        },
+        {
+          "title": "2023 Antiguan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Antiguan_general_election"
+        }
+      ]
+    }
+  ],
+  "AL": [
+    {
+      "id": "AL-SPI",
+      "country": "AL",
+      "shortName": "SPI",
+      "name": "Socialists Party of Albania",
+      "ideology": ["Democratic socialism", "Centre-left"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1991,
+      "leader": "Edi Rama",
+      "leaderTitle": "Party Chairman",
+      "inPower": true,
+      "timeInPower": "2013–present",
+      "seats": 74,
+      "seatsTotal": 140,
+      "chamberName": "Assembly of Albania",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Socialist_Party_of_Albania",
+      "sources": [
+        {
+          "title": "Socialist Party of Albania – Wikipedia (founded 1991, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_of_Albania"
+        },
+        {
+          "title": "2021 Albanian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Albanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "AL-DPA",
+      "country": "AL",
+      "shortName": "DPA",
+      "name": "Democratic Party of Albania",
+      "ideology": ["Liberal conservatism", "Centre-right"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1992,
+      "leader": "Sali Berisha",
+      "leaderTitle": "Party Chairman",
+      "inPower": false,
+      "seats": 59,
+      "seatsTotal": 140,
+      "chamberName": "Assembly of Albania",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Party_of_Albania",
+      "sources": [
+        {
+          "title": "Democratic Party of Albania – Wikipedia (founded 1992, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_of_Albania"
+        },
+        {
+          "title": "2021 Albanian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Albanian_general_election"
+        }
+      ]
+    }
+  ],
+  "AO": [
+    {
+      "id": "AO-MPLA",
+      "country": "AO",
+      "shortName": "MPLA",
+      "name": "Popular Movement for the Liberation of Angola",
+      "nameEn": "MPLA",
+      "ideology": ["Marxism–Leninism", "Socialism", "Left-wing"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1956,
+      "leader": "João Lourenço",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "timeInPower": "1975–present",
+      "seats": 124,
+      "seatsTotal": 220,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Popular_Movement_for_the_Liberation_of_Angola",
+      "sources": [
+        {
+          "title": "Popular Movement for the Liberation of Angola – Wikipedia (founded 1956, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Popular_Movement_for_the_Liberation_of_Angola"
+        },
+        {
+          "title": "2023 Angolan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Angolan_general_election"
+        }
+      ]
+    },
+    {
+      "id": "AO-UNITA",
+      "country": "AO",
+      "shortName": "UNITA",
+      "name": "National Union for the Total Independence of Angola",
+      "nameEn": "UNITA",
+      "ideology": ["Anti-communism", "Right-wing", "Conservatism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1966,
+      "leader": "João Lourenço",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 90,
+      "seatsTotal": 220,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_Union_for_the_Total_Independence_of_Angola",
+      "sources": [
+        {
+          "title": "National Union for the Total Independence of Angola – Wikipedia (founded 1966, ideology)",
+          "url": "https://en.wikipedia.org/wiki/National_Union_for_the_Total_Independence_of_Angola"
+        },
+        {
+          "title": "2023 Angolan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Angolan_general_election"
+        }
+      ]
+    }
+  ],
+  "AZ": [
+    {
+      "id": "AZ-YAP",
+      "country": "AZ",
+      "shortName": "YAP",
+      "name": "New Azerbaijan Party",
+      "ideology": ["National conservatism", "Authoritarianism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1993,
+      "leader": "Ilham Aliyev",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "1993–present",
+      "seats": 69,
+      "seatsTotal": 125,
+      "chamberName": "Milli Majlis",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/New_Azerbaijan_Party",
+      "sources": [
+        {
+          "title": "New Azerbaijan Party – Wikipedia (founded 1993, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/New_Azerbaijan_Party"
+        },
+        {
+          "title": "2020 Azerbaijani parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Azerbaijani_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "AZ-AXCP",
+      "country": "AZ",
+      "shortName": "AXCP",
+      "name": "Azerbaijan Popular Front Party",
+      "ideology": ["Nationalism", "Centre-right"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1989,
+      "leader": "Ali Karimli",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 125,
+      "chamberName": "Milli Majlis",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Azerbaijan_Popular_Front_Party",
+      "sources": [
+        {
+          "title": "Azerbaijan Popular Front Party – Wikipedia (founded 1989, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Azerbaijan_Popular_Front_Party"
+        }
+      ]
+    }
+  ],
+  "BA": [
+    {
+      "id": "BA-SDS",
+      "country": "BA",
+      "shortName": "SDS",
+      "name": "Serb Democratic Party",
+      "ideology": ["Ethnic nationalism", "Conservatism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1990,
+      "leader": "Milorad Dodik",
+      "leaderTitle": "President",
+      "inPower": true,
+      "seats": 15,
+      "seatsTotal": 42,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Serb_Democratic_Party",
+      "sources": [
+        {
+          "title": "Serb Democratic Party – Wikipedia (founded 1990, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Serb_Democratic_Party"
+        },
+        {
+          "title": "2022 Bosnian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Bosnian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BA-SBiH",
+      "country": "BA",
+      "shortName": "SBiH",
+      "name": "Party of Democratic Action",
+      "nameEn": "SDA",
+      "ideology": ["Social democracy", "Bosniak nationalism"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1990,
+      "leader": "Bakir Izetbegović",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 10,
+      "seatsTotal": 42,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Party_of_Democratic_Action",
+      "sources": [
+        {
+          "title": "Party of Democratic Action – Wikipedia (founded 1990, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Party_of_Democratic_Action"
+        },
+        {
+          "title": "2022 Bosnian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Bosnian_general_election"
+        }
+      ]
+    }
+  ],
+  "BJ": [
+    {
+      "id": "BJ-FCBE",
+      "country": "BJ",
+      "shortName": "FCBE",
+      "name": "Benin Renaissance",
+      "ideology": ["Centrism", "Pan-Africanism"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2019,
+      "leader": "Patrice Talon",
+      "leaderTitle": "Founder / National Leader",
+      "inPower": true,
+      "timeInPower": "2016–present",
+      "seats": 63,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Benin_Renaissance",
+      "sources": [
+        {
+          "title": "Benin Renaissance – Wikipedia (founded 2019, leadership, ideology)",
+          "url": "https://en.wikipedia.org/wiki/Benin_Renaissance"
+        },
+        {
+          "title": "2023 Beninese general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Beninese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BJ-UNIR",
+      "country": "BJ",
+      "shortName": "UNIR",
+      "name": "Union for Benin",
+      "ideology": ["National conservatism", "Right-wing"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2021,
+      "leader": "Abdoulaye Toure",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 37,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Union_for_Benin",
+      "sources": [
+        {
+          "title": "Union for Benin – Wikipedia (founded 2021, leadership, ideology)",
+          "url": "https://en.wikipedia.org/wiki/Union_for_Benin"
+        },
+        {
+          "title": "2023 Beninese general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Beninese_general_election"
+        }
+      ]
+    }
+  ],
+  "BN": [
+    {
+      "id": "BN-DPMUB",
+      "country": "BN",
+      "shortName": "DPMUB",
+      "name": "Brunei National United Party",
+      "ideology": ["One-party system", "Monarchy"],
+      "ideologyPosition": "other",
+      "positionRaw": "Authoritarian monarchy",
+      "founded": 2007,
+      "leader": "Hassanal Bolkiah",
+      "leaderTitle": "Sultan",
+      "inPower": true,
+      "seats": 33,
+      "seatsTotal": 33,
+      "chamberName": "Legislative Council",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Politics_of_Brunei",
+      "sources": [
+        {
+          "title": "Politics of Brunei – Wikipedia (one-party system, Legislative Council composition)",
+          "url": "https://en.wikipedia.org/wiki/Politics_of_Brunei"
+        },
+        {
+          "title": "Brunei – Wikipedia (government structure, monarchy)",
+          "url": "https://en.wikipedia.org/wiki/Brunei"
+        }
+      ]
+    }
+  ],
+  "BO": [
+    {
+      "id": "BO-MAS",
+      "country": "BO",
+      "shortName": "MAS",
+      "name": "Movement for Socialism",
+      "ideology": ["Socialism", "Indigenous rights", "Anti-imperialism"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1998,
+      "leader": "Evo Morales",
+      "leaderTitle": "Political Leader",
+      "inPower": true,
+      "timeInPower": "2006–2019, 2021–present",
+      "seats": 88,
+      "seatsTotal": 172,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Movement_for_Socialism",
+      "sources": [
+        {
+          "title": "Movement for Socialism – Wikipedia (founded 1998, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Movement_for_Socialism"
+        },
+        {
+          "title": "2020 Bolivian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Bolivian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BO-CC",
+      "country": "BO",
+      "shortName": "CC",
+      "name": "Comunidad Ciudadana",
+      "nameEn": "Citizen Community",
+      "ideology": ["Liberalism", "Centre"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2017,
+      "leader": "Carlos Mesa",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 43,
+      "seatsTotal": 172,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Comunidad_Ciudadana",
+      "sources": [
+        {
+          "title": "Comunidad Ciudadana – Wikipedia (founded 2017, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Comunidad_Ciudadana"
+        },
+        {
+          "title": "2020 Bolivian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Bolivian_general_election"
+        }
+      ]
+    }
+  ],
+  "BS": [
+    {
+      "id": "BS-FNM",
+      "country": "BS",
+      "shortName": "FNM",
+      "name": "Free National Movement",
+      "ideology": ["Centre-right", "Liberalism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1953,
+      "leader": "Michael Pintard",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 39,
+      "chamberName": "House of Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Free_National_Movement",
+      "sources": [
+        {
+          "title": "Free National Movement – Wikipedia (founded 1953, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Free_National_Movement"
+        },
+        {
+          "title": "2021 Bahamian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Bahamian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BS-PLP",
+      "country": "BS",
+      "shortName": "PLP",
+      "name": "Progressive Liberal Party",
+      "ideology": ["Centre-left", "Social liberalism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1956,
+      "leader": "Philip Davis",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 22,
+      "seatsTotal": 39,
+      "chamberName": "House of Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Progressive_Liberal_Party",
+      "sources": [
+        {
+          "title": "Progressive Liberal Party – Wikipedia (founded 1956, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Progressive_Liberal_Party"
+        },
+        {
+          "title": "2021 Bahamian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Bahamian_general_election"
         }
       ]
     }
