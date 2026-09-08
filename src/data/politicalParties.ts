@@ -14436,5 +14436,247 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "PT": [
+    {
+      "id": "PT-PS",
+      "country": "PT",
+      "shortName": "PS",
+      "name": "Socialist Party",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1973,
+      "leader": "Pedro Nuno Santos",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 86,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Socialist Party (Portugal) – Wikipedia (founded 1973, ideology, leader)",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_(Portugal)"
+        },
+        {
+          "title": "2024 Portuguese legislative election – Results (86 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "PT-PSD",
+      "country": "PT",
+      "shortName": "PSD",
+      "name": "Social Democratic Party",
+      "ideology": [
+        "Liberalism",
+        "Conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1974,
+      "leader": "Luís Montenegro",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2024–present",
+      "seats": 80,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Social Democratic Party (Portugal) – Wikipedia (founded 1974, ideology, leader)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Portugal)"
+        },
+        {
+          "title": "2024 Portuguese legislative election – Results (80 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "PT-CDS-PP",
+      "country": "PT",
+      "shortName": "CDS-PP",
+      "name": "Democratic and Social Centre–People's Party",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1974,
+      "leader": "Nuno Teotónio Pereira",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 26,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Democratic and Social Centre–People's Party – Wikipedia (founded 1974, ideology, leader)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_and_Social_Centre%E2%80%93People%27s_Party"
+        },
+        {
+          "title": "2024 Portuguese legislative election – Results (26 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "PT-BE",
+      "country": "PT",
+      "shortName": "BE",
+      "name": "Left Bloc",
+      "ideology": [
+        "Socialism",
+        "Libertarian socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1997,
+      "leader": "Mariana Mortágua",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Left Bloc – Wikipedia (founded 1997, ideology, leader)",
+          "url": "https://en.wikipedia.org/wiki/Left_Bloc"
+        },
+        {
+          "title": "2024 Portuguese legislative election – Results (12 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "PT-CDU",
+      "country": "PT",
+      "shortName": "CDU",
+      "name": "Unitary Democratic Coalition",
+      "ideology": [
+        "Communism",
+        "Environmentalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1987,
+      "leader": "Jerónimo de Sousa",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Unitary Democratic Coalition – Wikipedia (founded 1987, comprises PCP and PEV, ideology, leader)",
+          "url": "https://en.wikipedia.org/wiki/Unitary_Democratic_Coalition"
+        },
+        {
+          "title": "2024 Portuguese legislative election – Results (12 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "PT-IL",
+      "country": "PT",
+      "shortName": "IL",
+      "name": "Liberal Initiative",
+      "ideology": [
+        "Liberalism",
+        "Libertarianism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2017,
+      "leader": "João Cotrim Figueiredo",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Liberal Initiative (Portugal) – Wikipedia (founded 2017, ideology, leader)",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Initiative_(Portugal)"
+        },
+        {
+          "title": "2024 Portuguese legislative election – Results (8 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "PT-CHEGA",
+      "country": "PT",
+      "shortName": "Chega",
+      "name": "Chega",
+      "ideology": [
+        "Right-wing populism",
+        "Conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2019,
+      "leader": "André Ventura",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 14,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Chega – Wikipedia (founded 2019, ideology, leader)",
+          "url": "https://en.wikipedia.org/wiki/Chega_(political_party)"
+        },
+        {
+          "title": "2024 Portuguese legislative election – Results (14 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "PT-LIVRE",
+      "country": "PT",
+      "shortName": "LIVRE",
+      "name": "LIVRE",
+      "ideology": [
+        "Green politics",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2020,
+      "leader": "Rui Tavares",
+      "leaderTitle": "Co-spokesperson",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "LIVRE – Wikipedia (founded 2020, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/LIVRE_(political_party)"
+        },
+        {
+          "title": "2024 Portuguese legislative election – Results (4 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    }
   ]
 };
