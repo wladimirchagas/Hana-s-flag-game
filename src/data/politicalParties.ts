@@ -1068,6 +1068,149 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "AT": [
+    {
+      "id": "AT-OEVP",
+      "country": "AT",
+      "shortName": "ÖVP",
+      "name": "Österreichische Volkspartei",
+      "nameEn": "Austrian People's Party",
+      "ideology": ["Christian democracy", "Conservatism", "European integration"],
+      "ideologyPosition": "centre-right",
+      "founded": 1945,
+      "leader": "Karl Nehammer",
+      "leaderTitle": "Party Chairman",
+      "inPower": true,
+      "seats": 71,
+      "seatsTotal": 183,
+      "chamberName": "Nationalrat",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "Austrian People's Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/%C3%96sterreichische_Volkspartei"
+        },
+        {
+          "title": "Nationalrat (National Council) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Austria)"
+        }
+      ]
+    },
+    {
+      "id": "AT-SPÖ",
+      "country": "AT",
+      "shortName": "SPÖ",
+      "name": "Sozialdemokratische Partei Österreichs",
+      "nameEn": "Socialist Party of Austria",
+      "logo": "`${BASE}party-logos/at/spoe.png`",
+      "sha256": "f26d8855ea8a9bed54dace453fb3b894641fd930eadfda301bc4196ec3d7ddc3",
+      "logoSourceUrl": "https://www.spoe.at/wp-content/uploads/2025/02/cropped-Logo-rot-512x512-1-192x192.png",
+      "licenceNote": "Official party logo from SPÖ official website – fair-use, bundled with permission for educational reference",
+      "ideology": ["Social democracy", "Progressivism", "European integration"],
+      "ideologyPosition": "centre-left",
+      "founded": 1875,
+      "leader": "Andreas Babler",
+      "leaderTitle": "Party Chairman",
+      "inPower": true,
+      "seats": 41,
+      "seatsTotal": 183,
+      "chamberName": "Nationalrat",
+      "sources": [
+        {
+          "title": "Socialist Party of Austria – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_of_Austria"
+        },
+        {
+          "title": "SPÖ Official Website",
+          "url": "https://www.spoe.at"
+        }
+      ]
+    },
+    {
+      "id": "AT-FPÖ",
+      "country": "AT",
+      "shortName": "FPÖ",
+      "name": "Freiheitliche Partei Österreichs",
+      "nameEn": "Austrian Freedom Party",
+      "logo": "`${BASE}party-logos/at/fpoe.png`",
+      "sha256": "e5eca0d49f7ca96b5a099ec51d38f1f0e5d69a67f1bf65cea7903a97cd607592",
+      "logoSourceUrl": "https://www.fpoe.at/typo3temp/assets/_processed_/e/e/csm_logo_7861e22b7e.png",
+      "licenceNote": "Official party logo from FPÖ official website – fair-use, bundled with permission for educational reference",
+      "ideology": ["Right-wing nationalism", "Euroscepticism", "Populism"],
+      "ideologyPosition": "far-right",
+      "founded": 1956,
+      "leader": "Herbert Kickl",
+      "leaderTitle": "Party Chairman",
+      "inPower": false,
+      "seats": 32,
+      "seatsTotal": 183,
+      "chamberName": "Nationalrat",
+      "sources": [
+        {
+          "title": "Austrian Freedom Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Austrian_Freedom_Party"
+        },
+        {
+          "title": "FPÖ Official Website",
+          "url": "https://www.fpoe.at"
+        }
+      ]
+    },
+    {
+      "id": "AT-GREENS",
+      "country": "AT",
+      "shortName": "Greens",
+      "name": "Die Grünen – Die Grüne Partei Österreichs",
+      "nameEn": "The Greens – The Green Party of Austria",
+      "ideology": ["Environmentalism", "Social progressivism", "Feminism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1986,
+      "leader": "Sandra Krautwaschl",
+      "leaderTitle": "Party Spokesperson",
+      "inPower": false,
+      "seats": 26,
+      "seatsTotal": 183,
+      "chamberName": "Nationalrat",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "The Greens – The Green Party of Austria – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Greens_%E2%80%93_The_Green_Party_of_Austria"
+        },
+        {
+          "title": "Die Grünen Official Website",
+          "url": "https://www.gruene.at"
+        }
+      ]
+    },
+    {
+      "id": "AT-NEOS",
+      "country": "AT",
+      "shortName": "NEOS",
+      "name": "NEOS – Das Neue Österreich",
+      "nameEn": "NEOS – The New Austria",
+      "ideology": ["Liberalism", "Centrist", "Pro-European"],
+      "ideologyPosition": "centre",
+      "founded": 2012,
+      "leader": "Beate Meinl-Reisinger",
+      "leaderTitle": "Party Chairman",
+      "inPower": false,
+      "seats": 18,
+      "seatsTotal": 183,
+      "chamberName": "Nationalrat",
+      "noImageReason": "Network access to external logo sources blocked; logo sourcing deferred",
+      "sources": [
+        {
+          "title": "NEOS – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/NEOS_(Austrian_political_party)"
+        },
+        {
+          "title": "NEOS Official Website",
+          "url": "https://www.neos.eu"
+        }
+      ]
+    }
+  ],
   "BE": [
     {
       "id": "BE-VB",
