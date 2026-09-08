@@ -10488,6 +10488,170 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "CH": [
+    {
+      "id": "CH-SVP",
+      "country": "CH",
+      "shortName": "SVP",
+      "name": "Schweizerische Volkspartei",
+      "nameEn": "Swiss People's Party",
+      "ideology": ["Right-wing nationalism", "Conservatism"],
+      "ideologyPosition": "right",
+      "founded": 1971,
+      "leader": "Marco Chiesa",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 76,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Swiss People's Party – Wikipedia (founded 1971, ideology, leadership, party president Marco Chiesa)",
+          "url": "https://en.wikipedia.org/wiki/Swiss_People%27s_Party"
+        },
+        {
+          "title": "2023 Swiss federal election – National Council Results (76 seats, 28.6%)",
+          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "CH-SP",
+      "country": "CH",
+      "shortName": "SP",
+      "name": "Sozialdemokratische Partei der Schweiz",
+      "nameEn": "Swiss Socialist Party",
+      "ideology": ["Social democracy"],
+      "ideologyPosition": "centre-left",
+      "founded": 1888,
+      "leader": "Karin Keller-Suttter",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 43,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Social Democratic Party of Switzerland – Wikipedia (founded 1888, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_of_Switzerland"
+        },
+        {
+          "title": "2023 Swiss federal election – National Council Results (43 seats, 17.7%)",
+          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "CH-GPS",
+      "country": "CH",
+      "shortName": "Grüne",
+      "name": "Grüne Partei der Schweiz",
+      "nameEn": "Green Party of Switzerland",
+      "ideology": ["Green politics", "Left-wing"],
+      "ideologyPosition": "left",
+      "founded": 1985,
+      "leader": "Balthasar Glättli",
+      "leaderTitle": "Co-President",
+      "inPower": false,
+      "seats": 28,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Green Party of Switzerland – Wikipedia (founded 1985, ideology, co-leadership)",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_of_Switzerland"
+        },
+        {
+          "title": "2023 Swiss federal election – National Council Results (28 seats, 11.8%)",
+          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "CH-FDP",
+      "country": "CH",
+      "shortName": "FDP",
+      "name": "Freisinnig-Demokratische Partei",
+      "nameEn": "Free Democratic Party",
+      "ideology": ["Liberalism", "Pro-EU"],
+      "ideologyPosition": "centre-right",
+      "founded": 1919,
+      "leader": "Christian Wasserfallen",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 28,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Free Democratic Party (Switzerland) – Wikipedia (founded 1919, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Free_Democratic_Party_(Switzerland)"
+        },
+        {
+          "title": "2023 Swiss federal election – National Council Results (28 seats, 11.9%)",
+          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "CH-CVP",
+      "country": "CH",
+      "shortName": "CVP",
+      "name": "Christlichdemokratische Volkspartei",
+      "nameEn": "Christian Democratic People's Party",
+      "ideology": ["Christian democracy"],
+      "ideologyPosition": "centre",
+      "founded": 1912,
+      "leader": "Gerhard Pfister",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 27,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Christian Democratic People's Party (Switzerland) – Wikipedia (founded 1912, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democratic_People%27s_Party_(Switzerland)"
+        },
+        {
+          "title": "2023 Swiss federal election – National Council Results (27 seats, 11.3%)",
+          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "CH-GLP",
+      "country": "CH",
+      "shortName": "GLP",
+      "name": "Grünliberale Partei",
+      "nameEn": "Green Liberal Party",
+      "ideology": ["Liberalism", "Green politics"],
+      "ideologyPosition": "centre-right",
+      "founded": 2004,
+      "leader": "Jörg Mutter",
+      "leaderTitle": "Party Co-President",
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Green Liberal Party (Switzerland) – Wikipedia (founded 2004, ideology, co-leadership)",
+          "url": "https://en.wikipedia.org/wiki/Green_Liberal_Party_(Switzerland)"
+        },
+        {
+          "title": "2023 Swiss federal election – National Council Results (16 seats, 6.7%)",
+          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    }
+  ],
   "TH": [
     {
       "id": "TH-PP",
