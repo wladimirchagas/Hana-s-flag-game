@@ -20787,5 +20787,578 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "HN": [
+    {
+      "id": "HN-LN",
+      "country": "HN",
+      "shortName": "LN",
+      "name": "Libertad y Refundación",
+      "nameEn": "Freedom and Refoundation",
+      "ideology": ["Leftism", "Honduras nationalism"],
+      "ideologyPosition": "left",
+      "founded": 2012,
+      "leader": "Manuel Zelaya",
+      "leaderTitle": "Coordinator",
+      "inPower": true,
+      "timeInPower": "2022–present",
+      "seats": 50,
+      "seatsTotal": 128,
+      "chamberName": "National Congress",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Libertad_y_Refundaci%C3%B3n",
+      "sources": [
+        {
+          "title": "Libertad y Refundación – Wikipedia (founded 2012, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Libertad_y_Refundaci%C3%B3n"
+        },
+        {
+          "title": "2021 Honduran general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Honduran_general_election"
+        }
+      ]
+    },
+    {
+      "id": "HN-PNH",
+      "country": "HN",
+      "shortName": "PNH",
+      "name": "Partido Nacional de Honduras",
+      "nameEn": "National Party of Honduras",
+      "ideology": ["Right-wing", "Conservatism", "Honduras nationalism"],
+      "ideologyPosition": "right",
+      "founded": 1923,
+      "leader": "Manuel Villeda",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 40,
+      "seatsTotal": 128,
+      "chamberName": "National Congress",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_Party_of_Honduras",
+      "sources": [
+        {
+          "title": "National Party of Honduras – Wikipedia (founded 1923, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_Party_of_Honduras"
+        },
+        {
+          "title": "2021 Honduran general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Honduran_general_election"
+        }
+      ]
+    }
+  ],
+  "HT": [
+    {
+      "id": "HT-LESPWA",
+      "country": "HT",
+      "shortName": "LESPWA",
+      "name": "Lespwa",
+      "ideology": ["Centre-left", "Haiti nationalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 2006,
+      "leader": "Jude Célestin",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 119,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Lespwa",
+      "sources": [
+        {
+          "title": "Lespwa – Wikipedia (founded 2006, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Lespwa"
+        },
+        {
+          "title": "2020 Haitian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Haitian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "HT-PHTK",
+      "country": "HT",
+      "shortName": "PHTK",
+      "name": "Parti Haïtien Tèt Kale",
+      "nameEn": "Haitian Head-to-Head Party",
+      "ideology": ["Right-wing", "Haiti nationalism"],
+      "ideologyPosition": "right",
+      "founded": 2012,
+      "leader": "Jovenel Moïse",
+      "leaderTitle": "Founder",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 119,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Parti_Ha%C3%AFtien_T%C3%A8t_Kale",
+      "sources": [
+        {
+          "title": "Parti Haïtien Tèt Kale – Wikipedia (founded 2012)",
+          "url": "https://en.wikipedia.org/wiki/Parti_Ha%C3%AFtien_T%C3%A8t_Kale"
+        },
+        {
+          "title": "2020 Haitian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Haitian_general_election"
+        }
+      ]
+    }
+  ],
+  "JM": [
+    {
+      "id": "JM-JLP",
+      "country": "JM",
+      "shortName": "JLP",
+      "name": "Jamaica Labour Party",
+      "ideology": ["Right-wing", "Conservatism", "Jamaica nationalism"],
+      "ideologyPosition": "right",
+      "founded": 1943,
+      "leader": "Andrew Holness",
+      "leaderTitle": "President/Leader",
+      "inPower": true,
+      "timeInPower": "2016–present",
+      "seats": 49,
+      "seatsTotal": 63,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Jamaica_Labour_Party",
+      "sources": [
+        {
+          "title": "Jamaica Labour Party – Wikipedia (founded 1943, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Jamaica_Labour_Party"
+        },
+        {
+          "title": "2020 Jamaican general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Jamaican_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JM-PNP",
+      "country": "JM",
+      "shortName": "PNP",
+      "name": "People's National Party",
+      "ideology": ["Social democracy", "Centre-left", "Jamaica nationalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1938,
+      "leader": "Mark Golding",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 14,
+      "seatsTotal": 63,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/People%27s_National_Party_(Jamaica)",
+      "sources": [
+        {
+          "title": "People's National Party (Jamaica) – Wikipedia (founded 1938, leadership)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_National_Party_(Jamaica)"
+        },
+        {
+          "title": "2020 Jamaican general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Jamaican_general_election"
+        }
+      ]
+    }
+  ],
+  "JO": [
+    {
+      "id": "JO-IAF",
+      "country": "JO",
+      "shortName": "IAF",
+      "name": "Islamic Action Front",
+      "ideology": ["Islamism", "Jordan nationalism"],
+      "ideologyPosition": "right",
+      "founded": 1992,
+      "leader": "Murad Al-Adaileh",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 11,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Islamic_Action_Front",
+      "sources": [
+        {
+          "title": "Islamic Action Front – Wikipedia (founded 1992, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Action_Front"
+        },
+        {
+          "title": "2020 Jordanian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Jordanian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-PAW",
+      "country": "JO",
+      "shortName": "PAW",
+      "name": "Islamic Centrist Party",
+      "ideology": ["Centre-right", "Islamism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2016,
+      "leader": "Yusuf Mansur",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Islamic_Centrist_Party",
+      "sources": [
+        {
+          "title": "Islamic Centrist Party – Wikipedia (founded 2016, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Centrist_Party"
+        },
+        {
+          "title": "2020 Jordanian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Jordanian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "LB": [
+    {
+      "id": "LB-FPM",
+      "country": "LB",
+      "shortName": "FPM",
+      "name": "Free Patriotic Movement",
+      "ideology": ["Right-wing", "Lebanese Maronitism"],
+      "ideologyPosition": "right",
+      "founded": 1986,
+      "leader": "Jebran Bassil",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2005–present, with breaks; part of government coalitions",
+      "seats": 13,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Free_Patriotic_Movement",
+      "sources": [
+        {
+          "title": "Free Patriotic Movement – Wikipedia (founded 1986, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Free_Patriotic_Movement"
+        },
+        {
+          "title": "2022 Lebanese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Lebanese_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "LB-HZB",
+      "country": "LB",
+      "shortName": "HZB",
+      "name": "Hezbollah",
+      "ideology": ["Islamism", "Shia nationalism", "Lebanese nationalism"],
+      "ideologyPosition": "right",
+      "founded": 1985,
+      "leader": "Naim Qassem",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "timeInPower": "1992–present, part of government coalitions",
+      "seats": 13,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Hezbollah",
+      "sources": [
+        {
+          "title": "Hezbollah – Wikipedia (founded 1985, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Hezbollah"
+        },
+        {
+          "title": "2022 Lebanese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Lebanese_legislative_election"
+        }
+      ]
+    }
+  ],
+  "LC": [
+    {
+      "id": "LC-UWP",
+      "country": "LC",
+      "shortName": "UWP",
+      "name": "United Workers Party",
+      "ideology": ["Labour", "Left-wing", "Saint Lucia nationalism"],
+      "ideologyPosition": "left",
+      "founded": 1957,
+      "leader": "Allen Chastanet",
+      "leaderTitle": "Political Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 17,
+      "chamberName": "House of Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/United_Workers_Party_(Saint_Lucia)",
+      "sources": [
+        {
+          "title": "United Workers Party (Saint Lucia) – Wikipedia (founded 1957, leadership)",
+          "url": "https://en.wikipedia.org/wiki/United_Workers_Party_(Saint_Lucia)"
+        },
+        {
+          "title": "2021 Saint Lucian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Saint_Lucian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "LC-SLP",
+      "country": "LC",
+      "shortName": "SLP",
+      "name": "Saint Lucia Labour Party",
+      "ideology": ["Labour", "Social democracy", "Saint Lucia nationalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1950,
+      "leader": "Philip J. Pierre",
+      "leaderTitle": "Prime Minister/Political Leader",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 13,
+      "seatsTotal": 17,
+      "chamberName": "House of Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Saint_Lucia_Labour_Party",
+      "sources": [
+        {
+          "title": "Saint Lucia Labour Party – Wikipedia (founded 1950, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Saint_Lucia_Labour_Party"
+        },
+        {
+          "title": "2021 Saint Lucian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Saint_Lucian_general_election"
+        }
+      ]
+    }
+  ],
+  "LR": [
+    {
+      "id": "LR-UP",
+      "country": "LR",
+      "shortName": "UP",
+      "name": "Unity Party",
+      "ideology": ["Centre", "Liberalism", "Liberia nationalism"],
+      "ideologyPosition": "centre",
+      "founded": 1984,
+      "leader": "Joseph Boakai",
+      "leaderTitle": "President/Chair",
+      "inPower": true,
+      "timeInPower": "2018–present",
+      "seats": 50,
+      "seatsTotal": 103,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Unity_Party_(Liberia)",
+      "sources": [
+        {
+          "title": "Unity Party (Liberia) – Wikipedia (founded 1984, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Unity_Party_(Liberia)"
+        },
+        {
+          "title": "2023 Liberian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Liberian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "LR-CDC",
+      "country": "LR",
+      "shortName": "CDC",
+      "name": "Congress for Democratic Change",
+      "ideology": ["Right-wing", "Liberia nationalism"],
+      "ideologyPosition": "right",
+      "founded": 2003,
+      "leader": "George Weah",
+      "leaderTitle": "President/Party Leader",
+      "inPower": false,
+      "seats": 29,
+      "seatsTotal": 103,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Congress_for_Democratic_Change",
+      "sources": [
+        {
+          "title": "Congress for Democratic Change – Wikipedia (founded 2003, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Congress_for_Democratic_Change"
+        },
+        {
+          "title": "2023 Liberian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Liberian_general_election"
+        }
+      ]
+    }
+  ],
+  "LS": [
+    {
+      "id": "LS-ABC",
+      "country": "LS",
+      "shortName": "ABC",
+      "name": "All Basotho Convention",
+      "ideology": ["Centre-right", "Lesotho nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2012,
+      "leader": "Sam Matete",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2024–present",
+      "seats": 56,
+      "seatsTotal": 120,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/All_Basotho_Convention",
+      "sources": [
+        {
+          "title": "All Basotho Convention – Wikipedia (founded 2012, leadership)",
+          "url": "https://en.wikipedia.org/wiki/All_Basotho_Convention"
+        },
+        {
+          "title": "2024 Lesotho general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Lesotho_general_election"
+        }
+      ]
+    },
+    {
+      "id": "LS-LCD",
+      "country": "LS",
+      "shortName": "LCD",
+      "name": "Lesotho Congress for Democracy",
+      "ideology": ["Centre", "Lesotho nationalism"],
+      "ideologyPosition": "centre",
+      "founded": 1997,
+      "leader": "Motlanthe Thabane",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 26,
+      "seatsTotal": 120,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Lesotho_Congress_for_Democracy",
+      "sources": [
+        {
+          "title": "Lesotho Congress for Democracy – Wikipedia (founded 1997, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Lesotho_Congress_for_Democracy"
+        },
+        {
+          "title": "2024 Lesotho general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Lesotho_general_election"
+        }
+      ]
+    }
+  ],
+  "LT": [
+    {
+      "id": "LT-TS-LKD",
+      "country": "LT",
+      "shortName": "LVŽS-TSLKD",
+      "name": "Lithuanian Farmers and Greens Union",
+      "ideology": ["Agrarianism", "Environmentalism", "Centre", "Lithuania nationalism"],
+      "ideologyPosition": "centre",
+      "founded": 2001,
+      "leader": "Ramūnas Karbauskis",
+      "leaderTitle": "Chair",
+      "inPower": false,
+      "seats": 32,
+      "seatsTotal": 141,
+      "chamberName": "Seimas",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Lithuanian_Farmers_and_Greens_Union",
+      "sources": [
+        {
+          "title": "Lithuanian Farmers and Greens Union – Wikipedia (founded 2001, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Lithuanian_Farmers_and_Greens_Union"
+        },
+        {
+          "title": "2024 Lithuanian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Lithuanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "LT-LVŽP",
+      "country": "LT",
+      "shortName": "LVŽP",
+      "name": "Lithuanian Green Party",
+      "ideology": ["Environmentalism", "Centre-left"],
+      "ideologyPosition": "centre-left",
+      "founded": 1992,
+      "leader": "Rasa Aguonytė",
+      "leaderTitle": "Chair",
+      "inPower": true,
+      "timeInPower": "2024–present, part of coalition government",
+      "seats": 18,
+      "seatsTotal": 141,
+      "chamberName": "Seimas",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Lithuanian_Green_Party",
+      "sources": [
+        {
+          "title": "Lithuanian Green Party – Wikipedia (founded 1992, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Lithuanian_Green_Party"
+        },
+        {
+          "title": "2024 Lithuanian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Lithuanian_general_election"
+        }
+      ]
+    }
+  ],
+  "LU": [
+    {
+      "id": "LU-LSAP",
+      "country": "LU",
+      "shortName": "LSAP",
+      "name": "Luxembourg Socialist Workers' Party",
+      "ideology": ["Social democracy", "Socialism"],
+      "ideologyPosition": "left",
+      "founded": 1902,
+      "leader": "Claude Haagen",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2023–present, part of coalition government",
+      "seats": 13,
+      "seatsTotal": 60,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Luxembourg_Socialist_Workers%27_Party",
+      "sources": [
+        {
+          "title": "Luxembourg Socialist Workers' Party – Wikipedia (founded 1902, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Luxembourg_Socialist_Workers%27_Party"
+        },
+        {
+          "title": "2023 Luxembourgish legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Luxembourgish_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "LU-CSV",
+      "country": "LU",
+      "shortName": "CSV",
+      "name": "Christian Social People's Party",
+      "ideology": ["Christian democracy", "Centre-right"],
+      "ideologyPosition": "centre-right",
+      "founded": 1914,
+      "leader": "Claude Haagen",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2023–present, part of coalition government",
+      "seats": 21,
+      "seatsTotal": 60,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Christian_Social_People%27s_Party",
+      "sources": [
+        {
+          "title": "Christian Social People's Party – Wikipedia (founded 1914, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Christian_Social_People%27s_Party"
+        },
+        {
+          "title": "2023 Luxembourgish legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Luxembourgish_legislative_election"
+        }
+      ]
+    }
   ]
 };
