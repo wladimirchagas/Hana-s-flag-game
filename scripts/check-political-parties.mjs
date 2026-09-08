@@ -70,6 +70,30 @@ const src = readFileSync(DATA_PATH, "utf8");
 const coalitions = loadConst(src, "export const POLITICAL_COALITIONS");
 const partiesByCountry = loadConst(src, "export const POLITICAL_PARTIES");
 
+// Parties grandfathered with noImageReason before the hard-rule enforcement date
+// (2026-09-08). Any party added AFTER this date must have a bundled logo; no
+// new entries with noImageReason are permitted.
+const GRANDFATHERED_PARTIES_WITH_NO_IMAGE = new Set([
+  // This list catalogs parties that pre-date the mandatory-logo rule. Add entries
+  // only for existing noImageReason entries that predate 2026-09-08; new parties
+  // must have logos and must not be added to this set.
+  // Format: "CC-CODE" (country-code + party code)
+  // Generated from politicalParties.ts as of 2026-09-08
+  "AR-ABSAS", "AR-CATAMARCA", "AR-CBA", "AR-COHERENCIA", "AR-ENCFED",
+  "AR-INDEP", "AR-INNFED", "AR-NEUQ", "AR-PJSL", "AR-PU", "AR-PYT",
+  "AR-SANTACRUZ", "BE-CDV", "BE-ECOLO", "BE-MR", "BE-NVA", "BE-OPENVLD",
+  "BE-PS", "BE-PVDA", "BE-SPA", "BE-VB", "CH-CVP", "CH-FDP", "CH-GLP",
+  "CH-GPS", "CH-SP", "CH-SVP", "DK-DF", "DK-F", "DK-M", "DK-NY", "DK-S",
+  "DK-SF", "DK-V", "DK-Å", "EG-CONSCIOUSNESS", "FI-KD", "FI-KESK",
+  "FI-KOK", "FI-PS", "FI-RKP", "FI-SDP", "FI-VAS", "FI-VIHR", "GR-EL",
+  "GR-KKE", "GR-ND", "GR-PASOK", "GR-SYR", "JP-INOCHI", "KE-ANC",
+  "KR-RKP", "KR-SDP", "MY-PBM", "NG-SDP", "NO-AP", "NO-FRP", "NO-H",
+  "NO-KRF", "NO-MDG", "NO-R", "NO-SP", "NO-SV", "NO-V", "PH-MKTZNU",
+  "PL-LEWICA", "PL-PSL", "PL-RPLUS", "PT-BE", "PT-CDS-PP", "PT-CDU",
+  "PT-CHEGA", "PT-IL", "PT-LIVRE", "PT-PS", "PT-PSD", "TH-NAP",
+  "TH-NEW", "TH-NOP", "TH-PPP", "UA-DV",
+]);
+
 const isHttpUrl = (u) => {
   if (typeof u !== "string") return false;
   try {
@@ -156,8 +180,17 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
     // C. logo bundling
     const hasLogo = p.logo !== undefined;
     const hasReason = nonEmpty(p.noImageReason);
+    const isGrandfathered = GRANDFATHERED_PARTIES_WITH_NO_IMAGE.has(id);
+
     if (hasLogo && hasReason) fail(id, "has both a logo and a noImageReason — pick one");
     if (!hasLogo && !hasReason) fail(id, "has neither a logo nor a noImageReason");
+
+    // Enforce mandatory logos for new parties (post-2026-09-08). Existing parties
+    // with noImageReason that predate the rule are grandfathered; new entries are not.
+    if (hasReason && !isGrandfathered) {
+      fail(id, "has noImageReason but is not in GRANDFATHERED_PARTIES_WITH_NO_IMAGE — all new parties must have bundled logos (hard rule as of 2026-09-08)");
+    }
+
     if (hasLogo) {
       const abs = resolve(PUBLIC_DIR, p.logo);
       if (!existsSync(abs)) {

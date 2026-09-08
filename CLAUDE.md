@@ -3305,6 +3305,54 @@ tool use. When reviewing a PR, wasteful patterns (whole-file reads of generated 
 change, redundant sub-agent fan-out, huge unfiltered command dumps) are legitimate review feedback.
 Never cite this rule to justify skipping a mandated sourcing, verification, or check step.
 
+## Political party logos must be verified and accurate before database integration — hard rule, do not override without approval
+
+**Every political party added to the Learn-mode "Political parties" grid (`src/data/politicalParties.ts`) MUST carry a verified, freely-licensed or non-free-bundled logo at the time of database integration. No party may enter the dataset with a `noImageReason` placeholder — the logo-sourcing step is a prerequisite for inclusion, never a follow-up task.** This is the party-data sibling of the "all flag files must be bundled" rule and the "Flag-meaning explanations must be sourced" rule: a party without a logo is incomplete, and completeness is a gate, not an aspiration.
+
+### Why this rule exists
+
+This shipped (2026-06) as an accumulated technical debt: 50+ parties in the database carried `noImageReason` placeholders ("Wikimedia Commons access blocked", "rate-limited", "no distinct freely-licensed logo available") accumulated from sessions where adding the party entry was separated from sourcing its logo. These placeholders rendered in the UI as cards with a name but no emblem — incomplete and harder to verify visually. More significantly, the loose gate allowed the debt to accumulate silently: without a mandatory check, parties could be added whenever a name and sourcing were ready, deferring the logo work indefinitely and fragmenting the effort across sessions.
+
+### Rules
+
+1. **Every new party MUST have a bundled logo.** A party without a freely-licensed Wikimedia Commons source must have a non-free logo bundled with a `licenceNote` documenting its copyright position — exactly like the football-crest and passport-cover rules. A party that genuinely has no reachable logo (a micro-party with no emblem, or a new party founded after its entry is added) is not added to the dataset at all — omitting the party entirely is always correct; adding it without a logo is not.
+
+2. **Logo sourcing MUST precede database entry.** Before adding a `PoliticalParty` entry to `POLITICAL_PARTIES[country]`:
+   - Search `Wikimedia Commons` and `Wikipedia`'s Commons file pages for the party's official logo
+   - If a freely-licensed Commons file exists (`cc0`, `CC-BY`, `CC-BY-SA`), download and bundle it to `public/party-logos/{cc}/{code}.svg` (or `.png`/`.webp` if the source is raster), with sha256 recorded
+   - If no freely-licensed file exists, source a non-free file with a cited copyright position (`licenceNote`)
+   - If no logo source can be found after checking the party's Wikipedia article, Commons by name, the party's own official website, and any language-specific Wikipedia variant, the party is left absent rather than added as `noImageReason`
+
+3. **Search comprehensively before concluding a logo is unsourceable.** Check:
+   - The party's English-language Wikipedia article (party/political party/infobox sections)
+   - Wikimedia Commons by party name + "party logo" / "party emblem" / "political party"
+   - Local-language Wikipedia (especially for non-English parties)
+   - The party's official website (logo is typically in footer, masthead, or about/history page)
+   - Commons' file pages for that country's political parties (browse the category index)
+
+4. **Logo-meaning sourcing is optional, but preferred where available.** A party's `logoMeaning` (the "What this emblem represents" explainer) is optional and follows the same discipline as `flagMeanings.ts` — it is sourced where available and omitted if no authoritative source documents the symbolism. Never invent or guess a meaning to fill a gap; a party with no sourced meaning simply has no explainer.
+
+5. **The `noImageReason` field is forbidden for new entries.** The field may continue to exist in the interface for backward compatibility with existing data, but `scripts/check-political-parties.mjs` **must fail the build** if any party added AFTER this rule date carries a `noImageReason` value. Existing parties with `noImageReason` are grandfathered; new parties are not.
+
+6. **A logo must actually exist on disk, checksummed, and in the correct format.** The build check verifies (as it always has):
+   - The bundled logo file exists at the path recorded in `logo`
+   - Its sha256 matches the recorded `sha256`
+   - Non-Commons logos carry a `licenceNote` ≥ 40 characters documenting the copyright position
+   - The logo is not the parent country's national flag (same "never show the parent nation's flag for a subdivision" collision guard the subdivision-flag rule uses)
+
+7. **Verify in the running app** (the mandatory visual-verification rule applies): open the country's Political parties grid, confirm every party card displays a logo (not a blank space), and that the logo visually represents the correct party/emblem (not the wrong country's flag, not a generic placeholder).
+
+### Enforcement
+
+`scripts/check-political-parties.mjs` (run by `npm run flags:check` and the `flag-integrity` CI workflow) **fails the build** when:
+- A party has neither a `logo` nor a `noImageReason`
+- A party has both (impossible state)
+- A bundled logo file is missing or its sha256 does not match
+- A non-Commons logo lacks a `licenceNote` or the note is too short (< 40 characters)
+- **[NEW]** Any party added after this rule date (2026-09-08) carries a `noImageReason` value
+
+**The critical new enforcement:** a party with `noImageReason` and a creation/modification date on or after 2026-09-08 triggers a BUILD FAILURE. Add a comment with the date if re-dating existing entries is infeasible; the check reads creation metadata or a `addedDate` comment to distinguish pre-rule and post-rule entries. Never weaken this gate, and never add a `noImageReason` party to a new country as a "placeholder, we'll add the logo later" — that is exactly the accumulated-debt pattern this rule prevents.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:
