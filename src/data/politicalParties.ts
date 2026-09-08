@@ -16321,6 +16321,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 48,
       "seatsTotal": 200,
       "chamberName": "Eduskunta",
+      "logo": "party-logos/fi/kok.svg",
+      "sha256": "576b628f872a7fd2811712649b9346fbb893d93f06de354b2f7f40b2776d6be3",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Kok_logo.svg",
       "sources": [
         {
           "title": "National Coalition Party – Wikipedia (founded 1918, ideology, leadership)",
@@ -16330,8 +16333,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "FI-PS",
@@ -16353,6 +16355,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 46,
       "seatsTotal": 200,
       "chamberName": "Eduskunta",
+      "logo": "party-logos/fi/ps.svg",
+      "sha256": "cc17b28a1dc9cf61231d13d5b3c47287cc200217428239704d1792702e0023a8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Finns_Party_logo.svg",
       "sources": [
         {
           "title": "Finns Party – Wikipedia (founded 2011, ideology, leadership)",
@@ -16362,8 +16367,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "FI-SDP",
@@ -16384,6 +16388,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 41,
       "seatsTotal": 200,
       "chamberName": "Eduskunta",
+      "logo": "party-logos/fi/sdp.svg",
+      "sha256": "1514c639b4a996e4614c2203cca8908b8f8eb2bba8912c91ba0a7933e66c342e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SDP_logo.svg",
       "sources": [
         {
           "title": "Finnish Social Democratic Party – Wikipedia (founded 1899, ideology, leadership)",
@@ -16393,8 +16400,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "FI-KESK",
@@ -16416,6 +16422,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 34,
       "seatsTotal": 200,
       "chamberName": "Eduskunta",
+      "logo": "party-logos/fi/kesk.svg",
+      "sha256": "39865f7566e851617fba78790fc526c9a3188b35760f68580a9a1e10e1dc3817",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Suomen_Keskusta_logo.svg",
       "sources": [
         {
           "title": "Centre Party (Finland) – Wikipedia (founded 1906, ideology, leadership)",
@@ -16425,8 +16434,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "FI-VAS",
@@ -16447,6 +16455,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 16,
       "seatsTotal": 200,
       "chamberName": "Eduskunta",
+      "logo": "party-logos/fi/vas.svg",
+      "sha256": "3bd41a47719562e977d5f50ed2881eb308ecb692f1aac61e3130dbb9372c81eb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Vas_logo.svg",
       "sources": [
         {
           "title": "Left Alliance – Wikipedia (founded 1990, ideology, leadership)",
@@ -16456,8 +16467,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "FI-RKP",
@@ -16479,6 +16489,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 12,
       "seatsTotal": 200,
       "chamberName": "Eduskunta",
+      "logo": "party-logos/fi/rkp.svg",
+      "sha256": "571426e518e34bb68213851d2df28c551aba6d96ea76162f58ae54b85158a3da",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SFP_logo.svg",
       "sources": [
         {
           "title": "Swedish People's Party – Wikipedia (founded 1906, ideology, leadership)",
@@ -16488,8 +16501,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "FI-VIHR",
@@ -16511,6 +16523,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 12,
       "seatsTotal": 200,
       "chamberName": "Eduskunta",
+      "logo": "party-logos/fi/vihr.svg",
+      "sha256": "2e774fa16c256d854fc565210db93c2bb625bb1a7a5b460c20717e22dfe1297d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Vihr_logo.svg",
       "sources": [
         {
           "title": "Green League – Wikipedia (founded 1987, ideology, leadership)",
@@ -16520,8 +16535,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "FI-KD",
@@ -16543,6 +16557,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 6,
       "seatsTotal": 200,
       "chamberName": "Eduskunta",
+      "logo": "party-logos/fi/kd.svg",
+      "sha256": "180ba7384e2e1bff7b77ccd63e753b81cb9744d7b8c5a05c66567978b8e5a639",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Kd_logo.svg",
       "sources": [
         {
           "title": "Christian Democrats (Finland) – Wikipedia (founded 1958, ideology, leadership)",
@@ -16552,8 +16569,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2023 Finnish parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "FR-EN",
@@ -16575,6 +16591,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 245,
       "seatsTotal": 577,
       "chamberName": "National Assembly",
+      "logo": "party-logos/fr/en.svg",
+      "sha256": "4079eda0a0accbf30491bd73b6d29ce6cda67d394c1bf6d57abd0d568ef0322c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Renaissance_2022.svg",
       "sources": [
         {
           "title": "Renaissance (political party) – Wikipedia (founded 2016, ideology, leadership)",
@@ -16584,8 +16603,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2022 French legislative election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2022_French_legislative_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "FR-RN",
