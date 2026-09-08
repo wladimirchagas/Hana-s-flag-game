@@ -1068,6 +1068,251 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "BE": [
+    {
+      "id": "BE-VB",
+      "country": "BE",
+      "shortName": "VB",
+      "name": "Vlaams Belang",
+      "nameEn": "Flemish Interest",
+      "ideology": ["Right-wing nationalism", "Euroscepticism"],
+      "ideologyPosition": "far-right",
+      "founded": 2004,
+      "leader": "Tom Van Grieken",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 22,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Vlaams Belang – Wikipedia (founded 14 November 2004, ideology, leadership, party president Tom Van Grieken)",
+          "url": "https://en.wikipedia.org/wiki/Vlaams_Belang"
+        },
+        {
+          "title": "2024 Belgian federal election – Results (22 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "BE-MR",
+      "country": "BE",
+      "shortName": "MR",
+      "name": "Mouvement Réformateur",
+      "nameEn": "Reformist Movement",
+      "ideology": ["Liberalism", "Pro-EU"],
+      "ideologyPosition": "centre-right",
+      "founded": 2011,
+      "leader": "Georges-Louis Bouchez",
+      "leaderTitle": "President",
+      "inPower": true,
+      "seats": 20,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Mouvement Réformateur – Wikipedia (founded 27 May 2011, merger of PRL and FDF, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Mouvement_R%C3%A9formateur"
+        },
+        {
+          "title": "2024 Belgian federal election – Results (20 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "BE-PS",
+      "country": "BE",
+      "shortName": "PS",
+      "name": "Parti Socialiste Belge",
+      "nameEn": "Belgian Socialist Party",
+      "ideology": ["Social democracy"],
+      "ideologyPosition": "centre-left",
+      "founded": 1885,
+      "leader": "Paul Magnette",
+      "leaderTitle": "President",
+      "inPower": true,
+      "seats": 16,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Parti Socialiste Belge – Wikipedia (founded 1885, ideology, leadership, currently led by Paul Magnette)",
+          "url": "https://en.wikipedia.org/wiki/Parti_Socialiste_Belge"
+        },
+        {
+          "title": "2024 Belgian federal election – Results (16 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "BE-NVA",
+      "country": "BE",
+      "shortName": "N-VA",
+      "name": "Nieuw Vlaams Alliantie",
+      "nameEn": "New Flemish Alliance",
+      "ideology": ["Flemish nationalism", "Pro-EU"],
+      "ideologyPosition": "centre-right",
+      "founded": 2001,
+      "leader": "Bart De Wever",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 22,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Nieuw Vlaams Alliantie – Wikipedia (founded 2001, ideology, leadership, Bart De Wever)",
+          "url": "https://en.wikipedia.org/wiki/Nieuw_Vlaams_Alliantie"
+        },
+        {
+          "title": "2024 Belgian federal election – Results (22 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "BE-ECOLO",
+      "country": "BE",
+      "shortName": "Ecolo",
+      "name": "Ecolo",
+      "nameEn": "Ecolo",
+      "ideology": ["Green politics", "Left-wing"],
+      "ideologyPosition": "left",
+      "founded": 1981,
+      "leader": "Clara Decerf",
+      "leaderTitle": "Co-President",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Ecolo – Wikipedia (founded 1981, ideology, leadership, co-presidents)",
+          "url": "https://en.wikipedia.org/wiki/Ecolo"
+        },
+        {
+          "title": "2024 Belgian federal election – Results (6 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "BE-PVDA",
+      "country": "BE",
+      "shortName": "PVDA/PTB",
+      "name": "Partij van de Arbeid België / Parti du Travail Belge",
+      "nameEn": "Workers' Party of Belgium",
+      "ideology": ["Communism", "Marxism"],
+      "ideologyPosition": "far-left",
+      "founded": 1971,
+      "leader": "Raoul Hedebouw",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Partij van de Arbeid België – Wikipedia (founded 1971, ideology, leadership, Raoul Hedebouw)",
+          "url": "https://en.wikipedia.org/wiki/Partij_van_de_Arbeid_Belgi%C3%AB"
+        },
+        {
+          "title": "2024 Belgian federal election – Results (8 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "BE-SPA",
+      "country": "BE",
+      "shortName": "SPa",
+      "name": "Socialistische Partij Anders",
+      "nameEn": "Socialist Party Differently",
+      "ideology": ["Social democracy"],
+      "ideologyPosition": "centre-left",
+      "founded": 1978,
+      "leader": "Giles Vanden Burre",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 13,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Socialistische Partij Anders – Wikipedia (founded 1978, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Socialistische_Partij_Anders"
+        },
+        {
+          "title": "2024 Belgian federal election – Results (13 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "BE-CDV",
+      "country": "BE",
+      "shortName": "CD&V",
+      "name": "Christen-Democratisch en Vlaams",
+      "nameEn": "Christian Democratic and Flemish",
+      "ideology": ["Christian democracy"],
+      "ideologyPosition": "centre",
+      "founded": 1968,
+      "leader": "Sammy Mahdi",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 9,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Christen-Democratisch en Vlaams – Wikipedia (founded 1968, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Christen-Democratisch_en_Vlaams"
+        },
+        {
+          "title": "2024 Belgian federal election – Results (9 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    },
+    {
+      "id": "BE-OPENVLD",
+      "country": "BE",
+      "shortName": "Open Vld",
+      "name": "Vlaamse Liberalen en Democraten",
+      "nameEn": "Flemish Liberals and Democrats",
+      "ideology": ["Liberalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1992,
+      "leader": "Egbert Lachaert",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 7,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Vlaamse Liberalen en Democraten – Wikipedia (founded 1992, ideology, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Vlaamse_Liberalen_en_Democraten"
+        },
+        {
+          "title": "2024 Belgian federal election – Results (7 seats)",
+          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+        }
+      ],
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+    }
+  ],
   "BR": [
     {
       "id": "BR-UNIAO",
