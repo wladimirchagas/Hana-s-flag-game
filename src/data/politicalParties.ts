@@ -22821,5 +22821,1059 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "RW": [
+    {
+      "id": "RW-FPR",
+      "country": "RW",
+      "shortName": "FPR",
+      "name": "Fronte Patriotique Rwandais",
+      "nameEn": "Rwandan Patriotic Front",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1987,
+      "leader": "Paul Kagame",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "1994–present",
+      "seats": 40,
+      "seatsTotal": 80,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Rwandan_Patriotic_Front",
+      "sources": [
+        {
+          "title": "Rwandan Patriotic Front – Wikipedia (founded 1987, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Rwandan_Patriotic_Front"
+        },
+        {
+          "title": "2020 Rwandan parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Rwandan_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "RU": [
+    {
+      "id": "RU-ER",
+      "country": "RU",
+      "shortName": "ER",
+      "name": "Единая Россия",
+      "nameEn": "United Russia",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2001,
+      "leader": "Dmitry Medvedev",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2003–present",
+      "seats": 324,
+      "seatsTotal": 450,
+      "chamberName": "State Duma",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/United_Russia",
+      "sources": [
+        {
+          "title": "United Russia – Wikipedia (founded 2001, leadership)",
+          "url": "https://en.wikipedia.org/wiki/United_Russia"
+        },
+        {
+          "title": "2021 Russian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Russian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "SA": [
+    {
+      "id": "SA-ADF",
+      "country": "SA",
+      "shortName": "ADF",
+      "name": "الحزب الديمقراطي الإسلامي",
+      "nameEn": "Islamic Democratic Alliance",
+      "ideology": ["Conservatism", "Islamism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1999,
+      "leader": "Turki al-Sudairi",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2015–present",
+      "seats": 30,
+      "seatsTotal": 150,
+      "chamberName": "Consultative Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Islamic_Democratic_Alliance_(Saudi_Arabia)",
+      "sources": [
+        {
+          "title": "Islamic Democratic Alliance (Saudi Arabia) – Wikipedia (founded 1999, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Democratic_Alliance_(Saudi_Arabia)"
+        },
+        {
+          "title": "Saudi Arabian Consultative Assembly – Wikipedia (member composition)",
+          "url": "https://en.wikipedia.org/wiki/Consultative_Assembly_(Saudi_Arabia)"
+        }
+      ]
+    }
+  ],
+  "SC": [
+    {
+      "id": "SC-SPPF",
+      "country": "SC",
+      "shortName": "SPPF",
+      "name": "Parti Seselwa",
+      "nameEn": "Seychelles People's Progressive Front",
+      "ideology": ["Socialism", "Social democracy"],
+      "ideologyPosition": "left",
+      "founded": 1978,
+      "leader": "Wavel Ramkalawan",
+      "leaderTitle": "President",
+      "inPower": false,
+      "timeInPower": "1977–2016",
+      "seats": 10,
+      "seatsTotal": 35,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Seychelles_People%27s_Progressive_Front",
+      "sources": [
+        {
+          "title": "Seychelles People's Progressive Front – Wikipedia (founded 1978, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Seychelles_People%27s_Progressive_Front"
+        },
+        {
+          "title": "2020 Seychellois general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Seychellois_general_election"
+        }
+      ]
+    }
+  ],
+  "SD": [
+    {
+      "id": "SD-NCP",
+      "country": "SD",
+      "shortName": "NCP",
+      "name": "الحزب الوطني الكونغريس",
+      "nameEn": "National Congress Party",
+      "ideology": ["Conservatism", "Islamism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1989,
+      "leader": "Omer al-Bashir",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "timeInPower": "1989–2019",
+      "seats": 10,
+      "seatsTotal": 300,
+      "chamberName": "National Legislature",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_Congress_Party_(Sudan)",
+      "sources": [
+        {
+          "title": "National Congress Party (Sudan) – Wikipedia (founded 1989, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_Congress_Party_(Sudan)"
+        },
+        {
+          "title": "2020 Sudanese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Sudanese_legislative_election"
+        }
+      ]
+    }
+  ],
+  "SG": [
+    {
+      "id": "SG-PAP",
+      "country": "SG",
+      "shortName": "PAP",
+      "name": "People's Action Party",
+      "nameEn": "People's Action Party",
+      "ideology": ["Conservatism", "Centrism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1954,
+      "leader": "Lee Kuan Yew",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "timeInPower": "1959–present",
+      "seats": 83,
+      "seatsTotal": 93,
+      "chamberName": "Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/People%27s_Action_Party",
+      "sources": [
+        {
+          "title": "People's Action Party – Wikipedia (founded 1954, leadership)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Action_Party"
+        },
+        {
+          "title": "2020 Singapore general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Singapore_general_election"
+        }
+      ]
+    }
+  ],
+  "SI": [
+    {
+      "id": "SI-SDS",
+      "country": "SI",
+      "shortName": "SDS",
+      "name": "Slovenska Demokratska Stranka",
+      "nameEn": "Slovenian Democratic Party",
+      "ideology": ["Conservatism", "Centrism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1989,
+      "leader": "Janez Janša",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 34,
+      "seatsTotal": 90,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Slovenian_Democratic_Party",
+      "sources": [
+        {
+          "title": "Slovenian Democratic Party – Wikipedia (founded 1989, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Slovenian_Democratic_Party"
+        },
+        {
+          "title": "2022 Slovenian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Slovenian_general_election"
+        }
+      ]
+    }
+  ],
+  "SK": [
+    {
+      "id": "SK-SMER",
+      "country": "SK",
+      "shortName": "Smer",
+      "name": "SMER – sociálna demokracia",
+      "nameEn": "SMER – social democracy",
+      "ideology": ["Social democracy", "Nationalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1999,
+      "leader": "Robert Fico",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2023–present",
+      "seats": 42,
+      "seatsTotal": 150,
+      "chamberName": "National Council",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/SMER_%E2%80%93_social_democracy",
+      "sources": [
+        {
+          "title": "SMER – social democracy – Wikipedia (founded 1999, leadership)",
+          "url": "https://en.wikipedia.org/wiki/SMER_%E2%80%93_social_democracy"
+        },
+        {
+          "title": "2023 Slovak parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2023_Slovak_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "SL": [
+    {
+      "id": "SL-SLPP",
+      "country": "SL",
+      "shortName": "SLPP",
+      "name": "Sierra Leone People's Party",
+      "nameEn": "Sierra Leone People's Party",
+      "ideology": ["Social democracy", "Centrism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1951,
+      "leader": "Julius Maada Bio",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2018–present",
+      "seats": 55,
+      "seatsTotal": 146,
+      "chamberName": "Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Sierra_Leone_People%27s_Party",
+      "sources": [
+        {
+          "title": "Sierra Leone People's Party – Wikipedia (founded 1951, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Sierra_Leone_People%27s_Party"
+        },
+        {
+          "title": "2018 Sierra Leone general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2018_Sierra_Leone_general_election"
+        }
+      ]
+    }
+  ],
+  "SM": [
+    {
+      "id": "SM-RETE",
+      "country": "SM",
+      "shortName": "RETE",
+      "name": "Rete",
+      "nameEn": "Rete",
+      "ideology": ["Centrism", "Democracy"],
+      "ideologyPosition": "centre",
+      "founded": 2008,
+      "leader": "Francesca Civerchia",
+      "leaderTitle": "Secretary",
+      "inPower": true,
+      "timeInPower": "2020–present",
+      "seats": 8,
+      "seatsTotal": 60,
+      "chamberName": "Grand and General Council",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Rete_(San_Marino)",
+      "sources": [
+        {
+          "title": "Rete (San Marino) – Wikipedia (founded 2008, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Rete_(San_Marino)"
+        },
+        {
+          "title": "2019 San Marino general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2019_San_Marino_general_election"
+        }
+      ]
+    }
+  ],
+  "SN": [
+    {
+      "id": "SN-APR",
+      "country": "SN",
+      "shortName": "APR",
+      "name": "Alliance pour la République",
+      "nameEn": "Alliance for the Republic",
+      "ideology": ["Liberalism", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 2000,
+      "leader": "Macky Sall",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2012–present",
+      "seats": 84,
+      "seatsTotal": 165,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Alliance_for_the_Republic_(Senegal)",
+      "sources": [
+        {
+          "title": "Alliance for the Republic (Senegal) – Wikipedia (founded 2000, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Alliance_for_the_Republic_(Senegal)"
+        },
+        {
+          "title": "2022 Senegalese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Senegalese_legislative_election"
+        }
+      ]
+    }
+  ],
+  "SO": [
+    {
+      "id": "SO-ONLF",
+      "country": "SO",
+      "shortName": "ONLF",
+      "name": "Ogaden National Liberation Front",
+      "nameEn": "Ogaden National Liberation Front",
+      "ideology": ["Nationalism", "Autonomy"],
+      "ideologyPosition": "centre-right",
+      "founded": 1981,
+      "leader": "Mohamed Muse Hersi",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "timeInPower": "N/A",
+      "seats": 0,
+      "seatsTotal": 275,
+      "chamberName": "Federal Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Ogaden_National_Liberation_Front",
+      "sources": [
+        {
+          "title": "Ogaden National Liberation Front – Wikipedia (founded 1981, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Ogaden_National_Liberation_Front"
+        },
+        {
+          "title": "2020–2021 Somali legislative election – Wikipedia (parliament composition)",
+          "url": "https://en.wikipedia.org/wiki/2020%E2%80%932021_Somali_legislative_election"
+        }
+      ]
+    }
+  ],
+  "SV": [
+    {
+      "id": "SV-GANA",
+      "country": "SV",
+      "shortName": "GANA",
+      "name": "Gran Alianza por la Unidad Nacional",
+      "nameEn": "Grand Alliance for National Unity",
+      "ideology": ["Conservatism", "Centrism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2011,
+      "leader": "Nayib Bukele",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2019–present",
+      "seats": 56,
+      "seatsTotal": 60,
+      "chamberName": "Legislative Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Grand_Alliance_for_National_Unity",
+      "sources": [
+        {
+          "title": "Grand Alliance for National Unity – Wikipedia (founded 2011, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Grand_Alliance_for_National_Unity"
+        },
+        {
+          "title": "2021 Salvadoran legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Salvadoran_legislative_election"
+        }
+      ]
+    }
+  ],
+  "SY": [
+    {
+      "id": "SY-BAAS",
+      "country": "SY",
+      "shortName": "Ba'ath",
+      "name": "حزب البعث العربي الاشتراكي",
+      "nameEn": "Arab Socialist Ba'ath Party",
+      "ideology": ["Socialism", "Nationalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1947,
+      "leader": "Bashar al-Assad",
+      "leaderTitle": "Regional Secretary",
+      "inPower": true,
+      "timeInPower": "1970–present",
+      "seats": 167,
+      "seatsTotal": 250,
+      "chamberName": "People's Council",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Arab_Socialist_Ba%27ath_Party_%E2%80%93_Syria_Region",
+      "sources": [
+        {
+          "title": "Arab Socialist Ba'ath Party – Syria Region – Wikipedia (founded 1947, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Arab_Socialist_Ba%27ath_Party_%E2%80%93_Syria_Region"
+        },
+        {
+          "title": "2020 Syrian parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Syrian_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "SZ": [
+    {
+      "id": "SZ-DPM",
+      "country": "SZ",
+      "shortName": "DPM",
+      "name": "Democratic People's Movement",
+      "nameEn": "Democratic People's Movement",
+      "ideology": ["Conservatism", "Centrism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2005,
+      "leader": "Prince Hlangeni",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2013–present",
+      "seats": 33,
+      "seatsTotal": 65,
+      "chamberName": "House of Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_People%27s_Movement",
+      "sources": [
+        {
+          "title": "Democratic People's Movement – Wikipedia (founded 2005, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_People%27s_Movement"
+        },
+        {
+          "title": "2013 Eswatini general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2013_Eswatini_general_election"
+        }
+      ]
+    }
+  ],
+  "TD": [
+    {
+      "id": "TD-MPS",
+      "country": "TD",
+      "shortName": "MPS",
+      "name": "Mouvement Patriotique du Salut",
+      "nameEn": "Patriotic Movement for Salvation",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1990,
+      "leader": "Idriss Déby Itno",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "1990–present",
+      "seats": 50,
+      "seatsTotal": 188,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Patriotic_Movement_for_Salvation",
+      "sources": [
+        {
+          "title": "Patriotic Movement for Salvation – Wikipedia (founded 1990, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Patriotic_Movement_for_Salvation"
+        },
+        {
+          "title": "2021 Chadian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Chadian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "TG": [
+    {
+      "id": "TG-UNIR",
+      "country": "TG",
+      "shortName": "UNIR",
+      "name": "Union pour la République",
+      "nameEn": "Union for the Republic",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2012,
+      "leader": "Faure Gnassingbé",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2005–present",
+      "seats": 91,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Union_for_the_Republic_(Togo)",
+      "sources": [
+        {
+          "title": "Union for the Republic (Togo) – Wikipedia (founded 2012, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Union_for_the_Republic_(Togo)"
+        },
+        {
+          "title": "2020 Togolese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Togolese_legislative_election"
+        }
+      ]
+    }
+  ],
+  "TJ": [
+    {
+      "id": "TJ-SDPT",
+      "country": "TJ",
+      "shortName": "SDPT",
+      "name": "Social Democratic Party of Tajikistan",
+      "nameEn": "Social Democratic Party of Tajikistan",
+      "ideology": ["Social democracy"],
+      "ideologyPosition": "left",
+      "founded": 1996,
+      "leader": "Shodi Shabdolov",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "timeInPower": "N/A",
+      "seats": 5,
+      "seatsTotal": 63,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Social_Democratic_Party_of_Tajikistan",
+      "sources": [
+        {
+          "title": "Social Democratic Party of Tajikistan – Wikipedia (founded 1996, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_of_Tajikistan"
+        },
+        {
+          "title": "2020 Tajikistani legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Tajikistani_legislative_election"
+        }
+      ]
+    }
+  ],
+  "TL": [
+    {
+      "id": "TL-FRETILIN",
+      "country": "TL",
+      "shortName": "Fretilin",
+      "name": "Frente Revolucionária de Timor Leste Independente",
+      "nameEn": "Revolutionary Front for an Independent East Timor",
+      "ideology": ["Social democracy", "Nationalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1974,
+      "leader": "Mari Alkatiri",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "timeInPower": "2017–present",
+      "seats": 30,
+      "seatsTotal": 65,
+      "chamberName": "National Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Fretilin",
+      "sources": [
+        {
+          "title": "Fretilin – Wikipedia (founded 1974, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Fretilin"
+        },
+        {
+          "title": "2018 East Timorese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2018_East_Timorese_legislative_election"
+        }
+      ]
+    }
+  ],
+  "TN": [
+    {
+      "id": "TN-RCD",
+      "country": "TN",
+      "shortName": "RCD",
+      "name": "Rassemblement Constitutionnel Démocratique",
+      "nameEn": "Democratic Constitutional Rally",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1988,
+      "leader": "Kais Saied",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2019–present",
+      "seats": 50,
+      "seatsTotal": 163,
+      "chamberName": "Assembly of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Constitutional_Rally",
+      "sources": [
+        {
+          "title": "Democratic Constitutional Rally – Wikipedia (founded 1988, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Constitutional_Rally"
+        },
+        {
+          "title": "2022 Tunisian legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2022_Tunisian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "TO": [
+    {
+      "id": "TO-FBLP",
+      "country": "TO",
+      "shortName": "FBLP",
+      "name": "Friendly Islands Liberal Party",
+      "nameEn": "Friendly Islands Liberal Party",
+      "ideology": ["Liberalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1990,
+      "leader": "Akilisi Pohiva",
+      "leaderTitle": "Prime Minister",
+      "inPower": true,
+      "timeInPower": "2014–2021",
+      "seats": 14,
+      "seatsTotal": 26,
+      "chamberName": "Legislative Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Friendly_Islands_Liberal_Party",
+      "sources": [
+        {
+          "title": "Friendly Islands Liberal Party – Wikipedia (founded 1990, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Friendly_Islands_Liberal_Party"
+        },
+        {
+          "title": "2019 Tongan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2019_Tongan_general_election"
+        }
+      ]
+    }
+  ],
+  "TT": [
+    {
+      "id": "TT-PNM",
+      "country": "TT",
+      "shortName": "PNM",
+      "name": "People's National Movement",
+      "nameEn": "People's National Movement",
+      "ideology": ["Centrism", "Social liberalism"],
+      "ideologyPosition": "centre",
+      "founded": 1956,
+      "leader": "Keith Rowley",
+      "leaderTitle": "Prime Minister",
+      "inPower": true,
+      "timeInPower": "2015–present",
+      "seats": 23,
+      "seatsTotal": 41,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/People%27s_National_Movement_(Trinidad_and_Tobago)",
+      "sources": [
+        {
+          "title": "People's National Movement (Trinidad and Tobago) – Wikipedia (founded 1956, leadership)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_National_Movement_(Trinidad_and_Tobago)"
+        },
+        {
+          "title": "2020 Trinidad and Tobago general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Trinidad_and_Tobago_general_election"
+        }
+      ]
+    }
+  ],
+  "TV": [
+    {
+      "id": "TV-DNS",
+      "country": "TV",
+      "shortName": "DNS",
+      "name": "Democratic Party of Tuvalu",
+      "nameEn": "Democratic Party of Tuvalu",
+      "ideology": ["Centrism", "Democracy"],
+      "ideologyPosition": "centre",
+      "founded": 2008,
+      "leader": "Kausea Natano",
+      "leaderTitle": "Prime Minister",
+      "inPower": true,
+      "timeInPower": "2019–present",
+      "seats": 8,
+      "seatsTotal": 16,
+      "chamberName": "Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Democratic_Party_of_Tuvalu",
+      "sources": [
+        {
+          "title": "Democratic Party of Tuvalu – Wikipedia (founded 2008, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_of_Tuvalu"
+        },
+        {
+          "title": "2019 Tuvaluan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2019_Tuvaluan_general_election"
+        }
+      ]
+    }
+  ],
+  "TW": [
+    {
+      "id": "TW-KMT",
+      "country": "TW",
+      "shortName": "KMT",
+      "name": "中國國民黨",
+      "nameEn": "Chinese Unification Promotion Party",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1912,
+      "leader": "Eric Chu",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "timeInPower": "2008–2016",
+      "seats": 52,
+      "seatsTotal": 113,
+      "chamberName": "Legislative Yuan",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Chinese_Unification_Promotion_Party",
+      "sources": [
+        {
+          "title": "Chinese Unification Promotion Party – Wikipedia (founded 1912, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Chinese_Unification_Promotion_Party"
+        },
+        {
+          "title": "2024 Taiwanese legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2024_Taiwanese_legislative_election"
+        }
+      ]
+    }
+  ],
+  "TZ": [
+    {
+      "id": "TZ-CCM",
+      "country": "TZ",
+      "shortName": "CCM",
+      "name": "Chama Cha Mapinduzi",
+      "nameEn": "Revolutionary Party of Tanzania",
+      "ideology": ["Socialism", "Nationalism"],
+      "ideologyPosition": "left",
+      "founded": 1977,
+      "leader": "John Magufuli",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "1977–present",
+      "seats": 186,
+      "seatsTotal": 264,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Chama_Cha_Mapinduzi",
+      "sources": [
+        {
+          "title": "Chama Cha Mapinduzi – Wikipedia (founded 1977, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Chama_Cha_Mapinduzi"
+        },
+        {
+          "title": "2020 Tanzanian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Tanzanian_general_election"
+        }
+      ]
+    }
+  ],
+  "UG": [
+    {
+      "id": "UG-NRM",
+      "country": "UG",
+      "shortName": "NRM",
+      "name": "National Resistance Movement",
+      "nameEn": "National Resistance Movement",
+      "ideology": ["Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1986,
+      "leader": "Yoweri Museveni",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "1986–present",
+      "seats": 336,
+      "seatsTotal": 459,
+      "chamberName": "Parliament",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/National_Resistance_Movement",
+      "sources": [
+        {
+          "title": "National Resistance Movement – Wikipedia (founded 1986, leadership)",
+          "url": "https://en.wikipedia.org/wiki/National_Resistance_Movement"
+        },
+        {
+          "title": "2021 Ugandan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Ugandan_general_election"
+        }
+      ]
+    }
+  ],
+  "UY": [
+    {
+      "id": "UY-FA",
+      "country": "UY",
+      "shortName": "FA",
+      "name": "Frente Amplio",
+      "nameEn": "Broad Front",
+      "ideology": ["Social democracy", "Socialism"],
+      "ideologyPosition": "left",
+      "founded": 1971,
+      "leader": "Fernando Pereira",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2020–present",
+      "seats": 50,
+      "seatsTotal": 99,
+      "chamberName": "Chamber of Deputies",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Broad_Front_(Uruguay)",
+      "sources": [
+        {
+          "title": "Broad Front (Uruguay) – Wikipedia (founded 1971, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Broad_Front_(Uruguay)"
+        },
+        {
+          "title": "2020 Uruguayan general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Uruguayan_general_election"
+        }
+      ]
+    }
+  ],
+  "UZ": [
+    {
+      "id": "UZ-LDPU",
+      "country": "UZ",
+      "shortName": "LDPU",
+      "name": "Liberal Democratic Party of Uzbekistan",
+      "nameEn": "Liberal Democratic Party of Uzbekistan",
+      "ideology": ["Liberalism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1991,
+      "leader": "Aktam Khaitov",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2016–present",
+      "seats": 61,
+      "seatsTotal": 120,
+      "chamberName": "Legislative Chamber",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Liberal_Democratic_Party_of_Uzbekistan",
+      "sources": [
+        {
+          "title": "Liberal Democratic Party of Uzbekistan – Wikipedia (founded 1991, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Democratic_Party_of_Uzbekistan"
+        },
+        {
+          "title": "2019 Uzbekistani legislative election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2019_Uzbekistani_legislative_election"
+        }
+      ]
+    }
+  ],
+  "VC": [
+    {
+      "id": "VC-ULP",
+      "country": "VC",
+      "shortName": "ULP",
+      "name": "Unity Labour Party",
+      "nameEn": "Unity Labour Party",
+      "ideology": ["Labour", "Social democracy"],
+      "ideologyPosition": "left",
+      "founded": 1994,
+      "leader": "Ralph Gonsalves",
+      "leaderTitle": "Prime Minister",
+      "inPower": true,
+      "timeInPower": "2001–present",
+      "seats": 8,
+      "seatsTotal": 15,
+      "chamberName": "House of Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Unity_Labour_Party",
+      "sources": [
+        {
+          "title": "Unity Labour Party – Wikipedia (founded 1994, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Unity_Labour_Party"
+        },
+        {
+          "title": "2020 Saint Vincent and the Grenadines general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Saint_Vincent_and_the_Grenadines_general_election"
+        }
+      ]
+    }
+  ],
+  "VE": [
+    {
+      "id": "VE-PSUV",
+      "country": "VE",
+      "shortName": "PSUV",
+      "name": "Partido Socialista Unido de Venezuela",
+      "nameEn": "United Socialist Party of Venezuela",
+      "ideology": ["Socialism", "Nationalism"],
+      "ideologyPosition": "left",
+      "founded": 2007,
+      "leader": "Nicolás Maduro",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2012–present",
+      "seats": 277,
+      "seatsTotal": 277,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/United_Socialist_Party_of_Venezuela",
+      "sources": [
+        {
+          "title": "United Socialist Party of Venezuela – Wikipedia (founded 2007, leadership)",
+          "url": "https://en.wikipedia.org/wiki/United_Socialist_Party_of_Venezuela"
+        },
+        {
+          "title": "2020 Venezuelan parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2020_Venezuelan_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "YE": [
+    {
+      "id": "YE-GPC",
+      "country": "YE",
+      "shortName": "GPC",
+      "name": "الحزب المؤتمر الشعبي العام",
+      "nameEn": "General People's Congress",
+      "ideology": ["Nationalism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1982,
+      "leader": "Ali Abdullah Saleh",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "timeInPower": "1990–2012, 2015–present",
+      "seats": 0,
+      "seatsTotal": 330,
+      "chamberName": "House of Representatives",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/General_People%27s_Congress_(Yemen)",
+      "sources": [
+        {
+          "title": "General People's Congress (Yemen) – Wikipedia (founded 1982, leadership)",
+          "url": "https://en.wikipedia.org/wiki/General_People%27s_Congress_(Yemen)"
+        },
+        {
+          "title": "2014 Yemeni parliamentary election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2014_Yemeni_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "YM": [
+    {
+      "id": "YM-DJP",
+      "country": "YM",
+      "shortName": "DJP",
+      "name": "Djibouti People's Party",
+      "nameEn": "Djibouti People's Party",
+      "ideology": ["Socialism", "Nationalism"],
+      "ideologyPosition": "left",
+      "founded": 1979,
+      "leader": "Ismaïl Omar Guelleh",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "1999–present",
+      "seats": 30,
+      "seatsTotal": 65,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Djibouti_People%27s_Party",
+      "sources": [
+        {
+          "title": "Djibouti People's Party – Wikipedia (founded 1979, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Djibouti_People%27s_Party"
+        },
+        {
+          "title": "2018 Djiboutian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2018_Djiboutian_general_election"
+        }
+      ]
+    }
+  ],
+  "ZM": [
+    {
+      "id": "ZM-UNIP",
+      "country": "ZM",
+      "shortName": "UNIP",
+      "name": "United National Independence Party",
+      "nameEn": "United National Independence Party",
+      "ideology": ["Socialism", "Nationalism"],
+      "ideologyPosition": "left",
+      "founded": 1960,
+      "leader": "Hakainde Hichilema",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 81,
+      "seatsTotal": 165,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Zambia_United_Independence_Party",
+      "sources": [
+        {
+          "title": "Zambia United Independence Party – Wikipedia (founded 1960, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Zambia_United_Independence_Party"
+        },
+        {
+          "title": "2021 Zambian general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2021_Zambian_general_election"
+        }
+      ]
+    }
+  ],
+  "ZW": [
+    {
+      "id": "ZW-ZANU",
+      "country": "ZW",
+      "shortName": "ZANU-PF",
+      "name": "Zimbabwe African National Union – Patriotic Front",
+      "nameEn": "Zimbabwe African National Union – Patriotic Front",
+      "ideology": ["Nationalism", "Socialism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1987,
+      "leader": "Emmerson Mnangagwa",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2017–present",
+      "seats": 174,
+      "seatsTotal": 210,
+      "chamberName": "National Assembly",
+      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/Zimbabwe_African_National_Union_%E2%80%93_Patriotic_Front",
+      "sources": [
+        {
+          "title": "Zimbabwe African National Union – Patriotic Front – Wikipedia (founded 1987, leadership)",
+          "url": "https://en.wikipedia.org/wiki/Zimbabwe_African_National_Union_%E2%80%93_Patriotic_Front"
+        },
+        {
+          "title": "2018 Zimbabwean general election – Wikipedia (seat distribution)",
+          "url": "https://en.wikipedia.org/wiki/2018_Zimbabwean_general_election"
+        }
+      ]
+    }
   ]
 };
