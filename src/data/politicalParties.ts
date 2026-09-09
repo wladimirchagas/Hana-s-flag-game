@@ -8551,6 +8551,94 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "CN": [
+    {
+      "id": "CN-CPC",
+      "country": "CN",
+      "shortName": "CPC",
+      "name": "中国共产党",
+      "nameEn": "Communist Party of China",
+      "logo": "party-logos/CN/Communist Party of China.svg",
+      "sha256": "a4a5fde535e97fa92bbc16f677c5b3c5f82d287f746282eb1ce7deae372cc495",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Communist_Party_of_China.svg",
+      "ideology": ["Communism", "Marxism-Leninism", "Socialism"],
+      "ideologyPosition": "far-left",
+      "founded": 1921,
+      "leader": "Xi Jinping",
+      "leaderTitle": "General Secretary",
+      "inPower": true,
+      "seats": 2977,
+      "seatsTotal": 2977,
+      "chamberName": "National People's Congress",
+      "sources": [
+        {
+          "title": "Communist Party of China – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_China"
+        }
+      ]
+    }
+  ],
+  "CV": [
+    {
+      "id": "CV-PAICV",
+      "country": "CV",
+      "shortName": "PAICV",
+      "name": "Partido Africano da Independência de Cabo Verde",
+      "nameEn": "African Party for the Independence of Cape Verde",
+      "logo": "party-logos/CV/paicv.svg",
+      "sha256": "de2008ec01c8abec957a407a21a9e216b97e315ebbcd71e243be66645d8f7911",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PAICV_logo.svg",
+      "ideology": ["Socialism", "Social democracy"],
+      "ideologyPosition": "left",
+      "founded": 1956,
+      "leader": "Janira Hopffer Almada",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 30,
+      "seatsTotal": 72,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "African Party for the Independence of Cape Verde – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/African_Party_for_the_Independence_of_Cape_Verde"
+        },
+        {
+          "title": "2021 Cape Verdean general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2021_Cape_Verdean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CV-MPD",
+      "country": "CV",
+      "shortName": "MpD",
+      "name": "Movimento para a Democracia",
+      "nameEn": "Movement for Democracy",
+      "logo": "party-logos/CV/mpd.svg",
+      "sha256": "e11adedc5bba624f8cd17cf7555a04d245b795374f087492604eebfd709d50a5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Movement_for_Democracy_Cape_Verde.svg",
+      "ideology": ["Liberal democracy", "Market liberalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1990,
+      "leader": "Ulisses Correia e Silva",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 38,
+      "seatsTotal": 72,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Movement for Democracy (Cape Verde) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Movement_for_Democracy_(Cape_Verde)"
+        },
+        {
+          "title": "2021 Cape Verdean general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2021_Cape_Verdean_general_election"
+        }
+      ]
+    }
+  ],
   "GH": [
     {
       "id": "GH-NPP",
