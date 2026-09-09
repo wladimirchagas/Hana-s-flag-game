@@ -11087,5 +11087,438 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "BF": [
+    {
+      "id": "BF-MPP",
+      "country": "BF",
+      "shortName": "MPP",
+      "name": "Mouvement du Peuple pour le Progrès",
+      "nameEn": "People's Movement for Progress",
+      "logo": "party-logos/bf/pm.svg",
+      "sha256": "87cdc001dc80cd97b052814c3399a8b7ca88da7706fff2873554bce720034181",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Mouvement_du_Peuple_pour_le_Progrès.svg",
+      "ideology": ["Centrism", "Social liberalism"],
+      "ideologyPosition": "centre",
+      "founded": 1989,
+      "leader": "Roch Marc Christian Kaboré",
+      "leaderTitle": "Founder & Former President",
+      "inPower": false,
+      "seats": 56,
+      "seatsTotal": 127,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "People's Movement for Progress – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Movement_for_Progress_(Burkina_Faso)"
+        },
+        {
+          "title": "2015 Burkinabe general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2015_Burkinabe_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BF-CDP",
+      "country": "BF",
+      "shortName": "CDP",
+      "name": "Rassemblement pour le Progrès",
+      "nameEn": "Rally for Progress",
+      "logo": "party-logos/bf/cdp.svg",
+      "sha256": "96c163793da9062f728755f332f2ef1a591a5731faed7de2dce112d64234241f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Rassemblement_pour_le_Progrès_(Burkina_Faso).svg",
+      "ideology": ["Conservatism", "Liberalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1996,
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 127,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Rally for Progress – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rally_for_Progress_(Burkina_Faso)"
+        },
+        {
+          "title": "2015 Burkinabe general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2015_Burkinabe_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BF-PS",
+      "country": "BF",
+      "shortName": "PS",
+      "name": "Parti Socialiste",
+      "nameEn": "Socialist Party",
+      "logo": "party-logos/bf/ps.svg",
+      "sha256": "c7f9eeab0854869735317e369186d510d2283cc0f1237684d4944d6d97163508",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Parti_Socialiste_(Burkina_Faso).svg",
+      "ideology": ["Socialism", "Left-wing"],
+      "ideologyPosition": "left",
+      "founded": 1991,
+      "inPower": false,
+      "seats": 10,
+      "seatsTotal": 127,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Socialist Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_(Burkina_Faso)"
+        },
+        {
+          "title": "2015 Burkinabe general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2015_Burkinabe_general_election"
+        }
+      ]
+    }
+  ],
+  "BI": [
+    {
+      "id": "BI-CNDD",
+      "country": "BI",
+      "shortName": "CNDD-FDD",
+      "name": "Conseil National pour la Défense de la Démocratie – Forces pour la Défense de la Démocratie",
+      "nameEn": "National Council for the Defense of Democracy – Forces for the Defense of Democracy",
+      "logo": "party-logos/bi/cndd.svg",
+      "sha256": "621d6496cb490eef590ab9bd910f811683972a566d2dbacec65a1b77c0e9913e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CNDD-FDD_logo.svg",
+      "ideology": ["Nationalism", "Hutu nationalism", "Left-wing"],
+      "ideologyPosition": "left",
+      "founded": 1994,
+      "leader": "Évariste Ndayishimiye",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "timeInPower": "2020–present",
+      "seats": 86,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "CNDD-FDD – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/CNDD-FDD"
+        },
+        {
+          "title": "2020 Burundian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Burundian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BI-FRODEBU",
+      "country": "BI",
+      "shortName": "FRODEBU",
+      "name": "Front for Democracy in Burundi",
+      "logo": "party-logos/bi/frodebu.svg",
+      "sha256": "c8a1694c7cb989943ce19978d7ffe0d9c34b3594a6d21ab13279f0596eb2e17b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:FRODEBU_logo.svg",
+      "ideology": ["Social democracy", "Tutsi political representation"],
+      "ideologyPosition": "centre-left",
+      "founded": 1992,
+      "leader": "Léonce Ngendakumana",
+      "leaderTitle": "Party Chair",
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "FRODEBU – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/FRODEBU"
+        },
+        {
+          "title": "2020 Burundian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Burundian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BI-UPRONA",
+      "country": "BI",
+      "shortName": "UPRONA",
+      "name": "Union for National Progress",
+      "logo": "party-logos/bi/uprona.svg",
+      "sha256": "7b6207ef4235e4e72d4de314e629714efcf1d1097dd855a831c2bea48d8fbabd",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:UPRONA_logo.svg",
+      "ideology": ["Conservatism", "Tutsi nationalism"],
+      "ideologyPosition": "right",
+      "founded": 1958,
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "UPRONA – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/UPRONA_(Burundi)"
+        },
+        {
+          "title": "2020 Burundian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Burundian_general_election"
+        }
+      ]
+    }
+  ],
+  "BO": [
+    {
+      "id": "BO-MAS",
+      "country": "BO",
+      "shortName": "MAS",
+      "name": "Movimiento al Socialismo",
+      "nameEn": "Movement for Socialism",
+      "logo": "party-logos/bo/mas.svg",
+      "sha256": "f7dcd2d7477fdea08d3d18aa46f459505bb3b84446228ca35ab5d525a2d310e0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MAS-IPSP_logo.svg",
+      "ideology": ["Socialism", "Indigenous rights", "Anti-imperialism"],
+      "ideologyPosition": "left",
+      "founded": 1997,
+      "leader": "Luis Arce",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 88,
+      "seatsTotal": 130,
+      "chamberName": "Plurinational Legislative Assembly",
+      "sources": [
+        {
+          "title": "Movement for Socialism – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Movement_for_Socialism_(Bolivia)"
+        },
+        {
+          "title": "2020 Bolivian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Bolivian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BO-APG",
+      "country": "BO",
+      "shortName": "APG",
+      "name": "Arcistas por Bolivia",
+      "nameEn": "Arcists for Bolivia",
+      "logo": "party-logos/bo/apg.svg",
+      "sha256": "f3b98a74e7ff7f5f60825904d362517401f7e228f6b1883c174384053dc72adb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Arcistas_por_Bolivia.svg",
+      "ideology": ["Conservatism", "Civic nationalism", "Centre-right"],
+      "ideologyPosition": "centre-right",
+      "founded": 2017,
+      "leader": "Luis Fernando Camacho",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 130,
+      "chamberName": "Plurinational Legislative Assembly",
+      "sources": [
+        {
+          "title": "2020 Bolivian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Bolivian_general_election"
+        },
+        {
+          "title": "Luis Fernando Camacho – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Luis_Fernando_Camacho"
+        }
+      ]
+    },
+    {
+      "id": "BO-UM",
+      "country": "BO",
+      "shortName": "UM",
+      "name": "Unidad Movil",
+      "nameEn": "Mobility Unity",
+      "logo": "party-logos/bo/um.svg",
+      "sha256": "3283f70b01e61225983bdc847834b6b296d35aacdfbd09618cc55a46cd73d724",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Unidad_Movil_logo.svg",
+      "ideology": ["Centrism", "Liberalism"],
+      "ideologyPosition": "centre",
+      "founded": 2018,
+      "leader": "Oscar Ortiz",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 11,
+      "seatsTotal": 130,
+      "chamberName": "Plurinational Legislative Assembly",
+      "sources": [
+        {
+          "title": "2020 Bolivian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Bolivian_general_election"
+        },
+        {
+          "title": "Oscar Ortiz – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Oscar_Ortiz_(politician)"
+        }
+      ]
+    }
+  ],
+  "BW": [
+    {
+      "id": "BW-BDC",
+      "country": "BW",
+      "shortName": "BDC",
+      "name": "Botswana Democratic Party",
+      "logo": "party-logos/bw/bdc.svg",
+      "sha256": "2ff554324eb6ce57d7ed1e0d951dfffa093f94ab7a04e37f4a791f01536d978c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Botswana_Democratic_Party_logo.svg",
+      "ideology": ["Conservatism", "Liberalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1961,
+      "leader": "Mokgweetsi Masisi",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 31,
+      "seatsTotal": 61,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Botswana Democratic Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Botswana_Democratic_Party"
+        },
+        {
+          "title": "2024 Botswana general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Botswana_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BW-BNF",
+      "country": "BW",
+      "shortName": "BNF",
+      "name": "Botswana National Front",
+      "logo": "party-logos/bw/bnf.svg",
+      "sha256": "0ec5238ec5bffee2bcf880cf064c598a1e1d4c29e1e5aa84ca9c80760b1f1976",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Botswana_National_Front_logo.svg",
+      "ideology": ["Socialism", "Social democracy"],
+      "ideologyPosition": "left",
+      "founded": 1966,
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 61,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Botswana National Front – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Botswana_National_Front"
+        },
+        {
+          "title": "2024 Botswana general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Botswana_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BW-UDC",
+      "country": "BW",
+      "shortName": "UDC",
+      "name": "Umbrella for Democratic Change",
+      "logo": "party-logos/bw/umbrella.svg",
+      "sha256": "c8a0a5de4e31b51f1f784a4faac44b7800ea0d2284178ee87a20687935e280f8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Umbrella_for_Democratic_Change_logo.svg",
+      "ideology": ["Centrism", "Social liberalism"],
+      "ideologyPosition": "centre",
+      "founded": 2012,
+      "leader": "Duma Boko",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "timeInPower": "2024–present",
+      "seats": 22,
+      "seatsTotal": 61,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Umbrella for Democratic Change – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Umbrella_for_Democratic_Change"
+        },
+        {
+          "title": "2024 Botswana general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Botswana_general_election"
+        }
+      ]
+    }
+  ],
+  "CM": [
+    {
+      "id": "CM-RDPC",
+      "country": "CM",
+      "shortName": "RDPC",
+      "name": "Rassemblement Démocratique du Peuple Camerounais",
+      "nameEn": "Democratic Rally of the Cameroonian People",
+      "logo": "party-logos/cm/rdpc.svg",
+      "sha256": "850d9c9a02b4546272ad958626a727f308a1614b5c5bc290edf5f74b15f37cc1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:RDPC_Cameroon_logo.svg",
+      "ideology": ["Conservatism", "Authoritarianism", "Centrism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1985,
+      "leader": "Paul Biya",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "1985–present",
+      "seats": 148,
+      "seatsTotal": 180,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Democratic Rally of the Cameroonian People – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Rally_of_the_Cameroonian_People"
+        },
+        {
+          "title": "2020 Cameroonian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Cameroonian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CM-SDF",
+      "country": "CM",
+      "shortName": "SDF",
+      "name": "Social Democratic Front",
+      "logo": "party-logos/cm/sdp.svg",
+      "sha256": "f34bf70b3e7f99c4e8cdc87691e0630fb4b98eab7172f96f0f70856180a3a3d8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SDF_Cameroon_logo.svg",
+      "ideology": ["Social democracy", "Liberalism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1990,
+      "leader": "John Fru Ndi",
+      "leaderTitle": "Party Chair",
+      "inPower": false,
+      "seats": 18,
+      "seatsTotal": 180,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Social Democratic Front – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Front_(Cameroon)"
+        },
+        {
+          "title": "2020 Cameroonian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Cameroonian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CM-UPC",
+      "country": "CM",
+      "shortName": "UPC",
+      "name": "Union des Populations du Cameroun",
+      "nameEn": "Union of the Peoples of Cameroon",
+      "logo": "party-logos/cm/up.svg",
+      "sha256": "802fadd566daf1ece909e6424657accb798e08ef1ccb4a7da588bbad9292841c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:UPC_Cameroon_logo.svg",
+      "ideology": ["Socialism", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 1948,
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 180,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Union of the Peoples of Cameroon – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Union_of_the_Peoples_of_Cameroon"
+        },
+        {
+          "title": "2020 Cameroonian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Cameroonian_general_election"
+        }
+      ]
+    }
   ]
 };
