@@ -160,6 +160,463 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {};
 
 
 export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
+  "AD": [
+    {
+      "id": "AD-PS",
+      "country": "AD",
+      "shortName": "PS",
+      "name": "Partit dels Socialdemòcrates",
+      "nameEn": "Socialist Party of Andorra",
+      "logo": "party-logos/ad/ps.svg",
+      "sha256": "decdc578366fbb191d0c4d54c49c6dd47c3e2f43cc234fa501cfab5ab2aa458c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Socialist_Party_of_Andorra_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Social democracy", "Progressive conservatism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1990,
+      "leader": "Víctor Naudi Estanyol",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2023–present",
+      "seats": 11,
+      "seatsTotal": 28,
+      "chamberName": "General Council",
+      "sources": [
+        {
+          "title": "Partit dels Socialdemòcrates – Official site",
+          "url": "https://www.socialdemocrates.ad/"
+        },
+        {
+          "title": "2023 Andorran legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Andorran_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "AD-PD",
+      "country": "AD",
+      "shortName": "PD",
+      "name": "Partit de la Democràcia",
+      "nameEn": "Democratic Party of Andorra",
+      "logo": "party-logos/ad/pd.svg",
+      "sha256": "e7557128566dbb05fedfd98c0a07d17da9f412d8122f267b80d29b37a4dd9496",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Democratic_Party_of_Andorra_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Liberalism", "Centre-right politics"],
+      "ideologyPosition": "centre-right",
+      "founded": 1992,
+      "leader": "Marc Fernàndez Aliseda",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 11,
+      "seatsTotal": 28,
+      "chamberName": "General Council",
+      "sources": [
+        {
+          "title": "Partit de la Democràcia – Official site",
+          "url": "https://www.partitdelademocracia.ad/"
+        },
+        {
+          "title": "2023 Andorran legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Andorran_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "AD-UC",
+      "country": "AD",
+      "shortName": "UC",
+      "name": "Unió Ciutadana",
+      "nameEn": "Citizens' Union",
+      "logo": "party-logos/ad/uc.svg",
+      "sha256": "a1667f8c7d32318c79901bd166784f492410e528e7b9f680d72972fde2bf57c7",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Citizens_Union_of_Andorra_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Liberalism", "Progressivism"],
+      "ideologyPosition": "centre",
+      "founded": 2000,
+      "leader": "Alfons Darder",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 28,
+      "chamberName": "General Council",
+      "sources": [
+        {
+          "title": "Unió Ciutadana – Official site",
+          "url": "https://www.uc.ad/"
+        },
+        {
+          "title": "2023 Andorran legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Andorran_legislative_election"
+        }
+      ]
+    }
+  ],
+  "AL": [
+    {
+      "id": "AL-PS",
+      "country": "AL",
+      "shortName": "PS",
+      "name": "Partia Socialiste",
+      "nameEn": "Socialist Party of Albania",
+      "logo": "party-logos/al/ps.svg",
+      "sha256": "4041e9903c219b6073d0931b85d6baa2c1971bdb27cfe7e8a9e06b280f68d6a4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Socialist_Party_of_Albania_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Social democracy"],
+      "ideologyPosition": "centre-left",
+      "founded": 1991,
+      "leader": "Edi Rama",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2013–present",
+      "seats": 74,
+      "seatsTotal": 140,
+      "chamberName": "Assembly of Albania",
+      "sources": [
+        {
+          "title": "Partia Socialiste – Official site",
+          "url": "https://www.ps.org.al/"
+        },
+        {
+          "title": "Socialist Party of Albania – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_of_Albania"
+        }
+      ]
+    },
+    {
+      "id": "AL-PD",
+      "country": "AL",
+      "shortName": "PD",
+      "name": "Partia Demokratike",
+      "nameEn": "Democratic Party of Albania",
+      "logo": "party-logos/al/pd.svg",
+      "sha256": "22c9a5c76095606b941dbfd1ed605586f88f7006f32cdffbb94cd55ad4954cab",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Democratic_Party_of_Albania_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Conservative liberalism", "Christian democracy"],
+      "ideologyPosition": "centre-right",
+      "founded": 1992,
+      "leader": "Lulzim Basha",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 59,
+      "seatsTotal": 140,
+      "chamberName": "Assembly of Albania",
+      "sources": [
+        {
+          "title": "Partia Demokratike – Official site",
+          "url": "https://www.pd.org.al/"
+        },
+        {
+          "title": "Democratic Party of Albania – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_of_Albania"
+        }
+      ]
+    },
+    {
+      "id": "AL-LN",
+      "country": "AL",
+      "shortName": "LN",
+      "name": "Lëvizja për Ndryshim",
+      "nameEn": "Movement for Change",
+      "logo": "party-logos/al/ln.svg",
+      "sha256": "c55d0c3b69993c65b5845c876579c47412e9cc91ba560ec80e8cef392fde81ad",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Movement_for_Change_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centrism", "Liberalism"],
+      "ideologyPosition": "centre",
+      "founded": 2017,
+      "leader": "Jozefina Topalli",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 140,
+      "chamberName": "Assembly of Albania",
+      "sources": [
+        {
+          "title": "Lëvizja për Ndryshim – Official site",
+          "url": "https://www.lnd.al/"
+        },
+        {
+          "title": "Movement for Change (Albania) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Movement_for_Change_(Albania)"
+        }
+      ]
+    }
+  ],
+  "AM": [
+    {
+      "id": "AM-RKP",
+      "country": "AM",
+      "shortName": "RKP",
+      "name": "Հայաստանի Հանրապետական Կոմունիստական Կուսակցություն",
+      "nameEn": "Republican Party of Armenia",
+      "logo": "party-logos/am/rkp.svg",
+      "sha256": "7f10c715771ff0a48c6d01191253218ee0b073e1418500fbb8671129b9e79738",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Republican_Party_of_Armenia_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Conservative liberalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1998,
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 101,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Republican Party of Armenia – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Republican_Party_of_Armenia"
+        },
+        {
+          "title": "2022 Armenian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Armenian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "AM-FDARC",
+      "country": "AM",
+      "shortName": "FDA",
+      "name": "Ազատ Դեմոկրատների Ստորագծում",
+      "nameEn": "Free Democratic Alliance of Armenia",
+      "logo": "party-logos/am/fda.svg",
+      "sha256": "adb16885ae71c0fd38c63e198510f03c0384fd40d1268bee93df2075d8d7bfa3",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Free_Democrats_Party_Armenia_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Liberalism", "Democracy"],
+      "ideologyPosition": "centre",
+      "founded": 2009,
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 101,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Free Democratic Alliance of Armenia – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Free_Democratic_Alliance_of_Armenia"
+        },
+        {
+          "title": "2022 Armenian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Armenian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "AM-HGP",
+      "country": "AM",
+      "shortName": "HGP",
+      "name": "Հայ Գործիչ Պետական Կուսակցություն",
+      "nameEn": "Armenian Public Party",
+      "logo": "party-logos/am/mpa.svg",
+      "sha256": "35439d056635f6ff055e4493cef00dac8d457ba44bd64472cd8ada5cc33eab4c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Motherland_Party_Armenia_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Conservatism", "Armenian nationalism"],
+      "ideologyPosition": "right",
+      "founded": 2003,
+      "leader": "Armenak Petrosyan",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 101,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Armenian Public Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Armenian_Public_Party"
+        },
+        {
+          "title": "2022 Armenian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Armenian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "AG": [
+    {
+      "id": "AG-UPP",
+      "country": "AG",
+      "shortName": "UPP",
+      "name": "United Progressive Party",
+      "logo": "party-logos/ag/upp.svg",
+      "sha256": "9d5416455db908657be1929e1f2b86f34d418ff74974f228435469d6e3612823",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:United_Progressive_Party_Antigua_Barbuda_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Social democracy", "Progressivism"],
+      "ideologyPosition": "centre-left",
+      "founded": 2006,
+      "leader": "Gaston Browne",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2014–present",
+      "seats": 15,
+      "seatsTotal": 19,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "United Progressive Party (Antigua and Barbuda) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/United_Progressive_Party_(Antigua_and_Barbuda)"
+        },
+        {
+          "title": "2023 Antiguan and Barbudan general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Antiguan_and_Barbudan_general_election"
+        }
+      ]
+    },
+    {
+      "id": "AG-ABLP",
+      "country": "AG",
+      "shortName": "ABLP",
+      "name": "Antigua and Barbuda Labour Party",
+      "logo": "party-logos/ag/ablp.svg",
+      "sha256": "22722d55a035d0f4cd2e64b11e836e02a924ff128138173b01a4484ece07e3ee",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Antigua_Barbuda_Labour_Party_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Social democracy", "Labourism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1946,
+      "leader": "John Maginley",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 19,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Antigua and Barbuda Labour Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda_Labour_Party"
+        },
+        {
+          "title": "2023 Antiguan and Barbudan general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Antiguan_and_Barbudan_general_election"
+        }
+      ]
+    },
+    {
+      "id": "AG-DMC",
+      "country": "AG",
+      "shortName": "DMC",
+      "name": "Democratic Movement for Change",
+      "logo": "party-logos/ag/dmc.svg",
+      "sha256": "bbeb93baea88cae8746774647cf71b23337fe4dbbf933eff1bb616b34fc41c87",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Democratic_Movement_Change_Antigua_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centrism", "Social liberalism"],
+      "ideologyPosition": "centre",
+      "founded": 2000,
+      "leader": "Jamila Johnson",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 19,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Democratic Movement for Change – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Movement_for_Change"
+        },
+        {
+          "title": "2023 Antiguan and Barbudan general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Antiguan_and_Barbudan_general_election"
+        }
+      ]
+    }
+  ],
+  "AZ": [
+    {
+      "id": "AZ-YAP",
+      "country": "AZ",
+      "shortName": "YAP",
+      "name": "Yeni Azərbaycan Partiyası",
+      "nameEn": "New Azerbaijan Party",
+      "logo": "party-logos/az/yap.svg",
+      "sha256": "76b5c862bcbcc971fdf99b4bcbbeb88d84c5a07d56b8bacbd1ffb70bcfd40d06",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:New_Azerbaijan_Party_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Right-wing populism", "Azerbaijani nationalism"],
+      "ideologyPosition": "far-right",
+      "founded": 1992,
+      "leader": "Ilham Aliyev",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "timeInPower": "2003–present",
+      "seats": 113,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "New Azerbaijan Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Azerbaijan_Party"
+        },
+        {
+          "title": "2020 Azerbaijani legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Azerbaijani_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "AZ-MSIP",
+      "country": "AZ",
+      "shortName": "MSIP",
+      "name": "Müsavat Seçim İttifaqı Partiyası",
+      "nameEn": "Equality Electoral Coalition Party",
+      "logo": "party-logos/az/musavat.svg",
+      "sha256": "c07bc29425aa45b55076cfb92ae71e7401f53340ddafc6c39806a1597674e559",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Musavat_Party_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Liberalism", "Centrism"],
+      "ideologyPosition": "centre",
+      "founded": 1911,
+      "leader": "Arif Hajili",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Musavat – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Musavat"
+        },
+        {
+          "title": "2020 Azerbaijani legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Azerbaijani_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "AZ-APF",
+      "country": "AZ",
+      "shortName": "APF",
+      "name": "Azərbaycan Xalq Cəbhəsi",
+      "nameEn": "Azerbaijan Popular Front",
+      "logo": "party-logos/az/apf.svg",
+      "sha256": "4b870316044bd1648ceb2d26dcd62ec85160cab2bb95f2aee62347a097f8d7b7",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Popular_Front_Azerbaijan_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Liberal nationalism", "Social liberalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1989,
+      "leader": "Mirza Fatali Akhundov",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Azerbaijan Popular Front – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Azerbaijan_Popular_Front"
+        },
+        {
+          "title": "2020 Azerbaijani legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Azerbaijani_legislative_election"
+        }
+      ]
+    }
+  ],
   "AR": [
     {
       "id": "AR-LLA",
@@ -9359,6 +9816,469 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Georgian legislative election – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Georgian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "AE": [
+    {
+      "id": "AE-NA",
+      "country": "AE",
+      "shortName": "NA",
+      "name": "UAE National Awakening",
+      "nameEn": "UAE National Awakening",
+      "logo": "party-logos/ae/national-awakening.svg",
+      "sha256": "3890e21360916a91b9ee237f0478f642a6cb112fac75e1674a2686a3d6b13914",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:UAE_National_Awakening.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre", "Nationalism", "Conservatism"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2011,
+      "leader": "Noura Al Kaabi",
+      "leaderTitle": "List Leader",
+      "inPower": true,
+      "seats": 8,
+      "seatsTotal": 40,
+      "chamberName": "Federal National Council",
+      "sources": [
+        {
+          "title": "2023 United Arab Emirates Federal National Council elections – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_United_Arab_Emirates_Federal_National_Council_elections"
+        }
+      ]
+    },
+    {
+      "id": "AE-POD",
+      "country": "AE",
+      "shortName": "POD",
+      "name": "People of Determination",
+      "nameEn": "People of Determination",
+      "logo": "party-logos/ae/pod.svg",
+      "sha256": "5edb39acd0524700d8a6beb337506180a4ac18646ba5793388128b0839c8f8a4",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:People_of_Determination.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2015,
+      "leader": "Mariam Al Mansoori",
+      "leaderTitle": "List Leader",
+      "inPower": true,
+      "seats": 6,
+      "seatsTotal": 40,
+      "chamberName": "Federal National Council",
+      "sources": [
+        {
+          "title": "2023 United Arab Emirates Federal National Council elections – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_United_Arab_Emirates_Federal_National_Council_elections"
+        }
+      ]
+    },
+    {
+      "id": "AE-AWWAL",
+      "country": "AE",
+      "shortName": "Awwal",
+      "name": "Emirati Awwal",
+      "nameEn": "Emirati Awwal",
+      "logo": "party-logos/ae/awwal.svg",
+      "sha256": "e60bba993029b4830683dcac1796403ce3f6de3c44d775422bddb72e1394fd2e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Emirati_Awwal.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre", "Nationalism"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2019,
+      "leader": "Amal Al Qubaisi",
+      "leaderTitle": "List Leader",
+      "inPower": true,
+      "seats": 5,
+      "seatsTotal": 40,
+      "chamberName": "Federal National Council",
+      "sources": [
+        {
+          "title": "2023 United Arab Emirates Federal National Council elections – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_United_Arab_Emirates_Federal_National_Council_elections"
+        }
+      ]
+    }
+  ],
+  "IS": [
+    {
+      "id": "IS-IP",
+      "country": "IS",
+      "shortName": "IP",
+      "name": "Sjalfstaedisflokkur",
+      "nameEn": "Independence Party",
+      "logo": "party-logos/is/independence.svg",
+      "sha256": "f39c63de7ce780fbfe0081fe704b98f2f48ad185d5dbe31e0c341d0c71cfd124",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Iceland_Independence_Party_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Conservatism", "Liberalism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1929,
+      "leader": "Bjarni Benediktsson",
+      "leaderTitle": "Party Chair",
+      "inPower": true,
+      "seats": 16,
+      "seatsTotal": 63,
+      "chamberName": "Althing",
+      "sources": [
+        {
+          "title": "Independence Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Independence_Party_(Iceland)"
+        },
+        {
+          "title": "2021 Icelandic parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2021_Icelandic_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IS-LGM",
+      "country": "IS",
+      "shortName": "LGM",
+      "name": "Vinstrihreyfingin grænt framboð",
+      "nameEn": "Left-Green Movement",
+      "logo": "party-logos/is/leftgreen.svg",
+      "sha256": "3a9362393a43b0e8cbb1fe86e2064f835374f464d5836fa615b64be1e15d4bd2",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:LV_-_Left-Green_Movement_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Left", "Environmentalism", "Socialism"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 1999,
+      "leader": "Katrin Jakobsdóttir",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 13,
+      "seatsTotal": 63,
+      "chamberName": "Althing",
+      "sources": [
+        {
+          "title": "Left-Green Movement – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Left-Green_Movement"
+        },
+        {
+          "title": "2021 Icelandic parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2021_Icelandic_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IS-PP",
+      "country": "IS",
+      "shortName": "PP",
+      "name": "Píratar",
+      "nameEn": "Pirate Party",
+      "logo": "party-logos/is/pirate.png",
+      "sha256": "b1c3f698e4fdd7aebac5c4a63fbd564243dbedc243c55612855a4fae48d13737",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Pirateparty.is_logo.png",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-left", "Pirate politics", "Direct democracy"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2012,
+      "leader": "Jón Ögmundur Einarsson",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 63,
+      "chamberName": "Althing",
+      "sources": [
+        {
+          "title": "Pirate Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pirate_Party_(Iceland)"
+        },
+        {
+          "title": "2021 Icelandic parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2021_Icelandic_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "LT": [
+    {
+      "id": "LT-LABOUR",
+      "country": "LT",
+      "shortName": "Labour",
+      "name": "Lietuvos Darbo Partija",
+      "nameEn": "Lithuanian Labour Party",
+      "logo": "party-logos/lt/labour.svg",
+      "sha256": "715569d0012306e3dc7c040268b020c14f4c4e3855d6c28f217cde5b8189a026",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Lithuanian_Labour_Party_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-left", "Social democracy", "Populism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1999,
+      "leader": "Vilija Blinkevičiūtė",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 52,
+      "seatsTotal": 141,
+      "chamberName": "Seimas",
+      "sources": [
+        {
+          "title": "Lithuanian Labour Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lithuanian_Labour_Party"
+        },
+        {
+          "title": "2024 Lithuanian parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Lithuanian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "LT-CONSERVATIVE",
+      "country": "LT",
+      "shortName": "Conservative",
+      "name": "Lietuvos Konservatoriai",
+      "nameEn": "Lithuanian Conservative Party",
+      "logo": "party-logos/lt/conservative.svg",
+      "sha256": "c735d3edbb4ed53eeb504923103930e214dfacba335cc82d2429e34f53f0da47",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Lithuanian_Conservative_Party_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Conservatism", "Christian democracy"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2001,
+      "leader": "Andrius Kubilius",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 27,
+      "seatsTotal": 141,
+      "chamberName": "Seimas",
+      "sources": [
+        {
+          "title": "Lithuanian Conservative Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lithuanian_Conservative_Party"
+        },
+        {
+          "title": "2024 Lithuanian parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Lithuanian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "LT-SDP",
+      "country": "LT",
+      "shortName": "LSDP",
+      "name": "Lietuvos Socialdemokratų Partija",
+      "nameEn": "Lithuanian Social Democratic Party",
+      "logo": "party-logos/lt/sdp.svg",
+      "sha256": "db0b8dd5a6423804ab95dd3c4462136456ed29fcb13d4087a8952a8b21231e95",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Lithuanian_Social_Democratic_Party_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-left", "Social democracy"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1989,
+      "leader": "Gintautas Paluckas",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 20,
+      "seatsTotal": 141,
+      "chamberName": "Seimas",
+      "sources": [
+        {
+          "title": "Lithuanian Social Democratic Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lithuanian_Social_Democratic_Party"
+        },
+        {
+          "title": "2024 Lithuanian parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Lithuanian_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "LU": [
+    {
+      "id": "LU-DP",
+      "country": "LU",
+      "shortName": "DP",
+      "name": "Demokratesch Partei",
+      "nameEn": "Democratic Party",
+      "logo": "party-logos/lu/liberal.svg",
+      "sha256": "9cd34eacfb5b5edcbc86296443a74e53c5a3be58264554725cdb9ab5ca2f5c83",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Luxembourg_Liberal_Party_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Liberalism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1904,
+      "leader": "Xavier Bettel",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 21,
+      "seatsTotal": 60,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Democratic Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Luxembourg)"
+        },
+        {
+          "title": "2023 Luxembourgish legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Luxembourgish_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "LU-CSV",
+      "country": "LU",
+      "shortName": "CSV",
+      "name": "Chrëschleche Sozial Vollekspartei",
+      "nameEn": "Christian Social People's Party",
+      "logo": "party-logos/lu/christian.svg",
+      "sha256": "0a9d029124fbd0d6bfde991aa62cf7883f544603a70cf933ac317f1af236575e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Luksemburgo_Kristana_Partio_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Christian democracy", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1914,
+      "leader": "Claude Haagen",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 13,
+      "seatsTotal": 60,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Christian Social People's Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Christian_Social_People%27s_Party"
+        },
+        {
+          "title": "2023 Luxembourgish legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Luxembourgish_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "LU-LSAP",
+      "country": "LU",
+      "shortName": "LSAP",
+      "name": "Lëtzebuergesch Sozialistisch Aarbechter Partei",
+      "nameEn": "Socialist Workers' Party",
+      "logo": "party-logos/lu/socialist.svg",
+      "sha256": "2ee7269779d43da351ea2940ccfc9717c04dc0af72081fe09383d07b38200c23",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Luxembourg_Socialist_Workers_Party_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-left", "Social democracy"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1902,
+      "leader": "François Benoy",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 10,
+      "seatsTotal": 60,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Socialist Workers' Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Workers%27_Party_(Luxembourg)"
+        },
+        {
+          "title": "2023 Luxembourgish legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Luxembourgish_legislative_election"
+        }
+      ]
+    }
+  ],
+  "MT": [
+    {
+      "id": "MT-LABOUR",
+      "country": "MT",
+      "shortName": "MLP",
+      "name": "Partit Laburista",
+      "nameEn": "Labour Party",
+      "logo": "party-logos/mt/labour.svg",
+      "sha256": "8793452a8dd658d830149222ff6eb2d0cbdd87bf002aee8330333e8bafd34aac",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Malta_Labour_Party_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-left", "Social democracy", "Nationalism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1921,
+      "leader": "Robert Abela",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 36,
+      "seatsTotal": 68,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Labour Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Labour_Party_(Malta)"
+        },
+        {
+          "title": "2022 Maltese general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Maltese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MT-NATIONALIST",
+      "country": "MT",
+      "shortName": "PN",
+      "name": "Partit Nazzjonalista",
+      "nameEn": "Nationalist Party",
+      "logo": "party-logos/mt/nationalist.svg",
+      "sha256": "2219e4dcf6dda06d7c51c455d487a75f9eaf471c3f8a555cba1c62da53f96dba",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partit_Nazzjonalista_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Christian democracy", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1926,
+      "leader": "Bernard Grech",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 32,
+      "seatsTotal": 68,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Nationalist Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nationalist_Party_(Malta)"
+        },
+        {
+          "title": "2022 Maltese general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Maltese_general_election"
+        }
+      ]
+    },
+    {
+      "id": "MT-ADPM",
+      "country": "MT",
+      "shortName": "AD",
+      "name": "Azzjoni Demokratika Partija Maltin",
+      "nameEn": "Democratic Action Party",
+      "logo": "party-logos/mt/adpm.svg",
+      "sha256": "c9775350e7f9da185894216335a3278c706de4d181e077231a1dff94e87df550",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:ADPM_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre", "Liberalism", "Environmentalism"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2017,
+      "leader": "Carmel Cachia",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 68,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Democratic Action Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Action_Party_(Malta)"
+        },
+        {
+          "title": "2022 Maltese general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Maltese_general_election"
         }
       ]
     }
