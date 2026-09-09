@@ -6313,8 +6313,8 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PT",
       "name": "Partido dos Trabalhadores",
       "nameEn": "Workers' Party",
-      "logo": "party-logos/br/pdt.svg",
-      "sha256": "f95e55b050d8248f390c1cfb8fba91655e4b46931a930de161b305a134451bf3",
+      "logo": "party-logos/br/pdt.png",
+      "sha256": "4d5863261c765807a3529e3402e58f428641c6747717ef0779fd39aa4a3ed7ac",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PT_Brasil_Logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": [
@@ -6347,8 +6347,8 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "LIB",
       "name": "Liberal Party of Canada",
       "nameEn": "Liberal Party of Canada",
-      "logo": "party-logos/ca/lib.svg",
-      "sha256": "975a1ce9e21d740d884bff9f802ce4ad84740e4a30ca6d0596df55d14947a09d",
+      "logo": "party-logos/ca/lpc.svg",
+      "sha256": "bb4018fd39dee8bf32d5c1dcacafce90ba4db481b6c5d8395db33598ece2a026",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Liberal_Party_of_Canada_logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": [
@@ -6382,7 +6382,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "name": "Christlich Demokratische Union Deutschlands",
       "nameEn": "Christian Democratic Union",
       "logo": "party-logos/de/cdu.svg",
-      "sha256": "1bb93f937194d6f24e2c45e0e3b1c3f4e5b5e6f7a8b9c0d1e2f3a4b5c6d7e8f",
+      "sha256": "91571409a6b3d6013c79b2ff1307309878c30d9c279f434446139eaee76d9c55",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:CDU_Logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": [
@@ -6416,7 +6416,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "name": "Partido Popular",
       "nameEn": "People's Party",
       "logo": "party-logos/es/pp.svg",
-      "sha256": "2cc04f938295e6g25f3d56f1f3c2d4e5f6a6f7b8c9d0e1f2g3h4i5j6k7l8m9n",
+      "sha256": "3e9b0fbd98e1b4cd6547c4148000fa849e655281ca809c093339acc733c45c97",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partido_Popular_Logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": [
@@ -6449,8 +6449,8 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "ENSEMBLE",
       "name": "Ensemble pour la République",
       "nameEn": "Together for the Republic",
-      "logo": "party-logos/fr/ensemble.svg",
-      "sha256": "3dd05g049306f7h36g4e67g2g3d3e5f6g7a7f8b9c0e1f2g3h4i5j6k7l8m9n0o",
+      "logo": "party-logos/fr/en.svg",
+      "sha256": "4079eda0a0accbf30491bd73b6d29ce6cda67d394c1bf6d57abd0d568ef0322c",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Ensemble_pour_la_République_logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": [
@@ -6483,8 +6483,8 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "LAB",
       "name": "Labour Party",
       "nameEn": "Labour Party",
-      "logo": "party-logos/gb/lab.svg",
-      "sha256": "4ee06h150417g8i47h5f78h3h4e4f6g7h8a8g9c1d2e3f4g5h6i7j8k9l0m1n2o",
+      "logo": "party-logos/gb/labour.svg",
+      "sha256": "ab47261debf135f500f108b76abab8167ec0955265be57f5e51b0c4fc0f940ac",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:UK_Labour_Party_Logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": [
