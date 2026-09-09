@@ -8260,6 +8260,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/pe/fuerza-popular.svg",
       "sha256": "1b8981d4ef5179f643fa6b65b285c450db4864f91feafb10cc77dcffc04bcee9",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fuerza_Popular_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
       "ideology": ["Right-wing", "Conservatism", "Authoritarianism"],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
@@ -8290,6 +8291,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/pe/juntos-por-el-peru.svg",
       "sha256": "67bf3974a9f2718c266ccbcf7f22b3303d22ef2baf6a0bc78064b6d4bdac62f5",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Juntos_por_el_Peru_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
       "ideology": ["Centre-left", "Social democracy", "Indigenism"],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
@@ -8344,6 +8346,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/pk/pmln.svg",
       "sha256": "515c559c02541d139997800f7a8608067626454b0d91c089bd62b9763a707ff9",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PML-N_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
       "ideology": ["Centre-right", "Conservatism", "Nationalism"],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
@@ -8403,6 +8406,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/vn/cpv.svg",
       "sha256": "39479cb61a0da56a473e2d2da356b8e311e803b8763476f8de49b59346e0d7ea",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Communist_Party_of_Vietnam.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
       "ideology": ["Communism", "Marxism-Leninism", "Vietnamese nationalism"],
       "ideologyPosition": "far-left",
       "positionRaw": "Far-left",
@@ -8417,6 +8421,469 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Communist Party of Vietnam – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Vietnam"
+        }
+      ]
+    }
+  ],
+  "IE": [
+    {
+      "id": "IE-FF",
+      "country": "IE",
+      "shortName": "FF",
+      "name": "Fianna Fáil",
+      "nameEn": "Fianna Fáil",
+      "logo": "party-logos/ie/fianna-fail.svg",
+      "sha256": "43267fffa4757d00a99d62bafd9442a61fb47c816b6d481fb0dfb9ed6615cd57",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fianna_F%C3%A1il_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Irish republicanism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1926,
+      "leader": "Micheál Martin",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 78,
+      "seatsTotal": 160,
+      "chamberName": "Dáil Éireann",
+      "sources": [
+        {
+          "title": "Fianna Fáil – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fianna_F%C3%A1il"
+        },
+        {
+          "title": "2024 Irish general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "IE-FG",
+      "country": "IE",
+      "shortName": "FG",
+      "name": "Fine Gael",
+      "nameEn": "Fine Gael",
+      "logo": "party-logos/ie/fine-gael.svg",
+      "sha256": "d171bb78fd9e332f845a0c78f4f9bc004fdfb8d7f4c3a85e476e4d199bef6ac3",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fine_Gael_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Liberal conservatism", "Internationalism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1933,
+      "leader": "Simon Harris",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 37,
+      "seatsTotal": 160,
+      "chamberName": "Dáil Éireann",
+      "sources": [
+        {
+          "title": "Fine Gael – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fine_Gael"
+        },
+        {
+          "title": "2024 Irish general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
+        }
+      ]
+    },
+    {
+      "id": "IE-SF",
+      "country": "IE",
+      "shortName": "SF",
+      "name": "Sinn Féin",
+      "nameEn": "Sinn Féin",
+      "logo": "party-logos/ie/sinn-fein.svg",
+      "sha256": "da4d3d7f60b67bfcdce218021815851241369608ef347ef8b5a793760ddb5d2d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Sinn_F%C3%A9in_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Left-wing", "Irish republicanism", "Socialism"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1905,
+      "leader": "Mary Lou McDonald",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 37,
+      "seatsTotal": 160,
+      "chamberName": "Dáil Éireann",
+      "sources": [
+        {
+          "title": "Sinn Féin – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sinn_F%C3%A9in"
+        },
+        {
+          "title": "2024 Irish general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
+        }
+      ]
+    }
+  ],
+  "HU": [
+    {
+      "id": "HU-FIDESZ",
+      "country": "HU",
+      "shortName": "Fidesz",
+      "name": "Fidesz – Hungarian Civic Alliance",
+      "nameEn": "Fidesz – Hungarian Civic Alliance",
+      "logo": "party-logos/hu/fidesz.svg",
+      "sha256": "dd6e19d895d7cc0c9535ddd27e0974e8add4f6b9619f356c99f5d850132f84ff",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fidesz_logo.svg",
+      "ideology": ["Right-wing", "Conservatism", "Hungarian nationalism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1988,
+      "leader": "Viktor Orbán",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "seats": 133,
+      "seatsTotal": 199,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Fidesz – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fidesz"
+        },
+        {
+          "title": "2022 Hungarian parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Hungarian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "HU-MSZP",
+      "country": "HU",
+      "shortName": "MSZP",
+      "name": "Hungarian Socialist Party",
+      "nameEn": "Hungarian Socialist Party",
+      "logo": "party-logos/hu/mszp.svg",
+      "sha256": "d9dfb0e28bf935cef870087e5f06466700ed6b054f00283ada6c7171a990172e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:MSZP_logo.svg",
+      "ideology": ["Centre-left", "Social democracy", "Post-communism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1989,
+      "leader": "Péter Jakab",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 199,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Hungarian Socialist Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hungarian_Socialist_Party"
+        },
+        {
+          "title": "2022 Hungarian parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Hungarian_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "HU-DK",
+      "country": "HU",
+      "shortName": "DK",
+      "name": "Democratic Coalition",
+      "nameEn": "Democratic Coalition",
+      "logo": "party-logos/hu/dk.svg",
+      "sha256": "7c20264b918db827adb1138bcbacfc75ac88a08b9b09e178d200cb74198f997b",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:DK_Hungary_logo.svg",
+      "ideology": ["Left-wing", "Progressivism", "Anti-authoritarianism"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1990,
+      "leader": "Ferenc Gyurcsány",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 199,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Democratic Coalition (Hungary) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Coalition_(Hungary)"
+        },
+        {
+          "title": "2022 Hungarian parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Hungarian_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "IL": [
+    {
+      "id": "IL-LIKUD",
+      "country": "IL",
+      "shortName": "Likud",
+      "name": "Likud",
+      "nameEn": "Likud",
+      "logo": "party-logos/il/likud.svg",
+      "sha256": "7e023531de755255b8a661d0bbea0634d19158f9ccef6f3d39f7e02bc5093bda",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Likud_logo.svg",
+      "ideology": ["Right-wing", "Conservatism", "Zionism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1973,
+      "leader": "Benjamin Netanyahu",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "seats": 32,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Likud – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Likud"
+        },
+        {
+          "title": "2024 Israeli legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Israeli_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "IL-YESH-ATID",
+      "country": "IL",
+      "shortName": "Yesh Atid",
+      "name": "Yesh Atid",
+      "nameEn": "Yesh Atid",
+      "logo": "party-logos/il/yesh-atid.svg",
+      "sha256": "abe288e3aef4a9fe88e336e5b850da9a0e80c00d1d9010ff19191d1c884c1b4d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Yesh_Atid_logo.svg",
+      "ideology": ["Centre", "Centrist", "Secular liberalism"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2012,
+      "leader": "Yair Lapid",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 24,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Yesh Atid – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Yesh_Atid"
+        },
+        {
+          "title": "2024 Israeli legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Israeli_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "IL-BLUE-WHITE",
+      "country": "IL",
+      "shortName": "Blue and White",
+      "name": "Blue and White",
+      "nameEn": "Blue and White",
+      "logo": "party-logos/il/blue-white.svg",
+      "sha256": "8f048aaa290937c35eb086ef33cbd04584dbd41bd9044af7af028b4cd1a9ce5f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Blue_and_White_logo.svg",
+      "ideology": ["Centre-right", "Centrism", "Zionism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2019,
+      "leader": "Gadi Eisenkot",
+      "leaderTitle": "Party Chairman",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Blue and White (political alliance) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Blue_and_White_(political_alliance)"
+        },
+        {
+          "title": "2024 Israeli legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Israeli_legislative_election"
+        }
+      ]
+    }
+  ],
+  "CZ": [
+    {
+      "id": "CZ-ANO",
+      "country": "CZ",
+      "shortName": "ANO",
+      "name": "ANO 2011",
+      "nameEn": "ANO 2011",
+      "logo": "party-logos/cz/ano.svg",
+      "sha256": "1f283207e63a22e20f58b43881a886dd93896e625204a2f99d5d620c78ed569a",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:ANO_logo.svg",
+      "ideology": ["Centrist", "Anti-corruption", "Populism"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centrist",
+      "founded": 2011,
+      "leader": "Andrej Babiš",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 101,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "ANO 2011 – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/ANO_2011"
+        },
+        {
+          "title": "2021 Czech legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2021_Czech_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "CZ-CSSD",
+      "country": "CZ",
+      "shortName": "ČSSD",
+      "name": "Czech Social Democratic Party",
+      "nameEn": "Czech Social Democratic Party",
+      "logo": "party-logos/cz/cssd.svg",
+      "sha256": "7c9c5c3b423e409b76cc572796453f098e5f126f1ffc38412ff71028addf3978",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:CSSD_logo.svg",
+      "ideology": ["Centre-left", "Social democracy", "Post-communist"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1990,
+      "leader": "Petr Nečas",
+      "leaderTitle": "Party Chairman",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Czech Social Democratic Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Czech_Social_Democratic_Party"
+        },
+        {
+          "title": "2021 Czech legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2021_Czech_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "CZ-SPD",
+      "country": "CZ",
+      "shortName": "SPD",
+      "name": "Freedom and Direct Democracy",
+      "nameEn": "Freedom and Direct Democracy",
+      "logo": "party-logos/cz/spd.svg",
+      "sha256": "c28511f43ceefb73b9c001828c0f52d1b44cafcd1213a03b31f71fb27a791a2d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:SPD_Czech_logo.svg",
+      "ideology": ["Right-wing", "Euroscepticism", "Populism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2015,
+      "leader": "Tomio Okamura",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Freedom and Direct Democracy – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Freedom_and_Direct_Democracy"
+        },
+        {
+          "title": "2021 Czech legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2021_Czech_legislative_election"
+        }
+      ]
+    }
+  ],
+  "RO": [
+    {
+      "id": "RO-PNL",
+      "country": "RO",
+      "shortName": "PNL",
+      "name": "National Liberal Party",
+      "nameEn": "National Liberal Party",
+      "logo": "party-logos/ro/pnl.svg",
+      "sha256": "f6db48645863ac1f20111735ebdfaaeffac6d8331525b8349e5f0e54c21261ee",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PNL_Romania_logo.svg",
+      "ideology": ["Centre-right", "Liberalism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1875,
+      "leader": "Nicolae Ciucă",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 116,
+      "seatsTotal": 330,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "National Liberal Party (Romania) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Liberal_Party_(Romania)"
+        },
+        {
+          "title": "2024 Romanian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Romanian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "RO-PSD",
+      "country": "RO",
+      "shortName": "PSD",
+      "name": "Social Democratic Party",
+      "nameEn": "Social Democratic Party",
+      "logo": "party-logos/ro/psd.svg",
+      "sha256": "b6385f8f2142859ce386f936b45d33137b7d3467f35aa2a9272174d8712c3ab9",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PSD_Romania_logo.svg",
+      "ideology": ["Centre-left", "Social democracy", "Post-communist"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1992,
+      "leader": "Marcel Ciolacu",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 110,
+      "seatsTotal": 330,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Social Democratic Party (Romania) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Romania)"
+        },
+        {
+          "title": "2024 Romanian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Romanian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "RO-USR",
+      "country": "RO",
+      "shortName": "USR",
+      "name": "Union Save Romania",
+      "nameEn": "Union Save Romania",
+      "logo": "party-logos/ro/usr.svg",
+      "sha256": "94c0c9bc001633a74d2f481bc798d8d76ca6c3efce797378c057a6aeb0420262",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:USR_Romania_logo.svg",
+      "ideology": ["Centre", "Anti-corruption", "Pro-European"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2016,
+      "leader": "Elena Lasconi",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 41,
+      "seatsTotal": 330,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Union Save Romania – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Union_Save_Romania"
+        },
+        {
+          "title": "2024 Romanian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Romanian_legislative_election"
         }
       ]
     }
