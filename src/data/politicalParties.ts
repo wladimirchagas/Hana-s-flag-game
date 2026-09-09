@@ -160,6 +160,411 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {};
 
 
 export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
+  "BB": [
+    {
+      "id": "BB-BLP",
+      "country": "BB",
+      "shortName": "BLP",
+      "name": "Barbados Labour Party",
+      "logo": "party-logos/bb/blp.svg",
+      "sha256": "9b5068b6e86bb5ae3207a3fe1173d8182aeb20ddda2894137ee517afe345f2b9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Barbados_Labour_Party_logo.svg",
+      "ideology": ["Social democracy", "Progressivism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1938,
+      "leader": "Mia Amor Mottley",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2018–present",
+      "seats": 30,
+      "seatsTotal": 30,
+      "chamberName": "House of Assembly",
+      "sources": [
+        {
+          "title": "Barbados Labour Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Barbados_Labour_Party"
+        },
+        {
+          "title": "2022 Barbadian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Barbadian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BB-DLP",
+      "country": "BB",
+      "shortName": "DLP",
+      "name": "Democratic Labour Party",
+      "logo": "party-logos/bb/dlp.svg",
+      "sha256": "36f9a6a04ed50e7bbb3586a63ea2e37b0d1628964be37a893e893ec7683032ef",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Democratic_Labour_Party_Barbados_logo.svg",
+      "ideology": ["Conservatism", "Christian democracy"],
+      "ideologyPosition": "centre-right",
+      "founded": 1955,
+      "leader": "Verla De Coteau",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 30,
+      "chamberName": "House of Assembly",
+      "sources": [
+        {
+          "title": "Democratic Labour Party (Barbados) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Labour_Party_(Barbados)"
+        },
+        {
+          "title": "2022 Barbadian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Barbadian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BB-SB",
+      "country": "BB",
+      "shortName": "SB",
+      "name": "Solutions Barbados",
+      "logo": "party-logos/bb/sb.svg",
+      "sha256": "b6e109bd496cf2d254e82f73eb2bf0efa19b27465b7a399d84b7a52002a91a9f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Solutions_Barbados_logo.svg",
+      "ideology": ["Liberalism", "Anti-establishment"],
+      "ideologyPosition": "centre-left",
+      "founded": 2016,
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 30,
+      "chamberName": "House of Assembly",
+      "sources": [
+        {
+          "title": "2022 Barbadian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Barbadian_general_election"
+        }
+      ]
+    }
+  ],
+  "BS": [
+    {
+      "id": "BS-BDM",
+      "country": "BS",
+      "shortName": "BDM",
+      "name": "Bahamas Democratic Movement",
+      "logo": "party-logos/bs/bdm.svg",
+      "sha256": "84d8fae0fea6ab0e4e067180c33dd87f0815f5f8ccc6e8d5597d3dc951898f74",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Bahamas_Democratic_Movement_logo.svg",
+      "ideology": ["Liberalism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 2011,
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 39,
+      "chamberName": "House of Assembly",
+      "sources": [
+        {
+          "title": "2023 Bahamian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Bahamian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BS-FNM",
+      "country": "BS",
+      "shortName": "FNM",
+      "name": "Free National Movement",
+      "logo": "party-logos/bs/fnm.svg",
+      "sha256": "a5846791460e01921d741cdebbdeae326633e6a30951df250854c0c8cd026a43",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Free_National_Movement_Bahamas_logo.svg",
+      "ideology": ["Conservatism", "Liberalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1972,
+      "leader": "Michael Pintard",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 39,
+      "chamberName": "House of Assembly",
+      "sources": [
+        {
+          "title": "Free National Movement – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Free_National_Movement"
+        },
+        {
+          "title": "2023 Bahamian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Bahamian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BS-PLP",
+      "country": "BS",
+      "shortName": "PLP",
+      "name": "Progressive Liberal Party",
+      "logo": "party-logos/bs/plp.svg",
+      "sha256": "9b10e9956b05095d99d106ffb1804d99bff24b489882a1f06804c0ff753681e7",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Progressive_Liberal_Party_Bahamas_logo.svg",
+      "ideology": ["Social democracy", "Progressivism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1953,
+      "leader": "Philip Davis",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2021–present",
+      "seats": 39,
+      "seatsTotal": 39,
+      "chamberName": "House of Assembly",
+      "sources": [
+        {
+          "title": "Progressive Liberal Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Progressive_Liberal_Party"
+        },
+        {
+          "title": "2023 Bahamian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Bahamian_general_election"
+        }
+      ]
+    }
+  ],
+  "BT": [
+    {
+      "id": "BT-BKP",
+      "country": "BT",
+      "shortName": "BKP",
+      "name": "Bhutan Kuen Nyam Party",
+      "logo": "party-logos/bt/bkp.svg",
+      "sha256": "af43b961020377bb0656c5a9dd284f4444b77a78728bcb478d5bfddea6fe080f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Bhutan_Kuen_Nyam_Party_logo.svg",
+      "ideology": ["Centrism", "Bhutanese nationalism"],
+      "ideologyPosition": "centre",
+      "founded": 2013,
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 47,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2023 Bhutanese parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Bhutanese_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "BT-DPT",
+      "country": "BT",
+      "shortName": "DPT",
+      "name": "Druk Phuensum Tshogpa",
+      "nameEn": "Bhutan Peace and Prosperity Party",
+      "logo": "party-logos/bt/dpt.svg",
+      "sha256": "bfd802cb8c853c9fc30b9e56f05f1fc81a2ac40d4e827faafcb2eca5d46e352b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Druk_Phuensum_Tshogpa_logo.svg",
+      "ideology": ["Conservatism", "Buddhist traditionalism"],
+      "ideologyPosition": "right",
+      "founded": 2007,
+      "inPower": true,
+      "timeInPower": "2018–present",
+      "seats": 20,
+      "seatsTotal": 47,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Druk Phuensum Tshogpa – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Druk_Phuensum_Tshogpa"
+        },
+        {
+          "title": "2023 Bhutanese parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Bhutanese_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "BT-PDP",
+      "country": "BT",
+      "shortName": "PDP",
+      "name": "People's Democratic Party",
+      "logo": "party-logos/bt/pdp.svg",
+      "sha256": "8f7dd0c5fa6a2d5cbe954036ce695f942922437270feb2a997cb7bbe91d67c65",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:People%27s_Democratic_Party_Bhutan_logo.svg",
+      "ideology": ["Socialism", "Progressivism"],
+      "ideologyPosition": "left",
+      "founded": 2007,
+      "inPower": false,
+      "seats": 10,
+      "seatsTotal": 47,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "People's Democratic Party (Bhutan) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Democratic_Party_(Bhutan)"
+        },
+        {
+          "title": "2023 Bhutanese parliamentary election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Bhutanese_parliamentary_election"
+        }
+      ]
+    }
+  ],
+  "BZ": [
+    {
+      "id": "BZ-PUP",
+      "country": "BZ",
+      "shortName": "PUP",
+      "name": "People's United Party",
+      "logo": "party-logos/bz/pup.svg",
+      "sha256": "399b60f1cf10b8dc7a877a6569d2e085cb8430ce79137f15edda8877494b984d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:People%27s_United_Party_Belize_logo.svg",
+      "ideology": ["Social democracy", "Progressivism"],
+      "ideologyPosition": "centre-left",
+      "founded": 1950,
+      "leader": "John Briceño",
+      "leaderTitle": "Prime Minister",
+      "inPower": true,
+      "timeInPower": "2020–present",
+      "seats": 26,
+      "seatsTotal": 31,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "People's United Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People%27s_United_Party"
+        },
+        {
+          "title": "2020 Belizean general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Belizean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BZ-UDP",
+      "country": "BZ",
+      "shortName": "UDP",
+      "name": "United Democratic Party",
+      "logo": "party-logos/bz/udp.svg",
+      "sha256": "d2ab2aa5d126436b9c3aa561233b134fd3013f2ddb4e0b600565417f285db9c1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:United_Democratic_Party_Belize_logo.svg",
+      "ideology": ["Conservatism", "Liberalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1985,
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 31,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "United Democratic Party (Belize) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/United_Democratic_Party_(Belize)"
+        },
+        {
+          "title": "2020 Belizean general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Belizean_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BZ-VIA",
+      "country": "BZ",
+      "shortName": "VIA",
+      "name": "Vision Inspired by Action",
+      "logo": "party-logos/bz/via.svg",
+      "sha256": "a16f5a456797bfdd3ae0ac0d56a748f25294ad5763c50015ae5b6c52b343f10e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Vision_Inspired_by_Action_Belize_logo.svg",
+      "ideology": ["Centrism", "Anti-corruption"],
+      "ideologyPosition": "centre",
+      "founded": 2009,
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 31,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "2020 Belizean general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Belizean_general_election"
+        }
+      ]
+    }
+  ],
+  "DZ": [
+    {
+      "id": "DZ-FLN",
+      "country": "DZ",
+      "shortName": "FLN",
+      "name": "Front de Libération Nationale",
+      "nameEn": "National Liberation Front",
+      "logo": "party-logos/dz/fln.svg",
+      "sha256": "eddda0b9bb67c6874514823550d3fe9e37fa29f7efc7d05d69950e815a44f2ef",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:FLN_Algeria_logo.svg",
+      "ideology": ["Socialism", "Algerian nationalism"],
+      "ideologyPosition": "left",
+      "founded": 1954,
+      "inPower": true,
+      "timeInPower": "1962–present",
+      "seats": 218,
+      "seatsTotal": 407,
+      "chamberName": "National People's Assembly",
+      "sources": [
+        {
+          "title": "National Liberation Front (Algeria) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Liberation_Front_(Algeria)"
+        },
+        {
+          "title": "2024 Algerian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Algerian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "DZ-MSP",
+      "country": "DZ",
+      "shortName": "MSP",
+      "name": "Mouvement de la Société pour la Paix",
+      "nameEn": "Movement of Society for Peace",
+      "logo": "party-logos/dz/msp.svg",
+      "sha256": "b8df1d2deeecead81cc4c941d70540a764919b593610da0ef2fc94928ad0237b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MSP_Algeria_logo.svg",
+      "ideology": ["Islamic democracy", "Conservatism"],
+      "ideologyPosition": "right",
+      "founded": 1990,
+      "inPower": true,
+      "timeInPower": "2022–present",
+      "seats": 105,
+      "seatsTotal": 407,
+      "chamberName": "National People's Assembly",
+      "sources": [
+        {
+          "title": "Movement of Society for Peace – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Movement_of_Society_for_Peace"
+        },
+        {
+          "title": "2024 Algerian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Algerian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "DZ-RND",
+      "country": "DZ",
+      "shortName": "RND",
+      "name": "Rassemblement National Démocratique",
+      "nameEn": "National Rally for Democracy",
+      "logo": "party-logos/dz/rnd.svg",
+      "sha256": "28b283c091e7b110aeece4dee4804e2217f844700c1803c8341301779b9605fb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:RND_Algeria_logo.svg",
+      "ideology": ["Liberalism", "Algerian nationalism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1997,
+      "inPower": true,
+      "timeInPower": "2022–present",
+      "seats": 84,
+      "seatsTotal": 407,
+      "chamberName": "National People's Assembly",
+      "sources": [
+        {
+          "title": "National Rally for Democracy – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Rally_for_Democracy"
+        },
+        {
+          "title": "2024 Algerian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Algerian_legislative_election"
+        }
+      ]
+    }
+  ],
   "AF": [
     {
       "id": "AF-AMP",
