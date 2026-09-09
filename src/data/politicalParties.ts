@@ -8887,5 +8887,480 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "BA": [
+    {
+      "id": "BA-HDZ",
+      "country": "BA",
+      "shortName": "HDZ BiH",
+      "name": "Hrvataska Demokratska Zajednica Bosne i Hercegovine",
+      "nameEn": "Croatian Democratic Union of Bosnia and Herzegovina",
+      "logo": "party-logos/ba/hdz-bih.svg",
+      "sha256": "17cea14f2d09514716b1e4c326849519782c66765ce385981b314f316e7efc6e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:HDZ_BiH_-_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Croatian nationalism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1990,
+      "leader": "Dragan Čović",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 10,
+      "seatsTotal": 42,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Croatian Democratic Union of Bosnia and Herzegovina – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Croatian_Democratic_Union_of_Bosnia_and_Herzegovina"
+        },
+        {
+          "title": "2022 Bosnian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Bosnian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BA-SDA",
+      "country": "BA",
+      "shortName": "SDA",
+      "name": "Stranka Demokratske Akcije",
+      "nameEn": "Party of Democratic Action",
+      "logo": "party-logos/ba/sda.svg",
+      "sha256": "39d2285d85db8300d8b95e4d47a31d31b95902e0754acfb11e765a0c9107d05e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:SDA_party_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre", "Bosniak nationalism", "Conservatism"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1990,
+      "leader": "Bakir Izetbegović",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 10,
+      "seatsTotal": 42,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Party of Democratic Action – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Party_of_Democratic_Action"
+        },
+        {
+          "title": "2022 Bosnian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Bosnian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BA-SNSD",
+      "country": "BA",
+      "shortName": "SNSD",
+      "name": "Savez Nezavisnih Socijaldemokrata",
+      "nameEn": "Alliance of Independent Social Democrats",
+      "logo": "party-logos/ba/snsd.svg",
+      "sha256": "98d629cf1542f6963f3c7a848bd8893418be73a272d42539332330c0776c2c58",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:SNSD_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-left", "Serb nationalism", "Populism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1996,
+      "leader": "Milorad Dodik",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 8,
+      "seatsTotal": 42,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Alliance of Independent Social Democrats – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alliance_of_Independent_Social_Democrats"
+        },
+        {
+          "title": "2022 Bosnian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Bosnian_general_election"
+        }
+      ]
+    }
+  ],
+  "BG": [
+    {
+      "id": "BG-GERB",
+      "country": "BG",
+      "shortName": "GERB",
+      "name": "Граждане за европейско развитие на България",
+      "nameEn": "Citizens for European Development of Bulgaria",
+      "logo": "party-logos/bg/gerb.svg",
+      "sha256": "4953b94d5e96fdec3b8db8fe50d1f9b2667a12d44b5650820f5335cd7c28bae7",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:GERB_party_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Conservatism", "Liberalism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2006,
+      "leader": "Boyko Borissov",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 68,
+      "seatsTotal": 240,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Citizens for European Development of Bulgaria – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Citizens_for_European_Development_of_Bulgaria"
+        },
+        {
+          "title": "2024 Bulgarian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Bulgarian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "BG-BSP",
+      "country": "BG",
+      "shortName": "BSP",
+      "name": "Българска социалистическа партия",
+      "nameEn": "Bulgarian Socialist Party",
+      "logo": "party-logos/bg/bsp.svg",
+      "sha256": "74e889e6d75caa08e5183332d0ab22e21b948bfc5f669dc04a8bed0673d0dfad",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Bulgaria_Socialist_Party_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-left", "Social democracy", "Socialism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1990,
+      "leader": "Kornelia Ninova",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 37,
+      "seatsTotal": 240,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Bulgarian Socialist Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bulgarian_Socialist_Party"
+        },
+        {
+          "title": "2024 Bulgarian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Bulgarian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "BG-DPS",
+      "country": "BG",
+      "shortName": "DPS",
+      "name": "Движение за права и свободи",
+      "nameEn": "Movement for Rights and Freedoms",
+      "logo": "party-logos/bg/dps.svg",
+      "sha256": "d5b2a95dd731181c26f649a753026aaec35250ab035847087a9926b4998fc6dc",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:DPS_New_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre", "Liberalism", "Minority rights"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1990,
+      "leader": "Mustafa Karadayi",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 29,
+      "seatsTotal": 240,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Movement for Rights and Freedoms – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Movement_for_Rights_and_Freedoms"
+        },
+        {
+          "title": "2024 Bulgarian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Bulgarian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "CR": [
+    {
+      "id": "CR-PLN",
+      "country": "CR",
+      "shortName": "PLN",
+      "name": "Partido Liberación Nacional",
+      "nameEn": "National Liberation Party",
+      "logo": "party-logos/cr/pln.svg",
+      "sha256": "8fb7965448c7f7a9d7726ab62e92354a3d359366758f789e2999e60dde67cb4f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partido_Liberaci%C3%B3n_Nacional_%28Costa_Rica%29_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-left", "Social democracy", "Liberalism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1951,
+      "leader": "Óscar López Arias",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 25,
+      "seatsTotal": 57,
+      "chamberName": "Legislative Assembly",
+      "sources": [
+        {
+          "title": "National Liberation Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Liberation_Party_(Costa_Rica)"
+        },
+        {
+          "title": "2022 Costa Rican general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Costa_Rican_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CR-PUSC",
+      "country": "CR",
+      "shortName": "PUSC",
+      "name": "Partido Unidad Social Cristiana",
+      "nameEn": "Social Christian Unity Party",
+      "logo": "party-logos/cr/pusc.svg",
+      "sha256": "a897e2f9a3271649981efc9c72343e5a6c83a9e6f9a1ee5426484782db288a00",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partido_Unidad_Social_Cristiana_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Christian democracy", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1983,
+      "leader": "Manuel Esquivel",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 10,
+      "seatsTotal": 57,
+      "chamberName": "Legislative Assembly",
+      "sources": [
+        {
+          "title": "Social Christian Unity Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Christian_Unity_Party"
+        },
+        {
+          "title": "2022 Costa Rican general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Costa_Rican_general_election"
+        }
+      ]
+    },
+    {
+      "id": "CR-FA",
+      "country": "CR",
+      "shortName": "FA",
+      "name": "Frente Amplio",
+      "nameEn": "Broad Front",
+      "logo": "party-logos/cr/fa.svg",
+      "sha256": "a1bc33169ceb6e9d529d2fab40af7b4b6a9c8ca1314ee8ceb98fe6440ebb0068",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Frente_Amplio_%28Costa_Rica%29_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Left", "Social democracy", "Progressivism"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 2014,
+      "leader": "José María Villalta",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 9,
+      "seatsTotal": 57,
+      "chamberName": "Legislative Assembly",
+      "sources": [
+        {
+          "title": "Broad Front – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Broad_Front_(Costa_Rica)"
+        },
+        {
+          "title": "2022 Costa Rican general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2022_Costa_Rican_general_election"
+        }
+      ]
+    }
+  ],
+  "EE": [
+    {
+      "id": "EE-REFORM",
+      "country": "EE",
+      "shortName": "Reform",
+      "name": "Eesti Reformierakond",
+      "nameEn": "Estonian Reform Party",
+      "logo": "party-logos/ee/reform.svg",
+      "sha256": "553bb5cf5adc5a01d03926de0aabdf170d13087c3b93dba349e3ffafbf3c8ecf",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Eesti_Reformierakond_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Liberalism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1994,
+      "leader": "Kaja Kallas",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 37,
+      "seatsTotal": 101,
+      "chamberName": "Riigikogu",
+      "sources": [
+        {
+          "title": "Estonian Reform Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Estonian_Reform_Party"
+        },
+        {
+          "title": "2023 Estonian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Estonian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "EE-CENTRE",
+      "country": "EE",
+      "shortName": "Centre",
+      "name": "Eesti Keskerakond",
+      "nameEn": "Estonian Centre Party",
+      "logo": "party-logos/ee/centre.svg",
+      "sha256": "554b1a82eb290083c0ba8540e7c323668b44e71ed1c9c7fd1ae20f4d751c7389",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Estonian_Centre_Party_Logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-left", "Populism", "Liberalism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1991,
+      "leader": "Mihhail Kõlvart",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 26,
+      "seatsTotal": 101,
+      "chamberName": "Riigikogu",
+      "sources": [
+        {
+          "title": "Estonian Centre Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Estonian_Centre_Party"
+        },
+        {
+          "title": "2023 Estonian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Estonian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "EE-EKRE",
+      "country": "EE",
+      "shortName": "EKRE",
+      "name": "Eesti Konservatiivne Rahvaerakond",
+      "nameEn": "Conservative People's Party of Estonia",
+      "logo": "party-logos/ee/ekre.svg",
+      "sha256": "4af255e043fc8f79307d36b7ba8441e8485f34375729f9f0feab95c0569745b4",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:EKRE_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Right", "Nationalism", "Conservatism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right",
+      "founded": 2012,
+      "leader": "Martin Helme",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 101,
+      "chamberName": "Riigikogu",
+      "sources": [
+        {
+          "title": "Conservative People's Party of Estonia – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Conservative_People%27s_Party_of_Estonia"
+        },
+        {
+          "title": "2023 Estonian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Estonian_legislative_election"
+        }
+      ]
+    }
+  ],
+  "GE": [
+    {
+      "id": "GE-GD",
+      "country": "GE",
+      "shortName": "Georgian Dream",
+      "name": "Georgian Dream – Democratic Georgia",
+      "nameEn": "Georgian Dream – Democratic Georgia",
+      "logo": "party-logos/ge/georgian-dream.svg",
+      "sha256": "a476e4acf57623655371de6a3931e60a13b4244b4f8c451f98bf687c5c681e27",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Georgian_Dream_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-left", "Populism", "Nationalism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2012,
+      "leader": "Irakli Garibashvili",
+      "leaderTitle": "Party Leader",
+      "inPower": true,
+      "seats": 89,
+      "seatsTotal": 150,
+      "chamberName": "Parliament of Georgia",
+      "sources": [
+        {
+          "title": "Georgian Dream – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Georgian_Dream"
+        },
+        {
+          "title": "2024 Georgian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Georgian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "GE-UNM",
+      "country": "GE",
+      "shortName": "UNM",
+      "name": "United National Movement",
+      "nameEn": "United National Movement",
+      "logo": "party-logos/ge/unm.svg",
+      "sha256": "9cd703fb8b4854c298accd77f22a0b884145af62854bdb85f7173245f48e6fc6",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:United_National_Movement_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "National liberalism", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2001,
+      "leader": "Nika Melia",
+      "leaderTitle": "Party Chair",
+      "inPower": false,
+      "seats": 35,
+      "seatsTotal": 150,
+      "chamberName": "Parliament of Georgia",
+      "sources": [
+        {
+          "title": "United National Movement – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/United_National_Movement_(Georgia)"
+        },
+        {
+          "title": "2024 Georgian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Georgian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "GE-COALITION",
+      "country": "GE",
+      "shortName": "Coalition",
+      "name": "Coalition for Change",
+      "nameEn": "Coalition for Change",
+      "logo": "party-logos/ge/coalition.svg",
+      "sha256": "a27f2a5341bfcadc926e4a3a78546299e6c83956731f5a43efff3fa1daefdfd7",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Coalition_for_Change_Georgia_logo.svg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "ideology": ["Centre-right", "Liberalism", "Pro-Western"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2023,
+      "leader": "Zurab Japaridze",
+      "leaderTitle": "Coalition Chair",
+      "inPower": false,
+      "seats": 19,
+      "seatsTotal": 150,
+      "chamberName": "Parliament of Georgia",
+      "sources": [
+        {
+          "title": "Coalition for Change – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Coalition_for_Change_(Georgia)"
+        },
+        {
+          "title": "2024 Georgian legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Georgian_legislative_election"
+        }
+      ]
+    }
   ]
 };
