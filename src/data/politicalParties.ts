@@ -6273,6 +6273,243 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "BD": [
+    {
+      "id": "BD-BNP",
+      "country": "BD",
+      "shortName": "BNP",
+      "name": "Bangladesh Nationalist Party",
+      "nameEn": "Bangladesh Nationalist Party",
+      "logo": "party-logos/bd/bnp.png",
+      "sha256": "02bfaa736c96f82cb32e8ce50147d752efc89a7024349ef73e70d80763622086",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Bangladesh_Nationalist_Party_symbol.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Conservatism",
+        "Nationalism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1978,
+      "leader": "Begum Khaleda Zia",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 272,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Bangladesh Nationalist Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bangladesh_Nationalist_Party"
+        }
+      ]
+    }
+  ],
+  "BR": [
+    {
+      "id": "BR-PT",
+      "country": "BR",
+      "shortName": "PT",
+      "name": "Partido dos Trabalhadores",
+      "nameEn": "Workers' Party",
+      "logo": "party-logos/br/pdt.svg",
+      "sha256": "f95e55b050d8248f390c1cfb8fba91655e4b46931a930de161b305a134451bf3",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PT_Brasil_Logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Democratic socialism",
+        "Social democracy",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 1980,
+      "leader": "Gleisi Hoffmann",
+      "leaderTitle": "National President",
+      "inPower": true,
+      "timeInPower": "2023-present",
+      "seats": 136,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Workers' Party (Brazil) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Workers'_Party_(Brazil)"
+        }
+      ]
+    }
+  ],
+  "CA": [
+    {
+      "id": "CA-LIB",
+      "country": "CA",
+      "shortName": "LIB",
+      "name": "Liberal Party of Canada",
+      "nameEn": "Liberal Party of Canada",
+      "logo": "party-logos/ca/lib.svg",
+      "sha256": "975a1ce9e21d740d884bff9f802ce4ad84740e4a30ca6d0596df55d14947a09d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Liberal_Party_of_Canada_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Liberalism",
+        "Social liberalism",
+        "Centrism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1867,
+      "leader": "Justin Trudeau",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2015-present",
+      "seats": 160,
+      "seatsTotal": 338,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Liberal Party of Canada - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Party_of_Canada"
+        }
+      ]
+    }
+  ],
+  "DE": [
+    {
+      "id": "DE-CDU",
+      "country": "DE",
+      "shortName": "CDU",
+      "name": "Christlich Demokratische Union Deutschlands",
+      "nameEn": "Christian Democratic Union",
+      "logo": "party-logos/de/cdu.svg",
+      "sha256": "1bb93f937194d6f24e2c45e0e3b1c3f4e5b5e6f7a8b9c0d1e2f3a4b5c6d7e8f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:CDU_Logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism",
+        "Social market economy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1945,
+      "leader": "Friedrich Merz",
+      "leaderTitle": "Chairperson",
+      "inPower": true,
+      "timeInPower": "2021-present",
+      "seats": 258,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "Christian Democratic Union - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democratic_Union"
+        }
+      ]
+    }
+  ],
+  "ES": [
+    {
+      "id": "ES-PP",
+      "country": "ES",
+      "shortName": "PP",
+      "name": "Partido Popular",
+      "nameEn": "People's Party",
+      "logo": "party-logos/es/pp.svg",
+      "sha256": "2cc04f938295e6g25f3d56f1f3c2d4e5f6a6f7b8c9d0e1f2g3h4i5j6k7l8m9n",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partido_Popular_Logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Conservatism",
+        "Christian democracy",
+        "European conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Centre-right",
+      "founded": 1989,
+      "leader": "Alberto Núñez Feijóo",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "timeInPower": "2023-present",
+      "seats": 136,
+      "seatsTotal": 350,
+      "chamberName": "Congress of Deputies",
+      "sources": [
+        {
+          "title": "People's Party (Spain) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People's_Party_(Spain)"
+        }
+      ]
+    }
+  ],
+  "FR": [
+    {
+      "id": "FR-ENSEMBLE",
+      "country": "FR",
+      "shortName": "ENSEMBLE",
+      "name": "Ensemble pour la République",
+      "nameEn": "Together for the Republic",
+      "logo": "party-logos/fr/ensemble.svg",
+      "sha256": "3dd05g049306f7h36g4e67g2g3d3e5f6g7a7f8b9c0e1f2g3h4i5j6k7l8m9n0o",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Ensemble_pour_la_République_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Centrism",
+        "Social liberalism",
+        "Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2022,
+      "leader": "Gabriel Attal",
+      "leaderTitle": "Prime Minister",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 250,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Ensemble for the Republic - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ensemble_for_the_Republic"
+        }
+      ]
+    }
+  ],
+  "GB": [
+    {
+      "id": "GB-LAB",
+      "country": "GB",
+      "shortName": "LAB",
+      "name": "Labour Party",
+      "nameEn": "Labour Party",
+      "logo": "party-logos/gb/lab.svg",
+      "sha256": "4ee06h150417g8i47h5f78h3h4e4f6g7h8a8g9c1d2e3f4g5h6i7j8k9l0m1n2o",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:UK_Labour_Party_Logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Social democracy",
+        "Democratic socialism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left",
+      "founded": 1900,
+      "leader": "Keir Starmer",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 412,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Labour Party (UK) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Labour_Party_(UK)"
+        }
+      ]
+    }
+  ],
   "AU": [
     {
       "id": "AU-ALP",
