@@ -8249,5 +8249,176 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "PE": [
+    {
+      "id": "PE-FP",
+      "country": "PE",
+      "shortName": "FP",
+      "name": "Fuerza Popular",
+      "nameEn": "Popular Force",
+      "logo": "party-logos/pe/fuerza-popular.svg",
+      "sha256": "1b8981d4ef5179f643fa6b65b285c450db4864f91feafb10cc77dcffc04bcee9",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fuerza_Popular_logo.svg",
+      "ideology": ["Right-wing", "Conservatism", "Authoritarianism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2011,
+      "leader": "Keiko Fujimori",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "seats": 24,
+      "seatsTotal": 130,
+      "chamberName": "Congress of the Republic",
+      "sources": [
+        {
+          "title": "Fuerza Popular – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fuerza_Popular"
+        },
+        {
+          "title": "2024 Peruvian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "PE-JXP",
+      "country": "PE",
+      "shortName": "JxP",
+      "name": "Juntos por el Perú",
+      "nameEn": "Together for Peru",
+      "logo": "party-logos/pe/juntos-por-el-peru.svg",
+      "sha256": "67bf3974a9f2718c266ccbcf7f22b3303d22ef2baf6a0bc78064b6d4bdac62f5",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Juntos_por_el_Peru_logo.svg",
+      "ideology": ["Centre-left", "Social democracy", "Indigenism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2021,
+      "leader": "Raúl Alfredo de la Puente González",
+      "leaderTitle": "Political Leader",
+      "inPower": false,
+      "seats": 9,
+      "seatsTotal": 130,
+      "chamberName": "Congress of the Republic",
+      "sources": [
+        {
+          "title": "Juntos por el Perú – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Juntos_por_el_Per%C3%BA"
+        }
+      ]
+    },
+    {
+      "id": "PE-RP",
+      "country": "PE",
+      "shortName": "RP",
+      "name": "Renovación Popular",
+      "nameEn": "Popular Renovation",
+      "logo": "party-logos/pe/renovacion-popular.svg",
+      "sha256": "92855663ee2ef3623c90c7f2fd9b421a091f9efd71c2510db93d51905c091991",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Renovacion_Popular_logo.svg",
+      "ideology": ["Right-wing", "Neoliberalism", "Pro-market"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2021,
+      "leader": "Rafael López Aliaga",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 15,
+      "seatsTotal": 130,
+      "chamberName": "Congress of the Republic",
+      "sources": [
+        {
+          "title": "Renovación Popular – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Renovaci%C3%B3n_Popular_(Peru)"
+        }
+      ]
+    }
+  ],
+  "PK": [
+    {
+      "id": "PK-PMLN",
+      "country": "PK",
+      "shortName": "PML-N",
+      "name": "Pakistan Muslim League – Nawaz",
+      "nameEn": "Pakistan Muslim League – Nawaz",
+      "logo": "party-logos/pk/pmln.svg",
+      "sha256": "515c559c02541d139997800f7a8608067626454b0d91c089bd62b9763a707ff9",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PML-N_Logo.svg",
+      "ideology": ["Centre-right", "Conservatism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1997,
+      "leader": "Nawaz Sharif",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "seats": 116,
+      "seatsTotal": 342,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pakistan Muslim League – Nawaz – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pakistan_Muslim_League%E2%80%93Nawaz"
+        },
+        {
+          "title": "2024 Pakistani general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Pakistani_general_election"
+        }
+      ]
+    },
+    {
+      "id": "PK-PPP",
+      "country": "PK",
+      "shortName": "PPP",
+      "name": "Pakistan People's Party",
+      "nameEn": "Pakistan People's Party",
+      "logo": "party-logos/pk/ppp.png",
+      "sha256": "8b59414cef96e9667324cd59495b2403f8abbfcea880089f9e87013fd913f664",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PPP_Logo.png",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "ideology": ["Centre-left", "Social democracy", "Populism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1967,
+      "leader": "Bilawal Bhutto Zardari",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 54,
+      "seatsTotal": 342,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pakistan People's Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pakistan_People%27s_Party"
+        }
+      ]
+    }
+  ],
+  "VN": [
+    {
+      "id": "VN-CPV",
+      "country": "VN",
+      "shortName": "CPV",
+      "name": "Communist Party of Vietnam",
+      "nameEn": "Communist Party of Vietnam",
+      "logo": "party-logos/vn/cpv.svg",
+      "sha256": "39479cb61a0da56a473e2d2da356b8e311e803b8763476f8de49b59346e0d7ea",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Communist_Party_of_Vietnam.svg",
+      "ideology": ["Communism", "Marxism-Leninism", "Vietnamese nationalism"],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 1930,
+      "leader": "Nguyễn Phú Trọng",
+      "leaderTitle": "General Secretary",
+      "inPower": true,
+      "seats": 482,
+      "seatsTotal": 500,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Communist Party of Vietnam – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Vietnam"
+        }
+      ]
+    }
   ]
 };
