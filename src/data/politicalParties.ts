@@ -160,6 +160,406 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {};
 
 
 export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
+  "AF": [
+    {
+      "id": "AF-AMP",
+      "country": "AF",
+      "shortName": "AMP",
+      "name": "Afghan Millat Party",
+      "logo": "party-logos/af/amp.svg",
+      "sha256": "3901bec2d58b95bf37b681b6bba747c1db0926b25f554808172b2a4df5f2f303",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Afghan_Millat_Party_logo.svg",
+      "ideology": ["Pashtun nationalism", "Conservatism"],
+      "ideologyPosition": "right",
+      "founded": 2003,
+      "leader": "Mohammad Zia Massoud",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 249,
+      "chamberName": "Wolesi Jirga",
+      "sources": [
+        {
+          "title": "Afghan Millat Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Afghan_Millat_Party"
+        },
+        {
+          "title": "2004 Afghan legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2004_Afghan_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "AF-ISA",
+      "country": "AF",
+      "shortName": "ISA",
+      "name": "Islamic Society of Afghanistan",
+      "logo": "party-logos/af/isa.svg",
+      "sha256": "b55804fb8a8249a2ad0be17e7b59883d448abb850df323f167d140f41a2511cb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Islamic_Society_of_Afghanistan_logo.svg",
+      "ideology": ["Islamic conservatism", "Afghan nationalism"],
+      "ideologyPosition": "right",
+      "founded": 1979,
+      "leader": "Muhammad Karim Khalili",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 10,
+      "seatsTotal": 249,
+      "chamberName": "Wolesi Jirga",
+      "sources": [
+        {
+          "title": "Islamic Society of Afghanistan – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Society_of_Afghanistan"
+        },
+        {
+          "title": "2019 Afghan legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2019_Afghan_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "AF-TNUP",
+      "country": "AF",
+      "shortName": "TNUP",
+      "name": "Tajik National Unity Party",
+      "logo": "party-logos/af/tnup.svg",
+      "sha256": "ce241f6291026c98f484926672131945846ef145be85d4591453550e05135d5b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Tajik_National_Unity_Party_logo.svg",
+      "ideology": ["Tajik nationalism", "Socialism"],
+      "ideologyPosition": "left",
+      "founded": 1992,
+      "leader": "Ahmad Zia Masoud",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 249,
+      "chamberName": "Wolesi Jirga",
+      "sources": [
+        {
+          "title": "Tajik National Unity Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tajik_National_Unity_Party"
+        },
+        {
+          "title": "2018 Afghan legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2018_Afghan_legislative_election"
+        }
+      ]
+    }
+  ],
+  "AO": [
+    {
+      "id": "AO-FNLA",
+      "country": "AO",
+      "shortName": "FNLA",
+      "name": "Frente Nacional de Libertação de Angola",
+      "nameEn": "National Front for the Liberation of Angola",
+      "logo": "party-logos/ao/fnla.svg",
+      "sha256": "6fe21a1505da549aede5553a2236ea6e16bfe4c32d24a3b7046c48f008d55fca",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:FNLA_logo.svg",
+      "ideology": ["Anti-communism", "Angolan nationalism"],
+      "ideologyPosition": "right",
+      "founded": 1962,
+      "leader": "Isaac Zet Nkouondjin",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 220,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "FNLA – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/FNLA"
+        },
+        {
+          "title": "2023 Angolan legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Angolan_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "AO-MPLA",
+      "country": "AO",
+      "shortName": "MPLA",
+      "name": "Movimento Popular para a Libertação de Angola",
+      "nameEn": "Popular Movement for the Liberation of Angola",
+      "logo": "party-logos/ao/mpla.svg",
+      "sha256": "936d6c0f73dcf2c3c3658fc4d26a22cfe4fbad5ada432a15c0fd7394ca5c63c6",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MPLA_logo.svg",
+      "ideology": ["Marxism-Leninism", "Socialism"],
+      "ideologyPosition": "left",
+      "founded": 1956,
+      "leader": "João Lourenço",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2017–present",
+      "seats": 124,
+      "seatsTotal": 220,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "MPLA – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/MPLA"
+        },
+        {
+          "title": "2023 Angolan legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Angolan_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "AO-UNITA",
+      "country": "AO",
+      "shortName": "UNITA",
+      "name": "União Nacional para a Independência Total de Angola",
+      "nameEn": "National Union for the Total Independence of Angola",
+      "logo": "party-logos/ao/unita.svg",
+      "sha256": "d5d3d843ca01f134727a95b21a8153f8812f57c4cc62b43593f29c345b1eaf20",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:UNITA_logo.svg",
+      "ideology": ["Liberalism", "Anti-communism"],
+      "ideologyPosition": "centre-right",
+      "founded": 1966,
+      "leader": "Adalberto Costa Junior",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 90,
+      "seatsTotal": 220,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "UNITA – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/UNITA"
+        },
+        {
+          "title": "2023 Angolan legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Angolan_legislative_election"
+        }
+      ]
+    }
+  ],
+  "BH": [
+    {
+      "id": "BH-ALWEFAQ",
+      "country": "BH",
+      "shortName": "Alwefaq",
+      "name": "Alwefaq",
+      "nameEn": "Islamic Action Society",
+      "logo": "party-logos/bh/alwefaq.svg",
+      "sha256": "e2db76817a662f34b5e680ce2a8517ba57623e9e7da06c9e8a6b3385fc2cacf5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Alwefaq_logo.svg",
+      "ideology": ["Shia Islamism", "Religious democracy"],
+      "ideologyPosition": "right",
+      "founded": 2001,
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 40,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Alwefaq – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alwefaq"
+        },
+        {
+          "title": "2018 Bahraini general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2018_Bahraini_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BH-IAS",
+      "country": "BH",
+      "shortName": "IAS",
+      "name": "Islamic Action Society",
+      "logo": "party-logos/bh/ias.svg",
+      "sha256": "6dbc5e86ec16e880ae426cc7cf23b2080497ccc65853b1148690d6225caec3e2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Islamic_Action_Society_Bahrain_logo.svg",
+      "ideology": ["Sunni Islamism", "Conservative"],
+      "ideologyPosition": "right",
+      "founded": 1973,
+      "inPower": true,
+      "timeInPower": "2018–present",
+      "seats": 1,
+      "seatsTotal": 40,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Islamic Action Society – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Action_Society"
+        },
+        {
+          "title": "2018 Bahraini general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2018_Bahraini_general_election"
+        }
+      ]
+    },
+    {
+      "id": "BH-NDAS",
+      "country": "BH",
+      "shortName": "NDAS",
+      "name": "National Democratic Action Society",
+      "logo": "party-logos/bh/ndas.svg",
+      "sha256": "50b261d67bfb784eb84b46cc80f518bd755007a61553f8aa53979560c54775c2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:National_Democratic_Action_Society_logo.svg",
+      "ideology": ["Arab nationalism", "Liberal democracy"],
+      "ideologyPosition": "centre-left",
+      "founded": 1994,
+      "inPower": true,
+      "timeInPower": "2018–present",
+      "seats": 2,
+      "seatsTotal": 40,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "National Democratic Action Society – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Democratic_Action_Society"
+        },
+        {
+          "title": "2018 Bahraini general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2018_Bahraini_general_election"
+        }
+      ]
+    }
+  ],
+  "BJ": [
+    {
+      "id": "BJ-BPU",
+      "country": "BJ",
+      "shortName": "BPU",
+      "name": "Benin Progressive Union",
+      "logo": "party-logos/bj/bpu.svg",
+      "sha256": "a489231a38cbf72c777e37e7eb20d836b987e7039285ef4772ec9044fa5e7aa0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Benin_Progressive_Union_logo.svg",
+      "ideology": ["Centrism", "Social democracy"],
+      "ideologyPosition": "centre",
+      "founded": 1996,
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2023 Beninese legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Beninese_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "BJ-BRB",
+      "country": "BJ",
+      "shortName": "BRB",
+      "name": "Benin Renewal Bloc",
+      "logo": "party-logos/bj/brb.svg",
+      "sha256": "2c35c8d31b88619a86d725f6f1bc379d2762a9bf59a65d86405319d7e728e7f1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Benin_Renewal_Bloc_logo.svg",
+      "ideology": ["Liberalism", "Progressivism"],
+      "ideologyPosition": "centre-left",
+      "founded": 2008,
+      "inPower": true,
+      "timeInPower": "2023–present",
+      "seats": 54,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2023 Beninese legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Beninese_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "BJ-DRP",
+      "country": "BJ",
+      "shortName": "DRP",
+      "name": "Democratic Renewal Party",
+      "logo": "party-logos/bj/drp.svg",
+      "sha256": "d13239f8fff9fe11905a5ec25a8ca62ec1e7e2564cd754ca8d86f69d196110dd",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Democratic_Renewal_Party_Benin_logo.svg",
+      "ideology": ["Conservatism", "Christian democracy"],
+      "ideologyPosition": "centre-right",
+      "founded": 1994,
+      "inPower": true,
+      "timeInPower": "2023–present",
+      "seats": 3,
+      "seatsTotal": 163,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2023 Beninese legislative election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Beninese_legislative_election"
+        }
+      ]
+    }
+  ],
+  "BN": [
+    {
+      "id": "BN-PDNB",
+      "country": "BN",
+      "shortName": "PDNB",
+      "name": "Parti Demokrat Nahdah Brunei",
+      "nameEn": "Brunei National Democratic Party",
+      "logo": "party-logos/bn/pdnb.svg",
+      "sha256": "4d77d68d29b5125eff47075c47bb325d0869247e2ab2a4874143bc04c353f8d3",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PDNB_logo.svg",
+      "ideology": ["Liberal democracy", "Islamism"],
+      "ideologyPosition": "centre",
+      "founded": 2015,
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 36,
+      "chamberName": "Legislative Council",
+      "sources": [
+        {
+          "title": "Brunei National Democratic Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Brunei_National_Democratic_Party"
+        }
+      ]
+    },
+    {
+      "id": "BN-PNDB",
+      "country": "BN",
+      "shortName": "PNDB",
+      "name": "Parti Nasional Demokratik Brunei",
+      "nameEn": "Brunei National Democratic Party",
+      "logo": "party-logos/bn/pndb.svg",
+      "sha256": "bb5b4fd04affa788b9f0e6699cce8105783e724a60e87bd3eb4f8071422b6a5f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PNDB_logo.svg",
+      "ideology": ["Democracy", "Brunei nationalism"],
+      "ideologyPosition": "centre",
+      "founded": 1956,
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 36,
+      "chamberName": "Legislative Council",
+      "sources": [
+        {
+          "title": "Brunei – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Brunei"
+        }
+      ]
+    },
+    {
+      "id": "BN-PNS",
+      "country": "BN",
+      "shortName": "PNS",
+      "name": "Parti Negara Sedar",
+      "nameEn": "State Consciousness Party",
+      "logo": "party-logos/bn/pns.svg",
+      "sha256": "399876c71bf28ebe10b29d5f77fe831ccbef836937b7923fe30a50c7a7ab7a29",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PNS_logo.svg",
+      "ideology": ["Patriotism", "Anti-imperialism"],
+      "ideologyPosition": "other",
+      "founded": 1967,
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 36,
+      "chamberName": "Legislative Council",
+      "sources": [
+        {
+          "title": "Brunei – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Brunei"
+        }
+      ]
+    }
+  ],
   "AD": [
     {
       "id": "AD-PS",
