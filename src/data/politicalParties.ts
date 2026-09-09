@@ -6208,5 +6208,163 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
+  ],
+  "AT": [
+    {
+      "id": "AT-FPOE",
+      "country": "AT",
+      "shortName": "FPÖ",
+      "name": "Freiheitliche Partei Österreichs",
+      "nameEn": "Freedom Party of Austria",
+      "logo": "party-logos/at/fpoe.png",
+      "sha256": "e5eca0d49f7ca96b5a099ec51d38f1f0e5d69a67f1bf65cea7903a97cd607592",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:FPÖ_Logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party in its infobox; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "National conservatism",
+        "Right-wing populism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1956,
+      "leader": "Herbert Kickl",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 0,
+      "seatsTotal": 183,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Freedom Party of Austria - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Freedom_Party_of_Austria"
+        }
+      ]
+    },
+    {
+      "id": "AT-SPOE",
+      "country": "AT",
+      "shortName": "SPÖ",
+      "name": "Österreichische Sozialdemokratische Partei",
+      "nameEn": "Austrian Social Democratic Party",
+      "logo": "party-logos/at/spoe.png",
+      "sha256": "f26d8855ea8a9bed54dace453fb3b894641fd930eadfda301bc4196ec3d7ddc3",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:SPÖ_Logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party in its infobox; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Social democracy",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left",
+      "founded": 1863,
+      "leader": "Andreas Babler",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "timeInPower": "2020-present",
+      "seats": 41,
+      "seatsTotal": 183,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Austrian Social Democratic Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Austrian_Social_Democratic_Party"
+        }
+      ]
+    }
+  ],
+  "AU": [
+    {
+      "id": "AU-ALP",
+      "country": "AU",
+      "shortName": "ALP",
+      "name": "Australian Labor Party",
+      "nameEn": "Australian Labor Party",
+      "logo": "party-logos/au/alp.svg",
+      "sha256": "00568c9c740fa06937ab3a327bf277aff7443c2c884a7e8d36326d3275721d3c",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Australian_Labor_Party_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Social democracy",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left",
+      "founded": 1891,
+      "leader": "Anthony Albanese",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "2022-present",
+      "seats": 67,
+      "seatsTotal": 151,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Australian Labor Party - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Australian_Labor_Party"
+        }
+      ]
+    },
+    {
+      "id": "AU-LNP",
+      "country": "AU",
+      "shortName": "LNP",
+      "name": "Liberal/National Coalition",
+      "nameEn": "Liberal/National Coalition",
+      "logo": "party-logos/au/lnp.svg",
+      "sha256": "1ce1c62aa21a8cae0bcd807d2aa86112210f99c5054b5b8170cc9318888bcf54",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Liberal_National_Coalition.svg",
+      "licenceNote": "Non-free party logo used to identify the coalition; used here to identify the parties, not to imply endorsement.",
+      "ideology": [
+        "Conservatism",
+        "Liberalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Centre-right",
+      "founded": 1931,
+      "leader": "Peter Dutton",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 58,
+      "seatsTotal": 151,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Coalition (Australian politics) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Coalition_(Australian_politics)"
+        }
+      ]
+    },
+    {
+      "id": "AU-GRN",
+      "country": "AU",
+      "shortName": "GRN",
+      "name": "Australian Greens",
+      "nameEn": "Australian Greens",
+      "logo": "party-logos/au/grn.svg",
+      "sha256": "aef221d20eea3fa971310e12afb014065d7c8413bd1755b1bbbd02895de74860",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Australian_Greens_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Environmentalism",
+        "Progressivism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 1992,
+      "leader": "Adam Bandt",
+      "leaderTitle": "Parliamentary Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 151,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Australian Greens - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Australian_Greens"
+        }
+      ]
+    }
   ]
 };
