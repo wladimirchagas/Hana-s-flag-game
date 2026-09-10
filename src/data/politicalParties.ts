@@ -12455,4 +12455,36 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "UY": [
+    {
+      "id": "UY-FA",
+      "country": "UY",
+      "shortName": "FA",
+      "name": "Frente Amplio",
+      "nameEn": "Broad Front",
+      "logo": "party-logos/UY/Logo_Frente_Amplio.svg",
+      "sha256": "f5af82d6aa102ae1d87112e66cbaa921e77608b56c90cfba6f74f9008ec0d4b8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Frente_Amplio.svg",
+      "ideology": ["Socialism", "Social democracy", "Progressivism"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1971,
+      "leader": "Javier Martínez",
+      "leaderTitle": "Executive Committee President",
+      "inPower": false,
+      "seats": 48,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Broad Front (Uruguay) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Broad_Front"
+        },
+        {
+          "title": "2024 Uruguayan general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Uruguayan_general_election"
+        }
+      ]
+    }
+  ],
 };
