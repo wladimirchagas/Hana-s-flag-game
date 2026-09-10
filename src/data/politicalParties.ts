@@ -10063,8 +10063,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Popular Force",
       "logo": "party-logos/pe/fuerza-popular.svg",
       "sha256": "1b8981d4ef5179f643fa6b65b285c450db4864f91feafb10cc77dcffc04bcee9",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fuerza_Popular_logo.svg",
-      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Fuerza_popular.svg",
       "ideology": ["Right-wing", "Conservatism", "Authoritarianism"],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
@@ -10094,8 +10093,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Together for Peru",
       "logo": "party-logos/pe/juntos-por-el-peru.svg",
       "sha256": "67bf3974a9f2718c266ccbcf7f22b3303d22ef2baf6a0bc78064b6d4bdac62f5",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Juntos_por_el_Peru_logo.svg",
-      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_juntos_por_el_Peru.svg",
       "ideology": ["Centre-left", "Social democracy", "Indigenism"],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
@@ -10121,8 +10119,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Popular Renovation",
       "logo": "party-logos/pe/renovacion-popular.svg",
       "sha256": "92855663ee2ef3623c90c7f2fd9b421a091f9efd71c2510db93d51905c091991",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Renovacion_Popular_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Renovaci%C3%B3n_Popular_2023.png",
       "ideology": ["Right-wing", "Neoliberalism", "Pro-market"],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
@@ -10137,6 +10134,93 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Renovación Popular – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Renovaci%C3%B3n_Popular_(Peru)"
+        }
+      ]
+    },
+    {
+      "id": "PE-PBG",
+      "country": "PE",
+      "shortName": "PBG",
+      "name": "Partido del Buen Gobierno",
+      "nameEn": "Good Government Party",
+      "logo": "party-logos/pe/partido-buen-gobierno.jpg",
+      "sha256": "e7a2289ec1025004d9901874a780576f6ceb60e4f1c5bbeee53bdceaf4e8e666",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Buen_Gobierno_2024.jpg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons (CC BY 4.0); bundled locally.",
+      "ideology": ["Centre", "Populism", "Anti-corruption"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2023,
+      "inPower": false,
+      "seats": 22,
+      "seatsTotal": 130,
+      "chamberName": "Congress of the Republic",
+      "sources": [
+        {
+          "title": "Partido del Buen Gobierno – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Partido_del_Buen_Gobierno"
+        },
+        {
+          "title": "2024 Peruvian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "PE-OBRAS",
+      "country": "PE",
+      "shortName": "OBRAS",
+      "name": "Partido Cívico OBRAS",
+      "nameEn": "OBRAS Civic Party",
+      "logo": "party-logos/pe/obras.png",
+      "sha256": "30bdff939019e54ab05fd4cb9c232dc6b9a8844153e7bf760684109186e2bb17",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Civico_OBRAS.png",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons (CC BY-SA 4.0); bundled locally.",
+      "ideology": ["Centre-left", "Regionalism", "Social development"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2021,
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 130,
+      "chamberName": "Congress of the Republic",
+      "sources": [
+        {
+          "title": "Partido Cívico OBRAS – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Partido_C%C3%ADvico_OBRAS"
+        },
+        {
+          "title": "2024 Peruvian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "PE-AN",
+      "country": "PE",
+      "shortName": "AN",
+      "name": "Ahora Nación",
+      "nameEn": "Now Nation",
+      "logo": "party-logos/pe/ahora-nacion.jpg",
+      "sha256": "3f6d072d21eddf5a9406e559f606f7aa5d2310a0eb352c3adfacc8c07964b58c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Ahora_Naci%C3%B3n_2026.jpg",
+      "licenceNote": "Freely licensed logo from Wikimedia Commons (Public Domain); bundled locally.",
+      "ideology": ["Left-wing", "Socialism", "Indigenism"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2023,
+      "inPower": false,
+      "seats": 14,
+      "seatsTotal": 130,
+      "chamberName": "Congress of the Republic",
+      "sources": [
+        {
+          "title": "Ahora Nación – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ahora_Naci%C3%B3n"
+        },
+        {
+          "title": "2024 Peruvian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
         }
       ]
     }
