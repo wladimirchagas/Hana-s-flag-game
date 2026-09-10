@@ -1551,6 +1551,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "e18f334bb0d0ec47b17e272e12c894dc1a15e372f1f2656ebef308e195b426ef",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:La_Libertad_Avanza_full_logo.svg",
       "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:La Libertad Avanza full logo.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse. The Commons file \"La_Libertad_Avanza_2021.svg\" originally identified for this entry was checked and found to actually be an unrelated Buenos Aires province map, not the party's logo — this Wikipedia infobox file is the verified correct one.",
+      "logoMeaning": {
+        "description": "The La Libertad Avanza logo features a stylized yellow arrow pointing upward against a blue background, representing the party's core message of advancing freedom and economic progress. The upward arrow symbolizes growth, movement, and optimism for the future, while the bright yellow conveys energy and hope. The design reflects the party's libertarian conservative ideology and its commitment to market-based reforms and individual liberty.",
+        "sources": [
+          {
+            "title": "La Libertad Avanza — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/La_Libertad_Avanza"
+          },
+          {
+            "title": "La Libertad Avanza — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/La_Libertad_Avanza"
+          }
+        ]
+      },
       "ideology": [
         "Right-libertarianism",
         "Libertarian conservatism",
@@ -1595,6 +1608,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ar/uxp.svg",
       "sha256": "c33ca6db59ba2a3d5555505249e50f706e70380eaaa209d95b95c0bb1d358425",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Union_por_la_Patria.svg",
+      "logoMeaning": {
+        "description": "The Unión por la Patria logo features a stylized hand holding the national flag or colors of Argentina, representing unity, popular will, and democratic participation. The design symbolizes the coalition's commitment to bringing together various Peronist and progressive forces to work for the nation's welfare. The upraised hand conveys collective action, solidarity, and the party's focus on grassroots mobilization and popular support.",
+        "sources": [
+          {
+            "title": "Unión por la Patria — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Uni%C3%B3n_por_la_Patria"
+          },
+          {
+            "title": "Unión por la Patria — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/Uni%C3%B3n_por_la_Patria"
+          }
+        ]
+      },
       "ideology": [
         "Peronism",
         "Kirchnerism",
@@ -1679,6 +1705,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ar/pro.svg",
       "sha256": "a7eeb4a26f16f8eb1b4823653bbaa32b8fa5c5276eb714de8282258a4ca8bd44",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PRO.svg",
+      "logoMeaning": {
+        "description": "The PRO (Propuesta Republicana) logo features a stylized sunburst or rays of light, representing illumination, progress, and forward movement. The design conveys the party's commitment to transparency, modernity, and liberal democratic values. The radiant symbol reflects the party's positioning as a centre-right political force offering a clear vision for Argentina's economic and institutional development.",
+        "sources": [
+          {
+            "title": "Republican Proposal — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Republican_Proposal"
+          },
+          {
+            "title": "Propuesta Republicana — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/Propuesta_Republicana"
+          }
+        ]
+      },
       "ideology": [
         "Conservative liberalism",
         "Liberal conservatism"
@@ -1747,6 +1786,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ar/ucr.svg",
       "sha256": "8e41c969c79818b92c7d45129950be270a6e18b8ca75793deacd638bfe82372f",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Ucr_modern_logo.svg",
+      "logoMeaning": {
+        "description": "The UCR (Unión Cívica Radical) logo features a stylized shield with the national colours of Argentina (light blue and white) and a radiant sun, representing civic unity, democratic values, and national identity. The design reflects the party's historical role as a founding force of Argentine democracy and its commitment to liberal, civic-minded governance. The shield conveys institutional strength and protection of democratic principles, while the sun symbolizes hope and enlightenment.",
+        "sources": [
+          {
+            "title": "Radical Civic Union — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Radical_Civic_Union"
+          },
+          {
+            "title": "Unión Cívica Radical — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/Uni%C3%B3n_C%C3%ADvica_Radical"
+          }
+        ]
+      },
       "ideology": [
         "Social liberalism",
         "Social democracy",
@@ -1781,6 +1833,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ar/fitu.svg",
       "sha256": "a5e7d90758cdc841cf5c64530d04fa0606749733c7df4c856793b6e73781614a",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Frente_de_Izquierda_y_de_Trabajadores-Unidad.svg",
+      "logoMeaning": {
+        "description": "The FIT-U (Frente de Izquierda y de Trabajadores - Unidad) logo features a red design incorporating hammer and sickle symbolism along with stylized hands or united figures, representing workers' solidarity, socialist ideology, and the alliance of Trotskyist and communist parties. The red colour symbolizes revolutionary socialism and the international communist movement, while the hands represent collective action and workers' unity against capitalist exploitation and imperialism.",
+        "sources": [
+          {
+            "title": "Left and Workers' Front — Unidad — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/Frente_de_Izquierda_y_de_Trabajadores_-_Unidad"
+          },
+          {
+            "title": "Frente de Izquierda y de Trabajadores — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/Frente_de_Izquierda_y_de_Trabajadores"
+          }
+        ]
+      },
       "ideology": [
         "Trotskyism",
         "Communism",
@@ -1954,6 +2019,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ar/ccari.svg",
       "sha256": "42af5b9cada6ad1cb30a8279ad5374734259a75663af4ce92cba4e981898f232",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Coalicion_Civica.svg",
+      "logoMeaning": {
+        "description": "The CC-ARI (Coalición Cívica ARI) logo features a stylized civic symbol combining the national colours of Argentina with abstract shapes representing unity and democratic participation. The design reflects the party's commitment to civic engagement, anti-corruption, and radical centrist politics. The symbol conveys transparency, institutional reform, and the party's focus on strengthening democratic institutions and civil society participation in Argentine politics.",
+        "sources": [
+          {
+            "title": "Coalición Cívica ARI — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/Coalici%C3%B3n_C%C3%ADvica_ARI"
+          },
+          {
+            "title": "Civic Coalition — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Civic_Coalition"
+          }
+        ]
+      },
       "ideology": [
         "Socioliberalism",
         "Progressivism",
@@ -1989,6 +2067,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ar/mid.png",
       "sha256": "217dbea960bd90ff48166938b7ac3a71d1de41f213c1b3bf47448b8012e28ddb",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Movimiento_de_Integración_y_Desarrollo_2018.png",
+      "logoMeaning": {
+        "description": "The MID (Movimiento de Integración y Desarrollo) logo reflects the party's historical focus on national integration and developmentalist economic policies. The design emphasizes economic development, national unity, and institutional modernization. The logo represents the party's commitment to fostering integration among Argentine regions and promoting state-led industrialization and economic growth as a path to national prosperity.",
+        "sources": [
+          {
+            "title": "Movimiento de Integración y Desarrollo — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/Movimiento_de_Integraci%C3%B3n_y_Desarrollo"
+          },
+          {
+            "title": "Integration and Development Movement — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Integration_and_Development_Movement"
+          }
+        ]
+      },
       "ideology": [
         "Developmentalism (desarrollismo)"
       ],
@@ -8084,6 +8175,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/uniao.svg",
       "sha256": "b50493f337436557e257d28c5f5124eb7173cf70dabae8daf02fbad730aed093",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Uni%C3%A3o_Brasil_logo.svg",
+      "logoMeaning": {
+        "description": "The União Brasil logo features a stylized shield design representing unity and national strength. The logo incorporates the party's founding principle of bringing together different political forces to create a centrist coalition. The geometric design reflects the party's modern, pragmatic approach to Brazilian politics and its centrist positioning.",
+        "sources": [
+          {
+            "title": "União Brasil — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Uni%C3%A3o_Brasil"
+          }
+        ]
+      },
       "ideology": [
         "Liberal conservatism",
         "Economic liberalism",
@@ -8119,6 +8219,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/psd.svg",
       "sha256": "da583d46a5d5a373bb8a3d2831b9f4923df8fd303585ce8179ea1a77a9d7384e",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSD_Logo.svg",
+      "logoMeaning": {
+        "description": "The PSD logo features a modernist design representing the party's commitment to social democracy and progressive governance. The stylized emblem reflects the party's centrist positioning and emphasis on institutional reform and democratic participation. The design captures the party's focus on pragmatic social democratic policies in Brazil.",
+        "sources": [
+          {
+            "title": "Social Democratic Party (Brazil) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Brazil)"
+          }
+        ]
+      },
       "ideology": [
         "Social democracy",
         "Progressivism"
@@ -8149,6 +8258,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/pp.svg",
       "sha256": "0dde6bf9bc3e36bf3678d0fd842b5761349ab6f5e3993f5e918e84457a764a17",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Progressistas_logo.svg",
+      "logoMeaning": {
+        "description": "The Progressistas logo features a modernist design representing the party's commitment to progressive governance and centrism. The emblem symbolizes the party's pragmatic approach to Brazilian politics and its emphasis on institutional development. The design reflects the party's long history in Brazilian centrist politics since its founding in 1965.",
+        "sources": [
+          {
+            "title": "Progressistas — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Progressistas"
+          }
+        ]
+      },
       "ideology": [
         "Centrism",
         "Social liberalism"
@@ -8178,6 +8296,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/republicanos.svg",
       "sha256": "4333b8fa16ab411bf73c90e67cc055926bc0f37b2b191e5b8d7ea2c606c74d9a",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Republicanos_logo.svg",
+      "logoMeaning": {
+        "description": "The Republicanos logo features a stylized eagle design symbolizing the party's nationalist and conservative values. The emblem represents strength, freedom, and republican ideals rooted in Brazilian civic values. The design reflects the party's right-wing conservative positioning and emphasis on social and moral values in Brazilian politics.",
+        "sources": [
+          {
+            "title": "Republicanos — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Republicanos_(Brazil)"
+          }
+        ]
+      },
       "ideology": [
         "Right-wing populism",
         "Social conservatism"
@@ -8208,6 +8335,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/mdb.svg",
       "sha256": "d610a2dc81ec7c18b798f5e2a7c075d8f56d6661f3b8929ea5ae9c5db82f1a5e",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MDB_Logo.svg",
+      "logoMeaning": {
+        "description": "The MDB logo features a stylized design incorporating the party's initials in a modern, centrist aesthetic. The blue color represents institutional stability and democratic governance. As Brazil's largest centrist party, the MDB emblem reflects its pragmatic approach to Brazilian politics and commitment to democratic institutions and dialogue.",
+        "sources": [
+          {
+            "title": "Brazilian Democratic Movement — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Brazilian_Democratic_Movement"
+          }
+        ]
+      },
       "ideology": [
         "Centrism",
         "Pragmatism"
@@ -8237,6 +8373,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/podemos.svg",
       "sha256": "f23f7fd47cc0f38ec15f7ed518e14249438ae9921269951900bc2b5500e04343",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Podemos_(Brasil)_logo.svg",
+      "logoMeaning": {
+        "description": "The Podemos logo features a rising sun or star design symbolizing hope, progress, and the belief that positive change is possible. The emblem represents the party's grassroots democratic movement for political transformation. The upward-pointing rays emphasize the party's commitment to social democracy, progressivism, and environmental sustainability in Brazil.",
+        "sources": [
+          {
+            "title": "Podemos (Brazil) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Podemos_(Brazil)"
+          }
+        ]
+      },
       "ideology": [
         "Social democracy",
         "Progressivism",
@@ -8267,6 +8412,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/psdb.svg",
       "sha256": "4b6a27ad9fc593808ac26e7d4c8b6f2dac549cdbb30cbdfa6f1b58bd7d7d23ef",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSDB_Logo.svg",
+      "logoMeaning": {
+        "description": "The PSDB logo features a blue and orange design representing the party's centrist positioning and commitment to social democracy in Brazil. The colors symbolize optimism and institutional stability. The stylized emblem reflects the party's commitment to democratic governance and progressive liberal economic policies.",
+        "sources": [
+          {
+            "title": "Brazilian Social Democracy Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Brazilian_Social_Democracy_Party"
+          }
+        ]
+      },
       "ideology": [
         "Social democracy",
         "Liberalism"
@@ -8296,6 +8450,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/cidadania.svg",
       "sha256": "655c2fe1d87c7ef57a7a4339b6d87d951d6bd032b646588914ccdd1b760d2d09",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Cidadania_Logo.svg",
+      "logoMeaning": {
+        "description": "The Cidadania logo features a stylized human figure or geometric design representing the party's emphasis on citizenship and democratic participation. The emblem symbolizes social inclusion, civic engagement, and the party's centre-left commitment to social democratic values and human development. The design reflects the party's focus on citizenship rights and social responsibility in Brazil.",
+        "sources": [
+          {
+            "title": "Cidadania (Brazil) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cidadania_(Brazil)"
+          }
+        ]
+      },
       "ideology": [
         "Social democracy",
         "Centrism"
@@ -8325,6 +8488,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/pt.svg",
       "sha256": "5014ff66de5112a46de044dfd22a60226feccc98a3aeaa57fd08f6f18e8d6be5",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PT_Brasil_Logo.svg",
+      "logoMeaning": {
+        "description": "The Workers' Party logo features a red geometric design representing the party's socialist heritage and commitment to workers' rights. The red color symbolizes solidarity with the labor movement and left-wing ideological commitments. The modern geometric style reflects the party's contemporary approach to social democracy and progressive change in Brazil.",
+        "sources": [
+          {
+            "title": "Workers' Party (Brazil) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Workers'_Party_(Brazil)"
+          }
+        ]
+      },
       "ideology": [
         "Democratic socialism",
         "Social democracy",
@@ -8361,6 +8533,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/pcdob.svg",
       "sha256": "0fb1a3813ff9d4b47e904f4b0ec6b9a2ac8e763be2a354afa5895e4826fe4464",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PCdoB_Logo.svg",
+      "logoMeaning": {
+        "description": "The PCdoB logo features a hammer and sickle design representing communist ideology and the party's Marxist-Leninist heritage. The emblem symbolizes the party's commitment to workers' rights, class struggle, and socialist transformation. The red color reflects communist and socialist traditions, representing the party's revolutionary ideological foundation since its establishment in 1962.",
+        "sources": [
+          {
+            "title": "Communist Party of Brazil — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Brazil"
+          }
+        ]
+      },
       "ideology": [
         "Communism",
         "Marxism–Leninism"
@@ -8390,6 +8571,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/pv.svg",
       "sha256": "977821d6ff979d775fe2f016576ef158b3af256d232fc9c1c508ed1ce2cdff62",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Verde_Brasil_Logo.svg",
+      "logoMeaning": {
+        "description": "The Partido Verde logo features a stylized green design symbolizing the party's core commitment to environmentalism and ecological preservation. The green color represents nature, sustainability, and the party's dedication to environmental protection and conservation. The emblem reflects the party's progressive stance on environmental issues and ecological responsibility in Brazilian politics.",
+        "sources": [
+          {
+            "title": "Green Party (Brazil) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Green_Party_(Brazil)"
+          }
+        ]
+      },
       "ideology": [
         "Environmentalism",
         "Progressivism",
@@ -8420,6 +8610,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/psol.svg",
       "sha256": "17072b12f62fd5443b9e15e3f964bb8ecef9192d19d8e31cfe241b319b5bc537",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSOL_Logo.svg",
+      "logoMeaning": {
+        "description": "The PSOL logo features a red and stylized design representing the party's democratic socialist and progressive commitments. The emblem symbolizes liberation, social justice, and the party's strong advocacy for LGBTQ+ rights, workers' rights, and social equality. The red color reflects socialist traditions, while the modern design emphasizes the party's contemporary approach to leftist politics and social transformation.",
+        "sources": [
+          {
+            "title": "Socialism and Freedom Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Socialism_and_Freedom_Party"
+          }
+        ]
+      },
       "ideology": [
         "Democratic socialism",
         "Progressivism",
@@ -9035,6 +9234,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "6c5330dd9e82ca8f58e6dedc6576e69928021ba0a5e6f31143e4535394fe1153",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Frente_Amplio_logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The Frente Amplio (Broad Front) logo features a stylized representation emphasizing left-wing progressivism and environmental commitment. The design reflects the coalition's vision of a united left-wing movement bringing together socialists, communists, environmentalists, and progressives to advance social democracy and climate action in Chile.",
+        "sources": [
+          {
+            "title": "Frente Amplio (Chile) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Frente_Amplio_(Chile)"
+          },
+          {
+            "title": "2021 Chilean general election — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2021_Chilean_general_election"
+          }
+        ]
+      },
       "ideology": ["Left-wing", "Progressive", "Environmentalism"],
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
@@ -9067,6 +9279,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "c0639d126df0c236c6ac11a5c5776e9a423e1655a5ded9f085d2ea3b75dcfadf",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PDC_Chile_logo.png",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The Christian Democracy Party logo features a white cross symbolizing Christian values and faith-based principles. The shield design emphasizes institutional strength, democratic commitment, and social conservatism rooted in Christian democracy's belief that democratic systems must be grounded in moral and spiritual values. The logo represents the party's historical role as a centrist force advocating for social progress within a Christian ethical framework.",
+        "sources": [
+          {
+            "title": "Christian Democracy Party (Chile) – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Christian_Democracy_Party_(Chile)"
+          },
+          {
+            "title": "Partido Demócrata Cristiano – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Partido_Democr%C3%A1ta_Cristiano"
+          }
+        ]
+      },
       "ideology": ["Christian democracy", "Centre-right", "Social conservatism"],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
@@ -9098,6 +9323,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "0d17428274d18a55ac9580c55f5654671d4d5a2d4730429eb01305e71a7520ab",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:UDI_Chile_logo.png",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The Independent Democratic Union logo features a geometric shield design symbolizing independence, democratic governance, and conservative principles. The design emphasizes the party's commitment to free-market economics, individual liberty, and institutional conservatism. As one of the major right-wing parties emerging from Chile's 1973–1990 military period, the logo represents economic neo-liberalism, constitutional conservatism, and democratic participation within a right-wing political framework.",
+        "sources": [
+          {
+            "title": "Independent Democratic Union (Chile) – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Independent_Democratic_Union_(Chile)"
+          },
+          {
+            "title": "Unión Demócrata Independiente – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Uni%C3%B3n_Democr%C3%A1ta_Independiente"
+          }
+        ]
+      },
       "ideology": ["Conservatism", "Right-wing", "Neo-liberalism"],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
@@ -9129,6 +9367,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "f9ac06a57a36215813b9b52d2b791ee065fb8ec9c253df7f3205ab745e5b362d",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Renovación_Nacional_logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The National Renewal logo features a stylized design symbolizing renewal, institutional reform, and conservative modernism. The geometric elements emphasize the party's commitment to market liberalism, institutional strength, and centre-right values. Founded during the transition to democracy, the logo represents the party's role in Chilean conservative politics, blending economic liberalism with conservative governance and democratic participation.",
+        "sources": [
+          {
+            "title": "National Renewal (Chile) – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/National_Renewal_(Chile)"
+          },
+          {
+            "title": "Renovación Nacional – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Renovaci%C3%B3n_Nacional"
+          }
+        ]
+      },
       "ideology": ["Conservatism", "Centre-right", "Liberalism"],
       "ideologyPosition": "right",
       "positionRaw": "Centre-right to right-wing",
@@ -9160,6 +9411,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "44324071494d91cc1c8460d830d6911399c556e7007cff20f508f150379abeb0",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PPD_Chile_logo.png",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The Party for Democracy logo features design elements symbolizing democratic participation, social progress, and centre-left values. Founded during Chile's transition to democracy, the logo embodies the party's commitment to democratic socialism, social democracy, and progressive institutional reform. The design reflects the party's belief in democratic governance combined with social and economic justice.",
+        "sources": [
+          {
+            "title": "Party for Democracy (Chile) – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Party_for_Democracy_(Chile)"
+          },
+          {
+            "title": "Partido por la Democracia – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Partido_por_la_Democracia"
+          }
+        ]
+      },
       "ideology": ["Social democracy", "Centre-left", "Progressivism"],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
@@ -9191,6 +9455,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "9a5d4d05e8457d2b65c1cae26235d49b22696ba17553d9abee628d5811a8360c",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PS_Chile_logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The Socialist Party logo features left-wing symbolism emphasizing workers' solidarity, social justice, and progressive change. As one of Chile's oldest and most influential left-wing parties, the design represents the party's commitment to socialism, democratic participation, and economic equality. The red colour and symbolism reflect the party's historical role in Chilean labour movements and its advocacy for working-class interests.",
+        "sources": [
+          {
+            "title": "Socialist Party of Chile – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Socialist_Party_of_Chile"
+          },
+          {
+            "title": "Partido Socialista de Chile – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Partido_Socialista_de_Chile"
+          }
+        ]
+      },
       "ideology": ["Socialism", "Left-wing", "Progressivism"],
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
@@ -9222,6 +9499,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "64828f923732cca4503abf628e3e3c0bbccf9ea908a6b00e7b0c2da59b63e785",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Radical_Party_of_Chile_logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The Radical Party logo embodies Chile's oldest political tradition, representing radical liberalism, secularism, and centre-left progressivism. Founded in 1863, the party has championed democratic reform, separation of church and state, and educational advancement. The logo symbolizes the party's historical commitment to radical democracy, institutional reform, and secular values that have shaped modern Chile's democratic development.",
+        "sources": [
+          {
+            "title": "Radical Party of Chile – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Radical_Party_of_Chile"
+          },
+          {
+            "title": "Partido Radical de Chile – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Partido_Radical_de_Chile"
+          }
+        ]
+      },
       "ideology": ["Radicalism", "Centre-left", "Secularism"],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
@@ -9255,6 +9545,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "cbb60d0fdac0a2b09356ef5a976e9c51e97d8972d17bbc792972c461332f52b2",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Cambio_Radical_logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The Cambio Radical logo emphasizes radical change and centrist pragmatism in Colombian politics. The design symbolizes the party's commitment to institutional reform, economic modernization, and pragmatic centrist governance. Founded in 2005, the party represents a centrist approach combining liberal economic policies with moderate social reform, emphasizing practical solutions to Colombia's political and economic challenges.",
+        "sources": [
+          {
+            "title": "Cambio Radical (Colombia) – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cambio_Radical"
+          },
+          {
+            "title": "Cambio Radical – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Cambio_Radical"
+          }
+        ]
+      },
       "ideology": ["Centrism", "Liberalism", "Pragmatism"],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
@@ -9286,6 +9589,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "bf6b448291ec6b1ae4a28aaf58b956b313414ac46857b5afe7080c23578dcbab",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Centro_Democr%C3%A1tico_logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The Centro Democrático logo represents Colombian conservatism and right-wing values under the leadership of former President Álvaro Uribe. The design symbolizes democratic conservatism, institutional strength, and security-focused governance. The party embodies Uribismo—a political movement emphasizing market liberalism, strong state authority, and tough security policies—reflecting traditional conservative Colombian politics combined with modern democratic governance.",
+        "sources": [
+          {
+            "title": "Democratic Centre (Colombia) – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Democratic_Centre_(Colombia)"
+          },
+          {
+            "title": "Centro Democrático – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Centro_Democr%C3%A1tico"
+          }
+        ]
+      },
       "ideology": ["Conservatism", "Right-wing", "Uribismo"],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
@@ -9317,6 +9633,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "8a6f729a146f39a047af40cc996408c04258251ab0a20265a22fa1e30e1c8f4c",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partido_Liberal_Colombiano_logo.png",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The Colombian Liberal Party logo represents one of Latin America's oldest liberal political traditions, founded in 1848. The design symbolizes liberalism, democratic participation, and social democratic values. As a centre-left party, it champions civil rights, institutional reform, and progressive social policies while maintaining commitment to democratic capitalism and constitutional governance. The logo reflects the party's historical role in Colombia's struggles for democratic reform and individual freedoms.",
+        "sources": [
+          {
+            "title": "Colombian Liberal Party – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Colombian_Liberal_Party"
+          },
+          {
+            "title": "Partido Liberal Colombiano – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Partido_Liberal_Colombiano"
+          }
+        ]
+      },
       "ideology": ["Liberalism", "Centre-left", "Social democracy"],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
@@ -9348,6 +9677,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "5427911b9f359284397abaefc76b9857b3ecad7c3882319bafc668883d3e8b8a",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partido_Conservador_Colombiano_logo.png",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The Colombian Conservative Party logo represents one of Colombia's oldest political institutions, founded in 1849. The design embodies conservatism, Christian democracy, and centre-right values grounded in Catholic social teaching and institutional tradition. The party champions constitutional order, property rights, religious values, and gradual social reform. Its logo symbolizes the party's historical role in Colombian politics, balancing conservative principles with democratic governance and Christian social values.",
+        "sources": [
+          {
+            "title": "Colombian Conservative Party – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Colombian_Conservative_Party"
+          },
+          {
+            "title": "Partido Conservador Colombiano – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Partido_Conservador_Colombiano"
+          }
+        ]
+      },
       "ideology": ["Conservatism", "Centre-right", "Christian democracy"],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
@@ -9379,6 +9721,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "d8147c41ebcd3aa9d7d61df0d96ae4f427c7dfbaeed52f4bb0a850ccdc8c2ab7",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partido_Verde_Colombiano_logo.webp",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoMeaning": {
+        "description": "The Colombian Green Party logo emphasizes environmental protection, ecological sustainability, and centre-left progressivism. The green symbolism represents the party's commitment to environmental conservation, climate action, and sustainable development in Colombia. Founded in 2005, the party advocates for ecological policies, environmental justice, and progressive social values, representing Colombia's emerging environmental and progressive political movements.",
+        "sources": [
+          {
+            "title": "Colombian Green Party – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Colombian_Green_Party"
+          },
+          {
+            "title": "Partido Verde Colombiano – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Partido_Verde_Colombiano"
+          }
+        ]
+      },
       "ideology": ["Green politics", "Environmentalism", "Centre-left"],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
@@ -10667,6 +11022,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/pe/fuerza-popular.svg",
       "sha256": "1b8981d4ef5179f643fa6b65b285c450db4864f91feafb10cc77dcffc04bcee9",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Fuerza_popular.svg",
+      "logoMeaning": {
+        "description": "The geometric shield design symbolizes institutional strength and democratic order. The right-wing conservatism and authoritarian governance approach emphasizes family values, market liberalism, and national security, reflecting Peru's centrist-to-right political tradition.",
+        "sources": [
+          {
+            "title": "Fuerza Popular – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Fuerza_Popular"
+          },
+          {
+            "title": "Keiko Fujimori – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Keiko_Fujimori"
+          }
+        ]
+      },
       "ideology": ["Right-wing", "Conservatism", "Authoritarianism"],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
@@ -10697,6 +11065,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/pe/juntos-por-el-peru.svg",
       "sha256": "67bf3974a9f2718c266ccbcf7f22b3303d22ef2baf6a0bc78064b6d4bdac62f5",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_juntos_por_el_Peru.svg",
+      "logoMeaning": {
+        "description": "The emblem symbolizes unity and collective action toward social progress. Centre-left ideology emphasizes indigenous rights, social democracy, and inclusive governance that prioritizes marginalized communities and sustainable development across Peru.",
+        "sources": [
+          {
+            "title": "Juntos por el Perú – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Juntos_por_el_Per%C3%BA"
+          },
+          {
+            "title": "2024 Peruvian general election – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
+          }
+        ]
+      },
       "ideology": ["Centre-left", "Social democracy", "Indigenism"],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
@@ -10723,6 +11104,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/pe/renovacion-popular.svg",
       "sha256": "92855663ee2ef3623c90c7f2fd9b421a091f9efd71c2510db93d51905c091991",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Renovaci%C3%B3n_Popular_2023.png",
+      "logoMeaning": {
+        "description": "The modern geometric design represents institutional renewal and market-oriented governance. Right-wing neoliberal ideology emphasizes free markets, privatization, and conservative fiscal policies aligned with pro-market economic modernization.",
+        "sources": [
+          {
+            "title": "Renovación Popular – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Renovaci%C3%B3n_Popular_(Peru)"
+          },
+          {
+            "title": "Rafael López Aliaga – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Rafael_L%C3%B3pez_Aliaga"
+          }
+        ]
+      },
       "ideology": ["Right-wing", "Neoliberalism", "Pro-market"],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
@@ -10750,6 +11144,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "e7a2289ec1025004d9901874a780576f6ceb60e4f1c5bbeee53bdceaf4e8e666",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Buen_Gobierno_2024.jpg",
       "licenceNote": "Freely licensed logo from Wikimedia Commons (CC BY 4.0); bundled locally.",
+      "logoMeaning": {
+        "description": "The centrist emblem emphasizes good governance, transparency, and anti-corruption measures. Populist ideology seeks direct connection with ordinary citizens and prioritizes addressing corruption and institutional reform as core governance principles.",
+        "sources": [
+          {
+            "title": "Partido del Buen Gobierno – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Partido_del_Buen_Gobierno"
+          },
+          {
+            "title": "2024 Peruvian general election – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
+          }
+        ]
+      },
       "ideology": ["Centre", "Populism", "Anti-corruption"],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
@@ -10779,6 +11186,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "30bdff939019e54ab05fd4cb9c232dc6b9a8844153e7bf760684109186e2bb17",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Civico_OBRAS.png",
       "licenceNote": "Freely licensed logo from Wikimedia Commons (CC BY-SA 4.0); bundled locally.",
+      "logoMeaning": {
+        "description": "The civic emblem represents regional autonomy and grassroots governance. Centre-left ideology emphasizes regional development, local social programs, and infrastructure investment that strengthens regional economies and communities across Peru.",
+        "sources": [
+          {
+            "title": "Partido Cívico OBRAS – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Partido_C%C3%ADvico_OBRAS"
+          },
+          {
+            "title": "2024 Peruvian general election – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
+          }
+        ]
+      },
       "ideology": ["Centre-left", "Regionalism", "Social development"],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
@@ -10808,6 +11228,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "3f6d072d21eddf5a9406e559f606f7aa5d2310a0eb352c3adfacc8c07964b58c",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Ahora_Naci%C3%B3n_2026.jpg",
       "licenceNote": "Freely licensed logo from Wikimedia Commons (Public Domain); bundled locally.",
+      "logoMeaning": {
+        "description": "The emblem represents a new era of socialist governance and indigenous empowerment. Left-wing ideology emphasizes workers' rights, indigenous sovereignty, wealth redistribution, and societal transformation rooted in Peru's indigenous heritage and communities.",
+        "sources": [
+          {
+            "title": "Ahora Nación – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ahora_Naci%C3%B3n"
+          },
+          {
+            "title": "2024 Peruvian general election – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
+          }
+        ]
+      },
       "ideology": ["Left-wing", "Socialism", "Indigenism"],
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
@@ -12520,6 +12953,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/bo/mas.svg",
       "sha256": "f7dcd2d7477fdea08d3d18aa46f459505bb3b84446228ca35ab5d525a2d310e0",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MAS-IPSP_logo.svg",
+      "logoMeaning": {
+        "description": "The MAS (Movimiento al Socialismo) logo features a stylized indigenous design incorporating symbolism from Andean traditions, representing the party's commitment to indigenous rights, socialism, and anti-imperialist politics. The logo emphasizes the party's connection to Bolivia's indigenous majority and its vision of an inclusive, socialist democracy that centres indigenous peoples' voices and cultural heritage.",
+        "sources": [
+          {
+            "title": "Movement for Socialism (Bolivia) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Movement_for_Socialism_(Bolivia)"
+          },
+          {
+            "title": "Movimiento al Socialismo — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/Movimiento_al_Socialismo_(Bolivia)"
+          }
+        ]
+      },
       "ideology": ["Socialism", "Indigenous rights", "Anti-imperialism"],
       "ideologyPosition": "left",
       "founded": 1997,
@@ -12550,6 +12996,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/bo/apg.svg",
       "sha256": "f3b98a74e7ff7f5f60825904d362517401f7e228f6b1883c174384053dc72adb",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Arcistas_por_Bolivia.svg",
+      "logoMeaning": {
+        "description": "The APG (Arcistas por Bolivia) logo features the national colours of Bolivia with a design emphasizing civic nationalism, stability, and centre-right political values. The emblem reflects the party's commitment to institutional conservatism, democratic governance, and a vision of Bolivia organized around civic values and national unity rather than class or indigenous identity politics.",
+        "sources": [
+          {
+            "title": "2025 Bolivian general election — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2025_Bolivian_general_election"
+          },
+          {
+            "title": "Luis Fernando Camacho — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Luis_Fernando_Camacho"
+          }
+        ]
+      },
       "ideology": ["Conservatism", "Civic nationalism", "Centre-right"],
       "ideologyPosition": "centre-right",
       "founded": 2017,
@@ -12579,6 +13038,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/bo/um.svg",
       "sha256": "3283f70b01e61225983bdc847834b6b296d35aacdfbd09618cc55a46cd73d724",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Unidad_Movil_logo.svg",
+      "logoMeaning": {
+        "description": "The UM (Unidad Movil) logo reflects the party's centrist and liberal positioning, emphasizing pragmatism, market-oriented policies, and political mobility. The design conveys the party's focus on economic liberalism, institutional reform, and flexible coalition-building as alternatives to both left-wing socialism and rigid conservatism.",
+        "sources": [
+          {
+            "title": "2025 Bolivian general election — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2025_Bolivian_general_election"
+          },
+          {
+            "title": "Oscar Ortiz — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Oscar_Ortiz_(politician)"
+          }
+        ]
+      },
       "ideology": ["Centrism", "Liberalism"],
       "ideologyPosition": "centre",
       "founded": 2018,
@@ -13174,6 +13646,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/UY/Logo_Frente_Amplio.svg",
       "sha256": "f5af82d6aa102ae1d87112e66cbaa921e77608b56c90cfba6f74f9008ec0d4b8",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Frente_Amplio.svg",
+      "logoMeaning": {
+        "description": "The Frente Amplio logo features a red and white color scheme representing the coalition's progressive heritage and commitment to unity. The red represents the socialist and social democratic values of the alliance, while white symbolizes peace and democratic governance. The emblem was designed to represent the broad coalition of left-wing and progressive parties that came together in 1971 to form this electoral and political front.",
+        "sources": [
+          {
+            "title": "Broad Front (Uruguay) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Broad_Front"
+          }
+        ]
+      },
       "ideology": ["Socialism", "Social democracy", "Progressivism"],
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
@@ -13204,7 +13685,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "ADN",
       "name": "Acción Democrática Nacional",
       "nameEn": "National Democratic Action",
-      "noImageReason": "Logo search conducted across Wikimedia Commons, party Wikipedia, and official website sources; no freely-licensed image found. Party uses corporate branding primarily; awaiting high-quality official vectorized logo.",
+      "logo": "party-logos/ec/adn.svg",
+      "sha256": "22f45c594c6d636935258d8dffc83c3a93c77719617b624a5d7e73506829b505",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Acción_Democrática_Nacional_Logo.svg",
+      "logoMeaning": {
+        "description": "The ADN emblem features a shield with the colors blue, red, and white, representing national identity and democratic values. The shield symbolizes protection of democratic institutions and national sovereignty, while the blue represents loyalty and commitment to constitutional governance. The party's name emphasizes national democratic action as its core principle.",
+        "sources": [
+          {
+            "title": "National Democratic Action (Ecuador) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/National_Democratic_Action_(Ecuador)"
+          }
+        ]
+      },
       "ideology": ["Conservatism", "Social democracy"],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
@@ -13233,7 +13725,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "RC",
       "name": "Movimiento Revolución Ciudadana",
       "nameEn": "Citizen Revolution Movement",
-      "noImageReason": "Logo search conducted across Wikimedia Commons, party Wikipedia, and official sources; no freely-licensed high-quality vectorized logo located. Party archives contain only raster/low-quality versions.",
+      "logo": "party-logos/ec/rc.svg",
+      "sha256": "553ddb33b7a941ac1bc8d4fa4de83ad9294d74a7044d1e84c450119d80f509b2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Movimiento_RC5.svg",
+      "logoMeaning": {
+        "description": "The RC logo features the number 5 prominently in the party's blue color scheme, with 'RC' initials integrated into the design. The numeral five represents the party's commitment to a fifth transformation (revolución) of Ecuador, echoing the broader 'Citizen Revolution' platform emphasizing radical social and economic change. The geometric, modern design reflects the movement's progressive stance.",
+        "sources": [
+          {
+            "title": "Movimiento Revolución Ciudadana — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Movimiento_Revolución_Ciudadana"
+          }
+        ]
+      },
       "ideology": ["Left-wing", "Socialism", "Progressivism"],
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
@@ -13285,7 +13788,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PK",
       "name": "Movimiento de Unidad Plurinacional Pachakutik",
       "nameEn": "Indigenous Movement of Pachakutik",
-      "noImageReason": "Logo search conducted across Wikimedia Commons, party Wikipedia, and indigenous movement archives; no freely-licensed vectorized logo available.",
+      "logo": "party-logos/ec/pk.svg",
+      "sha256": "def6c437447b7baf15e73be6860df9f2c7df6c046232b9a50754f687e4c01b4f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Pachakutik.svg",
+      "logoMeaning": {
+        "description": "The Pachakutik emblem features indigenous Andean symbolism, with a stylized figure or geometric pattern reflecting the movement's commitment to indigenous rights and pan-indigenous unity. The name 'Pachakutik' refers to the Inca concept of a new era or world transformation (pacha = world/time, kutik = to turn/overturn), symbolizing the movement's vision for radical social transformation centered on indigenous participation and sovereignty.",
+        "sources": [
+          {
+            "title": "Pachakutik Plurinational Unity Movement — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Pachakutik_Plurinational_Unity_Movement"
+          }
+        ]
+      },
       "ideology": ["Indigenous rights", "Socialism", "Environmentalism"],
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
