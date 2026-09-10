@@ -4,6 +4,7 @@ import {
   type PoliticalParty,
   type PoliticalCoalition,
 } from "../data/politicalParties";
+import { GOVERNMENT_TYPES } from "./governmentTypes";
 
 /**
  * Helpers for the Learn-mode "Political parties" grid view and its detail
@@ -59,4 +60,54 @@ export function coalitionPartners(party: PoliticalParty): readonly PoliticalPart
  *  current "Political parties" view. */
 export function totalPartyCount(): number {
   return Object.values(POLITICAL_PARTIES).reduce((n, list) => n + list.length, 0);
+}
+
+export type GovernmentCategory = "presidential" | "parliamentary" | "semi-presidential" | "other";
+
+export function getGovernmentCategory(countryCode: string): GovernmentCategory {
+  const raw = (GOVERNMENT_TYPES[countryCode] ?? "").toLowerCase();
+  if (raw.includes("semi-presidential")) return "semi-presidential";
+  if (raw.includes("presidential")) return "presidential";
+  if (raw.includes("parliamentary") || raw.includes("constitutional monarchy") || raw.includes("directorial")) return "parliamentary";
+  return "other";
+}
+
+export interface PartyBadgeItem {
+  readonly label: string;
+  readonly kind: "power" | "executive" | "legislative";
+}
+
+export function partyPowerBadges(party: PoliticalParty, countryCode: string): PartyBadgeItem[] {
+  const cat = getGovernmentCategory(countryCode);
+  const badges: PartyBadgeItem[] = [];
+
+  if (cat === "presidential") {
+    if (party.inExecutive) {
+      badges.push({ label: "Hold executive power", kind: "executive" });
+    }
+    if (party.inPower && !party.inExecutive) {
+      badges.push({ label: "Hold legislative power", kind: "legislative" });
+    } else if (party.inPower && party.inExecutive) {
+      badges.push({ label: "Hold legislative power", kind: "legislative" });
+    }
+  } else if (cat === "semi-presidential") {
+    if (party.inExecutive && party.inPower) {
+      badges.push({ label: "Hold executive power", kind: "executive" });
+      badges.push({ label: "Hold legislative power", kind: "legislative" });
+    } else if (party.inExecutive) {
+      badges.push({ label: "Hold executive power", kind: "executive" });
+    } else if (party.inPower) {
+      badges.push({ label: "Hold legislative power", kind: "legislative" });
+    }
+  } else if (cat === "parliamentary") {
+    if (party.inPower) {
+      badges.push({ label: "In-power", kind: "power" });
+    }
+  } else {
+    if (party.inPower) {
+      badges.push({ label: "In-power", kind: "power" });
+    }
+  }
+
+  return badges;
 }

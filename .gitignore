@@ -27,6 +27,11 @@ dev-dist
 *.njsproj
 *.sln
 *.sw?
+*.xcuserdata
+*.xcuserdata/
+xcuserdata/
+*.xcworkspace
+*.xcworkspace/
 
 # Admin-1 inputs for the patchwork split scripts.
 # Re-downloaded on demand by scripts/split-patchwork.py.

@@ -73,7 +73,7 @@ export function PoliticalPartyFacts({ party }: { party: PoliticalParty }) {
         )}
         {partners.length > 0 && (
           <div className="entity-summary__row">
-            <dt className="entity-summary__label">Coalition parties</dt>
+            <dt className="entity-summary__label">Coalition partners</dt>
             <dd className="entity-summary__value">
               {partners.map((p, i) => (
                 <span key={p.id}>
