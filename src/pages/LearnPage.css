@@ -1932,6 +1932,64 @@
   color: var(--ink-fixed);
 }
 
+.flag-grid__party-badge--executive {
+  border-color: #059669;
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.flag-grid__party-badge--legislative {
+  border-color: #2563eb;
+  background: #eff6ff;
+  color: #1e40af;
+}
+
+@media (prefers-color-scheme: dark) {
+  .flag-grid__party-badge--executive {
+    background: rgba(5, 150, 105, 0.2);
+    border-color: #10b981;
+    color: #6ee7b7;
+  }
+  .flag-grid__party-badge--legislative {
+    background: rgba(37, 99, 235, 0.2);
+    border-color: #3b82f6;
+    color: #93c5fd;
+  }
+}
+
+/* Small pill toggle switching the "Political parties" tab grouping mode (Ideology, A-Z, Coalition) */
+.party-sort-toggle {
+  display: inline-flex;
+  gap: 0.4rem;
+  margin: 0 0 1.1rem;
+}
+
+.party-sort-toggle__btn {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  box-shadow: 0 2px 0 var(--ink);
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.party-sort-toggle__btn:hover,
+.party-sort-toggle__btn:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+}
+
+.party-sort-toggle__btn--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+}
+
 /* === Hierarchy org chart ============================================= */
 
 /* A pure-CSS org chart: national root, a horizontal bus of subdivision
