@@ -156,7 +156,96 @@ export interface PoliticalParty {
   readonly sources: readonly PoliticalPartySource[];
 }
 
-export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {};
+export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
+  "MY-PH": {
+    id: "MY-PH",
+    name: "Pakatan Harapan",
+    nameEn: "Alliance of Hope",
+    kind: "coalition",
+    memberPartyIds: ["MY-DAP", "MY-PKR", "MY-AMANAH"],
+    source: {
+      title: "Pakatan Harapan — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Pakatan_Harapan",
+    },
+  },
+  "MY-BN": {
+    id: "MY-BN",
+    name: "Barisan Nasional",
+    nameEn: "National Front",
+    kind: "coalition",
+    memberPartyIds: ["MY-UMNO", "MY-MCA", "MY-MIC", "MY-PBRS"],
+    source: {
+      title: "Barisan Nasional — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Barisan_Nasional",
+    },
+  },
+  "MY-GPS": {
+    id: "MY-GPS",
+    name: "Gabungan Parti Sarawak",
+    nameEn: "Sarawak Parties Alliance",
+    kind: "coalition",
+    memberPartyIds: ["MY-PBB", "MY-PRS", "MY-PDP", "MY-SUPP"],
+    source: {
+      title: "Gabungan Parti Sarawak — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Gabungan_Parti_Sarawak",
+    },
+  },
+  "MY-GRS": {
+    id: "MY-GRS",
+    name: "Gabungan Rakyat Sabah",
+    nameEn: "Sabah People's Alliance",
+    kind: "coalition",
+    memberPartyIds: ["MY-GRS", "MY-UPKO", "MY-PBS"],
+    source: {
+      title: "Gabungan Rakyat Sabah — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Gabungan_Rakyat_Sabah",
+    },
+  },
+  "MY-PN": {
+    id: "MY-PN",
+    name: "Perikatan Nasional",
+    nameEn: "National Alliance",
+    kind: "coalition",
+    memberPartyIds: ["MY-PAS", "MY-WAWASAN", "MY-BERSATU"],
+    source: {
+      title: "Perikatan Nasional — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Perikatan_Nasional",
+    },
+  },
+  "TL-CNRT-PD": {
+    id: "TL-CNRT-PD",
+    name: "Coligação CNRT–PD",
+    nameEn: "CNRT–PD Coalition",
+    kind: "coalition",
+    memberPartyIds: ["TL-CNRT", "TL-PD"],
+    source: {
+      title: "IX Constitutional Government of East Timor — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/IX_Constitutional_Government_of_East_Timor",
+    },
+  },
+  "ID-KIM": {
+    id: "ID-KIM",
+    name: "Koalisi Indonesia Maju",
+    nameEn: "Advanced Indonesia Coalition",
+    kind: "coalition",
+    memberPartyIds: ["ID-GERINDRA", "ID-GOLKAR", "ID-DEMOKRAT", "ID-PAN"],
+    source: {
+      title: "Advanced Indonesia Coalition — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Advanced_Indonesia_Coalition",
+    },
+  },
+  "PH-ALYANSA": {
+    id: "PH-ALYANSA",
+    name: "Alyansa para sa Bagong Pilipinas",
+    nameEn: "Alliance for a New Philippines",
+    kind: "coalition",
+    memberPartyIds: ["PH-PFP", "PH-LAKAS", "PH-NPC", "PH-NUP", "PH-NACIONALISTA"],
+    source: {
+      title: "Alyansa para sa Bagong Pilipinas — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Alyansa_para_sa_Bagong_Pilipinas",
+    },
+  },
+};
 
 
 
@@ -913,6 +1002,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 36,
       "chamberName": "Legislative Council",
+      "logoMeaning": {
+      "description": "The Parti Demokrat Nahdah Brunei logo features a green crescent and star with a central emblem representing Islamic democracy, Malay cultural identity, and national solidarity within Brunei Darussalam.",
+      "sources": [
+              {
+                      "title": "Brunei National Democratic Party – Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Brunei_National_Democratic_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Brunei National Democratic Party – Wikipedia",
@@ -936,6 +1034,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 0,
       "seatsTotal": 36,
       "chamberName": "Legislative Council",
+      "logoMeaning": {
+      "description": "The Parti Nasional Demokratik Brunei emblem displays traditional Bruneian royal and state motifs on a yellow and white background, symbolising constitutional governance and national sovereignty.",
+      "sources": [
+              {
+                      "title": "Brunei – Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Brunei"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Brunei – Wikipedia",
@@ -959,6 +1066,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 0,
       "seatsTotal": 36,
       "chamberName": "Legislative Council",
+      "logoMeaning": {
+      "description": "The Parti Negara Sedar logo features national patriotic emblems symbolising state consciousness, independence, and the welfare of Brunei's people.",
+      "sources": [
+              {
+                      "title": "Brunei – Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Brunei"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Brunei – Wikipedia",
@@ -4504,9 +4620,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 40,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-PH",
       "logoMeaning": {
-        "description": "DAP's rocket logo has been used since the 1969 general election. The red rocket symbolises the party's aspiration for a modern, dynamic and progressive society; the four rocket boosters represent the support and drive given to the party's objectives by the three major ethnic groups (Malay, Chinese, Indian) and others; the blue circle stands for the unity of Malaysia's multiracial people; and the white background stands for purity and incorruptibility.",
-        "sources": [
+        "description": "DAP's rocket logo has been used since the 1969 general election. The red rocket symbolises the party's aspiration for a modern, dynamic and progressive society; the four rocket boosters represent the support and drive given to the party's objectives by the three major ethnic groups (Malay, Chinese, Indian) and others; the blue circle stands for the unity of Malaysia's multiracial people; and the white background stands for purity and incorruptibility.","sources": [
           {
             "title": "Democratic Action Party — Party symbols",
             "url": "https://en.wikipedia.org/wiki/Democratic_Action_Party"
@@ -4552,9 +4668,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 28,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-PH",
       "logoMeaning": {
-        "description": "PKR's logo centres on a large white eye, widely understood as a reference to the black eye Anwar Ibrahim suffered from a police beating in custody in 1998 (an event that galvanised the Reformasi movement from which the party emerged); the eye shape is also read as depicting two crescent moons, an Islamic symbol.",
-        "sources": [
+        "description": "PKR's logo centres on a large white eye, widely understood as a reference to the black eye Anwar Ibrahim suffered from a police beating in custody in 1998 (an event that galvanised the Reformasi movement from which the party emerged); the eye shape is also read as depicting two crescent moons, an Islamic symbol.","sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -4602,9 +4718,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 8,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-PH",
       "logoMeaning": {
-        "description": "AMANAH's logo uses a stylised letter 'A' (also read as an upward arrow) for the party's name; three stripes represent the values of Trust (Amanah), Progressiveness and Care; orange symbolises energy, success, friendship and determination, while white symbolises purity and morality.",
-        "sources": [
+        "description": "AMANAH's logo uses a stylised letter 'A' (also read as an upward arrow) for the party's name; three stripes represent the values of Trust (Amanah), Progressiveness and Care; orange symbolises energy, success, friendship and determination, while white symbolises purity and morality.","sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -4647,9 +4763,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 26,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-BN",
       "logoMeaning": {
-        "description": "UMNO's flag (Sang Saka Bangsa) uses red for bravery, white for purity and sincerity, yellow for royalty and green for Islam; the keris (Malay dagger) at its centre represents Malay civilisation.",
-        "sources": [
+        "description": "UMNO's flag (Sang Saka Bangsa) uses red for bravery, white for purity and sincerity, yellow for royalty and green for Islam; the keris (Malay dagger) at its centre represents Malay civilisation.","sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -4691,9 +4807,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-BN",
       "logoMeaning": {
-        "description": "The MCA emblem's 14-point star represents the 13 states of Malaysia together with the Federal Government, symbolising the party's loyalty to the nation; the design was adopted in the 1950s and first flown in 1958.",
-        "sources": [
+        "description": "The MCA emblem's 14-point star represents the 13 states of Malaysia together with the Federal Government, symbolising the party's loyalty to the nation; the design was adopted in the 1950s and first flown in 1958.","sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -4735,9 +4851,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-BN",
       "logoMeaning": {
-        "description": "The MIC flag's 14 stripes are borrowed from Malaysia's national flag (the Jalur Gemilang); the blue stripes at top and bottom represent peace and prosperity, and the green circle at the centre represents unity, with the party's initials rendered in Tamil and Romanised script.",
-        "sources": [
+        "description": "The MIC flag's 14 stripes are borrowed from Malaysia's national flag (the Jalur Gemilang); the blue stripes at top and bottom represent peace and prosperity, and the green circle at the centre represents unity, with the party's initials rendered in Tamil and Romanised script.","sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -4783,6 +4899,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-BN",
+      "logoMeaning": {
+      "description": "The PBRS emblem features a stylised outline of Mount Kinabalu in blue and red with a central yellow torch, symbolising the resilience, indigenous cultural heritage, and unity of the people of Sabah.",
+      "sources": [
+              {
+                      "title": "United Sabah People's Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/United_Sabah_People%27s_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "United Sabah People's Party",
@@ -4814,6 +4940,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 14,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-GPS",
+      "logoMeaning": {
+      "description": "The PBB logo features two clasped hands surrounded by a circular sunburst and rice ears, symbolising the unity and cooperation of Sarawak's indigenous Bumiputera communities (Dayak, Malay, Melanau) in pursuit of progress and stability.",
+      "sources": [
+              {
+                      "title": "Parti Pesaka Bumiputera Bersatu — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Parti_Pesaka_Bumiputera_Bersatu"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Parti Pesaka Bumiputera Bersatu",
@@ -4851,6 +4987,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 5,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-GPS",
+      "logoMeaning": {
+      "description": "The PRS emblem displays the Rhinoceros Hornbill (Burung Kenyalang, the sacred cultural symbol and state bird of Sarawak) atop the party name, representing Dayak identity, cultural pride, and native rights.",
+      "sources": [
+              {
+                      "title": "Sarawak Peoples' Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Sarawak_Peoples%27_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Sarawak Peoples' Party",
@@ -4895,6 +5041,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-GPS",
+      "logoMeaning": {
+      "description": "The PDP logo features upward-sweeping red, yellow, and blue geometric curves representing dynamic multiracial progress, constitutional rights, and Sarawak state development.",
+      "sources": [
+              {
+                      "title": "Progressive Democratic Party (Malaysia) — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Progressive_Democratic_Party_(Malaysia)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Progressive Democratic Party (Malaysia)",
@@ -4930,6 +5086,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-GPS",
+      "logoMeaning": {
+      "description": "The SUPP emblem consists of three interlocking yellow rings on a red and green shield, representing the harmonious unity of Sarawak's three major communities (Dayak, Chinese, and Malay) working together for progress and social harmony.",
+      "sources": [
+              {
+                      "title": "Sarawak United Peoples' Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Sarawak_United_Peoples%27_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Sarawak United Peoples' Party",
@@ -4967,6 +5133,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 4,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-GRS",
+      "logoMeaning": {
+      "description": "The GRS logo features Mount Kinabalu in sky blue flanked by stylized wings in navy blue and red, echoing the colors of the Sabah flag and symbolising state sovereignty, regional solidarity, and high aspirations.",
+      "sources": [
+              {
+                      "title": "Gabungan Rakyat Sabah — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Gabungan_Rakyat_Sabah"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Gabungan Rakyat Sabah",
@@ -5010,6 +5186,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-GRS",
+      "logoMeaning": {
+      "description": "The UPKO logo displays Mount Kinabalu in deep blue encircled by red and orange rings, representing the sacred mountain of the Kadazandusun people, cultural heritage, and dedication to Sabah's indigenous communities.",
+      "sources": [
+              {
+                      "title": "United Progressive Kinabalu Organisation — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/United_Progressive_Kinabalu_Organisation"
+              }
+      ]
+},
       "sources": [
         {
           "title": "United Progressive Kinabalu Organisation",
@@ -5049,6 +5235,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-GRS",
+      "logoMeaning": {
+      "description": "The PBS logo features two clasped hands inside a red circle with 14 yellow laurel leaves and Mount Kinabalu, signifying multiracial cooperation, the defense of Sabah's 20-point agreement rights, and regional solidarity.",
+      "sources": [
+              {
+                      "title": "United Sabah Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/United_Sabah_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "United Sabah Party",
@@ -5137,6 +5333,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "logoMeaning": {
+      "description": "The KDM logo incorporates ethnic Sabahan cultural motifs, including the traditional gong musical instrument, representing community harmony (kesejahteraan), grassroots cultural preservation, and the empowerment of Kadazan-Dusun and Murut communities.",
+      "sources": [
+              {
+                      "title": "Social Democratic Harmony Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Social_Democratic_Harmony_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Social Democratic Harmony Party",
@@ -5170,6 +5375,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "logoMeaning": {
+      "description": "The STAR logo features seven golden stars surrounding Mount Kinabalu on a circular blue field, representing the administrative divisions of Sabah, homeland sovereignty, and unity for the people of Borneo.",
+      "sources": [
+              {
+                      "title": "Homeland Solidarity Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Homeland_Solidarity_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Homeland Solidarity Party",
@@ -5255,9 +5469,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 43,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-PN",
       "logoMeaning": {
-        "description": "PAS's flag is a plain green field bearing a white disc (\"bulan\", the moon); the green colour and the white moon both symbolise Islam, and the design was originally kept simple so rural supporters could easily sew it themselves.",
-        "sources": [
+        "description": "PAS's flag is a plain green field bearing a white disc (\"bulan\", the moon); the green colour and the white moon both symbolise Islam, and the design was originally kept simple so rural supporters could easily sew it themselves.","sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -5302,6 +5516,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 6,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-PN",
+      "logoMeaning": {
+      "description": "The Parti Wawasan Negara logo features a dynamic directional arrow emblem in red and blue, symbolizing forward-looking vision, national modernisation, and progressive governance.",
+      "sources": [
+              {
+                      "title": "National Vision Party (Malaysia) — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/National_Vision_Party_(Malaysia)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "National Vision Party (Malaysia)",
@@ -5338,6 +5562,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 19,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
+      "coalitionId": "MY-PN",
+      "logoMeaning": {
+      "description": "The BERSATU logo features a red five-petalled hibiscus flower (Bunga Raya, Malaysia's national flower) set against a crimson shield, representing national identity, Malay cultural heritage, and the five pillars of the nation and Islam.",
+      "sources": [
+              {
+                      "title": "Malaysian United Indigenous Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Malaysian_United_Indigenous_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Malaysian United Indigenous Party",
@@ -6012,6 +6246,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 77,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "coalitionId": "PH-ALYANSA",
+      "logoMeaning": {
+      "description": "The Lakas–CMD emblem features an open hand holding a burning torch of enlightenment above an open book and scales of justice, flanked by yellow rays and the blue and red colours of the Philippine flag, symbolising Christian-Muslim democratic solidarity, popular power, and good governance.",
+      "sources": [
+              {
+                      "title": "Lakas–CMD - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Lakas%E2%80%93CMD"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Lakas–CMD - Wikipedia",
@@ -6046,6 +6290,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 55,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "coalitionId": "PH-ALYANSA",
+      "logoMeaning": {
+      "description": "The NUP logo displays a circular seal with three stylized human figures holding hands in solidarity around a golden sun and rice stalk, symbolising national unity, peace, and Christian-democratic governance across the Philippine archipelago.",
+      "sources": [
+              {
+                      "title": "National Unity Party (Philippines) - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/National_Unity_Party_(Philippines)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "National Unity Party (Philippines) - Wikipedia",
@@ -6084,6 +6338,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 52,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "coalitionId": "PH-ALYANSA",
+      "logoMeaning": {
+      "description": "The PFP logo depicts a golden eagle and the Philippine eight-rayed sun above a shield divided into red and blue halves, symbolizing federalism, regional autonomy, strength, and national renewal.",
+      "sources": [
+              {
+                      "title": "Partido Federal ng Pilipinas - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Partido_Federal_ng_Pilipinas"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Partido Federal ng Pilipinas - Wikipedia",
@@ -6125,6 +6389,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 34,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "coalitionId": "PH-ALYANSA",
+      "logoMeaning": {
+      "description": "The NPC logo features a golden sun rising over green fertile fields and blue sea inside a shield, representing Filipino agricultural progress, national solidarity, and sustainable economic growth.",
+      "sources": [
+              {
+                      "title": "Nationalist People's Coalition - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Nationalist_People%27s_Coalition"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Nationalist People's Coalition - Wikipedia",
@@ -6163,6 +6437,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 18,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "coalitionId": "PH-ALYANSA",
+      "logoMeaning": {
+      "description": "The Nacionalista Party logo displays a green laurel wreath encircling a red sunburst and a shield bearing the initials 'NP' in gold, commemorating the legacy of the oldest political party in the Philippines, founded in 1907 during the struggle for Philippine independence.",
+      "sources": [
+              {
+                      "title": "Nacionalista Party - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Nacionalista_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Nacionalista Party - Wikipedia",
@@ -6200,6 +6484,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 6,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Liberal Party logo features a bright yellow background with the iconic hand forming the letter 'L' (the Laban sign), a historic symbol of freedom, human rights, and the People Power movement in the Philippines.",
+      "sources": [
+              {
+                      "title": "Liberal Party (Philippines) - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Liberal_Party_(Philippines)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Liberal Party (Philippines) - Wikipedia",
@@ -6243,6 +6536,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The PDP–Laban logo features a red and blue roundel enclosing a hand holding a flaming torch of freedom and the letters PDP-LABAN, symbolising the struggle against dictatorship, democratic socialism, and federalism.",
+      "sources": [
+              {
+                      "title": "PDP–Laban - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/PDP%E2%80%93Laban"
+              }
+      ]
+},
       "sources": [
         {
           "title": "PDP–Laban - Wikipedia",
@@ -6278,6 +6580,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 3,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The HTL emblem features a stylized Philippine eagle head in orange, red, and blue against a protective shield, symbolising Davao regional strength, local unity, and good governance.",
+      "sources": [
+              {
+                      "title": "Hugpong ng Pagbabago - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Hugpong_ng_Pagbabago"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Hugpong sa Tawong Lungsod - Wikipedia",
@@ -6344,6 +6655,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 3,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Akbayan logo features a green swallow (ibon) soaring freely upward, symbolizing citizen empowerment, participatory democracy, environmental justice, and socialist progressivism.",
+      "sources": [
+              {
+                      "title": "Akbayan - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Akbayan"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Akbayan - Wikipedia",
@@ -6378,6 +6698,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 3,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Tingog Party-list logo features an orange and yellow stylized megaphone soundwave forming the letter 'T', symbolising giving a voice (Tingog) to Eastern Visayas and marginalized communities in national legislation.",
+      "sources": [
+              {
+                      "title": "Tingog Party List - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Tingog_Party_List"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Tingog Sinirangan - Wikipedia",
@@ -6412,6 +6741,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The 4Ps Party-list logo features four stylized figures holding hands in a circle bordered by golden laurel branches, representing social protection, poverty alleviation, and human development.",
+      "sources": [
+              {
+                      "title": "House of Representatives of the Philippines - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
+              }
+      ]
+},
       "sources": [
         {
           "title": "4Ps Party-list - Wikipedia",
@@ -6445,6 +6783,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Ako Bicol logo displays the iconic symmetrical cone of Mount Mayon Volcano surrounded by sunrise rays and green hills, representing Bicol regional identity, disaster resilience, and community advocacy.",
+      "sources": [
+              {
+                      "title": "Ako Bicol - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Ako_Bicol"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Ako Bicol - Wikipedia",
@@ -6591,6 +6938,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 120,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The People's Party logo consists of an inverted equilateral orange triangle containing a smaller nested triangle, symbolizing the chevron pointing forward, equal democratic foundations, and the historic orange color of the progressive Thai movement.",
+      "sources": [
+              {
+                      "title": "People's Party (Thailand) - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/People%27s_Party_(Thailand)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "People's Party (Thailand) - Wikipedia",
@@ -6635,6 +6991,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 192,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Bhumjaithai Party logo features a stylized heart in the colours of the Thai flag (red and blue) enclosing the map of Thailand, signifying love, loyalty, and pride in the nation ('Bhumjai Thai' translates to 'Proud to be Thai').",
+      "sources": [
+              {
+                      "title": "Bhumjaithai Party - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Bhumjaithai_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Bhumjaithai Party - Wikipedia",
@@ -6680,6 +7045,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 74,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Pheu Thai Party logo features the Thai consonant 'ภ' (Pho Phan) stylised into a heart in red and blue (the colours of the Thai national flag), symbolising the party's motto and devotion to serving the Thai people ('For Thais').",
+      "sources": [
+              {
+                      "title": "Pheu Thai Party - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Pheu_Thai_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Pheu Thai Party - Wikipedia",
@@ -6715,6 +7089,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 21,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Democrat Party emblem depicts the goddess Mae Thorani (the Earth Goddess) wringing sacred water from her hair, representing the washing away of impurities, moral truth, and enduring democratic dedication to the people.",
+      "sources": [
+              {
+                      "title": "Democrat Party (Thailand) - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Democrat_Party_(Thailand)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Democrat Party (Thailand) - Wikipedia",
@@ -6752,6 +7135,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 58,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Prachachat logo displays green geometric wings and an open book motif, symbolising education, peace, and pluralistic harmony for southern border provinces and multicultural communities.",
+      "sources": [
+              {
+                      "title": "Prachachat Party - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Prachachat_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Kla Tham Party - Wikipedia",
@@ -6800,6 +7192,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 3,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Thai Economic Party logo features dynamic arrows and national colors representing economic revival, innovation, and national development.",
+      "sources": [
+              {
+                      "title": "House of Representatives (Thailand) - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Economic Party (Thailand) - Wikipedia",
@@ -6830,6 +7231,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The United Thai Nation logo features a stylized chevron composed of red, white, and blue stripes echoing the Thai national flag (Trairanga), symbolising unity under the monarchy, national solidarity, and patriotism.",
+      "sources": [
+              {
+                      "title": "United Thai Nation Party - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/United_Thai_Nation_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "United Thai Nation Party - Wikipedia",
@@ -6869,6 +7279,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Chart Thai Pattana logo displays a stylized pink and blue conch / floral motif surrounded by petals, representing harmony, development, and agricultural prosperity.",
+      "sources": [
+              {
+                      "title": "Chart Thai Pattana Party - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Chart_Thai_Pattana_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "พรรคเพื่อชาติไทย - วิกิพีเดีย (Pheu Chart Thai Party - Thai Wikipedia)",
@@ -6905,6 +7324,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Ruam Jai Thai logo uses heart-shaped motifs in national colors symbolizing the coming together of Thai hearts for local development and solidarity.",
+      "sources": [
+              {
+                      "title": "House of Representatives (Thailand) - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "พรรครวมใจไทย (พ.ศ. 2566) - วิกิพีเดีย (Ruam Jai Thai Party (2023) - Thai Wikipedia)",
@@ -6942,6 +7370,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 5,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Chart Pattana Kla logo features an orange and blue dynamic loop representing continuous progress, modern technological innovation, and economic dynamism.",
+      "sources": [
+              {
+                      "title": "Chart Pattana Kla Party - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Chart_Pattana_Kla_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Prachachat Party - Wikipedia",
@@ -7004,6 +7441,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The New Democracy Party logo features the Democracy Monument of Bangkok set inside a cogwheel and rice stalks, symbolising constitutional democracy, industrial labour, and agriculture.",
+      "sources": [
+              {
+                      "title": "New Democracy Party (Thailand) - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/New_Democracy_Party_(Thailand)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "New Democracy Party (Thailand) - Wikipedia",
@@ -7038,6 +7484,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Thai Teachers for People Party logo displays an open book with a flaming torch surrounded by lotus petals, representing education, teachers' dignity, and enlightenment for the people.",
+      "sources": [
+              {
+                      "title": "House of Representatives (Thailand) - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Thai Pakdee Party - Wikipedia",
@@ -7073,6 +7528,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Thai Sang Thai logo features an interlocking blue and red knot / flower symbol surrounded by circular petals, signifying the weaving together of national unity and economic revival.",
+      "sources": [
+              {
+                      "title": "Thai Sang Thai Party - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Thai_Sang_Thai_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Thai Sang Thai Party - Wikipedia",
@@ -7138,6 +7602,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Thai Liberal Party logo features a yellow shield bearing a roaring golden tiger head surrounded by national flag stripes, symbolising courage, anti-corruption enforcement, and righteous strength.",
+      "sources": [
+              {
+                      "title": "Thai Liberal Party - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Thai_Liberal_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Thai Liberal Party - Wikipedia",
@@ -7203,6 +7676,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 6,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Fair Party (Thai Ruam Palang) logo displays stylized interlocking rings in red, yellow, and blue, representing solidarity, fairness, and mutual cooperation across society.",
+      "sources": [
+              {
+                      "title": "Fair Party (Thailand) - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Fair_Party_(Thailand)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Thai Ruam Palang Party - Wikipedia",
@@ -7240,6 +7722,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 5,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
+      "logoMeaning": {
+      "description": "The Palang Pracharath logo features a tricolor hexagon in red, white, and blue (the colors of the Thai flag) symbolizing stability, royalist conservatism, and patriotic strength.",
+      "sources": [
+              {
+                      "title": "Palang Pracharath Party - Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Palang_Pracharath_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Palang Pracharath Party - Wikipedia",
@@ -9085,6 +9576,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 128,
       "seatsTotal": 575,
       "chamberName": "People's Consultative Assembly",
+      "logoMeaning": {
+      "description": "The PDI-P logo features a fierce black bull head (banteng moncong putih) with white snout and horns inside a red circular field. The banteng is a historic Indonesian nationalist symbol representing resilience, mass popular struggle, and democratic solidarity rooted in the teachings of Sukarno.",
+      "sources": [
+              {
+                      "title": "Indonesian Democratic Party of Struggle – Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Indonesian_Democratic_Party_of_Struggle"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Indonesian Democratic Party of Struggle – Wikipedia",
@@ -9118,6 +9618,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 97,
       "seatsTotal": 575,
       "chamberName": "People's Consultative Assembly",
+      "coalitionId": "ID-KIM",
+      "logoMeaning": {
+      "description": "The Golkar emblem displays a golden banyan tree (Pohon Beringin) set against a yellow shield flanked by stalks of rice and cotton, with a five-pointed star above. The banyan tree symbolises shelter, strength, and national unity across Indonesia's diverse archipelagic communities, while rice and cotton represent prosperity and social justice.",
+      "sources": [
+              {
+                      "title": "Golongan Karya – Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Golongan_Karya"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Golongan Karya – Wikipedia",
@@ -9151,6 +9661,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 112,
       "seatsTotal": 575,
       "chamberName": "People's Consultative Assembly",
+      "coalitionId": "ID-KIM",
+      "logoMeaning": {
+      "description": "The Gerindra logo features the golden head of the mythical Garuda bird inside a red circular frame surmounted by a five-pointed star. The Garuda represents national sovereignty, courage, and pride in Indonesian identity, with gold denoting nobility and red denoting bravery.",
+      "sources": [
+              {
+                      "title": "Greater Indonesia Movement Party – Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Greater_Indonesia_Movement_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Greater Indonesia Movement Party – Wikipedia",
@@ -9184,6 +9704,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 58,
       "seatsTotal": 575,
       "chamberName": "People's Consultative Assembly",
+      "logoMeaning": {
+      "description": "The PKB logo depicts a green globe of the Earth surrounded by nine golden stars on an emerald field with Arabic calligraphy. The central and largest star represents Prophet Muhammad, four stars represent the Khulafaur Rasyidin, and four represent the four Mazhabs, reflecting the moderate, pluralistic Islamic heritage of Nahdlatul Ulama.",
+      "sources": [
+              {
+                      "title": "National Awakening Party – Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/National_Awakening_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "National Awakening Party – Wikipedia",
@@ -9216,6 +9745,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 69,
       "seatsTotal": 580,
       "chamberName": "People's Representative Council (DPR)",
+      "logoMeaning": {
+      "description": "The NasDem logo features two interlocking circular arcs in deep blue and bright orange forming a unified circle. Blue represents deep thought, peace, and stability, while vibrant orange represents dynamism, optimism, and the movement for national restoration (Restorasi Indonesia).",
+      "sources": [
+              {
+                      "title": "Nasdem Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Nasdem_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Nasdem Party — Wikipedia",
@@ -9247,6 +9785,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 53,
       "seatsTotal": 580,
       "chamberName": "People's Representative Council (DPR)",
+      "logoMeaning": {
+      "description": "The PKS logo consists of two yellow crescent moons framing a central stalk of rice on a vibrant orange square. The crescents represent Islamic renewal, the rice stalk represents social welfare and justice, and orange represents warmth, optimism, and service to the community.",
+      "sources": [
+              {
+                      "title": "Prosperous Justice Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Prosperous_Justice_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Prosperous Justice Party — Wikipedia",
@@ -9279,6 +9826,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 48,
       "seatsTotal": 580,
       "chamberName": "People's Representative Council (DPR)",
+      "coalitionId": "ID-KIM",
+      "logoMeaning": {
+      "description": "The PAN logo depicts a radiant white sun with 32 rays shining across a deep blue background. The radiant sun symbolises enlightenment, morality, truth, and universal life bringing guidance and reform to all elements of the Indonesian nation.",
+      "sources": [
+              {
+                      "title": "National Mandate Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/National_Mandate_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "National Mandate Party — Wikipedia",
@@ -9311,6 +9868,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 44,
       "seatsTotal": 580,
       "chamberName": "People's Representative Council (DPR)",
+      "coalitionId": "ID-KIM",
+      "logoMeaning": {
+      "description": "The Democratic Party logo displays a three-pointed glowing star in blue and red against a dual-color shield. The three points symbolise nationalism, religious pluralism, and humanism, reflecting the party's centrist and Pancasila-aligned philosophy.",
+      "sources": [
+              {
+                      "title": "Democratic Party (Indonesia) — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Indonesia)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Democratic Party (Indonesia) — Wikipedia",
@@ -10342,6 +10909,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 482,
       "seatsTotal": 500,
       "chamberName": "National Assembly",
+      "logoMeaning": {
+      "description": "The emblem of the Communist Party of Vietnam features a golden crossed hammer and sickle on a red background. The hammer represents industrial workers, the sickle represents agricultural peasants, and the red field represents the blood of revolutionary martyrs and the cause of socialism.",
+      "sources": [
+              {
+                      "title": "Communist Party of Vietnam – Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Vietnam"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Communist Party of Vietnam – Wikipedia",
@@ -12217,6 +12793,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 86,
       "seatsTotal": 97,
       "chamberName": "Parliament of Singapore",
+      "logoMeaning": {
+      "description": "The PAP emblem consists of a red flash of lightning striking through a blue circle on a white background. The red lightning represents action and courage, the blue circle signifies the unity of all races, and the white background represents purity and incorruptibility in government.",
+      "sources": [
+              {
+                      "title": "People's Action Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/People%27s_Action_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Parliament of Singapore — Members of Parliament",
@@ -12248,6 +12833,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 12,
       "seatsTotal": 97,
       "chamberName": "Parliament of Singapore",
+      "logoMeaning": {
+      "description": "The Workers' Party logo features a bright red hammer centered on a golden yellow disc upon a red field. The hammer symbolises the dignity and power of the working class, yellow represents multiracial harmony and democracy, and red represents universal brotherhood and equality.",
+      "sources": [
+              {
+                      "title": "Workers' Party (Singapore) — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Workers%27_Party_(Singapore)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "The Workers' Party (Singapore) — Wikipedia",
@@ -12281,6 +12875,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 120,
       "seatsTotal": 125,
       "chamberName": "National Assembly",
+      "logoMeaning": {
+      "description": "The Cambodian People's Party emblem features the Devata (Thevada), a Buddhist celestial angel scattering flowers of peace and prosperity from heaven, set within a circle of light and golden lotus petals symbolising national harmony and the rebirth of Cambodia.",
+      "sources": [
+              {
+                      "title": "Cambodian People's Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Cambodian_People%27s_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Cambodian People's Party — Wikipedia",
@@ -12311,6 +12914,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 5,
       "seatsTotal": 125,
       "chamberName": "National Assembly",
+      "logoMeaning": {
+      "description": "The FUNCINPEC emblem features the sacred royal bird Hong (Hamsa / celestial swan) inside a royal blue circle, symbolising the Cambodian monarchy, royalist heritage, national independence, and Buddhist principles.",
+      "sources": [
+              {
+                      "title": "FUNCINPEC — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/FUNCINPEC"
+              }
+      ]
+},
       "sources": [
         {
           "title": "FUNCINPEC — Wikipedia",
@@ -12341,6 +12953,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 31,
       "seatsTotal": 65,
       "chamberName": "National Parliament",
+      "coalitionId": "TL-CNRT-PD",
+      "logoMeaning": {
+      "description": "The CNRT logo features a circular seal in the national colours of Timor-Leste (red, yellow, black, and white) with a star and Mount Ramelau silhouette, representing national reconstruction, peace, and sovereignty under Xanana Gusmão's leadership.",
+      "sources": [
+              {
+                      "title": "National Congress for Timorese Reconstruction — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/National_Congress_for_Timorese_Reconstruction"
+              }
+      ]
+},
       "sources": [
         {
           "title": "National Congress for Timorese Reconstruction — Wikipedia",
@@ -12372,6 +12994,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 19,
       "seatsTotal": 65,
       "chamberName": "National Parliament",
+      "logoMeaning": {
+      "description": "The Fretilin flag features horizontal stripes of yellow, black, and red with a white five-pointed star in the black stripe. Yellow represents the traces of colonialism, black represents obscurantism to be overcome, red represents the struggle for national liberation, and the white star represents peace and freedom.",
+      "sources": [
+              {
+                      "title": "Fretilin — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Fretilin"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Fretilin — Wikipedia",
@@ -12400,6 +13031,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 6,
       "seatsTotal": 65,
       "chamberName": "National Parliament",
+      "coalitionId": "TL-CNRT-PD",
+      "logoMeaning": {
+      "description": "The PD logo features an open yellow book, a blazing torch of knowledge, and a soaring white dove of peace set on a green and blue background, symbolising democratic education, youth empowerment, freedom, and civic development.",
+      "sources": [
+              {
+                      "title": "Democratic Party (East Timor) — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Democratic_Party_(East_Timor)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Democratic Party (East Timor) — Wikipedia",
@@ -12428,6 +13069,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 5,
       "seatsTotal": 65,
       "chamberName": "National Parliament",
+      "logoMeaning": {
+      "description": "The KHUNTO logo features a traditional sacred house (Uma Lulik), a martial arts sword (surik), and sheaves of corn and rice, reflecting traditional Timorese spiritual values, youth solidarity, and grassroots empowerment.",
+      "sources": [
+              {
+                      "title": "Kmanek Haburas Unidade Nasional Timor Oan — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Kmanek_Haburas_Unidade_Nasional_Timor_Oan"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Kmanek Haburas Unidade Nasional Timor Oan — Wikipedia",
@@ -12455,6 +13105,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 4,
       "seatsTotal": 65,
       "chamberName": "National Parliament",
+      "logoMeaning": {
+      "description": "The PLP emblem depicts a stylised Kaibauk (traditional Timorese crescent headdress symbolizing nobility and cultural identity) above an open flower and sunrise rays, representing honest governance, cultural integrity, and renewal for rural communities.",
+      "sources": [
+              {
+                      "title": "People's Liberation Party (East Timor) — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/People%27s_Liberation_Party_(East_Timor)"
+              }
+      ]
+},
       "sources": [
         {
           "title": "People's Liberation Party (East Timor) — Wikipedia",
@@ -12484,6 +13143,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 158,
       "seatsTotal": 164,
       "chamberName": "National Assembly (Sapha Heng Xat)",
+      "logoMeaning": {
+      "description": "The emblem of the Lao People's Revolutionary Party features the crossed golden hammer and sickle on a red field, symbolising the revolutionary alliance of the working class and peasantry leading the Lao nation.",
+      "sources": [
+              {
+                      "title": "Lao People's Revolutionary Party — Wikipedia",
+                      "url": "https://en.wikipedia.org/wiki/Lao_People%27s_Revolutionary_Party"
+              }
+      ]
+},
       "sources": [
         {
           "title": "Lao People's Revolutionary Party — Wikipedia",
