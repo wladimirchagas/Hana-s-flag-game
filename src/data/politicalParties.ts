@@ -8115,7 +8115,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "BR",
       "shortName": "PSD",
       "name": "Partido Social Democrático",
-      "nameEn": "Brazilian Democratic Movement",
+      "nameEn": "Social Democratic Party",
       "logo": "party-logos/br/psd.svg",
       "sha256": "da583d46a5d5a373bb8a3d2831b9f4923df8fd303585ce8179ea1a77a9d7384e",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSD_Logo.svg",
@@ -8159,7 +8159,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "National President",
       "inPower": false,
       "inExecutive": false,
-      "seats": 38,
+      "seats": 41,
       "seatsTotal": 513,
       "chamberName": "Chamber of Deputies",
       "sources": [
@@ -8218,7 +8218,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "National President",
       "inPower": false,
       "inExecutive": false,
-      "seats": 82,
+      "seats": 38,
       "seatsTotal": 513,
       "chamberName": "Chamber of Deputies",
       "sources": [
@@ -8248,7 +8248,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "National President",
       "inPower": false,
       "inExecutive": false,
-      "seats": 12,
+      "seats": 11,
       "seatsTotal": 513,
       "chamberName": "Chamber of Deputies",
       "sources": [
@@ -8277,7 +8277,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "National President",
       "inPower": false,
       "inExecutive": false,
-      "seats": 31,
+      "seats": 33,
       "seatsTotal": 513,
       "chamberName": "Chamber of Deputies",
       "sources": [
@@ -8333,12 +8333,12 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "left",
       "positionRaw": "Left",
       "founded": 1980,
-      "leader": "Gleisi Hoffmann",
+      "leader": "Edinho Silva",
       "leaderTitle": "National President",
       "inPower": true,
       "inExecutive": true,
       "timeInPower": "2023-present",
-      "seats": 136,
+      "seats": 64,
       "seatsTotal": 513,
       "chamberName": "Chamber of Deputies",
       "sources": [
@@ -12523,11 +12523,11 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideology": ["Socialism", "Indigenous rights", "Anti-imperialism"],
       "ideologyPosition": "left",
       "founded": 1997,
-      "leader": "Luis Arce",
-      "leaderTitle": "President",
-      "inPower": true,
-      "timeInPower": "2021–present",
-      "seats": 88,
+      "leader": "Grover García",
+      "leaderTitle": "Party President",
+      "inPower": false,
+      "timeInPower": "2021-2025",
+      "seats": 2,
       "seatsTotal": 130,
       "chamberName": "Plurinational Legislative Assembly",
       "sources": [
@@ -12556,13 +12556,13 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Luis Fernando Camacho",
       "leaderTitle": "Party President",
       "inPower": false,
-      "seats": 17,
+      "seats": 16,
       "seatsTotal": 130,
       "chamberName": "Plurinational Legislative Assembly",
       "sources": [
         {
-          "title": "2020 Bolivian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Bolivian_general_election"
+          "title": "2025 Bolivian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Bolivian_general_election"
         },
         {
           "title": "Luis Fernando Camacho – Wikipedia",
@@ -12585,13 +12585,13 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Oscar Ortiz",
       "leaderTitle": "Party Leader",
       "inPower": false,
-      "seats": 11,
+      "seats": 8,
       "seatsTotal": 130,
       "chamberName": "Plurinational Legislative Assembly",
       "sources": [
         {
-          "title": "2020 Bolivian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Bolivian_general_election"
+          "title": "2025 Bolivian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Bolivian_general_election"
         },
         {
           "title": "Oscar Ortiz – Wikipedia",
@@ -13178,9 +13178,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
       "founded": 1971,
-      "leader": "Javier Martínez",
-      "leaderTitle": "Executive Committee President",
-      "inPower": false,
+      "leader": "Yamandú Orsi",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2025-present",
       "seats": 48,
       "seatsTotal": 130,
       "chamberName": "Chamber of Deputies",
