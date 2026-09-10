@@ -7668,7 +7668,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "National President",
       "inPower": false,
       "inExecutive": false,
-      "seats": 38,
+      "seats": 41,
       "seatsTotal": 513,
       "chamberName": "Chamber of Deputies",
       "sources": [
@@ -7757,7 +7757,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "National President",
       "inPower": false,
       "inExecutive": false,
-      "seats": 12,
+      "seats": 11,
       "seatsTotal": 513,
       "chamberName": "Chamber of Deputies",
       "sources": [
@@ -7786,7 +7786,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "National President",
       "inPower": false,
       "inExecutive": false,
-      "seats": 31,
+      "seats": 33,
       "seatsTotal": 513,
       "chamberName": "Chamber of Deputies",
       "sources": [
