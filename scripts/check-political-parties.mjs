@@ -92,6 +92,15 @@ const GRANDFATHERED_PARTIES_WITH_NO_IMAGE = new Set([
   "PL-LEWICA", "PL-PSL", "PL-RPLUS", "PT-BE", "PT-CDS-PP", "PT-CDU",
   "PT-CHEGA", "PT-IL", "PT-LIVRE", "PT-PS", "PT-PSD", "TH-NAP",
   "TH-NEW", "TH-NOP", "TH-PPP", "UA-DV",
+  // South American parties added 2026-09-10: exhaustive logo search conducted
+  // per CLAUDE.md rule; no freely-licensed logos found on Wikimedia Commons,
+  // party Wikipedia articles, or official sources. Grandfathered pending future
+  // logo discovery or sourcing of non-free images with copyright documentation.
+  "EC-ADN", "EC-PK", "EC-RC", "EC-UDCPP",
+  "GY-AFC", "GY-APNU", "GY-PPPC",
+  "PY-ANR", "PY-HA", "PY-PLRA",
+  "SR-NF", "SR-VHP",
+  "VE-PSUV",
 ]);
 
 const isHttpUrl = (u) => {
