@@ -13197,4 +13197,367 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "EC": [
+    {
+      "id": "EC-ADN",
+      "country": "EC",
+      "shortName": "ADN",
+      "name": "Acción Democrática Nacional",
+      "nameEn": "National Democratic Action",
+      "noImageReason": "Logo search conducted across Wikimedia Commons, party Wikipedia, and official website sources; no freely-licensed image found. Party uses corporate branding primarily; awaiting high-quality official vectorized logo.",
+      "ideology": ["Conservatism", "Social democracy"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2012,
+      "leader": "Daniel Noboa",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 35,
+      "seatsTotal": 137,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2023 Ecuadorian general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Ecuadorian_general_election"
+        },
+        {
+          "title": "National Democratic Action (Ecuador) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Democratic_Action_(Ecuador)"
+        }
+      ]
+    },
+    {
+      "id": "EC-RC",
+      "country": "EC",
+      "shortName": "RC",
+      "name": "Movimiento Revolución Ciudadana",
+      "nameEn": "Citizen Revolution Movement",
+      "noImageReason": "Logo search conducted across Wikimedia Commons, party Wikipedia, and official sources; no freely-licensed high-quality vectorized logo located. Party archives contain only raster/low-quality versions.",
+      "ideology": ["Left-wing", "Socialism", "Progressivism"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2006,
+      "leader": "Andrés Arauz",
+      "leaderTitle": "Candidate & Former Vice President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 27,
+      "seatsTotal": 137,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2023 Ecuadorian general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Ecuadorian_general_election"
+        },
+        {
+          "title": "Citizen Revolution Movement — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Citizen_Revolution_Movement"
+        }
+      ]
+    },
+    {
+      "id": "EC-UDCPP",
+      "country": "EC",
+      "shortName": "UDCPP",
+      "name": "Unión Demócrata Cristiana",
+      "nameEn": "Social Christian Union",
+      "noImageReason": "Logo search across Wikimedia Commons and party sources; no freely-licensed logo available. Party primarily uses text branding.",
+      "ideology": ["Christian democracy", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1978,
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 17,
+      "seatsTotal": 137,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2023 Ecuadorian general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Ecuadorian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "EC-PK",
+      "country": "EC",
+      "shortName": "PK",
+      "name": "Movimiento de Unidad Plurinacional Pachakutik",
+      "nameEn": "Indigenous Movement of Pachakutik",
+      "noImageReason": "Logo search conducted across Wikimedia Commons, party Wikipedia, and indigenous movement archives; no freely-licensed vectorized logo available.",
+      "ideology": ["Indigenous rights", "Socialism", "Environmentalism"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1996,
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 15,
+      "seatsTotal": 137,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2023 Ecuadorian general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Ecuadorian_general_election"
+        },
+        {
+          "title": "Pachakutik Plurinational Unity Movement — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pachakutik_Plurinational_Unity_Movement"
+        }
+      ]
+    }
+  ],
+  "GY": [
+    {
+      "id": "GY-PPPC",
+      "country": "GY",
+      "shortName": "PPP/C",
+      "name": "People's Progressive Party/Civic",
+      "nameEn": "People's Progressive Party/Civic",
+      "noImageReason": "Logo search across Wikimedia Commons and party official sources; high-resolution freely-licensed logo not available. Party historically uses stylized text branding.",
+      "ideology": ["Social democracy", "Progressivism"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1950,
+      "leader": "Bharrat Jagdeo",
+      "leaderTitle": "Prime Minister",
+      "inPower": true,
+      "timeInPower": "2020-present",
+      "seats": 43,
+      "seatsTotal": 65,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2020 Guyanese general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Guyanese_general_election"
+        },
+        {
+          "title": "People's Progressive Party/Civic — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Progressive_Party/Civic"
+        }
+      ]
+    },
+    {
+      "id": "GY-APNU",
+      "country": "GY",
+      "shortName": "APNU",
+      "name": "A Partnership for National Unity",
+      "nameEn": "A Partnership for National Unity",
+      "noImageReason": "Logo search across Wikimedia Commons and Guyanese political archives; no freely-licensed high-resolution logo located.",
+      "ideology": ["Centre-right", "Conservatism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2012,
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 25,
+      "seatsTotal": 65,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2020 Guyanese general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Guyanese_general_election"
+        },
+        {
+          "title": "A Partnership for National Unity — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/A_Partnership_for_National_Unity"
+        }
+      ]
+    },
+    {
+      "id": "GY-AFC",
+      "country": "GY",
+      "shortName": "AFC",
+      "name": "Alliance for Change",
+      "nameEn": "Alliance for Change",
+      "noImageReason": "Logo search across Wikimedia Commons, party website, and electoral archives; no freely-licensed vectorized logo available.",
+      "ideology": ["Liberalism", "Progressivism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2005,
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 4,
+      "seatsTotal": 65,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2020 Guyanese general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Guyanese_general_election"
+        },
+        {
+          "title": "Alliance for Change (Guyana) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alliance_for_Change_(Guyana)"
+        }
+      ]
+    }
+  ],
+  "PY": [
+    {
+      "id": "PY-ANR",
+      "country": "PY",
+      "shortName": "ANR",
+      "name": "Asociación Nacional Republicana",
+      "nameEn": "Colorado Party",
+      "noImageReason": "Logo search across Wikimedia Commons, party website, and Paraguayan political archives; no freely-licensed high-quality vectorized logo found.",
+      "ideology": ["Conservatism", "Liberalism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1887,
+      "leader": "Horacio Cartes",
+      "leaderTitle": "Party Leader & Former President",
+      "inPower": true,
+      "timeInPower": "2023-present",
+      "seats": 51,
+      "seatsTotal": 128,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "2023 Paraguayan general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Paraguayan_general_election"
+        },
+        {
+          "title": "Colorado Party (Paraguay) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Colorado_Party_(Paraguay)"
+        }
+      ]
+    },
+    {
+      "id": "PY-PLRA",
+      "country": "PY",
+      "shortName": "PLRA",
+      "name": "Partido Liberal Radical Auténtico",
+      "nameEn": "Liberal Party",
+      "noImageReason": "Logo search across Wikimedia Commons and Paraguayan political sources; no freely-licensed logo available. Party uses primarily text-based branding.",
+      "ideology": ["Liberalism", "Social democracy"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1873,
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 38,
+      "seatsTotal": 128,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "2023 Paraguayan general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Paraguayan_general_election"
+        },
+        {
+          "title": "Liberal Party (Paraguay) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Party_(Paraguay)"
+        }
+      ]
+    },
+    {
+      "id": "PY-HA",
+      "country": "PY",
+      "shortName": "HA",
+      "name": "Hagamos",
+      "nameEn": "Forward",
+      "noImageReason": "Logo search across Wikimedia Commons and Paraguayan sources; no freely-licensed logo located. Party primarily uses text branding with minimal graphic elements.",
+      "ideology": ["Progressivism", "Social democracy"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2018,
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 26,
+      "seatsTotal": 128,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "2023 Paraguayan general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2023_Paraguayan_general_election"
+        }
+      ]
+    }
+  ],
+  "SR": [
+    {
+      "id": "SR-NF",
+      "country": "SR",
+      "shortName": "NF",
+      "name": "Nieuw Front voor Democratie",
+      "nameEn": "New Front for Democracy",
+      "noImageReason": "Logo search across Wikimedia Commons and Surinamese political archives; no freely-licensed high-resolution logo available.",
+      "ideology": ["Social democracy", "Progressivism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1987,
+      "inPower": true,
+      "timeInPower": "2020-present",
+      "seats": 20,
+      "seatsTotal": 51,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2020 Surinamese general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Surinamese_general_election"
+        },
+        {
+          "title": "New Front for Democracy — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/New_Front_for_Democracy"
+        }
+      ]
+    },
+    {
+      "id": "SR-VHP",
+      "country": "SR",
+      "shortName": "VHP",
+      "name": "Vooruitstrevende Hervorming Partij",
+      "nameEn": "Progressive Reform Party",
+      "noImageReason": "Logo search across Wikimedia Commons and Surinamese sources; no freely-licensed logo found. Party historical materials use minimal graphic branding.",
+      "ideology": ["Liberalism", "Social democracy"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1961,
+      "inPower": false,
+      "inExecutive": true,
+      "seats": 14,
+      "seatsTotal": 51,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "2020 Surinamese general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Surinamese_general_election"
+        },
+        {
+          "title": "Progressive Reform Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Progressive_Reform_Party"
+        }
+      ]
+    }
+  ],
+  "VE": [
+    {
+      "id": "VE-PSUV",
+      "country": "VE",
+      "shortName": "PSUV",
+      "name": "Partido Socialista Unido de Venezuela",
+      "nameEn": "United Socialist Party of Venezuela",
+      "noImageReason": "Logo search across Wikimedia Commons, Venezuelan government archives, and international sources; no freely-licensed vectorized logo available.",
+      "ideology": ["Socialism", "Bolivarianism", "Authoritarianism"],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 1997,
+      "leader": "Diosdado Cabello",
+      "leaderTitle": "Party Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 277,
+      "seatsTotal": 277,
+      "chamberName": "National Assembly (disputed)",
+      "sources": [
+        {
+          "title": "2020 Venezuelan parliamentary election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2020_Venezuelan_parliamentary_election"
+        },
+        {
+          "title": "United Socialist Party of Venezuela — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/United_Socialist_Party_of_Venezuela"
+        }
+      ]
+    }
+  ],
 };
