@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { AutoFitName } from "./AutoFitName";
 import { GridImage } from "./GridImage";
 import {
@@ -6,34 +6,66 @@ import {
   IDEOLOGY_POSITION_ORDER,
   type PoliticalParty,
 } from "../data/politicalParties";
-import { partiesForCountry, coalitionForParty } from "../lib/politicalParties";
+import {
+  partiesForCountry,
+  coalitionForParty,
+  partyPowerBadges,
+} from "../lib/politicalParties";
 
-/**
- * "Political parties" tab of the country drill-down grid.
- *
- * Shows every party currently holding a seat in the country's national
- * lower/unicameral chamber — see the sourcing/scope discipline documented at
- * the top of `src/data/politicalParties.ts`. Coverage is an incrementally
- * growing curated sweep (same philosophy as the National-symbols tab): a
- * country with no covered parties simply shows nothing here, never an
- * invented roster.
- *
- * Parties are grouped by ideological position, ordered progressive →
- * conservative (owner request) — the same left-to-right convention a
- * political spectrum chart uses. Each card badges "In power" when the party
- * is currently part of the governing coalition/cabinet, and names its
- * national coalition/federation when it belongs to one.
- *
- * Selecting a card opens the party's own widget below the country fact-sheet
- * (`PoliticalPartyDetails`) and changes nothing on the map: a party belongs
- * to the whole country, so there is no territory to highlight — the same
- * reasoning the National-symbols tab already uses.
- */
-type Group = { position: string; heading: string; items: PoliticalParty[] };
+type SortMode = "ideology" | "alpha" | "coalition";
 
-function groupParties(parties: readonly PoliticalParty[]): Group[] {
+type Group = { key: string; heading: string; items: PoliticalParty[] };
+
+function groupParties(
+  parties: readonly PoliticalParty[],
+  sortMode: SortMode,
+): Group[] {
+  if (sortMode === "alpha") {
+    return [
+      {
+        key: "alpha",
+        heading: `All parties (${parties.length})`,
+        items: [...parties].sort((a, b) => a.shortName.localeCompare(b.shortName)),
+      },
+    ];
+  }
+
+  if (sortMode === "coalition") {
+    const coalitionMap = new Map<string, { heading: string; items: PoliticalParty[] }>();
+    const unaligned: PoliticalParty[] = [];
+
+    for (const p of parties) {
+      const coalition = coalitionForParty(p);
+      if (coalition) {
+        if (!coalitionMap.has(coalition.id)) {
+          coalitionMap.set(coalition.id, { heading: coalition.name, items: [] });
+        }
+        coalitionMap.get(coalition.id)!.items.push(p);
+      } else {
+        unaligned.push(p);
+      }
+    }
+
+    const groups: Group[] = Array.from(coalitionMap.entries()).map(([id, g]) => ({
+      key: id,
+      heading: g.heading,
+      items: g.items,
+    }));
+
+    if (unaligned.length > 0) {
+      groups.push({
+        key: "unaligned",
+        heading: coalitionMap.size > 0 ? "Non-coalition / Independent" : "All parties",
+        items: unaligned,
+      });
+    }
+
+    return groups;
+  }
+
+  // Default: Ideology progressive → conservative
   return IDEOLOGY_POSITION_ORDER.map((position) => ({
-    position,
+    key: position,
     heading: IDEOLOGY_POSITION_LABELS[position],
     items: parties.filter((p) => p.ideologyPosition === position),
   })).filter((g) => g.items.length > 0);
@@ -55,9 +87,11 @@ export function PoliticalPartyGrid({
   baseUrl,
   onSelect,
 }: Props) {
+  const [sortMode, setSortMode] = useState<SortMode>("ideology");
+  const allParties = useMemo(() => partiesForCountry(countryCode), [countryCode]);
   const groups = useMemo(
-    () => groupParties(partiesForCountry(countryCode)),
-    [countryCode],
+    () => groupParties(allParties, sortMode),
+    [allParties, sortMode],
   );
 
   if (groups.length === 0) {
@@ -69,69 +103,102 @@ export function PoliticalPartyGrid({
   }
 
   return (
-    <div className="flag-grid__groups">
-      {groups.map((group) => (
-        <div key={group.position} className="flag-grid__group">
-          <h4 className="flag-grid__group-heading">
-            <span className="flag-grid__group-name">{group.heading}</span>
-            <span className="flag-grid__group-count">({group.items.length})</span>
-          </h4>
-          <ul className="flag-grid__list">
-            {group.items.map((party) => {
-              const active = party.id === selectedPartyId;
-              const coalition = coalitionForParty(party);
-              return (
-                <li key={party.id} className="flag-grid__item">
-                  <button
-                    type="button"
-                    className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
-                    onClick={() => onSelect(party)}
-                    aria-pressed={active}
-                    aria-label={
-                      party.noImageReason
-                        ? `Show ${party.name} — no logo image is available`
-                        : `Show ${party.name}`
-                    }
-                  >
-                    <span className="flag-grid__thumb">
-                      {party.logo ? (
-                        <GridImage
-                          src={`${baseUrl}${party.logo}`}
-                          alt=""
-                          draggable={false}
-                          className="flag-grid__thumb-img"
-                          onError={(e) => { e.currentTarget.style.display = "none"; }}
-                        />
-                      ) : (
-                        <span className="flag-grid__no-image" aria-hidden="true">
-                          No free image
-                        </span>
-                      )}
-                    </span>
-                    <span className="flag-grid__name">
-                      <AutoFitName className="flag-grid__name-text" text={party.shortName} />
-                      {(party.inPower || coalition) && (
-                        <span className="flag-grid__party-badges">
-                          {party.inPower && (
-                            <span className="flag-grid__party-badge flag-grid__party-badge--power">
-                              In power
-                            </span>
-                          )}
-                          {coalition && (
-                            <span className="flag-grid__party-badge flag-grid__party-badge--coalition">
-                              {coalition.name}
-                            </span>
-                          )}
-                        </span>
-                      )}
-                    </span>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      ))}
+    <div className="flag-grid__party-wrapper">
+      <div className="party-sort-toggle" role="group" aria-label="Group political parties">
+        <button
+          type="button"
+          className={`party-sort-toggle__btn${sortMode === "ideology" ? " party-sort-toggle__btn--active" : ""}`}
+          onClick={() => setSortMode("ideology")}
+          aria-pressed={sortMode === "ideology"}
+        >
+          Ideology
+        </button>
+        <button
+          type="button"
+          className={`party-sort-toggle__btn${sortMode === "alpha" ? " party-sort-toggle__btn--active" : ""}`}
+          onClick={() => setSortMode("alpha")}
+          aria-pressed={sortMode === "alpha"}
+        >
+          A–Z
+        </button>
+        <button
+          type="button"
+          className={`party-sort-toggle__btn${sortMode === "coalition" ? " party-sort-toggle__btn--active" : ""}`}
+          onClick={() => setSortMode("coalition")}
+          aria-pressed={sortMode === "coalition"}
+        >
+          Coalition
+        </button>
+      </div>
+
+      <div className="flag-grid__groups">
+        {groups.map((group) => (
+          <div key={group.key} className="flag-grid__group">
+            <h4 className="flag-grid__group-heading">
+              <span className="flag-grid__group-name">{group.heading}</span>
+              <span className="flag-grid__group-count">({group.items.length})</span>
+            </h4>
+            <ul className="flag-grid__list">
+              {group.items.map((party) => {
+                const active = party.id === selectedPartyId;
+                const badges = partyPowerBadges(party, countryCode);
+                const coalition = coalitionForParty(party);
+                return (
+                  <li key={party.id} className="flag-grid__item">
+                    <button
+                      type="button"
+                      className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
+                      onClick={() => onSelect(party)}
+                      aria-pressed={active}
+                      aria-label={
+                        party.noImageReason
+                          ? `Show ${party.name} — no logo image is available`
+                          : `Show ${party.name}`
+                      }
+                    >
+                      <span className="flag-grid__thumb">
+                        {party.logo ? (
+                          <GridImage
+                            src={`${baseUrl}${party.logo}`}
+                            alt=""
+                            draggable={false}
+                            className="flag-grid__thumb-img"
+                            onError={(e) => { e.currentTarget.style.display = "none"; }}
+                          />
+                        ) : (
+                          <span className="flag-grid__no-image" aria-hidden="true">
+                            No free image
+                          </span>
+                        )}
+                      </span>
+                      <span className="flag-grid__name">
+                        <AutoFitName className="flag-grid__name-text" text={party.shortName} />
+                        {(badges.length > 0 || coalition) && (
+                          <span className="flag-grid__party-badges">
+                            {badges.map((b, i) => (
+                              <span
+                                key={`${b.kind}-${i}`}
+                                className={`flag-grid__party-badge flag-grid__party-badge--${b.kind}`}
+                              >
+                                {b.label}
+                              </span>
+                            ))}
+                            {coalition && sortMode !== "coalition" && (
+                              <span className="flag-grid__party-badge flag-grid__party-badge--coalition">
+                                {coalition.name}
+                              </span>
+                            )}
+                          </span>
+                        )}
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

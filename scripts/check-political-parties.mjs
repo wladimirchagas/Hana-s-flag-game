@@ -173,6 +173,9 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
       fail(id, `seats (${p.seats}) exceeds seatsTotal (${p.seatsTotal})`);
     }
     if (typeof p.inPower !== "boolean") fail(id, "inPower must be a boolean");
+    if (p.inExecutive !== undefined && typeof p.inExecutive !== "boolean") {
+      fail(id, "inExecutive must be a boolean when present");
+    }
 
     // B. sources
     checkSources(id, p.sources, "party");
