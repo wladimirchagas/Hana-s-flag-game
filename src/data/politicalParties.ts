@@ -11980,13 +11980,13 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Luis Fernando Camacho",
       "leaderTitle": "Party President",
       "inPower": false,
-      "seats": 17,
+      "seats": 16,
       "seatsTotal": 130,
       "chamberName": "Plurinational Legislative Assembly",
       "sources": [
         {
-          "title": "2020 Bolivian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Bolivian_general_election"
+          "title": "2025 Bolivian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Bolivian_general_election"
         },
         {
           "title": "Luis Fernando Camacho – Wikipedia",
@@ -12009,13 +12009,13 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Oscar Ortiz",
       "leaderTitle": "Party Leader",
       "inPower": false,
-      "seats": 11,
+      "seats": 8,
       "seatsTotal": 130,
       "chamberName": "Plurinational Legislative Assembly",
       "sources": [
         {
-          "title": "2020 Bolivian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Bolivian_general_election"
+          "title": "2025 Bolivian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Bolivian_general_election"
         },
         {
           "title": "Oscar Ortiz – Wikipedia",
