@@ -7611,7 +7611,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "name": "Partido Social Democrático",
       "nameEn": "Brazilian Democratic Movement",
       "logo": "party-logos/br/psd.svg",
-      "sha256": "8e7a2f6c9d1b4e5a3f6c8d1e9a2b4c5e6d7f8a9b0c1d2e3f4a5b6c7d8e9f0",
+      "sha256": "da583d46a5d5a373bb8a3d2831b9f4923df8fd303585ce8179ea1a77a9d7384e",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSD_Logo.svg",
       "ideology": [
         "Social democracy",
@@ -7640,7 +7640,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "name": "Progressistas",
       "nameEn": "Progressives",
       "logo": "party-logos/br/pp.svg",
-      "sha256": "5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f",
+      "sha256": "0dde6bf9bc3e36bf3678d0fd842b5761349ab6f5e3993f5e918e84457a764a17",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Progressistas_logo.svg",
       "ideology": [
         "Centrism",
@@ -7668,7 +7668,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "name": "Republicanos",
       "nameEn": "Republicans",
       "logo": "party-logos/br/republicanos.svg",
-      "sha256": "1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e",
+      "sha256": "4333b8fa16ab411bf73c90e67cc055926bc0f37b2b191e5b8d7ea2c606c74d9a",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Republicanos_logo.svg",
       "ideology": [
         "Right-wing populism",
@@ -7697,7 +7697,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "name": "Movimento Democrático Brasileiro",
       "nameEn": "Brazilian Democratic Movement",
       "logo": "party-logos/br/mdb.svg",
-      "sha256": "7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c",
+      "sha256": "d610a2dc81ec7c18b798f5e2a7c075d8f56d6661f3b8929ea5ae9c5db82f1a5e",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MDB_Logo.svg",
       "ideology": [
         "Centrism",
@@ -7724,6 +7724,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PODEMOS",
       "name": "Podemos",
       "nameEn": "We Can",
+      "logo": "party-logos/br/podemos.svg",
+      "sha256": "f23f7fd47cc0f38ec15f7ed518e14249438ae9921269951900bc2b5500e04343",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Podemos_(Brasil)_logo.svg",
       "ideology": [
         "Social democracy",
         "Progressivism",
@@ -7750,6 +7753,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PSDB",
       "name": "Partido da Social Democracia Brasileira",
       "nameEn": "Brazilian Social Democracy Party",
+      "logo": "party-logos/br/psdb.svg",
+      "sha256": "4b6a27ad9fc593808ac26e7d4c8b6f2dac549cdbb30cbdfa6f1b58bd7d7d23ef",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSDB_Logo.svg",
       "ideology": [
         "Social democracy",
         "Liberalism"
@@ -7775,6 +7781,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "CIDADANIA",
       "name": "Cidadania",
       "nameEn": "Citizenship",
+      "logo": "party-logos/br/cidadania.svg",
+      "sha256": "655c2fe1d87c7ef57a7a4339b6d87d951d6bd032b646588914ccdd1b760d2d09",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Cidadania_Logo.svg",
       "ideology": [
         "Social democracy",
         "Centrism"
@@ -7801,7 +7810,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "name": "Partido dos Trabalhadores",
       "nameEn": "Workers' Party",
       "logo": "party-logos/br/pt.svg",
-      "sha256": "2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b",
+      "sha256": "5014ff66de5112a46de044dfd22a60226feccc98a3aeaa57fd08f6f18e8d6be5",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PT_Brasil_Logo.svg",
       "ideology": [
         "Democratic socialism",
@@ -7835,6 +7844,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PCDOB",
       "name": "Partido Comunista do Brasil",
       "nameEn": "Communist Party of Brazil",
+      "logo": "party-logos/br/pcdob.svg",
+      "sha256": "0fb1a3813ff9d4b47e904f4b0ec6b9a2ac8e763be2a354afa5895e4826fe4464",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PCdoB_Logo.svg",
       "ideology": [
         "Communism",
         "Marxism–Leninism"
@@ -7860,6 +7872,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PV",
       "name": "Partido Verde",
       "nameEn": "Green Party",
+      "logo": "party-logos/br/pv.svg",
+      "sha256": "977821d6ff979d775fe2f016576ef158b3af256d232fc9c1c508ed1ce2cdff62",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Verde_Brasil_Logo.svg",
       "ideology": [
         "Environmentalism",
         "Progressivism",
@@ -7886,6 +7901,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PSOL",
       "name": "Partido Socialismo e Liberdade",
       "nameEn": "Socialism and Freedom Party",
+      "logo": "party-logos/br/psol.svg",
+      "sha256": "17072b12f62fd5443b9e15e3f964bb8ecef9192d19d8e31cfe241b319b5bc537",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSOL_Logo.svg",
       "ideology": [
         "Democratic socialism",
         "Progressivism",
@@ -8526,8 +8544,8 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PDC",
       "name": "Partido Demócrata Cristiano",
       "nameEn": "Christian Democracy Party",
-      "logo": "party-logos/cl/pdc.png",
-      "sha256": "44324071494d91cc1c8460d830d6911399c556e7007cff20f508f150379abeb0",
+      "logo": "party-logos/cl/pdc.svg",
+      "sha256": "c0639d126df0c236c6ac11a5c5776e9a423e1655a5ded9f085d2ea3b75dcfadf",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PDC_Chile_logo.png",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Christian democracy", "Centre-right", "Social conservatism"],
@@ -8589,7 +8607,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "name": "Renovación Nacional",
       "nameEn": "National Renewal",
       "logo": "party-logos/cl/rn.svg",
-      "sha256": "fd868a0f974075142f40cd0ec2ecd827b559566418089a5314672d84bfa29b16",
+      "sha256": "f9ac06a57a36215813b9b52d2b791ee065fb8ec9c253df7f3205ab745e5b362d",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Renovación_Nacional_logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Conservatism", "Centre-right", "Liberalism"],
@@ -8651,7 +8669,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "name": "Partido Socialista",
       "nameEn": "Socialist Party",
       "logo": "party-logos/cl/ps.svg",
-      "sha256": "c9099f43f894f149daa64fb323fbeaa905ba21c7402da1566b86b7d49a9390d8",
+      "sha256": "9a5d4d05e8457d2b65c1cae26235d49b22696ba17553d9abee628d5811a8360c",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PS_Chile_logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Socialism", "Left-wing", "Progressivism"],
@@ -9141,6 +9159,129 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         },
         {
           "title": "2024 Indonesian general election – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "ID-NASDEM",
+      "country": "ID",
+      "shortName": "NasDem",
+      "name": "Partai NasDem",
+      "nameEn": "NasDem Party",
+      "logo": "party-logos/id/nasdem.svg",
+      "sha256": "ce246417ca6f27a51995b3b079f90af58f58c5f23373b95f99696eb2addc8e3d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partai_NasDem_(2014).svg",
+      "ideology": ["Nationalism", "Secularism", "Pancasila"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2011,
+      "leader": "Surya Paloh",
+      "leaderTitle": "General Chair",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 69,
+      "seatsTotal": 580,
+      "chamberName": "People's Representative Council (DPR)",
+      "sources": [
+        {
+          "title": "Nasdem Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nasdem_Party"
+        },
+        {
+          "title": "2024 Indonesian general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "ID-PKS",
+      "country": "ID",
+      "shortName": "PKS",
+      "name": "Partai Keadilan Sejahtera",
+      "nameEn": "Prosperous Justice Party",
+      "logo": "party-logos/id/pks.svg",
+      "sha256": "98e09bbcc6029c94b9cba0b1c450fac22c0acf82d2563faa123150059084a789",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partai_Keadilan_Sejahtera_(2020).svg",
+      "ideology": ["Islamism", "Religious conservatism", "Social conservatism"],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1998,
+      "leader": "Ahmad Syaikhu",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 53,
+      "seatsTotal": 580,
+      "chamberName": "People's Representative Council (DPR)",
+      "sources": [
+        {
+          "title": "Prosperous Justice Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Prosperous_Justice_Party"
+        },
+        {
+          "title": "2024 Indonesian general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "ID-PAN",
+      "country": "ID",
+      "shortName": "PAN",
+      "name": "Partai Amanat Nasional",
+      "nameEn": "National Mandate Party",
+      "logo": "party-logos/id/pan.svg",
+      "sha256": "77e1d59e3e4e1362c9367d95a8b7824bda0b8eb1b9e90e094d9f42f04936f358",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_National_Mandate_Party.svg",
+      "ideology": ["Pancasila", "Islamic democracy", "Liberal nationalism"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1998,
+      "leader": "Zulkifli Hasan",
+      "leaderTitle": "General Chair",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 48,
+      "seatsTotal": 580,
+      "chamberName": "People's Representative Council (DPR)",
+      "sources": [
+        {
+          "title": "National Mandate Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Mandate_Party"
+        },
+        {
+          "title": "2024 Indonesian general election — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "ID-DEMOKRAT",
+      "country": "ID",
+      "shortName": "Demokrat",
+      "name": "Partai Demokrat",
+      "nameEn": "Democratic Party",
+      "logo": "party-logos/id/demokrat.svg",
+      "sha256": "f3123603fa1de57283a925c3455a9d5e533897d7449ef26556283a775057feb9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partai_Demokrat_Logo.svg",
+      "ideology": ["Pancasila", "Centrism", "Social liberalism"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2001,
+      "leader": "Agus Harimurti Yudhoyono",
+      "leaderTitle": "General Chair",
+      "inPower": true,
+      "timeInPower": "2024-present",
+      "seats": 44,
+      "seatsTotal": 580,
+      "chamberName": "People's Representative Council (DPR)",
+      "sources": [
+        {
+          "title": "Democratic Party (Indonesia) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Indonesia)"
+        },
+        {
+          "title": "2024 Indonesian general election — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
         }
       ]
@@ -9981,6 +10122,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/pe/renovacion-popular.svg",
       "sha256": "92855663ee2ef3623c90c7f2fd9b421a091f9efd71c2510db93d51905c091991",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Renovacion_Popular_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Right-wing", "Neoliberalism", "Pro-market"],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
@@ -10193,6 +10335,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/hu/fidesz.svg",
       "sha256": "dd6e19d895d7cc0c9535ddd27e0974e8add4f6b9619f356c99f5d850132f84ff",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fidesz_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Right-wing", "Conservatism", "Hungarian nationalism"],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
@@ -10223,6 +10366,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/hu/mszp.svg",
       "sha256": "d9dfb0e28bf935cef870087e5f06466700ed6b054f00283ada6c7171a990172e",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:MSZP_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Centre-left", "Social democracy", "Post-communism"],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
@@ -10253,6 +10397,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/hu/dk.svg",
       "sha256": "7c20264b918db827adb1138bcbacfc75ac88a08b9b09e178d200cb74198f997b",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:DK_Hungary_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Left-wing", "Progressivism", "Anti-authoritarianism"],
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
@@ -10285,6 +10430,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/il/likud.svg",
       "sha256": "7e023531de755255b8a661d0bbea0634d19158f9ccef6f3d39f7e02bc5093bda",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Likud_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Right-wing", "Conservatism", "Zionism"],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
@@ -10315,6 +10461,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/il/yesh-atid.svg",
       "sha256": "abe288e3aef4a9fe88e336e5b850da9a0e80c00d1d9010ff19191d1c884c1b4d",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Yesh_Atid_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Centre", "Centrist", "Secular liberalism"],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
@@ -10345,6 +10492,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/il/blue-white.svg",
       "sha256": "8f048aaa290937c35eb086ef33cbd04584dbd41bd9044af7af028b4cd1a9ce5f",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Blue_and_White_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Centre-right", "Centrism", "Zionism"],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
@@ -10377,6 +10525,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/cz/ano.svg",
       "sha256": "1f283207e63a22e20f58b43881a886dd93896e625204a2f99d5d620c78ed569a",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:ANO_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Centrist", "Anti-corruption", "Populism"],
       "ideologyPosition": "centre",
       "positionRaw": "Centrist",
@@ -10407,6 +10556,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/cz/cssd.svg",
       "sha256": "7c9c5c3b423e409b76cc572796453f098e5f126f1ffc38412ff71028addf3978",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:CSSD_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Centre-left", "Social democracy", "Post-communist"],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
@@ -10437,6 +10587,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/cz/spd.svg",
       "sha256": "c28511f43ceefb73b9c001828c0f52d1b44cafcd1213a03b31f71fb27a791a2d",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:SPD_Czech_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Right-wing", "Euroscepticism", "Populism"],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
@@ -10469,6 +10620,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ro/pnl.svg",
       "sha256": "f6db48645863ac1f20111735ebdfaaeffac6d8331525b8349e5f0e54c21261ee",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PNL_Romania_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Centre-right", "Liberalism", "Conservatism"],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
@@ -10499,6 +10651,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ro/psd.svg",
       "sha256": "b6385f8f2142859ce386f936b45d33137b7d3467f35aa2a9272174d8712c3ab9",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PSD_Romania_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Centre-left", "Social democracy", "Post-communist"],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
@@ -10529,6 +10682,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ro/usr.svg",
       "sha256": "94c0c9bc001633a74d2f481bc798d8d76ca6c3efce797378c057a6aeb0420262",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:USR_Romania_logo.svg",
+      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
       "ideology": ["Centre", "Anti-corruption", "Pro-European"],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
@@ -11179,7 +11333,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "name": "Píratar",
       "nameEn": "Pirate Party",
       "logo": "party-logos/is/pirate.png",
-      "sha256": "b1c3f698e4fdd7aebac5c4a63fbd564243dbedc243c55612855a4fae48d13737",
+      "sha256": "b1c3f698e4fdd7aebac5c4a63fbd564423dbedc243c55612855a4fae48d13737",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Pirateparty.is_logo.png",
       "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
       "ideology": ["Centre-left", "Pirate politics", "Direct democracy"],
@@ -11921,5 +12075,300 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         }
       ]
     }
-  ]
+  ],
+  "SG": [
+    {
+      "id": "SG-PAP",
+      "country": "SG",
+      "shortName": "PAP",
+      "name": "People's Action Party",
+      "nameEn": "People's Action Party",
+      "logo": "party-logos/sg/pap.svg",
+      "sha256": "6c7fe92bbe8e744dad919a58da3df096ec8674ead5310c7c99d15fecaa3cd540",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:People%27s_Action_Party_logo.svg",
+      "ideology": ["Conservatism", "Economic liberalism", "Communitarianism", "Multiracialism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1954,
+      "leader": "Lawrence Wong",
+      "leaderTitle": "Secretary-General & Prime Minister",
+      "inPower": true,
+      "timeInPower": "1959–present",
+      "seats": 86,
+      "seatsTotal": 97,
+      "chamberName": "Parliament of Singapore",
+      "sources": [
+        {
+          "title": "Parliament of Singapore — Members of Parliament",
+          "url": "https://www.parliament.gov.sg/mps/current-mps"
+        },
+        {
+          "title": "People's Action Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Action_Party"
+        }
+      ]
+    },
+    {
+      "id": "SG-WP",
+      "country": "SG",
+      "shortName": "WP",
+      "name": "Workers' Party",
+      "nameEn": "Workers' Party",
+      "logo": "party-logos/sg/wp.png",
+      "sha256": "f98b5900358472ada16080fb4e2668055bf0158866943e5a2e6d6ceb9bc1baf3",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Workers%27_Party_of_Singapore_logo.png",
+      "licenceNote": "Official party emblem bundled for non-commercial educational use to identify the party.",
+      "ideology": ["Social democracy", "Democratic socialism", "Progressivism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1957,
+      "leader": "Pritam Singh",
+      "leaderTitle": "Secretary-General & Leader of the Opposition",
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 97,
+      "chamberName": "Parliament of Singapore",
+      "sources": [
+        {
+          "title": "The Workers' Party (Singapore) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Workers%27_Party_(Singapore)"
+        },
+        {
+          "title": "Parliament of Singapore — Member Directory",
+          "url": "https://www.parliament.gov.sg/mps/current-mps"
+        }
+      ]
+    }
+  ],
+  "KH": [
+    {
+      "id": "KH-CPP",
+      "country": "KH",
+      "shortName": "CPP",
+      "name": "គណបក្សប្រជាជនកម្ពុជា",
+      "nameEn": "Cambodian People's Party",
+      "logo": "party-logos/kh/cpp.svg",
+      "sha256": "058bf3df2fdcefcdf89d9fa389414701e342539514b5dc5764639c26a2ffe984",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Cambodian_People%27s_Party_logo.svg",
+      "ideology": ["Conservatism", "Economic liberalism", "Nationalism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1951,
+      "leader": "Hun Manet",
+      "leaderTitle": "Prime Minister",
+      "inPower": true,
+      "timeInPower": "1979–present",
+      "seats": 120,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Cambodian People's Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cambodian_People%27s_Party"
+        },
+        {
+          "title": "National Election Committee of Cambodia",
+          "url": "https://www.nec.gov.kh/"
+        }
+      ]
+    },
+    {
+      "id": "KH-FUNCINPEC",
+      "country": "KH",
+      "shortName": "FUNCINPEC",
+      "name": "ហ្វ៊ុនស៊ិនប៉ិច",
+      "nameEn": "National United Front for an Independent, Neutral, Peaceful and Cooperative Cambodia",
+      "logo": "party-logos/kh/funcinpec.svg",
+      "sha256": "44d2036c218b8f646cd4f46dac084d9f646ee792c6e092cbbefadffa62034f7d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:FUNCINPEC_logo.svg",
+      "ideology": ["Royalism", "National conservatism", "Economic liberalism"],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1981,
+      "leader": "Norodom Chakravuth",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "FUNCINPEC — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/FUNCINPEC"
+        }
+      ]
+    }
+  ],
+  "TL": [
+    {
+      "id": "TL-CNRT",
+      "country": "TL",
+      "shortName": "CNRT",
+      "name": "Congresso Nacional de Reconstrução Timorense",
+      "nameEn": "National Congress for Timorese Reconstruction",
+      "logo": "party-logos/tl/cnrt.svg",
+      "sha256": "3a5d8c66949572242d84935077bda92265243f86bbbfb6e1fae45dc66f0e2b98",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_CNRT.svg",
+      "ideology": ["Social democracy", "Democratic socialism", "Nationalism"],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2007,
+      "leader": "Xanana Gusmão",
+      "leaderTitle": "President & Prime Minister",
+      "inPower": true,
+      "timeInPower": "July 2023–present",
+      "seats": 31,
+      "seatsTotal": 65,
+      "chamberName": "National Parliament",
+      "sources": [
+        {
+          "title": "National Congress for Timorese Reconstruction — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Congress_for_Timorese_Reconstruction"
+        },
+        {
+          "title": "National Parliament of Timor-Leste",
+          "url": "http://www.parlamento.tl/"
+        }
+      ]
+    },
+    {
+      "id": "TL-FRETILIN",
+      "country": "TL",
+      "shortName": "FRETILIN",
+      "name": "Frente Revolucionária de Timor-Leste Independente",
+      "nameEn": "Revolutionary Front for an Independent East Timor",
+      "logo": "party-logos/tl/fretilin.svg",
+      "sha256": "a6ce331591bf736df5a6419da5fdfc991ad7b483f6db14f21147911962e4db71",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_FRETILIN.svg",
+      "ideology": ["Democratic socialism", "Left-wing nationalism", "Anti-imperialism"],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1974,
+      "leader": "Francisco Guterres (Lú-Olo)",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 19,
+      "seatsTotal": 65,
+      "chamberName": "National Parliament",
+      "sources": [
+        {
+          "title": "Fretilin — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fretilin"
+        }
+      ]
+    },
+    {
+      "id": "TL-PD",
+      "country": "TL",
+      "shortName": "PD",
+      "name": "Partido Democrático",
+      "nameEn": "Democratic Party",
+      "logo": "party-logos/tl/pd.png",
+      "sha256": "5d853912a60b23953b95d717846a86feb303c6743ff3a3e42c0bf724b35bb0d4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_Democr%C3%A1tico_East_Timor.svg",
+      "ideology": ["Centrism", "Social democracy"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2001,
+      "leader": "Mariano Sabino Lopes",
+      "leaderTitle": "President & Deputy Prime Minister",
+      "inPower": true,
+      "timeInPower": "July 2023–present",
+      "seats": 6,
+      "seatsTotal": 65,
+      "chamberName": "National Parliament",
+      "sources": [
+        {
+          "title": "Democratic Party (East Timor) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(East_Timor)"
+        }
+      ]
+    },
+    {
+      "id": "TL-KHUNTO",
+      "country": "TL",
+      "shortName": "KHUNTO",
+      "name": "Kmanek Haburas Unidade Nasional Timor Oan",
+      "nameEn": "Enrich the National Unity of the Sons of Timor",
+      "logo": "party-logos/tl/khunto.svg",
+      "sha256": "0c624414311f4244ee03056779b9e872e97b9e57b197634231349572e8969c6f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Kmanek_Haburas_Unidade_Nasional_Timor_Oan.svg",
+      "licenceNote": "Fair-use logo bundled for non-commercial educational reference to identify the party.",
+      "ideology": ["Populism", "Youth empowerment"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2011,
+      "leader": "Armanda Berta dos Santos",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 65,
+      "chamberName": "National Parliament",
+      "sources": [
+        {
+          "title": "Kmanek Haburas Unidade Nasional Timor Oan — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kmanek_Haburas_Unidade_Nasional_Timor_Oan"
+        }
+      ]
+    },
+    {
+      "id": "TL-PLP",
+      "country": "TL",
+      "shortName": "PLP",
+      "name": "Partidu Libertasaun Populár",
+      "nameEn": "People's Liberation Party",
+      "logo": "party-logos/tl/plp.svg",
+      "sha256": "ad262cce6f96213fc159a1ff8cbded71169655b4d86869a176d6c5a77a7b569d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PLP_Timor-Leste.svg",
+      "ideology": ["Anti-corruption", "Centrism", "Rural development"],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2015,
+      "leader": "Taur Matan Ruak",
+      "leaderTitle": "President & Former Prime Minister",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 65,
+      "chamberName": "National Parliament",
+      "sources": [
+        {
+          "title": "People's Liberation Party (East Timor) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Liberation_Party_(East_Timor)"
+        }
+      ]
+    }
+  ],
+  "LA": [
+    {
+      "id": "LA-LPRP",
+      "country": "LA",
+      "shortName": "LPRP",
+      "name": "ພັກປະຊາຊົນປະຕິວັດລາວ",
+      "nameEn": "Lao People's Revolutionary Party",
+      "logo": "party-logos/la/lprp.svg",
+      "sha256": "4a7120764a8d039303d2bede2a33feb030250e37cf6a5ac9e29a24602b3fb85f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Lao_People%27s_Revolutionary_Party.svg",
+      "ideology": ["Communism", "Marxism–Leninism", "Kaysone Phomvihane Thought"],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 1955,
+      "leader": "Thongloun Sisoulith",
+      "leaderTitle": "General Secretary & President",
+      "inPower": true,
+      "timeInPower": "1975–present",
+      "seats": 158,
+      "seatsTotal": 164,
+      "chamberName": "National Assembly (Sapha Heng Xat)",
+      "sources": [
+        {
+          "title": "Lao People's Revolutionary Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lao_People%27s_Revolutionary_Party"
+        },
+        {
+          "title": "National Assembly of the Lao People's Democratic Republic",
+          "url": "https://na.gov.la/"
+        }
+      ]
+    }
+  ],
 };

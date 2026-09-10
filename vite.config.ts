@@ -184,7 +184,7 @@ export default defineConfig({
         // presidential standard, two 6 MB German colonial flags) also exceed
         // maximumFileSizeToCacheInBytes, which vite-plugin-pwa treats as a BUILD
         // FAILURE — that is how this was found, after the deploy went red.
-        globIgnores: ['**/countries-50m.json', '**/historical-flags/**', '**/historical-maps/**', '**/ogv/**', '**/subdivisions/**', '**/flags/sub/**', '**/national-flags/**'],
+        globIgnores: ['**/countries-50m.json', '**/historical-flags/**', '**/historical-maps/**', '**/ogv/**', '**/subdivisions/**', '**/flags/sub/**', '**/national-flags/**', '**/party-logos/**'],
         // The main JS bundle itself keeps growing as sourced data (flag meanings,
         // capital details, football-crest symbolism, …) is added directly to it,
         // and crossed the previous 5 MB ceiling on 2026-08-21 (5.24 MB) — bumped
