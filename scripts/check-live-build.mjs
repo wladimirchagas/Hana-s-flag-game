@@ -66,9 +66,21 @@ try {
 // vite.config.ts defines these as JSON string literals, so they appear verbatim in the bundle.
 // The commit is the first standalone short-or-full sha near the ISO timestamp.
 const iso = js.match(/"(20\d\d-\d\d-\d\dT[\d:.]+Z?)"/);
-const shas = [...js.matchAll(/"([0-9a-f]{7,40})"/g)].map((m) => m[1]).filter((s) => /[a-f]/.test(s));
 const liveIso = iso?.[1] ?? null;
-const liveSha = shas.find((s) => s.length === 7 || s.length === 8 || s.length === 40) ?? null;
+
+// __BUILD_COMMIT__ and __BUILD_ISO__ are emitted next to each other, so the commit is the
+// sha-shaped literal immediately before the timestamp. Anchoring on the timestamp is what makes
+// an ALL-DIGIT short sha findable: a bare `/[a-f]/` filter used to discard those, which reported
+// a perfectly live site as behind roughly one deploy in thirty (commit 2493456 hit it).
+const near = liveIso ? js.slice(Math.max(0, js.indexOf(liveIso) - 200), js.indexOf(liveIso)) : "";
+const nearShas = [...near.matchAll(/"([0-9a-f]{7,40})"/g)].map((m) => m[1]);
+const isShaLength = (s) => s.length === 7 || s.length === 8 || s.length === 40;
+const liveSha =
+  nearShas.reverse().find(isShaLength) ??
+  // fall back to a whole-bundle scan, still preferring a letter-bearing literal to reduce
+  // the chance of matching an unrelated numeric string.
+  [...js.matchAll(/"([0-9a-f]{7,40})"/g)].map((m) => m[1]).filter((s) => /[a-f]/.test(s)).find(isShaLength) ??
+  null;
 
 console.log(`live bundle : ${bundle[0]}`);
 console.log(`live build  : ${liveSha ?? "(commit not found in bundle)"}  ${liveIso ?? ""}`);
