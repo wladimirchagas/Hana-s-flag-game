@@ -1542,19 +1542,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "e18f334bb0d0ec47b17e272e12c894dc1a15e372f1f2656ebef308e195b426ef",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:La_Libertad_Avanza_full_logo.svg",
       "licenceNote": "Non-free logo hosted locally on English Wikipedia under fair use (File:La Libertad Avanza full logo.svg), used to identify the party per Wikipedia's non-free-content policy; not freely licensed for reuse. The Commons file \"La_Libertad_Avanza_2021.svg\" originally identified for this entry was checked and found to actually be an unrelated Buenos Aires province map, not the party's logo — this Wikipedia infobox file is the verified correct one.",
-      "logoMeaning": {
-        "description": "The La Libertad Avanza logo features a stylized yellow arrow pointing upward against a blue background, representing the party's core message of advancing freedom and economic progress. The upward arrow symbolizes growth, movement, and optimism for the future, while the bright yellow conveys energy and hope. The design reflects the party's libertarian conservative ideology and its commitment to market-based reforms and individual liberty.",
-        "sources": [
-          {
-            "title": "La Libertad Avanza — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/La_Libertad_Avanza"
-          },
-          {
-            "title": "La Libertad Avanza — Wikipedia (es)",
-            "url": "https://es.wikipedia.org/wiki/La_Libertad_Avanza"
-          }
-        ]
-      },
       "ideology": [
         "Right-libertarianism",
         "Libertarian conservatism",
@@ -1572,6 +1559,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 95,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
+      "logoMeaning": {
+        "description": "The La Libertad Avanza logo features a stylized yellow arrow pointing upward against a blue background, representing the party's core message of advancing freedom and economic progress. The upward arrow symbolizes growth, movement, and optimism for the future, while the bright yellow conveys energy and hope. The design reflects the party's libertarian conservative ideology and its commitment to market-based reforms and individual liberty.",
+        "sources": [
+          {
+            "title": "La Libertad Avanza — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/La_Libertad_Avanza"
+          },
+          {
+            "title": "La Libertad Avanza — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/La_Libertad_Avanza"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "La Libertad Avanza - Wikipedia",
@@ -1588,6 +1588,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados: cómo quedaron y quiénes son sus referentes - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -1595,24 +1599,11 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "AR-UXP",
       "country": "AR",
       "shortName": "UxP",
-      "name": "Unión por la Patria",
-      "nameEn": "Union for the Homeland",
+      "name": "Fuerza Patria",
+      "nameEn": "Homeland Force",
       "logo": "party-logos/ar/uxp.svg",
       "sha256": "c33ca6db59ba2a3d5555505249e50f706e70380eaaa209d95b95c0bb1d358425",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Union_por_la_Patria.svg",
-      "logoMeaning": {
-        "description": "The Unión por la Patria logo features a stylized hand holding the national flag or colors of Argentina, representing unity, popular will, and democratic participation. The design symbolizes the coalition's commitment to bringing together various Peronist and progressive forces to work for the nation's welfare. The upraised hand conveys collective action, solidarity, and the party's focus on grassroots mobilization and popular support.",
-        "sources": [
-          {
-            "title": "Unión por la Patria — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Uni%C3%B3n_por_la_Patria"
-          },
-          {
-            "title": "Unión por la Patria — Wikipedia (es)",
-            "url": "https://es.wikipedia.org/wiki/Uni%C3%B3n_por_la_Patria"
-          }
-        ]
-      },
       "ideology": [
         "Peronism",
         "Kirchnerism",
@@ -1626,21 +1617,35 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "founded": 2023,
       "previousNames": [
         {
-          "name": "Frente de Todos",
-          "nameEn": "Front for All",
-          "years": "2019-2023"
+          "name": "Unión por la Patria",
+          "nameEn": "Union for the Homeland",
+          "years": "2023–2025"
         }
       ],
       "leader": "Germán Martínez",
       "leaderTitle": "President of the Unión por la Patria bloc in the Chamber of Deputies",
       "inPower": false,
+      "inExecutive": false,
       "seats": 93,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
+      "logoMeaning": {
+        "description": "The Unión por la Patria logo features a stylized hand holding the national flag or colors of Argentina, representing unity, popular will, and democratic participation. The design symbolizes the coalition's commitment to bringing together various Peronist and progressive forces to work for the nation's welfare. The upraised hand conveys collective action, solidarity, and the party's focus on grassroots mobilization and popular support.",
+        "sources": [
+          {
+            "title": "Unión por la Patria — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Uni%C3%B3n_por_la_Patria"
+          },
+          {
+            "title": "Unión por la Patria — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/Uni%C3%B3n_por_la_Patria"
+          }
+        ]
+      },
       "sources": [
         {
-          "title": "Unión por la Patria - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Uni%C3%B3n_por_la_Patria"
+          "title": "Homeland Force — Wikipedia (Fuerza Patria, known as Unión por la Patria until 2025; main opposition coalition since December 2023)",
+          "url": "https://en.wikipedia.org/wiki/Homeland_Force"
         },
         {
           "title": "Radiografía de los bloques en Diputados: cómo quedaron y quiénes son sus referentes - Ámbito",
@@ -1649,6 +1654,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Uno por uno, cómo quedan los bloques de la Cámara de Diputados - Infobae",
           "url": "https://www.infobae.com/politica/2025/12/03/uno-por-uno-como-quedan-los-bloques-de-la-camara-de-diputados-y-cuantos-legisladores-tendran/"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -1670,6 +1679,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Gisela Scaglia",
       "leaderTitle": "President of the Provincias Unidas bloc in the Chamber of Deputies",
       "inPower": false,
+      "inExecutive": false,
       "seats": 18,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -1685,6 +1695,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Diputados: Provincias Unidas tendrá el bloque de gobernadores más grande - LetraP",
           "url": "https://www.letrap.com.ar/politica/diputados-provincias-unidas-tendra-el-bloque-gobernadores-mas-grande-aportes-valdes-y-vidal-n5420571"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -1697,6 +1711,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ar/pro.svg",
       "sha256": "a7eeb4a26f16f8eb1b4823653bbaa32b8fa5c5276eb714de8282258a4ca8bd44",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PRO.svg",
+      "ideology": [
+        "Conservative liberalism",
+        "Liberal conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2005,
+      "leader": "Cristian Ritondo",
+      "leaderTitle": "President of the PRO bloc in the Chamber of Deputies",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 12,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The PRO (Propuesta Republicana) logo features a stylized sunburst or rays of light, representing illumination, progress, and forward movement. The design conveys the party's commitment to transparency, modernity, and liberal democratic values. The radiant symbol reflects the party's positioning as a centre-right political force offering a clear vision for Argentina's economic and institutional development.",
         "sources": [
@@ -1710,19 +1738,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Conservative liberalism",
-        "Liberal conservatism"
-      ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 2005,
-      "leader": "Cristian Ritondo",
-      "leaderTitle": "President of the PRO bloc in the Chamber of Deputies",
-      "inPower": false,
-      "seats": 12,
-      "seatsTotal": 257,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Republican Proposal - Wikipedia",
@@ -1731,6 +1746,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -1751,6 +1770,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Alberto Arrúa",
       "leaderTitle": "President of the Innovación Federal bloc in the Chamber of Deputies",
       "inPower": false,
+      "inExecutive": false,
       "seats": 7,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -1766,6 +1786,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -1778,6 +1802,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ar/ucr.svg",
       "sha256": "8e41c969c79818b92c7d45129950be270a6e18b8ca75793deacd638bfe82372f",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Ucr_modern_logo.svg",
+      "ideology": [
+        "Social liberalism",
+        "Social democracy",
+        "Conservative liberalism (faction)"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre; historically centre to centre-left",
+      "founded": 1891,
+      "leader": "Pamela Verasay",
+      "leaderTitle": "President of the UCR bloc in the Chamber of Deputies",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 6,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The UCR (Unión Cívica Radical) logo features a stylized shield with the national colours of Argentina (light blue and white) and a radiant sun, representing civic unity, democratic values, and national identity. The design reflects the party's historical role as a founding force of Argentine democracy and its commitment to liberal, civic-minded governance. The shield conveys institutional strength and protection of democratic principles, while the sun symbolizes hope and enlightenment.",
         "sources": [
@@ -1791,20 +1830,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Social liberalism",
-        "Social democracy",
-        "Conservative liberalism (faction)"
-      ],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre; historically centre to centre-left",
-      "founded": 1891,
-      "leader": "Pamela Verasay",
-      "leaderTitle": "President of the UCR bloc in the Chamber of Deputies",
-      "inPower": false,
-      "seats": 6,
-      "seatsTotal": 257,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Radical Civic Union - Wikipedia",
@@ -1813,6 +1838,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -1825,19 +1854,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ar/fitu.svg",
       "sha256": "a5e7d90758cdc841cf5c64530d04fa0606749733c7df4c856793b6e73781614a",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Frente_de_Izquierda_y_de_Trabajadores-Unidad.svg",
-      "logoMeaning": {
-        "description": "The FIT-U (Frente de Izquierda y de Trabajadores - Unidad) logo features a red design incorporating hammer and sickle symbolism along with stylized hands or united figures, representing workers' solidarity, socialist ideology, and the alliance of Trotskyist and communist parties. The red colour symbolizes revolutionary socialism and the international communist movement, while the hands represent collective action and workers' unity against capitalist exploitation and imperialism.",
-        "sources": [
-          {
-            "title": "Left and Workers' Front — Unidad — Wikipedia (es)",
-            "url": "https://es.wikipedia.org/wiki/Frente_de_Izquierda_y_de_Trabajadores_-_Unidad"
-          },
-          {
-            "title": "Frente de Izquierda y de Trabajadores — Wikipedia (es)",
-            "url": "https://es.wikipedia.org/wiki/Frente_de_Izquierda_y_de_Trabajadores"
-          }
-        ]
-      },
       "ideology": [
         "Trotskyism",
         "Communism",
@@ -1851,9 +1867,23 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Myriam Bregman",
       "leaderTitle": "National Deputy and lead spokesperson (the bloc is led collectively by its four member parties: PO, PTS, IS, MST)",
       "inPower": false,
+      "inExecutive": false,
       "seats": 4,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
+      "logoMeaning": {
+        "description": "The FIT-U (Frente de Izquierda y de Trabajadores - Unidad) logo features a red design incorporating hammer and sickle symbolism along with stylized hands or united figures, representing workers' solidarity, socialist ideology, and the alliance of Trotskyist and communist parties. The red colour symbolizes revolutionary socialism and the international communist movement, while the hands represent collective action and workers' unity against capitalist exploitation and imperialism.",
+        "sources": [
+          {
+            "title": "Left and Workers' Front — Unidad — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/Frente_de_Izquierda_y_de_Trabajadores_-_Unidad"
+          },
+          {
+            "title": "Frente de Izquierda y de Trabajadores — Wikipedia (es)",
+            "url": "https://es.wikipedia.org/wiki/Frente_de_Izquierda_y_de_Trabajadores"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Frente de Izquierda y de Trabajadores - Unidad - Wikipedia (es)",
@@ -1862,6 +1892,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Elecciones 2025: el Frente de Izquierda obtuvo cerca de 4 puntos a nivel nacional y pierde una banca en el Congreso - La Nación",
           "url": "https://www.lanacion.com.ar/politica/el-frente-de-izquierda-obtuvo-cerca-de-4-puntos-a-nivel-nacional-y-pierde-una-banca-en-el-congreso-nid26102025/"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -1881,6 +1915,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Marcela Pagano",
       "leaderTitle": "Founding member; the bloc has been reorganised multiple times since August 2025 and Pagano currently holds it as a single-member bloc",
       "inPower": false,
+      "inExecutive": false,
       "seats": 3,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -1896,6 +1931,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -1915,6 +1954,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Gladys Medina",
       "leaderTitle": "President of the Independencia bloc in the Chamber of Deputies",
       "inPower": false,
+      "inExecutive": false,
       "seats": 3,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -1926,6 +1966,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -1946,6 +1990,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Sebastián Nóblega",
       "leaderTitle": "President of the Elijo Catamarca bloc in the Chamber of Deputies",
       "inPower": false,
+      "inExecutive": false,
       "seats": 3,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -1957,6 +2002,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Tres diputados de Catamarca confirmaron que dejan el bloque de Unión por la Patria - Infobae",
           "url": "https://www.infobae.com/politica/2025/12/02/tres-diputados-de-catamarca-confirmaron-que-dejan-el-bloque-de-union-por-la-patria-y-la-libertad-avanza-se-quedara-con-la-primera-minoria/"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -1988,6 +2037,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Miguel Ángel Pichetto",
       "leaderTitle": "Founder of the Encuentro Federal / Peronismo Republicano space",
       "inPower": false,
+      "inExecutive": false,
       "seats": 2,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -1999,6 +2049,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -2011,6 +2065,22 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ar/ccari.svg",
       "sha256": "42af5b9cada6ad1cb30a8279ad5374734259a75663af4ce92cba4e981898f232",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Coalicion_Civica.svg",
+      "ideology": [
+        "Socioliberalism",
+        "Progressivism",
+        "Radical centrism",
+        "Developmentalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2002,
+      "leader": "Maximiliano Ferraro",
+      "leaderTitle": "President of Coalición Cívica ARI",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 2,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The CC-ARI (Coalición Cívica ARI) logo features a stylized civic symbol combining the national colours of Argentina with abstract shapes representing unity and democratic participation. The design reflects the party's commitment to civic engagement, anti-corruption, and radical centrist politics. The symbol conveys transparency, institutional reform, and the party's focus on strengthening democratic institutions and civil society participation in Argentine politics.",
         "sources": [
@@ -2024,21 +2094,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Socioliberalism",
-        "Progressivism",
-        "Radical centrism",
-        "Developmentalism"
-      ],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre",
-      "founded": 2002,
-      "leader": "Maximiliano Ferraro",
-      "leaderTitle": "President of Coalición Cívica ARI",
-      "inPower": false,
-      "seats": 2,
-      "seatsTotal": 257,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Coalición Cívica ARI - Wikipedia (es)",
@@ -2047,6 +2102,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -2059,6 +2118,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/ar/mid.png",
       "sha256": "217dbea960bd90ff48166938b7ac3a71d1de41f213c1b3bf47448b8012e28ddb",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Movimiento_de_Integración_y_Desarrollo_2018.png",
+      "ideology": [
+        "Developmentalism (desarrollismo)"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right, with internal factions ranging from centre to right",
+      "founded": 1964,
+      "leader": "Juan Pablo Carrique",
+      "leaderTitle": "President of the Movimiento de Integración y Desarrollo",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 2,
+      "seatsTotal": 257,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The MID (Movimiento de Integración y Desarrollo) logo reflects the party's historical focus on national integration and developmentalist economic policies. The design emphasizes economic development, national unity, and institutional modernization. The logo represents the party's commitment to fostering integration among Argentine regions and promoting state-led industrialization and economic growth as a path to national prosperity.",
         "sources": [
@@ -2072,18 +2144,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Developmentalism (desarrollismo)"
-      ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right, with internal factions ranging from centre to right",
-      "founded": 1964,
-      "leader": "Juan Pablo Carrique",
-      "leaderTitle": "President of the Movimiento de Integración y Desarrollo",
-      "inPower": false,
-      "seats": 2,
-      "seatsTotal": 257,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Movimiento de Integración y Desarrollo - Wikipedia (es)",
@@ -2092,6 +2152,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -2114,6 +2178,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Marcelo Orrego",
       "leaderTitle": "Governor of San Juan; current leader of Producción y Trabajo",
       "inPower": false,
+      "inExecutive": false,
       "seats": 2,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -2125,6 +2190,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -2143,6 +2212,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Rolando Figueroa",
       "leaderTitle": "Governor of Neuquén; founder of La Neuquinidad",
       "inPower": false,
+      "inExecutive": false,
       "seats": 1,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -2154,6 +2224,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -2174,6 +2248,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Natalia de la Sota",
       "leaderTitle": "Founder and sole National Deputy of the Defendamos Córdoba bloc",
       "inPower": false,
+      "inExecutive": false,
       "seats": 1,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -2185,6 +2260,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -2204,6 +2283,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Karina Banfi",
       "leaderTitle": "Founder and sole National Deputy of the Adelante Buenos Aires bloc",
       "inPower": false,
+      "inExecutive": false,
       "seats": 1,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -2215,6 +2295,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -2235,6 +2319,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Alberto Rodríguez Saá",
       "leaderTitle": "President of the Justicialist Party's San Luis provincial branch",
       "inPower": false,
+      "inExecutive": false,
       "seats": 1,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -2246,6 +2331,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     },
@@ -2266,6 +2355,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "José Luis Garrido",
       "leaderTitle": "National Deputy for the Por Santa Cruz bloc",
       "inPower": false,
+      "inExecutive": false,
       "seats": 1,
       "seatsTotal": 257,
       "chamberName": "Chamber of Deputies",
@@ -2277,6 +2367,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Radiografía de los bloques en Diputados - Ámbito",
           "url": "https://www.ambito.com/politica/radiografia-los-bloques-diputados-como-quedaron-y-quienes-son-sus-referentes-n6220476"
+        },
+        {
+          "title": "Argentine Chamber of Deputies — Wikipedia (blocs after the 26 October 2025 legislative election: Government 95, Allies 24, Independent 41, Opposition 97, of 257)",
+          "url": "https://en.wikipedia.org/wiki/Argentine_Chamber_of_Deputies"
         }
       ]
     }

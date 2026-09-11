@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 13 / 195 — Southeast Asia complete.**
+**Countries audited: 14 / 195 — Southeast Asia complete; South America under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -59,6 +59,7 @@ forgotten; it is tracked here.
 | 🇱🇦 Laos | `#1323` | 1 → 1 | 169 / 175 | **STALE — a whole parliament behind** |
 | 🇧🇳 Brunei | `#1324` | **3 → 0 (removed)** | n/a | **FABRICATED REPRESENTATION — S1** |
 | 🇹🇱 Timor-Leste | `#1325` | 5 → 5 | 65 / 65 | **WRONG — S1 (an audio file as a logo)** |
+| 🇦🇷 Argentina | `#1326` | 19 → 19 | 257 / 257 | **NEARLY CURRENT — one rename missed** |
 
 ---
 
@@ -439,6 +440,30 @@ rules were written for, reproduced wholesale in the party data. It is also why t
 with rendering every logo: four of the five passed a Commons or Wikipedia lookup, and three of them
 were freely licensed. **Provenance proves where bytes came from; only looking proves what they are.**
 
+### 🇦🇷 Argentina — audited 2026-09-11
+
+The strongest country yet on numbers: **all nineteen blocs reconciled exactly** against the Chamber
+of Deputies after the 26 October 2025 legislative election — LLA 95, FP 93, United Provinces 18,
+PRO 12, Innovación Federal 7, UCR 6, FIT-U 4, three 3-seat blocs, four 2-seat blocs and five
+1-seat blocs, summing to 257 of 257. All seven bundled logos matched Commons or Wikipedia by SHA-1
+and rendered correctly.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-062 | **S2** | `AR-UXP.name` | **Unión por la Patria** | **Fuerza Patria** / Homeland Force, with the old name preserved in `previousNames` (2023–2025) | The coalition was renamed in 2025. Argentina's main opposition bloc — 93 seats — was carrying a superseded name |
+| PP-063 | **S3** | `inExecutive` | absent | `true` on LLA only | Javier Milei's party; the chamber separates Government (95) from Allies (24), so PRO, UCR, MID and the small provincial blocs stay out of power |
+
+**Unresolved, flagged rather than guessed.** The chamber now lists a 3-seat bloc as **"País
+Federal"** where the dataset has **"Coherencia"** (also 3 seats, led by Marcela Pagano, formed
+August 2025 by four ex-libertarians). They may be the same bloc renamed, or two different ones.
+Neither English nor Spanish Wikipedia search resolved it within this pass, so **the entry is left
+unchanged and the discrepancy recorded here** — changing a name on a guess is what the sourcing
+rule forbids. Recheck when a source lists the bloc's membership.
+
+**Note on modelling:** Argentina's entries are legislative *blocs*, not registered parties. That was
+an existing choice and it matches how the chamber itself reports composition; it is noted so a later
+reviewer knows it is deliberate.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -466,7 +491,7 @@ Tick a box only when that country's fix is **merged and live**.
 
 ### Phase 3 — rest of South America (11)
 
-- [ ] `AR` Argentina
+- [x] `AR` Argentina — merged
 - [ ] `CL` Chile
 - [ ] `CO` Colombia
 - [ ] `PE` Peru
