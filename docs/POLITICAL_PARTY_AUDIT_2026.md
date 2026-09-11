@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 6 / 195.**
+**Countries audited: 7 / 195.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -52,6 +52,7 @@ forgotten; it is tracked here.
 | 🇲🇲 Myanmar | `#1317` | not covered (decision recorded) | — | **OUT OF SCOPE, documented** |
 | 🇹🇭 Thailand | `#1317` | 20 → 20 | 497 / 500 | **NEARLY CURRENT — S2/S3** |
 | 🇻🇳 Vietnam | `#1318` | 1 → 1 | 482 / 500 | **WRONG — S1 (deceased leader)** |
+| 🇮🇩 Indonesia | `#1319` | 8 → 8 | **580 / 580** | **WRONG — S1 (wrong company's logo)** |
 
 ---
 
@@ -264,6 +265,43 @@ matching the National Assembly elected 15 March 2026 exactly. The failure was th
 looks wrong. Two countries in, it has caught two mis-recorded source URLs out of 22 logos checked —
 a hand-recorded URL is simply not reliable evidence of what the bundled bytes are.
 
+### 🇮🇩 Indonesia — audited 2026-09-11
+
+Closes dataset defects **B1** (seats summing above the chamber) and **B2** (two `seatsTotal` values
+in one country) — and turned up the worst *image* defect of the sweep so far.
+
+> **`pan.svg`, shipped as the logo of Indonesia's National Mandate Party (PAN), was the logo of
+> "pans & COMPANY" — a restaurant chain.** The SHA-1 provenance check matched the bundled bytes to
+> Commons `File:Logo_pans_&_company.png`; rendering it confirmed a yellow box reading *pans &
+> COMPANY*. It had been live in production. This is precisely the name-collision failure the repo's
+> flag rules exist to prevent ("Misiones", "adidas for Vietnam"), reproduced in the party data.
+
+Verified against the [House of Representatives](https://en.wikipedia.org/wiki/People%27s_Representative_Council)
+and its seat template (`Template:DPR RI`), which gives all eight parties and sums to exactly 580.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-035 | **S1** | `ID-PAN.logo` | **the "pans & COMPANY" restaurant logo** | `pan.png`, the 2024 PAN logo (Commons, public domain) — the correct file was already bundled and unreferenced | SHA-1 provenance + visual render |
+| PP-036 | **S1** | `seats` | PDI-P 128, Golkar 97, Gerindra 112, PKB 58 — **summing to 609 of a stated 575** | 110 / 102 / 86 / 68, summing to **580 of 580** | `Template:DPR RI`, which the chamber infobox itself uses |
+| PP-037 | **S1** | `seatsTotal` | **575 for four parties, 580 for the other four** | 580 throughout | The DPR has had 580 seats since the 2024 election; 575 was the 2019–2024 chamber |
+| PP-038 | **S1** | `chamberName` | **"People's Consultative Assembly"** for four parties | "People's Representative Council (DPR)" throughout | The MPR is the *bicameral assembly*; the lower house is the DPR. Four parties named the wrong institution |
+| PP-039 | **S1** | `leader` | Golkar **Airlangga Hartarto**; PKS **Ahmad Syaikhu** | **Bahlil Lahadalia**; **Sohibul Iman** | party infoboxes |
+| PP-040 | **S2** | `logo` | NasDem's **superseded** logo (Commons `Partai_Nasdem_Old.svg`); Golkar and PKB on files with no traceable provenance and a non-free note | current Commons files: `Logo_Utama_Partai_NasDem.png`, `Logo_Golkar.svg`, `Logo_PKB_2024.png`, all public domain | infobox `logo` fields + Commons licence metadata |
+| PP-041 | **S3** | `inPower` / `inExecutive` | NasDem in power, PKS out, `inExecutive` absent | the five **KIM** government parties (Golkar, Gerindra, PKB, PAN, Demokrat) are in power and in the executive | The chamber's own three-way split: Government (KIM), confidence-and-supply (KIM+: NasDem, PKS), check-and-balance (PDI-P) |
+
+**Judgement call — NasDem and PKS.** The chamber classifies them as *confidence and supply*, which
+is support without joining the government, so both are recorded out of power. No per-minister source
+listing cabinet portfolios by party could be reached (neither the English nor the Indonesian cabinet
+article carries a machine-readable party column), so if either holds a portfolio it is not reflected
+here. **That limit is recorded rather than papered over** — revisit when a minister-by-party source
+is available.
+
+**Housekeeping:** five superseded or wrong logo files were deleted (`pan.svg`, `nasdem.svg`,
+`nasdem.png`, `golkar.png`, `pkb.png`).
+
+**Visual verification:** 8 cards, all 8 logos asserted painted and montage-checked side by side —
+PAN now shows the party's blue sunburst, not a restaurant.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -281,7 +319,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `MM` Myanmar — audited, deliberately out of scope
 - [x] `TH` Thailand — merged
 - [x] `VN` Vietnam — merged
-- [ ] `ID` Indonesia
+- [x] `ID` Indonesia — merged
 - [ ] `PH` Philippines
 - [ ] `SG` Singapore
 - [ ] `KH` Cambodia
