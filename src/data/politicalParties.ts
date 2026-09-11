@@ -8230,7 +8230,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Antônio Rueda",
       "leaderTitle": "National President",
       "inPower": false,
-      "inExecutive": true,
+      "inExecutive": false,
       "seats": 58,
       "seatsTotal": 513,
       "chamberName": "Chamber of Deputies",
