@@ -14806,13 +14806,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "CNRT",
       "name": "Congresso Nacional de Reconstrução Timorense",
       "nameEn": "National Congress for Timorese Reconstruction",
-      "logo": "party-logos/tl/cnrt.svg",
-      "sha256": "3a5d8c66949572242d84935077bda92265243f86bbbfb6e1fae45dc66f0e2b98",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_CNRT.svg",
-      "ideology": ["Social democracy", "Democratic socialism", "Nationalism"],
+      "logo": "party-logos/tl/cnrt.png",
+      "sha256": "72ab2c34bbf6907f5004b9afacb2dde85ff9b09f68ba2ce40ed504e1133c22a6",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo%20of%20the%20National%20Congress%20for%20Timorese%20Reconstruction.png",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia under a fair-use rationale; bundled here to identify the National Congress for Timorese Reconstruction, not to imply endorsement. Replace if a freely-licensed file becomes available.",
+      "ideology": [
+        "Social democracy",
+        "Democratic socialism",
+        "Nationalism"
+      ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 2007,
+      "coalitionId": "TL-CNRT-PD",
       "leader": "Xanana Gusmão",
       "leaderTitle": "President & Prime Minister",
       "inPower": true,
@@ -14821,16 +14827,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 31,
       "seatsTotal": 65,
       "chamberName": "National Parliament",
-      "coalitionId": "TL-CNRT-PD",
       "logoMeaning": {
-      "description": "The CNRT logo features a circular seal in the national colours of Timor-Leste (red, yellow, black, and white) with a star and Mount Ramelau silhouette, representing national reconstruction, peace, and sovereignty under Xanana Gusmão's leadership.",
-      "sources": [
-              {
-                      "title": "National Congress for Timorese Reconstruction — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/National_Congress_for_Timorese_Reconstruction"
-              }
-      ]
-},
+        "description": "The CNRT logo features a circular seal in the national colours of Timor-Leste (red, yellow, black, and white) with a star and Mount Ramelau silhouette, representing national reconstruction, peace, and sovereignty under Xanana Gusmão's leadership.",
+        "sources": [
+          {
+            "title": "National Congress for Timorese Reconstruction — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/National_Congress_for_Timorese_Reconstruction"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "National Congress for Timorese Reconstruction — Wikipedia",
@@ -14839,6 +14844,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "National Parliament of Timor-Leste",
           "url": "http://www.parlamento.tl/"
+        },
+        {
+          "title": "National Parliament of Timor-Leste — Wikipedia (65 members elected 21 May 2023: Government 37 — CNRT 31, PD 6; Opposition 28 — FRETILIN 19, KHUNTO 5, PLP 4)",
+          "url": "https://en.wikipedia.org/wiki/National_Parliament_(East_Timor)"
         }
       ]
     },
@@ -14848,33 +14857,42 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "FRETILIN",
       "name": "Frente Revolucionária de Timor-Leste Independente",
       "nameEn": "Revolutionary Front for an Independent East Timor",
-      "logo": "party-logos/tl/fretilin.svg",
-      "sha256": "a6ce331591bf736df5a6419da5fdfc991ad7b483f6db14f21147911962e4db71",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_FRETILIN.svg",
-      "ideology": ["Democratic socialism", "Left-wing nationalism", "Anti-imperialism"],
+      "logo": "party-logos/tl/fretilin.png",
+      "sha256": "a4198a1ee780ea0f08047ea4b432cdceb7e151debc75595b1f8b3e6efe9bf6ad",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:FRETILIN%20logo.png",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia under a fair-use rationale; bundled here to identify FRETILIN, not to imply endorsement. Replace if a freely-licensed file becomes available.",
+      "ideology": [
+        "Democratic socialism",
+        "Left-wing nationalism",
+        "Anti-imperialism"
+      ],
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
       "founded": 1974,
-      "leader": "Francisco Guterres (Lú-Olo)",
-      "leaderTitle": "President",
+      "leader": "Mari Alkatiri",
+      "leaderTitle": "Secretary-General",
       "inPower": false,
       "inExecutive": false,
       "seats": 19,
       "seatsTotal": 65,
       "chamberName": "National Parliament",
       "logoMeaning": {
-      "description": "The Fretilin flag features horizontal stripes of yellow, black, and red with a white five-pointed star in the black stripe. Yellow represents the traces of colonialism, black represents obscurantism to be overcome, red represents the struggle for national liberation, and the white star represents peace and freedom.",
-      "sources": [
-              {
-                      "title": "Fretilin — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Fretilin"
-              }
-      ]
-},
+        "description": "The Fretilin flag features horizontal stripes of yellow, black, and red with a white five-pointed star in the black stripe. Yellow represents the traces of colonialism, black represents obscurantism to be overcome, red represents the struggle for national liberation, and the white star represents peace and freedom.",
+        "sources": [
+          {
+            "title": "Fretilin — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Fretilin"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Fretilin — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Fretilin"
+        },
+        {
+          "title": "National Parliament of Timor-Leste — Wikipedia (65 members elected 21 May 2023: Government 37 — CNRT 31, PD 6; Opposition 28 — FRETILIN 19, KHUNTO 5, PLP 4)",
+          "url": "https://en.wikipedia.org/wiki/National_Parliament_(East_Timor)"
         }
       ]
     },
@@ -14885,12 +14903,17 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "name": "Partido Democrático",
       "nameEn": "Democratic Party",
       "logo": "party-logos/tl/pd.png",
-      "sha256": "5d853912a60b23953b95d717846a86feb303c6743ff3a3e42c0bf724b35bb0d4",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_Democr%C3%A1tico_East_Timor.svg",
-      "ideology": ["Centrism", "Social democracy"],
+      "sha256": "e1bd1d498eeaf661b58cc4cfd51194b19be147fe39f57fa89b98e6b853b0e922",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo%20of%20the%20Democratic%20Party%20(East%20Timor).png",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia under a fair-use rationale; bundled here to identify the Democratic Party of Timor-Leste, not to imply endorsement. Replace if a freely-licensed file becomes available.",
+      "ideology": [
+        "Centrism",
+        "Social democracy"
+      ],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 2001,
+      "coalitionId": "TL-CNRT-PD",
       "leader": "Mariano Sabino Lopes",
       "leaderTitle": "President & Deputy Prime Minister",
       "inPower": true,
@@ -14899,20 +14922,23 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 6,
       "seatsTotal": 65,
       "chamberName": "National Parliament",
-      "coalitionId": "TL-CNRT-PD",
       "logoMeaning": {
-      "description": "The PD logo features an open yellow book, a blazing torch of knowledge, and a soaring white dove of peace set on a green and blue background, symbolising democratic education, youth empowerment, freedom, and civic development.",
-      "sources": [
-              {
-                      "title": "Democratic Party (East Timor) — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Democratic_Party_(East_Timor)"
-              }
-      ]
-},
+        "description": "The PD logo features an open yellow book, a blazing torch of knowledge, and a soaring white dove of peace set on a green and blue background, symbolising democratic education, youth empowerment, freedom, and civic development.",
+        "sources": [
+          {
+            "title": "Democratic Party (East Timor) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Democratic_Party_(East_Timor)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Democratic Party (East Timor) — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Democratic_Party_(East_Timor)"
+        },
+        {
+          "title": "National Parliament of Timor-Leste — Wikipedia (65 members elected 21 May 2023: Government 37 — CNRT 31, PD 6; Opposition 28 — FRETILIN 19, KHUNTO 5, PLP 4)",
+          "url": "https://en.wikipedia.org/wiki/National_Parliament_(East_Timor)"
         }
       ]
     },
@@ -14924,9 +14950,12 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Enrich the National Unity of the Sons of Timor",
       "logo": "party-logos/tl/khunto.svg",
       "sha256": "0c624414311f4244ee03056779b9e872e97b9e57b197634231349572e8969c6f",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Kmanek_Haburas_Unidade_Nasional_Timor_Oan.svg",
-      "licenceNote": "Fair-use logo bundled for non-commercial educational reference to identify the party.",
-      "ideology": ["Populism", "Youth empowerment"],
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo%20of%20the%20Kmanek%20Haburas%20Unidade%20Nasional%20Timor%20Oan.svg",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia under a fair-use rationale; bundled here to identify KHUNTO, not to imply endorsement. Replace if a freely-licensed file becomes available.",
+      "ideology": [
+        "Populism",
+        "Youth empowerment"
+      ],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 2011,
@@ -14938,18 +14967,22 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 65,
       "chamberName": "National Parliament",
       "logoMeaning": {
-      "description": "The KHUNTO logo features a traditional sacred house (Uma Lulik), a martial arts sword (surik), and sheaves of corn and rice, reflecting traditional Timorese spiritual values, youth solidarity, and grassroots empowerment.",
-      "sources": [
-              {
-                      "title": "Kmanek Haburas Unidade Nasional Timor Oan — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Kmanek_Haburas_Unidade_Nasional_Timor_Oan"
-              }
-      ]
-},
+        "description": "The KHUNTO logo features a traditional sacred house (Uma Lulik), a martial arts sword (surik), and sheaves of corn and rice, reflecting traditional Timorese spiritual values, youth solidarity, and grassroots empowerment.",
+        "sources": [
+          {
+            "title": "Kmanek Haburas Unidade Nasional Timor Oan — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Kmanek_Haburas_Unidade_Nasional_Timor_Oan"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Kmanek Haburas Unidade Nasional Timor Oan — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Kmanek_Haburas_Unidade_Nasional_Timor_Oan"
+        },
+        {
+          "title": "National Parliament of Timor-Leste — Wikipedia (65 members elected 21 May 2023: Government 37 — CNRT 31, PD 6; Opposition 28 — FRETILIN 19, KHUNTO 5, PLP 4)",
+          "url": "https://en.wikipedia.org/wiki/National_Parliament_(East_Timor)"
         }
       ]
     },
@@ -14959,10 +14992,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PLP",
       "name": "Partidu Libertasaun Populár",
       "nameEn": "People's Liberation Party",
-      "logo": "party-logos/tl/plp.svg",
-      "sha256": "ad262cce6f96213fc159a1ff8cbded71169655b4d86869a176d6c5a77a7b569d",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PLP_Timor-Leste.svg",
-      "ideology": ["Anti-corruption", "Centrism", "Rural development"],
+      "logo": "party-logos/tl/plp.png",
+      "sha256": "d159499ddded061996ed70c5b6e539bd99d21f72311b4b80429b3bcca3e8f818",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo%20of%20the%20People's%20Liberation%20Party%20(Timor-Leste).png",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia under a fair-use rationale; bundled here to identify the People's Liberation Party, not to imply endorsement. Replace if a freely-licensed file becomes available.",
+      "ideology": [
+        "Anti-corruption",
+        "Centrism",
+        "Rural development"
+      ],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 2015,
@@ -14974,18 +15012,22 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 65,
       "chamberName": "National Parliament",
       "logoMeaning": {
-      "description": "The PLP emblem depicts a stylised Kaibauk (traditional Timorese crescent headdress symbolizing nobility and cultural identity) above an open flower and sunrise rays, representing honest governance, cultural integrity, and renewal for rural communities.",
-      "sources": [
-              {
-                      "title": "People's Liberation Party (East Timor) — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/People%27s_Liberation_Party_(East_Timor)"
-              }
-      ]
-},
+        "description": "The PLP emblem depicts a stylised Kaibauk (traditional Timorese crescent headdress symbolizing nobility and cultural identity) above an open flower and sunrise rays, representing honest governance, cultural integrity, and renewal for rural communities.",
+        "sources": [
+          {
+            "title": "People's Liberation Party (East Timor) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/People%27s_Liberation_Party_(East_Timor)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "People's Liberation Party (East Timor) — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/People%27s_Liberation_Party_(East_Timor)"
+        },
+        {
+          "title": "National Parliament of Timor-Leste — Wikipedia (65 members elected 21 May 2023: Government 37 — CNRT 31, PD 6; Opposition 28 — FRETILIN 19, KHUNTO 5, PLP 4)",
+          "url": "https://en.wikipedia.org/wiki/National_Parliament_(East_Timor)"
         }
       ]
     }
