@@ -245,6 +245,40 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       url: "https://en.wikipedia.org/wiki/Alyansa_para_sa_Bagong_Pilipinas",
     },
   },
+  "BR-FE": {
+    id: "BR-FE",
+    name: "Frente Ampla",
+    nameEn: "Brazil of Hope",
+    kind: "federation",
+    memberPartyIds: ["BR-PT", "BR-PCDOB", "BR-PV"],
+    source: {
+      title: "Frente Ampla (Brazil) — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Frente_Ampla_(Brazil)",
+    },
+  },
+  "BR-UP": {
+    id: "BR-UP",
+    name: "União Progressista",
+    nameEn: "Progressive Union",
+    kind: "federation",
+    memberPartyIds: ["BR-UNIAO", "BR-PP"],
+    source: {
+      title: "União Progressista — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Union%C3%A3o_Progressista",
+    },
+  },
+  "BR-AF": {
+    id: "BR-AF",
+    name: "Sempre Frente",
+    nameEn: "Always Forward",
+    kind: "federation",
+    memberPartyIds: ["BR-PSDB", "BR-CIDADANIA"],
+    source: {
+      title: "Sempre Frente — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Sempre_Frente",
+    },
+    note: "Cidadania voted to end membership in 2026",
+  },
 };
 
 
@@ -8175,6 +8209,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/uniao.svg",
       "sha256": "b50493f337436557e257d28c5f5124eb7173cf70dabae8daf02fbad730aed093",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Uni%C3%A3o_Brasil_logo.svg",
+      "coalitionId": "BR-UP",
       "logoMeaning": {
         "description": "The União Brasil logo features a stylized shield design representing unity and national strength. The logo incorporates the party's founding principle of bringing together different political forces to create a centrist coalition. The geometric design reflects the party's modern, pragmatic approach to Brazilian politics and its centrist positioning.",
         "sources": [
@@ -8258,6 +8293,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/pp.svg",
       "sha256": "0dde6bf9bc3e36bf3678d0fd842b5761349ab6f5e3993f5e918e84457a764a17",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Progressistas_logo.svg",
+      "coalitionId": "BR-UP",
       "logoMeaning": {
         "description": "The Progressistas logo features a modernist design representing the party's commitment to progressive governance and centrism. The emblem symbolizes the party's pragmatic approach to Brazilian politics and its emphasis on institutional development. The design reflects the party's long history in Brazilian centrist politics since its founding in 1965.",
         "sources": [
@@ -8412,6 +8448,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/psdb.svg",
       "sha256": "4b6a27ad9fc593808ac26e7d4c8b6f2dac549cdbb30cbdfa6f1b58bd7d7d23ef",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSDB_Logo.svg",
+      "coalitionId": "BR-AF",
       "logoMeaning": {
         "description": "The PSDB logo features a blue and orange design representing the party's centrist positioning and commitment to social democracy in Brazil. The colors symbolize optimism and institutional stability. The stylized emblem reflects the party's commitment to democratic governance and progressive liberal economic policies.",
         "sources": [
@@ -8450,6 +8487,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/cidadania.svg",
       "sha256": "655c2fe1d87c7ef57a7a4339b6d87d951d6bd032b646588914ccdd1b760d2d09",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Cidadania_Logo.svg",
+      "coalitionId": "BR-AF",
       "logoMeaning": {
         "description": "The Cidadania logo features a stylized human figure or geometric design representing the party's emphasis on citizenship and democratic participation. The emblem symbolizes social inclusion, civic engagement, and the party's centre-left commitment to social democratic values and human development. The design reflects the party's focus on citizenship rights and social responsibility in Brazil.",
         "sources": [
@@ -8488,6 +8526,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/pt.svg",
       "sha256": "5014ff66de5112a46de044dfd22a60226feccc98a3aeaa57fd08f6f18e8d6be5",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PT_Brasil_Logo.svg",
+      "coalitionId": "BR-FE",
       "logoMeaning": {
         "description": "The Workers' Party logo features a red geometric design representing the party's socialist heritage and commitment to workers' rights. The red color symbolizes solidarity with the labor movement and left-wing ideological commitments. The modern geometric style reflects the party's contemporary approach to social democracy and progressive change in Brazil.",
         "sources": [
@@ -8533,6 +8572,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/pcdob.svg",
       "sha256": "0fb1a3813ff9d4b47e904f4b0ec6b9a2ac8e763be2a354afa5895e4826fe4464",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PCdoB_Logo.svg",
+      "coalitionId": "BR-FE",
       "logoMeaning": {
         "description": "The PCdoB logo features a hammer and sickle design representing communist ideology and the party's Marxist-Leninist heritage. The emblem symbolizes the party's commitment to workers' rights, class struggle, and socialist transformation. The red color reflects communist and socialist traditions, representing the party's revolutionary ideological foundation since its establishment in 1962.",
         "sources": [
@@ -8571,6 +8611,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/pv.svg",
       "sha256": "977821d6ff979d775fe2f016576ef158b3af256d232fc9c1c508ed1ce2cdff62",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Verde_Brasil_Logo.svg",
+      "coalitionId": "BR-FE",
       "logoMeaning": {
         "description": "The Partido Verde logo features a stylized green design symbolizing the party's core commitment to environmentalism and ecological preservation. The green color represents nature, sustainability, and the party's dedication to environmental protection and conservation. The emblem reflects the party's progressive stance on environmental issues and ecological responsibility in Brazilian politics.",
         "sources": [
