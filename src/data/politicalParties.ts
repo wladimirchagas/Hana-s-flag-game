@@ -258,15 +258,40 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "The Coalition agreement lapsed on 22 January 2026 and was re-formed on 8 February 2026; the Queensland LNP sits with both partners' party rooms.",
   },
+  "BR-PSOLREDE": {
+    id: "BR-PSOLREDE",
+    name: "Federação PSOL REDE",
+    nameEn: "PSOL REDE Federation",
+    kind: "federation",
+    memberPartyIds: ["BR-PSOL", "BR-REDE"],
+    source: {
+      title:
+        "PSOL REDE Federation — Wikipedia (federation of PSOL and Rede Sustentabilidade, registered 17 May 2022; the Chamber counts its 16 seats as one bloc)",
+      url: "https://en.wikipedia.org/wiki/PSOL_REDE_Federation",
+    },
+  },
+  "BR-RS": {
+    id: "BR-RS",
+    name: "Federação Renovação Solidária",
+    nameEn: "Solidary Renewal Federation",
+    kind: "federation",
+    memberPartyIds: ["BR-SOLIDARIEDADE", "BR-PRD"],
+    source: {
+      title:
+        "Solidary Renewal Federation — Wikipedia (federation of Solidariedade and PRD, formed 25 June 2025)",
+      url: "https://en.wikipedia.org/wiki/Solidary_Renewal_Federation",
+    },
+  },
   "BR-FE": {
     id: "BR-FE",
-    name: "Frente Ampla",
+    name: "Federação Brasil da Esperança",
     nameEn: "Brazil of Hope",
     kind: "federation",
     memberPartyIds: ["BR-PT", "BR-PCDOB", "BR-PV"],
     source: {
-      title: "Frente Ampla (Brazil) — Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Frente_Ampla_(Brazil)",
+      title:
+        "Brazil of Hope — Wikipedia (Federação Brasil da Esperança: PT, PCdoB and PV, registered 2022)",
+      url: "https://en.wikipedia.org/wiki/Brazil_of_Hope",
     },
   },
   "BR-UP": {
@@ -276,19 +301,21 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     kind: "federation",
     memberPartyIds: ["BR-UNIAO", "BR-PP"],
     source: {
-      title: "União Progressista — Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Union%C3%A3o_Progressista",
+      title:
+        "Progressive Union (Brazil) — Wikipedia (União Progressista: União Brasil and Progressistas, formed 29 April 2025)",
+      url: "https://en.wikipedia.org/wiki/Progressive_Union_(Brazil)",
     },
   },
   "BR-AF": {
     id: "BR-AF",
-    name: "Sempre Frente",
-    nameEn: "Always Forward",
+    name: "Federação PSDB Cidadania",
+    nameEn: "PSDB Cidadania Federation",
     kind: "federation",
     memberPartyIds: ["BR-PSDB", "BR-CIDADANIA"],
     source: {
-      title: "Sempre Frente — Wikipedia",
-      url: "https://en.wikipedia.org/wiki/Sempre_Frente",
+      title:
+        "PSDB Cidadania Federation — Wikipedia (also contesting elections as Federação Sempre pra Frente; programme registered by the Superior Electoral Court 26 May 2022)",
+      url: "https://en.wikipedia.org/wiki/Always_Forward_(Brazil)",
     },
     note: "Cidadania voted to end membership in 2026",
   },
@@ -8390,6 +8417,109 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "BR": [
     {
+      "id": "BR-PL",
+      "country": "BR",
+      "shortName": "PL",
+      "name": "Partido Liberal",
+      "nameEn": "Liberal Party",
+      "logo": "party-logos/br/pl.svg",
+      "sha256": "190e2a70a1d2237ce4a3c0b532894a8209b5b5f88a09597b80f992ec9c98b391",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Liberal_(Brazil)_logo.svg",
+      "ideology": [
+        "Bolsonarism",
+        "National conservatism",
+        "Right-wing populism",
+        "Economic liberalism",
+        "Christian right"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2006,
+      "leader": "Valdemar Costa Neto",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 98,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Liberal Party — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Party_(Brazil,_2006)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        }
+      ]
+    },
+    {
+      "id": "BR-PT",
+      "country": "BR",
+      "shortName": "PT",
+      "name": "Partido dos Trabalhadores",
+      "nameEn": "Workers' Party",
+      "logo": "party-logos/br/pt.svg",
+      "sha256": "5014ff66de5112a46de044dfd22a60226feccc98a3aeaa57fd08f6f18e8d6be5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_do_Partido_dos_Trabalhadores.svg",
+      "ideology": [
+        "Democratic socialism",
+        "Social democracy",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left",
+      "founded": 1980,
+      "coalitionId": "BR-FE",
+      "leader": "Edinho Silva",
+      "leaderTitle": "National President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2023-present",
+      "seats": 64,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "logoMeaning": {
+        "description": "The Workers' Party logo features a red geometric design representing the party's socialist heritage and commitment to workers' rights. The red color symbolizes solidarity with the labor movement and left-wing ideological commitments. The modern geometric style reflects the party's contemporary approach to social democracy and progressive change in Brazil.",
+        "sources": [
+          {
+            "title": "Workers' Party (Brazil) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Workers'_Party_(Brazil)"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Workers' Party (Brazil) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Workers'_Party_(Brazil)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
+        }
+      ]
+    },
+    {
       "id": "BR-UNIAO",
       "country": "BR",
       "shortName": "UNIÃO",
@@ -8398,7 +8528,22 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/uniao.svg",
       "sha256": "b50493f337436557e257d28c5f5124eb7173cf70dabae8daf02fbad730aed093",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Uni%C3%A3o_Brasil_logo.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Economic liberalism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2021,
       "coalitionId": "BR-UP",
+      "leader": "Antônio Rueda",
+      "leaderTitle": "National President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 52,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The União Brasil logo features a stylized shield design representing unity and national strength. The logo incorporates the party's founding principle of bringing together different political forces to create a centrist coalition. The geometric design reflects the party's modern, pragmatic approach to Brazilian politics and its centrist positioning.",
         "sources": [
@@ -8408,21 +8553,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Liberal conservatism",
-        "Economic liberalism",
-        "Social conservatism"
-      ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 2021,
-      "leader": "Antônio Rueda",
-      "leaderTitle": "National President",
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 58,
-      "seatsTotal": 513,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "União Brasil — Wikipedia",
@@ -8431,6 +8561,22 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Antônio Rueda Wikipedia article",
           "url": "https://en.wikipedia.org/wiki/Ant%C3%B4nio_Rueda"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
         }
       ]
     },
@@ -8442,7 +8588,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Social Democratic Party",
       "logo": "party-logos/br/psd.svg",
       "sha256": "da583d46a5d5a373bb8a3d2831b9f4923df8fd303585ce8179ea1a77a9d7384e",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSD_Logo.svg",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSD_Brazil_logo.svg",
+      "ideology": [
+        "Economic liberalism",
+        "Big tent"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2011,
+      "leader": "Gilberto Kassab",
+      "leaderTitle": "National President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 48,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The PSD logo features a modernist design representing the party's commitment to social democracy and progressive governance. The stylized emblem reflects the party's centrist positioning and emphasis on institutional reform and democratic participation. The design captures the party's focus on pragmatic social democratic policies in Brazil.",
         "sources": [
@@ -8452,24 +8612,26 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Social democracy",
-        "Progressivism"
-      ],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre",
-      "founded": 1945,
-      "leader": "Gilberto Kassab",
-      "leaderTitle": "National President",
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 43,
-      "seatsTotal": 513,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Brazilian Democratic Movement — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Brazilian_Democratic_Movement"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
         }
       ]
     },
@@ -8481,8 +8643,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Progressives",
       "logo": "party-logos/br/pp.svg",
       "sha256": "0dde6bf9bc3e36bf3678d0fd842b5761349ab6f5e3993f5e918e84457a764a17",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Progressistas_logo.svg",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Progressistas_(Brazil)_logo.svg",
+      "ideology": [
+        "Conservative liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1995,
       "coalitionId": "BR-UP",
+      "leader": "Ciro Nogueira",
+      "leaderTitle": "National President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 46,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The Progressistas logo features a modernist design representing the party's commitment to progressive governance and centrism. The emblem symbolizes the party's pragmatic approach to Brazilian politics and its emphasis on institutional development. The design reflects the party's long history in Brazilian centrist politics since its founding in 1965.",
         "sources": [
@@ -8492,23 +8667,26 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Centrism",
-        "Social liberalism"
-      ],
-      "ideologyPosition": "centre",
-      "founded": 1965,
-      "leader": "Ciro Nogueira",
-      "leaderTitle": "National President",
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 41,
-      "seatsTotal": 513,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Progressistas — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Progressistas"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
         }
       ]
     },
@@ -8520,7 +8698,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Republicans",
       "logo": "party-logos/br/republicanos.svg",
       "sha256": "4333b8fa16ab411bf73c90e67cc055926bc0f37b2b191e5b8d7ea2c606c74d9a",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Republicanos_logo.svg",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Republicanos_(Brazil)_wordmark.svg",
+      "ideology": [
+        "Right-wing populism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2003,
+      "leader": "Marcos Pereira",
+      "leaderTitle": "National President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 42,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The Republicanos logo features a stylized eagle design symbolizing the party's nationalist and conservative values. The emblem represents strength, freedom, and republican ideals rooted in Brazilian civic values. The design reflects the party's right-wing conservative positioning and emphasis on social and moral values in Brazilian politics.",
         "sources": [
@@ -8530,24 +8722,26 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Right-wing populism",
-        "Social conservatism"
-      ],
-      "ideologyPosition": "right",
-      "positionRaw": "Right",
-      "founded": 1989,
-      "leader": "Marcos Pereira",
-      "leaderTitle": "National President",
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 41,
-      "seatsTotal": 513,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Republicanos — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Republicanos_(Brazil)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
         }
       ]
     },
@@ -8559,7 +8753,23 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Brazilian Democratic Movement",
       "logo": "party-logos/br/mdb.svg",
       "sha256": "d610a2dc81ec7c18b798f5e2a7c075d8f56d6661f3b8929ea5ae9c5db82f1a5e",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MDB_Logo.svg",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Brazilian_Democratic_Movement_logo.svg",
+      "ideology": [
+        "Economic liberalism",
+        "Neoliberalism",
+        "Christian democracy",
+        "Big tent"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1966,
+      "leader": "Baleia Rossi",
+      "leaderTitle": "National President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 38,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The MDB logo features a stylized design incorporating the party's initials in a modern, centrist aesthetic. The blue color represents institutional stability and democratic governance. As Brazil's largest centrist party, the MDB emblem reflects its pragmatic approach to Brazilian politics and commitment to democratic institutions and dialogue.",
         "sources": [
@@ -8569,23 +8779,26 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Centrism",
-        "Pragmatism"
-      ],
-      "ideologyPosition": "centre",
-      "founded": 1966,
-      "leader": "Baleia Rossi",
-      "leaderTitle": "National President",
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 38,
-      "seatsTotal": 513,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Movimento Democrático Brasileiro — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Movimento_Democr%C3%A1tico_Brasileiro"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
         }
       ]
     },
@@ -8598,6 +8811,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/br/podemos.svg",
       "sha256": "f23f7fd47cc0f38ec15f7ed518e14249438ae9921269951900bc2b5500e04343",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Podemos_(Brasil)_logo.svg",
+      "ideology": [
+        "Economic liberalism",
+        "Anti-corruption"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1995,
+      "leader": "Renata Abreu",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 27,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The Podemos logo features a rising sun or star design symbolizing hope, progress, and the belief that positive change is possible. The emblem represents the party's grassroots democratic movement for political transformation. The upward-pointing rays emphasize the party's commitment to social democracy, progressivism, and environmental sustainability in Brazil.",
         "sources": [
@@ -8607,24 +8834,22 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Social democracy",
-        "Progressivism",
-        "Environmentalism"
-      ],
-      "ideologyPosition": "left",
-      "founded": 2015,
-      "leader": "Ciro Gomes",
-      "leaderTitle": "National President",
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 11,
-      "seatsTotal": 513,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Podemos (Brazil) — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Podemos_(Brazil)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
         }
       ]
     },
@@ -8636,8 +8861,23 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Brazilian Social Democracy Party",
       "logo": "party-logos/br/psdb.svg",
       "sha256": "4b6a27ad9fc593808ac26e7d4c8b6f2dac549cdbb30cbdfa6f1b58bd7d7d23ef",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSDB_Logo.svg",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Brazilian_Social_Democracy_Party_(2023).svg",
+      "ideology": [
+        "Third Way",
+        "Social liberalism",
+        "Neoliberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1988,
       "coalitionId": "BR-AF",
+      "leader": "Aécio Neves",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 18,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The PSDB logo features a blue and orange design representing the party's centrist positioning and commitment to social democracy in Brazil. The colors symbolize optimism and institutional stability. The stylized emblem reflects the party's commitment to democratic governance and progressive liberal economic policies.",
         "sources": [
@@ -8647,108 +8887,126 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Social democracy",
-        "Liberalism"
-      ],
-      "ideologyPosition": "centre",
-      "founded": 1988,
-      "leader": "Bruno Araújo",
-      "leaderTitle": "National President",
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 33,
-      "seatsTotal": 513,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Brazilian Social Democracy Party — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Brazilian_Social_Democracy_Party"
-        }
-      ]
-    },
-    {
-      "id": "BR-CIDADANIA",
-      "country": "BR",
-      "shortName": "CIDADANIA",
-      "name": "Cidadania",
-      "nameEn": "Citizenship",
-      "logo": "party-logos/br/cidadania.svg",
-      "sha256": "655c2fe1d87c7ef57a7a4339b6d87d951d6bd032b646588914ccdd1b760d2d09",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Cidadania_Logo.svg",
-      "coalitionId": "BR-AF",
-      "logoMeaning": {
-        "description": "The Cidadania logo features a stylized human figure or geometric design representing the party's emphasis on citizenship and democratic participation. The emblem symbolizes social inclusion, civic engagement, and the party's centre-left commitment to social democratic values and human development. The design reflects the party's focus on citizenship rights and social responsibility in Brazil.",
-        "sources": [
-          {
-            "title": "Cidadania (Brazil) — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Cidadania_(Brazil)"
-          }
-        ]
-      },
-      "ideology": [
-        "Social democracy",
-        "Centrism"
-      ],
-      "ideologyPosition": "centre-left",
-      "founded": 1988,
-      "leader": "Roberto Freire",
-      "leaderTitle": "National President",
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 9,
-      "seatsTotal": 513,
-      "chamberName": "Chamber of Deputies",
-      "sources": [
+        },
         {
-          "title": "Cidadania (Brazil) — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Cidadania_(Brazil)"
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
         }
       ]
     },
     {
-      "id": "BR-PT",
+      "id": "BR-PSB",
       "country": "BR",
-      "shortName": "PT",
-      "name": "Partido dos Trabalhadores",
-      "nameEn": "Workers' Party",
-      "logo": "party-logos/br/pt.svg",
-      "sha256": "5014ff66de5112a46de044dfd22a60226feccc98a3aeaa57fd08f6f18e8d6be5",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PT_Brasil_Logo.svg",
-      "coalitionId": "BR-FE",
-      "logoMeaning": {
-        "description": "The Workers' Party logo features a red geometric design representing the party's socialist heritage and commitment to workers' rights. The red color symbolizes solidarity with the labor movement and left-wing ideological commitments. The modern geometric style reflects the party's contemporary approach to social democracy and progressive change in Brazil.",
-        "sources": [
-          {
-            "title": "Workers' Party (Brazil) — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Workers'_Party_(Brazil)"
-          }
-        ]
-      },
+      "shortName": "PSB",
+      "name": "Partido Socialista Brasileiro",
+      "nameEn": "Brazilian Socialist Party",
+      "logo": "party-logos/br/psb.svg",
+      "sha256": "ce8b08d35e257793438253fbad36ce7ac27aa3748daa07ded0cbfa258e087868",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Brazilian_Socialist_Party_(wordmark_color).svg",
       "ideology": [
-        "Democratic socialism",
+        "Social liberalism",
         "Social democracy",
         "Progressivism"
       ],
-      "ideologyPosition": "left",
-      "positionRaw": "Left",
-      "founded": 1980,
-      "leader": "Edinho Silva",
-      "leaderTitle": "National President",
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1989,
+      "leader": "João Henrique Campos",
+      "leaderTitle": "President",
       "inPower": true,
       "inExecutive": true,
-      "timeInPower": "2023-present",
-      "seats": 64,
+      "seats": 17,
       "seatsTotal": 513,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Workers' Party (Brazil) - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Workers'_Party_(Brazil)"
+          "title": "Brazilian Socialist Party — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Brazilian_Socialist_Party"
         },
         {
-          "title": "Bancadas Atuais - Portal da Câmara dos Deputados",
-          "url": "https://www.camara.leg.br/deputados/liderancas-e-bancadas-partidarias/bancadas-atuais"
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
+        }
+      ]
+    },
+    {
+      "id": "BR-PSOL",
+      "country": "BR",
+      "shortName": "PSOL",
+      "name": "Partido Socialismo e Liberdade",
+      "nameEn": "Socialism and Liberty Party",
+      "logo": "party-logos/br/psol.svg",
+      "sha256": "17072b12f62fd5443b9e15e3f964bb8ecef9192d19d8e31cfe241b319b5bc537",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PSOL_roxo.svg",
+      "ideology": [
+        "Democratic socialism",
+        "Progressivism",
+        "LGBTQ+ rights"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 2004,
+      "coalitionId": "BR-PSOLREDE",
+      "leader": "Paula Coradi",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 13,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "logoMeaning": {
+        "description": "The PSOL logo features a red and stylized design representing the party's democratic socialist and progressive commitments. The emblem symbolizes liberation, social justice, and the party's strong advocacy for LGBTQ+ rights, workers' rights, and social equality. The red color reflects socialist traditions, while the modern design emphasizes the party's contemporary approach to leftist politics and social transformation.",
+        "sources": [
+          {
+            "title": "Socialism and Freedom Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Socialism_and_Freedom_Party"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Socialism and Freedom Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Socialism_and_Freedom_Party"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
         }
       ]
     },
@@ -8760,8 +9018,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Communist Party of Brazil",
       "logo": "party-logos/br/pcdob.svg",
       "sha256": "0fb1a3813ff9d4b47e904f4b0ec6b9a2ac8e763be2a354afa5895e4826fe4464",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PCdoB_Logo.svg",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PCdoB_logo.svg",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism"
+      ],
+      "ideologyPosition": "far-left",
+      "founded": 1962,
       "coalitionId": "BR-FE",
+      "leader": "Luciana Santos",
+      "leaderTitle": "National President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 11,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The PCdoB logo features a hammer and sickle design representing communist ideology and the party's Marxist-Leninist heritage. The emblem symbolizes the party's commitment to workers' rights, class struggle, and socialist transformation. The red color reflects communist and socialist traditions, representing the party's revolutionary ideological foundation since its establishment in 1962.",
         "sources": [
@@ -8771,23 +9042,75 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Communism",
-        "Marxism–Leninism"
-      ],
-      "ideologyPosition": "far-left",
-      "founded": 1962,
-      "leader": "Luciana Santos",
-      "leaderTitle": "National President",
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 6,
-      "seatsTotal": 513,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Communist Party of Brazil — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Brazil"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
+        }
+      ]
+    },
+    {
+      "id": "BR-PDT",
+      "country": "BR",
+      "shortName": "PDT",
+      "name": "Partido Democrático Trabalhista",
+      "nameEn": "Democratic Labour Party",
+      "logo": "party-logos/br/pdt.png",
+      "sha256": "4d5863261c765807a3529e3402e58f428641c6747717ef0779fd39aa4a3ed7ac",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PDT_logo_2026.png",
+      "ideology": [
+        "Social democracy",
+        "Social liberalism",
+        "Democratic socialism",
+        "Labourism",
+        "Getulism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1979,
+      "leader": "Carlos Lupi",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 9,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Democratic Labour Party — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Labour_Party_(Brazil)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
         }
       ]
     },
@@ -8799,8 +9122,22 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Green Party",
       "logo": "party-logos/br/pv.svg",
       "sha256": "977821d6ff979d775fe2f016576ef158b3af256d232fc9c1c508ed1ce2cdff62",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Verde_Brasil_Logo.svg",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logomarca_do_Partido_Verde.svg",
+      "ideology": [
+        "Environmentalism",
+        "Progressivism",
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "founded": 1986,
       "coalitionId": "BR-FE",
+      "leader": "José Luiz Penna",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 6,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The Partido Verde logo features a stylized green design symbolizing the party's core commitment to environmentalism and ecological preservation. The green color represents nature, sustainability, and the party's dedication to environmental protection and conservation. The emblem reflects the party's progressive stance on environmental issues and ecological responsibility in Brazilian politics.",
         "sources": [
@@ -8810,71 +9147,388 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": [
-        "Environmentalism",
-        "Progressivism",
-        "Liberalism"
-      ],
-      "ideologyPosition": "centre-left",
-      "founded": 1986,
-      "leader": "Sâmia Bomfim",
-      "leaderTitle": "National President",
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 8,
-      "seatsTotal": 513,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
           "title": "Green Party (Brazil) — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Green_Party_(Brazil)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
         }
       ]
     },
     {
-      "id": "BR-PSOL",
+      "id": "BR-NOVO",
       "country": "BR",
-      "shortName": "PSOL",
-      "name": "Partido Socialismo e Liberdade",
-      "nameEn": "Socialism and Freedom Party",
-      "logo": "party-logos/br/psol.svg",
-      "sha256": "17072b12f62fd5443b9e15e3f964bb8ecef9192d19d8e31cfe241b319b5bc537",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSOL_Logo.svg",
-      "logoMeaning": {
-        "description": "The PSOL logo features a red and stylized design representing the party's democratic socialist and progressive commitments. The emblem symbolizes liberation, social justice, and the party's strong advocacy for LGBTQ+ rights, workers' rights, and social equality. The red color reflects socialist traditions, while the modern design emphasizes the party's contemporary approach to leftist politics and social transformation.",
-        "sources": [
-          {
-            "title": "Socialism and Freedom Party — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Socialism_and_Freedom_Party"
-          }
-        ]
-      },
+      "shortName": "NOVO",
+      "name": "Partido Novo",
+      "nameEn": "New Party",
+      "logo": "party-logos/br/novo.svg",
+      "sha256": "3cffc9f1c2da3185aaab2fbfeb86f2472d84f23fb66f590fff365d48b36ed253",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Novo_logo_(2023).svg",
       "ideology": [
-        "Democratic socialism",
-        "Progressivism",
-        "LGBTQ+ rights"
+        "Conservative liberalism",
+        "Libertarian conservatism",
+        "Libertarianism"
       ],
-      "ideologyPosition": "left",
-      "founded": 2004,
-      "leader": "Edmilson Rodrigues",
-      "leaderTitle": "National President",
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2011,
+      "leader": "Eduardo Rodrigo Fernandes Ribeiro",
+      "leaderTitle": "President",
       "inPower": false,
       "inExecutive": false,
-      "seats": 12,
+      "seats": 5,
       "seatsTotal": 513,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Socialism and Freedom Party — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Socialism_and_Freedom_Party"
+          "title": "New Party — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/New_Party_(Brazil)"
         },
         {
-          "title": "Bancadas Atuais - Portal da Câmara dos Deputados",
-          "url": "https://www.camara.leg.br/deputados/liderancas-e-bancadas-partidarias/bancadas-atuais"
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
         },
         {
-          "title": "Kataguiri anuncia saída do União Brasil para ingressar no Missão - Gazeta do Povo",
-          "url": "https://www.gazetadopovo.com.br/republica/kim-kataguiri-anuncia-saida-do-uniao-brasil-para-o-partido-do-mbl/"
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        }
+      ]
+    },
+    {
+      "id": "BR-AVANTE",
+      "country": "BR",
+      "shortName": "Avante",
+      "name": "Avante",
+      "logo": "party-logos/br/avante.svg",
+      "sha256": "52a1061241f791d7f3275f9e9b0c6e1ae15fbd5a0034d08589ff6d9a8f4793a8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Avante_70_(Brasil)_logo.svg",
+      "ideology": [
+        "Labourism",
+        "Christian solidarism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1989,
+      "leader": "Luis Tibé",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 5,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Avante — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Avante_(political_party)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
+        }
+      ]
+    },
+    {
+      "id": "BR-SOLIDARIEDADE",
+      "country": "BR",
+      "shortName": "Solidariedade",
+      "name": "Solidariedade",
+      "nameEn": "Solidarity",
+      "logo": "party-logos/br/solidariedade.svg",
+      "sha256": "60b788b35b9ff402229dcb995d78b39fc5f9835d9d930126d70d67347dd691a9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Solidariedade_77_(Brasil)_logo.svg",
+      "ideology": [
+        "Social democracy",
+        "Third Way",
+        "Labourism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2012,
+      "coalitionId": "BR-RS",
+      "leader": "Paulo Pereira da Silva",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 4,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Solidarity — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Solidarity_(Brazil)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
+        }
+      ]
+    },
+    {
+      "id": "BR-REDE",
+      "country": "BR",
+      "shortName": "REDE",
+      "name": "Rede Sustentabilidade",
+      "nameEn": "Sustainability Network",
+      "logo": "party-logos/br/rede.svg",
+      "sha256": "68a0c909407889b14b429182d02559bc96dd60846e0fbf81b22eeeacc444c53e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Rede_Sustentabilidade_logo.svg",
+      "ideology": [
+        "Environmentalism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Social: left-wing; fiscal: right-wing",
+      "founded": 2013,
+      "coalitionId": "BR-PSOLREDE",
+      "leader": "Heloísa Helena",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 3,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Sustainability Network — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Sustainability_Network"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        },
+        {
+          "title": "Second cabinet of Lula da Silva — Wikipedia (Supporting parties table and the cabinet's own party key: ministries held per party)",
+          "url": "https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva"
+        }
+      ]
+    },
+    {
+      "id": "BR-PRD",
+      "country": "BR",
+      "shortName": "PRD",
+      "name": "Partido Renovação Democrática",
+      "nameEn": "Democratic Renewal Party",
+      "logo": "party-logos/br/prd.svg",
+      "sha256": "44255e82045f3ee9c8ae35f445f470dc280cde5ad422600e5d23dfc577375219",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Renova%C3%A7%C3%A3o_Democr%C3%A1tica_logo.svg",
+      "ideology": [
+        "National conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2022,
+      "coalitionId": "BR-RS",
+      "leader": "Marcus Vinícius Neskau",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 3,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Democratic Renewal Party — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Renewal_Party_(Brazil)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        }
+      ]
+    },
+    {
+      "id": "BR-CIDADANIA",
+      "country": "BR",
+      "shortName": "CIDADANIA",
+      "name": "Cidadania",
+      "nameEn": "Citizenship",
+      "logo": "party-logos/br/cidadania.svg",
+      "sha256": "655c2fe1d87c7ef57a7a4339b6d87d951d6bd032b646588914ccdd1b760d2d09",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Cidadania_(Brasil)_logo.svg",
+      "ideology": [
+        "Social liberalism",
+        "Parliamentarism",
+        "Federalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1992,
+      "coalitionId": "BR-AF",
+      "leader": "Comte Bittencourt",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 2,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "logoMeaning": {
+        "description": "The Cidadania logo features a stylized human figure or geometric design representing the party's emphasis on citizenship and democratic participation. The emblem symbolizes social inclusion, civic engagement, and the party's centre-left commitment to social democratic values and human development. The design reflects the party's focus on citizenship rights and social responsibility in Brazil.",
+        "sources": [
+          {
+            "title": "Cidadania (Brazil) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cidadania_(Brazil)"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Cidadania (Brazil) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cidadania_(Brazil)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        }
+      ]
+    },
+    {
+      "id": "BR-DC",
+      "country": "BR",
+      "shortName": "DC",
+      "name": "Democracia Cristã",
+      "nameEn": "Christian Democracy",
+      "logo": "party-logos/br/dc.svg",
+      "sha256": "6e8a13e954e943ab6bac60852a2c4bac268230c68dd1780a405121d66d8b1bbd",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logomarca_Democracia_Crist%C3%A3.svg",
+      "ideology": [
+        "Christian democracy",
+        "Catholic social teaching",
+        "Paternalistic conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1995,
+      "leader": "João Caldas",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 1,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Christian Democracy — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democracy_(Brazil)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
+        }
+      ]
+    },
+    {
+      "id": "BR-MISSAO",
+      "country": "BR",
+      "shortName": "MISSÃO",
+      "name": "Missão",
+      "nameEn": "Mission Party",
+      "logo": "party-logos/br/missao.svg",
+      "sha256": "f95e55b050d8248f390c1cfb8fba91655e4b46931a930de161b305a134451bf3",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MISS%C3%83O_wordmark.svg",
+      "ideology": [
+        "Conservative liberalism",
+        "Economic liberalism",
+        "Bukelism",
+        "Law and order"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2023,
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 1,
+      "seatsTotal": 513,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Mission Party — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Mission_Party_(Brazil)"
+        },
+        {
+          "title": "Câmara dos Deputados — Dados Abertos, /deputados (current bench: 513 deputies by party, retrieved 11 September 2026)",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/deputados"
+        },
+        {
+          "title": "Câmara dos Deputados — Bancada atual",
+          "url": "https://www.camara.leg.br/deputados/bancada-atual"
+        },
+        {
+          "title": "Chamber of Deputies (Brazil) — Wikipedia (political groups: Government 207, Opposition 151, Independent 158)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Brazil)"
         }
       ]
     }
