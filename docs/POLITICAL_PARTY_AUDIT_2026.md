@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 12 / 195.**
+**Countries audited: 13 / 195 — Southeast Asia complete.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -58,6 +58,7 @@ forgotten; it is tracked here.
 | 🇰🇭 Cambodia | `#1322` | 2 → 2 | 125 / 125 | **WRONG — S1 (unidentified logo, wrong leader)** |
 | 🇱🇦 Laos | `#1323` | 1 → 1 | 169 / 175 | **STALE — a whole parliament behind** |
 | 🇧🇳 Brunei | `#1324` | **3 → 0 (removed)** | n/a | **FABRICATED REPRESENTATION — S1** |
+| 🇹🇱 Timor-Leste | `#1325` | 5 → 5 | 65 / 65 | **WRONG — S1 (an audio file as a logo)** |
 
 ---
 
@@ -417,6 +418,27 @@ with no console errors. A country with no party data degrades cleanly by design.
 **This closes 3 of the 19 zero-seat entries in defect B3.** The remaining 16 are checked as their
 countries come up.
 
+### 🇹🇱 Timor-Leste — audited 2026-09-11 · **Southeast Asia complete**
+
+Every seat figure was already correct (CNRT 31, FRETILIN 19, PD 6, KHUNTO 5, PLP 4 = 65), as were
+the government/opposition flags. **Three of the five logos were the wrong image, including one that
+was not an image at all.**
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-057 | **S1** | `TL-FRETILIN.logo` | **an Ogg Vorbis audio file** — a Voice of America clip of someone *pronouncing* the word "Fretilin", renamed `fretilin.svg` | the party's emblem (fist and star, *Frente Revolucionária do Timor-Leste Independente*) | `file(1)` reported `Ogg data, Vorbis audio, stereo, 44100 Hz`. It was live, rendering as a broken image |
+| PP-058 | **S1** | `TL-CNRT.logo` | **"CNRT — CONTROL DEL TRANSPORTE"**, a Spanish transport-control company | the National Congress for Timorese Reconstruction's own emblem | Acronym collision, rendered and confirmed |
+| PP-059 | **S1** | `TL-PD.logo` | **a yellow handheld games console** (a Playdate) | the Partido Democrático's blue roundel | "PD" collision, rendered and confirmed |
+| PP-060 | **S2** | `TL-FRETILIN.leader` | Francisco Guterres (Lú-Olo), as President | **Mari Alkatiri, Secretary-General** | FRETILIN's infobox now records its presidency as `TBD`; the Secretary-General is the sourced office-holder, so the entry names the office that actually exists |
+| PP-061 | **S2** | file types | `cnrt.svg` was PNG bytes; `plp.svg` replaced by the party's own file | all extensions now match their bytes | Same `.svg`-on-not-SVG defect as Cambodia and Laos |
+
+**Five wrong logos in thirteen countries — and every one was an acronym or name collision.**
+pans & COMPANY for PAN, an unidentified magenta mark for the CPP, a transport firm for CNRT, a
+games console for PD, and an audio clip for FRETILIN. This is the **Misiones bug** the repo's flag
+rules were written for, reproduced wholesale in the party data. It is also why the loop now ends
+with rendering every logo: four of the five passed a Commons or Wikipedia lookup, and three of them
+were freely licensed. **Provenance proves where bytes came from; only looking proves what they are.**
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -440,7 +462,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `KH` Cambodia — merged
 - [x] `LA` Laos — merged
 - [x] `BN` Brunei — audited, removed as out of scope
-- [ ] `TL` Timor-Leste
+- [x] `TL` Timor-Leste — merged
 
 ### Phase 3 — rest of South America (11)
 
