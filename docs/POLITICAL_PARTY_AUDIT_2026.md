@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 14 / 195 — Southeast Asia complete; South America under way.**
+**Countries audited: 15 / 195 — Southeast Asia complete; South America under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -60,6 +60,7 @@ forgotten; it is tracked here.
 | 🇧🇳 Brunei | `#1324` | **3 → 0 (removed)** | n/a | **FABRICATED REPRESENTATION — S1** |
 | 🇹🇱 Timor-Leste | `#1325` | 5 → 5 | 65 / 65 | **WRONG — S1 (an audio file as a logo)** |
 | 🇦🇷 Argentina | `#1326` | 19 → 19 | 257 / 257 | **NEARLY CURRENT — one rename missed** |
+| 🇨🇱 Chile | `#1327` | 7 → 14 | 151 / 155 | **WRONG — a whole parliament and government** |
 
 ---
 
@@ -464,6 +465,35 @@ rule forbids. Recheck when a source lists the bloc's membership.
 an existing choice and it matches how the chamber itself reports composition; it is noted so a later
 reviewer knows it is deliberate.
 
+### 🇨🇱 Chile — audited 2026-09-11
+
+The entry described **a parliament and a government that no longer exist.** It held seven parties
+and 132 of 155 seats with Gabriel Boric's Frente Amplio governing; the **16 November 2025 general
+election** produced a new chamber and a new, right-wing government.
+
+Verified against the [Chamber of Deputies](https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile):
+Government 67 (Republicans 31, UDI 18, the RN group 16, 2 independents), supported by 8 (PNL),
+independents 15 (PDG), opposition 65 — 155 in total.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-064 | **S1** | whole country | 7 parties, 132 / 155, Frente Amplio in government | **14 parties, 151 / 155**, Republicans/UDI/RN/Evópoli/Demócratas in government | Every seat figure superseded by the 2025 election |
+| PP-065 | **S1** | `CL-PRCH.logo` | **the Republican Party's logo**, filed as the **Radical Party's** | each party's own emblem; the Republican logo now sits on the new `CL-REP` entry where it belongs | SHA-1 matched `Republican_Party_of_Chile_logo.svg`. Opposite ends of Chilean politics |
+| PP-066 | **S1** | `CL-UDI.logo` | **the FRENCH UDI's logo** — *"udi · union des démocrates et indépendants"* | Chile's own Unión Demócrata Independiente logo | SHA-1 matched Commons `UDI_logo.svg` (France). The correct Chilean file **was already bundled** as `udi.png` |
+| PP-067 | **S2** | `seats` | UDI 26, RN 18, PDC 16, PPD 12, PS 8, FA 49, PR 3 | 18, 13, 8, 10, 11, 18, 1 | Chamber composition |
+| PP-068 | **S3** | coverage | — | added Republicans 31, PDG 15, Communists 12, PNL 8, Liberals 3, Evópoli 2, Demócratas 1 | Seven parties absent entirely, including the **largest party in the chamber** |
+| PP-069 | **S2** | junk files | three stray `*.svg.sha256` text files in `public/` | deleted | Not images; they were being shipped to users' browsers as part of the static site |
+
+**Documented gap.** **FREVS** (Social Green Regionalist Federation, 2 seats) is **not added**: it has
+no logo on English *or* Spanish Wikipedia, and the gate requires one on every new entry. This is the
+**third** time a mandatory field has blocked a real seated party — `founded` in Thailand, `logo` in
+the Philippines, `logo` here — and the reason Chile reads 151/155 rather than 153/155 (the other
+2 seats are independents).
+
+**Seven wrong logos in fifteen countries, every one a name collision.** Chile contributed two of the
+starkest: a party's opponents' logo, and a French party's logo. Both were caught the same way —
+SHA-1 provenance, then rendering the image and looking at it.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -492,7 +522,7 @@ Tick a box only when that country's fix is **merged and live**.
 ### Phase 3 — rest of South America (11)
 
 - [x] `AR` Argentina — merged
-- [ ] `CL` Chile
+- [x] `CL` Chile — merged
 - [ ] `CO` Colombia
 - [ ] `PE` Peru
 - [ ] `VE` Venezuela
