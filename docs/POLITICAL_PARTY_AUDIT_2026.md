@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 10 / 195.**
+**Countries audited: 11 / 195.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -56,6 +56,7 @@ forgotten; it is tracked here.
 | 🇵🇭 Philippines | `#1320` | 13 → 16 | 261 / 318 | **STALE — S2/S3** |
 | 🇸🇬 Singapore | `#1321` | 2 → 2 | 98 / 108 | **IMPOSSIBLE TOTAL — S1** |
 | 🇰🇭 Cambodia | `#1322` | 2 → 2 | 125 / 125 | **WRONG — S1 (unidentified logo, wrong leader)** |
+| 🇱🇦 Laos | `#1323` | 1 → 1 | 169 / 175 | **STALE — a whole parliament behind** |
 
 ---
 
@@ -369,6 +370,23 @@ followed by actually *looking* at the image, and neither was detectable from the
 A Commons match is necessary but not sufficient: `Cpp 2.png` is a real Commons file, freely
 licensed, and still the wrong picture. **Rendering every logo is now part of the per-country loop.**
 
+### 🇱🇦 Laos — audited 2026-09-11
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-051 | **S2** | `seats`, `seatsTotal` | 158 / 164 — the assembly elected in 2021 | **169 / 175** | A new National Assembly was elected **22 February 2026**: LPRP 169 and 6 independents, all within the Lao Front for National Development |
+| PP-052 | **S3** | `inExecutive` | absent | `true` | The LPRP is the sole governing party; Thongloun Sisoulith is both its General Secretary and President of Laos |
+| PP-053 | **S2** | file type + `logoSourceUrl` | `lprp.svg` was **PNG bytes with an `.svg` extension**, cited to `File:Emblem_of_the_Lao_People's_Revolutionary_Party.svg` — a different file | renamed `lprp.png`, cited to `File:LPRP_logo_red.png`, the Commons file whose SHA-1 matches | Third country where the recorded logo URL did not describe the bundled bytes |
+
+Leader (Thongloun Sisoulith) and founding year (22 March 1955) were checked and are correct; the
+logo was rendered and is the party's red hammer-and-sickle.
+
+**Pattern worth naming: the `.svg`-extension-on-PNG-bytes defect has now appeared in Cambodia (2
+files) and Laos (1).** It is invisible in the browser because content sniffing rescues it, and
+invisible to the gate because the check only verifies the sha256. Worth a mechanical sweep across
+all bundled party logos in a later structural PR — added to the deferred list with **B8** and the
+mandatory-field wall.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -390,7 +408,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `PH` Philippines — merged
 - [x] `SG` Singapore — merged
 - [x] `KH` Cambodia — merged
-- [ ] `LA` Laos
+- [x] `LA` Laos — merged
 - [ ] `BN` Brunei
 - [ ] `TL` Timor-Leste
 

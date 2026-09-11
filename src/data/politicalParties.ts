@@ -15096,29 +15096,34 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "LPRP",
       "name": "ພັກປະຊາຊົນປະຕິວັດລາວ",
       "nameEn": "Lao People's Revolutionary Party",
-      "logo": "party-logos/la/lprp.svg",
+      "logo": "party-logos/la/lprp.png",
       "sha256": "4a7120764a8d039303d2bede2a33feb030250e37cf6a5ac9e29a24602b3fb85f",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Lao_People%27s_Revolutionary_Party.svg",
-      "ideology": ["Communism", "Marxism–Leninism", "Kaysone Phomvihane Thought"],
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:LPRP_logo_red.png",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism",
+        "Kaysone Phomvihane Thought"
+      ],
       "ideologyPosition": "far-left",
       "positionRaw": "Far-left",
       "founded": 1955,
       "leader": "Thongloun Sisoulith",
       "leaderTitle": "General Secretary & President",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "1975–present",
-      "seats": 158,
-      "seatsTotal": 164,
-      "chamberName": "National Assembly (Sapha Heng Xat)",
+      "seats": 169,
+      "seatsTotal": 175,
+      "chamberName": "National Assembly",
       "logoMeaning": {
-      "description": "The emblem of the Lao People's Revolutionary Party features the crossed golden hammer and sickle on a red field, symbolising the revolutionary alliance of the working class and peasantry leading the Lao nation.",
-      "sources": [
-              {
-                      "title": "Lao People's Revolutionary Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Lao_People%27s_Revolutionary_Party"
-              }
-      ]
-},
+        "description": "The emblem of the Lao People's Revolutionary Party features the crossed golden hammer and sickle on a red field, symbolising the revolutionary alliance of the working class and peasantry leading the Lao nation.",
+        "sources": [
+          {
+            "title": "Lao People's Revolutionary Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Lao_People%27s_Revolutionary_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Lao People's Revolutionary Party — Wikipedia",
@@ -15127,6 +15132,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "National Assembly of the Lao People's Democratic Republic",
           "url": "https://na.gov.la/"
+        },
+        {
+          "title": "National Assembly of Laos — Wikipedia (175 members elected 22 February 2026: LPRP 169, independents 6, all within the Lao Front for National Development)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Laos)"
         }
       ]
     }
