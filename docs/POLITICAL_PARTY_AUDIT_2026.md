@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 9 / 195.**
+**Countries audited: 10 / 195.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -55,6 +55,7 @@ forgotten; it is tracked here.
 | 🇮🇩 Indonesia | `#1319` | 8 → 8 | **580 / 580** | **WRONG — S1 (wrong company's logo)** |
 | 🇵🇭 Philippines | `#1320` | 13 → 16 | 261 / 318 | **STALE — S2/S3** |
 | 🇸🇬 Singapore | `#1321` | 2 → 2 | 98 / 108 | **IMPOSSIBLE TOTAL — S1** |
+| 🇰🇭 Cambodia | `#1322` | 2 → 2 | 125 / 125 | **WRONG — S1 (unidentified logo, wrong leader)** |
 
 ---
 
@@ -352,6 +353,22 @@ said had **97**.
 Both seat figures, both leaders (Lawrence Wong; Pritam Singh) and both logos' provenance were
 checked and are correct.
 
+### 🇰🇭 Cambodia — audited 2026-09-11
+
+Seats were right (CPP 120, FUNCINPEC 5, of 125). Everything else about the CPP entry was not.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-047 | **S1** | `KH-CPP.logo` | **a magenta oval reading "CPP"** — Commons `File:Cpp 2.png`, which Commons itself files under **"Unidentified logos"** and "Self-published work" | the party's own emblem (the devata scattering flowers, wreathed in rice ears) as used by its article | SHA-1 provenance, then the Commons category, then a render. Second wrong-logo find of the sweep after Indonesia's restaurant chain |
+| PP-048 | **S1** | `KH-CPP.leader` | **Hun Manet**, titled "Prime Minister" | **Hun Sen**, President | Hun Manet is Prime Minister and a party vice-president; the CPP's president is Hun Sen. The field is the *party* leader |
+| PP-049 | **S2** | file type | `cpp.svg` and `funcinpec.svg` were **PNG bytes with an `.svg` extension** | renamed `.png` | `file(1)` on the bundled bytes. Browsers sniff content so they rendered, but the extension was false |
+| PP-050 | **S3** | `inExecutive` | absent | `true` on CPP | Cabinet of Hun Manet |
+
+**Method note — two wrong logos in ten countries.** Both were found by the SHA-1 provenance check
+followed by actually *looking* at the image, and neither was detectable from the recorded metadata.
+A Commons match is necessary but not sufficient: `Cpp 2.png` is a real Commons file, freely
+licensed, and still the wrong picture. **Rendering every logo is now part of the per-country loop.**
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -372,7 +389,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `ID` Indonesia — merged
 - [x] `PH` Philippines — merged
 - [x] `SG` Singapore — merged
-- [ ] `KH` Cambodia
+- [x] `KH` Cambodia — merged
 - [ ] `LA` Laos
 - [ ] `BN` Brunei
 - [ ] `TL` Timor-Leste
