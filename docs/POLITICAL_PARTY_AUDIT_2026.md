@@ -42,11 +42,12 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 1 / 195.**
+**Countries audited: 2 / 195.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
 | 🇦🇺 Australia | `#1313` | 3 → 9 | 142 / 150 | **STALE — S1** |
+| 🇲🇾 Malaysia | `#1314` | 22 → 22 | 212 / 222 | **CURRENT on seats — S2/S3 elsewhere** |
 
 ---
 
@@ -96,6 +97,49 @@ reached through its Wikipedia mirrors rather than directly; noted as a sourcing 
 logo painted (`img.complete && naturalWidth > 0` asserted for all nine), ALP badged *In-power*, and
 the three Coalition members badged *Liberal–National Coalition*. No console errors.
 
+### 🇲🇾 Malaysia — audited 2026-09-11
+
+The best-kept country in the dataset so far, and the first evidence that the survey's whole-dataset
+defects are not uniform: **every one of Malaysia's 22 seat figures already matched the chamber
+exactly.** The failures here were relational rather than numeric.
+
+Verified against the [Dewan Rakyat](https://en.wikipedia.org/wiki/Dewan_Rakyat) infobox's political
+groups (dated 10 August 2026 — Government 150, Opposition 69, vacant 3, of 222), the
+[Anwar Ibrahim cabinet](https://en.wikipedia.org/wiki/Anwar_Ibrahim_cabinet) member-parties table
+(ministers per party after the 17 December 2025 reshuffle), and all 22 parties' own infoboxes.
+
+Reconciliation of the chamber against the dataset, party by party:
+PH 76 (DAP 40, PKR 28, AMANAH 8) · BN 30 (UMNO 26, MCA 2, MIC 1, PBRS 1) · GPS 23 (PBB 14, PRS 5,
+PDP 2, SUPP 2) · GRS 7 (direct 4, UPKO 2, PBS 1) · WARISAN 3 · KDM 2 · STAR 1 · PBM 1 ·
+PN 49 (PAS 43, WAWASAN 6) · BERSATU 19 · MUDA 1. Every figure matched. The 10-seat gap to 222 is
+7 independents and 3 vacancies — correctly not modelled as parties.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-010 | **S2** | `MY-BERSATU.coalitionId` | `MY-PN` | *(removed)* | Bersatu is no longer counted inside Perikatan Nasional: PN's own affiliate list marks it **"disputed"**, and the Dewan Rakyat counts its 19 seats as a bloc of their own, outside PN's 49. `MY-PN`'s members are now PAS + WAWASAN, with the dispute recorded in the coalition's `note` |
+| PP-011 | **S3** | `inExecutive` | absent on all 22 | `true` on the 9 parties holding full cabinet portfolios — PKR (9 ministers), UMNO (7), DAP (5), PBB (3), AMANAH (2), PBRS, PDP, PRS, GRS (1 each) | The cabinet's own member-parties table. This is the first country-level fix for defect **B6** |
+| PP-012 | **S6** | `MY-GRS.ideologyPosition` | `other` (no `positionRaw`) | `centre`, `positionRaw: "Centre to centre-right"` | GRS's infobox does carry a sourced position; `other` was a placeholder, not a genuine absence |
+| PP-013 | — | seat citations | party articles only | every entry now also cites the Dewan Rakyat's dated composition | Closes the circular-citation risk: seats are cited to the chamber, not to the party describing itself |
+
+**Confirmed correct, and therefore left alone:** all 22 leaders (DAP's leader is its
+Secretary-General Anthony Loke, not the National Chairman — checked against the infobox's own title
+fields); the 18 `inPower` flags; every `founded` year; and the `previousNames` chains, including
+WAWASAN's rename from Parti Cinta Malaysia on 13 June 2026 and PBM's from Sarawak Workers Party.
+
+**Judgement calls.**
+
+1. **`inExecutive` means a full cabinet portfolio, not a deputy ministry.** SUPP, PBS and WARISAN
+   hold deputy ministries only and are recorded `inPower: true, inExecutive: false`. MCA and MIC sit
+   in the government with no portfolio at all. This reading is applied consistently from here on.
+2. **GRS is modelled as a party with 4 seats** even though it is also a coalition, because the
+   Dewan Rakyat itself counts 4 "GRS direct member" MPs who belong to no component party. The
+   `MY-GRS` coalition record and the `MY-GRS` party entry therefore coexist by design.
+3. **Bersatu is left with no coalition rather than being forced into PN.** Where a membership is
+   genuinely contested, recording no coalition and explaining why beats asserting either side.
+
+**Visual verification:** 22 cards, 21 logos asserted painted, PBM correctly rendering its "No free
+image" card, In-power and coalition badges correct, GRS now grouped under Centre. No console errors.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -105,7 +149,7 @@ Tick a box only when that country's fix is **merged and live**.
 ### Phase 1 — Australia, Malaysia, Brazil (3)
 
 - [x] `AU` Australia — merged
-- [ ] `MY` Malaysia
+- [x] `MY` Malaysia — merged
 - [ ] `BR` Brazil
 
 ### Phase 2 — rest of Southeast Asia (10)

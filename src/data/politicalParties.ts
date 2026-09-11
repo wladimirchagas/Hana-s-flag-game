@@ -206,11 +206,12 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     name: "Perikatan Nasional",
     nameEn: "National Alliance",
     kind: "coalition",
-    memberPartyIds: ["MY-PAS", "MY-WAWASAN", "MY-BERSATU"],
+    memberPartyIds: ["MY-PAS", "MY-WAWASAN"],
     source: {
       title: "Perikatan Nasional — Wikipedia",
       url: "https://en.wikipedia.org/wiki/Perikatan_Nasional",
     },
+    note: "BERSATU's membership is disputed: Perikatan Nasional lists it as an affiliate marked \"disputed\", and the Dewan Rakyat counts its 19 seats as a bloc of their own rather than inside PN's 49. It is therefore recorded here with no coalition.",
   },
   "TL-CNRT-PD": {
     id: "TL-CNRT-PD",
@@ -4782,16 +4783,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 1965,
+      "coalitionId": "MY-PH",
       "leader": "Anthony Loke",
       "leaderTitle": "Secretary-General",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2022–present, as part of the Pakatan Harapan-led Unity Government",
       "seats": 40,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-PH",
       "logoMeaning": {
-        "description": "DAP's rocket logo has been used since the 1969 general election. The red rocket symbolises the party's aspiration for a modern, dynamic and progressive society; the four rocket boosters represent the support and drive given to the party's objectives by the three major ethnic groups (Malay, Chinese, Indian) and others; the blue circle stands for the unity of Malaysia's multiracial people; and the white background stands for purity and incorruptibility.","sources": [
+        "description": "DAP's rocket logo has been used since the 1969 general election. The red rocket symbolises the party's aspiration for a modern, dynamic and progressive society; the four rocket boosters represent the support and drive given to the party's objectives by the three major ethnic groups (Malay, Chinese, Indian) and others; the blue circle stands for the unity of Malaysia's multiracial people; and the white background stands for purity and incorruptibility.",
+        "sources": [
           {
             "title": "Democratic Action Party — Party symbols",
             "url": "https://en.wikipedia.org/wiki/Democratic_Action_Party"
@@ -4810,6 +4813,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Anwar Ibrahim cabinet – Wikipedia (Member parties table: ministers appointed per party, after the 17 December 2025 reshuffle)",
+          "url": "https://en.wikipedia.org/wiki/Anwar_Ibrahim_cabinet"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -4830,16 +4841,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 1999,
+      "coalitionId": "MY-PH",
       "leader": "Anwar Ibrahim",
       "leaderTitle": "President",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2022–present, as part of the Pakatan Harapan-led Unity Government (Anwar Ibrahim is Prime Minister)",
       "seats": 28,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-PH",
       "logoMeaning": {
-        "description": "PKR's logo centres on a large white eye, widely understood as a reference to the black eye Anwar Ibrahim suffered from a police beating in custody in 1998 (an event that galvanised the Reformasi movement from which the party emerged); the eye shape is also read as depicting two crescent moons, an Islamic symbol.","sources": [
+        "description": "PKR's logo centres on a large white eye, widely understood as a reference to the black eye Anwar Ibrahim suffered from a police beating in custody in 1998 (an event that galvanised the Reformasi movement from which the party emerged); the eye shape is also read as depicting two crescent moons, an Islamic symbol.",
+        "sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -4854,6 +4867,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Anwar Ibrahim cabinet – Wikipedia (Member parties table: ministers appointed per party, after the 17 December 2025 reshuffle)",
+          "url": "https://en.wikipedia.org/wiki/Anwar_Ibrahim_cabinet"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -4880,16 +4901,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "years": "1978–2015"
         }
       ],
+      "coalitionId": "MY-PH",
       "leader": "Mohamad Sabu",
       "leaderTitle": "President",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2022–present, as part of the Pakatan Harapan-led Unity Government",
       "seats": 8,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-PH",
       "logoMeaning": {
-        "description": "AMANAH's logo uses a stylised letter 'A' (also read as an upward arrow) for the party's name; three stripes represent the values of Trust (Amanah), Progressiveness and Care; orange symbolises energy, success, friendship and determination, while white symbolises purity and morality.","sources": [
+        "description": "AMANAH's logo uses a stylised letter 'A' (also read as an upward arrow) for the party's name; three stripes represent the values of Trust (Amanah), Progressiveness and Care; orange symbolises energy, success, friendship and determination, while white symbolises purity and morality.",
+        "sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -4904,6 +4927,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Anwar Ibrahim cabinet – Wikipedia (Member parties table: ministers appointed per party, after the 17 December 2025 reshuffle)",
+          "url": "https://en.wikipedia.org/wiki/Anwar_Ibrahim_cabinet"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -4925,16 +4956,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
       "founded": 1946,
+      "coalitionId": "MY-BN",
       "leader": "Ahmad Zahid Hamidi",
       "leaderTitle": "President",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2022–present as part of the Unity Government (via Barisan Nasional); UMNO/BN led the federal government almost continuously from independence (1957) until 2018, and again 2020–2022 under different coalitions",
       "seats": 26,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-BN",
       "logoMeaning": {
-        "description": "UMNO's flag (Sang Saka Bangsa) uses red for bravery, white for purity and sincerity, yellow for royalty and green for Islam; the keris (Malay dagger) at its centre represents Malay civilisation.","sources": [
+        "description": "UMNO's flag (Sang Saka Bangsa) uses red for bravery, white for purity and sincerity, yellow for royalty and green for Islam; the keris (Malay dagger) at its centre represents Malay civilisation.",
+        "sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -4949,6 +4982,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Anwar Ibrahim cabinet – Wikipedia (Member parties table: ministers appointed per party, after the 17 December 2025 reshuffle)",
+          "url": "https://en.wikipedia.org/wiki/Anwar_Ibrahim_cabinet"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -4969,6 +5010,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1949,
+      "coalitionId": "MY-BN",
       "leader": "Wee Ka Siong",
       "leaderTitle": "President",
       "inPower": true,
@@ -4976,9 +5018,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-BN",
       "logoMeaning": {
-        "description": "The MCA emblem's 14-point star represents the 13 states of Malaysia together with the Federal Government, symbolising the party's loyalty to the nation; the design was adopted in the 1950s and first flown in 1958.","sources": [
+        "description": "The MCA emblem's 14-point star represents the 13 states of Malaysia together with the Federal Government, symbolising the party's loyalty to the nation; the design was adopted in the 1950s and first flown in 1958.",
+        "sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -4993,6 +5035,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5013,6 +5059,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1946,
+      "coalitionId": "MY-BN",
       "leader": "Vigneswaran Sanasee",
       "leaderTitle": "President",
       "inPower": true,
@@ -5020,9 +5067,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-BN",
       "logoMeaning": {
-        "description": "The MIC flag's 14 stripes are borrowed from Malaysia's national flag (the Jalur Gemilang); the blue stripes at top and bottom represent peace and prosperity, and the green circle at the centre represents unity, with the party's initials rendered in Tamil and Romanised script.","sources": [
+        "description": "The MIC flag's 14 stripes are borrowed from Malaysia's national flag (the Jalur Gemilang); the blue stripes at top and bottom represent peace and prosperity, and the green circle at the centre represents unity, with the party's initials rendered in Tamil and Romanised script.",
+        "sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -5037,6 +5084,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5061,23 +5112,24 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1994,
+      "coalitionId": "MY-BN",
       "leader": "Arthur Joseph Kurup",
       "leaderTitle": "President",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2022–present, as part of the Unity Government (via Barisan Nasional, member since 2020, and previously 1994–2018)",
       "seats": 1,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-BN",
       "logoMeaning": {
-      "description": "The PBRS emblem features a stylised outline of Mount Kinabalu in blue and red with a central yellow torch, symbolising the resilience, indigenous cultural heritage, and unity of the people of Sabah.",
-      "sources": [
-              {
-                      "title": "United Sabah People's Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/United_Sabah_People%27s_Party"
-              }
-      ]
-},
+        "description": "The PBRS emblem features a stylised outline of Mount Kinabalu in blue and red with a central yellow torch, symbolising the resilience, indigenous cultural heritage, and unity of the people of Sabah.",
+        "sources": [
+          {
+            "title": "United Sabah People's Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/United_Sabah_People%27s_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "United Sabah People's Party",
@@ -5086,6 +5138,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Anwar Ibrahim cabinet – Wikipedia (Member parties table: ministers appointed per party, after the 17 December 2025 reshuffle)",
+          "url": "https://en.wikipedia.org/wiki/Anwar_Ibrahim_cabinet"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5102,23 +5162,24 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideology": [],
       "ideologyPosition": "other",
       "founded": 1973,
+      "coalitionId": "MY-GPS",
       "leader": "Abang Abdul Rahman Zohari Abang Openg",
       "leaderTitle": "President",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2022–present, as part of the Unity Government (via Gabungan Parti Sarawak, GPS's largest component since 2018); PBB was part of Barisan Nasional 1973–2018",
       "seats": 14,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-GPS",
       "logoMeaning": {
-      "description": "The PBB logo features two clasped hands surrounded by a circular sunburst and rice ears, symbolising the unity and cooperation of Sarawak's indigenous Bumiputera communities (Dayak, Malay, Melanau) in pursuit of progress and stability.",
-      "sources": [
-              {
-                      "title": "Parti Pesaka Bumiputera Bersatu — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Parti_Pesaka_Bumiputera_Bersatu"
-              }
-      ]
-},
+        "description": "The PBB logo features two clasped hands surrounded by a circular sunburst and rice ears, symbolising the unity and cooperation of Sarawak's indigenous Bumiputera communities (Dayak, Malay, Melanau) in pursuit of progress and stability.",
+        "sources": [
+          {
+            "title": "Parti Pesaka Bumiputera Bersatu — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Parti_Pesaka_Bumiputera_Bersatu"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Parti Pesaka Bumiputera Bersatu",
@@ -5127,6 +5188,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Anwar Ibrahim cabinet – Wikipedia (Member parties table: ministers appointed per party, after the 17 December 2025 reshuffle)",
+          "url": "https://en.wikipedia.org/wiki/Anwar_Ibrahim_cabinet"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5149,23 +5218,24 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 2004,
+      "coalitionId": "MY-GPS",
       "leader": "John Sikie Tayai",
       "leaderTitle": "President",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2022–present, as part of the Unity Government (via Gabungan Parti Sarawak, member since 2018; previously Barisan Nasional 2004–2018)",
       "seats": 5,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-GPS",
       "logoMeaning": {
-      "description": "The PRS emblem displays the Rhinoceros Hornbill (Burung Kenyalang, the sacred cultural symbol and state bird of Sarawak) atop the party name, representing Dayak identity, cultural pride, and native rights.",
-      "sources": [
-              {
-                      "title": "Sarawak Peoples' Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Sarawak_Peoples%27_Party"
-              }
-      ]
-},
+        "description": "The PRS emblem displays the Rhinoceros Hornbill (Burung Kenyalang, the sacred cultural symbol and state bird of Sarawak) atop the party name, representing Dayak identity, cultural pride, and native rights.",
+        "sources": [
+          {
+            "title": "Sarawak Peoples' Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Sarawak_Peoples%27_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Sarawak Peoples' Party",
@@ -5174,6 +5244,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Anwar Ibrahim cabinet – Wikipedia (Member parties table: ministers appointed per party, after the 17 December 2025 reshuffle)",
+          "url": "https://en.wikipedia.org/wiki/Anwar_Ibrahim_cabinet"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5203,23 +5281,24 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "years": "2002–2017"
         }
       ],
+      "coalitionId": "MY-GPS",
       "leader": "Tiong King Sing",
       "leaderTitle": "President",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2022–present, as part of the Unity Government (via Gabungan Parti Sarawak, member since 2018; previously Barisan Nasional 2002–2018)",
       "seats": 2,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-GPS",
       "logoMeaning": {
-      "description": "The PDP logo features upward-sweeping red, yellow, and blue geometric curves representing dynamic multiracial progress, constitutional rights, and Sarawak state development.",
-      "sources": [
-              {
-                      "title": "Progressive Democratic Party (Malaysia) — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Progressive_Democratic_Party_(Malaysia)"
-              }
-      ]
-},
+        "description": "The PDP logo features upward-sweeping red, yellow, and blue geometric curves representing dynamic multiracial progress, constitutional rights, and Sarawak state development.",
+        "sources": [
+          {
+            "title": "Progressive Democratic Party (Malaysia) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Progressive_Democratic_Party_(Malaysia)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Progressive Democratic Party (Malaysia)",
@@ -5228,6 +5307,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Anwar Ibrahim cabinet – Wikipedia (Member parties table: ministers appointed per party, after the 17 December 2025 reshuffle)",
+          "url": "https://en.wikipedia.org/wiki/Anwar_Ibrahim_cabinet"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5248,6 +5335,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 1959,
+      "coalitionId": "MY-GPS",
       "leader": "Sim Kui Hian",
       "leaderTitle": "President",
       "inPower": true,
@@ -5255,16 +5343,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-GPS",
       "logoMeaning": {
-      "description": "The SUPP emblem consists of three interlocking yellow rings on a red and green shield, representing the harmonious unity of Sarawak's three major communities (Dayak, Chinese, and Malay) working together for progress and social harmony.",
-      "sources": [
-              {
-                      "title": "Sarawak United Peoples' Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Sarawak_United_Peoples%27_Party"
-              }
-      ]
-},
+        "description": "The SUPP emblem consists of three interlocking yellow rings on a red and green shield, representing the harmonious unity of Sarawak's three major communities (Dayak, Chinese, and Malay) working together for progress and social harmony.",
+        "sources": [
+          {
+            "title": "Sarawak United Peoples' Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Sarawak_United_Peoples%27_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Sarawak United Peoples' Party",
@@ -5273,6 +5360,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5293,25 +5384,27 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         "Bumiputera interests",
         "Sabah & Sarawak unity"
       ],
-      "ideologyPosition": "other",
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
       "founded": 2020,
+      "coalitionId": "MY-GRS",
       "leader": "Hajiji Noor",
       "leaderTitle": "Chairman",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2022–present, as part of the Unity Government. GRS is a Sabah-based coalition founded 2020 and registered as a political party (Registrar of Societies approval, 2022); four Dewan Rakyat MPs (former BERSATU Sabah members who could not join a GRS component party under the anti-hopping law) sit as GRS direct members",
       "seats": 4,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-GRS",
       "logoMeaning": {
-      "description": "The GRS logo features Mount Kinabalu in sky blue flanked by stylized wings in navy blue and red, echoing the colors of the Sabah flag and symbolising state sovereignty, regional solidarity, and high aspirations.",
-      "sources": [
-              {
-                      "title": "Gabungan Rakyat Sabah — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Gabungan_Rakyat_Sabah"
-              }
-      ]
-},
+        "description": "The GRS logo features Mount Kinabalu in sky blue flanked by stylized wings in navy blue and red, echoing the colors of the Sabah flag and symbolising state sovereignty, regional solidarity, and high aspirations.",
+        "sources": [
+          {
+            "title": "Gabungan Rakyat Sabah — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Gabungan_Rakyat_Sabah"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Gabungan Rakyat Sabah",
@@ -5320,6 +5413,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Anwar Ibrahim cabinet – Wikipedia (Member parties table: ministers appointed per party, after the 17 December 2025 reshuffle)",
+          "url": "https://en.wikipedia.org/wiki/Anwar_Ibrahim_cabinet"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5348,6 +5449,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "years": "1999–2019"
         }
       ],
+      "coalitionId": "MY-GRS",
       "leader": "Ewon Benedick",
       "leaderTitle": "President",
       "inPower": true,
@@ -5355,16 +5457,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-GRS",
       "logoMeaning": {
-      "description": "The UPKO logo displays Mount Kinabalu in deep blue encircled by red and orange rings, representing the sacred mountain of the Kadazandusun people, cultural heritage, and dedication to Sabah's indigenous communities.",
-      "sources": [
-              {
-                      "title": "United Progressive Kinabalu Organisation — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/United_Progressive_Kinabalu_Organisation"
-              }
-      ]
-},
+        "description": "The UPKO logo displays Mount Kinabalu in deep blue encircled by red and orange rings, representing the sacred mountain of the Kadazandusun people, cultural heritage, and dedication to Sabah's indigenous communities.",
+        "sources": [
+          {
+            "title": "United Progressive Kinabalu Organisation — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/United_Progressive_Kinabalu_Organisation"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "United Progressive Kinabalu Organisation",
@@ -5373,6 +5474,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5397,6 +5502,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1985,
+      "coalitionId": "MY-GRS",
       "leader": "Joachim Gunsalam",
       "leaderTitle": "President",
       "inPower": true,
@@ -5404,16 +5510,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-GRS",
       "logoMeaning": {
-      "description": "The PBS logo features two clasped hands inside a red circle with 14 yellow laurel leaves and Mount Kinabalu, signifying multiracial cooperation, the defense of Sabah's 20-point agreement rights, and regional solidarity.",
-      "sources": [
-              {
-                      "title": "United Sabah Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/United_Sabah_Party"
-              }
-      ]
-},
+        "description": "The PBS logo features two clasped hands inside a red circle with 14 yellow laurel leaves and Mount Kinabalu, signifying multiracial cooperation, the defense of Sabah's 20-point agreement rights, and regional solidarity.",
+        "sources": [
+          {
+            "title": "United Sabah Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/United_Sabah_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "United Sabah Party",
@@ -5422,6 +5527,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5474,6 +5583,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5503,14 +5616,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
       "logoMeaning": {
-      "description": "The KDM logo incorporates ethnic Sabahan cultural motifs, including the traditional gong musical instrument, representing community harmony (kesejahteraan), grassroots cultural preservation, and the empowerment of Kadazan-Dusun and Murut communities.",
-      "sources": [
-              {
-                      "title": "Social Democratic Harmony Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Social_Democratic_Harmony_Party"
-              }
-      ]
-},
+        "description": "The KDM logo incorporates ethnic Sabahan cultural motifs, including the traditional gong musical instrument, representing community harmony (kesejahteraan), grassroots cultural preservation, and the empowerment of Kadazan-Dusun and Murut communities.",
+        "sources": [
+          {
+            "title": "Social Democratic Harmony Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Social_Democratic_Harmony_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Social Democratic Harmony Party",
@@ -5519,6 +5632,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5545,14 +5662,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
       "logoMeaning": {
-      "description": "The STAR logo features seven golden stars surrounding Mount Kinabalu on a circular blue field, representing the administrative divisions of Sabah, homeland sovereignty, and unity for the people of Borneo.",
-      "sources": [
-              {
-                      "title": "Homeland Solidarity Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Homeland_Solidarity_Party"
-              }
-      ]
-},
+        "description": "The STAR logo features seven golden stars surrounding Mount Kinabalu on a circular blue field, representing the administrative divisions of Sabah, homeland sovereignty, and unity for the people of Borneo.",
+        "sources": [
+          {
+            "title": "Homeland Solidarity Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Homeland_Solidarity_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Homeland Solidarity Party",
@@ -5561,6 +5678,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5600,6 +5721,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5631,6 +5756,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "years": "1951"
         }
       ],
+      "coalitionId": "MY-PN",
       "leader": "Abdul Hadi Awang",
       "leaderTitle": "President",
       "inPower": false,
@@ -5638,9 +5764,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 43,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-PN",
       "logoMeaning": {
-        "description": "PAS's flag is a plain green field bearing a white disc (\"bulan\", the moon); the green colour and the white moon both symbolise Islam, and the design was originally kept simple so rural supporters could easily sew it themselves.","sources": [
+        "description": "PAS's flag is a plain green field bearing a white disc (\"bulan\", the moon); the green colour and the white moon both symbolise Islam, and the design was originally kept simple so rural supporters could easily sew it themselves.",
+        "sources": [
           {
             "title": "What do the symbols on Malaysian political party logos mean?",
             "url": "https://cilisos.my/what-do-malaysian-political-party-flags-mean/"
@@ -5655,6 +5781,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5678,6 +5808,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "years": "2009–2026"
         }
       ],
+      "coalitionId": "MY-PN",
       "leader": "Hamzah Zainudin",
       "leaderTitle": "President",
       "inPower": false,
@@ -5685,16 +5816,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 6,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-PN",
       "logoMeaning": {
-      "description": "The Parti Wawasan Negara logo features a dynamic directional arrow emblem in red and blue, symbolizing forward-looking vision, national modernisation, and progressive governance.",
-      "sources": [
-              {
-                      "title": "National Vision Party (Malaysia) — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/National_Vision_Party_(Malaysia)"
-              }
-      ]
-},
+        "description": "The Parti Wawasan Negara logo features a dynamic directional arrow emblem in red and blue, symbolizing forward-looking vision, national modernisation, and progressive governance.",
+        "sources": [
+          {
+            "title": "National Vision Party (Malaysia) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/National_Vision_Party_(Malaysia)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "National Vision Party (Malaysia)",
@@ -5703,6 +5833,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     },
@@ -5731,16 +5865,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 19,
       "seatsTotal": 222,
       "chamberName": "Dewan Rakyat",
-      "coalitionId": "MY-PN",
       "logoMeaning": {
-      "description": "The BERSATU logo features a red five-petalled hibiscus flower (Bunga Raya, Malaysia's national flower) set against a crimson shield, representing national identity, Malay cultural heritage, and the five pillars of the nation and Islam.",
-      "sources": [
-              {
-                      "title": "Malaysian United Indigenous Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Malaysian_United_Indigenous_Party"
-              }
-      ]
-},
+        "description": "The BERSATU logo features a red five-petalled hibiscus flower (Bunga Raya, Malaysia's national flower) set against a crimson shield, representing national identity, Malay cultural heritage, and the five pillars of the nation and Islam.",
+        "sources": [
+          {
+            "title": "Malaysian United Indigenous Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Malaysian_United_Indigenous_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Malaysian United Indigenous Party",
@@ -5749,6 +5882,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
+        },
+        {
+          "title": "Malaysian United Indigenous Party – Wikipedia (infobox: Perikatan Nasional 2020–2026, membership disputed) and Perikatan Nasional – Wikipedia (affiliates list marks BERSATU \"disputed\")",
+          "url": "https://en.wikipedia.org/wiki/Malaysian_United_Indigenous_Party"
         }
       ]
     },
@@ -5792,6 +5933,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Dewan Rakyat, 15th Malaysian Parliament",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Dewan_Rakyat,_15th_Malaysian_Parliament"
+        },
+        {
+          "title": "Dewan Rakyat – Wikipedia (political groups, as of 10 August 2026: Government 150, Opposition 69, vacant 3 of 222)",
+          "url": "https://en.wikipedia.org/wiki/Dewan_Rakyat"
         }
       ]
     }
