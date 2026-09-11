@@ -1,6 +1,5 @@
 import { IDEOLOGY_POSITION_LABELS, type PoliticalParty } from "../data/politicalParties";
 import { coalitionForParty, coalitionPartners } from "../lib/politicalParties";
-import { FlagMeaning } from "./FlagMeaning";
 
 /**
  * The Learn-mode "Political parties" detail widget — rendered in the SAME
@@ -105,11 +104,6 @@ export function PoliticalPartyFacts({ party }: { party: PoliticalParty }) {
           </dd>
         </div>
       </dl>
-      <FlagMeaning
-        code={party.id}
-        meanings={party.logoMeaning ? { [party.id]: party.logoMeaning } : {}}
-        label="What this logo means"
-      />
     </>
   );
 }

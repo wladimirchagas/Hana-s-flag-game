@@ -12,7 +12,13 @@ import {
   partyPowerBadges,
 } from "../lib/politicalParties";
 
-type SortMode = "ideology" | "alpha" | "coalition";
+type SortMode = "ideology" | "coalition" | "alpha";
+
+const SORT_MODE_LABELS: Record<SortMode, string> = {
+  ideology: "By ideology",
+  coalition: "By coalition",
+  alpha: "A–Z",
+};
 
 type Group = { key: string; heading: string; items: PoliticalParty[] };
 
@@ -21,24 +27,42 @@ function groupParties(
   sortMode: SortMode,
 ): Group[] {
   if (sortMode === "alpha") {
-    return [
-      {
-        key: "alpha",
-        heading: `All parties (${parties.length})`,
-        items: [...parties].sort((a, b) => a.shortName.localeCompare(b.shortName)),
-      },
-    ];
+    const buckets = new Map<string, PoliticalParty[]>();
+    for (const p of parties) {
+      const name = p.shortName || p.name;
+      const first = (name[0] ?? "").toUpperCase();
+      const key = /[A-Z]/.test(first) ? first : "#";
+      const arr = buckets.get(key) ?? [];
+      arr.push(p);
+      buckets.set(key, arr);
+    }
+
+    const list = [...buckets.entries()].sort(([a], [b]) => {
+      if (a === "#" && b !== "#") return 1;
+      if (b === "#" && a !== "#") return -1;
+      return a.localeCompare(b, "en");
+    });
+
+    return list.map(([letter, items]) => ({
+      key: letter,
+      heading: letter,
+      items: items.sort((a, b) => a.shortName.localeCompare(b.shortName)),
+    }));
   }
 
   if (sortMode === "coalition") {
-    const coalitionMap = new Map<string, { heading: string; items: PoliticalParty[] }>();
+    const coalitionMap = new Map<string, { name: string; nameEn?: string; items: PoliticalParty[] }>();
     const unaligned: PoliticalParty[] = [];
 
     for (const p of parties) {
       const coalition = coalitionForParty(p);
       if (coalition) {
         if (!coalitionMap.has(coalition.id)) {
-          coalitionMap.set(coalition.id, { heading: coalition.name, items: [] });
+          coalitionMap.set(coalition.id, {
+            name: coalition.name,
+            nameEn: coalition.nameEn,
+            items: [],
+          });
         }
         coalitionMap.get(coalition.id)!.items.push(p);
       } else {
@@ -46,11 +70,21 @@ function groupParties(
       }
     }
 
-    const groups: Group[] = Array.from(coalitionMap.entries()).map(([id, g]) => ({
-      key: id,
-      heading: g.heading,
-      items: g.items,
-    }));
+    const groups: Group[] = Array.from(coalitionMap.entries())
+      .sort(([, a], [, b]) => {
+        // Larger coalition first, then alphabetical
+        const diff = b.items.length - a.items.length;
+        if (diff !== 0) return diff;
+        return a.name.localeCompare(b.name, "en");
+      })
+      .map(([id, g]) => {
+        const heading = g.nameEn && g.nameEn !== g.name ? `${g.name} (${g.nameEn})` : g.name;
+        return {
+          key: id,
+          heading,
+          items: g.items,
+        };
+      });
 
     if (unaligned.length > 0) {
       groups.push({
@@ -104,31 +138,21 @@ export function PoliticalPartyGrid({
 
   return (
     <div className="flag-grid__party-wrapper">
-      <div className="party-sort-toggle" role="group" aria-label="Group political parties">
-        <button
-          type="button"
-          className={`party-sort-toggle__btn${sortMode === "ideology" ? " party-sort-toggle__btn--active" : ""}`}
-          onClick={() => setSortMode("ideology")}
-          aria-pressed={sortMode === "ideology"}
-        >
-          Ideology
-        </button>
-        <button
-          type="button"
-          className={`party-sort-toggle__btn${sortMode === "alpha" ? " party-sort-toggle__btn--active" : ""}`}
-          onClick={() => setSortMode("alpha")}
-          aria-pressed={sortMode === "alpha"}
-        >
-          A–Z
-        </button>
-        <button
-          type="button"
-          className={`party-sort-toggle__btn${sortMode === "coalition" ? " party-sort-toggle__btn--active" : ""}`}
-          onClick={() => setSortMode("coalition")}
-          aria-pressed={sortMode === "coalition"}
-        >
-          Coalition
-        </button>
+      <div className="flag-grid__controls flag-grid__controls--tab">
+        <label className="flag-grid__group-select">
+          <span className="flag-grid__group-select-label">Group by:</span>
+          <select
+            value={sortMode}
+            onChange={(e) => setSortMode(e.target.value as SortMode)}
+            className="flag-grid__select"
+          >
+            {(Object.keys(SORT_MODE_LABELS) as SortMode[]).map((m) => (
+              <option key={m} value={m}>
+                {SORT_MODE_LABELS[m]}
+              </option>
+            ))}
+          </select>
+        </label>
       </div>
 
       <div className="flag-grid__groups">

@@ -1,3 +1,4 @@
+import { FlagMeaning } from "./FlagMeaning";
 import type { PoliticalParty } from "../data/politicalParties";
 import { PoliticalPartyFacts } from "./PoliticalPartyFacts";
 
@@ -9,8 +10,8 @@ import { PoliticalPartyFacts } from "./PoliticalPartyFacts";
  *
  * Shows the party's own logo (or an honest "no logo image" note — never the
  * country's flag standing in for it, which would misattribute the country's
- * flag as the party's own) followed by its full sourced fact sheet and the
- * "What this logo means" explainer (see `PoliticalPartyFacts`).
+ * flag as the party's own) followed by the "What this logo means" explainer
+ * (relocated immediately below the logo image) and its full sourced fact sheet.
  *
  * Nothing here touches the map: a party belongs to the whole country, so
  * there is no territory to highlight (same reasoning as every other
@@ -51,6 +52,11 @@ export function PoliticalPartyDetails({
             <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
           </button>
         )}
+        <FlagMeaning
+          code={party.id}
+          meanings={party.logoMeaning ? { [party.id]: party.logoMeaning } : {}}
+          label="What this logo means"
+        />
         <PoliticalPartyFacts party={party} />
       </div>
     </>
