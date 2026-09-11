@@ -3355,6 +3355,59 @@ Accumulated technical debt (2026-06) had 50+ parties in the database with `noIma
 
 Never weaken this gate. If `noImageReason` is present, it must record genuine research effort or the party is incomplete.
 
+## The political-party audit is a STANDING SWEEP — 195 countries, one at a time, shipped one at a time — hard rule, do not override without approval
+
+**The owner has directed (2026-09-11) that the Learn-mode political-party dataset be audited AND
+fixed for all 195 countries, country by country, in a fixed priority order, with each country
+shipped to production before the next is started. This is durable authorization: it persists across
+every merge, branch reset and context window until all 195 are done or the owner says stop.**
+
+The ledger is **`docs/POLITICAL_PARTY_AUDIT_2026.md`** — the queue, the per-country verdicts and
+every finding with its fix. The method, the per-field freshness contract and the severity model are
+in `docs/POLITICAL_PARTY_AUDIT_PROMPT.md`. **Read the ledger first in any session that touches
+party data**; it is the only record of what has already been verified.
+
+### Rules
+
+1. **Never ask whether to continue.** Finish the country in hand, ship it, pick the next one off the
+   queue, and keep going. The only acceptable reasons to stop are: the owner says stop; a genuine
+   blocker you cannot resolve (no network egress, a broken build); or all 195 countries are ticked.
+   Ending a turn with a progress recap and "want me to continue?" is a violation of this rule.
+2. **The priority order is fixed** and is written into the ledger's queue: Australia → Malaysia →
+   Brazil → the rest of Southeast Asia → the rest of South America → the United Kingdom → the
+   United States → Canada → Europe → the rest of the world. Do not reorder it to pick easy
+   countries first.
+3. **One country per PR, merged before the next begins.** A country is "done" only when its fix is
+   merged AND `npm run live:check` confirms the build carrying it is live. This is the owner's
+   explicit instruction and it outranks any batching instinct — a half-finished country left on a
+   branch is exactly the state this rule exists to prevent.
+4. **Update the ledger in the SAME commit as the data change.** Findings written only in a PR
+   description are lost. The ledger carries: what was wrong, what it is now, the source that proves
+   it, and any judgement call made, so a later reviewer can challenge it.
+5. **The sourcing discipline is absolute and is NOT relaxed by the pace this sweep demands.**
+   Every fact comes from a source fetched during the audit — the chamber's own composition page, the
+   electoral commission, or the party — never from the model's own knowledge, and never from the
+   article the stale entry already cited (that is circular). A fact that cannot be sourced is
+   omitted, not guessed. Local-language sources are part of the search, not an optional extra.
+6. **A country's entry must satisfy the dataset's own invariants**: the seat sum must not exceed
+   `seatsTotal`; one `seatsTotal` per country; every seated party the chamber lists is either
+   present or its absence is explained in the ledger; `inPower`/`inExecutive` reflect the government
+   in office today; a coalition every member references must exist in `POLITICAL_COALITIONS`.
+7. **Never weaken `scripts/check-political-parties.mjs`** to make a country pass. If it fires, the
+   data is wrong.
+8. **Verify in the running app before every push** (the mandatory visual-verification rule applies):
+   open the country's Political parties tab, confirm every card paints its logo
+   (`img.complete && img.naturalWidth > 0`, not merely a reserved box), that the badges match the
+   data, and that no console error appears.
+
+### Enforcement
+
+There is no automated check that the sweep is progressing — it is a behavioural mandate, guarded by
+this rule and by the ledger's queue. `scripts/check-political-parties.mjs` still gates structure on
+every push. A session that worked on party data without updating
+`docs/POLITICAL_PARTY_AUDIT_2026.md`, or that stopped to ask whether to carry on while countries
+remained unticked, has violated this rule.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:

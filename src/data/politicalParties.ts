@@ -245,6 +245,18 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       url: "https://en.wikipedia.org/wiki/Alyansa_para_sa_Bagong_Pilipinas",
     },
   },
+  "AU-COALITION": {
+    id: "AU-COALITION",
+    name: "Liberal–National Coalition",
+    kind: "coalition",
+    memberPartyIds: ["AU-LIB", "AU-NAT", "AU-LNP"],
+    source: {
+      title:
+        "Liberal–National Coalition — Wikipedia (current agreement re-formed 8 February 2026 after the 22 January 2026 dissolution; leaders Angus Taylor and Matt Canavan; 41 of 150 House seats)",
+      url: "https://en.wikipedia.org/wiki/Coalition_(Australia)",
+    },
+    note: "The Coalition agreement lapsed on 22 January 2026 and was re-formed on 8 February 2026; the Queensland LNP sits with both partners' party rooms.",
+  },
   "BR-FE": {
     id: "BR-FE",
     name: "Frente Ampla",
@@ -8905,29 +8917,72 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "AU",
       "shortName": "ALP",
       "name": "Australian Labor Party",
-      "nameEn": "Australian Labor Party",
       "logo": "party-logos/au/alp.svg",
       "sha256": "00568c9c740fa06937ab3a327bf277aff7443c2c884a7e8d36326d3275721d3c",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Australian_Labor_Party_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:ALP_logo_2017.svg",
+      "licenceNote": "Hosted locally on English Wikipedia (not Commons) under a public-domain / PD-textlogo determination as a simple design; bundled here to identify the Australian Labor Party, not to imply endorsement.",
       "ideology": [
-        "Social democracy",
-        "Progressivism"
+        "Social democracy"
       ],
-      "ideologyPosition": "left",
+      "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 1891,
       "leader": "Anthony Albanese",
       "leaderTitle": "Leader",
       "inPower": true,
-      "timeInPower": "2022-present",
-      "seats": 67,
-      "seatsTotal": 151,
+      "inExecutive": true,
+      "timeInPower": "2022–present",
+      "seats": 94,
+      "seatsTotal": 150,
       "chamberName": "House of Representatives",
       "sources": [
         {
-          "title": "Australian Labor Party - Wikipedia",
+          "title": "Australian Labor Party – Wikipedia (infobox: oldest branches 1891, ideology Social democracy, position Centre-left, leader Anthony Albanese)",
           "url": "https://en.wikipedia.org/wiki/Australian_Labor_Party"
+        },
+        {
+          "title": "Second Albanese ministry – Wikipedia (Labor ministry formed 13 May 2025; Anthony Albanese Prime Minister)",
+          "url": "https://en.wikipedia.org/wiki/Second_Albanese_ministry"
+        },
+        {
+          "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings, as of 25 June 2026)",
+          "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        }
+      ]
+    },
+    {
+      "id": "AU-LIB",
+      "country": "AU",
+      "shortName": "Liberal",
+      "name": "Liberal Party of Australia",
+      "logo": "party-logos/au/lib.svg",
+      "sha256": "bc5449a403b07d251e4f5c83739c55da38e864ca16d460914ed6c385c937f802",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Liberal_Party_of_Australia_logo.svg",
+      "licenceNote": "Hosted locally on English Wikipedia (not Commons) under a public-domain / PD-textlogo determination as a simple design; bundled here to identify the Liberal Party of Australia, not to imply endorsement.",
+      "ideology": [
+        "Liberal conservatism",
+        "Conservatism (Australian)",
+        "Liberalism (Australian)",
+        "Right-wing populism (faction)"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1944,
+      "coalitionId": "AU-COALITION",
+      "leader": "Angus Taylor",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Liberal Party of Australia – Wikipedia (infobox: founded 13 October 1944, ideology, position Centre-right to right-wing, leader Angus Taylor)",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Party_of_Australia"
+        },
+        {
+          "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings: Liberal 17, counted separately from the 16 LNP seats)",
+          "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
         }
       ]
     },
@@ -8935,60 +8990,265 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "AU-LNP",
       "country": "AU",
       "shortName": "LNP",
-      "name": "Liberal/National Coalition",
-      "nameEn": "Liberal/National Coalition",
+      "name": "Liberal National Party of Queensland",
       "logo": "party-logos/au/lnp.svg",
       "sha256": "1ce1c62aa21a8cae0bcd807d2aa86112210f99c5054b5b8170cc9318888bcf54",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Liberal_National_Coalition.svg",
-      "licenceNote": "Non-free party logo used to identify the coalition; used here to identify the parties, not to imply endorsement.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:LNP_Regular.svg",
       "ideology": [
-        "Conservatism",
-        "Liberalism"
+        "Conservatism (Australian)",
+        "Agrarianism",
+        "Christian right (faction)"
       ],
-      "ideologyPosition": "right",
-      "positionRaw": "Centre-right",
-      "founded": 1931,
-      "leader": "Peter Dutton",
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2008,
+      "coalitionId": "AU-COALITION",
+      "leader": "David Crisafulli",
       "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 58,
-      "seatsTotal": 151,
+      "seats": 16,
+      "seatsTotal": 150,
       "chamberName": "House of Representatives",
       "sources": [
         {
-          "title": "Coalition (Australian politics) - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Coalition_(Australian_politics)"
+          "title": "Liberal National Party of Queensland – Wikipedia (infobox: formed 26 July 2008 by merger of the Queensland Liberal and National divisions; ideology, position, leader David Crisafulli)",
+          "url": "https://en.wikipedia.org/wiki/Liberal_National_Party_of_Queensland"
+        },
+        {
+          "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings: LNP 16, listed separately from Liberal and National)",
+          "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        },
+        {
+          "title": "48th Parliament of Australia – Wikipedia (Party summary; Changes in membership, House of Representatives)",
+          "url": "https://en.wikipedia.org/wiki/48th_Parliament_of_Australia"
+        }
+      ]
+    },
+    {
+      "id": "AU-NAT",
+      "country": "AU",
+      "shortName": "Nationals",
+      "name": "National Party of Australia",
+      "logo": "party-logos/au/nat.svg",
+      "sha256": "7d8e3cc345a862dd2cc38db2f817e7e3acce74809f5a5fbae40811cc4b81c8aa",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:The_National_Party_of_Australia_Logo.svg",
+      "ideology": [
+        "Agrarianism",
+        "Conservatism (Australian)"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1920,
+      "previousNames": [
+        {
+          "name": "Australian Country Party",
+          "years": "1920–1975"
+        },
+        {
+          "name": "National Country Party",
+          "years": "1975–1982"
+        }
+      ],
+      "coalitionId": "AU-COALITION",
+      "leader": "Matt Canavan",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "National Party of Australia – Wikipedia (founded as the Australian Country Party 1920, renamed National Country Party 1975 and National Party of Australia 1982; leader Matt Canavan since 11 March 2026)",
+          "url": "https://en.wikipedia.org/wiki/National_Party_of_Australia"
+        },
+        {
+          "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings: National 8, counted separately from the 16 LNP seats)",
+          "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        }
+      ]
+    },
+    {
+      "id": "AU-ONP",
+      "country": "AU",
+      "shortName": "One Nation",
+      "name": "Pauline Hanson's One Nation",
+      "logo": "party-logos/au/onp.svg",
+      "sha256": "3dc2141ce4d0ae308d2e44e5394d5b74821b95b960bfe4a8fd357409dbb2f941",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Pauline_Hanson%27s_One_Nation_logo.svg",
+      "licenceNote": "Hosted locally on English Wikipedia (not Commons) under a public-domain / PD-textlogo determination as a simple design; bundled here to identify Pauline Hanson's One Nation, not to imply endorsement.",
+      "ideology": [
+        "Hansonism",
+        "Australian nationalism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 1997,
+      "leader": "Pauline Hanson",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "One Nation – Wikipedia (infobox: founded 11 April 1997, ideology, position Right-wing to far-right, leader Pauline Hanson)",
+          "url": "https://en.wikipedia.org/wiki/One_Nation_(Australia)"
+        },
+        {
+          "title": "48th Parliament of Australia – Wikipedia (Changes in membership: Barnaby Joyce joined One Nation 8 December 2025; David Farley won Farrer for One Nation at the by-election held 9 May 2026)",
+          "url": "https://en.wikipedia.org/wiki/48th_Parliament_of_Australia"
+        },
+        {
+          "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings, as of 25 June 2026)",
+          "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        }
+      ]
+    },
+    {
+      "id": "AU-CSA",
+      "country": "AU",
+      "shortName": "Community Strong",
+      "name": "Community Strong Australia",
+      "logo": "party-logos/au/csa.png",
+      "sha256": "d28348096ba1265fec9e7940dac874eaa386c3fd08548e9af44a1313e1c50e2f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Community_Strong_Australia_logo.png",
+      "licenceNote": "Non-free logo bundled under Wikipedia's fair-use rationale to identify Community Strong Australia; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Environmentalism",
+        "Liberalism",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2026,
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Community Strong Australia – Wikipedia (infobox: founded 25 June 2026; ideology Environmentalism, Liberalism, Social liberalism; position Centre; no single leader designated)",
+          "url": "https://en.wikipedia.org/wiki/Community_Strong_Australia"
+        },
+        {
+          "title": "48th Parliament of Australia – Wikipedia (Changes in membership: Allegra Spender, Wentworth, and Zali Steggall, Warringah, founded Community Strong on 25 June 2026, having sat as independents)",
+          "url": "https://en.wikipedia.org/wiki/48th_Parliament_of_Australia"
+        },
+        {
+          "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings, as of 25 June 2026)",
+          "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
         }
       ]
     },
     {
       "id": "AU-GRN",
       "country": "AU",
-      "shortName": "GRN",
+      "shortName": "Greens",
       "name": "Australian Greens",
-      "nameEn": "Australian Greens",
       "logo": "party-logos/au/grn.svg",
       "sha256": "aef221d20eea3fa971310e12afb014065d7c8413bd1755b1bbbd02895de74860",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Australian_Greens_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:AustralianGreensLogo_official.svg",
       "ideology": [
-        "Environmentalism",
+        "Green politics",
         "Progressivism",
-        "Social democracy"
+        "Left-wing populism"
       ],
       "ideologyPosition": "left",
-      "positionRaw": "Left",
+      "positionRaw": "Left-wing",
       "founded": 1992,
-      "leader": "Adam Bandt",
-      "leaderTitle": "Parliamentary Leader",
+      "leader": "Larissa Waters",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 4,
-      "seatsTotal": 151,
+      "seats": 1,
+      "seatsTotal": 150,
       "chamberName": "House of Representatives",
       "sources": [
         {
-          "title": "Australian Greens - Wikipedia",
+          "title": "Australian Greens – Wikipedia (infobox: founded 1992, ideology, position Left-wing, leader Larissa Waters)",
           "url": "https://en.wikipedia.org/wiki/Australian_Greens"
+        },
+        {
+          "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings, as of 25 June 2026)",
+          "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        }
+      ]
+    },
+    {
+      "id": "AU-KAP",
+      "country": "AU",
+      "shortName": "KAP",
+      "name": "Katter's Australian Party",
+      "logo": "party-logos/au/kap.svg",
+      "sha256": "65df155860e88e5877c0203a23570e7c60002f34656e03337b399c0320bcd873",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Katter%27s_Australian_Party_logo.svg",
+      "licenceNote": "Hosted locally on English Wikipedia (not Commons) under a public-domain / PD-textlogo determination as a simple design; bundled here to identify Katter's Australian Party, not to imply endorsement.",
+      "ideology": [
+        "Populism",
+        "McEwenism",
+        "Agrarian socialism",
+        "Social conservatism",
+        "Economic nationalism",
+        "North Queensland statehood"
+      ],
+      "ideologyPosition": "right",
+      "founded": 2011,
+      "leader": "Robbie Katter",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Katter's Australian Party – Wikipedia (infobox: founded 5 June 2011, ideology list, leader Robbie Katter; the political-position field is deliberately left blank by talk-page consensus, so no positionRaw is recorded here)",
+          "url": "https://en.wikipedia.org/wiki/Katter%27s_Australian_Party"
+        },
+        {
+          "title": "The mice that may yet roar: who are the minor right-wing parties? – The Conversation (classifies Katter's Australian Party among Australia's minor right-wing parties)",
+          "url": "https://theconversation.com/the-mice-that-may-yet-roar-who-are-the-minor-right-wing-parties-17305"
+        },
+        {
+          "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings, as of 25 June 2026)",
+          "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        }
+      ]
+    },
+    {
+      "id": "AU-CA",
+      "country": "AU",
+      "shortName": "Centre Alliance",
+      "name": "Centre Alliance",
+      "logo": "party-logos/au/ca.svg",
+      "sha256": "975a1ce9e21d740d884bff9f802ce4ad84740e4a30ca6d0596df55d14947a09d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Centre_Alliance_logo.svg",
+      "licenceNote": "Non-free logo bundled under Wikipedia's fair-use rationale to identify Centre Alliance; used here to identify the party, not to imply endorsement.",
+      "ideology": [
+        "Social liberalism",
+        "Populism",
+        "South Australian regionalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2013,
+      "previousNames": [
+        {
+          "name": "Nick Xenophon Team",
+          "years": "2013–2018"
+        }
+      ],
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Centre Alliance – Wikipedia (founded 1 July 2013 as the Nick Xenophon Team, renamed Centre Alliance 8 June 2018; ideology, position Centre; no designated parliamentary leader — sole MP Rebekha Sharkie describes herself as \"a party of one\")",
+          "url": "https://en.wikipedia.org/wiki/Centre_Alliance"
+        },
+        {
+          "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings, as of 25 June 2026)",
+          "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
         }
       ]
     }
