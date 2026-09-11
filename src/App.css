@@ -1,7 +1,6 @@
 /* === Game page — sticker-book theme === */
 
 .app {
-  position: relative;
   min-height: 100vh;
   /* Padding for the fixed .game-clock (top-right). The home link now
      lives in the sticky .site-topbar at the App root, so the topbar
