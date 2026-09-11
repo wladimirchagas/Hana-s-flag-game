@@ -10609,91 +10609,37 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "CL": [
     {
-      "id": "CL-FA",
+      "id": "CL-REP",
       "country": "CL",
-      "shortName": "FA",
-      "name": "Frente Amplio",
-      "nameEn": "Broad Front",
-      "logo": "party-logos/cl/fa.svg",
-      "sha256": "6c5330dd9e82ca8f58e6dedc6576e69928021ba0a5e6f31143e4535394fe1153",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Frente_Amplio_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "logoMeaning": {
-        "description": "The Frente Amplio (Broad Front) logo features a stylized representation emphasizing left-wing progressivism and environmental commitment. The design reflects the coalition's vision of a united left-wing movement bringing together socialists, communists, environmentalists, and progressives to advance social democracy and climate action in Chile.",
-        "sources": [
-          {
-            "title": "Frente Amplio (Chile) — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Frente_Amplio_(Chile)"
-          },
-          {
-            "title": "2021 Chilean general election — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/2021_Chilean_general_election"
-          }
-        ]
-      },
-      "ideology": ["Left-wing", "Progressive", "Environmentalism"],
-      "ideologyPosition": "left",
-      "positionRaw": "Left-wing",
-      "founded": 2017,
-      "leader": "Gabriel Boric",
-      "leaderTitle": "Coalition Leader (President, 2022–present)",
+      "shortName": "Republicano",
+      "name": "Partido Republicano",
+      "nameEn": "Republican Party",
+      "logo": "party-logos/cl/republican.svg",
+      "sha256": "64828f923732cca4503abf628e3e3c0bbccf9ea908a6b00e7b0c2da59b63e785",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Republican_Party_of_Chile_logo.svg",
+      "ideology": [
+        "National conservatism",
+        "Economic liberalism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2019,
+      "leader": "Arturo Squella",
+      "leaderTitle": "President",
       "inPower": true,
-      "timeInPower": "2022-present",
-      "seats": 49,
+      "inExecutive": true,
+      "seats": 31,
       "seatsTotal": 155,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Frente Amplio (Chile) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Frente_Amplio_(Chile)"
+          "title": "Republican Party — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Republican_Party_(Chile,_2019)"
         },
         {
-          "title": "2021 Chilean general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2021_Chilean_general_election"
-        }
-      ]
-    },
-    {
-      "id": "CL-PDC",
-      "country": "CL",
-      "shortName": "PDC",
-      "name": "Partido Demócrata Cristiano",
-      "nameEn": "Christian Democracy Party",
-      "logo": "party-logos/cl/pdc.svg",
-      "sha256": "c0639d126df0c236c6ac11a5c5776e9a423e1655a5ded9f085d2ea3b75dcfadf",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PDC_Chile_logo.png",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "logoMeaning": {
-        "description": "The Christian Democracy Party logo features a white cross symbolizing Christian values and faith-based principles. The shield design emphasizes institutional strength, democratic commitment, and social conservatism rooted in Christian democracy's belief that democratic systems must be grounded in moral and spiritual values. The logo represents the party's historical role as a centrist force advocating for social progress within a Christian ethical framework.",
-        "sources": [
-          {
-            "title": "Christian Democracy Party (Chile) – Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Christian_Democracy_Party_(Chile)"
-          },
-          {
-            "title": "Partido Demócrata Cristiano – Wikipedia (Spanish)",
-            "url": "https://es.wikipedia.org/wiki/Partido_Democr%C3%A1ta_Cristiano"
-          }
-        ]
-      },
-      "ideology": ["Christian democracy", "Centre-right", "Social conservatism"],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 1957,
-      "leader": "Carolina Goic",
-      "leaderTitle": "Party President",
-      "inPower": false,
-      "seats": 16,
-      "seatsTotal": 155,
-      "chamberName": "Chamber of Deputies",
-      "sources": [
-        {
-          "title": "Christian Democracy Party (Chile) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Christian_Democracy_Party_(Chile)"
-        },
-        {
-          "title": "2021 Chilean general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2021_Chilean_general_election"
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
         }
       ]
     },
@@ -10705,8 +10651,22 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Independent Democratic Union",
       "logo": "party-logos/cl/udi.png",
       "sha256": "0d17428274d18a55ac9580c55f5654671d4d5a2d4730429eb01305e71a7520ab",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:UDI_Chile_logo.png",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Independent_Democratic_Union_(Chile).png",
+      "ideology": [
+        "Conservatism",
+        "Right-wing",
+        "Neo-liberalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 1983,
+      "leader": "Guillermo Ramírez",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 18,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The Independent Democratic Union logo features a geometric shield design symbolizing independence, democratic governance, and conservative principles. The design emphasizes the party's commitment to free-market economics, individual liberty, and institutional conservatism. As one of the major right-wing parties emerging from Chile's 1973–1990 military period, the logo represents economic neo-liberalism, constitutional conservatism, and democratic participation within a right-wing political framework.",
         "sources": [
@@ -10720,24 +10680,98 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Conservatism", "Right-wing", "Neo-liberalism"],
-      "ideologyPosition": "right",
-      "positionRaw": "Right-wing",
-      "founded": 1983,
-      "leader": "Javier Macaya",
-      "leaderTitle": "Party President",
+      "sources": [
+        {
+          "title": "Independent Democratic Union — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Independent_Democratic_Union"
+        },
+        {
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
+        }
+      ]
+    },
+    {
+      "id": "CL-FA",
+      "country": "CL",
+      "shortName": "FA",
+      "name": "Frente Amplio",
+      "nameEn": "Broad Front",
+      "logo": "party-logos/cl/fa.svg",
+      "sha256": "6c5330dd9e82ca8f58e6dedc6576e69928021ba0a5e6f31143e4535394fe1153",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo%20of%20the%20Broad%20Front%20(Chile%2C%202024).svg",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia under a fair-use rationale; bundled here to identify the Broad Front, not to imply endorsement. Replace if a freely-licensed file becomes available.",
+      "ideology": [
+        "Left-wing",
+        "Progressive",
+        "Environmentalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2024,
+      "leader": "Constanza Martínez",
+      "leaderTitle": "President",
       "inPower": false,
-      "seats": 26,
+      "inExecutive": false,
+      "seats": 18,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "logoMeaning": {
+        "description": "The Frente Amplio (Broad Front) logo features a stylized representation emphasizing left-wing progressivism and environmental commitment. The design reflects the coalition's vision of a united left-wing movement bringing together socialists, communists, environmentalists, and progressives to advance social democracy and climate action in Chile.",
+        "sources": [
+          {
+            "title": "Frente Amplio (Chile) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Frente_Amplio_(Chile)"
+          },
+          {
+            "title": "2021 Chilean general election — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2021_Chilean_general_election"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Broad Front — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Broad_Front_(Chilean_political_party)"
+        },
+        {
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
+        }
+      ]
+    },
+    {
+      "id": "CL-PDG",
+      "country": "CL",
+      "shortName": "PDG",
+      "name": "Partido de la Gente",
+      "nameEn": "Party of the People",
+      "logo": "party-logos/cl/pdg.png",
+      "sha256": "595ffe1e5dd6624b124dcfb669cb06bff2d6a3e5e5ff6f76af9aa39910ee665d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Pdg_logo_new.png",
+      "ideology": [
+        "Populism",
+        "Catch-all politics",
+        "Anti-establishment"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Big tent",
+      "founded": 2019,
+      "leader": "Dennise Catalán",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 15,
       "seatsTotal": 155,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Independent Democratic Union (Chile) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Independent_Democratic_Union_(Chile)"
+          "title": "Party of the People — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Party_of_the_People_(Chile)"
         },
         {
-          "title": "2021 Chilean general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2021_Chilean_general_election"
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
         }
       ]
     },
@@ -10747,10 +10781,24 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "RN",
       "name": "Renovación Nacional",
       "nameEn": "National Renewal",
-      "logo": "party-logos/cl/rn.svg",
-      "sha256": "f9ac06a57a36215813b9b52d2b791ee065fb8ec9c253df7f3205ab745e5b362d",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Renovación_Nacional_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logo": "party-logos/cl/rn.png",
+      "sha256": "70b8a7054cb3b3ebb6169481e8164296a2aaa12dfa7c3d560e06efd48285be67",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Renovaci%C3%B3n_Nacional_logo_2023.png",
+      "ideology": [
+        "Conservatism",
+        "Centre-right",
+        "Liberalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1987,
+      "leader": "Andrea Balladares",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 13,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The National Renewal logo features a stylized design symbolizing renewal, institutional reform, and conservative modernism. The geometric elements emphasize the party's commitment to market liberalism, institutional strength, and centre-right values. Founded during the transition to democracy, the logo represents the party's role in Chilean conservative politics, blending economic liberalism with conservative governance and democratic participation.",
         "sources": [
@@ -10764,68 +10812,48 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Conservatism", "Centre-right", "Liberalism"],
-      "ideologyPosition": "right",
-      "positionRaw": "Centre-right to right-wing",
-      "founded": 1987,
-      "leader": "Cristian Monckeberg",
-      "leaderTitle": "Party President",
-      "inPower": false,
-      "seats": 18,
-      "seatsTotal": 155,
-      "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "National Renewal (Chile) – Wikipedia",
+          "title": "National Renewal — Wikipedia (infobox: founding, ideology, political position, leader)",
           "url": "https://en.wikipedia.org/wiki/National_Renewal_(Chile)"
         },
         {
-          "title": "2021 Chilean general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2021_Chilean_general_election"
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
         }
       ]
     },
     {
-      "id": "CL-PPD",
+      "id": "CL-PC",
       "country": "CL",
-      "shortName": "PPD",
-      "name": "Partido por la Democracia",
-      "nameEn": "Party for Democracy",
-      "logo": "party-logos/cl/ppd.png",
-      "sha256": "44324071494d91cc1c8460d830d6911399c556e7007cff20f508f150379abeb0",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PPD_Chile_logo.png",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "logoMeaning": {
-        "description": "The Party for Democracy logo features design elements symbolizing democratic participation, social progress, and centre-left values. Founded during Chile's transition to democracy, the logo embodies the party's commitment to democratic socialism, social democracy, and progressive institutional reform. The design reflects the party's belief in democratic governance combined with social and economic justice.",
-        "sources": [
-          {
-            "title": "Party for Democracy (Chile) – Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Party_for_Democracy_(Chile)"
-          },
-          {
-            "title": "Partido por la Democracia – Wikipedia (Spanish)",
-            "url": "https://es.wikipedia.org/wiki/Partido_por_la_Democracia"
-          }
-        ]
-      },
-      "ideology": ["Social democracy", "Centre-left", "Progressivism"],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
-      "founded": 1987,
-      "leader": "Natalia Picar",
-      "leaderTitle": "Party President",
+      "shortName": "PC",
+      "name": "Partido Comunista de Chile",
+      "nameEn": "Communist Party of Chile",
+      "logo": "party-logos/cl/pc.svg",
+      "sha256": "cd3368bf728e2c81f6b6f9aca46d8cf7fcdab449845269a83ed7842b6405e0d1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Comunista_de_Chile.svg",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 1912,
+      "leader": "Lautaro Carmona",
+      "leaderTitle": "President",
       "inPower": false,
+      "inExecutive": false,
       "seats": 12,
       "seatsTotal": 155,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Party for Democracy (Chile) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Party_for_Democracy_(Chile)"
+          "title": "Communist Party of Chile — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Chile"
         },
         {
-          "title": "2021 Chilean general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2021_Chilean_general_election"
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
         }
       ]
     },
@@ -10833,12 +10861,26 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "CL-PS",
       "country": "CL",
       "shortName": "PS",
-      "name": "Partido Socialista",
-      "nameEn": "Socialist Party",
+      "name": "Partido Socialista de Chile",
+      "nameEn": "Socialist Party of Chile",
       "logo": "party-logos/cl/ps.svg",
-      "sha256": "9a5d4d05e8457d2b65c1cae26235d49b22696ba17553d9abee628d5811a8360c",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PS_Chile_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "sha256": "c9099f43f894f149daa64fb323fbeaa905ba21c7402da1566b86b7d49a9390d8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Socialist_Party_of_Chile.svg",
+      "ideology": [
+        "Socialism",
+        "Left-wing",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1933,
+      "leader": "Paulina Vodanovic",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 11,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The Socialist Party logo features left-wing symbolism emphasizing workers' solidarity, social justice, and progressive change. As one of Chile's oldest and most influential left-wing parties, the design represents the party's commitment to socialism, democratic participation, and economic equality. The red colour and symbolism reflect the party's historical role in Chilean labour movements and its advocacy for working-class interests.",
         "sources": [
@@ -10852,24 +10894,213 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Socialism", "Left-wing", "Progressivism"],
-      "ideologyPosition": "left",
-      "positionRaw": "Left-wing",
-      "founded": 1933,
-      "leader": "Álvaro Elizalde",
-      "leaderTitle": "Party President",
+      "sources": [
+        {
+          "title": "Socialist Party of Chile — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_of_Chile"
+        },
+        {
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
+        }
+      ]
+    },
+    {
+      "id": "CL-PPD",
+      "country": "CL",
+      "shortName": "PPD",
+      "name": "Partido por la Democracia",
+      "nameEn": "Party for Democracy",
+      "logo": "party-logos/cl/ppd.png",
+      "sha256": "44324071494d91cc1c8460d830d6911399c556e7007cff20f508f150379abeb0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Party_for_Democracy_(Chile).png",
+      "ideology": [
+        "Social democracy",
+        "Centre-left",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1987,
+      "leader": "Raúl Soto",
+      "leaderTitle": "President",
       "inPower": false,
+      "inExecutive": false,
+      "seats": 10,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "logoMeaning": {
+        "description": "The Party for Democracy logo features design elements symbolizing democratic participation, social progress, and centre-left values. Founded during Chile's transition to democracy, the logo embodies the party's commitment to democratic socialism, social democracy, and progressive institutional reform. The design reflects the party's belief in democratic governance combined with social and economic justice.",
+        "sources": [
+          {
+            "title": "Party for Democracy (Chile) – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Party_for_Democracy_(Chile)"
+          },
+          {
+            "title": "Partido por la Democracia – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Partido_por_la_Democracia"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Party for Democracy — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Party_for_Democracy_(Chile)"
+        },
+        {
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
+        }
+      ]
+    },
+    {
+      "id": "CL-PDC",
+      "country": "CL",
+      "shortName": "PDC",
+      "name": "Partido Demócrata Cristiano",
+      "nameEn": "Christian Democratic Party",
+      "logo": "party-logos/cl/pdc.svg",
+      "sha256": "c0639d126df0c236c6ac11a5c5776e9a423e1655a5ded9f085d2ea3b75dcfadf",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Christian_Democrat_Party_of_Chile.svg",
+      "ideology": [
+        "Christian democracy",
+        "Centre-right",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre",
+      "founded": 1957,
+      "leader": "Álvaro Ortiz Vera",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 8,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "logoMeaning": {
+        "description": "The Christian Democracy Party logo features a white cross symbolizing Christian values and faith-based principles. The shield design emphasizes institutional strength, democratic commitment, and social conservatism rooted in Christian democracy's belief that democratic systems must be grounded in moral and spiritual values. The logo represents the party's historical role as a centrist force advocating for social progress within a Christian ethical framework.",
+        "sources": [
+          {
+            "title": "Christian Democracy Party (Chile) – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Christian_Democracy_Party_(Chile)"
+          },
+          {
+            "title": "Partido Demócrata Cristiano – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Partido_Democr%C3%A1ta_Cristiano"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Christian Democratic Party — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democratic_Party_(Chile)"
+        },
+        {
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
+        }
+      ]
+    },
+    {
+      "id": "CL-PNL",
+      "country": "CL",
+      "shortName": "PNL",
+      "name": "Partido Nacional Libertario",
+      "nameEn": "National Libertarian Party",
+      "logo": "party-logos/cl/pnl.svg",
+      "sha256": "fe5736af263d64f2f0845b4f0f0d83080870363c0642ab4e96a1c3ebc52b1e0a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Nacional_Libertario.svg",
+      "ideology": [
+        "Market fundamentalism",
+        "Paleolibertarianism",
+        "Ultraconservatism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2024,
+      "leader": "Johannes Kaiser",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
       "seats": 8,
       "seatsTotal": 155,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Socialist Party of Chile – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Socialist_Party_of_Chile"
+          "title": "National Libertarian Party — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/National_Libertarian_Party"
         },
         {
-          "title": "2021 Chilean general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2021_Chilean_general_election"
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
+        }
+      ]
+    },
+    {
+      "id": "CL-PL",
+      "country": "CL",
+      "shortName": "PL",
+      "name": "Partido Liberal de Chile",
+      "nameEn": "Liberal Party of Chile",
+      "logo": "party-logos/cl/pl.svg",
+      "sha256": "8e0fe5fb9626a9cf6d36d130e1e0489c27c8ea315589f18eebce9005735edf5c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Liberal_Party_of_Chile.svg",
+      "ideology": [
+        "Social liberalism",
+        "Progressivism",
+        "Green liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2013,
+      "leader": "Juan Carlos Urzúa",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 3,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Liberal Party of Chile — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Party_(Chile,_2013)"
+        },
+        {
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
+        }
+      ]
+    },
+    {
+      "id": "CL-EVOPOLI",
+      "country": "CL",
+      "shortName": "Evópoli",
+      "name": "Evolución Política",
+      "nameEn": "Political Evolution",
+      "logo": "party-logos/cl/evopoli.png",
+      "sha256": "60fe03938a9b7c4a37523a8a1cb87341b4c58979fca3e6cb68266ed95a7417bc",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Political%20Evolution%2C%20Ev%C3%B3poli%2C%20party%20logo%2C%20Chile.png",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia under a fair-use rationale; bundled here to identify Evópoli, not to imply endorsement. Replace if a freely-licensed file becomes available.",
+      "ideology": [
+        "Liberal conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2012,
+      "leader": "Luciano Cruz-Coke",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 2,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Political Evolution — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Political_Evolution"
+        },
+        {
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
         }
       ]
     },
@@ -10877,12 +11108,23 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "CL-PRCH",
       "country": "CL",
       "shortName": "PR",
-      "name": "Partido Radical Chileno",
+      "name": "Partido Radical de Chile",
       "nameEn": "Radical Party of Chile",
       "logo": "party-logos/cl/prch.svg",
-      "sha256": "64828f923732cca4503abf628e3e3c0bbccf9ea908a6b00e7b0c2da59b63e785",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Radical_Party_of_Chile_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "sha256": "72b2ccc29de1b8cefc96cca5d20f224c7d33776727624b30b50d19b83677729a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblema_Partido_Radical_Chile.svg",
+      "ideology": [
+        "Radicalism",
+        "Social liberalism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "founded": 1863,
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 1,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The Radical Party logo embodies Chile's oldest political tradition, representing radical liberalism, secularism, and centre-left progressivism. Founded in 1863, the party has championed democratic reform, separation of church and state, and educational advancement. The logo symbolizes the party's historical commitment to radical democracy, institutional reform, and secular values that have shaped modern Chile's democratic development.",
         "sources": [
@@ -10896,24 +11138,49 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Radicalism", "Centre-left", "Secularism"],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
-      "founded": 1863,
-      "leader": "Vlado Mirosevic",
-      "leaderTitle": "Party President",
-      "inPower": false,
-      "seats": 3,
+      "sources": [
+        {
+          "title": "Radical Party of Chile — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Radical_Party_of_Chile_(2018)"
+        },
+        {
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
+        }
+      ]
+    },
+    {
+      "id": "CL-DEMOCRATAS",
+      "country": "CL",
+      "shortName": "Demócratas",
+      "name": "Demócratas",
+      "nameEn": "Democrats",
+      "logo": "party-logos/cl/democratas.png",
+      "sha256": "24dd3337a1af4b07c7e4f7ed0fc8955102997032c4905ecceadff5c876545604",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Dem%C3%B3cratas_Chile.png",
+      "ideology": [
+        "Moderate conservatism",
+        "Christian humanism",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2022,
+      "leader": "Ximena Rincón",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 1,
       "seatsTotal": 155,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Radical Party of Chile – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Radical_Party_of_Chile"
+          "title": "Democrats — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Democrats_(Chile)"
         },
         {
-          "title": "2021 Chilean general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2021_Chilean_general_election"
+          "title": "Chamber of Deputies of Chile — Wikipedia (composition after the 16 November 2025 general election: Government 67, supported by 8, independents 15, opposition 65, of 155)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
         }
       ]
     }
