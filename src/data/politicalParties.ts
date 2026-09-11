@@ -14809,29 +14809,35 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "CPP",
       "name": "គណបក្សប្រជាជនកម្ពុជា",
       "nameEn": "Cambodian People's Party",
-      "logo": "party-logos/kh/cpp.svg",
-      "sha256": "058bf3df2fdcefcdf89d9fa389414701e342539514b5dc5764639c26a2ffe984",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Cambodian_People%27s_Party_logo.svg",
-      "ideology": ["Conservatism", "Economic liberalism", "Nationalism"],
+      "logo": "party-logos/kh/cpp.png",
+      "sha256": "f6892c25ff47d329062a4c8b9a92fe98ec690eedee7a575d8268651a9db40d8c",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Cpplogo.PNG",
+      "licenceNote": "Non-free party emblem hosted on English Wikipedia under a fair-use rationale; bundled here to identify the Cambodian People's Party, not to imply endorsement. It replaces a Commons file categorised as an unidentified logo.",
+      "ideology": [
+        "Conservatism",
+        "Economic liberalism",
+        "Nationalism"
+      ],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1951,
-      "leader": "Hun Manet",
-      "leaderTitle": "Prime Minister",
+      "leader": "Hun Sen",
+      "leaderTitle": "President",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "1979–present",
       "seats": 120,
       "seatsTotal": 125,
       "chamberName": "National Assembly",
       "logoMeaning": {
-      "description": "The Cambodian People's Party emblem features the Devata (Thevada), a Buddhist celestial angel scattering flowers of peace and prosperity from heaven, set within a circle of light and golden lotus petals symbolising national harmony and the rebirth of Cambodia.",
-      "sources": [
-              {
-                      "title": "Cambodian People's Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Cambodian_People%27s_Party"
-              }
-      ]
-},
+        "description": "The Cambodian People's Party emblem features the Devata (Thevada), a Buddhist celestial angel scattering flowers of peace and prosperity from heaven, set within a circle of light and golden lotus petals symbolising national harmony and the rebirth of Cambodia.",
+        "sources": [
+          {
+            "title": "Cambodian People's Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cambodian_People%27s_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Cambodian People's Party — Wikipedia",
@@ -14840,6 +14846,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "National Election Committee of Cambodia",
           "url": "https://www.nec.gov.kh/"
+        },
+        {
+          "title": "National Assembly (Cambodia) — Wikipedia (125 members, elected 23 July 2023: CPP 120 in government, FUNCINPEC 5 on confidence and supply)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Cambodia)"
         }
       ]
     },
@@ -14849,32 +14859,41 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "FUNCINPEC",
       "name": "ហ្វ៊ុនស៊ិនប៉ិច",
       "nameEn": "National United Front for an Independent, Neutral, Peaceful and Cooperative Cambodia",
-      "logo": "party-logos/kh/funcinpec.svg",
+      "logo": "party-logos/kh/funcinpec.png",
       "sha256": "44d2036c218b8f646cd4f46dac084d9f646ee792c6e092cbbefadffa62034f7d",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:FUNCINPEC_logo.svg",
-      "ideology": ["Royalism", "National conservatism", "Economic liberalism"],
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:FUNCINPEC_logo.png",
+      "ideology": [
+        "Royalism",
+        "National conservatism",
+        "Economic liberalism"
+      ],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1981,
       "leader": "Norodom Chakravuth",
       "leaderTitle": "President",
       "inPower": false,
+      "inExecutive": false,
       "seats": 5,
       "seatsTotal": 125,
       "chamberName": "National Assembly",
       "logoMeaning": {
-      "description": "The FUNCINPEC emblem features the sacred royal bird Hong (Hamsa / celestial swan) inside a royal blue circle, symbolising the Cambodian monarchy, royalist heritage, national independence, and Buddhist principles.",
-      "sources": [
-              {
-                      "title": "FUNCINPEC — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/FUNCINPEC"
-              }
-      ]
-},
+        "description": "The FUNCINPEC emblem features the sacred royal bird Hong (Hamsa / celestial swan) inside a royal blue circle, symbolising the Cambodian monarchy, royalist heritage, national independence, and Buddhist principles.",
+        "sources": [
+          {
+            "title": "FUNCINPEC — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/FUNCINPEC"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "FUNCINPEC — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/FUNCINPEC"
+        },
+        {
+          "title": "National Assembly (Cambodia) — Wikipedia (125 members, elected 23 July 2023: CPP 120 in government, FUNCINPEC 5 on confidence and supply)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Cambodia)"
         }
       ]
     }
