@@ -12569,31 +12569,38 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Communist Party of Vietnam",
       "logo": "party-logos/vn/cpv.svg",
       "sha256": "39479cb61a0da56a473e2d2da356b8e311e803b8763476f8de49b59346e0d7ea",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Communist_Party_of_Vietnam.svg",
-      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
-      "ideology": ["Communism", "Marxism-Leninism", "Vietnamese nationalism"],
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Communist_Party_of_Vietnam_flag_logo.svg",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism"
+      ],
       "ideologyPosition": "far-left",
       "positionRaw": "Far-left",
       "founded": 1930,
-      "leader": "Nguyễn Phú Trọng",
+      "leader": "Tô Lâm",
       "leaderTitle": "General Secretary",
       "inPower": true,
+      "inExecutive": true,
       "seats": 482,
       "seatsTotal": 500,
       "chamberName": "National Assembly",
       "logoMeaning": {
-      "description": "The emblem of the Communist Party of Vietnam features a golden crossed hammer and sickle on a red background. The hammer represents industrial workers, the sickle represents agricultural peasants, and the red field represents the blood of revolutionary martyrs and the cause of socialism.",
-      "sources": [
-              {
-                      "title": "Communist Party of Vietnam – Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Vietnam"
-              }
-      ]
-},
+        "description": "The emblem of the Communist Party of Vietnam features a golden crossed hammer and sickle on a red background. The hammer represents industrial workers, the sickle represents agricultural peasants, and the red field represents the blood of revolutionary martyrs and the cause of socialism.",
+        "sources": [
+          {
+            "title": "Communist Party of Vietnam – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Vietnam"
+          }
+        ]
+      },
       "sources": [
         {
-          "title": "Communist Party of Vietnam – Wikipedia",
+          "title": "Communist Party of Vietnam — Wikipedia (infobox: founded 3 February 1930, ideology, position Far-left, General Secretary Tô Lâm)",
           "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Vietnam"
+        },
+        {
+          "title": "National Assembly of Vietnam — Wikipedia (political groups: Vietnamese Fatherland Front 500 — CPV 482, independents 18; elected 15 March 2026)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Vietnam)"
         }
       ]
     }

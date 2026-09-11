@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 5 / 195.**
+**Countries audited: 6 / 195.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -51,6 +51,7 @@ forgotten; it is tracked here.
 | 🇧🇷 Brazil | `#1315` | 12 → 22 | **513 / 513** | **WRONG — S1, worst so far** |
 | 🇲🇲 Myanmar | `#1317` | not covered (decision recorded) | — | **OUT OF SCOPE, documented** |
 | 🇹🇭 Thailand | `#1317` | 20 → 20 | 497 / 500 | **NEARLY CURRENT — S2/S3** |
+| 🇻🇳 Vietnam | `#1318` | 1 → 1 | 482 / 500 | **WRONG — S1 (deceased leader)** |
 
 ---
 
@@ -247,6 +248,22 @@ recorded here rather than hidden.
 **Visual verification:** 20 cards, all 16 bundled logos asserted painted, the four "No free image"
 cards correct, in-power badges correct.
 
+### 🇻🇳 Vietnam — audited 2026-09-11
+
+One party, one seat figure, and it was **right** — 482 of 500, the balance being 18 independents,
+matching the National Assembly elected 15 March 2026 exactly. The failure was the person.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-031 | **S1** | `VN-CPV.leader` | **Nguyễn Phú Trọng** | **Tô Lâm** | Nguyễn Phú Trọng **died in July 2024**. The app was naming a dead man as Vietnam's current leader — the single most damaging kind of staleness in this dataset, and invisible to every structural check |
+| PP-032 | **S3** | `inExecutive` | absent | `true` | The CPV is the sole governing party; its General Secretary heads the state |
+| PP-033 | **S4** | `logoSourceUrl` | `en.wikipedia.org/…/File:Communist_Party_of_Vietnam.svg`, with a non-free `licenceNote` | the Commons file whose **SHA-1 matches the bundled bytes**: `File:Communist_Party_of_Vietnam_flag_logo.svg`; `licenceNote` dropped as it is Commons-hosted | Content-hash provenance, as established in Brazil |
+| PP-034 | — | `ideology` | "Marxism-Leninism" (hyphen) | "Marxism–Leninism" (en dash, as the source writes it) | quoted verbatim per the sourcing rule |
+
+**Method note.** The SHA-1 provenance check is now run for **every** country, not just where a logo
+looks wrong. Two countries in, it has caught two mis-recorded source URLs out of 22 logos checked —
+a hand-recorded URL is simply not reliable evidence of what the bundled bytes are.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -263,7 +280,7 @@ Tick a box only when that country's fix is **merged and live**.
 
 - [x] `MM` Myanmar — audited, deliberately out of scope
 - [x] `TH` Thailand — merged
-- [ ] `VN` Vietnam
+- [x] `VN` Vietnam — merged
 - [ ] `ID` Indonesia
 - [ ] `PH` Philippines
 - [ ] `SG` Singapore
