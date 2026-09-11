@@ -11156,9 +11156,12 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Indonesian Democratic Party of Struggle",
       "logo": "party-logos/id/pdip.svg",
       "sha256": "f3f761dfa60b9774ff50f70e8cfc2f7f8f280ff8c5bc024fc29577c33ecb189b",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PDI-P_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Nationalism", "Centre-left", "Populism"],
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PDI_Perjuangan.svg",
+      "ideology": [
+        "Nationalism",
+        "Centre-left",
+        "Populism"
+      ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 1999,
@@ -11166,18 +11169,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Chairperson",
       "inPower": false,
       "inExecutive": false,
-      "seats": 128,
-      "seatsTotal": 575,
-      "chamberName": "People's Consultative Assembly",
+      "seats": 110,
+      "seatsTotal": 580,
+      "chamberName": "People's Representative Council (DPR)",
       "logoMeaning": {
-      "description": "The PDI-P logo features a fierce black bull head (banteng moncong putih) with white snout and horns inside a red circular field. The banteng is a historic Indonesian nationalist symbol representing resilience, mass popular struggle, and democratic solidarity rooted in the teachings of Sukarno.",
-      "sources": [
-              {
-                      "title": "Indonesian Democratic Party of Struggle – Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Indonesian_Democratic_Party_of_Struggle"
-              }
-      ]
-},
+        "description": "The PDI-P logo features a fierce black bull head (banteng moncong putih) with white snout and horns inside a red circular field. The banteng is a historic Indonesian nationalist symbol representing resilience, mass popular struggle, and democratic solidarity rooted in the teachings of Sukarno.",
+        "sources": [
+          {
+            "title": "Indonesian Democratic Party of Struggle – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Indonesian_Democratic_Party_of_Struggle"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Indonesian Democratic Party of Struggle – Wikipedia",
@@ -11186,6 +11189,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Indonesian general election – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        },
+        {
+          "title": "House of Representatives (Indonesia) — Wikipedia, seats per Template:DPR RI (580 members, elected 14 February 2024): Government/KIM 348, confidence-and-supply/KIM+ 122, check-and-balance 110",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Representative_Council"
         }
       ]
     },
@@ -11195,32 +11202,35 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Golkar",
       "name": "Golongan Karya",
       "nameEn": "Functional Groups",
-      "logo": "party-logos/id/golkar.png",
-      "sha256": "8121fb18393cf961dedce4f81eb4b425e607d10471a503a00ac6b341938d5961",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Golkar_logo.png",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Centrism", "Pragmatism", "Developmentalism"],
+      "logo": "party-logos/id/golkar.svg",
+      "sha256": "7ec9cc3cc134e0ed32c758a8baab5c4640ab89418c20f369caaab13d87311d81",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Golkar.svg",
+      "ideology": [
+        "Centrism",
+        "Pragmatism",
+        "Developmentalism"
+      ],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 1964,
-      "leader": "Airlangga Hartarto",
+      "coalitionId": "ID-KIM",
+      "leader": "Bahlil Lahadalia",
       "leaderTitle": "Chairman",
       "inPower": true,
       "inExecutive": true,
       "timeInPower": "2019-present",
-      "seats": 97,
-      "seatsTotal": 575,
-      "chamberName": "People's Consultative Assembly",
-      "coalitionId": "ID-KIM",
+      "seats": 102,
+      "seatsTotal": 580,
+      "chamberName": "People's Representative Council (DPR)",
       "logoMeaning": {
-      "description": "The Golkar emblem displays a golden banyan tree (Pohon Beringin) set against a yellow shield flanked by stalks of rice and cotton, with a five-pointed star above. The banyan tree symbolises shelter, strength, and national unity across Indonesia's diverse archipelagic communities, while rice and cotton represent prosperity and social justice.",
-      "sources": [
-              {
-                      "title": "Golongan Karya – Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Golongan_Karya"
-              }
-      ]
-},
+        "description": "The Golkar emblem displays a golden banyan tree (Pohon Beringin) set against a yellow shield flanked by stalks of rice and cotton, with a five-pointed star above. The banyan tree symbolises shelter, strength, and national unity across Indonesia's diverse archipelagic communities, while rice and cotton represent prosperity and social justice.",
+        "sources": [
+          {
+            "title": "Golongan Karya – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Golongan_Karya"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Golongan Karya – Wikipedia",
@@ -11229,6 +11239,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Indonesian general election – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        },
+        {
+          "title": "House of Representatives (Indonesia) — Wikipedia, seats per Template:DPR RI (580 members, elected 14 February 2024): Government/KIM 348, confidence-and-supply/KIM+ 122, check-and-balance 110",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Representative_Council"
         }
       ]
     },
@@ -11240,30 +11254,34 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Greater Indonesia Movement Party",
       "logo": "party-logos/id/gerindra.svg",
       "sha256": "cfd32e248c7f832c6f4af23f2bdf84e10d096e7e975ced034652c62eb005801f",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Gerindra_logo.svg",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partai_Gerakan_Indonesia_Raya_Logo.svg",
       "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Nationalism", "Right-wing", "Populism"],
+      "ideology": [
+        "Nationalism",
+        "Right-wing",
+        "Populism"
+      ],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
       "founded": 2008,
+      "coalitionId": "ID-KIM",
       "leader": "Prabowo Subianto",
       "leaderTitle": "Chairman (President, 2024–present)",
       "inPower": true,
       "inExecutive": true,
       "timeInPower": "2024-present",
-      "seats": 112,
-      "seatsTotal": 575,
-      "chamberName": "People's Consultative Assembly",
-      "coalitionId": "ID-KIM",
+      "seats": 86,
+      "seatsTotal": 580,
+      "chamberName": "People's Representative Council (DPR)",
       "logoMeaning": {
-      "description": "The Gerindra logo features the golden head of the mythical Garuda bird inside a red circular frame surmounted by a five-pointed star. The Garuda represents national sovereignty, courage, and pride in Indonesian identity, with gold denoting nobility and red denoting bravery.",
-      "sources": [
-              {
-                      "title": "Greater Indonesia Movement Party – Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Greater_Indonesia_Movement_Party"
-              }
-      ]
-},
+        "description": "The Gerindra logo features the golden head of the mythical Garuda bird inside a red circular frame surmounted by a five-pointed star. The Garuda represents national sovereignty, courage, and pride in Indonesian identity, with gold denoting nobility and red denoting bravery.",
+        "sources": [
+          {
+            "title": "Greater Indonesia Movement Party – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Greater_Indonesia_Movement_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Greater Indonesia Movement Party – Wikipedia",
@@ -11272,6 +11290,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Indonesian general election – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        },
+        {
+          "title": "House of Representatives (Indonesia) — Wikipedia, seats per Template:DPR RI (580 members, elected 14 February 2024): Government/KIM 348, confidence-and-supply/KIM+ 122, check-and-balance 110",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Representative_Council"
         }
       ]
     },
@@ -11281,11 +11303,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PKB",
       "name": "Partai Kebangkitan Bangsa",
       "nameEn": "National Awakening Party",
-      "logo": "party-logos/id/pkb.png",
-      "sha256": "09385eb1b1039061ce9d7a763adf53c4da5512327c4846ea197e660ad142da4b",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PKB_logo.png",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Islamism", "Centre", "Pluralism"],
+      "logo": "party-logos/id/pkb-2024.png",
+      "sha256": "92b2995a7b7e6fc04a0b031fb9f7c3f65f320efe33afad6e7f31d4bf69d327a6",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PKB_2024.png",
+      "ideology": [
+        "Islamism",
+        "Centre",
+        "Pluralism"
+      ],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 1998,
@@ -11294,18 +11319,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "inPower": true,
       "inExecutive": true,
       "timeInPower": "2024-present",
-      "seats": 58,
-      "seatsTotal": 575,
-      "chamberName": "People's Consultative Assembly",
+      "seats": 68,
+      "seatsTotal": 580,
+      "chamberName": "People's Representative Council (DPR)",
       "logoMeaning": {
-      "description": "The PKB logo depicts a green globe of the Earth surrounded by nine golden stars on an emerald field with Arabic calligraphy. The central and largest star represents Prophet Muhammad, four stars represent the Khulafaur Rasyidin, and four represent the four Mazhabs, reflecting the moderate, pluralistic Islamic heritage of Nahdlatul Ulama.",
-      "sources": [
-              {
-                      "title": "National Awakening Party – Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/National_Awakening_Party"
-              }
-      ]
-},
+        "description": "The PKB logo depicts a green globe of the Earth surrounded by nine golden stars on an emerald field with Arabic calligraphy. The central and largest star represents Prophet Muhammad, four stars represent the Khulafaur Rasyidin, and four represent the four Mazhabs, reflecting the moderate, pluralistic Islamic heritage of Nahdlatul Ulama.",
+        "sources": [
+          {
+            "title": "National Awakening Party – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/National_Awakening_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "National Awakening Party – Wikipedia",
@@ -11314,6 +11339,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Indonesian general election – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        },
+        {
+          "title": "House of Representatives (Indonesia) — Wikipedia, seats per Template:DPR RI (580 members, elected 14 February 2024): Government/KIM 348, confidence-and-supply/KIM+ 122, check-and-balance 110",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Representative_Council"
         }
       ]
     },
@@ -11323,30 +11352,33 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "NasDem",
       "name": "Partai NasDem",
       "nameEn": "NasDem Party",
-      "logo": "party-logos/id/nasdem.svg",
-      "sha256": "ce246417ca6f27a51995b3b079f90af58f58c5f23373b95f99696eb2addc8e3d",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partai_NasDem_(2014).svg",
-      "ideology": ["Nationalism", "Secularism", "Pancasila"],
+      "logo": "party-logos/id/nasdem-2024.png",
+      "sha256": "86ab12f5915e18e1d9bb94373bc018ddef832abaad67de807085a0a9b0261c6b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Utama_Partai_NasDem.png",
+      "ideology": [
+        "Nationalism",
+        "Secularism",
+        "Pancasila"
+      ],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 2011,
       "leader": "Surya Paloh",
       "leaderTitle": "General Chair",
-      "inPower": true,
+      "inPower": false,
       "inExecutive": false,
-      "timeInPower": "2024-present",
       "seats": 69,
       "seatsTotal": 580,
       "chamberName": "People's Representative Council (DPR)",
       "logoMeaning": {
-      "description": "The NasDem logo features two interlocking circular arcs in deep blue and bright orange forming a unified circle. Blue represents deep thought, peace, and stability, while vibrant orange represents dynamism, optimism, and the movement for national restoration (Restorasi Indonesia).",
-      "sources": [
-              {
-                      "title": "Nasdem Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Nasdem_Party"
-              }
-      ]
-},
+        "description": "The NasDem logo features two interlocking circular arcs in deep blue and bright orange forming a unified circle. Blue represents deep thought, peace, and stability, while vibrant orange represents dynamism, optimism, and the movement for national restoration (Restorasi Indonesia).",
+        "sources": [
+          {
+            "title": "Nasdem Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Nasdem_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Nasdem Party — Wikipedia",
@@ -11355,6 +11387,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Indonesian general election — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        },
+        {
+          "title": "House of Representatives (Indonesia) — Wikipedia, seats per Template:DPR RI (580 members, elected 14 February 2024): Government/KIM 348, confidence-and-supply/KIM+ 122, check-and-balance 110",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Representative_Council"
         }
       ]
     },
@@ -11366,12 +11402,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Prosperous Justice Party",
       "logo": "party-logos/id/pks.svg",
       "sha256": "98e09bbcc6029c94b9cba0b1c450fac22c0acf82d2563faa123150059084a789",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partai_Keadilan_Sejahtera_(2020).svg",
-      "ideology": ["Islamism", "Religious conservatism", "Social conservatism"],
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PKS_logo_2020.svg",
+      "ideology": [
+        "Islamism",
+        "Religious conservatism",
+        "Social conservatism"
+      ],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
       "founded": 1998,
-      "leader": "Ahmad Syaikhu",
+      "leader": "Sohibul Iman",
       "leaderTitle": "President",
       "inPower": false,
       "inExecutive": false,
@@ -11379,14 +11419,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 580,
       "chamberName": "People's Representative Council (DPR)",
       "logoMeaning": {
-      "description": "The PKS logo consists of two yellow crescent moons framing a central stalk of rice on a vibrant orange square. The crescents represent Islamic renewal, the rice stalk represents social welfare and justice, and orange represents warmth, optimism, and service to the community.",
-      "sources": [
-              {
-                      "title": "Prosperous Justice Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Prosperous_Justice_Party"
-              }
-      ]
-},
+        "description": "The PKS logo consists of two yellow crescent moons framing a central stalk of rice on a vibrant orange square. The crescents represent Islamic renewal, the rice stalk represents social welfare and justice, and orange represents warmth, optimism, and service to the community.",
+        "sources": [
+          {
+            "title": "Prosperous Justice Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Prosperous_Justice_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Prosperous Justice Party — Wikipedia",
@@ -11395,6 +11435,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Indonesian general election — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        },
+        {
+          "title": "House of Representatives (Indonesia) — Wikipedia, seats per Template:DPR RI (580 members, elected 14 February 2024): Government/KIM 348, confidence-and-supply/KIM+ 122, check-and-balance 110",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Representative_Council"
         }
       ]
     },
@@ -11404,13 +11448,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PAN",
       "name": "Partai Amanat Nasional",
       "nameEn": "National Mandate Party",
-      "logo": "party-logos/id/pan.svg",
-      "sha256": "77e1d59e3e4e1362c9367d95a8b7824bda0b8eb1b9e90e094d9f42f04936f358",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_National_Mandate_Party.svg",
-      "ideology": ["Pancasila", "Islamic democracy", "Liberal nationalism"],
+      "logo": "party-logos/id/pan.png",
+      "sha256": "77d9ce0e91c990ecd7a13fe74eb6678d9d4deb4434627d51dd3ee58b44efff8f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partai_Amanat_Nasional_2024.png",
+      "ideology": [
+        "Pancasila",
+        "Islamic democracy",
+        "Liberal nationalism"
+      ],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 1998,
+      "coalitionId": "ID-KIM",
       "leader": "Zulkifli Hasan",
       "leaderTitle": "General Chair",
       "inPower": true,
@@ -11419,16 +11468,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 48,
       "seatsTotal": 580,
       "chamberName": "People's Representative Council (DPR)",
-      "coalitionId": "ID-KIM",
       "logoMeaning": {
-      "description": "The PAN logo depicts a radiant white sun with 32 rays shining across a deep blue background. The radiant sun symbolises enlightenment, morality, truth, and universal life bringing guidance and reform to all elements of the Indonesian nation.",
-      "sources": [
-              {
-                      "title": "National Mandate Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/National_Mandate_Party"
-              }
-      ]
-},
+        "description": "The PAN logo depicts a radiant white sun with 32 rays shining across a deep blue background. The radiant sun symbolises enlightenment, morality, truth, and universal life bringing guidance and reform to all elements of the Indonesian nation.",
+        "sources": [
+          {
+            "title": "National Mandate Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/National_Mandate_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "National Mandate Party — Wikipedia",
@@ -11437,6 +11485,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Indonesian general election — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        },
+        {
+          "title": "House of Representatives (Indonesia) — Wikipedia, seats per Template:DPR RI (580 members, elected 14 February 2024): Government/KIM 348, confidence-and-supply/KIM+ 122, check-and-balance 110",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Representative_Council"
         }
       ]
     },
@@ -11448,11 +11500,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Democratic Party",
       "logo": "party-logos/id/demokrat.svg",
       "sha256": "f3123603fa1de57283a925c3455a9d5e533897d7449ef26556283a775057feb9",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partai_Demokrat_Logo.svg",
-      "ideology": ["Pancasila", "Centrism", "Social liberalism"],
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Democratic_Party_(Indonesia).svg",
+      "ideology": [
+        "Pancasila",
+        "Centrism",
+        "Social liberalism"
+      ],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 2001,
+      "coalitionId": "ID-KIM",
       "leader": "Agus Harimurti Yudhoyono",
       "leaderTitle": "General Chair",
       "inPower": true,
@@ -11461,16 +11518,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 44,
       "seatsTotal": 580,
       "chamberName": "People's Representative Council (DPR)",
-      "coalitionId": "ID-KIM",
       "logoMeaning": {
-      "description": "The Democratic Party logo displays a three-pointed glowing star in blue and red against a dual-color shield. The three points symbolise nationalism, religious pluralism, and humanism, reflecting the party's centrist and Pancasila-aligned philosophy.",
-      "sources": [
-              {
-                      "title": "Democratic Party (Indonesia) — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Indonesia)"
-              }
-      ]
-},
+        "description": "The Democratic Party logo displays a three-pointed glowing star in blue and red against a dual-color shield. The three points symbolise nationalism, religious pluralism, and humanism, reflecting the party's centrist and Pancasila-aligned philosophy.",
+        "sources": [
+          {
+            "title": "Democratic Party (Indonesia) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Indonesia)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Democratic Party (Indonesia) — Wikipedia",
@@ -11479,6 +11535,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Indonesian general election — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Indonesian_general_election"
+        },
+        {
+          "title": "House of Representatives (Indonesia) — Wikipedia, seats per Template:DPR RI (580 members, elected 14 February 2024): Government/KIM 348, confidence-and-supply/KIM+ 122, check-and-balance 110",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Representative_Council"
         }
       ]
     }
