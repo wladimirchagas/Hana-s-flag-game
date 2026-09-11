@@ -42,12 +42,13 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 2 / 195.**
+**Countries audited: 3 / 195.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
 | 🇦🇺 Australia | `#1313` | 3 → 9 | 142 / 150 | **STALE — S1** |
 | 🇲🇾 Malaysia | `#1314` | 22 → 22 | 212 / 222 | **CURRENT on seats — S2/S3 elsewhere** |
+| 🇧🇷 Brazil | `#1315` | 12 → 22 | **513 / 513** | **WRONG — S1, worst so far** |
 
 ---
 
@@ -140,6 +141,57 @@ WAWASAN's rename from Parti Cinta Malaysia on 13 June 2026 and PBM's from Sarawa
 **Visual verification:** 22 cards, 21 logos asserted painted, PBM correctly rendering its "No free
 image" card, In-power and coalition badges correct, GRS now grouped under Centre. No console errors.
 
+### 🇧🇷 Brazil — audited 2026-09-11
+
+The worst country found so far. **Ten of the twelve seat figures were wrong, ten parties were
+missing — including PL, the largest party in the Chamber with 98 seats — and five parties carried
+the wrong leader, one of them a deputy who belongs to a different party.**
+
+**A better source, and why it matters.** English Wikipedia's Chamber-of-Deputies infobox lists party
+figures that sum to **515 of 513** — an impossible total, so it cannot be used as the seat authority.
+The Câmara dos Deputados publishes its own bench as open data
+([`/api/v2/deputados`](https://dadosabertos.camara.leg.br/api/v2/deputados)); it returns all 513
+sitting deputies, and the party tally sums to exactly 513. Every seat figure here now comes from
+that official source. Government/opposition status comes from the
+[Second cabinet of Lula da Silva](https://en.wikipedia.org/wiki/Second_cabinet_of_Lula_da_Silva)
+(its supporting-parties table and the cabinet's own party key), and identity facts from each party's
+own article.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-014 | **S3** | coverage | 12 parties, 364 / 513 | **22 parties, 513 / 513** | Missing: **PL 98**, PSB 17, PDT 9, NOVO 5, Avante 5, Solidariedade 4, REDE 3, PRD 3, DC 1, MISSÃO 1. Nine of their logos were already bundled and unreferenced; DC's was sourced and bundled in this change |
+| PP-015 | **S1** | `seats` | 10 of 12 wrong | corrected | e.g. PODEMOS 11 → **27**, PSDB 33 → **18**, CIDADANIA 9 → **2**, UNIÃO 58 → **52**, PSD 43 → **48**, PP 41 → **46**, PCdoB 6 → **11** |
+| PP-016 | **S1** | `leader` | PV led by **Sâmia Bomfim** — a PSOL deputy, not PV's president | José Luiz Penna | PV's own infobox |
+| PP-017 | **S1** | `leader` | PSOL **Edmilson Rodrigues**; PODEMOS **Ciro Gomes**; PSDB **Bruno Araújo**; Cidadania **Roberto Freire** | Paula Coradi; Renata Abreu; Aécio Neves; Comte Bittencourt | each party's infobox |
+| PP-018 | **S1** | `founded` | PSD **1945** | **2011** | 1945 is the *defunct* PSD of the Vargas era — a different party entirely |
+| PP-019 | **S2** | `founded` | PP 1965; PODEMOS 2015; Republicanos 1989; Cidadania 1988 | 1995; 1995; 2003; 1992 | party infoboxes |
+| PP-020 | **S1** | `ideologyPosition`, `ideology` | PODEMOS recorded as **left-wing / social democracy / environmentalism** | **centre-right**, economic liberalism, anti-corruption | Podemos is a centre-right party; the entry described a different party altogether |
+| PP-021 | **S2** | `ideologyPosition` | PSD, MDB, PSDB all `centre` | all `centre-right`, each with its source's own `positionRaw` | infobox positions ("Centre to centre-right") |
+| PP-022 | **S3** | `inPower` / `inExecutive` | only PT in power; `inExecutive` false everywhere | **14 in power, 11 holding ministries** | the cabinet's party key: PT 19 ministries, PSB 6, PDT/MDB/PSD/UNIÃO 3 each, PSOL 2, Republicanos/PCdoB/REDE/PP 1 each. PV, Avante and Solidariedade are coalition members without portfolios |
+| PP-023 | **S1** | coalition identity | `BR-FE` named **"Frente Ampla"** (a different organisation) with a URL to match | **Federação Brasil da Esperança** / Brazil of Hope | The PT–PCdoB–PV federation registered in 2022 |
+| PP-024 | **S4** | coalition URLs | `BR-UP` cited `…/wiki/Unionão_Progressista` — a malformed title that 404s; `BR-AF` cited `…/wiki/Sempre_Frente` | both re-pointed at the live articles | Link-integrity pass |
+| PP-025 | **S3** | missing coalitions | 3 federations | **5** — added `BR-PSOLREDE` (PSOL + REDE) and `BR-RS` (Solidariedade + PRD) | Both are federations the Chamber counts as single blocs |
+| PP-026 | **S4** | `logoSourceUrl` | recorded by hand; `BR-PSD` cited the **Brazilian Democratic Movement** article | every logo re-pointed at the Commons file whose **SHA-1 matches the bundled bytes exactly** | All 21 bundled logos were matched to Commons by content hash, not by trusting the recorded URL. This is now the standard provenance method for the sweep |
+
+**Judgement calls.**
+
+1. **`inPower` is the union of the cabinet's "government parties" and the parties actually holding
+   ministries.** Brazil's coalition politics puts PSD, MDB, Republicanos, UNIÃO, PP and PDT in the
+   cabinet while the Chamber classifies them as *Independent*; recording them as out of power would
+   contradict their ministers. The Chamber's own classification is cited alongside so a reader can
+   see both.
+2. **REDE's `ideologyPosition` is `other`.** Its infobox gives two opposite axes ("Social:
+   left-wing; Fiscal: right-wing") and no single bucket. `other` exists for exactly this.
+3. **MISSÃO carries no leader.** Its infobox names none.
+4. **Cidadania's exit from the PSDB federation is kept as a coalition note** — confirmed: its
+   national directory voted in 2025 to end the federation in 2026, the earliest Brazilian electoral
+   law allows.
+
+**Visual verification:** 22 cards grouped by ideology, all 22 logos asserted painted after scrolling
+the full grid, executive/legislative badges and all five federation labels correct. (The console
+shows `ERR_CONNECTION_RESET` for `restcountries.com`, which is blocked in this environment and
+unrelated to party data — the bundled-fallback rule covers it.)
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -150,7 +202,7 @@ Tick a box only when that country's fix is **merged and live**.
 
 - [x] `AU` Australia — merged
 - [x] `MY` Malaysia — merged
-- [ ] `BR` Brazil
+- [x] `BR` Brazil — merged
 
 ### Phase 2 — rest of Southeast Asia (10)
 
