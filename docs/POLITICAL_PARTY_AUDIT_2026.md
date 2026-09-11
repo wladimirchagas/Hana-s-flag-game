@@ -42,13 +42,15 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 3 / 195.**
+**Countries audited: 5 / 195.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
 | 🇦🇺 Australia | `#1313` | 3 → 9 | 142 / 150 | **STALE — S1** |
 | 🇲🇾 Malaysia | `#1314` | 22 → 22 | 212 / 222 | **CURRENT on seats — S2/S3 elsewhere** |
 | 🇧🇷 Brazil | `#1315` | 12 → 22 | **513 / 513** | **WRONG — S1, worst so far** |
+| 🇲🇲 Myanmar | `#1317` | not covered (decision recorded) | — | **OUT OF SCOPE, documented** |
+| 🇹🇭 Thailand | `#1317` | 20 → 20 | 497 / 500 | **NEARLY CURRENT — S2/S3** |
 
 ---
 
@@ -192,6 +194,59 @@ the full grid, executive/legislative badges and all five federation labels corre
 shows `ERR_CONNECTION_RESET` for `restcountries.com`, which is blocked in this environment and
 unrelated to party data — the bundled-fallback rule covers it.)
 
+### 🇲🇲 Myanmar — audited 2026-09-11 · **deliberately out of scope**
+
+Myanmar is absent from the dataset, and after auditing it the absence is **correct** — but it was
+undocumented, which is the failure mode this repo calls out elsewhere ("an omission the user cannot
+see makes an incomplete set look complete"). It is now recorded.
+
+The junta held elections in three phases from 28 December 2025 to 25 January 2026, the first since
+the 2021 coup. The dataset's scope rule admits only competitive multi-party systems, and this
+process does not qualify on its own published record: the 2023 electoral law barred convicted
+persons including Aung San Suu Kyi and Win Myint from standing, the main opposition party was
+dissolved, and the vote is described by the sources as intended to legitimise continued military
+rule. Beyond scope, the arithmetic is not sourceable either — declared Pyithu Hluttaw results
+account for 258 elected seats across 11 parties, constituencies were cancelled for conflict, and a
+quarter of the chamber is appointed by the military rather than elected, so no defensible
+seats/seatsTotal pair exists.
+
+**Decision: leave Myanmar uncovered.** Revisit if a competitively-elected chamber is seated and its
+composition is published. A wrong chamber would be worse than an absent one.
+
+### 🇹🇭 Thailand — audited 2026-09-11
+
+Thailand was the first country found already refreshed past its most recent election — the data
+reflects the **27th House elected 8 February 2026**, not the 2023 parliament. The defects were a
+single wrong seat count, two missing micro-parties, a misused field, and the usual missing
+`inExecutive`.
+
+Verified against the [House of Representatives](https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand))
+political groups (Government 292, Opposition 207, 1 vacant, of 500) and the
+[Second Anutin cabinet](https://en.wikipedia.org/wiki/Second_Anutin_cabinet).
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-027 | **S2** | `TH-BJT.seats` | 192 | **191** | The chamber's own group list. Bhumjaithai leads a 292-seat government under Anutin Charnvirakul |
+| PP-028 | **S1** | `TH-TST.leader` | the string *"Vacant (Sudarat Keyuraphan resigned as party leader on 12 February 2026, saying \"there is no place for idealists\" in current Thai politics)"* | *(omitted)* | The field is a person's name and is rendered as one — a 130-character sentence was being displayed to users as a leader. The resignation is now recorded in a cited source title instead. **Class defect: check every country for prose smuggled into `leader`.** |
+| PP-029 | **S3** | `inExecutive` | absent on all 20 | `true` on the **12** covered parties holding ministries | The cabinet lists thirteen member parties; the thirteenth (New Dimension) is not in the dataset — see below |
+| PP-030 | **S3** | coverage | 20 parties, 497 / 500 | unchanged, gap documented | Two seated parties are **knowingly absent**: **New Dimension** (1 seat, in the cabinet) and **Thai Sub Thawee** (1 seat) |
+
+**Why two seated parties were left out — and the structural finding behind it.**
+Neither has an article in English or Thai Wikipedia; the 2026 election article gives only their names
+and lead candidates (Preecha Khaikaew; Melda Ketwichit). `check-political-parties.mjs` requires a
+plausible `founded` year on every entry, and no source gives one for either party. Inventing a year
+to satisfy the gate is exactly what the sourcing rule forbids, so they are omitted and the gap is
+recorded here rather than hidden.
+
+* **New finding — S5 (structural).** A mandatory `founded` makes a genuinely-new micro-party
+  *unrepresentable*, even when its existence and seat count are beyond doubt from the chamber's own
+  record. Candidate fix: allow `founded` to be omitted when a `foundedUnknownReason` documents the
+  search, exactly as `noImageReason` does for logos. Deferred with **B8** until enough countries are
+  done to size it; both are tracked here so neither is lost.
+
+**Visual verification:** 20 cards, all 16 bundled logos asserted painted, the four "No free image"
+cards correct, in-power badges correct.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -206,8 +261,8 @@ Tick a box only when that country's fix is **merged and live**.
 
 ### Phase 2 — rest of Southeast Asia (10)
 
-- [ ] `MM` Myanmar
-- [ ] `TH` Thailand
+- [x] `MM` Myanmar — audited, deliberately out of scope
+- [x] `TH` Thailand — merged
 - [ ] `VN` Vietnam
 - [ ] `ID` Indonesia
 - [ ] `PH` Philippines
