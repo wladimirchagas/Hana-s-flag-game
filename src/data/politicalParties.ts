@@ -6580,23 +6580,23 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "years": "2008–2011"
         }
       ],
+      "coalitionId": "PH-ALYANSA",
       "leader": "Martin Romualdez",
       "leaderTitle": "National President",
       "inPower": true,
-      "inExecutive": true,
-      "seats": 77,
+      "inExecutive": false,
+      "seats": 76,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
-      "coalitionId": "PH-ALYANSA",
       "logoMeaning": {
-      "description": "The Lakas–CMD emblem features an open hand holding a burning torch of enlightenment above an open book and scales of justice, flanked by yellow rays and the blue and red colours of the Philippine flag, symbolising Christian-Muslim democratic solidarity, popular power, and good governance.",
-      "sources": [
-              {
-                      "title": "Lakas–CMD - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Lakas%E2%80%93CMD"
-              }
-      ]
-},
+        "description": "The Lakas–CMD emblem features an open hand holding a burning torch of enlightenment above an open book and scales of justice, flanked by yellow rays and the blue and red colours of the Philippine flag, symbolising Christian-Muslim democratic solidarity, popular power, and good governance.",
+        "sources": [
+          {
+            "title": "Lakas–CMD - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Lakas%E2%80%93CMD"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Lakas–CMD - Wikipedia",
@@ -6605,6 +6605,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "20th Congress of the Philippines - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -6624,23 +6628,23 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ],
       "ideologyPosition": "centre-right",
       "founded": 2010,
+      "coalitionId": "PH-ALYANSA",
       "leader": "Ronaldo V. Puno",
       "leaderTitle": "Chairman",
       "inPower": true,
       "inExecutive": false,
-      "seats": 55,
+      "seats": 56,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
-      "coalitionId": "PH-ALYANSA",
       "logoMeaning": {
-      "description": "The NUP logo displays a circular seal with three stylized human figures holding hands in solidarity around a golden sun and rice stalk, symbolising national unity, peace, and Christian-democratic governance across the Philippine archipelago.",
-      "sources": [
-              {
-                      "title": "National Unity Party (Philippines) - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/National_Unity_Party_(Philippines)"
-              }
-      ]
-},
+        "description": "The NUP logo displays a circular seal with three stylized human figures holding hands in solidarity around a golden sun and rice stalk, symbolising national unity, peace, and Christian-democratic governance across the Philippine archipelago.",
+        "sources": [
+          {
+            "title": "National Unity Party (Philippines) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/National_Unity_Party_(Philippines)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "National Unity Party (Philippines) - Wikipedia",
@@ -6649,6 +6653,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "20th Congress of the Philippines - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -6671,6 +6679,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "other",
       "positionRaw": "Big tent",
       "founded": 2018,
+      "coalitionId": "PH-ALYANSA",
       "leader": "Bongbong Marcos",
       "leaderTitle": "National Chairman",
       "inPower": true,
@@ -6679,16 +6688,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 52,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
-      "coalitionId": "PH-ALYANSA",
       "logoMeaning": {
-      "description": "The PFP logo depicts a golden eagle and the Philippine eight-rayed sun above a shield divided into red and blue halves, symbolizing federalism, regional autonomy, strength, and national renewal.",
-      "sources": [
-              {
-                      "title": "Partido Federal ng Pilipinas - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Partido_Federal_ng_Pilipinas"
-              }
-      ]
-},
+        "description": "The PFP logo depicts a golden eagle and the Philippine eight-rayed sun above a shield divided into red and blue halves, symbolizing federalism, regional autonomy, strength, and national renewal.",
+        "sources": [
+          {
+            "title": "Partido Federal ng Pilipinas - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Partido_Federal_ng_Pilipinas"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Partido Federal ng Pilipinas - Wikipedia",
@@ -6697,6 +6705,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "20th Congress of the Philippines - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -6723,6 +6735,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "years": "1991–1992"
         }
       ],
+      "coalitionId": "PH-ALYANSA",
       "leader": "Tito Sotto",
       "leaderTitle": "Chairman",
       "inPower": true,
@@ -6730,16 +6743,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 34,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
-      "coalitionId": "PH-ALYANSA",
       "logoMeaning": {
-      "description": "The NPC logo features a golden sun rising over green fertile fields and blue sea inside a shield, representing Filipino agricultural progress, national solidarity, and sustainable economic growth.",
-      "sources": [
-              {
-                      "title": "Nationalist People's Coalition - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Nationalist_People%27s_Coalition"
-              }
-      ]
-},
+        "description": "The NPC logo features a golden sun rising over green fertile fields and blue sea inside a shield, representing Filipino agricultural progress, national solidarity, and sustainable economic growth.",
+        "sources": [
+          {
+            "title": "Nationalist People's Coalition - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Nationalist_People%27s_Coalition"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Nationalist People's Coalition - Wikipedia",
@@ -6748,6 +6760,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "20th Congress of the Philippines - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -6771,6 +6787,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right to right-wing",
       "founded": 1907,
+      "coalitionId": "PH-ALYANSA",
       "leader": "Manny Villar",
       "leaderTitle": "President",
       "inPower": true,
@@ -6778,16 +6795,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 18,
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
-      "coalitionId": "PH-ALYANSA",
       "logoMeaning": {
-      "description": "The Nacionalista Party logo displays a green laurel wreath encircling a red sunburst and a shield bearing the initials 'NP' in gold, commemorating the legacy of the oldest political party in the Philippines, founded in 1907 during the struggle for Philippine independence.",
-      "sources": [
-              {
-                      "title": "Nacionalista Party - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Nacionalista_Party"
-              }
-      ]
-},
+        "description": "The Nacionalista Party logo displays a green laurel wreath encircling a red sunburst and a shield bearing the initials 'NP' in gold, commemorating the legacy of the oldest political party in the Philippines, founded in 1907 during the struggle for Philippine independence.",
+        "sources": [
+          {
+            "title": "Nacionalista Party - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Nacionalista_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Nacionalista Party - Wikipedia",
@@ -6796,6 +6812,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "20th Congress of the Philippines - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -6826,14 +6846,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Liberal Party logo features a bright yellow background with the iconic hand forming the letter 'L' (the Laban sign), a historic symbol of freedom, human rights, and the People Power movement in the Philippines.",
-      "sources": [
-              {
-                      "title": "Liberal Party (Philippines) - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Liberal_Party_(Philippines)"
-              }
-      ]
-},
+        "description": "The Liberal Party logo features a bright yellow background with the iconic hand forming the letter 'L' (the Laban sign), a historic symbol of freedom, human rights, and the People Power movement in the Philippines.",
+        "sources": [
+          {
+            "title": "Liberal Party (Philippines) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Liberal_Party_(Philippines)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Liberal Party (Philippines) - Wikipedia",
@@ -6842,6 +6862,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "20th Congress of the Philippines - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -6878,14 +6902,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The PDP–Laban logo features a red and blue roundel enclosing a hand holding a flaming torch of freedom and the letters PDP-LABAN, symbolising the struggle against dictatorship, democratic socialism, and federalism.",
-      "sources": [
-              {
-                      "title": "PDP–Laban - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/PDP%E2%80%93Laban"
-              }
-      ]
-},
+        "description": "The PDP–Laban logo features a red and blue roundel enclosing a hand holding a flaming torch of freedom and the letters PDP-LABAN, symbolising the struggle against dictatorship, democratic socialism, and federalism.",
+        "sources": [
+          {
+            "title": "PDP–Laban - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/PDP%E2%80%93Laban"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "PDP–Laban - Wikipedia",
@@ -6894,6 +6918,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "20th Congress of the Philippines - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -6922,14 +6950,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The HTL emblem features a stylized Philippine eagle head in orange, red, and blue against a protective shield, symbolising Davao regional strength, local unity, and good governance.",
-      "sources": [
-              {
-                      "title": "Hugpong ng Pagbabago - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Hugpong_ng_Pagbabago"
-              }
-      ]
-},
+        "description": "The HTL emblem features a stylized Philippine eagle head in orange, red, and blue against a protective shield, symbolising Davao regional strength, local unity, and good governance.",
+        "sources": [
+          {
+            "title": "Hugpong ng Pagbabago - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Hugpong_ng_Pagbabago"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Hugpong sa Tawong Lungsod - Wikipedia",
@@ -6938,6 +6966,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "20th Congress of the Philippines - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -6968,6 +7000,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "20th Congress of the Philippines - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/20th_Congress_of_the_Philippines"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -6997,14 +7033,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Akbayan logo features a green swallow (ibon) soaring freely upward, symbolizing citizen empowerment, participatory democracy, environmental justice, and socialist progressivism.",
-      "sources": [
-              {
-                      "title": "Akbayan - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Akbayan"
-              }
-      ]
-},
+        "description": "The Akbayan logo features a green swallow (ibon) soaring freely upward, symbolizing citizen empowerment, participatory democracy, environmental justice, and socialist progressivism.",
+        "sources": [
+          {
+            "title": "Akbayan - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Akbayan"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Akbayan - Wikipedia",
@@ -7013,6 +7049,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "LIST: Which party-list groups won in the 2025 elections? - Rappler",
           "url": "https://www.rappler.com/philippines/elections/party-list-groups-results-house-representatives-seats-2025/"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -7040,14 +7080,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Tingog Party-list logo features an orange and yellow stylized megaphone soundwave forming the letter 'T', symbolising giving a voice (Tingog) to Eastern Visayas and marginalized communities in national legislation.",
-      "sources": [
-              {
-                      "title": "Tingog Party List - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Tingog_Party_List"
-              }
-      ]
-},
+        "description": "The Tingog Party-list logo features an orange and yellow stylized megaphone soundwave forming the letter 'T', symbolising giving a voice (Tingog) to Eastern Visayas and marginalized communities in national legislation.",
+        "sources": [
+          {
+            "title": "Tingog Party List - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Tingog_Party_List"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Tingog Sinirangan - Wikipedia",
@@ -7056,6 +7096,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "LIST: Which party-list groups won in the 2025 elections? - Rappler",
           "url": "https://www.rappler.com/philippines/elections/party-list-groups-results-house-representatives-seats-2025/"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -7083,14 +7127,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The 4Ps Party-list logo features four stylized figures holding hands in a circle bordered by golden laurel branches, representing social protection, poverty alleviation, and human development.",
-      "sources": [
-              {
-                      "title": "House of Representatives of the Philippines - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
-              }
-      ]
-},
+        "description": "The 4Ps Party-list logo features four stylized figures holding hands in a circle bordered by golden laurel branches, representing social protection, poverty alleviation, and human development.",
+        "sources": [
+          {
+            "title": "House of Representatives of the Philippines - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "4Ps Party-list - Wikipedia",
@@ -7099,6 +7143,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "LIST: Which party-list groups won in the 2025 elections? - Rappler",
           "url": "https://www.rappler.com/philippines/elections/party-list-groups-results-house-representatives-seats-2025/"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     },
@@ -7125,14 +7173,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seatsTotal": 318,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Ako Bicol logo displays the iconic symmetrical cone of Mount Mayon Volcano surrounded by sunrise rays and green hills, representing Bicol regional identity, disaster resilience, and community advocacy.",
-      "sources": [
-              {
-                      "title": "Ako Bicol - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Ako_Bicol"
-              }
-      ]
-},
+        "description": "The Ako Bicol logo displays the iconic symmetrical cone of Mount Mayon Volcano surrounded by sunrise rays and green hills, representing Bicol regional identity, disaster resilience, and community advocacy.",
+        "sources": [
+          {
+            "title": "Ako Bicol - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ako_Bicol"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Ako Bicol - Wikipedia",
@@ -7141,6 +7189,109 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "LIST: Which party-list groups won in the 2025 elections? - Rappler",
           "url": "https://www.rappler.com/philippines/elections/party-list-groups-results-house-representatives-seats-2025/"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-1CEBU",
+      "country": "PH",
+      "shortName": "1CEBU",
+      "name": "One Cebu",
+      "logo": "party-logos/ph/onecebu.png",
+      "sha256": "87d38e5e23bc61bf1528b9513e361d799d4b9d14af37f861b0bee09cac575391",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:One%20Cebu%20Party%20logo.png",
+      "licenceNote": "Non-free logo hosted on English Wikipedia under a fair-use rationale; bundled here to identify One Cebu, not to imply endorsement. Replace if a freely-licensed file becomes available.",
+      "ideology": [
+        "Cebuano interests",
+        "Localism",
+        "Populism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2007,
+      "leader": "Gwendolyn Garcia",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 1,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "One Cebu — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/One_Cebu"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-LDP",
+      "country": "PH",
+      "shortName": "LDP",
+      "name": "Laban ng Demokratikong Pilipino",
+      "nameEn": "Struggle of Democratic Filipinos",
+      "logo": "party-logos/ph/ldp.svg",
+      "sha256": "79b2e30467d25ad254c509b895eaf73eb331c165b979dee321ed3cd598b7bf10",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Laban%20ng%20Demokratikong%20Pilipino%20(LDP).svg",
+      "licenceNote": "Non-free logo hosted on English Wikipedia under a fair-use rationale; bundled here to identify Laban ng Demokratikong Pilipino, not to imply endorsement. Replace if a freely-licensed file becomes available.",
+      "ideology": [],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1988,
+      "leader": "Sonny Angara",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 1,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Laban ng Demokratikong Pilipino — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Laban_ng_Demokratikong_Pilipino"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-UNA",
+      "country": "PH",
+      "shortName": "UNA",
+      "name": "United Nationalist Alliance",
+      "logo": "party-logos/ph/una.svg",
+      "sha256": "d85d43382e85e38b950deb4359ce850c16affac5727e4539beb46c79795c1d5e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:United_Nationalist_Alliance.svg",
+      "licenceNote": "Non-free logo hosted on English Wikipedia under a fair-use rationale; bundled here to identify United Nationalist Alliance, not to imply endorsement. Replace if a freely-licensed file becomes available.",
+      "ideology": [
+        "Populism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2012,
+      "leader": "Jejomar Binay",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 1,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "United Nationalist Alliance — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/United_Nationalist_Alliance"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia (political groups of the 20th Congress, elected 12 May 2025: Majority 287, Minority 27, Independent 4, of 318)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
     }

@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 7 / 195.**
+**Countries audited: 8 / 195.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -53,6 +53,7 @@ forgotten; it is tracked here.
 | 🇹🇭 Thailand | `#1317` | 20 → 20 | 497 / 500 | **NEARLY CURRENT — S2/S3** |
 | 🇻🇳 Vietnam | `#1318` | 1 → 1 | 482 / 500 | **WRONG — S1 (deceased leader)** |
 | 🇮🇩 Indonesia | `#1319` | 8 → 8 | **580 / 580** | **WRONG — S1 (wrong company's logo)** |
+| 🇵🇭 Philippines | `#1320` | 13 → 16 | 261 / 318 | **STALE — S2/S3** |
 
 ---
 
@@ -302,6 +303,41 @@ is available.
 **Visual verification:** 8 cards, all 8 logos asserted painted and montage-checked side by side —
 PAN now shows the party's blue sunburst, not a restaurant.
 
+### 🇵🇭 Philippines — audited 2026-09-11
+
+Verified against the [House of Representatives](https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines)
+political groups for the 20th Congress (elected 12 May 2025): Majority 287, Minority 27, Independent
+4, of 318 — 254 district seats plus 64 party-list seats.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-042 | **S2** | `seats` | Lakas 77, NUP 55 | **76**, **56** | Both parties sit across the majority and minority blocs; summing the chamber's own per-bloc figures gives 75+1 and 54+2 |
+| PP-043 | **S3** | coverage | 13 parties | **16** — added One Cebu (1), LDP (1) and UNA (1) with fair-use logos sourced and bundled | Chamber group list |
+| PP-044 | **S3** | `inExecutive` | absent | `true` on **PFP** only | The Philippines is presidential and Ferdinand Marcos Jr. leads PFP; no source lists cabinet portfolios by party, so the flag is confined to the President's own party |
+| — | ✓ | party-list seats | Akbayan 3, Tingog 3, 4Ps 2, Ako Bicol 2 | unchanged — **all four verified correct** | The 2025 party-list election's elected-representatives table |
+
+**Documented coverage gaps — two parties that cannot be added, and 54 party-list seats.**
+
+* **Centrist Democratic Party (1 seat)** and **Partido Navoteño (1 seat)** sit in the majority bloc
+  and are *not* in the dataset, because neither has a logo file anywhere: CDP's infobox `logo` field
+  contains the literal string `200px` (a broken parameter) and Navoteño's article has no logo at
+  all. The political-party rule requires every new entry to carry a bundled logo, and
+  `noImageReason` is reserved for entries predating 2026-09-08, so **the gate makes these parties
+  unrepresentable.** This is the same structural wall Thailand hit on `founded` — see **S5** below.
+* **54 of the 64 party-list seats** belong to sectoral organisations the dataset does not model
+  (ACT-CIS, CIBAC, SAGIP, Kabataan, TUCP, Senior Citizens, 1-Rider and roughly forty more, most with
+  a single seat). Four are modelled and correct. This is a recorded, deliberate gap for a later
+  pass, not an oversight — it is why Philippine coverage reads 261/318 rather than ~315/318.
+
+* **S5 (structural), second instance.** Two different mandatory fields have now blocked real, seated
+  parties from being recorded: `founded` in Thailand and `logo` here. The gate is protecting quality
+  in general while producing *invisible* incompleteness in particular. Candidate fix, to be proposed
+  once more countries are done: extend the `noImageReason` pattern to any mandatory field —
+  a sourced, human-written reason for the gap, visible in the UI, beats an absent party.
+
+**Visual verification:** 16 cards, 15 logos asserted painted (the sixteenth is a documented
+no-image entry), the three new logos montage-checked before bundling.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -320,7 +356,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `TH` Thailand — merged
 - [x] `VN` Vietnam — merged
 - [x] `ID` Indonesia — merged
-- [ ] `PH` Philippines
+- [x] `PH` Philippines — merged
 - [ ] `SG` Singapore
 - [ ] `KH` Cambodia
 - [ ] `LA` Laos
