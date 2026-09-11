@@ -7276,18 +7276,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Natthaphong Ruengpanyawut",
       "leaderTitle": "Leader of the Opposition and Party Leader",
       "inPower": false,
+      "inExecutive": false,
       "seats": 120,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The People's Party logo consists of an inverted equilateral orange triangle containing a smaller nested triangle, symbolizing the chevron pointing forward, equal democratic foundations, and the historic orange color of the progressive Thai movement.",
-      "sources": [
-              {
-                      "title": "People's Party (Thailand) - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/People%27s_Party_(Thailand)"
-              }
-      ]
-},
+        "description": "The People's Party logo consists of an inverted equilateral orange triangle containing a smaller nested triangle, symbolizing the chevron pointing forward, equal democratic foundations, and the historic orange color of the progressive Thai movement.",
+        "sources": [
+          {
+            "title": "People's Party (Thailand) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/People%27s_Party_(Thailand)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "People's Party (Thailand) - Wikipedia",
@@ -7304,6 +7305,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "People's Party chief formally named opposition leader - Bangkok Post",
           "url": "https://www.bangkokpost.com/thailand/politics/3254993/peoples-party-chief-formally-named-opposition-leader"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7328,19 +7333,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Anutin Charnvirakul",
       "leaderTitle": "Prime Minister and Party Leader",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2025–present",
-      "seats": 192,
+      "seats": 191,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Bhumjaithai Party logo features a stylized heart in the colours of the Thai flag (red and blue) enclosing the map of Thailand, signifying love, loyalty, and pride in the nation ('Bhumjai Thai' translates to 'Proud to be Thai').",
-      "sources": [
-              {
-                      "title": "Bhumjaithai Party - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Bhumjaithai_Party"
-              }
-      ]
-},
+        "description": "The Bhumjaithai Party logo features a stylized heart in the colours of the Thai flag (red and blue) enclosing the map of Thailand, signifying love, loyalty, and pride in the nation ('Bhumjai Thai' translates to 'Proud to be Thai').",
+        "sources": [
+          {
+            "title": "Bhumjaithai Party - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Bhumjaithai_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Bhumjaithai Party - Wikipedia",
@@ -7353,6 +7359,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2026 Thai general election - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7382,19 +7392,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Julapun Amornvivat",
       "leaderTitle": "Party Leader",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2026–present",
       "seats": 74,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Pheu Thai Party logo features the Thai consonant 'ภ' (Pho Phan) stylised into a heart in red and blue (the colours of the Thai national flag), symbolising the party's motto and devotion to serving the Thai people ('For Thais').",
-      "sources": [
-              {
-                      "title": "Pheu Thai Party - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Pheu_Thai_Party"
-              }
-      ]
-},
+        "description": "The Pheu Thai Party logo features the Thai consonant 'ภ' (Pho Phan) stylised into a heart in red and blue (the colours of the Thai national flag), symbolising the party's motto and devotion to serving the Thai people ('For Thais').",
+        "sources": [
+          {
+            "title": "Pheu Thai Party - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Pheu_Thai_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Pheu Thai Party - Wikipedia",
@@ -7403,6 +7414,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7427,18 +7442,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Abhisit Vejjajiva",
       "leaderTitle": "Party Leader",
       "inPower": false,
+      "inExecutive": false,
       "seats": 21,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Democrat Party emblem depicts the goddess Mae Thorani (the Earth Goddess) wringing sacred water from her hair, representing the washing away of impurities, moral truth, and enduring democratic dedication to the people.",
-      "sources": [
-              {
-                      "title": "Democrat Party (Thailand) - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Democrat_Party_(Thailand)"
-              }
-      ]
-},
+        "description": "The Democrat Party emblem depicts the goddess Mae Thorani (the Earth Goddess) wringing sacred water from her hair, representing the washing away of impurities, moral truth, and enduring democratic dedication to the people.",
+        "sources": [
+          {
+            "title": "Democrat Party (Thailand) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Democrat_Party_(Thailand)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Democrat Party (Thailand) - Wikipedia",
@@ -7447,6 +7463,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2026 Thai general election - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7473,18 +7493,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Narumon Pinyosinwat",
       "leaderTitle": "Party Leader",
       "inPower": false,
+      "inExecutive": false,
       "seats": 58,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Prachachat logo displays green geometric wings and an open book motif, symbolising education, peace, and pluralistic harmony for southern border provinces and multicultural communities.",
-      "sources": [
-              {
-                      "title": "Prachachat Party - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Prachachat_Party"
-              }
-      ]
-},
+        "description": "The Prachachat logo displays green geometric wings and an open book motif, symbolising education, peace, and pluralistic harmony for southern border provinces and multicultural communities.",
+        "sources": [
+          {
+            "title": "Prachachat Party - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Prachachat_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Kla Tham Party - Wikipedia",
@@ -7497,6 +7518,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Thailand's Conservatives Consolidate Power After 2026 Snap Polls - The Diplomat",
           "url": "https://thediplomat.com/2026/02/thailands-conservatives-consolidate-power-after-2026-snap-polls/"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7529,19 +7554,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Rangsi Kitiyansap",
       "leaderTitle": "Party Leader",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2026–present",
       "seats": 3,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Thai Economic Party logo features dynamic arrows and national colors representing economic revival, innovation, and national development.",
-      "sources": [
-              {
-                      "title": "House of Representatives (Thailand) - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
-              }
-      ]
-},
+        "description": "The Thai Economic Party logo features dynamic arrows and national colors representing economic revival, innovation, and national development.",
+        "sources": [
+          {
+            "title": "House of Representatives (Thailand) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Economic Party (Thailand) - Wikipedia",
@@ -7550,6 +7576,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7568,19 +7598,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Pirapan Salirathavibhaga",
       "leaderTitle": "Party Leader",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2026–present",
       "seats": 2,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The United Thai Nation logo features a stylized chevron composed of red, white, and blue stripes echoing the Thai national flag (Trairanga), symbolising unity under the monarchy, national solidarity, and patriotism.",
-      "sources": [
-              {
-                      "title": "United Thai Nation Party - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/United_Thai_Nation_Party"
-              }
-      ]
-},
+        "description": "The United Thai Nation logo features a stylized chevron composed of red, white, and blue stripes echoing the Thai national flag (Trairanga), symbolising unity under the monarchy, national solidarity, and patriotism.",
+        "sources": [
+          {
+            "title": "United Thai Nation Party - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/United_Thai_Nation_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "United Thai Nation Party - Wikipedia",
@@ -7589,6 +7620,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7616,19 +7651,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Pongthawat Techadejruangkul",
       "leaderTitle": "Party Leader",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2026–present",
       "seats": 2,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Chart Thai Pattana logo displays a stylized pink and blue conch / floral motif surrounded by petals, representing harmony, development, and agricultural prosperity.",
-      "sources": [
-              {
-                      "title": "Chart Thai Pattana Party - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Chart_Thai_Pattana_Party"
-              }
-      ]
-},
+        "description": "The Chart Thai Pattana logo displays a stylized pink and blue conch / floral motif surrounded by petals, representing harmony, development, and agricultural prosperity.",
+        "sources": [
+          {
+            "title": "Chart Thai Pattana Party - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Chart_Thai_Pattana_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "พรรคเพื่อชาติไทย - วิกิพีเดีย (Pheu Chart Thai Party - Thai Wikipedia)",
@@ -7641,6 +7677,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7661,19 +7701,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Boonrawee Yomjinda",
       "leaderTitle": "Party Leader",
       "inPower": true,
+      "inExecutive": false,
       "timeInPower": "2026–present",
       "seats": 1,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Ruam Jai Thai logo uses heart-shaped motifs in national colors symbolizing the coming together of Thai hearts for local development and solidarity.",
-      "sources": [
-              {
-                      "title": "House of Representatives (Thailand) - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
-              }
-      ]
-},
+        "description": "The Ruam Jai Thai logo uses heart-shaped motifs in national colors symbolizing the coming together of Thai hearts for local development and solidarity.",
+        "sources": [
+          {
+            "title": "House of Representatives (Thailand) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "พรรครวมใจไทย (พ.ศ. 2566) - วิกิพีเดีย (Ruam Jai Thai Party (2023) - Thai Wikipedia)",
@@ -7682,6 +7723,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7707,19 +7752,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Tawee Sodsong",
       "leaderTitle": "Party Leader",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2026–present",
       "seats": 5,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Chart Pattana Kla logo features an orange and blue dynamic loop representing continuous progress, modern technological innovation, and economic dynamism.",
-      "sources": [
-              {
-                      "title": "Chart Pattana Kla Party - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Chart_Pattana_Kla_Party"
-              }
-      ]
-},
+        "description": "The Chart Pattana Kla logo features an orange and blue dynamic loop representing continuous progress, modern technological innovation, and economic dynamism.",
+        "sources": [
+          {
+            "title": "Chart Pattana Kla Party - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Chart_Pattana_Kla_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Prachachat Party - Wikipedia",
@@ -7728,6 +7774,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7745,6 +7795,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Kriditaj Sangthanyothin",
       "leaderTitle": "Party Leader",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2026–present",
       "seats": 1,
       "seatsTotal": 500,
@@ -7757,6 +7808,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7778,19 +7833,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Suratin Pichan",
       "leaderTitle": "Party Leader",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2026–present",
       "seats": 1,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The New Democracy Party logo features the Democracy Monument of Bangkok set inside a cogwheel and rice stalks, symbolising constitutional democracy, industrial labour, and agriculture.",
-      "sources": [
-              {
-                      "title": "New Democracy Party (Thailand) - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/New_Democracy_Party_(Thailand)"
-              }
-      ]
-},
+        "description": "The New Democracy Party logo features the Democracy Monument of Bangkok set inside a cogwheel and rice stalks, symbolising constitutional democracy, industrial labour, and agriculture.",
+        "sources": [
+          {
+            "title": "New Democracy Party (Thailand) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/New_Democracy_Party_(Thailand)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "New Democracy Party (Thailand) - Wikipedia",
@@ -7799,6 +7855,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7822,18 +7882,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Issaraporn Narin",
       "leaderTitle": "Party Leader",
       "inPower": false,
+      "inExecutive": false,
       "seats": 1,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Thai Teachers for People Party logo displays an open book with a flaming torch surrounded by lotus petals, representing education, teachers' dignity, and enlightenment for the people.",
-      "sources": [
-              {
-                      "title": "House of Representatives (Thailand) - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
-              }
-      ]
-},
+        "description": "The Thai Teachers for People Party logo displays an open book with a flaming torch surrounded by lotus petals, representing education, teachers' dignity, and enlightenment for the people.",
+        "sources": [
+          {
+            "title": "House of Representatives (Thailand) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Thai Pakdee Party - Wikipedia",
@@ -7842,6 +7903,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2026 Thai general election - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7862,22 +7927,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ],
       "ideologyPosition": "centre-right",
       "founded": 2021,
-      "leader": "Vacant (Sudarat Keyuraphan resigned as party leader on 12 February 2026, saying \"there is no place for idealists\" in current Thai politics)",
-      "leaderTitle": "Party Leader (vacant)",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2026–present",
       "seats": 2,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Thai Sang Thai logo features an interlocking blue and red knot / flower symbol surrounded by circular petals, signifying the weaving together of national unity and economic revival.",
-      "sources": [
-              {
-                      "title": "Thai Sang Thai Party - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Thai_Sang_Thai_Party"
-              }
-      ]
-},
+        "description": "The Thai Sang Thai logo features an interlocking blue and red knot / flower symbol surrounded by circular petals, signifying the weaving together of national unity and economic revival.",
+        "sources": [
+          {
+            "title": "Thai Sang Thai Party - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Thai_Sang_Thai_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Thai Sang Thai Party - Wikipedia",
@@ -7890,6 +7954,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7905,6 +7973,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "positionRaw": "Not documented in any accessible source",
       "founded": 2025,
       "inPower": true,
+      "inExecutive": false,
       "timeInPower": "2026–present",
       "seats": 1,
       "seatsTotal": 500,
@@ -7917,6 +7986,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7940,18 +8013,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Sereepisuth Temeeyaves",
       "leaderTitle": "Party Leader",
       "inPower": false,
+      "inExecutive": false,
       "seats": 1,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Thai Liberal Party logo features a yellow shield bearing a roaring golden tiger head surrounded by national flag stripes, symbolising courage, anti-corruption enforcement, and righteous strength.",
-      "sources": [
-              {
-                      "title": "Thai Liberal Party - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Thai_Liberal_Party"
-              }
-      ]
-},
+        "description": "The Thai Liberal Party logo features a yellow shield bearing a roaring golden tiger head surrounded by national flag stripes, symbolising courage, anti-corruption enforcement, and righteous strength.",
+        "sources": [
+          {
+            "title": "Thai Liberal Party - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Thai_Liberal_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Thai Liberal Party - Wikipedia",
@@ -7960,6 +8034,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2026 Thai general election - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -7977,6 +8055,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Rachen Tagunviang",
       "leaderTitle": "Party Leader",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2026–present",
       "seats": 1,
       "seatsTotal": 500,
@@ -7989,6 +8068,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -8014,18 +8097,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Wasawat Puangphonsri",
       "leaderTitle": "Party Leader",
       "inPower": false,
+      "inExecutive": false,
       "seats": 6,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Fair Party (Thai Ruam Palang) logo displays stylized interlocking rings in red, yellow, and blue, representing solidarity, fairness, and mutual cooperation across society.",
-      "sources": [
-              {
-                      "title": "Fair Party (Thailand) - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Fair_Party_(Thailand)"
-              }
-      ]
-},
+        "description": "The Fair Party (Thai Ruam Palang) logo displays stylized interlocking rings in red, yellow, and blue, representing solidarity, fairness, and mutual cooperation across society.",
+        "sources": [
+          {
+            "title": "Fair Party (Thailand) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Fair_Party_(Thailand)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Thai Ruam Palang Party - Wikipedia",
@@ -8034,6 +8118,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2026 Thai general election - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2026_Thai_general_election"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -8059,19 +8147,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Trinuch Thienthong",
       "leaderTitle": "Acting Party Leader",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2026–present",
       "seats": 5,
       "seatsTotal": 500,
       "chamberName": "House of Representatives",
       "logoMeaning": {
-      "description": "The Palang Pracharath logo features a tricolor hexagon in red, white, and blue (the colors of the Thai flag) symbolizing stability, royalist conservatism, and patriotic strength.",
-      "sources": [
-              {
-                      "title": "Palang Pracharath Party - Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Palang_Pracharath_Party"
-              }
-      ]
-},
+        "description": "The Palang Pracharath logo features a tricolor hexagon in red, white, and blue (the colors of the Thai flag) symbolizing stability, royalist conservatism, and patriotic strength.",
+        "sources": [
+          {
+            "title": "Palang Pracharath Party - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Palang_Pracharath_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Palang Pracharath Party - Wikipedia",
@@ -8080,6 +8169,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     },
@@ -8099,6 +8192,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leader": "Jatuporn Buruspat",
       "leaderTitle": "Party Leader",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "2026–present",
       "seats": 1,
       "seatsTotal": 500,
@@ -8111,6 +8205,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Second Anutin cabinet - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Second_Anutin_cabinet"
+        },
+        {
+          "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
         }
       ]
     }
