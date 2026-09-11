@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 11 / 195.**
+**Countries audited: 12 / 195.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -57,6 +57,7 @@ forgotten; it is tracked here.
 | 🇸🇬 Singapore | `#1321` | 2 → 2 | 98 / 108 | **IMPOSSIBLE TOTAL — S1** |
 | 🇰🇭 Cambodia | `#1322` | 2 → 2 | 125 / 125 | **WRONG — S1 (unidentified logo, wrong leader)** |
 | 🇱🇦 Laos | `#1323` | 1 → 1 | 169 / 175 | **STALE — a whole parliament behind** |
+| 🇧🇳 Brunei | `#1324` | **3 → 0 (removed)** | n/a | **FABRICATED REPRESENTATION — S1** |
 
 ---
 
@@ -387,6 +388,35 @@ invisible to the gate because the check only verifies the sha256. Worth a mechan
 all bundled party logos in a later structural PR — added to the deferred list with **B8** and the
 mandatory-field wall.
 
+### 🇧🇳 Brunei — audited 2026-09-11 · **country removed**
+
+The only country so far whose entry had to be **deleted rather than corrected**, because what it
+asserted was not true of Brunei at all.
+
+The dataset carried three parties — PDNB credited with **1 seat**, PNDB and PNS with 0 — in a
+36-seat chamber. Brunei's [Legislative Council](https://en.wikipedia.org/wiki/Legislative_Council_of_Brunei)
+has **34 members, every one of them ex-officio (14) or appointed and non-partisan (20)**. No party
+holds a seat, and none can: Brunei is an absolute monarchy and, as the National Development Party's
+own article states, **no legislative election has been held in Brunei since 1962.**
+
+| ID | Sev | Finding |
+|---|---|---|
+| PP-054 | **S1** | A party was credited with a seat in a legislature that has **no elected members and no party representation whatsoever**. This is not a stale figure — it describes a parliamentary system Brunei does not have |
+| PP-055 | **S1** | `seatsTotal` 36 against an actual membership of 34 |
+| PP-056 | **S2** | Two of the three entries held 0 seats, already contradicting the file's own scope rule ("only parties currently holding at least one seat") |
+
+**Decision: remove Brunei from `POLITICAL_PARTIES` and delete its three bundled logos.** The file's
+scope rule admits only competitive multi-party systems; Brunei is an absolute monarchy with an
+appointed legislature. Keeping the entry would assert representation that does not exist, which is
+worse than the country being absent — the same reasoning that keeps **Myanmar** out.
+
+**Verified in the running app:** Brunei's page renders normally and the Political parties tab is
+simply **not offered** (tabs: National symbols, Sub-national divisions, Capital cities, Hierarchy),
+with no console errors. A country with no party data degrades cleanly by design.
+
+**This closes 3 of the 19 zero-seat entries in defect B3.** The remaining 16 are checked as their
+countries come up.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -409,7 +439,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `SG` Singapore — merged
 - [x] `KH` Cambodia — merged
 - [x] `LA` Laos — merged
-- [ ] `BN` Brunei
+- [x] `BN` Brunei — audited, removed as out of scope
 - [ ] `TL` Timor-Leste
 
 ### Phase 3 — rest of South America (11)
