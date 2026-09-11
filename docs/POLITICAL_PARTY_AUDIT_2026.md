@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 8 / 195.**
+**Countries audited: 9 / 195.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -54,6 +54,7 @@ forgotten; it is tracked here.
 | 🇻🇳 Vietnam | `#1318` | 1 → 1 | 482 / 500 | **WRONG — S1 (deceased leader)** |
 | 🇮🇩 Indonesia | `#1319` | 8 → 8 | **580 / 580** | **WRONG — S1 (wrong company's logo)** |
 | 🇵🇭 Philippines | `#1320` | 13 → 16 | 261 / 318 | **STALE — S2/S3** |
+| 🇸🇬 Singapore | `#1321` | 2 → 2 | 98 / 108 | **IMPOSSIBLE TOTAL — S1** |
 
 ---
 
@@ -338,6 +339,19 @@ political groups for the 20th Congress (elected 12 May 2025): Majority 287, Mino
 **Visual verification:** 16 cards, 15 logos asserted painted (the sixteenth is a documented
 no-image entry), the three new logos montage-checked before bundling.
 
+### 🇸🇬 Singapore — audited 2026-09-11
+
+Closes another instance of dataset defect **B1**: PAP 86 + WP 12 = 98 seats in a chamber the entry
+said had **97**.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-045 | **S1** | `seatsTotal` | 97 | **108** | 97 is the number of *elected constituency* seats. Parliament's actual membership is 108: PAP 86, WP 12 (including Non-Constituency MPs), 9 Nominated MPs and 1 vacancy. Using the elected-seat figure as the denominator while counting NCMPs in the numerator is what made the sum impossible |
+| PP-046 | **S3** | `inExecutive` | absent | `true` on PAP | Second Lawrence Wong Cabinet |
+
+Both seat figures, both leaders (Lawrence Wong; Pritam Singh) and both logos' provenance were
+checked and are correct.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -357,7 +371,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `VN` Vietnam — merged
 - [x] `ID` Indonesia — merged
 - [x] `PH` Philippines — merged
-- [ ] `SG` Singapore
+- [x] `SG` Singapore — merged
 - [ ] `KH` Cambodia
 - [ ] `LA` Laos
 - [ ] `BN` Brunei

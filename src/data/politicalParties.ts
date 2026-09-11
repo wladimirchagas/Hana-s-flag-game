@@ -14711,26 +14711,32 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/sg/pap.svg",
       "sha256": "6c7fe92bbe8e744dad919a58da3df096ec8674ead5310c7c99d15fecaa3cd540",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:People%27s_Action_Party_logo.svg",
-      "ideology": ["Conservatism", "Economic liberalism", "Communitarianism", "Multiracialism"],
+      "ideology": [
+        "Conservatism",
+        "Economic liberalism",
+        "Communitarianism",
+        "Multiracialism"
+      ],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1954,
       "leader": "Lawrence Wong",
       "leaderTitle": "Secretary-General & Prime Minister",
       "inPower": true,
+      "inExecutive": true,
       "timeInPower": "1959–present",
       "seats": 86,
-      "seatsTotal": 97,
+      "seatsTotal": 108,
       "chamberName": "Parliament of Singapore",
       "logoMeaning": {
-      "description": "The PAP emblem consists of a red flash of lightning striking through a blue circle on a white background. The red lightning represents action and courage, the blue circle signifies the unity of all races, and the white background represents purity and incorruptibility in government.",
-      "sources": [
-              {
-                      "title": "People's Action Party — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/People%27s_Action_Party"
-              }
-      ]
-},
+        "description": "The PAP emblem consists of a red flash of lightning striking through a blue circle on a white background. The red lightning represents action and courage, the blue circle signifies the unity of all races, and the white background represents purity and incorruptibility in government.",
+        "sources": [
+          {
+            "title": "People's Action Party — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/People%27s_Action_Party"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "Parliament of Singapore — Members of Parliament",
@@ -14739,6 +14745,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "People's Action Party — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/People%27s_Action_Party"
+        },
+        {
+          "title": "Parliament of Singapore — Wikipedia (108 members: PAP 86, WP 12, 9 Nominated MPs, 1 vacant; elected 3 May 2025)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Singapore"
         }
       ]
     },
@@ -14752,25 +14762,30 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "f98b5900358472ada16080fb4e2668055bf0158866943e5a2e6d6ceb9bc1baf3",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Workers%27_Party_of_Singapore_logo.png",
       "licenceNote": "Official party emblem bundled for non-commercial educational use to identify the party.",
-      "ideology": ["Social democracy", "Democratic socialism", "Progressivism"],
+      "ideology": [
+        "Social democracy",
+        "Democratic socialism",
+        "Progressivism"
+      ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 1957,
       "leader": "Pritam Singh",
       "leaderTitle": "Secretary-General & Leader of the Opposition",
       "inPower": false,
+      "inExecutive": false,
       "seats": 12,
-      "seatsTotal": 97,
+      "seatsTotal": 108,
       "chamberName": "Parliament of Singapore",
       "logoMeaning": {
-      "description": "The Workers' Party logo features a bright red hammer centered on a golden yellow disc upon a red field. The hammer symbolises the dignity and power of the working class, yellow represents multiracial harmony and democracy, and red represents universal brotherhood and equality.",
-      "sources": [
-              {
-                      "title": "Workers' Party (Singapore) — Wikipedia",
-                      "url": "https://en.wikipedia.org/wiki/Workers%27_Party_(Singapore)"
-              }
-      ]
-},
+        "description": "The Workers' Party logo features a bright red hammer centered on a golden yellow disc upon a red field. The hammer symbolises the dignity and power of the working class, yellow represents multiracial harmony and democracy, and red represents universal brotherhood and equality.",
+        "sources": [
+          {
+            "title": "Workers' Party (Singapore) — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Workers%27_Party_(Singapore)"
+          }
+        ]
+      },
       "sources": [
         {
           "title": "The Workers' Party (Singapore) — Wikipedia",
@@ -14779,6 +14794,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Parliament of Singapore — Member Directory",
           "url": "https://www.parliament.gov.sg/mps/current-mps"
+        },
+        {
+          "title": "Parliament of Singapore — Wikipedia (108 members: PAP 86, WP 12, 9 Nominated MPs, 1 vacant; elected 3 May 2025)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Singapore"
         }
       ]
     }
