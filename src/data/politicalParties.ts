@@ -1495,140 +1495,105 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "AM": [
     {
-      "id": "AM-CC",
-      "country": "AM",
-      "shortName": "CC",
-      "name": "Քաղաքացիական պայմանագիր",
-      "nameEn": "Civil Contract",
-      "logo": "party-logos/am/cc.svg",
-      "sha256": "ae5c61698644c59648415add4da5f2d7cdba35119a4e0ce0d511887f04566160",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Civil_Contract_(Armenia).svg",
-      "ideology": [
-        "Liberalism",
-        "Reformism",
-        "Populism",
-        "Pro-Europeanism"
-      ],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre",
-      "founded": 2015,
-      "leader": "Nikol Pashinyan",
-      "leaderTitle": "Chairman",
-      "inPower": true,
-      "inExecutive": true,
-      "timeInPower": "2018–present",
-      "seats": 62,
-      "seatsTotal": 105,
-      "chamberName": "National Assembly",
-      "sources": [
+      id: "AM-CC",
+      country: "AM",
+      shortName: "ՔՊ",
+      name: "Քաղաքացիական պայմանագիր",
+      nameEn: "Civil Contract",
+      noImageReason:
+        "No locally verified asset was packaged in this pass after checking the party’s Armenian-language site, Wikimedia Commons/Wikipedia file records, Wikidata and Europe Elects. A logo is desirable but is not a condition of inclusion.",
+      ideology: ["Liberalism", "Reformism", "Pro-Europeanism"],
+      ideologyPosition: "centre",
+      positionRaw: "Centre",
+      founded: 2015,
+      leader: "Nikol Pashinyan",
+      leaderTitle: "Leader",
+      inPower: true,
+      inExecutive: true,
+      timeInPower: "Since the 2018 parliamentary election",
+      seats: 64,
+      seatsTotal: 105,
+      chamberName: "National Assembly",
+      sources: [
         {
-          "title": "Civil Contract (Armenia) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Civil_Contract_(Armenia)"
+          title: "Armenia’s Central Election Commission results, reported by PanARMENIAN.Net — Civil Contract 64, Strong Armenia 29, Armenia Alliance 12",
+          url: "https://www.pan.am/en/334910",
         },
         {
-          "title": "National Assembly (Armenia) — Wikipedia: composition after the 7 June 2026 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Armenia)"
-        }
-      ]
+          title: "Civil Contract — official 2026 election-programme announcement (Armenian)",
+          url: "https://www.civilcontract.am/hy",
+        },
+        {
+          title: "Europe Elects — National parliament election in Armenia 2026",
+          url: "https://europeelects.eu/armenia/",
+        },
+      ],
     },
     {
-      "id": "AM-SA",
-      "country": "AM",
-      "shortName": "Strong Armenia",
-      "name": "Ուժեղ Հայաստան",
-      "nameEn": "Strong Armenia",
-      "logo": "party-logos/am/sa.svg",
-      "sha256": "bb152974bdd40bb2aa20d85652a3953a79b9f1f6298c27a523263fa17618115e",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Strong_Armenia.svg",
-      "ideology": [
-        "Pro-Armenian Apostolic Church",
-        "Russophilia"
-      ],
-      "ideologyPosition": "other",
-      "positionRaw": "Big tent",
-      "founded": 2025,
-      "leader": "Samvel Karapetyan",
-      "leaderTitle": "Leader",
-      "inPower": false,
-      "seats": 26,
-      "seatsTotal": 105,
-      "chamberName": "National Assembly",
-      "sources": [
+      id: "AM-STRONG",
+      country: "AM",
+      shortName: "ՈւՀ",
+      name: "Ուժեղ Հայաստան",
+      nameEn: "Strong Armenia",
+      noImageReason:
+        "No locally verified asset was packaged in this pass after checking Strong Armenia’s official site, Wikimedia Commons/Wikipedia file records, Wikidata and Europe Elects. A logo is desirable but is not a condition of inclusion.",
+      ideology: ["Pro-Church", "Pro-business"],
+      ideologyPosition: "other",
+      positionRaw: "Big tent",
+      founded: 2025,
+      leader: "Samvel Karapetyan",
+      leaderTitle: "Leader",
+      inPower: false,
+      seats: 29,
+      seatsTotal: 105,
+      chamberName: "National Assembly",
+      sources: [
         {
-          "title": "Strong Armenia – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Strong_Armenia"
+          title: "Armenia’s Central Election Commission results, reported by PanARMENIAN.Net — Civil Contract 64, Strong Armenia 29, Armenia Alliance 12",
+          url: "https://www.pan.am/en/334910",
         },
         {
-          "title": "National Assembly (Armenia) — Wikipedia: composition after the 7 June 2026 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Armenia)"
-        }
-      ]
+          title: "Strong Armenia — official party website",
+          url: "https://strongarmenia.am/",
+        },
+        {
+          title: "Europe Elects — National parliament election in Armenia 2026",
+          url: "https://europeelects.eu/armenia/",
+        },
+      ],
     },
     {
-      "id": "AM-ARF",
-      "country": "AM",
-      "shortName": "ARF",
-      "name": "Հայ Յեղափոխական Դաշնակցութիւն",
-      "nameEn": "Armenian Revolutionary Federation",
-      "logo": "party-logos/am/arf.png",
-      "sha256": "e4ed8d54de18dcdad6d988a69127819bc05b2e7d77bd24cb04750fb183cb8393",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Armenian_Revolutionary_Federation_logo.png",
-      "licenceNote": "Non-free logo: the Armenian Revolutionary Federation emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
-      "ideology": [
-        "Armenian nationalism",
-        "United Armenia"
+      id: "AM-ALLIANCE",
+      country: "AM",
+      shortName: "ՀԴ",
+      name: "Հայաստան դաշինք",
+      nameEn: "Armenia Alliance",
+      noImageReason:
+        "No locally verified asset was packaged in this pass after checking the alliance’s Armenian-language campaign material, Wikimedia Commons/Wikipedia file records, Wikidata and Europe Elects. A logo is desirable but is not a condition of inclusion.",
+      ideology: ["Armenian nationalism"],
+      ideologyPosition: "centre-right",
+      founded: 2021,
+      leader: "Robert Kocharyan",
+      leaderTitle: "Leader",
+      inPower: false,
+      seats: 12,
+      seatsTotal: 105,
+      chamberName: "National Assembly",
+      sources: [
+        {
+          title: "Armenia’s Central Election Commission results, reported by PanARMENIAN.Net — Civil Contract 64, Strong Armenia 29, Armenia Alliance 12",
+          url: "https://www.pan.am/en/334910",
+        },
+        {
+          title: "Robert Kocharyan — official site, identifying him as leader of the Armenia Alliance",
+          url: "https://robertkocharyan.am/",
+        },
+        {
+          title: "Europe Elects — National parliament election in Armenia 2026",
+          url: "https://europeelects.eu/armenia/",
+        },
       ],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left to left-wing",
-      "founded": 1890,
-      "leader": "Hakob Ter-Khachaturyan",
-      "leaderTitle": "Bureau Chairman",
-      "inPower": false,
-      "seats": 5,
-      "seatsTotal": 105,
-      "chamberName": "National Assembly",
-      "sources": [
-        {
-          "title": "Armenian Revolutionary Federation – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Armenian_Revolutionary_Federation"
-        },
-        {
-          "title": "National Assembly (Armenia) — Wikipedia: composition after the 7 June 2026 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Armenia)"
-        }
-      ]
     },
-    {
-      "id": "AM-COL",
-      "country": "AM",
-      "shortName": "Country of Living",
-      "name": "Ապրելու երկիր",
-      "nameEn": "Country of Living",
-      "logo": "party-logos/am/col.svg",
-      "sha256": "5163c4738ff5a74e9b6fec54dc92e6ce0c4775d837bb8dae6dcd5b82db644440",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Country_of_Living.svg",
-      "licenceNote": "Non-free logo: the Country of Living emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
-      "ideology": [],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre",
-      "founded": 2021,
-      "leader": "Mane Tandilyan",
-      "leaderTitle": "Leader",
-      "inPower": false,
-      "seats": 1,
-      "seatsTotal": 105,
-      "chamberName": "National Assembly",
-      "sources": [
-        {
-          "title": "Country of Living – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Country_of_Living"
-        },
-        {
-          "title": "National Assembly (Armenia) — Wikipedia: composition after the 7 June 2026 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Armenia)"
-        }
-      ]
-    }
   ],
   "AG": [
     {
