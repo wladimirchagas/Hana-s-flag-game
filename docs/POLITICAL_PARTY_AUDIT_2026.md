@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 64 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 65 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -114,7 +114,8 @@ forgotten; it is tracked here.
 | 🇰🇼 Kuwait | `#1381` | — | — | **Out of scope — political parties are illegal and the Assembly has been suspended since May 2024** |
 | 🇰🇬 Kyrgyzstan | `#1382` | 0 → 6 | 84 / 90 (3 vacant, 3 other ungrouped) | **Absent entirely; only one party won seats as a party — 84 of 90 went to independents, so the chamber's own factions are the party structure** |
 | 🇱🇧 Lebanon | `#1383` | 0 → 25 | 83 / 128 (44 independents, 1 vacancy) | **Absent entirely; the obvious source reports BLOC seats as party seats for all six large parties** |
-| 🇲🇻 Maldives | *(see PR)* | 0 → 5 | 91 / 93 (2 independents) | **Absent entirely; the MDP ships with no leader — its presidency is vacant and the interim chair is under challenge** |
+| 🇲🇻 Maldives | `#1384` | 0 → 5 | 91 / 93 (2 independents) | **Absent entirely; the MDP ships with no leader — its presidency is vacant and the interim chair is under challenge** |
+| 🇲🇳 Mongolia | *(see PR)* | 0 → 5 | 125 / 126 (1 independent) | **Absent entirely; the government has changed twice since the election — the sitting PM took office in March 2026** |
 
 ---
 
@@ -2486,6 +2487,48 @@ four parties carry neither. There is no confidence-and-supply case here.
 **Verified in the running app**: all five cards paint their logos, the PNC carries the In-power
 badge and the other four do not, no console errors.
 
+### 🇲🇳 Mongolia — audited 2026-09-12
+
+**Absent entirely.** Mongolia had no entry in `POLITICAL_PARTIES`, so the Learn-mode Political
+parties tab showed nothing for the **State Great Khural**, enlarged to **126 seats** at the
+28 June 2024 election. Five entries added, covering 125 of the 126 seats; the remaining one is an
+independent.
+
+**PP-339 — the government has changed twice since the election, and the current one is five months
+old.** An entry built from the 2024 result — or from any snapshot taken before this year — would
+name the wrong prime minister. **Nyam-Osoryn Uchral** took office on **30 March 2026** and his
+cabinet, Mongolia's **22nd government**, was formed on **4 April 2026**, succeeding Zandanshatar's,
+which had itself succeeded Oyun-Erdene's after the 2025 political crisis. `timeInPower` and every
+`inExecutive` flag are read from that cabinet, not from the election.
+
+**PP-340 — it is a three-party coalition, and all three are genuinely in the executive.** The
+Uchral cabinet is an MPP–HUN–National Coalition government holding **79 of 126** seats, and each of
+the three supplies a **deputy prime minister** — so all three carry `inExecutive: true` rather than
+the confidence-and-supply modelling used for Lebanon and Cyprus. The Democratic Party (42) and the
+Civil Will–Green Party (4) are opposition.
+
+**PP-341 — HUN won 8 seats and now holds 7.** The chamber's current composition is used, not the
+election return; the difference is disclosed in HUN's own source line rather than left as an
+unexplained mismatch against the 2024 table.
+
+**PP-342 — the National Coalition's four seats cannot be split, so it is entered as one group.**
+The National Coalition is an alliance of the **Mongolian Green Party**, the **Mongolian National
+Democratic Party** and the **Mongolian Liberal Democratic Party** (which joined in May 2024), and it
+won all four of its seats on a single proportional list. No source splits those four between the
+three members: the Green Party's own infobox claims **one**, the National Democratic Party's claims
+**none**, and the Liberal Democratic Party has no article at all. Entering three component parties
+would have meant inventing a split; entering the Green Party alone would have dropped three seats.
+The coalition is therefore entered as one group of four with its membership named in its sources —
+the same judgement recorded for Lebanon's Watani Alliance (PP-334).
+
+**PP-343 — the Democratic Party redesigned its emblem in 2026.** Its bundled logo is
+`Democratic Party of Mongolia emblem since 2026.svg`, the file the party's own infobox now carries;
+the older emblem would have been the obvious pick from a stale search.
+
+**Verified in the running app**: all five cards paint their logos, the MPP, HUN and National
+Coalition carry the In-power badge while the Democratic Party and Civil Will–Green do not, no
+console errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2723,7 +2766,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `MU` Mauritius
 - [ ] `MX` Mexico
 - [ ] `FM` Micronesia
-- [ ] `MN` Mongolia
+- [x] `MN` Mongolia — merged
 - [ ] `MA` Morocco
 - [ ] `MZ` Mozambique
 - [ ] `NA` Namibia
