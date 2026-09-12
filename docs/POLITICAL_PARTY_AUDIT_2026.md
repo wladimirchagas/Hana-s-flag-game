@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 24 / 195 — Southeast Asia and South America complete.**
+**Countries audited: 25 / 195 — Southeast Asia and South America complete; Phase 4 under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -70,6 +70,7 @@ forgotten; it is tracked here.
 | 🇺🇾 Uruguay | `#1334` | 1 → 6 | **99 / 99** | **WRONG — a fabricated logo explainer** |
 | 🇬🇾 Guyana | `#1335` | 3 → 3 | 64 / 65 | **IMPOSSIBLE TOTAL — 72 seats in a 65-seat chamber** |
 | 🇸🇷 Suriname | `#1336` | 2 → 6 | 50 / 51 | **WRONG — a defunct 1987 coalition marked as governing** |
+| 🇬🇧 United Kingdom | `#1337` | **1 → 15** | 637 / 650 | **WRONG — a former prime minister, no opposition at all** |
 
 ---
 
@@ -830,6 +831,51 @@ their chamber.
 
 ---
 
+## Phase 4 — United Kingdom, United States, Canada
+
+### 🇬🇧 United Kingdom — audited 2026-09-12
+
+The UK had **one party**: Labour, with 412 seats, led by **Keir Starmer**, who has not been prime
+minister since **20 July 2026**. Fourteen other parties sit in the Commons and none of them was in
+the dataset — including the Official Opposition.
+
+The 59th Parliament's current standing: **Labour 403** (government), **Conservative 118** (Official
+Opposition), **Liberal Democrats 71**, **Reform UK 8**, **SNP 8**, **DUP 5**, **Green 5**,
+**Independent Alliance 4**, **Plaid Cymru 4**, **SDLP 2**, **Your Party 2**, **Alliance 1**,
+**Restore Britain 1**, **TUV 1**, **UUP 1**, 7 independents, the Speaker, **Sinn Féin 7**
+(abstentionist) and 1 vacancy.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-126 | **S1** | `leader` | **Keir Starmer** | **Andy Burnham** | Burnham has led Labour and been prime minister since 20 July 2026 |
+| PP-127 | **S1** | coverage | **1 party** | **15 parties, 637 of 650** | The Conservative Party — the Official Opposition, with 118 seats — was not in the dataset at all, nor were the Liberal Democrats' 71 |
+| PP-128 | **S2** | `seats` | Labour **412** | **403** | 412 was the 2024 election night figure; by-elections, defections and suspensions have moved it |
+| PP-129 | **S3** | `timeInPower` | absent detail | a sentence naming both the election and the change of prime minister | Labour has governed continuously since 4 July 2024 under two leaders |
+
+**Three parties in this chamber did not exist when the dataset's Labour entry was written**, which is
+a good measure of how far behind it had fallen: **Your Party** (founded 24 July 2025, 2 MPs),
+**Restore Britain** (a pressure group from 30 June 2025, a registered party from 13 February 2026,
+1 MP), and the Liberal Democrats' and SDLP's own articles have been refounded under 2025 titles.
+
+**Sinn Féin is included, with its abstention stated.** Its seven MPs are elected but do not take
+their seats; leaving the party out would misrepresent seven Northern Irish constituencies as
+unrepresented, and including it silently would misrepresent the Commons arithmetic. The party's
+source line says so explicitly.
+
+**Documented gap — 13 of the 650 seats**: 7 independents, the 4-MP **Independent Alliance** (a
+parliamentary grouping of independents rather than a registered party), the **Speaker** (who sits
+apart from party), and **1 vacancy**.
+
+**Eleven non-free logos, declared.** Only four UK party logos (Reform UK, SDLP, Your Party, Alliance)
+are on Commons. The rest are English Wikipedia local files: eight under a fair-use rationale and
+three (Conservative, SNP, UUP) held as public domain because the marks fall below the UK threshold of
+originality. Each carries a `licenceNote` saying which of the two it is — the notes are not
+interchangeable, and writing "fair use" over a public-domain file would be as wrong as the reverse.
+
+All fifteen logos were montage-verified.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -869,7 +915,7 @@ Tick a box only when that country's fix is **merged and live**.
 
 ### Phase 4 — United Kingdom, United States, Canada (3)
 
-- [ ] `GB` United Kingdom
+- [x] `GB` United Kingdom — merged
 - [ ] `US` United States
 - [ ] `CA` Canada
 

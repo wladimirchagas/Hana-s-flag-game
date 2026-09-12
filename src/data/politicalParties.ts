@@ -9978,31 +9978,507 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "GB",
       "shortName": "LAB",
       "name": "Labour Party",
-      "nameEn": "Labour Party",
-      "logo": "party-logos/gb/labour.svg",
+      "logo": "party-logos/gb/lab.svg",
       "sha256": "ab47261debf135f500f108b76abab8167ec0955265be57f5e51b0c4fc0f940ac",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:UK_Labour_Party_Logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Labour_Party_(UK)_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Labour Party emblem exists on Wikimedia Commons; this is the SVG English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
       "ideology": [
-        "Social democracy",
-        "Democratic socialism",
-        "Progressivism"
+        "Social democracy"
       ],
-      "ideologyPosition": "left",
+      "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 1900,
-      "leader": "Keir Starmer",
-      "leaderTitle": "Prime Minister (2024–present)",
+      "leader": "Andy Burnham",
+      "leaderTitle": "Leader",
       "inPower": true,
       "inExecutive": true,
-      "timeInPower": "2024-present",
-      "seats": 412,
+      "timeInPower": "In government since the general election of 4 July 2024; Andy Burnham became prime minister on 20 July 2026.",
+      "seats": 403,
       "seatsTotal": 650,
       "chamberName": "House of Commons",
       "sources": [
         {
-          "title": "Labour Party (UK) - Wikipedia",
+          "title": "Labour Party — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Labour_Party_(UK)"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        },
+        {
+          "title": "Prime Minister of the United Kingdom — Wikipedia (Andy Burnham of the Labour Party, in office since 20 July 2026)",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-CON",
+      "country": "GB",
+      "shortName": "CON",
+      "name": "Conservative and Unionist Party",
+      "logo": "party-logos/gb/con.svg",
+      "sha256": "5972cfc94f63f04e9bff0ae071b4e4dc0557cb2b5c0eba8c24000161a102a6ca",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Conservatives_logo.svg",
+      "licenceNote": "Public-domain logo held as a local English Wikipedia file rather than on Wikimedia Commons: the Conservative Party mark is below the UK threshold of originality for copyright, so English Wikipedia hosts it as public domain. Cited to that file page because Commons carries no equivalent. Bundled for identification of the party only.",
+      "ideology": [
+        "Conservatism",
+        "British unionism",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1834,
+      "leader": "Kemi Badenoch",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 118,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Conservative and Unionist Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Conservative_Party_(UK)"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-LD",
+      "country": "GB",
+      "shortName": "LD",
+      "name": "Liberal Democrats",
+      "logo": "party-logos/gb/ld.svg",
+      "sha256": "37cdd6730265ba43ac86e23507b50822962b8ba3466862fb565f5996b00e5ef4",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Liberal_Democrats_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Liberal Democrats emblem exists on Wikimedia Commons; this is the SVG English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Liberalism",
+        "Social liberalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1988,
+      "leader": "Ed Davey",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 71,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Liberal Democrats — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Democrats_(UK%2C_2025)"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-REFORM",
+      "country": "GB",
+      "shortName": "Reform UK",
+      "name": "Reform UK",
+      "logo": "party-logos/gb/reform.svg",
+      "sha256": "9fddd4ecb2c92e208221f9f1c787a3d146fdfb0718a0855daeaca28903c3d5d1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Reform_UK.svg",
+      "ideology": [
+        "Right-wing populism",
+        "Hard Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2018,
+      "previousNames": [
+        {
+          "name": "The Brexit Party",
+          "years": "2018–2021"
+        }
+      ],
+      "leader": "Nigel Farage",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Reform UK — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Reform_UK"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-SNP",
+      "country": "GB",
+      "shortName": "SNP",
+      "name": "Scottish National Party",
+      "logo": "party-logos/gb/snp.svg",
+      "sha256": "84fc0ee714fb0a8bc7e83ca9c931d2bbeef67d1fe657adef1d7dbf82f355eef4",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Scottish_National_Party_logo_2016.svg",
+      "licenceNote": "Public-domain logo held as a local English Wikipedia file rather than on Wikimedia Commons: the Scottish National Party mark is below the UK threshold of originality for copyright, so English Wikipedia hosts it as public domain. Cited to that file page because Commons carries no equivalent. Bundled for identification of the party only.",
+      "ideology": [
+        "Scottish nationalism",
+        "Scottish independence",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1934,
+      "leader": "John Swinney",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Scottish National Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Scottish_National_Party"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-SF",
+      "country": "GB",
+      "shortName": "SF",
+      "name": "Sinn Féin",
+      "logo": "party-logos/gb/sf.svg",
+      "sha256": "bd37b761a63b5f990ffd82a4937edf05e60ac2a44acef333460763b59c2c9dce",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Sinn_F%C3%A9in.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Sinn Féin emblem exists on Wikimedia Commons; this is the SVG English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Irish republicanism",
+        "Democratic socialism",
+        "Left-wing nationalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1905,
+      "leader": "Mary Lou McDonald",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Sinn Féin — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Sinn_F%C3%A9in"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-DUP",
+      "country": "GB",
+      "shortName": "DUP",
+      "name": "Democratic Unionist Party",
+      "logo": "party-logos/gb/dup.svg",
+      "sha256": "91d300a38cabc865d4c3c759331c8d556459baff1c3941aa6e90b481f6e19a06",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Democratic_Unionist_Party_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Democratic Unionist Party emblem exists on Wikimedia Commons; this is the SVG English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "British unionism",
+        "Ulster loyalism",
+        "National conservatism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1971,
+      "leader": "Gavin Robinson",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Democratic Unionist Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Unionist_Party"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-GREEN",
+      "country": "GB",
+      "shortName": "Green",
+      "name": "Green Party of England and Wales",
+      "logo": "party-logos/gb/green.svg",
+      "sha256": "13383962c2a4140996a29ffc204d03e287de09fa5f8de3051a6fd1bb6b2760b4",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Green_Party_of_England_and_Wales_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Green Party of England and Wales emblem exists on Wikimedia Commons; this is the SVG English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Green politics",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1990,
+      "leader": "Zack Polanski",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Green Party of England and Wales — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_of_England_and_Wales"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-PC",
+      "country": "GB",
+      "shortName": "Plaid",
+      "name": "Plaid Cymru",
+      "nameEn": "The Party of Wales",
+      "logo": "party-logos/gb/plaid.svg",
+      "sha256": "630729c2e83fe5c8f799d600cbc1bbb13d5ac5354f69eb812e9ed5dc8c01c0ce",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Plaid_Cymru_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Plaid Cymru emblem exists on Wikimedia Commons; this is the SVG English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Welsh nationalism",
+        "Welsh independence",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1925,
+      "leader": "Rhun ap Iorwerth",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Plaid Cymru — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Plaid_Cymru"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-SDLP",
+      "country": "GB",
+      "shortName": "SDLP",
+      "name": "Social Democratic and Labour Party",
+      "logo": "party-logos/gb/sdlp.svg",
+      "sha256": "e6b3cbb541f65cb4ea91f2ad2904701e9a156f3c9ea0013569597a8398eb4bb1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SDLP_Logo_2025.svg",
+      "ideology": [
+        "Social democracy",
+        "Irish reunification",
+        "Irish nationalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1970,
+      "leader": "Claire Hanna",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Social Democratic and Labour Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_and_Labour_Party_(2025)"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-YP",
+      "country": "GB",
+      "shortName": "Your Party",
+      "name": "Your Party",
+      "logo": "party-logos/gb/yourparty.svg",
+      "sha256": "25614b3ca0e29050a316e3f5672678254673fa8212194e26e1d81bf823c69fb0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Your_Party_logo.svg",
+      "ideology": [
+        "Socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2025,
+      "leader": "Jeremy Corbyn",
+      "leaderTitle": "Co-leader (collective leadership)",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Your Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Your_Party_(UK)"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-APNI",
+      "country": "GB",
+      "shortName": "Alliance",
+      "name": "Alliance Party of Northern Ireland",
+      "logo": "party-logos/gb/alliance.svg",
+      "sha256": "a9471c3df4bee10b009fcd939a8f94c3ac968f90c7ff1852370470d8f3a33d30",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Alliance_Party_of_Northern_Ireland_logo.svg",
+      "ideology": [
+        "Liberalism",
+        "Non-sectarianism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1970,
+      "leader": "Naomi Long",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Alliance Party of Northern Ireland — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Alliance_Party_of_Northern_Ireland"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-RB",
+      "country": "GB",
+      "shortName": "Restore Britain",
+      "name": "Restore Britain",
+      "logo": "party-logos/gb/restore.svg",
+      "sha256": "09e599aba3100ab927dba572064a7479e2683dda28097c558ce9db87dcef3642",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Restore_Britain_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Restore Britain emblem exists on Wikimedia Commons; this is the SVG English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Ethnic nationalism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2026,
+      "leader": "Rupert Lowe",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Restore Britain — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Restore_Britain"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-TUV",
+      "country": "GB",
+      "shortName": "TUV",
+      "name": "Traditional Unionist Voice",
+      "logo": "party-logos/gb/tuv.svg",
+      "sha256": "e1464f9fab020208be30f1ebd0c030c3d90850ff59cac685c9ace822a556360e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Traditional_Unionist_Voice.svg",
+      "ideology": [
+        "British unionism",
+        "Social conservatism",
+        "Hard Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2007,
+      "leader": "Jim Allister",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Traditional Unionist Voice — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Traditional_Unionist_Voice"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "GB-UUP",
+      "country": "GB",
+      "shortName": "UUP",
+      "name": "Ulster Unionist Party",
+      "logo": "party-logos/gb/uup.svg",
+      "sha256": "b0e28301a7f304ea5d5569ac50304ab3b4ac494300a6441ca17e8dbd63013c85",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Ulster_Unionist_Party_logo_(2017).svg",
+      "licenceNote": "Public-domain logo held as a local English Wikipedia file rather than on Wikimedia Commons: the Ulster Unionist Party mark is below the UK threshold of originality for copyright, so English Wikipedia hosts it as public domain. Cited to that file page because Commons carries no equivalent. Bundled for identification of the party only.",
+      "ideology": [
+        "British unionism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1905,
+      "leader": "Jon Burrows",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 650,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Ulster Unionist Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Ulster_Unionist_Party"
+        },
+        {
+          "title": "House of Commons of the United Kingdom — Wikipedia: 59th Parliament, 650 seats — Government Labour 403; Official Opposition Conservative 118; other opposition Liberal Democrats 71, Reform UK 8, SNP 8, DUP 5, Green 5, Independent Alliance 4, Plaid Cymru 4, SDLP 2, Your Party 2, Alliance 1, Restore Britain 1, TUV 1, UUP 1, independents 7; Speaker 1; abstentionist Sinn Féin 7; 1 vacancy",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom"
         }
       ]
     }
