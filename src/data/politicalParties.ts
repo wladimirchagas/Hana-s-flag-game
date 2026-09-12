@@ -157,6 +157,18 @@ export interface PoliticalParty {
 }
 
 export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
+  "FR-GOV": {
+    id: "FR-GOV",
+    name: "Bloc central",
+    nameEn: "Central bloc (governing parties)",
+    kind: "coalition",
+    memberPartyIds: ["FR-RE", "FR-MODEM", "FR-HOR"],
+    source: {
+      title: "National Assembly (France) — Wikipedia: the second Lecornu government's three groups hold 162 of 577 seats — EPR 92, LD 36, HOR 34",
+      url: "https://en.wikipedia.org/wiki/National_Assembly_(France)",
+    },
+    note: "Les Républicains sit in the Droite Républicaine group, which the Assembly lists as supporting the government rather than part of it, so LR is recorded out of power.",
+  },
   "MY-PH": {
     id: "MY-PH",
     name: "Pakatan Harapan",
@@ -10271,39 +10283,462 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "FR": [
     {
-      "id": "FR-ENSEMBLE",
+      "id": "FR-RN",
       "country": "FR",
-      "shortName": "ENSEMBLE",
-      "name": "Ensemble pour la République",
-      "nameEn": "Together for the Republic",
-      "logo": "party-logos/fr/en.svg",
-      "sha256": "4079eda0a0accbf30491bd73b6d29ce6cda67d394c1bf6d57abd0d568ef0322c",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Ensemble_pour_la_République_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "shortName": "RN",
+      "name": "Rassemblement National",
+      "nameEn": "National Rally",
+      "logo": "party-logos/fr/rn.svg",
+      "sha256": "17ba1e49132cab4606c62f0c4266704061d65df4fa2be192cce0a1a23608e52e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Rassemblement_National.svg",
       "ideology": [
-        "Centrism",
-        "Social liberalism",
-        "Europeanism"
+        "French nationalism",
+        "National conservatism",
+        "Right-wing populism"
       ],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre",
-      "founded": 2022,
-      "leader": "Gabriel Attal",
-      "leaderTitle": "Former Prime Minister (Jan-Mar 2024)",
-      "inPower": true,
-      "inExecutive": false,
-      "timeInPower": "2022-present",
-      "seats": 250,
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1972,
+      "previousNames": [
+        {
+          "name": "Front National",
+          "nameEn": "National Front",
+          "years": "1972–2018"
+        }
+      ],
+      "leader": "Jordan Bardella",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 115,
       "seatsTotal": 577,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "Ensemble for the Republic - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Ensemble_for_the_Republic"
+          "title": "National Rally — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/National_Rally"
         },
         {
-          "title": "Gabriel Attal - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Gabriel_Attal"
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-RE",
+      "country": "FR",
+      "shortName": "RE",
+      "name": "Renaissance",
+      "logo": "party-logos/fr/renaissance.svg",
+      "sha256": "02a8259218da8e6bcea91dc510f0210011b6a0c1073e1f7fc122bf82b770668d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Renaissance_parti_logo.svg",
+      "ideology": [
+        "Liberalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2016,
+      "previousNames": [
+        {
+          "name": "La République En Marche",
+          "nameEn": "The Republic On the Move",
+          "years": "2016–2022"
+        }
+      ],
+      "coalitionId": "FR-GOV",
+      "leader": "Gabriel Attal",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In government since Emmanuel Macron's election in 2017; the second Lecornu government took office in 2025.",
+      "seats": 91,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Renaissance — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        },
+        {
+          "title": "Prime Minister of France — Wikipedia (Sébastien Lecornu, in office since 9 September 2025)",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_France"
+        }
+      ]
+    },
+    {
+      "id": "FR-LFI",
+      "country": "FR",
+      "shortName": "LFI",
+      "name": "La France Insoumise",
+      "nameEn": "France Unbowed",
+      "logo": "party-logos/fr/lfi.png",
+      "sha256": "ba825d2824da071efe8c20329b3d34e7243e6c7035e66840a8ac56d3b0dc338a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:LOGO-LFI-2026.png",
+      "ideology": [
+        "Democratic socialism",
+        "Left-wing populism",
+        "Eco-socialism",
+        "Anti-neoliberalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 2016,
+      "leader": "Manuel Bompard",
+      "leaderTitle": "Coordinator",
+      "inPower": false,
+      "seats": 67,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "France Unbowed — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/La_France_Insoumise"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-PS",
+      "country": "FR",
+      "shortName": "PS",
+      "name": "Parti Socialiste",
+      "nameEn": "Socialist Party",
+      "logo": "party-logos/fr/ps.svg",
+      "sha256": "8f89b987279b2fe05efbafc568e70147b33b482d6724590114b899452f134e9d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Socialist_Party_(France)_2024_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Parti Socialiste emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1969,
+      "leader": "Olivier Faure",
+      "leaderTitle": "First Secretary",
+      "inPower": false,
+      "seats": 66,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Socialist Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_(France)"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-LR",
+      "country": "FR",
+      "shortName": "LR",
+      "name": "Les Républicains",
+      "nameEn": "The Republicans",
+      "logo": "party-logos/fr/lr.svg",
+      "sha256": "1fbe38ebce06656b535255f56ea030a7b88c820faec72b64afa9105e122babd9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Les_R%C3%A9publicains_-_logo_(France,_2023).svg",
+      "ideology": [
+        "Conservatism",
+        "Neo-Gaullism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2015,
+      "leader": "Bruno Retailleau",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 48,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "The Republicans — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/The_Republicans_(France)"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-MODEM",
+      "country": "FR",
+      "shortName": "MoDem",
+      "name": "Mouvement Démocrate",
+      "nameEn": "Democratic Movement",
+      "logo": "party-logos/fr/modem.svg",
+      "sha256": "f3208ec0accf32f2173153ba74b89bed50c28842cc0aa2a5d4219fa38d8671e0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MoDem_logo_2019.svg",
+      "ideology": [
+        "Social liberalism",
+        "Christian democracy",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2007,
+      "coalitionId": "FR-GOV",
+      "leader": "François Bayrou",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the governing bloc supporting Emmanuel Macron since 2017.",
+      "seats": 33,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Democratic Movement — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Movement_(France)"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-HOR",
+      "country": "FR",
+      "shortName": "Horizons",
+      "name": "Horizons",
+      "logo": "party-logos/fr/horizons.svg",
+      "sha256": "5f847b77373e891fe73b7aa621685a3d0a68745938fe1a1b59be334e4900f8b2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Parti_Politique_Horizons_-_2021.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2021,
+      "coalitionId": "FR-GOV",
+      "leader": "Édouard Philippe",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the governing bloc since the party's foundation in 2021.",
+      "seats": 26,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Horizons — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Horizons_(political_party)"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-LE",
+      "country": "FR",
+      "shortName": "LÉ",
+      "name": "Les Écologistes",
+      "nameEn": "The Ecologists",
+      "logo": "party-logos/fr/ecolos.svg",
+      "sha256": "371f971972c47d9ec72db1e5d770557c5d186fe6e8c71e176e6eef1ca65e2557",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_The_Ecologists_(France).svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Les Écologistes emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Green politics",
+        "Alter-globalisation"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2010,
+      "leader": "Marine Tondelier",
+      "leaderTitle": "National Secretary",
+      "inPower": false,
+      "seats": 25,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "The Ecologists — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/The_Ecologists"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-UDR",
+      "country": "FR",
+      "shortName": "UDR",
+      "name": "Union des Droites pour la République",
+      "nameEn": "Union of the Right for the Republic",
+      "logo": "party-logos/fr/udr.svg",
+      "sha256": "47e3e88c6637affd116dd4341520f85d2ca3ed9b310e8c0eead2c47514e5d78b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:UDR_logo.svg",
+      "ideology": [
+        "Right-wing populism",
+        "Right-libertarianism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2024,
+      "leader": "Éric Ciotti",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Union of the Right for the Republic — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Union_of_the_Right_for_the_Republic"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-PCF",
+      "country": "FR",
+      "shortName": "PCF",
+      "name": "Parti Communiste Français",
+      "nameEn": "French Communist Party",
+      "logo": "party-logos/fr/pcf.svg",
+      "sha256": "5f4b35b9ca621351439433b05a9fc27d7a2e011f689f097242eeadbc8faec7d3",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_%E2%80%93_Parti_communiste_fran%C3%A7ais_(2018).svg",
+      "ideology": [
+        "Communism",
+        "Soft Euroscepticism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1920,
+      "leader": "Fabien Roussel",
+      "leaderTitle": "National Secretary",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "French Communist Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/French_Communist_Party"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-GS",
+      "country": "FR",
+      "shortName": "Génération.s",
+      "name": "Génération.s",
+      "logo": "party-logos/fr/generations.svg",
+      "sha256": "7920e567cabba756b5d384b430dc0bdbeb753c25f18bc3e4ab4ca0a090204c82",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_G%C3%A9n%C3%A9rations.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Génération.s emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Democratic socialism",
+        "Eco-socialism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2017,
+      "leader": "Benoît Hamon",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Génération.s — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/G%C3%A9n%C3%A9ration.s"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-UDI",
+      "country": "FR",
+      "shortName": "UDI",
+      "name": "Union des Démocrates et Indépendants",
+      "nameEn": "Union of Democrats and Independents",
+      "logo": "party-logos/fr/udi.png",
+      "sha256": "b8bbb6e243c153290ba997be4d83a58ca8becf7f94b70b56d96844fceb54c8c2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_UDI_2019.png",
+      "ideology": [
+        "Liberalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2012,
+      "leader": "Hervé Marseille",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Union of Democrats and Independents — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Union_of_Democrats_and_Independents"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
+        }
+      ]
+    },
+    {
+      "id": "FR-LAF",
+      "country": "FR",
+      "shortName": "LAF",
+      "name": "L'Avenir Français",
+      "nameEn": "French Future",
+      "logo": "party-logos/fr/laf.png",
+      "sha256": "3d8122f6b2613147a0191ccd15a509048e4504ef0b1b58bba3c6476898e84b84",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_French_Future.png",
+      "licenceNote": "Non-free logo. No freely-licensed file of the L'Avenir Français emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Euroscepticism",
+        "Anti-immigration"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2021,
+      "leader": "Jean-Philippe Tanguy",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 577,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "French Future — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/French_Future"
+        },
+        {
+          "title": "National Assembly (France) — Wikipedia: 577 seats, 17th legislature — Government (second Lecornu government) 162 (EPR 92, LD 36, HOR 34), supported by DR 49, Opposition 366 (NFP 195, RN group 123, LIOT 22, UDR 17, 9 non-attached). Seat figures here are the per-party breakdown the article gives inside each group",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(France)"
         }
       ]
     }

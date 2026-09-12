@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 28 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 29 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -74,6 +74,7 @@ forgotten; it is tracked here.
 | 🇺🇸 United States | `#1338` | 2 → 2 | 432 / 435 | **CONTRADICTORY — two simultaneous presidents** |
 | 🇨🇦 Canada | `#1339` | 1 → 5 | 338 / 343 | **WRONG — a departed PM, a retired chamber size** |
 | 🇩🇪 Germany | `#1340` | 1 → 6 | 627 / 630 | **WRONG — a seat count belonging to no Bundestag** |
+| 🇫🇷 France | `#1341` | 1 → 13 | 513 / 577 | **WRONG — a parliamentary group modelled as a party** |
 
 ---
 
@@ -985,6 +986,38 @@ All six logos are public domain on Commons and were montage-verified.
 
 ---
 
+### 🇫🇷 France — audited 2026-09-12
+
+France had **one entry**, and it was not a party. `FR-ENSEMBLE` — "Ensemble pour la République",
+250 seats, led by Gabriel Attal — is a **parliamentary group**, and its 250 seats belong to a
+legislature that no longer exists: the group now holds 92.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-144 | **S1** | existence | a **parliamentary group** modelled as a party, with 250 seats | **13 parties** with their own seat counts | The Assembly's own composition gives a per-party breakdown inside each group; EPR now holds 92, of which Renaissance's own share is 87 |
+| PP-145 | **S1** | coverage | 1 entry | **13 parties, 513 of 577** | The **Rassemblement National**, the largest single party in the chamber with 115 seats, was absent, as were LFI, the PS, LR and nine others |
+| PP-146 | **S1** | `inExecutive` | **false** on the one entry marked `inPower: true` | **true** on Renaissance, MoDem and Horizons | The three parties of the second Lecornu government. An entry that is in power but in no executive describes nothing |
+| PP-147 | **S3** | coalitions | none | **`FR-GOV`** (Renaissance, MoDem, Horizons — 162 seats) | The Assembly's own Government grouping |
+
+**A modelling decision, recorded.** France's Assembly reports composition by **group**, and each
+group contains several parties — the EPR group's 92 seats are Renaissance's 87 plus five deputies
+from four other parties, and Les Républicains' 48 seats are split across three different groups. The
+dataset models **parties**, not groups, because that is what the feature is, and because every party
+has a logo where a group does not. Each party's seat figure is the sum of its own deputies across
+every group, taken from the Assembly article's per-group breakdown. The `FR-GOV` coalition carries
+the group-level picture, including the note that Les Républicains *support* the government without
+being in it — the same reading applied in Indonesia and Peru.
+
+**Documented gap — 64 of the 577 seats**: nine non-attached members, and deputies of the small
+overseas, regional and miscellaneous-right/left groupings (DVD, DVG, Péyi-A, Tāvini, Tapura,
+Caledonian Union, Place Publique, L'Après and some twenty others), most holding one or two seats and
+many with no logo file anywhere.
+
+**Four non-free logos, declared** (PS, Les Écologistes, Génération.s, L'Avenir Français); the other
+nine are on Commons. All thirteen were montage-verified.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -1031,7 +1064,7 @@ Tick a box only when that country's fix is **merged and live**.
 ### Phase 5 — Europe (45)
 
 - [ ] `IE` Ireland
-- [ ] `FR` France
+- [x] `FR` France — merged
 - [x] `DE` Germany — merged
 - [ ] `ES` Spain
 - [ ] `PT` Portugal
