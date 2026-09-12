@@ -536,6 +536,25 @@ with a party column was reachable), and that limit is recorded here rather than 
 
 All 13 bundled logos were SHA-1 matched to Commons or English Wikipedia and montage-verified.
 
+### 🇵🇪 Peru — audited 2026-09-12
+
+Peru's parties were the right six, but the entry described **a legislature that no longer exists**.
+
+At the 12–13 April 2026 general election Peru returned to a **bicameral** Congress after thirty
+years: a 60-member Senate and a **130-member Chamber of Deputies**. The dataset still named the old
+unicameral "Congress of the Republic" and carried a seat split that matches neither house.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-070 | **S1** | `chamberName` | "Congress of the Republic" | **"Chamber of Deputies"** | The Congress has been bicameral since the 2026 election; the Congress article's own header reads "Unicameral (1995–2026)" |
+| PP-071 | **S1** | `seats` | FP 24, JP 9, RP 15, PBG 22, OBRAS 16, AN 14 — summing to 100 of 130 | **FP 41, JP 32, PBG 18, RP 15, OBRAS 14, AN 10 — exactly 130 of 130** | The Chamber's own composition |
+| PP-072 | **S1** | `leader` | Juntos por el Perú led by "Raúl Alfredo de la Pue…" | **Roberto Sánchez** | party infobox |
+| PP-073 | **S3** | `leader` | PBG, OBRAS and AN had none | Jorge Nieto; Ricardo Belmont; Luis López-Chau Pastor | party infoboxes |
+| PP-074 | **S3** | `inPower` / `inExecutive` | false on every party | `true` on **Popular Force** | **Keiko Fujimori**, Popular Force's leader, is President of Peru. Popular Renewal is recorded as *supported by* the government, so it stays out of power — the same reading applied in Indonesia |
+
+All six logos were SHA-1 matched to Commons and montage-verified. Seats now reconcile exactly, which
+closes Peru's contribution to defect **B4** (chamber coverage below 60% — it was 77%).
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -566,7 +585,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `AR` Argentina — merged
 - [x] `CL` Chile — merged
 - [x] `CO` Colombia — merged
-- [ ] `PE` Peru
+- [x] `PE` Peru — merged
 - [ ] `VE` Venezuela
 - [ ] `EC` Ecuador
 - [ ] `BO` Bolivia
