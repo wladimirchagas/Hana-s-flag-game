@@ -158,6 +158,65 @@ export interface PoliticalParty {
 }
 
 export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
+  "IN-NDA": {
+    id: "IN-NDA",
+    name: "NDA",
+    nameEn: "National Democratic Alliance",
+    kind: "coalition",
+    memberPartyIds: [
+      "IN-BJP",
+      "IN-NCPI",
+      "IN-TDP",
+      "IN-SHS",
+      "IN-JDU",
+      "IN-LJPRV",
+      "IN-JDS",
+      "IN-JSP",
+      "IN-RLD",
+      "IN-ADS",
+      "IN-AGP",
+      "IN-AJSU",
+      "IN-HAM",
+      "IN-NCP",
+      "IN-SKM",
+    ],
+    source: {
+      title: "Lok Sabha \u2014 Wikipedia: the National Democratic Alliance holds 318 of the 543 seats, and forms the third Modi ministry",
+      url: "https://en.wikipedia.org/wiki/Lok_Sabha",
+    },
+    note: "The governing alliance, led by the Bharatiya Janata Party, which holds 240 of its 318 seats on its own. Nine of its fifteen parties hold portfolios in the third Modi ministry; the other six support the government without a ministry. The Nationalist Citizens Party of India, formed by Trinamool Congress rebels, joined the alliance in 2026 and is its second-largest member with 20 seats.",
+  },
+  "IN-INDIA": {
+    id: "IN-INDIA",
+    name: "INDIA bloc",
+    nameEn: "Indian National Developmental Inclusive Alliance",
+    kind: "coalition",
+    memberPartyIds: [
+      "IN-INC",
+      "IN-SP",
+      "IN-TMC",
+      "IN-NCPSP",
+      "IN-CPIM",
+      "IN-RJD",
+      "IN-IUML",
+      "IN-JMM",
+      "IN-SSUBT",
+      "IN-CPI",
+      "IN-CPIMLL",
+      "IN-JKNC",
+      "IN-VCK",
+      "IN-BAP",
+      "IN-KC",
+      "IN-MDMK",
+      "IN-RSP",
+      "IN-RLP",
+    ],
+    source: {
+      title: "Lok Sabha \u2014 Wikipedia: the Indian National Developmental Inclusive Alliance is the Official Opposition with 184 of the 543 seats",
+      url: "https://en.wikipedia.org/wiki/Lok_Sabha",
+    },
+    note: "The Official Opposition, led by the Indian National Congress. Its 184 seats include three independents who are not modelled as parties here, so its eighteen member parties account for 181. A further 37 seats are held by parties outside both alliances, the largest being the DMK with 22.",
+  },
   "CN-UF": {
     id: "CN-UF",
     name: "多党合作制度",
@@ -16969,32 +17028,42 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "IN-BJP",
       "country": "IN",
       "shortName": "BJP",
-      "name": "Bharatiya Janata Party",
+      "name": "भारतीय जनता पार्टी",
       "nameEn": "Bharatiya Janata Party",
-      "logo": "party-logos/in/bjp.png",
-      "sha256": "c1c64f357233396c696b0b39c1f5502919eed8b1e439fa05b1ae7ca76f242807",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:BJP_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Hindutva", "Right-wing nationalism", "Hindu nationalism"],
+      "logo": "party-logos/in/bjp.svg",
+      "sha256": "c5cb1947a8f0eae6bf84641bc7b71d3a7fcc56fc4e203f0e6b5f898b6e221e98",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Bharatiya_Janata_Party.svg",
+      "ideology": [
+        "Hindu nationalism",
+        "Hindutva",
+        "Integral humanism",
+        "Social conservatism",
+        "Economic nationalism"
+      ],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
       "founded": 1980,
-      "leader": "Narendra Modi",
-      "leaderTitle": "Prime Minister (2014–present), Party President",
+      "coalitionId": "IN-NDA",
+      "leader": "Nitin Nabin",
+      "leaderTitle": "President",
       "inPower": true,
       "inExecutive": true,
-      "timeInPower": "2014-present",
+      "timeInPower": "Holds office in the third Modi ministry, the NDA coalition government formed on 9 June 2024.",
       "seats": 240,
       "seatsTotal": 543,
       "chamberName": "Lok Sabha",
       "sources": [
         {
-          "title": "Bharatiya Janata Party – Wikipedia",
+          "title": "Bharatiya Janata Party — Wikipedia (infobox: founded 1980; President Nitin Nabin; 240 of the Lok Sabha's 543 seats)",
           "url": "https://en.wikipedia.org/wiki/Bharatiya_Janata_Party"
         },
         {
-          "title": "2024 Indian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        },
+        {
+          "title": "Third Modi ministry — Wikipedia (formed 9 June 2024; a coalition whose ministers come from the BJP, JD(S), HAM, JD(U), TDP, LJP(RV), Shiv Sena, RLD, RPI(A) and Apna Dal (Sonelal))",
+          "url": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
         }
       ]
     },
@@ -17002,30 +17071,70 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "IN-INC",
       "country": "IN",
       "shortName": "INC",
-      "name": "Indian National Congress",
+      "name": "भारतीय राष्ट्रीय काँग्रेस",
       "nameEn": "Indian National Congress",
-      "logo": "party-logos/in/inc.png",
-      "sha256": "a8c088394ade18af44d1ab98cc1e937b35a9300e82b23224cdad02c8593b8070",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Indian_National_Congress_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Social democracy", "Centrism", "Secularism"],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
+      "logo": "party-logos/in/inc.svg",
+      "sha256": "a79d7016b58d98c5e21679297bdfc987dd46dfeb3b2f55a11a7ab19fa2685ea9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_National_Congress_hand_logo.svg",
+      "ideology": [
+        "Social democracy",
+        "Secularism",
+        "Social liberalism",
+        "Democratic socialism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
       "founded": 1885,
+      "coalitionId": "IN-INDIA",
       "leader": "Mallikarjun Kharge",
-      "leaderTitle": "Party President",
+      "leaderTitle": "President",
       "inPower": false,
-      "seats": 99,
+      "seats": 98,
       "seatsTotal": 543,
       "chamberName": "Lok Sabha",
       "sources": [
         {
-          "title": "Indian National Congress – Wikipedia",
+          "title": "Indian National Congress — Wikipedia (infobox: founded 1885; President Mallikarjun Kharge; 98 of the Lok Sabha's 543 seats)",
           "url": "https://en.wikipedia.org/wiki/Indian_National_Congress"
         },
         {
-          "title": "2024 Indian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-SP",
+      "country": "IN",
+      "shortName": "SP",
+      "name": "समाजवादी पार्टी",
+      "nameEn": "Samajwadi Party",
+      "logo": "party-logos/in/sp.png",
+      "sha256": "f0ac127087e56e8a107e12719bff4f11fb7bd4e3f25ae802ccaf7f195541dccb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Samajwadi_Party.png",
+      "ideology": [
+        "Democratic socialism",
+        "Secularism",
+        "Social justice"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1992,
+      "coalitionId": "IN-INDIA",
+      "leader": "Akhilesh Yadav",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 37,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Samajwadi Party — Wikipedia (infobox: founded 1992; President Akhilesh Yadav; 37 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Samajwadi_Party"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
         }
       ]
     },
@@ -17033,61 +17142,1397 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "IN-DMK",
       "country": "IN",
       "shortName": "DMK",
-      "name": "Dravida Munnetra Kazhagam",
+      "name": "திராவிட முன்னேற்றக் கழகம்",
       "nameEn": "Dravida Munnetra Kazhagam",
       "logo": "party-logos/in/dmk.png",
-      "sha256": "273f4f3aafed8cc64cc62bdf23e54f4202704150ae97d193324b2f9df01690b9",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:DMK_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Dravidian ideology", "Regionalism", "Social democracy"],
+      "sha256": "6298292c51915b5bb82228c4ed430dc2bca73ccd118da871465ce6048f75ab15",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Dravida_Munnetra_Kazhagam_logo.png",
+      "licenceNote": "Non-free. Dravida Munnetra Kazhagam's emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Dravidianism",
+        "Tamil nationalism",
+        "Social democracy",
+        "Secularism"
+      ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 1949,
       "leader": "M. K. Stalin",
-      "leaderTitle": "Party President",
+      "leaderTitle": "President",
       "inPower": false,
-      "seats": 39,
+      "seats": 22,
       "seatsTotal": 543,
       "chamberName": "Lok Sabha",
       "sources": [
         {
-          "title": "Dravida Munnetra Kazhagam – Wikipedia",
+          "title": "Dravida Munnetra Kazhagam — Wikipedia (infobox: founded 1949; President M. K. Stalin; 22 of the Lok Sabha's 543 seats)",
           "url": "https://en.wikipedia.org/wiki/Dravida_Munnetra_Kazhagam"
         },
         {
-          "title": "2024 Indian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-NCPI",
+      "country": "IN",
+      "shortName": "NCPI",
+      "name": "Nationalist Citizens Party of India",
+      "logo": "party-logos/in/ncpi.png",
+      "sha256": "eed53fb26afebd62a578404b3710e5069e2943403def02995a53274f5a6a6e77",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:NCPI_Nationalist_Citizens_Party_of_India.png",
+      "ideology": [
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2022,
+      "coalitionId": "IN-NDA",
+      "leader": "Kakoli Ghosh Dastidar",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Part of the National Democratic Alliance, which has governed since 2014; holds no portfolio in the third Modi ministry.",
+      "seats": 20,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Nationalist Citizens Party of India — Wikipedia (infobox: founded 2022; President Kakoli Ghosh Dastidar; 20 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Nationalist_Citizens_Party_of_India"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-TDP",
+      "country": "IN",
+      "shortName": "TDP",
+      "name": "తెలుగుదేశం పార్టీ",
+      "nameEn": "Telugu Desam Party",
+      "logo": "party-logos/in/tdp.png",
+      "sha256": "84d7773eed2c3db74d606662800891bc1addf8ffa515b885dd339b097874de9b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Telugu_Desam_Party_Flag.png",
+      "ideology": [
+        "Regionalism",
+        "Telugu nationalism",
+        "Populism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1982,
+      "coalitionId": "IN-NDA",
+      "leader": "N. Chandrababu Naidu",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds office in the third Modi ministry, the NDA coalition government formed on 9 June 2024.",
+      "seats": 16,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Telugu Desam Party — Wikipedia (infobox: founded 1982; President N. Chandrababu Naidu; 16 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Telugu_Desam_Party"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        },
+        {
+          "title": "Third Modi ministry — Wikipedia (formed 9 June 2024; a coalition whose ministers come from the BJP, JD(S), HAM, JD(U), TDP, LJP(RV), Shiv Sena, RLD, RPI(A) and Apna Dal (Sonelal))",
+          "url": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+        }
+      ]
+    },
+    {
+      "id": "IN-SHS",
+      "country": "IN",
+      "shortName": "Shiv Sena",
+      "name": "शिवसेना",
+      "nameEn": "Shiv Sena",
+      "logo": "party-logos/in/shs.svg",
+      "sha256": "38e98732d6d418cf1289f612e6986c7b73c0b0698143aa42c387bddc18de6442",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Shiv_Sena.svg",
+      "ideology": [
+        "Hindu nationalism",
+        "Hindutva",
+        "Marathi nationalism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2022,
+      "coalitionId": "IN-NDA",
+      "leader": "Eknath Shinde",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds office in the third Modi ministry, the NDA coalition government formed on 9 June 2024.",
+      "seats": 13,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Shiv Sena (2022) — Wikipedia (infobox: founded 2022; Leader Eknath Shinde; 13 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Shiv_Sena_(2022%E2%80%93present)"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        },
+        {
+          "title": "Third Modi ministry — Wikipedia (formed 9 June 2024; a coalition whose ministers come from the BJP, JD(S), HAM, JD(U), TDP, LJP(RV), Shiv Sena, RLD, RPI(A) and Apna Dal (Sonelal))",
+          "url": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+        }
+      ]
+    },
+    {
+      "id": "IN-JDU",
+      "country": "IN",
+      "shortName": "JD(U)",
+      "name": "जनता दल (यूनाइटेड)",
+      "nameEn": "Janata Dal (United)",
+      "logo": "party-logos/in/jdu.png",
+      "sha256": "d0d7393f0455337b4e92f8d86d459516907e9d9b014b1b5eeed6fa54139ef333",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:JanataDalUnitedFlag.PNG",
+      "ideology": [
+        "Socialism",
+        "Secularism",
+        "Social justice"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2003,
+      "coalitionId": "IN-NDA",
+      "leader": "Nitish Kumar",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds office in the third Modi ministry, the NDA coalition government formed on 9 June 2024.",
+      "seats": 12,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Janata Dal (United) — Wikipedia (infobox: founded 2003; President Nitish Kumar; 12 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Janata_Dal_(United)"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        },
+        {
+          "title": "Third Modi ministry — Wikipedia (formed 9 June 2024; a coalition whose ministers come from the BJP, JD(S), HAM, JD(U), TDP, LJP(RV), Shiv Sena, RLD, RPI(A) and Apna Dal (Sonelal))",
+          "url": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
         }
       ]
     },
     {
       "id": "IN-TMC",
       "country": "IN",
-      "shortName": "TMC",
-      "name": "All India Trinamool Congress",
+      "shortName": "AITC",
+      "name": "সর্বভারতীয় তৃণমূল কংগ্রেস",
       "nameEn": "All India Trinamool Congress",
-      "logo": "party-logos/in/tmc.png",
-      "sha256": "78645c88535538e502756ff0ad429aeab772c2a31890493bf03a52b6eb9f70b6",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:TMC_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Regionalism", "Populism", "Centre-left"],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
+      "logo": "party-logos/in/tmc.svg",
+      "sha256": "76abff353bc15cbc52797fc7dbac5fc87abd6471d5f39022fa09a6187c815dc1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:All_India_Trinamool_Congress_logo_(3).svg",
+      "ideology": [
+        "Populism",
+        "Secularism",
+        "Bengali regionalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
       "founded": 1998,
-      "leader": "Mamata Banerjee",
-      "leaderTitle": "Party Chairperson",
+      "coalitionId": "IN-INDIA",
       "inPower": false,
-      "seats": 29,
+      "seats": 8,
       "seatsTotal": 543,
       "chamberName": "Lok Sabha",
       "sources": [
         {
-          "title": "All India Trinamool Congress – Wikipedia",
+          "title": "Trinamool Congress — Wikipedia (infobox: founded 1998; 8 of the Lok Sabha's 543 seats)",
           "url": "https://en.wikipedia.org/wiki/All_India_Trinamool_Congress"
         },
         {
-          "title": "2024 Indian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-NCPSP",
+      "country": "IN",
+      "shortName": "NCP(SP)",
+      "name": "राष्ट्रवादी काँग्रेस पक्ष – शरदचंद्र पवार",
+      "nameEn": "Nationalist Congress Party – Sharadchandra Pawar",
+      "logo": "party-logos/in/ncpsp.jpg",
+      "sha256": "2e3713ca3a391ca43af14277c8a151328f7b3b26577cd50a280ddc97e6b50e57",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Nationalist_Congress_Party_(Sharadchandra_Pawar)_Logo.jpg",
+      "licenceNote": "Non-free. Nationalist Congress Party – Sharadchandra Pawar's emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Gandhian socialism",
+        "Marathi nationalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2024,
+      "coalitionId": "IN-INDIA",
+      "leader": "Sharad Pawar",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Nationalist Congress Party – Sharadchandra Pawar — Wikipedia (infobox: founded 2024; President Sharad Pawar; 8 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Nationalist_Congress_Party_%E2%80%93_Sharadchandra_Pawar"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-LJPRV",
+      "country": "IN",
+      "shortName": "LJP(RV)",
+      "name": "लोक जनशक्ति पार्टी (रामविलास)",
+      "nameEn": "Lok Janshakti Party (Ram Vilas)",
+      "logo": "party-logos/in/ljprv.jpg",
+      "sha256": "a1a2f2d85d4f0235ff3766df53c7c60d152dd0190114d24feb5f77815453662a",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:LJP_R_Logo.jpg",
+      "licenceNote": "Non-free. Lok Janshakti Party (Ram Vilas)'s emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Social justice",
+        "Dalit rights",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2021,
+      "coalitionId": "IN-NDA",
+      "leader": "Chirag Paswan",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds office in the third Modi ministry, the NDA coalition government formed on 9 June 2024.",
+      "seats": 5,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Lok Janshakti Party (Ram Vilas) — Wikipedia (infobox: founded 2021; President Chirag Paswan; 5 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Janshakti_Party_(Ram_Vilas)"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        },
+        {
+          "title": "Third Modi ministry — Wikipedia (formed 9 June 2024; a coalition whose ministers come from the BJP, JD(S), HAM, JD(U), TDP, LJP(RV), Shiv Sena, RLD, RPI(A) and Apna Dal (Sonelal))",
+          "url": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+        }
+      ]
+    },
+    {
+      "id": "IN-CPIM",
+      "country": "IN",
+      "shortName": "CPI(M)",
+      "name": "भारत की कम्युनिस्ट पार्टी (मार्क्सवादी)",
+      "nameEn": "Communist Party of India (Marxist)",
+      "logo": "party-logos/in/cpim.svg",
+      "sha256": "4687d94bb94c9fbddd512a5d9db3ffb16e5999595a39e2abb5bf28acaf3fccf9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CPI-M-flag.svg",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1964,
+      "coalitionId": "IN-INDIA",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Communist Party of India (Marxist) — Wikipedia (infobox: founded 1964; 4 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_India_(Marxist)"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-RJD",
+      "country": "IN",
+      "shortName": "RJD",
+      "name": "राष्ट्रीय जनता दल",
+      "nameEn": "Rashtriya Janata Dal",
+      "logo": "party-logos/in/rjd.svg",
+      "sha256": "5eb89a3399b7da2f98e4c7e8b6e1301603d833aa22670dcac190ffe48a952eb4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:RJD_Flag.svg",
+      "ideology": [
+        "Social justice",
+        "Secularism",
+        "Socialism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1997,
+      "coalitionId": "IN-INDIA",
+      "leader": "Lalu Prasad Yadav",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Rashtriya Janata Dal — Wikipedia (infobox: founded 1997; President Lalu Prasad Yadav; 4 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Rashtriya_Janata_Dal"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-YSRCP",
+      "country": "IN",
+      "shortName": "YSRCP",
+      "name": "వైఎస్ఆర్ కాంగ్రెస్ పార్టీ",
+      "nameEn": "YSR Congress Party",
+      "logo": "party-logos/in/ysrcp.jpg",
+      "sha256": "f966d3b90157ba0db1cb90889c5a7d48a94bfde78c6dfba92d9735cccb3d387f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Ysr_cp_flag.jpg",
+      "licenceNote": "Non-free. YSR Congress Party's emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Populism",
+        "Welfarism",
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2011,
+      "leader": "Y. S. Jagan Mohan Reddy",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "YSR Congress Party — Wikipedia (infobox: founded 2011; President Y. S. Jagan Mohan Reddy; 4 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/YSR_Congress_Party"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-AAP",
+      "country": "IN",
+      "shortName": "AAP",
+      "name": "आम आदमी पार्टी",
+      "nameEn": "Aam Aadmi Party",
+      "logo": "party-logos/in/aap.svg",
+      "sha256": "8fe33852dede501e3afefc12a59a75dad0cbec0285eb2bc33251196eef4d6e55",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Aam_Aadmi_Party_flag_(2).svg",
+      "ideology": [
+        "Populism",
+        "Anti-corruption",
+        "Welfarism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2012,
+      "leader": "Arvind Kejriwal",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Aam Aadmi Party — Wikipedia (infobox: founded 2012; Leader Arvind Kejriwal; 3 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Aam_Aadmi_Party"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-IUML",
+      "country": "IN",
+      "shortName": "IUML",
+      "name": "ഇന്ത്യൻ യൂണിയൻ മുസ്ലിം ലീഗ്",
+      "nameEn": "Indian Union Muslim League",
+      "logo": "party-logos/in/iuml.svg",
+      "sha256": "6f801761f8e7b9c5b359181da4440a0f3fb79599790e95b793c9b16423880a68",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Indian_Union_Muslim_League.svg",
+      "ideology": [
+        "Islamic democracy",
+        "Liberal conservatism",
+        "Minority rights"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1948,
+      "coalitionId": "IN-INDIA",
+      "leader": "K. M. Kader Mohideen",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Indian Union Muslim League — Wikipedia (infobox: founded 1948; President K. M. Kader Mohideen; 3 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Indian_Union_Muslim_League"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-JMM",
+      "country": "IN",
+      "shortName": "JMM",
+      "name": "झारखंड मुक्ति मोर्चा",
+      "nameEn": "Jharkhand Mukti Morcha",
+      "logo": "party-logos/in/jmm.svg",
+      "sha256": "772435f1d5fb837c5960956b8a99a0ffaab8c9e6c672a2f0f9a2bb636e944434",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Jharkhand_Mukti_Morcha_flag.svg",
+      "ideology": [
+        "Regionalism",
+        "Adivasi rights",
+        "Socialism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1972,
+      "coalitionId": "IN-INDIA",
+      "leader": "Hemant Soren",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Jharkhand Mukti Morcha — Wikipedia (infobox: founded 1972; President Hemant Soren; 3 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Jharkhand_Mukti_Morcha"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-SSUBT",
+      "country": "IN",
+      "shortName": "SS(UBT)",
+      "name": "शिवसेना (उद्धव बाळासाहेब ठाकरे)",
+      "nameEn": "Shiv Sena (Uddhav Balasaheb Thackeray)",
+      "logo": "party-logos/in/ssubt.png",
+      "sha256": "5bb6c671a13ab608dbdb05c60ecd6003920110bbd4b85473da897f7237eca90c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SS(UBT)_flag.png",
+      "ideology": [
+        "Marathi nationalism",
+        "Hindutva",
+        "Regionalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2022,
+      "coalitionId": "IN-INDIA",
+      "leader": "Uddhav Thackeray",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Shiv Sena (UBT) — Wikipedia (infobox: founded 2022; President Uddhav Thackeray; 3 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Shiv_Sena_(UBT)"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-ADWPD",
+      "country": "IN",
+      "shortName": "AD(WPD)",
+      "name": "ਅਕਾਲੀ ਦਲ (ਵਾਰਿਸ ਪੰਜਾਬ ਦੇ)",
+      "nameEn": "Akali Dal (Waris Punjab De)",
+      "logo": "party-logos/in/adwpd.png",
+      "sha256": "df9345dab022931c5138a4f5f1ac8edd45abde5100081fb83177366b7178565c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:ADWPDFLAG.png",
+      "ideology": [
+        "Sikh nationalism",
+        "Khalistan movement"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2025,
+      "leader": "Amritpal Singh",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Akali Dal (Waris Punjab De) — Wikipedia (infobox: founded 2025; President Amritpal Singh; 2 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Akali_Dal_(Waris_Punjab_De)"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-CPI",
+      "country": "IN",
+      "shortName": "CPI",
+      "name": "भारतीय कम्युनिस्ट पार्टी",
+      "nameEn": "Communist Party of India",
+      "logo": "party-logos/in/cpi.png",
+      "sha256": "ec166d92e878110ccaf2caf59b6302eede3a80dae0440294b1f4b7b85c63ed81",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Communist_Party_of_India_Flag.png",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1925,
+      "coalitionId": "IN-INDIA",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Communist Party of India — Wikipedia (infobox: founded 1925; 2 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_India"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-CPIMLL",
+      "country": "IN",
+      "shortName": "CPI(ML)L",
+      "name": "भारतीय कम्युनिस्ट पार्टी (मार्क्सवादी–लेनिनवादी) लिबरेशन",
+      "nameEn": "Communist Party of India (Marxist–Leninist) Liberation",
+      "logo": "party-logos/in/cpimll.png",
+      "sha256": "d8a2fe386deff6aa7a69f4570e7b30f74935b29fa2b9e18f14fda756e9115947",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CPIML_LIBERATION_FLAG.png",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism",
+        "Maoism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 1974,
+      "coalitionId": "IN-INDIA",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Communist Party of India (Marxist–Leninist) Liberation — Wikipedia (infobox: founded 1974; 2 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_India_(Marxist%E2%80%93Leninist)_Liberation"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-JDS",
+      "country": "IN",
+      "shortName": "JD(S)",
+      "name": "ಜನತಾ ದಳ (ಜಾತ್ಯತೀತ)",
+      "nameEn": "Janata Dal (Secular)",
+      "logo": "party-logos/in/jds.svg",
+      "sha256": "49db58844ef0077c9d96ea4587679f5395b02166b85d11c99762debeb31f5119",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Janata_Dal_(Secular)_flag_(1).svg",
+      "ideology": [
+        "Socialism",
+        "Secularism",
+        "Agrarianism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1999,
+      "coalitionId": "IN-NDA",
+      "leader": "H. D. Deve Gowda",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds office in the third Modi ministry, the NDA coalition government formed on 9 June 2024.",
+      "seats": 2,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Janata Dal (Secular) — Wikipedia (infobox: founded 1999; President H. D. Deve Gowda; 2 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Janata_Dal_(Secular)"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        },
+        {
+          "title": "Third Modi ministry — Wikipedia (formed 9 June 2024; a coalition whose ministers come from the BJP, JD(S), HAM, JD(U), TDP, LJP(RV), Shiv Sena, RLD, RPI(A) and Apna Dal (Sonelal))",
+          "url": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+        }
+      ]
+    },
+    {
+      "id": "IN-JKNC",
+      "country": "IN",
+      "shortName": "JKNC",
+      "name": "جموں و کشمیر نیشنل کانفرنس",
+      "nameEn": "Jammu & Kashmir National Conference",
+      "logo": "party-logos/in/jknc.png",
+      "sha256": "56dc5622eb8fa3e154be8081f9ae457b0ca1c00cf98729e60f6da34b10dc619c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_Election_Symbol_Plough.png",
+      "ideology": [
+        "Kashmiri autonomy",
+        "Secularism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1932,
+      "coalitionId": "IN-INDIA",
+      "leader": "Farooq Abdullah",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Jammu & Kashmir National Conference — Wikipedia (infobox: founded 1932; President Farooq Abdullah; 2 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Jammu_%26_Kashmir_National_Conference"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-JSP",
+      "country": "IN",
+      "shortName": "JSP",
+      "name": "జనసేన పార్టీ",
+      "nameEn": "Janasena Party",
+      "logo": "party-logos/in/jsp.png",
+      "sha256": "eea7b80e1a85f80861388ccc0aac7b531d5ca2aad533d201be1840f1e36ee109",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Janasena_Party_Flag.png",
+      "ideology": [
+        "Populism",
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2014,
+      "coalitionId": "IN-NDA",
+      "leader": "Pawan Kalyan",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Part of the National Democratic Alliance, which has governed since 2014; holds no portfolio in the third Modi ministry.",
+      "seats": 2,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Janasena Party — Wikipedia (infobox: founded 2014; President Pawan Kalyan; 2 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Janasena_Party"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-RLD",
+      "country": "IN",
+      "shortName": "RLD",
+      "name": "राष्ट्रीय लोक दल",
+      "nameEn": "Rashtriya Lok Dal",
+      "logo": "party-logos/in/rld.png",
+      "sha256": "60dee16b2f9596dbe464527fa38b55a8e21e4f8ff159708be1d6de3afe058693",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_Election_Symbol_Hand_Pump.png",
+      "ideology": [
+        "Secularism",
+        "Regionalism",
+        "Farmers' rights"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1996,
+      "coalitionId": "IN-NDA",
+      "leader": "Jayant Chaudhary",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds office in the third Modi ministry, the NDA coalition government formed on 9 June 2024.",
+      "seats": 2,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Rashtriya Lok Dal — Wikipedia (infobox: founded 1996; President Jayant Chaudhary; 2 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Rashtriya_Lok_Dal"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        },
+        {
+          "title": "Third Modi ministry — Wikipedia (formed 9 June 2024; a coalition whose ministers come from the BJP, JD(S), HAM, JD(U), TDP, LJP(RV), Shiv Sena, RLD, RPI(A) and Apna Dal (Sonelal))",
+          "url": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+        }
+      ]
+    },
+    {
+      "id": "IN-VCK",
+      "country": "IN",
+      "shortName": "VCK",
+      "name": "விடுதலைச் சிறுத்தைகள் கட்சி",
+      "nameEn": "Viduthalai Chiruthaigal Katchi",
+      "logo": "party-logos/in/vck.png",
+      "sha256": "f7ad4cbe04266e303387d9fa8eca1579455aee32ccdcee461b3990f73bb915a0",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Viduthalai_Chiruthaigal_Katchi_Party_logo.png",
+      "licenceNote": "Non-free. Viduthalai Chiruthaigal Katchi's emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Ambedkarism",
+        "Social justice",
+        "Tamil nationalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1982,
+      "coalitionId": "IN-INDIA",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Viduthalai Chiruthaigal Katchi — Wikipedia (infobox: founded 1982; 2 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Viduthalai_Chiruthaigal_Katchi"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-ADS",
+      "country": "IN",
+      "shortName": "AD(S)",
+      "name": "अपना दल (सोनेलाल)",
+      "nameEn": "Apna Dal (Soneylal)",
+      "logo": "party-logos/in/ads.svg",
+      "sha256": "1c837c5957a09532a6e23dedc10e5fc769865b148aebaafb7f53d93161f90c85",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Apna_dal_Flag.svg",
+      "ideology": [
+        "Social justice",
+        "Kurmi rights",
+        "Regionalism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2016,
+      "coalitionId": "IN-NDA",
+      "leader": "Anupriya Patel",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds office in the third Modi ministry, the NDA coalition government formed on 9 June 2024.",
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Apna Dal (Soneylal) — Wikipedia (infobox: founded 2016; President Anupriya Patel; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Apna_Dal_(Sonelal)"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        },
+        {
+          "title": "Third Modi ministry — Wikipedia (formed 9 June 2024; a coalition whose ministers come from the BJP, JD(S), HAM, JD(U), TDP, LJP(RV), Shiv Sena, RLD, RPI(A) and Apna Dal (Sonelal))",
+          "url": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+        }
+      ]
+    },
+    {
+      "id": "IN-AGP",
+      "country": "IN",
+      "shortName": "AGP",
+      "name": "অসম গণ পৰিষদ",
+      "nameEn": "Asom Gana Parishad",
+      "logo": "party-logos/in/agp.png",
+      "sha256": "bc69702c58a2e698588400c48dc580dd25940071bd4c6cb51b5fb4a225e3ad05",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_Election_Symbol_Elephant.png",
+      "ideology": [
+        "Assamese nationalism",
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1985,
+      "coalitionId": "IN-NDA",
+      "leader": "Atul Bora",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Part of the National Democratic Alliance, which has governed since 2014; holds no portfolio in the third Modi ministry.",
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Asom Gana Parishad — Wikipedia (infobox: founded 1985; President Atul Bora; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Asom_Gana_Parishad"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-AIMIM",
+      "country": "IN",
+      "shortName": "AIMIM",
+      "name": "کل ہند مجلس اتحاد المسلمین",
+      "nameEn": "All India Majlis-e-Ittehadul Muslimeen",
+      "logo": "party-logos/in/aimim.png",
+      "sha256": "9dbaf87b217f4205f2b344c33c6ee6050c327df193eb00dfe432d6d7404ce214",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:AIMIM_FLAG.png",
+      "ideology": [
+        "Muslim minority politics",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1927,
+      "leader": "Asaduddin Owaisi",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "All India Majlis-e-Ittehadul Muslimeen — Wikipedia (infobox: founded 1927; President Asaduddin Owaisi; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/All_India_Majlis-e-Ittehadul_Muslimeen"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-JKAIP",
+      "country": "IN",
+      "shortName": "AIP",
+      "name": "جموں و کشمیر عوامی اتحاد پارٹی",
+      "nameEn": "Jammu and Kashmir Awami Ittehad Party",
+      "logo": "party-logos/in/jkaip.png",
+      "sha256": "227433395d0ab8c2fcbccd92a07aef0989da524f40c0546081c955c15d198750",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:AIP_party_logo.png",
+      "ideology": [
+        "Kashmiriyat",
+        "Kashmiri self-determination"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2013,
+      "leader": "Engineer Rashid",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Jammu and Kashmir Awami Ittehad Party — Wikipedia (infobox: founded 2013; President Engineer Rashid; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Awami_Ittehad_Party"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-AJSU",
+      "country": "IN",
+      "shortName": "AJSU",
+      "name": "आजसू पार्टी",
+      "nameEn": "All Jharkhand Students Union",
+      "logo": "party-logos/in/ajsu.jpg",
+      "sha256": "e81e9780dfbb1b2516467927c43e7dbc100d2e4e889ba4afc62b8c54d4a8b5a2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:ANSU_Party_flag.jpg",
+      "ideology": [
+        "Regionalism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1986,
+      "coalitionId": "IN-NDA",
+      "leader": "Sudesh Mahto",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Part of the National Democratic Alliance, which has governed since 2014; holds no portfolio in the third Modi ministry.",
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "All Jharkhand Students Union — Wikipedia (infobox: founded 1986; President Sudesh Mahto; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/All_Jharkhand_Students_Union"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-ASPKR",
+      "country": "IN",
+      "shortName": "ASP(KR)",
+      "name": "आज़ाद समाज पार्टी (काशीराम)",
+      "nameEn": "Aazad Samaj Party (Kanshi Ram)",
+      "logo": "party-logos/in/aspkr.webp",
+      "sha256": "a8608e453727b70bdfb407b8e86bac53a74d190f55c2d77f0738b8dfe3516f6b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:AZAD_SAMAJ_PARTY_LOGO.webp",
+      "ideology": [
+        "Ambedkarism",
+        "Bahujan politics",
+        "Social justice"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2020,
+      "leader": "Chandrashekhar Azad",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Aazad Samaj Party (Kanshi Ram) — Wikipedia (infobox: founded 2020; President Chandrashekhar Azad; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Aazad_Samaj_Party_(Kanshi_Ram)"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-BAP",
+      "country": "IN",
+      "shortName": "BAP",
+      "name": "भारत आदिवासी पार्टी",
+      "nameEn": "Bharat Adivasi Party",
+      "logo": "party-logos/in/bap.png",
+      "sha256": "888b231a4f3ec52cae2f4015ff1825deb719619a5ea3348ae76b77e6f460999d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Bharat_Adivasi_Party.png",
+      "ideology": [
+        "Adivasi rights",
+        "Bhil Pradesh statehood",
+        "Regionalism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2023,
+      "coalitionId": "IN-INDIA",
+      "leader": "Mohan Lal Roat",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Bharat Adivasi Party — Wikipedia (infobox: founded 2023; President Mohan Lal Roat; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Bharat_Adivasi_Party"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-HAM",
+      "country": "IN",
+      "shortName": "HAM(S)",
+      "name": "हिन्दुस्तानी आवाम मोर्चा (सेक्युलर)",
+      "nameEn": "Hindustani Awam Morcha (Secular)",
+      "noImageReason": "Searched Wikimedia Commons (its only file for this party is a broken potrace trace that renders as a single red block, not a flag), Wikidata (no P154 logo), the English Wikipedia infobox (which shows only the party's Election Commission ballot symbol, a photograph of a cooking pan rather than an emblem) and the party's own online presence. No usable emblem could be sourced.",
+      "ideology": [
+        "Secularism",
+        "Dalit rights"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2015,
+      "coalitionId": "IN-NDA",
+      "leader": "Santosh Kumar Suman",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds office in the third Modi ministry, the NDA coalition government formed on 9 June 2024.",
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Hindustani Awam Morcha (Secular) — Wikipedia (infobox: founded 2015; President Santosh Kumar Suman; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Hindustani_Awam_Morcha"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        },
+        {
+          "title": "Third Modi ministry — Wikipedia (formed 9 June 2024; a coalition whose ministers come from the BJP, JD(S), HAM, JD(U), TDP, LJP(RV), Shiv Sena, RLD, RPI(A) and Apna Dal (Sonelal))",
+          "url": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+        }
+      ]
+    },
+    {
+      "id": "IN-KC",
+      "country": "IN",
+      "shortName": "KC",
+      "name": "കേരള കോൺഗ്രസ്",
+      "nameEn": "Kerala Congress",
+      "logo": "party-logos/in/kc.svg",
+      "sha256": "a32826777e351634f4e30dd590d8ae212212163784f97dee85c779553decb00d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Auto_Rickshaw_Election_Symbol.svg",
+      "ideology": [
+        "Liberalism",
+        "Regionalism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1964,
+      "coalitionId": "IN-INDIA",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Kerala Congress — Wikipedia (infobox: founded 1964; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Kerala_Congress"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-MDMK",
+      "country": "IN",
+      "shortName": "MDMK",
+      "name": "மறுமலர்ச்சி திராவிட முன்னேற்றக் கழகம்",
+      "nameEn": "Marumalarchi Dravida Munnetra Kazhagam",
+      "logo": "party-logos/in/mdmk.svg",
+      "sha256": "b5956ac8a8411a94bafd3aa617f23674c35bb1bad7736f46a8e08b3ab355d151",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MDMK.svg",
+      "ideology": [
+        "Dravidianism",
+        "Tamil nationalism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1994,
+      "coalitionId": "IN-INDIA",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Marumalarchi Dravida Munnetra Kazhagam — Wikipedia (infobox: founded 1994; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Marumalarchi_Dravida_Munnetra_Kazhagam"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-NCP",
+      "country": "IN",
+      "shortName": "NCP",
+      "name": "राष्ट्रवादी काँग्रेस पक्ष",
+      "nameEn": "Nationalist Congress Party",
+      "logo": "party-logos/in/ncp.png",
+      "sha256": "ba150a5d309bb727e2ca56387128561ff22e7c847d0a7702268695904df08e0f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Ncp-logo.png",
+      "ideology": [
+        "Gandhian socialism",
+        "Secularism",
+        "Marathi regionalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1999,
+      "coalitionId": "IN-NDA",
+      "leader": "Sunetra Pawar",
+      "leaderTitle": "President",
+      "inPower": true,
+      "timeInPower": "Part of the National Democratic Alliance, which has governed since 2014; holds no portfolio in the third Modi ministry.",
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Nationalist Congress Party — Wikipedia (infobox: founded 1999; President Sunetra Pawar; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Nationalist_Congress_Party"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-RLP",
+      "country": "IN",
+      "shortName": "RLP",
+      "name": "राष्ट्रीय लोकतांत्रिक पार्टी",
+      "nameEn": "Rashtriya Loktantrik Party",
+      "logo": "party-logos/in/rlp.svg",
+      "sha256": "77a0a7fae576aa5f6c476edc300d95050e73644fda37a0535452b8e688fe10f3",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Water_bottle_RLP_election_symbol.svg",
+      "ideology": [
+        "Farmers' rights",
+        "Regionalism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2018,
+      "coalitionId": "IN-INDIA",
+      "leader": "Hanuman Beniwal",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Rashtriya Loktantrik Party — Wikipedia (infobox: founded 2018; President Hanuman Beniwal; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Rashtriya_Loktantrik_Party"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-RSP",
+      "country": "IN",
+      "shortName": "RSP",
+      "name": "Revolutionary Socialist Party",
+      "logo": "party-logos/in/rsp.svg",
+      "sha256": "a04da2582c1d6189d206387e2243a864bdd0223ac121017d15a7f9e3afa7a488",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:RSP-flag.svg",
+      "ideology": [
+        "Revolutionary socialism",
+        "Marxism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1940,
+      "coalitionId": "IN-INDIA",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Revolutionary Socialist Party (India) — Wikipedia (infobox: founded 1940; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Revolutionary_Socialist_Party_(India)"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-SAD",
+      "country": "IN",
+      "shortName": "SAD",
+      "name": "ਸ਼੍ਰੋਮਣੀ ਅਕਾਲੀ ਦਲ",
+      "nameEn": "Shiromani Akali Dal",
+      "logo": "party-logos/in/sad.svg",
+      "sha256": "4c3fd59656942a2886aefc26b4151c04b2dc724749987c7c33ddf2261969f5ac",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SAD_flag.svg",
+      "ideology": [
+        "Sikh interests",
+        "Punjabi regionalism",
+        "Conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1920,
+      "leader": "Sukhbir Singh Badal",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Shiromani Akali Dal — Wikipedia (infobox: founded 1920; President Sukhbir Singh Badal; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Shiromani_Akali_Dal"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-SKM",
+      "country": "IN",
+      "shortName": "SKM",
+      "name": "सिक्किम क्रान्तिकारी मोर्चा",
+      "nameEn": "Sikkim Krantikari Morcha",
+      "logo": "party-logos/in/skm.svg",
+      "sha256": "52ee02fea8977f6f812179dacfac21216e0ccbaf96f453ccac425999b8bc54ea",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Sikkim_Krantikari_Morcha_flag.svg",
+      "ideology": [
+        "Conservatism",
+        "Sikkimese nationalism",
+        "Regionalism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2013,
+      "coalitionId": "IN-NDA",
+      "inPower": true,
+      "timeInPower": "Part of the National Democratic Alliance, which has governed since 2014; holds no portfolio in the third Modi ministry.",
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Sikkim Krantikari Morcha — Wikipedia (infobox: founded 2013; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Sikkim_Krantikari_Morcha"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-UPPL",
+      "country": "IN",
+      "shortName": "UPPL",
+      "name": "United People's Party Liberal",
+      "logo": "party-logos/in/uppl.png",
+      "sha256": "d65f24d38e7b635f797fbb9db34a423cb352cf9ee921dddf6f5508ef298c1940",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:UPPL_Election_Symbol.png",
+      "ideology": [
+        "Regionalism",
+        "Bodo interests"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2015,
+      "leader": "Pramod Boro",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "United People's Party Liberal — Wikipedia (infobox: founded 2015; President Pramod Boro; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/United_People's_Party_Liberal"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
+        }
+      ]
+    },
+    {
+      "id": "IN-ZPM",
+      "country": "IN",
+      "shortName": "ZPM",
+      "name": "Zoram People's Movement",
+      "logo": "party-logos/in/zpm.jpg",
+      "sha256": "293c3933683033c51454426e43e9e9136c92e0515270535f74f64190d56c59d2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_Election_Symbol_Hat.jpg",
+      "ideology": [
+        "Alcohol prohibition",
+        "Christian minority rights",
+        "Secularism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2017,
+      "leader": "Lalliansawta",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 543,
+      "chamberName": "Lok Sabha",
+      "sources": [
+        {
+          "title": "Zoram People's Movement — Wikipedia (infobox: founded 2017; President Lalliansawta; 1 of the Lok Sabha's 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Zoram_People's_Movement"
+        },
+        {
+          "title": "Lok Sabha — Wikipedia (political groups after the 2024 general election and subsequent changes: NDA 318, INDIA 184, other opposition 38, vacant 3, of 543 seats)",
+          "url": "https://en.wikipedia.org/wiki/Lok_Sabha"
         }
       ]
     }
