@@ -13005,6 +13005,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/pe/fuerza-popular.svg",
       "sha256": "1b8981d4ef5179f643fa6b65b285c450db4864f91feafb10cc77dcffc04bcee9",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Fuerza_popular.svg",
+      "ideology": [
+        "Right-wing",
+        "Conservatism",
+        "Authoritarianism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2011,
+      "leader": "Keiko Fujimori",
+      "leaderTitle": "Party President",
+      "inPower": true,
+      "inExecutive": true,
+      "seats": 41,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The geometric shield design symbolizes institutional strength and democratic order. The right-wing conservatism and authoritarian governance approach emphasizes family values, market liberalism, and national security, reflecting Peru's centrist-to-right political tradition.",
         "sources": [
@@ -13018,16 +13033,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Right-wing", "Conservatism", "Authoritarianism"],
-      "ideologyPosition": "right",
-      "positionRaw": "Right-wing",
-      "founded": 2011,
-      "leader": "Keiko Fujimori",
-      "leaderTitle": "Party President",
-      "inPower": false,
-      "seats": 24,
-      "seatsTotal": 130,
-      "chamberName": "Congress of the Republic",
       "sources": [
         {
           "title": "Fuerza Popular – Wikipedia",
@@ -13036,6 +13041,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Peruvian general election – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
+        },
+        {
+          "title": "Chamber of Deputies (Peru) — Wikipedia (130 deputies elected 12–13 April 2026: Government FP 41, supported by RP 15, Opposition JP 32, PBG 18, OBRAS 14, AN 10)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Peru)"
+        },
+        {
+          "title": "President of Peru — Wikipedia (incumbent Keiko Fujimori, leader of Popular Force)",
+          "url": "https://en.wikipedia.org/wiki/President_of_Peru"
         }
       ]
     },
@@ -13048,6 +13061,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/pe/juntos-por-el-peru.svg",
       "sha256": "67bf3974a9f2718c266ccbcf7f22b3303d22ef2baf6a0bc78064b6d4bdac62f5",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_juntos_por_el_Peru.svg",
+      "ideology": [
+        "Centre-left",
+        "Social democracy",
+        "Indigenism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2021,
+      "leader": "Roberto Sánchez",
+      "leaderTitle": "Political Leader",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 32,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The emblem symbolizes unity and collective action toward social progress. Centre-left ideology emphasizes indigenous rights, social democracy, and inclusive governance that prioritizes marginalized communities and sustainable development across Peru.",
         "sources": [
@@ -13061,20 +13089,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Centre-left", "Social democracy", "Indigenism"],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
-      "founded": 2021,
-      "leader": "Raúl Alfredo de la Puente González",
-      "leaderTitle": "Political Leader",
-      "inPower": false,
-      "seats": 9,
-      "seatsTotal": 130,
-      "chamberName": "Congress of the Republic",
       "sources": [
         {
           "title": "Juntos por el Perú – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Juntos_por_el_Per%C3%BA"
+        },
+        {
+          "title": "Chamber of Deputies (Peru) — Wikipedia (130 deputies elected 12–13 April 2026: Government FP 41, supported by RP 15, Opposition JP 32, PBG 18, OBRAS 14, AN 10)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Peru)"
         }
       ]
     },
@@ -13087,6 +13109,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/pe/renovacion-popular.svg",
       "sha256": "92855663ee2ef3623c90c7f2fd9b421a091f9efd71c2510db93d51905c091991",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Renovaci%C3%B3n_Popular_2023.png",
+      "ideology": [
+        "Right-wing",
+        "Neoliberalism",
+        "Pro-market"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2021,
+      "leader": "Rafael López Aliaga",
+      "leaderTitle": "Party Leader",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 15,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The modern geometric design represents institutional renewal and market-oriented governance. Right-wing neoliberal ideology emphasizes free markets, privatization, and conservative fiscal policies aligned with pro-market economic modernization.",
         "sources": [
@@ -13100,20 +13137,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Right-wing", "Neoliberalism", "Pro-market"],
-      "ideologyPosition": "right",
-      "positionRaw": "Right-wing",
-      "founded": 2021,
-      "leader": "Rafael López Aliaga",
-      "leaderTitle": "Party Leader",
-      "inPower": false,
-      "seats": 15,
-      "seatsTotal": 130,
-      "chamberName": "Congress of the Republic",
       "sources": [
         {
           "title": "Renovación Popular – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Renovaci%C3%B3n_Popular_(Peru)"
+        },
+        {
+          "title": "Chamber of Deputies (Peru) — Wikipedia (130 deputies elected 12–13 April 2026: Government FP 41, supported by RP 15, Opposition JP 32, PBG 18, OBRAS 14, AN 10)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Peru)"
         }
       ]
     },
@@ -13127,6 +13158,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "e7a2289ec1025004d9901874a780576f6ceb60e4f1c5bbeee53bdceaf4e8e666",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Buen_Gobierno_2024.jpg",
       "licenceNote": "Freely licensed logo from Wikimedia Commons (CC BY 4.0); bundled locally.",
+      "ideology": [
+        "Centre",
+        "Populism",
+        "Anti-corruption"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2023,
+      "leader": "Jorge Nieto",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 18,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The centrist emblem emphasizes good governance, transparency, and anti-corruption measures. Populist ideology seeks direct connection with ordinary citizens and prioritizes addressing corruption and institutional reform as core governance principles.",
         "sources": [
@@ -13140,14 +13186,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Centre", "Populism", "Anti-corruption"],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre",
-      "founded": 2023,
-      "inPower": false,
-      "seats": 22,
-      "seatsTotal": 130,
-      "chamberName": "Congress of the Republic",
       "sources": [
         {
           "title": "Partido del Buen Gobierno – Wikipedia",
@@ -13156,6 +13194,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Peruvian general election – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
+        },
+        {
+          "title": "Chamber of Deputies (Peru) — Wikipedia (130 deputies elected 12–13 April 2026: Government FP 41, supported by RP 15, Opposition JP 32, PBG 18, OBRAS 14, AN 10)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Peru)"
         }
       ]
     },
@@ -13169,6 +13211,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "30bdff939019e54ab05fd4cb9c232dc6b9a8844153e7bf760684109186e2bb17",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Civico_OBRAS.png",
       "licenceNote": "Freely licensed logo from Wikimedia Commons (CC BY-SA 4.0); bundled locally.",
+      "ideology": [
+        "Centre-left",
+        "Regionalism",
+        "Social development"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2021,
+      "leader": "Ricardo Belmont",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 14,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The civic emblem represents regional autonomy and grassroots governance. Centre-left ideology emphasizes regional development, local social programs, and infrastructure investment that strengthens regional economies and communities across Peru.",
         "sources": [
@@ -13182,14 +13239,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Centre-left", "Regionalism", "Social development"],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
-      "founded": 2021,
-      "inPower": false,
-      "seats": 16,
-      "seatsTotal": 130,
-      "chamberName": "Congress of the Republic",
       "sources": [
         {
           "title": "Partido Cívico OBRAS – Wikipedia",
@@ -13198,6 +13247,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Peruvian general election – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
+        },
+        {
+          "title": "Chamber of Deputies (Peru) — Wikipedia (130 deputies elected 12–13 April 2026: Government FP 41, supported by RP 15, Opposition JP 32, PBG 18, OBRAS 14, AN 10)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Peru)"
         }
       ]
     },
@@ -13211,6 +13264,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "3f6d072d21eddf5a9406e559f606f7aa5d2310a0eb352c3adfacc8c07964b58c",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Ahora_Naci%C3%B3n_2026.jpg",
       "licenceNote": "Freely licensed logo from Wikimedia Commons (Public Domain); bundled locally.",
+      "ideology": [
+        "Left-wing",
+        "Socialism",
+        "Indigenism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2023,
+      "leader": "Luis López-Chau Pastor",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 10,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
       "logoMeaning": {
         "description": "The emblem represents a new era of socialist governance and indigenous empowerment. Left-wing ideology emphasizes workers' rights, indigenous sovereignty, wealth redistribution, and societal transformation rooted in Peru's indigenous heritage and communities.",
         "sources": [
@@ -13224,14 +13292,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Left-wing", "Socialism", "Indigenism"],
-      "ideologyPosition": "left",
-      "positionRaw": "Left-wing",
-      "founded": 2023,
-      "inPower": false,
-      "seats": 14,
-      "seatsTotal": 130,
-      "chamberName": "Congress of the Republic",
       "sources": [
         {
           "title": "Ahora Nación – Wikipedia",
@@ -13240,6 +13300,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2024 Peruvian general election – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/2024_Peruvian_general_election"
+        },
+        {
+          "title": "Chamber of Deputies (Peru) — Wikipedia (130 deputies elected 12–13 April 2026: Government FP 41, supported by RP 15, Opposition JP 32, PBG 18, OBRAS 14, AN 10)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Peru)"
         }
       ]
     }
