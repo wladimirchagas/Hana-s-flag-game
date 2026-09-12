@@ -158,6 +158,53 @@ export interface PoliticalParty {
 }
 
 export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
+  "IL-COALITION": {
+    id: "IL-COALITION",
+    name: "Netanyahu coalition",
+    kind: "coalition",
+    memberPartyIds: [
+      "IL-LIKUD",
+      "IL-SHAS",
+      "IL-RZP",
+      "IL-OTZMA",
+      "IL-NEWHOPE",
+    ],
+    source: {
+      title: "Knesset \u2014 Wikipedia: the government side of the 25th Knesset holds exactly 60 of the 120 seats \u2014 Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4",
+      url: "https://en.wikipedia.org/wiki/Knesset",
+    },
+    note: "The coalition behind the thirty-seventh government, formed on 29 December 2022. It holds exactly half the Knesset. Four of its five parties hold ministries; Shas left the government itself on 17 July 2025 while remaining in the coalition, so it is recorded in power but outside the executive. United Torah Judaism left on 15 July 2025 and Noam in March 2025 \u2014 all three now sit on the opposition side of the chamber.",
+  },
+  "IL-UTJ": {
+    id: "IL-UTJ",
+    name: "UTJ",
+    nameEn: "United Torah Judaism (\u05d9\u05d4\u05d3\u05d5\u05ea \u05d4\u05ea\u05d5\u05e8\u05d4)",
+    kind: "coalition",
+    memberPartyIds: [
+      "IL-AGUDAT",
+      "IL-DEGEL",
+    ],
+    source: {
+      title: "Knesset \u2014 Wikipedia: United Torah Judaism holds 7 seats, listed as Agudat Yisrael 4 and Degel HaTorah 3",
+      url: "https://en.wikipedia.org/wiki/Knesset",
+    },
+    note: "A standing alliance of two Haredi parties that contests elections on one list: Agudat Yisrael, which represents Hasidic communities, and Degel HaTorah, which represents the Lithuanian-Jewish stream. Each is entered here with its own seats rather than the alliance holding all seven, because the Knesset itself lists them separately.",
+  },
+  "IL-HADASH-TAAL": {
+    id: "IL-HADASH-TAAL",
+    name: "Hadash\u2013Ta'al",
+    nameEn: "Hadash\u2013Ta'al (\u05d7\u05d3\u05f4\u05e9\u2013\u05ea\u05e2\u05f4\u05dc)",
+    kind: "coalition",
+    memberPartyIds: [
+      "IL-HADASH",
+      "IL-TAAL",
+    ],
+    source: {
+      title: "Knesset \u2014 Wikipedia: Hadash\u2013Ta'al holds 5 seats, listed as Hadash 3 and Ta'al 2",
+      url: "https://en.wikipedia.org/wiki/Knesset",
+    },
+    note: "A joint list of the communist Hadash front and Ahmad Tibi's Ta'al, both drawing overwhelmingly on Arab-Israeli voters. The Knesset lists the two separately within the faction, and one of Hadash's three seats is held by an independent rather than by its dominant component party, Maki.",
+  },
   "IN-NDA": {
     id: "IN-NDA",
     name: "NDA",
@@ -20678,101 +20725,559 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "IL-LIKUD",
       "country": "IL",
       "shortName": "Likud",
-      "name": "Likud",
+      "name": "הליכוד",
       "nameEn": "Likud",
       "logo": "party-logos/il/likud.svg",
       "sha256": "d72589b1be6feccd64944b84a602fd921ac91de1e3af20a80fbadc359687d2a1",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Likud_Logo.svg",
       "ideology": [
-        "Right-wing",
-        "Conservatism",
+        "Israeli conservatism",
+        "National conservatism",
+        "Economic liberalism",
+        "Right-wing populism",
         "Zionism"
       ],
       "ideologyPosition": "right",
       "positionRaw": "Right-wing",
-      "founded": 1973,
+      "founded": 1988,
+      "coalitionId": "IL-COALITION",
       "leader": "Benjamin Netanyahu",
-      "leaderTitle": "Chairman",
+      "leaderTitle": "Chairperson",
       "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds ministries in the thirty-seventh government of Israel, formed on 29 December 2022 under Benjamin Netanyahu.",
       "seats": 32,
       "seatsTotal": 120,
       "chamberName": "Knesset",
       "sources": [
         {
-          "title": "Likud – Wikipedia",
+          "title": "Likud — Wikipedia (infobox: founded 1988; Chairperson Benjamin Netanyahu; 32 of the Knesset's 120 seats)",
           "url": "https://en.wikipedia.org/wiki/Likud"
         },
         {
-          "title": "2024 Israeli legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Israeli_legislative_election"
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        },
+        {
+          "title": "Thirty-seventh government of Israel — Wikipedia (formed 29 December 2022 under Benjamin Netanyahu; its member-party list records UTJ leaving on 15 July 2025, Shas on 17 July 2025 — Shas \"exited the government, though it remains part of the coalition\" — Noam on 24 March 2025, and Otzma Yehudit returning on 19 March 2025)",
+          "url": "https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel"
         }
       ]
     },
     {
-      "id": "IL-YESH-ATID",
+      "id": "IL-YESHATID",
       "country": "IL",
       "shortName": "Yesh Atid",
-      "name": "Yesh Atid",
+      "name": "יש עתיד",
       "nameEn": "Yesh Atid",
-      "logo": "party-logos/il/yesh-atid.svg",
-      "sha256": "953c1a54fe20365363475acc9b532bfc413094e3b6a227d954464606e3d857be",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:YeshAtidLogo.svg",
+      "logo": "party-logos/il/yeshatid.svg",
+      "sha256": "f7b8a28d0f8c781597ed82da0f9bf460b45f44f55636ad1377421febd9f02533",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Yesh_Atid_logo.svg",
+      "licenceNote": "Non-free. Yesh Atid's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
       "ideology": [
-        "Centre",
-        "Centrist",
-        "Secular liberalism"
+        "Liberalism",
+        "Secularism",
+        "Zionism"
       ],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 2012,
       "leader": "Yair Lapid",
-      "leaderTitle": "Party Leader",
+      "leaderTitle": "Chairperson",
       "inPower": false,
       "seats": 24,
       "seatsTotal": 120,
       "chamberName": "Knesset",
       "sources": [
         {
-          "title": "Yesh Atid – Wikipedia",
+          "title": "Yesh Atid — Wikipedia (infobox: founded 2012; Chairperson Yair Lapid; 24 of the Knesset's 120 seats)",
           "url": "https://en.wikipedia.org/wiki/Yesh_Atid"
         },
         {
-          "title": "2024 Israeli legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Israeli_legislative_election"
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
         }
       ]
     },
     {
-      "id": "IL-BLUE-WHITE",
+      "id": "IL-SHAS",
       "country": "IL",
-      "shortName": "Blue and White",
-      "name": "Blue and White",
-      "nameEn": "Blue and White",
-      "logo": "party-logos/il/blue-white.svg",
-      "sha256": "788352a99d40d8e7c10960db9c1762a339a3fe53747e79816517103000cd7118",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_and_White_logo_2021.svg",
+      "shortName": "Shas",
+      "name": "ש״ס",
+      "nameEn": "Shas",
+      "logo": "party-logos/il/shas.svg",
+      "sha256": "fd57545618ff01705a5480afed158813b14c65caf331d896bab8e25adeaaba1f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Shas_logo.svg",
+      "licenceNote": "Non-free. Shas's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
       "ideology": [
-        "Centre-right",
-        "Centrism",
-        "Zionism"
+        "Haredi interests",
+        "Sephardic and Mizrahi Jewish interests",
+        "Religious conservatism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "right",
+      "founded": 1984,
+      "coalitionId": "IL-COALITION",
+      "leader": "Aryeh Deri",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Remains part of the governing coalition but left the government itself on 17 July 2025, so it holds no ministry.",
+      "seats": 11,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Shas — Wikipedia (infobox: founded 1984; Chairman Aryeh Deri; 11 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/Shas"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        },
+        {
+          "title": "Thirty-seventh government of Israel — Wikipedia (formed 29 December 2022 under Benjamin Netanyahu; its member-party list records UTJ leaving on 15 July 2025, Shas on 17 July 2025 — Shas \"exited the government, though it remains part of the coalition\" — Noam on 24 March 2025, and Otzma Yehudit returning on 19 March 2025)",
+          "url": "https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel"
+        }
+      ]
+    },
+    {
+      "id": "IL-NATUNITY",
+      "country": "IL",
+      "shortName": "National Unity",
+      "name": "המחנה הממלכתי",
+      "nameEn": "National Unity",
+      "logo": "party-logos/il/natunity.svg",
+      "sha256": "a5b9b3f93f49537dc6d94a20b4791bd9a7aa07507c00acc78db1311a794481fb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:National_Unity_Party_(Israel)_August_2022.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Zionism",
+        "Security-focused centrism"
       ],
       "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 2019,
-      "leader": "Gadi Eisenkot",
-      "leaderTitle": "Party Chairman",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2022,
+      "leader": "Benny Gantz",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "National Unity (Israel) — Wikipedia (infobox: founded 2022; Chairman Benny Gantz; 8 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/National_Unity_(Israel)"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        }
+      ]
+    },
+    {
+      "id": "IL-RZP",
+      "country": "IL",
+      "shortName": "Religious Zionist Party",
+      "name": "הציונות הדתית",
+      "nameEn": "Religious Zionist Party",
+      "logo": "party-logos/il/rzp.svg",
+      "sha256": "564c850e56fa58147bc9c81e081cb1f6d632cb218d0755de0b27e8a1c04f1c06",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Religious_Zionist_party_logo_2022.svg",
+      "licenceNote": "Non-free. Religious Zionist Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Religious Zionism",
+        "National conservatism",
+        "Ultranationalism",
+        "Anti-LGBT rights"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1998,
+      "coalitionId": "IL-COALITION",
+      "leader": "Bezalel Smotrich",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds ministries in the thirty-seventh government of Israel, formed on 29 December 2022 under Benjamin Netanyahu.",
+      "seats": 7,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Religious Zionist Party — Wikipedia (infobox: founded 1998; Chairman Bezalel Smotrich; 7 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/Religious_Zionist_Party"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        },
+        {
+          "title": "Thirty-seventh government of Israel — Wikipedia (formed 29 December 2022 under Benjamin Netanyahu; its member-party list records UTJ leaving on 15 July 2025, Shas on 17 July 2025 — Shas \"exited the government, though it remains part of the coalition\" — Noam on 24 March 2025, and Otzma Yehudit returning on 19 March 2025)",
+          "url": "https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel"
+        }
+      ]
+    },
+    {
+      "id": "IL-OTZMA",
+      "country": "IL",
+      "shortName": "Otzma Yehudit",
+      "name": "עוצמה יהודית",
+      "nameEn": "Jewish Power",
+      "logo": "party-logos/il/otzma.svg",
+      "sha256": "9da1b109c07952bd1e40f1846411103d8206c83aa778f5a4fee33196424f7834",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Otzma_Yehudit_2021_logo.svg",
+      "ideology": [
+        "Kahanism",
+        "Ultranationalism",
+        "Religious Zionism",
+        "Anti-Arabism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2012,
+      "coalitionId": "IL-COALITION",
+      "leader": "Itamar Ben-Gvir",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds ministries in the thirty-seventh government of Israel, formed on 29 December 2022 under Benjamin Netanyahu.",
+      "seats": 6,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Otzma Yehudit — Wikipedia (infobox: founded 2012; Chairman Itamar Ben-Gvir; 6 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/Otzma_Yehudit"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        },
+        {
+          "title": "Thirty-seventh government of Israel — Wikipedia (formed 29 December 2022 under Benjamin Netanyahu; its member-party list records UTJ leaving on 15 July 2025, Shas on 17 July 2025 — Shas \"exited the government, though it remains part of the coalition\" — Noam on 24 March 2025, and Otzma Yehudit returning on 19 March 2025)",
+          "url": "https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel"
+        }
+      ]
+    },
+    {
+      "id": "IL-YB",
+      "country": "IL",
+      "shortName": "Yisrael Beiteinu",
+      "name": "ישראל ביתנו",
+      "nameEn": "Israel Our Home",
+      "logo": "party-logos/il/yb.svg",
+      "sha256": "fc291c545b23ec5f75549ef240e69374fcef33984a6040173d269a7ac054160e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Yisrael_Beytenu_logo_2022.svg",
+      "licenceNote": "Non-free. Israel Our Home's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Secular nationalism",
+        "Zionism",
+        "Russian-speaking Israeli interests"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1999,
+      "leader": "Avigdor Lieberman",
+      "leaderTitle": "Chairman",
       "inPower": false,
       "seats": 6,
       "seatsTotal": 120,
       "chamberName": "Knesset",
       "sources": [
         {
-          "title": "Blue and White (political alliance) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Blue_and_White_(political_alliance)"
+          "title": "Yisrael Beiteinu — Wikipedia (infobox: founded 1999; Chairman Avigdor Lieberman; 6 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/Yisrael_Beiteinu"
         },
         {
-          "title": "2024 Israeli legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Israeli_legislative_election"
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        }
+      ]
+    },
+    {
+      "id": "IL-RAAM",
+      "country": "IL",
+      "shortName": "Ra'am",
+      "name": "القائمة العربية الموحدة",
+      "nameEn": "United Arab List",
+      "logo": "party-logos/il/raam.svg",
+      "sha256": "3dcfb8d2eb159567992a1749c4aa679f9ab2829df0da8f518702db2917dde468",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Raam_logo_2021.svg",
+      "ideology": [
+        "Islamism",
+        "Conservatism",
+        "Social conservatism",
+        "Israeli Arab interests"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1996,
+      "leader": "Mansour Abbas",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Ra'am — Wikipedia (infobox: founded 1996; Chairman Mansour Abbas; 5 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/Ra'am"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        }
+      ]
+    },
+    {
+      "id": "IL-AGUDAT",
+      "country": "IL",
+      "shortName": "Agudat Yisrael",
+      "name": "אגודת ישראל",
+      "nameEn": "Union of Israel",
+      "logo": "party-logos/il/agudat.svg",
+      "sha256": "7a1b3fa2fa86b360231562b338d925dde3b3a8b34206809942b2d1db5a8d14be",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Agudat_Yisrael_logo_2020.svg",
+      "ideology": [
+        "Haredi interests",
+        "Orthodox Halakha",
+        "Religious conservatism",
+        "Haredi non-Zionism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1912,
+      "coalitionId": "IL-UTJ",
+      "leader": "Yitzhak Goldknopf",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Agudat Yisrael — Wikipedia (infobox: founded 1912; Chairman Yitzhak Goldknopf; 4 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/Agudat_Yisrael"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        }
+      ]
+    },
+    {
+      "id": "IL-LABOR",
+      "country": "IL",
+      "shortName": "Israeli Labor Party",
+      "name": "מפלגת העבודה הישראלית",
+      "nameEn": "Israeli Labor Party",
+      "logo": "party-logos/il/labor.svg",
+      "sha256": "525d6e121d2a78b9011eb87a1bd362a034184a12c66810e3fe362594dce77c60",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:HaAvoda_Logo.svg",
+      "ideology": [
+        "Social democracy",
+        "Labor Zionism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1968,
+      "leader": "Yair Golan",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Israeli Labor Party — Wikipedia (infobox: founded 1968; Leader Yair Golan; 4 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/Israeli_Labor_Party"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        }
+      ]
+    },
+    {
+      "id": "IL-NEWHOPE",
+      "country": "IL",
+      "shortName": "New Hope",
+      "name": "הימין הממלכתי",
+      "nameEn": "New Hope – The United Right",
+      "logo": "party-logos/il/newhope.png",
+      "sha256": "f6fadc8a54ce5acca2075dbf48c636be4249a9c90632627befc8e0ba90b7b9fd",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Yamin_Mamlakhti.png",
+      "ideology": [
+        "Liberal conservatism",
+        "National conservatism",
+        "Zionism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2020,
+      "coalitionId": "IL-COALITION",
+      "leader": "Gideon Sa'ar",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds ministries in the thirty-seventh government of Israel, formed on 29 December 2022 under Benjamin Netanyahu.",
+      "seats": 4,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "New Hope (Israel) — Wikipedia (infobox: founded 2020; Chairman Gideon Sa'ar; 4 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/New_Hope_(Israel)"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        },
+        {
+          "title": "Thirty-seventh government of Israel — Wikipedia (formed 29 December 2022 under Benjamin Netanyahu; its member-party list records UTJ leaving on 15 July 2025, Shas on 17 July 2025 — Shas \"exited the government, though it remains part of the coalition\" — Noam on 24 March 2025, and Otzma Yehudit returning on 19 March 2025)",
+          "url": "https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel"
+        }
+      ]
+    },
+    {
+      "id": "IL-DEGEL",
+      "country": "IL",
+      "shortName": "Degel HaTorah",
+      "name": "דגל התורה",
+      "nameEn": "Banner of the Torah",
+      "logo": "party-logos/il/degel.svg",
+      "sha256": "407d54d7975485ab41f30a78aa1341f1cfac59939ce37211faeb404e4e905d50",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Degel_HaTorah_logo.svg",
+      "licenceNote": "Non-free. Banner of the Torah's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Haredi interests",
+        "Lithuanian-Jewish Orthodoxy",
+        "Religious conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1988,
+      "coalitionId": "IL-UTJ",
+      "leader": "Ya'akov Asher",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Degel HaTorah — Wikipedia (infobox: founded 1988; Chairman Ya'akov Asher; 3 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/Degel_HaTorah"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        }
+      ]
+    },
+    {
+      "id": "IL-HADASH",
+      "country": "IL",
+      "shortName": "Hadash",
+      "name": "חד״ש / الجبهة",
+      "nameEn": "Democratic Front for Peace and Equality",
+      "logo": "party-logos/il/hadash.svg",
+      "sha256": "b05a228fa7c29cc4fbfa4030e2c50b0547b9500e979c0b571eaf4899b4b369bc",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Hadash_Logo.svg",
+      "licenceNote": "Non-free. Democratic Front for Peace and Equality's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism",
+        "Israeli Arab interests",
+        "Two-state solution"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 1977,
+      "coalitionId": "IL-HADASH-TAAL",
+      "leader": "Amjad Shbita",
+      "leaderTitle": "Secretary-General",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Hadash — Wikipedia (infobox: founded 1977; Secretary-General Amjad Shbita; 3 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/Hadash"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        }
+      ]
+    },
+    {
+      "id": "IL-TAAL",
+      "country": "IL",
+      "shortName": "Ta'al",
+      "name": "العربية للتغيير",
+      "nameEn": "Arab Movement for Renewal",
+      "logo": "party-logos/il/taal.png",
+      "sha256": "a978df7db67487b5f1226695067189ab6e9ef78e2015ac2db3570edebded9af4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Ta'al_party_logo.png",
+      "ideology": [
+        "Arab nationalism",
+        "Israeli Arab interests",
+        "Secularism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Big tent",
+      "coalitionId": "IL-HADASH-TAAL",
+      "leader": "Ahmad Tibi",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Ta'al — Wikipedia (infobox: Chairman Ahmad Tibi; 2 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/Ta'al"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
+        }
+      ]
+    },
+    {
+      "id": "IL-NOAM",
+      "country": "IL",
+      "shortName": "Noam",
+      "name": "נעם",
+      "nameEn": "Noam",
+      "logo": "party-logos/il/noam.svg",
+      "sha256": "4a7f9cb93e4e446c04c0a6d2175efd6747b6078798fb756cf3bac19fb6bf0f79",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Noam_party_logo.svg",
+      "licenceNote": "Non-free. Noam's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Religious Zionism",
+        "Ultraconservatism",
+        "Anti-LGBT rights"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2019,
+      "leader": "Avi Maoz",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 120,
+      "chamberName": "Knesset",
+      "sources": [
+        {
+          "title": "Noam (political party) — Wikipedia (infobox: founded 2019; Chairman Avi Maoz; 1 of the Knesset's 120 seats)",
+          "url": "https://en.wikipedia.org/wiki/Noam_(political_party)"
+        },
+        {
+          "title": "Knesset — Wikipedia (political groups in the 25th Knesset: Government 60 — Likud 32, Shas 11, Religious Zionist Party 7, Otzma Yehudit 6, New Hope 4; Opposition 60 — Yesh Atid 24, Blue & White–National Unity 8, United Torah Judaism 7, Yisrael Beiteinu 6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1)",
+          "url": "https://en.wikipedia.org/wiki/Knesset"
         }
       ]
     }
