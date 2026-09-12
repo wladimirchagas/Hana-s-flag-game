@@ -7239,6 +7239,177 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "MV": [
+    {
+      "id": "MV-PNC",
+      "country": "MV",
+      "shortName": "PNC",
+      "name": "ޕީޕަލްސް ނޭޝަނަލް ކޮންގްރެސް",
+      "nameEn": "People's National Congress",
+      "logo": "party-logos/mv/pnc.svg",
+      "sha256": "1b154d416c2f4e8c0ee803c0c944b7ceed085859ccf1c7b9f140586097cee9e4",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PNC_Maldives_logo.svg",
+      "licenceNote": "Non-free. People's National Congress's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Islamism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2019,
+      "leader": "Mohamed Muizzu",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds the presidency: the party's own President, Mohamed Muizzu, has been President of the Maldives since 17 November 2023, and the party holds 74 of the Majlis's 93 seats.",
+      "seats": 74,
+      "seatsTotal": 93,
+      "chamberName": "People's Majlis",
+      "sources": [
+        {
+          "title": "People's National Congress (Maldives) — Wikipedia (infobox: founded 31 January 2019 in Malé; President Mohamed Muizzu; centre-right to right-wing)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_National_Congress_(Maldives)"
+        },
+        {
+          "title": "People's Majlis — Wikipedia (composition after the 21 April 2024 election: PNC 74, MDP 13, MDA 2, Jumhooree Party 1, MNP 1, independents 2, of 93)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Majlis"
+        },
+        {
+          "title": "President of the Maldives — Wikipedia (incumbent Mohamed Muizzu since 17 November 2023; the Maldives is a presidential republic, so the President appoints and heads the cabinet)",
+          "url": "https://en.wikipedia.org/wiki/President_of_the_Maldives"
+        }
+      ]
+    },
+    {
+      "id": "MV-MDP",
+      "country": "MV",
+      "shortName": "MDP",
+      "name": "ދިވެހިރައްޔިތުންގެ ޑިމޮކްރެޓިކް ޕާޓީ",
+      "nameEn": "Maldivian Democratic Party",
+      "logo": "party-logos/mv/mdp.svg",
+      "sha256": "3c1238eafff93da23f7ee6aedea39aa89e574afd44b0db7b20b478ec642946fd",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Mdp-logo-original.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Islamic democracy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2003,
+      "inPower": false,
+      "seats": 13,
+      "seatsTotal": 93,
+      "chamberName": "People's Majlis",
+      "sources": [
+        {
+          "title": "Maldivian Democratic Party — Wikipedia (infobox: founded 10 November 2003; centre-right). No leader is shown because the party presidency is recorded as vacant and its interim chairpersonship is under challenge, so naming one would state something the source does not.",
+          "url": "https://en.wikipedia.org/wiki/Maldivian_Democratic_Party"
+        },
+        {
+          "title": "People's Majlis — Wikipedia (composition after the 21 April 2024 election: PNC 74, MDP 13, MDA 2, Jumhooree Party 1, MNP 1, independents 2, of 93)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Majlis"
+        }
+      ]
+    },
+    {
+      "id": "MV-MDA",
+      "country": "MV",
+      "shortName": "MDA",
+      "name": "މޯލްޑިވްސް ޑިވެލޮޕްމަންޓް އެލަޔަންސް",
+      "nameEn": "Maldives Development Alliance",
+      "logo": "party-logos/mv/mda.png",
+      "sha256": "66d1711f86a803161452b9405c00d0d4688717801d6515ad6032d96a9ea13466",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Maldives_Development_Alliance_logo.png",
+      "licenceNote": "Non-free. Maldives Development Alliance's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 2012,
+      "leader": "Ahmed Shiyam Mohamed",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 93,
+      "chamberName": "People's Majlis",
+      "sources": [
+        {
+          "title": "Maldives Development Alliance — Wikipedia (infobox: founded 20 December 2012; leader Ahmed Shiyam Mohamed; the infobox states no ideology or left–right position)",
+          "url": "https://en.wikipedia.org/wiki/Maldives_Development_Alliance"
+        },
+        {
+          "title": "People's Majlis — Wikipedia (composition after the 21 April 2024 election: PNC 74, MDP 13, MDA 2, Jumhooree Party 1, MNP 1, independents 2, of 93)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Majlis"
+        }
+      ]
+    },
+    {
+      "id": "MV-JP",
+      "country": "MV",
+      "shortName": "JP",
+      "name": "ޖުމްހޫރީ ޕާޓީ",
+      "nameEn": "Jumhooree Party (Republican Party)",
+      "logo": "party-logos/mv/jp.png",
+      "sha256": "d72575fad3aeefc73f9da6a6b4c4f5499861d350aecdd84a3f89af22dbad75c9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Jumhooree_Party_logo.png",
+      "ideology": [
+        "Islamic democracy",
+        "Nationalism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2008,
+      "leader": "Qasim Ibrahim",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 93,
+      "chamberName": "People's Majlis",
+      "sources": [
+        {
+          "title": "Jumhooree Party — Wikipedia (infobox: founded 26 May 2008; leader Qasim Ibrahim; centre-right to right-wing)",
+          "url": "https://en.wikipedia.org/wiki/Jumhooree_Party"
+        },
+        {
+          "title": "People's Majlis — Wikipedia (composition after the 21 April 2024 election: PNC 74, MDP 13, MDA 2, Jumhooree Party 1, MNP 1, independents 2, of 93)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Majlis"
+        }
+      ]
+    },
+    {
+      "id": "MV-MNP",
+      "country": "MV",
+      "shortName": "MNP",
+      "name": "މޯލްޑިވްސް ނޭޝަނަލް ޕާޓީ",
+      "nameEn": "Maldives National Party",
+      "logo": "party-logos/mv/mnp.png",
+      "sha256": "e7c551e6360c79f926c83b355b7fdd418cb880cbe41f0e8dded0ba54a6881a20",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Maldives_National_Party_logo.png",
+      "licenceNote": "Non-free. Maldives National Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Islamic democracy",
+        "Nationalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2021,
+      "leader": "Mohamed Nazim",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 93,
+      "chamberName": "People's Majlis",
+      "sources": [
+        {
+          "title": "Maldives National Party — Wikipedia (infobox: founded July 2021; leader Mohamed Nazim; centre-right)",
+          "url": "https://en.wikipedia.org/wiki/Maldives_National_Party"
+        },
+        {
+          "title": "People's Majlis — Wikipedia (composition after the 21 April 2024 election: PNC 74, MDP 13, MDA 2, Jumhooree Party 1, MNP 1, independents 2, of 93)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Majlis"
+        }
+      ]
+    }
+  ],
   "KZ": [
     {
       "id": "KZ-ADILET",
