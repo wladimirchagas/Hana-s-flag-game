@@ -319,6 +319,17 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "Cidadania voted to end membership in 2026",
   },
+  "UY-CR": {
+    id: "UY-CR",
+    name: "Coalición Republicana",
+    nameEn: "Republican Coalition",
+    kind: "coalition",
+    memberPartyIds: ["UY-PN", "UY-PC", "UY-PI"],
+    source: {
+      title: "Cámara de Representantes de Uruguay — Wikipedia (es): the opposition Coalición Republicana holds 47 of 99 seats — Partido Nacional 29, Partido Colorado 17, Partido Independiente 1",
+      url: "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Uruguay",
+    },
+  },
   "VE-GPPSB": {
     id: "VE-GPPSB",
     name: "Gran Polo Patriótico Simón Bolívar",
@@ -15928,37 +15939,220 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "FA",
       "name": "Frente Amplio",
       "nameEn": "Broad Front",
-      "logo": "party-logos/UY/Logo_Frente_Amplio.svg",
+      "logo": "party-logos/uy/fa.svg",
       "sha256": "f5af82d6aa102ae1d87112e66cbaa921e77608b56c90cfba6f74f9008ec0d4b8",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Frente_Amplio.svg",
-      "logoMeaning": {
-        "description": "The Frente Amplio logo features a red and white color scheme representing the coalition's progressive heritage and commitment to unity. The red represents the socialist and social democratic values of the alliance, while white symbolizes peace and democratic governance. The emblem was designed to represent the broad coalition of left-wing and progressive parties that came together in 1971 to form this electoral and political front.",
-        "sources": [
-          {
-            "title": "Broad Front (Uruguay) — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Broad_Front"
-          }
-        ]
-      },
-      "ideology": ["Socialism", "Social democracy", "Progressivism"],
+      "ideology": [
+        "Progressivism",
+        "Social democracy",
+        "Anti-imperialism"
+      ],
       "ideologyPosition": "left",
-      "positionRaw": "Left-wing",
+      "positionRaw": "Centre-left to left-wing",
       "founded": 1971,
-      "leader": "Yamandú Orsi",
+      "leader": "Fernando Pereira",
       "leaderTitle": "President",
       "inPower": true,
-      "timeInPower": "2025-present",
+      "inExecutive": true,
+      "timeInPower": "In government since Yamandú Orsi took office on 1 March 2025.",
       "seats": 48,
-      "seatsTotal": 130,
-      "chamberName": "Chamber of Deputies",
+      "seatsTotal": 99,
+      "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Broad Front (Uruguay) — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Broad_Front"
+          "title": "Frente Amplio — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Frente_Amplio_(Uruguay)"
         },
         {
-          "title": "2024 Uruguayan general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Uruguayan_general_election"
+          "title": "Cámara de Representantes de Uruguay — Wikipedia (es): 99 representatives elected 27 October 2024 — Government Frente Amplio 48; Opposition 51 (Coalición Republicana 47 = Partido Nacional 29 + Partido Colorado 17 + Partido Independiente 1, Identidad Soberana 2, Cabildo Abierto 2)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Uruguay"
+        },
+        {
+          "title": "President of Uruguay — Wikipedia (Yamandú Orsi of the Broad Front, in office since 1 March 2025)",
+          "url": "https://en.wikipedia.org/wiki/President_of_Uruguay"
+        }
+      ]
+    },
+    {
+      "id": "UY-PN",
+      "country": "UY",
+      "shortName": "PN",
+      "name": "Partido Nacional",
+      "nameEn": "National Party",
+      "logo": "party-logos/uy/pn.svg",
+      "sha256": "2ae64d8ad7fe11e9b8dcb0c4273a10a7911a2e44f3e52f30a85b776cf6b9329f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Nacional_%28Uruguay%29_logo.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy",
+        "Social liberalism",
+        "Civic nationalism",
+        "Pan-Americanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1836,
+      "coalitionId": "UY-CR",
+      "leader": "Álvaro Delgado",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 29,
+      "seatsTotal": 99,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Partido Nacional — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Nacional_(Uruguay)"
+        },
+        {
+          "title": "Cámara de Representantes de Uruguay — Wikipedia (es): 99 representatives elected 27 October 2024 — Government Frente Amplio 48; Opposition 51 (Coalición Republicana 47 = Partido Nacional 29 + Partido Colorado 17 + Partido Independiente 1, Identidad Soberana 2, Cabildo Abierto 2)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Uruguay"
+        }
+      ]
+    },
+    {
+      "id": "UY-PC",
+      "country": "UY",
+      "shortName": "PC",
+      "name": "Partido Colorado",
+      "nameEn": "Colorado Party",
+      "logo": "party-logos/uy/pc.png",
+      "sha256": "defac755c334be7044ddd39b5a8b04036c1d28f0da41637a375ce9c038f498b5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido-Colorado_logo-horizontal-rojo-SF.png",
+      "ideology": [
+        "Republicanism",
+        "Social democracy",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre-left to right-wing",
+      "founded": 1836,
+      "coalitionId": "UY-CR",
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 99,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Partido Colorado — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Colorado_(Uruguay)"
+        },
+        {
+          "title": "Cámara de Representantes de Uruguay — Wikipedia (es): 99 representatives elected 27 October 2024 — Government Frente Amplio 48; Opposition 51 (Coalición Republicana 47 = Partido Nacional 29 + Partido Colorado 17 + Partido Independiente 1, Identidad Soberana 2, Cabildo Abierto 2)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Uruguay"
+        }
+      ]
+    },
+    {
+      "id": "UY-PI",
+      "country": "UY",
+      "shortName": "PI",
+      "name": "Partido Independiente",
+      "nameEn": "Independent Party",
+      "logo": "party-logos/uy/pi.png",
+      "sha256": "6f5f1708429e3aba2435b645dc21bed840bfe70c966f04ddcc0e7abd5b48e7a1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_Independiente_Uruguay_2022.png",
+      "ideology": [
+        "Social democracy",
+        "Christian humanism",
+        "Third Way"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2002,
+      "coalitionId": "UY-CR",
+      "leader": "Omar Rodríguez Erreca",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 99,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Partido Independiente — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Independiente_(Uruguay)"
+        },
+        {
+          "title": "Cámara de Representantes de Uruguay — Wikipedia (es): 99 representatives elected 27 October 2024 — Government Frente Amplio 48; Opposition 51 (Coalición Republicana 47 = Partido Nacional 29 + Partido Colorado 17 + Partido Independiente 1, Identidad Soberana 2, Cabildo Abierto 2)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Uruguay"
+        }
+      ]
+    },
+    {
+      "id": "UY-IS",
+      "country": "UY",
+      "shortName": "IS",
+      "name": "Identidad Soberana",
+      "nameEn": "Sovereign Identity",
+      "logo": "party-logos/uy/is.svg",
+      "sha256": "374371d6bdcb91c1583896bd0d8ee9f93e601a98c7f66eee7732279008a6b6be",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Sovereign_Identity.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Identidad Soberana emblem exists on Wikimedia Commons; this is the SVG English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, at low resolution for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Nationalism",
+        "Conservatism",
+        "Sovereigntism",
+        "Anti-globalism",
+        "Anti-establishment"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2022,
+      "leader": "Gustavo Salle",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 99,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Identidad Soberana — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Identidad_Soberana"
+        },
+        {
+          "title": "Cámara de Representantes de Uruguay — Wikipedia (es): 99 representatives elected 27 October 2024 — Government Frente Amplio 48; Opposition 51 (Coalición Republicana 47 = Partido Nacional 29 + Partido Colorado 17 + Partido Independiente 1, Identidad Soberana 2, Cabildo Abierto 2)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Uruguay"
+        },
+        {
+          "title": "Sovereign Identity — Wikipedia (founded 9 November 2022; 2 of 99 Chamber seats; position: far-right)",
+          "url": "https://en.wikipedia.org/wiki/Sovereign_Identity"
+        }
+      ]
+    },
+    {
+      "id": "UY-CA",
+      "country": "UY",
+      "shortName": "CA",
+      "name": "Cabildo Abierto",
+      "nameEn": "Open Cabildo",
+      "logo": "party-logos/uy/ca.svg",
+      "sha256": "fb4e5ab0ebd63c016722ea02994d4c58d69cd4790c3c3b44e3bd160eeff882cc",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Cabildo_Abierto.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Cabildo Abierto emblem exists on Wikimedia Commons; this is the SVG English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, at low resolution for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Nationalism",
+        "Pronatalism",
+        "Anti-abortion politics",
+        "Protectionism",
+        "Artiguism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2019,
+      "leader": "Guido Manini Ríos",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 99,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Cabildo Abierto — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Cabildo_Abierto_(partido_pol%C3%ADtico)"
+        },
+        {
+          "title": "Cámara de Representantes de Uruguay — Wikipedia (es): 99 representatives elected 27 October 2024 — Government Frente Amplio 48; Opposition 51 (Coalición Republicana 47 = Partido Nacional 29 + Partido Colorado 17 + Partido Independiente 1, Identidad Soberana 2, Cabildo Abierto 2)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Uruguay"
         }
       ]
     }
