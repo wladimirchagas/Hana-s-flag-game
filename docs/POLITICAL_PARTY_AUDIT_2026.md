@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 18 / 195 — Southeast Asia complete; South America under way.**
+**Countries audited: 19 / 195 — Southeast Asia complete; South America under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -64,6 +64,7 @@ forgotten; it is tracked here.
 | 🇨🇴 Colombia | `#1328` | 5 → 13 | 158 / 183 | **WRONG — the largest party was absent** |
 | 🇵🇪 Peru | `#1329` | 6 → 6 | **130 / 130** | **WRONG — a legislature that no longer exists** |
 | 🇻🇪 Venezuela | `#1330` | **1 → 20** | 277 / 285 | **WRONG — one party credited with every seat** |
+| 🇪🇨 Ecuador | `#1331` | 4 → 6 | 133 / 151 | **WRONG — a fictitious party with 17 seats** |
 
 ---
 
@@ -602,6 +603,38 @@ logos earlier in this sweep — and rendering it confirmed it really is the Uni�
 
 ---
 
+### 🇪🇨 Ecuador — audited 2026-09-12
+
+Ecuador's entry described the **2021–2023 Assembly**: 137 seats, when the chamber has had **151**
+since the 2023 snap election. Every seat figure, every founding year, and one entire party were
+wrong.
+
+The fifth legislative period was elected on 9 February 2025: **Government 78** (ADN 66, PSP 1, two
+provincial movements, 9 independents), **Opposition 61** (RC 59, RETO 1, one provincial), **unaligned
+12** (Pachakutik 3, PSC 3, 6 independents) — 151 exactly.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-083 | **S1** | `seatsTotal` | **137** | **151** | 137 was the 2021–2023 Assembly. The chamber has 151 members |
+| PP-084 | **S1** | existence | **`EC-UDCPP` "Unión Demócrata Cristiana", 17 seats** | **removed** | The article redirects to **Democracia Popular**, founded 1977 — a party that holds **no seats at all** in this Assembly. The entry also gave it the wrong founding year (1978) and the Social Christian Party's English name |
+| PP-085 | **S1** | `seats` | ADN 35, RC 27, PK 15 | **ADN 66, RC 59, PK 3** | Pachakutik was over-credited five-fold; ADN and RC both roughly doubled |
+| PP-086 | **S1** | `founded` | ADN **2012**, RC **2006**, PK **1996** | **2021, 2010, 1995** | Each party's own infobox. ADN did not exist in 2012 — it was founded 20 November 2021 and legalised in May 2024 |
+| PP-087 | **S2** | coverage | 4 parties (one fictitious) | **6 parties, 133 of 151** | Added **PSC** (3), **PSP** (1) and **RETO** (1); PSC is the party the removed UDCPP entry had been half-describing |
+| PP-088 | **S2** | `leader` | Pachakutik and UDCPP had none; RC led by Andrés Arauz | **Marlon Vargas**; RC led by **Gabriela Rivadeneira** | party infoboxes |
+| PP-089 | **S2** | `logo` | RC carried an older mark | **`Logo-rc5-actual-a-color.png`** (the current RC5 logo) | Commons |
+| PP-090 | **S3** | `ideology` | ADN "Conservatism, Social democracy"; RC "Left-wing, Socialism, Progressivism" | re-copied verbatim from each infobox | "Left-wing" is a *position*, not an ideology; ADN's own article gives right-wing populism, personalism, neoliberalism |
+| PP-091 | **S3** | `inPower` | ADN only | ADN **and PSP** | The Assembly's own *Oficialismo* grouping counts PSP with the government |
+
+**Documented gap — 18 of the 151 seats are deliberately not modelled**: **15 independents** and
+**3 provincial-movement** seats, none of which is a national party.
+
+All six logos were downloaded from Commons, byte-checked against their extension, and
+montage-verified (each carries its CNE ballot list number — ADN 7, Pachakutik 18, PSC 6, PSP 3,
+RC 5, RETO 33 — which is a useful confirmation that each is the electoral mark, not a corporate one).
+All four of Ecuador's entries have left `GRANDFATHERED_PARTIES_WITH_NO_IMAGE`.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -632,7 +665,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `CO` Colombia — merged
 - [x] `PE` Peru — merged
 - [x] `VE` Venezuela — merged
-- [ ] `EC` Ecuador
+- [x] `EC` Ecuador — merged
 - [ ] `BO` Bolivia
 - [ ] `PY` Paraguay
 - [ ] `UY` Uruguay

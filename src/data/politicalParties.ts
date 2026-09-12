@@ -15872,35 +15872,35 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "National Democratic Action",
       "logo": "party-logos/ec/adn.svg",
       "sha256": "22f45c594c6d636935258d8dffc83c3a93c77719617b624a5d7e73506829b505",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Acción_Democrática_Nacional_Logo.svg",
-      "logoMeaning": {
-        "description": "The ADN emblem features a shield with the colors blue, red, and white, representing national identity and democratic values. The shield symbolizes protection of democratic institutions and national sovereignty, while the blue represents loyalty and commitment to constitutional governance. The party's name emphasizes national democratic action as its core principle.",
-        "sources": [
-          {
-            "title": "National Democratic Action (Ecuador) — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/National_Democratic_Action_(Ecuador)"
-          }
-        ]
-      },
-      "ideology": ["Conservatism", "Social democracy"],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 2012,
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Acci%C3%B3n_Democr%C3%A1tica_Nacional_Logo.svg",
+      "ideology": [
+        "Right-wing populism",
+        "Personalism",
+        "Neoliberalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2021,
       "leader": "Daniel Noboa",
-      "leaderTitle": "President",
+      "leaderTitle": "Party President",
       "inPower": true,
-      "timeInPower": "2024-present",
-      "seats": 35,
-      "seatsTotal": 137,
+      "inExecutive": true,
+      "timeInPower": "In government since Daniel Noboa took office in November 2023; re-elected in 2025.",
+      "seats": 66,
+      "seatsTotal": 151,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "2023 Ecuadorian general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Ecuadorian_general_election"
+          "title": "Acción Democrática Nacional — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Acci%C3%B3n_Democr%C3%A1tica_Nacional_(Ecuador)"
         },
         {
-          "title": "National Democratic Action (Ecuador) — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/National_Democratic_Action_(Ecuador)"
+          "title": "Asamblea Nacional del Ecuador — Wikipedia (es): fifth legislative period, 151 members elected 9 February 2025 — Government 78 (ADN 66, PSP 1, provincial 2, independents 9), Opposition 61 (RC 59, RETO 1, provincial 1), unaligned 12 (Pachakutik 3, PSC 3, independents 6)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_del_Ecuador"
+        },
+        {
+          "title": "President of Ecuador — Wikipedia (incumbent Daniel Noboa, president of Acción Democrática Nacional; first elected 2023, re-elected 2025)",
+          "url": "https://en.wikipedia.org/wiki/President_of_Ecuador"
         }
       ]
     },
@@ -15910,60 +15910,32 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "RC",
       "name": "Movimiento Revolución Ciudadana",
       "nameEn": "Citizen Revolution Movement",
-      "logo": "party-logos/ec/rc.svg",
-      "sha256": "553ddb33b7a941ac1bc8d4fa4de83ad9294d74a7044d1e84c450119d80f509b2",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Movimiento_RC5.svg",
-      "logoMeaning": {
-        "description": "The RC logo features the number 5 prominently in the party's blue color scheme, with 'RC' initials integrated into the design. The numeral five represents the party's commitment to a fifth transformation (revolución) of Ecuador, echoing the broader 'Citizen Revolution' platform emphasizing radical social and economic change. The geometric, modern design reflects the movement's progressive stance.",
-        "sources": [
-          {
-            "title": "Movimiento Revolución Ciudadana — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Movimiento_Revolución_Ciudadana"
-          }
-        ]
-      },
-      "ideology": ["Left-wing", "Socialism", "Progressivism"],
+      "logo": "party-logos/ec/rc.png",
+      "sha256": "5d192ee0c30ee3ae31431ff900c48075e089907f3a2b565539b3f1c90278a344",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo-rc5-actual-a-color.png",
+      "ideology": [
+        "Socialism of the 21st century",
+        "Correísmo",
+        "Left-wing populism",
+        "Social democracy"
+      ],
       "ideologyPosition": "left",
-      "positionRaw": "Left-wing",
-      "founded": 2006,
-      "leader": "Andrés Arauz",
-      "leaderTitle": "Candidate & Former Vice President",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2010,
+      "leader": "Gabriela Rivadeneira",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "inExecutive": false,
-      "seats": 27,
-      "seatsTotal": 137,
+      "seats": 59,
+      "seatsTotal": 151,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "2023 Ecuadorian general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Ecuadorian_general_election"
+          "title": "Movimiento Revolución Ciudadana — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Movimiento_Revoluci%C3%B3n_Ciudadana"
         },
         {
-          "title": "Citizen Revolution Movement — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Citizen_Revolution_Movement"
-        }
-      ]
-    },
-    {
-      "id": "EC-UDCPP",
-      "country": "EC",
-      "shortName": "UDCPP",
-      "name": "Unión Demócrata Cristiana",
-      "nameEn": "Social Christian Union",
-      "noImageReason": "Logo search across Wikimedia Commons and party sources; no freely-licensed logo available. Party primarily uses text branding.",
-      "ideology": ["Christian democracy", "Conservatism"],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 1978,
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 17,
-      "seatsTotal": 137,
-      "chamberName": "National Assembly",
-      "sources": [
-        {
-          "title": "2023 Ecuadorian general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Ecuadorian_general_election"
+          "title": "Asamblea Nacional del Ecuador — Wikipedia (es): fifth legislative period, 151 members elected 9 February 2025 — Government 78 (ADN 66, PSP 1, provincial 2, independents 9), Opposition 61 (RC 59, RETO 1, provincial 1), unaligned 12 (Pachakutik 3, PSC 3, independents 6)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_del_Ecuador"
         }
       ]
     },
@@ -15972,36 +15944,136 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "EC",
       "shortName": "PK",
       "name": "Movimiento de Unidad Plurinacional Pachakutik",
-      "nameEn": "Indigenous Movement of Pachakutik",
+      "nameEn": "Pachakutik Plurinational Unity Movement",
       "logo": "party-logos/ec/pk.svg",
-      "sha256": "def6c437447b7baf15e73be6860df9f2c7df6c046232b9a50754f687e4c01b4f",
+      "sha256": "9e013fd0db0ed3a90508dd71cdf020a882a0db9029f3903a1dffd9228ae698e9",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Pachakutik.svg",
-      "logoMeaning": {
-        "description": "The Pachakutik emblem features indigenous Andean symbolism, with a stylized figure or geometric pattern reflecting the movement's commitment to indigenous rights and pan-indigenous unity. The name 'Pachakutik' refers to the Inca concept of a new era or world transformation (pacha = world/time, kutik = to turn/overturn), symbolizing the movement's vision for radical social transformation centered on indigenous participation and sovereignty.",
-        "sources": [
-          {
-            "title": "Pachakutik Plurinational Unity Movement — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Pachakutik_Plurinational_Unity_Movement"
-          }
-        ]
-      },
-      "ideology": ["Indigenous rights", "Socialism", "Environmentalism"],
+      "ideology": [
+        "Indigenism",
+        "Plurinationalism",
+        "Progressivism"
+      ],
       "ideologyPosition": "left",
-      "positionRaw": "Left-wing",
-      "founded": 1996,
+      "positionRaw": "Left-wing to centre-left",
+      "founded": 1995,
+      "leader": "Marlon Vargas",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "inExecutive": false,
-      "seats": 15,
-      "seatsTotal": 137,
+      "seats": 3,
+      "seatsTotal": 151,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "2023 Ecuadorian general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Ecuadorian_general_election"
+          "title": "Movimiento de Unidad Plurinacional Pachakutik — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Pachakutik"
         },
         {
-          "title": "Pachakutik Plurinational Unity Movement — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Pachakutik_Plurinational_Unity_Movement"
+          "title": "Asamblea Nacional del Ecuador — Wikipedia (es): fifth legislative period, 151 members elected 9 February 2025 — Government 78 (ADN 66, PSP 1, provincial 2, independents 9), Opposition 61 (RC 59, RETO 1, provincial 1), unaligned 12 (Pachakutik 3, PSC 3, independents 6)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_del_Ecuador"
+        }
+      ]
+    },
+    {
+      "id": "EC-PSC",
+      "country": "EC",
+      "shortName": "PSC",
+      "name": "Partido Social Cristiano",
+      "nameEn": "Social Christian Party",
+      "logo": "party-logos/ec/psc.png",
+      "sha256": "e89a69da956b73e1a8a05283677d9d6fe171765c5dbf677ea296aea8413cac66",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_Social_Cristiano_2026.png",
+      "ideology": [
+        "Social Christianity",
+        "Christian democracy",
+        "Neoliberalism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1951,
+      "leader": "Alfredo Serrano",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 151,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Partido Social Cristiano — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Social_Cristiano_(Ecuador)"
+        },
+        {
+          "title": "Asamblea Nacional del Ecuador — Wikipedia (es): fifth legislative period, 151 members elected 9 February 2025 — Government 78 (ADN 66, PSP 1, provincial 2, independents 9), Opposition 61 (RC 59, RETO 1, provincial 1), unaligned 12 (Pachakutik 3, PSC 3, independents 6)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_del_Ecuador"
+        }
+      ]
+    },
+    {
+      "id": "EC-PSP",
+      "country": "EC",
+      "shortName": "PSP",
+      "name": "Partido Sociedad Patriótica",
+      "nameEn": "Patriotic Society Party",
+      "logo": "party-logos/ec/psp.png",
+      "sha256": "32180a54c65d91b5466ec4d56562814c46a14a38c354c6719c985e265df67be2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_-_Partido_Sociedad_Patri%C3%B3tica.png",
+      "ideology": [
+        "Populism",
+        "Personalism",
+        "Big tent"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2002,
+      "leader": "Lucio Gutiérrez",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "Sits with the government bloc in the fifth legislative period.",
+      "seats": 1,
+      "seatsTotal": 151,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Partido Sociedad Patriótica — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Sociedad_Patri%C3%B3tica"
+        },
+        {
+          "title": "Asamblea Nacional del Ecuador — Wikipedia (es): fifth legislative period, 151 members elected 9 February 2025 — Government 78 (ADN 66, PSP 1, provincial 2, independents 9), Opposition 61 (RC 59, RETO 1, provincial 1), unaligned 12 (Pachakutik 3, PSC 3, independents 6)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_del_Ecuador"
+        }
+      ]
+    },
+    {
+      "id": "EC-RETO",
+      "country": "EC",
+      "shortName": "RETO",
+      "name": "Movimiento Renovación Total",
+      "nameEn": "Total Renewal Movement",
+      "logo": "party-logos/ec/reto.png",
+      "sha256": "ae06bc6208927dca397bc54f8067a356830ff8433ec1f12f5e49425679b4a08f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Reto_ecuador.png",
+      "ideology": [
+        "Democratic socialism",
+        "Social democracy",
+        "Big tent"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2018,
+      "leader": "David López Banegas",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 151,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Movimiento Renovación Total — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Movimiento_RETO"
+        },
+        {
+          "title": "Asamblea Nacional del Ecuador — Wikipedia (es): fifth legislative period, 151 members elected 9 February 2025 — Government 78 (ADN 66, PSP 1, provincial 2, independents 9), Opposition 61 (RC 59, RETO 1, provincial 1), unaligned 12 (Pachakutik 3, PSC 3, independents 6)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_del_Ecuador"
         }
       ]
     }

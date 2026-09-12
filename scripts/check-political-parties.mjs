@@ -96,7 +96,7 @@ const GRANDFATHERED_PARTIES_WITH_NO_IMAGE = new Set([
   // per CLAUDE.md rule; no freely-licensed logos found on Wikimedia Commons,
   // party Wikipedia articles, or official sources. Grandfathered pending future
   // logo discovery or sourcing of non-free images with copyright documentation.
-  "EC-ADN", "EC-PK", "EC-RC", "EC-UDCPP",
+  // (Ecuador's four entries were all removed or given real logos in the 2026 audit.)
   "GY-AFC", "GY-APNU", "GY-PPPC",
   "PY-ANR", "PY-HA", "PY-PLRA",
   "SR-NF", "SR-VHP",
