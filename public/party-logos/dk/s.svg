@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="79.375mm"
+   height="79.339119mm"
+   viewBox="0 0 79.375 79.339119"
+   version="1.1"
+   id="svg1288"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="Socialdemokratiet.svg">
+  <defs
+     id="defs1282" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-64.753413"
+     inkscape:cy="456.52734"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-10"
+     inkscape:window-y="-10"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1285">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(367.12555,10.916566)">
+    <g
+       id="g1254"
+       transform="matrix(0.49696976,0,0,-0.49696976,-563.08175,-103.81367)">
+      <g
+         transform="translate(552.68904,-266.73345)"
+         id="g991">
+        <path
+           inkscape:connector-curvature="0"
+           id="path993"
+           style="fill:#ca0928;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 0,0 c 0,-43.36 -35.151,-78.509 -78.492,-78.509 -43.388,0 -78.564,35.149 -78.564,78.509 0,43.364 35.176,78.476 78.564,78.476 C -35.151,78.476 0,43.364 0,0" />
+      </g>
+      <g
+         transform="translate(481.72274,-274.52195)"
+         id="g995">
+        <path
+           inkscape:connector-curvature="0"
+           id="path997"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="M 0,0 -7.563,16.416 H -7.662 L -15.126,0 Z M -40.891,-21.293 -9.75,45.668 c 0.298,0.598 0.991,1.092 1.69,1.092 h 0.994 c 0.698,0 1.394,-0.494 1.694,-1.092 L 25.77,-21.293 c 0.595,-1.296 -0.197,-2.588 -1.693,-2.588 H 13.036 c -1.795,0 -2.59,0.596 -3.485,2.487 l -3.582,7.863 h -27.06 l -3.586,-7.963 c -0.495,-1.191 -1.592,-2.387 -3.582,-2.387 h -10.945 c -1.49,0 -2.287,1.292 -1.687,2.588" />
+      </g>
+    </g>
+  </g>
+</svg>

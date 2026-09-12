@@ -59,7 +59,7 @@ find.
 | `scripts/check-political-parties.mjs` | The build gate (`npm run flags:check:political-parties`, and inside `npm run flags:check`). |
 | `scripts/download-party-logos.mjs` | How logos are fetched and checksummed. |
 | `.github/workflows/flag-integrity.yml` | Where the gate runs in CI. |
-| `CLAUDE.md` → "Political party logos must be thoroughly researched and verified" | The hard rule governing logos and `noImageReason`. |
+| `CLAUDE.md` → "A political party's logo is a SHOULD, never a MUST — the RESEARCH is the hard rule" | The rule governing logos and `noImageReason`. **A logo is not required for a party to be listed** (owner direction, 2026-09-12); the SEARCH is what is required, and the reason must name at least two of the source families it swept. `founded` is a SHOULD on the same basis. |
 
 **Production:** the live site is GitHub Pages. Confirm what users are actually being served with
 `node scripts/check-live-build.mjs` (`npm run live:check`) — it reads the deployed bundle's injected
@@ -88,9 +88,11 @@ numbers yourself** (a short Node script with `--experimental-strip-types` import
 directly) and flag any drift.
 
 * **90 countries, 389 parties, 11 coalitions.**
-* **69 parties (18%) have no logo** — `noImageReason` instead. Only **23** of those are in the
-  check's `GRANDFATHERED_PARTIES_WITH_NO_IMAGE` allowlist, so the "all new parties must have
-  bundled logos" rule (hard rule as of 2026-09-08) covers less than half the gap.
+* **Logo coverage (refreshed 2026-09-12).** A cross-country backfill cut the logo-less set from
+  **58 parties to 19** and added back the **13 seated parties** the old mandatory-logo rule had kept
+  out of the dataset entirely. What remains without an emblem is mostly Argentine Chamber *blocs*
+  (which have none) and one-seat parties with no article anywhere. The old "all new parties must have
+  bundled logos" rule is **gone**; the gate now enforces the research instead.
 * **174 logos are non-Commons** (fair-use bundled) and therefore depend on a `licenceNote` ≥ 40
   chars being both present and *accurate*.
 * **38 parties have no leader. 268 (69%) have no `logoMeaning`.**
@@ -132,7 +134,7 @@ For every party, judge each field against the authority and the staleness test b
 | `ideologyPosition` | Derived bucket | Is the bucket defensible given `positionRaw`? A party whose source says "big tent" or "centre to centre-right" must not be silently pinned to one bucket without a note. |
 | `founded` | Party statutes, national party register | Distinguish **founding** from **re-founding, renaming, and merger**. A merged party's `founded` is a judgement call and must match what `previousNames` claims. |
 | `name`, `nameEn`, `shortName`, `previousNames` | Party register / party's own site in its own language | Has the party renamed or rebranded? Is `nameEn` a real published translation, not yours? Is the abbreviation the one the party and its press actually use? |
-| `logo`, `sha256`, `logoSourceUrl`, `licenceNote` | Party's own site, then Commons, then the local-language Wikipedia | Is this the party's **current** emblem (rebrands are common) and does the bundled file still match the recorded hash? Is the licence statement accurate for the file actually bundled? |
+| `logo`, `sha256`, `logoSourceUrl`, `licenceNote` | **Wikidata `P154` constrained by `P17` (country)**, then the party's own site, then Commons, then the local-language Wikipedia, then the regional *Elects* account (EuropeElects / AsiaElects / AfricaElects / OceaniaElects / LatamElects), then the party's social media | Is this the party's **current** emblem (rebrands are common) and does the bundled file still match the recorded hash? Is the licence statement accurate for the file actually bundled? |
 | `noImageReason` | n/a | Does it document *what was searched* (≥ 40 chars, per the hard rule), and — crucially — **re-run that search**. The `CLAUDE.md` lesson from the flag sweeps is that omission reasons written from a single English-Wikipedia glance are presumed wrong until re-verified in the local language and on the party's own site. |
 | `sources` | n/a | Does every URL still resolve (fetch them all)? Does the cited page actually state the value the entry claims? A live URL that does not support the claim is a **worse** finding than a dead one. |
 | `logoMeaning` | Party's own explanation, heraldic/press sources | Sourced, or absent. Never written by you. |
@@ -154,7 +156,7 @@ looking for everything it cannot see.
 entries. Produce, for all 90 countries: seat sums vs `seatsTotal`, intra-country `seatsTotal`
 disagreements, zero-seat entries, duplicate ids/shortNames, coalition-reference integrity both
 ways, orphaned coalitions, missing/short `licenceNote`s, `noImageReason` entries outside the
-grandfather list, on-disk logo presence + sha256 re-verification, `inPower`/`inExecutive`/
+`noImageReason` research-record adequacy, on-disk logo presence + sha256 re-verification, `inPower`/`inExecutive`/
 `timeInPower` internal consistency, and citation-host distribution.
 
 **Phase 2 — Link integrity (network, batched).** Fetch **every** URL in `sources`, `logoSourceUrl`

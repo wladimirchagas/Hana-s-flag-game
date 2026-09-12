@@ -38,10 +38,12 @@ export function PoliticalPartyFacts({ party }: { party: PoliticalParty }) {
             {party.positionRaw || IDEOLOGY_POSITION_LABELS[party.ideologyPosition]}
           </dd>
         </div>
-        <div className="entity-summary__row">
-          <dt className="entity-summary__label">Founded</dt>
-          <dd className="entity-summary__value">{party.founded}</dd>
-        </div>
+        {party.founded !== undefined && (
+          <div className="entity-summary__row">
+            <dt className="entity-summary__label">Founded</dt>
+            <dd className="entity-summary__value">{party.founded}</dd>
+          </div>
+        )}
         {party.previousNames && party.previousNames.length > 0 && (
           <div className="entity-summary__row">
             <dt className="entity-summary__label">
