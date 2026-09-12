@@ -170,6 +170,18 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "The Sumar group's 26 seats are shared between Movimiento Sumar, Catalunya en Comú, Izquierda Unida, Más Madrid, Compromís and Més per Mallorca. ERC, EH Bildu, the PNV, the BNG and Podemos support the government without holding cabinet office, so they are recorded in power but outside this coalition.",
   },
+  "AT-GOV": {
+    id: "AT-GOV",
+    name: "Bundesregierung Stocker",
+    nameEn: "Stocker government",
+    kind: "coalition",
+    memberPartyIds: ["AT-OEVP", "AT-SPOE", "AT-NEOS"],
+    source: {
+      title: "Stocker government — Wikipedia: an ÖVP–SPÖ–NEOS coalition formed on 3 March 2025, holding 109 of the National Council's 183 seats",
+      url: "https://en.wikipedia.org/wiki/Stocker_government",
+    },
+    note: "Austria's first three-party federal coalition. It was formed only after talks between the ÖVP and the FPÖ — the largest party in the chamber — collapsed, which is why the election's winner sits in opposition.",
+  },
   "CH-FC": {
     id: "CH-FC",
     name: "Bundesrat",
@@ -10344,28 +10356,71 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "FPÖ",
       "name": "Freiheitliche Partei Österreichs",
       "nameEn": "Freedom Party of Austria",
-      "logo": "party-logos/at/fpoe.png",
-      "sha256": "e5eca0d49f7ca96b5a099ec51d38f1f0e5d69a67f1bf65cea7903a97cd607592",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:FPÖ_Logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party in its infobox; used here to identify the party, not to imply endorsement.",
+      "logo": "party-logos/at/fpo.svg",
+      "sha256": "3c03bb69bc346c6fbe3d04d34c3a29557a724fb480f0556e0b2b5d7e0f0a3125",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Freedom_Party_of_Austria.svg",
       "ideology": [
         "National conservatism",
         "Right-wing populism",
         "Euroscepticism"
       ],
-      "ideologyPosition": "right",
-      "positionRaw": "Right-wing",
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
       "founded": 1956,
       "leader": "Herbert Kickl",
       "leaderTitle": "Chairman",
       "inPower": false,
-      "seats": 0,
+      "seats": 57,
       "seatsTotal": 183,
       "chamberName": "National Council",
       "sources": [
         {
-          "title": "Freedom Party of Austria - Wikipedia",
+          "title": "Freedom Party of Austria – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Freedom_Party_of_Austria"
+        },
+        {
+          "title": "National Council (Austria) — Wikipedia: composition after the 29 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Austria)"
+        }
+      ]
+    },
+    {
+      "id": "AT-OEVP",
+      "country": "AT",
+      "shortName": "ÖVP",
+      "name": "Österreichische Volkspartei",
+      "nameEn": "Austrian People's Party",
+      "logo": "party-logos/at/ovp.svg",
+      "sha256": "0198465ed702a703e882b7430ebf7ac85a250a780beb61a2cc0f0045dc83b03f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Volkspartei_Logo_2022.svg",
+      "ideology": [
+        "Christian democracy",
+        "Liberal conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1945,
+      "coalitionId": "AT-GOV",
+      "leader": "Christian Stocker",
+      "leaderTitle": "Chairperson",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2017–present",
+      "seats": 51,
+      "seatsTotal": 183,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Austrian People's Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Austrian_People%27s_Party"
+        },
+        {
+          "title": "National Council (Austria) — Wikipedia: composition after the 29 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Austria)"
+        },
+        {
+          "title": "Stocker government — Wikipedia: an ÖVP–SPÖ–NEOS coalition formed on 3 March 2025",
+          "url": "https://en.wikipedia.org/wiki/Stocker_government"
         }
       ]
     },
@@ -10373,30 +10428,111 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "AT-SPOE",
       "country": "AT",
       "shortName": "SPÖ",
-      "name": "Österreichische Sozialdemokratische Partei",
-      "nameEn": "Austrian Social Democratic Party",
-      "logo": "party-logos/at/spoe.png",
-      "sha256": "f26d8855ea8a9bed54dace453fb3b894641fd930eadfda301bc4196ec3d7ddc3",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:SPÖ_Logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party in its infobox; used here to identify the party, not to imply endorsement.",
+      "name": "Sozialdemokratische Partei Österreichs",
+      "nameEn": "Social Democratic Party of Austria",
+      "logo": "party-logos/at/spo.svg",
+      "sha256": "172e22068b6ac109443721042bfe190f807cc0d7e3b05e2f43fc0d97c89f2e39",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SP%C3%96_2023_logo.svg",
       "ideology": [
-        "Social democracy",
-        "Progressivism"
+        "Social democracy"
       ],
-      "ideologyPosition": "left",
+      "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
-      "founded": 1863,
+      "founded": 1889,
+      "coalitionId": "AT-GOV",
       "leader": "Andreas Babler",
       "leaderTitle": "Chairman",
       "inPower": true,
-      "timeInPower": "2020-present",
+      "inExecutive": true,
+      "timeInPower": "2025–present",
       "seats": 41,
       "seatsTotal": 183,
       "chamberName": "National Council",
       "sources": [
         {
-          "title": "Austrian Social Democratic Party - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Austrian_Social_Democratic_Party"
+          "title": "Social Democratic Party of Austria – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_of_Austria"
+        },
+        {
+          "title": "National Council (Austria) — Wikipedia: composition after the 29 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Austria)"
+        },
+        {
+          "title": "Stocker government — Wikipedia: an ÖVP–SPÖ–NEOS coalition formed on 3 March 2025",
+          "url": "https://en.wikipedia.org/wiki/Stocker_government"
+        }
+      ]
+    },
+    {
+      "id": "AT-NEOS",
+      "country": "AT",
+      "shortName": "NEOS",
+      "name": "NEOS – Das Neue Österreich und Liberales Forum",
+      "nameEn": "NEOS – The New Austria and Liberal Forum",
+      "logo": "party-logos/at/neos.svg",
+      "sha256": "56d66a5646c6b0b73ae0021779d1ae7dc373dc1d2324be18f249dc43a71c3d60",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:NEOS_%E2%80%93_Das_Neue_%C3%96sterreich_und_Liberales_Forum_2022_logo.svg",
+      "ideology": [
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2012,
+      "coalitionId": "AT-GOV",
+      "leader": "Beate Meinl-Reisinger",
+      "leaderTitle": "Chairwoman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2025–present",
+      "seats": 17,
+      "seatsTotal": 183,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "NEOS (Austria) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/NEOS_(Austria)"
+        },
+        {
+          "title": "National Council (Austria) — Wikipedia: composition after the 29 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Austria)"
+        },
+        {
+          "title": "Stocker government — Wikipedia: an ÖVP–SPÖ–NEOS coalition formed on 3 March 2025",
+          "url": "https://en.wikipedia.org/wiki/Stocker_government"
+        }
+      ]
+    },
+    {
+      "id": "AT-GRUENE",
+      "country": "AT",
+      "shortName": "Grüne",
+      "name": "Die Grünen – Die Grüne Alternative",
+      "nameEn": "The Greens – The Green Alternative",
+      "logo": "party-logos/at/greens.svg",
+      "sha256": "d95c9e45145f934237506212a813ca0bd185083bc1b6ea6e1d4c6527475acb9c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Die_Gr%C3%BCnen_%E2%80%93_Die_Gr%C3%BCne_Alternative.svg",
+      "ideology": [
+        "Green politics",
+        "Eco-feminism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1993,
+      "leader": "Leonore Gewessler",
+      "leaderTitle": "Spokeswoman",
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 183,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "The Greens (Austria) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Greens_(Austria)"
+        },
+        {
+          "title": "National Council (Austria) — Wikipedia: composition after the 29 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Austria)"
         }
       ]
     }
