@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 40 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 41 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -86,6 +86,7 @@ forgotten; it is tracked here.
 | 🇮🇪 Ireland | `#1351` | 3 → 10 | 159 / 174 | **BROKEN IMAGES — every logo was an HTML error page** |
 | 🇵🇹 Portugal | `#1352` | 2 → 10 | **230 / 230** | **WRONG — the opposition marked as governing, 62 seats out** |
 | 🇱🇺 Luxembourg | `#1354` | 3 → 7 | **60 / 60** | **WRONG — two of three leaders lead a different party** |
+| 🇨🇭 Switzerland | `#1355` | 3 → 10 | **200 / 200** | **WRONG — an FDP councillor listed as the Social Democrats' leader** |
 
 ---
 
@@ -1461,6 +1462,47 @@ pages.
 
 ---
 
+### 🇨🇭 Switzerland — audited 2026-09-12
+
+Switzerland's three parties were led by **Karin Keller-Sutter** (recorded as leading the Social
+Democrats — she is an **FDP** federal councillor, and was President of the Confederation in 2025),
+**Marco Chiesa** (SVP president until 2024) and **Beatrice Kappeler** (a journalist, not an FDP
+office-holder). All three were also marked `inPower: true` with **`inExecutive: false`** — a
+combination that describes nothing, and one that is especially wrong here, because Switzerland's
+executive is the one place in this dataset where "in power" is a permanent, structural fact.
+
+The National Council, 200 seats: **SVP 62, SP 41, The Centre 29, FDP 28, Greens 23, GLP 10, MCG 2,
+EVP 2, EDU 2, Ticino League 1.**
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-226 | **S1** | `leader` | SP led by **Karin Keller-Sutter**; SVP by **Marco Chiesa**; FDP by **Beatrice Kappeler** | **Cédric Wermuth and Mattea Meyer**; **Marcel Dettling**; **Susanne Vincenz-Stauffacher and Benjamin Mühlemann** | Keller-Sutter is an FDP federal councillor, not the SP's leader — the wrong-party-leader defect again, and this time across the political divide |
+| PP-227 | **S1** | `inPower` / `inExecutive` | three parties in power, **none in the executive** | **SVP, SP, FDP and The Centre in the executive**; the other six out of power | The Federal Council is a permanent grand coalition holding 2–2–2–1 under the 1959 Zauberformel |
+| PP-228 | **S2** | `seats` | SP **43**, FDP **29** | **41**, **28** | The National Council's own composition after the 22 October 2023 election |
+| PP-229 | **S3** | coverage | 3 parties, 134 of 200 | **10 parties, 200 of 200 exactly** | Seven seated parties were absent, including **The Centre (29)**, a governing party, and the **Greens (23)** |
+| PP-230 | **S3** | coalitions | none | **`CH-FC`** (the Federal Council, 4 parties, 7 seats) | Recorded with a note that this is *not* a government formed after an election |
+| PP-231 | **S6** | `positionRaw` | SVP "Right-wing"; SP "Centre-left"; FDP "Centre-right" | each party's cited position verbatim (SVP **"Right-wing to far-right"**, FDP **"Centre to centre-right"**) | Flattened ranges restored |
+
+**Switzerland's `inPower` means something different, and the coalition entry says so.** Everywhere
+else in this dataset a governing coalition is formed after an election and falls with it. The Federal
+Council is a standing, voluntary grand coalition of the four largest parties that does not change when
+the National Council does, so `timeInPower` records the concordance rather than a date, and `CH-FC`
+carries a note explaining it. Modelling it as an ordinary cabinet would misstate how the country works.
+
+**The Evangelical People's Party is `other`**, like Ireland's Aontú: its own cited position is two
+positions, *"Economic: centre to centre-left; social: centre-right"*, not a range.
+
+**One honest gap.** The **Ticino League** has no bundled emblem: Commons holds no logo file for it (a
+namespace-6 search returns only seating diagrams), its article's infobox carries no `logo` parameter
+at all, and Wikidata records no P154 image on its item under Switzerland. Listed with a
+`noImageReason` rather than dropped — and rather than shown a canton flag it does not own.
+
+**Documented gap — none on seats.** Switzerland is the **ninth country in this sweep to reconcile
+exactly**. Seven logos are on Commons; two (the Greens and the EVP) are non-free files on English
+Wikipedia and are declared. All nine were montage-verified.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1585,7 +1627,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `NL` Netherlands — merged
 - [x] `BE` Belgium — merged
 - [x] `LU` Luxembourg — merged
-- [ ] `CH` Switzerland
+- [x] `CH` Switzerland — merged
 - [ ] `AT` Austria
 - [x] `PL` Poland — merged
 - [ ] `CZ` Czechia
