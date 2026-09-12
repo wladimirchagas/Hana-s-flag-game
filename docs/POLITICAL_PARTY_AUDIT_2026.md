@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 58 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 59 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -108,7 +108,8 @@ forgotten; it is tracked here.
 | 🇮🇶 Iraq | `#1375` | 0 → 41 | 320 / 329 (9 minority-quota) | **Absent entirely; a 329-seat chamber elected in November 2025 with 41 seated lists** |
 | 🇮🇷 Iran | `#1376` | 0 → 13 | 31 / 290 (254 independents) | **Absent entirely; three wrong leaders caught, including one dead since 2017** |
 | 🇯🇴 Jordan | `#1377` | 0 → 12 | 99 / 138 (39 independents) | **Absent entirely; the Islamic Action Front had been renamed and a branch's emblem was nearly bundled as the party's** |
-| 🇯🇵 Japan | *(see PR)* | 9 → 9 | 460 / 465 (5 unaffiliated) | Best-maintained entry so far; `inExecutive` absent, Ishin's date from the previous cabinet, one seat double-counted |
+| 🇯🇵 Japan | `#1378` | 9 → 9 | 460 / 465 (5 unaffiliated) | Best-maintained entry so far; `inExecutive` absent, Ishin's date from the previous cabinet, one seat double-counted |
+| 🇰🇿 Kazakhstan | *(see PR)* | 0 → 5 | **145 / 145** | **Absent entirely; the bicameral parliament was replaced by a unicameral Kurultai on 1 July 2026** |
 
 ---
 
@@ -2225,6 +2226,44 @@ Iraq's non-cabinet bloc, but here it is stated rather than inferred.
 
 ---
 
+### 🇰🇿 Kazakhstan — audited 2026-09-12
+
+**Kazakhstan was not in the dataset — and the chamber it would have been entered against no longer
+exists.** On **1 July 2026** Kazakhstan replaced its bicameral Parliament (a 49-seat Senate and a
+98-seat Mäjilis) with a **unicameral 145-seat Kurultai**, first elected on **23 August 2026**, three
+weeks before this audit.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-319 | **S1** | coverage | **Kazakhstan absent from `POLITICAL_PARTIES`** | **5 parties, 145 / 145** | The Kurultai's own composition |
+| PP-320 | **S1** | `chamberName` | *(would have been "Mäjilis", 98 seats)* | **"Kurultai", 145 seats** | The Mäjilis article still carries 98 members and a 2023 election; it is the superseded chamber |
+
+**This is the first structural chamber change the sweep has met**, and it is the reason entering
+Kazakhstan from the obvious article would have been wrong twice over: the Mäjilis page is still
+live, still says 98 members, and still cites the January 2023 election. A dataset built from it
+would have described a parliament abolished ten weeks ago.
+
+The Kurultai, 145 seats: **Government 110** — Ädilet — **Opposition 35** — Auyl 10, Respublica 9,
+Aq Jol 8, JSDP 8.
+
+**Documented gap — none.** Kazakhstan is the **thirteenth country in this sweep to reconcile
+exactly**: 110 + 10 + 9 + 8 + 8 = 145.
+
+**The ruling party is four months old.** Ädilet was founded on **7 May 2026** in support of
+President Kassym-Jomart Tokayev's reforms and took 110 of the 145 seats at its first election —
+so its `founded` year and its `timeInPower` start in the same year, which is rare enough to be
+worth stating rather than looking like an error. Two parties that held seats before the reform, the
+People's Party of Kazakhstan and Baytaq, **lost all of theirs** and are therefore not in the
+dataset.
+
+**Ädilet is filed `other`** — its cited position is "big tent", which is not a point on the
+left-right axis.
+
+Three logos are on Commons under free licences; two are non-free English-Wikipedia files and are
+declared. All five were montage-verified.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2442,7 +2481,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `JM` Jamaica
 - [x] `JP` Japan — merged
 - [x] `JO` Jordan — merged
-- [ ] `KZ` Kazakhstan
+- [x] `KZ` Kazakhstan — merged
 - [ ] `KE` Kenya
 - [ ] `KI` Kiribati
 - [ ] `KP` North Korea

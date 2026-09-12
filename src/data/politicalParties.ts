@@ -6077,6 +6077,200 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "KZ": [
+    {
+      "id": "KZ-ADILET",
+      "country": "KZ",
+      "shortName": "Ädilet",
+      "name": "Әділет",
+      "nameEn": "Ädilet",
+      "logo": "party-logos/kz/adilet.svg",
+      "sha256": "66f8c3a1979dd99d6d479217ab234184fc92bfd89832fac2f3c4781e5f324d6d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%C3%84dilet_(political_party)_logo.svg",
+      "ideology": [
+        "Pro-Tokayev",
+        "Technocracy",
+        "Neoliberalism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Big tent",
+      "founded": 2026,
+      "leader": "Aybek Dädebay",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "The ruling party since the first election to the Kurultai on 23 August 2026, in which it won 110 of 145 seats. Founded on 7 May 2026 in support of President Kassym-Jomart Tokayev's reforms.",
+      "seats": 110,
+      "seatsTotal": 145,
+      "chamberName": "Kurultai",
+      "sources": [
+        {
+          "title": "Ädilet — Wikipedia (infobox: founded 2026; Chairman Aybek Dädebay; 110 of the Kurultai's 145 seats)",
+          "url": "https://en.wikipedia.org/wiki/%C3%84dilet_(political_party)"
+        },
+        {
+          "title": "Kurultai (Kazakhstan) — Wikipedia (the unicameral parliament established 1 July 2026, 145 seats; after the 23 August 2026 election: Government 110 — Ädilet; Opposition 35 — Auyl 10, Respublica 9, Aq Jol 8, JSDP 8)",
+          "url": "https://en.wikipedia.org/wiki/Kurultai_(Kazakhstan)"
+        },
+        {
+          "title": "2026 Kazakh legislative election — Wikipedia (results certified by the Central Election Commission: Ädilet 110, Auyl 10, Respublica 9, Aq Jol 8, JSDP 8; the People's Party and Baytaq lost all their seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Kazakh_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "KZ-AUYL",
+      "country": "KZ",
+      "shortName": "Auyl",
+      "name": "Ауыл",
+      "nameEn": "Auyl People's Democratic Patriotic Party",
+      "logo": "party-logos/kz/auyl.svg",
+      "sha256": "e89ebd9e3c543566f7fbcba7fc2307418f23dd0329bc93bebeefba3bcb6d9d7d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Auyl.svg",
+      "ideology": [
+        "Social democracy",
+        "Agrarianism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2000,
+      "leader": "Qairat Aituğanov",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 10,
+      "seatsTotal": 145,
+      "chamberName": "Kurultai",
+      "sources": [
+        {
+          "title": "Auyl People's Democratic Patriotic Party — Wikipedia (infobox: founded 2000; Chairman Qairat Aituğanov; 10 of the Kurultai's 145 seats)",
+          "url": "https://en.wikipedia.org/wiki/Auyl"
+        },
+        {
+          "title": "Kurultai (Kazakhstan) — Wikipedia (the unicameral parliament established 1 July 2026, 145 seats; after the 23 August 2026 election: Government 110 — Ädilet; Opposition 35 — Auyl 10, Respublica 9, Aq Jol 8, JSDP 8)",
+          "url": "https://en.wikipedia.org/wiki/Kurultai_(Kazakhstan)"
+        },
+        {
+          "title": "2026 Kazakh legislative election — Wikipedia (results certified by the Central Election Commission: Ädilet 110, Auyl 10, Respublica 9, Aq Jol 8, JSDP 8; the People's Party and Baytaq lost all their seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Kazakh_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "KZ-RESPUBLICA",
+      "country": "KZ",
+      "shortName": "Respublica",
+      "name": "Respublica",
+      "nameEn": "Respublica",
+      "logo": "party-logos/kz/respublica.svg",
+      "sha256": "f9fddf23f1f2f266c4df32459b056f96725f9ea792788f4c4f74c8826cbee614",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Respublica_(Kazakh_political_party).svg",
+      "ideology": [
+        "Youth politics",
+        "Entrepreneurship"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2022,
+      "leader": "Aidarbek Qojanazarov",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 9,
+      "seatsTotal": 145,
+      "chamberName": "Kurultai",
+      "sources": [
+        {
+          "title": "Respublica — Wikipedia (infobox: founded 2022; Chairman Aidarbek Qojanazarov; 9 of the Kurultai's 145 seats)",
+          "url": "https://en.wikipedia.org/wiki/Respublica_(Kazakh_political_party)"
+        },
+        {
+          "title": "Kurultai (Kazakhstan) — Wikipedia (the unicameral parliament established 1 July 2026, 145 seats; after the 23 August 2026 election: Government 110 — Ädilet; Opposition 35 — Auyl 10, Respublica 9, Aq Jol 8, JSDP 8)",
+          "url": "https://en.wikipedia.org/wiki/Kurultai_(Kazakhstan)"
+        },
+        {
+          "title": "2026 Kazakh legislative election — Wikipedia (results certified by the Central Election Commission: Ädilet 110, Auyl 10, Respublica 9, Aq Jol 8, JSDP 8; the People's Party and Baytaq lost all their seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Kazakh_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "KZ-AQJOL",
+      "country": "KZ",
+      "shortName": "Aq Jol",
+      "name": "Ақ жол",
+      "nameEn": "Aq Jol Democratic Party",
+      "logo": "party-logos/kz/aqjol.svg",
+      "sha256": "7b503c965d02787d2e5ab6c77058c8851c91f6fc5c4722d2c18482e04710db47",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Aq_Jol_Democratic_Party.svg",
+      "licenceNote": "Non-free. Aq Jol Democratic Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Liberal conservatism",
+        "Economic liberalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2002,
+      "leader": "Dania Espaeva",
+      "leaderTitle": "Chairwoman",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 145,
+      "chamberName": "Kurultai",
+      "sources": [
+        {
+          "title": "Aq Jol Democratic Party — Wikipedia (infobox: founded 2002; Chairwoman Dania Espaeva; 8 of the Kurultai's 145 seats)",
+          "url": "https://en.wikipedia.org/wiki/Aq_Jol"
+        },
+        {
+          "title": "Kurultai (Kazakhstan) — Wikipedia (the unicameral parliament established 1 July 2026, 145 seats; after the 23 August 2026 election: Government 110 — Ädilet; Opposition 35 — Auyl 10, Respublica 9, Aq Jol 8, JSDP 8)",
+          "url": "https://en.wikipedia.org/wiki/Kurultai_(Kazakhstan)"
+        },
+        {
+          "title": "2026 Kazakh legislative election — Wikipedia (results certified by the Central Election Commission: Ädilet 110, Auyl 10, Respublica 9, Aq Jol 8, JSDP 8; the People's Party and Baytaq lost all their seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Kazakh_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "KZ-JSDP",
+      "country": "KZ",
+      "shortName": "JSDP",
+      "name": "Жалпыұлттық социал-демократиялық партия",
+      "nameEn": "Nationwide Social Democratic Party",
+      "logo": "party-logos/kz/jsdp.svg",
+      "sha256": "ececc7db5ef3377f60d56a0ca56d87aa98d474be61ea9584172b7d8d5f84ead8",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Nationwide_Social_Democratic_Party_logo.svg",
+      "licenceNote": "Non-free. Nationwide Social Democratic Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Social democracy",
+        "Republicanism",
+        "Parliamentarism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2006,
+      "leader": "Ashat Rahymjanov",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 145,
+      "chamberName": "Kurultai",
+      "sources": [
+        {
+          "title": "Nationwide Social Democratic Party — Wikipedia (infobox: founded 2006; Chairman Ashat Rahymjanov; 8 of the Kurultai's 145 seats)",
+          "url": "https://en.wikipedia.org/wiki/Nationwide_Social_Democratic_Party"
+        },
+        {
+          "title": "Kurultai (Kazakhstan) — Wikipedia (the unicameral parliament established 1 July 2026, 145 seats; after the 23 August 2026 election: Government 110 — Ädilet; Opposition 35 — Auyl 10, Respublica 9, Aq Jol 8, JSDP 8)",
+          "url": "https://en.wikipedia.org/wiki/Kurultai_(Kazakhstan)"
+        },
+        {
+          "title": "2026 Kazakh legislative election — Wikipedia (results certified by the Central Election Commission: Ädilet 110, Auyl 10, Respublica 9, Aq Jol 8, JSDP 8; the People's Party and Baytaq lost all their seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Kazakh_legislative_election"
+        }
+      ]
+    }
+  ],
   "KR": [
     {
       "id": "KR-DP",
