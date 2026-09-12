@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 57 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 58 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -107,7 +107,8 @@ forgotten; it is tracked here.
 | 🇮🇱 Israel | `#1374` | 3 → 15 | **120 / 120** | **Ten factions missing; the coalition and the government had come apart in 2025 and neither was modelled** |
 | 🇮🇶 Iraq | `#1375` | 0 → 41 | 320 / 329 (9 minority-quota) | **Absent entirely; a 329-seat chamber elected in November 2025 with 41 seated lists** |
 | 🇮🇷 Iran | `#1376` | 0 → 13 | 31 / 290 (254 independents) | **Absent entirely; three wrong leaders caught, including one dead since 2017** |
-| 🇯🇴 Jordan | *(see PR)* | 0 → 12 | 99 / 138 (39 independents) | **Absent entirely; the Islamic Action Front had been renamed and a branch's emblem was nearly bundled as the party's** |
+| 🇯🇴 Jordan | `#1377` | 0 → 12 | 99 / 138 (39 independents) | **Absent entirely; the Islamic Action Front had been renamed and a branch's emblem was nearly bundled as the party's** |
+| 🇯🇵 Japan | *(see PR)* | 9 → 9 | 460 / 465 (5 unaffiliated) | Best-maintained entry so far; `inExecutive` absent, Ishin's date from the previous cabinet, one seat double-counted |
 
 ---
 
@@ -2196,6 +2197,34 @@ montage-verified; the fourth candidate was the branch emblem above, and it was d
 
 ---
 
+### 🇯🇵 Japan — audited 2026-09-12
+
+**Japan's entry was the best-maintained the sweep has audited so far** — nine parties, current as
+of the general election of **8 February 2026**, with Japanese names, `previousNames` on the Party
+of Life (renamed from Reiwa Shinsengumi in 2026), and a `positionRaw` on the Genzei–Yūkoku Alliance
+that spells out its two co-representatives' disagreement. Every one of its nine leaders checked out
+against the parties' own articles. Four narrower things were wrong.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-315 | **S2** | `inExecutive` | **absent on all nine** | **`true` on the LDP, `false` on Ishin** | The second Takaichi cabinet's own party list marks the Japan Innovation Party **"(confidence and supply)"**, and the chamber lists its 36 seats under **"Supported by"**, separately from Government |
+| PP-316 | **S2** | `timeInPower` | Ishin: **"2025-10-20–present"** | the second Takaichi cabinet, formed **18 February 2026** | The date belonged to the *previous* cabinet; the February 2026 election and the new cabinet had superseded it |
+| PP-317 | **S2** | `seats` | CRA **49** | **48** | The chamber lists the Centrist Reform Alliance's parliamentary group as 48 and counts its **vice-speaker** separately under "Unaffiliated". Recording 49 double-counted him |
+| PP-318 | **S3** | `timeInPower` | LDP: a bare date range | prose naming the current cabinet | It said only that the LDP had governed since 2012, without saying which cabinet it holds now |
+
+**The arithmetic now closes.** 316 + 36 + 48 + 28 + 15 + 11 + 4 + 1 + 1 = **460**, and the chamber's
+remaining **5** are its Unaffiliated members who are not counted in any parliamentary group: the
+Speaker (LDP), the Vice-Speaker (CRA) and three independents. Before the fix the total was 461 and
+the vice-speaker was in two places at once.
+
+**Japan is the clearest confidence-and-supply case in the sweep**, because the source says so in as
+many words. The cabinet's own `political_party` field reads "Liberal Democratic Party" and "Japan
+Innovation Party *(confidence and supply)*" — so the LDP is `inExecutive: true` and Ishin
+`inExecutive: false`, both `inPower`. That is the same shape as Cyprus's DIKO, Israel's Shas and
+Iraq's non-cabinet bloc, but here it is stated rather than inferred.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2411,7 +2440,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `IQ` Iraq — merged
 - [x] `IL` Israel — merged
 - [ ] `JM` Jamaica
-- [ ] `JP` Japan
+- [x] `JP` Japan — merged
 - [x] `JO` Jordan — merged
 - [ ] `KZ` Kazakhstan
 - [ ] `KE` Kenya
