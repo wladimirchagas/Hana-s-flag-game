@@ -403,6 +403,18 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       url: "https://en.wikipedia.org/wiki/Sejm",
     },
   },
+  "SE-GOV": {
+    id: "SE-GOV",
+    name: "Tidöregeringen",
+    nameEn: "Kristersson cabinet (Tidö coalition)",
+    kind: "coalition",
+    memberPartyIds: ["SE-M", "SE-KD", "SE-L"],
+    source: {
+      title: "Riksdag — Wikipedia: the Kristersson cabinet holds 103 of 349 seats — Moderates 66, Christian Democrats 19, Liberals 16, plus two non-attached Sweden Democrats",
+      url: "https://en.wikipedia.org/wiki/Riksdag",
+    },
+    note: "A minority government. The Sweden Democrats, the second-largest party in the Riksdag, support it on confidence and supply under the Tidö Agreement without holding cabinet office, so they are recorded in power but outside this coalition.",
+  },
   "UY-CR": {
     id: "UY-CR",
     name: "Coalición Republicana",
@@ -15957,62 +15969,32 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "SE-S",
       "country": "SE",
       "shortName": "S",
-      "name": "Sveriges Socialdemokratiska Arbetareparti",
-      "nameEn": "Swedish Social Democrats",
+      "name": "Sveriges socialdemokratiska arbetareparti",
+      "nameEn": "Swedish Social Democratic Party",
       "logo": "party-logos/se/s.svg",
       "sha256": "7a0a702fa8d76fdb575bfb50221700b13ab307c44cc4114feaf955795d7e501e",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:S_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Social democracy", "Centre-left", "Labour movement"],
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Swedish_Social_Democratic_Worker%27s_Party_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Socialdemokraterna emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Social democracy"
+      ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 1889,
-      "leader": "Magdalena Andersson",
-      "leaderTitle": "Party Leader",
+      "leader": "Lena Hallengren",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 67,
+      "seats": 106,
       "seatsTotal": 349,
       "chamberName": "Riksdag",
       "sources": [
         {
-          "title": "Swedish Social Democrats – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Swedish_Social_Democrats"
+          "title": "Swedish Social Democratic Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Swedish_Social_Democratic_Party"
         },
         {
-          "title": "2022 Swedish general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Swedish_general_election"
-        }
-      ]
-    },
-    {
-      "id": "SE-M",
-      "country": "SE",
-      "shortName": "M",
-      "name": "Moderata samlingspartiet",
-      "nameEn": "Moderate Party",
-      "logo": "party-logos/se/m.svg",
-      "sha256": "a3a9cabc1a486422d236345f8037611fd99489620bb7d56dfd64b1382e14f061",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Moderata_samlingspartiet_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Conservatism", "Centre-right", "Liberalism"],
-      "ideologyPosition": "right",
-      "positionRaw": "Centre-right",
-      "founded": 1904,
-      "leader": "Ulf Kristersson",
-      "leaderTitle": "Party Leader (Prime Minister, 2022–present)",
-      "inPower": true,
-      "timeInPower": "2022-present",
-      "seats": 68,
-      "seatsTotal": 349,
-      "chamberName": "Riksdag",
-      "sources": [
-        {
-          "title": "Moderate Party (Sweden) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Moderate_Party_(Sweden)"
-        },
-        {
-          "title": "2022 Swedish general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Swedish_general_election"
+          "title": "Riksdag — Wikipedia: 349 seats — Government (Kristersson cabinet) 103 (Moderates 66, Christian Democrats 19, Liberals 16, 2 non-attached Sweden Democrats); supported by 73 (Sweden Democrats 70, Ambition Sweden 2, 1 Christian Democrat); Opposition 173 (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3, Unity 1)",
+          "url": "https://en.wikipedia.org/wiki/Riksdag"
         }
       ]
     },
@@ -16024,26 +16006,104 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Sweden Democrats",
       "logo": "party-logos/se/sd.svg",
       "sha256": "b22bf267e7f1756bcd73e6294770d2ac74a70d4587fa66790a06b07f5e921541",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Sweden_Democrats_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Right-wing populism", "Anti-immigration", "Nationalism"],
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Sweden_Democrats_logo_and_initials.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Sverigedemokraterna emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "National conservatism",
+        "Right-wing populism",
+        "Euroscepticism"
+      ],
       "ideologyPosition": "far-right",
-      "positionRaw": "Far-right",
+      "positionRaw": "Right-wing to far-right",
       "founded": 1988,
-      "leader": "Jimmie Åkesson",
-      "leaderTitle": "Party Leader",
-      "inPower": false,
-      "seats": 73,
+      "leader": "Mattias Bäckström Johansson",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "Supports the Kristersson government on confidence and supply without holding cabinet office; two of its members sit with the government as non-attached.",
+      "seats": 72,
       "seatsTotal": 349,
       "chamberName": "Riksdag",
       "sources": [
         {
-          "title": "Sweden Democrats – Wikipedia",
+          "title": "Sweden Democrats — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Sweden_Democrats"
         },
         {
-          "title": "2022 Swedish general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Swedish_general_election"
+          "title": "Riksdag — Wikipedia: 349 seats — Government (Kristersson cabinet) 103 (Moderates 66, Christian Democrats 19, Liberals 16, 2 non-attached Sweden Democrats); supported by 73 (Sweden Democrats 70, Ambition Sweden 2, 1 Christian Democrat); Opposition 173 (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3, Unity 1)",
+          "url": "https://en.wikipedia.org/wiki/Riksdag"
+        }
+      ]
+    },
+    {
+      "id": "SE-M",
+      "country": "SE",
+      "shortName": "M",
+      "name": "Moderata samlingspartiet",
+      "nameEn": "Moderate Party",
+      "logo": "party-logos/se/m.svg",
+      "sha256": "a3a9cabc1a486422d236345f8037611fd99489620bb7d56dfd64b1382e14f061",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:M_v1.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1904,
+      "coalitionId": "SE-GOV",
+      "leader": "Ulf Kristersson",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Leads the government formed on 18 October 2022; its leader Ulf Kristersson is prime minister.",
+      "seats": 66,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Moderate Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Moderate_Party"
+        },
+        {
+          "title": "Riksdag — Wikipedia: 349 seats — Government (Kristersson cabinet) 103 (Moderates 66, Christian Democrats 19, Liberals 16, 2 non-attached Sweden Democrats); supported by 73 (Sweden Democrats 70, Ambition Sweden 2, 1 Christian Democrat); Opposition 173 (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3, Unity 1)",
+          "url": "https://en.wikipedia.org/wiki/Riksdag"
+        },
+        {
+          "title": "Prime Minister of Sweden — Wikipedia (Ulf Kristersson of the Moderate Party, in office since 18 October 2022)",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Sweden"
+        }
+      ]
+    },
+    {
+      "id": "SE-C",
+      "country": "SE",
+      "shortName": "C",
+      "name": "Centerpartiet",
+      "nameEn": "Centre Party",
+      "logo": "party-logos/se/c.svg",
+      "sha256": "2a213f55e2518d74d0cad324e2913ccd69822503af9551de1a95c2b8ae28a3ac",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:C_v1.svg",
+      "ideology": [
+        "Liberalism",
+        "Agrarianism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1913,
+      "leader": "Elisabeth Thand Ringqvist",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 24,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Centre Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Centre_Party_(Sweden)"
+        },
+        {
+          "title": "Riksdag — Wikipedia: 349 seats — Government (Kristersson cabinet) 103 (Moderates 66, Christian Democrats 19, Liberals 16, 2 non-attached Sweden Democrats); supported by 73 (Sweden Democrats 70, Ambition Sweden 2, 1 Christian Democrat); Opposition 173 (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3, Unity 1)",
+          "url": "https://en.wikipedia.org/wiki/Riksdag"
         }
       ]
     },
@@ -16055,26 +16115,240 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Left Party",
       "logo": "party-logos/se/v.svg",
       "sha256": "9fe5ad598ba69bc52646ecc7cff19c79c3cdc86a90fa51bb8e555dcb6989c38f",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Vänsterpartiet_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Socialism", "Left-wing", "Marxism"],
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Left_Party_(Sweden)_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Vänsterpartiet emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Socialism",
+        "Eco-socialism",
+        "Euroscepticism",
+        "Republicanism"
+      ],
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
       "founded": 1917,
-      "leader": "Nooshi Dadgostar",
-      "leaderTitle": "Party Leader",
+      "leader": "Samuel Gonzalez Westling",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 28,
+      "seats": 21,
       "seatsTotal": 349,
       "chamberName": "Riksdag",
       "sources": [
         {
-          "title": "Left Party (Sweden) – Wikipedia",
+          "title": "Left Party — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Left_Party_(Sweden)"
         },
         {
-          "title": "2022 Swedish general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Swedish_general_election"
+          "title": "Riksdag — Wikipedia: 349 seats — Government (Kristersson cabinet) 103 (Moderates 66, Christian Democrats 19, Liberals 16, 2 non-attached Sweden Democrats); supported by 73 (Sweden Democrats 70, Ambition Sweden 2, 1 Christian Democrat); Opposition 173 (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3, Unity 1)",
+          "url": "https://en.wikipedia.org/wiki/Riksdag"
+        }
+      ]
+    },
+    {
+      "id": "SE-KD",
+      "country": "SE",
+      "shortName": "KD",
+      "name": "Kristdemokraterna",
+      "nameEn": "Christian Democrats",
+      "logo": "party-logos/se/kd.svg",
+      "sha256": "26736d68c0adc700e647d08e96bf6bb2bef51f062edeb950960f7efe92d7885d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Christian_Democrats_Sweden_logo_2017.svg",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1964,
+      "coalitionId": "SE-GOV",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the Kristersson coalition formed on 18 October 2022.",
+      "seats": 20,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Christian Democrats — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democrats_(Sweden)"
+        },
+        {
+          "title": "Riksdag — Wikipedia: 349 seats — Government (Kristersson cabinet) 103 (Moderates 66, Christian Democrats 19, Liberals 16, 2 non-attached Sweden Democrats); supported by 73 (Sweden Democrats 70, Ambition Sweden 2, 1 Christian Democrat); Opposition 173 (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3, Unity 1)",
+          "url": "https://en.wikipedia.org/wiki/Riksdag"
+        }
+      ]
+    },
+    {
+      "id": "SE-MP",
+      "country": "SE",
+      "shortName": "MP",
+      "name": "Miljöpartiet de gröna",
+      "nameEn": "Green Party",
+      "logo": "party-logos/se/mp.svg",
+      "sha256": "9bfaf53036b1dcf1b4287942e21b3b4c5624515273e15a823d4bbd1a2fd363bf",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Swedish_Green_Party_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Miljöpartiet de gröna emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Green politics",
+        "Ecofeminism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1981,
+      "leader": "Amanda Lind",
+      "leaderTitle": "Co-spokesperson",
+      "inPower": false,
+      "seats": 18,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Green Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_(Sweden)"
+        },
+        {
+          "title": "Riksdag — Wikipedia: 349 seats — Government (Kristersson cabinet) 103 (Moderates 66, Christian Democrats 19, Liberals 16, 2 non-attached Sweden Democrats); supported by 73 (Sweden Democrats 70, Ambition Sweden 2, 1 Christian Democrat); Opposition 173 (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3, Unity 1)",
+          "url": "https://en.wikipedia.org/wiki/Riksdag"
+        }
+      ]
+    },
+    {
+      "id": "SE-L",
+      "country": "SE",
+      "shortName": "L",
+      "name": "Liberalerna",
+      "nameEn": "Liberals",
+      "logo": "party-logos/se/l.svg",
+      "sha256": "df4d48377f5733328605ce19bc67c29e709d931182a919bc5222851a0703007c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Liberals_(Sweden)_logo.svg",
+      "ideology": [
+        "Conservative liberalism",
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1934,
+      "coalitionId": "SE-GOV",
+      "leader": "Fredrik Brange",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the Kristersson coalition formed on 18 October 2022.",
+      "seats": 16,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Liberals — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Liberals_(Sweden)"
+        },
+        {
+          "title": "Riksdag — Wikipedia: 349 seats — Government (Kristersson cabinet) 103 (Moderates 66, Christian Democrats 19, Liberals 16, 2 non-attached Sweden Democrats); supported by 73 (Sweden Democrats 70, Ambition Sweden 2, 1 Christian Democrat); Opposition 173 (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3, Unity 1)",
+          "url": "https://en.wikipedia.org/wiki/Riksdag"
+        }
+      ]
+    },
+    {
+      "id": "SE-FV",
+      "country": "SE",
+      "shortName": "FV",
+      "name": "Framtidens Vänster",
+      "nameEn": "Future Left",
+      "logo": "party-logos/se/futureleft.svg",
+      "sha256": "c3e794c618cd6d8c39fc784e05c95ed691adab627675484c5722afd15c7ba93a",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Future_Left_(Sweden)_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Framtidens Vänster emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Socialism",
+        "Feminism",
+        "Anti-militarism"
+      ],
+      "ideologyPosition": "left",
+      "founded": 2025,
+      "leader": "Daniel Riazat",
+      "leaderTitle": "Co-leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Future Left — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Future_Left_(Sweden)"
+        },
+        {
+          "title": "Riksdag — Wikipedia: 349 seats — Government (Kristersson cabinet) 103 (Moderates 66, Christian Democrats 19, Liberals 16, 2 non-attached Sweden Democrats); supported by 73 (Sweden Democrats 70, Ambition Sweden 2, 1 Christian Democrat); Opposition 173 (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3, Unity 1)",
+          "url": "https://en.wikipedia.org/wiki/Riksdag"
+        }
+      ]
+    },
+    {
+      "id": "SE-AMBITION",
+      "country": "SE",
+      "shortName": "Ambition",
+      "name": "Ambition Sverige",
+      "nameEn": "Ambition Sweden",
+      "logo": "party-logos/se/ambition.svg",
+      "sha256": "97c358baac902670079ad72f1423cefb11b2e240972bb7baa46b656eea79b1d2",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Ambition_Sweden.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Ambition Sverige emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Climate change denial",
+        "Anti-immigration",
+        "Hard Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2025,
+      "leader": "Elsa Widding",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "Its two members support the Kristersson government on confidence and supply without holding cabinet office.",
+      "seats": 2,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Ambition Sweden — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Ambition_Sweden"
+        },
+        {
+          "title": "Riksdag — Wikipedia: 349 seats — Government (Kristersson cabinet) 103 (Moderates 66, Christian Democrats 19, Liberals 16, 2 non-attached Sweden Democrats); supported by 73 (Sweden Democrats 70, Ambition Sweden 2, 1 Christian Democrat); Opposition 173 (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3, Unity 1)",
+          "url": "https://en.wikipedia.org/wiki/Riksdag"
+        }
+      ]
+    },
+    {
+      "id": "SE-UNITY",
+      "country": "SE",
+      "shortName": "Unity",
+      "name": "Enhetspartiet",
+      "nameEn": "Unity Party",
+      "logo": "party-logos/se/unity.png",
+      "sha256": "595582f017c1aa6d5f8e2546d2fce12458f84b4d87b946375e19b889d67a069c",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Unity_Party_(Sweden).png",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Enhetspartiet emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Pro-immigration",
+        "Multiculturalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2025,
+      "leader": "Jamal El-Haj",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 349,
+      "chamberName": "Riksdag",
+      "sources": [
+        {
+          "title": "Unity Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Unity_Party_(Sweden)"
+        },
+        {
+          "title": "Riksdag — Wikipedia: 349 seats — Government (Kristersson cabinet) 103 (Moderates 66, Christian Democrats 19, Liberals 16, 2 non-attached Sweden Democrats); supported by 73 (Sweden Democrats 70, Ambition Sweden 2, 1 Christian Democrat); Opposition 173 (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3, Unity 1)",
+          "url": "https://en.wikipedia.org/wiki/Riksdag"
         }
       ]
     }
