@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 23 / 195 — Southeast Asia complete; South America under way.**
+**Countries audited: 24 / 195 — Southeast Asia and South America complete.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -69,6 +69,7 @@ forgotten; it is tracked here.
 | 🇵🇾 Paraguay | `#1333` | 3 → 7 | 77 / 80 | **WRONG — a chamber size that never existed** |
 | 🇺🇾 Uruguay | `#1334` | 1 → 6 | **99 / 99** | **WRONG — a fabricated logo explainer** |
 | 🇬🇾 Guyana | `#1335` | 3 → 3 | 64 / 65 | **IMPOSSIBLE TOTAL — 72 seats in a 65-seat chamber** |
+| 🇸🇷 Suriname | `#1336` | 2 → 6 | 50 / 51 | **WRONG — a defunct 1987 coalition marked as governing** |
 
 ---
 
@@ -771,6 +772,64 @@ entries have left `GRANDFATHERED_PARTIES_WITH_NO_IMAGE`.
 
 ---
 
+### 🇸🇷 Suriname — audited 2026-09-12
+
+Suriname had **two entries, both wrong about who governs**. `SR-NF` — "Nieuw Front voor Democratie",
+marked as **in power** with 20 seats — is a coalition that contested the elections of 1987 to 2005
+and has not existed as a parliamentary force for two decades. Meanwhile the VHP, which really did
+govern from 2020 to 2025, was marked **out** of power with the wrong seat count.
+
+The 8th National Assembly was elected on 25 May 2025: **NDP 18**, **VHP 17**, **ABOP 6**, **NPS 6**,
+**PL 2**, **BEP 1**, **A20 1**. Jennifer Geerlings-Simons (NDP) was inaugurated president on
+16 July 2025, so the VHP moved to opposition.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-119 | **S1** | existence | **`SR-NF` "Nieuw Front voor Democratie", 20 seats, in power** | **removed** | A 1987 electoral coalition, not a party, and not a force in the Assembly since 2005 |
+| PP-120 | **S1** | `inPower` | NF in power; VHP out | **NDP, ABOP, NPS, PL and BEP in power; VHP in opposition** | The Assembly's own Government/Opposition grouping |
+| PP-121 | **S1** | coverage | 2 parties, 34 of 51 | **6 parties, 50 of 51** | Five of the seven seated parties were absent, including the governing **NDP** |
+| PP-122 | **S2** | `seats` | VHP 14 | **17** | The VHP is the whole of the opposition |
+| PP-123 | **S2** | `founded` | VHP **1961** | **1949** | The VHP dates from January 1949 |
+| PP-124 | **S2** | `noImageReason` | both entries claimed no freely-licensed logo exists | **all six now carry one** | Two are on Commons in the public domain; three are non-free (declared) |
+| PP-125 | **S3** | `leader` | neither entry had one | **four of the six do** | party infoboxes. The VHP's own infobox gives its chairman as "TBD", so it correctly has none |
+
+**Three non-free logos, declared.** The VHP's, NPS's and BEP's emblems exist only as fair-use files on
+English Wikipedia; each carries a `licenceNote` stating the copyright position.
+
+**Documented gap — 1 of the 51 seats.** **Alternatief 2020** has no logo file on Commons or either
+Wikipedia; its article's infobox `logo` field is empty. Recorded, not hidden.
+
+All six logos were byte-checked against their extension and montage-verified. Suriname's two entries
+have left `GRANDFATHERED_PARTIES_WITH_NO_IMAGE` — **which empties that list of every South American
+entry.**
+
+---
+
+## Phase 3 complete — South America, all 11 countries
+
+Every South American country has now been audited, fixed, merged and confirmed live. What the
+continent looked like before this sweep:
+
+* **Two countries carried arithmetically impossible seat totals** (Guyana 72 of 65; and Colombia's
+  English-Wikipedia source was inconsistent three ways over).
+* **Five countries contained entries for parties that do not exist** — Ecuador's "Unión Demócrata
+  Cristiana" with 17 seats, Bolivia's "Arcistas por Bolivia" and "Unidad Movil", Paraguay's
+  "Hagamos", Suriname's "Nieuw Front", Guyana's "APNU" as a party.
+* **Three countries showed the wrong government or none at all** — Bolivia had no governing party
+  while the PDC held the presidency; Suriname marked a defunct 1987 coalition as in power; Venezuela
+  credited one party with every seat in the legislature.
+* **Two countries had a chamber size that matches no real chamber** — Paraguay's 128, Uruguay's 130.
+* **One carried a fabricated logo explainer** — Uruguay's, which described colours the image does
+  not have.
+* **Seven wrong logos were found and replaced across the continent**, every one a name or acronym
+  collision, including the French UDI's logo on Chile's UDI and the Republican Party's on the
+  Radicals.
+
+Coverage went from 61 parties to 128; six of the eleven countries now reconcile exactly against
+their chamber.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -806,7 +865,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `PY` Paraguay — merged
 - [x] `UY` Uruguay — merged
 - [x] `GY` Guyana — merged
-- [ ] `SR` Suriname
+- [x] `SR` Suriname — merged
 
 ### Phase 4 — United Kingdom, United States, Canada (3)
 
