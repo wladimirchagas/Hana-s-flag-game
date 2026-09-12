@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 32 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 32 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -1114,6 +1114,73 @@ spread across the government and opposition groups.
 
 **Three non-free logos, declared** (New Hope and Odnowa under fair use, the Centre Union as a local
 public-domain file); the other eight are on Commons. All eleven were montage-verified.
+
+---
+
+### 🌍 Rule change and cross-country logo backfill — 2026-09-12
+
+**The owner directed that the mandatory-logo rule be relaxed from a MUST to a SHOULD**, that the
+parties it had kept out be added back, and that the logo search be widened beyond Wikimedia to the
+regional *Elects* network (EuropeElects, AsiaElects, AfricaElects, OceaniaElects, LatamElects) and
+the parties' own sites. All three are done, and `CLAUDE.md` now carries the rewritten rule.
+
+**Why the old rule was wrong.** `GRANDFATHERED_PARTIES_WITH_NO_IMAGE` failed the build on any party
+added after 2026-09-08 without a bundled logo. It did not produce better images; it produced
+**missing parties** — and an omission the reader cannot see makes an incomplete chamber look
+complete, which is the Torres Strait Islander Flag lesson in a new place. The gate now enforces the
+RESEARCH: `noImageReason` is allowed on any party, but must be ≥60 characters and must name at least
+two of eight searched source families. `founded` became optional for the same reason.
+
+| ID | Sev | What | Outcome |
+|---|---|---|---|
+| PP-162 | **S1** | The mandatory-logo gate | Replaced by a research gate. `GRANDFATHERED_PARTIES_WITH_NO_IMAGE` deleted; `NO_IMAGE_SOURCE_FAMILIES` + a 60-character floor replace it |
+| PP-163 | **S1** | `founded` was mandatory | Now optional; `PoliticalPartyFacts` omits the row rather than rendering `undefined` |
+| PP-164 | **S1** | **13 real, seated parties were missing** purely for want of a logo or a founding year | **All 13 added** — see the table below |
+| PP-165 | **S1** | **`DK-F` "Free Democrats" (Denmark), 50 seats** | **Removed — the party does not exist.** Its cited article `Free Democrats (Denmark)` is *missing* on Wikipedia. Deleting it also fixes Denmark's impossible **197-of-179** total, which drops to 147/179 |
+| PP-166 | **S2** | 58 parties carried `noImageReason` | **39 now have a real, montage-verified logo**; the remaining 19 carry a reason naming what was swept |
+
+**The 13 parties restored** (every one holds seats):
+
+| Country | Party | Seats | Logo? |
+|---|---|---|---|
+| 🇨🇴 Colombia | Partido Demócrata Colombiano | 3 | ✅ (no founding year — none is sourceable) |
+| 🇨🇴 Colombia | Colombia Renaciente | 2 | ✅ |
+| 🇨🇴 Colombia | La Fuerza de las Regiones | 1 | ✅ |
+| 🇨🇴 Colombia | Unidad en Minga por Colombia | 1 | ✅ |
+| 🇻🇪 Venezuela | Vamos, Vamos Cojedes | 5 | — social-media only |
+| 🇨🇱 Chile | Federación Regionalista Verde Social | 2 | — empty infobox image field |
+| 🇧🇴 Bolivia | Consejo Indígena Yuqui Bia Recuate | 1 | ✅ (no founding year) |
+| 🇬🇾 Guyana | Forward Guyana Movement | 1 | — no article anywhere |
+| 🇸🇷 Suriname | Alternatief 2020 | 1 | — empty infobox logo field |
+| 🇵🇭 Philippines | Centrist Democratic Party | 1 | — infobox logo field is the broken literal `200px` |
+| 🇵🇭 Philippines | Partido Navoteño | 1 | — no logo field |
+| 🇹🇭 Thailand | New Dimension Party | 1 | — no article anywhere |
+| 🇹🇭 Thailand | Thai Sup Thawee Party | 1 | — no article anywhere |
+
+**Four countries now reconcile EXACTLY** as a result: Bolivia **130/130**, Guyana **65/65**,
+Suriname **51/51**, Argentina **257/257**.
+
+**The country constraint is the whole game.** The first backfill pass matched parties by NAME against
+Wikidata and produced precisely the collisions this repository exists to prevent — **Spain's Vox on
+an Argentine bloc; Romania's Social Democrats on both Korea's and Nigeria's; Sweden's Vänsterpartiet
+on Norway's SV; Finland's Keskusta on Norway's Sp; the German Greens on Norway's MDG; the
+Netherlands' SP on Portugal's PS; a photograph of a politician, the Buenos Aires Underground logo and
+the flag of Argentina** on three more. Re-running it as a SPARQL query constrained by `P17` (country)
+and accepting only exact name/alias matches removed every one. That constraint is now written into
+`CLAUDE.md` rule 2.
+
+**And the montage caught three that survived every mechanical check**: Open Vld resolved to a bare
+blue circle, **Vlaams Belang got the logo of Vlaams Blok** — the banned predecessor it replaced in
+2004 — and "Party of Life" got Reiwa Shinsengumi's. All three were corrected by hand.
+
+**Logos added, by country**: Belgium 9, Norway 9, Denmark 7, Switzerland 3, Argentina 3, Greece 2,
+Portugal 2, Thailand 3, Japan 1, Kenya 1, South Korea 1, plus the four Colombian and one Bolivian
+re-adds. 44 in total, every one montage-verified.
+
+**Two findings logged for the countries they belong to** (not fixed here — they need their own
+audit): **Belgium's SP.a renamed itself Vooruit** and **Open Vld renamed itself Anders**, so both
+cards now show a logo whose wordmark does not match the `shortName` beside it. **Norway's seats sum
+to 191 of 169** — another impossible total, waiting for the Norway audit.
 
 ---
 

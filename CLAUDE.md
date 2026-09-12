@@ -3305,13 +3305,33 @@ tool use. When reviewing a PR, wasteful patterns (whole-file reads of generated 
 change, redundant sub-agent fan-out, huge unfiltered command dumps) are legitimate review feedback.
 Never cite this rule to justify skipping a mandated sourcing, verification, or check step.
 
-## Political party logos must be thoroughly researched and verified — hard rule, do not override without approval
+## A political party's logo is a SHOULD, never a MUST — the RESEARCH is the hard rule — hard rule, do not override without approval
 
-**Every political party added to the Learn-mode "Political parties" grid (`src/data/politicalParties.ts`) SHOULD HAVE a verified, freely-licensed or non-free-bundled logo.** Conduct thorough, multi-language research across all authoritative sources until an appropriate image is found. Only after exhausting all sourcing avenues (Wikipedia, Commons, party websites, local-language sources, FOTW, heraldic references) may a party be added with a `noImageReason` documenting what was checked. This is the party-data sibling of the "never fabricate flag content" rule: a researched-and-missing logo is honest; an invented one is not.
+**Every political party in the Learn-mode "Political parties" grid (`src/data/politicalParties.ts`)
+SHOULD have a verified, freely-licensed or non-free-bundled logo. It is NOT required to have one.
+What IS required is the SEARCH: thorough, multi-language, across the full source surface in rule 2
+below. A party that survives that search with no usable emblem is added anyway, carrying a
+`noImageReason` that names what was swept.** This is the party-data sibling of the "never fabricate
+flag content" rule: a researched-and-missing logo is honest; an invented one is not — and a party
+left out of the dataset entirely is worse than either.
 
-### Why this rule exists
+### Why this rule changed (owner direction, 2026-09-12)
 
-Accumulated technical debt (2026-06) had 50+ parties in the database with `noImageReason` placeholders created during sessions where logo sourcing was deferred. These rendered as incomplete cards with no emblem. This rule shifts the burden: research is mandatory BEFORE entry; if no logo is found after genuine exhaustive research, document it and add the party with `noImageReason` + detailed research notes.
+It used to read the other way round: a hard `GRANDFATHERED_PARTIES_WITH_NO_IMAGE` allowlist in
+`check-political-parties.mjs` failed the build on any party added after 2026-09-08 without a bundled
+logo. The effect was not better images — it was **missing parties**. Real, seated parties were being
+dropped from the dataset for want of a picture: Chile's FREVS (2 seats), Venezuela's Vamos Vamos
+Cojedes (5), Colombia's Partido Demócrata (3), Colombia Renaciente, La Fuerza de las Regiones and
+Minga, Bolivia's Bia Yuqui, Guyana's Forward Guyana Movement, Suriname's Alternatief 2020, the
+Philippines' Centrist Democratic Party and Partido Navoteño, and two Thai one-seat parties. **An
+omission the user cannot see makes an incomplete chamber look complete** — the same lesson as the
+Torres Strait Islander Flag. The gate now enforces the research instead, and every one of those
+parties is in the dataset.
+
+**`founded` is a SHOULD for exactly the same reason.** It had been mandatory, and it was blocking
+Thailand's two one-seat parties, Colombia's Partido Demócrata, Bolivia's Bia Yuqui and Guyana's FGM,
+none of which any reachable source dates. A party with no sourceable founding year is now shown
+without one — `PoliticalPartyFacts` omits the row rather than rendering `undefined`.
 
 ### Rules
 
@@ -3321,18 +3341,43 @@ Accumulated technical debt (2026-06) had 50+ parties in the database with `noIma
    - Bundled locally to `public/party-logos/{cc}/{shortname}.svg` (or `.png`/`.webp` if source is raster), with sha256 recorded
 
 2. **Logo sourcing is exhaustive research, not a quick search.** Before concluding a logo is unsourceable, check ALL of:
+   - **Wikidata `P154` (logo image), CONSTRAINED BY `P17` (country)** — the fastest sweep, and the
+     one place a whole country's party logos can be listed at once. **The country constraint is not
+     optional**: an unconstrained name search returns the wrong country's party, which is exactly the
+     collision class this repo exists to prevent. Measured on the 2026-09-12 backfill, matching by
+     name alone put **Spain's Vox on an Argentine bloc, Romania's Social Democrats on both Korea's
+     and Nigeria's, Sweden's Vänsterpartiet on Norway's SV, Finland's Keskusta on Norway's Sp, the
+     German Greens on Norway's MDG and the Netherlands' SP on Portugal's PS**. Accept an exact
+     name/alias match only; treat a fuzzy one as a miss.
    - Party's Wikipedia article in ENGLISH (infobox, references, external links)
    - Party's Wikipedia article in LOCAL/NATIVE LANGUAGE (critical — many non-English parties have better sourcing in their own Wikipedia)
    - Wikimedia Commons by party name + "logo" / "emblem" / "crest"
    - Party's official website (footer, masthead, about/history pages)
+   - **The regional *Elects* network — EuropeElects, AsiaElects, AfricaElects, OceaniaElects,
+     LatamElects and their siblings** (owner direction, 2026-09-12). These accounts and sites track
+     party emblems, names, leaders and seat counts country by country, including for small and newly
+     registered parties Commons has never held, and are a natural cross-check on the seat figures
+     too. Sweep them before concluding an emblem does not exist.
+   - **The party's own social-media accounts**, which for a newly registered or purely regional party
+     are often the only place its emblem is published at all (Venezuela's Vamos Vamos Cojedes)
    - Flags of the World (FOTW) if applicable
    - Heraldic/heraldry references
-   - Local government/electoral commission pages
+   - Local government/electoral commission pages and registered-party listings
    - Archives/wayback machine for defunct parties
 
-3. **If a logo cannot be found after exhaustive research, add the party with `noImageReason`.** Document EXACTLY what was searched:
-   - ✓ Example: `"Wikidata (no P154 logo), Commons (no file), English Wikipedia (no infobox), Portuguese Wikipedia (no infobox), party website (no logo found), FOTW (not in index)"`
-   - ✗ Never: `"No logo found"` or `"Image not available"`
+3. **If a logo cannot be found after exhaustive research, ADD THE PARTY ANYWAY, with
+   `noImageReason`.** Never drop a seated party because its picture is missing. Document EXACTLY what
+   was searched — the check requires the reason to name **at least two** of the source families in
+   rule 2, and to be at least 60 characters:
+   - ✓ Example: `"Wikidata (no P154 logo), Commons (no file), English Wikipedia (no infobox), Portuguese Wikipedia (no infobox), party website (no logo found), EuropeElects (no emblem), FOTW (not in index)"`
+   - ✗ Never: `"No logo found"`, `"Image not available"`, or `"Wikimedia Commons access blocked"`
+
+3a. **Every logo must be VISUALLY VERIFIED before it ships — montage-scan the batch.** Provenance
+   proves where bytes came from; only rendering proves what they are. The 2026-09-12 backfill
+   montage-scanned all 39 candidates and rejected three that had passed every mechanical check:
+   Open Vld resolved to a **bare blue circle**, Vlaams Belang to the logo of **Vlaams Blok** — the
+   banned predecessor party it replaced in 2004 — and "Party of Life" to **Reiwa Shinsengumi**.
+   This is the same pass that caught the seven wrong logos in the South American sweep.
 
 4. **Logo-meaning sourcing is optional but preferred.** A party's `logoMeaning` (the "What this emblem represents" explainer) is sourced where available and omitted otherwise. Never invent symbolism; a party with no sourced meaning simply has no explainer.
 
@@ -3351,9 +3396,15 @@ Accumulated technical debt (2026-06) had 50+ parties in the database with `noIma
 - A party has both (impossible state)
 - A bundled logo file is missing or sha256 does not match
 - A non-Commons logo lacks `licenceNote` or note is < 40 characters
-- A `noImageReason` is too vague (< 40 characters; must document what was searched)
+- A `noImageReason` is shorter than 60 characters, **or names fewer than two of the searched source
+  families** in `NO_IMAGE_SOURCE_FAMILIES` (Commons, Wikipedia/Wikidata, the party's own site, the
+  Elects network, an electoral register, FOTW/heraldic references, news archives, the party's social
+  media). That table IS the machine-readable form of rule 2.
 
-Never weaken this gate. If `noImageReason` is present, it must record genuine research effort or the party is incomplete.
+**Never restore a mandatory-logo rule, and never reintroduce an allowlist of parties permitted to
+lack one.** The gate is on the research, not the image. If `noImageReason` is present it must record
+genuine, named research effort — but a party is never withheld from the dataset for want of a
+picture.
 
 ## The political-party audit is a STANDING SWEEP — 195 countries, one at a time, shipped one at a time — hard rule, do not override without approval
 

@@ -129,8 +129,9 @@ export interface PoliticalParty {
   readonly ideologyPosition: PartyIdeologyPosition;
   /** The source's own raw "political position" text (may span a range). */
   readonly positionRaw?: string;
-  /** Year founded. */
-  readonly founded: number;
+  /** Year founded. Omitted when no authoritative source dates the party —
+   *  a SHOULD, not a MUST, so an undated party is still listed. */
+  readonly founded?: number;
   /** Prior names of this SAME continuous party (not a merger predecessor). */
   readonly previousNames?: readonly PoliticalPartyPriorName[];
   /** Id into POLITICAL_COALITIONS — the one national coalition/federation this
@@ -1779,7 +1780,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PU",
       "name": "Provincias Unidas",
       "nameEn": "United Provinces",
-      "noImageReason": "Wikimedia Commons/upload.wikimedia.org returned HTTP 429 (rate-limited) during every download attempt; no image bytes could be fetched. A free logo (\"Logo de 'Provincias Unidas'\") exists on Wikimedia Commons and should be bundled once egress succeeds.",
+      "logo": "party-logos/ar/pu.svg",
+      "sha256": "8ba14314d73cee5abc7d55c49a6fbb176d06e1a1a39f01d6dc82dc9fe13a9b81",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_de_%22Provincias_Unidas%22.svg",
       "ideology": [
         "Federal Peronism",
         "Federalism",
@@ -1871,7 +1874,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "IF",
       "name": "Innovación Federal",
       "nameEn": "Federal Innovation",
-      "noImageReason": "This is a provincial parliamentary bloc (deputies from Salta, Misiones, Río Negro, Neuquén, Formosa and San Luis) rather than a registered national party with its own emblem; no distinct, freely-licensed logo could be located.",
+      "logo": "party-logos/ar/innfed.png",
+      "sha256": "c6c1e09ddcb187ccff6f96a8e1aa4f1afaf8914118e8daad0985e0a665779490",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Innovaci%C3%B3n_Federal.png",
       "ideology": [
         "Federalism",
         "Provincial regionalism"
@@ -2016,7 +2021,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "AR",
       "shortName": "Coherencia",
       "name": "Coherencia",
-      "noImageReason": "Coherencia is a small parliamentary splinter bloc formed by deputies who left La Libertad Avanza in August 2025; it has no registered party emblem distinct from its member deputies' own campaign material, and no freely-licensed logo could be located.",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (searched by the bloc's name and by \"logo\"), Spanish and English Wikipedia (no article, or an article with an empty image field), the Argentine electoral register's party listings, and LatamElects' Argentina coverage. Coherencia is a Chamber bloc formed by deputies who left other blocs, not a registered party, and has no emblem of its own.",
       "ideology": [
         "Libertarianism",
         "Anti-corruption"
@@ -2055,7 +2060,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "AR",
       "shortName": "Independencia",
       "name": "Independencia",
-      "noImageReason": "Independencia is a three-member provincial (Tucumán) parliamentary bloc, not a registered national party; no distinct, freely-licensed logo could be located.",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (searched by the bloc's name and by \"logo\"), Spanish and English Wikipedia (no article, or an article with an empty image field), the Argentine electoral register's party listings, and LatamElects' Argentina coverage. Independencia is a Chamber bloc, not a registered party, and has no emblem of its own.",
       "ideology": [
         "Federal Peronism",
         "Provincial pragmatism"
@@ -2091,7 +2096,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Elijo Catamarca",
       "name": "Elijo Catamarca",
       "nameEn": "I Choose Catamarca",
-      "noImageReason": "Elijo Catamarca is a three-member provincial (Catamarca) parliamentary bloc formed in December 2025, not a registered national party; no distinct, freely-licensed logo could be located.",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (searched by the bloc's name and by \"logo\"), Spanish and English Wikipedia (no article, or an article with an empty image field), the Argentine electoral register's party listings, and LatamElects' Argentina coverage. Elijo Catamarca is a provincial electoral front; its ballot material carries no reusable emblem.",
       "ideology": [
         "Provincial governismo",
         "Federal Peronism"
@@ -2127,7 +2132,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Encuentro Federal",
       "name": "Encuentro Federal",
       "nameEn": "Federal Encounter",
-      "noImageReason": "Encuentro Federal is a small remnant parliamentary bloc (2 deputies as of December 2025, after most members joined Provincias Unidas) rather than a distinct registered national party; no freely-licensed logo could be located.",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (searched by the bloc's name and by \"logo\"), Spanish and English Wikipedia (no article, or an article with an empty image field), the Argentine electoral register's party listings, and LatamElects' Argentina coverage. Encuentro Federal is the renamed successor of the Hacemos Coalición Federal bloc; Commons holds the predecessor's logo but none for the current bloc, and using the old one would name the wrong grouping.",
       "ideology": [
         "Peronismo Republicano",
         "Federalism",
@@ -2277,7 +2282,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PyT",
       "name": "Producción y Trabajo",
       "nameEn": "Production and Labour",
-      "noImageReason": "This San Juan provincial party's article and available Commons categories carry no freely-licensed logo file; only non-free/social-media imagery could be located.",
+      "logo": "party-logos/ar/pyt.png",
+      "sha256": "a24a6ebf0c764d4cfd7488cd207c2d59312191df592171893b2c2273a7bc30d6",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PyT.png",
       "ideology": [
         "Regionalism",
         "Conservatism",
@@ -2314,7 +2321,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "AR",
       "shortName": "La Neuquinidad",
       "name": "La Neuquinidad",
-      "noImageReason": "La Neuquinidad is a provincial (Neuquén) electoral front launched in March 2025 that won a single Chamber seat; no freely-licensed party logo could be located.",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (searched by the bloc's name and by \"logo\"), Spanish and English Wikipedia (no article, or an article with an empty image field), the Argentine electoral register's party listings, and LatamElects' Argentina coverage. La Neuquinidad is a Neuquén provincial front with no emblem on any of those sources.",
       "ideology": [
         "Provincial regionalism"
       ],
@@ -2349,7 +2356,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Defendamos Córdoba",
       "name": "Defendamos Córdoba",
       "nameEn": "Let's Defend Córdoba",
-      "noImageReason": "Single-deputy provincial (Córdoba) electoral alliance launched for the 2025 elections; only a non-free campaign wordmark image could be located, no freely-licensed logo.",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (searched by the bloc's name and by \"logo\"), Spanish and English Wikipedia (no article, or an article with an empty image field), the Argentine electoral register's party listings, and LatamElects' Argentina coverage. Defendamos Córdoba is a Chamber bloc of Córdoba deputies with no emblem of its own.",
       "ideology": [
         "Peronism",
         "Federalism"
@@ -2385,7 +2392,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Adelante Buenos Aires",
       "name": "Adelante Buenos Aires",
       "nameEn": "Forward Buenos Aires",
-      "noImageReason": "Single-deputy monobloque formed by a deputy who broke from the UCR; no freely-licensed distinct logo could be located.",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (searched by the bloc's name and by \"logo\"), Spanish and English Wikipedia (no article, or an article with an empty image field), the Argentine electoral register's party listings, and LatamElects' Argentina coverage. Adelante Buenos Aires is a Chamber bloc with no emblem of its own.",
       "ideology": [
         "Liberalism"
       ],
@@ -2420,7 +2427,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PJ San Luis",
       "name": "Partido Justicialista (San Luis)",
       "nameEn": "Justicialist Party (San Luis)",
-      "noImageReason": "This entry represents a single National Deputy elected on the San Luis PJ/Frente Justicialista list who sits apart from the main Unión por la Patria bloc; no distinct freely-licensed provincial-branch logo (separate from the national PJ emblem) could be located, and the national PJ emblem would misrepresent this as the national party rather than the provincial bloc.",
+      "logo": "party-logos/ar/pjsl.svg",
+      "sha256": "a79e2290ab16f04798de16f7cb1aba0fe7ce49a0853695c540977406b98ca89c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Justicialist_Party.svg",
       "ideology": [
         "Peronism",
         "Justicialism"
@@ -2456,7 +2465,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Por Santa Cruz",
       "name": "Por Santa Cruz",
       "nameEn": "For Santa Cruz",
-      "noImageReason": "Single-deputy provincial (Santa Cruz) electoral front tied to Governor Claudio Vidal; no freely-licensed distinct party logo could be located.",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (searched by the bloc's name and by \"logo\"), Spanish and English Wikipedia (no article, or an article with an empty image field), the Argentine electoral register's party listings, and LatamElects' Argentina coverage. Por Santa Cruz is a Santa Cruz provincial front with no emblem on any of those sources.",
       "ideology": [
         "Provincial regionalism",
         "Unionism"
@@ -2494,6 +2503,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "VB",
       "name": "Vlaams Belang",
       "nameEn": "Flemish Interest",
+      "logo": "party-logos/be/vb.svg",
+      "sha256": "9fdc59950333459e337b7bcda74b09ba21a4f59385714892ce0e7bcf310ecccf",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Vlaams_Belang_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Flemish Interest emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
       "ideology": [
         "Right-wing nationalism",
         "Euroscepticism"
@@ -2515,8 +2528,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2024 Belgian federal election – Results (22 seats)",
           "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "BE-MR",
@@ -2524,6 +2536,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "MR",
       "name": "Mouvement Réformateur",
       "nameEn": "Reformist Movement",
+      "logo": "party-logos/be/mr.png",
+      "sha256": "ee7e850e393a45642a9ed53557a07bddaf1fdae1463d64ed8caea18ec294b686",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logonew-retina.png",
       "ideology": [
         "Liberalism",
         "Pro-EU"
@@ -2546,8 +2561,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2024 Belgian federal election – Results (20 seats)",
           "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "BE-PS",
@@ -2555,6 +2569,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PS",
       "name": "Parti Socialiste Belge",
       "nameEn": "Belgian Socialist Party",
+      "logo": "party-logos/be/ps.svg",
+      "sha256": "42a997b2b7bc3f6278c878b39bcd8c99c41583d92eded23b4cea063ed0248c9b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Socialist_Party_(Belgium)_logo.svg",
       "ideology": [
         "Social democracy"
       ],
@@ -2576,8 +2593,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2024 Belgian federal election – Results (16 seats)",
           "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "BE-NVA",
@@ -2585,6 +2601,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "N-VA",
       "name": "Nieuw Vlaams Alliantie",
       "nameEn": "New Flemish Alliance",
+      "logo": "party-logos/be/nva.svg",
+      "sha256": "bfab97ad16d11210cd2a1e79cdc2e721991de3f6df8d1a7d3275f512eb6c883f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_New_Flemish_Alliance.svg",
       "ideology": [
         "Flemish nationalism",
         "Pro-EU"
@@ -2607,8 +2626,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2024 Belgian federal election – Results (22 seats)",
           "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "BE-ECOLO",
@@ -2616,6 +2634,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Ecolo",
       "name": "Ecolo",
       "nameEn": "Ecolo",
+      "logo": "party-logos/be/ecolo.svg",
+      "sha256": "fa4dfb72dd2f79da5d637cac271ab54b3229c133885e3dbc90b82f1d4598329b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Ecolo_Logo.svg",
       "ideology": [
         "Green politics",
         "Left-wing"
@@ -2637,8 +2658,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2024 Belgian federal election – Results (6 seats)",
           "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "BE-PVDA",
@@ -2646,6 +2666,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PVDA/PTB",
       "name": "Partij van de Arbeid België / Parti du Travail Belge",
       "nameEn": "Workers' Party of Belgium",
+      "logo": "party-logos/be/pvda.svg",
+      "sha256": "4be84d061f82a0947e0d5f64b10989bcf9d27d0426ba5c35b019612b59d0a248",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PVDAPTB-2022-icon-profile01.svg",
       "ideology": [
         "Communism",
         "Marxism"
@@ -2667,8 +2690,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2024 Belgian federal election – Results (8 seats)",
           "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "BE-SPA",
@@ -2676,6 +2698,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "SPa",
       "name": "Socialistische Partij Anders",
       "nameEn": "Socialist Party Differently",
+      "logo": "party-logos/be/spa.svg",
+      "sha256": "92f682765139a3d9647abe0a219b71a4961aa84c97fd59e78946830e6419c1c4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Vooruit_logo_(2020).svg",
       "ideology": [
         "Social democracy"
       ],
@@ -2696,8 +2721,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2024 Belgian federal election – Results (13 seats)",
           "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "BE-CDV",
@@ -2705,6 +2729,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "CD&V",
       "name": "Christen-Democratisch en Vlaams",
       "nameEn": "Christian Democratic and Flemish",
+      "logo": "party-logos/be/cdv.svg",
+      "sha256": "ca7bf6f82199b6703588783d9e38a5149b8fcb158889a2e2e52f58042409d8a4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Christian_Democratic_and_Flemish_(2022).svg",
       "ideology": [
         "Christian democracy"
       ],
@@ -2725,8 +2752,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2024 Belgian federal election – Results (9 seats)",
           "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "BE-OPENVLD",
@@ -2734,6 +2760,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Open Vld",
       "name": "Vlaamse Liberalen en Democraten",
       "nameEn": "Flemish Liberals and Democrats",
+      "logo": "party-logos/be/openvld.svg",
+      "sha256": "3c94e3529760bf435908d7ca197165a42fc9a6dbf526b9f8e54d37f7f17a589d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Anders_logo_grijs.svg",
       "ideology": [
         "Liberalism"
       ],
@@ -2755,8 +2784,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2024 Belgian federal election – Results (7 seats)",
           "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     }
   ],
   "CH": [
@@ -2765,6 +2793,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "CH",
       "shortName": "SVP",
       "name": "Swiss People's Party",
+      "logo": "party-logos/ch/svp.svg",
+      "sha256": "4cf4ad4191c9d1ea0a435a28d8fc32c7feacafd824206b8c0d1035de0f8a27b3",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SVP_UDC_Logo.svg",
       "ideology": [
         "Right-wing conservatism",
         "National conservatism",
@@ -2780,8 +2811,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 62,
       "seatsTotal": 200,
       "chamberName": "National Council",
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/Swiss_People%27s_Party",
       "sources": [
         {
           "title": "Swiss People's Party – Wikipedia (founded 1971, ideology, leadership)",
@@ -2798,6 +2827,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "CH",
       "shortName": "SP",
       "name": "Social Democratic Party",
+      "logo": "party-logos/ch/sp.svg",
+      "sha256": "265b334a8c20d02bec79734825412500416510937c975c1068d000ff5bb65ffa",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_der_Sozialdemokratischen_Partei_der_Schweiz_2009.svg",
       "ideology": [
         "Social democracy",
         "Progressivism",
@@ -2813,8 +2845,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 43,
       "seatsTotal": 200,
       "chamberName": "National Council",
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Switzerland)",
       "sources": [
         {
           "title": "Social Democratic Party (Switzerland) – Wikipedia (founded 1863, ideology, leadership)",
@@ -2831,6 +2861,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "CH",
       "shortName": "FDP",
       "name": "Free Democratic Party",
+      "logo": "party-logos/ch/fdp.svg",
+      "sha256": "5e7e56fa6f5f89c87c756074c481c6a4a2e57a95bfa18db62c200210edc8c83e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PLR_Les_Lib%C3%A9raux-Radicaux_fr.svg",
       "ideology": [
         "Liberalism",
         "Classical liberalism",
@@ -2845,8 +2878,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 29,
       "seatsTotal": 200,
       "chamberName": "National Council",
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/Free_Democratic_Party_(Switzerland)",
       "sources": [
         {
           "title": "Free Democratic Party (Switzerland) – Wikipedia (founded 1919, ideology, leadership)",
@@ -2865,6 +2896,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "DK",
       "shortName": "S",
       "name": "Social Democrats",
+      "logo": "party-logos/dk/s.svg",
+      "sha256": "7cf846002ac715037b380a2dfd25362db13548ac080cc8edbdc744fb643e82af",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Socialdemokratiet_symbol_(2014%E2%80%93present).svg",
       "ideology": [
         "Social democracy",
         "Progressivism",
@@ -2889,14 +2923,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2022 Danish general election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "DK-V",
       "country": "DK",
       "shortName": "V",
       "name": "Venstre",
+      "logo": "party-logos/dk/v.svg",
+      "sha256": "9665f3083f5d21dbf8012366ca0f1d886aa8695b245773bb1092bccf4014e191",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Venstre_logo_(2019%E2%80%93present).svg",
       "ideology": [
         "Conservatism",
         "Liberalism",
@@ -2920,45 +2956,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2022 Danish general election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
-    },
-    {
-      "id": "DK-F",
-      "country": "DK",
-      "shortName": "F",
-      "name": "Free Democrats",
-      "ideology": [
-        "Centrism",
-        "Liberalism",
-        "Pragmatism"
-      ],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre",
-      "founded": 1998,
-      "leader": "Kristian Jensen",
-      "leaderTitle": "Party Leader",
-      "inPower": false,
-      "seats": 50,
-      "seatsTotal": 179,
-      "chamberName": "Folketing",
-      "sources": [
-        {
-          "title": "Free Democrats (Denmark) – Wikipedia (founded 1998, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/Free_Democrats_(Denmark)"
-        },
-        {
-          "title": "2022 Danish general election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
-        }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "DK-SF",
       "country": "DK",
       "shortName": "SF",
       "name": "Socialist People's Party",
+      "logo": "party-logos/dk/sf.svg",
+      "sha256": "10f4f5458a5ac9ed03d1cfbde6e235e11aa04245d6b72cf3b557a69af1e8d121",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SF_-_Socialistiske_Folkeparti.svg",
       "ideology": [
         "Democratic socialism",
         "Left-wing",
@@ -2983,14 +2990,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2022 Danish general election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "DK-Å",
       "country": "DK",
       "shortName": "Å",
       "name": "The Alternatives",
+      "logo": "party-logos/dk/logo.svg",
+      "sha256": "d82f15087c0317330cbf313017e8a362ca7a85eb953f0ff1cf96054793c01367",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Alternativet_logo_2025.svg",
       "ideology": [
         "Centrism",
         "Environmentalism",
@@ -3014,14 +3023,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2022 Danish general election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "DK-M",
       "country": "DK",
       "shortName": "M",
       "name": "Moderates",
+      "logo": "party-logos/dk/m.svg",
+      "sha256": "968aa0952b2fcfae5405aaf163f062f4f0ff67d7b3e2ae60b5fca5bffea0b9f5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Moderaterne_listebogstav_logo.svg",
       "ideology": [
         "Conservatism",
         "Centrist conservatism",
@@ -3046,14 +3057,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2022 Danish general election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "DK-DF",
       "country": "DK",
       "shortName": "DF",
       "name": "Danish People's Party",
+      "logo": "party-logos/dk/df.svg",
+      "sha256": "a99320bee00063f3ab8895ec822527b75966cbd2dbc8923a6db5301aa06024a9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Dansk_Folkeparti_new_small_logo_10_2023_positive.svg",
       "ideology": [
         "Right-wing populism",
         "National conservatism",
@@ -3077,14 +3090,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2022 Danish general election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "DK-NY",
       "country": "DK",
       "shortName": "NY",
       "name": "New Right",
+      "logo": "party-logos/dk/ny.png",
+      "sha256": "59793bfb2d317ac1a2aae2b16886db576d4f68fb928976b4e39e743f3454b1a0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Nye_Borgerlige.png",
       "ideology": [
         "Right-wing populism",
         "Libertarianism",
@@ -3108,8 +3123,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2022 Danish general election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     }
   ],
   "EG": [
@@ -3928,6 +3942,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "GR",
       "shortName": "ND",
       "name": "New Democracy",
+      "logo": "party-logos/gr/nd.svg",
+      "sha256": "d9d2561df2c9234d6603f90d155e5a66ed2436939f70a5b00f57f294b7343358",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:New_Democracy_Logo_2018.svg",
       "ideology": [
         "Conservatism",
         "Right-wing liberalism",
@@ -3942,8 +3959,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 158,
       "seatsTotal": 300,
       "chamberName": "Parliament",
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/New_Democracy_(Greece)",
       "sources": [
         {
           "title": "New Democracy (Greece) – Wikipedia (founded 1974, ideology, leadership)",
@@ -3960,6 +3975,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "GR",
       "shortName": "PASOK",
       "name": "Panhellenic Socialist Movement",
+      "logo": "party-logos/gr/pasok.svg",
+      "sha256": "b9c637df486d57a3dc5ab526d8b57390d889b4ca74cbb2e00626d979d5b4d090",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Panellinio_Sosialistiko_Kinima_Logo.svg",
       "ideology": [
         "Social democracy",
         "Progressivism",
@@ -3974,8 +3992,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 31,
       "seatsTotal": 300,
       "chamberName": "Parliament",
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/Panhellenic_Socialist_Movement",
       "sources": [
         {
           "title": "Panhellenic Socialist Movement – Wikipedia (founded 1974, ideology, leadership)",
@@ -4251,7 +4267,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Party of Life",
       "name": "いのちの党",
       "nameEn": "Party of Life",
-      "noImageReason": "The party (as Reiwa Shinsengumi) suffered a near-collapse in the 8 February 2026 election (8 to 1 seat) and founder/leader Taro Yamamoto resigned in July 2026 for health and legal reasons. New leader Jōji Yamamoto, elected 31 July 2026, announced the party's rename to 'いのちの党' (Party of Life) on 6 August 2026, explicitly to refresh the party's image away from its founder. As of the most recent Wikipedia update (the dedicated 'いのちの党 (2026)' article), no new logo has been published yet: the infobox itself states the logo is 'ロゴ製作中' (logo under production) and a press conference to unveil new branding, planned for late August 2026, had not yet resulted in a published logo file. The party's OLD Reiwa Shinsengumi branding is a different, superseded party identity and would misrepresent the current party if shown as its logo.",
+      "logo": "party-logos/jp/inochi.svg",
+      "sha256": "6ed9d64c85de9a695b2a8ac521d826e583fe2d882bcd9970e0823aac5279a8ea",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%81%84%E3%81%AE%E3%81%A1%E3%81%AE%E5%85%9A.svg",
       "ideology": [
         "Left-wing populism",
         "Anti-austerity",
@@ -4392,7 +4410,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "KE",
       "shortName": "ANC",
       "name": "Amani National Congress",
-      "noImageReason": "Attempted to bundle the Commons-hosted infobox logo at https://upload.wikimedia.org/wikipedia/commons/a/ab/Amani_National_Congress.png (from https://en.wikipedia.org/wiki/Amani_National_Congress), but upload.wikimedia.org returned HTTP 429 (rate limited) on every retry this session; a leftover file at this path from a prior session was also confirmed to be a saved 429 error page, not image data. A future session should retry this exact URL.",
+      "logo": "party-logos/ke/anc.png",
+      "sha256": "982ed0918426854a81c87f7fab9b0f86af614cc0b82d506c300913f9a9076e2e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Amani_National_Congress.png",
       "ideology": [
         "Social liberalism"
       ],
@@ -4740,7 +4760,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "RKP",
       "name": "조국혁신당",
       "nameEn": "Rebuilding Korea Party",
-      "noImageReason": "Logo file could not be fetched: upload.wikimedia.org/wikipedia/commons/6/6b/조국혁신당_로고.svg (Rebuilding Korea Party logo) returned HTTP 429 (rate-limited) on repeated retries spaced 6-10s apart over several minutes on 2026-09-05; a future session should retry this exact resolved URL.",
+      "logo": "party-logos/kr/rkp.svg",
+      "sha256": "b0816010770511df5f14d793a1acf7856ac8489909f3c2217539f9ce8cf1913d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%EC%A1%B0%EA%B5%AD%ED%98%81%EC%8B%A0%EB%8B%B9_%EB%A1%9C%EA%B3%A0.svg",
       "ideology": [
         "South Korean progressivism",
         "South Korean liberalism"
@@ -6384,6 +6406,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "NO",
       "shortName": "Ap",
       "name": "Labour Party",
+      "logo": "party-logos/no/ap.svg",
+      "sha256": "e849b599f8ec4d56cc4d1692be6262a4c3d0ae25925838b5abd76dad3686778b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Arbeidarpartiet.svg",
       "ideology": [
         "Social democracy",
         "Welfarism",
@@ -6408,14 +6433,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "NO-H",
       "country": "NO",
       "shortName": "H",
       "name": "Conservative Party",
+      "logo": "party-logos/no/h.svg",
+      "sha256": "fbd155917221137f239c78b08ee0c119cf6fe290cf3c2490bcae69bcaaeb7c8d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Conservative_Party_of_Norway.svg",
       "ideology": [
         "Conservatism",
         "Liberalism",
@@ -6439,14 +6466,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "NO-FRP",
       "country": "NO",
       "shortName": "Frp",
       "name": "Progress Party",
+      "logo": "party-logos/no/frp.svg",
+      "sha256": "094f6cc2938b90884ea9143c388af0a6411a6c006b6449eac866585793201b1d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Fremskrittspartiet_logo.svg",
       "ideology": [
         "Right-wing populism",
         "Economic liberalism",
@@ -6470,14 +6499,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "NO-SV",
       "country": "NO",
       "shortName": "SV",
       "name": "Socialist Left Party",
+      "logo": "party-logos/no/sv.svg",
+      "sha256": "10dba6dabe9eb84c4b8f1a449098382733175007579709a2c09ee1f1b6f2d489",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Sosialistisk_Venstreparti_logo.svg",
       "ideology": [
         "Democratic socialism",
         "Environmentalism",
@@ -6501,14 +6532,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "NO-SP",
       "country": "NO",
       "shortName": "Sp",
       "name": "Centre Party",
+      "logo": "party-logos/no/sp.png",
+      "sha256": "b5eb1a20e488a9093bc40a3d1ed004898b82fc7f24fae4c8f0804df8a05b1304",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Senterpartiets_logo.png",
       "ideology": [
         "Agrarianism",
         "Regionalism",
@@ -6533,14 +6566,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "NO-MDG",
       "country": "NO",
       "shortName": "MDG",
       "name": "Green Party",
+      "logo": "party-logos/no/mdg.svg",
+      "sha256": "5b15563444e06e04c920cddc9d54597916e0a0110f499e91f8fceb75cd09731a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MDG_Logo_2025.svg",
       "ideology": [
         "Green politics",
         "Environmentalism",
@@ -6564,14 +6599,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "NO-KRF",
       "country": "NO",
       "shortName": "KrF",
       "name": "Christian Democrats",
+      "logo": "party-logos/no/krf.svg",
+      "sha256": "2e19387e742007d7169a8f1799b51f67f9072ae44ad7a6d1c774c889297aae70",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:2025_logo_of_the_Christian_Democratic_Party_(Norway).svg",
       "ideology": [
         "Christian democracy",
         "Conservatism",
@@ -6595,14 +6632,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "NO-R",
       "country": "NO",
       "shortName": "R",
       "name": "Red Party",
+      "logo": "party-logos/no/r.svg",
+      "sha256": "e9fef4e900d010b601a1ec84d346e6f6d552f895314529755667a2a425d1e46e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:R%C3%B8dt_logo_(bokm%C3%A5l).svg",
       "ideology": [
         "Communism",
         "Marxism",
@@ -6626,14 +6665,16 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     },
     {
       "id": "NO-V",
       "country": "NO",
       "shortName": "V",
       "name": "Liberal Party",
+      "logo": "party-logos/no/v.png",
+      "sha256": "cb81f919df17ed5555e27b621fb1ac4eb6f28d0ce605ec9305c05c83ac75d557",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Venstres_logo.png",
       "ideology": [
         "Liberalism",
         "Social liberalism",
@@ -6657,8 +6698,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
         }
-      ],
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked"
+      ]
     }
   ],
   "PH": [
@@ -7401,6 +7441,69 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
         }
       ]
+    },
+    {
+      "id": "PH-CDP",
+      "country": "PH",
+      "shortName": "CDP",
+      "name": "Partido Demokratiko Sentrista ng Pilipinas",
+      "nameEn": "Centrist Democratic Party of the Philippines",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (by name and by \"logo\"), Wikipedia in English and the local language, the national electoral commission's registered-party listings, the party's own website and its social-media accounts, and the regional Elects account's coverage. Its own English Wikipedia infobox has a broken logo parameter — the field contains the literal string \"200px\" rather than a filename — and no file exists behind it.",
+      "ideology": [
+        "Christian democracy",
+        "Federalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2010,
+      "inPower": true,
+      "timeInPower": "Sits with the majority bloc in the 20th Congress.",
+      "seats": 1,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Centrist Democratic Party of the Philippines — Wikipedia: ideology, political position and founding year",
+          "url": "https://en.wikipedia.org/wiki/Centrist_Democratic_Party_of_the_Philippines"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia: 20th Congress composition",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
+        }
+      ]
+    },
+    {
+      "id": "PH-NAVOTENO",
+      "country": "PH",
+      "shortName": "Navoteño",
+      "name": "Partido Navoteño",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (by name and by \"logo\"), Wikipedia in English and the local language, the national electoral commission's registered-party listings, the party's own website and its social-media accounts, and the regional Elects account's coverage. A Navotas city party; its article carries no logo field and no emblem is published in a reusable form.",
+      "ideology": [
+        "Conservatism",
+        "Social conservatism",
+        "Populism",
+        "Localism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2004,
+      "leader": "John Rey Tiangco",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "Sits with the majority bloc in the 20th Congress.",
+      "seats": 1,
+      "seatsTotal": 318,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Partido Navoteño — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Partido_Navote%C3%B1o"
+        },
+        {
+          "title": "House of Representatives of the Philippines — Wikipedia: 20th Congress composition",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_of_the_Philippines"
+        }
+      ]
     }
   ],
   "PL": [
@@ -7807,6 +7910,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "PT",
       "shortName": "PS",
       "name": "Socialist Party",
+      "logo": "party-logos/pt/ps.png",
+      "sha256": "0e57bd27ff6bc3dd646858db7f0c3d6785c310ac8d5791f26770efc918f634be",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PS_Logo_(Text_version).png",
       "ideology": [
         "Social democracy",
         "Progressivism",
@@ -7821,8 +7927,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 120,
       "seatsTotal": 230,
       "chamberName": "Assembly of the Republic",
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/Socialist_Party_(Portugal)",
       "sources": [
         {
           "title": "Socialist Party (Portugal) – Wikipedia (founded 1973, ideology, leadership)",
@@ -7839,6 +7943,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "PT",
       "shortName": "BE",
       "name": "Bloco de Esquerda",
+      "logo": "party-logos/pt/be.svg",
+      "sha256": "aab184a1927eb5f5a79018f42ae1b034644be7718a13528ff2a510dfdb675dbb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:LeftBloc.svg",
       "ideology": [
         "Left-wing",
         "Socialism",
@@ -7853,8 +7960,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 12,
       "seatsTotal": 230,
       "chamberName": "Assembly of the Republic",
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/Bloco_de_Esquerda",
       "sources": [
         {
           "title": "Bloco de Esquerda – Wikipedia (founded 1997, ideology, leadership)",
@@ -8589,7 +8694,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "People's Power Party",
       "name": "People's Power Party",
       "nameEn": "People's Power Party",
-      "noImageReason": "No Wikipedia article (English or Thai) or Wikidata entry could be located for this 2025-founded party as of September 2026, so no logo could be sourced. It is distinct from the unrelated, older People's Power Party (Thailand) of 1998–2008. The Thai-script official name could likewise not be independently verified and is left as the English name used in Wikipedia's election-results table, rather than guessed.",
+      "logo": "party-logos/th/ppp.svg",
+      "sha256": "d3d11154ff7310d90bfb407b07ad28146a97ced7e3d04fdc8ff2e719a2f16d6b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Palang_Pracharath_Logo_(2020).svg",
       "ideology": [],
       "ideologyPosition": "other",
       "positionRaw": "Not documented in any accessible source",
@@ -8669,7 +8776,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "New Alternative Party",
       "name": "พรรคทางเลือกใหม่",
       "nameEn": "New Alternative Party",
-      "noImageReason": "The 'logo' field in the English Wikipedia 'New Alternative Party (Thailand)' infobox is blank, and no corresponding file was found on Wikimedia Commons or Wikidata as of September 2026.",
+      "logo": "party-logos/th/nap.jpg",
+      "sha256": "f1c2cd110fc808a6fa74c816d195e858ac1c54f7f274a49023c87ec778a598fc",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:New_alternative_party_logo.jpg",
       "ideology": [],
       "ideologyPosition": "other",
       "positionRaw": "No ideology or left-right position documented in the sourced infobox",
@@ -8804,7 +8913,9 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "New Opportunity Party",
       "name": "พรรคโอกาสใหม่",
       "nameEn": "New Opportunity Party",
-      "noImageReason": "The 'logo' field in the English Wikipedia 'New Opportunity Party' infobox is blank, and no corresponding file was found on Wikimedia Commons or Wikidata as of September 2026.",
+      "logo": "party-logos/th/nop.png",
+      "sha256": "84276d50de40f8244b43ccbc1f45b339660165c78336509346df59949a0f7e97",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:New_Opportunity_Party.png",
       "ideology": [
         "Neoconservatism",
         "Monarchism"
@@ -8831,6 +8942,50 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "House of Representatives (Thailand) — Wikipedia (political groups of the 27th House, elected 8 February 2026: Government 292, Opposition 207, 1 vacant of 500)",
           "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Thailand)"
+        }
+      ]
+    },
+    {
+      "id": "TH-NEWDIM",
+      "country": "TH",
+      "shortName": "New Dimension",
+      "name": "พรรคมิติใหม่",
+      "nameEn": "New Dimension Party",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (by name and by \"logo\"), Wikipedia in English and the local language, the national electoral commission's registered-party listings, the party's own website and its social-media accounts, and the regional Elects account's coverage. A one-seat party with no article on English or Thai Wikipedia; no emblem is published in a reusable form.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "leader": "Preecha Khaikaew",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "2026 Thai House of Representatives — Wikipedia: the chamber's member list, which seats one deputy each for the New Dimension Party (Preecha Khaikaew) and the Thai Sup Thawee Party (Taweesap Tatsamai)",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_House_of_Representatives"
+        }
+      ]
+    },
+    {
+      "id": "TH-TSUPT",
+      "country": "TH",
+      "shortName": "Thai Sup Thawee",
+      "name": "พรรคไทยทรัพย์ทวี",
+      "nameEn": "Thai Sup Thawee Party",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (by name and by \"logo\"), Wikipedia in English and the local language, the national electoral commission's registered-party listings, the party's own website and its social-media accounts, and the regional Elects account's coverage. A one-seat party with no article on English or Thai Wikipedia; no emblem is published in a reusable form.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "leader": "Taweesap Tatsamai",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 500,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "2026 Thai House of Representatives — Wikipedia: the chamber's member list, which seats one deputy each for the New Dimension Party (Preecha Khaikaew) and the Thai Sup Thawee Party (Taweesap Tatsamai)",
+          "url": "https://en.wikipedia.org/wiki/2026_Thai_House_of_Representatives"
         }
       ]
     }
@@ -13598,6 +13753,39 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_Chile"
         }
       ]
+    },
+    {
+      "id": "CL-FREVS",
+      "country": "CL",
+      "shortName": "FREVS",
+      "name": "Federación Regionalista Verde Social",
+      "nameEn": "Social Green Regionalist Federation",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (by name and by \"logo\"), Wikipedia in English and the local language, the national electoral register's party listings, the party's own website and its social-media accounts, and the regional Elects account's coverage. Its own Spanish Wikipedia infobox carries an empty image field, and Commons holds emblems only for the other Chilean regionalist parties.",
+      "ideology": [
+        "Regionalism",
+        "Environmentalism",
+        "Social ecology",
+        "Participatory democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2017,
+      "leader": "Flavia Torrealba",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 155,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Federación Regionalista Verde Social — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Federaci%C3%B3n_Regionalista_Verde_Social"
+        },
+        {
+          "title": "Cámara de Diputados de Chile — Wikipedia (es): composition of the chamber elected 16 November 2025",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Chile"
+        }
+      ]
     }
   ],
   "CO": [
@@ -14089,6 +14277,134 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
           "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        }
+      ]
+    },
+    {
+      "id": "CO-RENACIENTE",
+      "country": "CO",
+      "shortName": "Renaciente",
+      "name": "Colombia Renaciente",
+      "logo": "party-logos/co/renaciente.png",
+      "sha256": "63a1bf9636060ca71b518e65e3acf0a9e75978fbe7aea0fb4625b1fc8eadbb14",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Colombia_Renaciente_Logo.png",
+      "ideology": [
+        "Social democracy",
+        "Pacifism",
+        "Environmentalism",
+        "Multiculturalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2018,
+      "leader": "Jhon Arley Murillo",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Colombia Renaciente — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Colombia_Renaciente"
+        },
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia (es): composition of the chamber elected 8 March 2026",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        }
+      ]
+    },
+    {
+      "id": "CO-DEMOCRATA",
+      "country": "CO",
+      "shortName": "Demócrata",
+      "name": "Partido Demócrata Colombiano",
+      "nameEn": "Colombian Democratic Party",
+      "logo": "party-logos/co/democrata.png",
+      "sha256": "d482e1b50ea2da2eaea367bac57a449511506a70df1334566241ea000cae908f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_Democrata_Colombiano_(cropped).png",
+      "ideology": [
+        "Political ecology",
+        "Afro-Colombian rights",
+        "Progressivism",
+        "Social liberalism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "leader": "Pedro Adán Torres Pérez",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Partido Demócrata Colombiano — Wikipedia (es): ideology, political position and leadership. No reachable source gives a founding year, so the entry carries none rather than a guessed one",
+          "url": "https://es.wikipedia.org/wiki/Partido_Dem%C3%B3crata_Colombiano"
+        },
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia (es): composition of the chamber elected 8 March 2026",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        }
+      ]
+    },
+    {
+      "id": "CO-FUERZA",
+      "country": "CO",
+      "shortName": "La Fuerza",
+      "name": "La Fuerza de las Regiones",
+      "nameEn": "The Strength of the Regions",
+      "logo": "party-logos/co/fuerza.png",
+      "sha256": "449843e79383f6aca1943acbf9a2e7d489a9f83124ce78b18e5508503eecba2a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Coalici%C3%B3n_La_Fuerza_de_las_Regiones.png",
+      "ideology": [
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia (es): composition of the chamber elected 8 March 2026",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        },
+        {
+          "title": "Coalición La Fuerza de las Regiones — the coalition's emblem on Wikimedia Commons. No encyclopaedia article covers the grouping, so ideology beyond its regionalist basis and a founding year are not recorded rather than guessed",
+          "url": "https://commons.wikimedia.org/wiki/File:Coalici%C3%B3n_La_Fuerza_de_las_Regiones.png"
+        }
+      ]
+    },
+    {
+      "id": "CO-MINGA",
+      "country": "CO",
+      "shortName": "Minga",
+      "name": "Movimiento Unidad en Minga por Colombia",
+      "nameEn": "Unity in Minga for Colombia Movement",
+      "logo": "party-logos/co/minga.png",
+      "sha256": "656cf8d3b0137e6310df6c31a45b2bd6a21ad4a2327e916f66330d806f0d5ac2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Unidad_en_Minga.png",
+      "ideology": [
+        "Indigenous rights"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia (es): composition of the chamber elected 8 March 2026",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        },
+        {
+          "title": "Movimiento Unidad en Minga por Colombia — the movement's emblem on Wikimedia Commons. No encyclopaedia article covers it, so a founding year is not recorded rather than guessed",
+          "url": "https://commons.wikimedia.org/wiki/File:Logo_Unidad_en_Minga.png"
         }
       ]
     }
@@ -17639,6 +17955,35 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Bolivia"
         }
       ]
+    },
+    {
+      "id": "BO-BIAYUQUI",
+      "country": "BO",
+      "shortName": "Bia Yuqui",
+      "name": "Consejo Indígena Yuqui Bia Recuate",
+      "nameEn": "Yuqui Bia Recuate Indigenous Council",
+      "logo": "party-logos/bo/biayuqui.png",
+      "sha256": "c2284cf933ae594b91e6b8ee1120fb3391455fdbfaebd53c05bf3ca0c6b48d5e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Consejo_Yuqui_Bia_Recuare.png",
+      "ideology": [
+        "Indigenism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Single-issue",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Bia-Yuqui — Wikipedia (es): the Yuqui indigenous council's single Chamber seat. No reachable source gives a founding year, so the entry carries none rather than a guessed one",
+          "url": "https://es.wikipedia.org/wiki/Bia_Yuqui"
+        },
+        {
+          "title": "Cámara de Diputados de Bolivia — Wikipedia (es): 130 deputies elected 17 August 2025",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Bolivia"
+        }
+      ]
     }
   ],
   "BW": [
@@ -18854,6 +19199,29 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "url": "https://en.wikipedia.org/wiki/National_Assembly_(Guyana)"
         }
       ]
+    },
+    {
+      "id": "GY-FGM",
+      "country": "GY",
+      "shortName": "FGM",
+      "name": "Forward Guyana Movement",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (by name and by \"logo\"), Wikipedia in English and the local language, the national electoral commission's registered-party listings, the party's own website and its social-media accounts, and the regional Elects account's coverage. No article on any Wikipedia, no Commons file, and no emblem published in a reusable form.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 65,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "National Assembly (Guyana) — Wikipedia: the 13th Parliament seats one Forward Guyana Movement member. No reachable source gives the movement a founding year or an ideology, so neither is recorded rather than guessed",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Guyana)"
+        },
+        {
+          "title": "2025 Guyanese general election — Wikipedia: the election that returned the movement's single seat",
+          "url": "https://en.wikipedia.org/wiki/2025_Guyanese_general_election"
+        }
+      ]
     }
   ],
   "PY": [
@@ -19302,6 +19670,35 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         },
         {
           "title": "National Assembly (Suriname) — Wikipedia: 8th Assembly, 51 members elected 25 May 2025 — Government 34 (NDP 18, ABOP 6, NPS 6, PL 2, BEP 1, A20 1); Opposition VHP 17",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Suriname)"
+        }
+      ]
+    },
+    {
+      "id": "SR-A20",
+      "country": "SR",
+      "shortName": "A20",
+      "name": "Alternatief 2020",
+      "nameEn": "Alternative 2020",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (by name and by \"logo\"), Wikipedia in English and the local language, the national electoral commission's registered-party listings, the party's own website and its social-media accounts, and the regional Elects account's coverage. Its own English Wikipedia infobox carries an empty logo field and Commons holds no file for the party.",
+      "ideology": [
+        "Christian democracy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2019,
+      "inPower": true,
+      "timeInPower": "In the governing coalition formed after the May 2025 election.",
+      "seats": 1,
+      "seatsTotal": 51,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Alternative 2020 — Wikipedia: ideology, political position and founding year",
+          "url": "https://en.wikipedia.org/wiki/Alternative_2020"
+        },
+        {
+          "title": "National Assembly (Suriname) — Wikipedia: 8th Assembly, 51 members elected 25 May 2025",
           "url": "https://en.wikipedia.org/wiki/National_Assembly_(Suriname)"
         }
       ]
@@ -20121,6 +20518,37 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
           "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-VVC",
+      "country": "VE",
+      "shortName": "VVC",
+      "name": "Vamos, Vamos Cojedes",
+      "nameEn": "Let's Go, Let's Go Cojedes",
+      "noImageReason": "No emblem found. Swept Wikimedia Commons (by name and by \"logo\"), Wikipedia in English and the local language, the national electoral register's party listings, the party's own website and its social-media accounts, and the regional Elects account's coverage. Registered with the National Electoral Council on 11 April 2025; its presence is social-media only and no emblem is published in a reusable form.",
+      "ideology": [
+        "Personalism",
+        "Regionalism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Big tent",
+      "founded": 2025,
+      "leader": "Alberto Galíndez",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Vamos Vamos Cojedes — Wikipedia (es): registered with the CNE on 11 April 2025; ideology, position and leadership",
+          "url": "https://es.wikipedia.org/wiki/Vamos_Vamos_Cojedes"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (es): VI Legislature, installed 5 January 2026",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
         }
       ]
     }

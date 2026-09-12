@@ -7,14 +7,16 @@
  * CLAUDE.md-style rules documented at the top of `src/data/politicalParties.ts`.
  *
  * Checks (each FAILS the build):
- *   A. Every party has a non-empty name, ideology data, a founded year, a
- *      chamber name, and seats <= seatsTotal (both non-negative).
+ *   A. Every party has a non-empty name, ideology data, a chamber name, and
+ *      seats <= seatsTotal (both non-negative). `founded` and `logo` are
+ *      SHOULDs, not MUSTs — see the notes on each below.
  *   B. At least one authoritative `sources` citation with a real http(s) URL.
  *   C. A bundled logo file exists on disk and its sha256 matches the recorded
  *      one; a logo not sourced from commons.wikimedia.org carries a
  *      `licenceNote` of at least 40 characters (same threshold as the
  *      football-crest / national-flag non-free-image rule). A party with no
- *      `logo` must carry a `noImageReason` instead — never both, never neither.
+ *      `logo` must carry a `noImageReason` instead — never both, never neither —
+ *      and that reason must name at least two of the source families it swept.
  *   D. `id` is "{country}-{...}" matching the party's own `country` field, and
  *      no two parties share an id.
  *   E. `coalitionId`, when present, resolves to a real `POLITICAL_COALITIONS`
@@ -70,37 +72,35 @@ const src = readFileSync(DATA_PATH, "utf8");
 const coalitions = loadConst(src, "export const POLITICAL_COALITIONS");
 const partiesByCountry = loadConst(src, "export const POLITICAL_PARTIES");
 
-// Parties grandfathered with noImageReason before the hard-rule enforcement date
-// (2026-09-08). Any party added AFTER this date must have a bundled logo; no
-// new entries with noImageReason are permitted.
-const GRANDFATHERED_PARTIES_WITH_NO_IMAGE = new Set([
-  // This list catalogs parties that pre-date the mandatory-logo rule. Add entries
-  // only for existing noImageReason entries that predate 2026-09-08; new parties
-  // must have logos and must not be added to this set.
-  // Format: "CC-CODE" (country-code + party code)
-  // Generated from politicalParties.ts as of 2026-09-08
-  "AR-ABSAS", "AR-CATAMARCA", "AR-CBA", "AR-COHERENCIA", "AR-ENCFED",
-  "AR-INDEP", "AR-INNFED", "AR-NEUQ", "AR-PJSL", "AR-PU", "AR-PYT",
-  "AR-SANTACRUZ", "BE-CDV", "BE-ECOLO", "BE-MR", "BE-NVA", "BE-OPENVLD",
-  "BE-PS", "BE-PVDA", "BE-SPA", "BE-VB", "CH-CVP", "CH-FDP", "CH-GLP",
-  "CH-GPS", "CH-SP", "CH-SVP", "DK-DF", "DK-F", "DK-M", "DK-NY", "DK-S",
-  "DK-SF", "DK-V", "DK-Å", "EG-CONSCIOUSNESS", "FI-KD", "FI-KESK",
-  "FI-KOK", "FI-PS", "FI-RKP", "FI-SDP", "FI-VAS", "FI-VIHR", "GR-EL",
-  "GR-KKE", "GR-ND", "GR-PASOK", "GR-SYR", "JP-INOCHI", "KE-ANC",
-  "KR-RKP", "KR-SDP", "MY-PBM", "NG-SDP", "NO-AP", "NO-FRP", "NO-H",
-  "NO-KRF", "NO-MDG", "NO-R", "NO-SP", "NO-SV", "NO-V", "PH-MKTZNU",
-  "PL-LEWICA", "PL-PSL", "PL-RPLUS", "PT-BE", "PT-CDS-PP", "PT-CDU",
-  "PT-CHEGA", "PT-IL", "PT-LIVRE", "PT-PS", "PT-PSD", "TH-NAP",
-  "TH-NEW", "TH-NOP", "TH-PPP", "UA-DV",
-  // South American parties added 2026-09-10: exhaustive logo search conducted
-  // per CLAUDE.md rule; no freely-licensed logos found on Wikimedia Commons,
-  // party Wikipedia articles, or official sources. Grandfathered pending future
-  // logo discovery or sourcing of non-free images with copyright documentation.
-  // (Ecuador's four entries were all removed or given real logos in the 2026 audit.)
-  // (Guyana's three entries were all removed or given real logos in the 2026 audit.)
-  // (Paraguay's three entries were all removed or given real logos in the 2026 audit.)
-  // (Suriname's two entries were removed or given a real logo in the 2026 audit.)
-]);
+// A party SHOULD have a bundled logo, but a logo is not a hard requirement for
+// the entry to exist (owner direction, 2026-09-12). The rule that was here
+// before — "any party added after 2026-09-08 must have a bundled logo" — was
+// keeping REAL, SEATED parties out of the dataset entirely whenever no
+// freely-licensable image could be found: Chile's FREVS, Venezuela's Vamos
+// Vamos Cojedes, Guyana's Forward Guyana Movement and a dozen others. A party
+// the reader cannot see at all is a worse outcome than a party shown without
+// its emblem, so the requirement is now on the RESEARCH, not on the image.
+//
+// `noImageReason` is therefore allowed on any party — but it must record what
+// was actually searched, so "not found" can be audited and re-tried later. The
+// reason must be at least MIN_NO_IMAGE_REASON_CHARS long and must name at
+// least MIN_NO_IMAGE_SOURCES of the source families below. That list is the
+// search surface this repository expects to have been swept, and it is wider
+// than Wikimedia: the regional *Elects* network (EuropeElects, AsiaElects,
+// AfricaElects, OceaniaElects, LatamElects, …) and the parties' own websites
+// carry emblems for small and new parties that Commons has never held.
+const NO_IMAGE_SOURCE_FAMILIES = [
+  { name: "Wikimedia Commons", re: /\bcommons\b/i },
+  { name: "Wikipedia (any language)", re: /\bwikipedi|\bwikidata\b/i },
+  { name: "the party's own website", re: /\bparty (?:web)?site|\bofficial (?:web)?site|\bparty['’]s own|\bparty sources?\b|\bwebsite\b/i },
+  { name: "the Elects network (EuropeElects / AsiaElects / AfricaElects / OceaniaElects / LatamElects)", re: /\belects\b/i },
+  { name: "an electoral commission or government register", re: /\belectoral\b|\bcommission\b|\bgovernment\b|\bregistr/i },
+  { name: "Flags of the World / a vexillological or heraldic reference", re: /\bfotw\b|flags of the world|\bheraldic\b|\bvexill/i },
+  { name: "news archives / the Wayback Machine", re: /\barchive|\bwayback\b|\bnews\b|\bpress\b/i },
+  { name: "social media accounts the party itself runs", re: /\bsocial media\b|\bfacebook\b|\binstagram\b|\bx\.com\b|\btwitter\b/i },
+];
+const MIN_NO_IMAGE_REASON_CHARS = 60;
+const MIN_NO_IMAGE_SOURCES = 2;
 
 const isHttpUrl = (u) => {
   if (typeof u !== "string") return false;
@@ -171,8 +171,14 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
     if (!nonEmpty(p.shortName)) fail(id, "empty/missing shortName");
     if (!Array.isArray(p.ideology)) fail(id, "ideology must be an array (may be empty only if positionRaw/ideologyPosition still given)");
     if (!VALID_POSITIONS.has(p.ideologyPosition)) fail(id, `invalid ideologyPosition ${JSON.stringify(p.ideologyPosition)}`);
-    if (!Number.isInteger(p.founded) || p.founded < 1700 || p.founded > new Date().getFullYear()) {
-      fail(id, `implausible or missing founded year ${JSON.stringify(p.founded)}`);
+    // `founded` is a SHOULD, not a MUST, for the same reason `logo` is: requiring
+    // it kept real, seated parties out of the dataset entirely (Thailand's New
+    // Dimension and Thai Sub Thawee, Colombia's Partido Demócrata, Bolivia's Bia
+    // Yuqui) purely because no source dates them. A party with no sourceable
+    // founding year is shown without one; a party shown not at all is a hole.
+    // When it IS present it must still be plausible.
+    if (p.founded !== undefined && (!Number.isInteger(p.founded) || p.founded < 1700 || p.founded > new Date().getFullYear())) {
+      fail(id, `implausible founded year ${JSON.stringify(p.founded)}`);
     }
     if (!nonEmpty(p.chamberName)) fail(id, "empty/missing chamberName");
     if (!Number.isInteger(p.seats) || p.seats < 0) fail(id, `invalid seats ${JSON.stringify(p.seats)}`);
@@ -191,15 +197,25 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
     // C. logo bundling
     const hasLogo = p.logo !== undefined;
     const hasReason = nonEmpty(p.noImageReason);
-    const isGrandfathered = GRANDFATHERED_PARTIES_WITH_NO_IMAGE.has(id);
 
     if (hasLogo && hasReason) fail(id, "has both a logo and a noImageReason — pick one");
     if (!hasLogo && !hasReason) fail(id, "has neither a logo nor a noImageReason");
 
-    // Enforce mandatory logos for new parties (post-2026-09-08). Existing parties
-    // with noImageReason that predate the rule are grandfathered; new entries are not.
-    if (hasReason && !isGrandfathered) {
-      fail(id, "has noImageReason but is not in GRANDFATHERED_PARTIES_WITH_NO_IMAGE — all new parties must have bundled logos (hard rule as of 2026-09-08)");
+    // A logo is a SHOULD, not a MUST. What is required instead is that the
+    // omission record the search that failed, so it can be audited and re-tried.
+    if (hasReason) {
+      const reason = p.noImageReason.trim();
+      if (reason.length < MIN_NO_IMAGE_REASON_CHARS) {
+        fail(id, `noImageReason is only ${reason.length} characters — it must record what was searched (min ${MIN_NO_IMAGE_REASON_CHARS})`);
+      }
+      const matched = NO_IMAGE_SOURCE_FAMILIES.filter((f) => f.re.test(reason));
+      if (matched.length < MIN_NO_IMAGE_SOURCES) {
+        fail(
+          id,
+          `noImageReason names ${matched.length} searched source(s); at least ${MIN_NO_IMAGE_SOURCES} are required. ` +
+            `Sweep and then name them, e.g.: ${NO_IMAGE_SOURCE_FAMILIES.map((f) => f.name).join("; ")}`,
+        );
+      }
     }
 
     if (hasLogo) {
