@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 59 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 60 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -109,7 +109,8 @@ forgotten; it is tracked here.
 | 🇮🇷 Iran | `#1376` | 0 → 13 | 31 / 290 (254 independents) | **Absent entirely; three wrong leaders caught, including one dead since 2017** |
 | 🇯🇴 Jordan | `#1377` | 0 → 12 | 99 / 138 (39 independents) | **Absent entirely; the Islamic Action Front had been renamed and a branch's emblem was nearly bundled as the party's** |
 | 🇯🇵 Japan | `#1378` | 9 → 9 | 460 / 465 (5 unaffiliated) | Best-maintained entry so far; `inExecutive` absent, Ishin's date from the previous cabinet, one seat double-counted |
-| 🇰🇿 Kazakhstan | *(see PR)* | 0 → 5 | **145 / 145** | **Absent entirely; the bicameral parliament was replaced by a unicameral Kurultai on 1 July 2026** |
+| 🇰🇿 Kazakhstan | `#1379` | 0 → 5 | **145 / 145** | **Absent entirely; the bicameral parliament was replaced by a unicameral Kurultai on 1 July 2026** |
+| 🇰🇷 South Korea | *(see PR)* | 7 → 7 | 291 / 300 (8 independents, 1 vacant) | Accurate on coverage; `inExecutive` absent though the DP holds the presidency |
 
 ---
 
@@ -2264,6 +2265,36 @@ declared. All five were montage-verified.
 
 ---
 
+### 🇰🇷 South Korea — audited 2026-09-12
+
+South Korea's entry was **accurate on coverage and seats** — all seven seated parties present, and
+its 291 seats plus the chamber's 8 independents and 1 vacancy make exactly 300. Every leader
+checked out, including the Democratic Party's **Kim Min-seok**, elected party leader in August 2026.
+Two things were missing.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-321 | **S2** | `inExecutive` | **absent** | **`true` on the Democratic Party** | Lee Jae-myung, a DP member, has been **President of South Korea since 4 June 2025**. Korea is a presidential system and the DP holds the executive, not merely a legislative majority |
+| PP-322 | **S3** | `timeInPower` | **"2025-present"** | prose naming the presidency and its date | A bare year range does not say *what* the party holds — and in a presidential system that is the whole point |
+
+**A sourcing trap worth recording: "Democratic Party of Korea" is now a disambiguation page.**
+Fetching that title returns `Minjudang`, a list of fifteen different Korean parties that have borne
+the name since 1945, with no infobox at all. The live article is **`Democratic Party (South Korea,
+2015)`**. An audit that trusted the obvious title would have concluded the party had no leader and
+no ideology, rather than reading them off the right page — the same class as Iraq's Al-Asas and
+Jordan's Umma, where the name in the chamber's list is not the name of the article.
+
+**One party ships with a `noImageReason`** — the Social Democratic Party, which holds a single seat.
+The other six carry bundled logos.
+
+**A cross-country observation, recorded rather than acted on here.** Thirty-seven entries across the
+dataset give their `logoSourceUrl` as a direct `upload.wikimedia.org` file URL rather than the
+`commons.wikimedia.org/wiki/File:` page form the rest use. Both resolve and both point at the real
+file, so this is a consistency wrinkle and not the fabricated-citation defect of rule 5a; it is
+noted here for a later cross-country pass rather than fixed inside a single country's PR.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2485,7 +2516,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `KE` Kenya
 - [ ] `KI` Kiribati
 - [ ] `KP` North Korea
-- [ ] `KR` South Korea
+- [x] `KR` South Korea — merged
 - [ ] `KW` Kuwait
 - [ ] `KG` Kyrgyzstan
 - [ ] `LB` Lebanon
