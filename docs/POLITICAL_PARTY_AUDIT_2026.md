@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 41 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 42 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -87,6 +87,7 @@ forgotten; it is tracked here.
 | 🇵🇹 Portugal | `#1352` | 2 → 10 | **230 / 230** | **WRONG — the opposition marked as governing, 62 seats out** |
 | 🇱🇺 Luxembourg | `#1354` | 3 → 7 | **60 / 60** | **WRONG — two of three leaders lead a different party** |
 | 🇨🇭 Switzerland | `#1355` | 3 → 10 | **200 / 200** | **WRONG — an FDP councillor listed as the Social Democrats' leader** |
+| 🇦🇹 Austria | `#1356` | 2 → 5 | 182 / 183 | **WRONG — the election's winner recorded with zero seats** |
 
 ---
 
@@ -1503,6 +1504,37 @@ Wikipedia and are declared. All nine were montage-verified.
 
 ---
 
+### 🇦🇹 Austria — audited 2026-09-12
+
+Austria had **two** parties, and the one that won the election was recorded with **zero seats**.
+`AT-FPOE` carried `seats: 0` while the Freedom Party is the **largest single party in the National
+Council with 57** — the starkest instance yet of defect **B3**, the zero-seat entries the baseline
+survey counted. A reader opening Austria saw a two-party country in which the winner did not appear
+to hold a seat.
+
+The National Council, 183 seats: **Government (Stocker) 109** — ÖVP 51, SPÖ 41, NEOS 17 —
+**Opposition 74** — FPÖ 57, Greens 16, one independent.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-232 | **S1** | `seats` | FPÖ **0** | **57** | The National Council's own composition after the 29 September 2024 election. The FPÖ won that election |
+| PP-233 | **S3** | coverage | 2 parties, 41 of 183 | **5 parties, 182 of 183** | Three seated parties were absent, including the **ÖVP (51)**, which holds the chancellorship |
+| PP-234 | **S2** | `inPower` / `inExecutive` | SPÖ in power, `inExecutive` absent | **ÖVP, SPÖ and NEOS in the executive**; FPÖ and the Greens out | The Stocker government, formed 3 March 2025 |
+| PP-235 | **S2** | `leaderTitle` | absent | **Chairman** (FPÖ, SPÖ), **Chairperson** (ÖVP), **Chairwoman** (NEOS), **Spokeswoman** (Greens) | Each party's own infobox |
+| PP-236 | **S3** | coalitions | none | **`AT-GOV`** (Stocker, 109 of 183) | Austria's first three-party federal coalition |
+| PP-237 | **S4** | logo hygiene | `at/` held three broken files and three stray `.sha256` texts | directory rebuilt with five verified logos | The broken files were cleared in the cross-country sweep below; the directory is now exactly the five parties |
+
+**Why the election's winner sits in opposition** is recorded in the coalition's note, because the
+data alone reads as a contradiction: the ÖVP–FPÖ talks collapsed, and the ÖVP then formed Austria's
+first three-party federal coalition with the SPÖ and NEOS instead.
+
+**Documented gap — 1 of the 183 seats**: a single independent member, correctly not modelled as a
+party.
+
+All five logos are public domain on Commons and were montage-verified.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1628,7 +1660,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `BE` Belgium — merged
 - [x] `LU` Luxembourg — merged
 - [x] `CH` Switzerland — merged
-- [ ] `AT` Austria
+- [x] `AT` Austria — merged
 - [x] `PL` Poland — merged
 - [ ] `CZ` Czechia
 - [ ] `SK` Slovakia
