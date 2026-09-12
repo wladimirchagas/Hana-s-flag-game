@@ -319,6 +319,18 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "Cidadania voted to end membership in 2026",
   },
+  "DE-GOV": {
+    id: "DE-GOV",
+    name: "Koalition aus CDU/CSU und SPD",
+    nameEn: "CDU/CSU–SPD coalition",
+    kind: "coalition",
+    memberPartyIds: ["DE-CDU", "DE-CSU", "DE-SPD"],
+    source: {
+      title: "Bundestag — Wikipedia: the Merz cabinet's governing coalition holds 328 of 630 seats — CDU 164, CSU 44, SPD 120",
+      url: "https://en.wikipedia.org/wiki/Bundestag",
+    },
+    note: "The CDU and CSU are separate parties that never contest each other's territory — the CSU stands only in Bavaria — and sit as a single CDU/CSU group in the Bundestag.",
+  },
   "UY-CR": {
     id: "UY-CR",
     name: "Coalición Republicana",
@@ -10007,30 +10019,217 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "DE",
       "shortName": "CDU",
       "name": "Christlich Demokratische Union Deutschlands",
-      "nameEn": "Christian Democratic Union",
+      "nameEn": "Christian Democratic Union of Germany",
       "logo": "party-logos/de/cdu.svg",
       "sha256": "91571409a6b3d6013c79b2ff1307309878c30d9c279f434446139eaee76d9c55",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:CDU_Logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CDU_Logo_2023.svg",
       "ideology": [
         "Christian democracy",
         "Conservatism",
-        "Social market economy"
+        "Liberal conservatism"
       ],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1945,
+      "coalitionId": "DE-GOV",
       "leader": "Friedrich Merz",
-      "leaderTitle": "Chairperson",
+      "leaderTitle": "Leader",
       "inPower": true,
-      "timeInPower": "2021-present",
-      "seats": 258,
+      "inExecutive": true,
+      "timeInPower": "In government since Friedrich Merz became chancellor in May 2025, leading a CDU/CSU–SPD coalition.",
+      "seats": 164,
       "seatsTotal": 630,
       "chamberName": "Bundestag",
       "sources": [
         {
-          "title": "Christian Democratic Union - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Christian_Democratic_Union"
+          "title": "Christian Democratic Union of Germany — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Christian_Democratic_Union_of_Germany"
+        },
+        {
+          "title": "Bundestag — Wikipedia: 21st Bundestag, 630 seats elected 23 February 2025 — Government (Merz cabinet) 328 (CDU 164, CSU 44, SPD 120); Opposition 302 (AfD 150, Greens 85, Die Linke 64, 3 non-attached)",
+          "url": "https://en.wikipedia.org/wiki/Bundestag"
+        },
+        {
+          "title": "Chancellor of Germany — Wikipedia (Friedrich Merz of the CDU, leading a CDU/CSU–SPD coalition since May 2025)",
+          "url": "https://en.wikipedia.org/wiki/Chancellor_of_Germany"
+        }
+      ]
+    },
+    {
+      "id": "DE-AFD",
+      "country": "DE",
+      "shortName": "AfD",
+      "name": "Alternative für Deutschland",
+      "nameEn": "Alternative for Germany",
+      "logo": "party-logos/de/afd.svg",
+      "sha256": "5f262a1faae387b5ed171cb4e1ed14e18db61fe2004821f5e508f2ed40fef6f6",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:AfD_Logo_2021.svg",
+      "ideology": [
+        "Right-wing populism",
+        "National conservatism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2013,
+      "leader": "Alice Weidel",
+      "leaderTitle": "Co-leader",
+      "inPower": false,
+      "seats": 150,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "Alternative for Germany — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Alternative_for_Germany"
+        },
+        {
+          "title": "Bundestag — Wikipedia: 21st Bundestag, 630 seats elected 23 February 2025 — Government (Merz cabinet) 328 (CDU 164, CSU 44, SPD 120); Opposition 302 (AfD 150, Greens 85, Die Linke 64, 3 non-attached)",
+          "url": "https://en.wikipedia.org/wiki/Bundestag"
+        }
+      ]
+    },
+    {
+      "id": "DE-SPD",
+      "country": "DE",
+      "shortName": "SPD",
+      "name": "Sozialdemokratische Partei Deutschlands",
+      "nameEn": "Social Democratic Party of Germany",
+      "logo": "party-logos/de/spd.svg",
+      "sha256": "7bd74a096f0522f8629d45d8b59eaf1d23ce90f61479ca3950b524edbcaa8d8b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SPD-Logo_2022_%28rot%29.svg",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1875,
+      "coalitionId": "DE-GOV",
+      "leader": "Lars Klingbeil",
+      "leaderTitle": "Co-leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Junior partner in the CDU/CSU–SPD coalition formed in May 2025.",
+      "seats": 120,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "Social Democratic Party of Germany — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_of_Germany"
+        },
+        {
+          "title": "Bundestag — Wikipedia: 21st Bundestag, 630 seats elected 23 February 2025 — Government (Merz cabinet) 328 (CDU 164, CSU 44, SPD 120); Opposition 302 (AfD 150, Greens 85, Die Linke 64, 3 non-attached)",
+          "url": "https://en.wikipedia.org/wiki/Bundestag"
+        }
+      ]
+    },
+    {
+      "id": "DE-GRUENE",
+      "country": "DE",
+      "shortName": "Grüne",
+      "name": "Bündnis 90/Die Grünen",
+      "nameEn": "Alliance 90/The Greens",
+      "logo": "party-logos/de/gruene.svg",
+      "sha256": "c5b5ef0c26e9fe3324f419ee13e3a5cbfc8dcb907a5f4482fe7bb96c279538cd",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:B%C3%BCndnis_90_-_Die_Gr%C3%BCnen_Logo_%28transparent%29.svg",
+      "ideology": [
+        "Green politics",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1993,
+      "previousNames": [
+        {
+          "name": "Die Grünen",
+          "nameEn": "The Greens",
+          "years": "1980–1993"
+        }
+      ],
+      "leader": "Franziska Brantner",
+      "leaderTitle": "Co-leader",
+      "inPower": false,
+      "seats": 85,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "Alliance 90/The Greens — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Alliance_90%2FThe_Greens"
+        },
+        {
+          "title": "Bundestag — Wikipedia: 21st Bundestag, 630 seats elected 23 February 2025 — Government (Merz cabinet) 328 (CDU 164, CSU 44, SPD 120); Opposition 302 (AfD 150, Greens 85, Die Linke 64, 3 non-attached)",
+          "url": "https://en.wikipedia.org/wiki/Bundestag"
+        }
+      ]
+    },
+    {
+      "id": "DE-LINKE",
+      "country": "DE",
+      "shortName": "Die Linke",
+      "name": "Die Linke",
+      "nameEn": "The Left",
+      "logo": "party-logos/de/linke.svg",
+      "sha256": "641255b63abca5e7d9a23fc22dab1e9e2975d317d8eca74d2de6c5651c0b52f9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Die_Linke_%282023%29.svg",
+      "ideology": [
+        "Democratic socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2007,
+      "leader": "Ines Schwerdtner",
+      "leaderTitle": "Co-leader",
+      "inPower": false,
+      "seats": 64,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "The Left — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Die_Linke"
+        },
+        {
+          "title": "Bundestag — Wikipedia: 21st Bundestag, 630 seats elected 23 February 2025 — Government (Merz cabinet) 328 (CDU 164, CSU 44, SPD 120); Opposition 302 (AfD 150, Greens 85, Die Linke 64, 3 non-attached)",
+          "url": "https://en.wikipedia.org/wiki/Bundestag"
+        }
+      ]
+    },
+    {
+      "id": "DE-CSU",
+      "country": "DE",
+      "shortName": "CSU",
+      "name": "Christlich-Soziale Union in Bayern",
+      "nameEn": "Christian Social Union in Bavaria",
+      "logo": "party-logos/de/csu.svg",
+      "sha256": "6e76ac151cfdd746785391468589583ef8ee233aff6db6533f06c856c97ca1c5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CSU_Logo_since_2016.svg",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism",
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1945,
+      "coalitionId": "DE-GOV",
+      "leader": "Markus Söder",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the CDU/CSU–SPD coalition formed in May 2025; the CSU contests only Bavaria and sits with the CDU as one Bundestag group.",
+      "seats": 44,
+      "seatsTotal": 630,
+      "chamberName": "Bundestag",
+      "sources": [
+        {
+          "title": "Christian Social Union in Bavaria — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Christian_Social_Union_in_Bavaria"
+        },
+        {
+          "title": "Bundestag — Wikipedia: 21st Bundestag, 630 seats elected 23 February 2025 — Government (Merz cabinet) 328 (CDU 164, CSU 44, SPD 120); Opposition 302 (AfD 150, Greens 85, Die Linke 64, 3 non-attached)",
+          "url": "https://en.wikipedia.org/wiki/Bundestag"
         }
       ]
     }
