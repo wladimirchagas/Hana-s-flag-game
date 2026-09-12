@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 47 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 48 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -98,6 +98,7 @@ forgotten; it is tracked here.
 | 🇦🇲 Armenia | `#1360` | 3 → 4 | 94 / 105 | **ALL THREE PARTIES UNSEATED — and the chamber size wrong** |
 | 🇦🇿 Azerbaijan | `#1361` | 3 → 11 | 81 / 125 | **WRONG — a party leader who died in 1878** |
 | 🇧🇭 Bahrain | `#1362` | **3 → 0 (removed)** | n/a | **OUT OF SCOPE — no parties; all three were dissolved or banned** |
+| 🇧🇩 Bangladesh | `#1364` | 1 → 10 | 339 / 350 | **FABRICATED LOGO in the repo — and a whole 2026 parliament missing** |
 
 ---
 
@@ -1718,6 +1719,49 @@ Bahrain — Political Societies Law](https://en.wikipedia.org/wiki/Politics_of_B
 
 ---
 
+### 🇧🇩 Bangladesh — audited 2026-09-12 · **a hand-drawn logo found in the repository**
+
+Bangladesh held **one** party, with **0 seats**, against a `seatsTotal` of **272** — a chamber size the
+Jatiya Sangsad has never had. It has **350** members, and a **general election was held on 12 February
+2026** — the first since the previous government fell — returning an entirely new parliament that the
+dataset did not reflect at all.
+
+Nine logo files were already sitting in `public/party-logos/bd/`, prefetched by an earlier pass and
+referenced by nothing. **One of them was fabricated.**
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-261 | **S1** | **invented image content** | `bd/bkm.svg` — **334 bytes of hand-written SVG primitives**: a `<rect>`, a `<circle>`, and the comment *"Center circle traced from the provided image"* | **deleted**; the party now carries a `noImageReason` | This is the "never generate, invent, or approximate flag SVG content" rule, in the party-logo feature. The file was an orphan and never shipped, but it was in the tree waiting to be wired up |
+| PP-262 | **S1** | coverage | 1 party, **0 seats** | **10 parties, 339 of 350** | The whole 2026 parliament was missing, including the governing **BNP (246)** and the **Jamaat-e-Islami (76)** |
+| PP-263 | **S1** | `seatsTotal` | **272** | **350** | The Jatiya Sangsad has 350 members (300 elected + 50 reserved) |
+| PP-264 | **S1** | `leader` | BNP led by **Begum Khaleda Zia** | **Tarique Rahman** | Rahman is BNP chairman and, since 17 February 2026, prime minister |
+| PP-265 | **S2** | `inPower` | BNP **false** | **true and `inExecutive`**, with its three coalition partners | The Tarique Rahman ministry |
+| PP-266 | **S3** | coalitions | none | **`BD-GOV`** (249 of 350) | The ministry's own article |
+| PP-267 | **S2** | unverifiable images | `bd/iab.svg` and `bd/jagpa.png` matched **no** file on Commons | replaced with sourced Commons files | Neither party's article carries a logo, so the prefetched bytes had no citable origin. Replaced with `Hand fan, Election Symbol of the Islami Andolan Bangladesh.png` and `Flag of Jagpa.svg`, both verified |
+
+**Every prefetched file was re-verified against its cited source, not trusted.** Seven of the nine
+matched Commons **byte for byte** (BNP, Jamaat, NCP, Bangladesh Jatiya Party, Ganosanhati, Gono Odhikar
+Parishad, Khelafat Majlis). One was fabricated (PP-261) and two had no traceable origin (PP-267). That
+check is the direct application of the `logoSourceUrl` rule added earlier the same day.
+
+**A false-positive worth recording, so the next sweep does not repeat it.** The same scan flagged
+`my/pas.svg` (225 bytes, a `<rect>` and a `<circle>`) and `eg/justice.svg` as possible fabrications.
+Both turned out to be **byte-identical to their real Commons files** — Commons genuinely hosts PAS's
+logo as a minimal two-shape SVG, because that is what the design is. **File size and "primitives only"
+are not evidence of fabrication; a failed byte-comparison against the cited source is.** Verify before
+deleting.
+
+**Documented gap — 11 of the 350 seats**: nine independents (seven supporting the government, two
+crossbench) and two casual vacancies.
+
+**Bangladesh Khelafat Majlis (3 seats) ships with `noImageReason`**: Commons holds only photographs and
+a lapel-pin image, the party has no English Wikipedia article, and Wikidata records no P154 logo. That
+honest gap replaces the hand-drawn file.
+
+All nine bundled logos are on Commons under free licences and were montage-verified.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1889,7 +1933,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `AZ` Azerbaijan — merged
 - [ ] `BS` Bahamas
 - [x] `BH` Bahrain — audited, deliberately out of scope
-- [ ] `BD` Bangladesh
+- [x] `BD` Bangladesh — merged
 - [ ] `BB` Barbados
 - [ ] `BZ` Belize
 - [ ] `BJ` Benin
