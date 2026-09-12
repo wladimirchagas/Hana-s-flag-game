@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 46 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 47 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -97,6 +97,7 @@ forgotten; it is tracked here.
 | 🇨🇿 Czechia | `#1359` | 3 → 13 | 187 / 200 | **WRONG — a party with no seats carried as seated** |
 | 🇦🇲 Armenia | `#1360` | 3 → 4 | 94 / 105 | **ALL THREE PARTIES UNSEATED — and the chamber size wrong** |
 | 🇦🇿 Azerbaijan | `#1361` | 3 → 11 | 81 / 125 | **WRONG — a party leader who died in 1878** |
+| 🇧🇭 Bahrain | `#1362` | **3 → 0 (removed)** | n/a | **OUT OF SCOPE — no parties; all three were dissolved or banned** |
 
 ---
 
@@ -1685,6 +1686,38 @@ are non-free files on English Wikipedia and are declared. All nine were montage-
 
 ---
 
+### 🇧🇭 Bahrain — audited 2026-09-12 · **deliberately out of scope**
+
+Bahrain's Council of Representatives is **40 seats held by 40 independents**. No party holds a seat,
+because Bahrain has no political parties: the 2005 Political Societies Law permits registered
+*political societies* rather than parties, and candidates contest elections as individuals.
+
+All three entries named societies that have since been **dissolved or banned by court order** — and
+two of them carried the *same name*.
+
+| ID | Sev | Finding |
+|---|---|---|
+| PP-258 | **S1** | All three entries were credited with seats (**1 + 2**) in a chamber whose own composition is **40 independents and no party**. |
+| PP-259 | **S1** | Every one names a dissolved or banned body: **Al-Wefaq** ("legally dissolved" per its own article), the **Islamic Action Society** (`dissolved = 2011` in its infobox) and the **National Democratic Action Society** (Wa'ad, *"banned on terrorism charges"* in June 2017). |
+| PP-260 | **S2** | `BH-ALWEFAQ` carried `nameEn: "Islamic Action Society"` — **the name of a different entry in the same country**. Two of Bahrain's three cards displayed an identical name. |
+
+**Decision: remove Bahrain from `POLITICAL_PARTIES` and delete its two bundled logo files.** The same
+scope decision taken for Afghanistan, and for the same reason: the Learn-mode party grid represents
+current, seated parties in a functioning multi-party legislature, and that condition is not sourceable
+here. This is not a judgement that Bahraini political movements do not exist — it is that none of them
+sits in this chamber, and the dataset should not imply otherwise.
+
+Revisit if Bahrain's Political Societies Law changes or a future election returns society-affiliated
+members the Council itself reports as such.
+
+**Sources checked:** [Council of Representatives (Bahrain) — composition after the 12–19 November 2022
+election](https://en.wikipedia.org/wiki/Council_of_Representatives_(Bahrain)); [Al Wefaq](https://en.wikipedia.org/wiki/Al_Wefaq);
+[Islamic Action Society](https://en.wikipedia.org/wiki/Islamic_Action_Society); [National Democratic
+Action Society](https://en.wikipedia.org/wiki/National_Democratic_Action_Society); [Politics of
+Bahrain — Political Societies Law](https://en.wikipedia.org/wiki/Politics_of_Bahrain).
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1855,7 +1888,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `AM` Armenia — merged
 - [x] `AZ` Azerbaijan — merged
 - [ ] `BS` Bahamas
-- [ ] `BH` Bahrain
+- [x] `BH` Bahrain — audited, deliberately out of scope
 - [ ] `BD` Bangladesh
 - [ ] `BB` Barbados
 - [ ] `BZ` Belize
