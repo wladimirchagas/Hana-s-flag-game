@@ -170,6 +170,18 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "The Sumar group's 26 seats are shared between Movimiento Sumar, Catalunya en Comú, Izquierda Unida, Más Madrid, Compromís and Més per Mallorca. ERC, EH Bildu, the PNV, the BNG and Podemos support the government without holding cabinet office, so they are recorded in power but outside this coalition.",
   },
+  "CH-FC": {
+    id: "CH-FC",
+    name: "Bundesrat",
+    nameEn: "Swiss Federal Council",
+    kind: "coalition",
+    memberPartyIds: ["CH-SVP", "CH-SP", "CH-FDP", "CH-MITTE"],
+    source: {
+      title: "Federal Council (Switzerland) — Wikipedia: a permanent, voluntary grand coalition established by the 1959 Zauberformel; its seven seats are held 2–2–2–1 by the SVP, SP, FDP and The Centre",
+      url: "https://en.wikipedia.org/wiki/Federal_Council_(Switzerland)",
+    },
+    note: "Not a government formed after an election: Switzerland's executive is a standing coalition of its four largest parties, in approximate proportion to their strength in the Federal Assembly, and it does not change when the National Council does. The Greens, Green Liberals and the smaller parties hold no seat on it.",
+  },
   "DK-GOV": {
     id: "DK-GOV",
     name: "Regeringen Frederiksen III",
@@ -3128,101 +3140,359 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
     {
       "id": "CH-SVP",
       "country": "CH",
-      "shortName": "SVP",
-      "name": "Swiss People's Party",
+      "shortName": "SVP/UDC",
+      "name": "Schweizerische Volkspartei",
+      "nameEn": "Swiss People's Party",
       "logo": "party-logos/ch/svp.svg",
       "sha256": "4cf4ad4191c9d1ea0a435a28d8fc32c7feacafd824206b8c0d1035de0f8a27b3",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SVP_UDC_Logo.svg",
       "ideology": [
-        "Right-wing conservatism",
         "National conservatism",
-        "Anti-immigration"
+        "Right-wing populism",
+        "Euroscepticism"
       ],
       "ideologyPosition": "right",
-      "positionRaw": "Right",
+      "positionRaw": "Right-wing to far-right",
       "founded": 1971,
-      "leader": "Marco Chiesa",
-      "leaderTitle": "Party Leader",
+      "coalitionId": "CH-FC",
+      "leader": "Marcel Dettling",
+      "leaderTitle": "President",
       "inPower": true,
-      "inExecutive": false,
+      "inExecutive": true,
+      "timeInPower": "Permanently represented in the Federal Council, the voluntary grand coalition established by the 1959 Zauberformel — 2 of its 7 seats",
       "seats": 62,
       "seatsTotal": 200,
       "chamberName": "National Council",
       "sources": [
         {
-          "title": "Swiss People's Party – Wikipedia (founded 1971, ideology, leadership)",
+          "title": "Swiss People's Party – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Swiss_People%27s_Party"
         },
         {
-          "title": "2023 Swiss federal election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+          "title": "National Council (Switzerland) — Wikipedia: composition after the 22 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Switzerland)"
+        },
+        {
+          "title": "Federal Council (Switzerland) — Wikipedia: the council is a permanent, voluntary grand coalition under the Zauberformel",
+          "url": "https://en.wikipedia.org/wiki/Federal_Council_(Switzerland)"
         }
       ]
     },
     {
       "id": "CH-SP",
       "country": "CH",
-      "shortName": "SP",
-      "name": "Social Democratic Party",
+      "shortName": "SP/PS",
+      "name": "Sozialdemokratische Partei der Schweiz",
+      "nameEn": "Social Democratic Party of Switzerland",
       "logo": "party-logos/ch/sp.svg",
       "sha256": "265b334a8c20d02bec79734825412500416510937c975c1068d000ff5bb65ffa",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_der_Sozialdemokratischen_Partei_der_Schweiz_2009.svg",
       "ideology": [
         "Social democracy",
-        "Progressivism",
-        "Pro-EU"
+        "Pro-Europeanism"
       ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
-      "founded": 1863,
-      "leader": "Karin Keller-Sütter",
-      "leaderTitle": "Party Leader",
+      "founded": 1888,
+      "coalitionId": "CH-FC",
+      "leader": "Cédric Wermuth; Mattea Meyer",
+      "leaderTitle": "Co-presidents",
       "inPower": true,
-      "inExecutive": false,
-      "seats": 43,
+      "inExecutive": true,
+      "timeInPower": "Permanently represented in the Federal Council, the voluntary grand coalition established by the 1959 Zauberformel — 2 of its 7 seats",
+      "seats": 41,
       "seatsTotal": 200,
       "chamberName": "National Council",
       "sources": [
         {
-          "title": "Social Democratic Party (Switzerland) – Wikipedia (founded 1863, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Switzerland)"
+          "title": "Social Democratic Party of Switzerland – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_of_Switzerland"
         },
         {
-          "title": "2023 Swiss federal election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+          "title": "National Council (Switzerland) — Wikipedia: composition after the 22 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Switzerland)"
+        },
+        {
+          "title": "Federal Council (Switzerland) — Wikipedia: the council is a permanent, voluntary grand coalition under the Zauberformel",
+          "url": "https://en.wikipedia.org/wiki/Federal_Council_(Switzerland)"
+        }
+      ]
+    },
+    {
+      "id": "CH-MITTE",
+      "country": "CH",
+      "shortName": "Die Mitte",
+      "name": "Die Mitte",
+      "nameEn": "The Centre",
+      "logo": "party-logos/ch/centre.svg",
+      "sha256": "3c9210d095d4ccc8ae856fdbb2b14d63a0a522ef88270675a9ef2c2650e86a76",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:DieMitte-logo.svg",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2021,
+      "coalitionId": "CH-FC",
+      "leader": "Philipp Matthias Bregy",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Permanently represented in the Federal Council, the voluntary grand coalition established by the 1959 Zauberformel — 1 of its 7 seats",
+      "seats": 29,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "The Centre (political party) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Centre_(political_party)"
+        },
+        {
+          "title": "National Council (Switzerland) — Wikipedia: composition after the 22 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Switzerland)"
+        },
+        {
+          "title": "Federal Council (Switzerland) — Wikipedia: the council is a permanent, voluntary grand coalition under the Zauberformel",
+          "url": "https://en.wikipedia.org/wiki/Federal_Council_(Switzerland)"
         }
       ]
     },
     {
       "id": "CH-FDP",
       "country": "CH",
-      "shortName": "FDP",
-      "name": "Free Democratic Party",
+      "shortName": "FDP/PLR",
+      "name": "FDP.Die Liberalen",
+      "nameEn": "FDP.The Liberals",
       "logo": "party-logos/ch/fdp.svg",
       "sha256": "5e7e56fa6f5f89c87c756074c481c6a4a2e57a95bfa18db62c200210edc8c83e",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_PLR_Les_Lib%C3%A9raux-Radicaux_fr.svg",
       "ideology": [
         "Liberalism",
-        "Classical liberalism",
-        "Centre-right"
+        "Conservative liberalism",
+        "Classical liberalism"
       ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 1919,
-      "leader": "Beatrice Kappeler",
-      "leaderTitle": "Party Leader",
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2009,
+      "coalitionId": "CH-FC",
+      "leader": "Susanne Vincenz-Stauffacher; Benjamin Mühlemann",
+      "leaderTitle": "Co-presidents",
       "inPower": true,
-      "seats": 29,
+      "inExecutive": true,
+      "timeInPower": "Permanently represented in the Federal Council, the voluntary grand coalition established by the 1959 Zauberformel — 2 of its 7 seats",
+      "seats": 28,
       "seatsTotal": 200,
       "chamberName": "National Council",
       "sources": [
         {
-          "title": "Free Democratic Party (Switzerland) – Wikipedia (founded 1919, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/Free_Democratic_Party_(Switzerland)"
+          "title": "The Liberals (Switzerland) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Liberals_(Switzerland)"
         },
         {
-          "title": "2023 Swiss federal election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2023_Swiss_federal_election"
+          "title": "National Council (Switzerland) — Wikipedia: composition after the 22 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Switzerland)"
+        },
+        {
+          "title": "Federal Council (Switzerland) — Wikipedia: the council is a permanent, voluntary grand coalition under the Zauberformel",
+          "url": "https://en.wikipedia.org/wiki/Federal_Council_(Switzerland)"
+        }
+      ]
+    },
+    {
+      "id": "CH-GPS",
+      "country": "CH",
+      "shortName": "GPS/PES",
+      "name": "Grüne Partei der Schweiz",
+      "nameEn": "Green Party of Switzerland",
+      "logo": "party-logos/ch/greens.svg",
+      "sha256": "8f0efb0ada0b27ac9889922223e2a7583a89a70994601b519a3f3f54d367726e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Green_Party_of_Switzerland.svg",
+      "licenceNote": "Non-free logo: the Green Party of Switzerland emblem is a copyrighted trade mark, held on English Wikipedia rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed Commons file exists.",
+      "ideology": [
+        "Green politics"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1983,
+      "leader": "Lisa Mazzone",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 23,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Green Party of Switzerland – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_of_Switzerland"
+        },
+        {
+          "title": "National Council (Switzerland) — Wikipedia: composition after the 22 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Switzerland)"
+        }
+      ]
+    },
+    {
+      "id": "CH-GLP",
+      "country": "CH",
+      "shortName": "GLP/PVL",
+      "name": "Grünliberale Partei",
+      "nameEn": "Green Liberal Party",
+      "logo": "party-logos/ch/glp.svg",
+      "sha256": "f2ea1bde5b67a6cc4e45a7c5403eca54a6cf4aa3f378b283977560cbe7618b8a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Gr%C3%BCnliberale_Partei_12_2021.svg",
+      "ideology": [
+        "Green liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2007,
+      "leader": "Jürg Grossen",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 10,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Green Liberal Party of Switzerland – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Green_Liberal_Party_of_Switzerland"
+        },
+        {
+          "title": "National Council (Switzerland) — Wikipedia: composition after the 22 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Switzerland)"
+        }
+      ]
+    },
+    {
+      "id": "CH-MCG",
+      "country": "CH",
+      "shortName": "MCG",
+      "name": "Mouvement Citoyens Genevois",
+      "nameEn": "Geneva Citizens' Movement",
+      "logo": "party-logos/ch/mcg.png",
+      "sha256": "02fe48d272073613b9acf1f191f2e6d03f6ea4cd471fdc146a27470f8fef5b74",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Geneva_Citizens_movement_logo.png",
+      "ideology": [
+        "Right-wing populism",
+        "National conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2005,
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Geneva Citizens' Movement – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Geneva_Citizens%27_Movement"
+        },
+        {
+          "title": "National Council (Switzerland) — Wikipedia: composition after the 22 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Switzerland)"
+        }
+      ]
+    },
+    {
+      "id": "CH-EVP",
+      "country": "CH",
+      "shortName": "EVP/PEV",
+      "name": "Evangelische Volkspartei der Schweiz",
+      "nameEn": "Evangelical People's Party of Switzerland",
+      "logo": "party-logos/ch/evp.svg",
+      "sha256": "ac749e955e883f495a6deda1a769b83ddd1b886f277ca65d1b5daaa3d0ef31f4",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Evangelical_People%27s_Party_of_Switzerland_logo_2019_de.svg",
+      "licenceNote": "Non-free logo: the Evangelical People's Party of Switzerland emblem is a copyrighted trade mark, held on English Wikipedia rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed Commons file exists.",
+      "ideology": [
+        "Christian democracy",
+        "Social conservatism",
+        "Stewardship theology"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Economic: centre to centre-left; social: centre-right",
+      "founded": 1919,
+      "leader": "Lilian Studer",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Evangelical People's Party of Switzerland – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Evangelical_People%27s_Party_of_Switzerland"
+        },
+        {
+          "title": "National Council (Switzerland) — Wikipedia: composition after the 22 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Switzerland)"
+        }
+      ]
+    },
+    {
+      "id": "CH-EDU",
+      "country": "CH",
+      "shortName": "EDU/UDF",
+      "name": "Eidgenössisch-Demokratische Union",
+      "nameEn": "Federal Democratic Union of Switzerland",
+      "logo": "party-logos/ch/edu.svg",
+      "sha256": "2af015da586df66d3b007160a8e59f6a26458159b7f0d2d5f75ea7e8dbfec68e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_EDU_UDF.svg",
+      "ideology": [
+        "Christian right",
+        "Right-wing populism",
+        "National conservatism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 1975,
+      "leader": "Daniel Frischknecht",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Federal Democratic Union of Switzerland – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Federal_Democratic_Union_of_Switzerland"
+        },
+        {
+          "title": "National Council (Switzerland) — Wikipedia: composition after the 22 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Switzerland)"
+        }
+      ]
+    },
+    {
+      "id": "CH-LEGA",
+      "country": "CH",
+      "shortName": "Lega",
+      "name": "Lega dei Ticinesi",
+      "nameEn": "Ticino League",
+      "noImageReason": "Searched for a Lega dei Ticinesi emblem and found none that can be bundled: Wikimedia Commons holds no logo file for the party (a namespace-6 search returns only seating diagrams), its English Wikipedia article's infobox carries no logo parameter at all, and Wikidata records no P154 logo image on its item under Switzerland (P17). No usable file was reachable from the party's own site or the Elects network either. Listed without an emblem rather than dropped, and rather than shown a canton flag it does not own.",
+      "ideology": [
+        "Regionalism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1991,
+      "leader": "Norman Gobbi",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 200,
+      "chamberName": "National Council",
+      "sources": [
+        {
+          "title": "Ticino League – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ticino_League"
+        },
+        {
+          "title": "National Council (Switzerland) — Wikipedia: composition after the 22 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/National_Council_(Switzerland)"
         }
       ]
     }
