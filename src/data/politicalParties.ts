@@ -426,6 +426,18 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       url: "https://en.wikipedia.org/wiki/Sejm",
     },
   },
+  "PT-GOV": {
+    id: "PT-GOV",
+    name: "XXV Governo Constitucional",
+    nameEn: "25th Constitutional Government of Portugal",
+    kind: "coalition",
+    memberPartyIds: ["PT-PSD", "PT-CDS"],
+    source: {
+      title: "XXV Constitutional Government of Portugal — Wikipedia: a minority coalition of the Social Democratic Party and CDS – People's Party, formed on 5 June 2025 under Luís Montenegro",
+      url: "https://en.wikipedia.org/wiki/XXV_Constitutional_Government_of_Portugal",
+    },
+    note: "A minority coalition holding 91 of the Assembly's 230 seats. No other party supports it on confidence and supply; the largest opposition party is Chega.",
+  },
   "SE-GOV": {
     id: "SE-GOV",
     name: "Tidöregeringen",
@@ -8356,35 +8368,252 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "PT": [
     {
-      "id": "PT-PS",
+      "id": "PT-PSD",
       "country": "PT",
-      "shortName": "PS",
-      "name": "Socialist Party",
-      "logo": "party-logos/pt/ps.png",
-      "sha256": "0e57bd27ff6bc3dd646858db7f0c3d6785c310ac8d5791f26770efc918f634be",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PS_Logo_(Text_version).png",
+      "shortName": "PSD",
+      "name": "Partido Social Democrata",
+      "nameEn": "Social Democratic Party",
+      "logo": "party-logos/pt/psd.svg",
+      "sha256": "87538541c64b357008ba37d3a45c4e5cd4fc71829393579e6d8c72ced53015c1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Social_Democrata_Logo.svg",
       "ideology": [
-        "Social democracy",
-        "Progressivism",
-        "Pro-EU"
+        "Liberal conservatism",
+        "Christian democracy"
       ],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
-      "founded": 1973,
-      "leader": "Pedro Nuno Santos",
-      "leaderTitle": "Party Leader",
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1974,
+      "coalitionId": "PT-GOV",
+      "leader": "Luís Montenegro",
+      "leaderTitle": "President",
       "inPower": true,
-      "seats": 120,
+      "inExecutive": true,
+      "timeInPower": "2024–present",
+      "seats": 89,
       "seatsTotal": 230,
       "chamberName": "Assembly of the Republic",
       "sources": [
         {
-          "title": "Socialist Party (Portugal) – Wikipedia (founded 1973, ideology, leadership)",
+          "title": "Social Democratic Party (Portugal) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democratic_Party_(Portugal)"
+        },
+        {
+          "title": "Assembly of the Republic — Wikipedia: composition after the 18 May 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_the_Republic_(Portugal)"
+        },
+        {
+          "title": "XXV Constitutional Government of Portugal — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/XXV_Constitutional_Government_of_Portugal"
+        }
+      ]
+    },
+    {
+      "id": "PT-CH",
+      "country": "PT",
+      "shortName": "CH",
+      "name": "Chega",
+      "nameEn": "Enough",
+      "logo": "party-logos/pt/ch.svg",
+      "sha256": "c446ef7c0f875c6199cb6f97e3d15d429429797d1c33624e43aa221269deb22f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Chega_(political_party).svg",
+      "licenceNote": "Non-free logo: the Chega emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its English Wikipedia file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "National conservatism",
+        "Right-wing populism",
+        "Social conservatism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2019,
+      "leader": "André Ventura",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 60,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Chega – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chega"
+        },
+        {
+          "title": "Assembly of the Republic — Wikipedia: composition after the 18 May 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_the_Republic_(Portugal)"
+        }
+      ]
+    },
+    {
+      "id": "PT-PS",
+      "country": "PT",
+      "shortName": "PS",
+      "name": "Partido Socialista",
+      "nameEn": "Socialist Party",
+      "logo": "party-logos/pt/ps.svg",
+      "sha256": "8059ef4a35106f8b6d592c34c231b8ccb7d1159927d660bcf272dbfe363faafd",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partido_Socialista_logo.svg",
+      "licenceNote": "Non-free logo: the Socialist Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its English Wikipedia file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1973,
+      "leader": "José Luís Carneiro",
+      "leaderTitle": "Secretary-General",
+      "inPower": false,
+      "seats": 58,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Socialist Party (Portugal) – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Socialist_Party_(Portugal)"
         },
         {
-          "title": "2024 Portuguese legislative election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+          "title": "Assembly of the Republic — Wikipedia: composition after the 18 May 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_the_Republic_(Portugal)"
+        }
+      ]
+    },
+    {
+      "id": "PT-IL",
+      "country": "PT",
+      "shortName": "IL",
+      "name": "Iniciativa Liberal",
+      "nameEn": "Liberal Initiative",
+      "logo": "party-logos/pt/il.png",
+      "sha256": "53a821c60a91a3f46868af1a2b970453f7df21697479cf36fc2a268d79b38beb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Iniciativa_Liberal_logo_1.png",
+      "ideology": [
+        "Liberalism",
+        "Libertarianism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2017,
+      "leader": "Mariana Leitão",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 9,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Liberal Initiative (Portugal) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Initiative_(Portugal)"
+        },
+        {
+          "title": "Assembly of the Republic — Wikipedia: composition after the 18 May 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_the_Republic_(Portugal)"
+        }
+      ]
+    },
+    {
+      "id": "PT-L",
+      "country": "PT",
+      "shortName": "L",
+      "name": "LIVRE",
+      "nameEn": "Free",
+      "logo": "party-logos/pt/livre.svg",
+      "sha256": "44866bb8bd09eb2cb9a1bba25f1536257910d1004e293d351d3317c1ee88dac9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_LIVRE.svg",
+      "ideology": [
+        "Green politics",
+        "Left-libertarianism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2014,
+      "leader": "Isabel Mendes Lopes; Jorge Pinto",
+      "leaderTitle": "Spokespersons",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "LIVRE – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/LIVRE"
+        },
+        {
+          "title": "Assembly of the Republic — Wikipedia: composition after the 18 May 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_the_Republic_(Portugal)"
+        }
+      ]
+    },
+    {
+      "id": "PT-PCP",
+      "country": "PT",
+      "shortName": "PCP",
+      "name": "Partido Comunista Português",
+      "nameEn": "Portuguese Communist Party",
+      "logo": "party-logos/pt/pcp.svg",
+      "sha256": "a98b0598774cdc0c4144106bcd4ebfe63cae5e02ff25fd93dfb98292e3d429c1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Portuguese_Communist_Party_logo.svg",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism",
+        "Hard Euroscepticism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 1921,
+      "leader": "Paulo Raimundo",
+      "leaderTitle": "General Secretary",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Portuguese Communist Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Portuguese_Communist_Party"
+        },
+        {
+          "title": "Assembly of the Republic — Wikipedia: composition after the 18 May 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_the_Republic_(Portugal)"
+        }
+      ]
+    },
+    {
+      "id": "PT-CDS",
+      "country": "PT",
+      "shortName": "CDS–PP",
+      "name": "CDS – Partido Popular",
+      "nameEn": "CDS – People's Party",
+      "logo": "party-logos/pt/cds.svg",
+      "sha256": "27273c1c67d9703326228b8020835e68ca7d01a3bf7efb878afd5e5a2d1e6740",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CDS_%E2%80%93_People%27s_Party_logo.svg",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1974,
+      "coalitionId": "PT-GOV",
+      "leader": "Nuno Melo",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2024–present",
+      "seats": 2,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "CDS – People's Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/CDS_%E2%80%93_People%27s_Party"
+        },
+        {
+          "title": "Assembly of the Republic — Wikipedia: composition after the 18 May 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_the_Republic_(Portugal)"
+        },
+        {
+          "title": "XXV Constitutional Government of Portugal — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/XXV_Constitutional_Government_of_Portugal"
         }
       ]
     },
@@ -8393,31 +8622,105 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "PT",
       "shortName": "BE",
       "name": "Bloco de Esquerda",
+      "nameEn": "Left Bloc",
       "logo": "party-logos/pt/be.svg",
       "sha256": "aab184a1927eb5f5a79018f42ae1b034644be7718a13528ff2a510dfdb675dbb",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:LeftBloc.svg",
       "ideology": [
-        "Left-wing",
-        "Socialism",
-        "Progressivism"
+        "Democratic socialism",
+        "Left-wing populism",
+        "Anti-capitalism"
       ],
       "ideologyPosition": "left",
-      "positionRaw": "Left",
-      "founded": 1997,
-      "leader": "Mariana Mortágua",
-      "leaderTitle": "Party Leader",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 1999,
+      "leader": "José Manuel Pureza",
+      "leaderTitle": "Coordinator of the Political Commission",
       "inPower": false,
-      "seats": 12,
+      "seats": 1,
       "seatsTotal": 230,
       "chamberName": "Assembly of the Republic",
       "sources": [
         {
-          "title": "Bloco de Esquerda – Wikipedia (founded 1997, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/Bloco_de_Esquerda"
+          "title": "Left Bloc (Portugal) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Left_Bloc_(Portugal)"
         },
         {
-          "title": "2024 Portuguese legislative election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2024_Portuguese_legislative_election"
+          "title": "Assembly of the Republic — Wikipedia: composition after the 18 May 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_the_Republic_(Portugal)"
+        }
+      ]
+    },
+    {
+      "id": "PT-PAN",
+      "country": "PT",
+      "shortName": "PAN",
+      "name": "Pessoas-Animais-Natureza",
+      "nameEn": "People-Animals-Nature",
+      "logo": "party-logos/pt/pan.svg",
+      "sha256": "15bb73e6d808f0d2cd3d547b0bbf44081ce2cdb9e3be2528e0e320a3f438ea9c",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:People-Animals-Nature_logo.svg",
+      "licenceNote": "Non-free logo: the People-Animals-Nature emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its English Wikipedia file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "Environmentalism",
+        "Animal rights",
+        "Ecofeminism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2009,
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "People Animals Nature – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People_Animals_Nature"
+        },
+        {
+          "title": "Assembly of the Republic — Wikipedia: composition after the 18 May 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_the_Republic_(Portugal)"
+        }
+      ]
+    },
+    {
+      "id": "PT-JPP",
+      "country": "PT",
+      "shortName": "JPP",
+      "name": "Juntos pelo Povo",
+      "nameEn": "Together for the People",
+      "logo": "party-logos/pt/jpp.svg",
+      "sha256": "9e19b62b9e4dd78f6a3db9a68e37973ee9c80be5c9236a86b24bdbcf28b2fe5e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Juntos_pelo_Povo.svg",
+      "licenceNote": "Non-free logo: the Juntos pelo Povo emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its English Wikipedia file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "Madeiran regionalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2015,
+      "previousNames": [
+        {
+          "name": "Movimento Pelo Povo da Gaula",
+          "nameEn": "Movement for the People of Gaula",
+          "years": "2008–2015"
+        }
+      ],
+      "leader": "Lina Pereira",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 230,
+      "chamberName": "Assembly of the Republic",
+      "sources": [
+        {
+          "title": "Together for the People – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Together_for_the_People"
+        },
+        {
+          "title": "Assembly of the Republic — Wikipedia: composition after the 18 May 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_the_Republic_(Portugal)"
         }
       ]
     }
