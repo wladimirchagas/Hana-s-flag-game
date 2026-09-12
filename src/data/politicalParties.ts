@@ -228,6 +228,17 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
       url: "https://en.wikipedia.org/wiki/Pakatan_Harapan",
     },
   },
+  "LU-GOV": {
+    id: "LU-GOV",
+    name: "Frieden-Bettel Government",
+    kind: "coalition",
+    memberPartyIds: ["LU-CSV", "LU-DP"],
+    source: {
+      title: "Chamber of Deputies (Luxembourg) — Wikipedia: the Frieden-Bettel cabinet holds 35 of 60 seats — CSV 21, DP 14",
+      url: "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Luxembourg)",
+    },
+    note: "A majority coalition of the Christian Social People's Party and the Democratic Party, in office since 17 November 2023 under Prime Minister Luc Frieden.",
+  },
   "MY-BN": {
     id: "MY-BN",
     name: "Barisan Nasional",
@@ -19209,6 +19220,46 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "LU": [
     {
+      "id": "LU-CSV",
+      "country": "LU",
+      "shortName": "CSV",
+      "name": "Chrëschtlech-Sozial Vollekspartei",
+      "nameEn": "Christian Social People's Party",
+      "logo": "party-logos/lu/csv.png",
+      "sha256": "74d8e1137f0be3dcf3996b2351408ff212c04f12c9b16670777a8339af5d765c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CSV2022-Logo-CMYK.png",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1944,
+      "coalitionId": "LU-GOV",
+      "leader": "Luc Frieden",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2023–present",
+      "seats": 21,
+      "seatsTotal": 60,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Christian Social People's Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Christian_Social_People%27s_Party"
+        },
+        {
+          "title": "Chamber of Deputies (Luxembourg) — Wikipedia: composition after the 8 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Luxembourg)"
+        },
+        {
+          "title": "Frieden-Bettel Government — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Frieden-Bettel_Government"
+        }
+      ]
+    },
+    {
       "id": "LU-DP",
       "country": "LU",
       "shortName": "DP",
@@ -19218,61 +19269,35 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "9d1421f4ebb3bc12639381a45d1d1a21e7705ff4c903924831cbb8d1aee19b4e",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Democratic_Party_(Luxembourg).svg",
       "ideology": [
-        "Centre-right",
         "Liberalism",
-        "Conservatism"
+        "Economic liberalism",
+        "Social liberalism",
+        "Pro-Europeanism"
       ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 1904,
-      "leader": "Xavier Bettel",
-      "leaderTitle": "Party President",
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1955,
+      "coalitionId": "LU-GOV",
+      "leader": "Carole Hartmann",
+      "leaderTitle": "Leader",
       "inPower": true,
-      "seats": 21,
+      "inExecutive": true,
+      "timeInPower": "2013–present",
+      "seats": 14,
       "seatsTotal": 60,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Democratic Party – Wikipedia",
+          "title": "Democratic Party (Luxembourg) – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Luxembourg)"
         },
         {
-          "title": "2023 Luxembourgish legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Luxembourgish_legislative_election"
-        }
-      ]
-    },
-    {
-      "id": "LU-CSV",
-      "country": "LU",
-      "shortName": "CSV",
-      "name": "Chrëschleche Sozial Vollekspartei",
-      "nameEn": "Christian Social People's Party",
-      "logo": "party-logos/lu/csv.png",
-      "sha256": "74d8e1137f0be3dcf3996b2351408ff212c04f12c9b16670777a8339af5d765c",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CSV2022-Logo-CMYK.png",
-      "ideology": [
-        "Centre-right",
-        "Christian democracy",
-        "Conservatism"
-      ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 1914,
-      "leader": "Claude Haagen",
-      "leaderTitle": "Party President",
-      "inPower": true,
-      "seats": 13,
-      "seatsTotal": 60,
-      "chamberName": "Chamber of Deputies",
-      "sources": [
-        {
-          "title": "Christian Social People's Party – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Christian_Social_People%27s_Party"
+          "title": "Chamber of Deputies (Luxembourg) — Wikipedia: composition after the 8 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Luxembourg)"
         },
         {
-          "title": "2023 Luxembourgish legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Luxembourgish_legislative_election"
+          "title": "Frieden-Bettel Government — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Frieden-Bettel_Government"
         }
       ]
     },
@@ -19280,32 +19305,164 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "LU-LSAP",
       "country": "LU",
       "shortName": "LSAP",
-      "name": "Lëtzebuergesch Sozialistisch Aarbechter Partei",
-      "nameEn": "Socialist Workers' Party",
+      "name": "Lëtzebuerger Sozialistesch Aarbechterpartei",
+      "nameEn": "Luxembourg Socialist Workers' Party",
       "logo": "party-logos/lu/lsap.svg",
       "sha256": "b7200d91bdad41baa2fcf239b9626c20ab798136730d185b5f8ad76af3c79b13",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Luxembourg_Socialist_Workers'_Party.svg",
       "ideology": [
-        "Centre-left",
         "Social democracy"
       ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 1902,
-      "leader": "François Benoy",
-      "leaderTitle": "Party President",
-      "inPower": true,
-      "seats": 10,
+      "leader": "Georges Engel; Maxime Miltgen",
+      "leaderTitle": "Presidents",
+      "inPower": false,
+      "seats": 12,
       "seatsTotal": 60,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Socialist Workers' Party – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Socialist_Workers%27_Party_(Luxembourg)"
+          "title": "Luxembourg Socialist Workers' Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Luxembourg_Socialist_Workers%27_Party"
         },
         {
-          "title": "2023 Luxembourgish legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Luxembourgish_legislative_election"
+          "title": "Chamber of Deputies (Luxembourg) — Wikipedia: composition after the 8 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Luxembourg)"
+        }
+      ]
+    },
+    {
+      "id": "LU-ADR",
+      "country": "LU",
+      "shortName": "ADR",
+      "name": "Alternativ Demokratesch Reformpartei",
+      "nameEn": "Alternative Democratic Reform Party",
+      "logo": "party-logos/lu/adr.svg",
+      "sha256": "ca1667a74c9048a3addb27fff644eafe1000033f15d931e61ac1d6940dc50e91",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Alternative_Democratic_Reform_Party_(2022).svg",
+      "ideology": [
+        "Social conservatism",
+        "Soft Euroscepticism",
+        "Luxembourgish language and interests"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 1987,
+      "leader": "Alexandra Schoos",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 60,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Alternative Democratic Reform Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alternative_Democratic_Reform_Party"
+        },
+        {
+          "title": "Chamber of Deputies (Luxembourg) — Wikipedia: composition after the 8 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Luxembourg)"
+        }
+      ]
+    },
+    {
+      "id": "LU-GREENS",
+      "country": "LU",
+      "shortName": "Gréng",
+      "name": "Déi Gréng",
+      "nameEn": "The Greens",
+      "logo": "party-logos/lu/greens.svg",
+      "sha256": "79af86f769886fb6b9a59d32ebcd037f366b22bc64799c724c40e50aaff1402b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:D%C3%A9i_Gr%C3%A9ng_Logo.svg",
+      "ideology": [
+        "Green politics",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1983,
+      "leader": "Stéphanie Empain; François Benoy",
+      "leaderTitle": "Co-leaders",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 60,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "The Greens (Luxembourg) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Greens_(Luxembourg)"
+        },
+        {
+          "title": "Chamber of Deputies (Luxembourg) — Wikipedia: composition after the 8 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Luxembourg)"
+        }
+      ]
+    },
+    {
+      "id": "LU-PIRATES",
+      "country": "LU",
+      "shortName": "Piraten",
+      "name": "Piratepartei Lëtzebuerg",
+      "nameEn": "Pirate Party Luxembourg",
+      "logo": "party-logos/lu/pirates.png",
+      "sha256": "20df0f3403b93e9df4f0b5434c8df29e6af1def4c08e64c70bb39b9e5b4195f4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Pirate_Party_of_Luxembourg.png",
+      "ideology": [
+        "Pirate politics",
+        "Direct democracy",
+        "Copyright reform",
+        "Government transparency"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Syncretic",
+      "founded": 2009,
+      "leader": "Starsky Flor; Rebecca Lau",
+      "leaderTitle": "Spokespersons",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 60,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Pirate Party Luxembourg – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pirate_Party_Luxembourg"
+        },
+        {
+          "title": "Chamber of Deputies (Luxembourg) — Wikipedia: composition after the 8 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Luxembourg)"
+        }
+      ]
+    },
+    {
+      "id": "LU-LEFT",
+      "country": "LU",
+      "shortName": "Lénk",
+      "name": "Déi Lénk",
+      "nameEn": "The Left",
+      "logo": "party-logos/lu/left.svg",
+      "sha256": "03735510cf8e7fa7bac70a1b665a2e5d1e817f6f2736ad6d67fe81068f01b417",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_D%C3%A9i_L%C3%A9nk.svg",
+      "ideology": [
+        "Democratic socialism",
+        "Republicanism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1999,
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 60,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "The Left (Luxembourg) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Left_(Luxembourg)"
+        },
+        {
+          "title": "Chamber of Deputies (Luxembourg) — Wikipedia: composition after the 8 October 2023 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Luxembourg)"
         }
       ]
     }
