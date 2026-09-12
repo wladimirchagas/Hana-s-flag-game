@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 44 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 45 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -95,6 +95,7 @@ forgotten; it is tracked here.
 | 🇦🇹 Austria | `#1356` | 2 → 5 | 182 / 183 | **WRONG — the election's winner recorded with zero seats** |
 | 🇦🇫 Afghanistan | `9f1bd78` | **3 → 0 (removed)** | n/a | **OUT OF SCOPE — party activity is illegal; audited by the owner** |
 | 🇨🇿 Czechia | `#1359` | 3 → 13 | 187 / 200 | **WRONG — a party with no seats carried as seated** |
+| 🇦🇲 Armenia | `#1360` | 3 → 4 | 94 / 105 | **ALL THREE PARTIES UNSEATED — and the chamber size wrong** |
 
 ---
 
@@ -1596,6 +1597,53 @@ All thirteen logos are on Wikimedia Commons under free licences and were montage
 
 ---
 
+### 🇦🇲 Armenia — audited 2026-09-12 · first country under the Asian priority
+
+The first country audited under the owner's **2026-09-12 Asian priority update**, after Afghanistan.
+
+Armenia's three entries held **zero seats between them** — `AM-RKP` (Republican Party), `AM-FDARC`
+(Free Democrats) and `AM-HGP` (Armenian Public Party), each `seats: 0` against a `seatsTotal` of
+**101**. Every one of the three had been out of parliament since 2018, the chamber has **105**
+members rather than 101, and a **general election was held on 7 June 2026** that none of them
+reflected. Armenia was the worst instance of defect **B3** in the dataset: a country whose entire
+party list was unseated.
+
+The National Assembly, 105 seats: **Government 64** — Civil Contract — **Opposition 41** — Strong
+Armenia's group 29, the Armenia Alliance's 12.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-247 | **S1** | coverage | 3 parties, **all with 0 seats** | **4 parties, 94 of 105** | None of the Republican Party, the Free Democrats or the Armenian Public Party has sat since 2018. All three are removed; the seated parties replace them |
+| PP-248 | **S1** | `seatsTotal` | **101** | **105** | The National Assembly's own composition. The 2026 election returned 105 members |
+| PP-249 | **S1** | the governing party was absent | — | **Civil Contract, 62 seats**, `inExecutive` | Nikol Pashinyan's party has governed since 2018 and holds an outright majority; it was not in the dataset at all |
+| PP-250 | **S2** | opposition | — | **Strong Armenia 26, ARF 5, Country of Living 1** | Strong Armenia was founded on **8 December 2025** and is now the largest opposition party — it could not have appeared in the old entries |
+| PP-251 | **S6** | `positionRaw` | — | each party's cited position verbatim (ARF "Centre-left to left-wing"; Strong Armenia "Big tent") | Strong Armenia is filed `other`: "Big tent" is not a point on the axis |
+
+**A bloc is not a party, again.** The Assembly reports groups, and both opposition groups contain
+other parties and independents: **Strong Armenia's 29** is the party's 26 plus one independent,
+Country of Living 1 and New Age 1; the **Armenia Alliance's 12** is six independents, the ARF's 5 and
+Forward Party 1 — the Alliance itself holds no seat of its own. Each party carries only its own
+deputies, the same treatment as Czechia and France.
+
+**Seats are cited to the chamber, not to the party.** The ARF's own infobox claims **15 of 107** and
+Strong Armenia's **29 of 107** — both the previous parliament's denominator. The Assembly's dated
+composition gives ARF 5 and Strong Armenia 26 of 105. Trusting the party page here would have carried
+the stale figure straight in, which is exactly the circular-citation trap the sweep's method forbids.
+
+**Documented gap — 11 of the 105 seats**: **nine independents**, plus **New Age** and the **Forward
+Party**, one seat each. Both are named by the Assembly but have no English Wikipedia article, so no
+field beyond the name and seat count could be sourced; they are recorded here rather than entered
+with invented data.
+
+**Country of Living ships with no ideology list.** Its article carries a position (Centre) but no
+ideology field at all, so the array is empty and the widget falls back to the position label — an
+honest absence rather than a guess.
+
+Two logos are on Commons; two (the ARF and Country of Living) are non-free files on English Wikipedia
+and are declared. All four were montage-verified.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1763,7 +1811,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `DZ` Algeria
 - [ ] `AO` Angola
 - [ ] `AG` Antigua and Barbuda
-- [ ] `AM` Armenia
+- [x] `AM` Armenia — merged
 - [ ] `AZ` Azerbaijan
 - [ ] `BS` Bahamas
 - [ ] `BH` Bahrain

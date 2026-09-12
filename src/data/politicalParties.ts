@@ -1495,90 +1495,137 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "AM": [
     {
-      "id": "AM-RKP",
+      "id": "AM-CC",
       "country": "AM",
-      "shortName": "RKP",
-      "name": "Հայաստանի Հանրապետական Կոմունիստական Կուսակցություն",
-      "nameEn": "Republican Party of Armenia",
-      "logo": "party-logos/am/rkp.png",
-      "sha256": "d4b9cd0b834930866c82a1e61521c95fb96ef1e3c49512bf59853d26d8e9b4fd",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Republican_Party_of_Armenia_logo.png",
-      "licenceNote": "Non-free logo: the Republican Party of Armenia emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
-      "ideology": [
-        "Conservative liberalism"
-      ],
-      "ideologyPosition": "centre-right",
-      "founded": 1998,
-      "inPower": false,
-      "seats": 0,
-      "seatsTotal": 101,
-      "chamberName": "National Assembly",
-      "sources": [
-        {
-          "title": "Republican Party of Armenia – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Republican_Party_of_Armenia"
-        },
-        {
-          "title": "2022 Armenian legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Armenian_legislative_election"
-        }
-      ]
-    },
-    {
-      "id": "AM-FDARC",
-      "country": "AM",
-      "shortName": "FDA",
-      "name": "Ազատ Դեմոկրատների Ստորագծում",
-      "nameEn": "Free Democratic Alliance of Armenia",
-      "noImageReason": "Searched for a Free Democratic Alliance of Armenia emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "shortName": "CC",
+      "name": "Քաղաքացիական պայմանագիր",
+      "nameEn": "Civil Contract",
+      "logo": "party-logos/am/cc.svg",
+      "sha256": "ae5c61698644c59648415add4da5f2d7cdba35119a4e0ce0d511887f04566160",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Civil_Contract_(Armenia).svg",
       "ideology": [
         "Liberalism",
-        "Democracy"
+        "Reformism",
+        "Populism",
+        "Pro-Europeanism"
       ],
       "ideologyPosition": "centre",
-      "founded": 2009,
-      "inPower": false,
-      "seats": 0,
-      "seatsTotal": 101,
+      "positionRaw": "Centre",
+      "founded": 2015,
+      "leader": "Nikol Pashinyan",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2018–present",
+      "seats": 62,
+      "seatsTotal": 105,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "Free Democratic Alliance of Armenia – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Free_Democratic_Alliance_of_Armenia"
+          "title": "Civil Contract (Armenia) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Civil_Contract_(Armenia)"
         },
         {
-          "title": "2022 Armenian legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Armenian_legislative_election"
+          "title": "National Assembly (Armenia) — Wikipedia: composition after the 7 June 2026 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Armenia)"
         }
       ]
     },
     {
-      "id": "AM-HGP",
+      "id": "AM-SA",
       "country": "AM",
-      "shortName": "HGP",
-      "name": "Հայ Գործիչ Պետական Կուսակցություն",
-      "nameEn": "Armenian Public Party",
-      "noImageReason": "Searched for a Armenian Public Party emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "shortName": "Strong Armenia",
+      "name": "Ուժեղ Հայաստան",
+      "nameEn": "Strong Armenia",
+      "logo": "party-logos/am/sa.svg",
+      "sha256": "bb152974bdd40bb2aa20d85652a3953a79b9f1f6298c27a523263fa17618115e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Strong_Armenia.svg",
       "ideology": [
-        "Conservatism",
-        "Armenian nationalism"
+        "Pro-Armenian Apostolic Church",
+        "Russophilia"
       ],
-      "ideologyPosition": "right",
-      "founded": 2003,
-      "leader": "Armenak Petrosyan",
-      "leaderTitle": "Party Leader",
+      "ideologyPosition": "other",
+      "positionRaw": "Big tent",
+      "founded": 2025,
+      "leader": "Samvel Karapetyan",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 0,
-      "seatsTotal": 101,
+      "seats": 26,
+      "seatsTotal": 105,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "Armenian Public Party – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Armenian_Public_Party"
+          "title": "Strong Armenia – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Strong_Armenia"
         },
         {
-          "title": "2022 Armenian legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Armenian_legislative_election"
+          "title": "National Assembly (Armenia) — Wikipedia: composition after the 7 June 2026 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Armenia)"
+        }
+      ]
+    },
+    {
+      "id": "AM-ARF",
+      "country": "AM",
+      "shortName": "ARF",
+      "name": "Հայ Յեղափոխական Դաշնակցութիւն",
+      "nameEn": "Armenian Revolutionary Federation",
+      "logo": "party-logos/am/arf.png",
+      "sha256": "e4ed8d54de18dcdad6d988a69127819bc05b2e7d77bd24cb04750fb183cb8393",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Armenian_Revolutionary_Federation_logo.png",
+      "licenceNote": "Non-free logo: the Armenian Revolutionary Federation emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "Armenian nationalism",
+        "United Armenia"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1890,
+      "leader": "Hakob Ter-Khachaturyan",
+      "leaderTitle": "Bureau Chairman",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 105,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Armenian Revolutionary Federation – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Armenian_Revolutionary_Federation"
+        },
+        {
+          "title": "National Assembly (Armenia) — Wikipedia: composition after the 7 June 2026 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Armenia)"
+        }
+      ]
+    },
+    {
+      "id": "AM-COL",
+      "country": "AM",
+      "shortName": "Country of Living",
+      "name": "Ապրելու երկիր",
+      "nameEn": "Country of Living",
+      "logo": "party-logos/am/col.svg",
+      "sha256": "5163c4738ff5a74e9b6fec54dc92e6ce0c4775d837bb8dae6dcd5b82db644440",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Country_of_Living.svg",
+      "licenceNote": "Non-free logo: the Country of Living emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2021,
+      "leader": "Mane Tandilyan",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 105,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Country of Living – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Country_of_Living"
+        },
+        {
+          "title": "National Assembly (Armenia) — Wikipedia: composition after the 7 June 2026 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Armenia)"
         }
       ]
     }
