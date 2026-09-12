@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { bundledCountries, fetchCountries, type Country } from "../api/countries";
 import { FLAG_ADOPTION_YEAR } from "../data/flagAdoptionYears";
 import { ERA_EXTENT_CAVEATS } from "../data/polityExistence";
@@ -97,6 +97,7 @@ import {
 import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/subdivision";
 import "../App.css";
 import "./LearnPage.css";
+import "./LearnAtlas.css";
 
 // Codes where flagcdn.com serves a politically incorrect flag.
 // These must never fall back to flagcdn — show broken image instead.
@@ -200,7 +201,10 @@ function selectionFlag(s: Selection, baseUrl: string): string | null {
 // here; the panel now renders a structured <EntitySummary /> component
 // for both modern + historical entities.)
 
-export default function LearnPage() {
+export default function LearnPage({ variant }: { variant?: "atlas" | "default" } = {}) {
+  const location = useLocation();
+  const isAtlas = variant === "atlas" || location.pathname.includes("visual-redesign");
+
   // --- Shareable-link URL state ---
   // The page reflects its view (era, selected country/polity, subdivision
   // drill-down) in the query string so a copied URL reproduces the view.
@@ -1449,7 +1453,7 @@ export default function LearnPage() {
           : null;
 
   return (
-    <div className="learn-page">
+    <div className={`learn-page${isAtlas ? " learn-page--atlas" : ""}`}>
       {subdivisionMode && (() => {
         const slot = document.getElementById(SITE_TOPBAR_LEFT_SLOT_ID);
         if (!slot) return null;
