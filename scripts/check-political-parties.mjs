@@ -97,7 +97,7 @@ const GRANDFATHERED_PARTIES_WITH_NO_IMAGE = new Set([
   // party Wikipedia articles, or official sources. Grandfathered pending future
   // logo discovery or sourcing of non-free images with copyright documentation.
   // (Ecuador's four entries were all removed or given real logos in the 2026 audit.)
-  "GY-AFC", "GY-APNU", "GY-PPPC",
+  // (Guyana's three entries were all removed or given real logos in the 2026 audit.)
   // (Paraguay's three entries were all removed or given real logos in the 2026 audit.)
   "SR-NF", "SR-VHP",
 ]);
