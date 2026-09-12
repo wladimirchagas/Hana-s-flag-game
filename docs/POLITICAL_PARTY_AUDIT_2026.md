@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 21 / 195 — Southeast Asia complete; South America under way.**
+**Countries audited: 22 / 195 — Southeast Asia complete; South America under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -67,6 +67,7 @@ forgotten; it is tracked here.
 | 🇪🇨 Ecuador | `#1331` | 4 → 6 | 133 / 151 | **WRONG — a fictitious party with 17 seats** |
 | 🇧🇴 Bolivia | `#1332` | 3 → 6 | 129 / 130 | **WRONG — two invented parties, no government** |
 | 🇵🇾 Paraguay | `#1333` | 3 → 7 | 77 / 80 | **WRONG — a chamber size that never existed** |
+| 🇺🇾 Uruguay | `#1334` | 1 → 6 | **99 / 99** | **WRONG — a fabricated logo explainer** |
 
 ---
 
@@ -691,6 +692,48 @@ montage-verified. Paraguay's three entries have left `GRANDFATHERED_PARTIES_WITH
 
 ---
 
+### 🇺🇾 Uruguay — audited 2026-09-12
+
+Uruguay had **one party**, and the most interesting defect in the sweep so far: a **fabricated
+logo explainer**.
+
+`UY-FA` carried a `logoMeaning` asserting that the Frente Amplio's emblem "features a red and white
+color scheme", that "the red represents the socialist and social democratic values of the alliance,
+while white symbolizes peace and democratic governance" — cited to the party's English Wikipedia
+article, which says nothing of the kind. **The image is not red and white.** It is the Frente Amplio
+flag: red, blue and white bands with a yellow FA monogram. So the text was not merely unsourced
+(which the flag-meaning hard rule already forbids) — it described a picture that is not there, with
+a citation that does not support it. Removed rather than rewritten: no source documents the emblem's
+symbolism.
+
+The Chamber of Representatives elected on 27 October 2024 seats **FA 48** (government) against an
+opposition of 51: the **Coalición Republicana** 47 (Partido Nacional 29, Partido Colorado 17,
+Partido Independiente 1), **Identidad Soberana** 2 and **Cabildo Abierto** 2.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-105 | **S1** | `logoMeaning` | fabricated symbolism, wrong about the image itself, cited to an article that does not contain it | **removed** | The flag-meaning hard rule: never fabricate, always cite. The emblem is red/blue/white with a yellow FA monogram |
+| PP-106 | **S1** | `seatsTotal` | **130** | **99** | 130 is not a Uruguayan number at all — the Chamber has 99 representatives and the Senate 30 |
+| PP-107 | **S1** | `chamberName` | "Chamber of Deputies" | **"Chamber of Representatives"** | Uruguay's lower house is the Cámara de Representantes |
+| PP-108 | **S1** | `leader` | **Yamandú Orsi** | **Fernando Pereira** | Orsi is *President of Uruguay*; the Frente Amplio's own president is Pereira. The party's head of state was being shown as its party leader |
+| PP-109 | **S1** | coverage | 1 party, 48 of a wrong 130 | **6 parties, 99 of 99 — exact** | Five of the six seated parties were absent, including the 29-seat Partido Nacional |
+| PP-110 | **S2** | `timeInPower` | "2025-present" | a sentence naming the date and the event | The field is prose elsewhere in the dataset; a bare year range reads as a data artefact |
+| PP-111 | **S3** | logo path | `party-logos/**UY**/…` | `party-logos/**uy**/…` | The only upper-case logo directory in the repository |
+| PP-112 | **S3** | coalitions | none | **`UY-CR`** (Coalición Republicana, 3 members, 47 seats) | The Chamber's own grouping |
+
+**Two non-free logos, declared.** Identidad Soberana's and Cabildo Abierto's emblems have no
+freely-licensed file on Commons; both are bundled from the SVGs English Wikipedia hosts under a
+fair-use rationale, each carrying a `licenceNote` stating the copyright position — the same
+owner-directed position taken for the non-free football crests and passport covers. Note that
+Spanish Wikipedia's Identidad Soberana infobox uses **a cropped photograph of the party's candidate**
+in the logo slot; using it would have put a man's face on the card as a party emblem, which is
+exactly the class of wrong-image bug the montage pass exists to catch.
+
+All six logos were byte-checked against their extension and montage-verified. Uruguay's seats now
+reconcile **exactly** — 99 of 99.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -724,7 +767,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `EC` Ecuador — merged
 - [x] `BO` Bolivia — merged
 - [x] `PY` Paraguay — merged
-- [ ] `UY` Uruguay
+- [x] `UY` Uruguay — merged
 - [ ] `GY` Guyana
 - [ ] `SR` Suriname
 
