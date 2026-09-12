@@ -15041,129 +15041,229 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "BO": [
     {
-      "id": "BO-MAS",
+      "id": "BO-PDC",
       "country": "BO",
-      "shortName": "MAS",
-      "name": "Movimiento al Socialismo",
-      "nameEn": "Movement for Socialism",
-      "logo": "party-logos/bo/mas.svg",
-      "sha256": "f7dcd2d7477fdea08d3d18aa46f459505bb3b84446228ca35ab5d525a2d310e0",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MAS-IPSP_logo.svg",
-      "logoMeaning": {
-        "description": "The MAS (Movimiento al Socialismo) logo features a stylized indigenous design incorporating symbolism from Andean traditions, representing the party's commitment to indigenous rights, socialism, and anti-imperialist politics. The logo emphasizes the party's connection to Bolivia's indigenous majority and its vision of an inclusive, socialist democracy that centres indigenous peoples' voices and cultural heritage.",
-        "sources": [
-          {
-            "title": "Movement for Socialism (Bolivia) — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Movement_for_Socialism_(Bolivia)"
-          },
-          {
-            "title": "Movimiento al Socialismo — Wikipedia (es)",
-            "url": "https://es.wikipedia.org/wiki/Movimiento_al_Socialismo_(Bolivia)"
-          }
-        ]
-      },
-      "ideology": ["Socialism", "Indigenous rights", "Anti-imperialism"],
-      "ideologyPosition": "left",
-      "founded": 1997,
-      "leader": "Grover García",
-      "leaderTitle": "Party President",
-      "inPower": false,
-      "timeInPower": "2021-2025",
-      "seats": 2,
-      "seatsTotal": 130,
-      "chamberName": "Plurinational Legislative Assembly",
-      "sources": [
-        {
-          "title": "Movement for Socialism – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Movement_for_Socialism_(Bolivia)"
-        },
-        {
-          "title": "2020 Bolivian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Bolivian_general_election"
-        }
-      ]
-    },
-    {
-      "id": "BO-APG",
-      "country": "BO",
-      "shortName": "APG",
-      "name": "Arcistas por Bolivia",
-      "nameEn": "Arcists for Bolivia",
-      "logo": "party-logos/bo/apg.svg",
-      "sha256": "f3b98a74e7ff7f5f60825904d362517401f7e228f6b1883c174384053dc72adb",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Arcistas_por_Bolivia.svg",
-      "logoMeaning": {
-        "description": "The APG (Arcistas por Bolivia) logo features the national colours of Bolivia with a design emphasizing civic nationalism, stability, and centre-right political values. The emblem reflects the party's commitment to institutional conservatism, democratic governance, and a vision of Bolivia organized around civic values and national unity rather than class or indigenous identity politics.",
-        "sources": [
-          {
-            "title": "2025 Bolivian general election — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/2025_Bolivian_general_election"
-          },
-          {
-            "title": "Luis Fernando Camacho — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Luis_Fernando_Camacho"
-          }
-        ]
-      },
-      "ideology": ["Conservatism", "Civic nationalism", "Centre-right"],
-      "ideologyPosition": "centre-right",
-      "founded": 2017,
-      "leader": "Luis Fernando Camacho",
-      "leaderTitle": "Party President",
-      "inPower": false,
-      "seats": 16,
-      "seatsTotal": 130,
-      "chamberName": "Plurinational Legislative Assembly",
-      "sources": [
-        {
-          "title": "2025 Bolivian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2025_Bolivian_general_election"
-        },
-        {
-          "title": "Luis Fernando Camacho – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Luis_Fernando_Camacho"
-        }
-      ]
-    },
-    {
-      "id": "BO-UM",
-      "country": "BO",
-      "shortName": "UM",
-      "name": "Unidad Movil",
-      "nameEn": "Mobility Unity",
-      "logo": "party-logos/bo/um.svg",
-      "sha256": "3283f70b01e61225983bdc847834b6b296d35aacdfbd09618cc55a46cd73d724",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Unidad_Movil_logo.svg",
-      "logoMeaning": {
-        "description": "The UM (Unidad Movil) logo reflects the party's centrist and liberal positioning, emphasizing pragmatism, market-oriented policies, and political mobility. The design conveys the party's focus on economic liberalism, institutional reform, and flexible coalition-building as alternatives to both left-wing socialism and rigid conservatism.",
-        "sources": [
-          {
-            "title": "2025 Bolivian general election — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/2025_Bolivian_general_election"
-          },
-          {
-            "title": "Oscar Ortiz — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Oscar_Ortiz_(politician)"
-          }
-        ]
-      },
-      "ideology": ["Centrism", "Liberalism"],
+      "shortName": "PDC",
+      "name": "Partido Demócrata Cristiano",
+      "nameEn": "Christian Democratic Party",
+      "logo": "party-logos/bo/pdc.png",
+      "sha256": "e73fe1d8432b0f4a88bd89d08be62ec485fd1716b582ae6a5bb3ff4c21a636b4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PDC_Bolivia.png",
+      "ideology": [
+        "Big tent",
+        "Centrism",
+        "Reformism",
+        "Christian humanism",
+        "Decentralisation"
+      ],
       "ideologyPosition": "centre",
-      "founded": 2018,
-      "leader": "Oscar Ortiz",
-      "leaderTitle": "Party Leader",
+      "positionRaw": "Centre",
+      "founded": 1954,
+      "previousNames": [
+        {
+          "name": "Partido Social Cristiano",
+          "nameEn": "Social Christian Party",
+          "years": "1954–1964"
+        }
+      ],
+      "leader": "Oscar Abdón Trujillo",
+      "leaderTitle": "Acting leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In government since Rodrigo Paz took office on 8 November 2025.",
+      "seats": 49,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Partido Demócrata Cristiano — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Dem%C3%B3crata_Cristiano_(Bolivia)"
+        },
+        {
+          "title": "Cámara de Diputados de Bolivia — Wikipedia (es): 130 deputies elected 17 August 2025 — Government PDC 49, allies APB Súmate 5, \"dialoguistas\" Alianza Libre 39 and Unidad 26, opposition Alianza Popular 8, MAS-IPSP 2, Bia Yuqui 1",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Bolivia"
+        },
+        {
+          "title": "President of Bolivia — Wikipedia (Rodrigo Paz of the Christian Democratic Party, president since 8 November 2025)",
+          "url": "https://en.wikipedia.org/wiki/President_of_Bolivia"
+        }
+      ]
+    },
+    {
+      "id": "BO-LIBRE",
+      "country": "BO",
+      "shortName": "Libre",
+      "name": "Alianza Libre",
+      "nameEn": "Free Alliance",
+      "logo": "party-logos/bo/libre.svg",
+      "sha256": "710d47440ac76e1808eeed1eb042b4af2a2bc0b0ec9566062d7ff6071c84e24c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Alianza_Libre.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Economic liberalism",
+        "Neoliberalism",
+        "Regional autonomism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2024,
+      "leader": "Jorge Quiroga",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 39,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Alianza Libre — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Alianza_Libre"
+        },
+        {
+          "title": "Cámara de Diputados de Bolivia — Wikipedia (es): 130 deputies elected 17 August 2025 — Government PDC 49, allies APB Súmate 5, \"dialoguistas\" Alianza Libre 39 and Unidad 26, opposition Alianza Popular 8, MAS-IPSP 2, Bia Yuqui 1",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Bolivia"
+        }
+      ]
+    },
+    {
+      "id": "BO-UNIDAD",
+      "country": "BO",
+      "shortName": "Unidad",
+      "name": "Bloque de Unidad",
+      "nameEn": "Unity Bloc",
+      "logo": "party-logos/bo/unidad.png",
+      "sha256": "9981366ec5826ca91e1c372f0c1e14b179d2c4a9006b4080234146c68208cb98",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Unidad.png",
+      "ideology": [
+        "Populism",
+        "Social liberalism",
+        "Mixed economy",
+        "Green capitalism",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre (self-described)",
+      "founded": 2024,
+      "inPower": false,
+      "seats": 26,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Bloque de Unidad — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Bloque_de_Unidad"
+        },
+        {
+          "title": "Cámara de Diputados de Bolivia — Wikipedia (es): 130 deputies elected 17 August 2025 — Government PDC 49, allies APB Súmate 5, \"dialoguistas\" Alianza Libre 39 and Unidad 26, opposition Alianza Popular 8, MAS-IPSP 2, Bia Yuqui 1",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Bolivia"
+        }
+      ]
+    },
+    {
+      "id": "BO-AP",
+      "country": "BO",
+      "shortName": "AP",
+      "name": "Alianza Popular",
+      "nameEn": "Popular Alliance",
+      "logo": "party-logos/bo/ap.png",
+      "sha256": "d7f75b3eca54a97ddd64cce7dae0b632927940dce17c906a666cfe44f0eb0498",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Alianza_Popular.png",
+      "ideology": [
+        "Populism",
+        "Indigenism",
+        "Plurinationalism",
+        "Socialism of the 21st century"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2025,
+      "leader": "Félix Patzi",
+      "leaderTitle": "Leader",
       "inPower": false,
       "seats": 8,
       "seatsTotal": 130,
-      "chamberName": "Plurinational Legislative Assembly",
+      "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "2025 Bolivian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2025_Bolivian_general_election"
+          "title": "Alianza Popular — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Alianza_Popular_(Bolivia)"
         },
         {
-          "title": "Oscar Ortiz – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Oscar_Ortiz_(politician)"
+          "title": "Cámara de Diputados de Bolivia — Wikipedia (es): 130 deputies elected 17 August 2025 — Government PDC 49, allies APB Súmate 5, \"dialoguistas\" Alianza Libre 39 and Unidad 26, opposition Alianza Popular 8, MAS-IPSP 2, Bia Yuqui 1",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Bolivia"
+        }
+      ]
+    },
+    {
+      "id": "BO-SUMATE",
+      "country": "BO",
+      "shortName": "APB Súmate",
+      "name": "APB Súmate",
+      "nameEn": "Autonomy for Bolivia – Join Up",
+      "logo": "party-logos/bo/sumate.png",
+      "sha256": "c07fdf836f59700a84a159f553b4a9a3075c8658a8050f01f2159ee246d26984",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:APB_S%C3%9AMATE_LOGO.png",
+      "ideology": [
+        "Mixed economy",
+        "Liberal conservatism",
+        "Regionalism",
+        "Federalism",
+        "Autonomism",
+        "Populism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2024,
+      "leader": "Henry Paredes",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "Sits with the government as an ally of the Paz administration since November 2025.",
+      "seats": 5,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "APB Súmate — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/APB_S%C3%BAmate"
+        },
+        {
+          "title": "Cámara de Diputados de Bolivia — Wikipedia (es): 130 deputies elected 17 August 2025 — Government PDC 49, allies APB Súmate 5, \"dialoguistas\" Alianza Libre 39 and Unidad 26, opposition Alianza Popular 8, MAS-IPSP 2, Bia Yuqui 1",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Bolivia"
+        }
+      ]
+    },
+    {
+      "id": "BO-MAS",
+      "country": "BO",
+      "shortName": "MAS-IPSP",
+      "name": "Movimiento al Socialismo – Instrumento Político por la Soberanía de los Pueblos",
+      "nameEn": "Movement for Socialism – Political Instrument for the Sovereignty of the Peoples",
+      "logo": "party-logos/bo/mas.png",
+      "sha256": "76ce499dbafdf628f1b1ebfe3df89b28e0f1e939e42015ef8ca6a8544bc49089",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Movement_for_Socialism.png",
+      "ideology": [
+        "Democratic socialism",
+        "Socialism of the 21st century",
+        "Left-wing nationalism",
+        "Indigenism",
+        "Plurinationalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 1997,
+      "leader": "Grover García",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 130,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Movimiento al Socialismo – Instrumento Político por la Soberanía de los Pueblos — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Movimiento_al_Socialismo_(Bolivia)"
+        },
+        {
+          "title": "Cámara de Diputados de Bolivia — Wikipedia (es): 130 deputies elected 17 August 2025 — Government PDC 49, allies APB Súmate 5, \"dialoguistas\" Alianza Libre 39 and Unidad 26, opposition Alianza Popular 8, MAS-IPSP 2, Bia Yuqui 1",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Bolivia"
         }
       ]
     }
