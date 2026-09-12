@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 56 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 57 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -106,7 +106,8 @@ forgotten; it is tracked here.
 | 🇮🇳 India | `#1370` | 4 → 43 | 536 / 543 | **Thirty-nine seated parties missing; the TMC had lost 20 MPs to a new NDA party and the DMK's count was its alliance's** |
 | 🇮🇱 Israel | `#1374` | 3 → 15 | **120 / 120** | **Ten factions missing; the coalition and the government had come apart in 2025 and neither was modelled** |
 | 🇮🇶 Iraq | `#1375` | 0 → 41 | 320 / 329 (9 minority-quota) | **Absent entirely; a 329-seat chamber elected in November 2025 with 41 seated lists** |
-| 🇮🇷 Iran | *(see PR)* | 0 → 13 | 31 / 290 (254 independents) | **Absent entirely; three wrong leaders caught, including one dead since 2017** |
+| 🇮🇷 Iran | `#1376` | 0 → 13 | 31 / 290 (254 independents) | **Absent entirely; three wrong leaders caught, including one dead since 2017** |
+| 🇯🇴 Jordan | *(see PR)* | 0 → 12 | 99 / 138 (39 independents) | **Absent entirely; the Islamic Action Front had been renamed and a branch's emblem was nearly bundled as the party's** |
 
 ---
 
@@ -2158,6 +2159,43 @@ infoboxes and no Commons or Wikidata file, so they ship with a `noImageReason`.
 
 ---
 
+### 🇯🇴 Jordan — audited 2026-09-12
+
+**Jordan was not in the dataset at all.** Its House of Representatives has 138 seats, of which
+**twelve parties hold 99** and 39 members sit as independents, following the election of
+**10 September 2024** — the first under Jordan's new party-list law.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-312 | **S1** | coverage | **Jordan absent from `POLITICAL_PARTIES`** | **12 parties, 99 / 138** | The chamber's current composition |
+| PP-313 | **S2** | `previousNames` | — | **Umma Party ← Islamic Action Front (1992–2025)** | The party was founded as the IAF, the Muslim Brotherhood's political wing, on 8 December 1992 and renamed after Jordan banned the Brotherhood in early 2025 |
+| PP-314 | **S2** | `logo` | — | **a branch's emblem rejected for the Umma Party** | The only file Commons or Wikipedia holds is the IAF emblem overprinted with **فرع طارق ("Tariq Branch")** — text baked into the image that is not part of the party's own emblem |
+
+**The chamber today is not the election result, and the current composition is what is recorded.**
+Comparing the two: the **Azem Party's five seats are gone**, the **Growth (Namaa) Party has
+appeared** with one, and the Labour Party is down from two to one — defections since September 2024.
+Seats here come from the chamber's own current listing, with the election results cited alongside.
+
+**Eight of the twelve parties have no English Wikipedia article**, which is unsurprising for a
+party system only two years old: Jordan's parties were legalised into their present form by the
+2022 Political Parties Law and most contested their first election in 2024. They are entered with
+their name and seat count from the chamber's composition and a `noImageReason`, on the same
+reasoning as Iraq's twenty-three — an omission the reader cannot see would make a 138-seat chamber
+look like a 78-seat one.
+
+**Nine are filed `other`** — no source places them on a left-right axis, including the Umma Party,
+whose article gives its ideology as Islamism but no position.
+
+**No party is marked in power.** Jordan is a constitutional monarchy in which the King appoints the
+prime minister and the cabinet; the government of Jafar Hassan is not formed from a parliamentary
+majority, and no source records any of these parties holding a ministry as a party. Recording one
+as "in power" would assert a parliamentary system Jordan does not have.
+
+Three logos are bundled, all non-free English-Wikipedia files and declared. All were
+montage-verified; the fourth candidate was the branch emblem above, and it was dropped.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2374,7 +2412,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `IL` Israel — merged
 - [ ] `JM` Jamaica
 - [ ] `JP` Japan
-- [ ] `JO` Jordan
+- [x] `JO` Jordan — merged
 - [ ] `KZ` Kazakhstan
 - [ ] `KE` Kenya
 - [ ] `KI` Kiribati

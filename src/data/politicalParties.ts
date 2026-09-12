@@ -5068,6 +5068,353 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "JO": [
+    {
+      "id": "JO-UMMA",
+      "country": "JO",
+      "shortName": "Umma",
+      "name": "حزب الأمة",
+      "nameEn": "Umma Party",
+      "noImageReason": "Searched Wikimedia Commons and English Wikipedia in both English and Arabic. The only file either holds is the Islamic Action Front emblem overprinted with \"فرع طارق\" (Tariq Branch) — a local branch's version, with text baked into the image that is not part of the party's own emblem, so it is rejected exactly as a caption-bearing flag would be. Wikidata records no P154 logo.",
+      "ideology": [
+        "Islamism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1992,
+      "previousNames": [
+        {
+          "name": "حزب جبهة العمل الإسلامي",
+          "nameEn": "Islamic Action Front",
+          "years": "1992–2025"
+        }
+      ],
+      "leader": "Hamza Mansour",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 31,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Umma Party (Jordan) — Wikipedia (infobox: founded 1992; leader Hamza Mansour)",
+          "url": "https://en.wikipedia.org/wiki/Umma_Party_(Jordan)"
+        },
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-NCP",
+      "country": "JO",
+      "shortName": "National Charter",
+      "name": "حزب الميثاق الوطني",
+      "nameEn": "National Charter Party",
+      "logo": "party-logos/jo/ncp.png",
+      "sha256": "7ccc0bd7f0912457284f932b83244558b91a8a32250a345615841cfb2f6c7823",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:National_Charter_Party_logo.png",
+      "licenceNote": "Non-free. National Charter Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Civic nationalism",
+        "Monarchism",
+        "Anti-corruption"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2022,
+      "leader": "Muhammad Al-Momani",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 21,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "National Charter Party — Wikipedia (infobox: founded 2022; leader Muhammad Al-Momani)",
+          "url": "https://en.wikipedia.org/wiki/National_Charter_Party"
+        },
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-ERADAH",
+      "country": "JO",
+      "shortName": "Eradah",
+      "name": "حزب إرادة",
+      "nameEn": "Eradah Party",
+      "logo": "party-logos/jo/eradah.webp",
+      "sha256": "3f92f121452cd60485a75245720dc3e8858e754bd43e567d9ab79665cac74c90",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Eradah_Party_Logo.webp",
+      "licenceNote": "Non-free. Eradah Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Social market economy",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2022,
+      "leader": "Nidal Al-Batayneh",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 19,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Eradah Party — Wikipedia (infobox: founded 2022; leader Nidal Al-Batayneh)",
+          "url": "https://en.wikipedia.org/wiki/Eradah_Party"
+        },
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-PROGRESS",
+      "country": "JO",
+      "shortName": "Progress",
+      "name": "حزب التقدم",
+      "nameEn": "Progress Party",
+      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-ISLAH",
+      "country": "JO",
+      "shortName": "Al-Islah",
+      "name": "حزب الإصلاح",
+      "nameEn": "Al-Islah Party",
+      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-NUM",
+      "country": "JO",
+      "shortName": "National Union",
+      "name": "تيار الاتحاد الوطني الأردني",
+      "nameEn": "National Union Movement",
+      "logo": "party-logos/jo/num.png",
+      "sha256": "436e2960c0840fd3c40e12e27810792a4172b09ad90b73ed029ed158f94752c7",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:National_Union_Party_Logo_(Jordan).png",
+      "licenceNote": "Non-free. National Union Movement's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Economic liberalism",
+        "Constitutionalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2024,
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "National Union Movement (Jordan) — Wikipedia (infobox: founded 2024)",
+          "url": "https://en.wikipedia.org/wiki/National_Union_Movement_(Jordan)"
+        },
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-BLESSED",
+      "country": "JO",
+      "shortName": "Blessed Land",
+      "name": "حزب الأرض المباركة",
+      "nameEn": "Blessed Land Party",
+      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-JLP",
+      "country": "JO",
+      "shortName": "Jordanian Labor",
+      "name": "حزب العمل الأردني",
+      "nameEn": "Jordanian Labor Party",
+      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-GROWTH",
+      "country": "JO",
+      "shortName": "Namaa",
+      "name": "حزب نماء",
+      "nameEn": "Growth Party",
+      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-JCDP",
+      "country": "JO",
+      "shortName": "JCDP",
+      "name": "الحزب المدني الديمقراطي الأردني",
+      "nameEn": "Jordanian Civil Democratic Party",
+      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-LABOR",
+      "country": "JO",
+      "shortName": "Labour",
+      "name": "حزب العمال",
+      "nameEn": "Labour Party",
+      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    },
+    {
+      "id": "JO-YOUTH",
+      "country": "JO",
+      "shortName": "Youth",
+      "name": "حزب الشباب",
+      "nameEn": "Youth Party",
+      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 138,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "House of Representatives (Jordan) — Wikipedia (current composition of the chamber elected 10 September 2024: twelve parties holding 99 seats and 39 independents, of 138)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Jordan)"
+        },
+        {
+          "title": "2024 Jordanian general election — Wikipedia (results, sourced to the EU Election Observation Mission's final report)",
+          "url": "https://en.wikipedia.org/wiki/2024_Jordanian_general_election"
+        }
+      ]
+    }
+  ],
   "JP": [
     {
       "id": "JP-LDP",
