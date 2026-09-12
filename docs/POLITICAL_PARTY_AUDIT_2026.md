@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 34 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 35 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -80,6 +80,7 @@ forgotten; it is tracked here.
 | 🇵🇱 Poland | `#1344` | 1 → 11 | 433 / 460 | **WRONG — only a junior coalition partner present** |
 | 🇳🇱 Netherlands | `#1346` | 5 → 15 | 142 / 150 | **WRONG — a rival party's politician as VVD leader** |
 | 🇧🇪 Belgium | `#1347` | 9 → 12 | 149 / 150 | **WRONG — two parties under names they dropped** |
+| 🇳🇴 Norway | `#1348` | 9 → 9 | **169 / 169** | **IMPOSSIBLE TOTAL — 191 seats in a 169-seat Storting** |
 
 ---
 
@@ -1248,6 +1249,34 @@ replaced in 2004.
 
 ---
 
+### 🇳🇴 Norway — audited 2026-09-12
+
+Norway's nine parties summed to **191 seats in a 169-seat Storting** — the fourth impossible total
+this sweep has found, flagged during the 2026-09-12 logo backfill. Every seat figure and **eight of
+the nine leaders** were superseded by the September 2025 election.
+
+The Storting: **Government 53** — Labour alone, as a minority — **supported by 35** (Socialist Left
+9, Centre 9, Red 9, Green 8), **Opposition 81** (Progress 47, Conservative 24, Christian Democratic
+7, Liberal 3).
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-178 | **S1** | `seats` | 48, 45, 36, 13, 13, 12, 8, 8, 8 = **191 of 169** | 53, 47, 24, 9, 9, 9, 8, 7, 3 = **169 of 169 exactly** | The Storting's own composition |
+| PP-179 | **S1** | the chamber's shape | Conservative 45, Progress 36 | **Progress 47, Conservative 24** | The 2025 election turned the Progress Party into the largest opposition party and **halved the Conservatives**. The old figures had them the other way round |
+| PP-180 | **S1** | `leader` | **eight of nine wrong** — Støre, Solberg, Listhaug, Lysbakken, Moxnes, Hansson, Ropstad … | Brenna, Søviknes, Eriksen Søreide, Bergstø, Sneve Martinussen, Liland, Ulstein … | Each party's own article. Only the Centre Party's Trygve Slagsvold Vedum was still correct |
+| PP-181 | **S1** | `inPower` | Labour **and the Centre Party** in government | **Labour alone in the executive**; Socialist Left, Centre, Red and Green in power as confidence-and-supply | The Centre Party left the government in early 2025; Labour has governed as a minority since |
+| PP-182 | **S2** | `founded` | Red Party **1990** | **2007** | 1990 is its predecessor's year; the Red Party was founded 11 March 2007 |
+| PP-183 | **S2** | `chamberName` | "Parliament" | **"Storting"** | The chamber's own name |
+
+**Jonas Gahr Støre is still prime minister** — he was the one leadership fact the entry had right,
+but it was attached to the wrong field: he had been recorded as Labour's *party* leader, which is now
+Tonje Brenna.
+
+All nine logos were added in the 2026-09-12 backfill and montage-verified. Norway is the fifth
+country in this sweep to reconcile **exactly**.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -1328,7 +1357,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `EE` Estonia
 - [ ] `FI` Finland
 - [ ] `SE` Sweden
-- [ ] `NO` Norway
+- [x] `NO` Norway — merged
 - [ ] `DK` Denmark
 - [ ] `IS` Iceland
 - [ ] `CY` Cyprus
