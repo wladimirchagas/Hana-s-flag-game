@@ -1738,17 +1738,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_New_Azerbaijan_Party.svg",
       "licenceNote": "Non-free logo: the New Azerbaijan Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
       "ideology": [
-        "Right-wing populism",
+        "Conservatism",
+        "Statism",
+        "Social market economy",
         "Azerbaijani nationalism"
       ],
-      "ideologyPosition": "far-right",
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
       "founded": 1992,
       "leader": "Ilham Aliyev",
-      "leaderTitle": "Party Leader",
+      "leaderTitle": "Chairman",
       "inPower": true,
       "inExecutive": true,
-      "timeInPower": "2003–present",
-      "seats": 113,
+      "timeInPower": "1995–present",
+      "seats": 68,
       "seatsTotal": 125,
       "chamberName": "National Assembly",
       "sources": [
@@ -1757,27 +1760,224 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "url": "https://en.wikipedia.org/wiki/New_Azerbaijan_Party"
         },
         {
-          "title": "2020 Azerbaijani legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Azerbaijani_legislative_election"
+          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
         }
       ]
     },
     {
-      "id": "AZ-MSIP",
+      "id": "AZ-VHP",
       "country": "AZ",
-      "shortName": "MSIP",
-      "name": "Müsavat Seçim İttifaqı Partiyası",
-      "nameEn": "Equality Electoral Coalition Party",
-      "logo": "party-logos/az/msip.svg",
-      "sha256": "ff63f826edeb2e293fa92b5ff68493d91ed42275df1e44eb22d529ba2b6407e0",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_M%C3%BCsavat_Party.svg",
+      "shortName": "VHP",
+      "name": "Vətəndaş Həmrəyliyi Partiyası",
+      "nameEn": "Civic Solidarity Party",
+      "logo": "party-logos/az/vhp.svg",
+      "sha256": "0ff931bcb615793d2783fd1570970dce423c0eb5393dfdbb96d36abec7c87fc2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_Civic_Solidarity_Party.svg",
       "ideology": [
-        "Liberalism",
-        "Centrism"
+        "National conservatism",
+        "Populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1992,
+      "leader": "Sabir Rustamkhanli",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Civic Solidarity Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Civic_Solidarity_Party"
+        },
+        {
+          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+        }
+      ]
+    },
+    {
+      "id": "AZ-AHDP",
+      "country": "AZ",
+      "shortName": "ƏHD",
+      "name": "Ədalət, Hüquq, Demokratiya Partiyası",
+      "nameEn": "Justice, Law, Democracy Party",
+      "logo": "party-logos/az/ahdp.png",
+      "sha256": "0f7ee93b25f24babc9f4b4f9aed8a2af1dc15227229d0367b03d704c6a10487f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Justice%2C_Law%2C_Democracy_Party.png",
+      "licenceNote": "Non-free logo: the Justice, Law, Democracy Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "Social conservatism",
+        "Economic liberalism",
+        "Azerbaijani irredentism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2004,
+      "leader": "Gudrat Hasanguliyev",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Justice, Law, Democracy Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Justice,_Law,_Democracy_Party"
+        },
+        {
+          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+        }
+      ]
+    },
+    {
+      "id": "AZ-REAL",
+      "country": "AZ",
+      "shortName": "REAL",
+      "name": "Respublikaçı Alternativ Partiyası",
+      "nameEn": "Republican Alternative Party",
+      "logo": "party-logos/az/real.svg",
+      "sha256": "0ad05c9aa9e6f46c835bd4e7ed01281135e37b2de8e97ca0d004e3ca6e279b40",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_Republican_Alternative_Party.svg",
+      "ideology": [
+        "National liberalism",
+        "Secularism",
+        "Republicanism",
+        "Pro-Europeanism"
       ],
       "ideologyPosition": "centre",
-      "founded": 1911,
-      "leader": "Arif Hajili",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2018,
+      "leader": "Natiq Jafarli",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Republican Alternative Party (Azerbaijan) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Republican_Alternative_Party_(Azerbaijan)"
+        },
+        {
+          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+        }
+      ]
+    },
+    {
+      "id": "AZ-ADMP",
+      "country": "AZ",
+      "shortName": "ADMP",
+      "name": "Azərbaycan Demokratik Maarifçilik Partiyası",
+      "nameEn": "Azerbaijan Democratic Enlightenment Party",
+      "logo": "party-logos/az/admp.svg",
+      "sha256": "856d269cb4026ae60eff4e1fc57479e36109437be07181c72bf95e4665767242",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Azerbaijani_Democratic_Lumieres_Party.svg",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 1995,
+      "leader": "Elşən Musayev",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Azerbaijan Democratic Enlightenment Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Enlightenment_Party"
+        },
+        {
+          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+        }
+      ]
+    },
+    {
+      "id": "AZ-AVP",
+      "country": "AZ",
+      "shortName": "AVP",
+      "name": "Ana Vətən Partiyası",
+      "nameEn": "Motherland Party",
+      "logo": "party-logos/az/avp.png",
+      "sha256": "94132fbee72cb095ad791127128ea30397105df264ab1931860d1185f95f21b9",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Motherland_Party_(Azerbaijan).png",
+      "licenceNote": "Non-free logo: the Motherland Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "National conservatism",
+        "Statism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1990,
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Motherland Party (Azerbaijan) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Motherland_Party_(Azerbaijan)"
+        },
+        {
+          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+        }
+      ]
+    },
+    {
+      "id": "AZ-BQP",
+      "country": "AZ",
+      "shortName": "BQP",
+      "name": "Böyük Quruluş Partiyası",
+      "nameEn": "Great Order Party",
+      "logo": "party-logos/az/bqp.svg",
+      "sha256": "64ca4c29446113f235d6f143ed3049a990616c67ba09fd2187c2a2f7a1620917",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_Great_Order_Party.svg",
+      "ideology": [
+        "Liberalism",
+        "Liberal democracy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2003,
+      "leader": "Fazil Mustafa",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Great Order Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Great_Order_Party"
+        },
+        {
+          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+        }
+      ]
+    },
+    {
+      "id": "AZ-AMIP",
+      "country": "AZ",
+      "shortName": "AMİP",
+      "name": "Azərbaycan Milli İstiqlal Partiyası",
+      "nameEn": "Azerbaijan National Independence Party",
+      "logo": "party-logos/az/amip.svg",
+      "sha256": "b79bd1c284cbb42339b361ed685829875b7e33455d9099a5a94f9ac5fc334896",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Azerbaijan_National_Independence_Party_Logo.svg",
+      "ideology": [
+        "Liberal conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1992,
+      "leader": "Etibar Mammadov",
       "leaderTitle": "Party Leader",
       "inPower": false,
       "seats": 1,
@@ -1785,44 +1985,99 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "Musavat – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Musavat"
+          "title": "Azerbaijan National Independence Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Azerbaijan_National_Independence_Party"
         },
         {
-          "title": "2020 Azerbaijani legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Azerbaijani_legislative_election"
+          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
         }
       ]
     },
     {
-      "id": "AZ-APF",
+      "id": "AZ-MCP",
       "country": "AZ",
-      "shortName": "APF",
-      "name": "Azərbaycan Xalq Cəbhəsi",
-      "nameEn": "Azerbaijan Popular Front",
-      "logo": "party-logos/az/apf.svg",
-      "sha256": "396436e0d11343a41f2eb0bd6ef26636dec548dd77bf9217dd403bd7ed418f42",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_Azerbaijani_Popular_Front_Party.svg",
+      "shortName": "MCP",
+      "name": "Milli Cəbhə Partiyası",
+      "nameEn": "National Front Party",
+      "logo": "party-logos/az/mcp.svg",
+      "sha256": "2325450b9294f33e69f0675562ddbd4b027fda31b9d27b5f5bfee6ee859efdc1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Milli_C%C9%99bh%C9%99_Partiyas%C4%B1n%C4%B1n_loqosu.svg",
       "ideology": [
-        "Liberal nationalism",
-        "Social liberalism"
+        "Azerbaijani nationalism",
+        "Social democracy"
       ],
-      "ideologyPosition": "centre-right",
-      "founded": 1989,
-      "leader": "Mirza Fatali Akhundov",
-      "leaderTitle": "Party Leader",
+      "ideologyPosition": "other",
+      "founded": 2020,
+      "leader": "Razi Nurullayev",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 0,
+      "seats": 1,
       "seatsTotal": 125,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "Azerbaijan Popular Front – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Azerbaijan_Popular_Front"
+          "title": "National Front Party (Azerbaijan) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Front_Party_(Azerbaijan)"
         },
         {
-          "title": "2020 Azerbaijani legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Azerbaijani_legislative_election"
+          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+        }
+      ]
+    },
+    {
+      "id": "AZ-DIP",
+      "country": "AZ",
+      "shortName": "DİP",
+      "name": "Demokratik İslahatlar Partiyası",
+      "nameEn": "Democratic Reforms Party",
+      "noImageReason": "Searched for a Democratic Reforms Party emblem and found none that can be bundled: Wikimedia Commons holds no logo file for it, Wikidata records no P154 logo image on its item under Azerbaijan (P17), and its English Wikipedia article's infobox carries no logo parameter at all. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
+      "ideology": [
+        "Reformism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2005,
+      "leader": "Asim Mollazade",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Democratic Reforms Party (Azerbaijan) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Reforms_Party_(Azerbaijan)"
+        },
+        {
+          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+        }
+      ]
+    },
+    {
+      "id": "AZ-BAP",
+      "country": "AZ",
+      "shortName": "BAP",
+      "name": "Böyük Azərbaycan Partiyası",
+      "nameEn": "Great Azerbaijan Party",
+      "noImageReason": "Searched for a Great Azerbaijan Party emblem and found none that can be bundled: Wikimedia Commons holds no logo file for it, Wikidata records no P154 logo image on its item under Azerbaijan (P17), and it has no English Wikipedia article at all — only a row in the List of political parties in Azerbaijan, which carries no emblem. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "leader": "Elşad Musayev",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 125,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "List of political parties in Azerbaijan – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Azerbaijan"
+        },
+        {
+          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
         }
       ]
     }

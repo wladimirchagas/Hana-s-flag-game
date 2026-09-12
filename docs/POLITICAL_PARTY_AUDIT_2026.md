@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 45 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 46 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -96,6 +96,7 @@ forgotten; it is tracked here.
 | 🇦🇫 Afghanistan | `9f1bd78` | **3 → 0 (removed)** | n/a | **OUT OF SCOPE — party activity is illegal; audited by the owner** |
 | 🇨🇿 Czechia | `#1359` | 3 → 13 | 187 / 200 | **WRONG — a party with no seats carried as seated** |
 | 🇦🇲 Armenia | `#1360` | 3 → 4 | 94 / 105 | **ALL THREE PARTIES UNSEATED — and the chamber size wrong** |
+| 🇦🇿 Azerbaijan | `#1361` | 3 → 11 | 81 / 125 | **WRONG — a party leader who died in 1878** |
 
 ---
 
@@ -1644,6 +1645,46 @@ and are declared. All four were montage-verified.
 
 ---
 
+### 🇦🇿 Azerbaijan — audited 2026-09-12
+
+Azerbaijan's three entries carried **a party leader who died in 1878**. `AZ-APF`'s leader was recorded
+as **Mirza Fatali Akhundov** — the 19th-century playwright and philosopher (1812–1878), the founder of
+modern Azerbaijani drama, and under no reading a living party official. This is the deceased-leader
+defect (Italy's Berlusconi, Vietnam's) taken to its limit: not a leader who left office, but a man who
+died 148 years ago.
+
+The ruling party's seat count was also out by **45**, and two of the three entries hold no seat at all.
+
+The National Assembly, 125 seats, after the 1 September 2024 election: **Government 68** — New
+Azerbaijan — **other parties 13** across ten parties — **independents 44**.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-252 | **S1** | `leader` | `AZ-APF` led by **Mirza Fatali Akhundov** | *(entry removed)* | Akhundov died in **1878**. The Popular Front Party was founded in 1989 |
+| PP-253 | **S1** | `seats` | YAP **113** | **68** | The Assembly's own composition. Overstated by 45 — more than every other party and every independent combined |
+| PP-254 | **S1** | coverage | 3 parties, two of them unseated | **11 parties, 81 of 125** | Musavat and the Popular Front hold **no seat** in this Assembly and are removed; the ten seated minor parties were all absent |
+| PP-255 | **S2** | party identity | `AZ-MSIP` — **"Müsavat Seçim İttifaqı Partiyası"** | *(entry removed)* | Not a party name: Musavat's own name is *Müsavat Partiyası*; "Seçim İttifaqı" means "election alliance". The entry conflated the party with an electoral bloc, and in any case it holds no seat |
+| PP-256 | **S2** | `leader` | — | **omitted for the Motherland Party** | Its own infobox records the leadership as **vacant**: Fazail Agamali led it from 1990 until his death in 2026. "Vacant" is a status, not a person — the same discipline as Ireland's PBP–Solidarity |
+| PP-257 | **S3** | coverage of minor parties | — | Civic Solidarity 3, ƏHD 2, and eight parties with one seat each | The Assembly names all ten |
+
+**Two parties ship with `noImageReason`.** The **Democratic Reforms Party**'s article carries no logo
+parameter at all, and the **Great Azerbaijan Party** has no English Wikipedia article whatsoever — only
+a row in the List of political parties in Azerbaijan, from which its name, abbreviation, leader and
+single seat are taken. Both are listed rather than dropped, per the logo-is-a-SHOULD rule.
+
+**Four parties are filed `other`.** The Democratic Enlightenment Party, the Great Azerbaijan Party, the
+National Front Party and the Democratic Reforms Party have **no cited political position** — the
+Enlightenment and National Front infoboxes are malformed at exactly that field, and BAP has no article.
+`other` records that honestly rather than placing them on an axis no source puts them on.
+
+**Documented gap — 44 of the 125 seats**: independents, who form the single largest bloc in this
+Assembly and belong to no party.
+
+Five logos are on Commons; four (YAP, ƏHD, the Motherland Party and the Justice/Law/Democracy Party)
+are non-free files on English Wikipedia and are declared. All nine were montage-verified.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1812,7 +1853,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `AO` Angola
 - [ ] `AG` Antigua and Barbuda
 - [x] `AM` Armenia — merged
-- [ ] `AZ` Azerbaijan
+- [x] `AZ` Azerbaijan — merged
 - [ ] `BS` Bahamas
 - [ ] `BH` Bahrain
 - [ ] `BD` Bangladesh
