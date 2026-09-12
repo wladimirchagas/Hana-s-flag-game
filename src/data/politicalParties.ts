@@ -6274,6 +6274,971 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "LB": [
+    {
+      "id": "LB-LF",
+      "country": "LB",
+      "shortName": "LF",
+      "name": "القوات اللبنانية",
+      "nameEn": "Lebanese Forces",
+      "logo": "party-logos/lb/lf.png",
+      "sha256": "3ec771f7ca8b6a1050ae7e9dee3697f112a5becd34c86e7117c9bc5277351ee7",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Lebanese_Forces_logo.png",
+      "licenceNote": "Non-free. Lebanese Forces's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Lebanese nationalism",
+        "Right-wing nationalism",
+        "Christian democracy"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1976,
+      "leader": "Samir Geagea",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the 64-seat bloc supporting the Cabinet of Nawaf Salam, formed 8 February 2025, and holds four of its 24 portfolios.",
+      "seats": 14,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Lebanese Forces — Wikipedia (infobox: founded 1976; President Samir Geagea; right-wing)",
+          "url": "https://en.wikipedia.org/wiki/Lebanese_Forces"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "Cabinet of Nawaf Salam — Wikipedia (formed 8 February 2025; of its 24 ministers 12 are non-partisan, Lebanese Forces 4, Amal 2, Hezbollah 2, Progressive Socialist Party 2, Kataeb 1, Tashnag/Armenian Revolutionary Federation 1)",
+          "url": "https://en.wikipedia.org/wiki/Cabinet_of_Nawaf_Salam"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-HEZBOLLAH",
+      "country": "LB",
+      "shortName": "Hezbollah",
+      "name": "حزب الله",
+      "nameEn": "Hezbollah (Islamic Resistance in Lebanon)",
+      "logo": "party-logos/lb/hezbollah.svg",
+      "sha256": "053e72becddfa806d8763e9988bd18cac9d8a26560552247739e8eefafd0e5fa",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Hezbollah.svg",
+      "licenceNote": "Non-free. Hezbollah (Islamic Resistance in Lebanon)'s logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Islamic nationalism",
+        "Khomeinism",
+        "Pan-Islamism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1982,
+      "leader": "Naim Qassem",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the 64-seat bloc supporting the Cabinet of Nawaf Salam, formed 8 February 2025, and holds two of its 24 portfolios.",
+      "seats": 13,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Hezbollah — Wikipedia (infobox: founded 1982; Secretary-General and Leader Naim Qassem; the infobox states no left–right position)",
+          "url": "https://en.wikipedia.org/wiki/Hezbollah"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "Cabinet of Nawaf Salam — Wikipedia (formed 8 February 2025; of its 24 ministers 12 are non-partisan, Lebanese Forces 4, Amal 2, Hezbollah 2, Progressive Socialist Party 2, Kataeb 1, Tashnag/Armenian Revolutionary Federation 1)",
+          "url": "https://en.wikipedia.org/wiki/Cabinet_of_Nawaf_Salam"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-FPM",
+      "country": "LB",
+      "shortName": "FPM",
+      "name": "التيار الوطني الحر",
+      "nameEn": "Free Patriotic Movement",
+      "logo": "party-logos/lb/fpm.png",
+      "sha256": "dca4e32cc419f3bdb9a7fdf8d22b5492fd74d1cdae055206a3bf2b8a605ecfb4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Free_Patriotic_Movement_logo.png",
+      "ideology": [
+        "Christian democracy",
+        "Lebanese nationalism",
+        "Civic nationalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1994,
+      "leader": "Gebran Bassil",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Free Patriotic Movement — Wikipedia (founded 14 July 1994; \"currently led by Aoun's son-in-law Gebran Bassil since 2015\"; right-wing; in October 2024 Bassil announced the party was no longer allied with Hezbollah)",
+          "url": "https://en.wikipedia.org/wiki/Free_Patriotic_Movement"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-AMAL",
+      "country": "LB",
+      "shortName": "Amal",
+      "name": "حركة أمل",
+      "nameEn": "Amal Movement",
+      "logo": "party-logos/lb/amal.svg",
+      "sha256": "230170374fce60f87f1e14cc35f05803863b1981e46dc0fd232dfb4e40a134b6",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Amal_logo.svg",
+      "ideology": [
+        "Lebanese nationalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1974,
+      "leader": "Nabih Berri",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the 64-seat bloc supporting the Cabinet of Nawaf Salam, formed 8 February 2025, and holds two of its 24 portfolios.",
+      "seats": 11,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Amal Movement — Wikipedia (infobox: founded 6 July 1974; Chairman Nabih Berri, who is also Speaker of Parliament; centre-right)",
+          "url": "https://en.wikipedia.org/wiki/Amal_Movement"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "Cabinet of Nawaf Salam — Wikipedia (formed 8 February 2025; of its 24 ministers 12 are non-partisan, Lebanese Forces 4, Amal 2, Hezbollah 2, Progressive Socialist Party 2, Kataeb 1, Tashnag/Armenian Revolutionary Federation 1)",
+          "url": "https://en.wikipedia.org/wiki/Cabinet_of_Nawaf_Salam"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-PSP",
+      "country": "LB",
+      "shortName": "PSP",
+      "name": "الحزب التقدمي الإشتراكي",
+      "nameEn": "Progressive Socialist Party",
+      "logo": "party-logos/lb/psp.png",
+      "sha256": "754981b77d801e1d2046278892da3ec59151998ab554f64780f5a20bda14de0f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PSP_Lebanon_logo.png",
+      "licenceNote": "Non-free. Progressive Socialist Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1949,
+      "leader": "Taymur Jumblatt",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the 64-seat bloc supporting the Cabinet of Nawaf Salam, formed 8 February 2025, and holds two of its 24 portfolios.",
+      "seats": 6,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Progressive Socialist Party — Wikipedia (infobox: founded 1 May 1949; leader Taymur Jumblatt; left-wing)",
+          "url": "https://en.wikipedia.org/wiki/Progressive_Socialist_Party"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "Cabinet of Nawaf Salam — Wikipedia (formed 8 February 2025; of its 24 ministers 12 are non-partisan, Lebanese Forces 4, Amal 2, Hezbollah 2, Progressive Socialist Party 2, Kataeb 1, Tashnag/Armenian Revolutionary Federation 1)",
+          "url": "https://en.wikipedia.org/wiki/Cabinet_of_Nawaf_Salam"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-KATAEB",
+      "country": "LB",
+      "shortName": "Kataeb",
+      "name": "حزب الكتائب اللبنانية",
+      "nameEn": "Kataeb Party (Lebanese Social Democratic Party)",
+      "logo": "party-logos/lb/kataeb.svg",
+      "sha256": "a10637ee5ed6227c0e5671bcadcf656668534990985cbf36fab931fd35e1f35d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Kataeb_Party_logo.svg",
+      "ideology": [
+        "Lebanese nationalism",
+        "Christian democracy",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1936,
+      "leader": "Samy Gemayel",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the 64-seat bloc supporting the Cabinet of Nawaf Salam, formed 8 February 2025, and holds one of its 24 portfolios.",
+      "seats": 4,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Kataeb Party — Wikipedia (infobox: founded 5 November 1936; President Samy Gemayel; centre-right)",
+          "url": "https://en.wikipedia.org/wiki/Kataeb_Party"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "Cabinet of Nawaf Salam — Wikipedia (formed 8 February 2025; of its 24 ministers 12 are non-partisan, Lebanese Forces 4, Amal 2, Hezbollah 2, Progressive Socialist Party 2, Kataeb 1, Tashnag/Armenian Revolutionary Federation 1)",
+          "url": "https://en.wikipedia.org/wiki/Cabinet_of_Nawaf_Salam"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-ARF",
+      "country": "LB",
+      "shortName": "ARF",
+      "name": "Հայ Յեղափոխական Դաշնակցութիւն",
+      "nameEn": "Armenian Revolutionary Federation (Tashnag)",
+      "logo": "party-logos/lb/arf.png",
+      "sha256": "e4ed8d54de18dcdad6d988a69127819bc05b2e7d77bd24cb04750fb183cb8393",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Armenian_Revolutionary_Federation_logo.png",
+      "licenceNote": "Non-free. Armenian Revolutionary Federation (Tashnag)'s logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Armenian nationalism",
+        "Democratic socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1890,
+      "leader": "Albert Balabanian",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the 64-seat bloc supporting the Cabinet of Nawaf Salam, formed 8 February 2025, and holds one of its 24 portfolios.",
+      "seats": 2,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Armenian Revolutionary Federation in Lebanon — Wikipedia (infobox: founded 1890 in Tiflis; Lebanon Secretary-General Albert Balabanian; left-wing)",
+          "url": "https://en.wikipedia.org/wiki/Armenian_Revolutionary_Federation_in_Lebanon"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "Cabinet of Nawaf Salam — Wikipedia (formed 8 February 2025; of its 24 ministers 12 are non-partisan, Lebanese Forces 4, Amal 2, Hezbollah 2, Progressive Socialist Party 2, Kataeb 1, Tashnag/Armenian Revolutionary Federation 1)",
+          "url": "https://en.wikipedia.org/wiki/Cabinet_of_Nawaf_Salam"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-AL-AHBASH",
+      "country": "LB",
+      "shortName": "Al-Ahbash",
+      "name": "جمعية المشاريع الخيرية الإسلامية",
+      "nameEn": "Association of Islamic Charitable Projects (Al-Ahbash)",
+      "logo": "party-logos/lb/alahbash.png",
+      "sha256": "178c4ed2774b0368074a3b3eb6e75bcca6e8de26858d549bbd96000f4d6f58ca",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Association_of_Islamic_Charitable_Projects_logo.png",
+      "licenceNote": "Non-free. Association of Islamic Charitable Projects (Al-Ahbash)'s logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Religious pluralism",
+        "Islamic neo-traditionalism",
+        "Anti-Salafism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1983,
+      "leader": "Hussam Qaraqira",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 2,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Al-Ahbash — Wikipedia (infobox: the Association of Islamic Charitable Projects dates from the 1930s and took the Al-Ahbash identity in 1983; leader Shaykh Hussam Qaraqira)",
+          "url": "https://en.wikipedia.org/wiki/Al-Ahbash"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-PROJECT-WATAN",
+      "country": "LB",
+      "shortName": "Project Watan",
+      "name": "مشروع وطن",
+      "nameEn": "Project Watan",
+      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (Neemat Frem's article documents the movement but carries no emblem, and it has no article of its own) and the Lebanese parties list. No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "leader": "Neemat Frem",
+      "leaderTitle": "President of the Executive Board",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 2,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Neemat Frem — Wikipedia (Frem is President of the Executive Board of Project Watan, \"a national political movement\" he launched with other political figures; the chamber records two of the Human Homeland Project bloc's three deputies as its members)",
+          "url": "https://en.wikipedia.org/wiki/Neemat_Frem"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-TAQADDOM",
+      "country": "LB",
+      "shortName": "Taqaddom",
+      "name": "تقدم",
+      "nameEn": "Taqaddom (Progress)",
+      "logo": "party-logos/lb/taqaddom.png",
+      "sha256": "eb0e65eaae3db2136290d613be0ebfdc789fa3efda72d53623e500d45817fc87",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Taqaddom_party_logo.png",
+      "ideology": [
+        "Reformism",
+        "Social democracy",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2020,
+      "leader": "Laury Haytayan",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 2,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Taqaddom (Lebanon) — Wikipedia (infobox: founded March 2020; leader Laury Haytayan; centre-left). Its two deputies sit in different blocs — one in Forces of Change, one in the Change Alliance Bloc.",
+          "url": "https://en.wikipedia.org/wiki/Taqaddom_(Lebanon)"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-NLP",
+      "country": "LB",
+      "shortName": "NLP",
+      "name": "حزب الوطنيين الأحرار",
+      "nameEn": "National Liberal Party",
+      "logo": "party-logos/lb/nlp.svg",
+      "sha256": "7c6d29f231aa730d1a928af91adc1d680ab9a3c3e5aad4234e1c149346824565",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:National_Liberal_Party_(Lebanon)_Logo.svg",
+      "ideology": [
+        "Lebanese nationalism",
+        "Civic nationalism",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1958,
+      "leader": "Camille Dory Chamoun",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "In the 64-seat bloc supporting the Cabinet of Nawaf Salam, formed 8 February 2025, but holds none of its 24 portfolios — half the cabinet is non-partisan.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "National Liberal Party (Lebanon) — Wikipedia (infobox: founded 10 September 1958; President Camille Dory Chamoun; centre-right)",
+          "url": "https://en.wikipedia.org/wiki/National_Liberal_Party_(Lebanon)"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-NBP",
+      "country": "LB",
+      "shortName": "NBP",
+      "name": "حزب الراية الوطني",
+      "nameEn": "National Banner Party",
+      "logo": "party-logos/lb/nbp.jpg",
+      "sha256": "12850b655ba945aca58a26c6a02b7c4b8b0f3385bf676b18a171cb3182497f39",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:National_Banner_Party_logo.jpg",
+      "ideology": [
+        "Arab nationalism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1953,
+      "leader": "Ali Hijazi",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "In the 64-seat bloc supporting the Cabinet of Nawaf Salam, formed 8 February 2025, but holds none of its 24 portfolios — half the cabinet is non-partisan.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "National Banner Party — Wikipedia (infobox: founded 1953; leader Ali Hijazi; Arab nationalism, formerly neo-Ba'athism — the former Lebanon Region of the Arab Socialist Ba'ath Party)",
+          "url": "https://en.wikipedia.org/wiki/Arab_Socialist_Ba%27ath_Party_%E2%80%93_Lebanon_Region"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-WATANI",
+      "country": "LB",
+      "shortName": "Watani",
+      "name": "تحالف وطني",
+      "nameEn": "Watani Alliance",
+      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the alliance has no article of its own; it appears only in the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
+      "ideology": [
+        "Reformism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "leader": "Mark Geara",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-MADA",
+      "country": "LB",
+      "shortName": "Mada",
+      "name": "حزب مادا",
+      "nameEn": "Mada Party",
+      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the party has no article of its own; it appears only in the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
+      "ideology": [
+        "Reformism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "leader": "Karim Saadeh",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-LANA",
+      "country": "LB",
+      "shortName": "Lana",
+      "name": "لَــنا",
+      "nameEn": "Lana – Social Democratic Party",
+      "logo": "party-logos/lb/lana.png",
+      "sha256": "162b91247a8d83bf71be016565c666876668c1e84cc30f9ab071f2934b6cd550",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Lana_Party_logo.png",
+      "ideology": [
+        "Reformism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2022,
+      "leader": "Hassan Sinno",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Lana (political party) — Wikipedia (infobox: founded 2022; centre-left). Leader Hassan Sinno per the Lebanese parties list.",
+          "url": "https://en.wikipedia.org/wiki/Lana_(political_party)"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-UNION-PARTY",
+      "country": "LB",
+      "shortName": "Union Party",
+      "name": "حزب الإتحاد",
+      "nameEn": "Union Party",
+      "logo": "party-logos/lb/unionparty.svg",
+      "sha256": "c6ceb50b66d348896d0516cbd48e89551a60fd87d9095d58fa2485367204ac23",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Union_Party_(Lebanon)_flag.svg",
+      "ideology": [
+        "Nasserism",
+        "Pan-Arabism"
+      ],
+      "ideologyPosition": "other",
+      "leader": "Abdul Rahim Mrad",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Union Party (Lebanon) — Wikipedia (infobox: founded in the 1960s — no exact year is given, so none is shown; leader Abdul Rahim Mrad; Nasserism)",
+          "url": "https://en.wikipedia.org/wiki/Union_Party_(Lebanon)"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-DIGNITY",
+      "country": "LB",
+      "shortName": "Dignity",
+      "name": "تيار الكرامة",
+      "nameEn": "Dignity Movement",
+      "logo": "party-logos/lb/dignity.png",
+      "sha256": "db2428ff882c2485e0e2606825c9d69bbc8541f6b51f077f5c4eedbad7611a8e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:TayyarKarame-logo.png",
+      "licenceNote": "Non-free. Dignity Movement's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Arab nationalism",
+        "Pan-Arabism",
+        "Anti-Zionism"
+      ],
+      "ideologyPosition": "other",
+      "leader": "Faisal Karami",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Dignity Movement — Wikipedia (infobox: founded circa 1970 — the source gives only a circa date, so no founding year is shown; leader Faisal Karami)",
+          "url": "https://en.wikipedia.org/wiki/Dignity_Movement"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-MARADA",
+      "country": "LB",
+      "shortName": "Marada",
+      "name": "تيار المردة",
+      "nameEn": "Marada Movement",
+      "logo": "party-logos/lb/marada.png",
+      "sha256": "bd524ea85f238baf3c060b0c96d8d7f541ddbcb69adc65b6b13153f384158f77",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Marada_Movement_logo.png",
+      "licenceNote": "Non-free. Marada Movement's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Lebanese nationalism",
+        "Christian democracy"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1991,
+      "leader": "Suleiman Frangieh Jr.",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Marada Movement — Wikipedia (infobox: founded 1967 as a militia and 1991 as a party; President Suleiman Frangieh Jr.; right-wing)",
+          "url": "https://en.wikipedia.org/wiki/Marada_Movement"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-INDEPENDENCE",
+      "country": "LB",
+      "shortName": "Independence",
+      "name": "حركة الإستقلال",
+      "nameEn": "Independence Movement",
+      "logo": "party-logos/lb/independence.png",
+      "sha256": "1dcca6753aceffdcf6e90438ab57207d2cfe319b0ad28996c7b2469bbb53ed51",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Independence_Movement_Lebanon_logo.png",
+      "licenceNote": "Non-free. Independence Movement's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Sovereigntism",
+        "Reformism",
+        "Secularism",
+        "Lebanese nationalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2006,
+      "leader": "Michel Moawad",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Independence Movement (Lebanon) — Wikipedia (infobox: founded 2006; leader Michel Moawad; centre-right)",
+          "url": "https://en.wikipedia.org/wiki/Independence_Movement_(Lebanon)"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-NDP",
+      "country": "LB",
+      "shortName": "NDP",
+      "name": "حزب الحوار الوطني",
+      "nameEn": "National Dialogue Party",
+      "logo": "party-logos/lb/ndp.svg",
+      "sha256": "76f2c47afb53f88517c52c4c9a5129ece4758a6816239e62c5f07c3e6fac73e2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:National_Dialouge_Party_logo.svg",
+      "ideology": [
+        "Economic liberalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2004,
+      "leader": "Fouad Makhzoumi",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "National Dialogue Party — Wikipedia (infobox: founded 2004; leader Fouad Makhzoumi; centre-right)",
+          "url": "https://en.wikipedia.org/wiki/National_Dialogue_Party"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-SANAD",
+      "country": "LB",
+      "shortName": "Sanad",
+      "name": "حركة سند",
+      "nameEn": "Sanad Movement",
+      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the movement has no article of its own — it appears only in Ashraf Rifi's infobox and the chamber's composition) and the Lebanese parties list. No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "leader": "Ashraf Rifi",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Ashraf Rifi — Wikipedia (infobox: party = Sanad Movement, 2023–present; Rifi sits in the Renewal Bloc)",
+          "url": "https://en.wikipedia.org/wiki/Ashraf_Rifi"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-KHATT-AHMAR",
+      "country": "LB",
+      "shortName": "Khatt Ahmar",
+      "name": "الخط الأحمر",
+      "nameEn": "Khatt Ahmar (Red Line)",
+      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the party has no article of its own; it appears only in Waddah Sadek's infobox, the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
+      "ideology": [
+        "Reformism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "leader": "Waddah Sadek",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Waddah Sadek — Wikipedia (infobox: party = Khatt Ahmar)",
+          "url": "https://en.wikipedia.org/wiki/Waddah_Sadek"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-PNO",
+      "country": "LB",
+      "shortName": "PNO",
+      "name": "التنظيم الشعبي الناصري",
+      "nameEn": "Popular Nasserist Organization",
+      "logo": "party-logos/lb/pno.svg",
+      "sha256": "dcda332db573e7f10ad1b6f4a2f02953d146908c1e01860065b45e1b19899935",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Popular_Nasserist_Organization.svg",
+      "ideology": [
+        "Nasserism",
+        "Arab socialism",
+        "Arab nationalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1973,
+      "leader": "Osama Saad",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Cabinet of Nawaf Salam, formed 8 February 2025, confidence and supply from the chamber's 46-seat supporting group, without holding a portfolio.",
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Popular Nasserist Organization — Wikipedia (infobox: founded 1973; leader Osama Saad; left-wing)",
+          "url": "https://en.wikipedia.org/wiki/Popular_Nasserist_Organization"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-RELEBANON",
+      "country": "LB",
+      "shortName": "ReLebanon",
+      "name": "لبنان عن جديد",
+      "nameEn": "ReLebanon",
+      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the party has no article of its own; it appears only in the Forces of Change article, the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
+      "ideology": [
+        "Reformism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "leader": "Ziad Abs",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    },
+    {
+      "id": "LB-ISLAMIC-GROUP",
+      "country": "LB",
+      "shortName": "Islamic Group",
+      "name": "الجماعة الإسلامية في لبنان",
+      "nameEn": "Islamic Group of Lebanon",
+      "logo": "party-logos/lb/islamicgroup.png",
+      "sha256": "a158e4ce1c2198b39cfc281dcca7d506592fcff54e1766b0bbc1e76d2f2ae7d9",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Islamic_Group_logo_Lebanon.png",
+      "licenceNote": "Non-free. Islamic Group of Lebanon's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Sunni Islamism",
+        "Islamic democracy",
+        "Pan-Islamism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1964,
+      "leader": "Muhammad Taqqush",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 128,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Islamic Group of Lebanon — Wikipedia (infobox: founded 1964 as the Lebanese affiliate of the Muslim Brotherhood; leader Muhammad Taqqush; right-wing)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Group_of_Lebanon"
+        },
+        {
+          "title": "Parliament of Lebanon — Wikipedia (composition of the 2022–2026 chamber: government bloc 64, confidence-and-supply group 46, opposition 17, one casual vacancy; the per-bloc notes give each party's own deputies, e.g. Lebanese Forces 14 of Strong Republic's 19)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Lebanon"
+        },
+        {
+          "title": "List of political parties in Lebanon — Wikipedia (parties represented in parliament, with leader and ideology)",
+          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Lebanon"
+        }
+      ]
+    }
+  ],
   "KZ": [
     {
       "id": "KZ-ADILET",
