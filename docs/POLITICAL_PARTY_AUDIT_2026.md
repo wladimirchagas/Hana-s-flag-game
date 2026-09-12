@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 43 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 44 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -93,6 +93,8 @@ forgotten; it is tracked here.
 | 🇱🇺 Luxembourg | `#1354` | 3 → 7 | **60 / 60** | **WRONG — two of three leaders lead a different party** |
 | 🇨🇭 Switzerland | `#1355` | 3 → 10 | **200 / 200** | **WRONG — an FDP councillor listed as the Social Democrats' leader** |
 | 🇦🇹 Austria | `#1356` | 2 → 5 | 182 / 183 | **WRONG — the election's winner recorded with zero seats** |
+| 🇦🇫 Afghanistan | `9f1bd78` | **3 → 0 (removed)** | n/a | **OUT OF SCOPE — party activity is illegal; audited by the owner** |
+| 🇨🇿 Czechia | `#1359` | 3 → 13 | 187 / 200 | **WRONG — a party with no seats carried as seated** |
 
 ---
 
@@ -1554,6 +1556,46 @@ Afghanistan's three entries described the former republic's **Wolesi Jirga**: Af
 
 **Sources checked:** [Afghanistan Ministry of Justice, Dari statement on the prohibition of party activity (16 April 2024)](https://moj.gov.af/dr/node/3140); [EUAA, *Afghanistan: Country Focus*, “Political opposition and civic space” (February 2026)](https://www.euaa.europa.eu/coi-report-afghanistan-country-focus/111-political-opposition-and-civic-space).
 
+### 🇨🇿 Czechia — audited 2026-09-12
+
+Czechia held three parties, and **one of them holds no seat in either chamber**. `CZ-CSSD` carried
+the Czech Social Democrats as a seated party; the party — which **renamed itself Social Democracy
+(SOCDEM) in 2023** — has held **0 of 200** Chamber seats and 0 of 81 Senate seats since 2021. The two
+other entries were on the previous parliament's figures, and the government they described has been
+out of office since 2021.
+
+The Chamber of Deputies, 200 seats, after the 3–4 October 2025 election: **Government (Babiš III)
+108** — ANO 80, SPD 15, Motorists 13 as *groups* — **Opposition 92** — ODS 27, STAN 22, Pirates 18,
+KDU-ČSL 16, TOP 09 9.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-241 | **S1** | party identity | **`CZ-CSSD` — Czech Social Democratic Party**, carried as seated | **removed** | The party renamed itself Social Democracy in 2023 and holds **0 seats** in both chambers. A party with no seats is outside this dataset's scope |
+| PP-242 | **S1** | `seats` | ANO 72, SPD 20 | **ANO 76, SPD 11** | The Chamber's own composition. The SPD figure is the *group's* 15 minus the four deputies who belong to other parties — the group is not the party |
+| PP-243 | **S3** | coverage | 3 parties, 107 of 200 | **13 parties, 187 of 200** | Eleven seated parties were absent, including **ODS (26)**, **STAN (20)** and the **Pirates (16)** |
+| PP-244 | **S2** | `inPower` / `inExecutive` | ANO in power, `inExecutive` absent | **ANO, SPD and the Motorists in the executive**; PRO, Svobodní and Tricolour in power without cabinet office | The third Babiš cabinet, formed 15 December 2025 |
+| PP-245 | **S3** | coalitions | none | **`CZ-GOV`** (Babiš III, 108 of 200) | The cabinet's own article |
+| PP-246 | **S6** | `ideology`, `positionRaw` | flattened | each party's cited list and position verbatim | e.g. STAN "Centre to centre-right", the Motorists "Right-wing to far-right" |
+
+**The Czech chamber reports GROUPS, and a group is not a party** — the same modelling problem as
+France's Assembly. Four of the five government/opposition groups contain deputies from other parties
+or none: SPD's 15 is SPD 11 + PRO 1 + Svobodní 1 + Tricolour 1 + one independent; the Motorists' 13 is
+6 party deputies and 7 independents; ANO's 80 is 76 + 4; ODS's 27 is 26 + 1; STAN's 22 is STAN 20 +
+SLK 2; the Pirates' 18 is 16 + 2 Greens. **Each party carries its own deputies only**, so the six
+micro-parties riding those lists (SLK, the Greens, PRO, Svobodní, Tricolour) are entered separately
+rather than folded into the group that carried them.
+
+**Three parties are `inPower` without being in the executive.** PRO, Svobodní and Tricolour sit inside
+the SPD group on the government benches but hold no cabinet post — the same confidence-and-supply
+reading applied in Indonesia, Peru, France, Italy, Spain and Ireland.
+
+**Documented gap — 13 of the 200 seats**: the independents elected on the ANO, SPD, Motorists and ODS
+lists, who belong to no party.
+
+All thirteen logos are on Wikimedia Commons under free licences and were montage-verified.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1681,7 +1723,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `CH` Switzerland — merged
 - [x] `AT` Austria — merged
 - [x] `PL` Poland — merged
-- [ ] `CZ` Czechia
+- [x] `CZ` Czechia — merged
 - [ ] `SK` Slovakia
 - [ ] `HU` Hungary
 - [ ] `RO` Romania
