@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 20 / 195 — Southeast Asia complete; South America under way.**
+**Countries audited: 21 / 195 — Southeast Asia complete; South America under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -66,6 +66,7 @@ forgotten; it is tracked here.
 | 🇻🇪 Venezuela | `#1330` | **1 → 20** | 277 / 285 | **WRONG — one party credited with every seat** |
 | 🇪🇨 Ecuador | `#1331` | 4 → 6 | 133 / 151 | **WRONG — a fictitious party with 17 seats** |
 | 🇧🇴 Bolivia | `#1332` | 3 → 6 | 129 / 130 | **WRONG — two invented parties, no government** |
+| 🇵🇾 Paraguay | `#1333` | 3 → 7 | 77 / 80 | **WRONG — a chamber size that never existed** |
 
 ---
 
@@ -664,6 +665,32 @@ and montage-verified.
 
 ---
 
+### 🇵🇾 Paraguay — audited 2026-09-12
+
+Paraguay's entry had the **wrong chamber size**, and every seat figure was scaled to it. The Chamber
+of Deputies has **80** members, not 128 — 128 is not the size of either Paraguayan house (the Senate
+has 45), so the figure appears to have been invented rather than taken from a superseded chamber.
+
+The Chamber elected on 30 April 2023 sits **ANR 48** (government), **PLRA 22**, **Yo Creo 3**, 3
+independents, and one seat each for **PCN**, **PEN**, **PPQ** and **PPS**.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-098 | **S1** | `seatsTotal` | **128** | **80** | The Chamber has 80 deputies; the Senate has 45. 128 matches neither, nor their sum |
+| PP-099 | **S1** | `seats` | ANR 51, PLRA 38 | **ANR 48, PLRA 22** | The Chamber's own composition, corroborated by both parties' English infoboxes |
+| PP-100 | **S1** | existence | **"Hagamos" (26 seats), founded 2018** | **removed** | No party of that name sits in the Chamber. The 26 seats were spread across five parties that were absent |
+| PP-101 | **S1** | `founded` | PLRA **1873** | **1887** | The PLRA dates from 10 July 1887; the ANR from 11 September 1887, eight weeks later — the dataset had the ANR's year right and the PLRA's wrong by fourteen years |
+| PP-102 | **S2** | coverage | 3 parties (one fictitious), 115 of a wrong 128 | **7 parties, 77 of 80** | Added Yo Creo (3), PCN, PEN, PPQ and PPS (1 each) |
+| PP-103 | **S2** | `noImageReason` | all three entries claimed no freely-licensed logo exists | **all seven now carry one** | Every one is on Commons; the ANR's and PLRA's are SVGs in the public domain |
+| PP-104 | **S3** | `leader` | PLRA and "Hagamos" had none | **Alcides Riveros**, plus a leader for each new party | party infoboxes |
+
+**Documented gap — 3 of the 80 seats are independents**, not a party.
+
+All seven logos were downloaded from Commons, byte-checked against their extension, and
+montage-verified. Paraguay's three entries have left `GRANDFATHERED_PARTIES_WITH_NO_IMAGE`.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -696,7 +723,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `VE` Venezuela — merged
 - [x] `EC` Ecuador — merged
 - [x] `BO` Bolivia — merged
-- [ ] `PY` Paraguay
+- [x] `PY` Paraguay — merged
 - [ ] `UY` Uruguay
 - [ ] `GY` Guyana
 - [ ] `SR` Suriname
