@@ -3465,6 +3465,12 @@ every finding with its fix. The method, the per-field freshness contract and the
 in `docs/POLITICAL_PARTY_AUDIT_PROMPT.md`. **Read the ledger first in any session that touches
 party data**; it is the only record of what has already been verified.
 
+### Live operational status — mandatory
+
+The [Political-party audit live operational status issue](https://github.com/wladimirchagas/Hana-s-flag-game/issues/1371) is the public, timestamped operational log for this sweep. It is separate from the evidence ledger: the ledger preserves findings; this issue proves where work currently is.
+
+Before doing any work on a country, and after each material boundary (current-chamber baseline established; PR opened; checker/CI outcome; merge; production/live-build verification; handoff to the next country), add a comment to issue #1371 stating the country, what just happened, the exact next action, and any blocker. Never leave a long research, CI, deployment or tool wait without a visible checkpoint. A chat promise is not an update; an auditable timestamped status record is.
+
 ### Rules
 
 1. **Never ask whether to continue.** Finish the country in hand, ship it, pick the next one off the
