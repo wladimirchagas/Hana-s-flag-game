@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 52 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 53 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -103,6 +103,7 @@ forgotten; it is tracked here.
 | 🇨🇳 China | `#1366` | 1 → 9 | 2,411 / 2,977 | **The ruling party was given every seat in the chamber; all eight other legal parties were missing** |
 | 🇨🇾 Cyprus | `#1368` | 0 → 6 | **56 / 56** | **Absent from the dataset entirely; a general election in May 2026 had replaced three parties with two** |
 | 🇬🇪 Georgia | `#1369` | 3 → 4 | 101 / 150 (49 vacant) | **Two of three entries held no seats after 49 opposition mandates were revoked; the three parties that do sit were missing** |
+| 🇮🇳 India | `#1370` | 4 → 43 | 536 / 543 | **Thirty-nine seated parties missing; the TMC had lost 20 MPs to a new NDA party and the DMK's count was its alliance's** |
 
 ---
 
@@ -1945,6 +1946,63 @@ montage-verified.
 
 ---
 
+### 🇮🇳 India — audited 2026-09-12
+
+India had **four** parties recorded against a 543-seat chamber — the worst coverage gap in the
+dataset relative to chamber size. **Thirty-nine parties holding 296 seats were missing**, and three
+of the four that were present had the wrong seat count, two of them wildly so.
+
+The Lok Sabha, 543 seats: **NDA 318** — **INDIA bloc 184** — **other opposition 38** — **vacant 3**.
+Forty-three parties hold seats; the remaining 7 are 4 independents and 3 casual vacancies.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-290 | **S1** | coverage | **4 parties, 407 / 543** | **43 parties, 536 / 543** | Every seated party is now present. The 7 unmodelled seats are 4 independents and 3 casual vacancies |
+| PP-291 | **S1** | `seats` | **Trinamool Congress 29** | **8** | Twenty of the TMC's MPs left to form the **Nationalist Citizens Party of India**, which joined the NDA in 2026 and is now its second-largest member. The dataset recorded neither the loss nor the new party |
+| PP-292 | **S1** | `seats` | **DMK 39** | **22** | 39 is the DMK-led alliance's tally in Tamil Nadu, not the party's own seats |
+| PP-293 | **S2** | `seats` | INC 99 | **98** | |
+| PP-294 | **S2** | `leader` | BJP **Narendra Modi** | **Nitin Nabin**, President | Modi is *Leader of the House in the Lok Sabha*, and J. P. Nadda leads in the Rajya Sabha; neither is the party's national president. This field is the party leader everywhere else in the dataset |
+| PP-295 | **S2** | `inExecutive` | absent on all four | **set on the 9 NDA parties that hold portfolios** | The third Modi ministry's own article names them: BJP, JD(U), TDP, Shiv Sena, LJP(RV), JD(S), RLD, HAM and Apna Dal (Sonelal). The other six NDA parties support the government without a ministry |
+| PP-296 | **S3** | structure | — | **`IN-NDA` and `IN-INDIA` coalitions added** | With 43 parties, the alliance each belongs to is the single most useful thing a reader can be told |
+| PP-297 | **S2** | `logo` | — | **three wrong images caught by the montage pass** | See below |
+| PP-298 | **S2** | `logo` | — | **two orphan files deleted** | `in/bjd.svg` (Biju Janata Dal — **zero** Lok Sabha seats) and `in/ncp-aghdikar.png`, both prefetched by an earlier pass and referenced by nothing. Three `.png` duplicates of logos now bundled as `.svg` were also removed |
+
+**The montage pass earned its keep three times over.** Each of these passed every mechanical check —
+the file existed, hashed, and came from Commons:
+
+* **CPI(ML) Liberation** resolved to `Flag Logo of CPIML.png`, a black-and-white line drawing of a
+  flag with three stars. That is the party's **Election Commission ballot symbol**, not its flag,
+  which is red with a hammer and sickle and the letters CPI (ML). Replaced.
+* **Hindustani Awam Morcha** resolved to a Commons SVG that is a **broken potrace trace** — a single
+  red rectangle covering a fifth of the canvas, with no design at all. Its only other candidate was
+  a **photograph of a cooking pan** (its "Pan" ballot symbol). Neither is an emblem, so HAM ships
+  with a `noImageReason`.
+* **Kerala Congress** resolved to an unattributed white-and-red bicolour that could belong to any of
+  the several Kerala Congress factions. Replaced with the auto-rickshaw symbol its own article
+  declares.
+
+**India's parties have two different marks, and conflating them causes collisions.** Each party has
+its own logo or flag *and* an Election Commission ballot symbol. The generic ECI symbol files are
+shared: the "cycle" symbol belongs to the Samajwadi Party in Uttar Pradesh **and** the Telugu Desam
+Party in Andhra Pradesh, so taking the generic file for both would have put the same image on two
+different parties. The rule applied here is: **use the party's own logo or flag where one exists;
+where none does, use the ballot symbol its own article declares** — which is the case for AGP
+(elephant), RLD (hand pump), JKNC (plough), Kerala Congress (auto-rickshaw), ZPM (hat), UPPL
+(tractor), RLP (water bottle) and LJP(RV) (helicopter). No file is used for two parties.
+
+**Documented gap — 7 of 543 seats.** Four independents and three casual vacancies, neither of which
+is a party. 536 is the correct party total.
+
+**Fourteen parties are filed `other`.** Their articles carry an ideology but no left-right position —
+common for India's regional and caste-based parties (Apna Dal, AJSU, the Bharat Adivasi Party,
+Kerala Congress, the IUML, RLD, RLP, SKM, UPPL, VCK, ZPM, NCP(SP), HAM and the J&K Awami Ittehad
+Party). The position is left unset rather than inferred from the ideology tags.
+
+Thirty-seven logos are on Commons under free licences; five are non-free files on English Wikipedia
+and are declared. All 42 were montage-verified.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2155,7 +2213,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `GW` Guinea-Bissau
 - [ ] `HT` Haiti
 - [ ] `HN` Honduras
-- [ ] `IN` India
+- [x] `IN` India — merged
 - [ ] `IR` Iran
 - [ ] `IQ` Iraq
 - [ ] `IL` Israel
