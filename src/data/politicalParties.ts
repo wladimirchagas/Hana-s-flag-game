@@ -158,6 +158,28 @@ export interface PoliticalParty {
 }
 
 export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
+  "CN-UF": {
+    id: "CN-UF",
+    name: "多党合作制度",
+    nameEn: "Multi-party cooperation system",
+    kind: "coalition",
+    memberPartyIds: [
+      "CN-CPC",
+      "CN-CPWDP",
+      "CN-JIUSAN",
+      "CN-CDL",
+      "CN-CAPD",
+      "CN-CNDCA",
+      "CN-RCCK",
+      "CN-ZGD",
+      "CN-TDSGL",
+    ],
+    source: {
+      title: "United Front (China) — Wikipedia: the eight legally recognised democratic parties accept the leadership of the Communist Party of China and participate in governance as 参政党 (participating parties)",
+      url: "https://en.wikipedia.org/wiki/United_Front_(China)",
+    },
+    note: "Formally the 中国共产党领导的多党合作和政治协商制度 — the system of multi-party cooperation and political consultation under Communist Party leadership. It is not a coalition government and not a government-versus-opposition arrangement. China's eight other legal parties are constitutionally \"participating parties\" that accept the leadership of the Communist Party of China: they hold seats in the National People's Congress and their chairpersons sit as NPC vice-chairpersons, but they do not contest elections against the CPC, do not form or seek to form a government, and no new party may register. They are recorded here as holding seats and not holding power, which is why eight of China's nine parties show as out of government.",
+  },
   "ES-GOV": {
     id: "ES-GOV",
     name: "Gobierno de coalición PSOE–Sumar",
@@ -16119,22 +16141,303 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "CPC",
       "name": "中国共产党",
       "nameEn": "Communist Party of China",
-      "logo": "party-logos/CN/Communist Party of China.svg",
-      "sha256": "a4a5fde535e97fa92bbc16f677c5b3c5f82d287f746282eb1ce7deae372cc495",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Communist_Party_of_China.svg",
-      "ideology": ["Communism", "Marxism-Leninism", "Socialism"],
+      "logo": "party-logos/cn/cpc.svg",
+      "sha256": "ec385cd3a0fea530c990177f39b2f272fa6c79b1e5c669677970386d99a664cf",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Danghui.svg",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism"
+      ],
       "ideologyPosition": "far-left",
       "founded": 1921,
+      "coalitionId": "CN-UF",
       "leader": "Xi Jinping",
       "leaderTitle": "General Secretary",
       "inPower": true,
-      "seats": 2977,
+      "inExecutive": true,
+      "timeInPower": "In power since the founding of the People's Republic of China on 1 October 1949.",
+      "seats": 2040,
       "seatsTotal": 2977,
       "chamberName": "National People's Congress",
       "sources": [
         {
-          "title": "Communist Party of China – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_China"
+          "title": "Chinese Communist Party — Wikipedia (infobox: founded 23 July 1921; General Secretary Xi Jinping; ideology Communism, Marxism–Leninism; 2,040 of the 14th NPC's 2,977 seats). China publishes no official party breakdown of NPC deputies and the chamber's own article leaves the figure blank, so this is the only figure available for the CPC.",
+          "url": "https://en.wikipedia.org/wiki/Chinese_Communist_Party"
+        },
+        {
+          "title": "14th National People's Congress — Wikipedia (seat distribution: the eight democratic parties' deputies; 2,977 members elected March 2023 for a term to March 2028)",
+          "url": "https://en.wikipedia.org/wiki/14th_National_People%27s_Congress"
+        },
+        {
+          "title": "第十四届全国人民代表大会代表名单 — 中文维基百科（2,977名代表由35个选举单位选举产生，任期2023年3月至2028年3月；现有代表2,847人）",
+          "url": "https://zh.wikipedia.org/wiki/%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%B1%8A%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A%E4%BB%A3%E8%A1%A8%E5%90%8D%E5%8D%95"
+        }
+      ]
+    },
+    {
+      "id": "CN-CPWDP",
+      "country": "CN",
+      "shortName": "CPWDP",
+      "name": "中国农工民主党",
+      "nameEn": "Chinese Peasants' and Workers' Democratic Party",
+      "logo": "party-logos/cn/cpwdp.png",
+      "sha256": "d34757f29970fe887802a38db151aa905d57f42036ad439aadb21732111cd1d5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_Peasants%27_and_Workers%27_Democratic_Party.png",
+      "ideology": [
+        "Socialism with Chinese characteristics"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1930,
+      "coalitionId": "CN-UF",
+      "leader": "He Wei",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 60,
+      "seatsTotal": 2977,
+      "chamberName": "National People's Congress",
+      "sources": [
+        {
+          "title": "Chinese Peasants' and Workers' Democratic Party — Wikipedia (infobox: formally founded 9 August 1930; ideology Socialism with Chinese characteristics; 60 of the 14th NPC's 2,977 seats)",
+          "url": "https://en.wikipedia.org/wiki/Chinese_Peasants%27_and_Workers%27_Democratic_Party"
+        },
+        {
+          "title": "团结网 —【名单】新一届全国人大代表、政协委员中的农工党党员（60名农工党党员当选第十四届全国人大代表，分布在26个代表团）",
+          "url": "http://www.tuanjiewang.cn/2023-03/05/content_8950946.htm"
+        },
+        {
+          "title": "14th National People's Congress — Wikipedia (seat distribution: the eight democratic parties' deputies; 2,977 members elected March 2023 for a term to March 2028)",
+          "url": "https://en.wikipedia.org/wiki/14th_National_People%27s_Congress"
+        }
+      ]
+    },
+    {
+      "id": "CN-JIUSAN",
+      "country": "CN",
+      "shortName": "Jiusan",
+      "name": "九三学社",
+      "nameEn": "Jiusan Society",
+      "noImageReason": "Searched Wikidata (the Jiusan Society's item carries no P154 logo), Wikimedia Commons (no emblem file under either the English or the Chinese name 九三学社 社徽), the English and Chinese Wikipedia articles (neither infobox has a logo parameter) and the society's own website 93.gov.cn (its masthead is a text banner, with no emblem image file published). No freely- or non-free-licensable emblem could be sourced.",
+      "ideology": [
+        "Socialism with Chinese characteristics"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1946,
+      "coalitionId": "CN-UF",
+      "leader": "Wu Weihua",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 61,
+      "seatsTotal": 2977,
+      "chamberName": "National People's Congress",
+      "sources": [
+        {
+          "title": "九三学社中央委员会 — 担任第十四届全国人大代表的九三学社社员名单（61人），九三学社中央组织部发布",
+          "url": "http://www.93.gov.cn/syfc-rddb/774275.html"
+        },
+        {
+          "title": "Jiusan Society — Wikipedia (infobox: founded 4 May 1946; Chairperson Wu Weihua; ideology Socialism with Chinese characteristics)",
+          "url": "https://en.wikipedia.org/wiki/Jiusan_Society"
+        }
+      ]
+    },
+    {
+      "id": "CN-CDL",
+      "country": "CN",
+      "shortName": "CDL",
+      "name": "中国民主同盟",
+      "nameEn": "China Democratic League",
+      "logo": "party-logos/cn/cdl.png",
+      "sha256": "5dbee4fee34a50e937d19ed59d5b52d179186c6c920d7905e9d6f7fe4002e2b9",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:China_Democratic_League_logo.png",
+      "licenceNote": "Non-free. The China Democratic League's emblem is a copyrighted logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Socialism with Chinese characteristics"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1941,
+      "coalitionId": "CN-UF",
+      "leader": "Ding Zhongli",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 56,
+      "seatsTotal": 2977,
+      "chamberName": "National People's Congress",
+      "sources": [
+        {
+          "title": "中国民主同盟 — 56名民盟盟员当选第十四届全国人大代表（民盟中央官网，2023年2月24日十三届全国人大常委会第三十九次会议通过代表名单）",
+          "url": "https://www.mmzy.org.cn/mobile/NPC2025/Content.aspx?ColumnId=2698&ArticleId=150098"
+        },
+        {
+          "title": "China Democratic League — Wikipedia (infobox: founded 19 March 1941 in Chongqing; 56 of the 14th NPC's 2,977 seats)",
+          "url": "https://en.wikipedia.org/wiki/China_Democratic_League"
+        },
+        {
+          "title": "14th National People's Congress — Wikipedia (seat distribution: the eight democratic parties' deputies; 2,977 members elected March 2023 for a term to March 2028)",
+          "url": "https://en.wikipedia.org/wiki/14th_National_People%27s_Congress"
+        }
+      ]
+    },
+    {
+      "id": "CN-CAPD",
+      "country": "CN",
+      "shortName": "CAPD",
+      "name": "中国民主促进会",
+      "nameEn": "China Association for Promoting Democracy",
+      "noImageReason": "Searched Wikidata (the association's item carries no P154 logo), Wikimedia Commons (no emblem file under either the English or the Chinese name 中国民主促进会 会徽), the English and Chinese Wikipedia articles (neither infobox has a logo parameter) and the association's own website mj.org.cn (no emblem image file is published). No freely- or non-free-licensable emblem could be sourced.",
+      "ideology": [
+        "Socialism with Chinese characteristics"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1945,
+      "coalitionId": "CN-UF",
+      "leader": "Cai Dafeng",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 54,
+      "seatsTotal": 2977,
+      "chamberName": "National People's Congress",
+      "sources": [
+        {
+          "title": "中国民主促进会 — 第十四届全国人大代表中的民进会员名单（54人），民进中央官网",
+          "url": "https://www.mj.org.cn/mjzt/wzt/2024qglh/2024lhmd/202402/t20240222_284032.htm"
+        },
+        {
+          "title": "China Association for Promoting Democracy — Wikipedia (infobox: founded 30 December 1945; Chairperson Cai Dafeng; 54 of the 14th NPC's 2,977 seats)",
+          "url": "https://en.wikipedia.org/wiki/China_Association_for_Promoting_Democracy"
+        }
+      ]
+    },
+    {
+      "id": "CN-CNDCA",
+      "country": "CN",
+      "shortName": "CNDCA",
+      "name": "中国民主建国会",
+      "nameEn": "China National Democratic Construction Association",
+      "logo": "party-logos/cn/cndca.png",
+      "sha256": "309e41915a0fca3b38f06edaff74f6d2dcaf455b99e9fad2d732edb0216b59c4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:China_National_Democratic_Construction_Association_logo.png",
+      "ideology": [
+        "Socialism with Chinese characteristics"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1945,
+      "coalitionId": "CN-UF",
+      "leader": "Hao Mingjin",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 44,
+      "seatsTotal": 2977,
+      "chamberName": "National People's Congress",
+      "sources": [
+        {
+          "title": "China National Democratic Construction Association — Wikipedia (infobox: founded 16 December 1945; Chairperson Hao Mingjin; 44 of the 14th NPC's 2,977 seats)",
+          "url": "https://en.wikipedia.org/wiki/China_National_Democratic_Construction_Association"
+        },
+        {
+          "title": "14th National People's Congress — Wikipedia (seat distribution: the eight democratic parties' deputies; 2,977 members elected March 2023 for a term to March 2028)",
+          "url": "https://en.wikipedia.org/wiki/14th_National_People%27s_Congress"
+        }
+      ]
+    },
+    {
+      "id": "CN-RCCK",
+      "country": "CN",
+      "shortName": "RCCK",
+      "name": "中国国民党革命委员会",
+      "nameEn": "Revolutionary Committee of the Chinese Kuomintang",
+      "logo": "party-logos/cn/rcck.png",
+      "sha256": "f4fd02ca6ca2f6cd3250c8e721d4a44a6319310a2b3e8a5aab79c5dcc63a9cf5",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Revolutionary_Committee_of_the_Chinese_Kuomintang_emblem.png",
+      "licenceNote": "Non-free. The Revolutionary Committee's emblem is a copyrighted logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos in this repository. Wikidata's P154 for this party points at the Kuomintang's own white-sun emblem, which is a different organisation's mark and is deliberately not used here.",
+      "ideology": [
+        "New Three Principles of the People",
+        "Socialism with Chinese characteristics",
+        "Chinese nationalism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1948,
+      "coalitionId": "CN-UF",
+      "leader": "Zheng Jianbang",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 43,
+      "seatsTotal": 2977,
+      "chamberName": "National People's Congress",
+      "sources": [
+        {
+          "title": "民革中央 — 民革131名代表委员将在全国两会履职：担任第十四届全国人大代表的民革党员名单（共43名，以代表团为序），2026年3月",
+          "url": "http://www.minge.gov.cn/n1/2026/0303/c415581-40673765.html"
+        },
+        {
+          "title": "Revolutionary Committee of the Chinese Kuomintang — Wikipedia (infobox: founded 1 January 1948; Chairman Zheng Jianbang; ideology New Three Principles of the People, Socialism with Chinese characteristics, Chinese nationalism)",
+          "url": "https://en.wikipedia.org/wiki/Revolutionary_Committee_of_the_Chinese_Kuomintang"
+        }
+      ]
+    },
+    {
+      "id": "CN-ZGD",
+      "country": "CN",
+      "shortName": "Zhi Gong",
+      "name": "中国致公党",
+      "nameEn": "China Zhi Gong Party",
+      "logo": "party-logos/cn/zgd.png",
+      "sha256": "20eef374bef6754bdf97cd88ed6d3882297937aa9d1ad57a6bb27ea92de49d51",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:China_Zhi_Gong_Party_logo.png",
+      "licenceNote": "Non-free. The China Zhi Gong Party's emblem is a copyrighted logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos in this repository. Commons holds only a scan of the party's historic pre-1949 emblem and a Commons user's own geometric redrawing of part of it, neither of which is the emblem the party uses today.",
+      "ideology": [
+        "Overseas Chinese interests",
+        "Socialism with Chinese characteristics"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1925,
+      "coalitionId": "CN-UF",
+      "leader": "Jiang Zuojun",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 39,
+      "seatsTotal": 2977,
+      "chamberName": "National People's Congress",
+      "sources": [
+        {
+          "title": "China Zhi Gong Party — Wikipedia (infobox: founded 10 October 1925 in San Francisco; Chairperson Jiang Zuojun; ideology Overseas Chinese interests, Socialism with Chinese characteristics; 39 of the 14th NPC's seats)",
+          "url": "https://en.wikipedia.org/wiki/China_Zhi_Gong_Party"
+        },
+        {
+          "title": "14th National People's Congress — Wikipedia (seat distribution: the eight democratic parties' deputies; 2,977 members elected March 2023 for a term to March 2028)",
+          "url": "https://en.wikipedia.org/wiki/14th_National_People%27s_Congress"
+        }
+      ]
+    },
+    {
+      "id": "CN-TDSGL",
+      "country": "CN",
+      "shortName": "TDSGL",
+      "name": "台湾民主自治同盟",
+      "nameEn": "Taiwan Democratic Self-Government League",
+      "logo": "party-logos/cn/tdsgl.png",
+      "sha256": "5b0cb431049dbc4fdfefd33b09630bc53a85923cb78ca204cbf88961000f82df",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Taiwan_Democratic_Self-Government_League_logo.png",
+      "ideology": [
+        "Socialism with Chinese characteristics",
+        "Chinese unification"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1947,
+      "coalitionId": "CN-UF",
+      "leader": "Su Hui",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 14,
+      "seatsTotal": 2977,
+      "chamberName": "National People's Congress",
+      "sources": [
+        {
+          "title": "台湾民主自治同盟 — 第十四届全国人大代表、政协委员台盟盟员名单（台盟中央官网：全国人大代表14名，台湾省6名、其他省市8名）",
+          "url": "https://www.taimeng.org.cn/sy/zt/qglh2023/dbwyfc/202303/t20230303_340599.html"
+        },
+        {
+          "title": "Taiwan Democratic Self-Government League — Wikipedia (infobox: founded 12 November 1947 in British Hong Kong; 14 of the 14th NPC's 2,977 seats); 中文维基百科 infobox gives 中央主席 苏辉",
+          "url": "https://en.wikipedia.org/wiki/Taiwan_Democratic_Self-Government_League"
         }
       ]
     }
