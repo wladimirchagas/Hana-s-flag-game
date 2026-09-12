@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 38 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 39 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -84,6 +84,7 @@ forgotten; it is tracked here.
 | 🇸🇪 Sweden | `#1349` | 4 → 11 | **349 / 349** | **WRONG — largest party understated by 39 seats** |
 | 🇩🇰 Denmark | `#1350` | 7 → 12 | 171 / 179 | **FABRICATED PARTY — 50 seats for one that does not exist** |
 | 🇮🇪 Ireland | `#1351` | 3 → 10 | 159 / 174 | **BROKEN IMAGES — every logo was an HTML error page** |
+| 🇵🇹 Portugal | `#1352` | 2 → 10 | **230 / 230** | **WRONG — the opposition marked as governing, 62 seats out** |
 
 ---
 
@@ -1386,6 +1387,44 @@ before bundling.
 
 ---
 
+### 🇵🇹 Portugal — audited 2026-09-12
+
+Portugal held **two parties**, and the one marked as governing has been in opposition since April
+2024. **`PT-PS` carried 120 seats; the Socialist Party holds 58** — overstated by 62, more than the
+entire Chega parliamentary party. The governing Social Democrats, with 89, were not in the dataset
+at all.
+
+The Assembly of the Republic, 230 seats, after the 18 May 2025 election: **Government (XXV
+Constitutional) 91** — PSD 89, CDS–PP 2 — **Opposition 139** — Chega 60, PS 58, IL 9, LIVRE 6,
+PCP 3, BE 1, PAN 1, JPP 1.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-207 | **S1** | `seats` | PS **120**, BE **12** | **PS 58, BE 1** | The Assembly's own composition after the 18 May 2025 election. Both figures predate two general elections |
+| PP-208 | **S1** | `inPower` | **PS true** | **false**; PSD and CDS–PP true and `inExecutive` | The Socialist Party left office in April 2024. The XXV Constitutional Government, formed 5 June 2025, is a PSD–CDS–PP minority coalition under Luís Montenegro |
+| PP-209 | **S1** | `leader` | PS **Pedro Nuno Santos**; BE **Mariana Mortágua** | **José Luís Carneiro**; **José Manuel Pureza** | Santos resigned after the May 2025 defeat; each party's own infobox |
+| PP-210 | **S3** | coverage | 2 parties, 132 of 230 | **10 parties, 230 of 230 exactly** | Eight seated parties were absent, including the governing **PSD (89)** and **Chega (60)** |
+| PP-211 | **S2** | `founded` | BE **1997** | **1999** | The Left Bloc's own infobox: founded 28 February 1999 |
+| PP-212 | **S2** | `leaderTitle` | "Party Leader" on both | **President** (PSD, Chega, IL, CDS–PP, JPP), **Secretary-General** (PS), **General Secretary** (PCP), **Coordinator of the Political Commission** (BE), **Spokespersons** (LIVRE) | Portuguese parties do not share one leadership office, and the widget renders the title verbatim |
+| PP-213 | **S3** | coalitions | none | **`PT-GOV`** (XXV Constitutional Government, 91 of 230 — a minority coalition) | The government's own article |
+| PP-214 | **S6** | `ideology`, `positionRaw` | PS "Social democracy / Progressivism / Pro-EU", position "Centre-left"; BE position "Left" | each party's cited list and position, verbatim (BE: "Left-wing to far-left") | Flattened ranges restored to the source's own wording |
+
+**Chega is now the largest opposition party**, at 60 seats against the Socialists' 58 — the first
+time since the Carnation Revolution that neither PS nor PSD leads the opposition. The old two-party
+dataset could not express that at all.
+
+**Documented gap — none.** Portugal is the **seventh country in this sweep to reconcile exactly**:
+all 230 seats belong to one of the ten parties, with no independents and no unmodelled groups.
+
+**A logo double-checked because it looked wrong.** LIVRE's emblem is a red poppy with a black,
+paw-like centre, which reads at thumbnail size like an animal-rights symbol rather than a green
+party's. It was confirmed against **two independent infoboxes** — English Wikipedia's
+`Logo of the LIVRE.svg` and Portuguese Wikipedia's `Partido LIVRE logo.png` — which carry the same
+design from different uploads. Six logos are on Commons; four (Chega, PS, PAN, JPP) are non-free
+files held on English Wikipedia and are declared with `licenceNote`s. All ten were montage-verified.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -1435,7 +1474,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `FR` France — merged
 - [x] `DE` Germany — merged
 - [x] `ES` Spain — merged
-- [ ] `PT` Portugal
+- [x] `PT` Portugal — merged
 - [x] `IT` Italy — merged
 - [x] `NL` Netherlands — merged
 - [x] `BE` Belgium — merged
