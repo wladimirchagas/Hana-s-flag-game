@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 63 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 64 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -113,7 +113,8 @@ forgotten; it is tracked here.
 | 🇰🇷 South Korea | `#1380` | 7 → 7 | 291 / 300 (8 independents, 1 vacant) | Accurate on coverage; `inExecutive` absent though the DP holds the presidency |
 | 🇰🇼 Kuwait | `#1381` | — | — | **Out of scope — political parties are illegal and the Assembly has been suspended since May 2024** |
 | 🇰🇬 Kyrgyzstan | `#1382` | 0 → 6 | 84 / 90 (3 vacant, 3 other ungrouped) | **Absent entirely; only one party won seats as a party — 84 of 90 went to independents, so the chamber's own factions are the party structure** |
-| 🇱🇧 Lebanon | *(see PR)* | 0 → 25 | 83 / 128 (44 independents, 1 vacancy) | **Absent entirely; the obvious source reports BLOC seats as party seats for all six large parties** |
+| 🇱🇧 Lebanon | `#1383` | 0 → 25 | 83 / 128 (44 independents, 1 vacancy) | **Absent entirely; the obvious source reports BLOC seats as party seats for all six large parties** |
+| 🇲🇻 Maldives | *(see PR)* | 0 → 5 | 91 / 93 (2 independents) | **Absent entirely; the MDP ships with no leader — its presidency is vacant and the interim chair is under challenge** |
 
 ---
 
@@ -2457,6 +2458,34 @@ is affected; it is disclosed here rather than silently reconciled.
 cards), the three opposition parties carry no In-power badge while the other 22 do, no console
 errors.
 
+### 🇲🇻 Maldives — audited 2026-09-12
+
+**Absent entirely.** The Maldives had no entry in `POLITICAL_PARTIES`, so the Learn-mode Political
+parties tab showed nothing for the 93-seat **People's Majlis** elected on 21 April 2024. Five
+entries added, covering 91 of the 93 seats; the other two are independents.
+
+**PP-336 — a clean chamber, and it reconciles exactly.** PNC 74, MDP 13, MDA 2, Jumhooree Party 1,
+MNP 1, independents 2 = 93. The People's National Congress holds a **supermajority** of 74 seats —
+the largest single-party share of any chamber this audit has entered so far.
+
+**PP-337 — the MDP ships with NO leader, because naming one would state something the source does
+not.** The Maldivian Democratic Party's infobox records its **presidency as vacant**; its interim
+chairpersonship is itself the subject of a no-confidence petition, and its most recent officer
+changes are dismissals rather than elections. The only named officer is a Vice President. Rather
+than promote a vice-president to "leader" or ship a contested interim name, the entry carries no
+`leader` at all and its source line says why — the same discipline that stopped three wrong leaders
+shipping for Iran (PP-303), including one dead since 2017. `leader` is a SHOULD, and an honest blank
+beats a name the source will not support.
+
+**PP-338 — presidential system, so `inExecutive` follows the presidency, not a coalition.** The
+Maldives is a presidential republic in which the President appoints and heads the cabinet.
+**Mohamed Muizzu** — the PNC's own party President — has been President of the Maldives since
+**17 November 2023**, so the PNC alone carries `inPower: true` / `inExecutive: true`, and the other
+four parties carry neither. There is no confidence-and-supply case here.
+
+**Verified in the running app**: all five cards paint their logos, the PNC carries the In-power
+badge and the other four do not, no console errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2687,7 +2716,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `LY` Libya
 - [ ] `MG` Madagascar
 - [ ] `MW` Malawi
-- [ ] `MV` Maldives
+- [x] `MV` Maldives — merged
 - [ ] `ML` Mali
 - [ ] `MH` Marshall Islands
 - [ ] `MR` Mauritania
