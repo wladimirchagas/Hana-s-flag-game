@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 25 / 195 — Southeast Asia and South America complete; Phase 4 under way.**
+**Countries audited: 26 / 195 — Southeast Asia and South America complete; Phase 4 under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -71,6 +71,7 @@ forgotten; it is tracked here.
 | 🇬🇾 Guyana | `#1335` | 3 → 3 | 64 / 65 | **IMPOSSIBLE TOTAL — 72 seats in a 65-seat chamber** |
 | 🇸🇷 Suriname | `#1336` | 2 → 6 | 50 / 51 | **WRONG — a defunct 1987 coalition marked as governing** |
 | 🇬🇧 United Kingdom | `#1337` | **1 → 15** | 637 / 650 | **WRONG — a former prime minister, no opposition at all** |
+| 🇺🇸 United States | `#1338` | 2 → 2 | 432 / 435 | **CONTRADICTORY — two simultaneous presidents** |
 
 ---
 
@@ -876,6 +877,37 @@ All fifteen logos were montage-verified.
 
 ---
 
+### 🇺🇸 United States — audited 2026-09-12
+
+The United States had **two presidents at once**. `US-DEM` carried
+`leader: "Kamala Harris", leaderTitle: "President (2025–present)"` and `US-REP` carried
+`leader: "Donald Trump", leaderTitle: "President (2025–present)"`, and **both** were marked
+`inPower: true` **and** `inExecutive: true` with `timeInPower: "2025-present"`. Two parties cannot
+simultaneously hold the same single-occupant office, so this was not a stale fact that time
+overtook — it was internally contradictory the day it was written. Kamala Harris has never been
+president.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-130 | **S1** | `leader` / `leaderTitle` | **both parties' leaders titled "President (2025–present)"**; the Democratic one named **Kamala Harris** | **Donald Trump, "U.S. President"** for the Republicans; **Ken Martin, "Chair of the Democratic National Committee"** for the Democrats | Donald Trump has been president since 20 January 2025. Each party's own infobox: the Republicans list the president as their leader; the Democrats, holding no such office, list their DNC chair first |
+| PP-131 | **S1** | `inPower` / `inExecutive` | **true on both parties** | **true on the Republicans only** | Only one party holds the presidency and the House majority |
+| PP-132 | **S1** | `seats` | Democratic **222**, Republican **213** — the majority on the wrong side | **Republican 218, Democratic 214** | The House's own composition for the 119th Congress. The old figures reversed control of the chamber |
+| PP-133 | **S2** | `logo` | 2016-era marks | the **2025** Democratic logo and the current GOP mark | Each party's own infobox image |
+| PP-134 | **S3** | `ideology` | generic | copied from each party's own infobox | The Republican entry now records right-wing populism with a conservative faction; the Democratic, liberalism |
+
+**A deliberate asymmetry, recorded.** American parties have no single "leader" post. English
+Wikipedia's Republican infobox lists the **U.S. President** as the party's first leadership entry;
+the Democratic infobox, with no such officeholder, leads with the **DNC chair**. The dataset follows
+each source rather than forcing a symmetry neither party has.
+
+**Documented gap — 3 of the 435 seats**: **2 vacancies** and **1 independent** (Kevin Kiley, elected
+as a Republican, who caucuses with them but sits as an independent). No third party holds a House
+seat, so the two entries are full coverage of the chamber's parties.
+
+Both logos are public domain on Commons and were montage-verified.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -916,7 +948,7 @@ Tick a box only when that country's fix is **merged and live**.
 ### Phase 4 — United Kingdom, United States, Canada (3)
 
 - [x] `GB` United Kingdom — merged
-- [ ] `US` United States
+- [x] `US` United States — merged
 - [ ] `CA` Canada
 
 ### Phase 5 — Europe (45)
