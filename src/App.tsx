@@ -34,6 +34,7 @@ export default function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/game" element={<FlagGamePage />} />
         <Route path="/learn" element={<LearnPage />} />
+        <Route path="/learn/visual-redesign-version-1" element={<LearnPage variant="atlas" />} />
         <Route path="/calibrate" element={<CalibratePage />} />
       </Routes>
       {/* Persistent bottom bar: build info + refresh on the left, active

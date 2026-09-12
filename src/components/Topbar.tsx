@@ -26,7 +26,7 @@ export function Topbar() {
   const { triggerGuard } = useNavigationGuard();
   const isHome = location.pathname === "/";
   const isGame = location.pathname === "/game";
-  const isLearn = location.pathname === "/learn";
+  const isLearn = location.pathname.startsWith("/learn");
 
   const doNavigateHome = () => navigate("/");
 

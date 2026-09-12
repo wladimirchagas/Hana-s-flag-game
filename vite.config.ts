@@ -50,6 +50,9 @@ function spaFallback() {
       const outDir = resolve(__dirname, 'dist')
       try {
         copyFileSync(resolve(outDir, 'index.html'), resolve(outDir, '404.html'))
+        const reviewDir = resolve(outDir, 'learn/visual-redesign-version-1')
+        mkdirSync(reviewDir, { recursive: true })
+        copyFileSync(resolve(outDir, 'index.html'), resolve(reviewDir, 'index.html'))
       } catch {
         // ignore — only runs after a successful build
       }
