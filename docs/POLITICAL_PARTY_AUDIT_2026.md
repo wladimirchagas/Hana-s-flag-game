@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 42 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 43 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -1540,6 +1540,20 @@ All five logos are public domain on Commons and were montage-verified.
 
 ---
 
+### 🇦🇫 Afghanistan — audited 2026-09-12 · **deliberately out of scope**
+
+Afghanistan's three entries described the former republic's **Wolesi Jirga**: Afghan Millat was assigned 0 of 249 seats, Islamic Society 10, and Tajik National Unity 8. That chamber has no current party composition to model. Under the de facto authorities, the Ministry of Justice states that its political-parties department has been abolished and that **any activity under a party name is illegal**; the EUAA's February 2026 country report likewise records that political parties are outlawed and there is no space for political opposition.
+
+| ID | Sev | Finding |
+|---|---|---|
+| PP-238 | **S1** | The dataset presented **18 historical seats in a 249-seat former chamber** as current party representation, even though political-party activity is now illegal and no current competitive party legislature exists. |
+| PP-239 | **S2** | AF-AMP carried **0 seats**, contradicting the dataset's seated-party scope rule. Its two companion entries relied on pre-2021 electoral figures and English-Wikipedia citations rather than a current authority. |
+| PP-240 | **S1** | AF-ISA referenced a bundled logo that was one of the cross-country sweep's non-image/broken-file cases. Removing an out-of-scope country also removes the dead asset rather than continuing to ship it. |
+
+**Decision: remove Afghanistan from POLITICAL_PARTIES and delete its sole referenced party-logo file.** This is not a judgement that Afghan political movements do not exist; it is a scope decision. The Learn-mode party grid represents current, seated parties in a competitively functioning legislature. That condition is not currently sourceable for Afghanistan. Revisit only after a lawful multi-party electoral legislature is operating and publishes a defensible composition.
+
+**Sources checked:** [Afghanistan Ministry of Justice, Dari statement on the prohibition of party activity (16 April 2024)](https://moj.gov.af/dr/node/3140); [EUAA, *Afghanistan: Country Focus*, “Political opposition and civic space” (February 2026)](https://www.euaa.europa.eu/coi-report-afghanistan-country-focus/111-political-opposition-and-civic-space).
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1703,7 +1717,7 @@ Tick a box only when that country's fix is **merged and live**.
 
 ### Phase 6 — rest of the world (123)
 
-- [ ] `AF` Afghanistan
+- [x] `AF` Afghanistan — audited, deliberately out of scope
 - [ ] `DZ` Algeria
 - [ ] `AO` Angola
 - [ ] `AG` Antigua and Barbuda
