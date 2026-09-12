@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 66 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 67 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -116,7 +116,8 @@ forgotten; it is tracked here.
 | 🇱🇧 Lebanon | `#1383` | 0 → 25 | 83 / 128 (44 independents, 1 vacancy) | **Absent entirely; the obvious source reports BLOC seats as party seats for all six large parties** |
 | 🇲🇻 Maldives | `#1384` | 0 → 5 | 91 / 93 (2 independents) | **Absent entirely; the MDP ships with no leader — its presidency is vacant and the interim chair is under challenge** |
 | 🇲🇳 Mongolia | `#1385` | 0 → 5 | 125 / 126 (1 independent) | **Absent entirely; the government has changed twice since the election — the sitting PM took office in March 2026** |
-| 🇳🇵 Nepal | *(see PR)* | 0 → 6 | 274 / 275 (1 independent) | **Absent entirely; the chamber was replaced wholesale in March 2026 and two of its six parties are younger than a year** |
+| 🇳🇵 Nepal | `#1386` | 0 → 6 | 274 / 275 (1 independent) | **Absent entirely; the chamber was replaced wholesale in March 2026 and two of its six parties are younger than a year** |
+| 🇴🇲 Oman | *(see PR)* | — | — | **Out of scope — political parties are not permitted and all 90 elected members are non-partisan** |
 
 ---
 
@@ -2568,6 +2569,26 @@ will land on the wrong article — the same collision class as Paraguay's Mision
 **Verified in the running app**: all six cards paint their logos, the Rastriya Swatantra Party
 carries the In-power badge and the other five do not, no console errors.
 
+### 🇴🇲 Oman — audited 2026-09-12 — out of scope
+
+**Oman is not in the dataset and must not be added.** It is the cleanest out-of-scope case this
+audit has met — cleaner than Kuwait (PP-322), which at least has organised parliamentary factions,
+and cleaner than Bahrain, whose law permits "political societies".
+
+**PP-348 — parties are not permitted, and the chamber records it.** Oman's own politics article
+states plainly that "the Sultanate has neither political parties nor legislature" in the party sense
+and that "Oman does not allow political parties"; the **Consultative Assembly** (Majlis al-Shura)
+article adds that "only non-partisans have been elected". The Assembly's published composition is a
+single line — **Non-partisan (90)** of 90, from the election of **29 October 2023**. There is no
+party to enter, no seat to attribute and no `noImageReason` to write: the Learn-mode Political
+parties tab correctly shows nothing.
+
+The upper house, the Council of State (Majlis al-Dawla), is appointed by the Sultan and is likewise
+non-partisan; the two together form the 169-member Council of Oman.
+
+**Revisit** only if Oman legalises political parties and a party-affiliated member is returned to
+the Consultative Assembly.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2815,7 +2836,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `NI` Nicaragua
 - [ ] `NE` Niger
 - [ ] `NG` Nigeria
-- [ ] `OM` Oman
+- [x] `OM` Oman — merged (out of scope)
 - [ ] `PK` Pakistan
 - [ ] `PW` Palau
 - [ ] `PA` Panama
