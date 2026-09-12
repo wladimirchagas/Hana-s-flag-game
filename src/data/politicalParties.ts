@@ -9836,30 +9836,167 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "CA",
       "shortName": "LIB",
       "name": "Liberal Party of Canada",
-      "nameEn": "Liberal Party of Canada",
       "logo": "party-logos/ca/lpc.svg",
       "sha256": "bb4018fd39dee8bf32d5c1dcacafce90ba4db481b6c5d8395db33598ece2a026",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Liberal_Party_of_Canada_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Liberal_Party_of_Canada_Logo_2014.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Liberal Party of Canada emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
       "ideology": [
         "Liberalism",
-        "Social liberalism",
-        "Centrism"
+        "Social liberalism"
       ],
       "ideologyPosition": "centre",
-      "positionRaw": "Centre",
+      "positionRaw": "Centre to centre-left",
       "founded": 1867,
-      "leader": "Justin Trudeau",
+      "leader": "Mark Carney",
       "leaderTitle": "Leader",
       "inPower": true,
-      "timeInPower": "2015-present",
-      "seats": 160,
-      "seatsTotal": 338,
+      "inExecutive": true,
+      "timeInPower": "In government since November 2015; Mark Carney succeeded Justin Trudeau as prime minister in 2025 and won the 28 April 2025 election.",
+      "seats": 173,
+      "seatsTotal": 343,
       "chamberName": "House of Commons",
       "sources": [
         {
-          "title": "Liberal Party of Canada - Wikipedia",
+          "title": "Liberal Party of Canada — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Liberal_Party_of_Canada"
+        },
+        {
+          "title": "House of Commons of Canada — Wikipedia: 45th Parliament, 343 seats elected 28 April 2025 — Liberal 173 (government), Conservative 138 (Official Opposition), Bloc Québécois 21, New Democratic 5, Green 1, 5 vacancies",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_Canada"
+        },
+        {
+          "title": "Prime Minister of Canada — Wikipedia (Mark Carney of the Liberal Party)",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Canada"
+        }
+      ]
+    },
+    {
+      "id": "CA-CON",
+      "country": "CA",
+      "shortName": "CON",
+      "name": "Conservative Party of Canada",
+      "logo": "party-logos/ca/cpc.svg",
+      "sha256": "6bc2aff7539bbfc56605af73a327a1d9bcf65975bfb45fc0b6445145ec7a7399",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Conservative_Party_of_Canada_%282023%E2%80%93present%29.svg",
+      "ideology": [
+        "Conservatism",
+        "Economic liberalism",
+        "Federalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2003,
+      "leader": "Pierre Poilievre",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 138,
+      "seatsTotal": 343,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Conservative Party of Canada — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Conservative_Party_of_Canada"
+        },
+        {
+          "title": "House of Commons of Canada — Wikipedia: 45th Parliament, 343 seats elected 28 April 2025 — Liberal 173 (government), Conservative 138 (Official Opposition), Bloc Québécois 21, New Democratic 5, Green 1, 5 vacancies",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_Canada"
+        }
+      ]
+    },
+    {
+      "id": "CA-BQ",
+      "country": "CA",
+      "shortName": "BQ",
+      "name": "Bloc Québécois",
+      "logo": "party-logos/ca/bq.png",
+      "sha256": "d6927a71af5a1317bd12587a601d0ec9eea73f646913b70743066c3bb6bae694",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:BlocQuebecois_Logo2015.png",
+      "licenceNote": "Public-domain logo held as a local English Wikipedia file rather than on Wikimedia Commons: the Bloc Québécois mark is below the threshold of originality for copyright, so English Wikipedia hosts it as public domain. Cited to that file page because Commons carries no equivalent. Bundled for identification of the party only.",
+      "ideology": [
+        "Quebec nationalism",
+        "Social democracy",
+        "Quebec sovereigntism",
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1991,
+      "leader": "Yves-François Blanchet",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 21,
+      "seatsTotal": 343,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Bloc Québécois — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Bloc_Qu%C3%A9b%C3%A9cois"
+        },
+        {
+          "title": "House of Commons of Canada — Wikipedia: 45th Parliament, 343 seats elected 28 April 2025 — Liberal 173 (government), Conservative 138 (Official Opposition), Bloc Québécois 21, New Democratic 5, Green 1, 5 vacancies",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_Canada"
+        }
+      ]
+    },
+    {
+      "id": "CA-NDP",
+      "country": "CA",
+      "shortName": "NDP",
+      "name": "New Democratic Party",
+      "logo": "party-logos/ca/ndp.svg",
+      "sha256": "2824eab7142c1ca9b7e10b502570a88974dc69738f8e9847e6722270c413bb6b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Orange_NDP_logo_English.svg",
+      "ideology": [
+        "Social democracy",
+        "Democratic socialism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1961,
+      "leader": "Avi Lewis",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 343,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "New Democratic Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/New_Democratic_Party"
+        },
+        {
+          "title": "House of Commons of Canada — Wikipedia: 45th Parliament, 343 seats elected 28 April 2025 — Liberal 173 (government), Conservative 138 (Official Opposition), Bloc Québécois 21, New Democratic 5, Green 1, 5 vacancies",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_Canada"
+        }
+      ]
+    },
+    {
+      "id": "CA-GPC",
+      "country": "CA",
+      "shortName": "GPC",
+      "name": "Green Party of Canada",
+      "logo": "party-logos/ca/gpc.svg",
+      "sha256": "3654235d9a23d135cfd8fe0bc87824fdf2bd325ee7d66a57d6226e266ada62b4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_2025_Green_Party_of_Canada.svg",
+      "ideology": [
+        "Green politics"
+      ],
+      "ideologyPosition": "left",
+      "founded": 1983,
+      "leader": "Elizabeth May",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 343,
+      "chamberName": "House of Commons",
+      "sources": [
+        {
+          "title": "Green Party of Canada — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_of_Canada"
+        },
+        {
+          "title": "House of Commons of Canada — Wikipedia: 45th Parliament, 343 seats elected 28 April 2025 — Liberal 173 (government), Conservative 138 (Official Opposition), Bloc Québécois 21, New Democratic 5, Green 1, 5 vacancies",
+          "url": "https://en.wikipedia.org/wiki/House_of_Commons_of_Canada"
         }
       ]
     }
