@@ -16268,28 +16268,39 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "PY-ANR",
       "country": "PY",
       "shortName": "ANR",
-      "name": "Asociación Nacional Republicana",
-      "nameEn": "Colorado Party",
-      "noImageReason": "Logo search across Wikimedia Commons, party website, and Paraguayan political archives; no freely-licensed high-quality vectorized logo found.",
-      "ideology": ["Conservatism", "Liberalism"],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
+      "name": "Asociación Nacional Republicana – Partido Colorado",
+      "nameEn": "National Republican Association – Colorado Party",
+      "logo": "party-logos/py/anr.svg",
+      "sha256": "211439ee3c36b27aaf2463f4895731aa07c216d09005511135057d2fa2956d6c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Colorado_Party_%28Paraguay%29.svg",
+      "ideology": [
+        "Conservatism",
+        "Paraguayan nationalism",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
       "founded": 1887,
       "leader": "Horacio Cartes",
-      "leaderTitle": "Party Leader & Former President",
+      "leaderTitle": "Party President",
       "inPower": true,
-      "timeInPower": "2023-present",
-      "seats": 51,
-      "seatsTotal": 128,
+      "inExecutive": true,
+      "timeInPower": "In government continuously since 1989, apart from 2008–2013; Santiago Peña has been president since 15 August 2023.",
+      "seats": 48,
+      "seatsTotal": 80,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "2023 Paraguayan general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Paraguayan_general_election"
+          "title": "Asociación Nacional Republicana – Partido Colorado — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Colorado_(Paraguay)"
         },
         {
-          "title": "Colorado Party (Paraguay) — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Colorado_Party_(Paraguay)"
+          "title": "Cámara de Diputados de Paraguay — Wikipedia (es): 80 deputies elected 30 April 2023 — Government ANR 48; Opposition 32 (PLRA 22, Yo Creo 3, independents 3, PCN 1, PEN 1, PPQ 1, PPS 1)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Paraguay"
+        },
+        {
+          "title": "President of Paraguay — Wikipedia (Santiago Peña of the Colorado Party, president since 15 August 2023)",
+          "url": "https://en.wikipedia.org/wiki/President_of_Paraguay"
         }
       ]
     },
@@ -16298,48 +16309,203 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "PY",
       "shortName": "PLRA",
       "name": "Partido Liberal Radical Auténtico",
-      "nameEn": "Liberal Party",
-      "noImageReason": "Logo search across Wikimedia Commons and Paraguayan political sources; no freely-licensed logo available. Party uses primarily text-based branding.",
-      "ideology": ["Liberalism", "Social democracy"],
+      "nameEn": "Authentic Radical Liberal Party",
+      "logo": "party-logos/py/plra.svg",
+      "sha256": "cabecb503593ec497e38eec809af87a1c39c47478a5840ac8b449eaf7c602bca",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Authentic_Radical_Liberal_Party_logo_%282018_variant%29.svg",
+      "ideology": [
+        "Liberalism",
+        "Progressivism"
+      ],
       "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
-      "founded": 1873,
+      "positionRaw": "Centre to centre-left",
+      "founded": 1887,
+      "leader": "Alcides Riveros",
+      "leaderTitle": "President",
       "inPower": false,
-      "inExecutive": false,
-      "seats": 38,
-      "seatsTotal": 128,
+      "seats": 22,
+      "seatsTotal": 80,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "2023 Paraguayan general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Paraguayan_general_election"
+          "title": "Partido Liberal Radical Auténtico — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Liberal_Radical_Aut%C3%A9ntico"
         },
         {
-          "title": "Liberal Party (Paraguay) — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Liberal_Party_(Paraguay)"
+          "title": "Cámara de Diputados de Paraguay — Wikipedia (es): 80 deputies elected 30 April 2023 — Government ANR 48; Opposition 32 (PLRA 22, Yo Creo 3, independents 3, PCN 1, PEN 1, PPQ 1, PPS 1)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Paraguay"
         }
       ]
     },
     {
-      "id": "PY-HA",
+      "id": "PY-YOCREO",
       "country": "PY",
-      "shortName": "HA",
-      "name": "Hagamos",
-      "nameEn": "Forward",
-      "noImageReason": "Logo search across Wikimedia Commons and Paraguayan sources; no freely-licensed logo located. Party primarily uses text branding with minimal graphic elements.",
-      "ideology": ["Progressivism", "Social democracy"],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
-      "founded": 2018,
+      "shortName": "Yo Creo",
+      "name": "Partido Yo Creo Conciencia Democrática Nacional",
+      "nameEn": "I Believe – National Democratic Conscience Party",
+      "logo": "party-logos/py/yocreo.png",
+      "sha256": "731b8f7b32dfeabbaf669c29250d123b9908fb980dfe554e2a2a3b514a256a68",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Yo_Creo_Logo.png",
+      "ideology": [
+        "Social justice"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2019,
+      "leader": "Francisco Arrúa",
+      "leaderTitle": "President",
       "inPower": false,
-      "inExecutive": false,
-      "seats": 26,
-      "seatsTotal": 128,
+      "seats": 3,
+      "seatsTotal": 80,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "2023 Paraguayan general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Paraguayan_general_election"
+          "title": "Partido Yo Creo Conciencia Democrática Nacional — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Yo_Creo"
+        },
+        {
+          "title": "Cámara de Diputados de Paraguay — Wikipedia (es): 80 deputies elected 30 April 2023 — Government ANR 48; Opposition 32 (PLRA 22, Yo Creo 3, independents 3, PCN 1, PEN 1, PPQ 1, PPS 1)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Paraguay"
+        }
+      ]
+    },
+    {
+      "id": "PY-PCN",
+      "country": "PY",
+      "shortName": "PCN",
+      "name": "Partido Cruzada Nacional",
+      "nameEn": "National Crusade Party",
+      "logo": "party-logos/py/pcn.jpg",
+      "sha256": "2ef1941b264eadd0cfdb5a46801c609d3e0cb6a06f33db44ef78cf055a19d098",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Cruzada_Nacional_%28Paraguay%29.jpg",
+      "ideology": [
+        "Right-wing populism",
+        "Paraguayan nationalism",
+        "Social conservatism",
+        "Anti-establishment",
+        "Anti-corruption"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2018,
+      "leader": "Payo Cubas",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 80,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Partido Cruzada Nacional — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Cruzada_Nacional"
+        },
+        {
+          "title": "Cámara de Diputados de Paraguay — Wikipedia (es): 80 deputies elected 30 April 2023 — Government ANR 48; Opposition 32 (PLRA 22, Yo Creo 3, independents 3, PCN 1, PEN 1, PPQ 1, PPS 1)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Paraguay"
+        }
+      ]
+    },
+    {
+      "id": "PY-PEN",
+      "country": "PY",
+      "shortName": "PEN",
+      "name": "Partido Encuentro Nacional",
+      "nameEn": "National Encounter Party",
+      "logo": "party-logos/py/pen.png",
+      "sha256": "a9ee12b5878ed86b2a66a992a2c8d20ec3f7c3a0b55430f57b593cc41f5bf750",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Isologotipo_Partido_Encuentro_Nacional_2021.png",
+      "ideology": [
+        "Progressivism",
+        "Social democracy",
+        "Social liberalism",
+        "Socialism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1991,
+      "leader": "Fernando Camacho",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 80,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Partido Encuentro Nacional — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Encuentro_Nacional"
+        },
+        {
+          "title": "Cámara de Diputados de Paraguay — Wikipedia (es): 80 deputies elected 30 April 2023 — Government ANR 48; Opposition 32 (PLRA 22, Yo Creo 3, independents 3, PCN 1, PEN 1, PPQ 1, PPS 1)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Paraguay"
+        }
+      ]
+    },
+    {
+      "id": "PY-PPQ",
+      "country": "PY",
+      "shortName": "PPQ",
+      "name": "Partido Patria Querida",
+      "nameEn": "Beloved Fatherland Party",
+      "logo": "party-logos/py/ppq.png",
+      "sha256": "93c895746ff48c28586340d0e38515ec2f76a5bfcf9521987d5cd6f91eae5973",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_Patria_Querida.png",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2001,
+      "leader": "Stephan Rasmussen",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 80,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Partido Patria Querida — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Patria_Querida"
+        },
+        {
+          "title": "Cámara de Diputados de Paraguay — Wikipedia (es): 80 deputies elected 30 April 2023 — Government ANR 48; Opposition 32 (PLRA 22, Yo Creo 3, independents 3, PCN 1, PEN 1, PPQ 1, PPS 1)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Paraguay"
+        }
+      ]
+    },
+    {
+      "id": "PY-PPS",
+      "country": "PY",
+      "shortName": "PPS",
+      "name": "Partido País Solidario",
+      "nameEn": "Solidary Country Party",
+      "logo": "party-logos/py/pps.svg",
+      "sha256": "919f96a5c45d6653d7d215384cbf3b51eb71ab05bf0d0280afa085f4c916292d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Pa%C3%ADs_Solidario_Logo.svg",
+      "ideology": [
+        "Progressivism",
+        "Socialism",
+        "Democratic socialism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2000,
+      "leader": "Edgar Segovia",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 80,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Partido País Solidario — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Pa%C3%ADs_Solidario"
+        },
+        {
+          "title": "Cámara de Diputados de Paraguay — Wikipedia (es): 80 deputies elected 30 April 2023 — Government ANR 48; Opposition 32 (PLRA 22, Yo Creo 3, independents 3, PCN 1, PEN 1, PPQ 1, PPS 1)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_Paraguay"
         }
       ]
     }
