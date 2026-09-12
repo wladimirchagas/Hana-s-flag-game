@@ -356,6 +356,18 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "Cidadania voted to end membership in 2026",
   },
+  "BE-GOV": {
+    id: "BE-GOV",
+    name: "Arizonacoalitie",
+    nameEn: "De Wever coalition (\"Arizona\")",
+    kind: "coalition",
+    memberPartyIds: ["BE-NVA", "BE-MR", "BE-LE", "BE-VOORUIT", "BE-CDV"],
+    source: {
+      title: "Chamber of Representatives (Belgium) — Wikipedia: the De Wever cabinet holds 80 of 150 seats — N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11",
+      url: "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)",
+    },
+    note: "Five parties across both language communities, formed on 3 February 2025 after the longest government formation in Belgian history.",
+  },
   "DE-GOV": {
     id: "DE-GOV",
     name: "Koalition aus CDU/CSU und SPD",
@@ -2510,6 +2522,46 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "BE": [
     {
+      "id": "BE-NVA",
+      "country": "BE",
+      "shortName": "N-VA",
+      "name": "Nieuw-Vlaamse Alliantie",
+      "nameEn": "New Flemish Alliance",
+      "logo": "party-logos/be/nva.svg",
+      "sha256": "bfab97ad16d11210cd2a1e79cdc2e721991de3f6df8d1a7d3275f512eb6c883f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_New_Flemish_Alliance.svg",
+      "ideology": [
+        "Flemish nationalism",
+        "Liberal conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2001,
+      "coalitionId": "BE-GOV",
+      "leader": "Bart De Wever",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Leads the coalition formed on 3 February 2025; its president Bart De Wever is prime minister.",
+      "seats": 23,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "New Flemish Alliance — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/New_Flemish_Alliance"
+        },
+        {
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
+        },
+        {
+          "title": "Prime Minister of Belgium — Wikipedia (Bart De Wever of the N-VA, in office since 3 February 2025)",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Belgium"
+        }
+      ]
+    },
+    {
       "id": "BE-VB",
       "country": "BE",
       "shortName": "VB",
@@ -2518,27 +2570,29 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/be/vb.svg",
       "sha256": "9fdc59950333459e337b7bcda74b09ba21a4f59385714892ce0e7bcf310ecccf",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Vlaams_Belang_logo.svg",
-      "licenceNote": "Non-free logo. No freely-licensed file of the Flemish Interest emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Vlaams Belang emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
       "ideology": [
-        "Right-wing nationalism",
+        "Flemish nationalism",
+        "Right-wing populism",
         "Euroscepticism"
       ],
       "ideologyPosition": "far-right",
+      "positionRaw": "Right-wing to far-right",
       "founded": 2004,
       "leader": "Tom Van Grieken",
-      "leaderTitle": "Party President",
+      "leaderTitle": "President",
       "inPower": false,
-      "seats": 22,
+      "seats": 20,
       "seatsTotal": 150,
       "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Vlaams Belang – Wikipedia (founded 14 November 2004, ideology, leadership, party president Tom Van Grieken)",
+          "title": "Flemish Interest — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Vlaams_Belang"
         },
         {
-          "title": "2024 Belgian federal election – Results (22 seats)",
-          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
         }
       ]
     },
@@ -2552,26 +2606,28 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "ee7e850e393a45642a9ed53557a07bddaf1fdae1463d64ed8caea18ec294b686",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logonew-retina.png",
       "ideology": [
-        "Liberalism",
-        "Pro-EU"
+        "Liberalism"
       ],
       "ideologyPosition": "centre-right",
-      "founded": 2011,
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2002,
+      "coalitionId": "BE-GOV",
       "leader": "Georges-Louis Bouchez",
       "leaderTitle": "President",
       "inPower": true,
-      "inExecutive": false,
-      "seats": 20,
+      "inExecutive": true,
+      "timeInPower": "In the De Wever coalition formed on 3 February 2025.",
+      "seats": 18,
       "seatsTotal": 150,
       "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Mouvement Réformateur – Wikipedia (founded 27 May 2011, merger of PRL and FDF, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/Mouvement_R%C3%A9formateur"
+          "title": "Reformist Movement — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Reformist_Movement"
         },
         {
-          "title": "2024 Belgian federal election – Results (20 seats)",
-          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
         }
       ]
     },
@@ -2579,8 +2635,8 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "BE-PS",
       "country": "BE",
       "shortName": "PS",
-      "name": "Parti Socialiste Belge",
-      "nameEn": "Belgian Socialist Party",
+      "name": "Parti Socialiste",
+      "nameEn": "Socialist Party",
       "logo": "party-logos/be/ps.svg",
       "sha256": "42a997b2b7bc3f6278c878b39bcd8c99c41583d92eded23b4cea063ed0248c9b",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Socialist_Party_(Belgium)_logo.svg",
@@ -2588,128 +2644,107 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         "Social democracy"
       ],
       "ideologyPosition": "centre-left",
-      "founded": 1885,
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1978,
       "leader": "Paul Magnette",
       "leaderTitle": "President",
-      "inPower": true,
-      "inExecutive": false,
+      "inPower": false,
       "seats": 16,
       "seatsTotal": 150,
       "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Parti Socialiste Belge – Wikipedia (founded 1885, ideology, leadership, currently led by Paul Magnette)",
-          "url": "https://en.wikipedia.org/wiki/Parti_Socialiste_Belge"
+          "title": "Socialist Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_(Belgium)"
         },
         {
-          "title": "2024 Belgian federal election – Results (16 seats)",
-          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
         }
       ]
     },
     {
-      "id": "BE-NVA",
+      "id": "BE-LE",
       "country": "BE",
-      "shortName": "N-VA",
-      "name": "Nieuw Vlaams Alliantie",
-      "nameEn": "New Flemish Alliance",
-      "logo": "party-logos/be/nva.svg",
-      "sha256": "bfab97ad16d11210cd2a1e79cdc2e721991de3f6df8d1a7d3275f512eb6c883f",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_New_Flemish_Alliance.svg",
+      "shortName": "LE",
+      "name": "Les Engagés",
+      "nameEn": "The Committed Ones",
+      "logo": "party-logos/be/engages.svg",
+      "sha256": "33afca63688f5276716e4cfed2446b72aacbc5a0fad0ac28639219df4e1575ea",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Les_Engag%C3%A9s.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Les Engagés emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
       "ideology": [
-        "Flemish nationalism",
-        "Pro-EU"
+        "Social liberalism"
       ],
-      "ideologyPosition": "centre-right",
-      "founded": 2001,
-      "leader": "Bart De Wever",
-      "leaderTitle": "Party President",
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2022,
+      "previousNames": [
+        {
+          "name": "Centre démocrate humaniste",
+          "nameEn": "Humanist Democratic Centre",
+          "years": "2002–2022"
+        }
+      ],
+      "coalitionId": "BE-GOV",
+      "leader": "Yvan Verougstraete",
+      "leaderTitle": "Acting President",
       "inPower": true,
-      "inExecutive": false,
-      "seats": 22,
+      "inExecutive": true,
+      "timeInPower": "In the De Wever coalition formed on 3 February 2025.",
+      "seats": 15,
       "seatsTotal": 150,
       "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Nieuw Vlaams Alliantie – Wikipedia (founded 2001, ideology, leadership, Bart De Wever)",
-          "url": "https://en.wikipedia.org/wiki/Nieuw_Vlaams_Alliantie"
+          "title": "The Committed Ones — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Les_Engag%C3%A9s"
         },
         {
-          "title": "2024 Belgian federal election – Results (22 seats)",
-          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
-        }
-      ]
-    },
-    {
-      "id": "BE-ECOLO",
-      "country": "BE",
-      "shortName": "Ecolo",
-      "name": "Ecolo",
-      "nameEn": "Ecolo",
-      "logo": "party-logos/be/ecolo.svg",
-      "sha256": "fa4dfb72dd2f79da5d637cac271ab54b3229c133885e3dbc90b82f1d4598329b",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Ecolo_Logo.svg",
-      "ideology": [
-        "Green politics",
-        "Left-wing"
-      ],
-      "ideologyPosition": "left",
-      "founded": 1981,
-      "leader": "Clara Decerf",
-      "leaderTitle": "Co-President",
-      "inPower": false,
-      "seats": 6,
-      "seatsTotal": 150,
-      "chamberName": "Chamber of Representatives",
-      "sources": [
-        {
-          "title": "Ecolo – Wikipedia (founded 1981, ideology, leadership, co-presidents)",
-          "url": "https://en.wikipedia.org/wiki/Ecolo"
-        },
-        {
-          "title": "2024 Belgian federal election – Results (6 seats)",
-          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
         }
       ]
     },
     {
       "id": "BE-PVDA",
       "country": "BE",
-      "shortName": "PVDA/PTB",
-      "name": "Partij van de Arbeid België / Parti du Travail Belge",
+      "shortName": "PVDA-PTB",
+      "name": "Partij van de Arbeid van België / Parti du Travail de Belgique",
       "nameEn": "Workers' Party of Belgium",
       "logo": "party-logos/be/pvda.svg",
       "sha256": "4be84d061f82a0947e0d5f64b10989bcf9d27d0426ba5c35b019612b59d0a248",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PVDAPTB-2022-icon-profile01.svg",
       "ideology": [
-        "Communism",
-        "Marxism"
+        "Marxism",
+        "Socialism"
       ],
-      "ideologyPosition": "far-left",
-      "founded": 1971,
-      "leader": "Raoul Hedebouw",
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 1979,
+      "leader": "David Pestieau",
       "leaderTitle": "President",
       "inPower": false,
-      "seats": 8,
+      "seats": 15,
       "seatsTotal": 150,
       "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Partij van de Arbeid België – Wikipedia (founded 1971, ideology, leadership, Raoul Hedebouw)",
-          "url": "https://en.wikipedia.org/wiki/Partij_van_de_Arbeid_Belgi%C3%AB"
+          "title": "Workers' Party of Belgium — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Workers'_Party_of_Belgium"
         },
         {
-          "title": "2024 Belgian federal election – Results (8 seats)",
-          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
         }
       ]
     },
     {
-      "id": "BE-SPA",
+      "id": "BE-VOORUIT",
       "country": "BE",
-      "shortName": "SPa",
-      "name": "Socialistische Partij Anders",
-      "nameEn": "Socialist Party Differently",
+      "shortName": "Vooruit",
+      "name": "Vooruit",
+      "nameEn": "Forward",
       "logo": "party-logos/be/spa.svg",
       "sha256": "92f682765139a3d9647abe0a219b71a4961aa84c97fd59e78946830e6419c1c4",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Vooruit_logo_(2020).svg",
@@ -2717,21 +2752,31 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         "Social democracy"
       ],
       "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
       "founded": 1978,
-      "leader": "Giles Vanden Burre",
-      "leaderTitle": "Party President",
-      "inPower": false,
+      "previousNames": [
+        {
+          "name": "Socialistische Partij Anders (sp.a)",
+          "years": "2001–2021"
+        }
+      ],
+      "coalitionId": "BE-GOV",
+      "leader": "Conner Rousseau",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the De Wever coalition formed on 3 February 2025.",
       "seats": 13,
       "seatsTotal": 150,
       "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Socialistische Partij Anders – Wikipedia (founded 1978, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/Socialistische_Partij_Anders"
+          "title": "Forward — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Vooruit_(political_party)"
         },
         {
-          "title": "2024 Belgian federal election – Results (13 seats)",
-          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
         }
       ]
     },
@@ -2745,56 +2790,169 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "ca7bf6f82199b6703588783d9e38a5149b8fcb158889a2e2e52f58042409d8a4",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Christian_Democratic_and_Flemish_(2022).svg",
       "ideology": [
-        "Christian democracy"
+        "Christian democracy",
+        "Social conservatism"
       ],
       "ideologyPosition": "centre",
-      "founded": 1968,
+      "positionRaw": "Centre",
+      "founded": 2001,
+      "coalitionId": "BE-GOV",
       "leader": "Sammy Mahdi",
       "leaderTitle": "President",
-      "inPower": false,
-      "seats": 9,
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the De Wever coalition formed on 3 February 2025.",
+      "seats": 11,
       "seatsTotal": 150,
       "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Christen-Democratisch en Vlaams – Wikipedia (founded 1968, ideology, leadership)",
+          "title": "Christian Democratic and Flemish — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Christen-Democratisch_en_Vlaams"
         },
         {
-          "title": "2024 Belgian federal election – Results (9 seats)",
-          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
         }
       ]
     },
     {
-      "id": "BE-OPENVLD",
+      "id": "BE-ANDERS",
       "country": "BE",
-      "shortName": "Open Vld",
-      "name": "Vlaamse Liberalen en Democraten",
-      "nameEn": "Flemish Liberals and Democrats",
+      "shortName": "Anders",
+      "name": "Anders",
       "logo": "party-logos/be/openvld.svg",
       "sha256": "3c94e3529760bf435908d7ca197165a42fc9a6dbf526b9f8e54d37f7f17a589d",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Anders_logo_grijs.svg",
       "ideology": [
-        "Liberalism"
+        "Liberalism",
+        "Pro-Europeanism"
       ],
       "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
       "founded": 1992,
-      "leader": "Egbert Lachaert",
-      "leaderTitle": "Party President",
-      "inPower": true,
-      "inExecutive": false,
-      "seats": 7,
+      "previousNames": [
+        {
+          "name": "Vlaamse Liberalen en Democraten (VLD)",
+          "years": "1992–2007"
+        },
+        {
+          "name": "Open Vld",
+          "years": "2007–2026"
+        }
+      ],
+      "leader": "Frédéric De Gucht",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 8,
       "seatsTotal": 150,
       "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Vlaamse Liberalen en Democraten – Wikipedia (founded 1992, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/Vlaamse_Liberalen_en_Democraten"
+          "title": "Anders — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Anders_(political_party)"
         },
         {
-          "title": "2024 Belgian federal election – Results (7 seats)",
-          "url": "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
+        }
+      ]
+    },
+    {
+      "id": "BE-GROEN",
+      "country": "BE",
+      "shortName": "Groen",
+      "name": "Groen",
+      "nameEn": "Green",
+      "logo": "party-logos/be/groen.svg",
+      "sha256": "11d3e185786e19ad7a1dd4dc4188966e92b8af17fce0754d08016f3a29809964",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Groen_logo_2022.svg",
+      "ideology": [
+        "Green politics"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1976,
+      "leader": "Aimen Horch",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 6,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Green — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Groen_(political_party)"
+        },
+        {
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
+        }
+      ]
+    },
+    {
+      "id": "BE-ECOLO",
+      "country": "BE",
+      "shortName": "Ecolo",
+      "name": "Ecolo",
+      "logo": "party-logos/be/ecolo.svg",
+      "sha256": "fa4dfb72dd2f79da5d637cac271ab54b3229c133885e3dbc90b82f1d4598329b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Ecolo_Logo.svg",
+      "ideology": [
+        "Green politics"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1980,
+      "leader": "Clara Decerf",
+      "leaderTitle": "Co-president",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Ecolo — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Ecolo"
+        },
+        {
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
+        }
+      ]
+    },
+    {
+      "id": "BE-DEFI",
+      "country": "BE",
+      "shortName": "DéFI",
+      "name": "Démocrate Fédéraliste Indépendant",
+      "nameEn": "Independent Federalist Democrat",
+      "logo": "party-logos/be/defi.png",
+      "sha256": "cb4ba0b5c314be12ea32e1c694dad2fca4f7eb1baa753250737af0a4cb60582d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:D%C3%A9FI_logo_2015.png",
+      "licenceNote": "Non-free logo. No freely-licensed file of the DéFI emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Belgian federalism",
+        "Liberalism",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1964,
+      "leader": "Sophie Rohonyi",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 150,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Independent Federalist Democrat — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/D%C3%A9FI"
+        },
+        {
+          "title": "Chamber of Representatives (Belgium) — Wikipedia: 150 seats — Government (De Wever cabinet) 80 (N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11), supported by 1 independent, Opposition 69 (VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6, Ecolo 3, DéFI 1)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Representatives_(Belgium)"
         }
       ]
     }

@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 33 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 34 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -79,6 +79,7 @@ forgotten; it is tracked here.
 | 🇪🇸 Spain | `#1343` | 1 → 14 | 346 / 350 | **WRONG — the opposition marked as governing** |
 | 🇵🇱 Poland | `#1344` | 1 → 11 | 433 / 460 | **WRONG — only a junior coalition partner present** |
 | 🇳🇱 Netherlands | `#1346` | 5 → 15 | 142 / 150 | **WRONG — a rival party's politician as VVD leader** |
+| 🇧🇪 Belgium | `#1347` | 9 → 12 | 149 / 150 | **WRONG — two parties under names they dropped** |
 
 ---
 
@@ -1217,6 +1218,36 @@ unreferenced by any entry. They have been replaced with a freshly fetched, monta
 
 ---
 
+### 🇧🇪 Belgium — audited 2026-09-12
+
+Belgium's nine parties included **two that have since renamed themselves**, which the logo backfill
+had already flagged: the cards read **SP.a** and **Open Vld** while the logos beside them read
+**Vooruit** and **Anders**. Three seated parties were missing, and `inPower` described the previous
+government rather than the De Wever coalition sworn in on 3 February 2025.
+
+The Chamber, 150 seats: **Government 80** — N-VA 23, MR 18, Les Engagés 15, Vooruit 13, CD&V 11 —
+one supporting independent, **Opposition 69** — VB 20, PS 16, PVDA-PTB 15, Anders 8, Groen 6,
+Ecolo 3, DéFI 1.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-172 | **S1** | party identity | **SP.a** and **Open Vld** | **Vooruit** (renamed 2021) and **Anders** (renamed 19 January 2026) | Both parties' own articles. The previous names are preserved in `previousNames` |
+| PP-173 | **S1** | `inPower` | MR, PS and N-VA in power; none in the executive | **N-VA, MR, Les Engagés, Vooruit and CD&V**; the **PS in opposition** | The De Wever cabinet formed 3 February 2025. The PS was in the previous government and is now the second-largest opposition party |
+| PP-174 | **S1** | coverage | 9 parties | **12 parties, 149 of 150** | **Les Engagés** (15 seats, a governing party), **Groen** (6) and **DéFI** (1) were absent |
+| PP-175 | **S2** | `seats` | VB 22, MR 20, N-VA 22 | **VB 20, MR 18, N-VA 23** | The Chamber's own composition |
+| PP-176 | **S2** | `founded` | MR **2011**, Ecolo **1981** | **2002, 1980** | Each party's own article |
+| PP-177 | **S3** | coalitions | none | **`BE-GOV`** (the five-party "Arizona" coalition, 80 seats) | The Chamber's own Government grouping |
+
+**Documented gap — 1 of the 150 seats**: the independent deputy who supports the government without
+belonging to a party.
+
+**Three non-free logos, declared** (Vlaams Belang, Les Engagés, DéFI); the other nine are on Commons.
+All twelve were montage-verified — and Vlaams Belang's is the file corrected by hand in the backfill,
+after the automated pass had handed it the logo of **Vlaams Blok**, the banned predecessor party it
+replaced in 2004.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -1269,7 +1300,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `PT` Portugal
 - [x] `IT` Italy — merged
 - [x] `NL` Netherlands — merged
-- [ ] `BE` Belgium
+- [x] `BE` Belgium — merged
 - [ ] `LU` Luxembourg
 - [ ] `CH` Switzerland
 - [ ] `AT` Austria
