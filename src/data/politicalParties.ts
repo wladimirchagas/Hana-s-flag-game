@@ -6581,19 +6581,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Arbeidarpartiet.svg",
       "ideology": [
         "Social democracy",
-        "Welfarism",
-        "Norwegian nationalism"
+        "Pro-Europeanism"
       ],
       "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left to left-of-centre",
+      "positionRaw": "Centre-left",
       "founded": 1887,
-      "leader": "Jonas Gahr Støre",
-      "leaderTitle": "Party Leader",
+      "leader": "Tonje Brenna",
+      "leaderTitle": "Leader",
       "inPower": true,
-      "timeInPower": "2021–present",
-      "seats": 48,
+      "inExecutive": true,
+      "timeInPower": "In government since October 2021; Labour governs alone as a minority, and Jonas Gahr Støre remains prime minister after the September 2025 election.",
+      "seats": 53,
       "seatsTotal": 169,
-      "chamberName": "Stortinget",
+      "chamberName": "Storting",
       "sources": [
         {
           "title": "Labour Party (Norway) – Wikipedia (founded 1887, ideology, leadership)",
@@ -6602,6 +6602,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        },
+        {
+          "title": "Storting — Wikipedia: 169 seats elected September 2025 — Government (Støre cabinet) Labour 53; supported by 35 (Socialist Left 9, Centre 9, Red 9, Green 8); Opposition 81 (Progress 47, Conservative 24, Christian Democratic 7, Liberal 3)",
+          "url": "https://en.wikipedia.org/wiki/Storting"
+        },
+        {
+          "title": "Prime Minister of Norway — Wikipedia (Jonas Gahr Støre of the Labour Party, in office since 14 October 2021)",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Norway"
         }
       ]
     },
@@ -6614,19 +6622,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "fbd155917221137f239c78b08ee0c119cf6fe290cf3c2490bcae69bcaaeb7c8d",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Conservative_Party_of_Norway.svg",
       "ideology": [
-        "Conservatism",
-        "Liberalism",
-        "Market economy"
+        "Liberal conservatism",
+        "Pro-Europeanism"
       ],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1884,
-      "leader": "Erna Solberg",
-      "leaderTitle": "Party Leader",
+      "leader": "Ine Eriksen Søreide",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 45,
+      "inExecutive": false,
+      "seats": 24,
       "seatsTotal": 169,
-      "chamberName": "Stortinget",
+      "chamberName": "Storting",
       "sources": [
         {
           "title": "Conservative Party (Norway) – Wikipedia (founded 1884, ideology, leadership)",
@@ -6635,6 +6643,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        },
+        {
+          "title": "Storting — Wikipedia: 169 seats elected September 2025 — Government (Støre cabinet) Labour 53; supported by 35 (Socialist Left 9, Centre 9, Red 9, Green 8); Opposition 81 (Progress 47, Conservative 24, Christian Democratic 7, Liberal 3)",
+          "url": "https://en.wikipedia.org/wiki/Storting"
         }
       ]
     },
@@ -6647,19 +6659,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "094f6cc2938b90884ea9143c388af0a6411a6c006b6449eac866585793201b1d",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Fremskrittspartiet_logo.svg",
       "ideology": [
-        "Right-wing populism",
-        "Economic liberalism",
-        "Nationalism"
+        "National conservatism",
+        "Right-libertarianism",
+        "Right-wing populism"
       ],
       "ideologyPosition": "right",
-      "positionRaw": "Right-wing",
+      "positionRaw": "Right-wing to far-right",
       "founded": 1973,
-      "leader": "Sylvi Listhaug",
-      "leaderTitle": "Party Leader",
+      "leader": "Terje Søviknes",
+      "leaderTitle": "Acting leader",
       "inPower": false,
-      "seats": 36,
+      "inExecutive": false,
+      "seats": 47,
       "seatsTotal": 169,
-      "chamberName": "Stortinget",
+      "chamberName": "Storting",
       "sources": [
         {
           "title": "Progress Party (Norway) – Wikipedia (founded 1973, ideology, leadership)",
@@ -6668,6 +6681,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        },
+        {
+          "title": "Storting — Wikipedia: 169 seats elected September 2025 — Government (Støre cabinet) Labour 53; supported by 35 (Socialist Left 9, Centre 9, Red 9, Green 8); Opposition 81 (Progress 47, Conservative 24, Christian Democratic 7, Liberal 3)",
+          "url": "https://en.wikipedia.org/wiki/Storting"
         }
       ]
     },
@@ -6680,19 +6697,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "sha256": "10dba6dabe9eb84c4b8f1a449098382733175007579709a2c09ee1f1b6f2d489",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Sosialistisk_Venstreparti_logo.svg",
       "ideology": [
+        "Socialism",
         "Democratic socialism",
-        "Environmentalism",
-        "Anti-militarism"
+        "Eco-socialism"
       ],
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
       "founded": 1975,
-      "leader": "Audun Lysbakken",
-      "leaderTitle": "Party Leader",
-      "inPower": false,
-      "seats": 13,
+      "leader": "Kirsti Bergstø",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Labour minority government confidence and supply without holding cabinet office.",
+      "seats": 9,
       "seatsTotal": 169,
-      "chamberName": "Stortinget",
+      "chamberName": "Storting",
       "sources": [
         {
           "title": "Socialist Left Party (Norway) – Wikipedia (founded 1975, ideology, leadership)",
@@ -6701,6 +6720,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        },
+        {
+          "title": "Storting — Wikipedia: 169 seats elected September 2025 — Government (Støre cabinet) Labour 53; supported by 35 (Socialist Left 9, Centre 9, Red 9, Green 8); Opposition 81 (Progress 47, Conservative 24, Christian Democratic 7, Liberal 3)",
+          "url": "https://en.wikipedia.org/wiki/Storting"
         }
       ]
     },
@@ -6714,19 +6737,20 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Senterpartiets_logo.png",
       "ideology": [
         "Agrarianism",
-        "Regionalism",
-        "Progressivism"
+        "Economic nationalism",
+        "Euroscepticism"
       ],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
       "founded": 1920,
       "leader": "Trygve Slagsvold Vedum",
-      "leaderTitle": "Party Leader",
+      "leaderTitle": "Leader",
       "inPower": true,
-      "timeInPower": "2021–present (junior coalition partner)",
-      "seats": 13,
+      "inExecutive": false,
+      "timeInPower": "Gives the Labour minority government confidence and supply without holding cabinet office.",
+      "seats": 9,
       "seatsTotal": 169,
-      "chamberName": "Stortinget",
+      "chamberName": "Storting",
       "sources": [
         {
           "title": "Centre Party (Norway) – Wikipedia (founded 1920, ideology, leadership)",
@@ -6735,6 +6759,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        },
+        {
+          "title": "Storting — Wikipedia: 169 seats elected September 2025 — Government (Støre cabinet) Labour 53; supported by 35 (Socialist Left 9, Centre 9, Red 9, Green 8); Opposition 81 (Progress 47, Conservative 24, Christian Democratic 7, Liberal 3)",
+          "url": "https://en.wikipedia.org/wiki/Storting"
         }
       ]
     },
@@ -6748,18 +6776,19 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:MDG_Logo_2025.svg",
       "ideology": [
         "Green politics",
-        "Environmentalism",
-        "Social liberalism"
+        "Pro-Europeanism"
       ],
       "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left to left",
+      "positionRaw": "Centre-left",
       "founded": 1988,
-      "leader": "Rasmus Hansson",
-      "leaderTitle": "Party Speaker",
-      "inPower": false,
-      "seats": 12,
+      "leader": "Ingrid Liland",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Labour minority government confidence and supply without holding cabinet office.",
+      "seats": 8,
       "seatsTotal": 169,
-      "chamberName": "Stortinget",
+      "chamberName": "Storting",
       "sources": [
         {
           "title": "Green Party (Norway) – Wikipedia (founded 1988, ideology, leadership)",
@@ -6768,6 +6797,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        },
+        {
+          "title": "Storting — Wikipedia: 169 seats elected September 2025 — Government (Støre cabinet) Labour 53; supported by 35 (Socialist Left 9, Centre 9, Red 9, Green 8); Opposition 81 (Progress 47, Conservative 24, Christian Democratic 7, Liberal 3)",
+          "url": "https://en.wikipedia.org/wiki/Storting"
         }
       ]
     },
@@ -6781,18 +6814,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:2025_logo_of_the_Christian_Democratic_Party_(Norway).svg",
       "ideology": [
         "Christian democracy",
-        "Conservatism",
         "Social conservatism"
       ],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1933,
-      "leader": "Kjell Ingolf Ropstad",
-      "leaderTitle": "Party Leader",
+      "leader": "Dag Inge Ulstein",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 8,
+      "inExecutive": false,
+      "seats": 7,
       "seatsTotal": 169,
-      "chamberName": "Stortinget",
+      "chamberName": "Storting",
       "sources": [
         {
           "title": "Christian Democrats (Norway) – Wikipedia (founded 1933, ideology, leadership)",
@@ -6801,6 +6834,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        },
+        {
+          "title": "Storting — Wikipedia: 169 seats elected September 2025 — Government (Støre cabinet) Labour 53; supported by 35 (Socialist Left 9, Centre 9, Red 9, Green 8); Opposition 81 (Progress 47, Conservative 24, Christian Democratic 7, Liberal 3)",
+          "url": "https://en.wikipedia.org/wiki/Storting"
         }
       ]
     },
@@ -6814,18 +6851,21 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:R%C3%B8dt_logo_(bokm%C3%A5l).svg",
       "ideology": [
         "Communism",
-        "Marxism",
-        "Anti-imperialism"
+        "Socialism",
+        "Democratic socialism",
+        "Marxism"
       ],
-      "ideologyPosition": "far-left",
-      "positionRaw": "Far-left",
-      "founded": 1990,
-      "leader": "Bjørnar Moxnes",
-      "leaderTitle": "Party Leader",
-      "inPower": false,
-      "seats": 8,
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 2007,
+      "leader": "Marie Sneve Martinussen",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Gives the Labour minority government confidence and supply without holding cabinet office.",
+      "seats": 9,
       "seatsTotal": 169,
-      "chamberName": "Stortinget",
+      "chamberName": "Storting",
       "sources": [
         {
           "title": "Red Party (Norway) – Wikipedia (founded 1990, ideology, leadership)",
@@ -6834,6 +6874,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        },
+        {
+          "title": "Storting — Wikipedia: 169 seats elected September 2025 — Government (Støre cabinet) Labour 53; supported by 35 (Socialist Left 9, Centre 9, Red 9, Green 8); Opposition 81 (Progress 47, Conservative 24, Christian Democratic 7, Liberal 3)",
+          "url": "https://en.wikipedia.org/wiki/Storting"
         }
       ]
     },
@@ -6848,17 +6892,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "ideology": [
         "Liberalism",
         "Social liberalism",
-        "Progressivism"
+        "Green liberalism"
       ],
       "ideologyPosition": "centre",
-      "positionRaw": "Centre to centre-left",
+      "positionRaw": "Centre to centre-right",
       "founded": 1884,
       "leader": "Guri Melby",
-      "leaderTitle": "Party Leader",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 8,
+      "inExecutive": false,
+      "seats": 3,
       "seatsTotal": 169,
-      "chamberName": "Stortinget",
+      "chamberName": "Storting",
       "sources": [
         {
           "title": "Liberal Party (Norway) – Wikipedia (founded 1884, ideology, leadership)",
@@ -6867,6 +6912,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "2021 Norwegian parliamentary election – Wikipedia (seat distribution)",
           "url": "https://en.wikipedia.org/wiki/2021_Norwegian_parliamentary_election"
+        },
+        {
+          "title": "Storting — Wikipedia: 169 seats elected September 2025 — Government (Støre cabinet) Labour 53; supported by 35 (Socialist Left 9, Centre 9, Red 9, Green 8); Opposition 81 (Progress 47, Conservative 24, Christian Democratic 7, Liberal 3)",
+          "url": "https://en.wikipedia.org/wiki/Storting"
         }
       ]
     }
