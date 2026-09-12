@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 65 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 66 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -115,7 +115,8 @@ forgotten; it is tracked here.
 | 🇰🇬 Kyrgyzstan | `#1382` | 0 → 6 | 84 / 90 (3 vacant, 3 other ungrouped) | **Absent entirely; only one party won seats as a party — 84 of 90 went to independents, so the chamber's own factions are the party structure** |
 | 🇱🇧 Lebanon | `#1383` | 0 → 25 | 83 / 128 (44 independents, 1 vacancy) | **Absent entirely; the obvious source reports BLOC seats as party seats for all six large parties** |
 | 🇲🇻 Maldives | `#1384` | 0 → 5 | 91 / 93 (2 independents) | **Absent entirely; the MDP ships with no leader — its presidency is vacant and the interim chair is under challenge** |
-| 🇲🇳 Mongolia | *(see PR)* | 0 → 5 | 125 / 126 (1 independent) | **Absent entirely; the government has changed twice since the election — the sitting PM took office in March 2026** |
+| 🇲🇳 Mongolia | `#1385` | 0 → 5 | 125 / 126 (1 independent) | **Absent entirely; the government has changed twice since the election — the sitting PM took office in March 2026** |
+| 🇳🇵 Nepal | *(see PR)* | 0 → 6 | 274 / 275 (1 independent) | **Absent entirely; the chamber was replaced wholesale in March 2026 and two of its six parties are younger than a year** |
 
 ---
 
@@ -2529,6 +2530,44 @@ the older emblem would have been the obvious pick from a stale search.
 Coalition carry the In-power badge while the Democratic Party and Civil Will–Green do not, no
 console errors.
 
+### 🇳🇵 Nepal — audited 2026-09-12
+
+**Absent entirely.** Nepal had no entry in `POLITICAL_PARTIES`, so the Learn-mode Political parties
+tab showed nothing for the 275-seat **House of Representatives**. Six entries added, covering 274
+of the 275 seats; the remaining one is an independent who sits with the government.
+
+**PP-344 — the chamber was replaced wholesale seven months ago, and any pre-2026 snapshot of Nepal
+is now worthless.** A general election was held on **5 March 2026**, following the September 2025
+protests, and it did not merely reshuffle the old order — it displaced it. The **Rastriya Swatantra
+Party**, founded in 2022 and holding 20 seats in the previous House, won **182 of 275** and formed a
+majority government; its candidate **Balen Shah** became Prime Minister on **27 March 2026** and
+heads Nepal's 38th Council of Ministers. The Nepali Congress, the largest party of the old chamber,
+is now the official opposition on 38 seats. An entry written from anything but the current chamber
+would have named the wrong government, the wrong prime minister and, for two parties, parties that
+did not exist.
+
+**PP-345 — two of the six parties are younger than this audit's own start date.** The **Nepali
+Communist Party** was founded on **5 November 2025** and holds 17 seats; the **Shram Sanskriti
+Party** was founded on **28 September 2025** and holds 7. Both are entered from their own articles,
+with their founding dates, rather than folded into their predecessors.
+
+**PP-346 — two parties carry TWO leadership offices, and the party office is the one used.** Both
+the Rastriya Swatantra Party and the Nepali Congress list a party *president* and a separate
+*leader* in their infoboxes, and in both cases the second is the parliamentary role, not the party's
+head: the RSP's is **Balen Shah**, who is Prime Minister, and the Nepali Congress's is **Bhishma
+Raj Angdembe**, whom the cabinet article names Leader of the Opposition. The entries therefore carry
+the party presidents — **Rabi Lamichhane** (elected unopposed in June 2026, after an acting
+presidency covering his 2024 arrest) and **Gagan Thapa** — and each source line states the
+parliamentary role separately so neither reading is lost.
+
+**PP-347 — a name collision one letter wide.** The **Nepali Communist Party** (2025, 17 seats) is
+not the **Nepal Communist Party** (2018–2021), the short-lived UML–Maoist Centre merger. The
+distinction is recorded in the entry's own source line, because a later editor searching by name
+will land on the wrong article — the same collision class as Paraguay's Misiones.
+
+**Verified in the running app**: all six cards paint their logos, the Rastriya Swatantra Party
+carries the In-power badge and the other five do not, no console errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2771,7 +2810,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `MZ` Mozambique
 - [ ] `NA` Namibia
 - [ ] `NR` Naoero
-- [ ] `NP` Nepal
+- [x] `NP` Nepal — merged
 - [ ] `NZ` New Zealand
 - [ ] `NI` Nicaragua
 - [ ] `NE` Niger

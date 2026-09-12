@@ -7596,6 +7596,237 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "NP": [
+    {
+      "id": "NP-RSP",
+      "country": "NP",
+      "shortName": "RSP",
+      "name": "राष्ट्रिय स्वतन्त्र पार्टी",
+      "nameEn": "Rastriya Swatantra Party",
+      "logo": "party-logos/np/rsp.svg",
+      "sha256": "dd2658f927464c178bc3c47e6dcd807a601bb8b8483bbf7e89ba3afa11aff206",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Rastriya_Swatantra_Party.svg",
+      "licenceNote": "Non-free. Rastriya Swatantra Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Liberalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2022,
+      "leader": "Rabi Lamichhane",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Formed the government after the 5 March 2026 election: the party's candidate Balen Shah became Prime Minister on 27 March 2026, and the 38th Council of Ministers is a Rastriya Swatantra Party majority government.",
+      "seats": 182,
+      "seatsTotal": 275,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Rastriya Swatantra Party — Wikipedia (infobox: founded 1 July 2022; centre). Rabi Lamichhane was elected unopposed as party President in June 2026; the party's separate parliamentary leader, Balen Shah, is Prime Minister.",
+          "url": "https://en.wikipedia.org/wiki/Rastriya_Swatantra_Party"
+        },
+        {
+          "title": "House of Representatives (Nepal) — Wikipedia (composition after the 5 March 2026 election: government Rastriya Swatantra Party 182 + 1 independent; opposition Nepali Congress 38, CPN (UML) 25, Nepali Communist Party 17, Shram Sanskriti Party 7, Rastriya Prajatantra Party 5, of 275)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nepal)"
+        },
+        {
+          "title": "Balen Shah cabinet — Wikipedia (Nepal's 38th Council of Ministers, formed 27 March 2026; a majority government of the Rastriya Swatantra Party and one independent, with the Nepali Congress as the official opposition)",
+          "url": "https://en.wikipedia.org/wiki/Balen_Shah_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "NP-NC",
+      "country": "NP",
+      "shortName": "NC",
+      "name": "नेपाली कांग्रेस",
+      "nameEn": "Nepali Congress",
+      "logo": "party-logos/np/nc.svg",
+      "sha256": "a79384509423d81416dd193e771c5d2654871726c078e4f0361166748a0ec049",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Nepali_Congress_logo.svg",
+      "ideology": [
+        "Social democracy",
+        "Democratic socialism",
+        "Third Way"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1950,
+      "leader": "Gagan Thapa",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 38,
+      "seatsTotal": 275,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Nepali Congress — Wikipedia (infobox: founded 9 April 1950; President Gagan Thapa; centre to centre-left). Its separate parliamentary leader, Bhishma Raj Angdembe, is Leader of the Opposition.",
+          "url": "https://en.wikipedia.org/wiki/Nepali_Congress"
+        },
+        {
+          "title": "House of Representatives (Nepal) — Wikipedia (composition after the 5 March 2026 election: government Rastriya Swatantra Party 182 + 1 independent; opposition Nepali Congress 38, CPN (UML) 25, Nepali Communist Party 17, Shram Sanskriti Party 7, Rastriya Prajatantra Party 5, of 275)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nepal)"
+        },
+        {
+          "title": "Balen Shah cabinet — Wikipedia (Nepal's 38th Council of Ministers, formed 27 March 2026; a majority government of the Rastriya Swatantra Party and one independent, with the Nepali Congress as the official opposition)",
+          "url": "https://en.wikipedia.org/wiki/Balen_Shah_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "NP-CPN-UML",
+      "country": "NP",
+      "shortName": "CPN (UML)",
+      "name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी-लेनिनवादी)",
+      "nameEn": "Communist Party of Nepal (Unified Marxist–Leninist)",
+      "logo": "party-logos/np/uml.png",
+      "sha256": "3fc26725e31f5c6da5626c40c5188373be3ad7df22f11e874c0ca78f2f1e907f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Communist_Party_of_Nepal_(Unified_Marxist%E2%80%93Leninist).png",
+      "licenceNote": "Non-free. Communist Party of Nepal (Unified Marxist–Leninist)'s logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism",
+        "People's Multiparty Democracy"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1991,
+      "leader": "K. P. Sharma Oli",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 25,
+      "seatsTotal": 275,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Communist Party of Nepal (Unified Marxist–Leninist) — Wikipedia (infobox: founded 6 January 1991; Chairman K. P. Sharma Oli; centre-left to left-wing)",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Nepal_(Unified_Marxist%E2%80%93Leninist)"
+        },
+        {
+          "title": "House of Representatives (Nepal) — Wikipedia (composition after the 5 March 2026 election: government Rastriya Swatantra Party 182 + 1 independent; opposition Nepali Congress 38, CPN (UML) 25, Nepali Communist Party 17, Shram Sanskriti Party 7, Rastriya Prajatantra Party 5, of 275)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nepal)"
+        },
+        {
+          "title": "Balen Shah cabinet — Wikipedia (Nepal's 38th Council of Ministers, formed 27 March 2026; a majority government of the Rastriya Swatantra Party and one independent, with the Nepali Congress as the official opposition)",
+          "url": "https://en.wikipedia.org/wiki/Balen_Shah_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "NP-NCP",
+      "country": "NP",
+      "shortName": "NCP",
+      "name": "नेपाली कम्युनिष्ट पार्टी",
+      "nameEn": "Nepali Communist Party",
+      "logo": "party-logos/np/ncp.svg",
+      "sha256": "7791851eaa276a94403d67a0a8b27f75b9b8638178b68553472fbc701db0fc2e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Nepali_Communist_Party_(2025).svg",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2025,
+      "leader": "Pushpa Kamal Dahal",
+      "leaderTitle": "Coordinator",
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 275,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Nepali Communist Party — Wikipedia (infobox: founded 5 November 2025; Coordinator Pushpa Kamal Dahal; left-wing). Not to be confused with the 2018–2021 Nepal Communist Party of the same English name.",
+          "url": "https://en.wikipedia.org/wiki/Nepali_Communist_Party"
+        },
+        {
+          "title": "House of Representatives (Nepal) — Wikipedia (composition after the 5 March 2026 election: government Rastriya Swatantra Party 182 + 1 independent; opposition Nepali Congress 38, CPN (UML) 25, Nepali Communist Party 17, Shram Sanskriti Party 7, Rastriya Prajatantra Party 5, of 275)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nepal)"
+        },
+        {
+          "title": "Balen Shah cabinet — Wikipedia (Nepal's 38th Council of Ministers, formed 27 March 2026; a majority government of the Rastriya Swatantra Party and one independent, with the Nepali Congress as the official opposition)",
+          "url": "https://en.wikipedia.org/wiki/Balen_Shah_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "NP-SSP",
+      "country": "NP",
+      "shortName": "SSP",
+      "name": "श्रम संस्कृति पार्टी",
+      "nameEn": "Shram Sanskriti Party",
+      "logo": "party-logos/np/ssp.png",
+      "sha256": "45633247c9ef98413d32d7da416ebc5f1e50167d0ccd8a73c36421cfaf3c3b77",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Shram_Sanskriti_Party.png",
+      "licenceNote": "Non-free. Shram Sanskriti Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Labourism",
+        "Indigenism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2025,
+      "leader": "Harka Sampang",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 275,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Shram Sanskriti Party — Wikipedia (infobox: founded 28 September 2025; Chairperson Harka Sampang; the infobox states no left–right position)",
+          "url": "https://en.wikipedia.org/wiki/Shram_Sanskriti_Party"
+        },
+        {
+          "title": "House of Representatives (Nepal) — Wikipedia (composition after the 5 March 2026 election: government Rastriya Swatantra Party 182 + 1 independent; opposition Nepali Congress 38, CPN (UML) 25, Nepali Communist Party 17, Shram Sanskriti Party 7, Rastriya Prajatantra Party 5, of 275)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nepal)"
+        },
+        {
+          "title": "Balen Shah cabinet — Wikipedia (Nepal's 38th Council of Ministers, formed 27 March 2026; a majority government of the Rastriya Swatantra Party and one independent, with the Nepali Congress as the official opposition)",
+          "url": "https://en.wikipedia.org/wiki/Balen_Shah_cabinet"
+        }
+      ]
+    },
+    {
+      "id": "NP-RPP",
+      "country": "NP",
+      "shortName": "RPP",
+      "name": "राष्ट्रिय प्रजातन्त्र पार्टी",
+      "nameEn": "Rastriya Prajatantra Party (National Democratic Party)",
+      "logo": "party-logos/np/rpp.svg",
+      "sha256": "cf2df5802d38626d096e112c52b2f929317581393360488f2cabd4544cd31ccb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Rastriya_Prajatantra_Party_Logo.svg",
+      "ideology": [
+        "Hindu nationalism",
+        "Constitutional monarchism",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1990,
+      "leader": "Rajendra Lingden",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 275,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Rastriya Prajatantra Party — Wikipedia (infobox: founded 29 May 1990; Chairman Rajendra Lingden; right-wing)",
+          "url": "https://en.wikipedia.org/wiki/Rastriya_Prajatantra_Party"
+        },
+        {
+          "title": "House of Representatives (Nepal) — Wikipedia (composition after the 5 March 2026 election: government Rastriya Swatantra Party 182 + 1 independent; opposition Nepali Congress 38, CPN (UML) 25, Nepali Communist Party 17, Shram Sanskriti Party 7, Rastriya Prajatantra Party 5, of 275)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Nepal)"
+        },
+        {
+          "title": "Balen Shah cabinet — Wikipedia (Nepal's 38th Council of Ministers, formed 27 March 2026; a majority government of the Rastriya Swatantra Party and one independent, with the Nepali Congress as the official opposition)",
+          "url": "https://en.wikipedia.org/wiki/Balen_Shah_cabinet"
+        }
+      ]
+    }
+  ],
   "KZ": [
     {
       "id": "KZ-ADILET",
