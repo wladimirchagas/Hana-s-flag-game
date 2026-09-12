@@ -1795,7 +1795,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           url: "https://europeelects.eu/azerbaijan/",
         }
       ],
-    }
+    },
     {
       id: "AZ-JLD",
       country: "AZ",
@@ -1823,7 +1823,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           url: "https://europeelects.eu/azerbaijan/",
         }
       ],
-    }
+    },
     {
       id: "AZ-REAL",
       country: "AZ",
@@ -1851,7 +1851,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           url: "https://europeelects.eu/azerbaijan/",
         }
       ],
-    }
+    },
     {
       id: "AZ-GAP",
       country: "AZ",
@@ -1879,7 +1879,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           url: "https://europeelects.eu/azerbaijan/",
         }
       ],
-    }
+    },
     {
       id: "AZ-MP",
       country: "AZ",
@@ -1907,7 +1907,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           url: "https://europeelects.eu/azerbaijan/",
         }
       ],
-    }
+    },
     {
       id: "AZ-ANIP",
       country: "AZ",
@@ -1935,7 +1935,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           url: "https://europeelects.eu/azerbaijan/",
         }
       ],
-    }
+    },
     {
       id: "AZ-NFP",
       country: "AZ",
@@ -1963,7 +1963,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           url: "https://europeelects.eu/azerbaijan/",
         }
       ],
-    }
+    },
     {
       id: "AZ-DRP",
       country: "AZ",
@@ -1991,7 +1991,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           url: "https://europeelects.eu/azerbaijan/",
         }
       ],
-    }
+    },
     {
       id: "AZ-ADEP",
       country: "AZ",
@@ -2019,7 +2019,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           url: "https://europeelects.eu/azerbaijan/",
         }
       ],
-    }
+    },
     {
       id: "AZ-GOP",
       country: "AZ",
