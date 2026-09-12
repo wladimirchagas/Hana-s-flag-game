@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 27 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete.**
+**Countries audited: 28 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -73,6 +73,7 @@ forgotten; it is tracked here.
 | 🇬🇧 United Kingdom | `#1337` | **1 → 15** | 637 / 650 | **WRONG — a former prime minister, no opposition at all** |
 | 🇺🇸 United States | `#1338` | 2 → 2 | 432 / 435 | **CONTRADICTORY — two simultaneous presidents** |
 | 🇨🇦 Canada | `#1339` | 1 → 5 | 338 / 343 | **WRONG — a departed PM, a retired chamber size** |
+| 🇩🇪 Germany | `#1340` | 1 → 6 | 627 / 630 | **WRONG — a seat count belonging to no Bundestag** |
 
 ---
 
@@ -952,6 +953,38 @@ Coverage across the three went from **4 parties to 22**.
 
 ---
 
+## Phase 5 — Europe
+
+### 🇩🇪 Germany — audited 2026-09-12
+
+Germany had **one party**: the CDU, with **258** seats — a figure that belongs to no Bundestag. The
+CDU/CSU group won 208 seats in 2025 and the CDU's own share is **164**; 258 appears to conflate the
+group with something else again.
+
+The 21st Bundestag, elected 23 February 2025, has 630 seats: **Government (Merz cabinet) 328** —
+CDU 164, CSU 44, SPD 120 — and **Opposition 302** — AfD 150, Greens 85, Die Linke 64, and 3
+non-attached.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-140 | **S1** | `seats` | CDU **258** | **164** | The Bundestag's own composition. 258 matches neither the CDU nor the CDU/CSU group (208) |
+| PP-141 | **S1** | coverage | 1 party | **6 parties, 627 of 630** | The **AfD**, the largest opposition party with 150 seats, was absent, as were the SPD — the CDU's own coalition partner, with 120 — the Greens, Die Linke and the CSU |
+| PP-142 | **S2** | `inExecutive` | absent | **true** on the CDU, CSU and SPD | The three parties of the Merz cabinet |
+| PP-143 | **S3** | coalitions | none | **`DE-GOV`** (CDU/CSU–SPD, 328 seats) | The Bundestag's own Government grouping |
+
+**The CDU/CSU relationship is modelled explicitly rather than flattened.** They are two separate
+parties that never contest each other's territory — the CSU stands only in Bavaria — and sit as a
+single group in the Bundestag. Both are entered separately with their own seat counts, and the
+`DE-GOV` coalition note explains the arrangement. Merging them into one "CDU/CSU" entry would have
+hidden a real party; treating the group's 208 seats as the CDU's would have been the 258 error again.
+
+**Documented gap — 3 of the 630 seats are non-attached members**, including the SSW's single
+representative, who sits outside every group.
+
+All six logos are public domain on Commons and were montage-verified.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -999,7 +1032,7 @@ Tick a box only when that country's fix is **merged and live**.
 
 - [ ] `IE` Ireland
 - [ ] `FR` France
-- [ ] `DE` Germany
+- [x] `DE` Germany — merged
 - [ ] `ES` Spain
 - [ ] `PT` Portugal
 - [ ] `IT` Italy
