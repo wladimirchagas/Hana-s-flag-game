@@ -20546,99 +20546,147 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "GE-GD",
       "country": "GE",
       "shortName": "Georgian Dream",
-      "name": "Georgian Dream – Democratic Georgia",
+      "name": "ქართული ოცნება – დემოკრატიული საქართველო",
       "nameEn": "Georgian Dream – Democratic Georgia",
       "logo": "party-logos/ge/gd.svg",
       "sha256": "088e430d7f2ddb19c53bb0547785b1a6b62303b7310528fc65cf11879f7716c5",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Georgian_Dream.svg",
       "ideology": [
-        "Centre-left",
         "Populism",
-        "Nationalism"
+        "Conservatism",
+        "Left conservatism",
+        "Social market economy",
+        "Euroscepticism"
       ],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
+      "ideologyPosition": "other",
+      "positionRaw": "Syncretic — fiscally centre-left, socially right-wing",
       "founded": 2012,
-      "leader": "Irakli Garibashvili",
-      "leaderTitle": "Party Leader",
+      "leader": "Irakli Kobakhidze",
+      "leaderTitle": "Chairman",
       "inPower": true,
-      "seats": 89,
+      "inExecutive": true,
+      "timeInPower": "Has ruled Georgia since 2012. Irakli Kobakhidze, the party's chairman, is prime minister, and the second Kobakhidze government formed on 28 November 2024 is composed solely of Georgian Dream members.",
+      "seats": 78,
       "seatsTotal": 150,
       "chamberName": "Parliament of Georgia",
       "sources": [
         {
-          "title": "Georgian Dream – Wikipedia",
+          "title": "Georgian Dream — Wikipedia (a conservative and populist party founded 21 April 2012 which \"has ruled the country since 2012\"; Chairman Irakli Kobakhidze, Honorary Chairman Bidzina Ivanishvili; position syncretic — fiscally centre-left, socially right-wing; 78 of 150 seats)",
           "url": "https://en.wikipedia.org/wiki/Georgian_Dream"
         },
         {
-          "title": "2024 Georgian legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Georgian_legislative_election"
+          "title": "Parliament of Georgia — Wikipedia (political groups: Government 78 Georgian Dream; Opposition 12 For Georgia; Others — People's Power 8, European Socialists 3; Vacant 49, after parliament revoked the mandates of 49 opposition MPs in February 2025)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Georgia"
+        },
+        {
+          "title": "Second Kobakhidze government — Wikipedia (formed 28 November 2024, composed solely of Georgian Dream members, under Prime Minister Irakli Kobakhidze)",
+          "url": "https://en.wikipedia.org/wiki/Second_Kobakhidze_government"
         }
       ]
     },
     {
-      "id": "GE-UNM",
+      "id": "GE-FORGEORGIA",
       "country": "GE",
-      "shortName": "UNM",
-      "name": "United National Movement",
-      "nameEn": "United National Movement",
-      "logo": "party-logos/ge/unm.jpg",
-      "sha256": "fe137800fbe28928fe356a568bf957f8e0dbf9333a20755f09702f161fd4d829",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:UNM_Logo_2025.jpg",
+      "shortName": "For Georgia",
+      "name": "საქართველოსთვის",
+      "nameEn": "For Georgia",
+      "logo": "party-logos/ge/forgeorgia.svg",
+      "sha256": "1ea5d94672c55c17d7526eb48c409b32af5ec22daa0f5fdbdb4eb9f89b512125",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:For_Georgia_logo.svg",
       "ideology": [
-        "Centre-right",
-        "National liberalism",
-        "Conservatism"
+        "Social democracy",
+        "Technocracy",
+        "Pro-Europeanism"
       ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 2001,
-      "leader": "Nika Melia",
-      "leaderTitle": "Party Chair",
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2021,
+      "leader": "Giorgi Gakharia",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 35,
+      "seats": 12,
       "seatsTotal": 150,
       "chamberName": "Parliament of Georgia",
       "sources": [
         {
-          "title": "United National Movement – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/United_National_Movement_(Georgia)"
+          "title": "For Georgia — Wikipedia (founded 29 May 2021 by former prime minister Giorgi Gakharia; ideology social democracy, technocracy, pro-Europeanism; position centre to centre-left; 12 of 150 seats)",
+          "url": "https://en.wikipedia.org/wiki/For_Georgia"
         },
         {
-          "title": "2024 Georgian legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Georgian_legislative_election"
+          "title": "Parliament of Georgia — Wikipedia (political groups: Government 78 Georgian Dream; Opposition 12 For Georgia; Others — People's Power 8, European Socialists 3; Vacant 49, after parliament revoked the mandates of 49 opposition MPs in February 2025)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Georgia"
         }
       ]
     },
     {
-      "id": "GE-COALITION",
+      "id": "GE-PP",
       "country": "GE",
-      "shortName": "Coalition",
-      "name": "Coalition for Change",
-      "nameEn": "Coalition for Change",
-      "noImageReason": "Searched for a Coalition for Change emblem and found none that can be bundled as the COALITION's own: Wikimedia Commons has no file for the alliance, Wikidata records no P154 logo on its item under Georgia (P17), and the English Wikipedia article's infobox carries \"Ahali Party Logo.svg\" — the logo of one MEMBER party, not of the coalition, so bundling it would caption Ahali's emblem as the alliance's. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real coalition emblem is sourced.",
+      "shortName": "People's Power",
+      "name": "ხალხის ძალა",
+      "nameEn": "People's Power",
+      "logo": "party-logos/ge/peoplespower.png",
+      "sha256": "a3106f61dd61aaab1dc68dfead9d50da9218f2ebaf16207b5c168da0c1e56fd3",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:2024_logo_of_the_People%27s_Power_(Georgia).png",
+      "licenceNote": "Non-free. People's Power's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
       "ideology": [
-        "Centre-right",
-        "Liberalism",
-        "Pro-Western"
+        "National conservatism",
+        "Right-wing populism",
+        "Sovereigntism",
+        "Euroscepticism"
       ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 2023,
-      "leader": "Zurab Japaridze",
-      "leaderTitle": "Coalition Chair",
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2022,
+      "leader": "Sozar Subari",
+      "leaderTitle": "Chairman",
       "inPower": false,
-      "seats": 19,
+      "seats": 8,
       "seatsTotal": 150,
       "chamberName": "Parliament of Georgia",
       "sources": [
         {
-          "title": "Coalition for Change – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Coalition_for_Change_(Georgia)"
+          "title": "People's Power (Georgia) — Wikipedia (founded 2 August 2022; Chairman Sozar Subari; ideology national conservatism, right-wing populism, sovereigntism, Euroscepticism; position right-wing to far-right; 8 of 150 seats)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Power_(Georgia)"
         },
         {
-          "title": "2024 Georgian legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Georgian_legislative_election"
+          "title": "Parliament of Georgia — Wikipedia (political groups: Government 78 Georgian Dream; Opposition 12 For Georgia; Others — People's Power 8, European Socialists 3; Vacant 49, after parliament revoked the mandates of 49 opposition MPs in February 2025)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Georgia"
+        }
+      ]
+    },
+    {
+      "id": "GE-ES",
+      "country": "GE",
+      "shortName": "European Socialists",
+      "name": "ევროპელი სოციალისტები",
+      "nameEn": "European Socialists",
+      "logo": "party-logos/ge/eurosocialists.svg",
+      "sha256": "5d0dad7c0986970a98d0a6f9b48be3cdafd6487a28eb6c50b5ffc1359bcdc76b",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_European_Socialists_(Georgia).svg",
+      "licenceNote": "Non-free. European Socialists's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Populism",
+        "Conservatism",
+        "Social market economy",
+        "Soft Euroscepticism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Syncretic — fiscally centre-left, socially right-wing",
+      "founded": 2021,
+      "leader": "Ilia Injia",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 150,
+      "chamberName": "Parliament of Georgia",
+      "sources": [
+        {
+          "title": "European Socialists (Georgia) — Wikipedia (founded 9 January 2021; Chairman Ilia Injia; position syncretic — fiscally centre-left, socially right-wing; 3 of 150 seats)",
+          "url": "https://en.wikipedia.org/wiki/European_Socialists_(Georgia)"
+        },
+        {
+          "title": "Parliament of Georgia — Wikipedia (political groups: Government 78 Georgian Dream; Opposition 12 For Georgia; Others — People's Power 8, European Socialists 3; Vacant 49, after parliament revoked the mandates of 49 opposition MPs in February 2025)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Georgia"
         }
       ]
     }

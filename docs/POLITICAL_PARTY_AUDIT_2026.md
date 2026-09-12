@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 51 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 52 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -101,7 +101,8 @@ forgotten; it is tracked here.
 | 🇧🇩 Bangladesh | `#1364` | 1 → 10 | 339 / 350 | **FABRICATED LOGO in the repo — and a whole 2026 parliament missing** |
 | 🇧🇹 Bhutan | `#1365` | 3 → 2 | **47 / 47** | **INVERTED — the governing party sat in opposition; two entries held no seats** |
 | 🇨🇳 China | `#1366` | 1 → 9 | 2,411 / 2,977 | **The ruling party was given every seat in the chamber; all eight other legal parties were missing** |
-| 🇨🇾 Cyprus | `#1367` | 0 → 6 | **56 / 56** | **Absent from the dataset entirely; a general election in May 2026 had replaced three parties with two** |
+| 🇨🇾 Cyprus | `#1368` | 0 → 6 | **56 / 56** | **Absent from the dataset entirely; a general election in May 2026 had replaced three parties with two** |
+| 🇬🇪 Georgia | `#1369` | 3 → 4 | 101 / 150 (49 vacant) | **Two of three entries held no seats after 49 opposition mandates were revoked; the three parties that do sit were missing** |
 
 ---
 
@@ -1904,6 +1905,46 @@ All six were montage-verified.
 
 ---
 
+### 🇬🇪 Georgia — audited 2026-09-12
+
+Georgia's three entries described a parliament that no longer exists. **Two of the three hold no
+seat at all**, the third's seat count was 11 too high, and the three parties that actually sit
+alongside it — 23 seats between them — were all missing.
+
+In **February 2025** parliament revoked the mandates of **49 opposition MPs**, from the Coalition
+for Change, Unity – National Movement and Strong Georgia, after those blocs submitted statements
+requesting the termination of their own parliamentary authority. Those 49 seats are **vacant**, and
+the parties that won them hold nothing.
+
+The Parliament of Georgia, 150 seats: **Government 78** — Georgian Dream — **Opposition 12** — For
+Georgia — **others 11** — People's Power 8, European Socialists 3 — **vacant 49**.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-282 | **S1** | `seats` / coverage | **`GE-UNM`** (United National Movement) with **35 seats** | *(entry removed)* | The UNM's own infobox now reads **0 of 150**. Its MPs' mandates were revoked in February 2025 |
+| PP-283 | **S1** | `seats` / coverage | **`GE-COALITION`** (Coalition for Change) | *(entry removed)* | Its infobox likewise reads **0 of 150** — same revocation |
+| PP-284 | **S1** | coverage | — | **For Georgia 12, People's Power 8, European Socialists 3 added** | Every party that actually holds a seat besides Georgian Dream was absent |
+| PP-285 | **S2** | `seats` | Georgian Dream **89** | **78** | Overstated by 11 |
+| PP-286 | **S2** | `leader` | **Irakli Garibashvili** | **Irakli Kobakhidze** | Garibashvili is neither the party's chairman nor prime minister. Kobakhidze is both; Bidzina Ivanishvili is Honorary Chairman |
+| PP-287 | **S2** | `ideologyPosition` | Georgian Dream **centre-left** | **other**, `positionRaw` "Syncretic — fiscally centre-left, socially right-wing" | The party's cited position is *syncretic*, split between a centre-left fiscal stance and a right-wing social one. Filing it centre-left reported half of that as the whole |
+| PP-288 | **S2** | `inExecutive` | absent | **`true`** | The second Kobakhidze government, formed 28 November 2024, is composed **solely** of Georgian Dream members |
+| PP-289 | **S3** | `ideology` | "Centre-left, Populism, Nationalism" | "Populism, Conservatism, Left conservatism, Social market economy, Euroscepticism" | "Centre-left" is a position, not an ideology tag, and Euroscepticism — a defining feature of the party since 2024 — was absent |
+
+**Removing the UNM and the Coalition for Change is a seat-count decision, not a political one.** The
+dataset's scope is parties *currently holding at least one seat*, applied the same way to Armenia's
+Republican Party, Azerbaijan's Popular Front and Bhutan's DPT earlier in this sweep. Both parties
+continue to exist and contest Georgian politics; neither sits in this parliament. The 49 vacant
+seats are the reason, and they are recorded here so the removal is legible rather than silent.
+
+**Documented gap — 49 of the 150 seats are vacant**, so Georgia cannot reconcile to its chamber
+size: 78 + 12 + 8 + 3 = 101. This is a genuine feature of the chamber, not missing data.
+
+`ge/unm.jpg` was deleted along with the entry. Two of the three new logos are non-free files on
+English Wikipedia and are declared; For Georgia's is on Commons. All four bundled logos were
+montage-verified.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2106,7 +2147,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `FJ` Fiji
 - [ ] `GA` Gabon
 - [ ] `GM` Gambia
-- [ ] `GE` Georgia
+- [x] `GE` Georgia — merged
 - [ ] `GH` Ghana
 - [ ] `GD` Grenada
 - [ ] `GT` Guatemala
