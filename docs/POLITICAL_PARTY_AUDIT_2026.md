@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 31 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 32 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -77,6 +77,7 @@ forgotten; it is tracked here.
 | 🇫🇷 France | `#1341` | 1 → 13 | 513 / 577 | **WRONG — a parliamentary group modelled as a party** |
 | 🇮🇹 Italy | `#1342` | 6 → 12 | 389 / 400 | **WRONG — a leader who died in 2023** |
 | 🇪🇸 Spain | `#1343` | 1 → 14 | 346 / 350 | **WRONG — the opposition marked as governing** |
+| 🇵🇱 Poland | `#1344` | 1 → 11 | 433 / 460 | **WRONG — only a junior coalition partner present** |
 
 ---
 
@@ -1082,6 +1083,40 @@ All fourteen logos are on Commons and were montage-verified.
 
 ---
 
+### 🇵🇱 Poland — audited 2026-09-12
+
+Poland had **one party, and it was the fourth-largest member of the governing coalition** — the PSL,
+with 28 of the Sejm's 460 seats. The Civic Coalition, which leads the government with 153, and Law
+and Justice, the opposition with 140, were both absent.
+
+The Sejm: **Government (Tusk III) 239** — KO 156, Polish Coalition 32, The Left 21, Centre Union 15,
+Poland 2050 15 — **supported by 4**, **Opposition 217** — PiS 146, Development Plus 41,
+Confederation 16, Razem 4, Direct Democracy 4.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-158 | **S1** | coverage | 1 party — a junior coalition partner | **11 parties, 433 of 460** | The **Civic Coalition** (153) and **Law and Justice** (140) were both absent: the party of the prime minister and the party of the opposition |
+| PP-159 | **S2** | `seats` | PSL **30** | **28** | The Sejm's own composition; the Polish Coalition group's 32 seats include three Centre for Poland deputies and one independent |
+| PP-160 | **S2** | `inExecutive` | absent | **true** on the five coalition parties | The Tusk III cabinet |
+| PP-161 | **S3** | coalitions | none | **`PL-GOV`** (239 seats) | The Sejm's own Government grouping |
+
+**Two parties in this Sejm are younger than the dataset entry they were missing from.** **Development
+Plus** — Mateusz Morawiecki's party, now the second-largest opposition force with 40 seats — was
+founded on 15 April 2026, and the **Centre Union** became a registered party on 12 July 2026, two
+months before this audit. Both are in the chamber today.
+
+**The Confederation group is unpacked**: its 16 seats are New Hope's 8 and the National Movement's 7,
+two distinct parties, entered separately.
+
+**Documented gap — 27 of the 460 seats**: the Direct Democracy group (Kukiz'15 and others), Centre
+for Poland, the Greens, AGROunia, Free Republicans, and the independents and non-aligned deputies
+spread across the government and opposition groups.
+
+**Three non-free logos, declared** (New Hope and Odnowa under fair use, the Centre Union as a local
+public-domain file); the other eight are on Commons. All eleven were montage-verified.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -1138,7 +1173,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `LU` Luxembourg
 - [ ] `CH` Switzerland
 - [ ] `AT` Austria
-- [ ] `PL` Poland
+- [x] `PL` Poland — merged
 - [ ] `CZ` Czechia
 - [ ] `SK` Slovakia
 - [ ] `HU` Hungary
