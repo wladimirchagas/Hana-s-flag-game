@@ -169,6 +169,18 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "Les Républicains sit in the Droite Républicaine group, which the Assembly lists as supporting the government rather than part of it, so LR is recorded out of power.",
   },
+  "IT-CDX": {
+    id: "IT-CDX",
+    name: "Coalizione di centro-destra",
+    nameEn: "Centre-right coalition",
+    kind: "coalition",
+    memberPartyIds: ["IT-FDI", "IT-LEGA", "IT-FI"],
+    source: {
+      title: "Chamber of Deputies (Italy) — Wikipedia: the Meloni cabinet's three groups hold 227 of 400 seats — FdI 118, Lega 57, FI–PPE 52",
+      url: "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)",
+    },
+    note: "Noi Moderati gives the government confidence and supply without holding cabinet office, so it is recorded in power but outside this coalition.",
+  },
   "MY-PH": {
     id: "MY-PH",
     name: "Pakatan Harapan",
@@ -11605,23 +11617,37 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Brothers of Italy",
       "logo": "party-logos/it/fdi.svg",
       "sha256": "4b642e7dad1b0f8b625a34c903963389d78d1e13b843452fed16237320f81962",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fratelli_d'Italia_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Conservatism", "Right-wing nationalism", "Euroscepticism"],
-      "ideologyPosition": "far-right",
-      "positionRaw": "Right",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Brothers_of_Italy.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Fratelli d'Italia emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "National conservatism",
+        "Right-wing populism",
+        "Post-fascism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
       "founded": 2012,
+      "coalitionId": "IT-CDX",
       "leader": "Giorgia Meloni",
-      "leaderTitle": "Party President",
+      "leaderTitle": "President",
       "inPower": true,
-      "timeInPower": "2022-present",
-      "seats": 115,
+      "inExecutive": true,
+      "timeInPower": "In government since Giorgia Meloni became prime minister on 22 October 2022.",
+      "seats": 117,
       "seatsTotal": 400,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Fratelli d'Italia - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Fratelli_d'Italia"
+          "title": "Brothers of Italy — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Brothers_of_Italy"
+        },
+        {
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
+        },
+        {
+          "title": "Prime Minister of Italy — Wikipedia (Giorgia Meloni of Fratelli d'Italia, in office since 22 October 2022)",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Italy"
         }
       ]
     },
@@ -11633,49 +11659,28 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Democratic Party",
       "logo": "party-logos/it/pd.svg",
       "sha256": "e483c8d4f39be8288bc98aa795072bd40055027935a442b83951910359d0bbb4",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partito_Democratico_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Social democracy", "Progressivism"],
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partito_Democratico_Logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Partito Democratico emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Social democracy"
+      ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 2007,
       "leader": "Elly Schlein",
-      "leaderTitle": "Party Secretary",
+      "leaderTitle": "Secretary",
       "inPower": false,
-      "seats": 69,
+      "seats": 68,
       "seatsTotal": 400,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Democratic Party (Italy) - Wikipedia",
+          "title": "Democratic Party — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Italy)"
-        }
-      ]
-    },
-    {
-      "id": "IT-M5S",
-      "country": "IT",
-      "shortName": "M5S",
-      "name": "Movimento 5 Stelle",
-      "nameEn": "Five Star Movement",
-      "logo": "party-logos/it/m5s.svg",
-      "sha256": "9b19c5ec7cb39d18aba572b566ea03015a0d6fad2f39d86881e3f79d065185d2",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Movimento_5_Stelle_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Populism", "Euroskepticism", "Environmentalism"],
-      "ideologyPosition": "other",
-      "positionRaw": "Populist",
-      "founded": 2009,
-      "leader": "Giuseppe Conte",
-      "leaderTitle": "Party President",
-      "inPower": false,
-      "seats": 63,
-      "seatsTotal": 400,
-      "chamberName": "Chamber of Deputies",
-      "sources": [
+        },
         {
-          "title": "Five Star Movement - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
         }
       ]
     },
@@ -11687,23 +11692,34 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "League for Salvini Premier",
       "logo": "party-logos/it/lega.svg",
       "sha256": "866b9b07f718a16c2aac0a181d78308138df16557ebe54c5a479d83d78aba9d6",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Lega_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Right-wing populism", "Regionalism", "Nationalism"],
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:League_-_Salvini_premier.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Lega emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Right-wing populism",
+        "Conservatism",
+        "Nationalism",
+        "Federalism"
+      ],
       "ideologyPosition": "right",
-      "positionRaw": "Right",
-      "founded": 1991,
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2017,
+      "coalitionId": "IT-CDX",
       "leader": "Matteo Salvini",
-      "leaderTitle": "Party Secretary",
+      "leaderTitle": "Federal Secretary",
       "inPower": true,
-      "timeInPower": "2022-present",
-      "seats": 30,
+      "inExecutive": true,
+      "timeInPower": "In the centre-right coalition governing since October 2022.",
+      "seats": 57,
       "seatsTotal": 400,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Lega (political party) - Wikipedia",
+          "title": "League for Salvini Premier — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Lega_(political_party)"
+        },
+        {
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
         }
       ]
     },
@@ -11712,26 +11728,67 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IT",
       "shortName": "FI",
       "name": "Forza Italia",
-      "nameEn": "Forward Italy",
       "logo": "party-logos/it/fi.svg",
       "sha256": "d19f2823dbcfbf81eb7de437ddb60c2e16cd6cb2cbf9a8e6d90ff83f3e3aff4c",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Forza_Italia_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Liberalism", "Conservatism", "Christian democracy"],
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Forza_Italia.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy",
+        "Populism"
+      ],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
-      "founded": 1994,
-      "leader": "Silvio Berlusconi",
-      "leaderTitle": "Party President",
+      "founded": 2013,
+      "coalitionId": "IT-CDX",
+      "leader": "Antonio Tajani",
+      "leaderTitle": "National Secretary",
       "inPower": true,
-      "timeInPower": "2022-present",
-      "seats": 37,
+      "inExecutive": true,
+      "timeInPower": "In the centre-right coalition governing since October 2022.",
+      "seats": 52,
       "seatsTotal": 400,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Forza Italia - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Forza_Italia"
+          "title": "Forza Italia — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Forza_Italia_(2013)"
+        },
+        {
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
+        }
+      ]
+    },
+    {
+      "id": "IT-M5S",
+      "country": "IT",
+      "shortName": "M5S",
+      "name": "Movimento 5 Stelle",
+      "nameEn": "Five Star Movement",
+      "logo": "party-logos/it/m5s.svg",
+      "sha256": "9b19c5ec7cb39d18aba572b566ea03015a0d6fad2f39d86881e3f79d065185d2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:M5S_logo_2050.svg",
+      "ideology": [
+        "Populism",
+        "Green politics"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2009,
+      "leader": "Giuseppe Conte",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 48,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Five Star Movement — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+        },
+        {
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
         }
       ]
     },
@@ -11739,26 +11796,236 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "IT-AVS",
       "country": "IT",
       "shortName": "AVS",
-      "name": "Alleanza Verdi Sinistra",
-      "nameEn": "Green Left Alliance",
+      "name": "Alleanza Verdi e Sinistra",
+      "nameEn": "Greens and Left Alliance",
       "logo": "party-logos/it/avs.svg",
       "sha256": "67f2aa5768d3f471de48601bd4c1ff16bea6bf03b768c7749a3d781096a4028a",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Alleanza_Verdi_Sinistra_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Environmentalism", "Socialism", "Progressivism"],
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Greens_and_Left_Alliance.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Alleanza Verdi e Sinistra emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Democratic socialism",
+        "Green politics"
+      ],
       "ideologyPosition": "left",
-      "positionRaw": "Left",
-      "founded": 2021,
+      "positionRaw": "Left-wing",
+      "founded": 2022,
       "leader": "Angelo Bonelli",
-      "leaderTitle": "Co-President",
+      "leaderTitle": "Co-leader",
       "inPower": false,
-      "seats": 13,
+      "seats": 10,
       "seatsTotal": 400,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Green Left Alliance - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Green_Left_Alliance_(Italy)"
+          "title": "Greens and Left Alliance — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Greens_and_Left_Alliance"
+        },
+        {
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
+        }
+      ]
+    },
+    {
+      "id": "IT-AZ",
+      "country": "IT",
+      "shortName": "Azione",
+      "name": "Azione",
+      "nameEn": "Action",
+      "logo": "party-logos/it/azione.svg",
+      "sha256": "bb63f42c47d949b864ed24e01d0a53396844cd652e75ff0b516f3ba20a0fe9d1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Azione_-_logo_(Italy,_2021-).svg",
+      "ideology": [
+        "Liberalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2019,
+      "leader": "Carlo Calenda",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 10,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Action — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Action_(Italian_political_party)"
+        },
+        {
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
+        }
+      ]
+    },
+    {
+      "id": "IT-FN",
+      "country": "IT",
+      "shortName": "FN",
+      "name": "Futuro Nazionale",
+      "nameEn": "National Future",
+      "logo": "party-logos/it/fn.svg",
+      "sha256": "7132dc020bad304eacfefe8398fd1b63d168c2f01d76c4cd91aefae86f2e092d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Futuro_Nazionale_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Futuro Nazionale emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Italian nationalism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2026,
+      "leader": "Roberto Vannacci",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "National Future — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/National_Future"
+        },
+        {
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
+        }
+      ]
+    },
+    {
+      "id": "IT-IV",
+      "country": "IT",
+      "shortName": "IV",
+      "name": "Italia Viva",
+      "nameEn": "Italy Alive",
+      "logo": "party-logos/it/iv.svg",
+      "sha256": "32a29741139a402eee4653da6bbd25bd385c2f982e583526d816507f45047dc8",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Italia_Viva.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Italia Viva emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Liberalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2019,
+      "leader": "Matteo Renzi",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Italy Alive — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Italia_Viva"
+        },
+        {
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
+        }
+      ]
+    },
+    {
+      "id": "IT-NM",
+      "country": "IT",
+      "shortName": "NM",
+      "name": "Noi Moderati",
+      "nameEn": "Us Moderates",
+      "logo": "party-logos/it/nm.svg",
+      "sha256": "3fd40c604f01f7c6467e1f0c687486c692d7b24969e4b15ae23cca0571d22118",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Noi_Moderati_-_logo_(Italy,_2024).svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2022,
+      "leader": "Maurizio Lupi",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "Gives the Meloni government confidence and supply without holding cabinet office.",
+      "seats": 7,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Us Moderates — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Us_Moderates"
+        },
+        {
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
+        }
+      ]
+    },
+    {
+      "id": "IT-SVP",
+      "country": "IT",
+      "shortName": "SVP",
+      "name": "Südtiroler Volkspartei",
+      "nameEn": "South Tyrolean People's Party",
+      "logo": "party-logos/it/svp.svg",
+      "sha256": "028f38c778e8c495fadeaab8a86fc83910433f1f32821eaaff3b913fa67f0d3e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:S%C3%BCdtiroler_Volksparte_Logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Südtiroler Volkspartei emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Regionalism",
+        "German and Ladin minority interests",
+        "Christian democracy"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1945,
+      "leader": "Dieter Steger",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "South Tyrolean People's Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/South_Tyrolean_People's_Party"
+        },
+        {
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
+        }
+      ]
+    },
+    {
+      "id": "IT-PIUE",
+      "country": "IT",
+      "shortName": "+E",
+      "name": "Più Europa",
+      "nameEn": "More Europe",
+      "logo": "party-logos/it/piue.svg",
+      "sha256": "744628950bd1638986a7a414fa9af0a0b894e7d220a171b34b93be96637d23cb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Pi%C3%B9_Europa_wordmark.svg",
+      "ideology": [
+        "Liberalism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2017,
+      "leader": "Riccardo Magi",
+      "leaderTitle": "Secretary",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 400,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "More Europe — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/More_Europe"
+        },
+        {
+          "title": "Chamber of Deputies (Italy) — Wikipedia: 400 seats, 19th legislature — Government (Meloni cabinet) 227 (FdI 118, Lega 57, FI–PPE 52), supported by 10, Opposition 162 (PD–IDP 68, M5S 48, Azione 10, AVS 10, Italia Viva 7, Mixed 19)",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Italy)"
         }
       ]
     }

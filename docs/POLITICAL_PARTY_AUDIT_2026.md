@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 29 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 30 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -75,6 +75,7 @@ forgotten; it is tracked here.
 | 🇨🇦 Canada | `#1339` | 1 → 5 | 338 / 343 | **WRONG — a departed PM, a retired chamber size** |
 | 🇩🇪 Germany | `#1340` | 1 → 6 | 627 / 630 | **WRONG — a seat count belonging to no Bundestag** |
 | 🇫🇷 France | `#1341` | 1 → 13 | 513 / 577 | **WRONG — a parliamentary group modelled as a party** |
+| 🇮🇹 Italy | `#1342` | 6 → 12 | 389 / 400 | **WRONG — a leader who died in 2023** |
 
 ---
 
@@ -1018,6 +1019,36 @@ nine are on Commons. All thirteen were montage-verified.
 
 ---
 
+### 🇮🇹 Italy — audited 2026-09-12
+
+Italy's six parties were the right six, but **Forza Italia was led by Silvio Berlusconi, who died in
+June 2023** — the second deceased leader this sweep has found in production, after Vietnam's. Every
+seat figure was also from the 2022 election night rather than the current chamber.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-148 | **S1** | `leader` | Forza Italia led by **Silvio Berlusconi** | **Antonio Tajani** | Berlusconi died on 12 June 2023; Tajani has been Forza Italia's national secretary since |
+| PP-149 | **S1** | `seats` | FdI 115, PD 69, M5S 63, Lega **30**, FI 37, AVS 13 | **FdI 117, PD 68, M5S 48, Lega 57, FI 52, AVS 10** | The Chamber's own composition. The Lega figure was out by 27 seats and the M5S by 15 |
+| PP-150 | **S2** | coverage | 6 parties, 327 of 400 | **12 parties, 389 of 400** | Added Azione (10), **Futuro Nazionale** (8), Italia Viva (7), Noi Moderati (7), SVP (3) and Più Europa (2) |
+| PP-151 | **S2** | `founded` | Lega **1991** | **2017** | 1991 is Lega Nord's founding year; Lega per Salvini Premier is a distinct party registered on 14 December 2017 |
+| PP-152 | **S2** | `inExecutive` | absent on all | **true** on FdI, Lega and Forza Italia | The three parties of the Meloni cabinet |
+| PP-153 | **S3** | coalitions | none | **`IT-CDX`** (centre-right, 227 seats) | The Chamber's own Government grouping |
+
+**Futuro Nazionale did not exist when the old entries were written** — Roberto Vannacci's party was
+founded on 6 February 2026 and already holds 8 Chamber seats, more than Italia Viva or Noi Moderati.
+
+**Noi Moderati is `inPower` but outside the coalition**, because the Chamber lists it under
+*supported by* rather than as part of the government — the same confidence-and-supply reading applied
+in Indonesia, Peru and France.
+
+**Documented gap — 11 of the 400 seats**: the remaining Mixed-group deputies (Valdostan Union, the
+Italian Radicals, Sardinian Progressives, DemoS, Christian Democracy with Rotondi and the
+non-inscrits), each holding one or two seats.
+
+**Seven non-free logos, declared**; five are on Commons. All twelve were montage-verified.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -1068,7 +1099,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `DE` Germany — merged
 - [ ] `ES` Spain
 - [ ] `PT` Portugal
-- [ ] `IT` Italy
+- [x] `IT` Italy — merged
 - [ ] `NL` Netherlands
 - [ ] `BE` Belgium
 - [ ] `LU` Luxembourg
