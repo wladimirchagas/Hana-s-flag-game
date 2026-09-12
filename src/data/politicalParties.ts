@@ -367,6 +367,17 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "The CDU and CSU are separate parties that never contest each other's territory — the CSU stands only in Bavaria — and sit as a single CDU/CSU group in the Bundestag.",
   },
+  "PL-GOV": {
+    id: "PL-GOV",
+    name: "Koalicja rządowa Tusk III",
+    nameEn: "Tusk III governing coalition",
+    kind: "coalition",
+    memberPartyIds: ["PL-KO", "PL-PSL", "PL-NL", "PL-UC", "PL-PL2050"],
+    source: {
+      title: "Sejm — Wikipedia: the Tusk III government holds 239 of 460 seats — KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15",
+      url: "https://en.wikipedia.org/wiki/Sejm",
+    },
+  },
   "UY-CR": {
     id: "UY-CR",
     name: "Coalición Republicana",
@@ -7394,34 +7405,398 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "PL": [
     {
+      "id": "PL-KO",
+      "country": "PL",
+      "shortName": "KO",
+      "name": "Koalicja Obywatelska",
+      "nameEn": "Civic Coalition",
+      "logo": "party-logos/pl/ko.svg",
+      "sha256": "3bce32caf522ca188dcb2226ad04650a8d7da70a7fc9c0842f8dc9dce28d4a87",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Koalicja_Obywatelska_2023.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2025,
+      "coalitionId": "PL-GOV",
+      "leader": "Donald Tusk",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In government since Donald Tusk became prime minister on 13 December 2023.",
+      "seats": 153,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Civic Coalition — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Civic_Coalition_(party)"
+        },
+        {
+          "title": "Sejm — Wikipedia: 460 seats — Government (Tusk III) 239 (KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15), supported by 4, Opposition 217 (PiS 146, Development Plus 41, Confederation 16, Razem 4, Direct Democracy 4)",
+          "url": "https://en.wikipedia.org/wiki/Sejm"
+        },
+        {
+          "title": "Prime Minister of Poland — Wikipedia (Donald Tusk of the Civic Coalition, in office since 13 December 2023)",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Poland"
+        }
+      ]
+    },
+    {
+      "id": "PL-PIS",
+      "country": "PL",
+      "shortName": "PiS",
+      "name": "Prawo i Sprawiedliwość",
+      "nameEn": "Law and Justice",
+      "logo": "party-logos/pl/pis.svg",
+      "sha256": "0fe98d65e248af709cb4fb53821776ac8af20d06e1550a438c1bcff68b91b84d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Law_and_Justice.svg",
+      "ideology": [
+        "National conservatism",
+        "Paternalistic conservatism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2001,
+      "leader": "Jarosław Kaczyński",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 140,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Law and Justice — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Law_and_Justice"
+        },
+        {
+          "title": "Sejm — Wikipedia: 460 seats — Government (Tusk III) 239 (KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15), supported by 4, Opposition 217 (PiS 146, Development Plus 41, Confederation 16, Razem 4, Direct Democracy 4)",
+          "url": "https://en.wikipedia.org/wiki/Sejm"
+        }
+      ]
+    },
+    {
+      "id": "PL-RPLUS",
+      "country": "PL",
+      "shortName": "R+",
+      "name": "Rozwój Plus",
+      "nameEn": "Development Plus",
+      "logo": "party-logos/pl/rplus.svg",
+      "sha256": "4d395887c3c7e2b61f97afc6789250e94c3ced8384e85879270419e7d1168d6c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Rozw%C3%B3j_Plus.svg",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2026,
+      "leader": "Mateusz Morawiecki",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 40,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Development Plus — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Development_Plus"
+        },
+        {
+          "title": "Sejm — Wikipedia: 460 seats — Government (Tusk III) 239 (KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15), supported by 4, Opposition 217 (PiS 146, Development Plus 41, Confederation 16, Razem 4, Direct Democracy 4)",
+          "url": "https://en.wikipedia.org/wiki/Sejm"
+        }
+      ]
+    },
+    {
       "id": "PL-PSL",
       "country": "PL",
       "shortName": "PSL",
-      "name": "Polish People's Party",
+      "name": "Polskie Stronnictwo Ludowe",
+      "nameEn": "Polish People's Party",
+      "logo": "party-logos/pl/psl.svg",
+      "sha256": "a81db2906d8feef3311102b9f866c3db1f9b1f8d9344f74496f1ad096a41f070",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Polish_People%27s_Party_(2019_color).svg",
       "ideology": [
-        "Agrarianism",
-        "Centre",
-        "Pro-EU"
+        "Conservatism",
+        "Social conservatism",
+        "Pro-Europeanism",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Right-wing",
+      "founded": 1990,
+      "coalitionId": "PL-GOV",
+      "leader": "Władysław Kosiniak-Kamysz",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the Tusk III coalition since December 2023.",
+      "seats": 28,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Polish People's Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Polish_People's_Party"
+        },
+        {
+          "title": "Sejm — Wikipedia: 460 seats — Government (Tusk III) 239 (KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15), supported by 4, Opposition 217 (PiS 146, Development Plus 41, Confederation 16, Razem 4, Direct Democracy 4)",
+          "url": "https://en.wikipedia.org/wiki/Sejm"
+        }
+      ]
+    },
+    {
+      "id": "PL-NL",
+      "country": "PL",
+      "shortName": "Lewica",
+      "name": "Nowa Lewica",
+      "nameEn": "New Left",
+      "logo": "party-logos/pl/nl.svg",
+      "sha256": "aa67149682de16cd6528cfc60e7081b729ae22b9dbe8e49312cf6844fefa018e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Lewica_01.svg",
+      "ideology": [
+        "Social democracy",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2021,
+      "coalitionId": "PL-GOV",
+      "leader": "Włodzimierz Czarzasty",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the Tusk III coalition since December 2023.",
+      "seats": 19,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "New Left — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/New_Left_(Poland)"
+        },
+        {
+          "title": "Sejm — Wikipedia: 460 seats — Government (Tusk III) 239 (KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15), supported by 4, Opposition 217 (PiS 146, Development Plus 41, Confederation 16, Razem 4, Direct Democracy 4)",
+          "url": "https://en.wikipedia.org/wiki/Sejm"
+        }
+      ]
+    },
+    {
+      "id": "PL-UC",
+      "country": "PL",
+      "shortName": "Centrum",
+      "name": "Unia Centrum",
+      "nameEn": "Centre Union",
+      "logo": "party-logos/pl/uc.png",
+      "sha256": "63945df7b887c7c161dbb6b12a950132f125669f842e0120e8ff57a44eea5226",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Centrum_parliamentary_circle_logo.png",
+      "licenceNote": "Public-domain logo held as a local English Wikipedia file rather than on Wikimedia Commons: the Unia Centrum mark is below the threshold of originality for copyright, so English Wikipedia hosts it as public domain. Cited to that file page because Commons carries no equivalent. Bundled for identification of the party only.",
+      "ideology": [
+        "Liberalism",
+        "Neoliberalism"
       ],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
-      "founded": 1990,
-      "leader": "Władysław Kosiniak-Kamysz",
-      "leaderTitle": "Party Leader",
+      "founded": 2026,
+      "coalitionId": "PL-GOV",
+      "leader": "Paulina Hennig-Kloska",
+      "leaderTitle": "Leader",
       "inPower": true,
-      "seats": 30,
+      "inExecutive": true,
+      "timeInPower": "Joined the Tusk III governing majority in 2026.",
+      "seats": 15,
       "seatsTotal": 460,
       "chamberName": "Sejm",
-      "noImageReason": "Freely-licensed party logo unavailable — Wikimedia Commons access blocked",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/Polish_People%27s_Party",
       "sources": [
         {
-          "title": "Polish People's Party – Wikipedia (founded 1990, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/Polish_People%27s_Party"
+          "title": "Centre Union — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Centre_Union_(Poland)"
         },
         {
-          "title": "2023 Polish parliamentary election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2023_Polish_parliamentary_election"
+          "title": "Sejm — Wikipedia: 460 seats — Government (Tusk III) 239 (KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15), supported by 4, Opposition 217 (PiS 146, Development Plus 41, Confederation 16, Razem 4, Direct Democracy 4)",
+          "url": "https://en.wikipedia.org/wiki/Sejm"
+        }
+      ]
+    },
+    {
+      "id": "PL-PL2050",
+      "country": "PL",
+      "shortName": "PL2050",
+      "name": "Polska 2050",
+      "nameEn": "Poland 2050",
+      "logo": "party-logos/pl/pl2050.svg",
+      "sha256": "9a91f0e1abf030f71dcd9ad6e07e4d59337723e1f547d0f30a6a014d9201f9b6",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Pl2050.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2020,
+      "coalitionId": "PL-GOV",
+      "leader": "Katarzyna Pełczyńska-Nałęcz",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the Tusk III coalition since December 2023.",
+      "seats": 15,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Poland 2050 — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Poland_2050"
+        },
+        {
+          "title": "Sejm — Wikipedia: 460 seats — Government (Tusk III) 239 (KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15), supported by 4, Opposition 217 (PiS 146, Development Plus 41, Confederation 16, Razem 4, Direct Democracy 4)",
+          "url": "https://en.wikipedia.org/wiki/Sejm"
+        }
+      ]
+    },
+    {
+      "id": "PL-NN",
+      "country": "PL",
+      "shortName": "NN",
+      "name": "Nowa Nadzieja",
+      "nameEn": "New Hope",
+      "logo": "party-logos/pl/nn.svg",
+      "sha256": "54e1fa8d3929916ccdd50c653a61015764cad87c52659c29649c3bed01f55f45",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Nowa_Nadzieja.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Nowa Nadzieja emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Conservatism",
+        "Right-libertarianism",
+        "Right-wing populism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2015,
+      "leader": "Sławomir Mentzen",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "New Hope — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/New_Hope_(Poland)"
+        },
+        {
+          "title": "Sejm — Wikipedia: 460 seats — Government (Tusk III) 239 (KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15), supported by 4, Opposition 217 (PiS 146, Development Plus 41, Confederation 16, Razem 4, Direct Democracy 4)",
+          "url": "https://en.wikipedia.org/wiki/Sejm"
+        }
+      ]
+    },
+    {
+      "id": "PL-RN",
+      "country": "PL",
+      "shortName": "RN",
+      "name": "Ruch Narodowy",
+      "nameEn": "National Movement",
+      "logo": "party-logos/pl/rn.svg",
+      "sha256": "6875b30c56ccc46d029a147340384d591c38a8b30b0f5bece7af83b6a9d6a70f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:National_Movement_(Poland)_logo.svg",
+      "ideology": [
+        "Ultranationalism",
+        "National conservatism",
+        "Social conservatism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2012,
+      "leader": "Krzysztof Bosak",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "National Movement — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/National_Movement_(Poland)"
+        },
+        {
+          "title": "Sejm — Wikipedia: 460 seats — Government (Tusk III) 239 (KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15), supported by 4, Opposition 217 (PiS 146, Development Plus 41, Confederation 16, Razem 4, Direct Democracy 4)",
+          "url": "https://en.wikipedia.org/wiki/Sejm"
+        }
+      ]
+    },
+    {
+      "id": "PL-RAZEM",
+      "country": "PL",
+      "shortName": "Razem",
+      "name": "Partia Razem",
+      "nameEn": "Together Party",
+      "logo": "party-logos/pl/razem.png",
+      "sha256": "18404a91c4913ca8947ef7e16a213ce40d024b5f93e857ec46c429d8ca483dd7",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Razem.png",
+      "ideology": [
+        "Social democracy",
+        "Social liberalism",
+        "Democratic socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2015,
+      "leader": "Adrian Zandberg",
+      "leaderTitle": "Co-leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Together Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Together_Party"
+        },
+        {
+          "title": "Sejm — Wikipedia: 460 seats — Government (Tusk III) 239 (KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15), supported by 4, Opposition 217 (PiS 146, Development Plus 41, Confederation 16, Razem 4, Direct Democracy 4)",
+          "url": "https://en.wikipedia.org/wiki/Sejm"
+        }
+      ]
+    },
+    {
+      "id": "PL-ONRP",
+      "country": "PL",
+      "shortName": "Odnowa",
+      "name": "Odnowa Rzeczypospolitej Polskiej",
+      "nameEn": "Renewal of the Republic of Poland",
+      "logo": "party-logos/pl/onrp.jpg",
+      "sha256": "69cf12a092d6b2415fbd13a85c2f7c6073a023babf5eca0c40802f88cc4ab91f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_Odnowa.jpg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Odnowa Rzeczypospolitej Polskiej emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Moderate conservatism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2021,
+      "leader": "Marcin Ociepa",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 460,
+      "chamberName": "Sejm",
+      "sources": [
+        {
+          "title": "Renewal of the Republic of Poland — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Renewal_of_the_Republic_of_Poland"
+        },
+        {
+          "title": "Sejm — Wikipedia: 460 seats — Government (Tusk III) 239 (KO 156, Polish Coalition 32, The Left 21, Centre Union 15, Poland 2050 15), supported by 4, Opposition 217 (PiS 146, Development Plus 41, Confederation 16, Razem 4, Direct Democracy 4)",
+          "url": "https://en.wikipedia.org/wiki/Sejm"
         }
       ]
     }
