@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 55 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 56 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -105,7 +105,8 @@ forgotten; it is tracked here.
 | 🇬🇪 Georgia | `#1369` | 3 → 4 | 101 / 150 (49 vacant) | **Two of three entries held no seats after 49 opposition mandates were revoked; the three parties that do sit were missing** |
 | 🇮🇳 India | `#1370` | 4 → 43 | 536 / 543 | **Thirty-nine seated parties missing; the TMC had lost 20 MPs to a new NDA party and the DMK's count was its alliance's** |
 | 🇮🇱 Israel | `#1374` | 3 → 15 | **120 / 120** | **Ten factions missing; the coalition and the government had come apart in 2025 and neither was modelled** |
-| 🇮🇶 Iraq | *(see PR)* | 0 → 41 | 320 / 329 (9 minority-quota) | **Absent entirely; a 329-seat chamber elected in November 2025 with 41 seated lists** |
+| 🇮🇶 Iraq | `#1375` | 0 → 41 | 320 / 329 (9 minority-quota) | **Absent entirely; a 329-seat chamber elected in November 2025 with 41 seated lists** |
+| 🇮🇷 Iran | *(see PR)* | 0 → 13 | 31 / 290 (254 independents) | **Absent entirely; three wrong leaders caught, including one dead since 2017** |
 
 ---
 
@@ -2107,6 +2108,56 @@ All eleven were montage-verified; the twelfth candidate was the green star above
 
 ---
 
+### 🇮🇷 Iran — audited 2026-09-12
+
+**Iran was not in the dataset at all.** Its Islamic Consultative Assembly has 290 seats, of which
+**13 registered parties hold 31**; **254 deputies sit as independents** and 5 seats are vacant.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-309 | **S1** | coverage | **Iran absent from `POLITICAL_PARTIES`** | **13 parties, 31 / 290** | The Assembly's own by-party breakdown |
+| PP-310 | **S1** | `leader` | — | **three wrong leaders caught before they shipped** | See below |
+| PP-311 | **S2** | `inPower` | — | **12 of 13 in power, none in the executive** | The Assembly's by-coalition view: Government 43, confidence and supply 119, opposition 79 |
+
+**Three leaders were caught before they shipped, and one of them was a dead man.** A naive "first
+leader-ish infobox field" read — the approach that works for most countries — produces all three:
+
+* **Executives of Construction Party** → `leader1_name = Akbar Hashemi Rafsanjani`, whose own field
+  is labelled *"Spiritual leader"* and annotated **`(deceased)`**. Rafsanjani **died in 2017**. The
+  party's actual General Secretary is **Hossein Marashi**. This is the deceased-leader defect the
+  sweep has now hit in Azerbaijan (a man dead since 1878) and here.
+* **Front of Islamic Revolution Stability** → `leader1_name = Mojtaba Khamenei`, whose field is
+  labelled *"Political and Financial Patron"*. He is the Supreme Leader's son, not the party's
+  officer — and naming him its leader would assert something materially false. The infobox's actual
+  officer rows are **inside an HTML comment**, deliberately withdrawn by editors as stale, so the
+  party ships with **no leader at all** rather than a guess.
+* **Progress and Justice Population** → the figurehead reading gives Speaker Mohammad Bagher
+  Ghalibaf; the party's own General Secretary is **Morteza Kamel Navvab**, which is the office this
+  field records everywhere else in the dataset.
+
+**Iran is in scope on the Azerbaijan pattern, not the Bahrain one.** Bahrain was removed because
+**no** party holds a seat there. Iran's chamber genuinely seats 13 registered parties; the other 254
+deputies are independents, exactly as Azerbaijan's 44 and India's 4 are, and independents are never
+modelled as parties.
+
+**Twelve of the thirteen are `inPower`, and none is `inExecutive`.** The Assembly's own
+by-coalition view splits the chamber into a **Government** bloc of 43 (Voice of the Nation,
+supporting President Masoud Pezeshkian), a **confidence-and-supply** bloc of 119 (the Coalition
+Council of Islamic Revolution Forces and the Combatant Clergy Association) and an **opposition** of
+79 (the Front of Islamic Revolution Stability). The four reformist parties sit in the first, eight
+principlist parties in the second, and Paydari alone in the third. No source records any of these
+parties holding a ministry, so `inExecutive` is `false` throughout and each entry's `timeInPower`
+says which bloc it sits in rather than claiming office.
+
+**Five are filed `other`** — their articles carry an ideology but no left-right position.
+
+Ten logos are bundled (seven non-free English-Wikipedia files, declared; three PD), all
+montage-verified as the parties' own Persian wordmarks. Three parties — the Development and Justice
+Party, the YEKTA Front and the Islamic Association of Physicians — have no logo parameter in their
+infoboxes and no Commons or Wikidata file, so they ship with a `noImageReason`.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2318,7 +2369,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `HT` Haiti
 - [ ] `HN` Honduras
 - [x] `IN` India — merged
-- [ ] `IR` Iran
+- [x] `IR` Iran — merged
 - [x] `IQ` Iraq — merged
 - [x] `IL` Israel — merged
 - [ ] `JM` Jamaica

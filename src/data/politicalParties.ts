@@ -15451,6 +15451,451 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "IR": [
+    {
+      "id": "IR-FIRS",
+      "country": "IR",
+      "shortName": "Paydari",
+      "name": "جبههٔ پایداری انقلاب اسلامی",
+      "nameEn": "Front of Islamic Revolution Stability",
+      "logo": "party-logos/ir/firs.svg",
+      "sha256": "fddb3eec74ad596fcbd174de9bcdcb3f65d4928b14295a7bb07616bc8c724057",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Front_of_Islamic_Revolution_Stability_logo.svg",
+      "licenceNote": "Non-free. Front of Islamic Revolution Stability's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Islamic fundamentalism (Iranian)",
+        "Wilāyat al-Faqīh (Absolute)",
+        "Mahdism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2011,
+      "inPower": false,
+      "seats": 15,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Front of Islamic Revolution Stability — Wikipedia (infobox: founded 2011)",
+          "url": "https://en.wikipedia.org/wiki/Front_of_Islamic_Revolution_Stability"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-ICP",
+      "country": "IR",
+      "shortName": "ICP",
+      "name": "حزب مؤتلفه اسلامی",
+      "nameEn": "Islamic Coalition Party",
+      "logo": "party-logos/ir/icp.svg",
+      "sha256": "d7d1d999fda6e85b0ec3a59920577b5015dd2688857b17ad9cecc655e7e10575",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Islamic_Coalition_Party_logo.svg",
+      "licenceNote": "Non-free. Islamic Coalition Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 1963,
+      "leader": "Mohammad-Ali Amani",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the principlist bloc the Assembly records as giving the government confidence and supply; it holds no ministry.",
+      "seats": 3,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Islamic Coalition Party — Wikipedia (infobox: founded 1963; Secretary-General Mohammad-Ali Amani; aligned with {{plainlist| *Front of Followers of the Line of the Imam and)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Coalition_Party"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-PJPII",
+      "country": "IR",
+      "shortName": "PJPII",
+      "name": "جمعیت پیشرفت و عدالت ایران اسلامی",
+      "nameEn": "Progress and Justice Population of Islamic Iran",
+      "logo": "party-logos/ir/pjpii.png",
+      "sha256": "084c353a26d286f0da59f2e172f9de435d24e12e2e89d0bf080a23ced87e2257",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:JP%26EIE.png",
+      "licenceNote": "Non-free. Progress and Justice Population of Islamic Iran's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Conservatism (Iranian)"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2008,
+      "leader": "Morteza Kamel Navvab",
+      "leaderTitle": "General Secretary",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the principlist bloc the Assembly records as giving the government confidence and supply; it holds no ministry.",
+      "seats": 2,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Progress and Justice Population of Islamic Iran — Wikipedia (infobox: founded 2008; General Secretary Morteza Kamel Navvab)",
+          "url": "https://en.wikipedia.org/wiki/Progress_and_Justice_Population_of_Islamic_Iran"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-SPIR",
+      "country": "IR",
+      "shortName": "Rahpouyan",
+      "name": "جمعیت رهپویان انقلاب اسلامی",
+      "nameEn": "Society of Pathseekers of the Islamic Revolution",
+      "logo": "party-logos/ir/spir.svg",
+      "sha256": "1e1db268aa74ab5ce228d0d6f0593b0c3d2da84ee8752d6ca8978db4b6033759",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Society_of_Pathseekers_of_the_Islamic_Revolution_logo.svg",
+      "licenceNote": "Non-free. Society of Pathseekers of the Islamic Revolution's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 2008,
+      "leader": "Malek Shariati",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the principlist bloc the Assembly records as giving the government confidence and supply; it holds no ministry.",
+      "seats": 2,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Society of Pathseekers of the Islamic Revolution — Wikipedia (infobox: founded 2008; aligned with Principlists)",
+          "url": "https://en.wikipedia.org/wiki/Society_of_Pathseekers_of_the_Islamic_Revolution"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-AFIL",
+      "country": "IR",
+      "shortName": "AFIL",
+      "name": "مجمع نیروهای خط امام",
+      "nameEn": "Assembly of the Forces of Imam's Line",
+      "logo": "party-logos/ir/afil.png",
+      "sha256": "7d17858b2ac86ebcacb00eb8130a731c2cffded7132292ac578e96f5245f8fdb",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Kelogo.png",
+      "licenceNote": "Non-free. Assembly of the Forces of Imam's Line's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1991,
+      "leader": "Hadi Khamenei",
+      "leaderTitle": "General Secretary",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the Voice of the Nation bloc, which the Assembly records as the government side supporting President Masoud Pezeshkian. No source records this party holding a ministry.",
+      "seats": 1,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Assembly of the Forces of Imam's Line — Wikipedia (infobox: founded 1991; General Secretary Hadi Khamenei; aligned with Reformists)",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_the_Forces_of_Imam's_Line"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-DJP",
+      "country": "IR",
+      "shortName": "DJP",
+      "name": "حزب توسعه و عدالت",
+      "nameEn": "Development and Justice Party",
+      "noImageReason": "Searched Wikidata (no P154 logo on this party's item), Wikimedia Commons (no emblem file under its English or Persian name) and the party's own English Wikipedia article, whose infobox carries no logo parameter at all. No usable emblem could be sourced.",
+      "ideology": [
+        "Conservatism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2007,
+      "leader": "Mehdi Vakilpour",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the principlist bloc the Assembly records as giving the government confidence and supply; it holds no ministry.",
+      "seats": 1,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Development and Justice Party — Wikipedia (infobox: founded 2007; Secretary-General Mehdi Vakilpour; aligned with )",
+          "url": "https://en.wikipedia.org/wiki/Development_and_Justice_Party"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-UIIPP",
+      "country": "IR",
+      "shortName": "Ettehad-e Mellat",
+      "name": "حزب اتحاد ملت ایران اسلامی",
+      "nameEn": "Union of Islamic Iran People Party",
+      "logo": "party-logos/ir/uiipp.png",
+      "sha256": "764c4979059d2b587de6c37603ac31f4e58a89fc3d05e0ca5f5f3b985102abe5",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Ettehad_Mellat_Party.png",
+      "licenceNote": "Non-free. Union of Islamic Iran People Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Liberalism (Iranian)",
+        "Islamic liberalism",
+        "Islamic democracy"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2015,
+      "leader": "Azar Mansouri",
+      "leaderTitle": "General Secretary",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the Voice of the Nation bloc, which the Assembly records as the government side supporting President Masoud Pezeshkian. No source records this party holding a ministry.",
+      "seats": 1,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Union of Islamic Iran People Party — Wikipedia (infobox: founded 2015; General Secretary Azar Mansouri; aligned with Reformists)",
+          "url": "https://en.wikipedia.org/wiki/Union_of_Islamic_Iran_People_Party"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-IAPI",
+      "country": "IR",
+      "shortName": "IAPI",
+      "name": "جامعه اسلامی پزشکان ایران",
+      "nameEn": "Islamic Association of Physicians of Iran",
+      "noImageReason": "Searched Wikidata (no P154 logo on this party's item), Wikimedia Commons (no emblem file under its English or Persian name) and the party's own English Wikipedia article, whose infobox carries no logo parameter at all. No usable emblem could be sourced.",
+      "ideology": [
+        "Conservatism (Iranian)"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "leader": "Hossein-Ali Shahriyari",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the principlist bloc the Assembly records as giving the government confidence and supply; it holds no ministry.",
+      "seats": 1,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Islamic Association of Physicians of Iran — Wikipedia (infobox; Secretary-General Hossein-Ali Shahriyari; aligned with * Traditional Right ** Islamic Aligned Organizations)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Association_of_Physicians_of_Iran"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-SDIR",
+      "country": "IR",
+      "shortName": "Isargaran",
+      "name": "جمعیت ایثارگران انقلاب اسلامی",
+      "nameEn": "Society of Devotees of the Islamic Revolution",
+      "logo": "party-logos/ir/sdir.svg",
+      "sha256": "bdfa0b7a5f18fc0553b6c2a14aba02a0c1ade82f335ec7381bbdd3742d614666",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Society_of_Devotees_of_the_Islamic_Revolution_logo.svg",
+      "licenceNote": "Non-free. Society of Devotees of the Islamic Revolution's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Conservatism (Iranian)",
+        "Theocracy (Iranian)",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1995,
+      "leader": "Mohammad Javad Ameri",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the principlist bloc the Assembly records as giving the government confidence and supply; it holds no ministry.",
+      "seats": 1,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Society of Devotees of the Islamic Revolution — Wikipedia (infobox: founded 1995; Secretary-General Mohammad Javad Ameri; aligned with Front of Transformationalist Principlists / Coordination Cou)",
+          "url": "https://en.wikipedia.org/wiki/Society_of_Devotees_of_the_Islamic_Revolution"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-ISE",
+      "country": "IR",
+      "shortName": "ISE",
+      "name": "جامعه اسلامی مهندسین",
+      "nameEn": "Islamic Society of Engineers",
+      "logo": "party-logos/ir/ise.png",
+      "sha256": "e660e4d4e6035d9f652c40537a585e47c6daa7c9e7ee78ac505ce3419f973232",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_Islamic_Society_of_Engineers.png",
+      "licenceNote": "Non-free. Islamic Society of Engineers's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Conservatism",
+        "Islamism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1988,
+      "leader": "Mohammad Reza Bahonar",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the principlist bloc the Assembly records as giving the government confidence and supply; it holds no ministry.",
+      "seats": 1,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Islamic Society of Engineers — Wikipedia (infobox: founded 1988; Secretary-General Mohammad Reza Bahonar; aligned with Front of Followers of the Line of the Imam and the Leader)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Society_of_Engineers"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-ECP",
+      "country": "IR",
+      "shortName": "Kargozaran",
+      "name": "حزب کارگزاران سازندگی ایران",
+      "nameEn": "Executives of Construction Party",
+      "logo": "party-logos/ir/ecp.svg",
+      "sha256": "6eb124a8c211ccb45de304a71be22f1b53781368d41769d5cefb01c5ed62f92a",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Executives_of_Construction_Party_logo.svg",
+      "licenceNote": "Non-free. Executives of Construction Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Reformism",
+        "Technocracy",
+        "Economic liberalism",
+        "Moderate conservatism",
+        "Islamic democracy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1996,
+      "leader": "Hossein Marashi",
+      "leaderTitle": "General Secretary",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the Voice of the Nation bloc, which the Assembly records as the government side supporting President Masoud Pezeshkian. No source records this party holding a ministry.",
+      "seats": 1,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Executives of Construction Party — Wikipedia (infobox: founded 1996; General Secretary Hossein Marashi; aligned with Pragmatists / Reformists)",
+          "url": "https://en.wikipedia.org/wiki/Executives_of_Construction_Party"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-MDP",
+      "country": "IR",
+      "shortName": "MDP",
+      "name": "حزب اعتدال و توسعه",
+      "nameEn": "Moderation and Development Party",
+      "logo": "party-logos/ir/mdp.png",
+      "sha256": "cab7b070475fa683b77c5d7ffc92654e75f512197418dfb033e0bda33efac17c",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_MDP.png",
+      "licenceNote": "Non-free. Moderation and Development Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Moderatism",
+        "Pragmatism",
+        "Idealism",
+        "Islamic democracy",
+        "Velâyat-e Faqih"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1999,
+      "leader": "Mohammad Bagher Nobakht",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the Voice of the Nation bloc, which the Assembly records as the government side supporting President Masoud Pezeshkian. No source records this party holding a ministry.",
+      "seats": 1,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "Moderation and Development Party — Wikipedia (infobox: founded 1999; Secretary-General Mohammad Bagher Nobakht; aligned with Pragmatists / Reformists)",
+          "url": "https://en.wikipedia.org/wiki/Moderation_and_Development_Party"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    },
+    {
+      "id": "IR-YEKTA",
+      "country": "IR",
+      "shortName": "YEKTA",
+      "name": "جبهه یکتا",
+      "nameEn": "YEKTA Front",
+      "noImageReason": "Searched Wikidata (no P154 logo on this party's item), Wikimedia Commons (no emblem file under its English or Persian name) and the party's own English Wikipedia article, whose infobox carries no logo parameter at all. No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 2015,
+      "leader": "Hamid-Reza Haji Babaee",
+      "leaderTitle": "General Secretary",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the principlist bloc the Assembly records as giving the government confidence and supply; it holds no ministry.",
+      "seats": 1,
+      "seatsTotal": 290,
+      "chamberName": "Islamic Consultative Assembly",
+      "sources": [
+        {
+          "title": "YEKTA Front — Wikipedia (infobox: founded 2015; General Secretary Hamid-Reza Haji Babaee; aligned with * Principlists ** Deviant current)",
+          "url": "https://en.wikipedia.org/wiki/YEKTA_Front"
+        },
+        {
+          "title": "Islamic Consultative Assembly — Wikipedia (by party: 13 registered parties hold 31 of the 290 seats, 254 deputies sit as independents and 5 seats are vacant; by coalition: Government 43 — Voice of the Nation; confidence and supply 119 — CCIRF 106 and the Combatant Clergy Association 13; opposition 79 — the Front of Islamic Revolution Stability)",
+          "url": "https://en.wikipedia.org/wiki/Islamic_Consultative_Assembly"
+        }
+      ]
+    }
+  ],
   "IT": [
     {
       "id": "IT-FDI",
