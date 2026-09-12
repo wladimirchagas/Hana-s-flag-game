@@ -170,6 +170,18 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "The Sumar group's 26 seats are shared between Movimiento Sumar, Catalunya en Comú, Izquierda Unida, Más Madrid, Compromís and Més per Mallorca. ERC, EH Bildu, the PNV, the BNG and Podemos support the government without holding cabinet office, so they are recorded in power but outside this coalition.",
   },
+  "DK-GOV": {
+    id: "DK-GOV",
+    name: "Regeringen Frederiksen III",
+    nameEn: "Frederiksen III cabinet",
+    kind: "coalition",
+    memberPartyIds: ["DK-S", "DK-SF", "DK-M", "DK-RV"],
+    source: {
+      title: "Folketing — Wikipedia: the Frederiksen III cabinet holds 82 of 179 seats — Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10",
+      url: "https://en.wikipedia.org/wiki/Folketing",
+    },
+    note: "A minority government. The Red–Green Alliance, the Alternative and four North Atlantic members give it confidence and supply without holding cabinet office.",
+  },
   "FR-GOV": {
     id: "FR-GOV",
     name: "Bloc central",
@@ -3077,33 +3089,82 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "DK-S",
       "country": "DK",
       "shortName": "S",
-      "name": "Social Democrats",
+      "name": "Socialdemokratiet",
+      "nameEn": "Social Democrats",
       "logo": "party-logos/dk/s.svg",
       "sha256": "7cf846002ac715037b380a2dfd25362db13548ac080cc8edbdc744fb643e82af",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Socialdemokratiet_symbol_(2014%E2%80%93present).svg",
       "ideology": [
-        "Social democracy",
-        "Progressivism",
-        "Welfare state"
+        "Social democracy"
       ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 1871,
+      "coalitionId": "DK-GOV",
       "leader": "Mette Frederiksen",
-      "leaderTitle": "Party Leader & Prime Minister",
+      "leaderTitle": "Leader",
       "inPower": true,
       "inExecutive": true,
-      "seats": 52,
+      "timeInPower": "In government since 27 June 2019; the Frederiksen III cabinet took office after the 24 March 2026 election.",
+      "seats": 38,
       "seatsTotal": 179,
       "chamberName": "Folketing",
       "sources": [
         {
-          "title": "Social Democrats (Denmark) – Wikipedia (founded 1871, ideology, leadership)",
+          "title": "Social Democrats — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Social_Democrats_(Denmark)"
         },
         {
-          "title": "2022 Danish general election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
+        },
+        {
+          "title": "Prime Minister of Denmark — Wikipedia (Mette Frederiksen of the Social Democrats, in office since 27 June 2019)",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Denmark"
+        }
+      ]
+    },
+    {
+      "id": "DK-SF",
+      "country": "DK",
+      "shortName": "SF",
+      "name": "Grønne Venstre",
+      "nameEn": "Green Left",
+      "logo": "party-logos/dk/sf.svg",
+      "sha256": "10f4f5458a5ac9ed03d1cfbde6e235e11aa04245d6b72cf3b557a69af1e8d121",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SF_-_Socialistiske_Folkeparti.svg",
+      "ideology": [
+        "Democratic socialism",
+        "Popular socialism",
+        "Green politics"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1959,
+      "previousNames": [
+        {
+          "name": "Socialistisk Folkeparti (SF)",
+          "nameEn": "Socialist People's Party",
+          "years": "1959–2025"
+        }
+      ],
+      "coalitionId": "DK-GOV",
+      "leader": "Pia Olsen Dyhr",
+      "leaderTitle": "Chairperson",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the Frederiksen III coalition formed after the 24 March 2026 election.",
+      "seats": 20,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Green Left — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Green_Left_(Denmark)"
+        },
+        {
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
         }
       ]
     },
@@ -3112,132 +3173,31 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "DK",
       "shortName": "V",
       "name": "Venstre",
+      "nameEn": "Venstre, Denmark's Liberal Party",
       "logo": "party-logos/dk/v.svg",
       "sha256": "9665f3083f5d21dbf8012366ca0f1d886aa8695b245773bb1092bccf4014e191",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Venstre_logo_(2019%E2%80%93present).svg",
       "ideology": [
-        "Conservatism",
-        "Liberalism",
-        "Free-market economy"
+        "Conservative liberalism",
+        "Agrarianism"
       ],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
-      "founded": 1872,
-      "leader": "Jakob Ellemann Jensen",
-      "leaderTitle": "Party Leader",
+      "founded": 1870,
+      "leader": "Troels Lund Poulsen",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 43,
+      "seats": 18,
       "seatsTotal": 179,
       "chamberName": "Folketing",
       "sources": [
         {
-          "title": "Venstre (Denmark) – Wikipedia (founded 1872, ideology, leadership)",
+          "title": "Venstre, Denmark's Liberal Party — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Venstre_(Denmark)"
         },
         {
-          "title": "2022 Danish general election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
-        }
-      ]
-    },
-    {
-      "id": "DK-SF",
-      "country": "DK",
-      "shortName": "SF",
-      "name": "Socialist People's Party",
-      "logo": "party-logos/dk/sf.svg",
-      "sha256": "10f4f5458a5ac9ed03d1cfbde6e235e11aa04245d6b72cf3b557a69af1e8d121",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SF_-_Socialistiske_Folkeparti.svg",
-      "ideology": [
-        "Democratic socialism",
-        "Left-wing",
-        "Progressivism"
-      ],
-      "ideologyPosition": "left",
-      "positionRaw": "Left",
-      "founded": 1966,
-      "leader": "Pia Olsen Dyhr",
-      "leaderTitle": "Party Leader",
-      "inPower": true,
-      "inExecutive": false,
-      "seats": 15,
-      "seatsTotal": 179,
-      "chamberName": "Folketing",
-      "sources": [
-        {
-          "title": "Socialist People's Party (Denmark) – Wikipedia (founded 1966, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/Socialist_People%27s_Party_(Denmark)"
-        },
-        {
-          "title": "2022 Danish general election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
-        }
-      ]
-    },
-    {
-      "id": "DK-Å",
-      "country": "DK",
-      "shortName": "Å",
-      "name": "The Alternatives",
-      "logo": "party-logos/dk/logo.svg",
-      "sha256": "d82f15087c0317330cbf313017e8a362ca7a85eb953f0ff1cf96054793c01367",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Alternativet_logo_2025.svg",
-      "ideology": [
-        "Centrism",
-        "Environmentalism",
-        "Anti-establishment"
-      ],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre",
-      "founded": 2013,
-      "leader": "Uffe Elbæk",
-      "leaderTitle": "Party Leader",
-      "inPower": false,
-      "seats": 13,
-      "seatsTotal": 179,
-      "chamberName": "Folketing",
-      "sources": [
-        {
-          "title": "The Alternatives (Denmark) – Wikipedia (founded 2013, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/The_Alternatives_(Denmark)"
-        },
-        {
-          "title": "2022 Danish general election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
-        }
-      ]
-    },
-    {
-      "id": "DK-M",
-      "country": "DK",
-      "shortName": "M",
-      "name": "Moderates",
-      "logo": "party-logos/dk/m.svg",
-      "sha256": "968aa0952b2fcfae5405aaf163f062f4f0ff67d7b3e2ae60b5fca5bffea0b9f5",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Moderaterne_listebogstav_logo.svg",
-      "ideology": [
-        "Conservatism",
-        "Centrist conservatism",
-        "Pragmatism"
-      ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 2013,
-      "leader": "Lars Løkke Rasmussen",
-      "leaderTitle": "Party Leader",
-      "inPower": true,
-      "inExecutive": false,
-      "seats": 12,
-      "seatsTotal": 179,
-      "chamberName": "Folketing",
-      "sources": [
-        {
-          "title": "Moderates (Denmark) – Wikipedia (founded 2013, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/Moderates_(Denmark)"
-        },
-        {
-          "title": "2022 Danish general election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
         }
       ]
     },
@@ -3245,65 +3205,313 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "DK-DF",
       "country": "DK",
       "shortName": "DF",
-      "name": "Danish People's Party",
+      "name": "Dansk Folkeparti",
+      "nameEn": "Danish People's Party",
       "logo": "party-logos/dk/df.svg",
       "sha256": "a99320bee00063f3ab8895ec822527b75966cbd2dbc8923a6db5301aa06024a9",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Dansk_Folkeparti_new_small_logo_10_2023_positive.svg",
       "ideology": [
-        "Right-wing populism",
+        "Danish nationalism",
         "National conservatism",
-        "Euroscepticism"
+        "Right-wing populism"
       ],
-      "ideologyPosition": "right",
-      "positionRaw": "Right-wing",
+      "ideologyPosition": "far-right",
+      "positionRaw": "Right-wing to far-right",
       "founded": 1995,
       "leader": "Morten Messerschmidt",
-      "leaderTitle": "Party Leader",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 8,
+      "seats": 16,
       "seatsTotal": 179,
       "chamberName": "Folketing",
       "sources": [
         {
-          "title": "Danish People's Party – Wikipedia (founded 1995, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/Danish_People%27s_Party"
+          "title": "Danish People's Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Danish_People's_Party"
         },
         {
-          "title": "2022 Danish general election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
         }
       ]
     },
     {
-      "id": "DK-NY",
+      "id": "DK-LA",
       "country": "DK",
-      "shortName": "NY",
-      "name": "New Right",
-      "logo": "party-logos/dk/ny.png",
-      "sha256": "59793bfb2d317ac1a2aae2b16886db576d4f68fb928976b4e39e743f3454b1a0",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Nye_Borgerlige.png",
+      "shortName": "LA",
+      "name": "Liberal Alliance",
+      "logo": "party-logos/dk/la.svg",
+      "sha256": "fcabf549768749a31a0bf6d17fd9a251f09074b9251c86c35aa601a1699b3c91",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Liberal_Alliance_(Denmark).svg",
       "ideology": [
-        "Right-wing populism",
-        "Libertarianism",
-        "Immigration skepticism"
+        "Classical liberalism",
+        "Right-libertarianism"
       ],
-      "ideologyPosition": "far-right",
-      "positionRaw": "Far-right",
-      "founded": 2017,
-      "leader": "Rasmus Paludan",
-      "leaderTitle": "Party Leader",
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2007,
+      "previousNames": [
+        {
+          "name": "Ny Alliance",
+          "nameEn": "New Alliance",
+          "years": "2007–2008"
+        }
+      ],
+      "leader": "Alex Vanopslagh",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 4,
+      "seats": 15,
       "seatsTotal": 179,
       "chamberName": "Folketing",
       "sources": [
         {
-          "title": "New Right (Denmark) – Wikipedia (founded 2017, ideology, leadership)",
-          "url": "https://en.wikipedia.org/wiki/New_Right_(Denmark)"
+          "title": "Liberal Alliance — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Liberal_Alliance_(Denmark)"
         },
         {
-          "title": "2022 Danish general election – Wikipedia (seat distribution)",
-          "url": "https://en.wikipedia.org/wiki/2022_Danish_general_election"
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
+        }
+      ]
+    },
+    {
+      "id": "DK-M",
+      "country": "DK",
+      "shortName": "M",
+      "name": "Moderaterne",
+      "nameEn": "Moderates",
+      "logo": "party-logos/dk/m.svg",
+      "sha256": "968aa0952b2fcfae5405aaf163f062f4f0ff67d7b3e2ae60b5fca5bffea0b9f5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Moderaterne_listebogstav_logo.svg",
+      "ideology": [
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2022,
+      "coalitionId": "DK-GOV",
+      "leader": "Lars Løkke Rasmussen",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the Frederiksen III coalition formed after the 24 March 2026 election.",
+      "seats": 14,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Moderates — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Moderates_(Denmark)"
+        },
+        {
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
+        }
+      ]
+    },
+    {
+      "id": "DK-KF",
+      "country": "DK",
+      "shortName": "KF",
+      "name": "Det Konservative Folkeparti",
+      "nameEn": "Conservative People's Party",
+      "logo": "party-logos/dk/kf.svg",
+      "sha256": "0cd59b5117fd0d94fe0a4fa8936b71820fd518616c2f2da30bfcccf6925caf5e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Det_Konservative_Folkepartis_logo.svg",
+      "ideology": [
+        "Conservatism",
+        "Liberal conservatism",
+        "Green conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1916,
+      "leader": "Mona Juul",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 13,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Conservative People's Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Conservative_People's_Party_(Denmark)"
+        },
+        {
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
+        }
+      ]
+    },
+    {
+      "id": "DK-EL",
+      "country": "DK",
+      "shortName": "Ø",
+      "name": "Enhedslisten – De Rød-Grønne",
+      "nameEn": "Red–Green Alliance",
+      "logo": "party-logos/dk/el.svg",
+      "sha256": "666047ac5d7bf9a89d9ff559026a4b46726fc4fe7df1e085cd63b7f5bad89f9a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Enhedslisten_logo_(2017%E2%80%93present).svg",
+      "ideology": [
+        "Socialism",
+        "Eco-socialism",
+        "Anti-capitalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 1989,
+      "leader": "Pelle Dragsted",
+      "leaderTitle": "Political spokesperson",
+      "inPower": true,
+      "timeInPower": "Gives the Frederiksen III government confidence and supply without holding cabinet office.",
+      "seats": 11,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Red–Green Alliance — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Red%E2%80%93Green_Alliance_(Denmark)"
+        },
+        {
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
+        }
+      ]
+    },
+    {
+      "id": "DK-RV",
+      "country": "DK",
+      "shortName": "B",
+      "name": "Radikale Venstre",
+      "nameEn": "Danish Social Liberal Party",
+      "logo": "party-logos/dk/rv.svg",
+      "sha256": "6caa2f50cce09b781491513ebd4ef90fbff8a5591830b8f8e76f63cacd0a61fe",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Danish_Social_Liberal_Party_(2025).svg",
+      "ideology": [
+        "Social liberalism",
+        "Green politics"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1905,
+      "coalitionId": "DK-GOV",
+      "leader": "Martin Lidegaard",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the Frederiksen III coalition formed after the 24 March 2026 election.",
+      "seats": 10,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Danish Social Liberal Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Danish_Social_Liberal_Party"
+        },
+        {
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
+        }
+      ]
+    },
+    {
+      "id": "DK-DD",
+      "country": "DK",
+      "shortName": "DD",
+      "name": "Danmarksdemokraterne",
+      "nameEn": "Denmark Democrats",
+      "logo": "party-logos/dk/dd.svg",
+      "sha256": "fb568857fd931d434698a963a689ed57cf6b736bc5af8e62d84e257c6dcfec06",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Danmarksdemokraterne_2024_logo.svg",
+      "ideology": [
+        "National conservatism",
+        "Right-wing populism",
+        "Agrarianism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2022,
+      "leader": "Jens Henrik Thulesen Dahl",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 10,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Denmark Democrats — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Denmark_Democrats"
+        },
+        {
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
+        }
+      ]
+    },
+    {
+      "id": "DK-Å",
+      "country": "DK",
+      "shortName": "Å",
+      "name": "Alternativet",
+      "nameEn": "The Alternative",
+      "logo": "party-logos/dk/alt.svg",
+      "sha256": "d82f15087c0317330cbf313017e8a362ca7a85eb953f0ff1cf96054793c01367",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Alternativet_logo_2025.svg",
+      "ideology": [
+        "Green politics",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2013,
+      "leader": "Franciska Rosenkilde",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "Gives the Frederiksen III government confidence and supply without holding cabinet office.",
+      "seats": 5,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "The Alternative — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/The_Alternative_(Denmark)"
+        },
+        {
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
+        }
+      ]
+    },
+    {
+      "id": "DK-BP",
+      "country": "DK",
+      "shortName": "BP",
+      "name": "Borgernes Parti",
+      "nameEn": "Citizens' Party",
+      "logo": "party-logos/dk/bp.svg",
+      "sha256": "1e0582cb637d55086fe18ddec68d7947da89745e1945f752ee29e158bd8c5710",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Borgernes_Parti_logo.svg",
+      "ideology": [
+        "Right-wing populism",
+        "Anti-immigration"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2024,
+      "leader": "Lars Boje Mathiesen",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 179,
+      "chamberName": "Folketing",
+      "sources": [
+        {
+          "title": "Citizens' Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Citizens'_Party_(Denmark)"
+        },
+        {
+          "title": "Folketing — Wikipedia: 179 seats elected 24 March 2026 — Government (Frederiksen III) 82 (Social Democrats 38, Green Left 20, Moderates 14, Social Liberals 10); supported by 20 (Red–Green Alliance 11, Alternative 5, and four North Atlantic members); Opposition 77 (Venstre 18, Danish People's 16, Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents)",
+          "url": "https://en.wikipedia.org/wiki/Folketing"
         }
       ]
     }

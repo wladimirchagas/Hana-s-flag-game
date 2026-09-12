@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 36 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 37 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -82,6 +82,7 @@ forgotten; it is tracked here.
 | 🇧🇪 Belgium | `#1347` | 9 → 12 | 149 / 150 | **WRONG — two parties under names they dropped** |
 | 🇳🇴 Norway | `#1348` | 9 → 9 | **169 / 169** | **IMPOSSIBLE TOTAL — 191 seats in a 169-seat Storting** |
 | 🇸🇪 Sweden | `#1349` | 4 → 11 | **349 / 349** | **WRONG — largest party understated by 39 seats** |
+| 🇩🇰 Denmark | `#1350` | 7 → 12 | 171 / 179 | **FABRICATED PARTY — 50 seats for one that does not exist** |
 
 ---
 
@@ -1307,6 +1308,36 @@ the sixth country in this sweep to reconcile **exactly**.
 
 ---
 
+### 🇩🇰 Denmark — audited 2026-09-12
+
+Denmark's headline defect was already fixed during the 2026-09-12 rule change: **`DK-F` "Free
+Democrats", credited with 50 of 179 seats, is a party that does not exist** — its cited Wikipedia
+article is missing — and removing it dropped Denmark's impossible **197-of-179** total to 147. This
+audit finishes the country on the 24 March 2026 election.
+
+The Folketing: **Government (Frederiksen III) 82** — Social Democrats 38, Green Left 20, Moderates
+14, Social Liberals 10 — **supported by 20**, **Opposition 77** — Venstre 18, Danish People's 16,
+Liberal Alliance 15, Conservatives 13, Denmark Democrats 10, Citizens' 1, 4 independents.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-190 | **S1** | `leader` | Nye Borgerlige led by **Rasmus Paludan** | n/a — the party no longer sits | Paludan leads **Stram Kurs**, a different party entirely. A leader attached to the wrong party, as in Colombia and the Netherlands |
+| PP-191 | **S1** | `leader` | Venstre led by **Jakob Ellemann-Jensen**; Alternativet by **Uffe Elbæk** | **Troels Lund Poulsen**; **Franciska Rosenkilde** | Ellemann-Jensen left politics in 2023; Elbæk stood down in 2020 |
+| PP-192 | **S1** | party identity | **SF — Socialistisk Folkeparti** | **Grønne Venstre (Green Left)** | The party renamed in 2025; the old name is preserved in `previousNames` |
+| PP-193 | **S1** | `seats` | S 52, V 43, SF 15, Å 13, M 12, DF 8, NY 4 | **S 38, Green Left 20, V 18, DF 16, LA 15, M 14, KF 13, Ø 11, B 10, DD 10, Å 5, BP 1** | The Folketing's own composition after the 24 March 2026 election |
+| PP-194 | **S1** | coverage | 7 parties (one fictitious), 147 of 179 | **12 parties, 171 of 179** | Six seated parties were absent, including the **Liberal Alliance** (15), the **Conservatives** (13) and the **Red–Green Alliance** (11) |
+| PP-195 | **S2** | `inPower` | S, SF and M in power; none in the executive | **S, Green Left, Moderates and Social Liberals in the executive**; the Red–Green Alliance and the Alternative in power on confidence and supply | The Frederiksen III cabinet |
+| PP-196 | **S2** | `founded` | Å **2013** ✓, NY 2017 | Alternativet 2013 confirmed; Citizens' Party **2024**, Denmark Democrats **2022** | party infoboxes |
+| PP-197 | **S4** | logo hygiene | **three stray `.sha256` text files and four duplicate/orphan logos** in `public/party-logos/dk/` | removed | Not images; they were being shipped to users' browsers as part of the static site — the same defect found in Chile and Colombia |
+| PP-198 | **S3** | coalitions | none | **`DK-GOV`** (Frederiksen III, 82 seats — a minority government) | The Folketing's own Government grouping |
+
+**Documented gap — 8 of the 179 seats**: the **four North Atlantic members** (two Faroese, two
+Greenlandic, elected on their own islands' party lists) and **four independents**.
+
+All twelve logos are public domain on Commons and were montage-verified.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -1388,7 +1419,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `FI` Finland
 - [x] `SE` Sweden — merged
 - [x] `NO` Norway — merged
-- [ ] `DK` Denmark
+- [x] `DK` Denmark — merged
 - [ ] `IS` Iceland
 - [ ] `CY` Cyprus
 - [ ] `MT` Malta
