@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 61 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 62 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -111,7 +111,8 @@ forgotten; it is tracked here.
 | 🇯🇵 Japan | `#1378` | 9 → 9 | 460 / 465 (5 unaffiliated) | Best-maintained entry so far; `inExecutive` absent, Ishin's date from the previous cabinet, one seat double-counted |
 | 🇰🇿 Kazakhstan | `#1379` | 0 → 5 | **145 / 145** | **Absent entirely; the bicameral parliament was replaced by a unicameral Kurultai on 1 July 2026** |
 | 🇰🇷 South Korea | `#1380` | 7 → 7 | 291 / 300 (8 independents, 1 vacant) | Accurate on coverage; `inExecutive` absent though the DP holds the presidency |
-| 🇰🇼 Kuwait | *(see PR)* | — | — | **Out of scope — political parties are illegal and the Assembly has been suspended since May 2024** |
+| 🇰🇼 Kuwait | `#1381` | — | — | **Out of scope — political parties are illegal and the Assembly has been suspended since May 2024** |
+| 🇰🇬 Kyrgyzstan | *(see PR)* | 0 → 6 | 84 / 90 (3 vacant, 3 other ungrouped) | **Absent entirely; only one party won seats as a party — 84 of 90 went to independents, so the chamber's own factions are the party structure** |
 
 ---
 
@@ -2326,6 +2327,53 @@ parties.
 
 ---
 
+### 🇰🇬 Kyrgyzstan — audited 2026-09-12
+
+**Absent entirely.** Kyrgyzstan had no entry in `POLITICAL_PARTIES`, so the Learn-mode Political
+parties tab showed nothing for a country whose 90-seat **Supreme Council** (Жогорку Кеңеш) was
+elected on **30 November 2025**. Six entries added, covering 84 of the 90 seats.
+
+**PP-324 — the chamber is not the election result, and using the election result would have shown
+one party holding 3 seats and nothing else.** The Central Election Commission's return for the
+30 November 2025 election records **Yntymak 3 seats, independents 84, and 3 seats cancelled**: all
+but three of the 90 seats were won by candidates standing as independents, because Kyrgyzstan's
+2021 electoral law elects most of the chamber from single-member constituencies where party
+nomination is not required. Building the country's entry from that table would have been literally
+accurate and completely uninformative. The seated structure is instead taken from the Supreme
+Council's **own published composition**, where those independents have since organised into named
+deputy groups: **Mekenchil 19, Ata-Zhurt 18, Eldik 17, Ala-Too 15, Adilet Kyrgyzstan 14, ungrouped
+4, vacant 3** — 90 exactly. Both sources are cited on every entry so the distinction is visible to
+a reader rather than buried in this ledger.
+
+**PP-325 — two of Eldik's seventeen are Yntymak members, so carrying both figures verbatim would
+have double-counted them.** The chamber lists Yntymak's three deputies *inside* other groups: two
+sit within the Eldik faction and one among the ungrouped four. Eldik is therefore entered at
+**15 = 17 − 2**, Yntymak at its own **3**, and the derivation is cited in the first source line on
+Eldik's entry rather than left as an unexplained discrepancy against the chamber's published
+table. Seat sum: 19 + 18 + 15 + 15 + 14 + 3 = **84**, with the remaining 6 being the 3 other
+ungrouped deputies and the 3 vacancies.
+
+**PP-326 — Mekenchil holds the presidency, and `inPower`/`inExecutive` were therefore both set.**
+**Sadyr Japarov**, a Mekenchil member, has been President of Kyrgyzstan since **28 January 2021**,
+and the party is the largest group in the chamber. Kyrgyzstan's 2021 constitution is presidential:
+the President heads the executive directly, so this is an `inExecutive: true` case, not a
+confidence-and-supply one.
+
+**PP-327 — Ala-Too and Adilet Kyrgyzstan have no emblem anywhere, and are listed anyway.** Both are
+deputy groups formed after the election rather than long-standing registered parties: neither has
+an article of its own on any Wikipedia, neither has a Wikidata item carrying a `P154` logo, and
+Commons holds no emblem file under their English, Kyrgyz or Russian names. Under the amended
+logo rule they are entered with a `noImageReason` naming what was swept — 29 seats between them,
+nearly a third of the chamber, which dropping them for want of a picture would have hidden.
+
+**PP-328 — the four logos that do exist were montage-verified before bundling.** Mekenchil
+(МЕКЕНЧИЛ ПАРТИЯСЫ), Ata-Zhurt (АТА-ЖУРТ), Eldik (ЭЛДИК ДЕПУТАТТЫК ТОБУ) and Yntymak (ЫНТЫМАК)
+each render as that party's own wordmark emblem; three are non-free files hosted locally on English
+Wikipedia and carry a `licenceNote`, Eldik's is on Commons.
+
+**Verified in the running app**: all six cards paint (4 logos loaded, 2 honest "No free image"
+cards), Mekenchil carries the In-power badge, no console errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2549,7 +2597,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `KP` North Korea
 - [x] `KR` South Korea — merged
 - [x] `KW` Kuwait — merged (out of scope)
-- [ ] `KG` Kyrgyzstan
+- [x] `KG` Kyrgyzstan — merged
 - [ ] `LB` Lebanon
 - [ ] `LS` Lesotho
 - [ ] `LR` Liberia

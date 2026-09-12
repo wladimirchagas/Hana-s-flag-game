@@ -6077,6 +6077,203 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "KG": [
+    {
+      "id": "KG-MEKENCHIL",
+      "country": "KG",
+      "shortName": "Mekenchil",
+      "name": "Мекенчил",
+      "nameEn": "Mekenchil (Patriot)",
+      "logo": "party-logos/kg/mekenchil.png",
+      "sha256": "ef756e64926f1f6f2f6b770a2782ce496da46ff398fd0000f14456d0dd868540",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Mekenchil_logo.png",
+      "licenceNote": "Non-free. Mekenchil (Patriot)'s logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "National conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2010,
+      "leader": "Kamchybek Tashiev",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds the presidency: Sadyr Japarov, a Mekenchil member, has been President of Kyrgyzstan since 28 January 2021, and the party is the largest group in the Supreme Council.",
+      "seats": 19,
+      "seatsTotal": 90,
+      "chamberName": "Supreme Council",
+      "sources": [
+        {
+          "title": "Mekenchil (Patriot) — Wikipedia (infobox: founded 2010; Chairman Kamchybek Tashiev)",
+          "url": "https://en.wikipedia.org/wiki/Mekenchil"
+        },
+        {
+          "title": "Supreme Council (Kyrgyzstan) — Wikipedia (composition after the 30 November 2025 election: Mekenchil 19, Ata-Zhurt 18, Eldik 17 — of which 2 are Yntymak members — Ala-Too 15, Adilet Kyrgyzstan 14, ungrouped 4 — of which 1 is a Yntymak member — and 3 vacant, of 90)",
+          "url": "https://en.wikipedia.org/wiki/Supreme_Council_(Kyrgyzstan)"
+        },
+        {
+          "title": "2025 Kyrgyz parliamentary election — Wikipedia (Central Election Commission results: Yntymak 3 seats, independents 84, 3 cancelled — every seat but three was won by a candidate standing as an independent)",
+          "url": "https://en.wikipedia.org/wiki/2025_Kyrgyz_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "KG-ATAZHURT",
+      "country": "KG",
+      "shortName": "Ata-Zhurt",
+      "name": "Ата-Журт",
+      "nameEn": "Ata-Zhurt (Fatherland)",
+      "logo": "party-logos/kg/atazhurt.png",
+      "sha256": "a9dc712239e6a2da52f490f19c016c842bc212aa3e8b3a24ae196a2465f6bf59",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Ata-Zhurt_party_logo.png",
+      "licenceNote": "Non-free. Ata-Zhurt (Fatherland)'s logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "National conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2006,
+      "leader": "Akhmatbek Keldibekov",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 18,
+      "seatsTotal": 90,
+      "chamberName": "Supreme Council",
+      "sources": [
+        {
+          "title": "Ata-Zhurt (Fatherland) — Wikipedia (infobox: founded 2006; Chairman Akhmatbek Keldibekov)",
+          "url": "https://en.wikipedia.org/wiki/Ata-Zhurt"
+        },
+        {
+          "title": "Supreme Council (Kyrgyzstan) — Wikipedia (composition after the 30 November 2025 election: Mekenchil 19, Ata-Zhurt 18, Eldik 17 — of which 2 are Yntymak members — Ala-Too 15, Adilet Kyrgyzstan 14, ungrouped 4 — of which 1 is a Yntymak member — and 3 vacant, of 90)",
+          "url": "https://en.wikipedia.org/wiki/Supreme_Council_(Kyrgyzstan)"
+        },
+        {
+          "title": "2025 Kyrgyz parliamentary election — Wikipedia (Central Election Commission results: Yntymak 3 seats, independents 84, 3 cancelled — every seat but three was won by a candidate standing as an independent)",
+          "url": "https://en.wikipedia.org/wiki/2025_Kyrgyz_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "KG-ELDIK",
+      "country": "KG",
+      "shortName": "Eldik",
+      "name": "Элдик",
+      "nameEn": "Eldik",
+      "logo": "party-logos/kg/eldik.png",
+      "sha256": "d68405703eeceea8fc44f5b40c84e87f8660355160a9537db16567ec823bf49f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Eldik_logo.png",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 2021,
+      "leader": "Akylbek Tumonbayev",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 15,
+      "seatsTotal": 90,
+      "chamberName": "Supreme Council",
+      "sources": [
+        {
+          "title": "Eldik's 15 seats are the Supreme Council's Eldik faction of 17 less the two Yntymak members the chamber lists inside it, so the two parties are not double-counted",
+          "url": "https://en.wikipedia.org/wiki/Supreme_Council_(Kyrgyzstan)"
+        },
+        {
+          "title": "Eldik — Wikipedia (infobox: founded 2021; Chairman Akylbek Tumonbayev)",
+          "url": "https://en.wikipedia.org/wiki/Eldik"
+        },
+        {
+          "title": "Supreme Council (Kyrgyzstan) — Wikipedia (composition after the 30 November 2025 election: Mekenchil 19, Ata-Zhurt 18, Eldik 17 — of which 2 are Yntymak members — Ala-Too 15, Adilet Kyrgyzstan 14, ungrouped 4 — of which 1 is a Yntymak member — and 3 vacant, of 90)",
+          "url": "https://en.wikipedia.org/wiki/Supreme_Council_(Kyrgyzstan)"
+        },
+        {
+          "title": "2025 Kyrgyz parliamentary election — Wikipedia (Central Election Commission results: Yntymak 3 seats, independents 84, 3 cancelled — every seat but three was won by a candidate standing as an independent)",
+          "url": "https://en.wikipedia.org/wiki/2025_Kyrgyz_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "KG-ALATOO",
+      "country": "KG",
+      "shortName": "Ala-Too",
+      "name": "Ала-Тоо",
+      "nameEn": "Ala-Too",
+      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the group's English, Kyrgyz or Russian name) and English Wikipedia (the group has no article of its own — its name and seat count come from the Supreme Council's published composition). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 15,
+      "seatsTotal": 90,
+      "chamberName": "Supreme Council",
+      "sources": [
+        {
+          "title": "Supreme Council (Kyrgyzstan) — Wikipedia (composition after the 30 November 2025 election: Mekenchil 19, Ata-Zhurt 18, Eldik 17 — of which 2 are Yntymak members — Ala-Too 15, Adilet Kyrgyzstan 14, ungrouped 4 — of which 1 is a Yntymak member — and 3 vacant, of 90)",
+          "url": "https://en.wikipedia.org/wiki/Supreme_Council_(Kyrgyzstan)"
+        },
+        {
+          "title": "2025 Kyrgyz parliamentary election — Wikipedia (Central Election Commission results: Yntymak 3 seats, independents 84, 3 cancelled — every seat but three was won by a candidate standing as an independent)",
+          "url": "https://en.wikipedia.org/wiki/2025_Kyrgyz_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "KG-ADILET",
+      "country": "KG",
+      "shortName": "Adilet",
+      "name": "Адилет Кыргызстан",
+      "nameEn": "Adilet Kyrgyzstan",
+      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the group's English, Kyrgyz or Russian name) and English Wikipedia (the group has no article of its own — its name and seat count come from the Supreme Council's published composition). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 14,
+      "seatsTotal": 90,
+      "chamberName": "Supreme Council",
+      "sources": [
+        {
+          "title": "Supreme Council (Kyrgyzstan) — Wikipedia (composition after the 30 November 2025 election: Mekenchil 19, Ata-Zhurt 18, Eldik 17 — of which 2 are Yntymak members — Ala-Too 15, Adilet Kyrgyzstan 14, ungrouped 4 — of which 1 is a Yntymak member — and 3 vacant, of 90)",
+          "url": "https://en.wikipedia.org/wiki/Supreme_Council_(Kyrgyzstan)"
+        },
+        {
+          "title": "2025 Kyrgyz parliamentary election — Wikipedia (Central Election Commission results: Yntymak 3 seats, independents 84, 3 cancelled — every seat but three was won by a candidate standing as an independent)",
+          "url": "https://en.wikipedia.org/wiki/2025_Kyrgyz_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "KG-YNTYMAK",
+      "country": "KG",
+      "shortName": "Yntymak",
+      "name": "Ынтымак",
+      "nameEn": "Yntymak (Cohesion)",
+      "logo": "party-logos/kg/yntymak.png",
+      "sha256": "276d9b61d891f171397814a7f7e52e71d1d20638caeb7b7cba489e801bcf29e1",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Yntymak_(political_party).png",
+      "licenceNote": "Non-free. Yntymak (Cohesion)'s logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 2012,
+      "leader": "Chingiz Makeshov",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 90,
+      "chamberName": "Supreme Council",
+      "sources": [
+        {
+          "title": "Yntymak (Cohesion) — Wikipedia (infobox: founded 2012; Chairman Chingiz Makeshov)",
+          "url": "https://en.wikipedia.org/wiki/Yntymak_(political_party)"
+        },
+        {
+          "title": "Supreme Council (Kyrgyzstan) — Wikipedia (composition after the 30 November 2025 election: Mekenchil 19, Ata-Zhurt 18, Eldik 17 — of which 2 are Yntymak members — Ala-Too 15, Adilet Kyrgyzstan 14, ungrouped 4 — of which 1 is a Yntymak member — and 3 vacant, of 90)",
+          "url": "https://en.wikipedia.org/wiki/Supreme_Council_(Kyrgyzstan)"
+        },
+        {
+          "title": "2025 Kyrgyz parliamentary election — Wikipedia (Central Election Commission results: Yntymak 3 seats, independents 84, 3 cancelled — every seat but three was won by a candidate standing as an independent)",
+          "url": "https://en.wikipedia.org/wiki/2025_Kyrgyz_parliamentary_election"
+        }
+      ]
+    }
+  ],
   "KZ": [
     {
       "id": "KZ-ADILET",
