@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 62 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 63 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -112,7 +112,8 @@ forgotten; it is tracked here.
 | 🇰🇿 Kazakhstan | `#1379` | 0 → 5 | **145 / 145** | **Absent entirely; the bicameral parliament was replaced by a unicameral Kurultai on 1 July 2026** |
 | 🇰🇷 South Korea | `#1380` | 7 → 7 | 291 / 300 (8 independents, 1 vacant) | Accurate on coverage; `inExecutive` absent though the DP holds the presidency |
 | 🇰🇼 Kuwait | `#1381` | — | — | **Out of scope — political parties are illegal and the Assembly has been suspended since May 2024** |
-| 🇰🇬 Kyrgyzstan | *(see PR)* | 0 → 6 | 84 / 90 (3 vacant, 3 other ungrouped) | **Absent entirely; only one party won seats as a party — 84 of 90 went to independents, so the chamber's own factions are the party structure** |
+| 🇰🇬 Kyrgyzstan | `#1382` | 0 → 6 | 84 / 90 (3 vacant, 3 other ungrouped) | **Absent entirely; only one party won seats as a party — 84 of 90 went to independents, so the chamber's own factions are the party structure** |
+| 🇱🇧 Lebanon | *(see PR)* | 0 → 25 | 83 / 128 (44 independents, 1 vacancy) | **Absent entirely; the obvious source reports BLOC seats as party seats for all six large parties** |
 
 ---
 
@@ -2374,6 +2375,88 @@ Wikipedia and carry a `licenceNote`, Eldik's is on Commons.
 **Verified in the running app**: all six cards paint (4 logos loaded, 2 honest "No free image"
 cards), Mekenchil carries the In-power badge, no console errors.
 
+### 🇱🇧 Lebanon — audited 2026-09-12
+
+**Absent entirely.** Lebanon had no entry in `POLITICAL_PARTIES`, so the Learn-mode Political
+parties tab showed nothing for a 128-seat **Parliament** elected on 15 May 2022 and sitting until
+May 2028. Twenty-five entries added, covering **83** of the 128 seats; the remaining 45 are 44
+deputies sitting as independents and one casual vacancy, which are not modelled as parties.
+
+**PP-329 — the obvious source reports BLOC seats as PARTY seats, for every one of the six large
+parties.** `List of political parties in Lebanon` is the natural place to look and gives a clean
+seat column — and it is the alliance-seat defect (the India DMK finding) applied wholesale. Its
+figures are the *parliamentary bloc* sizes, which fold in each bloc's independents and its smaller
+partners:
+
+| party | the list article | the party's own deputies |
+|---|---|---|
+| Lebanese Forces | 19 | **14** (Strong Republic = LF 14 + NLP 1 + 4 independents) |
+| Hezbollah | 15 | **13** (Loyalty to the Resistance = 13 + 2 independents) |
+| Amal Movement | 15 | **11** (Development and Liberation = 11 + National Banner 1 + 3 ind.) |
+| Free Patriotic Movement | 13 | **12** (Strong Lebanon = 12 + 1 independent) |
+| Progressive Socialist Party | 8 | **6** (Democratic Gathering = 6 + 2 independents) |
+| Kataeb | 5 | **4** (Kataeb bloc = 4 + 1 independent) |
+| Armenian Revolutionary Federation | 3 | **2** |
+
+Taking the first column would have overstated those seven parties by **14 seats** and left no room
+for the independents who actually hold them. Every seat figure in the dataset is instead the
+chamber's **own** per-bloc breakdown from `Parliament of Lebanon`, which itemises each bloc into its
+member parties and its independents and reconciles to 128 exactly: 83 party + 44 independent +
+1 vacancy.
+
+**PP-330 — half the cabinet is non-partisan, so `inExecutive` could not be read off bloc
+membership.** The **Cabinet of Nawaf Salam** (formed 8 February 2025, under President Joseph Aoun)
+is a specialist cabinet: of its 24 ministers **12 are independents**, including the Prime Minister
+and Deputy Prime Minister. Only six parties hold portfolios — Lebanese Forces 4, Amal 2, Hezbollah 2,
+PSP 2, Kataeb 1, Tashnag/ARF 1 — and those six carry `inExecutive: true`. The other two parties in
+the 64-seat government bloc, the **National Liberal Party** and the **National Banner Party**,
+support the cabinet but hold nothing, so they are `inPower: true` / `inExecutive: false`. Reading
+`inExecutive` from the bloc would have put ministers in the hands of two parties that have none.
+
+**PP-331 — a 46-seat confidence-and-supply group, modelled on the Cyprus DIKO pattern.** The
+chamber's own composition separates a **"Supported by (46)"** group from the 64-seat government bloc
+and links it explicitly to confidence and supply. Its thirteen parties therefore take
+`inPower: true` / `inExecutive: false`, the same modelling this audit has used for Cyprus's DIKO,
+Israel's Shas, Iraq's non-cabinet bloc and Japan's Ishin. Only three parties are opposition — the
+**Free Patriotic Movement** (12 seats; Bassil announced in October 2024 that it was no longer
+allied with Hezbollah), **ReLebanon** and the **Islamic Group of Lebanon**.
+
+**PP-332 — the Islamic Group's Wikidata `P154` is the MUSLIM BROTHERHOOD's flag.** The
+country-constrained Wikidata sweep returned `Flag of the Muslim Brotherhood.png` for the Islamic
+Group, which is the transnational organisation's emblem, not the Lebanese party's. It was rejected
+in favour of the party's own logo, whose English-Wikipedia file page cites the party's own site
+(al-jamaa.org) as its source. The sweep's other two Lebanese offers were likewise wrong in kind —
+`FLCross.jpg` for the Lebanese Forces and `Flag of the Amal Movement.svg` for Amal are flags where
+both parties have a proper logo file. This is the collision class the P17 constraint is meant to
+catch and does not: the item was right, the *picture on it* was not.
+
+**PP-333 — two parties are shown with their own FLAG, because no logo exists, and one of those
+files is tagged by Commons as imprecise.** The **Union Party** and the **Popular Nasserist
+Organization** have no logo file anywhere; each has a Commons flag bearing the party's emblem, and
+those are used — the same precedent as the Indian and Iraqi parties already in the dataset whose
+`logoSourceUrl` is a flag. The PNO's SVG carries a Commons `cleanup image` tag noting a different
+font and missing text at the bottom of the seal; it is bundled anyway because it is unambiguously
+the PNO's flag and no alternative exists, and the imprecision is recorded here rather than hidden.
+
+**PP-334 — six parties have no emblem anywhere and are listed with a `noImageReason`.** Watani
+Alliance, Mada Party, Khatt Ahmar, ReLebanon, Sanad Movement and Project Watan (2 seats) hold
+**seven seats** between them. None has an article of its own; each is attested only by the chamber's
+composition, the Lebanese parties list, and in three cases its MP's own infobox (Ashraf Rifi → Sanad
+Movement, Waddah Sadek → Khatt Ahmar, Neemat Frem → Project Watan). Under the amended logo rule they
+are entered without images rather than dropped. Judgement call recorded: **Watani Alliance** is named
+as an alliance but is listed as a party, with a leader, in the Lebanese parties table and is the
+affiliation the chamber records for its deputy, so it is entered as a party.
+
+**PP-335 — the chamber's own bloc subtotal is off by one, and it falls entirely outside the party
+figures.** The composition's "Supported by (**46**)" header does not match its itemised blocs, which
+sum to 47 — the `National Moderation` bloc is given as 6 while its note lists only 5 members. The
+discrepancy sits wholly in the independent count (44 or 43), never in a party's seats, so no entry
+is affected; it is disclosed here rather than silently reconciled.
+
+**Verified in the running app**: all 25 cards paint (19 logos loaded, 6 honest "No free image"
+cards), the three opposition parties carry no In-power badge while the other 22 do, no console
+errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2598,7 +2681,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `KR` South Korea — merged
 - [x] `KW` Kuwait — merged (out of scope)
 - [x] `KG` Kyrgyzstan — merged
-- [ ] `LB` Lebanon
+- [x] `LB` Lebanon — merged
 - [ ] `LS` Lesotho
 - [ ] `LR` Liberia
 - [ ] `LY` Libya
