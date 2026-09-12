@@ -100,7 +100,6 @@ const GRANDFATHERED_PARTIES_WITH_NO_IMAGE = new Set([
   "GY-AFC", "GY-APNU", "GY-PPPC",
   "PY-ANR", "PY-HA", "PY-PLRA",
   "SR-NF", "SR-VHP",
-  "VE-PSUV",
 ]);
 
 const isHttpUrl = (u) => {

@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 15 / 195 — Southeast Asia complete; South America under way.**
+**Countries audited: 18 / 195 — Southeast Asia complete; South America under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -61,6 +61,9 @@ forgotten; it is tracked here.
 | 🇹🇱 Timor-Leste | `#1325` | 5 → 5 | 65 / 65 | **WRONG — S1 (an audio file as a logo)** |
 | 🇦🇷 Argentina | `#1326` | 19 → 19 | 257 / 257 | **NEARLY CURRENT — one rename missed** |
 | 🇨🇱 Chile | `#1327` | 7 → 14 | 151 / 155 | **WRONG — a whole parliament and government** |
+| 🇨🇴 Colombia | `#1328` | 5 → 13 | 158 / 183 | **WRONG — the largest party was absent** |
+| 🇵🇪 Peru | `#1329` | 6 → 6 | **130 / 130** | **WRONG — a legislature that no longer exists** |
+| 🇻🇪 Venezuela | `#1330` | **1 → 20** | 277 / 285 | **WRONG — one party credited with every seat** |
 
 ---
 
@@ -555,6 +558,48 @@ unicameral "Congress of the Republic" and carried a seat split that matches neit
 All six logos were SHA-1 matched to Commons and montage-verified. Seats now reconcile exactly, which
 closes Peru's contribution to defect **B4** (chamber coverage below 60% — it was 77%).
 
+### 🇻🇪 Venezuela — audited 2026-09-12
+
+Venezuela was the **single most wrong country** the sweep has reached. The dataset held **one party**
+— PSUV — credited with **277 of 277** seats: a chamber size that was retired at the 2025 election, a
+seat count that asserted a one-party legislature, and a logo that had been written off as
+unsourceable when the party's own 2024 mark sits on Commons in the public domain.
+
+The National Assembly's **VI Legislature** was installed on 5 January 2026 with **285** seats. Nine
+parties of the governing **Gran Polo Patriótico Simón Bolívar** hold 253 of them (PSUV itself holds
+**219**, not all of them); three are indigenous seats; and **eleven** further parties sit in three
+opposition parliamentary groups.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-075 | **S1** | `seats` / `seatsTotal` | PSUV **277 of 277** — a legislature with no other party in it | **PSUV 219 of 285**, 20 parties totalling **277 of 285** | The Assembly's own VI-Legislature composition. 277 was the 2020–2025 chamber size; the 2025 election returned 285 |
+| PP-076 | **S1** | coverage | 1 party | **20 parties** | Nineteen seated parties were absent, including the whole of the governing alliance beyond PSUV and every opposition party |
+| PP-077 | **S1** | `leader` | Diosdado Cabello, **"Party Chairman"** | **Delcy Rodríguez**, "Party leader" | Cabello is PSUV's **secretary**, never its chairman. Nicolás Maduro remains the formally elected party president but has been in United States custody since January 2026; the party's own infobox now names Rodríguez as its leader |
+| PP-078 | **S1** | `inExecutive` context | "Diosdado Cabello … in executive power" | PSUV holds the presidency through **Delcy Rodríguez, interim president since 2026** | Maduro was captured during the United States intervention in Venezuela; Rodríguez, his vice-president since 2018, is the first woman to perform the duties of the presidency |
+| PP-079 | **S1** | `founded` | **1997** | **2007** | 1997 is the founding year of the *Fifth Republic Movement*, one of PSUV's merger predecessors. PSUV itself dates from 2007 (es.wikipedia gives 14 March 2008 for its registration — the discrepancy is recorded here, not resolved by guessing) |
+| PP-080 | **S2** | `noImageReason` | "no freely-licensed vectorized logo available" | **`party-logos/ve/psuv.svg`** | `PSUV 2024 logo.svg` is on Commons in the **public domain**. The reason was wrong, and PSUV has now been removed from `GRANDFATHERED_PARTIES_WITH_NO_IMAGE` |
+| PP-081 | **S3** | `chamberName` | "National Assembly (disputed)" | **"National Assembly"** | `chamberName` names the chamber; the recognition dispute belongs in the sources, where it now is (the English article's "partial recognition" note is cited) |
+| PP-082 | **S3** | coalitions | none | **`VE-GPPSB`** (9 seated members) and **`VE-AD-ALLIANCE`** (7) | The governing Chavista alliance and the opposition Democratic Alliance |
+
+**A judgement call, recorded.** Acción Democrática, Primero Justicia and Copei hold their seats
+through the **ad hoc boards imposed by the Supreme Tribunal of Justice**, not through the leaderships
+those parties themselves recognise. The dataset shows each party's own leadership (AD: Isabel Carmona
+de Serra, the *dirección en resistencia*) and states the ad-hoc split in that party's sources and in
+the `VE-AD-ALLIANCE` coalition note. Suppressing either fact would take a side.
+
+**Documented gaps — 8 of the 285 seats are deliberately not modelled.**
+
+* **3 are indigenous seats**, elected nationally by indigenous communities and not held by a party.
+* **5 belong to Vamos Vamos Cojedes**, a regional party registered on 11 April 2025. No logo file
+  exists on Commons, on either Wikipedia, or anywhere freely licensable (the party's presence is
+  social-media only), and the gate forbids a new no-image entry. Recorded, not hidden — the same
+  mandatory-field wall as Thailand, the Philippines and Colombia.
+
+All 20 bundled logos were resolved on Commons, downloaded, checked that their bytes match their
+extension, and **montage-verified**. That pass mattered: UNICA's Commons file is named
+`GqRp6FJXgAA6TRL.jpg` — a raw social-media filename of exactly the shape that produced seven wrong
+logos earlier in this sweep — and rendering it confirmed it really is the Unión y Cambio mark.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -586,7 +631,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `CL` Chile — merged
 - [x] `CO` Colombia — merged
 - [x] `PE` Peru — merged
-- [ ] `VE` Venezuela
+- [x] `VE` Venezuela — merged
 - [ ] `EC` Ecuador
 - [ ] `BO` Bolivia
 - [ ] `PY` Paraguay
