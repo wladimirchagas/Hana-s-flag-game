@@ -182,6 +182,17 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "A minority government. The Red–Green Alliance, the Alternative and four North Atlantic members give it confidence and supply without holding cabinet office.",
   },
+  "IE-GOV": {
+    id: "IE-GOV",
+    name: "35th government of Ireland",
+    kind: "coalition",
+    memberPartyIds: ["IE-FF", "IE-FG"],
+    source: {
+      title: "35th government of Ireland — Wikipedia: a Fianna Fáil–Fine Gael coalition formed on 23 January 2025, with Micheál Martin as Taoiseach and Simon Harris as Tánaiste",
+      url: "https://en.wikipedia.org/wiki/35th_government_of_Ireland",
+    },
+    note: "Fianna Fáil and Fine Gael hold every cabinet seat; independent TDs of the Regional Independent Group support the government and hold office only at minister-of-state rank, so they are not coalition parties. Under the programme for government the two leaders rotate the office of Taoiseach in November 2027.",
+  },
   "FR-GOV": {
     id: "FR-GOV",
     name: "Bloc central",
@@ -17209,20 +17220,26 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IE",
       "shortName": "FF",
       "name": "Fianna Fáil",
-      "nameEn": "Fianna Fáil",
-      "logo": "party-logos/ie/fianna-fail.svg",
-      "sha256": "43267fffa4757d00a99d62bafd9442a61fb47c816b6d481fb0dfb9ed6615cd57",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fianna_F%C3%A1il_logo.svg",
-      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
-      "ideology": ["Centre-right", "Irish republicanism", "Conservatism"],
+      "nameEn": "Fianna Fáil – The Republican Party",
+      "logo": "party-logos/ie/ff.svg",
+      "sha256": "937d822de77993cad5be833b196e4ec72f3f993af8fa659337e6c21ee6b7ca36",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Fianna_F%C3%A1il_logo_(2024).svg",
+      "ideology": [
+        "Conservatism",
+        "Christian democracy",
+        "Irish republicanism"
+      ],
       "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
+      "positionRaw": "Centre to centre-right",
       "founded": 1926,
+      "coalitionId": "IE-GOV",
       "leader": "Micheál Martin",
-      "leaderTitle": "Party Leader",
+      "leaderTitle": "Leader",
       "inPower": true,
-      "seats": 78,
-      "seatsTotal": 160,
+      "inExecutive": true,
+      "timeInPower": "2020–present",
+      "seats": 48,
+      "seatsTotal": 174,
       "chamberName": "Dáil Éireann",
       "sources": [
         {
@@ -17230,39 +17247,12 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "url": "https://en.wikipedia.org/wiki/Fianna_F%C3%A1il"
         },
         {
-          "title": "2024 Irish general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
-        }
-      ]
-    },
-    {
-      "id": "IE-FG",
-      "country": "IE",
-      "shortName": "FG",
-      "name": "Fine Gael",
-      "nameEn": "Fine Gael",
-      "logo": "party-logos/ie/fine-gael.svg",
-      "sha256": "d171bb78fd9e332f845a0c78f4f9bc004fdfb8d7f4c3a85e476e4d199bef6ac3",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fine_Gael_logo.svg",
-      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
-      "ideology": ["Centre-right", "Liberal conservatism", "Internationalism"],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 1933,
-      "leader": "Simon Harris",
-      "leaderTitle": "Party Leader",
-      "inPower": true,
-      "seats": 37,
-      "seatsTotal": 160,
-      "chamberName": "Dáil Éireann",
-      "sources": [
-        {
-          "title": "Fine Gael – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Fine_Gael"
+          "title": "34th Dáil – Composition (May 2026) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/34th_D%C3%A1il#Composition"
         },
         {
-          "title": "2024 Irish general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
+          "title": "35th government of Ireland – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/35th_government_of_Ireland"
         }
       ]
     },
@@ -17271,20 +17261,23 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IE",
       "shortName": "SF",
       "name": "Sinn Féin",
-      "nameEn": "Sinn Féin",
-      "logo": "party-logos/ie/sinn-fein.svg",
-      "sha256": "da4d3d7f60b67bfcdce218021815851241369608ef347ef8b5a793760ddb5d2d",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Sinn_F%C3%A9in_logo.svg",
-      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
-      "ideology": ["Left-wing", "Irish republicanism", "Socialism"],
+      "logo": "party-logos/ie/sf.svg",
+      "sha256": "bd37b761a63b5f990ffd82a4937edf05e60ac2a44acef333460763b59c2c9dce",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Sinn_F%C3%A9in.svg",
+      "licenceNote": "Non-free logo: the Sinn Féin crest is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its English Wikipedia file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "Irish republicanism",
+        "Democratic socialism",
+        "Left-wing nationalism"
+      ],
       "ideologyPosition": "left",
-      "positionRaw": "Left-wing",
+      "positionRaw": "Centre-left to left-wing",
       "founded": 1905,
       "leader": "Mary Lou McDonald",
-      "leaderTitle": "Party Leader",
+      "leaderTitle": "President",
       "inPower": false,
-      "seats": 37,
-      "seatsTotal": 160,
+      "seats": 39,
+      "seatsTotal": 174,
       "chamberName": "Dáil Éireann",
       "sources": [
         {
@@ -17292,8 +17285,284 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "url": "https://en.wikipedia.org/wiki/Sinn_F%C3%A9in"
         },
         {
-          "title": "2024 Irish general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Irish_general_election"
+          "title": "34th Dáil – Composition (May 2026) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/34th_D%C3%A1il#Composition"
+        }
+      ]
+    },
+    {
+      "id": "IE-FG",
+      "country": "IE",
+      "shortName": "FG",
+      "name": "Fine Gael",
+      "logo": "party-logos/ie/fg.svg",
+      "sha256": "0c6626c50b30072289d9da42d4e49e52445399a575f66aafa966cd722248125a",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fine_Gael_logo_2009.svg",
+      "licenceNote": "Non-free logo: the Fine Gael crest is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its English Wikipedia file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1933,
+      "coalitionId": "IE-GOV",
+      "leader": "Simon Harris",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2011–present",
+      "seats": 38,
+      "seatsTotal": 174,
+      "chamberName": "Dáil Éireann",
+      "sources": [
+        {
+          "title": "Fine Gael – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fine_Gael"
+        },
+        {
+          "title": "34th Dáil – Composition (May 2026) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/34th_D%C3%A1il#Composition"
+        },
+        {
+          "title": "35th government of Ireland – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/35th_government_of_Ireland"
+        }
+      ]
+    },
+    {
+      "id": "IE-SD",
+      "country": "IE",
+      "shortName": "SD",
+      "name": "Na Daonlathaithe Sóisialta",
+      "nameEn": "Social Democrats",
+      "logo": "party-logos/ie/sd.svg",
+      "sha256": "bd60d78b340142ef64391c4c218207166d71c3970fe3524bd1f782985c1b9a53",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Social_Democrats_(Ireland)_logo.svg",
+      "ideology": [
+        "Social democracy",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2015,
+      "leader": "Holly Cairns",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 174,
+      "chamberName": "Dáil Éireann",
+      "sources": [
+        {
+          "title": "Social Democrats (Ireland) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_Democrats_(Ireland)"
+        },
+        {
+          "title": "34th Dáil – Composition (May 2026) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/34th_D%C3%A1il#Composition"
+        }
+      ]
+    },
+    {
+      "id": "IE-LAB",
+      "country": "IE",
+      "shortName": "Labour",
+      "name": "Páirtí an Lucht Oibre",
+      "nameEn": "Labour Party",
+      "logo": "party-logos/ie/lab.svg",
+      "sha256": "87e310a61d2f019413d5a98428d5d666b38a0280088d16e8aa7a8fe9f7ab6f1b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:The_logo_of_Labour_Party_in_Ireland_2021.svg",
+      "ideology": [
+        "Social democracy",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1912,
+      "leader": "Ivana Bacik",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 11,
+      "seatsTotal": 174,
+      "chamberName": "Dáil Éireann",
+      "sources": [
+        {
+          "title": "Labour Party (Ireland) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Labour_Party_(Ireland)"
+        },
+        {
+          "title": "34th Dáil – Composition (May 2026) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/34th_D%C3%A1il#Composition"
+        }
+      ]
+    },
+    {
+      "id": "IE-II",
+      "country": "IE",
+      "shortName": "II",
+      "name": "Éire Neamhspleách",
+      "nameEn": "Independent Ireland",
+      "logo": "party-logos/ie/ii.png",
+      "sha256": "ac3311194a00daa59bcb2fd325225fb43fc687b197aeae4c25de2a12f78dcf09",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Independent_Ireland.png",
+      "ideology": [
+        "Conservatism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2023,
+      "leader": "Michael Collins",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 174,
+      "chamberName": "Dáil Éireann",
+      "sources": [
+        {
+          "title": "Independent Ireland – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Independent_Ireland"
+        },
+        {
+          "title": "34th Dáil – Composition (May 2026) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/34th_D%C3%A1il#Composition"
+        }
+      ]
+    },
+    {
+      "id": "IE-PBPS",
+      "country": "IE",
+      "shortName": "PBP–S",
+      "name": "People Before Profit–Solidarity",
+      "logo": "party-logos/ie/pbp.svg",
+      "sha256": "cc2fcd9fd833f6b6e5032de8343e795759ce9e4c847faf8f5a36b0b424d45b37",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_People_Before_Profit%E2%80%93Solidarity.svg",
+      "licenceNote": "Non-free logo: the People Before Profit–Solidarity crest is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its English Wikipedia file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "Socialism",
+        "Trotskyism",
+        "Left-wing populism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 2015,
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 174,
+      "chamberName": "Dáil Éireann",
+      "sources": [
+        {
+          "title": "People Before Profit–Solidarity – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/People_Before_Profit%E2%80%93Solidarity"
+        },
+        {
+          "title": "34th Dáil – Composition (May 2026) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/34th_D%C3%A1il#Composition"
+        }
+      ]
+    },
+    {
+      "id": "IE-AON",
+      "country": "IE",
+      "shortName": "Aontú",
+      "name": "Aontú",
+      "logo": "party-logos/ie/aontu.png",
+      "sha256": "721553500327fc1e8b14a0cae2d55267942b0c4ae7a937210694fa5723c6d313",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Aont%C3%BA_logo.png",
+      "licenceNote": "Non-free logo: the Aontú crest is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its English Wikipedia file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "Irish republicanism",
+        "Social conservatism",
+        "Populism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Fiscal: left-wing; social: right-wing",
+      "founded": 2019,
+      "leader": "Peadar Tóibín",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 174,
+      "chamberName": "Dáil Éireann",
+      "sources": [
+        {
+          "title": "Aontú – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Aont%C3%BA"
+        },
+        {
+          "title": "34th Dáil – Composition (May 2026) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/34th_D%C3%A1il#Composition"
+        }
+      ]
+    },
+    {
+      "id": "IE-GP",
+      "country": "IE",
+      "shortName": "GP",
+      "name": "Comhaontas Glas",
+      "nameEn": "Green Party",
+      "logo": "party-logos/ie/green.svg",
+      "sha256": "85736b57b097c8310d022aee5e432f3d92afdda7effbe1b7a8a036d4ed42039f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Green_Party_(Ireland)_logo.svg",
+      "ideology": [
+        "Green politics",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1981,
+      "previousNames": [
+        {
+          "name": "Ecology Party of Ireland"
+        }
+      ],
+      "leader": "Roderic O'Gorman",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 174,
+      "chamberName": "Dáil Éireann",
+      "sources": [
+        {
+          "title": "Green Party (Ireland) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_(Ireland)"
+        },
+        {
+          "title": "34th Dáil – Composition (May 2026) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/34th_D%C3%A1il#Composition"
+        }
+      ]
+    },
+    {
+      "id": "IE-100R",
+      "country": "IE",
+      "shortName": "100% Redress",
+      "name": "Cúiteamh 100%",
+      "nameEn": "100% Redress",
+      "logo": "party-logos/ie/redress.png",
+      "sha256": "289d58f8f904e0aba77fd85c238bca17ee05af18afba87815356b5ae7934cb1f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:100%25_Redress_party_logo.png",
+      "ideology": [
+        "Single-issue"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2023,
+      "leader": "Tomás Seán Devine",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 174,
+      "chamberName": "Dáil Éireann",
+      "sources": [
+        {
+          "title": "100% Redress – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/100%25_Redress"
+        },
+        {
+          "title": "34th Dáil – Composition (May 2026) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/34th_D%C3%A1il#Composition"
         }
       ]
     }
