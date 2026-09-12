@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="2048" height="1228" viewBox="0 0 2048 1228">
-  <!-- Background -->
-  <rect width="2048" height="1228" fill="#62bfebff"/>
-  <!-- Center circle traced from the provided image -->
-  <circle cx="925.5" cy="622.5" r="424" fill="#009649ff"/>
-</svg>

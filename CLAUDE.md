@@ -3415,6 +3415,19 @@ without one — `PoliticalPartyFacts` omits the row rather than rendering `undef
      resolved, drop `logo`/`sha256`/`logoSourceUrl` and write a `noImageReason` naming what was
      searched (rule 3). That is an honest empty state; a broken `<img>` is a lie the user cannot
      diagnose.
+   - **A HAND-DRAWN logo is the other half of this, and it has happened here.** Found 2026-09-12 in
+     `public/party-logos/bd/bkm.svg`: 334 bytes of hand-written SVG primitives — a `<rect>`, a
+     `<circle>`, and the comment *"Center circle traced from the provided image"*. That is the
+     "never generate, invent, or approximate flag SVG content" rule, in the party-logo feature. It
+     was an orphan and never shipped, but it sat in the tree waiting to be wired up. **Never author
+     an emblem; a `noImageReason` is always the correct alternative.**
+   - **Verify by BYTE-COMPARING against the cited source — never by how the file looks.** The same
+     scan flagged `my/pas.svg` (225 bytes, one `<rect>` and one `<circle>`) and `eg/justice.svg` as
+     suspected fabrications. Both are **byte-identical to their real Commons files**: Commons
+     genuinely hosts PAS's logo as a minimal two-shape SVG, because that is what the design is.
+     **File size and "primitives only" are not evidence of fabrication; a failed byte-comparison
+     against the cited source is.** Re-download the cited file and compare sha256 before deleting
+     anything — a wrongly deleted real logo is as bad as a fabricated one.
 
 6. **Verify in the running app** (mandatory visual-verification rule applies): Open the country's Political parties grid, confirm every party card displays a logo (or honest `noImageReason` note), and that logos visually represent the correct party/emblem (not a flag, not a placeholder).
 

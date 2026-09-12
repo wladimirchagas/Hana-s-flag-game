@@ -194,6 +194,17 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "Not a government formed after an election: Switzerland's executive is a standing coalition of its four largest parties, in approximate proportion to their strength in the Federal Assembly, and it does not change when the National Council does. The Greens, Green Liberals and the smaller parties hold no seat on it.",
   },
+  "BD-GOV": {
+    id: "BD-GOV",
+    name: "Tarique Rahman ministry",
+    kind: "coalition",
+    memberPartyIds: ["BD-BNP", "BD-BJP", "BD-GSA", "BD-GOP"],
+    source: {
+      title: "Tarique Rahman ministry — Wikipedia: a majority coalition formed on 17 February 2026 of the Bangladesh Nationalist Party, Bangladesh Jatiya Party, Gono Odhikar Parishad and Ganosamhati Andolan",
+      url: "https://en.wikipedia.org/wiki/Tarique_Rahman_ministry",
+    },
+    note: "Formed after the 12 February 2026 general election, the first since the fall of the previous government. The BNP holds 246 of the coalition's 249 seats; its three partners hold one each, and seven independents support it on confidence and supply.",
+  },
   "CZ-GOV": {
     id: "CZ-GOV",
     name: "Třetí vláda Andreje Babiše",
@@ -10671,30 +10682,333 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "BD-BNP",
       "country": "BD",
       "shortName": "BNP",
-      "name": "Bangladesh Nationalist Party",
+      "name": "বাংলাদেশ জাতীয়তাবাদী দল",
       "nameEn": "Bangladesh Nationalist Party",
       "logo": "party-logos/bd/bnp.png",
       "sha256": "02bfaa736c96f82cb32e8ce50147d752efc89a7024349ef73e70d80763622086",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Bangladesh_Nationalist_Party_symbol.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:BNP_logo.png",
       "ideology": [
         "Conservatism",
-        "Nationalism",
-        "Right-wing populism"
+        "Economic liberalism",
+        "Liberalism",
+        "Big tent"
       ],
-      "ideologyPosition": "right",
-      "positionRaw": "Right-wing",
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
       "founded": 1978,
-      "leader": "Begum Khaleda Zia",
-      "leaderTitle": "Chairperson",
-      "inPower": false,
-      "seats": 0,
-      "seatsTotal": 272,
+      "coalitionId": "BD-GOV",
+      "leader": "Tarique Rahman",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2026–present",
+      "seats": 246,
+      "seatsTotal": 350,
       "chamberName": "Jatiya Sangsad",
       "sources": [
         {
-          "title": "Bangladesh Nationalist Party - Wikipedia",
+          "title": "Bangladesh Nationalist Party – Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Bangladesh_Nationalist_Party"
+        },
+        {
+          "title": "Jatiya Sangsad — Wikipedia: composition after the 12 February 2026 general election",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Sangsad"
+        },
+        {
+          "title": "Tarique Rahman ministry — Wikipedia: a majority coalition formed on 17 February 2026",
+          "url": "https://en.wikipedia.org/wiki/Tarique_Rahman_ministry"
+        }
+      ]
+    },
+    {
+      "id": "BD-JAMAAT",
+      "country": "BD",
+      "shortName": "Jamaat",
+      "name": "বাংলাদেশ জামায়াতে ইসলামী",
+      "nameEn": "Bangladesh Jamaat-e-Islami",
+      "logo": "party-logos/bd/jamaat.svg",
+      "sha256": "a3961d14c6ac10e1da9ce5652517524d6482affa462afd2776ecb3e1381383eb",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Bangladesh_Jamaat-e-Islami_Emblem.svg",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 1979,
+      "leader": "Shafiqur Rahman",
+      "leaderTitle": "Emir",
+      "inPower": false,
+      "seats": 76,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Bangladesh Jamaat-e-Islami – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bangladesh_Jamaat-e-Islami"
+        },
+        {
+          "title": "Jatiya Sangsad — Wikipedia: composition after the 12 February 2026 general election",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Sangsad"
+        }
+      ]
+    },
+    {
+      "id": "BD-NCP",
+      "country": "BD",
+      "shortName": "NCP",
+      "name": "জাতীয় নাগরিক পার্টি",
+      "nameEn": "National Citizen Party",
+      "logo": "party-logos/bd/ncp.svg",
+      "sha256": "791ac965021ab6fd0bf9954b5ca1ea8bf45f86c18d01edb76d81ce133d301bb9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%A8%E0%A6%BE%E0%A6%97%E0%A6%B0%E0%A6%BF%E0%A6%95_%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%B0_%E0%A6%B2%E0%A7%8B%E0%A6%97%E0%A7%8B.svg",
+      "ideology": [
+        "Reformism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2025,
+      "leader": "Nahid Islam",
+      "leaderTitle": "Convener",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "National Citizen Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Citizen_Party"
+        },
+        {
+          "title": "Jatiya Sangsad — Wikipedia: composition after the 12 February 2026 general election",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Sangsad"
+        }
+      ]
+    },
+    {
+      "id": "BD-BKM",
+      "country": "BD",
+      "shortName": "BKM",
+      "name": "বাংলাদেশ খেলাফত মজলিস",
+      "nameEn": "Bangladesh Khelafat Majlis",
+      "noImageReason": "Searched for a Bangladesh Khelafat Majlis emblem and found none that can be bundled: Wikimedia Commons holds only photographs and a lapel-pin image, no logo file; the party has no English Wikipedia article, so no infobox logo exists; and Wikidata records no P154 logo image under Bangladesh (P17). No usable file was reachable from the party's own website or the Elects network either. The file that previously sat in this repository for it was hand-drawn SVG primitives and has been deleted.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Jatiya Sangsad — Wikipedia: composition after the 12 February 2026 general election",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Sangsad"
+        }
+      ]
+    },
+    {
+      "id": "BD-BJP",
+      "country": "BD",
+      "shortName": "BJP",
+      "name": "বাংলাদেশ জাতীয় পার্টি",
+      "nameEn": "Bangladesh Jatiya Party",
+      "logo": "party-logos/bd/jatiya-party-naziur.png",
+      "sha256": "d26a015fd179e14e70250f38565d74624e51b51925ec64b7677b84f688899cca",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Bangladesh_Jatiya_Party_Naizur.png",
+      "ideology": [
+        "Bangladeshi nationalism"
+      ],
+      "ideologyPosition": "other",
+      "coalitionId": "BD-GOV",
+      "leader": "Andaleeve Rahman Partho",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2026–present",
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Bangladesh Jatiya Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bangladesh_Jatiya_Party"
+        },
+        {
+          "title": "Jatiya Sangsad — Wikipedia: composition after the 12 February 2026 general election",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Sangsad"
+        },
+        {
+          "title": "Tarique Rahman ministry — Wikipedia: a majority coalition formed on 17 February 2026",
+          "url": "https://en.wikipedia.org/wiki/Tarique_Rahman_ministry"
+        }
+      ]
+    },
+    {
+      "id": "BD-GSA",
+      "country": "BD",
+      "shortName": "GSA",
+      "name": "গণসংহতি আন্দোলন",
+      "nameEn": "Ganosanhati Andolan",
+      "logo": "party-logos/bd/ganosanhati.svg",
+      "sha256": "11a3eeb1ba5ad43b1e7984a46e044af254b7fc54ba5ccc1a2265a4a94e658c52",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%A6%97%E0%A6%A3%E0%A6%B8%E0%A6%82%E0%A6%B9%E0%A6%A4%E0%A6%BF_%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8B%E0%A6%B2%E0%A6%A8.svg",
+      "ideology": [
+        "Egalitarianism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2002,
+      "coalitionId": "BD-GOV",
+      "leader": "Dewan Abdur Rashid Nilu",
+      "leaderTitle": "Chief Coordinator",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2026–present",
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Ganosanhati Andolan – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ganosamhati_Andolan"
+        },
+        {
+          "title": "Jatiya Sangsad — Wikipedia: composition after the 12 February 2026 general election",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Sangsad"
+        },
+        {
+          "title": "Tarique Rahman ministry — Wikipedia: a majority coalition formed on 17 February 2026",
+          "url": "https://en.wikipedia.org/wiki/Tarique_Rahman_ministry"
+        }
+      ]
+    },
+    {
+      "id": "BD-GOP",
+      "country": "BD",
+      "shortName": "GOP",
+      "name": "গণ অধিকার পরিষদ",
+      "nameEn": "Gono Odhikar Parishad",
+      "logo": "party-logos/bd/gono-odhikar-parishad.svg",
+      "sha256": "ceef62b1471ce0552d3a7aeae81cd99568873f190874e4c46020f2a14b95afb5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%A6%97%E0%A6%A3%E0%A6%85%E0%A6%A7%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0_%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B7%E0%A6%A6%E0%A7%87%E0%A6%B0_%E0%A6%B2%E0%A7%8B%E0%A6%97%E0%A7%8B.svg",
+      "ideology": [],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2021,
+      "coalitionId": "BD-GOV",
+      "leader": "Nurul Haque Nur",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2026–present",
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Gono Odhikar Parishad – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gono_Odhikar_Parishad"
+        },
+        {
+          "title": "Jatiya Sangsad — Wikipedia: composition after the 12 February 2026 general election",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Sangsad"
+        },
+        {
+          "title": "Tarique Rahman ministry — Wikipedia: a majority coalition formed on 17 February 2026",
+          "url": "https://en.wikipedia.org/wiki/Tarique_Rahman_ministry"
+        }
+      ]
+    },
+    {
+      "id": "BD-JGP",
+      "country": "BD",
+      "shortName": "JGP",
+      "name": "জাতীয় গণতান্ত্রিক পার্টি",
+      "nameEn": "Jatiya Ganotantrik Party",
+      "logo": "party-logos/bd/jgp.svg",
+      "sha256": "bb7d6a12fb99788e02d1eeff4b8bf0718ce0ffe6ac90050f515b0cad8643ce25",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Jagpa.svg",
+      "ideology": [
+        "Bangladeshi nationalism",
+        "Conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1980,
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Jatiya Ganotantrik Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Ganotantrik_Party"
+        },
+        {
+          "title": "Jatiya Sangsad — Wikipedia: composition after the 12 February 2026 general election",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Sangsad"
+        }
+      ]
+    },
+    {
+      "id": "BD-KM",
+      "country": "BD",
+      "shortName": "KM",
+      "name": "খেলাফত মজলিস",
+      "nameEn": "Khelafat Majlis",
+      "logo": "party-logos/bd/khelafat-majlis.png",
+      "sha256": "5b41bb8df59a405bae575e92215f7e0353ced593e7da72eba9bccb01f6c0f3ad",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Khelafat_Majlis_Official_Logo.png",
+      "ideology": [
+        "Islamism",
+        "Islamic fundamentalism",
+        "Pan-Islamism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1989,
+      "leader": "Abdul Basit Azad",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Khelafat Majlis – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khelafat_Majlis"
+        },
+        {
+          "title": "Jatiya Sangsad — Wikipedia: composition after the 12 February 2026 general election",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Sangsad"
+        }
+      ]
+    },
+    {
+      "id": "BD-IAB",
+      "country": "BD",
+      "shortName": "IAB",
+      "name": "ইসলামী আন্দোলন বাংলাদেশ",
+      "nameEn": "Islami Andolan Bangladesh",
+      "logo": "party-logos/bd/iab.png",
+      "sha256": "dfebe3551c1f5e44bcec37107615ab252f834d933b589bc6660fead94afc20bf",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Hand_fan%2C_Election_Symbol_of_the_Islami_Andolan_Bangladesh.png",
+      "ideology": [
+        "Islamism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1987,
+      "leader": "Syed Rezaul Karim",
+      "leaderTitle": "Ameer",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 350,
+      "chamberName": "Jatiya Sangsad",
+      "sources": [
+        {
+          "title": "Islami Andolan Bangladesh – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Islami_Andolan_Bangladesh"
+        },
+        {
+          "title": "Jatiya Sangsad — Wikipedia: composition after the 12 February 2026 general election",
+          "url": "https://en.wikipedia.org/wiki/Jatiya_Sangsad"
         }
       ]
     }
