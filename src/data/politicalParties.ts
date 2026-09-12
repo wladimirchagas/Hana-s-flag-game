@@ -194,6 +194,18 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "Not a government formed after an election: Switzerland's executive is a standing coalition of its four largest parties, in approximate proportion to their strength in the Federal Assembly, and it does not change when the National Council does. The Greens, Green Liberals and the smaller parties hold no seat on it.",
   },
+  "CZ-GOV": {
+    id: "CZ-GOV",
+    name: "Třetí vláda Andreje Babiše",
+    nameEn: "Third cabinet of Andrej Babiš",
+    kind: "coalition",
+    memberPartyIds: ["CZ-ANO", "CZ-SPD", "CZ-AUTO"],
+    source: {
+      title: "Third cabinet of Andrej Babiš — Wikipedia: an ANO–SPD–Motorists majority coalition formed on 15 December 2025, holding 108 of the Chamber's 200 seats",
+      url: "https://en.wikipedia.org/wiki/Third_cabinet_of_Andrej_Babi%C5%A1",
+    },
+    note: "The three cabinet parties hold 76, 11 and 6 seats in their own right; the government's 108-seat majority also counts 13 independents elected on their lists plus PRO, Svobodní and Tricolour, who sit inside the SPD group without holding cabinet office.",
+  },
   "DK-GOV": {
     id: "DK-GOV",
     name: "Regeringen Frederiksen III",
@@ -18521,22 +18533,22 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "CZ",
       "shortName": "ANO",
       "name": "ANO 2011",
-      "nameEn": "ANO 2011",
       "logo": "party-logos/cz/ano.svg",
       "sha256": "5668110ef7e9dbfb39f25b10cb91970079c80567e10e6c4254c9290ef4022d62",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:ANO_Logo.svg",
       "ideology": [
-        "Centrist",
-        "Anti-corruption",
-        "Populism"
+        "Right-wing populism"
       ],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centrist",
-      "founded": 2011,
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2012,
+      "coalitionId": "CZ-GOV",
       "leader": "Andrej Babiš",
-      "leaderTitle": "Chairman",
-      "inPower": false,
-      "seats": 101,
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2025–present",
+      "seats": 76,
       "seatsTotal": 200,
       "chamberName": "Chamber of Deputies",
       "sources": [
@@ -18545,42 +18557,144 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "url": "https://en.wikipedia.org/wiki/ANO_2011"
         },
         {
-          "title": "2021 Czech legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2021_Czech_legislative_election"
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
+        },
+        {
+          "title": "Third cabinet of Andrej Babiš — Wikipedia: an ANO–SPD–Motorists majority coalition formed on 15 December 2025",
+          "url": "https://en.wikipedia.org/wiki/Third_cabinet_of_Andrej_Babi%C5%A1"
         }
       ]
     },
     {
-      "id": "CZ-CSSD",
+      "id": "CZ-ODS",
       "country": "CZ",
-      "shortName": "ČSSD",
-      "name": "Czech Social Democratic Party",
-      "nameEn": "Czech Social Democratic Party",
-      "logo": "party-logos/cz/cssd.svg",
-      "sha256": "d0b3fb8b69d792fa5ca93d92d621ad413fd161fff0ab823a2e7654fd6a93de51",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Social_Democracy_(Czech_Republic).svg",
+      "shortName": "ODS",
+      "name": "Občanská demokratická strana",
+      "nameEn": "Civic Democratic Party",
+      "logo": "party-logos/cz/ods.svg",
+      "sha256": "fd95147375d8605a6f8c646a7148d7264746932cea4fb41c59177609cc681995",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_ODS_inverse_version.svg",
       "ideology": [
-        "Centre-left",
-        "Social democracy",
-        "Post-communist"
+        "Conservatism"
       ],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
-      "founded": 1990,
-      "leader": "Petr Nečas",
-      "leaderTitle": "Party Chairman",
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1991,
+      "leader": "Martin Kupka",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 0,
+      "seats": 26,
       "seatsTotal": 200,
       "chamberName": "Chamber of Deputies",
       "sources": [
         {
-          "title": "Czech Social Democratic Party – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Czech_Social_Democratic_Party"
+          "title": "Civic Democratic Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Civic_Democratic_Party"
         },
         {
-          "title": "2021 Czech legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2021_Czech_legislative_election"
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
+        }
+      ]
+    },
+    {
+      "id": "CZ-STAN",
+      "country": "CZ",
+      "shortName": "STAN",
+      "name": "Starostové a nezávislí",
+      "nameEn": "Mayors and Independents",
+      "logo": "party-logos/cz/stan.svg",
+      "sha256": "695f4acae51393f6a0b620ccf0693ffb87034311d867f0dc2c5d469a59edf686",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_STAROSTOV%C3%89.svg",
+      "ideology": [
+        "Localism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2004,
+      "leader": "Vít Rakušan",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 20,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Mayors and Independents – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mayors_and_Independents"
+        },
+        {
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
+        }
+      ]
+    },
+    {
+      "id": "CZ-PIRATI",
+      "country": "CZ",
+      "shortName": "Piráti",
+      "name": "Česká pirátská strana",
+      "nameEn": "Czech Pirate Party",
+      "logo": "party-logos/cz/pirates.svg",
+      "sha256": "a50e024fd4cc9087bcce6205eb7f0c33a2162e50b9c54864f2b8b3a1ad0e1756",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Czech_Pirate_Party_logo_2017.svg",
+      "ideology": [
+        "Pirate politics",
+        "Progressivism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2009,
+      "leader": "Zdeněk Hřib",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Czech Pirate Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Czech_Pirate_Party"
+        },
+        {
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
+        }
+      ]
+    },
+    {
+      "id": "CZ-KDU",
+      "country": "CZ",
+      "shortName": "KDU-ČSL",
+      "name": "Křesťanská a demokratická unie – Československá strana lidová",
+      "nameEn": "Christian and Democratic Union – Czechoslovak People's Party",
+      "logo": "party-logos/cz/kdu.svg",
+      "sha256": "6c185a4c90fa55e7ce22984488c6a41fb2d7d72052bba3c7a3fdf30e9adf9f96",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:KDU-%C4%8CSL_Logo.svg",
+      "ideology": [
+        "Christian democracy",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1919,
+      "leader": "Jan Grolich",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "KDU-ČSL – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/KDU-%C4%8CSL"
+        },
+        {
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
         }
       ]
     },
@@ -18588,23 +18702,26 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "CZ-SPD",
       "country": "CZ",
       "shortName": "SPD",
-      "name": "Freedom and Direct Democracy",
+      "name": "Svoboda a přímá demokracie",
       "nameEn": "Freedom and Direct Democracy",
       "logo": "party-logos/cz/spd.svg",
       "sha256": "f459f9c611271ebdf7dd9859cc774395baf2a8d70de6c368b9abc038e46d38ec",
       "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SPD_Czechia_logo_(2026).svg",
       "ideology": [
-        "Right-wing",
-        "Euroscepticism",
-        "Populism"
+        "Nationalism",
+        "Hard Euroscepticism",
+        "Right-wing populism"
       ],
-      "ideologyPosition": "right",
-      "positionRaw": "Right-wing",
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
       "founded": 2015,
+      "coalitionId": "CZ-GOV",
       "leader": "Tomio Okamura",
-      "leaderTitle": "Chairman",
-      "inPower": false,
-      "seats": 6,
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2025–present",
+      "seats": 11,
       "seatsTotal": 200,
       "chamberName": "Chamber of Deputies",
       "sources": [
@@ -18613,8 +18730,261 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "url": "https://en.wikipedia.org/wiki/Freedom_and_Direct_Democracy"
         },
         {
-          "title": "2021 Czech legislative election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2021_Czech_legislative_election"
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
+        },
+        {
+          "title": "Third cabinet of Andrej Babiš — Wikipedia: an ANO–SPD–Motorists majority coalition formed on 15 December 2025",
+          "url": "https://en.wikipedia.org/wiki/Third_cabinet_of_Andrej_Babi%C5%A1"
+        }
+      ]
+    },
+    {
+      "id": "CZ-TOP09",
+      "country": "CZ",
+      "shortName": "TOP 09",
+      "name": "TOP 09",
+      "logo": "party-logos/cz/top09.svg",
+      "sha256": "cea3e4e0b4caa4bcc86816a7dcd47a8531f436be790ea1815bb394585e14e5af",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_TOP_09_(2021).svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Christian democracy",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2009,
+      "leader": "Matěj Ondřej Havel",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 9,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "TOP 09 – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/TOP_09"
+        },
+        {
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
+        }
+      ]
+    },
+    {
+      "id": "CZ-AUTO",
+      "country": "CZ",
+      "shortName": "Motoristé",
+      "name": "Motoristé sobě",
+      "nameEn": "Motorists for Themselves",
+      "logo": "party-logos/cz/auto.svg",
+      "sha256": "074641f2702282b69ad7648666bc0fcf5bd1140e4c30f65c23b3e0dcdb85cd05",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Motorist%C3%A9_sob%C4%9B_logo.svg",
+      "ideology": [
+        "Right-wing populism",
+        "National conservatism",
+        "Anti-environmentalism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2017,
+      "coalitionId": "CZ-GOV",
+      "leader": "Petr Macinka",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2025–present",
+      "seats": 6,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Motorists for Themselves – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Motorists_for_Themselves"
+        },
+        {
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
+        },
+        {
+          "title": "Third cabinet of Andrej Babiš — Wikipedia: an ANO–SPD–Motorists majority coalition formed on 15 December 2025",
+          "url": "https://en.wikipedia.org/wiki/Third_cabinet_of_Andrej_Babi%C5%A1"
+        }
+      ]
+    },
+    {
+      "id": "CZ-SLK",
+      "country": "CZ",
+      "shortName": "SLK",
+      "name": "Starostové pro Liberecký kraj",
+      "nameEn": "Mayors for the Liberec Region",
+      "logo": "party-logos/cz/slk.png",
+      "sha256": "40bd88654a43648251fcba55c499325e305b60a1285f247e6282797b686fd645",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_-_Starostov%C3%A9_pro_Libereck%C3%BD_kraj_2023.png",
+      "ideology": [
+        "Regionalism",
+        "Subsidiarity",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2008,
+      "leader": "Martin Půta",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Mayors for the Liberec Region – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mayors_for_the_Liberec_Region"
+        },
+        {
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
+        }
+      ]
+    },
+    {
+      "id": "CZ-ZELENI",
+      "country": "CZ",
+      "shortName": "Zelení",
+      "name": "Strana zelených",
+      "nameEn": "Green Party",
+      "logo": "party-logos/cz/zeleni.png",
+      "sha256": "1869b974d409763141c445b51870617e5a2592710dce84cc6bc262a90c4d21a9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:StranaZelenychLogo.png",
+      "ideology": [
+        "Green politics",
+        "Social liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1990,
+      "leader": "Matěj Pomahač; Gabriela Svárovská",
+      "leaderTitle": "Co-leaders",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Green Party (Czech Republic) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Green_Party_(Czech_Republic)"
+        },
+        {
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
+        }
+      ]
+    },
+    {
+      "id": "CZ-PRO",
+      "country": "CZ",
+      "shortName": "PRO",
+      "name": "Právo Respekt Odbornost",
+      "nameEn": "Law, Respect, Expertise",
+      "logo": "party-logos/cz/pro.svg",
+      "sha256": "5932b30f16f810cf551ef4129a03e6a73eb458544d398145a760acf62ffe0986",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Pr%C3%A1vo_Respekt_Odbornost.svg",
+      "ideology": [
+        "National conservatism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2022,
+      "leader": "Jindřich Rajchl",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "2025–present",
+      "seats": 1,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Law, Respect, Expertise – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Law,_Respect,_Expertise"
+        },
+        {
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
+        }
+      ]
+    },
+    {
+      "id": "CZ-SVOBODNI",
+      "country": "CZ",
+      "shortName": "Svobodní",
+      "name": "Svobodní",
+      "nameEn": "Party of Free Citizens",
+      "logo": "party-logos/cz/svobodni.svg",
+      "sha256": "22e013ea060200c84589d5c3879f841a47c5255ef84a875ca9e89143c75a514f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Svobodn%C3%AD.svg",
+      "ideology": [
+        "Classical liberalism",
+        "National conservatism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2009,
+      "leader": "Libor Vondráček",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "2025–present",
+      "seats": 1,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Party of Free Citizens – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Party_of_Free_Citizens"
+        },
+        {
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
+        }
+      ]
+    },
+    {
+      "id": "CZ-TRIKOLORA",
+      "country": "CZ",
+      "shortName": "Trikolora",
+      "name": "Trikolora",
+      "nameEn": "Tricolour",
+      "logo": "party-logos/cz/trikolora.png",
+      "sha256": "46a238bfc8dbeb12503892950e6ab6517a6c79d0a4f2b44ef645bc551209d0b9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Trikolora.png",
+      "ideology": [
+        "National conservatism",
+        "Fiscal conservatism",
+        "Hard Euroscepticism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2019,
+      "leader": "Zuzana Majerová",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "2025–present",
+      "seats": 1,
+      "seatsTotal": 200,
+      "chamberName": "Chamber of Deputies",
+      "sources": [
+        {
+          "title": "Tricolour (political party) – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tricolour_(political_party)"
+        },
+        {
+          "title": "Chamber of Deputies of the Czech Republic — Wikipedia: composition after the 3–4 October 2025 election",
+          "url": "https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Czech_Republic"
         }
       ]
     }
