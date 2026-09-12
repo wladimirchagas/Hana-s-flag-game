@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 54 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 55 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -104,7 +104,8 @@ forgotten; it is tracked here.
 | 🇨🇾 Cyprus | `#1368` | 0 → 6 | **56 / 56** | **Absent from the dataset entirely; a general election in May 2026 had replaced three parties with two** |
 | 🇬🇪 Georgia | `#1369` | 3 → 4 | 101 / 150 (49 vacant) | **Two of three entries held no seats after 49 opposition mandates were revoked; the three parties that do sit were missing** |
 | 🇮🇳 India | `#1370` | 4 → 43 | 536 / 543 | **Thirty-nine seated parties missing; the TMC had lost 20 MPs to a new NDA party and the DMK's count was its alliance's** |
-| 🇮🇱 Israel | `#1371` | 3 → 15 | **120 / 120** | **Ten factions missing; the coalition and the government had come apart in 2025 and neither was modelled** |
+| 🇮🇱 Israel | `#1374` | 3 → 15 | **120 / 120** | **Ten factions missing; the coalition and the government had come apart in 2025 and neither was modelled** |
+| 🇮🇶 Iraq | *(see PR)* | 0 → 41 | 320 / 329 (9 minority-quota) | **Absent entirely; a 329-seat chamber elected in November 2025 with 41 seated lists** |
 
 ---
 
@@ -2055,6 +2056,57 @@ declared. All fifteen were montage-verified — every one is the party's own Heb
 
 ---
 
+### 🇮🇶 Iraq — audited 2026-09-12
+
+**Iraq was not in the dataset at all** — a 329-seat chamber, 41 seated lists, no entry. It held a
+general election on **11 November 2025**, certified by the Independent High Electoral Commission on
+17 November and ratified by the Federal Supreme Court on 14 December.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-306 | **S1** | coverage | **Iraq absent from `POLITICAL_PARTIES`** | **41 parties, 320 / 329** | Every list the IHEC's certified results seat |
+| PP-307 | **S2** | `inPower` / `inExecutive` | — | **8 in the cabinet, 4 supporting without portfolio** | The chamber's own groups: a State Administration Assembly of 243, of which 205 sit in the cabinet and the rest support it |
+| PP-308 | **S2** | `logo` | — | **a plain green star rejected for the Azem Alliance** | Its infobox's only candidate is Commons "Star Green.svg" — a generic shape, not an emblem. Same class as the Zhi Gong Party's four blue bars in the China audit |
+
+**The results table reconciles exactly: 329 of 329.** Of those, **9 are minority-quota seats** —
+five Christian, one each Feyli, Yazidi, Mandaean and Shabak — which the IHEC reports as candidate
+groupings rather than as parties, so they are not modelled and 320 is the correct party total.
+
+**The governing side is two tiers, and they are recorded separately.** Iraq's *State Administration
+Assembly* is a 243-seat governing bloc, but only 205 of those seats are in the cabinet:
+
+* **`inPower` + `inExecutive`** — the Reconstruction and Development Coalition (46), State of Law
+  (29), Al-Sadiqoun (27), Taqaddum (27), the KDP (26), Badr (18), the PUK (15) and Azem (15).
+* **`inPower`, `inExecutive: false`** — the Alliance of Nation State Forces (18), Al-Asas (8),
+  Tasmim (6) and Huqouq (6): in the governing assembly, holding no portfolio. The same
+  confidence-and-supply shape as Cyprus's DIKO and Israel's Shas.
+
+The prime minister, **Ali al-Zaidi**, is an **independent** and has held office since 14 May 2026,
+so no party's `timeInPower` claims the premiership itself.
+
+**Thirty of the 41 ship with a `noImageReason`, and twenty-three of those have no English Wikipedia
+article at all.** Iraq's chamber is unusually fragmented — governorate-level lists holding one to
+nine seats each — and the documentation thins out fast below the top ten. A country-constrained
+Wikidata sweep of **all 152 parties it records for Iraq** returned a P154 logo for almost none of
+them. Those lists are entered anyway, with their IHEC-certified name and seat count, because the
+party-logo rule is explicit that a seated party is never withheld for want of a picture: an
+omission the reader cannot see would make a 329-seat chamber look like a 251-seat one.
+
+**Thirty-one are filed `other`** for the same reason — no source places them on a left-right axis.
+Where a party does have a cited position it is used (the PUK centre-left, Badr and Al-Sadiqoun
+right-wing, the RDC and Azem centre).
+
+**A caveat on the chamber article's own arithmetic, recorded rather than silently reconciled.** Its
+group listing labels the non-cabinet tier "35" while the four lists under it sum to 38, and gives
+Al-Siyadah 8 where the certified results give 9. Seats here come from the **IHEC results table**,
+which sums exactly to 329; the chamber article is used only for the government/opposition split,
+which is the fact it is authoritative for.
+
+Eleven logos are bundled — six non-free English-Wikipedia files (declared) and five from Commons.
+All eleven were montage-verified; the twelfth candidate was the green star above, and it was dropped.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2267,7 +2319,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `HN` Honduras
 - [x] `IN` India — merged
 - [ ] `IR` Iran
-- [ ] `IQ` Iraq
+- [x] `IQ` Iraq — merged
 - [x] `IL` Israel — merged
 - [ ] `JM` Jamaica
 - [ ] `JP` Japan
