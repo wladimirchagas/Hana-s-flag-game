@@ -16112,33 +16112,6 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
-  "CN": [
-    {
-      "id": "CN-CPC",
-      "country": "CN",
-      "shortName": "CPC",
-      "name": "中国共产党",
-      "nameEn": "Communist Party of China",
-      "logo": "party-logos/CN/Communist Party of China.svg",
-      "sha256": "a4a5fde535e97fa92bbc16f677c5b3c5f82d287f746282eb1ce7deae372cc495",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Communist_Party_of_China.svg",
-      "ideology": ["Communism", "Marxism-Leninism", "Socialism"],
-      "ideologyPosition": "far-left",
-      "founded": 1921,
-      "leader": "Xi Jinping",
-      "leaderTitle": "General Secretary",
-      "inPower": true,
-      "seats": 2977,
-      "seatsTotal": 2977,
-      "chamberName": "National People's Congress",
-      "sources": [
-        {
-          "title": "Communist Party of China – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_China"
-        }
-      ]
-    }
-  ],
   "CV": [
     {
       "id": "CV-PAICV",
