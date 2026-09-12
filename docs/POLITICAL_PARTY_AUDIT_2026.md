@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 22 / 195 — Southeast Asia complete; South America under way.**
+**Countries audited: 23 / 195 — Southeast Asia complete; South America under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -68,6 +68,7 @@ forgotten; it is tracked here.
 | 🇧🇴 Bolivia | `#1332` | 3 → 6 | 129 / 130 | **WRONG — two invented parties, no government** |
 | 🇵🇾 Paraguay | `#1333` | 3 → 7 | 77 / 80 | **WRONG — a chamber size that never existed** |
 | 🇺🇾 Uruguay | `#1334` | 1 → 6 | **99 / 99** | **WRONG — a fabricated logo explainer** |
+| 🇬🇾 Guyana | `#1335` | 3 → 3 | 64 / 65 | **IMPOSSIBLE TOTAL — 72 seats in a 65-seat chamber** |
 
 ---
 
@@ -734,6 +735,42 @@ reconcile **exactly** — 99 of 99.
 
 ---
 
+### 🇬🇾 Guyana — audited 2026-09-12
+
+Guyana's three parties summed to **72 seats in a 65-seat chamber** — an arithmetically impossible
+total sitting in production, and the third country in this sweep whose numbers could have been
+falsified without leaving the dataset (after Singapore's 98-of-108 and Brazil's 515-of-513).
+
+The 13th Parliament was elected on 1 September 2025: **PPP/C 36** (government), **WIN 16**,
+**PNCR–APNU 12**, **Forward Guyana Movement 1**.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-113 | **S1** | `seats` | PPP/C 43 + APNU 25 + AFC 4 = **72 of 65** | **PPP/C 36, WIN 16, PNCR 12 = 64 of 65** | The Assembly's own composition. The old figures were the 2020 Parliament's, and even then did not sum |
+| PP-114 | **S1** | existence | **AFC** (Alliance For Change), 4 seats | **removed** | The AFC contested 2025 separately from APNU and won **no seats** |
+| PP-115 | **S1** | existence | **APNU** as a party, 25 seats | replaced by **PNCR** (12) | APNU is a coalition, not a party; the 12 seats are the PNCR's, which the Assembly lists as "PNCR–APNU" |
+| PP-116 | **S1** | coverage | **WIN** absent | **16 seats — the official opposition** | WIN was founded on 23 June 2025 and became the second-largest party in the chamber ten weeks later. Its leader, Azruddin Mohamed, is Leader of the Opposition |
+| PP-117 | **S2** | `noImageReason` | all three claimed no freely-licensed logo exists | **all three now carry one** | Two are non-free (declared); the PNCR's is a CC BY-SA file on Commons |
+| PP-118 | **S3** | `previousNames` | none | PPP (1950–1991); PNC (1957–1997) and PNC/R (1997–2001) | each party's own abbreviation history |
+
+**Two non-free logos, declared.** The PPP/C's and WIN's emblems exist only as fair-use files on
+English Wikipedia; both carry a `licenceNote` stating the copyright position, as for the non-free
+football crests and passport covers.
+
+**One judgement call, recorded.** The PNCR has no logo at all — its own Wikipedia infobox carries a
+`flag` and an empty `logo` field — so the bundled image is the **party's flag** (red/black/green with
+a palm tree in a white disc), which is the emblem the party itself uses. That is the party's own
+symbol, not a national or coalition flag, so it is not the parent-flag-collision case; it is recorded
+here so a later reviewer can see it was a decision rather than an accident.
+
+**Documented gap — 1 of the 65 seats.** The **Forward Guyana Movement** has no article on any
+Wikipedia, no logo file, and no sourceable founding year. Recorded, not hidden.
+
+All three logos were byte-checked against their extension and montage-verified. Guyana's three
+entries have left `GRANDFATHERED_PARTIES_WITH_NO_IMAGE`.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -768,7 +805,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `BO` Bolivia — merged
 - [x] `PY` Paraguay — merged
 - [x] `UY` Uruguay — merged
-- [ ] `GY` Guyana
+- [x] `GY` Guyana — merged
 - [ ] `SR` Suriname
 
 ### Phase 4 — United Kingdom, United States, Canada (3)

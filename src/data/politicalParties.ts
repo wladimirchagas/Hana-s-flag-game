@@ -16378,81 +16378,118 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "GY",
       "shortName": "PPP/C",
       "name": "People's Progressive Party/Civic",
-      "nameEn": "People's Progressive Party/Civic",
-      "noImageReason": "Logo search across Wikimedia Commons and party official sources; high-resolution freely-licensed logo not available. Party historically uses stylized text branding.",
-      "ideology": ["Social democracy", "Progressivism"],
-      "ideologyPosition": "left",
-      "positionRaw": "Left-wing",
-      "founded": 1950,
-      "leader": "Bharrat Jagdeo",
-      "leaderTitle": "Prime Minister",
-      "inPower": true,
-      "timeInPower": "2020-present",
-      "seats": 43,
-      "seatsTotal": 65,
-      "chamberName": "National Assembly",
-      "sources": [
-        {
-          "title": "2020 Guyanese general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Guyanese_general_election"
-        },
-        {
-          "title": "People's Progressive Party/Civic — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/People%27s_Progressive_Party/Civic"
-        }
-      ]
-    },
-    {
-      "id": "GY-APNU",
-      "country": "GY",
-      "shortName": "APNU",
-      "name": "A Partnership for National Unity",
-      "nameEn": "A Partnership for National Unity",
-      "noImageReason": "Logo search across Wikimedia Commons and Guyanese political archives; no freely-licensed high-resolution logo located.",
-      "ideology": ["Centre-right", "Conservatism"],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 2012,
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 25,
-      "seatsTotal": 65,
-      "chamberName": "National Assembly",
-      "sources": [
-        {
-          "title": "2020 Guyanese general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Guyanese_general_election"
-        },
-        {
-          "title": "A Partnership for National Unity — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/A_Partnership_for_National_Unity"
-        }
-      ]
-    },
-    {
-      "id": "GY-AFC",
-      "country": "GY",
-      "shortName": "AFC",
-      "name": "Alliance for Change",
-      "nameEn": "Alliance for Change",
-      "noImageReason": "Logo search across Wikimedia Commons, party website, and electoral archives; no freely-licensed vectorized logo available.",
-      "ideology": ["Liberalism", "Progressivism"],
+      "logo": "party-logos/gy/ppp.png",
+      "sha256": "208610189a68cca5b592ba357337ca42e555f05849c0d7ace63192063ff657a1",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:People%27s_Progressive_Party_Civic.png",
+      "licenceNote": "Non-free logo. No freely-licensed file of the People's Progressive Party/Civic emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, at low resolution for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Social democracy",
+        "Democratic centralism",
+        "Marxism–Leninism"
+      ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
-      "founded": 2005,
-      "inPower": false,
-      "inExecutive": false,
-      "seats": 4,
+      "founded": 1950,
+      "previousNames": [
+        {
+          "name": "People's Progressive Party",
+          "years": "1950–1991"
+        }
+      ],
+      "leader": "Bharrat Jagdeo",
+      "leaderTitle": "General Secretary",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In government since Irfaan Ali took office on 2 August 2020; re-elected in September 2025.",
+      "seats": 36,
       "seatsTotal": 65,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "2020 Guyanese general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Guyanese_general_election"
+          "title": "People's Progressive Party/Civic — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/People's_Progressive_Party%2FCivic"
         },
         {
-          "title": "Alliance for Change (Guyana) — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Alliance_for_Change_(Guyana)"
+          "title": "National Assembly (Guyana) — Wikipedia: 13th Parliament, 65 members elected 1 September 2025 — Government PPP/C 36; Opposition 29 (WIN 16, PNCR–APNU 12, Forward Guyana Movement 1)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Guyana)"
+        },
+        {
+          "title": "President of Guyana — Wikipedia (Irfaan Ali of the People's Progressive Party/Civic, in office since 2 August 2020)",
+          "url": "https://en.wikipedia.org/wiki/President_of_Guyana"
+        }
+      ]
+    },
+    {
+      "id": "GY-WIN",
+      "country": "GY",
+      "shortName": "WIN",
+      "name": "We Invest in Nationhood",
+      "logo": "party-logos/gy/win.png",
+      "sha256": "52837a27a8101623dc4f920ceb8974963df777174332fea7a121b5081a7ff0d2",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_We_Invest_in_Nationhood.png",
+      "licenceNote": "Non-free logo. No freely-licensed file of the We Invest in Nationhood emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, at low resolution for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Grassroots politics",
+        "Populism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2025,
+      "leader": "Azruddin Mohamed",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 65,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "We Invest in Nationhood — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/We_Invest_in_Nationhood"
+        },
+        {
+          "title": "National Assembly (Guyana) — Wikipedia: 13th Parliament, 65 members elected 1 September 2025 — Government PPP/C 36; Opposition 29 (WIN 16, PNCR–APNU 12, Forward Guyana Movement 1)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Guyana)"
+        }
+      ]
+    },
+    {
+      "id": "GY-PNCR",
+      "country": "GY",
+      "shortName": "PNCR",
+      "name": "People's National Congress Reform",
+      "logo": "party-logos/gy/pncr.svg",
+      "sha256": "f22efc9a2f0db85f9659cd1a62ef231a477a5ee17ae4eeead04ebff7e5fa54c0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:People%27s_National_Congress-Reform_Flag_%28Guyana%29.svg",
+      "ideology": [
+        "Moderate socialism",
+        "Afro-Guyanese interests"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1957,
+      "previousNames": [
+        {
+          "name": "People's National Congress",
+          "years": "1957–1997"
+        },
+        {
+          "name": "People's National Congress/Reform",
+          "years": "1997–2001"
+        }
+      ],
+      "leader": "Aubrey Norton",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 12,
+      "seatsTotal": 65,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "People's National Congress Reform — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/People's_National_Congress_Reform"
+        },
+        {
+          "title": "National Assembly (Guyana) — Wikipedia: 13th Parliament, 65 members elected 1 September 2025 — Government PPP/C 36; Opposition 29 (WIN 16, PNCR–APNU 12, Forward Guyana Movement 1)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Guyana)"
         }
       ]
     }
