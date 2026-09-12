@@ -319,6 +319,48 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "Cidadania voted to end membership in 2026",
   },
+  "VE-GPPSB": {
+    id: "VE-GPPSB",
+    name: "Gran Polo Patriótico Simón Bolívar",
+    nameEn: "Great Patriotic Pole Simón Bolívar",
+    kind: "coalition",
+    memberPartyIds: [
+      "VE-PSUV",
+      "VE-PPT",
+      "VE-MRT",
+      "VE-MSV",
+      "VE-PODEMOS",
+      "VE-APC",
+      "VE-MEP",
+      "VE-ORA",
+      "VE-UPV",
+    ],
+    source: {
+      title: "Gran Polo Patriótico Simón Bolívar — Wikipedia (es): the governing Chavista alliance founded 7 October 2011; holds 253 of the National Assembly's 285 seats",
+      url: "https://es.wikipedia.org/wiki/Gran_Polo_Patri%C3%B3tico_Sim%C3%B3n_Bol%C3%ADvar",
+    },
+    note: "The alliance holds 253 seats; the nine member parties listed here are the ones that hold them. Its wider membership also includes parties with no National Assembly seats.",
+  },
+  "VE-AD-ALLIANCE": {
+    id: "VE-AD-ALLIANCE",
+    name: "Alianza Democrática",
+    nameEn: "Democratic Alliance",
+    kind: "coalition",
+    memberPartyIds: [
+      "VE-AD",
+      "VE-PV",
+      "VE-PJ",
+      "VE-CMC",
+      "VE-CAMBIO",
+      "VE-AP",
+      "VE-COPEI",
+    ],
+    source: {
+      title: "Alianza Democrática (Venezuela) — Wikipedia (es): the opposition alliance that sits as a nine-member parliamentary group in the VI National Assembly",
+      url: "https://es.wikipedia.org/wiki/Alianza_Democr%C3%A1tica_(Venezuela)",
+    },
+    note: "Acción Democrática, Primero Justicia and Copei sit here through the ad hoc boards imposed by the Supreme Tribunal of Justice, not through the leaderships those parties themselves recognise.",
+  },
 };
 
 
@@ -16193,26 +16235,813 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PSUV",
       "name": "Partido Socialista Unido de Venezuela",
       "nameEn": "United Socialist Party of Venezuela",
-      "noImageReason": "Logo search across Wikimedia Commons, Venezuelan government archives, and international sources; no freely-licensed vectorized logo available.",
-      "ideology": ["Socialism", "Bolivarianism", "Authoritarianism"],
+      "logo": "party-logos/ve/psuv.svg",
+      "sha256": "61aa502492c3064645c21264e1325d2574d5411fdfecf06aacd13bd19c7a95f6",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PSUV_2024_logo.svg",
+      "ideology": [
+        "Socialism of the 21st century",
+        "Bolivarianism",
+        "Chavismo",
+        "Left-wing populism",
+        "State socialism",
+        "Anti-imperialism"
+      ],
       "ideologyPosition": "far-left",
-      "positionRaw": "Far-left",
-      "founded": 1997,
-      "leader": "Diosdado Cabello",
-      "leaderTitle": "Party Chairman",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 2007,
+      "coalitionId": "VE-GPPSB",
+      "leader": "Delcy Rodríguez",
+      "leaderTitle": "Party leader",
       "inPower": true,
       "inExecutive": true,
-      "seats": 277,
-      "seatsTotal": 277,
-      "chamberName": "National Assembly (disputed)",
+      "timeInPower": "Governing party since 2007; Chavismo has held the presidency since 1999.",
+      "seats": 219,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "2020 Venezuelan parliamentary election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Venezuelan_parliamentary_election"
+          "title": "Partido Socialista Unido de Venezuela — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Partido_Socialista_Unido_de_Venezuela"
         },
         {
-          "title": "United Socialist Party of Venezuela — Wikipedia",
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        },
+        {
+          "title": "Delcy Rodríguez — Wikipedia (PSUV; interim president of Venezuela since 2026, after Nicolás Maduro's capture during the United States intervention)",
+          "url": "https://en.wikipedia.org/wiki/Delcy_Rodr%C3%ADguez"
+        },
+        {
+          "title": "United Socialist Party of Venezuela — Wikipedia (founded 14 March 2007; 219 of 285 National Assembly seats)",
           "url": "https://en.wikipedia.org/wiki/United_Socialist_Party_of_Venezuela"
+        }
+      ]
+    },
+    {
+      "id": "VE-PPT",
+      "country": "VE",
+      "shortName": "PPT",
+      "name": "Patria Para Todos",
+      "nameEn": "Fatherland for All",
+      "logo": "party-logos/ve/ppt.png",
+      "sha256": "229208c0cc4232cc89e037bb829319fc5352678b10fe60b2728486cc96d21d3d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Tarjeta_electoral_Partido_Patria_Para_Todos.png",
+      "ideology": [
+        "Libertarian socialism",
+        "Libertarian municipalism",
+        "Democratic socialism",
+        "Egalitarianism",
+        "Internationalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1997,
+      "coalitionId": "VE-GPPSB",
+      "leader": "Ilenia Medina",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "seats": 8,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Patria Para Todos — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Patria_Para_Todos"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-MRT",
+      "country": "VE",
+      "shortName": "Tupamaro",
+      "name": "Movimiento Revolucionario Tupamaro",
+      "nameEn": "Tupamaro Revolutionary Movement",
+      "logo": "party-logos/ve/tupamaro.svg",
+      "sha256": "8b28492916b5e8943efb1af8afcf52c4b893893c225376cde005a2cacdb66c62",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Tupamaro.svg",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism",
+        "Guevarism",
+        "Left-wing nationalism",
+        "Revolutionary socialism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 1979,
+      "coalitionId": "VE-GPPSB",
+      "leader": "Williams Benavides",
+      "leaderTitle": "Secretary-General",
+      "inPower": true,
+      "seats": 7,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Movimiento Revolucionario Tupamaro — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Tupamaro_(Venezuela)"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-MSV",
+      "country": "VE",
+      "shortName": "MSV",
+      "name": "Movimiento Somos Venezuela",
+      "nameEn": "We Are Venezuela Movement",
+      "logo": "party-logos/ve/msv.png",
+      "sha256": "98fd29aa312f7d63414763fd4c8e198996d9b9adcc813c3b736d1628f8a752f4",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Somosvenex.png",
+      "ideology": [
+        "Chavismo",
+        "Socialism of the 21st century",
+        "Anti-imperialism",
+        "Left-wing nationalism",
+        "Democratic socialism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2018,
+      "previousNames": [
+        {
+          "name": "Nuevo Camino Revolucionario",
+          "nameEn": "New Revolutionary Path",
+          "years": "2008–2018"
+        }
+      ],
+      "coalitionId": "VE-GPPSB",
+      "leader": "Delcy Rodríguez",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "seats": 5,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Movimiento Somos Venezuela — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Movimiento_Somos_Venezuela"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-PODEMOS",
+      "country": "VE",
+      "shortName": "PODEMOS",
+      "name": "Por la Democracia Social",
+      "nameEn": "For Social Democracy",
+      "logo": "party-logos/ve/podemos.svg",
+      "sha256": "af332ada202ae09bf2b75d1d7c6892e9699403de7867a17a576ff3cb86bc3e19",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PODEMOS_Logo.svg",
+      "ideology": [
+        "Social democracy",
+        "Democratic socialism",
+        "Reformism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2002,
+      "coalitionId": "VE-GPPSB",
+      "leader": "Didalco Bolívar",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "seats": 4,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Por la Democracia Social — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Por_la_Democracia_Social"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-APC",
+      "country": "VE",
+      "shortName": "APC",
+      "name": "Alianza para el Cambio",
+      "nameEn": "Alliance for Change",
+      "logo": "party-logos/ve/apc.jpg",
+      "sha256": "4f77faa9d56d53588e17b764f594d9a3108df2e0e8f2958bdd7a362d15031e5e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Alianza_para_el_cambio_logo.jpeg",
+      "ideology": [
+        "Social democracy",
+        "Democratic socialism",
+        "Chavismo",
+        "Syndicalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2013,
+      "coalitionId": "VE-GPPSB",
+      "leader": "Carlos Vargas",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "seats": 3,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Alianza para el Cambio — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Alianza_para_el_Cambio_(Venezuela)"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-MEP",
+      "country": "VE",
+      "shortName": "MEP",
+      "name": "Movimiento Electoral del Pueblo",
+      "nameEn": "People's Electoral Movement",
+      "logo": "party-logos/ve/mep.svg",
+      "sha256": "a3a856aa05b9df1d9ee49918c0e7906b3ab965275d378e7bc53dfaa26a80e099",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Movimiento_Electoral_del_Pueblo.svg",
+      "ideology": [
+        "Socialism",
+        "Left-wing populism",
+        "Democratic socialism",
+        "Left-wing nationalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1967,
+      "coalitionId": "VE-GPPSB",
+      "leader": "Gilberto Giménez Prieto",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "seats": 3,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Movimiento Electoral del Pueblo — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Movimiento_Electoral_del_Pueblo"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-ORA",
+      "country": "VE",
+      "shortName": "ORA",
+      "name": "Organización Renovadora Auténtica",
+      "nameEn": "Authentic Renewal Organisation",
+      "logo": "party-logos/ve/ora.jpg",
+      "sha256": "5afe32904b634bbf9df2414fe33e6832ee41b226d9c68f55adbf656545ec50e3",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo-partido-organizacion-renovadora-autentica.jpg",
+      "ideology": [
+        "Christianity",
+        "Evangelicalism",
+        "Social conservatism",
+        "Pentecostalism",
+        "Christian socialism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Syncretic",
+      "founded": 1988,
+      "coalitionId": "VE-GPPSB",
+      "leader": "Roque Luis Reyes",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "seats": 2,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Organización Renovadora Auténtica — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Organizaci%C3%B3n_Renovadora_Aut%C3%A9ntica"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-UPV",
+      "country": "VE",
+      "shortName": "UPV",
+      "name": "Unidad Popular Venezolana",
+      "nameEn": "Venezuelan Popular Unity",
+      "logo": "party-logos/ve/upv.svg",
+      "sha256": "46085dae3b2eae9ad8868301a1f13a1a58fbc0621be4eefc02b2dc611e282891",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Unidad_Popular_Venezolana.svg",
+      "ideology": [
+        "Socialism",
+        "Bolivarianism",
+        "Chavismo",
+        "Anti-imperialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2004,
+      "coalitionId": "VE-GPPSB",
+      "inPower": true,
+      "seats": 2,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Unidad Popular Venezolana — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Unidad_Popular_Venezolana"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-UNT",
+      "country": "VE",
+      "shortName": "UNT",
+      "name": "Un Nuevo Tiempo",
+      "nameEn": "A New Era",
+      "logo": "party-logos/ve/unt.png",
+      "sha256": "6725c80c0913725d8e91d13cd37460ee248e75731d9b18abc28df75e5bc29461",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Un_Nuevo_Tiempo_logo.png",
+      "ideology": [
+        "Social democracy",
+        "Reformism",
+        "Democratic socialism",
+        "Keynesianism",
+        "Third Way",
+        "Regionalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1999,
+      "leader": "Manuel Rosales",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Un Nuevo Tiempo — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Un_Nuevo_Tiempo"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-UNICA",
+      "country": "VE",
+      "shortName": "UNICA",
+      "name": "Unión y Cambio",
+      "nameEn": "Union and Change",
+      "logo": "party-logos/ve/unica.jpg",
+      "sha256": "f2c08bc5c16002b5d013d800ac44ff6380402028c6c52af660dc5b213df1031a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:GqRp6FJXgAA6TRL.jpg",
+      "ideology": [
+        "Progressivism",
+        "Humanism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2025,
+      "leader": "Henrique Capriles",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Unión y Cambio — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Uni%C3%B3n_y_Cambio"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-LAPIZ",
+      "country": "VE",
+      "shortName": "LÁPIZ",
+      "name": "Alianza del Lápiz",
+      "nameEn": "Pencil Alliance",
+      "logo": "party-logos/ve/lapiz.svg",
+      "sha256": "d0c122726cf5befcf903dd6d4cc431918c3a30022b8d3a145f38fdfa776f395e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Alianza_del_L%C3%A1piz.svg",
+      "ideology": [
+        "Patriotism",
+        "Ordoliberalism",
+        "Anti-Chavismo"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2017,
+      "leader": "Antonio Ecarri",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Alianza del Lápiz — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Alianza_del_L%C3%A1piz"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-AD",
+      "country": "VE",
+      "shortName": "AD",
+      "name": "Acción Democrática",
+      "nameEn": "Democratic Action",
+      "logo": "party-logos/ve/ad.svg",
+      "sha256": "95fb7a4c6ce5beb8581c916d3621eb0d05663da5506fe5e0e4df54d897dd5208",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Acci%C3%B3n_Democr%C3%A1tica.svg",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1941,
+      "coalitionId": "VE-AD-ALLIANCE",
+      "leader": "Isabel Carmona de Serra",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Acción Democrática — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Acci%C3%B3n_Democr%C3%A1tica"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-PV",
+      "country": "VE",
+      "shortName": "PV",
+      "name": "Primero Venezuela",
+      "nameEn": "Venezuela First",
+      "logo": "party-logos/ve/pv.svg",
+      "sha256": "e14a9260e1e81cc75a1eeb0828d97ca09d63e24ca0bd0dfd8919eda58301cd89",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Primero_Venezuela.svg",
+      "ideology": [
+        "Humanism",
+        "Progressivism",
+        "Liberal democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2018,
+      "previousNames": [
+        {
+          "name": "Acción Ciudadana en Positivo",
+          "nameEn": "Positive Citizen Action",
+          "years": "2018–2020"
+        }
+      ],
+      "coalitionId": "VE-AD-ALLIANCE",
+      "leader": "Génesis Sabrina Ramírez",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Primero Venezuela — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Primero_Venezuela"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-PJ",
+      "country": "VE",
+      "shortName": "PJ",
+      "name": "Primero Justicia",
+      "nameEn": "Justice First",
+      "logo": "party-logos/ve/pj.svg",
+      "sha256": "0254a6ca9857a135517479d37c9af250ff3ca280c79272f4721cafa0cb3c2d88",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblema_Primero_Justicia.svg",
+      "ideology": [
+        "Humanism",
+        "Conservatism",
+        "Economic liberalism",
+        "Decentralisation"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2000,
+      "coalitionId": "VE-AD-ALLIANCE",
+      "leader": "Juan Pablo Guanipa",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Primero Justicia — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Primero_Justicia"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-CMC",
+      "country": "VE",
+      "shortName": "CMC",
+      "name": "Cambiemos Movimiento Ciudadano",
+      "nameEn": "Let's Change Citizens' Movement",
+      "logo": "party-logos/ve/cmc.svg",
+      "sha256": "db59a64d3289ef7711f7e82d040637257e75870722e1e798132486fdccceef8b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Cambiemos.svg",
+      "ideology": [
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2018,
+      "coalitionId": "VE-AD-ALLIANCE",
+      "leader": "Timoteo Zambrano",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Cambiemos Movimiento Ciudadano — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Cambiemos_Movimiento_Ciudadano"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-CAMBIO",
+      "country": "VE",
+      "shortName": "El Cambio",
+      "name": "Esperanza por El Cambio",
+      "nameEn": "Hope for Change",
+      "logo": "party-logos/ve/elcambio.svg",
+      "sha256": "563e60718ca255b41c5f9f05b961072608a642dbcac9b85dddcd48edf7bcfdb2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_El_Cambio_(2021).svg",
+      "ideology": [
+        "Christian democracy",
+        "Centrism",
+        "Christian humanism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2018,
+      "coalitionId": "VE-AD-ALLIANCE",
+      "leader": "Javier Bertucci",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Esperanza por El Cambio — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Esperanza_por_El_Cambio"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-AP",
+      "country": "VE",
+      "shortName": "AP",
+      "name": "Avanzada Progresista",
+      "nameEn": "Progressive Advance",
+      "logo": "party-logos/ve/ap.svg",
+      "sha256": "413c30f258bf3167751fe21bc0ee17adb0183669d0082fff46d66a6453797014",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Avanzada_Progresista.svg",
+      "ideology": [
+        "Progressivism",
+        "Social democracy",
+        "Latin Americanism",
+        "Non-interventionism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2012,
+      "coalitionId": "VE-AD-ALLIANCE",
+      "leader": "Eduardo Semtei",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Avanzada Progresista — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Avanzada_Progresista"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-COPEI",
+      "country": "VE",
+      "shortName": "Copei",
+      "name": "Copei",
+      "nameEn": "Christian Democratic Party of Venezuela",
+      "logo": "party-logos/ve/copei.svg",
+      "sha256": "709b2b947e5fb6b4a86ea5f2f6a96d2e1a54c99e6cebc54782bca4ba7e905da5",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:COPEILogo.svg",
+      "ideology": [
+        "Christian democracy",
+        "Catholic social teaching",
+        "Christian humanism",
+        "Christian liberalism",
+        "Anti-Chavismo"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1946,
+      "coalitionId": "VE-AD-ALLIANCE",
+      "leader": "Roberto Enríquez",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Copei — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Copei"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
+        }
+      ]
+    },
+    {
+      "id": "VE-FV",
+      "country": "VE",
+      "shortName": "FV",
+      "name": "Fuerza Vecinal",
+      "nameEn": "Neighborhood Force",
+      "logo": "party-logos/ve/fv.svg",
+      "sha256": "c9e53da0099bf0d633aba95a3608bc9121271e224911591c09aec41676cc8f57",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Fuerza_Vecinal.svg",
+      "ideology": [
+        "Big tent",
+        "Localism",
+        "Progressivism",
+        "Municipalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2021,
+      "leader": "Gustavo Duque",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 285,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Fuerza Vecinal — Wikipedia (es): ideology, political position, founding year and leadership",
+          "url": "https://es.wikipedia.org/wiki/Fuerza_Vecinal"
+        },
+        {
+          "title": "Asamblea Nacional de Venezuela — Wikipedia (VI Legislature, installed 5 January 2026; 285 seats: GPPSB 253 + 3 indigenous, Fracción Libertad 12, Alianza Democrática 9, Vamos Vamos Venezuela 8)",
+          "url": "https://es.wikipedia.org/wiki/Asamblea_Nacional_de_Venezuela"
+        },
+        {
+          "title": "National Assembly (Venezuela) — Wikipedia (285 seats; last elected 25 May 2025, partial international recognition)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Venezuela)"
         }
       ]
     }

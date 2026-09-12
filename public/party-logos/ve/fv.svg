@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Contours"
+   x="0px"
+   y="0px"
+   width="1080.219482"
+   height="482.192383"
+   viewBox="0.000000 0.000000 1080.219482 482.192383"
+   xml:space="preserve"
+   stroke="black"
+   fill="none"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   sodipodi:docname="Fuerza Vecinal FINAL REAL.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"><metadata
+   id="metadata33"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs31" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1360"
+   inkscape:window-height="705"
+   id="namedview29"
+   showgrid="false"
+   inkscape:zoom="0.66037323"
+   inkscape:cx="540.10902"
+   inkscape:cy="241.1"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Contours"
+   inkscape:document-rotation="0"
+   showguides="false" />
+<desc
+   id="desc2">
+</desc>
+<rect
+   style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:0.400998"
+   id="rect858"
+   width="1080.118"
+   height="233.091"
+   x="0.1"
+   y="249.10001" /><g
+   aria-label="VECINAL"
+   transform="scale(0.97651525,1.0240495)"
+   id="text860"
+   style="font-style:normal;font-weight:normal;font-size:212.231px;line-height:1.25;font-family:sans-serif;fill:#0e1733;fill-opacity:1;stroke:none;stroke-width:5.30577"><path
+     d="m 232.09735,399.12747 49.44983,-143.04369 h -27.80226 l -20.79864,65.36714 c -5.73024,17.40295 -10.82378,34.80589 -14.64394,51.78437 h -0.42446 c -3.82016,-17.40294 -8.48924,-34.16919 -14.00725,-52.20883 l -19.52525,-64.94268 h -28.43896 l 46.26636,143.04369 z"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Semi-Bold';fill:#0e1733;fill-opacity:1;stroke-width:5.30577"
+     id="path849" /><path
+     d="m 377.05109,314.4473 h -53.90667 v -36.92819 h 57.09014 V 256.08378 H 297.04 v 143.04369 h 86.37802 v -21.43533 h -60.2736 V 335.6704 h 53.90667 z"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Semi-Bold';fill:#0e1733;fill-opacity:1;stroke-width:5.30577"
+     id="path851" /><path
+     d="m 504.6018,374.29644 c -6.79139,3.18347 -17.8274,5.30578 -28.43895,5.30578 -31.41019,0 -49.87429,-20.16195 -49.87429,-51.57213 0,-34.38143 21.01087,-52.63329 50.08652,-52.63329 11.88494,0 21.2231,2.54677 28.01449,5.518 l 5.73024,-20.79863 c -5.30578,-2.75901 -17.61517,-6.36693 -34.80589,-6.36693 -43.71958,0 -76.40316,28.43895 -76.40316,75.55423 0,43.50736 27.59003,72.15854 73.00747,72.15854 17.19071,0 30.77349,-3.39569 36.92819,-6.57916 z"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Semi-Bold';fill:#0e1733;fill-opacity:1;stroke-width:5.30577"
+     id="path853" /><path
+     d="m 531.13053,256.08378 v 143.04369 h 26.10442 V 256.08378 Z"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Semi-Bold';fill:#0e1733;fill-opacity:1;stroke-width:5.30577"
+     id="path855" /><path
+     d="M 611.1416,399.12747 V 347.9798 c 0,-23.55764 -0.21223,-42.4462 -1.27339,-60.9103 l 0.6367,-0.21223 c 7.00362,16.12956 16.55401,33.74473 25.67995,49.23759 l 37.35265,63.03261 h 26.95334 V 256.08378 h -24.19433 v 49.87428 c 0,21.85979 0.63669,40.32389 2.33454,59.42468 h -0.42446 c -6.57916,-15.49286 -14.85617,-32.04688 -24.40657,-47.9642 L 616.87184,256.08378 H 587.1595 v 143.04369 z"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Semi-Bold';fill:#0e1733;fill-opacity:1;stroke-width:5.30577"
+     id="path857" /><path
+     d="m 804.69601,358.59135 12.94609,40.53612 h 28.0145 L 799.17801,256.08378 h -33.32027 l -45.8419,143.04369 h 26.95334 l 12.3094,-40.53612 z m -41.17281,-19.73748 11.03601,-35.23035 c 2.54677,-8.48924 4.66908,-18.4641 6.79139,-26.74111 h 0.42446 c 2.12231,8.27701 4.45685,18.03964 7.21586,26.74111 l 11.24824,35.23035 z"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Semi-Bold';fill:#0e1733;fill-opacity:1;stroke-width:5.30577"
+     id="path859" /><path
+     d="m 865.60621,399.12747 h 84.8924 v -21.85979 h -58.78798 v -121.1839 h -26.10442 z"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Semi-Bold';fill:#0e1733;fill-opacity:1;stroke-width:5.30577"
+     id="path861" /></g><rect
+   style="fill:#008ac3;fill-rule:evenodd;stroke:none;stroke-width:0.405331;fill-opacity:1"
+   id="rect884"
+   width="1080.218"
+   height="249.10001"
+   x="0"
+   y="0" /><g
+   aria-label="FUERZA"
+   transform="scale(0.93550919,1.0689366)"
+   id="text888"
+   style="font-style:normal;font-weight:normal;font-size:215.482px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.38706"><path
+     d="m 164.61621,221.99281 h 34.26164 v -57.96465 h 58.82658 v -27.5817 h -58.82658 v -31.89133 h 62.92074 V 76.757949 h -97.18238 z"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold Semi-Expanded';fill:#ffffff;stroke-width:5.38706"
+     id="path836" /><path
+     d="m 287.87161,76.757949 v 78.219961 c 0,49.56086 24.56495,69.60069 63.35171,69.60069 41.37254,0 66.79942,-21.76368 66.79942,-68.95424 V 76.757949 H 383.7611 v 79.943821 c 0,26.93525 -10.7741,41.15706 -31.02941,41.15706 -19.82434,0 -30.59844,-14.86826 -30.59844,-41.15706 V 76.757949 Z"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold Semi-Expanded';fill:#ffffff;stroke-width:5.38706"
+     id="path838" /><path
+     d="m 542.35557,133.6452 h -60.33496 v -29.09007 h 63.99815 V 76.757949 H 447.75897 V 221.99281 h 101.49202 v -27.79717 h -67.23038 v -32.75327 h 60.33496 z"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold Semi-Expanded';fill:#ffffff;stroke-width:5.38706"
+     id="path840" /><path
+     d="m 572.73853,221.99281 h 34.04615 v -56.67176 h 11.63603 c 14.86826,0.21548 21.33272,4.95608 26.07332,23.05657 4.74061,18.74694 8.4038,29.30555 10.7741,33.61519 h 35.12357 c -3.01675,-5.81801 -7.54187,-24.99591 -12.71344,-41.58802 -3.87868,-12.49796 -9.69669,-22.41013 -19.82434,-26.50429 v -0.64644 c 11.63602,-3.6632 26.71976,-16.16115 26.71976,-35.55453 0,-13.57537 -5.60253,-23.918504 -14.22181,-30.598446 -10.55862,-7.972833 -26.07332,-11.636027 -49.77634,-11.636027 -19.60886,0 -36.63194,1.508374 -47.837,3.23223 z m 34.04615,-120.02347 c 2.58579,-0.64644 7.75735,-1.29289 17.45404,-1.29289 15.73019,0 26.28881,6.24898 26.28881,19.82434 0,12.49796 -10.7741,20.25531 -28.22814,20.25531 h -15.51471 z"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold Semi-Expanded';fill:#ffffff;stroke-width:5.38706"
+     id="path842" /><path
+     d="m 700.51912,221.99281 h 124.33311 v -28.01266 h -76.92707 v -0.86192 l 75.4187,-98.044312 V 76.757949 H 707.41455 v 28.012661 h 69.81616 v 0.86193 l -76.71159,98.25979 z"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold Semi-Expanded';fill:#ffffff;stroke-width:5.38706"
+     id="path844" /><path
+     d="m 933.23942,183.42154 12.71344,38.57127 h 38.14031 L 933.23942,76.757949 H 887.12628 L 838.64283,221.99281 h 35.98549 l 11.63603,-38.57127 z m -41.58802,-25.42688 9.69669,-31.02941 c 2.58578,-8.40379 4.95608,-18.10048 7.1109,-26.2888 h 0.43097 c 2.58578,8.18832 5.38705,17.88501 8.18831,26.2888 l 10.55862,31.02941 z"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold Semi-Expanded';fill:#ffffff;stroke-width:5.38706"
+     id="path846" /></g>
+
+
+
+
+
+
+
+
+
+
+
+
+</svg>
