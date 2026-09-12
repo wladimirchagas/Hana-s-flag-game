@@ -756,81 +756,27 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "BT": [
     {
-      "id": "BT-BKP",
-      "country": "BT",
-      "shortName": "BKP",
-      "name": "Bhutan Kuen Nyam Party",
-      "logo": "party-logos/bt/bkp.png",
-      "sha256": "2373fc7f162ca99b86b4ea70eafc4ff09d40a0c5f3a0c61c9df0acf543441c62",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Bhutan_Kuen-Nyam_Party.png",
-      "licenceNote": "Non-free logo: the Bhutan Kuen Nyam Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
-      "ideology": [
-        "Centrism",
-        "Bhutanese nationalism"
-      ],
-      "ideologyPosition": "centre",
-      "founded": 2013,
-      "inPower": false,
-      "seats": 17,
-      "seatsTotal": 47,
-      "chamberName": "National Assembly",
-      "sources": [
-        {
-          "title": "2023 Bhutanese parliamentary election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Bhutanese_parliamentary_election"
-        }
-      ]
-    },
-    {
-      "id": "BT-DPT",
-      "country": "BT",
-      "shortName": "DPT",
-      "name": "Druk Phuensum Tshogpa",
-      "nameEn": "Bhutan Peace and Prosperity Party",
-      "logo": "party-logos/bt/dpt.png",
-      "sha256": "2c90f08cebd5cddecf7d8fa1a68a37aeb905f26a6c205cfe698b98af0d9b1274",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Bhutan_Peace_and_Prosperity_Party_logo.png",
-      "licenceNote": "Non-free logo: the Bhutan Peace and Prosperity Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
-      "ideology": [
-        "Conservatism",
-        "Buddhist traditionalism"
-      ],
-      "ideologyPosition": "right",
-      "founded": 2007,
-      "inPower": true,
-      "inExecutive": true,
-      "timeInPower": "2018–present",
-      "seats": 20,
-      "seatsTotal": 47,
-      "chamberName": "National Assembly",
-      "sources": [
-        {
-          "title": "Druk Phuensum Tshogpa – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Druk_Phuensum_Tshogpa"
-        },
-        {
-          "title": "2023 Bhutanese parliamentary election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Bhutanese_parliamentary_election"
-        }
-      ]
-    },
-    {
       "id": "BT-PDP",
       "country": "BT",
       "shortName": "PDP",
-      "name": "People's Democratic Party",
+      "name": "མི་སེར་དམངས་གཙོའི་ཚོགས་པ།",
+      "nameEn": "People's Democratic Party",
       "logo": "party-logos/bt/pdp.png",
       "sha256": "9bf11bd1dea3d746f68a18af459c254766d14cf67c6a4ee28ccbda4a55637949",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Pdp_official_logo.png",
       "licenceNote": "Non-free logo: the People's Democratic Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
       "ideology": [
-        "Socialism",
-        "Progressivism"
+        "Liberalism"
       ],
-      "ideologyPosition": "left",
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
       "founded": 2007,
-      "inPower": false,
-      "seats": 10,
+      "leader": "Tshering Tobgay",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "2024–present",
+      "seats": 31,
       "seatsTotal": 47,
       "chamberName": "National Assembly",
       "sources": [
@@ -839,8 +785,42 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           "url": "https://en.wikipedia.org/wiki/People%27s_Democratic_Party_(Bhutan)"
         },
         {
-          "title": "2023 Bhutanese parliamentary election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Bhutanese_parliamentary_election"
+          "title": "National Assembly (Bhutan) — Wikipedia: composition after the 2023–24 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Bhutan)"
+        }
+      ]
+    },
+    {
+      "id": "BT-BTP",
+      "country": "BT",
+      "shortName": "BTP",
+      "name": "བྷུ་ཊཱན་རྟེན་འབྲེལ་ཚོགས་པ།",
+      "nameEn": "Bhutan Tendrel Party",
+      "logo": "party-logos/bt/btp.png",
+      "sha256": "529f48cbe057181ac895c375509dd4a23fc444ca4f4cfd805f97f1f36aec53a5",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Bhutan_Tendrel_Party_logo.png",
+      "licenceNote": "Non-free logo: the Bhutan Tendrel Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
+      "ideology": [
+        "Royalism",
+        "Moderate conservatism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 2022,
+      "leader": "Pema Chewang",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 16,
+      "seatsTotal": 47,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Bhutan Tendrel Party – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bhutan_Tendrel_Party"
+        },
+        {
+          "title": "National Assembly (Bhutan) — Wikipedia: composition after the 2023–24 election",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Bhutan)"
         }
       ]
     }
