@@ -58,3 +58,17 @@ A separate origin has separate browser-local preferences/profile selection;
 existing stored data has not been migrated or deleted. Cross-origin profile
 connectivity still needs interactive validation. No production merge is authorized
 until the owner approves. Do not call this visually verified or fully accepted.
+
+
+## Deployment blocker — handoff
+
+The separate review source was pushed successfully. Its validated archive contains
+all 6,397 build files (about 363 MiB compressed), with none missing. Two native
+Sites `save_site_version` attempts failed with `failed to serialize JavaScript
+value: expected value at line 1 column 1`. Version reconciliation after each failure
+returned an empty list: no saved version, no deployment, and no working review URL.
+Do not claim the private site is published. The failure cause is not established;
+there is no evidence that removing assets would solve it, and that would violate
+the preservation requirement. Continue from draft PR #1373 and the same registered
+review project if hosting recovers; do not create a duplicate site. Alternatively,
+confirm the repository's intended branch-preview hosting path with the owner.
