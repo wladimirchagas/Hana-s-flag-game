@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 46 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 47 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -1682,6 +1682,38 @@ Assembly and belong to no party.
 
 Five logos are on Commons; four (YAP, ƏHD, the Motherland Party and the Justice/Law/Democracy Party)
 are non-free files on English Wikipedia and are declared. All nine were montage-verified.
+
+---
+
+### 🇦🇿 Azerbaijan — audited 2026-09-12 · current 2024 legislature
+
+Azerbaijan’s records still reflected the **2020** election: `AZ-YAP` was overstated at **113 of
+125**, while Müsavat was recorded as a seated party and the Popular Front as **0 seats**. The latter
+two do not hold seats in the National Assembly elected on **1 September 2024**.
+
+The current 125-seat Assembly is: **New Azerbaijan Party 68; Civic Solidarity 3; Justice, Law,
+Democracy 2; eight parties with one seat each; and 44 independents.** The country is not treated as
+a competitive parliamentary system—the OSCE found the election did not offer genuine alternatives—
+but it does have current seated parties and so remains within this dataset's stated scope.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-252 | **S1** | `seats` | YAP **113 / 125** | **68 / 125** | IPU Parline, the CEC result as reported by election monitors, and Europe Elects |
+| PP-253 | **S1** | scope | Müsavat **1 seat**; Popular Front **0 seats** | both **removed** | Neither is among the 2024 elected parties; a zero-seat record contradicts this file’s scope rule |
+| PP-254 | **S3** | coverage | 2 seated parties, 114 seats claimed | **11 parties, 81 seats** | Adds Civic Solidarity (3), Justice–Law–Democracy (2), and eight one-seat parties |
+| PP-255 | **S2** | executive status | one party marked `inPower` without `inExecutive` | YAP is now explicitly both; all other seated parties are not marked executive | YAP’s official programme and public institutional sources identify it as the ruling party |
+| PP-256 | **S4** | assets | two logos belonged only to removed historical records | obsolete `msip.svg` and `apf.svg` deleted | avoids shipping unreferenced images |
+
+**Documented gap — 44 of 125 seats:** independent MPs are people, not parties, so their seats are
+not assigned to a party. This is a real and unusually large gap, not missing research.
+
+**Logo decision.** The historical YAP logo remains checked and bundled. The ten newly added parties
+are included with an honest no-image explanation rather than guessed or incorrectly attributed
+emblems; the policy is now **should have a logo, never must have one**. A future asset pass must
+research each party in Azerbaijani and other relevant languages, its official site, Wikimedia/Wikidata
+and Europe Elects before adding any image.
+
+**Sources checked:** [IPU Parline](https://data.ipu.org/); [EPDE 2024 election final report](https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf); [OSCE observation statement](https://www.oscepa.org/en/news-a-media/press-releases/2024/azerbaijan-s-elections-devoid-of-real-competition-amid-restrictive-environment-international-observers-say); [Europe Elects](https://europeelects.eu/azerbaijan/); [New Azerbaijan Party official programme](https://yap.org.az/en/view/pages/5/).
 
 ---
 
