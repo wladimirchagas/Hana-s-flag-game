@@ -1,580 +1,83 @@
-<!DOCTYPE html>
-<html class="client-nojs vector-feature-language-in-header-disabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available skin-thumbsize-clientpref-standard" lang="en" dir="ltr">
-<head>
-<meta charset="UTF-8">
-<title>Redirect by file, user, page, revision, or log ID - Wikimedia Commons</title>
-<script>(function(){var className="client-js vector-feature-language-in-header-disabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available skin-thumbsize-clientpref-standard";var cookie=document.cookie.match(/(?:^|; )commonswikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":true,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"9c6aa04e-4258-4c20-8f6b-7764cce51a43","wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"Redirect","wgNamespaceNumber":-1,"wgPageName":"Special:Redirect/file/Botswana_Democratic_Party_logo.svg","wgTitle":"Redirect/file/Botswana Democratic Party logo.svg","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Special:Redirect/file/Botswana_Democratic_Party_logo.svg","wgRelevantArticleId":0,"wgTempUserName":null,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgNoticeProject":"commons","wgConfirmEditCaptchaNeededForGenericEdit":false,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgMediaViewerMobileBeta":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":true,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":0,"wgTestKitchenUserExperiments":{"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[]},"upwizPropertyTitles":{"P180":"Main subjects visible in this work"},"upwizPropertyPlaceholders":{"P180":"e.g., Angolan giraffe"},"upwizPropertyCopyLabels":{"P180":"Main subjects"},"wgEditSubmitButtonLabelPublish":true,"wgVisualEditorPageIsDisambiguation":false,"wgULSPosition":"personal","wgULSisCompactLinksEnabled":true,"wgVector2022LanguageInHeader":false,"wgULSisLanguageSelectorEmpty":true,"wgULSLanguageSelectorV2Enabled":true,"wbmiDefaultProperties":["P180"],"wbmiPropertyTitles":{"P180":"Items portrayed in this file"},"wbmiPropertyTypes":{"P180":"wikibase-item"},"wbmiRepoApiUrl":"/w/api.php","wbmiHelpUrls":{"P180":"https://commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Depicts"},"wbmiExternalEntitySearchBaseUri":"https://www.wikidata.org/w/api.php","wbmiSupportedDataTypes":["wikibase-item","string","quantity","time","monolingualtext","external-id","globe-coordinate","url"],"wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"]};
-RLSTATE={"ext.gadget.Long-Image-Names-in-Categories":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.wikimediamessages.styles":"ready","oojs-ui-core.styles":"ready","oojs-ui.styles.indicators":"ready","mediawiki.widgets.styles":"ready","oojs-ui-core.icons":"ready","mediawiki.htmlform.ooui.styles":"ready","mediawiki.htmlform.styles":"ready","mediawiki.codex.messagebox.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.pt":"ready"};RLPAGEMODULES=["mediawiki.htmlform","mediawiki.htmlform.ooui","site","mediawiki.page.ready","skins.vector.js","ext.centralNotice.geoIP","ext.gadget.Slideshow","ext.gadget.ZoomViewer","ext.gadget.CollapsibleTemplates","ext.gadget.fastcci","ext.gadget.Stockphoto","ext.gadget.WatchlistNotice","ext.gadget.AjaxQuickDelete","ext.gadget.WikiMiniAtlas","ext.gadget.LanguageSelect","ext.gadget.PictureOfTheYearEnhancements","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.testKitchen","ext.visualEditor.desktopArticleTarget.init","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.wikimediaEvents.wikibase","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","wikibase.databox.fromWikidata","ext.checkUser.clientHints"];</script>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
-}];});});</script>
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.uls.pt%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.codex.messagebox.styles%7Cmediawiki.htmlform.ooui.styles%7Cmediawiki.htmlform.styles%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles&amp;only=styles&amp;skin=vector-2022">
-<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
-<meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.Long-Image-Names-in-Categories&amp;only=styles&amp;skin=vector-2022">
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
-<meta name="generator" content="MediaWiki 1.47.0-wmf.18">
-<meta name="referrer" content="origin">
-<meta name="referrer" content="origin-when-cross-origin">
-<meta name="robots" content="noindex,nofollow,max-image-preview:standard">
-<meta name="format-detection" content="telephone=no">
-<meta name="viewport" content="width=1120">
-<meta property="og:title" content="Redirect by file, user, page, revision, or log ID - Wikimedia Commons">
-<meta property="og:type" content="website">
-<link rel="apple-touch-icon" href="/static/apple-touch/commons.png">
-<link rel="icon" href="/static/favicon/commons.ico">
-<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikimedia Commons">
-<link rel="EditURI" type="application/rsd+xml" href="//commons.wikimedia.org/w/api.php?action=rsd">
-<link rel="canonical" href="https://commons.wikimedia.org/wiki/Special:Redirect/file/Botswana_Democratic_Party_logo.svg">
-<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
-<link rel="alternate" type="application/atom+xml" title="Wikimedia Commons Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
-<link rel="dns-prefetch" href="auth.wikimedia.org">
-</head>
-<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-Redirect page-Special_Redirect_file_Botswana_Democratic_Party_logo_svg rootpage-Special_Redirect_file_Botswana_Democratic_Party_logo_svg skin-vector-2022 action-view">
-<div id="mw-aria-live-region" class="mw-aria-live-region" aria-live="polite"></div><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
-<div class="vector-header-container">
-	<header class="vector-header mw-header no-font-mode-scale">
-		<div class="vector-header-start">
-			<nav class="vector-main-menu-landmark" aria-label="Site">
-				
-<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
-	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"   >
-	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Main menu</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
-		
-<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
-	data-feature-name="main-menu-pinned"
-	data-pinnable-element-id="vector-main-menu"
-	data-pinned-container-id="vector-main-menu-pinned-container"
-	data-unpinned-container-id="vector-main-menu-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Main menu</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin" aria-label="Move Main menu to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin" aria-label="Hide Main menu">hide</button>
-</div>
-
-	
-<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
-	<div class="vector-menu-heading">
-		Navigate
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-welcome" class="mw-list-item"><a href="/wiki/Commons:Welcome"><span>Welcome</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Commons:Community_portal" title="About the project, what you can do, where to find things"><span>Community portal</span></a></li><li id="n-village-pump" class="mw-list-item"><a href="/wiki/Commons:Village_pump"><span>Village pump</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/Special:MyLanguage/Help:Contents" title="The place to find out"><span>Help center</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-participate" class="vector-menu mw-portlet mw-portlet-participate"  >
-	<div class="vector-menu-heading">
-		Participate
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="n-uploadbtn" class="mw-list-item"><a href="/wiki/Special:UploadWizard"><span>Upload file</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-latestfiles" class="mw-list-item"><a href="/wiki/Special:NewFiles"><span>Latest files</span></a></li><li id="n-randomimage" class="mw-list-item"><a href="/wiki/Special:Random/File" title="Load a random file [x]" accesskey="x"><span>Random file</span></a></li><li id="n-contact" class="mw-list-item"><a href="/wiki/Commons:Contact_us"><span>Contact us</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-</div>
-
-				</div>
-
-	</div>
-</div>
-
-		</nav>
-			
-<a href="/wiki/Main_Page" class="mw-logo">
-	<img class="mw-logo-icon" src="/static/images/icons/commonswiki.svg" alt="" aria-hidden="true" height="50" width="50">
-	<span class="mw-logo-container skin-invert">
-		<img class="mw-logo-wordmark" alt="Wikimedia Commons" src="/static/images/mobile/copyright/commonswiki-wordmark.svg" style="width: 7.1875em; height: 2em;">
-	</span>
-</a>
-
-		</div>
-		<div class="vector-header-end">
-			
-<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box">
-	<a href="/wiki/Special:MediaSearch" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikimedia Commons [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
-
-<span>Search</span>
-	</a>
-	<div class="vector-typeahead-search-container">
-		<div class="cdx-typeahead-search">
-			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
-				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
-					<div class="cdx-text-input cdx-text-input--has-start-icon">
-						<input
-							class="cdx-text-input__input mw-searchInput" autocomplete="off"
-							 type="search" name="search" placeholder="Search Wikimedia Commons" aria-label="Search Wikimedia Commons" autocapitalize="none" spellcheck="false" title="Search Wikimedia Commons [f]" accesskey="f" id="searchInput"
-							>
-						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
-					</div>
-					<input type="hidden" name="title" value="Special:MediaSearch">
-				</div>
-				<button class="cdx-button cdx-search-input__end-button">Search</button>
-			</form>
-		</div>
-	</div>
-</div>
-
-			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
-	<div class="vector-user-links-main">
-	
-<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="ca-uls" class="mw-list-item active vector-menu-item--collapsible"><a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet uls-trigger" id=""><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language cdx-button__icon"></span>
-
-<span>English</span>
-</a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-	<nav class="vector-appearance-landmark" aria-label="Appearance">
-		
-<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
-	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"   >
-	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Appearance</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
-				
-			</div>
-		
-	</div>
-</div>
-
-	</nav>
-	
-<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="pt-sitesupport-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=commons.wikimedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span>Donate</span></a>
-</li>
-<li id="pt-createaccount-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3ARedirect%2Ffile%2FBotswana+Democratic+Party+logo.svg" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
-</li>
-<li id="pt-login-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3ARedirect%2Ffile%2FBotswana+Democratic+Party+logo.svg" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o" class=""><span>Log in</span></a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	</div>
-	
-<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out vector-user-links-dropdown--collapsible"  title="More options" >
-	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"   >
-	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Personal tools</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-		
-<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal"  title="User menu" >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="pt-sitesupport" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=commons.wikimedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart cdx-button__icon"></span>
-
-<span>Donate</span></a>
-</li>
-<li id="pt-createaccount" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3ARedirect%2Ffile%2FBotswana+Democratic+Party+logo.svg" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
-
-<span>Create account</span></a>
-</li>
-<li id="pt-login" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3ARedirect%2Ffile%2FBotswana+Democratic+Party+logo.svg" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o" class=""><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn cdx-button__icon"></span>
-
-<span>Log in</span></a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-	</div>
-</div>
-
-</nav>
-
-		</div>
-	</header>
-</div>
-<div class="mw-page-container">
-	<div class="mw-page-container-inner">
-		<div class="vector-sitenotice-container">
-			<div id="siteNotice"><!-- CentralNotice --></div>
-		</div>
-		<div class="vector-column-start">
-			<div class="vector-main-menu-container">
-		<div id="mw-navigation">
-			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
-				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
-				
-				</div>
-		</nav>
-		</div>
-	</div>
-</div>
-		<div class="mw-content-container">
-			<main id="content" class="mw-body">
-				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
-					<h1 id="firstHeading" class="firstHeading mw-first-heading">Redirect by file, user, page, revision, or log ID</h1>
-		<div class="mw-indicators">
-	</div>
-</header>
-				<div class="vector-page-toolbar">
-					<div class="vector-page-toolbar-container">
-						<div id="left-navigation">
-							<nav aria-label="Namespaces">
-								
-<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-								
-<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
-	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"    >
-	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-					
-<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-				
-	</div>
-</div>
-
-							</nav>
-						</div>
-						<div id="right-navigation" class="vector-collapsible">
-							<nav aria-label="Views">
-			    
-<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-			</nav>
-
-							<nav class="vector-page-tools-landmark" aria-label="Page tools">
-								
-<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
-	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"   >
-	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-verticalEllipsis mw-ui-icon-wikimedia-verticalEllipsis cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Tools</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
-						
-<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
-	data-feature-name="page-tools-pinned"
-	data-pinnable-element-id="vector-page-tools"
-	data-pinned-container-id="vector-page-tools-pinned-container"
-	data-unpinned-container-id="vector-page-tools-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Tools</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin" aria-label="Move Tools to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin" aria-label="Hide Tools">hide</button>
-</div>
-
-	
-<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet"  >
-	<div class="vector-menu-heading">
-		Actions
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
-	<div class="vector-menu-heading">
-		General
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FBotswana_Democratic_Party_logo.svg"><span>Get shortened URL</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet"  >
-	<div class="vector-menu-heading">
-		In other projects
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-</div>
-
-									</div>
-				
-	</div>
-</div>
-
-							</nav>
-						</div>
-					</div>
-				</div>
-				<div class="vector-column-end no-font-mode-scale">
-					<div class="vector-sticky-pinned-container">
-						<nav class="vector-page-tools-landmark" aria-label="Page tools">
-							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
-				
-							</div>
-		</nav>
-						<nav class="vector-appearance-landmark" aria-label="Appearance">
-							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
-				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
-	data-feature-name="appearance-pinned"
-	data-pinnable-element-id="vector-appearance"
-	data-pinned-container-id="vector-appearance-pinned-container"
-	data-unpinned-container-id="vector-appearance-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Appearance</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin" aria-label="Move Appearance to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin" aria-label="Hide Appearance">hide</button>
-</div>
-
-
-</div>
-
-							</div>
-		</nav>
-					</div>
-				</div>
-				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
-					<div class="vector-body-before-content">
-					
-						
-					</div>
-					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
-					
-					
-					<div id="mw-content-text" class="mw-body-content"><div class="mw-specialpage-summary">
-<p>This special page redirects to a file (given the filename), a page (given a revision ID or page ID), a user page (given a numeric user ID), or a log entry (given the log ID). Usage: <a href="/wiki/Special:Redirect/file/Example.jpg" title="Special:Redirect/file/Example.jpg">Special:Redirect/file/Example.jpg</a>, <a href="/wiki/Special:Redirect/page/64308" title="Special:Redirect/page/64308">Special:Redirect/page/64308</a>, <a href="/wiki/Special:Redirect/revision/328429" title="Special:Redirect/revision/328429">Special:Redirect/revision/328429</a>, <a href="/wiki/Special:Redirect/user/101" title="Special:Redirect/user/101">Special:Redirect/user/101</a>, or <a href="/wiki/Special:Redirect/logid/186" title="Special:Redirect/logid/186">Special:Redirect/logid/186</a>.
-</p>
-</div><div class='mw-htmlform-ooui-wrapper oo-ui-layout oo-ui-panelLayout'><form action='/wiki/Special:Redirect/file/Botswana_Democratic_Party_logo.svg' method='get' enctype='application/x-www-form-urlencoded' class='mw-htmlform mw-htmlform-ooui oo-ui-layout oo-ui-formLayout'><div class='mw-htmlform-ooui-header mw-htmlform-ooui-header-errors oo-ui-layout oo-ui-fieldLayout oo-ui-fieldLayout-align-top'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label id='ooui-php-1' class='oo-ui-labelElement-label'></label></span><div class='oo-ui-fieldLayout-field'><div aria-labelledby='ooui-php-1' class='oo-ui-widget oo-ui-widget-enabled'></div></div></div><div class='oo-ui-fieldLayout-messages'><div role='alert' class='oo-ui-widget oo-ui-widget-enabled oo-ui-labelElement oo-ui-flaggedElement-error oo-ui-iconElement oo-ui-messageWidget'><span class='oo-ui-iconElement-icon oo-ui-icon-error oo-ui-image-error'></span><span class='oo-ui-labelElement-label'>Value not found</span></div></div></div><div id='ooui-php-4' class='mw-htmlform-field-HTMLSelectField mw-htmlform-autoinfuse oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-top' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-input-wptype"},"align":"top","helpInline":true,"$overlay":true,"label":{"html":"Lookup:"},"classes":["mw-htmlform-field-HTMLSelectField","mw-htmlform-autoinfuse"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label for='ooui-php-2' class='oo-ui-labelElement-label'>Lookup:</label></span><div class='oo-ui-fieldLayout-field'><div id='mw-input-wptype' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-dropdownInputWidget oo-ui-dropdownInputWidget-php' data-ooui='{"_":"OO.ui.DropdownInputWidget","options":[{"data":"user","label":"User ID"},{"data":"page","label":"Page ID"},{"data":"revision","label":"Page revision"},{"data":"file","label":"Filename"},{"data":"logid","label":"Log ID"}],"$overlay":true,"name":"wptype","value":"file","inputId":"ooui-php-2","required":false}'><select tabindex='0' name='wptype' id='ooui-php-2' class='oo-ui-inputWidget-input'><option value='user'>User ID</option><option value='page'>Page ID</option><option value='revision'>Page revision</option><option value='file' selected='selected'>Filename</option><option value='logid'>Log ID</option></select><span class='oo-ui-widget oo-ui-widget-enabled oo-ui-indicatorElement-indicator oo-ui-indicator-down oo-ui-indicatorElement oo-ui-labelElement-invisible oo-ui-indicatorWidget'></span></div></div></div></div><div id='ooui-php-5' class='mw-htmlform-field-HTMLTextField oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-top' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-input-wpvalue"},"align":"top","helpInline":true,"$overlay":true,"label":{"html":"Value:"},"classes":["mw-htmlform-field-HTMLTextField"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label for='ooui-php-3' class='oo-ui-labelElement-label'>Value:</label></span><div class='oo-ui-fieldLayout-field'><div id='mw-input-wpvalue' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-indicatorElement oo-ui-textInputWidget oo-ui-textInputWidget-type-text oo-ui-textInputWidget-php' data-ooui='{"_":"OO.ui.TextInputWidget","name":"wpvalue","value":"Botswana_Democratic_Party_logo.svg","inputId":"ooui-php-3","indicator":"required","required":true}'><input type='text' tabindex='0' name='wpvalue' value='Botswana_Democratic_Party_logo.svg' required='' id='ooui-php-3' class='oo-ui-inputWidget-input' /><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon'></span><span class='oo-ui-indicatorElement-indicator oo-ui-indicator-required'></span></div></div></div></div><div class="mw-htmlform-submit-buttons">
-<span id='ooui-php-6' class='mw-htmlform-submit oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-buttonElement-size-medium oo-ui-labelElement oo-ui-flaggedElement-primary oo-ui-flaggedElement-progressive oo-ui-buttonInputWidget' data-ooui='{"_":"OO.ui.ButtonInputWidget","type":"submit","value":"Go","label":"Go","flags":["primary","progressive"],"classes":["mw-htmlform-submit"]}'><button type='submit' tabindex='0' value='Go' class='oo-ui-inputWidget-input oo-ui-buttonElement-button'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon oo-ui-image-invert'></span><span class='oo-ui-labelElement-label'>Go</span><span class='oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator oo-ui-image-invert'></span></button></span></div>
-</form></div><noscript><img src="https://commons.wikimedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
-<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://commons.wikimedia.org/wiki/Special:Redirect/file/Botswana_Democratic_Party_logo.svg">https://commons.wikimedia.org/wiki/Special:Redirect/file/Botswana_Democratic_Party_logo.svg</a>"</div></div>
-					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw-interface=""></div>
-				</div>
-			</main>
-			
-		</div>
-		<div class="mw-footer-container">
-			<footer id="footer" class="mw-footer" >
-				<ul id="footer-info" class="mw-portlet mw-portlet-footer-info emptyPortlet">
-</ul>
-
-				<ul id="footer-places" class="mw-portlet mw-portlet-footer-places">
-	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
-	<li id="footer-places-about"><a href="/wiki/Commons:Welcome">About Wikimedia Commons</a></li>
-	<li id="footer-places-disclaimers"><a href="/wiki/Commons:General_disclaimer">Disclaimers</a></li>
-	<li id="footer-places-legal-safety-contacts"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information">Legal &amp; safety contacts</a></li>
-	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
-	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
-	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/commons.wikimedia.org">Statistics</a></li>
-	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
-	<li id="footer-places-mobileview"><a href="//commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Botswana_Democratic_Party_logo.svg&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
-</ul>
-
-				<ul id="footer-icons" class="mw-portlet mw-portlet-footer-icons noprint">
-	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
-	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
-</ul>
-
-			</footer>
-		</div>
-	</div> 
-</div> 
-<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
-	<div id="vector-sticky-header" class="vector-sticky-header">
-		<div class="vector-sticky-header-start">
-			<div class="vector-sticky-header-icon-start vector-button-flush-left" aria-hidden="true">
-				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
-
-<span>Search</span>
-			</button>
-		</div>
-			
-		<div role="search" class="vector-search-box-vue vector-search-box">
-			<div class="vector-typeahead-search-container">
-				<div class="cdx-typeahead-search">
-					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
-						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
-							<div class="cdx-text-input cdx-text-input--has-start-icon">
-								<input
-									class="cdx-text-input__input mw-searchInput" autocomplete="off"
-									
-									type="search" name="search" placeholder="Search Wikimedia Commons">
-								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
-							</div>
-							<input type="hidden" name="title" value="Special:MediaSearch">
-						</div>
-						<button class="cdx-button cdx-search-input__end-button">Search</button>
-					</form>
-				</div>
-			</div>
-		</div>
-		<div class="vector-sticky-header-context-bar">
-				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" >Redirect by file, user, page, revision, or log ID</div>
-			</div>
-		</div>
-		<div class="vector-sticky-header-end" aria-hidden="true">
-			<div class="vector-sticky-header-icons">
-				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock cdx-button__icon"></span>
-
-<span></span>
-			</a>
-		</div>
-			<div class="vector-sticky-header-buttons">
-				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive cdx-button__icon"></span>
-
-<span>Add topic</span>
-			</a>
-		</div>
-			<div class="vector-sticky-header-icon-end">
-				<div class="vector-user-links">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
-	<ul>
-		
-	</ul>
-</div>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-77bf874667-456vl","wgBackendResponseTime":105});});</script>
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70.589844pt"
+   height="120.33203pt"
+   viewBox="0 0 70.589843 120.33203"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg">
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 1.63281,118.83594 h 1.19922 v -4.44141 h 1.63281 v -1.00781 H 0 v 1.00781 h 1.63281 z m 0,0"
+     id="path267" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 4.78125,117.55469 c 0.0469,1.04297 0.9375,1.38672 1.85156,1.38672 0.90234,0 1.80078,-0.33594 1.80078,-1.3711 0,-0.73437 -0.61719,-0.96484 -1.25,-1.10937 -0.61719,-0.14453 -1.22656,-0.19531 -1.22656,-0.58594 0,-0.32031 0.35547,-0.36719 0.60156,-0.36719 0.39062,0 0.70703,0.11719 0.73828,0.53516 h 1.03125 c -0.082,-0.96875 -0.87891,-1.25781 -1.73828,-1.25781 -0.84766,0 -1.71875,0.25781 -1.71875,1.26562 0,0.69531 0.625,0.91406 1.25391,1.05078 0.77734,0.16797 1.22656,0.28516 1.22656,0.61328 0,0.37891 -0.39844,0.50391 -0.71094,0.50391 -0.42578,0 -0.82031,-0.19141 -0.83203,-0.66406 z m 0,0"
+     id="path269" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 9.0664,118.83594 h 1.08203 v -2.06641 c 0,-0.80078 0.25391,-1.13281 0.83985,-1.13281 0.5039,0 0.69531,0.32422 0.69531,0.96875 v 2.23047 h 1.08203 v -2.42578 c 0,-0.97657 -0.28906,-1.625 -1.44141,-1.625 -0.40234,0 -0.8789,0.21484 -1.15234,0.65625 h -0.0234 v -2.05469 H 9.06644 Z m 0,0"
+     id="path271" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 13.46484,116.86719 c 0,1.25 0.80078,2.07422 2.03906,2.07422 1.24219,0 2.04297,-0.82422 2.04297,-2.07422 0,-1.25781 -0.80078,-2.08203 -2.04297,-2.08203 -1.23828,0 -2.03906,0.82422 -2.03906,2.08203 m 1.08203,0 c 0,-0.63281 0.22266,-1.26563 0.95703,-1.26563 0.73828,0 0.96094,0.63282 0.96094,1.26563 0,0.625 -0.22266,1.25781 -0.96094,1.25781 -0.73437,0 -0.95703,-0.63281 -0.95703,-1.25781"
+     id="path273" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 18.27734,118.83594 h 1.08203 v -5.44922 h -1.08203 z m 0,0"
+     id="path275" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 23.94921,117.125 c 0.0781,-1.21094 -0.57031,-2.33984 -1.91406,-2.33984 -1.19531,0 -2.01562,0.89843 -2.01562,2.08203 0,1.22265 0.77343,2.07422 2.01562,2.07422 0.89453,0 1.54297,-0.39453 1.84766,-1.32813 h -0.95313 c -0.0703,0.2461 -0.42187,0.51172 -0.85547,0.51172 -0.60156,0 -0.9375,-0.3125 -0.96875,-1 z m -2.84375,-0.68359 c 0.0156,-0.30469 0.21094,-0.83985 0.89844,-0.83985 0.52735,0 0.76563,0.28907 0.86328,0.83985 z m 0,0"
+     id="path277" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="M 25.96484,113.70703 H 24.8789 v 1.1836 h -0.65625 v 0.72656 h 0.65625 v 2.32422 c 0,0.78515 0.58203,0.9375 1.24219,0.9375 0.21484,0 0.45312,-0.008 0.63672,-0.0352 v -0.84766 c -0.11719,0.0234 -0.22266,0.0312 -0.33594,0.0312 -0.36719,0 -0.45703,-0.0937 -0.45703,-0.45703 v -1.95312 h 0.79297 v -0.72656 h -0.79297 z m 0,0"
+     id="path279" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 27.08203,117.55469 c 0.043,1.04297 0.9375,1.38672 1.85156,1.38672 0.90234,0 1.80078,-0.33594 1.80078,-1.3711 0,-0.73437 -0.61719,-0.96484 -1.25,-1.10937 -0.61719,-0.14453 -1.23047,-0.19531 -1.23047,-0.58594 0,-0.32031 0.35938,-0.36719 0.60547,-0.36719 0.38672,0 0.70703,0.11719 0.73828,0.53516 h 1.03125 c -0.0859,-0.96875 -0.8789,-1.25781 -1.73828,-1.25781 -0.84766,0 -1.71875,0.25781 -1.71875,1.26562 0,0.69531 0.625,0.91406 1.25,1.05078 0.78125,0.16797 1.23047,0.28516 1.23047,0.61328 0,0.37891 -0.39844,0.50391 -0.71094,0.50391 -0.42578,0 -0.82422,-0.19141 -0.83203,-0.66406 z m 0,0"
+     id="path281" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 33.82421,117.30859 c 0,0.23829 -0.0312,0.91016 -0.8789,0.91016 -0.35156,0 -0.66406,-0.10156 -0.66406,-0.50391 0,-0.39843 0.30468,-0.51171 0.64062,-0.58203 0.33594,-0.0586 0.71875,-0.0664 0.90234,-0.22656 z m -1.41796,-1.20312 c 0.0352,-0.42969 0.30078,-0.59766 0.71484,-0.59766 0.38281,0 0.70312,0.0703 0.70312,0.53516 0,0.44141 -0.62109,0.41797 -1.28125,0.51953 -0.67187,0.0898 -1.34375,0.30469 -1.34375,1.19531 0,0.8125 0.59375,1.1836 1.34375,1.1836 0.47657,0 0.98047,-0.12891 1.32422,-0.48828 0.008,0.1289 0.0391,0.26171 0.0781,0.38281 h 1.09765 c -0.10156,-0.16016 -0.13671,-0.51953 -0.13671,-0.87891 v -2.05078 c 0,-0.94531 -0.94532,-1.12109 -1.73047,-1.12109 -0.88672,0 -1.79297,0.30468 -1.85547,1.32031 z m 0,0"
+     id="path283" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 37.97656,118.83594 h 2.35156 c 1.66016,0 2.46875,-1.17578 2.46875,-2.75391 0,-1.80859 -1.05859,-2.69531 -2.46875,-2.69531 h -2.35156 z m 1.19531,-4.44141 h 0.85547 c 1.19141,0 1.57031,0.70313 1.57031,1.80078 0,1.20703 -0.66015,1.63282 -1.35547,1.63282 h -1.07031 z m 0,0"
+     id="path285" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 43.39062,116.86719 c 0,1.25 0.80078,2.07422 2.03906,2.07422 1.24219,0 2.04297,-0.82422 2.04297,-2.07422 0,-1.25781 -0.80078,-2.08203 -2.04297,-2.08203 -1.23828,0 -2.03906,0.82422 -2.03906,2.08203 m 1.08203,0 c 0,-0.63281 0.22266,-1.26563 0.95703,-1.26563 0.73828,0 0.96094,0.63282 0.96094,1.26563 0,0.625 -0.22266,1.25781 -0.96094,1.25781 -0.73437,0 -0.95703,-0.63281 -0.95703,-1.25781"
+     id="path287" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 48.20312,118.83594 h 1.08203 v -2.28906 c 0,-0.76954 0.51953,-0.91016 0.73438,-0.91016 0.68359,0 0.65625,0.52734 0.65625,0.98828 v 2.21094 h 1.08203 v -2.19922 c 0,-0.49609 0.11328,-1 0.72265,-1 0.6211,0 0.66407,0.4375 0.66407,0.96484 v 2.23438 h 1.08593 v -2.64063 c 0,-1.02343 -0.60546,-1.41015 -1.44531,-1.41015 -0.54687,0 -0.96094,0.3125 -1.1875,0.65625 -0.21484,-0.47266 -0.65625,-0.65625 -1.15234,-0.65625 -0.51172,0 -0.92188,0.23437 -1.20703,0.64062 h -0.0156 v -0.53515 h -1.01953 z m 0,0"
+     id="path289" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 55.17968,118.83594 h 1.08203 v -1.35938 l 0.42188,-0.40234 1.08203,1.76172 h 1.3125 l -1.65625,-2.4961 1.48828,-1.44921 H 57.6289 l -1.36719,1.41796 v -2.92187 h -1.08203 z m 0,0"
+     id="path291" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 59.45703,118.83594 h 1.08203 v -1.77735 c 0,-0.69531 0.27734,-1.26562 1.07031,-1.26562 0.12891,0 0.28906,0.0117 0.38672,0.0352 v -1.00391 c -0.0664,-0.0234 -0.16016,-0.0391 -0.23438,-0.0391 -0.52734,0 -1.0625,0.34375 -1.25781,0.83984 h -0.0156 v -0.73437 h -1.03125 z m 0,0"
+     id="path293" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 64.8789,117.30859 c 0,0.23829 -0.0312,0.91016 -0.8789,0.91016 -0.35157,0 -0.66407,-0.10156 -0.66407,-0.50391 0,-0.39843 0.30469,-0.51171 0.64063,-0.58203 0.33594,-0.0586 0.71875,-0.0664 0.90234,-0.22656 z m -1.41797,-1.20312 c 0.0352,-0.42969 0.30469,-0.59766 0.71485,-0.59766 0.38281,0 0.70312,0.0703 0.70312,0.53516 0,0.44141 -0.61719,0.41797 -1.28125,0.51953 -0.67187,0.0898 -1.34375,0.30469 -1.34375,1.19531 0,0.8125 0.59375,1.1836 1.34375,1.1836 0.48047,0 0.98438,-0.12891 1.32813,-0.48828 0.004,0.1289 0.0351,0.26171 0.0742,0.38281 h 1.09765 c -0.0976,-0.16016 -0.13672,-0.51953 -0.13672,-0.87891 v -2.05078 c 0,-0.94531 -0.94531,-1.12109 -1.73047,-1.12109 -0.88671,0 -1.79296,0.30468 -1.85546,1.32031 z m 0,0"
+     id="path295" />
+  <path
+     style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 70.58984,114.89063 h -1.03125 v 0.52734 h -0.0117 c -0.26172,-0.45703 -0.65625,-0.63281 -1.17578,-0.63281 -1.10547,0 -1.69531,0.92968 -1.69531,1.95312 0,1.08203 0.5039,1.98438 1.6875,1.98438 0.47265,0 0.94531,-0.19922 1.18359,-0.61328 h 0.0117 v 0.51953 c 0.0117,0.5625 -0.26563,0.97656 -0.86719,0.97656 -0.38281,0 -0.71094,-0.13672 -0.80859,-0.54297 h -1.07813 c 0.0547,0.90234 0.96485,1.26953 1.74219,1.26953 1.81641,0 2.04297,-1.10156 2.04297,-1.75 z m -1.95313,3.01171 c -0.66406,0 -0.875,-0.61328 -0.875,-1.17968 0,-0.58594 0.26563,-1.1211 0.875,-1.1211 0.70313,0 0.92188,0.57032 0.92188,1.21094 0,0.56641 -0.30469,1.08984 -0.92188,1.08984"
+     id="path297" />
+  <rect
+     style="font-variation-settings:'wght' 700;fill:#ffffff;fill-rule:evenodd;stroke-width:0"
+     id="rect2133"
+     width="20.415506"
+     height="10.168941"
+     x="25.69404"
+     y="98.545563" />
+  <path
+     style="fill:#e61c23;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 39.60156,99.312499 v 8.593751 h 2.23437 v -3.46094 h 0.60157 c 0.48828,0 0.88281,-0.0664 1.18359,-0.20312 0.30469,-0.13281 0.51172,-0.32813 0.625,-0.57813 0.11328,-0.25 0.17187,-0.65234 0.17187,-1.19922 v -0.75 c 0,-0.53515 -0.0312,-0.93359 -0.0898,-1.1875 -0.0586,-0.25781 -0.16797,-0.47656 -0.33594,-0.656251 -0.16406,-0.18359 -0.41015,-0.32031 -0.73828,-0.41406 -0.32422,-0.0977 -0.79297,-0.14453 -1.39844,-0.14453 z m -12.01172,0 v 8.593751 h 2.58594 c 0.89843,0 1.49218,-0.0508 1.78515,-0.15625 0.28907,-0.10156 0.5,-0.29297 0.62891,-0.57031 0.13672,-0.28125 0.20312,-0.71094 0.20312,-1.29297 v -0.79297 c 0,-0.5625 -0.0937,-0.97266 -0.27734,-1.24219 -0.18359,-0.27343 -0.53125,-0.46875 -1.05078,-0.58593 0.46484,-0.10547 0.77344,-0.25782 0.92969,-0.45704 0.16015,-0.19921 0.23828,-0.54687 0.23828,-1.05078 0,-0.74218 -0.10938,-1.28125 -0.33203,-1.61328 -0.22657,-0.335941 -0.51953,-0.558591 -0.88282,-0.667971 -0.35937,-0.10937 -0.89453,-0.16406 -1.59765,-0.16406 z m 6.00391,0 v 8.593751 h 2.82031 c 0.53515,0 0.93359,-0.0273 1.19922,-0.0859 0.26562,-0.0586 0.48828,-0.16406 0.66797,-0.30859 0.17968,-0.14844 0.30468,-0.35156 0.375,-0.60938 0.0781,-0.26171 0.11328,-0.77734 0.11328,-1.55078 v -3.00781 c 0,-0.81641 -0.0234,-1.35937 -0.0742,-1.63672 -0.0508,-0.27734 -0.17188,-0.53125 -0.3711,-0.757811 -0.19921,-0.22656 -0.48828,-0.39063 -0.87109,-0.48828 -0.37891,-0.10156 -1.10547,-0.14844 -2.1875,-0.14844 z m -9.38672,-1.79297 H 47.80468 V 109.625 H 24.20703 Z m 17.6289,3.261721 c 0.29297,0 0.48438,0.0469 0.57422,0.13281 0.0937,0.0898 0.13672,0.28125 0.13672,0.57422 v 0.70703 c 0,0.31641 -0.0391,0.52735 -0.12109,0.62891 -0.0781,0.10156 -0.21875,0.14844 -0.42578,0.14844 l -0.16407,-0.004 z m -12.01172,0 c 0.23047,0.004 0.38672,0.0195 0.46485,0.0508 0.0781,0.0273 0.14453,0.0977 0.19531,0.20703 0.0508,0.10547 0.0742,0.29297 0.0742,0.5625 0,0.50782 -0.0312,0.81641 -0.0898,0.92578 -0.0625,0.10938 -0.19922,0.16016 -0.42188,0.16016 l -0.22266,0.004 z m 0,3.25 c 0.33594,0.0117 0.53907,0.0547 0.61719,0.13281 0.0781,0.0781 0.11719,0.30078 0.11719,0.66797 v 0.80078 c 0,0.34766 -0.043,0.56641 -0.13281,0.65235 -0.0859,0.0898 -0.28516,0.14062 -0.60157,0.14843 z m 6.00391,-3.25 c 0.24609,0 0.41016,0.0273 0.5,0.082 0.0859,0.0469 0.14453,0.12891 0.16797,0.23828 0.0273,0.10938 0.0391,0.35938 0.0391,0.7461 v 3.33984 c 0,0.57422 -0.0391,0.92578 -0.11328,1.05859 -0.0742,0.125 -0.26953,0.1875 -0.59375,0.1875 z M 46.49218,37.089849 v -5.31641 c 0,-0.86328 -0.69922,-1.5625 -1.5625,-1.5625 h -1.14843 c -1.22657,0 -1.90625,1.02344 -1.90625,2.26953 v 5.78516 c 0.13281,0.65234 0.48437,0.88672 1.18359,0.94922 0.73828,0.0391 1.41016,0.043 2.21875,-0.16016 0.91016,-0.26563 1.21484,-0.83984 1.21484,-1.96484 M 33.92968,13.65625 c 0,1.144531 0.92969,2.074219 2.07422,2.074219 1.14453,0 2.07422,-0.929688 2.07422,-2.074219 0,-1.144531 -0.92969,-2.074219 -2.07422,-2.074219 -1.14453,0 -2.07422,0.929688 -2.07422,2.074219 m -9.72265,53.171879 5.92578,-23.33594 v -16.85547 c -0.86719,-0.082 -1.54688,-0.81641 -1.54688,-1.70703 0,-0.88672 0.67969,-1.62109 1.54688,-1.70313 v -2.58593 h 2.60547 V 16.988281 L 31.15625,16.277344 V 9.441407 L 26.38671,5.460938 24.89062,0 h 3.52344 l 0.85547,3.273438 H 42.73828 L 43.58984,0 h 3.52344 l -1.49219,5.460938 -4.77344,3.980469 v 6.835937 l -1.58203,0.710937 v 3.652348 H 41.875 v 2.58593 c 0.86718,0.082 1.54296,0.81641 1.54296,1.70313 0,0.89062 -0.67578,1.625 -1.54296,1.70703 v 0.35938 c 0,0.74218 0.3125,1.08203 1.05078,1.08203 h 2.69531 c 1.57031,0 2.84766,1.27343 2.84766,2.84765 v 6.60938 c 0,2.05859 -1.97657,3.92969 -4.83985,3.92969 H 41.875 v 2.02734 l 5.92578,23.33594 v 25.1914 h -2.53516 v -1.84765 c 0,-0.61719 -0.5,-1.1211 -1.12109,-1.1211 h -5.75 c -0.6211,0 -1.125,0.50391 -1.125,1.1211 v 1.84765 h -2.53516 v -1.84765 c 0,-0.61719 -0.5,-1.1211 -1.12109,-1.1211 h -5.75 c -0.6211,0 -1.125,0.50391 -1.125,1.1211 v 1.84765 h -2.53125 z m 0,0"
+     id="path299" />
+</svg>

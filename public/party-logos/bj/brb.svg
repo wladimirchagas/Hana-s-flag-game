@@ -1,580 +1,389 @@
-<!DOCTYPE html>
-<html class="client-nojs vector-feature-language-in-header-disabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available skin-thumbsize-clientpref-standard" lang="en" dir="ltr">
-<head>
-<meta charset="UTF-8">
-<title>Redirect by file, user, page, revision, or log ID - Wikimedia Commons</title>
-<script>(function(){var className="client-js vector-feature-language-in-header-disabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available skin-thumbsize-clientpref-standard";var cookie=document.cookie.match(/(?:^|; )commonswikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":true,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"fa194437-8d85-48c5-90ff-d8fc98c0c9df","wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"Redirect","wgNamespaceNumber":-1,"wgPageName":"Special:Redirect/file/Benin_Republican_Bloc_logo.svg","wgTitle":"Redirect/file/Benin Republican Bloc logo.svg","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Special:Redirect/file/Benin_Republican_Bloc_logo.svg","wgRelevantArticleId":0,"wgTempUserName":null,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgNoticeProject":"commons","wgConfirmEditCaptchaNeededForGenericEdit":false,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgMediaViewerMobileBeta":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":true,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":0,"wgTestKitchenUserExperiments":{"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[]},"upwizPropertyTitles":{"P180":"Main subjects visible in this work"},"upwizPropertyPlaceholders":{"P180":"e.g., Angolan giraffe"},"upwizPropertyCopyLabels":{"P180":"Main subjects"},"wgEditSubmitButtonLabelPublish":true,"wgVisualEditorPageIsDisambiguation":false,"wgULSPosition":"personal","wgULSisCompactLinksEnabled":true,"wgVector2022LanguageInHeader":false,"wgULSisLanguageSelectorEmpty":true,"wgULSLanguageSelectorV2Enabled":true,"wbmiDefaultProperties":["P180"],"wbmiPropertyTitles":{"P180":"Items portrayed in this file"},"wbmiPropertyTypes":{"P180":"wikibase-item"},"wbmiRepoApiUrl":"/w/api.php","wbmiHelpUrls":{"P180":"https://commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Depicts"},"wbmiExternalEntitySearchBaseUri":"https://www.wikidata.org/w/api.php","wbmiSupportedDataTypes":["wikibase-item","string","quantity","time","monolingualtext","external-id","globe-coordinate","url"],"wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"]};
-RLSTATE={"ext.gadget.Long-Image-Names-in-Categories":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.wikimediamessages.styles":"ready","oojs-ui-core.styles":"ready","oojs-ui.styles.indicators":"ready","mediawiki.widgets.styles":"ready","oojs-ui-core.icons":"ready","mediawiki.htmlform.ooui.styles":"ready","mediawiki.htmlform.styles":"ready","mediawiki.codex.messagebox.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.pt":"ready"};RLPAGEMODULES=["mediawiki.htmlform","mediawiki.htmlform.ooui","site","mediawiki.page.ready","skins.vector.js","ext.centralNotice.geoIP","ext.gadget.Slideshow","ext.gadget.ZoomViewer","ext.gadget.CollapsibleTemplates","ext.gadget.fastcci","ext.gadget.Stockphoto","ext.gadget.WatchlistNotice","ext.gadget.AjaxQuickDelete","ext.gadget.WikiMiniAtlas","ext.gadget.LanguageSelect","ext.gadget.PictureOfTheYearEnhancements","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.testKitchen","ext.visualEditor.desktopArticleTarget.init","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.wikimediaEvents.wikibase","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","wikibase.databox.fromWikidata","ext.checkUser.clientHints"];</script>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
-}];});});</script>
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.uls.pt%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.codex.messagebox.styles%7Cmediawiki.htmlform.ooui.styles%7Cmediawiki.htmlform.styles%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles&amp;only=styles&amp;skin=vector-2022">
-<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
-<meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.Long-Image-Names-in-Categories&amp;only=styles&amp;skin=vector-2022">
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
-<meta name="generator" content="MediaWiki 1.47.0-wmf.18">
-<meta name="referrer" content="origin">
-<meta name="referrer" content="origin-when-cross-origin">
-<meta name="robots" content="noindex,nofollow,max-image-preview:standard">
-<meta name="format-detection" content="telephone=no">
-<meta name="viewport" content="width=1120">
-<meta property="og:title" content="Redirect by file, user, page, revision, or log ID - Wikimedia Commons">
-<meta property="og:type" content="website">
-<link rel="apple-touch-icon" href="/static/apple-touch/commons.png">
-<link rel="icon" href="/static/favicon/commons.ico">
-<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikimedia Commons">
-<link rel="EditURI" type="application/rsd+xml" href="//commons.wikimedia.org/w/api.php?action=rsd">
-<link rel="canonical" href="https://commons.wikimedia.org/wiki/Special:Redirect/file/Benin_Republican_Bloc_logo.svg">
-<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
-<link rel="alternate" type="application/atom+xml" title="Wikimedia Commons Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
-<link rel="dns-prefetch" href="auth.wikimedia.org">
-</head>
-<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-Redirect page-Special_Redirect_file_Benin_Republican_Bloc_logo_svg rootpage-Special_Redirect_file_Benin_Republican_Bloc_logo_svg skin-vector-2022 action-view">
-<div id="mw-aria-live-region" class="mw-aria-live-region" aria-live="polite"></div><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
-<div class="vector-header-container">
-	<header class="vector-header mw-header no-font-mode-scale">
-		<div class="vector-header-start">
-			<nav class="vector-main-menu-landmark" aria-label="Site">
-				
-<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
-	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"   >
-	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Main menu</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
-		
-<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
-	data-feature-name="main-menu-pinned"
-	data-pinnable-element-id="vector-main-menu"
-	data-pinned-container-id="vector-main-menu-pinned-container"
-	data-unpinned-container-id="vector-main-menu-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Main menu</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin" aria-label="Move Main menu to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin" aria-label="Hide Main menu">hide</button>
-</div>
-
-	
-<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
-	<div class="vector-menu-heading">
-		Navigate
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-welcome" class="mw-list-item"><a href="/wiki/Commons:Welcome"><span>Welcome</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Commons:Community_portal" title="About the project, what you can do, where to find things"><span>Community portal</span></a></li><li id="n-village-pump" class="mw-list-item"><a href="/wiki/Commons:Village_pump"><span>Village pump</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/Special:MyLanguage/Help:Contents" title="The place to find out"><span>Help center</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-participate" class="vector-menu mw-portlet mw-portlet-participate"  >
-	<div class="vector-menu-heading">
-		Participate
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="n-uploadbtn" class="mw-list-item"><a href="/wiki/Special:UploadWizard"><span>Upload file</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-latestfiles" class="mw-list-item"><a href="/wiki/Special:NewFiles"><span>Latest files</span></a></li><li id="n-randomimage" class="mw-list-item"><a href="/wiki/Special:Random/File" title="Load a random file [x]" accesskey="x"><span>Random file</span></a></li><li id="n-contact" class="mw-list-item"><a href="/wiki/Commons:Contact_us"><span>Contact us</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-</div>
-
-				</div>
-
-	</div>
-</div>
-
-		</nav>
-			
-<a href="/wiki/Main_Page" class="mw-logo">
-	<img class="mw-logo-icon" src="/static/images/icons/commonswiki.svg" alt="" aria-hidden="true" height="50" width="50">
-	<span class="mw-logo-container skin-invert">
-		<img class="mw-logo-wordmark" alt="Wikimedia Commons" src="/static/images/mobile/copyright/commonswiki-wordmark.svg" style="width: 7.1875em; height: 2em;">
-	</span>
-</a>
-
-		</div>
-		<div class="vector-header-end">
-			
-<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box">
-	<a href="/wiki/Special:MediaSearch" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikimedia Commons [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
-
-<span>Search</span>
-	</a>
-	<div class="vector-typeahead-search-container">
-		<div class="cdx-typeahead-search">
-			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
-				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
-					<div class="cdx-text-input cdx-text-input--has-start-icon">
-						<input
-							class="cdx-text-input__input mw-searchInput" autocomplete="off"
-							 type="search" name="search" placeholder="Search Wikimedia Commons" aria-label="Search Wikimedia Commons" autocapitalize="none" spellcheck="false" title="Search Wikimedia Commons [f]" accesskey="f" id="searchInput"
-							>
-						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
-					</div>
-					<input type="hidden" name="title" value="Special:MediaSearch">
-				</div>
-				<button class="cdx-button cdx-search-input__end-button">Search</button>
-			</form>
-		</div>
-	</div>
-</div>
-
-			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
-	<div class="vector-user-links-main">
-	
-<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="ca-uls" class="mw-list-item active vector-menu-item--collapsible"><a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet uls-trigger" id=""><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language cdx-button__icon"></span>
-
-<span>English</span>
-</a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-	<nav class="vector-appearance-landmark" aria-label="Appearance">
-		
-<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
-	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"   >
-	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Appearance</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
-				
-			</div>
-		
-	</div>
-</div>
-
-	</nav>
-	
-<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="pt-sitesupport-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=commons.wikimedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span>Donate</span></a>
-</li>
-<li id="pt-createaccount-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3ARedirect%2Ffile%2FBenin+Republican+Bloc+logo.svg" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
-</li>
-<li id="pt-login-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3ARedirect%2Ffile%2FBenin+Republican+Bloc+logo.svg" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o" class=""><span>Log in</span></a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	</div>
-	
-<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out vector-user-links-dropdown--collapsible"  title="More options" >
-	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"   >
-	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Personal tools</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-		
-<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal"  title="User menu" >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			<li id="pt-sitesupport" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=commons.wikimedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart cdx-button__icon"></span>
-
-<span>Donate</span></a>
-</li>
-<li id="pt-createaccount" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3ARedirect%2Ffile%2FBenin+Republican+Bloc+logo.svg" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
-
-<span>Create account</span></a>
-</li>
-<li id="pt-login" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3ARedirect%2Ffile%2FBenin+Republican+Bloc+logo.svg" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o" class=""><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn cdx-button__icon"></span>
-
-<span>Log in</span></a>
-</li>
-
-			
-		</ul>
-		
-	</div>
-</div>
-
-	
-	</div>
-</div>
-
-</nav>
-
-		</div>
-	</header>
-</div>
-<div class="mw-page-container">
-	<div class="mw-page-container-inner">
-		<div class="vector-sitenotice-container">
-			<div id="siteNotice"><!-- CentralNotice --></div>
-		</div>
-		<div class="vector-column-start">
-			<div class="vector-main-menu-container">
-		<div id="mw-navigation">
-			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
-				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
-				
-				</div>
-		</nav>
-		</div>
-	</div>
-</div>
-		<div class="mw-content-container">
-			<main id="content" class="mw-body">
-				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
-					<h1 id="firstHeading" class="firstHeading mw-first-heading">Redirect by file, user, page, revision, or log ID</h1>
-		<div class="mw-indicators">
-	</div>
-</header>
-				<div class="vector-page-toolbar">
-					<div class="vector-page-toolbar-container">
-						<div id="left-navigation">
-							<nav aria-label="Namespaces">
-								
-<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-								
-<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
-	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"    >
-	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-					
-<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-				
-	</div>
-</div>
-
-							</nav>
-						</div>
-						<div id="right-navigation" class="vector-collapsible">
-							<nav aria-label="Views">
-			    
-<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views emptyPortlet"  >
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-			</nav>
-
-							<nav class="vector-page-tools-landmark" aria-label="Page tools">
-								
-<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
-	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"   >
-	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-verticalEllipsis mw-ui-icon-wikimedia-verticalEllipsis cdx-button__icon"></span>
-
-<span class="vector-dropdown-label-text">Tools</span>
-	</label>
-	<div class="vector-dropdown-content">
-
-
-									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
-						
-<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
-	data-feature-name="page-tools-pinned"
-	data-pinnable-element-id="vector-page-tools"
-	data-pinned-container-id="vector-page-tools-pinned-container"
-	data-unpinned-container-id="vector-page-tools-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Tools</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin" aria-label="Move Tools to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin" aria-label="Hide Tools">hide</button>
-</div>
-
-	
-<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet"  >
-	<div class="vector-menu-heading">
-		Actions
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
-	<div class="vector-menu-heading">
-		General
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			<li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FBenin_Republican_Bloc_logo.svg"><span>Get shortened URL</span></a></li>
-		</ul>
-		
-	</div>
-</div>
-
-<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet"  >
-	<div class="vector-menu-heading">
-		In other projects
-	</div>
-	<div class="vector-menu-content">
-		
-		<ul class="vector-menu-content-list">
-			
-			
-		</ul>
-		
-	</div>
-</div>
-
-</div>
-
-									</div>
-				
-	</div>
-</div>
-
-							</nav>
-						</div>
-					</div>
-				</div>
-				<div class="vector-column-end no-font-mode-scale">
-					<div class="vector-sticky-pinned-container">
-						<nav class="vector-page-tools-landmark" aria-label="Page tools">
-							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
-				
-							</div>
-		</nav>
-						<nav class="vector-appearance-landmark" aria-label="Appearance">
-							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
-				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
-	<div
-	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
-	data-feature-name="appearance-pinned"
-	data-pinnable-element-id="vector-appearance"
-	data-pinned-container-id="vector-appearance-pinned-container"
-	data-unpinned-container-id="vector-appearance-unpinned-container"
->
-	<div class="vector-pinnable-header-label">Appearance</div>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin" aria-label="Move Appearance to sidebar">move to sidebar</button>
-	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin" aria-label="Hide Appearance">hide</button>
-</div>
-
-
-</div>
-
-							</div>
-		</nav>
-					</div>
-				</div>
-				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
-					<div class="vector-body-before-content">
-					
-						
-					</div>
-					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
-					
-					
-					<div id="mw-content-text" class="mw-body-content"><div class="mw-specialpage-summary">
-<p>This special page redirects to a file (given the filename), a page (given a revision ID or page ID), a user page (given a numeric user ID), or a log entry (given the log ID). Usage: <a href="/wiki/Special:Redirect/file/Example.jpg" title="Special:Redirect/file/Example.jpg">Special:Redirect/file/Example.jpg</a>, <a href="/wiki/Special:Redirect/page/64308" title="Special:Redirect/page/64308">Special:Redirect/page/64308</a>, <a href="/wiki/Special:Redirect/revision/328429" title="Special:Redirect/revision/328429">Special:Redirect/revision/328429</a>, <a href="/wiki/Special:Redirect/user/101" title="Special:Redirect/user/101">Special:Redirect/user/101</a>, or <a href="/wiki/Special:Redirect/logid/186" title="Special:Redirect/logid/186">Special:Redirect/logid/186</a>.
-</p>
-</div><div class='mw-htmlform-ooui-wrapper oo-ui-layout oo-ui-panelLayout'><form action='/wiki/Special:Redirect/file/Benin_Republican_Bloc_logo.svg' method='get' enctype='application/x-www-form-urlencoded' class='mw-htmlform mw-htmlform-ooui oo-ui-layout oo-ui-formLayout'><div class='mw-htmlform-ooui-header mw-htmlform-ooui-header-errors oo-ui-layout oo-ui-fieldLayout oo-ui-fieldLayout-align-top'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label id='ooui-php-1' class='oo-ui-labelElement-label'></label></span><div class='oo-ui-fieldLayout-field'><div aria-labelledby='ooui-php-1' class='oo-ui-widget oo-ui-widget-enabled'></div></div></div><div class='oo-ui-fieldLayout-messages'><div role='alert' class='oo-ui-widget oo-ui-widget-enabled oo-ui-labelElement oo-ui-flaggedElement-error oo-ui-iconElement oo-ui-messageWidget'><span class='oo-ui-iconElement-icon oo-ui-icon-error oo-ui-image-error'></span><span class='oo-ui-labelElement-label'>Value not found</span></div></div></div><div id='ooui-php-4' class='mw-htmlform-field-HTMLSelectField mw-htmlform-autoinfuse oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-top' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-input-wptype"},"align":"top","helpInline":true,"$overlay":true,"label":{"html":"Lookup:"},"classes":["mw-htmlform-field-HTMLSelectField","mw-htmlform-autoinfuse"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label for='ooui-php-2' class='oo-ui-labelElement-label'>Lookup:</label></span><div class='oo-ui-fieldLayout-field'><div id='mw-input-wptype' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-dropdownInputWidget oo-ui-dropdownInputWidget-php' data-ooui='{"_":"OO.ui.DropdownInputWidget","options":[{"data":"user","label":"User ID"},{"data":"page","label":"Page ID"},{"data":"revision","label":"Page revision"},{"data":"file","label":"Filename"},{"data":"logid","label":"Log ID"}],"$overlay":true,"name":"wptype","value":"file","inputId":"ooui-php-2","required":false}'><select tabindex='0' name='wptype' id='ooui-php-2' class='oo-ui-inputWidget-input'><option value='user'>User ID</option><option value='page'>Page ID</option><option value='revision'>Page revision</option><option value='file' selected='selected'>Filename</option><option value='logid'>Log ID</option></select><span class='oo-ui-widget oo-ui-widget-enabled oo-ui-indicatorElement-indicator oo-ui-indicator-down oo-ui-indicatorElement oo-ui-labelElement-invisible oo-ui-indicatorWidget'></span></div></div></div></div><div id='ooui-php-5' class='mw-htmlform-field-HTMLTextField oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-top' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-input-wpvalue"},"align":"top","helpInline":true,"$overlay":true,"label":{"html":"Value:"},"classes":["mw-htmlform-field-HTMLTextField"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label for='ooui-php-3' class='oo-ui-labelElement-label'>Value:</label></span><div class='oo-ui-fieldLayout-field'><div id='mw-input-wpvalue' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-indicatorElement oo-ui-textInputWidget oo-ui-textInputWidget-type-text oo-ui-textInputWidget-php' data-ooui='{"_":"OO.ui.TextInputWidget","name":"wpvalue","value":"Benin_Republican_Bloc_logo.svg","inputId":"ooui-php-3","indicator":"required","required":true}'><input type='text' tabindex='0' name='wpvalue' value='Benin_Republican_Bloc_logo.svg' required='' id='ooui-php-3' class='oo-ui-inputWidget-input' /><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon'></span><span class='oo-ui-indicatorElement-indicator oo-ui-indicator-required'></span></div></div></div></div><div class="mw-htmlform-submit-buttons">
-<span id='ooui-php-6' class='mw-htmlform-submit oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-buttonElement-size-medium oo-ui-labelElement oo-ui-flaggedElement-primary oo-ui-flaggedElement-progressive oo-ui-buttonInputWidget' data-ooui='{"_":"OO.ui.ButtonInputWidget","type":"submit","value":"Go","label":"Go","flags":["primary","progressive"],"classes":["mw-htmlform-submit"]}'><button type='submit' tabindex='0' value='Go' class='oo-ui-inputWidget-input oo-ui-buttonElement-button'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon oo-ui-image-invert'></span><span class='oo-ui-labelElement-label'>Go</span><span class='oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator oo-ui-image-invert'></span></button></span></div>
-</form></div><noscript><img src="https://commons.wikimedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
-<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://commons.wikimedia.org/wiki/Special:Redirect/file/Benin_Republican_Bloc_logo.svg">https://commons.wikimedia.org/wiki/Special:Redirect/file/Benin_Republican_Bloc_logo.svg</a>"</div></div>
-					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw-interface=""></div>
-				</div>
-			</main>
-			
-		</div>
-		<div class="mw-footer-container">
-			<footer id="footer" class="mw-footer" >
-				<ul id="footer-info" class="mw-portlet mw-portlet-footer-info emptyPortlet">
-</ul>
-
-				<ul id="footer-places" class="mw-portlet mw-portlet-footer-places">
-	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
-	<li id="footer-places-about"><a href="/wiki/Commons:Welcome">About Wikimedia Commons</a></li>
-	<li id="footer-places-disclaimers"><a href="/wiki/Commons:General_disclaimer">Disclaimers</a></li>
-	<li id="footer-places-legal-safety-contacts"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information">Legal &amp; safety contacts</a></li>
-	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
-	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
-	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/commons.wikimedia.org">Statistics</a></li>
-	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
-	<li id="footer-places-mobileview"><a href="//commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Benin_Republican_Bloc_logo.svg&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
-</ul>
-
-				<ul id="footer-icons" class="mw-portlet mw-portlet-footer-icons noprint">
-	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
-	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
-</ul>
-
-			</footer>
-		</div>
-	</div> 
-</div> 
-<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
-	<div id="vector-sticky-header" class="vector-sticky-header">
-		<div class="vector-sticky-header-start">
-			<div class="vector-sticky-header-icon-start vector-button-flush-left" aria-hidden="true">
-				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
-
-<span>Search</span>
-			</button>
-		</div>
-			
-		<div role="search" class="vector-search-box-vue vector-search-box">
-			<div class="vector-typeahead-search-container">
-				<div class="cdx-typeahead-search">
-					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
-						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
-							<div class="cdx-text-input cdx-text-input--has-start-icon">
-								<input
-									class="cdx-text-input__input mw-searchInput" autocomplete="off"
-									
-									type="search" name="search" placeholder="Search Wikimedia Commons">
-								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
-							</div>
-							<input type="hidden" name="title" value="Special:MediaSearch">
-						</div>
-						<button class="cdx-button cdx-search-input__end-button">Search</button>
-					</form>
-				</div>
-			</div>
-		</div>
-		<div class="vector-sticky-header-context-bar">
-				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" >Redirect by file, user, page, revision, or log ID</div>
-			</div>
-		</div>
-		<div class="vector-sticky-header-end" aria-hidden="true">
-			<div class="vector-sticky-header-icons">
-				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit cdx-button__icon"></span>
-
-<span></span>
-			</a>
-			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock cdx-button__icon"></span>
-
-<span></span>
-			</a>
-		</div>
-			<div class="vector-sticky-header-buttons">
-				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive cdx-button__icon"></span>
-
-<span>Add topic</span>
-			</a>
-		</div>
-			<div class="vector-sticky-header-icon-end">
-				<div class="vector-user-links">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
-	<ul>
-		
-	</ul>
-</div>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-77bf874667-ncntq","wgBackendResponseTime":108});});</script>
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Adobe Illustrator 23.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg id="Calque_1" width="181.9807" height="81.400002" version="1.1" viewBox="0 0 181.9807 81.400002" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style id="style1463" type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#106536;}
+	.st2{fill:#F9FAF9;}
+	.st3{fill:#F5F7F5;}
+	.st4{fill:#FAFBFA;}
+	.st5{fill:#F6F8F6;}
+	.st6{fill:#FBFBFB;}
+	.st7{fill:#18693C;}
+	.st8{fill:#85BD29;}
+	.st9{fill:#FBFCFB;}
+	.st10{fill:#F7F9F7;}
+	.st11{fill:#237041;}
+	.st12{fill:#F5F8F6;}
+	.st13{fill:#F0F4F1;}
+	.st14{fill:#F2F5F2;}
+	.st15{fill:#FAFAF9;}
+	.st16{fill:#F8F9F8;}
+	.st17{fill:#F8FAF8;}
+	.st18{fill:#136638;}
+	.st19{fill:#0F6536;}
+	.st20{fill:#F6F8F7;}
+	.st21{fill:#EAF0EC;}
+	.st22{fill:#126638;}
+	.st23{fill:#F7F8F7;}
+	.st24{fill:#719D7E;}
+	.st25{fill:#F3F6F4;}
+	.st26{fill:#F0F3F0;}
+	.st27{fill:#F4F7F4;}
+	.st28{fill:#F9FAF8;}
+	.st29{fill:#689878;}
+	.st30{fill:#EEF2EF;}
+	.st31{fill:#ECF1ED;}
+	.st32{fill:#F1F4F1;}
+	.st33{fill:#F3F6F3;}
+	.st34{fill:#7EA286;}
+	.st35{fill:#095E2E;}
+	.st36{fill:#33734A;}
+	.st37{fill:#095F2E;}
+	.st38{fill:#116537;}
+	.st39{fill:#709A7C;}
+	.st40{fill:#EBF0EC;}
+	.st41{fill:#DEE6DF;}
+	.st42{fill:#97B39D;}
+	.st43{fill:#AAC2AF;}
+	.st44{fill:#568C69;}
+	.st45{fill:#DCE5DD;}
+	.st46{fill:#6B9A7D;}
+	.st47{fill:#15673A;}
+	.st48{fill:#096131;}
+	.st49{fill:#9BC05B;}
+	.st50{clip-path:url(#SVGID_2_);fill:#98BF53;}
+	.st51{fill:#2B653F;}
+	.st52{fill:#98BF53;}
+	.st53{fill:#39703D;}
+	.st54{fill:#9AC055;}
+	.st55{fill:#417744;}
+	.st56{fill:#477C44;}
+	.st57{fill:#1F5C34;}
+	.st58{fill:#BDD593;}
+	.st59{fill:#1D5B32;}
+	.st60{fill:#F8FAF5;}
+	.st61{fill:#1A5930;}
+	.st62{fill:#1E5B33;}
+</style>
+<path id="path1465" class="st0" d="m35.827254 32.075c-0.1 0.1-0.2 0.1-0.2 0.2 0 0.2 0 0.4 0.1 0.6 0 0.1 0 0.3 0.1 0.4 0.1 0.5 0.2 1.1 0.3 1.6h0.1c0.1-0.1 0.2-0.3 0.3-0.4 0.1-0.2 0.1-0.3-0.1-0.5v-0.8c0-0.1-0.1-0.2-0.1-0.3s-0.1-0.3-0.1-0.4-0.1-0.3-0.1-0.4c0 0-0.1 0-0.1-0.1-0.1 0-0.2 0.1-0.2 0.1z"/>
+<path id="path1467" class="st0" d="m14.127254 34.775c-0.1 0.2-0.1 0.3-0.2 0.5s-0.2 0.3-0.2 0.5v0.2c0.2 0 0.4-0.1 0.6-0.1 0.2-0.3 0-0.6 0.1-0.9s0.1-0.6 0.2-0.9c0 0 0.1 0 0.1-0.1 0.1-0.5 0.1-1 0-1.5v-0.1c0-0.1 0-0.2-0.1-0.3-0.2 0.1-0.1 0.2-0.1 0.3-0.1 0.4-0.1 0.8-0.2 1.2 0 0.2-0.1 0.4-0.1 0.6-0.1 0.2-0.1 0.4-0.1 0.6z"/>
+<path id="path1469" class="st0" d="m12.927254 24.275c0 0.1 0.1 0.3 0.1 0.4 0 0.2 0 0.3 0.1 0.3 0.2 0 0.2-0.2 0.2-0.3v-0.2c-0.1-0.2-0.2-0.2-0.4-0.2z"/>
+<path id="path1471" class="st0" d="m15.927254 15.975c-0.1-0.1-0.2-0.1-0.2 0v0.1c0.1 0 0.2-0.1 0.2-0.1z"/>
+<path id="path1473" class="st1" d="m11.927254 49.675-0.1 0.2c-0.1 0 0 0.1 0 0.2 0-0.4-0.4-1.1-0.6-1.5-0.1-1.6-0.1-3.4-0.2-5.1v-0.5c0-0.2-0.1-0.3-0.3-0.4-0.1 0-0.2-0.2-0.2-0.3 0-0.2-0.1-0.3-0.3-0.3-0.1 0-0.2-0.1-0.2999998-0.2-0.5-0.5-1-1.1-1.5-1.6-0.1-0.1-0.1-0.3-0.2-0.4-0.1-0.4-0.2-0.9-0.1-1.3 0-0.3 0-0.5-0.3-0.6-0.1 0-0.2-0.2-0.3-0.3-0.2-0.2-0.2-0.4-0.1-0.6 0.3-0.6 0.4-1.2 0.3-1.8v-0.7c0-1-0.1-1.9-0.1-2.9 0-0.3-0.1-0.4-0.3-0.5-1.8-1-3.5-2.1-5.3-3.2-0.6-0.4-1.19999995-0.8-1.79999995-1.2-0.1-0.2-0.3-0.4-0.2-0.7v-1c0-0.4 0-0.7 0.2-1 0.1-0.2 0.1-0.4 0.1-0.6v-1.2c0-0.2 0.1-0.3 0.2-0.5 0.1-0.1 0.2-0.2 0.3-0.2 0.39999995-0.3 0.59999995-0.6 0.49999995-1.1 0-0.1 0.1-0.3 0.1-0.4s0.1-0.3 0.1-0.4c0-0.2 0-0.4 0.1-0.6s0.2-0.3 0.3-0.5c0.2 0 0.3 0 0.5-0.1v-0.4c0-0.2 0-0.4 0.1-0.5 0.1-0.3 0.1-0.3 0.4-0.2 0.4 0.2 0.7 0.3 1.1 0.5 0.1 0.1 0.3 0.1 0.5 0.2 0.1-0.4 0.1-0.8-0.3-1.1-0.1-0.1-0.2-0.3-0.2-0.4 0.1-0.2 0.3-0.3 0.5-0.3h0.5c0-0.5 0.2-0.9-0.1-1.3 0.6-0.1 1.2 0.1 1.8 0.1 0-0.2 0-0.4 0.1-0.6h0.9c-0.1-0.2-0.1-0.4-0.1-0.6 0-0.3 0-0.3 0.2-0.4 0.3-0.2 0.3-0.2 0.3-0.9 0.7-0.5 1.6-0.3 2.0999998 0.3 0.3 0.4 0.4 0.4 0.8 0.3 0.2-0.1 0.4-0.2 0.7-0.2 0.1 0 0.3-0.1 0.5-0.1 0.5 0 1-0.1 1.5-0.1h1c0.4 0 0.8 0 1.2 0.1 0.2 0 0.3-0.1 0.4-0.2l1.6-1.6c0.6-0.6 1.3-1.1 2-1.5 0.1 0 0.1-0.1 0.2-0.1 0-0.1 0-0.2-0.1-0.2-0.1-0.3-0.1-0.4 0.2-0.6 0.1-0.1 0.3-0.3 0.3-0.4 0.1-0.3 0.2-0.5 0.4-0.8 0.2-0.4 0.3-0.8 0.2-1.3 0-0.2 0-0.3 0.2-0.4l0.6-0.3 0.3-0.3c0.1-0.2 0-0.3-0.1-0.4-0.1 0-0.1-0.1-0.2-0.1-0.3-0.2-0.5-0.4-0.6-0.8-0.1-0.5-0.2-1-0.4-1.6 0-0.2 0-0.3 0.2-0.3 0.3-0.1 0.5-0.1 0.8-0.1 0.2-0.1 0.4-0.2 0.6-0.2s0.3-0.1 0.5-0.1c0.3 0 0.6 0.1 0.8-0.2 0.1-0.1 0.2 0 0.3 0h0.7l0.1-0.1c0.1-0.4 0.3-0.6 0.7-0.7 0.3-0.1 0.5-0.2 0.8-0.4 0.2-0.1 0.4-0.1 0.6 0 0.4 0.2 0.7 0.5 0.9 1 0.1 0.2 0.2 0.3 0.4 0.3 0.4 0 0.7 0.2 0.8 0.6 0.1 0.3 0.4 0.6 0.6 0.8 0.5 0.5 1.1 0.9 1.6 1.4l0.6 0.3c0.1 0.4 0.2 0.8 0.3 1.1 0 0 0 0.1 0.1 0.1 0.3 0.7 0.4 0.8 1.2 0.8 1.2 0.1 2.1 0.6 2.6 1.7 0.1 0.2 0.2 0.3 0.3 0.5s0.1 0.3 0.1 0.5c-0.1 0.2-0.2 0.5-0.3 0.7s-0.2 0.3-0.3 0.4c-0.2 0.2-0.3 0.3-0.3 0.6-0.1 0.3-0.2 0.6-0.3 1-0.1 0.3-0.1 0.7 0.1 1 0.8 1.1 1.6 2.1 2.5 3.2"/>
+<path id="path1475" class="st1" d="m36.627254 29.275c-0.1-0.5-0.3-1.1-0.4-1.6-0.1-0.2-0.1-0.4-0.3-0.5s-0.5-0.1-0.7-0.2-0.3-0.1-0.5-0.2-0.4-0.2-0.7-0.1c-0.2 0.1-0.3 0.2-0.5 0.2l-0.1 0.1c-0.2 0.1-0.3 0.3-0.5 0.4l-0.1 0.1c-0.4 0.3-0.7 0.6-1.1 0.9-0.2 0.1-0.3 0.3-0.5 0.4l-0.1 0.1c-0.2 0.2-0.4 0.3-0.6 0.5-0.1-0.1-0.2-0.3-0.2-0.4-0.1-0.2-0.2-0.4-0.2-0.6-0.1-0.1-0.1-0.2-0.2-0.4s-0.3-0.4-0.4-0.6-0.3-0.4-0.5-0.5c-0.1-0.1-0.2-0.2-0.4-0.2-0.6-0.2-1.2-0.4-1.8-0.7l-0.6-0.3c-0.1-0.1-0.3-0.2-0.4-0.3-0.4-0.4-0.8-0.7-1.2-1.1-0.2-0.2-0.3-0.4-0.5-0.6-0.1-0.1-0.1-0.2-0.2-0.3s-0.2-0.3-0.2-0.4l-0.3-0.6c-0.1-0.3-0.2-0.5-0.3-0.8-0.1-0.1-0.1-0.3-0.2-0.4s-0.1-0.3-0.2-0.4-0.1-0.2-0.2-0.4c0-0.1-0.1-0.3-0.1-0.4 1.3-0.1 2.6-0.2 3.8 0 0.2 0.1 0.3 0.1 0.5 0.2 0.1 0 0.2 0.1 0.3 0.1 0.5 0.3 0.9 0.3 1.5 0.2 0.1-0.1 0.3-0.2 0.4-0.2 0.2-0.1 0.3-0.2 0.4-0.5v-0.1l0.1-0.1c0.1-0.6 0.1-1.1-0.2-1.6-0.2-0.2-0.3-0.4-0.5-0.6s-0.4-0.3-0.6-0.3c-0.3-0.2-0.7-0.3-1-0.5 0.2-0.1 0.1-0.1 0-0.1s-0.1-0.1-0.2-0.1c-0.2-0.1-0.5-0.3-0.7-0.4-0.1-0.1-0.2-0.1-0.3-0.2-0.2-0.1-0.5-0.2-0.7-0.4-0.1-0.1-0.2-0.1-0.3-0.2-0.2-0.1-0.3-0.2-0.5-0.3-0.1-0.1-0.2-0.2-0.3-0.2-0.1-0.1-0.2-0.1-0.2-0.2 0.1 0 0.1-0.1 0.2-0.1 0 0 0.1 0 0.2 0.1 0-0.1-0.1-0.2-0.1-0.3h1.2c0.2 0 0.3 0 0.5-0.2h-0.7c-0.3-0.1-0.6-0.1-0.9-0.2 0 0 0-0.1-0.1-0.1 0.4-0.1 0.7-0.1 1.1-0.2 0.8-0.2 1.5-0.7 1.9-1.4 0.2-0.1 0.2-0.3 0.2-0.6-0.1 0.2-0.2 0.3-0.3 0.4s-0.2 0.1-0.3 0.2c-0.4 0.4-0.9 0.7-1.5 0.8s-1.2 0.1-1.8-0.1c-0.8-0.3-1.6-0.3-2.4 0.2-0.1 0-0.1 0.1-0.1 0.1l-0.6-0.3c-0.1-0.1-0.3-0.2-0.4-0.3s-0.1-0.1-0.1 0v0.8c0 0.1 0 0.2-0.1 0.4 0 0 0-0.1-0.1-0.1 0.1-0.4 0-0.7 0-1.1-0.1 0.3 0 0.7-0.2 1-0.1-0.1-0.3-0.2-0.4-0.3s-0.2-0.1-0.3-0.2c-0.2-0.1-0.3-0.1-0.5-0.2-0.2 0.1-0.1 0.4-0.1 0.6 0 0.3 0.1 0.7 0.1 1-0.3 0.1-0.6 0.2-0.9 0.2-0.4 0.1-0.8 0.2-1.2 0.5-0.1 0.1-0.3 0.2-0.4 0.2l-0.2 0.2c-0.1 0.1-0.2 0.1-0.3 0.2s-0.2 0.2-0.3 0.2l-0.1 0.1c-0.5 0.4-0.7 0.7-0.7 0.9 0.1-0.1 0.2-0.2 0.4-0.3s0.4-0.3 0.7-0.3c-0.2 0.2-0.3 0.4-0.5 0.6-0.1 0.1-0.3 0.2-0.4 0.4-0.1 0.1-0.2 0.2-0.2 0.3-0.2 0.3-0.4 0.5-0.6 0.8l-0.1 0.1c-0.1 0.1-0.1 0.2-0.2 0.2l-0.6 0.9c-0.1 0.2-0.2 0.4-0.3 0.5-0.1 0.3-0.2 0.5-0.4 0.8-0.1 0.2-0.2 0.4-0.2 0.6-0.1 0.1-0.1 0.3-0.2 0.4 0 0.1 0 0.1-0.1 0.2-0.1 0.3-0.2 0.5-0.3 0.8 0 0.1 0 0.2-0.1 0.3 0 0.1-0.1 0.2-0.1 0.3s-0.1 0.3-0.1 0.4c-0.1 0.2-0.1 0.4 0 0.6 0-0.1 0-0.2 0.1-0.2 0-0.1 0.1-0.2 0.1-0.3s0.1-0.1 0.1-0.2c0.1-0.2 0.3-0.5 0.4-0.7s0.2-0.3 0.3-0.5 0.3-0.3 0.4-0.5l0.1-0.1 0.9-0.6c0.1 0 0.1-0.1 0.2-0.1 0.2-0.1 0.3-0.1 0.5-0.2 0.1 0.1 0.3-0.1 0.2 0.1-0.1 0.1-0.2 0.3-0.4 0.4-0.1 0.1-0.2 0.3-0.3 0.4s-0.2 0.2-0.2 0.3c-0.1 0.2-0.2 0.3-0.3 0.5-0.2 0.4-0.4 0.7-0.6 1.1v0.1c-0.1 0.1-0.1 0.3-0.2 0.4-0.1 0.3-0.1 0.5-0.2 0.8 0 0.1-0.1 0.1-0.1 0.2-0.1 0.4-0.1 0.7-0.2 1.1-0.1 0.1-0.1 0.2 0 0.4 0-0.2 0.1-0.3 0.1-0.4s0-0.2 0.1-0.3c0.1-0.2 0.2-0.5 0.3-0.7 0.1-0.1 0.2-0.2 0.2-0.3 0.2 0 0.1 0.2 0.1 0.3-0.2 0.5-0.2 1-0.2 1.5-0.1 0.5-0.2 0.9-0.2 1.4-0.2 0.8-0.3 1.7-0.5 2.5 0 0.1 0 0.2-0.1 0.3 0 0.1-0.1 0.2-0.1 0.3-0.1 0.2-0.1 0.3 0 0.5 0.1-0.1 0.1-0.2 0.1-0.3s0.1-0.2 0.1-0.2c0-0.1 0-0.2 0.1-0.2 0-0.1 0.1-0.2 0.1-0.2 0.1-0.3 0.2-0.5 0.3-0.8 0.1-0.2 0.1-0.3 0.2-0.5 0 0 0.1 0 0.1 0.1v1.5c-0.2 0.3-0.3 0.6-0.5 0.8 0 0.1-0.1 0.1-0.2 0.2 0.1 0.1 0.2 0.1 0.3 0.1 0 0.3-0.1 0.5-0.1 0.8 0.2-0.2 0.3-0.4 0.3-0.7 0-0.1 0-0.1 0.1-0.2 0 0 0.1 0 0.1-0.1 0 0.3 0.1 0.5 0.1 0.7s0 0.5 0.1 0.7c0.1 0.5 0.1 1.1-0.1 1.6 0 0.1-0.1 0.3-0.1 0.4-0.1 0.1-0.1 0.3-0.2 0.4l-0.3 0.6c-0.2 0.3-0.4 0.5-0.6 0.8-0.2 0.2-0.4 0.5-0.6 0.7s-0.4 0.5-0.6 0.7c0.5 0 0.9-0.3 1.2-0.6 0.4-0.3 0.8-0.8 1.2-1.1 0.1-0.1 0.2-0.1 0.2-0.1h0.1c-0.1 0.1-0.1 0.2-0.2 0.4s-0.3 0.5-0.4 0.7c0 0.3-0.1 0.4-0.1 0.6-0.1 0.3-0.2 0.5-0.4 0.8-0.1 0.1-0.1 0.3-0.2 0.4-0.4 0.7-0.4 1.4-0.1 2.1 0.1 0.2 0.2 0.4 0.5 0.4-0.2-0.4-0.2-0.8-0.1-1.2 0-0.1 0-0.1 0.1-0.2l0.4-0.4c0.2-0.1 0.3-0.2 0.5-0.2 0 0 0.1 0 0.1-0.1 0.5-0.2 0.9-0.5 1.4-0.7l0.1-0.1 0.6-0.3 0.2-0.2c0.2-0.2 0.5-0.3 0.7-0.5 0.1-0.1 0.3-0.2 0.5-0.3-0.1 0.3-0.1 0.5-0.2 0.7s-0.2 0.3-0.2 0.5c-0.1 0.1-0.1 0.2-0.2 0.4l-0.9 0.9c-0.3 0.2-0.6 0.5-0.9 0.7-0.2 0-0.3 0.1-0.4 0.3 0.3-0.1 0.6-0.1 0.9-0.2 0.1 0 0.2-0.1 0.3-0.1 0.2-0.1 0.3-0.1 0.5-0.2 0.3-0.2 0.6-0.3 0.8-0.5 0.1-0.1 0.3-0.2 0.4-0.2 0.2-0.1 0.3-0.2 0.4-0.4 0.2-0.3 0.4-0.6 0.6-0.8 0-0.1 0-0.1 0.1-0.2s0.2-0.2 0.2-0.3c0.1-0.2 0.2-0.4 0.2-0.5 0.1-0.2 0.1-0.3 0.2-0.5 0-0.2 0.1-0.4 0.1-0.6 0-0.1 0.1-0.3 0.1-0.4 0.2-0.1 0.1-0.3 0.1-0.5v-0.4c0.1 0 0.1-0.1 0.2-0.1v1.3 0.2c-0.1 0.2-0.1 0.5-0.2 0.7v0.2c-0.2 0-0.2 0.2-0.2 0.3l-0.6 1.2c-0.1 0.1-0.2 0.3-0.2 0.4-0.1 0.2-0.2 0.4-0.3 0.5 0 0 0 0.1-0.1 0.1-0.3 0.4-0.5 0.8-0.8 1.2-0.1 0.1-0.2 0.2-0.2 0.3s-0.1 0.1-0.1 0.2c-0.2 0.2-0.3 0.4-0.5 0.6s-0.4 0.5-0.5 0.7c-0.5 0.6-1 1.2-1.4 1.8-0.2 0.4-0.4 0.8-0.6 1.1l-0.3 0.9c0 0.1-0.1 0.3-0.1 0.4 0 0.2-0.1 0.5-0.1 0.7-0.1 0.1 0.2 0.3 0.1 0.4s-0.5 0-0.6 0.1"/>
+<path id="path1477" class="st1" d="m24.227254 51.075-0.3-0.6v-0.2c-0.2-0.6-0.3-1.1 0-1.7 0.3-0.4 0.7-0.8 1-1.3 0.1-0.1 0.2-0.2 0.2-0.3 0.3-0.4 0.6-0.8 0.9-1.1v0.9 1.4c0 0.8 0.1 1.7 0.1 2.5 0 0.2-0.1 0.5-0.2 0.7s-0.1 0.5-0.2 0.7c0 0.1-0.1 0.3-0.1 0.4-0.2 0.3-0.2 0.7 0 1 0.1 0.3 0.2 0.5 0.3 0.7s0.1 0.4 0.1 0.7c-0.2 1-0.3 2.1-0.5 3.1 0 0.2-0.1 0.5-0.2 0.7-0.1 0.3 0 0.5 0.2 0.7 0.6 0.6 0.6 0.6 0.6 1.4v2.2c0 0.2 0 0.4 0.2 0.5 0.5 0.3 0.5 0.8 0.4 1.3-0.1 0-0.2 0.1-0.4 0.1v0.8c0 0.7 0 1.4 0.1 2.1 0 0.2 0 0.3 0.1 0.5 0.1 0.3 0 0.5-0.1 0.7 0 0.1-0.1 0.1-0.1 0.2-0.1 0.2-0.1 0.4 0.1 0.5 0.1 0.1 0.2 0.2 0.4 0.3-0.3 0.5-0.3 0.5-0.4 0.5-0.4 0.2-0.5 0.6-0.6 1 0 0.1 0 0.3 0.1 0.4 0.2 0.2 0.2 0.4 0.2 0.6 0 0.3 0 0.6-0.1 0.8-0.1 0.3 0 0.7 0.3 0.8 0.3 0.2 0.4 0.5 0.2 0.7-0.2 0.3-0.4 0.5-0.5 0.8-0.3-0.5-0.7-0.9-1-1.4-0.2-0.2-0.3-0.5-0.5-0.7-0.1-0.1-0.2-0.2-0.2-0.3-0.2-0.3-0.4-0.5-0.6-0.8-0.1-0.2-0.2-0.3-0.3-0.5-0.2-0.2-0.3-0.5-0.5-0.7-0.1-0.2-0.2-0.3-0.3-0.5-0.2-0.2-0.3-0.5-0.5-0.7-0.1-0.1-0.2-0.3-0.2-0.4-0.1-0.1-0.2-0.3-0.2-0.4-0.2-0.3-0.3-0.6-0.5-0.9-0.1-0.2-0.1-0.3-0.2-0.5-0.1-0.3-0.1-0.6-0.2-1v-0.3c-0.1-0.8-0.1-1.6-0.1-2.5 0-0.3 0-0.6 0.2-0.9 0.1-0.1 0.1-0.2 0.2-0.2 0.1-0.1 0.1-0.2 0.2-0.2 0.1-0.1 0.1-0.2 0.2-0.2 0.1-0.1 0.2-0.3 0.2-0.4l0.6-1.2c0.1-0.1 0.1-0.2 0.2-0.3s0.1-0.2 0.2-0.3c0.2-0.3 0.3-0.7 0.5-1 0.1-0.1 0.1-0.3 0.1-0.4 0.1-0.1 0.1-0.3 0.2-0.4 0.2-0.5 0.3-0.9 0.5-1.4l0.6-2.4c0.3-1.1 0.3-2.2-0.1-3.3-0.2 0-0.3-0.1-0.3-0.3z"/>
+<path id="path1479" class="st1" d="m30.627254 35.375c0-0.2 0.1-0.3 0.1-0.5 0.2-0.3 0.3-0.6 0.6-0.8l0.2-0.2c0.2-0.2 0.5-0.4 0.7-0.6s0.4-0.4 0.6-0.5c0.2-0.2 0.4-0.2 0.6-0.1 0.3 0.1 0.6 0.3 0.6 0.6-0.6 0.3-0.8 0.8-0.6 1.4 0.1 0.2 0.1 0.3 0.2 0.5s0 0.3-0.2 0.4c-0.1 0-0.2 0.1-0.4 0.1-0.3 0.1-0.6 0.3-0.6 0.6s-0.2 0.7-0.4 0.9c-0.1 0.1-0.3 0.3-0.5 0.3-0.5 0.3-0.6 0.7-0.7 1.2 0 0.1 0.1 0.2 0.1 0.4 0.3 0.6 0.3 1.1 0.2 1.7l-0.6 1.8c0 0.1-0.1 0.2-0.2 0.3-0.3 0.2-0.7 0.3-1 0.5-0.2 0.1-0.3 0.1-0.4-0.1-0.2-0.2-0.4-0.2-0.6-0.1-0.1 0.1-0.3 0.1-0.4 0.2-0.2 0.1-0.3 0.1-0.5 0 0-0.1 0-0.2 0.1-0.2l0.3-0.6c0.1-0.2 0.3-0.5 0.4-0.7 0.1-0.3 0.3-0.6 0.4-0.9 0-0.1 0.1-0.2 0.1-0.3 0.1-0.2 0.2-0.4 0.3-0.5s0.1-0.3 0.2-0.4c0-0.1 0-0.1 0.1-0.2s0.1-0.3 0.2-0.4c0-0.1 0.1-0.2 0.1-0.2 0.1-0.1 0.1-0.3 0.2-0.4 0.1-0.4 0.3-0.8 0.4-1.2 0.1-0.3 0.2-0.5 0.3-0.8-0.1-0.3 0-0.8 0.1-1.2z"/>
+<path id="path1481" class="st2" d="m25.927254 45.975c-0.3 0.4-0.6 0.8-0.9 1.1 0-0.1 0.2-0.3 0-0.4v-0.1l0.9-0.9c0.1 0.1 0 0.2 0 0.3z"/>
+<path id="path1483" class="st3" d="m25.827254 76.275c-0.7 0.1-1.4 0.1-2 0.2h-0.5c0.6-0.1 1.2-0.1 1.8-0.2h0.7z"/>
+<path id="path1485" class="st4" d="m11.227254 71.575c-0.2 0.2-0.4 0.4-0.6 0.5l-0.6 0.3 0.3-0.3c0.2-0.1 0.3-0.4 0.5-0.4l0.1-0.2c0.2-0.1 0.3 0 0.3 0.1z"/>
+<path id="path1487" class="st5" d="m27.627254 43.175c0 0.1 0 0.2-0.1 0.2h-0.1l-0.1-0.1c0.1 0 0.2-0.1 0.3-0.1z"/>
+<path id="path1489" class="st6" d="m27.227254 12.175c-0.4 0.7-1.1 1.2-1.9 1.4-0.4 0.1-0.7 0.1-1.1 0.2 0 0 0 0.1 0.1 0.1h-0.4c0-0.2 0.2-0.2 0.3-0.2 0.2 0 0.3-0.1 0.4-0.2 0.1 0.1 0.2 0.1 0.3 0.1l0.1-0.1-0.1-0.1h-0.4c-0.4 0-0.7 0-1.1-0.2s-0.8-0.2-1.3-0.2c-0.2 0-0.3 0.1-0.5 0.1s-0.2 0.1-0.2 0.3c-0.3 0.3-0.7-0.1-1.1 0.1 0-0.1 0-0.3-0.1-0.4l0.6 0.3s0.1 0 0.1-0.1c0.8-0.5 1.6-0.4 2.4-0.2 0.6 0.2 1.2 0.2 1.8 0.1s1.1-0.4 1.5-0.8c0.1-0.1 0.2-0.2 0.3-0.2 0.2-0.1 0.3 0 0.3 0z"/>
+<path id="path1491" class="st2" d="m12.927254 37.275c-0.1 0-0.2 0.1-0.2 0.1-0.4 0.4-0.8 0.8-1.2 1.1-0.3 0.3-0.7 0.5-1.2 0.6 0.2-0.2 0.4-0.4 0.6-0.7 0.2-0.2 0.4-0.5 0.6-0.7 0.2-0.3 0.4-0.5 0.6-0.8-0.1 0.4 0.3 0.4 0.5 0.5 0.1-0.2 0.1-0.6 0.5-0.5v-0.3h0.4c0 0.1 0 0.2-0.1 0.2l-0.2 0.2c-0.3 0.2-0.3 0.2-0.3 0.3z"/>
+<path id="path1493" class="st6" d="m13.827254 63.275c-0.1-0.2-0.1-0.4-0.2-0.6v-0.2c0.1 0.1 0.2 0.1 0.3 0.1v0.3c0.2 0.8 0.3 1.6 0.2 2.3v0.2c0.2-0.3 0.3-0.6 0.3-0.8 0.2-1.1 0.2-2.1 0.1-3.2-0.1-0.7-0.2-1.4-0.3-2l-0.3-1.2c0 0.1 0.1 0.1 0.1 0.2 0.4 1.5 0.7 3.1 0.7 4.7 0 1-0.2 2-0.7 2.9-0.2-0.1-0.1-0.2-0.1-0.3 0-0.6 0-1.2-0.1-1.8 0.1-0.3 0-0.5 0-0.6z"/>
+<path id="path1495" class="st7" d="m14.627254 34.075c-0.1 0.3-0.1 0.6-0.2 0.9s-0.3 0.5-0.4 0.8c-0.1-0.1-0.2-0.1-0.3-0.1 0.1-0.2 0.2-0.3 0.2-0.5 0.1-0.2 0.1-0.3 0.2-0.5 0.1-0.4 0.2-0.8 0.2-1.2 0-0.3 0.1-0.6 0.1-0.9h0.2s-0.1 0.1 0 0.1c0.1 0.5 0 1 0 1.4z"/>
+<path id="path1497" class="st8" d="m36.327254 33.975c0.2 0.1 0.1 0.3 0.1 0.5-0.1 0.1-0.2 0.3-0.3 0.4h-0.1c-0.1-0.5-0.2-1.1-0.3-1.6 0-0.1 0-0.3-0.1-0.4v-0.2c0.1 0.2 0.1 0.2 0.4 0.1 0 0.3 0 0.6 0.1 0.9 0.1 0.1 0.2 0.2 0.2 0.3z"/>
+<path id="path1499" class="st6" d="m12.827254 47.075c0.2-0.4 0.4-0.8 0.6-1.1 0.4-0.6 0.9-1.2 1.4-1.8 0 0.2 0 0.3-0.1 0.5 0 0.2-0.2 0.3-0.4 0.2 0 0.1 0.1 0.2 0.1 0.3v0.1h-0.4v0.3c-0.2 0.1-0.3 0.2-0.5 0.4 0 0.1 0.1 0.1 0.1 0.2-0.3 0.3-0.5 0.6-0.8 0.9z"/>
+<path id="path1501" class="st4" d="m17.127254 40.975c0.1-0.2 0.2-0.4 0.3-0.5s0.2-0.3 0.2-0.4l0.6-1.2s0 0.1 0.1 0.1c0 0.2-0.1 0.4 0 0.7s-0.2 0.2-0.4 0.2v0.7c-0.1 0-0.2 0-0.4 0.1-0.1 0.2-0.2 0.3-0.4 0.3z"/>
+<path id="path1503" class="st9" d="m18.627254 37.675v-0.2c0.1-0.4 0.1-0.9 0-1.3 0-0.1 0-0.2-0.1-0.3h-0.1v0.3 0.4h-0.1-0.1c0-0.3 0.1-0.6 0.1-0.9 0 0-0.1 0-0.1-0.1-0.1-0.2 0.1-0.1 0.2-0.2 0.1 0.1 0.2 0.3 0.3 0.4 0 0.5-0.1 1-0.1 1.5h0.2v0.3c0 0.1-0.1 0.1-0.2 0.1z"/>
+<path id="path1505" class="st2" d="m24.827254 24.275c0.4 0.4 0.8 0.7 1.2 1.1 0.1 0.1 0.3 0.2 0.4 0.3-0.1 0-0.3 0.1-0.3 0-0.1-0.1-0.1-0.1-0.2 0 0-0.2-0.4-0.2-0.4-0.4 0-0.1-0.1-0.2-0.2-0.2-0.2-0.1-0.2-0.1-0.3-0.4-0.1 0-0.2-0.1-0.4-0.1 0.1-0.2 0.2-0.2 0.2-0.3z"/>
+<path id="path1507" class="st2" d="m17.427254 39.475c-0.2 0.3-0.4 0.6-0.6 0.8l-0.4 0.4c-0.1 0.1-0.3 0.2-0.4 0.2l-0.1-0.1c0.1-0.2 0.4-0.2 0.4-0.5 0 0 0.1-0.1 0.2-0.1s0.2 0 0.3-0.1c-0.1-0.1-0.1-0.2-0.2-0.3 0.2 0 0.4-0.1 0.4-0.4 0.2 0.2 0.3 0.2 0.4 0.1z"/>
+<path id="path1509" class="st4" d="m24.227254 51.075c0.1 0.2 0.2 0.3 0.2 0.5 0.4 1.1 0.4 2.2 0.1 3.3 0-0.1 0-0.2-0.1-0.2 0-0.1-0.1-0.1-0.2-0.1v-0.1h0.2c0.1 0 0.1-0.1 0.1-0.2 0.1-0.6 0.1-1.2 0-1.8v-0.1c-0.3-0.1-0.2-0.3-0.2-0.6 0.1-0.2-0.1-0.4-0.1-0.7z"/>
+<path id="path1511" class="st6" d="m24.327254 13.875c0.3 0.1 0.6 0.1 0.9 0.2l0.2 0.2h-1.2c0 0.1 0.1 0.2 0.1 0.3-0.1-0.1-0.2-0.1-0.2-0.1-0.1-0.1-0.2-0.1-0.3-0.2-0.1 0-0.1-0.1-0.2-0.1 0.1 0 0.3 0 0.4-0.1 0.1 0 0.2-0.1 0.3-0.2z"/>
+<path id="path1513" class="st4" d="m30.527254 28.975c0.1 0.1 0.1 0.2 0.2 0.4 0.2-0.2 0.4-0.3 0.6-0.5 0 0.1 0 0.2 0.1 0.3-0.3 0.2-0.5 0.6-0.9 0.4-0.2-0.1-0.1-0.4 0-0.6z"/>
+<path id="path1515" class="st2" d="m13.627254 18.375c0.2-0.3 0.4-0.5 0.6-0.8 0.1-0.1 0.2-0.2 0.2-0.3 0.1-0.1 0.3-0.2 0.4-0.4l0.1 0.1c-0.1 0.1-0.2 0.2-0.2 0.4v0.1c-0.1 0.1-0.3 0.2-0.4 0.3-0.1 0.2-0.1 0.2-0.3 0.3-0.1 0.1-0.1 0.3-0.2 0.5l-0.2-0.2z"/>
+<path id="path1517" class="st2" d="m11.827254 41.175c-0.1 0.4-0.1 0.8 0.1 1.2-0.3 0-0.4-0.2-0.5-0.4-0.3-0.7-0.3-1.4 0.1-2.1-0.1 0.3-0.1 0.5-0.2 0.8-0.1 0.4 0 0.8 0.2 1.2 0.1-0.2 0-0.5 0.3-0.7z"/>
+<path id="path1519" class="st10" d="m20.927254 63.375c-0.2 0.3-0.2 0.6-0.2 0.9 0 0.8 0 1.6 0.1 2.5v0.3c-0.1-0.2-0.1-0.4-0.2-0.6-0.1-0.8-0.2-1.6 0-2.4v-0.6c0.1 0 0.2 0 0.3-0.1z"/>
+<path id="path1521" class="st4" d="m13.227254 36.975c0-0.1 0-0.2 0.1-0.2v-0.4c0.2 0 0.3-0.1 0.4-0.1 0.1 0.1 0.1 0.2 0 0.4-0.1 0-0.1 0.4-0.5 0.3z"/>
+<path id="path1523" class="st10" d="m19.927254 73.575c-0.2-0.2-0.1-0.4 0-0.7 0.1-0.8 0.1-1.6-0.1-2.4 0-0.1-0.1-0.2-0.1-0.3 0.1 0.1 0.1 0.1 0.1 0.2 0.2 0.6 0.2 1.2 0.2 1.8-0.1 0.5-0.1 0.9-0.1 1.4z"/>
+<path id="path1525" class="st6" d="m13.527254 62.275c0-0.1-0.1-0.2-0.1-0.3 0 0-0.1 0-0.2-0.1-0.1 0-0.2-0.1-0.3-0.1 0-0.1 0.1-0.2 0.1-0.3 0.2 0 0.3 0.1 0.4 0.1v0.2c0.1 0 0.2 0.1 0.2 0.1 0 0.2 0 0.3-0.1 0.4z"/>
+<path id="path1527" class="st2" d="m17.327254 62.775c0.1-0.4 0.2-0.9 0.3-1.3 0.1-0.6 0.2-1.2 0-1.8 0.2 0.2 0.2 0.4 0.2 0.6 0 0.9-0.2 1.8-0.5 2.7v-0.2z"/>
+<path id="path1529" class="st4" d="m12.627254 69.875c-0.2 0.5-0.5 1-0.9 1.3 0-0.4 0.4-0.7 0.5-1.1 0-0.1 0.2-0.1 0.4-0.2z"/>
+<path id="path1531" class="st5" d="m15.327254 16.375c-0.3 0-0.4 0.2-0.7 0.3-0.1 0.1-0.2 0.2-0.4 0.3 0-0.2 0.2-0.5 0.7-0.9 0.1 0.1 0.3 0.1 0.4 0.2v0.1z"/>
+<path id="path1533" class="st4" d="m16.227254 42.275c0.3-0.4 0.5-0.8 0.8-1.2 0.1 0.2 0.1 0.4-0.1 0.5s-0.3 0.2-0.3 0.4c0 0.1-0.1 0.2-0.1 0.4-0.1 0-0.2-0.1-0.3-0.1z"/>
+<path id="path1535" class="st4" d="m31.927254 28.475c0.4-0.3 0.7-0.6 1.1-0.9 0 0.1-0.1 0.2-0.1 0.4-0.4 0.1-0.5 0.5-0.8 0.7l-0.2-0.2z"/>
+<path id="path1537" class="st6" d="m12.427254 35.875c0-0.1 0.1-0.3 0.1-0.4 0.1-0.5 0.2-1 0.1-1.6 0-0.2-0.1-0.5-0.1-0.7v-0.2c0.1 0.5 0.1 1 0.2 1.5v0.2c0 0.2 0.2 0.3-0.1 0.5-0.1 0.1-0.1 0.3-0.1 0.5 0 0.1-0.1 0.2-0.1 0.2z"/>
+<path id="path1539" class="st2" d="m24.827254 47.375c-0.3 0.4-0.7 0.8-1 1.3 0-0.3 0.2-0.5 0.4-0.7 0.2-0.1 0.2-0.3 0.1-0.4 0.2-0.1 0.3-0.1 0.5-0.2z"/>
+<path id="path1541" class="st2" d="m36.627254 29.275c-0.1-0.3-0.2-0.6-0.3-1-0.2-0.3-0.2-0.5-0.3-0.8-0.1 0-0.2 0-0.3 0.1 0-0.1 0.1-0.2 0.1-0.3h0.1c0.2 0.1 0.3 0.3 0.3 0.5 0.1 0.4 0.2 0.9 0.4 1.5"/>
+<path id="path1543" class="st2" d="m15.827254 56.775c-0.3-0.3-0.5-0.7-0.8-1 0.1 0 0.3 0.1 0.4 0.1 0 0.1 0.1 0.2 0.1 0.4 0.1 0 0.1 0 0.2-0.1 0.1 0.2 0.1 0.4 0.1 0.6z"/>
+<path id="path1545" class="st2" d="m31.527254 33.875-0.1 0.1c-0.3 0.2-0.4 0.5-0.6 0.8v-0.4c0.2-0.2 0.1-0.5 0.4-0.7 0.1 0.1 0.2 0.2 0.3 0.2z"/>
+<path id="path1547" class="st11" d="m36.227254 32.875c-0.3 0.1-0.3 0.1-0.4-0.1v-0.4c0-0.1 0.1-0.1 0.1-0.1l0.2 0.2c0 0.1 0 0.2 0.1 0.4z"/>
+<path id="path1549" class="st12" d="m17.527254 14.675c0.3-0.1 0.6-0.2 0.9-0.2 0-0.3-0.1-0.6-0.1-1 0-0.2-0.1-0.4 0.1-0.6-0.1 0.4 0 0.8 0 1.1v0.3c0 0.1-0.1 0.2-0.2 0.3-0.2 0.1-0.5 0.1-0.7 0.1z"/>
+<path id="path1551" class="st2" d="m12.627254 52.375c0 0.7 0 1.4 0.2 2.1-0.1 0-0.1 0.1-0.1 0.1l-0.1-0.1c0.1-0.3 0-0.7-0.1-1 0-0.4-0.1-0.8 0-1.2 0.1 0 0.1 0.1 0.1 0.1z"/>
+<path id="path1553" class="st2" d="m16.227254 39.075c0.1-0.2 0.1-0.4 0.2-0.7-0.2 0.1-0.3 0.2-0.5 0.3 0-0.1 0-0.1-0.1-0.2 0.3-0.1 0.5-0.2 0.8-0.3-0.1 0.4-0.3 0.7-0.4 1.1v-0.2z"/>
+<path id="path1555" class="st6" d="m12.927254 24.275c0.2-0.1 0.3 0 0.4 0.2v0.2c0 0.1 0 0.3-0.2 0.3s-0.2-0.2-0.1-0.3c0-0.1-0.1-0.2-0.1-0.4z"/>
+<path id="path1557" class="st5" d="m11.727254 30.975c0.2-0.8 0.3-1.7 0.5-2.5v0.1c-0.1 0.7-0.3 1.5-0.5 2.4 0.1-0.1 0-0.1 0 0z"/>
+<path id="path1559" class="st4" d="m13.727254 35.675c0.1 0 0.2 0.1 0.3 0.1 0.1-0.3 0.3-0.6 0.4-0.8-0.1 0.3 0.1 0.6-0.1 0.9-0.2 0-0.4 0-0.6 0.1v-0.3z"/>
+<path id="path1561" class="st2" d="m23.827254 48.675c-0.2 0.6-0.2 1.1 0 1.7v0.2c-0.3-0.4-0.3-0.9-0.3-1.3v-0.3c0-0.3 0.1-0.4 0.3-0.3z"/>
+<path id="path1563" class="st13" d="m12.327254 25.575c-0.1 0.2-0.2 0.5-0.3 0.7 0 0.1 0 0.2-0.1 0.3h-0.1c0.1-0.4 0.1-0.8 0.2-1.1 0-0.1 0-0.1 0.1-0.2v0.6c0-0.1 0.1-0.2 0.2-0.3z"/>
+<path id="path1565" class="st2" d="m24.327254 23.675c0.2 0.2 0.3 0.4 0.5 0.6-0.2 0-0.3 0-0.5-0.1v-0.5z"/>
+<path id="path1567" class="st14" d="m12.227254 32.775c0 0.3-0.1 0.5-0.3 0.7 0-0.2 0.1-0.5 0.1-0.8-0.1 0-0.2-0.1-0.3-0.1l0.2-0.2c0.1 0.1 0.2 0.2 0.3 0.4z"/>
+<path id="path1569" class="st2" d="m32.227254 33.175c-0.2 0.2-0.5 0.4-0.7 0.6 0-0.3 0.1-0.4 0.3-0.5 0.2 0 0.3-0.2 0.4-0.1z"/>
+<path id="path1571" class="st14" d="m12.427254 31.475v-1.5-0.2c0-0.1-0.1-0.1-0.2 0 0-0.1 0-0.2 0.1-0.3 0.1 0.1 0.1 0.2 0.1 0.2v1.7c0.1 0 0 0 0 0.1z"/>
+<path id="path1573" class="st5" d="m29.527254 17.875c0.3 0.5 0.3 1.1 0.2 1.6l-0.1 0.1c0.1-0.5 0.1-0.9 0-1.4-0.1-0.1-0.1-0.2-0.1-0.3z"/>
+<path id="path1575" class="st15" d="m14.427254 32.675c0 0.3-0.1 0.6-0.1 0.9h-0.1c0.1-0.4 0.1-0.8 0.2-1.2 0-0.1 0-0.3 0.1-0.3 0.1 0.1 0.1 0.2 0.1 0.3l-0.2-0.2v0.5z"/>
+<path id="path1577" class="st16" d="m23.727254 72.475c0.2 0.3 0.4 0.5 0.6 0.8-0.1 0-0.3-0.1-0.3-0.3 0-0.1-0.2-0.2-0.3-0.3-0.1 0 0-0.1 0-0.2z"/>
+<path id="path1579" class="st17" d="m14.327254 39.675c-0.5 0.2-0.9 0.5-1.4 0.7 0.3-0.2 0.6-0.4 0.9-0.5l0.3-0.3c0.1 0 0.1 0.1 0.2 0.1z"/>
+<path id="path1581" class="st16" d="m27.127254 16.475c0.1 0 0.2 0 0.2 0.1 0.3 0.1 0.7 0.3 1 0.5v0.1c-0.3-0.1-0.6-0.3-0.9-0.2 0-0.2-0.2-0.4-0.3-0.5z"/>
+<path id="path1583" class="st2" d="m12.827254 19.675 0.6-0.9c0 0.3 0 0.5-0.4 0.7-0.1 0-0.1 0.1-0.2 0.2z"/>
+<path id="path1585" class="st18" d="m13.627254 64.375c0 0.1 0.1 0.2 0.1 0.2v1.7c0 0.1-0.1 0.2-0.1 0.2v-2.1z"/>
+<path id="path1587" class="st2" d="m14.427254 54.975c-0.2-0.2-0.3-0.4-0.5-0.6h0.4c0.1 0.2 0.1 0.4 0.1 0.6z"/>
+<path id="path1589" class="st15" d="m23.927254 14.575c0.1 0.1 0.2 0.1 0.2 0.2-0.5 0.1-0.5 0.1-0.6-0.4h0.1c0.2 0.1 0.2 0.1 0.3 0.2z"/>
+<path id="path1591" class="st2" d="m29.527254 19.775c-0.1 0.2-0.2 0.4-0.4 0.5 0-0.2 0.1-0.4 0.1-0.7 0.2 0.1 0.3 0.1 0.3 0.2z"/>
+<path id="path1593" class="st2" d="m13.427254 21.375-0.9 0.6v-0.1c0.3-0.1 0.3-0.5 0.7-0.5h0.2z"/>
+<path id="path1595" class="st2" d="m15.927254 38.675c-0.2 0.2-0.5 0.3-0.7 0.5v-0.2c0.2-0.2 0.4-0.4 0.7-0.3z"/>
+<path id="path1597" class="st2" d="m12.427254 23.975c0.2-0.4 0.4-0.7 0.6-1.1 0 0.1-0.1 0.2-0.1 0.4-0.1 0.2-0.2 0.4-0.1 0.6-0.1 0-0.3 0-0.4 0.1z"/>
+<path id="path1599" class="st2" d="m17.227254 58.875c-0.2-0.3-0.4-0.5-0.5-0.8h0.2c0.1 0.2 0.2 0.3 0.4 0.5-0.1 0-0.1 0.1-0.1 0.3z"/>
+<path id="path1601" class="st2" d="m28.727254 20.475c-0.5 0.2-1 0.2-1.5-0.2 0.5 0.2 1 0.1 1.5 0.2z"/>
+<path id="path1603" class="st3" d="m14.627254 34.075c0-0.4 0.2-0.8 0-1.2v-0.1-0.2c0.2 0.4 0.1 0.9 0 1.5v0z"/>
+<path id="path1605" class="st3" d="m14.927254 17.075v0c0.1-0.3 0.2-0.4 0.4-0.6 0.1 0 0.2-0.1 0.2-0.1-0.1 0.3-0.4 0.4-0.6 0.7z"/>
+<path id="path1607" class="st16" d="m22.927254 71.375c0.2 0.2 0.3 0.5 0.5 0.7-0.2-0.1-0.3-0.2-0.5-0.3-0.1-0.1-0.2-0.3-0.2-0.5 0.1 0 0.2 0 0.2 0.1z"/>
+<path id="path1609" class="st16" d="m24.527254 73.575c0.2 0.2 0.3 0.5 0.5 0.7-0.1 0-0.2 0-0.3 0.1 0-0.1 0.1-0.2 0.1-0.3-0.3-0.1-0.3-0.3-0.3-0.5z"/>
+<path id="path1611" class="st13" d="m14.527254 41.675c-0.3 0.1-0.6 0.1-0.9 0.2 0.1-0.2 0.3-0.3 0.4-0.3l0.1 0.1h0.4z"/>
+<path id="path1613" class="st3" d="m23.927254 57.275c-0.2 0.5-0.3 0.9-0.5 1.4 0.2-0.5 0.3-1 0.5-1.4z"/>
+<path id="path1615" class="st2" d="m12.527254 20.175c0.1-0.2 0.2-0.4 0.3-0.5 0 0.2 0.1 0.3 0.1 0.5h-0.4z"/>
+<path id="path1617" class="st17" d="m14.827254 44.175c0.2-0.2 0.4-0.5 0.5-0.7 0.1 0.1 0.1 0.3 0 0.4-0.2 0.1-0.3 0.2-0.5 0.3z"/>
+<path id="path1619" class="st19" d="m19.627254 13.575c0.2-0.3 0.1-0.6 0.2-1 0 0.4 0.1 0.7 0 1.1-0.1 0-0.2 0-0.2-0.1z"/>
+<path id="path1621" class="st10" d="m12.227254 28.575v0c0.1-0.6 0.1-1 0.2-1.5 0 0.5-0.1 1-0.2 1.5z"/>
+<path id="path1623" class="st20" d="m17.827254 66.475c-0.2-0.3-0.2-0.6-0.2-1 0-0.2-0.1-0.3-0.1-0.4 0.2 0.1 0.2 0.2 0.2 0.3 0 0.3 0.1 0.6 0.2 1-0.1 0-0.1 0-0.1 0.1z"/>
+<path id="path1625" class="st17" d="m15.027254 39.275-0.6 0.3v-0.4c0.3 0.1 0.4 0.1 0.6 0.1z"/>
+<path id="path1627" class="st2" d="m17.827254 66.475v-0.1c0.1 0.1 0.1 0.2 0.2 0.3h0.2c0 0.2 0 0.3-0.1 0.5-0.1-0.3-0.2-0.5-0.3-0.7z"/>
+<path id="path1629" class="st4" d="m31.427254 28.875c0.2-0.1 0.3-0.3 0.5-0.4 0 0.1-0.1 0.3-0.1 0.5-0.2-0.1-0.3-0.1-0.4-0.1z"/>
+<path id="path1631" class="st2" d="m14.727254 55.375c-0.1-0.1-0.2-0.3-0.3-0.4 0.1-0.1 0.2-0.1 0.3-0.2v0.6z"/>
+<path id="path1633" class="st2" d="m13.627254 22.075c0.1-0.1 0.2-0.3 0.3-0.4 0 0.1 0.1 0.2 0.1 0.4h-0.4z"/>
+<path id="path1635" class="st21" d="m19.827254 13.875c0-0.1 0.1-0.2 0.1-0.4v-0.8c0-0.1 0.1-0.1 0.1 0 0 0.2 0 0.4-0.1 0.6v0.5c0 0.1 0 0.1-0.1 0.1z"/>
+<path id="path1637" class="st5" d="m30.627254 35.375c-0.1 0.4-0.2 0.8-0.3 1.3 0.1-0.5 0.1-0.9 0.3-1.3z"/>
+<path id="path1639" class="st2" d="m26.427254 25.675 0.6 0.3c-0.1 0-0.2 0.1-0.4 0.1 0-0.2-0.1-0.3-0.2-0.4z"/>
+<path id="path1641" class="st18" d="m13.427254 62.975c0.2 0.2 0.1 0.6 0.2 0.8v0.5c-0.1-0.4-0.2-0.8-0.2-1.3z"/>
+<path id="path1643" class="st14" d="m12.527254 33.075v0.2c0-0.2-0.1-0.5-0.1-0.7 0 0-0.1 0-0.1 0.1 0-0.1 0-0.2 0.2-0.3v0.7z"/>
+<path id="path1645" class="st22" d="m12.627254 25.575c0-0.1 0-0.3-0.1-0.3 0.1-0.1 0.1-0.2 0.2-0.3 0 0 0.1 0 0.1 0.1s0 0.3-0.2 0.5z"/>
+<path id="path1647" class="st2" d="m18.527254 67.775-0.3-0.6h0.3c-0.2 0.2 0 0.4 0 0.6z"/>
+<path id="path1649" class="st16" d="m14.227254 33.575s0.1 0 0 0c0 0.4-0.1 0.8-0.1 1.2 0-0.2 0-0.4 0.1-0.5-0.1-0.2 0-0.5 0-0.7z"/>
+<path id="path1651" class="st6" d="m12.527254 48.075 0.3-0.9c0 0.4-0.2 0.7-0.3 1v-0.1z"/>
+<path id="path1653" class="st23" d="m28.727254 40.975c-0.1 0.3-0.3 0.6-0.4 0.9h-0.1c0.2-0.3 0.3-0.6 0.5-0.9z"/>
+<path id="path1655" class="st17" d="m15.327254 43.475c0.2-0.2 0.3-0.4 0.5-0.6 0 0.3-0.2 0.5-0.5 0.6z"/>
+<path id="path1657" class="st16" d="m12.527254 48.075v0.1c0 0.3 0 0.6-0.1 0.9 0 0.1-0.1 0.1-0.1 0.2 0-0.2 0.1-0.5 0.1-0.7s0.1-0.4 0.1-0.5z"/>
+<path id="path1659" class="st17" d="m12.127254 38.775c0-0.2 0.1-0.4 0.3-0.5 0 0.1 0.1 0.1 0.1 0.2-0.2 0.1-0.2 0.4-0.4 0.3z"/>
+<path id="path1661" class="st15" d="m23.227254 14.075c-0.1-0.1-0.1-0.2 0.1-0.3 0.1 0 0.2 0.1 0.2 0.2v0.1h-0.3z"/>
+<path id="path1663" class="st23" d="m36.327254 33.975c0-0.1-0.1-0.2-0.1-0.3 0-0.3 0-0.6-0.1-0.9 0 0.1 0.1 0.2 0.1 0.3 0.1 0.4 0.1 0.6 0.1 0.9z"/>
+<path id="path1665" class="st10" d="m24.527254 14.975c0.2 0.1 0.3 0.2 0.5 0.3-0.1 0-0.1 0.1-0.2 0.1-0.1-0.1-0.2-0.2-0.3-0.4z"/>
+<path id="path1667" class="st15" d="m23.527254 14.375c-0.1 0.1-0.3 0.1-0.4-0.1l0.1-0.1c0.1 0 0.3 0.1 0.3 0.2 0.1 0 0 0 0 0z"/>
+<path id="path1669" class="st2" d="m17.927254 38.475c-0.1 0.2-0.2 0.4-0.2 0.5l-0.1-0.1c0-0.1 0.1-0.3 0.3-0.4z"/>
+<path id="path1671" class="st5" d="m28.227254 41.875s0.1 0 0 0c0 0.2-0.2 0.5-0.3 0.7 0.1-0.3 0.2-0.5 0.3-0.7z"/>
+<path id="path1673" class="st2" d="m33.027254 27.475c0.2-0.1 0.3-0.3 0.5-0.4-0.1 0.1-0.2 0.2-0.2 0.4-0.1 0.1-0.2 0-0.3 0z"/>
+<path id="path1675" class="st2" d="m12.327254 40.675-0.4 0.4c0.1-0.1 0.1-0.3 0.2-0.4h0.2z"/>
+<path id="path1677" class="st10" d="m11.827254 22.975c-0.1 0.2-0.3 0.5-0.4 0.7 0.1-0.2 0.2-0.5 0.4-0.7z"/>
+<path id="path1679" class="st24" d="m23.627254 14.375c-0.1-0.1-0.2-0.1-0.3-0.2v-0.1h0.2c0.1 0 0.1 0 0.2 0.1 0.1 0 0.1 0.1 0.2 0.1l-0.1 0.1h-0.2z"/>
+<path id="path1681" class="st2" d="m18.927254 68.475-0.3-0.6s0.1 0 0.2-0.1c0 0.3 0 0.5 0.1 0.7z"/>
+<path id="path1683" class="st10" d="m25.327254 15.475c0.2 0.1 0.5 0.2 0.7 0.4-0.3-0.1-0.6-0.2-0.7-0.4z"/>
+<path id="path1685" class="st16" d="m26.327254 15.975c0.2 0.1 0.5 0.3 0.7 0.4-0.3-0.1-0.5-0.2-0.7-0.4z"/>
+<path id="path1687" class="st10" d="m12.527254 22.075c-0.1 0.2-0.3 0.3-0.4 0.5 0-0.3 0.1-0.5 0.4-0.5z"/>
+<path id="path1689" class="st5" d="m12.127254 30.375c-0.1 0.3-0.2 0.5-0.3 0.8 0.1-0.3 0.2-0.6 0.3-0.8z"/>
+<path id="path1691" class="st3" d="m17.027254 64.375c-0.2-0.3 0-0.6 0.1-0.9 0 0.3-0.1 0.6-0.1 0.9z"/>
+<path id="path1693" class="st2" d="m15.027254 55.775c-0.1-0.1-0.2-0.3-0.3-0.4 0.1 0.1 0.3 0.1 0.4 0.2 0 0.1 0 0.2-0.1 0.2z"/>
+<path id="path1695" class="st25" d="m18.227254 36.675c0.1 0 0.1 0 0 0 0.1 0.2 0.1 0.3 0 0.5 0 0.1-0.1 0.3-0.1 0.4 0.1-0.4 0.1-0.7 0.1-0.9z"/>
+<path id="path1697" class="st10" d="m11.227254 23.575c0-0.1 0.1-0.2 0.1-0.3 0 0.2 0.1 0.3 0.1 0.5 0 0.1-0.1 0.1-0.1 0.2 0-0.2 0-0.3-0.1-0.4z"/>
+<path id="path1699" class="st3" d="m12.627254 52.375v-0.1c0.2 0 0.3 0 0.3 0.2 0 0.1 0 0.3 0.1 0.4-0.1-0.2-0.1-0.3-0.2-0.5-0.1-0.1-0.1 0-0.2 0z"/>
+<path id="path1701" class="st10" d="m11.427254 22.875c0.1-0.3 0.2-0.5 0.3-0.8-0.1 0.4-0.1 0.6-0.3 0.8z"/>
+<path id="path1703" class="st5" d="m30.327254 36.675c-0.1 0.3-0.2 0.5-0.3 0.8 0.1-0.3 0.1-0.6 0.3-0.8z"/>
+<path id="path1705" class="st26" d="m35.827254 32.175c-0.1 0-0.2 0-0.1 0.1v0.4 0.2c0-0.2-0.1-0.4-0.1-0.6 0-0.1 0.2-0.1 0.2-0.1z"/>
+<path id="path1707" class="st17" d="m16.027254 42.575c0.1-0.1 0.2-0.2 0.2-0.3v0.5c-0.1-0.1-0.2-0.1-0.2-0.2z"/>
+<path id="path1709" class="st5" d="m28.427254 17.075c0.2 0 0.5 0 0.6 0.2-0.2 0-0.4-0.1-0.6-0.2z"/>
+<path id="path1711" class="st2" d="m13.327254 22.375c0.1-0.1 0.2-0.2 0.2-0.3 0 0.1 0 0.2 0.1 0.3h-0.3z"/>
+<path id="path1713" class="st27" d="m29.227254 26.875c0.2 0.1 0.4 0.3 0.5 0.5l-0.5-0.5z"/>
+<path id="path1715" class="st2" d="m23.527254 22.275 0.3 0.6c-0.2-0.1-0.2-0.3-0.3-0.6z"/>
+<path id="path1717" class="st20" d="m17.027254 64.375c0.1 0.1 0.3 0.2 0.3 0.5-0.1-0.1-0.2-0.3-0.3-0.5z"/>
+<path id="path1719" class="st3" d="m13.327254 55.675c0.1 0.2 0.2 0.5 0.3 0.7-0.2-0.2-0.2-0.5-0.3-0.7z"/>
+<path id="path1721" class="st2" d="m17.627254 59.575-0.3-0.6c0.2 0.1 0.3 0.4 0.3 0.6z"/>
+<path id="path1723" class="st5" d="m11.827254 31.375c0 0.1 0 0.2-0.1 0.2 0-0.1-0.1-0.2-0.1-0.3s0-0.2 0.1-0.3c0 0.1 0.1 0.2 0.1 0.4z"/>
+<path id="path1725" class="st2" d="m33.627254 26.975c0.2-0.1 0.3-0.2 0.5-0.2h0.1c-0.3 0.1-0.5 0.1-0.6 0.2z"/>
+<path id="path1727" class="st28" d="m22.627254 60.475c-0.1 0.1-0.1 0.2-0.2 0.3v-0.4c0.1 0 0.2 0 0.2 0.1z"/>
+<path id="path1729" class="st29" d="m14.627254 32.475v0.2h-0.2v-0.4l0.2 0.2v0z"/>
+<path id="path1731" class="st16" d="m35.827254 27.175c-0.3 0-0.5-0.1-0.7-0.2 0.3 0 0.5 0.1 0.7 0.2z"/>
+<path id="path1733" class="st27" d="m18.227254 38.975s-0.1-0.1 0 0c0-0.2 0-0.4 0.1-0.4 0 0.1-0.1 0.3-0.1 0.4z"/>
+<path id="path1735" class="st10" d="m21.627254 62.275c-0.1 0.1-0.2 0.3-0.2 0.4v-0.3s0.1 0 0.2-0.1z"/>
+<path id="path1737" class="st2" d="m24.327254 23.675c-0.2-0.1-0.3-0.1-0.4-0.2 0 0 0.1-0.1 0.1-0.2 0.2 0.1 0.3 0.2 0.3 0.4z"/>
+<path id="path1739" class="st23" d="m35.827254 32.175v-0.2s0.1 0 0.1 0.1 0.1 0.3 0.1 0.4c0-0.1-0.1-0.2-0.2-0.3z"/>
+<path id="path1741" class="st2" d="m25.027254 47.075c-0.1 0.1-0.2 0.2-0.2 0.3 0 0-0.1-0.1-0.1-0.2 0.1 0 0.2-0.1 0.3-0.1z"/>
+<path id="path1743" class="st10" d="m12.127254 22.575c-0.1 0.2-0.2 0.3-0.3 0.5 0-0.3 0.1-0.4 0.3-0.5z"/>
+<path id="path1745" class="st10" d="m21.227254 62.975c-0.1 0.1-0.1 0.2-0.2 0.2 0-0.1-0.1-0.2-0.1-0.3 0.1 0 0.2 0 0.3 0.1z"/>
+<path id="path1747" class="st23" d="m29.127254 40.175c-0.1 0.2-0.2 0.4-0.3 0.5 0-0.2 0.1-0.4 0.3-0.5z"/>
+<path id="path1749" class="st5" d="m22.927254 71.375-0.1-0.1c-0.1-0.1-0.1-0.3-0.2-0.4 0.1 0.2 0.2 0.3 0.3 0.5z"/>
+<path id="path1751" class="st18" d="m13.627254 66.475c0 0.2 0.1 0.5-0.1 0.7 0-0.2 0-0.4 0.1-0.7z"/>
+<path id="path1753" class="st16" d="m34.127254 26.775h-0.1c0.2-0.1 0.5-0.1 0.7 0.1-0.2-0.1-0.4-0.1-0.6-0.1z"/>
+<path id="path1755" class="st5" d="m11.927254 21.575c0.1-0.2 0.2-0.4 0.2-0.6 0 0.2-0.1 0.4-0.2 0.6z"/>
+<path id="path1757" class="st3" d="m17.327254 62.775v0.1c-0.1 0.2-0.1 0.3-0.2 0.5 0.1-0.3 0.1-0.4 0.2-0.6z"/>
+<path id="path1759" class="st5" d="m12.327254 29.875c-0.1 0.2-0.1 0.3-0.2 0.5 0.1-0.2 0.1-0.4 0.2-0.5v0z"/>
+<path id="path1761" class="st2" d="m12.727254 40.475c-0.2 0.1-0.3 0.2-0.5 0.2 0.2-0.2 0.3-0.2 0.5-0.2z"/>
+<path id="path1763" class="st13" d="m12.727254 25.575c0-0.2 0.1-0.4 0.1-0.5 0.1 0.2 0 0.3-0.1 0.5z"/>
+<path id="path1765" class="st5" d="m15.427254 15.775c0.1-0.1 0.2-0.1 0.3-0.2 0 0.2-0.2 0.2-0.3 0.2z"/>
+<path id="path1767" class="st5" d="m16.227254 39.075v0.1c0 0.2-0.1 0.3-0.3 0.4 0.2-0.2 0.2-0.3 0.3-0.5z"/>
+<path id="path1769" class="st9" d="m18.227254 35.675v0.5h-0.1c0.1-0.2 0.1-0.3 0.1-0.5z"/>
+<path id="path1771" class="st13" d="m13.827254 57.375c0.1 0.2 0.1 0.4 0.2 0.5-0.1-0.2-0.1-0.4-0.2-0.5z"/>
+<path id="path1773" class="st30" d="m19.527254 69.675c-0.1-0.2-0.1-0.3-0.2-0.5 0.1 0.2 0.2 0.3 0.2 0.5z"/>
+<path id="path1775" class="st5" d="m15.527254 40.275 0.3-0.3c0 0.1 0 0.1 0.1 0.2-0.2 0-0.3 0.1-0.4 0.1z"/>
+<path id="path1777" class="st2" d="m14.227254 21.275c0.1-0.3-0.1-0.1-0.2-0.1v-0.1h0.4c0 0.1-0.1 0.2-0.2 0.2z"/>
+<path id="path1779" class="st2" d="m14.027254 21.075v0c-0.1 0.1-0.3 0.2-0.5 0.3 0.2-0.1 0.4-0.2 0.5-0.3z"/>
+<path id="path1781" class="st13" d="m15.227254 41.475c-0.2 0.1-0.3 0.1-0.5 0.2 0.2-0.1 0.4-0.2 0.5-0.2z"/>
+<path id="path1783" class="st5" d="m15.927254 15.975h-0.2v-0.1c0.1 0.1 0.2 0.1 0.2 0.1z"/>
+<path id="path1785" class="st2" d="m23.927254 22.875c0.1 0.1 0.2 0.3 0.2 0.4-0.2 0-0.2-0.2-0.2-0.4z"/>
+<path id="path1787" class="st31" d="m27.027254 20.175c-0.2-0.1-0.3-0.1-0.5-0.2 0.2 0 0.3 0 0.5 0.2z"/>
+<path id="path1789" class="st10" d="m20.327254 73.975-0.3-0.3c0.3-0.1 0.3 0.1 0.3 0.3z"/>
+<path id="path1791" class="st16" d="m11.927254 49.675c0.1-0.1 0.2-0.1 0.2-0.2 0 0.3 0 0.3-0.2 0.2z"/>
+<path id="path1793" class="st2" d="m13.427254 18.675c0.1-0.1 0.1-0.2 0.2-0.2 0 0.3 0 0.3-0.2 0.2z"/>
+<path id="path1795" class="st2" d="m17.627254 39.075c0 0.1 0 0.3-0.2 0.3 0-0.2 0.1-0.3 0.2-0.3z"/>
+<path id="path1797" class="st5" d="m15.927254 15.375c0.1-0.1 0.3-0.2 0.4-0.2-0.1 0.1-0.2 0.2-0.4 0.2z"/>
+<path id="path1799" class="st12" d="m21.027254 67.975c0.1 0.2 0.1 0.3 0.2 0.5-0.1-0.1-0.2-0.3-0.2-0.5z"/>
+<path id="path1801" class="st16" d="m14.127254 34.775c-0.1 0.2-0.1 0.3-0.2 0.5 0-0.2 0.1-0.4 0.2-0.5z"/>
+<path id="path1803" class="st32" d="m13.227254 68.275c-0.1 0.2-0.1 0.3-0.2 0.5 0.1-0.2 0.1-0.3 0.2-0.5z"/>
+<path id="path1805" class="st25" d="m17.927254 38.475c0-0.2 0.1-0.3 0.2-0.5-0.1 0.2-0.2 0.4-0.2 0.5z"/>
+<path id="path1807" class="st5" d="m21.727254 69.375c0.1 0.1 0.2 0.3 0.2 0.4-0.2-0.1-0.2-0.2-0.2-0.4z"/>
+<path id="path1809" class="st16" d="m34.727254 26.775c0.2 0.1 0.3 0.1 0.5 0.2-0.2 0-0.4 0-0.5-0.2z"/>
+<path id="path1811" class="st5" d="m21.927254 69.775c0.1 0.1 0.2 0.3 0.2 0.4-0.1-0.1-0.2-0.2-0.2-0.4z"/>
+<path id="path1813" class="st2" d="m13.627254 21.275c-0.1 0-0.1 0.1-0.2 0.1 0-0.1-0.1-0.1-0.1-0.2 0.1 0.1 0.2 0.1 0.3 0.1z"/>
+<path id="path1815" class="st10" d="m11.727254 21.875c0.1-0.1 0.1-0.3 0.2-0.4 0 0.2-0.1 0.4-0.2 0.4z"/>
+<path id="path1817" class="st5" d="m15.027254 15.975c0.1-0.1 0.2-0.2 0.3-0.2 0 0.1-0.1 0.2-0.3 0.2z"/>
+<path id="path1819" class="st5" d="m29.527254 39.175c-0.1 0.1-0.1 0.3-0.2 0.4 0-0.1 0.1-0.3 0.2-0.4z"/>
+<path id="path1821" class="st3" d="m23.427254 58.675c-0.1 0.1-0.1 0.3-0.2 0.4 0-0.2 0.1-0.3 0.2-0.4z"/>
+<path id="path1823" class="st32" d="m12.227254 36.275c0.1-0.1 0.1-0.3 0.2-0.4 0 0.2 0 0.3-0.2 0.4z"/>
+<path id="path1825" class="st28" d="m22.227254 61.075c-0.1 0-0.2 0.1-0.2 0.1 0.1-0.2 0.1-0.2 0.2-0.1z"/>
+<path id="path1827" class="st33" d="m22.927254 20.775c0.1 0.1 0.1 0.3 0.2 0.4-0.2-0.1-0.2-0.3-0.2-0.4z"/>
+<path id="path1829" class="st33" d="m23.127254 21.175c0.1 0.1 0.1 0.3 0.2 0.4-0.1-0.2-0.2-0.3-0.2-0.4z"/>
+<path id="path1831" class="st23" d="m29.227254 39.775c-0.1 0.1-0.1 0.3-0.2 0.4 0.1-0.2 0.1-0.3 0.2-0.4z"/>
+<path id="path1833" class="st5" d="m29.727254 38.575c-0.1 0.1-0.1 0.3-0.2 0.4 0.1-0.1 0.1-0.3 0.2-0.4z"/>
+<path id="path1835" class="st3" d="m13.027254 54.875c0.1 0.1 0.1 0.3 0.2 0.4-0.1-0.2-0.2-0.3-0.2-0.4z"/>
+<path id="path1837" class="st13" d="m12.227254 24.475c0.1-0.1 0.1-0.3 0.2-0.4 0 0.2 0 0.3-0.2 0.4z"/>
+<path id="path1839" class="st13" d="m30.127254 27.975c0.1 0.1 0.1 0.2 0.2 0.4-0.1-0.1-0.2-0.2-0.2-0.4z"/>
+<path id="path1841" class="st2" d="m11.527254 39.975c0.1-0.1 0.1-0.3 0.2-0.4 0 0.1 0 0.3-0.2 0.4z"/>
+<path id="path1843" class="st16" d="m24.327254 73.275c0.1 0.1 0.2 0.2 0.2 0.3-0.2 0-0.3-0.1-0.2-0.3z"/>
+<path id="path1845" class="st33" d="m22.827254 20.375c0.1 0.1 0.1 0.2 0.2 0.4-0.1-0.1-0.2-0.3-0.2-0.4z"/>
+<path id="path1847" class="st18" d="m13.527254 62.275c0.1 0.1 0.1 0.1 0.1 0.2v0.2c0-0.1 0-0.2-0.1-0.4z"/>
+<path id="path1849" class="st34" d="m12.327254 29.875v0-0.2c0.1 0 0.1-0.1 0.2 0v0.2h-0.2z"/>
+<path id="path1851" class="st12" d="m18.927254 13.075c0.1 0.1 0.2 0.1 0.3 0.2-0.1-0.1-0.2-0.1-0.3-0.2z"/>
+<path id="path1853" class="st35" d="m15.527254 16.275c-0.1 0-0.2 0.1-0.2 0.1 0-0.1 0.1-0.1 0.1-0.2 0 0.1 0.1 0.1 0.1 0.1z"/>
+<path id="path1855" class="st36" d="m15.527254 16.275c0-0.1 0.1-0.1 0 0 0.1-0.1 0.1-0.1 0 0 0.1-0.1 0-0.1 0 0v0z"/>
+<path id="path1857" class="st37" d="m12.927254 37.275s0.1 0 0.1-0.1c0 0 0 0.1-0.1 0.1z"/>
+<path id="path1859" class="st38" d="m18.627254 36.175c0.1 0.4 0.1 0.9 0 1.3v-1.3z"/>
+
+<path id="path1863" class="st40" d="m27.227254 12.175c0-0.1-0.1-0.1-0.1-0.2 0.1-0.1 0.2-0.2 0.3-0.4 0 0.3 0 0.5-0.2 0.6z"/>
+<path id="path1865" class="st22" d="m11.727254 26.575h0.1c0 0.1-0.1 0.2-0.1 0.4-0.1-0.2-0.1-0.3 0-0.4z"/>
+<path id="path1867" class="st41" d="m11.227254 23.575c0 0.1 0.1 0.3 0.1 0.4s-0.1 0.2-0.1 0.3c0-0.1-0.1-0.2-0.1-0.3 0.1-0.2 0.1-0.3 0.1-0.4z"/>
+<path id="path1869" class="st42" d="m11.227254 23.975c0 0.1 0.1 0.2 0.1 0.3s0 0.2-0.1 0.2c-0.1-0.2-0.1-0.4 0-0.5z"/>
+<path id="path1871" class="st43" d="m11.627254 31.775c0 0.1-0.1 0.2-0.1 0.3-0.1-0.2 0-0.4 0-0.5 0.1 0.1 0.1 0.1 0.1 0.2z"/>
+<path id="path1873" class="st38" d="m16.527254 40.775 0.4-0.4c-0.1 0.2-0.2 0.3-0.4 0.4z"/>
+<path id="path1875" class="st44" d="m23.727254 14.375 0.1-0.1c0.1 0.1 0.2 0.1 0.3 0.2-0.1 0-0.1 0.1-0.2 0.1l-0.2-0.2z"/>
+<path id="path1877" class="st45" d="m11.627254 31.775c0-0.1-0.1-0.2-0.1-0.2 0-0.1 0.1-0.2 0.1-0.3 0 0.1 0.1 0.2 0.1 0.3s0 0.2-0.1 0.2z"/>
+<path id="path1879" class="st46" d="m18.427254 36.275v-0.3h0.1c0 0.1 0 0.2 0.1 0.3-0.1-0.1-0.1-0.1-0.2 0z"/>
+<path id="path1881" class="st38" d="m17.527254 40.075c-0.1 0.1-0.2 0.3-0.2 0.4 0.1-0.2 0.2-0.3 0.2-0.4z"/>
+<path id="path1883" class="st47" d="m14.427254 17.375c-0.1 0.1-0.2 0.2-0.2 0.3 0.1-0.1 0.2-0.2 0.2-0.3z"/>
+<path id="path1885" class="st38" d="m18.327254 37.075v-0.5h0.1c0 0.2 0.1 0.4-0.1 0.5z"/>
+<path id="path1887" class="st18" d="m13.927254 63.675c0.1 0.6 0.1 1.2 0.1 1.8 0 0.1-0.1 0.3 0.1 0.3 0 0.1-0.1 0.1-0.1 0.2l-0.1-0.1c0.1-0.5 0.1-1.1 0-1.6v-0.6z"/>
+<path id="path1889" class="st48" d="m20.827254 74.575v0.8-0.8z"/>
+<path id="path1891" class="st18" d="m13.827254 63.275c0 0.1 0.1 0.3 0.1 0.4 0-0.1-0.1-0.3-0.1-0.4z"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<g id="g1981" transform="translate(-7.8727458,-19.525)">
+	<defs id="defs1970">
+		<path id="SVGID_1_" d="m33.9 94.9c0.1 0.3 0.3 0.5 0.1 0.8-0.1 0.2-0.2 0.2-0.4 0.2-0.6 0-1.1 0.1-1.7 0.1-0.3 0-0.6-0.1-0.9-0.3-0.1-0.2-0.3-0.2-0.5-0.2h-0.7c-0.6 0-0.9-0.4-0.9-0.9 0.1-0.5-0.1-0.8-0.4-1-0.5-0.3-0.7-0.8-0.6-1.4 0.3-1.9-0.5-3.5-1.4-5-0.4-0.7-0.9-1.4-0.9-2.3 0-0.2-0.1-0.3-0.2-0.5-0.4-0.4-0.4-0.9-0.2-1.4 0.3-0.9 0.5-1.9 0.5-2.8 0-0.2 0.1-0.4 0-0.6-0.2-1-0.8-1.8-1.4-2.6-0.7-1-1.5-2-2.3-3-0.3-0.4-0.6-0.9-0.9-1.4 0 0.8 0.3 1.5 0.6 2.3 0.6 1.4 0.8 2.9 1.2 4.4 0.3 1.3 0.3 2.7 0.3 4 0 0.6-0.2 1.2-0.5 1.7-0.1 0.1-0.2 0.3-0.4 0.2-0.1 0-0.2-0.2-0.2-0.3v-0.8c0.2-0.9-0.2-1.6-0.5-2.4 0.1 0.5 0.1 1.1 0.3 1.5 0 1.1 0.1 2.2 0 3.2-0.1 1.2-0.4 2.5-1.2 3.5-0.3 0.4-0.6 0.8-0.9 1.2-0.2 0.2-0.3 0.3-0.6 0.2-0.6 0.4-1.2 0.9-1.9 1.1-0.1 0-0.1 0-0.1-0.1 0.5-0.6 1.2-1.1 1.6-1.8 0.2-0.4 0.4-0.8 0.3-1.3-0.7 0.8-1.5 1.2-2.3 1.6l-1.2 0.6c-0.7 0.3-1.2 0.9-1 1.8-0.5-0.4-0.7-1.3-0.4-2 0.5-1.2 1.5-2.2 2.2-3.3 0.9-1.5 1.4-3.1 1.2-4.9 0-0.1 0-0.1-0.2-0.2-0.1 0.7-0.2 1.4-0.4 2.1-0.5 1.6-1.1 3.2-2.5 4.3-0.3 0.2-0.6 0.4-0.9 0.5 0 0-0.1 0-0.1-0.1 0.7-0.8 1.4-1.6 1.8-2.6 0.4-0.9 0.5-1.9 0.3-2.9-0.1-0.6-0.1-1.1-0.1-1.7-0.1-1.4-0.4-2.9-0.3-4.3s0.2-2.9 1.2-4.1c-0.4-0.1-0.5 0.1-0.7 0.3-0.1 0-0.2 0-0.1-0.1 0.3-0.4 0.7-0.7 1.2-0.9-0.3-0.3-0.5 0-0.8 0v-0.1c-0.1-0.3-0.1-0.4 0.2-0.5 1-0.3 2-0.9 2.5-1.9 0.3-0.7 0.8-1.2 1.5-1.5 0.5-0.8 0.4-1.8 0.7-2.7 0.2-0.5 0.5-1 0.9-1.5 0.5-0.6 1-1.4 1.5-2 0.4-0.2 0.6-0.5 0.7-0.9 0.9-1.3 1.7-2.6 2.3-4.1 0.3-0.6 0.3-1.3 0.4-1.9-0.1 1.7-0.7 3.2-2 4.3-0.6 0.5-1.3 1-2.2 1-0.1 0-0.2-0.1-0.3-0.3 0-0.3 0.3-0.5 0.5-0.6 0.7-0.5 1.2-1.2 1.6-2.1-1.1 0.8-2.3 1.4-3.5 1.9-0.2 0.1-0.5 0.3-0.6 0.6-0.2 0.1-0.2 0.5-0.5 0.4-0.3-0.5-0.2-1.1-0.1-1.6 0.1-0.6 0.4-1.2 0.7-1.7 0.4-0.6 0.8-1.1 1.2-1.7 0-0.1 0.1-0.1 0.2-0.2-0.1 0.1-0.2 0.2-0.2 0.3-0.1 0.3-0.4 0.5-0.5 0.7-0.4 0.3-0.6 0.7-1 1-0.2 0.1-0.5 0.3-0.8 0.3-0.3-0.2-0.1-0.3 0-0.5 0.2-0.3 0.4-0.5 0.5-0.9 0.3-0.6 0.7-1.1 0.9-1.7s0.4-1.2 0.2-1.8c0-0.5 0-0.9-0.2-1.4h-0.1c-0.2 0-0.3-0.1-0.3-0.3 0-0.3 0.2-0.5 0.3-0.8 0.3-0.5 0.3-1 0.2-1.6-0.3-0.1-0.3-0.3-0.3-0.7 0.1-0.9 0.3-1.7 0.3-2.6 0-0.6 0.2-1.1 0.4-1.6 0 0.1 0 0.2-0.1 0.2-0.2 0.1-0.2 0.5-0.6 0.3-0.1-0.4 0-0.7 0.1-1.1 0-0.2 0.1-0.4 0.1-0.6 0.3-1 0.8-1.8 1.5-2.5-0.9 0.3-1.4 1.1-1.9 1.8-0.1 0.3-0.2 0.6-0.5 0.3-0.1-0.3 0.1-0.5 0-0.7 0.4-1.9 1.4-3.6 2.7-5.1 0.5-0.3 0.8-0.8 1.2-1.1h0.1-0.1c-0.2 0.1-0.3 0.2-0.5 0.2-0.1 0-0.2-0.1-0.2-0.2 0-0.4 0.3-0.6 0.6-0.7 0.7-0.5 1.5-1.1 2.5-1.1 0.3 0 0.4-0.2 0.4-0.5v-0.6c0-0.6 0.4-0.8 0.9-0.5l0.3 0.3c0.1 0.1 0.3 0.4 0.3-0.1 0-0.2 0-0.4 0.2-0.5 0.1 0 0.2-0.1 0.3 0 0.5 0.4 1.1 0.3 1.7 0.1 0.7-0.2 1.5 0.1 2.2 0.3 0.2 0.1 0.4 0.1 0.6 0.1s0.4 0 0.5-0.1l0.1-0.1c0.4-0.1 0.7-0.4 1.2-0.4 0.1 0 0.1 0.1 0.1 0.1v0.2c-0.5 0.7-1.2 1-2 1-0.2 0-0.5 0-0.5 0.3-0.1 0-0.1 0.1-0.3 0.1h-0.2c0.1 0.1 0.2 0.1 0.4 0.2 1.5 0.8 3 1.8 4.6 2.4 0.6 0.2 1 0.7 1 1.4 0 0.2 0.1 0.5 0.1 0.7 0 1.2-0.9 1.9-2 1.6-0.8-0.2-1.5-0.5-2.2-0.7-0.2-0.1-0.5-0.1-0.7-0.1-0.4 0.1-0.8 0.2-1.3 0.2-0.3 0-0.4 0.1-0.3 0.4 0.6 1.8 1.4 3.4 2.9 4.6 0.7 0.6 1.5 0.9 2.3 1.1 1.1 0.4 1.6 1.2 2 2.2 0.2 0.6 0.2 0.6 0.7 0.2 0.6-0.6 1.3-1.2 1.9-1.7 0.7-0.5 2.2-0.4 2.8 0.2 0.2 0.2 0.2 0.4 0.3 0.6 0.1 0.6 0.3 1.2 0.5 1.8 0.2 0.5 0.3 1 0.3 1.6 0 0.4 0.2 0.6 0.4 0.9 0.8 1.1 0.6 2.1 0.1 3.2-0.5 1-0.9 2.1-1.3 3.2-0.1 0.3-0.2 0.5-0.6 0.5-0.2 0-0.3 0.2-0.4 0.3-0.3 0.5-0.7 1.1-1 1.6-0.2 0.3-0.4 0.3-0.5 0-0.4-0.7-0.8-1.4-0.9-2.3-0.1-0.5 0.4-1 1.1-1.1h0.3c0.1 0 0.4 0.1 0.4-0.2 0-0.2-0.2-0.2-0.3-0.2-0.4-0.1-0.5-0.4-0.2-0.6 0.8-0.7 0.5-1.6 0.3-2.4-0.1-0.3-0.1-0.6-0.3-0.9-0.1-0.1-0.2-0.1-0.3-0.2-0.3-0.3-0.6-0.2-0.9 0-0.6 0.4-1.1 1.1-1.6 1.6-0.2 0.2-0.2 0.5-0.3 0.7-0.5 2.4-1.4 4.7-2.5 6.8-0.6 0.4-0.6 0.8-0.9 1.1h-0.1c-0.5 0.8-0.9 1.6-1.4 2.4 0 0.3-0.3 0.5-0.5 0.8-0.1 0.3-0.3 0.5-0.4 0.8-0.3 0.5-0.7 0.8-1 1.3-0.4 0.5-0.5 1-0.3 1.6 0.1 0.3 0.2 0.7 0.4 1 0.7 1.3 0.6 2.7 0.3 4.1-0.4 1.8-0.9 3.6-1.7 5.3-0.4 0.8-0.7 1.7-1.3 2.4-0.7 0.8-0.7 1.8-0.7 2.8 0.1 1.6 0.7 3.1 1.6 4.5 1 1.6 2.1 3 3.1 4.6 0.2 0.2 0.3 0.3 0.2 0.6z"/>
+	</defs>
+	<use id="use1972" width="100%" height="100%" fill="#ffffff" xlink:href="#SVGID_1_"/>
+	<clipPath id="SVGID_2_">
+		<use id="use1974" width="100%" height="100%" xlink:href="#SVGID_1_"/>
+	</clipPath>
+	<path id="path1977" class="st50" d="m19.6 85.6c0 8.5-2.6 15.3-5.9 15.3s-6.8-7.2-5.9-15.3c0.2-1.5 0.7-10.9 1.2-15 0.2-1.6 0.3-1.3 0.6-1.8 1.1-2.1 1.3 1.2 1.8-1.1 0.6-2.8 0.3-2.7 0.9-4 1.1-2.6 5.7 1.6 6 2 2.8 4.8 1.3 11.4 1.3 19.9z" clip-path="url(#SVGID_2_)"/>
+	<path id="path1979" class="st50" d="m52.3 58.7c0 3.1-2.6 5.6-5.9 5.6s-6.8-2.6-5.9-5.6c0.2-0.5 0.7-3.9 1.2-5.4 0.2-0.6 0.3-0.5 0.6-0.7 1.1-0.8 1.3 0.4 1.8-0.4 0.6-1 0.3-1 0.9-1.4 1.1-0.9 2.1 1.1 2.3 1.3 2.8 1.7 5 3.6 5 6.6z" clip-path="url(#SVGID_2_)"/>
+</g>
+<path id="path1983" class="st1" d="m26.727254 0.075c0.6 0 1 0.5 1.2 1 0.2 0.3 0.3 0.5 0.6 0.4 0.3 0 0.5 0.2 0.6 0.5 0.1 0.4 0.3 0.7 0.6 0.9 0.7 0.6 1.3 1.2 2.1 1.6 0.1 0.1 0.2 0.1 0.2 0.3 0 0.4 0.2 0.8 0.4 1.2 0.1 0.5 0.5 0.7 1 0.7 1.2 0 2 0.7 2.6 1.7 0.6 0.9 0.1 1.5-0.3 2.3-0.3 0.6-0.8 1.3-0.6 2.1 0.1 0.5 0.5 0.8 0.8 1.2 0.5 0.7 1.1 1.4 1.6 2.2 0 0 0 0.1 0.1 0.1 0.6 0.3 0.8 0.9 0.7 1.5 0 0.1 0.1 0.2 0.2 0.3 0.6 0.5 0.2 1.2 0.4 1.7-1 0.9 0.3 1.4 0.4 2.1 0 0 0 0.1 0.1 0.1 0.7 0 0.5 0.6 0.7 1 0.1 0.2 0.1 0.4 0 0.5-0.4 0.6-0.4 1.2-0.5 1.9-0.1 0.6-0.3 0.6-0.7 0.3-0.5-0.5-0.9-0.2-1.2 0.1-0.5 0.5-0.7 1.3-0.8 2 0 0.2 0.1 0.3 0.2 0.4 0.2 0.2 0.4 0.4 0.5 0.6 0.6 0.8 0.5 0.8-0.1 1.5-0.3 0.3-0.2 0.8-0.3 1.2-0.4-1.1-0.8-2.1-1-3.2-0.1-0.4-0.3-0.6-0.7-0.8-1.1-0.5-1.9-0.1-2.6 0.7-0.6 0.6-1.3 1.2-2.1 1.8-0.1-0.4-0.3-0.8-0.4-1.1-0.4-1.2-1.3-1.7-2.4-2.1-2.2-0.7-3.5-2.4-4.3-4.4-0.2-0.5-0.4-1.1-0.6-1.6-0.1-0.3 0-0.3 0.2-0.3 0.5 0 1.1 0 1.6-0.1 0.8-0.1 1.6 0.1 2.4 0.5 0.4 0.2 0.8 0.4 1.2 0.3 0.9-0.2 1.2-0.6 1.3-1.3 0.1-1-0.3-1.8-1.1-2.1-1.6-0.6-3.1-1.5-4.5-2.5v-0.1c0-0.1 0.1-0.1 0.2-0.1 0.1-0.1 0.2-0.2 0.3-0.2 0 0 0.1 0 0 0h-0.1c-0.1-0.1-0.3-0.2-0.2-0.3s0.2-0.1 0.3-0.1 0.1 0 0.2-0.1c0.8 0 1.5-0.3 2-0.9 0.1-0.1 0.1-0.2 0.2-0.3-0.1 0.1-0.2 0.1-0.3 0.2-0.4 0.2-0.7 0.5-1.2 0.5-0.2 0.1-0.4 0.1-0.6 0.1-0.1-0.1-0.3-0.1-0.4 0l-1.5-0.3c-0.4-0.1-0.8-0.1-1.1 0.1-0.5 0.3-0.8 0.3-1.2-0.1-0.1-0.1-0.2-0.3-0.4-0.2-0.1 0.1-0.1 0.2-0.1 0.3 0 0.5 0 0.5-0.5 0.3-0.1 0-0.1 0-0.2-0.1-0.2-0.1-0.5-0.4-0.7-0.3s-0.1 0.5-0.1 0.8v0.2c0.2 0.5 0 0.7-0.5 0.8-1.2 0.2-2.2 0.8-3 1.6 0 0.2 0 0.2 0.2 0.1 0.1-0.1 0.3-0.1 0.4-0.2 0.1 0.2-0.1 0.3-0.2 0.5-0.3 0.3-0.6 0.5-0.8 0.9-1.3 1.4-2.1 3.1-2.7 4.9-0.1 0.3-0.3 0.7-0.1 1 0.2-0.1 0.2-0.3 0.4-0.5 0.5-1 1.2-1.7 2.4-1.9 0.1 0 0.2 0 0.1 0.2-0.7 0.8-1.4 1.6-1.7 2.6-0.3 0.6-0.5 1.3-0.5 1.9 0.2-0.2 0.4-0.4 0.5-0.7 0.1-0.2 0.2-0.3 0.3-0.4 0 0 0.1 0.1 0 0.1-0.1 0.6-0.2 1.2-0.4 1.8-0.1 0.1 0 0.2-0.1 0.3-0.1 0.2-0.1 0.4-0.1 0.5v0.2c-0.1 0.2-0.1 0.4 0 0.5-0.2 0.8-0.2 1.6-0.4 2.4 0-0.2 0-0.4 0.3-0.4 0.1 0 0.2 0.1 0.2 0.2 0-0.2-0.1-0.2-0.2-0.3 0-0.3 0.1-0.5 0.4-0.5v0.3c0.1 0.8 0 1.6-0.6 2.2 0.2 0.2 0.2 0.5 0.4 0.7s0.1 0.5 0.2 0.7c0 0.1 0.1 0.1 0 0.2-0.1 0.3 0 0.6 0 0.8s0.1 0.1 0 0.1c-0.1-0.3 0-0.6 0-0.9l0.1-0.1c0.3 1.3-0.3 2.4-0.9 3.4 0 0.1-0.1 0.1-0.1 0.2-0.3 0.4-0.6 0.8-0.9 1.2 0 0 0 0.1 0.1 0.1h0.1c0.6-0.3 1.1-0.8 1.7-1.3 0.3 0 0.2 0.2 0.1 0.3-0.1 0.3-0.3 0.5-0.4 0.8-0.2 0.5-0.4 0.9-0.6 1.4-0.2 0.6-0.3 1.2-0.1 1.9l0.1 0.1c0-0.2 0-0.4 0.2-0.6 0.1-0.3 0.4-0.6 0.6-0.7 1.4-0.6 2.6-1.3 3.9-2.2-0.2 1.4-1.1 2.3-2.2 3.1-0.1 0.1-0.1 0.1 0 0.2s0.2 0.1 0.2 0c2.2-0.4 3.2-2 3.7-3.9 0.2-0.6 0.2-1.2 0.3-2-0.1 0.2-0.1 0.7-0.2 1.2-0.2 1.3-0.9 2.5-1.6 3.6-0.3 0.5-0.7 1.1-1.1 1.6-0.2 0.3-0.5 0.6-0.7 1-1 1.3-2.2 2.5-2.6 4.1-0.1 0.3-0.2 0.6-0.1 0.8 0 0.5-0.2 0.8-0.6 1.1-0.3-0.1-0.4 0.2-0.6 0.2v-0.1c0.1-1.6-0.3-3.2-0.2-4.7 0-0.7-0.1-1.3-0.1-2 0-0.4-0.4-0.7-0.7-1-0.6-0.6-1.2999998-1.1-1.6999998-1.8-0.3-0.5-0.4-1-0.3-1.6 0-0.3 0-0.5-0.2-0.6-0.5-0.3-0.6-0.7-0.3-1.3 0.4-0.9 0.2-1.9 0.2-2.8 0-0.7-0.1-1.4-0.1-2 0-0.5-0.2-0.7-0.6-0.9-2.1-1.2-4.2-2.5-6.2-3.9-0.5-0.3-0.79999995-0.8-0.79999995-1.5 0.1-1.2 0.49999995-2.3 0.29999995-3.5 0-0.2 0.2-0.3 0.4-0.5 0.3-0.2 0.5-0.5 0.5-1 0.1-0.7 0.1-1.5 0.5-2 0.4-0.4 0.5-0.8 0.6-1.2 0.1-0.2 0.3-0.2 0.4-0.1 0.3 0.2 0.7 0.3 1 0.5 0.4 0.2 0.5 0 0.5-0.4 0-0.2-0.2-0.3-0.3-0.4-0.4-0.4-0.3-0.7 0.2-0.8s0.7-0.5 0.5-0.9 0-0.4 0.3-0.4h0.6c0.4 0.1 0.7 0.2 0.7-0.4 0-0.3 0.3-0.2 0.5-0.2 0.3 0 0.5 0 0.4-0.4s-0.1-0.5 0.4-0.5c0.2 0 0.5-0.2 0.4-0.4-0.1-0.4 0.1-0.5 0.4-0.5 0.7-0.2 1.2999998-0.1 1.6999998 0.5 0.3 0.4 0.6 0.3 1 0.2 1.4-0.5 2.9-0.4 4.4-0.3 0.3 0 0.4 0 0.6-0.2 1-1.2 2.1-2.3 3.4-3.1 0.1 0 0.2-0.1 0.2-0.2-0.3-0.5 0.2-0.7 0.4-1 0.3-0.7 0.7-1.3 0.6-2.1 0-0.4 0.1-0.6 0.5-0.7 0.2 0 0.4-0.2 0.5-0.4s0.1-0.3-0.1-0.4c-0.8-0.6-1-1.5-1.1-2.4 0-0.3 0.1-0.4 0.4-0.5 0.8-0.1 1.6-0.5 2.4-0.7h0.4c0.4 0 0.6-0.1 0.8-0.4 0.5-0.4 1-0.8 1.6-0.8"/>
+<path id="path1985" class="st51" d="m18.127254 60.675c-0.1 1-0.3 2-0.6 2.9-0.2 0.5-0.1 0.9 0.2 1.3 0.1 0.1 0.2 0.2 0.2 0.3 0 1.4 0.9 2.5 1.6 3.7 0.7 1.3 1 2.6 0.7 4.1-0.1 0.4 0 0.6 0.3 0.8 0.5 0.3 0.9 0.7 0.7 1.4-0.1 0.4 0.1 0.6 0.6 0.6h0.9c0.3 0 0.6 0 0.7 0.4 0.1 0.2 0.3 0.2 0.5 0.2 0.7 0 1.4-0.1 2.2-0.2 0.4 0.6 0.1 1.2 0.1 1.7 0 0.2-0.1 0.5-0.1 0.7 0.1 0.5-0.2 0.7-0.7 0.8-1.1 0.1-2.1 0.2-3.2 0.4-1.6 0.2-3.1 0.5-4.7 0.7-1.7 0.2-3.5 0.5-5.2 0.9-0.1 0-0.3 0.1-0.3-0.1s0.1-0.2 0.3-0.3c0.4-0.1 0.9-0.2 1.3-0.3s0.5-0.2 0.4-0.6c-0.3-1.2-0.8-2.2-1.4-3.2-0.1-0.1-0.1-0.2-0.3-0.3-0.6-0.3-0.8-0.8-1-1.3v-0.2c0.6-1 0.8-2.1 0.1-3.1v-0.2c1.3-1.1 2.1-2.6 2.4-4.3 0.2-1.3 0-2.6 0.1-3.8-0.1-0.5-0.2-1.1-0.3-1.8 0.4 0.3 0.5 0.7 0.5 1 0.1 0.5 0.1 1 0.3 1.5v1.1c0.4-0.7 0.6-1.4 0.6-2.1 0.1-3.1-0.8-6-1.8-8.9-0.2-0.6-0.4-1.3-0.3-2 0-0.1 0-0.3 0.2-0.3 0.1 0 0.2 0 0.2 0.1 0.2 1.1 1.1 1.9 1.7 2.8 0.9 1.3 2 2.5 2.7 3.9 0.1 0.2 0.2 0.6 0.3 0.8 0 0.4 0 0.6 0.1 0.9z"/>
+<path id="path1987" class="st51" d="m26.027254 75.375c-1-1.5-2.1-3-3.1-4.5-0.9-1.3-1.7-2.6-1.9-4.2-0.1-0.9-0.1-1.9 0-2.8 0.1-0.6 0.6-1 0.9-1.5 1.2-2.1 2.1-4.4 2.6-6.8l0.3-1.8c0.1-0.8-0.1-1.5-0.4-2.2-0.2-0.5-0.4-0.9-0.6-1.4-0.2-0.6-0.1-1.2 0.4-1.7 0.4-0.4 0.7-0.8 1-1.3 0.1-0.3 0.3-0.6 0.5-0.8 0.1-0.1 0.2-0.3 0.4-0.2-0.2 1.5 0 3.1 0 4.6 0 0.7-0.3 1.4-0.5 2.1-0.1 0.4-0.2 0.8 0 1.1 0.4 0.6 0.4 1.2 0.3 1.9-0.2 1.1-0.3 2.2-0.7 3.3-0.1 0.3 0 0.5 0.2 0.6 0.5 0.4 0.6 0.8 0.6 1.4-0.1 0.7 0.2 1.5 0.1 2.2 0 0.3 0.2 0.4 0.4 0.6 0.5 0.5 0.5 0.8 0 1.3-0.1 0.1-0.1 0.3-0.1 0.4-0.1 1 0.1 1.9 0.1 2.9 0 0.3 0 0.7-0.2 0.9-0.3 0.3-0.1 0.5 0.2 0.7s0.3 0.3 0 0.5c-0.5 0.4-0.5 0.8-0.2 1.4 0.2 0.4 0.1 0.8 0 1.1-0.1 0.4-0.1 0.7 0.3 1 0.3 0.2 0.2 0.5 0.1 0.8-0.1 0.2-0.3 0.4-0.4 0.6-0.1-0.1-0.2-0.2-0.3-0.2z"/>
+<path id="path1989" class="st51" d="m28.327254 42.175c1.1-2.2 2-4.5 2.5-7 0.1-0.3 0.2-0.7 0.5-0.9 0.5-0.5 0.9-1 1.4-1.4 0.6-0.5 1.2-0.3 1.4 0.5-0.6 0.4-0.7 1-0.5 1.6 0.2 0.5 0.1 0.8-0.5 0.9-0.3 0.1-0.6 0.3-0.6 0.6 0 0.6-0.4 0.9-0.8 1.2-0.7 0.5-0.8 0.9-0.5 1.8 0.2 0.5 0.3 1 0.1 1.5l-0.6 1.8c-0.1 0.3-1.2 1.1-1.4 0.9-0.5-0.4-0.8-0.2-1.3 0-0.3 0.1-0.3-0.1-0.3-0.4 0.2-0.4 0.4-0.8 0.6-1.1z"/>
+<path id="path1991" class="st52" d="m7.5272542 55.275c-0.1 0.2-0.3 0.5-0.4 0.7s-0.2 0.5-0.3 0.7c-0.1-0.6 0.2-1.1 0.5-1.5 0.1 0 0.2 0.1 0.2 0.1z"/>
+<path id="path1993" class="st0" d="m26.227254 45.975c-0.4 0.2-0.5 0.8-0.9 1.1 0.2-0.6 0.6-1 1-1.5 0.3 0.2 0.1 0.3-0.1 0.4z"/>
+<path id="path1995" class="st52" d="m7.5272542 55.275-0.2-0.2 0.4-0.4 0.1 0.1c0 0.2-0.2 0.4-0.3 0.5z"/>
+<path id="path1997" class="st52" d="m5.7272542 70.175v0c0 0.2-0.1 0.3-0.2 0.3-0.1-0.2 0-0.2 0.2-0.3z"/>
+<path id="path1999" class="st52" d="m9.4272542 72.775 0.1 0.1c-0.1 0.1-0.2 0.2-0.3 0.1s0.1-0.2 0.2-0.2z"/>
+<path id="path2001" class="st53" d="m26.327254 75.575c0.1 0.2 0.2 0.3 0 0.7v-0.7z"/>
+<path id="path2003" class="st54" d="m36.127254 32.675c0.2 0.1 0.1 0.4 0.1 0.5 0 0.3 0 0.7 0.2 1s-0.1 0.6-0.3 0.8-0.2-0.1-0.2-0.2c0-0.4-0.1-0.8-0.2-1.2-0.1-0.2 0-0.4-0.1-0.6 0.1-0.1 0.3-0.2 0.5-0.3z"/>
+<path id="path2005" class="st0" d="m13.027254 29.875c-0.2 0.1-0.3 0.3-0.3 0.5v0.1c-0.3 0.2-0.1 0.7-0.5 1 0.1-1.1 0.4-2.1 0.5-3.1-0.1-0.2-0.1-0.4 0-0.5l0.1-0.1c-0.1-0.2-0.1-0.4 0-0.6 0.1-0.1 0.1-0.2 0.2-0.2 0 0.9-0.3 1.8-0.4 2.7 0 0.1 0 0.2-0.1 0.3 0.3-0.2 0.5-0.7 0.5-0.1z"/>
+<path id="path2007" class="st55" d="m14.527254 64.475c-0.3-0.4-0.2-0.9-0.3-1.4-0.1-0.3-0.1-0.6-0.4-1 0 0.6 0.2 1.1 0.2 1.6-0.3-0.3-0.1-0.7-0.2-1-0.1-0.2-0.1-0.5-0.2-0.8 0-0.1-0.1-0.2 0-0.3 0.2-0.1 0.2 0.1 0.3 0.2 0.4 0.7 0.6 1.5 0.7 2.4-0.1 0.1-0.1 0.2-0.1 0.3z" fill="#2b653f"/>
+<path id="path2009" class="st0" d="m14.827254 17.775c0-0.4 0.4-0.5 0.6-0.7s0.4-0.4 0.5-0.7c0.1-0.2 0.3-0.3 0.4-0.3-0.5 0.5-1 1.1-1.5 1.7z"/>
+<path id="path2011" class="st1" d="m12.727254 38.675c0-0.2 0.1-0.4 0.2-0.6 0.1-0.1 0.2-0.3 0.1-0.5 0.2-0.2 0.4-0.4 0.6-0.7 0.1-0.1 0.2 0 0.2 0-0.4 0.6-0.7 1.2-1.1 1.8z"/>
+<path id="path2013" class="st0" d="m12.427254 26.275c0.1-0.7 0.2-1.5 0.6-2.2-0.1 0.6-0.4 1.1-0.4 1.7 0.1 0.3 0 0.4-0.2 0.5z"/>
+
+<path id="path2017" class="st57" d="m19.727254 13.475c0.3 0 0.5 0 0.4-0.4 0-0.1-0.1-0.2 0.1-0.2v1.1c-0.3-0.1-0.4-0.3-0.5-0.5z"/>
+<path id="path2019" class="st0" d="m12.727254 33.175c-0.1 0.1-0.1 0.2-0.3 0.3v-1.1c0.1 0.1 0.2 0.1 0.3 0.2s0.1 0.2 0.1 0.3c0 0.2 0 0.3-0.1 0.3z"/>
+<path id="path2021" class="st0" d="m12.427254 26.275c0.2-0.1 0.2-0.2 0.2-0.4 0.1-0.2 0.3-0.3 0.4-0.5-0.2 0.4-0.4 0.8-0.6 1.3-0.2-0.2-0.1-0.3 0-0.4z"/>
+<path id="path2023" class="st0" d="m24.827254 13.775c-0.1 0-0.1 0.1-0.2 0.1s-0.2-0.1-0.2 0.1c0 0 0.1 0.1 0.2 0.1 0.1 0.1 0.2 0.1 0 0.2-0.1 0-0.2 0-0.3-0.1l-0.1-0.1c-0.3-0.7 0.4-0.1 0.6-0.3z"/>
+<path id="path2025" class="st0" d="m11.727254 23.875c0-0.4 0.1-0.8 0.3-1.2 0.1 0.3-0.1 0.5-0.1 0.8 0 0.1 0.1 0.3-0.1 0.4h-0.1z"/>
+
+<path id="path2029" class="st1" d="m26.827254 12.775 0.8-0.8c-0.1 0.3-0.2 0.6-0.4 0.7-0.2 0-0.2 0.1-0.4 0.1z"/>
+<path id="path2031" class="st1" d="m15.727254 43.675c0.1-0.4 0.4-0.7 0.7-1-0.1 0.5-0.4 0.8-0.7 1z"/>
+<path id="path2033" class="st0" d="m28.327254 42.175c0 0.4-0.3 0.7-0.5 1 0-0.4 0.2-0.7 0.5-1z"/>
+<path id="path2035" class="st0" d="m11.827254 23.875c0-0.1 0-0.3 0.1-0.4 0.2 0 0.2-0.2 0.3-0.2-0.1 0.2-0.2 0.5-0.3 0.7-0.1 0-0.1 0-0.1-0.1z"/>
+<path id="path2037" class="st0" d="m12.127254 42.175c0-0.1-0.1-0.2-0.1-0.3 0.1-0.2 0.1-0.4 0.3-0.5 0 0.3-0.1 0.6 0 0.8-0.1 0.2-0.1 0.2-0.2 0z"/>
+<path id="path2039" class="st1" d="m14.727254 34.175c0.1 0.3 0.1 0.7-0.2 1 0-0.4 0.1-0.7 0.2-1z"/>
+<path id="path2041" class="st0" d="m13.427254 25.075c0-0.1-0.1-0.1 0 0-0.1-0.3 0-0.4 0.2-0.4 0 0 0.1 0 0.1 0.1 0 0.2-0.2 0.2-0.3 0.3z"/>
+<path id="path2043" class="st0" d="m15.427254 16.575c-0.1 0.1-0.3 0.3-0.5 0.3 0-0.3 0.1-0.3 0.3-0.4 0 0 0.1 0.1 0.2 0.1z"/>
+<path id="path2045" class="st0" d="m14.727254 41.775c-0.2 0-0.3 0.1-0.6 0.1 0.1-0.2 0.2-0.3 0.4-0.3 0 0.1 0.2 0.2 0.2 0.2z"/>
+<path id="path2047" class="st0" d="m23.627254 14.475c-0.1-0.1-0.3-0.1-0.2-0.3 0.1-0.1 0.2-0.2 0.4 0v0.2c-0.1 0.1-0.1 0.1-0.2 0.1z"/>
+<path id="path2049" class="st1" d="m12.727254 32.975v-0.3-0.1c0.3 0 0.2 0.2 0.2 0.4-0.1 0.1-0.1 0.1-0.2 0z"/>
+<path id="path2051" class="st0" d="m24.227254 14.575v0.2c-0.2 0-0.4-0.2-0.5-0.3l0.1-0.1c0.1-0.1 0.2-0.1 0.3 0 0 0.1 0 0.1 0.1 0.2z"/>
+<path id="path2053" class="st0" d="m24.227254 14.575c-0.2-0.1-0.3-0.1-0.5-0.2 0-0.1 0-0.2 0.1-0.2 0.1 0.1 0.2 0.1 0.3 0.2 0 0.1 0.1 0.1 0.1 0.2z"/>
+<path id="path2055" class="st59" d="m18.127254 60.675c-0.2-0.2-0.2-0.5 0-0.7v0.7z"/>
+<path id="path2057" class="st0" d="m24.227254 14.575-0.1-0.1c0.1-0.1 0.1-0.2 0.2-0.2l0.1 0.1c0.1 0.1 0.2 0.2 0.1 0.4-0.2-0.2-0.3-0.2-0.3-0.2z"/>
+<path id="path2059" class="st1" d="m24.527254 13.375c0.1-0.1 0.3-0.1 0.4 0-0.1 0.1-0.3 0.1-0.4 0z"/>
+<path id="path2061" class="st60" d="m26.827254 12.775c0.1 0 0.2-0.1 0.3-0.1 0 0.1-0.1 0.2-0.3 0.3v-0.2z"/>
+<path id="path2063" class="st0" d="m14.727254 21.475c0-0.1-0.1-0.1-0.1-0.2 0.1-0.1 0.2-0.1 0.2 0 0.1 0.1 0 0.1-0.1 0.2z"/>
+<path id="path2065" class="st0" d="m24.627254 14.375c0.1-0.1 0-0.1 0-0.2 0.3 0 0.6 0.1 0.9 0.1-0.3 0.3-0.6 0.1-0.9 0.1z"/>
+<path id="path2067" class="st0" d="m12.727254 30.475c0.5 0.1 0.1 0.4 0.2 0.7-0.1-0.2-0.1-0.5-0.2-0.7z"/>
+<path id="path2069" class="st1" d="m13.027254 34.075v1.1c-0.1-0.4-0.2-0.8 0-1.1z"/>
+<path id="path2071" class="st0" d="m11.827254 23.875 0.1 0.1c-0.1 0.1 0 0.3-0.2 0.4-0.1-0.2-0.1-0.4 0-0.5h0.1z"/>
+<path id="path2073" class="st1" d="m12.727254 32.975h0.2v1c-0.3-0.2 0-0.6-0.3-0.8 0.1 0 0.1-0.1 0.1-0.2z"/>
+<path id="path2075" class="st61" d="m29.927254 19.375v-0.7 0.7z"/>
+<path id="path2077" class="st0" d="m24.627254 14.375c-0.1 0.4-0.1 0.4-0.2 0.3 0-0.1 0-0.3-0.1-0.4 0.1 0 0.2 0 0.3 0.1z"/>
+<path id="path2079" class="st1" d="m11.027254 38.875c0 0.1 0.1 0.1 0.2 0.1-0.1 0.1-0.3 0.3-0.4 0.1-0.1 0 0-0.2 0.2-0.2z"/>
+<path id="path2081" class="st1" d="m11.727254 40.875v0.5-0.5z"/>
+<path id="path2083" class="st0" d="m12.127254 42.175c0.1 0 0.2 0.2 0.2 0 0.1 0.1 0.2 0.2 0.1 0.3-0.2 0.1-0.3-0.1-0.3-0.3z"/>
+<path id="path2085" class="st1" d="m12.827254 48.475v0.5c-0.1-0.2-0.1-0.3 0-0.5-0.1 0 0 0 0 0z"/>
+<path id="path2087" class="st0" d="m12.827254 27.075c0 0.2 0.1 0.4 0 0.6-0.1-0.2-0.2-0.4 0-0.6z"/>
+<path id="path2089" class="st1" d="m18.127254 14.575c0.1-0.1 0.2-0.1 0.4 0-0.2 0.1-0.3 0.1-0.4 0z"/>
+<path id="path2091" class="st1" d="m25.527254 13.275h-0.4c0.2-0.2 0.3-0.1 0.4 0 0.1 0 0 0 0 0z"/>
+<path id="path2093" class="st0" d="m12.727254 27.875v0.5c-0.1-0.2-0.2-0.4 0-0.5z"/>
+<path id="path2095" class="st62" d="m21.127254 64.375v1.2-1.2z"/>
+<g id="text6212" transform="translate(-7.8727458,-19.525)"><g fill="#98bf53"><path id="path42488" d="m64.684016 50.418199q2.513024 0.585938 3.52865 1.419272 1.458335 1.184897 1.458335 3.072921 0 1.99219-1.601564 3.294275-1.966149 1.575523-5.716153 1.575523h-8.971366v-0.481772q1.22396 0 1.653648-0.221354 0.442709-0.234376 0.61198-0.598959 0.182292-0.364584 0.182292-1.796878v-11.458348q0-1.432293-0.182292-1.796877-0.169271-0.377604-0.61198-0.598959-0.442709-0.221354-1.653648-0.221354v-0.481772h8.463552q3.033858 0 4.296881 0.546876 1.263022 0.533855 1.99219 1.614585 0.729167 1.06771 0.729167 2.278649 0 1.276043-0.92448 2.278649-0.92448 0.989584-3.255212 1.575523zm-4.73959-0.351563q1.848961 0 2.721358-0.416668 0.885418-0.416667 1.354168-1.171876 0.468751-0.755209 0.468751-1.927086 0-1.171876-0.468751-1.914065-0.455729-0.755209-1.315106-1.145835-0.859376-0.390625-2.76042-0.377604zm0 1.015626v5.66407l-0.01302 0.651042q0 0.703126 0.351563 1.06771 0.364584 0.351563 1.06771 0.351563 1.041668 0 1.914065-0.45573 0.885418-0.468751 1.354168-1.341148 0.468751-0.885417 0.468751-1.966148 0-1.236981-0.572917-2.213544-0.572918-0.989585-1.575523-1.38021-1.002606-0.390626-2.994797-0.377605z"/><path id="path42490" d="m76.272571 42.123917v15.130228q0 1.289064 0.29948 1.653648 0.299479 0.351563 1.171876 0.403646v0.468751h-6.575529v-0.468751q0.807293-0.02604 1.197918-0.468751 0.260417-0.299479 0.260417-1.588543v-12.604183q0-1.276043-0.299479-1.627606-0.29948-0.364584-1.158856-0.416667v-0.481772z"/><path id="path42492" d="m84.657998 47.241111q1.588544 0 2.955733 0.820314 1.367189 0.820313 2.070315 2.330732 0.716147 1.510418 0.716147 3.307296 0 2.591149-1.315106 4.335943-1.588544 2.109377-4.388027 2.109377-2.747399 0-4.231776-1.927085-1.484377-1.927086-1.484377-4.466152 0-2.617191 1.510419-4.557297 1.523439-1.953128 4.166672-1.953128zm0.05208 0.924481q-0.664063 0-1.145834 0.507813-0.468751 0.494792-0.625001 1.979169-0.14323 1.471356-0.14323 4.101567 0 1.393231 0.182292 2.60417 0.14323 0.924481 0.61198 1.406252 0.468751 0.481772 1.06771 0.481772 0.585938 0 0.976564-0.325522 0.507813-0.442708 0.677084-1.23698 0.260417-1.236981 0.260417-5.000007 0-2.213544-0.247396-3.033858-0.247396-0.833334-0.729168-1.210939-0.338542-0.273437-0.885418-0.273437z"/><path id="path42494" d="m102.18406 56.642165 0.40365 0.3125q-0.85938 1.614585-2.14844 2.408857-1.276044 0.781251-2.721359 0.781251-2.434899 0-3.893234-1.83594-1.458335-1.835939-1.458335-4.414068 0-2.486982 1.328127-4.375005 1.601564-2.278649 4.414068-2.278649 1.888023 0 2.994793 0.950522 1.1198 0.950522 1.1198 2.122399 0 0.742188-0.45573 1.184897-0.44271 0.442709-1.17188 0.442709-0.768231 0-1.276044-0.507813-0.494793-0.507813-0.61198-1.809898-0.07813-0.820314-0.377605-1.145835-0.299479-0.325521-0.703126-0.325521-0.625001 0-1.067709 0.664063-0.677085 1.002605-0.677085 3.072921 0 1.718752 0.546876 3.294275 0.546876 1.562502 1.497398 2.330732 0.716147 0.559896 1.69271 0.559896 0.638025 0 1.210935-0.299479 0.57292-0.29948 1.35417-1.132814z"/></g><g fill="#106536"><path id="path42496" d="m59.905364 73.180877v4.947923q0 1.432293 0.169271 1.809898 0.182292 0.364584 0.625001 0.585938 0.442708 0.221355 1.653648 0.221355v0.481771h-9.03647v-0.481771q1.22396 0 1.653648-0.221355 0.442709-0.234375 0.61198-0.598959 0.182292-0.364584 0.182292-1.796877v-11.458348q0-1.432293-0.182292-1.796877-0.169271-0.377605-0.61198-0.598959-0.442709-0.221355-1.653648-0.221355v-0.481771h8.203135q3.203129 0 4.687506 0.442709t2.421878 1.640627q0.937501 1.184897 0.937501 2.786462 0 1.953127-1.406251 3.22917-0.898439 0.807293-2.513024 1.21094l4.244797 5.97657q0.833334 1.158855 1.184897 1.445314 0.533855 0.403646 1.236981 0.442709v0.481771h-5.559903l-5.690112-8.046885zm0-8.658865v7.734385h0.742188q1.809898 0 2.708337-0.325522 0.898439-0.338542 1.406252-1.197918 0.520834-0.872397 0.520834-2.265628 0-2.018231-0.950522-2.981774-0.937501-0.963543-3.033858-0.963543z"/><path id="path42498" d="m83.29081 74.704316h-6.679695q0.117187 2.421879 1.289064 3.82813 0.898438 1.080731 2.161461 1.080731 0.781251 0 1.419272-0.429688 0.638022-0.442709 1.36719-1.575523l0.442708 0.286459q-0.989584 2.018231-2.187502 2.864587-1.197918 0.833334-2.773441 0.833334-2.708337 0-4.101568-2.083336-1.119793-1.67969-1.119793-4.166672 0-3.046879 1.640627-4.843756 1.653648-1.809898 3.867192-1.809898 1.848961 0 3.203129 1.523439 1.36719 1.510419 1.471356 4.492193zm-3.203129-0.872396q0-2.096357-0.234375-2.877608-0.221354-0.781251-0.703126-1.184898-0.273438-0.234375-0.729167-0.234375-0.677085 0-1.106773 0.664063-0.76823 1.158856-0.76823 3.177088v0.45573zm1.914065-10.859389-4.309901 4.518235h-1.119793l1.510419-4.518235z"/><path id="path42500" d="m89.527798 79.990781v4.531256q0 0.937501 0.143229 1.276043 0.15625 0.338543 0.468751 0.494793 0.3125 0.15625 1.22396 0.15625v0.481771h-6.940113v-0.481771q0.807292-0.02604 1.197918-0.45573 0.260417-0.299479 0.260417-1.549481v-12.851579q0-1.289064-0.29948-1.640627-0.299479-0.364583-1.158855-0.416667v-0.481771h5.104173v1.601564q0.638021-0.937501 1.302085-1.354168 0.950522-0.61198 2.070315-0.61198 1.341147 0 2.434899 0.846355 1.106772 0.846355 1.679689 2.343753 0.572918 1.484377 0.572918 3.203129 0 1.848961-0.598959 3.385421-0.585939 1.523439-1.718752 2.330732-1.119794 0.794272-2.500004 0.794272-1.002605 0-1.875002-0.442709-0.651042-0.338542-1.367189-1.158856zm0-1.315105q1.119793 1.588543 2.395836 1.588543 0.703126 0 1.158856-0.742188 0.677084-1.093751 0.677084-4.166672 0-3.151046-0.742188-4.309901-0.494793-0.76823-1.328127-0.76823-1.315106 0-2.161461 1.901044z"/><path id="path42502" d="m111.40283 69.053268v9.531262q0 1.393231 0.26041 1.744794 0.26042 0.338542 1.05469 0.429688v0.46875h-4.96094v-1.627606q-0.8724 1.041668-1.7448 1.523439-0.87239 0.468751-1.95312 0.468751-1.02865 0-1.83594-0.625001-0.79428-0.638021-1.06771-1.484377-0.27344-0.846355-0.27344-2.955733v-4.830735q0-1.38021-0.26042-1.718752-0.24739-0.338542-1.054687-0.442709v-0.481771h4.960947v8.320323q0 1.302085 0.11718 1.679689 0.13021 0.377605 0.39063 0.572918 0.27344 0.195312 0.625 0.195312 0.46875 0 0.84636-0.247396 0.52083-0.338542 1.25-1.367189v-6.510425q0-1.38021-0.26042-1.718752-0.2474-0.338542-1.05469-0.442709v-0.481771z"/><path id="path42504" d="m119.18929 63.57149v6.705738q1.53647-1.588544 3.35938-1.588544 1.25001 0 2.35678 0.742188 1.10677 0.729168 1.73177 2.083336 0.625 1.354169 0.625 3.125004 0 1.99219-0.79427 3.619796-0.79427 1.627607-2.1224 2.486983-1.32813 0.846355-3.03386 0.846355-0.98958 0-1.75781-0.3125-0.76823-0.312501-1.51042-1.015627l-2.01823 1.315106h-0.44271v-15.48179q0-1.054689-0.0911-1.302085-0.1302-0.364584-0.41666-0.533855-0.27344-0.182292-0.9375-0.208334v-0.481771zm0 7.864593v5.416674q0 1.653648 0.0781 2.109377 0.13021 0.76823 0.625 1.250002 0.49479 0.468751 1.26302 0.468751 0.66407 0 1.13282-0.377605 0.48177-0.377605 0.79427-1.497398 0.32552-1.119793 0.32552-4.036463 0-2.799483-0.70313-3.841151-0.50781-0.755209-1.36718-0.755209-1.1198 0-2.14845 1.263022z"/><path id="path42506" d="m134.07212 63.57149v15.130227q0 1.289064 0.29948 1.653648 0.29948 0.351563 1.17188 0.403647v0.46875h-6.57553v-0.46875q0.80729-0.02604 1.19792-0.468751 0.26041-0.29948 0.26041-1.588544v-12.604182q0-1.276044-0.29948-1.627606-0.29948-0.364584-1.15885-0.416668v-0.481771z"/><path id="path42508" d="m139.64505 63.154823q0.84635 0 1.43229 0.598959 0.58594 0.585938 0.58594 1.419272 0 0.833335-0.59896 1.419273-0.58594 0.585938-1.41927 0.585938-0.83334 0-1.41928-0.585938-0.58593-0.585938-0.58593-1.419273 0-0.833334 0.58593-1.419272 0.58594-0.598959 1.41928-0.598959zm1.82292 5.898445v9.648449q0 1.289064 0.29948 1.653648 0.29948 0.351563 1.17187 0.403647v0.46875h-6.57553v-0.46875q0.8073-0.02604 1.19792-0.468751 0.26042-0.29948 0.26042-1.588544v-7.109384q0-1.289064-0.29948-1.640627-0.29948-0.364583-1.15886-0.416667v-0.481771z"/><path id="path42510" d="m154.05913 78.089737 0.40365 0.312501q-0.85938 1.614585-2.14844 2.408857-1.27605 0.781251-2.72136 0.781251-2.4349 0-3.89323-1.83594-1.45834-1.83594-1.45834-4.414068 0-2.486982 1.32813-4.375005 1.60156-2.278649 4.41407-2.278649 1.88802 0 2.99479 0.950522 1.11979 0.950522 1.11979 2.122398 0 0.742189-0.45573 1.184898-0.4427 0.442709-1.17187 0.442709-0.76823 0-1.27605-0.507813-0.49479-0.507814-0.61198-1.809899-0.0781-0.820313-0.3776-1.145834-0.29948-0.325522-0.70313-0.325522-0.625 0-1.06771 0.664064-0.67708 1.002605-0.67708 3.07292 0 1.718752 0.54688 3.294275 0.54687 1.562502 1.49739 2.330732 0.71615 0.559897 1.69271 0.559897 0.63803 0 1.21094-0.29948 0.57292-0.299479 1.35417-1.132814z"/><path id="path42512" d="m162.67893 79.430885q-2.22656 1.966148-3.9974 1.966148-1.04166 0-1.73177-0.677084-0.6901-0.690105-0.6901-1.718752 0-1.393231 1.19791-2.500003 1.19792-1.119793 5.22136-2.968754v-1.22396q0-1.38021-0.15625-1.731773-0.14323-0.364584-0.55989-0.625001-0.41667-0.273438-0.9375-0.273438-0.84636 0-1.39323 0.377605-0.33855 0.234375-0.33855 0.546876 0 0.273438 0.36459 0.677084 0.49479 0.559897 0.49479 1.080731 0 0.638021-0.48177 1.093751-0.46875 0.442709-1.23698 0.442709-0.82032 0-1.38021-0.494793-0.54688-0.494792-0.54688-1.158855 0-0.937501 0.74219-1.783857 0.74219-0.859376 2.07031-1.315105 1.32813-0.45573 2.76043-0.45573 1.73177 0 2.73437 0.742188 1.01563 0.729168 1.31511 1.588544 0.18229 0.546876 0.18229 2.513024v4.726568q0 0.833335 0.0651 1.054689 0.0651 0.208334 0.19531 0.312501 0.13021 0.104166 0.29948 0.104166 0.33854 0 0.6901-0.481771l0.39063 0.3125q-0.65104 0.963543-1.35417 1.406252-0.69011 0.429688-1.57552 0.429688-1.04167 0-1.62761-0.481771-0.58594-0.494792-0.71615-1.484377zm0-0.950522v-4.075526q-1.57552 0.92448-2.34375 1.979169-0.50781 0.703126-0.50781 1.419273 0 0.598959 0.42969 1.054689 0.32552 0.351563 0.91146 0.351563 0.65104 0 1.51041-0.729168z"/><path id="path42514" d="m172.22321 63.154823q0.84636 0 1.43229 0.598959 0.58594 0.585938 0.58594 1.419272 0 0.833335-0.59896 1.419273-0.58594 0.585938-1.41927 0.585938t-1.41927-0.585938-0.58594-1.419273q0-0.833334 0.58594-1.419272 0.58594-0.598959 1.41927-0.598959zm1.82292 5.898445v9.648449q0 1.289064 0.29948 1.653648 0.29948 0.351563 1.17188 0.403647v0.46875h-6.57553v-0.46875q0.80729-0.02604 1.19791-0.468751 0.26042-0.29948 0.26042-1.588544v-7.109384q0-1.289064-0.29948-1.640627-0.29948-0.364583-1.15885-0.416667v-0.481771z"/><path id="path42516" d="m181.67635 69.053268v1.575522q0.9375-1.015626 1.79688-1.471356 0.85937-0.46875 1.84896-0.46875 1.1849 0 1.96615 0.664063 0.78125 0.651043 1.04166 1.627606 0.20834 0.742189 0.20834 2.851567v4.739589q0 1.406252 0.24739 1.757815 0.26042 0.338542 1.06771 0.429688v0.46875h-6.15886v-0.46875q0.69011-0.09115 0.98959-0.572918 0.20833-0.325521 0.20833-1.614585v-5.416674q0-1.497397-0.11719-1.888023-0.11718-0.390625-0.40364-0.598959-0.27344-0.221354-0.61198-0.221354-1.1198 0-2.08334 1.601564v6.523446q0 1.367189 0.2474 1.731773 0.26041 0.364584 0.95052 0.45573v0.46875h-6.15886v-0.46875q0.76823-0.07813 1.09375-0.494793 0.22135-0.286458 0.22135-1.69271v-6.875009q0-1.38021-0.26041-1.718752-0.2474-0.338542-1.05469-0.442709v-0.481771z"/></g></g></svg>
