@@ -16,6 +16,11 @@ The method, the freshness contract and the severity model live in
 flags:check` → visual check in the running app → update this file → commit → PR → squash-merge →
 `npm run live:check` → next country.
 
+## Current owner direction — Asian countries outside Southeast Asia
+
+**2026-09-12 — priority update from the repository owner.** Southeast Asia is complete. Continue the standing audit with **Asian countries outside Southeast Asia** before resuming the remaining Europe and then the rest-of-world queue. Begin with **Afghanistan (`AF`)**, the first untreated Asian country in the existing queue, then work through the remaining untreated Asian countries one at a time. This supplements the original regional sequence; every other standing rule remains unchanged: evidence first, one country per PR, update this ledger in the same commit, merge, and confirm the production build is live before starting the next country.
+
+
 ---
 
 ## Baseline as measured on 2026-09-11 (commit `c631c65`, then live)
