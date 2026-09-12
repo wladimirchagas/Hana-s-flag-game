@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 53 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 54 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -104,6 +104,7 @@ forgotten; it is tracked here.
 | 🇨🇾 Cyprus | `#1368` | 0 → 6 | **56 / 56** | **Absent from the dataset entirely; a general election in May 2026 had replaced three parties with two** |
 | 🇬🇪 Georgia | `#1369` | 3 → 4 | 101 / 150 (49 vacant) | **Two of three entries held no seats after 49 opposition mandates were revoked; the three parties that do sit were missing** |
 | 🇮🇳 India | `#1370` | 4 → 43 | 536 / 543 | **Thirty-nine seated parties missing; the TMC had lost 20 MPs to a new NDA party and the DMK's count was its alliance's** |
+| 🇮🇱 Israel | `#1371` | 3 → 15 | **120 / 120** | **Ten factions missing; the coalition and the government had come apart in 2025 and neither was modelled** |
 
 ---
 
@@ -2003,6 +2004,57 @@ and are declared. All 42 were montage-verified.
 
 ---
 
+### 🇮🇱 Israel — audited 2026-09-12
+
+Israel had **three** parties against a 120-seat Knesset — 62 seats modelled, **58 missing**. Ten
+factions were absent, and one of the three present was a party that no longer sits under that name.
+
+The Knesset, 120 seats: **Government 60** — Likud 32, Shas 11, Religious Zionist Party 7, Otzma
+Yehudit 6, New Hope 4 — **Opposition 60** — Yesh Atid 24, National Unity 8, UTJ 7, Yisrael Beiteinu
+6, Ra'am 5, Hadash–Ta'al 5, Labor 4, Noam 1.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-299 | **S1** | coverage | **3 parties, 62 / 120** | **15 parties, 120 / 120** | Shas, the Religious Zionist Party, Otzma Yehudit, New Hope, UTJ (as Agudat Yisrael + Degel HaTorah), Yisrael Beiteinu, Ra'am, Hadash, Ta'al, Labor and Noam were all absent |
+| PP-300 | **S1** | identity / `seats` | **`IL-BLUE-WHITE`, Blue and White, 6 seats** | **National Unity, 8 seats** | The Knesset faction is Blue and White–National Unity and holds 8. Blue and White as such no longer contests; the entry was renamed rather than kept alongside |
+| PP-301 | **S1** | `inPower` | only Likud | **the five coalition parties** | Four more parties sustain the government and none was marked in power |
+| PP-302 | **S2** | `inExecutive` | absent | **`true` on 4, `false` on Shas** | See below — this is the sharpest case of the distinction in the sweep so far |
+| PP-303 | **S2** | `leader` | Blue and White's **Gadi Eisenkot** | *(entry replaced)*; National Unity's leader is **Benny Gantz** | Eisenkot left National Unity in 2025; he was recorded as leading a faction that no longer exists under that name |
+| PP-304 | **S3** | structure | — | **`IL-COALITION`, `IL-UTJ`, `IL-HADASH-TAAL` added** | Israel's chamber is built out of joint lists; without them the two Haredi parties and the two Arab parties read as unrelated |
+| PP-305 | **S3** | `logo` | — | **two orphan files deleted** | `il/blue-white.svg` and `il/yesh-atid.svg`, superseded by the renamed entry and by the current Yesh Atid wordmark |
+
+**The government and the coalition are not the same set, and 2025 pulled them apart.** The
+thirty-seventh government's own member list records **UTJ leaving on 15 July 2025**, **Shas on 17
+July 2025** — with the explicit note that Shas *"exited the government, though it remains part of the
+coalition"* — **Noam leaving in March 2025**, and **Otzma Yehudit returning on 19 March 2025** after
+its own January departure. So:
+
+* **`inPower` + `inExecutive`**: Likud, the Religious Zionist Party, Otzma Yehudit, New Hope.
+* **`inPower`, `inExecutive: false`**: **Shas** — in the coalition, holding no ministry. This is the
+  confidence-and-supply shape the dataset already uses for Cyprus's DIKO, arrived at from the
+  opposite direction: a party that *had* the ministries and gave them up.
+* **Neither**: UTJ and Noam, which the Knesset now lists on the **opposition** side.
+
+A dataset that only knew "Likud governs" would have missed all of that.
+
+**Joint lists are modelled as their component parties, not as the list.** United Torah Judaism's 7
+seats are entered as **Agudat Yisrael 4 + Degel HaTorah 3**, and Hadash–Ta'al's 5 as **Hadash 3 +
+Ta'al 2**, because the Knesset's own composition lists them that way — the same "a group is not a
+party" treatment already applied to France, Czechia, Armenia and Bangladesh. The alliances survive as
+coalition entries so the pairing is still visible.
+
+**Documented gap — none.** Israel is the **twelfth country in this sweep to reconcile exactly**:
+60 + 60 = 120. (One of Hadash's three seats is held by an independent rather than by Maki, its
+dominant component; that is recorded in the coalition note rather than modelled as a fourth tier.)
+
+**Two parties are filed `other`.** Ra'am's article gives an ideology but no left-right position, and
+Ta'al's cited position is "big tent", which is not a point on the axis.
+
+Eight logos are on Commons under free licences; seven are non-free files on English Wikipedia and are
+declared. All fifteen were montage-verified — every one is the party's own Hebrew or Arabic wordmark.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2216,7 +2268,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `IN` India — merged
 - [ ] `IR` Iran
 - [ ] `IQ` Iraq
-- [ ] `IL` Israel
+- [x] `IL` Israel — merged
 - [ ] `JM` Jamaica
 - [ ] `JP` Japan
 - [ ] `JO` Jordan
