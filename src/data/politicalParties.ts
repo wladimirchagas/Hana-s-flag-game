@@ -11078,60 +11078,71 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "US": [
     {
-      "id": "US-DEM",
-      "country": "US",
-      "shortName": "Democratic",
-      "name": "Democratic Party",
-      "nameEn": "Democratic Party",
-      "logo": "party-logos/us/dem.svg",
-      "sha256": "adc44cd1733b002c1bc4b7883bdbfa0e32812ee9a9f7a1dcdcb89f8c229538a5",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Democratic_Party_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Liberalism", "Progressivism", "Social liberalism"],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
-      "founded": 1828,
-      "leader": "Kamala Harris",
-      "leaderTitle": "President (2025–present)",
-      "inPower": true,
-      "inExecutive": true,
-      "timeInPower": "2025-present",
-      "seats": 222,
-      "seatsTotal": 435,
-      "chamberName": "House of Representatives",
-      "sources": [
-        {
-          "title": "Democratic Party (United States) - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(United_States)"
-        }
-      ]
-    },
-    {
       "id": "US-REP",
       "country": "US",
       "shortName": "Republican",
       "name": "Republican Party",
-      "nameEn": "Republican Party",
       "logo": "party-logos/us/rep.svg",
       "sha256": "d8242a695ee0c5a081c973ae71aa47c75c1efdf831c6a8ce93299640eeeac5ee",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Republican_Party_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Conservatism", "Right-wing populism", "Libertarianism"],
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:GOP_logo_%28positive%29.svg",
+      "ideology": [
+        "Right-wing populism",
+        "Conservatism"
+      ],
       "ideologyPosition": "right",
-      "positionRaw": "Centre-right",
+      "positionRaw": "Right-wing to far-right",
       "founded": 1854,
       "leader": "Donald Trump",
-      "leaderTitle": "President (2025–present)",
+      "leaderTitle": "U.S. President",
       "inPower": true,
       "inExecutive": true,
-      "timeInPower": "2025-present",
-      "seats": 213,
+      "timeInPower": "In the White House since Donald Trump's second inauguration on 20 January 2025, with the House majority in the 119th Congress.",
+      "seats": 218,
       "seatsTotal": 435,
       "chamberName": "House of Representatives",
       "sources": [
         {
-          "title": "Republican Party (United States) - Wikipedia",
+          "title": "Republican Party (United States) — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Republican_Party_(United_States)"
+        },
+        {
+          "title": "United States House of Representatives — Wikipedia: 119th Congress, 435 voting members — Majority 219 (Republican 218 + 1 independent who caucuses with them), Minority 214 (Democratic), 2 vacancies",
+          "url": "https://en.wikipedia.org/wiki/United_States_House_of_Representatives"
+        },
+        {
+          "title": "President of the United States — Wikipedia (Donald Trump, in office since January 20, 2025)",
+          "url": "https://en.wikipedia.org/wiki/President_of_the_United_States"
+        }
+      ]
+    },
+    {
+      "id": "US-DEM",
+      "country": "US",
+      "shortName": "Democratic",
+      "name": "Democratic Party",
+      "logo": "party-logos/us/dem.svg",
+      "sha256": "4bdf2e1db1c8485587436fe481c49d5f053b9ac31a1a799fcb7d9afb807424f1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:US_Democratic_Party_2025_logo_%28positive%29.svg",
+      "ideology": [
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1828,
+      "leader": "Ken Martin",
+      "leaderTitle": "Chair of the Democratic National Committee",
+      "inPower": false,
+      "seats": 214,
+      "seatsTotal": 435,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Democratic Party (United States) — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(United_States)"
+        },
+        {
+          "title": "United States House of Representatives — Wikipedia: 119th Congress, 435 voting members — Majority 219 (Republican 218 + 1 independent who caucuses with them), Minority 214 (Democratic), 2 vacancies",
+          "url": "https://en.wikipedia.org/wiki/United_States_House_of_Representatives"
         }
       ]
     }
