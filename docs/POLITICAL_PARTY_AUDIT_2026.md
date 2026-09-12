@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 60 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 61 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -110,7 +110,8 @@ forgotten; it is tracked here.
 | 🇯🇴 Jordan | `#1377` | 0 → 12 | 99 / 138 (39 independents) | **Absent entirely; the Islamic Action Front had been renamed and a branch's emblem was nearly bundled as the party's** |
 | 🇯🇵 Japan | `#1378` | 9 → 9 | 460 / 465 (5 unaffiliated) | Best-maintained entry so far; `inExecutive` absent, Ishin's date from the previous cabinet, one seat double-counted |
 | 🇰🇿 Kazakhstan | `#1379` | 0 → 5 | **145 / 145** | **Absent entirely; the bicameral parliament was replaced by a unicameral Kurultai on 1 July 2026** |
-| 🇰🇷 South Korea | *(see PR)* | 7 → 7 | 291 / 300 (8 independents, 1 vacant) | Accurate on coverage; `inExecutive` absent though the DP holds the presidency |
+| 🇰🇷 South Korea | `#1380` | 7 → 7 | 291 / 300 (8 independents, 1 vacant) | Accurate on coverage; `inExecutive` absent though the DP holds the presidency |
+| 🇰🇼 Kuwait | *(see PR)* | — | — | **Out of scope — political parties are illegal and the Assembly has been suspended since May 2024** |
 
 ---
 
@@ -2295,6 +2296,36 @@ noted here for a later cross-country pass rather than fixed inside a single coun
 
 ---
 
+### 🇰🇼 Kuwait — audited 2026-09-12 — out of scope
+
+**Kuwait is not in the dataset and must not be added.** Two independent reasons, either of which
+would be sufficient:
+
+1. **Political parties are not legal in Kuwait.** The National Assembly's own article states it
+   plainly — "while political parties are not legal in Kuwait, a number of political factions have
+   existed". Candidates contest elections as individuals under a single non-transferable vote, and
+   the groupings that form afterwards (the liberal bloc, the Shaabi populist bloc, and others) are
+   informal parliamentary factions, not registered parties.
+2. **The Assembly has been suspended since 10 May 2024**, for a four-year constitutional
+   re-evaluation. Its own infobox gives the term length as "Four years (currently suspended)" and
+   the article describes it in the past tense. There is no sitting chamber to hold seats in.
+
+| ID | Sev | Verdict | Evidence |
+|---|---|---|---|
+| PP-323 | — | **Out of scope — no entry** | No legal parties; chamber suspended since 10 May 2024 |
+
+This is the **Bahrain determination, only stronger**. Bahrain's chamber sits but seats 40
+independents because its law permits "political societies" rather than parties; Kuwait's law
+permits neither, and its chamber does not currently sit at all. As with Bahrain and Afghanistan,
+this is not a judgement that Kuwaiti political life does not exist — it is that the Learn-mode
+grid represents *parties holding seats in a functioning chamber*, and neither half of that is
+sourceable here.
+
+**Revisit** if the suspension ends and a chamber is returned, or if Kuwait legalises political
+parties.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2517,7 +2548,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `KI` Kiribati
 - [ ] `KP` North Korea
 - [x] `KR` South Korea — merged
-- [ ] `KW` Kuwait
+- [x] `KW` Kuwait — merged (out of scope)
 - [ ] `KG` Kyrgyzstan
 - [ ] `LB` Lebanon
 - [ ] `LS` Lesotho
