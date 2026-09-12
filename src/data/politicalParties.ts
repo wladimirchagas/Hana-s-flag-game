@@ -1728,358 +1728,325 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "AZ": [
     {
-      "id": "AZ-YAP",
-      "country": "AZ",
-      "shortName": "YAP",
-      "name": "Yeni Azərbaycan Partiyası",
-      "nameEn": "New Azerbaijan Party",
-      "logo": "party-logos/az/yap.svg",
-      "sha256": "ab75266be4fa916125e365d5bd6e8efc55fa1d1c7c88b94348ad3a739cbdfe08",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_New_Azerbaijan_Party.svg",
-      "licenceNote": "Non-free logo: the New Azerbaijan Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
-      "ideology": [
-        "Conservatism",
-        "Statism",
-        "Social market economy",
-        "Azerbaijani nationalism"
+      id: "AZ-YAP",
+      country: "AZ",
+      shortName: "YAP",
+      name: "Yeni Azərbaycan Partiyası",
+      nameEn: "New Azerbaijan Party",
+      logo: "party-logos/az/yap.svg",
+      sha256: "ab75266be4fa916125e365d5bd6e8efc55fa1d1c7c88b94348ad3a739cbdfe08",
+      logoSourceUrl: "https://en.wikipedia.org/wiki/File:Logo_of_the_New_Azerbaijan_Party.svg",
+      licenceNote: "Non-free logo: the New Azerbaijan Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons.",
+      ideology: ["Azerbaijanism", "Conservatism", "Social justice"],
+      ideologyPosition: "centre-right",
+      positionRaw: "Centre-right",
+      founded: 1992,
+      leader: "Ilham Aliyev",
+      leaderTitle: "Chairman",
+      inPower: true,
+      inExecutive: true,
+      timeInPower: "Since 1993",
+      seats: 68,
+      seatsTotal: 125,
+      chamberName: "National Assembly",
+      sources: [
+        {
+          title: "New Azerbaijan Party — official programme and principles",
+          url: "https://yap.org.az/en/view/pages/5/",
+        },
+        {
+          title: "Inter-Parliamentary Union (IPU Parline) — Azerbaijan National Assembly election, 1 September 2024",
+          url: "https://data.ipu.org/",
+        },
+        {
+          title: "EPDE final report on Azerbaijan’s 2024 snap parliamentary election",
+          url: "https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf",
+        },
+        {
+          title: "Europe Elects — Azerbaijan national parliamentary composition",
+          url: "https://europeelects.eu/azerbaijan/",
+        }
       ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 1992,
-      "leader": "Ilham Aliyev",
-      "leaderTitle": "Chairman",
-      "inPower": true,
-      "inExecutive": true,
-      "timeInPower": "1995–present",
-      "seats": 68,
-      "seatsTotal": 125,
-      "chamberName": "National Assembly",
-      "sources": [
-        {
-          "title": "New Azerbaijan Party – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/New_Azerbaijan_Party"
-        },
-        {
-          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
-        }
-      ]
     },
     {
-      "id": "AZ-VHP",
-      "country": "AZ",
-      "shortName": "VHP",
-      "name": "Vətəndaş Həmrəyliyi Partiyası",
-      "nameEn": "Civic Solidarity Party",
-      "logo": "party-logos/az/vhp.svg",
-      "sha256": "0ff931bcb615793d2783fd1570970dce423c0eb5393dfdbb96d36abec7c87fc2",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_Civic_Solidarity_Party.svg",
-      "ideology": [
-        "National conservatism",
-        "Populism"
+      id: "AZ-CSP",
+      country: "AZ",
+      shortName: "VHP",
+      name: "Vətəndaş Həmrəyliyi Partiyası",
+      nameEn: "Civic Solidarity Party",
+      noImageReason: "No locally verified Civic Solidarity Party emblem was packaged in this audit. A logo should be added when broadly sourced and licence-checked, but it is not a condition of including a seated party.",
+      ideology: ["National conservatism","Populism"],
+      ideologyPosition: "right",
+      inPower: false,
+      seats: 3,
+      seatsTotal: 125,
+      chamberName: "National Assembly",
+      sources: [
+        {
+          title: "Inter-Parliamentary Union (IPU Parline) — Azerbaijan National Assembly election, 1 September 2024",
+          url: "https://data.ipu.org/",
+        },
+        {
+          title: "EPDE final report on Azerbaijan’s 2024 snap parliamentary election",
+          url: "https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf",
+        },
+        {
+          title: "Europe Elects — Azerbaijan national parliamentary composition",
+          url: "https://europeelects.eu/azerbaijan/",
+        }
       ],
-      "ideologyPosition": "right",
-      "positionRaw": "Right-wing",
-      "founded": 1992,
-      "leader": "Sabir Rustamkhanli",
-      "leaderTitle": "Leader",
-      "inPower": false,
-      "seats": 3,
-      "seatsTotal": 125,
-      "chamberName": "National Assembly",
-      "sources": [
+    }
+    {
+      id: "AZ-JLD",
+      country: "AZ",
+      shortName: "ƏHD",
+      name: "Ədalət, Hüquq, Demokratiya Partiyası",
+      nameEn: "Justice, Law, Democracy Party",
+      noImageReason: "No locally verified Justice, Law, Democracy Party emblem was packaged in this audit. A logo should be added when broadly sourced and licence-checked, but it is not a condition of including a seated party.",
+      ideology: ["Azerbaijani irredentism"],
+      ideologyPosition: "centre-right",
+      inPower: false,
+      seats: 2,
+      seatsTotal: 125,
+      chamberName: "National Assembly",
+      sources: [
         {
-          "title": "Civic Solidarity Party – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Civic_Solidarity_Party"
+          title: "Inter-Parliamentary Union (IPU Parline) — Azerbaijan National Assembly election, 1 September 2024",
+          url: "https://data.ipu.org/",
         },
         {
-          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+          title: "EPDE final report on Azerbaijan’s 2024 snap parliamentary election",
+          url: "https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf",
+        },
+        {
+          title: "Europe Elects — Azerbaijan national parliamentary composition",
+          url: "https://europeelects.eu/azerbaijan/",
         }
-      ]
-    },
-    {
-      "id": "AZ-AHDP",
-      "country": "AZ",
-      "shortName": "ƏHD",
-      "name": "Ədalət, Hüquq, Demokratiya Partiyası",
-      "nameEn": "Justice, Law, Democracy Party",
-      "logo": "party-logos/az/ahdp.png",
-      "sha256": "0f7ee93b25f24babc9f4b4f9aed8a2af1dc15227229d0367b03d704c6a10487f",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Justice%2C_Law%2C_Democracy_Party.png",
-      "licenceNote": "Non-free logo: the Justice, Law, Democracy Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
-      "ideology": [
-        "Social conservatism",
-        "Economic liberalism",
-        "Azerbaijani irredentism"
       ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right to right-wing",
-      "founded": 2004,
-      "leader": "Gudrat Hasanguliyev",
-      "leaderTitle": "Chairman",
-      "inPower": false,
-      "seats": 2,
-      "seatsTotal": 125,
-      "chamberName": "National Assembly",
-      "sources": [
+    }
+    {
+      id: "AZ-REAL",
+      country: "AZ",
+      shortName: "REAL",
+      name: "Respublikaçı Alternativ Partiyası",
+      nameEn: "Republican Alternative Party",
+      noImageReason: "No locally verified Republican Alternative Party emblem was packaged in this audit. A logo should be added when broadly sourced and licence-checked, but it is not a condition of including a seated party.",
+      ideology: ["Republicanism","Liberal democracy","Secularism","Pro-Europeanism"],
+      ideologyPosition: "centre",
+      inPower: false,
+      seats: 1,
+      seatsTotal: 125,
+      chamberName: "National Assembly",
+      sources: [
         {
-          "title": "Justice, Law, Democracy Party – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Justice,_Law,_Democracy_Party"
+          title: "Inter-Parliamentary Union (IPU Parline) — Azerbaijan National Assembly election, 1 September 2024",
+          url: "https://data.ipu.org/",
         },
         {
-          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+          title: "EPDE final report on Azerbaijan’s 2024 snap parliamentary election",
+          url: "https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf",
+        },
+        {
+          title: "Europe Elects — Azerbaijan national parliamentary composition",
+          url: "https://europeelects.eu/azerbaijan/",
         }
-      ]
-    },
-    {
-      "id": "AZ-REAL",
-      "country": "AZ",
-      "shortName": "REAL",
-      "name": "Respublikaçı Alternativ Partiyası",
-      "nameEn": "Republican Alternative Party",
-      "logo": "party-logos/az/real.svg",
-      "sha256": "0ad05c9aa9e6f46c835bd4e7ed01281135e37b2de8e97ca0d004e3ca6e279b40",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_Republican_Alternative_Party.svg",
-      "ideology": [
-        "National liberalism",
-        "Secularism",
-        "Republicanism",
-        "Pro-Europeanism"
       ],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre to centre-right",
-      "founded": 2018,
-      "leader": "Natiq Jafarli",
-      "leaderTitle": "Leader",
-      "inPower": false,
-      "seats": 1,
-      "seatsTotal": 125,
-      "chamberName": "National Assembly",
-      "sources": [
+    }
+    {
+      id: "AZ-GAP",
+      country: "AZ",
+      shortName: "BAP",
+      name: "Böyük Azərbaycan Partiyası",
+      nameEn: "Great Azerbaijan Party",
+      noImageReason: "No locally verified Great Azerbaijan Party emblem was packaged in this audit. A logo should be added when broadly sourced and licence-checked, but it is not a condition of including a seated party.",
+      ideology: ["Unclassified in consulted current sources"],
+      ideologyPosition: "other",
+      inPower: false,
+      seats: 1,
+      seatsTotal: 125,
+      chamberName: "National Assembly",
+      sources: [
         {
-          "title": "Republican Alternative Party (Azerbaijan) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Republican_Alternative_Party_(Azerbaijan)"
+          title: "Inter-Parliamentary Union (IPU Parline) — Azerbaijan National Assembly election, 1 September 2024",
+          url: "https://data.ipu.org/",
         },
         {
-          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
-        }
-      ]
-    },
-    {
-      "id": "AZ-ADMP",
-      "country": "AZ",
-      "shortName": "ADMP",
-      "name": "Azərbaycan Demokratik Maarifçilik Partiyası",
-      "nameEn": "Azerbaijan Democratic Enlightenment Party",
-      "logo": "party-logos/az/admp.svg",
-      "sha256": "856d269cb4026ae60eff4e1fc57479e36109437be07181c72bf95e4665767242",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Azerbaijani_Democratic_Lumieres_Party.svg",
-      "ideology": [],
-      "ideologyPosition": "other",
-      "founded": 1995,
-      "leader": "Elşən Musayev",
-      "leaderTitle": "Leader",
-      "inPower": false,
-      "seats": 1,
-      "seatsTotal": 125,
-      "chamberName": "National Assembly",
-      "sources": [
-        {
-          "title": "Azerbaijan Democratic Enlightenment Party – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Enlightenment_Party"
+          title: "EPDE final report on Azerbaijan’s 2024 snap parliamentary election",
+          url: "https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf",
         },
         {
-          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+          title: "Europe Elects — Azerbaijan national parliamentary composition",
+          url: "https://europeelects.eu/azerbaijan/",
         }
-      ]
-    },
-    {
-      "id": "AZ-AVP",
-      "country": "AZ",
-      "shortName": "AVP",
-      "name": "Ana Vətən Partiyası",
-      "nameEn": "Motherland Party",
-      "logo": "party-logos/az/avp.png",
-      "sha256": "94132fbee72cb095ad791127128ea30397105df264ab1931860d1185f95f21b9",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Motherland_Party_(Azerbaijan).png",
-      "licenceNote": "Non-free logo: the Motherland Party emblem is a copyrighted trade mark, held on English Wikipedia under a fair-use rationale rather than on Wikimedia Commons. Bundled here at the repository owner's direction under the same non-free policy applied to football crests and passport covers, cited to its file page, and to be replaced the moment a freely-licensed file exists.",
-      "ideology": [
-        "National conservatism",
-        "Statism"
       ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 1990,
-      "inPower": false,
-      "seats": 1,
-      "seatsTotal": 125,
-      "chamberName": "National Assembly",
-      "sources": [
+    }
+    {
+      id: "AZ-MP",
+      country: "AZ",
+      shortName: "AVP",
+      name: "Ana Vətən Partiyası",
+      nameEn: "Motherland Party",
+      noImageReason: "No locally verified Motherland Party emblem was packaged in this audit. A logo should be added when broadly sourced and licence-checked, but it is not a condition of including a seated party.",
+      ideology: ["Azerbaijani nationalism","National conservatism"],
+      ideologyPosition: "right",
+      inPower: false,
+      seats: 1,
+      seatsTotal: 125,
+      chamberName: "National Assembly",
+      sources: [
         {
-          "title": "Motherland Party (Azerbaijan) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Motherland_Party_(Azerbaijan)"
+          title: "Inter-Parliamentary Union (IPU Parline) — Azerbaijan National Assembly election, 1 September 2024",
+          url: "https://data.ipu.org/",
         },
         {
-          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+          title: "EPDE final report on Azerbaijan’s 2024 snap parliamentary election",
+          url: "https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf",
+        },
+        {
+          title: "Europe Elects — Azerbaijan national parliamentary composition",
+          url: "https://europeelects.eu/azerbaijan/",
         }
-      ]
-    },
-    {
-      "id": "AZ-BQP",
-      "country": "AZ",
-      "shortName": "BQP",
-      "name": "Böyük Quruluş Partiyası",
-      "nameEn": "Great Order Party",
-      "logo": "party-logos/az/bqp.svg",
-      "sha256": "64ca4c29446113f235d6f143ed3049a990616c67ba09fd2187c2a2f7a1620917",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_Great_Order_Party.svg",
-      "ideology": [
-        "Liberalism",
-        "Liberal democracy"
       ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 2003,
-      "leader": "Fazil Mustafa",
-      "leaderTitle": "Leader",
-      "inPower": false,
-      "seats": 1,
-      "seatsTotal": 125,
-      "chamberName": "National Assembly",
-      "sources": [
+    }
+    {
+      id: "AZ-ANIP",
+      country: "AZ",
+      shortName: "AMİP",
+      name: "Azərbaycan Milli İstiqlal Partiyası",
+      nameEn: "Azerbaijan National Independence Party",
+      noImageReason: "No locally verified Azerbaijan National Independence Party emblem was packaged in this audit. A logo should be added when broadly sourced and licence-checked, but it is not a condition of including a seated party.",
+      ideology: ["Liberal conservatism"],
+      ideologyPosition: "centre-right",
+      inPower: false,
+      seats: 1,
+      seatsTotal: 125,
+      chamberName: "National Assembly",
+      sources: [
         {
-          "title": "Great Order Party – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Great_Order_Party"
+          title: "Inter-Parliamentary Union (IPU Parline) — Azerbaijan National Assembly election, 1 September 2024",
+          url: "https://data.ipu.org/",
         },
         {
-          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+          title: "EPDE final report on Azerbaijan’s 2024 snap parliamentary election",
+          url: "https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf",
+        },
+        {
+          title: "Europe Elects — Azerbaijan national parliamentary composition",
+          url: "https://europeelects.eu/azerbaijan/",
         }
-      ]
-    },
-    {
-      "id": "AZ-AMIP",
-      "country": "AZ",
-      "shortName": "AMİP",
-      "name": "Azərbaycan Milli İstiqlal Partiyası",
-      "nameEn": "Azerbaijan National Independence Party",
-      "logo": "party-logos/az/amip.svg",
-      "sha256": "b79bd1c284cbb42339b361ed685829875b7e33455d9099a5a94f9ac5fc334896",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Azerbaijan_National_Independence_Party_Logo.svg",
-      "ideology": [
-        "Liberal conservatism"
       ],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 1992,
-      "leader": "Etibar Mammadov",
-      "leaderTitle": "Party Leader",
-      "inPower": false,
-      "seats": 1,
-      "seatsTotal": 125,
-      "chamberName": "National Assembly",
-      "sources": [
+    }
+    {
+      id: "AZ-NFP",
+      country: "AZ",
+      shortName: "MCP",
+      name: "Milli Cəbhə Partiyası",
+      nameEn: "National Front Party",
+      noImageReason: "No locally verified National Front Party emblem was packaged in this audit. A logo should be added when broadly sourced and licence-checked, but it is not a condition of including a seated party.",
+      ideology: ["Azerbaijani nationalism"],
+      ideologyPosition: "right",
+      inPower: false,
+      seats: 1,
+      seatsTotal: 125,
+      chamberName: "National Assembly",
+      sources: [
         {
-          "title": "Azerbaijan National Independence Party – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Azerbaijan_National_Independence_Party"
+          title: "Inter-Parliamentary Union (IPU Parline) — Azerbaijan National Assembly election, 1 September 2024",
+          url: "https://data.ipu.org/",
         },
         {
-          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+          title: "EPDE final report on Azerbaijan’s 2024 snap parliamentary election",
+          url: "https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf",
+        },
+        {
+          title: "Europe Elects — Azerbaijan national parliamentary composition",
+          url: "https://europeelects.eu/azerbaijan/",
         }
-      ]
-    },
-    {
-      "id": "AZ-MCP",
-      "country": "AZ",
-      "shortName": "MCP",
-      "name": "Milli Cəbhə Partiyası",
-      "nameEn": "National Front Party",
-      "logo": "party-logos/az/mcp.svg",
-      "sha256": "2325450b9294f33e69f0675562ddbd4b027fda31b9d27b5f5bfee6ee859efdc1",
-      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Milli_C%C9%99bh%C9%99_Partiyas%C4%B1n%C4%B1n_loqosu.svg",
-      "ideology": [
-        "Azerbaijani nationalism",
-        "Social democracy"
       ],
-      "ideologyPosition": "other",
-      "founded": 2020,
-      "leader": "Razi Nurullayev",
-      "leaderTitle": "Leader",
-      "inPower": false,
-      "seats": 1,
-      "seatsTotal": 125,
-      "chamberName": "National Assembly",
-      "sources": [
+    }
+    {
+      id: "AZ-DRP",
+      country: "AZ",
+      shortName: "DİP",
+      name: "Demokratik İslahatlar Partiyası",
+      nameEn: "Democratic Reforms Party",
+      noImageReason: "No locally verified Democratic Reforms Party emblem was packaged in this audit. A logo should be added when broadly sourced and licence-checked, but it is not a condition of including a seated party.",
+      ideology: ["Reformism"],
+      ideologyPosition: "centre",
+      inPower: false,
+      seats: 1,
+      seatsTotal: 125,
+      chamberName: "National Assembly",
+      sources: [
         {
-          "title": "National Front Party (Azerbaijan) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/National_Front_Party_(Azerbaijan)"
+          title: "Inter-Parliamentary Union (IPU Parline) — Azerbaijan National Assembly election, 1 September 2024",
+          url: "https://data.ipu.org/",
         },
         {
-          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+          title: "EPDE final report on Azerbaijan’s 2024 snap parliamentary election",
+          url: "https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf",
+        },
+        {
+          title: "Europe Elects — Azerbaijan national parliamentary composition",
+          url: "https://europeelects.eu/azerbaijan/",
         }
-      ]
-    },
-    {
-      "id": "AZ-DIP",
-      "country": "AZ",
-      "shortName": "DİP",
-      "name": "Demokratik İslahatlar Partiyası",
-      "nameEn": "Democratic Reforms Party",
-      "noImageReason": "Searched for a Democratic Reforms Party emblem and found none that can be bundled: Wikimedia Commons holds no logo file for it, Wikidata records no P154 logo image on its item under Azerbaijan (P17), and its English Wikipedia article's infobox carries no logo parameter at all. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
-      "ideology": [
-        "Reformism"
       ],
-      "ideologyPosition": "other",
-      "founded": 2005,
-      "leader": "Asim Mollazade",
-      "leaderTitle": "Leader",
-      "inPower": false,
-      "seats": 1,
-      "seatsTotal": 125,
-      "chamberName": "National Assembly",
-      "sources": [
-        {
-          "title": "Democratic Reforms Party (Azerbaijan) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Democratic_Reforms_Party_(Azerbaijan)"
-        },
-        {
-          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
-        }
-      ]
-    },
+    }
     {
-      "id": "AZ-BAP",
-      "country": "AZ",
-      "shortName": "BAP",
-      "name": "Böyük Azərbaycan Partiyası",
-      "nameEn": "Great Azerbaijan Party",
-      "noImageReason": "Searched for a Great Azerbaijan Party emblem and found none that can be bundled: Wikimedia Commons holds no logo file for it, Wikidata records no P154 logo image on its item under Azerbaijan (P17), and it has no English Wikipedia article at all — only a row in the List of political parties in Azerbaijan, which carries no emblem. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
-      "ideology": [],
-      "ideologyPosition": "other",
-      "leader": "Elşad Musayev",
-      "leaderTitle": "Leader",
-      "inPower": false,
-      "seats": 1,
-      "seatsTotal": 125,
-      "chamberName": "National Assembly",
-      "sources": [
+      id: "AZ-ADEP",
+      country: "AZ",
+      shortName: "ADMP",
+      name: "Azərbaycan Demokratik Maarifçilik Partiyası",
+      nameEn: "Azerbaijan Democratic Enlightenment Party",
+      noImageReason: "No locally verified Azerbaijan Democratic Enlightenment Party emblem was packaged in this audit. A logo should be added when broadly sourced and licence-checked, but it is not a condition of including a seated party.",
+      ideology: ["Conservatism"],
+      ideologyPosition: "centre-right",
+      inPower: false,
+      seats: 1,
+      seatsTotal: 125,
+      chamberName: "National Assembly",
+      sources: [
         {
-          "title": "List of political parties in Azerbaijan – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/List_of_political_parties_in_Azerbaijan"
+          title: "Inter-Parliamentary Union (IPU Parline) — Azerbaijan National Assembly election, 1 September 2024",
+          url: "https://data.ipu.org/",
         },
         {
-          "title": "National Assembly (Azerbaijan) — Wikipedia: composition after the 1 September 2024 election",
-          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)"
+          title: "EPDE final report on Azerbaijan’s 2024 snap parliamentary election",
+          url: "https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf",
+        },
+        {
+          title: "Europe Elects — Azerbaijan national parliamentary composition",
+          url: "https://europeelects.eu/azerbaijan/",
         }
-      ]
+      ],
+    }
+    {
+      id: "AZ-GOP",
+      country: "AZ",
+      shortName: "BQP",
+      name: "Böyük Quruluş Partiyası",
+      nameEn: "Great Order Party",
+      noImageReason: "No locally verified Great Order Party emblem was packaged in this audit. A logo should be added when broadly sourced and licence-checked, but it is not a condition of including a seated party.",
+      ideology: ["Liberalism","Liberal democracy"],
+      ideologyPosition: "centre",
+      inPower: false,
+      seats: 1,
+      seatsTotal: 125,
+      chamberName: "National Assembly",
+      sources: [
+        {
+          title: "Inter-Parliamentary Union (IPU Parline) — Azerbaijan National Assembly election, 1 September 2024",
+          url: "https://data.ipu.org/",
+        },
+        {
+          title: "EPDE final report on Azerbaijan’s 2024 snap parliamentary election",
+          url: "https://epde.org/wp-content/uploads/2024/09/AZ-Snap-Election-Final-Report_Web.pdf",
+        },
+        {
+          title: "Europe Elects — Azerbaijan national parliamentary composition",
+          url: "https://europeelects.eu/azerbaijan/",
+        }
+      ],
     }
   ],
   "AR": [
