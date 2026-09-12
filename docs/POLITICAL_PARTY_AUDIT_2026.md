@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 39 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 40 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -85,6 +85,7 @@ forgotten; it is tracked here.
 | 🇩🇰 Denmark | `#1350` | 7 → 12 | 171 / 179 | **FABRICATED PARTY — 50 seats for one that does not exist** |
 | 🇮🇪 Ireland | `#1351` | 3 → 10 | 159 / 174 | **BROKEN IMAGES — every logo was an HTML error page** |
 | 🇵🇹 Portugal | `#1352` | 2 → 10 | **230 / 230** | **WRONG — the opposition marked as governing, 62 seats out** |
+| 🇱🇺 Luxembourg | `#1354` | 3 → 7 | **60 / 60** | **WRONG — two of three leaders lead a different party** |
 
 ---
 
@@ -1425,6 +1426,41 @@ files held on English Wikipedia and are declared with `licenceNote`s. All ten we
 
 ---
 
+### 🇱🇺 Luxembourg — audited 2026-09-12
+
+Luxembourg's three parties carried **three leaders, and two of them lead a different party**. `LU-CSV`
+was led by **Claude Haagen**, an LSAP politician, and `LU-LSAP` by **François Benoy**, a co-leader of
+the Greens — the same wrong-party-leader defect found in Colombia, the Netherlands and Denmark, but
+twice in one country of three entries. Every seat figure was also wrong, and the opposition's largest
+party was marked as governing.
+
+The Chamber of Deputies, 60 seats: **Government (Frieden-Bettel) 35** — CSV 21, DP 14 —
+**Opposition 25** — LSAP 12, ADR 5, Greens 4, Pirates 2, The Left 2.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-220 | **S1** | `leader` | CSV led by **Claude Haagen**; LSAP by **François Benoy** | **Luc Frieden**; **Georges Engel and Maxime Miltgen** | Haagen is an LSAP politician and Benoy a Green co-leader. Frieden has been CSV president — and prime minister — since 2023 |
+| PP-221 | **S1** | `seats` | DP **21**, CSV **13**, LSAP **10** | **CSV 21, DP 14, LSAP 12** | The Chamber's own composition after the 8 October 2023 election. The 21 belonged to the CSV, not the DP — the two largest parties' figures were swapped |
+| PP-222 | **S1** | `inPower` | all three true | **CSV and DP true and `inExecutive`; LSAP false** | The LSAP left government in 2023 and is the largest opposition party |
+| PP-223 | **S3** | coverage | 3 parties, 44 of 60 | **7 parties, 60 of 60 exactly** | Four seated parties were absent: the ADR (5), the Greens (4), the Pirates (2) and The Left (2) |
+| PP-224 | **S2** | `leaderTitle` | absent | **President** (CSV), **Leader** (DP, ADR), **Presidents** (LSAP), **Co-leaders** (Greens), **Spokespersons** (Pirates) | Each party's own infobox |
+| PP-225 | **S3** | coalitions | none | **`LU-GOV`** (Frieden-Bettel, 35 of 60) | The Chamber's own Government grouping |
+
+**A leader field left deliberately empty.** Déi Lénk's infobox gives its leader as *"Collective
+leadership"* — a description, not a person — so the field is omitted, as for Ireland's PBP–Solidarity
+and Portugal's PAN.
+
+**The Pirates are `other`, not a point on the left–right axis.** Their cited position is *"Syncretic"*,
+which is what that bucket is for.
+
+**Documented gap — none.** Luxembourg is the **eighth country in this sweep to reconcile exactly**.
+
+All seven logos are on Commons and were montage-verified; the CSV, DP and LSAP files were the three
+recovered hours earlier in the cross-country broken-image sweep below, where they were Wikimedia error
+pages.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1548,7 +1584,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `IT` Italy — merged
 - [x] `NL` Netherlands — merged
 - [x] `BE` Belgium — merged
-- [ ] `LU` Luxembourg
+- [x] `LU` Luxembourg — merged
 - [ ] `CH` Switzerland
 - [ ] `AT` Austria
 - [x] `PL` Poland — merged
