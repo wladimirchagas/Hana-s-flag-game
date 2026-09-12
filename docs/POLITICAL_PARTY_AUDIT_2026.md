@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 50 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 51 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -101,6 +101,7 @@ forgotten; it is tracked here.
 | 🇧🇩 Bangladesh | `#1364` | 1 → 10 | 339 / 350 | **FABRICATED LOGO in the repo — and a whole 2026 parliament missing** |
 | 🇧🇹 Bhutan | `#1365` | 3 → 2 | **47 / 47** | **INVERTED — the governing party sat in opposition; two entries held no seats** |
 | 🇨🇳 China | `#1366` | 1 → 9 | 2,411 / 2,977 | **The ruling party was given every seat in the chamber; all eight other legal parties were missing** |
+| 🇨🇾 Cyprus | `#1367` | 0 → 6 | **56 / 56** | **Absent from the dataset entirely; a general election in May 2026 had replaced three parties with two** |
 
 ---
 
@@ -1861,6 +1862,48 @@ other legal parties, so all nine are shown.
 
 ---
 
+### 🇨🇾 Cyprus — audited 2026-09-12
+
+**Cyprus was not in the dataset at all** — a country with a fully competitive multi-party
+parliament, six parties in its chamber, and no entry. It is also one of the freshest: a general
+election was held on **24 May 2026**, three and a half months before this audit, and it changed the
+chamber substantially.
+
+The House of Representatives, **56 seats de facto**: **Government 8** — DIKO, supporting an
+independent president — **Opposition 48** — DISY 17, AKEL 15, ELAM 8, ALMA 4, ADK 4.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-279 | **S1** | coverage | **Cyprus absent from `POLITICAL_PARTIES`** | **6 parties, 56 / 56** | Every party in the chamber elected on 24 May 2026 |
+| PP-280 | **S2** | `inPower` / `inExecutive` | — | **DIKO `inPower: true`, `inExecutive: false`** | Cyprus is a full presidential system and President Christodoulides is an **independent**; the Council of Ministers' own article gives its political composition as "Independent", with support from DIKO. DIKO sustains the government but holds no portfolio |
+| PP-281 | **S3** | `seatsTotal` | — | **56, not 80** | 80 seats de jure; the 24 allocated to Turkish Cypriots have been vacant since 1964, so the chamber's own infobox gives 56 as the de facto size |
+
+**Three parties left the chamber and two entered it at this election** — EDEK, the Democratic
+Alignment and the Movement of Ecologists lost all 11 of their seats between them, while ALMA and
+Direct Democracy Cyprus won four each at their first attempt. A dataset built before May 2026 would
+have carried three parties that now hold nothing and missed two that do; adding Cyprus now avoids
+inheriting that.
+
+**The cabinet article is stale and was not used for the government/opposition split.** Its
+`opposition_parties` still lists the Movement of Ecologists and Volt — neither of which holds a seat
+— and names Averof Neofytou as an opposition leader, though DISY has been led by **Annita
+Demetriou** since 2021. The split was taken from the chamber's own (post-election) composition
+instead. Only the cabinet's *party composition* line was used from it, which is the fact it is
+authoritative for.
+
+**Documented gap — none.** Cyprus is the **eleventh country in this sweep to reconcile exactly**:
+17 + 15 + 8 + 8 + 4 + 4 = 56.
+
+**Direct Democracy Cyprus ships with no ideology list and is filed `other`.** Its article's infobox
+carries neither an ideology nor a left-right position — unsurprising for a party declared in October
+2025 and legally constituted under this name in February 2026 by the YouTuber and MEP Fidias
+Panayiotou. The array is left empty rather than filled from the party's name.
+
+Five logos are non-free files on English Wikipedia and are declared; ADK's is on Commons under CC0.
+All six were montage-verified.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2014,7 +2057,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `NO` Norway — merged
 - [x] `DK` Denmark — merged
 - [ ] `IS` Iceland
-- [ ] `CY` Cyprus
+- [x] `CY` Cyprus — merged
 - [ ] `MT` Malta
 - [ ] `LI` Liechtenstein
 - [ ] `MC` Monaco

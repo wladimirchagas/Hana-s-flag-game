@@ -19332,6 +19332,232 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "CY": [
+    {
+      "id": "CY-AKEL",
+      "country": "CY",
+      "shortName": "AKEL",
+      "name": "Ανορθωτικό Κόμμα Εργαζόμενου Λαού",
+      "nameEn": "Progressive Party of Working People",
+      "logo": "party-logos/cy/akel.svg",
+      "sha256": "e48e38c7cd128b1b69b1bde0d85b851f16e0a03b732b41625bb0c24da58b826d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Progressive_Party_of_Working_People.svg",
+      "licenceNote": "Non-free. The Progressive Party of Working People's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism",
+        "Cypriotism",
+        "Federalism",
+        "Soft Euroscepticism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 1941,
+      "leader": "Stefanos Stefanou",
+      "leaderTitle": "General Secretary",
+      "inPower": false,
+      "seats": 15,
+      "seatsTotal": 56,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Progressive Party of Working People — Wikipedia (infobox: founded 14 April 1941 as AKEL, succeeding the Communist Party of Cyprus of 1926; General Secretary Stefanos Stefanou; position left-wing to far-left)",
+          "url": "https://en.wikipedia.org/wiki/Progressive_Party_of_Working_People"
+        },
+        {
+          "title": "House of Representatives (Cyprus) — Wikipedia (56 seats de facto; political groups after the 24 May 2026 election: Government DIKO 8; Opposition DISY 17, AKEL 15, ELAM 8, ALMA 4, ADK 4)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Cyprus)"
+        },
+        {
+          "title": "2026 Cypriot legislative election — Wikipedia (24 May 2026: DISY 17, AKEL 15, ELAM 8, DIKO 8, ALMA 4, Direct Democracy Cyprus 4; EDEK, Democratic Alignment and the Movement of Ecologists lost all their seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Cypriot_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "CY-DIKO",
+      "country": "CY",
+      "shortName": "DIKO",
+      "name": "Δημοκρατικό Κόμμα",
+      "nameEn": "Democratic Party",
+      "logo": "party-logos/cy/diko.svg",
+      "sha256": "dae159efff9838d9bff848fdd2e2c55ce8a36e76dcc832b99adc8eae8796c81b",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Democratic_Party_(Cyprus).svg",
+      "licenceNote": "Non-free. The Democratic Party of Cyprus's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Centrism",
+        "Greek Cypriot nationalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1976,
+      "leader": "Nikolas Papadopoulos",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Has supported the administration of President Nikos Christodoulides since it was sworn in on 1 March 2023. The Council of Ministers is composed of independents and technocrats, so DIKO holds no portfolio of its own.",
+      "seats": 8,
+      "seatsTotal": 56,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Democratic Party (Cyprus) — Wikipedia (a centrist party founded in 1976 by Spyros Kyprianou; leader Nikolas Papadopoulos; position centre)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Cyprus)"
+        },
+        {
+          "title": "House of Representatives (Cyprus) — Wikipedia (56 seats de facto; political groups after the 24 May 2026 election: Government DIKO 8; Opposition DISY 17, AKEL 15, ELAM 8, ALMA 4, ADK 4)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Cyprus)"
+        },
+        {
+          "title": "Council of Ministers (Cyprus) — Wikipedia (the Christodoulides government, sworn in 1 March 2023: political parties \"Independent\", with support from DIKO, EDEK, Democratic Alignment and the Solidarity Movement)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Ministers_(Cyprus)"
+        }
+      ]
+    },
+    {
+      "id": "CY-ALMA",
+      "country": "CY",
+      "shortName": "ALMA",
+      "name": "ΑΛΜΑ – Πολίτες για την Κύπρο",
+      "nameEn": "ALMA – Citizens for Cyprus",
+      "logo": "party-logos/cy/alma.png",
+      "sha256": "ab0c4564fd111b403e476df951502416f319871990cce02a8bb0de51f83fd5ad",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_ALMA_%E2%80%93_Citizens_for_Cyprus.png",
+      "licenceNote": "Non-free. The ALMA – Citizens for Cyprus's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Centrism",
+        "Reformism",
+        "Anti-corruption",
+        "Pro-Europeanism",
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2025,
+      "leader": "Odysseas Michaelides",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 56,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "ALMA – Citizens for Cyprus — Wikipedia (a centrist party founded in 2025 by former Auditor General Odysseas Michaelides; entered the House for the first time in 2026 with four seats)",
+          "url": "https://en.wikipedia.org/wiki/ALMA_%E2%80%93_Citizens_for_Cyprus"
+        },
+        {
+          "title": "2026 Cypriot legislative election — Wikipedia (24 May 2026: DISY 17, AKEL 15, ELAM 8, DIKO 8, ALMA 4, Direct Democracy Cyprus 4; EDEK, Democratic Alignment and the Movement of Ecologists lost all their seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Cypriot_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "CY-ADK",
+      "country": "CY",
+      "shortName": "ADK",
+      "name": "Άμεση Δημοκρατία Κύπρου",
+      "nameEn": "Direct Democracy Cyprus",
+      "logo": "party-logos/cy/adk.png",
+      "sha256": "67455183620d3ca46dca3cdf0f25b14879973f46c33369b00838a582db093401",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:%CE%86%CE%BC%CE%B5%CF%83%CE%B7_%CE%94%CE%B7%CE%BC%CE%BF%CE%BA%CF%81%CE%B1%CF%84%CE%AF%CE%B1_%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%85_logo_official_new.png",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 2025,
+      "leader": "Fidias Panayiotou",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 56,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Direct Democracy Cyprus — Wikipedia (established by YouTuber and MEP Fidias Panayiotou, declared 16 October 2025 and legally founded under this name on 27 February 2026; the article's infobox records no ideology and no left-right position)",
+          "url": "https://en.wikipedia.org/wiki/Direct_Democracy_Cyprus"
+        },
+        {
+          "title": "2026 Cypriot legislative election — Wikipedia (24 May 2026: DISY 17, AKEL 15, ELAM 8, DIKO 8, ALMA 4, Direct Democracy Cyprus 4; EDEK, Democratic Alignment and the Movement of Ecologists lost all their seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Cypriot_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "CY-DISY",
+      "country": "CY",
+      "shortName": "DISY",
+      "name": "Δημοκρατικός Συναγερμός",
+      "nameEn": "Democratic Rally",
+      "logo": "party-logos/cy/disy.svg",
+      "sha256": "4c919453675b03e39f37b3b3a3f8cd9dc9f6a7ff218a8d971d4411f515364171",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Democratic_Rally_(Cyprus).svg",
+      "licenceNote": "Non-free. The Democratic Rally's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Christian democracy",
+        "Liberal conservatism",
+        "Pro-Europeanism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1976,
+      "leader": "Annita Demetriou",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 17,
+      "seatsTotal": 56,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Democratic Rally — Wikipedia (infobox: founded 4 July 1976; President Annita Demetriou; ideology Christian democracy, liberal conservatism, pro-Europeanism; position centre-right to right-wing; European affiliation EPP)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Rally"
+        },
+        {
+          "title": "House of Representatives (Cyprus) — Wikipedia (56 seats de facto; political groups after the 24 May 2026 election: Government DIKO 8; Opposition DISY 17, AKEL 15, ELAM 8, ALMA 4, ADK 4)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Cyprus)"
+        },
+        {
+          "title": "2026 Cypriot legislative election — Wikipedia (24 May 2026: DISY 17, AKEL 15, ELAM 8, DIKO 8, ALMA 4, Direct Democracy Cyprus 4; EDEK, Democratic Alignment and the Movement of Ecologists lost all their seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Cypriot_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "CY-ELAM",
+      "country": "CY",
+      "shortName": "ELAM",
+      "name": "Εθνικό Λαϊκό Μέτωπο",
+      "nameEn": "National Popular Front",
+      "logo": "party-logos/cy/elam.png",
+      "sha256": "f54bc374dad9d921f2137ab5f5b84450cf2affafe16676f0f48d98a0d751b782",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:ELAM_(Cyprus)_Logo.png",
+      "licenceNote": "Non-free. The National Popular Front (ELAM)'s logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Greek ultranationalism",
+        "Euroscepticism",
+        "Neo-Metaxism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2008,
+      "leader": "Christos Christou",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 56,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "ELAM (Cyprus) — Wikipedia (infobox: founded 2008; leader Christos Christou; position far-right; European affiliation ECR). It won eight seats in 2026, four more than in 2021, making it joint-third largest",
+          "url": "https://en.wikipedia.org/wiki/ELAM_(Cyprus)"
+        },
+        {
+          "title": "House of Representatives (Cyprus) — Wikipedia (56 seats de facto; political groups after the 24 May 2026 election: Government DIKO 8; Opposition DISY 17, AKEL 15, ELAM 8, ALMA 4, ADK 4)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Cyprus)"
+        },
+        {
+          "title": "2026 Cypriot legislative election — Wikipedia (24 May 2026: DISY 17, AKEL 15, ELAM 8, DIKO 8, ALMA 4, Direct Democracy Cyprus 4; EDEK, Democratic Alignment and the Movement of Ecologists lost all their seats)",
+          "url": "https://en.wikipedia.org/wiki/2026_Cypriot_legislative_election"
+        }
+      ]
+    }
+  ],
   "CZ": [
     {
       "id": "CZ-ANO",
