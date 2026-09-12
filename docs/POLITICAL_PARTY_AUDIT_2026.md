@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 49 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 50 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -100,6 +100,7 @@ forgotten; it is tracked here.
 | 🇧🇭 Bahrain | `#1362` | **3 → 0 (removed)** | n/a | **OUT OF SCOPE — no parties; all three were dissolved or banned** |
 | 🇧🇩 Bangladesh | `#1364` | 1 → 10 | 339 / 350 | **FABRICATED LOGO in the repo — and a whole 2026 parliament missing** |
 | 🇧🇹 Bhutan | `#1365` | 3 → 2 | **47 / 47** | **INVERTED — the governing party sat in opposition; two entries held no seats** |
+| 🇨🇳 China | `#1366` | 1 → 9 | 2,411 / 2,977 | **The ruling party was given every seat in the chamber; all eight other legal parties were missing** |
 
 ---
 
@@ -1791,6 +1792,75 @@ BTP's caparisoned elephant and the PDP's white horse.
 
 ---
 
+### 🇨🇳 China — audited 2026-09-12
+
+China was represented by **one party holding every seat in the chamber**: the Communist Party of
+China, `seats: 2977` of `seatsTotal: 2977`. That is not what the National People's Congress looks
+like. China has **nine** legally recognised parties, and the eight besides the CPC hold **371 of the
+2,977 seats** between them — every one of them absent from the dataset.
+
+The 14th NPC, elected March 2023 for a term to March 2028: **CPC 2,040** — eight democratic parties
+**371** — the balance non-party deputies.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-272 | **S1** | `seats` | **CPC 2,977 of 2,977** — the whole chamber | **2,040 of 2,977** | The CPC does not hold every NPC seat. 371 are held by the eight democratic parties and the balance by non-party deputies |
+| PP-273 | **S1** | coverage | **1 party** | **9 parties** | All eight of China's other legal parties were missing: 农工党 60, 九三学社 61, 民盟 56, 民进 54, 民建 44, 民革 43, 致公党 39, 台盟 14 |
+| PP-274 | **S2** | `logo` | orphan **`cn/cpc.svg`** — the party **flag** (red banner), referenced by nothing | *(deleted)*; emblem bundled as the referenced logo | Same orphan-prefetch class as Bangladesh's `bd/bkm.svg`. A party flag is not its emblem, and an unreferenced file is one wiring change away from shipping |
+| PP-275 | **S2** | `logo` | — | **Zhi Gong Party: rejected two candidate files before bundling** | Wikidata/Commons offer a 166-byte SVG of four plain bars — a Commons user's redrawing of one element of the party's **pre-1949** emblem — and a grainy scan of that historic emblem. Neither is the mark the party uses. The current emblem (red disc, gold ring, yellow star, 致力为公) was taken from English Wikipedia instead |
+| PP-276 | **S2** | `logo` | — | **RCCK: rejected Wikidata's P154** | Wikidata gives the **Kuomintang's** white-sun emblem for the Revolutionary Committee — a different organisation's mark. The party's own 民革 seal was used instead |
+| PP-277 | **S3** | structure | — | **`CN-UF` coalition added** | Without it the eight democratic parties read as ordinary opposition. They are constitutionally *participating parties* that accept CPC leadership, do not contest elections against it and do not seek to form a government |
+| PP-278 | **S3** | `logo` path | `party-logos/CN/Communist Party of China.svg` | `party-logos/cn/cpc.svg` | Upper-case directory and a spaced filename, against the documented `{cc}` convention |
+
+**Seat figures were taken from each party's own central committee, not from Wikipedia — and that
+mattered.** The two Wikipedias disagree on four of the eight, and where the parties publish their own
+rosters the encyclopaedias are wrong as often as right:
+
+| Party | en.wp | zh.wp | **party's own site** | |
+|---|---|---|---|---|
+| 民革 RCCK | 41 | 43 | **43** | minge.gov.cn, March 2026 — "共43名，以代表团为序" |
+| 民盟 CDL | 56 | 55 | **56** | mmzy.org.cn, republished for the 2025 session |
+| 民进 CAPD | 54 | 54 | **54** | mj.org.cn — "名单（54人）" |
+| 九三学社 Jiusan | 56 | 61 | **61** | 93.gov.cn — "名单（61人）"; the 26 delegation sub-totals were summed and come to exactly 61. en.wikipedia's 56 is the *election-night* figure |
+| 农工党 CPWDP | 60 | 60 | **60** | 团结网 — "60名农工党党员当选…分布在26个代表团" |
+| 台盟 TDSGL | 14 | 13 | **14** | taimeng.org.cn — 6 Taiwan-province + 8 other deputies, named |
+| 民建 CNDCA | 44 | 44 | *not published* | en and zh agree |
+| 致公党 Zhi Gong | 39 | 39 | *not published* | en and zh agree |
+
+**Documented gap — the CPC's own seat count is the one figure with no authoritative source, and it
+is flagged rather than hidden.** China publishes no party breakdown of NPC deputies: the credentials
+committee's report gives gender, ethnicity and occupation but not party, **both** Wikipedias leave
+the CPC's cell blank in their chamber articles, and zh.wikipedia labels its own distribution table
+*仅供参考* ("for reference only"). The only figure that exists anywhere is the **2,040** asserted,
+uncited, in en.wikipedia's CPC infobox. It is used because the alternative — leaving 2,977 — is
+definitely false, and it reconciles: 2,977 − 2,040 − 371 = **566 non-party deputies**, about 19%,
+consistent with the published allocation plan. The entry's own `sources` title states that no
+official breakdown exists, so a reader following the citation sees the weakness. **Revisit if the
+NPC ever publishes the breakdown.**
+
+**A second dating note.** 2,977 deputies were elected, but zh.wikipedia, citing an NPC Standing
+Committee announcement, records **2,847 currently sitting** — 130 seats lost to removals and
+resignations over the term. `seatsTotal` stays at the chamber's full complement of 2,977, as it does
+for every other country in this dataset, with the vacancies unmodelled.
+
+**Two parties ship with `noImageReason`.** The 中国民主促进会 (CAPD) and the 九三学社 (Jiusan
+Society) have no emblem on Wikidata (no P154), none on Commons under either their English or Chinese
+names, no logo parameter in either the English or Chinese Wikipedia infobox, and no emblem image
+published on their own websites (mj.org.cn and 93.gov.cn both serve text mastheads). They are listed
+with an honest gap rather than dropped.
+
+**Eight of the nine parties are filed `other`.** Their cited ideology is "socialism with Chinese
+characteristics" and no source places any of them on a left-right axis — which is itself the honest
+answer for a participating party in a one-party state. Only the CPC carries a position (far-left,
+from its Communism / Marxism–Leninism tags).
+
+**Scope.** China stays in the dataset on the same basis as Vietnam and Laos, already audited in this
+sweep: a one-party state whose ruling party genuinely exists is represented, with its real seat
+count rather than the whole chamber. The difference here is that China's chamber also seats eight
+other legal parties, so all nine are shown.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1974,7 +2044,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `CM` Cameroon
 - [ ] `CF` Central African Republic
 - [ ] `TD` Chad
-- [ ] `CN` China
+- [x] `CN` China — merged
 - [ ] `KM` Comoros
 - [ ] `CG` Congo
 - [ ] `CD` Congo (DRC)
