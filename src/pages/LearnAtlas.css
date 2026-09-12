@@ -1,0 +1,303 @@
+/* Learn's visual system. Deliberately presentation-only: all components,
+   data, handlers, ordering, map geometry and persistence remain unchanged.
+   Scope includes portalled dialogs and app chrome ONLY while Learn is mounted.
+   Do not collapse semantic map/type/status colours into the accent palette. */
+:root:has(.learn-page) {
+  --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ink: #202a30;
+  --ink-soft: #59666e;
+  --ink-faint: #d8dee1;
+  --cream: #f5f7f8;
+  --cream-deep: #eaf0f2;
+  --paper: #ffffff;
+  --atlas-accent: #176658;
+  --atlas-tint: #e8f3ef;
+  --atlas-border: #d8dee1;
+  --shadow: 0 2px 8px rgb(20 40 50 / 4%);
+  --shadow-soft: 0 8px 28px rgb(20 40 50 / 10%);
+  --radius-lg: 12px;
+  --radius-md: 8px;
+}
+:root[data-theme="dark"]:has(.learn-page) {
+  --ink: #e5ecef;
+  --ink-soft: #aab8c0;
+  --ink-faint: #35434c;
+  --cream: #131b21;
+  --cream-deep: #25323b;
+  --paper: #1c272f;
+  --atlas-accent: #8ddbc6;
+  --atlas-tint: #213c37;
+  --atlas-border: #35434c;
+  --shadow: 0 2px 8px rgb(0 0 0 / 12%);
+  --shadow-soft: 0 8px 28px rgb(0 0 0 / 25%);
+}
+
+/* Quiet shared chrome; original actions and keyboard semantics are retained. */
+body:has(.learn-page) .site-topbar {
+  background: var(--paper);
+  border-bottom: 1px solid var(--atlas-border);
+  gap: .5rem;
+}
+body:has(.learn-page) :is(.site-topbar button, .bottom-nav button) {
+  font-family: var(--font-display);
+  border: 1px solid var(--atlas-border);
+  border-radius: 7px;
+  box-shadow: none;
+  background: var(--paper);
+  color: var(--ink);
+  transform: none;
+}
+body:has(.learn-page) .bottom-nav {
+  background: var(--paper);
+  border-top: 1px solid var(--atlas-border);
+  box-shadow: none;
+}
+
+/* The map and the reference column read as a single atlas workspace. Keep
+   sticky positions, overlay stacking and all-feature map fitting untouched. */
+.learn-page .learn-fs {
+  background: var(--cream);
+  padding: 1.25rem clamp(.75rem, 2vw, 2rem) 1.5rem;
+  column-gap: 1.5rem;
+}
+.learn-page .learn-fs__map { padding: 0; }
+.learn-page .learn-fs__panel-wrap { padding: 0; gap: 1rem; }
+.learn-page .learn-fs__panel {
+  border: 1px solid var(--atlas-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+}
+.learn-page .learn-fs__map .world-map__zoom-controls {
+  padding: .5rem;
+  gap: .4rem;
+  border: 1px solid var(--atlas-border);
+  border-radius: 9px;
+  box-shadow: none;
+}
+.learn-page .learn-fs__map .map-with-zoom { gap: 1rem; }
+.learn-page .learn-breadcrumb {
+  padding: .85rem clamp(.75rem, 2vw, 2rem) 0;
+  background: var(--cream);
+  font-size: .875rem;
+}
+.learn-page .learn-breadcrumb__crumb {
+  color: var(--atlas-accent);
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* Explicit controls: no blanket button reset that could erase status cues. */
+body:has(.learn-page) :is(.world-map__zoom-btn,
+  .learn-toolbar__era-pill, .dropdown-input, .dropdown-tile,
+  .dropdown-modal__input, .dropdown-modal__close,
+  .flag-grid__select, .flag-grid__filter, .hierarchy-layout-toggle__btn,
+  .map-view-control__preset, .learn-fs__hana-corner,
+  .learn-fs__anthem-btn, .learn-fs__subdiv-btn, .learn-tour__reopen) {
+  border: 1px solid var(--atlas-border);
+  border-radius: 7px;
+  box-shadow: none;
+  text-shadow: none;
+  transform: none;
+  font-weight: 600;
+}
+.learn-page :is(.world-map__zoom-btn, .learn-toolbar__era-pill,
+  .hierarchy-layout-toggle__btn, .map-view-control__preset) {
+  background: var(--paper);
+  color: var(--ink);
+}
+.learn-page :is(.world-map__zoom-btn--active, .learn-toolbar__era-pill--active,
+  .hierarchy-layout-toggle__btn--active, .map-view-control__preset--active,
+  .learn-fs__hana-corner--added) {
+  background: var(--atlas-tint);
+  color: var(--atlas-accent);
+  border-color: var(--atlas-accent);
+}
+.learn-page .learn-fs__subdiv-btn {
+  background: var(--atlas-accent);
+  color: var(--paper);
+  padding: .75rem 1rem;
+  white-space: normal;
+}
+:root[data-theme="dark"] .learn-page .learn-fs__subdiv-btn { color: #142821; }
+body:has(.learn-page) :is(.dropdown-list, .dropdown-modal__sheet,
+  .map-view-control__popover, .learn-toolbar__era-menu, .anthem-modal__card) {
+  border: 1px solid var(--atlas-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+}
+body:has(.learn-page) :is(.anthem-modal__close, .anthem-player__btn) {
+  border-width: 1px;
+  border-color: var(--atlas-border);
+  box-shadow: none;
+}
+body:has(.learn-page) .anthem-player__youtube { border-width: 1px; }
+body:has(.learn-page) :is(.dropdown-option:hover, .dropdown-option[aria-selected="true"],
+  .dropdown-modal__option--selected) {
+  background: var(--atlas-tint);
+  color: var(--ink);
+}
+
+/* The fact-sheet remains complete. Spacing and typographic hierarchy replace
+   heavy card decoration. Image sizing/proportions deliberately stay original. */
+.learn-page .learn-fs__search-label {
+  color: var(--ink-soft);
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+}
+.learn-page :is(.learn-fs__name, .learn-fs__empty-title) {
+  color: var(--ink);
+  text-shadow: none;
+  font-weight: 650;
+  letter-spacing: -.035em;
+  line-height: 1.15;
+}
+.learn-page .learn-fs__empty-title { font-size: 2rem; }
+.learn-page .learn-fs__empty-sub { font-size: 1rem; line-height: 1.6; }
+.learn-page .entity-summary { font-size: .875rem; line-height: 1.55; gap: 0; }
+.learn-page .entity-summary__row {
+  padding: .5rem 0;
+  border-bottom: 1px solid var(--atlas-border);
+  grid-template-columns: 6rem minmax(0, 1fr);
+}
+.learn-page .entity-summary__row:last-child { border-bottom: 0; }
+.learn-page .entity-summary__label {
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.learn-page .learn-fs__flag-label { font-size: .875rem; font-weight: 600; }
+.learn-page .learn-fs__flag { border: 0; box-shadow: none; border-radius: 0; }
+.learn-page .learn-fs__flag-hint { color: var(--ink-soft); text-align: left; }
+.learn-page .flag-meaning__toggle {
+  border: 1px solid var(--atlas-border);
+  background: var(--cream);
+  color: var(--ink);
+  border-radius: 7px;
+  box-shadow: none;
+  padding: .65rem;
+}
+.learn-page .flag-meaning__panel { border-width: 1px; border-radius: 7px; }
+.learn-page .learn-tour {
+  background: var(--cream);
+  border: 1px solid var(--atlas-border);
+  border-radius: 9px;
+  box-shadow: none;
+  text-align: left;
+}
+.learn-page .learn-tour__num {
+  background: var(--atlas-tint);
+  color: var(--atlas-accent);
+  border: 0;
+  box-shadow: none;
+}
+
+/* Collections use editorial section dividers and quiet tiles. Existing
+   grouping/tier order, counts, attribution badges and AutoFitName are retained. */
+.learn-page .flag-grid {
+  border-top: 1px solid var(--atlas-border);
+  padding: 1.75rem clamp(.75rem, 2vw, 2rem) 3rem;
+}
+.learn-page .flag-grid__header { margin-bottom: 1.75rem; }
+.learn-page :is(.learn-fs__map, .learn-fs__panel-wrap) { min-width: 0; }
+.learn-page .flag-grid__title {
+  color: var(--ink);
+  font-size: 1.4rem;
+  font-weight: 650;
+  letter-spacing: -.025em;
+  text-shadow: none;
+}
+.learn-page .flag-grid__count {
+  border: 0;
+  border-radius: 5px;
+  font-size: .8rem;
+  font-weight: 500;
+}
+.learn-page .flag-grid__group-heading {
+  border-bottom: 1px solid var(--atlas-border);
+  padding-bottom: .7rem;
+  color: var(--ink);
+  letter-spacing: .045em;
+  font-size: .8rem;
+  font-weight: 600;
+}
+.learn-page .flag-grid__card {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: .65rem .5rem;
+  gap: .75rem;
+}
+.learn-page .flag-grid__card:hover {
+  background: var(--cream);
+  border-color: var(--atlas-border);
+  transform: none;
+}
+.learn-page :is(.flag-grid__card--active, .flag-grid__card--active:hover) {
+  background: var(--atlas-tint);
+  border-color: var(--atlas-accent);
+  color: var(--ink);
+}
+.learn-page .flag-grid__card--active :is(.flag-grid__name,
+  .flag-grid__city-sub, .flag-grid__flag-sub) { color: var(--ink); }
+.learn-page .flag-grid__name { font-weight: 500; }
+.learn-page .flag-grid__controls { gap: .75rem; }
+.learn-page .flag-grid__group-select-label { text-transform: none; letter-spacing: 0; }
+.learn-page .flag-grid__filter { background: var(--cream); }
+.learn-page .flag-tabs { gap: .25rem 1rem; border-bottom: 1px solid var(--atlas-border); }
+.learn-page .flag-tabs__tab {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: .8rem .25rem;
+  background: transparent;
+  color: var(--ink-soft);
+  box-shadow: none;
+  transform: none;
+  font-weight: 500;
+}
+.learn-page .flag-tabs__tab--active {
+  border-bottom-color: var(--atlas-accent);
+  color: var(--atlas-accent);
+  font-weight: 650;
+}
+.learn-page .flag-tabs__count {
+  background: var(--cream-deep);
+  color: var(--ink-soft);
+  font-weight: 500;
+  border-radius: 4px;
+}
+.learn-page .flag-tabs__tab--active .flag-tabs__count {
+  background: var(--atlas-tint);
+  color: var(--atlas-accent);
+}
+.learn-page .hierarchy__node {
+  border-width: 1px;
+  border-color: var(--atlas-border);
+  border-radius: 8px;
+  box-shadow: none;
+}
+.learn-page .hierarchy__node--active { border-color: var(--atlas-accent); }
+.learn-page .hierarchy-table { border-width: 1px; border-radius: 9px; box-shadow: none; }
+.learn-page .hierarchy-table__th { font-weight: 600; text-transform: none; letter-spacing: 0; }
+
+/* Explicit focus remains visible independently of hover/selection. */
+body:has(.learn-page) :is(button, a, input, select, summary):focus-visible {
+  outline: 2px solid var(--atlas-accent);
+  outline-offset: 3px;
+}
+@media (max-width: 768px) {
+  .learn-page .learn-fs { padding: .75rem; row-gap: 1rem; }
+  .learn-page .learn-fs__panel { padding: 1rem; }
+  .learn-page .flag-grid { padding-top: 1.25rem; }
+  .learn-page .flag-tabs { gap: .15rem .75rem; }
+  .learn-page .flag-tabs__tab { font-size: .875rem; min-height: 44px; }
+  .learn-page .flag-grid__header { gap: 1rem; }
+  .learn-page .flag-grid__select { min-height: 40px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .learn-page *, body:has(.learn-page) .site-topbar * { transition: none; }
+}

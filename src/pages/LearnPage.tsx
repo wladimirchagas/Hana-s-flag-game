@@ -97,6 +97,7 @@ import {
 import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/subdivision";
 import "../App.css";
 import "./LearnPage.css";
+import "./LearnAtlas.css";
 
 // Codes where flagcdn.com serves a politically incorrect flag.
 // These must never fall back to flagcdn — show broken image instead.
