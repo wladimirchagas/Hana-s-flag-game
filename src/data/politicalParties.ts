@@ -368,6 +368,18 @@ export const POLITICAL_COALITIONS: Record<string, PoliticalCoalition> = {
     },
     note: "The CDU and CSU are separate parties that never contest each other's territory — the CSU stands only in Bavaria — and sit as a single CDU/CSU group in the Bundestag.",
   },
+  "NL-GOV": {
+    id: "NL-GOV",
+    name: "Kabinet-Jetten",
+    nameEn: "Jetten cabinet coalition",
+    kind: "coalition",
+    memberPartyIds: ["NL-D66", "NL-VVD", "NL-CDA"],
+    source: {
+      title: "House of Representatives (Netherlands) — Wikipedia: the Jetten cabinet holds 66 of 150 seats — D66 26, VVD 22, CDA 18",
+      url: "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)",
+    },
+    note: "A minority government: the three coalition parties hold 66 of the 150 seats.",
+  },
   "PL-GOV": {
     id: "PL-GOV",
     name: "Koalicja rządowa Tusk III",
@@ -15088,6 +15100,46 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "NL": [
     {
+      "id": "NL-D66",
+      "country": "NL",
+      "shortName": "D66",
+      "name": "Democraten 66",
+      "nameEn": "Democrats 66",
+      "logo": "party-logos/nl/d66.svg",
+      "sha256": "458c32803493649029348d8d55950938e0adbba614a84ebb946082e10f2fbf86",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:D66_logo_(2020).svg",
+      "ideology": [
+        "Social liberalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1966,
+      "coalitionId": "NL-GOV",
+      "leader": "Rob Jetten",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In government since Rob Jetten became prime minister on 23 February 2026.",
+      "seats": 26,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Democrats 66 — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Democrats_66"
+        },
+        {
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
+        },
+        {
+          "title": "Prime Minister of the Netherlands — Wikipedia (Rob Jetten of D66, in office since 23 February 2026)",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_the_Netherlands"
+        }
+      ]
+    },
+    {
       "id": "NL-VVD",
       "country": "NL",
       "shortName": "VVD",
@@ -15095,59 +15147,31 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "People's Party for Freedom and Democracy",
       "logo": "party-logos/nl/vvd.svg",
       "sha256": "b116d5cb8a59d8474c6c1cb0e3c6a98b81c4386c4d39700ff992e8a703561702",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:VVD_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Liberalism", "Conservatism", "Centre-right"],
-      "ideologyPosition": "right",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Vvd-logo-2020.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Conservative liberalism"
+      ],
+      "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1948,
-      "leader": "Derk Jan Eppink",
-      "leaderTitle": "Party Leader",
+      "coalitionId": "NL-GOV",
+      "leader": "Dilan Yeşilgöz",
+      "leaderTitle": "Leader",
       "inPower": true,
-      "timeInPower": "2024-present",
-      "seats": 35,
+      "inExecutive": true,
+      "timeInPower": "In the Jetten cabinet formed in February 2026.",
+      "seats": 22,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
       "sources": [
         {
-          "title": "People's Party for Freedom and Democracy – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/People%27s_Party_for_Freedom_and_Democracy"
+          "title": "People's Party for Freedom and Democracy — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/People's_Party_for_Freedom_and_Democracy"
         },
         {
-          "title": "2023 Dutch general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Dutch_general_election"
-        }
-      ]
-    },
-    {
-      "id": "NL-PVV",
-      "country": "NL",
-      "shortName": "PVV",
-      "name": "Partij voor de Vrijheid",
-      "nameEn": "Party for Freedom",
-      "logo": "party-logos/nl/pvv.svg",
-      "sha256": "67319ebf6553b8f1bac1b5aaf617c170577d5faba7340185e8f68d5b2f12efde",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PVV_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Right-wing populism", "Anti-immigration", "Euroskepticism"],
-      "ideologyPosition": "far-right",
-      "positionRaw": "Far-right",
-      "founded": 2006,
-      "leader": "Geert Wilders",
-      "leaderTitle": "Party Leader",
-      "inPower": true,
-      "timeInPower": "2024-present",
-      "seats": 37,
-      "seatsTotal": 150,
-      "chamberName": "House of Representatives",
-      "sources": [
-        {
-          "title": "Party for Freedom (Netherlands) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
-        },
-        {
-          "title": "2023 Dutch general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Dutch_general_election"
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
         }
       ]
     },
@@ -15159,27 +15183,172 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Christian Democratic Appeal",
       "logo": "party-logos/nl/cda.svg",
       "sha256": "3d729d4225472f7b1326a222619e89c276499b4eae3b1635e07029634c84132f",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:CDA_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Christian democracy", "Conservatism", "Centre-right"],
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:CDA_logo_2021.svg",
+      "ideology": [
+        "Christian democracy",
+        "Conservatism"
+      ],
       "ideologyPosition": "centre-right",
       "positionRaw": "Centre-right",
       "founded": 1980,
+      "coalitionId": "NL-GOV",
       "leader": "Henri Bontenbal",
-      "leaderTitle": "Party Leader",
+      "leaderTitle": "Leader",
       "inPower": true,
-      "timeInPower": "2024-present",
-      "seats": 27,
+      "inExecutive": true,
+      "timeInPower": "In the Jetten cabinet formed in February 2026.",
+      "seats": 18,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
       "sources": [
         {
-          "title": "Christian Democratic Appeal – Wikipedia",
+          "title": "Christian Democratic Appeal — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Christian_Democratic_Appeal"
         },
         {
-          "title": "2023 Dutch general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Dutch_general_election"
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
+        }
+      ]
+    },
+    {
+      "id": "NL-PRO",
+      "country": "NL",
+      "shortName": "PRO",
+      "name": "Progressief Nederland",
+      "nameEn": "Progressive Netherlands",
+      "logo": "party-logos/nl/pro.svg",
+      "sha256": "3c1734bdac5c12b3220dcca4d1d8034c3193ef01f4c6f8942a3c6b76ddca0c71",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Progressive_Netherlands_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Progressief Nederland emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Social democracy",
+        "Green politics",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 2026,
+      "previousNames": [
+        {
+          "name": "GroenLinks–PvdA",
+          "years": "2023–2026"
+        }
+      ],
+      "leader": "Jesse Klaver",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 20,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Progressive Netherlands — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Progressief_Nederland"
+        },
+        {
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
+        }
+      ]
+    },
+    {
+      "id": "NL-PVV",
+      "country": "NL",
+      "shortName": "PVV",
+      "name": "Partij voor de Vrijheid",
+      "nameEn": "Party for Freedom",
+      "logo": "party-logos/nl/pvv.svg",
+      "sha256": "b6d5a918ab78c5bca86aed373654dda33bd87311fd92b89c6d7b12e9cd00fc2d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Party_for_Freedom_logo.svg",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Partij voor de Vrijheid emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Dutch nationalism",
+        "Right-wing populism",
+        "Euroscepticism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2006,
+      "leader": "Geert Wilders",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 19,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Party for Freedom — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+        },
+        {
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
+        }
+      ]
+    },
+    {
+      "id": "NL-JA21",
+      "country": "NL",
+      "shortName": "JA21",
+      "name": "JA21",
+      "logo": "party-logos/nl/ja21.svg",
+      "sha256": "d030b91b9560e62af9f955e74bc4dc8aa4276ce9aedfd1506a46bb739d5fce30",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:JA21_logo.svg",
+      "ideology": [
+        "Right-wing populism",
+        "Conservative liberalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2020,
+      "leader": "Joost Eerdmans",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 9,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "JA21 — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/JA21"
+        },
+        {
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
+        }
+      ]
+    },
+    {
+      "id": "NL-FVD",
+      "country": "NL",
+      "shortName": "FvD",
+      "name": "Forum voor Democratie",
+      "nameEn": "Forum for Democracy",
+      "logo": "party-logos/nl/fvd.svg",
+      "sha256": "2fd4549e126656dbb12115ebf476b4af83e86e0f1f6199ac502cad1ba5878ef7",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:FVD_logo.svg",
+      "ideology": [
+        "National conservatism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2016,
+      "leader": "Lidewij de Vos",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Forum for Democracy — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Forum_for_Democracy"
+        },
+        {
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
         }
       ]
     },
@@ -15191,58 +15360,259 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "nameEn": "Socialist Party",
       "logo": "party-logos/nl/sp.svg",
       "sha256": "0145d6a175a6c8a7ec2478db0be0d8506a941029b3d79cc68f59c5673fa64a6f",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Socialistische_Partij_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Socialism", "Left-wing", "Progressivism"],
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Socialistische_Partij_(nl_2006)_Logo.svg",
+      "ideology": [
+        "Democratic socialism",
+        "Left-wing populism"
+      ],
       "ideologyPosition": "left",
       "positionRaw": "Left-wing",
       "founded": 1971,
-      "leader": "Lilian Marijnissen",
-      "leaderTitle": "Party Leader",
+      "leader": "Jimmy Dijk",
+      "leaderTitle": "Leader",
       "inPower": false,
-      "seats": 25,
+      "seats": 3,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
       "sources": [
         {
-          "title": "Socialist Party (Netherlands) – Wikipedia",
+          "title": "Socialist Party — Wikipedia: ideology, political position, founding year and leadership",
           "url": "https://en.wikipedia.org/wiki/Socialist_Party_(Netherlands)"
         },
         {
-          "title": "2023 Dutch general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Dutch_general_election"
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
         }
       ]
     },
     {
-      "id": "NL-D66",
+      "id": "NL-PVDD",
       "country": "NL",
-      "shortName": "D66",
-      "name": "Democraten 66",
-      "nameEn": "Democrats 66",
-      "logo": "party-logos/nl/d66.svg",
-      "sha256": "458c32803493649029348d8d55950938e0adbba614a84ebb946082e10f2fbf86",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:D66_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Liberalism", "Progressivism", "Centre"],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre",
-      "founded": 1966,
-      "leader": "Rob Jetten",
-      "leaderTitle": "Party Leader",
-      "inPower": true,
-      "timeInPower": "2024-present",
-      "seats": 21,
+      "shortName": "PvdD",
+      "name": "Partij voor de Dieren",
+      "nameEn": "Party for the Animals",
+      "logo": "party-logos/nl/pvdd.svg",
+      "sha256": "55a07abeadb76bc2cce23db687fbc6bd9956398cf3a2fa0c9e9106e958b30030",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Party_for_the_Animals_logo.svg",
+      "ideology": [
+        "Animal rights",
+        "Animal welfare",
+        "Environmentalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing to far-left",
+      "founded": 2002,
+      "leader": "Christine Teunissen",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
       "sources": [
         {
-          "title": "Democrats 66 – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Democrats_66"
+          "title": "Party for the Animals — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Party_for_the_Animals"
         },
         {
-          "title": "2023 Dutch general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2023_Dutch_general_election"
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
+        }
+      ]
+    },
+    {
+      "id": "NL-BBB",
+      "country": "NL",
+      "shortName": "BBB",
+      "name": "BoerBurgerBeweging",
+      "nameEn": "Farmer–Citizen Movement",
+      "logo": "party-logos/nl/bbb.svg",
+      "sha256": "8591c64955e75d6ea2ad3cd7caa2b71910dab6cfe2debd30e7704d7fe558b2e8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:BoerBurgerBeweging_logo.svg",
+      "ideology": [
+        "Agrarianism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 2019,
+      "leader": "Henk Vermeer",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Farmer–Citizen Movement — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Farmer%E2%80%93Citizen_Movement"
+        },
+        {
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
+        }
+      ]
+    },
+    {
+      "id": "NL-CU",
+      "country": "NL",
+      "shortName": "CU",
+      "name": "ChristenUnie",
+      "nameEn": "Christian Union",
+      "logo": "party-logos/nl/cu.svg",
+      "sha256": "615fecbdc89752ded2c7553a6e8fe0ee8814baee56ac91583b7ea62bc7fd3c2e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:ChristenUnie_logo.svg",
+      "ideology": [
+        "Christian democracy",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2000,
+      "leader": "Mirjam Bikker",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Christian Union — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Christian_Union_(Netherlands)"
+        },
+        {
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
+        }
+      ]
+    },
+    {
+      "id": "NL-SGP",
+      "country": "NL",
+      "shortName": "SGP",
+      "name": "Staatkundig Gereformeerde Partij",
+      "nameEn": "Reformed Political Party",
+      "logo": "party-logos/nl/sgp.svg",
+      "sha256": "d8e8363032bac0676bf0971954c654f4d4f4e341e6c4883f0c3ff4dee61436c8",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:SGP_logo_(2016%E2%80%93present).svg",
+      "ideology": [
+        "Christian right",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1918,
+      "leader": "Chris Stoffer",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Reformed Political Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Reformed_Political_Party"
+        },
+        {
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
+        }
+      ]
+    },
+    {
+      "id": "NL-DENK",
+      "country": "NL",
+      "shortName": "DENK",
+      "name": "DENK",
+      "logo": "party-logos/nl/denk.svg",
+      "sha256": "d984053ab2027c512d22127a064c0f2e7e2813210a90d70b4198479692b7d165",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:DENK_logo_(2020%E2%80%93present).svg",
+      "ideology": [
+        "Social democracy",
+        "Social conservatism",
+        "Minority interests"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2015,
+      "leader": "Stephan van Baarle",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "DENK — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/DENK_(political_party)"
+        },
+        {
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
+        }
+      ]
+    },
+    {
+      "id": "NL-50PLUS",
+      "country": "NL",
+      "shortName": "50PLUS",
+      "name": "50PLUS",
+      "logo": "party-logos/nl/p50.svg",
+      "sha256": "8f572c5eaa92675794c584b447e202cbf90937db8600c6b3ba537fce7383c98b",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:50PLUS_(nl)_Logo.svg",
+      "ideology": [
+        "Pensioners' interests"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2010,
+      "leader": "Jan Struijs",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "50PLUS — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/50PLUS"
+        },
+        {
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
+        }
+      ]
+    },
+    {
+      "id": "NL-VOLT",
+      "country": "NL",
+      "shortName": "Volt",
+      "name": "Volt Nederland",
+      "nameEn": "Volt Netherlands",
+      "logo": "party-logos/nl/volt.svg",
+      "sha256": "ecd9e467092049e25bf64a983d1f222898367b1cfe092450d6e122733b46936e",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Volt.svg",
+      "ideology": [
+        "Social liberalism",
+        "European federalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2018,
+      "leader": "Laurens Dassen",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 150,
+      "chamberName": "House of Representatives",
+      "sources": [
+        {
+          "title": "Volt Netherlands — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Volt_Netherlands"
+        },
+        {
+          "title": "House of Representatives (Netherlands) — Wikipedia: 150 seats elected 29 October 2025 — Government (Jetten cabinet) 66 (D66 26, VVD 22, CDA 18); Opposition 84 (PRO 20, PVV 19, JA21 9, FvD 7, Markuszower Group 7, SP 3, PvdD 3, BBB 3, CU 3, SGP 3, DENK 3, 50PLUS 2, Volt 1, Keijzer Group 1)",
+          "url": "https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
         }
       ]
     }

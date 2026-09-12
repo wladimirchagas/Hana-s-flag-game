@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 32 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 33 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -78,6 +78,7 @@ forgotten; it is tracked here.
 | 🇮🇹 Italy | `#1342` | 6 → 12 | 389 / 400 | **WRONG — a leader who died in 2023** |
 | 🇪🇸 Spain | `#1343` | 1 → 14 | 346 / 350 | **WRONG — the opposition marked as governing** |
 | 🇵🇱 Poland | `#1344` | 1 → 11 | 433 / 460 | **WRONG — only a junior coalition partner present** |
+| 🇳🇱 Netherlands | `#1346` | 5 → 15 | 142 / 150 | **WRONG — a rival party's politician as VVD leader** |
 
 ---
 
@@ -1184,6 +1185,38 @@ to 191 of 169** — another impossible total, waiting for the Norway audit.
 
 ---
 
+### 🇳🇱 Netherlands — audited 2026-09-12
+
+The Netherlands held five parties on the **2023** election result, with the VVD led by **Derk Jan
+Eppink** — who is a **JA21/FvD** politician, not a VVD one, the same wrong-party-leader defect found
+in Colombia. Every seat figure was superseded by the 29 October 2025 election, and the party that now
+leads the government was carried as an opposition entry.
+
+The House of Representatives, 150 seats: **Government (Jetten cabinet) 66** — D66 26, VVD 22,
+CDA 18 — and **Opposition 84**, led by Progressief Nederland's 20 and the PVV's 19.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-167 | **S1** | `leader` | VVD led by **Derk Jan Eppink** | **Dilan Yeşilgöz** | Eppink is a JA21 politician; the VVD's leader is Yeşilgöz. A leader attached to the wrong party, as in Colombia |
+| PP-168 | **S1** | `seats` | VVD 35, PVV 37, CDA 27, SP 25, D66 21 | **VVD 22, PVV 19, CDA 18, SP 3, D66 26** | The chamber's own composition. The **SP fell from 25 to 3** and the PVV from 37 to 19 |
+| PP-169 | **S1** | `inPower` | VVD, PVV, CDA and D66 all in power; none in the executive | **D66, VVD and CDA in power and in the executive; the PVV in opposition** | The PVV left government in 2024 and is now the second-largest opposition party |
+| PP-170 | **S2** | coverage | 5 parties, 145 of a chamber whose seats they no longer hold | **15 parties, 142 of 150** | Ten seated parties were absent, including **Progressief Nederland**, the largest opposition party with 20 seats |
+| PP-171 | **S3** | coalitions | none | **`NL-GOV`** (D66 + VVD + CDA, 66 seats — a minority government) | The chamber's own Government grouping |
+
+**Progressief Nederland did not exist under that name when the old entries were written**: the
+GroenLinks–PvdA alliance became a single party on 1 July 2026, and the entry records the previous
+name. Rob Jetten (D66) has been prime minister since 23 February 2026.
+
+**Documented gap — 8 of the 150 seats**: the **Markuszower Group** (7) and the **Keijzer Group** (1),
+both splinter groups of deputies rather than registered parties.
+
+**Fifteen orphan logo files** were already sitting in `public/party-logos/nl/` from an earlier PR,
+unreferenced by any entry. They have been replaced with a freshly fetched, montage-verified set.
+
+**Two non-free logos, declared** (Progressief Nederland, PVV); the other thirteen are on Commons.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -1235,7 +1268,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `ES` Spain — merged
 - [ ] `PT` Portugal
 - [x] `IT` Italy — merged
-- [ ] `NL` Netherlands
+- [x] `NL` Netherlands — merged
 - [ ] `BE` Belgium
 - [ ] `LU` Luxembourg
 - [ ] `CH` Switzerland
