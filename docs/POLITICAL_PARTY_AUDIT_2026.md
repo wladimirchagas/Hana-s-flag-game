@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 48 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 49 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -99,6 +99,7 @@ forgotten; it is tracked here.
 | 🇦🇿 Azerbaijan | `#1361` | 3 → 11 | 81 / 125 | **WRONG — a party leader who died in 1878** |
 | 🇧🇭 Bahrain | `#1362` | **3 → 0 (removed)** | n/a | **OUT OF SCOPE — no parties; all three were dissolved or banned** |
 | 🇧🇩 Bangladesh | `#1364` | 1 → 10 | 339 / 350 | **FABRICATED LOGO in the repo — and a whole 2026 parliament missing** |
+| 🇧🇹 Bhutan | `#1365` | 3 → 2 | **47 / 47** | **INVERTED — the governing party sat in opposition; two entries held no seats** |
 
 ---
 
@@ -1762,6 +1763,34 @@ All nine bundled logos are on Commons under free licences and were montage-verif
 
 ---
 
+### 🇧🇹 Bhutan — audited 2026-09-12
+
+Bhutan was a **complete inversion**. The party recorded as governing holds **no seat at all**; the
+party that actually governs was recorded as opposition with a third of its real seats; and the real
+opposition was missing entirely.
+
+The National Assembly has only **two** parties. After the 2023–24 election: **Government 31** — the
+People's Democratic Party — **Opposition 16** — the Bhutan Tendrel Party.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-268 | **S1** | `inPower` / identity | **`BT-DPT`** (Bhutan Peace and Prosperity Party) marked `inPower` **and** `inExecutive` with **20 seats** | *(entry removed)* | The DPT holds **zero** seats in this Assembly and heads no government. It was eliminated before the second round |
+| PP-269 | **S1** | `seats` / `inPower` | **PDP 10 seats, `inPower: false`** | **31 seats, `inPower` and `inExecutive`** | The PDP won the 2023–24 election and Tshering Tobgay has been prime minister since January 2024. The dataset had the governing party in opposition |
+| PP-270 | **S1** | coverage | `BT-BKP` (Bhutan Kuen Nyam Party) with **17 seats** | *(entry removed)*; **Bhutan Tendrel Party added with 16** | The BKP holds **zero** seats; the BTP — the actual opposition — was absent from the dataset |
+| PP-271 | **S2** | `leader` | absent on all three | **Tshering Tobgay** (PDP), **Pema Chewang** (BTP), both *President* | Each party's own infobox |
+
+**Two of the three entries were parties with no seats, and the seat figures did not correspond to any
+election.** 17 + 20 + 10 sums to 47, so the total looked right while every component was wrong — a
+reminder that a correct-looking sum is not a correctness check.
+
+**Documented gap — none.** Bhutan is the **tenth country in this sweep to reconcile exactly**: its
+Assembly seats only two parties, and both are now present with their true counts.
+
+Both logos are non-free files on English Wikipedia and are declared. Both were montage-verified — the
+BTP's caparisoned elephant and the PDP's white horse.
+
+---
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1937,7 +1966,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `BB` Barbados
 - [ ] `BZ` Belize
 - [ ] `BJ` Benin
-- [ ] `BT` Bhutan
+- [x] `BT` Bhutan — merged
 - [ ] `BW` Botswana
 - [ ] `BF` Burkina Faso
 - [ ] `BI` Burundi
