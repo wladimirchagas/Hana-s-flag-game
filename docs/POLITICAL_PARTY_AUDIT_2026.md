@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 30 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 31 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -76,6 +76,7 @@ forgotten; it is tracked here.
 | 🇩🇪 Germany | `#1340` | 1 → 6 | 627 / 630 | **WRONG — a seat count belonging to no Bundestag** |
 | 🇫🇷 France | `#1341` | 1 → 13 | 513 / 577 | **WRONG — a parliamentary group modelled as a party** |
 | 🇮🇹 Italy | `#1342` | 6 → 12 | 389 / 400 | **WRONG — a leader who died in 2023** |
+| 🇪🇸 Spain | `#1343` | 1 → 14 | 346 / 350 | **WRONG — the opposition marked as governing** |
 
 ---
 
@@ -1049,6 +1050,38 @@ non-inscrits), each holding one or two seats.
 
 ---
 
+### 🇪🇸 Spain — audited 2026-09-12
+
+Spain had **one party — and it was the opposition, marked as governing.** `ES-PP` carried
+`inPower: true` with `inExecutive: false`, a combination that describes nothing: the People's Party
+leads the **Opposition**, and the PSOE, which actually governs, was not in the dataset.
+
+The Congress of Deputies, 350 seats: **Government 147** (PSOE 121, the Sumar group 26), **supported
+by 24** (ERC 7, EH Bildu 6, PNV 5, Mixed 6), **Opposition 179** (PP 137, Vox 32, Junts 7, Mixed 3).
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-154 | **S1** | `inPower` | **true on the People's Party**, Spain's opposition, with `inExecutive: false` | **false on the PP**; true on the PSOE and its partners | The Congress's own Government/Opposition grouping. The PP has not held the premiership since 2018 |
+| PP-155 | **S1** | coverage | 1 party | **14 parties, 346 of 350** | The **PSOE**, the governing party with 121 seats, was absent, as was **Vox** with 32, and eleven others |
+| PP-156 | **S2** | `seats` | PP **136** | **137** | The Congress's own composition |
+| PP-157 | **S3** | coalitions | none | **`ES-GOV`** (PSOE + the five Sumar-group parties) | The Congress's own Government grouping |
+
+**The Sumar group is unpacked into its parties.** Its 26 seats belong to six different parties —
+Movimiento Sumar 11, Catalunya en Comú 6, Izquierda Unida 5, Más Madrid 2, Compromís 1, Més per
+Mallorca 1 — so each is entered with its own count rather than the group's, the same treatment given
+to France's parliamentary groups.
+
+**Five parties are `inPower` without being in the coalition**: ERC, EH Bildu, the PNV and the BNG
+support the government on confidence and supply without cabinet office. Podemos, which left the
+government bloc, is recorded out of power. The same reading as Indonesia, Peru, France and Italy.
+
+**Documented gap — 4 of the 350 seats**: Més per Mallorca, Navarrese People's Union, Coalición
+Canaria and one further Mixed-group deputy, each holding a single seat.
+
+All fourteen logos are on Commons and were montage-verified.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -1097,7 +1130,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `IE` Ireland
 - [x] `FR` France — merged
 - [x] `DE` Germany — merged
-- [ ] `ES` Spain
+- [x] `ES` Spain — merged
 - [ ] `PT` Portugal
 - [x] `IT` Italy — merged
 - [ ] `NL` Netherlands
