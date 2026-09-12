@@ -3384,8 +3384,37 @@ without one — `PoliticalPartyFacts` omits the row rather than rendering `undef
 5. **A bundled logo must exist on disk, checksummed, and correct.** The build check verifies:
    - Logo file exists at recorded path
    - sha256 matches recorded value
+   - **The bytes are actually an image** — see rule 5a
    - Non-Commons logos carry a `licenceNote` ≥ 40 characters
    - Logo is not the country's national flag (collision guard: same as subdivision-flag rule)
+
+5a. **A `logoSourceUrl` names a file you have OPENED, and the bytes you bundle must BE an image —
+   a plausible-looking Commons filename is not a citation.** This shipped and was measured
+   (2026-09-12): **101 party logos across 33 countries were Wikimedia "page not found" HTML saved
+   under an `.svg` extension**, plus three that were the media CDN's plain-text
+   `File not found: /v1/AUTH_mw/…` body. Every one of those cards rendered as a broken image in
+   production — for 33 whole countries, every party card was an empty box.
+
+   The cause was a *fabricated citation*. **97 of the 101 recorded `logoSourceUrl`s pointed at
+   Commons file pages that do not exist**: filenames invented from a plausible pattern
+   (`Barbados_Labour_Party_logo.svg`, `FLN_Algeria_logo.svg`, `Bhutan_Kuen_Nyam_Party_logo.svg`)
+   rather than read off the party's own article. The fetch then wrote the 404 body to disk and the
+   entry recorded its sha256, so **every existing check passed**: the path existed, the bytes hashed,
+   the URL looked right. A sha256 proves a file has not *changed*; it can never prove it was ever
+   right. The real files mostly existed under a different name or extension — Barbados Labour Party's
+   logo is `Barbados Labour Party logo.png`, not `.svg` — so this was never a sourcing impossibility,
+   only a step that was skipped.
+
+   - **Never write a `logoSourceUrl` you have not resolved.** The file page must return an
+     `imageinfo` (`action=query&prop=imageinfo`), not a `missing` flag.
+   - **Never save a download you have not sniffed.** `scripts/.../getlogo.mjs` refuses any body whose
+     first bytes are `<!doctype html`/`<html`; keep that guard and never bypass it.
+   - **The extension must match the bytes.** Four Indian logos were PNG data under `.svg`. The
+     browser decodes by content, but the entry then claims something the file is not.
+   - **A broken image is worse than an acknowledged gap**, exactly as with flags: when no file can be
+     resolved, drop `logo`/`sha256`/`logoSourceUrl` and write a `noImageReason` naming what was
+     searched (rule 3). That is an honest empty state; a broken `<img>` is a lie the user cannot
+     diagnose.
 
 6. **Verify in the running app** (mandatory visual-verification rule applies): Open the country's Political parties grid, confirm every party card displays a logo (or honest `noImageReason` note), and that logos visually represent the correct party/emblem (not a flag, not a placeholder).
 
@@ -3395,6 +3424,11 @@ without one — `PoliticalPartyFacts` omits the row rather than rendering `undef
 - A party has neither `logo` nor `noImageReason` (incomplete entry)
 - A party has both (impossible state)
 - A bundled logo file is missing or sha256 does not match
+- **A bundled logo's bytes are not an image** — HTML (a saved Wikimedia error page), an
+  unrecognisable body, or image data whose type contradicts its file extension. This is the
+  structural guard for rule 5a: `imageKind()` sniffs magic numbers (PNG/JPEG/GIF/WebP) and, for text
+  formats, looks past a BOM, an XML declaration and any comments before deciding between `<svg` and
+  `<html`. Never weaken it, never add an exemption list: if it fires, the file is not a logo
 - A non-Commons logo lacks `licenceNote` or note is < 40 characters
 - A `noImageReason` is shorter than 60 characters, **or names fewer than two of the searched source
   families** in `NO_IMAGE_SOURCE_FAMILIES` (Commons, Wikipedia/Wikidata, the party's own site, the

@@ -1425,6 +1425,76 @@ files held on English Wikipedia and are declared with `licenceNote`s. All ten we
 
 ---
 
+### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
+
+Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
+(**PP-199**). Sweeping the class, as the repo's own rule requires, found the same defect on a scale
+no single country's audit would have surfaced.
+
+**104 of 619 bundled files were not images.** 101 were Wikimedia "page not found" **HTML** saved
+under an `.svg` extension; three were the media CDN's plain-text
+`File not found: /v1/AUTH_mw/…` body. They covered **33 countries** — for every one of them, *every
+party card in the grid was a broken image in production*.
+
+| | |
+|---|---|
+| Countries affected | AD AE AF AG AL AM AO AT AZ BA BB BE BF BG BH BI BJ BS BT BW BZ CM CR CZ DZ EE FI GE HU IE IL IS LT LU MT RO |
+| Party entries showing a broken image | **104** |
+| Recorded `logoSourceUrl`s pointing at a Commons file **that does not exist** | **97 of 101** |
+| Orphan broken files, referenced by nothing | 4 (`at/fpo.svg`, `at/oevp.svg`, `at/spo.svg`, `be/mr.svg`) |
+| Stray `.sha256` text files shipping as part of the site | 6 (`at/`, `be/`) |
+
+**The root cause was a fabricated citation, not a sourcing impossibility.** The filenames were
+invented from a plausible pattern — `Barbados_Labour_Party_logo.svg`, `FLN_Algeria_logo.svg`,
+`Bhutan_Kuen_Nyam_Party_logo.svg` — rather than read off the party's own article. The fetch wrote
+the 404 body to disk and the entry recorded *its* sha256, so **every existing check passed**: the
+path existed, the bytes hashed, the URL looked right. A sha256 proves a file has not *changed*; it
+can never prove it was ever right. And the real files mostly existed — Barbados Labour Party's logo
+is `Barbados Labour Party logo.png`, the same stem under a different extension.
+
+| ID | Sev | What | Evidence |
+|---|---|---|---|
+| PP-215 | **S1** | 101 logos were HTML error pages; 3 were plain-text CDN 404 bodies | Read the bundled bytes: they begin `<!DOCTYPE html>` / `File not found: /v1/AUTH_mw/…` |
+| PP-216 | **S1** | 97 of 101 recorded `logoSourceUrl`s resolve to a **missing** Commons/Wikipedia file page | Queried each one's `action=query&prop=imageinfo`; only 4 returned an image |
+| PP-217 | **S2** | 4 Indian logos were **PNG data under a `.svg` extension** (`in/bjp`, `in/inc`, `in/dmk`, `in/tmc`) | Magic-number sniff; files renamed to `.png` and the entries re-pointed |
+| PP-218 | **S4** | 4 orphan broken files and 6 stray `.sha256` text files shipping to users | Same hygiene defect already fixed in Chile, Colombia, the Netherlands and Denmark |
+| PP-219 | **S1** | **The gate could not see any of it.** `check-political-parties.mjs` now sniffs the bytes | `imageKind()` fails the build on HTML, on an unrecognisable body, and on image data contradicting its extension |
+
+**83 of the 104 were re-sourced and montage-verified**; the other 21 became honest
+`noImageReason` gaps. Resolution ran in three passes, each stricter than the last:
+
+1. **Wikidata, constrained by P17 (country), exact name/alias match only** — 40 hits. Fuzzy matches
+   were discarded, the discipline that removed every collision in the 2026-09-12 backfill.
+2. **The party's own English Wikipedia article**, accepted only when the infobox `country` matched
+   *and* the article's title or infobox name matched the party's own name — 29 more.
+3. **A hand-curated title list** for parties whose stored `nameEn` differs from their article title
+   (Finland's "National Coalition" → *National Coalition Party*, Afghanistan's "Islamic Society of
+   Afghanistan" → *Jamiat-e Islami*) — 15 more, minus two rejected below.
+
+**A first attempt at pass 2 silently resolved nothing** because its country guard compared against
+`COUNTRY_FACTS`, which carries `nameOfficial` but no common name: every comparison fell back to the
+ISO code and rejected every correct hit. Worth recording because it failed *quietly* — 0 matches
+reads exactly like "no logos exist".
+
+**Three picks were rejected on identity, two of them only by eye.** The montage is what caught the
+first; the other two were caught by comparing names:
+
+- **Georgia's Coalition for Change** resolved to `Ahali Party Logo.svg` — the logo of one **member**
+  party. The article's infobox carries it, so every mechanical check passed; bundling it would have
+  captioned Ahali's emblem as the alliance's. Left as a gap, with that reason recorded in the entry.
+- **Antigua's "Democratic Movement for Change"** resolved to the *Democratic National Alliance* (DNA)
+  and **Andorra's "Democratic Party of Andorra"** to *Democrats for Andorra* (DA). Near-miss
+  identities, which is the wrong-logo class this sweep exists to remove. Both left as gaps.
+
+**A tooling bug this pass created and fixed.** `patch.mjs` located a country block's end by scanning
+for a `"\n  ],\n"` line — but some blocks in this file end with the next country opening on the
+**same** line (`  ],  "AD": [`). The scan skipped past it and **deleted the whole of Andorra**. It
+now finds the closing bracket by counting brackets, ignoring those inside strings.
+
+Coverage after this pass: **531 parties carry a real, verified logo; 42 carry an honest gap.**
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.

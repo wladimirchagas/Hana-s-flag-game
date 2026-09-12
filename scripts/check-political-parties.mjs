@@ -34,7 +34,7 @@
 
 import { readFileSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
-import { dirname, resolve } from "node:path";
+import { dirname, resolve, extname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -66,6 +66,24 @@ function loadConst(src, marker) {
   const literal = src.slice(open, i);
   // eslint-disable-next-line no-new-func
   return Function(`"use strict"; return (${literal});`)();
+}
+
+/** Magic-number sniff: what kind of image (if any) are these bytes? */
+const SUFFIX_KIND = { ".svg": "svg", ".png": "png", ".jpg": "jpeg", ".jpeg": "jpeg", ".gif": "gif", ".webp": "webp" };
+function imageKind(buf) {
+  if (buf.length >= 8 && buf.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]))) return "png";
+  if (buf.length >= 3 && buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) return "jpeg";
+  if (buf.length >= 6 && buf.subarray(0, 6).toString("latin1").startsWith("GIF8")) return "gif";
+  if (buf.length >= 12 && buf.subarray(0, 4).toString("latin1") === "RIFF" && buf.subarray(8, 12).toString("latin1") === "WEBP") return "webp";
+  // Text formats: look past a BOM, whitespace, an XML declaration and any comments.
+  const head = buf.subarray(0, 4096).toString("utf8").replace(/^\uFEFF/, "").trimStart();
+  const lower = head.toLowerCase();
+  if (lower.startsWith("<!doctype html") || lower.startsWith("<html")) return "html";
+  const stripped = lower.replace(/^<\?xml[^>]*\?>\s*/, "").replace(/^(<!--[\s\S]*?-->|<!doctype svg[^>]*>|\s)+/, "");
+  if (stripped.startsWith("<svg")) return "svg";
+  if (lower.includes("<svg")) return "svg";
+  if (lower.includes("<html") || lower.includes("<!doctype html")) return "html";
+  return null;
 }
 
 const src = readFileSync(DATA_PATH, "utf8");
@@ -223,11 +241,28 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
       if (!existsSync(abs)) {
         fail(id, `logo "${p.logo}" is not bundled under public/`);
       } else {
+        const bytes = readFileSync(abs);
         if (!nonEmpty(p.sha256)) {
           fail(id, "logo is bundled but no sha256 was recorded");
         } else {
-          const digest = createHash("sha256").update(readFileSync(abs)).digest("hex");
+          const digest = createHash("sha256").update(bytes).digest("hex");
           if (digest !== p.sha256) fail(id, `logo "${p.logo}" does not match its recorded sha256 (file changed after fetch)`);
+        }
+        // A bundled logo must actually BE an image. Shipped 2026-09-12: 101
+        // party logos across 33 countries were Wikimedia "page not found" HTML
+        // saved under an .svg extension, because the recorded logoSourceUrl
+        // named a Commons file that does not exist and the fetch wrote the 404
+        // body to disk. Every one of those cards rendered as a broken image in
+        // production, and nothing caught it: the bytes hashed fine, the path
+        // existed, and the citation looked plausible. A sha256 proves a file
+        // has not CHANGED; it cannot prove it was ever right.
+        const kind = imageKind(bytes);
+        if (kind === "html") {
+          fail(id, `logo "${p.logo}" is an HTML page, not an image — almost certainly a saved Wikimedia error page. Re-source it from the party's own article and re-download, or drop the logo and write a noImageReason`);
+        } else if (kind === null) {
+          fail(id, `logo "${p.logo}" is not a recognisable image (expected SVG, PNG, JPEG, GIF or WebP bytes)`);
+        } else if (SUFFIX_KIND[extname(p.logo).toLowerCase()] && SUFFIX_KIND[extname(p.logo).toLowerCase()] !== kind) {
+          fail(id, `logo "${p.logo}" is ${kind} data under a ${extname(p.logo)} extension — the browser picks the decoder from the bytes, but a mismatch means the file is not what the entry claims`);
         }
       }
       // A Commons file is referenced either via its wiki page (commons.wikimedia.org)

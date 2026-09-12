@@ -1,41 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<title>Wikimedia Error</title>
-<style>
-* { margin: 0; padding: 0; }
-body { background: #fff; font: 15px/1.6 sans-serif; color: #333; }
-.content { margin: 7% auto 0; padding: 2em 1em 1em; max-width: 640px; display: flex; flex-direction: row; flex-wrap: wrap; }
-.footer { clear: both; margin-top: 14%; border-top: 1px solid #e5e5e5; background: #f9f9f9; padding: 2em 0; font-size: 0.8em; text-align: center; }
-img { margin: 0 2em 2em 0; }
-a img { border: 0; }
-h1 { margin-top: 1em; font-size: 1.2em; }
-.content-text { flex: 1; }
-p { margin: 0.7em 0 1em 0; }
-a { color: #0645ad; text-decoration: none; }
-a:hover { text-decoration: underline; }
-code { font-family: sans-serif; }
-summary { font-weight: bold; cursor: pointer; }
-details[open] { background: #970302; color: #dfdedd; }
-.text-muted { color: #777; }
-@media (prefers-color-scheme: dark) {
-  a { color: #9e9eff; }
-  body { background: transparent; color: #ddd; }
-  .footer { border-top: 1px solid #444; background: #060606; }
-  #logo { filter: invert(1) hue-rotate(180deg); }
-  .text-muted { color: #888; }
-}
-</style>
-<meta name="color-scheme" content="light dark">
-<div class="content" role="main">
-<a href="https://www.wikimedia.org"><img id="logo" src="https://www.wikimedia.org/static/images/wmf-logo.png" srcset="https://www.wikimedia.org/static/images/wmf-logo-2x.png 2x" alt="Wikimedia" width="135" height="101">
-</a>
-<div class="content-text">
-<h1>Error</h1>
-
-<p>Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)</p>
-</div>
-</div>
-<div class="footer"><p>If you report this error to the Wikimedia System Administrators, please include the details below.</p><p class="text-muted"><code>Request served via cp1113 cp1113, Varnish XID 993213089<br>Upstream caches: cp1113 int<br>Error: 429, Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1) at Wed, 09 Sep 2026 12:04:12 GMT<br><details><summary>Sensitive client information</summary>IP address: 160.79.106.131</details></code></p>
-</div>
-</html>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="65.510696"
+   height="65.7724"
+   viewBox="0 0 65.510696 65.7724"
+   fill="none"
+   version="1.1"
+   id="svg28"
+   sodipodi:docname="Logo_of_the_Estonian_Centre_Party_normal.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs32" />
+  <sodipodi:namedview
+     id="namedview30"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="11.707409"
+     inkscape:cx="38.010119"
+     inkscape:cy="36.173675"
+     inkscape:window-width="1920"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg28"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="m 58.6629,33.0002 c 0,0 5.9348,5.9172 6.6196,6.6 -0.2283,-2.2759 -1.1413,-4.3241 -2.7392,-5.9172 l -0.913,-0.6828 0.913,-0.6828 c 1.8261,-1.8206 2.9674,-4.5517 2.9674,-7.0551 0,-2.5035 -0.913,-5.0069 -2.9674,-7.0552 -3.4239,-3.4138 -8.6739,-3.869 -12.5543,-1.1379 l -15.9783,15.931 16.4348,16.3862 c 1.1413,0.6828 2.5109,1.1379 3.8805,1.3655 C 53.4129,49.8416 36.7499,33.2278 36.7499,33.2278 h 2.9674 l 17.5761,17.5241 c 0.913,-0.2276 1.5978,-0.4551 2.5108,-0.9103 -0.4565,-0.4552 -16.663,-16.6138 -16.663,-16.6138 h 2.9674 c 0,0 15.2934,15.2483 15.5217,15.4759 0.2283,-0.2276 0.913,-0.6828 0.913,-0.6828 0,0 0.4566,-0.6828 0.6848,-0.9104 C 62.9999,46.883 49.3042,33.2278 49.3042,33.2278 h 2.9674 c 0,0 11.6413,11.6069 12.0978,12.0621 0.4566,-0.6828 0.6848,-1.5931 0.9131,-2.2759 l -9.8152,-9.7862 z"
+     fill="#ffffff"
+     id="path24"
+     style="fill:#008d6a;fill-opacity:1" />
+  <path
+     d="m 26.25,47.1103 v -2.9586 c 1.3696,-1.3655 2.5109,-2.5034 3.6522,-3.6414 L 31.5,42.1035 c -1.1413,1.1379 -3.1957,2.9586 -5.25,5.0068 z m 0,-8.8758 0.6848,-0.6828 1.3695,1.3655 C 27.6196,39.6 26.9348,40.2828 26.25,40.9655 Z M 27.163,28.2207 C 26.9348,27.9931 26.7065,27.7655 26.25,27.3103 v -2.2758 l 2.0543,2.0483 z m 21.9131,22.531 H 41.087 L 25.5652,35.2759 V 50.7517 H 17.1196 V 15.2483 h 8.4456 V 30.7241 L 41.087,15.2483 h 7.9891 l 0.2282,-0.2276 c 0.9131,-1.3655 1.1413,-2.731 1.3696,-4.0966 -0.2283,0.2276 -1.5978,1.5931 -3.6522,3.6414 H 44.0543 C 47.4783,11.1517 50.6739,7.96552 50.6739,7.96552 50.4456,7.05517 50.2174,6.37241 49.7609,5.46207 49.3043,5.91724 33.0978,22.0759 33.0978,22.0759 v -2.9587 c 0,0 15.2935,-15.24823 15.5218,-15.47582 L 47.9348,2.95862 c 0,0 -0.6848,-0.68276 -0.9131,-0.91034 C 46.7935,2.27586 33.0978,15.931 33.0978,15.931 v -2.9586 c 0,0 11.6413,-11.60688 12.0978,-12.062055 C 44.5109,0.455172 43.5978,0.227586 42.913,0 L 33.0978,9.78621 V 6.82759 c 0,0 5.9348,-5.917245 6.6196,-6.600004 -2.2826,0.227586 -4.337,1.137934 -5.9348,2.731034 L 32.8696,3.86897 32.1848,2.95862 C 30.3587,1.13793 27.6196,0 25.1087,0 22.8261,0 20.3152,0.910345 18.2609,2.95862 15.2935,6.14483 14.6087,10.6966 16.4348,14.3379 v 3.4138 c -1.5978,-1.3655 -3.4239,-2.0482 -5.25,-2.2758 0.2282,0.2276 2.5109,2.5034 5.25,5.2344 v 2.9587 c -4.1087,-4.0966 -8.21741,-8.1931 -8.21741,-8.1931 -0.91304,0 -1.82609,0.4551 -2.51087,0.6827 0.22826,0.2276 6.16308,6.1448 10.72828,10.6966 v 2.9586 C 11.8696,25.2621 3.88043,17.2966 3.65217,17.069 c 0,0.4551 -0.68478,1.1379 -0.68478,1.1379 L 2.28261,18.8897 C 2.51087,19.1172 16.2065,32.7724 16.2065,32.7724 h -2.9674 c 0,0 -11.64127,-11.6069 -12.0978,-12.0621 -0.456517,0.6828 -0.684778,1.5931 -0.913039,2.2759 L 10.0435,32.7724 H 7.07609 c 0,0 -5.93479,-5.9172 -6.619568,-6.6 0.228261,2.2759 1.141308,4.3242 2.739128,5.9173 L 3.88043,33 2.96739,33.6828 C 1.1413,35.5035 0,38.2345 0,40.7379 c 0,2.5035 0.913043,5.0069 2.96739,7.0552 3.65217,3.6414 9.58691,3.869 13.69561,0.4552 v 3.1862 c -0.4565,1.1379 -0.913,2.2759 -1.1413,3.6414 0.2283,-0.2276 1.5979,-1.5931 3.6522,-3.6414 h 2.9674 c -3.4239,3.4138 -6.6196,6.6 -6.6196,6.6 0.2283,0.9103 0.4566,1.5931 0.9131,2.5034 0.2282,-0.2276 16.663,-16.6138 16.663,-16.6138 v 2.9587 c 0,0 -15.2935,15.2482 -15.5217,15.4758 l 0.6848,0.6828 0.6848,0.6827 C 19.1739,63.4966 32.8696,49.8414 32.8696,49.8414 V 52.8 L 20.7717,64.8621 c 0.6848,0.4551 1.5979,0.6827 2.2826,0.9103 l 9.8153,-9.7862 v 2.9586 c 0,0 -5.9348,5.9173 -6.6196,6.6 2.2826,-0.2276 4.337,-1.1379 5.9348,-2.731 l 0.913,-0.9103 0.6848,0.9103 c 1.8261,1.8207 4.5652,2.9586 7.0761,2.9586 2.5109,0 5.0217,-0.9103 7.0761,-2.9586 3.1956,-3.1862 3.6522,-8.1931 1.5978,-12.0621 z"
+     fill="#ffffff"
+     id="path26"
+     style="fill:#008d6a;fill-opacity:1" />
+</svg>
