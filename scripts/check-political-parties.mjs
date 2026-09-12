@@ -99,7 +99,7 @@ const GRANDFATHERED_PARTIES_WITH_NO_IMAGE = new Set([
   // (Ecuador's four entries were all removed or given real logos in the 2026 audit.)
   // (Guyana's three entries were all removed or given real logos in the 2026 audit.)
   // (Paraguay's three entries were all removed or given real logos in the 2026 audit.)
-  "SR-NF", "SR-VHP",
+  // (Suriname's two entries were removed or given a real logo in the 2026 audit.)
 ]);
 
 const isHttpUrl = (u) => {

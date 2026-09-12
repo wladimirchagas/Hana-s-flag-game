@@ -16743,29 +16743,40 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "SR": [
     {
-      "id": "SR-NF",
+      "id": "SR-NDP",
       "country": "SR",
-      "shortName": "NF",
-      "name": "Nieuw Front voor Democratie",
-      "nameEn": "New Front for Democracy",
-      "noImageReason": "Logo search across Wikimedia Commons and Surinamese political archives; no freely-licensed high-resolution logo available.",
-      "ideology": ["Social democracy", "Progressivism"],
+      "shortName": "NDP",
+      "name": "Nationale Democratische Partij",
+      "nameEn": "National Democratic Party",
+      "logo": "party-logos/sr/ndp.png",
+      "sha256": "e050acceafc7a3728dd00adee11703c612dff49c480f2c86948bc95c03cabca0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:NDP_Suriname_logo.png",
+      "ideology": [
+        "Nationalism"
+      ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
       "founded": 1987,
+      "leader": "Jennifer Geerlings-Simons",
+      "leaderTitle": "President",
       "inPower": true,
-      "timeInPower": "2020-present",
-      "seats": 20,
+      "inExecutive": true,
+      "timeInPower": "In government since Jennifer Geerlings-Simons was inaugurated president on 16 July 2025.",
+      "seats": 18,
       "seatsTotal": 51,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "2020 Surinamese general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Surinamese_general_election"
+          "title": "National Democratic Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/National_Democratic_Party_(Suriname)"
         },
         {
-          "title": "New Front for Democracy — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/New_Front_for_Democracy"
+          "title": "National Assembly (Suriname) — Wikipedia: 8th Assembly, 51 members elected 25 May 2025 — Government 34 (NDP 18, ABOP 6, NPS 6, PL 2, BEP 1, A20 1); Opposition VHP 17",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Suriname)"
+        },
+        {
+          "title": "President of Suriname — Wikipedia (Jennifer Geerlings-Simons of the National Democratic Party, inaugurated 16 July 2025)",
+          "url": "https://en.wikipedia.org/wiki/President_of_Suriname"
         }
       ]
     },
@@ -16773,26 +16784,163 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "SR-VHP",
       "country": "SR",
       "shortName": "VHP",
-      "name": "Vooruitstrevende Hervorming Partij",
+      "name": "Vooruitstrevende Hervormings Partij",
       "nameEn": "Progressive Reform Party",
-      "noImageReason": "Logo search across Wikimedia Commons and Surinamese sources; no freely-licensed logo found. Party historical materials use minimal graphic branding.",
-      "ideology": ["Liberalism", "Social democracy"],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
-      "founded": 1961,
+      "logo": "party-logos/sr/vhp.png",
+      "sha256": "b2a2d92a3d7c4ca85bb3818a3165441810ac51db797e9f54412c4e48c45e2840",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Progressive_Reform_Party_%28Suriname%29.png",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Progressive Reform Party emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, at low resolution for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Social democracy",
+        "Third Way",
+        "Civic nationalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1949,
       "inPower": false,
-      "inExecutive": true,
-      "seats": 14,
+      "seats": 17,
       "seatsTotal": 51,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "2020 Surinamese general election — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2020_Surinamese_general_election"
+          "title": "Progressive Reform Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Progressive_Reform_Party_(Suriname)"
         },
         {
-          "title": "Progressive Reform Party — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Progressive_Reform_Party"
+          "title": "National Assembly (Suriname) — Wikipedia: 8th Assembly, 51 members elected 25 May 2025 — Government 34 (NDP 18, ABOP 6, NPS 6, PL 2, BEP 1, A20 1); Opposition VHP 17",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Suriname)"
+        }
+      ]
+    },
+    {
+      "id": "SR-ABOP",
+      "country": "SR",
+      "shortName": "ABOP",
+      "name": "Algemene Bevrijdings- en Ontwikkelingspartij",
+      "nameEn": "General Liberation and Development Party",
+      "logo": "party-logos/sr/abop.svg",
+      "sha256": "efcb5d459e7de7fbeae7d792500d55d8c592b616876b7d0094473954f29b2867",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:ABOP_logo.svg",
+      "ideology": [
+        "Maroon interests"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1990,
+      "leader": "Ronnie Brunswijk",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "In the governing coalition formed after the May 2025 election.",
+      "seats": 6,
+      "seatsTotal": 51,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "General Liberation and Development Party — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/General_Liberation_and_Development_Party"
+        },
+        {
+          "title": "National Assembly (Suriname) — Wikipedia: 8th Assembly, 51 members elected 25 May 2025 — Government 34 (NDP 18, ABOP 6, NPS 6, PL 2, BEP 1, A20 1); Opposition VHP 17",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Suriname)"
+        }
+      ]
+    },
+    {
+      "id": "SR-NPS",
+      "country": "SR",
+      "shortName": "NPS",
+      "name": "Nationale Partij Suriname",
+      "nameEn": "National Party of Suriname",
+      "logo": "party-logos/sr/nps.png",
+      "sha256": "b0313039b16a28407fe667260853c1c6312d9e2407cb5e5c9bbacfed2c072795",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:National_Party_of_Suriname_logo.png",
+      "licenceNote": "Non-free logo. No freely-licensed file of the National Party of Suriname emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, at low resolution for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Social democracy",
+        "Third Way"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1946,
+      "leader": "Gregory Rusland",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "In the governing coalition formed after the May 2025 election.",
+      "seats": 6,
+      "seatsTotal": 51,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "National Party of Suriname — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/National_Party_of_Suriname"
+        },
+        {
+          "title": "National Assembly (Suriname) — Wikipedia: 8th Assembly, 51 members elected 25 May 2025 — Government 34 (NDP 18, ABOP 6, NPS 6, PL 2, BEP 1, A20 1); Opposition VHP 17",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Suriname)"
+        }
+      ]
+    },
+    {
+      "id": "SR-PL",
+      "country": "SR",
+      "shortName": "PL",
+      "name": "Pertjajah Luhur",
+      "nameEn": "Full of Trust",
+      "logo": "party-logos/sr/pl.svg",
+      "sha256": "93ab34aba171f119cd9aa348f2d8a9e4df1f60542da0b0291cf168da4ce09fe0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Pertjajah_Luhur_logo.svg",
+      "ideology": [
+        "Javanese Surinamese interests"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1998,
+      "leader": "Paul Somohardjo",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "timeInPower": "In the governing coalition formed after the May 2025 election.",
+      "seats": 2,
+      "seatsTotal": 51,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Full of Trust — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Pertjajah_Luhur"
+        },
+        {
+          "title": "National Assembly (Suriname) — Wikipedia: 8th Assembly, 51 members elected 25 May 2025 — Government 34 (NDP 18, ABOP 6, NPS 6, PL 2, BEP 1, A20 1); Opposition VHP 17",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Suriname)"
+        }
+      ]
+    },
+    {
+      "id": "SR-BEP",
+      "country": "SR",
+      "shortName": "BEP",
+      "name": "Broederschap en Eenheid in de Politiek",
+      "nameEn": "Brotherhood and Unity in Politics",
+      "logo": "party-logos/sr/bep.png",
+      "sha256": "6c6383fffc8887ae15aa94e2f34636c1b13265392d76c389fddcafec5b5d7a11",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Brotherhood_and_Unity_in_Politics.png",
+      "licenceNote": "Non-free logo. No freely-licensed file of the Brotherhood and Unity in Politics emblem exists on Wikimedia Commons; this is the file English Wikipedia hosts under a fair-use rationale as the party's official logo. It is bundled here, cited, at low resolution for identification of the party only — the same position taken for the non-free football crests and passport covers elsewhere in this repository. Replace it the moment a freely-licensed file exists.",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1973,
+      "inPower": true,
+      "timeInPower": "In the governing coalition formed after the May 2025 election.",
+      "seats": 1,
+      "seatsTotal": 51,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Brotherhood and Unity in Politics — Wikipedia: ideology, political position, founding year and leadership",
+          "url": "https://en.wikipedia.org/wiki/Brotherhood_and_Unity_in_Politics"
+        },
+        {
+          "title": "National Assembly (Suriname) — Wikipedia: 8th Assembly, 51 members elected 25 May 2025 — Government 34 (NDP 18, ABOP 6, NPS 6, PL 2, BEP 1, A20 1); Opposition VHP 17",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_(Suriname)"
         }
       ]
     }
