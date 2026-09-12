@@ -7410,6 +7410,192 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "MN": [
+    {
+      "id": "MN-MPP",
+      "country": "MN",
+      "shortName": "MPP",
+      "name": "Монгол Ардын Нам",
+      "nameEn": "Mongolian People's Party",
+      "logo": "party-logos/mn/mpp.svg",
+      "sha256": "6a462595809f0733d1d9c5d2aa7cfafe2a90b9ebe9b84f4a1b1f2d4aebe0849f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Mongolian_People's_Party.svg",
+      "ideology": [
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1920,
+      "leader": "Nyam-Osoryn Uchral",
+      "leaderTitle": "Chairperson",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the MPP–HUN–National Coalition government formed on 4 April 2026 under Prime Minister Nyam-Osoryn Uchral, which holds 79 of the Khural's 126 seats; each of the three governing parties supplies a deputy prime minister.",
+      "seats": 68,
+      "seatsTotal": 126,
+      "chamberName": "State Great Khural",
+      "sources": [
+        {
+          "title": "Mongolian People's Party — Wikipedia (infobox: founded 25 June 1920; Chairperson Nyam-Osoryn Uchral, who is also Prime Minister; centre-left)",
+          "url": "https://en.wikipedia.org/wiki/Mongolian_People%27s_Party"
+        },
+        {
+          "title": "State Great Khural — Wikipedia (composition of the 9th Khural elected 28 June 2024: government MPP 68, HUN 7, National Coalition 4; opposition Democratic 42, Civil Will–Green 4, independent 1, of 126)",
+          "url": "https://en.wikipedia.org/wiki/State_Great_Khural"
+        },
+        {
+          "title": "Cabinet of Nyam-Osoryn Uchral — Wikipedia (Mongolia's 22nd government, formed 4 April 2026; a coalition of the MPP, the HUN Party and the National Coalition holding 79 of 126 seats, with a deputy prime minister from each of the three)",
+          "url": "https://en.wikipedia.org/wiki/Cabinet_of_Nyam-Osoryn_Uchral"
+        }
+      ]
+    },
+    {
+      "id": "MN-DP",
+      "country": "MN",
+      "shortName": "DP",
+      "name": "Ардчилсан Нам",
+      "nameEn": "Democratic Party",
+      "logo": "party-logos/mn/dp.svg",
+      "sha256": "9f113154ad5530011d855411d75470fd992656f4b2ab2efe8111ff60e44047b2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Democratic_Party_of_Mongolia_emblem_since_2026.svg",
+      "ideology": [
+        "Liberal conservatism",
+        "Liberalism",
+        "Economic liberalism",
+        "Mongolian nationalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2000,
+      "leader": "Odongiin Tsogtgerel",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 42,
+      "seatsTotal": 126,
+      "chamberName": "State Great Khural",
+      "sources": [
+        {
+          "title": "Democratic Party (Mongolia) — Wikipedia (infobox: founded 6 December 2000; leader Odongiin Tsogtgerel; centre-right). The bundled emblem is the party's 2026 redesign, which is the file its own infobox now carries.",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_(Mongolia)"
+        },
+        {
+          "title": "State Great Khural — Wikipedia (composition of the 9th Khural elected 28 June 2024: government MPP 68, HUN 7, National Coalition 4; opposition Democratic 42, Civil Will–Green 4, independent 1, of 126)",
+          "url": "https://en.wikipedia.org/wiki/State_Great_Khural"
+        }
+      ]
+    },
+    {
+      "id": "MN-HUN",
+      "country": "MN",
+      "shortName": "HUN",
+      "name": "ХҮН нам",
+      "nameEn": "HUN Party",
+      "logo": "party-logos/mn/hun.svg",
+      "sha256": "f5f6e664abaeb1a92467ab41e00925dd2c1803b058e97da0629f255cefdcbc48",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:HUN_Party_logo.svg",
+      "ideology": [
+        "Liberalism",
+        "Pragmatism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2011,
+      "leader": "Togmidyn Dorjkhand",
+      "leaderTitle": "Chairperson",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the MPP–HUN–National Coalition government formed on 4 April 2026 under Prime Minister Nyam-Osoryn Uchral, which holds 79 of the Khural's 126 seats; each of the three governing parties supplies a deputy prime minister.",
+      "seats": 7,
+      "seatsTotal": 126,
+      "chamberName": "State Great Khural",
+      "sources": [
+        {
+          "title": "HUN Party — Wikipedia (infobox: founded 5 November 2011; Chairperson Togmidyn Dorjkhand, a deputy prime minister; centre-right). It won 8 seats in 2024 and the chamber now records 7.",
+          "url": "https://en.wikipedia.org/wiki/HUN_Party"
+        },
+        {
+          "title": "State Great Khural — Wikipedia (composition of the 9th Khural elected 28 June 2024: government MPP 68, HUN 7, National Coalition 4; opposition Democratic 42, Civil Will–Green 4, independent 1, of 126)",
+          "url": "https://en.wikipedia.org/wiki/State_Great_Khural"
+        },
+        {
+          "title": "Cabinet of Nyam-Osoryn Uchral — Wikipedia (Mongolia's 22nd government, formed 4 April 2026; a coalition of the MPP, the HUN Party and the National Coalition holding 79 of 126 seats, with a deputy prime minister from each of the three)",
+          "url": "https://en.wikipedia.org/wiki/Cabinet_of_Nyam-Osoryn_Uchral"
+        }
+      ]
+    },
+    {
+      "id": "MN-NATIONAL-COALITION",
+      "country": "MN",
+      "shortName": "National Coalition",
+      "name": "Үндэсний Эвсэл",
+      "nameEn": "National Coalition",
+      "logo": "party-logos/mn/nc.svg",
+      "sha256": "e2ae9db03d1deb035abcb5cfebff2b2660f9c83297dcaa2149ff72ef816e180f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_National_Coalition_(Mongolia).svg",
+      "licenceNote": "Non-free. National Coalition's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Big tent",
+        "Anti-corruption"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2024,
+      "leader": "Nyamtaishiryn Nomtoibayar",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the MPP–HUN–National Coalition government formed on 4 April 2026 under Prime Minister Nyam-Osoryn Uchral, which holds 79 of the Khural's 126 seats; each of the three governing parties supplies a deputy prime minister.",
+      "seats": 4,
+      "seatsTotal": 126,
+      "chamberName": "State Great Khural",
+      "sources": [
+        {
+          "title": "National Coalition (Mongolia) — Wikipedia (founded 29 January 2024; leader Nyamtaishiryn Nomtoibayar, a deputy prime minister; centre-right). It is an alliance of the Mongolian Green Party, the Mongolian National Democratic Party and the Mongolian Liberal Democratic Party, and won its four seats on a single coalition list; no source splits those four between the three, so it is entered as one group rather than invented apart (the Green Party's own infobox claims one of them, and the National Democratic Party's claims none).",
+          "url": "https://en.wikipedia.org/wiki/National_Coalition_(Mongolia)"
+        },
+        {
+          "title": "State Great Khural — Wikipedia (composition of the 9th Khural elected 28 June 2024: government MPP 68, HUN 7, National Coalition 4; opposition Democratic 42, Civil Will–Green 4, independent 1, of 126)",
+          "url": "https://en.wikipedia.org/wiki/State_Great_Khural"
+        },
+        {
+          "title": "Cabinet of Nyam-Osoryn Uchral — Wikipedia (Mongolia's 22nd government, formed 4 April 2026; a coalition of the MPP, the HUN Party and the National Coalition holding 79 of 126 seats, with a deputy prime minister from each of the three)",
+          "url": "https://en.wikipedia.org/wiki/Cabinet_of_Nyam-Osoryn_Uchral"
+        }
+      ]
+    },
+    {
+      "id": "MN-CWGP",
+      "country": "MN",
+      "shortName": "CWGP",
+      "name": "Иргэний Зориг Ногоон Нам",
+      "nameEn": "Civil Will–Green Party",
+      "logo": "party-logos/mn/cwgp.svg",
+      "sha256": "c715f05025e57184606e921730aeda0c977a1694b3fbb4e6de45f014566932ed",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Civil_Will_Green_Party_emblem.svg",
+      "ideology": [
+        "Green liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2012,
+      "leader": "Batyn Batbaatar",
+      "leaderTitle": "Chairperson",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 126,
+      "chamberName": "State Great Khural",
+      "sources": [
+        {
+          "title": "Civil Will–Green Party — Wikipedia (infobox: founded 12 March 2012; Chairperson Batyn Batbaatar; centre)",
+          "url": "https://en.wikipedia.org/wiki/Civil_Will%E2%80%93Green_Party"
+        },
+        {
+          "title": "State Great Khural — Wikipedia (composition of the 9th Khural elected 28 June 2024: government MPP 68, HUN 7, National Coalition 4; opposition Democratic 42, Civil Will–Green 4, independent 1, of 126)",
+          "url": "https://en.wikipedia.org/wiki/State_Great_Khural"
+        }
+      ]
+    }
+  ],
   "KZ": [
     {
       "id": "KZ-ADILET",
