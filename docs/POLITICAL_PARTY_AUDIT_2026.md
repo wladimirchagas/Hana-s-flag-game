@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 19 / 195 — Southeast Asia complete; South America under way.**
+**Countries audited: 20 / 195 — Southeast Asia complete; South America under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -65,6 +65,7 @@ forgotten; it is tracked here.
 | 🇵🇪 Peru | `#1329` | 6 → 6 | **130 / 130** | **WRONG — a legislature that no longer exists** |
 | 🇻🇪 Venezuela | `#1330` | **1 → 20** | 277 / 285 | **WRONG — one party credited with every seat** |
 | 🇪🇨 Ecuador | `#1331` | 4 → 6 | 133 / 151 | **WRONG — a fictitious party with 17 seats** |
+| 🇧🇴 Bolivia | `#1332` | 3 → 6 | 129 / 130 | **WRONG — two invented parties, no government** |
 
 ---
 
@@ -635,6 +636,34 @@ All four of Ecuador's entries have left `GRANDFATHERED_PARTIES_WITH_NO_IMAGE`.
 
 ---
 
+### 🇧🇴 Bolivia — audited 2026-09-12
+
+Bolivia's three entries were **garbled rather than merely stale**: two of them named a party that
+does not exist under that name, and attached to it the leader of a *different* party.
+
+The Chamber of Deputies elected on 17 August 2025 seats seven groups across 130 members: **PDC 49**
+(government), **Alianza Libre 39**, **Unidad 26**, **Alianza Popular 8**, **APB Súmate 5** (ally),
+**MAS-IPSP 2**, **Bia Yuqui 1**. Rodrigo Paz of the PDC has been president since 8 November 2025.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-092 | **S1** | existence | **"Arcistas por Bolivia" (16 seats), led by Luis Fernando Camacho**; **"Unidad Movil" (8), led by Oscar Ortiz** | removed; replaced by the groups that actually sit | Neither name appears in the Chamber. Camacho leads **Creemos**, not an "Arcistas" party; "Unidad Movil" is not a Bolivian party at all — the bloc is **Bloque de Unidad** |
+| PP-093 | **S1** | coverage | 3 parties, 26 of 130 | **6 parties, 129 of 130** | Five of the seven seated groups were absent, including **PDC**, the party of the President, with 49 seats |
+| PP-094 | **S1** | `inPower` / `inExecutive` | **false on every party** — Bolivia had no governing party at all | **PDC** in power and in the executive; **APB Súmate** in power as its ally | Rodrigo Paz (PDC) took office 8 November 2025 |
+| PP-095 | **S1** | `chamberName` | "Plurinational Legislative Assembly" | **"Chamber of Deputies"** | The Assembly is the whole bicameral body (130 + 36); 130 is the lower house alone |
+| PP-096 | **S2** | `seats` | MAS 2 | 2 — **the one figure that was right** | MAS-IPSP collapsed from governing party to two seats at the 2025 election |
+| PP-097 | **S3** | `founded` | "Arcistas" 2017, "Unidad Movil" 2018 | n/a — entries removed | Both were inventions of the removed entries |
+
+**Documented gap — 1 of the 130 seats is deliberately not modelled.** **Bia Yuqui** (Consejo Indígena
+Yuqui Bia Recuate) holds one special indigenous-constituency seat, and no reachable source gives it a
+founding year, which the schema requires. Recorded, not hidden — the same mandatory-field wall as
+Thailand, the Philippines, Chile, Colombia and Venezuela.
+
+All six logos were downloaded from Commons (all public domain), byte-checked against their extension,
+and montage-verified.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -666,7 +695,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `PE` Peru — merged
 - [x] `VE` Venezuela — merged
 - [x] `EC` Ecuador — merged
-- [ ] `BO` Bolivia
+- [x] `BO` Bolivia — merged
 - [ ] `PY` Paraguay
 - [ ] `UY` Uruguay
 - [ ] `GY` Guyana
