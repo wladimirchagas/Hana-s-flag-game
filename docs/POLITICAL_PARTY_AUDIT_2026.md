@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 35 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 36 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -81,6 +81,7 @@ forgotten; it is tracked here.
 | 🇳🇱 Netherlands | `#1346` | 5 → 15 | 142 / 150 | **WRONG — a rival party's politician as VVD leader** |
 | 🇧🇪 Belgium | `#1347` | 9 → 12 | 149 / 150 | **WRONG — two parties under names they dropped** |
 | 🇳🇴 Norway | `#1348` | 9 → 9 | **169 / 169** | **IMPOSSIBLE TOTAL — 191 seats in a 169-seat Storting** |
+| 🇸🇪 Sweden | `#1349` | 4 → 11 | **349 / 349** | **WRONG — largest party understated by 39 seats** |
 
 ---
 
@@ -1277,6 +1278,35 @@ country in this sweep to reconcile **exactly**.
 
 ---
 
+### 🇸🇪 Sweden — audited 2026-09-12
+
+Sweden held **four parties covering 236 of 349 seats**, on figures from the 2022 election, with the
+governing coalition's two junior partners and the entire left of the chamber absent. The Social
+Democrats — the largest party in the Riksdag, with 106 seats — were carried at **67**.
+
+The Riksdag: **Government 103** (Moderates 66, Christian Democrats 19, Liberals 16, two non-attached
+Sweden Democrats), **supported by 73** (Sweden Democrats 70, Ambition Sweden 2, one Christian
+Democrat), **Opposition 173** (Social Democrats 106, Centre 24, Left 21, Green 18, Future Left 3,
+Unity 1).
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-184 | **S1** | `seats` | S 67, M 68, SD 73, V 28 | **S 106, SD 72, M 66, V 21** | The Riksdag's own composition. The Social Democrats were understated by **39 seats** |
+| PP-185 | **S1** | coverage | 4 parties, 236 of 349 | **11 parties, 349 of 349 — exact** | The **Christian Democrats** and **Liberals**, both in government, were absent, as were the Centre and Green parties and three parties founded in 2025 |
+| PP-186 | **S1** | `leader` | S led by **Magdalena Andersson**, SD by **Jimmie Åkesson**, V by **Nooshi Dadgostar** | **Lena Hallengren, Mattias Bäckström Johansson, Samuel Gonzalez Westling** | Each party's own article. Only the Moderates' Ulf Kristersson was still correct |
+| PP-187 | **S1** | `inPower` | **Moderates only**, with the Sweden Democrats out of power | Moderates, Christian Democrats and Liberals in the executive; **Sweden Democrats and Ambition Sweden in power** on confidence and supply | The Tidö Agreement: the SD is the government's largest supporting party and was recorded as opposition |
+| PP-188 | **S2** | `founded` | Centre Party absent; V **1917** | 1913; V **1917** confirmed | party infoboxes |
+| PP-189 | **S3** | coalitions | none | **`SE-GOV`** (the Tidö coalition, 103 seats) | The Riksdag's own Government grouping |
+
+**Three parties in this Riksdag were founded in 2025** and could not have been in the old entries:
+**Ambition Sweden** (June 2025, 2 seats, supporting the government), **Unity** (August 2025, 1) and
+**Future Left** (December 2025, 3).
+
+**Seven non-free logos, declared**; four are on Commons. All eleven were montage-verified. Sweden is
+the sixth country in this sweep to reconcile **exactly**.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -1356,7 +1386,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `LV` Latvia
 - [ ] `EE` Estonia
 - [ ] `FI` Finland
-- [ ] `SE` Sweden
+- [x] `SE` Sweden — merged
 - [x] `NO` Norway — merged
 - [ ] `DK` Denmark
 - [ ] `IS` Iceland
