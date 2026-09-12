@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 26 / 195 — Southeast Asia and South America complete; Phase 4 under way.**
+**Countries audited: 27 / 195 — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -72,6 +72,7 @@ forgotten; it is tracked here.
 | 🇸🇷 Suriname | `#1336` | 2 → 6 | 50 / 51 | **WRONG — a defunct 1987 coalition marked as governing** |
 | 🇬🇧 United Kingdom | `#1337` | **1 → 15** | 637 / 650 | **WRONG — a former prime minister, no opposition at all** |
 | 🇺🇸 United States | `#1338` | 2 → 2 | 432 / 435 | **CONTRADICTORY — two simultaneous presidents** |
+| 🇨🇦 Canada | `#1339` | 1 → 5 | 338 / 343 | **WRONG — a departed PM, a retired chamber size** |
 
 ---
 
@@ -908,6 +909,49 @@ Both logos are public domain on Commons and were montage-verified.
 
 ---
 
+### 🇨🇦 Canada — audited 2026-09-12
+
+Canada had **one party**, led by a prime minister who left office in 2025, sitting in a House of
+Commons that no longer has that many seats.
+
+The 45th Parliament was elected on 28 April 2025 into a **343-seat** chamber (redistribution added
+five seats): **Liberal 173** (government), **Conservative 138** (Official Opposition), **Bloc
+Québécois 21**, **New Democratic 5**, **Green 1**, 5 vacancies.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-135 | **S1** | `leader` | **Justin Trudeau** | **Mark Carney** | Carney succeeded Trudeau as Liberal leader and prime minister in 2025 and won the April election |
+| PP-136 | **S1** | `seatsTotal` | **338** | **343** | The 2022 redistribution raised the Commons from 338 to 343 seats, effective at the 2025 election |
+| PP-137 | **S1** | `seats` | Liberal **160** | **173** | The Liberals' result at the 2025 election |
+| PP-138 | **S1** | coverage | 1 party | **5 parties, 338 of 343** | The Conservative Party — the Official Opposition, with 138 seats — was absent, as were the Bloc, the NDP and the Greens |
+| PP-139 | **S3** | `inExecutive` | absent | **true** on the Liberals | The party holds the government |
+
+**Documented gap — 5 of the 343 seats are vacancies.** No other party holds a Commons seat, so these
+five entries are full coverage of the chamber's parties.
+
+**Two non-free logos, declared.** The Liberal Party's mark is a fair-use file on English Wikipedia;
+the Bloc Québécois's is held there as public domain (below the threshold of originality). Each
+carries the matching `licenceNote`. The Conservative, NDP and Green logos are on Commons.
+
+All five logos were montage-verified.
+
+---
+
+## Phase 4 complete — United Kingdom, United States, Canada
+
+Three of the world's most-viewed democracies, and all three were wrong in a way a reader would
+notice immediately:
+
+* **The UK** had one party and no opposition at all, led by a former prime minister.
+* **The US** had **two simultaneous presidents**, one of whom has never held the office, and showed
+  House control on the wrong side.
+* **Canada** had one party, a prime minister who left in 2025, and a chamber size retired at the
+  2025 election.
+
+Coverage across the three went from **4 parties to 22**.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -949,7 +993,7 @@ Tick a box only when that country's fix is **merged and live**.
 
 - [x] `GB` United Kingdom — merged
 - [x] `US` United States — merged
-- [ ] `CA` Canada
+- [x] `CA` Canada — merged
 
 ### Phase 5 — Europe (45)
 
