@@ -42,7 +42,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 37 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
+**Countries audited: 38 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe under way.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -83,6 +83,7 @@ forgotten; it is tracked here.
 | 🇳🇴 Norway | `#1348` | 9 → 9 | **169 / 169** | **IMPOSSIBLE TOTAL — 191 seats in a 169-seat Storting** |
 | 🇸🇪 Sweden | `#1349` | 4 → 11 | **349 / 349** | **WRONG — largest party understated by 39 seats** |
 | 🇩🇰 Denmark | `#1350` | 7 → 12 | 171 / 179 | **FABRICATED PARTY — 50 seats for one that does not exist** |
+| 🇮🇪 Ireland | `#1351` | 3 → 10 | 159 / 174 | **BROKEN IMAGES — every logo was an HTML error page** |
 
 ---
 
@@ -1338,6 +1339,53 @@ All twelve logos are public domain on Commons and were montage-verified.
 
 ---
 
+### 🇮🇪 Ireland — audited 2026-09-12
+
+**Every one of Ireland's three logo files was a Wikimedia error page, not an image.**
+`fianna-fail.svg`, `fine-gael.svg` and `sinn-fein.svg` were each 2,256 bytes of
+`<!DOCTYPE html><title>Wikimedia Error</title>…` saved under an `.svg` extension. All three
+were shipping to users, and all three rendered broken — the whole country's grid was empty
+boxes. This is the same class as Timor-Leste's audio file and Indonesia's wrong-company logo,
+and it is why `getlogo.mjs` now refuses any download whose first bytes are HTML.
+
+The Dáil was also the wrong size. The **Electoral (Amendment) Act 2023 raised the Dáil from 160
+to 174 seats** for the 2024 general election; the entries still carried `seatsTotal: 160`, so
+every percentage the widget rendered was computed against a chamber that no longer exists.
+
+The 34th Dáil, 174 seats: **Government 90** — Fianna Fáil 48, Fine Gael 38, independents 4 —
+**supported by 3** independents, **Opposition 80** — Sinn Féin 39, Social Democrats 12, Labour
+11, Independent Ireland 4, PBP–Solidarity 3, Aontú 2, Green Party 1, 100% Redress 1,
+independents 7 — plus the Ceann Comhairle.
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-199 | **S1** | `logo` | **all three files were Wikimedia HTML error pages** saved as `.svg` | ten real, montage-verified logos | The bundled bytes begin `<!DOCTYPE html>`; a browser renders nothing. Verified by reading the files, then by re-rendering the replacements |
+| PP-200 | **S1** | `seatsTotal` | **160** | **174** | The Dáil was enlarged by the Electoral (Amendment) Act 2023 and 174 TDs were returned on 29 November 2024 |
+| PP-201 | **S1** | `seats` | FF **78**, FG 37, SF 37 | **FF 48, SF 39, FG 38** | The 34th Dáil's own composition table. Fianna Fáil was overstated by 30 seats — more than the entire Fine Gael parliamentary party |
+| PP-202 | **S3** | coverage | 3 parties, 152 seats | **10 parties, 159 of 174** | Seven seated parties were absent: the Social Democrats (12), Labour (11), Independent Ireland (4), PBP–Solidarity (3), Aontú (2), the Green Party (1) and 100% Redress (1) |
+| PP-203 | **S2** | `inPower` / `inExecutive` | FF and FG in power, **`inExecutive` absent on both** | `inExecutive: true` on Fianna Fáil and Fine Gael | The 35th government, formed 23 January 2025, is an FF–FG coalition; its independent supporters hold office only at minister-of-state rank. This closes defect **B6** for Ireland |
+| PP-204 | **S2** | `leaderTitle` | all three "Party Leader" | **"Leader"** for Fianna Fáil, Fine Gael, the Social Democrats, Labour, Independent Ireland, Aontú and the Greens; **"President"** for Sinn Féin; **"Chairperson"** for 100% Redress | Each party's own infobox. Sinn Féin's leader holds the office of *President*, not "Party Leader" |
+| PP-205 | **S6** | `positionRaw` / `ideologyPosition` | FF "Centre-right"; SF "Left-wing" | FF **"Centre to centre-right"**; SF **"Centre-left to left-wing"** | Each party's cited position, copied verbatim rather than flattened |
+| PP-206 | **S3** | coalitions | none | **`IE-GOV`** (the 35th government, Fianna Fáil + Fine Gael) | The government's own article |
+
+**A leader field left deliberately empty.** People Before Profit–Solidarity's infobox gives its
+leader as *"Collective leadership"* — a description, not a person. Following the Thailand lesson
+(**PP-028**, a 130-character sentence rendered to users as a leader's name), the field is omitted
+rather than filled with prose.
+
+**Documented gap — 15 of the 174 seats**: **14 independents** and the **Ceann Comhairle**, who by
+convention sits apart from party politics. Neither is a party.
+
+**Aontú is `other`, not a point on the left–right axis.** Its own cited position is *"Fiscal:
+left-wing; social: right-wing"* — two positions, not a range — so flattening it to either would
+misstate the source. `other` is what that field is for.
+
+**Six logos are on Commons; four (Fine Gael, Sinn Féin, PBP–Solidarity, Aontú) are non-free files
+held on English Wikipedia and are declared with `licenceNote`s.** All ten were montage-verified
+before bundling.
+
+---
+
 ## Queue — all 195 countries in the owner's priority order
 
 Tick a box only when that country's fix is **merged and live**.
@@ -1383,7 +1431,7 @@ Tick a box only when that country's fix is **merged and live**.
 
 ### Phase 5 — Europe (45)
 
-- [ ] `IE` Ireland
+- [x] `IE` Ireland — merged
 - [x] `FR` France — merged
 - [x] `DE` Germany — merged
 - [x] `ES` Spain — merged
