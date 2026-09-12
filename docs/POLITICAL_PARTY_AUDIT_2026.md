@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 49 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 50 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -1791,6 +1791,21 @@ BTP's caparisoned elephant and the PDP's white horse.
 
 ---
 
+### 🇨🇳 China — audited 2026-09-12 · **deliberately out of scope**
+
+**Verdict:** no party card is retained. The previous single record asserted that the Communist Party of China held all **2,977 / 2,977** seats in the National People's Congress. That is not a sourceable party-by-party chamber composition and falsely presents a delegate election as a competitive party-seat result.
+
+| ID | Sev | Repo value | Verified value / decision | Source fetched | Date | Confidence |
+|---|---|---|---|---|---|---|
+| PP-272 | **S1** | CN-CPC: 2,977 of 2,977 NPC seats; only citation was English Wikipedia | **Removed.** IPU classifies China as a **Communist system**; the 2023 NPC election renewed 2,977 delegate seats, but does not publish a competitive party-seat result. The dataset covers competitive multiparty lower/unicameral legislatures, so China is deliberately out of scope. | [IPU Parline — China, 2023 NPC election](https://data.ipu.org/parliament/CN/CN-LC01/election/CN-LC01-E20230305/) | 2026-09-12 | High |
+| PP-273 | **S2** | Entry implied every NPC deputy was a CPC legislator | **Removed rather than replaced with invented allocations.** The NPC is composed of deputies from 35 electoral units; its official structure describes delegates, not an authoritative party-seat table. A broad sweep included the regional Elects network (no China party-seat table found), the official NPC material and the IPU; neither supports the old 2,977-CPC claim. | [National People's Congress — structure](https://en.npc.gov.cn.cdurl.cn/NPCstructure.html); [AsiaElects](https://asiaelects.com/) | 2026-09-12 | High |
+
+**Audit notes**
+
+- The IPU records the current 14th NPC election on 5 March 2023, **2,977 seats at stake**, full renewal, and a Communist political system; it does not provide a party-by-party result.
+- This is a scope decision, not an assertion that no political organisations exist in China. The State Council itself refers to eight non-Communist parties; their participation does not convert the NPC delegate allocation into a competitive party-seat table that this data model can truthfully display.
+- The removed logo was orphaned by the removal and is deleted in the same change.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -1974,7 +1989,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `CM` Cameroon
 - [ ] `CF` Central African Republic
 - [ ] `TD` Chad
-- [ ] `CN` China
+- [x] `CN` China — audited, deliberately out of scope
 - [ ] `KM` Comoros
 - [ ] `CG` Congo
 - [ ] `CD` Congo (DRC)
