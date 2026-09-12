@@ -494,6 +494,48 @@ the Philippines, `logo` here — and the reason Chile reads 151/155 rather than 
 starkest: a party's opponents' logo, and a French party's logo. Both were caught the same way —
 SHA-1 provenance, then rendering the image and looking at it.
 
+### 🇨🇴 Colombia — audited 2026-09-12
+
+The dataset held **five parties covering 102 of a stated 188 seats**, with leaders attached to the
+wrong parties. Colombia elected a new Chamber on **8 March 2026** and a new President took office in
+August, so nothing in the entry survived.
+
+**English Wikipedia could not be used, and that is itself a finding.** Its Chamber-of-Representatives
+infobox lists blocs totalling 85 + 69 + 44 = 198, whose member parties sum to **202**, against a
+stated **183 members** — internally inconsistent three ways over. The **Spanish** article
+([`Cámara de Representantes de Colombia`](https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia))
+reconciles exactly: Government 118 + Independents 11 + Opposition 44 + special seats 9 + 1 = **183**.
+Every seat figure here comes from it. That is the second country (after Brazil) where the English
+chamber article was arithmetically impossible and a better source had to be found — **checking that
+the composition sums to the chamber size is now a standing step in the loop.**
+
+| ID | Sev | Field | Was | Now | Evidence |
+|---|---|---|---|---|---|
+| PP-064 | **S1** | coverage | 5 parties, 102 / **188** | **13 parties, 158 / 183** | The Chamber has 183 members. Added Pacto Histórico (43 — the largest party, absent), Partido de la U (13), Alianza Verde (7), ASI (2), Creemos (2), Nuevo Liberalismo (2), Salvación Nacional (1), MIRA (1), MAIS (1) |
+| PP-065 | **S1** | `seats` | every one wrong | CD 30, PLC 24, PCC 20, CR 12 … | The old figures were from the 2022 chamber |
+| PP-066 | **S1** | `leader` | Liberal led by **Ernesto Macías** (a Centro Democrático senator); Conservative led by **Carlos Fernando Galán** (Bogotá's mayor, of New Liberalism) | César Gaviria; Nadia Blel | Two leaders were not merely stale but attached to the *wrong party* |
+| PP-067 | **S2** | `ideologyPosition` | Cambio Radical `centre`; Centro Democrático "Right-wing" | `centre-right`; "Right-wing to far-right" | party infoboxes |
+| PP-068 | **S3** | `inPower` | absent on all | `true` on the **8 government-bloc parties** | The Spanish chamber article's own Gobierno grouping |
+| PP-069 | **S4** | logo hygiene | three stray `.sha256` files and four unreferenced duplicate logos in `public/party-logos/co/` | removed | `conservador.png` and `pcc.png` were byte-identical |
+
+**`inExecutive` is `false` for every Colombian party, and that is a sourced statement, not a gap.**
+President **Abelardo de la Espriella** (in office since 2026) leads **Defensores de la Patria**,
+founded 2024 — a party that holds **no seats in the Chamber at all**. So no seated party is the
+President's. Whether any coalition party holds ministries could not be sourced (no cabinet article
+with a party column was reachable), and that limit is recorded here rather than guessed at.
+
+**Documented gaps — 25 of the 183 seats are deliberately not modelled.**
+
+* **18 are not party seats**: the 16 **CITREP** transitional peace-constituency seats (11 counted
+  with the government, 5 special), the **Consejo Comunitario El Naranjo** (a community council), and
+  one **Raizal** representative. Modelling these as parties would misdescribe them.
+* **7 belong to four parties that could not be completed**: **Partido Demócrata Colombiano** (3) —
+  no founding year in any reachable source; **Colombia Renaciente** (2), **La Fuerza** (1) and
+  **Movimiento Unidad en Minga por Colombia** (1) — no logo file on Commons or either Wikipedia.
+  Same mandatory-field wall as Thailand and the Philippines; recorded, not hidden.
+
+All 13 bundled logos were SHA-1 matched to Commons or English Wikipedia and montage-verified.
+
 ---
 
 ## Queue — all 195 countries in the owner's priority order
@@ -523,7 +565,7 @@ Tick a box only when that country's fix is **merged and live**.
 
 - [x] `AR` Argentina — merged
 - [x] `CL` Chile — merged
-- [ ] `CO` Colombia
+- [x] `CO` Colombia — merged
 - [ ] `PE` Peru
 - [ ] `VE` Venezuela
 - [ ] `EC` Ecuador

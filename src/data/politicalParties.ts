@@ -11187,59 +11187,61 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "CO": [
     {
-      "id": "CO-CAMBIO",
+      "id": "CO-PH",
       "country": "CO",
-      "shortName": "Cambio",
-      "name": "Cambio Radical",
-      "nameEn": "Radical Change",
-      "logo": "party-logos/co/cambio-radical.svg",
-      "sha256": "cbb60d0fdac0a2b09356ef5a976e9c51e97d8972d17bbc792972c461332f52b2",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Cambio_Radical_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "logoMeaning": {
-        "description": "The Cambio Radical logo emphasizes radical change and centrist pragmatism in Colombian politics. The design symbolizes the party's commitment to institutional reform, economic modernization, and pragmatic centrist governance. Founded in 2005, the party represents a centrist approach combining liberal economic policies with moderate social reform, emphasizing practical solutions to Colombia's political and economic challenges.",
-        "sources": [
-          {
-            "title": "Cambio Radical (Colombia) – Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Cambio_Radical"
-          },
-          {
-            "title": "Cambio Radical – Wikipedia (Spanish)",
-            "url": "https://es.wikipedia.org/wiki/Cambio_Radical"
-          }
-        ]
-      },
-      "ideology": ["Centrism", "Liberalism", "Pragmatism"],
-      "ideologyPosition": "centre",
-      "positionRaw": "Centre",
-      "founded": 2005,
-      "leader": "Germán Vargas Lleras",
-      "leaderTitle": "Party President",
+      "shortName": "Pacto Histórico",
+      "name": "Pacto Histórico",
+      "nameEn": "Historic Pact",
+      "logo": "party-logos/co/pacto.svg",
+      "sha256": "51812243ffa0dbde136e388826621a11ce429920057fa6d8ac419cc17024cbdc",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo%20of%20the%20Historic%20Pact%20for%20Colombia.svg",
+      "licenceNote": "Non-free party logo hosted on English Wikipedia under a fair-use rationale; bundled here to identify the Historic Pact, not to imply endorsement. Replace if a freely-licensed file becomes available.",
+      "ideology": [
+        "Progressivism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2025,
       "inPower": false,
-      "seats": 16,
-      "seatsTotal": 188,
+      "inExecutive": false,
+      "seats": 43,
+      "seatsTotal": 183,
       "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Cambio Radical (Colombia) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Cambio_Radical"
+          "title": "Historic Pact — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Historic_Pact"
         },
         {
-          "title": "2022 Colombian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Colombian_general_election"
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
         }
       ]
     },
     {
-      "id": "CO-CENTRO",
+      "id": "CO-CD",
       "country": "CO",
-      "shortName": "CD",
+      "shortName": "Centro Democrático",
       "name": "Centro Democrático",
       "nameEn": "Democratic Centre",
       "logo": "party-logos/co/centro-democratico.svg",
       "sha256": "bf6b448291ec6b1ae4a28aaf58b956b313414ac46857b5afe7080c23578dcbab",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Centro_Democr%C3%A1tico_logo.svg",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Centro_Democr%C3%A1tico.svg",
+      "ideology": [
+        "Uribismo",
+        "Economic liberalism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2013,
+      "leader": "Gabriel Vallejo",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 30,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
       "logoMeaning": {
         "description": "The Centro Democrático logo represents Colombian conservatism and right-wing values under the leadership of former President Álvaro Uribe. The design symbolizes democratic conservatism, institutional strength, and security-focused governance. The party embodies Uribismo—a political movement emphasizing market liberalism, strong state authority, and tough security policies—reflecting traditional conservative Colombian politics combined with modern democratic governance.",
         "sources": [
@@ -11253,37 +11255,40 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Conservatism", "Right-wing", "Uribismo"],
-      "ideologyPosition": "right",
-      "positionRaw": "Right-wing",
-      "founded": 2013,
-      "leader": "Álvaro Uribe Vélez",
-      "leaderTitle": "Party President",
-      "inPower": false,
-      "seats": 32,
-      "seatsTotal": 188,
-      "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Democratic Centre (Colombia) – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Democratic_Centre_(Colombia)"
+          "title": "Democratic Centre — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Center_(Colombia)"
         },
         {
-          "title": "2022 Colombian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Colombian_general_election"
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
         }
       ]
     },
     {
-      "id": "CO-LIBERAL",
+      "id": "CO-PLC",
       "country": "CO",
-      "shortName": "PL",
+      "shortName": "Liberal",
       "name": "Partido Liberal Colombiano",
       "nameEn": "Colombian Liberal Party",
       "logo": "party-logos/co/liberal.png",
       "sha256": "8a6f729a146f39a047af40cc996408c04258251ab0a20265a22fa1e30e1c8f4c",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partido_Liberal_Colombiano_logo.png",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Liberal_Colombiano_Registradur%C3%ADa.png",
+      "ideology": [
+        "Liberalism",
+        "Social democracy"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 1848,
+      "leader": "César Gaviria",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 24,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
       "logoMeaning": {
         "description": "The Colombian Liberal Party logo represents one of Latin America's oldest liberal political traditions, founded in 1848. The design symbolizes liberalism, democratic participation, and social democratic values. As a centre-left party, it champions civil rights, institutional reform, and progressive social policies while maintaining commitment to democratic capitalism and constitutional governance. The logo reflects the party's historical role in Colombia's struggles for democratic reform and individual freedoms.",
         "sources": [
@@ -11297,37 +11302,41 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Liberalism", "Centre-left", "Social democracy"],
-      "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
-      "founded": 1848,
-      "leader": "Ernesto Macías",
-      "leaderTitle": "Party President",
-      "inPower": false,
-      "seats": 22,
-      "seatsTotal": 188,
-      "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Colombian Liberal Party – Wikipedia",
+          "title": "Colombian Liberal Party — Wikipedia (infobox: founding, ideology, political position, leader)",
           "url": "https://en.wikipedia.org/wiki/Colombian_Liberal_Party"
         },
         {
-          "title": "2022 Colombian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Colombian_general_election"
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
         }
       ]
     },
     {
-      "id": "CO-CONSERVADOR",
+      "id": "CO-PCC",
       "country": "CO",
-      "shortName": "PC",
+      "shortName": "Conservador",
       "name": "Partido Conservador Colombiano",
       "nameEn": "Colombian Conservative Party",
       "logo": "party-logos/co/conservador.png",
       "sha256": "5427911b9f359284397abaefc76b9857b3ecad7c3882319bafc668883d3e8b8a",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partido_Conservador_Colombiano_logo.png",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Partido_Conservador_Colombiano_Registradur%C3%ADa.png",
+      "ideology": [
+        "Conservatism (Colombian)",
+        "Christian democracy",
+        "Neoliberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right to right-wing",
+      "founded": 1849,
+      "leader": "Nadia Blel",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 20,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
       "logoMeaning": {
         "description": "The Colombian Conservative Party logo represents one of Colombia's oldest political institutions, founded in 1849. The design embodies conservatism, Christian democracy, and centre-right values grounded in Catholic social teaching and institutional tradition. The party champions constitutional order, property rights, religious values, and gradual social reform. Its logo symbolizes the party's historical role in Colombian politics, balancing conservative principles with democratic governance and Christian social values.",
         "sources": [
@@ -11341,37 +11350,116 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Conservatism", "Centre-right", "Christian democracy"],
-      "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 1849,
-      "leader": "Carlos Fernando Galán",
-      "leaderTitle": "Party President",
-      "inPower": false,
-      "seats": 24,
-      "seatsTotal": 188,
-      "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Colombian Conservative Party – Wikipedia",
+          "title": "Colombian Conservative Party — Wikipedia (infobox: founding, ideology, political position, leader)",
           "url": "https://en.wikipedia.org/wiki/Colombian_Conservative_Party"
         },
         {
-          "title": "2022 Colombian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Colombian_general_election"
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
         }
       ]
     },
     {
-      "id": "CO-VERDE",
+      "id": "CO-U",
       "country": "CO",
-      "shortName": "PVERDE",
-      "name": "Partido Verde Colombiano",
-      "nameEn": "Colombian Green Party",
+      "shortName": "La U",
+      "name": "Partido de la U",
+      "nameEn": "Union Party for the People",
+      "logo": "party-logos/co/partido-u.png",
+      "sha256": "607fe865d3c88f6f519bbc88096fb74504aa47717dada6491a2eb4f1b514f64d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_U_Colombia.png",
+      "ideology": [],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2005,
+      "leader": "Dilian Francisca Toro",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 13,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Union Party for the People — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Party_of_the_U"
+        },
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        }
+      ]
+    },
+    {
+      "id": "CO-CR",
+      "country": "CO",
+      "shortName": "Cambio Radical",
+      "name": "Cambio Radical",
+      "nameEn": "Radical Change",
+      "logo": "party-logos/co/cambio-radical.svg",
+      "sha256": "cbb60d0fdac0a2b09356ef5a976e9c51e97d8972d17bbc792972c461332f52b2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Cambio_Radical_logo.svg",
+      "ideology": [
+        "Conservative liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "founded": 1998,
+      "leader": "Germán Córdoba",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 12,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "logoMeaning": {
+        "description": "The Cambio Radical logo emphasizes radical change and centrist pragmatism in Colombian politics. The design symbolizes the party's commitment to institutional reform, economic modernization, and pragmatic centrist governance. Founded in 2005, the party represents a centrist approach combining liberal economic policies with moderate social reform, emphasizing practical solutions to Colombia's political and economic challenges.",
+        "sources": [
+          {
+            "title": "Cambio Radical (Colombia) – Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cambio_Radical"
+          },
+          {
+            "title": "Cambio Radical – Wikipedia (Spanish)",
+            "url": "https://es.wikipedia.org/wiki/Cambio_Radical"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Radical Change — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Radical_Change"
+        },
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        }
+      ]
+    },
+    {
+      "id": "CO-AV",
+      "country": "CO",
+      "shortName": "Alianza Verde",
+      "name": "Partido Alianza Verde",
+      "nameEn": "Green Alliance",
       "logo": "party-logos/co/verde.webp",
       "sha256": "d8147c41ebcd3aa9d7d61df0d96ae4f427c7dfbaeed52f4bb0a850ccdc8c2ab7",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Partido_Verde_Colombiano_logo.webp",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:AlianzaVerde.webp",
+      "ideology": [
+        "Green politics",
+        "Environmentalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2005,
+      "leader": "Luis Carlos Avellaneda",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 7,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
       "logoMeaning": {
         "description": "The Colombian Green Party logo emphasizes environmental protection, ecological sustainability, and centre-left progressivism. The green symbolism represents the party's commitment to environmental conservation, climate action, and sustainable development in Colombia. Founded in 2005, the party advocates for ecological policies, environmental justice, and progressive social values, representing Colombia's emerging environmental and progressive political movements.",
         "sources": [
@@ -11385,24 +11473,207 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
           }
         ]
       },
-      "ideology": ["Green politics", "Environmentalism", "Centre-left"],
+      "sources": [
+        {
+          "title": "Green Alliance — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Green_Alliance_(Colombia)"
+        },
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        }
+      ]
+    },
+    {
+      "id": "CO-ASI",
+      "country": "CO",
+      "shortName": "ASI",
+      "name": "Alianza Social Independiente",
+      "nameEn": "Independent Social Alliance",
+      "logo": "party-logos/co/asi.svg",
+      "sha256": "44fe2e8b271ad87ec46b7c5ab47cfabb2edfb9549654d3cf587613458dab5c0c",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:ASI_Logo.svg",
+      "ideology": [
+        "Indigenismo",
+        "Progressivism",
+        "Reformism"
+      ],
       "ideologyPosition": "centre-left",
       "positionRaw": "Centre-left",
-      "founded": 2005,
-      "leader": "Katalina García",
-      "leaderTitle": "Party President",
-      "inPower": false,
-      "seats": 8,
-      "seatsTotal": 188,
+      "founded": 1991,
+      "leader": "Alonso Tobón",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 2,
+      "seatsTotal": 183,
       "chamberName": "Chamber of Representatives",
       "sources": [
         {
-          "title": "Colombian Green Party – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Colombian_Green_Party"
+          "title": "Independent Social Alliance — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Independent_Social_Alliance"
         },
         {
-          "title": "2022 Colombian general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2022_Colombian_general_election"
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        }
+      ]
+    },
+    {
+      "id": "CO-CREEMOS",
+      "country": "CO",
+      "shortName": "Creemos",
+      "name": "Creemos Colombia",
+      "logo": "party-logos/co/creemos.png",
+      "sha256": "5a4749129dea99be871c75f9d1eb5527676c68e6476100c92a6ffbce328df28a",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Creemos_Registradur%C3%ADa.png",
+      "ideology": [
+        "Economic liberalism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Derecha (right-wing)",
+      "founded": 2015,
+      "leader": "Camila Gaviria Barreneche",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 2,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Creemos Colombia — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://es.wikipedia.org/wiki/Creemos_Colombia"
+        },
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        }
+      ]
+    },
+    {
+      "id": "CO-NL",
+      "country": "CO",
+      "shortName": "Nuevo Liberalismo",
+      "name": "Nuevo Liberalismo",
+      "nameEn": "New Liberalism",
+      "logo": "party-logos/co/nuevo-liberalismo.png",
+      "sha256": "f1e32d9f845659a3d3343bdd09f369a46b1a05844e51ab1fcd339efa44980803",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_nuevo_liberalismo.png",
+      "ideology": [],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 1979,
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 2,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "New Liberalism — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/New_Liberalism_(Colombia)"
+        },
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        }
+      ]
+    },
+    {
+      "id": "CO-SN",
+      "country": "CO",
+      "shortName": "Salvación Nacional",
+      "name": "Movimiento de Salvación Nacional",
+      "nameEn": "National Salvation Movement",
+      "logo": "party-logos/co/msn.svg",
+      "sha256": "93560046267e5a7581b9c2e40950adf953c417464328bb346c1ca7aaf0c172a1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Salvaci%C3%B3n_Nacional_(Colombia).svg",
+      "ideology": [],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1991,
+      "leader": "Enrique Gómez Martínez",
+      "leaderTitle": "President",
+      "inPower": true,
+      "inExecutive": false,
+      "seats": 1,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "National Salvation Movement — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/National_Salvation_Movement"
+        },
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        }
+      ]
+    },
+    {
+      "id": "CO-MIRA",
+      "country": "CO",
+      "shortName": "MIRA",
+      "name": "Movimiento Independiente de Renovación Absoluta",
+      "nameEn": "Independent Movement of Absolute Renovation",
+      "logo": "party-logos/co/mira.svg",
+      "sha256": "ad89f6c570721aec2c661d6bca12e1c684a1ce8bdbd778b2fce6e82bbf166239",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Partido_MIRA.svg",
+      "ideology": [
+        "Christian democracy",
+        "Social conservatism",
+        "Communitarianism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2000,
+      "leader": "Ana Paola Agudelo García",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 1,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Independent Movement of Absolute Renovation — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://en.wikipedia.org/wiki/Independent_Movement_of_Absolute_Renovation"
+        },
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
+        }
+      ]
+    },
+    {
+      "id": "CO-MAIS",
+      "country": "CO",
+      "shortName": "MAIS",
+      "name": "Movimiento Alternativo Indígena y Social",
+      "nameEn": "Alternative Indigenous and Social Movement",
+      "logo": "party-logos/co/mais.png",
+      "sha256": "b07ba080c90f3ad8864fa647135823a325689408da7b73c401ca74fffa92b4f7",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:LogoMais1.png",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 2013,
+      "leader": "Martha Peralta Epieyú",
+      "leaderTitle": "President",
+      "inPower": false,
+      "inExecutive": false,
+      "seats": 1,
+      "seatsTotal": 183,
+      "chamberName": "Chamber of Representatives",
+      "sources": [
+        {
+          "title": "Alternative Indigenous and Social Movement — Wikipedia (infobox: founding, ideology, political position, leader)",
+          "url": "https://es.wikipedia.org/wiki/Movimiento_Alternativo_Indígena_y_Social"
+        },
+        {
+          "title": "Cámara de Representantes de Colombia — Wikipedia en español (composición del Congreso 2026–2030, elegido el 8 de marzo de 2026: Gobierno 118, Independientes 11, Oposición 44, escaños especiales 10, de 183)",
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Representantes_de_Colombia"
         }
       ]
     }
