@@ -14431,6 +14431,1026 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "IQ": [
+    {
+      "id": "IQ-RDC",
+      "country": "IQ",
+      "shortName": "RDC",
+      "name": "Reconstruction and Development Coalition",
+      "logo": "party-logos/iq/rdc.png",
+      "sha256": "c890203116bc3a9ad1cbde2cd484a0ffd07d5cde481521db17ec8394a30fefc9",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Iraqi_Reconstruction_and_Development_Alliance_logo.png",
+      "licenceNote": "Non-free. Reconstruction and Development Coalition's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Iraqi nationalism",
+        "Pragmatism",
+        "Reformism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "leader": "Baha Araji",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds portfolios in the cabinet formed after the 11 November 2025 election, under Prime Minister Ali al-Zaidi, an independent, since 14 May 2026.",
+      "seats": 46,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Reconstruction and Development Coalition — Wikipedia (founded —)",
+          "url": "https://en.wikipedia.org/wiki/Reconstruction_and_Development_Coalition"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-SOL",
+      "country": "IQ",
+      "shortName": "State of Law",
+      "name": "State of Law Coalition",
+      "logo": "party-logos/iq/sol.svg",
+      "sha256": "13de314f0dbac162bafeecca6644cbd27a3f6bd9d884d7ab0ceb641b81438803",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_State_of_Law_Coalition.svg",
+      "licenceNote": "Non-free. State of Law Coalition's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Shia Islamism",
+        "Khomeinism",
+        "Authoritarianism",
+        "Anti-secularism",
+        "Statism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Syncretic",
+      "leader": "Nouri al-Maliki",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds portfolios in the cabinet formed after the 11 November 2025 election, under Prime Minister Ali al-Zaidi, an independent, since 14 May 2026.",
+      "seats": 29,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "State of Law Coalition — Wikipedia (founded —)",
+          "url": "https://en.wikipedia.org/wiki/State_of_Law_Coalition"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-SADIQOUN",
+      "country": "IQ",
+      "shortName": "Al-Sadiqoun",
+      "name": "Al-Sadiqoun Bloc",
+      "logo": "party-logos/iq/sadiqoun.png",
+      "sha256": "7ad97f2cd7c816b6ec30517bf17c1a39681265645d403d908ae9d0d89efd4f92",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Al-Sadiqoun_Bloc_logo.png",
+      "licenceNote": "Non-free. Al-Sadiqoun Bloc's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Political Islam",
+        "Religious conservatism",
+        "Islamism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "leader": "Adnan Fayhan Moussa Cheri (political leader)",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds portfolios in the cabinet formed after the 11 November 2025 election, under Prime Minister Ali al-Zaidi, an independent, since 14 May 2026.",
+      "seats": 27,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Al-Sadiqoun Bloc — Wikipedia (founded 2014)",
+          "url": "https://en.wikipedia.org/wiki/Al-Sadiqoun_Bloc"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-TAQADUM",
+      "country": "IQ",
+      "shortName": "Taqaddum",
+      "name": "Progress Party",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds portfolios in the cabinet formed after the 11 November 2025 election, under Prime Minister Ali al-Zaidi, an independent, since 14 May 2026.",
+      "seats": 27,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Progress Party — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Progress_Party"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-KDP",
+      "country": "IQ",
+      "shortName": "KDP",
+      "name": "Kurdistan Democratic Party",
+      "logo": "party-logos/iq/kdp.svg",
+      "sha256": "80a5c726c5e5298a46d8d1d98208e430ff5a4816730a415b0c1444870f7cede2",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:KDP_logo.svg",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "positionRaw": "Big tent",
+      "leader": "Masoud Barzani",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds portfolios in the cabinet formed after the 11 November 2025 election, under Prime Minister Ali al-Zaidi, an independent, since 14 May 2026.",
+      "seats": 26,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Kurdistan Democratic Party — Wikipedia (founded —)",
+          "url": "https://en.wikipedia.org/wiki/Kurdistan_Democratic_Party"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-BADR",
+      "country": "IQ",
+      "shortName": "Badr",
+      "name": "Badr Organization",
+      "logo": "party-logos/iq/badr.jpg",
+      "sha256": "d0901db695043691c5f3498c058691dd67c6ad653ceeabbf8a7ac8541510f746",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Badr_Organisation_Political_Logo.jpg",
+      "licenceNote": "Non-free. Badr Organization's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Shia Islamism",
+        "Khomeinism",
+        "Wilayat al-Faqih",
+        "Anti-Sunnism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "leader": "Hadi al-Amiri",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds portfolios in the cabinet formed after the 11 November 2025 election, under Prime Minister Ali al-Zaidi, an independent, since 14 May 2026.",
+      "seats": 18,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Badr Organization — Wikipedia (founded as the military wing of the ISCI / 2003–present as a political movement)",
+          "url": "https://en.wikipedia.org/wiki/Badr_Organization"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-ANSF",
+      "country": "IQ",
+      "shortName": "Nation State Forces",
+      "name": "Alliance of Nation State Forces",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "leader": "Ammar al-Hakim",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the State Administration Assembly, the governing bloc, but holds no cabinet portfolio.",
+      "seats": 18,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Alliance of Nation State Forces — Wikipedia (founded —)",
+          "url": "https://en.wikipedia.org/wiki/Alliance_of_Nation_State_Forces"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-AZEM",
+      "country": "IQ",
+      "shortName": "Azem",
+      "name": "Azem Alliance",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq, Wikimedia Commons, and the alliance's English Wikipedia article. The only candidate its infobox offers is a plain green star (Commons \"Star Green.svg\"), a generic shape rather than the alliance's own emblem, so it is rejected here exactly as a placeholder image would be.",
+      "ideology": [
+        "Sunni Islamism",
+        "Iraqi nationalism",
+        "Liberalism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "leader": "Muthanna Al-Samarrai",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds portfolios in the cabinet formed after the 11 November 2025 election, under Prime Minister Ali al-Zaidi, an independent, since 14 May 2026.",
+      "seats": 15,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Azem Alliance — Wikipedia (founded —)",
+          "url": "https://en.wikipedia.org/wiki/Azem_Alliance"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-PUK",
+      "country": "IQ",
+      "shortName": "PUK",
+      "name": "Patriotic Union of Kurdistan",
+      "logo": "party-logos/iq/puk.svg",
+      "sha256": "bf2dad86d76105992dfcf4cecbe94f57b17da85d7b891fea3f9cc992ddabcfe1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:PUK_Logo.svg",
+      "ideology": [],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left to left-wing",
+      "leader": "Bafel Talabani",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds portfolios in the cabinet formed after the 11 November 2025 election, under Prime Minister Ali al-Zaidi, an independent, since 14 May 2026.",
+      "seats": 15,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Patriotic Union of Kurdistan — Wikipedia (founded —)",
+          "url": "https://en.wikipedia.org/wiki/Patriotic_Union_of_Kurdistan"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-SIYADAH",
+      "country": "IQ",
+      "shortName": "Al-Siyadah",
+      "name": "National Sovereignty Alliance",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 9,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-ASAS",
+      "country": "IQ",
+      "shortName": "Al-Asas",
+      "name": "Iraqi Fundamental Coalition",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the State Administration Assembly, the governing bloc, but holds no cabinet portfolio.",
+      "seats": 8,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-ISHRAQAT",
+      "country": "IQ",
+      "shortName": "Ishraqat Kanoon",
+      "name": "Ishraqat Kanoon",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "leader": "Jaafar Aziz",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Ishraqat Kanoon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ishraqat_Kanoon"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-HUQOUQ",
+      "country": "IQ",
+      "shortName": "Huqouq",
+      "name": "Rights Movement",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the State Administration Assembly, the governing bloc, but holds no cabinet portfolio.",
+      "seats": 6,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-TASMIM",
+      "country": "IQ",
+      "shortName": "Tasmim",
+      "name": "Tasmim Alliance",
+      "logo": "party-logos/iq/tasmim.svg",
+      "sha256": "c7dbeb5a136db3ae7680280d400cb21d5d9a1c7909569efd22809332f3262a9f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Tasmim_Alliance_logo.svg",
+      "licenceNote": "Non-free. Tasmim Alliance's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "leader": "Amer al-Fayaz",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the State Administration Assembly, the governing bloc, but holds no cabinet portfolio.",
+      "seats": 6,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Tasmim Alliance — Wikipedia (founded 2021)",
+          "url": "https://en.wikipedia.org/wiki/Tasmim_Alliance"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        },
+        {
+          "title": "Council of Representatives (Iraq) — Wikipedia (political groups: State Administration Assembly 243, of which 205 are in the cabinet and the rest support it without portfolio; opposition 75)",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Representatives_(Iraq)"
+        }
+      ]
+    },
+    {
+      "id": "IQ-HALWEST",
+      "country": "IQ",
+      "shortName": "Halwest",
+      "name": "National Stance Movement",
+      "logo": "party-logos/iq/halwest.svg",
+      "sha256": "85f032e8ce8a14ddbf1c5b7c0bde553e8a69c2719423ed5059068f29b74d769f",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Halwest_party.svg",
+      "ideology": [],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "leader": "Ali Hama Saleh",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "National Stance Movement — Wikipedia (founded —)",
+          "url": "https://en.wikipedia.org/wiki/National_Stance_Movement"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-SERVICES",
+      "country": "IQ",
+      "shortName": "Khadamat",
+      "name": "Services Alliance",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-NDA",
+      "country": "IQ",
+      "shortName": "Tasmeem Watani",
+      "name": "National Determination Alliance",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-BUSHRA",
+      "country": "IQ",
+      "shortName": "Bushra Iraq",
+      "name": "Good News, Iraq",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-KIU",
+      "country": "IQ",
+      "shortName": "KIU",
+      "name": "Kurdistan Islamic Union",
+      "logo": "party-logos/iq/kiu.png",
+      "sha256": "43a20dfe55f43ce5984195a73daa315f520ec7365afbfc3c6054869a93c942ca",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Kurdistan_Islamic_Union_Flag_simple.png",
+      "ideology": [],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "leader": "Salahaddin Bahaaddin",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Kurdistan Islamic Union — Wikipedia (founded —)",
+          "url": "https://en.wikipedia.org/wiki/Kurdistan_Islamic_Union"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-WASIT",
+      "country": "IQ",
+      "shortName": "Wasit Ajmal",
+      "name": "Wasit Ajmal Alliance",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 4,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-ANBAR",
+      "country": "IQ",
+      "shortName": "Anbar Identity",
+      "name": "Al-Anbar Is Our Identity Alliance",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-MASSES",
+      "country": "IQ",
+      "shortName": "Masses",
+      "name": "National Party of the Masses",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-NGM",
+      "country": "IQ",
+      "shortName": "New Generation",
+      "name": "New Generation Movement",
+      "logo": "party-logos/iq/ngm.png",
+      "sha256": "e08bcf0f4389374c772fccd2e9027c1b2c6cef17e59e1ab5c4f00a8ad6d02180",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:New_Generation_Movement.png",
+      "licenceNote": "Non-free. New Generation Movement's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "leader": "Shaswar Abdulwahid Qadir",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "New Generation Movement — Wikipedia (founded —)",
+          "url": "https://en.wikipedia.org/wiki/New_Generation_Movement"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-NINEVEH",
+      "country": "IQ",
+      "shortName": "Nineveh",
+      "name": "Nineveh for Its People",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-QIMAM",
+      "country": "IQ",
+      "shortName": "Qimam",
+      "name": "Qimam Coalition",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-ITF",
+      "country": "IQ",
+      "shortName": "ITF",
+      "name": "Unified Iraqi Turkmen Front",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-NPU",
+      "country": "IQ",
+      "shortName": "NPU",
+      "name": "Nineveh's People Union",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-SUMERIAN",
+      "country": "IQ",
+      "shortName": "Sumerian",
+      "name": "Sumerian Movement",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-TAFAWQ",
+      "country": "IQ",
+      "shortName": "Tafawq",
+      "name": "Tafawq Alliance",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-FAWZAKHO",
+      "country": "IQ",
+      "shortName": "Al-Faw Zakho",
+      "name": "Al-Faw Zakho Coalition",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-KIRKUK",
+      "country": "IQ",
+      "shortName": "Arab Alliance",
+      "name": "Arab Alliance in Kirkuk",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Arab Alliance in Kirkuk — Wikipedia (founded —)",
+          "url": "https://en.wikipedia.org/wiki/Arab_Alliance_in_Kirkuk"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-ARABPROJ",
+      "country": "IQ",
+      "shortName": "Arab Project",
+      "name": "Arab Project",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-DIYALA",
+      "country": "IQ",
+      "shortName": "Diyala First",
+      "name": "Diyala First Coalition",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-IDRAAK",
+      "country": "IQ",
+      "shortName": "Idraak",
+      "name": "Idraak Movement",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-KJG",
+      "country": "IQ",
+      "shortName": "Komal",
+      "name": "Kurdistan Justice Group",
+      "logo": "party-logos/iq/kjg.svg",
+      "sha256": "ee1aa2ec56258335de3f3f95ac8ff3952cba044bf5a9dbf4a4752fe247fb7c06",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Kurdistan_Islamic_Group.svg",
+      "ideology": [],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "leader": "Ali Bapir",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Kurdistan Justice Group — Wikipedia (founded —)",
+          "url": "https://en.wikipedia.org/wiki/Kurdistan_Justice_Group"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-NATID",
+      "country": "IQ",
+      "shortName": "National Identity",
+      "name": "National Identity",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "National identity — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_identity"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-SALADINP",
+      "country": "IQ",
+      "shortName": "Saladin Partnership",
+      "name": "Saladin Partnership Alliance",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-SALADINU",
+      "country": "IQ",
+      "shortName": "Saladin Unified",
+      "name": "Saladin Unified Alliance",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-STATESUP",
+      "country": "IQ",
+      "shortName": "State Support",
+      "name": "State Support Bloc",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-THABITUN",
+      "country": "IQ",
+      "shortName": "Thabitun",
+      "name": "Thabitun",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    },
+    {
+      "id": "IQ-YAZIDI",
+      "country": "IQ",
+      "shortName": "Yazidi Cause",
+      "name": "Yazidi Cause Alliance",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "ideology": [
+        "Yazidi interests"
+      ],
+      "ideologyPosition": "other",
+      "leader": "Murad Ismael",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 329,
+      "chamberName": "Council of Representatives",
+      "sources": [
+        {
+          "title": "Yazidi Cause Alliance — Wikipedia (founded 2025)",
+          "url": "https://en.wikipedia.org/wiki/Yazidi_Cause_Alliance"
+        },
+        {
+          "title": "2025 Iraqi parliamentary election — Wikipedia (final results certified by the Independent High Electoral Commission on 17 November 2025 and ratified by the Federal Supreme Court on 14 December 2025; the seat table sums exactly to the chamber's 329)",
+          "url": "https://en.wikipedia.org/wiki/2025_Iraqi_parliamentary_election"
+        }
+      ]
+    }
+  ],
   "IT": [
     {
       "id": "IT-FDI",
