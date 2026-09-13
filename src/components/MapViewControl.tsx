@@ -1,4 +1,5 @@
 import { UiIcon } from "./UiIcon";
+import { usePopoverBounds } from "../hooks/usePopoverBounds";
 import { useEffect, useRef, useState } from "react";
 import {
   MAP_VIEW_PRESETS,
@@ -24,6 +25,7 @@ export type MapViewControlProps = {
 export function MapViewControl({ view, onChange }: MapViewControlProps) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const popoverStyle = usePopoverBounds(open, ref, 256);
 
   // Close the popover on outside-click + Escape.
   useEffect(() => {
@@ -63,7 +65,7 @@ export function MapViewControl({ view, onChange }: MapViewControlProps) {
       </button>
 
       {open && (
-        <div className="map-view-control__popover" role="dialog" aria-label="Map view">
+        <div className="map-view-control__popover" style={popoverStyle} role="dialog" aria-label="Map view">
           <p className="map-view-control__heading">View centre</p>
           <div className="map-view-control__presets">
             {MAP_VIEW_PRESETS.map((p) => {

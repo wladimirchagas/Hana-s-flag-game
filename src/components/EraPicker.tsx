@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { usePopoverBounds } from "../hooks/usePopoverBounds";
 import { ERAS, type Era } from "../lib/historicalEras";
 
 /**
@@ -18,6 +19,7 @@ export function EraPicker({
 }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const menuStyle = usePopoverBounds(open, ref, 280);
 
   useEffect(() => {
     if (!open) return;
@@ -57,6 +59,7 @@ export function EraPicker({
       {open && (
         <ul
           className="learn-toolbar__era-menu"
+          style={menuStyle}
           role="listbox"
           aria-label="Choose a period"
         >

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "dev:local": "vite --host 127.0.0.1 --port 5173",
-    "build": "tsc -b && vite build",
+    "build": "npm run test:ui && tsc -b && vite build",
+    "test:ui": "node scripts/check-map-pointer-selection.mjs && node scripts/check-popover-layout.mjs",
     "preview": "vite preview",
     "anthems:catalog": "node scripts/anthems/01_catalog.mjs",
     "anthems:audit": "node scripts/anthems/02_audit.mjs",

@@ -7,6 +7,32 @@
   vertical-align: middle;
   pointer-events: none;
 }
+/* Period menus use the same readable light/dark palette as the toolbar.
+   Geometry is clamped by usePopoverBounds, including wrapped mobile rows. */
+body .learn-toolbar__era-menu {
+  min-width: 0;
+  border: 1px solid var(--atlas-border);
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+  overscroll-behavior: contain;
+}
+body .learn-toolbar__era-option { min-width: 0; white-space: normal; }
+body .learn-toolbar__era-option-caption { color: var(--ink-soft); }
+body .learn-toolbar__era-option--active,
+body .learn-toolbar__era-option--active:hover {
+  background: var(--atlas-tint);
+  border-color: var(--atlas-accent);
+  color: var(--atlas-accent);
+}
+body .learn-toolbar__era-option--active .learn-toolbar__era-option-caption {
+  color: var(--ink);
+}
+body .learn-toolbar__era-today-badge {
+  background: var(--atlas-accent);
+  color: #fff;
+}
+:root[data-theme="dark"] body .learn-toolbar__era-today-badge { color: #142821; }
+body .map-view-control__popover { min-width: 0; overscroll-behavior: contain; }
 body button { min-height: 44px; touch-action: manipulation; }
 body button:has(> .ui-icon) { min-width: 44px; }
 body :is(.site-topbar button, .world-map__zoom-btn, .toolbar-overflow__toggle,
