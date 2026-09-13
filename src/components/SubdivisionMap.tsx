@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath, geoCentroid } from "d3-geo";
 import { useTheme } from "../context/ThemeContext";
@@ -787,7 +788,7 @@ export function SubdivisionMap({
                 onClick={() => setPopover(null)}
                 aria-label="Dismiss"
               >
-                ×
+                <UiIcon name="close" />
               </button>
             </div>
           )}
@@ -802,7 +803,7 @@ export function SubdivisionMap({
             aria-label="Zoom out"
             title="Zoom out"
           >
-            −
+            <UiIcon name="minus" />
           </button>
           <button
             type="button"
@@ -812,7 +813,7 @@ export function SubdivisionMap({
             aria-label="Zoom in"
             title="Zoom in"
           >
-            +
+            <UiIcon name="plus" />
           </button>
           <button
             type="button"
@@ -822,7 +823,7 @@ export function SubdivisionMap({
             aria-label="Reset zoom"
             title="Reset zoom"
           >
-            ⛶
+            <UiIcon name="expand" />
           </button>
           {extraControls}
         </div>

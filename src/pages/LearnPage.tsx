@@ -1,3 +1,4 @@
+import { UiIcon } from "../components/UiIcon";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useSearchParams } from "react-router-dom";
@@ -1207,7 +1208,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
           title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
         >
-          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
+          <span className="world-map__zoom-icon" aria-hidden="true"><UiIcon name="flag" /></span>
         </button>
         {/* Colour countries by their passport cover's predominant colour. Modern
             world map only (passports are a present-day thing), immediately after
@@ -1221,7 +1222,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             aria-label={showPassportColors ? "Hide passport colours on map" : "Colour countries by passport"}
             title={showPassportColors ? "Hide passport colours" : "Colour countries by passport"}
           >
-            <span className="world-map__zoom-icon" aria-hidden="true">🛂</span>
+            <span className="world-map__zoom-icon" aria-hidden="true"><UiIcon name="passport" /></span>
           </button>
         )}
         {CITIES_FEATURE_ENABLED && (
@@ -1233,7 +1234,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
             title={showCities ? "Hide capitals" : "Show capitals"}
           >
-            <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>
+            <span className="world-map__zoom-icon" aria-hidden="true"><UiIcon name="pin" /></span>
           </button>
         )}
         {/* Rotation + globe (view-centre) are secondary — they collapse into the
@@ -1246,7 +1247,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             aria-label={isRotating ? "Pause rotation" : "Resume rotation"}
             title={isRotating ? "Pause rotation" : "Resume rotation"}
           >
-            {isRotating ? "⏸" : "▶"}
+            <UiIcon name={isRotating ? "pause" : "play"} />
           </button>
           <MapViewControl view={mapView} onChange={setMapView} />
         </ToolbarOverflow>
@@ -1276,7 +1277,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
           title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
         >
-          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
+          <span className="world-map__zoom-icon" aria-hidden="true"><UiIcon name="flag" /></span>
         </button>
         {CITIES_FEATURE_ENABLED && (
           <button
@@ -1287,7 +1288,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
             title={showCities ? "Hide capitals" : "Show capitals"}
           >
-            <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>
+            <span className="world-map__zoom-icon" aria-hidden="true"><UiIcon name="pin" /></span>
           </button>
         )}
       </>
@@ -1351,7 +1352,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           <p className="error-message">{loadError}</p>
           <p className="hint">Check your connection and refresh the page.</p>
           <p className="game-home-link">
-            <Link to="/">← Back to home</Link>
+            <Link to="/"><UiIcon name="back" /> Back to home</Link>
           </p>
         </main>
       </div>
@@ -1378,7 +1379,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         aria-label={inList ? `Remove ${name} from your list` : `Add ${name} to your list`}
         title={inList ? `Remove ${name} from your list` : `Add ${name} to your list`}
       >
-        {inList ? "✓" : "+"}
+        <UiIcon name={inList ? "check" : "plus"} />
       </button>
     );
   };
@@ -1465,7 +1466,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             aria-label="World map"
             title="World map"
           >
-            <span className="site-topbar__btn-icon" aria-hidden="true">←</span>
+            <span className="site-topbar__btn-icon" aria-hidden="true"><UiIcon name="back" /></span>
             <span className="site-topbar__btn-label">World map</span>
           </button>,
           slot,
@@ -1478,7 +1479,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           className="learn-breadcrumb__crumb"
           onClick={exitSubdivisionMode}
         >
-          🌍 World
+          <UiIcon name="globe" /> World
         </button>
         <span className="learn-breadcrumb__sep" aria-hidden="true">›</span>
         {selectedSubdivision ? (
@@ -1700,7 +1701,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                               }}
                               aria-label={`Play national anthem of ${display.country.name}`}
                             >
-                              ▶ Play
+                              <UiIcon name="play" /> Play
                             </button>
                           </dd>
                         </div>
@@ -1765,7 +1766,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                           }}
                         />
                         <span className="learn-fs__flag-hint" aria-hidden="true">
-                          ⤢ Click to enlarge
+                          <UiIcon name="expand" /> Click to enlarge
                         </span>
                       </button>,
                       // A symbol carries its own noun so the block never labels a
@@ -1865,7 +1866,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                               }}
                               aria-label={`Play national anthem of ${subdivisionCountry.name}`}
                             >
-                              ▶ Play
+                              <UiIcon name="play" /> Play
                             </button>
                           </dd>
                         </div>
@@ -1899,7 +1900,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                               else img.closest("button")?.remove();
                             }}
                           />
-                          <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                          <span className="learn-fs__flag-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
                         </button>,
                       )}
                       <FlagMeaning code={subdivisionCountry.code} />
@@ -1925,7 +1926,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       onClick={dismissTour}
                       aria-label="Dismiss tips"
                     >
-                      ×
+                      <UiIcon name="close" />
                     </button>
                     <p className="learn-tour__title">Three things to try</p>
                     <ol className="learn-tour__list">
@@ -1939,8 +1940,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       <li>
                         <span className="learn-tour__num">2</span>
                         <span>
-                          Toggle <strong>🚩 Flags</strong> &amp;{" "}
-                          <strong>⭐ Capitals</strong> onto the map.
+                          Toggle <strong><UiIcon name="flag" /> Flags</strong> &amp;{" "}
+                          <strong><UiIcon name="pin" /> Capitals</strong> onto the map.
                         </span>
                       </li>
                       <li>
@@ -2054,7 +2055,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                               draggable={false}
                               onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
                             />
-                            <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                            <span className="learn-fs__flag-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
                           </button>,
                         )}
                         <FlagMeaning code={selectedSubdivision.code} />
@@ -2228,7 +2229,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                             draggable={false}
                             onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
                           />
-                          <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                          <span className="learn-fs__flag-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
                         </button>,
                       )}
                       {/* "What this flag means" explainer — same component/look as
@@ -2290,7 +2291,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             }}
             aria-label="Close enlarged flag"
           >
-            ×
+            <UiIcon name="close" />
           </button>
         </div>
       )}

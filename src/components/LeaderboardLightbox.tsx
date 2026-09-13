@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useMemo, useState } from "react";
 import { useLeaderboard } from "../context/LeaderboardContext";
 import { ScoreBoard } from "./ScoreBoard";
@@ -279,7 +280,7 @@ export function LeaderboardLightbox() {
               className="leaderboard-lightbox__back"
               onClick={goBackInLeaderboard}
             >
-              ← Back to list
+              <UiIcon name="back" /> Back to list
             </button>
           ) : (
             <span className="leaderboard-lightbox__header-spacer" />
@@ -297,7 +298,7 @@ export function LeaderboardLightbox() {
             onClick={closeLeaderboard}
             aria-label="Close"
           >
-            ✕
+            <UiIcon name="close" />
           </button>
         </div>
 

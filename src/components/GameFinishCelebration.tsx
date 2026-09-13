@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useRef } from "react";
 import { HeroCutIn } from "./HeroCharacters";
 
@@ -167,7 +168,7 @@ export function GameFinishCelebration({
                 className="finish__unlock-btn"
                 onClick={onUnlockFlag}
               >
-                See today&rsquo;s flag 🌍
+                See today&rsquo;s flag <UiIcon name="globe" />
               </button>
             </div>
           )}
@@ -216,7 +217,7 @@ export function GameFinishCelebration({
                   className="finish__continue"
                   onClick={onSave}
                 >
-                  Save to leaderboard 🏆
+                  Save to leaderboard <UiIcon name="trophy" />
                 </button>
               </div>
               {saveHint === "need-name" && (

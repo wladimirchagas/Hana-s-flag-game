@@ -1,3 +1,4 @@
+import { UiIcon } from "../components/UiIcon";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { LeaveGameDialog } from "../components/LeaveGameDialog";
@@ -165,7 +166,7 @@ export function HistoricalFlagGamePage({
           <h1>{HISTORICAL_ASK_LABELS[ask]}</h1>
           <p className="error-message">{game.error ?? "Something went wrong."}</p>
           <p className="game-home-link">
-            <Link to="/">← Back to home</Link>
+            <Link to="/"><UiIcon name="back" /> Back to home</Link>
           </p>
         </main>
       </div>
@@ -232,7 +233,7 @@ export function HistoricalFlagGamePage({
               draggable={false}
             />
             <span className="flag-card__zoom-hint" aria-hidden="true">
-              ⤢ Click to enlarge
+              <UiIcon name="expand" /> Click to enlarge
             </span>
           </button>
         )}
@@ -255,7 +256,7 @@ export function HistoricalFlagGamePage({
               }}
               aria-label="Close enlarged flag"
             >
-              ×
+              <UiIcon name="close" />
             </button>
           </div>
         )}

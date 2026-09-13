@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { capitalDetail, distinctCapitalFlagPath } from "../lib/capitalInfo";
 import { CAPITAL_ENDONYMS } from "../data/capitalEndonyms";
 import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
@@ -124,7 +125,7 @@ export function CapitalDetails({
                 }}
               />
               <span className="learn-fs__flag-hint" aria-hidden="true">
-                ⤢ Click to enlarge
+                <UiIcon name="expand" /> Click to enlarge
               </span>
             </button>
           </div>

@@ -10,6 +10,7 @@ import { NavigationGuardProvider } from './context/NavigationGuardContext.tsx'
 import { ProfileProvider } from './context/ProfileContext.tsx'
 import { ErrorBoundary } from './components/ErrorBoundary.tsx'
 import './AppAtlas.css'
+import './ButtonControls.css'
 
 // Vite injects BASE_URL from the `base` option in vite.config.ts. Trailing slash
 // is stripped because react-router expects e.g. "/flag-game" not "/flag-game/".

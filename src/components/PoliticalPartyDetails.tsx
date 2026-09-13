@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { FlagMeaning } from "./FlagMeaning";
 import type { PoliticalParty } from "../data/politicalParties";
 import { PoliticalPartyFacts } from "./PoliticalPartyFacts";
@@ -49,7 +50,7 @@ export function PoliticalPartyDetails({
               draggable={false}
               onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
             />
-            <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+            <span className="learn-fs__flag-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
           </button>
         )}
         <FlagMeaning

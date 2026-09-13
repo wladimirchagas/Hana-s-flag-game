@@ -1,3 +1,4 @@
+import { UiIcon } from "../components/UiIcon";
 /**
  * Anthem Timing Calibration Tool
  *
@@ -417,7 +418,7 @@ function YouTubeCalibration() {
                 </button>
 
                 <button onClick={resetMarks} disabled={!selected.lineMarks.length} style={btnStyle("gray")}>
-                  ✕ Reset
+                  <UiIcon name="close" /> Reset
                 </button>
 
                 <button onClick={skipEntry} style={btnStyle("orange")}>
@@ -596,7 +597,7 @@ function WikimediaCalibration() {
           {pageStatus === "running" ? "⏳ Calibrating…" : "▶ Start Calibration"}
         </button>
         {counts.failed > 0 && pageStatus !== "running" && (
-          <button onClick={retryFailed} style={btnStyle("orange")}>↺ Retry {counts.failed} failed</button>
+          <button onClick={retryFailed} style={btnStyle("orange")}><UiIcon name="undo" /> Retry {counts.failed} failed</button>
         )}
         {counts.ok > 0 && (
           <button onClick={exportJSON} style={btnStyle("green")}>↓ Export JSON ({counts.ok})</button>

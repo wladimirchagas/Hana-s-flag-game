@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useRef, useState } from "react";
 
 /**
@@ -42,7 +43,7 @@ export function ShareLinkButton() {
       aria-label="Share a link to this page"
       title="Share a link to this page"
     >
-      <span className="site-topbar__btn-icon" aria-hidden="true">{copied ? "✓" : "🔗"}</span>
+      <span className="site-topbar__btn-icon" aria-hidden="true"><UiIcon name={copied ? "check" : "share"} /></span>
       <span className="site-topbar__btn-label">{copied ? "Copied" : "Share"}</span>
     </button>
   );

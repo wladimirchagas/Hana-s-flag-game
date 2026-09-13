@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { SubdivisionMeta } from "../types/subdivision";
 import { getSubdivisionDisputeLabel } from "../lib/disputedSubdivisions";
@@ -234,7 +235,7 @@ export function SubdivisionDropdown({
                 onClick={closeModal}
                 aria-label="Close"
               >
-                ×
+                <UiIcon name="close" />
               </button>
             </header>
             <div className="dropdown-modal__search">

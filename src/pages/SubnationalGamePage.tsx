@@ -1,3 +1,4 @@
+import { UiIcon } from "../components/UiIcon";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { LeaveGameDialog } from "../components/LeaveGameDialog";
@@ -85,7 +86,7 @@ function SubdivisionFlagCard({
           draggable={false}
           onError={() => setImgError(true)}
         />
-        <span className="flag-card__zoom-hint" aria-hidden="true">⤢ Click to enlarge</span>
+        <span className="flag-card__zoom-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
       </button>
       {zoomed && (
         <div
@@ -111,7 +112,7 @@ function SubdivisionFlagCard({
             }}
             aria-label="Close enlarged flag"
           >
-            ×
+            <UiIcon name="close" />
           </button>
         </div>
       )}
@@ -310,7 +311,7 @@ export function SubnationalGamePage({
           aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
           title={showCities ? "Hide capitals" : "Show capitals"}
         >
-          <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>
+          <span className="world-map__zoom-icon" aria-hidden="true"><UiIcon name="pin" /></span>
         </button>
       </>
     ),
@@ -373,7 +374,7 @@ export function SubnationalGamePage({
           <p className="error-message">{game.error ?? "Something went wrong."}</p>
           <p className="hint">Check your connection and refresh the page.</p>
           <p className="game-home-link">
-            <Link to="/">← Back to home</Link>
+            <Link to="/"><UiIcon name="back" /> Back to home</Link>
           </p>
         </main>
       </div>

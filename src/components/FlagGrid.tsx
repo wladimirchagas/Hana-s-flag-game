@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import {
   continentOrder,
@@ -554,7 +555,7 @@ export function FlagGrid({
                 onClick={() => setFilter("")}
                 aria-label="Clear filter"
               >
-                ×
+                <UiIcon name="close" />
               </button>
             )}
           </div>

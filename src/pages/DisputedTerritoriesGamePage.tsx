@@ -1,3 +1,4 @@
+import { UiIcon } from "../components/UiIcon";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { LeaveGameDialog } from "../components/LeaveGameDialog";
@@ -73,7 +74,7 @@ function DisputedFlagCard({
           draggable={false}
           onError={() => setImgError(true)}
         />
-        <span className="flag-card__zoom-hint" aria-hidden="true">⤢ Click to enlarge</span>
+        <span className="flag-card__zoom-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
       </button>
       {zoomed && (
         <div
@@ -90,7 +91,7 @@ function DisputedFlagCard({
             onClick={(e) => { e.stopPropagation(); setZoomed(false); }}
             aria-label="Close enlarged flag"
           >
-            ×
+            <UiIcon name="close" />
           </button>
         </div>
       )}
@@ -235,7 +236,7 @@ export function DisputedTerritoriesGamePage() {
           <h1>Disputed &amp; Claimed Territories</h1>
           <p className="error-message">{game.error ?? "Something went wrong."}</p>
           <p className="game-home-link">
-            <Link to="/">← Back to home</Link>
+            <Link to="/"><UiIcon name="back" /> Back to home</Link>
           </p>
         </main>
       </div>
