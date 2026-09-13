@@ -810,8 +810,8 @@ export const HistoricalMap = memo(function HistoricalMap({
                   vectorEffect="non-scaling-stroke"
                   className="world-map__country world-map__country--selectable"
                   onClick={() => onSelect?.(f.name)}
-                  onMouseEnter={() => onHover?.(f.name)}
-                  onMouseLeave={() => onHover?.(null)}
+                  onPointerEnter={(e) => { if (e.pointerType === "mouse") onHover?.(f.name); }}
+                  onPointerLeave={(e) => { if (e.pointerType === "mouse") onHover?.(null); }}
                 >
                   {/* Tooltip shows the corrected spelling; f.name (the raw
                       dataset NAME) remains the selection key. Unnamed land says so

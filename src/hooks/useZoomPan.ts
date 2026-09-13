@@ -85,6 +85,9 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
   // Timer handle for the zoomTo animation loop (setTimeout-based so it
   // works even in background iframes where requestAnimationFrame is throttled).
   const animTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // A cancelled drag may never produce a click. Never let its suppression
+  // listener consume the next intentional tap on a country.
+  const clearPendingClick = useRef<(() => void) | null>(null);
 
   // Clamp the pan offsets so the user can't drag the map completely
   // off-screen. With scale `k`, the SVG content occupies the viewBox
@@ -146,6 +149,7 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
   const onPointerDown = useCallback(
     (e: React.PointerEvent<SVGSVGElement>) => {
       if (e.button !== 0) return;
+      clearPendingClick.current?.();
       drag.current = {
         active: true,
         captured: false,
@@ -206,11 +210,15 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
     // on a country path INSIDE this svg — otherwise the user pans and
     // inadvertently selects a country. Listening on the SVG (not
     // window) means buttons / unrelated DOM clicks still work.
-    if (d.moved) {
+    if (d.moved && e.type !== "pointercancel") {
       const swallow = (ev: MouseEvent) => {
         ev.stopPropagation();
         ev.preventDefault();
+        clearPendingClick.current?.();
+      };
+      clearPendingClick.current = () => {
         svg.removeEventListener("click", swallow, true);
+        clearPendingClick.current = null;
       };
       svg.addEventListener("click", swallow, true);
     }

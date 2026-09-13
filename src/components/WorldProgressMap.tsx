@@ -981,9 +981,13 @@ export function WorldProgressMap({
                           ? (e) => handlePathClick(e, alpha2)
                           : undefined
                       }
-                      onMouseEnter={
+                      // Touch-generated mouse hover can open the detail panel
+                      // before click, moving the map under the user's finger.
+                      // Keep previews mouse-only; touch commits through onClick.
+                      onPointerEnter={
                         clickable && alpha2
-                          ? () => {
+                          ? (e) => {
+                              if (e.pointerType !== "mouse") return;
                               const resolved =
                                 selectable!.territoryParent?.[alpha2!] ?? alpha2!;
                               setHoveredCode(resolved);
@@ -991,9 +995,10 @@ export function WorldProgressMap({
                             }
                           : undefined
                       }
-                      onMouseLeave={
+                      onPointerLeave={
                         clickable
-                          ? () => {
+                          ? (e) => {
+                              if (e.pointerType !== "mouse") return;
                               setHoveredCode(null);
                               selectable?.onHover?.(null);
                             }
