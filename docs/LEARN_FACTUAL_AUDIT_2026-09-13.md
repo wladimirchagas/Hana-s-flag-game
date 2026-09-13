@@ -8,7 +8,7 @@ Repository: `wladimirchagas/Hana-s-flag-game`. Baseline commit: [`8b2167aef864e6
 
 Inventory: 7,656 Git tree entries; source, generators, existing audit documents, Learn components and data pipelines examined. Parsed national-symbol registry: 230 country/territory groups and 1,837 entries; 211 passport entries. Political-party registry: 97 groups and 792 entries. Subdivision metadata: 204 groups and 4,182 division rows. These are inventory counts, **not counts of independently verified facts**. Country/territory groups must not be equated with sovereign-state counts.
 
-Live observations recorded: country selector/grid, country details, passport display, and anthem embed. Equatorial Guinea and Japan were specifically inspected. Most images have not yet been individually visually compared against original authoritative exemplars. Six subdivision GeoJSON files were parsed directly (VN, AO, BI, ID, NP, NO); their feature counts are recorded below. Historical geometry has not yet received a polygon-by-polygon source comparison.
+Live observations recorded: country selector/grid, country details, passport display, and anthem embed. Equatorial Guinea and Japan were specifically inspected. Most images have not yet been individually visually compared against original authoritative exemplars. Six subdivision GeoJSON files were parsed directly (VN, AO, BI, ID, NP, NO); their feature counts are recorded below. All 21 historical GeoJSON files were subsequently parsed for feature properties and precision metadata. Historical geometry has not yet received a polygon-by-polygon source comparison.
 
 All repository paths below refer to the fixed baseline, not whichever revision happens to be on main when this report is read. Quoted strings are searchable anchors; line numbers can move. External sources were consulted on 2026-09-13. Government material is authoritative for that government's law, issuance and claims; it does not by itself adjudicate contested sovereignty. Scholarly reconstruction, legal designation, actual control and international recognition require separate treatment.
 
@@ -36,6 +36,8 @@ Priority P1 means misleading core learning content or a systemic data defect. P2
 | F16 | P1 | Confirmed omission | Zimbabwe's currency list omits ZiG. |
 | F17 | P2 | Confirmed evidence gap | Historical population values lack record-level date, method, uncertainty and source fields. |
 | F18 | P2 | Confirmed taxonomy risk | Administrative metadata mixes obsolete units, geographical regions and unlike administrative levels. |
+| F19 | P2 | Confirmed repository error; live reachability unproven | The 2000 BCE override registry includes Hammurabi-era Babylon centuries too early. |
+| F20 | P2 | Confirmed internal inconsistency | Iraq's 1960 record points to a 1959 flag asset but describes the displayed flag as the old royal flag. |
 
 ## Detailed evidence and recommended corrections
 
@@ -57,7 +59,7 @@ This is a demonstrably false explanation, not proof that its author deliberately
 
 ### F03 — Vietnam: obsolete administrative map and misleading labels
 
-`src/data/subdivisionMeta.ts` contains 63 Vietnamese divisions; `public/subdivisions/VN.json` also contains 63 features. The Vietnamese government [lists 34 provincial-level units from 12 June 2025](https://xaydungchinhsach.chinhphu.vn/chi-tiet-34-don-vi-hanh-chinh-cap-tinh-tu-12-6-2025-119250612141845533.htm): 28 provinces and six centrally governed cities. Its [Decision 19/2025 code-list explanation](https://xaydungchinhsach.chinhphu.vn/bang-danh-muc-va-ma-so-cua-34-tinh-thanh-moi-cac-don-vi-hanh-chinh-cap-xa-moi-11925070418263625.htm) supplies the later operative coding context.
+`src/lib/subdivisionMeta.ts` contains 63 Vietnamese divisions; `public/subdivisions/VN.json` also contains 63 features. The Vietnamese government [lists 34 provincial-level units from 12 June 2025](https://xaydungchinhsach.chinhphu.vn/chi-tiet-34-don-vi-hanh-chinh-cap-tinh-tu-12-6-2025-119250612141845533.htm): 28 provinces and six centrally governed cities. Its [Decision 19/2025 code-list explanation](https://xaydungchinhsach.chinhphu.vn/bang-danh-muc-va-ma-so-cua-34-tinh-thanh-moi-cac-don-vi-hanh-chinh-cap-xa-moi-11925070418263625.htm) supplies the later operative coding context.
 
 The old metadata also includes geographical-region labels such as `VN-39` Đông Nam Bộ, `VN-53` Northeast Vietnam and `VN-66` Red River Delta, while Hanoi is typed as a province. Those are not an adequate current first-level administrative register. Updating the visible count alone cannot repair the map.
 
@@ -192,3 +194,45 @@ Positive control: “Naoero” must not be reflexively changed back to “Nauru�
 | Published Learn | Baseline matched; targeted country/passport/anthem observations | Full device/navigation coverage and all country/era combinations |
 
 Resume from this ledger, not from an assumption that unlisted countries passed. Country-by-country verification, each historical snapshot and each image remain open. The report establishes substantial confirmed defects and a reproducible remediation path, but **does not satisfy a claim that every country, document, image and boundary has been fully verified**.
+
+## Historical-map follow-up checkpoint
+
+All 21 historical GeoJSON files were retrieved by baseline blob SHA and parsed successfully: 5,917 features in total. A feature is not equivalent to a state: disconnected polygons, unnamed land and cultural territories affect these counts. Unnamed features are not automatically missing countries.
+
+| File | Features | Unnamed features | Precision codes present |
+|---|---:|---:|---|
+| world_100.geojson | 248 | 149 | 1 |
+| world_1000.geojson | 218 | 89 | 1 |
+| world_1200.geojson | 228 | 99 | 1 |
+| world_1300.geojson | 221 | 80 | 1 |
+| world_1500.geojson | 288 | 91 | 1 |
+| world_1600.geojson | 836 | 199 | 1, 3 |
+| world_1700.geojson | 781 | 189 | 3, 1 |
+| world_1815.geojson | 435 | 107 | 3, 1 |
+| world_1880.geojson | 232 | 63 | 3, 2 |
+| world_1900.geojson | 213 | 48 | 3 |
+| world_1914.geojson | 175 | 33 | 3 |
+| world_1920.geojson | 203 | 40 | 3 |
+| world_1938.geojson | 248 | 79 | 3 |
+| world_1945.geojson | 225 | 42 | 3 |
+| world_1960.geojson | 194 | 37 | 3 |
+| world_1994.geojson | 236 | 43 | 3 |
+| world_600.geojson | 208 | 108 | 1 |
+| world_800.geojson | 237 | 101 | 1 |
+| world_bc2000.geojson | 145 | 100 | 1 |
+| world_bc323.geojson | 144 | 73 | 1 |
+| world_bc500.geojson | 202 | 111 | 1 |
+
+The renderer in `src/components/HistoricalMap.tsx` already reads `BORDERPRECISION` and displays an approximation caveat when more than half of known features have precision at most 1. It also marks some derived boundaries. Preserve these safeguards. Improvement: a low-precision selected feature should disclose its uncertainty even when the whole-map threshold is not met. The highest upstream precision code still does not imply cadastral or treaty-level accuracy.
+
+**Avoid a false positive:** the raw 1938 Iraq feature still carries `PARTOF: Mesopotamia (GB)` and a British `SUBJECTO`. However, `FALSE_SUBJECTO` explicitly rejects that ruler for `ad1938|Iraq`, and an era override describes independent Iraq. Therefore the raw stale field must not be reported as proof that the current panel calls Iraq a British subject. Normalize or annotate the source artifact to prevent future consumers bypassing that correction; validate rendered behaviour separately.
+
+### F19 — Incorrect historical overrides can survive outside the active map
+
+The `bc2000` override block in `src/lib/historicalEras.ts` includes a Babylonian Empire note explicitly describing Hammurabi. [The Met's Isin-Larsa and Old Babylonian chronology](https://www.metmuseum.org/essays/the-isin-larsa-and-old-babylonian-periods-2004-1595-b-c) dates Hammurabi's reign to approximately 1792–1750 BCE, so it does not belong to a 2000 BCE snapshot. Other entries in this block, including New Kingdom Egypt and Shang Dynasty, require chronology checks as a group.
+
+The baseline raw 2000 BCE GeoJSON does not have a `NAME: Babylonian Empire` feature. Consequently this is confirmed incorrect repository content, with live reachability unproven, rather than a claim that a user currently sees Hammurabi on that map. Remove or correctly relocate unreachable misinformation as well as fixing active entries; a later alias/import could activate it. The nearby claim that Amorite peoples were Indo-European is an additional linguistic lead requiring a precise scholarly citation before replacement.
+
+### F20 — Iraq 1960 image/prose disagreement
+
+The `ad1960` Iraq override in `src/lib/historicalEras.ts` selects `historical-flags/iraq-1959.svg` but its note ends by describing the old royal flag as representing the kingdom that had just ended. This is an internal inconsistency between the designated asset/version and explanation. Verify the asset visually against the 1959 republican design, then replace the stale sentence. Do not change the asset back to a royal flag simply to make it agree with incorrect prose.
