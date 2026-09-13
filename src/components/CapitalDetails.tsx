@@ -83,27 +83,9 @@ export function CapitalDetails({
 
   return (
     <>
-      <dl className="entity-summary">
-        <div className="entity-summary__row">
-          <dt className="entity-summary__label">Capital</dt>
-          <dd className="entity-summary__value">{capitalName}</dd>
-        </div>
-        {CAPITAL_ENDONYMS[code] && (
-          <div className="entity-summary__row">
-            <dt className="entity-summary__label">Local name</dt>
-            <dd className="entity-summary__value">{CAPITAL_ENDONYMS[code]}</dd>
-          </div>
-        )}
-        {detail?.population != null && (
-          <div className="entity-summary__row">
-            <dt className="entity-summary__label">Population</dt>
-            <dd className="entity-summary__value">
-              {formatPopulation(detail.population)}
-              {popDetail ? ` (${popDetail})` : ""}
-            </dd>
-          </div>
-        )}
-      </dl>
+      {/* Same ordering as every other info widget: the flag (+ its "What this
+          flag means" explainer) leads, directly under the "Capital of X"
+          heading above; the fact-sheet rows follow. */}
       {flagUrl && (
         <div className="learn-fs__flag-box">
           <div className="learn-fs__flag-head">
@@ -135,6 +117,27 @@ export function CapitalDetails({
           <FlagMeaning code={code} meanings={CITY_FLAG_MEANINGS} />
         </div>
       )}
+      <dl className="entity-summary">
+        <div className="entity-summary__row">
+          <dt className="entity-summary__label">Capital</dt>
+          <dd className="entity-summary__value">{capitalName}</dd>
+        </div>
+        {CAPITAL_ENDONYMS[code] && (
+          <div className="entity-summary__row">
+            <dt className="entity-summary__label">Local name</dt>
+            <dd className="entity-summary__value">{CAPITAL_ENDONYMS[code]}</dd>
+          </div>
+        )}
+        {detail?.population != null && (
+          <div className="entity-summary__row">
+            <dt className="entity-summary__label">Population</dt>
+            <dd className="entity-summary__value">
+              {formatPopulation(detail.population)}
+              {popDetail ? ` (${popDetail})` : ""}
+            </dd>
+          </div>
+        )}
+      </dl>
       {detail?.population == null && !flagUrl && (
         <p className="learn-fs__subdiv-prompt">
           No further sourced data is available for this capital yet.

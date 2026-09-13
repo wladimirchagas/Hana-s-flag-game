@@ -2022,6 +2022,35 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 const capital = subdivisionCapital(selectedSubdivision.code);
                 return (
                   <>
+                    {/* Same ordering as the country widget: the flag (+ its
+                        "What this flag means" explainer) leads, directly under
+                        the "Choose a division" dropdown above; the fact-sheet
+                        rows follow. */}
+                    {sdUrl ? (
+                      <div className="learn-fs__flag-box">
+                        {flagRow(
+                          <button
+                            type="button"
+                            className="learn-fs__flag"
+                            onClick={() => setZoomedFlagUrl(sdUrl)}
+                            aria-label={`Enlarge ${selectedSubdivision.name} flag`}
+                          >
+                            <img
+                              key={sdUrl}
+                              src={sdUrl}
+                              alt=""
+                              className="learn-fs__flag-img"
+                              draggable={false}
+                              onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+                            />
+                            <span className="learn-fs__flag-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
+                          </button>,
+                        )}
+                        <FlagMeaning code={selectedSubdivision.code} />
+                      </div>
+                    ) : (
+                      <FlagMeaning code={selectedSubdivision.code} />
+                    )}
                     {/* Fact-sheet mirrors the national country widget: same
                         entity-summary font + label-column alignment. */}
                     <dl className="entity-summary">
@@ -2061,31 +2090,6 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       <p className="learn-fs__nsgt-note" title="Listed on the UN Non-Self-Governing Territories agenda (C-24)">
                         🌐 UN Non-Self-Governing Territory
                       </p>
-                    )}
-                    {sdUrl ? (
-                      <div className="learn-fs__flag-box">
-                        {flagRow(
-                          <button
-                            type="button"
-                            className="learn-fs__flag"
-                            onClick={() => setZoomedFlagUrl(sdUrl)}
-                            aria-label={`Enlarge ${selectedSubdivision.name} flag`}
-                          >
-                            <img
-                              key={sdUrl}
-                              src={sdUrl}
-                              alt=""
-                              className="learn-fs__flag-img"
-                              draggable={false}
-                              onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
-                            />
-                            <span className="learn-fs__flag-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
-                          </button>,
-                        )}
-                        <FlagMeaning code={selectedSubdivision.code} />
-                      </div>
-                    ) : (
-                      <FlagMeaning code={selectedSubdivision.code} />
                     )}
                     {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code] && (
                       <p className="learn-fs__unofficial-note">
@@ -2209,33 +2213,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   <span className="learn-fs__search-label" aria-hidden="true">
                     National capital of {subdivisionCountry.name}
                   </span>
-                  <dl className="entity-summary">
-                    <div className="entity-summary__row">
-                      <dt className="entity-summary__label">Capital</dt>
-                      <dd className="entity-summary__value">{cap.name}</dd>
-                    </div>
-                    {detail?.endonym && (
-                      <div className="entity-summary__row">
-                        <dt className="entity-summary__label">Local name</dt>
-                        <dd className="entity-summary__value">{detail.endonym}</dd>
-                      </div>
-                    )}
-                    {cap.note && (
-                      <div className="entity-summary__row">
-                        <dt className="entity-summary__label">Role</dt>
-                        <dd className="entity-summary__value">{cap.note}</dd>
-                      </div>
-                    )}
-                    {detail && (
-                      <div className="entity-summary__row">
-                        <dt className="entity-summary__label">Population</dt>
-                        <dd className="entity-summary__value">
-                          {formatPopulation(detail.population)}
-                          {popDetail ? ` (${popDetail})` : ""}
-                        </dd>
-                      </div>
-                    )}
-                  </dl>
+                  {/* Same ordering as every other info widget: the flag (+ its
+                      explainer) leads, directly under the heading above; the
+                      fact-sheet rows follow. */}
                   {flagUrl ? (
                     <div className="learn-fs__flag-box">
                       {flagRow(
@@ -2268,6 +2248,33 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       No municipal flag is bundled for this capital yet.
                     </p>
                   )}
+                  <dl className="entity-summary">
+                    <div className="entity-summary__row">
+                      <dt className="entity-summary__label">Capital</dt>
+                      <dd className="entity-summary__value">{cap.name}</dd>
+                    </div>
+                    {detail?.endonym && (
+                      <div className="entity-summary__row">
+                        <dt className="entity-summary__label">Local name</dt>
+                        <dd className="entity-summary__value">{detail.endonym}</dd>
+                      </div>
+                    )}
+                    {cap.note && (
+                      <div className="entity-summary__row">
+                        <dt className="entity-summary__label">Role</dt>
+                        <dd className="entity-summary__value">{cap.note}</dd>
+                      </div>
+                    )}
+                    {detail && (
+                      <div className="entity-summary__row">
+                        <dt className="entity-summary__label">Population</dt>
+                        <dd className="entity-summary__value">
+                          {formatPopulation(detail.population)}
+                          {popDetail ? ` (${popDetail})` : ""}
+                        </dd>
+                      </div>
+                    )}
+                  </dl>
                 </div>
               </aside>
             );

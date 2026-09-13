@@ -56,6 +56,42 @@ export function NationalFlagDetails({
   const noun = symbolNoun(flag.category);
   return (
     <>
+      {/* Same ordering as every other info widget (and its sibling
+          PoliticalPartyDetails): the image (or, absent one, the sourced
+          no-image reason) plus its explainer lead; the fact rows and the
+          attribution captions follow. */}
+      <div className="learn-fs__flag-box">
+        {flag.noImageReason ? (
+          // Listed without a picture rather than dropped — the reason IS the content
+          // here, so the user learns the symbol exists and why it cannot be shown.
+          <p className="learn-fs__no-image">
+            <strong>No image shown.</strong> {flag.noImageReason}
+          </p>
+        ) : (
+          <button
+            type="button"
+            className="learn-fs__flag"
+            onClick={() => url && onEnlarge(url)}
+            aria-label={`Enlarge ${flag.name}`}
+          >
+            <img
+              key={url ?? "no-image"}
+              src={url ?? undefined}
+              alt=""
+              className="learn-fs__flag-img"
+              draggable={false}
+              onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+            />
+            <span className="learn-fs__flag-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
+          </button>
+        )}
+        <p className="learn-fs__flag-design">{flag.design}</p>
+        <FlagMeaning
+          code={flag.id}
+          meanings={meanings ?? NATIONAL_FLAG_MEANINGS}
+          label={meaningLabel(flag.category)}
+        />
+      </div>
       <dl className="entity-summary">
         <div className="entity-summary__row">
           <dt className="entity-summary__label">{noun}</dt>
@@ -120,38 +156,6 @@ export function NationalFlagDetails({
           not a flag of the modern country, and not the flag of any ruling power.
         </p>
       )}
-      <div className="learn-fs__flag-box">
-        {flag.noImageReason ? (
-          // Listed without a picture rather than dropped — the reason IS the content
-          // here, so the user learns the symbol exists and why it cannot be shown.
-          <p className="learn-fs__no-image">
-            <strong>No image shown.</strong> {flag.noImageReason}
-          </p>
-        ) : (
-          <button
-            type="button"
-            className="learn-fs__flag"
-            onClick={() => url && onEnlarge(url)}
-            aria-label={`Enlarge ${flag.name}`}
-          >
-            <img
-              key={url ?? "no-image"}
-              src={url ?? undefined}
-              alt=""
-              className="learn-fs__flag-img"
-              draggable={false}
-              onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
-            />
-            <span className="learn-fs__flag-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
-          </button>
-        )}
-        <p className="learn-fs__flag-design">{flag.design}</p>
-        <FlagMeaning
-          code={flag.id}
-          meanings={meanings ?? NATIONAL_FLAG_MEANINGS}
-          label={meaningLabel(flag.category)}
-        />
-      </div>
     </>
   );
 }
