@@ -201,7 +201,7 @@ function selectionFlag(s: Selection, baseUrl: string): string | null {
 // here; the panel now renders a structured <EntitySummary /> component
 // for both modern + historical entities.)
 
-export default function LearnPage({ variant }: { variant?: "atlas" | "default" } = {}) {
+export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "default" } = {}) {
   const location = useLocation();
   const isAtlas = variant === "atlas" || location.pathname.includes("visual-redesign");
 
