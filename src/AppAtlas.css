@@ -1,0 +1,226 @@
+/* Approved Learn atlas theme, extended to every web route and portal.
+   Keep semantic colours, game feedback, images, motion that communicates game
+   state, modal stacking and all layout/interaction logic intact. */
+:root {
+  --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ink: #202a30;
+  --ink-soft: #59666e;
+  --ink-faint: #d8dee1;
+  --cream: #f5f7f8;
+  --cream-deep: #eaf0f2;
+  --paper: #ffffff;
+  --atlas-accent: #176658;
+  --atlas-tint: #e8f3ef;
+  --atlas-border: #d8dee1;
+  --shadow: 0 2px 8px rgb(20 40 50 / 4%);
+  --shadow-soft: 0 8px 28px rgb(20 40 50 / 10%);
+  --radius-lg: 12px;
+  --radius-md: 8px;
+}
+:root[data-theme="dark"] {
+  --ink: #e5ecef;
+  --ink-soft: #aab8c0;
+  --ink-faint: #35434c;
+  --cream: #131b21;
+  --cream-deep: #25323b;
+  --paper: #1c272f;
+  --atlas-accent: #8ddbc6;
+  --atlas-tint: #213c37;
+  --atlas-border: #35434c;
+  --shadow: 0 2px 8px rgb(0 0 0 / 12%);
+  --shadow-soft: 0 8px 28px rgb(0 0 0 / 25%);
+}
+
+/* Shared navigation and controls. No universal background reset: colours on
+   stateful controls (correct/wrong, progress and warnings) are meaningful. */
+body .site-topbar { background: var(--paper); border-bottom: 1px solid var(--atlas-border); }
+body .bottom-nav { background: var(--paper); border-top: 1px solid var(--atlas-border); box-shadow: none; }
+body :is(.site-topbar button, .bottom-nav button) {
+  font-family: var(--font-display);
+  border: 1px solid var(--atlas-border);
+  border-radius: 7px;
+  box-shadow: none;
+  background: var(--paper);
+  color: var(--ink);
+  transform: none;
+}
+body :is(.btn, .btn-primary, .btn-end-game, .btn-leaderboard, .install-app-btn,
+  .hero-card__settings, .card-sticker__cta, .picker__play, .picker__cancel,
+  .qquiz__play, .qquiz__cancel, .all195__cancel, .all195__show, .all195__option-cta,
+  .profile-btn, .profile-form__upload, .profile-card__edit, .profile-card__delete,
+  .finish__play-again, .finish__continue, .finish__skip, .finish__unlock-btn,
+  .post-game-leaderboard__save, .flag-unlock__skip, .flag-unlock__learned,
+  .leave-game-dialog__stay, .leave-game-dialog__leave, .map-popover__confirm,
+  .map-view-control__preset, .world-map__zoom-btn, .anthem-player__btn,
+  .kdh-panel__nav, .game-nav__home, .install-help__ok) {
+  border-width: 1px;
+  border-radius: 7px;
+  box-shadow: none;
+  text-shadow: none;
+  font-family: var(--font-display);
+  font-weight: 600;
+  transform: none;
+}
+body :is(.btn-primary, .card-sticker__cta, .picker__play, .qquiz__play,
+  .all195__show, .all195__option-cta, .profile-btn:not(.profile-btn--ghost):not(.profile-btn--danger),
+  .finish__play-again, .finish__continue, .finish__unlock-btn,
+  .post-game-leaderboard__save, .flag-unlock__learned, .leave-game-dialog__stay,
+  .install-help__ok) {
+  background: var(--atlas-accent);
+  border-color: var(--atlas-accent);
+  color: #fff;
+}
+:root[data-theme="dark"] body :is(.btn-primary, .card-sticker__cta, .picker__play,
+  .qquiz__play, .all195__show, .all195__option-cta,
+  .profile-btn:not(.profile-btn--ghost):not(.profile-btn--danger),
+  .finish__play-again, .finish__continue, .finish__unlock-btn,
+  .post-game-leaderboard__save, .flag-unlock__learned, .leave-game-dialog__stay,
+  .install-help__ok) { color: #142821; }
+body :is(button, a, input, select, textarea, summary):focus-visible {
+  outline: 2px solid var(--atlas-accent);
+  outline-offset: 3px;
+}
+body button:disabled { cursor: not-allowed; }
+body :is(input, select, textarea) { font-family: var(--font-display); }
+body :is(.dropdown-input, .dropdown-modal__input, .profile-form__input,
+  .finish__name-input, .post-game-leaderboard__input, .qquiz__mode-select) {
+  border: 1px solid var(--atlas-border);
+  border-radius: 7px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: none;
+}
+
+/* Home: preserve the carousel, characters, every mode and its description;
+   remove the tilted sticker treatment and make the choices a clean grid. */
+body :is(.sticker, .app) { background: var(--cream); }
+body .sticker__main { padding-top: clamp(1.75rem, 4vw, 3.5rem); gap: 2rem; }
+body .sticker__title { font-size: clamp(2.1rem, 5.5vw, 4rem); letter-spacing: -.035em; line-height: 1.15; }
+body :is(.sticker__ch, .sticker__the, .sticker__bang,
+  .hero-card__title, .card-sticker__title, .finish__title,
+  .finish__title-em, .finish__title-em--a, .finish__title-em--b,
+  .finish__title-em--c, .game-complete__title) {
+  text-shadow: none;
+  transform: none;
+  color: var(--ink);
+}
+body :is(.sticker__ch:nth-child(odd), .sticker__ch:nth-child(even)) { transform: none; }
+body .sticker__stars { text-shadow: none; color: var(--atlas-accent); }
+body :is(.hero-card, .card-sticker, .card-sticker--secondary) {
+  background: var(--paper);
+  border: 1px solid var(--atlas-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transform: none;
+}
+body :is(.hero-card:hover, .card-sticker:hover) {
+  background: var(--paper);
+  border-color: var(--atlas-accent);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-2px);
+}
+body .hero-card__poster { border-radius: 8px; box-shadow: none; }
+body .hero-card__content { padding: 1.25rem; }
+body .hero-card__title { font-size: 2rem; letter-spacing: -.025em; }
+body .card-sticker__title { letter-spacing: -.02em; }
+body .card-sticker__cta { letter-spacing: 0; font-size: 1rem; }
+body .hero-card__cta { padding: .85rem 2rem; font-size: 1.125rem; }
+body .card-sticker--secondary { padding: 1.5rem; }
+body :is(.tagline, .card-sticker__sub, .hero-card__desc) { line-height: 1.6; }
+
+/* Dialogs: original max-heights, scrolling, focus/blur and z-index retained. */
+body :is(.picker, .qquiz, .all195, .profile-modal, .leaderboard-lightbox__panel,
+  .leave-game-dialog__panel, .finish__panel, .flag-unlock__panel,
+  .anthem-modal__card, .install-help, .dropdown-modal__sheet, .dropdown-list,
+  .map-view-control__popover, .map-popover, .burst__panel) {
+  border: 1px solid var(--atlas-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+}
+body :is(.picker__header, .qquiz__header, .all195__header,
+  .profile-modal__header, .leaderboard-lightbox__header) {
+  background: var(--paper);
+  border-bottom: 1px solid var(--atlas-border);
+}
+body :is(.picker__footer, .qquiz__footer, .all195__footer) {
+  background: var(--paper);
+  border-top: 1px solid var(--atlas-border);
+}
+body :is(.picker__title, .qquiz__title, .all195__title,
+  .profile-modal__title, .leaderboard-lightbox__title, .leave-game-dialog__title,
+  .flag-unlock__title, .install-help__title, .dropdown-modal__title) {
+  color: var(--ink);
+  text-shadow: none;
+  letter-spacing: -.02em;
+  font-weight: 650;
+}
+body :is(.picker__close, .qquiz__close, .all195__close, .all195__back,
+  .profile-modal__close, .leaderboard-lightbox__close, .leaderboard-lightbox__back,
+  .flag-unlock__close, .install-help__close, .dropdown-modal__close,
+  .anthem-modal__close, .map-popover__close, .flag-zoom__close) {
+  border: 1px solid var(--atlas-border);
+  border-radius: 7px;
+  box-shadow: none;
+}
+
+/* Set-up choices and saved profiles. Selected states remain unmistakable. */
+body :is(.qquiz__chip, .qquiz__diff, .qquiz__submode, .all195__option,
+  .country-selector__list label, .profile-card, .avatar-picker__option,
+  .leaderboard-lightbox__filter-chip, .dropdown-tile, .answer-options__btn) {
+  border-width: 1px;
+  border-color: var(--atlas-border);
+  border-radius: 8px;
+  box-shadow: none;
+  text-shadow: none;
+  transform: none;
+}
+body :is(.qquiz__chip--active, .profile-card--active,
+  .avatar-picker__option--selected, .leaderboard-lightbox__filter-chip--active,
+  .answer-options__btn--active, .map-view-control__preset--active,
+  .world-map__zoom-btn--active, .dropdown-modal__option--selected) {
+  background: var(--atlas-tint);
+  border-color: var(--atlas-accent);
+  color: var(--atlas-accent);
+}
+body .profile-code-display { border-width: 1px; border-radius: 8px; box-shadow: none; }
+/* Difficulty colours are semantic; retain lime/sky/pink and their fixed-dark
+   labels, while giving all three the same fine selected border. */
+body .qquiz__diff--active { border-color: var(--atlas-accent); }
+body :is(.qquiz__group-row, .all195__group-row, .qquiz__region-header) { border-color: var(--atlas-border); }
+body :is(.profile-form__hint, .qquiz__hint, .all195__hint, .picker__hint) { line-height: 1.55; }
+
+/* Gameplay and results: never reset colours on correct/wrong indicators, map
+   paths or feedback, and never constrain/crop flag images. */
+body :is(.card, .map-section, .score-board, .game-clock, .end-game,
+  .post-game-leaderboard, .results-flags, .historical-results) {
+  border-width: 1px;
+  border-color: var(--atlas-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+body .game-clock { border-radius: 7px; }
+body :is(.card-header h1, .map-heading h2, .results-flags__heading,
+  .score-board-continent-title, .game-complete__title) {
+  color: var(--ink);
+  text-shadow: none;
+  letter-spacing: -.02em;
+}
+body :is(.card-header__chip, .leaderboard-lightbox__mode-tag) { border-width: 1px; border-radius: 5px; box-shadow: none; }
+body .finish__stat { border-width: 1px; border-color: var(--atlas-border); border-radius: 8px; box-shadow: none; }
+body .leaderboard-lightbox__row { border-width: 1px; border-color: var(--atlas-border); border-radius: 8px; box-shadow: none; }
+body .leaderboard-lightbox__row:hover { background: var(--atlas-tint); }
+body .leaderboard-lightbox__rank { border-width: 1px; box-shadow: none; }
+body .anthem-player__youtube { border-width: 1px; }
+body .calibrate-page { line-height: 1.6; }
+body .calibrate-page :is(button, select, input) { border-radius: 7px; }
+
+@media (max-width: 600px) {
+  body .sticker__main { padding: 1.5rem 1rem 2rem; gap: 1.5rem; }
+  body .card-sticker--secondary { padding: 1.25rem; }
+  body :is(.picker__play, .qquiz__play, .all195__show, .profile-btn,
+    .finish__play-again, .finish__continue) { min-height: 44px; }
+  body .hero-card__cta { padding: .8rem 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body :is(.hero-card, .card-sticker) { transition: none; transform: none; }
+}

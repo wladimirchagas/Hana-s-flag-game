@@ -85,7 +85,7 @@ export default function CalibratePage() {
   const [tab, setTab] = useState<Tab>("youtube");
 
   return (
-    <div style={{ padding: "24px", maxWidth: 960, margin: "0 auto", fontFamily: "monospace" }}>
+    <div className="calibrate-page" style={{ padding: "24px", maxWidth: 960, margin: "0 auto", fontFamily: "var(--font-display)" }}>
       <h1 style={{ fontSize: 22, marginBottom: 4 }}>Anthem Timing Calibration</h1>
 
       {/* Tab bar */}
@@ -96,8 +96,8 @@ export default function CalibratePage() {
             onClick={() => setTab(t)}
             style={{
               padding: "6px 18px",
-              background: tab === t ? "#333" : "#ddd",
-              color: tab === t ? "#fff" : "#333",
+              background: tab === t ? "var(--atlas-accent)" : "var(--cream-deep)",
+              color: tab === t ? "var(--paper)" : "var(--ink)",
               border: "none",
               borderRadius: 20,
               cursor: "pointer",
@@ -300,12 +300,12 @@ function YouTubeCalibration() {
 
   return (
     <div>
-      <p style={{ color: "#555", fontFamily: "sans-serif", fontSize: 13, marginBottom: 16 }}>
+      <p style={{ color: "var(--ink-soft)", fontFamily: "var(--font-display)", fontSize: 13, marginBottom: 16 }}>
         Play the video. Each time the video shows the <strong>next lyric line</strong>, tap{" "}
         <em>Mark line</em> — the exact video time is recorded for that line. Mark every line,
         then move to the next anthem. Marks are saved in this browser automatically.<br />
         When done, tap <em>Copy JSON</em> and paste the result into the chat (or commit it with{" "}
-        <code style={{ background: "#f5f5f5", padding: "2px 6px", borderRadius: 4 }}>
+        <code style={{ background: "var(--cream)", padding: "2px 6px", borderRadius: 4 }}>
           node scripts/apply-calibration.mjs anthem-yt-calibration.json
         </code>
         ).
@@ -313,7 +313,7 @@ function YouTubeCalibration() {
 
       {/* Stats + export */}
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 16 }}>
-        <span style={{ fontFamily: "sans-serif", fontSize: 13, alignSelf: "center" }}>
+        <span style={{ fontFamily: "var(--font-display)", fontSize: 13, alignSelf: "center" }}>
           {markedCount} marked · {pendingCount} pending
         </span>
         {entries.some(e => e.lineMarks.length > 0) && (
@@ -350,10 +350,10 @@ function YouTubeCalibration() {
                   width: "100%",
                   textAlign: "left",
                   padding: "6px 10px",
-                  background: e.code === selectedCode ? "#2196f3" : "transparent",
-                  color: e.code === selectedCode ? "#fff" : "#333",
+                  background: e.code === selectedCode ? "var(--atlas-accent)" : "transparent",
+                  color: e.code === selectedCode ? "var(--paper)" : "var(--ink)",
                   border: "none",
-                  borderBottom: "1px solid #eee",
+                  borderBottom: "1px solid var(--atlas-border)",
                   cursor: "pointer",
                   fontFamily: "monospace",
                   fontSize: 12,
@@ -364,7 +364,7 @@ function YouTubeCalibration() {
                 </span>
                 <strong>{e.code}</strong>
                 {e.lineMarks.length > 0 && (
-                  <span style={{ color: e.code === selectedCode ? "#cff" : "#888", marginLeft: 4 }}>
+                  <span style={{ color: e.code === selectedCode ? "var(--paper)" : "var(--ink-soft)", marginLeft: 4 }}>
                     {e.lineMarks.length}/{e.lines.length}
                   </span>
                 )}
@@ -377,23 +377,23 @@ function YouTubeCalibration() {
         <div style={{ flex: 1, minWidth: 0 }}>
           {selected && (
             <>
-              <div style={{ marginBottom: 8, fontFamily: "sans-serif" }}>
+              <div style={{ marginBottom: 8, fontFamily: "var(--font-display)" }}>
                 <strong>{selected.code}</strong> — {selected.title}
-                <span style={{ color: "#888", marginLeft: 8, fontSize: 12 }}>
+                <span style={{ color: "var(--ink-soft)", marginLeft: 8, fontSize: 12 }}>
                   stored offset: {selected.currentOffset}s
                 </span>
               </div>
 
               <div
                 ref={playerContainerRef}
-                style={{ width: "100%", borderRadius: 8, overflow: "hidden", border: "2px solid #ccc", background: "#000" }}
+                style={{ width: "100%", borderRadius: 8, overflow: "hidden", border: "1px solid var(--atlas-border)", background: "#000" }}
               />
 
               <div style={{ marginTop: 12, display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
                 <span style={{
                   fontFamily: "monospace",
                   fontSize: 16,
-                  background: "#f5f5f5",
+                  background: "var(--cream)",
                   padding: "4px 12px",
                   borderRadius: 6,
                   minWidth: 80,
@@ -430,7 +430,7 @@ function YouTubeCalibration() {
               </div>
 
               {/* Line checklist — next line to mark is highlighted */}
-              <div style={{ marginTop: 12, border: "1px solid #ddd", borderRadius: 8, overflow: "hidden" }}>
+              <div style={{ marginTop: 12, border: "1px solid var(--atlas-border)", borderRadius: 8, overflow: "hidden" }}>
                 {selected.lines.map((text, i) => {
                   const isMarked = i < selected.lineMarks.length;
                   const isNext = i === selected.lineMarks.length;
@@ -442,10 +442,10 @@ function YouTubeCalibration() {
                         gap: 10,
                         alignItems: "center",
                         padding: "6px 12px",
-                        fontFamily: "sans-serif",
+                        fontFamily: "var(--font-display)",
                         fontSize: 13,
-                        background: isNext ? "#fff8e1" : isMarked ? "#f1f8e9" : "#fff",
-                        borderBottom: "1px solid #eee",
+                        background: isNext ? "var(--cream-deep)" : isMarked ? "var(--atlas-tint)" : "var(--paper)",
+                        borderBottom: "1px solid var(--atlas-border)",
                         fontWeight: isNext ? 700 : 400,
                       }}
                     >
@@ -454,7 +454,7 @@ function YouTubeCalibration() {
                       </span>
                       <span style={{ flex: 1 }}>{text}</span>
                       {isMarked && (
-                        <span style={{ fontFamily: "monospace", color: "#555", fontSize: 12 }}>
+                        <span style={{ fontFamily: "monospace", color: "var(--ink-soft)", fontSize: 12 }}>
                           {selected.lineMarks[i].toFixed(2)}s
                         </span>
                       )}
@@ -464,10 +464,10 @@ function YouTubeCalibration() {
               </div>
 
               {entries.some(e => e.lineMarks.length > 0) && (
-                <div style={{ marginTop: 16, padding: 12, background: "#e8f5e9", borderRadius: 8, fontFamily: "sans-serif", fontSize: 12 }}>
+                <div style={{ marginTop: 16, padding: 12, background: "var(--atlas-tint)", borderRadius: 8, fontFamily: "var(--font-display)", fontSize: 12 }}>
                   When done, tap <em>Copy JSON</em> at the top and paste the result into the chat —
                   or download it and run:<br />
-                  <code style={{ display: "block", marginTop: 4, background: "#f5f5f5", padding: "4px 8px", borderRadius: 4 }}>
+                  <code style={{ display: "block", marginTop: 4, background: "var(--cream)", padding: "4px 8px", borderRadius: 4 }}>
                     node scripts/apply-calibration.mjs anthem-yt-calibration.json
                   </code>
                 </div>
@@ -580,7 +580,7 @@ function WikimediaCalibration() {
 
   return (
     <div>
-      <p style={{ color: "#666", fontFamily: "sans-serif", fontSize: 13, marginBottom: 20 }}>
+      <p style={{ color: "var(--ink-soft)", fontFamily: "var(--font-display)", fontSize: 13, marginBottom: 20 }}>
         Downloads each anthem from Wikimedia, analyses audio with a vocal-range bandpass
         filter + speech-onset detector, and exports calibrated start timestamps.
         Run in a browser with access to Wikimedia Commons.<br />
@@ -605,10 +605,10 @@ function WikimediaCalibration() {
 
       {pageStatus === "running" && (
         <div style={{ marginBottom: 16 }}>
-          <div style={{ background: "#e0e0e0", borderRadius: 6, height: 10, overflow: "hidden" }}>
-            <div style={{ background: "#2196f3", height: "100%", width: `${(progress.done / progress.total) * 100}%`, transition: "width 0.3s" }} />
+          <div style={{ background: "var(--cream-deep)", borderRadius: 6, height: 10, overflow: "hidden" }}>
+            <div style={{ background: "var(--atlas-accent)", height: "100%", width: `${(progress.done / progress.total) * 100}%`, transition: "width 0.3s" }} />
           </div>
-          <div style={{ fontSize: 12, marginTop: 4, color: "#555" }}>
+          <div style={{ fontSize: 12, marginTop: 4, color: "var(--ink-soft)" }}>
             {progress.done}/{progress.total} — <strong>{progress.current}</strong>
           </div>
         </div>
@@ -625,7 +625,7 @@ function WikimediaCalibration() {
 
       <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
         <thead>
-          <tr style={{ background: "#f5f5f5" }}>
+          <tr style={{ background: "var(--cream)" }}>
             <th style={th}>Code</th><th style={th}>Anthem</th><th style={th}>Status</th>
             <th style={th}>Lines</th><th style={th}>Duration</th><th style={th}>First→Last</th><th style={th}>Error</th>
           </tr>
@@ -636,14 +636,14 @@ function WikimediaCalibration() {
             const first = r.timestamps?.[0];
             const last = r.timestamps?.[r.timestamps!.length - 1];
             return (
-              <tr key={r.code} style={{ borderBottom: "1px solid #eee" }}>
+              <tr key={r.code} style={{ borderBottom: "1px solid var(--atlas-border)" }}>
                 <td style={td}><strong>{r.code}</strong></td>
                 <td style={td}>{anthem?.title ?? "—"}</td>
                 <td style={td}>{r.status === "pending" ? "⏳" : r.status === "ok" ? "✅" : r.status === "failed" ? "❌" : "⏭"}</td>
                 <td style={td}>{anthem?.lines?.length ?? 0}</td>
                 <td style={td}>{r.duration ? `${r.duration.toFixed(1)}s` : "—"}</td>
                 <td style={td}>{first !== undefined && last !== undefined ? `${first}s → ${last}s` : "—"}</td>
-                <td style={{ ...td, color: "#c00", fontSize: 11 }}>{r.error ?? ""}</td>
+                <td style={{ ...td, color: "var(--coral-deep)", fontSize: 11 }}>{r.error ?? ""}</td>
               </tr>
             );
           })}
@@ -651,9 +651,9 @@ function WikimediaCalibration() {
       </table>
 
       {pageStatus === "done" && (
-        <div style={{ marginTop: 20, padding: 16, background: "#e8f5e9", borderRadius: 8, fontFamily: "sans-serif" }}>
+        <div style={{ marginTop: 20, padding: 16, background: "var(--atlas-tint)", borderRadius: 8, fontFamily: "var(--font-display)" }}>
           <strong>Done!</strong> {counts.ok} calibrated. Export JSON then run:
-          <pre style={{ marginTop: 8, background: "#f5f5f5", padding: 10, borderRadius: 6, fontSize: 12 }}>
+          <pre style={{ marginTop: 8, background: "var(--cream)", padding: 10, borderRadius: 6, fontSize: 12 }}>
             node scripts/apply-calibration.mjs anthem-calibration.json
           </pre>
         </div>
@@ -665,8 +665,8 @@ function WikimediaCalibration() {
 // ── Shared styles ──────────────────────────────────────────────────────────
 const btnStyle = (color: "blue" | "green" | "orange" | "gray") => ({
   padding: "7px 14px",
-  background: color === "blue" ? "#2196f3" : color === "green" ? "#4caf50" : color === "orange" ? "#ff9800" : "#9e9e9e",
-  color: "#fff",
+  background: color === "blue" ? "var(--atlas-accent)" : color === "green" ? "var(--atlas-accent)" : color === "orange" ? "#b45309" : "#59666e",
+  color: "var(--paper)",
   border: "none",
   borderRadius: 6,
   cursor: "pointer",
@@ -680,10 +680,10 @@ const chipBtn = (active: boolean): React.CSSProperties => ({
   border: "none",
   cursor: "pointer",
   fontSize: 13,
-  background: active ? "#333" : "#eee",
-  color: active ? "#fff" : "#333",
+  background: active ? "var(--atlas-accent)" : "var(--cream-deep)",
+  color: active ? "var(--paper)" : "var(--ink)",
   fontFamily: "monospace",
 });
 
-const th: React.CSSProperties = { textAlign: "left", padding: "6px 8px", fontWeight: "bold", borderBottom: "2px solid #ddd" };
+const th: React.CSSProperties = { textAlign: "left", padding: "6px 8px", fontWeight: "bold", borderBottom: "1px solid var(--atlas-border)" };
 const td: React.CSSProperties = { padding: "5px 8px", verticalAlign: "top" };
