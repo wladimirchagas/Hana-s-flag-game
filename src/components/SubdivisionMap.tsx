@@ -667,14 +667,14 @@ export function SubdivisionMap({
                         ? (e) => handlePathClick(e, code, name)
                         : undefined
                     }
-                    onMouseEnter={
+                    onPointerEnter={
                       isInteractive && code
-                        ? () => { setHoveredCode(code); onHover?.(code); }
+                        ? (e) => { if (e.pointerType !== "mouse") return; setHoveredCode(code); onHover?.(code); }
                         : undefined
                     }
-                    onMouseLeave={
+                    onPointerLeave={
                       isInteractive
-                        ? () => { setHoveredCode(null); onHover?.(null); }
+                        ? (e) => { if (e.pointerType !== "mouse") return; setHoveredCode(null); onHover?.(null); }
                         : undefined
                     }
                   >
@@ -721,8 +721,8 @@ export function SubdivisionMap({
                   key={`dot-${code}`}
                   transform={`translate(${cx.toFixed(1)} ${cy.toFixed(1)})`}
                   onClick={isInteractive ? (e) => handlePathClick(e, code, name) : undefined}
-                  onMouseEnter={isInteractive ? () => { setHoveredCode(code); onHover?.(code); } : undefined}
-                  onMouseLeave={isInteractive ? () => { setHoveredCode(null); onHover?.(null); } : undefined}
+                  onPointerEnter={isInteractive ? (e) => { if (e.pointerType !== "mouse") return; setHoveredCode(code); onHover?.(code); } : undefined}
+                  onPointerLeave={isInteractive ? (e) => { if (e.pointerType !== "mouse") return; setHoveredCode(null); onHover?.(null); } : undefined}
                   style={{ cursor: isInteractive ? "pointer" : "default" }}
                   aria-hidden="true"
                 >
