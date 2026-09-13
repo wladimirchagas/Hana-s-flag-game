@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath } from "d3-geo";
 import { merge as topoMerge } from "topojson-client";
@@ -861,7 +862,7 @@ export const HistoricalMap = memo(function HistoricalMap({
             aria-label="Zoom out"
             title="Zoom out"
           >
-            −
+            <UiIcon name="minus" />
           </button>
           <button
             type="button"
@@ -871,7 +872,7 @@ export const HistoricalMap = memo(function HistoricalMap({
             aria-label="Zoom in"
             title="Zoom in"
           >
-            +
+            <UiIcon name="plus" />
           </button>
           <button
             type="button"
@@ -881,7 +882,7 @@ export const HistoricalMap = memo(function HistoricalMap({
             aria-label="Reset zoom"
             title="Reset zoom"
           >
-            ⛶
+            <UiIcon name="expand" />
           </button>
           {extraControls}
         </div>

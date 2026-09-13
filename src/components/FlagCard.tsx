@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useState } from "react";
 import type { Country } from "../api/countries";
 import { QUIZ_SYMBOL_NOUNS } from "../lib/quizSymbols";
@@ -91,7 +92,7 @@ export function FlagCard({ country, phase }: Props) {
           draggable={false}
           onError={onImgError}
         />
-        <span className="flag-card__zoom-hint" aria-hidden="true">⤢ Click to enlarge</span>
+        <span className="flag-card__zoom-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
       </button>
       {zoomed && (
         <div
@@ -118,7 +119,7 @@ export function FlagCard({ country, phase }: Props) {
             }}
             aria-label={`Close enlarged ${noun}`}
           >
-            ×
+            <UiIcon name="close" />
           </button>
         </div>
       )}

@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useRef, useState } from "react";
 import { useProfile } from "../context/ProfileContext";
 import { MascotAvatar } from "./MascotAvatar";
@@ -251,7 +252,7 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
             onClick={closeAndBlur}
             aria-label="Close"
           >
-            ×
+            <UiIcon name="close" />
           </button>
         </header>
 
@@ -320,7 +321,7 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
                     }}
                   >
                     <span className="profile-card__plus" aria-hidden="true">
-                      +
+                      <UiIcon name="plus" />
                     </span>
                     <span className="profile-card__name">Add profile</span>
                   </button>

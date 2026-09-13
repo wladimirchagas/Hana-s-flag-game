@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useRef, useState } from "react";
 import { CountrySelector } from "./CountrySelector";
 import {
@@ -81,7 +82,7 @@ export function CountryPickerModal({
             onClick={onClose}
             aria-label="Close"
           >
-            ×
+            <UiIcon name="close" />
           </button>
         </header>
         <div className="picker__body">

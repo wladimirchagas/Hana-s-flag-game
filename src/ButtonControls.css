@@ -1,0 +1,95 @@
+/* Utility controls share one icon language. Never target map/flag SVGs. */
+.ui-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  vertical-align: middle;
+  pointer-events: none;
+}
+body button { min-height: 44px; touch-action: manipulation; }
+body button:has(> .ui-icon) { min-width: 44px; }
+body :is(.site-topbar button, .world-map__zoom-btn, .toolbar-overflow__toggle,
+  .learn-fs__hana-corner, .hero-card__settings,
+  .picker__close, .qquiz__close, .all195__close, .profile-modal__close,
+  .leaderboard-lightbox__close, .flag-unlock__close, .install-help__close,
+  .dropdown-modal__close, .anthem-modal__close, .map-popover__close,
+  .flag-zoom__close, .learn-tour__dismiss) {
+  min-width: 44px;
+  min-height: 44px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+body :is(.theme-toggle, .mute-toggle) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  flex-shrink: 0;
+}
+body :is(.site-topbar__btn-icon, .mute-toggle__icon, .world-map__zoom-icon) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+body .site-topbar {
+  gap: .5rem;
+  padding-top: calc(.25rem + env(safe-area-inset-top));
+  padding-bottom: .25rem;
+  min-height: calc(3.5rem + env(safe-area-inset-top));
+}
+body :is(.site-topbar__left, .site-topbar__right) { gap: .375rem; }
+body .site-topbar__right { flex-shrink: 0; }
+body .learn-fs__map { top: calc(3.5rem + env(safe-area-inset-top)); }
+body .world-map__zoom-btn { width: 44px; height: 44px; padding: 0; }
+body .toolbar-overflow__toggle { width: 44px; height: 44px; }
+body .toolbar-overflow__items--open {
+  background: var(--paper);
+  border: 1px solid var(--atlas-border);
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+}
+body :is(.anthem-player__pause-icon, .anthem-player__play-icon,
+  .anthem-player__skip-icon) { line-height: 1; }
+
+/* Specificity also covers Learn's scoped theme and portal controls. */
+body button:not(:disabled):focus-visible {
+  outline: 2px solid var(--atlas-accent);
+  outline-offset: 3px;
+}
+body :is(.site-topbar button, .world-map__zoom-btn, .toolbar-overflow__toggle,
+  .learn-fs__hana-corner, .hero-card__settings):not(:disabled):hover {
+  background: var(--atlas-tint);
+  border-color: var(--atlas-accent);
+  color: var(--atlas-accent);
+  box-shadow: none;
+  transform: none;
+}
+body :is(.site-topbar button, .world-map__zoom-btn, .toolbar-overflow__toggle,
+  .learn-fs__hana-corner):not(:disabled):active {
+  background: var(--cream-deep);
+  box-shadow: inset 0 0 0 1px var(--atlas-accent);
+}
+body :is(.world-map__zoom-btn[aria-pressed="true"],
+  .learn-fs__hana-corner[aria-pressed="true"],
+  .toolbar-overflow__toggle[aria-expanded="true"]) {
+  background: var(--atlas-tint);
+  color: var(--atlas-accent);
+  border-color: var(--atlas-accent);
+  box-shadow: inset 0 -3px 0 var(--atlas-accent);
+}
+@media (max-width: 600px) {
+  body .site-topbar { flex-wrap: wrap; }
+  body .site-topbar__center:empty { display: none; }
+  body .site-topbar__center:not(:empty) { order: 3; flex-basis: 100%; }
+  body .site-topbar__brand { font-size: .85rem; }
+  body .learn-page--atlas .learn-fs__map .world-map__zoom-controls { gap: .25rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body button { transition: none; }
+}

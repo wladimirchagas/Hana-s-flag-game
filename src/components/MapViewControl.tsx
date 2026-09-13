@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useRef, useState } from "react";
 import {
   MAP_VIEW_PRESETS,
@@ -58,7 +59,7 @@ export function MapViewControl({ view, onChange }: MapViewControlProps) {
         title="Change map view centre"
       >
         {/* Simple globe glyph — no external icon dependency. */}
-        🌐
+        <UiIcon name="globe" />
       </button>
 
       {open && (

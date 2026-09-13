@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 import { MuteToggle } from "./MuteToggle";
@@ -62,7 +63,7 @@ export function Topbar() {
             aria-label="Home"
             title="Home"
           >
-            <span className="site-topbar__btn-icon" aria-hidden="true">🏠</span>
+            <span className="site-topbar__btn-icon" aria-hidden="true"><UiIcon name="home" /></span>
             <span className="site-topbar__btn-label">Home</span>
           </button>
         )}
@@ -74,7 +75,7 @@ export function Topbar() {
             aria-label="Game selection"
             title="Game selection"
           >
-            <span className="site-topbar__btn-icon" aria-hidden="true">←</span>
+            <span className="site-topbar__btn-icon" aria-hidden="true"><UiIcon name="back" /></span>
             <span className="site-topbar__btn-label">Game selection</span>
           </button>
         )}

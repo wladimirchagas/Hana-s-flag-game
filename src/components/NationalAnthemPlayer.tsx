@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useCallback, useEffect, useRef, useState, forwardRef, useImperativeHandle } from "react";
 import { NATIONAL_ANTHEMS, type AnthemData } from "../data/nationalAnthems";
 import { gameAudio } from "../lib/gameAudio";
@@ -752,7 +753,7 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
           opacity:0, leaking the blur/overlay onto the visible page. */}
       {visible && <div className="anthem-modal__backdrop" onClick={onClose} aria-hidden="true" />}
       <div className="anthem-modal__card">
-        <button className="anthem-modal__close" onClick={onClose} aria-label="Close anthem player">×</button>
+        <button className="anthem-modal__close" onClick={onClose} aria-label="Close anthem player"><UiIcon name="close" /></button>
 
         {/* Header */}
         <div className="anthem-modal__header">
@@ -848,7 +849,7 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
                 aria-label="Back 15 seconds"
                 title="Back 15s"
               >
-                <span className="anthem-player__skip-icon">↺</span>
+                <span className="anthem-player__skip-icon"><UiIcon name="undo" /></span>
                 <span className="anthem-player__skip-label">15</span>
               </button>
 
@@ -858,9 +859,9 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
                 aria-label={isPlaying ? "Pause" : "Play"}
               >
                 {isPlaying ? (
-                  <span className="anthem-player__pause-icon">⏸</span>
+                  <span className="anthem-player__pause-icon"><UiIcon name="pause" /></span>
                 ) : (
-                  <span className="anthem-player__play-icon">▶</span>
+                  <span className="anthem-player__play-icon"><UiIcon name="play" /></span>
                 )}
               </button>
 
@@ -871,7 +872,7 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
                 title="Forward 15s"
               >
                 <span className="anthem-player__skip-label">15</span>
-                <span className="anthem-player__skip-icon">↻</span>
+                <span className="anthem-player__skip-icon"><UiIcon name="redo" /></span>
               </button>
             </div>}
 

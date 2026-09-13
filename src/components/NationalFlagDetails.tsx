@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { FlagMeaning } from "./FlagMeaning";
 import { NATIONAL_FLAG_MEANINGS, NATIONAL_INDEPENDENCE, type NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning as FlagMeaningData } from "../data/flagMeanings";
@@ -141,7 +142,7 @@ export function NationalFlagDetails({
               draggable={false}
               onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
             />
-            <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+            <span className="learn-fs__flag-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
           </button>
         )}
         <p className="learn-fs__flag-design">{flag.design}</p>

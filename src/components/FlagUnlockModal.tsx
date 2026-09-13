@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
 import { WorldProgressMap } from "./WorldProgressMap";
@@ -91,7 +92,7 @@ export function FlagUnlockModal({
           onClick={onClose}
           aria-label="Close"
         >
-          ×
+          <UiIcon name="close" />
         </button>
         <p className="flag-unlock__eyebrow">
           Today&rsquo;s flag
@@ -114,7 +115,7 @@ export function FlagUnlockModal({
             draggable={false}
           />
           <span className="flag-unlock__flag-hint" aria-hidden="true">
-            ⤢ Click to enlarge
+            <UiIcon name="expand" /> Click to enlarge
           </span>
         </button>
         <div className="flag-unlock__map" aria-label={`Location of ${country.name} on the world map`}>
@@ -176,7 +177,7 @@ export function FlagUnlockModal({
             }}
             aria-label="Close enlarged flag"
           >
-            ×
+            <UiIcon name="close" />
           </button>
         </div>
       )}

@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 /**
  * Build-info readout (SHA + timestamp + hard-refresh button), rendered as
  * the left-hand side of the shared bottom bar (see ProfileBottomNav, which
@@ -88,7 +89,7 @@ export function BuildFooter() {
         title="Hard refresh to get the latest version"
         aria-label="Refresh page"
       >
-        ↺
+        <UiIcon name="undo" />
       </button>
     </div>
   );

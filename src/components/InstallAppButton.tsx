@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useState } from 'react'
 
 // Chrome / Edge / Android Chrome fire `beforeinstallprompt` once the page
@@ -166,7 +167,7 @@ function InstallHelpModal({
           onClick={onClose}
           aria-label="Close"
         >
-          ✕
+          <UiIcon name="close" />
         </button>
         <h2 id="install-help-title" className="install-help__title">
           Add to {target}

@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useRef, useState } from "react";
 
 export type QuickQuizConfig = { flagCount: number };
@@ -70,7 +71,7 @@ export function QuickQuizSetupModal({
             onClick={onClose}
             aria-label="Close"
           >
-            ×
+            <UiIcon name="close" />
           </button>
         </header>
 

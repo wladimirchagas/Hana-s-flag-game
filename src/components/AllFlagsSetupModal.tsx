@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useRef, useState } from "react";
 import {
   FLAG_SIMILARITY_LABELS,
@@ -315,7 +316,7 @@ export function AllFlagsSetupModal({
             onClick={onClose}
             aria-label="Close"
           >
-            ×
+            <UiIcon name="close" />
           </button>
         </header>
 

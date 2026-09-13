@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
 import { blurActiveElementThenRun } from "../lib/dismissKeyboard";
@@ -265,7 +266,7 @@ export function CountryDropdown({
                 onClick={closeModal}
                 aria-label="Close"
               >
-                ×
+                <UiIcon name="close" />
               </button>
             </header>
             <div className="dropdown-modal__search">

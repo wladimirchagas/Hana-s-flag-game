@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
@@ -141,7 +142,7 @@ export function HeroCarousel({ className = "" }: { className?: string }) {
         onClick={onPrev}
         aria-label="Previous scene"
       >
-        ‹
+        <UiIcon name="previous" />
       </button>
       <button
         type="button"
@@ -149,7 +150,7 @@ export function HeroCarousel({ className = "" }: { className?: string }) {
         onClick={onNext}
         aria-label="Next scene"
       >
-        ›
+        <UiIcon name="next" />
       </button>
       <div className="kdh-panel__dots" aria-hidden="true">
         {SCENES.map((_, i) => (

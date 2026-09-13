@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useRef, useState } from "react";
 
 /**
@@ -39,7 +40,7 @@ export function ToolbarOverflow({ children }: { children: React.ReactNode }) {
         aria-expanded={open}
         title="More controls"
       >
-        ⋮
+        <UiIcon name="more" />
       </button>
       {/* NOTE: do NOT auto-close the popover on child clicks. A nested control
           with its own popover (MapViewControl's globe) opens on click; closing

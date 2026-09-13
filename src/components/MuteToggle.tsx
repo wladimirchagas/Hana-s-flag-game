@@ -1,3 +1,4 @@
+import { UiIcon } from "./UiIcon";
 import { useEffect, useState } from "react";
 import { gameAudio } from "../lib/gameAudio";
 
@@ -28,7 +29,7 @@ export function MuteToggle() {
       title={muted ? "Unmute sounds" : "Mute sounds"}
     >
       <span className="mute-toggle__icon" aria-hidden="true">
-        {muted ? "🔇" : "🔊"}
+        <UiIcon name={muted ? "muted" : "volume"} />
       </span>
     </button>
   );
