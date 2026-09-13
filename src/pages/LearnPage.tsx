@@ -1395,6 +1395,68 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     </div>
   );
 
+  // The panel's flag block — the image plus, for a modern country, its sourced
+  // explainer. Held in a variable because the two eras place it differently: a
+  // modern country's flag LEADS the widget (immediately under the country
+  // dropdown, explainer right below it), while a historical polity's stays below
+  // its fact-sheet, with the ruler caption and dated no-flag lines that belong
+  // with it. Same element either way — only the slot differs.
+  const panelFlagBox =
+    display && displayFlagUrl && !flagLoadFailed ? (
+      <div className="learn-fs__flag-box">
+        {flagRow(
+          <button
+            type="button"
+            className="learn-fs__flag"
+            onClick={() => setZoomedFlagUrl(displayFlagUrl)}
+            aria-label={
+              panelSymbol
+                ? `Enlarge ${panelSymbol.name}`
+                : `Enlarge ${selectionName(display, eraId)} flag`
+            }
+          >
+            <img
+              key={displayFlagUrl}
+              src={displayFlagUrl}
+              alt=""
+              className="learn-fs__flag-img"
+              draggable={false}
+              onError={(e) => {
+                const img = e.currentTarget;
+                if (flagPngFallback && img.src !== flagPngFallback) {
+                  img.src = flagPngFallback;
+                } else {
+                  setFlagLoadFailed(true);
+                }
+              }}
+            />
+            <span className="learn-fs__flag-hint" aria-hidden="true">
+              <UiIcon name="expand" /> Click to enlarge
+            </span>
+          </button>,
+          // A symbol carries its own noun so the block never labels a
+          // coat of arms or a passport "Flag".
+          panelSymbol ? symbolNoun(panelSymbol.category) : "Flag",
+        )}
+        {display.kind === "modern" &&
+          (panelSymbol ? (
+            // The explainer follows what's displayed: the symbol's own
+            // sourced description + meaning (same wording as the National
+            // symbols tab), not the national flag's.
+            <>
+              <p className="learn-fs__flag-design">{panelSymbol.design}</p>
+              <FlagMeaning
+                code={panelSymbol.id}
+                meanings={NATIONAL_FLAG_MEANINGS}
+                label={meaningLabel(panelSymbol.category)}
+              />
+            </>
+          ) : (
+            <FlagMeaning code={display.country.code} />
+          ))}
+      </div>
+    ) : null;
+
   // Divisions of the country currently drilled into — powers the sub-national
   // dropdown in the second widget box (subdivision mode only).
   const subdivisionDivisions: SubdivisionMeta[] =
@@ -1679,6 +1741,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     <h2 className="learn-fs__name">{selectionName(display, eraId)}</h2>
                   </>
                 )}
+                {/* The flag the user just picked leads the widget: it sits directly
+                    under the country dropdown, with its "What this flag means"
+                    explainer immediately below (both live inside panelFlagBox), and
+                    the fact-sheet rows follow. */}
+                {display.kind === "modern" && panelFlagBox}
                 {display.kind === "modern" ? (
                   <>
                     <EntitySummary
@@ -1737,95 +1804,49 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     it had no national flag of its own at this date.
                   </p>
                 )}
-                {displayFlagUrl && !flagLoadFailed ? (
-                  <div className="learn-fs__flag-box">
-                    {flagRow(
-                      <button
-                        type="button"
-                        className="learn-fs__flag"
-                        onClick={() => setZoomedFlagUrl(displayFlagUrl)}
-                        aria-label={
-                          panelSymbol
-                            ? `Enlarge ${panelSymbol.name}`
-                            : `Enlarge ${selectionName(display, eraId)} flag`
-                        }
-                      >
-                        <img
-                          key={displayFlagUrl}
-                          src={displayFlagUrl}
-                          alt=""
-                          className="learn-fs__flag-img"
-                          draggable={false}
-                          onError={(e) => {
-                            const img = e.currentTarget;
-                            if (flagPngFallback && img.src !== flagPngFallback) {
-                              img.src = flagPngFallback;
-                            } else {
-                              setFlagLoadFailed(true);
-                            }
-                          }}
-                        />
-                        <span className="learn-fs__flag-hint" aria-hidden="true">
-                          <UiIcon name="expand" /> Click to enlarge
-                        </span>
-                      </button>,
-                      // A symbol carries its own noun so the block never labels a
-                      // coat of arms or a passport "Flag".
-                      panelSymbol ? symbolNoun(panelSymbol.category) : "Flag",
-                    )}
-                    {display.kind === "modern" &&
-                      (panelSymbol ? (
-                        // The explainer follows what's displayed: the symbol's own
-                        // sourced description + meaning (same wording as the National
-                        // symbols tab), not the national flag's.
-                        <>
-                          <p className="learn-fs__flag-design">{panelSymbol.design}</p>
-                          <FlagMeaning
-                            code={panelSymbol.id}
-                            meanings={NATIONAL_FLAG_MEANINGS}
-                            label={meaningLabel(panelSymbol.category)}
-                          />
-                        </>
-                      ) : (
-                        <FlagMeaning code={display.country.code} />
-                      ))}
-                  </div>
-                ) : display.kind === "historical" && display.noFlagReason ? (
-                  // Curated, sourced explanation for THIS polity at THIS date — always
-                  // preferred over the two generic lines below. See PolityInfo.noFlagReason.
-                  <p className="learn-fs__no-flag">{display.noFlagReason}</p>
-                ) : display.kind === "historical" && display.flagOutOfPeriod ? (
-                  // A curated image exists but its design was not flown at this date.
-                  // Naming the design and its years is a real explanation — never let
-                  // this fall through to the causeless line below.
-                  <p className="learn-fs__no-flag">
-                    No flag for {era.label} — {display.flagOutOfPeriod.design} That design
-                    was flown from {formatFlagYear(display.flagOutOfPeriod.from)}
-                    {display.flagOutOfPeriod.to >= 9999
-                      ? " onwards"
-                      : ` to ${formatFlagYear(display.flagOutOfPeriod.to)}`}
-                    , and no flag of this polity's own date is bundled.
-                  </p>
-                ) : display.kind === "historical" && display.flagTooNew ? (
-                  <p className="learn-fs__no-flag">
-                    No flag for {era.label} — {display.flagTooNew.name}'s modern flag
-                    was only adopted in {display.flagTooNew.year}, and no earlier flag
-                    for this territory is bundled.
-                  </p>
-                ) : display.kind === "historical" ? (
-                  // Last resort. It must state ONLY what is certainly true — that no
-                  // period flag is bundled — and never assert a historical reason we do
-                  // not actually know. The old line ("this polity predates modern flag
-                  // design or none survives") asserted one for every flagless polity and
-                  // was plainly false for the 20th-century ones: Nazi Germany, the 1938
-                  // Netherlands, the Kingdom of Hawaii. Add a noFlagReason instead.
-                  <p className="learn-fs__no-flag">
-                    No flag shown — no period-accurate flag for{" "}
-                    {selectionName(display, eraId)} in {era.label} is bundled.
-                  </p>
-                ) : (
-                  <p className="learn-fs__no-flag">No flag image available.</p>
-                )}
+                {/* A historical polity keeps its flag BELOW the fact-sheet, where the
+                    ruler caption above and the dated no-flag explanations below belong
+                    with it. A modern country leads with its flag instead — rendered
+                    directly under the country dropdown, above the fact-sheet. */}
+                {display.kind === "historical" && panelFlagBox}
+                {!panelFlagBox ? (
+                  display.kind === "historical" && display.noFlagReason ? (
+                    // Curated, sourced explanation for THIS polity at THIS date — always
+                    // preferred over the two generic lines below. See PolityInfo.noFlagReason.
+                    <p className="learn-fs__no-flag">{display.noFlagReason}</p>
+                  ) : display.kind === "historical" && display.flagOutOfPeriod ? (
+                    // A curated image exists but its design was not flown at this date.
+                    // Naming the design and its years is a real explanation — never let
+                    // this fall through to the causeless line below.
+                    <p className="learn-fs__no-flag">
+                      No flag for {era.label} — {display.flagOutOfPeriod.design} That design
+                      was flown from {formatFlagYear(display.flagOutOfPeriod.from)}
+                      {display.flagOutOfPeriod.to >= 9999
+                        ? " onwards"
+                        : ` to ${formatFlagYear(display.flagOutOfPeriod.to)}`}
+                      , and no flag of this polity's own date is bundled.
+                    </p>
+                  ) : display.kind === "historical" && display.flagTooNew ? (
+                    <p className="learn-fs__no-flag">
+                      No flag for {era.label} — {display.flagTooNew.name}'s modern flag
+                      was only adopted in {display.flagTooNew.year}, and no earlier flag
+                      for this territory is bundled.
+                    </p>
+                  ) : display.kind === "historical" ? (
+                    // Last resort. It must state ONLY what is certainly true — that no
+                    // period flag is bundled — and never assert a historical reason we do
+                    // not actually know. The old line ("this polity predates modern flag
+                    // design or none survives") asserted one for every flagless polity and
+                    // was plainly false for the 20th-century ones: Nazi Germany, the 1938
+                    // Netherlands, the Kingdom of Hawaii. Add a noFlagReason instead.
+                    <p className="learn-fs__no-flag">
+                      No flag shown — no period-accurate flag for{" "}
+                      {selectionName(display, eraId)} in {era.label} is bundled.
+                    </p>
+                  ) : (
+                    <p className="learn-fs__no-flag">No flag image available.</p>
+                  )
+                ) : null}
                 {display.kind === "modern" && isModernEra && !subdivisionMode && (
                   <button
                     type="button"
@@ -1845,37 +1866,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <>
                   {/* No country title here — the subdivision search above already
                       shows the country name (and its continent is in Details). */}
-                  {countryObj && (
-                    <EntitySummary
-                      kind="modern"
-                      country={countryObj}
-                      footer={
-                        <div className="entity-summary__row">
-                          <dt className="entity-summary__label">Anthem</dt>
-                          <dd className="entity-summary__value">
-                            <button
-                              type="button"
-                              className="learn-fs__anthem-btn"
-                              onClick={() => {
-                                setAnthemTarget({
-                                  code: subdivisionCountry.code,
-                                  name: subdivisionCountry.name,
-                                  flagUrl: subdivisionCountry.flagSvg || null,
-                                });
-                                anthemPlayerRef.current?.play();
-                              }}
-                              aria-label={`Play national anthem of ${subdivisionCountry.name}`}
-                            >
-                              <UiIcon name="play" /> Play
-                            </button>
-                          </dd>
-                        </div>
-                      }
-                    />
-                  )}
+                  {/* The flag leads this widget too, directly under the country
+                      dropdown above, with its explainer immediately below — same
+                      order as the map-selection panel. The fact-sheet follows. */}
                   {subdivisionCountry.flagSvg && (
-                    /* Same structure as the primary country-widget flag block
-                       above (and the subnational/city flag boxes): wrapped in
+                    /* Same structure as the map-selection panel's flag block
+                       (and the subnational/city flag boxes): wrapped in
                        learn-fs__flag-box so the national flag here is identical
                        in size, alignment, label and font, and carries the same
                        "What this flag means" explainer. */
@@ -1905,6 +1901,34 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       )}
                       <FlagMeaning code={subdivisionCountry.code} />
                     </div>
+                  )}
+                  {countryObj && (
+                    <EntitySummary
+                      kind="modern"
+                      country={countryObj}
+                      footer={
+                        <div className="entity-summary__row">
+                          <dt className="entity-summary__label">Anthem</dt>
+                          <dd className="entity-summary__value">
+                            <button
+                              type="button"
+                              className="learn-fs__anthem-btn"
+                              onClick={() => {
+                                setAnthemTarget({
+                                  code: subdivisionCountry.code,
+                                  name: subdivisionCountry.name,
+                                  flagUrl: subdivisionCountry.flagSvg || null,
+                                });
+                                anthemPlayerRef.current?.play();
+                              }}
+                              aria-label={`Play national anthem of ${subdivisionCountry.name}`}
+                            >
+                              <UiIcon name="play" /> Play
+                            </button>
+                          </dd>
+                        </div>
+                      }
+                    />
                   )}
                   {/* Subdivision info is rendered in the dedicated sub-national
                       box below — not here — so it is never shown twice. */}
