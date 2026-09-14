@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 67 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 68 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -117,7 +117,8 @@ forgotten; it is tracked here.
 | 🇲🇻 Maldives | `#1384` | 0 → 5 | 91 / 93 (2 independents) | **Absent entirely; the MDP ships with no leader — its presidency is vacant and the interim chair is under challenge** |
 | 🇲🇳 Mongolia | `#1385` | 0 → 5 | 125 / 126 (1 independent) | **Absent entirely; the government has changed twice since the election — the sitting PM took office in March 2026** |
 | 🇳🇵 Nepal | `#1386` | 0 → 6 | 274 / 275 (1 independent) | **Absent entirely; the chamber was replaced wholesale in March 2026 and two of its six parties are younger than a year** |
-| 🇴🇲 Oman | *(see PR)* | — | — | **Out of scope — political parties are not permitted and all 90 elected members are non-partisan** |
+| 🇴🇲 Oman | `#1387` | — | — | **Out of scope — political parties are not permitted and all 90 elected members are non-partisan** |
+| 🇵🇰 Pakistan | *(see PR)* | 2 → 17 | 334 / 336 | **Carried 2 of 17 seated parties, on a `seatsTotal` two elections out of date, with the PPP marked out of power while it sits in the coalition** |
 
 ---
 
@@ -2589,6 +2590,70 @@ non-partisan; the two together form the 169-member Council of Oman.
 **Revisit** only if Oman legalises political parties and a party-affiliated member is returned to
 the Consultative Assembly.
 
+### 🇵🇰 Pakistan — audited 2026-09-14
+
+Pakistan **was** in the dataset, and that made it worse than an absence: the tab showed two cards
+and looked finished. The **National Assembly** elected on **8 February 2024** seats **17 parties**
+across 336 seats, and the entry held **two**. Rewritten in full: 2 → 17 entries, covering **334** of
+the 336 seats.
+
+**PP-349 — 15 of 17 parties missing, and 164 party seats with them.** The entry carried only the
+PML-N and the PPP. Absent were the **largest opposition party** (PTI, 75 seats), the coalition's
+third partner (MQM-P, 22), JUI-F (10), and eleven smaller parties down to the one-seat benches. A
+reader could not have seen that Pakistan has an opposition at all.
+
+**PP-350 — `seatsTotal` was 342: the pre-2018 National Assembly.** The chamber was reduced to
+**336** seats when the 25th Amendment merged the Federally Administered Tribal Areas into Khyber
+Pakhtunkhwa, and it has been elected at that size twice since. The stale figure had survived two
+general elections.
+
+**PP-351 — both seat counts were from an older chamber.** PML-N was carried at **116** (now 133) and
+the PPP at **54** (now 74). Neither matched the 2024 return or the Assembly's current composition.
+
+**PP-352 — the PPP was marked OUT of power while sitting in the governing coalition — and the
+correction is finer than a flipped boolean.** The chamber lists the PPP's 74 seats inside the
+government bloc, and it is the coalition's second-largest partner. But the cabinet tells a second
+story that a naive flip would have got wrong: the **Second Shehbaz Sharif government** has **no PPP
+federal minister at all** — its federal ministers are PML-N 26, IPP 2, MQM-P 2, BAP 1 and one
+independent — and exactly **one PPP minister of state** (National Food Security and Research). The
+entry therefore carries `inPower: true` / `inExecutive: true`, with its `timeInPower` stating
+plainly that the party declined the full ministries it was offered and holds a single junior post.
+Reading the bloc alone would have credited the PPP with a share of the cabinet it does not have;
+reading the federal-minister list alone would have denied it the executive seat it does.
+
+**PP-353 — PML-N's founding year was wrong.** The entry said **1997**; the party's own infobox gives
+**18 July 1992**.
+
+**PP-354 — `inExecutive` was never set on either party**, the same omission found in Japan, South
+Korea, India, Israel, Iraq and Iran. Nine parties now carry `inPower`, of which five hold cabinet
+posts (PML-N, PPP, MQM-P, IPP, BAP) and four support the government without one (PML-Q, PML-Z, NP,
+PTI-P).
+
+**PP-355 — twelve correct logos were already bundled for parties that had no entry.** `public/party-logos/pk/`
+held emblems for JUI-F, MQM-P, PML-Q, PML-Z, BAP, NP, PkMAP, PkNAP, MWM, IPP and others — images a
+previous pass sourced and the data never used. All twelve are byte-identical to the files re-resolved
+in this audit and are now wired to real entries. One file was genuinely dead and is removed:
+**`sic.png`** (Sunni Ittehad Council), the vehicle PTI-backed independents joined in 2024, which the
+Assembly's current composition no longer lists.
+
+**PP-356 — the chamber's own bloc subtotals do not add up, and the party figures are used instead.**
+The composition's headers read "Government (199)" and "Opposition (90)" while its itemised parties
+sum to **242** and **92**. Every seat figure in the dataset is the per-party line, which totals 334 of
+336; the two-seat remainder and the header discrepancy are disclosed here rather than reconciled by
+guesswork. Same pattern as Lebanon (PP-335).
+
+**PP-357 — two one-seat parties with nearly the same name.** The **Pashtunkhwa National Awami
+Party** (founded 2022) and the **Pashtunkhwa Milli Awami Party** (founded 1989) are separate parties
+holding one seat each. The distinction is written into both entries' sources, because a later editor
+searching by name will land on the wrong one.
+
+**PP-358 — the Grand Democratic Alliance is an alliance, entered as one group.** The chamber records
+its single seat to the alliance without naming a component party, so no split was invented for it —
+the same judgement as Lebanon's Watani Alliance (PP-334) and Mongolia's National Coalition (PP-342).
+
+**Verified in the running app**: all 17 cards paint their logos, the nine government-bloc parties
+carry the In-power badge and the eight opposition parties do not, no console errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2837,7 +2902,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `NE` Niger
 - [ ] `NG` Nigeria
 - [x] `OM` Oman — merged (out of scope)
-- [ ] `PK` Pakistan
+- [x] `PK` Pakistan — merged
 - [ ] `PW` Palau
 - [ ] `PA` Panama
 - [ ] `PG` Papua New Guinea

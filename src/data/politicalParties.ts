@@ -23918,33 +23918,78 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
   ],
   "PK": [
     {
-      "id": "PK-PMLN",
+      "id": "PK-PML-N",
       "country": "PK",
       "shortName": "PML-N",
-      "name": "Pakistan Muslim League – Nawaz",
+      "name": "پاکستان مسلم لیگ – نواز",
       "nameEn": "Pakistan Muslim League – Nawaz",
       "logo": "party-logos/pk/pmln.svg",
       "sha256": "515c559c02541d139997800f7a8608067626454b0d91c089bd62b9763a707ff9",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PML-N_Logo.svg",
-      "licenceNote": "Freely licensed logo from Wikimedia Commons; bundled locally.",
-      "ideology": ["Centre-right", "Conservatism", "Nationalism"],
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Pakistan_Muslim_League_Nawaz_logo.svg",
+      "licenceNote": "Non-free. Pakistan Muslim League – Nawaz's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Conservatism",
+        "Liberal conservatism",
+        "Fiscal conservatism"
+      ],
       "ideologyPosition": "centre-right",
-      "positionRaw": "Centre-right",
-      "founded": 1997,
+      "positionRaw": "Centre to centre-right",
+      "founded": 1992,
       "leader": "Nawaz Sharif",
-      "leaderTitle": "Party President",
+      "leaderTitle": "Leader",
       "inPower": true,
-      "seats": 116,
-      "seatsTotal": 342,
+      "inExecutive": true,
+      "timeInPower": "In the coalition that elected Shehbaz Sharif Prime Minister on 4 March 2024, and holds portfolios in his federal cabinet.",
+      "seats": 133,
+      "seatsTotal": 336,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "Pakistan Muslim League – Nawaz – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Pakistan_Muslim_League%E2%80%93Nawaz"
+          "title": "Pakistan Muslim League (N) — Wikipedia (infobox: founded 18 July 1992; leader Nawaz Sharif; centre to centre-right). It supplies 26 of the cabinet's federal ministers and 8 of its ministers of state.",
+          "url": "https://en.wikipedia.org/wiki/Pakistan_Muslim_League_(N)"
         },
         {
-          "title": "2024 Pakistani general election – Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2024_Pakistani_general_election"
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        },
+        {
+          "title": "Second Shehbaz Sharif government — Wikipedia (the 51st federal cabinet, formed after Shehbaz Sharif became Prime Minister on 4 March 2024; its federal ministers are PML-N 26, IPP 2, MQM-P 2, BAP 1 and one independent, and its ministers of state PML-N 8, MQM-P 1, IPP 1 and PPP 1)",
+          "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+        }
+      ]
+    },
+    {
+      "id": "PK-PTI",
+      "country": "PK",
+      "shortName": "PTI",
+      "name": "پاکستان تحريکِ انصاف",
+      "nameEn": "Pakistan Tehreek-e-Insaf",
+      "logo": "party-logos/pk/pti.svg",
+      "sha256": "526a1373c60d6e880b69fcc851cab124c7c9924e09e5f67ca1721ef8fa50796b",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Pakistan_Tehreek-e-Insaf_logo.svg",
+      "licenceNote": "Non-free. Pakistan Tehreek-e-Insaf's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Populism",
+        "Secularism",
+        "Big tent"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1996,
+      "leader": "Gohar Ali Khan",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 75,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pakistan Tehreek-e-Insaf — Wikipedia (infobox: founded 25 April 1996; Chairman Gohar Ali Khan; centre-right). It is the largest opposition party.",
+          "url": "https://en.wikipedia.org/wiki/Pakistan_Tehreek-e-Insaf"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
         }
       ]
     },
@@ -23952,26 +23997,564 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "id": "PK-PPP",
       "country": "PK",
       "shortName": "PPP",
-      "name": "Pakistan People's Party",
+      "name": "پاکستان پیپلز پارٹی",
       "nameEn": "Pakistan People's Party",
       "logo": "party-logos/pk/ppp.png",
       "sha256": "8b59414cef96e9667324cd59495b2403f8abbfcea880089f9e87013fd913f664",
-      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PPP_Logo.png",
-      "licenceNote": "Non-free party logo used to identify the party; used here to identify the party, not to imply endorsement.",
-      "ideology": ["Centre-left", "Social democracy", "Populism"],
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Pakistan_Peoples_Party_Logo.png",
+      "licenceNote": "Non-free. Pakistan People's Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Social democracy",
+        "Third Way",
+        "Islamic democracy",
+        "Big tent"
+      ],
       "ideologyPosition": "centre-left",
-      "positionRaw": "Centre-left",
+      "positionRaw": "Centre to centre-left",
       "founded": 1967,
       "leader": "Bilawal Bhutto Zardari",
       "leaderTitle": "Chairman",
-      "inPower": false,
-      "seats": 54,
-      "seatsTotal": 342,
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Supports Prime Minister Shehbaz Sharif's government, in office since 4 March 2024, and is its second-largest partner on 74 seats — but it declined the full federal ministries it was offered and holds only a single junior post, one minister of state.",
+      "seats": 74,
+      "seatsTotal": 336,
       "chamberName": "National Assembly",
       "sources": [
         {
-          "title": "Pakistan People's Party – Wikipedia",
+          "title": "Pakistan People's Party — Wikipedia (infobox: founded 30 November 1967; Chairman Bilawal Bhutto Zardari; centre to centre-left). The cabinet article lists no PPP federal minister and exactly one PPP minister of state.",
           "url": "https://en.wikipedia.org/wiki/Pakistan_People%27s_Party"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        },
+        {
+          "title": "Second Shehbaz Sharif government — Wikipedia (the 51st federal cabinet, formed after Shehbaz Sharif became Prime Minister on 4 March 2024; its federal ministers are PML-N 26, IPP 2, MQM-P 2, BAP 1 and one independent, and its ministers of state PML-N 8, MQM-P 1, IPP 1 and PPP 1)",
+          "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+        }
+      ]
+    },
+    {
+      "id": "PK-MQM-P",
+      "country": "PK",
+      "shortName": "MQM-P",
+      "name": "متحدہ قومی موومنٹ (پاکستان)",
+      "nameEn": "Muttahida Qaumi Movement – Pakistan",
+      "logo": "party-logos/pk/mqmp.png",
+      "sha256": "9c50389320d9fe5da9af684c3b6928cef81dddde94ed47ca351bc6566a820185",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:MQMworld_(transparented).png",
+      "licenceNote": "Non-free. Muttahida Qaumi Movement – Pakistan's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Pakistani nationalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 2016,
+      "leader": "Khalid Maqbool Siddiqui",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the coalition that elected Shehbaz Sharif Prime Minister on 4 March 2024, and holds portfolios in his federal cabinet.",
+      "seats": 22,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Muttahida Qaumi Movement – Pakistan — Wikipedia (infobox: founded 23 August 2016; leader Khalid Maqbool Siddiqui; centre to centre-left). It supplies two federal ministers and one minister of state.",
+          "url": "https://en.wikipedia.org/wiki/Muttahida_Qaumi_Movement_%E2%80%93_Pakistan"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        },
+        {
+          "title": "Second Shehbaz Sharif government — Wikipedia (the 51st federal cabinet, formed after Shehbaz Sharif became Prime Minister on 4 March 2024; its federal ministers are PML-N 26, IPP 2, MQM-P 2, BAP 1 and one independent, and its ministers of state PML-N 8, MQM-P 1, IPP 1 and PPP 1)",
+          "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+        }
+      ]
+    },
+    {
+      "id": "PK-JUI-F",
+      "country": "PK",
+      "shortName": "JUI-F",
+      "name": "جمیعت علماءِ اسلام – فضل الرحمان",
+      "nameEn": "Jamiat Ulema-e-Islam – F",
+      "logo": "party-logos/pk/juif.png",
+      "sha256": "9ee995382bb1313c48094104f2fee3f7ec5917d15c0d3393a4d60799b06fa364",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Jamiat_Ulema-e-Islam_Logo.png",
+      "licenceNote": "Non-free. Jamiat Ulema-e-Islam – F's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Islamic fundamentalism",
+        "Islamism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1945,
+      "leader": "Fazal-ur-Rehman",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 10,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Jamiat Ulema-e-Islam (F) — Wikipedia (infobox: founded 1945; leader Fazal-ur-Rehman; far-right)",
+          "url": "https://en.wikipedia.org/wiki/Jamiat_Ulema-e-Islam_(F)"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-PML-Q",
+      "country": "PK",
+      "shortName": "PML-Q",
+      "name": "پاکستان مسلم لیگ – ق",
+      "nameEn": "Pakistan Muslim League – Quaid",
+      "logo": "party-logos/pk/pmlq.png",
+      "sha256": "0772be1be0512be07232982901598102bb7c7130b9f86cc30a37415ef729bbba",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PML-Q_Logo.png",
+      "licenceNote": "Non-free. Pakistan Muslim League – Quaid's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Conservatism",
+        "Pakistani nationalism",
+        "Economic liberalism",
+        "Third Way"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2002,
+      "leader": "Shujaat Hussain",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the National Assembly's government bloc supporting Prime Minister Shehbaz Sharif, in office since 4 March 2024, but holds no portfolio in his federal cabinet.",
+      "seats": 5,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pakistan Muslim League (Q) — Wikipedia (infobox: founded 20 July 2002; leader Shujaat Hussain; centre-right)",
+          "url": "https://en.wikipedia.org/wiki/Pakistan_Muslim_League_(Q)"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        },
+        {
+          "title": "Second Shehbaz Sharif government — Wikipedia (the 51st federal cabinet, formed after Shehbaz Sharif became Prime Minister on 4 March 2024; its federal ministers are PML-N 26, IPP 2, MQM-P 2, BAP 1 and one independent, and its ministers of state PML-N 8, MQM-P 1, IPP 1 and PPP 1)",
+          "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+        }
+      ]
+    },
+    {
+      "id": "PK-IPP",
+      "country": "PK",
+      "shortName": "IPP",
+      "name": "استحکامِ پاکستان پارٹی",
+      "nameEn": "Istehkam-e-Pakistan Party",
+      "logo": "party-logos/pk/ipp.png",
+      "sha256": "b456c6bcb5b6f0be2ee630423bf89a29d16b63580a105a25a213308327177541",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Istehkam-e-Pakistan_Party.png",
+      "licenceNote": "Non-Commons source. Istehkam-e-Pakistan Party's logo is held locally on English Wikipedia rather than on Wikimedia Commons, tagged there as public domain; it is bundled here with that copyright position recorded, on the same basis as the other locally-hosted party logos in this repository.",
+      "ideology": [
+        "Populism",
+        "Pakistani nationalism",
+        "Islamic democracy"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centrism",
+      "founded": 2023,
+      "leader": "Aleem Khan",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the coalition that elected Shehbaz Sharif Prime Minister on 4 March 2024, and holds portfolios in his federal cabinet.",
+      "seats": 4,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Istehkam-e-Pakistan Party — Wikipedia (infobox: founded 8 June 2023; leader Aleem Khan; centrism). On 4 seats it supplies two federal ministers and one minister of state — the most cabinet posts per seat of any party in the coalition.",
+          "url": "https://en.wikipedia.org/wiki/Istehkam-e-Pakistan_Party"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        },
+        {
+          "title": "Second Shehbaz Sharif government — Wikipedia (the 51st federal cabinet, formed after Shehbaz Sharif became Prime Minister on 4 March 2024; its federal ministers are PML-N 26, IPP 2, MQM-P 2, BAP 1 and one independent, and its ministers of state PML-N 8, MQM-P 1, IPP 1 and PPP 1)",
+          "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+        }
+      ]
+    },
+    {
+      "id": "PK-JI",
+      "country": "PK",
+      "shortName": "JI",
+      "name": "جماعت اسلامی پاکستان",
+      "nameEn": "Jamaat-e-Islami Pakistan",
+      "logo": "party-logos/pk/jip.png",
+      "sha256": "0a1e2b504e0716512327e6fce0833ce841a81a74da6c2e05e80e33db60ff3e14",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Jamaat-e-Islami_Pakistan_Logo.png",
+      "licenceNote": "Non-free. Jamaat-e-Islami Pakistan's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Islamism",
+        "Islamic democracy",
+        "Pan-Islamism",
+        "Social conservatism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 1947,
+      "leader": "Hafiz Naeem ur Rehman",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Jamaat-e-Islami Pakistan — Wikipedia (infobox: founded 1947; leader Hafiz Naeem ur Rehman; far-right)",
+          "url": "https://en.wikipedia.org/wiki/Jamaat-e-Islami_Pakistan"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-BAP",
+      "country": "PK",
+      "shortName": "BAP",
+      "name": "بلوچستان عوامی پارٹی",
+      "nameEn": "Balochistan Awami Party",
+      "logo": "party-logos/pk/bap.png",
+      "sha256": "e3ec8a7226bc1dbda91d0e5c03e49e8b4744dad581dd2172882b83846dda954d",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Balochistan_Awami_Party_(BAP)_logo.png",
+      "ideology": [
+        "Pakistani nationalism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2018,
+      "leader": "Khalid Hussain Magsi",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "In the coalition that elected Shehbaz Sharif Prime Minister on 4 March 2024, and holds portfolios in his federal cabinet.",
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Balochistan Awami Party — Wikipedia (infobox: founded 29 March 2018; leader Khalid Hussain Magsi; centre). Its single seat carries a federal ministry.",
+          "url": "https://en.wikipedia.org/wiki/Balochistan_Awami_Party"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        },
+        {
+          "title": "Second Shehbaz Sharif government — Wikipedia (the 51st federal cabinet, formed after Shehbaz Sharif became Prime Minister on 4 March 2024; its federal ministers are PML-N 26, IPP 2, MQM-P 2, BAP 1 and one independent, and its ministers of state PML-N 8, MQM-P 1, IPP 1 and PPP 1)",
+          "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+        }
+      ]
+    },
+    {
+      "id": "PK-NP",
+      "country": "PK",
+      "shortName": "NP",
+      "name": "نيشنل پارٹی",
+      "nameEn": "National Party",
+      "logo": "party-logos/pk/np.png",
+      "sha256": "c793e990b34c367db87ccf2ecf8cca0733fb406fdfb1f9f60805eb378acc6f52",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:National_Party_(Pakistan)_Logo.png",
+      "licenceNote": "Non-free. National Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Secularism",
+        "Social democracy",
+        "Baloch nationalism",
+        "Civic nationalism"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre-left",
+      "founded": 2003,
+      "leader": "Abdul Malik Baloch",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the National Assembly's government bloc supporting Prime Minister Shehbaz Sharif, in office since 4 March 2024, but holds no portfolio in his federal cabinet.",
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "National Party (Pakistan) — Wikipedia (infobox: founded 2003; leader Abdul Malik Baloch; centre-left)",
+          "url": "https://en.wikipedia.org/wiki/National_Party_(Pakistan)"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        },
+        {
+          "title": "Second Shehbaz Sharif government — Wikipedia (the 51st federal cabinet, formed after Shehbaz Sharif became Prime Minister on 4 March 2024; its federal ministers are PML-N 26, IPP 2, MQM-P 2, BAP 1 and one independent, and its ministers of state PML-N 8, MQM-P 1, IPP 1 and PPP 1)",
+          "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+        }
+      ]
+    },
+    {
+      "id": "PK-PML-Z",
+      "country": "PK",
+      "shortName": "PML-Z",
+      "name": "پاکستان مسلم لیگ – ضیاء",
+      "nameEn": "Pakistan Muslim League – Zia",
+      "logo": "party-logos/pk/pmlz.png",
+      "sha256": "4bf53c90e7672c8a6ddf03c4ed5a0aa08ca30272f3743937551b874191bf7a99",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Pakistan_Muslim_League_(Z).png",
+      "licenceNote": "Non-free. Pakistan Muslim League – Zia's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Ziaism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Right-wing to far-right",
+      "founded": 2002,
+      "leader": "Ijaz-ul-Haq",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the National Assembly's government bloc supporting Prime Minister Shehbaz Sharif, in office since 4 March 2024, but holds no portfolio in his federal cabinet.",
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pakistan Muslim League (Z) — Wikipedia (infobox: founded October 2002; leader Ijaz-ul-Haq; right-wing to far-right)",
+          "url": "https://en.wikipedia.org/wiki/Pakistan_Muslim_League_(Z)"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        },
+        {
+          "title": "Second Shehbaz Sharif government — Wikipedia (the 51st federal cabinet, formed after Shehbaz Sharif became Prime Minister on 4 March 2024; its federal ministers are PML-N 26, IPP 2, MQM-P 2, BAP 1 and one independent, and its ministers of state PML-N 8, MQM-P 1, IPP 1 and PPP 1)",
+          "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+        }
+      ]
+    },
+    {
+      "id": "PK-PTI-P",
+      "country": "PK",
+      "shortName": "PTI-P",
+      "name": "پاکستان تحریکِ انصاف پارلیمنٹرینز",
+      "nameEn": "Pakistan Tehreek-e-Insaf Parliamentarians",
+      "logo": "party-logos/pk/ptip.png",
+      "sha256": "1640795a852b292cb71620dc95990e8b02644d92faab2bbc481e77f07eb915d7",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PTI-P_Logo.png",
+      "licenceNote": "Non-free. Pakistan Tehreek-e-Insaf Parliamentarians's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 2023,
+      "leader": "Mahmood Khan",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Sits in the National Assembly's government bloc supporting Prime Minister Shehbaz Sharif, in office since 4 March 2024, but holds no portfolio in his federal cabinet.",
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pakistan Tehreek-e-Insaf Parliamentarians — Wikipedia (infobox: founded 17 July 2023; leader Mahmood Khan; the infobox states no ideology or left–right position). A 2023 split from Pakistan Tehreek-e-Insaf, and it sits with the government while its parent party leads the opposition.",
+          "url": "https://en.wikipedia.org/wiki/Pakistan_Tehreek-e-Insaf_Parliamentarians"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        },
+        {
+          "title": "Second Shehbaz Sharif government — Wikipedia (the 51st federal cabinet, formed after Shehbaz Sharif became Prime Minister on 4 March 2024; its federal ministers are PML-N 26, IPP 2, MQM-P 2, BAP 1 and one independent, and its ministers of state PML-N 8, MQM-P 1, IPP 1 and PPP 1)",
+          "url": "https://en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+        }
+      ]
+    },
+    {
+      "id": "PK-TLP",
+      "country": "PK",
+      "shortName": "TLP",
+      "name": "تحریکِ لبیک پاکستان",
+      "nameEn": "Tehreek-e-Labbaik Pakistan",
+      "logo": "party-logos/pk/tlp.svg",
+      "sha256": "0d29672c20215039c7d0619b5d402cf6487e2effe1ee689ba36cfe70f8d2971f",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_Tehreek-e-Labbaik_Pakistan.svg",
+      "licenceNote": "Non-free. Tehreek-e-Labbaik Pakistan's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Pan-Islamism",
+        "Populism",
+        "Barelvism"
+      ],
+      "ideologyPosition": "far-right",
+      "positionRaw": "Far-right",
+      "founded": 2015,
+      "leader": "Saad Hussain Rizvi",
+      "leaderTitle": "Ameer",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Tehreek-e-Labbaik Pakistan — Wikipedia (infobox: founded 1 August 2015 at Nishtar Park, Karachi; Ameer Saad Hussain Rizvi; far-right)",
+          "url": "https://en.wikipedia.org/wiki/Tehreek-e-Labbaik_Pakistan"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-MWM",
+      "country": "PK",
+      "shortName": "MWM",
+      "name": "مجلس وحدتِ مسلمین",
+      "nameEn": "Majlis Wahdat-e-Muslimeen",
+      "logo": "party-logos/pk/mwm.svg",
+      "sha256": "dc35665fe3480a9a74d0531641fca3cd88c17b3ef9b9e9198ac340b5775e6571",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Majlis_Wahdat-e-Muslimeen_Logo.svg",
+      "licenceNote": "Non-free. Majlis Wahdat-e-Muslimeen's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Islamic democracy",
+        "Islamic socialism",
+        "Islamism",
+        "Muslim unity"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2009,
+      "leader": "Raja Nasir Abbas Jafri",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Majlis Wahdat-e-Muslimeen — Wikipedia (infobox: founded 2 August 2009; leader Raja Nasir Abbas Jafri; centre)",
+          "url": "https://en.wikipedia.org/wiki/Majlis_Wahdat-e-Muslimeen"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-PKNAP",
+      "country": "PK",
+      "shortName": "PkNAP",
+      "name": "پشتونخوا نیشنل عوامی پارٹی",
+      "nameEn": "Pashtunkhwa National Awami Party",
+      "logo": "party-logos/pk/pknap.png",
+      "sha256": "e75a2f6f3f04c449aac5ed5d06f2cf8c802a9bff5340ba9db73303f1d1439402",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PKNAP_Logo.png",
+      "licenceNote": "Non-free. Pashtunkhwa National Awami Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Pashtun nationalism",
+        "Egalitarianism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2022,
+      "leader": "Khushal Khan Kakar",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pashtunkhwa National Awami Party — Wikipedia (infobox: founded 27 December 2022; Chairman Khushal Khan Kakar; the infobox states no left–right position)",
+          "url": "https://en.wikipedia.org/wiki/Pashtunkhwa_National_Awami_Party"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-PKMAP",
+      "country": "PK",
+      "shortName": "PkMAP",
+      "name": "پښتونخوا ملي عوامي ګوند",
+      "nameEn": "Pashtunkhwa Milli Awami Party",
+      "logo": "party-logos/pk/pkmap.png",
+      "sha256": "1ea936e0f5a7f4eef9911fb1f50f8f77c7e95d58cf64c8a6ca1f86118a7edbc5",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:PKMAP_Logo.png",
+      "licenceNote": "Non-free. Pashtunkhwa Milli Awami Party's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Pashtun nationalism",
+        "Democratic socialism",
+        "Secularism",
+        "Federalism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to left-wing",
+      "founded": 1989,
+      "leader": "Mahmood Khan Achakzai",
+      "leaderTitle": "Chairman",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Pashtunkhwa Milli Awami Party — Wikipedia (infobox: founded 1989; Chairman Mahmood Khan Achakzai; centre-left to left-wing). Not to be confused with the Pashtunkhwa National Awami Party, a separate one-seat party of almost the same name.",
+          "url": "https://en.wikipedia.org/wiki/Pashtunkhwa_Milli_Awami_Party"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+        }
+      ]
+    },
+    {
+      "id": "PK-GDA",
+      "country": "PK",
+      "shortName": "GDA",
+      "name": "گرینڈ جمہوری اتحاد",
+      "nameEn": "Grand Democratic Alliance",
+      "logo": "party-logos/pk/gda.png",
+      "sha256": "c3e375da6860be0a0429f6db80b8f8b1f6d32124bad350e5fbd52cbd8a065cf1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Grand_Democratic_Alliance_Logo.png",
+      "ideology": [
+        "Populism",
+        "Regionalism",
+        "Anti-feudalism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Big tent",
+      "founded": 2017,
+      "leader": "Pir of Pagaro VIII",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 336,
+      "chamberName": "National Assembly",
+      "sources": [
+        {
+          "title": "Grand Democratic Alliance — Wikipedia (founded 23 October 2017; leader the Pir of Pagaro VIII; big tent). It is an alliance of Sindhi parties rather than a single party, and the chamber records its one seat to the alliance without naming a component party, so it is entered as one group rather than a split invented for it.",
+          "url": "https://en.wikipedia.org/wiki/Grand_Democratic_Alliance"
+        },
+        {
+          "title": "National Assembly of Pakistan — Wikipedia (composition of the chamber elected 8 February 2024, citing the Assembly's own members list: government PML-N 133, PPP 74, MQM-P 22, PML(Q) 5, IPP 4, PML(Z) 1, BAP 1, NP 1, PTI-P 1; opposition PTI 75, JUI-F 10, JI 2, TLP 1, MWM 1, PkNAP 1, PkMAP 1, GDA 1, of 336)",
+          "url": "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
         }
       ]
     }
