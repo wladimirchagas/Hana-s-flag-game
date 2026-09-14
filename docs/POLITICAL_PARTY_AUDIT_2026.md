@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 70 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 71 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -120,7 +120,8 @@ forgotten; it is tracked here.
 | 🇴🇲 Oman | `#1387` | — | — | **Out of scope — political parties are not permitted and all 90 elected members are non-partisan** |
 | 🇵🇰 Pakistan | `#1397` | 2 → 17 | 334 / 336 | **Carried 2 of 17 seated parties, on a `seatsTotal` two elections out of date, with the PPP marked out of power while it sits in the coalition** |
 | 🇵🇸 Palestine | `#1399` | 0 → 7 | 128 / 132 (4 independents) | **Absent entirely; the Prime Minister is an independent, not Fatah as the obvious source says** |
-| 🇶🇦 Qatar | *(see PR)* | — | — | **Out of scope — law permits no political bodies, and the 2024 referendum abolished Shura Council elections outright** |
+| 🇶🇦 Qatar | `#1400` | — | — | **Out of scope — law permits no political bodies, and the 2024 referendum abolished Shura Council elections outright** |
+| 🇸🇦 Saudi Arabia | *(see PR)* | — | — | **Out of scope — the Basic Law bans political parties; the 150-member Consultative Assembly is appointed and wholly non-partisan** |
 
 ---
 
@@ -2729,6 +2730,31 @@ Council. The 2024 referendum makes that materially less likely than when this sw
 itself worth recording: this determination is not a gap awaiting data, it is the current settled
 position.
 
+### 🇸🇦 Saudi Arabia — audited 2026-09-14 — out of scope
+
+**Saudi Arabia is not in the dataset and must not be added.** The grounds are the same shape as
+Qatar's (PP-364) and rest on an explicit constitutional prohibition.
+
+**PP-365 — the Basic Law bans political parties, and the chamber is appointed and non-partisan.**
+
+1. **An explicit constitutional ban.** Saudi Arabia's politics article states that "the country's
+   Basic Law bans the formation of political parties and sanctions sedition and condemnation of the
+   king with long jail terms."
+2. **The chamber records no party at all.** The **Consultative Assembly** (Majlis ash-Shura) seats
+   **150** members, all appointed by the king, and its published composition is a single line:
+   **"Nonpartisan (150)"**. Its own article classifies it as an **advisory body**, not a legislature
+   — it has no role in forming the budget.
+3. **The only Saudi party is in exile and holds nothing.** A group of dissidents abroad announced a
+   political party in opposition to the king on **24 September 2020**. It is banned domestically,
+   holds no seat, and is not a seated party in any chamber — so it falls outside what this dataset
+   models, exactly as an unseated party does anywhere else.
+
+There is no party to enter, no seat to attribute and no `noImageReason` to write: the Learn-mode
+Political parties tab correctly shows nothing for Saudi Arabia.
+
+**Revisit** only if the Basic Law's prohibition is lifted and a party-affiliated member sits in the
+Consultative Assembly.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2988,7 +3014,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `VC` Saint Vincent and the Grenadines
 - [ ] `WS` Samoa
 - [ ] `ST` São Tomé and Príncipe
-- [ ] `SA` Saudi Arabia
+- [x] `SA` Saudi Arabia — merged (out of scope)
 - [ ] `SN` Senegal
 - [ ] `SC` Seychelles
 - [ ] `SL` Sierra Leone
