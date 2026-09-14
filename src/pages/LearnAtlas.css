@@ -172,6 +172,7 @@ body:has(.learn-page--atlas) :is(.dropdown-option:hover, .dropdown-option[aria-s
 }
 .learn-page--atlas .learn-fs__flag-label { font-size: .875rem; font-weight: 600; }
 .learn-page--atlas .learn-fs__flag { border: 0; box-shadow: none; border-radius: 0; }
+.learn-page--atlas .learn-fs__flag-img { border-radius: 0; }
 .learn-page--atlas .learn-fs__flag-hint { color: var(--ink-soft); text-align: left; }
 .learn-page--atlas .flag-meaning__toggle {
   border: 1px solid var(--atlas-border);
