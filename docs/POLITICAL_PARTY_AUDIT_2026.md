@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 68 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 69 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -118,7 +118,8 @@ forgotten; it is tracked here.
 | 🇲🇳 Mongolia | `#1385` | 0 → 5 | 125 / 126 (1 independent) | **Absent entirely; the government has changed twice since the election — the sitting PM took office in March 2026** |
 | 🇳🇵 Nepal | `#1386` | 0 → 6 | 274 / 275 (1 independent) | **Absent entirely; the chamber was replaced wholesale in March 2026 and two of its six parties are younger than a year** |
 | 🇴🇲 Oman | `#1387` | — | — | **Out of scope — political parties are not permitted and all 90 elected members are non-partisan** |
-| 🇵🇰 Pakistan | *(see PR)* | 2 → 17 | 334 / 336 | **Carried 2 of 17 seated parties, on a `seatsTotal` two elections out of date, with the PPP marked out of power while it sits in the coalition** |
+| 🇵🇰 Pakistan | `#1397` | 2 → 17 | 334 / 336 | **Carried 2 of 17 seated parties, on a `seatsTotal` two elections out of date, with the PPP marked out of power while it sits in the coalition** |
+| 🇵🇸 Palestine | *(see PR)* | 0 → 7 | 128 / 132 (4 independents) | **Absent entirely; the Prime Minister is an independent, not Fatah as the obvious source says** |
 
 ---
 
@@ -2654,6 +2655,51 @@ the same judgement as Lebanon's Watani Alliance (PP-334) and Mongolia's National
 **Verified in the running app**: all 17 cards paint their logos, the nine government-bloc parties
 carry the In-power badge and the eight opposition parties do not, no console errors.
 
+### 🇵🇸 Palestine — audited 2026-09-14
+
+**Absent entirely.** Palestine had no entry in `POLITICAL_PARTIES`, so the Learn-mode tab did not
+exist for it at all. Seven entries added, covering **128** of the **Palestinian Legislative
+Council**'s 132 seats; the other four are independents.
+
+**PP-359 — the chamber is real, published and twenty years old, and every entry says so.** The 2nd
+Council was elected on **25 January 2006** and has **not functioned since the 2007 Fatah–Hamas
+split**, with laws made by presidential decree since. That is not a reason to omit Palestine — the
+composition is published, the parties are legal and named, and the article on the forthcoming
+election still cites these figures as each party's *current* seats. It is a reason to state the
+position on every entry, which the shared source line does.
+
+**PP-360 — the Prime Minister is an INDEPENDENT, and the obvious source says Fatah.** The 2026
+election article's infobox records `before_party = Fatah` for **Mohammad Mustafa**, Prime Minister
+since 31 March 2024. His own article records his party as **Independent**, and describes him as an
+independent member of the PLO Executive Committee. Fatah's `inExecutive` therefore rests on the
+**presidency** — Mahmoud Abbas, the party's own Chairman, has been President since **15 January
+2005** — and its `timeInPower` states in terms that the Prime Minister is not a Fatah member. Taking
+the election infobox at face value would have credited Fatah with a premiership it does not hold:
+the same class of wrong attribution as Iran's three mis-sourced leaders (PP-303).
+
+**PP-361 — the largest bloc holds no executive office.** Hamas won 74 of 132 seats, a clear
+majority, and carries `inPower: false`: the Palestinian Authority executive has been the presidency
+alone since 2007, and Hamas holds no post in it. A seat count is not an executive share, and this is
+the starkest example of that in the dataset so far.
+
+**PP-362 — two leaders the sources themselves qualify, kept rather than blanked.** The PFLP's
+General Secretary **Ahmad Sa'adat** is recorded as imprisoned, and the DFLP's **Nayef Hawatmeh** as
+living in exile. Both remain their parties' office-holders, so both are entered as `leader`, with the
+qualification carried in the entry's own source line — the honest middle between dropping a real
+office-holder and presenting one without the circumstance the source states.
+
+**PP-363 — this entry has a known expiry date.** A fresh election is scheduled for **28 November
+2026** to elect a 3rd Council of **200** seats, up from 132. When it is held, both the seat figures
+and `seatsTotal` need refreshing; the schedule is cited on every entry so a later auditor meets it.
+
+**Verification note for the next auditor:** Palestine's Learn page labels its drill-in button
+**"Learn more"**, not "Explore more flags" as most countries do. A verification script keyed on the
+usual label reports the Political-parties tab as missing when it is simply behind a differently
+labelled button — worth knowing before concluding a country has no surface for this data.
+
+**Verified in the running app**: all seven cards paint their logos, Fatah alone carries the In-power
+badge, and the tab appears with its count of 7; no console errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2939,5 +2985,5 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `YE` Yemen
 - [ ] `ZM` Zambia
 - [ ] `ZW` Zimbabwe
-- [ ] `PS` Palestine
+- [x] `PS` Palestine — merged
 

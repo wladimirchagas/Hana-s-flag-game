@@ -24559,6 +24559,290 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "PS": [
+    {
+      "id": "PS-HAMAS",
+      "country": "PS",
+      "shortName": "Hamas",
+      "name": "حركة المقاومة الإسلامية",
+      "nameEn": "Hamas (Islamic Resistance Movement)",
+      "logo": "party-logos/ps/hamas.svg",
+      "sha256": "7c494d639a259f2faa81a29ece199f749ef6ac9e01588b46b96558fad59be399",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Emblem_of_Hamas.svg",
+      "licenceNote": "Non-free. Hamas (Islamic Resistance Movement)'s emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Sunni Islamism",
+        "Islamic fundamentalism",
+        "Palestinian nationalism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 1987,
+      "leader": "Khalil al-Hayya",
+      "leaderTitle": "Chairman of the Political Bureau",
+      "inPower": false,
+      "seats": 74,
+      "seatsTotal": 132,
+      "chamberName": "Palestinian Legislative Council",
+      "sources": [
+        {
+          "title": "Hamas — Wikipedia (infobox: founded 10 December 1987; Chairman of the Political Bureau Khalil al-Hayya; right-wing). It won the largest bloc in 2006 but holds no office in the Palestinian Authority executive, which the 2007 split left under the presidency alone.",
+          "url": "https://en.wikipedia.org/wiki/Hamas"
+        },
+        {
+          "title": "Palestinian Legislative Council — Wikipedia (the 2nd Council, elected 25 January 2006, seats 132: Hamas 74, Fatah 45, PFLP 3, PNI 2, Third Way 2, DFLP 1, PPP 1, independents 4. The Council has not functioned since the 2007 Fatah–Hamas split, and laws have since been made by presidential decree)",
+          "url": "https://en.wikipedia.org/wiki/Palestinian_Legislative_Council"
+        },
+        {
+          "title": "2026 Palestinian legislative election — Wikipedia (scheduled for 28 November 2026 to elect a 3rd Council of 200 seats; its infobox lists each party's current seats from the 2006 result and names each party's leader)",
+          "url": "https://en.wikipedia.org/wiki/2026_Palestinian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "PS-FATAH",
+      "country": "PS",
+      "shortName": "Fatah",
+      "name": "حركة التحرير الوطني الفلسطيني",
+      "nameEn": "Fatah (Palestinian National Liberation Movement)",
+      "logo": "party-logos/ps/fatah.png",
+      "sha256": "8e26ea4eb22c5ec3d1dfbfe00af48c7f2e8cdcfae57065cd7fa08546463d15d8",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Fatah_logo.png",
+      "licenceNote": "Non-free. Fatah (Palestinian National Liberation Movement)'s emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Palestinian nationalism",
+        "Social democracy",
+        "Secularism",
+        "Two-state solution"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to centre-left",
+      "founded": 1965,
+      "leader": "Mahmoud Abbas",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds the Palestinian presidency: the party's own Chairman, Mahmoud Abbas, has been President since 15 January 2005. The Prime Minister appointed on 31 March 2024, Mohammad Mustafa, is an independent rather than a Fatah member.",
+      "seats": 45,
+      "seatsTotal": 132,
+      "chamberName": "Palestinian Legislative Council",
+      "sources": [
+        {
+          "title": "Fatah — Wikipedia (infobox: founded 1959 as a movement and 1965 as a political party; Chairman Mahmoud Abbas; centre to centre-left)",
+          "url": "https://en.wikipedia.org/wiki/Fatah"
+        },
+        {
+          "title": "Palestinian Legislative Council — Wikipedia (the 2nd Council, elected 25 January 2006, seats 132: Hamas 74, Fatah 45, PFLP 3, PNI 2, Third Way 2, DFLP 1, PPP 1, independents 4. The Council has not functioned since the 2007 Fatah–Hamas split, and laws have since been made by presidential decree)",
+          "url": "https://en.wikipedia.org/wiki/Palestinian_Legislative_Council"
+        },
+        {
+          "title": "2026 Palestinian legislative election — Wikipedia (scheduled for 28 November 2026 to elect a 3rd Council of 200 seats; its infobox lists each party's current seats from the 2006 result and names each party's leader)",
+          "url": "https://en.wikipedia.org/wiki/2026_Palestinian_legislative_election"
+        },
+        {
+          "title": "President of Palestine — Wikipedia (incumbent Mahmoud Abbas since 15 January 2005) — with Mohammad Mustafa (politician), Prime Minister since 31 March 2024, whose own article records his party as Independent",
+          "url": "https://en.wikipedia.org/wiki/President_of_the_State_of_Palestine"
+        }
+      ]
+    },
+    {
+      "id": "PS-PFLP",
+      "country": "PS",
+      "shortName": "PFLP",
+      "name": "الجبهة الشعبية لتحرير فلسطين",
+      "nameEn": "Popular Front for the Liberation of Palestine",
+      "logo": "party-logos/ps/pflp.png",
+      "sha256": "b05f9b36db5ea6cb938cc6b9241f332dc0c4a3522d6c3be42877ae4b0d44cb3d",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_PFLP.png",
+      "licenceNote": "Non-free. Popular Front for the Liberation of Palestine's emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism",
+        "Palestinian nationalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1967,
+      "leader": "Ahmad Sa'adat",
+      "leaderTitle": "General Secretary",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 132,
+      "chamberName": "Palestinian Legislative Council",
+      "sources": [
+        {
+          "title": "Popular Front for the Liberation of Palestine — Wikipedia (infobox: founded 1967; General Secretary Ahmad Sa'adat, whom the infobox records as imprisoned; left-wing)",
+          "url": "https://en.wikipedia.org/wiki/Popular_Front_for_the_Liberation_of_Palestine"
+        },
+        {
+          "title": "Palestinian Legislative Council — Wikipedia (the 2nd Council, elected 25 January 2006, seats 132: Hamas 74, Fatah 45, PFLP 3, PNI 2, Third Way 2, DFLP 1, PPP 1, independents 4. The Council has not functioned since the 2007 Fatah–Hamas split, and laws have since been made by presidential decree)",
+          "url": "https://en.wikipedia.org/wiki/Palestinian_Legislative_Council"
+        },
+        {
+          "title": "2026 Palestinian legislative election — Wikipedia (scheduled for 28 November 2026 to elect a 3rd Council of 200 seats; its infobox lists each party's current seats from the 2006 result and names each party's leader)",
+          "url": "https://en.wikipedia.org/wiki/2026_Palestinian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "PS-PNI",
+      "country": "PS",
+      "shortName": "PNI",
+      "name": "المبادرة الوطنية الفلسطينية",
+      "nameEn": "Palestinian National Initiative (Al-Mubadara)",
+      "logo": "party-logos/ps/pni.png",
+      "sha256": "c116c83f33cc2bf507a2a1a34f895d81833949c7446cbe3e21b459f7284a1175",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Palestinian_National_Initiative_logo.png",
+      "licenceNote": "Non-free. Palestinian National Initiative (Al-Mubadara)'s emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Palestinian nationalism",
+        "Social democracy",
+        "Democratic socialism",
+        "Anti-corruption"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2002,
+      "leader": "Mustafa Barghouti",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 132,
+      "chamberName": "Palestinian Legislative Council",
+      "sources": [
+        {
+          "title": "Palestinian National Initiative — Wikipedia (infobox: founded 17 June 2002; leader Mustafa Barghouti; left-wing)",
+          "url": "https://en.wikipedia.org/wiki/Palestinian_National_Initiative"
+        },
+        {
+          "title": "Palestinian Legislative Council — Wikipedia (the 2nd Council, elected 25 January 2006, seats 132: Hamas 74, Fatah 45, PFLP 3, PNI 2, Third Way 2, DFLP 1, PPP 1, independents 4. The Council has not functioned since the 2007 Fatah–Hamas split, and laws have since been made by presidential decree)",
+          "url": "https://en.wikipedia.org/wiki/Palestinian_Legislative_Council"
+        },
+        {
+          "title": "2026 Palestinian legislative election — Wikipedia (scheduled for 28 November 2026 to elect a 3rd Council of 200 seats; its infobox lists each party's current seats from the 2006 result and names each party's leader)",
+          "url": "https://en.wikipedia.org/wiki/2026_Palestinian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "PS-THIRD-WAY",
+      "country": "PS",
+      "shortName": "Third Way",
+      "name": "الطريق الثالث",
+      "nameEn": "Third Way",
+      "logo": "party-logos/ps/thirdway.png",
+      "sha256": "59868a34fdcb9b5f5c1a269bc164b0094ad5750fa3565b80962055c65b0b93ca",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Third_Way_(Palestinian_political_party).png",
+      "licenceNote": "Non-free. Third Way's emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Liberalism",
+        "Progressivism",
+        "Anti-corruption",
+        "Two-state solution"
+      ],
+      "ideologyPosition": "centre-left",
+      "positionRaw": "Centre to left-wing",
+      "founded": 2005,
+      "leader": "Salam Fayyad",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 2,
+      "seatsTotal": 132,
+      "chamberName": "Palestinian Legislative Council",
+      "sources": [
+        {
+          "title": "Third Way (Palestine) — Wikipedia (infobox: founded 16 December 2005; led by Salam Fayyad with Hanan Ashrawi; centre to left-wing)",
+          "url": "https://en.wikipedia.org/wiki/Third_Way_(Palestinian_political_party)"
+        },
+        {
+          "title": "Palestinian Legislative Council — Wikipedia (the 2nd Council, elected 25 January 2006, seats 132: Hamas 74, Fatah 45, PFLP 3, PNI 2, Third Way 2, DFLP 1, PPP 1, independents 4. The Council has not functioned since the 2007 Fatah–Hamas split, and laws have since been made by presidential decree)",
+          "url": "https://en.wikipedia.org/wiki/Palestinian_Legislative_Council"
+        },
+        {
+          "title": "2026 Palestinian legislative election — Wikipedia (scheduled for 28 November 2026 to elect a 3rd Council of 200 seats; its infobox lists each party's current seats from the 2006 result and names each party's leader)",
+          "url": "https://en.wikipedia.org/wiki/2026_Palestinian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "PS-DFLP",
+      "country": "PS",
+      "shortName": "DFLP",
+      "name": "الجبهة الديمقراطية لتحرير فلسطين",
+      "nameEn": "Democratic Front for the Liberation of Palestine",
+      "logo": "party-logos/ps/dflp.svg",
+      "sha256": "5477b3368fabf62a82d5cc6eb52ded04ac596b7552a19f7aa34d9cf638ed8df9",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Democratic_Front_for_the_Liberation_of_Palestine.svg",
+      "ideology": [
+        "Communism",
+        "Marxism–Leninism",
+        "Palestinian nationalism"
+      ],
+      "ideologyPosition": "far-left",
+      "positionRaw": "Far-left",
+      "founded": 1969,
+      "leader": "Nayef Hawatmeh",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 132,
+      "chamberName": "Palestinian Legislative Council",
+      "sources": [
+        {
+          "title": "Democratic Front for the Liberation of Palestine — Wikipedia (infobox: founded 1969; leader Nayef Hawatmeh, whom the election article records as living in exile; far-left). Its seat was won on The Alternative list.",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Front_for_the_Liberation_of_Palestine"
+        },
+        {
+          "title": "Palestinian Legislative Council — Wikipedia (the 2nd Council, elected 25 January 2006, seats 132: Hamas 74, Fatah 45, PFLP 3, PNI 2, Third Way 2, DFLP 1, PPP 1, independents 4. The Council has not functioned since the 2007 Fatah–Hamas split, and laws have since been made by presidential decree)",
+          "url": "https://en.wikipedia.org/wiki/Palestinian_Legislative_Council"
+        },
+        {
+          "title": "2026 Palestinian legislative election — Wikipedia (scheduled for 28 November 2026 to elect a 3rd Council of 200 seats; its infobox lists each party's current seats from the 2006 result and names each party's leader)",
+          "url": "https://en.wikipedia.org/wiki/2026_Palestinian_legislative_election"
+        }
+      ]
+    },
+    {
+      "id": "PS-PPP",
+      "country": "PS",
+      "shortName": "PPP",
+      "name": "حزب الشعب الفلسطيني",
+      "nameEn": "Palestinian People's Party",
+      "logo": "party-logos/ps/ppp.png",
+      "sha256": "e6d05487018f71e050caaa1922fdfbdb2fb87538c036090ba19900170530a1c0",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Palestinian_People's_Party.png",
+      "ideology": [
+        "Communism",
+        "Marxism",
+        "Palestinian nationalism",
+        "Two-state solution"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1982,
+      "leader": "Bassam Al-Salhi",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 132,
+      "chamberName": "Palestinian Legislative Council",
+      "sources": [
+        {
+          "title": "Palestinian People's Party — Wikipedia (infobox: founded February 1982; leader Bassam Al-Salhi; left-wing). Its seat was won on The Alternative list.",
+          "url": "https://en.wikipedia.org/wiki/Palestinian_People%27s_Party"
+        },
+        {
+          "title": "Palestinian Legislative Council — Wikipedia (the 2nd Council, elected 25 January 2006, seats 132: Hamas 74, Fatah 45, PFLP 3, PNI 2, Third Way 2, DFLP 1, PPP 1, independents 4. The Council has not functioned since the 2007 Fatah–Hamas split, and laws have since been made by presidential decree)",
+          "url": "https://en.wikipedia.org/wiki/Palestinian_Legislative_Council"
+        },
+        {
+          "title": "2026 Palestinian legislative election — Wikipedia (scheduled for 28 November 2026 to elect a 3rd Council of 200 seats; its infobox lists each party's current seats from the 2006 result and names each party's leader)",
+          "url": "https://en.wikipedia.org/wiki/2026_Palestinian_legislative_election"
+        }
+      ]
+    }
+  ],
   "VN": [
     {
       "id": "VN-CPV",
