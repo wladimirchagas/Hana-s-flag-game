@@ -38,7 +38,6 @@ Priority P1 means misleading core learning content or a systemic data defect. P2
 | F18 | P2 | Confirmed taxonomy risk | Administrative metadata mixes obsolete units, geographical regions and unlike administrative levels. |
 | F19 | P2 | Confirmed repository error; live reachability unproven | The 2000 BCE override registry includes Hammurabi-era Babylon centuries too early. |
 | F20 | P2 | Confirmed internal inconsistency | Iraq's 1960 record points to a 1959 flag asset but describes the displayed flag as the old royal flag. |
-
 | F21 | P1 | Confirmed image/code | Kyrgyzstan current asset still has pre-revision wavy sun rays. |
 | F22 | P1 | Confirmed | Burundi retains the old provincial system. |
 | F23 | P1 | Confirmed | Indonesia retains 33 provinces instead of 38. |
