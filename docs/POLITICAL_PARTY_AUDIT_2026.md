@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 73 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 74 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -123,7 +123,8 @@ forgotten; it is tracked here.
 | 🇶🇦 Qatar | `#1400` | — | — | **Out of scope — law permits no political bodies, and the 2024 referendum abolished Shura Council elections outright** |
 | 🇸🇦 Saudi Arabia | `#1401` | — | — | **Out of scope — the Basic Law bans political parties; the 150-member Consultative Assembly is appointed and wholly non-partisan** |
 | 🇱🇰 Sri Lanka | `#1403` | 0 → 12 | 224 / 225 (1 independent) | **Absent entirely; the only file matching the DTNA's acronym is Daimler Truck North America's logo** |
-| 🇸🇾 Syria | *(see PR)* | — | — | **Out of scope for now — the post-Assad Assembly is 205 independents and 5 vacancies; no party holds a seat** |
+| 🇸🇾 Syria | `#1404` | — | — | **Out of scope for now — the post-Assad Assembly is 205 independents and 5 vacancies; no party holds a seat** |
+| 🇹🇯 Tajikistan | *(see PR)* | 0 → 5 | **63 / 63** | **Absent entirely; reconciles exactly, and its ruling party's leader has been President since 1994** |
 
 ---
 
@@ -2835,6 +2836,29 @@ superseded chamber shown as current).
 **Revisit** when Syria's transitional period produces party-affiliated members — this is the entry in
 the whole sweep most likely to change, and it should be re-checked rather than assumed settled.
 
+### 🇹🇯 Tajikistan — audited 2026-09-14
+
+**Absent entirely.** Tajikistan had no entry in `POLITICAL_PARTIES`, so the Learn-mode Political
+parties tab did not exist for it. Five entries added, covering **all 63** seats of the **Assembly of
+Representatives** elected on **2 March 2025**.
+
+**PP-372 — an exact reconciliation, with no independents at all.** People's Democratic Party 49,
+Agrarian Party 7, Party of Economic Reforms 5, Socialist Party 1, Democratic Party 1 = **63 of 63**.
+It joins Cyprus, Israel and Kazakhstan as a chamber this audit closes exactly, and is the only one so
+far with no independent and no vacancy to account for.
+
+**PP-373 — the longest tenure in the dataset.** **Emomali Rahmon**, the People's Democratic Party's
+own leader, has been President of Tajikistan since **16 November 1994** — longer than any other
+office-holder any entry in this dataset records. Tajikistan is a presidential republic, so the PDPT
+alone carries `inPower` / `inExecutive`; the chamber itself labels the PDPT's 49 seats "Government"
+and the remaining 14 "Others", and those four parties take neither flag.
+
+All five logos are locally-hosted English-Wikipedia files under non-free-content criteria and carry a
+`licenceNote`; each was montage-verified as a distinct Tajik party emblem before bundling.
+
+**Verified in the running app**: all five cards paint their logos, the PDPT alone carries the
+In-power badge, no console errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -3105,7 +3129,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `LK` Sri Lanka — merged
 - [ ] `SD` Sudan
 - [x] `SY` Syria — merged (out of scope for now)
-- [ ] `TJ` Tajikistan
+- [x] `TJ` Tajikistan — merged
 - [ ] `TZ` Tanzania
 - [ ] `TG` Togo
 - [ ] `TO` Tonga

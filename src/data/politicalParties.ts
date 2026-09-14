@@ -13078,6 +13078,185 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "TJ": [
+    {
+      "id": "TJ-PDPT",
+      "country": "TJ",
+      "shortName": "PDPT",
+      "name": "Ҳизби халқии демократии Тоҷикистон",
+      "nameEn": "People's Democratic Party of Tajikistan",
+      "logo": "party-logos/tj/pdp.svg",
+      "sha256": "ea7bcfdb1dac5e9fa0f8d809b28d6747e5b9d83d4fec192851d809c40a05d080",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:People's_Democratic_Party_of_Tajikistan_logo.svg",
+      "licenceNote": "Non-free. People's Democratic Party of Tajikistan's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Tajik nationalism",
+        "Statism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1994,
+      "leader": "Emomali Rahmon",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds the presidency: the party's own leader, Emomali Rahmon, has been President of Tajikistan since 16 November 1994, and the party holds 49 of the Assembly's 63 seats.",
+      "seats": 49,
+      "seatsTotal": 63,
+      "chamberName": "Assembly of Representatives",
+      "sources": [
+        {
+          "title": "People's Democratic Party of Tajikistan — Wikipedia (infobox: founded 10 December 1994; leader Emomali Rahmon, who is also President; centre-right)",
+          "url": "https://en.wikipedia.org/wiki/People%27s_Democratic_Party_of_Tajikistan"
+        },
+        {
+          "title": "Assembly of Representatives (Tajikistan) — Wikipedia (composition after the 2 March 2025 election: government People's Democratic Party 49; others Agrarian Party 7, Party of Economic Reforms 5, Socialist Party 1, Democratic Party 1, of 63)",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_Representatives_(Tajikistan)"
+        },
+        {
+          "title": "President of Tajikistan — Wikipedia (incumbent Emomali Rahmon since 16 November 1994; Tajikistan is a presidential republic, so the President appoints and heads the government)",
+          "url": "https://en.wikipedia.org/wiki/President_of_Tajikistan"
+        }
+      ]
+    },
+    {
+      "id": "TJ-AGRARIAN",
+      "country": "TJ",
+      "shortName": "Agrarian",
+      "name": "Ҳизби аграрии Тоҷикистон",
+      "nameEn": "Agrarian Party of Tajikistan",
+      "logo": "party-logos/tj/agrarian.png",
+      "sha256": "b2fad7e1d2f3c0337af989d0aefbb395c4b3c69fba4600c8c6591243966d2d4a",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Agrarian_Party_(Tajikistan).png",
+      "licenceNote": "Non-free. Agrarian Party of Tajikistan's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Agrarianism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2005,
+      "leader": "Rustam Latifzoda",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 7,
+      "seatsTotal": 63,
+      "chamberName": "Assembly of Representatives",
+      "sources": [
+        {
+          "title": "Agrarian Party of Tajikistan — Wikipedia (infobox: founded 15 November 2005; leader Rustam Latifzoda; centre)",
+          "url": "https://en.wikipedia.org/wiki/Agrarian_Party_of_Tajikistan"
+        },
+        {
+          "title": "Assembly of Representatives (Tajikistan) — Wikipedia (composition after the 2 March 2025 election: government People's Democratic Party 49; others Agrarian Party 7, Party of Economic Reforms 5, Socialist Party 1, Democratic Party 1, of 63)",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_Representatives_(Tajikistan)"
+        }
+      ]
+    },
+    {
+      "id": "TJ-PER",
+      "country": "TJ",
+      "shortName": "PER",
+      "name": "Ҳизби ислоҳоти иқтисодии Тоҷикистон",
+      "nameEn": "Party of Economic Reforms of Tajikistan",
+      "logo": "party-logos/tj/per.png",
+      "sha256": "8129495e646fe192666f0f6950ea2fa427f05d251ec13a6e233c8c0790ec7d4e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Party_of_Economic_Reforms_of_Tajikistan.png",
+      "licenceNote": "Non-free. Party of Economic Reforms of Tajikistan's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Social liberalism",
+        "Third Way",
+        "Agrarian reformism"
+      ],
+      "ideologyPosition": "centre",
+      "positionRaw": "Centre",
+      "founded": 2005,
+      "leader": "Giyosiddin Ashurzoda",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 63,
+      "chamberName": "Assembly of Representatives",
+      "sources": [
+        {
+          "title": "Party of Economic Reforms of Tajikistan — Wikipedia (infobox: founded 9 November 2005; leader Giyosiddin Ashurzoda; centre)",
+          "url": "https://en.wikipedia.org/wiki/Party_of_Economic_Reforms_of_Tajikistan"
+        },
+        {
+          "title": "Assembly of Representatives (Tajikistan) — Wikipedia (composition after the 2 March 2025 election: government People's Democratic Party 49; others Agrarian Party 7, Party of Economic Reforms 5, Socialist Party 1, Democratic Party 1, of 63)",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_Representatives_(Tajikistan)"
+        }
+      ]
+    },
+    {
+      "id": "TJ-SOCIALIST",
+      "country": "TJ",
+      "shortName": "Socialist",
+      "name": "Ҳизби Сотсиалистии Тоҷикистон",
+      "nameEn": "Socialist Party of Tajikistan",
+      "logo": "party-logos/tj/socialist.svg",
+      "sha256": "f1852b5cb5806b9dcafcda228df1ab1fc489ad71409a062f7c0b3df27e66bef5",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_Socialist_Party_of_Tajikistan.svg",
+      "licenceNote": "Non-free. Socialist Party of Tajikistan's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 1996,
+      "leader": "Ghulom Khalimzoda",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 63,
+      "chamberName": "Assembly of Representatives",
+      "sources": [
+        {
+          "title": "Socialist Party of Tajikistan — Wikipedia (infobox: founded 15 June 1996; leader Ghulom Khalimzoda; left-wing)",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Party_of_Tajikistan"
+        },
+        {
+          "title": "Assembly of Representatives (Tajikistan) — Wikipedia (composition after the 2 March 2025 election: government People's Democratic Party 49; others Agrarian Party 7, Party of Economic Reforms 5, Socialist Party 1, Democratic Party 1, of 63)",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_Representatives_(Tajikistan)"
+        }
+      ]
+    },
+    {
+      "id": "TJ-DEMOCRATIC",
+      "country": "TJ",
+      "shortName": "Democratic",
+      "name": "Ҳизби демократии Тоҷикистон",
+      "nameEn": "Democratic Party of Tajikistan",
+      "logo": "party-logos/tj/democratic.png",
+      "sha256": "bb409d290839eb6d817ae6988c16cd0f1afbb713bef0fcefbbae210ba5e69578",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Democratic_Party_of_Tajikistan.png",
+      "licenceNote": "Non-free. Democratic Party of Tajikistan's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Liberal conservatism",
+        "Social conservatism",
+        "Tajik nationalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre to centre-right",
+      "founded": 1990,
+      "leader": "Shahboz Abror",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 63,
+      "chamberName": "Assembly of Representatives",
+      "sources": [
+        {
+          "title": "Democratic Party of Tajikistan — Wikipedia (infobox: founded 5 August 1990; leader Shahboz Abror; centre to centre-right)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_of_Tajikistan"
+        },
+        {
+          "title": "Assembly of Representatives (Tajikistan) — Wikipedia (composition after the 2 March 2025 election: government People's Democratic Party 49; others Agrarian Party 7, Party of Economic Reforms 5, Socialist Party 1, Democratic Party 1, of 63)",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_Representatives_(Tajikistan)"
+        }
+      ]
+    }
+  ],
   "UA": [
     {
       "id": "UA-SN",
