@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 69 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 70 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -119,7 +119,8 @@ forgotten; it is tracked here.
 | 🇳🇵 Nepal | `#1386` | 0 → 6 | 274 / 275 (1 independent) | **Absent entirely; the chamber was replaced wholesale in March 2026 and two of its six parties are younger than a year** |
 | 🇴🇲 Oman | `#1387` | — | — | **Out of scope — political parties are not permitted and all 90 elected members are non-partisan** |
 | 🇵🇰 Pakistan | `#1397` | 2 → 17 | 334 / 336 | **Carried 2 of 17 seated parties, on a `seatsTotal` two elections out of date, with the PPP marked out of power while it sits in the coalition** |
-| 🇵🇸 Palestine | *(see PR)* | 0 → 7 | 128 / 132 (4 independents) | **Absent entirely; the Prime Minister is an independent, not Fatah as the obvious source says** |
+| 🇵🇸 Palestine | `#1399` | 0 → 7 | 128 / 132 (4 independents) | **Absent entirely; the Prime Minister is an independent, not Fatah as the obvious source says** |
+| 🇶🇦 Qatar | *(see PR)* | — | — | **Out of scope — law permits no political bodies, and the 2024 referendum abolished Shura Council elections outright** |
 
 ---
 
@@ -2700,6 +2701,34 @@ labelled button — worth knowing before concluding a country has no surface for
 **Verified in the running app**: all seven cards paint their logos, Fatah alone carries the In-power
 badge, and the tab appears with its count of 7; no console errors.
 
+### 🇶🇦 Qatar — audited 2026-09-14 — out of scope
+
+**Qatar is not in the dataset and must not be added.** It is the strongest out-of-scope case this
+audit has met — stronger than Oman (PP-348), which at least elects 90 members albeit non-partisan,
+and stronger than Kuwait (PP-322).
+
+**PP-364 — three independent grounds, each sufficient on its own.**
+
+1. **The law permits no political bodies.** Qatar's human-rights article states plainly that
+   "Qatari law does not permit the establishment of political bodies or trade unions."
+2. **The chamber's own composition records no party and no elected member.** The **Shura Council**'s
+   published composition is a single line — **"Appointed by Emir (45)"** of 45.
+3. **Elections were abolished outright, and recently.** The Council was designed in the 2003
+   constitution to seat 30 elected members and 15 appointees; those elections were delayed for
+   eighteen years, held once on **2 October 2021**, and then **abolished by a constitutional
+   referendum in November 2024** — reported as carried with 89% support — returning the Council to a
+   fully appointed body. The Emir's own statement announcing the referendum was that "the Shura
+   Council is not a representative parliament in a democratic system, and its status and powers will
+   not be" changed by it.
+
+There is no party to enter, no seat to attribute and no `noImageReason` to write: the Learn-mode
+Political parties tab correctly shows nothing for Qatar.
+
+**Revisit** only if Qatar legalises political bodies and a party-affiliated member sits in the Shura
+Council. The 2024 referendum makes that materially less likely than when this sweep began, which is
+itself worth recording: this determination is not a gap awaiting data, it is the current settled
+position.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -2952,7 +2981,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `PW` Palau
 - [ ] `PA` Panama
 - [ ] `PG` Papua New Guinea
-- [ ] `QA` Qatar
+- [x] `QA` Qatar — merged (out of scope)
 - [ ] `RW` Rwanda
 - [ ] `KN` Saint Kitts and Nevis
 - [ ] `LC` Saint Lucia
