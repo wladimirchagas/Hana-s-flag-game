@@ -7239,6 +7239,396 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "LK": [
+    {
+      "id": "LK-NPP",
+      "country": "LK",
+      "shortName": "NPP",
+      "name": "ජාතික ජන බලවේගය",
+      "nameEn": "National People's Power",
+      "logo": "party-logos/lk/npp.svg",
+      "sha256": "340b1b65656512790c7738df149b4334f628e80043132c64bb1884c7dbfd35f7",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_National_People's_Power.svg",
+      "licenceNote": "Non-free. National People's Power's emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Socialism",
+        "Anti-neoliberalism",
+        "Progressivism",
+        "Left-wing populism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Left-wing",
+      "founded": 2019,
+      "leader": "Anura Kumara Dissanayake",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Won the 14 November 2024 election with 159 of the 225 seats. Its leader Anura Kumara Dissanayake has been President since 23 September 2024 and Harini Amarasuriya Prime Minister since 24 September 2024.",
+      "seats": 159,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "National People's Power — Wikipedia (infobox: founded 13 July 2019; leader Anura Kumara Dissanayake; left-wing). It is an alliance led by the Janatha Vimukthi Peramuna, and the chamber records its 159 seats to the alliance without splitting them between its member parties, so it is entered as one group.",
+          "url": "https://en.wikipedia.org/wiki/National_People%27s_Power"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        },
+        {
+          "title": "President of Sri Lanka and Prime Minister of Sri Lanka — Wikipedia (President Anura Kumara Dissanayake since 23 September 2024 and Prime Minister Harini Amarasuriya since 24 September 2024, both of the National People's Power)",
+          "url": "https://en.wikipedia.org/wiki/President_of_Sri_Lanka"
+        }
+      ]
+    },
+    {
+      "id": "LK-SJB",
+      "country": "LK",
+      "shortName": "SJB",
+      "name": "සමගි ජන බලවේගය",
+      "nameEn": "Samagi Jana Balawegaya (United People's Power)",
+      "noImageReason": "Searched Wikidata (no P154 logo on its item under a Sri Lanka country constraint), Wikimedia Commons (the only file is a monochrome ballot symbol drawn by a Commons user as own work, which is not the party's own published emblem), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
+      "ideology": [
+        "Third Way",
+        "Social democracy",
+        "Populism",
+        "Progressivism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 2020,
+      "leader": "Sajith Premadasa",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 40,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Samagi Jana Balawegaya — Wikipedia (infobox: founded 10 February 2020; leader Sajith Premadasa; centre-right). It is the largest opposition party.",
+          "url": "https://en.wikipedia.org/wiki/Samagi_Jana_Balawegaya"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        }
+      ]
+    },
+    {
+      "id": "LK-ITAK",
+      "country": "LK",
+      "shortName": "ITAK",
+      "name": "இலங்கைத் தமிழர்சுக் கட்சி",
+      "nameEn": "Ilankai Tamil Arasu Kachchi (Federal Party)",
+      "logo": "party-logos/lk/itak.svg",
+      "sha256": "cdf29529d8173830cd4ceefcff952073eb84c51047473e5a373620d0ff0b2ba1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Federal_Party_of_Sri_Lanka.svg",
+      "ideology": [
+        "Tamil nationalism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1949,
+      "leader": "S. Shritharan",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 8,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Ilankai Tamil Arasu Kachchi — Wikipedia (infobox: founded 18 December 1949; President S. Shritharan; Tamil nationalism, with no left–right position stated). Its English name is the Federal Party, which is the name its bundled flag file carries.",
+          "url": "https://en.wikipedia.org/wiki/Ilankai_Tamil_Arasu_Kachchi"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        }
+      ]
+    },
+    {
+      "id": "LK-NDF",
+      "country": "LK",
+      "shortName": "NDF",
+      "name": "නව ප්‍රජාතන්ත්‍රවාදී පෙරමුණ",
+      "nameEn": "New Democratic Front",
+      "logo": "party-logos/lk/ndf.png",
+      "sha256": "12bf177b1099f8a6649439d1c4eae8071286500aaa51e3ac81d96e1f8c337248",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:New_Democratic_Front_logo.png",
+      "licenceNote": "Non-free. New Democratic Front's emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Neoliberalism",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1995,
+      "leader": "Ranil Wickremesinghe",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 5,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "New Democratic Front (Sri Lanka) — Wikipedia (infobox: founded 1995; leader Ranil Wickremesinghe; centre-right). Wickremesinghe leads both this party and the United National Party, which sits separately in the chamber with one seat.",
+          "url": "https://en.wikipedia.org/wiki/New_Democratic_Front_(Sri_Lanka)"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        }
+      ]
+    },
+    {
+      "id": "LK-SLPP",
+      "country": "LK",
+      "shortName": "SLPP",
+      "name": "ශ්‍රී ලංකා පොදුජන පෙරමුණ",
+      "nameEn": "Sri Lanka Podujana Peramuna (People's Front)",
+      "logo": "party-logos/lk/slpp.png",
+      "sha256": "41e766a62b4d058024bf89c79b95659c38dd48386edbbf158d8dbcfe254b7bda",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Sri_Lanka_Podujana_Peramuna_logo.png",
+      "licenceNote": "Non-Commons source. Sri Lanka Podujana Peramuna's logo is held locally on English Wikipedia rather than on Wikimedia Commons, tagged there as public domain; it is bundled here with that copyright position recorded, on the same basis as the other locally-hosted party logos in this repository.",
+      "ideology": [
+        "National conservatism",
+        "Sinhalese Buddhist nationalism",
+        "Right-wing populism"
+      ],
+      "ideologyPosition": "right",
+      "positionRaw": "Right-wing",
+      "founded": 2016,
+      "leader": "Mahinda Rajapaksa",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Sri Lanka Podujana Peramuna — Wikipedia (infobox: founded 1 November 2016; leader Mahinda Rajapaksa; right-wing)",
+          "url": "https://en.wikipedia.org/wiki/Sri_Lanka_Podujana_Peramuna"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        }
+      ]
+    },
+    {
+      "id": "LK-SLMC",
+      "country": "LK",
+      "shortName": "SLMC",
+      "name": "ශ්‍රී ලංකා මුස්ලිම් කොංග්‍රසය",
+      "nameEn": "Sri Lanka Muslim Congress",
+      "logo": "party-logos/lk/slmc.png",
+      "sha256": "cdd3ac841a1e24218bc2499dd0f75fec18d06aa9ece7522c6a0a14927b22fab1",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Sri_Lanka_Muslim_Congress.png",
+      "ideology": [
+        "Muslim minority politics"
+      ],
+      "ideologyPosition": "other",
+      "founded": 1981,
+      "leader": "Rauff Hakeem",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 3,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Sri Lanka Muslim Congress — Wikipedia (infobox: founded 1981; leader Rauff Hakeem; no left–right position stated). The bundled image is the party's own flag, which is also the logo recorded on its Wikidata item.",
+          "url": "https://en.wikipedia.org/wiki/Sri_Lanka_Muslim_Congress"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        }
+      ]
+    },
+    {
+      "id": "LK-SARVAJANA-BALAYA",
+      "country": "LK",
+      "shortName": "Sarvajana Balaya",
+      "name": "සර්වජන බලය",
+      "nameEn": "Sarvajana Balaya",
+      "noImageReason": "Searched Wikidata (no P154 logo on its item under a Sri Lanka country constraint), Wikimedia Commons (the only file is a monochrome ballot symbol drawn by a Commons user as own work, which is not the party's own published emblem), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
+      "ideology": [
+        "Big tent",
+        "Sinhalese nationalism",
+        "Socialism"
+      ],
+      "ideologyPosition": "left",
+      "positionRaw": "Centre-left to far-left",
+      "founded": 2024,
+      "leader": "Dilith Jayaweera",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Sarvajana Balaya — Wikipedia (infobox: founded 2024; leader Dilith Jayaweera; centre-left to far-left)",
+          "url": "https://en.wikipedia.org/wiki/Sarvajana_Balaya"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        }
+      ]
+    },
+    {
+      "id": "LK-UNP",
+      "country": "LK",
+      "shortName": "UNP",
+      "name": "එක්සත් ජාතික පක්ෂය",
+      "nameEn": "United National Party",
+      "logo": "party-logos/lk/unp.png",
+      "sha256": "d16c59c719296efc4cf81a28431fc2d53a447d4336e10ba93da3a32f7c91fad4",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:United_National_Party_logo.png",
+      "licenceNote": "Non-free. United National Party's emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Liberalism",
+        "Liberal conservatism",
+        "Economic liberalism"
+      ],
+      "ideologyPosition": "centre-right",
+      "positionRaw": "Centre-right",
+      "founded": 1946,
+      "leader": "Ranil Wickremesinghe",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "United National Party — Wikipedia (infobox: founded 6 September 1946; leader Ranil Wickremesinghe; centre-right). Sri Lanka's oldest party, reduced to a single seat in 2024; Wickremesinghe also leads the New Democratic Front, which holds five.",
+          "url": "https://en.wikipedia.org/wiki/United_National_Party"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        }
+      ]
+    },
+    {
+      "id": "LK-DTNA",
+      "country": "LK",
+      "shortName": "DTNA",
+      "name": "ஜனநாயக தமிழ் தேசிய கூட்டணி",
+      "nameEn": "Democratic Tamil National Alliance",
+      "noImageReason": "Searched Wikidata (no P154 logo on its item under a Sri Lanka country constraint), Wikimedia Commons (the one file matching its acronym, \"DTNA Logo.png\", is the logo of Daimler Truck North America and was rejected), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
+      "ideology": [
+        "Tamil nationalism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2023,
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Democratic Tamil National Alliance — Wikipedia (infobox: founded 2008 as the Tamil Democratic National Alliance and 13 January 2023 under its present name; Tamil nationalism, with no left–right position and no leader stated)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Tamil_National_Alliance"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        }
+      ]
+    },
+    {
+      "id": "LK-TNPF",
+      "country": "LK",
+      "shortName": "TNPF",
+      "name": "தமிழ் தேசியத்திற்கான மக்கள் முன்னணி",
+      "nameEn": "Tamil National People's Front",
+      "logo": "party-logos/lk/tnpf.jpg",
+      "sha256": "2036f90d7113bee4aca6cbe4afc9f531f761d830de7c25663fa64bc45b6438e2",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Tamil_National_People's_Front_Logo.jpg",
+      "licenceNote": "Non-free. Tamil National People's Front's emblem is a copyrighted party logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Tamil nationalism",
+        "Regionalism",
+        "Secularism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2010,
+      "leader": "Gajendrakumar Ponnambalam",
+      "leaderTitle": "President",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Tamil National People's Front — Wikipedia (infobox: founded 28 February 2010; President Gajendrakumar Ponnambalam; no left–right position stated)",
+          "url": "https://en.wikipedia.org/wiki/Tamil_National_People%27s_Front"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        }
+      ]
+    },
+    {
+      "id": "LK-ACMC",
+      "country": "LK",
+      "shortName": "ACMC",
+      "name": "அகில இலங்கை மக்கள் காங்கிரஸ்",
+      "nameEn": "All Ceylon Makkal Congress",
+      "noImageReason": "Searched Wikidata (no P154 logo on its item under a Sri Lanka country constraint), Wikimedia Commons (no file under the party's English or Tamil name), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 2005,
+      "leader": "Rishad Bathiudeen",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "All Ceylon Makkal Congress — Wikipedia (infobox: founded 2005; leader Rishad Bathiudeen; the infobox states no ideology or left–right position)",
+          "url": "https://en.wikipedia.org/wiki/All_Ceylon_Makkal_Congress"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        }
+      ]
+    },
+    {
+      "id": "LK-SLLP",
+      "country": "LK",
+      "shortName": "SLLP",
+      "name": "ශ්‍රී ලංකා කම්කරු පක්ෂය",
+      "nameEn": "Sri Lanka Labour Party",
+      "noImageReason": "Searched Wikidata (no P154 logo on its item under a Sri Lanka country constraint), Wikimedia Commons (no file under the party's English or Sinhala name), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
+      "ideology": [],
+      "ideologyPosition": "other",
+      "founded": 1998,
+      "leader": "A. S. P. Liyanage",
+      "leaderTitle": "Leader",
+      "inPower": false,
+      "seats": 1,
+      "seatsTotal": 225,
+      "chamberName": "Parliament",
+      "sources": [
+        {
+          "title": "Sri Lanka Labour Party — Wikipedia (infobox: founded 16 May 1998; leader A. S. P. Liyanage; the infobox states no ideology or left–right position)",
+          "url": "https://en.wikipedia.org/wiki/Sri_Lanka_Labour_Party"
+        },
+        {
+          "title": "Parliament of Sri Lanka — Wikipedia (composition after the 14 November 2024 election: government National People's Power 159; opposition Samagi Jana Balawegaya 40, ITAK 8, New Democratic Front 5, SLPP 3, Sri Lanka Muslim Congress 3, Sarvajana Balaya 1, United National Party 1, Democratic Tamil National Alliance 1, Tamil National People's Front 1, All Ceylon Makkal Congress 1, Sri Lanka Labour Party 1, independent 1, of 225)",
+          "url": "https://en.wikipedia.org/wiki/Parliament_of_Sri_Lanka"
+        }
+      ]
+    }
+  ],
   "MV": [
     {
       "id": "MV-PNC",

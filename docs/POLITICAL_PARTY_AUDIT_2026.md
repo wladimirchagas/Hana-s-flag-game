@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 71 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 72 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -121,7 +121,8 @@ forgotten; it is tracked here.
 | 🇵🇰 Pakistan | `#1397` | 2 → 17 | 334 / 336 | **Carried 2 of 17 seated parties, on a `seatsTotal` two elections out of date, with the PPP marked out of power while it sits in the coalition** |
 | 🇵🇸 Palestine | `#1399` | 0 → 7 | 128 / 132 (4 independents) | **Absent entirely; the Prime Minister is an independent, not Fatah as the obvious source says** |
 | 🇶🇦 Qatar | `#1400` | — | — | **Out of scope — law permits no political bodies, and the 2024 referendum abolished Shura Council elections outright** |
-| 🇸🇦 Saudi Arabia | *(see PR)* | — | — | **Out of scope — the Basic Law bans political parties; the 150-member Consultative Assembly is appointed and wholly non-partisan** |
+| 🇸🇦 Saudi Arabia | `#1401` | — | — | **Out of scope — the Basic Law bans political parties; the 150-member Consultative Assembly is appointed and wholly non-partisan** |
+| 🇱🇰 Sri Lanka | *(see PR)* | 0 → 12 | 224 / 225 (1 independent) | **Absent entirely; the only file matching the DTNA's acronym is Daimler Truck North America's logo** |
 
 ---
 
@@ -2755,6 +2756,56 @@ Political parties tab correctly shows nothing for Saudi Arabia.
 **Revisit** only if the Basic Law's prohibition is lifted and a party-affiliated member sits in the
 Consultative Assembly.
 
+### 🇱🇰 Sri Lanka — audited 2026-09-14
+
+**Absent entirely.** Sri Lanka had no entry in `POLITICAL_PARTIES`, so the Learn-mode Political
+parties tab did not exist for it. Twelve entries added, covering **224** of the 225-seat
+**Parliament** elected on **14 November 2024**; the remaining seat is an independent.
+
+**PP-366 — a landslide, and eleven parties behind it.** The **National People's Power** holds **159**
+of 225 — the second-largest single-party share this audit has entered, after the Maldives' PNC. Its
+leader **Anura Kumara Dissanayake** has been President since **23 September 2024** and **Harini
+Amarasuriya** Prime Minister since **24 September 2024**, so the NPP alone carries `inPower` and
+`inExecutive`. The other eleven parties, from the 40-seat Samagi Jana Balawegaya down to six
+one-seat benches, are all opposition.
+
+**PP-367 — the NPP is an alliance, entered as one group.** It is led by the Janatha Vimukthi
+Peramuna, and the chamber records all 159 seats to the alliance without splitting them between its
+member parties. No split was invented — the same judgement as Lebanon's Watani Alliance (PP-334),
+Mongolia's National Coalition (PP-342) and Pakistan's GDA (PP-358).
+
+**PP-368 — one man leads two parties that sit separately.** **Ranil Wickremesinghe** is leader of
+both the **United National Party** (1 seat — Sri Lanka's oldest party, founded 1946 and reduced to a
+single bench in 2024) and the **New Democratic Front** (5 seats), which the chamber lists as two
+distinct opposition parties. Both are entered, and each entry's source line names the other, so the
+duplication reads as the fact it is rather than as an error.
+
+**PP-369 — the DTNA's only matching file is DAIMLER TRUCK NORTH AMERICA's logo.** Searching Commons
+for the **Democratic Tamil National Alliance** returns `DTNA Logo.png`, whose file description reads
+"Logo von Daimler Truck North America", sourced from `daimler-trucksnorthamerica.com`. Bundling on
+the acronym alone would have put a truck manufacturer's wordmark on a Tamil nationalist party's
+card — and it would have passed every mechanical check, because the file exists, hashes, and is a
+real image. It was caught by reading the file description before downloading, which is exactly what
+rule 5a ("never write a `logoSourceUrl` you have not resolved") exists for. The DTNA takes a
+`noImageReason` naming the rejection.
+
+**PP-370 — a ballot symbol traced by a volunteer is not a party's emblem.** Sri Lankan parties are
+identified on the ballot by a symbol (the UNP's elephant, the SJB's telephone, the NPP's compass),
+and Commons carries monochrome line traces of several, uploaded as **own work** under CC0 / CC BY-SA.
+Those were rejected: they are a Commons user's drawing, not the party's published emblem, and
+bundling one would be the hand-drawn-logo failure this repo already found in `bd/bkm.svg`. The
+distinction is visible in the **SLMC**'s case, where both exist — its real party flag (green field,
+crescent, tree, wordmark) is bundled, while the plain traced tree glyph is not. The **SJB** (40
+seats, the main opposition) and **Sarvajana Balaya** therefore ship with a `noImageReason` naming the
+traced-symbol rejection rather than a picture that is not theirs.
+
+Five of the twelve carry a `noImageReason`: SJB and Sarvajana Balaya (traced ballot symbols only),
+DTNA (the Daimler collision), and the All Ceylon Makkal Congress and Sri Lanka Labour Party (no file
+under any of their English, Tamil or Sinhala names).
+
+**Verified in the running app**: all twelve cards render — seven logos painted, five honest "No free
+image" cards — the NPP alone carries the In-power badge, no console errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -3022,7 +3073,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `SO` Somalia
 - [ ] `ZA` South Africa
 - [ ] `SS` South Sudan
-- [ ] `LK` Sri Lanka
+- [x] `LK` Sri Lanka — merged
 - [ ] `SD` Sudan
 - [ ] `SY` Syria
 - [ ] `TJ` Tajikistan
