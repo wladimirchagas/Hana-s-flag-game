@@ -2787,7 +2787,7 @@
 .learn-fs__subdiv-btn {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   gap: 0.3rem;
   padding: 0.3rem 0.85rem;
