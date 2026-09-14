@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 74 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 75 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -124,7 +124,8 @@ forgotten; it is tracked here.
 | 🇸🇦 Saudi Arabia | `#1401` | — | — | **Out of scope — the Basic Law bans political parties; the 150-member Consultative Assembly is appointed and wholly non-partisan** |
 | 🇱🇰 Sri Lanka | `#1403` | 0 → 12 | 224 / 225 (1 independent) | **Absent entirely; the only file matching the DTNA's acronym is Daimler Truck North America's logo** |
 | 🇸🇾 Syria | `#1404` | — | — | **Out of scope for now — the post-Assad Assembly is 205 independents and 5 vacancies; no party holds a seat** |
-| 🇹🇯 Tajikistan | *(see PR)* | 0 → 5 | **63 / 63** | **Absent entirely; reconciles exactly, and its ruling party's leader has been President since 1994** |
+| 🇹🇯 Tajikistan | `#1405` | 0 → 5 | **63 / 63** | **Absent entirely; reconciles exactly, and its ruling party's leader has been President since 1994** |
+| 🇹🇲 Turkmenistan | *(see PR)* | 0 → 3 | 107 / 125 (18 independents) | **Absent entirely; the chamber's own labelling separates the governing party from the two that merely support it** |
 
 ---
 
@@ -2859,6 +2860,28 @@ All five logos are locally-hosted English-Wikipedia files under non-free-content
 **Verified in the running app**: all five cards paint their logos, the PDPT alone carries the
 In-power badge, no console errors.
 
+### 🇹🇲 Turkmenistan — audited 2026-09-14
+
+**Absent entirely.** Turkmenistan had no entry in `POLITICAL_PARTIES`. Three entries added, covering
+**107** of the 125-seat **Assembly** elected on **26 March 2023**; the remaining 18 are independents.
+
+**PP-374 — every party here is pro-government, and the chamber still distinguishes them.** The easy
+error would be to mark all three as governing, since Turkmenistan has no opposition party. But the
+Assembly's own composition does not say that: it separates the **Democratic Party**'s 65 seats as
+**"Government"** from a **"Supported by"** group of 60 holding the **Party of Industrialists and
+Entrepreneurs** (24), the **Agrarian Party** (18) and the 18 independents. The entries follow the
+chamber: the TDP carries `inPower` / `inExecutive`, and the other two carry `inPower` without
+`inExecutive` — the confidence-and-supply modelling used for Lebanon (PP-331) and Cyprus, applied
+here to a one-party state rather than a competitive one.
+
+**PP-375 — the presidency is sourced from the office-holder's own article, not inferred.** **Serdar
+Berdimuhamedow** has been President since **19 March 2022**, and his own article records his party as
+the TDP. That link is what carries the TDP's `inExecutive`; it is stated rather than assumed, because
+"the ruling party of a one-party state must hold the presidency" is exactly the kind of inference
+that produced Palestine's wrong premiership attribution (PP-360).
+
+**Verified in the running app**: all three cards paint their logos, no console errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -3135,7 +3158,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `TO` Tonga
 - [ ] `TT` Trinidad and Tobago
 - [ ] `TN` Tunisia
-- [ ] `TM` Turkmenistan
+- [x] `TM` Turkmenistan — merged
 - [ ] `TV` Tuvalu
 - [ ] `UG` Uganda
 - [ ] `AE` United Arab Emirates
