@@ -2785,9 +2785,10 @@
 }
 
 .learn-fs__subdiv-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  align-self: flex-start;
+  justify-content: flex-start;
+  width: 100%;
   gap: 0.3rem;
   padding: 0.3rem 0.85rem;
   font-family: var(--font-display);
@@ -2801,6 +2802,7 @@
   cursor: pointer;
   transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
   white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .learn-fs__subdiv-btn:hover,
