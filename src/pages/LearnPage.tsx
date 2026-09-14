@@ -2022,6 +2022,27 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
 
         </aside>
 
+        {/* ===== COMMERCIAL-AIRLINE box (World view) — when in commercial airlines
+            view, show the airline in a 2nd widget below the primary country widget,
+            matching the subnational/national symbols behaviour. ===== */}
+        {!subdivisionMode && effectiveGridContentType === "airline" && display?.kind === "modern" && (
+          <aside className="learn-fs__panel" aria-live="polite">
+            <div className="learn-fs__detail">
+              {activeAirline ? (
+                <AirlineDetails
+                  airline={activeAirline}
+                  baseUrl={baseUrl}
+                  onEnlarge={setZoomedFlagUrl}
+                />
+              ) : (
+                <p className="learn-fs__no-flag" style={{ marginTop: "1rem" }}>
+                  No commercial airline data is available for {display.country.name} yet.
+                </p>
+              )}
+            </div>
+          </aside>
+        )}
+
         {/* ===== SUB-NATIONAL box — a second card, only in the drill-in view.
             Its own dropdown picks the division; its flag + explainer sit in the
             same box, mirroring the national box above. ===== */}
@@ -2139,27 +2160,6 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               )}
             </div>
           </aside>
-
-          {/* ===== COMMERCIAL-AIRLINE box (World view) — when in commercial airlines
-              view, show the airline in a 2nd widget below the primary country widget,
-              matching the subnational/national symbols behaviour. ===== */}
-          {!subdivisionMode && effectiveGridContentType === "airline" && display?.kind === "modern" && (
-            <aside className="learn-fs__panel" aria-live="polite">
-              <div className="learn-fs__detail">
-                {activeAirline ? (
-                  <AirlineDetails
-                    airline={activeAirline}
-                    baseUrl={baseUrl}
-                    onEnlarge={setZoomedFlagUrl}
-                  />
-                ) : (
-                  <p className="learn-fs__no-flag" style={{ marginTop: "1rem" }}>
-                    No commercial airline data is available for {display.country.name} yet.
-                  </p>
-                )}
-              </div>
-            </aside>
-          )}
 
           {/* ===== CAPITAL box — a third card, shown when the user taps
               "View capital". Its capital name comes from the same source as the
