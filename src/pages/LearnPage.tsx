@@ -1856,7 +1856,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     {/* It opens far more than the sub-national grid now — national,
                         historical, military, maritime, arms and passports too — so the
                         label says what the user gets rather than naming one tab. */}
-                    Explore more flags
+                    Learn more
                   </button>
                 )}
               </>
