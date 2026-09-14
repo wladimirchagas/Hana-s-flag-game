@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 72 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 73 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -122,7 +122,8 @@ forgotten; it is tracked here.
 | 🇵🇸 Palestine | `#1399` | 0 → 7 | 128 / 132 (4 independents) | **Absent entirely; the Prime Minister is an independent, not Fatah as the obvious source says** |
 | 🇶🇦 Qatar | `#1400` | — | — | **Out of scope — law permits no political bodies, and the 2024 referendum abolished Shura Council elections outright** |
 | 🇸🇦 Saudi Arabia | `#1401` | — | — | **Out of scope — the Basic Law bans political parties; the 150-member Consultative Assembly is appointed and wholly non-partisan** |
-| 🇱🇰 Sri Lanka | *(see PR)* | 0 → 12 | 224 / 225 (1 independent) | **Absent entirely; the only file matching the DTNA's acronym is Daimler Truck North America's logo** |
+| 🇱🇰 Sri Lanka | `#1403` | 0 → 12 | 224 / 225 (1 independent) | **Absent entirely; the only file matching the DTNA's acronym is Daimler Truck North America's logo** |
+| 🇸🇾 Syria | *(see PR)* | — | — | **Out of scope for now — the post-Assad Assembly is 205 independents and 5 vacancies; no party holds a seat** |
 
 ---
 
@@ -2806,6 +2807,34 @@ under any of their English, Tamil or Sinhala names).
 **Verified in the running app**: all twelve cards render — seven logos painted, five honest "No free
 image" cards — the NPP alone carries the In-power badge, no console errors.
 
+### 🇸🇾 Syria — audited 2026-09-14 — out of scope for now
+
+**Syria is not in the dataset, and cannot be until a party holds a seat.** The reason is different
+from Qatar's and Saudi Arabia's: nothing is banned here. The chamber simply contains no party.
+
+**PP-371 — the post-Assad Assembly is 205 independents and 5 vacancies.** After the fall of the
+Assad regime on **8 December 2024**, Syria became a unitary presidential republic under a provisional
+government, operating since **13 March 2025** under a Constitutional Declaration, with President
+**Ahmed al-Sharaa** appointing the transitional cabinet. The old People's Assembly was suspended in
+December 2024 and **dissolved on 29 January 2025**; the Ba'ath Party suspended its own work
+indefinitely.
+
+The new 210-seat **People's Assembly** was constituted between **5 October 2025 and 24 May 2026**
+through a temporary electoral-college system — 126 members elected, 14 more in by-elections, and
+**70 appointed directly by the President**. Its published composition is two lines and no party
+appears in either:
+
+> *De jure:* Independent (**205**) · Vacant (**5**)
+
+So there is no seat to attribute to any party, and no `noImageReason` to write for a party that holds
+none — the same outcome as Oman (PP-348) reached by an entirely different route. Entering Syria's
+historic parties with zero seats would be the defect found in Georgia (unseated parties carried as
+seated), and entering the dissolved Ba'athist chamber would be the defect found in Kazakhstan (a
+superseded chamber shown as current).
+
+**Revisit** when Syria's transitional period produces party-affiliated members — this is the entry in
+the whole sweep most likely to change, and it should be re-checked rather than assumed settled.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -3075,7 +3104,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `SS` South Sudan
 - [x] `LK` Sri Lanka — merged
 - [ ] `SD` Sudan
-- [ ] `SY` Syria
+- [x] `SY` Syria — merged (out of scope for now)
 - [ ] `TJ` Tajikistan
 - [ ] `TZ` Tanzania
 - [ ] `TG` Togo
