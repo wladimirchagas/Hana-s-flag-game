@@ -13257,6 +13257,117 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       ]
     }
   ],
+  "TM": [
+    {
+      "id": "TM-TDP",
+      "country": "TM",
+      "shortName": "TDP",
+      "name": "Türkmenistanyň Demokratik Partiýasy",
+      "nameEn": "Democratic Party of Turkmenistan",
+      "logo": "party-logos/tm/tdp.svg",
+      "sha256": "06c18f82b67d248ffe1da8f542dd029b024c32bcc151b7016351e9203a0e9483",
+      "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:TDP_logo.svg",
+      "ideology": [
+        "Turkmen nationalism",
+        "Authoritarianism"
+      ],
+      "ideologyPosition": "other",
+      "positionRaw": "Big tent",
+      "founded": 1991,
+      "leader": "Ata Serdarow",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": true,
+      "timeInPower": "Holds the presidency: Serdar Berdimuhamedow, whose own article records his party as the TDP, has been President of Turkmenistan since 19 March 2022, and the party holds 65 of the Assembly's 125 seats.",
+      "seats": 65,
+      "seatsTotal": 125,
+      "chamberName": "Assembly",
+      "sources": [
+        {
+          "title": "Democratic Party of Turkmenistan — Wikipedia (infobox: founded 16 December 1991; leader Ata Serdarow; big tent, so no left–right position is shown)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Party_of_Turkmenistan"
+        },
+        {
+          "title": "Assembly of Turkmenistan — Wikipedia (composition after the 26 March 2023 election: government Democratic Party 65; supported by the Party of Industrialists and Entrepreneurs 24 and the Agrarian Party 18, plus 18 independents, of 125)",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_Turkmenistan"
+        },
+        {
+          "title": "President of Turkmenistan — Wikipedia, with Serdar Berdimuhamedow (whose own article records his party as the TDP), President since 19 March 2022; Turkmenistan is a presidential republic in which the President heads the government",
+          "url": "https://en.wikipedia.org/wiki/President_of_Turkmenistan"
+        }
+      ]
+    },
+    {
+      "id": "TM-TAP",
+      "country": "TM",
+      "shortName": "TAP",
+      "name": "Türkmenistanyň Senagatçylar we Telekeçiler partiýasy",
+      "nameEn": "Party of Industrialists and Entrepreneurs of Turkmenistan",
+      "logo": "party-logos/tm/tap.png",
+      "sha256": "b3fa03d0dfac0882347fa9fdbbff4da0d8a35fec15a8215d09f38c2bee5a1bcc",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Party_of_Industrialists_and_Entrepreneurs_of_Turkmenistan.png",
+      "licenceNote": "Non-free. Party of Industrialists and Entrepreneurs of Turkmenistan's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Industrialism",
+        "Statism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2012,
+      "leader": "Saparmyrat Owganow",
+      "leaderTitle": "Chairman",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Listed by the Assembly in the group supporting the government rather than in it: the chamber separates the Democratic Party's 65 seats as \"Government\" from the 42 seats of the two parties recorded as supporting it.",
+      "seats": 24,
+      "seatsTotal": 125,
+      "chamberName": "Assembly",
+      "sources": [
+        {
+          "title": "Party of Industrialists and Entrepreneurs of Turkmenistan — Wikipedia (infobox: founded 21 August 2012; Chairman Saparmyrat Owganow; the infobox states no left–right position)",
+          "url": "https://en.wikipedia.org/wiki/Party_of_Industrialists_and_Entrepreneurs_of_Turkmenistan"
+        },
+        {
+          "title": "Assembly of Turkmenistan — Wikipedia (composition after the 26 March 2023 election: government Democratic Party 65; supported by the Party of Industrialists and Entrepreneurs 24 and the Agrarian Party 18, plus 18 independents, of 125)",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_Turkmenistan"
+        }
+      ]
+    },
+    {
+      "id": "TM-TSTP",
+      "country": "TM",
+      "shortName": "TSTP",
+      "name": "Türkmenistanyň agrar partiýasy",
+      "nameEn": "Agrarian Party of Turkmenistan",
+      "logo": "party-logos/tm/tstp.png",
+      "sha256": "9544b8f650d8a9217cbda4b1cccb95b49d6c98811876538342d75d4891a4c27e",
+      "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_the_Agrarian_Party_of_Turkmenistan.png",
+      "licenceNote": "Non-free. Agrarian Party of Turkmenistan's logo is a copyrighted party emblem; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos, football-association crests and passport covers in this repository.",
+      "ideology": [
+        "Agrarianism",
+        "Statism"
+      ],
+      "ideologyPosition": "other",
+      "founded": 2014,
+      "leader": "Rejep Bazarow",
+      "leaderTitle": "Leader",
+      "inPower": true,
+      "inExecutive": false,
+      "timeInPower": "Listed by the Assembly in the group supporting the government rather than in it: the chamber separates the Democratic Party's 65 seats as \"Government\" from the 42 seats of the two parties recorded as supporting it.",
+      "seats": 18,
+      "seatsTotal": 125,
+      "chamberName": "Assembly",
+      "sources": [
+        {
+          "title": "Agrarian Party of Turkmenistan — Wikipedia (infobox: founded 28 September 2014; leader Rejep Bazarow; the infobox states no left–right position)",
+          "url": "https://en.wikipedia.org/wiki/Agrarian_Party_of_Turkmenistan"
+        },
+        {
+          "title": "Assembly of Turkmenistan — Wikipedia (composition after the 26 March 2023 election: government Democratic Party 65; supported by the Party of Industrialists and Entrepreneurs 24 and the Agrarian Party 18, plus 18 independents, of 125)",
+          "url": "https://en.wikipedia.org/wiki/Assembly_of_Turkmenistan"
+        }
+      ]
+    }
+  ],
   "UA": [
     {
       "id": "UA-SN",
