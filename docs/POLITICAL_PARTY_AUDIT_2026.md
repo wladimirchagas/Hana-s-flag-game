@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 76 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 77 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -126,7 +126,8 @@ forgotten; it is tracked here.
 | 🇸🇾 Syria | `#1404` | — | — | **Out of scope for now — the post-Assad Assembly is 205 independents and 5 vacancies; no party holds a seat** |
 | 🇹🇯 Tajikistan | `#1405` | 0 → 5 | **63 / 63** | **Absent entirely; reconciles exactly, and its ruling party's leader has been President since 1994** |
 | 🇹🇲 Turkmenistan | `#1406` | 0 → 3 | 107 / 125 (18 independents) | **Absent entirely; the chamber's own labelling separates the governing party from the two that merely support it** |
-| 🇹🇷 Türkiye | *(see PR)* | 4 → 15 | 579 / 600 (13 independents, 8 vacant) | **The largest staleness in the sweep: the CHP carried 169 seats where the chamber gives it 45, and a 91-seat Main Opposition party was missing entirely** |
+| 🇹🇷 Türkiye | `#1407` | 4 → 15 | 579 / 600 (13 independents, 8 vacant) | **The largest staleness in the sweep: the CHP carried 169 seats where the chamber gives it 45, and a 91-seat Main Opposition party was missing entirely** |
+| 🇦🇪 United Arab Emirates | *(see PR)* | **3 → 0** | — | **🚨 Three FABRICATED parties removed — invented names, leaders, seats and a cited source that does not exist. Out of scope: the UAE permits no parties** |
 
 ---
 
@@ -2931,6 +2932,54 @@ carries no `leader` and says why — the Maldives discipline (PP-337).
 "Hold executive power" and "Hold legislative power" while the MHP, HÜDA PAR and DSP show only the
 legislative badge; no console errors.
 
+### 🇦🇪 United Arab Emirates — audited 2026-09-14 — THREE FABRICATED PARTIES REMOVED
+
+**This is the most serious data defect the sweep has found.** It is not staleness, a wrong seat count
+or a mis-sourced leader: the dataset carried **three political parties that do not exist**, with
+invented leaders, invented founding years, invented ideologies and invented seat counts, citing a
+source that does not exist. They shipped to production.
+
+**PP-383 — what was in the dataset, and why every part of it is false.**
+
+| entry | seats | "leader" | "founded" |
+|---|---|---|---|
+| UAE National Awakening | 8 | Noura Al Kaabi | 2011 |
+| People of Determination | 6 | Mariam Al Mansoori | 2015 |
+| Emirati Awwal | 5 | Amal Al Qubaisi | 2019 |
+
+Three independent checks, each fatal on its own:
+
+1. **None of the three parties exists.** No English Wikipedia article, no Wikidata item, no Commons
+   presence. Searching each name returns unrelated results — an oil company, a secondary school, the
+   article on self-determination. "**People of Determination**" is not a party at all: it is the
+   UAE's official term for people with disabilities.
+2. **The cited source does not exist.** All three entries cited exactly one source, *"2023 United
+   Arab Emirates Federal National Council elections"*. There is no such article. This is the
+   fabricated-citation pattern of rule 5a — the same failure that produced 101 saved error pages
+   as logos — reaching the `sources` field rather than `logoSourceUrl`.
+3. **The UAE has no political parties to carry.** The **Federal National Council**'s own published
+   composition is a single line — **Independent (40)** of 40. Twenty members are elected by an
+   electoral college and twenty appointed by the emirates' rulers, none under a party label. The
+   country's only organised party, **Al Islah**, has been federally banned since **2011** and
+   designated a terrorist group since **2014**.
+
+**All three entries are deleted, and the UAE is out of scope** on the Qatar/Saudi Arabia grounds. The
+Learn-mode Political parties tab no longer appears for the UAE, which is correct.
+
+**PP-384 — the near-miss that should have caught it earlier, and why it did not.** The 2026-09-12
+cross-country logo audit *did* touch these three entries: it found their bundled "logos" were saved
+Wikimedia error pages and replaced them with a `noImageReason`. One of those reasons even records the
+doubt — "the United Arab Emirates permits no political parties, so this entry's own identity is
+questionable and is flagged for the UAE's country audit". But that pass was scoped to images, so it
+fixed the picture and left the fabricated party standing, with a carefully-worded explanation of why
+it had no emblem. **A well-sourced account of a missing image on an entry that should not exist is
+worse than a broken image**, because it reads as diligence. The lesson for the rest of the sweep: when
+a logo cannot be found *and the country is one where parties are illegal*, question the entry before
+writing its `noImageReason`.
+
+**Verified in the running app**: the UAE's Learn page now shows National symbols, Sub-national
+divisions, Capital cities and Hierarchy — and no Political parties tab. No console errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -3210,7 +3259,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [x] `TM` Turkmenistan — merged
 - [ ] `TV` Tuvalu
 - [ ] `UG` Uganda
-- [ ] `AE` United Arab Emirates
+- [x] `AE` United Arab Emirates — merged (fabrications removed; out of scope)
 - [ ] `UZ` Uzbekistan
 - [ ] `VU` Vanuatu
 - [ ] `YE` Yemen
