@@ -1,6 +1,6 @@
 # Learn factual audit — evidence and remediation register
 
-Last updated: 2026-09-13. **Open audit; this is not a certification of complete or 100% accuracy.** Confirmed defects below are actionable; unverified leads are explicitly separated. No application data, artwork, or hard rules have been changed by this audit.
+Last updated: 2026-09-14. **Finalized evidence report for the baseline below; not a certification of universal or 100% accuracy.** Confirmed defects below are actionable; unverified leads are explicitly separated. No application data, artwork, or hard rules have been changed by this audit.
 
 ## Scope, baseline and reproducibility
 
@@ -8,9 +8,9 @@ Repository: `wladimirchagas/Hana-s-flag-game`. Baseline commit: [`8b2167aef864e6
 
 Inventory: 7,656 Git tree entries; source, generators, existing audit documents, Learn components and data pipelines examined. Parsed national-symbol registry: 230 country/territory groups and 1,837 entries; 211 passport entries. Political-party registry: 97 groups and 792 entries. Subdivision metadata: 204 groups and 4,182 division rows. These are inventory counts, **not counts of independently verified facts**. Country/territory groups must not be equated with sovereign-state counts.
 
-Live observations recorded: country selector/grid, country details, passport display, and anthem embed. Equatorial Guinea and Japan were specifically inspected. Most images have not yet been individually visually compared against original authoritative exemplars. Six subdivision GeoJSON files were parsed directly (VN, AO, BI, ID, NP, NO); their feature counts are recorded below. All 21 historical GeoJSON files were subsequently parsed for feature properties and precision metadata. Historical geometry has not yet received a polygon-by-polygon source comparison.
+Live observations included country selection/details, passport display, anthem embed and Vietnam subdivision navigation. All 195 current national flag SVGs were rendered and visually screened, with targeted enlarged comparisons. All 251 subdivision GeoJSON files and all 21 historical GeoJSON files were parsed. Individual authoritative comparison of every symbol and boundary has not been completed; precise coverage and limitations are recorded at the end and in the companion ledger.
 
-All repository paths below refer to the fixed baseline, not whichever revision happens to be on main when this report is read. Quoted strings are searchable anchors; line numbers can move. External sources were consulted on 2026-09-13. Government material is authoritative for that government's law, issuance and claims; it does not by itself adjudicate contested sovereignty. Scholarly reconstruction, legal designation, actual control and international recognition require separate treatment.
+All repository paths below refer to the fixed baseline, not whichever revision happens to be on main when this report is read. Quoted strings are searchable anchors; line numbers can move. External sources were consulted on 2026-09-13 and 2026-09-14. Government material is authoritative for that government's law, issuance and claims; it does not by itself adjudicate contested sovereignty. Scholarly reconstruction, legal designation, actual control and international recognition require separate treatment.
 
 ## Findings at a glance
 
@@ -38,6 +38,26 @@ Priority P1 means misleading core learning content or a systemic data defect. P2
 | F18 | P2 | Confirmed taxonomy risk | Administrative metadata mixes obsolete units, geographical regions and unlike administrative levels. |
 | F19 | P2 | Confirmed repository error; live reachability unproven | The 2000 BCE override registry includes Hammurabi-era Babylon centuries too early. |
 | F20 | P2 | Confirmed internal inconsistency | Iraq's 1960 record points to a 1959 flag asset but describes the displayed flag as the old royal flag. |
+
+| F21 | P1 | Confirmed image/code | Kyrgyzstan current asset still has pre-revision wavy sun rays. |
+| F22 | P1 | Confirmed | Burundi retains the old provincial system. |
+| F23 | P1 | Confirmed | Indonesia retains 33 provinces instead of 38. |
+| F24 | P1 | Confirmed | Nepal presents former zones as the current subdivision layer. |
+| F25 | P1 | Confirmed | Norway current layer contains obsolete counties. |
+| F26 | P1 | Confirmed | Kazakhstan omits current first-level units. |
+| F27 | P1 | Confirmed reform | Burkina Faso province layer predates the 2025 reorganization. |
+| F28 | P1 | Confirmed | Mali retains the old regional configuration. |
+| F29 | P2 | Confirmed | South Africa omits SASL. |
+| F30 | P2 | Confirmed | Algeria omits Tamazight. |
+| F31 | P2 | Confirmed precision defect | Azerbaijan mixes Russian into its official-language field. |
+| F32 | P2 | Confirmed precision defect | Switzerland substitutes Swiss German for German. |
+| F33 | P2 | Confirmed omission | Bolivia stores only four of its constitutionally official languages. |
+| F34 | P2 | Confirmed omission | Sierra Leone omits SLE and retains old-code-only currency data. |
+| F35 | P2 | Confirmed image/prose conflict | Socialist Bosnia canton colours are reversed in prose. |
+| F36 | P2 | Confirmed internal contradiction | Cuban arms chronology conflicts between records. |
+| F37 | P1 | Confirmed registry collision | Mali/Somalia select the identical anthem segment; Oman/Romania also collide. |
+| F38 | P2 | Confirmed source coverage | Explanation source arrays frequently lack primary support; Grokipedia/Fandom cited. |
+| F39 | P1 | Confirmed implementation/documentation | Authoritative-bundle rules and API precedence undermine factual corrections. |
 
 ## Detailed evidence and recommended corrections
 
@@ -143,27 +163,22 @@ Direct file counts: VN 63, AO 18, BI 17, ID 33, NP 14, NO 21 GeoJSON features. T
 
 Use a typed entity register: sovereign state, dependency, administrative division, autonomous entity, statistical region, disputed area, traditional region and historical unit. Give each legal/operational validity intervals and parent relationships. An ISO-like code is an identifier, not proof of current boundaries or official status. Resolve code/name/geometry mismatches before attaching a flag or demographic value to an entity.
 
-## Unresolved leads — do not present as verified corrections yet
+## Residual evidence gaps — not verified corrections
 
-These are recorded to prevent loss across sessions. Repository observations are real; proposed present-day replacements still require exact primary citations and temporal checks.
+Earlier leads for Burundi, Indonesia, Nepal, Norway, Kazakhstan, Burkina Faso, Mali and five language records were resolved into F22–F33. Their exact replacement geometry and some legal commencement/version details remain implementation research requirements, as stated in those findings.
 
-| Area | Repository observation | Required next evidence |
-|---|---|---|
-| Burundi | 17 metadata rows/features, older provincial system | Obtain the exact 2023 organic law and operational transition evidence for the five-province system; reconcile former Rumonge omission. |
-| Indonesia | 33 province rows/features | Official 38-province register and laws/geometry for North Kalimantan and Papua successors; check Jakarta's legal/operational status separately. |
-| Nepal | 14 former zones, including questionable name mapping | Constitution Schedule 4, current seven-province names/capitals and official geometry; preserve zones only historically. |
-| Norway | Old county names and external territories mixed; 22 metadata rows vs 21 features | Current 15-county official register and 2024 reforms; reconcile county vs territory categories. |
-| Ethiopia | Older configuration retaining SNNPR | Official instruments for Southwest, Central and South Ethiopia and current federal-city treatment. |
-| Kazakhstan | Older configuration and Nur-Sultan naming | Official 2022 regional reforms, current Astana designation and cities of republican significance. |
-| Burkina Faso, Mali, Chad | Older administrative configurations | Exact reform laws, effective/operational dates, names, hierarchy and official boundaries; do not assume remembered counts. |
-| Philippines | Mixed province/city rows; old Maguindanao configuration | PSA PSGC edition and implementation dates; distinguish provinces and independent/highly urbanized cities. |
-| Cuba | CUC retained alongside CUP | Banco Central monetary-unification instruments and historical end dates. |
-| South Africa | Eleven-language list excludes SASL | Exact constitutional amendment and current official-language list. |
-| Austria, Switzerland, Azerbaijan, Bolivia, Algeria | Language labels/counts may confuse official language, dialect and widely spoken language | Constitutions and implementing laws in original language; distinguish national, official, regional and working status. |
-| Afghanistan | Republic official-name string combined with de facto flag override | Explicit legal-recognition/control framework, current source dates and separate former-state identity. |
-| Nepal emblem | Date range begins 2008 although an image could embody the 2020 map revision | Inspect exact asset and manifest; establish the specific version and legal adoption date before declaring a mismatch. |
-| Other party leadership | Single-name fields may omit co-chairs | Official leadership pages for each row; never infer from a neighbouring party. |
-| Historical borders documentation | Statements about Iraq 1938, Hejaz 1925 and Vietnam 1954 require checking | Treaty/independence and conquest chronologies; distinguish a documentation error from an actual rendered boundary error. |
+| Area | Remaining evidence needed |
+|---|---|
+| Ethiopia | The registry retains Southern Nations; authenticate current regional/federal-city register, reform instruments and successor geometry. A statistical planning PDF was located but the relevant scanned passage was not visually verified. An official embassy overview found during research itself retained an older count, so an official domain alone is insufficient. |
+| Chad, Philippines | Obtain dated current administrative registers and reform instruments; reconcile province versus independent-city levels, including the Maguindanao successors. |
+| Cuba currency | CUC remains in the bundle. Verify the central bank's monetary-unification and withdrawal/exchange timeline before assigning exact end dates. |
+| Austria, Zimbabwe languages | Austrian bundle uses Austro-Bavarian German; Zimbabwe's 15-item list omits Nambya. Obtain/read the exact current constitutional provisions before treating the proposed corrections and full list as certified. The Austrian RIS article opening repeatedly failed. |
+| Afghanistan | Reconcile republic official-name string and de facto flag under an explicit recognition/control and time framework. Do not equate display choice with recognition. |
+| Nepal emblem | Compare exact artwork against the 2008 and 2020 legal versions before assigning its design date. |
+| Honduras flag shade | Do not automatically flag dark blue using remembered 2022 guidance: search surfaced reports of changed government usage in 2026. Current legal specification, institutional usage and digital colour reference require reconciliation; no confirmed defect is assigned. |
+| Other party leadership | Source current plural leadership and parliamentary membership individually; no extrapolation from the German findings. |
+| Historical coverage | Every era's polity identities, dates, capitals, legal/de facto status, symbols and boundaries still need claim-level source comparison. Investigate Hejaz 1925, Vietnam 1954, remaining bc2000 overrides and the Amorite language assertion. The Iraq 1938 raw-source false positive is explained below. |
+| Anthem recordings | Authenticate every recording and relevant segment; metadata and duplicate IDs alone do not identify the actual sung content. |
 
 Positive control: “Naoero” must not be reflexively changed back to “Nauru” from memory. Current [Australian DFAT country information](https://www.dfat.gov.au/geo/naoero/naoero-country-brief) and the [UN member-state entry](https://www.un.org/en/about-us/member-states/naoero) provide a current-name verification path. This illustrates why a 2026 audit cannot rely on older general knowledge.
 
@@ -180,22 +195,14 @@ Positive control: “Naoero” must not be reflexively changed back to “Nauru�
 9. **Add focused factual regression checks.** Cover the documented defects: missing population method, same-year observations, GQ capital transition, Vietnam dated unit count, SPD co-chairs and SSW coverage. Avoid tests that merely repeat an unverified hard-coded answer as their own authority.
 10. **Make uncertainty readable in Learn.** Show dates next to populations and political membership; label historical reconstruction and passport series. Offer source access near the relevant claim without forcing readers through implementation details.
 
-## Coverage and continuation ledger
+## Companion evidence records
 
-| Stream | Completed in this checkpoint | Still open |
-|---|---|---|
-| Repository inventory | Fixed baseline, full Git tree, source/generator/document review, registry counts | Complete per-asset byte/source inventory |
-| National facts | Targeted current capital/currency precision checks | Every country's names, languages, capital functions, monetary status |
-| National/subnational symbols | Japan live image/prose comparison; passport schema review | Individual authoritative visual/design/date review of all entries, including city and subdivision flags |
-| Administrative geography | All metadata inventoried; six GeoJSON feature counts; VN/AO primary comparison | Every country's dated official register and polygon/source comparison |
-| Population | National/subdivision pipeline and method/date defects traced | Individual census/estimate validation, city extents and historical estimates |
-| Political parties | All 792 source arrays screened; Germany targeted primary checks | Remaining countries' current membership/leadership/ideology/logo review |
-| Historical content | Two dated-summary errors and population evidence model reviewed | Every era's entities, borders, capitals, flags, status and demographic citations |
-| Published Learn | Baseline matched; targeted country/passport/anthem observations | Full device/navigation coverage and all country/era combinations |
+- [Country-by-country coverage ledger](LEARN_AUDIT_COVERAGE_2026-09-14.md): 235 registry-union codes with inventory counts, screening scope and finding IDs.
+- [Machine-readable integrity results](LEARN_AUDIT_INTEGRITY_2026-09-14.json): category counts, provenance domains and affected IDs, anthem collisions, geometry/metadata differences, per-file geometry hashes/counts and coverage rows.
 
-Resume from this ledger, not from an assumption that unlisted countries passed. Country-by-country verification, each historical snapshot and each image remain open. The report establishes substantial confirmed defects and a reproducible remediation path, but **does not satisfy a claim that every country, document, image and boundary has been fully verified**.
+These records preserve the difference between structural checks and primary-source factual verification. The final coverage statement below supersedes earlier checkpoint summaries.
 
-## Historical-map follow-up checkpoint
+## Historical-map inventory and renderer safeguards
 
 All 21 historical GeoJSON files were retrieved by baseline blob SHA and parsed successfully: 5,917 features in total. A feature is not equivalent to a state: disconnected polygons, unnamed land and cultural territories affect these counts. Unnamed features are not automatically missing countries.
 
@@ -235,4 +242,140 @@ The baseline raw 2000 BCE GeoJSON does not have a `NAME: Babylonian Empire` feat
 
 ### F20 — Iraq 1960 image/prose disagreement
 
-The `ad1960` Iraq override in `src/lib/historicalEras.ts` selects `historical-flags/iraq-1959.svg` but its note ends by describing the old royal flag as representing the kingdom that had just ended. This is an internal inconsistency between the designated asset/version and explanation. Verify the asset visually against the 1959 republican design, then replace the stale sentence. Do not change the asset back to a royal flag simply to make it agree with incorrect prose.
+The `ad1960` Iraq override in `src/lib/historicalEras.ts` selects `historical-flags/iraq-1959.svg` but its note ends by describing the old royal flag as representing the kingdom that had just ended. This is an internal inconsistency between the designated asset/version and explanation. The designated asset was subsequently rendered and visually inspected: it has vertical black-white-green bands with the red/yellow central motif, confirming the asset/prose disagreement. Replace the stale sentence after completing the design-source comparison. Do not change the asset back to a royal flag simply to make it agree with incorrect prose.
+
+## Additional confirmed findings from the expanded review
+
+### F21 — Kyrgyzstan's current flag asset still has wavy rays (P1)
+
+`public/flags/kg.svg`, baseline blob `8487dc9e0c9a37f441be1478809bf09e56d23295`, was rendered and visually inspected. It has the former wavy sun rays. Both `kg-official-national` in `src/data/nationalFlags.ts` and `FLAG_MEANINGS.KG` acknowledge the 2023 straightening, but the current national entry still points at this older image. `src/api/countries.ts` also uses that local asset for the main country flag, including on the successful REST response path.
+
+The Kyrgyz national news agency's [23 December 2023 report of the signed law](https://en.archive.kabar.kg/news/sadyr-zhaparov-signs-law-on-changing-flag-of-kyrgyzstan/) explicitly confirms wavy-to-straight rays. Its [8 January 2024 report](https://en.archive.kabar.kg/news/new-flag-raised-on-main-square-of-kyrgyzstan/) records the new flag's raising. These are direct state-agency reports; this audit did not separately inspect the promulgated law's annex or publication-effective-date clause.
+
+Replace the current asset using an authenticated current exemplar and preserve the old design as a dated historical version. Keep original 1992 adoption distinct from the 2023 design revision. Old documents remaining valid does not make the former artwork the current national design.
+
+### F22 — Burundi retains the old provincial system (P1)
+
+`src/lib/subdivisionMeta.ts` and `public/subdivisions/BI.json` each contain 17 old provincial records/features. The Senate's French [3 July 2025 approval of provincial governors](https://senat.bi/approbation-des-candidats-aux-postes-de-gouverneur-de-province/) names the five provinces Buhumuza, Bujumbura, Burunga, Butanyerera and Gitega. This is operational institutional evidence, beyond merely announcing a future reform. The Senate page was retrieved during research; a later repeat opening timed out.
+
+Migrate the current register and boundaries to the five-province framework, using the underlying organic law and official geometry for exact limits. This finding establishes the old system is unsuitable as the current layer; it does not certify every boundary or the precise commencement clause. The older dataset also merits a separate historical completeness check, including Rumonge.
+
+### F23 — Indonesia's province registry predates multiple divisions (P1)
+
+Metadata and `public/subdivisions/ID.json` each contain 33 provinces/features. [ANTARA's 9 December 2022 report](https://en.antaranews.com/news/264759/southwest-papua-officially-becomes-indonesias-38th-province) directly reports the home affairs minister inaugurating Southwest Papua as the 38th province under Law 29/2022. [Statistics Indonesia's provincial export publication](https://www.bps.go.id/en/publication/2025/10/07/023454770c0181db62641ec4/export-of-indonesia-by-province-of-origin-of-goods-2024.html) corroborates coverage of 38 provinces.
+
+Update the omitted provinces and their predecessor extents, codes, capitals and population geography together. Do not treat Jakarta's capital/special-region transition as resolved by the count; its legal and operational status requires a separate dated check.
+
+### F24 — Nepal presents former zones as current subdivisions (P1)
+
+The metadata explicitly calls the layer `Administrative Zones`, with 14 rows, and `public/subdivisions/NP.json` has 14 features. Some row types are also inconsistent, such as Seti Zone typed as District. [Nepal's 2015 Constitution, Article 56 and Schedule 4](https://www.constituteproject.org/constitution/Nepal_2015), establishes the federal structure and seven provinces. The consulted text is a scholarly-hosted translation of the constitutional primary text, not an authenticated current consolidated Nepali gazette.
+
+Provide provinces as the current first-level layer and retain zones only as historical geography. Source current province names, capitals and boundaries separately; the numbered 2015 schedule alone cannot substantiate later province names or later constitutional map revisions.
+
+### F25 — Norway combines obsolete counties with dependencies (P1)
+
+The 22 metadata rows and 21 map features include former counties Nord-Trøndelag, Sør-Trøndelag and Hedmark. The Norwegian government's [county division from 2024](https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/fylkesinndelingen-fra-2024/id2922222/) lists 15 counties from 1 January 2024, including Trøndelag, Innlandet, Vestland and Agder.
+
+This is not simply an assertion that every difference from 15 is an error: the repository deliberately includes dependencies. The confirmed problem is obsolete county identities in the current county layer. Separate dependencies by type and reconcile the actual county register and geometry with the dated official list.
+
+### F26 — Kazakhstan omits current regions and a republican city (P1)
+
+The metadata has 16 rows in an older configuration. The Bureau of National Statistics' [register as of 1 July 2026](https://stat.gov.kz/en/industries/social-statistics/demography/publications/513321/) records 17 regions and three cities of republican significance. It expressly includes Abay, Zhetysu and Ulytau, and lists Astana, Almaty and Shymkent separately.
+
+Update the typed first-level register and affected geometry, rather than treating all 20 as identically constituted regions. The statistical register is not a complete treatment of Baikonur's special treaty arrangements; do not infer its legal status merely from a row count.
+
+### F27 — Burkina Faso's province layer misses the 2025 reform (P1)
+
+The metadata retains 45 provinces. The Presidency's French [Council of Ministers communiqué of 2 July 2025](https://www.presidencedufaso.bf/conseil-des-ministres-du-2-juillet-2025/) states the reorganization to 17 regions and 47 provinces, names the two new provinces Dyamongou and Karo-Peli, and records a six-month implementation transition. It also reports renamings, including Sanmatenga to Sandbondtenga and Oubritenga to Bassitenga.
+
+Obtain the implementing instruments and official geometry, then migrate names, hierarchy and boundaries together. The communiqué supports the reform and transition; this audit did not separately verify every gazette commencement date or operational boundary.
+
+### F28 — Mali retains an obsolete regional configuration (P1)
+
+The metadata contains nine rows, including the `ML-3` label Wassoulou in the position requiring reconciliation with Sikasso. The Presidency's French [19 May 2023 presentation of the new administrative maps](https://koulouba.ml/reorganisation-administrative-et-territoriale-remise-de-la-nouvelle-carte-administrative-du-mali-celles-des-19-regions-et-celle-du-district-de-bamako-au-chef-de-letat/) explicitly describes 19 regions and the District of Bamako and refers to instruments promulgated on 13 March 2023.
+
+Replace the present-time register and map with the dated legal configuration. Actual government control and conflict geography are separate layers; an official administrative division does not establish effective control throughout its territory.
+
+### F29 — South Africa omits its twelfth official language (P2)
+
+`src/data/countryFacts.ts`, ZA, lists eleven languages and omits South African Sign Language. The constitutional CRL Rights Commission's [20 July 2023 statement](https://www.crlcommission.org.za/the-recognition-of-the-south-african-sign-language-as-the-countrys-12th-official-language/) confirms the amendment was signed into law. Add SASL and date the language status; a pre-signing announcement would not alone have established enactment.
+
+### F30 — Algeria omits Tamazight's official status (P2)
+
+`COUNTRY_FACTS.DZ.languages` contains only Arabic. The official gazette's French [constitutional text](https://www.joradp.dz/TRV/FConsti.pdf), Article 4, printed page 7 (PDF page index 3), recognizes Tamazight as both national and official. Add the missing language. Older government translations that describe only national status must not override the later constitutional text.
+
+### F31 — Azerbaijan's official-language field includes Russian (P2)
+
+`COUNTRY_FACTS.AZ.languages` contains Azerbaijani and Russian. The file header defines this as official languages. [Article 21 of the Constitution on the Presidency's website](https://president.az/en/pages/view/azerbaijan/constitution) designates Azerbaijani as the state language and separately protects other languages. Russian's use by residents does not give it the same constitutional designation.
+
+Keep spoken-language information if wanted, but assign its correct status. The live label merely saying “Languages” does not repair the ambiguity of the underlying official-language contract.
+
+### F32 — Switzerland substitutes a dialect umbrella for German (P2)
+
+`COUNTRY_FACTS.CH.languages` lists Swiss German alongside French, Italian and Romansh. The Federal Department of Foreign Affairs' German [language overview](https://www.aboutswitzerland.eda.admin.ch/de/sprachen) names German among the four national languages and explicitly distinguishes Schweizerdeutsch from Hochdeutsch.
+
+Use German for the national-language identity and explain Swiss German dialects separately. Model national versus federal/regional official status rather than assuming every listed language has identical official use. The precise federal Romansh qualification should be sourced to the applicable constitutional provision before implementing that richer model; the general overview alone is not that legal analysis.
+
+### F33 — Bolivia's official-language list is severely incomplete (P2)
+
+`COUNTRY_FACTS.BO.languages` contains Aymara, Guaraní, Quechua and Spanish. [Article 5 of the 2009 Constitution](https://www.constituteproject.org/constitution/Bolivia_2009) lists Spanish and 36 indigenous languages as official. The consulted edition is a scholarly-hosted constitutional translation.
+
+Provide the complete legal list with source spelling, while distinguishing legal recognition from population prevalence and actual government-language requirements. A short UI preview is acceptable if it is explicitly a preview of complete data; silently storing four as the entire official list is not.
+
+### F34 — Sierra Leone's currency record omits the redenominated leone (P2)
+
+`COUNTRY_FACTS.SL.currencies` contains only SLL. The ISO 4217 maintenance agency's [Amendment 175, 31 March 2023](https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/amendments/dl-currency-iso-amendment-175.pdf), identifies the redenominated leone as SLE/925 and transmits the Bank of Sierra Leone's notice.
+
+Add SLE with the correct denomination/version relationship and retire the unqualified old-code-only current display. This citation establishes the omitted unit/code; the audit has not separately established the entire old-note withdrawal and exchange timeline from the embedded notice. Do not infer that code replacement and loss of exchangeability happen on the same date.
+
+### F35 — Socialist Bosnia's flag explanation reverses canton colours (P2)
+
+`NATIONAL_FLAG_MEANINGS["ba-sr"]`, in `src/data/nationalFlags.ts`, describes a Yugoslav red-white-blue canton. The linked `public/national-flags/ba/bosnia-sr.svg` was rendered and inspected: its canton is blue-white-red. This is a directly established image/prose contradiction. Correct the stripe order and independently review the accompanying absolute assertion that socialist Bosnia never adopted symbols of its own. The cited Fandom page is not adequate authority for that broad historical interpretation.
+
+### F36 — Cuba's arms chronology contradicts itself (P2)
+
+`NATIONAL_FLAG_MEANINGS["cu-president"]` says the arms in that form were adopted after the 1959 revolution, while `cu-arms` in the same file dates the current arms to 1906. The presidential explanation cites only Grokipedia. These incompatible historical claims require correction and an authenticated version history.
+
+The confirmed finding is the internal chronological conflict and unsupported attribution, not a certification that the repository's 1906 date proves every detail in the current drawing existed unchanged in 1906. Consult the original symbol instruments and distinguish original adoption, subsequent regulation and artistic redraw. Do not repair the contradiction by arbitrarily making both dates match.
+
+### F37 — More anthem records collide on the same playback segment (P1)
+
+The complete `NATIONAL_ANTHEMS` duplicate-ID scan found Mali and Somalia both use `kmPAA6zJl80` at exactly 4.2 seconds despite different anthem identities. The same recording segment cannot be an independently correct rendering of both distinct anthems. Oman and Romania also share `3RCp9Y14ktg`, at 10.3 and 11.3 seconds, warranting direct playback authentication. These are registry findings; this audit did not listen to and identify every track.
+
+Cyprus and Greece also share an ID and offset, but shared-anthem identity makes duplication legitimate there; do not automatically reject every duplicate. Require an explicit shared-anthem or compilation-segment explanation and verify audio, not only video titles. F08 separately documents the live Guinea/Equatorial Guinea routing problem.
+
+### F38 — Explanatory sourcing falls short of the repository's verification language (P2)
+
+All explanation source arrays were screened. Wikipedia-only arrays occur in 1,130 of 1,416 `FLAG_MEANINGS` entries, 1,061 of 1,602 `NATIONAL_FLAG_MEANINGS` entries, and 503 of 1,012 `CITY_FLAG_MEANINGS` entries. The national-symbol explanation registry has eight rows citing Grokipedia and four citing Fandom; `FLAG_MEANINGS` has twelve Fandom-citing rows. These are source-array counts, not counts of false explanations.
+
+The exact Grokipedia-citing IDs are `cu-president`, `de-navy`, `es-1938`, `ma-royal`, `mx-1893`, `no-war-flag`, `us-army` and `ve-president`. The national-symbol Fandom IDs are `ba-sr`, `kh-royal-standard`, `my-agong` and `np-1856`. All affected IDs and URLs are preserved in the companion integrity JSON.
+
+Do not treat an encyclopedia, generated encyclopedia, fan wiki or a valid URL as proof of an authoritative claim. Prioritize legal design specifications, issuing authorities, archives and attributed specialist research. Wikipedia/FOTW can remain useful discovery or attributed secondary evidence, but each claim needs an evidence state. Lack of primary evidence should not be repaired by inventing symbolism or treating silence as proof of nonexistence.
+
+### F39 — The “authoritative bundle” rule can preserve and reintroduce errors (P1, implementation/documentation)
+
+`src/data/countryFacts.ts` calls the mledoze/countries-derived bundle authoritative. `CLAUDE.md` instructs capital reconciliation to prefer `COUNTRY_FACTS.capital`. Yet F01, F15 and F29–F34 establish defects or inadequacies in that very bundle. Meanwhile `src/api/countries.ts` prefers nonempty REST language/currency/name values over the bundled fields when the API succeeds. Editing a fallback file alone therefore does not reliably fix user-visible information.
+
+Treat the aggregator as an upstream dataset, not the ultimate factual authority. Introduce source-backed, dated field overrides applied consistently after both successful API normalization and offline fallback. Regeneration must preserve them. Revise documentation so completeness does not forbid replacing a known false value with a qualified or unknown value. Preserve offline availability while making accuracy and provenance explicit.
+
+## Final coverage, audit opinion and remediation order
+
+**Audit opinion: the reviewed baseline is not reliable enough to support a blanket “100% accurate” Learn claim.** This report contains 39 numbered findings: specific factual errors, internal contradictions, stale records and systemic evidence/model defects. They are not 39 invented countries, 39 independently measured failure rates, or proof of deliberate fabrication. A confirmed error in one field does not invalidate every field for that country.
+
+Completed coverage comprises a full repository tree inventory; structural/provenance screening of the national-symbol, party and administrative registries; parsing of all 251 subdivision GeoJSON files (4,365 features); parsing of all 21 historical GeoJSON files (5,917 features); visual identity screening of all 195 current national flag SVGs; targeted enlarged image comparisons; population/API/generator and relevant hard-rule review; and targeted interaction with the published Learn experience. Primary-source comparisons resolved the specific countries and claims identified above, using sources in Spanish, Portuguese, Vietnamese, French, Norwegian and German as well as English official reports and constitutional translations.
+
+The 1,837 national-symbol entries include 239 official, 222 coat-of-arms, 211 passport, 212 football-crest, 526 historical, 166 military, 113 maritime, 126 standard, 16 civil/state and 6 indigenous entries. The category counts exceed the number of countries because multiple versions and uses exist. No duplicate symbol IDs, missing referenced local symbol paths, or reversed numeric `from`/`to` intervals were found. Those checks establish structural consistency, not historical or artistic authenticity.
+
+All subdivision geometry files passed the implemented coordinate-range and ring-closure checks. This is **not** a topology, self-intersection, overlap, legal-border or upstream-transformation certification. Raw metadata/geometry code sets differ for 40 countries/groups; the companion JSON records each difference. Deliberate dependency merges, disputed-area handling and runtime aliases can explain differences, so the 40 are review targets, not 40 confirmed broken maps.
+
+All 195 national flag SVGs were rendered into labelled contact sheets and visually screened for coarse identity/design. Kyrgyzstan was enlarged to confirm the ray mismatch. This screening does not certify tiny heraldic details, exact legal colours, star counts, precise construction sheets or every permitted usage variant. The 222 coat-of-arms entries, 211 passports, 526 historical national-symbol entries and all subnational/city images did **not** each receive a complete authoritative visual comparison. The report does not imply otherwise.
+
+No later-than-2026 subdivision population year was found. Six zero-population records require contextual interpretation (including uninhabited or evacuated territories); zero was not automatically reported as an error. The 5,281 population records have not each been matched to their original census or estimate publication. All 792 party source arrays were screened, but current membership and leadership were not individually authenticated in every one of the 97 groups.
+
+The country coverage ledger covers 235 codes in the union of the facts, national-symbol, subdivision-metadata and party registries. It is not a list of 235 sovereign states. Every row records actual screening scope and targeted findings. Additional geometry-only files remain covered by the separate 251-file inventory. No country is labelled fully factually certified merely because it has no finding.
+
+Published interaction confirmed the GQ/Japan problems and the obsolete Vietnam subdivision experience. The later inspected deployment footer reported `b337fc5`, build `2026-09-13T23:51:13.160Z`; the intervening known commits only changed this audit document. The code findings remain tied to baseline `8b2167aef864e61aaa2051ed714ce391f2ff1023`. Live API values and third-party media can subsequently change; targeted observations are not an exhaustive replay of all country/era/device combinations.
+
+**Recommended order:** first correct the current flag, false passport explanation, stale administrative layers, capital/currency errors and anthem routing; then implement dated provenance and consistent override application; then authenticate the remaining artwork, historical reconstructions and political/demographic claims using the ledger. Keep factual corrections in reviewable migrations with their citations and dependent-record updates. This audit changes only documentation and evidence artifacts.
+
+The audit deliverable is finalized for the stated baseline and evidence obtained. **The user's requested universal, claim-by-claim 100% verification has not been achieved.** The explicit limitations and unresolved items are part of the result, not a claim that unexamined content passed. A complete certification would require individual source comparisons for the remaining claims, images and boundaries recorded in the ledger.
