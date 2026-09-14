@@ -47,7 +47,7 @@ forgotten; it is tracked here.
 
 ## Progress
 
-**Countries audited: 75 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+**Countries audited: 76 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|
@@ -125,7 +125,8 @@ forgotten; it is tracked here.
 | 🇱🇰 Sri Lanka | `#1403` | 0 → 12 | 224 / 225 (1 independent) | **Absent entirely; the only file matching the DTNA's acronym is Daimler Truck North America's logo** |
 | 🇸🇾 Syria | `#1404` | — | — | **Out of scope for now — the post-Assad Assembly is 205 independents and 5 vacancies; no party holds a seat** |
 | 🇹🇯 Tajikistan | `#1405` | 0 → 5 | **63 / 63** | **Absent entirely; reconciles exactly, and its ruling party's leader has been President since 1994** |
-| 🇹🇲 Turkmenistan | *(see PR)* | 0 → 3 | 107 / 125 (18 independents) | **Absent entirely; the chamber's own labelling separates the governing party from the two that merely support it** |
+| 🇹🇲 Turkmenistan | `#1406` | 0 → 3 | 107 / 125 (18 independents) | **Absent entirely; the chamber's own labelling separates the governing party from the two that merely support it** |
+| 🇹🇷 Türkiye | *(see PR)* | 4 → 15 | 579 / 600 (13 independents, 8 vacant) | **The largest staleness in the sweep: the CHP carried 169 seats where the chamber gives it 45, and a 91-seat Main Opposition party was missing entirely** |
 
 ---
 
@@ -2882,6 +2883,54 @@ that produced Palestine's wrong premiership attribution (PP-360).
 
 **Verified in the running app**: all three cards paint their logos, no console errors.
 
+### 🇹🇷 Türkiye — audited 2026-09-14
+
+**This is the largest staleness the sweep has found.** Türkiye was in the dataset with **four**
+parties, and the four were not merely out of date — they described a party system that no longer
+exists. Rewritten in full: **4 → 15** entries, covering **579** of the 600-seat **Grand National
+Assembly**; the remainder is 13 independents and 8 vacancies.
+
+**PP-376 — the main opposition party was missing, and the party the data called the opposition has
+lost three-quarters of its bench.** The old entry gave the **CHP 169 seats**. The chamber now records
+**44** for it (45 counting one deputy sitting in the New Path group). In its place, as the Assembly's
+**Main Opposition**, sits the **YENİ Party on 91 seats** — a party that did not appear in the dataset
+at all. Roughly **125 seats** moved between the data and reality.
+
+**PP-377 — the cause, sourced.** The **New Party** (YENİ Parti) was founded on **24 July 2026** by
+**Özgür Özel**, following his removal as CHP chairman by a judicial ruling in **May 2026**. It is a
+CHP splinter, social-democratic and Kemalist, and most of the CHP's former parliamentary bench went
+with him. No amount of care about the four existing entries would have surfaced this — only
+re-reading the chamber's current composition did.
+
+**PP-378 — the CHP's leadership entry was a bare surname over a contested office.** The old entry
+said `"Kılıçdaroğlu"`. The party's infobox records **"Kemal Kılıçdaroğlu (acting, appointed)"** — the
+right person, but holding the post on an acting, appointed basis after the same judicial ruling. The
+new entry gives the full name, the title **Acting Leader**, and the circumstance in its source line.
+
+**PP-379 — a wrong founding year.** The old DEM Party entry said **2024**; the Peoples' Equality and
+Democracy Party was founded **15 October 2023**.
+
+**PP-380 — `inExecutive` was never set, and the chamber distinguishes three levels.** The composition
+separates **Government (280)** — the AK Party, forming the 67th cabinet under President Erdoğan, who
+is also its leader — from a **"Supported by" (51)** group holding the **MHP** (46), **HÜDA PAR** (4)
+and **DSP** (1). Those three take `inPower` without `inExecutive`; the eleven opposition parties take
+neither. The running app renders the distinction as separate "Hold executive power" and "Hold
+legislative power" badges.
+
+**PP-381 — three parties have deputies split across parliamentary groups, and each entry totals the
+party.** The CHP (44 + 1), SAADET (8 + 1) and YRP (3 + 1) each have a deputy sitting inside the
+**New Path** group rather than with their own party. Every entry carries the party's own total
+wherever its deputies sit, with the split stated in its source line — the alternative would have
+understated three parties to match a group label.
+
+**PP-382 — TİP ships with no leader.** The Workers' Party of Turkey's infobox names only a
+vice-president, Doğan Ergün, not the party's chair. Rather than promote a vice-president, the entry
+carries no `leader` and says why — the Maldives discipline (PP-337).
+
+**Verified in the running app**: all fifteen cards paint their logos; the AK Party shows both
+"Hold executive power" and "Hold legislative power" while the MHP, HÜDA PAR and DSP show only the
+legislative badge; no console errors.
+
 ### 🌍 Cross-country: 104 party logos were not images at all — 2026-09-12
 
 Found while auditing Ireland, whose three logo files turned out to be Wikimedia error pages
@@ -3022,7 +3071,7 @@ Tick a box only when that country's fix is **merged and live**.
 - [ ] `ME` Montenegro
 - [ ] `MK` North Macedonia
 - [ ] `AL` Albania
-- [ ] `TR` Türkiye
+- [x] `TR` Türkiye — merged
 - [ ] `UA` Ukraine
 - [ ] `BY` Belarus
 - [ ] `MD` Moldova
