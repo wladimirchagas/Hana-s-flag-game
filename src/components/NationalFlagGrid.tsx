@@ -3,6 +3,8 @@ import { AutoFitName } from "./AutoFitName";
 import { NATIONAL_FLAGS, type NationalFlag, type NationalFlagCategory } from "../data/nationalFlags";
 import { flagYearLabel } from "../lib/nationalFlags";
 import { ENTITY_STATUS_LABEL, specialEntitiesOf, type SpecialEntity } from "../lib/specialEntities";
+import { airlinesForCountry } from "../lib/commercialAirlines";
+import type { CommercialAirline } from "../types/airline";
 import { GridImage } from "./GridImage";
 
 /**
@@ -104,16 +106,21 @@ type Props = {
   countryName: string;
   /** id of the flag whose widget is open (if any). */
   selectedFlagId: string | null;
+  /** id of the commercial airline whose widget is open (if any). */
+  selectedAirlineId?: string | null;
   baseUrl: string;
   onSelect: (flag: NationalFlag) => void;
+  onSelectAirline?: (airline: CommercialAirline) => void;
 };
 
 export function NationalFlagGrid({
   countryCode,
   countryName,
   selectedFlagId,
+  selectedAirlineId,
   baseUrl,
   onSelect,
+  onSelectAirline,
 }: Props) {
   const countryGroups = useMemo(
     () => groupFlags(NATIONAL_FLAGS[countryCode] ?? []),
@@ -126,8 +133,9 @@ export function NationalFlagGrid({
         .filter((s) => s.groups.length > 0),
     [countryCode],
   );
+  const airlines = useMemo(() => airlinesForCountry(countryCode), [countryCode]);
 
-  if (countryGroups.length === 0 && entitySections.length === 0) {
+  if (countryGroups.length === 0 && entitySections.length === 0 && airlines.length === 0) {
     return (
       <p className="flag-grid__no-match">
         No sourced national flags are available for {countryName} yet.
@@ -152,6 +160,56 @@ export function NationalFlagGrid({
         baseUrl={baseUrl}
         onSelect={onSelect}
       />
+
+      {airlines.length > 0 && (
+        <div className="flag-grid__groups">
+          <div className="flag-grid__group">
+            <h4 className="flag-grid__group-heading">
+              <span className="flag-grid__group-name">Commercial airlines</span>
+              <span className="flag-grid__group-count">({airlines.length})</span>
+            </h4>
+            <ul className="flag-grid__list">
+              {airlines.map((airline) => {
+                const active = airline.id === selectedAirlineId;
+                const logoUrl = airline.logo ? `${baseUrl}${airline.logo}` : null;
+                return (
+                  <li key={airline.id} className="flag-grid__item">
+                    <button
+                      type="button"
+                      className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
+                      onClick={() => onSelectAirline?.(airline)}
+                      aria-pressed={active}
+                      aria-label={`Show ${airline.name} (${airline.iata})`}
+                    >
+                      <span className="flag-grid__thumb">
+                        {logoUrl ? (
+                          <GridImage
+                            src={logoUrl}
+                            alt=""
+                            draggable={false}
+                            className="flag-grid__thumb-img"
+                            onError={(e) => { e.currentTarget.style.display = "none"; }}
+                          />
+                        ) : (
+                          <span className="flag-grid__no-image" aria-hidden="true">
+                            No logo
+                          </span>
+                        )}
+                      </span>
+                      <span className="flag-grid__name">
+                        <AutoFitName className="flag-grid__name-text" text={airline.name} />
+                        <span className="flag-grid__flag-sub">
+                          {airline.iata} · Founded {airline.founded}
+                        </span>
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      )}
 
       {entitySections.map(({ entity, groups }) => (
         <section key={entity.code} className="flag-grid__entity">

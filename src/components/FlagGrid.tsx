@@ -46,6 +46,7 @@ import {
 import { subnationalFootballCrests } from "../lib/nationalSymbolImages";
 import { NON_FIFA_GRID_CODES, fifaExtraCrests } from "../lib/fifaAssociations";
 import { MENS_WORLD_CUP_TITLES, WOMENS_WORLD_CUP_TITLES } from "../data/worldCupTitles";
+import { allCommercialAirlines } from "../lib/commercialAirlines";
 import { GridImage } from "./GridImage";
 
 /**
@@ -69,8 +70,8 @@ export type FlagGridProps = {
   selectedId: string | null;
   /** Select a grid card. `id` is the country to select (a home-nation / entity
    *  crest card passes its PARENT country); `crestId` is the specific football
-   *  crest that was clicked, when the card is one (so the panel can show it). */
-  onSelect: (id: string, crestId?: string) => void;
+   *  crest that was clicked; `airlineId` is the specific commercial airline. */
+  onSelect: (id: string, crestId?: string, airlineId?: string) => void;
   /** Optional resolver to prepend the BASE_URL to relative flag paths so
    *  the grid can render flags identically to the panel. */
   resolveFlag: (raw: string) => string;
@@ -78,10 +79,12 @@ export type FlagGridProps = {
    *  TODAY_ONLY_MODES are hidden from the dropdown for historical eras. */
   isModernEra?: boolean;
   /** Which image the tiles show — controlled by the parent (LearnPage) so the
-   *  detail panel above can show the same coat of arms / passport. */
+   *  detail panel above can show the same coat of arms / passport / airline. */
   contentType: GridContentType;
   /** Called when the user picks a different image type from the "Show" dropdown. */
   onContentTypeChange: (type: GridContentType) => void;
+  /** Currently selected commercial airline ID (if any) */
+  selectedAirlineId?: string | null;
 };
 
 type GroupMode =
@@ -97,7 +100,8 @@ type GroupMode =
   | "aspect-ratio"
   | "passport-color"
   | "wc-men"
-  | "wc-women";
+  | "wc-women"
+  | "by-country";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -115,6 +119,8 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   // Football-crests-view only — buckets by FIFA World Cup titles won.
   "wc-men": "FIFA Men's World Cups",
   "wc-women": "FIFA Women's World Cups",
+  // Commercial-airlines-view only — groups airlines by country.
+  "by-country": "By country",
 };
 
 // The chosen grouping is remembered across visits (per the UX revision: the
@@ -157,15 +163,20 @@ const PASSPORT_ONLY_MODES = new Set<GroupMode>(["passport-color"]);
 // FIFA World Cup titles they have won (men's and women's, separately).
 const FOOTBALL_CREST_ONLY_MODES = new Set<GroupMode>(["wc-men", "wc-women"]);
 
+// Modes offered ONLY in the Commercial-airlines view — group by country.
+const AIRLINE_ONLY_MODES = new Set<GroupMode>(["by-country"]);
+
 /** Whether a grouping mode is offered for the given view. The flag-appearance
  *  modes (shape/family/colour/…) describe a FLAG and show only in the modern
- *  flag view; "passport-color" shows only in the Passports view; everything else
- *  (A–Z, continent, sub-continent) applies to any country-level item. */
+ *  flag view; "passport-color" shows only in the Passports view; "by-country"
+ *  shows only in the Airlines view; everything else (A–Z, continent, sub-continent)
+ *  applies to any country-level item. */
 function groupModeAvailableFor(
   m: GroupMode,
   contentType: GridContentType,
   isModernEra: boolean,
 ): boolean {
+  if (AIRLINE_ONLY_MODES.has(m)) return isModernEra && contentType === "airline";
   if (PASSPORT_ONLY_MODES.has(m)) return isModernEra && contentType === "passport";
   if (FOOTBALL_CREST_ONLY_MODES.has(m)) return isModernEra && contentType === "footballcrest";
   if (TODAY_ONLY_MODES.has(m)) return isModernEra && contentType === "flag";
@@ -199,6 +210,7 @@ export function FlagGrid({
   isModernEra = false,
   contentType,
   onContentTypeChange,
+  selectedAirlineId,
 }: FlagGridProps) {
   const [groupMode, setGroupMode] = useState<GroupMode>(loadStoredGroupMode);
   // Free-text filter typed by the user — narrows the grid by country/polity
@@ -249,8 +261,16 @@ export function FlagGrid({
   // Passports view), fall back to "No grouping". Covers both the initial load
   // and later switches, so the active grouping is always one the dropdown offers.
   useEffect(() => {
-    if (!groupModeAvailableFor(groupMode, effectiveContentType, isModernEra)) {
-      setGroupMode("none");
+    if (
+      effectiveContentType === "airline" &&
+      groupMode !== "by-country" &&
+      groupMode !== "alpha" &&
+      groupMode !== "continent" &&
+      groupMode !== "none"
+    ) {
+      setGroupMode("by-country");
+    } else if (!groupModeAvailableFor(groupMode, effectiveContentType, isModernEra)) {
+      setGroupMode(effectiveContentType === "airline" ? "by-country" : "none");
     }
   }, [groupMode, effectiveContentType, isModernEra]);
 
@@ -263,10 +283,25 @@ export function FlagGrid({
   //      per home nation (each sorting by its own name) and selecting the UK on
   //      click (`selectId`);
   //   3. append the non-UN FIFA member associations (Gibraltar, Faroe Islands,
-  //      Hong Kong, the Caribbean/Pacific associations, Kosovo, …), each sorting
-  //      by its own name and selecting its parent country on click.
-  const displayEntries = useMemo(() => {
-    if (effectiveContentType !== "footballcrest") return entries;
+  const displayEntries = useMemo((): FlagListEntry[] => {
+    if (effectiveContentType === "airline") {
+      const codeToEntry = new Map(entries.map((e) => [e.id, e]));
+      return allCommercialAirlines().map((a): FlagListEntry => {
+        const parent = codeToEntry.get(a.countryCode);
+        return {
+          id: a.id,
+          name: a.name,
+          flag: a.logo,
+          airlineLogo: a.logo,
+          airlineId: a.id,
+          countryName: parent ? parent.name : a.countryCode,
+          continent: parent ? parent.continent : "Other",
+          subcontinent: parent ? parent.subcontinent : "Other",
+          selectId: a.countryCode,
+        };
+      });
+    }
+    if (effectiveContentType !== "footballcrest") return [...entries];
     const out: FlagListEntry[] = [];
     for (const e of entries) {
       // The Football-crests grid is FIFA's ~211 members, so hide the game's
@@ -316,7 +351,12 @@ export function FlagGrid({
   const filteredEntries = useMemo(() => {
     const q = normalizeForSearch(filter.trim());
     if (!q) return displayEntries;
-    return displayEntries.filter((e) => normalizeForSearch(e.name).includes(q));
+    return displayEntries.filter(
+      (e) =>
+        normalizeForSearch(e.name).includes(q) ||
+        (e.countryName && normalizeForSearch(e.countryName).includes(q)) ||
+        (e.airlineId && normalizeForSearch(e.airlineId).includes(q)),
+    );
   }, [displayEntries, filter]);
 
   // Build the (heading → entries) groups for the current mode. We always
@@ -338,7 +378,11 @@ export function FlagGrid({
       buckets.set(key, arr);
     };
 
-    if (groupMode === "alpha") {
+    if (groupMode === "by-country") {
+      for (const e of sorted) {
+        push(e.countryName ?? "Other", e);
+      }
+    } else if (groupMode === "alpha") {
       for (const e of sorted) {
         // Bucket by the sort key so the UK's home-nation cards land together
         // under "U" (where the United Kingdom sits), not scattered under E/S/W/N.
@@ -621,7 +665,9 @@ export function FlagGrid({
           )}
           <ul className="flag-grid__list">
             {g.items.map((item) => {
-              const active = item.id === selectedId;
+              const active = item.airlineId
+                ? item.airlineId === selectedAirlineId
+                : item.id === selectedId;
               // Which image this tile shows depends on the "Show" dropdown.
               // A country with no coat of arms / passport bundled renders the
               // empty placeholder for that view (never an invented image).
@@ -632,7 +678,9 @@ export function FlagGrid({
                     ? item.passport ?? null
                     : effectiveContentType === "footballcrest"
                       ? item.footballCrest ?? null
-                      : item.flag;
+                      : effectiveContentType === "airline"
+                        ? item.airlineLogo ?? item.flag
+                        : item.flag;
               const url = rawImage ? resolveFlag(rawImage) : null;
               const isLearned = learnedCodes.has(item.id);
               // In shape mode, the same id can appear in multiple
@@ -655,13 +703,16 @@ export function FlagGrid({
                         // `{code}-football-crest` id — pass it so the panel shows
                         // that crest, not the parent country's.
                         item.id.endsWith("-football-crest") ? item.id : undefined,
+                        item.airlineId,
                       )
                     }
                     aria-pressed={active}
                     aria-label={
-                      isLearned
-                        ? `Select ${item.name} (learned)`
-                        : `Select ${item.name}`
+                      item.countryName && effectiveContentType === "airline"
+                        ? `Select ${item.name} (${item.countryName})`
+                        : isLearned
+                          ? `Select ${item.name} (learned)`
+                          : `Select ${item.name}`
                     }
                   >
                     <span className="flag-grid__thumb">

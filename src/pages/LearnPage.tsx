@@ -56,6 +56,9 @@ import { normalizeForSearch } from "../lib/searchNormalize";
 import { CapitalDetails } from "../components/CapitalDetails";
 import { NationalFlagDetails } from "../components/NationalFlagDetails";
 import { PoliticalPartyDetails } from "../components/PoliticalPartyDetails";
+import { AirlineDetails } from "../components/AirlineDetails";
+import { airlinesForCountry, airlineById } from "../lib/commercialAirlines";
+import type { CommercialAirline } from "../types/airline";
 import type { PoliticalParty } from "../data/politicalParties";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning as FlagMeaningData } from "../data/flagMeanings";
@@ -347,6 +350,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setSelectedNationalFlag(null);
     setSelectedGroupMeaning(null);
     setSelectedParty(null);
+    setSelectedSubdivisionAirline(null);
   }, [subdivisionCountry, subdivisionMode]);
   // Set of NAME values present in the current era's historical GeoJSON.
   // Populated by HistoricalMap's onDataLoaded callback. Used by the
@@ -368,10 +372,16 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // its parent country so the panel shows that crest only while the parent stays
   // selected, then self-clears when the user navigates to another country.
   const [gridCrest, setGridCrest] = useState<{ id: string; parent: string } | null>(null);
+  // The specific commercial airline clicked in the grid.
+  const [gridAirlineId, setGridAirlineId] = useState<string | null>(null);
+  // An airline picked in the "National symbols" tab of subdivision view.
+  const [selectedSubdivisionAirline, setSelectedSubdivisionAirline] = useState<CommercialAirline | null>(null);
+
   const chooseGridContentType = (type: GridContentType) => {
     setGridContentType(type);
     saveGridContentType(type);
     setGridCrest(null);
+    setGridAirlineId(null);
   };
   // Captured at "Play" click time so the modal stays open even if the
   // hovered-country display clears while the user moves the mouse.
@@ -1324,7 +1334,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     activeGridCrest ??
     (!subdivisionMode &&
     display?.kind === "modern" &&
-    effectiveGridContentType !== "flag"
+    (effectiveGridContentType === "coatofarms" ||
+      effectiveGridContentType === "passport" ||
+      effectiveGridContentType === "footballcrest")
       ? nationalSymbolEntry(display.country.code, effectiveGridContentType)
       : null);
   // The image the panel actually shows: the symbol when one is selected and
@@ -1473,7 +1485,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         ? display.name
         : null;
 
-  function handleGridSelect(id: string, crestId?: string) {
+  function handleGridSelect(id: string, crestId?: string, airlineId?: string) {
     if (isModernEra) {
       const c = codeToCountry.get(id);
       if (!c) return;
@@ -1486,6 +1498,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       setGridCrest(
         crestId && gridContentType === "footballcrest" ? { id: crestId, parent: c.code } : null,
       );
+      setGridAirlineId(
+        airlineId && gridContentType === "airline" ? airlineId : null,
+      );
     } else {
       const sel = selectionFromPolityName(id);
       if (!sel) return;
@@ -1495,6 +1510,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     // Scroll to the absolute top so the user sees the map from the very start.
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
+
+  // Active airline to show in the information widget when in airline view.
+  const activeAirline = useMemo(() => {
+    if (subdivisionMode) return null;
+    if (effectiveGridContentType !== "airline" || display?.kind !== "modern") return null;
+    if (gridAirlineId) {
+      const a = airlineById(gridAirlineId);
+      if (a && a.countryCode.toUpperCase() === display.country.code.toUpperCase()) {
+        return a;
+      }
+    }
+    const countryAirlines = airlinesForCountry(display.country.code);
+    return countryAirlines[0] ?? null;
+  }, [subdivisionMode, effectiveGridContentType, display, gridAirlineId]);
 
   // Resolver passed to FlagGrid so it can render absolute http(s) URLs,
   // relative historical-flags/*.png paths, AND bundled flag paths that
@@ -1744,8 +1773,25 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 {/* The flag the user just picked leads the widget: it sits directly
                     under the country dropdown, with its "What this flag means"
                     explainer immediately below (both live inside panelFlagBox), and
-                    the fact-sheet rows follow. */}
-                {display.kind === "modern" && panelFlagBox}
+                    the fact-sheet rows follow. When in commercial airlines view,
+                    show the airline details widget instead. */}
+                {display.kind === "modern" && (
+                  effectiveGridContentType === "airline" ? (
+                    activeAirline ? (
+                      <AirlineDetails
+                        airline={activeAirline}
+                        baseUrl={baseUrl}
+                        onEnlarge={setZoomedFlagUrl}
+                      />
+                    ) : (
+                      <p className="learn-fs__no-flag" style={{ marginTop: "1rem" }}>
+                        No commercial airline data is available for {display.country.name} yet.
+                      </p>
+                    )
+                  ) : (
+                    panelFlagBox
+                  )
+                )}
                 {display.kind === "modern" ? (
                   <>
                     <EntitySummary
@@ -2180,6 +2226,21 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             </aside>
           )}
 
+          {/* ===== COMMERCIAL-AIRLINE box — an airline picked in the "National symbols"
+              tab. Same treatment as National symbols and Political parties: its own
+              widget below the fact-sheet, highlighting nothing on the map. ===== */}
+          {selectedSubdivisionAirline && (
+            <aside className="learn-fs__panel" aria-live="polite">
+              <div className="learn-fs__detail">
+                <AirlineDetails
+                  airline={selectedSubdivisionAirline}
+                  baseUrl={baseUrl}
+                  onEnlarge={setZoomedFlagUrl}
+                />
+              </div>
+            </aside>
+          )}
+
           {/* ===== NATIONAL-CAPITAL box — for a national capital that heads no
               subdivision (Ottawa, Pretoria, Amsterdam …), selected from the
               hierarchy chart. It has no subdivision fact-sheet, so this small card
@@ -2400,12 +2461,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               setSelectedParty((cur) => (cur?.id === party.id ? null : party));
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
+            selectedAirlineId={selectedSubdivisionAirline?.id ?? null}
+            onSelectAirline={(airline) => {
+              // Same toggle behaviour as national symbol / party: clicking the
+              // open airline's card again closes its widget.
+              setSelectedSubdivisionAirline((cur) => (cur?.id === airline.id ? null : airline));
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           />
         );
       })() : (
         <FlagGrid
           entries={flagEntries}
           selectedId={activeGridCrest ? gridCrest!.id : selectedId}
+          selectedAirlineId={gridAirlineId}
           onSelect={handleGridSelect}
           resolveFlag={resolveFlag}
           isModernEra={isModernEra}

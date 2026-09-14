@@ -9,9 +9,11 @@ import { PoliticalPartyGrid } from "./PoliticalPartyGrid";
 import { countryCityFlagCount } from "../lib/cityFlags";
 import { totalNationalFlagCount } from "../lib/specialEntities";
 import { partiesForCountry } from "../lib/politicalParties";
+import { airlinesForCountry } from "../lib/commercialAirlines";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning } from "../data/flagMeanings";
 import type { PoliticalParty } from "../data/politicalParties";
+import type { CommercialAirline } from "../types/airline";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 
 /**
@@ -112,6 +114,9 @@ type Props = {
   /** id of the national flag whose widget is open (if any). */
   selectedNationalFlagId: string | null;
   onSelectNationalFlag: (flag: NationalFlag) => void;
+  /** id of the commercial airline whose widget is open (if any). */
+  selectedAirlineId?: string | null;
+  onSelectAirline?: (airline: CommercialAirline) => void;
   /** A collective subdivision-group flag (Malaysia's Federal Territories), shown
    *  in the hierarchy — opens its own widget with its sourced meaning. */
   onSelectGroupFlag: (flag: NationalFlag, meaning: FlagMeaning | null) => void;
@@ -136,6 +141,8 @@ export function SubdivisionFlagTabs({
   onSelectCountry,
   selectedNationalFlagId,
   onSelectNationalFlag,
+  selectedAirlineId,
+  onSelectAirline,
   onSelectGroupFlag,
   selectedPartyId,
   onSelectParty,
@@ -161,8 +168,11 @@ export function SubdivisionFlagTabs({
     [countryCode],
   );
   // Includes the country's own symbols AND any special-status entities grouped
-  // under it (China → Hong Kong, Macau, Taiwan), so the count matches the grid.
-  const natCount = useMemo(() => totalNationalFlagCount(countryCode), [countryCode]);
+  // under it (China → Hong Kong, Macau, Taiwan), plus any commercial airlines.
+  const natCount = useMemo(
+    () => totalNationalFlagCount(countryCode) + airlinesForCountry(countryCode).length,
+    [countryCode],
+  );
   // Coverage grows via an incremental sourced sweep (see politicalParties.ts) —
   // a country with none simply has no Political parties tab, exactly like a
   // country with no national symbols has no National-symbols tab.
@@ -268,8 +278,10 @@ export function SubdivisionFlagTabs({
             countryCode={countryCode}
             countryName={countryName}
             selectedFlagId={selectedNationalFlagId}
+            selectedAirlineId={selectedAirlineId}
             baseUrl={baseUrl}
             onSelect={onSelectNationalFlag}
+            onSelectAirline={onSelectAirline}
           />
         )}
         {activeTab === "tree" && (

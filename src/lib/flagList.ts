@@ -55,6 +55,12 @@ export type FlagListEntry = {
   /** Resolved football-association crest image URL for the grid's "Football
    *  crests" view. null / undefined when the country has no bundled crest. */
   footballCrest?: string | null;
+  /** Resolved commercial airline logo URL for the grid's "Commercial airlines" view. */
+  airlineLogo?: string | null;
+  /** Unique airline ID (e.g. "au-qantas") when this card represents an airline. */
+  airlineId?: string;
+  /** Country display name when this entry represents an airline grouped under a country. */
+  countryName?: string;
   /**
    * Country code to select when this card is clicked, when it differs from `id`.
    * A home-nation football-crest card carries the parent country's code (GB) so a
