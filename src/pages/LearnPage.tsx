@@ -1801,6 +1801,23 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     explainer immediately below (both live inside panelFlagBox), and
                     the fact-sheet rows follow. */}
                 {display.kind === "modern" && panelFlagBox}
+                {/* When viewing airlines or broadcasters, show the selected one in the
+                    primary widget (same location as coat of arms, passports, crests),
+                    not in a separate panel. */}
+                {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "airline" && activeAirline && (
+                  <AirlineDetails
+                    airline={activeAirline}
+                    baseUrl={baseUrl}
+                    onEnlarge={setZoomedFlagUrl}
+                  />
+                )}
+                {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "broadcaster" && activeBroadcaster && (
+                  <BroadcasterDetails
+                    broadcaster={activeBroadcaster}
+                    baseUrl={baseUrl}
+                    onEnlarge={setZoomedFlagUrl}
+                  />
+                )}
                 {display.kind === "modern" ? (
                   <>
                     <EntitySummary
@@ -2047,48 +2064,6 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           </div>
 
         </aside>
-
-        {/* ===== COMMERCIAL-AIRLINE box (World view) — when in commercial airlines
-            view, show the airline in a 2nd widget below the primary country widget,
-            matching the subnational/national symbols behaviour. ===== */}
-        {!subdivisionMode && effectiveGridContentType === "airline" && display?.kind === "modern" && (
-          <aside className="learn-fs__panel" aria-live="polite">
-            <div className="learn-fs__detail">
-              {activeAirline ? (
-                <AirlineDetails
-                  airline={activeAirline}
-                  baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
-                />
-              ) : (
-                <p className="learn-fs__no-flag" style={{ marginTop: "1rem" }}>
-                  No commercial airline data is available for {display.country.name} yet.
-                </p>
-              )}
-            </div>
-          </aside>
-        )}
-
-        {/* ===== PUBLIC-BROADCASTER box (World view) — when in public broadcasters
-            view, show the broadcaster in a 2nd widget below the primary country widget,
-            matching the commercial airlines behaviour. ===== */}
-        {!subdivisionMode && effectiveGridContentType === "broadcaster" && display?.kind === "modern" && (
-          <aside className="learn-fs__panel" aria-live="polite">
-            <div className="learn-fs__detail">
-              {activeBroadcaster ? (
-                <BroadcasterDetails
-                  broadcaster={activeBroadcaster}
-                  baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
-                />
-              ) : (
-                <p className="learn-fs__no-flag" style={{ marginTop: "1rem" }}>
-                  No public broadcaster data is available for {display.country.name} yet.
-                </p>
-              )}
-            </div>
-          </aside>
-        )}
 
         {/* ===== SUB-NATIONAL box — a second card, only in the drill-in view.
             Its own dropdown picks the division; its flag + explainer sit in the
