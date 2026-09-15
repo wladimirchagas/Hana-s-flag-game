@@ -2050,6 +2050,171 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Bulgarian National Television public service organization trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Croatia
+  HR: [
+    {
+      id: "hr-hrt",
+      countryCode: "HR",
+      name: "HRT",
+      officialName: "Hrvatska radiotelevizija (Croatian Radiotelevision)",
+      founded: 1926,
+      primaryFunding: "Universal monthly broadcast fee (RTV pristojba / €10.62/month per household owning a receiver) under the HRT Act, supplemented by commercial advertising (capped at 9 min/hour in prime time)",
+      headquarters: "Prisavlje 3, Zagreb",
+      annualPublicFunding: {
+        total: "€181.4 million monthly broadcast fee revenue (HRT Godišnje izvješće o poslovanju FY 2024; total revenue €198.8M)",
+        perCapita: "€46.80 / citizen / year (approx. €0.13 / day)",
+      },
+      dailyMarketShare: "26.4% total television audience share across HRT 1, HRT 2, HRT 3 (culture), and HRT 4 (news) (AdScanner / AEM Croatia 2024; HRT 1 commands 16.2% share)",
+      brandTrustScore: {
+        score: "60%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted broadcast news organization in Croatia for HRT Vijesti)",
+      },
+      localContentQuota: "Over 50% Croatian domestic production quota under the Electronic Media Act (Zakon o elektroničkim medijima), with statutory regional production centers in Split, Rijeka, Osijek, Pula, Zadar, and Dubrovnik",
+      staffHeadcount: "2,730 permanent employees (Izvješće o radu HRT-a 2024)",
+      logo: "/broadcaster-logos/hr/hrt.png",
+      logoExplainer:
+        "Created in the early 1990s by renowned Croatian designer Boris Ljubičić, the HRT emblem features three bold capital letters 'HRT' intertwined with the iconic red-and-white Croatian alternating chequy motif. The visual identity powerfully connects national heritage with contemporary public broadcasting.",
+      sources: [
+        "https://o-nama.hrt.hr/poslovanje-i-financije/izvjesca-o-poslovanju",
+        "https://www.aem.hr/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/croatia",
+      ],
+      licenceNote: "Hrvatska radiotelevizija public institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Serbia
+  RS: [
+    {
+      id: "rs-rts",
+      countryCode: "RS",
+      name: "RTS",
+      officialName: "Radio-televizija Srbije (Radio Television of Serbia)",
+      founded: 1929,
+      primaryFunding: "Monthly public media service fee (taksa za javne medijske servise / RSD 299/month collected via electric energy accounts) supplemented by direct state budget subventions and commercial advertising",
+      headquarters: "Takovska 10, Belgrade",
+      annualPublicFunding: {
+        total: "RSD 11,850 million public fee and state budget transfers (RTS Finansijski izveštaj FY 2024; approx. €101M; total revenue ~RSD 14.5B)",
+        perCapita: "RSD 1,805 / citizen / year (approx. €15.40 / year or RSD 4.95 / day)",
+      },
+      dailyMarketShare: "21.6% combined television audience share across RTS 1, RTS 2, RTS 3 (culture), and thematic digital channels (Nielsen Audience Measurement Serbia 2024; RTS 1 is Serbia's most-watched television channel with 16.8% share)",
+      brandTrustScore: {
+        score: "51%",
+        source: "Reuters Institute Digital News Report 2024 (RTS Dnevnik 2 remains Serbia's central daily evening news program)",
+      },
+      localContentQuota: "At least 50% Serbian and European audiovisual production quota under the Law on Public Media Services (Zakon o javnim medijskim servisima), with regional correspondence desks across the country",
+      staffHeadcount: "2,620 permanent employees (RTS Izveštaj o poslovanju 2024)",
+      logo: "/broadcaster-logos/rs/rts.png",
+      logoExplainer:
+        "The distinctive RTS emblem features stylized overlapping circular rings rendered in Serbian tricolor blue, white, and red, seamlessly merging the Cyrillic and Latin letterforms 'PTC / RTS'. The interlocking spherical ribbons symbolize radio and television orbital broadcast signals uniting the nation.",
+      sources: [
+        "https://www.rts.rs/page/rts/sr/o-nama.html",
+        "https://www.rem.rs/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/serbia",
+      ],
+      licenceNote: "Radio-televizija Srbije public media institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Iceland
+  IS: [
+    {
+      id: "is-ruv",
+      countryCode: "IS",
+      name: "RÚV",
+      officialName: "Ríkisútvarpið ohf. (The Icelandic National Broadcasting Service)",
+      founded: 1930,
+      primaryFunding: "Dedicated individual media tax (útvarpsgjald / ISK 21,800/year per taxpayer aged 18–70 collected via annual income tax assessments by Skatturinn) supplemented by commercial advertising (capped at 8 min/hour)",
+      headquarters: "Efstaleiti 1, 103 Reykjavík",
+      annualPublicFunding: {
+        total: "ISK 5,420 million media tax appropriation (RÚV Ársskýrsla FY 2024; approx. €36.5M; total revenue ISK 7,200M)",
+        perCapita: "ISK 13,800 / resident / year (approx. €93 / year or ISK 37.8 / day)",
+      },
+      dailyMarketShare: "58.5% television audience share across RÚV and RÚV 2 (Gallup Iceland TV Survey 2024; RÚV holds overwhelming market leadership with the highest daily viewing reach in Iceland)",
+      brandTrustScore: {
+        score: "78%",
+        source: "Gallup Iceland Public Trust Survey & Reuters DNR 2024 (#1 most trusted institution and news service in Iceland for RÚV Fréttir)",
+      },
+      localContentQuota: "Over 75% Icelandic-language programming quota under Act no. 23/2013 on the Icelandic National Broadcasting Service, safeguarding the Icelandic language, domestic drama, children's programs, and rural regional offices",
+      staffHeadcount: "270 full-time equivalent employees (RÚV Ársskýrsla 2024)",
+      logo: "/broadcaster-logos/is/ruv.png",
+      logoExplainer:
+        "Designed in 2011 by graphic artist Hörður Lárusson, the minimalist RÚV wordmark features custom lowercase geometric sans-serif lettering with a distinctive circular dot above the acute accent of the 'ú'. The clean typography in Nordic deep blue embodies institutional clarity, digital agility, and community trust.",
+      sources: [
+        "https://www.ruv.is/um-ruv/rekstur-og-skipulag",
+        "https://www.fjolmidlanefnd.is/",
+        "https://gallup.is/nidurstodur/frettir/thjodarpuls-traust-a-stofnunum/",
+      ],
+      licenceNote: "Ríkisútvarpið ohf. state-owned public limited company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Lithuania
+  LT: [
+    {
+      id: "lt-lrt",
+      countryCode: "LT",
+      name: "LRT",
+      officialName: "Lietuvos nacionalinis radijas ir televizija (Lithuanian National Radio and Television)",
+      founded: 1926,
+      primaryFunding: "Legally ring-fenced state budget funding pegged by statute to a formula of Personal Income Tax (1.28% of GPM) and Excise Tax (1.28% of akcizai) collected two years prior; 100% commercial-free with zero commercial advertising",
+      headquarters: "S. Konarskio g. 49, Vilnius",
+      annualPublicFunding: {
+        total: "€72.8 million statutory formula budget allocation (LRT Metinė veiklos ir finansinė ataskaita FY 2024)",
+        perCapita: "€25.40 / resident / year (approx. €0.07 / day)",
+      },
+      dailyMarketShare: "22.5% television audience share across LRT Televizija, LRT Plius, and LRT Lituanica (Kantar Lithuania 2024; LRT Televizija is Lithuania's leading television channel with 16.1% share)",
+      brandTrustScore: {
+        score: "70%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news media brand in Lithuania for LRT)",
+      },
+      localContentQuota: "Over 60% Lithuanian-origin programming quota under the Law on the Lithuanian National Radio and Television, featuring comprehensive news, documentary history, and cultural programs",
+      staffHeadcount: "650 full-time employees (LRT Veiklos ataskaita 2024)",
+      logo: "/broadcaster-logos/lt/lrt.png",
+      logoExplainer:
+        "Unveiled in 2022, the refreshed LRT emblem displays the bold sans-serif letterforms 'LRT' in stark black and white or Baltic amber, characterized by modern geometric lines and a clean horizontal cadence. The identity reflects progressive institutional values, digital expansion via LRT Epika and LRT.lt, and civic resilience.",
+      sources: [
+        "https://apie.lrt.lt/skaidrumas/ataskaitos",
+        "https://www.rtk.lt/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/lithuania",
+      ],
+      licenceNote: "Lietuvos nacionalinis radijas ir televizija statutory public institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Latvia
+  LV: [
+    {
+      id: "lv-ltv",
+      countryCode: "LV",
+      name: "LTV / LSM",
+      officialName: "Latvijas Televīzija VSIA / Latvijas Sabiedriskais Medijs (Public Broadcasting of Latvia)",
+      founded: 1954,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Culture and Saeima under the Public Electronic Mass Media Law; 100% commercial-free with zero interruption advertising on TV and radio since exit from ad market in 2021",
+      headquarters: "Zaķusalas krastmala 3, Riga",
+      annualPublicFunding: {
+        total: "€38.4 million state budget grant (LTV Gada pārskats & SEPLP FY 2024; approx. €58M across united LSM radio & TV)",
+        perCapita: "€20.50 / resident / year (approx. €0.06 / day)",
+      },
+      dailyMarketShare: "17.4% television audience share across LTV1 and LTV7 (Kantar Latvia 2024; LTV1 is Latvia's leading television channel with 13.2% share)",
+      brandTrustScore: {
+        score: "66%",
+        source: "SKDS Public Opinion Research & SEPLP 2024 (LTV Panorāma and LSM.lv consistently rank as Latvia's most reliable and trusted news brands)",
+      },
+      localContentQuota: "Minimum 80% European and Latvian-language programming quota on LTV1 under the Public Electronic Mass Media and Their Administration Law (SEPLP), funding Baltic documentary cinema and regional correspondent hubs",
+      staffHeadcount: "520 employees (LTV Gada pārskats 2024)",
+      logo: "/broadcaster-logos/lv/ltv.png",
+      logoExplainer:
+        "Redesigned in 2021, the LTV emblem features the bold, geometric capital letters 'LTV' in Latvian carmine red and deep slate grey. The clean, forward-slanted diagonal cut in the letter 'L' evokes broadcast transmission towers, signal precision, and continuous public service modernization from the iconic Zaķusala TV tower in Riga.",
+      sources: [
+        "https://ltv.lsm.lv/lv/par-mums/finansu-parskati",
+        "https://www.seplp.lv/",
+        "https://www.kantar.lv/mediju-petijumi/",
+      ],
+      licenceNote: "Latvijas Televīzija VSIA public limited liability company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
