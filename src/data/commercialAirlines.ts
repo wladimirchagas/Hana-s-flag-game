@@ -2964,6 +2964,233 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Poland
+  PL: [
+    {
+      id: "pl-lot-polish-airlines",
+      countryCode: "PL",
+      name: "LOT Polish Airlines",
+      iata: "LO",
+      icao: "LOT",
+      founded: 1928,
+      alliance: "Star Alliance",
+      hubs: ["Warsaw Chopin Airport (WAW)"],
+      fleet: {
+        total: 75,
+        summary: "75 aircraft (Boeing 737-800, 737 MAX 8, 787-8, 787-9 Dreamliner; Embraer E170, E175, E190, E195, E195-E2)",
+      },
+      logo: "/airline-logos/pl/lot-polish-airlines.svg",
+      logoExplainer:
+        "The iconic encircled soaring crane (*żuraw*) was designed by prominent visual artist Tadeusz Gronowski in 1929 after winning an international design competition. It has flown unchanged for nearly a century as a symbol of Polish technical excellence, endurance, and soaring freedom.",
+      sources: [
+        "https://www.lot.com/",
+        "https://en.wikipedia.org/wiki/LOT_Polish_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "pl-enter-air",
+      countryCode: "PL",
+      name: "Enter Air",
+      iata: "E4",
+      icao: "ENT",
+      founded: 2009,
+      alliance: "None",
+      hubs: ["Warsaw Chopin Airport (WAW)", "Katowice Airport (KTW)", "Poznań-Ławica Airport (POZ)"],
+      fleet: {
+        total: 28,
+        summary: "28 aircraft (Boeing 737-800, Boeing 737 MAX 8)",
+      },
+      logo: "/airline-logos/pl/enter-air.svg",
+      logoExplainer:
+        "Features a modern orange and navy wordmark with a forward-facing speed chevron, reflecting Enter Air's standing as Poland's largest charter carrier connecting Polish travelers with Mediterranean and global holiday destinations.",
+      sources: [
+        "https://www.enterair.pl/",
+        "https://en.wikipedia.org/wiki/Enter_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Czech Republic
+  CZ: [
+    {
+      id: "cz-smartwings",
+      countryCode: "CZ",
+      name: "Smartwings",
+      iata: "QS",
+      icao: "TVS",
+      founded: 1997,
+      alliance: "None",
+      hubs: ["Václav Havel Airport Prague (PRG)", "Brno-Tuřany Airport (BRQ)", "Leoš Janáček Airport Ostrava (OSR)"],
+      fleet: {
+        total: 35,
+        summary: "35 aircraft (Boeing 737-700, 737-800, 737-900ER, 737 MAX 8)",
+      },
+      logo: "/airline-logos/cz/smartwings.svg",
+      logoExplainer:
+        "Features a vibrant orange and sky-blue disc containing a stylized soaring wing and compass pointer, expressing holiday cheer, European leisure connectivity, and navigational precision.",
+      sources: [
+        "https://www.smartwings.com/",
+        "https://en.wikipedia.org/wiki/Smartwings",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "cz-czech-airlines",
+      countryCode: "CZ",
+      name: "Czech Airlines (ČSA)",
+      iata: "OK",
+      icao: "CSA",
+      founded: 1923,
+      alliance: "None",
+      hubs: ["Václav Havel Airport Prague (PRG)"],
+      fleet: {
+        total: 6,
+        summary: "6 aircraft (Airbus A220-300, Airbus A320-200)",
+      },
+      logo: "/airline-logos/cz/czech-airlines.svg",
+      logoExplainer:
+        "Features aerodynamic tricolor red and blue delta wings flanking the typography, reflecting the red, blue, and white of the Czech national flag and over 100 years of storied Czech aviation history.",
+      sources: [
+        "https://www.csa.cz/",
+        "https://en.wikipedia.org/wiki/Czech_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Hungary
+  HU: [
+    {
+      id: "hu-wizz-air",
+      countryCode: "HU",
+      name: "Wizz Air",
+      iata: "W6",
+      icao: "WZZ",
+      founded: 2003,
+      alliance: "None",
+      hubs: [
+        "Budapest Ferenc Liszt International Airport (BUD)",
+        "Debrecen International Airport (DEB)",
+        "London Luton Airport (LTN)",
+        "Rome Fiumicino Airport (FCO)",
+      ],
+      fleet: {
+        total: 220,
+        summary: "220+ aircraft (Airbus A320-200, A320neo, A321-200, A321neo, A321XLR)",
+      },
+      logo: "/airline-logos/hu/wizz-air.svg",
+      logoExplainer:
+        "Features a signature vibrant electric magenta and violet typographic logotype with a stylized forward-surging letter 'W', symbolizing high-frequency, affordable, and accessible air travel across Europe, North Africa, and the Middle East.",
+      sources: [
+        "https://wizzair.com/",
+        "https://en.wikipedia.org/wiki/Wizz_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Romania
+  RO: [
+    {
+      id: "ro-tarom",
+      countryCode: "RO",
+      name: "TAROM",
+      iata: "RO",
+      icao: "ROT",
+      founded: 1954,
+      alliance: "SkyTeam",
+      hubs: ["Henri Coandă International Airport (OTP - Otopeni / Bucharest)"],
+      fleet: {
+        total: 18,
+        summary: "18 aircraft (Airbus A318-100; Boeing 737-700, 737-800, 737 MAX 8; ATR 72-500, ATR 72-600)",
+      },
+      logo: "/airline-logos/ro/tarom.svg",
+      logoExplainer:
+        "Features a golden-yellow stylized swallow (*rândunica*) in soaring flight set within a dark navy tailfin emblem. In Romanian culture, the swallow heralds springtime, hope, and swift safe navigation across distant skies.",
+      sources: [
+        "https://www.tarom.ro/",
+        "https://en.wikipedia.org/wiki/TAROM",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ro-hisky",
+      countryCode: "RO",
+      name: "HiSky",
+      iata: "H4",
+      icao: "HYS",
+      founded: 2020,
+      alliance: "None",
+      hubs: [
+        "Henri Coandă International Airport (OTP - Bucharest)",
+        "Cluj-Napoca International Airport (CLJ)",
+        "Chișinău International Airport (RMO)",
+      ],
+      fleet: {
+        total: 8,
+        summary: "8 aircraft (Airbus A319-100, A320-200, A321neo LR, A330-200)",
+      },
+      logo: "/airline-logos/ro/hisky.svg",
+      logoExplainer:
+        "Features a bold navy blue aerodynamic flight arc and sleek modern typography, symbolizing rapid commercial growth, passenger comfort, and transatlantic direct services connecting Romania with the United States.",
+      sources: [
+        "https://hisky.aero/",
+        "https://en.wikipedia.org/wiki/HiSky",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bulgaria
+  BG: [
+    {
+      id: "bg-bulgaria-air",
+      countryCode: "BG",
+      name: "Bulgaria Air",
+      iata: "FB",
+      icao: "LZB",
+      founded: 2002,
+      alliance: "None",
+      hubs: ["Sofia Airport (SOF)", "Varna Airport (VAR)"],
+      fleet: {
+        total: 15,
+        summary: "15 aircraft (Airbus A220-100, A220-300, A319-100, A320-200; Embraer E190)",
+      },
+      logo: "/airline-logos/bg/bulgaria-air.svg",
+      logoExplainer:
+        "Features a stylized white soaring bird crest flanked by green and red wings, honoring the Bulgarian national tricolor (white, green, and red) and symbolizing Bulgarian sovereignty connecting the Balkan crossroads with Europe.",
+      sources: [
+        "https://www.air.bg/",
+        "https://en.wikipedia.org/wiki/Bulgaria_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "bg-european-air-charter",
+      countryCode: "BG",
+      name: "European Air Charter",
+      iata: "H4",
+      icao: "BUC",
+      founded: 2000,
+      alliance: "None",
+      hubs: ["Sofia Airport (SOF)", "Varna Airport (VAR)", "Burgas Airport (BOJ)"],
+      fleet: {
+        total: 10,
+        summary: "10 aircraft (Airbus A320-200)",
+      },
+      logo: "/airline-logos/bg/european-air-charter.png",
+      logoExplainer:
+        "Features a dynamic aerodynamic ribbon in European blue and Bulgarian national colors, representing holiday charter flights linking the Black Sea coast of Bulgaria with major cities across Germany, Austria, and Scandinavia.",
+      sources: [
+        "https://euaircharter.com/",
+        "https://en.wikipedia.org/wiki/European_Air_Charter_(Bulgaria)",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
