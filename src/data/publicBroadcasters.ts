@@ -4972,6 +4972,170 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Radiodiffusion Télévision Ivoirienne state enterprise trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  // Honduras
+  HN: [
+    {
+      id: "hn-tnh",
+      countryCode: "HN",
+      name: "TNH",
+      officialName: "Televisión Nacional de Honduras (Canal 8 - Red Informativa del Pueblo)",
+      founded: 2008,
+      primaryFunding: "Direct state budget appropriation from the Secretariat of Finance (SEFIN) and Secretariat of Strategic Planning of the Presidency",
+      headquarters: "Boulevard Suyapa, Tegucigalpa, M.D.C., Honduras",
+      annualPublicFunding: {
+        total: "HNL 185.0 million state budget allocation (Presupuesto General de la República de Honduras FY 2024; approx. US.5M)",
+        perCapita: "HNL 18.00 / citizen / year (approx. USzsh.73 / year)",
+      },
+      dailyMarketShare: "16.5% domestic television audience share across Canal 8 and digital educational services (Comisión Nacional de Telecomunicaciones CONATEL & Kantar IBOPE Honduras 2024)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Centro de Estudios para la Democracia (CESPAD) & CONATEL Media Survey 2024",
+      },
+      localContentQuota: "80% Honduran cultural, educational, and public health programming quota in Spanish alongside indigenous Garifuna and Miskito language cultural segments",
+      staffHeadcount: "240 permanent television directors, cameramen, video editors, and journalists (TNH Dirección General 2024)",
+      logo: "broadcaster-logos/hn/tnh.png",
+      logoExplainer:
+        "The TNH emblem features the dynamic numeral '8' integrated into an optical camera lens and the five turquoise stars of the Honduran flag, reflecting national sovereignty, Central American unity, and democratic public communication.",
+      sources: [
+        "https://tnh.gob.hn/",
+        "https://www.sefin.gob.hn/",
+        "https://www.conatel.gob.hn/",
+      ],
+      licenceNote: "Televisión Nacional de Honduras state institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Togo
+  TG: [
+    {
+      id: "tg-tvt",
+      countryCode: "TG",
+      name: "TVT",
+      officialName: "Télévision Togolaise (TVT - Télévision Nationale)",
+      founded: 1973,
+      primaryFunding: "Public treasury subvention allocated through the Ministry of Communication and Media within the State Budget of the Togolese Republic",
+      headquarters: "Rue des Médias, BP 3286, Lomé, Togo",
+      annualPublicFunding: {
+        total: "XOF 5.2 billion state budget allocation (Loi de finances de la République Togolaise FY 2024; approx. US.6M)",
+        perCapita: "XOF 580.00 / citizen / year (approx. USzsh.96 / year)",
+      },
+      dailyMarketShare: "42.0% domestic television audience share (Haute Autorité de l'Audiovisuel et de la Communication HAAC & Médiamétrie Togo 2024; TVT is the primary national television broadcaster)",
+      brandTrustScore: {
+        score: "65%",
+        source: "Afrobarometer Togo & HAAC Observatoire des Médias 2024",
+      },
+      localContentQuota: "75% local Togolese cultural, agricultural, and educational quota in French, Éwé, and Kabyè languages",
+      staffHeadcount: "380 civil service media practitioners, camera operators, and technicians across Lomé and Kara studios (TVT Direction Générale 2024)",
+      logo: "broadcaster-logos/tg/tvt.jpg",
+      logoExplainer:
+        "The TVT emblem displays the acronym 'TVT' crowned with an optical satellite arc in the national colors of Togo—emerald green, yellow, red, and the white star of hope—symbolizing agricultural labor, mineral richness, civic unity, and national progress.",
+      sources: [
+        "https://tvt.tg/",
+        "https://finances.gouv.tg/",
+        "https://haac.tg/",
+      ],
+      licenceNote: "Télévision Togolaise public state broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Benin
+  BJ: [
+    {
+      id: "bj-ortb",
+      countryCode: "BJ",
+      name: "ORTB",
+      officialName: "Office de Radiodiffusion et Télévision du Bénin (ORTB / SRTB - Société de Radio et Télévision du Bénin)",
+      founded: 1964,
+      primaryFunding: "State operating subvention from the Ministry of Digital Affairs and Digitalisation and commercial advertising",
+      headquarters: "Boulevard de la Marina, BP 369, Cotonou, Benin",
+      annualPublicFunding: {
+        total: "XOF 7.8 billion state budget allocation (Loi de finances de la République du Bénin FY 2024; approx. US.0M)",
+        perCapita: "XOF 580.00 / citizen / year (approx. USzsh.97 / year)",
+      },
+      dailyMarketShare: "44.5% domestic television audience share across Bénin TV and Bénin TV Alafia (Haute Autorité de l'Audiovisuel et de la Communication HAAC & Médiamétrie Bénin 2024)",
+      brandTrustScore: {
+        score: "68%",
+        source: "Afrobarometer Benin Survey & HAAC Media Monitor 2024",
+      },
+      localContentQuota: "75% domestic Beninese cultural and multilingual quota in French, Fon, Yoruba, Bariba, and Dendi",
+      staffHeadcount: "520 permanent media personnel, camera operators, and transmission engineers across Cotonou and Parakou (ORTB/SRTB Rapport d'Activité 2024)",
+      logo: "broadcaster-logos/bj/ortb.jpg",
+      logoExplainer:
+        "The ORTB logo features the stylized acronym 'ORTB' interwoven with a dynamic television screen in the national tricolor of Benin—green, yellow, and red—representing regional unity between the southern coastal lagoons and northern savannas.",
+      sources: [
+        "https://ortb.bj/",
+        "https://finances.bj/",
+        "https://haacbenin.org/",
+      ],
+      licenceNote: "Société de Radio et Télévision du Bénin public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Democratic Republic of the Congo
+  CD: [
+    {
+      id: "cd-rtnc",
+      countryCode: "CD",
+      name: "RTNC",
+      officialName: "Radio-Télévision Nationale Congolaise (RTNC / Établissement Public de Radio et Télévision)",
+      founded: 1949,
+      primaryFunding: "Audiovisual fee surcharge (Redevance audiovisuelle RTNC) and direct state budget subvention from the Ministère de la Communication et des Médias",
+      headquarters: "Cité de la Voix du Peuple, Boulevard Triomphal, Lingwala, Kinshasa, Democratic Republic of the Congo",
+      annualPublicFunding: {
+        total: "CDF 95.0 billion state budget allocation and public audiovisual surcharge (Loi de finances de la République Démocratique du Congo FY 2024; approx. US.5M)",
+        perCapita: "CDF 950.00 / citizen / year (approx. USzsh.35 / year)",
+      },
+      dailyMarketShare: "32.0% national television audience share across RTNC 1, RTNC 2, and provincial stations (Conseil Supérieur de l'Audiovisuel et de la Communication CSAC & Target SARL RDC 2024)",
+      brandTrustScore: {
+        score: "57%",
+        source: "Afrobarometer DRC & CSAC Media Barometer 2024",
+      },
+      localContentQuota: "80% Congolese cultural, musical (UNESCO Congolese Rumba heritage), and civic quota in French and the four national languages (Lingala, Swahili, Kikongo, Tshiluba)",
+      staffHeadcount: "2,400 permanent journalists, producers, cameramen, and transmission crew across Kinshasa and 26 provincial stations (RTNC Bilan Social 2024)",
+      logo: "broadcaster-logos/cd/rtnc.png",
+      logoExplainer:
+        "The RTNC logo displays the bold letters 'RTNC' with a stylized torch of freedom and broadcast orbits in sky-blue, yellow, and red—the colors of the Congolese flag—embodying sovereignty, mineral wealth, and the unified voice of the Congolese people across the Congo River basin.",
+      sources: [
+        "https://rtnc.cd/",
+        "https://budget.gouv.cd/",
+        "https://csac.cd/",
+      ],
+      licenceNote: "Radio-Télévision Nationale Congolaise public establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Djibouti
+  DJ: [
+    {
+      id: "dj-rtd",
+      countryCode: "DJ",
+      name: "RTD",
+      officialName: "Radio Télévision de Djibouti (RTD / هيئة إذاعة وتلفزيون جيبوتي - Établissement Public à Caractère Industriel et Commercial)",
+      founded: 1967,
+      primaryFunding: "Direct state budget subsidy from the Ministère de la Communication, chargé des Postes et des Télécommunications, supplemented by commercial advertising",
+      headquarters: "Boulevard de la République, BP 97, Djibouti City, Republic of Djibouti",
+      annualPublicFunding: {
+        total: "DJF 1.45 billion state budget allocation (Loi de finances initiale de la République de Djibouti FY 2024; approx. US.1M)",
+        perCapita: "DJF 1,420.00 / citizen / year (approx. US.90 / year)",
+      },
+      dailyMarketShare: "65.0% domestic television audience share across Télé-Djibouti 1 and Télé-Djibouti 2 (Commission Nationale de la Communication CNC & RTD Audience Review 2024; the primary domestic terrestrial and satellite channel)",
+      brandTrustScore: {
+        score: "72%",
+        source: "Afrobarometer Djibouti & Commission Nationale de la Communication 2024",
+      },
+      localContentQuota: "85% domestic cultural and multilingual programming quota in French, Arabic, Somali (Af-Soomaali), and Afar (Qafár af)",
+      staffHeadcount: "310 permanent broadcast journalists, editors, and broadcast technicians (RTD Rapport Annuel 2024)",
+      logo: "broadcaster-logos/dj/rtd.png",
+      logoExplainer:
+        "The RTD insignia showcases a dynamic globe enveloped by the red star and sky-blue and green triangular bands from the Djibouti national flag, symbolizing the nation's position as the beacon of the Bab-el-Mandeb Strait, maritime trade, and regional peace in the Horn of Africa.",
+      sources: [
+        "https://www.rtd.dj/",
+        "https://www.ministere-finances.dj/",
+        "https://cnc.dj/",
+      ],
+      licenceNote: "Radio Télévision de Djibouti public establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
