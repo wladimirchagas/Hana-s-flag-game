@@ -265,19 +265,12 @@ export function FlagGrid({
   // Keep the active grouping valid for the current view. If the era switches to
   // history, or the "Show" type changes so the active grouping no longer applies
   // (a flag-appearance mode outside the flag view, or "By colour" outside the
-  // Passports view), fall back to "No grouping". Covers both the initial load
-  // and later switches, so the active grouping is always one the dropdown offers.
+  // Passports view), fall back to "By country" (for airlines/broadcasters) or
+  // "No grouping". Covers both the initial load and later switches, so the
+  // active grouping is always one the dropdown offers.
   useEffect(() => {
-    const isCountryGrouped = effectiveContentType === "airline" || effectiveContentType === "broadcaster";
-    if (
-      isCountryGrouped &&
-      groupMode !== "by-country" &&
-      groupMode !== "alpha" &&
-      groupMode !== "continent" &&
-      groupMode !== "none"
-    ) {
-      setGroupMode("by-country");
-    } else if (!groupModeAvailableFor(groupMode, effectiveContentType, isModernEra)) {
+    if (!groupModeAvailableFor(groupMode, effectiveContentType, isModernEra)) {
+      const isCountryGrouped = effectiveContentType === "airline" || effectiveContentType === "broadcaster";
       setGroupMode(isCountryGrouped ? "by-country" : "none");
     }
   }, [groupMode, effectiveContentType, isModernEra]);
