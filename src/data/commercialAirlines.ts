@@ -1806,6 +1806,226 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Ecuador
+  EC: [
+    {
+      id: "ec-aeroregional",
+      countryCode: "EC",
+      name: "Aeroregional",
+      iata: "RER",
+      icao: "RER",
+      founded: 2018,
+      alliance: "None",
+      hubs: ["Mariscal Sucre International Airport (UIO - Quito)", "José Joaquín de Olmedo International Airport (GYE - Guayaquil)"],
+      fleet: {
+        total: 4,
+        summary: "4 aircraft (Boeing 737-400, 737-500)",
+      },
+      logo: "/airline-logos/ec/aeroregional.png",
+      logoExplainer:
+        "Features a modern typographic wordmark with a distinctive red-orange accent curved above the letter 'g', representing high-altitude flight trails crossing Ecuador's Andean cordilleras and connecting regional communities.",
+      sources: [
+        "https://aeroregional.net/",
+        "https://en.wikipedia.org/wiki/Aeroregional",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ec-latam-ecuador",
+      countryCode: "EC",
+      name: "LATAM Airlines Ecuador",
+      iata: "XL",
+      icao: "LNE",
+      founded: 2003,
+      alliance: "None",
+      hubs: ["Mariscal Sucre International Airport (UIO - Quito)", "José Joaquín de Olmedo International Airport (GYE - Guayaquil)"],
+      fleet: {
+        total: 4,
+        summary: "4 aircraft (Airbus A319-100, A320-200)",
+      },
+      logo: "/airline-logos/ec/latam-ecuador.svg",
+      logoExplainer:
+        "Carries the unified LATAM indigo and coral ribbon motif outlining the South American continent, symbolizing connection across the Andes, the Galápagos Islands, and the Pacific coastline.",
+      sources: [
+        "https://www.latamairlines.com/ec/es",
+        "https://en.wikipedia.org/wiki/LATAM_Ecuador",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Paraguay
+  PY: [
+    {
+      id: "py-paranair",
+      countryCode: "PY",
+      name: "Paranair",
+      iata: "ZP",
+      icao: "AZP",
+      founded: 2015,
+      alliance: "None",
+      hubs: ["Silvio Pettirossi International Airport (ASU - Asunción)"],
+      fleet: {
+        total: 3,
+        summary: "3 aircraft (Bombardier CRJ-200ER)",
+      },
+      logo: "/airline-logos/py/paranair.svg",
+      logoExplainer:
+        "Features a stylized flight chevron in red and deep navy blue. The red and navy colors reflect the Paraguayan national flag, while the name honors the mighty Paraná River that forms Paraguay's natural border and vital economic artery.",
+      sources: [
+        "https://www.paranair.com/",
+        "https://en.wikipedia.org/wiki/Paranair",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "py-latam-paraguay",
+      countryCode: "PY",
+      name: "LATAM Airlines Paraguay",
+      iata: "PZ",
+      icao: "LAP",
+      founded: 1962,
+      alliance: "None",
+      hubs: ["Silvio Pettirossi International Airport (ASU - Asunción)"],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Airbus A320-200 operated via LATAM Group)",
+      },
+      logo: "/airline-logos/py/latam-paraguay.svg",
+      logoExplainer:
+        "Carries the unified LATAM ribbon insignia outlining the South American continent, representing the airline's historic lineage from LAP (Líneas Aéreas Paraguayas) and its role connecting landlocked Paraguay with regional and intercontinental destinations.",
+      sources: [
+        "https://www.latamairlines.com/py/es",
+        "https://en.wikipedia.org/wiki/LATAM_Paraguay",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Venezuela
+  VE: [
+    {
+      id: "ve-conviasa",
+      countryCode: "VE",
+      name: "Conviasa",
+      iata: "V0",
+      icao: "VCV",
+      founded: 2004,
+      alliance: "None",
+      hubs: [
+        "Simón Bolívar International Airport (CCS - Maiquetía/Caracas)",
+        "General José Antonio Anzoátegui International Airport (BLA - Barcelona)",
+      ],
+      fleet: {
+        total: 16,
+        summary: "16 aircraft (Airbus A340-200, A340-300, A340-600; Embraer E190; Cessna 208 Caravan; ATR 42-400)",
+      },
+      logo: "/airline-logos/ve/conviasa.svg",
+      logoExplainer:
+        "Features a bold orange-and-blue aerodynamic design with a stylized wing in supersonic flight. Warm orange reflects Venezuelan sunshine, tropical warmth, and vitality, while deep blue represents the expansive Caribbean skies.",
+      sources: [
+        "https://www.conviasa.aero/",
+        "https://en.wikipedia.org/wiki/Conviasa",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ve-laser-airlines",
+      countryCode: "VE",
+      name: "Laser Airlines",
+      iata: "QL",
+      icao: "LER",
+      founded: 1993,
+      alliance: "None",
+      hubs: ["Simón Bolívar International Airport (CCS - Caracas)"],
+      fleet: {
+        total: 11,
+        summary: "11 aircraft (McDonnell Douglas MD-82, MD-83; Airbus A320-200)",
+      },
+      logo: "/airline-logos/ve/laser-airlines.svg",
+      logoExplainer:
+        "Features a green and yellow emblem depicting stylized aerodynamic wings emerging outward from a central circular focus, symbolizing punctuality, executive precision, and warmth in Venezuelan commercial aviation.",
+      sources: [
+        "https://www.laserairlines.com/",
+        "https://en.wikipedia.org/wiki/Laser_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Guyana
+  GY: [
+    {
+      id: "gy-trans-guyana-airways",
+      countryCode: "GY",
+      name: "Trans Guyana Airways",
+      iata: "TGY",
+      icao: "TGY",
+      founded: 1956,
+      alliance: "None",
+      hubs: ["Eugene F. Correia International Airport (OGL - Ogle / Georgetown)"],
+      fleet: {
+        total: 10,
+        summary: "10 aircraft (Beechcraft 1900D, Cessna 208B Grand Caravan, Britten-Norman BN-2 Islander)",
+      },
+      logo: "/airline-logos/gy/trans-guyana-airways.png",
+      logoExplainer:
+        "Features the letters TGA set inside a bold winged shield insignia with green and golden stripes, echoing the national colors of Guyana's 'Golden Arrowhead' flag and symbolizing aerial connectivity between coastal Georgetown and interior rainforests.",
+      sources: [
+        "https://transguyana.net/",
+        "https://en.wikipedia.org/wiki/Trans_Guyana_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Suriname
+  SR: [
+    {
+      id: "sr-surinam-airways",
+      countryCode: "SR",
+      name: "Surinam Airways (SLM)",
+      iata: "PY",
+      icao: "SLM",
+      founded: 1953,
+      alliance: "None",
+      hubs: ["Johan Adolf Pengel International Airport (PBM - Paramaribo/Zanderij)"],
+      fleet: {
+        total: 3,
+        summary: "3 aircraft (Boeing 737-800, Airbus A340-300)",
+      },
+      logo: "/airline-logos/sr/surinam-airways.png",
+      logoExplainer:
+        "Features a soaring red Sabaku bird (little blue heron native to Suriname's coastal wetlands) cresting above royal blue water waves, symbolizing grace, resilience, and Surinamese national pride connecting South America with Europe.",
+      sources: [
+        "https://www.flyslm.com/",
+        "https://en.wikipedia.org/wiki/Surinam_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "sr-gum-air",
+      countryCode: "SR",
+      name: "Gum Air",
+      iata: "GUM",
+      icao: "GUM",
+      founded: 1964,
+      alliance: "None",
+      hubs: ["Zorg en Hoop Airport (ORG - Paramaribo)"],
+      fleet: {
+        total: 11,
+        summary: "11 aircraft (Cessna 208 Grand Caravan, de Havilland Canada DHC-6 Twin Otter, Cessna 206)",
+      },
+      logo: "/airline-logos/sr/gum-air.svg",
+      logoExplainer:
+        "Features a bold green and golden wordmark with a winged motif above the typography, reflecting the lush Amazonian rainforest canopy of Suriname and the Gummels family's pioneering aviation legacy linking remote interior airstrips.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Gum_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
