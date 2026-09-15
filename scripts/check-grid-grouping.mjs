@@ -143,8 +143,18 @@ for (const isModernEra of [true, false]) {
 // 3. Verify airline and broadcaster data grouping by subcontinent
 console.log("Checking commercial airlines and public broadcasters subcontinent grouping data...");
 
-const { COMMERCIAL_AIRLINES } = await import("../src/data/commercialAirlines.ts");
-const { PUBLIC_BROADCASTERS } = await import("../src/data/publicBroadcasters.ts");
+const loadTsModule = (filePath) => {
+  const content = fs.readFileSync(filePath, "utf8");
+  const js = ts.transpileModule(content, {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText;
+  const mod = { exports: {} };
+  vm.runInNewContext(js, { module: mod, exports: mod.exports });
+  return mod.exports;
+};
+
+const { COMMERCIAL_AIRLINES } = loadTsModule(path.join(root, "src/data/commercialAirlines.ts"));
+const { PUBLIC_BROADCASTERS } = loadTsModule(path.join(root, "src/data/publicBroadcasters.ts"));
 
 // Ensure all airlines have valid country codes and non-empty metadata
 let totalAirlines = 0;
