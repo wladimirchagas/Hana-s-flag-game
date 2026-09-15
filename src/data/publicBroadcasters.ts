@@ -834,6 +834,171 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Rádio e Televisão de Timor-Leste public enterprise trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Japan
+  JP: [
+    {
+      id: "jp-nhk",
+      countryCode: "JP",
+      name: "NHK",
+      officialName: "Nippon Hōsō Kyōkai (日本放送協会 / Japan Broadcasting Corporation)",
+      founded: 1926,
+      primaryFunding: "Statutory receiving fee system (受信料 / Jushinryō) paid by TV-owning households and businesses under the Broadcast Act; 100% commercial-free with zero tax revenue and no advertising",
+      headquarters: "Jinnan, Shibuya, Tokyo (NHK Broadcasting Center)",
+      annualPublicFunding: {
+        total: "¥624.4 billion receiving fee revenue (approx. US$4.15 billion, NHK FY 2023–24 Financial Report)",
+        perCapita: "approx. ¥5,020 / person / year (approx. US$33.50 / person / year)",
+      },
+      dailyMarketShare: "22.3% prime-time national audience share across NHK General and Educational TV (Video Research Ltd. 2024); NHK News 7 is Japan's most-watched daily evening newscast",
+      brandTrustScore: {
+        score: "57%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news organization in Japan, outranking all national commercial networks and daily newspapers)",
+      },
+      localContentQuota: "Over 85% domestic programming quota under the Broadcast Act; operates 54 domestic broadcasting stations across all 47 prefectures with extensive regional news and disaster warning responsibilities",
+      staffHeadcount: "10,150 regular employees (NHK Corporate Profile 2024)",
+      logo: "/broadcaster-logos/jp/nhk.svg",
+      logoExplainer:
+        "Updated in 2020 for the digital and 8K era, the minimalist NHK logo features the three Latin letters in bold geometric sans-serif enclosed within soft rounded rectangular containers. The design preserves the iconic three-egg spatial layout introduced in 1995 while simplifying contours for legibility on ultra-high-definition displays and mobile applications.",
+      sources: [
+        "https://www.nhk.or.jp/corporateinfo/",
+        "https://www.nhk.or.jp/pr/keiei/kessan/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/japan",
+      ],
+      licenceNote: "NHK Japan Broadcasting Corporation registered trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // South Korea
+  KR: [
+    {
+      id: "kr-kbs",
+      countryCode: "KR",
+      name: "KBS",
+      officialName: "Korean Broadcasting System (한국방송공사 / 韓國放送公社)",
+      founded: 1927,
+      primaryFunding: "Hybrid model: Statutory television receiving fee (수신료 / 2,500 KRW/month per household) accounting for ~45% of budget, supplemented by commercial advertising on KBS2 and digital service revenue (KBS1 is 100% advertisement-free)",
+      headquarters: "13 Yeouigongwon-ro, Yeongdeungpo-gu, Seoul (Yeouido Broadcasting HQ)",
+      annualPublicFunding: {
+        total: "675.8 billion KRW receiving fee revenue (approx. US$510 million, KBS Annual Business Report FY 2023–24)",
+        perCapita: "13,070 KRW / citizen / year (approx. US$9.85 / citizen / year)",
+      },
+      dailyMarketShare: "14.8% combined national free-to-air TV viewing share across KBS1 and KBS2 (Nielsen Korea 2024); KBS News 9 remains the flagship national daily news bulletin",
+      brandTrustScore: {
+        score: "55%",
+        source: "Reuters Institute Digital News Report 2024 (consistently ranks among the top 2 broadcast news organizations in Korea; #1 media brand for overall public influence in Korea Press Foundation surveys)",
+      },
+      localContentQuota: "80% domestic production quota under the Korea Communications Commission (KCC) regulations, with mandatory investment into independent domestic drama, documentary, and historical sagas",
+      staffHeadcount: "4,450 full-time staff across Seoul headquarters and 18 regional stations (KBS Management Information 2024)",
+      logo: "/broadcaster-logos/kr/kbs.svg",
+      logoExplainer:
+        "Refreshed for its 50th public broadcasting anniversary in 2023, the KBS emblem features an optical geometric 'K' formed by radiating concentric arcs in cobalt blue. The circular wave motif symbolizes terrestrial sound and television waves rippling across the Korean Peninsula, conveying national unity, democratic discourse, and universal public service.",
+      sources: [
+        "https://about.kbs.co.kr/",
+        "https://kcc.go.kr/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/south-korea",
+      ],
+      licenceNote: "Korean Broadcasting System registered trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // China
+  CN: [
+    {
+      id: "cn-cctv",
+      countryCode: "CN",
+      name: "CCTV",
+      officialName: "China Central Television (中国中央电视台), subsidiary of China Media Group (中央广播电视总台 / CMG)",
+      founded: 1958,
+      primaryFunding: "Commercial advertising revenue and content syndication under state ownership, supplemented by state budget allocations from the Ministry of Finance to China Media Group",
+      headquarters: "11 Fuxing Road, Haidian District & 32 East Third Ring Middle Road, Chaoyang District, Beijing",
+      annualPublicFunding: {
+        total: "approx. 2.06 billion CNY central ministerial budget allocation to CMG (approx. US$285 million, Ministry of Finance FY 2024; commercial advertising revenue exceeds 15 billion CNY)",
+        perCapita: "approx. 1.46 CNY / citizen / year (approx. US$0.20 / citizen)",
+      },
+      dailyMarketShare: "29.8% national TV viewing market share across 40+ broadcast channels (CSM Media Research 2024); Xinwen Lianbo (Evening News) is the world's most-watched daily news broadcast",
+      brandTrustScore: {
+        score: "State broadcaster",
+        source: "National Radio and Television Administration (NRTA official flagship media organization with nationwide universal carriage)",
+      },
+      localContentQuota: "Over 90% domestic production quota across national broadcast schedules under NRTA guidelines, with strict quotas on prime-time historical, educational, and patriotic programming",
+      staffHeadcount: "10,000+ journalists, editors, and production staff across China Media Group (CMG Corporate Overview 2024)",
+      logo: "/broadcaster-logos/cn/cctv.svg",
+      logoExplainer:
+        "The iconic CCTV logo features the bold Latin letterforms 'CCTV' in solid black and cadmium red. The second 'C' and central stroke are rendered in vibrant Chinese red, visually emphasizing the television screen and China's national color, reflecting institutional authority and global broadcasting reach.",
+      sources: [
+        "https://tv.cctv.com/",
+        "http://www.nrta.gov.cn/",
+        "http://www.mof.gov.cn/",
+      ],
+      licenceNote: "China Central Television / China Media Group registered trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Mongolia
+  MN: [
+    {
+      id: "mn-mnb",
+      countryCode: "MN",
+      name: "MNB",
+      officialName: "Mongolian National Public Radio and Television (Монголын Үндэсний Олон Нийтийн Радио Телевиз / MNB)",
+      founded: 1967,
+      primaryFunding: "Hybrid public model: State budget subsidy (approx. 41%) and compulsory household radio/TV levy (approx. 39%, collected via monthly electricity utility bills) under the Law on Public Radio and Television, supplemented by commercial advertising (capped at 2 hours/day)",
+      headquarters: "Khoroo 3, Bayangol District, Ulaanbaatar",
+      annualPublicFunding: {
+        total: "14.2 billion MNT statutory public envelope (approx. US$4.15 million, MNB Financial Audit 2023–24)",
+        perCapita: "4,050 MNT / citizen / year (approx. US$1.18 / citizen / year)",
+      },
+      dailyMarketShare: "19.5% national audience share across MNB-1, MNB News, and MNB Sport; remains the sole nationwide network accessible across remote nomadic aimags and soums via terrestrial repeaters",
+      brandTrustScore: {
+        score: "68%",
+        source: "Press Institute of Mongolia Media Monitoring Report 2024 (recognized as the most reliable source for meteorological alerts, rural pastoral news, and democratic civic affairs)",
+      },
+      localContentQuota: "Minimum 60% domestic production requirement under the Public Radio and Television Law, delivering cultural documentaries, traditional folk music, and nomadic heritage programming",
+      staffHeadcount: "720 journalists, technical staff, and provincial correspondents (MNB Annual Report 2024)",
+      logo: "/broadcaster-logos/mn/mnb.svg",
+      logoExplainer:
+        "The MNB emblem features a circular turquoise-blue disc bearing the acronym 'MNB' and a stylized depiction of the traditional Soyombo fire symbol and nomadic sun-and-moon emblem in golden yellow. The cosmic Soyombo motifs represent the eternal flame of national independence and prosperity across the Eurasian steppe.",
+      sources: [
+        "https://www.mnb.mn/",
+        "https://crc.gov.mn/en",
+        "https://statemediamonitor.com/services/mongolian-national-broadcaster-mnb/",
+      ],
+      licenceNote: "Mongolian National Public Radio and Television trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // North Korea
+  KP: [
+    {
+      id: "kp-kctv",
+      countryCode: "KP",
+      name: "KCTV",
+      officialName: "Korean Central Television (조선중앙텔레비죤 / 朝鮮中央텔레비죤)",
+      founded: 1963,
+      primaryFunding: "100% direct state budget financing administered by the Korean Central Broadcasting Committee under the Workers' Party of Korea; zero commercial advertising",
+      headquarters: "Moranbong District, Pyongyang (Pyongyang TV Tower Broadcast Complex)",
+      annualPublicFunding: {
+        total: "Integrated into annual DPRK state expenditure budget (broadcast operations funded via central cultural/ideological envelope; specific fiscal accounts classified)",
+        perCapita: "State-funded universal public amenity",
+      },
+      dailyMarketShare: "Monopoly state terrestrial broadcaster; primary official visual information medium for the domestic population across PAL/DVB-T2 transmission systems and Manbang IPTV network",
+      brandTrustScore: {
+        score: "Official state broadcaster",
+        source: "Korean Central Broadcasting Committee (authoritative official voice of state leadership, military announcements, and national celebrations)",
+      },
+      localContentQuota: "100% domestic programming in standard Pyongyang dialect, encompassing state documentary chronicles, ideological lectures, theatrical music performances, and educational children's programming",
+      staffHeadcount: "1,500+ production, technical, and broadcast engineering personnel (Pyongyang Central Media Directorate 2024)",
+      logo: "/broadcaster-logos/kp/kctv.svg",
+      logoExplainer:
+        "The KCTV emblem features a stylized depiction of the flame from the Juche Tower in bright crimson, set against radiating golden telecommunication rays. The torch flame embodies ideological self-reliance, sovereignty, and state revolutionary leadership, while the radiant golden flares represent the illumination of society through socialist mass broadcasting.",
+      sources: [
+        "http://www.uriminzokkiri.com/",
+        "https://statemediamonitor.com/services/korean-central-television-kctv/",
+      ],
+      licenceNote: "Korean Central Television national state emblem and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
 
 
