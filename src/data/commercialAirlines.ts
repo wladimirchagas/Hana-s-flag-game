@@ -5217,6 +5217,229 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  KG: [
+    {
+      id: "kg-avia-traffic",
+      countryCode: "KG",
+      name: "Avia Traffic Company",
+      iata: "YK",
+      icao: "AVJ",
+      founded: 2001,
+      alliance: "None",
+      hubs: [
+        "Manas International Airport (FRU)",
+        "Osh International Airport (OSS)",
+      ],
+      fleet: {
+        total: 7,
+        summary: "7 aircraft (Boeing 737-300, Airbus A320-200)",
+      },
+      logo: "/airline-logos/kg/avia-traffic.png",
+      logoExplainer:
+        "Features dynamic winged arrowheads in burgundy and sky-blue paired with bold bilingual Cyrillic and Latin typography, symbolizing dependable air transport connecting Bishkek and Osh across the Tien Shan mountains to Central Asia and Russia.",
+      sources: [
+        "https://www.aero.kg/",
+        "https://en.wikipedia.org/wiki/Avia_Traffic_Company",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "kg-aero-nomad",
+      countryCode: "KG",
+      name: "Aero Nomad Airlines",
+      iata: "KA",
+      icao: "ANK",
+      founded: 2021,
+      alliance: "None",
+      hubs: [
+        "Manas International Airport (FRU)",
+        "Osh International Airport (OSS)",
+      ],
+      fleet: {
+        total: 4,
+        summary: "4 aircraft (Airbus A320-200)",
+      },
+      logo: "/airline-logos/kg/aero-nomad.png",
+      logoExplainer:
+        "Features an aerodynamic nomad eagle-feather wing in vibrant crimson and gold, inspired by nomadic Kyrgyz falconry traditions and modern international low-cost connectivity.",
+      sources: [
+        "https://www.aeronomad.kg/",
+        "https://en.wikipedia.org/wiki/Aero_Nomad_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  TJ: [
+    {
+      id: "tj-somon-air",
+      countryCode: "TJ",
+      name: "Somon Air",
+      iata: "SZ",
+      icao: "SMR",
+      founded: 2008,
+      alliance: "None",
+      hubs: [
+        "Dushanbe International Airport (DYU)",
+        "Khujand Airport (LBD)",
+      ],
+      fleet: {
+        total: 8,
+        summary: "8 aircraft (Boeing 737-800, Boeing 737-900ER)",
+      },
+      logo: "/airline-logos/tj/somon-air.png",
+      logoExplainer:
+        "Features a magnificent stylized golden crown and soaring sunburst crest, honoring the Samanid dynasty founder Ismail Somoni and Tajik sovereignty, combined with the deep royal blue 'SOMON AIR' wordmark.",
+      sources: [
+        "https://www.somonair.com/",
+        "https://en.wikipedia.org/wiki/Somon_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  DZ: [
+    {
+      id: "dz-air-algerie",
+      countryCode: "DZ",
+      name: "Air Algérie",
+      iata: "AH",
+      icao: "DAH",
+      founded: 1947,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Houari Boumediene Airport (ALG)",
+        "Ahmed Ben Bella Airport (ORN)",
+        "Mohamed Boudiaf International Airport (CZL)",
+      ],
+      fleet: {
+        total: 56,
+        summary:
+          "56 aircraft (Airbus A330-200, Boeing 737-800, Boeing 737-700C, Boeing 737-600, ATR 72-500, ATR 72-600; A330-900neo and A350-1000 on order)",
+      },
+      logo: "/airline-logos/dz/air-algerie.svg",
+      logoExplainer:
+        "Features the graceful, stylized silhouette of a soaring hirondelle (desert swallow) in scarlet red encircled in white, representing freedom, reliable navigation, and Algerian air connectivity across the Sahara, the Mediterranean, and worldwide.",
+      sources: [
+        "https://airalgerie.dz/",
+        "https://en.wikipedia.org/wiki/Air_Alg%C3%A9rie",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  TN: [
+    {
+      id: "tn-tunisair",
+      countryCode: "TN",
+      name: "Tunisair",
+      iata: "TU",
+      icao: "TAR",
+      founded: 1948,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Tunis–Carthage International Airport (TUN)",
+        "Monastir Habib Bourguiba International Airport (MIR)",
+        "Djerba–Zarzis International Airport (DJE)",
+      ],
+      fleet: {
+        total: 28,
+        summary:
+          "28 aircraft (Airbus A330-200, Airbus A320neo, Airbus A320-200)",
+      },
+      logo: "/airline-logos/tn/tunisair.svg",
+      logoExplainer:
+        "Features the legendary scarlet Dorcas gazelle (la gazelle de Tunisair), a historic emblem adopted in 1948 symbolizing Mediterranean grace, agility, and swift flight across North Africa and Europe.",
+      sources: [
+        "https://www.tunisair.com/",
+        "https://en.wikipedia.org/wiki/Tunisair",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "tn-nouvelair",
+      countryCode: "TN",
+      name: "Nouvelair",
+      iata: "BJ",
+      icao: "LBT",
+      founded: 1989,
+      alliance: "None",
+      hubs: [
+        "Monastir Habib Bourguiba International Airport (MIR)",
+        "Tunis–Carthage International Airport (TUN)",
+      ],
+      fleet: {
+        total: 15,
+        summary: "15 aircraft (Airbus A320-200, Airbus A320neo)",
+      },
+      logo: "/airline-logos/tn/nouvelair.svg",
+      logoExplainer:
+        "Features clean azure and navy wings forming an aerodynamic letterform with a radiant golden compass star, expressing welcoming holiday flights and modern private aviation in Tunisia.",
+      sources: [
+        "https://www.nouvelair.com/",
+        "https://en.wikipedia.org/wiki/Nouvelair",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  LY: [
+    {
+      id: "ly-libyan-airlines",
+      countryCode: "LY",
+      name: "Libyan Airlines",
+      iata: "LN",
+      icao: "LAA",
+      founded: 1964,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Mitiga International Airport (MJI)",
+        "Benina International Airport (BEN)",
+        "Misrata Airport (MRA)",
+      ],
+      fleet: {
+        total: 7,
+        summary:
+          "7 aircraft (Airbus A330-200, Airbus A320-200, Bombardier CRJ900)",
+      },
+      logo: "/airline-logos/ly/libyan-airlines.png",
+      logoExplainer:
+        "Displays a stylized golden winged falcon emblem soaring upwards within a green crescent garland, symbolizing historical resilience, Libyan sovereignty, and civil aviation renewal.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Libyan_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ly-afriqiyah-airways",
+      countryCode: "LY",
+      name: "Afriqiyah Airways",
+      iata: "8U",
+      icao: "AAW",
+      founded: 2001,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Mitiga International Airport (MJI)",
+        "Benina International Airport (BEN)",
+        "Misrata Airport (MRA)",
+      ],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Airbus A330-300, Airbus A320-200)",
+      },
+      logo: "/airline-logos/ly/afriqiyah-airways.svg",
+      logoExplainer:
+        "Features the historic '9.9.99' emblem rendered in vibrant red, green, and gold dots arranged like a joyful smiling face, commemorating the Sirte Declaration of 9 September 1999 establishing the African Union and continental unity.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Afriqiyah_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
