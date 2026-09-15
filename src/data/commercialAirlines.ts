@@ -6450,6 +6450,144 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and historic logo bundled for educational reference in Learn mode.",
     },
   ],
+  NR: [
+    {
+      id: "nr-nauru-airlines",
+      countryCode: "NR",
+      name: "Nauru Airlines",
+      iata: "ON",
+      icao: "RON",
+      founded: 1969,
+      alliance: "None",
+      hubs: [
+        "Nauru International Airport (INU)",
+        "Brisbane Airport (BNE)",
+      ],
+      fleet: {
+        total: 7,
+        summary:
+          "7 aircraft (Boeing 737-700, Boeing 737-800, Boeing 737-300F)",
+      },
+      logo: "/airline-logos/nr/nauru-airlines.svg",
+      logoExplainer:
+        "Features the brilliant twelve-pointed white star of Nauru—representing the twelve original tribes and indigenous unity—encircled by a soaring Pacific blue bird and clean aerodynamic speed ribbons, symbolizing island sovereignty and vital aerial lifelines connecting Central Pacific communities to Australia and Micronesia.",
+      sources: [
+        "https://www.nauruair.com/",
+        "https://en.wikipedia.org/wiki/Nauru_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  KI: [
+    {
+      id: "ki-air-kiribati",
+      countryCode: "KI",
+      name: "Air Kiribati",
+      iata: "IK",
+      icao: "AKL",
+      founded: 1995,
+      alliance: "None",
+      hubs: [
+        "Bonriki International Airport (TRW)",
+        "Cassidy International Airport (CXI)",
+      ],
+      fleet: {
+        total: 6,
+        summary:
+          "6 aircraft (De Havilland Canada Dash 8-100, DHC-6 Twin Otter, Harbin Y-12)",
+      },
+      logo: "/airline-logos/ki/air-kiribati.svg",
+      logoExplainer:
+        "Features the majestic Frigatebird (Fregata minor, the national bird of Kiribati symbolizing maritime mastery and freedom) soaring in flight across a radiant gold equatorial sun and pacific blue waves drawn directly from the national flag of Kiribati.",
+      sources: [
+        "https://www.airkiribati.com.ki/",
+        "https://en.wikipedia.org/wiki/Air_Kiribati",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  MH: [
+    {
+      id: "mh-air-marshall-islands",
+      countryCode: "MH",
+      name: "Air Marshall Islands",
+      iata: "CW",
+      icao: "CWM",
+      founded: 1980,
+      alliance: "None",
+      hubs: ["Marshall Islands International Airport (MAJ)"],
+      fleet: {
+        total: 4,
+        summary:
+          "4 aircraft (Bombardier Dash 8-100, Dornier 228)",
+      },
+      logo: "/airline-logos/mh/air-marshall-islands.png",
+      logoExplainer:
+        "Features dynamic sweeping flight bands and the stylized twenty-four pointed star of the Marshall Islands, representing the electoral districts and oceanic navigation across the Ratak and Ralik island chains.",
+      sources: [
+        "https://www.airmarshallislands.net/",
+        "https://en.wikipedia.org/wiki/Air_Marshall_Islands",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  MC: [
+    {
+      id: "mc-heli-air-monaco",
+      countryCode: "MC",
+      name: "Heli Air Monaco",
+      iata: "YO",
+      icao: "MCM",
+      founded: 1976,
+      alliance: "None",
+      hubs: ["Monaco Heliport (MCM)"],
+      fleet: {
+        total: 14,
+        summary:
+          "14 aircraft (Airbus Helicopters H130, Eurocopter AS350 Écureuil)",
+      },
+      logo: "/airline-logos/mc/heli-air-monaco.svg",
+      logoExplainer:
+        "Features the red and white heraldic lozenges of the Grimaldi House of Monaco stylized into an aerodynamic rotor blade and soaring wing crest, reflecting royal Mediterranean elegance, punctuality, and rapid scheduled international transit connecting Monaco to Nice Côte d'Azur Airport.",
+      sources: [
+        "https://www.heliairmonaco.com/",
+        "https://en.wikipedia.org/wiki/Heli_Air_Monaco",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  PS: [
+    {
+      id: "ps-palestinian-airlines",
+      countryCode: "PS",
+      name: "Palestinian Airlines",
+      iata: "PF",
+      icao: "PNW",
+      founded: 1995,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Yasser Arafat International Airport (GZA)",
+        "El Arish International Airport (AAC)",
+      ],
+      fleet: {
+        total: 2,
+        summary:
+          "Historic operations operated Boeing 727-200 and Fokker 50 connecting Gaza and El Arish to regional capitals",
+      },
+      logo: "/airline-logos/ps/palestinian-airlines.png",
+      logoExplainer:
+        "Features the stylized Palestinian sunburst and flight wings adorned with the pan-Arab national colors (black, white, green, and red), symbolizing national identity, perseverance, and civil aviation history connecting Gaza to Cairo, Amman, Jeddah, and Dubai.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Palestinian_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and historic logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
