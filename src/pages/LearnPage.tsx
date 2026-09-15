@@ -1519,12 +1519,14 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         setGridCrest(
           crestId && gridContentType === "footballcrest" ? { id: crestId, parent: parentCode } : null,
         );
-        setGridAirlineId(
-          airlineId && gridContentType === "airline" ? airlineId : null,
-        );
-        setGridBroadcasterId(
-          broadcasterId && gridContentType === "broadcaster" ? broadcasterId : null,
-        );
+        if (airlineId) {
+          setGridAirlineId(airlineId);
+          setGridContentType("airline");
+        }
+        if (broadcasterId) {
+          setGridBroadcasterId(broadcasterId);
+          setGridContentType("broadcaster");
+        }
       }
     } else {
       const sel = selectionFromPolityName(id);
