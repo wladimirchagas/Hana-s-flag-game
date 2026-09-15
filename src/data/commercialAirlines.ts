@@ -4689,6 +4689,173 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  JM: [
+    {
+      id: "jm-air-jamaica",
+      countryCode: "JM",
+      name: "Air Jamaica",
+      iata: "JM",
+      icao: "AJM",
+      founded: 1968,
+      alliance: "None",
+      hubs: [
+        "Norman Manley International Airport (KIN)",
+        "Sangster International Airport (MBJ)",
+      ],
+      fleet: {
+        total: 10,
+        summary:
+          "Historic operations operated Airbus A340-300, A321-200, and A320-200; operations merged into Caribbean Airlines serving Jamaica's international routes with Boeing 737 MAX 8 and ATR 72-600",
+      },
+      logo: "/airline-logos/jm/air-jamaica.svg",
+      logoExplainer:
+        "Features the iconic doctor bird (streamertail hummingbird, the national bird of Jamaica) in dynamic flight rendered with vivid green, golden-yellow, and black plumage reflecting the Jamaican national colors, accompanied by the classic cursive 'air Jamaica' wordmark.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Air_Jamaica",
+        "https://www.caribbean-airlines.com/",
+      ],
+      licenceNote:
+        "Commercial airline trademark and historic logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  HT: [
+    {
+      id: "ht-sunrise-airways",
+      countryCode: "HT",
+      name: "Sunrise Airways",
+      iata: "S6",
+      icao: "KSZ",
+      founded: 2010,
+      alliance: "None",
+      hubs: [
+        "Toussaint Louverture International Airport (PAP)",
+        "Cap-Haïtien International Airport (CAP)",
+      ],
+      fleet: {
+        total: 7,
+        summary:
+          "7 aircraft (Airbus A320-200 leased, Embraer EMB 120 Brasilia, British Aerospace Jetstream 32, Cessna 208B Grand Caravan)",
+      },
+      logo: "/airline-logos/ht/sunrise-airways.svg",
+      logoExplainer:
+        "Features a stylized rising sun with radiant orange, golden-yellow, and sky-blue geometric rays rising above the bold 'SUNRISE AIRWAYS' wordmark, symbolizing a bright dawn, regional renewal, and resilience for Haitian commercial aviation.",
+      sources: [
+        "https://sunriseairways.net/",
+        "https://en.wikipedia.org/wiki/Sunrise_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  HN: [
+    {
+      id: "hn-aerolineas-sosa",
+      countryCode: "HN",
+      name: "Aerolíneas Sosa",
+      iata: "SO",
+      icao: "NSO",
+      founded: 1976,
+      alliance: "None",
+      hubs: [
+        "Golosón International Airport (LCE)",
+        "Ramón Villeda Morales International Airport (SAP)",
+        "Toncontín International Airport (TGU)",
+      ],
+      fleet: {
+        total: 5,
+        summary:
+          "5 aircraft (Saab 340B, Bombardier CRJ100ER, British Aerospace Jetstream 31/32)",
+      },
+      logo: "/airline-logos/hn/aerolineas-sosa.png",
+      logoExplainer:
+        "Features an energetic script in deep navy reading 'Aerolíneas SOSA', underscored by dynamic red and royal blue aerodynamic swooshes symbolizing flight speed, dependable connectivity, and decades of vital passenger service across Honduras and the Bay Islands.",
+      sources: [
+        "https://es.wikipedia.org/wiki/Aerol%C3%ADneas_Sosa",
+        "https://en.wikipedia.org/wiki/Aerol%C3%ADneas_Sosa",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  NI: [
+    {
+      id: "ni-la-costena",
+      countryCode: "NI",
+      name: "La Costeña",
+      iata: "LC",
+      icao: "NIS",
+      founded: 1991,
+      alliance: "None",
+      hubs: ["Augusto C. Sandino International Airport (MGA)"],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (ATR 42-300, Cessna 208B Grand Caravan)",
+      },
+      logo: "/airline-logos/ni/la-costena.png",
+      logoExplainer:
+        "Displays the forward-leaning cursive wordmark 'La Costeña' in Pacific blue underscored by dynamic speed bands, representing continuous lifeline connections between Managua and the Atlantic coast, the Corn Islands, and rural Nicaraguan communities.",
+      sources: [
+        "https://www.lacostena.online/",
+        "https://en.wikipedia.org/wiki/La_Coste%C3%B1a_(airline)",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  SV: [
+    {
+      id: "sv-avianca-el-salvador",
+      countryCode: "SV",
+      name: "Avianca El Salvador (TACA)",
+      iata: "TA",
+      icao: "TAI",
+      founded: 1931,
+      alliance: "Star Alliance",
+      hubs: [
+        "El Salvador International Airport San Óscar Arnulfo Romero y Galdámez (SAL)",
+      ],
+      fleet: {
+        total: 16,
+        summary:
+          "16 aircraft (Airbus A320-200, Airbus A320neo, Airbus A319-100)",
+      },
+      logo: "/airline-logos/sv/taca.png",
+      logoExplainer:
+        "Features the storied insignia of TACA (Transportes Aéreos del Continente Americano), displaying five golden stylized scarlet macaws (guacamayas) flying in close formation. The five birds historically symbolized the solidarity of the five Central American republics, representing shared heritage and pioneering aviation across the Americas.",
+      sources: [
+        "https://www.avianca.com/",
+        "https://en.wikipedia.org/wiki/Avianca_El_Salvador",
+        "https://en.wikipedia.org/wiki/TACA_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and historical brand logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "sv-volaris-el-salvador",
+      countryCode: "SV",
+      name: "Volaris El Salvador",
+      iata: "N3",
+      icao: "VOS",
+      founded: 2019,
+      alliance: "None",
+      hubs: [
+        "El Salvador International Airport San Óscar Arnulfo Romero y Galdámez (SAL)",
+      ],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Airbus A320neo)",
+      },
+      logo: "/airline-logos/sv/volaris.svg",
+      logoExplainer:
+        "Showcases a distinctive pointillist constellation star composed of vibrant magenta, cyan, and white geometric pixels alongside the clean lowercase 'volaris' wordmark, symbolizing digital-first agility, affordable travel, and modern air connectivity across Central America.",
+      sources: [
+        "https://www.volaris.com/",
+        "https://en.wikipedia.org/wiki/Volaris_El_Salvador",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
