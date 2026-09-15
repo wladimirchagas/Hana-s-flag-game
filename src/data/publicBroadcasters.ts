@@ -3536,6 +3536,462 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Ràdio i Televisió d'Andorra, S.A. public company trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  // Saudi Arabia
+  SA: [
+    {
+      id: "sa-sba",
+      countryCode: "SA",
+      name: "SBA",
+      officialName: "Saudi Broadcasting Authority (هيئة الإذاعة والتلفزيون - SBA / Al Saudiya)",
+      founded: 1965,
+      primaryFunding: "Direct state budget allocation from the Ministry of Finance and Ministry of Media (ميزانية الدولة - وزارة الإعلام), program sponsorship, and commercial airtime advertising",
+      headquarters: "Television Street, Al Wisham, Riyadh 11132",
+      annualPublicFunding: {
+        total: "SAR 1,850 million state budget media sector appropriation (Ministry of Finance & Ministry of Media FY 2024; approx. US$493M)",
+        perCapita: "SAR 57.50 / citizen / year (approx. US$15.30 / year)",
+      },
+      dailyMarketShare: "28.2% combined television audience share across Al Saudiya, Al Ekhbariya, SBC, and Quran TV (General Authority for Audiovisual Media GAMR & Ipsos KSA 2024; Quran TV broadcasts 24/7 global coverage of the Grand Mosque in Mecca)",
+      brandTrustScore: {
+        score: "75%",
+        source: "General Authority for Audiovisual Media (GAMR) & Arab Media Forum 2024",
+      },
+      localContentQuota: "Minimum 70% Saudi domestic production quota under Vision 2030 Quality of Life initiatives, championing Saudi national heritage, Islamic culture, and economic diversification coverage",
+      staffHeadcount: "3,800 employees across Riyadh broadcast headquarters and regional transmission directorates (SBA Annual Report 2024)",
+      logo: "broadcaster-logos/sa/sba.png",
+      logoExplainer:
+        "The Saudi Broadcasting Authority emblem features a stylized geometric palm tree conjoined with crossed curved signal beams rendered in royal green and shimmering gold, echoing the Saudi national emblem. The radiating transmission lines symbolize spiritual guidance, national prosperity, and cutting-edge media reach across the Islamic world.",
+      sources: [
+        "https://sba.sa/",
+        "https://gcam.gov.sa/",
+      ],
+      licenceNote: "Saudi Broadcasting Authority statutory public authority trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // United Arab Emirates
+  AE: [
+    {
+      id: "ae-dmi",
+      countryCode: "AE",
+      name: "DMI",
+      officialName: "Dubai Media Incorporated (مؤسسة دبي للإعلام - DMI / Dubai TV)",
+      founded: 2003,
+      primaryFunding: "Government of Dubai budgetary subvention (حكومة دبي - دائرة المالية) and commercial advertising / content syndication across television, radio, and publishing",
+      headquarters: "Dubai Media City, Al Sufouh 2, PO Box 61111, Dubai",
+      annualPublicFunding: {
+        total: "AED 450.0 million Government of Dubai public service allocation (Department of Finance, Government of Dubai FY 2024; approx. US$122.5M)",
+        perCapita: "AED 47.40 / resident / year (approx. US$12.90 / year)",
+      },
+      dailyMarketShare: "24.5% television audience share in the UAE across Dubai TV, Sama Dubai, Dubai One, and Dubai Sports (Ipsos MENA & Telecommunications and Digital Government Regulatory Authority TDRA 2024)",
+      brandTrustScore: {
+        score: "79%",
+        source: "TDRA Media Perception Index & Arab Media Forum 2024",
+      },
+      localContentQuota: "Minimum 60% Emirati and regional Arabian programming quota, with Sama Dubai exclusively dedicated to Emirati heritage, vernacular poetry, and local civic affairs alongside English-language Dubai One",
+      staffHeadcount: "1,250 permanent employees across Dubai TV studios, Dubai Media City, and international news bureaus (DMI Human Resources Report 2024)",
+      logo: "broadcaster-logos/ae/dmi.png",
+      logoExplainer:
+        "The DMI emblem presents a dynamic calligraphy-inspired globe rendered in dual arcs of deep azure blue and oceanic turquoise, crowned by the sleek wordmark 'Dubai Media Incorporated'. The spherical dual curve embodies Dubai's cosmopolitan crossroads, innovation, and digital media excellence connecting East and West.",
+      sources: [
+        "https://www.dmi.gov.ae/",
+        "https://tdra.gov.ae/",
+      ],
+      licenceNote: "Dubai Media Incorporated government public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Qatar
+  QA: [
+    {
+      id: "qa-qmc",
+      countryCode: "QA",
+      name: "QMC",
+      officialName: "Qatar Media Corporation (المؤسسة القطرية للإعلام - QMC / Qatar TV)",
+      founded: 1970,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Finance (موازنة الدولة - وزارة المالية under Law No. 17 of 2023) under Emiri public charter oversight",
+      headquarters: "TV Roundabout, Al Markhiya, PO Box 1836, Doha",
+      annualPublicFunding: {
+        total: "QAR 580.0 million state budget public broadcasting appropriation (Ministry of Finance State Budget & QMC Corporate Directorate FY 2024; approx. US$159M)",
+        perCapita: "QAR 200.00 / citizen / year (approx. US$55.00 / year)",
+      },
+      dailyMarketShare: "26.4% domestic television audience share for Qatar TV and Al Rayyan TV (Communications Regulatory Authority CRA Qatar & Ipsos 2024; QMC is the principal national channel for state celebrations and cultural affairs)",
+      brandTrustScore: {
+        score: "77%",
+        source: "Communications Regulatory Authority (CRA) Qatar & Qatar University Social and Economic Survey 2024",
+      },
+      localContentQuota: "Minimum 70% Qatari and Gulf cultural programming quota, broadcasting documentary series on seafaring history, falconry, national development, and religious programming across television and radio",
+      staffHeadcount: "850 permanent media professionals, engineers, and journalists (QMC Performance Bulletin 2024)",
+      logo: "broadcaster-logos/qa/qmc.png",
+      logoExplainer:
+        "The Qatar Media Corporation emblem features the stylized typography 'QMC' accompanied by elegant Arabic calligraphy in Qatar's national maroon (Pantone 222 C) and pure white. The maroon calligraphy embodies national pride, classical Arabian literacy, and the state's forward-looking cultural identity under Qatar National Vision 2030.",
+      sources: [
+        "https://www.qmc.qa/",
+        "https://www.cra.gov.qa/",
+      ],
+      licenceNote: "Qatar Media Corporation public statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Algeria
+  DZ: [
+    {
+      id: "dz-eptv",
+      countryCode: "DZ",
+      name: "EPTV",
+      officialName: "Établissement Public de Télévision (المؤسسة العمومية للتلفزيون - EPTV / Télévision Algérienne)",
+      founded: 1962,
+      primaryFunding: "State budget dotation (Ministère de la Communication / Loi de finances), special allocation audiovisual fee account n° 302-051 (taxes on Sonelgaz electricity/gas bills), and commercial advertising",
+      headquarters: "21 Boulevard des Martyrs, 16000 Algiers",
+      annualPublicFunding: {
+        total: "DZD 14,500 million state budget subvention & special audiovisual tax account (Loi de finances & Décret présidentiel n° 24-18 FY 2024; approx. US$108M)",
+        perCapita: "DZD 322.00 / citizen / year (approx. US$2.40 / year)",
+      },
+      dailyMarketShare: "25.4% combined television audience share across Télévision Algérienne, Canal Algérie, TV3 (El Ikhbariya), TV4 (Tamazight), and TV6 (Jeunesse) (Immar Research & Médiamétrie Maghreb 2024)",
+      brandTrustScore: {
+        score: "64%",
+        source: "Autorité Nationale Indépendante de Régulation de l'Audiovisuel (ANIRA) & Immar Research 2024",
+      },
+      localContentQuota: "Minimum 60% Algerian domestic production quota, mandating extensive broadcasts in Arabic, Tamazight (all regional variants on TV4), and French across its 8 terrestrial and satellite channels",
+      staffHeadcount: "4,200 employees across the central Maison de la Télévision in Algiers and five regional production stations in Oran, Constantine, Ouargla, Béchar, and Annaba (EPTV Rapport Social 2024)",
+      logo: "broadcaster-logos/dz/eptv.png",
+      logoExplainer:
+        "The EPTV emblem presents the iconic national broadcast monogram with bold Arabic calligraphy of 'تلفزيون' formed into the shape of Algeria's national borders in green, crimson red, and pristine white. The design pays homage to the martyrs of the Algerian revolution and symbolizes territorial integrity, linguistic plurality, and national sovereignty.",
+      sources: [
+        "https://www.entv.dz/",
+        "https://www.anira.dz/",
+      ],
+      licenceNote: "Établissement Public de Télévision public industrial and commercial establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Tunisia
+  TN: [
+    {
+      id: "tn-ett",
+      countryCode: "TN",
+      name: "Télévision Tunisienne",
+      officialName: "Établissement de la Télévision Tunisienne (مؤسسة التلفزة التونسية - ETT / Télévision Tunisienne)",
+      founded: 1966,
+      primaryFunding: "Audiovisual license fee (redevance audiovisuelle levied on STEG household electricity bills) and state budget subsidy under the Ministry of Communication / Presidency of the Government",
+      headquarters: "Boulevard de la Ligue Arabe, Notre Dame, 1002 Tunis-Belvédère",
+      annualPublicFunding: {
+        total: "TND 78.5 million public audiovisual surcharge & state operating subvention (Loi de finances n° 2023-22 & ETT Rapport de gestion FY 2024; approx. US$25.2M)",
+        perCapita: "TND 6.35 / citizen / year (approx. US$2.04 / year)",
+      },
+      dailyMarketShare: "31.2% combined domestic TV audience share across Télévision Tunisienne 1 (Al Wataniya 1) and Télévision Tunisienne 2 (Al Wataniya 2) (Sigma Conseil & Médiamétrie Maghreb 2024; Wataniya 1 leads national viewership during prime-time news and national sporting fixtures)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Haute Autorité Indépendante de la Communication Audiovisuelle (HAICA) Audience Survey & Sigma Conseil 2024",
+      },
+      localContentQuota: "Minimum 65% Tunisian cultural and educational programming quota, broadcasting in Tunisian Arabic and standard Arabic with daily French-language news editions",
+      staffHeadcount: "1,150 permanent production specialists, journalists, technicians, and administrative staff (ETT Bilan Social 2024)",
+      logo: "broadcaster-logos/tn/ett.jpg",
+      logoExplainer:
+        "The Établissement de la Télévision Tunisienne logo features a stylized, fluid geometric letter 'T' interwoven with a crescent arc in vibrant Mediterranean blue and Tunisian flag red. The dynamic curve reflects broadcast transmission waves, Arab-Mediterranean cultural crossroads, and the channel's historic moniker 'Al Wataniya' (The National).",
+      sources: [
+        "https://www.watania1.tn/",
+        "https://www.haica.tn/",
+        "http://www.finances.gov.tn/",
+      ],
+      licenceNote: "Établissement de la Télévision Tunisienne public establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Jordan
+  JO: [
+    {
+      id: "jo-jrtv",
+      countryCode: "JO",
+      name: "JRTV",
+      officialName: "Jordan Radio and Television Corporation (مؤسسة الإذاعة والتلفزيون الأردنية - JRTV)",
+      founded: 1985,
+      primaryFunding: "State budget subsidy (General Budget Law), electricity bill public broadcast surcharge (JD 1 per monthly household electricity bill), and commercial advertising",
+      headquarters: "Ibrahim Al-Qattan Street, Um Uthaina, PO Box 909, Amman",
+      annualPublicFunding: {
+        total: "JOD 27.2 million state budget allocation & electricity tariff surcharge (General Budget Law No. 1 of 2024; approx. US$38.4M)",
+        perCapita: "JOD 2.37 / resident / year (approx. US$3.34 / year)",
+      },
+      dailyMarketShare: "14.6% domestic television audience share across JRTV Channel 1 (Jordan TV), Sports Channel, and Amman TV, competing alongside independent broadcaster Ro'ya TV and public-funded Al Mamlaka (Ipsos Jordan & Arab Advisors Group 2024)",
+      brandTrustScore: {
+        score: "64%",
+        source: "Jordan Media Institute (JMI) National Media Survey & Arab Barometer Jordan 2024",
+      },
+      localContentQuota: "75% Jordanian and Arab cultural, documentary, and drama programming quota, including comprehensive daily news broadcasts from all twelve governorates",
+      staffHeadcount: "1,650 journalists, directors, broadcast engineers, and support staff across the Amman television complex and regional bureaus (JRTV Human Resources Directorate 2024)",
+      logo: "broadcaster-logos/jo/jrtv.png",
+      logoExplainer:
+        "The JRTV insignia showcases a graceful calligraphic emblem uniting the golden eagle wings and the seven-pointed star of the Hashemite Kingdom of Jordan. The central stylized television screen and radio waves symbolize national unity, royal patronage, and authentic Arab cultural journalism across the Kingdom and diaspora.",
+      sources: [
+        "https://www.jrtv.gov.jo/",
+        "https://gbd.gov.jo/",
+        "https://www.jmi.edu.jo/",
+      ],
+      licenceNote: "Jordan Radio and Television Corporation public corporate trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Lebanon
+  LB: [
+    {
+      id: "lb-teleliban",
+      countryCode: "LB",
+      name: "Télé Liban",
+      officialName: "Télé Liban (تلفزيون لبنان - TL / Télé Liban S.A.L.)",
+      founded: 1959,
+      primaryFunding: "Direct public subsidy from the Ministry of Information (وزارة الإعلام) under state-owned enterprise governance, supplemented by nominal advertising",
+      headquarters: "Tallet El Khayat, PO Box 11-4870, Beirut",
+      annualPublicFunding: {
+        total: "LBP 72.0 billion operating state subsidy envelope (Ministry of Information Public Expenditure Budget & Lebanese General Budget Law 2024; approx. US$4.8M at unified platform exchange rates)",
+        perCapita: "LBP 13,300 / citizen / year (approx. US$0.89 / year)",
+      },
+      dailyMarketShare: "5.4% domestic television audience share (Stat-IPSOS & Arab Advisors Group Lebanon 2024; maintaining a dedicated niche for public interest debates, archival heritage, and non-partisan national addresses in a competitive commercial market with LBCI and MTV)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Samir Kassir Foundation Media Monitor & Maharat Foundation 2024 (recognized for non-sectarian editorial balance)",
+      },
+      localContentQuota: "70% Lebanese domestic production quota, featuring educational programming, classic Lebanese television archives, and trilingual daily news broadcasts (Arabic, French, and English)",
+      staffHeadcount: "190 civil service journalists, camera operators, archive archivists, and technical engineers (Ministry of Information Personnel Audit 2024)",
+      logo: "broadcaster-logos/lb/teleliban.png",
+      logoExplainer:
+        "The iconic Télé Liban emblem displays the green Cedar of Lebanon (Cedrus libani)—the sacred national tree and centerpiece of the Lebanese flag—framed within an artistic, open television screen polygon with modern Arabic typography. It symbolizes evergreen national resilience, cultural sovereignty, and Lebanon's historic role as the media pioneer of the Arab world.",
+      sources: [
+        "https://www.teleliban.com.lb/",
+        "https://www.ministryinfo.gov.lb/",
+        "https://www.skeyesmedia.org/",
+      ],
+      licenceNote: "Télé Liban S.A.L. state-owned enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Iraq
+  IQ: [
+    {
+      id: "iq-imn",
+      countryCode: "IQ",
+      name: "IMN",
+      officialName: "Iraqi Media Network (شبكة الإعلام العراقي - IMN / Al Iraqiya)",
+      founded: 2003,
+      primaryFunding: "Federal public budget allocation voted by the Council of Representatives under the Iraqi Media Network Law (Law No. 26 of 2015)",
+      headquarters: "Al-Salhiya, Al-Karkh District, Baghdad",
+      annualPublicFunding: {
+        total: "IQD 148.0 billion federal public budget appropriation (Federal General Budget Law of the Republic of Iraq 2023–2025; approx. US$113.0M)",
+        perCapita: "IQD 3,360 / citizen / year (approx. US$2.56 / year)",
+      },
+      dailyMarketShare: "16.8% domestic television viewership across Al Iraqiya News, Al Iraqiya General, Al Iraqiya Sports, Al Iraqiya Educational, and Al Iraqiya Turkmen/Kurdish (Communications and Media Commission CMC Iraq & Gallup Iraq 2024)",
+      brandTrustScore: {
+        score: "54%",
+        source: "Communications and Media Commission (CMC) Iraq & Independent Institute for Civil Society Studies 2024",
+      },
+      localContentQuota: "80% Iraqi local programming quota, mandated by statutory charter to reflect Iraq's pluralistic cultural, religious, and linguistic heritage with broadcasts in Arabic, Kurdish, Turkmen, and Syriac",
+      staffHeadcount: "3,250 media professionals, field correspondents, technical crew, and musicians of the National Iraqi Symphony Orchestra affiliate (IMN Annual Administrative Bulletin 2024)",
+      logo: "broadcaster-logos/iq/imn.jpg",
+      logoExplainer:
+        "The Iraqi Media Network logo displays the bold blue and golden calligraphic emblem featuring the Arabic word 'العراقية' (Al Iraqiya) stylized as an unfolding parchment with broadcast signal satellites. The design reflects Iraq's Mesopotamian legacy as the cradle of writing, modern telecommunications, and national reconciliation.",
+      sources: [
+        "https://imn.iq/",
+        "https://mof.gov.iq/",
+        "https://cmc.iq/",
+      ],
+      licenceNote: "Iraqi Media Network statutory public entity trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Kuwait
+  KW: [
+    {
+      id: "kw-ktv",
+      countryCode: "KW",
+      name: "KTV",
+      officialName: "Kuwait Television (تلفزيون دولة الكويت - KTV / Ministry of Information)",
+      founded: 1961,
+      primaryFunding: "100% direct public funding appropriation from the Ministry of Information within the State of Kuwait general budget",
+      headquarters: "Ministry of Information Complex, Al Soor Street, Al Murqab, Kuwait City",
+      annualPublicFunding: {
+        total: "KWD 44.5 million dedicated television and broadcasting state expenditure (Ministry of Finance State Budget FY 2024/2025; approx. US$145.2M)",
+        perCapita: "KWD 9.27 / resident / year (approx. US$30.25 / year)",
+      },
+      dailyMarketShare: "22.5% domestic television market share across KTV 1, KTV 2 (English), KTV Sport, KTV Al-Qur'an, and KTV Plus (Ministry of Information Audience Research & Ipsos Kuwait 2024)",
+      brandTrustScore: {
+        score: "73%",
+        source: "Kuwait Journalists Association (KJA) & Gulf Media Observatory 2024",
+      },
+      localContentQuota: "85% domestic Gulf production quota, showcasing pioneering Kuwaiti television dramas, theater recordings, Bedouin poetry, parliamentary live coverage, and Islamic values",
+      staffHeadcount: "2,400 specialized television directors, news anchors, broadcast engineers, and media civil servants (Ministry of Information Civil Service Registry 2024)",
+      logo: "broadcaster-logos/kw/ktv.png",
+      logoExplainer:
+        "The Kuwait Television emblem is built around the iconic falcon (the national bird of Kuwait) with wings shaped like transmission waves, enveloping a classic television screen silhouette in Kuwait's pan-Arab flag colors: emerald green, pure white, deep red, and midnight black. It embodies Gulf cultural leadership, prestige, and national sovereignty.",
+      sources: [
+        "https://media.gov.kw/",
+        "https://mof.gov.kw/",
+      ],
+      licenceNote: "Kuwait Television / Ministry of Information public state trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Pakistan
+  PK: [
+    {
+      id: "pk-ptv",
+      countryCode: "PK",
+      name: "PTV",
+      officialName: "Pakistan Television Corporation (پاکستان ٹیلی وژن کارپوریشن - PTV)",
+      founded: 1964,
+      primaryFunding: "TV license fee surcharge levied on domestic and commercial electricity bills (Rs. 100/month statutory utility charge under the Telegraph Act), federal grants, and commercial advertising",
+      headquarters: "PTV Headquarters Complex, Constitution Avenue, F-5/1, Islamabad",
+      annualPublicFunding: {
+        total: "PKR 11.5 billion public broadcast surcharge revenue & federal grant-in-aid (Federal Ministry of Information & Broadcasting / Ministry of Finance FY 2023–24; approx. US$41.5M)",
+        perCapita: "PKR 47.70 / citizen / year (approx. US$0.17 / year)",
+      },
+      dailyMarketShare: "24.2% national terrestrial and multi-channel audience reach across PTV Home, PTV News, PTV Sports, PTV Global, PTV World, and regional channels (Medialogic Pakistan & Gallup Pakistan 2024; retains dominant rural terrestrial reach)",
+      brandTrustScore: {
+        score: "57%",
+        source: "Gallup Pakistan Public Opinion Survey & Pakistan Press Foundation 2024",
+      },
+      localContentQuota: "80% Pakistani domestic production quota under Pakistan Electronic Media Regulatory Authority (PEMRA) guidelines, broadcasting in Urdu, English, Punjabi, Sindhi, Pashto, Balochi, and Shina",
+      staffHeadcount: "3,800 permanent broadcasters, cameramen, technical engineers, and dramatists (PTV Administrative Report 2024)",
+      logo: "broadcaster-logos/pk/ptv.png",
+      logoExplainer:
+        "The PTV logo, created in 1964 and refined over decades, features a stylized geometric green and gold camera aperture forming a dynamic circular vortex. It symbolizes electronic television vision, Islamic heritage through Pakistan's national green, and the dissemination of light and knowledge to every corner of the country.",
+      sources: [
+        "https://www.ptv.com.pk/",
+        "https://moib.gov.pk/",
+        "https://pemra.gov.pk/",
+      ],
+      licenceNote: "Pakistan Television Corporation statutory state-owned corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Sri Lanka
+  LK: [
+    {
+      id: "lk-rupavahini",
+      countryCode: "LK",
+      name: "Rupavahini",
+      officialName: "Sri Lanka Rupavahini Corporation (ශ්‍රී ලංකා රූපවාහිනී සංස්ථාව / இலங்கை ரூபவாகினி கூட்டுத்தாபனம் - SLRC)",
+      founded: 1982,
+      primaryFunding: "Parliamentary treasury appropriations via the Ministry of Mass Media, supplemented by commercial advertising and sponsored educational programming",
+      headquarters: "Independence Square, Colombo 07",
+      annualPublicFunding: {
+        total: "LKR 1.85 billion state budget subvention & treasury allocations (Ministry of Finance Budget Estimates & SLRC Annual Report 2023–24; approx. US$6.2M)",
+        perCapita: "LKR 84.10 / citizen / year (approx. US$0.28 / year)",
+      },
+      dailyMarketShare: "18.5% national television audience share across Rupavahini, Channel Eye, and Nethra TV (Kantar LMRB Sri Lanka Media Index 2024)",
+      brandTrustScore: {
+        score: "61%",
+        source: "Verité Research Media Monitoring & Sri Lanka Press Institute 2024",
+      },
+      localContentQuota: "75% domestic cultural and educational programming quota, broadcasting in Sinhala, Tamil, and English with dedicated educational telecasts for national school curricula",
+      staffHeadcount: "850 permanent media personnel, producers, and engineering specialists (SLRC Cadre Review 2024)",
+      logo: "broadcaster-logos/lk/rupavahini.png",
+      logoExplainer:
+        "The Sri Lanka Rupavahini Corporation insignia is inspired by the mythical Sinhala bird 'Mayura' (peacock) and Buddhist swan motifs, rendered in deep royal maroon and gold. Its stylized feathered eye represents optical vision and television enlightenment, evoking traditional Sri Lankan mural art and cultural pride.",
+      sources: [
+        "https://www.rupavahini.lk/",
+        "https://www.treasury.gov.lk/",
+        "https://massmedia.gov.lk/",
+      ],
+      licenceNote: "Sri Lanka Rupavahini Corporation statutory corporate trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Uzbekistan
+  UZ: [
+    {
+      id: "uz-mtrk",
+      countryCode: "UZ",
+      name: "MTRK",
+      officialName: "National Television and Radio Company of Uzbekistan (Oʻzbekiston Milliy teleradiokompaniyasi - MTRK)",
+      founded: 1956,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Economy and Finance of the Republic of Uzbekistan",
+      headquarters: "69 Alisher Navoiy Avenue, Shaykhontohur District, Tashkent",
+      annualPublicFunding: {
+        total: "UZS 560.0 billion state budget allocation (State Budget Law of the Republic of Uzbekistan & MTRK Financial Directorate FY 2024; approx. US$44.2M)",
+        perCapita: "UZS 15,200 / citizen / year (approx. US$1.20 / year)",
+      },
+      dailyMarketShare: "38.2% combined domestic television audience share across Oʻzbekiston, Oʻzbekiston 24, Yoshlar, Toshkent, Sport, Madaniyat va maʻrifat, and Dunyo boʻylab (Tashkent Media Research & Levada/ACT Central Asia 2024)",
+      brandTrustScore: {
+        score: "68%",
+        source: "Center for Public Opinion Research 'Ijtimoiy Fikr' & Agency of Information and Mass Communications (AOKA) 2024",
+      },
+      localContentQuota: "80% domestic national production quota, broadcasting in Uzbek, Karakalpak, Russian, Tajik, and Kazakh across nationwide and regional networks",
+      staffHeadcount: "3,400 permanent employees across the central Tashkent production complex and 12 regional broadcasting branches (MTRK Personnel Registry 2024)",
+      logo: "broadcaster-logos/uz/mtrk.png",
+      logoExplainer:
+        "The MTRK emblem features bold modern lettering accompanied by stylized transmission orbits and the celestial crescent and stars of Uzbekistan's state flag in azure blue and gold. It reflects digital modernization, Central Asian cultural legacy, and state sovereignty.",
+      sources: [
+        "https://www.mtrk.uz/",
+        "https://mf.uz/",
+        "https://aoka.uz/",
+      ],
+      licenceNote: "National Television and Radio Company of Uzbekistan state entity trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Armenia
+  AM: [
+    {
+      id: "am-armtv",
+      countryCode: "AM",
+      name: "Public Television of Armenia",
+      officialName: "Public Television Company of Armenia (Հայաստանի հանրային հեռուստաընկերություն - 1TV / ARMTV)",
+      founded: 1956,
+      primaryFunding: "Direct state budget allocation approved by the National Assembly under the Republic of Armenia Law on Audiovisual Media",
+      headquarters: "26 Gevorg Hovsepyan Street, Nork-Marash, 0047 Yerevan",
+      annualPublicFunding: {
+        total: "AMD 7.85 billion state budget appropriation (RA Law on the State Budget of the Republic of Armenia FY 2024; approx. US$20.2M)",
+        perCapita: "AMD 2,640 / citizen / year (approx. US$6.80 / year)",
+      },
+      dailyMarketShare: "24.8% nationwide audience share (AdIndex Armenia & Television and Radio Commission TRC 2024; First Channel 1TV is the country's most viewed national broadcaster)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Caucasus Research Resource Center (CRRC) Armenia & Media Initiatives Center 2024",
+      },
+      localContentQuota: "70% domestic Armenian cultural, documentary, musical, and educational programming quota, including transmissions in Eastern Armenian and Western Armenian",
+      staffHeadcount: "620 permanent journalists, film directors, archivists, and broadcast technicians (ARMTV Annual Report 2024)",
+      logo: "broadcaster-logos/am/armtv.png",
+      logoExplainer:
+        "The 1TV Armenia emblem, refreshed in 2021, features an elegant, minimalist numeral '1' enclosed within an ethereal circular frame in royal violet and white. It symbolizes editorial preeminence, contemporary aesthetic evolution, and the broadcaster's foundational heritage as Armenia's first television channel.",
+      sources: [
+        "https://www.1tv.am/",
+        "https://www.minfin.am/",
+        "https://tvradio.am/",
+      ],
+      licenceNote: "Public Television Company of Armenia statutory closed joint-stock company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bhutan
+  BT: [
+    {
+      id: "bt-bbs",
+      countryCode: "BT",
+      name: "BBS",
+      officialName: "Bhutan Broadcasting Service (འབྲུག་རྒྱང་བསྒྲགས་ལས་འཛིན - BBS)",
+      founded: 1973,
+      primaryFunding: "Royal Government of Bhutan budgetary grant-in-aid through the Ministry of Industry, Commerce and Employment and nominal commercial advertisements",
+      headquarters: "Chhubachu, PO Box 101, Thimphu",
+      annualPublicFunding: {
+        total: "BTN 182.5 million government public service grant (National Budget Report, Ministry of Finance FY 2023–24; approx. US$2.18M)",
+        perCapita: "BTN 233.00 / citizen / year (approx. US$2.79 / year)",
+      },
+      dailyMarketShare: "58.4% domestic television audience share across BBS 1 and BBS 2 (Bhutan InfoComm and Media Authority BICMA & BBS Audience Survey 2024; the sole terrestrial television network in the Kingdom)",
+      brandTrustScore: {
+        score: "84%",
+        source: "BICMA Media Impact Study & Centre for Bhutan and GNH Studies 2024",
+      },
+      localContentQuota: "85% local cultural, spiritual, and community programming quota, broadcasting extensively in Dzongkha, Tshangla (Sharchop), Lhotshamkha, and English in alignment with Gross National Happiness principles",
+      staffHeadcount: "285 permanent journalists, camera operators, editors, and engineers across Thimphu headquarters and dzongkhag bureaus (BBS Corporate Review 2024)",
+      logo: "broadcaster-logos/bt/bbs.png",
+      logoExplainer:
+        "The BBS insignia depicts the golden thunder dragon (Druk)—the national symbol of Bhutan—poised protectively over stylized radio and television transmission waves in saffron yellow and orange (the national colors of the Kingdom). It symbolizes sovereign communication, Buddhist spiritual values, and national harmony.",
+      sources: [
+        "https://www.bbs.bt/",
+        "https://www.mof.gov.bt/",
+        "https://www.bicma.gov.bt/",
+      ],
+      licenceNote: "Bhutan Broadcasting Service Corporation public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
