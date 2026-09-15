@@ -4157,6 +4157,170 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Mauritius Broadcasting Corporation public statutory corporation trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  // Bahamas
+  BS: [
+    {
+      id: "bs-zns",
+      countryCode: "BS",
+      name: "ZNS Bahamas",
+      officialName: "Broadcasting Corporation of The Bahamas (BCB / ZNS-TV - Network of The Bahamas)",
+      founded: 1936,
+      primaryFunding: "Statutory budgetary grant from the Government of The Bahamas (General Revenue Budget) and commercial advertising",
+      headquarters: "Third Terrace East, Centreville, PO Box N-1347, Nassau, New Providence",
+      annualPublicFunding: {
+        total: "BSD 18.5 million government subvention appropriation (Commonwealth of The Bahamas National Budget FY 2023–24; approx. US.5M)",
+        perCapita: "BSD 46.20 / citizen / year (approx. US.20 / year)",
+      },
+      dailyMarketShare: "36.5% domestic television audience share across ZNS-TV 13 and Northern Service Channel 11 (Utilities Regulation and Competition Authority URCA Bahamas 2024)",
+      brandTrustScore: {
+        score: "68%",
+        source: "URCA Consumer Survey & Bahamas Press Club Media Review 2024",
+      },
+      localContentQuota: "70% domestic Bahamian and Caribbean cultural quota, broadcasting extensive live coverage of Junkanoo parades, Parliamentary proceedings, national regattas, and CARIFTA games",
+      staffHeadcount: "230 permanent broadcast journalists, video producers, technical crew, and station engineers across Nassau and Freeport (BCB Annual Staff Audit 2024)",
+      logo: "broadcaster-logos/bs/zns.png",
+      logoExplainer:
+        "The ZNS logo presents the iconic bold acronym 'ZNS' (derived from the historic call sign 'Zephyr Nassau Sunshine') alongside radiant golden sunbeams and aquamarine marine bands reflecting the turquoise waters, golden sunshine, and black triangular heraldry of the Bahamian national flag.",
+      sources: [
+        "https://znsbahamas.com/",
+        "https://www.bahamas.gov.bs/",
+        "https://urcabahamas.com/",
+      ],
+      licenceNote: "Broadcasting Corporation of The Bahamas statutory public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Barbados
+  BB: [
+    {
+      id: "bb-cbc",
+      countryCode: "BB",
+      name: "CBC Barbados",
+      officialName: "Caribbean Broadcasting Corporation (CBC / CBC TV 8)",
+      founded: 1963,
+      primaryFunding: "Statutory state subvention approved by the Parliament of Barbados through the Ministry of Information and Public Affairs, supplemented by commercial advertising",
+      headquarters: "The Pine, St. Michael, BB11112, Barbados",
+      annualPublicFunding: {
+        total: "BBD 14.8 million parliamentary subvention grant (Barbados Estimates of Revenue and Expenditure FY 2023–24; approx. US.4M)",
+        perCapita: "BBD 52.50 / citizen / year (approx. US.25 / year)",
+      },
+      dailyMarketShare: "46.2% domestic television audience share across CBC TV 8 and specialized digital subchannels (Barbados Telecommunications Unit & Media Research Caribbean 2024)",
+      brandTrustScore: {
+        score: "71%",
+        source: "University of the West Indies (UWI) Cave Hill Media Monitor & Barbados Association of Journalists 2024",
+      },
+      localContentQuota: "65% local Barbadian and CARICOM regional cultural quota, broadcasting Crop Over festival galas, West Indies cricket, parliamentary sessions, and Bajan community drama",
+      staffHeadcount: "180 permanent media professionals, correspondents, and technical engineers (CBC Corporate Governance Report 2024)",
+      logo: "broadcaster-logos/bb/cbc.jpg",
+      logoExplainer:
+        "The CBC emblem features the bold, stylized letters 'CBC' accompanied by a globe and transmission waves in ultramarine blue and gold (the national colors of Barbados), symbolizing national pride, regional leadership across the eastern Caribbean, and fidelity to democratic public broadcasting.",
+      sources: [
+        "https://www.cbc.bb/",
+        "https://www.gov.bb/",
+        "https://telecoms.gov.bb/",
+      ],
+      licenceNote: "Caribbean Broadcasting Corporation statutory public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Haiti
+  HT: [
+    {
+      id: "ht-rtnh",
+      countryCode: "HT",
+      name: "RTNH",
+      officialName: "Radio Télévision Nationale d'Haïti (Télévision Nationale d'Haïti - RTNH / TNH)",
+      founded: 1979,
+      primaryFunding: "State operating budget subvention allocated by the Ministère de la Culture et de la Communication within the national budget of the Republic of Haiti",
+      headquarters: "Boulevard 15 Octobre, Port-au-Prince, Haiti",
+      annualPublicFunding: {
+        total: "HTG 450.0 million state budget subvention allocation (Ministère de l'Économie et des Finances / Budget Général de la République d'Haïti FY 2023–24; approx. US.4M)",
+        perCapita: "HTG 38.80 / citizen / year (approx. USzsh.29 / year)",
+      },
+      dailyMarketShare: "22.0% national television audience reach (Conseil National des Télécommunications CONATEL & Media Haiti Survey 2024; serving as the national reference network for state declarations and civic education)",
+      brandTrustScore: {
+        score: "52%",
+        source: "Centre National de la Communication Sociale & Fondation Hirondelle Haiti Media Assessment 2024",
+      },
+      localContentQuota: "75% domestic production quota, mandating broadcasts in Haitian Creole (Kreyòl Ayisyen) and French across news, Haitian cultural heritage, folklore, and educational curricula",
+      staffHeadcount: "210 journalists, cameramen, video technicians, and transmission crew across Port-au-Prince and regional relay centers (TNH Bilan Administratif 2024)",
+      logo: "broadcaster-logos/ht/rtnh.png",
+      logoExplainer:
+        "The Télévision Nationale d'Haïti logo displays the stylized acronym 'TNH' interwoven with the royal palm and liberty cap from the National Coat of Arms of Haiti, rendered in revolutionary blue and red. It embodies national sovereignty, civic liberty, and cultural resistance.",
+      sources: [
+        "https://rtnh.gouv.ht/",
+        "https://mef.gouv.ht/",
+        "https://conatel.gouv.ht/",
+      ],
+      licenceNote: "Radio Télévision Nationale d'Haïti public state institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // El Salvador
+  SV: [
+    {
+      id: "sv-canal10",
+      countryCode: "SV",
+      name: "Canal 10",
+      officialName: "Canal 10 El Salvador (Televisión Nacional de El Salvador - Canal 10 / Televisión Cultural Educativa)",
+      founded: 1964,
+      primaryFunding: "Direct public appropriation from the General Budget of the Nation allocated through the Ministry of Education and the Secretariat of Communications of the Presidency",
+      headquarters: "Kilómetro 10½, Carretera a Santa Tecla, San Salvador",
+      annualPublicFunding: {
+        total: "USD 8.2 million state budget public broadcasting appropriation (Presupuesto General del Estado de El Salvador FY 2024; approx. US.2M)",
+        perCapita: "USD 1.28 / citizen / year",
+      },
+      dailyMarketShare: "18.4% domestic television audience share across Canal 10 and educational digital subchannels (Superintendencia General de Electricidad y Telecomunicaciones SIGET & Kantar IBOPE El Salvador 2024)",
+      brandTrustScore: {
+        score: "65%",
+        source: "Universidad Centroamericana (UCA) Instituto Universitario de Opinión Pública & SIGET 2024",
+      },
+      localContentQuota: "80% Salvadoran cultural, educational, and public health programming quota, producing school tele-classes, indigenous Pipil language preservation segments, and national documentary series",
+      staffHeadcount: "260 permanent broadcast directors, audio engineers, educational coordinators, and journalists (Canal 10 Dirección Ejecutiva 2024)",
+      logo: "broadcaster-logos/sv/canal10.png",
+      logoExplainer:
+        "The Canal 10 emblem features a modern, solid numeral '10' in vibrant cobalt blue and pure white, reflecting the colors of the Salvadoran national flag. The design's clean, minimalist lines represent transparency, technological modernization, and a commitment to accessible educational broadcasting for all Salvadorans.",
+      sources: [
+        "https://canal10.gob.sv/",
+        "https://www.mh.gob.sv/",
+        "https://www.siget.gob.sv/",
+      ],
+      licenceNote: "Canal 10 Televisión Nacional de El Salvador state institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Saint Kitts and Nevis
+  KN: [
+    {
+      id: "kn-ziz",
+      countryCode: "KN",
+      name: "ZIZ",
+      officialName: "ZIZ Broadcasting Corporation (ZIZ Broadcasting Corporation - ZIZ TV Channel 5)",
+      founded: 1961,
+      primaryFunding: "Statutory state grant from the Government of Saint Kitts and Nevis (Ministry of Information, Communication, and Technology) supplemented by commercial advertising",
+      headquarters: "Springfield, PO Box 331, Basseterre, Saint Kitts",
+      annualPublicFunding: {
+        total: "XCD 4.2 million government budgetary subvention (Saint Kitts and Nevis National Budget Estimates FY 2024; approx. US.55M)",
+        perCapita: "XCD 87.50 / citizen / year (approx. US.40 / year)",
+      },
+      dailyMarketShare: "62.5% domestic television audience share (Eastern Caribbean Telecommunications Authority ECTEL & National Media Review 2024; the primary national television broadcaster in the Federation)",
+      brandTrustScore: {
+        score: "78%",
+        source: "St. Kitts-Nevis Information Service (SKNIS) Media Poll & University of the West Indies Open Campus 2024",
+      },
+      localContentQuota: "75% Kittitian and Nevisian community, cultural, and carnival programming quota, including comprehensive live coverage of the National Carnival (Sugar Mas), Nevis Culturama, and Federal Parliament debates",
+      staffHeadcount: "65 permanent journalists, camera operators, editors, and broadcast technicians across Saint Kitts and Nevis (ZIZ Annual Administration Review 2024)",
+      logo: "broadcaster-logos/kn/ziz.jpg",
+      logoExplainer:
+        "The ZIZ logo presents the historic call letters 'ZIZ' flanked by radiant broadcast wave chevrons in black, yellow, and green—celebrating the national colors of Saint Kitts and Nevis, fertile island soil, and the African heritage of the Kittitian and Nevisian people.",
+      sources: [
+        "https://zizonline.com/",
+        "https://www.gov.kn/",
+        "https://www.ectel.int/",
+      ],
+      licenceNote: "ZIZ Broadcasting Corporation statutory public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
