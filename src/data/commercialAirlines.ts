@@ -2713,6 +2713,257 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Luxembourg
+  LU: [
+    {
+      id: "lu-luxair",
+      countryCode: "LU",
+      name: "Luxair",
+      iata: "LG",
+      icao: "LUX",
+      founded: 1961,
+      alliance: "None",
+      hubs: ["Luxembourg Findel Airport (LUX)"],
+      fleet: {
+        total: 21,
+        summary: "21 aircraft (Boeing 737-700, 737-800, 737 MAX 8; De Havilland Canada Dash 8-Q400)",
+      },
+      logo: "/airline-logos/lu/luxair.svg",
+      logoExplainer:
+        "Features a modern cyan-blue and dark navy typographic wordmark accented with a forward-sweeping aerodynamic wing streak, expressing Luxembourg's strategic role as an international European financial and cultural crossroads.",
+      sources: [
+        "https://www.luxair.lu/",
+        "https://en.wikipedia.org/wiki/Luxair",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Spain
+  ES: [
+    {
+      id: "es-iberia",
+      countryCode: "ES",
+      name: "Iberia",
+      iata: "IB",
+      icao: "IBE",
+      founded: 1927,
+      alliance: "oneworld",
+      hubs: ["Adolfo Suárez Madrid-Barajas Airport (MAD)", "Josep Tarradellas Barcelona-El Prat Airport (BCN)"],
+      fleet: {
+        total: 90,
+        summary: "90 aircraft (Airbus A319-100, A320-200, A320neo, A321-200, A321neo, A321XLR, A330-200, A330-300, A350-900)",
+      },
+      logo: "/airline-logos/es/iberia.svg",
+      logoExplainer:
+        "Designed by Interbrand, the iconic red and golden-yellow dynamic tailfin emblem embodies the Spanish national flag (*la Rojigualda*). The sweeping curve evokes the warmth, vitality, and passion of Spanish culture while honoring its historical leadership bridging Europe and Latin America.",
+      sources: [
+        "https://www.iberia.com/",
+        "https://en.wikipedia.org/wiki/Iberia_(airline)",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "es-vueling",
+      countryCode: "ES",
+      name: "Vueling",
+      iata: "VY",
+      icao: "VLG",
+      founded: 2004,
+      alliance: "None",
+      hubs: [
+        "Josep Tarradellas Barcelona-El Prat Airport (BCN)",
+        "Rome Fiumicino Airport (FCO)",
+        "Paris Orly Airport (ORY)",
+      ],
+      fleet: {
+        total: 125,
+        summary: "125 aircraft (Airbus A319-100, A320-200, A320neo, A321-200, A321neo)",
+      },
+      logo: "/airline-logos/es/vueling.svg",
+      logoExplainer:
+        "Features friendly graphite-grey lowercase typography accented by a sunny golden-yellow dot over the 'i' and matching icon, derived from the Spanish word *vuelo* (flight) and embodying approachable, accessible Mediterranean travel.",
+      sources: [
+        "https://www.vueling.com/",
+        "https://en.wikipedia.org/wiki/Vueling",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "es-air-europa",
+      countryCode: "ES",
+      name: "Air Europa",
+      iata: "UX",
+      icao: "AEA",
+      founded: 1986,
+      alliance: "SkyTeam",
+      hubs: ["Adolfo Suárez Madrid-Barajas Airport (MAD)"],
+      fleet: {
+        total: 54,
+        summary: "54 aircraft (Boeing 737-800; Boeing 787-8, 787-9 Dreamliner)",
+      },
+      logo: "/airline-logos/es/air-europa.svg",
+      logoExplainer:
+        "Features an azure blue circular emblem containing a stylized white soaring bird in flight, signifying smooth transatlantic voyages connecting Madrid with the Caribbean and the Americas.",
+      sources: [
+        "https://www.aireuropa.com/",
+        "https://en.wikipedia.org/wiki/Air_Europa",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Portugal
+  PT: [
+    {
+      id: "pt-tap-air-portugal",
+      countryCode: "PT",
+      name: "TAP Air Portugal",
+      iata: "TP",
+      icao: "TAP",
+      founded: 1945,
+      alliance: "Star Alliance",
+      hubs: ["Humberto Delgado Airport (LIS - Lisbon)", "Francisco Sá Carneiro Airport (OPO - Porto)"],
+      fleet: {
+        total: 80,
+        summary: "80 aircraft (Airbus A319-100, A320-200, A320neo, A321-200, A321neo, A321LR, A330-200, A330-900neo)",
+      },
+      logo: "/airline-logos/pt/tap-air-portugal.svg",
+      logoExplainer:
+        "Features overlapping geometric typography in Portugal's national green and red colors. The design symbolizes Portugal's historic seafaring age of discovery, welcoming Portuguese warmth, and modern transatlantic routes bridging Europe, Africa, and South America.",
+      sources: [
+        "https://www.flytap.com/",
+        "https://en.wikipedia.org/wiki/TAP_Air_Portugal",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "pt-portugalia-airlines",
+      countryCode: "PT",
+      name: "Portugália Airlines (TAP Express)",
+      iata: "NI",
+      icao: "PGA",
+      founded: 1988,
+      alliance: "Star Alliance",
+      hubs: ["Humberto Delgado Airport (LIS - Lisbon)", "Francisco Sá Carneiro Airport (OPO - Porto)"],
+      fleet: {
+        total: 19,
+        summary: "19 aircraft (Embraer E190, Embraer E195)",
+      },
+      logo: "/airline-logos/pt/portugalia-airlines.svg",
+      logoExplainer:
+        "Features a stylized swallow in flight rendered in deep Portuguese oceanic blue and red. In Portuguese lore, the swallow (*andorinha*) represents loyalty, home, and safe return across the seas.",
+      sources: [
+        "https://www.flytap.com/",
+        "https://en.wikipedia.org/wiki/Portug%C3%A1lia_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Italy
+  IT: [
+    {
+      id: "it-ita-airways",
+      countryCode: "IT",
+      name: "ITA Airways",
+      iata: "AZ",
+      icao: "ITY",
+      founded: 2020,
+      alliance: "SkyTeam",
+      hubs: ["Rome Fiumicino Airport (FCO - Leonardo da Vinci)", "Milan Linate Airport (LIN)"],
+      fleet: {
+        total: 100,
+        summary: "100 aircraft (Airbus A220-100, A220-300, A320-200, A320neo, A321neo, A330-200, A330-900neo, A350-900)",
+      },
+      logo: "/airline-logos/it/ita-airways.svg",
+      logoExplainer:
+        "Features dark navy typography with the stem of the letter 'A' dynamically painted with the green, white, and red Italian tricolor (*il Tricolore*). The emblem pairs with the airline's shimmering Savoy blue (*azzurro*) aircraft fuselages, paying tribute to Italy's cultural, artistic, and athletic heritage.",
+      sources: [
+        "https://www.ita-airways.com/",
+        "https://en.wikipedia.org/wiki/ITA_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "it-neos",
+      countryCode: "IT",
+      name: "Neos",
+      iata: "NO",
+      icao: "NOS",
+      founded: 2001,
+      alliance: "None",
+      hubs: [
+        "Milan Malpensa Airport (MXP)",
+        "Rome Fiumicino Airport (FCO)",
+        "Verona Villafranca Airport (VRN)",
+      ],
+      fleet: {
+        total: 16,
+        summary: "16 aircraft (Boeing 737-800, Boeing 737 MAX 8; Boeing 787-9 Dreamliner)",
+      },
+      logo: "/airline-logos/it/neos.svg",
+      logoExplainer:
+        "Features a graceful italic wordmark adorned with a sweeping turquoise and Mediterranean blue wave motif, evoking the refreshing sea breezes, Mediterranean warmth, and carefree leisure voyages.",
+      sources: [
+        "https://www.neosair.it/",
+        "https://en.wikipedia.org/wiki/Neos_(airline)",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Greece
+  GR: [
+    {
+      id: "gr-aegean-airlines",
+      countryCode: "GR",
+      name: "Aegean Airlines",
+      iata: "A3",
+      icao: "AEE",
+      founded: 1999,
+      alliance: "Star Alliance",
+      hubs: [
+        "Athens International Airport (ATH - Eleftherios Venizelos)",
+        "Thessaloniki Airport (SKG - Makedonia)",
+      ],
+      fleet: {
+        total: 62,
+        summary: "62 aircraft (Airbus A320-200, A320neo, A321-200, A321neo)",
+      },
+      logo: "/airline-logos/gr/aegean-airlines.svg",
+      logoExplainer:
+        "Features an elegant gull-wing symbol depicting two seagulls merged in harmonious upward flight. Rendered in Aegean blue and Aegean silver, the design draws inspiration from classic Greek symmetry, the azure waters of the Aegean Sea, and Mediterranean clarity.",
+      sources: [
+        "https://en.aegeanair.com/",
+        "https://en.wikipedia.org/wiki/Aegean_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "gr-sky-express",
+      countryCode: "GR",
+      name: "SKY express",
+      iata: "GQ",
+      icao: "SEH",
+      founded: 2005,
+      alliance: "None",
+      hubs: ["Athens International Airport (ATH)", "Heraklion International Airport (HER - Nikos Kazantzakis)"],
+      fleet: {
+        total: 27,
+        summary: "27 aircraft (Airbus A320neo, A321neo; ATR 42-500, ATR 72-600)",
+      },
+      logo: "/airline-logos/gr/sky-express.svg",
+      logoExplainer:
+        "Features a clean Aegean blue and bright sunshine-orange lowercase logotype accented by two dynamic circular focal points, symbolizing joyful island hopping across Greece's Cyclades, Dodecanese, and Ionian archipelagos.",
+      sources: [
+        "https://www.skyexpress.gr/",
+        "https://en.wikipedia.org/wiki/Sky_Express_(Greece)",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
