@@ -3191,6 +3191,158 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Croatia
+  HR: [
+    {
+      id: "hr-croatia-airlines",
+      countryCode: "HR",
+      name: "Croatia Airlines",
+      iata: "OU",
+      icao: "CTN",
+      founded: 1989,
+      alliance: "Star Alliance",
+      hubs: ["Zagreb Franjo Tuđman Airport (ZAG)", "Split Airport (SPU)", "Dubrovnik Airport (DBV)"],
+      fleet: {
+        total: 13,
+        summary: "13 aircraft (Airbus A220-300, A319-100, A320-200; De Havilland Canada Dash 8-Q400)",
+      },
+      logo: "/airline-logos/hr/croatia-airlines.svg",
+      logoExplainer:
+        "Features the stylized Croatian national red-and-white checkerboard (šahovnica) reimagined in crisp geometric quadrilateral squares with sky-blue accents, symbolizing Adriatic maritime heritage and Croatia's sovereign aviation link to Europe and the Star Alliance network.",
+      sources: [
+        "https://www.croatiaairlines.com/",
+        "https://en.wikipedia.org/wiki/Croatia_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "hr-trade-air",
+      countryCode: "HR",
+      name: "Trade Air",
+      iata: "C3",
+      icao: "TDR",
+      founded: 1994,
+      alliance: "None",
+      hubs: ["Zagreb Franjo Tuđman Airport (ZAG)", "Osijek Airport (OSI)", "Rijeka Airport (RJK)"],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Airbus A320-200, A319-100; Saab 340)",
+      },
+      logo: "/airline-logos/hr/trade-air.png",
+      logoExplainer:
+        "Features deep blue and crimson red aerodynamic typography accompanied by high-speed flight curves, reflecting Trade Air's role providing crucial domestic public service obligation (PSO) connectivity across Croatian regions and international ACMI charter services.",
+      sources: [
+        "https://www.trade-air.com/",
+        "https://en.wikipedia.org/wiki/Trade_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Serbia
+  RS: [
+    {
+      id: "rs-air-serbia",
+      countryCode: "RS",
+      name: "Air Serbia",
+      iata: "JU",
+      icao: "ASL",
+      founded: 1927,
+      alliance: "None",
+      hubs: ["Belgrade Nikola Tesla Airport (BEG)", "Niš Constantine the Great Airport (INI)"],
+      fleet: {
+        total: 26,
+        summary: "26 aircraft (Airbus A330-200, A320-200, A319-100; ATR 72-600; Embraer E195)",
+      },
+      logo: "/airline-logos/rs/air-serbia.svg",
+      logoExplainer:
+        "Designed by Serbian graphic designer Tamara Maksimović in 2013, the emblem features a modern stylized double-headed white eagle motif inspired by medieval Serbian heraldry and the national coat of arms, rendered with dynamic aerodynamic feathers in national red and deep blue.",
+      sources: [
+        "https://www.airserbia.com/",
+        "https://en.wikipedia.org/wiki/Air_Serbia",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Malta
+  MT: [
+    {
+      id: "mt-km-malta-airlines",
+      countryCode: "MT",
+      name: "KM Malta Airlines",
+      iata: "KM",
+      icao: "KMM",
+      founded: 2024,
+      alliance: "None",
+      hubs: ["Malta International Airport (MLA)"],
+      fleet: {
+        total: 8,
+        summary: "8 aircraft (Airbus A320neo)",
+      },
+      logo: "/airline-logos/mt/km-malta-airlines.svg",
+      logoExplainer:
+        "Features the iconic eight-pointed Maltese Cross in vibrant Maltese red and pure white alongside modern charcoal typography, preserving the storied national heritage of the Knights Hospitaller while heralding a modern, sustainable new era for Malta's flag carrier.",
+      sources: [
+        "https://kmmaltairlines.com/",
+        "https://en.wikipedia.org/wiki/KM_Malta_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Albania
+  AL: [
+    {
+      id: "al-air-albania",
+      countryCode: "AL",
+      name: "Air Albania",
+      iata: "ZB",
+      icao: "ABN",
+      founded: 2018,
+      alliance: "None",
+      hubs: ["Tirana International Airport Nënë Tereza (TIA)"],
+      fleet: {
+        total: 3,
+        summary: "3 aircraft (Airbus A320-200)",
+      },
+      logo: "/airline-logos/al/air-albania.svg",
+      logoExplainer:
+        "Features a stylized black double-headed eagle in swift aerodynamic flight set within a crimson circular roundel, directly invoking Albania's national flag and hero Gjergj Kastrioti Skanderbeg, symbolizing national pride and Adriatic connectivity.",
+      sources: [
+        "https://www.airalbania.com.al/",
+        "https://en.wikipedia.org/wiki/Air_Albania",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Cyprus
+  CY: [
+    {
+      id: "cy-cyprus-airways",
+      countryCode: "CY",
+      name: "Cyprus Airways",
+      iata: "CY",
+      icao: "CYP",
+      founded: 2016,
+      alliance: "None",
+      hubs: ["Larnaca International Airport (LCA)"],
+      fleet: {
+        total: 4,
+        summary: "4 aircraft (Airbus A220-300, A320-200)",
+      },
+      logo: "/airline-logos/cy/cyprus-airways.svg",
+      logoExplainer:
+        "Features the graceful olive branch motif and deep Mediterranean olive green typography, evoking the ancient symbols of peace and Cypriot botanical heritage found on the national flag of Cyprus, paired with an elegant mouflon-inspired horn flight curve.",
+      sources: [
+        "https://www.cyprusairways.com/",
+        "https://en.wikipedia.org/wiki/Cyprus_Airways_(2017)",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
