@@ -4429,6 +4429,136 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Rwanda
+  RW: [
+    {
+      id: "rw-rwandair",
+      countryCode: "RW",
+      name: "RwandAir",
+      iata: "WB",
+      icao: "RWD",
+      founded: 2002,
+      alliance: "None",
+      hubs: ["Kigali International Airport (KGL)"],
+      fleet: {
+        total: 14,
+        summary: "14 aircraft (Airbus A330-200, A330-300; Boeing 737-700, 737-800; Bombardier CRJ900; De Havilland Dash 8-Q400)",
+      },
+      logo: "/airline-logos/rw/rwandair.svg",
+      logoExplainer:
+        "Features a stylized golden-yellow sunburst rising above sky-blue and emerald-green wings, reflecting the radiant sun of the Rwandan national flag and symbolizing peace, unity, and rapid modernization from the heart of Africa.",
+      sources: [
+        "https://www.rwandair.com/",
+        "https://en.wikipedia.org/wiki/RwandAir",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Mauritius
+  MU: [
+    {
+      id: "mu-air-mauritius",
+      countryCode: "MU",
+      name: "Air Mauritius",
+      iata: "MK",
+      icao: "MAU",
+      founded: 1967,
+      alliance: "None",
+      hubs: ["Sir Seewoosagur Ramgoolam International Airport (MRU)"],
+      fleet: {
+        total: 12,
+        summary: "12 aircraft (Airbus A350-900, A330-900neo; ATR 72-500/600)",
+      },
+      logo: "/airline-logos/mu/air-mauritius.svg",
+      logoExplainer:
+        "Features the iconic crimson Red Paille-en-Queue (tropicbird) in graceful soaring flight, an indigenous seabird celebrated in Mauritian folklore representing maritime island freedom and warm Indian Ocean hospitality.",
+      sources: [
+        "https://www.airmauritius.com/",
+        "https://en.wikipedia.org/wiki/Air_Mauritius",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Seychelles
+  SC: [
+    {
+      id: "sc-air-seychelles",
+      countryCode: "SC",
+      name: "Air Seychelles",
+      iata: "HM",
+      icao: "SEY",
+      founded: 1977,
+      alliance: "None",
+      hubs: ["Seychelles International Airport (SEZ)"],
+      fleet: {
+        total: 7,
+        summary: "7 aircraft (Airbus A320neo; DHC-6 Twin Otter)",
+      },
+      logo: "/airline-logos/sc/air-seychelles.svg",
+      logoExplainer:
+        "Features two stylized tropical fairy terns in brilliant turquoise and tropical red, symbolizing lifelong fidelity, Indian Ocean nature conservation, and island hopping across the granitic Seychelles archipelago.",
+      sources: [
+        "https://www.airseychelles.com/",
+        "https://en.wikipedia.org/wiki/Air_Seychelles",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Senegal
+  SN: [
+    {
+      id: "sn-air-senegal",
+      countryCode: "SN",
+      name: "Air Senegal",
+      iata: "HC",
+      icao: "SZN",
+      founded: 2016,
+      alliance: "None",
+      hubs: ["Blaise Diagne International Airport (DSS)"],
+      fleet: {
+        total: 9,
+        summary: "9 aircraft (Airbus A330-900neo, A321-200, A319-100; ATR 72-600)",
+      },
+      logo: "/airline-logos/sn/air-senegal.svg",
+      logoExplainer:
+        "Features the majestic baobab tree silhouette set against the Senegalese national tricolor (green, yellow, and red) and a golden five-pointed star, representing terrestrial strength, African roots, and legendary Teranga (Senegalese hospitality).",
+      sources: [
+        "https://flyairsenegal.com/",
+        "https://en.wikipedia.org/wiki/Air_Senegal",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Nigeria
+  NG: [
+    {
+      id: "ng-air-peace",
+      countryCode: "NG",
+      name: "Air Peace",
+      iata: "P4",
+      icao: "APK",
+      founded: 2013,
+      alliance: "None",
+      hubs: ["Murtala Muhammed International Airport (LOS)", "Nnamdi Azikiwe International Airport (ABV)"],
+      fleet: {
+        total: 31,
+        summary: "31 aircraft (Boeing 777-200ER, 777-300; Boeing 737-300/500/700/800; Embraer E195-E2; Dornier 328)",
+      },
+      logo: "/airline-logos/ng/air-peace.png",
+      logoExplainer:
+        "Features a blue dove in ascent carrying an olive branch motif paired with crimson and royal blue curves, reflecting founder Allen Onyema's philosophy of using commercial aviation as an engine for national peace, economic empowerment, and West African unity.",
+      sources: [
+        "https://flyairpeace.com/",
+        "https://en.wikipedia.org/wiki/Air_Peace",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
