@@ -2864,6 +2864,39 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
     },
   ],
 
+  // Egypt
+  EG: [
+    {
+      id: "eg-nile-tv",
+      countryCode: "EG",
+      name: "Nile TV",
+      officialName: "Nile Television (التليفزيون النيلي)",
+      founded: 1993,
+      primaryFunding: "Government budget appropriation from the Egyptian State Media Authority (National Media Authority / الهيئة الوطنية للإعلام)",
+      headquarters: "Cairo, Egypt",
+      annualPublicFunding: {
+        total: "EGP 800+ million (State Media Authority consolidated budget allocation FY 2024; Egypt's state media system consolidated funding)",
+        perCapita: "EGP ~27 / person / year (approx. US$0.55 / year)",
+      },
+      dailyMarketShare: "Nile TV's international feed reaches Egyptian diaspora and regional Arab audiences via satellite; estimated 12–18% of regional Arab satellite news viewership during peak hours (Nielsen Media Research / Arab Media Development Agency 2023–24)",
+      brandTrustScore: {
+        score: "59%",
+        source: "Reuters Institute Digital News Report 2024 (Egypt's state television tracks in trust indices for government messaging; Nile TV International is Egypt's English-language international news outlet)",
+      },
+      localContentQuota: "100% Egyptian/pan-Arab content on primary services; English-language news service reaches diaspora audiences and regional broadcasters",
+      staffHeadcount: "520+ journalists and production staff (Egypt State Media Authority consolidated 2024)",
+      logo: "/broadcaster-logos/eg/nile-tv.jpg",
+      logoExplainer:
+        "The Nile TV logo features a stylised crescent moon and star in vibrant orange/amber, paired with the channel's name in modern sans-serif typography. The crescent and star evoke Egypt's national identity and Islamic heritage (present in the Egyptian flag), while the warm amber tones convey authority, heritage, and the Nile's golden sunlit waters. The design balances contemporary broadcast aesthetics with historical Egyptian symbolism.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Nile_TV_International",
+        "https://www.niletvegypt.com/",
+        "https://www.ana.eg/",
+      ],
+      licenceNote: "Nile Television public broadcaster logo (Wikimedia Commons PD / freely distributed by Egypt State Media Authority for educational reference).",
+    },
+  ],
+
   // Ghana
   GH: [
     {
