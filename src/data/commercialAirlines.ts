@@ -4169,6 +4169,136 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Kazakhstan
+  KZ: [
+    {
+      id: "kz-air-astana",
+      countryCode: "KZ",
+      name: "Air Astana",
+      iata: "KC",
+      icao: "KZR",
+      founded: 2001,
+      alliance: "None",
+      hubs: ["Almaty International Airport (ALA)", "Nursultan Nazarbayev International Airport (NQZ)"],
+      fleet: {
+        total: 56,
+        summary: "56 aircraft (Airbus A320neo, A321-200, A321neo, A321LR; Boeing 767-300ER, 787-9; Embraer E190-E2)",
+      },
+      logo: "/airline-logos/kz/air-astana.svg",
+      logoExplainer:
+        "Features a radiant gold aerodynamic solar emblem inspired by the golden steppe eagle and sun on Kazakhstan's national flag, paired with sophisticated deep blue typography symbolizing Eurasian crossroads connectivity.",
+      sources: [
+        "https://airastana.com/",
+        "https://en.wikipedia.org/wiki/Air_Astana",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Uzbekistan
+  UZ: [
+    {
+      id: "uz-uzbekistan-airways",
+      countryCode: "UZ",
+      name: "Uzbekistan Airways",
+      iata: "HY",
+      icao: "UZB",
+      founded: 1992,
+      alliance: "None",
+      hubs: ["Islam Karimov Tashkent International Airport (TAS)"],
+      fleet: {
+        total: 39,
+        summary: "39 aircraft (Airbus A320-200, A320neo, A321neo; Boeing 767-300ER, 787-8 Dreamliner; LET L-410)",
+      },
+      logo: "/airline-logos/uz/uzbekistan-airways.svg",
+      logoExplainer:
+        "Features the mythical bird Semurg (Humo) in turquoise green, white, and golden flight, echoing the state emblem of Uzbekistan and symbolizing peace, happiness, and revival along the historic Silk Road skies.",
+      sources: [
+        "https://www.uzairways.com/",
+        "https://en.wikipedia.org/wiki/Uzbekistan_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Azerbaijan
+  AZ: [
+    {
+      id: "az-azerbaijan-airlines",
+      countryCode: "AZ",
+      name: "Azerbaijan Airlines",
+      iata: "J2",
+      icao: "AHY",
+      founded: 1992,
+      alliance: "None",
+      hubs: ["Heydar Aliyev International Airport (GYD)"],
+      fleet: {
+        total: 31,
+        summary: "31 aircraft (Airbus A319, A320-200, A320neo, A340-500, A340-600; Boeing 757-200, 767-300ER, 787-8)",
+      },
+      logo: "/airline-logos/az/azerbaijan-airlines.svg",
+      logoExplainer:
+        "Features Caspian cyan and navy blue wings stylized into an aerodynamic bird in ascent, symbolizing Azerbaijan's national pride, Caspian petroleum heritage, and strategic position connecting East and West.",
+      sources: [
+        "https://www.azal.az/",
+        "https://en.wikipedia.org/wiki/Azerbaijan_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Georgia
+  GE: [
+    {
+      id: "ge-georgian-airways",
+      countryCode: "GE",
+      name: "Georgian Airways",
+      iata: "A9",
+      icao: "TGZ",
+      founded: 1993,
+      alliance: "None",
+      hubs: ["Tbilisi Shota Rustaveli International Airport (TBS)"],
+      fleet: {
+        total: 8,
+        summary: "8 aircraft (Boeing 737-700, 737-800, 767-300ER)",
+      },
+      logo: "/airline-logos/ge/georgian-airways.svg",
+      logoExplainer:
+        "Features a soaring Caucasian eagle in crimson and white, honoring Georgia's five-cross national flag colors and symbolizing steadfast mountain resilience, ancient Caucasian hospitality, and European links.",
+      sources: [
+        "https://georgian-airways.com/",
+        "https://en.wikipedia.org/wiki/Georgian_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Armenia
+  AM: [
+    {
+      id: "am-flyone-armenia",
+      countryCode: "AM",
+      name: "FLYONE Armenia",
+      iata: "3F",
+      icao: "FIE",
+      founded: 2021,
+      alliance: "None",
+      hubs: ["Zvartnots International Airport (EVN)"],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Airbus A320-200, A321-200)",
+      },
+      logo: "/airline-logos/am/flyone-armenia.png",
+      logoExplainer:
+        "Features bright blue and cyan speed ribbons forming an aerodynamic numeral '1' alongside clean typography, representing Armenia's largest passenger airline connecting Yerevan with the worldwide Armenian diaspora.",
+      sources: [
+        "https://flyone.am/",
+        "https://en.wikipedia.org/wiki/FlyOne_Armenia",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
