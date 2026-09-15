@@ -5440,6 +5440,164 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  AO: [
+    {
+      id: "ao-taag",
+      countryCode: "AO",
+      name: "TAAG Angola Airlines",
+      iata: "DT",
+      icao: "DTA",
+      founded: 1938,
+      alliance: "None",
+      hubs: [
+        "Dr. António Agostinho Neto International Airport (NBJ)",
+        "Quatro de Fevereiro Airport (LAD)",
+      ],
+      fleet: {
+        total: 28,
+        summary:
+          "28 aircraft (Boeing 777-300ER, Boeing 777-200ER, Boeing 737-700, De Havilland Dash 8-Q400; Boeing 787-9 and Airbus A220-300 entering service)",
+      },
+      logo: "/airline-logos/ao/taag.png",
+      logoExplainer:
+        "Features the legendary Palanca Negra Gigante (giant sable antelope, Angola's revered national animal found only in Malanje Province), with its majestic curved horns sweeping back above stylized speed wings and the bold terracotta-red and black TAAG wordmark, embodying Angolan endurance, grace, and national sovereignty.",
+      sources: [
+        "https://www.taag.com/",
+        "https://en.wikipedia.org/wiki/TAAG_Angola_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  CI: [
+    {
+      id: "ci-air-cote-divoire",
+      countryCode: "CI",
+      name: "Air Côte d'Ivoire",
+      iata: "HF",
+      icao: "VRE",
+      founded: 2012,
+      alliance: "None",
+      hubs: ["Félix-Houphouët-Boigny International Airport (ABJ)"],
+      fleet: {
+        total: 10,
+        summary:
+          "10 aircraft (Airbus A320neo, Airbus A320-200, Airbus A319-100, De Havilland Dash 8-Q400; Airbus A330-900neo on order)",
+      },
+      logo: "/airline-logos/ci/air-cote-divoire.svg",
+      logoExplainer:
+        "Features dynamic sweeping wings in the national colors of Côte d'Ivoire—vibrant orange, white, and savannah green—forming a forward-thrusting aerodynamic monogram that represents West African unity, regional hub connectivity from Abidjan, and the warmth of the Ivorian nation.",
+      sources: [
+        "https://www.aircotedivoire.com/",
+        "https://en.wikipedia.org/wiki/Air_C%C3%B4te_d%27Ivoire",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  GH: [
+    {
+      id: "gh-africa-world-airlines",
+      countryCode: "GH",
+      name: "Africa World Airlines (AWA)",
+      iata: "2A",
+      icao: "AFW",
+      founded: 2010,
+      alliance: "None",
+      hubs: ["Kotoka International Airport (ACC)"],
+      fleet: {
+        total: 8,
+        summary: "8 aircraft (Embraer ERJ 145)",
+      },
+      logo: "/airline-logos/gh/africa-world-airlines.png",
+      logoExplainer:
+        "Features a bold red and blue globe meridian emblem encircled by dynamic aircraft speed wings, accompanied by clean modern typography in navy blue, symbolizing dependable inter-city connectivity across Ghana and West African regional hubs.",
+      sources: [
+        "https://www.flyafricaworld.com/",
+        "https://en.wikipedia.org/wiki/Africa_World_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  CM: [
+    {
+      id: "cm-camair-co",
+      countryCode: "CM",
+      name: "Camair-Co",
+      iata: "QC",
+      icao: "CRC",
+      founded: 2006,
+      alliance: "None",
+      hubs: [
+        "Douala International Airport (DLA)",
+        "Yaoundé Nsimalen International Airport (NSI)",
+      ],
+      fleet: {
+        total: 6,
+        summary:
+          "6 aircraft (Boeing 767-300ER, Boeing 737-700, De Havilland Dash 8-Q400)",
+      },
+      logo: "/airline-logos/cm/camair-co.png",
+      logoExplainer:
+        "Features the iconic golden five-pointed Star of Cameroon (L'Étoile d'Unité) soaring across dynamic green, red, and yellow arcs mirroring the Cameroon national tricolor, symbolizing unity, vitality, and dependable aerial bridges across Central Africa.",
+      sources: [
+        "https://www.camair-co.cm/",
+        "https://en.wikipedia.org/wiki/Camair-Co",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  TZ: [
+    {
+      id: "tz-air-tanzania",
+      countryCode: "TZ",
+      name: "Air Tanzania ('The Wings of Kilimanjaro')",
+      iata: "TC",
+      icao: "ATC",
+      founded: 1977,
+      alliance: "None",
+      hubs: ["Julius Nyerere International Airport (DAR)"],
+      fleet: {
+        total: 15,
+        summary:
+          "15 aircraft (Boeing 787-8 Dreamliner, Boeing 767-300F cargo, Boeing 737 MAX 9, Airbus A220-300, De Havilland Dash 8-Q400, Dash 8-Q300)",
+      },
+      logo: "/airline-logos/tz/air-tanzania.svg",
+      logoExplainer:
+        "Features the graceful Twiga (the Maasai giraffe, Tanzania's national animal and symbol of peaceful far-sighted vision) rendered on the tailfin in gleaming yellow against deep African blue, accompanied by the proud motto 'The Wings of Kilimanjaro' connecting Dar es Salaam across Africa, the Middle East, and Asia.",
+      sources: [
+        "https://www.airtanzania.co.tz/",
+        "https://en.wikipedia.org/wiki/Air_Tanzania",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "tz-precision-air",
+      countryCode: "TZ",
+      name: "Precision Air",
+      iata: "PW",
+      icao: "PRF",
+      founded: 1993,
+      alliance: "None",
+      hubs: ["Julius Nyerere International Airport (DAR)"],
+      fleet: {
+        total: 9,
+        summary: "9 aircraft (ATR 72-500, ATR 42-500, ATR 42-600)",
+      },
+      logo: "/airline-logos/tz/precision-air.svg",
+      logoExplainer:
+        "Features a bold red and blue aerodynamic crest depicting an aircraft ascending past a stylized Mount Kilimanjaro summit, representing premier safari tourism access and regional aviation excellence across East Africa.",
+      sources: [
+        "https://www.precisionairtz.com/",
+        "https://en.wikipedia.org/wiki/Precision_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
