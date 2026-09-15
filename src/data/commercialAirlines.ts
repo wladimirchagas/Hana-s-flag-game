@@ -4559,6 +4559,136 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Fiji
+  FJ: [
+    {
+      id: "fj-fiji-airways",
+      countryCode: "FJ",
+      name: "Fiji Airways",
+      iata: "FJ",
+      icao: "FJI",
+      founded: 1951,
+      alliance: "oneworld",
+      hubs: ["Nadi International Airport (NAN)", "Nausori International Airport (SUV)"],
+      fleet: {
+        total: 15,
+        summary: "15 aircraft (Airbus A350-900, A330-200, A330-300; Boeing 737 MAX 8; ATR 72-600)",
+      },
+      logo: "/airline-logos/fj/fiji-airways.svg",
+      logoExplainer:
+        "Designed by renowned Fijian Masi artist Makereta Matemosi, the logo features the traditional 'Teteva' masi motif, a sacred indigenous Fijian symbol honoring community unity, spiritual protection, and Pacific navigation.",
+      sources: [
+        "https://www.fijiairways.com/",
+        "https://en.wikipedia.org/wiki/Fiji_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Papua New Guinea
+  PG: [
+    {
+      id: "pg-air-niugini",
+      countryCode: "PG",
+      name: "Air Niugini",
+      iata: "PX",
+      icao: "ANG",
+      founded: 1973,
+      alliance: "None",
+      hubs: ["Jacksons International Airport (POM)"],
+      fleet: {
+        total: 20,
+        summary: "20 aircraft (Boeing 767-300ER, 737-800; Fokker 100, Fokker 70; De Havilland Dash 8-Q400)",
+      },
+      logo: "/airline-logos/pg/air-niugini.svg",
+      logoExplainer:
+        "Features the iconic Raggiana bird-of-paradise (kumul) in vivid scarlet red and golden yellow plumage in soaring flight, directly reflecting Papua New Guinea's national emblem and celebrated cultural heritage.",
+      sources: [
+        "https://www.airniugini.com.pg/",
+        "https://en.wikipedia.org/wiki/Air_Niugini",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Vanuatu
+  VU: [
+    {
+      id: "vu-air-vanuatu",
+      countryCode: "VU",
+      name: "Air Vanuatu",
+      iata: "NF",
+      icao: "AVN",
+      founded: 1981,
+      alliance: "None",
+      hubs: ["Bauerfield International Airport (VLI)"],
+      fleet: {
+        total: 4,
+        summary: "4 aircraft (Boeing 737-800; ATR 72-600)",
+      },
+      logo: "/airline-logos/vu/air-vanuatu.svg",
+      logoExplainer:
+        "Features an artistic soaring tropical bird in red, yellow, and deep oceanic blue, honoring Vanuatu's Melanesian island traditions, coral sea navigation, and essential inter-island air bridge.",
+      sources: [
+        "https://www.airvanuatu.com/",
+        "https://en.wikipedia.org/wiki/Air_Vanuatu",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Solomon Islands
+  SB: [
+    {
+      id: "sb-solomon-airlines",
+      countryCode: "SB",
+      name: "Solomon Airlines",
+      iata: "IE",
+      icao: "SOL",
+      founded: 1962,
+      alliance: "None",
+      hubs: ["Honiara International Airport (HIR)"],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Airbus A320-200; De Havilland Dash 8-100; DHC-6 Twin Otter)",
+      },
+      logo: "/airline-logos/sb/solomon-airlines.svg",
+      logoExplainer:
+        "Features a stylized Pacific frigatebird in radiant gold soaring above Melanesian blue and green speed bands, symbolizing maritime freedom, island voyages, and national unity across the Solomon archipelago.",
+      sources: [
+        "https://www.flysolomons.com/",
+        "https://en.wikipedia.org/wiki/Solomon_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Samoa
+  WS: [
+    {
+      id: "ws-samoa-airways",
+      countryCode: "WS",
+      name: "Samoa Airways",
+      iata: "OL",
+      icao: "PAO",
+      founded: 1959,
+      alliance: "None",
+      hubs: ["Faleolo International Airport (APW)"],
+      fleet: {
+        total: 3,
+        summary: "3 aircraft (DHC-6 Twin Otter)",
+      },
+      logo: "/airline-logos/ws/samoa-airways.svg",
+      logoExplainer:
+        "Features the delicate tropical red teuila flower (the national flower of Samoa) stylized into an aerodynamic crest, celebrating Fa'a Samoa (the Samoan way of life), island warmth, and Polynesian cultural pride.",
+      sources: [
+        "https://samoaairways.com/",
+        "https://en.wikipedia.org/wiki/Samoa_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
