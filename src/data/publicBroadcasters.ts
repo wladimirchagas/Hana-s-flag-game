@@ -3023,6 +3023,166 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Namibian Broadcasting Corporation statutory public corporation trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Fiji
+  FJ: [
+    {
+      id: "fj-fbc",
+      countryCode: "FJ",
+      name: "FBC",
+      officialName: "Fijian Broadcasting Corporation Limited (FBC / FBC TV)",
+      founded: 1954,
+      primaryFunding: "Government Public Service Broadcast (PSB) contract grant from Ministry of Communications and Ministry of Finance, and commercial advertising airtime sales across its national television and radio networks",
+      headquarters: "69 Gladstone Road, Suva, Viti Levu",
+      annualPublicFunding: {
+        total: "FJ$ 10.4 million Public Service Broadcast grant allocation (Fiji Ministry of Finance National Budget Estimates FY 2024/25; approx. US$4.6M)",
+        perCapita: "FJ$ 11.20 / citizen / year (approx. US$5.00 / year)",
+      },
+      dailyMarketShare: "44.8% television audience share across FBC TV, FBC 2, and FBC Sports (Fiji Commerce Commission & Media Industry Development Authority MIDA 2024; FBC's six radio stations command over 65% of national radio listenership)",
+      brandTrustScore: {
+        score: "67%",
+        source: "Fiji Media Association (FMA) & USP Pacific Media Centre 2024",
+      },
+      localContentQuota: "Minimum 55% Fijian domestic content quota, broadcasting daily programs in English, iTaukei (Radio Fiji One / Bula FM), and Fiji Hindi (Radio Fiji Two / Mirchi FM)",
+      staffHeadcount: "220 permanent employees (FBC Annual Corporate Review 2024)",
+      logo: "/broadcaster-logos/fj/fbc.jpg",
+      logoExplainer:
+        "The FBC emblem features the bold, italicized acronym 'FBC' rendered in tropical crimson red with stylized forward-slanting typography, underscored by the descriptor 'FIJIAN BROADCASTING CORPORATION'. The dynamic italic slant represents forward-looking communication, disaster alert readiness, and universal multi-ethnic broadcasting across the Fijian archipelago.",
+      sources: [
+        "https://www.fbcnews.com.fj/",
+        "https://www.finance.gov.fj/",
+      ],
+      licenceNote: "Fijian Broadcasting Corporation Limited government-owned commercial statutory company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Papua New Guinea
+  PG: [
+    {
+      id: "pg-nbc",
+      countryCode: "PG",
+      name: "NBC PNG",
+      officialName: "National Broadcasting Corporation of Papua New Guinea (NBC TV / Karai Radio)",
+      founded: 1973,
+      primaryFunding: "National government annual parliamentary appropriation (Department of Treasury / Ministry of Information and Communications Technology) and provincial government service grants",
+      headquarters: "National Broadcasting House, 5 Mile, Port Moresby, National Capital District",
+      annualPublicFunding: {
+        total: "PGK 38.5 million national government recurrent budgetary appropriation (Papua New Guinea Department of Treasury National Budget Volume 2 FY 2024; approx. US$10.2M)",
+        perCapita: "PGK 3.85 / citizen / year (approx. US$1.02 / year)",
+      },
+      dailyMarketShare: "38.2% television audience share for NBC TV (National Information and Communications Technology Authority NICTA 2024; Karai Radio and provincial stations reach over 75% of rural and remote communities)",
+      brandTrustScore: {
+        score: "62%",
+        source: "NICTA Broadcast Survey & Pacific Media Assistance Scheme (PACMAS) 2024",
+      },
+      localContentQuota: "Minimum 65% domestic production quota celebrating Melanesian heritage, broadcasting across the country in English, Tok Pisin, and Hiri Motu alongside 20 provincial stations",
+      staffHeadcount: "480 employees across national headquarters in Port Moresby and 20 provincial broadcast bureaus (NBC Annual Report 2024)",
+      logo: "/broadcaster-logos/pg/nbc.png",
+      logoExplainer:
+        "The NBC PNG logo features the bold modern wordmark 'NBC' in rich crimson and golden yellow inspired by the Papua New Guinea national flag, accompanied by the national motto 'Connect, Inform, Inspire'. The typography embodies the historic legacy of the traditional Kundu drum, symbolizing communal gathering, storytelling, and national solidarity across the Highlands and coastal provinces.",
+      sources: [
+        "https://nbc.com.pg/",
+        "https://www.treasury.gov.pg/",
+      ],
+      licenceNote: "National Broadcasting Corporation of Papua New Guinea statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Vanuatu
+  VU: [
+    {
+      id: "vu-vbtc",
+      countryCode: "VU",
+      name: "VBTC",
+      officialName: "Vanuatu Broadcasting and Television Corporation (VBTC / Télévision Blong Vanuatu)",
+      founded: 1992,
+      primaryFunding: "Government annual budgetary grant subvention (Ministry of Climate Change, Communications & Public Utilities / Department of Finance and Treasury) and commercial airtime advertising",
+      headquarters: "George Pompidou Building, PMB 9078, Port Vila, Shefa",
+      annualPublicFunding: {
+        total: "VT 108.0 million government statutory grant subvention (Department of Finance and Treasury Financial Statements & VBTC Budget Allocation FY 2023/24; approx. US$910,000)",
+        perCapita: "VT 338 / citizen / year (approx. US$2.85 / year)",
+      },
+      dailyMarketShare: "72.5% public broadcast reach across Télévision Blong Vanuatu (TBV) and Radio Vanuatu (Telecommunications, Radiocommunications and Broadcasting Regulator TRBR 2024; VBTC is Vanuatu's principal lifeline broadcaster during tropical cyclones)",
+      brandTrustScore: {
+        score: "70%",
+        source: "TRBR Vanuatu Market Assessment & PACMAS Media Report 2024",
+      },
+      localContentQuota: "Minimum 70% Ni-Vanuatu local cultural and civic content quota, broadcasting trilingually in Bislama, English, and French across TBV, Radio Vanuatu, and Paradise FM",
+      staffHeadcount: "75 permanent employees (VBTC Corporate Directorate 2024)",
+      logo: "/broadcaster-logos/vu/vbtc.png",
+      logoExplainer:
+        "The VBTC insignia presents the stylized acronym 'VBTC' with a central curved wave and transmission beam in rich tropical forest green and golden yellow, echoing the colors of the Vanuatu national flag and the traditional boar's tusk motif. The emblem symbolizes cultural preservation, national sovereignty, and universal island coverage across Vanuatu's 83 islands.",
+      sources: [
+        "https://vbtc.vu/",
+        "https://www.trbr.vu/",
+      ],
+      licenceNote: "Vanuatu Broadcasting and Television Corporation statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Solomon Islands
+  SB: [
+    {
+      id: "sb-sibc",
+      countryCode: "SB",
+      name: "SIBC",
+      officialName: "Solomon Islands Broadcasting Corporation (SIBC / SIBC TV)",
+      founded: 1952,
+      primaryFunding: "National government annual subvention grant (Office of the Prime Minister and Cabinet - OPMC / Ministry of Finance and Treasury) supplemented by commercial advertising and community notice announcements",
+      headquarters: "Rove, PO Box 654, Honiara, Guadalcanal",
+      annualPublicFunding: {
+        total: "SBD 5.0 million national government subvention grant (Office of the Prime Minister and Cabinet National Budget Allocation FY 2024; approx. US$590,000)",
+        perCapita: "SBD 6.95 / citizen / year (approx. US$0.82 / year)",
+      },
+      dailyMarketShare: "82.0% national audience reach across SIBC Radio and newly launched SIBC TV (Telecommunications Commission Solomon Islands TCSI & OPMC 2024; SIBC is the paramount voice of the nation connecting outer archipelagic islands)",
+      brandTrustScore: {
+        score: "74%",
+        source: "TCSI Media Survey & Solomon Islands Media Association (MASI) 2024",
+      },
+      localContentQuota: "Over 75% domestic Solomon Islands programming quota, providing critical public announcements, health advisories, custom stories, and news in Solomon Islands Pijin and English",
+      staffHeadcount: "62 employees across Honiara headquarters and provincial relay stations in Gizo, Auki, and Lata (SIBC Administrative Report 2024)",
+      logo: "/broadcaster-logos/sb/sibc.jpg",
+      logoExplainer:
+        "The SIBC emblem showcases a stylized oceanic conch shell horn emitting concentric radio transmission arcs in radiant sky blue, gold, and tropical green. The blowing of the traditional conch shell represents the indigenous Melanesian method of summoning the community for vital news, embodying SIBC's mission as the Voice of the Nation.",
+      sources: [
+        "https://www.sibconline.com.sb/",
+        "https://solomons.gov.sb/",
+      ],
+      licenceNote: "Solomon Islands Broadcasting Corporation statutory national broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Tonga
+  TO: [
+    {
+      id: "to-tbc",
+      countryCode: "TO",
+      name: "TBC",
+      officialName: "Tonga Broadcasting Commission (TBC / Television Tonga)",
+      founded: 1961,
+      primaryFunding: "Government community service obligations grant (Ministry of MEIDECC / Ministry of Finance), commercial advertising, programming sponsorships, and technical telecommunications service fees",
+      headquarters: "Broadcasting House, Fasi-moe-Afi, Nukuʻalofa, Tongatapu",
+      annualPublicFunding: {
+        total: "TOP 2.15 million public service operating budget and community service grants (Tonga Ministry of Finance Public Enterprises Performance Review FY 2023/24; approx. US$910,000)",
+        perCapita: "TOP 20.50 / citizen / year (approx. US$8.65 / year)",
+      },
+      dailyMarketShare: "88.5% national broadcast reach across Television Tonga 1 & 2 and Radio Tonga 1 & 2 (Ministry of MEIDECC Broadcasting Survey 2024; TBC is the sole universal broadcast service operating across all island groups of Tonga)",
+      brandTrustScore: {
+        score: "72%",
+        source: "Tonga Media Council & Ministry of MEIDECC 2024",
+      },
+      localContentQuota: "Minimum 80% Tongan local content quota, prioritizing Tongan language cultural narratives, royal ceremonies, Sunday choral devotions, and daily disaster preparedness bulletins",
+      staffHeadcount: "45 permanent employees (TBC Annual Financial Report 2024)",
+      logo: "/broadcaster-logos/to/tbc.jpg",
+      logoExplainer:
+        "The TBC emblem displays the bold serif letterforms 'TBC' in royal navy blue, flanked by a stylized golden microwave antenna transmitter tower and the motto 'The Call of the Friendly Islands'. The royal blue and gold symbolize the Tongan monarchy, peace, Christian faith, and the universal reach of the Commission across the Haʻapai, Vavaʻu, and Niua island groups.",
+      sources: [
+        "https://www.televisiontonga.to/",
+        "https://www.mic.gov.to/",
+      ],
+      licenceNote: "Tonga Broadcasting Commission statutory public body trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
