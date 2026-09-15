@@ -5217,6 +5217,518 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  KG: [
+    {
+      id: "kg-avia-traffic",
+      countryCode: "KG",
+      name: "Avia Traffic Company",
+      iata: "YK",
+      icao: "AVJ",
+      founded: 2001,
+      alliance: "None",
+      hubs: [
+        "Manas International Airport (FRU)",
+        "Osh International Airport (OSS)",
+      ],
+      fleet: {
+        total: 7,
+        summary: "7 aircraft (Boeing 737-300, Airbus A320-200)",
+      },
+      logo: "/airline-logos/kg/avia-traffic.png",
+      logoExplainer:
+        "Features dynamic winged arrowheads in burgundy and sky-blue paired with bold bilingual Cyrillic and Latin typography, symbolizing dependable air transport connecting Bishkek and Osh across the Tien Shan mountains to Central Asia and Russia.",
+      sources: [
+        "https://www.aero.kg/",
+        "https://en.wikipedia.org/wiki/Avia_Traffic_Company",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "kg-aero-nomad",
+      countryCode: "KG",
+      name: "Aero Nomad Airlines",
+      iata: "KA",
+      icao: "ANK",
+      founded: 2021,
+      alliance: "None",
+      hubs: [
+        "Manas International Airport (FRU)",
+        "Osh International Airport (OSS)",
+      ],
+      fleet: {
+        total: 4,
+        summary: "4 aircraft (Airbus A320-200)",
+      },
+      logo: "/airline-logos/kg/aero-nomad.png",
+      logoExplainer:
+        "Features an aerodynamic nomad eagle-feather wing in vibrant crimson and gold, inspired by nomadic Kyrgyz falconry traditions and modern international low-cost connectivity.",
+      sources: [
+        "https://www.aeronomad.kg/",
+        "https://en.wikipedia.org/wiki/Aero_Nomad_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  TJ: [
+    {
+      id: "tj-somon-air",
+      countryCode: "TJ",
+      name: "Somon Air",
+      iata: "SZ",
+      icao: "SMR",
+      founded: 2008,
+      alliance: "None",
+      hubs: [
+        "Dushanbe International Airport (DYU)",
+        "Khujand Airport (LBD)",
+      ],
+      fleet: {
+        total: 8,
+        summary: "8 aircraft (Boeing 737-800, Boeing 737-900ER)",
+      },
+      logo: "/airline-logos/tj/somon-air.png",
+      logoExplainer:
+        "Features a magnificent stylized golden crown and soaring sunburst crest, honoring the Samanid dynasty founder Ismail Somoni and Tajik sovereignty, combined with the deep royal blue 'SOMON AIR' wordmark.",
+      sources: [
+        "https://www.somonair.com/",
+        "https://en.wikipedia.org/wiki/Somon_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  DZ: [
+    {
+      id: "dz-air-algerie",
+      countryCode: "DZ",
+      name: "Air Algérie",
+      iata: "AH",
+      icao: "DAH",
+      founded: 1947,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Houari Boumediene Airport (ALG)",
+        "Ahmed Ben Bella Airport (ORN)",
+        "Mohamed Boudiaf International Airport (CZL)",
+      ],
+      fleet: {
+        total: 56,
+        summary:
+          "56 aircraft (Airbus A330-200, Boeing 737-800, Boeing 737-700C, Boeing 737-600, ATR 72-500, ATR 72-600; A330-900neo and A350-1000 on order)",
+      },
+      logo: "/airline-logos/dz/air-algerie.svg",
+      logoExplainer:
+        "Features the graceful, stylized silhouette of a soaring hirondelle (desert swallow) in scarlet red encircled in white, representing freedom, reliable navigation, and Algerian air connectivity across the Sahara, the Mediterranean, and worldwide.",
+      sources: [
+        "https://airalgerie.dz/",
+        "https://en.wikipedia.org/wiki/Air_Alg%C3%A9rie",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  TN: [
+    {
+      id: "tn-tunisair",
+      countryCode: "TN",
+      name: "Tunisair",
+      iata: "TU",
+      icao: "TAR",
+      founded: 1948,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Tunis–Carthage International Airport (TUN)",
+        "Monastir Habib Bourguiba International Airport (MIR)",
+        "Djerba–Zarzis International Airport (DJE)",
+      ],
+      fleet: {
+        total: 28,
+        summary:
+          "28 aircraft (Airbus A330-200, Airbus A320neo, Airbus A320-200)",
+      },
+      logo: "/airline-logos/tn/tunisair.svg",
+      logoExplainer:
+        "Features the legendary scarlet Dorcas gazelle (la gazelle de Tunisair), a historic emblem adopted in 1948 symbolizing Mediterranean grace, agility, and swift flight across North Africa and Europe.",
+      sources: [
+        "https://www.tunisair.com/",
+        "https://en.wikipedia.org/wiki/Tunisair",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "tn-nouvelair",
+      countryCode: "TN",
+      name: "Nouvelair",
+      iata: "BJ",
+      icao: "LBT",
+      founded: 1989,
+      alliance: "None",
+      hubs: [
+        "Monastir Habib Bourguiba International Airport (MIR)",
+        "Tunis–Carthage International Airport (TUN)",
+      ],
+      fleet: {
+        total: 15,
+        summary: "15 aircraft (Airbus A320-200, Airbus A320neo)",
+      },
+      logo: "/airline-logos/tn/nouvelair.svg",
+      logoExplainer:
+        "Features clean azure and navy wings forming an aerodynamic letterform with a radiant golden compass star, expressing welcoming holiday flights and modern private aviation in Tunisia.",
+      sources: [
+        "https://www.nouvelair.com/",
+        "https://en.wikipedia.org/wiki/Nouvelair",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  LY: [
+    {
+      id: "ly-libyan-airlines",
+      countryCode: "LY",
+      name: "Libyan Airlines",
+      iata: "LN",
+      icao: "LAA",
+      founded: 1964,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Mitiga International Airport (MJI)",
+        "Benina International Airport (BEN)",
+        "Misrata Airport (MRA)",
+      ],
+      fleet: {
+        total: 7,
+        summary:
+          "7 aircraft (Airbus A330-200, Airbus A320-200, Bombardier CRJ900)",
+      },
+      logo: "/airline-logos/ly/libyan-airlines.png",
+      logoExplainer:
+        "Displays a stylized golden winged falcon emblem soaring upwards within a green crescent garland, symbolizing historical resilience, Libyan sovereignty, and civil aviation renewal.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Libyan_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ly-afriqiyah-airways",
+      countryCode: "LY",
+      name: "Afriqiyah Airways",
+      iata: "8U",
+      icao: "AAW",
+      founded: 2001,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Mitiga International Airport (MJI)",
+        "Benina International Airport (BEN)",
+        "Misrata Airport (MRA)",
+      ],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Airbus A330-300, Airbus A320-200)",
+      },
+      logo: "/airline-logos/ly/afriqiyah-airways.svg",
+      logoExplainer:
+        "Features the historic '9.9.99' emblem rendered in vibrant red, green, and gold dots arranged like a joyful smiling face, commemorating the Sirte Declaration of 9 September 1999 establishing the African Union and continental unity.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Afriqiyah_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  AO: [
+    {
+      id: "ao-taag",
+      countryCode: "AO",
+      name: "TAAG Angola Airlines",
+      iata: "DT",
+      icao: "DTA",
+      founded: 1938,
+      alliance: "None",
+      hubs: [
+        "Dr. António Agostinho Neto International Airport (NBJ)",
+        "Quatro de Fevereiro Airport (LAD)",
+      ],
+      fleet: {
+        total: 28,
+        summary:
+          "28 aircraft (Boeing 777-300ER, Boeing 777-200ER, Boeing 737-700, De Havilland Dash 8-Q400; Boeing 787-9 and Airbus A220-300 entering service)",
+      },
+      logo: "/airline-logos/ao/taag.png",
+      logoExplainer:
+        "Features the legendary Palanca Negra Gigante (giant sable antelope, Angola's revered national animal found only in Malanje Province), with its majestic curved horns sweeping back above stylized speed wings and the bold terracotta-red and black TAAG wordmark, embodying Angolan endurance, grace, and national sovereignty.",
+      sources: [
+        "https://www.taag.com/",
+        "https://en.wikipedia.org/wiki/TAAG_Angola_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  CI: [
+    {
+      id: "ci-air-cote-divoire",
+      countryCode: "CI",
+      name: "Air Côte d'Ivoire",
+      iata: "HF",
+      icao: "VRE",
+      founded: 2012,
+      alliance: "None",
+      hubs: ["Félix-Houphouët-Boigny International Airport (ABJ)"],
+      fleet: {
+        total: 10,
+        summary:
+          "10 aircraft (Airbus A320neo, Airbus A320-200, Airbus A319-100, De Havilland Dash 8-Q400; Airbus A330-900neo on order)",
+      },
+      logo: "/airline-logos/ci/air-cote-divoire.svg",
+      logoExplainer:
+        "Features dynamic sweeping wings in the national colors of Côte d'Ivoire—vibrant orange, white, and savannah green—forming a forward-thrusting aerodynamic monogram that represents West African unity, regional hub connectivity from Abidjan, and the warmth of the Ivorian nation.",
+      sources: [
+        "https://www.aircotedivoire.com/",
+        "https://en.wikipedia.org/wiki/Air_C%C3%B4te_d%27Ivoire",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  GH: [
+    {
+      id: "gh-africa-world-airlines",
+      countryCode: "GH",
+      name: "Africa World Airlines (AWA)",
+      iata: "2A",
+      icao: "AFW",
+      founded: 2010,
+      alliance: "None",
+      hubs: ["Kotoka International Airport (ACC)"],
+      fleet: {
+        total: 8,
+        summary: "8 aircraft (Embraer ERJ 145)",
+      },
+      logo: "/airline-logos/gh/africa-world-airlines.png",
+      logoExplainer:
+        "Features a bold red and blue globe meridian emblem encircled by dynamic aircraft speed wings, accompanied by clean modern typography in navy blue, symbolizing dependable inter-city connectivity across Ghana and West African regional hubs.",
+      sources: [
+        "https://www.flyafricaworld.com/",
+        "https://en.wikipedia.org/wiki/Africa_World_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  CM: [
+    {
+      id: "cm-camair-co",
+      countryCode: "CM",
+      name: "Camair-Co",
+      iata: "QC",
+      icao: "CRC",
+      founded: 2006,
+      alliance: "None",
+      hubs: [
+        "Douala International Airport (DLA)",
+        "Yaoundé Nsimalen International Airport (NSI)",
+      ],
+      fleet: {
+        total: 6,
+        summary:
+          "6 aircraft (Boeing 767-300ER, Boeing 737-700, De Havilland Dash 8-Q400)",
+      },
+      logo: "/airline-logos/cm/camair-co.png",
+      logoExplainer:
+        "Features the iconic golden five-pointed Star of Cameroon (L'Étoile d'Unité) soaring across dynamic green, red, and yellow arcs mirroring the Cameroon national tricolor, symbolizing unity, vitality, and dependable aerial bridges across Central Africa.",
+      sources: [
+        "https://www.camair-co.cm/",
+        "https://en.wikipedia.org/wiki/Camair-Co",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  TZ: [
+    {
+      id: "tz-air-tanzania",
+      countryCode: "TZ",
+      name: "Air Tanzania ('The Wings of Kilimanjaro')",
+      iata: "TC",
+      icao: "ATC",
+      founded: 1977,
+      alliance: "None",
+      hubs: ["Julius Nyerere International Airport (DAR)"],
+      fleet: {
+        total: 15,
+        summary:
+          "15 aircraft (Boeing 787-8 Dreamliner, Boeing 767-300F cargo, Boeing 737 MAX 9, Airbus A220-300, De Havilland Dash 8-Q400, Dash 8-Q300)",
+      },
+      logo: "/airline-logos/tz/air-tanzania.svg",
+      logoExplainer:
+        "Features the graceful Twiga (the Maasai giraffe, Tanzania's national animal and symbol of peaceful far-sighted vision) rendered on the tailfin in gleaming yellow against deep African blue, accompanied by the proud motto 'The Wings of Kilimanjaro' connecting Dar es Salaam across Africa, the Middle East, and Asia.",
+      sources: [
+        "https://www.airtanzania.co.tz/",
+        "https://en.wikipedia.org/wiki/Air_Tanzania",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "tz-precision-air",
+      countryCode: "TZ",
+      name: "Precision Air",
+      iata: "PW",
+      icao: "PRF",
+      founded: 1993,
+      alliance: "None",
+      hubs: ["Julius Nyerere International Airport (DAR)"],
+      fleet: {
+        total: 9,
+        summary: "9 aircraft (ATR 72-500, ATR 42-500, ATR 42-600)",
+      },
+      logo: "/airline-logos/tz/precision-air.svg",
+      logoExplainer:
+        "Features a bold red and blue aerodynamic crest depicting an aircraft ascending past a stylized Mount Kilimanjaro summit, representing premier safari tourism access and regional aviation excellence across East Africa.",
+      sources: [
+        "https://www.precisionairtz.com/",
+        "https://en.wikipedia.org/wiki/Precision_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  UG: [
+    {
+      id: "ug-uganda-airlines",
+      countryCode: "UG",
+      name: "Uganda Airlines",
+      iata: "UR",
+      icao: "UGD",
+      founded: 2018,
+      alliance: "None",
+      hubs: ["Entebbe International Airport (EBB)"],
+      fleet: {
+        total: 6,
+        summary:
+          "6 aircraft (Airbus A330-800neo, Bombardier CRJ900 Atmosphere)",
+      },
+      logo: "/airline-logos/ug/uganda-airlines.svg",
+      logoExplainer:
+        "Features the regal Grey Crowned Crane (Uganda's national bird, Balearica regulorum gibbericeps) soaring gracefully, rendered in the national tricolor of black, vibrant yellow, and crimson red, symbolizing resilience, East African warmth, and international prestige as the Pearl of Africa.",
+      sources: [
+        "https://www.ugandairlines.com/",
+        "https://en.wikipedia.org/wiki/Uganda_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  MG: [
+    {
+      id: "mg-madagascar-airlines",
+      countryCode: "MG",
+      name: "Madagascar Airlines",
+      iata: "MD",
+      icao: "MGY",
+      founded: 1947,
+      alliance: "None",
+      hubs: ["Ivato International Airport (TNR)"],
+      fleet: {
+        total: 9,
+        summary:
+          "9 aircraft (ATR 72-500, ATR 72-600, De Havilland Canada DHC-6 Twin Otter; Boeing 787 on order)",
+      },
+      logo: "/airline-logos/mg/madagascar-airlines.svg",
+      logoExplainer:
+        "Features the stylized, iconic Ravinala tree (the traveller's palm, Ravenala madagascariensis, Madagascar's national botanical symbol) forming an aerodynamic fan of green fronds with a blossoming crest, evoking island shelter, biodiversity, and Indian Ocean hospitality.",
+      sources: [
+        "https://madagascarairlines.com/",
+        "https://en.wikipedia.org/wiki/Madagascar_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  MZ: [
+    {
+      id: "mz-lam-mozambique",
+      countryCode: "MZ",
+      name: "LAM Mozambique Airlines",
+      iata: "TM",
+      icao: "LAM",
+      founded: 1936,
+      alliance: "None",
+      hubs: ["Maputo International Airport (MPM)"],
+      fleet: {
+        total: 7,
+        summary:
+          "7 aircraft (Boeing 737-700, Bombardier CRJ900, De Havilland Dash 8-Q400)",
+      },
+      logo: "/airline-logos/mz/lam-mozambique.svg",
+      logoExplainer:
+        "Features dynamic sweeping waves in turquoise, teal, and charcoal forming an aerodynamic bird-in-flight motif, symbolizing maritime breezes off the Indian Ocean, coastal connectivity, and continuous links between Maputo, Beira, and Nampula.",
+      sources: [
+        "https://www.lam.co.mz/",
+        "https://en.wikipedia.org/wiki/LAM_Mozambique_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  NA: [
+    {
+      id: "na-air-namibia",
+      countryCode: "NA",
+      name: "Air Namibia",
+      iata: "SW",
+      icao: "NMB",
+      founded: 1946,
+      alliance: "None",
+      hubs: [
+        "Hosea Kutako International Airport (WDH)",
+        "Eros Airport (ERS)",
+      ],
+      fleet: {
+        total: 10,
+        summary:
+          "Historic operations operated Airbus A330-200, Airbus A319-100, and Embraer ERJ 135 across Southern Africa and Europe",
+      },
+      logo: "/airline-logos/na/air-namibia.svg",
+      logoExplainer:
+        "Features dynamic desert-and-sky speed chevrons in sun-gold, deep navy, and ocean blue reflecting the Namib Desert dunes, the South Atlantic coastline, and the radiant southern sun of Namibia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Air_Namibia",
+      ],
+      licenceNote:
+        "Commercial airline trademark and historical brand logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  BW: [
+    {
+      id: "bw-air-botswana",
+      countryCode: "BW",
+      name: "Air Botswana ('Going Your Way')",
+      iata: "BP",
+      icao: "BOT",
+      founded: 1972,
+      alliance: "None",
+      hubs: ["Sir Seretse Khama International Airport (GBE)"],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Embraer E175, ATR 72-600)",
+      },
+      logo: "/airline-logos/bw/air-botswana.svg",
+      logoExplainer:
+        "Features sweeping wings and curved speed bands in sky-blue and jet-black drawn from the national flag of Botswana, celebrating the precious gift of Pula (rain and life), welcoming Southern African hospitality, and effortless travel to the Okavango Delta and Chobe.",
+      sources: [
+        "https://airbotswana.co.bw/",
+        "https://en.wikipedia.org/wiki/Air_Botswana",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
