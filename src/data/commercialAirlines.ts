@@ -1366,6 +1366,225 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // China
+  CN: [
+    {
+      id: "cn-air-china",
+      countryCode: "CN",
+      name: "Air China",
+      iata: "CA",
+      icao: "CCA",
+      founded: 1988,
+      alliance: "Star Alliance",
+      hubs: ["Beijing Capital International Airport (PEK)", "Beijing Daxing (PKX)", "Chengdu Tianfu (TFU)", "Shanghai Pudong (PVG)"],
+      fleet: {
+        total: 537,
+        summary: "537 aircraft (Airbus A319, A320, A321, A330-200/300, A350-900; Boeing 737-700/800/MAX 8, 747-400/8, 777-300ER, 787-9; Comac ARJ21, C919)",
+      },
+      logo: "/airline-logos/cn/air-china.svg",
+      logoExplainer:
+        "Features a stylized artistic crimson Phoenix (Fenghuang), the mythical bird of Chinese legend signifying auspicious peace, good fortune, and rebirth. In a clever typographic touch, the flowing contours of the phoenix wings deftly spell out the letters 'VIP' (Very Important Person), symbolizing premier hospitality, accompanied by calligraphy penned by Deng Xiaoping.",
+      sources: [
+        "https://www.airchina.com.cn/en/about_us/airchina_story.shtml",
+        "https://en.wikipedia.org/wiki/Air_China",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "cn-china-eastern",
+      countryCode: "CN",
+      name: "China Eastern Airlines",
+      iata: "MU",
+      icao: "CES",
+      founded: 1988,
+      alliance: "SkyTeam",
+      hubs: ["Shanghai Pudong International Airport (PVG)", "Shanghai Hongqiao (SHA)", "Kunming Changshui (KMG)", "Xi'an Xianyang (XIY)"],
+      fleet: {
+        total: 680,
+        summary: "680 aircraft (Airbus A320, A321, A330-200/300, A350-900; Boeing 737-700/800/MAX 8, 777-300ER, 787-9; Comac ARJ21, C919)",
+      },
+      logo: "/airline-logos/cn/china-eastern.svg",
+      logoExplainer:
+        "Depicts a sleek white swallow soaring upwards across a circular sun motif composed of crimson and royal blue hemispheres. The swallow heralds the arrival of spring and happy journeys in Chinese folklore, while the round red and blue sphere echoes traditional Yin-Yang harmony and round-the-world civil aviation.",
+      sources: [
+        "https://www.ceair.com/about/company-profile.html",
+        "https://en.wikipedia.org/wiki/China_Eastern_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "cn-china-southern",
+      countryCode: "CN",
+      name: "China Southern Airlines",
+      iata: "CZ",
+      icao: "CSN",
+      founded: 1988,
+      alliance: "None",
+      hubs: ["Guangzhou Baiyun International Airport (CAN)", "Beijing Daxing International Airport (PKX)", "Shenzhen Bao'an (SZX)"],
+      fleet: {
+        total: 708,
+        summary: "708 aircraft (Airbus A320, A321, A330-300, A350-900; Boeing 737-700/800/MAX 8, 777-300ER, 787-8/9; Comac ARJ21, C919)",
+      },
+      logo: "/airline-logos/cn/china-southern.svg",
+      logoExplainer:
+        "Showcases the bright red flower of the Kapok tree (Bombax ceiba), the official floral emblem of Guangzhou and southern China, set against a tranquil azure tailfin. The red kapok flower represents warm Lingnan hospitality, natural vitality, and vibrant southern prosperity.",
+      sources: [
+        "https://www.csair.com/en/about/investor/profile/",
+        "https://en.wikipedia.org/wiki/China_Southern_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Taiwan
+  TW: [
+    {
+      id: "tw-china-airlines",
+      countryCode: "TW",
+      name: "China Airlines",
+      iata: "CI",
+      icao: "CAL",
+      founded: 1959,
+      alliance: "SkyTeam",
+      hubs: ["Taoyuan International Airport (TPE - Taipei)", "Kaohsiung International Airport (KHH)"],
+      fleet: {
+        total: 85,
+        summary: "85 aircraft (Airbus A321neo, A330-300, A350-900; Boeing 777-300ER, 777F, 747-400F)",
+      },
+      logo: "/airline-logos/tw/china-airlines.svg",
+      logoExplainer:
+        "The delicate pink Plum Blossom (Meihua / Prunus mume), adopted in 1995. As the national flower of the Republic of China, the resilient plum blossom blooms bravely in harsh winter frost, symbolizing moral fortitude, quiet elegance, and Chinese cultural perseverance.",
+      sources: [
+        "https://www.china-airlines.com/us/en/about-us/corporate-profile",
+        "https://en.wikipedia.org/wiki/China_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "tw-eva-air",
+      countryCode: "TW",
+      name: "EVA Air",
+      iata: "BR",
+      icao: "EVA",
+      founded: 1989,
+      alliance: "Star Alliance",
+      hubs: ["Taoyuan International Airport (TPE - Taipei)", "Kaohsiung International Airport (KHH)"],
+      fleet: {
+        total: 88,
+        summary: "88 aircraft (Airbus A321-200, A330-300; Boeing 777-300ER, 777F, 787-9, 787-10 Dreamliner)",
+      },
+      logo: "/airline-logos/tw/eva-air.svg",
+      logoExplainer:
+        "Inherited from the Evergreen Group, the emblem features an orange compass rose navigating on a deep green sphere. Green represents environmental harmony and safety, orange signifies energetic innovation, and the navigational compass recalls maritime exploration traditions.",
+      sources: [
+        "https://www.evaair.com/en-global/about-eva-air/about-us/company-profile/",
+        "https://en.wikipedia.org/wiki/EVA_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // South Korea
+  KR: [
+    {
+      id: "kr-korean-air",
+      countryCode: "KR",
+      name: "Korean Air",
+      iata: "KE",
+      icao: "KAL",
+      founded: 1962,
+      alliance: "SkyTeam",
+      hubs: ["Incheon International Airport (ICN - Seoul)", "Gimpo International Airport (GMP - Seoul)"],
+      fleet: {
+        total: 169,
+        summary: "169 aircraft (Airbus A220-300, A321neo, A330-200/300, A380-800; Boeing 737-800/900/MAX 8, 747-8I, 777-200ER/300ER, 787-9/10)",
+      },
+      logo: "/airline-logos/kr/korean-air.svg",
+      logoExplainer:
+        "Designed in 1984, the Taegeuk emblem embodies cosmic balance, featuring the traditional Korean red and blue Yin-Yang dynamic whorl separated by a white aircraft propeller blade in motion, set beside Korean Air's signature sky-blue aircraft livery.",
+      sources: [
+        "https://www.koreanair.com/global/en/about-korean-air/company-info",
+        "https://en.wikipedia.org/wiki/Korean_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "kr-asiana-airlines",
+      countryCode: "KR",
+      name: "Asiana Airlines",
+      iata: "OZ",
+      icao: "AAR",
+      founded: 1988,
+      alliance: "Star Alliance",
+      hubs: ["Incheon International Airport (ICN - Seoul)", "Gimpo International Airport (GMP - Seoul)"],
+      fleet: {
+        total: 67,
+        summary: "67 aircraft (Airbus A321-200, A321neo, A330-300, A350-900, A380-800; Boeing 777-200ER)",
+      },
+      logo: "/airline-logos/kr/asiana-airlines.svg",
+      logoExplainer:
+        "Clean, elegant slate-grey logotype introduced in late 2024 following corporate restructuring, reflecting sleek modern sophistication, calm reliability, and premium East Asian passenger service.",
+      sources: [
+        "https://flyasiana.com/C/US/EN/contents/overview-of-asiana-airlines",
+        "https://en.wikipedia.org/wiki/Asiana_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // North Korea
+  KP: [
+    {
+      id: "kp-air-koryo",
+      countryCode: "KP",
+      name: "Air Koryo",
+      iata: "JS",
+      icao: "KOR",
+      founded: 1955,
+      alliance: "None",
+      hubs: ["Pyongyang Sunan International Airport (FNJ)"],
+      fleet: {
+        total: 14,
+        summary: "14 aircraft (Antonov An-24, An-148; Ilyushin Il-18, Il-62M, Il-76; Tupolev Tu-134, Tu-154, Tu-204)",
+      },
+      logo: "/airline-logos/kp/air-koryo.svg",
+      logoExplainer:
+        "Features a stylized winged crane in soaring flight, derived from historical Korean folklore where the red-crowned crane represents longevity, dignity, and celestial flight. Named after the ancient Koryo Dynasty that gave Korea its international name.",
+      sources: [
+        "http://www.airkoryo.com.kp/",
+        "https://en.wikipedia.org/wiki/Air_Koryo",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Mongolia
+  MN: [
+    {
+      id: "mn-miat-mongolian",
+      countryCode: "MN",
+      name: "MIAT Mongolian Airlines",
+      iata: "OM",
+      icao: "MGL",
+      founded: 1956,
+      alliance: "None",
+      hubs: ["Chinggis Khaan International Airport (UBN - Ulaanbaatar)"],
+      fleet: {
+        total: 10,
+        summary: "10 aircraft (Boeing 737-800, 737 MAX 8, 767-300ER, 787-9 Dreamliner; Bombardier CRJ-200)",
+      },
+      logo: "/airline-logos/mn/miat-mongolian.svg",
+      logoExplainer:
+        "Features a winged horse (Hiimori / Wind Horse) leaping majestically within an elliptical disc alongside Mongolian blue script. In nomadic Mongolian tradition, the Wind Horse embodies human spiritual energy, soul, and soaring nomadic freedom across the vast open steppes.",
+      sources: [
+        "https://www.miat.com/about-us/",
+        "https://en.wikipedia.org/wiki/MIAT_Mongolian_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
 
 
