@@ -1496,38 +1496,33 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
 
   function handleGridSelect(id: string, crestId?: string, airlineId?: string, broadcasterId?: string) {
     if (isModernEra) {
-      // Only change map selection if it's NOT an airline/broadcaster tile.
-      // Airline/broadcaster tiles have selectId set to their country, but clicking them
-      // should NOT move the map — only update the grid selection and info panel.
-      const isAirlineOrBroadcaster = airlineId !== undefined || broadcasterId !== undefined;
-      if (!isAirlineOrBroadcaster) {
-        const c = codeToCountry.get(id);
-        if (!c) return;
-        setSelected({ kind: "modern", country: c });
-        setHovered(null);
-        // When selecting a plain country card, clear the grid-specific selections
-        setGridCrest(null);
-        setGridAirlineId(null);
-        setGridBroadcasterId(null);
-      } else {
-        // For airline/broadcaster selections, just update the grid selection
-        // without changing map selection.
-        setHovered(null);
-        // Remember which specific crest was clicked (a home nation / entity), so the
-        // panel shows THAT crest instead of the parent country's flag or crest.
-        const parentCode = display?.kind === "modern" ? display.country.code : "";
-        setGridCrest(
-          crestId && gridContentType === "footballcrest" ? { id: crestId, parent: parentCode } : null,
-        );
-        if (airlineId) {
-          setGridAirlineId(airlineId);
-          setGridContentType("airline");
-        }
-        if (broadcasterId) {
-          setGridBroadcasterId(broadcasterId);
-          setGridContentType("broadcaster");
-        }
-      }
+      // `id` is always the entity's own country code (an airline/broadcaster tile's
+      // `selectId` is set to its parent country — see FlagGrid). Select that country
+      // on every grid click, airline/broadcaster tiles included: the map's highlight
+      // and the detail panel must always describe the same entity (CLAUDE.md, "The
+      // map's highlight and the detail panel must always be the same entity"). An
+      // earlier version left the map/panel untouched for airline/broadcaster clicks
+      // so browsing one country's airline wouldn't disturb a different country
+      // already shown — but with nothing selected yet that left the panel on its
+      // empty welcome state and the map blank no matter how many times the card was
+      // clicked, and it let a stale airline/broadcaster survive a later country
+      // change on the map. Always keeping map = panel = grid in sync fixes both.
+      const c = codeToCountry.get(id);
+      if (!c) return;
+      setSelected({ kind: "modern", country: c });
+      setHovered(null);
+      // Exactly one of crestId/airlineId/broadcasterId is ever passed for a given
+      // tile, so setting all three grid-specific picks here (nulling the ones that
+      // don't apply) always leaves just the clicked one active — a football-crest
+      // click no longer gets its own gridCrest wiped out by this same call, which
+      // is why a home-nation crest never stuck before this fix.
+      setGridCrest(
+        crestId && gridContentType === "footballcrest" ? { id: crestId, parent: c.code } : null,
+      );
+      setGridAirlineId(airlineId ?? null);
+      setGridBroadcasterId(broadcasterId ?? null);
+      if (airlineId) setGridContentType("airline");
+      if (broadcasterId) setGridContentType("broadcaster");
     } else {
       const sel = selectionFromPolityName(id);
       if (!sel) return;
@@ -1692,6 +1687,13 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   }
                   setSelected({ kind: "modern", country: c });
                   setHovered(null);
+                  // Selecting a different country directly on the map must not leave a
+                  // previous country's airline/broadcaster/crest grid pick behind — the
+                  // map and the grid always describe the same entity (see
+                  // handleGridSelect above).
+                  setGridCrest(null);
+                  setGridAirlineId(null);
+                  setGridBroadcasterId(null);
                 }
               },
               onHover: (code) => {
@@ -1783,6 +1785,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       } else {
                         setSelected({ kind: "modern", country: c });
                         setHovered(null);
+                        // Same reasoning as the map's onSelect: don't leave a previous
+                        // country's airline/broadcaster/crest grid pick behind.
+                        setGridCrest(null);
+                        setGridAirlineId(null);
+                        setGridBroadcasterId(null);
                       }
                     }}
                     disabled={countries.length === 0}
