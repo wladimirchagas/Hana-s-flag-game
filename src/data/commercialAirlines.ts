@@ -1214,5 +1214,158 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Brunei
+  BN: [
+    {
+      id: "bn-royal-brunei",
+      countryCode: "BN",
+      name: "Royal Brunei Airlines",
+      iata: "BI",
+      icao: "RBA",
+      founded: 1974,
+      alliance: "None",
+      hubs: ["Brunei International Airport (BWN - Bandar Seri Begawan)"],
+      fleet: {
+        total: 14,
+        summary: "14 aircraft (Airbus A320neo; Boeing 787-8 Dreamliner)",
+      },
+      logo: "/airline-logos/bn/royal-brunei.svg",
+      logoExplainer:
+        "Features the royal yellow sash diagonal and the official royal crest of the Sultanate of Brunei. Royal yellow signifies sovereign majesty and Islamic heritage, while the stylized wings represent graceful airborne service and peaceful international connection.",
+      sources: [
+        "https://www.flyroyalbrunei.com/en/about-us/",
+        "https://en.wikipedia.org/wiki/Royal_Brunei_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Cambodia
+  KH: [
+    {
+      id: "kh-cambodia-angkor-air",
+      countryCode: "KH",
+      name: "Air Cambodia",
+      iata: "K6",
+      icao: "KHV",
+      founded: 2009,
+      alliance: "None",
+      hubs: ["Phnom Penh International Airport (PNH)", "Siem Reap–Angkor International Airport (SAI)"],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Airbus A320-200, A321-200; ATR 72-500)",
+      },
+      logo: "/airline-logos/kh/cambodia-angkor-air.png",
+      logoExplainer:
+        "National flag carrier of Cambodia (rebranded from Cambodia Angkor Air in 2025). The emblem features the sacred towers of Angkor Wat crowned with the divine wings of Garuda in radiant royal gold and purple, symbolizing ancient Khmer civilization and triumphant flight.",
+      sources: [
+        "https://www.aircambodia.com/about-us",
+        "https://en.wikipedia.org/wiki/Air_Cambodia",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Laos
+  LA: [
+    {
+      id: "la-lao-airlines",
+      countryCode: "LA",
+      name: "Lao Airlines",
+      iata: "QV",
+      icao: "LAO",
+      founded: 1976,
+      alliance: "None",
+      hubs: ["Wattay International Airport (VTE - Vientiane)", "Luang Prabang International Airport (LPQ)"],
+      fleet: {
+        total: 11,
+        summary: "11 aircraft (Airbus A320-200; ATR 72-500, ATR 72-600)",
+      },
+      logo: "/airline-logos/la/lao-airlines.svg",
+      logoExplainer:
+        "Features the beloved Dok Champa (Frangipani / Plumeria alba), the national flower of Laos, rendered in golden yellow and white with flowing green and red ribbons. The Dok Champa represents sincerity, joy in hospitality, and the gentle beauty of Lao culture.",
+      sources: [
+        "https://www.laoairlines.com/about-us",
+        "https://en.wikipedia.org/wiki/Lao_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Myanmar
+  MM: [
+    {
+      id: "mm-myanmar-national-airlines",
+      countryCode: "MM",
+      name: "Myanmar National Airlines",
+      iata: "UB",
+      icao: "UBA",
+      founded: 1948,
+      alliance: "None",
+      hubs: ["Yangon International Airport (RGN)", "Mandalay International Airport (MDL)"],
+      fleet: {
+        total: 11,
+        summary: "11 aircraft (Boeing 737-800; Embraer E190; ATR 72-600)",
+      },
+      logo: "/airline-logos/mm/myanmar-national-airlines.svg",
+      logoExplainer:
+        "Established in 1948 as Union of Burma Airways, the state flag carrier's insignia portrays the sacred Pyinsarupa (mythical chimera combining five creatures: lion, elephant, carp, peacock, and buffalo) alongside a golden lotus flower, symbolizing national harmony and majestic protection.",
+      sources: [
+        "https://www.flymna.com/about-mna",
+        "https://en.wikipedia.org/wiki/Myanmar_National_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "mm-myanmar-airways-international",
+      countryCode: "MM",
+      name: "Myanmar Airways International",
+      iata: "8M",
+      icao: "MMA",
+      founded: 1993,
+      alliance: "None",
+      hubs: ["Yangon International Airport (RGN)", "Mandalay International Airport (MDL)"],
+      fleet: {
+        total: 13,
+        summary: "13 aircraft (Airbus A319-100, A320-200; Embraer E190)",
+      },
+      logo: "/airline-logos/mm/myanmar-airways-international.svg",
+      logoExplainer:
+        "Features the Pyinsarupa creature leaping dynamically through a radiant golden disc against deep sky blue, signifying mythical speed, ancient Burmese folklore, and dependable international aviation.",
+      sources: [
+        "https://maiair.com/about-us",
+        "https://en.wikipedia.org/wiki/Myanmar_Airways_International",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Timor-Leste
+  TL: [
+    {
+      id: "tl-aero-dili",
+      countryCode: "TL",
+      name: "Aero Dili",
+      iata: "8G",
+      icao: "DTL",
+      founded: 2018,
+      alliance: "None",
+      hubs: ["Presidente Nicolau Lobato International Airport (DIL - Dili)"],
+      fleet: {
+        total: 3,
+        summary: "3 aircraft (Airbus A320-200; Cessna 207 Skywagon)",
+      },
+      logo: "/airline-logos/tl/aero-dili.png",
+      logoExplainer:
+        "The national flag carrier of Timor-Leste, founded in 2018 and operating the first Timor-Leste registered commercial jetliner. The emblem integrates the red, yellow, and black colors of the Timorese national flag with stylized soaring wings, representing national sovereignty, emerging development, and regional air connectivity.",
+      sources: [
+        "https://www.aerodili.com/about-us",
+        "https://en.wikipedia.org/wiki/Aero_Dili",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
 
