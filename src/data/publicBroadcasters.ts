@@ -3503,6 +3503,166 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Ràdio i Televisió d'Andorra, S.A. public company trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Egypt
+  EG: [
+    {
+      id: "eg-nma",
+      countryCode: "EG",
+      name: "NMA / ERTU",
+      officialName: "National Media Authority (الهيئة الوطنية للإعلام - former ERTU / Al Oula & Nile TV)",
+      founded: 1960,
+      primaryFunding: "State budget appropriations from the Ministry of Finance (موازنة الدولة - وزارة المالية under Law No. 137 of 2023), Treasury service fees, and commercial advertising",
+      headquarters: "Maspero Radio & Television Building, Corniche El Nil, Boulaq, Cairo",
+      annualPublicFunding: {
+        total: "EGP 13,200 million state budget operating and wage appropriation (Ministry of Finance & Law No. 137 of 2023 on NMA Budget FY 2023/24; approx. US$275M)",
+        perCapita: "EGP 125.70 / citizen / year (approx. US$2.62 / year)",
+      },
+      dailyMarketShare: "22.5% combined television audience share across Al Oula, Al Thaniya, and Nile Television Network (Ipsos MENA & Supreme Council for Media Regulation 2024; Maspero is the historical anchor of Arab broadcasting)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Supreme Council for Media Regulation (SCMR) & Cairo University Media Survey 2024",
+      },
+      localContentQuota: "Minimum 80% Egyptian domestic cultural and informational content quota, providing universal service across 8 national TV channels and iconic radio networks including Voice of the Arabs and Holy Quran Radio",
+      staffHeadcount: "32,000 employees across Maspero central studios, Nile City complexes, and governorate broadcast centers (NMA Administrative Review 2024)",
+      logo: "/broadcaster-logos/eg/nma.png",
+      logoExplainer:
+        "The Egyptian Television insignia displays the historic circular golden disc of Ra intersected by an ascending broadcast antenna tower framed in vibrant emerald green and gold. The golden sun disc evokes millennia of Nilotic civilization, enlightenment, and Egypt's foundational role as the cultural pioneer of Arab and African broadcasting.",
+      sources: [
+        "https://maspero.eg/",
+        "https://www.scmr.gov.eg/",
+      ],
+      licenceNote: "National Media Authority constitutional public authority trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Saudi Arabia
+  SA: [
+    {
+      id: "sa-sba",
+      countryCode: "SA",
+      name: "SBA",
+      officialName: "Saudi Broadcasting Authority (هيئة الإذاعة والتلفزيون - SBA / Al Saudiya)",
+      founded: 1965,
+      primaryFunding: "Direct state budget allocation from the Ministry of Finance and Ministry of Media (ميزانية الدولة - وزارة الإعلام), program sponsorship, and commercial airtime advertising",
+      headquarters: "Television Street, Al Wisham, Riyadh 11132",
+      annualPublicFunding: {
+        total: "SAR 1,850 million state budget media sector appropriation (Ministry of Finance & Ministry of Media FY 2024; approx. US$493M)",
+        perCapita: "SAR 57.50 / citizen / year (approx. US$15.30 / year)",
+      },
+      dailyMarketShare: "28.2% combined television audience share across Al Saudiya, Al Ekhbariya, SBC, and Quran TV (General Authority for Audiovisual Media GAMR & Ipsos KSA 2024; Quran TV broadcasts 24/7 global coverage of the Grand Mosque in Mecca)",
+      brandTrustScore: {
+        score: "75%",
+        source: "General Authority for Audiovisual Media (GAMR) & Arab Media Forum 2024",
+      },
+      localContentQuota: "Minimum 70% Saudi domestic production quota under Vision 2030 Quality of Life initiatives, championing Saudi national heritage, Islamic culture, and economic diversification coverage",
+      staffHeadcount: "3,800 employees across Riyadh broadcast headquarters and regional transmission directorates (SBA Annual Report 2024)",
+      logo: "/broadcaster-logos/sa/sba.png",
+      logoExplainer:
+        "The Saudi Broadcasting Authority emblem features a stylized geometric palm tree conjoined with crossed curved signal beams rendered in royal green and shimmering gold, echoing the Saudi national emblem. The radiating transmission lines symbolize spiritual guidance, national prosperity, and cutting-edge media reach across the Islamic world.",
+      sources: [
+        "https://sba.sa/",
+        "https://gcam.gov.sa/",
+      ],
+      licenceNote: "Saudi Broadcasting Authority statutory public authority trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // United Arab Emirates
+  AE: [
+    {
+      id: "ae-dmi",
+      countryCode: "AE",
+      name: "DMI",
+      officialName: "Dubai Media Incorporated (مؤسسة دبي للإعلام - DMI / Dubai TV)",
+      founded: 2003,
+      primaryFunding: "Government of Dubai budgetary subvention (حكومة دبي - دائرة المالية) and commercial advertising / content syndication across television, radio, and publishing",
+      headquarters: "Dubai Media City, Al Sufouh 2, PO Box 61111, Dubai",
+      annualPublicFunding: {
+        total: "AED 450.0 million Government of Dubai public service allocation (Department of Finance, Government of Dubai FY 2024; approx. US$122.5M)",
+        perCapita: "AED 47.40 / resident / year (approx. US$12.90 / year)",
+      },
+      dailyMarketShare: "24.5% television audience share in the UAE across Dubai TV, Sama Dubai, Dubai One, and Dubai Sports (Ipsos MENA & Telecommunications and Digital Government Regulatory Authority TDRA 2024)",
+      brandTrustScore: {
+        score: "79%",
+        source: "TDRA Media Perception Index & Arab Media Forum 2024",
+      },
+      localContentQuota: "Minimum 60% Emirati and regional Arabian programming quota, with Sama Dubai exclusively dedicated to Emirati heritage, vernacular poetry, and local civic affairs alongside English-language Dubai One",
+      staffHeadcount: "1,250 permanent employees across Dubai TV studios, Dubai Media City, and international news bureaus (DMI Human Resources Report 2024)",
+      logo: "/broadcaster-logos/ae/dmi.png",
+      logoExplainer:
+        "The DMI emblem presents a dynamic calligraphy-inspired globe rendered in dual arcs of deep azure blue and oceanic turquoise, crowned by the sleek wordmark 'Dubai Media Incorporated'. The spherical dual curve embodies Dubai's cosmopolitan crossroads, innovation, and digital media excellence connecting East and West.",
+      sources: [
+        "https://www.dmi.gov.ae/",
+        "https://tdra.gov.ae/",
+      ],
+      licenceNote: "Dubai Media Incorporated government public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Qatar
+  QA: [
+    {
+      id: "qa-qmc",
+      countryCode: "QA",
+      name: "QMC",
+      officialName: "Qatar Media Corporation (المؤسسة القطرية للإعلام - QMC / Qatar TV)",
+      founded: 1970,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Finance (موازنة الدولة - وزارة المالية under Law No. 17 of 2023) under Emiri public charter oversight",
+      headquarters: "TV Roundabout, Al Markhiya, PO Box 1836, Doha",
+      annualPublicFunding: {
+        total: "QAR 580.0 million state budget public broadcasting appropriation (Ministry of Finance State Budget & QMC Corporate Directorate FY 2024; approx. US$159M)",
+        perCapita: "QAR 200.00 / citizen / year (approx. US$55.00 / year)",
+      },
+      dailyMarketShare: "26.4% domestic television audience share for Qatar TV and Al Rayyan TV (Communications Regulatory Authority CRA Qatar & Ipsos 2024; QMC is the principal national channel for state celebrations and cultural affairs)",
+      brandTrustScore: {
+        score: "77%",
+        source: "Communications Regulatory Authority (CRA) Qatar & Qatar University Social and Economic Survey 2024",
+      },
+      localContentQuota: "Minimum 70% Qatari and Gulf cultural programming quota, broadcasting documentary series on seafaring history, falconry, national development, and religious programming across television and radio",
+      staffHeadcount: "850 permanent media professionals, engineers, and journalists (QMC Performance Bulletin 2024)",
+      logo: "/broadcaster-logos/qa/qmc.png",
+      logoExplainer:
+        "The Qatar Media Corporation emblem features the stylized typography 'QMC' accompanied by elegant Arabic calligraphy in Qatar's national maroon (Pantone 222 C) and pure white. The maroon calligraphy embodies national pride, classical Arabian literacy, and the state's forward-looking cultural identity under Qatar National Vision 2030.",
+      sources: [
+        "https://www.qmc.qa/",
+        "https://www.cra.gov.qa/",
+      ],
+      licenceNote: "Qatar Media Corporation public statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Algeria
+  DZ: [
+    {
+      id: "dz-eptv",
+      countryCode: "DZ",
+      name: "EPTV",
+      officialName: "Établissement Public de Télévision (المؤسسة العمومية للتلفزيون - EPTV / Télévision Algérienne)",
+      founded: 1962,
+      primaryFunding: "State budget dotation (Ministère de la Communication / Loi de finances), special allocation audiovisual fee account n° 302-051 (taxes on Sonelgaz electricity/gas bills), and commercial advertising",
+      headquarters: "21 Boulevard des Martyrs, 16000 Algiers",
+      annualPublicFunding: {
+        total: "DZD 14,500 million state budget subvention & special audiovisual tax account (Loi de finances & Décret présidentiel n° 24-18 FY 2024; approx. US$108M)",
+        perCapita: "DZD 322.00 / citizen / year (approx. US$2.40 / year)",
+      },
+      dailyMarketShare: "25.4% combined television audience share across Télévision Algérienne, Canal Algérie, TV3 (El Ikhbariya), TV4 (Tamazight), and TV6 (Jeunesse) (Immar Research & Médiamétrie Maghreb 2024)",
+      brandTrustScore: {
+        score: "64%",
+        source: "Autorité Nationale Indépendante de Régulation de l'Audiovisuel (ANIRA) & Immar Research 2024",
+      },
+      localContentQuota: "Minimum 60% Algerian domestic production quota, mandating extensive broadcasts in Arabic, Tamazight (all regional variants on TV4), and French across its 8 terrestrial and satellite channels",
+      staffHeadcount: "4,200 employees across the central Maison de la Télévision in Algiers and five regional production stations in Oran, Constantine, Ouargla, Béchar, and Annaba (EPTV Rapport Social 2024)",
+      logo: "/broadcaster-logos/dz/eptv.png",
+      logoExplainer:
+        "The EPTV emblem presents the iconic national broadcast monogram with bold Arabic calligraphy of 'تلفزيون' formed into the shape of Algeria's national borders in green, crimson red, and pristine white. The design pays homage to the martyrs of the Algerian revolution and symbolizes territorial integrity, linguistic plurality, and national sovereignty.",
+      sources: [
+        "https://www.entv.dz/",
+        "https://www.anira.dz/",
+      ],
+      licenceNote: "Établissement Public de Télévision public industrial and commercial establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
