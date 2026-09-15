@@ -1495,6 +1495,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         : null;
 
   function handleGridSelect(id: string, crestId?: string, airlineId?: string, broadcasterId?: string) {
+    console.log('[handleGridSelect] Click detected:', { id, airlineId, broadcasterId, isModernEra });
     if (isModernEra) {
       // Only change map selection if it's NOT an airline/broadcaster tile.
       // Airline/broadcaster tiles have selectId set to their country, but clicking them
@@ -1512,7 +1513,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       } else {
         // For airline/broadcaster selections, just update the grid selection
         // without changing map selection.
+        console.log('[handleGridSelect] Airline/Broadcaster click - updating grid state', { id, airlineId, broadcasterId, currentGridContentType: gridContentType, displayKind: display?.kind });
         setHovered(null);
+
+        // If display is not already set to a modern country, resolve the country from the id (selectId)
+        // and set it so the airline/broadcaster detail panel can render.
+        const needsCountrySet = display?.kind !== "modern";
+        if (needsCountrySet) {
+          console.log('[handleGridSelect] Display not set to modern country, resolving from id:', { id });
+          const c = codeToCountry.get(id);
+          if (c) {
+            setSelected({ kind: "modern", country: c });
+          }
+        }
+
         // Remember which specific crest was clicked (a home nation / entity), so the
         // panel shows THAT crest instead of the parent country's flag or crest.
         const parentCode = display?.kind === "modern" ? display.country.code : "";
@@ -1520,10 +1534,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           crestId && gridContentType === "footballcrest" ? { id: crestId, parent: parentCode } : null,
         );
         if (airlineId) {
+          console.log('[handleGridSelect] Setting airline:', { airlineId });
           setGridAirlineId(airlineId);
           setGridContentType("airline");
         }
         if (broadcasterId) {
+          console.log('[handleGridSelect] Setting broadcaster:', { broadcasterId });
           setGridBroadcasterId(broadcasterId);
           setGridContentType("broadcaster");
         }
@@ -1540,15 +1556,24 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
 
   // Active airline to show in the information widget when in airline view.
   const activeAirline = useMemo(() => {
-    if (subdivisionMode) return null;
-    if (effectiveGridContentType !== "airline" || display?.kind !== "modern") return null;
+    console.log('[activeAirline memo]', { subdivisionMode, effectiveGridContentType, displayKind: display?.kind, gridAirlineId });
+    if (subdivisionMode) {
+      console.log('[activeAirline] Skipping: subdivision mode');
+      return null;
+    }
+    if (effectiveGridContentType !== "airline" || display?.kind !== "modern") {
+      console.log('[activeAirline] Skipping: not airline view or not modern');
+      return null;
+    }
     if (gridAirlineId) {
       const a = airlineById(gridAirlineId);
+      console.log('[activeAirline] Airline by ID:', { gridAirlineId, found: !!a, name: a?.name });
       if (a) {
         return a;
       }
     }
     const countryAirlines = airlinesForCountry(display.country.code);
+    console.log('[activeAirline] Country airlines:', { country: display.country.code, count: countryAirlines.length, first: countryAirlines[0]?.name });
     return countryAirlines[0] ?? null;
   }, [subdivisionMode, effectiveGridContentType, display, gridAirlineId]);
 
