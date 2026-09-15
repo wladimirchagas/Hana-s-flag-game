@@ -3561,6 +3561,180 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Canada
+  CA: [
+    {
+      id: "ca-air-canada",
+      countryCode: "CA",
+      name: "Air Canada",
+      iata: "AC",
+      icao: "ACA",
+      founded: 1937,
+      alliance: "Star Alliance",
+      hubs: ["Toronto Pearson Airport (YYZ)", "Montréal–Trudeau Airport (YUL)", "Vancouver International Airport (YVR)", "Calgary International Airport (YYC)"],
+      fleet: {
+        total: 193,
+        summary: "193 aircraft (Airbus A220-300, A319, A320, A321, A330-300; Boeing 737 MAX 8, 777-200LR, 777-300ER, 787-8, 787-9)",
+      },
+      logo: "/airline-logos/ca/air-canada.svg",
+      logoExplainer:
+        "Features the iconic Canadian red maple leaf (the Rondelle) enclosed within a black circular roundel designed originally by Stewart & Morrison in 1964 and refreshed in 2017. The stylized eleven-pointed leaf symbolizes Canadian sovereignty, unity from coast to coast, and proud global aviation leadership.",
+      sources: [
+        "https://www.aircanada.com/",
+        "https://en.wikipedia.org/wiki/Air_Canada",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ca-westjet",
+      countryCode: "CA",
+      name: "WestJet",
+      iata: "WS",
+      icao: "WJA",
+      founded: 1996,
+      alliance: "None",
+      hubs: ["Calgary International Airport (YYC)", "Edmonton International Airport (YEG)", "Vancouver International Airport (YVR)", "Toronto Pearson Airport (YYZ)"],
+      fleet: {
+        total: 132,
+        summary: "132 aircraft (Boeing 737-700, 737-800, 737 MAX 8; Boeing 787-9 Dreamliner)",
+      },
+      logo: "/airline-logos/ca/westjet.svg",
+      logoExplainer:
+        "Features a geometric stylized maple leaf in Canadian sky teal and deep navy blue alongside bold modern typography, reflecting Western Canada's entrepreneurial spirit, warm hospitality, and transatlantic network growth.",
+      sources: [
+        "https://www.westjet.com/",
+        "https://en.wikipedia.org/wiki/WestJet",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Mexico
+  MX: [
+    {
+      id: "mx-aeromexico",
+      countryCode: "MX",
+      name: "Aeroméxico",
+      iata: "AM",
+      icao: "AMX",
+      founded: 1934,
+      alliance: "SkyTeam",
+      hubs: ["Mexico City International Airport (MEX)", "Guadalajara International Airport (GDL)", "Monterrey International Airport (MTY)"],
+      fleet: {
+        total: 110,
+        summary: "110 aircraft (Boeing 737-800, 737 MAX 8, 737 MAX 9; Boeing 787-8, 787-9 Dreamliner)",
+      },
+      logo: "/airline-logos/mx/aeromexico.svg",
+      logoExplainer:
+        "Features the revered Aztec Eagle Knight (Caballero Águila) profile in deep navy and silver, honoring pre-Columbian Mexica warrior nobility and embodying supreme courage, visionary focus, and graceful flight above the clouds.",
+      sources: [
+        "https://aeromexico.com/",
+        "https://en.wikipedia.org/wiki/Aerom%C3%A9xico",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "mx-volaris",
+      countryCode: "MX",
+      name: "Volaris",
+      iata: "Y4",
+      icao: "VOI",
+      founded: 2005,
+      alliance: "None",
+      hubs: ["Guadalajara International Airport (GDL)", "Mexico City International Airport (MEX)", "Tijuana International Airport (TIJ)", "Cancún International Airport (CUN)"],
+      fleet: {
+        total: 135,
+        summary: "135 aircraft (Airbus A319-100, A320-200, A320neo, A321-200, A321neo)",
+      },
+      logo: "/airline-logos/mx/volaris.svg",
+      logoExplainer:
+        "Features an energetic multi-colored pixelated star matrix representing the Polaris north star, symbolizing reliable celestial guidance, ultra-low-cost innovation, and modern digital connectivity for Mexican travelers.",
+      sources: [
+        "https://www.volaris.com/",
+        "https://en.wikipedia.org/wiki/Volaris",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Panama
+  PA: [
+    {
+      id: "pa-copa-airlines",
+      countryCode: "PA",
+      name: "Copa Airlines",
+      iata: "CM",
+      icao: "CMP",
+      founded: 1947,
+      alliance: "Star Alliance",
+      hubs: ["Tocumen International Airport (PTY)"],
+      fleet: {
+        total: 104,
+        summary: "104 aircraft (Boeing 737-700, 737-800, 737 MAX 8, 737 MAX 9)",
+      },
+      logo: "/airline-logos/pa/copa-airlines.svg",
+      logoExplainer:
+        "Features a gold and blue globe insignia echoing the historic Continental Airlines alliance globe, representing Tocumen Airport as the 'Hub of the Americas' seamlessly uniting North, Central, and South America.",
+      sources: [
+        "https://www.copaair.com/",
+        "https://en.wikipedia.org/wiki/Copa_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Costa Rica
+  CR: [
+    {
+      id: "cr-sansa-airlines",
+      countryCode: "CR",
+      name: "SANSA Airlines",
+      iata: "RZ",
+      icao: "LRS",
+      founded: 1978,
+      alliance: "None",
+      hubs: ["Juan Santamaría International Airport (SJO)"],
+      fleet: {
+        total: 9,
+        summary: "9 aircraft (Cessna 208B Grand Caravan EX)",
+      },
+      logo: "/airline-logos/cr/sansa-airlines.png",
+      logoExplainer:
+        "Features vibrant Costa Rican red and oceanic blue wings soaring above green coastal typography, representing the national domestic carrier providing lifelines to remote rainforest, Pacific surf, and Caribbean eco-tourism airstrips.",
+      sources: [
+        "https://www.flysansa.com/",
+        "https://en.wikipedia.org/wiki/SANSA_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Cuba
+  CU: [
+    {
+      id: "cu-cubana",
+      countryCode: "CU",
+      name: "Cubana de Aviación",
+      iata: "CU",
+      icao: "CUB",
+      founded: 1929,
+      alliance: "None",
+      hubs: ["José Martí International Airport (HAV)"],
+      fleet: {
+        total: 14,
+        summary: "14 aircraft (Ilyushin Il-96-300, Tupolev Tu-204, ATR 42, ATR 72)",
+      },
+      logo: "/airline-logos/cu/cubana.svg",
+      logoExplainer:
+        "Features the Cuban national flag colors with a soaring red, white, and blue chevron wing, celebrating Cubana as one of the world's earliest commercial airlines (founded in 1929) and a founding member of IATA.",
+      sources: [
+        "https://www.cubana.cu/",
+        "https://en.wikipedia.org/wiki/Cubana_de_Aviaci%C3%B3n",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
