@@ -3343,6 +3343,224 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Turkey
+  TR: [
+    {
+      id: "tr-turkish-airlines",
+      countryCode: "TR",
+      name: "Turkish Airlines",
+      iata: "TK",
+      icao: "THY",
+      founded: 1933,
+      alliance: "Star Alliance",
+      hubs: ["Istanbul Airport (IST)", "Ankara Esenboğa Airport (ESB)"],
+      fleet: {
+        total: 456,
+        summary: "456 aircraft (Airbus A319, A320, A320neo, A321, A321neo, A330-200/300, A350-900; Boeing 737-800, 737-900ER, 737 MAX 8/9, 777-300ER, 787-9)",
+      },
+      logo: "/airline-logos/tr/turkish-airlines.svg",
+      logoExplainer:
+        "Features the iconic wild goose emblem designed by Mesut Manioğlu in 1959, rendered in a crisp red circular roundel. The goose represents endurance, long-distance intercontinental flight, and the ability to fly at exceptionally high altitudes, symbolizing Turkish Airlines' global reach across more countries than any other airline.",
+      sources: [
+        "https://www.turkishairlines.com/",
+        "https://en.wikipedia.org/wiki/Turkish_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "tr-pegasus-airlines",
+      countryCode: "TR",
+      name: "Pegasus Airlines",
+      iata: "PC",
+      icao: "PGT",
+      founded: 1990,
+      alliance: "None",
+      hubs: ["Istanbul Sabiha Gökçen Airport (SAW)", "Antalya Airport (AYT)", "İzmir Adnan Menderes Airport (ADB)"],
+      fleet: {
+        total: 110,
+        summary: "110 aircraft (Airbus A320-200, A320neo, A321neo; Boeing 737-800)",
+      },
+      logo: "/airline-logos/tr/pegasus-airlines.svg",
+      logoExplainer:
+        "Features a stylized winged horse Pegasus leaping forwards in vibrant red and warm yellow lettering, drawn from classical mythology to represent affordable, swift, and unrestricted flight across Europe, Anatolia, and the Middle East.",
+      sources: [
+        "https://www.flypgs.com/",
+        "https://en.wikipedia.org/wiki/Pegasus_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "tr-sunexpress",
+      countryCode: "TR",
+      name: "SunExpress",
+      iata: "XQ",
+      icao: "SXS",
+      founded: 1989,
+      alliance: "None",
+      hubs: ["Antalya Airport (AYT)", "İzmir Adnan Menderes Airport (ADB)"],
+      fleet: {
+        total: 77,
+        summary: "77 aircraft (Boeing 737-800, 737 MAX 8)",
+      },
+      logo: "/airline-logos/tr/sunexpress.svg",
+      logoExplainer:
+        "Features a bright golden-yellow sunburst icon paired with deep Mediterranean navy typography, reflecting its heritage as a joint venture between Turkish Airlines and Lufthansa connecting European holidaymakers with the sunny Turkish Riviera.",
+      sources: [
+        "https://www.sunexpress.com/",
+        "https://en.wikipedia.org/wiki/SunExpress",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Ukraine
+  UA: [
+    {
+      id: "ua-skyup-airlines",
+      countryCode: "UA",
+      name: "SkyUp Airlines",
+      iata: "PQ",
+      icao: "SQP",
+      founded: 2016,
+      alliance: "None",
+      hubs: ["Boryspil International Airport (KBP - base; currently operating international ACMI & European charter routes)"],
+      fleet: {
+        total: 10,
+        summary: "10 aircraft (Boeing 737-700, 737-800)",
+      },
+      logo: "/airline-logos/ua/skyup-airlines.svg",
+      logoExplainer:
+        "Features bold contemporary orange and dark-grey typography with an upward-angled aerodynamic slash, symbolizing energetic dynamism, youthfulness, and soaring above challenges.",
+      sources: [
+        "https://skyup.aero/",
+        "https://en.wikipedia.org/wiki/SkyUp",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ua-ukraine-international-airlines",
+      countryCode: "UA",
+      name: "Ukraine International Airlines",
+      iata: "PS",
+      icao: "AUI",
+      founded: 1992,
+      alliance: "None",
+      hubs: ["Boryspil International Airport (KBP)"],
+      fleet: {
+        total: 12,
+        summary: "12 aircraft (Boeing 737-800, 737-900ER, 767-300ER, 777-200ER; Embraer E190/E195)",
+      },
+      logo: "/airline-logos/ua/ukraine-international-airlines.svg",
+      logoExplainer:
+        "Features a soaring falcon in yellow and blue encircling a globe, honoring the Ukrainian national colors (blue and yellow) and representing Ukraine's historic flagship commercial link connecting Eastern Europe with global destinations.",
+      sources: [
+        "https://www.flyuia.com/",
+        "https://en.wikipedia.org/wiki/Ukraine_International_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Moldova
+  MD: [
+    {
+      id: "md-flyone",
+      countryCode: "MD",
+      name: "FlyOne",
+      iata: "5F",
+      icao: "FIA",
+      founded: 2015,
+      alliance: "None",
+      hubs: ["Chișinău International Airport (KIV)"],
+      fleet: {
+        total: 6,
+        summary: "6 aircraft (Airbus A320-200, A321-200)",
+      },
+      logo: "/airline-logos/md/flyone.svg",
+      logoExplainer:
+        "Features bright blue and cyan geometric speed wings shaped into the numeral '1', symbolizing Moldova's premier private low-cost carrier connecting the Moldovan diaspora across Western Europe and the Mediterranean.",
+      sources: [
+        "https://flyone.eu/",
+        "https://en.wikipedia.org/wiki/FlyOne",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Russia
+  RU: [
+    {
+      id: "ru-aeroflot",
+      countryCode: "RU",
+      name: "Aeroflot",
+      iata: "SU",
+      icao: "AFL",
+      founded: 1923,
+      alliance: "None",
+      hubs: ["Sheremetyevo International Airport (SVO)"],
+      fleet: {
+        total: 171,
+        summary: "171 aircraft (Airbus A320-200, A320neo, A321-200, A321neo, A330-300, A350-900; Boeing 737-800, 777-300ER)",
+      },
+      logo: "/airline-logos/ru/aeroflot.svg",
+      logoExplainer:
+        "Retains the historic Soviet winged hammer and sickle insignia originally designed in the 1920s, recognized worldwide as one of commercial aviation's oldest continuous emblems, paired with the modern Russian tricolor flag ribbon.",
+      sources: [
+        "https://www.aeroflot.ru/",
+        "https://en.wikipedia.org/wiki/Aeroflot",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ru-s7-airlines",
+      countryCode: "RU",
+      name: "S7 Airlines",
+      iata: "S7",
+      icao: "SBI",
+      founded: 1957,
+      alliance: "None",
+      hubs: ["Moscow Domodedovo Airport (DME)", "Novosibirsk Tolmachevo Airport (OVB)", "Irkutsk Airport (IKT)"],
+      fleet: {
+        total: 100,
+        summary: "100 aircraft (Airbus A320-200, A320neo, A321-200, A321neo; Boeing 737-800; Embraer E170)",
+      },
+      logo: "/airline-logos/ru/s7-airlines.svg",
+      logoExplainer:
+        "Designed by Landor Associates in 2005, the bright signature lime-green brand and white circular 'S7' emblem broke away from traditional airline blues, symbolizing individuality, friendliness, and optimism across domestic Russian routes.",
+      sources: [
+        "https://www.s7.ru/",
+        "https://en.wikipedia.org/wiki/S7_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Belarus
+  BY: [
+    {
+      id: "by-belavia",
+      countryCode: "BY",
+      name: "Belavia",
+      iata: "B2",
+      icao: "BRU",
+      founded: 1996,
+      alliance: "None",
+      hubs: ["Minsk National Airport (MSQ)"],
+      fleet: {
+        total: 14,
+        summary: "14 aircraft (Boeing 737-800, 737 MAX 8; Embraer E175, E195)",
+      },
+      logo: "/airline-logos/by/belavia.svg",
+      logoExplainer:
+        "Designed in 2016, the logo features the blue cornflower (valoshka) stylized into an aerodynamic flower turbine, celebrating the traditional national flower of Belarus and symbolizing warmth, hospitality, and serene flight.",
+      sources: [
+        "https://en.belavia.by/",
+        "https://en.wikipedia.org/wiki/Belavia",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
