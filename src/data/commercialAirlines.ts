@@ -6056,6 +6056,133 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  MR: [
+    {
+      id: "mr-mauritania-airlines",
+      countryCode: "MR",
+      name: "Mauritania Airlines",
+      iata: "L6",
+      icao: "MAI",
+      founded: 2010,
+      alliance: "None",
+      hubs: ["Nouakchott–Oumtounsy International Airport (NKC)"],
+      fleet: {
+        total: 6,
+        summary:
+          "6 aircraft (Boeing 737 MAX 8, Boeing 737-800, Boeing 737-700, Embraer ERJ 145, Embraer E175)",
+      },
+      logo: "/airline-logos/mr/mauritania-airlines.png",
+      logoExplainer:
+        "Features an aerodynamic emblem in Islamic green and radiant desert gold depicting a stylized crescent and soaring aircraft wings, accompanied by Arabic calligraphic script, symbolizing Mauritania's identity as a bridge between the Maghreb and Sub-Saharan West Africa.",
+      sources: [
+        "https://www.mauritaniaairlines.mr/",
+        "https://en.wikipedia.org/wiki/Mauritania_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  ML: [
+    {
+      id: "ml-sky-mali",
+      countryCode: "ML",
+      name: "Sky Mali",
+      iata: "ML3",
+      icao: "FMY",
+      founded: 2020,
+      alliance: "None",
+      hubs: ["Modibo Keita International Airport (BKO)"],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Boeing 737-500, Xian MA60)",
+      },
+      logo: "/airline-logos/ml/sky-mali.png",
+      logoExplainer:
+        "Features dynamic sweeping wings in Mali's national tricolor—vibrant green, gold, and red—circling a sky-blue globe, symbolizing modern domestic aviation linking Bamako with historic Niger River cities including Kayes, Mopti, Gao, and Timbuktu.",
+      sources: [
+        "https://flyskymali.com/",
+        "https://en.wikipedia.org/wiki/Sky_Mali",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  BF: [
+    {
+      id: "bf-air-burkina",
+      countryCode: "BF",
+      name: "Air Burkina ('Les ailes de l'Afrique')",
+      iata: "2J",
+      icao: "VBW",
+      founded: 1967,
+      alliance: "None",
+      hubs: [
+        "Thomas Sankara International Airport Ouagadougou (OUA)",
+      ],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Embraer E195, Embraer E175)",
+      },
+      logo: "/airline-logos/bf/air-burkina.svg",
+      logoExplainer:
+        "Features the golden five-pointed star of Burkina Faso superimposed on an aerodynamic horse crest and soaring wings in pan-African red and green, reflecting the 'Land of Incorruptible People' and pioneering commercial aviation across West Africa.",
+      sources: [
+        "https://air-burkina.com/",
+        "https://en.wikipedia.org/wiki/Air_Burkina",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  NE: [
+    {
+      id: "ne-niger-airlines",
+      countryCode: "NE",
+      name: "Niger Airlines",
+      iata: "6N",
+      icao: "NIN",
+      founded: 2012,
+      alliance: "None",
+      hubs: ["Diori Hamani International Airport (NIM)"],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (ATR 72-500, ATR 72-200)",
+      },
+      logo: "/airline-logos/ne/niger-airlines.png",
+      logoExplainer:
+        "Displays a stylized sunburst and curved flight bands in Sahara orange and white, symbolizing reliable lifeline passenger flights connecting Niamey across the Sahelian interior to Agadez, Maradi, and Zinder.",
+      sources: [
+        "https://www.nigerairlines.net/",
+        "https://en.wikipedia.org/wiki/Niger_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  TD: [
+    {
+      id: "td-tchadia-airlines",
+      countryCode: "TD",
+      name: "Tchadia Airlines",
+      iata: "OT",
+      icao: "CDO",
+      founded: 2018,
+      alliance: "None",
+      hubs: ["N'Djamena International Airport (NDJ)"],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Bombardier Dash 8-Q400)",
+      },
+      logo: "/airline-logos/td/tchadia-airlines.svg",
+      logoExplainer:
+        "Features sweeping wings and curved speed bands in the Chadian national tricolor of indigo blue, sun gold, and crimson red, symbolizing modern commercial revival and vital air connectivity linking N'Djamena to Abéché, Moundou, and Sarh.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tchadia_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
