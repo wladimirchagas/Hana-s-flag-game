@@ -4644,6 +4644,170 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Committee for Television and Radio under the Government of the Republic of Tajikistan state trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  // Ethiopia
+  ET: [
+    {
+      id: "et-ebc",
+      countryCode: "ET",
+      name: "EBC",
+      officialName: "Ethiopian Broadcasting Corporation (የኢትዮጵያ ብሮድካስቲንግ ኮርፖሬሽን - EBC / ETV)",
+      founded: 1964,
+      primaryFunding: "Direct federal budget appropriation approved by the House of Peoples' Representatives through the Government Communication Service, supplemented by commercial advertising",
+      headquarters: "Media Complex, Shegole, PO Box 5544, Addis Ababa, Ethiopia",
+      annualPublicFunding: {
+        total: "ETB 2.85 billion state budget allocation (Federal Democratic Republic of Ethiopia Budget Proclamation FY 2023/24; approx. US.5M)",
+        perCapita: "ETB 23.50 / citizen / year (approx. USzsh.42 / year)",
+      },
+      dailyMarketShare: "42.5% domestic television audience share across ETV News, ETV Languages, ETV Entertainment, and Odo Shano (Ethiopian Media Authority EMA & Ipsos East Africa 2024)",
+      brandTrustScore: {
+        score: "66%",
+        source: "Afrobarometer Ethiopia Survey & Ethiopian Media Authority Media Perception Study 2024",
+      },
+      localContentQuota: "85% domestic Ethiopian cultural, historical, and civic programming quota, broadcasting in Amharic, Afaan Oromo, Tigrinya, Somali, Afar, and English",
+      staffHeadcount: "2,800 permanent broadcasters, journalists, linguists, cameramen, and transmission engineers across Addis Ababa and regional studios (EBC Annual Report 2024)",
+      logo: "broadcaster-logos/et/ebc.png",
+      logoExplainer:
+        "The Ethiopian Broadcasting Corporation emblem features vibrant curved petal ribbons in green, yellow, and red—the Pan-African colors of the Ethiopian national flag—surrounding a central blue optical nucleus. It represents federal unity in diversity, technological renewal, and national cultural renaissance.",
+      sources: [
+        "https://www.ebc.et/",
+        "https://www.mofed.gov.et/",
+        "https://www.ema.gov.et/",
+      ],
+      licenceNote: "Ethiopian Broadcasting Corporation public statutory enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Tanzania
+  TZ: [
+    {
+      id: "tz-tbc",
+      countryCode: "TZ",
+      name: "TBC",
+      officialName: "Tanzania Broadcasting Corporation (Shirika la Utangazaji Tanzania - TBC / TBC 1 / TBC Taifa)",
+      founded: 1965,
+      primaryFunding: "Parliamentary treasury subvention from the Ministry of Information, Communication and Information Technology and commercial advertising",
+      headquarters: "Nyerere Road, PO Box 9191, Dar es Salaam / Dodoma Capital Bureau, Tanzania",
+      annualPublicFunding: {
+        total: "TZS 48.0 billion state budget public service broadcasting appropriation (Tanzania National Budget Act FY 2023/24; approx. US.5M)",
+        perCapita: "TZS 740.00 / citizen / year (approx. USzsh.29 / year)",
+      },
+      dailyMarketShare: "24.8% nationwide television audience share across TBC 1, TBC 2, and TBC Safari (Tanzania Communications Regulatory Authority TCRA & GeoPoll Tanzania 2024)",
+      brandTrustScore: {
+        score: "71%",
+        source: "Afrobarometer Tanzania Survey & Media Council of Tanzania (MCT) 2024",
+      },
+      localContentQuota: "80% domestic Tanzanian production quota, broadcasting predominantly in Swahili alongside English editions, dedicated to national cohesion (Utamaduni wa Kitanzania), Serengeti wildlife conservation, and civic education",
+      staffHeadcount: "1,350 permanent staff across Dar es Salaam, Dodoma, Arusha, Mwanza, and regional relay stations (TCRA Registry 2024)",
+      logo: "broadcaster-logos/tz/tbc.jpg",
+      logoExplainer:
+        "The Tanzania Broadcasting Corporation emblem displays the bold letters 'TBC' in Tanzanian flag colors—emerald green, yellow, sky blue, and black—symbolizing the fertile land, mineral wealth, Indian Ocean coastline, and the sovereign African people of Tanzania.",
+      sources: [
+        "https://www.tbc.go.tz/",
+        "https://www.mof.go.tz/",
+        "https://www.tcra.go.tz/",
+      ],
+      licenceNote: "Tanzania Broadcasting Corporation statutory public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Uganda
+  UG: [
+    {
+      id: "ug-ubc",
+      countryCode: "UG",
+      name: "UBC",
+      officialName: "Uganda Broadcasting Corporation (Uganda Broadcasting Corporation - UBC TV)",
+      founded: 1963,
+      primaryFunding: "Statutory government subvention appropriated by the Parliament of Uganda through the Ministry of ICT and National Guidance, supplemented by commercial advertising",
+      headquarters: "Nile Avenue, PO Box 2038, Kampala, Uganda",
+      annualPublicFunding: {
+        total: "UGX 42.0 billion statutory state budget appropriation (National Budget Framework Paper, Ministry of Finance Uganda FY 2023/24; approx. US.2M)",
+        perCapita: "UGX 890.00 / citizen / year (approx. USzsh.24 / year)",
+      },
+      dailyMarketShare: "16.2% national television audience share across UBC TV, Star TV, and UBC Magic (Uganda Communications Commission UCC & GeoPoll Uganda 2024)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Uganda Communications Commission Audience Assessment & Afrobarometer Uganda 2024",
+      },
+      localContentQuota: "70% Ugandan domestic content quota under UCC broadcast regulations, transmitting in English, Luganda, Runyakitara, Luo, Ateso, and Kiswahili",
+      staffHeadcount: "780 permanent journalists, video editors, field producers, and broadcast engineers across Kampala and upcountry transmitters (UBC Human Capital Audit 2024)",
+      logo: "broadcaster-logos/ug/ubc.png",
+      logoExplainer:
+        "The UBC logo presents the bold acronym 'ubc' in deep crimson and charcoal, featuring an aerodynamic globe crest that symbolizes nationwide transmission coverage, East African regional dialogue, and ethical public service reporting across the Pearl of Africa.",
+      sources: [
+        "https://ubc.go.ug/",
+        "https://finance.go.ug/",
+        "https://www.ucc.co.ug/",
+      ],
+      licenceNote: "Uganda Broadcasting Corporation statutory public entity trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Botswana
+  BW: [
+    {
+      id: "bw-btv",
+      countryCode: "BW",
+      name: "Btv",
+      officialName: "Botswana Television (Btv / Department of Broadcasting Services - Ministry of State President)",
+      founded: 2000,
+      primaryFunding: "100% direct public funding from the Government of Botswana within the Ministry of State President budgetary allocation",
+      headquarters: "Mass Media Complex, Willie Seboni Road, Private Bag 0060, Gaborone, Botswana",
+      annualPublicFunding: {
+        total: "BWP 165.0 million dedicated public broadcasting subvention (Botswana Estimates of Expenditure, Ministry of Finance FY 2024/25; approx. US.1M)",
+        perCapita: "BWP 66.00 / citizen / year (approx. US.84 / year)",
+      },
+      dailyMarketShare: "52.4% domestic television audience share across Btv 1, Btv 2, and Btv News (Botswana Communications Regulatory Authority BOCRA & Afrobarometer 2024)",
+      brandTrustScore: {
+        score: "76%",
+        source: "BOCRA Media Consumer Survey & Afrobarometer Botswana 2024",
+      },
+      localContentQuota: "75% local Batswana cultural and educational quota in Setswana and English, celebrating traditional folk arts (Dikhwaere), Okavango Delta conservation, and Kgotla civic democracy",
+      staffHeadcount: "420 broadcast civil servants, studio directors, and transmission engineers (Department of Broadcasting Services Personnel Review 2024)",
+      logo: "broadcaster-logos/bw/btv.jpg",
+      logoExplainer:
+        "The Btv emblem showcases the stylized letters 'Btv' accompanied by sweeping speed bands in zebra black, white, and sky-blue—the national colors of Botswana celebrating the life-giving gift of rain (Pula) and national unity across the Kalahari.",
+      sources: [
+        "https://www.gov.bw/",
+        "https://www.finance.gov.bw/",
+        "https://www.bocra.org.bw/",
+      ],
+      licenceNote: "Department of Broadcasting Services state broadcast agency trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Zimbabwe
+  ZW: [
+    {
+      id: "zw-zbc",
+      countryCode: "ZW",
+      name: "ZBC",
+      officialName: "Zimbabwe Broadcasting Corporation (ZBC / ZBC TV - Broadcasting Services Act 2001)",
+      founded: 1963,
+      primaryFunding: "Television receiver license fees collected under the Broadcasting Services Act and operational treasury grants from the Ministry of Information, Publicity and Broadcasting Services",
+      headquarters: "Pockets Hill, Highlands, PO Box HG 444, Harare, Zimbabwe",
+      annualPublicFunding: {
+        total: "ZWG 185.0 million state grants and statutory receiver fee collections (Zimbabwe National Budget Statement FY 2024; approx. US.8M)",
+        perCapita: "ZWG 11.50 / citizen / year (approx. USzsh.86 / year)",
+      },
+      dailyMarketShare: "38.5% domestic television audience share across ZBC TV and J収 Channel (Broadcasting Authority of Zimbabwe BAZ & ZAMP All Media Products Survey 2024)",
+      brandTrustScore: {
+        score: "54%",
+        source: "Afrobarometer Zimbabwe & Media Institute of Southern Africa (MISA) Zimbabwe Media Monitor 2024",
+      },
+      localContentQuota: "75% Zimbabwean domestic production quota in English, Shona, and Ndebele, featuring indigenous music (Mbira and Chimurenga), Great Zimbabwe cultural heritage, and rural agricultural education",
+      staffHeadcount: "920 permanent media practitioners, field reporters, and technical engineers across Harare and Bulawayo studios (ZBC Annual Corporate Review 2024)",
+      logo: "broadcaster-logos/zw/zbc.jpg",
+      logoExplainer:
+        "The Zimbabwe Broadcasting Corporation emblem displays the historic Zimbabwe Bird carved from soapstone—the national emblem of Zimbabwe—surmounting stylized television transmission waves in national green, gold, red, and black, reflecting independence, heritage, and public communication.",
+      sources: [
+        "https://www.zbcnews.co.zw/",
+        "https://www.zimtreasury.gov.zw/",
+        "https://www.baz.co.zw/",
+      ],
+      licenceNote: "Zimbabwe Broadcasting Corporation statutory public enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
