@@ -2026,6 +2026,224 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Uruguay
+  UY: [
+    {
+      id: "uy-pluna",
+      countryCode: "UY",
+      name: "PLUNA",
+      iata: "PU",
+      icao: "PUA",
+      founded: 1936,
+      alliance: "None",
+      hubs: ["Carrasco International Airport (MVD - Montevideo)"],
+      fleet: {
+        total: 13,
+        summary: "13 aircraft at peak operations (Bombardier CRJ900 NextGen; historically Boeing 737-200/300, Boeing 767-300ER)",
+      },
+      logo: "/airline-logos/uy/pluna.svg",
+      logoExplainer:
+        "Founded in 1936 as Primeras Líneas Uruguayas de Navegación Aérea, PLUNA served as Uruguay's national flag carrier for 76 years until 2012. The distinctive emblem depicts a stylized azure bird in soaring flight, symbolizing Uruguayan national identity across the Río de la Plata and the South Atlantic.",
+      sources: [
+        "https://en.wikipedia.org/wiki/PLUNA",
+        "https://aviation-safety.net/database/operator/airline.php?var=5682",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Denmark
+  DK: [
+    {
+      id: "dk-sas",
+      countryCode: "DK",
+      name: "Scandinavian Airlines (SAS)",
+      iata: "SK",
+      icao: "SAS",
+      founded: 1946,
+      alliance: "SkyTeam",
+      hubs: ["Copenhagen Airport (CPH - Kastrup)", "Stockholm Arlanda Airport (ARN)", "Oslo Airport, Gardermoen (OSL)"],
+      fleet: {
+        total: 134,
+        summary: "134 aircraft (Airbus A319-100, A320-200, A320neo, A321LR, A330-300, A350-900; ATR 72-600; Embraer E195)",
+      },
+      logo: "/airline-logos/dk/sas.svg",
+      logoExplainer:
+        "Originally established in 1946 as the multi-national flag carrier of Denmark, Norway, and Sweden, SAS uses an iconic royal blue logotype featuring the italicized lower-case serif 'sas'. Designed to symbolize shared Scandinavian unity, royal patronage, and clean modernist functionalism.",
+      sources: [
+        "https://www.flysas.com/",
+        "https://en.wikipedia.org/wiki/Scandinavian_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "dk-sunclass-airlines",
+      countryCode: "DK",
+      name: "Sunclass Airlines",
+      iata: "DK",
+      icao: "VKG",
+      founded: 1994,
+      alliance: "None",
+      hubs: ["Copenhagen Airport (CPH)", "Billund Airport (BLL)", "Stockholm Arlanda Airport (ARN)", "Oslo Airport (OSL)"],
+      fleet: {
+        total: 11,
+        summary: "11 aircraft (Airbus A321-200, A321neo, A330-300, A330-900neo)",
+      },
+      logo: "/airline-logos/dk/sunclass-airlines.svg",
+      logoExplainer:
+        "Features a modern Nordic typographic wordmark alongside a radiant golden-yellow stylized sunburst emblem, reflecting warmth, Scandinavian vacation leisure travel, and sun holiday hospitality across the Mediterranean, Caribbean, and Canary Islands.",
+      sources: [
+        "https://www.sunclassairlines.dk/",
+        "https://en.wikipedia.org/wiki/Sunclass_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Norway
+  NO: [
+    {
+      id: "no-norwegian-air-shuttle",
+      countryCode: "NO",
+      name: "Norwegian Air Shuttle",
+      iata: "DY",
+      icao: "NAX",
+      founded: 1993,
+      alliance: "None",
+      hubs: ["Oslo Airport, Gardermoen (OSL)", "Bergen Airport, Flesland (BGO)", "Trondheim Airport (TRD)", "Stavanger Airport (SVG)"],
+      fleet: {
+        total: 87,
+        summary: "87 aircraft (Boeing 737-800, Boeing 737 MAX 8)",
+      },
+      logo: "/airline-logos/no/norwegian-air-shuttle.svg",
+      logoExplainer:
+        "Features a modern crimson wordmark with a distinctive dynamic red aircraft nosecone motif. Norwegian is internationally celebrated for its 'Tail Fin Heroes' tradition, honoring prominent Nordic pioneers, scientists, artists, and explorers on its vertical stabilizers.",
+      sources: [
+        "https://www.norwegian.com/",
+        "https://en.wikipedia.org/wiki/Norwegian_Air_Shuttle",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "no-wideroe",
+      countryCode: "NO",
+      name: "Widerøe",
+      iata: "WF",
+      icao: "WIF",
+      founded: 1934,
+      alliance: "None",
+      hubs: ["Bergen Airport, Flesland (BGO)", "Bodø Airport (BOO)", "Oslo Airport, Gardermoen (OSL)", "Tromsø Airport (TOS)"],
+      fleet: {
+        total: 49,
+        summary: "49 aircraft (De Havilland Canada Dash 8-100, Dash 8-200, Dash 8-300, Dash 8-Q400; Embraer E190-E2)",
+      },
+      logo: "/airline-logos/no/wideroe.svg",
+      logoExplainer:
+        "Features a vibrant emerald-green bird wing emblem, symbolizing Widerøe's indispensable role as Norway's coastal and regional lifeline, serving over 40 short-field mountain and Arctic runway communities since 1934.",
+      sources: [
+        "https://www.wideroe.no/",
+        "https://en.wikipedia.org/wiki/Wider%C3%B8e",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Sweden
+  SE: [
+    {
+      id: "se-sas",
+      countryCode: "SE",
+      name: "Scandinavian Airlines (SAS)",
+      iata: "SK",
+      icao: "SAS",
+      founded: 1946,
+      alliance: "SkyTeam",
+      hubs: ["Stockholm Arlanda Airport (ARN)", "Copenhagen Airport (CPH)", "Oslo Airport, Gardermoen (OSL)"],
+      fleet: {
+        total: 134,
+        summary: "134 aircraft (Airbus A319-100, A320-200, A320neo, A321LR, A330-300, A350-900; ATR 72-600; Embraer E195)",
+      },
+      logo: "/airline-logos/se/sas.svg",
+      logoExplainer:
+        "Tri-national flag carrier representing Sweden, Denmark, and Norway, headquartered in Solna (Stockholm). The refined royal blue 'sas' wordmark embodies clean Scandinavian functionalism, technical excellence, and regional unity.",
+      sources: [
+        "https://www.flysas.com/",
+        "https://en.wikipedia.org/wiki/Scandinavian_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "se-braathens-regional-airlines",
+      countryCode: "SE",
+      name: "Braathens Regional Airlines (BRA)",
+      iata: "TF",
+      icao: "BRX",
+      founded: 2016,
+      alliance: "None",
+      hubs: ["Stockholm Bromma Airport (BMA)", "Stockholm Arlanda Airport (ARN)", "Gothenburg Landvetter Airport (GOT)"],
+      fleet: {
+        total: 17,
+        summary: "17 aircraft (ATR 72-600, Airbus A319-100, Airbus A320-200)",
+      },
+      logo: "/airline-logos/se/braathens-regional-airlines.svg",
+      logoExplainer:
+        "Features a clean geometric monogram with Swedish golden-yellow and deep navy accents, representing Swedish domestic business connectivity, sustainable regional aviation, and biofuel pioneering.",
+      sources: [
+        "https://www.flygbra.se/",
+        "https://en.wikipedia.org/wiki/Braathens_Regional_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Finland
+  FI: [
+    {
+      id: "fi-finnair",
+      countryCode: "FI",
+      name: "Finnair",
+      iata: "AY",
+      icao: "FIN",
+      founded: 1923,
+      alliance: "oneworld",
+      hubs: ["Helsinki Airport (HEL - Vantaa)"],
+      fleet: {
+        total: 80,
+        summary: "80 aircraft (Airbus A319-100, A320-200, A321-200, A330-300, A350-900; ATR 72-500; Embraer E190)",
+      },
+      logo: "/airline-logos/fi/finnair.svg",
+      logoExplainer:
+        "Features an ultramarine blue stylized forward-surging letter 'F' formed as an aerodynamic aircraft wing. The design reflects classic Finnish minimalism, clarity, and Helsinki's strategic geographic position as the shortest great-circle northern bridge between Europe and Asia.",
+      sources: [
+        "https://www.finnair.com/",
+        "https://en.wikipedia.org/wiki/Finnair",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "fi-norra",
+      countryCode: "FI",
+      name: "Norra (Nordic Regional Airlines)",
+      iata: "N7",
+      icao: "WBA",
+      founded: 2011,
+      alliance: "None",
+      hubs: ["Helsinki Airport (HEL - Vantaa)"],
+      fleet: {
+        total: 24,
+        summary: "24 aircraft (ATR 72-500, Embraer E190 operated in partnership with Finnair)",
+      },
+      logo: "/airline-logos/fi/norra.svg",
+      logoExplainer:
+        "Features a modern Nordic wordmark in deep midnight blue typography with circular geometric accents, expressing reliability, northern punctuality, and domestic connectivity across Finnish Lapland and the Baltic rim.",
+      sources: [
+        "https://flynorra.com/",
+        "https://en.wikipedia.org/wiki/Nordic_Regional_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
