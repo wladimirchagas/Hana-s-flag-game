@@ -2895,6 +2895,34 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       ],
       licenceNote: "Nile Television public broadcaster logo (Wikimedia Commons PD / freely distributed by Egypt State Media Authority for educational reference).",
     },
+    {
+      id: "eg-nma",
+      countryCode: "EG",
+      name: "NMA / ERTU",
+      officialName: "National Media Authority (الهيئة الوطنية للإعلام - former ERTU / Al Oula & Nile TV)",
+      founded: 1960,
+      primaryFunding: "State budget appropriations from the Ministry of Finance (موازنة الدولة - وزارة المالية under Law No. 137 of 2023), Treasury service fees, and commercial advertising",
+      headquarters: "Maspero Radio & Television Building, Corniche El Nil, Boulaq, Cairo",
+      annualPublicFunding: {
+        total: "EGP 13,200 million state budget operating and wage appropriation (Ministry of Finance & Law No. 137 of 2023 on NMA Budget FY 2023/24; approx. US$275M)",
+        perCapita: "EGP 125.70 / citizen / year (approx. US$2.62 / year)",
+      },
+      dailyMarketShare: "22.5% combined television audience share across Al Oula, Al Thaniya, and Nile Television Network (Ipsos MENA & Supreme Council for Media Regulation 2024; Maspero is the historical anchor of Arab broadcasting)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Supreme Council for Media Regulation (SCMR) & Cairo University Media Survey 2024",
+      },
+      localContentQuota: "Minimum 80% Egyptian domestic cultural and informational content quota, providing universal service across 8 national TV channels and iconic radio networks including Voice of the Arabs and Holy Quran Radio",
+      staffHeadcount: "32,000 employees across Maspero central studios, Nile City complexes, and governorate broadcast centers (NMA Administrative Review 2024)",
+      logo: "/broadcaster-logos/eg/nma.png",
+      logoExplainer:
+        "The Egyptian Television insignia displays the historic circular golden disc of Ra intersected by an ascending broadcast antenna tower framed in vibrant emerald green and gold. The golden sun disc evokes millennia of Nilotic civilization, enlightenment, and Egypt's foundational role as the cultural pioneer of Arab and African broadcasting.",
+      sources: [
+        "https://maspero.eg/",
+        "https://www.scmr.gov.eg/",
+      ],
+      licenceNote: "National Media Authority constitutional public authority trademark and logo bundled for educational reference in Learn mode.",
+    },
   ],
 
   // Ghana
@@ -3534,38 +3562,6 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
         "https://www.govern.ad/",
       ],
       licenceNote: "Ràdio i Televisió d'Andorra, S.A. public company trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Egypt
-  EG: [
-    {
-      id: "eg-nma",
-      countryCode: "EG",
-      name: "NMA / ERTU",
-      officialName: "National Media Authority (الهيئة الوطنية للإعلام - former ERTU / Al Oula & Nile TV)",
-      founded: 1960,
-      primaryFunding: "State budget appropriations from the Ministry of Finance (موازنة الدولة - وزارة المالية under Law No. 137 of 2023), Treasury service fees, and commercial advertising",
-      headquarters: "Maspero Radio & Television Building, Corniche El Nil, Boulaq, Cairo",
-      annualPublicFunding: {
-        total: "EGP 13,200 million state budget operating and wage appropriation (Ministry of Finance & Law No. 137 of 2023 on NMA Budget FY 2023/24; approx. US$275M)",
-        perCapita: "EGP 125.70 / citizen / year (approx. US$2.62 / year)",
-      },
-      dailyMarketShare: "22.5% combined television audience share across Al Oula, Al Thaniya, and Nile Television Network (Ipsos MENA & Supreme Council for Media Regulation 2024; Maspero is the historical anchor of Arab broadcasting)",
-      brandTrustScore: {
-        score: "58%",
-        source: "Supreme Council for Media Regulation (SCMR) & Cairo University Media Survey 2024",
-      },
-      localContentQuota: "Minimum 80% Egyptian domestic cultural and informational content quota, providing universal service across 8 national TV channels and iconic radio networks including Voice of the Arabs and Holy Quran Radio",
-      staffHeadcount: "32,000 employees across Maspero central studios, Nile City complexes, and governorate broadcast centers (NMA Administrative Review 2024)",
-      logo: "/broadcaster-logos/eg/nma.png",
-      logoExplainer:
-        "The Egyptian Television insignia displays the historic circular golden disc of Ra intersected by an ascending broadcast antenna tower framed in vibrant emerald green and gold. The golden sun disc evokes millennia of Nilotic civilization, enlightenment, and Egypt's foundational role as the cultural pioneer of Arab and African broadcasting.",
-      sources: [
-        "https://maspero.eg/",
-        "https://www.scmr.gov.eg/",
-      ],
-      licenceNote: "National Media Authority constitutional public authority trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
 
