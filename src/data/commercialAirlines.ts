@@ -2244,6 +2244,224 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Iceland
+  IS: [
+    {
+      id: "is-icelandair",
+      countryCode: "IS",
+      name: "Icelandair",
+      iata: "FI",
+      icao: "ICE",
+      founded: 1937,
+      alliance: "None",
+      hubs: ["Keflavík International Airport (KEF - Reykjavík)", "Reykjavík Airport (RVK)"],
+      fleet: {
+        total: 45,
+        summary: "45 aircraft (Boeing 737 MAX 8, 737 MAX 9, 757-200, 757-300, 767-300ER; De Havilland Canada Dash 8)",
+      },
+      logo: "/airline-logos/is/icelandair.svg",
+      logoExplainer:
+        "Features a modern navy blue crest with an aerodynamic wing insignia composed of vibrant golden-yellow (representing geothermal heat and volcanic magma) and bright sky blue (representing glacial ice and northern skies), embodying Iceland's land of fire and ice.",
+      sources: [
+        "https://www.icelandair.com/",
+        "https://en.wikipedia.org/wiki/Icelandair",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "is-play",
+      countryCode: "IS",
+      name: "Play",
+      iata: "OG",
+      icao: "FPY",
+      founded: 2019,
+      alliance: "None",
+      hubs: ["Keflavík International Airport (KEF - Reykjavík)"],
+      fleet: {
+        total: 10,
+        summary: "10 aircraft (Airbus A320neo, Airbus A321neo)",
+      },
+      logo: "/airline-logos/is/play.svg",
+      logoExplainer:
+        "Features a bold and playful scarlet-red wordmark ('PLAY') in rounded geometric typography, symbolizing high energy, accessible transatlantic travel, and joyful adventure connecting North America with Europe via Iceland.",
+      sources: [
+        "https://www.flyplay.com/",
+        "https://en.wikipedia.org/wiki/Play_(airline)",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Ireland
+  IE: [
+    {
+      id: "ie-aer-lingus",
+      countryCode: "IE",
+      name: "Aer Lingus",
+      iata: "EI",
+      icao: "EIN",
+      founded: 1936,
+      alliance: "None",
+      hubs: ["Dublin Airport (DUB)", "Cork Airport (ORK)"],
+      fleet: {
+        total: 58,
+        summary: "58 aircraft (Airbus A320-200, A320neo, A321LR, A321XLR, A330-200, A330-300)",
+      },
+      logo: "/airline-logos/ie/aer-lingus.svg",
+      logoExplainer:
+        "Features the legendary Irish shamrock (*seamróg*) rendered in vibrant shades of Irish green. The shamrock has adorned Aer Lingus aircraft since its 1936 inaugural flight, symbolizing Celtic heritage, good fortune, and world-renowned Irish hospitality.",
+      sources: [
+        "https://www.aerlingus.com/",
+        "https://en.wikipedia.org/wiki/Aer_Lingus",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ie-ryanair",
+      countryCode: "IE",
+      name: "Ryanair",
+      iata: "FR",
+      icao: "RYR",
+      founded: 1984,
+      alliance: "None",
+      hubs: ["Dublin Airport (DUB)", "London Stansted Airport (STN)"],
+      fleet: {
+        total: 590,
+        summary: "590+ aircraft (Boeing 737-800, Boeing 737 MAX 8-200, Boeing 737-700; Airbus A320-200 via Lauda Europe)",
+      },
+      logo: "/airline-logos/ie/ryanair.svg",
+      logoExplainer:
+        "Features a golden winged harp—Ireland's historic heraldic symbol—sweeping dynamically forward inside an aerodynamic motif on a deep royal blue background, representing the pioneer that revolutionized low-cost air travel across Europe.",
+      sources: [
+        "https://www.ryanair.com/",
+        "https://en.wikipedia.org/wiki/Ryanair",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Latvia
+  LV: [
+    {
+      id: "lv-airbaltic",
+      countryCode: "LV",
+      name: "airBaltic",
+      iata: "BT",
+      icao: "BTI",
+      founded: 1995,
+      alliance: "None",
+      hubs: ["Riga International Airport (RIX)"],
+      fleet: {
+        total: 48,
+        summary: "48 aircraft (Airbus A220-300 exclusive single-type fleet)",
+      },
+      logo: "/airline-logos/lv/airbaltic.svg",
+      logoExplainer:
+        "Features modern lowercase dark navy typography complemented by the airline's trademark electric lime-green vertical tail livery, reflecting ecological efficiency, Baltic pine forests, and modern aeronautical innovation with an all-Airbus A220 fleet.",
+      sources: [
+        "https://www.airbaltic.com/",
+        "https://en.wikipedia.org/wiki/AirBaltic",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Estonia
+  EE: [
+    {
+      id: "ee-airbaltic",
+      countryCode: "EE",
+      name: "airBaltic Estonia",
+      iata: "BT",
+      icao: "BTI",
+      founded: 1995,
+      alliance: "None",
+      hubs: ["Lennart Meri Tallinn Airport (TLL)"],
+      fleet: {
+        total: 48,
+        summary: "48 aircraft (Airbus A220-300, including dedicated aircraft in special blue-black-white Estonian flag livery)",
+      },
+      logo: "/airline-logos/ee/airbaltic.svg",
+      logoExplainer:
+        "As the principal carrier connecting Estonia, airBaltic operates a key primary base in Tallinn, flying designated Airbus A220-300 aircraft painted in the Estonian national blue-black-white tricolor alongside its signature lime-green tail design.",
+      sources: [
+        "https://www.airbaltic.com/",
+        "https://en.wikipedia.org/wiki/AirBaltic",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ee-nyxair",
+      countryCode: "EE",
+      name: "NyxAir",
+      iata: "OJ",
+      icao: "NYX",
+      founded: 2017,
+      alliance: "None",
+      hubs: ["Lennart Meri Tallinn Airport (TLL)", "Kuressaare Airport (URE)"],
+      fleet: {
+        total: 14,
+        summary: "14 aircraft (ATR 42-500, Saab 340, Saab 2000)",
+      },
+      logo: "/airline-logos/ee/nyxair.png",
+      logoExplainer:
+        "Features an orange aerodynamic wing and speed chevron integrated into dark navy typography, representing vital regional domestic air connectivity between Tallinn, Kuressaare on Saaremaa island, and Kärdla on Hiiumaa island.",
+      sources: [
+        "https://nyx.ee/",
+        "https://en.wikipedia.org/wiki/NyxAir",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Lithuania
+  LT: [
+    {
+      id: "lt-airbaltic",
+      countryCode: "LT",
+      name: "airBaltic Lithuania",
+      iata: "BT",
+      icao: "BTI",
+      founded: 1995,
+      alliance: "None",
+      hubs: ["Vilnius International Airport (VNO)"],
+      fleet: {
+        total: 48,
+        summary: "48 aircraft (Airbus A220-300, including dedicated aircraft in special yellow-green-red Lithuanian flag livery)",
+      },
+      logo: "/airline-logos/lt/airbaltic.svg",
+      logoExplainer:
+        "airBaltic operates a designated primary base at Vilnius International Airport, connecting Lithuania across Europe with an Airbus A220-300 fleet featuring a special custom aircraft proudly bearing the Lithuanian yellow-green-red national flag livery.",
+      sources: [
+        "https://www.airbaltic.com/",
+        "https://en.wikipedia.org/wiki/AirBaltic",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "lt-getjet-airlines",
+      countryCode: "LT",
+      name: "GetJet Airlines",
+      iata: "GW",
+      icao: "GJT",
+      founded: 2016,
+      alliance: "None",
+      hubs: ["Vilnius International Airport (VNO)"],
+      fleet: {
+        total: 16,
+        summary: "16 aircraft (Airbus A320-200, Airbus A321-200; Boeing 737-800)",
+      },
+      logo: "/airline-logos/lt/getjet-airlines.png",
+      logoExplainer:
+        "Features a modern charcoal-and-orange typographic wordmark paired with a forward-pointing aerodynamic delta chevron, symbolizing rapid operational deployment, charter excellence, and global ACMI passenger service.",
+      sources: [
+        "https://getjet.aero/",
+        "https://en.wikipedia.org/wiki/GetJet_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
