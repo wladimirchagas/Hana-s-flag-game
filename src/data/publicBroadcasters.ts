@@ -2701,6 +2701,168 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Khabar Agency Joint-Stock Company state-participated corporation trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // South Africa
+  ZA: [
+    {
+      id: "za-sabc",
+      countryCode: "ZA",
+      name: "SABC",
+      officialName: "South African Broadcasting Corporation SOC Limited",
+      founded: 1936,
+      primaryFunding: "Commercial advertising and sponsorships (~80%) supplemented by statutory television licence fees (R 265/year per household, ~13%) and government public interest grant allocations from the Department of Communications and Digital Technologies (DCDT)",
+      headquarters: "Radio Park, Henley Road, Auckland Park, Johannesburg",
+      annualPublicFunding: {
+        total: "R 741.0 million public licence fees & government grants (SABC Annual Report FY 2023/24; total revenue R 4,820M)",
+        perCapita: "R 12.10 / citizen / year (approx. US$0.66 / year)",
+      },
+      dailyMarketShare: "41.2% combined television audience share across SABC 1, SABC 2, SABC 3, and SABC News (BRC Broadcast Research Council of South Africa 2024; SABC 1 is South Africa's most-watched television channel)",
+      brandTrustScore: {
+        score: "61%",
+        source: "Reuters Institute Digital News Report 2024 (SABC News commands South Africa's largest multiplatform weekly news reach)",
+      },
+      localContentQuota: "Minimum 55% to 80% South African domestic content quotas across channels under ICASA broadcasting regulations, providing daily news and programming in all 11 official languages plus sign language",
+      staffHeadcount: "3,150 permanent employees (SABC Integrated Report 2024)",
+      logo: "/broadcaster-logos/za/sabc.png",
+      logoExplainer:
+        "The SABC emblem features an abstract broadcast transmitter radiating ascending arcs in the vibrant colors of South Africa's post-apartheid national flag: red, blue, green, and gold. The expanding waveform symbolizes inclusivity, democratic empowerment, and multilingual communication uniting all South Africans.",
+      sources: [
+        "https://www.sabc.co.za/sabc/annual-reports/",
+        "https://www.icasa.org.za/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/south-africa",
+      ],
+      licenceNote: "South African Broadcasting Corporation SOC Ltd state-owned company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Morocco
+  MA: [
+    {
+      id: "ma-2m",
+      countryCode: "MA",
+      name: "2M / SOREAD",
+      officialName: "Société d'Études et de Réalisations Audiovisuelles (SOREAD 2M)",
+      founded: 1989,
+      primaryFunding: "Public-private public service hybrid: State development support subventions from the Ministry of Youth, Culture and Communication alongside commercial advertising and audiovisual production services",
+      headquarters: "Km 7.3 Route de Rabat, Ain Sebaâ, Casablanca",
+      annualPublicFunding: {
+        total: "MAD 380.0 million state public service contract subvention (Loi de finances & SOREAD Rapport Annuel FY 2024; approx. US$38M; total revenue ~MAD 950M)",
+        perCapita: "MAD 10.30 / citizen / year (approx. US$1.03 / year)",
+      },
+      dailyMarketShare: "32.8% national television audience share (Marocmétrie / CIAUMED 2024; 2M is Morocco's undisputed most-watched television channel, peaking above 50% during Ramadan)",
+      brandTrustScore: {
+        score: "65%",
+        source: "Reuters Institute Digital News Report 2024 & HACA (2M News is Morocco's primary domestic broadcast news source)",
+      },
+      localContentQuota: "Over 60% Moroccan domestic production quota under the specifications of the High Authority for Audiovisual Communication (HACA), delivering programs in Moroccan Arabic (Darija), Amazigh, and French",
+      staffHeadcount: "870 permanent employees (SOREAD 2M Rapport de Gestion 2024)",
+      logo: "/broadcaster-logos/ma/2m.png",
+      logoExplainer:
+        "The iconic 2M visual identity features an eight-pointed geometric star composed of interlocking parallelogram facets, drawing directly from classical Moroccan zellij mosaic tilework and Islamic decorative geometry. The octagonal star symbolizes Moroccan cultural heritage, technological precision, and open regional dialogue.",
+      sources: [
+        "https://2m.ma/",
+        "https://www.haca.ma/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/morocco",
+      ],
+      licenceNote: "SOREAD 2M national public service television company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Angola
+  AO: [
+    {
+      id: "ao-tpa",
+      countryCode: "AO",
+      name: "TPA",
+      officialName: "Televisão Pública de Angola - E.P.",
+      founded: 1975,
+      primaryFunding: "Direct state budget financial dotation from the General State Budget (OGE) administered by the Ministry of Telecommunications, Information Technologies and Social Communication (MINTTICS), supplemented by commercial advertising",
+      headquarters: "Avenida Ho Chi Minh, Luanda",
+      annualPublicFunding: {
+        total: "Kz 32,800 million state budget subvention (Orçamento Geral do Estado OGE FY 2024; approx. US$38M)",
+        perCapita: "Kz 910 / citizen / year (approx. US$1.05 / year)",
+      },
+      dailyMarketShare: "54.2% national television audience share across TPA 1, TPA 2, and TPA Notícias (Kantar IBOPE / Marktest Angola 2024; TPA 1 is Angola's leading national television channel)",
+      brandTrustScore: {
+        score: "57%",
+        source: "Marktest Angola Barómetro de Media & MINTTICS 2024",
+      },
+      localContentQuota: "Over 70% Angolan domestic content quota under the Press Law and Public Media Statute, featuring national telenovelas, local music festivals, and broadcasts in national languages (Umbundu, Kimbundu, Kikongo, Chokwe)",
+      staffHeadcount: "1,450 permanent employees nationwide across Luanda and 18 provincial production centers (TPA Relatório e Contas 2024)",
+      logo: "/broadcaster-logos/ao/tpa.png",
+      logoExplainer:
+        "Unveiled in 2022, the modernized TPA logo presents the bold uppercase letters 'TPA' in dynamic, interconnected flowing strokes rendered in bright socialist crimson red. The uninterrupted ribbon contours symbolize broadcast signal flow, national integration across Angola's 18 provinces, and continuous digital modernization.",
+      sources: [
+        "https://tpa.ao/",
+        "https://minttics.gov.ao/",
+      ],
+      licenceNote: "Televisão Pública de Angola public enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Cameroon
+  CM: [
+    {
+      id: "cm-crtv",
+      countryCode: "CM",
+      name: "CRTV",
+      officialName: "Cameroon Radio Television",
+      founded: 1985,
+      primaryFunding: "Audiovisual license fee tax (redevance audiovisuelle - RAV) deducted from public and private formal sector wage payrolls, supplemented by direct state budget subsidies and commercial advertising",
+      headquarters: "Mballa II Broadcasting House, Yaoundé",
+      annualPublicFunding: {
+        total: "FCFA 28,500 million audiovisual fee tax & state subsidy (Loi de finances & CRTV Compte Administratif FY 2024; approx. US$47M)",
+        perCapita: "FCFA 1,020 / citizen / year (approx. US$1.68 / year)",
+      },
+      dailyMarketShare: "24.5% television audience share across CRTV Télé and CRTV News (Médiamétrie Afrique 2024; CRTV is Cameroon's principal public broadcaster)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Médiamétrie Afrique & National Communication Council (CNC) 2024",
+      },
+      localContentQuota: "Minimum 60% Cameroonian domestic production quota, fulfilling statutory bilingual broadcasting obligations with daily parity between French and English across all ten regions",
+      staffHeadcount: "1,850 employees across national headquarters and 10 regional radio/TV stations (CRTV Rapport d'Activité 2024)",
+      logo: "/broadcaster-logos/cm/crtv.png",
+      logoExplainer:
+        "The CRTV wordmark features the lowercase letters 'crtv' with a stylized numeral '1' integrated into the vertical stem of the letter 'r' in national red, flanked by the bold letterforms in oceanic cobalt blue. The typographic lockup represents Cameroon's bilingual unity, institutional authority, and public broadcast leadership.",
+      sources: [
+        "https://www.crtv.cm/",
+        "https://www.mincom.gov.cm/",
+      ],
+      licenceNote: "Cameroon Radio Television statutory public establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Cape Verde
+  CV: [
+    {
+      id: "cv-tcv",
+      countryCode: "CV",
+      name: "TCV / RTC",
+      officialName: "Radiotelevisão Cabo-verdiana, S.A. (RTC - Televisão de Cabo Verde)",
+      founded: 1984,
+      primaryFunding: "Taxa de Radiodifusão (TRVO) statutory levy collected via domestic electricity bills (~CVE 350/month per household), direct state compensation subventions for public service concession obligations, and commercial advertising",
+      headquarters: "Avenida Amílcar Cabral, Plateau, Praia, Santiago",
+      annualPublicFunding: {
+        total: "CVE 420.0 million public broadcasting levy & state contract (Orçamento do Estado & RTC Relatório e Contas FY 2024; approx. US$4.1M)",
+        perCapita: "CVE 725 / resident / year (approx. US$7.10 / year)",
+      },
+      dailyMarketShare: "48.6% television audience share (Afrobarometer / ARC Autoridade Reguladora para a Comunicação Social 2024; TCV is Cape Verde's dominant domestic channel)",
+      brandTrustScore: {
+        score: "68%",
+        source: "ARC Media Barometer & Afrobarometer 2024 (TCV Notícias ranks among the most trusted democratic institutions in Cape Verde)",
+      },
+      localContentQuota: "Over 65% Cape Verdean domestic content quota under the Public Service Concession Contract, celebrating Morna music, Creole language literature, and regional island coverage across all nine inhabited islands",
+      staffHeadcount: "210 permanent employees (RTC Relatório Anual 2024)",
+      logo: "/broadcaster-logos/cv/tcv.png",
+      logoExplainer:
+        "The TCV emblem features the bold white letterforms 'TCV' set inside a solid hexagonal prism in deep Atlantic blue. The hexagonal geometric shield evokes the volcanic basalt landscapes of the archipelago, maritime resilience, and authoritative public broadcast protection across the islands.",
+      sources: [
+        "https://rtc.cv/",
+        "https://arc.cv/",
+      ],
+      licenceNote: "Radiotelevisão Cabo-verdiana, S.A. public concessionaire trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
