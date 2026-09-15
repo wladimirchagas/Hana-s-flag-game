@@ -57,8 +57,11 @@ import { CapitalDetails } from "../components/CapitalDetails";
 import { NationalFlagDetails } from "../components/NationalFlagDetails";
 import { PoliticalPartyDetails } from "../components/PoliticalPartyDetails";
 import { AirlineDetails } from "../components/AirlineDetails";
+import { BroadcasterDetails } from "../components/BroadcasterDetails";
 import { airlinesForCountry, airlineById } from "../lib/commercialAirlines";
+import { broadcastersForCountry, broadcasterById } from "../lib/publicBroadcasters";
 import type { CommercialAirline } from "../types/airline";
+import type { PublicBroadcaster } from "../types/broadcaster";
 import type { PoliticalParty } from "../data/politicalParties";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning as FlagMeaningData } from "../data/flagMeanings";
@@ -351,6 +354,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setSelectedGroupMeaning(null);
     setSelectedParty(null);
     setSelectedSubdivisionAirline(null);
+    setSelectedSubdivisionBroadcaster(null);
   }, [subdivisionCountry, subdivisionMode]);
   // Set of NAME values present in the current era's historical GeoJSON.
   // Populated by HistoricalMap's onDataLoaded callback. Used by the
@@ -376,12 +380,17 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [gridAirlineId, setGridAirlineId] = useState<string | null>(null);
   // An airline picked in the "National symbols" tab of subdivision view.
   const [selectedSubdivisionAirline, setSelectedSubdivisionAirline] = useState<CommercialAirline | null>(null);
+  // The specific public broadcaster clicked in the grid.
+  const [gridBroadcasterId, setGridBroadcasterId] = useState<string | null>(null);
+  // A public broadcaster picked in the "National symbols" tab of subdivision view.
+  const [selectedSubdivisionBroadcaster, setSelectedSubdivisionBroadcaster] = useState<PublicBroadcaster | null>(null);
 
   const chooseGridContentType = (type: GridContentType) => {
     setGridContentType(type);
     saveGridContentType(type);
     setGridCrest(null);
     setGridAirlineId(null);
+    setGridBroadcasterId(null);
   };
   // Captured at "Play" click time so the modal stays open even if the
   // hovered-country display clears while the user moves the mouse.
@@ -1485,7 +1494,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         ? display.name
         : null;
 
-  function handleGridSelect(id: string, crestId?: string, airlineId?: string) {
+  function handleGridSelect(id: string, crestId?: string, airlineId?: string, broadcasterId?: string) {
     if (isModernEra) {
       const c = codeToCountry.get(id);
       if (!c) return;
@@ -1500,6 +1509,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       );
       setGridAirlineId(
         airlineId && gridContentType === "airline" ? airlineId : null,
+      );
+      setGridBroadcasterId(
+        broadcasterId && gridContentType === "broadcaster" ? broadcasterId : null,
       );
     } else {
       const sel = selectionFromPolityName(id);
@@ -1524,6 +1536,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     const countryAirlines = airlinesForCountry(display.country.code);
     return countryAirlines[0] ?? null;
   }, [subdivisionMode, effectiveGridContentType, display, gridAirlineId]);
+
+  // Active public broadcaster to show in the information widget when in broadcaster view.
+  const activeBroadcaster = useMemo(() => {
+    if (subdivisionMode) return null;
+    if (effectiveGridContentType !== "broadcaster" || display?.kind !== "modern") return null;
+    if (gridBroadcasterId) {
+      const b = broadcasterById(gridBroadcasterId);
+      if (b && b.countryCode.toUpperCase() === display.country.code.toUpperCase()) {
+        return b;
+      }
+    }
+    const countryBroadcasters = broadcastersForCountry(display.country.code);
+    return countryBroadcasters[0] ?? null;
+  }, [subdivisionMode, effectiveGridContentType, display, gridBroadcasterId]);
 
   // Resolver passed to FlagGrid so it can render absolute http(s) URLs,
   // relative historical-flags/*.png paths, AND bundled flag paths that
@@ -2043,6 +2069,27 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           </aside>
         )}
 
+        {/* ===== PUBLIC-BROADCASTER box (World view) — when in public broadcasters
+            view, show the broadcaster in a 2nd widget below the primary country widget,
+            matching the commercial airlines behaviour. ===== */}
+        {!subdivisionMode && effectiveGridContentType === "broadcaster" && display?.kind === "modern" && (
+          <aside className="learn-fs__panel" aria-live="polite">
+            <div className="learn-fs__detail">
+              {activeBroadcaster ? (
+                <BroadcasterDetails
+                  broadcaster={activeBroadcaster}
+                  baseUrl={baseUrl}
+                  onEnlarge={setZoomedFlagUrl}
+                />
+              ) : (
+                <p className="learn-fs__no-flag" style={{ marginTop: "1rem" }}>
+                  No public broadcaster data is available for {display.country.name} yet.
+                </p>
+              )}
+            </div>
+          </aside>
+        )}
+
         {/* ===== SUB-NATIONAL box — a second card, only in the drill-in view.
             Its own dropdown picks the division; its flag + explainer sit in the
             same box, mirroring the national box above. ===== */}
@@ -2238,6 +2285,21 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               <div className="learn-fs__detail">
                 <AirlineDetails
                   airline={selectedSubdivisionAirline}
+                  baseUrl={baseUrl}
+                  onEnlarge={setZoomedFlagUrl}
+                />
+              </div>
+            </aside>
+          )}
+
+          {/* ===== PUBLIC-BROADCASTER box — a broadcaster picked in the "National symbols"
+              tab. Same treatment as National symbols, Political parties and airlines: its own
+              widget below the fact-sheet, highlighting nothing on the map. ===== */}
+          {selectedSubdivisionBroadcaster && (
+            <aside className="learn-fs__panel" aria-live="polite">
+              <div className="learn-fs__detail">
+                <BroadcasterDetails
+                  broadcaster={selectedSubdivisionBroadcaster}
                   baseUrl={baseUrl}
                   onEnlarge={setZoomedFlagUrl}
                 />
@@ -2472,6 +2534,13 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               setSelectedSubdivisionAirline((cur) => (cur?.id === airline.id ? null : airline));
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
+            selectedBroadcasterId={selectedSubdivisionBroadcaster?.id ?? null}
+            onSelectBroadcaster={(broadcaster) => {
+              // Same toggle behaviour as national symbol / party / airline: clicking the
+              // open broadcaster's card again closes its widget.
+              setSelectedSubdivisionBroadcaster((cur) => (cur?.id === broadcaster.id ? null : broadcaster));
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           />
         );
       })() : (
@@ -2479,6 +2548,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           entries={flagEntries}
           selectedId={activeGridCrest ? gridCrest!.id : selectedId}
           selectedAirlineId={gridAirlineId}
+          selectedBroadcasterId={gridBroadcasterId}
           onSelect={handleGridSelect}
           resolveFlag={resolveFlag}
           isModernEra={isModernEra}

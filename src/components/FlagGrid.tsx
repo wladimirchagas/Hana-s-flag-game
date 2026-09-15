@@ -47,6 +47,7 @@ import { subnationalFootballCrests } from "../lib/nationalSymbolImages";
 import { NON_FIFA_GRID_CODES, fifaExtraCrests } from "../lib/fifaAssociations";
 import { MENS_WORLD_CUP_TITLES, WOMENS_WORLD_CUP_TITLES } from "../data/worldCupTitles";
 import { allCommercialAirlines } from "../lib/commercialAirlines";
+import { allPublicBroadcasters } from "../lib/publicBroadcasters";
 import { GridImage } from "./GridImage";
 
 /**
@@ -70,8 +71,9 @@ export type FlagGridProps = {
   selectedId: string | null;
   /** Select a grid card. `id` is the country to select (a home-nation / entity
    *  crest card passes its PARENT country); `crestId` is the specific football
-   *  crest that was clicked; `airlineId` is the specific commercial airline. */
-  onSelect: (id: string, crestId?: string, airlineId?: string) => void;
+   *  crest that was clicked; `airlineId` is the specific commercial airline;
+   *  `broadcasterId` is the specific public broadcaster. */
+  onSelect: (id: string, crestId?: string, airlineId?: string, broadcasterId?: string) => void;
   /** Optional resolver to prepend the BASE_URL to relative flag paths so
    *  the grid can render flags identically to the panel. */
   resolveFlag: (raw: string) => string;
@@ -79,12 +81,14 @@ export type FlagGridProps = {
    *  TODAY_ONLY_MODES are hidden from the dropdown for historical eras. */
   isModernEra?: boolean;
   /** Which image the tiles show — controlled by the parent (LearnPage) so the
-   *  detail panel above can show the same coat of arms / passport / airline. */
+   *  detail panel above can show the same coat of arms / passport / airline / broadcaster. */
   contentType: GridContentType;
   /** Called when the user picks a different image type from the "Show" dropdown. */
   onContentTypeChange: (type: GridContentType) => void;
   /** Currently selected commercial airline ID (if any) */
   selectedAirlineId?: string | null;
+  /** Currently selected public broadcaster ID (if any) */
+  selectedBroadcasterId?: string | null;
 };
 
 type GroupMode =
@@ -163,20 +167,22 @@ const PASSPORT_ONLY_MODES = new Set<GroupMode>(["passport-color"]);
 // FIFA World Cup titles they have won (men's and women's, separately).
 const FOOTBALL_CREST_ONLY_MODES = new Set<GroupMode>(["wc-men", "wc-women"]);
 
-// Modes offered ONLY in the Commercial-airlines view — group by country.
-const AIRLINE_ONLY_MODES = new Set<GroupMode>(["by-country"]);
+// Modes offered in the Commercial-airlines and Public-broadcasters views — group by country.
+const COUNTRY_GROUP_MODES = new Set<GroupMode>(["by-country"]);
 
 /** Whether a grouping mode is offered for the given view. The flag-appearance
  *  modes (shape/family/colour/…) describe a FLAG and show only in the modern
  *  flag view; "passport-color" shows only in the Passports view; "by-country"
- *  shows only in the Airlines view; everything else (A–Z, continent, sub-continent)
+ *  shows in the Airlines and Broadcasters views; everything else (A–Z, continent, sub-continent)
  *  applies to any country-level item. */
 function groupModeAvailableFor(
   m: GroupMode,
   contentType: GridContentType,
   isModernEra: boolean,
 ): boolean {
-  if (AIRLINE_ONLY_MODES.has(m)) return isModernEra && contentType === "airline";
+  if (COUNTRY_GROUP_MODES.has(m)) {
+    return isModernEra && (contentType === "airline" || contentType === "broadcaster");
+  }
   if (PASSPORT_ONLY_MODES.has(m)) return isModernEra && contentType === "passport";
   if (FOOTBALL_CREST_ONLY_MODES.has(m)) return isModernEra && contentType === "footballcrest";
   if (TODAY_ONLY_MODES.has(m)) return isModernEra && contentType === "flag";
@@ -211,6 +217,7 @@ export function FlagGrid({
   contentType,
   onContentTypeChange,
   selectedAirlineId,
+  selectedBroadcasterId,
 }: FlagGridProps) {
   const [groupMode, setGroupMode] = useState<GroupMode>(loadStoredGroupMode);
   // Free-text filter typed by the user — narrows the grid by country/polity
@@ -261,8 +268,9 @@ export function FlagGrid({
   // Passports view), fall back to "No grouping". Covers both the initial load
   // and later switches, so the active grouping is always one the dropdown offers.
   useEffect(() => {
+    const isCountryGrouped = effectiveContentType === "airline" || effectiveContentType === "broadcaster";
     if (
-      effectiveContentType === "airline" &&
+      isCountryGrouped &&
       groupMode !== "by-country" &&
       groupMode !== "alpha" &&
       groupMode !== "continent" &&
@@ -270,7 +278,7 @@ export function FlagGrid({
     ) {
       setGroupMode("by-country");
     } else if (!groupModeAvailableFor(groupMode, effectiveContentType, isModernEra)) {
-      setGroupMode(effectiveContentType === "airline" ? "by-country" : "none");
+      setGroupMode(isCountryGrouped ? "by-country" : "none");
     }
   }, [groupMode, effectiveContentType, isModernEra]);
 
@@ -298,6 +306,23 @@ export function FlagGrid({
           continent: parent ? parent.continent : "Other",
           subcontinent: parent ? parent.subcontinent : "Other",
           selectId: a.countryCode,
+        };
+      });
+    }
+    if (effectiveContentType === "broadcaster") {
+      const codeToEntry = new Map(entries.map((e) => [e.id, e]));
+      return allPublicBroadcasters().map((b): FlagListEntry => {
+        const parent = codeToEntry.get(b.countryCode);
+        return {
+          id: b.id,
+          name: b.name,
+          flag: b.logo,
+          broadcasterLogo: b.logo,
+          broadcasterId: b.id,
+          countryName: parent ? parent.name : b.countryCode,
+          continent: parent ? parent.continent : "Other",
+          subcontinent: parent ? parent.subcontinent : "Other",
+          selectId: b.countryCode,
         };
       });
     }
@@ -355,7 +380,8 @@ export function FlagGrid({
       (e) =>
         normalizeForSearch(e.name).includes(q) ||
         (e.countryName && normalizeForSearch(e.countryName).includes(q)) ||
-        (e.airlineId && normalizeForSearch(e.airlineId).includes(q)),
+        (e.airlineId && normalizeForSearch(e.airlineId).includes(q)) ||
+        (e.broadcasterId && normalizeForSearch(e.broadcasterId).includes(q)),
     );
   }, [displayEntries, filter]);
 
@@ -665,9 +691,11 @@ export function FlagGrid({
           )}
           <ul className="flag-grid__list">
             {g.items.map((item) => {
-              const active = item.airlineId
-                ? item.airlineId === selectedAirlineId
-                : item.id === selectedId;
+              const active = item.broadcasterId
+                ? item.broadcasterId === selectedBroadcasterId
+                : item.airlineId
+                  ? item.airlineId === selectedAirlineId
+                  : item.id === selectedId;
               // Which image this tile shows depends on the "Show" dropdown.
               // A country with no coat of arms / passport bundled renders the
               // empty placeholder for that view (never an invented image).
@@ -680,7 +708,9 @@ export function FlagGrid({
                       ? item.footballCrest ?? null
                       : effectiveContentType === "airline"
                         ? item.airlineLogo ?? item.flag
-                        : item.flag;
+                        : effectiveContentType === "broadcaster"
+                          ? item.broadcasterLogo ?? item.flag
+                          : item.flag;
               const url = rawImage ? resolveFlag(rawImage) : null;
               const isLearned = learnedCodes.has(item.id);
               // In shape mode, the same id can appear in multiple
@@ -704,11 +734,12 @@ export function FlagGrid({
                         // that crest, not the parent country's.
                         item.id.endsWith("-football-crest") ? item.id : undefined,
                         item.airlineId,
+                        item.broadcasterId,
                       )
                     }
                     aria-pressed={active}
                     aria-label={
-                      item.countryName && effectiveContentType === "airline"
+                      item.countryName && (effectiveContentType === "airline" || effectiveContentType === "broadcaster")
                         ? `Select ${item.name} (${item.countryName})`
                         : isLearned
                           ? `Select ${item.name} (learned)`

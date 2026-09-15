@@ -59,6 +59,10 @@ export type FlagListEntry = {
   airlineLogo?: string | null;
   /** Unique airline ID (e.g. "au-qantas") when this card represents an airline. */
   airlineId?: string;
+  /** Resolved public broadcaster logo URL for the grid's "Public broadcasters" view. */
+  broadcasterLogo?: string | null;
+  /** Unique broadcaster ID (e.g. "au-abc") when this card represents a broadcaster. */
+  broadcasterId?: string;
   /** Country display name when this entry represents an airline grouped under a country. */
   countryName?: string;
   /**

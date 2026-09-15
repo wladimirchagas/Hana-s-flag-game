@@ -5,6 +5,8 @@ import { flagYearLabel } from "../lib/nationalFlags";
 import { ENTITY_STATUS_LABEL, specialEntitiesOf, type SpecialEntity } from "../lib/specialEntities";
 import { airlinesForCountry } from "../lib/commercialAirlines";
 import type { CommercialAirline } from "../types/airline";
+import { broadcastersForCountry } from "../lib/publicBroadcasters";
+import type { PublicBroadcaster } from "../types/broadcaster";
 import { GridImage } from "./GridImage";
 
 /**
@@ -108,9 +110,12 @@ type Props = {
   selectedFlagId: string | null;
   /** id of the commercial airline whose widget is open (if any). */
   selectedAirlineId?: string | null;
+  /** id of the public broadcaster whose widget is open (if any). */
+  selectedBroadcasterId?: string | null;
   baseUrl: string;
   onSelect: (flag: NationalFlag) => void;
   onSelectAirline?: (airline: CommercialAirline) => void;
+  onSelectBroadcaster?: (broadcaster: PublicBroadcaster) => void;
 };
 
 export function NationalFlagGrid({
@@ -118,9 +123,11 @@ export function NationalFlagGrid({
   countryName,
   selectedFlagId,
   selectedAirlineId,
+  selectedBroadcasterId,
   baseUrl,
   onSelect,
   onSelectAirline,
+  onSelectBroadcaster,
 }: Props) {
   const countryGroups = useMemo(
     () => groupFlags(NATIONAL_FLAGS[countryCode] ?? []),
@@ -134,8 +141,9 @@ export function NationalFlagGrid({
     [countryCode],
   );
   const airlines = useMemo(() => airlinesForCountry(countryCode), [countryCode]);
+  const broadcasters = useMemo(() => broadcastersForCountry(countryCode), [countryCode]);
 
-  if (countryGroups.length === 0 && entitySections.length === 0 && airlines.length === 0) {
+  if (countryGroups.length === 0 && entitySections.length === 0 && airlines.length === 0 && broadcasters.length === 0) {
     return (
       <p className="flag-grid__no-match">
         No sourced national flags are available for {countryName} yet.
@@ -200,6 +208,56 @@ export function NationalFlagGrid({
                         <AutoFitName className="flag-grid__name-text" text={airline.name} />
                         <span className="flag-grid__flag-sub">
                           {airline.iata} · Founded {airline.founded}
+                        </span>
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      )}
+
+      {broadcasters.length > 0 && (
+        <div className="flag-grid__groups">
+          <div className="flag-grid__group">
+            <h4 className="flag-grid__group-heading">
+              <span className="flag-grid__group-name">Public broadcasters</span>
+              <span className="flag-grid__group-count">({broadcasters.length})</span>
+            </h4>
+            <ul className="flag-grid__list">
+              {broadcasters.map((broadcaster) => {
+                const active = broadcaster.id === selectedBroadcasterId;
+                const logoUrl = broadcaster.logo ? `${baseUrl}${broadcaster.logo}` : null;
+                return (
+                  <li key={broadcaster.id} className="flag-grid__item">
+                    <button
+                      type="button"
+                      className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
+                      onClick={() => onSelectBroadcaster?.(broadcaster)}
+                      aria-pressed={active}
+                      aria-label={`Show ${broadcaster.name}`}
+                    >
+                      <span className="flag-grid__thumb">
+                        {logoUrl ? (
+                          <GridImage
+                            src={logoUrl}
+                            alt=""
+                            draggable={false}
+                            className="flag-grid__thumb-img"
+                            onError={(e) => { e.currentTarget.style.display = "none"; }}
+                          />
+                        ) : (
+                          <span className="flag-grid__no-image" aria-hidden="true">
+                            No logo
+                          </span>
+                        )}
+                      </span>
+                      <span className="flag-grid__name">
+                        <AutoFitName className="flag-grid__name-text" text={broadcaster.name} />
+                        <span className="flag-grid__flag-sub">
+                          Established {broadcaster.founded}
                         </span>
                       </span>
                     </button>

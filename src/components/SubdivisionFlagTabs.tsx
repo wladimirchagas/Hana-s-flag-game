@@ -10,10 +10,12 @@ import { countryCityFlagCount } from "../lib/cityFlags";
 import { totalNationalFlagCount } from "../lib/specialEntities";
 import { partiesForCountry } from "../lib/politicalParties";
 import { airlinesForCountry } from "../lib/commercialAirlines";
+import { broadcastersForCountry } from "../lib/publicBroadcasters";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning } from "../data/flagMeanings";
 import type { PoliticalParty } from "../data/politicalParties";
 import type { CommercialAirline } from "../types/airline";
+import type { PublicBroadcaster } from "../types/broadcaster";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 
 /**
@@ -117,6 +119,9 @@ type Props = {
   /** id of the commercial airline whose widget is open (if any). */
   selectedAirlineId?: string | null;
   onSelectAirline?: (airline: CommercialAirline) => void;
+  /** id of the public broadcaster whose widget is open (if any). */
+  selectedBroadcasterId?: string | null;
+  onSelectBroadcaster?: (broadcaster: PublicBroadcaster) => void;
   /** A collective subdivision-group flag (Malaysia's Federal Territories), shown
    *  in the hierarchy — opens its own widget with its sourced meaning. */
   onSelectGroupFlag: (flag: NationalFlag, meaning: FlagMeaning | null) => void;
@@ -143,6 +148,8 @@ export function SubdivisionFlagTabs({
   onSelectNationalFlag,
   selectedAirlineId,
   onSelectAirline,
+  selectedBroadcasterId,
+  onSelectBroadcaster,
   onSelectGroupFlag,
   selectedPartyId,
   onSelectParty,
@@ -168,9 +175,12 @@ export function SubdivisionFlagTabs({
     [countryCode],
   );
   // Includes the country's own symbols AND any special-status entities grouped
-  // under it (China → Hong Kong, Macau, Taiwan), plus any commercial airlines.
+  // under it (China → Hong Kong, Macau, Taiwan), plus any commercial airlines and public broadcasters.
   const natCount = useMemo(
-    () => totalNationalFlagCount(countryCode) + airlinesForCountry(countryCode).length,
+    () =>
+      totalNationalFlagCount(countryCode) +
+      airlinesForCountry(countryCode).length +
+      broadcastersForCountry(countryCode).length,
     [countryCode],
   );
   // Coverage grows via an incremental sourced sweep (see politicalParties.ts) —
@@ -279,9 +289,11 @@ export function SubdivisionFlagTabs({
             countryName={countryName}
             selectedFlagId={selectedNationalFlagId}
             selectedAirlineId={selectedAirlineId}
+            selectedBroadcasterId={selectedBroadcasterId}
             baseUrl={baseUrl}
             onSelect={onSelectNationalFlag}
             onSelectAirline={onSelectAirline}
+            onSelectBroadcaster={onSelectBroadcaster}
           />
         )}
         {activeTab === "tree" && (
