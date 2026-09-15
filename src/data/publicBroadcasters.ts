@@ -34,7 +34,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "75% Australian content quota during prime time (18:00–22:30) under the ABC Charter and ACMA standards",
       staffHeadcount: "4,142 full-time equivalent (FTE) staff (ABC Annual Report 2023–24)",
-      logo: "/broadcaster-logos/au/abc.svg",
+      logo: "broadcaster-logos/au/abc.svg",
       logoExplainer:
         "The famous ABC 'Lissajous curve' (popularly known as the 'Worms' or oscilloscope wave) was created in 1965 by ABC senior graphic designer Bill Kennard. It depicts a continuous looping curve formed by an oscilloscope when tuning broadcast equipment (a 3:1 frequency ratio), symbolizing electronic transmission, technical precision, and national unity across the continent.",
       sources: [
@@ -63,7 +63,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 50% Australian prime-time quota on primary channel; 100% Indigenous-dedicated content on NITV",
       staffHeadcount: "1,320 full-time equivalent staff (SBS Annual Report 2023–24)",
-      logo: "/broadcaster-logos/au/sbs.svg",
+      logo: "broadcaster-logos/au/sbs.svg",
       logoExplainer:
         "The distinctive SBS logo features five curved angled shards (known as the 'Mercator wedges'), designed in 1993 and refreshed in 2019. The dynamic wedges evoke the unrolled segments of a globe projected onto a flat plane, symbolizing Australia's multicultural diversity, global perspectives, and openness to all cultures and continents.",
       sources: [
@@ -96,7 +96,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "80% local content requirement on TV1; 60% on TV2 under Malaysian Communications and Multimedia Commission (MCMC) guidelines",
       staffHeadcount: "4,200 civil service employees (Jabatan Penyiaran Malaysia 2024)",
-      logo: "/broadcaster-logos/my/rtm.svg",
+      logo: "broadcaster-logos/my/rtm.svg",
       logoExplainer:
         "Updated in 2021, the modern RTM logo features flowing dynamic ribbons in deep blue and vibrant orange framing lowercase geometric typography. The blue represents institutional integrity, harmony, and national service, while the orange ribbon symbolizes creative transformation, digital agility, and the warmth of Malaysian culture.",
       sources: [
@@ -125,7 +125,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "100% locally produced Malaysian news, parliamentary proceedings, and current affairs programming",
       staffHeadcount: "1,050 full-time personnel across editorial, broadcast, and digital divisions",
-      logo: "/broadcaster-logos/my/bernama.png",
+      logo: "broadcaster-logos/my/bernama.png",
       logoExplainer:
         "The Bernama logo features a geometric monogram combining the letters B and M in white and blue, with two upward-pointing triangular broadcast transmission symbols flanking the letterforms. The modern, bold design in blue and white symbolizes media distribution, transmission signals, and contemporary news broadcasting.",
       sources: [
@@ -157,7 +157,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 85% national Brazilian audiovisual content quota under Federal Law 11.652/2007, with regional production requirements",
       staffHeadcount: "1,850 full-time employees (EBC Quadro de Pessoal 2024)",
-      logo: "/broadcaster-logos/br/ebc.svg",
+      logo: "broadcaster-logos/br/ebc.svg",
       logoExplainer:
         "Relaunched in 2023, the TV Brasil identity features geometric ribbons rendered in the Brazilian national flag colors: vibrant yellow, deep green, and blue. The overlapping fluid shapes form a radiant, open emblem celebrating Brazilian regional diversity, cultural plurality, and democratic public access to information.",
       sources: [
@@ -186,7 +186,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 90% Brazilian original educational, cultural, and independent documentary production",
       staffHeadcount: "780 full-time staff (Fundação Padre Anchieta 2024)",
-      logo: "/broadcaster-logos/br/cultura.svg",
+      logo: "broadcaster-logos/br/cultura.svg",
       logoExplainer:
         "The TV Cultura logo features a geometric design comprising stylized letterforms rendered in vibrant green (#27ba59) and deep dark blue (#39409e). The modern, minimalist composition reflects the broadcaster's commitment to contemporary, accessible educational content while maintaining visual distinction through its bold, complementary color palette of environmental green and institutional blue.",
       sources: [
@@ -218,7 +218,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "No federal statutory quota; member stations are locally owned non-profit licensees producing an average of 15% to 25% local programming alongside the national PBS distribution",
       staffHeadcount: "550 employees at PBS headquarters; over 9,000 personnel across all independent member stations nationwide",
-      logo: "/broadcaster-logos/us/pbs.svg",
+      logo: "broadcaster-logos/us/pbs.svg",
       logoExplainer:
         "The iconic 'P-Head' logo was created in 1971 by legendary typographer Herb Lubalin and redesigned in 1984 by Tom Geismar of Chermayeff & Geismar & Haviv into the layered multi-profile emblem. The forward-facing silhouette repeated in geometric succession represents the diverse American public, civic equality, and democratic inclusion.",
       sources: [
@@ -247,7 +247,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Network distributor model; individual member stations broadcast 25% to 50% locally originated news, music, and community programming",
       staffHeadcount: "1,100 full-time staff across NPR newsrooms, digital bureaus, and corporate divisions",
-      logo: "/broadcaster-logos/us/npr.svg",
+      logo: "broadcaster-logos/us/npr.svg",
       logoExplainer:
         "Created in 1993 by Landor Associates and modernized in 2004, the NPR logo features lowercase letterforms set in three solid rectangular color blocks: red, black, and blue. Red conveys journalistic urgency and energy, black provides authoritative grounding and clarity, and blue symbolizes intellectual depth and impartiality.",
       sources: [
@@ -280,7 +280,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "At least 90% original UK content quota on BBC One and BBC Two during peak viewing hours under Ofcom Operating Licence (consistently achieving ~95%)",
       staffHeadcount: "20,442 full-time equivalent staff across public service and commercial operations (BBC Annual Report 2023/24)",
-      logo: "/broadcaster-logos/gb/bbc.svg",
+      logo: "broadcaster-logos/gb/bbc.svg",
       logoExplainer:
         "The BBC's triptych logo features three black square blocks containing the clean, bespoke BBC Reith typeface letters 'B-B-C'. Introduced in 2021 as an evolution of Martin Lambie-Nairn's 1997 Gill Sans design, the minimalist geometric blocks convey institutional permanence, digital-first legibility, and editorial impartiality.",
       sources: [
@@ -309,7 +309,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 60% original UK content quota on main channel; 50% produced outside London (Nations and Regions quota). Commissions 100% of productions from independent UK producers",
       staffHeadcount: "1,310 full-time employees (Channel 4 Annual Report 2023)",
-      logo: "/broadcaster-logos/gb/channel4.svg",
+      logo: "broadcaster-logos/gb/channel4.svg",
       logoExplainer:
         "Designed originally in 1982 by Martin Lambie-Nairn and refreshed in 2015 and 2023, the Channel 4 logo is composed of nine puzzle-like multi-dimensional building blocks that deconstruct and assemble into the numeral '4'. It was the world's first computer-animated broadcast identity, symbolizing non-conformist perspectives, creative risk, and providing a platform for alternative voices.",
       sources: [
@@ -342,7 +342,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "At least 80% Canadian content (CanCon) quota overall and 80% in prime time (19:00–23:00) under Canadian Radio-television and Telecommunications Commission (CRTC) conditions of licence",
       staffHeadcount: "6,554 permanent full-time employees (CBC/Radio-Canada Annual Report 2023–2024)",
-      logo: "/broadcaster-logos/ca/cbc.svg",
+      logo: "broadcaster-logos/ca/cbc.svg",
       logoExplainer:
         "The famed 'Gem' logo, designed in 1974 by graphic designer Burton Kramer and simplified in 1992, consists of a circular core from which geometric segments radiate outwards in morphing shapes. It evokes an antenna radiating signals across Canada's vast continental geography from coast to coast to coast, representing bilingual heritage and national cohesion.",
       sources: [
@@ -375,7 +375,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "100% public service local content quota under the RNZ Charter; mandated to reflect New Zealand identity, te reo Māori language promotion, and Pacific culture",
       staffHeadcount: "330 full-time equivalent personnel (RNZ Annual Report 2023/24)",
-      logo: "/broadcaster-logos/nz/rnz.svg",
+      logo: "broadcaster-logos/nz/rnz.svg",
       logoExplainer:
         "The RNZ logo features a bold red typographic wordmark with a distinctive angular cut on the letterforms. The signature red draws upon traditional Māori red ochre (kōkōwai), symbolizing life, cultural vitality, and prestige, while the crisp contemporary styling marks RNZ's evolution into a modern multimedia public broadcaster.",
       sources: [
@@ -404,7 +404,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "85% local New Zealand content quota; statutory requirement under the Māori Television Service Act that at least 51% of prime-time broadcasts be in te reo Māori",
       staffHeadcount: "160 full-time employees (Whakaata Māori Annual Report 2023/24)",
-      logo: "/broadcaster-logos/nz/whakaata-maori.svg",
+      logo: "broadcaster-logos/nz/whakaata-maori.svg",
       logoExplainer:
         "The Whakaata Māori emblem depicts a stylized koru (unfurling fern frond) and triangular chevron motifs rendered in deep earth red and charcoal. In Māori culture, the koru represents new life, cultural regeneration, inner strength, and the uninterrupted generational flow of oral wisdom and ancestral heritage.",
       sources: [
@@ -437,7 +437,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Regulated by Arcom: minimum 60% European audiovisual works and 40% original French-language programming (œuvres d'expression originale française), with comprehensive regional news programming on France 3",
       staffHeadcount: "9,150 full-time equivalent employees (France Télévisions Rapport Annuel 2023)",
-      logo: "/broadcaster-logos/fr/france-televisions.svg",
+      logo: "broadcaster-logos/fr/france-televisions.svg",
       logoExplainer:
         "The France Télévisions visual identity, refreshed by Movement in 2018, features a minimalist sequence of vertical coloured dots alongside clean typography. Each dot represents one of the group's network channels in its signature hue (blue for France 2, orange for France 3, purple for France 4, green for France 5, and dark blue for franceinfo), symbolizing diversity, harmony, and national coherence.",
       sources: [
@@ -466,7 +466,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Under Arcom quotas and the French Toubon Law, stations must broadcast a minimum of 40% French-language music (up to 50% on regional stations), with 100% of speech programming conducted in French",
       staffHeadcount: "4,520 full-time employees (including the National Orchestra of France, the Radio France Philharmonic Orchestra, and the Radio France Choir)",
-      logo: "/broadcaster-logos/fr/radio-france.svg",
+      logo: "broadcaster-logos/fr/radio-france.svg",
       logoExplainer:
         "The Radio France logo employs a circular design with a sophisticated linear gradient spanning purple (#8D044F) through pink (#AC47B6) to orange-red (#FF6C5B) and culminating in deep red (#FD0323). The gradient's warm, energetic progression from cool tones to warm tones symbolizes the breadth of Radio France's programming and its dynamic reach across French audiences and cultural expression.",
       sources: [
@@ -495,7 +495,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 85% European audiovisual production quota under the Franco-German Treaty; all programs broadcast with dual French/German audio and subtitled in 6 European languages",
       staffHeadcount: "500 employees (approx. 270 at Arte France and 170 at Arte GEIE Strasbourg)",
-      logo: "/broadcaster-logos/fr/arte.svg",
+      logo: "broadcaster-logos/fr/arte.svg",
       logoExplainer:
         "Designed originally in 1995 and refreshed in 2017 by British design agency The Partners, the Arte logo features four lowercase letters 'arte' in warm coral-orange, tilted upright on a distinctive vertical angle. The standing, monumental posture evokes an architectural column and an open window onto European arts, culture, and intellectual curiosity.",
       sources: [
@@ -527,7 +527,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 60% domestic content requirement under Law No. 32/2002 on Broadcasting, with extensive regional culture and educational programming mandates",
       staffHeadcount: "4,600+ personnel across national headquarters and 35 provincial broadcasting stations (PPID TVRI 2024)",
-      logo: "/broadcaster-logos/id/tvri.svg",
+      logo: "broadcaster-logos/id/tvri.svg",
       logoExplainer:
         "Introduced on March 29, 2019, the TVRI logo features a deep trusted-blue circular ring enclosing the initials 'RI' (Republik Indonesia) alongside the wordmark 'TV'. The circle symbolizes a global outlook and the vision to be a world-class public broadcaster, while the unified composition underscores TVRI's foundational motto 'Media Pemersatu Bangsa' (Media Unifying the Nation).",
       sources: [
@@ -560,7 +560,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 70% locally produced content quota under the Thai Public Broadcasting Service Act B.E. 2551 (2008), with strict public interest and children/youth educational mandates",
       staffHeadcount: "1,180 full-time equivalent staff (Thai PBS Annual Financial Report 2023–24)",
-      logo: "/broadcaster-logos/th/thaipbs.svg",
+      logo: "broadcaster-logos/th/thaipbs.svg",
       logoExplainer:
         "The Thai PBS logo comprises complex geometric shapes rendered in a carefully chosen palette of red (#EF5021), orange (#F69322), neutral gray (#727272), and white (#FFFFFF). The layered geometric composition reflects modern broadcast design principles while the warm red and orange tones convey energy, vitality, and engagement with Thai audiences across all educational and informational programming.",
       sources: [
@@ -593,7 +593,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "80% domestic production quota across prime-time schedules under the Law on Press, with VTV1 carrying 100% Vietnamese public interest and current affairs content",
       staffHeadcount: "4,200+ employees across Hanoi headquarters and 5 regional centers (Vietnam Television Directorate 2024)",
-      logo: "/broadcaster-logos/vn/vtv.svg",
+      logo: "broadcaster-logos/vn/vtv.svg",
       logoExplainer:
         "The VTV logo showcases three bold geometric letterforms 'VTV' in the primary optical additive colors: red, green, and blue (RGB). The red evokes the national flag of Vietnam and patriotic devotion, while green and blue symbolize growth, truth, and electronic broadcasting waves connecting the country's diverse provinces.",
       sources: [
@@ -626,7 +626,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "100% domestic Filipino and regional languages content on public news broadcasts; minimum 50% Philippine music quota on radio and cultural programming under government media mandates",
       staffHeadcount: "780 regular, co-terminus, and contract-of-service personnel (PTNI Annual Audit Report, Commission on Audit 2024)",
-      logo: "/broadcaster-logos/ph/ptv.svg",
+      logo: "broadcaster-logos/ph/ptv.svg",
       logoExplainer:
         "Launched in 2017 as part of its network modernization, the PTV logo is rendered in the national colors of the Philippines: royal blue, scarlet red, and golden yellow. It incorporates three stylized rings and rays radiating outward, symbolizing the three island groups (Luzon, Visayas, Mindanao) and the government's commitment to timely, transparent public information.",
       sources: [
@@ -659,7 +659,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "100% Public Service Broadcasting quota compliance under IMDA licence conditions, delivering over 2,800 hours of locally produced original programming across Singapore's 4 official languages (English, Chinese, Malay, Tamil)",
       staffHeadcount: "3,100 full-time employees (Mediacorp Corporate Review 2024)",
-      logo: "/broadcaster-logos/sg/mediacorp.svg",
+      logo: "broadcaster-logos/sg/mediacorp.svg",
       logoExplainer:
         "The Mediacorp emblem, refreshed to a refined 2D geometry in 2023, features a dynamic looping 'M' formed by an interlocking ribbon in navy, cyan, magenta, and amber. The continuous loop symbolizes an open window to the world and a reflection of everyday Singaporean life, while the upward-thrusting arrow in the central serif (the 'Mplifier') conveys constant forward progress and technological innovation.",
       sources: [
@@ -692,7 +692,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 85% domestic programming, including daily transmissions in 17 indigenous ethnic languages (Kayin, Kachin, Shan, Mon, Chin, Rakhine, etc.) alongside Burmese",
       staffHeadcount: "2,200+ civil servants and media production personnel (MOI Department of Broadcasting 2024)",
-      logo: "/broadcaster-logos/mm/mrtv.png",
+      logo: "broadcaster-logos/mm/mrtv.png",
       logoExplainer:
         "The MRTV logo combines the Latin acronym 'MRTV' in deep blue and vibrant red, accompanied by Burmese script lettering. The bold typographic forms reflect institutional authority, national continuity, and the transition from historic radio telegraphy into digital terrestrial television broadcasting.",
       sources: [
@@ -725,7 +725,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "80% Khmer-language domestic cultural and educational quota, featuring classical Royal ballet broadcasts, heritage documentaries, and civic education",
       staffHeadcount: "650 civil service personnel and technical operators (Ministry of Information Personnel Directorate 2024)",
-      logo: "/broadcaster-logos/kh/tvk.png",
+      logo: "broadcaster-logos/kh/tvk.png",
       logoExplainer:
         "The TVK insignia features a circular badge with the letters 'TVK' intertwined with traditional Khmer kbach ornamentation in gold and navy. The ornate scrollwork echoes ancient Angkorian decorative motifs, signifying Khmer cultural sovereignty, national pride, and heritage preservation.",
       sources: [
@@ -758,7 +758,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "90% domestic programming in Lao language, including dedicated daily broadcasts in Hmong and Khmu ethnic minority dialects",
       staffHeadcount: "380 employees across national studios in Vientiane and provincial relay centers (MICT Broadcasting Department 2024)",
-      logo: "/broadcaster-logos/la/lntv.png",
+      logo: "broadcaster-logos/la/lntv.png",
       logoExplainer:
         "The Lao National Television emblem prominently showcases the sacred golden stupa of Pha That Luang—the national symbol of Laos—encircled by radiating broadcast waves in deep royal blue. The sacred stupa represents Lao national sovereignty and Buddhist heritage, while the concentric orbits denote modern telecommunication reaching all remote mountainous provinces.",
       sources: [
@@ -790,7 +790,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 75% local content quota under the National Media Charter, anchored in the state philosophy of Melayu Islam Beraja (Malay Islamic Monarchy)",
       staffHeadcount: "1,150 civil service personnel and broadcast professionals (RTB Corporate Directory 2024)",
-      logo: "/broadcaster-logos/bn/rtb.svg",
+      logo: "broadcaster-logos/bn/rtb.svg",
       logoExplainer:
         "The RTB emblem incorporates the National Crest of Brunei Darussalam: the royal umbrella (Payung Ubor-Ubor), the winged pylon (Sayap), the two upturned hands (Tangan), and the crescent bearing the national motto in Jawi script ('Always in service with God's guidance'). Below it, the modern blue and orange geometric initials 'RTB' symbolize progress, digital connectivity, and public devotion.",
       sources: [
@@ -823,7 +823,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "85% domestic programming quota produced in Tetum and Portuguese, preserving Timorese national memory, local music, and civic literacy",
       staffHeadcount: "210 journalists, technical staff, and provincial correspondents (RTTL, E.P. Annual Operational Report 2024)",
-      logo: "/broadcaster-logos/tl/rttl.png",
+      logo: "broadcaster-logos/tl/rttl.png",
       logoExplainer:
         "The RTTL insignia features a stylized globe intersected by dynamic curved wave arcs in Timor-Leste's national colors: black, red, yellow, and white. The arc sweeping across the horizon symbolizes the emergence of an independent democratic voice, national unity, and telecommunication linking the coastline to the central mountains.",
       sources: [
@@ -856,7 +856,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 85% domestic programming quota under the Broadcast Act; operates 54 domestic broadcasting stations across all 47 prefectures with extensive regional news and disaster warning responsibilities",
       staffHeadcount: "10,150 regular employees (NHK Corporate Profile 2024)",
-      logo: "/broadcaster-logos/jp/nhk.svg",
+      logo: "broadcaster-logos/jp/nhk.svg",
       logoExplainer:
         "Updated in 2020 for the digital and 8K era, the minimalist NHK logo features the three Latin letters in bold geometric sans-serif enclosed within soft rounded rectangular containers. The design preserves the iconic three-egg spatial layout introduced in 1995 while simplifying contours for legibility on ultra-high-definition displays and mobile applications.",
       sources: [
@@ -889,7 +889,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "80% domestic production quota under the Korea Communications Commission (KCC) regulations, with mandatory investment into independent domestic drama, documentary, and historical sagas",
       staffHeadcount: "4,450 full-time staff across Seoul headquarters and 18 regional stations (KBS Management Information 2024)",
-      logo: "/broadcaster-logos/kr/kbs.svg",
+      logo: "broadcaster-logos/kr/kbs.svg",
       logoExplainer:
         "Refreshed for its 50th public broadcasting anniversary in 2023, the KBS emblem features an optical geometric 'K' formed by radiating concentric arcs in cobalt blue. The circular wave motif symbolizes terrestrial sound and television waves rippling across the Korean Peninsula, conveying national unity, democratic discourse, and universal public service.",
       sources: [
@@ -922,7 +922,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 90% domestic production quota across national broadcast schedules under NRTA guidelines, with strict quotas on prime-time historical, educational, and patriotic programming",
       staffHeadcount: "10,000+ journalists, editors, and production staff across China Media Group (CMG Corporate Overview 2024)",
-      logo: "/broadcaster-logos/cn/cctv.svg",
+      logo: "broadcaster-logos/cn/cctv.svg",
       logoExplainer:
         "The iconic CCTV logo features the bold Latin letterforms 'CCTV' in solid black and cadmium red. The second 'C' and central stroke are rendered in vibrant Chinese red, visually emphasizing the television screen and China's national color, reflecting institutional authority and global broadcasting reach.",
       sources: [
@@ -955,7 +955,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 60% domestic production requirement under the Public Radio and Television Law, delivering cultural documentaries, traditional folk music, and nomadic heritage programming",
       staffHeadcount: "720 journalists, technical staff, and provincial correspondents (MNB Annual Report 2024)",
-      logo: "/broadcaster-logos/mn/mnb.svg",
+      logo: "broadcaster-logos/mn/mnb.svg",
       logoExplainer:
         "The MNB emblem features a circular turquoise-blue disc bearing the acronym 'MNB' and a stylized depiction of the traditional Soyombo fire symbol and nomadic sun-and-moon emblem in golden yellow. The cosmic Soyombo motifs represent the eternal flame of national independence and prosperity across the Eurasian steppe.",
       sources: [
@@ -988,7 +988,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "100% domestic programming in standard Pyongyang dialect, encompassing state documentary chronicles, ideological lectures, theatrical music performances, and educational children's programming",
       staffHeadcount: "1,500+ production, technical, and broadcast engineering personnel (Pyongyang Central Media Directorate 2024)",
-      logo: "/broadcaster-logos/kp/kctv.svg",
+      logo: "broadcaster-logos/kp/kctv.svg",
       logoExplainer:
         "The KCTV emblem features a stylized depiction of the flame from the Juche Tower in bright crimson, set against radiating golden telecommunication rays. The torch flame embodies ideological self-reliance, sovereignty, and state revolutionary leadership, while the radiant golden flares represent the illumination of society through socialist mass broadcasting.",
       sources: [
@@ -1020,7 +1020,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "60% domestic production quota under Audiovisual Communication Services Law No. 26.522, delivering federal cultural documentaries, regional folklore festivals (Cosquín, Jesús María), and civic news",
       staffHeadcount: "1,250 direct personnel at Televisión Pública (RTA S.E. Public Transparency Registry 2024)",
-      logo: "/broadcaster-logos/ar/tvp.svg",
+      logo: "broadcaster-logos/ar/tvp.svg",
       logoExplainer:
         "The Televisión Pública logo features the bold acronym 'TVP' flanked by a stylized ribbon in the Argentine national colors of celestial blue and white. The dynamic diagonal cut across the letterforms reflects modern digital transmission and universal civic connection uniting Buenos Aires and the interior provinces.",
       sources: [
@@ -1053,7 +1053,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 65% domestic production quota under the National Television Council (CNTV) regulations, including 100% Chilean educational and cultural content on its dedicated digital channel NTV",
       staffHeadcount: "730 full-time staff across corporate headquarters and regional television stations (TVN Memoria Integrada 2024)",
-      logo: "/broadcaster-logos/cl/tvn.svg",
+      logo: "broadcaster-logos/cl/tvn.svg",
       logoExplainer:
         "The classic TVN logo displays the geometric letters 'tvn' stylized in dynamic angular strokes. Originating in 1996 and recognized nationwide, the interlocking red and gray letterforms symbolize editorial autonomy, forward momentum, and the enduring connection of public television with Chilean society.",
       sources: [
@@ -1086,7 +1086,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 70% Colombian domestic cultural production quota, funding independent regional audiovisual creators, Indigenous storytelling, and national sports broadcasts (Vuelta a Colombia)",
       staffHeadcount: "950 career civil servants, permanent staff, and contracted audiovisual specialists (RTVC Informe de Gestión 2024)",
-      logo: "/broadcaster-logos/co/rtvc.svg",
+      logo: "broadcaster-logos/co/rtvc.svg",
       logoExplainer:
         "The Señal Colombia / RTVC emblem features a bright geometric triangle in vibrant orange, framing a stylized broadcast crest. The triangular symbol represents a digital play button, the three Colombian mountain ranges (Cordilleras), and the forward trajectory of convergent public media.",
       sources: [
@@ -1119,7 +1119,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "80% domestic production requirement under the Radio and Television Law (Law 28278), with mandatory quotas for Peruvian cultural patrimony, regional music, and native language programming",
       staffHeadcount: "1,350 personnel across administrative headquarters and regional production branches (IRTP Transparencia 2024)",
-      logo: "/broadcaster-logos/pe/tvperu.svg",
+      logo: "broadcaster-logos/pe/tvperu.svg",
       logoExplainer:
         "The TV Perú logo features the national bilingual wordmark accompanied by a stylized red and white badge echoing the Peruvian national flag. The modern sans-serif typography and vibrant red ribbon communicate clarity, institutional transparency, and cultural inclusion for all Peruvian communities.",
       sources: [
@@ -1152,7 +1152,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 85% domestic programming quota under the Law on Social Responsibility in Radio, Television and Electronic Media (RESORTE), focusing on state news bulletins and ideological analysis",
       staffHeadcount: "1,100+ journalists, editors, and broadcast technicians (MIPPCI Corporate Registry 2024)",
-      logo: "/broadcaster-logos/ve/vtv.svg",
+      logo: "broadcaster-logos/ve/vtv.svg",
       logoExplainer:
         "The VTV logo displays a stylized bold letter 'V' rendered with the yellow, blue, and red colors of the Venezuelan national flag, crowned by the acronym 'VTV'. The dynamic tricolor sweep represents national sovereignty, patriotism, and the historic lineage of public broadcasting founded in Los Ruices.",
       sources: [
@@ -1185,7 +1185,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "60% domestic production quota under the Organic Communication Law (LOC), prioritizing national cinema, intercultural intercultural indigenous language segments, and scientific documentaries",
       staffHeadcount: "210 audiovisual professionals, editors, and administrative staff (Comunica EP Transparencia 2024)",
-      logo: "/broadcaster-logos/ec/ectv.svg",
+      logo: "broadcaster-logos/ec/ectv.svg",
       logoExplainer:
         "The Ecuador TV emblem displays the stylized initials 'ec' connected into an unbroken loop in the national colors: golden yellow, cobalt blue, and crimson red. The flowing, harmonious curve conveys unity across the Coast, Highlands, and Amazon, as well as universal access to educational broadcasting.",
       sources: [
@@ -1218,7 +1218,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 70% domestic programming quota under Supreme Decree No. 0074, delivering intercultural educational content, live civic festivities, and rural community voices",
       staffHeadcount: "346 permanent employees, technicians, and specialized consultants (BTV Informe de Gestión 2024)",
-      logo: "/broadcaster-logos/bo/btv.png",
+      logo: "broadcaster-logos/bo/btv.png",
       logoExplainer:
         "The Bolivia TV logo features the bold modern acronym 'BTV' with the letter 'B' accented by the vibrant Andean colors of the Bolivian national flag and Wiphala. The dynamic multi-colored gradient symbolizes the plurinational identity, cultural diversity, and geographic richness of Bolivia.",
       sources: [
@@ -1251,7 +1251,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "85% domestic cultural and institutional content quota, fostering national cinema, classical folkloric music, and parliamentary hearings",
       staffHeadcount: "165 public media civil servants and broadcast technicians (MITIC Transparencia 2024)",
-      logo: "/broadcaster-logos/py/pytv.png",
+      logo: "broadcaster-logos/py/pytv.png",
       logoExplainer:
         "The Paraguay TV emblem displays the network name in crisp contemporary typography next to a vibrant tri-color flourish in red, white, and navy blue reflecting the national flag of Paraguay. The clean layout reflects digital modernization, institutional clarity, and civic service.",
       sources: [
@@ -1284,7 +1284,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 75% domestic production quota under Audiovisual Media Law No. 19.307, delivering original children's programming, national theater, and municipal news across all 19 departments",
       staffHeadcount: "230 journalists, production technicians, and permanent staff (SECAN Memoria Anual 2024)",
-      logo: "/broadcaster-logos/uy/canal5.svg",
+      logo: "broadcaster-logos/uy/canal5.svg",
       logoExplainer:
         "The Canal 5 emblem showcases a bold numeral '5' stylized in a warm solar gold and blue geometry. Originating as SODRE and known as TNU before returning to its historic name 'Canal 5' in 2021, the design evokes Uruguay's national Sun of May, public accessibility, and collective cultural memory.",
       sources: [
@@ -1317,7 +1317,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "70% domestic Guyanese programming quota, highlighting Caribbean cultural heritage, Mashramani celebrations, and CARICOM regional affairs",
       staffHeadcount: "185 journalists, broadcast technicians, and regional studio personnel (NCN Corporate Profile 2024)",
-      logo: "/broadcaster-logos/gy/ncn.png",
+      logo: "broadcaster-logos/gy/ncn.png",
       logoExplainer:
         "The NCN logo combines bold royal blue lettering with the national colors of the Golden Arrowhead: gold, green, and red. The orbital sweep encircling the letterforms represents nationwide broadcast coverage uniting the coastland and the interior hinterland regions.",
       sources: [
@@ -1350,7 +1350,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 60% domestic production quota, featuring news and educational features in Dutch, Sranan Tongo, and Sarnami Hindustani",
       staffHeadcount: "120 journalists, studio technicians, and production crew (STVS Corporate Directory 2024)",
-      logo: "/broadcaster-logos/sr/stvs.png",
+      logo: "broadcaster-logos/sr/stvs.png",
       logoExplainer:
         "The STVS emblem features a circular crest bearing the acronym 'STVS' superimposed on a television screen silhouette and the national flag of Suriname (green, white, red with the central yellow star). The design signifies national pride, multicultural unity, and patriotic service across the Guiana Shield.",
       sources: [
@@ -1383,7 +1383,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 85% German and European production quota under the Interstate Media Treaty (Medienstaatsvertrag), with comprehensive regional culture, documentary, and investigative mandates",
       staffHeadcount: "22,500 permanent employees across all 9 regional ARD public broadcasting corporations (ARD Leistungsbericht 2024)",
-      logo: "/broadcaster-logos/de/ard.svg",
+      logo: "broadcaster-logos/de/ard.svg",
       logoExplainer:
         "Designed by Peter Schmidt and refined in 2019, the ARD logo features the bold numeral '1' (representing Das Erste) encased within a dynamic circular ring alongside the uppercase wordmark 'ARD'. The circular portal represents an all-encompassing lens on the world, federal cooperation among the German states, and technical excellence.",
       sources: [
@@ -1412,7 +1412,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "80% domestic German and European production quota under the ZDF State Treaty, with heavy commitments to original television drama, investigative journalism (Frontal), and political satire (heute-show)",
       staffHeadcount: "3,600 permanent staff and approx. 1,000 freelance specialists (ZDF Jahrbuch 2024)",
-      logo: "/broadcaster-logos/de/zdf.svg",
+      logo: "broadcaster-logos/de/zdf.svg",
       logoExplainer:
         "Created in 2001 by design agency Razorfish and refreshed into an iconic flat brand, the ZDF logo features the lowercase letters 'zdf' in a warm signature orange. The letter 'z' is optically merged into the numeral '2' inside the circle, subtly reminding viewers of its identity as 'Zweites Deutsches Fernsehen' (Second German Television).",
       sources: [
@@ -1445,7 +1445,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 70% European and Italian audiovisual production quota under the Consolidated Audiovisual Media Act (TUSMA), supporting Italian cinema, opera broadcasts, and regional news (TGR across all 20 regions)",
       staffHeadcount: "12,400 permanent employees across television, radio, and regional production centers (Rai Bilancio di Sostenibilità 2024)",
-      logo: "/broadcaster-logos/it/rai.png",
+      logo: "broadcaster-logos/it/rai.png",
       logoExplainer:
         "Designed in 2016 by Pentagram, the modern Rai logo features two interlocking squares forming an abstract capital 'R' alongside the clean lowercase letters 'ai' in a brilliant Mediterranean blue. The square modular geometry reflects the integration of television, radio, and digital streaming (RaiPlay) into a cohesive public service ecosystem.",
       sources: [
@@ -1478,7 +1478,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 85% Spanish and European audiovisual production quota under the General Law on Audiovisual Communication, fostering independent national cinema, cultural series, and regional territorial studios (Centros Territoriales)",
       staffHeadcount: "6,770 permanent employees (RTVE Cuentas Anuales 2024)",
-      logo: "/broadcaster-logos/es/rtve.svg",
+      logo: "broadcaster-logos/es/rtve.svg",
       logoExplainer:
         "Created in 2008 by design agency Summa, the RTVE identity features warm organic typography in gradient amber and orange, anchored around the lowercase letters 'rtve'. The luminous orange glow symbolizes Mediterranean sunlight, accessibility, warmth, and the transformation of the state broadcaster into a citizen-centered cultural corporation.",
       sources: [
@@ -1511,7 +1511,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 75% Dutch and European production quota under the Media Act 2008, coordinating programs across pillar broadcasters (NOS, NTR, BNNVARA, KRO-NCRV, AVROTROS, Omroep MAX, VPRO, EO)",
       staffHeadcount: "2,850 employees across the NPO coordinating body, NOS newsroom, and member broadcasting associations (NPO Jaarverslag 2024)",
-      logo: "/broadcaster-logos/nl/npo.png",
+      logo: "broadcaster-logos/nl/npo.png",
       logoExplainer:
         "Designed in 2014 by 3D design studio KempertHautmans, the NPO logo consists of three bold geometric letters 'npo' rendered in crisp blue and white with a stylized rhomboid diamond integrated into the letter 'o'. The multifaceted diamond symbolizes pluralism, diversity of opinion among the pillar broadcasters, and universal public broadcasting cohesion.",
       sources: [
@@ -1544,7 +1544,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 85% Flemish domestic production quota under the Flemish Media Decree, investing extensively in local fiction, youth education, and regional news",
       staffHeadcount: "2,050 full-time equivalent staff (VRT Jaarverslag 2024)",
-      logo: "/broadcaster-logos/be/vrt.png",
+      logo: "broadcaster-logos/be/vrt.png",
       logoExplainer:
         "Unveiled in 2022, the modern VRT emblem features the lowercase letterforms 'vrt' in a sleek, minimalist geometric sans-serif, rendered in stark charcoal black or vibrant electric blue. The unified, digital-first aesthetic conveys openness, agility, and the convergence of traditional television and radio into digital streaming via VRT MAX.",
       sources: [
@@ -1577,7 +1577,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 50% Portuguese-language audiovisual production quota on RTP1 and 60% on RTP2 under the Portuguese Television Law (Lei da Televisão), with extensive regional coverage in Azores and Madeira",
       staffHeadcount: "3,120 employees across mainland Portugal and the autonomous islands (RTP Relatório de Sustentabilidade 2024)",
-      logo: "/broadcaster-logos/pt/rtp.png",
+      logo: "broadcaster-logos/pt/rtp.png",
       logoExplainer:
         "Designed in 2004 and refined in 2016, the RTP emblem features four dynamic curving quadrants in deep ultramarine blue and cyan that rotate together to form an energetic circular sphere, accompanied by modern lowercase sans-serif lettering. The four quadrants symbolize the four broadcast elements (RTP1, RTP2, RTP Internacional, and RTP África), convergence, and Portugal's maritime heritage.",
       sources: [
@@ -1610,7 +1610,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 80% Swedish-originated programming requirement across national channels, with strict regional production mandates outside Stockholm across 21 regional news editorial offices",
       staffHeadcount: "2,240 full-time equivalent staff (SVT Årsredovisning 2024)",
-      logo: "/broadcaster-logos/se/svt.png",
+      logo: "broadcaster-logos/se/svt.png",
       logoExplainer:
         "Created by Stockholm design agency Happy F&B in 2008 and updated in 2016, the SVT visual mark features friendly lowercase typography with a distinctive open, curving 's' rendered in warm radiant orange. The flowing letterforms convey warmth, democratic accessibility, and an open dialogue with all Swedish citizens.",
       sources: [
@@ -1643,7 +1643,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "At least 75% Norwegian-produced content quota, with statutory mandates to provide services in Norwegian (Bokmål and Nynorsk, min. 25% Nynorsk) and dedicated Sami broadcasting via NRK Sápmi",
       staffHeadcount: "3,410 full-time equivalent staff across headquarters and regional district offices (NRK Årsrapport 2024)",
-      logo: "/broadcaster-logos/no/nrk.png",
+      logo: "broadcaster-logos/no/nrk.png",
       logoExplainer:
         "Designed in 1970 by graphic artist Richard Aare and modernized in 2011, the iconic NRK emblem features the bold, rounded sans-serif letters 'nrk' with distinctively curved terminal strokes in vivid royal blue. The circular flowing contours evoke radio broadcast waves and friendly Scandinavian modernism.",
       sources: [
@@ -1676,7 +1676,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 80% Danish-language and Nordic programming requirement under the DR Public Service Contract with the Ministry of Culture, prioritizing Danish culture, regional news, and children's content (DR Ramasjang)",
       staffHeadcount: "2,780 full-time equivalent staff (DR Årsrapport 2024)",
-      logo: "/broadcaster-logos/dk/dr.png",
+      logo: "broadcaster-logos/dk/dr.png",
       logoExplainer:
         "Redesigned in 2020, the DR emblem presents the capital letters 'DR' set in an authoritative, minimalist bespoke geometric grotesque typeface rendered in pure black and white. The clean silhouette embodies Scandinavian functionalism, institutional transparency, and digital-first clarity across DR TV and DR LYD.",
       sources: [
@@ -1709,7 +1709,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 80% domestic and European production quota under the Act on the Finnish Broadcasting Company (Laki Yleisradio Oy:stä), with dual official language delivery in Finnish and Swedish (Svenska Yle) plus Sámi (Yle Sápmi)",
       staffHeadcount: "2,840 permanent employees (Yle Toimintakertomus 2024)",
-      logo: "/broadcaster-logos/fi/yle.png",
+      logo: "broadcaster-logos/fi/yle.png",
       logoExplainer:
         "Created in 2012 by design firm Bob the Robot, the Yle logo features the lowercased, approachable word 'yle' set inside a rounded square in bright turquoise blue. The solid rounded enclosure represents a unified media window connecting citizens across television, radio, and the Yle Areena digital streaming platform.",
       sources: [
@@ -1742,7 +1742,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 50% Irish-originated programming quota under the Broadcasting Act 2009 and Coimisiún na Meán regulations, commissioning heavily from independent Irish producers",
       staffHeadcount: "1,790 employees (RTÉ Annual Report 2024)",
-      logo: "/broadcaster-logos/ie/rte.png",
+      logo: "broadcaster-logos/ie/rte.png",
       logoExplainer:
         "Adopted in 1995 and refreshed in 2014, the RTÉ visual identity features modern lowercase letterforms with a prominent acute accent (fada) over the 'e' ('é'), honoring the Irish language name 'Raidió Teilifís Éireann'. The sleek typography in emerald blue symbolizes national cultural identity, contemporary public service, and multimedia agility.",
       sources: [
@@ -1775,7 +1775,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 80% Swiss-produced programming quota under the Federal Act on Radio and Television (RTVA), delivering full public service suites in all four national languages: German, French, Italian, and Romansh (RTR)",
       staffHeadcount: "5,540 full-time equivalent staff across all regional divisions (SRG SSR Geschäftsbericht 2024)",
-      logo: "/broadcaster-logos/ch/srg-ssr.png",
+      logo: "broadcaster-logos/ch/srg-ssr.png",
       logoExplainer:
         "The corporate SRG SSR emblem features an assertive horizontal typographic lockup in charcoal and warm Swiss red, bringing together the German acronym 'SRG' and French/Italian/Romansh acronym 'SSR'. The red rectangular badge echoes the Swiss federal cross and flag, embodying multilingual cohesion, federalism, and national democratic dialogue.",
       sources: [
@@ -1808,7 +1808,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "At least 70% Austrian and European content quota under the Federal ORF Act (ORF-Gesetz), funding major domestic film co-productions and nine federal state regional studios (Landesstudios)",
       staffHeadcount: "3,110 full-time equivalent staff (ORF Jahresbericht 2024)",
-      logo: "/broadcaster-logos/at/orf.png",
+      logo: "broadcaster-logos/at/orf.png",
       logoExplainer:
         "Created in 1968 by renowned graphic designer Erich Sokol and updated in modern iterations, the 'ORF-Auge' (ORF eye) combines an abstract camera lens and human eye in bold geometric forms, accompanied by the compact rectangular wordmark 'ORF' in classic brick red. The eye symbolizes vigilance, truth, public insight, and visionary broadcasting.",
       sources: [
@@ -1841,7 +1841,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 50% Polish-language quota on primary general channels under the Broadcasting Act (Ustawa o radiofonii i telewizji), supporting Polish cinema, documentary drama, and 16 regional terrestrial branches (TVP3)",
       staffHeadcount: "2,890 permanent employees (Sprawozdanie Zarządu TVP 2024)",
-      logo: "/broadcaster-logos/pl/tvp.png",
+      logo: "broadcaster-logos/pl/tvp.png",
       logoExplainer:
         "Introduced in 2003, the TVP emblem presents the capital letters 'T', 'V', and 'P' individually encased in three connected squarish rounded boxes in national deep blue. The modular boxes symbolize stability, structural integrity, and the distinct channel pillars that comprise the national public television network.",
       sources: [
@@ -1874,7 +1874,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 60% Greek and European audiovisual production quota under the National Council for Radio and Television (ESR) directives, with specialized regional coverage across northern Greece (ERT3 in Thessaloniki)",
       staffHeadcount: "2,130 permanent employees (ERT Apologismos Drasis 2024)",
-      logo: "/broadcaster-logos/gr/ert.png",
+      logo: "broadcaster-logos/gr/ert.png",
       logoExplainer:
         "Introduced in September 2020, the ERT logo features bold, clean sans-serif typography with the Greek letters 'EPT' in Aegean blue with subtle cyan accents, framed in a streamlined modern layout. The contemporary aesthetic symbolizes institutional renewal, digital transformation via the ERTFLIX streaming platform, and democratic transparency.",
       sources: [
@@ -1907,7 +1907,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 70% Czech-originated content quota under the Czech Television Act (Zákon o České televizi), with statutory regional television studios in Brno and Ostrava",
       staffHeadcount: "2,980 full-time equivalent staff (Česká televize Výroční zpráva o hospodaření 2024)",
-      logo: "/broadcaster-logos/cz/ct.png",
+      logo: "broadcaster-logos/cz/ct.png",
       logoExplainer:
         "Designed in 2012 by visual studio Najbrt, the Česká televize identity features an abstract cathode-ray screen formed by two brackets in Czech national blue and red, representing the letters 'Č' and 'T'. The minimalist geometric mark honors the legacy 1963 television screen logo while creating a modular visual identity across all digital and thematic channels.",
       sources: [
@@ -1940,7 +1940,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 35% Slovak domestic music quota on radio and over 50% European audiovisual works quota under the Media Services Act, with regional studios in Banská Bystrica and Košice",
       staffHeadcount: "1,520 employees (Správa o činnosti a hospodárení 2024)",
-      logo: "/broadcaster-logos/sk/stvr.png",
+      logo: "broadcaster-logos/sk/stvr.png",
       logoExplainer:
         "The public broadcaster logo features the signature typography with a distinct colon separator (:), originally introduced in 2011 to bridge radio and television broadcast services. The colon symbol evokes digital connectivity, introduction, and the dialogue between public media and Slovak society.",
       sources: [
@@ -1973,7 +1973,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 51% Hungarian and European content requirement on public television channels under Act CLXXXV of 2010 on Media Services and Mass Media",
       staffHeadcount: "2,150 permanent employees (MTVA Éves beszámoló 2024)",
-      logo: "/broadcaster-logos/hu/duna.png",
+      logo: "broadcaster-logos/hu/duna.png",
       logoExplainer:
         "The MTVA and Duna Media corporate visual system features an intricate circular rosette composed of orbiting dots and interconnected geometric arcs. Designed in 2012, the planetary motif symbolizes the convergence of television, Hungarian radio (Kossuth, Petőfi, Bartók), and the Hungarian news agency MTI into a unified national public media constellation.",
       sources: [
@@ -2006,7 +2006,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 50% Romanian-language and European production quota under Audiovisual Law no. 504/2002, funding five regional territorial studios (Cluj, Craiova, Iași, Timișoara, Târgu Mureș)",
       staffHeadcount: "2,210 employees across national headquarters and regional territorial studios (Raportul de activitate al SRTv 2024)",
-      logo: "/broadcaster-logos/ro/tvr.png",
+      logo: "broadcaster-logos/ro/tvr.png",
       logoExplainer:
         "Modernized in 2022, the TVR logo features the bold capital letters 'TVR' rendered in contemporary blue and vibrant orange with a stylized forward-pointing apex in the letter 'V'. The geometric angles represent forward motion, cultural dynamism, and nationwide broadcasting from the Carpathians to the Black Sea.",
       sources: [
@@ -2039,7 +2039,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "At least 50% European and Bulgarian content quota under Council for Electronic Media (CEM) standards, supporting Bulgarian cinema and regional television centers in Blagoevgrad, Varna, Plovdiv, and Ruse",
       staffHeadcount: "1,440 employees (BNT Otchet za deynostta 2024)",
-      logo: "/broadcaster-logos/bg/bnt.png",
+      logo: "broadcaster-logos/bg/bnt.png",
       logoExplainer:
         "Introduced in 2008 and refreshed in 2018, the BNT emblem showcases three vibrant forward-angled geometric quadrilaterals in Bulgarian national red, deep blue, and light blue, flanking the bold sans-serif letters 'БНТ' (BNT). The ascending parallel bars symbolize the progression of television broadcast signals and Bulgarian cultural identity.",
       sources: [
@@ -2072,7 +2072,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 50% Croatian domestic production quota under the Electronic Media Act (Zakon o elektroničkim medijima), with statutory regional production centers in Split, Rijeka, Osijek, Pula, Zadar, and Dubrovnik",
       staffHeadcount: "2,730 permanent employees (Izvješće o radu HRT-a 2024)",
-      logo: "/broadcaster-logos/hr/hrt.png",
+      logo: "broadcaster-logos/hr/hrt.png",
       logoExplainer:
         "Created in the early 1990s by renowned Croatian designer Boris Ljubičić, the HRT emblem features three bold capital letters 'HRT' intertwined with the iconic red-and-white Croatian alternating chequy motif. The visual identity powerfully connects national heritage with contemporary public broadcasting.",
       sources: [
@@ -2105,7 +2105,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "At least 50% Serbian and European audiovisual production quota under the Law on Public Media Services (Zakon o javnim medijskim servisima), with regional correspondence desks across the country",
       staffHeadcount: "2,620 permanent employees (RTS Izveštaj o poslovanju 2024)",
-      logo: "/broadcaster-logos/rs/rts.png",
+      logo: "broadcaster-logos/rs/rts.png",
       logoExplainer:
         "The distinctive RTS emblem features stylized overlapping circular rings rendered in Serbian tricolor blue, white, and red, seamlessly merging the Cyrillic and Latin letterforms 'PTC / RTS'. The interlocking spherical ribbons symbolize radio and television orbital broadcast signals uniting the nation.",
       sources: [
@@ -2138,7 +2138,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 75% Icelandic-language programming quota under Act no. 23/2013 on the Icelandic National Broadcasting Service, safeguarding the Icelandic language, domestic drama, children's programs, and rural regional offices",
       staffHeadcount: "270 full-time equivalent employees (RÚV Ársskýrsla 2024)",
-      logo: "/broadcaster-logos/is/ruv.png",
+      logo: "broadcaster-logos/is/ruv.png",
       logoExplainer:
         "Designed in 2011 by graphic artist Hörður Lárusson, the minimalist RÚV wordmark features custom lowercase geometric sans-serif lettering with a distinctive circular dot above the acute accent of the 'ú'. The clean typography in Nordic deep blue embodies institutional clarity, digital agility, and community trust.",
       sources: [
@@ -2171,7 +2171,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 60% Lithuanian-origin programming quota under the Law on the Lithuanian National Radio and Television, featuring comprehensive news, documentary history, and cultural programs",
       staffHeadcount: "650 full-time employees (LRT Veiklos ataskaita 2024)",
-      logo: "/broadcaster-logos/lt/lrt.png",
+      logo: "broadcaster-logos/lt/lrt.png",
       logoExplainer:
         "Unveiled in 2022, the refreshed LRT emblem displays the bold sans-serif letterforms 'LRT' in stark black and white or Baltic amber, characterized by modern geometric lines and a clean horizontal cadence. The identity reflects progressive institutional values, digital expansion via LRT Epika and LRT.lt, and civic resilience.",
       sources: [
@@ -2204,7 +2204,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 80% European and Latvian-language programming quota on LTV1 under the Public Electronic Mass Media and Their Administration Law (SEPLP), funding Baltic documentary cinema and regional correspondent hubs",
       staffHeadcount: "520 employees (LTV Gada pārskats 2024)",
-      logo: "/broadcaster-logos/lv/ltv.png",
+      logo: "broadcaster-logos/lv/ltv.png",
       logoExplainer:
         "Redesigned in 2021, the LTV emblem features the bold, geometric capital letters 'LTV' in Latvian carmine red and deep slate grey. The clean, forward-slanted diagonal cut in the letter 'L' evokes broadcast transmission towers, signal precision, and continuous public service modernization from the iconic Zaķusala TV tower in Riga.",
       sources: [
@@ -2237,7 +2237,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 70% Estonian domestic production quota under the Estonian National Broadcasting Act (Eesti Rahvusringhäälingu seadus), with extensive programming in Estonian and Russian (ETV+)",
       staffHeadcount: "680 full-time equivalent employees (ERR Tegevusaruanne 2024)",
-      logo: "/broadcaster-logos/ee/err.png",
+      logo: "broadcaster-logos/ee/err.png",
       logoExplainer:
         "The ETV and ERR emblem presents the stylized bold letterforms 'etv' encased in vibrant scarlet red and white. The clean, rounded geometry embodies Baltic digital innovation, transparency, and universally accessible public service journalism across television and ERR Jupiter streaming.",
       sources: [
@@ -2270,7 +2270,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 40% domestic production quota under Montenegrin media regulations, maintaining minority language programming in Albanian and Romani",
       staffHeadcount: "740 permanent employees (RTCG Izvještaj o radu 2024)",
-      logo: "/broadcaster-logos/me/rtcg.png",
+      logo: "broadcaster-logos/me/rtcg.png",
       logoExplainer:
         "Redesigned in 2024, the RTCG logo features contemporary stylized letterforms in deep navy and gold, evoking the Montenegrin national colors and heraldic heritage. The interconnected lines symbolize national integration, digital modernism, and editorial evolution.",
       sources: [
@@ -2302,7 +2302,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "At least 50% Macedonian domestic content requirement, with dedicated multilingual channels broadcasting daily in Albanian, Turkish, Serbian, Romani, Vlach, and Bosnian",
       staffHeadcount: "810 employees (MRT Godišen izveštaj 2024)",
-      logo: "/broadcaster-logos/mk/mrt.png",
+      logo: "broadcaster-logos/mk/mrt.png",
       logoExplainer:
         "The MRT emblem presents bold geometric lettering in the warm yellow and red tones of North Macedonia's national flag, incorporating horizontal broadcast wave cuts through the letters 'MRT'. The design represents nation-building, multiethnic cohesion, and terrestrial broadcasting across the Vardar valley.",
       sources: [
@@ -2334,7 +2334,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 50% Albanian domestic production quota under Law no. 97/2013 on Audiovisual Media, funding Albanian cinema, classical music festivals (Festivali i Këngës), and regional centers in Korçë and Gjirokastër",
       staffHeadcount: "1,120 permanent employees (RTSH Raporti Vjetor 2024)",
-      logo: "/broadcaster-logos/al/rtsh.png",
+      logo: "broadcaster-logos/al/rtsh.png",
       logoExplainer:
         "Redesigned in 2017, the modern RTSH emblem features clean, minimalist geometric typography with the letters 'rtsh' rendered in vibrant vermilion red and obsidian slate. The streamlined lowercase letterforms communicate democratic transformation, accessibility, and modern multimedia public service.",
       sources: [
@@ -2366,7 +2366,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 90% Ukrainian-language content quota under wartime information security and national broadcasting laws, operating across 24 regional hubs from Lviv to Kharkiv",
       staffHeadcount: "3,850 employees across national headquarters and frontline regional branches (Suspilne Richnyi zvit 2024)",
-      logo: "/broadcaster-logos/ua/suspilne.png",
+      logo: "broadcaster-logos/ua/suspilne.png",
       logoExplainer:
         "Adopted during the historic 2019 public broadcaster rebranding, the Suspilne logo features the warm lowercase wordmark 'суспільне' (public / societal) anchored by a distinctive solid circular dot in deep navy blue. The dot represents the public circle, a shared town square, and independent civic solidarity across all regions of Ukraine.",
       sources: [
@@ -2399,7 +2399,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 80% Mexican domestic production quota under the Federal Telecommunications and Broadcasting Law (LFTR), pioneering original Mexican educational fiction, indigenous cultural documentaries, and scientific broadcasts",
       staffHeadcount: "840 permanent civil and technical employees (Informe de Labores IPN / Canal Once 2024)",
-      logo: "/broadcaster-logos/mx/once.png",
+      logo: "broadcaster-logos/mx/once.png",
       logoExplainer:
         "Redesigned in 2025, the Canal Once emblem displays the iconic number '11' formed by two dynamic vertical parallel rectangles with rounded terminal corners rendered in emerald jade green. The dual bars represent open communication channels, educational elevation, and pioneering institutional public broadcasting across Mexico.",
       sources: [
@@ -2432,7 +2432,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 70% Cuban domestic content quota across general channels under national cultural guidelines, prioritizing Cuban cinema (ICAIC), national soap operas, live cultural concerts, and educational curricula",
       staffHeadcount: "4,500 employees nationwide across national studios and 15 provincial telecenters (ICS Balance Anual 2024)",
-      logo: "/broadcaster-logos/cu/cubavision.png",
+      logo: "broadcaster-logos/cu/cubavision.png",
       logoExplainer:
         "The Cubavisión emblem features a stylized, vibrant tricolor geometric star inspired by the lone star of the Cuban national flag, enclosed in flowing arcs of national red, royal blue, and white. The emblem conveys patriotic solidarity, artistic heritage, and nationwide terrestrial broadcasting from Havana to all provinces.",
       sources: [
@@ -2464,7 +2464,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "At least 60% Costa Rican cultural and educational content quota under the Organic Law of SINART, promoting local folk music, environmental preservation, and regional municipal affairs",
       staffHeadcount: "185 permanent employees (SINART Informe de Gestión 2024)",
-      logo: "/broadcaster-logos/cr/trece.png",
+      logo: "broadcaster-logos/cr/trece.png",
       logoExplainer:
         "The Canal Trece visual mark features the bold numeral '13' rendered in energetic turquoise and cerulean blue with a stylized forward-sweeping circular flourish. The contemporary aesthetic symbolizes democratic dialogue, Costa Rican biodiversity, and community connection across the Central Valley and coastal provinces.",
       sources: [
@@ -2496,7 +2496,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 55% Jamaican domestic production quota under Broadcasting Commission guidelines, investing extensively in local investigative journalism, School's Challenge Quiz, and reggae/dancehall cultural festivals",
       staffHeadcount: "480 permanent staff (RJRGLEANER Annual Report 2024)",
-      logo: "/broadcaster-logos/jm/tvj.png",
+      logo: "broadcaster-logos/jm/tvj.png",
       logoExplainer:
         "The Television Jamaica emblem features three bold sans-serif letterforms 'TVJ' highlighted with vivid national yellow and green accents evoking the Jamaican national flag. The energetic, approachable typographic style conveys community pride, Caribbean warmth, and authoritative broadcast journalism.",
       sources: [
@@ -2529,7 +2529,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 50% Trinidad and Tobago domestic programming quota, showcasing Calypso and Soca music, Carnival arts, Parliamentary debates, and local drama",
       staffHeadcount: "165 permanent employees (TTT Limited Annual Administrative Report 2024)",
-      logo: "/broadcaster-logos/tt/ttt.png",
+      logo: "broadcaster-logos/tt/ttt.png",
       logoExplainer:
         "Reintroduced in 2018 upon the relaunch of the historic broadcaster, the TTT logo features three bold, connected sans-serif capital letters 'TTT' in national jet black and brilliant scarlet red. The intertwined bars symbolize the twin-island republic's broadcast waves, cultural cohesion, and Caribbean storytelling heritage.",
       sources: [
@@ -2561,7 +2561,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 90% Indian domestic and regional language programming quota across 28 regional Kendra stations broadcasting in Hindi, Tamil, Telugu, Bengali, Marathi, and other scheduled languages",
       staffHeadcount: "23,500 employees across Doordarshan and All India Radio (Prasar Bharati Annual Report 2024)",
-      logo: "/broadcaster-logos/in/dd.svg",
+      logo: "broadcaster-logos/in/dd.svg",
       logoExplainer:
         "Created in 1976 by National Institute of Design (NID) alumnus Devashis Bhattacharyya, the iconic Doordarshan visual mark (popularly known as the 'DD Eye') features two curving parabolic lenses revolving around an inner core in radiant saffron orange and deep navy blue. The symbol embodies vigilance, truth ('Satyam Shivam Sundaram'), and universal broadcasting across the subcontinent.",
       sources: [
@@ -2594,7 +2594,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 75% Bangladeshi domestic production quota, supporting Bengali literature, rural agricultural development programs (Mati O Manush), and folk music heritage",
       staffHeadcount: "1,820 civil service and production personnel (BTV Annual Administrative Report 2024)",
-      logo: "/broadcaster-logos/bd/btv.png",
+      logo: "broadcaster-logos/bd/btv.png",
       logoExplainer:
         "The Bangladesh Television emblem presents the bold italic letters 'BTV' enclosed in an orbital circular compass with directional arrows rendered in golden sunshine yellow. The circular orbit symbolizes continuous transmission, educational guidance, and nationwide broadcast coverage across all administrative divisions.",
       sources: [
@@ -2626,7 +2626,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 75% Turkish domestic audiovisual production quota under Law No. 2954 on the Turkish Radio and Television Corporation, funding major historical epic series, regional studios, and global multilingual broadcasting via TRT World",
       staffHeadcount: "8,400 permanent employees across domestic centers and overseas bureaus (TRT İnsan Kaynakları Raporu 2024)",
-      logo: "/broadcaster-logos/tr/trt.png",
+      logo: "broadcaster-logos/tr/trt.png",
       logoExplainer:
         "Refreshed in 2018, the TRT logo features bold, sculpted capital letterforms 'TRT' in vibrant Turkish national crimson red. The clean, modern typography communicates confidence, institutional prestige, and digital expansion across the 'tabii' streaming ecosystem and global broadcasting services.",
       sources: [
@@ -2659,7 +2659,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 65% Israeli original domestic production quota, commissioning critically acclaimed drama series, investigative documentaries, and regional programming in Hebrew and Arabic",
       staffHeadcount: "1,050 full-time equivalent employees (IPBC Duah Kaspit 2024)",
-      logo: "/broadcaster-logos/il/kan.png",
+      logo: "broadcaster-logos/il/kan.png",
       logoExplainer:
         "The Kan logo features the Hebrew and Latin word 'KAN' (meaning 'Here') set squarely inside a vivid sapphire-blue vertical rhombus diamond. The diamond symbol represents a focal compass point, independent public space, and digital agility across television, radio (Kol Yisrael), and digital podcasts.",
       sources: [
@@ -2691,7 +2691,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 70% Kazakh-language and domestic content quota under the Law of the Republic of Kazakhstan 'On Mass Media', fostering national cultural drama, documentary cinema, and regional coverage across all 17 regions",
       staffHeadcount: "1,180 employees across national studios in Astana and Almaty (Khabar Agency Korporativtik esebi 2024)",
-      logo: "/broadcaster-logos/kz/khabar.png",
+      logo: "broadcaster-logos/kz/khabar.png",
       logoExplainer:
         "The distinctive Khabar emblem presents the stylized Cyrillic wordmark 'ХАБАР' flanked by sweeping aerodynamic horizontal bands in steppe golden yellow. The dynamic winged flight motif evokes the golden eagle of Kazakhstan's national flag, soaring ambition, and nationwide broadcast coverage across the Eurasian steppe.",
       sources: [
@@ -2723,7 +2723,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 55% to 80% South African domestic content quotas across channels under ICASA broadcasting regulations, providing daily news and programming in all 11 official languages plus sign language",
       staffHeadcount: "3,150 permanent employees (SABC Integrated Report 2024)",
-      logo: "/broadcaster-logos/za/sabc.png",
+      logo: "broadcaster-logos/za/sabc.png",
       logoExplainer:
         "The SABC emblem features an abstract broadcast transmitter radiating ascending arcs in the vibrant colors of South Africa's post-apartheid national flag: red, blue, green, and gold. The expanding waveform symbolizes inclusivity, democratic empowerment, and multilingual communication uniting all South Africans.",
       sources: [
@@ -2756,7 +2756,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 60% Moroccan domestic production quota under the specifications of the High Authority for Audiovisual Communication (HACA), delivering programs in Moroccan Arabic (Darija), Amazigh, and French",
       staffHeadcount: "870 permanent employees (SOREAD 2M Rapport de Gestion 2024)",
-      logo: "/broadcaster-logos/ma/2m.png",
+      logo: "broadcaster-logos/ma/2m.png",
       logoExplainer:
         "The iconic 2M visual identity features an eight-pointed geometric star composed of interlocking parallelogram facets, drawing directly from classical Moroccan zellij mosaic tilework and Islamic decorative geometry. The octagonal star symbolizes Moroccan cultural heritage, technological precision, and open regional dialogue.",
       sources: [
@@ -2789,7 +2789,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 70% Angolan domestic content quota under the Press Law and Public Media Statute, featuring national telenovelas, local music festivals, and broadcasts in national languages (Umbundu, Kimbundu, Kikongo, Chokwe)",
       staffHeadcount: "1,450 permanent employees nationwide across Luanda and 18 provincial production centers (TPA Relatório e Contas 2024)",
-      logo: "/broadcaster-logos/ao/tpa.png",
+      logo: "broadcaster-logos/ao/tpa.png",
       logoExplainer:
         "Unveiled in 2022, the modernized TPA logo presents the bold uppercase letters 'TPA' in dynamic, interconnected flowing strokes rendered in bright socialist crimson red. The uninterrupted ribbon contours symbolize broadcast signal flow, national integration across Angola's 18 provinces, and continuous digital modernization.",
       sources: [
@@ -2821,7 +2821,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 60% Cameroonian domestic production quota, fulfilling statutory bilingual broadcasting obligations with daily parity between French and English across all ten regions",
       staffHeadcount: "1,850 employees across national headquarters and 10 regional radio/TV stations (CRTV Rapport d'Activité 2024)",
-      logo: "/broadcaster-logos/cm/crtv.png",
+      logo: "broadcaster-logos/cm/crtv.png",
       logoExplainer:
         "The CRTV wordmark features the lowercase letters 'crtv' with a stylized numeral '1' integrated into the vertical stem of the letter 'r' in national red, flanked by the bold letterforms in oceanic cobalt blue. The typographic lockup represents Cameroon's bilingual unity, institutional authority, and public broadcast leadership.",
       sources: [
@@ -2853,7 +2853,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 65% Cape Verdean domestic content quota under the Public Service Concession Contract, celebrating Morna music, Creole language literature, and regional island coverage across all nine inhabited islands",
       staffHeadcount: "210 permanent employees (RTC Relatório Anual 2024)",
-      logo: "/broadcaster-logos/cv/tcv.png",
+      logo: "broadcaster-logos/cv/tcv.png",
       logoExplainer:
         "The TCV emblem features the bold white letterforms 'TCV' set inside a solid hexagonal prism in deep Atlantic blue. The hexagonal geometric shield evokes the volcanic basalt landscapes of the archipelago, maritime resilience, and authoritative public broadcast protection across the islands.",
       sources: [
@@ -2885,7 +2885,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "100% Egyptian/pan-Arab content on primary services; English-language news service reaches diaspora audiences and regional broadcasters",
       staffHeadcount: "520+ journalists and production staff (Egypt State Media Authority consolidated 2024)",
-      logo: "/broadcaster-logos/eg/nile-tv.jpg",
+      logo: "broadcaster-logos/eg/nile-tv.jpg",
       logoExplainer:
         "The Nile TV logo features a stylised crescent moon and star in vibrant orange/amber, paired with the channel's name in modern sans-serif typography. The crescent and star evoke Egypt's national identity and Islamic heritage (present in the Egyptian flag), while the warm amber tones convey authority, heritage, and the Nile's golden sunlit waters. The design balances contemporary broadcast aesthetics with historical Egyptian symbolism.",
       sources: [
@@ -2894,34 +2894,6 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
         "https://www.ana.eg/",
       ],
       licenceNote: "Nile Television public broadcaster logo (Wikimedia Commons PD / freely distributed by Egypt State Media Authority for educational reference).",
-    },
-    {
-      id: "eg-nma",
-      countryCode: "EG",
-      name: "NMA / ERTU",
-      officialName: "National Media Authority (الهيئة الوطنية للإعلام - former ERTU / Al Oula & Nile TV)",
-      founded: 1960,
-      primaryFunding: "State budget appropriations from the Ministry of Finance (موازنة الدولة - وزارة المالية under Law No. 137 of 2023), Treasury service fees, and commercial advertising",
-      headquarters: "Maspero Radio & Television Building, Corniche El Nil, Boulaq, Cairo",
-      annualPublicFunding: {
-        total: "EGP 13,200 million state budget operating and wage appropriation (Ministry of Finance & Law No. 137 of 2023 on NMA Budget FY 2023/24; approx. US$275M)",
-        perCapita: "EGP 125.70 / citizen / year (approx. US$2.62 / year)",
-      },
-      dailyMarketShare: "22.5% combined television audience share across Al Oula, Al Thaniya, and Nile Television Network (Ipsos MENA & Supreme Council for Media Regulation 2024; Maspero is the historical anchor of Arab broadcasting)",
-      brandTrustScore: {
-        score: "58%",
-        source: "Supreme Council for Media Regulation (SCMR) & Cairo University Media Survey 2024",
-      },
-      localContentQuota: "Minimum 80% Egyptian domestic cultural and informational content quota, providing universal service across 8 national TV channels and iconic radio networks including Voice of the Arabs and Holy Quran Radio",
-      staffHeadcount: "32,000 employees across Maspero central studios, Nile City complexes, and governorate broadcast centers (NMA Administrative Review 2024)",
-      logo: "/broadcaster-logos/eg/nma.png",
-      logoExplainer:
-        "The Egyptian Television insignia displays the historic circular golden disc of Ra intersected by an ascending broadcast antenna tower framed in vibrant emerald green and gold. The golden sun disc evokes millennia of Nilotic civilization, enlightenment, and Egypt's foundational role as the cultural pioneer of Arab and African broadcasting.",
-      sources: [
-        "https://maspero.eg/",
-        "https://www.scmr.gov.eg/",
-      ],
-      licenceNote: "National Media Authority constitutional public authority trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
 
@@ -2946,7 +2918,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 70% Ghanaian and African domestic programming quota mandated by the National Media Commission, prioritizing Ghanaian indigenous languages (Akan, Ga, Ewe, Dagbani, Nzema, and Hausa) across radio and television networks",
       staffHeadcount: "1,420 employees across national headquarters in Accra and 10 regional broadcasting houses (GBC Annual Personnel Review 2024)",
-      logo: "/broadcaster-logos/gh/gbc.png",
+      logo: "broadcaster-logos/gh/gbc.png",
       logoExplainer:
         "The GBC emblem features the bold, elegant acronym 'GBC' in deep oceanic blue, underscored by a golden sunburst arc and green accent swoosh reflecting the Pan-African and Ghanaian national colors (red, gold, green). The curved orbital crest symbolizes universal national broadcast reach and public service enlightenment.",
       sources: [
@@ -2978,7 +2950,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 60% Kenyan local content quota enforced by the Communications Authority of Kenya Programming Code, featuring programming in English, Swahili (Radio Taifa), and 10 regional vernacular language services",
       staffHeadcount: "1,180 employees across Nairobi central studios and regional transmission centers (KBC Corporate Profile 2024)",
-      logo: "/broadcaster-logos/ke/kbc.png",
+      logo: "broadcaster-logos/ke/kbc.png",
       logoExplainer:
         "The KBC emblem presents the bold letterforms 'kbc' in vibrant red against a crisp white backdrop, framed within an open circular orbit in bright sky blue with radiating soundwaves. The circular dynamic sweep reflects universal nationwide transmission, national cohesion, and public information stewardship across Kenya.",
       sources: [
@@ -3010,7 +2982,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 70% Nigerian domestic programming quota under the Nigeria Broadcasting Code (6th Edition), broadcasting extensive programming in Hausa, Yoruba, Igbo, and Nigerian Pidgin across all geopolitical zones",
       staffHeadcount: "6,200 employees across Abuja headquarters, 10 zonal network centers, and over 100 federal community/state television stations (NTA Human Resources Directory 2024)",
-      logo: "/broadcaster-logos/ng/nta.png",
+      logo: "broadcaster-logos/ng/nta.png",
       logoExplainer:
         "The NTA insignia displays the lowercase acronym 'nta' rendered in stylized brush strokes of vibrant emerald green and sun yellow, topped by an arched parabolic antenna swoosh. The emerald green reflects the Nigerian agricultural heritage and national flag, while the parabolic broadcast signal symbolizes continental reach and unity across Nigeria's diverse cultures.",
       sources: [
@@ -3042,7 +3014,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 60% Senegalese domestic production quota, mandating daily broadcasts in Wolof, Pulaar, Serer, Mandinka, Diola, and Soninke alongside official French",
       staffHeadcount: "1,050 employees across the central Maison de la RTS in Dakar and regional production centers in Saint-Louis, Thiès, Kaolack, and Ziguinchor (RTS Direction Générale 2024)",
-      logo: "/broadcaster-logos/sn/rts.png",
+      logo: "broadcaster-logos/sn/rts.png",
       logoExplainer:
         "The RTS wordmark showcases the bold letterforms 'RTS' in emerald green, warm amber yellow, and crimson red—the Pan-African colors of the Senegalese national flag. The letter 'T' is dynamically stylized as a broadcast transmission tower with concentric curved signal waves, representing democratic communication and nationwide solidarity.",
       sources: [
@@ -3074,7 +3046,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 65% Namibian and African local content quota regulated by CRAN, broadcasting in English, Oshiwambo, Otjiherero, Damara/Nama, Rukwangali, Silozi, Setswana, and German across 11 national radio stations",
       staffHeadcount: "460 permanent employees (NBC Annual Audit Report & Ministry of Public Enterprises 2024)",
-      logo: "/broadcaster-logos/na/nbc.png",
+      logo: "broadcaster-logos/na/nbc.png",
       logoExplainer:
         "The NBC corporate emblem presents a stylized lowercase wordmark 'nbc' preceded by an orbital icon composed of dynamic blue and gold arc curves forming a stylized eye and satellite dish. The blue and gold tones represent Namibia's clear Atlantic skies, mineral wealth, and visionary public broadcasting excellence across southern Africa.",
       sources: [
@@ -3106,7 +3078,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 55% Fijian domestic content quota, broadcasting daily programs in English, iTaukei (Radio Fiji One / Bula FM), and Fiji Hindi (Radio Fiji Two / Mirchi FM)",
       staffHeadcount: "220 permanent employees (FBC Annual Corporate Review 2024)",
-      logo: "/broadcaster-logos/fj/fbc.jpg",
+      logo: "broadcaster-logos/fj/fbc.jpg",
       logoExplainer:
         "The FBC emblem features the bold, italicized acronym 'FBC' rendered in tropical crimson red with stylized forward-slanting typography, underscored by the descriptor 'FIJIAN BROADCASTING CORPORATION'. The dynamic italic slant represents forward-looking communication, disaster alert readiness, and universal multi-ethnic broadcasting across the Fijian archipelago.",
       sources: [
@@ -3138,7 +3110,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 65% domestic production quota celebrating Melanesian heritage, broadcasting across the country in English, Tok Pisin, and Hiri Motu alongside 20 provincial stations",
       staffHeadcount: "480 employees across national headquarters in Port Moresby and 20 provincial broadcast bureaus (NBC Annual Report 2024)",
-      logo: "/broadcaster-logos/pg/nbc.png",
+      logo: "broadcaster-logos/pg/nbc.png",
       logoExplainer:
         "The NBC PNG logo features the bold modern wordmark 'NBC' in rich crimson and golden yellow inspired by the Papua New Guinea national flag, accompanied by the national motto 'Connect, Inform, Inspire'. The typography embodies the historic legacy of the traditional Kundu drum, symbolizing communal gathering, storytelling, and national solidarity across the Highlands and coastal provinces.",
       sources: [
@@ -3170,7 +3142,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 70% Ni-Vanuatu local cultural and civic content quota, broadcasting trilingually in Bislama, English, and French across TBV, Radio Vanuatu, and Paradise FM",
       staffHeadcount: "75 permanent employees (VBTC Corporate Directorate 2024)",
-      logo: "/broadcaster-logos/vu/vbtc.png",
+      logo: "broadcaster-logos/vu/vbtc.png",
       logoExplainer:
         "The VBTC insignia presents the stylized acronym 'VBTC' with a central curved wave and transmission beam in rich tropical forest green and golden yellow, echoing the colors of the Vanuatu national flag and the traditional boar's tusk motif. The emblem symbolizes cultural preservation, national sovereignty, and universal island coverage across Vanuatu's 83 islands.",
       sources: [
@@ -3202,7 +3174,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 75% domestic Solomon Islands programming quota, providing critical public announcements, health advisories, custom stories, and news in Solomon Islands Pijin and English",
       staffHeadcount: "62 employees across Honiara headquarters and provincial relay stations in Gizo, Auki, and Lata (SIBC Administrative Report 2024)",
-      logo: "/broadcaster-logos/sb/sibc.jpg",
+      logo: "broadcaster-logos/sb/sibc.jpg",
       logoExplainer:
         "The SIBC emblem showcases a stylized oceanic conch shell horn emitting concentric radio transmission arcs in radiant sky blue, gold, and tropical green. The blowing of the traditional conch shell represents the indigenous Melanesian method of summoning the community for vital news, embodying SIBC's mission as the Voice of the Nation.",
       sources: [
@@ -3234,7 +3206,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 80% Tongan local content quota, prioritizing Tongan language cultural narratives, royal ceremonies, Sunday choral devotions, and daily disaster preparedness bulletins",
       staffHeadcount: "45 permanent employees (TBC Annual Financial Report 2024)",
-      logo: "/broadcaster-logos/to/tbc.jpg",
+      logo: "broadcaster-logos/to/tbc.jpg",
       logoExplainer:
         "The TBC emblem displays the bold serif letterforms 'TBC' in royal navy blue, flanked by a stylized golden microwave antenna transmitter tower and the motto 'The Call of the Friendly Islands'. The royal blue and gold symbolize the Tongan monarchy, peace, Christian faith, and the universal reach of the Commission across the Haʻapai, Vavaʻu, and Niua island groups.",
       sources: [
@@ -3266,7 +3238,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 55% Slovenian domestic and European audiovisual works quota mandated by the Mass Media Act (ZMed), featuring dedicated minority channels TV Koper-Capodistria (Italian) and TV Maribor / MMR (Hungarian)",
       staffHeadcount: "2,120 permanent employees including symphony orchestra, choir, and regional production centers (Letno poročilo 2024)",
-      logo: "/broadcaster-logos/si/rtvslo.png",
+      logo: "broadcaster-logos/si/rtvslo.png",
       logoExplainer:
         "The RTV Slovenija corporate emblem presents the lowercase wordmark 'rtv' rendered in authoritative oceanic navy blue, conjoined with the uppercase letters 'SLO' in vibrant royal blue. The typography emphasizes national identity, universal public access, and democratic cultural integration across Slovenia's central and linguistic border regions.",
       sources: [
@@ -3298,7 +3270,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 50% Cypriot and European programming quota, fulfilling constitutional public service mandates to broadcast in Greek, Turkish, and English across radio and television",
       staffHeadcount: "350 permanent staff (CyBC Annual Performance Report 2024)",
-      logo: "/broadcaster-logos/cy/cybc.png",
+      logo: "broadcaster-logos/cy/cybc.png",
       logoExplainer:
         "The CyBC emblem showcases the Greek acronym 'ΡΙΚ' (RIK) in stylized geometric typography in deep Mediterranean azure and crimson red, flanked by the English descriptor 'Cyprus Broadcasting Corporation'. The design reflects Cyprus's European and Mediterranean heritage, constitutional public service commitment, and independent broadcast integrity.",
       sources: [
@@ -3330,7 +3302,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 50% Maltese domestic production quota under Broadcasting Authority directives, promoting Maltese language programming, parliamentary debates, and cultural coverage",
       staffHeadcount: "155 permanent employees (PBS Corporate Annual Review 2024)",
-      logo: "/broadcaster-logos/mt/pbs.png",
+      logo: "broadcaster-logos/mt/pbs.png",
       logoExplainer:
         "The PBS Malta insignia presents the bold acronym 'PBS' in contemporary royal navy blue and vibrant red, accompanied by the national eight-pointed Maltese Cross motif. The emblem symbolizes centuries of Maltese civic identity, Mediterranean maritime vigilance, and public service information stewardship.",
       sources: [
@@ -3362,7 +3334,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "100% ad-free public service programming focused on Luxembourgish culture, classical/contemporary music, social analysis, and investigative journalism in the Luxembourgish language",
       staffHeadcount: "58 permanent journalists and broadcast staff (Rapport Annuel ERSL 2024)",
-      logo: "/broadcaster-logos/lu/radio1007.png",
+      logo: "broadcaster-logos/lu/radio1007.png",
       logoExplainer:
         "The Radio 100,7 emblem showcases the bold number '100,7' in contemporary typographic letterforms with a warm crimson accent dot. The minimalist, high-contrast black-and-white treatment embodies editorial independence, cultural depth, and commercial-free public radio integrity across the Grand Duchy.",
       sources: [
@@ -3394,7 +3366,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 50% domestic programming quota representing all three constituent peoples (Bosniaks, Croats, and Serbs) and two official alphabets (Latin and Cyrillic)",
       staffHeadcount: "790 employees across RTV Dom Sarajevo and regional correspondent centers (BHRT Izvještaj o radu 2024)",
-      logo: "/broadcaster-logos/ba/bhrt.png",
+      logo: "broadcaster-logos/ba/bhrt.png",
       logoExplainer:
         "The BHRT emblem features the bold, italicized acronym 'BHRT' in deep cobalt blue, accompanied by a dynamic sweeping arc swoosh in sunny yellow echoing the colors of the national flag of Bosnia and Herzegovina. The forward-angled geometry reflects unity, institutional resilience, and universal multi-ethnic public broadcasting.",
       sources: [
@@ -3426,7 +3398,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 80% domestic Moldovan and European audiovisual content quota, broadcast in the official Romanian language alongside dedicated minority news programming in Russian, Gagauz, and Ukrainian",
       staffHeadcount: "750 permanent journalists, technical, and broadcast specialists (TRM Raport de activitate 2024)",
-      logo: "/broadcaster-logos/md/trm.png",
+      logo: "broadcaster-logos/md/trm.png",
       logoExplainer:
         "The Teleradio-Moldova emblem features the bold modernist acronym 'TRM' in deep sapphire blue and golden ochre echoing the national tricolor of Moldova, encircled by a dynamic broadcast transmission orbit. The emblem symbolizes national democratic discourse, linguistic cultural bridge-building, and public service journalism.",
       sources: [
@@ -3458,7 +3430,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 30% Belarusian language broadcast quota with mandated cultural programming on Belarus 3, operating extensive radio services across First National Channel, Radio Kultura, and Radio Stalitsa",
       staffHeadcount: "3,200 employees across Minsk central broadcast complex and six regional television/radio directorates (BTRC Personnel Register 2024)",
-      logo: "/broadcaster-logos/by/belteleradio.png",
+      logo: "broadcaster-logos/by/belteleradio.png",
       logoExplainer:
         "The Belteleradio emblem features the bold Cyrillic ligature monogram 'БТРК' in deep garnet red and slate grey, set within an open television screen aperture. The structured geometric layout represents nationwide signal coverage, institutional authority, and universal state broadcasting across all six oblasts of Belarus.",
       sources: [
@@ -3490,7 +3462,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "100% original public service programming centered on environmental conservation, marine ecology, Mediterranean lifestyle, international diplomacy, and Monegasque national news",
       staffHeadcount: "38 permanent journalists, production engineers, and executive staff (TV Monaco Direction Générale 2024)",
-      logo: "/broadcaster-logos/mc/tvmonaco.png",
+      logo: "broadcaster-logos/mc/tvmonaco.png",
       logoExplainer:
         "The TV Monaco emblem displays the sleek lowercase wordmark 'tvmonaco' in minimalist carbon black and warm terracotta red, punctuated by an open aperture circle. The design evokes Mediterranean sunlight, contemporary Monegasque sophistication, environmental consciousness, and global public service connectivity.",
       sources: [
@@ -3522,7 +3494,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 60% domestic Sammarinese and Italian programming quota, broadcasting comprehensive coverage of the Consiglio Grande e Generale, the Captains Regent, and Eurovision Song Contest",
       staffHeadcount: "75 permanent employees (San Marino RTV Relazione di Bilancio 2024)",
-      logo: "/broadcaster-logos/sm/sanmarinortv.png",
+      logo: "broadcaster-logos/sm/sanmarinortv.png",
       logoExplainer:
         "The San Marino RTV emblem presents a stylized circular sphere in azure blue and pure white, the sovereign heraldic colors of the Most Serene Republic of San Marino. The fluid curving ribbons depict universal signal dissemination, Mount Titano's historic freedom, and Italian-Sammarinese broadcasting cooperation.",
       sources: [
@@ -3554,7 +3526,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 70% domestic programming quota in the official Catalan language, preserving Pyrenean cultural heritage, parliamentary sessions of the Consell General, and winter sports coverage",
       staffHeadcount: "95 permanent journalists, technicians, and production personnel (Memòria Anual RTVA 2024)",
-      logo: "/broadcaster-logos/ad/rtva.png",
+      logo: "broadcaster-logos/ad/rtva.png",
       logoExplainer:
         "The RTVA Andorra Difusió emblem showcases the modern lowercase wordmark 'andorra difusió' in charcoal slate and vibrant orange-red, set against clean geometric lines. The red-orange accent reflects the Pyrenean sunrise and the flags of Andorra, symbolizing cultural sovereignty, linguistic pride in Catalan, and reliable public broadcasting.",
       sources: [
@@ -3564,466 +3536,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Ràdio i Televisió d'Andorra, S.A. public company trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
-
-  // Saudi Arabia
-  SA: [
-    {
-      id: "sa-sba",
-      countryCode: "SA",
-      name: "SBA",
-      officialName: "Saudi Broadcasting Authority (هيئة الإذاعة والتلفزيون - SBA / Al Saudiya)",
-      founded: 1965,
-      primaryFunding: "Direct state budget allocation from the Ministry of Finance and Ministry of Media (ميزانية الدولة - وزارة الإعلام), program sponsorship, and commercial airtime advertising",
-      headquarters: "Television Street, Al Wisham, Riyadh 11132",
-      annualPublicFunding: {
-        total: "SAR 1,850 million state budget media sector appropriation (Ministry of Finance & Ministry of Media FY 2024; approx. US$493M)",
-        perCapita: "SAR 57.50 / citizen / year (approx. US$15.30 / year)",
-      },
-      dailyMarketShare: "28.2% combined television audience share across Al Saudiya, Al Ekhbariya, SBC, and Quran TV (General Authority for Audiovisual Media GAMR & Ipsos KSA 2024; Quran TV broadcasts 24/7 global coverage of the Grand Mosque in Mecca)",
-      brandTrustScore: {
-        score: "75%",
-        source: "General Authority for Audiovisual Media (GAMR) & Arab Media Forum 2024",
-      },
-      localContentQuota: "Minimum 70% Saudi domestic production quota under Vision 2030 Quality of Life initiatives, championing Saudi national heritage, Islamic culture, and economic diversification coverage",
-      staffHeadcount: "3,800 employees across Riyadh broadcast headquarters and regional transmission directorates (SBA Annual Report 2024)",
-      logo: "/broadcaster-logos/sa/sba.png",
-      logoExplainer:
-        "The Saudi Broadcasting Authority emblem features a stylized geometric palm tree conjoined with crossed curved signal beams rendered in royal green and shimmering gold, echoing the Saudi national emblem. The radiating transmission lines symbolize spiritual guidance, national prosperity, and cutting-edge media reach across the Islamic world.",
-      sources: [
-        "https://sba.sa/",
-        "https://gcam.gov.sa/",
-      ],
-      licenceNote: "Saudi Broadcasting Authority statutory public authority trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // United Arab Emirates
-  AE: [
-    {
-      id: "ae-dmi",
-      countryCode: "AE",
-      name: "DMI",
-      officialName: "Dubai Media Incorporated (مؤسسة دبي للإعلام - DMI / Dubai TV)",
-      founded: 2003,
-      primaryFunding: "Government of Dubai budgetary subvention (حكومة دبي - دائرة المالية) and commercial advertising / content syndication across television, radio, and publishing",
-      headquarters: "Dubai Media City, Al Sufouh 2, PO Box 61111, Dubai",
-      annualPublicFunding: {
-        total: "AED 450.0 million Government of Dubai public service allocation (Department of Finance, Government of Dubai FY 2024; approx. US$122.5M)",
-        perCapita: "AED 47.40 / resident / year (approx. US$12.90 / year)",
-      },
-      dailyMarketShare: "24.5% television audience share in the UAE across Dubai TV, Sama Dubai, Dubai One, and Dubai Sports (Ipsos MENA & Telecommunications and Digital Government Regulatory Authority TDRA 2024)",
-      brandTrustScore: {
-        score: "79%",
-        source: "TDRA Media Perception Index & Arab Media Forum 2024",
-      },
-      localContentQuota: "Minimum 60% Emirati and regional Arabian programming quota, with Sama Dubai exclusively dedicated to Emirati heritage, vernacular poetry, and local civic affairs alongside English-language Dubai One",
-      staffHeadcount: "1,250 permanent employees across Dubai TV studios, Dubai Media City, and international news bureaus (DMI Human Resources Report 2024)",
-      logo: "/broadcaster-logos/ae/dmi.png",
-      logoExplainer:
-        "The DMI emblem presents a dynamic calligraphy-inspired globe rendered in dual arcs of deep azure blue and oceanic turquoise, crowned by the sleek wordmark 'Dubai Media Incorporated'. The spherical dual curve embodies Dubai's cosmopolitan crossroads, innovation, and digital media excellence connecting East and West.",
-      sources: [
-        "https://www.dmi.gov.ae/",
-        "https://tdra.gov.ae/",
-      ],
-      licenceNote: "Dubai Media Incorporated government public corporation trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Qatar
-  QA: [
-    {
-      id: "qa-qmc",
-      countryCode: "QA",
-      name: "QMC",
-      officialName: "Qatar Media Corporation (المؤسسة القطرية للإعلام - QMC / Qatar TV)",
-      founded: 1970,
-      primaryFunding: "Direct state budget appropriation from the Ministry of Finance (موازنة الدولة - وزارة المالية under Law No. 17 of 2023) under Emiri public charter oversight",
-      headquarters: "TV Roundabout, Al Markhiya, PO Box 1836, Doha",
-      annualPublicFunding: {
-        total: "QAR 580.0 million state budget public broadcasting appropriation (Ministry of Finance State Budget & QMC Corporate Directorate FY 2024; approx. US$159M)",
-        perCapita: "QAR 200.00 / citizen / year (approx. US$55.00 / year)",
-      },
-      dailyMarketShare: "26.4% domestic television audience share for Qatar TV and Al Rayyan TV (Communications Regulatory Authority CRA Qatar & Ipsos 2024; QMC is the principal national channel for state celebrations and cultural affairs)",
-      brandTrustScore: {
-        score: "77%",
-        source: "Communications Regulatory Authority (CRA) Qatar & Qatar University Social and Economic Survey 2024",
-      },
-      localContentQuota: "Minimum 70% Qatari and Gulf cultural programming quota, broadcasting documentary series on seafaring history, falconry, national development, and religious programming across television and radio",
-      staffHeadcount: "850 permanent media professionals, engineers, and journalists (QMC Performance Bulletin 2024)",
-      logo: "/broadcaster-logos/qa/qmc.png",
-      logoExplainer:
-        "The Qatar Media Corporation emblem features the stylized typography 'QMC' accompanied by elegant Arabic calligraphy in Qatar's national maroon (Pantone 222 C) and pure white. The maroon calligraphy embodies national pride, classical Arabian literacy, and the state's forward-looking cultural identity under Qatar National Vision 2030.",
-      sources: [
-        "https://www.qmc.qa/",
-        "https://www.cra.gov.qa/",
-      ],
-      licenceNote: "Qatar Media Corporation public statutory corporation trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Algeria
-  DZ: [
-    {
-      id: "dz-eptv",
-      countryCode: "DZ",
-      name: "EPTV",
-      officialName: "Établissement Public de Télévision (المؤسسة العمومية للتلفزيون - EPTV / Télévision Algérienne)",
-      founded: 1962,
-      primaryFunding: "State budget dotation (Ministère de la Communication / Loi de finances), special allocation audiovisual fee account n° 302-051 (taxes on Sonelgaz electricity/gas bills), and commercial advertising",
-      headquarters: "21 Boulevard des Martyrs, 16000 Algiers",
-      annualPublicFunding: {
-        total: "DZD 14,500 million state budget subvention & special audiovisual tax account (Loi de finances & Décret présidentiel n° 24-18 FY 2024; approx. US$108M)",
-        perCapita: "DZD 322.00 / citizen / year (approx. US$2.40 / year)",
-      },
-      dailyMarketShare: "25.4% combined television audience share across Télévision Algérienne, Canal Algérie, TV3 (El Ikhbariya), TV4 (Tamazight), and TV6 (Jeunesse) (Immar Research & Médiamétrie Maghreb 2024)",
-      brandTrustScore: {
-        score: "64%",
-        source: "Autorité Nationale Indépendante de Régulation de l'Audiovisuel (ANIRA) & Immar Research 2024",
-      },
-      localContentQuota: "Minimum 60% Algerian domestic production quota, mandating extensive broadcasts in Arabic, Tamazight (all regional variants on TV4), and French across its 8 terrestrial and satellite channels",
-      staffHeadcount: "4,200 employees across the central Maison de la Télévision in Algiers and five regional production stations in Oran, Constantine, Ouargla, Béchar, and Annaba (EPTV Rapport Social 2024)",
-      logo: "/broadcaster-logos/dz/eptv.png",
-      logoExplainer:
-        "The EPTV emblem presents the iconic national broadcast monogram with bold Arabic calligraphy of 'تلفزيون' formed into the shape of Algeria's national borders in green, crimson red, and pristine white. The design pays homage to the martyrs of the Algerian revolution and symbolizes territorial integrity, linguistic plurality, and national sovereignty.",
-      sources: [
-        "https://www.entv.dz/",
-        "https://www.anira.dz/",
-      ],
-      licenceNote: "Établissement Public de Télévision public industrial and commercial establishment trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Tunisia
-  TN: [
-    {
-      id: "tn-ett",
-      countryCode: "TN",
-      name: "Télévision Tunisienne",
-      officialName: "Établissement de la Télévision Tunisienne (مؤسسة التلفزة التونسية - ETT / Télévision Tunisienne)",
-      founded: 1966,
-      primaryFunding: "Audiovisual license fee (redevance audiovisuelle levied on STEG household electricity bills) and state budget subsidy under the Ministry of Communication / Presidency of the Government",
-      headquarters: "Boulevard de la Ligue Arabe, Notre Dame, 1002 Tunis-Belvédère",
-      annualPublicFunding: {
-        total: "TND 78.5 million public audiovisual surcharge & state operating subvention (Loi de finances n° 2023-22 & ETT Rapport de gestion FY 2024; approx. US$25.2M)",
-        perCapita: "TND 6.35 / citizen / year (approx. US$2.04 / year)",
-      },
-      dailyMarketShare: "31.2% combined domestic TV audience share across Télévision Tunisienne 1 (Al Wataniya 1) and Télévision Tunisienne 2 (Al Wataniya 2) (Sigma Conseil & Médiamétrie Maghreb 2024; Wataniya 1 leads national viewership during prime-time news and national sporting fixtures)",
-      brandTrustScore: {
-        score: "62%",
-        source: "Haute Autorité Indépendante de la Communication Audiovisuelle (HAICA) Audience Survey & Sigma Conseil 2024",
-      },
-      localContentQuota: "Minimum 65% Tunisian cultural and educational programming quota, broadcasting in Tunisian Arabic and standard Arabic with daily French-language news editions",
-      staffHeadcount: "1,150 permanent production specialists, journalists, technicians, and administrative staff (ETT Bilan Social 2024)",
-      logo: "/broadcaster-logos/tn/ett.jpg",
-      logoExplainer:
-        "The Établissement de la Télévision Tunisienne logo features a stylized, fluid geometric letter 'T' interwoven with a crescent arc in vibrant Mediterranean blue and Tunisian flag red. The dynamic curve reflects broadcast transmission waves, Arab-Mediterranean cultural crossroads, and the channel's historic moniker 'Al Wataniya' (The National).",
-      sources: [
-        "https://www.watania1.tn/",
-        "https://www.haica.tn/",
-        "http://www.finances.gov.tn/",
-      ],
-      licenceNote: "Établissement de la Télévision Tunisienne public establishment trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Jordan
-  JO: [
-    {
-      id: "jo-jrtv",
-      countryCode: "JO",
-      name: "JRTV",
-      officialName: "Jordan Radio and Television Corporation (مؤسسة الإذاعة والتلفزيون الأردنية - JRTV)",
-      founded: 1985,
-      primaryFunding: "State budget subsidy (General Budget Law), electricity bill public broadcast surcharge (JD 1 per monthly household electricity bill), and commercial advertising",
-      headquarters: "Ibrahim Al-Qattan Street, Um Uthaina, PO Box 909, Amman",
-      annualPublicFunding: {
-        total: "JOD 27.2 million state budget allocation & electricity tariff surcharge (General Budget Law No. 1 of 2024; approx. US$38.4M)",
-        perCapita: "JOD 2.37 / resident / year (approx. US$3.34 / year)",
-      },
-      dailyMarketShare: "14.6% domestic television audience share across JRTV Channel 1 (Jordan TV), Sports Channel, and Amman TV, competing alongside independent broadcaster Ro'ya TV and public-funded Al Mamlaka (Ipsos Jordan & Arab Advisors Group 2024)",
-      brandTrustScore: {
-        score: "64%",
-        source: "Jordan Media Institute (JMI) National Media Survey & Arab Barometer Jordan 2024",
-      },
-      localContentQuota: "75% Jordanian and Arab cultural, documentary, and drama programming quota, including comprehensive daily news broadcasts from all twelve governorates",
-      staffHeadcount: "1,650 journalists, directors, broadcast engineers, and support staff across the Amman television complex and regional bureaus (JRTV Human Resources Directorate 2024)",
-      logo: "/broadcaster-logos/jo/jrtv.png",
-      logoExplainer:
-        "The JRTV insignia showcases a graceful calligraphic emblem uniting the golden eagle wings and the seven-pointed star of the Hashemite Kingdom of Jordan. The central stylized television screen and radio waves symbolize national unity, royal patronage, and authentic Arab cultural journalism across the Kingdom and diaspora.",
-      sources: [
-        "https://www.jrtv.gov.jo/",
-        "https://gbd.gov.jo/",
-        "https://www.jmi.edu.jo/",
-      ],
-      licenceNote: "Jordan Radio and Television Corporation public corporate trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Lebanon
-  LB: [
-    {
-      id: "lb-teleliban",
-      countryCode: "LB",
-      name: "Télé Liban",
-      officialName: "Télé Liban (تلفزيون لبنان - TL / Télé Liban S.A.L.)",
-      founded: 1959,
-      primaryFunding: "Direct public subsidy from the Ministry of Information (وزارة الإعلام) under state-owned enterprise governance, supplemented by nominal advertising",
-      headquarters: "Tallet El Khayat, PO Box 11-4870, Beirut",
-      annualPublicFunding: {
-        total: "LBP 72.0 billion operating state subsidy envelope (Ministry of Information Public Expenditure Budget & Lebanese General Budget Law 2024; approx. US$4.8M at unified platform exchange rates)",
-        perCapita: "LBP 13,300 / citizen / year (approx. US$0.89 / year)",
-      },
-      dailyMarketShare: "5.4% domestic television audience share (Stat-IPSOS & Arab Advisors Group Lebanon 2024; maintaining a dedicated niche for public interest debates, archival heritage, and non-partisan national addresses in a competitive commercial market with LBCI and MTV)",
-      brandTrustScore: {
-        score: "58%",
-        source: "Samir Kassir Foundation Media Monitor & Maharat Foundation 2024 (recognized for non-sectarian editorial balance)",
-      },
-      localContentQuota: "70% Lebanese domestic production quota, featuring educational programming, classic Lebanese television archives, and trilingual daily news broadcasts (Arabic, French, and English)",
-      staffHeadcount: "190 civil service journalists, camera operators, archive archivists, and technical engineers (Ministry of Information Personnel Audit 2024)",
-      logo: "/broadcaster-logos/lb/teleliban.png",
-      logoExplainer:
-        "The iconic Télé Liban emblem displays the green Cedar of Lebanon (Cedrus libani)—the sacred national tree and centerpiece of the Lebanese flag—framed within an artistic, open television screen polygon with modern Arabic typography. It symbolizes evergreen national resilience, cultural sovereignty, and Lebanon's historic role as the media pioneer of the Arab world.",
-      sources: [
-        "https://www.teleliban.com.lb/",
-        "https://www.ministryinfo.gov.lb/",
-        "https://www.skeyesmedia.org/",
-      ],
-      licenceNote: "Télé Liban S.A.L. state-owned enterprise trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Iraq
-  IQ: [
-    {
-      id: "iq-imn",
-      countryCode: "IQ",
-      name: "IMN",
-      officialName: "Iraqi Media Network (شبكة الإعلام العراقي - IMN / Al Iraqiya)",
-      founded: 2003,
-      primaryFunding: "Federal public budget allocation voted by the Council of Representatives under the Iraqi Media Network Law (Law No. 26 of 2015)",
-      headquarters: "Al-Salhiya, Al-Karkh District, Baghdad",
-      annualPublicFunding: {
-        total: "IQD 148.0 billion federal public budget appropriation (Federal General Budget Law of the Republic of Iraq 2023–2025; approx. US$113.0M)",
-        perCapita: "IQD 3,360 / citizen / year (approx. US$2.56 / year)",
-      },
-      dailyMarketShare: "16.8% domestic television viewership across Al Iraqiya News, Al Iraqiya General, Al Iraqiya Sports, Al Iraqiya Educational, and Al Iraqiya Turkmen/Kurdish (Communications and Media Commission CMC Iraq & Gallup Iraq 2024)",
-      brandTrustScore: {
-        score: "54%",
-        source: "Communications and Media Commission (CMC) Iraq & Independent Institute for Civil Society Studies 2024",
-      },
-      localContentQuota: "80% Iraqi local programming quota, mandated by statutory charter to reflect Iraq's pluralistic cultural, religious, and linguistic heritage with broadcasts in Arabic, Kurdish, Turkmen, and Syriac",
-      staffHeadcount: "3,250 media professionals, field correspondents, technical crew, and musicians of the National Iraqi Symphony Orchestra affiliate (IMN Annual Administrative Bulletin 2024)",
-      logo: "/broadcaster-logos/iq/imn.jpg",
-      logoExplainer:
-        "The Iraqi Media Network logo displays the bold blue and golden calligraphic emblem featuring the Arabic word 'العراقية' (Al Iraqiya) stylized as an unfolding parchment with broadcast signal satellites. The design reflects Iraq's Mesopotamian legacy as the cradle of writing, modern telecommunications, and national reconciliation.",
-      sources: [
-        "https://imn.iq/",
-        "https://mof.gov.iq/",
-        "https://cmc.iq/",
-      ],
-      licenceNote: "Iraqi Media Network statutory public entity trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Kuwait
-  KW: [
-    {
-      id: "kw-ktv",
-      countryCode: "KW",
-      name: "KTV",
-      officialName: "Kuwait Television (تلفزيون دولة الكويت - KTV / Ministry of Information)",
-      founded: 1961,
-      primaryFunding: "100% direct public funding appropriation from the Ministry of Information within the State of Kuwait general budget",
-      headquarters: "Ministry of Information Complex, Al Soor Street, Al Murqab, Kuwait City",
-      annualPublicFunding: {
-        total: "KWD 44.5 million dedicated television and broadcasting state expenditure (Ministry of Finance State Budget FY 2024/2025; approx. US$145.2M)",
-        perCapita: "KWD 9.27 / resident / year (approx. US$30.25 / year)",
-      },
-      dailyMarketShare: "22.5% domestic television market share across KTV 1, KTV 2 (English), KTV Sport, KTV Al-Qur'an, and KTV Plus (Ministry of Information Audience Research & Ipsos Kuwait 2024)",
-      brandTrustScore: {
-        score: "73%",
-        source: "Kuwait Journalists Association (KJA) & Gulf Media Observatory 2024",
-      },
-      localContentQuota: "85% domestic Gulf production quota, showcasing pioneering Kuwaiti television dramas, theater recordings, Bedouin poetry, parliamentary live coverage, and Islamic values",
-      staffHeadcount: "2,400 specialized television directors, news anchors, broadcast engineers, and media civil servants (Ministry of Information Civil Service Registry 2024)",
-      logo: "/broadcaster-logos/kw/ktv.png",
-      logoExplainer:
-        "The Kuwait Television emblem is built around the iconic falcon (the national bird of Kuwait) with wings shaped like transmission waves, enveloping a classic television screen silhouette in Kuwait's pan-Arab flag colors: emerald green, pure white, deep red, and midnight black. It embodies Gulf cultural leadership, prestige, and national sovereignty.",
-      sources: [
-        "https://media.gov.kw/",
-        "https://mof.gov.kw/",
-      ],
-      licenceNote: "Kuwait Television / Ministry of Information public state trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Pakistan
-  PK: [
-    {
-      id: "pk-ptv",
-      countryCode: "PK",
-      name: "PTV",
-      officialName: "Pakistan Television Corporation (پاکستان ٹیلی وژن کارپوریشن - PTV)",
-      founded: 1964,
-      primaryFunding: "TV license fee surcharge levied on domestic and commercial electricity bills (Rs. 100/month statutory utility charge under the Telegraph Act), federal grants, and commercial advertising",
-      headquarters: "PTV Headquarters Complex, Constitution Avenue, F-5/1, Islamabad",
-      annualPublicFunding: {
-        total: "PKR 11.5 billion public broadcast surcharge revenue & federal grant-in-aid (Federal Ministry of Information & Broadcasting / Ministry of Finance FY 2023–24; approx. US$41.5M)",
-        perCapita: "PKR 47.70 / citizen / year (approx. US$0.17 / year)",
-      },
-      dailyMarketShare: "24.2% national terrestrial and multi-channel audience reach across PTV Home, PTV News, PTV Sports, PTV Global, PTV World, and regional channels (Medialogic Pakistan & Gallup Pakistan 2024; retains dominant rural terrestrial reach)",
-      brandTrustScore: {
-        score: "57%",
-        source: "Gallup Pakistan Public Opinion Survey & Pakistan Press Foundation 2024",
-      },
-      localContentQuota: "80% Pakistani domestic production quota under Pakistan Electronic Media Regulatory Authority (PEMRA) guidelines, broadcasting in Urdu, English, Punjabi, Sindhi, Pashto, Balochi, and Shina",
-      staffHeadcount: "3,800 permanent broadcasters, cameramen, technical engineers, and dramatists (PTV Administrative Report 2024)",
-      logo: "/broadcaster-logos/pk/ptv.png",
-      logoExplainer:
-        "The PTV logo, created in 1964 and refined over decades, features a stylized geometric green and gold camera aperture forming a dynamic circular vortex. It symbolizes electronic television vision, Islamic heritage through Pakistan's national green, and the dissemination of light and knowledge to every corner of the country.",
-      sources: [
-        "https://www.ptv.com.pk/",
-        "https://moib.gov.pk/",
-        "https://pemra.gov.pk/",
-      ],
-      licenceNote: "Pakistan Television Corporation statutory state-owned corporation trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Sri Lanka
-  LK: [
-    {
-      id: "lk-rupavahini",
-      countryCode: "LK",
-      name: "Rupavahini",
-      officialName: "Sri Lanka Rupavahini Corporation (ශ්‍රී ලංකා රූපවාහිනී සංස්ථාව / இலங்கை ரூபவாகினி கூட்டுத்தாபனம் - SLRC)",
-      founded: 1982,
-      primaryFunding: "Parliamentary treasury appropriations via the Ministry of Mass Media, supplemented by commercial advertising and sponsored educational programming",
-      headquarters: "Independence Square, Colombo 07",
-      annualPublicFunding: {
-        total: "LKR 1.85 billion state budget subvention & treasury allocations (Ministry of Finance Budget Estimates & SLRC Annual Report 2023–24; approx. US$6.2M)",
-        perCapita: "LKR 84.10 / citizen / year (approx. US$0.28 / year)",
-      },
-      dailyMarketShare: "18.5% national television audience share across Rupavahini, Channel Eye, and Nethra TV (Kantar LMRB Sri Lanka Media Index 2024)",
-      brandTrustScore: {
-        score: "61%",
-        source: "Verité Research Media Monitoring & Sri Lanka Press Institute 2024",
-      },
-      localContentQuota: "75% domestic cultural and educational programming quota, broadcasting in Sinhala, Tamil, and English with dedicated educational telecasts for national school curricula",
-      staffHeadcount: "850 permanent media personnel, producers, and engineering specialists (SLRC Cadre Review 2024)",
-      logo: "/broadcaster-logos/lk/rupavahini.png",
-      logoExplainer:
-        "The Sri Lanka Rupavahini Corporation insignia is inspired by the mythical Sinhala bird 'Mayura' (peacock) and Buddhist swan motifs, rendered in deep royal maroon and gold. Its stylized feathered eye represents optical vision and television enlightenment, evoking traditional Sri Lankan mural art and cultural pride.",
-      sources: [
-        "https://www.rupavahini.lk/",
-        "https://www.treasury.gov.lk/",
-        "https://massmedia.gov.lk/",
-      ],
-      licenceNote: "Sri Lanka Rupavahini Corporation statutory corporate trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Uzbekistan
-  UZ: [
-    {
-      id: "uz-mtrk",
-      countryCode: "UZ",
-      name: "MTRK",
-      officialName: "National Television and Radio Company of Uzbekistan (Oʻzbekiston Milliy teleradiokompaniyasi - MTRK)",
-      founded: 1956,
-      primaryFunding: "Direct state budget appropriation from the Ministry of Economy and Finance of the Republic of Uzbekistan",
-      headquarters: "69 Alisher Navoiy Avenue, Shaykhontohur District, Tashkent",
-      annualPublicFunding: {
-        total: "UZS 560.0 billion state budget allocation (State Budget Law of the Republic of Uzbekistan & MTRK Financial Directorate FY 2024; approx. US$44.2M)",
-        perCapita: "UZS 15,200 / citizen / year (approx. US$1.20 / year)",
-      },
-      dailyMarketShare: "38.2% combined domestic television audience share across Oʻzbekiston, Oʻzbekiston 24, Yoshlar, Toshkent, Sport, Madaniyat va maʻrifat, and Dunyo boʻylab (Tashkent Media Research & Levada/ACT Central Asia 2024)",
-      brandTrustScore: {
-        score: "68%",
-        source: "Center for Public Opinion Research 'Ijtimoiy Fikr' & Agency of Information and Mass Communications (AOKA) 2024",
-      },
-      localContentQuota: "80% domestic national production quota, broadcasting in Uzbek, Karakalpak, Russian, Tajik, and Kazakh across nationwide and regional networks",
-      staffHeadcount: "3,400 permanent employees across the central Tashkent production complex and 12 regional broadcasting branches (MTRK Personnel Registry 2024)",
-      logo: "/broadcaster-logos/uz/mtrk.png",
-      logoExplainer:
-        "The MTRK emblem features bold modern lettering accompanied by stylized transmission orbits and the celestial crescent and stars of Uzbekistan's state flag in azure blue and gold. It reflects digital modernization, Central Asian cultural legacy, and state sovereignty.",
-      sources: [
-        "https://www.mtrk.uz/",
-        "https://mf.uz/",
-        "https://aoka.uz/",
-      ],
-      licenceNote: "National Television and Radio Company of Uzbekistan state entity trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Armenia
-  AM: [
-    {
-      id: "am-armtv",
-      countryCode: "AM",
-      name: "Public Television of Armenia",
-      officialName: "Public Television Company of Armenia (Հայաստանի հանրային հեռուստաընկերություն - 1TV / ARMTV)",
-      founded: 1956,
-      primaryFunding: "Direct state budget allocation approved by the National Assembly under the Republic of Armenia Law on Audiovisual Media",
-      headquarters: "26 Gevorg Hovsepyan Street, Nork-Marash, 0047 Yerevan",
-      annualPublicFunding: {
-        total: "AMD 7.85 billion state budget appropriation (RA Law on the State Budget of the Republic of Armenia FY 2024; approx. US$20.2M)",
-        perCapita: "AMD 2,640 / citizen / year (approx. US$6.80 / year)",
-      },
-      dailyMarketShare: "24.8% nationwide audience share (AdIndex Armenia & Television and Radio Commission TRC 2024; First Channel 1TV is the country's most viewed national broadcaster)",
-      brandTrustScore: {
-        score: "62%",
-        source: "Caucasus Research Resource Center (CRRC) Armenia & Media Initiatives Center 2024",
-      },
-      localContentQuota: "70% domestic Armenian cultural, documentary, musical, and educational programming quota, including transmissions in Eastern Armenian and Western Armenian",
-      staffHeadcount: "620 permanent journalists, film directors, archivists, and broadcast technicians (ARMTV Annual Report 2024)",
-      logo: "/broadcaster-logos/am/armtv.png",
-      logoExplainer:
-        "The 1TV Armenia emblem, refreshed in 2021, features an elegant, minimalist numeral '1' enclosed within an ethereal circular frame in royal violet and white. It symbolizes editorial preeminence, contemporary aesthetic evolution, and the broadcaster's foundational heritage as Armenia's first television channel.",
-      sources: [
-        "https://www.1tv.am/",
-        "https://www.minfin.am/",
-        "https://tvradio.am/",
-      ],
-      licenceNote: "Public Television Company of Armenia statutory closed joint-stock company trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
-
-  // Bhutan
-  BT: [
-    {
-      id: "bt-bbs",
-      countryCode: "BT",
-      name: "BBS",
-      officialName: "Bhutan Broadcasting Service (འབྲུག་རྒྱང་བསྒྲགས་ལས་འཛིན - BBS)",
-      founded: 1973,
-      primaryFunding: "Royal Government of Bhutan budgetary grant-in-aid through the Ministry of Industry, Commerce and Employment and nominal commercial advertisements",
-      headquarters: "Chhubachu, PO Box 101, Thimphu",
-      annualPublicFunding: {
-        total: "BTN 182.5 million government public service grant (National Budget Report, Ministry of Finance FY 2023–24; approx. US$2.18M)",
-        perCapita: "BTN 233.00 / citizen / year (approx. US$2.79 / year)",
-      },
-      dailyMarketShare: "58.4% domestic television audience share across BBS 1 and BBS 2 (Bhutan InfoComm and Media Authority BICMA & BBS Audience Survey 2024; the sole terrestrial television network in the Kingdom)",
-      brandTrustScore: {
-        score: "84%",
-        source: "BICMA Media Impact Study & Centre for Bhutan and GNH Studies 2024",
-      },
-      localContentQuota: "85% local cultural, spiritual, and community programming quota, broadcasting extensively in Dzongkha, Tshangla (Sharchop), Lhotshamkha, and English in alignment with Gross National Happiness principles",
-      staffHeadcount: "285 permanent journalists, camera operators, editors, and engineers across Thimphu headquarters and dzongkhag bureaus (BBS Corporate Review 2024)",
-      logo: "/broadcaster-logos/bt/bbs.png",
-      logoExplainer:
-        "The BBS insignia depicts the golden thunder dragon (Druk)—the national symbol of Bhutan—poised protectively over stylized radio and television transmission waves in saffron yellow and orange (the national colors of the Kingdom). It symbolizes sovereign communication, Buddhist spiritual values, and national harmony.",
-      sources: [
-        "https://www.bbs.bt/",
-        "https://www.mof.gov.bt/",
-        "https://www.bicma.gov.bt/",
-      ],
-      licenceNote: "Bhutan Broadcasting Service Corporation public corporation trademark and logo bundled for educational reference in Learn mode.",
-    },
-  ],
 };
-
-
 
 
 
