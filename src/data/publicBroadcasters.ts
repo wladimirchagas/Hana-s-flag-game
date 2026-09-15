@@ -1720,6 +1720,171 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Yleisradio Oy public limited company trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Ireland
+  IE: [
+    {
+      id: "ie-rte",
+      countryCode: "IE",
+      name: "RTÉ",
+      officialName: "Raidió Teilifís Éireann",
+      founded: 1926,
+      primaryFunding: "Dual funding model: Television licence fee (€160/year collected by An Post, ~55% of revenue) combined with commercial advertising, sponsorships, and digital commercial income",
+      headquarters: "Donnybrook, Dublin 4",
+      annualPublicFunding: {
+        total: "€196.1 million public licence fee & exchequer funding (RTÉ Annual Report FY 2024; total revenue €344.0M)",
+        perCapita: "€37.20 / resident / year (approx. €0.10 / day)",
+      },
+      dailyMarketShare: "27.8% television audience share across RTÉ One and RTÉ2 (TAM Ireland / Nielsen 2024; RTÉ One is Ireland's most-watched television channel with 20.4% share)",
+      brandTrustScore: {
+        score: "72%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news source in Ireland for RTÉ News)",
+      },
+      localContentQuota: "Over 50% Irish-originated programming quota under the Broadcasting Act 2009 and Coimisiún na Meán regulations, commissioning heavily from independent Irish producers",
+      staffHeadcount: "1,790 employees (RTÉ Annual Report 2024)",
+      logo: "/broadcaster-logos/ie/rte.png",
+      logoExplainer:
+        "Adopted in 1995 and refreshed in 2014, the RTÉ visual identity features modern lowercase letterforms with a prominent acute accent (fada) over the 'e' ('é'), honoring the Irish language name 'Raidió Teilifís Éireann'. The sleek typography in emerald blue symbolizes national cultural identity, contemporary public service, and multimedia agility.",
+      sources: [
+        "https://about.rte.ie/reports-and-policies/annual-reports/",
+        "https://www.cnam.ie/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/ireland",
+      ],
+      licenceNote: "Raidió Teilifís Éireann statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Switzerland
+  CH: [
+    {
+      id: "ch-srg-ssr",
+      countryCode: "CH",
+      name: "SRG SSR",
+      officialName: "Schweizerische Radio- und Fernsehgesellschaft / Société suisse de radiodiffusion et télévision",
+      founded: 1931,
+      primaryFunding: "Universal household and enterprise media levy (Serafe fee / CHF 335/year per household) providing ~85% of revenue, with strict prohibition of commercials on radio and limited ads on TV",
+      headquarters: "Giacomettistrasse 1, Bern",
+      annualPublicFunding: {
+        total: "CHF 1,260 million media levy revenue share (SRG SSR Geschäftsbericht FY 2024; total revenue CHF 1,530M)",
+        perCapita: "CHF 141 / resident / year (approx. €148 / year or CHF 0.39 / day)",
+      },
+      dailyMarketShare: "29.4% TV audience share in German-speaking Switzerland (SRF), 28.1% in French-speaking Switzerland (RTS), and 31.2% in Italian-speaking Switzerland (RSI) (Mediapulse 2024)",
+      brandTrustScore: {
+        score: "73%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news brand across all language regions: SRF in German, RTS in French)",
+      },
+      localContentQuota: "Over 80% Swiss-produced programming quota under the Federal Act on Radio and Television (RTVA), delivering full public service suites in all four national languages: German, French, Italian, and Romansh (RTR)",
+      staffHeadcount: "5,540 full-time equivalent staff across all regional divisions (SRG SSR Geschäftsbericht 2024)",
+      logo: "/broadcaster-logos/ch/srg-ssr.png",
+      logoExplainer:
+        "The corporate SRG SSR emblem features an assertive horizontal typographic lockup in charcoal and warm Swiss red, bringing together the German acronym 'SRG' and French/Italian/Romansh acronym 'SSR'. The red rectangular badge echoes the Swiss federal cross and flag, embodying multilingual cohesion, federalism, and national democratic dialogue.",
+      sources: [
+        "https://www.srgssr.ch/de/ueber-uns/organisation/berichterstattung",
+        "https://www.bakom.admin.ch/bakom/de/home/elektronische-medien.html",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/switzerland",
+      ],
+      licenceNote: "Schweizerische Radio- und Fernsehgesellschaft registered trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Austria
+  AT: [
+    {
+      id: "at-orf",
+      countryCode: "AT",
+      name: "ORF",
+      officialName: "Österreichischer Rundfunk",
+      founded: 1955,
+      primaryFunding: "Universal household ORF contribution (ORF-Beitrag / €15.30/month) enacted via the ORF-Gesetz reform effective 2024, supplemented by limited commercial advertising",
+      headquarters: "Würzburggasse 30, Küniglberg, Vienna",
+      annualPublicFunding: {
+        total: "€710.0 million public ORF-Beitrag revenue (ORF Jahresbericht FY 2024; total revenue €1,040M)",
+        perCapita: "€77.60 / resident / year (approx. €0.21 / day)",
+      },
+      dailyMarketShare: "32.1% combined television market share across ORF 1, ORF 2, ORF 1+, and ORF Sport + (AGTT / Teletest 2024; ORF 2 is Austria's leading television channel with 20.8% share)",
+      brandTrustScore: {
+        score: "70%",
+        source: "Reuters Institute Digital News Report 2024 (ORF News and Zeit im Bild rank as Austria's #1 most trusted news brand)",
+      },
+      localContentQuota: "At least 70% Austrian and European content quota under the Federal ORF Act (ORF-Gesetz), funding major domestic film co-productions and nine federal state regional studios (Landesstudios)",
+      staffHeadcount: "3,110 full-time equivalent staff (ORF Jahresbericht 2024)",
+      logo: "/broadcaster-logos/at/orf.png",
+      logoExplainer:
+        "Created in 1968 by renowned graphic designer Erich Sokol and updated in modern iterations, the 'ORF-Auge' (ORF eye) combines an abstract camera lens and human eye in bold geometric forms, accompanied by the compact rectangular wordmark 'ORF' in classic brick red. The eye symbolizes vigilance, truth, public insight, and visionary broadcasting.",
+      sources: [
+        "https://der.orf.at/unternehmen/zahlen-und-fakten/jahresberichte/index.html",
+        "https://orf-beitrag.at/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/austria",
+      ],
+      licenceNote: "Österreichischer Rundfunk foundation under public law trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Poland
+  PL: [
+    {
+      id: "pl-tvp",
+      countryCode: "PL",
+      name: "TVP",
+      officialName: "Telewizja Polska S.A.",
+      founded: 1952,
+      primaryFunding: "State budget compensation bond allocations (rekompensata abonamentowa) from the Ministry of Culture and National Heritage, television subscription fees (abonament RTV), and commercial advertising",
+      headquarters: "ul. Jana Pawła Woronicza 17, Mokotów, Warsaw",
+      annualPublicFunding: {
+        total: "PLN 1,750 million state public funding appropriation (KRRiT Sprawozdanie & TVP w likwidacji FY 2024; approx. €405M)",
+        perCapita: "PLN 46.50 / citizen / year (approx. €10.80 / year or PLN 0.13 / day)",
+      },
+      dailyMarketShare: "18.8% combined television audience share across TVP1, TVP2, TVP Info, and thematic channels (Nielsen Audience Measurement Poland 2024; TVP1 holds 7.6% share)",
+      brandTrustScore: {
+        score: "49%",
+        source: "Reuters Institute Digital News Report 2024 (reflecting restructuring and editorial independence reforms initiated in 2024)",
+      },
+      localContentQuota: "Minimum 50% Polish-language quota on primary general channels under the Broadcasting Act (Ustawa o radiofonii i telewizji), supporting Polish cinema, documentary drama, and 16 regional terrestrial branches (TVP3)",
+      staffHeadcount: "2,890 permanent employees (Sprawozdanie Zarządu TVP 2024)",
+      logo: "/broadcaster-logos/pl/tvp.png",
+      logoExplainer:
+        "Introduced in 2003, the TVP emblem presents the capital letters 'T', 'V', and 'P' individually encased in three connected squarish rounded boxes in national deep blue. The modular boxes symbolize stability, structural integrity, and the distinct channel pillars that comprise the national public television network.",
+      sources: [
+        "https://centruminformacji.tvp.pl/15717387/raporty-i-sprawozdania",
+        "https://www.gov.pl/web/krrit",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/poland",
+      ],
+      licenceNote: "Telewizja Polska S.A. public joint-stock company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Greece
+  GR: [
+    {
+      id: "gr-ert",
+      countryCode: "GR",
+      name: "ERT",
+      officialName: "Ellinikí Radiofonía Tileórasi (Hellenic Broadcasting Corporation S.A.)",
+      founded: 1938,
+      primaryFunding: "Universal compensation fee (antapodotiko telos / €3.00/month per household) collected via electricity supply bills under Law 4173/2013, supplemented by commercial advertising",
+      headquarters: "432 Mesogeion Avenue, Agia Paraskevi, Athens",
+      annualPublicFunding: {
+        total: "€212.4 million statutory public contribution (ERT Apologismos FY 2024; total revenue €238.1M)",
+        perCapita: "€20.40 / resident / year (approx. €0.06 / day)",
+      },
+      dailyMarketShare: "12.8% total television audience share across ERT1, ERT2, ERT3, and ERT News (Nielsen Audience Measurement Greece 2024; ERT1 holds 7.2%)",
+      brandTrustScore: {
+        score: "56%",
+        source: "Reuters Institute Digital News Report 2024 (ERT News is recognized as one of Greece's most reliable and objective broadcast news services)",
+      },
+      localContentQuota: "Over 60% Greek and European audiovisual production quota under the National Council for Radio and Television (ESR) directives, with specialized regional coverage across northern Greece (ERT3 in Thessaloniki)",
+      staffHeadcount: "2,130 permanent employees (ERT Apologismos Drasis 2024)",
+      logo: "/broadcaster-logos/gr/ert.png",
+      logoExplainer:
+        "Introduced in September 2020, the ERT logo features bold, clean sans-serif typography with the Greek letters 'EPT' in Aegean blue with subtle cyan accents, framed in a streamlined modern layout. The contemporary aesthetic symbolizes institutional renewal, digital transformation via the ERTFLIX streaming platform, and democratic transparency.",
+      sources: [
+        "https://company.ert.gr/oikonomika-stoicheia/",
+        "https://www.esr.gr/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/greece",
+      ],
+      licenceNote: "Hellenic Broadcasting Corporation S.A. state-owned company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
