@@ -6183,6 +6183,141 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  TG: [
+    {
+      id: "tg-asky-airlines",
+      countryCode: "TG",
+      name: "ASKY Airlines",
+      iata: "KP",
+      icao: "SKK",
+      founded: 2008,
+      alliance: "None",
+      hubs: ["Gnassingbé Eyadéma International Airport (LFW)"],
+      fleet: {
+        total: 15,
+        summary:
+          "15 aircraft (Boeing 737 MAX 8, Boeing 737-800, Boeing 737-700)",
+      },
+      logo: "/airline-logos/tg/asky-airlines.png",
+      logoExplainer:
+        "Features an aerodynamic chocolate-brown and sun-gold soaring bird with broad wings, symbolizing pan-African connectivity, commercial integration, and premier passenger links between Lomé and over 26 destinations across West and Central Africa.",
+      sources: [
+        "https://www.flyasky.com/",
+        "https://en.wikipedia.org/wiki/Asky_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  GQ: [
+    {
+      id: "gq-ceiba-intercontinental",
+      countryCode: "GQ",
+      name: "CEIBA Intercontinental",
+      iata: "C2",
+      icao: "CEL",
+      founded: 2007,
+      alliance: "None",
+      hubs: [
+        "Malabo International Airport (SSG)",
+        "Bata Airport (BSG)",
+      ],
+      fleet: {
+        total: 7,
+        summary:
+          "7 aircraft (Boeing 777-200LR, Boeing 737-800, ATR 72-500, ATR 42-500)",
+      },
+      logo: "/airline-logos/gq/ceiba-intercontinental.svg",
+      logoExplainer:
+        "Features the majestic sacred Ceiba tree (silk-cotton tree, the national tree of Equatorial Guinea featured on the national coat of arms) stylized into dynamic azure and emerald aerodynamic wings, representing strength, natural abundance, and sovereign air travel connecting Bioko Island with the mainland and Europe.",
+      sources: [
+        "https://www.ceiba-intercontinental.com/",
+        "https://en.wikipedia.org/wiki/CEIBA_Intercontinental",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  MW: [
+    {
+      id: "mw-malawi-airlines",
+      countryCode: "MW",
+      name: "Malawi Airlines",
+      iata: "3W",
+      icao: "MWI",
+      founded: 2013,
+      alliance: "None",
+      hubs: [
+        "Kamuzu International Airport (LLW)",
+        "Chileka International Airport (BLZ)",
+      ],
+      fleet: {
+        total: 2,
+        summary:
+          "2 aircraft (Boeing 737-700, Bombardier Dash 8-Q400)",
+      },
+      logo: "/airline-logos/mw/malawi-airlines.png",
+      logoExplainer:
+        "Displays the rising sun motif of Malawi in radiant dawn red and amber rays cresting over azure flight ribbons, symbolizing the dawn of hope and freedom as the 'Warm Heart of Africa' connecting Lilongwe and Blantyre to Southern and East Africa.",
+      sources: [
+        "https://www.malawian-airlines.com/",
+        "https://en.wikipedia.org/wiki/Malawi_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  SZ: [
+    {
+      id: "sz-eswatini-air",
+      countryCode: "SZ",
+      name: "Eswatini Air",
+      iata: "RN",
+      icao: "SZL",
+      founded: 2021,
+      alliance: "None",
+      hubs: ["King Mswati III International Airport (SHO)"],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Embraer ERJ 145)",
+      },
+      logo: "/airline-logos/sz/eswatini-air.png",
+      logoExplainer:
+        "Features the regal ceremonial shield (Emasotsha/Lijobo) and feathers of the Kingdom of Eswatini in vibrant crimson, royal blue, and gold, symbolizing ancient Swazi monarchical traditions and sovereign modern air transport connecting Sikhuphe with Johannesburg, Durban, Cape Town, and Harare.",
+      sources: [
+        "https://eswatiniair.co.sz/",
+        "https://en.wikipedia.org/wiki/Eswatini_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  ST: [
+    {
+      id: "st-stp-airways",
+      countryCode: "ST",
+      name: "STP Airways",
+      iata: "8F",
+      icao: "STP",
+      founded: 2008,
+      alliance: "None",
+      hubs: ["São Tomé International Airport (TMS)"],
+      fleet: {
+        total: 2,
+        summary:
+          "2 aircraft (Boeing 767-300ER, Boeing 737 operated via EuroAtlantic Airways)",
+      },
+      logo: "/airline-logos/st/stp-airways.svg",
+      logoExplainer:
+        "Features an aerodynamic emblem in the national tricolor of São Tomé and Príncipe—vibrant red, warm golden yellow, and emerald green—with two black stars honoring the two equatorial volcanic islands and dependable inter-island and international air transport.",
+      sources: [
+        "https://www.stpairways.st/",
+        "https://en.wikipedia.org/wiki/STP_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
