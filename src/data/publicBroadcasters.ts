@@ -1478,8 +1478,6 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 85% Spanish and European audiovisual production quota under the General Law on Audiovisual Communication, fostering independent national cinema, cultural series, and regional territorial studios (Centros Territoriales)",
       staffHeadcount: "6,770 permanent employees (RTVE Cuentas Anuales 2024)",
-      // TODO: RTVE logo (2008 Summa design, lowercase 'rtve' in orange/amber gradient SVG).
-      // Previous JPG was a street photograph, not the broadcaster logo. Needs proper sourcing.
       logo: "/broadcaster-logos/es/rtve.svg",
       logoExplainer:
         "Created in 2008 by design agency Summa, the RTVE identity features warm organic typography in gradient amber and orange, anchored around the lowercase letters 'rtve'. The luminous orange glow symbolizes Mediterranean sunlight, accessibility, warmth, and the transformation of the state broadcaster into a citizen-centered cultural corporation.",
