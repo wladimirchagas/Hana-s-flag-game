@@ -1445,7 +1445,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 70% European and Italian audiovisual production quota under the Consolidated Audiovisual Media Act (TUSMA), supporting Italian cinema, opera broadcasts, and regional news (TGR across all 20 regions)",
       staffHeadcount: "12,400 permanent employees across television, radio, and regional production centers (Rai Bilancio di Sostenibilità 2024)",
-      logo: "/broadcaster-logos/it/rai.svg",
+      logo: "/broadcaster-logos/it/rai.png",
       logoExplainer:
         "Designed in 2016 by Pentagram, the modern Rai logo features two interlocking squares forming an abstract capital 'R' alongside the clean lowercase letters 'ai' in a brilliant Mediterranean blue. The square modular geometry reflects the integration of television, radio, and digital streaming (RaiPlay) into a cohesive public service ecosystem.",
       sources: [
@@ -1478,7 +1478,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Minimum 85% Spanish and European audiovisual production quota under the General Law on Audiovisual Communication, fostering independent national cinema, cultural series, and regional territorial studios (Centros Territoriales)",
       staffHeadcount: "6,770 permanent employees (RTVE Cuentas Anuales 2024)",
-      logo: "/broadcaster-logos/es/rtve.svg",
+      logo: "/broadcaster-logos/es/rtve.jpg",
       logoExplainer:
         "Created in 2008 by design agency Summa, the RTVE identity features warm organic typography in gradient amber and orange, anchored around the lowercase letters 'rtve'. The luminous orange glow symbolizes Mediterranean sunlight, accessibility, warmth, and the transformation of the state broadcaster into a citizen-centered cultural corporation.",
       sources: [
@@ -1511,7 +1511,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 75% Dutch and European production quota under the Media Act 2008, coordinating programs across pillar broadcasters (NOS, NTR, BNNVARA, KRO-NCRV, AVROTROS, Omroep MAX, VPRO, EO)",
       staffHeadcount: "2,850 employees across the NPO coordinating body, NOS newsroom, and member broadcasting associations (NPO Jaarverslag 2024)",
-      logo: "/broadcaster-logos/nl/npo.svg",
+      logo: "/broadcaster-logos/nl/npo.png",
       logoExplainer:
         "Designed in 2014 by 3D design studio KempertHautmans, the NPO logo consists of three bold geometric letters 'npo' rendered in crisp blue and white with a stylized rhomboid diamond integrated into the letter 'o'. The multifaceted diamond symbolizes pluralism, diversity of opinion among the pillar broadcasters, and universal public broadcasting cohesion.",
       sources: [
@@ -1544,7 +1544,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       },
       localContentQuota: "Over 85% Flemish domestic production quota under the Flemish Media Decree, investing extensively in local fiction, youth education, and regional news",
       staffHeadcount: "2,050 full-time equivalent staff (VRT Jaarverslag 2024)",
-      logo: "/broadcaster-logos/be/vrt.svg",
+      logo: "/broadcaster-logos/be/vrt.png",
       logoExplainer:
         "Unveiled in 2022, the modern VRT emblem features the lowercase letterforms 'vrt' in a sleek, minimalist geometric sans-serif, rendered in stark charcoal black or vibrant electric blue. The unified, digital-first aesthetic conveys openness, agility, and the convergence of traditional television and radio into digital streaming via VRT MAX.",
       sources: [
@@ -1553,6 +1553,171 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
         "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/belgium",
       ],
       licenceNote: "Vlaamse Radio- en Televisieomroeporganisatie public broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Portugal
+  PT: [
+    {
+      id: "pt-rtp",
+      countryCode: "PT",
+      name: "RTP",
+      officialName: "Rádio e Televisão de Portugal, S.A.",
+      founded: 1935,
+      primaryFunding: "Contribuição para o Audiovisual (CAV) statutory fee levied on domestic electricity consumption invoices (~€190M) supplemented by limited commercial advertising (~€40M)",
+      headquarters: "Avenida Marechal Gomes da Costa 37, Lisbon",
+      annualPublicFunding: {
+        total: "€191.8 million public CAV contribution (RTP Relatório e Contas FY 2024; total revenue €235.4M)",
+        perCapita: "€18.35 / resident / year (approx. €0.05 / day)",
+      },
+      dailyMarketShare: "14.2% total television audience share across RTP1, RTP2, RTP3, and RTP Memória (CAEM / GfK Portugal 2024; RTP1 holds 11.0%)",
+      brandTrustScore: {
+        score: "79%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news brand in Portugal)",
+      },
+      localContentQuota: "Minimum 50% Portuguese-language audiovisual production quota on RTP1 and 60% on RTP2 under the Portuguese Television Law (Lei da Televisão), with extensive regional coverage in Azores and Madeira",
+      staffHeadcount: "3,120 employees across mainland Portugal and the autonomous islands (RTP Relatório de Sustentabilidade 2024)",
+      logo: "/broadcaster-logos/pt/rtp.png",
+      logoExplainer:
+        "Designed in 2004 and refined in 2016, the RTP emblem features four dynamic curving quadrants in deep ultramarine blue and cyan that rotate together to form an energetic circular sphere, accompanied by modern lowercase sans-serif lettering. The four quadrants symbolize the four broadcast elements (RTP1, RTP2, RTP Internacional, and RTP África), convergence, and Portugal's maritime heritage.",
+      sources: [
+        "https://www.rtp.pt/institucional/",
+        "https://www.cav.pt/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/portugal",
+      ],
+      licenceNote: "Rádio e Televisão de Portugal, S.A. registered trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Sweden
+  SE: [
+    {
+      id: "se-svt",
+      countryCode: "SE",
+      name: "SVT",
+      officialName: "Sveriges Television AB",
+      founded: 1956,
+      primaryFunding: "Individual public service tax fee (public service-avgift) collected via the Swedish Tax Agency (Skatteverket) ring-fenced in the Public Service Fund managed by Förvaltningsstiftelsen; 100% commercial-free with zero advertising",
+      headquarters: "Oxenstiernsgatan 26–34, Stockholm",
+      annualPublicFunding: {
+        total: "SEK 5,848 million public service tax allocation (Förvaltningsstiftelsen & SVT Årsredovisning 2024; approx. €520M)",
+        perCapita: "SEK 556 / resident / year (approx. €49.50 / year or SEK 1.52 / day)",
+      },
+      dailyMarketShare: "33.5% linear TV audience share across SVT1, SVT2, SVT Barn, and Kunskapskanalen (MMS Mediamätning i Skandinavien 2024; SVT1 is Sweden's most-watched television channel with 26.2% share)",
+      brandTrustScore: {
+        score: "71%",
+        source: "Reuters Institute Digital News Report 2024 (consistently Sweden's top trusted news source alongside Sveriges Radio in SOM-institutet surveys)",
+      },
+      localContentQuota: "Over 80% Swedish-originated programming requirement across national channels, with strict regional production mandates outside Stockholm across 21 regional news editorial offices",
+      staffHeadcount: "2,240 full-time equivalent staff (SVT Årsredovisning 2024)",
+      logo: "/broadcaster-logos/se/svt.png",
+      logoExplainer:
+        "Created by Stockholm design agency Happy F&B in 2008 and updated in 2016, the SVT visual mark features friendly lowercase typography with a distinctive open, curving 's' rendered in warm radiant orange. The flowing letterforms convey warmth, democratic accessibility, and an open dialogue with all Swedish citizens.",
+      sources: [
+        "https://omoss.svt.se/om-oss/svts-finansiering.html",
+        "https://mms.se/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/sweden",
+      ],
+      licenceNote: "Sveriges Television AB registered trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Norway
+  NO: [
+    {
+      id: "no-nrk",
+      countryCode: "NO",
+      name: "NRK",
+      officialName: "Norsk rikskringkasting AS",
+      founded: 1933,
+      primaryFunding: "Direct public funding allocated through the Norwegian State Budget (statsbudsjettet) via income taxation (replaces the former television license); 100% commercial-free on TV and radio",
+      headquarters: "Bjørnstjerne Bjørnsons plass 1, Marienlyst, Oslo",
+      annualPublicFunding: {
+        total: "NOK 7,215 million state budget grant (NRK Årsregnskap FY 2024; approx. €615M)",
+        perCapita: "NOK 1,305 / citizen / year (approx. €111 / year or NOK 3.58 / day)",
+      },
+      dailyMarketShare: "36.8% total television audience share across NRK1, NRK2, and NRK3 (Kantar Media Norway 2024; NRK1 commands 30.1% individual share)",
+      brandTrustScore: {
+        score: "78%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news organization in Norway)",
+      },
+      localContentQuota: "At least 75% Norwegian-produced content quota, with statutory mandates to provide services in Norwegian (Bokmål and Nynorsk, min. 25% Nynorsk) and dedicated Sami broadcasting via NRK Sápmi",
+      staffHeadcount: "3,410 full-time equivalent staff across headquarters and regional district offices (NRK Årsrapport 2024)",
+      logo: "/broadcaster-logos/no/nrk.png",
+      logoExplainer:
+        "Designed in 1970 by graphic artist Richard Aare and modernized in 2011, the iconic NRK emblem features the bold, rounded sans-serif letters 'nrk' with distinctively curved terminal strokes in vivid royal blue. The circular flowing contours evoke radio broadcast waves and friendly Scandinavian modernism.",
+      sources: [
+        "https://www.nrk.no/omnrk/",
+        "https://kantar.no/medier/tv/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/norway",
+      ],
+      licenceNote: "Norsk rikskringkasting AS state-owned corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Denmark
+  DK: [
+    {
+      id: "dk-dr",
+      countryCode: "DK",
+      name: "DR",
+      officialName: "Danmarks Radio",
+      founded: 1925,
+      primaryFunding: "General income taxation from the Danish national state budget (Finansloven), fully phased in after replacing the traditional media license fee (medielicensen); 100% commercial-free",
+      headquarters: "DR Byen, Emil Holms Kanal 20, Copenhagen",
+      annualPublicFunding: {
+        total: "DKK 3,920 million state budget appropriation (DR Årsrapport FY 2024; approx. €525M)",
+        perCapita: "DKK 658 / resident / year (approx. €88 / year or DKK 1.80 / day)",
+      },
+      dailyMarketShare: "34.0% combined television audience share across DR1 and DR2 (Nielsen Media Research Denmark 2024; DR1 is Denmark's leading TV channel with 27.5% share)",
+      brandTrustScore: {
+        score: "76%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news source in Denmark for DR Nyheder)",
+      },
+      localContentQuota: "Minimum 80% Danish-language and Nordic programming requirement under the DR Public Service Contract with the Ministry of Culture, prioritizing Danish culture, regional news, and children's content (DR Ramasjang)",
+      staffHeadcount: "2,780 full-time equivalent staff (DR Årsrapport 2024)",
+      logo: "/broadcaster-logos/dk/dr.png",
+      logoExplainer:
+        "Redesigned in 2020, the DR emblem presents the capital letters 'DR' set in an authoritative, minimalist bespoke geometric grotesque typeface rendered in pure black and white. The clean silhouette embodies Scandinavian functionalism, institutional transparency, and digital-first clarity across DR TV and DR LYD.",
+      sources: [
+        "https://www.dr.dk/om-dr",
+        "https://kum.dk/kulturpolitik/medier/public-service",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/denmark",
+      ],
+      licenceNote: "Danmarks Radio statutory public institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Finland
+  FI: [
+    {
+      id: "fi-yle",
+      countryCode: "FI",
+      name: "Yle",
+      officialName: "Yleisradio Oy (Finnish Broadcasting Company)",
+      founded: 1926,
+      primaryFunding: "Dedicated personal and corporate Yle tax (yleisradiovero / rundradioskatt) collected by the Finnish Tax Administration (Verohallinto); 100% commercial-free with zero interruption advertisements",
+      headquarters: "Radiokatu 5, Pasila, Helsinki",
+      annualPublicFunding: {
+        total: "€588.6 million state budget tax appropriation (Yle Tilinpäätös ja Toimintakertomus FY 2024)",
+        perCapita: "€105.40 / resident / year (approx. €0.29 / day)",
+      },
+      dailyMarketShare: "40.3% total television viewing share across Yle TV1, Yle TV2, and Yle Teema & Fem (Finnpanel 2024; Yle TV1 is Finland's most-watched television channel with 27.1% share)",
+      brandTrustScore: {
+        score: "83%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news brand in Finland; among the highest public trust scores globally)",
+      },
+      localContentQuota: "Over 80% domestic and European production quota under the Act on the Finnish Broadcasting Company (Laki Yleisradio Oy:stä), with dual official language delivery in Finnish and Swedish (Svenska Yle) plus Sámi (Yle Sápmi)",
+      staffHeadcount: "2,840 permanent employees (Yle Toimintakertomus 2024)",
+      logo: "/broadcaster-logos/fi/yle.png",
+      logoExplainer:
+        "Created in 2012 by design firm Bob the Robot, the Yle logo features the lowercased, approachable word 'yle' set inside a rounded square in bright turquoise blue. The solid rounded enclosure represents a unified media window connecting citizens across television, radio, and the Yle Areena digital streaming platform.",
+      sources: [
+        "https://yle.fi/aihe/about-yle",
+        "https://www.finnpanel.fi/tulokset/tv.php",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/finland",
+      ],
+      licenceNote: "Yleisradio Oy public limited company trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
 };
