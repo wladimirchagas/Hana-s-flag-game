@@ -3865,6 +3865,158 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // India
+  IN: [
+    {
+      id: "in-air-india",
+      countryCode: "IN",
+      name: "Air India",
+      iata: "AI",
+      icao: "AIC",
+      founded: 1932,
+      alliance: "Star Alliance",
+      hubs: ["Indira Gandhi International Airport (DEL)", "Chhatrapati Shivaji Maharaj International Airport (BOM)"],
+      fleet: {
+        total: 147,
+        summary: "147 aircraft (Airbus A320neo, A321neo, A350-900; Boeing 777-200LR, 777-300ER, 787-8, 787-9)",
+      },
+      logo: "/airline-logos/in/air-india.svg",
+      logoExplainer:
+        "Unveiled in August 2023 under Tata Sons ownership, 'The Vista' brand emblem is inspired by the peak of the iconic Indian golden decorative window frame (jharokha), rendered in deep red, aubergine, and radiant gold. It symbolizes limitless possibilities, boundless progress, and a bold, confident new era for Indian aviation.",
+      sources: [
+        "https://www.airindia.com/",
+        "https://en.wikipedia.org/wiki/Air_India",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "in-indigo",
+      countryCode: "IN",
+      name: "IndiGo",
+      iata: "6E",
+      icao: "IGO",
+      founded: 2006,
+      alliance: "None",
+      hubs: ["Indira Gandhi International Airport (DEL)", "Chhatrapati Shivaji Maharaj International Airport (BOM)", "Bengaluru Kempegowda Airport (BLR)", "Hyderabad Rajiv Gandhi Airport (HYD)"],
+      fleet: {
+        total: 380,
+        summary: "380 aircraft (Airbus A320-200, A320neo, A321neo; ATR 72-600; Boeing 777-300ER leased)",
+      },
+      logo: "/airline-logos/in/indigo.svg",
+      logoExplainer:
+        "Features deep indigo-blue typography with a distinctive chevron pattern resembling an aircraft climbing toward the right, symbolizing reliable punctuality, streamlined efficiency, and low-cost accessibility across India and Eurasia.",
+      sources: [
+        "https://www.goindigo.in/",
+        "https://en.wikipedia.org/wiki/IndiGo",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bangladesh
+  BD: [
+    {
+      id: "bd-biman-bangladesh",
+      countryCode: "BD",
+      name: "Biman Bangladesh Airlines",
+      iata: "BG",
+      icao: "BBC",
+      founded: 1972,
+      alliance: "None",
+      hubs: ["Hazrat Shahjalal International Airport (DAC)", "Shah Amanat International Airport (CGP)", "Osmani International Airport (ZYL)"],
+      fleet: {
+        total: 21,
+        summary: "21 aircraft (Boeing 737-800, 777-300ER, 787-8, 787-9 Dreamliner; De Havilland Canada Dash 8-Q400)",
+      },
+      logo: "/airline-logos/bd/biman-bangladesh-airlines.svg",
+      logoExplainer:
+        "Designed by painter Quamrul Hassan in 1972, the emblem features the stylized silhouette of a soaring white balaka (white stork) set within a vibrant red sun disc framed in forest green, directly evoking the sovereign colors and spirit of Bangladesh's independence.",
+      sources: [
+        "https://www.biman-airlines.com/",
+        "https://en.wikipedia.org/wiki/Biman_Bangladesh_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Sri Lanka
+  LK: [
+    {
+      id: "lk-srilankan-airlines",
+      countryCode: "LK",
+      name: "SriLankan Airlines",
+      iata: "UL",
+      icao: "ALK",
+      founded: 1979,
+      alliance: "oneworld",
+      hubs: ["Bandaranaike International Airport (CMB)"],
+      fleet: {
+        total: 24,
+        summary: "24 aircraft (Airbus A320-200, A320neo, A321-200, A321neo, A330-200, A330-300)",
+      },
+      logo: "/airline-logos/lk/srilankan-airlines.svg",
+      logoExplainer:
+        "Features a stylized iridescent peacock (monara) with flowing aerodynamic tail plumage in brilliant crimson red, turquoise green, and saffron orange, symbolizing classical Sinhala art, tropical island hospitality, and grace in flight.",
+      sources: [
+        "https://www.srilankan.com/",
+        "https://en.wikipedia.org/wiki/SriLankan_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Pakistan
+  PK: [
+    {
+      id: "pk-pia",
+      countryCode: "PK",
+      name: "Pakistan International Airlines",
+      iata: "PK",
+      icao: "PIA",
+      founded: 1946,
+      alliance: "None",
+      hubs: ["Jinnah International Airport (KHI)", "Islamabad International Airport (ISB)", "Allama Iqbal International Airport (LHE)"],
+      fleet: {
+        total: 34,
+        summary: "34 aircraft (Airbus A320-200; Boeing 777-200ER, 777-200LR, 777-300ER; ATR 42-500)",
+      },
+      logo: "/airline-logos/pk/pakistan-international-airlines.svg",
+      logoExplainer:
+        "Features the classic Urdu calligraphy signature 'PIA' accompanied by dynamic flowing golden speed stripes and Pakistani national green accents, symbolizing national pride, historic intercontinental pioneering flight, and transatlantic routes.",
+      sources: [
+        "https://www.piac.com.pk/",
+        "https://en.wikipedia.org/wiki/Pakistan_International_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Nepal
+  NP: [
+    {
+      id: "np-nepal-airlines",
+      countryCode: "NP",
+      name: "Nepal Airlines",
+      iata: "RA",
+      icao: "RNA",
+      founded: 1958,
+      alliance: "None",
+      hubs: ["Tribhuvan International Airport (KTM)"],
+      fleet: {
+        total: 7,
+        summary: "7 aircraft (Airbus A320-200, A330-200; DHC-6 Twin Otter)",
+      },
+      logo: "/airline-logos/np/nepal-airlines.svg",
+      logoExplainer:
+        "Features the sacred mythical bird Garuda in radiant red and gold within a Himalayan circular ring, reflecting Nepal's rich spiritual culture and the airline's historic role as Royal Nepal Airlines connecting the roof of the world.",
+      sources: [
+        "https://nepalairlines.com.np/",
+        "https://en.wikipedia.org/wiki/Nepal_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
