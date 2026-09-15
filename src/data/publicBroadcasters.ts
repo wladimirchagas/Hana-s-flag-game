@@ -3827,7 +3827,173 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Kuwait Television / Ministry of Information public state trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Pakistan
+  PK: [
+    {
+      id: "pk-ptv",
+      countryCode: "PK",
+      name: "PTV",
+      officialName: "Pakistan Television Corporation (پاکستان ٹیلی وژن کارپوریشن - PTV)",
+      founded: 1964,
+      primaryFunding: "TV license fee surcharge levied on domestic and commercial electricity bills (Rs. 100/month statutory utility charge under the Telegraph Act), federal grants, and commercial advertising",
+      headquarters: "PTV Headquarters Complex, Constitution Avenue, F-5/1, Islamabad",
+      annualPublicFunding: {
+        total: "PKR 11.5 billion public broadcast surcharge revenue & federal grant-in-aid (Federal Ministry of Information & Broadcasting / Ministry of Finance FY 2023–24; approx. US$41.5M)",
+        perCapita: "PKR 47.70 / citizen / year (approx. US$0.17 / year)",
+      },
+      dailyMarketShare: "24.2% national terrestrial and multi-channel audience reach across PTV Home, PTV News, PTV Sports, PTV Global, PTV World, and regional channels (Medialogic Pakistan & Gallup Pakistan 2024; retains dominant rural terrestrial reach)",
+      brandTrustScore: {
+        score: "57%",
+        source: "Gallup Pakistan Public Opinion Survey & Pakistan Press Foundation 2024",
+      },
+      localContentQuota: "80% Pakistani domestic production quota under Pakistan Electronic Media Regulatory Authority (PEMRA) guidelines, broadcasting in Urdu, English, Punjabi, Sindhi, Pashto, Balochi, and Shina",
+      staffHeadcount: "3,800 permanent broadcasters, cameramen, technical engineers, and dramatists (PTV Administrative Report 2024)",
+      logo: "/broadcaster-logos/pk/ptv.png",
+      logoExplainer:
+        "The PTV logo, created in 1964 and refined over decades, features a stylized geometric green and gold camera aperture forming a dynamic circular vortex. It symbolizes electronic television vision, Islamic heritage through Pakistan's national green, and the dissemination of light and knowledge to every corner of the country.",
+      sources: [
+        "https://www.ptv.com.pk/",
+        "https://moib.gov.pk/",
+        "https://pemra.gov.pk/",
+      ],
+      licenceNote: "Pakistan Television Corporation statutory state-owned corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Sri Lanka
+  LK: [
+    {
+      id: "lk-rupavahini",
+      countryCode: "LK",
+      name: "Rupavahini",
+      officialName: "Sri Lanka Rupavahini Corporation (ශ්‍රී ලංකා රූපවාහිනී සංස්ථාව / இலங்கை ரூபவாகினி கூட்டுத்தாபனம் - SLRC)",
+      founded: 1982,
+      primaryFunding: "Parliamentary treasury appropriations via the Ministry of Mass Media, supplemented by commercial advertising and sponsored educational programming",
+      headquarters: "Independence Square, Colombo 07",
+      annualPublicFunding: {
+        total: "LKR 1.85 billion state budget subvention & treasury allocations (Ministry of Finance Budget Estimates & SLRC Annual Report 2023–24; approx. US$6.2M)",
+        perCapita: "LKR 84.10 / citizen / year (approx. US$0.28 / year)",
+      },
+      dailyMarketShare: "18.5% national television audience share across Rupavahini, Channel Eye, and Nethra TV (Kantar LMRB Sri Lanka Media Index 2024)",
+      brandTrustScore: {
+        score: "61%",
+        source: "Verité Research Media Monitoring & Sri Lanka Press Institute 2024",
+      },
+      localContentQuota: "75% domestic cultural and educational programming quota, broadcasting in Sinhala, Tamil, and English with dedicated educational telecasts for national school curricula",
+      staffHeadcount: "850 permanent media personnel, producers, and engineering specialists (SLRC Cadre Review 2024)",
+      logo: "/broadcaster-logos/lk/rupavahini.png",
+      logoExplainer:
+        "The Sri Lanka Rupavahini Corporation insignia is inspired by the mythical Sinhala bird 'Mayura' (peacock) and Buddhist swan motifs, rendered in deep royal maroon and gold. Its stylized feathered eye represents optical vision and television enlightenment, evoking traditional Sri Lankan mural art and cultural pride.",
+      sources: [
+        "https://www.rupavahini.lk/",
+        "https://www.treasury.gov.lk/",
+        "https://massmedia.gov.lk/",
+      ],
+      licenceNote: "Sri Lanka Rupavahini Corporation statutory corporate trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Uzbekistan
+  UZ: [
+    {
+      id: "uz-mtrk",
+      countryCode: "UZ",
+      name: "MTRK",
+      officialName: "National Television and Radio Company of Uzbekistan (Oʻzbekiston Milliy teleradiokompaniyasi - MTRK)",
+      founded: 1956,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Economy and Finance of the Republic of Uzbekistan",
+      headquarters: "69 Alisher Navoiy Avenue, Shaykhontohur District, Tashkent",
+      annualPublicFunding: {
+        total: "UZS 560.0 billion state budget allocation (State Budget Law of the Republic of Uzbekistan & MTRK Financial Directorate FY 2024; approx. US$44.2M)",
+        perCapita: "UZS 15,200 / citizen / year (approx. US$1.20 / year)",
+      },
+      dailyMarketShare: "38.2% combined domestic television audience share across Oʻzbekiston, Oʻzbekiston 24, Yoshlar, Toshkent, Sport, Madaniyat va maʻrifat, and Dunyo boʻylab (Tashkent Media Research & Levada/ACT Central Asia 2024)",
+      brandTrustScore: {
+        score: "68%",
+        source: "Center for Public Opinion Research 'Ijtimoiy Fikr' & Agency of Information and Mass Communications (AOKA) 2024",
+      },
+      localContentQuota: "80% domestic national production quota, broadcasting in Uzbek, Karakalpak, Russian, Tajik, and Kazakh across nationwide and regional networks",
+      staffHeadcount: "3,400 permanent employees across the central Tashkent production complex and 12 regional broadcasting branches (MTRK Personnel Registry 2024)",
+      logo: "/broadcaster-logos/uz/mtrk.png",
+      logoExplainer:
+        "The MTRK emblem features bold modern lettering accompanied by stylized transmission orbits and the celestial crescent and stars of Uzbekistan's state flag in azure blue and gold. It reflects digital modernization, Central Asian cultural legacy, and state sovereignty.",
+      sources: [
+        "https://www.mtrk.uz/",
+        "https://mf.uz/",
+        "https://aoka.uz/",
+      ],
+      licenceNote: "National Television and Radio Company of Uzbekistan state entity trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Armenia
+  AM: [
+    {
+      id: "am-armtv",
+      countryCode: "AM",
+      name: "Public Television of Armenia",
+      officialName: "Public Television Company of Armenia (Հայաստանի հանրային հեռուստաընկերություն - 1TV / ARMTV)",
+      founded: 1956,
+      primaryFunding: "Direct state budget allocation approved by the National Assembly under the Republic of Armenia Law on Audiovisual Media",
+      headquarters: "26 Gevorg Hovsepyan Street, Nork-Marash, 0047 Yerevan",
+      annualPublicFunding: {
+        total: "AMD 7.85 billion state budget appropriation (RA Law on the State Budget of the Republic of Armenia FY 2024; approx. US$20.2M)",
+        perCapita: "AMD 2,640 / citizen / year (approx. US$6.80 / year)",
+      },
+      dailyMarketShare: "24.8% nationwide audience share (AdIndex Armenia & Television and Radio Commission TRC 2024; First Channel 1TV is the country's most viewed national broadcaster)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Caucasus Research Resource Center (CRRC) Armenia & Media Initiatives Center 2024",
+      },
+      localContentQuota: "70% domestic Armenian cultural, documentary, musical, and educational programming quota, including transmissions in Eastern Armenian and Western Armenian",
+      staffHeadcount: "620 permanent journalists, film directors, archivists, and broadcast technicians (ARMTV Annual Report 2024)",
+      logo: "/broadcaster-logos/am/armtv.png",
+      logoExplainer:
+        "The 1TV Armenia emblem, refreshed in 2021, features an elegant, minimalist numeral '1' enclosed within an ethereal circular frame in royal violet and white. It symbolizes editorial preeminence, contemporary aesthetic evolution, and the broadcaster's foundational heritage as Armenia's first television channel.",
+      sources: [
+        "https://www.1tv.am/",
+        "https://www.minfin.am/",
+        "https://tvradio.am/",
+      ],
+      licenceNote: "Public Television Company of Armenia statutory closed joint-stock company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bhutan
+  BT: [
+    {
+      id: "bt-bbs",
+      countryCode: "BT",
+      name: "BBS",
+      officialName: "Bhutan Broadcasting Service (འབྲུག་རྒྱང་བསྒྲགས་ལས་འཛིན - BBS)",
+      founded: 1973,
+      primaryFunding: "Royal Government of Bhutan budgetary grant-in-aid through the Ministry of Industry, Commerce and Employment and nominal commercial advertisements",
+      headquarters: "Chhubachu, PO Box 101, Thimphu",
+      annualPublicFunding: {
+        total: "BTN 182.5 million government public service grant (National Budget Report, Ministry of Finance FY 2023–24; approx. US$2.18M)",
+        perCapita: "BTN 233.00 / citizen / year (approx. US$2.79 / year)",
+      },
+      dailyMarketShare: "58.4% domestic television audience share across BBS 1 and BBS 2 (Bhutan InfoComm and Media Authority BICMA & BBS Audience Survey 2024; the sole terrestrial television network in the Kingdom)",
+      brandTrustScore: {
+        score: "84%",
+        source: "BICMA Media Impact Study & Centre for Bhutan and GNH Studies 2024",
+      },
+      localContentQuota: "85% local cultural, spiritual, and community programming quota, broadcasting extensively in Dzongkha, Tshangla (Sharchop), Lhotshamkha, and English in alignment with Gross National Happiness principles",
+      staffHeadcount: "285 permanent journalists, camera operators, editors, and engineers across Thimphu headquarters and dzongkhag bureaus (BBS Corporate Review 2024)",
+      logo: "/broadcaster-logos/bt/bbs.png",
+      logoExplainer:
+        "The BBS insignia depicts the golden thunder dragon (Druk)—the national symbol of Bhutan—poised protectively over stylized radio and television transmission waves in saffron yellow and orange (the national colors of the Kingdom). It symbolizes sovereign communication, Buddhist spiritual values, and national harmony.",
+      sources: [
+        "https://www.bbs.bt/",
+        "https://www.mof.gov.bt/",
+        "https://www.bicma.gov.bt/",
+      ],
+      licenceNote: "Bhutan Broadcasting Service Corporation public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
 
 
 
