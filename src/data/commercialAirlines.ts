@@ -5729,6 +5729,199 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  ZW: [
+    {
+      id: "zw-air-zimbabwe",
+      countryCode: "ZW",
+      name: "Air Zimbabwe",
+      iata: "UM",
+      icao: "AZW",
+      founded: 1967,
+      alliance: "None",
+      hubs: [
+        "Robert Gabriel Mugabe International Airport (HRE)",
+        "Joshua Mqabuko Nkomo International Airport (BUQ)",
+      ],
+      fleet: {
+        total: 2,
+        summary:
+          "2 aircraft (Boeing 767-200ER, Boeing 737-200, Embraer ERJ 145)",
+      },
+      logo: "/airline-logos/zw/air-zimbabwe.svg",
+      logoExplainer:
+        "Features the sacred Zimbabwe Bird (a carved soapstone raptor from the ancient city of Great Zimbabwe, the national emblem), crowned by the socialist red star within an aerodynamic multi-striped disc in the national colors (green, gold, red, and black), representing national sovereignty, ancient heritage, and African skies.",
+      sources: [
+        "https://www.airzimbabwe.aero/",
+        "https://en.wikipedia.org/wiki/Air_Zimbabwe",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "zw-fastjet",
+      countryCode: "ZW",
+      name: "Fastjet Zimbabwe",
+      iata: "FN",
+      icao: "FJW",
+      founded: 2015,
+      alliance: "None",
+      hubs: [
+        "Robert Gabriel Mugabe International Airport (HRE)",
+        "Victoria Falls Airport (VFA)",
+      ],
+      fleet: {
+        total: 7,
+        summary:
+          "7 aircraft (Embraer ERJ 145, Embraer EMB 120 Brasilia)",
+      },
+      logo: "/airline-logos/zw/fastjet.png",
+      logoExplainer:
+        "Features the friendly African Grey Parrot mascot in cheerful sunburst yellow and charcoal grey, symbolizing affordable, punctual low-cost air travel connecting Harare, Bulawayo, and the magnificent Victoria Falls.",
+      sources: [
+        "https://www.fastjet.com/",
+        "https://en.wikipedia.org/wiki/Fastjet_Zimbabwe",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  ZM: [
+    {
+      id: "zm-proflight-zambia",
+      countryCode: "ZM",
+      name: "Proflight Zambia",
+      iata: "P0",
+      icao: "PFZ",
+      founded: 1991,
+      alliance: "None",
+      hubs: ["Kenneth Kaunda International Airport (LUN)"],
+      fleet: {
+        total: 10,
+        summary:
+          "10 aircraft (Bombardier CRJ200, Bombardier CRJ100, British Aerospace Jetstream 41)",
+      },
+      logo: "/airline-logos/zm/proflight-zambia.png",
+      logoExplainer:
+        "Displays a stylized golden African fish eagle (Zambia's national bird, Haliaeetus vocifer) in swift ascending flight, paired with dark navy lettering, representing reliable scheduled wings linking Lusaka with Livingstone (Victoria Falls), Ndola, Solwezi, and South Luangwa National Park.",
+      sources: [
+        "https://www.proflight-zambia.com/",
+        "https://en.wikipedia.org/wiki/Proflight_Zambia",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  SD: [
+    {
+      id: "sd-sudan-airways",
+      countryCode: "SD",
+      name: "Sudan Airways",
+      iata: "SD",
+      icao: "SUD",
+      founded: 1946,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Khartoum International Airport (KRT)",
+        "Port Sudan New International Airport (PZU)",
+      ],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Airbus A320-200, Boeing 737)",
+      },
+      logo: "/airline-logos/sd/sudan-airways.svg",
+      logoExplainer:
+        "Features a stylized white secretary bird (Sagittarius serpentarius, Sudan's national bird emblem) soaring dynamically against an emerald green disc, reflecting centuries of Nile valley culture and seven decades of pioneering African air routes.",
+      sources: [
+        "https://sudanair.com/",
+        "https://en.wikipedia.org/wiki/Sudan_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "sd-badr-airlines",
+      countryCode: "SD",
+      name: "Badr Airlines",
+      iata: "J4",
+      icao: "BDR",
+      founded: 2004,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Port Sudan New International Airport (PZU)",
+        "Khartoum International Airport (KRT)",
+      ],
+      fleet: {
+        total: 7,
+        summary: "7 aircraft (Boeing 737-800, Boeing 737-500)",
+      },
+      logo: "/airline-logos/sd/badr-airlines.png",
+      logoExplainer:
+        "Features a radiant golden full moon and soaring bird crescent emblem, evoking the historic Battle of Badr and celestial guidance, paired with bold Arabic and English typography.",
+      sources: [
+        "https://badrairlines.com/",
+        "https://en.wikipedia.org/wiki/Badr_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  CV: [
+    {
+      id: "cv-cabo-verde-airlines",
+      countryCode: "CV",
+      name: "Cabo Verde Airlines",
+      iata: "VR",
+      icao: "TCV",
+      founded: 1958,
+      alliance: "None",
+      hubs: [
+        "Amílcar Cabral International Airport (SID)",
+        "Nelson Mandela International Airport (RAI)",
+      ],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Boeing 737 MAX 8, Boeing 737-700)",
+      },
+      logo: "/airline-logos/cv/cabo-verde-airlines.svg",
+      logoExplainer:
+        "Displays dynamic ocean-blue, magenta, and coral ribbons forming the stylized letters 'C' and 'V' alongside soaring seabird wings, celebrating the Atlantic trade winds, vibrant Creole culture, and island-hopping between the Barlavento and Sotavento archipelagos.",
+      sources: [
+        "https://www.caboverdeairlines.com/",
+        "https://en.wikipedia.org/wiki/Cabo_Verde_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  GA: [
+    {
+      id: "ga-fly-gabon",
+      countryCode: "GA",
+      name: "FlyGabon (AfriJet)",
+      iata: "J7",
+      icao: "ABS",
+      founded: 2024,
+      alliance: "None",
+      hubs: [
+        "Léon-Mba International Airport (LBV)",
+        "Port-Gentil International Airport (POG)",
+      ],
+      fleet: {
+        total: 8,
+        summary: "8 aircraft (ATR 72-600, Airbus A320-200)",
+      },
+      logo: "/airline-logos/ga/fly-gabon.png",
+      logoExplainer:
+        "Features a bold, stylized soaring hornbill wing in deep emerald green, sunny gold, and marine blue mirroring the Gabonese national flag, symbolizing national renewal, equatorial rainforest biodiversity, and sovereign air connectivity across Central Africa.",
+      sources: [
+        "https://www.flygabon.com/",
+        "https://en.wikipedia.org/wiki/FlyGabon",
+        "https://en.wikipedia.org/wiki/AfriJet",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
