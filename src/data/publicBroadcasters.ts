@@ -2377,6 +2377,168 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "National Public Broadcasting Company of Ukraine joint-stock company trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Mexico
+  MX: [
+    {
+      id: "mx-once",
+      countryCode: "MX",
+      name: "Canal Once",
+      officialName: "XEIPN-TDT Canal Once (Instituto Politécnico Nacional)",
+      founded: 1959,
+      primaryFunding: "Federal government budget appropriation from the Federal Expenditure Budget (PEF) allocated via the Secretariat of Public Education (SEP) and Instituto Politécnico Nacional (IPN), with limited educational commercial underwriting",
+      headquarters: "Manuel Carpio 475, Casco de Santo Tomás, Miguel Hidalgo, Mexico City",
+      annualPublicFunding: {
+        total: "MXN 612.0 million federal budget appropriation (Presupuesto de Egresos de la Federación PEF FY 2024; approx. US$34M)",
+        perCapita: "MXN 4.70 / citizen / year (approx. US$0.26 / year)",
+      },
+      dailyMarketShare: "3.2% national television audience share across 11.1 (general) and 11.2 (Once Niñas y Niños) (IFT Instituto Federal de Telecomunicaciones 2024; Once Niñas y Niños is Mexico's highest-rated public children's channel)",
+      brandTrustScore: {
+        score: "66%",
+        source: "Reuters Institute Digital News Report 2024 (Canal Once News and Canal 22 are among Mexico's most trusted cultural and educational institutions)",
+      },
+      localContentQuota: "Over 80% Mexican domestic production quota under the Federal Telecommunications and Broadcasting Law (LFTR), pioneering original Mexican educational fiction, indigenous cultural documentaries, and scientific broadcasts",
+      staffHeadcount: "840 permanent civil and technical employees (Informe de Labores IPN / Canal Once 2024)",
+      logo: "/broadcaster-logos/mx/once.png",
+      logoExplainer:
+        "Redesigned in 2025, the Canal Once emblem displays the iconic number '11' formed by two dynamic vertical parallel rectangles with rounded terminal corners rendered in emerald jade green. The dual bars represent open communication channels, educational elevation, and pioneering institutional public broadcasting across Mexico.",
+      sources: [
+        "https://canalonce.mx/transparencia",
+        "https://www.ift.org.mx/estadisticas/informes-del-mercado-de-audiovisuales",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/mexico",
+      ],
+      licenceNote: "Instituto Politécnico Nacional public educational broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Cuba
+  CU: [
+    {
+      id: "cu-cubavision",
+      countryCode: "CU",
+      name: "Cubavisión",
+      officialName: "Instituto de Información y Comunicación Social (ICS, formerly ICRT) / Cubavisión",
+      founded: 1950,
+      primaryFunding: "100% direct central state budget allocation from the Ministry of Finance and Prices (Ministerio de Finanzas y Precios); 100% commercial-free with zero private commercial advertising",
+      headquarters: "Edificio Radiocentro, Calle 23 No. 258, Vedado, Plaza de la Revolución, Havana",
+      annualPublicFunding: {
+        total: "CUP 1,420 million central state budget appropriation (Ley del Presupuesto del Estado & ICS FY 2024)",
+        perCapita: "CUP 129 / resident / year (approx. CUP 0.35 / day)",
+      },
+      dailyMarketShare: "62.0% national free-to-air television viewing share across Cubavisión, Tele Rebelde (sports), Canal Educativo, Canal Caribe (news), and Multivisión (ICS Estudios de Audiencia 2024)",
+      brandTrustScore: {
+        score: "State Official",
+        source: "Instituto de Información y Comunicación Social (ICS) official state broadcast authority",
+      },
+      localContentQuota: "Over 70% Cuban domestic content quota across general channels under national cultural guidelines, prioritizing Cuban cinema (ICAIC), national soap operas, live cultural concerts, and educational curricula",
+      staffHeadcount: "4,500 employees nationwide across national studios and 15 provincial telecenters (ICS Balance Anual 2024)",
+      logo: "/broadcaster-logos/cu/cubavision.png",
+      logoExplainer:
+        "The Cubavisión emblem features a stylized, vibrant tricolor geometric star inspired by the lone star of the Cuban national flag, enclosed in flowing arcs of national red, royal blue, and white. The emblem conveys patriotic solidarity, artistic heritage, and nationwide terrestrial broadcasting from Havana to all provinces.",
+      sources: [
+        "https://www.cubatv.icrt.cu/",
+        "https://www.mfp.gob.cu/",
+      ],
+      licenceNote: "Instituto de Información y Comunicación Social state public broadcasting trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Costa Rica
+  CR: [
+    {
+      id: "cr-trece",
+      countryCode: "CR",
+      name: "Canal Trece / SINART",
+      officialName: "Sistema Nacional de Radio y Televisión, S.A. (SINART Costa Rica)",
+      founded: 1978,
+      primaryFunding: "State budget subsidy from the Ministry of Culture and Youth (MCJ) combined with statutory public institutional advertising contracts (10% state agency ad spend mandate under Law 8307)",
+      headquarters: "La Uruca, San José",
+      annualPublicFunding: {
+        total: "CRC 4,850 million state budget and statutory public contracts (Presupuesto Ordinario de la República FY 2024; approx. US$9.5M)",
+        perCapita: "CRC 930 / citizen / year (approx. US$1.82 / year)",
+      },
+      dailyMarketShare: "4.5% national television audience share across Canal Trece (13.1) (Kantar IBOPE Media Costa Rica 2024)",
+      brandTrustScore: {
+        score: "58%",
+        source: "CIEP-UCR Public Media Survey & Reuters DNR 2024 (Canal Trece is widely recognized as Costa Rica's non-partisan cultural reference)",
+      },
+      localContentQuota: "At least 60% Costa Rican cultural and educational content quota under the Organic Law of SINART, promoting local folk music, environmental preservation, and regional municipal affairs",
+      staffHeadcount: "185 permanent employees (SINART Informe de Gestión 2024)",
+      logo: "/broadcaster-logos/cr/trece.png",
+      logoExplainer:
+        "The Canal Trece visual mark features the bold numeral '13' rendered in energetic turquoise and cerulean blue with a stylized forward-sweeping circular flourish. The contemporary aesthetic symbolizes democratic dialogue, Costa Rican biodiversity, and community connection across the Central Valley and coastal provinces.",
+      sources: [
+        "https://costaricamedios.cr/",
+        "https://www.hacienda.go.cr/",
+      ],
+      licenceNote: "Sistema Nacional de Radio y Televisión, S.A. state company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Jamaica
+  JM: [
+    {
+      id: "jm-tvj",
+      countryCode: "JM",
+      name: "TVJ",
+      officialName: "Television Jamaica (RJR Communications Group / RJRGLEANER)",
+      founded: 1963,
+      primaryFunding: "Public service commercial hybrid model: Commercial advertising and subscription revenue operating under public service license obligations from the Broadcasting Commission of Jamaica (BCJ)",
+      headquarters: "32 Lyndhurst Road, Kingston 5",
+      annualPublicFunding: {
+        total: "Commercial Public Trust model (J$5,800 million total operating turnover RJRGLEANER FY 2024; approx. US$37M)",
+        perCapita: "J$2,070 / citizen / year equivalent total broadcast media investment (approx. US$13.20)",
+      },
+      dailyMarketShare: "61.4% national television viewership share across TVJ, TVJ SN (sports), and RETV (Market Research Services Limited Jamaica 2024; TVJ Prime Time News holds unmatched national leadership)",
+      brandTrustScore: {
+        score: "76%",
+        source: "Market Research Services Jamaica & Reuters DNR 2024 (#1 most trusted television news provider in Jamaica for TVJ Prime Time News)",
+      },
+      localContentQuota: "Over 55% Jamaican domestic production quota under Broadcasting Commission guidelines, investing extensively in local investigative journalism, School's Challenge Quiz, and reggae/dancehall cultural festivals",
+      staffHeadcount: "480 permanent staff (RJRGLEANER Annual Report 2024)",
+      logo: "/broadcaster-logos/jm/tvj.png",
+      logoExplainer:
+        "The Television Jamaica emblem features three bold sans-serif letterforms 'TVJ' highlighted with vivid national yellow and green accents evoking the Jamaican national flag. The energetic, approachable typographic style conveys community pride, Caribbean warmth, and authoritative broadcast journalism.",
+      sources: [
+        "https://www.televisionjamaica.com/",
+        "https://www.broadcastingcommission.org/",
+        "https://www.rjrgleanergroup.com/annual-reports/",
+      ],
+      licenceNote: "Television Jamaica public service commercial licensee trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Trinidad and Tobago
+  TT: [
+    {
+      id: "tt-ttt",
+      countryCode: "TT",
+      name: "TTT",
+      officialName: "TTT Limited (Trinidad and Tobago Television)",
+      founded: 1962,
+      primaryFunding: "State subvention from the Ministry of Communications / Office of the Prime Minister supplemented by commercial advertising and corporate sponsorships",
+      headquarters: "11A Maraval Road, Port of Spain",
+      annualPublicFunding: {
+        total: "TT$ 32.5 million government subvention (National Budget Estimates of Expenditure FY 2024; approx. US$4.8M)",
+        perCapita: "TT$ 23.20 / citizen / year (approx. US$3.45 / year)",
+      },
+      dailyMarketShare: "18.5% television audience share across TTT and Talk City 91.1 FM (Market Facts & Opinions Trinidad 2024; TTT News at 7 is a flagship national newscast)",
+      brandTrustScore: {
+        score: "64%",
+        source: "Market Facts & Opinions (MFO) National Media Trust Survey 2024",
+      },
+      localContentQuota: "Minimum 50% Trinidad and Tobago domestic programming quota, showcasing Calypso and Soca music, Carnival arts, Parliamentary debates, and local drama",
+      staffHeadcount: "165 permanent employees (TTT Limited Annual Administrative Report 2024)",
+      logo: "/broadcaster-logos/tt/ttt.png",
+      logoExplainer:
+        "Reintroduced in 2018 upon the relaunch of the historic broadcaster, the TTT logo features three bold, connected sans-serif capital letters 'TTT' in national jet black and brilliant scarlet red. The intertwined bars symbolize the twin-island republic's broadcast waves, cultural cohesion, and Caribbean storytelling heritage.",
+      sources: [
+        "https://www.ttt.live/",
+        "https://www.finance.gov.tt/",
+      ],
+      licenceNote: "TTT Limited state-owned media company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
