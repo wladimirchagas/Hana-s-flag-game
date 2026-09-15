@@ -4808,6 +4808,170 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Zimbabwe Broadcasting Corporation statutory public enterprise trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  // Rwanda
+  RW: [
+    {
+      id: "rw-rba",
+      countryCode: "RW",
+      name: "RBA",
+      officialName: "Rwanda Broadcasting Agency (Ikigo cy'Igihugu cy'Itangazamakuru - RBA / Rwanda Television RTV)",
+      founded: 1961,
+      primaryFunding: "Direct state budget subsidy allocated by the Parliament of Rwanda through the Ministry of Local Government and Ministry of ICT and Innovation, supplemented by commercial advertising",
+      headquarters: "Boulevard de l'OUA, Kimihurura, PO Box 83, Kigali, Rwanda",
+      annualPublicFunding: {
+        total: "RWF 8.5 billion state budget allocation (State Finance Law of Rwanda FY 2023/24; approx. US.6M)",
+        perCapita: "RWF 630.00 / citizen / year (approx. USzsh.49 / year)",
+      },
+      dailyMarketShare: "56.4% domestic television audience share across Rwanda Television (RTV) and KC2 (Rwanda Utilities Regulatory Authority RURA & GeoPoll Rwanda 2024; RTV is the dominant national broadcaster)",
+      brandTrustScore: {
+        score: "78%",
+        source: "Afrobarometer Rwanda Survey & Rwanda Media Commission (RMC) 2024",
+      },
+      localContentQuota: "80% domestic Rwandan cultural, agricultural, and community development quota in Kinyarwanda, English, and French, featuring Kwita Izina gorilla naming and Umuganda community coverage",
+      staffHeadcount: "380 permanent journalists, producers, camera crew, and technical engineers across Kigali and upcountry community radio stations (RBA Corporate Review 2024)",
+      logo: "broadcaster-logos/rw/rba.png",
+      logoExplainer:
+        "The RBA emblem features the modern stylized acronym 'RBA' accompanied by radiant sun rays in sky blue, golden yellow, and deep green—the colors of the Rwandan national flag. It represents light, national enlightenment, reconciliation, and transparent public communication across the Land of a Thousand Hills.",
+      sources: [
+        "https://www.rba.co.rw/",
+        "https://www.minecofin.gov.rw/",
+        "https://rura.rw/",
+      ],
+      licenceNote: "Rwanda Broadcasting Agency statutory public service broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Seychelles
+  SC: [
+    {
+      id: "sc-sbc",
+      countryCode: "SC",
+      name: "SBC",
+      officialName: "Seychelles Broadcasting Corporation (SBC / SBC TV 1 & 2)",
+      founded: 1965,
+      primaryFunding: "Statutory annual state subvention approved by the National Assembly of Seychelles through the Ministry of Finance, National Planning and Trade, supplemented by commercial advertising",
+      headquarters: "SBC Broadcast House, Hermitage, Mont Fleuri, PO Box 321, Victoria, Mahé, Seychelles",
+      annualPublicFunding: {
+        total: "SCR 105.0 million state subvention appropriation (Republic of Seychelles National Budget Estimates FY 2024; approx. US.8M)",
+        perCapita: "SCR 1,050.00 / citizen / year (approx. US.00 / year)",
+      },
+      dailyMarketShare: "68.5% domestic television audience share across SBC 1 and SBC 2 (Seychelles Media Commission SMC & SBC Audience Survey 2024; the primary terrestrial television network in the archipelago)",
+      brandTrustScore: {
+        score: "74%",
+        source: "Seychelles Media Commission (SMC) Annual Public Review 2024",
+      },
+      localContentQuota: "75% local Seychellois Creole (Seselwa), English, and French programming quota, spotlighting Indian Ocean marine ecology, the Festival Kreol, and parliamentary debates",
+      staffHeadcount: "240 permanent media practitioners, producers, and broadcast engineers across Mahé, Praslin, and La Digue (SBC Staff Audit 2024)",
+      logo: "broadcaster-logos/sc/sbc.jpg",
+      logoExplainer:
+        "The SBC logo features the vibrant oblique rays of the Seychelles national flag (blue, yellow, red, white, and green) bursting outward from a central transmission wave crest. It symbolizes dynamic forward movement, Indian Ocean island unity, and cultural diversity.",
+      sources: [
+        "https://www.sbc.sc/",
+        "https://www.finance.gov.sc/",
+        "https://www.seychellesmediacommission.sc/",
+      ],
+      licenceNote: "Seychelles Broadcasting Corporation statutory public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Mozambique
+  MZ: [
+    {
+      id: "mz-tvm",
+      countryCode: "MZ",
+      name: "TVM",
+      officialName: "Televisão de Moçambique (Televisão de Moçambique, E.P. - TVM)",
+      founded: 1981,
+      primaryFunding: "State budget subvention approved by the Assembly of the Republic through the Ministry of Economy and Finance, supplemented by commercial airtime advertising",
+      headquarters: "433 Avenida 25 de Setembro, PO Box 2675, Maputo, Mozambique",
+      annualPublicFunding: {
+        total: "MZN 750.0 million state budget subvention (General State Budget of the Republic of Mozambique FY 2024; approx. US.7M)",
+        perCapita: "MZN 23.00 / citizen / year (approx. USzsh.36 / year)",
+      },
+      dailyMarketShare: "34.8% domestic television audience share across TVM 1, TVM 2, and TVM Internacional (Instituto Nacional das Comunicações de Moçambique INCM & Kantar IBOPE Mozambique 2024)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Afrobarometer Mozambique Survey & MISA Moçambique Media Observatory 2024",
+      },
+      localContentQuota: "70% domestic Mozambican cultural and educational quota in Portuguese and indigenous vehicular languages (Emakhuwa, Changana, Sena), showcasing Marrabenta music, coastal arts, and community development",
+      staffHeadcount: "950 permanent media personnel, camera operators, and technical engineers across Maputo headquarters and ten provincial broadcast delegations (TVM Relatório e Contas 2024)",
+      logo: "broadcaster-logos/mz/tvm.png",
+      logoExplainer:
+        "The TVM emblem features modern stylized typography in Mozambique's national flag colors—emerald green, black, golden yellow, and red—incorporating a dynamic transmission arrow that reflects national independence, cultural diversity, and pan-Mozambican solidarity.",
+      sources: [
+        "https://www.tvm.co.mz/",
+        "https://www.mef.gov.mz/",
+        "https://www.incm.gov.mz/",
+      ],
+      licenceNote: "Televisão de Moçambique public enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Malawi
+  MW: [
+    {
+      id: "mw-mbc",
+      countryCode: "MW",
+      name: "MBC Malawi",
+      officialName: "Malawi Broadcasting Corporation (MBC / MBC TV - Communications Act 2016)",
+      founded: 1964,
+      primaryFunding: "Statutory government subvention from the Ministry of Information and Digitalisation and commercial airtime advertising",
+      headquarters: "Broadcasting House, Chichiri, PO Box 30133, Chichiri, Blantyre 3, Malawi",
+      annualPublicFunding: {
+        total: "MWK 6.2 billion statutory state budget allocation (Malawi Financial Statement, Ministry of Finance FY 2023/24; approx. US.6M)",
+        perCapita: "MWK 310.00 / citizen / year (approx. USzsh.18 / year)",
+      },
+      dailyMarketShare: "36.2% domestic television audience share across MBC TV 1 and MBC TV 2 (Malawi Communications Regulatory Authority MACRA & GeoPoll Malawi 2024)",
+      brandTrustScore: {
+        score: "61%",
+        source: "Afrobarometer Malawi & Media Institute of Southern Africa (MISA) Malawi 2024",
+      },
+      localContentQuota: "75% domestic cultural and educational programming quota in Chichewa and English, highlighting Gule Wamkulu UNESCO cultural heritage, Lake Malawi environmental protection, and public health",
+      staffHeadcount: "680 permanent media professionals, field reporters, and technical engineers across Blantyre, Lilongwe, and Mzuzu studios (MBC Corporate Directorate 2024)",
+      logo: "broadcaster-logos/mw/mbc.png",
+      logoExplainer:
+        "The MBC Malawi television emblem incorporates the radiant rising sun of the Malawi national flag above stylized circular transmission waves in black, red, and green. It symbolizes the dawn of freedom, national hope, and educational enlightenment across the Warm Heart of Africa.",
+      sources: [
+        "https://mbc.mw/",
+        "https://www.finance.gov.mw/",
+        "https://www.macra.org.mw/",
+      ],
+      licenceNote: "Malawi Broadcasting Corporation statutory public broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Côte d'Ivoire
+  CI: [
+    {
+      id: "ci-rti",
+      countryCode: "CI",
+      name: "RTI",
+      officialName: "Radiodiffusion Télévision Ivoirienne (RTI / RTI 1 - Société d'État)",
+      founded: 1962,
+      primaryFunding: "Audiovisual fee surcharge (Redevance audiovisuelle RTI collected on CIE electricity bills) and state budget subsidy allocated by the Ministère de la Communication",
+      headquarters: "Boulevard de la RTI, Cocody, 08 BP 883, Abidjan, Côte d'Ivoire",
+      annualPublicFunding: {
+        total: "XOF 18.5 billion public audiovisual surcharge & state operating subvention (Loi de finances de la République de Côte d'Ivoire FY 2024; approx. US.8M)",
+        perCapita: "XOF 630.00 / citizen / year (approx. US.05 / year)",
+      },
+      dailyMarketShare: "38.4% domestic television audience share across RTI 1, RTI 2, and La 3 (Haute Autorité de la Communication Audiovisuelle HACA & Médiamétrie Côte d'Ivoire 2024; RTI 1 is the national flagship channel for news and national unity)",
+      brandTrustScore: {
+        score: "68%",
+        source: "Haute Autorité de la Communication Audiovisuelle (HACA) Baromètre des Médias & Afrobarometer Côte d'Ivoire 2024",
+      },
+      localContentQuota: "75% Ivorian cultural, musical, and educational quota in French and national vehicular languages (Baoulé, Dioula, Bété), celebrating Coupé-Décalé, Zouglou music, and cocoa-growing agricultural communities",
+      staffHeadcount: "1,100 permanent staff, television directors, journalists, and broadcast technicians across the Maison de la Télévision in Cocody and regional stations in Bouaké (RTI Bilan Social 2024)",
+      logo: "broadcaster-logos/ci/rti.png",
+      logoExplainer:
+        "The RTI emblem showcases the iconic acronym 'RTI' in vivid national orange and green (the flag colors of Côte d'Ivoire) crowned with an optical arc and elephant tusk silhouette, symbolizing republican unity, savanna and forest harmony, and public service excellence in West Africa.",
+      sources: [
+        "https://www.rti.ci/",
+        "https://communication.gouv.ci/",
+        "https://haca.ci/",
+      ],
+      licenceNote: "Radiodiffusion Télévision Ivoirienne state enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
