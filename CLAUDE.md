@@ -3512,6 +3512,29 @@ every push. A session that worked on party data without updating
 `docs/POLITICAL_PARTY_AUDIT_2026.md`, or that stopped to ask whether to carry on while countries
 remained unticked, has violated this rule.
 
+## Commercial airline logos: show brand emblems, never route maps or aircraft photos — hard rule, do not override without approval
+
+**The Learn-mode "Commercial airlines" view (`src/data/commercialAirlines.ts`, rendered by `CommercialAirlinesGrid.tsx` / `FlagGrid.tsx`, images bundled locally under `public/airline-logos/{countryCode}/`) displays the commercial airlines of each country. The logo MUST be the airline's official brand logo, wordmark, or aircraft empennage emblem — never an operational route map, destinations chart, fleet diagram, or aircraft livery photograph.**
+
+### Why this rule exists
+
+Reported by the owner (2026-09): Spain's **Vueling** logo displayed a massive, distorted geographic map instead of the airline's familiar wordmark. The download script had fetched Commons `File:Vueling.svg`, which is titled *"Countries in which Vueling operates"* — an operations route map containing 2,246 SVG elements, 209 country borders with `<title>` tags, and weighing 1.52 MB. The real logo was Commons `File:Logo Vueling.svg` (4.9 KB, graphite-grey "vueling" with a yellow dot over the 'i').
+
+### Rules
+
+1. **The logo is the airline's official brand logo / wordmark / tail emblem** — never an operational route map, destination network map, fleet diagram, or aircraft livery photo.
+2. **Every airline must have a bundled logo matching its `logoExplainer`**: the explanation must accurately describe the emblem's colours, symbols, and design lineage.
+3. **Logos must be lightweight vector SVGs (or clean compressed rasters when no vector exists)**:
+   - Max SVG file size is 300 KB.
+   - Max raster file size is 500 KB (lossless recompression with `sharp` required for uncompressed PNGs).
+   - SVGs must not exceed 500 vector elements.
+   - SVGs must never contain multiple geographic `<title>` tags or map projection metadata (the Vueling guard).
+4. **Never weaken `scripts/check-commercial-airlines.mjs`** to make an airline pass. If it fires, fix the logo or its metadata.
+
+### Enforcement
+
+`scripts/check-commercial-airlines.mjs` (`npm run flags:check:airlines`, in `npm run flags:check` and the `flag-integrity` CI workflow) fails the build on: missing/corrupt files, HTML error pages, SVG route maps (> 5 `<title>` tags or map projection keywords), element counts > 500, oversized assets (> 300 KB SVG, > 500 KB raster), missing sources, mismatched IDs/countryCodes, or explainers < 25 characters.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:
