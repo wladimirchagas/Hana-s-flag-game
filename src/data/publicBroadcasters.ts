@@ -3992,7 +3992,173 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Bhutan Broadcasting Service Corporation public corporation trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Georgia
+  GE: [
+    {
+      id: "ge-gpb",
+      countryCode: "GE",
+      name: "GPB",
+      officialName: "Georgian Public Broadcaster (საქართველოს საზოგადოებრივი მაუწყებელი - GPB / პირველი არხი 1TV)",
+      founded: 1956,
+      primaryFunding: "Statutory public subvention from the State Budget of Georgia under the Law of Georgia on Broadcasting",
+      headquarters: "68 Kostava Street, 0171 Tbilisi",
+      annualPublicFunding: {
+        total: "GEL 101.5 million state budget public broadcasting appropriation (Law on the State Budget of Georgia FY 2024; approx. US$37.6M)",
+        perCapita: "GEL 27.40 / citizen / year (approx. US$10.15 / year)",
+      },
+      dailyMarketShare: "16.8% national television audience share across First Channel (1TV) and Second Channel (Teleskoli) (TVMR Georgia / Nielsen licensee 2024; leading national channel for documentary, educational, and public affairs debates)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Caucasus Research Resource Center (CRRC) Georgia & NDI Public Opinion Survey 2024",
+      },
+      localContentQuota: "70% domestic Georgian cultural and informational programming quota, broadcasting in Georgian with regular daily news bulletins in Abkhazian, Ossetian, Armenian, and Azerbaijani",
+      staffHeadcount: "1,100 permanent media professionals, correspondents, and technical engineers (GPB Annual Performance Report 2024)",
+      logo: "broadcaster-logos/ge/gpb.png",
+      logoExplainer:
+        "The Georgian Public Broadcaster emblem features the stylized typography '1TV' (პირველი არხი) rendered in clean minimalist geometry in deep navy and crimson, symbolizing editorial independence, modern European public service standards, and historic preeminence as Georgia's first television channel.",
+      sources: [
+        "https://1tv.ge/",
+        "https://mof.ge/",
+        "https://comcom.ge/",
+      ],
+      licenceNote: "Georgian Public Broadcaster statutory public entity trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Azerbaijan
+  AZ: [
+    {
+      id: "az-aztv",
+      countryCode: "AZ",
+      name: "AzTV",
+      officialName: "Azerbaijan Television and Radio Broadcasting CJSC (Azərbaycan Televiziya və Radio Verilişləri QSC - AzTV)",
+      founded: 1956,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Finance of the Republic of Azerbaijan",
+      headquarters: "1 Mehdi Huseyn Street, AZ1006 Baku",
+      annualPublicFunding: {
+        total: "AZN 46.5 million state budget public service broadcasting allocation (State Budget of the Republic of Azerbaijan FY 2024; approx. US$27.4M)",
+        perCapita: "AZN 4.58 / citizen / year (approx. US$2.69 / year)",
+      },
+      dailyMarketShare: "26.5% domestic television audience share across AzTV, İdman TV (Sports), and Mədəniyyət TV (Culture) (Audiencemarket Azerbaijan & Audiovisual Council 2024)",
+      brandTrustScore: {
+        score: "66%",
+        source: "Social Research Center (STM) Azerbaijan & Audiovisual Council Media Report 2024",
+      },
+      localContentQuota: "75% domestic Azerbaijani production quota under the Law on Media, dedicated to Azerbaijani literature, Mugham musical heritage, Caucasian history, and state affairs",
+      staffHeadcount: "1,850 journalists, directors, technical specialists, and performing artists of the AzTV Orchestra and Choir (AzTV Corporate Review 2024)",
+      logo: "broadcaster-logos/az/aztv.png",
+      logoExplainer:
+        "The AzTV emblem features the dynamic wordmark in Azerbaijan's national flag colors—sky blue, bright red, and green—with a modern fluid swoop across the letter 'A' symbolizing Caspian sea waves, oil-rich eternal flames, and contemporary satellite transmission.",
+      sources: [
+        "https://www.aztv.az/",
+        "https://maliyye.gov.az/",
+        "https://abua.gov.az/",
+      ],
+      licenceNote: "Azerbaijan Television and Radio Broadcasting Closed Joint-Stock Company state trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Maldives
+  MV: [
+    {
+      id: "mv-psm",
+      countryCode: "MV",
+      name: "PSM",
+      officialName: "Public Service Media (ޕަބްލިކް ސާވިސް މީޑިއާ - PSM / Television Maldives TVM)",
+      founded: 1978,
+      primaryFunding: "Annual state budget allocation voted by the People's Majlis through the Ministry of Finance, supplemented by commercial advertising",
+      headquarters: "Radio Building, Moonimaage, Ameenee Magu, Malé 20307",
+      annualPublicFunding: {
+        total: "MVR 88.0 million state budget subvention envelope (Ministry of Finance National Budget & PSM Annual Report FY 2024; approx. US$5.7M)",
+        perCapita: "MVR 169.00 / citizen / year (approx. US$11.00 / year)",
+      },
+      dailyMarketShare: "42.0% domestic television audience share across TVM, Yes TV (Youth & Sports), and News 13 (Maldives Broadcasting Commission MBC & PSM Audience Survey 2024)",
+      brandTrustScore: {
+        score: "65%",
+        source: "Maldives Broadcasting Commission (MBC) National Media Assessment 2024",
+      },
+      localContentQuota: "85% local production quota in Dhivehi, promoting Maldivian island traditions, coral reef ecological conservation, and Islamic education across the archipelago",
+      staffHeadcount: "420 permanent journalists, producers, boat transmission crews, and broadcast engineers (PSM Human Resources Audit 2024)",
+      logo: "broadcaster-logos/mv/psm.jpg",
+      logoExplainer:
+        "The Public Service Media logo showcases a modern circular emblem forming a stylized 'P' and 'S' in vibrant coral red and oceanic turquoise. The design symbolizes digital communication connecting the scattered coral atolls of the Maldives across the Indian Ocean.",
+      sources: [
+        "https://psm.mv/",
+        "https://finance.gov.mv/",
+        "https://broadcom.org.mv/",
+      ],
+      licenceNote: "Public Service Media statutory public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Kyrgyzstan
+  KG: [
+    {
+      id: "kg-utrk",
+      countryCode: "KG",
+      name: "UTRK",
+      officialName: "National Broadcasting Corporation of the Kyrgyz Republic (Кыргыз Республикасынын Улуттук телерадиоберүү корпорациясы - УТРК)",
+      founded: 1958,
+      primaryFunding: "Direct state budget subsidy approved by the Jogorku Kenesh (Supreme Council) under the Ministry of Finance of the Kyrgyz Republic",
+      headquarters: "59 Molodaya Gvardiya Boulevard, 720010 Bishkek",
+      annualPublicFunding: {
+        total: "KGS 460.0 million republican budget allocation (Republican Budget Law & Ministry of Culture, Information, Sports and Youth Policy FY 2024; approx. US$5.2M)",
+        perCapita: "KGS 65.70 / citizen / year (approx. US$0.74 / year)",
+      },
+      dailyMarketShare: "34.5% nationwide television audience share across UTRK, Ala-Too 24, Balastan (Children), Madaniyat (Culture), and Sport (Expert Consulting KG & Ministry of Culture 2024)",
+      brandTrustScore: {
+        score: "63%",
+        source: "Central Asia Barometer Kyrgyz Republic Survey & Media Policy Institute 2024",
+      },
+      localContentQuota: "70% national content requirement (minimum 50% in the state Kyrgyz language, alongside official Russian and regional languages), focusing on Manas epic heritage, nomad traditions, and state news",
+      staffHeadcount: "950 permanent editors, reporters, sound engineers, and regional station crew across seven oblasts (UTRK Personnel Directorate 2024)",
+      logo: "broadcaster-logos/kg/utrk.png",
+      logoExplainer:
+        "The UTRK emblem presents the bold Latin and Cyrillic acronym 'UTRK' alongside the stylized golden sun with forty rays and the tunduk (circular yurt roof crest) in national crimson red and gold. It reflects sovereign Kyrgyz statehood, nomadic cultural roots, and communal unity.",
+      sources: [
+        "https://ktrk.kg/",
+        "https://minfin.kg/",
+        "https://minculture.gov.kg/",
+      ],
+      licenceNote: "National Broadcasting Corporation of the Kyrgyz Republic state entity trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Mauritius
+  MU: [
+    {
+      id: "mu-mbc",
+      countryCode: "MU",
+      name: "MBC",
+      officialName: "Mauritius Broadcasting Corporation (MBC)",
+      founded: 1964,
+      primaryFunding: "Audiovisual license fee (Rs 150/month electricity meter surcharge collected by Central Electricity Board) and government grant from the Prime Minister's Office",
+      headquarters: "Pasteur Street, Forest Side, Curepipe / Reduit, Moka",
+      annualPublicFunding: {
+        total: "MUR 430.0 million public TV surcharge collection & state operating subvention (National Budget of Mauritius & MBC Annual Report FY 2023–24; approx. US$9.3M)",
+        perCapita: "MUR 341.00 / citizen / year (approx. US$7.40 / year)",
+      },
+      dailyMarketShare: "54.2% domestic television audience share across MBC 1, MBC 2, MBC 3, Bhojpuri Channel, and digital terrestrial services (Independent Broadcasting Authority IBA & Kantar TNS Indian Ocean 2024)",
+      brandTrustScore: {
+        score: "64%",
+        source: "Afrobarometer Mauritius Survey & Media Watch Mauritius 2024",
+      },
+      localContentQuota: "65% local and multilingual cultural quota, providing daily news and entertainment in English, French, Mauritian Creole, Bhojpuri, Hindi, Tamil, Telugu, Marathi, Urdu, and Mandarin",
+      staffHeadcount: "620 permanent journalists, producers, audiovisual technicians, and administrative staff (MBC Corporate Directorate 2024)",
+      logo: "broadcaster-logos/mu/mbc.png",
+      logoExplainer:
+        "The MBC emblem features a vibrant curved multi-colored spiral ribbon in red, blue, yellow, and green—the four colors of the Mauritian national flag. The concentric bands represent transmission waves and the peaceful harmonious co-existence of the island's diverse multicultural communities.",
+      sources: [
+        "https://mbcradio.tv/",
+        "https://mof.govmu.org/",
+        "https://iba.govmu.org/",
+      ],
+      licenceNote: "Mauritius Broadcasting Corporation public statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
 
 
 
