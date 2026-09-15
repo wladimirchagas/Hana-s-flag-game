@@ -1799,11 +1799,16 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 {/* The flag the user just picked leads the widget: it sits directly
                     under the country dropdown, with its "What this flag means"
                     explainer immediately below (both live inside panelFlagBox), and
-                    the fact-sheet rows follow. */}
-                {display.kind === "modern" && panelFlagBox}
-                {/* When viewing airlines or broadcasters, show the selected one in the
-                    primary widget (same location as coat of arms, passports, crests),
-                    not in a separate panel. */}
+                    the fact-sheet rows follow.
+                    When viewing airlines or broadcasters, show the selected one instead
+                    (same location as coat of arms, passports, crests). */}
+                {display.kind === "modern" &&
+                  !(
+                    !subdivisionMode &&
+                    (effectiveGridContentType === "airline" ||
+                      effectiveGridContentType === "broadcaster")
+                  ) &&
+                  panelFlagBox}
                 {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "airline" && activeAirline && (
                   <AirlineDetails
                     airline={activeAirline}
