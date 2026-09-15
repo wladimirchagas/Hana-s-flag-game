@@ -4856,6 +4856,187 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  IL: [
+    {
+      id: "il-el-al",
+      countryCode: "IL",
+      name: "El Al",
+      iata: "LY",
+      icao: "ELY",
+      founded: 1948,
+      alliance: "None",
+      hubs: ["Ben Gurion Airport (TLV)"],
+      fleet: {
+        total: 47,
+        summary:
+          "47 aircraft (Boeing 787-8, Boeing 787-9 Dreamliner, Boeing 777-200ER, Boeing 737-800, Boeing 737-900ER)",
+      },
+      logo: "/airline-logos/il/el-al.svg",
+      logoExplainer:
+        "Features a dynamic typographic wordmark in English and Hebrew (אל על, meaning 'To the Skies'). The stylized lettering, originally refined by graphic designer Dan Reisinger, evokes forward aerodynamic propulsion and Israel's sovereign air connection to the global diaspora.",
+      sources: [
+        "https://www.elal.com/",
+        "https://en.wikipedia.org/wiki/El_Al",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "il-arkia",
+      countryCode: "IL",
+      name: "Arkia",
+      iata: "IZ",
+      icao: "AIZ",
+      founded: 1949,
+      alliance: "None",
+      hubs: ["Ben Gurion Airport (TLV)", "Ramon Airport (ETM)"],
+      fleet: {
+        total: 7,
+        summary: "7 aircraft (Airbus A321LR, Embraer E195-E1, Embraer E190)",
+      },
+      logo: "/airline-logos/il/arkia.svg",
+      logoExplainer:
+        "Features vibrant multicolored swooshes forming a stylized soaring bird and a cheerful cursive lowercase 'arkia' wordmark, representing warm Mediterranean leisure travel, holiday escapes, and domestic connectivity between Tel Aviv and the Red Sea port of Eilat.",
+      sources: [
+        "https://www.arkia.co.il/",
+        "https://en.wikipedia.org/wiki/Arkia",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  IR: [
+    {
+      id: "ir-iran-air",
+      countryCode: "IR",
+      name: "Iran Air",
+      iata: "IR",
+      icao: "IRA",
+      founded: 1944,
+      alliance: "None",
+      hubs: [
+        "Tehran Imam Khomeini International Airport (IKA)",
+        "Tehran Mehrabad International Airport (THR)",
+      ],
+      fleet: {
+        total: 32,
+        summary:
+          "32 aircraft (Airbus A300-600R, A310-300, A320-200, A321-200, A330-200, ATR 72-600, Fokker 100)",
+      },
+      logo: "/airline-logos/ir/iran-air.svg",
+      logoExplainer:
+        "The legendary 'Homa' emblem was designed in 1961 by Iranian designer Edward Zohrabian, inspired by the ancient Achaemenid griffin and Homa bird capitals atop the ceremonial columns of Persepolis. Portraying the mythical bird of good fortune and compassion, it was voted one of the finest airline insignias in aviation history by an international panel of graphic designers.",
+      sources: [
+        "https://www.iranair.com/",
+        "https://en.wikipedia.org/wiki/Iran_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  IQ: [
+    {
+      id: "iq-iraqi-airways",
+      countryCode: "IQ",
+      name: "Iraqi Airways",
+      iata: "IA",
+      icao: "IAW",
+      founded: 1945,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: ["Baghdad International Airport (BGW)"],
+      fleet: {
+        total: 34,
+        summary:
+          "34 aircraft (Boeing 787-8 Dreamliner, Boeing 737 MAX 8, Boeing 737-800, Boeing 777-200LR, Airbus A220-300, Airbus A330-200)",
+      },
+      logo: "/airline-logos/iq/iraqi-airways.svg",
+      logoExplainer:
+        "Features an emerald green circular emblem bearing a stylized golden winged falcon in swift soaring flight, flanked by graceful Arabic calligraphic flourishes representing Mesopotamian legacy, soaring national pride, and modern aviation renewal.",
+      sources: [
+        "https://www.iraqiairways.iq/",
+        "https://en.wikipedia.org/wiki/Iraqi_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  LB: [
+    {
+      id: "lb-middle-east-airlines",
+      countryCode: "LB",
+      name: "Middle East Airlines (MEA)",
+      iata: "ME",
+      icao: "MEA",
+      founded: 1945,
+      alliance: "SkyTeam",
+      hubs: ["Beirut–Rafic Hariri International Airport (BEY)"],
+      fleet: {
+        total: 22,
+        summary:
+          "22 aircraft (Airbus A321neo, Airbus A330-200, Airbus A321XLR on order)",
+      },
+      logo: "/airline-logos/lb/middle-east-airlines.svg",
+      logoExplainer:
+        "Features a proud red silhouette of the iconic Cedar of Lebanon (Cedrus libani)—the sacred national emblem symbolizing resilience, peace, and immortality—embraced by sweeping aerodynamic wing ribbons in blue and white representing the Levant's historic maritime and aerial gateway.",
+      sources: [
+        "https://www.mea.com.lb/",
+        "https://en.wikipedia.org/wiki/Middle_East_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  SY: [
+    {
+      id: "sy-syrian-air",
+      countryCode: "SY",
+      name: "Syrian Air",
+      iata: "RB",
+      icao: "SYR",
+      founded: 1946,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Damascus International Airport (DAM)",
+        "Aleppo International Airport (ALP)",
+      ],
+      fleet: {
+        total: 10,
+        summary: "10 aircraft (Airbus A320-200, Ilyushin Il-76, ATR 72)",
+      },
+      logo: "/airline-logos/sy/syrian-air.svg",
+      logoExplainer:
+        "Displays a stylized azure blue bird with swept-back wings encircled within a sky-blue ring, accompanied by clean bilingual Arabic and English typography, symbolizing flight across ancient trade crossroads and peaceful horizons.",
+      sources: [
+        "https://www.syriaair.com/",
+        "https://en.wikipedia.org/wiki/Syrian_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "sy-cham-wings",
+      countryCode: "SY",
+      name: "Cham Wings Airlines",
+      iata: "6Q",
+      icao: "SAW",
+      founded: 2007,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: ["Damascus International Airport (DAM)"],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Airbus A320-200)",
+      },
+      logo: "/airline-logos/sy/cham-wings.svg",
+      logoExplainer:
+        "Features stylized aerodynamic wings forming an ascending golden monogram and crest above bold Arabic calligraphy, symbolizing the historic Bilad al-Sham region and commercial air bridges linking Damascus to the wider Middle East.",
+      sources: [
+        "https://www.chamwings.com/",
+        "https://en.wikipedia.org/wiki/Cham_Wings_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
