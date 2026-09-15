@@ -1496,23 +1496,36 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
 
   function handleGridSelect(id: string, crestId?: string, airlineId?: string, broadcasterId?: string) {
     if (isModernEra) {
-      const c = codeToCountry.get(id);
-      if (!c) return;
-      setSelected({ kind: "modern", country: c });
-      setHovered(null);
-      // Remember which specific crest was clicked (a home nation / entity), so the
-      // panel shows THAT crest instead of the parent country's flag or crest. A
-      // plain country card clears it. Keyed to the parent so it self-clears when
-      // the user later selects a different country from the map or search.
-      setGridCrest(
-        crestId && gridContentType === "footballcrest" ? { id: crestId, parent: c.code } : null,
-      );
-      setGridAirlineId(
-        airlineId && gridContentType === "airline" ? airlineId : null,
-      );
-      setGridBroadcasterId(
-        broadcasterId && gridContentType === "broadcaster" ? broadcasterId : null,
-      );
+      // Only change map selection if it's NOT an airline/broadcaster tile.
+      // Airline/broadcaster tiles have selectId set to their country, but clicking them
+      // should NOT move the map — only update the grid selection and info panel.
+      const isAirlineOrBroadcaster = airlineId !== undefined || broadcasterId !== undefined;
+      if (!isAirlineOrBroadcaster) {
+        const c = codeToCountry.get(id);
+        if (!c) return;
+        setSelected({ kind: "modern", country: c });
+        setHovered(null);
+        // When selecting a plain country card, clear the grid-specific selections
+        setGridCrest(null);
+        setGridAirlineId(null);
+        setGridBroadcasterId(null);
+      } else {
+        // For airline/broadcaster selections, just update the grid selection
+        // without changing map selection.
+        setHovered(null);
+        // Remember which specific crest was clicked (a home nation / entity), so the
+        // panel shows THAT crest instead of the parent country's flag or crest.
+        const parentCode = display?.kind === "modern" ? display.country.code : "";
+        setGridCrest(
+          crestId && gridContentType === "footballcrest" ? { id: crestId, parent: parentCode } : null,
+        );
+        setGridAirlineId(
+          airlineId && gridContentType === "airline" ? airlineId : null,
+        );
+        setGridBroadcasterId(
+          broadcasterId && gridContentType === "broadcaster" ? broadcasterId : null,
+        );
+      }
     } else {
       const sel = selectionFromPolityName(id);
       if (!sel) return;
