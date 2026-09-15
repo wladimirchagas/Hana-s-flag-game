@@ -6318,6 +6318,138 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  ME: [
+    {
+      id: "me-air-montenegro",
+      countryCode: "ME",
+      name: "Air Montenegro (To Montenegro)",
+      iata: "4O",
+      icao: "MNE",
+      founded: 2021,
+      alliance: "None",
+      hubs: [
+        "Podgorica Airport (TGD)",
+        "Tivat Airport (TIV)",
+      ],
+      fleet: {
+        total: 4,
+        summary: "4 aircraft (Embraer E195, Airbus A320-200)",
+      },
+      logo: "/airline-logos/me/air-montenegro.svg",
+      logoExplainer:
+        "Features an aerodynamic emblem derived from the double-headed Montenegrin eagle, stylized with sleek royal blue wings and modern typography, symbolizing independence, coastal Mediterranean tourism, and European air connectivity.",
+      sources: [
+        "https://airmontenegro.com/",
+        "https://en.wikipedia.org/wiki/Air_Montenegro",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  SK: [
+    {
+      id: "sk-airexplore",
+      countryCode: "SK",
+      name: "AirExplore",
+      iata: "ED",
+      icao: "AXE",
+      founded: 2010,
+      alliance: "None",
+      hubs: ["Bratislava Airport (BTS)"],
+      fleet: {
+        total: 12,
+        summary:
+          "12 aircraft (Boeing 737-800, Boeing 737-800BCF cargo)",
+      },
+      logo: "/airline-logos/sk/airexplore.svg",
+      logoExplainer:
+        "Features a dynamic geometric crest composed of golden-yellow and sapphire blue triangular faceted aircraft wings, conveying precision aeronautical engineering, charter agility, and ACMI leasing reliability across Europe and worldwide.",
+      sources: [
+        "https://airexplore.sk/",
+        "https://en.wikipedia.org/wiki/AirExplore",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  SI: [
+    {
+      id: "si-adria-airways",
+      countryCode: "SI",
+      name: "Adria Airways",
+      iata: "JP",
+      icao: "ADR",
+      founded: 1961,
+      alliance: "Star Alliance",
+      hubs: ["Ljubljana Jože Pučnik Airport (LJU)"],
+      fleet: {
+        total: 20,
+        summary:
+          "Historic operations operated Airbus A319-100, Bombardier CRJ900, Bombardier CRJ700, and Saab 2000 across Europe",
+      },
+      logo: "/airline-logos/si/adria-airways.svg",
+      logoExplainer:
+        "Features the bold, modern 'ADRIA' typography flanked by the iconic Star Alliance member emblem and aerodynamic tail ribbons, celebrating nearly six decades as Slovenia's sovereign aviation ambassador to Europe and the Balkans.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Adria_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and historic brand logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  BA: [
+    {
+      id: "ba-bh-airlines",
+      countryCode: "BA",
+      name: "B&H Airlines",
+      iata: "JA",
+      icao: "BON",
+      founded: 1994,
+      alliance: "None",
+      hubs: ["Sarajevo International Airport (SJJ)"],
+      fleet: {
+        total: 3,
+        summary:
+          "Historic operations operated ATR 72-212, Boeing 737-400, and Airbus A319 connecting Bosnia to European capitals",
+      },
+      logo: "/airline-logos/ba/bh-airlines.png",
+      logoExplainer:
+        "Features dynamic sweeping flight bands and stylized wing chevrons in Aegean blue and warm golden-yellow echoing the national colors of Bosnia and Herzegovina, representing reliable air bridges connecting Sarajevo to Zurich, Frankfurt, Istanbul, and Vienna.",
+      sources: [
+        "https://en.wikipedia.org/wiki/B%26H_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and historic logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  MK: [
+    {
+      id: "mk-mat-macedonian",
+      countryCode: "MK",
+      name: "MAT Macedonian Airlines",
+      iata: "IN",
+      icao: "MAK",
+      founded: 1994,
+      alliance: "None",
+      hubs: [
+        "Skopje International Airport (SKP)",
+        "Ohrid St. Paul the Apostle Airport (OHD)",
+      ],
+      fleet: {
+        total: 5,
+        summary:
+          "Historic operations operated Boeing 737-300, Boeing 737-500, and McDonnell Douglas DC-9",
+      },
+      logo: "/airline-logos/mk/mat-macedonian.png",
+      logoExplainer:
+        "Displays the stylized acronym 'MAT' accompanied by dynamic aerodynamic speed arcs in royal red and golden yellow reflecting the Macedonian sun and national flag, symbolizing fifteen years of sovereign scheduled passenger service across Europe.",
+      sources: [
+        "https://en.wikipedia.org/wiki/MAT_Macedonian_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and historic logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
