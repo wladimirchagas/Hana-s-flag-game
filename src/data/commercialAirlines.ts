@@ -5037,6 +5037,186 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  AF: [
+    {
+      id: "af-ariana-afghan-airlines",
+      countryCode: "AF",
+      name: "Ariana Afghan Airlines",
+      iata: "FG",
+      icao: "AFG",
+      founded: 1955,
+      alliance: "None",
+      hubs: ["Kabul International Airport (KBL)"],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Boeing 737-400, Boeing 737-500, Airbus A310-300)",
+      },
+      logo: "/airline-logos/af/ariana.svg",
+      logoExplainer:
+        "Features an encircled soaring blue eagle with outstretched wings poised above a stylized globe meridian line, symbolizing ancient Bactrian and Ariana heritage, freedom of the skies, and sovereign Afghan air connectivity.",
+      sources: [
+        "https://www.flyariana.com/",
+        "https://en.wikipedia.org/wiki/Ariana_Afghan_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  YE: [
+    {
+      id: "ye-yemenia",
+      countryCode: "YE",
+      name: "Yemenia",
+      iata: "IY",
+      icao: "IYE",
+      founded: 1962,
+      alliance: "Arab Air Carriers' Organization (AACO)",
+      hubs: [
+        "Aden International Airport (ADE)",
+        "Sanaa International Airport (SAH)",
+        "Seiyun Airport (GXF)",
+      ],
+      fleet: {
+        total: 7,
+        summary: "7 aircraft (Airbus A330-200, Airbus A320-200)",
+      },
+      logo: "/airline-logos/ye/yemenia.svg",
+      logoExplainer:
+        "Features a dynamic tripartite swoosh emblem in vibrant red, white, and midnight blue reflecting the colors of the Yemeni national flag, joined by a stylized winged aircraft arrowhead conveying forward momentum across the Arabian peninsula.",
+      sources: [
+        "https://www.yemenia.com/",
+        "https://en.wikipedia.org/wiki/Yemenia",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  MV: [
+    {
+      id: "mv-maldivian",
+      countryCode: "MV",
+      name: "Maldivian",
+      iata: "Q2",
+      icao: "DQA",
+      founded: 2000,
+      alliance: "None",
+      hubs: ["Velana International Airport (MLE)"],
+      fleet: {
+        total: 25,
+        summary:
+          "25 aircraft (Airbus A320-200, Airbus A330-200, ATR 72-600, ATR 42-600, De Havilland Canada Dash 8-300, DHC-6 Twin Otter seaplanes)",
+      },
+      logo: "/airline-logos/mv/maldivian.svg",
+      logoExplainer:
+        "Features a gracefully soaring oceanic white tern (dhivehi kanbili) rendered in turquoise and deep sea-blue, evoking the pristine atolls, crystalline waters, and island-hopping aviation identity of the Maldivian archipelago.",
+      sources: [
+        "https://maldivian.aero/",
+        "https://en.wikipedia.org/wiki/Maldivian_(airline)",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "mv-villa-air",
+      countryCode: "MV",
+      name: "Villa Air (Flyme)",
+      iata: "VP",
+      icao: "VQI",
+      founded: 2011,
+      alliance: "None",
+      hubs: [
+        "Villa Airport Maamigili (VAM)",
+        "Velana International Airport (MLE)",
+      ],
+      fleet: {
+        total: 4,
+        summary: "4 aircraft (ATR 72-500, ATR 72-600, ATR 42-500)",
+      },
+      logo: "/airline-logos/mv/villa-air.svg",
+      logoExplainer:
+        "Features a modern stylized wave-wing in marine cyan and ocean blue forming a buoyant dynamic crest, expressing comfortable island transit to luxury resort atolls across South Ari.",
+      sources: [
+        "https://flyme.mv/",
+        "https://en.wikipedia.org/wiki/Flyme_(Maldives)",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  BT: [
+    {
+      id: "bt-drukair",
+      countryCode: "BT",
+      name: "Drukair – Royal Bhutan Airlines",
+      iata: "KB",
+      icao: "DRK",
+      founded: 1981,
+      alliance: "None",
+      hubs: ["Paro International Airport (PBH)"],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Airbus A320neo, Airbus A319-100, ATR 42-600)",
+      },
+      logo: "/airline-logos/bt/drukair.svg",
+      logoExplainer:
+        "Features the sacred Druk (the mythical Thunder Dragon of Bhutanese mythology) in intricate gold and orange soaring with jewel-bearing claws, honoring the Dragon King (Druk Gyalpo) and Bhutan's Himalayan Buddhist heritage against the dramatic mountain approaches of Paro valley.",
+      sources: [
+        "https://www.drukair.com.bt/",
+        "https://en.wikipedia.org/wiki/Drukair",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "bt-bhutan-airlines",
+      countryCode: "BT",
+      name: "Bhutan Airlines (Tashi Air)",
+      iata: "B3",
+      icao: "BTN",
+      founded: 2011,
+      alliance: "None",
+      hubs: ["Paro International Airport (PBH)"],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Airbus A319-100)",
+      },
+      logo: "/airline-logos/bt/bhutan-airlines.png",
+      logoExplainer:
+        "Features the auspicious Tashi tag-gye motif and a stylized golden winged falcon crest in Tibetan gold and crimson, representing blessing, prosperity, and private aviation innovation in the Kingdom of Bhutan.",
+      sources: [
+        "https://www.bhutanairlines.bt/",
+        "https://en.wikipedia.org/wiki/Bhutan_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  TM: [
+    {
+      id: "tm-turkmenistan-airlines",
+      countryCode: "TM",
+      name: "Turkmenistan Airlines",
+      iata: "T5",
+      icao: "TUA",
+      founded: 1992,
+      alliance: "None",
+      hubs: ["Ashgabat International Airport (ASB)"],
+      fleet: {
+        total: 25,
+        summary:
+          "25 aircraft (Boeing 777-300ER, Boeing 777-200LR, Boeing 737-800, Boeing 737-700, Airbus A330-200P2F cargo)",
+      },
+      logo: "/airline-logos/tm/turkmenistan-airlines.svg",
+      logoExplainer:
+        "Features a proud, stylized silver and turquoise falcon (Lachin) in graceful flight encircled within a radiant emerald green crest, reflecting the national bird and traditional falconry heritage of Turkmenistan along the historic Silk Road.",
+      sources: [
+        "https://turkmenistanairlines.tm/",
+        "https://en.wikipedia.org/wiki/Turkmenistan_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
