@@ -1584,6 +1584,228 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Argentina
+  AR: [
+    {
+      id: "ar-aerolineas-argentinas",
+      countryCode: "AR",
+      name: "Aerolíneas Argentinas",
+      iata: "AR",
+      icao: "ARG",
+      founded: 1950,
+      alliance: "SkyTeam",
+      hubs: ["Aeroparque Jorge Newbery (AEP - Buenos Aires)", "Ministro Pistarini International Airport (EZE - Ezeiza/Buenos Aires)"],
+      fleet: {
+        total: 84,
+        summary: "84 aircraft (Airbus A330-200; Boeing 737-700, 737-800, 737 MAX 8; Embraer E190AR)",
+      },
+      logo: "/airline-logos/ar/aerolineas-argentinas.svg",
+      logoExplainer:
+        "The iconic stylized condor emblem ('El Cóndor') portrays the Andean condor, the majestic national bird of Argentina, soaring effortlessly across the Andes. The sky-blue (celeste) and white palette honors the Argentine national flag.",
+      sources: [
+        "https://www.aerolineas.com.ar/",
+        "https://en.wikipedia.org/wiki/Aerol%C3%ADneas_Argentinas",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ar-flybondi",
+      countryCode: "AR",
+      name: "Flybondi",
+      iata: "FO",
+      icao: "FBZ",
+      founded: 2016,
+      alliance: "None",
+      hubs: ["Aeroparque Jorge Newbery (AEP - Buenos Aires)", "Ministro Pistarini International Airport (EZE - Buenos Aires)"],
+      fleet: {
+        total: 15,
+        summary: "15 aircraft (Boeing 737-800)",
+      },
+      logo: "/airline-logos/ar/flybondi.svg",
+      logoExplainer:
+        "Features a modern, vibrant golden-yellow wordmark. The name merges 'fly' with 'bondi' (the affectionate Argentine Lunfardo slang for city bus), embodying its mission to provide accessible, ultra-low-cost collective air transport for all Argentines.",
+      sources: [
+        "https://flybondi.com/",
+        "https://en.wikipedia.org/wiki/Flybondi",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Colombia
+  CO: [
+    {
+      id: "co-avianca",
+      countryCode: "CO",
+      name: "Avianca",
+      iata: "AV",
+      icao: "AVA",
+      founded: 1919,
+      alliance: "Star Alliance",
+      hubs: ["El Dorado International Airport (BOG - Bogotá)", "José María Córdova International Airport (MDE - Medellín)"],
+      fleet: {
+        total: 140,
+        summary: "140 aircraft (Airbus A319-100, A320-200, A320neo; Boeing 787-8 Dreamliner)",
+      },
+      logo: "/airline-logos/co/avianca.svg",
+      logoExplainer:
+        "Originally founded in 1919 as SCADTA, making it the world's second-oldest continuously operating airline. The modern emblem features a sleek lowercase wordmark with a sweeping crimson condor wing motif, symbolizing South American vitality, aerodynamic momentum, and Colombian national pride.",
+      sources: [
+        "https://www.avianca.com/",
+        "https://en.wikipedia.org/wiki/Avianca",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "co-clic-air",
+      countryCode: "CO",
+      name: "Clic Air",
+      iata: "VE",
+      icao: "EFY",
+      founded: 2006,
+      alliance: "None",
+      hubs: ["El Dorado International Airport (BOG - Bogotá)", "Olaya Herrera Airport (EOH - Medellín)", "Palonegro International Airport (BGA - Bucaramanga)"],
+      fleet: {
+        total: 20,
+        summary: "20 aircraft (ATR 42-500, ATR 42-600, ATR 72-600)",
+      },
+      logo: "/airline-logos/co/clic-air.svg",
+      logoExplainer:
+        "Rebranded from EasyFly in 2023, the Clic logo features vibrant, multicolored overlapping geometric facets and triangular wings forming the letter 'C', representing connectivity, diversity, and rapid regional travel across Colombia's complex mountainous geography.",
+      sources: [
+        "https://clicair.co/",
+        "https://en.wikipedia.org/wiki/Clic_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Chile
+  CL: [
+    {
+      id: "cl-latam-chile",
+      countryCode: "CL",
+      name: "LATAM Airlines Chile",
+      iata: "LA",
+      icao: "LAN",
+      founded: 1929,
+      alliance: "None",
+      hubs: ["Arturo Merino Benítez International Airport (SCL - Santiago)"],
+      fleet: {
+        total: 155,
+        summary: "155 aircraft (Airbus A320-200, A320neo, A321-200, A321neo; Boeing 767-300ER, 777-300ER, 787-8, 787-9)",
+      },
+      logo: "/airline-logos/cl/latam-chile.svg",
+      logoExplainer:
+        "The LATAM ribbon insignia, created following the unification of LAN and TAM, depicts an artistic stylized outline of the South American continent in indigo (symbolizing elegance and high altitude skies) and coral red (symbolizing the warmth and passion of Latin America).",
+      sources: [
+        "https://www.latamairlines.com/",
+        "https://en.wikipedia.org/wiki/LATAM_Chile",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "cl-sky-airline",
+      countryCode: "CL",
+      name: "Sky Airline",
+      iata: "H2",
+      icao: "SKU",
+      founded: 2001,
+      alliance: "None",
+      hubs: ["Arturo Merino Benítez International Airport (SCL - Santiago)"],
+      fleet: {
+        total: 32,
+        summary: "32 aircraft (Airbus A320neo, A321neo)",
+      },
+      logo: "/airline-logos/cl/sky-airline.svg",
+      logoExplainer:
+        "Features a modern wordmark with a distinctive mirrored 'K' ('SꓘY') rendered in bright neon green and deep violet. The mirrored letter creates an arrow pointing forward and upward, symbolizing innovative thinking, environmental efficiency, and dynamic growth.",
+      sources: [
+        "https://www.skyairline.com/",
+        "https://en.wikipedia.org/wiki/Sky_Airline",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bolivia
+  BO: [
+    {
+      id: "bo-boliviana-de-aviacion",
+      countryCode: "BO",
+      name: "Boliviana de Aviación (BoA)",
+      iata: "OB",
+      icao: "BOV",
+      founded: 2007,
+      alliance: "None",
+      hubs: [
+        "Jorge Wilstermann International Airport (CBB - Cochabamba)",
+        "Viru Viru International Airport (VVI - Santa Cruz de la Sierra)",
+        "El Alto International Airport (LPB - La Paz)",
+      ],
+      fleet: {
+        total: 22,
+        summary: "22 aircraft (Airbus A330-200; Boeing 737-700, 737-800, 767-300ER; Bombardier CRJ-200)",
+      },
+      logo: "/airline-logos/bo/boliviana-de-aviacion.svg",
+      logoExplainer:
+        "Features graceful curving aerodynamic swooshes in Bolivia's national tricolor colors—red (valour of heroes), yellow (mineral resources), and green (rich flora and biodiversity)—swirling forward across a stylized globe.",
+      sources: [
+        "https://www.boa.bo/",
+        "https://en.wikipedia.org/wiki/Boliviana_de_Aviaci%C3%B3n",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Peru
+  PE: [
+    {
+      id: "pe-latam-peru",
+      countryCode: "PE",
+      name: "LATAM Airlines Perú",
+      iata: "LP",
+      icao: "LPE",
+      founded: 1998,
+      alliance: "None",
+      hubs: ["Jorge Chávez International Airport (LIM - Lima)", "Alejandro Velasco Astete International Airport (CUZ - Cusco)"],
+      fleet: {
+        total: 60,
+        summary: "60 aircraft (Airbus A319-100, A320-200, A320neo)",
+      },
+      logo: "/airline-logos/pe/latam-peru.svg",
+      logoExplainer:
+        "Carries the unified LATAM indigo and coral ribbon motif portraying the silhouette of South America, representing continental integration, warmth, and modern aeronautical leadership across the Andes and Pacific coast.",
+      sources: [
+        "https://www.latamairlines.com/pe/es",
+        "https://en.wikipedia.org/wiki/LATAM_Per%C3%BA",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "pe-star-peru",
+      countryCode: "PE",
+      name: "Star Perú",
+      iata: "2I",
+      icao: "SRU",
+      founded: 1997,
+      alliance: "None",
+      hubs: ["Jorge Chávez International Airport (LIM - Lima)"],
+      fleet: {
+        total: 9,
+        summary: "9 aircraft (Boeing 737-300, 737-700)",
+      },
+      logo: "/airline-logos/pe/star-peru.svg",
+      logoExplainer:
+        "Features an energetic crimson star emblem accompanied by sweeping white motion trails and bold typography, symbolizing a guiding North Star connecting Lima with remote Peruvian provincial capitals and the Amazon basin.",
+      sources: [
+        "https://www.starperu.com/",
+        "https://en.wikipedia.org/wiki/Star_Per%C3%BA",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
