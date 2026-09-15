@@ -2215,6 +2215,168 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Latvijas Televīzija VSIA public limited liability company trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Estonia
+  EE: [
+    {
+      id: "ee-err",
+      countryCode: "EE",
+      name: "ERR",
+      officialName: "Eesti Rahvusringhääling (Estonian Public Broadcasting)",
+      founded: 1926,
+      primaryFunding: "Direct state budget allocation from the Riigikogu via the Ministry of Culture; 100% commercial-free with zero commercial advertising across television, radio, and online portals",
+      headquarters: "Gonsiori 27, Tallinn",
+      annualPublicFunding: {
+        total: "€46.2 million state budget allocation (ERR Majandusaasta aruanne FY 2024; total revenue €48.5M)",
+        perCapita: "€33.70 / resident / year (approx. €0.09 / day)",
+      },
+      dailyMarketShare: "18.8% television audience share across ETV, ETV2, and ETV+ (Russian language) (Kantar Emor 2024; ETV is Estonia's most-watched television channel with 14.5% share)",
+      brandTrustScore: {
+        score: "78%",
+        source: "Kantar Emor Media Trust Index & Turu-uuringute AS 2024 (#1 most trusted news media organization in Estonia for Aktuaalne kaamera / ERR.ee)",
+      },
+      localContentQuota: "Over 70% Estonian domestic production quota under the Estonian National Broadcasting Act (Eesti Rahvusringhäälingu seadus), with extensive programming in Estonian and Russian (ETV+)",
+      staffHeadcount: "680 full-time equivalent employees (ERR Tegevusaruanne 2024)",
+      logo: "/broadcaster-logos/ee/err.png",
+      logoExplainer:
+        "The ETV and ERR emblem presents the stylized bold letterforms 'etv' encased in vibrant scarlet red and white. The clean, rounded geometry embodies Baltic digital innovation, transparency, and universally accessible public service journalism across television and ERR Jupiter streaming.",
+      sources: [
+        "https://info.err.ee/1010313/finantsaruanded",
+        "https://www.kantaremor.ee/",
+        "https://www.riigiteataja.ee/akt/12792612",
+      ],
+      licenceNote: "Eesti Rahvusringhääling statutory public institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Montenegro
+  ME: [
+    {
+      id: "me-rtcg",
+      countryCode: "ME",
+      name: "RTCG",
+      officialName: "Radio i Televizija Crne Gore (Radio and Television of Montenegro)",
+      founded: 1944,
+      primaryFunding: "Statutory state budget allocation pegged by law to 1.34% of the current state budget expenditure under the Law on National Public Broadcaster RTCG, supplemented by commercial advertising",
+      headquarters: "Bulevar Revolucije 19, Podgorica",
+      annualPublicFunding: {
+        total: "€18.8 million statutory state budget subvention (RTCG Finansijski izvještaj FY 2024)",
+        perCapita: "€30.30 / citizen / year (approx. €0.08 / day)",
+      },
+      dailyMarketShare: "17.6% television audience share across TVCG 1, TVCG 2, TVCG 3 (Parliamentary), and TVCG MNE (Ipsos / Agency for Electronic Media of Montenegro 2024; TVCG 1 holds 12.1%)",
+      brandTrustScore: {
+        score: "48%",
+        source: "Agency for Electronic Media (AEM) Media Trust Survey 2024 (reflecting growing trust in modernized Dnevnik 2)",
+      },
+      localContentQuota: "Minimum 40% domestic production quota under Montenegrin media regulations, maintaining minority language programming in Albanian and Romani",
+      staffHeadcount: "740 permanent employees (RTCG Izvještaj o radu 2024)",
+      logo: "/broadcaster-logos/me/rtcg.png",
+      logoExplainer:
+        "Redesigned in 2024, the RTCG logo features contemporary stylized letterforms in deep navy and gold, evoking the Montenegrin national colors and heraldic heritage. The interconnected lines symbolize national integration, digital modernism, and editorial evolution.",
+      sources: [
+        "https://rtcg.me/rtcg/dokumenti.html",
+        "https://aemcg.org/",
+      ],
+      licenceNote: "Radio i Televizija Crne Gore public institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // North Macedonia
+  MK: [
+    {
+      id: "mk-mrt",
+      countryCode: "MK",
+      name: "MRT",
+      officialName: "Makedonska Radio Televizija (Macedonian Radio Television)",
+      founded: 1944,
+      primaryFunding: "State budget allocation pegged by statute to a percentage of total state budget revenues (0.7%–0.9% under the Law on Audio and Audiovisual Media Services), plus limited commercial ads",
+      headquarters: "Boulevard Goce Delčev bb, Skopje",
+      annualPublicFunding: {
+        total: "MKD 1,020 million state budget subvention (MRT Finansiski izveštaj FY 2024; approx. €16.5M)",
+        perCapita: "MKD 555 / citizen / year (approx. €9.00 / year or MKD 1.52 / day)",
+      },
+      dailyMarketShare: "8.4% television audience share across MRT 1, MRT 2 (minority languages), MRT 3 (sports), and MRT Sobranski Kanal (AVMU / Nielsen North Macedonia 2024)",
+      brandTrustScore: {
+        score: "46%",
+        source: "Agency for Audio and Audiovisual Media Services (AVMU) Media Study 2024",
+      },
+      localContentQuota: "At least 50% Macedonian domestic content requirement, with dedicated multilingual channels broadcasting daily in Albanian, Turkish, Serbian, Romani, Vlach, and Bosnian",
+      staffHeadcount: "810 employees (MRT Godišen izveštaj 2024)",
+      logo: "/broadcaster-logos/mk/mrt.png",
+      logoExplainer:
+        "The MRT emblem presents bold geometric lettering in the warm yellow and red tones of North Macedonia's national flag, incorporating horizontal broadcast wave cuts through the letters 'MRT'. The design represents nation-building, multiethnic cohesion, and terrestrial broadcasting across the Vardar valley.",
+      sources: [
+        "https://mrt.com.mk/",
+        "https://avmu.mk/",
+      ],
+      licenceNote: "Macedonian Radio Television public broadcasting service trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Albania
+  AL: [
+    {
+      id: "al-rtsh",
+      countryCode: "AL",
+      name: "RTSH",
+      officialName: "Radio Televizioni Shqiptar (Albanian Radio and Television)",
+      founded: 1938,
+      primaryFunding: "Monthly public service media tariff collected via electricity billing accounts (tarifa e shërbimit publik / ALL 100/month per household), direct state budget subventions, and commercial advertising",
+      headquarters: "Rruga Ismail Qemali 11, Tirana",
+      annualPublicFunding: {
+        total: "ALL 2,480 million public fee & state budget allocation (RTSH Raporti Financiar FY 2024; approx. €24.8M)",
+        perCapita: "ALL 910 / resident / year (approx. €9.10 / year or ALL 2.5 / day)",
+      },
+      dailyMarketShare: "9.5% combined television audience share across RTSH 1, RTSH 2, RTSH 3, RTSH Sport, and RTSH Fëmijë (AMA / Abacus Research Albania 2024)",
+      brandTrustScore: {
+        score: "52%",
+        source: "Audiovisual Media Authority (AMA) Public Opinion Survey 2024 (RTSH Lajme is trusted for official institutional news and cultural coverage)",
+      },
+      localContentQuota: "Minimum 50% Albanian domestic production quota under Law no. 97/2013 on Audiovisual Media, funding Albanian cinema, classical music festivals (Festivali i Këngës), and regional centers in Korçë and Gjirokastër",
+      staffHeadcount: "1,120 permanent employees (RTSH Raporti Vjetor 2024)",
+      logo: "/broadcaster-logos/al/rtsh.png",
+      logoExplainer:
+        "Redesigned in 2017, the modern RTSH emblem features clean, minimalist geometric typography with the letters 'rtsh' rendered in vibrant vermilion red and obsidian slate. The streamlined lowercase letterforms communicate democratic transformation, accessibility, and modern multimedia public service.",
+      sources: [
+        "https://rtsh.al/rreth-rtsh-se/raporte-dhe-dokumenta",
+        "https://ama.gov.al/",
+      ],
+      licenceNote: "Radio Televizioni Shqiptar public broadcasting corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Ukraine
+  UA: [
+    {
+      id: "ua-suspilne",
+      countryCode: "UA",
+      name: "Suspilne",
+      officialName: "Natsionalna Suspilna Teleradiokompaniya Ukrayiny (National Public Broadcasting Company of Ukraine)",
+      founded: 1924,
+      primaryFunding: "Direct state budget appropriation guaranteed by the Law of Ukraine 'On Public Television and Radio Broadcasting of Ukraine' pegged to 0.2% of the state budget general fund, supplemented by international donor partner grants; commercial advertising is legally capped",
+      headquarters: "Khreshchatyk Street 26, Kyiv",
+      annualPublicFunding: {
+        total: "UAH 1,850 million state budget subvention (Zakon pro Derzhavnyi biudzhet & Suspilne Zvit FY 2024; approx. €42.5M)",
+        perCapita: "UAH 51.40 / citizen / year (approx. €1.18 / year or UAH 0.14 / day)",
+      },
+      dailyMarketShare: "6.8% television audience share across Pershyi (First), Suspilne Kultura, and 24 regional stations (Nielsen Ukraine / Television Industry Committee 2024; Suspilne Novyny online reaches over 35% of adult Ukrainians monthly)",
+      brandTrustScore: {
+        score: "73%",
+        source: "USAID / Internews Media Consumption Survey & Reuters DNR 2024 (#1 most trusted news source in Ukraine for verified, independent wartime news)",
+      },
+      localContentQuota: "Minimum 90% Ukrainian-language content quota under wartime information security and national broadcasting laws, operating across 24 regional hubs from Lviv to Kharkiv",
+      staffHeadcount: "3,850 employees across national headquarters and frontline regional branches (Suspilne Richnyi zvit 2024)",
+      logo: "/broadcaster-logos/ua/suspilne.png",
+      logoExplainer:
+        "Adopted during the historic 2019 public broadcaster rebranding, the Suspilne logo features the warm lowercase wordmark 'суспільне' (public / societal) anchored by a distinctive solid circular dot in deep navy blue. The dot represents the public circle, a shared town square, and independent civic solidarity across all regions of Ukraine.",
+      sources: [
+        "https://corp.suspilne.media/reports",
+        "https://www.nrada.gov.ua/",
+        "https://internews.in.ua/wp-content/uploads/2024/09/Internews-Media-Report-2024.pdf",
+      ],
+      licenceNote: "National Public Broadcasting Company of Ukraine joint-stock company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
