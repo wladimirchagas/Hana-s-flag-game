@@ -952,4 +952,267 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // New Zealand
+  NZ: [
+    {
+      id: "nz-air-new-zealand",
+      countryCode: "NZ",
+      name: "Air New Zealand",
+      iata: "NZ",
+      icao: "ANZ",
+      founded: 1940,
+      alliance: "Star Alliance",
+      hubs: ["Auckland Airport (AKL)", "Wellington Airport (WLG)", "Christchurch Airport (CHC)"],
+      fleet: {
+        total: 107,
+        summary: "107 aircraft (Airbus A320-200, A320neo, A321neo; Boeing 777-367ER, 787-9; ATR 72-600; De Havilland Canada DHC-8-300 Dash 8)",
+      },
+      logo: "/airline-logos/nz/air-new-zealand.svg",
+      logoExplainer:
+        "Features the iconic Mangōpare (hammerhead shark) rendered as a traditional Māori Koru (unfolding silver fern frond). Designed originally for the DC-10 fleet introduction in 1973, the emblem embodies new life, spiritual growth, perseverance, strength, and proud Aotearoa New Zealand cultural heritage.",
+      sources: [
+        "https://www.airnewzealand.co.nz/our-story",
+        "https://en.wikipedia.org/wiki/Air_New_Zealand",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Singapore
+  SG: [
+    {
+      id: "sg-singapore-airlines",
+      countryCode: "SG",
+      name: "Singapore Airlines",
+      iata: "SQ",
+      icao: "SIA",
+      founded: 1947,
+      alliance: "Star Alliance",
+      hubs: ["Singapore Changi Airport (SIN)"],
+      fleet: {
+        total: 160,
+        summary: "160 aircraft (Airbus A350-900, A380-800; Boeing 737-8, 737-800, 777-300ER, 777-9, 787-10)",
+      },
+      logo: "/airline-logos/sg/singapore-airlines.svg",
+      logoExplainer:
+        "The renowned 'Silver Kris' emblem features a stylized golden bird in graceful flight, inspired by the traditional Southeast Asian ceremonial kris dagger and keris hilt carving. Retained and polished continuously since Singapore Airlines began independent operations in 1972, the emblem symbolizes poise, exquisite service standards, and soaring Asian prestige.",
+      sources: [
+        "https://www.singaporeair.com/en_UK/sg/flying-withus/our-story/",
+        "https://en.wikipedia.org/wiki/Singapore_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "sg-scoot",
+      countryCode: "SG",
+      name: "Scoot",
+      iata: "TR",
+      icao: "TCO",
+      founded: 2011,
+      alliance: "Value Alliance",
+      hubs: ["Singapore Changi Airport (SIN)"],
+      fleet: {
+        total: 55,
+        summary: "55 aircraft (Airbus A320-200, A320neo, A321neo; Boeing 787-8, 787-9 Dreamliner; Embraer E190-E2)",
+      },
+      logo: "/airline-logos/sg/scoot.svg",
+      logoExplainer:
+        "A vibrant sunshine-yellow circle tilted playfully with bold, off-center lowercase black typography. The jaunty angle and warm yellow hue reflect 'Scootitude'—a company philosophy centered on spontaneous, fun-loving, unpretentious, and accessible air travel across Asia-Pacific.",
+      sources: [
+        "https://www.flyscoot.com/en/about-scoot",
+        "https://en.wikipedia.org/wiki/Scoot",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Thailand
+  TH: [
+    {
+      id: "th-thai-airways",
+      countryCode: "TH",
+      name: "Thai Airways",
+      iata: "TG",
+      icao: "THA",
+      founded: 1960,
+      alliance: "Star Alliance",
+      hubs: ["Suvarnabhumi Airport (BKK - Bangkok)", "Phuket International Airport (HKT)"],
+      fleet: {
+        total: 77,
+        summary: "77 aircraft (Airbus A320-200, A330-300, A350-900; Boeing 777-200ER, 777-300ER, 787-8, 787-9)",
+      },
+      logo: "/airline-logos/th/thai-airways.svg",
+      logoExplainer:
+        "Known as the 'Jumpee' (Champaka flower blossom), this design created by Walter Landor in 1975 integrates royal Thai purple (reflecting exotic Thai orchids and royal heritage), rich magenta (representing luxurious Thai silk fabrics), and shimmering gold (honoring Buddhist temples and the Golden Kingdom).",
+      sources: [
+        "https://www.thaiairways.com/en_TH/about_thai/company_profile/history.page",
+        "https://en.wikipedia.org/wiki/Thai_Airways_International",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "th-bangkok-airways",
+      countryCode: "TH",
+      name: "Bangkok Airways",
+      iata: "PG",
+      icao: "BKP",
+      founded: 1968,
+      alliance: "None",
+      hubs: ["Suvarnabhumi Airport (BKK - Bangkok)", "Samui Airport (USM)", "Chiang Mai International Airport (CNX)"],
+      fleet: {
+        total: 28,
+        summary: "28 aircraft (Airbus A319-100, A320-200; ATR 72-600)",
+      },
+      logo: "/airline-logos/th/bangkok-airways.svg",
+      logoExplainer:
+        "Branded as 'Asia's Boutique Airline', the logo features an aerodynamic forward-surging bird motif rendered in dynamic marine blue and turquoise waves. The flowing ribbons evoke sea breezes, tropical waters, and friendly coastal hospitality.",
+      sources: [
+        "https://www.bangkokair.com/about-us",
+        "https://en.wikipedia.org/wiki/Bangkok_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "th-thai-airasia",
+      countryCode: "TH",
+      name: "Thai AirAsia",
+      iata: "FD",
+      icao: "AIQ",
+      founded: 2003,
+      alliance: "None",
+      hubs: ["Don Mueang International Airport (DMK - Bangkok)", "Suvarnabhumi Airport (BKK)", "Chiang Mai (CNX)", "Phuket (HKT)"],
+      fleet: {
+        total: 60,
+        summary: "60 aircraft (Airbus A320-200, A320neo, A321neo)",
+      },
+      logo: "/airline-logos/th/thai-airasia.svg",
+      logoExplainer:
+        "Distinctive handwritten crimson-and-white signature script of the AirAsia group, symbolizing warmth, youthful simplicity, and the company's famous mission statement: 'Now Everyone Can Fly'.",
+      sources: [
+        "https://www.airasia.com/th/en/about-us.html",
+        "https://en.wikipedia.org/wiki/Thai_AirAsia",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Vietnam
+  VN: [
+    {
+      id: "vn-vietnam-airlines",
+      countryCode: "VN",
+      name: "Vietnam Airlines",
+      iata: "VN",
+      icao: "HVN",
+      founded: 1956,
+      alliance: "SkyTeam",
+      hubs: ["Noi Bai International Airport (HAN - Hanoi)", "Tan Son Nhat International Airport (SGN - Ho Chi Minh City)"],
+      fleet: {
+        total: 98,
+        summary: "98 aircraft (Airbus A321-200, A321neo, A350-900; Boeing 787-9, 787-10 Dreamliner)",
+      },
+      logo: "/airline-logos/vn/vietnam-airlines.svg",
+      logoExplainer:
+        "The 'Golden Lotus' (Bông Sen Vàng), introduced in 2002 to replace the old winged stork, depicts Vietnam's cherished national flower in radiant gold against a deep cerulean blue. In Vietnamese culture, the lotus rises spotless and fragrant from mud, symbolizing nobility, purity, spiritual resilience, and timeless enlightenment.",
+      sources: [
+        "https://www.vietnamairlines.com/vn/en/about-us/our-story/our-brand",
+        "https://en.wikipedia.org/wiki/Vietnam_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "vn-vietjet-air",
+      countryCode: "VN",
+      name: "VietJet Air",
+      iata: "VJ",
+      icao: "VJC",
+      founded: 2007,
+      alliance: "None",
+      hubs: ["Tan Son Nhat International Airport (SGN)", "Noi Bai International Airport (HAN)", "Da Nang International Airport (DAD)"],
+      fleet: {
+        total: 86,
+        summary: "86 aircraft (Airbus A320-200, A321-200, A321neo, A330-300)",
+      },
+      logo: "/airline-logos/vn/vietjet-air.svg",
+      logoExplainer:
+        "Features bright fiery red and warm yellow colors matching the Vietnamese national flag, set in dynamic, forward-slanted cursive lettering. The energetic color scheme conveys optimism, high velocity, and welcoming affordability for modern Vietnamese travelers.",
+      sources: [
+        "https://www.vietjetair.com/en/pages/about-us-1578385202970",
+        "https://en.wikipedia.org/wiki/VietJet_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "vn-bamboo-airways",
+      countryCode: "VN",
+      name: "Bamboo Airways",
+      iata: "QH",
+      icao: "BAV",
+      founded: 2017,
+      alliance: "None",
+      hubs: ["Noi Bai International Airport (HAN - Hanoi)", "Tan Son Nhat International Airport (SGN - Ho Chi Minh City)"],
+      fleet: {
+        total: 9,
+        summary: "9 aircraft (Airbus A320-200, A320neo, A321-200; Embraer E190)",
+      },
+      logo: "/airline-logos/vn/bamboo-airways.svg",
+      logoExplainer:
+        "Depicts a tailfin composed of stylized bamboo leaves in fresh foliage green and sky blue. In Vietnamese heritage, the bamboo tree (cây tre) is an emblem of humble uprightness, flexibility, endurance in storms, and deep community roots.",
+      sources: [
+        "https://www.bambooairways.com/en/about-us",
+        "https://en.wikipedia.org/wiki/Bamboo_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Philippines
+  PH: [
+    {
+      id: "ph-philippine-airlines",
+      countryCode: "PH",
+      name: "Philippine Airlines",
+      iata: "PR",
+      icao: "PAL",
+      founded: 1941,
+      alliance: "None",
+      hubs: ["Ninoy Aquino International Airport (MNL - Manila)", "Mactan–Cebu International Airport (CEB)", "Clark International Airport (CRK)"],
+      fleet: {
+        total: 78,
+        summary: "78 aircraft (Airbus A321-200, A321neo, A330-300, A350-900; Boeing 777-300ER; De Havilland Canada DHC-8-400 Dash 8)",
+      },
+      logo: "/airline-logos/ph/philippine-airlines.svg",
+      logoExplainer:
+        "As Asia's oldest commercial airline operating under its original name, PAL's emblem incorporates the blue and red geometric triangular sails of the Philippine national flag accompanied by the eight-rayed golden sun. The design evokes ancient seafaring proas, boundless sky, and patriotic national sovereignty.",
+      sources: [
+        "https://www.philippineairlines.com/en/about-us/our-history",
+        "https://en.wikipedia.org/wiki/Philippine_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ph-cebu-pacific",
+      countryCode: "PH",
+      name: "Cebu Pacific",
+      iata: "5J",
+      icao: "CEB",
+      founded: 1988,
+      alliance: "Value Alliance",
+      hubs: ["Ninoy Aquino International Airport (MNL - Manila)", "Mactan–Cebu International Airport (CEB)", "Clark (CRK)", "Francisco Bangoy (DVO - Davao)"],
+      fleet: {
+        total: 87,
+        summary: "87 aircraft (Airbus A320-200, A320neo, A321-200, A321neo, A330-900neo; ATR 72-600)",
+      },
+      logo: "/airline-logos/ph/cebu-pacific.svg",
+      logoExplainer:
+        "The emblem showcases the iconic Philippine Eagle feather pattern, rendered in sky blue and tropical green with bright sunshine accents. Introduced in 2015, the clean design pays tribute to the majestic national bird (Pithecophaga jefferyi) while reflecting the vivid islands, skies, and seas of the archipelago.",
+      sources: [
+        "https://www.cebupacificair.com/en-PH/pages/about-us",
+        "https://en.wikipedia.org/wiki/Cebu_Pacific",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
