@@ -5598,6 +5598,137 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  UG: [
+    {
+      id: "ug-uganda-airlines",
+      countryCode: "UG",
+      name: "Uganda Airlines",
+      iata: "UR",
+      icao: "UGD",
+      founded: 2018,
+      alliance: "None",
+      hubs: ["Entebbe International Airport (EBB)"],
+      fleet: {
+        total: 6,
+        summary:
+          "6 aircraft (Airbus A330-800neo, Bombardier CRJ900 Atmosphere)",
+      },
+      logo: "/airline-logos/ug/uganda-airlines.svg",
+      logoExplainer:
+        "Features the regal Grey Crowned Crane (Uganda's national bird, Balearica regulorum gibbericeps) soaring gracefully, rendered in the national tricolor of black, vibrant yellow, and crimson red, symbolizing resilience, East African warmth, and international prestige as the Pearl of Africa.",
+      sources: [
+        "https://www.ugandairlines.com/",
+        "https://en.wikipedia.org/wiki/Uganda_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  MG: [
+    {
+      id: "mg-madagascar-airlines",
+      countryCode: "MG",
+      name: "Madagascar Airlines",
+      iata: "MD",
+      icao: "MGY",
+      founded: 1947,
+      alliance: "None",
+      hubs: ["Ivato International Airport (TNR)"],
+      fleet: {
+        total: 9,
+        summary:
+          "9 aircraft (ATR 72-500, ATR 72-600, De Havilland Canada DHC-6 Twin Otter; Boeing 787 on order)",
+      },
+      logo: "/airline-logos/mg/madagascar-airlines.svg",
+      logoExplainer:
+        "Features the stylized, iconic Ravinala tree (the traveller's palm, Ravenala madagascariensis, Madagascar's national botanical symbol) forming an aerodynamic fan of green fronds with a blossoming crest, evoking island shelter, biodiversity, and Indian Ocean hospitality.",
+      sources: [
+        "https://madagascarairlines.com/",
+        "https://en.wikipedia.org/wiki/Madagascar_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  MZ: [
+    {
+      id: "mz-lam-mozambique",
+      countryCode: "MZ",
+      name: "LAM Mozambique Airlines",
+      iata: "TM",
+      icao: "LAM",
+      founded: 1936,
+      alliance: "None",
+      hubs: ["Maputo International Airport (MPM)"],
+      fleet: {
+        total: 7,
+        summary:
+          "7 aircraft (Boeing 737-700, Bombardier CRJ900, De Havilland Dash 8-Q400)",
+      },
+      logo: "/airline-logos/mz/lam-mozambique.svg",
+      logoExplainer:
+        "Features dynamic sweeping waves in turquoise, teal, and charcoal forming an aerodynamic bird-in-flight motif, symbolizing maritime breezes off the Indian Ocean, coastal connectivity, and continuous links between Maputo, Beira, and Nampula.",
+      sources: [
+        "https://www.lam.co.mz/",
+        "https://en.wikipedia.org/wiki/LAM_Mozambique_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  NA: [
+    {
+      id: "na-air-namibia",
+      countryCode: "NA",
+      name: "Air Namibia",
+      iata: "SW",
+      icao: "NMB",
+      founded: 1946,
+      alliance: "None",
+      hubs: [
+        "Hosea Kutako International Airport (WDH)",
+        "Eros Airport (ERS)",
+      ],
+      fleet: {
+        total: 10,
+        summary:
+          "Historic operations operated Airbus A330-200, Airbus A319-100, and Embraer ERJ 135 across Southern Africa and Europe",
+      },
+      logo: "/airline-logos/na/air-namibia.svg",
+      logoExplainer:
+        "Features dynamic desert-and-sky speed chevrons in sun-gold, deep navy, and ocean blue reflecting the Namib Desert dunes, the South Atlantic coastline, and the radiant southern sun of Namibia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Air_Namibia",
+      ],
+      licenceNote:
+        "Commercial airline trademark and historical brand logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  BW: [
+    {
+      id: "bw-air-botswana",
+      countryCode: "BW",
+      name: "Air Botswana ('Going Your Way')",
+      iata: "BP",
+      icao: "BOT",
+      founded: 1972,
+      alliance: "None",
+      hubs: ["Sir Seretse Khama International Airport (GBE)"],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Embraer E175, ATR 72-600)",
+      },
+      logo: "/airline-logos/bw/air-botswana.svg",
+      logoExplainer:
+        "Features sweeping wings and curved speed bands in sky-blue and jet-black drawn from the national flag of Botswana, celebrating the precious gift of Pula (rain and life), welcoming Southern African hospitality, and effortless travel to the Okavango Delta and Chobe.",
+      sources: [
+        "https://airbotswana.co.bw/",
+        "https://en.wikipedia.org/wiki/Air_Botswana",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
