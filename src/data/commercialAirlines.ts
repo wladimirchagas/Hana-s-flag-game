@@ -4017,6 +4017,158 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Saudi Arabia
+  SA: [
+    {
+      id: "sa-saudia",
+      countryCode: "SA",
+      name: "Saudia",
+      iata: "SV",
+      icao: "SVA",
+      founded: 1945,
+      alliance: "SkyTeam",
+      hubs: ["King Abdulaziz International Airport (JED)", "King Khalid International Airport (RUH)", "King Fahd International Airport (DMM)"],
+      fleet: {
+        total: 153,
+        summary: "153 aircraft (Airbus A320-200, A321-200, A321neo, A330-300; Boeing 777-300ER, 787-9, 787-10)",
+      },
+      logo: "/airline-logos/sa/saudia.svg",
+      logoExplainer:
+        "Reintroduced in 2023, the retro-modern brand identity revives Saudia's historic 1970s and 80s emblem featuring dual crossed green aerodynamic chevrons framing the date palm, honoring Saudi cultural hospitality, national heritage, and Vision 2030 modernization.",
+      sources: [
+        "https://www.saudia.com/",
+        "https://en.wikipedia.org/wiki/Saudia",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "sa-flynas",
+      countryCode: "SA",
+      name: "Flynas",
+      iata: "XY",
+      icao: "KNE",
+      founded: 2007,
+      alliance: "None",
+      hubs: ["King Abdulaziz International Airport (JED)", "King Khalid International Airport (RUH)", "King Fahd International Airport (DMM)", "Prince Mohammad bin Abdulaziz Airport (MED)"],
+      fleet: {
+        total: 64,
+        summary: "64 aircraft (Airbus A320neo, A321XLR, A330-300)",
+      },
+      logo: "/airline-logos/sa/flynas.svg",
+      logoExplainer:
+        "Features bright turquoise teal and warm violet curves converging in aerodynamic harmony, symbolizing modern leisure accessibility, friendly low-fare travel, and rapid regional expansion across the Middle East.",
+      sources: [
+        "https://www.flynas.com/",
+        "https://en.wikipedia.org/wiki/Flynas",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Oman
+  OM: [
+    {
+      id: "om-oman-air",
+      countryCode: "OM",
+      name: "Oman Air",
+      iata: "WY",
+      icao: "OMA",
+      founded: 1993,
+      alliance: "oneworld",
+      hubs: ["Muscat International Airport (MCT)"],
+      fleet: {
+        total: 44,
+        summary: "44 aircraft (Boeing 737-800, 737-900ER, 737 MAX 8, 787-9; Airbus A330-200, A330-300)",
+      },
+      logo: "/airline-logos/om/oman-air.svg",
+      logoExplainer:
+        "Features an elegant gold and turquoise vortex swirl evoking an ascending swirl of fragrant frankincense smoke and ocean sea spray from the Arabian Sea, reflecting Omani seafaring history, maritime trade routes, and gracious Arabian hospitality.",
+      sources: [
+        "https://www.omanair.com/",
+        "https://en.wikipedia.org/wiki/Oman_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bahrain
+  BH: [
+    {
+      id: "bh-gulf-air",
+      countryCode: "BH",
+      name: "Gulf Air",
+      iata: "GF",
+      icao: "GFA",
+      founded: 1950,
+      alliance: "None",
+      hubs: ["Bahrain International Airport (BAH)"],
+      fleet: {
+        total: 41,
+        summary: "41 aircraft (Airbus A320neo, A321neo, A321LR; Boeing 787-9 Dreamliner)",
+      },
+      logo: "/airline-logos/bh/gulf-air.svg",
+      logoExplainer:
+        "Features the majestic Golden Falcon in soaring flight, an enduring symbol of Gulf pride, traditional Bedouin falconry, and sovereign aerial leadership as one of the Middle East's earliest commercial carriers (established 1950).",
+      sources: [
+        "https://www.gulfair.com/",
+        "https://en.wikipedia.org/wiki/Gulf_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Kuwait
+  KW: [
+    {
+      id: "kw-kuwait-airways",
+      countryCode: "KW",
+      name: "Kuwait Airways",
+      iata: "KU",
+      icao: "KAC",
+      founded: 1954,
+      alliance: "None",
+      hubs: ["Kuwait International Airport (KWI)"],
+      fleet: {
+        total: 33,
+        summary: "33 aircraft (Airbus A320neo, A330-200, A330-800neo, A330-900neo; Boeing 777-300ER)",
+      },
+      logo: "/airline-logos/kw/kuwait-airways.svg",
+      logoExplainer:
+        "Features two soaring stylized blue bird wings uniting into an aerodynamic crest, symbolizing Kuwait's historic maritime maritime heritage, pearl diving culture, and modern intercontinental aviation gateway.",
+      sources: [
+        "https://www.kuwaitairways.com/",
+        "https://en.wikipedia.org/wiki/Kuwait_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Jordan
+  JO: [
+    {
+      id: "jo-royal-jordanian",
+      countryCode: "JO",
+      name: "Royal Jordanian",
+      iata: "RJ",
+      icao: "RJA",
+      founded: 1963,
+      alliance: "oneworld",
+      hubs: ["Queen Alia International Airport (AMM)"],
+      fleet: {
+        total: 28,
+        summary: "28 aircraft (Airbus A320-200, A321-200, A320neo; Boeing 787-8; Embraer E190-E2, E195-E2)",
+      },
+      logo: "/airline-logos/jo/royal-jordanian.svg",
+      logoExplainer:
+        "Features the royal Hashemite crown in golden yellow flanked by stylized royal falcon wings in crimson and gold, honoring Jordan's monarchy and symbolizing Queen Alia Airport's role as a primary bridge across the Levant.",
+      sources: [
+        "https://rj.com/",
+        "https://en.wikipedia.org/wiki/Royal_Jordanian",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
