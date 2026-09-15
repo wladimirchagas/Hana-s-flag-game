@@ -1,3 +1,4 @@
+import { LogoExplainer } from "./LogoExplainer";
 import type { CommercialAirline } from "../types/airline";
 
 /**
@@ -52,9 +53,7 @@ export function AirlineDetails({
             <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
           </button>
         </div>
-        <p className="learn-fs__flag-design" style={{ marginTop: "0.75rem" }}>
-          {airline.logoExplainer}
-        </p>
+        <LogoExplainer description={airline.logoExplainer} label="What this logo means" />
       </div>
 
       <dl className="entity-summary" style={{ marginTop: "1rem" }}>

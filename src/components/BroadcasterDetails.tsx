@@ -1,3 +1,4 @@
+import { LogoExplainer } from "./LogoExplainer";
 import type { PublicBroadcaster } from "../types/broadcaster";
 
 /**
@@ -56,9 +57,7 @@ export function BroadcasterDetails({
             <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
           </button>
         </div>
-        <p className="learn-fs__flag-design" style={{ marginTop: "0.75rem" }}>
-          {broadcaster.logoExplainer}
-        </p>
+        <LogoExplainer description={broadcaster.logoExplainer} label="What this logo means" />
       </div>
 
       <dl className="entity-summary" style={{ marginTop: "1rem" }}>
