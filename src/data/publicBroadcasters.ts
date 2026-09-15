@@ -5136,6 +5136,169 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Radio Télévision de Djibouti public establishment trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  // South Sudan
+  SS: [
+    {
+      id: "ss-ssbc",
+      countryCode: "SS",
+      name: "SSBC",
+      officialName: "South Sudan Broadcasting Corporation (SSBC / South Sudan Broadcasting Corporation Act 2013)",
+      founded: 2011,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Information, Communication Technology and Postal Services",
+      headquarters: "Ministries Complex, Kololo Road, Juba, South Sudan",
+      annualPublicFunding: {
+        total: "SSP 8.5 billion state budget allocation (South Sudan National Budget Act FY 2023/24; approx. US.8M)",
+        perCapita: "SSP 720.00 / citizen / year (approx. USzsh.49 / year)",
+      },
+      dailyMarketShare: "42.0% domestic television audience share in urban and regional administrative centers (National Communication Authority NCA South Sudan & Internews South Sudan 2024)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Internews South Sudan Media Assessment & Afrobarometer South Sudan 2024",
+      },
+      localContentQuota: "80% South Sudanese cultural, civic peacebuilding, and local language programming quota in English, Juba Arabic, Dinka, Nuer, Bari, and Zande",
+      staffHeadcount: "450 media civil servants, field reporters, and transmission technicians across Juba and state capitals (SSBC Administrative Review 2024)",
+      logo: "broadcaster-logos/ss/ssbc.jpg",
+      logoExplainer:
+        "The SSBC logo features the acronym 'SSBC' highlighted by the golden star and radiant tri-color bands of the South Sudanese flag—black, red, and green with white fimbriations—symbolizing the people, liberation sacrifice, fertile soil, and peace.",
+      sources: [
+        "https://ssbc.gov.ss/",
+        "https://mofep.gov.ss/",
+        "https://nca.gov.ss/",
+      ],
+      licenceNote: "South Sudan Broadcasting Corporation statutory public enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Somalia
+  SO: [
+    {
+      id: "so-sntv",
+      countryCode: "SO",
+      name: "SNTV",
+      officialName: "Somali National Television (Telefishinka Qaranka Soomaaliyeed - SNTV / Ministry of Information, Culture and Tourism)",
+      founded: 1983,
+      primaryFunding: "Federal government budgetary subvention from the Ministry of Finance and bilateral technical cooperation support",
+      headquarters: "Ministry of Information Complex, Boondheere District, Mogadishu, Somalia",
+      annualPublicFunding: {
+        total: "USD 4.8 million dedicated public broadcasting appropriation (Federal Government of Somalia Approved Budget FY 2024; approx. US.8M)",
+        perCapita: "USD 0.28 / citizen / year",
+      },
+      dailyMarketShare: "38.5% domestic television audience share across SNTV terrestrial and satellite transmissions (National Communications Authority NCA Somalia & Media Ink Somalia 2024)",
+      brandTrustScore: {
+        score: "65%",
+        source: "Somali Media Observatory & Heritage Institute for Policy Studies 2024",
+      },
+      localContentQuota: "85% Somali domestic cultural, Islamic civic, poetry (Gabay), and nomadic pastoral affairs quota in the Somali language",
+      staffHeadcount: "380 broadcast journalists, camera operators, editors, and engineers (Ministry of Information Staff Register 2024)",
+      logo: "broadcaster-logos/so/sntv.png",
+      logoExplainer:
+        "The SNTV emblem displays the bold white five-pointed star of Somalia set against a sky-blue optical screen with transmission rings, symbolizing national sovereignty, cultural unity across all Somali regions, and ethical state broadcasting.",
+      sources: [
+        "https://sntv.so/",
+        "https://mof.gov.so/",
+        "https://nca.gov.so/",
+      ],
+      licenceNote: "Somali National Television state media enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Republic of the Congo
+  CG: [
+    {
+      id: "cg-telecongo",
+      countryCode: "CG",
+      name: "Télé Congo",
+      officialName: "Télé Congo (Télévision Nationale Congolaise - Centre National de Radio et Télévision)",
+      founded: 1962,
+      primaryFunding: "Public treasury subvention from the Ministère de la Communication et des Médias within the General State Budget of the Republic of the Congo",
+      headquarters: "Nkombo Boulevard, Plateau des 15 Ans, BP 2241, Brazzaville, Republic of the Congo",
+      annualPublicFunding: {
+        total: "XAF 5.8 billion state budget public service allocation (Loi de finances de la République du Congo FY 2024; approx. US.6M)",
+        perCapita: "XAF 980.00 / citizen / year (approx. US.62 / year)",
+      },
+      dailyMarketShare: "46.5% domestic television audience share across Télé Congo and regional digital transmitters (Conseil Supérieur de la Liberté de Communication CSLC & Médiamétrie Afrique 2024)",
+      brandTrustScore: {
+        score: "64%",
+        source: "Afrobarometer Congo Survey & CSLC Observatoire des Médias 2024",
+      },
+      localContentQuota: "75% local Congolese cultural and musical quota in French, Lingala, and Kituba (Kikongo ya Leta), highlighting Rumba Congolaise musical heritage and Congo River basin traditions",
+      staffHeadcount: "620 civil service broadcast professionals, camera crew, and technical engineers across Brazzaville and Pointe-Noire (Direction Générale de Télé Congo 2024)",
+      logo: "broadcaster-logos/cg/telecongo.jpg",
+      logoExplainer:
+        "The Télé Congo logo features an artistic television screen with dynamic diagonal bands in green, yellow, and red—the Pan-African colors of the Congolese flag—embodying national cultural vitality, tropical forestry, and sovereignty.",
+      sources: [
+        "https://telecongo.cg/",
+        "https://finances.gouv.cg/",
+        "https://cslc.cg/",
+      ],
+      licenceNote: "Télé Congo state public broadcasting service trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Mali
+  ML: [
+    {
+      id: "ml-ortm",
+      countryCode: "ML",
+      name: "ORTM",
+      officialName: "Office de Radiodiffusion Télévision du Mali (ORTM / ORTM 1 - Établissement Public à Caractère Administratif)",
+      founded: 1957,
+      primaryFunding: "State operating subvention from the Ministère de la Communication, de l'Économie Numérique et de la Modernisation de l'Administration and commercial advertising",
+      headquarters: "Avenue de la Liberté, BP 171, Bozola, Bamako, Mali",
+      annualPublicFunding: {
+        total: "XOF 9.2 billion state budget allocation (Loi de finances de la République du Mali FY 2024; approx. US.3M)",
+        perCapita: "XOF 420.00 / citizen / year (approx. USzsh.70 / year)",
+      },
+      dailyMarketShare: "52.0% domestic television audience share across ORTM 1 and ORTM 2 (Haute Autorité de la Communication HAC Mali & Médiamétrie Mali 2024; ORTM 1 is the primary national television channel)",
+      brandTrustScore: {
+        score: "69%",
+        source: "Afrobarometer Mali & Haute Autorité de la Communication (HAC) Baromètre 2024",
+      },
+      localContentQuota: "75% domestic Malian cultural, musical (Mande and Tuareg heritage), and educational quota in French, Bambara (Bamanankan), Fulfulde, Songhai, and Tamasheq",
+      staffHeadcount: "850 permanent media practitioners, field correspondents, and technical engineers across Bamako and regional stations (ORTM Bilan Social 2024)",
+      logo: "broadcaster-logos/ml/ortm.png",
+      logoExplainer:
+        "The ORTM emblem presents the acronym 'ORTM' accompanied by green, gold, and red swooshes reflecting the national flag of Mali, alongside a stylized satellite wave that symbolizes communication across the Niger River basin and the Sahara.",
+      sources: [
+        "https://ortm.ml/",
+        "https://finances.gouv.ml/",
+        "https://hac.gouv.ml/",
+      ],
+      licenceNote: "Office de Radiodiffusion Télévision du Mali public administrative establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Central African Republic
+  CF: [
+    {
+      id: "cf-tvca",
+      countryCode: "CF",
+      name: "TVCA",
+      officialName: "Télévision Centrafricaine (TVCA / Direction Générale de la Radio et Télévision Centrafricaine)",
+      founded: 1974,
+      primaryFunding: "Direct state budget allocation from the Ministère de la Communication et des Médias within the General State Budget of the Central African Republic",
+      headquarters: "Rue du Général de Gaulle, BP 940, Bangui, Central African Republic",
+      annualPublicFunding: {
+        total: "XAF 2.4 billion public media subvention (Loi de finances de la République Centrafricaine FY 2024; approx. US.0M)",
+        perCapita: "XAF 450.00 / citizen / year (approx. USzsh.75 / year)",
+      },
+      dailyMarketShare: "34.0% national television audience reach in Bangui and provincial prefectures (Haut Conseil de la Communication HCC Centrafrique & Fondation Hirondelle 2024)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Afrobarometer CAR Survey & Haut Conseil de la Communication (HCC) Observatoire des Médias 2024",
+      },
+      localContentQuota: "80% Central African cultural, community peacebuilding, and educational programming quota in Sango and French",
+      staffHeadcount: "190 journalists, camera operators, and transmission technicians across Bangui and provincial relay stations (Direction Générale de la TVCA 2024)",
+      logo: "broadcaster-logos/cf/tvca.jpg",
+      logoExplainer:
+        "The TVCA emblem features the letters 'TVCA' in the blue, white, green, yellow, and red colors of the Central African flag, surmounted by the golden star of emancipation and unity, symbolizing hope, African brotherhood, and national peace.",
+      sources: [
+        "https://communication.gouv.cf/",
+        "https://finances.gouv.cf/",
+      ],
+      licenceNote: "Télévision Centrafricaine state institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
