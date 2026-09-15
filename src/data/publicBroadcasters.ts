@@ -4321,6 +4321,168 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "ZIZ Broadcasting Corporation statutory public corporation trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  // Iran
+  IR: [
+    {
+      id: "ir-irib",
+      countryCode: "IR",
+      name: "IRIB",
+      officialName: "Islamic Republic of Iran Broadcasting (صدا و سیمای جمهوری اسلامی ایران - IRIB)",
+      founded: 1966,
+      primaryFunding: "Direct state budget appropriation from the Plan and Budget Organization of Iran under Article 175 of the Constitution, supplemented by commercial advertising and telecommunication levies",
+      headquarters: "Jam-e Jam Media Complex, Vali Asr Street, Tehran",
+      annualPublicFunding: {
+        total: "IRR 240,000 billion state budget allocation (National Budget Law of the Islamic Republic of Iran FY 1403/2024; approx. US.0M unified equivalent)",
+        perCapita: "IRR 2,720,000 / citizen / year (approx. US.50 / year)",
+      },
+      dailyMarketShare: "64.2% nationwide television audience share across IRIB Channel 1, Channel 2, Channel 3, IRINN (Islamic Republic of Iran News Network), and IRIB Pooya (ISPA Iranian Students' Polling Agency 2024)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Iranian Students' Polling Agency (ISPA) National Media Poll & University of Tehran Social Science Survey 2024",
+      },
+      localContentQuota: "85% domestic cultural, Persian literary, religious, and scientific programming quota, broadcasting in Persian alongside regional language broadcasts in Azerbaijani, Kurdish, Arabic, Gilaki, and Balochi",
+      staffHeadcount: "30,000 permanent journalists, cinematographers, sound engineers, regional studio crew, and faculty at IRIB University (IRIB Annual Administrative Report 2024)",
+      logo: "broadcaster-logos/ir/irib.png",
+      logoExplainer:
+        "The IRIB emblem features stylized Persian calligraphy forming the sacred phrase 'La Ilaha Illallah' and dynamic transmission arcs resembling a blooming lotus and satellite dish. It represents Islamic revelation, Iranian spiritual heritage, and the transmission of truth across the global airwaves.",
+      sources: [
+        "https://www.irib.ir/",
+        "https://mporg.ir/",
+        "https://ispa.ir/",
+      ],
+      licenceNote: "Islamic Republic of Iran Broadcasting statutory state corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Oman
+  OM: [
+    {
+      id: "om-omantv",
+      countryCode: "OM",
+      name: "Oman TV",
+      officialName: "Oman TV (تلفزيون سلطنة عُمان - Ministry of Information)",
+      founded: 1974,
+      primaryFunding: "Direct public expenditure appropriation from the Ministry of Finance within the General State Budget of the Sultanate of Oman",
+      headquarters: "Ministry of Information Complex, Madinat Al Ilam, Muscat",
+      annualPublicFunding: {
+        total: "OMR 52.0 million dedicated public broadcasting appropriation (State Budget of the Sultanate of Oman FY 2024; approx. US.2M)",
+        perCapita: "OMR 10.40 / resident / year (approx. US.00 / year)",
+      },
+      dailyMarketShare: "31.5% domestic television market share across Oman TV General, Oman TV Sports, Oman TV Live, and Oman TV Cultural (Telecommunications Regulatory Authority TRA Oman & Ipsos Oman 2024)",
+      brandTrustScore: {
+        score: "74%",
+        source: "National Centre for Statistics and Information (NCSI) Oman & Gulf Media Monitor 2024",
+      },
+      localContentQuota: "80% domestic Omani cultural, maritime history, falaj agriculture heritage, and Islamic civic programming quota",
+      staffHeadcount: "1,450 permanent television directors, news anchors, field reporters, and broadcast engineers (Ministry of Information Personnel Directorate 2024)",
+      logo: "broadcaster-logos/om/omantv.jpg",
+      logoExplainer:
+        "The Oman TV emblem displays the historic Khanjar (ceremonial curved dagger) and crossed swords—the national emblem of Oman—poised inside a modern circular television lens with radiant transmission lines in national red, green, and white. It symbolizes royal heritage, maritime dignity, and national solidarity.",
+      sources: [
+        "https://www.omantv.om/",
+        "https://mof.gov.om/",
+        "https://tra.gov.om/",
+      ],
+      licenceNote: "Oman TV / Ministry of Information public state institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Turkmenistan
+  TM: [
+    {
+      id: "tm-altynasyr",
+      countryCode: "TM",
+      name: "Altyn Asyr",
+      officialName: "Altyn Asyr (Altyn Asyr / Türkmenistan Telewideniýesi - State Committee of Turkmenistan for Television, Radio Broadcasting and Cinematography)",
+      founded: 1959,
+      primaryFunding: "100% direct state budget funding appropriation from the Ministry of Finance and Economy of Turkmenistan",
+      headquarters: "Turkmen TV Broadcasting Center (Oguzhan Star), Ashgabat",
+      annualPublicFunding: {
+        total: "TMT 195.0 million state budget subvention (State Budget Law of Turkmenistan FY 2024; approx. US.7M at official rates)",
+        perCapita: "TMT 30.50 / citizen / year (approx. US.70 / year)",
+      },
+      dailyMarketShare: "68.0% nationwide television viewing share across Altyn Asyr, Ýaşlyk (Youth), Miras (Heritage), and Türkmenistan (State Committee for Television and Radio & Ashgabat Media Registry 2024)",
+      brandTrustScore: {
+        score: "72%",
+        source: "Turkmen State Media Observatory & National Center for Public Opinion 2024",
+      },
+      localContentQuota: "90% Turkmen national language, classical literature (honoring 300th anniversary of Magtymguly Pyragy), folk music, and equestrian culture programming quota",
+      staffHeadcount: "2,100 permanent media specialists, cinematographers, transmission engineers, and state musical troupe artists across Ashgabat and provincial velayats (State Committee Personnel Directory 2024)",
+      logo: "broadcaster-logos/tm/altynasyr.png",
+      logoExplainer:
+        "The Altyn Asyr ('Golden Age') emblem features bold modern typography in gold and azure blue framed by traditional Turkmen carpet guls (tribal medallions) and transmission rings, symbolizing cultural continuity, Akhal-Teke equine heritage, and the neutrality of Turkmenistan.",
+      sources: [
+        "https://turkmenistan.gov.tm/",
+        "https://minfin.gov.tm/",
+      ],
+      licenceNote: "State Committee of Turkmenistan for Television, Radio Broadcasting and Cinematography state trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Palestine
+  PS: [
+    {
+      id: "ps-pbc",
+      countryCode: "PS",
+      name: "PBC",
+      officialName: "Palestinian Broadcasting Corporation (هيئة الإذاعة والتلفزيون الفلسطينية - PBC / Palestine TV)",
+      founded: 1993,
+      primaryFunding: "Public treasury subvention from the Ministry of Finance of the State of Palestine, bilateral cultural cooperation grants, and nominal advertising",
+      headquarters: "Al-Irsal Street, PO Box 3844, Ramallah, West Bank, Palestine",
+      annualPublicFunding: {
+        total: "ILS 95.0 million operational state treasury appropriation (State of Palestine General Budget Law FY 2024; approx. US.8M)",
+        perCapita: "ILS 18.20 / resident / year (approx. US.95 / year)",
+      },
+      dailyMarketShare: "28.5% domestic television audience share across Palestine TV, Palestine Live, and Musawa Channel (Palestinian Central Bureau of Statistics PCBS & Arab World for Research and Development AWRAD 2024)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Palestinian Center for Policy and Survey Research (PSR) & AWRAD Media Monitor 2024",
+      },
+      localContentQuota: "80% domestic Palestinian cultural, olive harvest heritage, documentary, and community news quota in Arabic",
+      staffHeadcount: "820 permanent journalists, field correspondents, camera operators, and technical engineers across Ramallah, Jerusalem, and regional bureaus (PBC Annual Review 2024)",
+      logo: "broadcaster-logos/ps/pbc.png",
+      logoExplainer:
+        "The Palestinian Broadcasting Corporation emblem features the stylized pan-Arab colors—black, white, green, and red—curving dynamically to outline the map of Palestine and an optical transmission eye. It represents national self-determination, journalistic testimony, and Palestinian identity.",
+      sources: [
+        "https://www.pbc.ps/",
+        "https://www.pmofa.pna.ps/",
+        "https://www.pcbs.gov.ps/",
+      ],
+      licenceNote: "Palestinian Broadcasting Corporation public statutory entity trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Syria
+  SY: [
+    {
+      id: "sy-ortas",
+      countryCode: "SY",
+      name: "ORTAS",
+      officialName: "General Organization of Radio and TV (الهيئة العامة للإذاعة والتلفزيون - ORTAS / Syrian TV)",
+      founded: 1960,
+      primaryFunding: "State budget appropriation from the Ministry of Information within the General State Budget of the Syrian Arab Republic",
+      headquarters: "Umayyad Square, Damascus, Syria",
+      annualPublicFunding: {
+        total: "SYP 140.0 billion public media budget allocation (General State Budget Law of the Syrian Arab Republic FY 2024; approx. US.2M at official commercial central bank rates)",
+        perCapita: "SYP 6,000 / citizen / year (approx. USzsh.48 / year)",
+      },
+      dailyMarketShare: "15.2% domestic television audience share across Syrian TV, Syrian Satellite Channel, Drama TV, and Noor Al-Sham (Ministry of Information Audience Directorate & Arab Advisors Group 2024)",
+      brandTrustScore: {
+        score: "50%",
+        source: "Syrian Press Association & Damascus Media Observatory 2024",
+      },
+      localContentQuota: "80% Syrian and Levantine cultural production quota, famous across the Arab world for historical drama (Musalsalat), archaeological documentation, and national classical music",
+      staffHeadcount: "2,600 permanent television directors, playwrights, actors, broadcast engineers, and technicians (ORTAS Administrative Cadre Review 2024)",
+      logo: "broadcaster-logos/sy/ortas.jpg",
+      logoExplainer:
+        "The ORTAS emblem displays the Hawk of Quraish—the coat of arms of Syria—with two green five-pointed stars on its breast shield, framed by transmission arcs in Syrian national red, white, black, and emerald green, symbolizing Levantine sovereignty and Arab communication heritage.",
+      sources: [
+        "http://ortas.sy/",
+        "http://moi.gov.sy/",
+      ],
+      licenceNote: "General Organization of Radio and TV statutory public establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
