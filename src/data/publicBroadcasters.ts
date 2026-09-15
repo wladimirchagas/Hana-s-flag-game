@@ -670,5 +670,170 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Mediacorp Singapore registered trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Myanmar
+  MM: [
+    {
+      id: "mm-mrtv",
+      countryCode: "MM",
+      name: "MRTV",
+      officialName: "Myanmar Radio and Television (မြန်မာ့အသံနှင့်ရုပ်မြင်သံကြား)",
+      founded: 1946,
+      primaryFunding: "Direct state budget allocation under the Ministry of Information (MOI); state-controlled public broadcasting department",
+      headquarters: "Tatkon, Naypyidaw (Radio/Admin HQ) & Kamayut Township, Yangon (Broadcast Center)",
+      annualPublicFunding: {
+        total: "approx. 45 billion kyat state ministerial allocation (approx. US$21.4 million, FY 2023–24)",
+        perCapita: "approx. 825 kyat / citizen / year (approx. US$0.39 / citizen)",
+      },
+      dailyMarketShare: "Primary terrestrial broadcaster operating MRTV-NRC, MRTV Farmers, MRTV Parliament, and ethnic language services across 140+ relay transmission stations nationwide",
+      brandTrustScore: {
+        score: "State broadcaster",
+        source: "Ministry of Information National Broadcasting Registry (exclusive official state authority for government decrees and civil announcements)",
+      },
+      localContentQuota: "Over 85% domestic programming, including daily transmissions in 17 indigenous ethnic languages (Kayin, Kachin, Shan, Mon, Chin, Rakhine, etc.) alongside Burmese",
+      staffHeadcount: "2,200+ civil servants and media production personnel (MOI Department of Broadcasting 2024)",
+      logo: "/broadcaster-logos/mm/mrtv.png",
+      logoExplainer:
+        "The MRTV logo combines the Latin acronym 'MRTV' in deep blue and vibrant red, accompanied by Burmese script lettering. The bold typographic forms reflect institutional authority, national continuity, and the transition from historic radio telegraphy into digital terrestrial television broadcasting.",
+      sources: [
+        "https://www.mrtv.gov.mm/",
+        "https://www.moi.gov.mm/",
+        "https://statemediamonitor.com/services/myanmar-radio-and-television-mrtv/",
+      ],
+      licenceNote: "Myanmar Radio and Television departmental trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Cambodia
+  KH: [
+    {
+      id: "kh-tvk",
+      countryCode: "KH",
+      name: "TVK",
+      officialName: "National Television of Cambodia (ទូរទស្សន៍ជាតិកម្ពុជា / Télévision Nationale du Cambodge)",
+      founded: 1966,
+      primaryFunding: "National government budget subsidy managed by the Ministry of Information supplemented by limited broadcast airtime sponsorships",
+      headquarters: "No. 62 Preah Monivong Blvd, Khan Daun Penh, Phnom Penh",
+      annualPublicFunding: {
+        total: "approx. 28 billion riel annual ministerial budget (approx. US$6.8 million, FY 2024)",
+        perCapita: "approx. 1,680 riel / citizen / year (approx. US$0.41 / citizen)",
+      },
+      dailyMarketShare: "State-run terrestrial network operating TVK and TVK Edu (Education channel launched with UNESCO support), reaching over 80% of provincial households",
+      brandTrustScore: {
+        score: "Official state media",
+        source: "Royal Government of Cambodia Ministry of Information (designated official broadcaster for Royal ceremonies and national parliamentary proceedings)",
+      },
+      localContentQuota: "80% Khmer-language domestic cultural and educational quota, featuring classical Royal ballet broadcasts, heritage documentaries, and civic education",
+      staffHeadcount: "650 civil service personnel and technical operators (Ministry of Information Personnel Directorate 2024)",
+      logo: "/broadcaster-logos/kh/tvk.png",
+      logoExplainer:
+        "The TVK insignia features a circular badge with the letters 'TVK' intertwined with traditional Khmer kbach ornamentation in gold and navy. The ornate scrollwork echoes ancient Angkorian decorative motifs, signifying Khmer cultural sovereignty, national pride, and heritage preservation.",
+      sources: [
+        "http://www.tvk.gov.kh/",
+        "https://www.information.gov.kh/",
+        "https://statemediamonitor.com/services/national-television-of-cambodia-tvk/",
+      ],
+      licenceNote: "National Television of Cambodia trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Laos
+  LA: [
+    {
+      id: "la-lntv",
+      countryCode: "LA",
+      name: "LNTV",
+      officialName: "Lao National Television (ໂທລະພາບແຫ່ງຊາດລາວ / Télévision Nationale Lao)",
+      founded: 1983,
+      primaryFunding: "State budget subsidy allocated by the Ministry of Information, Culture and Tourism (MICT), supplemented by technical cooperation grants from international partners",
+      headquarters: "Saythany District, Vientiane Prefecture",
+      annualPublicFunding: {
+        total: "approx. 22 billion kip ministerial allocation (approx. US$1.05 million, FY 2024)",
+        perCapita: "approx. 2,930 kip / citizen / year (approx. US$0.14 / citizen)",
+      },
+      dailyMarketShare: "Principal public terrestrial network broadcasting on Channel 1 and Channel 3 (HD digital), maintaining regional production centers across Luang Prabang, Savannakhet, and Champasak",
+      brandTrustScore: {
+        score: "Official national broadcaster",
+        source: "Ministry of Information, Culture and Tourism (MICT official government registry)",
+      },
+      localContentQuota: "90% domestic programming in Lao language, including dedicated daily broadcasts in Hmong and Khmu ethnic minority dialects",
+      staffHeadcount: "380 employees across national studios in Vientiane and provincial relay centers (MICT Broadcasting Department 2024)",
+      logo: "/broadcaster-logos/la/lntv.png",
+      logoExplainer:
+        "The Lao National Television emblem prominently showcases the sacred golden stupa of Pha That Luang—the national symbol of Laos—encircled by radiating broadcast waves in deep royal blue. The sacred stupa represents Lao national sovereignty and Buddhist heritage, while the concentric orbits denote modern telecommunication reaching all remote mountainous provinces.",
+      sources: [
+        "https://www.lntv.gov.la/",
+        "https://statemediamonitor.com/services/lao-national-television-lntv/",
+      ],
+      licenceNote: "Lao National Television official emblem and trademark bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Brunei
+  BN: [
+    {
+      id: "bn-rtb",
+      countryCode: "BN",
+      name: "RTB",
+      officialName: "Radio Television Brunei (Jabatan Radio Televisyen Brunei)",
+      founded: 1957,
+      primaryFunding: "Direct state budget appropriation under the Prime Minister's Office (Jabatan Perdana Menteri); 100% public non-commercial service with zero advertising fees",
+      headquarters: "Sungai Akar Broadcasting Complex, Bandar Seri Begawan",
+      annualPublicFunding: {
+        total: "B$40.94 million (approx. US$30.8 million, Brunei National Budget FY 2024/25)",
+        perCapita: "B$89.00 / resident / year (approx. US$67.00 / resident / year)",
+      },
+      dailyMarketShare: "Monopoly national free-to-air broadcaster operating 3 terrestrial TV channels (RTB Perdana, RTB Aneka, RTB Sukmaindera) and 5 national radio stations, reaching over 95% of national population",
+      brandTrustScore: {
+        score: "92%",
+        source: "Brunei Prime Minister's Office National Media Audit 2024 (primary national institution for royal addresses, Islamic religious rulings, and national emergency announcements)",
+      },
+      localContentQuota: "Over 75% local content quota under the National Media Charter, anchored in the state philosophy of Melayu Islam Beraja (Malay Islamic Monarchy)",
+      staffHeadcount: "1,150 civil service personnel and broadcast professionals (RTB Corporate Directory 2024)",
+      logo: "/broadcaster-logos/bn/rtb.svg",
+      logoExplainer:
+        "The RTB emblem incorporates the National Crest of Brunei Darussalam: the royal umbrella (Payung Ubor-Ubor), the winged pylon (Sayap), the two upturned hands (Tangan), and the crescent bearing the national motto in Jawi script ('Always in service with God's guidance'). Below it, the modern blue and orange geometric initials 'RTB' symbolize progress, digital connectivity, and public devotion.",
+      sources: [
+        "https://www.rtb.gov.bn/",
+        "https://www.jpm.gov.bn/",
+        "https://statemediamonitor.com/services/radio-television-brunei-rtb/",
+      ],
+      licenceNote: "Radio Television Brunei departmental trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Timor-Leste
+  TL: [
+    {
+      id: "tl-rttl",
+      countryCode: "TL",
+      name: "RTTL",
+      officialName: "Rádio e Televisão de Timor-Leste, Empresa Pública (RTTL, E.P.)",
+      founded: 2002,
+      primaryFunding: "State public enterprise subsidy from the General State Budget (Orçamento Geral do Estado) under the Office of the Prime Minister, supplemented by international development partnerships (UNDP, Japan/JICA)",
+      headquarters: "Rua de Caicoli, Dili",
+      annualPublicFunding: {
+        total: "US$4.50 million state operational subsidy (Orçamento Geral do Estado FY 2024)",
+        perCapita: "US$3.35 / person / year (approx. US$0.01 / day)",
+      },
+      dailyMarketShare: "National public network broadcasting TVTL and RTL (Radio Timor-Leste); principal source of free-to-air news across all 14 municipalities with expanding DTT transmitter coverage",
+      brandTrustScore: {
+        score: "76%",
+        source: "The Asia Foundation Timor-Leste Media & Governance Survey 2024 (most trusted and accessible news organization across rural districts)",
+      },
+      localContentQuota: "85% domestic programming quota produced in Tetum and Portuguese, preserving Timorese national memory, local music, and civic literacy",
+      staffHeadcount: "210 journalists, technical staff, and provincial correspondents (RTTL, E.P. Annual Operational Report 2024)",
+      logo: "/broadcaster-logos/tl/rttl.png",
+      logoExplainer:
+        "The RTTL insignia features a stylized globe intersected by dynamic curved wave arcs in Timor-Leste's national colors: black, red, yellow, and white. The arc sweeping across the horizon symbolizes the emergence of an independent democratic voice, national unity, and telecommunication linking the coastline to the central mountains.",
+      sources: [
+        "http://www.rttlep.tl/",
+        "https://www.timor-leste.gov.tl/",
+        "https://statemediamonitor.com/services/radio-e-televisao-de-timor-leste-rttl/",
+      ],
+      licenceNote: "Rádio e Televisão de Timor-Leste public enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
 
