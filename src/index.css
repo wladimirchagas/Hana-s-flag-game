@@ -86,6 +86,13 @@
 
 html {
   scroll-behavior: smooth;
+  /* Selecting a country replaces the empty "Learn your flags" placeholder
+     with the full fact-sheet, growing the page well above the fold. Without
+     this, Chrome's scroll anchoring "corrects" for that growth by nudging
+     scrollY back up in the middle of the scroll-to-top animation triggered
+     by that same selection (LearnPage's handleGridSelect and friends) — a
+     visible upward jump right as the smooth scroll starts. */
+  overflow-anchor: none;
 }
 
 body {

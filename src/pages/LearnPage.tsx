@@ -1529,7 +1529,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       setSelected(sel);
       setHovered(null);
     }
-    // Scroll to the absolute top so the user sees the map from the very start.
+    // Scroll to the absolute top so the user sees the map and the panel from
+    // the very start (see the global `overflow-anchor: none` in index.css —
+    // without it, the info panel growing from the "Learn your flags"
+    // placeholder to the full fact-sheet made the browser's scroll anchoring
+    // shove scrollY back UP right as this animation started).
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
