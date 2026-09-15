@@ -1885,6 +1885,171 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Hellenic Broadcasting Corporation S.A. state-owned company trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Czech Republic
+  CZ: [
+    {
+      id: "cz-ct",
+      countryCode: "CZ",
+      name: "Česká televize",
+      officialName: "Česká televize (Czech Television)",
+      founded: 1953,
+      primaryFunding: "Monthly television license fee (televizní poplatek / CZK 135/month per household owning a TV receiver, raising to CZK 150/month in 2025 legislative reforms); limited commercial sponsorships",
+      headquarters: "Kavčí hory, Na Hřebenech II 1137, Prague 4",
+      annualPublicFunding: {
+        total: "CZK 5,880 million television fee revenue (Česká televize Výroční zpráva FY 2024; approx. €235M)",
+        perCapita: "CZK 540 / resident / year (approx. €21.60 / year or CZK 1.48 / day)",
+      },
+      dailyMarketShare: "29.8% combined television audience share across ČT1, ČT2, ČT24, ČT sport, and ČT :D / ČT art (ATO - Nielsen Admosphere 2024; ČT1 holds 16.4% and ČT24 is Europe's most-watched public news channel with 4.1% share)",
+      brandTrustScore: {
+        score: "61%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted television news brand in the Czech Republic for ČT24)",
+      },
+      localContentQuota: "Over 70% Czech-originated content quota under the Czech Television Act (Zákon o České televizi), with statutory regional television studios in Brno and Ostrava",
+      staffHeadcount: "2,980 full-time equivalent staff (Česká televize Výroční zpráva o hospodaření 2024)",
+      logo: "/broadcaster-logos/cz/ct.png",
+      logoExplainer:
+        "Designed in 2012 by visual studio Najbrt, the Česká televize identity features an abstract cathode-ray screen formed by two brackets in Czech national blue and red, representing the letters 'Č' and 'T'. The minimalist geometric mark honors the legacy 1963 television screen logo while creating a modular visual identity across all digital and thematic channels.",
+      sources: [
+        "https://www.ceskatelevize.cz/vse-o-ct/vyrocni-zpravy/",
+        "https://www.ato.cz/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/czech-republic",
+      ],
+      licenceNote: "Česká televize public service statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Slovakia
+  SK: [
+    {
+      id: "sk-stvr",
+      countryCode: "SK",
+      name: "STVR",
+      officialName: "Slovenská televízia a rozhlas (formerly RTVS - Rozhlas a televízia Slovenska)",
+      founded: 1956,
+      primaryFunding: "Direct state budget subsidy pegged by law to a statutory percentage of Slovakia's GDP (0.12%–0.14% of GDP) following the abolition of concessionary fees in 2023 and the 2024 public service media reform law",
+      headquarters: "Mlynská dolina, Bratislava",
+      annualPublicFunding: {
+        total: "€157.0 million direct state budget transfer (Zákon o štátnom rozpočte & STVR Správa o hospodárení FY 2024)",
+        perCapita: "€28.90 / citizen / year (approx. €0.08 / day)",
+      },
+      dailyMarketShare: "14.6% television audience share across Jednotka (:1), Dvojka (:2), and :24 news channel (PMX / Kantar Slovakia 2024; Jednotka holds 10.8%)",
+      brandTrustScore: {
+        score: "55%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted broadcast news brand in Slovakia for RTVS/STVR Správy)",
+      },
+      localContentQuota: "Minimum 35% Slovak domestic music quota on radio and over 50% European audiovisual works quota under the Media Services Act, with regional studios in Banská Bystrica and Košice",
+      staffHeadcount: "1,520 employees (Správa o činnosti a hospodárení 2024)",
+      logo: "/broadcaster-logos/sk/stvr.png",
+      logoExplainer:
+        "The public broadcaster logo features the signature typography with a distinct colon separator (:), originally introduced in 2011 to bridge radio and television broadcast services. The colon symbol evokes digital connectivity, introduction, and the dialogue between public media and Slovak society.",
+      sources: [
+        "https://www.stvr.sk/",
+        "https://www.mvrr.gov.sk/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/slovakia",
+      ],
+      licenceNote: "Slovenská televízia a rozhlas statutory public institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Hungary
+  HU: [
+    {
+      id: "hu-mtva",
+      countryCode: "HU",
+      name: "Duna / MTVA",
+      officialName: "Médiaszolgáltatás-támogató és Vagyonkezelő Alap (Media Service Support and Asset Management Fund) / Duna Médiaszolgáltató Zrt.",
+      founded: 1957,
+      primaryFunding: "Annual state budget subsidy allocated by the Hungarian National Assembly via MTVA, with supplementary commercial advertising",
+      headquarters: "Kunigunda útja 64, District III (Óbuda), Budapest",
+      annualPublicFunding: {
+        total: "HUF 142.0 billion central state budget allocation (Központi költségvetésről szóló törvény FY 2024; approx. €360M)",
+        perCapita: "HUF 14,800 / resident / year (approx. €37.50 / year or HUF 40.5 / day)",
+      },
+      dailyMarketShare: "11.2% television audience share across Duna, M1 (news), M2 (children), M4 Sport, and M5 (culture) (Nielsen Közönségmérés Hungary 2024; M4 Sport peaks during international athletic competitions)",
+      brandTrustScore: {
+        score: "30%",
+        source: "Reuters Institute Digital News Report 2024 (reflecting polarizing domestic media landscape and public trust trends)",
+      },
+      localContentQuota: "Minimum 51% Hungarian and European content requirement on public television channels under Act CLXXXV of 2010 on Media Services and Mass Media",
+      staffHeadcount: "2,150 permanent employees (MTVA Éves beszámoló 2024)",
+      logo: "/broadcaster-logos/hu/duna.png",
+      logoExplainer:
+        "The MTVA and Duna Media corporate visual system features an intricate circular rosette composed of orbiting dots and interconnected geometric arcs. Designed in 2012, the planetary motif symbolizes the convergence of television, Hungarian radio (Kossuth, Petőfi, Bartók), and the Hungarian news agency MTI into a unified national public media constellation.",
+      sources: [
+        "https://mtva.hu/gazdalkodasi-adatok/",
+        "https://nmhh.hu/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/hungary",
+      ],
+      licenceNote: "Médiaszolgáltatás-támogató és Vagyonkezelő Alap state media fund trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Romania
+  RO: [
+    {
+      id: "ro-tvr",
+      countryCode: "RO",
+      name: "TVR",
+      officialName: "Societatea Română de Televiziune (Romanian Television)",
+      founded: 1956,
+      primaryFunding: "Direct state budget appropriation from the Parliament of Romania via the state budget law (after TV licence fees were abolished in 2017), supplemented by commercial advertising",
+      headquarters: "Calea Dorobanților 191, Sector 1, Bucharest",
+      annualPublicFunding: {
+        total: "RON 425.0 million state budget subvention (Legea bugetului de stat & Raport TVR FY 2024; approx. €85.5M)",
+        perCapita: "RON 22.30 / citizen / year (approx. €4.50 / year or RON 0.06 / day)",
+      },
+      dailyMarketShare: "4.8% combined television audience share across TVR 1, TVR 2, TVR 3, TVR Info, and TVR Folclor (Kantar Media Romania / ARMA 2024; TVR 1 holds 2.9%)",
+      brandTrustScore: {
+        score: "56%",
+        source: "Reuters Institute Digital News Report 2024 (TVR News maintains solid trust ratings as an impartial institutional broadcaster)",
+      },
+      localContentQuota: "Minimum 50% Romanian-language and European production quota under Audiovisual Law no. 504/2002, funding five regional territorial studios (Cluj, Craiova, Iași, Timișoara, Târgu Mureș)",
+      staffHeadcount: "2,210 employees across national headquarters and regional territorial studios (Raportul de activitate al SRTv 2024)",
+      logo: "/broadcaster-logos/ro/tvr.png",
+      logoExplainer:
+        "Modernized in 2022, the TVR logo features the bold capital letters 'TVR' rendered in contemporary blue and vibrant orange with a stylized forward-pointing apex in the letter 'V'. The geometric angles represent forward motion, cultural dynamism, and nationwide broadcasting from the Carpathians to the Black Sea.",
+      sources: [
+        "https://www.tvr.ro/rapoarte-si-studii_3203.html",
+        "https://cna.ro/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/romania",
+      ],
+      licenceNote: "Societatea Română de Televiziune public institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bulgaria
+  BG: [
+    {
+      id: "bg-bnt",
+      countryCode: "BG",
+      name: "BNT",
+      officialName: "Balgarska Natsionalna Televiziya (Bulgarian National Television)",
+      founded: 1959,
+      primaryFunding: "Annual state budget subsidy allocated by the Ministry of Culture and National Assembly under the Radio and Television Act (Zakon za radioto i televiziyata), plus limited advertising (max 15 min/day, 5 min/hour in prime time)",
+      headquarters: "29 San Stefano Street, Sofia",
+      annualPublicFunding: {
+        total: "BGN 86.4 million state budget subsidy (BNT Godishen finansov otchet FY 2024; approx. €44.2M)",
+        perCapita: "BGN 13.40 / citizen / year (approx. €6.85 / year or BGN 0.04 / day)",
+      },
+      dailyMarketShare: "7.8% television audience share across BNT 1, BNT 2, BNT 3 (sports), and BNT 4 (international) (GARB Audience Measurement Bulgaria 2024; BNT 1 holds 5.6% share)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted television news provider in Bulgaria for BNT News / Po Sveta i u Nas)",
+      },
+      localContentQuota: "At least 50% European and Bulgarian content quota under Council for Electronic Media (CEM) standards, supporting Bulgarian cinema and regional television centers in Blagoevgrad, Varna, Plovdiv, and Ruse",
+      staffHeadcount: "1,440 employees (BNT Otchet za deynostta 2024)",
+      logo: "/broadcaster-logos/bg/bnt.png",
+      logoExplainer:
+        "Introduced in 2008 and refreshed in 2018, the BNT emblem showcases three vibrant forward-angled geometric quadrilaterals in Bulgarian national red, deep blue, and light blue, flanking the bold sans-serif letters 'БНТ' (BNT). The ascending parallel bars symbolize the progression of television broadcast signals and Bulgarian cultural identity.",
+      sources: [
+        "https://bnt.bg/bg/a/finansovi-otcheti",
+        "https://www.cem.bg/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/bulgaria",
+      ],
+      licenceNote: "Bulgarian National Television public service organization trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
