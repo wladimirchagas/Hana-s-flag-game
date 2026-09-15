@@ -998,7 +998,173 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Korean Central Television national state emblem and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Argentina
+  AR: [
+    {
+      id: "ar-tvp",
+      countryCode: "AR",
+      name: "Televisión Pública",
+      officialName: "Radio y Televisión Argentina Sociedad del Estado (RTA S.E.) - Televisión Pública",
+      founded: 1951,
+      primaryFunding: "State Treasury budgetary transfers through the National Budget under the Secretariat of Public Communication, supplemented by commercial advertising and transmission services",
+      headquarters: "Av. Presidente Figueroa Alcorta 2977, Recoleta, Buenos Aires",
+      annualPublicFunding: {
+        total: "approx. $74.4 billion ARS approved RTA operating allocation (approx. US$78 million, Resolution 529/2024)",
+        perCapita: "approx. $1,610 ARS / citizen / year (approx. US$1.70 / citizen / year)",
+      },
+      dailyMarketShare: "0.4% national commercial television rating (Kantar IBOPE Media Argentina 2024); guarantees universal federal coverage to over 240 rural repeater relay stations across all 23 provinces",
+      brandTrustScore: {
+        score: "48%",
+        source: "Reuters Institute Digital News Report 2024 (historic federal network; high reach during FIFA World Cup and cultural festivals)",
+      },
+      localContentQuota: "60% domestic production quota under Audiovisual Communication Services Law No. 26.522, delivering federal cultural documentaries, regional folklore festivals (Cosquín, Jesús María), and civic news",
+      staffHeadcount: "1,250 direct personnel at Televisión Pública (RTA S.E. Public Transparency Registry 2024)",
+      logo: "/broadcaster-logos/ar/tvp.svg",
+      logoExplainer:
+        "The Televisión Pública logo features the bold acronym 'TVP' flanked by a stylized ribbon in the Argentine national colors of celestial blue and white. The dynamic diagonal cut across the letterforms reflects modern digital transmission and universal civic connection uniting Buenos Aires and the interior provinces.",
+      sources: [
+        "https://www.tvpublica.com.ar/",
+        "https://www.boletinoficial.gob.ar/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/argentina",
+      ],
+      licenceNote: "Radio y Televisión Argentina S.E. state trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Chile
+  CL: [
+    {
+      id: "cl-tvn",
+      countryCode: "CL",
+      name: "TVN",
+      officialName: "Televisión Nacional de Chile",
+      founded: 1969,
+      primaryFunding: "Self-financing commercial public enterprise under Law 19.132; generates over 95% of revenues through advertising, studio production, and international syndication, with targeted state capitalization for digital and cultural signals (NTV)",
+      headquarters: "Bellavista 0990, Providencia, Santiago",
+      annualPublicFunding: {
+        total: "Public enterprise self-financing model (2024 operational revenue of 48.2 billion CLP; receives targeted state subsidies for cultural channel NTV of approx. 5.5 billion CLP / US$5.8M)",
+        perCapita: "approx. 280 CLP / citizen / year for cultural public service (approx. US$0.30 / citizen)",
+      },
+      dailyMarketShare: "9.8% open television broadcast market share (Kantar IBOPE Media Chile 2024); operates 9 regional production centers across the country from Arica to Punta Arenas",
+      brandTrustScore: {
+        score: "56%",
+        source: "Reuters Institute Digital News Report 2024 (24 Horas news brand is among Chile's most established and reputable broadcast news sources)",
+      },
+      localContentQuota: "Over 65% domestic production quota under the National Television Council (CNTV) regulations, including 100% Chilean educational and cultural content on its dedicated digital channel NTV",
+      staffHeadcount: "730 full-time staff across corporate headquarters and regional television stations (TVN Memoria Integrada 2024)",
+      logo: "/broadcaster-logos/cl/tvn.svg",
+      logoExplainer:
+        "The classic TVN logo displays the geometric letters 'tvn' stylized in dynamic angular strokes. Originating in 1996 and recognized nationwide, the interlocking red and gray letterforms symbolize editorial autonomy, forward momentum, and the enduring connection of public television with Chilean society.",
+      sources: [
+        "https://www.tvn.cl/",
+        "https://www.cntv.cl/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/chile",
+      ],
+      licenceNote: "Televisión Nacional de Chile registered corporate trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Colombia
+  CO: [
+    {
+      id: "co-rtvc",
+      countryCode: "CO",
+      name: "RTVC",
+      officialName: "RTVC Sistema de Medios Públicos (Radio Televisión Nacional de Colombia)",
+      founded: 1954,
+      primaryFunding: "National government budget allocations through the Single ICT Fund (Fondo Único de TIC / FonTIC) under the Ministry of Information Technologies and Communications (MinTIC)",
+      headquarters: "Carrera 45 # 26-33, Centro Administrativo Nacional (CAN), Bogotá D.C.",
+      annualPublicFunding: {
+        total: "318.5 billion COP ministerial appropriation (approx. US$78 million, MinTIC FonTIC Allocation FY 2024)",
+        perCapita: "6,150 COP / citizen / year (approx. US$1.50 / citizen / year)",
+      },
+      dailyMarketShare: "Operates national free-to-air public channels Señal Colombia and Canal Institucional alongside Radio Nacional (68 frequencies) and Radiónica, reaching 93% of national population",
+      brandTrustScore: {
+        score: "59%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted public broadcast media system in Colombia for Señal Colombia / RTVC Noticias)",
+      },
+      localContentQuota: "Over 70% Colombian domestic cultural production quota, funding independent regional audiovisual creators, Indigenous storytelling, and national sports broadcasts (Vuelta a Colombia)",
+      staffHeadcount: "950 career civil servants, permanent staff, and contracted audiovisual specialists (RTVC Informe de Gestión 2024)",
+      logo: "/broadcaster-logos/co/rtvc.svg",
+      logoExplainer:
+        "The Señal Colombia / RTVC emblem features a bright geometric triangle in vibrant orange, framing a stylized broadcast crest. The triangular symbol represents a digital play button, the three Colombian mountain ranges (Cordilleras), and the forward trajectory of convergent public media.",
+      sources: [
+        "https://www.rtvc.gov.co/",
+        "https://www.mintic.gov.co/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/colombia",
+      ],
+      licenceNote: "RTVC Sistema de Medios Públicos state trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Peru
+  PE: [
+    {
+      id: "pe-tvperu",
+      countryCode: "PE",
+      name: "TV Perú",
+      officialName: "Instituto Nacional de Radio y Televisión del Perú (IRTP) - TV Perú",
+      founded: 1958,
+      primaryFunding: "National public budget financing under the Ministry of Culture, supplemented by state advertising and commercial audiovisual production services",
+      headquarters: "Jirón Natalio Sánchez 220, Jesús María, Lima",
+      annualPublicFunding: {
+        total: "S/ 99.95 million budget execution (approx. US$26.8 million, IRTP Institutional Budget FY 2024)",
+        perCapita: "S/ 2.95 / citizen / year (approx. US$0.80 / citizen / year)",
+      },
+      dailyMarketShare: "Maintains the widest terrestrial broadcast footprint in Peru with over 380 transmitter stations nationwide; pioneers pioneering daily indigenous news broadcasts in Quechua (Ñuqanchik) and Aymara (Jiwasanaka)",
+      brandTrustScore: {
+        score: "52%",
+        source: "Reuters Institute Digital News Report 2024 (highly valued for neutral cultural and civic coverage across rural Andean and Amazonian regions)",
+      },
+      localContentQuota: "80% domestic production requirement under the Radio and Television Law (Law 28278), with mandatory quotas for Peruvian cultural patrimony, regional music, and native language programming",
+      staffHeadcount: "1,350 personnel across administrative headquarters and regional production branches (IRTP Transparencia 2024)",
+      logo: "/broadcaster-logos/pe/tvperu.svg",
+      logoExplainer:
+        "The TV Perú logo features the national bilingual wordmark accompanied by a stylized red and white badge echoing the Peruvian national flag. The modern sans-serif typography and vibrant red ribbon communicate clarity, institutional transparency, and cultural inclusion for all Peruvian communities.",
+      sources: [
+        "https://www.tvperu.gob.pe/",
+        "https://www.gob.pe/irtp",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/peru",
+      ],
+      licenceNote: "Instituto Nacional de Radio y Televisión del Perú trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Venezuela
+  VE: [
+    {
+      id: "ve-vtv",
+      countryCode: "VE",
+      name: "VTV",
+      officialName: "Venezolana de Televisión C.A.",
+      founded: 1964,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Popular Power for Communication and Information (MIPPCI); state-controlled public television enterprise",
+      headquarters: "Avenida Principal de Los Ruices, Municipio Sucre, Caracas",
+      annualPublicFunding: {
+        total: "approx. 1.2 billion VES ministerial subsidy (approx. US$32 million, MIPPCI Budget Allocation FY 2024)",
+        perCapita: "approx. 42 VES / citizen / year (approx. US$1.15 / citizen)",
+      },
+      dailyMarketShare: "Dominant state terrestrial television signal broadcasting on Channel 8; universal mandatory carriage across all domestic subscription cable and satellite providers in Venezuela",
+      brandTrustScore: {
+        score: "State broadcaster",
+        source: "Ministry of Popular Power for Communication and Information (flagship state news and institutional announcement channel)",
+      },
+      localContentQuota: "Over 85% domestic programming quota under the Law on Social Responsibility in Radio, Television and Electronic Media (RESORTE), focusing on state news bulletins and ideological analysis",
+      staffHeadcount: "1,100+ journalists, editors, and broadcast technicians (MIPPCI Corporate Registry 2024)",
+      logo: "/broadcaster-logos/ve/vtv.svg",
+      logoExplainer:
+        "The VTV logo displays a stylized bold letter 'V' rendered with the yellow, blue, and red colors of the Venezuelan national flag, crowned by the acronym 'VTV'. The dynamic tricolor sweep represents national sovereignty, patriotism, and the historic lineage of public broadcasting founded in Los Ruices.",
+      sources: [
+        "https://www.vtv.gob.ve/",
+        "http://www.minci.gob.ve/",
+        "https://statemediamonitor.com/services/venezolana-de-television-vtv/",
+      ],
+      licenceNote: "Venezolana de Televisión C.A. state corporate trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
 
 
 
