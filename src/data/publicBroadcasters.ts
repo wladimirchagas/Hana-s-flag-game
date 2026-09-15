@@ -3183,6 +3183,166 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Tonga Broadcasting Commission statutory public body trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Slovenia
+  SI: [
+    {
+      id: "si-rtvslo",
+      countryCode: "SI",
+      name: "RTVSLO",
+      officialName: "Javni zavod Radiotelevizija Slovenija (RTV Slovenija)",
+      founded: 1928,
+      primaryFunding: "Statutory household RTV licence fee (RTV-prispevek of €12.75/month, adjusted to €14.02/month from Jan 2025 under ZRTVS-1), commercial advertising, and state co-funding for minority programmes",
+      headquarters: "Kolodvorska ulica 2–4, 1000 Ljubljana",
+      annualPublicFunding: {
+        total: "€100.5 million statutory RTV fee revenues (RTV Slovenija Letno poročilo FY 2023/24; approx. US$108M)",
+        perCapita: "€47.60 / citizen / year (approx. US$51.50 / year)",
+      },
+      dailyMarketShare: "29.4% combined television audience share across TV SLO 1, TV SLO 2, and TV SLO 3 (Mediana & AGB Nielsen Slovenia 2024; RTV Slovenija operates extensive minority services for Italian and Hungarian communities)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Reuters Institute Digital News Report 2024 (RTV Slovenija ranks as the leading trusted news brand in Slovenia)",
+      },
+      localContentQuota: "Minimum 55% Slovenian domestic and European audiovisual works quota mandated by the Mass Media Act (ZMed), featuring dedicated minority channels TV Koper-Capodistria (Italian) and TV Maribor / MMR (Hungarian)",
+      staffHeadcount: "2,120 permanent employees including symphony orchestra, choir, and regional production centers (Letno poročilo 2024)",
+      logo: "/broadcaster-logos/si/rtvslo.png",
+      logoExplainer:
+        "The RTV Slovenija corporate emblem presents the lowercase wordmark 'rtv' rendered in authoritative oceanic navy blue, conjoined with the uppercase letters 'SLO' in vibrant royal blue. The typography emphasizes national identity, universal public access, and democratic cultural integration across Slovenia's central and linguistic border regions.",
+      sources: [
+        "https://www.rtvslo.si/",
+        "https://www.mediana.si/",
+      ],
+      licenceNote: "Radiotelevizija Slovenija public institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Cyprus
+  CY: [
+    {
+      id: "cy-cybc",
+      countryCode: "CY",
+      name: "CyBC / RIK",
+      officialName: "Cyprus Broadcasting Corporation (Ραδιοφωνικό Ίδρυμα Κύπρου - ΡΙΚ / Kıbrıs Yayın Kurumu)",
+      founded: 1953,
+      primaryFunding: "Direct state budget grant allocation (κρατική χορηγία approved annually by the House of Representatives) and commercial advertising airtime sales",
+      headquarters: "21 RIK Avenue, Aglantzia, 2120 Nicosia",
+      annualPublicFunding: {
+        total: "€37.5 million state budget grant appropriation (Cyprus House of Representatives State Budget Act FY 2024; approx. US$40.5M)",
+        perCapita: "€40.75 / citizen / year (approx. US$44.00 / year)",
+      },
+      dailyMarketShare: "18.6% television audience share across RIK 1, RIK 2, and RIK HD (Nielsen Audience Measurement Cyprus 2024; CyBC competes with private commercial networks Sigma, Omega, and Antenna)",
+      brandTrustScore: {
+        score: "63%",
+        source: "Cyprus Radiotelevision Authority (CRTA) & Reuters Institute DNR 2024",
+      },
+      localContentQuota: "Minimum 50% Cypriot and European programming quota, fulfilling constitutional public service mandates to broadcast in Greek, Turkish, and English across radio and television",
+      staffHeadcount: "350 permanent staff (CyBC Annual Performance Report 2024)",
+      logo: "/broadcaster-logos/cy/cybc.png",
+      logoExplainer:
+        "The CyBC emblem showcases the Greek acronym 'ΡΙΚ' (RIK) in stylized geometric typography in deep Mediterranean azure and crimson red, flanked by the English descriptor 'Cyprus Broadcasting Corporation'. The design reflects Cyprus's European and Mediterranean heritage, constitutional public service commitment, and independent broadcast integrity.",
+      sources: [
+        "https://www.rik.cy/",
+        "https://www.crta.org.cy/",
+      ],
+      licenceNote: "Cyprus Broadcasting Corporation statutory public authority trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Malta
+  MT: [
+    {
+      id: "mt-pbs",
+      countryCode: "MT",
+      name: "PBS Malta / TVM",
+      officialName: "Public Broadcasting Services Limited (PBS Malta - Television Malta / TVM)",
+      founded: 1962,
+      primaryFunding: "Government Public Service Obligation (PSO) operational grant from the Ministry for the National Heritage, the Arts and Local Government, and commercial advertising / airtime sponsorship",
+      headquarters: "730 St. Luke's Road, Gwardamanġa, Pieta PTA 1022",
+      annualPublicFunding: {
+        total: "€6.5 million Public Service Obligation (PSO) government grant allocation (Government of Malta Financial Estimates FY 2024; approx. US$7.0M)",
+        perCapita: "€12.15 / citizen / year (approx. US$13.10 / year)",
+      },
+      dailyMarketShare: "38.4% television audience share across TVM and TVM News+ (Broadcasting Authority Malta Audience Assessment 2024; TVM is the most-watched channel in Malta)",
+      brandTrustScore: {
+        score: "65%",
+        source: "Broadcasting Authority Malta (BA) Assessment & Eurobarometer 2024",
+      },
+      localContentQuota: "Minimum 50% Maltese domestic production quota under Broadcasting Authority directives, promoting Maltese language programming, parliamentary debates, and cultural coverage",
+      staffHeadcount: "155 permanent employees (PBS Corporate Annual Review 2024)",
+      logo: "/broadcaster-logos/mt/pbs.png",
+      logoExplainer:
+        "The PBS Malta insignia presents the bold acronym 'PBS' in contemporary royal navy blue and vibrant red, accompanied by the national eight-pointed Maltese Cross motif. The emblem symbolizes centuries of Maltese civic identity, Mediterranean maritime vigilance, and public service information stewardship.",
+      sources: [
+        "https://www.tvmnews.mt/",
+        "https://ba.org.mt/",
+      ],
+      licenceNote: "Public Broadcasting Services Limited government-owned public company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Luxembourg
+  LU: [
+    {
+      id: "lu-radio1007",
+      countryCode: "LU",
+      name: "Radio 100,7",
+      officialName: "Média de service public 100,7 (Établissement de Radiodiffusion Socioculturelle du Luxembourg - ERSL)",
+      founded: 1991,
+      primaryFunding: "Direct state budget dotation (Ministère d'État - Service des Médias, de la Connectivité et de la Politique Numérique) under 2024–2030 multiannual public service convention",
+      headquarters: "21a Avenue John F. Kennedy, L-1855 Kirchberg, Luxembourg",
+      annualPublicFunding: {
+        total: "€9.65 million state public service dotation (Loi de finances & Convention pluriannuelle État-ERSL FY 2024; approx. US$10.4M)",
+        perCapita: "€14.60 / resident / year (approx. US$15.80 / year)",
+      },
+      dailyMarketShare: "9.2% weekly radio audience reach in Luxembourg (TNS Ilres Plurimedia 2024; Radio 100,7 is the country's dedicated ad-free cultural and public affairs service)",
+      brandTrustScore: {
+        score: "76%",
+        source: "TNS Ilres & EBU Media Trust Monitor 2024 (highest editorial trust score in Luxembourg)",
+      },
+      localContentQuota: "100% ad-free public service programming focused on Luxembourgish culture, classical/contemporary music, social analysis, and investigative journalism in the Luxembourgish language",
+      staffHeadcount: "58 permanent journalists and broadcast staff (Rapport Annuel ERSL 2024)",
+      logo: "/broadcaster-logos/lu/radio1007.png",
+      logoExplainer:
+        "The Radio 100,7 emblem showcases the bold number '100,7' in contemporary typographic letterforms with a warm crimson accent dot. The minimalist, high-contrast black-and-white treatment embodies editorial independence, cultural depth, and commercial-free public radio integrity across the Grand Duchy.",
+      sources: [
+        "https://www.100komma7.lu/",
+        "https://gouvernement.lu/",
+      ],
+      licenceNote: "Média de service public 100,7 public establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bosnia and Herzegovina
+  BA: [
+    {
+      id: "ba-bhrt",
+      countryCode: "BA",
+      name: "BHRT",
+      officialName: "Radio-televizija Bosne i Hercegovine (BHRT - BHT 1 / BH Radio 1)",
+      founded: 1945,
+      primaryFunding: "RTV taksa statutory broadcasting fee (KM 7.50/month collected predominantly via electricity bills) and commercial advertising",
+      headquarters: "Bulevar Meše Selimovića 12, 71000 Sarajevo",
+      annualPublicFunding: {
+        total: "KM 32.5 million statutory RTV fee collection & government special project grants (BHRT Finansijski izvještaj FY 2023/24; approx. US$18.1M)",
+        perCapita: "KM 10.15 / citizen / year (approx. US$5.65 / year)",
+      },
+      dailyMarketShare: "12.8% national television audience share for BHT 1 (Audience Measurement d.o.o. BiH 2024; BHRT operates alongside entity broadcasters FTV and RTRS)",
+      brandTrustScore: {
+        score: "54%",
+        source: "Communications Regulatory Agency (CRA/RAK) BiH & Media Centar Sarajevo 2024",
+      },
+      localContentQuota: "Minimum 50% domestic programming quota representing all three constituent peoples (Bosniaks, Croats, and Serbs) and two official alphabets (Latin and Cyrillic)",
+      staffHeadcount: "790 employees across RTV Dom Sarajevo and regional correspondent centers (BHRT Izvještaj o radu 2024)",
+      logo: "/broadcaster-logos/ba/bhrt.png",
+      logoExplainer:
+        "The BHRT emblem features the bold, italicized acronym 'BHRT' in deep cobalt blue, accompanied by a dynamic sweeping arc swoosh in sunny yellow echoing the colors of the national flag of Bosnia and Herzegovina. The forward-angled geometry reflects unity, institutional resilience, and universal multi-ethnic public broadcasting.",
+      sources: [
+        "https://bhrt.ba/",
+        "https://rak.ba/",
+      ],
+      licenceNote: "Radio-televizija Bosne i Hercegovine statutory public broadcasting institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
