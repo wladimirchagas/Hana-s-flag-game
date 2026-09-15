@@ -127,7 +127,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       staffHeadcount: "1,050 full-time personnel across editorial, broadcast, and digital divisions",
       logo: "/broadcaster-logos/my/bernama.png",
       logoExplainer:
-        "The Bernama logo features an orbital terrestrial sphere framed by concentric transmission orbits in the Malaysian national colors (red, white, yellow, and royal blue from the Jalur Gemilang). The rings represent real-time news delivery, national sovereignty in information, and global wire connectivity.",
+        "The Bernama logo features a geometric monogram combining the letters B and M in white and blue, with two upward-pointing triangular broadcast transmission symbols flanking the letterforms. The modern, bold design in blue and white symbolizes media distribution, transmission signals, and contemporary news broadcasting.",
       sources: [
         "https://www.bernama.com/",
         "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/malaysia",
@@ -188,7 +188,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       staffHeadcount: "780 full-time staff (Fundação Padre Anchieta 2024)",
       logo: "/broadcaster-logos/br/cultura.svg",
       logoExplainer:
-        "Created in 1969 by graphic designer Emilie Chamie and updated across design eras, the TV Cultura emblem depicts a stylized green and yellow singing bird perched within a circular aperture. The singing bird symbolizes native Brazilian wildlife, youth, educational discovery, and unrestricted freedom of cultural expression.",
+        "The TV Cultura logo features a geometric design comprising stylized letterforms rendered in vibrant green (#27ba59) and deep dark blue (#39409e). The modern, minimalist composition reflects the broadcaster's commitment to contemporary, accessible educational content while maintaining visual distinction through its bold, complementary color palette of environmental green and institutional blue.",
       sources: [
         "https://fpa.com.br/transparencia/",
         "https://cultura.uol.com.br/",
@@ -468,7 +468,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       staffHeadcount: "4,520 full-time employees (including the National Orchestra of France, the Radio France Philharmonic Orchestra, and the Radio France Choir)",
       logo: "/broadcaster-logos/fr/radio-france.svg",
       logoExplainer:
-        "Designed by the Leg agency and updated in 2017, the Radio France logo features a square blue medallion bearing the stylized architectural silhouette of the circular Maison de la Radio building in Paris. Its concentric geometry represents the headquarters on the Seine and concentric sound waves radiating across the French Republic.",
+        "The Radio France logo employs a circular design with a sophisticated linear gradient spanning purple (#8D044F) through pink (#AC47B6) to orange-red (#FF6C5B) and culminating in deep red (#FD0323). The gradient's warm, energetic progression from cool tones to warm tones symbolizes the breadth of Radio France's programming and its dynamic reach across French audiences and cultural expression.",
       sources: [
         "https://www.radiofrance.com/qui-sommes-nous",
         "https://www.mediametrie.fr/fr/126-000-radio",
@@ -562,7 +562,7 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       staffHeadcount: "1,180 full-time equivalent staff (Thai PBS Annual Financial Report 2023–24)",
       logo: "/broadcaster-logos/th/thaipbs.svg",
       logoExplainer:
-        "The Thai PBS emblem features a stylized upward-soaring bird in bright dawn orange alongside the bilingual name. The soaring bird represents editorial freedom, aspiration, connection with the people, and societal vitality, while the radiant orange represents the dawn of hope, enlightenment, and public service integrity.",
+        "The Thai PBS logo comprises complex geometric shapes rendered in a carefully chosen palette of red (#EF5021), orange (#F69322), neutral gray (#727272), and white (#FFFFFF). The layered geometric composition reflects modern broadcast design principles while the warm red and orange tones convey energy, vitality, and engagement with Thai audiences across all educational and informational programming.",
       sources: [
         "https://www.thaipbs.or.th/about",
         "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/thailand",
