@@ -2539,6 +2539,168 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "TTT Limited state-owned media company trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // India
+  IN: [
+    {
+      id: "in-dd",
+      countryCode: "IN",
+      name: "Doordarshan",
+      officialName: "Doordarshan (Prasar Bharati - Broadcasting Corporation of India)",
+      founded: 1959,
+      primaryFunding: "Central government grants-in-aid from the Ministry of Information and Broadcasting (MIB) through Prasar Bharati, supplemented by commercial advertising and digital monetization",
+      headquarters: "Doordarshan Bhawan, Copernicus Marg, Mandi House, New Delhi",
+      annualPublicFunding: {
+        total: "₹2,840 crore central government grant allocation to Prasar Bharati (Union Budget FY 2024–25; approx. US$340M)",
+        perCapita: "₹20.30 / citizen / year (approx. US$0.24 / year)",
+      },
+      dailyMarketShare: "Over 45% terrestrial and free-to-air rural TV reach via DD Free Dish DTH platform across 35+ satellite channels (BARC India 2024; reaching 43+ million households)",
+      brandTrustScore: {
+        score: "70%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted television news network in India for DD India and DD News)",
+      },
+      localContentQuota: "Over 90% Indian domestic and regional language programming quota across 28 regional Kendra stations broadcasting in Hindi, Tamil, Telugu, Bengali, Marathi, and other scheduled languages",
+      staffHeadcount: "23,500 employees across Doordarshan and All India Radio (Prasar Bharati Annual Report 2024)",
+      logo: "/broadcaster-logos/in/dd.svg",
+      logoExplainer:
+        "Created in 1976 by National Institute of Design (NID) alumnus Devashis Bhattacharyya, the iconic Doordarshan visual mark (popularly known as the 'DD Eye') features two curving parabolic lenses revolving around an inner core in radiant saffron orange and deep navy blue. The symbol embodies vigilance, truth ('Satyam Shivam Sundaram'), and universal broadcasting across the subcontinent.",
+      sources: [
+        "https://prasarbharati.gov.in/annual-reports/",
+        "https://mib.gov.in/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/india",
+      ],
+      licenceNote: "Prasar Bharati statutory autonomous public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bangladesh
+  BD: [
+    {
+      id: "bd-btv",
+      countryCode: "BD",
+      name: "BTV",
+      officialName: "Bangladesh Television",
+      founded: 1964,
+      primaryFunding: "State revenue budget allocation from the Ministry of Information and Broadcasting of Bangladesh, supplemented by commercial advertising",
+      headquarters: "BTV Bhaban, Rampura, Dhaka",
+      annualPublicFunding: {
+        total: "BDT 3,450 million state budget allocation (Ministry of Finance Budget Estimates FY 2024–25; approx. US$29.5M)",
+        perCapita: "BDT 20.20 / citizen / year (approx. US$0.17 / year)",
+      },
+      dailyMarketShare: "22.5% terrestrial and national television audience share across BTV National, BTV World, BTV Chittagong, and Sangsad Television (National Media Survey Bangladesh 2024)",
+      brandTrustScore: {
+        score: "55%",
+        source: "Centre for Policy Dialogue & MRDI Media Landscape Survey 2024",
+      },
+      localContentQuota: "Minimum 75% Bangladeshi domestic production quota, supporting Bengali literature, rural agricultural development programs (Mati O Manush), and folk music heritage",
+      staffHeadcount: "1,820 civil service and production personnel (BTV Annual Administrative Report 2024)",
+      logo: "/broadcaster-logos/bd/btv.png",
+      logoExplainer:
+        "The Bangladesh Television emblem presents the bold italic letters 'BTV' enclosed in an orbital circular compass with directional arrows rendered in golden sunshine yellow. The circular orbit symbolizes continuous transmission, educational guidance, and nationwide broadcast coverage across all administrative divisions.",
+      sources: [
+        "https://btv.gov.bd/",
+        "https://mof.gov.bd/",
+      ],
+      licenceNote: "Bangladesh Television state broadcasting department trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Turkey
+  TR: [
+    {
+      id: "tr-trt",
+      countryCode: "TR",
+      name: "TRT",
+      officialName: "Türkiye Radyo Televizyon Kurumu (Turkish Radio and Television Corporation)",
+      founded: 1964,
+      primaryFunding: "Universal electricity bill contribution share and banderol statutory fees levied on imported/manufactured electronic audiovisual equipment, supplemented by commercial advertising",
+      headquarters: "Turan Güneş Bulvarı, Oran, Çankaya, Ankara",
+      annualPublicFunding: {
+        total: "₺18,500 million statutory public revenue & banderol fee share (TRT Faaliyet Raporu FY 2024; approx. US$570M)",
+        perCapita: "₺215 / citizen / year (approx. US$6.60 / year or ₺0.59 / day)",
+      },
+      dailyMarketShare: "14.8% combined television audience share across TRT 1, TRT Haber, TRT Spor, TRT Çocuk, and TRT Belgesel (TİAK A.Ş. 2024; TRT 1 ranks among Turkey's top 3 prime-time television channels)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Reuters Institute Digital News Report 2024 (TRT Haber is among Turkey's most-watched television news channels)",
+      },
+      localContentQuota: "Over 75% Turkish domestic audiovisual production quota under Law No. 2954 on the Turkish Radio and Television Corporation, funding major historical epic series, regional studios, and global multilingual broadcasting via TRT World",
+      staffHeadcount: "8,400 permanent employees across domestic centers and overseas bureaus (TRT İnsan Kaynakları Raporu 2024)",
+      logo: "/broadcaster-logos/tr/trt.png",
+      logoExplainer:
+        "Refreshed in 2018, the TRT logo features bold, sculpted capital letterforms 'TRT' in vibrant Turkish national crimson red. The clean, modern typography communicates confidence, institutional prestige, and digital expansion across the 'tabii' streaming ecosystem and global broadcasting services.",
+      sources: [
+        "https://www.trt.net.tr/kurumsal/raporlar",
+        "https://tiak.com.tr/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/turkey",
+      ],
+      licenceNote: "Türkiye Radyo Televizyon Kurumu public statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Israel
+  IL: [
+    {
+      id: "il-kan",
+      countryCode: "IL",
+      name: "Kan",
+      officialName: "Israeli Public Broadcasting Corporation (IPBC / Ta'agid HaShidur HaYisra'eli)",
+      founded: 2017,
+      primaryFunding: "Direct annual budget allocation from the Ministry of Communications pegged to the annual vehicle license registration fee formula under the Public Broadcasting Law 5774-2014; 100% commercial-free with zero commercial television advertising",
+      headquarters: "Kremnitzki Street 6, Tel Aviv-Yafo & Jerusalem",
+      annualPublicFunding: {
+        total: "₪790.0 million statutory state budget allocation (IPBC Din VeHeshbon FY 2024; approx. US$215M)",
+        perCapita: "₪81.50 / resident / year (approx. US$22.20 / year or ₪0.22 / day)",
+      },
+      dailyMarketShare: "12.4% linear television audience share across Kan 11 and Makan 33 (Arabic language) (Israel Television Audience Research Board 2024; Kan Digital digital platforms reach over 40% of adult Israelis weekly)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Israel Democracy Institute Media Trust Index 2024 (Kan 11 News is regarded as Israel's most objective and non-partisan broadcast news organization)",
+      },
+      localContentQuota: "Minimum 65% Israeli original domestic production quota, commissioning critically acclaimed drama series, investigative documentaries, and regional programming in Hebrew and Arabic",
+      staffHeadcount: "1,050 full-time equivalent employees (IPBC Duah Kaspit 2024)",
+      logo: "/broadcaster-logos/il/kan.png",
+      logoExplainer:
+        "The Kan logo features the Hebrew and Latin word 'KAN' (meaning 'Here') set squarely inside a vivid sapphire-blue vertical rhombus diamond. The diamond symbol represents a focal compass point, independent public space, and digital agility across television, radio (Kol Yisrael), and digital podcasts.",
+      sources: [
+        "https://www.kan.org.il/about/transparency/",
+        "https://www.gov.il/he/departments/ministry_of_communications",
+      ],
+      licenceNote: "Israeli Public Broadcasting Corporation statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Kazakhstan
+  KZ: [
+    {
+      id: "kz-khabar",
+      countryCode: "KZ",
+      name: "Khabar",
+      officialName: "Khabar Agency JSC (Qazaqstan / Khabar Agency)",
+      founded: 1995,
+      primaryFunding: "State procurement order for information policy from the Ministry of Culture and Information of the Republic of Kazakhstan, combined with commercial advertising",
+      headquarters: "Kunayev Street 4, Astana",
+      annualPublicFunding: {
+        total: "₸22,400 million state information policy budget contract (Khabar Agency Zhylzhany esebi FY 2024; approx. US$48M)",
+        perCapita: "₸1,120 / citizen / year (approx. US$2.40 / year)",
+      },
+      dailyMarketShare: "14.2% television audience share across Khabar, Khabar 24 (round-the-clock news), and El Arna (TNS Central Asia / Kantar Kazakhstan 2024; Khabar 24 is Kazakhstan's premier domestic news channel)",
+      brandTrustScore: {
+        score: "64%",
+        source: "Central Asia Barometer Media Survey 2024",
+      },
+      localContentQuota: "Over 70% Kazakh-language and domestic content quota under the Law of the Republic of Kazakhstan 'On Mass Media', fostering national cultural drama, documentary cinema, and regional coverage across all 17 regions",
+      staffHeadcount: "1,180 employees across national studios in Astana and Almaty (Khabar Agency Korporativtik esebi 2024)",
+      logo: "/broadcaster-logos/kz/khabar.png",
+      logoExplainer:
+        "The distinctive Khabar emblem presents the stylized Cyrillic wordmark 'ХАБАР' flanked by sweeping aerodynamic horizontal bands in steppe golden yellow. The dynamic winged flight motif evokes the golden eagle of Kazakhstan's national flag, soaring ambition, and nationwide broadcast coverage across the Eurasian steppe.",
+      sources: [
+        "https://khabar.kz/kz/agenttik/esepter",
+        "https://www.gov.kz/memleket/entities/mki",
+      ],
+      licenceNote: "Khabar Agency Joint-Stock Company state-participated corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
