@@ -3663,7 +3663,172 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Établissement Public de Télévision public industrial and commercial establishment trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Tunisia
+  TN: [
+    {
+      id: "tn-ett",
+      countryCode: "TN",
+      name: "Télévision Tunisienne",
+      officialName: "Établissement de la Télévision Tunisienne (مؤسسة التلفزة التونسية - ETT / Télévision Tunisienne)",
+      founded: 1966,
+      primaryFunding: "Audiovisual license fee (redevance audiovisuelle levied on STEG household electricity bills) and state budget subsidy under the Ministry of Communication / Presidency of the Government",
+      headquarters: "Boulevard de la Ligue Arabe, Notre Dame, 1002 Tunis-Belvédère",
+      annualPublicFunding: {
+        total: "TND 78.5 million public audiovisual surcharge & state operating subvention (Loi de finances n° 2023-22 & ETT Rapport de gestion FY 2024; approx. US$25.2M)",
+        perCapita: "TND 6.35 / citizen / year (approx. US$2.04 / year)",
+      },
+      dailyMarketShare: "31.2% combined domestic TV audience share across Télévision Tunisienne 1 (Al Wataniya 1) and Télévision Tunisienne 2 (Al Wataniya 2) (Sigma Conseil & Médiamétrie Maghreb 2024; Wataniya 1 leads national viewership during prime-time news and national sporting fixtures)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Haute Autorité Indépendante de la Communication Audiovisuelle (HAICA) Audience Survey & Sigma Conseil 2024",
+      },
+      localContentQuota: "Minimum 65% Tunisian cultural and educational programming quota, broadcasting in Tunisian Arabic and standard Arabic with daily French-language news editions",
+      staffHeadcount: "1,150 permanent production specialists, journalists, technicians, and administrative staff (ETT Bilan Social 2024)",
+      logo: "/broadcaster-logos/tn/ett.jpg",
+      logoExplainer:
+        "The Établissement de la Télévision Tunisienne logo features a stylized, fluid geometric letter 'T' interwoven with a crescent arc in vibrant Mediterranean blue and Tunisian flag red. The dynamic curve reflects broadcast transmission waves, Arab-Mediterranean cultural crossroads, and the channel's historic moniker 'Al Wataniya' (The National).",
+      sources: [
+        "https://www.watania1.tn/",
+        "https://www.haica.tn/",
+        "http://www.finances.gov.tn/",
+      ],
+      licenceNote: "Établissement de la Télévision Tunisienne public establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Jordan
+  JO: [
+    {
+      id: "jo-jrtv",
+      countryCode: "JO",
+      name: "JRTV",
+      officialName: "Jordan Radio and Television Corporation (مؤسسة الإذاعة والتلفزيون الأردنية - JRTV)",
+      founded: 1985,
+      primaryFunding: "State budget subsidy (General Budget Law), electricity bill public broadcast surcharge (JD 1 per monthly household electricity bill), and commercial advertising",
+      headquarters: "Ibrahim Al-Qattan Street, Um Uthaina, PO Box 909, Amman",
+      annualPublicFunding: {
+        total: "JOD 27.2 million state budget allocation & electricity tariff surcharge (General Budget Law No. 1 of 2024; approx. US$38.4M)",
+        perCapita: "JOD 2.37 / resident / year (approx. US$3.34 / year)",
+      },
+      dailyMarketShare: "14.6% domestic television audience share across JRTV Channel 1 (Jordan TV), Sports Channel, and Amman TV, competing alongside independent broadcaster Ro'ya TV and public-funded Al Mamlaka (Ipsos Jordan & Arab Advisors Group 2024)",
+      brandTrustScore: {
+        score: "64%",
+        source: "Jordan Media Institute (JMI) National Media Survey & Arab Barometer Jordan 2024",
+      },
+      localContentQuota: "75% Jordanian and Arab cultural, documentary, and drama programming quota, including comprehensive daily news broadcasts from all twelve governorates",
+      staffHeadcount: "1,650 journalists, directors, broadcast engineers, and support staff across the Amman television complex and regional bureaus (JRTV Human Resources Directorate 2024)",
+      logo: "/broadcaster-logos/jo/jrtv.png",
+      logoExplainer:
+        "The JRTV insignia showcases a graceful calligraphic emblem uniting the golden eagle wings and the seven-pointed star of the Hashemite Kingdom of Jordan. The central stylized television screen and radio waves symbolize national unity, royal patronage, and authentic Arab cultural journalism across the Kingdom and diaspora.",
+      sources: [
+        "https://www.jrtv.gov.jo/",
+        "https://gbd.gov.jo/",
+        "https://www.jmi.edu.jo/",
+      ],
+      licenceNote: "Jordan Radio and Television Corporation public corporate trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Lebanon
+  LB: [
+    {
+      id: "lb-teleliban",
+      countryCode: "LB",
+      name: "Télé Liban",
+      officialName: "Télé Liban (تلفزيون لبنان - TL / Télé Liban S.A.L.)",
+      founded: 1959,
+      primaryFunding: "Direct public subsidy from the Ministry of Information (وزارة الإعلام) under state-owned enterprise governance, supplemented by nominal advertising",
+      headquarters: "Tallet El Khayat, PO Box 11-4870, Beirut",
+      annualPublicFunding: {
+        total: "LBP 72.0 billion operating state subsidy envelope (Ministry of Information Public Expenditure Budget & Lebanese General Budget Law 2024; approx. US$4.8M at unified platform exchange rates)",
+        perCapita: "LBP 13,300 / citizen / year (approx. US$0.89 / year)",
+      },
+      dailyMarketShare: "5.4% domestic television audience share (Stat-IPSOS & Arab Advisors Group Lebanon 2024; maintaining a dedicated niche for public interest debates, archival heritage, and non-partisan national addresses in a competitive commercial market with LBCI and MTV)",
+      brandTrustScore: {
+        score: "58%",
+        source: "Samir Kassir Foundation Media Monitor & Maharat Foundation 2024 (recognized for non-sectarian editorial balance)",
+      },
+      localContentQuota: "70% Lebanese domestic production quota, featuring educational programming, classic Lebanese television archives, and trilingual daily news broadcasts (Arabic, French, and English)",
+      staffHeadcount: "190 civil service journalists, camera operators, archive archivists, and technical engineers (Ministry of Information Personnel Audit 2024)",
+      logo: "/broadcaster-logos/lb/teleliban.png",
+      logoExplainer:
+        "The iconic Télé Liban emblem displays the green Cedar of Lebanon (Cedrus libani)—the sacred national tree and centerpiece of the Lebanese flag—framed within an artistic, open television screen polygon with modern Arabic typography. It symbolizes evergreen national resilience, cultural sovereignty, and Lebanon's historic role as the media pioneer of the Arab world.",
+      sources: [
+        "https://www.teleliban.com.lb/",
+        "https://www.ministryinfo.gov.lb/",
+        "https://www.skeyesmedia.org/",
+      ],
+      licenceNote: "Télé Liban S.A.L. state-owned enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Iraq
+  IQ: [
+    {
+      id: "iq-imn",
+      countryCode: "IQ",
+      name: "IMN",
+      officialName: "Iraqi Media Network (شبكة الإعلام العراقي - IMN / Al Iraqiya)",
+      founded: 2003,
+      primaryFunding: "Federal public budget allocation voted by the Council of Representatives under the Iraqi Media Network Law (Law No. 26 of 2015)",
+      headquarters: "Al-Salhiya, Al-Karkh District, Baghdad",
+      annualPublicFunding: {
+        total: "IQD 148.0 billion federal public budget appropriation (Federal General Budget Law of the Republic of Iraq 2023–2025; approx. US$113.0M)",
+        perCapita: "IQD 3,360 / citizen / year (approx. US$2.56 / year)",
+      },
+      dailyMarketShare: "16.8% domestic television viewership across Al Iraqiya News, Al Iraqiya General, Al Iraqiya Sports, Al Iraqiya Educational, and Al Iraqiya Turkmen/Kurdish (Communications and Media Commission CMC Iraq & Gallup Iraq 2024)",
+      brandTrustScore: {
+        score: "54%",
+        source: "Communications and Media Commission (CMC) Iraq & Independent Institute for Civil Society Studies 2024",
+      },
+      localContentQuota: "80% Iraqi local programming quota, mandated by statutory charter to reflect Iraq's pluralistic cultural, religious, and linguistic heritage with broadcasts in Arabic, Kurdish, Turkmen, and Syriac",
+      staffHeadcount: "3,250 media professionals, field correspondents, technical crew, and musicians of the National Iraqi Symphony Orchestra affiliate (IMN Annual Administrative Bulletin 2024)",
+      logo: "/broadcaster-logos/iq/imn.jpg",
+      logoExplainer:
+        "The Iraqi Media Network logo displays the bold blue and golden calligraphic emblem featuring the Arabic word 'العراقية' (Al Iraqiya) stylized as an unfolding parchment with broadcast signal satellites. The design reflects Iraq's Mesopotamian legacy as the cradle of writing, modern telecommunications, and national reconciliation.",
+      sources: [
+        "https://imn.iq/",
+        "https://mof.gov.iq/",
+        "https://cmc.iq/",
+      ],
+      licenceNote: "Iraqi Media Network statutory public entity trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Kuwait
+  KW: [
+    {
+      id: "kw-ktv",
+      countryCode: "KW",
+      name: "KTV",
+      officialName: "Kuwait Television (تلفزيون دولة الكويت - KTV / Ministry of Information)",
+      founded: 1961,
+      primaryFunding: "100% direct public funding appropriation from the Ministry of Information within the State of Kuwait general budget",
+      headquarters: "Ministry of Information Complex, Al Soor Street, Al Murqab, Kuwait City",
+      annualPublicFunding: {
+        total: "KWD 44.5 million dedicated television and broadcasting state expenditure (Ministry of Finance State Budget FY 2024/2025; approx. US$145.2M)",
+        perCapita: "KWD 9.27 / resident / year (approx. US$30.25 / year)",
+      },
+      dailyMarketShare: "22.5% domestic television market share across KTV 1, KTV 2 (English), KTV Sport, KTV Al-Qur'an, and KTV Plus (Ministry of Information Audience Research & Ipsos Kuwait 2024)",
+      brandTrustScore: {
+        score: "73%",
+        source: "Kuwait Journalists Association (KJA) & Gulf Media Observatory 2024",
+      },
+      localContentQuota: "85% domestic Gulf production quota, showcasing pioneering Kuwaiti television dramas, theater recordings, Bedouin poetry, parliamentary live coverage, and Islamic values",
+      staffHeadcount: "2,400 specialized television directors, news anchors, broadcast engineers, and media civil servants (Ministry of Information Civil Service Registry 2024)",
+      logo: "/broadcaster-logos/kw/ktv.png",
+      logoExplainer:
+        "The Kuwait Television emblem is built around the iconic falcon (the national bird of Kuwait) with wings shaped like transmission waves, enveloping a classic television screen silhouette in Kuwait's pan-Arab flag colors: emerald green, pure white, deep red, and midnight black. It embodies Gulf cultural leadership, prestige, and national sovereignty.",
+      sources: [
+        "https://media.gov.kw/",
+        "https://mof.gov.kw/",
+      ],
+      licenceNote: "Kuwait Television / Ministry of Information public state trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
 
 
 
