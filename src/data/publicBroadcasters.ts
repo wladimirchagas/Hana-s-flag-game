@@ -505,4 +505,170 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "European public cultural broadcaster trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Indonesia
+  ID: [
+    {
+      id: "id-tvri",
+      countryCode: "ID",
+      name: "TVRI",
+      officialName: "Lembaga Penyiaran Publik Televisi Republik Indonesia (LPP TVRI)",
+      founded: 1962,
+      primaryFunding: "State budget appropriation (APBN / Anggaran Pendapatan dan Belanja Negara) supplemented by state non-tax revenue (PNBP / Penerimaan Negara Bukan Pajak)",
+      headquarters: "Gelora, Senayan, Central Jakarta",
+      annualPublicFunding: {
+        total: "Rp1,159 billion (approx. US$72 million, FY 2024 APBN ceiling)",
+        perCapita: "Rp4,170 / person / year (approx. US$0.26 / person / year)",
+      },
+      dailyMarketShare: "1.8% commercial audience share (Nielsen Indonesia 2024); operates 35 regional television stations and 360+ terrestrial transmitters with the largest geographic reach across the archipelago",
+      brandTrustScore: {
+        score: "58%",
+        source: "Reuters Institute Digital News Report 2024 (jointly highest-ranked television network brand in Indonesia alongside Kompas)",
+      },
+      localContentQuota: "Minimum 60% domestic content requirement under Law No. 32/2002 on Broadcasting, with extensive regional culture and educational programming mandates",
+      staffHeadcount: "4,600+ personnel across national headquarters and 35 provincial broadcasting stations (PPID TVRI 2024)",
+      logo: "/broadcaster-logos/id/tvri.svg",
+      logoExplainer:
+        "Introduced on March 29, 2019, the TVRI logo features a deep trusted-blue circular ring enclosing the initials 'RI' (Republik Indonesia) alongside the wordmark 'TV'. The circle symbolizes a global outlook and the vision to be a world-class public broadcaster, while the unified composition underscores TVRI's foundational motto 'Media Pemersatu Bangsa' (Media Unifying the Nation).",
+      sources: [
+        "https://tvri.go.id/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/indonesia",
+        "https://dpr.go.id/komisi/komisi-1",
+      ],
+      licenceNote: "Indonesian public service broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Thailand
+  TH: [
+    {
+      id: "th-thaipbs",
+      countryCode: "TH",
+      name: "Thai PBS",
+      officialName: "Thai Public Broadcasting Service (องค์การกระจายเสียงและแพร่ภาพสาธารณะแห่งประเทศไทย / ส.ส.ท.)",
+      founded: 2008,
+      primaryFunding: "Dedicated statutory earmarked levy ('sin tax') of 1.5% on alcohol and tobacco excise taxes, legally capped at 2,000 million baht annually; 100% commercial and advertisement-free",
+      headquarters: "Lak Si District, Bangkok",
+      annualPublicFunding: {
+        total: "฿2,000.0 million statutory cap (approx. US$58 million, FY 2023–24)",
+        perCapita: "฿28.60 / person / year (approx. US$0.83 / person / year)",
+      },
+      dailyMarketShare: "2.8% national TV share (NBTC Thailand Ratings 2024); over 14 million monthly digital active users across Thai PBS web and VIPA platforms",
+      brandTrustScore: {
+        score: "72%",
+        source: "Reuters Institute Digital News Report 2024 (consistently among top 2 most trusted news brands in Thailand)",
+      },
+      localContentQuota: "Minimum 70% locally produced content quota under the Thai Public Broadcasting Service Act B.E. 2551 (2008), with strict public interest and children/youth educational mandates",
+      staffHeadcount: "1,180 full-time equivalent staff (Thai PBS Annual Financial Report 2023–24)",
+      logo: "/broadcaster-logos/th/thaipbs.svg",
+      logoExplainer:
+        "The Thai PBS emblem features a stylized upward-soaring bird in bright dawn orange alongside the bilingual name. The soaring bird represents editorial freedom, aspiration, connection with the people, and societal vitality, while the radiant orange represents the dawn of hope, enlightenment, and public service integrity.",
+      sources: [
+        "https://www.thaipbs.or.th/about",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/thailand",
+        "https://www.nbtc.go.th/",
+      ],
+      licenceNote: "Thai public service broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Vietnam
+  VN: [
+    {
+      id: "vn-vtv",
+      countryCode: "VN",
+      name: "VTV",
+      officialName: "Vietnam Television (Đài Truyền hình Việt Nam)",
+      founded: 1970,
+      primaryFunding: "Self-financing commercial revenue (advertising, sponsorship, and production services representing ~90%) supplemented by targeted state budget support (~10%) under the Ministry of Information and Communications",
+      headquarters: "Ba Dinh District, Hanoi",
+      annualPublicFunding: {
+        total: "approx. ₫380 billion state budget contribution (~US$15 million, FY 2023–24; total operational revenue exceeds ₫3.8 trillion)",
+        perCapita: "₫3,850 / citizen / year (~US$0.15 / citizen)",
+      },
+      dailyMarketShare: "38.5% national TV viewing share across 9 national terrestrial channels (VTV1 to VTV9; Kantar Media Vietnam 2024); VTV1 is the mandatory national public affairs channel",
+      brandTrustScore: {
+        score: "78%",
+        source: "Ministry of Information & Communications Media Assessment 2024 (flagship source for national disaster warnings and state public affairs)",
+      },
+      localContentQuota: "80% domestic production quota across prime-time schedules under the Law on Press, with VTV1 carrying 100% Vietnamese public interest and current affairs content",
+      staffHeadcount: "4,200+ employees across Hanoi headquarters and 5 regional centers (Vietnam Television Directorate 2024)",
+      logo: "/broadcaster-logos/vn/vtv.svg",
+      logoExplainer:
+        "The VTV logo showcases three bold geometric letterforms 'VTV' in the primary optical additive colors: red, green, and blue (RGB). The red evokes the national flag of Vietnam and patriotic devotion, while green and blue symbolize growth, truth, and electronic broadcasting waves connecting the country's diverse provinces.",
+      sources: [
+        "https://vtv.vn/",
+        "https://mic.gov.vn/",
+        "https://statemediamonitor.com/services/vietnam-television-vtv/",
+      ],
+      licenceNote: "Vietnam Television national trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Philippines
+  PH: [
+    {
+      id: "ph-ptv",
+      countryCode: "PH",
+      name: "PTV",
+      officialName: "People's Television Network, Inc. (PTNI)",
+      founded: 1974,
+      primaryFunding: "Hybrid model: National budget subsidy under the General Appropriations Act (GAA) via the Presidential Communications Office (PCO) supplemented by commercial advertising and blocktime airtime revenue (under Republic Act 10390)",
+      headquarters: "Diliman, Quezon City, Metro Manila",
+      annualPublicFunding: {
+        total: "₱1,040 million subsidy (approx. US$18.5 million, General Appropriations Act FY 2024)",
+        perCapita: "₱9.10 / person / year (approx. US$0.16 / person / year)",
+      },
+      dailyMarketShare: "1.2% commercial TV audience share (Nielsen Philippines 2024); primary state government channel operating 16 regional stations and digital DTT transmitters nationwide",
+      brandTrustScore: {
+        score: "52%",
+        source: "Reuters Institute Digital News Report 2024 (official state news broadcaster)",
+      },
+      localContentQuota: "100% domestic Filipino and regional languages content on public news broadcasts; minimum 50% Philippine music quota on radio and cultural programming under government media mandates",
+      staffHeadcount: "780 regular, co-terminus, and contract-of-service personnel (PTNI Annual Audit Report, Commission on Audit 2024)",
+      logo: "/broadcaster-logos/ph/ptv.svg",
+      logoExplainer:
+        "Launched in 2017 as part of its network modernization, the PTV logo is rendered in the national colors of the Philippines: royal blue, scarlet red, and golden yellow. It incorporates three stylized rings and rays radiating outward, symbolizing the three island groups (Luzon, Visayas, Mindanao) and the government's commitment to timely, transparent public information.",
+      sources: [
+        "https://ptvnews.ph/",
+        "https://www.dbm.gov.ph/index.php/budget-documents/2024/general-appropriations-act-fy-2024",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/philippines",
+      ],
+      licenceNote: "People's Television Network trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Singapore
+  SG: [
+    {
+      id: "sg-mediacorp",
+      countryCode: "SG",
+      name: "Mediacorp",
+      officialName: "Mediacorp Pte Ltd (wholly owned by Temasek Holdings)",
+      founded: 1936,
+      primaryFunding: "Public Service Broadcasting (PSB) government grant from the Infocomm Media Development Authority (IMDA) supplemented by commercial advertising and digital monetization",
+      headquarters: "1 Stars Avenue, Mediapolis, one-north, Singapore",
+      annualPublicFunding: {
+        total: "S$380.0 million annual PSB funding envelope (approx. US$285 million, MDDI Parliamentary Statement 2024/25)",
+        perCapita: "S$64.20 / resident / year (approx. US$48.20 / person / year)",
+      },
+      dailyMarketShare: "84% weekly reach across free-to-air TV channels (Channel 5, Channel 8, Suria, Vasantham, CNA, and U); 98% overall brand reach including mewatch and 11 radio stations",
+      brandTrustScore: {
+        score: "74%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news brand in Singapore for CNA for 6 consecutive years; Channel 5 News at 71%)",
+      },
+      localContentQuota: "100% Public Service Broadcasting quota compliance under IMDA licence conditions, delivering over 2,800 hours of locally produced original programming across Singapore's 4 official languages (English, Chinese, Malay, Tamil)",
+      staffHeadcount: "3,100 full-time employees (Mediacorp Corporate Review 2024)",
+      logo: "/broadcaster-logos/sg/mediacorp.svg",
+      logoExplainer:
+        "The Mediacorp emblem, refreshed to a refined 2D geometry in 2023, features a dynamic looping 'M' formed by an interlocking ribbon in navy, cyan, magenta, and amber. The continuous loop symbolizes an open window to the world and a reflection of everyday Singaporean life, while the upward-thrusting arrow in the central serif (the 'Mplifier') conveys constant forward progress and technological innovation.",
+      sources: [
+        "https://www.mediacorp.sg/",
+        "https://www.mddi.gov.sg/newsroom/parliamentary-replies/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/singapore",
+      ],
+      licenceNote: "Mediacorp Singapore registered trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
