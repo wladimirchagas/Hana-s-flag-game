@@ -3735,6 +3735,136 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Trinidad and Tobago
+  TT: [
+    {
+      id: "tt-caribbean-airlines",
+      countryCode: "TT",
+      name: "Caribbean Airlines",
+      iata: "BW",
+      icao: "BWA",
+      founded: 2006,
+      alliance: "None",
+      hubs: ["Piarco International Airport (POS)", "Norman Manley International Airport (KIN)"],
+      fleet: {
+        total: 19,
+        summary: "19 aircraft (Boeing 737 MAX 8; ATR 72-600)",
+      },
+      logo: "/airline-logos/tt/caribbean-airlines.png",
+      logoExplainer:
+        "Features the iconic emerald-green hummingbird (the national symbol of Trinidad and Tobago, 'The Land of the Hummingbird') in dynamic flight alongside vivid magenta and Caribbean teal accents, embodying Caribbean warmth and natural beauty.",
+      sources: [
+        "https://www.caribbean-airlines.com/",
+        "https://en.wikipedia.org/wiki/Caribbean_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bahamas
+  BS: [
+    {
+      id: "bs-bahamasair",
+      countryCode: "BS",
+      name: "Bahamasair",
+      iata: "UP",
+      icao: "BHA",
+      founded: 1973,
+      alliance: "None",
+      hubs: ["Lynden Pindling International Airport (NAS)"],
+      fleet: {
+        total: 9,
+        summary: "9 aircraft (Boeing 737-700; ATR 42-600, ATR 72-600)",
+      },
+      logo: "/airline-logos/bs/bahamasair.svg",
+      logoExplainer:
+        "Features Bahamas aquamarine and vibrant sunny yellow flight ribbons flanking clean navy typography, representing the Bahamian national flag colors and the sparkling turquoise shallows of the archipelago.",
+      sources: [
+        "https://www.bahamasair.com/",
+        "https://en.wikipedia.org/wiki/Bahamasair",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Dominican Republic
+  DO: [
+    {
+      id: "do-arajet",
+      countryCode: "DO",
+      name: "Arajet",
+      iata: "DM",
+      icao: "DWI",
+      founded: 2014,
+      alliance: "None",
+      hubs: ["Las Américas International Airport (SDQ)"],
+      fleet: {
+        total: 10,
+        summary: "10 aircraft (Boeing 737 MAX 8)",
+      },
+      logo: "/airline-logos/do/arajet.png",
+      logoExplainer:
+        "Features a stylized Macao macaw (Ara) soaring upwards in vibrant Caribbean purple and tropical orange, symbolizing the airline's mission as the premier low-fare carrier turning Santo Domingo into a continental mega-hub connecting the Americas.",
+      sources: [
+        "https://www.arajet.com/",
+        "https://en.wikipedia.org/wiki/Arajet",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Guatemala
+  GT: [
+    {
+      id: "gt-tag-airlines",
+      countryCode: "GT",
+      name: "TAG Airlines",
+      iata: "5U",
+      icao: "TGU",
+      founded: 1961,
+      alliance: "None",
+      hubs: ["La Aurora International Airport (GUA)", "Mundo Maya International Airport (FRS)"],
+      fleet: {
+        total: 8,
+        summary: "8 aircraft (ATR 72-500; Saab 340A/B; Embraer 110)",
+      },
+      logo: "/airline-logos/gt/tag-airlines.png",
+      logoExplainer:
+        "Features bold navy blue typography with stylized quetzal-inspired green and sky-blue flight arcs, reflecting Transportes Aéreos Guatemaltecos' heritage as Guatemala's flag carrier connecting the Maya Mundo with Central America and southern Mexico.",
+      sources: [
+        "https://tag.com.gt/",
+        "https://en.wikipedia.org/wiki/Transportes_A%C3%A9reos_Guatemaltecos",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Belize
+  BZ: [
+    {
+      id: "bz-tropic-air",
+      countryCode: "BZ",
+      name: "Tropic Air",
+      iata: "PM",
+      icao: "TOS",
+      founded: 1979,
+      alliance: "None",
+      hubs: ["Philip S. W. Goldson International Airport (BZE)", "San Pedro Airport (SPR)"],
+      fleet: {
+        total: 17,
+        summary: "17 aircraft (Cessna 208B Grand Caravan; Beechcraft 1900D)",
+      },
+      logo: "/airline-logos/bz/tropic-air.png",
+      logoExplainer:
+        "Features a playful tropical gecko resting on a bright yellow sun circle alongside Caribbean sky-blue typography, representing Belize's principal airline delivering essential connectivity across the barrier reef cayes and mainland districts.",
+      sources: [
+        "https://www.tropicair.com/",
+        "https://en.wikipedia.org/wiki/Tropic_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
