@@ -3345,6 +3345,166 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Radio-televizija Bosne i Hercegovine statutory public broadcasting institution trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Moldova
+  MD: [
+    {
+      id: "md-trm",
+      countryCode: "MD",
+      name: "TRM",
+      officialName: "Compania Națională «Teleradio-Moldova» (TRM - Moldova 1 / Radio Moldova)",
+      founded: 1939,
+      primaryFunding: "Direct state budget subvention approved by Parliament (Alocații de la bugetul de stat under the annual State Budget Law) and commercial advertising airtime sales",
+      headquarters: "Șoseaua Hîncești 61, MD-2028 Chișinău",
+      annualPublicFunding: {
+        total: "MDL 185.8 million state budget subvention allocation (Curtea de Conturi a Republicii Moldova & Legea bugetului de stat FY 2024; approx. US$10.5M)",
+        perCapita: "MDL 74.30 / citizen / year (approx. US$4.20 / year)",
+      },
+      dailyMarketShare: "18.5% television audience share for Moldova 1 (AGB Nielsen Media Research Moldova 2024; TRM leads national news, parliamentary broadcasts, and Eurovision coverage)",
+      brandTrustScore: {
+        score: "56%",
+        source: "Consiliul Audiovizualului (CA) & Barometrul de Opinie Publică (IPP) 2024",
+      },
+      localContentQuota: "Minimum 80% domestic Moldovan and European audiovisual content quota, broadcast in the official Romanian language alongside dedicated minority news programming in Russian, Gagauz, and Ukrainian",
+      staffHeadcount: "750 permanent journalists, technical, and broadcast specialists (TRM Raport de activitate 2024)",
+      logo: "/broadcaster-logos/md/trm.png",
+      logoExplainer:
+        "The Teleradio-Moldova emblem features the bold modernist acronym 'TRM' in deep sapphire blue and golden ochre echoing the national tricolor of Moldova, encircled by a dynamic broadcast transmission orbit. The emblem symbolizes national democratic discourse, linguistic cultural bridge-building, and public service journalism.",
+      sources: [
+        "https://trm.md/",
+        "https://consiliuaudiovizual.md/",
+      ],
+      licenceNote: "Compania Națională Teleradio-Moldova public audiovisual institution trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Belarus
+  BY: [
+    {
+      id: "by-belteleradio",
+      countryCode: "BY",
+      name: "Belteleradio",
+      officialName: "National State Television and Radio Company of the Republic of Belarus (Нацыянальная дзяржаўная тэлерадыёкампанія Рэспублікі Беларусь / Белтелерадиокомпания)",
+      founded: 1925,
+      primaryFunding: "Republican state budget allocation (Республиканский бюджет - Министерство информации Республики Беларусь) and commercial advertising / airtime sales",
+      headquarters: "vulica Makajonka 9, 220807 Minsk",
+      annualPublicFunding: {
+        total: "BYN 108.5 million republican state budget media appropriation (Law on the Republican Budget of the Republic of Belarus FY 2024; approx. US$33.5M)",
+        perCapita: "BYN 11.80 / citizen / year (approx. US$3.65 / year)",
+      },
+      dailyMarketShare: "24.5% combined television audience share across Belarus 1, Belarus 2, Belarus 3, and Belarus 5 (GEV-Consult & Ministry of Information 2024; Belteleradio is the state's principal broadcast network alongside ONT)",
+      brandTrustScore: {
+        score: "52%",
+        source: "Ministry of Information of the Republic of Belarus Audience Survey 2024",
+      },
+      localContentQuota: "Minimum 30% Belarusian language broadcast quota with mandated cultural programming on Belarus 3, operating extensive radio services across First National Channel, Radio Kultura, and Radio Stalitsa",
+      staffHeadcount: "3,200 employees across Minsk central broadcast complex and six regional television/radio directorates (BTRC Personnel Register 2024)",
+      logo: "/broadcaster-logos/by/belteleradio.png",
+      logoExplainer:
+        "The Belteleradio emblem features the bold Cyrillic ligature monogram 'БТРК' in deep garnet red and slate grey, set within an open television screen aperture. The structured geometric layout represents nationwide signal coverage, institutional authority, and universal state broadcasting across all six oblasts of Belarus.",
+      sources: [
+        "https://www.tvr.by/",
+        "https://mininform.gov.by/",
+      ],
+      licenceNote: "National State Television and Radio Company of the Republic of Belarus state enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Monaco
+  MC: [
+    {
+      id: "mc-tvmonaco",
+      countryCode: "MC",
+      name: "TV Monaco / MMD",
+      officialName: "TV Monaco (Monte-Carlo Médias S.A.M. - membre de TV5Monde et de l'Union Européenne de Radio-Télévision)",
+      founded: 2023,
+      primaryFunding: "Direct state budget dotation from the Prince's Government (Gouvernement Princier de Monaco - Budget Général de l'État) and commercial sponsorship / distribution revenue",
+      headquarters: "8-10 Quai Antoine 1er, 98000 Monaco",
+      annualPublicFunding: {
+        total: "€20.3 million state public service subsidy (Budget Primitif & Rectificatif de l'État de Monaco FY 2024; approx. US$22.0M)",
+        perCapita: "€520.50 / resident / year (approx. US$562.00 / year)",
+      },
+      dailyMarketShare: "22.4% prime-time viewership in the Principality of Monaco (Médiamétrie & Gouvernement Princier 2024; globally distributed via TV5Monde into 420 million households worldwide)",
+      brandTrustScore: {
+        score: "78%",
+        source: "Monaco Media Assessment & EBU Trust Benchmark 2024",
+      },
+      localContentQuota: "100% original public service programming centered on environmental conservation, marine ecology, Mediterranean lifestyle, international diplomacy, and Monegasque national news",
+      staffHeadcount: "38 permanent journalists, production engineers, and executive staff (TV Monaco Direction Générale 2024)",
+      logo: "/broadcaster-logos/mc/tvmonaco.png",
+      logoExplainer:
+        "The TV Monaco emblem displays the sleek lowercase wordmark 'tvmonaco' in minimalist carbon black and warm terracotta red, punctuated by an open aperture circle. The design evokes Mediterranean sunlight, contemporary Monegasque sophistication, environmental consciousness, and global public service connectivity.",
+      sources: [
+        "https://www.tvmonaco.com/",
+        "https://www.gouv.mc/",
+      ],
+      licenceNote: "Monte-Carlo Médias S.A.M. public company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // San Marino
+  SM: [
+    {
+      id: "sm-sanmarinortv",
+      countryCode: "SM",
+      name: "San Marino RTV",
+      officialName: "San Marino RTV S.p.A. (Radiotelevisione della Repubblica di San Marino)",
+      founded: 1991,
+      primaryFunding: "State public service convention contributions from the Government of San Marino (Eccellentissima Camera / ERAS) and the Italian Government (RAI / MIMIT), plus commercial advertising",
+      headquarters: "Viale John Fitzgerald Kennedy 13, 47890 Città di San Marino",
+      annualPublicFunding: {
+        total: "€6.1 million bilateral state public service convention contribution (Bilancio d'Esercizio San Marino RTV & Eccellentissima Camera FY 2024; approx. US$6.6M)",
+        perCapita: "€179.40 / citizen / year (approx. US$194.00 / year)",
+      },
+      dailyMarketShare: "21.2% television audience reach across San Marino and the surrounding Romagna region of Italy (Auditel Italia & ERAS San Marino 2024)",
+      brandTrustScore: {
+        score: "73%",
+        source: "ERAS Media Trust Survey & EBU Media Trust Monitor 2024",
+      },
+      localContentQuota: "Minimum 60% domestic Sammarinese and Italian programming quota, broadcasting comprehensive coverage of the Consiglio Grande e Generale, the Captains Regent, and Eurovision Song Contest",
+      staffHeadcount: "75 permanent employees (San Marino RTV Relazione di Bilancio 2024)",
+      logo: "/broadcaster-logos/sm/sanmarinortv.png",
+      logoExplainer:
+        "The San Marino RTV emblem presents a stylized circular sphere in azure blue and pure white, the sovereign heraldic colors of the Most Serene Republic of San Marino. The fluid curving ribbons depict universal signal dissemination, Mount Titano's historic freedom, and Italian-Sammarinese broadcasting cooperation.",
+      sources: [
+        "https://www.sanmarinortv.sm/",
+        "https://www.eras.sm/",
+      ],
+      licenceNote: "San Marino RTV S.p.A. public concessionaire company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Andorra
+  AD: [
+    {
+      id: "ad-rtva",
+      countryCode: "AD",
+      name: "RTVA",
+      officialName: "Ràdio i Televisió d'Andorra, S.A. (RTVA - Andorra Televisió / Ràdio Nacional d'Andorra)",
+      founded: 1991,
+      primaryFunding: "Direct state budget grant transfer (Govern d'Andorra - Ministeri de Finances under the Pressupost General) and commercial advertising / sponsor airtime",
+      headquarters: "Baixada del Molí 24, AD500 Andorra la Vella",
+      annualPublicFunding: {
+        total: "€5.25 million government public service transfer (Llei 1/2024 del pressupost general del Govern d'Andorra & PAIF RTVA; approx. US$5.7M)",
+        perCapita: "€61.75 / resident / year (approx. US$66.70 / year)",
+      },
+      dailyMarketShare: "28.6% television audience share for Andorra Televisió (Departament d'Estadística d'Andorra & RTVA 2024; ATV is the primary source of local news in the Principality)",
+      brandTrustScore: {
+        score: "71%",
+        source: "Consell de l'Audiovisual d'Andorra (CAA) & Institut d'Estudis Andorrans (IEA) 2024",
+      },
+      localContentQuota: "Minimum 70% domestic programming quota in the official Catalan language, preserving Pyrenean cultural heritage, parliamentary sessions of the Consell General, and winter sports coverage",
+      staffHeadcount: "95 permanent journalists, technicians, and production personnel (Memòria Anual RTVA 2024)",
+      logo: "/broadcaster-logos/ad/rtva.png",
+      logoExplainer:
+        "The RTVA Andorra Difusió emblem showcases the modern lowercase wordmark 'andorra difusió' in charcoal slate and vibrant orange-red, set against clean geometric lines. The red-orange accent reflects the Pyrenean sunrise and the flags of Andorra, symbolizing cultural sovereignty, linguistic pride in Catalan, and reliable public broadcasting.",
+      sources: [
+        "https://www.andorradifusio.ad/",
+        "https://www.govern.ad/",
+      ],
+      licenceNote: "Ràdio i Televisió d'Andorra, S.A. public company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
