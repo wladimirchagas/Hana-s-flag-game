@@ -4299,6 +4299,136 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Egypt
+  EG: [
+    {
+      id: "eg-egyptair",
+      countryCode: "EG",
+      name: "EgyptAir",
+      iata: "MS",
+      icao: "MSR",
+      founded: 1932,
+      alliance: "Star Alliance",
+      hubs: ["Cairo International Airport (CAI)"],
+      fleet: {
+        total: 71,
+        summary: "71 aircraft (Airbus A320neo, A321neo, A330-200, A330-300; Boeing 737-800, 777-300ER, 787-9 Dreamliner)",
+      },
+      logo: "/airline-logos/eg/egyptair.svg",
+      logoExplainer:
+        "Features the ancient Egyptian solar deity Horus, the winged sky falcon and protector of the Pharaohs, rendered in deep royal blue and gold. Established in 1932 as Misr Airwork, EgyptAir is the pioneer flag carrier of Africa and the Middle East, bearing Horus as a timeless symbol of celestial flight.",
+      sources: [
+        "https://www.egyptair.com/",
+        "https://en.wikipedia.org/wiki/Egyptair",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Ethiopia
+  ET: [
+    {
+      id: "et-ethiopian-airlines",
+      countryCode: "ET",
+      name: "Ethiopian Airlines",
+      iata: "ET",
+      icao: "ETH",
+      founded: 1945,
+      alliance: "Star Alliance",
+      hubs: ["Addis Ababa Bole International Airport (ADD)"],
+      fleet: {
+        total: 145,
+        summary: "145 aircraft (Airbus A350-900, A350-1000; Boeing 737-700/800, 737 MAX 8, 777-200LR, 777-300ER, 787-8, 787-9; De Havilland Dash 8-Q400)",
+      },
+      logo: "/airline-logos/et/ethiopian-airlines.svg",
+      logoExplainer:
+        "Features stylized Pan-African tricolor wings in green, yellow, and red carrying the Amharic wordmark (የኢትዮጵያ) and English name. As Africa's largest and most profitable airline group, the emblem represents Pan-African unity, sovereign pride, and bridging Africa with five continents.",
+      sources: [
+        "https://www.ethiopianairlines.com/",
+        "https://en.wikipedia.org/wiki/Ethiopian_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // South Africa
+  ZA: [
+    {
+      id: "za-south-african-airways",
+      countryCode: "ZA",
+      name: "South African Airways",
+      iata: "SA",
+      icao: "SAA",
+      founded: 1934,
+      alliance: "Star Alliance",
+      hubs: ["O. R. Tambo International Airport (JNB)", "Cape Town International Airport (CPT)"],
+      fleet: {
+        total: 16,
+        summary: "16 aircraft (Airbus A320-200, A330-300, A340-300)",
+      },
+      logo: "/airline-logos/za/south-african-airways.svg",
+      logoExplainer:
+        "Features the dynamic post-apartheid South African rainbow national flag stylized into an aerodynamic tail fin chevron with solar gold, navy blue, green, and red strokes, celebrating the diversity and optimism of the 'Rainbow Nation'.",
+      sources: [
+        "https://www.flysaa.com/",
+        "https://en.wikipedia.org/wiki/South_African_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Morocco
+  MA: [
+    {
+      id: "ma-royal-air-maroc",
+      countryCode: "MA",
+      name: "Royal Air Maroc",
+      iata: "AT",
+      icao: "RAM",
+      founded: 1957,
+      alliance: "oneworld",
+      hubs: ["Mohammed V International Airport (CMN)"],
+      fleet: {
+        total: 52,
+        summary: "52 aircraft (Boeing 737-800, 737 MAX 8, 787-8, 787-9 Dreamliner; Embraer E190; ATR 72-600)",
+      },
+      logo: "/airline-logos/ma/royal-air-maroc.svg",
+      logoExplainer:
+        "Features the royal red Moroccan pentagram star (Seal of Solomon from the national flag) flanked by royal red and Moroccan emerald-green wings, honoring the Cherifian Kingdom and serving as the premier bridge between Africa and Europe.",
+      sources: [
+        "https://www.royalairmaroc.com/",
+        "https://en.wikipedia.org/wiki/Royal_Air_Maroc",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Kenya
+  KE: [
+    {
+      id: "ke-kenya-airways",
+      countryCode: "KE",
+      name: "Kenya Airways",
+      iata: "KQ",
+      icao: "KQA",
+      founded: 1977,
+      alliance: "SkyTeam",
+      hubs: ["Jomo Kenyatta International Airport (NBO)"],
+      fleet: {
+        total: 34,
+        summary: "34 aircraft (Boeing 737-800, 787-8 Dreamliner; Embraer E190)",
+      },
+      logo: "/airline-logos/ke/kenya-airways.svg",
+      logoExplainer:
+        "Features the iconic 'Pride of Africa' emblem with a stylized red feather quill curving into a dynamic 'K' in red and black, reflecting the Maasai warrior shield motifs of the Kenyan flag and symbolizing hospitable East African aviation.",
+      sources: [
+        "https://www.kenya-airways.com/",
+        "https://en.wikipedia.org/wiki/Kenya_Airways",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
