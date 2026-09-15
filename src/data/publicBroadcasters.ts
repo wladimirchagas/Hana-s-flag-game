@@ -1328,7 +1328,235 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "National Communications Network Inc. state corporate trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Suriname
+  SR: [
+    {
+      id: "sr-stvs",
+      countryCode: "SR",
+      name: "STVS",
+      officialName: "Surinaamse Televisie Stichting",
+      founded: 1965,
+      primaryFunding: "Government statutory subvention from the Ministry of Transport, Communication and Tourism, supplemented by local commercial advertising and event broadcasting fees",
+      headquarters: "Letitia Vriesdelaan #5, Paramaribo",
+      annualPublicFunding: {
+        total: "approx. 18.2 million SRD annual government subvention (approx. US$520,000, Suriname National Budget 2024; commercial sales generate majority of operational liquidity)",
+        perCapita: "approx. 29 SRD / citizen / year (approx. US$0.85 / citizen)",
+      },
+      dailyMarketShare: "Historic pioneer free-to-air broadcaster known as 'De Nationale Zender' (The National Station), operating Channel 8 and regional relay infrastructure covering over 75% of coastal Suriname",
+      brandTrustScore: {
+        score: "65%",
+        source: "Suriname National Media Commission Survey 2024 (authoritative official source for national parliamentary sessions, cultural Sranan Tongo programs, and national ceremonies)",
+      },
+      localContentQuota: "Over 60% domestic production quota, featuring news and educational features in Dutch, Sranan Tongo, and Sarnami Hindustani",
+      staffHeadcount: "120 journalists, studio technicians, and production crew (STVS Corporate Directory 2024)",
+      logo: "/broadcaster-logos/sr/stvs.png",
+      logoExplainer:
+        "The STVS emblem features a circular crest bearing the acronym 'STVS' superimposed on a television screen silhouette and the national flag of Suriname (green, white, red with the central yellow star). The design signifies national pride, multicultural unity, and patriotic service across the Guiana Shield.",
+      sources: [
+        "https://stvs.sr/",
+        "https://gov.sr/",
+        "https://statemediamonitor.com/services/surinaamse-televisie-stichting-stvs/",
+      ],
+      licenceNote: "Surinaamse Televisie Stichting state foundation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Germany
+  DE: [
+    {
+      id: "de-ard",
+      countryCode: "DE",
+      name: "ARD",
+      officialName: "Arbeitsgemeinschaft der öffentlich-rechtlichen Rundfunkanstalten der Bundesrepublik Deutschland",
+      founded: 1950,
+      primaryFunding: "Statutory mandatory household broadcasting fee (Rundfunkbeitrag / €18.36/month per residence) collected by the Beitragsservice; 100% commercial-free in prime time with strict advertising caps during daytime (max 20 min/day on weekdays, zero on Sundays/holidays)",
+      headquarters: "Berlin (ARD-Hauptstadtstudio) & rotational chair among the 9 regional member broadcasters (WDR, BR, SWR, NDR, MDR, hr, rbb, SR, Radio Bremen)",
+      annualPublicFunding: {
+        total: "€6.15 billion allocated share of the Rundfunkbeitrag (total collection €8.74B; KEF 24th Financial Report 2024)",
+        perCapita: "€72.80 / resident / year (approx. €0.20 / day)",
+      },
+      dailyMarketShare: "12.2% linear TV audience share for Das Erste; 27.8% combined market share including all 9 regional third channels (Dritte Programme; AGF Videoforschung 2024)",
+      brandTrustScore: {
+        score: "64%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news brand in Germany for Tagesschau)",
+      },
+      localContentQuota: "Over 85% German and European production quota under the Interstate Media Treaty (Medienstaatsvertrag), with comprehensive regional culture, documentary, and investigative mandates",
+      staffHeadcount: "22,500 permanent employees across all 9 regional ARD public broadcasting corporations (ARD Leistungsbericht 2024)",
+      logo: "/broadcaster-logos/de/ard.svg",
+      logoExplainer:
+        "Designed by Peter Schmidt and refined in 2019, the ARD logo features the bold numeral '1' (representing Das Erste) encased within a dynamic circular ring alongside the uppercase wordmark 'ARD'. The circular portal represents an all-encompassing lens on the world, federal cooperation among the German states, and technical excellence.",
+      sources: [
+        "https://www.ard.de/",
+        "https://kef-online.de/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/germany",
+      ],
+      licenceNote: "ARD registered trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "de-zdf",
+      countryCode: "DE",
+      name: "ZDF",
+      officialName: "Zweites Deutsches Fernsehen",
+      founded: 1961,
+      primaryFunding: "Statutory mandatory household broadcasting fee (Rundfunkbeitrag / €4.69 of the monthly €18.36 fee allocated to ZDF); strictly commercial-free after 20:00 and on Sundays/holidays",
+      headquarters: "ZDF-Sendezentrum, Mainz, Rhineland-Palatinate",
+      annualPublicFunding: {
+        total: "€2.24 billion allocated share of the Rundfunkbeitrag (KEF 24th Financial Report 2024; total budget €2.45B)",
+        perCapita: "€26.50 / resident / year (approx. €0.07 / day)",
+      },
+      dailyMarketShare: "14.6% national TV market share (AGF Videoforschung 2024; consistently Germany's #1 most-watched single linear television channel)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Reuters Institute Digital News Report 2024 (ZDF heute is the #2 most trusted news brand in Germany, behind Tagesschau)",
+      },
+      localContentQuota: "80% domestic German and European production quota under the ZDF State Treaty, with heavy commitments to original television drama, investigative journalism (Frontal), and political satire (heute-show)",
+      staffHeadcount: "3,600 permanent staff and approx. 1,000 freelance specialists (ZDF Jahrbuch 2024)",
+      logo: "/broadcaster-logos/de/zdf.svg",
+      logoExplainer:
+        "Created in 2001 by design agency Razorfish and refreshed into an iconic flat brand, the ZDF logo features the lowercase letters 'zdf' in a warm signature orange. The letter 'z' is optically merged into the numeral '2' inside the circle, subtly reminding viewers of its identity as 'Zweites Deutsches Fernsehen' (Second German Television).",
+      sources: [
+        "https://www.zdf.de/",
+        "https://kef-online.de/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/germany",
+      ],
+      licenceNote: "Zweites Deutsches Fernsehen statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Italy
+  IT: [
+    {
+      id: "it-rai",
+      countryCode: "IT",
+      name: "Rai",
+      officialName: "RAI - Radiotelevisione Italiana S.p.A.",
+      founded: 1924,
+      primaryFunding: "Hybrid model: Statutory television license fee (Canone RAI / €70/year per household, collected via electricity bills) providing ~70% of revenues, supplemented by commercial advertising (capped at 7 min/hour)",
+      headquarters: "Viale Giuseppe Mazzini 14, Rome",
+      annualPublicFunding: {
+        total: "€1.82 billion license fee allocation (Rai Bilancio d'Esercizio FY 2024; total revenue €2.68B)",
+        perCapita: "€30.90 / resident / year (approx. €0.08 / day)",
+      },
+      dailyMarketShare: "35.9% combined national television audience share across Rai 1, Rai 2, Rai 3, and thematic digital channels (Auditel 2024; Rai 1 is Italy's most-watched television channel)",
+      brandTrustScore: {
+        score: "54%",
+        source: "Reuters Institute Digital News Report 2024 (TG1, TG2, TG3, and Rai News 24 combined represent the widest weekly news reach in Italy)",
+      },
+      localContentQuota: "Minimum 70% European and Italian audiovisual production quota under the Consolidated Audiovisual Media Act (TUSMA), supporting Italian cinema, opera broadcasts, and regional news (TGR across all 20 regions)",
+      staffHeadcount: "12,400 permanent employees across television, radio, and regional production centers (Rai Bilancio di Sostenibilità 2024)",
+      logo: "/broadcaster-logos/it/rai.svg",
+      logoExplainer:
+        "Designed in 2016 by Pentagram, the modern Rai logo features two interlocking squares forming an abstract capital 'R' alongside the clean lowercase letters 'ai' in a brilliant Mediterranean blue. The square modular geometry reflects the integration of television, radio, and digital streaming (RaiPlay) into a cohesive public service ecosystem.",
+      sources: [
+        "https://www.rai.it/",
+        "https://www.mimit.gov.it/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/italy",
+      ],
+      licenceNote: "RAI - Radiotelevisione Italiana S.p.A. registered trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Spain
+  ES: [
+    {
+      id: "es-rtve",
+      countryCode: "ES",
+      name: "RTVE",
+      officialName: "Corporación de Radio y Televisión Española, S.A.",
+      founded: 1956,
+      primaryFunding: "State budget appropriation from the General State Budget (PGE) supplemented by statutory taxes on commercial telecom operators (0.9%) and private television broadcasters (1.5%–3%); 100% commercial-free with zero consumer advertising",
+      headquarters: "Prado del Rey, Pozuelo de Alarcón, Madrid",
+      annualPublicFunding: {
+        total: "€1.25 billion total state public funding envelope (RTVE Memoria de Servicio Público FY 2024)",
+        perCapita: "€25.80 / citizen / year (approx. €0.07 / day)",
+      },
+      dailyMarketShare: "15.4% combined television audience share across La 1, La 2, 24h, Teledeporte, and Clan (Kantar Media Spain 2024; La 1 holds 10.2% individually)",
+      brandTrustScore: {
+        score: "52%",
+        source: "Reuters Institute Digital News Report 2024 (Telediario is one of Spain's leading neutral sources of daily news)",
+      },
+      localContentQuota: "Minimum 85% Spanish and European audiovisual production quota under the General Law on Audiovisual Communication, fostering independent national cinema, cultural series, and regional territorial studios (Centros Territoriales)",
+      staffHeadcount: "6,770 permanent employees (RTVE Cuentas Anuales 2024)",
+      logo: "/broadcaster-logos/es/rtve.svg",
+      logoExplainer:
+        "Created in 2008 by design agency Summa, the RTVE identity features warm organic typography in gradient amber and orange, anchored around the lowercase letters 'rtve'. The luminous orange glow symbolizes Mediterranean sunlight, accessibility, warmth, and the transformation of the state broadcaster into a citizen-centered cultural corporation.",
+      sources: [
+        "https://www.rtve.es/",
+        "https://www.hacienda.gob.es/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/spain",
+      ],
+      licenceNote: "Corporación de Radio y Televisión Española state mercantile company trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Netherlands
+  NL: [
+    {
+      id: "nl-npo",
+      countryCode: "NL",
+      name: "NPO",
+      officialName: "Nederlandse Publieke Omroep",
+      founded: 1930,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Education, Culture and Science (OCW) funded via general taxation, supplemented by commercial advertising revenue managed by STER (capped at 8% of broadcast time)",
+      headquarters: "Media Park, Sumatralaan 45, Hilversum, North Holland",
+      annualPublicFunding: {
+        total: "€944.0 million state budget allocation (OCW Rijksbegroting FY 2024; total operating budget ~€1.05B)",
+        perCapita: "€52.50 / citizen / year (approx. €0.14 / day)",
+      },
+      dailyMarketShare: "32.4% linear television audience share across NPO 1, NPO 2, and NPO 3 (NMO Nationaal Media Onderzoek 2024; NPO 1 is the most-watched TV channel in the Netherlands)",
+      brandTrustScore: {
+        score: "82%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news organization in the Netherlands for NOS Nieuws)",
+      },
+      localContentQuota: "Over 75% Dutch and European production quota under the Media Act 2008, coordinating programs across pillar broadcasters (NOS, NTR, BNNVARA, KRO-NCRV, AVROTROS, Omroep MAX, VPRO, EO)",
+      staffHeadcount: "2,850 employees across the NPO coordinating body, NOS newsroom, and member broadcasting associations (NPO Jaarverslag 2024)",
+      logo: "/broadcaster-logos/nl/npo.svg",
+      logoExplainer:
+        "Designed in 2014 by 3D design studio KempertHautmans, the NPO logo consists of three bold geometric letters 'npo' rendered in crisp blue and white with a stylized rhomboid diamond integrated into the letter 'o'. The multifaceted diamond symbolizes pluralism, diversity of opinion among the pillar broadcasters, and universal public broadcasting cohesion.",
+      sources: [
+        "https://over.npo.nl/",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-onderwijs-cultuur-en-wetenschap",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/netherlands",
+      ],
+      licenceNote: "Nederlandse Publieke Omroep registered trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Belgium
+  BE: [
+    {
+      id: "be-vrt",
+      countryCode: "BE",
+      name: "VRT",
+      officialName: "Vlaamse Radio- en Televisieomroeporganisatie (Flemish Public Broadcaster)",
+      founded: 1930,
+      primaryFunding: "Direct public endowment from the Flemish Government (Vlaamse Gemeenschap) via a five-year Management Agreement (Beheersovereenkomst); 100% commercial-free with zero interruption advertising on television",
+      headquarters: "Reyerslaan 52, Schaerbeek, Brussels",
+      annualPublicFunding: {
+        total: "€295.2 million Flemish government dotation (VRT Jaarverslag 2024)",
+        perCapita: "€43.50 / resident in Flanders / year (approx. €0.12 / day)",
+      },
+      dailyMarketShare: "37.5% television market share in Flanders across VRT 1, VRT Canvas, and Ketnet (CIM 2024; VRT 1 is Flanders' leading television channel with 31% share)",
+      brandTrustScore: {
+        score: "73%",
+        source: "Reuters Institute Digital News Report 2024 (#1 most trusted news brand in Flanders for VRT NWS)",
+      },
+      localContentQuota: "Over 85% Flemish domestic production quota under the Flemish Media Decree, investing extensively in local fiction, youth education, and regional news",
+      staffHeadcount: "2,050 full-time equivalent staff (VRT Jaarverslag 2024)",
+      logo: "/broadcaster-logos/be/vrt.svg",
+      logoExplainer:
+        "Unveiled in 2022, the modern VRT emblem features the lowercase letterforms 'vrt' in a sleek, minimalist geometric sans-serif, rendered in stark charcoal black or vibrant electric blue. The unified, digital-first aesthetic conveys openness, agility, and the convergence of traditional television and radio into digital streaming via VRT MAX.",
+      sources: [
+        "https://www.vrt.be/nl/over-de-vrt/",
+        "https://www.cim.be/nl/televisie",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/belgium",
+      ],
+      licenceNote: "Vlaamse Radio- en Televisieomroeporganisatie public broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
 
 
 
