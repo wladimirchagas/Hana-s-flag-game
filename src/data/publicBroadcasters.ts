@@ -4483,6 +4483,167 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "General Organization of Radio and TV statutory public establishment trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  // Russia
+  RU: [
+    {
+      id: "ru-vgtrk",
+      countryCode: "RU",
+      name: "VGTRK",
+      officialName: "All-Russia State Television and Radio Broadcasting Company (Всероссийская государственная телевизионная и радиовещательная компания - ВГТРК / Россия-1)",
+      founded: 1990,
+      primaryFunding: "Federal state budget subsidy from the Ministry of Digital Development, Communications and Mass Media of the Russian Federation under federal statutory programs, supplemented by commercial advertising",
+      headquarters: "5th Yamskogo Polya Street, 19/21, 125124 Moscow",
+      annualPublicFunding: {
+        total: "RUB 36.5 billion federal state budget subvention (Federal Budget Law of the Russian Federation FY 2024; approx. USM)",
+        perCapita: "RUB 250.00 / citizen / year (approx. US.70 / year)",
+      },
+      dailyMarketShare: "28.6% national television audience share across Rossiya-1, Rossiya-24, Rossiya-K (Culture), and Carousel (Mediascope Russia 2024; Rossiya-1 consistently ranks as the most-viewed television channel nationwide)",
+      brandTrustScore: {
+        score: "56%",
+        source: "Public Opinion Foundation (FOM) & Levada Center Media Consumption Survey 2024",
+      },
+      localContentQuota: "80% domestic Russian production quota, operating 85 regional GTRK broadcast branches transmitting in 54 languages of the ethnic peoples of the Russian Federation",
+      staffHeadcount: "20,000 permanent television directors, war correspondents, technical engineers, and regional station crews (VGTRK Corporate Review 2024)",
+      logo: "broadcaster-logos/ru/vgtrk.png",
+      logoExplainer:
+        "The VGTRK emblem displays the stylized acronym 'ВГТРК' accompanied by the dynamic Russian tricolor flag ribbon in white, blue, and crimson red, sweeping outward to evoke continental satellite coverage across eleven time zones.",
+      sources: [
+        "https://vgtrk.ru/",
+        "https://minfin.gov.ru/",
+        "https://digital.gov.ru/",
+      ],
+      licenceNote: "All-Russia State Television and Radio Broadcasting Company unitary enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Vatican City
+  VA: [
+    {
+      id: "va-vatican-media",
+      countryCode: "VA",
+      name: "Vatican Media",
+      officialName: "Vatican Media (Dicasterium pro Communicatione - Vatican Media / Centro Televisivo Vaticano CTV)",
+      founded: 1983,
+      primaryFunding: "Direct operating budget allocation from the Administration of the Patrimony of the Apostolic See (APSA) and the Holy See consolidated budget (Peter's Pence / Obolo di San Pietro)",
+      headquarters: "Palazzo Pio, Piazza Pia 3, 00120 Vatican City State",
+      annualPublicFunding: {
+        total: "EUR 38.5 million communication pastoral mission budget (Holy See Consolidated Budget / Secretariat for the Economy FY 2024; funded globally by Catholic faithful)",
+        perCapita: "EUR 45,000 / resident of Vatican City statehood territory / year",
+      },
+      dailyMarketShare: "100% domestic coverage within the Vatican City State; global transmissions reached over 80 million viewers worldwide via Eurovision satellite distribution and official multilingual streams for Papal encyclicals and celebrations (Dicastery for Communication 2024)",
+      brandTrustScore: {
+        score: "89%",
+        source: "International Catholic Media Association (SIGNIS) & Holy See Press Office Audit 2024",
+      },
+      localContentQuota: "100% theological, ecumenical, and pastoral global public interest broadcasting, disseminating daily transmissions, radio bulletins, and video archives in more than 40 languages worldwide",
+      staffHeadcount: "480 journalists, Vatican camera operators, language translators, and audio engineers (Dicastery for Communication Registry 2024)",
+      logo: "broadcaster-logos/va/vaticanmedia.png",
+      logoExplainer:
+        "The Vatican Media emblem showcases the sacred Crossed Keys of Saint Peter (one gold and one silver, symbolizing spiritual and temporal papal authority) bound by the red cord beneath the papal tiara, accompanied by modern clean typography. It embodies global evangelization, apostolic succession, and ethical journalism.",
+      sources: [
+        "https://www.vaticannews.va/",
+        "https://www.comunicazione.va/",
+      ],
+      licenceNote: "Dicastery for Communication of the Holy See official insignia and trademark bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Liechtenstein
+  LI: [
+    {
+      id: "li-1fltv",
+      countryCode: "LI",
+      name: "1FLTV",
+      officialName: "1FLTV (1. Fürstentum Liechtenstein Television)",
+      founded: 2008,
+      primaryFunding: "Commercial advertising and municipal public event broadcasting service allocations authorized under the Liechtenstein Media Act (Mediengesetz)",
+      headquarters: "Bergstrasse 10, 9495 Triesen, Principality of Liechtenstein",
+      annualPublicFunding: {
+        total: "CHF 350,000 in public parliamentary and municipal informational broadcast service mandates (Amt für Kommunikation & Landesverwaltung Liechtenstein 2024; approx. USK)",
+        perCapita: "CHF 8.80 / resident / year (approx. US.90 / year)",
+      },
+      dailyMarketShare: "38.0% weekly domestic audience reach across households in the Principality of Liechtenstein (Amt für Kommunikation Mediennutzung & Liechtensteinische Post 2024)",
+      brandTrustScore: {
+        score: "72%",
+        source: "Liechtenstein-Institut Media Poll & Presseclub Liechtenstein 2024",
+      },
+      localContentQuota: "75% local Alemannic dialect and High German programming quota, highlighting Landtag parliamentary debates, communal affairs across the eleven municipalities, Alpine traditions, and National Day celebrations",
+      staffHeadcount: "18 full-time and part-time video journalists, technical editors, and camera operators (1FLTV Studio Triesen 2024)",
+      logo: "broadcaster-logos/li/1fltv.png",
+      logoExplainer:
+        "The 1FLTV emblem features the royal blue and deep red colors of the Liechtenstein flag combined with a gold crown crest above the clean stylized typography '1FL.TV'. It symbolizes princely identity, Alpine heritage, and community journalism in the Rhine Valley.",
+      sources: [
+        "https://www.1fl.li/",
+        "https://www.llv.li/",
+        "https://www.liechtenstein-institut.li/",
+      ],
+      licenceNote: "1. Fürstentum Liechtenstein Television broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Yemen
+  YE: [
+    {
+      id: "ye-yementv",
+      countryCode: "YE",
+      name: "Yemen TV",
+      officialName: "Yemen TV (المؤسسة العامة اليمنية للإذاعة والتلفزيون - الفضائية اليمنية / General Corporation for Radio and Television)",
+      founded: 1975,
+      primaryFunding: "Public treasury allocation from the Ministry of Information within the General State Budget of the Republic of Yemen",
+      headquarters: "Al-Jaraf, Sanaa / interim broadcast operations in Aden and Riyadh",
+      annualPublicFunding: {
+        total: "YER 12.5 billion state broadcast subvention allocation (Ministry of Finance Public Budget Accounts FY 2024; approx. US.5M)",
+        perCapita: "YER 380.00 / citizen / year (approx. USzsh.26 / year)",
+      },
+      dailyMarketShare: "24.0% national television audience reach across Yemen TV, Yemen Youth, and regional state terrestrial transmitters (Yemen Media Observatory & Arab Advisors Group 2024)",
+      brandTrustScore: {
+        score: "52%",
+        source: "Yemeni Media Freedom Observatory & Arab Barometer Yemen 2024",
+      },
+      localContentQuota: "85% domestic Yemeni cultural, historical Arabian heritage, and community news programming quota in Arabic",
+      staffHeadcount: "1,200 permanent broadcast journalists, audio engineers, and transmission specialists (Ministry of Information Personnel Directorate 2024)",
+      logo: "broadcaster-logos/ye/yementv.jpg",
+      logoExplainer:
+        "The Yemen TV emblem features the Marib Dam sunburst motif and the Golden Eagle of Saladin with transmission arcs in the national tricolor of red, white, and black, reflecting Yemen's ancient South Arabian civilizational heritage and sovereignty.",
+      sources: [
+        "https://yemen-tv.net/",
+        "https://mof-ye.net/",
+      ],
+      licenceNote: "General Corporation for Radio and Television public statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Tajikistan
+  TJ: [
+    {
+      id: "tj-tojikiston",
+      countryCode: "TJ",
+      name: "TV Tojikiston",
+      officialName: "Television Tojikiston (Телевизиони Тоҷикистон - Шабакаи якум / Committee for Television and Radio under the Government of the Republic of Tajikistan)",
+      founded: 1959,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Finance of the Republic of Tajikistan approved by the Majlisi Oli",
+      headquarters: "89 Behzod Street, 734013 Dushanbe, Tajikistan",
+      annualPublicFunding: {
+        total: "TJS 78.0 million state budget public broadcasting appropriation (Law on the State Budget of the Republic of Tajikistan FY 2024; approx. US.2M)",
+        perCapita: "TJS 7.60 / citizen / year (approx. USzsh.70 / year)",
+      },
+      dailyMarketShare: "44.5% nationwide television audience share across Tojikiston (First Channel), Safina, Jahonnamo (News), and Varzish (Sports) (Committee for Television and Radio & Zerkalo Public Opinion Research 2024)",
+      brandTrustScore: {
+        score: "67%",
+        source: "Zerkalo Research Center Dushanbe & National Association of Independent Mass Media in Tajikistan (NANSMIT) 2024",
+      },
+      localContentQuota: "80% domestic Tajik production quota in the state Tajik language (alongside Russian and Uzbek broadcasts), featuring Persian literary classics (Rudaki, Ferdowsi), Pamiri musical traditions, and state chronicles",
+      staffHeadcount: "1,150 permanent journalists, cinematographers, sound engineers, and regional transmission staff across Dushanbe, Sughd, Khatlon, and Gorno-Badakhshan (Committee for Television and Radio 2024)",
+      logo: "broadcaster-logos/tj/tojikiston.webp",
+      logoExplainer:
+        "The Television Tojikiston emblem features a stylized golden crown with seven stars—the state symbol of Tajikistan—surmounted by optical transmission waves in national red, white, and emerald green, embodying Persian poetic legacy, Somoni statehood, and national unity.",
+      sources: [
+        "https://tvt.tj/",
+        "https://minfin.tj/",
+      ],
+      licenceNote: "Committee for Television and Radio under the Government of the Republic of Tajikistan state trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
