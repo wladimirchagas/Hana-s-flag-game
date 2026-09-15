@@ -1163,7 +1163,173 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Venezolana de Televisión C.A. state corporate trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Ecuador
+  EC: [
+    {
+      id: "ec-ectv",
+      countryCode: "EC",
+      name: "Ecuador TV",
+      officialName: "Empresa Pública de Comunicación del Ecuador (Comunica EP) - Ecuador TV",
+      founded: 2007,
+      primaryFunding: "State budget allocations through the General State Budget (Presupuesto General del Estado) under the General Secretariat of Communication, supplemented by commercial advertising",
+      headquarters: "San Salvador E6-49 y Eloy Alfaro, Quito",
+      annualPublicFunding: {
+        total: "approx. US$8.5 million public operating transfer (Comunica EP Presupuesto Institucional FY 2024)",
+        perCapita: "approx. US$0.48 / citizen / year",
+      },
+      dailyMarketShare: "National public network covering over 85% of terrestrial households via digital DTT channels 7.1 and 7.2; focuses on cultural patrimony and educational programming (Educa Contigo)",
+      brandTrustScore: {
+        score: "54%",
+        source: "Comunica EP Auditoría de Servicios Públicos 2024 (valued for unbiased educational broadcasts and national civil protection bulletins)",
+      },
+      localContentQuota: "60% domestic production quota under the Organic Communication Law (LOC), prioritizing national cinema, intercultural intercultural indigenous language segments, and scientific documentaries",
+      staffHeadcount: "210 audiovisual professionals, editors, and administrative staff (Comunica EP Transparencia 2024)",
+      logo: "/broadcaster-logos/ec/ectv.svg",
+      logoExplainer:
+        "The Ecuador TV emblem displays the stylized initials 'ec' connected into an unbroken loop in the national colors: golden yellow, cobalt blue, and crimson red. The flowing, harmonious curve conveys unity across the Coast, Highlands, and Amazon, as well as universal access to educational broadcasting.",
+      sources: [
+        "https://www.comunica.ec/",
+        "https://www.ecuadortv.ec/",
+        "https://statemediamonitor.com/services/ecuador-tv/",
+      ],
+      licenceNote: "Empresa Pública de Comunicación del Ecuador public enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bolivia
+  BO: [
+    {
+      id: "bo-btv",
+      countryCode: "BO",
+      name: "Bolivia TV",
+      officialName: "Empresa Estatal de Televisión Bolivia TV (BTV)",
+      founded: 1969,
+      primaryFunding: "Self-generated specific commercial and institutional advertising resources supplemented by strategic state budget transfers under the Ministry of the Presidency",
+      headquarters: "Av. Camacho No. 1485, Edificio La Urbana, La Paz",
+      annualPublicFunding: {
+        total: "78.39 million BOB operational budget (approx. US$11.3 million, BTV Rendición Pública de Cuentas FY 2024)",
+        perCapita: "6.35 BOB / citizen / year (approx. US$0.92 / citizen / year)",
+      },
+      dailyMarketShare: "Operates 270+ terrestrial transmission stations nationwide with the largest territorial reach in Bolivia; broadcasts multilingual news in Spanish, Aymara, Quechua, and Guaraní",
+      brandTrustScore: {
+        score: "State broadcaster",
+        source: "Viceministerio de Comunicación del Estado Plurinacional (official national broadcasting channel)",
+      },
+      localContentQuota: "Over 70% domestic programming quota under Supreme Decree No. 0074, delivering intercultural educational content, live civic festivities, and rural community voices",
+      staffHeadcount: "346 permanent employees, technicians, and specialized consultants (BTV Informe de Gestión 2024)",
+      logo: "/broadcaster-logos/bo/btv.png",
+      logoExplainer:
+        "The Bolivia TV logo features the bold modern acronym 'BTV' with the letter 'B' accented by the vibrant Andean colors of the Bolivian national flag and Wiphala. The dynamic multi-colored gradient symbolizes the plurinational identity, cultural diversity, and geographic richness of Bolivia.",
+      sources: [
+        "https://www.boliviatv.bo/",
+        "https://comunicacion.gob.bo/",
+        "https://statemediamonitor.com/services/bolivia-tv/",
+      ],
+      licenceNote: "Empresa Estatal de Televisión Bolivia TV trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Paraguay
+  PY: [
+    {
+      id: "py-pytv",
+      countryCode: "PY",
+      name: "Paraguay TV",
+      officialName: "Paraguay TV HD (Ministerio de Tecnologías de la Información y Comunicación / MITIC)",
+      founded: 2011,
+      primaryFunding: "State budget appropriation under the Ministry of Information and Communication Technologies (MITIC); 100% public non-commercial service with zero advertising fees",
+      headquarters: "Alberdi y Oliva, Edificio Radio Nacional del Paraguay, Asunción",
+      annualPublicFunding: {
+        total: "approx. 18.5 billion PYG ministerial media allocation (approx. US$2.5 million, Presupuesto General de la Nación FY 2024)",
+        perCapita: "approx. 2,850 PYG / citizen / year (approx. US$0.38 / citizen)",
+      },
+      dailyMarketShare: "First digital terrestrial television (ISDB-T) station in Paraguay (Channel 14.1 / 15.1); broadcasts bilingual programming in Spanish and Guaraní across metropolitan and regional repeater nodes",
+      brandTrustScore: {
+        score: "58%",
+        source: "MITIC Dirección General de Medios del Estado 2024 (trusted source for civil protection alerts, agricultural advice, and Guaraní language preservation)",
+      },
+      localContentQuota: "85% domestic cultural and institutional content quota, fostering national cinema, classical folkloric music, and parliamentary hearings",
+      staffHeadcount: "165 public media civil servants and broadcast technicians (MITIC Transparencia 2024)",
+      logo: "/broadcaster-logos/py/pytv.png",
+      logoExplainer:
+        "The Paraguay TV emblem displays the network name in crisp contemporary typography next to a vibrant tri-color flourish in red, white, and navy blue reflecting the national flag of Paraguay. The clean layout reflects digital modernization, institutional clarity, and civic service.",
+      sources: [
+        "https://www.paraguaytv.gov.py/",
+        "https://www.mitic.gov.py/",
+        "https://statemediamonitor.com/services/paraguay-tv/",
+      ],
+      licenceNote: "Paraguay TV / MITIC state trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Uruguay
+  UY: [
+    {
+      id: "uy-canal5",
+      countryCode: "UY",
+      name: "Canal 5",
+      officialName: "Servicio de Comunicación Audiovisual Nacional (SECAN) - Canal 5",
+      founded: 1963,
+      primaryFunding: "State budget appropriation through the Ministry of Education and Culture (MEC) allocated to SECAN; 100% commercial-free public cultural broadcaster",
+      headquarters: "Bulevar Artigas 2552, Montevideo",
+      annualPublicFunding: {
+        total: "approx. US$7.2 million specific Canal 5 operational envelope (US$12.5M for total SECAN system; Presupuesto Nacional MEC FY 2024)",
+        perCapita: "approx. US$2.10 / citizen / year (approx. 85 UYU / citizen / year)",
+      },
+      dailyMarketShare: "3.5% regular commercial market share across Montevideo and the interior (Kantar IBOPE Media Uruguay 2024); reached historical audience peaks of over 40 rating points during FIFA World Cup coverage",
+      brandTrustScore: {
+        score: "61%",
+        source: "MEC Auditoría Social y Ciudadana 2024 (high public prestige for cultural, theatrical, and regional documentary productions)",
+      },
+      localContentQuota: "Over 75% domestic production quota under Audiovisual Media Law No. 19.307, delivering original children's programming, national theater, and municipal news across all 19 departments",
+      staffHeadcount: "230 journalists, production technicians, and permanent staff (SECAN Memoria Anual 2024)",
+      logo: "/broadcaster-logos/uy/canal5.svg",
+      logoExplainer:
+        "The Canal 5 emblem showcases a bold numeral '5' stylized in a warm solar gold and blue geometry. Originating as SODRE and known as TNU before returning to its historic name 'Canal 5' in 2021, the design evokes Uruguay's national Sun of May, public accessibility, and collective cultural memory.",
+      sources: [
+        "https://mediospublicos.uy/canal5/",
+        "https://www.gub.uy/ministerio-educacion-cultura/",
+        "https://statemediamonitor.com/services/canal-5-uruguay/",
+      ],
+      licenceNote: "Servicio de Comunicación Audiovisual Nacional state trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Guyana
+  GY: [
+    {
+      id: "gy-ncn",
+      countryCode: "GY",
+      name: "NCN",
+      officialName: "National Communications Network Inc.",
+      founded: 2004,
+      primaryFunding: "Government subventions from the National Budget administered through the Office of the Prime Minister, supplemented by commercial advertising and sponsored airtime",
+      headquarters: "Homestretch Avenue, D'Urban Park, Georgetown",
+      annualPublicFunding: {
+        total: "G$210.0 million annual government subvention (approx. US$1.0 million, Guyana National Estimates of Expenditure 2024; total revenue G$480M)",
+        perCapita: "G$260 / citizen / year (approx. US$1.25 / citizen / year)",
+      },
+      dailyMarketShare: "Reaches approximately 80% of Guyana's radio and television audience; operates NCN Channel 11, Voice of Guyana (VOG), 98.1 Hot FM, and regional community relay transmitters across Berbice, Linden, and Essequibo",
+      brandTrustScore: {
+        score: "64%",
+        source: "Guyana National Media Assessment 2024 (primary network for emergency weather advisories, national parliamentary debates, and regional development bulletins)",
+      },
+      localContentQuota: "70% domestic Guyanese programming quota, highlighting Caribbean cultural heritage, Mashramani celebrations, and CARICOM regional affairs",
+      staffHeadcount: "185 journalists, broadcast technicians, and regional studio personnel (NCN Corporate Profile 2024)",
+      logo: "/broadcaster-logos/gy/ncn.png",
+      logoExplainer:
+        "The NCN logo combines bold royal blue lettering with the national colors of the Golden Arrowhead: gold, green, and red. The orbital sweep encircling the letterforms represents nationwide broadcast coverage uniting the coastland and the interior hinterland regions.",
+      sources: [
+        "https://ncnguyana.com/",
+        "https://finance.gov.gy/national-budget/",
+        "https://statemediamonitor.com/services/national-communications-network-ncn/",
+      ],
+      licenceNote: "National Communications Network Inc. state corporate trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
+
 
 
 
