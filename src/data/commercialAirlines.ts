@@ -5922,6 +5922,140 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  CD: [
+    {
+      id: "cd-congo-airways",
+      countryCode: "CD",
+      name: "Congo Airways",
+      iata: "8Z",
+      icao: "CGA",
+      founded: 2014,
+      alliance: "None",
+      hubs: [
+        "N'djili Airport (FIH)",
+        "Lubumbashi International Airport (FBM)",
+      ],
+      fleet: {
+        total: 3,
+        summary: "3 aircraft (Airbus A320-200, De Havilland Dash 8-Q400)",
+      },
+      logo: "/airline-logos/cd/congo-airways.png",
+      logoExplainer:
+        "Features the bold silhouette of a soaring leopard (the national animal of the DRC, symbolizing strength, dignity, and agility) poised within a radiant golden and crimson circle with sweeping wings, reflecting Congolese unity and trans-continental connection across the Congo River basin.",
+      sources: [
+        "https://www.congoairways.com/",
+        "https://en.wikipedia.org/wiki/Congo_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  CG: [
+    {
+      id: "cg-trans-air-congo",
+      countryCode: "CG",
+      name: "Trans Air Congo (TAC)",
+      iata: "Q8",
+      icao: "TSG",
+      founded: 1994,
+      alliance: "None",
+      hubs: [
+        "Pointe Noire Airport (PNR)",
+        "Maya-Maya Airport (BZV)",
+      ],
+      fleet: {
+        total: 5,
+        summary: "5 aircraft (Boeing 737-300, Boeing 737-200)",
+      },
+      logo: "/airline-logos/cg/trans-air-congo.png",
+      logoExplainer:
+        "Features an aerodynamic navy blue and forest green winged letterform with modern italic typography, symbolizing dependable scheduled passenger bridges between Brazzaville, the Atlantic port city of Pointe-Noire, and neighboring Central African capitals.",
+      sources: [
+        "https://www.flytransaircongo.com/",
+        "https://en.wikipedia.org/wiki/Trans_Air_Congo",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  DJ: [
+    {
+      id: "dj-air-djibouti",
+      countryCode: "DJ",
+      name: "Air Djibouti ('Red Sea Airlines')",
+      iata: "DJ",
+      icao: "DJI",
+      founded: 1963,
+      alliance: "None",
+      hubs: ["Djibouti–Ambouli International Airport (JIB)"],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Boeing 737-500, Boeing 737-400, BAe 146)",
+      },
+      logo: "/airline-logos/dj/air-djibouti.svg",
+      logoExplainer:
+        "Features the red five-pointed star of Djibouti and dynamic speed ribbons in sky-blue and emerald green evoking the national flag, representing Djibouti's strategic position as the vibrant maritime and aerial crossroads of the Red Sea and the Horn of Africa.",
+      sources: [
+        "https://air-djibouti.com/",
+        "https://en.wikipedia.org/wiki/Air_Djibouti",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  ER: [
+    {
+      id: "er-eritrean-airlines",
+      countryCode: "ER",
+      name: "Eritrean Airlines",
+      iata: "B8",
+      icao: "ERT",
+      founded: 1991,
+      alliance: "None",
+      hubs: ["Asmara International Airport (ASM)"],
+      fleet: {
+        total: 1,
+        summary: "1 aircraft (Boeing 737)",
+      },
+      logo: "/airline-logos/er/eritrean-airlines.png",
+      logoExplainer:
+        "Features an upright golden olive branch wreath—the national emblem of Eritrea symbolizing peace, freedom, and triumph—encircling a dynamic ascending aircraft arrow, reflecting national independence and air links connecting Asmara to the Red Sea, the Gulf, and Africa.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Eritrean_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  SO: [
+    {
+      id: "so-daallo-airlines",
+      countryCode: "SO",
+      name: "Daallo Airlines",
+      iata: "D3",
+      icao: "DAO",
+      founded: 1991,
+      alliance: "None",
+      hubs: [
+        "Aden Adde International Airport (MGQ)",
+        "Hargeisa Egal International Airport (HGA)",
+        "Djibouti–Ambouli International Airport (JIB)",
+      ],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Boeing 737-300, Boeing 737-400)",
+      },
+      logo: "/airline-logos/so/daallo-airlines.png",
+      logoExplainer:
+        "Displays the soaring gazelle in mid-leap across radiant desert-gold and sky-blue aerodynamic arcs, symbolizing speed, resilience, and lifeline air connectivity across the Somali peninsula, the Horn of Africa, and the Arabian Gulf.",
+      sources: [
+        "https://daallo.com/",
+        "https://en.wikipedia.org/wiki/Daallo_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
