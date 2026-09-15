@@ -45,7 +45,7 @@ async function main() {
     path.join(ROOT, 'public/airline-logos/es/iberia.svg')
   );
   await downloadFile(
-    'https://commons.wikimedia.org/w/index.php?title=Special:FilePath/Vueling.svg',
+    'https://commons.wikimedia.org/w/index.php?title=Special:FilePath/Logo_Vueling.svg',
     path.join(ROOT, 'public/airline-logos/es/vueling.svg')
   );
   await downloadFile(
