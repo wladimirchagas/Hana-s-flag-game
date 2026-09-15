@@ -2863,6 +2863,166 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Radiotelevisão Cabo-verdiana, S.A. public concessionaire trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Ghana
+  GH: [
+    {
+      id: "gh-gbc",
+      countryCode: "GH",
+      name: "GBC",
+      officialName: "Ghana Broadcasting Corporation (GBC / GTV)",
+      founded: 1935,
+      primaryFunding: "Government budget subvention (Ministry of Information / Office of Government Machinery) for personnel compensation, commercial advertising and sponsorship, and statutory TV Licence fees under the Television Licensing Act 1966 (NLCD 89)",
+      headquarters: "Broadcasting House, Kanda, Accra",
+      annualPublicFunding: {
+        total: "GH¢ 72.5 million government personnel subvention & budgetary allocation (Ministry of Finance Budget Statement & GBC Financial Report FY 2024; approx. US$5.2M)",
+        perCapita: "GH¢ 2.20 / citizen / year (approx. US$0.16 / year)",
+      },
+      dailyMarketShare: "16.8% television audience share across GTV, GTV Sports+, and GBC News (Kantar / Geopoll Ghana Media Measurement 2024; GTV remains the foremost national state broadcaster alongside commercial rivals Adom TV and TV3)",
+      brandTrustScore: {
+        score: "61%",
+        source: "Afrobarometer Ghana & National Media Commission (NMC) 2024",
+      },
+      localContentQuota: "Minimum 70% Ghanaian and African domestic programming quota mandated by the National Media Commission, prioritizing Ghanaian indigenous languages (Akan, Ga, Ewe, Dagbani, Nzema, and Hausa) across radio and television networks",
+      staffHeadcount: "1,420 employees across national headquarters in Accra and 10 regional broadcasting houses (GBC Annual Personnel Review 2024)",
+      logo: "/broadcaster-logos/gh/gbc.png",
+      logoExplainer:
+        "The GBC emblem features the bold, elegant acronym 'GBC' in deep oceanic blue, underscored by a golden sunburst arc and green accent swoosh reflecting the Pan-African and Ghanaian national colors (red, gold, green). The curved orbital crest symbolizes universal national broadcast reach and public service enlightenment.",
+      sources: [
+        "https://www.gbcghanaonline.com/",
+        "https://nmc.org.gh/",
+      ],
+      licenceNote: "Ghana Broadcasting Corporation statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Kenya
+  KE: [
+    {
+      id: "ke-kbc",
+      countryCode: "KE",
+      name: "KBC",
+      officialName: "Kenya Broadcasting Corporation",
+      founded: 1928,
+      primaryFunding: "Exchequer budgetary transfers (State Department for Broadcasting and Telecommunications, Ministry of Information, Communications and the Digital Economy) and commercial advertising airtime sales",
+      headquarters: "Broadcasting House, Harry Thuku Road, Nairobi",
+      annualPublicFunding: {
+        total: "KSh 2,285 million recurrent government grant allocation (National Treasury Budget Estimates & State Department for Broadcasting FY 2024/25; approx. US$15.2M)",
+        perCapita: "KSh 42.30 / citizen / year (approx. US$0.28 / year)",
+      },
+      dailyMarketShare: "9.4% national television audience share across KBC Channel 1 and Y254 (Communications Authority of Kenya CAK Broadcasting Audience Research 2024; KBC operates the widest terrestrial transmitter footprint in the country)",
+      brandTrustScore: {
+        score: "59%",
+        source: "Communications Authority of Kenya (CAK) & Media Council of Kenya 2024",
+      },
+      localContentQuota: "Minimum 60% Kenyan local content quota enforced by the Communications Authority of Kenya Programming Code, featuring programming in English, Swahili (Radio Taifa), and 10 regional vernacular language services",
+      staffHeadcount: "1,180 employees across Nairobi central studios and regional transmission centers (KBC Corporate Profile 2024)",
+      logo: "/broadcaster-logos/ke/kbc.png",
+      logoExplainer:
+        "The KBC emblem presents the bold letterforms 'kbc' in vibrant red against a crisp white backdrop, framed within an open circular orbit in bright sky blue with radiating soundwaves. The circular dynamic sweep reflects universal nationwide transmission, national cohesion, and public information stewardship across Kenya.",
+      sources: [
+        "https://www.kbc.co.ke/",
+        "https://ca.go.ke/",
+      ],
+      licenceNote: "Kenya Broadcasting Corporation statutory corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Nigeria
+  NG: [
+    {
+      id: "ng-nta",
+      countryCode: "NG",
+      name: "NTA",
+      officialName: "Nigerian Television Authority",
+      founded: 1977,
+      primaryFunding: "Federal Government annual budget appropriation (Budget Office of the Federation / Federal Ministry of Information and National Orientation) supplemented by commercial advertising and sponsored airtime",
+      headquarters: "Television House, Ahmadu Bello Way, Area 11, Garki, Abuja, FCT",
+      annualPublicFunding: {
+        total: "₦12,100 million federal government appropriation (Budget Office of the Federation 2024 Appropriation Act; approx. US$8.1M)",
+        perCapita: "₦55.00 / citizen / year (approx. US$0.037 / year)",
+      },
+      dailyMarketShare: "26.5% television audience share during primetime national news (National Broadcasting Commission NBC Nigeria & MediaTrak 2024; NTA Network News is the most widely syndicated television broadcast in West Africa)",
+      brandTrustScore: {
+        score: "54%",
+        source: "National Broadcasting Commission (NBC) Nigeria Audience Survey 2024",
+      },
+      localContentQuota: "Minimum 70% Nigerian domestic programming quota under the Nigeria Broadcasting Code (6th Edition), broadcasting extensive programming in Hausa, Yoruba, Igbo, and Nigerian Pidgin across all geopolitical zones",
+      staffHeadcount: "6,200 employees across Abuja headquarters, 10 zonal network centers, and over 100 federal community/state television stations (NTA Human Resources Directory 2024)",
+      logo: "/broadcaster-logos/ng/nta.png",
+      logoExplainer:
+        "The NTA insignia displays the lowercase acronym 'nta' rendered in stylized brush strokes of vibrant emerald green and sun yellow, topped by an arched parabolic antenna swoosh. The emerald green reflects the Nigerian agricultural heritage and national flag, while the parabolic broadcast signal symbolizes continental reach and unity across Nigeria's diverse cultures.",
+      sources: [
+        "https://www.nta.ng/",
+        "https://nbc.gov.ng/",
+      ],
+      licenceNote: "Nigerian Television Authority statutory federal agency trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Senegal
+  SN: [
+    {
+      id: "sn-rts",
+      countryCode: "SN",
+      name: "RTS",
+      officialName: "Radiodiffusion Télévision Sénégalaise (RTS)",
+      founded: 1973,
+      primaryFunding: "Dotation budgétaire de l'État (Ministère de la Communication, des Télécommunications et du Numérique), Redevance audiovisuelle (RAV - 0.7% on national electricity bills collected via SENELEC), and commercial advertising",
+      headquarters: "Triangle Sud, Boulevard de la République, Dakar",
+      annualPublicFunding: {
+        total: "FCFA 13,200 million state budget subvention & audiovisual license levy (Loi de finances & Décret présidentiel sur la redevance FY 2024; approx. US$21.8M)",
+        perCapita: "FCFA 735 / citizen / year (approx. US$1.21 / year)",
+      },
+      dailyMarketShare: "17.2% television audience share across RTS 1 and RTS 2 (Médiamétrie / Africascope Sénégal 2024; RTS 1 holds strong leadership in live national events, institutional affairs, and religious celebrations)",
+      brandTrustScore: {
+        score: "63%",
+        source: "Conseil National de Régulation de l'Audiovisuel (CNRA) & Africascope 2024",
+      },
+      localContentQuota: "Minimum 60% Senegalese domestic production quota, mandating daily broadcasts in Wolof, Pulaar, Serer, Mandinka, Diola, and Soninke alongside official French",
+      staffHeadcount: "1,050 employees across the central Maison de la RTS in Dakar and regional production centers in Saint-Louis, Thiès, Kaolack, and Ziguinchor (RTS Direction Générale 2024)",
+      logo: "/broadcaster-logos/sn/rts.png",
+      logoExplainer:
+        "The RTS wordmark showcases the bold letterforms 'RTS' in emerald green, warm amber yellow, and crimson red—the Pan-African colors of the Senegalese national flag. The letter 'T' is dynamically stylized as a broadcast transmission tower with concentric curved signal waves, representing democratic communication and nationwide solidarity.",
+      sources: [
+        "https://www.rts.sn/",
+        "https://cnra.sn/",
+      ],
+      licenceNote: "Radiodiffusion Télévision Sénégalaise national public enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Namibia
+  NA: [
+    {
+      id: "na-nbc",
+      countryCode: "NA",
+      name: "NBC",
+      officialName: "Namibian Broadcasting Corporation (NBC)",
+      founded: 1990,
+      primaryFunding: "State budgetary subsidy transfers (Ministry of Information and Communication Technology - MICT), television licence fees (N$204/year per television set), and commercial airtime advertising",
+      headquarters: "Cullinan Street, Northern Industrial Area, Windhoek",
+      annualPublicFunding: {
+        total: "N$ 392.0 million government operating and capital development subsidy (Ministry of Finance Estimates of Revenue and Expenditure FY 2023/24; approx. US$21.2M)",
+        perCapita: "N$ 150.80 / citizen / year (approx. US$8.15 / year)",
+      },
+      dailyMarketShare: "62.4% television audience reach across NBC 1, NBC 2, and NBC 3 (Communications Regulatory Authority of Namibia CRAN & NBC Audience Metrics 2024; NBC is Namibia's premier terrestrial broadcaster reaching over 1.6M weekly citizens)",
+      brandTrustScore: {
+        score: "66%",
+        source: "CRAN Broadcast Market Report & Afrobarometer Namibia 2024",
+      },
+      localContentQuota: "Minimum 65% Namibian and African local content quota regulated by CRAN, broadcasting in English, Oshiwambo, Otjiherero, Damara/Nama, Rukwangali, Silozi, Setswana, and German across 11 national radio stations",
+      staffHeadcount: "460 permanent employees (NBC Annual Audit Report & Ministry of Public Enterprises 2024)",
+      logo: "/broadcaster-logos/na/nbc.png",
+      logoExplainer:
+        "The NBC corporate emblem presents a stylized lowercase wordmark 'nbc' preceded by an orbital icon composed of dynamic blue and gold arc curves forming a stylized eye and satellite dish. The blue and gold tones represent Namibia's clear Atlantic skies, mineral wealth, and visionary public broadcasting excellence across southern Africa.",
+      sources: [
+        "https://www.nbc.na/",
+        "https://www.cran.na/",
+      ],
+      licenceNote: "Namibian Broadcasting Corporation statutory public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
