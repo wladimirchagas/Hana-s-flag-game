@@ -1529,7 +1529,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     if (effectiveGridContentType !== "airline" || display?.kind !== "modern") return null;
     if (gridAirlineId) {
       const a = airlineById(gridAirlineId);
-      if (a && a.countryCode.toUpperCase() === display.country.code.toUpperCase()) {
+      if (a) {
         return a;
       }
     }
@@ -1543,7 +1543,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     if (effectiveGridContentType !== "broadcaster" || display?.kind !== "modern") return null;
     if (gridBroadcasterId) {
       const b = broadcasterById(gridBroadcasterId);
-      if (b && b.countryCode.toUpperCase() === display.country.code.toUpperCase()) {
+      if (b) {
         return b;
       }
     }
