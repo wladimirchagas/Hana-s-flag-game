@@ -2462,6 +2462,257 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Germany
+  DE: [
+    {
+      id: "de-lufthansa",
+      countryCode: "DE",
+      name: "Lufthansa",
+      iata: "LH",
+      icao: "DLH",
+      founded: 1953,
+      alliance: "Star Alliance",
+      hubs: ["Frankfurt Airport (FRA)", "Munich Airport (MUC)"],
+      fleet: {
+        total: 330,
+        summary: "330 aircraft (Airbus A319, A320, A320neo, A321, A330-300, A340-300, A340-600, A350-900, A380-800; Boeing 747-400, 747-8, 777, 787-9)",
+      },
+      logo: "/airline-logos/de/lufthansa.svg",
+      logoExplainer:
+        "The legendary encircled crane in flight (*der Kranich*) was originally created by graphic designer Otto Firle in 1918 and refined by Bauhaus luminary Otl Aicher in 1962. It represents graceful aerodynamic soaring, premium engineering reliability, and German aeronautical tradition.",
+      sources: [
+        "https://www.lufthansa.com/",
+        "https://en.wikipedia.org/wiki/Lufthansa",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "de-condor",
+      countryCode: "DE",
+      name: "Condor",
+      iata: "DE",
+      icao: "CFG",
+      founded: 1955,
+      alliance: "None",
+      hubs: ["Frankfurt Airport (FRA)", "Düsseldorf Airport (DUS)"],
+      fleet: {
+        total: 55,
+        summary: "55 aircraft (Airbus A320-200, A320neo, A321-200, A321neo, A330-900neo)",
+      },
+      logo: "/airline-logos/de/condor.svg",
+      logoExplainer:
+        "Features a modern lowercase wordmark with an iconic condensed signet. Condor's globally acclaimed brand identity, inspired by holiday parasols, beach towels, and ice cream stalls, celebrates joyful vacation freedom across sunny worldwide destinations.",
+      sources: [
+        "https://www.condor.com/",
+        "https://en.wikipedia.org/wiki/Condor_(airline)",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "de-eurowings",
+      countryCode: "DE",
+      name: "Eurowings",
+      iata: "EW",
+      icao: "EWG",
+      founded: 1993,
+      alliance: "None",
+      hubs: [
+        "Düsseldorf Airport (DUS)",
+        "Cologne Bonn Airport (CGN)",
+        "Hamburg Airport (HAM)",
+        "Stuttgart Airport (STR)",
+        "Berlin Brandenburg Airport (BER)",
+      ],
+      fleet: {
+        total: 100,
+        summary: "100 aircraft (Airbus A319-100, A320-200, A320neo, A321-200, A321neo)",
+      },
+      logo: "/airline-logos/de/eurowings.svg",
+      logoExplainer:
+        "Features a distinctive burgundy-magenta and cyan-blue aerodynamic forward-slanted 'E' wing mark, conveying speed, youthful vitality, and value-focused pan-European short- and medium-haul travel.",
+      sources: [
+        "https://www.eurowings.com/",
+        "https://en.wikipedia.org/wiki/Eurowings",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Netherlands
+  NL: [
+    {
+      id: "nl-klm",
+      countryCode: "NL",
+      name: "KLM Royal Dutch Airlines",
+      iata: "KL",
+      icao: "KLM",
+      founded: 1919,
+      alliance: "SkyTeam",
+      hubs: ["Amsterdam Airport Schiphol (AMS)"],
+      fleet: {
+        total: 110,
+        summary: "110 aircraft (Boeing 737-700/800/900, 777-200ER/300ER, 787-9/10; Airbus A321neo, A330-200/300)",
+      },
+      logo: "/airline-logos/nl/klm.svg",
+      logoExplainer:
+        "Created by British design master F.H.K. Henrion in 1961, the iconic Dutch royal crown consists of four crisp circular dots, a central cross, and the bold letters KLM in royal Delft blue. Granted the 'Royal' (Koninklijke) predicate by Queen Wilhelmina in 1919, it symbolizes Dutch national pride and global pioneering leadership.",
+      sources: [
+        "https://www.klm.com/",
+        "https://en.wikipedia.org/wiki/KLM",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "nl-transavia",
+      countryCode: "NL",
+      name: "Transavia",
+      iata: "HV",
+      icao: "TRA",
+      founded: 1965,
+      alliance: "None",
+      hubs: ["Amsterdam Airport Schiphol (AMS)", "Rotterdam The Hague Airport (RTM)", "Eindhoven Airport (EIN)"],
+      fleet: {
+        total: 46,
+        summary: "46 aircraft (Boeing 737-800; Airbus A321neo)",
+      },
+      logo: "/airline-logos/nl/transavia.svg",
+      logoExplainer:
+        "Features a vibrant green and sky-blue wordmark with an iconic letter 't' embedded in playful graphic badges, reflecting friendly hospitality, approachable warmth, and accessible European vacation holidays.",
+      sources: [
+        "https://www.transavia.com/",
+        "https://en.wikipedia.org/wiki/Transavia",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Belgium
+  BE: [
+    {
+      id: "be-brussels-airlines",
+      countryCode: "BE",
+      name: "Brussels Airlines",
+      iata: "SN",
+      icao: "BEL",
+      founded: 2006,
+      alliance: "Star Alliance",
+      hubs: ["Brussels Airport (BRU - Zaventem)"],
+      fleet: {
+        total: 44,
+        summary: "44 aircraft (Airbus A319-100, A320-200, A320neo, A330-300)",
+      },
+      logo: "/airline-logos/be/brussels-airlines.svg",
+      logoExplainer:
+        "Features nine vibrant red dots of varied sizes arranged into a dynamic, forward-stepping lowercase letter 'b', symbolizing Belgian creativity, hospitality, and its pivotal crossroads hub uniting Europe and sub-Saharan Africa.",
+      sources: [
+        "https://www.brusselsairlines.com/",
+        "https://en.wikipedia.org/wiki/Brussels_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "be-tui-fly-belgium",
+      countryCode: "BE",
+      name: "TUI fly Belgium",
+      iata: "TB",
+      icao: "JAF",
+      founded: 2003,
+      alliance: "None",
+      hubs: [
+        "Brussels Airport (BRU)",
+        "Brussels South Charleroi Airport (CRL)",
+        "Liège Airport (LGG)",
+        "Ostend-Bruges Airport (OST)",
+      ],
+      fleet: {
+        total: 27,
+        summary: "27 aircraft (Boeing 737-800, 737 MAX 8; Embraer E195-E2; Boeing 787-8 Dreamliner)",
+      },
+      logo: "/airline-logos/be/tui-fly-belgium.svg",
+      logoExplainer:
+        "Features the universally recognized scarlet-red 'TUI Smile' emblem against a deep cyan-blue background, representing holiday happiness, leisure travel sunshine, and welcoming European hospitality.",
+      sources: [
+        "https://www.tuifly.be/",
+        "https://en.wikipedia.org/wiki/TUI_fly_Belgium",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Austria
+  AT: [
+    {
+      id: "at-austrian-airlines",
+      countryCode: "AT",
+      name: "Austrian Airlines",
+      iata: "OS",
+      icao: "AUA",
+      founded: 1957,
+      alliance: "Star Alliance",
+      hubs: ["Vienna International Airport (VIE - Schwechat)"],
+      fleet: {
+        total: 68,
+        summary: "68 aircraft (Airbus A320-200, A320neo, A321-100/200; Boeing 767-300ER, 777-200ER, 787-9 Dreamliner)",
+      },
+      logo: "/airline-logos/at/austrian-airlines.svg",
+      logoExplainer:
+        "Features the iconic aerodynamic red arrow known as the 'Austrian Arrow', honoring Austria's red-white-red national colors while symbolizing precision, forward thrust, and Vienna's historic role as Europe's central gateway.",
+      sources: [
+        "https://www.austrian.com/",
+        "https://en.wikipedia.org/wiki/Austrian_Airlines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Switzerland
+  CH: [
+    {
+      id: "ch-swiss",
+      countryCode: "CH",
+      name: "SWISS (Swiss International Air Lines)",
+      iata: "LX",
+      icao: "SWR",
+      founded: 2002,
+      alliance: "Star Alliance",
+      hubs: ["Zurich Airport (ZRH - Kloten)", "Geneva Airport (GVA)"],
+      fleet: {
+        total: 90,
+        summary: "90 aircraft (Airbus A220-100, A220-300, A320-200, A320neo, A321-100/200, A330-300, A340-300, A350-900; Boeing 777-300ER)",
+      },
+      logo: "/airline-logos/ch/swiss.svg",
+      logoExplainer:
+        "Features a red aircraft tailfin bearing the iconic white Swiss Cross, representing Switzerland's timeless national hallmarks of precision engineering, neutrality, discretion, and world-class hospitality.",
+      sources: [
+        "https://www.swiss.com/",
+        "https://en.wikipedia.org/wiki/Swiss_International_Air_Lines",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+    {
+      id: "ch-edelweiss-air",
+      countryCode: "CH",
+      name: "Edelweiss Air",
+      iata: "WK",
+      icao: "EDW",
+      founded: 1995,
+      alliance: "None",
+      hubs: ["Zurich Airport (ZRH - Kloten)"],
+      fleet: {
+        total: 19,
+        summary: "19 aircraft (Airbus A320-200, A340-300, A350-900)",
+      },
+      logo: "/airline-logos/ch/edelweiss-air.svg",
+      logoExplainer:
+        "Features the magnificent Alpine Edelweiss flower (*Leontopodium nivale*) emblazoned on a scarlet tailfin with a radiant golden center, symbolizing the untouched beauty of the Swiss Alps and premium leisure voyages.",
+      sources: [
+        "https://www.flyedelweiss.com/",
+        "https://en.wikipedia.org/wiki/Edelweiss_Air",
+      ],
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
