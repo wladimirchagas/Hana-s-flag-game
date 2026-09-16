@@ -30,7 +30,7 @@ export function TourismLogoDetails({
       ? logo.logo
       : logo.logo.startsWith(baseUrl)
         ? logo.logo
-        : `${baseUrl}${logo.logo}`
+        : `${baseUrl}${logo.logo.replace(/^\//, "")}`
     : null;
 
   return (

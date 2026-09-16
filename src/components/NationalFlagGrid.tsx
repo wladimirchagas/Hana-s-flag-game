@@ -187,7 +187,7 @@ export function NationalFlagGrid({
             <ul className="flag-grid__list">
               {airlines.map((airline) => {
                 const active = airline.id === selectedAirlineId;
-                const logoUrl = airline.logo ? `${baseUrl}${airline.logo}` : null;
+                const logoUrl = airline.logo ? `${baseUrl}${airline.logo.replace(/^\//, "")}` : null;
                 return (
                   <li key={airline.id} className="flag-grid__item">
                     <button
@@ -237,7 +237,7 @@ export function NationalFlagGrid({
             <ul className="flag-grid__list">
               {tourismLogos.map((logo) => {
                 const active = logo.id === selectedTourismLogoId;
-                const logoUrl = logo.logo ? `${baseUrl}${logo.logo}` : null;
+                const logoUrl = logo.logo ? `${baseUrl}${logo.logo.replace(/^\//, "")}` : null;
                 return (
                   <li key={logo.id} className="flag-grid__item">
                     <button
@@ -287,7 +287,7 @@ export function NationalFlagGrid({
             <ul className="flag-grid__list">
               {broadcasters.map((broadcaster) => {
                 const active = broadcaster.id === selectedBroadcasterId;
-                const logoUrl = broadcaster.logo ? `${baseUrl}${broadcaster.logo}` : null;
+                const logoUrl = broadcaster.logo ? `${baseUrl}${broadcaster.logo.replace(/^\//, "")}` : null;
                 return (
                   <li key={broadcaster.id} className="flag-grid__item">
                     <button

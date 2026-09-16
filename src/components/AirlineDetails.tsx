@@ -29,7 +29,7 @@ export function AirlineDetails({
     ? airline.logo
     : airline.logo.startsWith(baseUrl)
       ? airline.logo
-      : `${baseUrl}${airline.logo}`;
+      : `${baseUrl}${airline.logo.replace(/^\//, "")}`;
 
   return (
     <div className="airline-details">

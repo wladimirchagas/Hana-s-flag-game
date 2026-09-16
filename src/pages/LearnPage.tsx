@@ -1597,7 +1597,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   function resolveFlag(raw: string): string {
     if (/^https?:\/\//.test(raw) || raw.startsWith("data:")) return raw;
     if (raw.startsWith(baseUrl)) return raw;
-    return `${baseUrl}${raw}`;
+    return `${baseUrl}${raw.replace(/^\//, "")}`;
   }
 
   const currentCountry =

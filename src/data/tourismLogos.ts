@@ -84,30 +84,30 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
   ],
   BR: [
     {
-      id: "br-marca-brasil",
+      id: "br-embratur",
       countryCode: "BR",
-      name: "Marca Brasil",
+      name: "Embratur",
       slogan: "It's Spectacular. It's Brasil",
       agency: "Embratur (Instituto Brasileiro de Turismo), together with ApexBrasil",
-      launched: 2005,
       visitors: {
         count: 6621000,
         year: 2024,
         metric:
           "International tourist arrivals, consolidated Embratur / Ministry of Tourism / Federal Police data",
       },
-      logo: "/tourism-logos/br/marca-brasil.png",
+      logo: "/tourism-logos/br/embratur.svg",
       logoExplainer:
-        "Designed by Kiko Farkas in 2005 as Brazil's official \"nation brand\" for international tourism promotion, the mark arranges the green and yellow of the Brazilian flag into a stylised compass rose, read as Brazil offering natural beauty and culture \"in every direction\". Embratur set it aside for a 2019 rebrand (\"Visit and Love Us\") before officially relaunching Marca Brasil in February 2023 alongside a renewed focus on environmental sustainability in the country's international image.",
+        "Embratur's own mark pairs a diamond built from three colour blocks — green, gold and blue, echoing the green field, gold rhombus and blue celestial globe of the Brazilian flag — with the agency's name set in a plain dark-grey wordmark. This is the logo Embratur uses in its own official communications (sourced here from its 2025 Action Plan). Internationally the agency also promotes Brazil under the flag-coloured \"Marca Brasil\" nation-brand and the English-market tagline \"It's Spectacular. It's Brasil\", relaunched in February 2023 alongside a renewed focus on environmental sustainability in the country's global image.",
       sources: [
+        "https://commons.wikimedia.org/wiki/File:Logotipo_da_Embratur.svg",
+        "https://pt.wikipedia.org/wiki/Embratur",
         "https://embratur.com.br/2023/02/14/brasil-reafirma-compromisso-com-sustentabilidade-com-retomada-de-logomarca-internacional/",
-        "https://commons.wikimedia.org/wiki/File:Logo-Embratur-2023-Cinza-1024x157.png",
         "https://www.gov.br/secom/en/latest-news/2024/12/brazil-welcomed-6-6-million-international-tourists-in-2024-its-best-historical-mark",
         "https://www.itij.com/latest/news/brazil-records-record-tourist-numbers",
         "https://embratur.com.br/2023/07/24/spetacular-sustainable-embratur-assume-brasil-com-s-em-campanha-nos-eua/",
       ],
       licenceNote:
-        "Bundled from the greyscale 2023 press file Embratur itself published (embratur.com.br), catalogued on Wikimedia Commons as public domain in the United States; Brazilian government works are not automatically public domain in Brazil, so this remains reproduced here for educational identification of Brazil's official tourism brand rather than as a claim of unrestricted reuse.",
+        "Public domain (PD-textlogo): the mark consists of simple geometric shapes and text below the threshold of copyright originality, per its Wikimedia Commons file page — sourced there from Embratur's own \"Plano de Ação 2025\" (1st revision). It remains a protected trademark of Embratur in commerce.",
     },
   ],
   NR: [
