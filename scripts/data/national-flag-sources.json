@@ -14,9 +14,17 @@
     "  id        stable slug, unique across the whole file (used as the React key and the",
     "            meaning-lookup key).",
     "  category  historical | official | military | maritime | standard | civilstate | indigenous |",
-    "            coatofarms | passport | footballcrest. A `footballcrest` is the crest/logo of the",
-    "            country's national football (soccer) association — a copyrighted mark, so it is",
-    "            bundled non-free via `url` + a `licenceNote`, exactly like the non-free passport covers.",
+    "            coatofarms | passport | footballcrest | olympiccommittee. A `footballcrest` is the",
+    "            crest/logo of the country's national football (soccer) association; an",
+    "            `olympiccommittee` is the country's National Olympic Committee logo — both are",
+    "            copyrighted marks, so they are usually bundled non-free via `url` + a `licenceNote`,",
+    "            exactly like the non-free passport covers, EXCEPT where the NOC's own mark is freely",
+    "            licensed on Commons (Malaysia, Brazil — both reproduce the national flag plus the",
+    "            Olympic rings, a design below the threshold of originality / PD in their source",
+    "            country). A country with NO National Olympic Committee at all (Vatican City — not an",
+    "            IOC member, never fielded a team) carries an `olympiccommittee` entry with",
+    "            `noImageReason` instead of an image: the entity genuinely does not exist, which is",
+    "            itself worth stating rather than silently omitting the country from the sweep.",
     "  name      the flag's own name, as the cited source gives it.",
     "  from/to   years the design was in official use (to: 9999 = still current). Historical",
     "            entries are ordered newest-first by the generator.",
@@ -31,6 +39,11 @@
     "  design    what the image is — shown as the card's sub-label.",
     "  meaning   sourced \"What this flag means\" explainer { description, myths?, sources[] }.",
     "  source    authoritative URL for the name/dates.",
+    "  stats     OPTIONAL array of { label, value } sourced, comparable facts — used by",
+    "            `olympiccommittee` entries for Games-participated / medal / athlete-count rows",
+    "            (Summer vs Winter, so figures are comparable across every country). Every figure",
+    "            comes from an authoritative source (Olympedia / the IOC / the relevant \"X at the",
+    "            Olympics\" reference) cross-checked against a second source — never estimated.",
     "",
     "CURATION RULES",
     "  1. `historical` covers the flags of THIS state (and the predecessor states centred on",
@@ -111,6 +124,47 @@
           "source": "https://en.wikipedia.org/wiki/Andorra_Football_Federation",
           "sha256": "8fc677d48c74d9e51e2804b44fcad3a3d4e115c38e18751486ddf95d30a4e6e5",
           "fetched": "2026-08-18"
+        },
+        {
+          "id": "ad-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Andorran Olympic Committee",
+          "design": "The Andorran Olympic Committee's mark: a flame in Andorra's red, yellow and blue, above the Olympic rings and the word “ANDORRA.”",
+          "source": "https://en.wikipedia.org/wiki/Andorran_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1971"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "13"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "14"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "2"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "7"
+            }
+          ],
+          "file": "ad/ad-olympic-committee.svg",
+          "commons": "Andorran Olympic Committee Logo.svg",
+          "sha256": "ab74cfd185e5412773dc9fcadf126eb191122543aea957ab0323312fc25d4994",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -383,6 +437,47 @@
           "source": "https://en.wikipedia.org/wiki/Afghanistan_national_football_team",
           "sha256": "d5df2da0ebe6bcd2c25c3fc2ea3b4477c3fc1a116ef62a7edb6f8d5465c07756",
           "fetched": "2026-08-18"
+        },
+        {
+          "id": "af-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the National Olympic Committee of the Islamic Republic of Afghanistan",
+          "design": "The National Olympic Committee of Afghanistan's mark: a black-red-green tricolour bearing a red circular emblem, above the five Olympic rings and the word “AFGHANISTAN.”",
+          "source": "https://en.wikipedia.org/wiki/National_Olympic_Committee_of_the_Islamic_Republic_of_Afghanistan",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1920"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "16"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–2 (2 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "6"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "af/af-olympic-committee.svg",
+          "commons": "Afghanistan National Olympic Committee logo.svg",
+          "sha256": "0d86be9e4fc9f7d9c0589290b3ebfa3deb7d345c81ecb1992a1925c41daccf57",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -490,6 +585,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "ag-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Antigua and Barbuda National Olympic Committee",
+          "design": "The Antigua and Barbuda Olympic Association's mark: a gold-bordered shield in the colours of the national flag, bearing a rising sun over black, blue and white bands with a red triangle, above the words “ANTIGUA-BARBUDA.”",
+          "source": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda_National_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1966"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "12"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "5"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "ag/ag-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Antigua_and_Barbuda_Olympic_Association.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Antigua_and_Barbuda_Olympic_Association.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "34aae227087472a72adfa36d781e4d6e55350600981e123e4ce8829f3ba7eedf",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -772,6 +909,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "al-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Albanian National Olympic Committee",
+          "design": "The Albanian National Olympic Committee's mark: a shield bearing Albania's double-headed black eagle, above the Olympic rings, beside the Albanian-language name “KOMITETI OLIMPIK KOMBËTAR SHQIPTAR.”",
+          "source": "https://en.wikipedia.org/wiki/Albanian_National_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1958"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "10"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "6"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–2 (2 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "8"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "4"
+            }
+          ],
+          "file": "al/al-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Olympic_Committee_of_Albania_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Olympic_Committee_of_Albania_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "71c7e9f2a83463fb2a1ae64951f4459c55fdc6c79d350849d83f6cb9173014cf",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -970,6 +1149,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "am-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Armenian Olympic Committee",
+          "design": "The Armenian Olympic Committee's mark: a flowing ribbon in Armenia's red, blue and orange, above the Olympic rings and the word “ARMENIA.”",
+          "source": "https://en.wikipedia.org/wiki/Armenian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1990"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "9"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "2–11–9 (22 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "15"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "5"
+            }
+          ],
+          "file": "am/am-olympic-committee.jpg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Armenian_Olympic_Committee_logo.jpg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Armenian_Olympic_Committee_logo.jpg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "347475a58cf6b4fa605793e9e9fbef1c3e0643b3c91d8ed6953f4c6774d24f42",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -1181,6 +1402,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "ao-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Angolan Olympic Committee",
+          "design": "The Angolan Olympic Committee's mark: Angola's national flag — red and black, charged with a yellow half-cogwheel, machete and star — above the Olympic rings and the word “ANGOLA.”",
+          "source": "https://en.wikipedia.org/wiki/Angolan_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1980"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "11"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "24"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "ao/ao-olympic-committee.svg",
+          "commons": "Angolan Olympic Committee logo.svg",
+          "sha256": "e128ab3d1f4b609b23096afdf49a82681195ba78f4b574cd7ed1caf05a7cadda",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -1421,6 +1683,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "ar-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Argentine Olympic Committee",
+          "design": "The Argentine Olympic Committee's mark: a shield bearing Argentina's sky-blue-and-white flag and golden Sun of May, above the Olympic rings and the Spanish name “COMITÉ OLÍMPICO ARGENTINO.”",
+          "source": "https://en.wikipedia.org/wiki/Argentine_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1923"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "26"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "21"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "22–27–31 (80 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "136"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "8"
+            }
+          ],
+          "file": "ar/ar-olympic-committee.svg",
+          "commons": "Argentine olympic committee logo image.svg",
+          "sha256": "52826f9e4f7916c04e9c8c3c712a5956a19a7cb55bc160317905cbc09e8a8728",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -1620,6 +1923,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "at-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Austrian Olympic Committee",
+          "design": "The Austrian Olympic Committee's mark: Austria's black double-headed eagle, above the Olympic rings and the word “AUSTRIA.”",
+          "source": "https://en.wikipedia.org/wiki/Austrian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1908"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "28"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "25"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "21–34–43 (98 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "76–97–96 (269 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "78"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "115"
+            }
+          ],
+          "file": "at/at-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Austrian_Olympic_Committee_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Austrian_Olympic_Committee_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "1e078a4bedded79b3e03f188e245df7d8914f1031c437a0a3cb2312888b118ba",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -1966,6 +2311,69 @@
               }
             ]
           }
+        },
+        {
+          "id": "au-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Australian Olympic Committee (AOC)",
+          "url": "https://www.olympics.com.au/images/brand/logo-large.svg",
+          "file": "au/au-olympic-committee.svg",
+          "licenceNote": "A copyrighted, trademarked emblem, fetched directly from the Australian Olympic Committee's own website (olympics.com.au/images/brand/logo-large.svg) rather than Wikimedia Commons, which holds no freely-licensed current version (Commons instead carries the Committee's 1953–2015 roundel and a since-superseded 2015 lockup, neither of which matches the mark the AOC's own site currently serves). Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "design": "The Australian Olympic Committee's current mark: a kangaroo and an emu in silhouette flanking the seven-pointed Commonwealth Star, above the five Olympic rings and the word “AUSTRALIA” — all rendered in the Committee's own dark-teal brand colour.",
+          "source": "https://en.wikipedia.org/wiki/Australian_Olympic_Committee",
+          "meaning": {
+            "description": "The kangaroo and emu are two of Australia's best-known native animals and, together, are the supporters of the Commonwealth Coat of Arms; the AOC paired them with the seven-pointed Commonwealth Star from the Australian flag — six points for the original states, the seventh for the territories — in a simplified mark launched in August 2015 ahead of the Rio Games, replacing several near-identical marks the IOC's own branding rules no longer let the Committee run in parallel.",
+            "sources": [
+              {
+                "title": "Australian Olympic Committee launches simplified Olympic logos ahead of Rio Games — Mumbrella",
+                "url": "https://mumbrella.com.au/australian-olympic-committee-launches-simplified-olympic-logos-ahead-of-rio-games-310536"
+              },
+              {
+                "title": "Commonwealth Star — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Commonwealth_Star"
+              }
+            ]
+          },
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1920 (as the Australian Olympic Council)"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "28 of 30 (1896–2024)"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "21 of 25 (1936–2026)"
+            },
+            {
+              "label": "First Summer Games",
+              "value": "1896 Athens"
+            },
+            {
+              "label": "First Winter Games",
+              "value": "1936 Garmisch-Partenkirchen"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "180–189–225 (594 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "9–9–7 (25 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "461"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "51"
+            }
+          ],
+          "sha256": "9cdec222fa2ea1b9b565575193695ee635d69a3a7e96c28c1d6654e35d3c4943",
+          "fetched": "2026-09-16"
         }
       ],
       "omitted": [
@@ -2282,6 +2690,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "az-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the National Olympic Committee of the Republic of Azerbaijan",
+          "design": "The National Olympic Committee of the Republic of Azerbaijan's mark: a shield in Azerbaijan's blue, red and green bearing the national flag's white crescent and star, above the Olympic rings and the word “AZERBAIJAN.”",
+          "source": "https://en.wikipedia.org/wiki/National_Olympic_Committee_of_the_Republic_of_Azerbaijan",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1992"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "9–16–31 (56 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "48"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "2"
+            }
+          ],
+          "file": "az/az-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/National_Olympic_Committee_of_the_Azerbaijani_Republic_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:National_Olympic_Committee_of_the_Azerbaijani_Republic_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "295b296c7741b36c5396fbe153367fb9eec2353a06be127c0c6696fda0eb0c06",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -2425,6 +2875,48 @@
           "source": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_national_football_team",
           "sha256": "e8f2894ed2bc88b91462174ffad3bfe42526d78b1f9806c55612960082444125",
           "fetched": "2026-08-18"
+        },
+        {
+          "id": "ba-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Olympic Committee of Bosnia and Herzegovina",
+          "design": "The Olympic Committee of Bosnia and Herzegovina's mark: a circular badge in the colours of the national flag, above the Olympic rings, beside the words “Olimpijski komitet Bosne i Hercegovine / Olympic Committee of Bosnia and Herzegovina.”",
+          "source": "https://en.wikipedia.org/wiki/Olympic_Committee_of_Bosnia_and_Herzegovina",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1992"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "9"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "9"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "5"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "5"
+            }
+          ],
+          "file": "ba/ba-olympic-committee.jpg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Olympic_Committee_of_Bosnia_and_Herzegovina_logo.jpg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Olympic_Committee_of_Bosnia_and_Herzegovina_logo.jpg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "d3cc75ad5bf88c051aa0502f457da715741d89d5ad168134a006a2f3922fdea3",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -2577,6 +3069,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "bb-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Barbados Olympic Association",
+          "design": "The Barbados Olympic Association's mark: a gold-bordered shield showing a coastal scene beneath a blue sky, above the Olympic rings and the word “BARBADOS.”",
+          "source": "https://en.wikipedia.org/wiki/Barbados_Olympic_Association",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1962"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "14"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–1 (1 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "4"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "bb/bb-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Barbados_Olympic_Association_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Barbados_Olympic_Association_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "9808eb6188520e775453163eb693e0c08908073b8808d3a786e6ca6e08f8ba33",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -2933,6 +3467,47 @@
           "source": "https://en.wikipedia.org/wiki/Bangladesh_national_football_team",
           "sha256": "196f57079b4c0f4a41c3c7d4842ee22c56902adea2d4c1ab0a7c5cf800cbf643",
           "fetched": "2026-08-18"
+        },
+        {
+          "id": "bd-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Bangladesh Olympic Association",
+          "design": "The Bangladesh Olympic Association's mark: a red lotus flower above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Bangladesh_Olympic_Association",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1979"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "11"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "5"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "bd/bd-olympic-committee.svg",
+          "commons": "Bangladesh Olympic Association logo.svg",
+          "sha256": "1afac7d0f85591cf1b5f2f8a9dcf68701293fe9a04852b6b7ac1aed9fb00dd80",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -3113,6 +3688,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "be-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Belgian Olympic and Interfederal Committee",
+          "design": "The Belgian Olympic and Interfederal Committee's mark: an abstract runner figure in Belgium's black, yellow and red, above the Olympic rings and the words “BOIC — BELGIAN OLYMPIC INTERFEDERAL COMMITTEE.”",
+          "source": "https://en.wikipedia.org/wiki/Belgian_Olympic_and_Interfederal_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1906"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "28"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "23"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "47–57–64 (168 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "2–2–5 (9 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "165"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "30"
+            }
+          ],
+          "file": "be/be-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Belgian_Olympic_Committee_logo_(new).png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Belgian_Olympic_Committee_logo_(new).png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "469e14a0908ae7f9572c0acecb1f23801ca30f6b0e710e0a4374362b3b47bc22",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -3241,6 +3858,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "bf-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Burkinabé National Olympic and Sports Committee",
+          "design": "The Burkina Faso National Olympic and Sports Committee's mark: a white horse on a shield in Burkina Faso's red, green and gold, above the words “BURKINA FASO,” beside the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Burkinabé_National_Olympic_and_Sports_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1972"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "11"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–1 (1 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "8"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "bf/bf-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Burkinab%C3%A9_National_Olympic_and_Sports_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Burkinabé_National_Olympic_and_Sports_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "2c4e4deddbb87c5bd3bde7077fe879a5aedec41ba5fd78a1dcc472fc2a423983",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -3390,6 +4049,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "bg-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Bulgarian Olympic Committee",
+          "design": "The Bulgarian Olympic Committee's mark: a golden lion, echoing the lion of Bulgaria's coat of arms, above the Olympic rings and the Cyrillic name “БЪЛГАРСКИ ОЛИМПИЙСКИ КОМИТЕТ.”",
+          "source": "https://en.wikipedia.org/wiki/Bulgarian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1923"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "22"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "22"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "57–89–85 (231 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "1–2–5 (8 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "46"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "20"
+            }
+          ],
+          "file": "bg/bg-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Bulgarian_Olympic_Committee_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Bulgarian_Olympic_Committee_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "9047a34b086a89af684f79d4c5588e2f2bb0bffa8aea7a194f0004d65eb53ce2",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -3541,6 +4242,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "bh-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Bahrain Olympic Committee",
+          "design": "The Bahrain Olympic Committee's mark: a stylised red flame or bird shape, above the Olympic rings and the word “BAHRAIN.”",
+          "source": "https://en.wikipedia.org/wiki/Bahrain_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1978"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "11"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "4–3–1 (8 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "14"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "bh/bh-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Bahrain_Olympic_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Bahrain_Olympic_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "48039993c5d661f3176e9f751c1c191e858a0fdcaed2f7f1f790ba79ebf148e2",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -3671,6 +4414,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "bi-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Burundi National Olympic Committee",
+          "design": "The Burundi National Olympic Committee's mark: a royal drum (karyenda), a Burundian symbol of authority, above the word “BURUNDI” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Burundi_National_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1990"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "1–1–0 (2 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "7"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "bi/bi-olympic-committee.jpg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Burundi_National_Olympic_Committee_logo.jpg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Burundi_National_Olympic_Committee_logo.jpg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "3232f9ee23eaaafff1bbb25740a3e85c808022d7416844375f8e0a26a9e8529c",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -3804,6 +4589,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "bj-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Benin National Olympic and Sports Committee",
+          "design": "The Benin National Olympic and Sports Committee's mark: Benin's national flag — green, with yellow and red horizontal bands — above the Olympic rings and the word “BENIN.”",
+          "source": "https://en.wikipedia.org/wiki/Benin_National_Olympic_and_Sports_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1962"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "13"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "1"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "5"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "1"
+            }
+          ],
+          "file": "bj/bj-olympic-committee.png",
+          "commons": "Benin National Olympic and Sports Committee logo.png",
+          "sha256": "1c808b36f5ce942b2257c2bc0d6fa6185c54525b454cac4ef12daa5a0c040a0b",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -4046,6 +4872,47 @@
           "source": "https://en.wikipedia.org/wiki/Football_Association_of_Brunei_Darussalam",
           "sha256": "d2ce8c294334f8893e01e18ec1ac57d09c980a12795894893de74b9444e2635d",
           "fetched": "2026-08-18"
+        },
+        {
+          "id": "bn-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Brunei Darussalam National Olympic Council",
+          "design": "The Brunei Darussalam National Olympic Council's mark: a circular badge in Brunei's flag colours bearing Jawi (Arabic) script, ringed by the words “BRUNEI DARUSSALAM NATIONAL OLYMPIC COUNCIL.”",
+          "source": "https://en.wikipedia.org/wiki/Brunei_Darussalam_National_Olympic_Council",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1984"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "7"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "3"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "bn/bn-olympic-committee.svg",
+          "commons": "Brunei Darussalam National Olympic Council logo.svg",
+          "sha256": "6ba8ecdc4d7ec775b215fd3e83c8b037f8a34247c6a97282e82905791b2a8209",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -4305,6 +5172,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "bo-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Bolivian Olympic Committee",
+          "design": "The Bolivian Olympic Committee's mark: an Andean condor, Bolivia's national bird, above the Olympic rings and the word “BOLIVIA.”",
+          "source": "https://en.wikipedia.org/wiki/Bolivian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1932"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "16"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "4"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "1"
+            }
+          ],
+          "file": "bo/bo-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Bolivian_Olympic_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Bolivian_Olympic_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "222a112eb776a62edb451b7cc33e4c717ccefa8e5056e2194a53f4e20e1dcbf3",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -4838,6 +5747,64 @@
               }
             ]
           }
+        },
+        {
+          "id": "br-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Brazilian Olympic Committee (COB)",
+          "commons": "Brazilian Olympic Committee logo.svg",
+          "file": "br/br-olympic-committee.svg",
+          "design": "The Brazilian Olympic Committee's mark: the Brazilian flag reproduced as a rectangle — green field, yellow diamond, blue globe crossed by a white band, without the flag's usual ring of stars or “Ordem e Progresso” motto — above the five Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Brazilian_Olympic_Committee",
+          "meaning": {
+            "description": "Green and yellow come from the ruling houses at the time of the flag's 1889 design — green from the House of Braganza (Emperor Pedro I), yellow from the House of Habsburg (Empress Maria Leopoldina) — and the blue globe traces the sky over Rio de Janeiro on the morning of 15 November 1889, the day the Republic was proclaimed. The Committee's own website (cob.org.br) confirms this simplified flag rectangle, without the national flag's usual band of stars or its “Ordem e Progresso” motto, as the current mark it pairs with the Olympic rings and the wordmark “COMITÊ OLÍMPICO DO BRASIL.”",
+            "sources": [
+              {
+                "title": "Flag of Brazil — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+              }
+            ]
+          },
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1914 (activities did not begin in earnest until 1935)"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "24 of 30 (1920–2024, missed 1928)"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "10 (1992–2026)"
+            },
+            {
+              "label": "First Summer Games",
+              "value": "1920 Antwerp"
+            },
+            {
+              "label": "First Winter Games",
+              "value": "1992 Albertville"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "40–49–81 (170 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "1–0–0 (1 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "277"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "14"
+            }
+          ],
+          "sha256": "6ec4e17e84062369eb98ab377dcbcc2bc0b285b4e5890c8db48a0a77f126b358",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -5019,6 +5986,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "bs-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Bahamas Olympic Committee",
+          "design": "The Bahamas Olympic Committee's mark: a shield in the Bahamian flag's aquamarine, gold and black, above the Olympic rings, ringed by the words “BAHAMAS OLYMPIC COMMITTEE.”",
+          "source": "https://en.wikipedia.org/wiki/Bahamas_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1952"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "18"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "8–2–6 (16 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "18"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "bs/bs-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Bahamas_Olympic_Committee_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Bahamas_Olympic_Committee_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "3f016fe6b1469b13c8a497013e5b111265d1164f0f7c166877a179026e6abd86",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -5129,6 +6138,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "bt-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Bhutan Olympic Committee",
+          "design": "The Bhutan Olympic Committee's mark: a golden dragon, echoing the dragon (Druk) of Bhutan's national flag, above the Olympic rings and the words “BHUTAN OLYMPIC COMMITTEE.”",
+          "source": "https://en.wikipedia.org/wiki/Bhutan_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "23 November 1983"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "11"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "3"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "bt/bt-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Bhutan_Olympic_Committee_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Bhutan_Olympic_Committee_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "72b58b2557ca0460a0a7d837157ec48c49c3c4c0a3428ac218a9d4c308f3803e",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -5254,6 +6305,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "bw-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Botswana National Olympic Committee",
+          "design": "The Botswana National Olympic Committee's mark: a shield flanked by two zebras — Botswana's national animal — above the Olympic rings and the word “BOTSWANA.”",
+          "source": "https://en.wikipedia.org/wiki/Botswana_National_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1978"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "12"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "1–2–1 (4 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "12"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "bw/bw-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Botswana_National_Olympic_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Botswana_National_Olympic_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "d6bad5c75f1401df7fef49134e2942e9d750a3355219646f8fd22e3f464e73e8",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -5524,6 +6617,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "by-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Belarus Olympic Committee",
+          "design": "The Belarus Olympic Committee's mark: a wreath encircling Belarus's national flag, above the Olympic rings and the word “BELARUS.”",
+          "source": "https://en.wikipedia.org/wiki/Belarus_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1991"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "7"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "13–30–42 (85 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "8–7–5 (20 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "Did not compete"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "by/by-olympic-committee.jpg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Belarus_NOC_logo.jpg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Belarus_NOC_logo.jpg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "dd0668df3b640b9c9f4bf130ce6609edc48057859fffe8601cb8263d9a084227",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -5635,6 +6770,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "bz-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Belize Olympic and Commonwealth Games Association",
+          "design": "The Belize Olympic and Commonwealth Games Association's mark: a shield bearing crossed tools, a ship and a landscape scene, above the Olympic rings and the word “BELIZE.”",
+          "source": "https://en.wikipedia.org/wiki/Belize_Olympic_and_Commonwealth_Games_Association",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1967{{sfn"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "14"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "1"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "bz/bz-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Belize_Olympic_%26_Commonwealth_Games_Association_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Belize_Olympic_&_Commonwealth_Games_Association_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "19dd0081b6dda4f0386fb0ea4b8cc4709c9732417cc939a10aa4929b30421d59",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -6007,6 +7184,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "ca-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Canadian Olympic Committee",
+          "design": "The Canadian Olympic Committee's mark: a red maple leaf on a white rounded shield, above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Canadian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1904"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "27"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "25"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "79–117–155 (351 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "82–79–85 (246 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "315"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "205"
+            }
+          ],
+          "file": "ca/ca-olympic-committee.svg",
+          "commons": "Canadian Olympic Committee logo.svg",
+          "sha256": "396f8c79e25bccf595538db67704a3aa2a13a060e227bd6fc06f546a1c1dcb9e",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -6251,6 +7469,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "cd-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Congolese Olympic Committee",
+          "design": "The Congolese Olympic Committee's (Comité Olympique Congolais) mark: the flag of the Democratic Republic of the Congo — blue with a diagonal red-edged yellow stripe and a yellow star — above the words “Comité Olympique Congolais” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Congolese_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1968"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "12"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "6"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "cd/cd-olympic-committee.png",
+          "commons": "Logo - Comité Olympique Congolais.png",
+          "sha256": "f2406c225140702d6502711dd8de94d9934118fc160a0a4045cb0f481f9150e6",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -6358,6 +7617,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "cf-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Central African National Olympic and Sports Committee",
+          "design": "The Central African National Olympic and Sports Committee's mark: the Central African Republic's national flag — blue, white, green and yellow horizontal bands crossed by a red vertical stripe, with a yellow star — above the word “CENTRAFRIQUE” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Central_African_National_Olympic_and_Sports_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1965"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "12"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "4"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "cf/cf-olympic-committee.png",
+          "commons": "Central African National Olympic and Sports Committee logo.png",
+          "sha256": "fb063703314029641b4f304808cf9b0fe890f35cc63b5421d7dbedfd6da23d70",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -6487,6 +7787,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "cg-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Congolese National Olympic and Sports Committee",
+          "design": "The Congolese National Olympic and Sports Committee's mark: a silhouette map of the Republic of the Congo in its national flag's green, yellow and red, above the word “CONGO” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Congolese_National_Olympic_and_Sports_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1964"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "14"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "4"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "cg/cg-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Congolese_National_Olympic_and_Sports_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Congolese_National_Olympic_and_Sports_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "469d9b576415287334fb8f6b264fa3bf6d147c088a5f37255b6e11cd4254e5e1",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -7079,6 +8421,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "cl-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Chilean Olympic Committee",
+          "design": "The Chilean Olympic Committee's mark: a circular badge showing Chile's national flag — a white star on blue over white and red bands — ringed by the words “COMITÉ OLÍMPICO CHILE,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Chilean_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1934"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "25"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "19"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "3–8–4 (15 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "48"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "4"
+            }
+          ],
+          "file": "cl/cl-olympic-committee.svg",
+          "commons": "Comité Olímpico de Chile (2014).svg",
+          "sha256": "5ae65a47353a90c6c8c033aa12bb7ac5a9d6052dbf0f19c77c5268f1fd0c4b31",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -7280,6 +8663,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "cm-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Cameroon Olympic and Sports Committee",
+          "design": "The Cameroon Olympic and Sports Committee's mark: a lion, echoing the Cameroon national football team's “Indomitable Lions” nickname, over an arc of green, red and yellow — Cameroon's flag colours — above the word “CAMEROON” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Cameroon_Olympic_and_Sports_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1963"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "16"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "1"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "3–1–2 (6 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "6"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "cm/cm-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Cameroon_Olympic_and_Sports_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Cameroon_Olympic_and_Sports_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "a648bef5a8387dd267796e71d2b2b11f531ca8ea35becd392291157090cd4ad4",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -7552,6 +8977,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "cn-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Chinese Olympic Committee",
+          "design": "The Chinese Olympic Committee's mark: China's national flag — a large gold star with four smaller gold stars on a red field — above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Chinese_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1949"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "12"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "13"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "303–226–198 (727 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "27–36–29 (92 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "388"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "125"
+            }
+          ],
+          "file": "cn/cn-olympic-committee.svg",
+          "commons": "Chinese Olympic Committee logo.svg",
+          "sha256": "ee0f8ffb720a8d35f27533699191d03d3b5f698df69e110452aea7f55a42c302",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -7848,6 +9314,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "co-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Colombian Olympic Committee",
+          "design": "The Colombian Olympic Committee's mark: a wave in Colombia's yellow, blue and red, above the words “COLOMBIA COMITÉ OLÍMPICO” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Colombian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1948"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "21"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "4"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "5–16–17 (38 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "87"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "1"
+            }
+          ],
+          "file": "co/co-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Colombian_Olympic_Committee_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Colombian_Olympic_Committee_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "a6984a1abbcfd5bcacd9293ab54b65572119f4d891bd7abbbd5685340916b6a0",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -8040,6 +9548,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "cr-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Olympic Committee of Costa Rica",
+          "design": "The Costa Rica Olympic Committee's mark: a wave in Costa Rica's blue, white and red, above the words “COSTA RICA” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Olympic_Committee_of_Costa_Rica",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1953"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "17"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "6"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "1–1–2 (4 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "6"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "cr/cr-olympic-committee.svg",
+          "commons": "Costa Rica Olympic Committee logo.svg",
+          "sha256": "25505d18957f5abdfdb8a001fb9d3a3b0df7cdc3286ff5f3fafa8ddb46b68117",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -8255,6 +9804,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "cu-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Cuban Olympic Committee",
+          "design": "The Cuban Olympic Committee's mark: a shield in Cuba's red, white and blue bearing the word “CUBA,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Cuban_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1926"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "22"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "86–70–88 (244 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "61"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "cu/cu-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Cuban_Olympic_Committee.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Cuban_Olympic_Committee.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "26a3c08eaa71d3267c5931d77a49248ec521a8c75a47dd5f7942e36fee725e2c",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -8384,6 +9975,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "cv-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Cape Verdean Olympic Committee",
+          "design": "The Cabo Verdean Olympic Committee's mark: a ring of ten gold stars — matching the ten stars of Cabo Verde's national flag, one for each main island — around a red flame, above the words “Comité Olímpico Cabo-verdiano” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Cape_Verdean_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1989"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–1 (1 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "7"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "cv/cv-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Cabo_Verdean_Olympic_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Cabo_Verdean_Olympic_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "90ae21b840e37ef6e8cadecf12bf5e39007ec20081f556adae69e52dac7df314",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -8647,6 +10280,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "cy-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Cyprus Olympic Committee",
+          "design": "The Cyprus Olympic Committee's mark: a gold silhouette of the island of Cyprus within a wreath, above the word “CYPRUS” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Cyprus_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1974"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "12"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "13"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–2–0 (2 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "16"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "2"
+            }
+          ],
+          "file": "cy/cy-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Cyprus_Olympic_Committee_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Cyprus_Olympic_Committee_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "77ba5138628ec654bf545203f6b9811df393dbe350ac87e5cb594f7784cd6c24",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -8797,6 +10472,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "cz-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Czech Olympic Committee",
+          "design": "The Czech Olympic Committee's mark: a flag-shaped pennant in the Czech national colours beside a leaf motif, above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Czech_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1899"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "9"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "22–22–28 (72 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "12–13–14 (39 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "111"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "115"
+            }
+          ],
+          "file": "cz/cz-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Czech_Olympic_Committee_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Czech_Olympic_Committee_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "e83cd4ad61c240332b7d8432e14c668c38e1c35aec5185c4ff01c265a7a818b7",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -9016,6 +10733,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "de-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the German Olympic Sports Confederation",
+          "design": "The German Olympic Sports Confederation's (Deutscher Olympischer Sportbund, DOSB) mark: interlocking letters “DOSB” in Germany's black, red and gold, above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/German_Olympic_Sports_Confederation",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1895"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "18"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "14"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "214–219–254 (687 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "113–107–73 (293 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "428"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "185"
+            }
+          ],
+          "file": "de/de-olympic-committee.svg",
+          "commons": "Logo Deutscher Olympischer Sportbund seit 2014.svg",
+          "sha256": "e93be03f3bc167f2166b7b0efde84c5f135c9580ebf0989ea3f09be70a4c726e",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -9118,6 +10876,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "dj-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Djibouti National Olympic and Sports Committee",
+          "design": "The Djibouti National Olympic and Sports Committee's mark: Djibouti's national flag — light blue and green triangular fields with a red star — above the words “COMITÉ NATIONAL OLYMPIQUE ET SPORTIF DJIBOUTIEN” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Djibouti_National_Olympic_and_Sports_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1984"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "10"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–1 (1 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "7"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "dj/dj-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Djibouti_National_Olympic_and_Sports_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Djibouti_National_Olympic_and_Sports_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "d6977782c528aee7ab0ad5998f43b695b1825ed1f08c716706f1ecedf98b81eb",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -9291,6 +11091,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "dk-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the National Olympic Committee and Sports Confederation of Denmark",
+          "design": "The National Olympic Committee and Sports Confederation of Denmark's mark: a red flame shape above the letters “DIF” (Danmarks Idræts-Forbund) and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/National_Olympic_Committee_and_Sports_Confederation_of_Denmark",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "14 February 1896"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "29"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "16"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "50–80–84 (214 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–2–0 (2 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "123"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "39"
+            }
+          ],
+          "file": "dk/dk-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/National_Olympic_Committee_and_Sports_Confederation_of_Denmark_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:National_Olympic_Committee_and_Sports_Confederation_of_Denmark_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "43830689eca8f23f7efea7fb8404c9015debcc9aa3f9a96a27db4dee2e2aa66c",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -9393,6 +11235,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "dm-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Dominica Olympic Committee",
+          "design": "The Dominica Olympic Committee's mark: two Sisserou parrots — Dominica's national bird, also shown on its flag — above the words “DOMINICA OLYMPIC COMMITTEE” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Dominica_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1987"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "1"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "1–0–0 (1 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "4"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "dm/dm-olympic-committee.jpg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Dominica_Olympic_Committee_logo.jpg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Dominica_Olympic_Committee_logo.jpg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "1a0fbaaa70836d1fcfa1853f4c76a55ffe4be174e94ffee407210e5635f180e6",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -9499,6 +11383,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "do-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Dominican Republic Olympic Committee",
+          "design": "The Dominican Republic Olympic Committee's mark: an abstract swoosh in the Dominican flag's blue, white and red, above the words “COMITÉ OLÍMPICO DOMINICANO” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Dominican_Republic_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1946"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "16"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "4–5–6 (15 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "58"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "do/do-olympic-committee.jpg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Dominican_Republic_Olympic_Committee_logo.jpg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Dominican_Republic_Olympic_Committee_logo.jpg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "ea9a7dc1165d6a9afd778dbfefcaf4150fe4b44ad4129e1ede89771ba05da452",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -9701,6 +11627,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "dz-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Algerian Olympic Committee",
+          "design": "The Algerian Olympic Committee's mark: a circular badge showing a dove releasing an Algerian star-and-crescent flag, ringed by the French name “COMITÉ OLYMPIQUE ET SPORTIF ALGÉRIEN.”",
+          "source": "https://en.wikipedia.org/wiki/Algerian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1963"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "15"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "3"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "7–4–9 (20 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "45"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "dz/dz-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Algerian_OC_(logo).png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Algerian_OC_(logo).png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "99a67e045e925ba747e7012e4f56095ddfc30140d0d8b30d864608be293e7844",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -9943,6 +11911,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "ec-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Ecuadorian Olympic Committee",
+          "design": "The Ecuadorian Olympic Committee's mark: an abstract bird/wave shape in Ecuador's yellow, blue and red, above the words “COMITÉ OLÍMPICO ECUATORIANO” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Ecuadorian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1948"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "16"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "3"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "4–4–2 (10 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "40"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "1"
+            }
+          ],
+          "file": "ec/ec-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Ecuadorian_Olympic_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Ecuadorian_Olympic_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "9ba238f11ae6e0ace1e89ba7ed8d8faada6d17f8a9ad75ffddbc07d36f9c1804",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -10250,6 +12260,48 @@
           "source": "https://en.wikipedia.org/wiki/Estonian_Football_Association",
           "sha256": "fda2120ea7461264ad2e76283919dcaf77c6325f89eb529167a6d16689fa87a6",
           "fetched": "2026-08-18"
+        },
+        {
+          "id": "ee-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Estonian Olympic Committee",
+          "design": "The Estonian Olympic Committee's mark: a blue flame, above the Olympic rings and the Estonian name “EESTI OLÜMPIAKOMITEE.”",
+          "source": "https://en.wikipedia.org/wiki/Estonian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "8 December 1923"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "14"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "12"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "10–9–17 (36 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "4–3–2 (9 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "24"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "31"
+            }
+          ],
+          "file": "ee/ee-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Estonian_Olympic_Committee_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Estonian_Olympic_Committee_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "133bdea2403d29abafe5e602fe7ceffa18c7d84c64ca55184597d88001cf9f90",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -10565,6 +12617,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "eg-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Egyptian Olympic Committee",
+          "design": "The Egyptian Olympic Committee's mark: a shield in Egypt's red, white and black bearing a golden eagle, above the word “EGYPTE” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Egyptian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1910 in the Khedivate of Egypt"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "24"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "1"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "9–12–20 (41 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "148"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "eg/eg-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Egyptian_Olympic_Committee_Logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Egyptian_Olympic_Committee_Logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "8a7eba94eaaf8a66ec77fd29cd2519ed74c64bb8766dabdcefc11545455ddb47",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -10696,6 +12790,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "er-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Eritrean National Olympic Committee",
+          "design": "The Eritrean National Olympic Committee's mark: a shield in Eritrea's red, green and blue, above the word “ERITREA,” the Olympic rings and the letters “ENOC.”",
+          "source": "https://en.wikipedia.org/wiki/Eritrean_National_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1996"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "7"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "3"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–1 (1 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "11"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "1"
+            }
+          ],
+          "file": "er/er-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Eritrean_National_Olympic_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Eritrean_National_Olympic_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "581d8ec55a16cb04d983181490c4bec25c0995fb6ff618f614f3de62c2ce2701",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -11147,6 +13283,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "et-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Ethiopian Olympic Committee",
+          "design": "The Ethiopian Olympic Committee's mark: Ethiopia's national flag — green, yellow and red horizontal bands with a blue disc and gold star — above the Olympic rings and the word “ETHIOPIA.”",
+          "source": "https://en.wikipedia.org/wiki/Ethiopian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1948"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "15"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "2"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "24–16–22 (62 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "34"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "et/et-olympic-committee.png",
+          "commons": "Ethiopian Olympic Committee logo.png",
+          "sha256": "1af3137d90aedb421fb7358e37d2a53bd52a73516138400b7a487da9ba26b6d9",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -11410,6 +13587,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "fi-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Finnish Olympic Committee",
+          "design": "The Finnish Olympic Committee's mark: Finland's blue Nordic cross on white, above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Finnish_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1907"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "27"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "25"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "101–85–119 (305 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "45–66–70 (181 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "56"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "103"
+            }
+          ],
+          "file": "fi/fi-olympic-committee.svg",
+          "commons": "Finnish Olympic Committee 2017 logo.svg",
+          "sha256": "1d601c7227f2fb86ebc479dd1a6d7e62f032b19992120d84165290f06f7e89ea",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -11508,6 +13726,48 @@
           "source": "https://en.wikipedia.org/wiki/Fiji_national_football_team",
           "sha256": "96a2bdc3fc43a5ff6b3b97ebc8bff40ce5f8d005f2eabfd70ee3eeb4a82a480b",
           "fetched": "2026-08-18"
+        },
+        {
+          "id": "fj-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Fiji Association of Sports and National Olympic Committee",
+          "design": "The Fiji Association of Sports and National Olympic Committee's mark: a sailing outrigger canoe, above the words “FIJI ASSOCIATION OF SPORTS & NATIONAL OLYMPIC COMMITTEE” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Fiji_Association_of_Sports_and_National_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1949"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "16"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "3"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "2–1–1 (4 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "34"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "fj/fj-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Fiji_Association_of_Sports_and_National_Olympic_Committee_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Fiji_Association_of_Sports_and_National_Olympic_Committee_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "74edad038ae739dbc5b8e2da23d6b16cbad7bb3fbc52312edd5dfc58ba8818ef",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -11876,6 +14136,48 @@
           "sha256": "9842f93b511b9f6e076bd5c0ce31b96799a730b4e9a04a57144c2b4b4daea21d",
           "fetched": "2026-08-19",
           "url": "https://en.wikipedia.org/wiki/Special:FilePath/France_national_football_team_seal.svg"
+        },
+        {
+          "id": "fr-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the French National Olympic and Sports Committee",
+          "design": "The French National Olympic and Sports Committee's mark: a Gallic rooster — a traditional national emblem of France — within a circular badge reading “COMITÉ NATIONAL OLYMPIQUE ET SPORTIF FRANÇAIS,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/French_National_Olympic_and_Sports_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1894"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "29"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "25"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "243–279–302 (824 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "50–50–61 (161 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "573"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "160"
+            }
+          ],
+          "file": "fr/fr-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/French_National_Olympic_and_Sports_Committee.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:French_National_Olympic_and_Sports_Committee.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "2ae19eeed7604f6251af3de1deb7c3646a2b29d6acd38a95ec19c5ea4cbec476",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -11978,6 +14280,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "ga-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Gabonese Olympic Committee",
+          "design": "The Gabonese Olympic and Commonwealth Committee's mark: Gabon's national flag — green, yellow and blue horizontal bands — above the word “GABON” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Gabonese_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1968"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "12"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–1–0 (1 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "5"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "ga/ga-olympic-committee.svg",
+          "commons": "Gabonese Olympic Committee logo.svg",
+          "sha256": "261932900fd0324d7c69f1e8f90f878ed9a166be2f22f9b67cdeb0b931fda783",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -12558,6 +14901,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "gd-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Grenada Olympic Committee",
+          "design": "The Grenada Olympic Committee's mark: a circular badge showing green leaves around a nutmeg — Grenada's “Isle of Spice” emblem — ringed by the words “Grenada Olympic Committee,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Grenada_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1984<ref name=\"ioc.com\">{{cite web"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "11"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "1–1–3 (5 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "6"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "gd/gd-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Grenada_Olympic_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Grenada_Olympic_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "e699011c54ab248eba6d9201e007ec50db7d789704e790973128e3de056583f6",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -12807,6 +15192,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "ge-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Georgian National Olympic Committee",
+          "design": "The Georgian National Olympic Committee's mark: a golden sun-like spiral emblem above Georgian-script and English text reading “GEORGIA,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Georgian_National_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1989"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "9"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "13–15–19 (47 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–1–0 (1 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "28"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "8"
+            }
+          ],
+          "file": "ge/ge-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Georgian_National_Olympic_Committee_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Georgian_National_Olympic_Committee_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "5bd8411b9ef6d5d3ac61a9c6fe69cf6cbed0175c00f57426488059ca827bc9f5",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -13171,6 +15598,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "gh-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Ghana Olympic Committee",
+          "design": "The Ghana Olympic Committee's mark: Ghana's national flag — red, yellow and green horizontal bands with a black star — above the words “GHANA OLYMPIC COMMITTEE” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Ghana_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1950"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "16"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "3"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–1–4 (5 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "7"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "gh/gh-olympic-committee.png",
+          "commons": "Ghana Olympic Committee logo.png",
+          "sha256": "daa59cd0552d666cb91cdf629658d233c0fdd6c4a6952a5c2365c79ae02ba0d7",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -13373,6 +15841,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "gm-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the The Gambia National Olympic Committee",
+          "design": "The Gambia National Olympic Committee's mark: a circular badge in the Gambian flag's red, blue and green, ringed by the words “THE GAMBIA NATIONAL OLYMPIC COMMITTEE,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/The_Gambia_National_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1972"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "11"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "7"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "gm/gm-olympic-committee.jpg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/The_Gambia_National_Olympic_Committee_logo.jpg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:The_Gambia_National_Olympic_Committee_logo.jpg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "3ed474f2aedbf0accacd5d344b9eb510a2770bea4975a740ac6e3b193453ef42",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -13480,6 +15990,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "gn-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Guinean National Olympic and Sports Committee",
+          "design": "The Guinean National Olympic and Sports Committee's mark: a shield in Guinea's red, yellow and green bearing the letters “CNOSG,” above the word “GUINEE” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Guinean_National_Olympic_and_Sports_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1964"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "13"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "24"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "gn/gn-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Guinean_National_Olympic_and_Sports_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Guinean_National_Olympic_and_Sports_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "3acfa270ed954dcd7d98702879b7d7312807b405078f51ac74e7ed7e460547a7",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -13587,6 +16139,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "gq-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Olympic Committee of Equatorial Guinea",
+          "design": "The Olympic Committee of Equatorial Guinea's mark: Equatorial Guinea's national flag — green, white and red horizontal bands with a blue triangle and the national coat of arms — ringed by the words “COMITÉ OLÍMPICO DE GUINEA ECUATORIAL” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Olympic_Committee_of_Equatorial_Guinea",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1980"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "11"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "3"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "gq/gq-olympic-committee.jpg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Olympic_Committee_of_Equatorial_Guinea_logo.jpg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Olympic_Committee_of_Equatorial_Guinea_logo.jpg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "44418208f7ae1cfefcf183da88108fd1248036639d50af1a0d4f102c06dd33d6",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -13766,6 +16360,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "gr-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Hellenic Olympic Committee",
+          "design": "The Hellenic Olympic Committee's mark: a shield bearing a white Greek cross on blue, above the Olympic rings and the Greek name “ΕΛΛΑΣ” (Greece).",
+          "source": "https://en.wikipedia.org/wiki/Hellenic_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "3 February 1894"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "30"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "21"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "36–46–47 (129 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "100"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "5"
+            }
+          ],
+          "file": "gr/gr-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Hellenic_Olympic_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Hellenic_Olympic_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "19fea8c34ef90e2b36052aecccd9f92606fd3d6ea6218e98cc462a36cc837d32",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -13931,6 +16567,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "gt-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Guatemalan Olympic Committee",
+          "design": "The Guatemalan Olympic Committee's mark: a shield in Guatemala's sky-blue and white, above the word “GUATEMALA” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Guatemalan_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1947"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "15"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "1"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "1–1–1 (3 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "16"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "gt/gt-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Guatemalan_Olympic_Committee_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Guatemalan_Olympic_Committee_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "8e353fb40a0b0c1b65dbc2a1e602b052ea9d564b31abe246918ff95077f0073f",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -14177,6 +16855,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "gw-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Guinea-Bissau Olympic Committee",
+          "design": "The Guinea-Bissau Olympic Committee's mark: a circular badge showing Guinea-Bissau's national flag and star, ringed by the words “COMITÉ OLÍMPICO GUINÉ-BISSAU,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Guinea-Bissau_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1995"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "1"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "6"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "1"
+            }
+          ],
+          "file": "gw/gw-olympic-committee.png",
+          "commons": "Guinea-Bissau Olympic Committee logo.png",
+          "sha256": "252c2201023c6da1b4417b2b1a1219f41a9377184cad5df33058437585a6efde",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -14355,6 +17074,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "gy-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Guyana Olympic Association",
+          "design": "The Guyana Olympic Association's mark: a shield bearing a map of Guyana in the national flag's green, yellow, red, black and white, above the words “GUYANA OLYMPIC ASSOCIATION” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Guyana_Olympic_Association",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1935"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "19"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–1 (1 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "5"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "gy/gy-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Guyana_Olympic_Association_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Guyana_Olympic_Association_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "e4c500f092f40f17fe79dd67886f003dddb9cfa58275078e426cadcf6b5bd0c7",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -14622,6 +17383,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "hn-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Honduran Olympic Committee",
+          "design": "The Honduran Olympic Committee's mark: a circular badge showing Honduras's national flag — blue-white-blue bands with five stars — ringed by the words “COMITÉ OLÍMPICO HONDUREÑO,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Honduran_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1956"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "13"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "1"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "4"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "hn/hn-olympic-committee.png",
+          "commons": "Honduran Olympic Committee logo.png",
+          "sha256": "85e613de07d9037dbe1c6a3f052d64f05d8fc11523f3c04132ae1b02f6588c65",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -14913,6 +17715,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "hr-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Croatian Olympic Committee",
+          "design": "The Croatian Olympic Committee's mark: the red-and-white checkerboard (šahovnica) from Croatia's coat of arms, framed by the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Croatian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "10 September 1991"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "9"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "10"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "16–15–18 (49 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "4–6–1 (11 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "73"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "14"
+            }
+          ],
+          "file": "hr/hr-olympic-committee.svg",
+          "commons": "Croatian Olympic Committee logo.svg",
+          "sha256": "588e371d3a0583bbb4cfc7a73498b3c320f629d197e788d2fca7c69d3ce849d7",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -15043,6 +17886,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "ht-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Haitian Olympic Committee",
+          "design": "The Haitian Olympic Committee's mark: a shield in Haiti's blue and red bearing the word “HAITI,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Haitian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1914"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "17"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "2"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–1–1 (2 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "7"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "2"
+            }
+          ],
+          "file": "ht/ht-olympic-committee.png",
+          "commons": "Logo - Comité olympique haïtien.png",
+          "sha256": "43564e770518a4d2f150728d18ee960876808281078d13ef2ae5f5e148d9ca8e",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -15269,6 +18153,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "hu-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Hungarian Olympic Committee",
+          "design": "The Hungarian Olympic Committee's mark: Hungary's coat of arms — a crowned shield with red-white stripes and a patriarchal cross — above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Hungarian_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "19 December 1895"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "28"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "25"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "187–161–182 (530 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "2–2–6 (10 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "170"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "16"
+            }
+          ],
+          "file": "hu/hu-olympic-committee.svg",
+          "commons": "Hungarian Olympic Committee logo.svg",
+          "sha256": "57358ece4c343f1f33e791a95e0862efc1eb34f4139ed3ed6c1f9e47e9b0ae78",
+          "fetched": "2026-09-16"
         }
       ]
     },
@@ -18623,6 +21548,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "kh-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the National Olympic Committee of Cambodia",
+          "design": "The National Olympic Committee of Cambodia's mark: the silhouette of the Angkor Wat temple — also shown on Cambodia's national flag — above the Olympic rings and the words “NATIONAL OLYMPIC COMMITTEE OF CAMBODIA.”",
+          "source": "https://en.wikipedia.org/wiki/National_Olympic_Committee_of_Cambodia",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1983"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "11"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "3"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "kh/kh-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/National_Olympic_Committee_of_Cambodia_logo.svg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:National_Olympic_Committee_of_Cambodia_logo.svg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "9b7427355ecffaf25875ea94740017cbb49f89decaaa60ffcb9d1c0c2f8cb895",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -18829,6 +21796,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "km-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Olympic and Sports Committee of the Comoros",
+          "design": "The Olympic and Sports Committee of the Comoros' mark: a green circular badge with a plant motif and four stars — one for each main island — above the word “COMORES” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Olympic_and_Sports_Committee_of_the_Comoros",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1993"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "4"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "km/km-olympic-committee.jpg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Olympic_and_Sports_Committee_of_the_Comoros_logo.jpg",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Olympic_and_Sports_Committee_of_the_Comoros_logo.jpg) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "387c46fb6a3f3c87783eaee1fffb77c1db7ccd3f192c2ccf859cb3bdeefcd0d7",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -25047,6 +28056,64 @@
               }
             ]
           }
+        },
+        {
+          "id": "my-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Olympic Council of Malaysia (OCM)",
+          "commons": "Olympic Council of Malaysia logo.svg",
+          "file": "my/my-olympic-committee.svg",
+          "design": "The Olympic Council of Malaysia's mark: Malaysia's national flag, the Jalur Gemilang, rendered as a waving banner above the five Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Olympic_Council_of_Malaysia",
+          "meaning": {
+            "description": "The mark reproduces Malaysia's national flag in full: fourteen alternating red-and-white stripes for the equal status of the thirteen states and the federal government, and the dark-blue canton's crescent and fourteen-point star for Islam as the federation's official religion and that same federal unity. Confirmed as the Council's current mark on its own website (olympics.com.my), which pairs it with the wordmark “OLYMPIC COUNCIL OF MALAYSIA.”",
+            "sources": [
+              {
+                "title": "Flag of Malaysia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
+              }
+            ]
+          },
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1953 (as the Federation of Malaya Olympic Council; recognised by the IOC in 1954)"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "17 (1956–2024, excluding the 1980 boycott)"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "3 (2018, 2022, 2026)"
+            },
+            {
+              "label": "First Summer Games",
+              "value": "1956 Melbourne (as Malaya)"
+            },
+            {
+              "label": "First Winter Games",
+              "value": "2018 Pyeongchang"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–8–7 (15 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "26"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "1"
+            }
+          ],
+          "sha256": "97aacc72ade09e70bea2ce9d5495a1b5f95415ed1bb889399540475018a143f0",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -26774,6 +29841,69 @@
               }
             ]
           }
+        },
+        {
+          "id": "nr-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Nauru Olympic Committee (NOC)",
+          "url": "https://cdn.prod.website-files.com/5eb4a50ae668403b239720c9/5ee85811de1b9757baf5b0ec_NOC%20Logo%20-%20NAURU.jpg",
+          "file": "nr/nr-olympic-committee.jpg",
+          "licenceNote": "A copyrighted emblem, fetched from the Oceania National Olympic Committees' own membership directory (oceanianoc.org/membership/nauru), which hosts the identical mark the English Wikipedia carries as non-free/fair-use at a lower resolution (no freely-licensed version exists on Wikimedia Commons). Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "design": "The Nauru Olympic Committee's mark: a multi-pointed star beside the word “NAURU”, over orange-and-blue wave bands and the words “OLYMPIC COMMITTEE”, beside the five Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Nauru_Olympic_Committee",
+          "meaning": {
+            "description": "The star and the blue tones echo Nauru's own national flag and coat of arms, where a twelve-pointed star stands for the island's twelve original tribes and blue represents the surrounding Pacific Ocean that isolates it.",
+            "sources": [
+              {
+                "title": "Coat of arms of Nauru — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru"
+              },
+              {
+                "title": "Flag of Nauru — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Nauru"
+              }
+            ]
+          },
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1991 (recognised by the IOC in 1994)"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "8 (1996–2024)"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0 (never competed)"
+            },
+            {
+              "label": "First Summer Games",
+              "value": "1996 Atlanta"
+            },
+            {
+              "label": "First Winter Games",
+              "value": "Never competed"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "1"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "sha256": "5db6be20749a416f9e719486459f36073a384fd54d909ae9b2f35868e1fd28d7",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -33412,6 +36542,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "sv-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the El Salvador Olympic Committee",
+          "design": "The Olympic Committee of El Salvador's mark: a stylised blue-and-white flag shape, above the words “COMITÉ OLÍMPICO EL SALVADOR” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/El_Salvador_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1925"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "13"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "8"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "sv/sv-olympic-committee.png",
+          "commons": "Logo - Comité Olímpico de El Salvador.png",
+          "sha256": "31e6bc633782e00b7aca54e1dd282f3bf4f245496b716a9f3e9ecd49a5f3f41c",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -33699,6 +36870,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "sz-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Eswatini Olympic and Commonwealth Games Association",
+          "design": "The Eswatini Olympic and Commonwealth Games Association's mark: an oval badge bearing crossed traditional Eswatini shields and spears, above the Olympic rings and the word “ESWATINI.”",
+          "source": "https://en.wikipedia.org/wiki/Eswatini_Olympic_and_Commonwealth_Games_Association",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1968"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "12"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "1"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "3"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "sz/sz-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Eswatini_Olympic_and_Commonwealth_Games_Association_logo.png",
+          "licenceNote": "A copyrighted emblem held on the English Wikipedia as a local non-free file (https://en.wikipedia.org/wiki/File:Eswatini_Olympic_and_Commonwealth_Games_Association_logo.png) rather than on Wikimedia Commons; no freely-licensed version exists. Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "sha256": "6bf4b791e1b3c4a4d7272faef29283d3847c4d701533e8f422150301b162254b",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -33855,6 +37068,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "td-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Chadian Olympic and Sports Committee",
+          "design": "The Chadian Olympic and Sports Committee's mark: a circular badge showing Chad's blue-yellow-red national flag, ringed by the words “COMITÉ OLYMPIQUE ET SPORTIF TCHADIEN,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Chadian_Olympic_and_Sports_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1963"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "14"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "3"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "td/td-olympic-committee.png",
+          "commons": "Chadian Olympic and Sports Committee logo.png",
+          "sha256": "aebc8e99f631513a970664cb0fecb3656d7cae4e72cd386aa4acc6f97b7b9574",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -38090,6 +41344,14 @@
               }
             ]
           }
+        },
+        {
+          "id": "va-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "No National Olympic Committee",
+          "noImageReason": "Vatican City has no logo to show because it has no National Olympic Committee — it is the only wholly independent state never recognised by the IOC. Recognition requires national federations affiliated with at least five Olympic sports; as of 2024 Vatican City held only two (cycling, joining the UCI in 2021, and taekwondo, joining World Taekwondo the same year). Vatican athletes have never competed at the Olympics under their own flag; the Holy See sent observer delegations to the 2016 Rio and 2018 Pyeongchang Games.",
+          "design": "There is no Vatican City Olympic Committee logo — see the reason above.",
+          "source": "https://en.wikipedia.org/wiki/Vatican_City_at_the_Olympics"
         }
       ]
     },

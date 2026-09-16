@@ -52,6 +52,8 @@ export function symbolNoun(category: NationalFlagCategory): string {
       return "Passport";
     case "footballcrest":
       return "Football association";
+    case "olympiccommittee":
+      return "National Olympic Committee";
     default:
       return "Flag";
   }
@@ -66,6 +68,8 @@ export function meaningLabel(category: NationalFlagCategory): string {
       return "What this passport shows";
     case "footballcrest":
       return "What this crest represents";
+    case "olympiccommittee":
+      return "What this logo represents";
     default:
       return "What this flag means";
   }

@@ -60,6 +60,7 @@ const CATEGORIES = new Set([
   "coatofarms",
   "passport",
   "footballcrest",
+  "olympiccommittee",
 ]);
 const FORBIDDEN_VIEWBOXES = new Set(["0 0 640 480", "0 0 512 512"]);
 
@@ -89,6 +90,17 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
     if (!CATEGORIES.has(e.category)) fail(`${where}: unknown category "${e.category}".`);
     if (!e.name?.trim()) fail(`${where}: no name.`);
     if (!e.design?.trim()) fail(`${where}: no design line.`);
+    if (e.stats) {
+      if (!Array.isArray(e.stats) || e.stats.length === 0) {
+        fail(`${where}: stats must be a non-empty array when present.`);
+      } else {
+        for (const s of e.stats) {
+          if (!s.label?.trim() || !s.value?.trim()) {
+            fail(`${where}: every stats row needs a non-empty label and value.`);
+          }
+        }
+      }
+    }
     if (!/^https?:\/\//.test(e.source ?? "")) fail(`${where}: source must be an http(s) URL.`);
     // Years are REQUIRED on a historical flag (the section exists to date them) and
     // optional elsewhere: an undated service flag is listed with no years rather
