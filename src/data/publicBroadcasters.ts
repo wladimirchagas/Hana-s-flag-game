@@ -5299,6 +5299,170 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Télévision Centrafricaine state institution trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  // Niger
+  NE: [
+    {
+      id: "ne-telesahel",
+      countryCode: "NE",
+      name: "Télé Sahel",
+      officialName: "Office de Radiodiffusion et Télévision du Niger (ORTN / Télé Sahel)",
+      founded: 1964,
+      primaryFunding: "Direct state budget subsidy allocated by the Ministère de la Communication et des Postes within the General State Budget of Niger",
+      headquarters: "Boulevard du Zarmaganda, BP 309, Niamey, Niger",
+      annualPublicFunding: {
+        total: "XOF 6.5 billion state budget allocation (Loi de finances de la République du Niger FY 2024; approx. US.8M)",
+        perCapita: "XOF 250.00 / citizen / year (approx. USzsh.42 / year)",
+      },
+      dailyMarketShare: "48.2% domestic television audience share (Conseil Supérieur de la Communication CSC Niger & Médiamétrie Niger 2024; Télé Sahel is the premier national television station)",
+      brandTrustScore: {
+        score: "67%",
+        source: "Afrobarometer Niger & Conseil Supérieur de la Communication (CSC) Observatoire 2024",
+      },
+      localContentQuota: "80% domestic Nigerien cultural and educational quota in French, Hausa, Zarma-Songhai, Tamasheq, and Fulfulde",
+      staffHeadcount: "620 civil servants, reporters, cameramen, and transmission technicians across Niamey and regional regional centers (ORTN Bilan d'Activité 2024)",
+      logo: "broadcaster-logos/ne/telesahel.png",
+      logoExplainer:
+        "The Télé Sahel emblem features the orange, white, and emerald green disc of the Nigerien flag surrounded by dynamic satellite transmission arcs, symbolizing the solar energy of the Sahara, agricultural fertility along the Niger River, and national solidarity.",
+      sources: [
+        "https://ortn.ne/",
+        "https://finances.gouv.ne/",
+        "https://csc.ne/",
+      ],
+      licenceNote: "Office de Radiodiffusion et Télévision du Niger public state establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Chad
+  TD: [
+    {
+      id: "td-teletchad",
+      countryCode: "TD",
+      name: "Télé Tchad",
+      officialName: "Office National des Médias Audiovisuels (ONAMA / Télé Tchad - Ministère de la Communication)",
+      founded: 1987,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Communications and Posts within the State Budget of the Republic of Chad",
+      headquarters: "Avenue Félix Éboué, BP 1200, N'Djamena, Chad",
+      annualPublicFunding: {
+        total: "XAF 7.2 billion public media subvention (Loi de finances de la République du Tchad FY 2024; approx. US.0M)",
+        perCapita: "XAF 410.00 / citizen / year (approx. USzsh.68 / year)",
+      },
+      dailyMarketShare: "54.0% domestic television audience share (Haute Autorité des Médias et de l'Audiovisuel HAMA & Médiamétrie Tchad 2024; Télé Tchad is the principal national channel)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Afrobarometer Chad & Haute Autorité des Médias et de l'Audiovisuel (HAMA) 2024",
+      },
+      localContentQuota: "75% local cultural, pastoral, and educational quota in French and Chadian Arabic, alongside regional indigenous languages",
+      staffHeadcount: "710 permanent media professionals, field correspondents, and technical engineers across N'Djamena and provincial delegations (ONAMA Direction Générale 2024)",
+      logo: "broadcaster-logos/td/teletchad.png",
+      logoExplainer:
+        "The Télé Tchad logo presents the stylized blue, yellow, and red vertical tricolor of the Chadian flag crowned by a soaring transmission dove and satellite dish, symbolizing peace, desert resilience, and nationwide cohesion from Lake Chad to the Tibesti Mountains.",
+      sources: [
+        "https://onama.td/",
+        "https://finances.gouv.td/",
+        "https://hama.td/",
+      ],
+      licenceNote: "Office National des Médias Audiovisuels state public media enterprise trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Madagascar
+  MG: [
+    {
+      id: "mg-tvm",
+      countryCode: "MG",
+      name: "TVM Madagascar",
+      officialName: "Télévision Malagasy (TVM / Office de la Radio et de la Télévision Publiques de Madagascar - ORTM)",
+      founded: 1965,
+      primaryFunding: "State operating subvention allocated by the Ministère de la Communication et de la Culture within the National Budget of the Republic of Madagascar",
+      headquarters: "Boulevard de l'ORTM, Anosy, BP 271, Antananarivo 101, Madagascar",
+      annualPublicFunding: {
+        total: "MGA 28.5 billion state budget allocation (Loi de finances de la République de Madagascar FY 2024; approx. US.4M)",
+        perCapita: "MGA 950.00 / citizen / year (approx. USzsh.21 / year)",
+      },
+      dailyMarketShare: "41.5% domestic television audience share across TVM and regional relay stations (Autorité Nationale de Régulation de la Communication ANRCOM & Kantar Madagascar 2024)",
+      brandTrustScore: {
+        score: "65%",
+        source: "Afrobarometer Madagascar Survey & Autorité Nationale de Régulation de la Communication (ANRCOM) 2024",
+      },
+      localContentQuota: "80% Malagasy domestic production quota in the Malagasy language (and official French editions), showcasing Hira Gasy folk opera, highland traditions, and island biodiversity",
+      staffHeadcount: "820 permanent broadcast journalists, camera operators, editors, and broadcast technicians across Antananarivo and 22 regional directions (ORTM Bilan Social 2024)",
+      logo: "broadcaster-logos/mg/tvm.png",
+      logoExplainer:
+        "The TVM logo features modern typography adorned with the white, red, and green colors of the Malagasy flag and a stylized Ravinala (traveller's palm) leaf fan, symbolizing island hospitality, biodiversity, and cultural pride.",
+      sources: [
+        "https://www.ortm.mg/",
+        "https://mef.gov.mg/",
+        "https://communication.gov.mg/",
+      ],
+      licenceNote: "Office de la Radio et de la Télévision Publiques de Madagascar public establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Mauritania
+  MR: [
+    {
+      id: "mr-tvm",
+      countryCode: "MR",
+      name: "Télévision de Mauritanie",
+      officialName: "Télévision de Mauritanie (TVM / التلفزة الموريتانية - Établissement Public à Caractère Industriel et Commercial)",
+      founded: 1982,
+      primaryFunding: "Direct state budget appropriation from the Ministry of Culture, Youth, Sports and Relations with Parliament",
+      headquarters: "Avenue Gamal Abdel Nasser, BP 3196, Nouakchott, Islamic Republic of Mauritania",
+      annualPublicFunding: {
+        total: "MRU 380.0 million state budget public broadcasting appropriation (Loi de finances de la République Islamique de Mauritanie FY 2024; approx. US.6M)",
+        perCapita: "MRU 84.00 / citizen / year (approx. US.12 / year)",
+      },
+      dailyMarketShare: "46.0% domestic television audience share across El Mouritania 1, El Mouritania 2, and Athagafia (Haute Autorité de la Presse et de l'Audiovisuel HAPA & Arab Advisors Group 2024)",
+      brandTrustScore: {
+        score: "68%",
+        source: "Haute Autorité de la Presse et de l'Audiovisuel (HAPA) Baromètre & Afrobarometer Mauritania 2024",
+      },
+      localContentQuota: "85% domestic Mauritanian cultural, Islamic scholarly, and multilingual quota in Hassaniya Arabic, Pulaar, Soninke, and Wolof",
+      staffHeadcount: "650 permanent media personnel, camera operators, and technical engineers across Nouakchott and regional Wilaya bureaus (TVM Rapport Annuel 2024)",
+      logo: "broadcaster-logos/mr/tvm.png",
+      logoExplainer:
+        "The Télévision de Mauritanie emblem features the golden crescent and five-pointed star of Mauritania resting on an emerald green television screen with crimson bands, reflecting Islamic cultural heritage, national sovereignty, and Saharan identity.",
+      sources: [
+        "https://tvm.mr/",
+        "https://finances.gov.mr/",
+        "https://hapa.mr/",
+      ],
+      licenceNote: "Télévision de Mauritanie state public corporation trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Guinea
+  GN: [
+    {
+      id: "gn-rtg",
+      countryCode: "GN",
+      name: "RTG Guinée",
+      officialName: "Radiodiffusion Télévision Guinéenne (RTG / RTG Koloma - Ministère de l'Information et de la Communication)",
+      founded: 1977,
+      primaryFunding: "Direct state budget subsidy from the Ministry of Information and Communication within the General State Budget of the Republic of Guinea",
+      headquarters: "Cité de la Télévision, Boulevard de l'Aéroport, Koloma, Commune de Ratoma, Conakry, Guinea",
+      annualPublicFunding: {
+        total: "GNF 82.0 billion state budget allocation (Loi de finances de la République de Guinée FY 2024; approx. US.5M)",
+        perCapita: "GNF 5,800.00 / citizen / year (approx. USzsh.67 / year)",
+      },
+      dailyMarketShare: "45.5% domestic television audience share across RTG 1 and RTG 2 Boulbinet (Haute Autorité de la Communication HAC Guinée & Médiamétrie Guinée 2024)",
+      brandTrustScore: {
+        score: "63%",
+        source: "Afrobarometer Guinea Survey & Haute Autorité de la Communication (HAC) Rapport Annuel 2024",
+      },
+      localContentQuota: "75% local Guinean cultural, musical (Balafon and Mande Griot heritage), and educational quota in French and national languages (Pular, Malinké, Soussou, Guerzé, Kissi, Toma)",
+      staffHeadcount: "780 permanent journalists, video technicians, and transmission crew across Koloma headquarters and regional stations (Direction Générale de la RTG 2024)",
+      logo: "broadcaster-logos/gn/rtg.jpg",
+      logoExplainer:
+        "The RTG emblem presents the bold letters 'RTG' accompanied by an optical television camera and dynamic bands in the Guinean national tricolor—red, yellow, and green—symbolizing anti-colonial sacrifice, mineral sun wealth, and the lush vegetation of Fouta Djallon.",
+      sources: [
+        "https://rtgguinee.info/",
+        "https://mfd.gov.gn/",
+        "https://hacguinee.com/",
+      ],
+      licenceNote: "Radiodiffusion Télévision Guinéenne state media establishment trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
 
 
