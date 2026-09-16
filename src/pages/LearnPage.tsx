@@ -1887,7 +1887,15 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   />
                 )}
                 {display.kind === "modern" ? (
-                  <>
+                  // The country fact-sheet (Population, Capital, Languages, Currency,
+                  // Government, Continent, Region, Anthem) belongs to the NATIONAL FLAG,
+                  // not to whichever other national symbol happens to be selected —
+                  // showing it under a coat of arms / passport / football crest /
+                  // Olympic Committee logo mixes two unrelated fact lists in one panel
+                  // (owner report, 2026-09). It still shows once the user clicks
+                  // "Learn more" into the country's own tab, where the fact-sheet is
+                  // always present above every symbol's own widget.
+                  !panelSymbol && (
                     <EntitySummary
                       kind="modern"
                       country={display.country}
@@ -1914,7 +1922,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         </div>
                       }
                     />
-                  </>
+                  )
                 ) : (
                   <EntitySummary
                     kind="historical"
