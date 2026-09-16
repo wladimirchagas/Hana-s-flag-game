@@ -55,6 +55,9 @@ export type FlagListEntry = {
   /** Resolved football-association crest image URL for the grid's "Football
    *  crests" view. null / undefined when the country has no bundled crest. */
   footballCrest?: string | null;
+  /** Resolved National Olympic Committee logo URL for the grid's "Olympic
+   *  committees" view. null / undefined when the country has no bundled logo. */
+  olympicCommittee?: string | null;
   /** Resolved commercial airline logo URL for the grid's "Commercial airlines" view. */
   airlineLogo?: string | null;
   /** Unique airline ID (e.g. "au-qantas") when this card represents an airline. */

@@ -27,6 +27,7 @@ import {
   coatOfArmsPath,
   passportPath,
   footballCrestPath,
+  olympicCommitteePath,
   footballCrestById,
   nationalSymbolEntry,
 } from "../lib/nationalSymbolImages";
@@ -1016,6 +1017,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         coatOfArms: coatOfArmsPath(c.code),
         passport: passportPath(c.code),
         footballCrest: footballCrestPath(c.code),
+        olympicCommittee: olympicCommitteePath(c.code),
       }));
     }
     const out: FlagListEntry[] = [];
@@ -1345,14 +1347,24 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     display?.kind === "modern" &&
     (effectiveGridContentType === "coatofarms" ||
       effectiveGridContentType === "passport" ||
-      effectiveGridContentType === "footballcrest")
+      effectiveGridContentType === "footballcrest" ||
+      effectiveGridContentType === "olympiccommittee")
       ? nationalSymbolEntry(display.country.code, effectiveGridContentType)
       : null);
+  // A selected symbol that genuinely has NO entity to picture (Vatican City has
+  // no National Olympic Committee at all) must show its sourced explanation, not
+  // silently fall back to the country's flag — that would misreport a country
+  // with no NOC as if its flag WERE its Olympic Committee logo.
+  const panelSymbolNoImage = panelSymbol && !panelSymbol.path ? panelSymbol.noImageReason : null;
   // The image the panel actually shows: the symbol when one is selected and
   // bundled, otherwise the national flag (a country with no coat of arms /
-  // passport falls back to its flag rather than a blank panel).
-  const displayFlagUrl =
-    panelSymbol?.path ? resolveFlag(panelSymbol.path) : flagUrl;
+  // passport falls back to its flag rather than a blank panel) — UNLESS the
+  // symbol itself has no image and says why, which wins over both.
+  const displayFlagUrl = panelSymbolNoImage
+    ? null
+    : panelSymbol?.path
+      ? resolveFlag(panelSymbol.path)
+      : flagUrl;
   // Reset load-failed state whenever the displayed image changes.
   // NOTE: this ref MUST be declared before the loadError early-return below —
   // hooks after a conditional return violate the Rules of Hooks, and when
@@ -1423,42 +1435,52 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // its fact-sheet, with the ruler caption and dated no-flag lines that belong
   // with it. Same element either way — only the slot differs.
   const panelFlagBox =
-    display && displayFlagUrl && !flagLoadFailed ? (
+    display && (displayFlagUrl || panelSymbolNoImage) && !flagLoadFailed ? (
       <div className="learn-fs__flag-box">
-        {flagRow(
-          <button
-            type="button"
-            className="learn-fs__flag"
-            onClick={() => setZoomedFlagUrl(displayFlagUrl)}
-            aria-label={
-              panelSymbol
-                ? `Enlarge ${panelSymbol.name}`
-                : `Enlarge ${selectionName(display, eraId)} flag`
-            }
-          >
-            <img
-              key={displayFlagUrl}
-              src={displayFlagUrl}
-              alt=""
-              className="learn-fs__flag-img"
-              draggable={false}
-              onError={(e) => {
-                const img = e.currentTarget;
-                if (flagPngFallback && img.src !== flagPngFallback) {
-                  img.src = flagPngFallback;
-                } else {
-                  setFlagLoadFailed(true);
+        {panelSymbolNoImage
+          ? flagRow(
+              // No entity to picture at all (Vatican City has no National
+              // Olympic Committee) — the reason IS the content here, exactly
+              // like NationalFlagDetails' own noImageReason branch.
+              <p className="learn-fs__no-image">
+                <strong>No image shown.</strong> {panelSymbolNoImage}
+              </p>,
+              panelSymbol ? symbolNoun(panelSymbol.category) : "Flag",
+            )
+          : flagRow(
+              <button
+                type="button"
+                className="learn-fs__flag"
+                onClick={() => displayFlagUrl && setZoomedFlagUrl(displayFlagUrl)}
+                aria-label={
+                  panelSymbol
+                    ? `Enlarge ${panelSymbol.name}`
+                    : `Enlarge ${selectionName(display, eraId)} flag`
                 }
-              }}
-            />
-            <span className="learn-fs__flag-hint" aria-hidden="true">
-              <UiIcon name="expand" /> Click to enlarge
-            </span>
-          </button>,
-          // A symbol carries its own noun so the block never labels a
-          // coat of arms or a passport "Flag".
-          panelSymbol ? symbolNoun(panelSymbol.category) : "Flag",
-        )}
+              >
+                <img
+                  key={displayFlagUrl}
+                  src={displayFlagUrl ?? undefined}
+                  alt=""
+                  className="learn-fs__flag-img"
+                  draggable={false}
+                  onError={(e) => {
+                    const img = e.currentTarget;
+                    if (flagPngFallback && img.src !== flagPngFallback) {
+                      img.src = flagPngFallback;
+                    } else {
+                      setFlagLoadFailed(true);
+                    }
+                  }}
+                />
+                <span className="learn-fs__flag-hint" aria-hidden="true">
+                  <UiIcon name="expand" /> Click to enlarge
+                </span>
+              </button>,
+              // A symbol carries its own noun so the block never labels a
+              // coat of arms or a passport "Flag".
+              panelSymbol ? symbolNoun(panelSymbol.category) : "Flag",
+            )}
         {display.kind === "modern" &&
           (panelSymbol ? (
             // The explainer follows what's displayed: the symbol's own
@@ -1471,6 +1493,21 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 meanings={NATIONAL_FLAG_MEANINGS}
                 label={meaningLabel(panelSymbol.category)}
               />
+              {panelSymbol.stats && panelSymbol.stats.length > 0 && (
+                // Same generic stats list NationalFlagDetails renders in the
+                // "National symbols" tab — kept identical here so a symbol's
+                // comparable facts (an Olympic Committee's Games/medal/athlete
+                // rows) read the same whether reached from the world map or
+                // from drilling into the country's own tab.
+                <dl className="entity-summary">
+                  {panelSymbol.stats.map((stat) => (
+                    <div className="entity-summary__row" key={stat.label}>
+                      <dt className="entity-summary__label">{stat.label}</dt>
+                      <dd className="entity-summary__value">{stat.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
             </>
           ) : (
             <FlagMeaning code={display.country.code} />

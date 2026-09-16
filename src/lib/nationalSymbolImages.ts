@@ -18,9 +18,11 @@ import { NATIONAL_FLAGS, type NationalFlag } from "../data/nationalFlags";
 const coatOfArmsByCode = new Map<string, string>();
 const passportByCode = new Map<string, string>();
 const footballCrestByCode = new Map<string, string>();
+const olympicCommitteeByCode = new Map<string, string>();
 const coatOfArmsEntryByCode = new Map<string, NationalFlag>();
 const passportEntryByCode = new Map<string, NationalFlag>();
 const footballCrestEntryByCode = new Map<string, NationalFlag>();
+const olympicCommitteeEntryByCode = new Map<string, NationalFlag>();
 
 for (const [code, flags] of Object.entries(NATIONAL_FLAGS)) {
   const arms = flags.find((f) => f.category === "coatofarms" && f.path);
@@ -47,6 +49,20 @@ for (const [code, flags] of Object.entries(NATIONAL_FLAGS)) {
     footballCrestByCode.set(code, ownCrest.path);
     footballCrestEntryByCode.set(code, ownCrest);
   }
+  // A country's National Olympic Committee is a single mark, so the "own entry"
+  // id convention is enough — no UK-style split (Team GB fields one NOC, unlike
+  // its four separate football associations).
+  const noc = flags.find((f) => f.category === "olympiccommittee" && f.id === `${code.toLowerCase()}-olympic-committee`);
+  if (noc?.path) {
+    olympicCommitteeByCode.set(code, noc.path);
+    olympicCommitteeEntryByCode.set(code, noc);
+  } else if (noc?.noImageReason) {
+    // Vatican City: registering the ENTRY (with no path) is what lets the panel
+    // show the honest "no National Olympic Committee" explanation instead of
+    // silently falling back to the national flag — a country that has no NOC at
+    // all is not the same as one whose logo just isn't bundled yet.
+    olympicCommitteeEntryByCode.set(code, noc);
+  }
 }
 
 /** Relative image path (BASE-prefixed by the grid's resolver) for a country's
@@ -64,6 +80,12 @@ export function passportPath(code: string): string | null {
  *  null when none is bundled (the curated set grows per country). */
 export function footballCrestPath(code: string): string | null {
   return footballCrestByCode.get(code) ?? null;
+}
+
+/** Relative image path for a country's National Olympic Committee logo, or null
+ *  when none is bundled yet (a standing sweep, like the football crests). */
+export function olympicCommitteePath(code: string): string | null {
+  return olympicCommitteeByCode.get(code) ?? null;
 }
 
 // Every football crest, keyed by its own entry id — so the world-map grid can
@@ -114,13 +136,15 @@ export function subnationalFootballCrests(
  */
 export function nationalSymbolEntry(
   code: string,
-  type: "coatofarms" | "passport" | "footballcrest",
+  type: "coatofarms" | "passport" | "footballcrest" | "olympiccommittee",
 ): NationalFlag | null {
   const map =
     type === "coatofarms"
       ? coatOfArmsEntryByCode
       : type === "passport"
         ? passportEntryByCode
-        : footballCrestEntryByCode;
+        : type === "footballcrest"
+          ? footballCrestEntryByCode
+          : olympicCommitteeEntryByCode;
   return map.get(code) ?? null;
 }

@@ -121,6 +121,12 @@ export function NationalFlagDetails({
             <dd className="entity-summary__value">{flag.occupier}</dd>
           </div>
         )}
+        {flag.stats?.map((stat) => (
+          <div className="entity-summary__row" key={stat.label}>
+            <dt className="entity-summary__label">{stat.label}</dt>
+            <dd className="entity-summary__value">{stat.value}</dd>
+          </div>
+        ))}
       </dl>
       {flag.sovereign && (
         <p className="learn-fs__pre-independence">

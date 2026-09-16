@@ -72,6 +72,7 @@ const CATEGORY_HEADINGS: Record<NationalFlagCategory, string> = {
   coatofarms: "Coat of arms",
   passport: "Passports",
   footballcrest: "Football association",
+  olympiccommittee: "National Olympic Committee",
 };
 
 /** The order the sections appear in — matches the generator's own ordering. */
@@ -90,6 +91,9 @@ const CATEGORY_ORDER: NationalFlagCategory[] = [
   // The crest of the country's national football (soccer) association — a national
   // symbol in the same family as the arms and passport, so it trails them.
   "footballcrest",
+  // The country's National Olympic Committee logo — the newest national-symbol
+  // category, so it trails every other section.
+  "olympiccommittee",
 ];
 
 type Group = { category: NationalFlagCategory; heading: string; items: NationalFlag[] };

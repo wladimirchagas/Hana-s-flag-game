@@ -41,6 +41,7 @@ const CATEGORY_ORDER = [
   "coatofarms",
   "passport",
   "footballcrest",
+  "olympiccommittee",
 ];
 
 const manifest = JSON.parse(readFileSync(MANIFEST, "utf8"));
@@ -104,6 +105,12 @@ for (const cc of countries) {
     // (it implies X held sovereignty, which the occupied country denies) and no
     // attribution at all would be worse.
     const occupier = e.occupier ? `occupier: ${q(e.occupier)}, ` : "";
+    // A generic, reusable list of comparable facts (Olympic Committee entries use
+    // it for Games-participated / medal / athlete-count rows) — any category can
+    // carry one; the UI renders whatever is present, nothing category-specific.
+    const stats = e.stats?.length
+      ? `stats: [${e.stats.map((s) => `{ label: ${q(s.label)}, value: ${q(s.value)} }`).join(", ")}], `
+      : "";
     // PRIMARY is derived, never hand-set: it is exactly the entry that reuses the
     // country's own current flag file, so a country cannot be given two primaries
     // or forget to mark one. The current flag lives ONLY in the official section
@@ -120,7 +127,7 @@ for (const cc of countries) {
         ? "primary: true, "
         : "";
     flagLines.push(
-      `    { id: ${q(e.id)}, category: ${q(e.category)}, name: ${q(e.name)}, ${years}${sovereign}${prior}${occupier}${primary}${pathField}${noImage}design: ${q(e.design)}, source: ${q(e.source)} },`,
+      `    { id: ${q(e.id)}, category: ${q(e.category)}, name: ${q(e.name)}, ${years}${sovereign}${prior}${occupier}${primary}${pathField}${noImage}${stats}design: ${q(e.design)}, source: ${q(e.source)} },`,
     );
     flagCount++;
 
@@ -183,7 +190,8 @@ export type NationalFlagCategory =
   | "indigenous"
   | "coatofarms"
   | "passport"
-  | "footballcrest";
+  | "footballcrest"
+  | "olympiccommittee";
 
 export type NationalFlag = {
   /** Stable slug — React key, and the key into NATIONAL_FLAG_MEANINGS. */
@@ -211,6 +219,12 @@ export type NationalFlag = {
   readonly path?: string;
   /** Why no image is shown. Present exactly when \`path\` is absent. */
   readonly noImageReason?: string;
+  /**
+   * A generic list of sourced, comparable facts about the entry (e.g. an Olympic
+   * Committee's Games-participated / medal / athlete-count rows). Not category-
+   * specific — any entry may carry one, and the UI renders whatever is present.
+   */
+  readonly stats?: readonly { readonly label: string; readonly value: string }[];
   /** What the image is — the card's sub-label. */
   readonly design: string;
   /**
