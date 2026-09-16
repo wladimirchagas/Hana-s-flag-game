@@ -27,7 +27,8 @@ export type NationalFlagCategory =
   | "indigenous"
   | "coatofarms"
   | "passport"
-  | "footballcrest";
+  | "footballcrest"
+  | "olympiccommittee";
 
 export type NationalFlag = {
   /** Stable slug — React key, and the key into NATIONAL_FLAG_MEANINGS. */
@@ -55,6 +56,12 @@ export type NationalFlag = {
   readonly path?: string;
   /** Why no image is shown. Present exactly when `path` is absent. */
   readonly noImageReason?: string;
+  /**
+   * A generic list of sourced, comparable facts about the entry (e.g. an Olympic
+   * Committee's Games-participated / medal / athlete-count rows). Not category-
+   * specific — any entry may carry one, and the UI renders whatever is present.
+   */
+  readonly stats?: readonly { readonly label: string; readonly value: string }[];
   /** What the image is — the card's sub-label. */
   readonly design: string;
   /**
@@ -211,6 +218,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "au-arms", category: "coatofarms", name: "Commonwealth Coat of Arms", path: "national-flags/au/australia-arms.svg", design: "A shield of six quarters supported by a kangaroo and an emu, with the Commonwealth Star above and golden wattle behind.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
     { id: "au-passport", category: "passport", name: "Australian passport", path: "national-flags/au/australia-passport.webp", design: "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above it and PASSPORT below.", source: "https://gicg.net/passport/au/" },
     { id: "au-football-crest", category: "footballcrest", name: "Crest of Football Australia", path: "national-flags/au/au-football-crest.svg", design: "The logo of Football Australia — an abstract ball formed of interlocking green-and-gold curves, beside the words “Football Australia”.", source: "https://en.wikipedia.org/wiki/Football_Australia" },
+    { id: "au-olympic-committee", category: "olympiccommittee", name: "Logo of the Australian Olympic Committee (AOC)", path: "national-flags/au/au-olympic-committee.svg", stats: [{ label: "NOC founded", value: "1920 (as the Australian Olympic Council)" }, { label: "Summer Games participated", value: "28 of 30 (1896–2024)" }, { label: "Winter Games participated", value: "21 of 25 (1936–2026)" }, { label: "First Summer Games", value: "1896 Athens" }, { label: "First Winter Games", value: "1936 Garmisch-Partenkirchen" }, { label: "Summer Olympic medals (G–S–B)", value: "180–189–225 (594 total)" }, { label: "Winter Olympic medals (G–S–B)", value: "9–9–7 (25 total)" }, { label: "Athletes at Paris 2024 (Summer)", value: "461" }, { label: "Athletes at Milano Cortina 2026 (Winter)", value: "51" }], design: "The Australian Olympic Committee's current mark: a kangaroo and an emu in silhouette flanking the seven-pointed Commonwealth Star, above the five Olympic rings and the word “AUSTRALIA” — all rendered in the Committee's own dark-teal brand colour.", source: "https://en.wikipedia.org/wiki/Australian_Olympic_Committee" },
   ],
   "AW": [
     { id: "aw-official-national", category: "official", name: "Flag of Aruba", from: 1976, to: 9999, path: "flags/sub/NL/NL-AW.svg", design: "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Aruba" },
@@ -375,6 +383,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "br-arms", category: "coatofarms", name: "Coat of arms of Brazil", path: "national-flags/br/brazil-arms.svg", design: "A blue disc bearing the Southern Cross, ringed by 27 stars, on a star-shaped emblem framed by coffee and tobacco branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil" },
     { id: "br-passport", category: "passport", name: "Brazilian passport", path: "national-flags/br/brazil-passport.webp", design: "A blue Mercosur cover: MERCOSUL/MERCOSUR across the top, REPÚBLICA FEDERATIVA DO BRASIL, the national arms in gold, and PASSAPORTE beneath.", source: "https://gicg.net/passport/br/" },
     { id: "br-football-crest", category: "footballcrest", name: "Crest of the Brazilian Football Confederation (CBF)", path: "national-flags/br/br-football-crest.svg", design: "The crest of the Brazilian Football Confederation — a blue shield bearing the green-and-yellow “CBF” monogram, beneath an arc of five green stars.", source: "https://en.wikipedia.org/wiki/Brazilian_Football_Confederation" },
+    { id: "br-olympic-committee", category: "olympiccommittee", name: "Logo of the Brazilian Olympic Committee (COB)", path: "national-flags/br/br-olympic-committee.svg", stats: [{ label: "NOC founded", value: "1914 (activities did not begin in earnest until 1935)" }, { label: "Summer Games participated", value: "24 of 30 (1920–2024, missed 1928)" }, { label: "Winter Games participated", value: "10 (1992–2026)" }, { label: "First Summer Games", value: "1920 Antwerp" }, { label: "First Winter Games", value: "1992 Albertville" }, { label: "Summer Olympic medals (G–S–B)", value: "40–49–81 (170 total)" }, { label: "Winter Olympic medals (G–S–B)", value: "1–0–0 (1 total)" }, { label: "Athletes at Paris 2024 (Summer)", value: "277" }, { label: "Athletes at Milano Cortina 2026 (Winter)", value: "14" }], design: "The Brazilian Olympic Committee's mark: the Brazilian flag reproduced as a rectangle — green field, yellow diamond, blue globe crossed by a white band, without the flag's usual ring of stars or “Ordem e Progresso” motto — above the five Olympic rings.", source: "https://en.wikipedia.org/wiki/Brazilian_Olympic_Committee" },
   ],
   "BS": [
     { id: "bs-official-national", category: "official", name: "Flag of Bahamas", from: 1973, to: 9999, primary: true, path: "flags/bs.svg", design: "The national flag of Bahamas, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahamas" },
@@ -1538,6 +1547,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "my-arms", category: "coatofarms", name: "Coat of arms of Malaysia", path: "national-flags/my/malaysia-arms.svg", design: "A shield held by two tigers, crowned by a yellow crescent and fourteen-pointed federal star, above a motto ribbon.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia" },
     { id: "my-passport", category: "passport", name: "Malaysian passport", path: "national-flags/my/malaysia-passport.svg", design: "A dark red cover with the Malaysian coat of arms in gold, the country's name above and PASSPORT/PASPORT below.", source: "https://en.wikipedia.org/wiki/Malaysian_passport" },
     { id: "my-football-crest", category: "footballcrest", name: "Crest of the Football Association of Malaysia (FAM)", path: "national-flags/my/my-football-crest.svg", design: "The crest of the Football Association of Malaysia — a leaping Malayan tiger over a football on a black shield, ringed by a wreath and the banner “Persatuan Bolasepak Malaysia”.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Malaysia" },
+    { id: "my-olympic-committee", category: "olympiccommittee", name: "Logo of the Olympic Council of Malaysia (OCM)", path: "national-flags/my/my-olympic-committee.svg", stats: [{ label: "NOC founded", value: "1953 (as the Federation of Malaya Olympic Council; recognised by the IOC in 1954)" }, { label: "Summer Games participated", value: "17 (1956–2024, excluding the 1980 boycott)" }, { label: "Winter Games participated", value: "3 (2018, 2022, 2026)" }, { label: "First Summer Games", value: "1956 Melbourne (as Malaya)" }, { label: "First Winter Games", value: "2018 Pyeongchang" }, { label: "Summer Olympic medals (G–S–B)", value: "0–8–7 (15 total)" }, { label: "Winter Olympic medals (G–S–B)", value: "0–0–0 (none)" }, { label: "Athletes at Paris 2024 (Summer)", value: "26" }, { label: "Athletes at Milano Cortina 2026 (Winter)", value: "1" }], design: "The Olympic Council of Malaysia's mark: Malaysia's national flag, the Jalur Gemilang, rendered as a waving banner above the five Olympic rings.", source: "https://en.wikipedia.org/wiki/Olympic_Council_of_Malaysia" },
   ],
   "MZ": [
     { id: "mz-official-national", category: "official", name: "Flag of Mozambique", from: 1983, to: 9999, primary: true, path: "flags/mz.svg", design: "The national flag of Mozambique, in the form adopted in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Mozambique" },
@@ -1638,6 +1648,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "nr-german", category: "historical", name: "Flag of the German Empire", from: 1888, to: 1914, sovereign: "the German Empire", path: "national-flags/nr/nr-german.svg", design: "The flag of the German Empire, which annexed Nauru as a protectorate in 1888 and held it until 1914.", source: "https://en.wikipedia.org/wiki/History_of_Nauru" },
     { id: "nr-arms", category: "coatofarms", name: "Coat of arms of Nauru", from: 1968, to: 9999, path: "national-flags/nr/nr-arms.svg", design: "A frigatebird and phosphorus symbol beneath a twelve-pointed star, framed by palm and feathers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru" },
     { id: "nr-passport", category: "passport", name: "Passport of Nauru", path: "national-flags/nr/nr-passport.webp", design: "The cover of the Nauru passport.", source: "https://gicg.net/passport/nr/" },
+    { id: "nr-olympic-committee", category: "olympiccommittee", name: "Logo of the Nauru Olympic Committee (NOC)", path: "national-flags/nr/nr-olympic-committee.jpg", stats: [{ label: "NOC founded", value: "1991 (recognised by the IOC in 1994)" }, { label: "Summer Games participated", value: "8 (1996–2024)" }, { label: "Winter Games participated", value: "0 (never competed)" }, { label: "First Summer Games", value: "1996 Atlanta" }, { label: "First Winter Games", value: "Never competed" }, { label: "Summer Olympic medals (G–S–B)", value: "0–0–0 (none)" }, { label: "Winter Olympic medals (G–S–B)", value: "N/A — never competed" }, { label: "Athletes at Paris 2024 (Summer)", value: "1" }, { label: "Athletes at Milano Cortina 2026 (Winter)", value: "0 — did not compete" }], design: "The Nauru Olympic Committee's mark: a multi-pointed star beside the word “NAURU”, over orange-and-blue wave bands and the words “OLYMPIC COMMITTEE”, beside the five Olympic rings.", source: "https://en.wikipedia.org/wiki/Nauru_Olympic_Committee" },
   ],
   "NU": [
     { id: "nu-official-national", category: "official", name: "Flag of Niue", from: 1975, to: 9999, path: "flags/nu.svg", design: "A golden-yellow field with the Union Flag in the canton, the Union Flag itself defaced with a blue disc and yellow stars.", source: "https://en.wikipedia.org/wiki/Flag_of_Niue" },
@@ -2284,6 +2295,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "va-papal-states", category: "historical", name: "Flag of the Papal States", from: 1825, to: 1870, path: "national-flags/va/papal-states.svg", design: "The gold-and-white flag of the Papal States, charged with the crossed keys of Saint Peter beneath the papal tiara. When Vatican City was founded in 1929 it kept these colours and this emblem.", source: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
     { id: "va-arms", category: "coatofarms", name: "Coat of arms of Vatican City", from: 1929, to: 9999, path: "national-flags/va/va-arms.svg", design: "Two keys in saltire, one gold and one silver, surmounted by the papal tiara on a red field.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vatican_City" },
     { id: "va-passport", category: "passport", name: "Passport of Vatican City", path: "national-flags/va/va-passport.webp", design: "The cover of the Vatican City passport.", source: "https://gicg.net/passport/va/" },
+    { id: "va-olympic-committee", category: "olympiccommittee", name: "No National Olympic Committee", noImageReason: "Vatican City has no logo to show because it has no National Olympic Committee — it is the only wholly independent state never recognised by the IOC. Recognition requires national federations affiliated with at least five Olympic sports; as of 2024 Vatican City held only two (cycling, joining the UCI in 2021, and taekwondo, joining World Taekwondo the same year). Vatican athletes have never competed at the Olympics under their own flag; the Holy See sent observer delegations to the 2016 Rio and 2018 Pyeongchang Games.", design: "There is no Vatican City Olympic Committee logo — see the reason above.", source: "https://en.wikipedia.org/wiki/Vatican_City_at_the_Olympics" },
   ],
   "VC": [
     { id: "vc-official-national", category: "official", name: "Flag of Saint Vincent and the Grenadines", from: 1985, to: 9999, primary: true, path: "flags/vc.svg", design: "The national flag, adopted in 1985.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
@@ -3059,6 +3071,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Green and gold — Wikipedia", url: "https://en.wikipedia.org/wiki/Green_and_gold" },
     ],
   },
+  "au-olympic-committee": {
+    description: "The kangaroo and emu are two of Australia's best-known native animals and, together, are the supporters of the Commonwealth Coat of Arms; the AOC paired them with the seven-pointed Commonwealth Star from the Australian flag — six points for the original states, the seventh for the territories — in a simplified mark launched in August 2015 ahead of the Rio Games, replacing several near-identical marks the IOC's own branding rules no longer let the Committee run in parallel.",
+    sources: [
+      { title: "Australian Olympic Committee launches simplified Olympic logos ahead of Rio Games — Mumbrella", url: "https://mumbrella.com.au/australian-olympic-committee-launches-simplified-olympic-logos-ahead-of-rio-games-310536" },
+      { title: "Commonwealth Star — Wikipedia", url: "https://en.wikipedia.org/wiki/Commonwealth_Star" },
+    ],
+  },
   "aw-official-national": {
     description: "The two yellow stripes stand for the island's economic history (gold mining, aloe production, tourism) and its native flora; the red four-pointed star represents Aruba itself, its four points recalling the diverse origins of the Aruban people, set against the surrounding blue sea.",
     sources: [
@@ -3754,6 +3773,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Star (sport badge) — Wikipedia", url: "https://en.wikipedia.org/wiki/Star_(sport_badge)" },
       { title: "Brazil national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Brazil_national_football_team" },
+    ],
+  },
+  "br-olympic-committee": {
+    description: "Green and yellow come from the ruling houses at the time of the flag's 1889 design — green from the House of Braganza (Emperor Pedro I), yellow from the House of Habsburg (Empress Maria Leopoldina) — and the blue globe traces the sky over Rio de Janeiro on the morning of 15 November 1889, the day the Republic was proclaimed. The Committee's own website (cob.org.br) confirms this simplified flag rectangle, without the national flag's usual band of stars or its “Ordem e Progresso” motto, as the current mark it pairs with the Olympic rings and the wordmark “COMITÊ OLÍMPICO DO BRASIL.”",
+    sources: [
+      { title: "Flag of Brazil — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Brazil" },
     ],
   },
   "bs-colonial": {
@@ -8731,6 +8756,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Malaysia national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Malaysia_national_football_team" },
     ],
   },
+  "my-olympic-committee": {
+    description: "The mark reproduces Malaysia's national flag in full: fourteen alternating red-and-white stripes for the equal status of the thirteen states and the federal government, and the dark-blue canton's crescent and fourteen-point star for Islam as the federation's official religion and that same federal unity. Confirmed as the Council's current mark on its own website (olympics.com.my), which pairs it with the wordmark “OLYMPIC COUNCIL OF MALAYSIA.”",
+    sources: [
+      { title: "Flag of Malaysia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
+    ],
+  },
   "mz-1975": {
     description: "Adopted 25 June 1975 — the anniversary of FRELIMO's founding, and the day Mozambique's independence became formal — this flag radiated diagonal Pan-African-coloured triangles from the upper hoist, bearing a hoe and rifle crossed beneath an open book, a cogwheel for the industrial working class, and a red star for proletarian internationalism, as the country became the socialist People's Republic of Mozambique. A 1983 redesign simplified the diagonal bands into the horizontal stripes flown today.",
     sources: [
@@ -9157,6 +9188,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Nauru's passport bears the national coat of arms: a twelve-pointed gold star above a shield, each point representing one of Nauru's twelve indigenous tribes, over the alchemical symbol for phosphorus on a woven background — for the phosphate mining that once dominated the economy and the people who wove it. A black frigatebird perched over ocean waves fills the shield's lower half, and a branch of calophyllum flowers stands beside it; the shield is ringed with ropes of palm leaves, frigatebird feathers and shark teeth from traditional chiefly regalia.",
     sources: [
       { title: "Coat of arms of Nauru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru" },
+    ],
+  },
+  "nr-olympic-committee": {
+    description: "The star and the blue tones echo Nauru's own national flag and coat of arms, where a twelve-pointed star stands for the island's twelve original tribes and blue represents the surrounding Pacific Ocean that isolates it.",
+    sources: [
+      { title: "Coat of arms of Nauru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru" },
+      { title: "Flag of Nauru — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nauru" },
     ],
   },
   "nu-official-national": {

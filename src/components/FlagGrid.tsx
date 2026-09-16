@@ -699,7 +699,9 @@ export function FlagGrid({
                     ? item.passport ?? null
                     : effectiveContentType === "footballcrest"
                       ? item.footballCrest ?? null
-                      : effectiveContentType === "airline"
+                      : effectiveContentType === "olympiccommittee"
+                        ? item.olympicCommittee ?? null
+                        : effectiveContentType === "airline"
                         ? item.airlineLogo ?? item.flag
                         : effectiveContentType === "broadcaster"
                           ? item.broadcasterLogo ?? item.flag

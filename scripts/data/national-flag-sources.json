@@ -14,9 +14,17 @@
     "  id        stable slug, unique across the whole file (used as the React key and the",
     "            meaning-lookup key).",
     "  category  historical | official | military | maritime | standard | civilstate | indigenous |",
-    "            coatofarms | passport | footballcrest. A `footballcrest` is the crest/logo of the",
-    "            country's national football (soccer) association — a copyrighted mark, so it is",
-    "            bundled non-free via `url` + a `licenceNote`, exactly like the non-free passport covers.",
+    "            coatofarms | passport | footballcrest | olympiccommittee. A `footballcrest` is the",
+    "            crest/logo of the country's national football (soccer) association; an",
+    "            `olympiccommittee` is the country's National Olympic Committee logo — both are",
+    "            copyrighted marks, so they are usually bundled non-free via `url` + a `licenceNote`,",
+    "            exactly like the non-free passport covers, EXCEPT where the NOC's own mark is freely",
+    "            licensed on Commons (Malaysia, Brazil — both reproduce the national flag plus the",
+    "            Olympic rings, a design below the threshold of originality / PD in their source",
+    "            country). A country with NO National Olympic Committee at all (Vatican City — not an",
+    "            IOC member, never fielded a team) carries an `olympiccommittee` entry with",
+    "            `noImageReason` instead of an image: the entity genuinely does not exist, which is",
+    "            itself worth stating rather than silently omitting the country from the sweep.",
     "  name      the flag's own name, as the cited source gives it.",
     "  from/to   years the design was in official use (to: 9999 = still current). Historical",
     "            entries are ordered newest-first by the generator.",
@@ -31,6 +39,11 @@
     "  design    what the image is — shown as the card's sub-label.",
     "  meaning   sourced \"What this flag means\" explainer { description, myths?, sources[] }.",
     "  source    authoritative URL for the name/dates.",
+    "  stats     OPTIONAL array of { label, value } sourced, comparable facts — used by",
+    "            `olympiccommittee` entries for Games-participated / medal / athlete-count rows",
+    "            (Summer vs Winter, so figures are comparable across every country). Every figure",
+    "            comes from an authoritative source (Olympedia / the IOC / the relevant \"X at the",
+    "            Olympics\" reference) cross-checked against a second source — never estimated.",
     "",
     "CURATION RULES",
     "  1. `historical` covers the flags of THIS state (and the predecessor states centred on",
@@ -1966,6 +1979,69 @@
               }
             ]
           }
+        },
+        {
+          "id": "au-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Australian Olympic Committee (AOC)",
+          "url": "https://www.olympics.com.au/images/brand/logo-large.svg",
+          "file": "au/au-olympic-committee.svg",
+          "licenceNote": "A copyrighted, trademarked emblem, fetched directly from the Australian Olympic Committee's own website (olympics.com.au/images/brand/logo-large.svg) rather than Wikimedia Commons, which holds no freely-licensed current version (Commons instead carries the Committee's 1953–2015 roundel and a since-superseded 2015 lockup, neither of which matches the mark the AOC's own site currently serves). Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "design": "The Australian Olympic Committee's current mark: a kangaroo and an emu in silhouette flanking the seven-pointed Commonwealth Star, above the five Olympic rings and the word “AUSTRALIA” — all rendered in the Committee's own dark-teal brand colour.",
+          "source": "https://en.wikipedia.org/wiki/Australian_Olympic_Committee",
+          "meaning": {
+            "description": "The kangaroo and emu are two of Australia's best-known native animals and, together, are the supporters of the Commonwealth Coat of Arms; the AOC paired them with the seven-pointed Commonwealth Star from the Australian flag — six points for the original states, the seventh for the territories — in a simplified mark launched in August 2015 ahead of the Rio Games, replacing several near-identical marks the IOC's own branding rules no longer let the Committee run in parallel.",
+            "sources": [
+              {
+                "title": "Australian Olympic Committee launches simplified Olympic logos ahead of Rio Games — Mumbrella",
+                "url": "https://mumbrella.com.au/australian-olympic-committee-launches-simplified-olympic-logos-ahead-of-rio-games-310536"
+              },
+              {
+                "title": "Commonwealth Star — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Commonwealth_Star"
+              }
+            ]
+          },
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1920 (as the Australian Olympic Council)"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "28 of 30 (1896–2024)"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "21 of 25 (1936–2026)"
+            },
+            {
+              "label": "First Summer Games",
+              "value": "1896 Athens"
+            },
+            {
+              "label": "First Winter Games",
+              "value": "1936 Garmisch-Partenkirchen"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "180–189–225 (594 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "9–9–7 (25 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "461"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "51"
+            }
+          ],
+          "sha256": "9cdec222fa2ea1b9b565575193695ee635d69a3a7e96c28c1d6654e35d3c4943",
+          "fetched": "2026-09-16"
         }
       ],
       "omitted": [
@@ -4838,6 +4914,64 @@
               }
             ]
           }
+        },
+        {
+          "id": "br-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Brazilian Olympic Committee (COB)",
+          "commons": "Brazilian Olympic Committee logo.svg",
+          "file": "br/br-olympic-committee.svg",
+          "design": "The Brazilian Olympic Committee's mark: the Brazilian flag reproduced as a rectangle — green field, yellow diamond, blue globe crossed by a white band, without the flag's usual ring of stars or “Ordem e Progresso” motto — above the five Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Brazilian_Olympic_Committee",
+          "meaning": {
+            "description": "Green and yellow come from the ruling houses at the time of the flag's 1889 design — green from the House of Braganza (Emperor Pedro I), yellow from the House of Habsburg (Empress Maria Leopoldina) — and the blue globe traces the sky over Rio de Janeiro on the morning of 15 November 1889, the day the Republic was proclaimed. The Committee's own website (cob.org.br) confirms this simplified flag rectangle, without the national flag's usual band of stars or its “Ordem e Progresso” motto, as the current mark it pairs with the Olympic rings and the wordmark “COMITÊ OLÍMPICO DO BRASIL.”",
+            "sources": [
+              {
+                "title": "Flag of Brazil — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+              }
+            ]
+          },
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1914 (activities did not begin in earnest until 1935)"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "24 of 30 (1920–2024, missed 1928)"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "10 (1992–2026)"
+            },
+            {
+              "label": "First Summer Games",
+              "value": "1920 Antwerp"
+            },
+            {
+              "label": "First Winter Games",
+              "value": "1992 Albertville"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "40–49–81 (170 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "1–0–0 (1 total)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "277"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "14"
+            }
+          ],
+          "sha256": "6ec4e17e84062369eb98ab377dcbcc2bc0b285b4e5890c8db48a0a77f126b358",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -25047,6 +25181,64 @@
               }
             ]
           }
+        },
+        {
+          "id": "my-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Olympic Council of Malaysia (OCM)",
+          "commons": "Olympic Council of Malaysia logo.svg",
+          "file": "my/my-olympic-committee.svg",
+          "design": "The Olympic Council of Malaysia's mark: Malaysia's national flag, the Jalur Gemilang, rendered as a waving banner above the five Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Olympic_Council_of_Malaysia",
+          "meaning": {
+            "description": "The mark reproduces Malaysia's national flag in full: fourteen alternating red-and-white stripes for the equal status of the thirteen states and the federal government, and the dark-blue canton's crescent and fourteen-point star for Islam as the federation's official religion and that same federal unity. Confirmed as the Council's current mark on its own website (olympics.com.my), which pairs it with the wordmark “OLYMPIC COUNCIL OF MALAYSIA.”",
+            "sources": [
+              {
+                "title": "Flag of Malaysia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
+              }
+            ]
+          },
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1953 (as the Federation of Malaya Olympic Council; recognised by the IOC in 1954)"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "17 (1956–2024, excluding the 1980 boycott)"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "3 (2018, 2022, 2026)"
+            },
+            {
+              "label": "First Summer Games",
+              "value": "1956 Melbourne (as Malaya)"
+            },
+            {
+              "label": "First Winter Games",
+              "value": "2018 Pyeongchang"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–8–7 (15 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "26"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "1"
+            }
+          ],
+          "sha256": "97aacc72ade09e70bea2ce9d5495a1b5f95415ed1bb889399540475018a143f0",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -26774,6 +26966,69 @@
               }
             ]
           }
+        },
+        {
+          "id": "nr-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Nauru Olympic Committee (NOC)",
+          "url": "https://cdn.prod.website-files.com/5eb4a50ae668403b239720c9/5ee85811de1b9757baf5b0ec_NOC%20Logo%20-%20NAURU.jpg",
+          "file": "nr/nr-olympic-committee.jpg",
+          "licenceNote": "A copyrighted emblem, fetched from the Oceania National Olympic Committees' own membership directory (oceanianoc.org/membership/nauru), which hosts the identical mark the English Wikipedia carries as non-free/fair-use at a lower resolution (no freely-licensed version exists on Wikimedia Commons). Bundled non-free, exactly like the other non-free national-symbol marks in this file.",
+          "design": "The Nauru Olympic Committee's mark: a multi-pointed star beside the word “NAURU”, over orange-and-blue wave bands and the words “OLYMPIC COMMITTEE”, beside the five Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Nauru_Olympic_Committee",
+          "meaning": {
+            "description": "The star and the blue tones echo Nauru's own national flag and coat of arms, where a twelve-pointed star stands for the island's twelve original tribes and blue represents the surrounding Pacific Ocean that isolates it.",
+            "sources": [
+              {
+                "title": "Coat of arms of Nauru — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru"
+              },
+              {
+                "title": "Flag of Nauru — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Nauru"
+              }
+            ]
+          },
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1991 (recognised by the IOC in 1994)"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "8 (1996–2024)"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0 (never competed)"
+            },
+            {
+              "label": "First Summer Games",
+              "value": "1996 Atlanta"
+            },
+            {
+              "label": "First Winter Games",
+              "value": "Never competed"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "1"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "sha256": "5db6be20749a416f9e719486459f36073a384fd54d909ae9b2f35868e1fd28d7",
+          "fetched": "2026-09-16"
         }
       ],
       "independence": {
@@ -38090,6 +38345,14 @@
               }
             ]
           }
+        },
+        {
+          "id": "va-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "No National Olympic Committee",
+          "noImageReason": "Vatican City has no logo to show because it has no National Olympic Committee — it is the only wholly independent state never recognised by the IOC. Recognition requires national federations affiliated with at least five Olympic sports; as of 2024 Vatican City held only two (cycling, joining the UCI in 2021, and taekwondo, joining World Taekwondo the same year). Vatican athletes have never competed at the Olympics under their own flag; the Holy See sent observer delegations to the 2016 Rio and 2018 Pyeongchang Games.",
+          "design": "There is no Vatican City Olympic Committee logo — see the reason above.",
+          "source": "https://en.wikipedia.org/wiki/Vatican_City_at_the_Olympics"
         }
       ]
     },
