@@ -32,6 +32,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       id: "au-tourism-australia",
       countryCode: "AU",
       name: "Tourism Australia",
+      slogan: "Come and Say G'day",
       agency:
         "Tourism Australia — the Australian Government's tourism-marketing statutory authority, established under the Tourism Australia Act 2004",
       launched: 2012,
@@ -48,6 +49,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         "https://en.wikipedia.org/wiki/Tourism_Australia",
         "https://www.designweek.co.uk/issues/may-2012/interbrand-creates-new-identity-for-tourism-australia/",
         "https://www.abs.gov.au/statistics/industry/tourism-and-transport/overseas-arrivals-and-departures-australia",
+        "https://www.tourism.australia.com/en/news-and-events/news/global-campaign-to-invite-the-world-to-come-and-say-gday-media-release.html",
       ],
       licenceNote:
         "Non-free trademark logo, bundled from the file used under fair use on English Wikipedia (there sourced from tourism.australia.com) and reproduced here for educational identification only — the same non-free bundling discipline already applied to passport covers and football crests in this repo.",
@@ -85,6 +87,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       id: "br-marca-brasil",
       countryCode: "BR",
       name: "Marca Brasil",
+      slogan: "It's Spectacular. It's Brasil",
       agency: "Embratur (Instituto Brasileiro de Turismo), together with ApexBrasil",
       launched: 2005,
       visitors: {
@@ -101,6 +104,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         "https://commons.wikimedia.org/wiki/File:Logo-Embratur-2023-Cinza-1024x157.png",
         "https://www.gov.br/secom/en/latest-news/2024/12/brazil-welcomed-6-6-million-international-tourists-in-2024-its-best-historical-mark",
         "https://www.itij.com/latest/news/brazil-records-record-tourist-numbers",
+        "https://embratur.com.br/2023/07/24/spetacular-sustainable-embratur-assume-brasil-com-s-em-campanha-nos-eua/",
       ],
       licenceNote:
         "Bundled from the greyscale 2023 press file Embratur itself published (embratur.com.br), catalogued on Wikimedia Commons as public domain in the United States; Brazilian government works are not automatically public domain in Brazil, so this remains reproduced here for educational identification of Brazil's official tourism brand rather than as a claim of unrestricted reuse.",

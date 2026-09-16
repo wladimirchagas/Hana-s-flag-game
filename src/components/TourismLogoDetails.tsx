@@ -71,13 +71,14 @@ export function TourismLogoDetails({
           <dt className="entity-summary__label">Board</dt>
           <dd className="entity-summary__value">
             <strong>{logo.name}</strong>
-            {logo.slogan && (
-              <span className="learn-fs__sub-desc" style={{ display: "block", fontSize: "0.85em", color: "var(--text-muted)" }}>
-                “{logo.slogan}”
-              </span>
-            )}
           </dd>
         </div>
+        {logo.slogan && (
+          <div className="entity-summary__row">
+            <dt className="entity-summary__label">Tourism slogan</dt>
+            <dd className="entity-summary__value">“{logo.slogan}”</dd>
+          </div>
+        )}
         <div className="entity-summary__row">
           <dt className="entity-summary__label">Agency</dt>
           <dd className="entity-summary__value">{logo.agency}</dd>
