@@ -7,6 +7,8 @@ import { airlinesForCountry } from "../lib/commercialAirlines";
 import type { CommercialAirline } from "../types/airline";
 import { broadcastersForCountry } from "../lib/publicBroadcasters";
 import type { PublicBroadcaster } from "../types/broadcaster";
+import { tourismLogosForCountry } from "../lib/tourismLogos";
+import type { TourismLogo } from "../types/tourismLogo";
 import { GridImage } from "./GridImage";
 
 /**
@@ -116,10 +118,13 @@ type Props = {
   selectedAirlineId?: string | null;
   /** id of the public broadcaster whose widget is open (if any). */
   selectedBroadcasterId?: string | null;
+  /** id of the tourism logo whose widget is open (if any). */
+  selectedTourismLogoId?: string | null;
   baseUrl: string;
   onSelect: (flag: NationalFlag) => void;
   onSelectAirline?: (airline: CommercialAirline) => void;
   onSelectBroadcaster?: (broadcaster: PublicBroadcaster) => void;
+  onSelectTourismLogo?: (logo: TourismLogo) => void;
 };
 
 export function NationalFlagGrid({
@@ -128,10 +133,12 @@ export function NationalFlagGrid({
   selectedFlagId,
   selectedAirlineId,
   selectedBroadcasterId,
+  selectedTourismLogoId,
   baseUrl,
   onSelect,
   onSelectAirline,
   onSelectBroadcaster,
+  onSelectTourismLogo,
 }: Props) {
   const countryGroups = useMemo(
     () => groupFlags(NATIONAL_FLAGS[countryCode] ?? []),
@@ -146,8 +153,9 @@ export function NationalFlagGrid({
   );
   const airlines = useMemo(() => airlinesForCountry(countryCode), [countryCode]);
   const broadcasters = useMemo(() => broadcastersForCountry(countryCode), [countryCode]);
+  const tourismLogos = useMemo(() => tourismLogosForCountry(countryCode), [countryCode]);
 
-  if (countryGroups.length === 0 && entitySections.length === 0 && airlines.length === 0 && broadcasters.length === 0) {
+  if (countryGroups.length === 0 && entitySections.length === 0 && airlines.length === 0 && broadcasters.length === 0 && tourismLogos.length === 0) {
     return (
       <p className="flag-grid__no-match">
         No sourced national flags are available for {countryName} yet.
@@ -183,7 +191,7 @@ export function NationalFlagGrid({
             <ul className="flag-grid__list">
               {airlines.map((airline) => {
                 const active = airline.id === selectedAirlineId;
-                const logoUrl = airline.logo ? `${baseUrl}${airline.logo}` : null;
+                const logoUrl = airline.logo ? `${baseUrl}${airline.logo.replace(/^\//, "")}` : null;
                 return (
                   <li key={airline.id} className="flag-grid__item">
                     <button
@@ -223,6 +231,56 @@ export function NationalFlagGrid({
         </div>
       )}
 
+      {tourismLogos.length > 0 && (
+        <div className="flag-grid__groups">
+          <div className="flag-grid__group">
+            <h4 className="flag-grid__group-heading">
+              <span className="flag-grid__group-name">Tourism logos</span>
+              <span className="flag-grid__group-count">({tourismLogos.length})</span>
+            </h4>
+            <ul className="flag-grid__list">
+              {tourismLogos.map((logo) => {
+                const active = logo.id === selectedTourismLogoId;
+                const logoUrl = logo.logo ? `${baseUrl}${logo.logo.replace(/^\//, "")}` : null;
+                return (
+                  <li key={logo.id} className="flag-grid__item">
+                    <button
+                      type="button"
+                      className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
+                      onClick={() => onSelectTourismLogo?.(logo)}
+                      aria-pressed={active}
+                      aria-label={`Show ${logo.name}`}
+                    >
+                      <span className="flag-grid__thumb">
+                        {logoUrl ? (
+                          <GridImage
+                            src={logoUrl}
+                            alt=""
+                            draggable={false}
+                            className="flag-grid__thumb-img"
+                            onError={(e) => { e.currentTarget.style.display = "none"; }}
+                          />
+                        ) : (
+                          <span className="flag-grid__no-image" aria-hidden="true">
+                            No logo
+                          </span>
+                        )}
+                      </span>
+                      <span className="flag-grid__name">
+                        <AutoFitName className="flag-grid__name-text" text={logo.name} />
+                        {logo.slogan && (
+                          <span className="flag-grid__flag-sub">{logo.slogan}</span>
+                        )}
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      )}
+
       {broadcasters.length > 0 && (
         <div className="flag-grid__groups">
           <div className="flag-grid__group">
@@ -233,7 +291,7 @@ export function NationalFlagGrid({
             <ul className="flag-grid__list">
               {broadcasters.map((broadcaster) => {
                 const active = broadcaster.id === selectedBroadcasterId;
-                const logoUrl = broadcaster.logo ? `${baseUrl}${broadcaster.logo}` : null;
+                const logoUrl = broadcaster.logo ? `${baseUrl}${broadcaster.logo.replace(/^\//, "")}` : null;
                 return (
                   <li key={broadcaster.id} className="flag-grid__item">
                     <button

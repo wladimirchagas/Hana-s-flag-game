@@ -33,7 +33,7 @@ export function BroadcasterDetails({
     ? broadcaster.logo
     : broadcaster.logo.startsWith(baseUrl)
       ? broadcaster.logo
-      : `${baseUrl}${broadcaster.logo}`;
+      : `${baseUrl}${broadcaster.logo.replace(/^\//, "")}`;
 
   return (
     <div className="broadcaster-details">

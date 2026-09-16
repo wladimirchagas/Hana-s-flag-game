@@ -21,6 +21,9 @@ on:
       - "scripts/check-commercial-airlines.mjs"
       - "src/data/commercialAirlines.ts"
       - "public/airline-logos/**"
+      - "scripts/check-tourism-logos.mjs"
+      - "src/data/tourismLogos.ts"
+      - "public/tourism-logos/**"
       - "src/api/subdivisions.ts"
       - "src/lib/subdivisionMeta.ts"
       - "src/data/flagMeanings.ts"
@@ -274,3 +277,6 @@ jobs:
 
       - name: Verify every commercial airline is sourced, bundled and well-formed
         run: node scripts/check-commercial-airlines.mjs
+
+      - name: Verify every tourism logo is sourced, bundled and well-formed
+        run: node scripts/check-tourism-logos.mjs

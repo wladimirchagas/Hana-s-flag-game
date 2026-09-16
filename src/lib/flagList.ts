@@ -66,7 +66,11 @@ export type FlagListEntry = {
   broadcasterLogo?: string | null;
   /** Unique broadcaster ID (e.g. "au-abc") when this card represents a broadcaster. */
   broadcasterId?: string;
-  /** Country display name when this entry represents an airline grouped under a country. */
+  /** Resolved tourism-board logo URL for the grid's "Tourism logos" view. */
+  tourismLogoImage?: string | null;
+  /** Unique tourism-logo ID (e.g. "au-tourism-australia") when this card represents a tourism logo. */
+  tourismLogoId?: string;
+  /** Country display name when this entry represents an airline/broadcaster/tourism logo grouped under a country. */
   countryName?: string;
   /**
    * Country code to select when this card is clicked, when it differs from `id`.
