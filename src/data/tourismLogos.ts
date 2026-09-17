@@ -3120,4 +3120,123 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  KW: [
+    {
+      id: "kw-tourism",
+      countryCode: "KW",
+      name: "Tourism in Kuwait",
+      agency: "General Secretariat of the Supreme Council for Planning and Development, Kuwait",
+      visitors: {
+        count: 2161000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Kuwait)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Kuwait, which holds only attraction/hotel photographs, no logo) and the English Wikipedia \"Tourism in Kuwait\" article, which names no national tourism authority, brand or slogan at all — Kuwait does not appear to have a dedicated consumer-facing tourism-promotion brand comparable to its Gulf neighbours' \"Visit Saudi\"/\"Visit Qatar\".",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Kuwait"],
+    },
+  ],
+  MK: [
+    {
+      id: "mk-macedonia-timeless",
+      countryCode: "MK",
+      name: "North Macedonia Timeless",
+      slogan: "Macedonia Timeless",
+      agency: "Agency for Promotion and Support of Tourism of the Republic of North Macedonia",
+      launched: 2008,
+      visitors: {
+        count: 118000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for North Macedonia)",
+      },
+      logo: "/tourism-logos/mk/macedonia-timeless.jpg",
+      logoExplainer:
+        "A hand-drawn golden sun (evoking the Vergina Sun/Kutlesh sun symbol) rising over the word \"MACEDONIA\" in red, on a rustic textured background — the mark for the \"Macedonia Timeless\" promotional campaign launched 2008–2009, whose own live website (still branded \"North Macedonia Timeless\") remains the country's official tourism portal.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Macedonia_Timeless",
+        "https://macedonia-timeless.com/eng",
+      ],
+      licenceNote:
+        "Non-free/fair-use logo hosted locally on English Wikipedia (not Wikimedia Commons) — used there under a non-free-content rationale for identifying the campaign. Bundled here on the same basis this repo already uses for non-Commons crests and passport covers: a copyrighted organisational logo, cited to its source, for identification rather than decoration.",
+    },
+  ],
+  MC: [
+    {
+      id: "mc-visit-monaco",
+      countryCode: "MC",
+      name: "Visit Monaco",
+      slogan: "Visit Monaco",
+      agency: "Direction du Tourisme et des Congrès de Monaco",
+      visitors: {
+        count: 159000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Monaco)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for the Direction du Tourisme et des Congrès' \"Visit Monaco\" identity — no freely-licensed copy could be found; Commons holds only unrelated Monaco logos (Club Monaco fashion brand, the Government's own seal, Monaco Telecom, TVMonaco).",
+      sources: [
+        "https://cvb.visitmonaco.com/fr/actus/22072/un-nouveau-logo-pour-la-direction-du-tourisme-des-congres",
+        "https://www.gouv.mc/Action-Gouvernementale/L-Economie/Tourisme-et-Congres",
+      ],
+    },
+  ],
+  SM: [
+    {
+      id: "sm-visit-san-marino",
+      countryCode: "SM",
+      name: "Visit San Marino",
+      slogan: "Imagining It Is Not Enough. Come and Experience It.",
+      agency: "Ufficio del Turismo (San Marino Tourist Office)",
+      visitors: {
+        count: 1904000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for San Marino)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in San Marino\" article, which names the Tourist Office's slogan but carries no infobox logo — no freely-licensed copy of the \"Visit San Marino\" (visitsanmarino.com) logo could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_San_Marino", "https://www.visitsanmarino.com/"],
+    },
+  ],
+  CV: [
+    {
+      id: "cv-instituto-do-turismo",
+      countryCode: "CV",
+      name: "Instituto do Turismo de Cabo Verde",
+      slogan: "No Stress",
+      agency: "Instituto do Turismo de Cabo Verde",
+      visitors: {
+        count: 180000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Cabo Verde)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and Wikidata for an Instituto do Turismo de Cabo Verde / turismo.cv logo — no freely-licensed copy could be found. \"No Stress\" (Cabo Verde's well-known morabeza motto, widely printed on souvenirs and murals) is a cultural catchphrase rather than a registered agency logo, so it is recorded as the slogan, not treated as if it had its own emblem.",
+      sources: ["https://turismo.cv/", "https://www.wikidata.org/wiki/Q1011"],
+    },
+  ],
+  MG: [
+    {
+      id: "mg-ontm",
+      countryCode: "MG",
+      name: "Office National du Tourisme de Madagascar",
+      agency: "Office National du Tourisme de Madagascar (ONTM)",
+      visitors: {
+        count: 87100,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Madagascar)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for the Office National du Tourisme de Madagascar (ONTM) logo — no freely-licensed copy could be found.",
+      sources: [
+        "https://www.developmentaid.org/organizations/view/221601/office-national-du-tourisme-de-madagascar-ontm",
+        "https://www.mta.gov.mg/",
+      ],
+    },
+  ],
 };
