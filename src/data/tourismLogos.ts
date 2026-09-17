@@ -84,9 +84,9 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
   ],
   BR: [
     {
-      id: "br-embratur",
+      id: "br-marca-brasil",
       countryCode: "BR",
-      name: "Embratur",
+      name: "Marca Brasil",
       slogan: "It's Spectacular. It's Brasil",
       agency: "Embratur (Instituto Brasileiro de Turismo), together with ApexBrasil",
       visitors: {
@@ -95,19 +95,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, consolidated Embratur / Ministry of Tourism / Federal Police data",
       },
-      logo: "/tourism-logos/br/embratur.svg",
-      logoExplainer:
-        "Embratur's own mark pairs a diamond built from three colour blocks — green, gold and blue, echoing the green field, gold rhombus and blue celestial globe of the Brazilian flag — with the agency's name set in a plain dark-grey wordmark. This is the logo Embratur uses in its own official communications (sourced here from its 2025 Action Plan). Internationally the agency also promotes Brazil under the flag-coloured \"Marca Brasil\" nation-brand and the English-market tagline \"It's Spectacular. It's Brasil\", relaunched in February 2023 alongside a renewed focus on environmental sustainability in the country's global image.",
+      noImageReason:
+        "Marca Brasil is the consumer-facing destination brand Brazil promotes to tourists — a flag-coloured compass rose designed by Kiko Farkas in 2005 for the Plano Aquarela and relaunched by Embratur in February 2023 — but no freely-licensed copy of that specific mark could be found. Searched: Wikimedia Commons (Category:Logos of Brazil, Category:Logos of governments and government agencies of Brazil, Category:SVG logos of Brazil — none matches), the English and Portuguese Wikipedia articles for Embratur and \"Marca Brasil\" (the Portuguese article under that exact title is a name collision with an unrelated sports magazine, not the tourism brand), and the official marca.visitbrasil.com / antigo.visitbrasil.com brand pages (both return 403/blocked to automated fetches). Embratur's OWN separate institutional/corporate mark (a green-gold-blue diamond plus wordmark, unrelated in design to Marca Brasil) is freely hosted on Commons, but bundling it here would misrepresent it as the consumer tourism brand it is not — the same distinction this repo's rules draw between a federation's corporate logo and the crest a team actually wears.",
       sources: [
-        "https://commons.wikimedia.org/wiki/File:Logotipo_da_Embratur.svg",
-        "https://pt.wikipedia.org/wiki/Embratur",
+        "https://pt.wikipedia.org/wiki/Instituto_Brasileiro_de_Turismo",
         "https://embratur.com.br/2023/02/14/brasil-reafirma-compromisso-com-sustentabilidade-com-retomada-de-logomarca-internacional/",
+        "https://www.printmag.com/branding-identity-design/kiko-farkas-talks-about-his-curvaceous-marca-brasil/",
         "https://www.gov.br/secom/en/latest-news/2024/12/brazil-welcomed-6-6-million-international-tourists-in-2024-its-best-historical-mark",
         "https://www.itij.com/latest/news/brazil-records-record-tourist-numbers",
         "https://embratur.com.br/2023/07/24/spetacular-sustainable-embratur-assume-brasil-com-s-em-campanha-nos-eua/",
       ],
-      licenceNote:
-        "Public domain (PD-textlogo): the mark consists of simple geometric shapes and text below the threshold of copyright originality, per its Wikimedia Commons file page — sourced there from Embratur's own \"Plano de Ação 2025\" (1st revision). It remains a protected trademark of Embratur in commerce.",
     },
   ],
   NR: [
