@@ -6711,4 +6711,125 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline historic trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  GM: [
+    {
+      id: "gm-gambia-bird",
+      countryCode: "GM",
+      name: "Gambia Bird",
+      iata: "3G",
+      icao: "GBQ",
+      founded: 2012,
+      alliance: "None",
+      hubs: ["Banjul International Airport (BJL)"],
+      fleet: {
+        total: 2,
+        summary: "2 Airbus A319-100 aircraft",
+      },
+      logo: "/airline-logos/gm/gambia-bird.png",
+      logoExplainer:
+        "Features the vibrant stylized Gambian roller bird and graceful wing motif rendered in the rich crimson, navy, and green hues of the national flag of The Gambia, symbolizing friendly hospitality, reliability, and West African connection.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Gambia_Bird",
+      ],
+      licenceNote:
+        "Commercial airline historic trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  LR: [
+    {
+      id: "lr-air-liberia",
+      countryCode: "LR",
+      name: "Air Liberia",
+      iata: "NL",
+      icao: "ALI",
+      founded: 1974,
+      alliance: "None",
+      hubs: ["Roberts International Airport (ROB)", "Spriggs Payne Airport (MLW)"],
+      fleet: {
+        total: 3,
+        summary: "Historic fleet included Boeing 737-200, Britten-Norman Islander, and Hawker Siddeley HS 748",
+      },
+      logo: "/airline-logos/lr/air-liberia.png",
+      logoExplainer:
+        "Features the classic circular blue and red roundel with the lone white star of Liberia intersecting aerodynamic flight bands, representing sovereign national independence, pride, and historic transatlantic air links.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Air_Liberia",
+      ],
+      licenceNote:
+        "Commercial airline historic trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  LS: [
+    {
+      id: "ls-maluti-sky",
+      countryCode: "LS",
+      name: "Maluti Sky",
+      iata: "7D",
+      icao: "MSU",
+      founded: 2012,
+      alliance: "None",
+      hubs: ["Moshoeshoe I International Airport (MSU)"],
+      fleet: {
+        total: 2,
+        summary: "2 Bombardier CRJ200 aircraft",
+      },
+      logo: "/airline-logos/ls/maluti-sky.png",
+      logoExplainer:
+        "Features the bold silhouette of the traditional Basotho mokorotlo straw hat rising above soaring aerodynamic wings in majestic mountain cobalt blue, symbolizing the Mountain Kingdom's high-altitude majesty and scheduled air links to Johannesburg.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Maluti_Sky",
+      ],
+      licenceNote:
+        "Commercial airline historic trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  SS: [
+    {
+      id: "ss-south-supreme-airlines",
+      countryCode: "SS",
+      name: "South Supreme Airlines",
+      iata: "9U",
+      icao: "SSA",
+      founded: 2013,
+      alliance: "None",
+      hubs: ["Juba International Airport (JUB)"],
+      fleet: {
+        total: 3,
+        summary: "3 aircraft (Boeing 737-300, Fokker 50, Let L-410 Turbolet)",
+      },
+      logo: "/airline-logos/ss/south-supreme-airlines.png",
+      logoExplainer:
+        "Features the radiant golden rising sun and dynamic flight chevron in the national colours of South Sudan, signifying the dawn of a new sovereign nation, hope, and vital domestic transport connecting Juba, Wau, and Malakal.",
+      sources: [
+        "https://en.wikipedia.org/wiki/South_Supreme_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline historic trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  BJ: [
+    {
+      id: "bj-benin-airlines",
+      countryCode: "BJ",
+      name: "Benin Airlines",
+      iata: "ABT",
+      icao: "ABT",
+      founded: 2014,
+      alliance: "None",
+      hubs: ["Cotonou Cadjehoun Airport (COO)"],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Cessna 208 Caravan, Piper PA-34 Seneca)",
+      },
+      logo: "/airline-logos/bj/benin-airlines.png",
+      logoExplainer:
+        "Features the official modern emblem displaying the stylized national contours and aircraft silhouette crowned with the tricolour green, yellow, and red accents of the Republic of Benin, signifying domestic connectivity, safety, and regional scheduled charter services.",
+      sources: [
+        "https://benin-airlines.com/",
+        "https://en.wikipedia.org/wiki/Benin_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
