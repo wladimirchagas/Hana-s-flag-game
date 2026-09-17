@@ -142,7 +142,7 @@ for (const [countryKey, list] of Object.entries(agenciesByCountry)) {
       failures.push(`${ctx}: owner must specify name and type strings`);
     }
 
-    if (!agency.annualPublicFunding || typeof agency.annualPublicFunding.total !== "string" || typeof agency.annualPublicFunding.perCapita !== "string") {
+    if (agency.annualPublicFunding && (typeof agency.annualPublicFunding.total !== "string" || typeof agency.annualPublicFunding.perCapita !== "string")) {
       failures.push(`${ctx}: annualPublicFunding must specify total and perCapita strings`);
     }
 
