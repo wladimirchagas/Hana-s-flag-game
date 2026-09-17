@@ -6580,15 +6580,135 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
       },
       logo: "/airline-logos/ps/palestinian-airlines.png",
       logoExplainer:
-        "Features the stylized Palestinian sunburst and flight wings adorned with the pan-Arab national colors (black, white, green, and red), symbolizing national identity, perseverance, and civil aviation history connecting Gaza to Cairo, Amman, Jeddah, and Dubai.",
+          "Features the stylized Palestinian sunburst and flight wings adorned with the pan-Arab national colors (black, white, green, and red), symbolizing national identity, perseverance, and civil aviation history connecting Gaza to Cairo, Amman, Jeddah, and Dubai.",
       sources: [
         "https://en.wikipedia.org/wiki/Palestinian_Airlines",
       ],
       licenceNote:
-        "Commercial airline trademark and historic logo bundled for educational reference in Learn mode.",
+        "Commercial airline historic trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  AG: [
+    {
+      id: "ag-liat-2020",
+      countryCode: "AG",
+      name: "LIAT 2020",
+      iata: "5L",
+      icao: "LIA",
+      founded: 2024,
+      alliance: "None",
+      hubs: ["V. C. Bird International Airport (ANU)"],
+      fleet: {
+        total: 3,
+        summary: "3 aircraft (Embraer ERJ-145, ATR 42-600)",
+      },
+      logo: "/airline-logos/ag/liat-2020.svg",
+      logoExplainer:
+        "Features the vibrant, modernised wordmark and stylized geometric bird emblem in brilliant Caribbean turquoise, sunburst yellow, and ocean navy, commemorating the vital historic inter-island connectivity and regional renewal of Leeward Islands Air Transport based in Antigua.",
+      sources: [
+        "https://www.flyliat20.com/",
+        "https://en.wikipedia.org/wiki/LIAT_2020",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  BB: [
+    {
+      id: "bb-redjet",
+      countryCode: "BB",
+      name: "REDjet",
+      iata: "RD",
+      icao: "RDJ",
+      founded: 2006,
+      alliance: "None",
+      hubs: ["Grantley Adams International Airport (BGI)"],
+      fleet: {
+        total: 2,
+        summary: "2 McDonnell Douglas MD-82 aircraft",
+      },
+      logo: "/airline-logos/bb/redjet.png",
+      logoExplainer:
+        "Features the high-energy scarlet and golden-yellow swooshing typography and dynamic supersonic contrail, symbolizing affordable, accessible low-cost Caribbean air travel and regional pioneering spirit operating out of Grantley Adams International Airport in Barbados.",
+      sources: [
+        "https://en.wikipedia.org/wiki/REDjet",
+      ],
+      licenceNote:
+        "Commercial airline historic trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  VC: [
+    {
+      id: "vc-svg-air",
+      countryCode: "VC",
+      name: "SVG Air",
+      iata: "SVG",
+      icao: "SVG",
+      founded: 1990,
+      alliance: "Grenadine Alliance",
+      hubs: ["Argyle International Airport (SVD)", "J. F. Mitchell Airport (BQU)"],
+      fleet: {
+        total: 6,
+        summary: "6 aircraft (DHC-6 Twin Otter, Cessna 402, Britten-Norman Islander)",
+      },
+      logo: "/airline-logos/vc/svg-air.png",
+      logoExplainer:
+        "Features the iconic arching multi-colored rainbow ribbons and bold navy SVG Air typography, capturing the brilliant tropical skies, island archipelago connections, and essential inter-island air bridge across Saint Vincent and the Grenadines.",
+      sources: [
+        "https://svgair.com/",
+        "https://en.wikipedia.org/wiki/SVG_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  TO: [
+    {
+      id: "to-lulutai-airlines",
+      countryCode: "TO",
+      name: "Lulutai Airlines",
+      iata: "L5",
+      icao: "LUL",
+      founded: 2020,
+      alliance: "None",
+      hubs: ["Fuaʻamotu International Airport (TBU)"],
+      fleet: {
+        total: 3,
+        summary: "3 aircraft (Saab 340, Viking DHC-6 Twin Otter 400, Harbin Y-12)",
+      },
+      logo: "/airline-logos/to/lulutai-airlines.png",
+      logoExplainer:
+        "Features the graceful endemic Polynesian bird in flight framed within a regal royal crest and traditional Tongan red and gold palette, honoring the Kingdom of Tonga's maritime heritage, sovereign island links, and national aviation pride.",
+      sources: [
+        "https://www.lulutai.to/",
+        "https://en.wikipedia.org/wiki/Lulutai_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  BI: [
+    {
+      id: "bi-air-burundi",
+      countryCode: "BI",
+      name: "Air Burundi",
+      iata: "8Y",
+      icao: "PBU",
+      founded: 1971,
+      alliance: "AFRAA",
+      hubs: ["Bujumbura Melchior Ndadaye International Airport (BJM)"],
+      fleet: {
+        total: 1,
+        summary: "Historic and scheduled regional fleet included Xian MA60, DHC-6 Twin Otter, and Sud Aviation Caravelle",
+      },
+      logo: "/airline-logos/bi/air-burundi.png",
+      logoExplainer:
+        "Features the classic national emblem incorporating the three traditional stars and soaring wings in the Pan-African green, white, and red heraldry of Burundi, signifying national sovereignty, unity, and central African regional transit.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Air_Burundi",
+      ],
+      licenceNote:
+        "Commercial airline historic trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
 };
-
-
-
