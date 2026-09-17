@@ -194,7 +194,7 @@ export default defineConfig({
         // to 8 MB with headroom for the ongoing sweeps. Re-bump rather than
         // reintroduce a build failure; the real fix (code-splitting the data
         // modules out of the main entry chunk) is a larger, separate task.
-        maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
+        maximumFileSizeToCacheInBytes: 15 * 1024 * 1024,
       },
       devOptions: {
         // Keep the install button working in `npm run dev` so we can test
