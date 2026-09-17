@@ -3575,4 +3575,114 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       sources: ["https://www.nz.kayak.com/Togo.239.dc.guide"],
     },
   ],
+  HT: [
+    {
+      id: "ht-ministry-of-tourism",
+      countryCode: "HT",
+      name: "Ministère du Tourisme d'Haïti",
+      agency: "Ministère du Tourisme, Haiti",
+      visitors: {
+        count: 938000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Haiti)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia \"Ministry of Tourism (Haiti)\" article — the article's infobox carries only Haiti's national coat of arms as a generic placeholder, not the ministry's own distinct logo, and no freely-licensed copy of an actual ministry logo could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Haiti)"],
+    },
+  ],
+  LR: [
+    {
+      id: "lr-lnta",
+      countryCode: "LR",
+      name: "Liberia National Tourism Authority",
+      slogan: "The Choicest Destination",
+      agency: "Liberia National Tourism Authority (LNTA)",
+      launched: 2024,
+      visitorsNote:
+        "No World Bank international-tourist-arrivals figure is published for Liberia.",
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Liberia) for the Liberia National Tourism Authority's logo (established 2024) — no freely-licensed copy could be found.",
+      sources: ["https://lnta.gov.lr/", "https://en.wikipedia.org/wiki/Tourism_in_Liberia"],
+    },
+  ],
+  LS: [
+    {
+      id: "ls-ltdc",
+      countryCode: "LS",
+      name: "Lesotho Tourism Development Corporation",
+      agency: "Lesotho Tourism Development Corporation (LTDC)",
+      launched: 2002,
+      visitors: {
+        count: 1142000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Lesotho)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for the Lesotho Tourism Development Corporation's (LTDC, established 2002) logo — no freely-licensed copy could be found.",
+      sources: [
+        "https://lndc.org.ls/knowledge-base/lesotho-tourism-development-corporation-ltdc/",
+        "https://www.visitlesotho.org.ls/",
+      ],
+    },
+  ],
+  SZ: [
+    {
+      id: "sz-eswatini-tourism-authority",
+      countryCode: "SZ",
+      name: "Eswatini Tourism Authority",
+      agency: "Eswatini Tourism Authority (ETA)",
+      visitors: {
+        count: 345300,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Eswatini)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Eswatini) for the Eswatini Tourism Authority's logo — no freely-licensed copy could be found.",
+      sources: ["https://eswatinitourismauthority.org/", "https://www.thekingdomofeswatini.com/"],
+    },
+  ],
+  PS: [
+    {
+      id: "ps-ministry-of-tourism-and-antiquities",
+      countryCode: "PS",
+      name: "Ministry of Tourism and Antiquities",
+      agency: "Ministry of Tourism and Antiquities, Palestine",
+      launched: 1994,
+      visitors: {
+        count: 93000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (West Bank and Gaza, World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for a logo of Palestine's Ministry of Tourism and Antiquities (established 1994) — no freely-licensed copy of PALESTINE's own ministry logo could be found. The only \"Ministry of Tourism and Antiquities logo.png\" file on Commons is confirmed (filed under \"Coats of arms of Egypt\") to be EGYPT's ministry seal, not Palestine's — the same recurring cross-country false-positive already caught for Zambia, Tanzania, Myanmar and Cameroon earlier in this sweep — so it was not used.",
+      sources: ["https://en.wikipedia.org/wiki/Ministry_of_Tourism_and_Antiquities_(Palestine)"],
+    },
+  ],
+  UG: [
+    {
+      id: "ug-explore-uganda",
+      countryCode: "UG",
+      name: "Explore Uganda",
+      slogan: "Explore Uganda, the Pearl of Africa",
+      agency: "Uganda Tourism Board",
+      launched: 2022,
+      visitors: {
+        count: 473000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Uganda)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for the Uganda Tourism Board's \"Explore Uganda, the Pearl of Africa\" destination brand (launched 21 January 2022) — no freely-licensed copy of the logo could be found.",
+      sources: [
+        "https://utb.go.ug/explore-uganda-the-pearl-of-africa-the-new-destination-uganda-brand-represents-a-new-dawn-in-ugandas-tourism-sector/",
+        "https://en.wikipedia.org/wiki/Tourism_in_Uganda",
+      ],
+    },
+  ],
 };
