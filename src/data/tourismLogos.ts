@@ -2598,4 +2598,138 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       sources: ["https://commons.wikimedia.org/wiki/Category:Tourism_in_Vanuatu"],
     },
   ],
+  FR: [
+    {
+      id: "fr-explore-france",
+      countryCode: "FR",
+      name: "Explore France",
+      slogan: "Explore France",
+      agency: "Atout France (France Tourism Development Agency)",
+      launched: 2019,
+      visitors: {
+        count: 117109000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for France)",
+      },
+      logo: "/tourism-logos/fr/explore-france.png",
+      logoExplainer:
+        "A navy-blue \"Explore France\" wordmark with a small French tricolour flag set beside the text. Unveiled by the French Prime Minister on 28 August 2019 and run by Atout France, replacing the earlier \"Rendez-vous en France\" trade slogan as the country's consumer-facing destination brand.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Explore-France-wordmark.png",
+        "https://www.atout-france.fr/en/explore-france-int",
+      ],
+      licenceNote:
+        "Public domain per its Commons file page — \"consists only of simple geometric shapes or text\" (PD-textlogo), sourced from france.fr and uploaded directly by Explore France in 2021. Bundled here as a small (120px) thumbnail export because upload.wikimedia.org rejected this session's request for the full-resolution original and all standard intermediate thumbnail widths with a rate-limit error, accepting only sizes at or below the source's native 168px width.",
+    },
+  ],
+  GB: [
+    {
+      id: "gb-visitbritain",
+      countryCode: "GB",
+      name: "VisitBritain",
+      agency: "VisitBritain (British Tourist Authority)",
+      visitors: {
+        count: 11101000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the United Kingdom)",
+      },
+      logo: "/tourism-logos/gb/visitbritain.png",
+      logoExplainer:
+        "A white \"VISIT BRITAIN\" wordmark stacked over a stylised Union Jack rendered as radiating triangular beams, set on a solid red background — VisitBritain's own consumer-facing logo, distinct from the separate multi-department \"GREAT Britain & Northern Ireland\" government campaign mark.",
+      sources: [
+        "https://en.wikipedia.org/wiki/File:VisitBritain_logo.png",
+        "https://en.wikipedia.org/wiki/VisitBritain",
+        "https://www.visitbritain.org/",
+      ],
+      licenceNote:
+        "Non-free/fair-use logo hosted locally on English Wikipedia (not Wikimedia Commons) — used there under a non-free-content rationale for identifying the organisation. Bundled here on the same basis this repo already uses for non-Commons crests and passport covers: a copyrighted organisational logo, cited to its source, for identification rather than decoration.",
+    },
+  ],
+  IE: [
+    {
+      id: "ie-tourism-ireland",
+      countryCode: "IE",
+      name: "Tourism Ireland",
+      slogan: "Fill Your Heart With Ireland",
+      agency: "Tourism Ireland",
+      visitors: {
+        count: 10951000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Ireland)",
+      },
+      logo: "/tourism-logos/ie/tourism-ireland.svg",
+      logoExplainer:
+        "A green shamrock-inspired swirl mark beside the purple \"Tourism Ireland\" wordmark — the shamrock, Ireland's best-known national symbol, used by Tourism Ireland as what the organisation calls a memory trigger for its consumer brand across its global marketing campaigns, including \"Fill Your Heart With Ireland\".",
+      sources: [
+        "https://en.wikipedia.org/wiki/File:Tourism_Ireland_logo.svg",
+        "https://www.tourismireland.com/about-us/our-brand",
+        "https://www.tourismireland.com/what-we-do/global-marketing-campaigns/tourism-ireland-s-fill-your-heart-with-ireland",
+      ],
+      licenceNote:
+        "Non-free/fair-use logo hosted locally on English Wikipedia (not Wikimedia Commons) — used there under a non-free-content rationale for identifying the organisation. Bundled here on the same basis this repo already uses for non-Commons crests and passport covers: a copyrighted organisational logo, cited to its source, for identification rather than decoration.",
+    },
+  ],
+  DE: [
+    {
+      id: "de-germany-travel",
+      countryCode: "DE",
+      name: "German National Tourist Board",
+      slogan: "Germany. Simply inspiring.",
+      agency: "Deutsche Zentrale für Tourismus e.V. (GNTB / germany.travel)",
+      visitors: {
+        count: 12449000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Germany)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons, English and German Wikipedia, and germany.travel. The GNTB's current public-facing consumer brand, \"Germany. Simply inspiring.\" (served on germany.travel as dzt_logo_simply_inspiring.svg), has no freely-licensed copy on Commons. The only CC0 asset the organisation itself uploaded to Commons is a different \"Deutschland Das Reiseland\" wordmark, explicitly filenamed as a B2B trade asset rather than the current consumer brand, so it was not used as a substitute per this repo's consumer-brand-not-institutional-asset standard.",
+      sources: [
+        "https://en.wikipedia.org/wiki/German_National_Tourist_Board",
+        "https://www.germany.travel/en/about-us/about-us.html",
+      ],
+    },
+  ],
+  NL: [
+    {
+      id: "nl-holland-nbtc",
+      countryCode: "NL",
+      name: "Netherlands Board of Tourism & Conventions",
+      agency: "Netherlands Board of Tourism & Conventions (NBTC) / Holland.com",
+      launched: 2019,
+      visitors: {
+        count: 7265000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Netherlands)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and Wikipedia for the Netherlands' 2019 \"NL\" country-brand logo (an orange stylised-tulip mark by Studio Dumbar, designed jointly with the Netherlands Enterprise Agency to replace the earlier tulip-and-\"Holland\" identity) and the NBTC/Holland.com wordmark — no freely-licensed copy of either could be found on Commons.",
+      sources: [
+        "https://www.holland.com/global/meetings/contact/about-nbtc",
+        "https://www.dezeen.com/2019/11/20/netherlands-identity-nl-logo-studio-dumbar/",
+      ],
+    },
+  ],
+  US: [
+    {
+      id: "us-brand-usa",
+      countryCode: "US",
+      name: "Brand USA",
+      agency: "Brand USA (Corporation for Travel Promotion)",
+      launched: 2010,
+      visitors: {
+        count: 45037000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the United States)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia article for Brand USA — no infobox logo and no freely-licensed Brand USA (the United States' official destination marketing organisation, established 2010) consumer-brand logo could be found on Commons.",
+      sources: ["https://en.wikipedia.org/wiki/Brand_USA", "https://www.thebrandusa.com/"],
+    },
+  ],
 };
