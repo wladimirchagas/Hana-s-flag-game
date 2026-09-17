@@ -27,6 +27,111 @@ import type { TourismLogo } from "../types/tourismLogo";
  * sweeps for the discipline this collection follows: source properly, never pad.
  */
 export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
+  FI: [
+    {
+      id: "fi-visit-finland",
+      countryCode: "FI",
+      name: "Visit Finland",
+      agency: "Visit Finland, part of Business Finland",
+      visitors: {
+        count: 896000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Finland)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Finland, Category:Tourism in Finland) and the English Wikipedia article for \"Tourism in Finland\" — no freely-licensed Visit Finland logo file could be found; the one Commons file returned by search (\"Visit-suomi-2009-05-by-RalfR-061.jpg\") is a photograph of a physical sign, not the brand mark itself.",
+      sources: [
+        "https://www.visitfinland.com/en/",
+        "https://en.wikipedia.org/wiki/Tourism_in_Finland",
+      ],
+    },
+  ],
+  GT: [
+    {
+      id: "gt-asombrosa-e-imparable",
+      countryCode: "GT",
+      name: "Guatemala — \"Asombrosa e Imparable\"",
+      slogan: "Asombrosa e Imparable (Amazing and Unstoppable)",
+      agency: "Instituto Guatemalteco de Turismo (INGUAT)",
+      launched: 2022,
+      visitors: {
+        count: 594000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Guatemala)",
+      },
+      noImageReason:
+        "Guatemala's tourism brand changed in 2022 from the long-running \"Guatemala, Corazón del Mundo Maya\" (\"Heart of the Mayan World\") to \"Guatemala, Asombrosa e Imparable\" under President Alejandro Giammattei's government. Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Guatemala\" — no freely-licensed logo for either brand could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Guatemala",
+        "https://concriterio.gt/no-somos-mas-corazon-del-mundo-maya-hay-nueva-marca-y-costo-q6-8-millones/",
+      ],
+    },
+  ],
+  JM: [
+    {
+      id: "jm-jamaica-tourist-board",
+      countryCode: "JM",
+      name: "Jamaica Tourist Board",
+      agency: "Jamaica Tourist Board (JTB)",
+      visitors: {
+        count: 1329700,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Jamaica)",
+      },
+      noImageReason:
+        "Jamaica's tourism campaigns have changed slogan several times (\"Once You Go, You Know\" from 2003, replaced in 2013) without a single enduring destination brand mark. Searched Wikimedia Commons and jtbonline.org — no freely-licensed Jamaica Tourist Board logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://www.jtbonline.org/jtb/",
+        "https://www.travelweekly.com/Caribbean-Travel/Jamaica-ditches-longtime-slogan",
+      ],
+    },
+  ],
+  GH: [
+    {
+      id: "gh-ghana-tourism-authority",
+      countryCode: "GH",
+      name: "Ghana Tourism Authority",
+      agency: "Ghana Tourism Authority, under the Ministry of Tourism, Culture and Creative Arts",
+      visitors: {
+        count: 897000,
+        year: 2015,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Ghana)",
+      },
+      noImageReason:
+        "Ghana's own bundled Wikimedia Commons file (\"Ministry of Tourism, Ghana (Ghana Tourist Board) logo.jpg\") is the Ministry's institutional seal, not a consumer destination brand — the same category error the Brazil/Embratur entry in this dataset was corrected away from. Ghana's consumer-facing promotion has used the \"#SeeGhana\" hashtag and the globally reported \"Year of Return, Ghana 2019\" diaspora-tourism campaign, but no freely-licensed logo distinct from the Ministry's institutional seal could be found for either on Wikimedia Commons or Wikipedia.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Ministry_of_Tourism,_Ghana_(Ghana_Tourist_Board)_logo.jpg",
+        "https://en.wikipedia.org/wiki/Year_of_Return,_Ghana_2019",
+        "https://en.wikipedia.org/wiki/Tourism_in_Ghana",
+      ],
+    },
+  ],
+  NZ: [
+    {
+      id: "nz-100-pure-new-zealand",
+      countryCode: "NZ",
+      name: "100% Pure New Zealand",
+      slogan: "100% Pure New Zealand",
+      agency: "Tourism New Zealand",
+      launched: 1999,
+      visitors: {
+        count: 996000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for New Zealand)",
+      },
+      noImageReason:
+        "\"100% Pure New Zealand\", launched in 1999, is one of the world's longest-running destination-marketing campaigns — its mark stylises \"100% PURE\" above \"NEW ZEALAND\" with the percentage sign's crossbar formed from the shape of the New Zealand islands — but searching Wikimedia Commons and the English Wikipedia articles for \"Tourism New Zealand\" and \"Tourism in New Zealand\" found no freely-licensed copy of the logo.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_New_Zealand",
+        "https://www.tourismnewzealand.com/news-and-activity/tourism-new-zealands-100-pure-new-zealand-campaign-celebrates-25-years/",
+      ],
+    },
+  ],
   DK: [
     {
       id: "dk-visitdenmark-heart",
