@@ -2732,4 +2732,141 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       sources: ["https://en.wikipedia.org/wiki/Brand_USA", "https://www.thebrandusa.com/"],
     },
   ],
+  RU: [
+    {
+      id: "ru-discover-russia",
+      countryCode: "RU",
+      name: "Discover Russia",
+      slogan: "Discover Russia",
+      agency: "National Tourism Development Corporation, Russia",
+      launched: 2024,
+      visitors: {
+        count: 6359000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Russia)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos associated with tourism in Russia and Category:Tourism in Russia — neither holds a matching file) and the English Wikipedia \"Discover Russia\" article, whose only infobox image is an unrelated 2018–2019 sister-cities contest logo, not the 2024 Möbius-loop \"Discover Russia\" brand mark. No freely-licensed copy of the current brand could be found.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Discover_Russia",
+        "https://discoverrussia.ru/en",
+      ],
+    },
+  ],
+  CN: [
+    {
+      id: "cn-beautiful-china",
+      countryCode: "CN",
+      name: "Beautiful China",
+      slogan: "Beautiful China",
+      agency: "Ministry of Culture and Tourism (formerly the China National Tourism Administration)",
+      launched: 2013,
+      visitors: {
+        count: 30402000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for China)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for the 2013 \"Beautiful China\" traditional-seal logo (a red seal-script rendering of the phrase over a blue backdrop) — no freely-licensed copy could be found; the China National Tourism Administration that launched it was itself dissolved in 2018 and its duties merged into the Ministry of Culture and Tourism.",
+      sources: [
+        "https://www.unwto.org/archive/asia/news/2013-07-24/china-unveils-new-tourism-logo",
+        "https://en.wikipedia.org/wiki/China_National_Tourism_Administration",
+      ],
+    },
+  ],
+  ZA: [
+    {
+      id: "za-south-african-tourism",
+      countryCode: "ZA",
+      name: "South African Tourism",
+      slogan: "South Africa",
+      agency: "South African Tourism",
+      visitors: {
+        count: 3886600,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for South Africa)",
+      },
+      logo: "/tourism-logos/za/south-african-tourism.svg",
+      logoExplainer:
+        "A black chevron/arrow banner bearing the white cursive script \"South Africa\", with the arrow's trailing edge striped in the national flag's colours (green, gold, red, blue, with a white gap) — South African Tourism's own consumer destination mark, above the black \"SOUTH AFRICAN TOURISM\" organisation wordmark.",
+      sources: [
+        "https://en.wikipedia.org/wiki/File:South_African_Tourism_logo.svg",
+        "https://en.wikipedia.org/wiki/South_African_Tourism",
+      ],
+      licenceNote:
+        "Non-free/fair-use logo hosted locally on English Wikipedia (not Wikimedia Commons) — used there under a non-free-content rationale for identifying the organisation. Bundled here on the same basis this repo already uses for non-Commons crests and passport covers: a copyrighted organisational logo, cited to its source, for identification rather than decoration.",
+    },
+  ],
+  UA: [
+    {
+      id: "ua-ukraine-now",
+      countryCode: "UA",
+      name: "Ukraine NOW",
+      slogan: "Ukraine NOW",
+      agency: "Ukrainian Institute / Ministry of Foreign Affairs of Ukraine",
+      launched: 2018,
+      visitors: {
+        count: 3382000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Ukraine)",
+      },
+      logo: "/tourism-logos/ua/ukraine-now.png",
+      logoExplainer:
+        "The word \"Ukraine\" in dark grey beside \"NOW\" highlighted in yellow, with a small blue-and-yellow \".ua\" domain tab set into the wordmark. Approved by the Ukrainian government on 10 May 2018 (designed by Banda Agency) as the country's unified national brand across tourism, investment and cultural promotion, built around the country's own top-level internet domain.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Ua_now-logo_SVG_2.svg",
+        "https://en.wikipedia.org/wiki/Ukraine_NOW",
+        "https://www.kmu.gov.ua/en/news/uryad-shvaliv-novij-brend-ukrayina-zaraz-sho-zabezpechit-yedinij-stil-prezentaciyi-derzhavi-v-sviti",
+      ],
+      licenceNote:
+        "Dual-licensed on its Commons file page as CC BY-SA 4.0 and, separately, as public domain for not meeting the threshold of originality (a simple wordmark). Bundled here as a small (120px) thumbnail export because upload.wikimedia.org rejected this session's request for the full-resolution original and intermediate thumbnail widths with a rate-limit error, accepting only sizes at or below a small rendered width.",
+    },
+  ],
+  HU: [
+    {
+      id: "hu-wow-hungary",
+      countryCode: "HU",
+      name: "WOW Hungary",
+      slogan: "Wellspring of Wonders",
+      agency: "Hungarian Tourism Agency",
+      launched: 2018,
+      visitors: {
+        count: 31641000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Hungary)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Hungary, Category:Logos of Hungary — neither holds a matching file) and the English Wikipedia \"Tourism in Hungary\" article, which names no current brand or logo — no freely-licensed copy of the Hungarian Tourism Agency's 2018 \"WOW Hungary\" (Wellspring of Wonders), designed by Graphasel Design Studio around an ancient Hungarian motif, could be found.",
+      sources: [
+        "https://xpatloop.com/channels/2018/10/wow-hungary-national-brand-unveiled-at-tourism-summit.html",
+        "https://en.wikipedia.org/wiki/Tourism_in_Hungary",
+      ],
+    },
+  ],
+  RO: [
+    {
+      id: "ro-carpathian-garden",
+      countryCode: "RO",
+      name: "Explore the Carpathian Garden",
+      agency: "Ministry of Economy, Entrepreneurship and Tourism, Romania",
+      launched: 2009,
+      visitors: {
+        count: 5023000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Romania)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Romania) and the English Wikipedia \"Tourism in Romania\" article, which names no current brand or logo. The only sourced campaign, 2009's \"Explore the Carpathian Garden\" (a green hand-drawn leaf mark), ran only until 2015 and is no longer Romania's current tourism brand, so its logo is not shown as if it still were; no freely-licensed copy of any newer brand mark could be found.",
+      sources: [
+        "https://www.romania-insider.com/romanias-new-tourism-brand-explore-the-carpathian-garden",
+        "https://en.wikipedia.org/wiki/Tourism_in_Romania",
+      ],
+    },
+  ],
 };
