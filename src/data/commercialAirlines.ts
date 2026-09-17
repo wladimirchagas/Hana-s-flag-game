@@ -6832,4 +6832,126 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  GN: [
+    {
+      id: "gn-air-guinee",
+      countryCode: "GN",
+      name: "Air Guinée",
+      iata: "GI",
+      icao: "GIB",
+      founded: 1960,
+      alliance: "None",
+      hubs: ["Ahmed Sékou Touré International Airport (CKY)"],
+      fleet: {
+        total: 4,
+        summary: "Historic operations included Boeing 737-200, Antonov An-24, and Dash 7 connecting Conakry across West Africa",
+      },
+      logo: "/airline-logos/gn/air-guinee.png",
+      logoExplainer:
+        "Features the classic stylized soaring bird emblem incorporating the red, yellow, and green national flag colors of Guinea, symbolizing national pride, pan-African unity, and the founding era of sovereign West African commercial aviation.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Air_Guin%C3%A9e",
+      ],
+      licenceNote:
+        "Commercial airline historic trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  KM: [
+    {
+      id: "km-ab-aviation",
+      countryCode: "KM",
+      name: "AB Aviation",
+      iata: "Y6",
+      icao: "AIA",
+      founded: 2013,
+      alliance: "None",
+      hubs: ["Prince Said Ibrahim International Airport (HAH)"],
+      fleet: {
+        total: 3,
+        summary: "3 aircraft (Embraer ERJ-145, Embraer EMB 120 Brasilia)",
+      },
+      logo: "/airline-logos/km/ab-aviation.png",
+      logoExplainer:
+        "Features the modern deep azure and emerald wave motif and stylized wing arc, reflecting the Indian Ocean archipelago waters, tropical breezes, and essential domestic inter-island links between Grande Comore, Mohéli, and Anjouan.",
+      sources: [
+        "https://en.wikipedia.org/wiki/AB_Aviation",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  SL: [
+    {
+      id: "sl-air-sierra-leone",
+      countryCode: "SL",
+      name: "Air Sierra Leone",
+      iata: "3Y",
+      icao: "RSL",
+      founded: 2024,
+      alliance: "None",
+      hubs: ["Freetown International Airport (FNA)"],
+      fleet: {
+        total: 3,
+        summary: "3 aircraft (Boeing 737-800, Embraer ERJ-145, ERJ-175)",
+      },
+      logo: "/airline-logos/sl/air-sierra-leone.svg",
+      logoExplainer:
+        "Features the dynamic modern green, white, and blue aerodynamic wing arc representing the national tricolour of Sierra Leone, embodying maritime heritage, pristine natural landscapes, and the revitalized international flag carrier connection from Freetown to London Gatwick and regional capitals.",
+      sources: [
+        "https://www.airsierraleone.sl/",
+        "https://en.wikipedia.org/wiki/Air_Sierra_Leone",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  TV: [
+    {
+      id: "tv-air-tuvalu",
+      countryCode: "TV",
+      name: "Air Tuvalu",
+      iata: "9V",
+      icao: "TUV",
+      founded: 2023,
+      alliance: "None",
+      hubs: ["Funafuti International Airport (FUN)"],
+      fleet: {
+        total: 1,
+        summary: "1 DHC-6 Twin Otter aircraft connecting Funafuti to the outer atolls of Tuvalu",
+      },
+      logo: "/airline-logos/tv/air-tuvalu.svg",
+      logoExplainer:
+        "Features the oceanic sky-blue and golden wing motif evocative of the Pacific tradewinds and traditional voyaging canoe sails, symbolizing sovereign national unity and lifeline domestic air service across the remote Polynesian islands and atolls of Tuvalu.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Air_Tuvalu",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  AD: [
+    {
+      id: "ad-andorra-airlines",
+      countryCode: "AD",
+      name: "Andorra Airlines",
+      iata: "G7",
+      icao: "AND",
+      founded: 2015,
+      alliance: "None",
+      hubs: ["Andorra–La Seu d'Urgell Airport (LEU)"],
+      fleet: {
+        total: 2,
+        summary: "Operates ATR 72-500 aircraft connecting the Pyrenees principality to Madrid and Palma de Mallorca",
+      },
+      logo: "/airline-logos/ad/andorra-airlines.png",
+      logoExplainer:
+        "Features the stylized Pyrenean mountain peak silhouette fused with aerodynamic jet flight curves in the deep blue, sunny yellow, and vermilion heraldic tones of the Principality of Andorra, symbolizing mountain accessibility and scheduled regional links.",
+      sources: [
+        "https://www.andorraairlines.com/",
+        "https://en.wikipedia.org/wiki/Andorra_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
