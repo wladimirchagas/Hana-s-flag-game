@@ -2286,4 +2286,118 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  SR: [
+    {
+      id: "sr-tourism-corporation-of-suriname",
+      countryCode: "SR",
+      name: "Tourism Corporation of Suriname",
+      agency: "Tourism Corporation of Suriname (STICHTING TCS)",
+      visitors: {
+        count: 279000,
+        year: 2017,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Suriname)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Suriname, Category:Logos of Suriname) and the English Wikipedia article for \"Tourism in Suriname\" — no freely-licensed Suriname tourism-board consumer-brand logo could be found; Commons results returned only unrelated Surinamese logos (Telesur, Staatsolie, the ruling NDP party).",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Suriname",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Suriname",
+      ],
+    },
+  ],
+  GY: [
+    {
+      id: "gy-ministry-of-tourism-industry-and-commerce",
+      countryCode: "GY",
+      name: "Guyana Ministry of Tourism, Industry and Commerce",
+      agency: "Ministry of Tourism, Industry and Commerce, Guyana",
+      visitors: {
+        count: 86400,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Guyana)",
+      },
+      noImageReason:
+        "The only bundled Wikimedia Commons file (\"Ministry of Tourism, Industry, and Commerce Guyana.svg\") is the government ministry's own institutional emblem, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. No separate consumer tourism-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Guyana",
+        "https://en.wikipedia.org/wiki/Tourism_in_Guyana",
+      ],
+    },
+  ],
+  PY: [
+    {
+      id: "py-secretaria-nacional-de-turismo",
+      countryCode: "PY",
+      name: "Paraguay — Secretaría Nacional de Turismo",
+      agency: "Secretaría Nacional de Turismo (SENATUR), Paraguay",
+      visitors: {
+        count: 1077000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Paraguay)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and general web search — no freely-licensed SENATUR consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Paraguay"],
+    },
+  ],
+  IQ: [
+    {
+      id: "iq-ministry-of-culture-tourism-and-antiquities",
+      countryCode: "IQ",
+      name: "Iraq Ministry of Culture, Tourism and Antiquities",
+      agency: "Ministry of Culture, Tourism and Antiquities, Iraq",
+      visitors: {
+        count: 892000,
+        year: 2013,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Iraq)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Iraq, Category:Tourism in Iraq) and the English Wikipedia article for \"Tourism in Iraq\" — no freely-licensed Iraqi tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Iraq",
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Iraq",
+      ],
+    },
+  ],
+  SY: [
+    {
+      id: "sy-ministry-of-tourism",
+      countryCode: "SY",
+      name: "Syria Ministry of Tourism",
+      agency: "Ministry of Tourism, Syria",
+      visitors: {
+        count: 2424000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Syria)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Syria\" — no freely-licensed Syrian tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Syria"],
+    },
+  ],
+  YE: [
+    {
+      id: "ye-ministry-of-tourism",
+      countryCode: "YE",
+      name: "Yemen Ministry of Tourism",
+      agency: "Ministry of Tourism, Yemen",
+      visitors: {
+        count: 398000,
+        year: 2015,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Yemen)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Yemen) and the English Wikipedia article for the Ministry of Tourism (Yemen) — no freely-licensed Yemeni tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Yemen)",
+        "https://en.wikipedia.org/wiki/Tourism_in_Yemen",
+      ],
+    },
+  ],
 };
