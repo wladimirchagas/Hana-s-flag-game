@@ -2509,4 +2509,93 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  MN: [
+    {
+      id: "mn-nomadic-by-nature",
+      countryCode: "MN",
+      name: "Mongolia — \"Nomadic by Nature\"",
+      slogan: "Nomadic by Nature",
+      agency: "Mongolian Tourism Association, under the Ministry of Environment and Tourism",
+      visitors: {
+        count: 66900,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mongolia)",
+      },
+      noImageReason:
+        "Mongolia's tourism slogan changed from \"Go Nomadic, Experience Mongolia\" (2013) to \"Mongolia — Nomadic by Nature\", but searching Wikimedia Commons (Category:Tourism in Mongolia, Category:Logos of Mongolia) and the English Wikipedia article for \"Tourism in Mongolia\" found no freely-licensed copy of either campaign's logo; Commons results returned only unrelated Mongolian logos (a forum, the e-Mongolia digital-government service, the Ministry of Environment and Tourism's institutional emblem).",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Mongolia",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Mongolia",
+      ],
+    },
+  ],
+  MV: [
+    {
+      id: "mv-visit-maldives",
+      countryCode: "MV",
+      name: "Visit Maldives",
+      agency: "Maldives Marketing and Public Relations Corporation (MMPRC)",
+      visitors: {
+        count: 555000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Maldives)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in the Maldives\" — no freely-licensed \"Visit Maldives\" (MMPRC) logo could be found; the only tourism-labelled Commons file returned by search (\"Addu Tourism Brand Logo.png\") is a sub-national atoll-council brand for Addu City, not the national Visit Maldives mark.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Maldives"],
+    },
+  ],
+  TL: [
+    {
+      id: "tl-ministry-of-tourism-commerce-and-industry",
+      countryCode: "TL",
+      name: "Timor-Leste Ministry of Tourism, Commerce and Industry",
+      agency: "Ministry of Tourism, Commerce and Industry (MTCI), Timor-Leste",
+      visitors: {
+        count: 74800,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Timor-Leste)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Ministry of Tourism (East Timor)) and the English Wikipedia article for \"Tourism in East Timor\" — no freely-licensed Timorese tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: ["https://commons.wikimedia.org/wiki/Category:Ministry_of_Tourism_(East_Timor)"],
+    },
+  ],
+  SB: [
+    {
+      id: "sb-visit-solomons",
+      countryCode: "SB",
+      name: "Visit Solomons",
+      agency: "Solomon Islands Visitors Bureau",
+      visitors: {
+        count: 4400,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Solomon Islands)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Symbols of the Solomon Islands, Category:National symbols of the Solomon Islands) and general web search — no freely-licensed Solomon Islands Visitors Bureau consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: ["https://en.wikipedia.org/wiki/Solomon_Islands"],
+    },
+  ],
+  VU: [
+    {
+      id: "vu-vanuatu-tourism-office",
+      countryCode: "VU",
+      name: "Vanuatu Tourism Office",
+      agency: "Vanuatu Tourism Office",
+      visitors: {
+        count: 82400,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Vanuatu)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Vanuatu, Category:Symbols of Vanuatu) and general web search — no freely-licensed Vanuatu Tourism Office consumer-brand logo could be found; Commons results returned only unrelated Vanuatu logos (Vanuatu Post) and the sub-national \"Addu Tourism Brand Logo\", which belongs to the Maldives' Addu City, not Vanuatu.",
+      sources: ["https://commons.wikimedia.org/wiki/Category:Tourism_in_Vanuatu"],
+    },
+  ],
 };
