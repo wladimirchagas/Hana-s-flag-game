@@ -3801,1084 +3801,4960 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       sources: ["https://www.lemessager.cm", "https://en.wikipedia.org/wiki/Le_Messager_(Cameroon)"],
     },
   ],
+
+  // Canada
+  CA: [
+    {
+      id: "ca-the-globe-and-mail",
+      countryCode: "CA",
+      name: "The Globe and Mail",
+      founded: 1844,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Broadsheet & digital portal",
+      language: "English",
+      headquarters: "Toronto, Ontario",
+      owner: {
+        name: "The Woodbridge Company (Thomson family)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "National newspaper of record; center-right liberal-conservative editorial stance focusing on finance, politics, and investigative national reporting",
+      readership: {
+        metric: "Over 6.2 million weekly multiplatform readers across Canada",
+        source: "News Media Canada & Vividata 2024",
+      },
+      revenueModel: "Digital subscriptions, print sales, and corporate advertising",
+      logo: "newspaper-logos/ca/the-globe-and-mail.svg",
+      logoExplainer:
+        "White banner featuring the iconic serif typography 'The Globe and Mail' in black, representing Canada's historic newspaper of record.",
+      sources: ["https://www.theglobeandmail.com", "https://en.wikipedia.org/wiki/The_Globe_and_Mail"],
+    },
+    {
+      id: "ca-the-toronto-star",
+      countryCode: "CA",
+      name: "Toronto Star",
+      founded: 1892,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "English",
+      headquarters: "Toronto, Ontario",
+      owner: {
+        name: "NordStar Capital",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Social-democratic / liberal progressive editorial stance guided by the Atkinson Principles, focusing on social justice and civic affairs",
+      readership: {
+        metric: "Highest daily print circulation in Canada with 5.0+ million weekly readers",
+        source: "Torstar Corporate Media Profile 2023",
+      },
+      revenueModel: "Digital paywall subscriptions, print sales, and display advertising",
+      logo: "newspaper-logos/ca/the-toronto-star.svg",
+      logoExplainer:
+        "Deep blue banner featuring white serif typography 'TORONTO STAR', symbolizing progressive civic and investigative reporting.",
+      sources: ["https://www.thestar.com", "https://en.wikipedia.org/wiki/Toronto_Star"],
+    },
+    {
+      id: "ca-le-devoir",
+      countryCode: "CA",
+      name: "Le Devoir",
+      englishTranslation: "The Duty",
+      founded: 1910,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Compact broadsheet & digital portal",
+      language: "French",
+      headquarters: "Montreal, Quebec",
+      owner: {
+        name: "Le Devoir Trust",
+        type: "Non-profit independent trust",
+      },
+      editorialStance: "Independent Quebec intellectual daily founded by Henri Bourassa; focus on culture, Quebec politics, and civic debate",
+      readership: {
+        metric: "Benchmark French-language quality daily reaching over 1.8 million monthly digital visitors",
+        source: "Le Devoir Trust Annual Report 2023",
+      },
+      revenueModel: "Reader subscriptions, philanthropic donations, and targeted advertising",
+      logo: "newspaper-logos/ca/le-devoir.svg",
+      logoExplainer:
+        "Minimalist white background with crisp black serif masthead 'LE DEVOIR', representing intellectual independence and journalistic duty.",
+      sources: ["https://www.ledevoir.com", "https://en.wikipedia.org/wiki/Le_Devoir"],
+    },
+    {
+      id: "ca-national-post",
+      countryCode: "CA",
+      name: "National Post",
+      founded: 1998,
+      frequency: "Daily newspaper (Tuesday–Saturday)",
+      format: "Broadsheet & digital portal",
+      language: "English",
+      headquarters: "Toronto, Ontario",
+      owner: {
+        name: "Postmedia Network",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Conservative national broadsheet founded by Conrad Black; free-market advocacy, federal politics, and financial market analysis",
+      readership: {
+        metric: "Over 4.5 million weekly readers across print and digital Postmedia networks",
+        source: "Postmedia Network Annual Report 2023",
+      },
+      revenueModel: "Print advertising, digital paywall, and sponsored content",
+      logo: "newspaper-logos/ca/national-post.svg",
+      logoExplainer:
+        "Modern black uppercase sans-serif title 'NATIONAL POST' on white ground, reflecting contemporary business and national political journalism.",
+      sources: ["https://nationalpost.com", "https://en.wikipedia.org/wiki/National_Post"],
+    },
+    {
+      id: "ca-la-presse",
+      countryCode: "CA",
+      name: "La Presse",
+      englishTranslation: "The Press",
+      founded: 1884,
+      frequency: "Continuous digital daily edition",
+      format: "Digital-only news tablet app & portal",
+      language: "French",
+      headquarters: "Montreal, Quebec",
+      owner: {
+        name: "Fiducie La Presse",
+        type: "Non-profit independent trust",
+      },
+      editorialStance: "Independent progressive francophone media; pioneer in digital-first journalism and comprehensive national coverage",
+      readership: {
+        metric: "Over 4 million monthly active digital readers on mobile, tablet, and web platforms",
+        source: "Fiducie La Presse Financial Report 2023",
+      },
+      revenueModel: "Philanthropic donations, government journalism tax credits, and digital advertising",
+      logo: "newspaper-logos/ca/la-presse.svg",
+      logoExplainer:
+        "Red rectangular emblem featuring clean white sans-serif letters 'LA PRESSE', symbolising modern Quebec digital news leadership.",
+      sources: ["https://www.lapresse.ca", "https://en.wikipedia.org/wiki/La_Presse_(Canadian_newspaper)"],
+    },
+  ],
+
+  // Cape Verde
+  CV: [
+    {
+      id: "cv-inforpress",
+      countryCode: "CV",
+      name: "Inforpress",
+      officialName: "Agência Cabo-Verdiana de Notícias",
+      nativeName: "Agência Cabo-Verdiana de Notícias",
+      englishTranslation: "Cape Verdean News Agency",
+      founded: 1988,
+      frequency: "Continuous 24/7 national newswire",
+      format: "National state newswire & multimedia service",
+      language: "Portuguese",
+      headquarters: "Praia, Santiago Island",
+      owner: {
+        name: "State of Cape Verde",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "National public newswire agency; government decrees, parliamentary activity, and island archipelago news",
+      readership: {
+        metric: "Primary news supplier to all television, radio, and digital media across the nine inhabited islands of Cape Verde",
+        source: "Inforpress Relatório e Contas 2023",
+      },
+      annualPublicFunding: {
+        total: "CVE 95.0 million (~US$920,000) state budget appropriation",
+        perCapita: "CVE 190 / person / year (~US$1.85)",
+      },
+      revenueModel: "State public service contract and wire subscription syndication",
+      logo: "newspaper-logos/cv/inforpress.svg",
+      logoExplainer:
+        "White emblem with deep blue typography 'inforpress' and stylized connectivity waves, representing national archipelago communication.",
+      sources: ["https://inforpress.cv", "https://pt.wikipedia.org/wiki/Inforpress"],
+    },
+    {
+      id: "cv-a-semana",
+      countryCode: "CV",
+      name: "A Semana",
+      englishTranslation: "The Week",
+      founded: 1991,
+      frequency: "Weekly newspaper & digital daily",
+      format: "Tabloid & digital portal",
+      language: "Portuguese",
+      headquarters: "Praia",
+      owner: {
+        name: "Publi-Press Lda",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Historic independent weekly newspaper; investigative reporting, political analysis, and democratic accountability",
+      readership: {
+        metric: "Leading independent weekly publication in Cape Verde with widespread diaspora readership in Portugal and the US",
+        source: "A Semana Online Profile 2023",
+      },
+      revenueModel: "Print sales and digital display advertising",
+      logo: "newspaper-logos/cv/a-semana.svg",
+      logoExplainer:
+        "White canvas displaying bold black masthead 'A SEMANA', symbolising thirty years of independent democratic journalism.",
+      sources: ["https://asemana.publ.cv", "https://pt.wikipedia.org/wiki/A_Semana"],
+    },
+    {
+      id: "cv-expressodasilhas",
+      countryCode: "CV",
+      name: "Expresso das Ilhas",
+      englishTranslation: "Islands Express",
+      founded: 2001,
+      frequency: "Weekly newspaper & daily web portal",
+      format: "Tabloid & digital portal",
+      language: "Portuguese",
+      headquarters: "Praia & Mindelo",
+      owner: {
+        name: "Silves & Faria / Grupo Lena",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Center-liberal economic and political weekly; focus on archipelago development, business, and cultural heritage",
+      readership: {
+        metric: "Widely read weekly newspaper across São Vicente and Santiago islands",
+        source: "Expresso das Ilhas Editorial Review 2023",
+      },
+      revenueModel: "Commercial advertising and newspaper circulation",
+      logo: "newspaper-logos/cv/expressodasilhas.svg",
+      logoExplainer:
+        "Navy blue background with gold-yellow lettering 'Expresso das Ilhas', highlighting maritime connectivity and national reporting.",
+      sources: ["https://expressodasilhas.cv", "https://pt.wikipedia.org/wiki/Expresso_das_Ilhas"],
+    },
+    {
+      id: "cv-jornal-i",
+      countryCode: "CV",
+      name: "Jornal i",
+      founded: 2010,
+      frequency: "Weekly newspaper",
+      format: "Tabloid & digital portal",
+      language: "Portuguese",
+      headquarters: "Praia",
+      owner: {
+        name: "Iniciativa Media Group",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent commercial paper; urban lifestyle, youth culture, culture, and social development in Cape Verde",
+      readership: {
+        metric: "Popular urban weekly paper read across youth and commercial sectors in Praia",
+        source: "Jornal i Archive 2023",
+      },
+      revenueModel: "Print sales and local corporate advertising",
+      logo: "newspaper-logos/cv/jornal-i.svg",
+      logoExplainer:
+        "Red title banner featuring crisp white letter 'i' and modern typography, symbolising innovative urban press.",
+      sources: ["https://www.facebook.com/jornalicv", "https://pt.wikipedia.org/wiki/Cabo_Verde#Comunica%C3%A7%C3%A3o_social"],
+    },
+    {
+      id: "cv-santiago-magazine",
+      countryCode: "CV",
+      name: "Santiago Magazine",
+      founded: 2017,
+      frequency: "Continuous digital news portal",
+      format: "Digital news portal",
+      language: "Portuguese",
+      headquarters: "Praia, Santiago Island",
+      owner: {
+        name: "Santiago Magazine Lda",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent digital investigative journalism; in-depth political scandals, justice investigations, and governance oversight",
+      readership: {
+        metric: "Leading digital investigative daily portal in Cape Verde with 600,000+ monthly visits",
+        source: "Santiago Magazine Analytics 2024",
+      },
+      revenueModel: "Digital banner advertising and sponsored opinion columns",
+      logo: "newspaper-logos/cv/santiago-magazine.svg",
+      logoExplainer:
+        "Dark slate badge with clean white uppercase title 'SANTIAGO MAGAZINE', representing fearless modern digital investigative journalism.",
+      sources: ["https://santiagomagazine.cv"],
+    },
+  ],
+
+  // Central African Republic
+  CF: [
+    {
+      id: "cf-acap",
+      countryCode: "CF",
+      name: "ACAP",
+      officialName: "Agence Centrafricaine de Presse",
+      nativeName: "Agence Centrafricaine de Presse",
+      englishTranslation: "Central African Press Agency",
+      founded: 1961,
+      frequency: "Continuous daily state newswire",
+      format: "Official state newswire & bulletin",
+      language: "French, Sango",
+      headquarters: "Bangui",
+      owner: {
+        name: "Republic of Central Africa (Ministère de la Communication)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official state news wire; presidential communications, ministerial decrees, and peace accord monitoring",
+      readership: {
+        metric: "Primary news supplier to Bangui national radio, television, and private print titles",
+        source: "ACAP Bangui Annual Review 2023",
+      },
+      annualPublicFunding: {
+        total: "XAF 120 million (~US$200,000) state budget operating grant",
+        perCapita: "XAF 22 / person / year (~US$0.04)",
+      },
+      revenueModel: "Direct state budget subsidy and subscription bulletin sales",
+      logo: "newspaper-logos/cf/acap.svg",
+      logoExplainer:
+        "Deep blue emblem with white serif letters 'ACAP', representing the official national news wire of the Central African Republic.",
+      sources: ["https://acap.cf", "https://fr.wikipedia.org/wiki/Agence_centrafricaine_de_presse"],
+    },
+    {
+      id: "cf-le-democrate",
+      countryCode: "CF",
+      name: "Le Démocrate",
+      englishTranslation: "The Democrat",
+      founded: 1992,
+      frequency: "Daily newspaper",
+      format: "Tabloid & digital portal",
+      language: "French",
+      headquarters: "Bangui",
+      owner: {
+        name: "Société Le Démocrate (Ferdinand Samba)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Historic independent daily paper; democratic governance, civil society advocacy, and political reporting in Bangui",
+      readership: {
+        metric: "One of the longest-running private daily newspapers in Bangui",
+        source: "Union des Journalistes de Centrafrique 2023",
+      },
+      revenueModel: "Street print sales and private advertising",
+      logo: "newspaper-logos/cf/le-démocrate.svg",
+      logoExplainer:
+        "White banner with bold black masthead 'LE DÉMOCRATE', symbolising democratic transition and independent press history in CAR.",
+      sources: ["https://www.le-democrate.com", "https://fr.wikipedia.org/wiki/M%C3%A9dias_en_R%C3%A9publique_centrafricaine"],
+    },
+    {
+      id: "cf-le-potentiel-centrafricain",
+      countryCode: "CF",
+      name: "Le Potentiel Centrafricain",
+      englishTranslation: "The Central African Potential",
+      founded: 2000,
+      frequency: "Daily newspaper",
+      format: "Tabloid & digital portal",
+      language: "French",
+      headquarters: "Bangui",
+      owner: {
+        name: "Groupe Le Potentiel Centrafricain",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent commercial daily; national politics, economic reconstruction, and Central African mining/forestry sectors",
+      readership: {
+        metric: "Regular daily print circulation in Bangui commercial districts",
+        source: "Haut Conseil de la Communication RCA 2023",
+      },
+      revenueModel: "Print sales and public legal notice advertising",
+      logo: "newspaper-logos/cf/le-potentiel-centrafricain.svg",
+      logoExplainer:
+        "White banner with prominent green and black lettering 'Le Potentiel Centrafricain', representing national reconstruction.",
+      sources: ["https://lepotentielcentrafricain.com", "https://fr.wikipedia.org/wiki/M%C3%A9dias_en_R%C3%A9publique_centrafricaine"],
+    },
+    {
+      id: "cf-corbeau-news-centrafrique",
+      countryCode: "CF",
+      name: "Corbeau News Centrafrique",
+      founded: 2014,
+      frequency: "Continuous digital news portal",
+      format: "Digital investigative news portal",
+      language: "French, Sango",
+      headquarters: "Bangui",
+      owner: {
+        name: "CNC Media Network (Gisèle Moloma)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent digital investigative portal; security reporting, armed group movements, and political accountability",
+      readership: {
+        metric: "Over 850,000 monthly digital visitors across Central African Republic and international diaspora",
+        source: "Corbeau News Analytics 2024",
+      },
+      revenueModel: "Digital web advertising and private reader donations",
+      logo: "newspaper-logos/cf/corbeau-news-centrafrique.svg",
+      logoExplainer:
+        "Dark charcoal banner with bold white text 'CNC' and 'Corbeau News Centrafrique', symbolising independent investigative news.",
+      sources: ["https://corbeaunews-centrafrique.org"],
+    },
+    {
+      id: "cf-l-expansion",
+      countryCode: "CF",
+      name: "L'Expansion",
+      englishTranslation: "The Expansion",
+      founded: 1996,
+      frequency: "Weekly newspaper",
+      format: "Tabloid publication",
+      language: "French",
+      headquarters: "Bangui",
+      owner: {
+        name: "Éditions L'Expansion Centrafrique",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Weekly independent publication; macroeconomic developments, agricultural reform, and Central African trade",
+      readership: {
+        metric: "Read by business professionals, development agencies, and civil servants in Bangui",
+        source: "Ministère de la Communication RCA 2023",
+      },
+      revenueModel: "Print sales and corporate sponsorships",
+      logo: "newspaper-logos/cf/l-expansion.svg",
+      logoExplainer:
+        "Clean white masthead with blue serif title 'L'EXPANSION', representing economic focus and development journalism.",
+      sources: ["https://fr.wikipedia.org/wiki/M%C3%A9dias_en_R%C3%A9publique_centrafricaine"],
+    },
+  ],
+
+  // Chad
+  TD: [
+    {
+      id: "td-tchadinfos",
+      countryCode: "TD",
+      name: "Tchadinfos",
+      founded: 2012,
+      frequency: "Continuous 24/7 digital news service",
+      format: "Digital multimedia portal & web TV",
+      language: "French, Arabic",
+      headquarters: "N'Djamena",
+      owner: {
+        name: "Mamadou Djimtebaye / Tchadinfos Media Group",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Leading independent digital multimedia network in Chad; breaking national news, politics, and youth entrepreneurship",
+      readership: {
+        metric: "Over 2.2 million monthly page views; premier online news destination in Chad",
+        source: "Tchadinfos Audience Review 2024",
+      },
+      revenueModel: "Digital advertising, video production, and corporate media partnerships",
+      logo: "newspaper-logos/td/tchadinfos.svg",
+      logoExplainer:
+        "Teal green title banner with bold white lettering 'tchadinfos', symbolising modern Chadian digital news innovation.",
+      sources: ["https://tchadinfos.com", "https://fr.wikipedia.org/wiki/Tchadinfos.com"],
+    },
+    {
+      id: "td-alwihda-info",
+      countryCode: "TD",
+      name: "Alwihda Info",
+      nativeName: "الوحدة انفو",
+      englishTranslation: "Unity Info",
+      founded: 1994,
+      frequency: "Continuous digital newswire",
+      format: "Digital news portal & web daily",
+      language: "French, Arabic",
+      headquarters: "N'Djamena",
+      owner: {
+        name: "Djamil Ahmat / Alwihda Media Group",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent news portal; Sahelian regional security, political transitions, and human rights advocacy",
+      readership: {
+        metric: "Widely read across the Lake Chad Basin, CEMAC region, and diaspora with 1.5M monthly visits",
+        source: "Alwihda Info Analytics 2023",
+      },
+      revenueModel: "Online banner advertising and media consulting",
+      logo: "newspaper-logos/td/alwihda-info.svg",
+      logoExplainer:
+        "White banner featuring red and black font 'ALWIHDA INFO', representing national unity and comprehensive Sahel coverage.",
+      sources: ["https://www.alwihdainfo.com", "https://fr.wikipedia.org/wiki/Alwihda_Info"],
+    },
+    {
+      id: "td-journal-le-pays",
+      countryCode: "TD",
+      name: "Le Pays",
+      englishTranslation: "The Country",
+      founded: 2011,
+      frequency: "Weekly newspaper & daily web portal",
+      format: "Tabloid & digital portal",
+      language: "French",
+      headquarters: "N'Djamena",
+      owner: {
+        name: "Madjiasra Nako / Le Pays Médias",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent investigative weekly; political governance, social inequalities, and environmental reporting in Chad",
+      readership: {
+        metric: "Leading investigative print weekly newspaper in N'Djamena",
+        source: "Union des Journalistes Tchadiens 2023",
+      },
+      revenueModel: "Print retail sales and private advertisements",
+      logo: "newspaper-logos/td/journal-le-pays.svg",
+      logoExplainer:
+        "Emerald green badge with white typography 'LE PAYS', reflecting agricultural resilience and independent public oversight.",
+      sources: ["https://lepaystchad.com"],
+    },
+    {
+      id: "td-le-progres",
+      countryCode: "TD",
+      name: "Le Progrès",
+      englishTranslation: "The Progress",
+      founded: 1993,
+      frequency: "Daily newspaper",
+      format: "Tabloid daily paper",
+      language: "French",
+      headquarters: "N'Djamena",
+      owner: {
+        name: "Éditions Le Progrès (Abderahmane Koulamallah)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Historic private daily newspaper in Chad; national political developments, civil service news, and civic commentary",
+      readership: {
+        metric: "Pioneer private daily publication in Chad with wide institutional circulation in the capital",
+        source: "Haute Autorité des Médias et de l'Audiovisuel (HAMA) 2023",
+      },
+      revenueModel: "Print sales and official notices",
+      logo: "newspaper-logos/td/le-progrès.svg",
+      logoExplainer:
+        "Deep navy blue masthead with white serif font 'LE PROGRÈS', symbolising historic democratic press evolution in Chad.",
+      sources: ["https://fr.wikipedia.org/wiki/Le_Progr%C3%A8s_(Tchad)"],
+    },
+    {
+      id: "td-n-djamena-hebdo",
+      countryCode: "TD",
+      name: "N'Djaména Hebdo",
+      englishTranslation: "N'Djamena Weekly",
+      founded: 1989,
+      frequency: "Weekly newspaper",
+      format: "Tabloid publication",
+      language: "French",
+      headquarters: "N'Djamena",
+      owner: {
+        name: "Yaldet Bégoto Oulatar",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Historic pioneer of independent print journalism in Chad; courageous press freedom advocate and democratic commentary",
+      readership: {
+        metric: "Longest continuously operating independent weekly paper in Chad since 1989",
+        source: "Reporters Without Borders & HAMA Chad 2023",
+      },
+      revenueModel: "Print retail sales and classified advertisements",
+      logo: "newspaper-logos/td/n-djamena-hebdo.svg",
+      logoExplainer:
+        "White canvas displaying bold black masthead 'N'DJAMÉNA HEBDO', representing thirty-five years of independent Chadian press.",
+      sources: ["https://fr.wikipedia.org/wiki/N%27Djam%C3%A9na_Hebdo"],
+    },
+  ],
+
+  // Chile
+  CL: [
+    {
+      id: "cl-el-mercurio",
+      countryCode: "CL",
+      name: "El Mercurio",
+      englishTranslation: "The Mercury",
+      founded: 1900,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Spanish",
+      headquarters: "Santiago",
+      owner: {
+        name: "Empresa El Mercurio S.A.P. (Edwards family)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Chile's historic conservative newspaper of record; business, legal affairs, national politics, and international diplomacy",
+      readership: {
+        metric: "Leading national newspaper of record with over 120,000 daily print circulation and Emol.com digital portal reaching 8M+ monthly readers",
+        source: "El Mercurio SAP Memoria Anual 2023",
+      },
+      revenueModel: "Print sales, digital subscriptions, and display advertising",
+      logo: "newspaper-logos/cl/el-mercurio.svg",
+      logoExplainer:
+        "White banner displaying the classic black gothic and serif masthead 'EL MERCURIO', representing Chile's oldest major news institution.",
+      sources: ["https://www.elmercurio.com", "https://en.wikipedia.org/wiki/El_Mercurio"],
+    },
+    {
+      id: "cl-la-tercera",
+      countryCode: "CL",
+      name: "La Tercera",
+      englishTranslation: "The Third",
+      founded: 1950,
+      frequency: "Daily newspaper & continuous digital portal",
+      format: "Berliner & digital portal",
+      language: "Spanish",
+      headquarters: "Santiago",
+      owner: {
+        name: "Copesa (Consorcio Periodístico de Chile S.A.)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Center-right mainstream daily; national political analysis, investigative reports (La Tercera PM), and business coverage (Pulso)",
+      readership: {
+        metric: "Over 6.5 million monthly unique digital visitors across latercera.com and Pulso",
+        source: "Copesa Audience Report 2024",
+      },
+      revenueModel: "Digital paywall subscriptions, print sales, and programmatic advertising",
+      logo: "newspaper-logos/cl/la-tercera.svg",
+      logoExplainer:
+        "Vibrant red banner with bold white lowercase typography 'la tercera', reflecting modern investigative and dynamic daily reporting.",
+      sources: ["https://www.latercera.com", "https://en.wikipedia.org/wiki/La_Tercera"],
+    },
+    {
+      id: "cl-diario-financiero",
+      countryCode: "CL",
+      name: "Diario Financiero",
+      englishTranslation: "Financial Daily",
+      founded: 1988,
+      frequency: "Daily business newspaper (Monday–Friday)",
+      format: "Salmon broadsheet & digital portal",
+      language: "Spanish",
+      headquarters: "Santiago",
+      owner: {
+        name: "Grupo Claro",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Specialized financial and economic daily; Santiago Stock Exchange, mining industries, retail markets, and regulatory affairs",
+      readership: {
+        metric: "Primary business daily in Chile read by corporate executives and financial institutions (2.5M monthly visits)",
+        source: "Diario Financiero Media Kit 2024",
+      },
+      revenueModel: "Corporate subscriptions and financial sector advertising",
+      logo: "newspaper-logos/cl/diario-financiero.svg",
+      logoExplainer:
+        "White banner with distinctive navy blue lettering 'DF DIARIO FINANCIERO', symbolising market analysis and corporate integrity.",
+      sources: ["https://www.df.cl", "https://es.wikipedia.org/wiki/Diario_Financiero"],
+    },
+    {
+      id: "cl-las-ultimas-noticias",
+      countryCode: "CL",
+      name: "Las Últimas Noticias",
+      englishTranslation: "The Latest News",
+      founded: 1902,
+      frequency: "Daily newspaper",
+      format: "Tabloid & digital portal",
+      language: "Spanish",
+      headquarters: "Santiago",
+      owner: {
+        name: "Empresa El Mercurio S.A.P.",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Mass-circulation popular daily; sports, technology trends, popular culture, and human interest stories",
+      readership: {
+        metric: "Highest print retail circulation among popular tabloids in Chile with 100,000+ daily copies",
+        source: "LUN Media Metrics 2023",
+      },
+      revenueModel: "Retail print sales and retail commercial advertising",
+      logo: "newspaper-logos/cl/las-últimas-noticias.svg",
+      logoExplainer:
+        "Royal blue background with bright yellow and white typography 'LUN Las Últimas Noticias', iconic across Chilean newsstands.",
+      sources: ["https://www.lun.com", "https://en.wikipedia.org/wiki/Las_%C3%9Altimas_Noticias"],
+    },
+    {
+      id: "cl-the-clinic",
+      countryCode: "CL",
+      name: "The Clinic",
+      founded: 1998,
+      frequency: "Weekly publication & digital portal",
+      format: "Satirical journal & digital portal",
+      language: "Spanish",
+      headquarters: "Santiago",
+      owner: {
+        name: "Ediciones The Clinic (Patricio Fernández)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Left-leaning satirical and political investigative publication founded during Pinochet's London arrest; anti-establishment critique",
+      readership: {
+        metric: "Cult political publication reaching 1.2 million monthly readers across cultural and academic sectors",
+        source: "The Clinic Audience Review 2023",
+      },
+      revenueModel: "Print sales, digital display advertising, and reader memberships",
+      logo: "newspaper-logos/cl/the-clinic.svg",
+      logoExplainer:
+        "Dark black banner with bold white text 'THE CLINIC', symbolising sharp political satire and counter-cultural investigative journalism.",
+      sources: ["https://www.theclinic.cl", "https://en.wikipedia.org/wiki/The_Clinic_(newspaper)"],
+    },
+  ],
+
+  // China
+  CN: [
+    {
+      id: "cn-people-s-daily",
+      countryCode: "CN",
+      name: "People's Daily",
+      officialName: "People's Daily (Renmin Ribao)",
+      nativeName: "人民日报",
+      englishTranslation: "People's Daily",
+      founded: 1948,
+      frequency: "Daily newspaper",
+      format: "Official state broadsheet & digital network",
+      language: "Chinese (Simplified), with foreign language editions",
+      headquarters: "Chaoyang District, Beijing",
+      owner: {
+        name: "Central Committee of the Chinese Communist Party",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official newspaper of the Central Committee of the CCP; authoritative voice on national policies, ideological guidelines, and central government affairs",
+      readership: {
+        metric: "Largest print circulation in China with 3.2 million daily copies and global online reach exceeding 100 million across People.cn",
+        source: "People's Daily Annual Report 2023",
+      },
+      revenueModel: "State institutional subscriptions, official public notices, and digital media advertising",
+      logo: "newspaper-logos/cn/people-s-daily.svg",
+      logoExplainer:
+        "Crimson red banner featuring golden-yellow calligraphic characters '人民日报' written by Mao Zedong, the defining insignia of China's principal state paper.",
+      sources: ["http://en.people.cn", "https://en.wikipedia.org/wiki/People%27s_Daily"],
+    },
+    {
+      id: "cn-china-daily",
+      countryCode: "CN",
+      name: "China Daily",
+      nativeName: "中国日报",
+      englishTranslation: "China Daily",
+      founded: 1981,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & international digital portal",
+      language: "English",
+      headquarters: "Beijing",
+      owner: {
+        name: "State Council Information Office",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "China's premier national English-language daily; international diplomacy, global business, trade, and cultural exchange",
+      readership: {
+        metric: "Over 900,000 daily global print distribution and 350+ million digital and social media followers worldwide",
+        source: "China Daily Global Media Kit 2024",
+      },
+      annualPublicFunding: {
+        total: "Direct central state foreign communication appropriation",
+        perCapita: "National international communication remit",
+      },
+      revenueModel: "Central state foreign-press budget, global institutional subscriptions, and advertising",
+      logo: "newspaper-logos/cn/china-daily.svg",
+      logoExplainer:
+        "Navy blue banner displaying the refined white serif masthead 'CHINA DAILY', representing China's primary international English voice.",
+      sources: ["https://www.chinadaily.com.cn", "https://en.wikipedia.org/wiki/China_Daily"],
+    },
+    {
+      id: "cn-reference-news",
+      countryCode: "CN",
+      name: "Reference News",
+      officialName: "Cankao Xiaoxi",
+      nativeName: "参考消息",
+      englishTranslation: "Reference News",
+      founded: 1931,
+      frequency: "Daily newspaper",
+      format: "Broadsheet digest",
+      language: "Chinese",
+      headquarters: "Beijing",
+      owner: {
+        name: "Xinhua News Agency",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Foreign affairs digest published by Xinhua; translating and reprinting international news coverage and commentary for domestic readership",
+      readership: {
+        metric: "Over 2.5 million daily print circulation; historically one of China's most widely read daily digests",
+        source: "Xinhua Media Research 2023",
+      },
+      revenueModel: "Institutional and retail print subscriptions",
+      logo: "newspaper-logos/cn/reference-news.svg",
+      logoExplainer:
+        "White canvas with black calligraphic Chinese characters '参考消息' penned by Lu Xun, symbolising curated international news insights.",
+      sources: ["http://www.cankaoxiaoxi.com", "https://en.wikipedia.org/wiki/Reference_News"],
+    },
+    {
+      id: "cn-huanqiu-shibao",
+      countryCode: "CN",
+      name: "Global Times",
+      officialName: "Huanqiu Shibao",
+      nativeName: "环球时报",
+      englishTranslation: "Global Times",
+      founded: 1993,
+      frequency: "Daily newspaper (Chinese & English editions)",
+      format: "Tabloid & international digital portal",
+      language: "Chinese, English",
+      headquarters: "Beijing",
+      owner: {
+        name: "People's Daily Press",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Nationalist international affairs daily affiliated with People's Daily; vocal coverage of foreign relations, geopolitics, and sovereignty",
+      readership: {
+        metric: "Over 1.5 million daily print circulation in Chinese plus extensive international web traffic on GlobalTimes.cn",
+        source: "Global Times Audience Report 2023",
+      },
+      revenueModel: "Print sales, corporate advertising, and digital subscriptions",
+      logo: "newspaper-logos/cn/huanqiu-shibao.svg",
+      logoExplainer:
+        "Burgundy red banner with white typography 'GLOBAL TIMES' and Chinese characters '环球时报', symbolising forthright geopolitical reporting.",
+      sources: ["https://www.globaltimes.cn", "https://en.wikipedia.org/wiki/Global_Times"],
+    },
+    {
+      id: "cn-nanfang-ribao",
+      countryCode: "CN",
+      name: "Nanfang Daily",
+      officialName: "Southern Daily",
+      nativeName: "南方日报",
+      englishTranslation: "Southern Daily",
+      founded: 1949,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital multimedia network",
+      language: "Chinese",
+      headquarters: "Guangzhou, Guangdong",
+      owner: {
+        name: "Nanfang Media Group",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official newspaper of the Guangdong Provincial Committee of the CCP; flagship of Nanfang Media Group covering the Greater Bay Area economy",
+      readership: {
+        metric: "Leading regional provincial broadsheet with 950,000+ daily copies across Guangdong, Hong Kong, and Macau",
+        source: "Nanfang Media Group Annual Review 2023",
+      },
+      revenueModel: "Provincial institutional subscriptions and regional commercial advertising",
+      logo: "newspaper-logos/cn/nanfang-ribao.svg",
+      logoExplainer:
+        "White banner displaying red calligraphic characters '南方日报', representing the dynamic Greater Bay Area and Guangdong journalism.",
+      sources: ["https://www.nanfangdaily.com.cn", "https://en.wikipedia.org/wiki/Nanfang_Daily"],
+    },
+  ],
+
+  // Colombia
+  CO: [
+    {
+      id: "co-el-tiempo",
+      countryCode: "CO",
+      name: "El Tiempo",
+      englishTranslation: "The Time",
+      founded: 1911,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Spanish",
+      headquarters: "Bogotá",
+      owner: {
+        name: "Grupo Aval (Luis Carlos Sarmiento Angulo)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Historic centrist newspaper of record in Colombia; national politics, economic policy, peace process analysis, and cultural reporting",
+      readership: {
+        metric: "Largest print circulation in Colombia and premier digital portal reaching over 14 million monthly unique visitors",
+        source: "Casa Editorial El Tiempo Media Profile 2024",
+      },
+      revenueModel: "Digital subscriptions, print sales, and cross-media advertising",
+      logo: "newspaper-logos/co/el-tiempo.svg",
+      logoExplainer:
+        "Navy blue title banner with white serif masthead 'EL TIEMPO', representing Colombia's preeminent historic daily newspaper.",
+      sources: ["https://www.eltiempo.com", "https://en.wikipedia.org/wiki/El_Tiempo_(Colombia)"],
+    },
+    {
+      id: "co-el-espectador",
+      countryCode: "CO",
+      name: "El Espectador",
+      englishTranslation: "The Spectator",
+      founded: 1887,
+      frequency: "Daily digital portal & weekly Sunday print edition",
+      format: "Tabloid & digital portal",
+      language: "Spanish",
+      headquarters: "Bogotá",
+      owner: {
+        name: "Valorem S.A. (Santo Domingo family)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Colombia's oldest newspaper; historic progressive liberal stance known for legendary courageous investigative journalism against drug cartels and corruption",
+      readership: {
+        metric: "Revered quality investigative outlet with over 9 million monthly digital visitors on elespectador.com",
+        source: "Valorem Annual Report 2023",
+      },
+      revenueModel: "Digital subscriber paywall, print sales, and civic journalism grants",
+      logo: "newspaper-logos/co/el-espectador.svg",
+      logoExplainer:
+        "White banner displaying the iconic black gothic masthead 'El Espectador', symbolising heroic defence of press freedom in Colombia.",
+      sources: ["https://www.elespectador.com", "https://en.wikipedia.org/wiki/El_Espectador_(newspaper)"],
+    },
+    {
+      id: "co-el-colombiano",
+      countryCode: "CO",
+      name: "El Colombiano",
+      englishTranslation: "The Colombian",
+      founded: 1912,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Spanish",
+      headquarters: "Medellín, Antioquia",
+      owner: {
+        name: "Grupo Gilinski",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Conservative regional broadsheet; principal voice of Antioquia and western Colombia focusing on business, industry, and regional politics",
+      readership: {
+        metric: "Dominant daily newspaper in Medellín and the coffee-growing axis with 3.5 million monthly digital readers",
+        source: "El Colombiano Media Kit 2024",
+      },
+      revenueModel: "Print subscriptions, digital access plans, and regional advertising",
+      logo: "newspaper-logos/co/el-colombiano.svg",
+      logoExplainer:
+        "Red banner with clean white serif font 'EL COLOMBIANO', representing century-old journalistic tradition in Antioquia.",
+      sources: ["https://www.elcolombiano.com", "https://en.wikipedia.org/wiki/El_Colombiano"],
+    },
+    {
+      id: "co-portafolio",
+      countryCode: "CO",
+      name: "Portafolio",
+      englishTranslation: "Portfolio",
+      founded: 1993,
+      frequency: "Daily financial newspaper (Monday–Friday)",
+      format: "Compact tabloid & financial portal",
+      language: "Spanish",
+      headquarters: "Bogotá",
+      owner: {
+        name: "Casa Editorial El Tiempo",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Premier financial and economic daily; Bogota stock market, macroeconomic indicators, foreign investment, and corporate mergers",
+      readership: {
+        metric: "Leading specialized financial daily read across Colombian corporate boardrooms and government ministries",
+        source: "Portafolio Corporate Profile 2023",
+      },
+      revenueModel: "Financial corporate subscriptions and business-to-business advertising",
+      logo: "newspaper-logos/co/portafolio.svg",
+      logoExplainer:
+        "Dark slate badge with clean white title 'PORTAFOLIO', symbolising authoritative financial analysis and business intelligence.",
+      sources: ["https://www.portafolio.co", "https://es.wikipedia.org/wiki/Portafolio_(peri%C3%B3dico)"],
+    },
+    {
+      id: "co-la-republica",
+      countryCode: "CO",
+      name: "La República",
+      englishTranslation: "The Republic",
+      founded: 1954,
+      frequency: "Daily financial newspaper (Monday–Saturday)",
+      format: "Salmon broadsheet & digital portal",
+      language: "Spanish",
+      headquarters: "Bogotá",
+      owner: {
+        name: "Editorial La República / Grupo Ardila Lülle",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Historic specialized business and economic newspaper founded by former President Mariano Ospina Pérez; economic policy and market reporting",
+      readership: {
+        metric: "Over 2.8 million monthly digital visitors and widespread institutional print circulation",
+        source: "Grupo Ardila Lülle Media Review 2023",
+      },
+      revenueModel: "Corporate subscriptions and commercial banking advertising",
+      logo: "newspaper-logos/co/la-república.svg",
+      logoExplainer:
+        "White banner displaying red and black serif lettering 'La República', representing Colombia's first dedicated economic daily.",
+      sources: ["https://www.larepublica.co", "https://es.wikipedia.org/wiki/La_Rep%C3%BAblica_(Colombia)"],
+    },
+  ],
+
+  // Comoros
+  KM: [
+    {
+      id: "km-al-watwan",
+      countryCode: "KM",
+      name: "Al-Watwan",
+      nativeName: "Al-Watwan",
+      englishTranslation: "The Homeland",
+      founded: 1985,
+      frequency: "Daily newspaper (Monday–Friday)",
+      format: "Official state daily broadsheet & digital portal",
+      language: "French, Arabic",
+      headquarters: "Moroni, Grande Comore",
+      owner: {
+        name: "Union of the Comoros (Ministère des Télécommunications)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official national public daily newspaper; presidential decrees, inter-island development, parliamentary affairs, and Indian Ocean diplomacy",
+      readership: {
+        metric: "Only national daily print newspaper in the Comoros, distributed across Grande Comore, Anjouan, and Mohéli",
+        source: "Al-Watwan Presse d'État Rapport 2023",
+      },
+      annualPublicFunding: {
+        total: "KMF 85 million (~US$185,000) national operating allocation",
+        perCapita: "KMF 95 / person / year (~US$0.21)",
+      },
+      revenueModel: "State operating subsidy, print sales, and official legal notices",
+      logo: "newspaper-logos/km/al-watwan.svg",
+      logoExplainer:
+        "Green title banner with white serif font 'AL-WATWAN', embodying the national color of Comoros and state press heritage.",
+      sources: ["https://alwatwan.net", "https://fr.wikipedia.org/wiki/Al-Watwan"],
+    },
+    {
+      id: "km-la-gazette-des-comores",
+      countryCode: "KM",
+      name: "La Gazette des Comores",
+      englishTranslation: "The Comoros Gazette",
+      founded: 1999,
+      frequency: "Daily newspaper",
+      format: "Tabloid & digital portal",
+      language: "French",
+      headquarters: "Moroni",
+      owner: {
+        name: "Housseine Saïd / Groupe La Gazette",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent commercial daily; political debates, social issues, regional economy, and human rights coverage in Comoros",
+      readership: {
+        metric: "Leading independent print and digital daily in Moroni with widespread readership across the islands",
+        source: "Groupe La Gazette Media Review 2023",
+      },
+      revenueModel: "Print sales and local business advertising",
+      logo: "newspaper-logos/km/la-gazette-des-comores.svg",
+      logoExplainer:
+        "White canvas displaying bold black font 'La Gazette des Comores', representing independent civic journalism.",
+      sources: ["https://lagazettedescomores.com"],
+    },
+    {
+      id: "km-habari-za-comores",
+      countryCode: "KM",
+      name: "Habari Za Comores",
+      nativeName: "Habari Za Comores",
+      englishTranslation: "News of Comoros",
+      founded: 2010,
+      frequency: "Continuous digital news portal",
+      format: "Digital news portal",
+      language: "French, Comorian (Shikomori)",
+      headquarters: "Moroni",
+      owner: {
+        name: "Habari Media Network",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent digital news outlet; community news, cultural preservation, diaspora connections, and civic affairs",
+      readership: {
+        metric: "Over 450,000 monthly digital visitors across Comoros, Mayotte, and the French diaspora",
+        source: "Habari Za Comores Analytics 2024",
+      },
+      revenueModel: "Digital banner advertising and diaspora promotions",
+      logo: "newspaper-logos/km/habari-za-comores.svg",
+      logoExplainer:
+        "White banner with bold green and navy typography 'HABARI ZA COMORES', symbolising community news and archipelago culture.",
+      sources: ["https://habarizacomores.com"],
+    },
+    {
+      id: "km-comores-infos",
+      countryCode: "KM",
+      name: "Comores-Infos",
+      englishTranslation: "Comoros News",
+      founded: 2012,
+      frequency: "Continuous digital news service",
+      format: "Digital multimedia portal",
+      language: "French",
+      headquarters: "Moroni",
+      owner: {
+        name: "Comores Infos Médias",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Digital news and multimedia portal; breaking national news, sports, youth initiatives, and social commentary",
+      readership: {
+        metric: "High engagement on mobile and social networks across the island archipelago",
+        source: "Comores Infos Digital Review 2023",
+      },
+      revenueModel: "Digital display ads and multimedia sponsorships",
+      logo: "newspaper-logos/km/comores-infos.svg",
+      logoExplainer:
+        "Red title banner with modern white typography 'COMORES INFOS', symbolising dynamic digital breaking news.",
+      sources: ["https://www.comoresinfos.net"],
+    },
+    {
+      id: "km-mwali-info",
+      countryCode: "KM",
+      name: "Mwali Info",
+      englishTranslation: "Mohéli News",
+      founded: 2014,
+      frequency: "Digital portal",
+      format: "Regional digital news service",
+      language: "French, Shikomori",
+      headquarters: "Fomboni, Mohéli",
+      owner: {
+        name: "Collectif des Journalistes de Mohéli",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Regional media voice of Mohéli Island; biosphere reserve conservation, local governance, and island agricultural affairs",
+      readership: {
+        metric: "Primary news portal dedicated to Mohéli island affairs and ecological tourism",
+        source: "Mohéli Media Collective 2023",
+      },
+      revenueModel: "Community sponsorships and tourism advertising",
+      logo: "newspaper-logos/km/mwali-info.svg",
+      logoExplainer:
+        "Yellow title block with bold blue font 'MWALI INFO', reflecting the vibrant biodiversity and island heritage of Mohéli.",
+      sources: ["https://fr.wikipedia.org/wiki/Moh%C3%A9li"],
+    },
+  ],
+
+  // Republic of the Congo
+  CG: [
+    {
+      id: "cg-aci",
+      countryCode: "CG",
+      name: "ACI",
+      officialName: "Agence Congolaise d'Information",
+      nativeName: "Agence Congolaise d'Information",
+      englishTranslation: "Congolese Information Agency",
+      founded: 1961,
+      frequency: "Continuous 24/7 national newswire",
+      format: "Official state newswire & bulletin",
+      language: "French",
+      headquarters: "Brazzaville",
+      owner: {
+        name: "Republic of the Congo (Ministère de la Communication)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official national public newswire; executive decisions, legislative proceedings, diplomatic cooperation, and forestry development",
+      readership: {
+        metric: "Primary news supplier to all domestic broadcast networks and print titles across Brazzaville and Pointe-Noire",
+        source: "ACI Brazzaville Rapport Annuel 2023",
+      },
+      annualPublicFunding: {
+        total: "XAF 180 million (~US$295,000) state operating subsidy",
+        perCapita: "XAF 30 / person / year (~US$0.05)",
+      },
+      revenueModel: "State budget allocation and wire syndication fees",
+      logo: "newspaper-logos/cg/aci-agence-congolaise-d-information.svg",
+      logoExplainer:
+        "Deep blue banner with crisp white letters 'ACI Agence Congolaise d'Information', representing the statutory news agency of Congo-Brazzaville.",
+      sources: ["https://www.aci.cg", "https://fr.wikipedia.org/wiki/Agence_congolaise_d%27information"],
+    },
+    {
+      id: "cg-les-depeches-de-brazzaville",
+      countryCode: "CG",
+      name: "Les Dépêches de Brazzaville",
+      englishTranslation: "Brazzaville Dispatches",
+      founded: 1998,
+      frequency: "Daily newspaper (Monday–Friday)",
+      format: "Berliner & international portal",
+      language: "French",
+      headquarters: "Brazzaville",
+      owner: {
+        name: "Agence d'Information d'Afrique Centrale (ADIAC)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Leading national daily newspaper; Central African geopolitics, cultural festivals, public infrastructure, and pan-African diplomacy",
+      readership: {
+        metric: "Largest print daily circulation in the Republic of the Congo with 15,000 daily print copies",
+        source: "ADIAC Corporate Review 2023",
+      },
+      revenueModel: "Print sales, cultural sponsorships, and institutional subscriptions",
+      logo: "newspaper-logos/cg/les-dépêches-de-brazzaville.svg",
+      logoExplainer:
+        "Black background with white serif title 'Les Dépêches de Brazzaville', the most prominent daily masthead in the Congo Basin.",
+      sources: ["https://www.lesdepechesdebrazzaville.fr", "https://fr.wikipedia.org/wiki/Les_D%C3%A9p%C3%AAches_de_Brazzaville"],
+    },
+    {
+      id: "cg-la-semaine-africaine",
+      countryCode: "CG",
+      name: "La Semaine Africaine",
+      englishTranslation: "The African Week",
+      founded: 1952,
+      frequency: "Bi-weekly publication (Tuesday & Friday)",
+      format: "Tabloid publication & digital portal",
+      language: "French",
+      headquarters: "Brazzaville",
+      owner: {
+        name: "Episcopal Conference of the Congo (Catholic Church)",
+        type: "Independent trust / foundation",
+      },
+      editorialStance: "Historic independent bi-weekly; social justice, pastoral advocacy, ethical governance, and civil society reflection",
+      readership: {
+        metric: "Over 70 years of continuous publishing; highly respected independent moral authority in Congolese media",
+        source: "La Semaine Africaine Archive 2023",
+      },
+      revenueModel: "Print circulation, church subscriptions, and civic announcements",
+      logo: "newspaper-logos/cg/la-semaine-africaine.svg",
+      logoExplainer:
+        "White banner with bold green and black lettering 'La Semaine Africaine', symbolising historic moral and civic journalism.",
+      sources: ["https://lasemaineafricaine.info", "https://fr.wikipedia.org/wiki/La_Semaine_africaine"],
+    },
+    {
+      id: "cg-le-patriote",
+      countryCode: "CG",
+      name: "Le Patriote",
+      englishTranslation: "The Patriot",
+      founded: 2000,
+      frequency: "Weekly newspaper",
+      format: "Tabloid publication",
+      language: "French",
+      headquarters: "Brazzaville",
+      owner: {
+        name: "Groupe Le Patriote",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Weekly independent newspaper; national political debates, regional economic corridors, and social development",
+      readership: {
+        metric: "Popular weekly print edition in administrative centers of Brazzaville and Pointe-Noire",
+        source: "Conseil Supérieur de la Liberté de Communication 2023",
+      },
+      revenueModel: "Print retail sales and local advertising",
+      logo: "newspaper-logos/cg/le-patriote.svg",
+      logoExplainer:
+        "Red title banner with bold white lettering 'LE PATRIOTE', representing national civic engagement and public debate.",
+      sources: ["https://fr.wikipedia.org/wiki/M%C3%A9dias_en_R%C3%A9publique_du_Congo"],
+    },
+    {
+      id: "cg-vox-congo",
+      countryCode: "CG",
+      name: "Vox Congo",
+      founded: 2017,
+      frequency: "Continuous digital multimedia service",
+      format: "Digital multimedia portal & Web TV",
+      language: "French",
+      headquarters: "Brazzaville",
+      owner: {
+        name: "Vox Médias Group",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Modern multimedia and digital TV platform; youth culture, sports, technological entrepreneurship, and urban lifestyle",
+      readership: {
+        metric: "Leading digital native video and news platform in Brazzaville with 500,000+ monthly engagements",
+        source: "Vox Congo Audience Review 2024",
+      },
+      revenueModel: "Digital video advertising and sponsored corporate media",
+      logo: "newspaper-logos/cg/vox-congo.svg",
+      logoExplainer:
+        "White banner with vibrant red and black logo 'VOX', representing modern digital television and youth-oriented journalism.",
+      sources: ["https://www.vox.cg"],
+    },
+  ],
+
+  // Democratic Republic of the Congo
+  CD: [
+    {
+      id: "cd-acp",
+      countryCode: "CD",
+      name: "ACP",
+      officialName: "Agence Congolaise de Presse",
+      nativeName: "Agence Congolaise de Presse",
+      englishTranslation: "Congolese Press Agency",
+      founded: 1960,
+      frequency: "Continuous 24/7 national newswire",
+      format: "Official public wire service & daily bulletin",
+      language: "French",
+      headquarters: "Gombe, Kinshasa",
+      owner: {
+        name: "Democratic Republic of the Congo (Ministère de la Communication et Médias)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official public newswire of the DRC; presidential activity, national assembly decrees, provincial governors, and MONUSCO peace initiatives",
+      readership: {
+        metric: "Primary news supplier to over 500 radio, television, and print outlets across all 26 provinces of the DRC",
+        source: "ACP Rapport de Gestion et Performance 2023",
+      },
+      annualPublicFunding: {
+        total: "CDF 4.5 billion (~US$1.65 million) state budget allocation",
+        perCapita: "CDF 45 / person / year (~US$0.016)",
+      },
+      revenueModel: "Direct state budget subsidy and institutional subscriber feeds",
+      logo: "newspaper-logos/cd/acp-agence-congolaise-de-presse.svg",
+      logoExplainer:
+        "Navy blue background with bold white lettering 'ACP' and full title, symbolising the official state wire service of the DRC.",
+      sources: ["https://acp.cd", "https://fr.wikipedia.org/wiki/Agence_congolaise_de_presse"],
+    },
+    {
+      id: "cd-le-potentiel",
+      countryCode: "CD",
+      name: "Le Potentiel",
+      englishTranslation: "The Potential",
+      founded: 1982,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Tabloid & digital portal",
+      language: "French",
+      headquarters: "Kinshasa",
+      owner: {
+        name: "Modeste Mutinga Mutuishayi / Groupe Le Potentiel",
+        type: "Independent commercial media",
+      },
+      editorialStance: "DRC's benchmark independent daily newspaper; recognized for in-depth economic analysis, governance monitoring, and constitutional reform debate",
+      readership: {
+        metric: "Most influential intellectual daily in Kinshasa and Lubumbashi with 1.2 million monthly web readers on lepotentiel.cd",
+        source: "Groupe Le Potentiel Profile 2023",
+      },
+      revenueModel: "Print sales, institutional advertising, and online sponsorships",
+      logo: "newspaper-logos/cd/le-potentiel.svg",
+      logoExplainer:
+        "Deep blue banner with white serif font 'Le Potentiel', representing decades of independent investigative journalism in Central Africa.",
+      sources: ["https://lepotentiel.cd", "https://fr.wikipedia.org/wiki/Le_Potentiel"],
+    },
+    {
+      id: "cd-actualite-cd",
+      countryCode: "CD",
+      name: "ACTUALITE.CD",
+      founded: 2016,
+      frequency: "Continuous 24/7 digital news service",
+      format: "Digital multimedia portal & podcasts",
+      language: "French",
+      headquarters: "Kinshasa",
+      owner: {
+        name: "Next Corp (Patient Ligodi)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Leading independent digital news portal in the DRC; high-tempo breaking news, eastern DRC security coverage, electoral tracking, and podcast journalism",
+      readership: {
+        metric: "Over 3.5 million monthly pageviews; premier digital news reference for Congolese youth and civil society",
+        source: "Actualite.cd Audience Review 2024",
+      },
+      revenueModel: "Digital display advertising, international donor media grants, and syndicated reporting",
+      logo: "newspaper-logos/cd/actualite-cd.svg",
+      logoExplainer:
+        "Dark charcoal banner with bold white text 'ACTUALITE.CD' and vivid red dot, symbolising real-time breaking news.",
+      sources: ["https://actualite.cd"],
+    },
+    {
+      id: "cd-l-avenir",
+      countryCode: "CD",
+      name: "L'Avenir",
+      englishTranslation: "The Future",
+      founded: 1996,
+      frequency: "Daily newspaper",
+      format: "Tabloid & digital portal",
+      language: "French",
+      headquarters: "Kinshasa",
+      owner: {
+        name: "Groupe L'Avenir (Pius Muabilu)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Major Kinshasa commercial daily; national politics, parliamentary debates, infrastructure modernization, and cultural commentary",
+      readership: {
+        metric: "Prominent daily circulation in Kinshasa and central provinces with active digital platform groupelavenir.cd",
+        source: "Groupe L'Avenir Media Review 2023",
+      },
+      revenueModel: "Print newspaper sales and commercial advertising",
+      logo: "newspaper-logos/cd/l-avenir.svg",
+      logoExplainer:
+        "White banner featuring blue and red font 'L'AVENIR', representing optimistic national development and daily news.",
+      sources: ["https://groupelavenir.cd", "https://fr.wikipedia.org/wiki/L%27Avenir_(journal_congolais)"],
+    },
+    {
+      id: "cd-la-prosperite",
+      countryCode: "CD",
+      name: "La Prospérité",
+      englishTranslation: "The Prosperity",
+      founded: 1999,
+      frequency: "Daily newspaper (Monday–Friday)",
+      format: "Tabloid publication & digital portal",
+      language: "French",
+      headquarters: "Kinshasa",
+      owner: {
+        name: "Marcel Ngoyi Ngoyi / Éditions La Prospérité",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent commercial daily newspaper; detailed parliamentary reporting, judicial proceedings, and public policy debate",
+      readership: {
+        metric: "Widely read by legal practitioners, parliamentarians, and civil servants in Kinshasa",
+        source: "CSAC RDC Media Registry 2023",
+      },
+      revenueModel: "Print sales and official legal publication notices",
+      logo: "newspaper-logos/cd/la-prospérité.svg",
+      logoExplainer:
+        "Emerald green title banner with bold white typography 'La Prospérité', reflecting economic growth and national progress.",
+      sources: ["https://laprosperite.online"],
+    },
+  ],
+
+  // Costa Rica
+  CR: [
+    {
+      id: "cr-la-nacion",
+      countryCode: "CR",
+      name: "La Nación",
+      englishTranslation: "The Nation",
+      founded: 1946,
+      frequency: "Daily newspaper (Monday–Sunday)",
+      format: "Tabloid & digital portal",
+      language: "Spanish",
+      headquarters: "San José",
+      owner: {
+        name: "Grupo Nación S.A.",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Costa Rica's historic newspaper of record; center-right liberal-conservative editorial stance focusing on governance, politics, and investigative reporting",
+      readership: {
+        metric: "Over 2.5 million monthly digital readers and Costa Rica's highest circulated print daily",
+        source: "Grupo Nación Memoria Anual 2023",
+      },
+      revenueModel: "Digital paywall subscriptions, print sales, and corporate advertising",
+      logo: "newspaper-logos/cr/la-nación.svg",
+      logoExplainer:
+        "Classic black serif masthead 'La Nación' on white canvas, symbolising democratic governance and public interest reporting in Costa Rica.",
+      sources: ["https://www.nacion.com", "https://en.wikipedia.org/wiki/La_Naci%C3%B3n_(San_Jos%C3%A9)"],
+    },
+    {
+      id: "cr-la-republica",
+      countryCode: "CR",
+      name: "La República",
+      englishTranslation: "The Republic",
+      founded: 1950,
+      frequency: "Daily business newspaper (Monday–Friday)",
+      format: "Tabloid & digital portal",
+      language: "Spanish",
+      headquarters: "San José",
+      owner: {
+        name: "Republicare Media Group",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Business, finance, and investment daily; focus on foreign direct investment, free trade zones, and macroeconomic policy",
+      readership: {
+        metric: "Leading specialized financial daily read across business chambers and executive suites in Costa Rica",
+        source: "La República Media Profile 2024",
+      },
+      revenueModel: "Corporate subscriptions and financial sector advertising",
+      logo: "newspaper-logos/cr/la-república.svg",
+      logoExplainer:
+        "Vibrant red banner with crisp white serif typography 'LA REPÚBLICA', representing business intelligence and commerce.",
+      sources: ["https://www.larepublica.net", "https://es.wikipedia.org/wiki/La_Rep%C3%BAblica_(Costa_Rica)"],
+    },
+    {
+      id: "cr-diario-extra",
+      countryCode: "CR",
+      name: "Diario Extra",
+      englishTranslation: "Extra Daily",
+      founded: 1978,
+      frequency: "Daily newspaper",
+      format: "Tabloid & digital portal",
+      language: "Spanish",
+      headquarters: "San José",
+      owner: {
+        name: "Grupo Extra / Transcomer Group",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Popular tabloid; crime reporting, labour union advocacy, sports, and working-class social issues",
+      readership: {
+        metric: "Historically Costa Rica's largest street-sale newspaper with 80,000+ daily copies",
+        source: "Diario Extra Media Kit 2023",
+      },
+      revenueModel: "Retail print sales and classified advertising",
+      logo: "newspaper-logos/cr/diario-extra.svg",
+      logoExplainer:
+        "Red and yellow title block with bold sans-serif lettering 'DIARIO EXTRA', iconic across Costa Rican kiosks.",
+      sources: ["https://www.diarioextra.com", "https://es.wikipedia.org/wiki/Diario_Extra_(Costa_Rica)"],
+    },
+    {
+      id: "cr-crhoy",
+      countryCode: "CR",
+      name: "CRHoy",
+      founded: 2012,
+      frequency: "Continuous 24/7 digital news service",
+      format: "Digital-only news portal",
+      language: "Spanish",
+      headquarters: "San José",
+      owner: {
+        name: "Leonel Baruch / CRHoy Media",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Leading digital investigative portal; high-tempo breaking news, investigative exposés, and political accountability",
+      readership: {
+        metric: "Over 5.5 million monthly unique digital visitors; highest digital news traffic in Costa Rica",
+        source: "Similarweb & CRHoy Media Review 2024",
+      },
+      revenueModel: "Digital programmatic advertising and sponsored content",
+      logo: "newspaper-logos/cr/crhoy.svg",
+      logoExplainer:
+        "Bold blue and orange typography 'crhoy.com' representing rapid breaking digital journalism in Central America.",
+      sources: ["https://www.crhoy.com", "https://es.wikipedia.org/wiki/CRHoy"],
+    },
+    {
+      id: "cr-elfaro-cr",
+      countryCode: "CR",
+      name: "El Faro Costa Rica",
+      englishTranslation: "The Lighthouse Costa Rica",
+      founded: 2018,
+      frequency: "Continuous digital news magazine",
+      format: "Investigative digital portal",
+      language: "Spanish",
+      headquarters: "San José",
+      owner: {
+        name: "Fundación Trípode",
+        type: "Non-profit independent foundation",
+      },
+      editorialStance: "In-depth investigative journalism; corruption investigations, judicial independence, and regional Central American democracy",
+      readership: {
+        metric: "Leading investigative regional journalism platform relocated to San José for press freedom protection",
+        source: "Fundación Trípode Annual Report 2023",
+      },
+      revenueModel: "International journalistic grants and reader crowdfunding",
+      logo: "newspaper-logos/cr/elfaro-cr.svg",
+      logoExplainer:
+        "Black emblem with golden lighthouse beam and stark typography 'elfaro', symbolising illumination of truth and investigative scrutiny.",
+      sources: ["https://elfaro.net", "https://en.wikipedia.org/wiki/El_Faro_(digital_newspaper)"],
+    },
+  ],
+
+  // Croatia
+  HR: [
+    {
+      id: "hr-vecernji-list",
+      countryCode: "HR",
+      name: "Večernji list",
+      englishTranslation: "Evening Paper",
+      founded: 1959,
+      frequency: "Daily newspaper",
+      format: "Compact daily & digital portal",
+      language: "Croatian",
+      headquarters: "Zagreb",
+      owner: {
+        name: "Styria Media Group AG",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Center-right mainstream daily newspaper of record; national political commentary, European Union affairs, and cultural reviews",
+      readership: {
+        metric: "Over 2.2 million monthly unique digital visitors on vecernji.hr and leading print circulation in Zagreb",
+        source: "Styria Media Group Croatia 2023",
+      },
+      revenueModel: "Digital subscriptions, print sales, and commercial advertising",
+      logo: "newspaper-logos/hr/večernji-list.svg",
+      logoExplainer:
+        "Red and black logo with stylized bold text 'Večernji list', an iconic masthead across Croatia for over sixty years.",
+      sources: ["https://www.vecernji.hr", "https://en.wikipedia.org/wiki/Ve%C4%8Dernji_list"],
+    },
+    {
+      id: "hr-jutarnji-list",
+      countryCode: "HR",
+      name: "Jutarnji list",
+      englishTranslation: "Morning Paper",
+      founded: 1998,
+      frequency: "Daily newspaper",
+      format: "Berliner & digital portal",
+      language: "Croatian",
+      headquarters: "Zagreb",
+      owner: {
+        name: "Hanza Media",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Center-left liberal daily; investigative journalism, political reform, business analysis, and arts coverage",
+      readership: {
+        metric: "Over 2.4 million monthly unique digital visitors on jutarnji.hr; flagship publication of Hanza Media",
+        source: "Hanza Media Audience Report 2024",
+      },
+      revenueModel: "Digital paywall subscriptions, print sales, and display advertising",
+      logo: "newspaper-logos/hr/jutarnji-list.svg",
+      logoExplainer:
+        "Deep blue banner with modern bold white serif lettering 'JutarnjiLIST', symbolising contemporary liberal journalism.",
+      sources: ["https://www.jutarnji.hr", "https://en.wikipedia.org/wiki/Jutarnji_list"],
+    },
+    {
+      id: "hr-24sata",
+      countryCode: "HR",
+      name: "24sata",
+      englishTranslation: "24 Hours",
+      founded: 2005,
+      frequency: "Daily newspaper",
+      format: "Tabloid & multimedia portal",
+      language: "Croatian",
+      headquarters: "Zagreb",
+      owner: {
+        name: "Styria Media Group AG",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Popular tabloid; breaking news, visual reporting, social exposés, sports, and entertainment",
+      readership: {
+        metric: "Highest daily print circulation in Croatia and premier digital news website with 2.8M+ monthly unique users",
+        source: "Styria Media Croatia Audience Review 2024",
+      },
+      revenueModel: "Retail print sales, programmatic digital advertising, and native video production",
+      logo: "newspaper-logos/hr/24sata.svg",
+      logoExplainer:
+        "Orange rectangular badge featuring white numeral '24' and text 'sata', representing 24-hour fast-paced multimedia news.",
+      sources: ["https://www.24sata.hr", "https://en.wikipedia.org/wiki/24sata_(Croatia)"],
+    },
+    {
+      id: "hr-slobodna-dalmacija",
+      countryCode: "HR",
+      name: "Slobodna Dalmacija",
+      englishTranslation: "Free Dalmatia",
+      founded: 1943,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & regional portal",
+      language: "Croatian",
+      headquarters: "Split, Dalmatia",
+      owner: {
+        name: "Hanza Media",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Historic regional daily newspaper founded as an anti-fascist partisan paper; voice of Dalmatia, maritime commerce, and Adriatic tourism",
+      readership: {
+        metric: "Leading daily newspaper in southern Croatia and the Adriatic coast with 1.8M monthly readers",
+        source: "Hanza Media Regional Division 2023",
+      },
+      revenueModel: "Print circulation and regional corporate advertising",
+      logo: "newspaper-logos/hr/slobodna-dalmacija.svg",
+      logoExplainer:
+        "Classic blue and white title banner with serif typography 'SLOBODNA DALMACIJA', evoking the Adriatic sea and Mediterranean tradition.",
+      sources: ["https://slobodnadalmacija.hr", "https://en.wikipedia.org/wiki/Slobodna_Dalmacija"],
+    },
+    {
+      id: "hr-novi-list",
+      countryCode: "HR",
+      name: "Novi list",
+      englishTranslation: "New Paper",
+      founded: 1900,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & regional portal",
+      language: "Croatian",
+      headquarters: "Rijeka, Kvarner",
+      owner: {
+        name: "Media Solutions",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Centrist quality daily; primary voice of Rijeka, Istria, and Kvarner Bay focusing on local governance and industry",
+      readership: {
+        metric: "Oldest active daily newspaper in Croatia, dominating regional readership in western Croatia",
+        source: "Novi List Nakladnik 2023",
+      },
+      revenueModel: "Print sales, subscriptions, and display advertising",
+      logo: "newspaper-logos/hr/novi-list.svg",
+      logoExplainer:
+        "Red and black uppercase masthead 'NOVI LIST' on white ground, symbolising century-old civic journalism in Rijeka.",
+      sources: ["https://www.novilist.hr", "https://en.wikipedia.org/wiki/Novi_list"],
+    },
+  ],
+
+  // Cuba
+  CU: [
+    {
+      id: "cu-granma",
+      countryCode: "CU",
+      name: "Granma",
+      officialName: "Granma - Órgano Oficial del Comité Central del Partido Comunista de Cuba",
+      nativeName: "Granma",
+      englishTranslation: "Granma (named after the revolutionary yacht)",
+      founded: 1965,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Official state broadsheet & international portal",
+      language: "Spanish, with foreign language editions",
+      headquarters: "Plaza de la Revolución, Havana",
+      owner: {
+        name: "Central Committee of the Communist Party of Cuba",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official newspaper of the Communist Party of Cuba; state decrees, socialist theory, economic reforms, and international anti-imperialist diplomacy",
+      readership: {
+        metric: "Largest print circulation in Cuba with 450,000 daily print copies and global digital reach across Granma.cu",
+        source: "Editora Granma Informe de Gestión 2023",
+      },
+      revenueModel: "Direct state budget appropriation and institutional subscriptions",
+      logo: "newspaper-logos/cu/granma.svg",
+      logoExplainer:
+        "Red banner with bold white lettering 'Granma' and stylized silhouette of the revolutionary yacht, the historic emblem of Cuban state journalism.",
+      sources: ["https://www.granma.cu", "https://en.wikipedia.org/wiki/Granma_(newspaper)"],
+    },
+    {
+      id: "cu-juventud-rebelde",
+      countryCode: "CU",
+      name: "Juventud Rebelde",
+      englishTranslation: "Rebel Youth",
+      founded: 1965,
+      frequency: "Daily newspaper (Tuesday–Sunday)",
+      format: "Tabloid & digital portal",
+      language: "Spanish",
+      headquarters: "Havana",
+      owner: {
+        name: "Union of Young Communists (UJC)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official newspaper of the Cuban youth organization; cultural development, youth sports, science, and university affairs",
+      readership: {
+        metric: "Second largest print circulation in Cuba with 250,000 daily copies and popular Sunday magazine edition",
+        source: "Editora Juventud Rebelde 2023",
+      },
+      revenueModel: "State youth media subsidies and retail print distribution",
+      logo: "newspaper-logos/cu/juventud-rebelde.svg",
+      logoExplainer:
+        "Blue and red badge with bold sans-serif text 'JUVENTUD REBELDE', symbolising revolutionary youth energy and education.",
+      sources: ["https://www.juventudrebelde.cu", "https://en.wikipedia.org/wiki/Juventud_Rebelde"],
+    },
+    {
+      id: "cu-prensa-latina",
+      countryCode: "CU",
+      name: "Prensa Latina",
+      officialName: "Agencia Informativa Latinoamericana Prensa Latina S.A.",
+      nativeName: "Prensa Latina",
+      englishTranslation: "Latin American Press",
+      founded: 1959,
+      frequency: "Continuous 24/7 international newswire",
+      format: "International news agency wire & multimedia service",
+      language: "Spanish, English, French, Portuguese, Russian, Italian",
+      headquarters: "Vedado, Havana",
+      owner: {
+        name: "Republic of Cuba",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Founded by Che Guevara and Jorge Ricardo Masetti; Latin American perspective on global affairs, Non-Aligned Movement, and anti-hegemonic coverage",
+      readership: {
+        metric: "Bureaus in over 40 countries; transmits more than 400 news dispatches daily to media partners worldwide",
+        source: "Prensa Latina Memoria Institucional 2024",
+      },
+      annualPublicFunding: {
+        total: "Central state foreign-press operational allocation",
+        perCapita: "State international agency",
+      },
+      revenueModel: "State budget funding and international media syndication agreements",
+      logo: "newspaper-logos/cu/prensa-latina.svg",
+      logoExplainer:
+        "Navy blue emblem with white calligraphy 'PL Prensa Latina' and globe meridians, symbolising non-aligned Latin American news distribution.",
+      sources: ["https://www.prensa-latina.cu", "https://en.wikipedia.org/wiki/Prensa_Latina"],
+    },
+    {
+      id: "cu-trabajadores",
+      countryCode: "CU",
+      name: "Trabajadores",
+      englishTranslation: "Workers",
+      founded: 1970,
+      frequency: "Weekly newspaper (Monday)",
+      format: "Tabloid publication & digital portal",
+      language: "Spanish",
+      headquarters: "Havana",
+      owner: {
+        name: "Central de Trabajadores de Cuba (CTC)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official organ of the Cuban Trade Union Confederation; labour legislation, worker productivity, industrial management, and cooperative agriculture",
+      readership: {
+        metric: "Distributed across all state enterprises, cooperative farms, and industrial unions nationwide",
+        source: "CTC Departamento de Prensa 2023",
+      },
+      revenueModel: "Trade union dues and state publishing subsidy",
+      logo: "newspaper-logos/cu/trabajadores.svg",
+      logoExplainer:
+        "Red and black title banner with bold uppercase typography 'TRABAJADORES', representing trade union solidarity.",
+      sources: ["https://www.trabajadores.cu", "https://es.wikipedia.org/wiki/Trabajadores_(peri%C3%B3dico)"],
+    },
+    {
+      id: "cu-cubadebate",
+      countryCode: "CU",
+      name: "Cubadebate",
+      founded: 2003,
+      frequency: "Continuous digital news service",
+      format: "Digital multimedia portal",
+      language: "Spanish, English, French, Portuguese",
+      headquarters: "Havana",
+      owner: {
+        name: "Circle of Anti-Terrorist Journalists of Cuba",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Premier digital news and ideological debate portal; in-depth political essays, international sanctions analysis, and digital fact-checking",
+      readership: {
+        metric: "Most visited Cuban domestic website with over 3 million monthly web sessions",
+        source: "Cubadebate Métricas Digitales 2024",
+      },
+      revenueModel: "State digital communication grant allocation",
+      logo: "newspaper-logos/cu/cubadebate.svg",
+      logoExplainer:
+        "Red speech bubble emblem with clean white typography 'cubadebate', symbolising ideological discussion and digital news.",
+      sources: ["http://www.cubadebate.cu", "https://en.wikipedia.org/wiki/Cubadebate"],
+    },
+  ],
+
+  // Cyprus
+  CY: [
+    {
+      id: "cy-cyprus-mail",
+      countryCode: "CY",
+      name: "Cyprus Mail",
+      founded: 1945,
+      frequency: "Daily newspaper & digital portal",
+      format: "Broadsheet & English digital daily",
+      language: "English",
+      headquarters: "Nicosia",
+      owner: {
+        name: "CM Cyprus Mail Ltd",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Cyprus's oldest daily newspaper; authoritative English-language daily covering peace negotiations, EU diplomacy, energy, and business",
+      readership: {
+        metric: "Primary news source for English-speaking diplomats, expatriates, and international business leaders in Cyprus",
+        source: "Cyprus Mail Circulation Review 2023",
+      },
+      revenueModel: "Digital subscriptions, print sales, and corporate advertising",
+      logo: "newspaper-logos/cy/cyprus-mail.svg",
+      logoExplainer:
+        "Navy blue banner with classical white serif typography 'Cyprus Mail', representing eighty years of authoritative journalism.",
+      sources: ["https://cyprus-mail.com", "https://en.wikipedia.org/wiki/Cyprus_Mail"],
+    },
+    {
+      id: "cy-o-phileleftheros",
+      countryCode: "CY",
+      name: "O Phileleftheros",
+      officialName: "O Fileleftheros",
+      nativeName: "Ο Φιλελεύθερος",
+      englishTranslation: "The Liberal",
+      founded: 1955,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital network",
+      language: "Greek",
+      headquarters: "Nicosia",
+      owner: {
+        name: "Phileleftheros Public Company Ltd",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Cyprus's largest circulation newspaper of record; center-right stance focusing on the Cyprus problem, Hellenic affairs, and economic governance",
+      readership: {
+        metric: "Largest print circulation in Cyprus and leading web portal philnews.com reaching 3.5 million monthly unique visitors",
+        source: "Phileleftheros Group Annual Review 2023",
+      },
+      revenueModel: "Print sales, corporate display advertising, and digital subscriptions",
+      logo: "newspaper-logos/cy/o-phileleftheros.svg",
+      logoExplainer:
+        "Blue banner with classic white Greek typography 'Ο ΦΙΛΕΛΕΥΘΕΡΟΣ', the defining masthead of Cypriot print journalism.",
+      sources: ["https://www.philenews.com", "https://en.wikipedia.org/wiki/Phileleftheros"],
+    },
+    {
+      id: "cy-politis",
+      countryCode: "CY",
+      name: "Politis",
+      nativeName: "Πολίτης",
+      englishTranslation: "Citizen",
+      founded: 1999,
+      frequency: "Daily newspaper",
+      format: "Compact tabloid & digital portal",
+      language: "Greek",
+      headquarters: "Nicosia",
+      owner: {
+        name: "Politis Media Group (Yiannis Papadopoulos)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent progressive liberal newspaper; strong proponent of Cypriot reunification, anti-corruption investigations, and social reforms",
+      readership: {
+        metric: "Second largest Greek-language daily newspaper and highly influential digital portal politis.com.cy",
+        source: "Politis Media Review 2024",
+      },
+      revenueModel: "Digital subscriptions, print sales, and commercial advertising",
+      logo: "newspaper-logos/cy/politis.svg",
+      logoExplainer:
+        "Red and black logo with modern Greek sans-serif lettering 'ΠΟΛΙΤΗΣ', symbolising democratic citizenship and progressive civic debate.",
+      sources: ["https://politis.com.cy", "https://en.wikipedia.org/wiki/Politis_(Cyprus)"],
+    },
+    {
+      id: "cy-haravgi",
+      countryCode: "CY",
+      name: "Haravgi",
+      nativeName: "Χαραυγή",
+      englishTranslation: "Dawn",
+      founded: 1956,
+      frequency: "Daily newspaper",
+      format: "Tabloid publication & digital portal",
+      language: "Greek",
+      headquarters: "Nicosia",
+      owner: {
+        name: "Tilegrafos Media (AKEL affiliated)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Left-wing daily newspaper affiliated with the Progressive Party of Working People (AKEL); trade union rights, social welfare, and bi-communal peace",
+      readership: {
+        metric: "Dedicated nationwide readership across trade unions, cooperative movements, and left-wing civic organizations",
+        source: "Haravgi Publishing Data 2023",
+      },
+      revenueModel: "Print sales, party subscriptions, and institutional advertisements",
+      logo: "newspaper-logos/cy/haravgi.svg",
+      logoExplainer:
+        "Red title banner featuring golden sunrise symbol and white Greek lettering 'ΧΑΡΑΥΓΗ', representing a new socialist dawn.",
+      sources: ["https://dialogos.com.cy/haravgi", "https://en.wikipedia.org/wiki/Haravgi"],
+    },
+    {
+      id: "cy-simerini",
+      countryCode: "CY",
+      name: "Simerini",
+      nativeName: "Σημερινή",
+      englishTranslation: "Today",
+      founded: 1976,
+      frequency: "Weekly newspaper (Sunday) & daily portal",
+      format: "Broadsheet & digital portal",
+      language: "Greek",
+      headquarters: "Nicosia",
+      owner: {
+        name: "Zeus Group / Dias Publishing",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Right-wing nationalist publication; defense of the Republic of Cyprus, Orthodox Christian cultural heritage, and sovereignty critique",
+      readership: {
+        metric: "Prominent Sunday print edition and active digital readership on sigmalive.com network",
+        source: "Dias Publishing Group 2023",
+      },
+      revenueModel: "Print retail sales and network television-digital advertising",
+      logo: "newspaper-logos/cy/simerini.svg",
+      logoExplainer:
+        "Deep blue title banner with white serif font 'ΣΗΜΕΡΙΝΗ', symbolising traditional Greek Cypriot conservative press heritage.",
+      sources: ["https://simerini.sigmalive.com", "https://en.wikipedia.org/wiki/Simerini"],
+    },
+  ],
+
+  // Czech Republic
+  CZ: [
+    {
+      id: "cz-mfdnes",
+      countryCode: "CZ",
+      name: "Mladá fronta DNES",
+      officialName: "MF DNES",
+      nativeName: "Mladá fronta DNES",
+      englishTranslation: "Youth Front Today",
+      founded: 1945,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Broadsheet & digital portal",
+      language: "Czech",
+      headquarters: "Prague",
+      owner: {
+        name: "MAFRA a.s. (Kaprain Group)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Czech Republic's largest quality broadsheet; center-right mainstream news focusing on national politics, European integration, and economics",
+      readership: {
+        metric: "Over 4.5 million monthly unique users across iDNES.cz and highest print circulation among Czech non-tabloid dailies",
+        source: "NetMonitor Czech Republic & MAFRA 2024",
+      },
+      revenueModel: "Digital subscriptions (iDNES Premium), print retail sales, and corporate advertising",
+      logo: "newspaper-logos/cz/mfdnes.svg",
+      logoExplainer:
+        "Red and blue emblem featuring bold uppercase text 'MF DNES', representing modern Czech national journalism.",
+      sources: ["https://www.idnes.cz", "https://en.wikipedia.org/wiki/Mlad%C3%A1_fronta_DNES"],
+    },
+    {
+      id: "cz-pravo",
+      countryCode: "CZ",
+      name: "Právo",
+      nativeName: "Právo",
+      englishTranslation: "Right / Justice",
+      founded: 1991,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Broadsheet & digital portal",
+      language: "Czech",
+      headquarters: "Prague",
+      owner: {
+        name: "Borgis a.s.",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Center-left independent daily newspaper successor to Rudé právo; investigative journalism, legal commentary, and social affairs",
+      readership: {
+        metric: "Leading quality daily in print circulation and partner in Novinky.cz, the Czech Republic's top digital news site (5M+ monthly users)",
+        source: "Borgis a.s. Annual Report 2023",
+      },
+      revenueModel: "Print sales, subscriptions, and web traffic partnership with Seznam.cz",
+      logo: "newspaper-logos/cz/právo.svg",
+      logoExplainer:
+        "Classic black serif typography 'Právo' on clean white canvas, symbolising justice, legal rights, and democratic accountability.",
+      sources: ["https://www.novinky.cz", "https://en.wikipedia.org/wiki/Pr%C3%A1vo"],
+    },
+    {
+      id: "cz-hospodarske-noviny",
+      countryCode: "CZ",
+      name: "Hospodářské noviny",
+      nativeName: "Hospodářské noviny",
+      englishTranslation: "Economic Newspaper",
+      founded: 1990,
+      frequency: "Daily financial newspaper (Monday–Friday)",
+      format: "Broadsheet & digital portal",
+      language: "Czech",
+      headquarters: "Prague",
+      owner: {
+        name: "Economia a.s. (Zdeněk Bakala)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Premier financial and economic daily; Prague Stock Exchange, corporate strategy, European single market regulations, and macroeconomic policy",
+      readership: {
+        metric: "Benchmark business newspaper read by corporate leaders and policymakers with 1.8M monthly digital visitors",
+        source: "Economia Media Kit 2024",
+      },
+      revenueModel: "Digital paywall subscriptions (HN.cz) and financial sector advertising",
+      logo: "newspaper-logos/cz/hospodářské-noviny.svg",
+      logoExplainer:
+        "Navy blue banner with clean white typography 'Hospodářské noviny', reflecting market integrity and economic analysis.",
+      sources: ["https://hn.cz", "https://en.wikipedia.org/wiki/Hospod%C3%A1%C5%99sk%C3%A9_noviny"],
+    },
+    {
+      id: "cz-lidove-noviny",
+      countryCode: "CZ",
+      name: "Lidové noviny",
+      nativeName: "Lidové noviny",
+      englishTranslation: "The People's Newspaper",
+      founded: 1893,
+      frequency: "Daily newspaper (transitioned to digital daily)",
+      format: "Digital daily & weekend print edition",
+      language: "Czech",
+      headquarters: "Prague",
+      owner: {
+        name: "MAFRA a.s. (Kaprain Group)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Historic intellectual broadsheet associated with Karel Čapek and Václav Havel; conservative-liberal cultural commentary and public policy debate",
+      readership: {
+        metric: "Historic paper of record with strong cultural resonance and 1.5 million monthly digital visitors on Lidovky.cz",
+        source: "MAFRA Publishing Report 2023",
+      },
+      revenueModel: "Digital subscriptions and specialized cultural advertising",
+      logo: "newspaper-logos/cz/lidové-noviny.svg",
+      logoExplainer:
+        "Historic black serif masthead 'Lidové noviny' on white ground, symbolising 130 years of Czech intellectual journalism.",
+      sources: ["https://www.lidovky.cz", "https://en.wikipedia.org/wiki/Lidov%C3%A9_noviny"],
+    },
+    {
+      id: "cz-blesk",
+      countryCode: "CZ",
+      name: "Blesk",
+      nativeName: "Blesk",
+      englishTranslation: "Lightning",
+      founded: 1992,
+      frequency: "Daily newspaper",
+      format: "Tabloid & digital portal",
+      language: "Czech",
+      headquarters: "Prague",
+      owner: {
+        name: "Czech News Center a.s.",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Mass-circulation popular tabloid; breaking news, consumer advocacy, celebrity profiles, and sports",
+      readership: {
+        metric: "Highest print circulation in the Czech Republic (~160,000 daily copies) and 4.2M monthly users on Blesk.cz",
+        source: "Czech News Center Annual Review 2024",
+      },
+      revenueModel: "Retail print sales, digital display advertising, and consumer media services",
+      logo: "newspaper-logos/cz/blesk.svg",
+      logoExplainer:
+        "Vivid red rectangular banner with bold yellow italic text 'BLESK', iconic across Czech newsstands.",
+      sources: ["https://www.blesk.cz", "https://en.wikipedia.org/wiki/Blesk_(newspaper)"],
+    },
+  ],
+
+  // Denmark
+  DK: [
+    {
+      id: "dk-berlingske",
+      countryCode: "DK",
+      name: "Berlingske",
+      officialName: "Berlingske Tidende",
+      nativeName: "Berlingske",
+      englishTranslation: "Berling's Times (named after founder Ernst Henrich Berling)",
+      founded: 1749,
+      frequency: "Daily newspaper",
+      format: "Berliner & digital portal",
+      language: "Danish",
+      headquarters: "Copenhagen",
+      owner: {
+        name: "Berlingske Media (DPG Media)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Denmark's oldest newspaper and one of the world's oldest continuously published dailies; conservative-liberal newspaper of record",
+      readership: {
+        metric: "Over 1.8 million monthly digital readers and premier quality daily in Copenhagen",
+        source: "Kantar Gallup Denmark & Berlingske Media 2024",
+      },
+      revenueModel: "Digital paywall subscriptions, print circulation, and corporate advertising",
+      logo: "newspaper-logos/dk/berlingske.svg",
+      logoExplainer:
+        "Classical black serif typography 'Berlingske' on clean white canvas, representing 275 years of Danish journalistic excellence.",
+      sources: ["https://www.berlingske.dk", "https://en.wikipedia.org/wiki/Berlingske"],
+    },
+    {
+      id: "dk-politiken",
+      countryCode: "DK",
+      name: "Politiken",
+      nativeName: "Politiken",
+      englishTranslation: "The Politics / Policy",
+      founded: 1884,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Danish",
+      headquarters: "Rådhuspladsen, Copenhagen",
+      owner: {
+        name: "JP/Politikens Hus",
+        type: "Independent trust / foundation",
+      },
+      editorialStance: "Leading Danish social-liberal intellectual daily founded by Edvard Brandes; cultural critique, climate journalism, and international human rights",
+      readership: {
+        metric: "Over 2 million monthly digital visitors and largest quality subscription circulation in Denmark",
+        source: "JP/Politikens Hus Annual Report 2023",
+      },
+      revenueModel: "Digital reader subscriptions, print sales, and cultural advertisements",
+      logo: "newspaper-logos/dk/politiken.svg",
+      logoExplainer:
+        "Historic gothic and serif masthead 'POLITIKEN' anchored at Copenhagen's City Hall Square, symbolising progressive civic journalism.",
+      sources: ["https://politiken.dk", "https://en.wikipedia.org/wiki/Politiken"],
+    },
+    {
+      id: "dk-jyllands-posten",
+      countryCode: "DK",
+      name: "Jyllands-Posten",
+      officialName: "Morgenavisen Jyllands-Posten",
+      nativeName: "Jyllands-Posten",
+      englishTranslation: "The Jutland Post",
+      founded: 1871,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Danish",
+      headquarters: "Aarhus & Copenhagen",
+      owner: {
+        name: "JP/Politikens Hus",
+        type: "Independent trust / foundation",
+      },
+      editorialStance: "Center-right liberal-conservative broadsheet; voice of Jutland and national business, free-market economics, and investigative journalism",
+      readership: {
+        metric: "Over 1.7 million monthly digital users and historically Denmark's highest circulated broadsheet",
+        source: "JP/Politikens Hus Media Review 2024",
+      },
+      revenueModel: "Print sales, digital subscriptions, and commercial advertising",
+      logo: "newspaper-logos/dk/jyllands-posten.svg",
+      logoExplainer:
+        "Bold black serif title 'Jyllands-Posten' on white background, representing Jutland business resilience and national reporting.",
+      sources: ["https://jyllands-posten.dk", "https://en.wikipedia.org/wiki/Jyllands-Posten"],
+    },
+    {
+      id: "dk-borsen",
+      countryCode: "DK",
+      name: "Børsen",
+      officialName: "Dagbladet Børsen",
+      nativeName: "Børsen",
+      englishTranslation: "The Exchange",
+      founded: 1896,
+      frequency: "Daily business newspaper (Monday–Friday)",
+      format: "Salmon broadsheet & digital portal",
+      language: "Danish",
+      headquarters: "Copenhagen",
+      owner: {
+        name: "Bonnier Group (49.9%) & JP/Politikens Hus (49.9%)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Denmark's preeminent financial and business daily; Copenhagen Stock Exchange, maritime shipping (Mærsk), green transition, and macroeconomic policy",
+      readership: {
+        metric: "Read by 85% of Danish top corporate executives and institutional investors",
+        source: "Dagbladet Børsen Audience Report 2023",
+      },
+      revenueModel: "Corporate subscriptions and financial market advertising",
+      logo: "newspaper-logos/dk/børsen.svg",
+      logoExplainer:
+        "Classic serif masthead 'BØRSEN' printed on signature salmon-pink paper, symbolising Nordic financial leadership.",
+      sources: ["https://borsen.dk", "https://en.wikipedia.org/wiki/Dagbladet_B%C3%B8rsen"],
+    },
+    {
+      id: "dk-ekstra-bladet",
+      countryCode: "DK",
+      name: "Ekstra Bladet",
+      nativeName: "Ekstra Bladet",
+      englishTranslation: "The Extra Sheet",
+      founded: 1904,
+      frequency: "Daily newspaper",
+      format: "Tabloid & multimedia portal",
+      language: "Danish",
+      headquarters: "Copenhagen",
+      owner: {
+        name: "JP/Politikens Hus",
+        type: "Independent trust / foundation",
+      },
+      editorialStance: "Iconic Danish investigative tabloid; aggressive political exposés, consumer advocacy, sports, and working-class watchdog journalism",
+      readership: {
+        metric: "Over 3.2 million monthly unique digital visitors on eb.dk, Denmark's most read online news brand",
+        source: "Dansk Online Index & Kantar 2024",
+      },
+      revenueModel: "Digital subscriptions (+Ekstra), programmatic ads, and street print sales",
+      logo: "newspaper-logos/dk/ekstra-bladet.svg",
+      logoExplainer:
+        "Stark black and yellow badge with bold typography 'EKSTRA BLADET', iconic for anti-authoritarian investigative reporting.",
+      sources: ["https://ekstrabladet.dk", "https://en.wikipedia.org/wiki/Ekstra_Bladet"],
+    },
+  ],
+
+  // Djibouti
+  DJ: [
+    {
+      id: "dj-la-nation",
+      countryCode: "DJ",
+      name: "La Nation",
+      englishTranslation: "The Nation",
+      founded: 1980,
+      frequency: "Daily newspaper (Monday–Thursday & Sunday)",
+      format: "Official state broadsheet & digital portal",
+      language: "French",
+      headquarters: "Djibouti City",
+      owner: {
+        name: "Republic of Djibouti (Ministère de la Communication)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official national public daily newspaper; presidential decrees, port infrastructure developments (Doraleh), and Horn of Africa diplomacy",
+      readership: {
+        metric: "Only national daily French-language print newspaper in Djibouti, read throughout civil service and diplomatic missions",
+        source: "La Nation Direction Générale 2023",
+      },
+      annualPublicFunding: {
+        total: "DJF 90 million (~US$505,000) government operating budget",
+        perCapita: "DJF 85 / person / year (~US$0.48)",
+      },
+      revenueModel: "Direct state budget appropriation, print sales, and official legal notices",
+      logo: "newspaper-logos/dj/la-nation.svg",
+      logoExplainer:
+        "Emerald green title banner with crisp white typography 'LA NATION', embodying Djibouti's national identity and public communication.",
+      sources: ["https://www.lanation.dj", "https://fr.wikipedia.org/wiki/La_Nation_(Djibouti)"],
+    },
+    {
+      id: "dj-adi",
+      countryCode: "DJ",
+      name: "ADI",
+      officialName: "Agence Djiboutienne d'Information",
+      nativeName: "Agence Djiboutienne d'Information",
+      englishTranslation: "Djiboutian Information Agency",
+      founded: 1999,
+      frequency: "Continuous 24/7 national newswire",
+      format: "Official state wire service & digital portal",
+      language: "French, Arabic",
+      headquarters: "Djibouti City",
+      owner: {
+        name: "Republic of Djibouti (Ministère de la Communication)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Statutory national news agency; international diplomatic partnerships, IGAD regional affairs, and port logistics news",
+      readership: {
+        metric: "Primary news supplier to national television (RTD), radio networks, and regional Horn of Africa media",
+        source: "ADI Rapport d'Activité 2023",
+      },
+      annualPublicFunding: {
+        total: "DJF 65 million (~US$365,000) public wire grant",
+        perCapita: "DJF 60 / person / year (~US$0.34)",
+      },
+      revenueModel: "State operating subsidy and commercial news syndication",
+      logo: "newspaper-logos/dj/adi-agence-djiboutienne-d-information.svg",
+      logoExplainer:
+        "Blue and gold emblem displaying acronym 'ADI' and full French title, symbolising statutory news dissemination in the Horn of Africa.",
+      sources: ["https://www.adi.dj", "https://fr.wikipedia.org/wiki/Agence_djiboutienne_d%27information"],
+    },
+    {
+      id: "dj-al-qarn",
+      countryCode: "DJ",
+      name: "Al-Qarn",
+      nativeName: "القرن",
+      englishTranslation: "The Horn",
+      founded: 1997,
+      frequency: "Weekly newspaper (Thursday)",
+      format: "Official state Arabic broadsheet & portal",
+      language: "Arabic",
+      headquarters: "Djibouti City",
+      owner: {
+        name: "Republic of Djibouti (Ministère de la Communication)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official state Arabic-language publication; Arab League relations, Islamic affairs, education, and Red Sea maritime commerce",
+      readership: {
+        metric: "Primary Arabic publication in Djibouti read by scholars, religious institutions, and Arab diplomatic missions",
+        source: "Ministère de la Communication de Djibouti 2023",
+      },
+      revenueModel: "State budget funding and public notices",
+      logo: "newspaper-logos/dj/al-qarn.svg",
+      logoExplainer:
+        "Green and white banner featuring elegant Arabic calligraphy 'القرن' (The Horn), reflecting Arab League heritage.",
+      sources: ["https://www.alqarn.dj"],
+    },
+    {
+      id: "dj-djib-post",
+      countryCode: "DJ",
+      name: "Djib-Post",
+      founded: 2016,
+      frequency: "Continuous digital news service",
+      format: "Digital news portal",
+      language: "French",
+      headquarters: "Djibouti City",
+      owner: {
+        name: "Djib-Post Media Group",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Digital news platform; urban life, technological entrepreneurship, youth initiatives, and Horn of Africa economic news",
+      readership: {
+        metric: "Over 350,000 monthly digital visits across Djibouti and international diaspora in France and Canada",
+        source: "Djib-Post Audience Analytics 2024",
+      },
+      revenueModel: "Digital display advertising and sponsored corporate media",
+      logo: "newspaper-logos/dj/djib-post.svg",
+      logoExplainer:
+        "Modern navy blue and cyan banner featuring 'DJIB-POST', symbolising youth-driven digital journalism.",
+      sources: ["https://djibpost.com"],
+    },
+    {
+      id: "dj-human-village",
+      countryCode: "DJ",
+      name: "Human Village",
+      founded: 2008,
+      frequency: "Monthly cultural & economic journal",
+      format: "Digital magazine & analytical portal",
+      language: "French",
+      headquarters: "Djibouti City",
+      owner: {
+        name: "Association Human Village",
+        type: "Independent trust / foundation",
+      },
+      editorialStance: "Independent socio-cultural and economic journal; environmental conservation, architectural heritage, and historical research on Djibouti",
+      readership: {
+        metric: "Highly regarded journal read by researchers, historians, and educators throughout the Red Sea region",
+        source: "Human Village Association 2023",
+      },
+      revenueModel: "Cultural foundation grants and publication subscriptions",
+      logo: "newspaper-logos/dj/human-village.svg",
+      logoExplainer:
+        "Warm terracotta badge with white typography 'Human Village', symbolising humanism, culture, and environmental awareness.",
+      sources: ["http://www.human-village.org", "https://fr.wikipedia.org/wiki/Culture_de_Djibouti"],
+    },
+  ],
+  // IR
+  IR: [
+    {
+        "id": "ir-irna",
+        "countryCode": "IR",
+        "name": "IRNA",
+        "englishTranslation": "Islamic Republic News Agency",
+        "founded": 1934,
+        "frequency": "24/7 continuous wire service",
+        "format": "Official state news agency & multi-lingual portal",
+        "language": "Persian, English, Arabic, French, Spanish, Russian, Chinese, Turkish, German",
+        "headquarters": "Tehran",
+        "owner": {
+            "name": "Ministry of Culture and Islamic Guidance",
+            "type": "State-owned official news agency"
+        },
+        "editorialStance": "Official state news agency of Iran; government policy announcements and official diplomatic news",
+        "readership": {
+            "metric": "Primary source wire service for all domestic Iranian media and foreign diplomatic dispatches",
+            "source": "IRNA Corporate Directory 2024"
+        },
+        "annualPublicFunding": {
+            "total": "State budgetary allocation via Ministry of Culture",
+            "perCapita": "State funded"
+        },
+        "revenueModel": "State budget appropriation and wire subscription fees",
+        "logo": "newspaper-logos/ir/irna-islamic-republic-news-agency.svg",
+        "logoExplainer": "Green emblem featuring stylized Persian typography of 'IRNA' surrounded by global network lines.",
+        "sources": [
+            "https://www.irna.ir",
+            "https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency"
+        ]
+    },
+    {
+        "id": "ir-kayhan",
+        "countryCode": "IR",
+        "name": "Kayhan",
+        "englishTranslation": "Universe",
+        "founded": 1942,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital news portal",
+        "language": "Persian",
+        "headquarters": "Tehran",
+        "owner": {
+            "name": "Kayhan Institute (Supreme Leader Representative)",
+            "type": "State-managed editorial institute"
+        },
+        "editorialStance": "Iran's premier conservative daily newspaper representing official hardline views and state political commentary",
+        "readership": {
+            "metric": "Major influence across state administrative and conservative political circles",
+            "source": "Kayhan Publishing Institute 2024"
+        },
+        "revenueModel": "Public subsidies, print subscriptions, and official advertising",
+        "logo": "newspaper-logos/ir/kayhan.svg",
+        "logoExplainer": "Traditional black calligraphic Persian masthead 'کیهان' on white backdrop.",
+        "sources": [
+            "https://kayhan.ir",
+            "https://en.wikipedia.org/wiki/Kayhan"
+        ]
+    },
+    {
+        "id": "ir-tehran-times",
+        "countryCode": "IR",
+        "name": "Tehran Times",
+        "founded": 1979,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital portal",
+        "language": "English",
+        "headquarters": "Tehran",
+        "owner": {
+            "name": "Islamic Propagation Organization",
+            "type": "State-affiliated international media"
+        },
+        "editorialStance": "Iran's leading foreign-language daily newspaper presenting international commentary and state diplomatic views",
+        "readership": {
+            "metric": "Leading English daily in Iran read by foreign diplomats, international scholars, and expats",
+            "source": "Tehran Times Media Guide"
+        },
+        "revenueModel": "State subsidy, print subscription, and advertising",
+        "logo": "newspaper-logos/ir/tehran-times.svg",
+        "logoExplainer": "Bold red and black serif masthead with a globe emblem embedded in the letter 'T'.",
+        "sources": [
+            "https://www.tehrantimes.com",
+            "https://en.wikipedia.org/wiki/Tehran_Times"
+        ]
+    },
+    {
+        "id": "ir-ettelaat",
+        "countryCode": "IR",
+        "name": "Ettela'at",
+        "englishTranslation": "Information",
+        "founded": 1926,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital news portal",
+        "language": "Persian",
+        "headquarters": "Tehran",
+        "owner": {
+            "name": "Ettela'at Institute",
+            "type": "State-managed publishing foundation"
+        },
+        "editorialStance": "Iran's oldest running daily newspaper; moderate conservative record of national affairs",
+        "readership": {
+            "metric": "Historical newspaper of record with nationwide archive distribution",
+            "source": "Ettela'at Publishing House"
+        },
+        "revenueModel": "Print sales, publishing services, and public subsidies",
+        "logo": "newspaper-logos/ir/ettela-at.svg",
+        "logoExplainer": "Classic calligraphic Persian masthead 'اطلاعات' in deep green serif script.",
+        "sources": [
+            "https://www.ettelaat.com",
+            "https://en.wikipedia.org/wiki/Ettela%27at"
+        ]
+    },
+    {
+        "id": "ir-shargh",
+        "countryCode": "IR",
+        "name": "Shargh",
+        "englishTranslation": "East",
+        "founded": 2003,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital portal",
+        "language": "Persian",
+        "headquarters": "Tehran",
+        "owner": {
+            "name": "Mehdi Rahmanian / Shargh Media",
+            "type": "Independent reformist daily"
+        },
+        "editorialStance": "Leading reformist independent daily newspaper focusing on social issues, culture, and investigative journalism",
+        "readership": {
+            "metric": "Over 5 million monthly online visits and prominent domestic readership among intellectuals",
+            "source": "Shargh Media Group 2024"
+        },
+        "revenueModel": "Print sales, digital subscriptions, and commercial advertising",
+        "logo": "newspaper-logos/ir/shargh.svg",
+        "logoExplainer": "Modern red circular sunburst paired with elegant Persian typography 'شرق'.",
+        "sources": [
+            "https://www.sharghdaily.com",
+            "https://en.wikipedia.org/wiki/Shargh"
+        ]
+    }
+],
+  // IQ
+  IQ: [
+    {
+        "id": "iq-nina",
+        "countryCode": "IQ",
+        "name": "NINA",
+        "englishTranslation": "National Iraqi News Agency",
+        "founded": 2005,
+        "frequency": "24/7 national news wire",
+        "format": "Independent press agency wire & online portal",
+        "language": "Arabic, English",
+        "headquarters": "Baghdad",
+        "owner": {
+            "name": "Iraqi Journalists Syndicate",
+            "type": "Independent media cooperative"
+        },
+        "editorialStance": "First non-official independent news agency in Iraq; objective non-partisan coverage of national politics",
+        "readership": {
+            "metric": "Key syndication source for Iraqi print and broadcast media outlets",
+            "source": "NINA Directory 2024"
+        },
+        "revenueModel": "Subscription licensing and wire syndication",
+        "logo": "newspaper-logos/iq/nina-iraqi-national-news-agency.svg",
+        "logoExplainer": "Gold and blue circular icon with stylized Arabic acronym for NINA.",
+        "sources": [
+            "https://ninanews.com",
+            "https://en.wikipedia.org/wiki/National_Iraqi_News_Agency"
+        ]
+    },
+    {
+        "id": "iq-al-sabaah",
+        "countryCode": "IQ",
+        "name": "Al-Sabaah",
+        "englishTranslation": "The Morning",
+        "founded": 2003,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital news portal",
+        "language": "Arabic",
+        "headquarters": "Baghdad",
+        "owner": {
+            "name": "Iraqi Media Network (IMN)",
+            "type": "Publicly funded national media corporation"
+        },
+        "editorialStance": "Iraq's official public daily newspaper; comprehensive coverage of cabinet decisions, laws, and national security",
+        "readership": {
+            "metric": "Iraq's largest circulation public newspaper nationwide",
+            "source": "Iraqi Media Network Annual Report 2023"
+        },
+        "annualPublicFunding": {
+            "total": "IMN parliamentary budget appropriation",
+            "perCapita": "State funded"
+        },
+        "revenueModel": "Parliamentary state budget allocation and legal notices",
+        "logo": "newspaper-logos/iq/al-sabaah.svg",
+        "logoExplainer": "Dark slate circular emblem featuring white Arabic script 'الصباح'.",
+        "sources": [
+            "https://alsabaah.iq",
+            "https://en.wikipedia.org/wiki/Al-Sabaah"
+        ]
+    },
+    {
+        "id": "iq-al-zaman",
+        "countryCode": "IQ",
+        "name": "Azzaman",
+        "englishTranslation": "The Time",
+        "founded": 1997,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital daily",
+        "language": "Arabic, English",
+        "headquarters": "Baghdad",
+        "owner": {
+            "name": "Saad al-Bazzaz / Azzaman Group",
+            "type": "Independent commercial media"
+        },
+        "editorialStance": "Widely circulated independent daily newspaper providing comprehensive coverage of Iraqi and regional Arab affairs",
+        "readership": {
+            "metric": "One of Iraq's top 3 printed daily newspapers with strong national distribution",
+            "source": "Iraqi Press Union Report 2023"
+        },
+        "revenueModel": "Print advertising, sales, and subscription",
+        "logo": "newspaper-logos/iq/al-zaman.svg",
+        "logoExplainer": "Classic black and green Arabic typography 'الزمان' with a globe accent.",
+        "sources": [
+            "https://www.azzaman.com",
+            "https://en.wikipedia.org/wiki/Azzaman"
+        ]
+    },
+    {
+        "id": "iq-shafaq-news",
+        "countryCode": "IQ",
+        "name": "Shafaq News",
+        "englishTranslation": "Twilight News",
+        "founded": 2010,
+        "frequency": "24/7 digital news publication",
+        "format": "Digital news wire & portal",
+        "language": "Kurdish, Arabic, English",
+        "headquarters": "Erbil & Baghdad",
+        "owner": {
+            "name": "Shafaq Foundation for Cultural and Media",
+            "type": "Independent digital media group"
+        },
+        "editorialStance": "Independent multi-lingual news agency covering Iraqi national politics, Kurdistan region, and economic affairs",
+        "readership": {
+            "metric": "8 million monthly digital readers across Iraq and diaspora",
+            "source": "Shafaq Digital Metrics 2024"
+        },
+        "revenueModel": "Digital display advertising and media licensing",
+        "logo": "newspaper-logos/iq/shafaq-news.svg",
+        "logoExplainer": "Bright orange sun icon beside bold dark Arabic lettering 'شفق نيوز'.",
+        "sources": [
+            "https://shafaq.com",
+            "https://en.wikipedia.org/wiki/Shafaq_News"
+        ]
+    },
+    {
+        "id": "iq-al-mada",
+        "countryCode": "IQ",
+        "name": "Al-Mada",
+        "englishTranslation": "The Horizon",
+        "founded": 2003,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital portal",
+        "language": "Arabic",
+        "headquarters": "Baghdad",
+        "owner": {
+            "name": "Fakhri Karim / Al-Mada Foundation for Media and Culture",
+            "type": "Independent cultural and media foundation"
+        },
+        "editorialStance": "Independent secular paper with focus on investigative journalism, civil society, arts, and political analysis",
+        "readership": {
+            "metric": "High prestige paper read by Iraqi civil society leaders, academics, and policymakers",
+            "source": "Al-Mada Cultural Foundation 2023"
+        },
+        "revenueModel": "Print sales, cultural events, and commercial advertising",
+        "logo": "newspaper-logos/iq/al-mada.svg",
+        "logoExplainer": "Deep maroon rectangular badge featuring white stylized calligraphic Arabic script 'المدى'.",
+        "sources": [
+            "https://almadapaper.net",
+            "https://en.wikipedia.org/wiki/Al-Mada"
+        ]
+    }
+],
+  // IE
+  IE: [
+    {
+        "id": "ie-irish-times",
+        "countryCode": "IE",
+        "name": "The Irish Times",
+        "founded": 1859,
+        "frequency": "Daily morning newspaper",
+        "format": "Broadsheet & digital news platform",
+        "language": "English, Irish",
+        "headquarters": "Dublin",
+        "owner": {
+            "name": "The Irish Times Trust (Independent non-profit trust)",
+            "type": "Trust-owned independent newspaper"
+        },
+        "editorialStance": "Ireland's primary daily newspaper of record; center-left, liberal, independent stance on national policy and foreign affairs",
+        "readership": {
+            "metric": "500,000+ daily readers combined print and digital; 120,000 paid digital subscribers",
+            "source": "JNLR / ABC Ireland Circulation Audit 2024"
+        },
+        "revenueModel": "Digital subscriptions, print copy sales, and display advertising",
+        "logo": "newspaper-logos/ie/the-irish-times.svg",
+        "logoExplainer": "Classic black gothic blackletter serif title 'THE IRISH TIMES' symbolising over 160 years of newspaper heritage.",
+        "sources": [
+            "https://www.irishtimes.com",
+            "https://en.wikipedia.org/wiki/The_Irish_Times"
+        ]
+    },
+    {
+        "id": "ie-irish-independent",
+        "countryCode": "IE",
+        "name": "Irish Independent",
+        "founded": 1905,
+        "frequency": "Daily newspaper",
+        "format": "Compact format & digital portal (Independent.ie)",
+        "language": "English",
+        "headquarters": "Dublin",
+        "owner": {
+            "name": "Mediahuis Ireland",
+            "type": "Commercial media group"
+        },
+        "editorialStance": "Ireland's largest selling daily newspaper; center-right, market-oriented, extensive regional news coverage",
+        "readership": {
+            "metric": "Highest print circulation in Ireland (~80,000 daily print) and 6.5 million monthly digital readers on Independent.ie",
+            "source": "JNLR / Mediahuis Audience Report 2024"
+        },
+        "revenueModel": "Print sales, digital subscriptions (Independent Premium), and advertising",
+        "logo": "newspaper-logos/ie/irish-independent.svg",
+        "logoExplainer": "Bold green capital lettering 'IRISH INDEPENDENT' with a harp emblem representing Irish national identity.",
+        "sources": [
+            "https://www.independent.ie",
+            "https://en.wikipedia.org/wiki/Irish_Independent"
+        ]
+    },
+    {
+        "id": "ie-business-post",
+        "countryCode": "IE",
+        "name": "Business Post",
+        "founded": 1989,
+        "frequency": "Weekly Sunday newspaper & digital daily",
+        "format": "Compact format & digital business portal",
+        "language": "English",
+        "headquarters": "Dublin",
+        "owner": {
+            "name": "Kilcullen Kapital Partners / Business Post Media Group",
+            "type": "Independent commercial publisher"
+        },
+        "editorialStance": "Ireland's premier business and political Sunday newspaper; in-depth financial analysis, tech sector, and public policy",
+        "readership": {
+            "metric": "Key Sunday print edition and 45,000 digital subscribers across corporate Ireland",
+            "source": "JNLR Sunday Readership Survey 2024"
+        },
+        "revenueModel": "Digital paywall subscriptions, print sales, and corporate event sponsorship",
+        "logo": "newspaper-logos/ie/business-post.svg",
+        "logoExplainer": "Deep navy blue rectangular block with crisp white typography 'BUSINESS POST'.",
+        "sources": [
+            "https://www.businesspost.ie",
+            "https://en.wikipedia.org/wiki/Business_Post"
+        ]
+    },
+    {
+        "id": "ie-irish-examiner",
+        "countryCode": "IE",
+        "name": "Irish Examiner",
+        "founded": 1841,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital news portal",
+        "language": "English",
+        "headquarters": "Cork",
+        "owner": {
+            "name": "The Irish Times DAC / Mediahuis",
+            "type": "Commercial media group"
+        },
+        "editorialStance": "Major national daily published in Cork; center-left focus on national politics, agriculture, regional development, and investigative reports",
+        "readership": {
+            "metric": "220,000 daily print and digital readers across Ireland",
+            "source": "JNLR Readership Survey 2023–24"
+        },
+        "revenueModel": "Print sales, digital subscription, and commercial advertising",
+        "logo": "newspaper-logos/ie/irish-examiner.svg",
+        "logoExplainer": "Traditional serif text 'Irish Examiner' in deep forest green with classic Irish typographic accents.",
+        "sources": [
+            "https://www.irishexaminer.com",
+            "https://en.wikipedia.org/wiki/Irish_Examiner"
+        ]
+    },
+    {
+        "id": "ie-journal-ie",
+        "countryCode": "IE",
+        "name": "TheJournal.ie",
+        "founded": 2010,
+        "frequency": "24/7 digital news publication",
+        "format": "Digital native news portal & FactCheck unit",
+        "language": "English",
+        "headquarters": "Dublin",
+        "owner": {
+            "name": "Journal Media Ltd (Distilled Media)",
+            "type": "Independent digital media publisher"
+        },
+        "editorialStance": "Digital-first open reporting outlet featuring user commentary, explainer journalism, and EFCSN-certified fact-checking",
+        "readership": {
+            "metric": "3.2 million monthly unique digital visitors in Ireland",
+            "source": "Reuters Institute Digital News Report 2024"
+        },
+        "revenueModel": "Digital advertising, sponsored content, and European press grant funding for fact-checking",
+        "logo": "newspaper-logos/ie/thejournal-ie.svg",
+        "logoExplainer": "Red square icon containing white letter 'J' beside sleek dark lowercase text 'thejournal.ie'.",
+        "sources": [
+            "https://www.thejournal.ie",
+            "https://en.wikipedia.org/wiki/TheJournal.ie"
+        ]
+    }
+],
+  // IL
+  IL: [
+    {
+        "id": "il-haaretz",
+        "countryCode": "IL",
+        "name": "Haaretz",
+        "englishTranslation": "The Land",
+        "founded": 1919,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital edition (Hebrew & English)",
+        "language": "Hebrew, English",
+        "headquarters": "Tel Aviv",
+        "owner": {
+            "name": "Schocken Family (60%) & M. DuMont Schauberg (20%)",
+            "type": "Independent publishing house"
+        },
+        "editorialStance": "Israel's oldest daily newspaper; center-left liberal stance on Israeli politics, civil rights, peace initiatives, and foreign relations",
+        "readership": {
+            "metric": "Over 95,000 paid digital subscribers worldwide and high influence among international policymakers",
+            "source": "Haaretz Financial Statement & TGI Survey 2024"
+        },
+        "revenueModel": "Digital paywall subscriptions, print copy sales, and premium advertising",
+        "logo": "newspaper-logos/il/haaretz.svg",
+        "logoExplainer": "Classic Hebrew serif calligraphic title 'הארץ' in dark indigo blue.",
+        "sources": [
+            "https://www.haaretz.com",
+            "https://en.wikipedia.org/wiki/Haaretz"
+        ]
+    },
+    {
+        "id": "il-yedioth-ahronoth",
+        "countryCode": "IL",
+        "name": "Yedioth Ahronoth",
+        "englishTranslation": "Latest News",
+        "founded": 1939,
+        "frequency": "Daily newspaper & digital portal (Ynet)",
+        "format": "Tabloid & Ynet digital news portal",
+        "language": "Hebrew, English (Ynetnews)",
+        "headquarters": "Rishon LeZion",
+        "owner": {
+            "name": "Yedioth Ahronoth Group (Mozes Family)",
+            "type": "Commercial media group"
+        },
+        "editorialStance": "Centrist, widely-read commercial daily newspaper and operator of Ynet, Israel's largest online news portal",
+        "readership": {
+            "metric": "Ynet reaches over 60% of internet users in Israel; leading printed daily newspaper by circulation",
+            "source": "TGI Israel Media Survey 2024"
+        },
+        "revenueModel": "Advertising, print subscriptions, and digital media",
+        "logo": "newspaper-logos/il/yedioth-ahronoth.svg",
+        "logoExplainer": "Bold red and black Hebrew typography 'ידיעות אחרונות' with iconic red border frame.",
+        "sources": [
+            "https://www.ynet.co.il",
+            "https://en.wikipedia.org/wiki/Yedioth_Ahronoth"
+        ]
+    },
+    {
+        "id": "il-the-jerusalem-post",
+        "countryCode": "IL",
+        "name": "The Jerusalem Post",
+        "founded": 1932,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & international digital portal",
+        "language": "English, French",
+        "headquarters": "Jerusalem",
+        "owner": {
+            "name": "Eli Azur / Mirkaei Tikshoret Group",
+            "type": "Commercial media group"
+        },
+        "editorialStance": "Israel's primary English-language daily; center-right stance on regional security, foreign policy, and Jewish diaspora affairs",
+        "readership": {
+            "metric": "10+ million monthly digital visitors across global English-speaking diaspora",
+            "source": "Jerusalem Post Media Kit 2024"
+        },
+        "revenueModel": "Digital subscriptions, global print editions, and advertising",
+        "logo": "newspaper-logos/il/the-jerusalem-post.svg",
+        "logoExplainer": "Stately navy blue serif masthead 'THE JERUSALEM POST' with a lion emblem of Jerusalem.",
+        "sources": [
+            "https://www.jpost.com",
+            "https://en.wikipedia.org/wiki/The_Jerusalem_Post"
+        ]
+    },
+    {
+        "id": "il-globes",
+        "countryCode": "IL",
+        "name": "Globes",
+        "founded": 1983,
+        "frequency": "Daily financial newspaper",
+        "format": "Broadsheet & digital financial portal",
+        "language": "Hebrew, English",
+        "headquarters": "Rishon LeZion",
+        "owner": {
+            "name": "Alona Bar-On / Globes Publisher Ltd",
+            "type": "Independent business publishing group"
+        },
+        "editorialStance": "Israel's leading daily financial newspaper; coverage of high-tech sector, Tel Aviv Stock Exchange, macroeconomics, and commercial law",
+        "readership": {
+            "metric": "Primary business paper read by Israeli C-suite executives, investors, and tech entrepreneurs",
+            "source": "Globes Financial Media Group 2023"
+        },
+        "revenueModel": "Paid digital paywall subscriptions, print subscriptions, and corporate advertising",
+        "logo": "newspaper-logos/il/globes.svg",
+        "logoExplainer": "Bright orange globe symbol beside modern grey and black bold typography 'GLOBES'.",
+        "sources": [
+            "https://www.globes.co.il",
+            "https://en.wikipedia.org/wiki/Globes"
+        ]
+    },
+    {
+        "id": "il-israel-hayom",
+        "countryCode": "IL",
+        "name": "Israel Hayom",
+        "englishTranslation": "Israel Today",
+        "founded": 2007,
+        "frequency": "Daily newspaper",
+        "format": "Tabloid & digital edition",
+        "language": "Hebrew, English",
+        "headquarters": "Tel Aviv",
+        "owner": {
+            "name": "Adelson Family Trust",
+            "type": "Independent commercial media publisher"
+        },
+        "editorialStance": "Israel's most widely distributed free daily newspaper; center-right nationalist editorial line",
+        "readership": {
+            "metric": "Highest print exposure rate in Israel (28% weekday exposure)",
+            "source": "TGI Israel Exposure Audit 2024"
+        },
+        "revenueModel": "Display and classified advertising",
+        "logo": "newspaper-logos/il/israel-hayom.svg",
+        "logoExplainer": "Bold red rectangular block featuring white Hebrew lettering 'ישראל היום'.",
+        "sources": [
+            "https://www.israelhayom.co.il",
+            "https://en.wikipedia.org/wiki/Israel_Hayom"
+        ]
+    }
+],
+  // IT
+  IT: [
+    {
+        "id": "it-corriere-della-sera",
+        "countryCode": "IT",
+        "name": "Corriere della Sera",
+        "englishTranslation": "Evening Courier",
+        "founded": 1876,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital news platform",
+        "language": "Italian",
+        "headquarters": "Milan",
+        "owner": {
+            "name": "RCS MediaGroup (Urbano Cairo)",
+            "type": "Commercial media conglomerate"
+        },
+        "editorialStance": "Italy's leading daily newspaper of record; centrist, liberal-conservative editorial line on politics and economics",
+        "readership": {
+            "metric": "Highest print and digital combined circulation in Italy (~270,000 daily copies; 550,000 paid digital subs)",
+            "source": "ADS (Accertamenti Diffusione Stampa) Italy 2024"
+        },
+        "revenueModel": "Digital subscriptions, print copy sales, and display advertising",
+        "logo": "newspaper-logos/it/corriere-della-sera.svg",
+        "logoExplainer": "Classic Italian blackletter calligraphic masthead 'Corriere della Sera' with historic Milanese crest.",
+        "sources": [
+            "https://www.corriere.it",
+            "https://en.wikipedia.org/wiki/Corriere_della_Sera"
+        ]
+    },
+    {
+        "id": "it-la-repubblica",
+        "countryCode": "IT",
+        "name": "La Repubblica",
+        "englishTranslation": "The Republic",
+        "founded": 1976,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital news portal",
+        "language": "Italian",
+        "headquarters": "Rome",
+        "owner": {
+            "name": "GEDI Gruppo Editoriale (Exor / Agnelli family)",
+            "type": "Commercial media group"
+        },
+        "editorialStance": "Major national daily; center-left stance, focus on domestic politics, civil liberties, culture, and European integration",
+        "readership": {
+            "metric": "Second largest circulation daily in Italy (~190,000 daily copies) and top digital news portal repubblica.it",
+            "source": "ADS Italy Readership Audit 2024"
+        },
+        "revenueModel": "Print sales, digital subscriptions (Rep+), and advertising",
+        "logo": "newspaper-logos/it/la-repubblica.svg",
+        "logoExplainer": "Bold black sans-serif lettering 'la Repubblica' with distinctive lowercase 'l' and red decorative line.",
+        "sources": [
+            "https://www.repubblica.it",
+            "https://en.wikipedia.org/wiki/La_Repubblica"
+        ]
+    },
+    {
+        "id": "it-il-sole-24-ore",
+        "countryCode": "IT",
+        "name": "Il Sole 24 Ore",
+        "englishTranslation": "The Sun 24 Hours",
+        "founded": 1865,
+        "frequency": "Daily financial newspaper",
+        "format": "Broadsheet (printed on salmon paper) & digital portal",
+        "language": "Italian",
+        "headquarters": "Milan",
+        "owner": {
+            "name": "Confindustria (General Confederation of Italian Industry)",
+            "type": "Industrial federation publishing group"
+        },
+        "editorialStance": "Italy's primary financial daily; business news, economic policy, tax legislation, and financial markets",
+        "readership": {
+            "metric": "Top financial daily in Italy with 140,000 daily print and digital subscribers",
+            "source": "ADS Italy / Confindustria Report 2024"
+        },
+        "revenueModel": "Digital subscriptions, print sales, professional databases, and financial advertising",
+        "logo": "newspaper-logos/it/il-sole-24-ore.svg",
+        "logoExplainer": "Salmon-orange rectangle with bold black serif title 'Il Sole 24 ORE' matching its signature pink financial newsprint.",
+        "sources": [
+            "https://www.ilsole24ore.com",
+            "https://en.wikipedia.org/wiki/Il_Sole_24_Ore"
+        ]
+    },
+    {
+        "id": "it-la-stampa",
+        "countryCode": "IT",
+        "name": "La Stampa",
+        "englishTranslation": "The Press",
+        "founded": 1867,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital portal",
+        "language": "Italian",
+        "headquarters": "Turin",
+        "owner": {
+            "name": "GEDI Gruppo Editoriale",
+            "type": "Commercial media group"
+        },
+        "editorialStance": "Historic daily newspaper based in Turin; centrist stance with strong coverage of Northern Italy industrial economy and national politics",
+        "readership": {
+            "metric": "One of Italy's top 4 national newspapers with ~100,000 daily circulation",
+            "source": "ADS Italy Circulation Data 2024"
+        },
+        "revenueModel": "Print sales, digital subscriptions, and display advertising",
+        "logo": "newspaper-logos/it/la-stampa.svg",
+        "logoExplainer": "Traditional black Roman serif masthead 'LA STAMPA' with clean Italian press aesthetic.",
+        "sources": [
+            "https://www.lastampa.it",
+            "https://en.wikipedia.org/wiki/La_Stampa"
+        ]
+    },
+    {
+        "id": "it-il-messaggero",
+        "countryCode": "IT",
+        "name": "Il Messaggero",
+        "englishTranslation": "The Messenger",
+        "founded": 1878,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital edition",
+        "language": "Italian",
+        "headquarters": "Rome",
+        "owner": {
+            "name": "Caltagirone Editore",
+            "type": "Commercial media publishing group"
+        },
+        "editorialStance": "Rome's principal daily newspaper; centrist stance with strong coverage of national government proceedings, Vatican, and capital region affairs",
+        "readership": {
+            "metric": "Leading daily in Central Italy with over 75,000 daily circulation",
+            "source": "ADS Italy Media Audit 2024"
+        },
+        "revenueModel": "Print sales, legal notices, and commercial advertising",
+        "logo": "newspaper-logos/it/il-messaggero.svg",
+        "logoExplainer": "Classic serif typography 'Il Messaggero' in dark blue.",
+        "sources": [
+            "https://www.ilmessaggero.it",
+            "https://en.wikipedia.org/wiki/Il_Messaggero"
+        ]
+    }
+],
+  // CI
+  CI: [
+    {
+        "id": "ci-fraternite-matin",
+        "countryCode": "CI",
+        "name": "Fraternité Matin",
+        "englishTranslation": "Morning Fraternity",
+        "founded": 1964,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital portal",
+        "language": "French",
+        "headquarters": "Abidjan",
+        "owner": {
+            "name": "SNPECI (Société Nationale de Presse et d'Édition de Côte d'Ivoire)",
+            "type": "State-owned national publishing enterprise"
+        },
+        "editorialStance": "Ivory Coast's official national daily newspaper of record; government policy announcements and national economic development",
+        "readership": {
+            "metric": "Largest print daily circulation in Ivory Coast (~15,000 copies daily) and major public archive",
+            "source": "SNPECI Annual Report 2023"
+        },
+        "annualPublicFunding": {
+            "total": "State commercial enterprise backing",
+            "perCapita": "State funded"
+        },
+        "revenueModel": "Print sales, legal announcements, and government advertising",
+        "logo": "newspaper-logos/ci/fraternite-matin.svg",
+        "logoExplainer": "Green and orange banner with bold white text 'Fraternité Matin', reflecting the national colors of Ivory Coast.",
+        "sources": [
+            "https://www.fratmat.info",
+            "https://en.wikipedia.org/wiki/Fraternité_Matin"
+        ]
+    },
+    {
+        "id": "ci-l-inter",
+        "countryCode": "CI",
+        "name": "L'Inter",
+        "englishTranslation": "The Inter",
+        "founded": 1998,
+        "frequency": "Daily newspaper",
+        "format": "Tabloid & digital edition",
+        "language": "French",
+        "headquarters": "Abidjan",
+        "owner": {
+            "name": "Groupe Olympe",
+            "type": "Independent commercial media group"
+        },
+        "editorialStance": "Prominent independent daily covering Ivorian domestic political debate, international relations, and economic investigation",
+        "readership": {
+            "metric": "One of the top 3 selling independent dailies in Abidjan and major regional centers",
+            "source": "Ivorian Press Council (ANP) Audit 2023"
+        },
+        "revenueModel": "Print newsstand sales and commercial advertising",
+        "logo": "newspaper-logos/ci/l-inter.svg",
+        "logoExplainer": "Bold red rectangular logo containing white serif title 'L'Inter' with dynamic underline.",
+        "sources": [
+            "https://www.linfodrome.com",
+            "https://fr.wikipedia.org/wiki/L%27Inter"
+        ]
+    },
+    {
+        "id": "ci-soir-info",
+        "countryCode": "CI",
+        "name": "Soir Info",
+        "englishTranslation": "Evening Info",
+        "founded": 1994,
+        "frequency": "Daily newspaper",
+        "format": "Tabloid print & web portal",
+        "language": "French",
+        "headquarters": "Abidjan",
+        "owner": {
+            "name": "Groupe Olympe",
+            "type": "Independent commercial media group"
+        },
+        "editorialStance": "Popular independent general-interest daily focusing on crime reporting, social affairs, breaking news, and sports",
+        "readership": {
+            "metric": "Consistently among the top 2 highest selling print newspapers nationwide in Ivory Coast",
+            "source": "ANP (Autorité Nationale de la Presse) Côte d'Ivoire 2023"
+        },
+        "revenueModel": "Print newsstand copy sales and local commercial advertising",
+        "logo": "newspaper-logos/ci/soir-info.svg",
+        "logoExplainer": "Dark blue badge featuring white script 'Soir Info' accented with a bright yellow sun emblem.",
+        "sources": [
+            "https://www.linfodrome.com/soir-info",
+            "https://fr.wikipedia.org/wiki/Soir_Info"
+        ]
+    },
+    {
+        "id": "ci-nouveau-reveil",
+        "countryCode": "CI",
+        "name": "Le Nouveau Réveil",
+        "englishTranslation": "The New Awakening",
+        "founded": 2000,
+        "frequency": "Daily newspaper",
+        "format": "Tabloid & digital portal",
+        "language": "French",
+        "headquarters": "Abidjan",
+        "owner": {
+            "name": "Société le Réveil",
+            "type": "Commercial media company"
+        },
+        "editorialStance": "Major Ivorian daily newspaper affiliated with the opposition PDCI-RDA party; political commentary and domestic news",
+        "readership": {
+            "metric": "Top selling opposition daily in Abidjan and central Ivory Coast",
+            "source": "ANP Press Audit 2023"
+        },
+        "revenueModel": "Print newsstand sales and political advertising",
+        "logo": "newspaper-logos/ci/nouveau-reveil.svg",
+        "logoExplainer": "Bold orange typography 'Le Nouveau Réveil' on white background.",
+        "sources": [
+            "https://nouveaureveil.com",
+            "https://fr.wikipedia.org/wiki/Le_Nouveau_R%C3%A9veil"
+        ]
+    },
+    {
+        "id": "ci-aip",
+        "countryCode": "CI",
+        "name": "AIP",
+        "englishTranslation": "Ivorian News Agency",
+        "founded": 1961,
+        "frequency": "24/7 national news wire",
+        "format": "State news agency wire & public digital portal",
+        "language": "French",
+        "headquarters": "Abidjan",
+        "owner": {
+            "name": "Government of Ivory Coast (Ministry of Communication)",
+            "type": "Public service news agency"
+        },
+        "editorialStance": "National press agency of Ivory Coast providing factual regional coverage across all 31 administrative regions",
+        "readership": {
+            "metric": "Primary source of verified regional dispatch news for all Ivorian print, radio, and TV stations",
+            "source": "AIP Official Report 2023"
+        },
+        "annualPublicFunding": {
+            "total": "Public budget allocation",
+            "perCapita": "State funded"
+        },
+        "revenueModel": "State budget subsidy and agency syndication",
+        "logo": "newspaper-logos/ci/aip-agence-ivoirienne-de-presse.svg",
+        "logoExplainer": "Ivory Coast map outline inside green circle with orange lettering 'AIP'.",
+        "sources": [
+            "https://www.aip.ci",
+            "https://en.wikipedia.org/wiki/Agence_Ivoirienne_de_Presse"
+        ]
+    }
+],
+  // JM
+  JM: [
+    {
+        "id": "jm-jamaica-gleaner",
+        "countryCode": "JM",
+        "name": "The Gleaner",
+        "founded": 1834,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital portal (Jamaica Gleaner)",
+        "language": "English",
+        "headquarters": "Kingston",
+        "owner": {
+            "name": "RJRGLEANER Communications Group",
+            "type": "Publicly listed media conglomerate"
+        },
+        "editorialStance": "Jamaica's historic newspaper of record; independent, centrist editorial stance covering national politics, Caribbean affairs, and diaspora news",
+        "readership": {
+            "metric": "Highest print readership in Jamaica (~400,000 daily print/digital readers) and massive diaspora audience in North America & UK",
+            "source": "RJRGLEANER Group Annual Report 2023–24"
+        },
+        "revenueModel": "Print copy sales, digital advertising, classifieds, and subscription",
+        "logo": "newspaper-logos/jm/the-jamaica-gleaner.svg",
+        "logoExplainer": "Historic black Gothic blackletter title 'The Gleaner' with classic Jamaican lion crest.",
+        "sources": [
+            "https://jamaica-gleaner.com",
+            "https://en.wikipedia.org/wiki/The_Gleaner"
+        ]
+    },
+    {
+        "id": "jm-jamaica-observer",
+        "countryCode": "JM",
+        "name": "Jamaica Observer",
+        "founded": 1993,
+        "frequency": "Daily newspaper",
+        "format": "Tabloid/Compact & digital portal",
+        "language": "English",
+        "headquarters": "Kingston",
+        "owner": {
+            "name": "Gordon 'Butch' Stewart Family / Sandals Group",
+            "type": "Commercial media group"
+        },
+        "editorialStance": "Major national daily; market-oriented, strong coverage of business, tourism, investigative reporting, and athletics",
+        "readership": {
+            "metric": "Second largest newspaper in Jamaica with 2.8 million monthly digital readers",
+            "source": "Jamaica Observer Media Kit 2024"
+        },
+        "revenueModel": "Print sales, commercial advertising, and digital promotions",
+        "logo": "newspaper-logos/jm/jamaica-observer.svg",
+        "logoExplainer": "Bold green capital text 'JAMAICA OBSERVER' featuring a stylized golden sun disk in the letter 'O'.",
+        "sources": [
+            "https://www.jamaicaobserver.com",
+            "https://en.wikipedia.org/wiki/Jamaica_Observer"
+        ]
+    },
+    {
+        "id": "jm-our-today",
+        "countryCode": "JM",
+        "name": "Our Today",
+        "founded": 2020,
+        "frequency": "24/7 digital news publication",
+        "format": "Digital-only news portal",
+        "language": "English",
+        "headquarters": "Kingston",
+        "owner": {
+            "name": "Alston Stewart / Our Today Media",
+            "type": "Independent digital media publisher"
+        },
+        "editorialStance": "Modern digital news portal focusing on Jamaican business, lifestyle, tech, corporate developments, and culture",
+        "readership": {
+            "metric": "1 million monthly digital views in Jamaica and North American diaspora",
+            "source": "Our Today Analytics 2024"
+        },
+        "revenueModel": "Digital display programmatic and native corporate advertising",
+        "logo": "newspaper-logos/jm/our-today.svg",
+        "logoExplainer": "Vibrant yellow and blue geometric lettering 'OUR TODAY'.",
+        "sources": [
+            "https://our.today"
+        ]
+    },
+    {
+        "id": "jm-jamaica-star",
+        "countryCode": "JM",
+        "name": "The Jamaica Star",
+        "founded": 1951,
+        "frequency": "Daily afternoon newspaper",
+        "format": "Tabloid print & digital edition",
+        "language": "English, Jamaican Patois",
+        "headquarters": "Kingston",
+        "owner": {
+            "name": "RJRGLEANER Communications Group",
+            "type": "Publicly listed media conglomerate"
+        },
+        "editorialStance": "Popular tabloid focusing on Jamaican pop culture, Dancehall music, human interest stories, and sports",
+        "readership": {
+            "metric": "Widely read tabloid in urban Kingston and Montego Bay among island youth",
+            "source": "RJRGLEANER Communications Group 2023"
+        },
+        "revenueModel": "Print newsstand sales and popular advertising",
+        "logo": "newspaper-logos/jm/jamaica-star.svg",
+        "logoExplainer": "Bright red five-pointed star behind bold yellow sans-serif text 'THE STAR'.",
+        "sources": [
+            "https://jamaica-star.com",
+            "https://en.wikipedia.org/wiki/The_Jamaica_Star"
+        ]
+    },
+    {
+        "id": "jm-loop-jamaica",
+        "countryCode": "JM",
+        "name": "Loop Jamaica",
+        "founded": 2014,
+        "frequency": "24/7 digital publishing",
+        "format": "Mobile app & digital news portal",
+        "language": "English",
+        "headquarters": "Kingston",
+        "owner": {
+            "name": "Trend Media (Digicel Group)",
+            "type": "Telecommunications subsidiary media digital provider"
+        },
+        "editorialStance": "Digital-native news platform popular across Jamaica for breaking local news, community video, lifestyle, and crime updates",
+        "readership": {
+            "metric": "1.5 million monthly active users on app and web portal in Jamaica",
+            "source": "Trend Media Caribbean Analytics 2024"
+        },
+        "revenueModel": "Digital programmatic advertising and mobile carrier partnerships",
+        "logo": "newspaper-logos/jm/loop-news-jamaica.svg",
+        "logoExplainer": "Cyan blue infinity loop icon beside bold purple text 'loop Jamaica'.",
+        "sources": [
+            "https://jamaica.loopnews.com",
+            "https://www.trendmediagroup.com"
+        ]
+    }
+],
+  // JP
+  JP: [
+    {
+        "id": "jp-yomiuri-shimbun",
+        "countryCode": "JP",
+        "name": "The Yomiuri Shimbun",
+        "englishTranslation": "Reading and Selling Newspaper",
+        "founded": 1874,
+        "frequency": "Daily morning & evening newspaper",
+        "format": "Broadsheet & digital portal (yomiuri.co.jp)",
+        "language": "Japanese, English (The Japan News)",
+        "headquarters": "Tokyo",
+        "owner": {
+            "name": "Yomiuri Shimbun Holdings",
+            "type": "Private media conglomerate"
+        },
+        "editorialStance": "World's highest-circulation newspaper; moderate conservative stance supporting US-Japan alliance and constitutional reform",
+        "readership": {
+            "metric": "6.5 million daily print circulation (Guinness World Record holder for highest paid daily newspaper circulation)",
+            "source": "Japan Newspaper Publishers & Editors Association (NSK) 2024"
+        },
+        "revenueModel": "Home print subscriptions, digital access, and corporate advertising",
+        "logo": "newspaper-logos/jp/yomiuri-shimbun.svg",
+        "logoExplainer": "Traditional Japanese Kanji title '読売新聞' in crisp black calligraphic brush script.",
+        "sources": [
+            "https://www.yomiuri.co.jp",
+            "https://en.wikipedia.org/wiki/Yomiuri_Shimbun"
+        ]
+    },
+    {
+        "id": "jp-asahi-shimbun",
+        "countryCode": "JP",
+        "name": "The Asahi Shimbun",
+        "englishTranslation": "Morning Sun Newspaper",
+        "founded": 1879,
+        "frequency": "Daily morning & evening edition",
+        "format": "Broadsheet & digital news portal",
+        "language": "Japanese, English",
+        "headquarters": "Osaka & Tokyo",
+        "owner": {
+            "name": "The Asahi Shimbun Company (Murayama & Ueno families)",
+            "type": "Independent publishing house"
+        },
+        "editorialStance": "Japan's second largest newspaper; center-left, liberal stance on defense policy, anti-nuclear energy, and social welfare",
+        "readership": {
+            "metric": "3.8 million daily print copies and over 15 million monthly digital readers",
+            "source": "NSK Audit Report 2024"
+        },
+        "revenueModel": "Print subscriptions, digital paywall, and commercial advertising",
+        "logo": "newspaper-logos/jp/asahi-shimbun.svg",
+        "logoExplainer": "Kanji masthead '朝日新聞' in bold black brush lettering with the red rising sun emblem.",
+        "sources": [
+            "https://www.asahi.com",
+            "https://en.wikipedia.org/wiki/Asahi_Shimbun"
+        ]
+    },
+    {
+        "id": "jp-nikkei",
+        "countryCode": "JP",
+        "name": "Nikkei",
+        "officialName": "Nihon Keizai Shimbun",
+        "englishTranslation": "Japan Economics Newspaper",
+        "founded": 1876,
+        "frequency": "Daily morning & evening financial edition",
+        "format": "Broadsheet, digital portal & publisher of Nikkei 225 index",
+        "language": "Japanese, English (Nikkei Asia)",
+        "headquarters": "Tokyo",
+        "owner": {
+            "name": "Nikkei Inc. (Owner of Financial Times Group)",
+            "type": "Independent employee-owned media company"
+        },
+        "editorialStance": "Japan's premier financial daily newspaper; market-oriented, economic deregulation, global trade, and technology focus",
+        "readership": {
+            "metric": "2.4 million daily print circulation and 850,000 paid digital subscribers (Nikkei Digital)",
+            "source": "Nikkei Inc. Corporate Report 2024"
+        },
+        "revenueModel": "Paid digital subscriptions, print subscriptions, index licensing, and corporate advertising",
+        "logo": "newspaper-logos/jp/nikkei-nihon-keizai-shimbun.svg",
+        "logoExplainer": "Modern dark blue geometric Kanji typography '日本經濟新聞' with crisp Nikkei corporate block logo.",
+        "sources": [
+            "https://www.nikkei.com",
+            "https://en.wikipedia.org/wiki/Nihon_Keizai_Shimbun"
+        ]
+    },
+    {
+        "id": "jp-mainichi-shimbun",
+        "countryCode": "JP",
+        "name": "The Mainichi Shimbun",
+        "englishTranslation": "Daily Newspaper",
+        "founded": 1872,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital news portal",
+        "language": "Japanese, English",
+        "headquarters": "Tokyo",
+        "owner": {
+            "name": "The Mainichi Newspapers Co., Ltd.",
+            "type": "Independent press publisher"
+        },
+        "editorialStance": "Japan's oldest daily newspaper; progressive, social-democrat stance on environment, pacifism, and civil rights",
+        "readership": {
+            "metric": "1.8 million daily print circulation nationwide",
+            "source": "NSK Japan Newspaper Audit 2024"
+        },
+        "revenueModel": "Print subscriptions, digital access, and display advertising",
+        "logo": "newspaper-logos/jp/mainichi-shimbun.svg",
+        "logoExplainer": "Classic Kanji script '毎日新聞' accented by a modern blue circular eye symbol.",
+        "sources": [
+            "https://mainichi.jp",
+            "https://en.wikipedia.org/wiki/Mainichi_Shimbun"
+        ]
+    },
+    {
+        "id": "jp-japan-times",
+        "countryCode": "JP",
+        "name": "The Japan Times",
+        "founded": 1897,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital edition",
+        "language": "English",
+        "headquarters": "Tokyo",
+        "owner": {
+            "name": "News2u Holdings (Minoru Yoshizawa)",
+            "type": "Independent commercial media publisher"
+        },
+        "editorialStance": "Japan's oldest English-language daily newspaper; independent coverage of Japanese foreign relations, culture, and business",
+        "readership": {
+            "metric": "Primary English daily read by foreign residents, diplomats, and international readers",
+            "source": "The Japan Times Media Kit 2024"
+        },
+        "revenueModel": "Print subscription, digital paywall, and advertising",
+        "logo": "newspaper-logos/jp/japan-times.svg",
+        "logoExplainer": "Classic black Gothic title 'The Japan Times' with cherry blossom accent.",
+        "sources": [
+            "https://www.japantimes.co.jp",
+            "https://en.wikipedia.org/wiki/The_Japan_Times"
+        ]
+    }
+],
+  // JO
+  JO: [
+    {
+        "id": "jo-al-rai",
+        "countryCode": "JO",
+        "name": "Al-Rai",
+        "englishTranslation": "The Opinion",
+        "founded": 1971,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital portal",
+        "language": "Arabic",
+        "headquarters": "Amman",
+        "owner": {
+            "name": "Jordan Press Foundation (Social Security Investment Fund owned)",
+            "type": "Publicly backed publishing house"
+        },
+        "editorialStance": "Jordan's highest-circulation Arabic daily newspaper; pro-government establishment daily covering royal directives and national news",
+        "readership": {
+            "metric": "Historically Jordan's largest selling print daily (~80,000 copies daily)",
+            "source": "Jordan Press Foundation Annual Report 2023"
+        },
+        "revenueModel": "Print copy sales, official government notices, and advertising",
+        "logo": "newspaper-logos/jo/al-rai.svg",
+        "logoExplainer": "Traditional green and gold Arabic script 'الرأي' with an emblem of Jordan's crown.",
+        "sources": [
+            "https://alrai.com",
+            "https://en.wikipedia.org/wiki/Al_Rai_(Jordanian_newspaper)"
+        ]
+    },
+    {
+        "id": "jo-petra",
+        "countryCode": "JO",
+        "name": "Petra",
+        "englishTranslation": "Jordan News Agency",
+        "founded": 1969,
+        "frequency": "24/7 national news wire",
+        "format": "Official state news agency wire & online portal",
+        "language": "Arabic, English",
+        "headquarters": "Amman",
+        "owner": {
+            "name": "Ministry of Government Communications",
+            "type": "State-owned news agency"
+        },
+        "editorialStance": "Official state newswire of Jordan; authoritative reporting on royal court activities, cabinet decisions, and foreign diplomacy",
+        "readership": {
+            "metric": "Primary news dispatch provider for all Jordanian newspapers, TV stations, and diplomatic missions",
+            "source": "Petra Jordan News Agency Directory 2024"
+        },
+        "annualPublicFunding": {
+            "total": "State budget allocation (~5.5M JOD annual budget)",
+            "perCapita": "~0.50 JOD / person / year"
+        },
+        "revenueModel": "Parliamentary state budget appropriation",
+        "logo": "newspaper-logos/jo/petra-jordan-news-agency.svg",
+        "logoExplainer": "Terra-cotta red emblem of the Treasury of Petra facade with Arabic lettering 'بترا'.",
+        "sources": [
+            "https://petra.gov.jo",
+            "https://en.wikipedia.org/wiki/Jordan_News_Agency"
+        ]
+    },
+    {
+        "id": "jo-jordan-times",
+        "countryCode": "JO",
+        "name": "The Jordan Times",
+        "founded": 1975,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital news portal",
+        "language": "English",
+        "headquarters": "Amman",
+        "owner": {
+            "name": "Jordan Press Foundation",
+            "type": "Publicly backed publishing house"
+        },
+        "editorialStance": "Jordan's premier English-language daily newspaper; independent international coverage, Middle East peace process analysis, and culture",
+        "readership": {
+            "metric": "Read by foreign diplomats, international organizations, scholars, and English-speaking Jordanians",
+            "source": "Jordan Press Foundation Media Guide"
+        },
+        "revenueModel": "Print copy sales, corporate subscriptions, and display advertising",
+        "logo": "newspaper-logos/jo/jordan-times.svg",
+        "logoExplainer": "Classic black serif title 'THE JORDAN TIMES' on white background.",
+        "sources": [
+            "https://www.jordantimes.com",
+            "https://en.wikipedia.org/wiki/The_Jordan_Times"
+        ]
+    },
+    {
+        "id": "jo-al-ghad",
+        "countryCode": "JO",
+        "name": "Al-Ghad",
+        "englishTranslation": "Tomorrow",
+        "founded": 2004,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital news portal",
+        "language": "Arabic",
+        "headquarters": "Amman",
+        "owner": {
+            "name": "Mohammad Alayyan / Al-Ghad Publishing",
+            "type": "Independent commercial publishing company"
+        },
+        "editorialStance": "Jordan's leading independent Arabic daily newspaper; professional independent coverage of reform, youth affairs, and economic policy",
+        "readership": {
+            "metric": "Over 4.5 million monthly digital readers on alghad.com",
+            "source": "Al-Ghad Media Group Audit 2024"
+        },
+        "revenueModel": "Commercial advertising, digital display, and print sales",
+        "logo": "newspaper-logos/jo/al-ghad.svg",
+        "logoExplainer": "Modern blue and orange circular logo with stylized Arabic calligraphic text 'الغد'.",
+        "sources": [
+            "https://alghad.com",
+            "https://en.wikipedia.org/wiki/Al_Ghad"
+        ]
+    },
+    {
+        "id": "jo-al-dustour",
+        "countryCode": "JO",
+        "name": "Al-Dustour",
+        "englishTranslation": "The Constitution",
+        "founded": 1967,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital portal",
+        "language": "Arabic",
+        "headquarters": "Amman",
+        "owner": {
+            "name": "Jordan Press and Publishing Company",
+            "type": "Commercial media company"
+        },
+        "editorialStance": "One of Jordan's oldest daily newspapers; major coverage of national legislative affairs, economy, and culture",
+        "readership": {
+            "metric": "Widespread readership across major Jordanian urban areas and government institutions",
+            "source": "Jordan Press Association 2023"
+        },
+        "revenueModel": "Print copy sales and display advertising",
+        "logo": "newspaper-logos/jo/al-dustour.svg",
+        "logoExplainer": "Deep maroon Arabic title 'الدستور' in traditional calligraphic style.",
+        "sources": [
+            "https://www.addustour.com",
+            "https://en.wikipedia.org/wiki/Addustour"
+        ]
+    }
+],
+  // KZ
+  KZ: [
+    {
+        "id": "kz-informburo",
+        "countryCode": "KZ",
+        "name": "Informburo.kz",
+        "founded": 2015,
+        "frequency": "24/7 digital news publication",
+        "format": "Digital-only news portal",
+        "language": "Kazakh, Russian",
+        "headquarters": "Almaty",
+        "owner": {
+            "name": "Verny Capital / Media Holding",
+            "type": "Commercial digital news publisher"
+        },
+        "editorialStance": "Leading independent analytical digital news outlet in Kazakhstan; investigative reporting, economics, and legal affairs",
+        "readership": {
+            "metric": "5+ million monthly active digital readers in Kazakhstan",
+            "source": "Zero.kz Audit 2024"
+        },
+        "revenueModel": "Digital programmatic advertising and sponsored content",
+        "logo": "newspaper-logos/kz/informburo-kz.svg",
+        "logoExplainer": "Red and dark grey rectangular logo with bold white lettering 'informburo'.",
+        "sources": [
+            "https://informburo.kz"
+        ]
+    },
+    {
+        "id": "kz-egemen-qazaqstan",
+        "countryCode": "KZ",
+        "name": "Egemen Qazaqstan",
+        "englishTranslation": "Independent Kazakhstan",
+        "founded": 1919,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital edition",
+        "language": "Kazakh",
+        "headquarters": "Astana",
+        "owner": {
+            "name": "Kazakh Newspapers LLP / Ministry of Culture and Information",
+            "type": "State-backed publishing group"
+        },
+        "editorialStance": "Kazakhstan's national Kazakh-language newspaper of record; government decisions, state history, culture, and national development",
+        "readership": {
+            "metric": "Largest print circulation Kazakh-language paper (~150,000 copies daily)",
+            "source": "Kazakh Newspapers LLP Audit 2023"
+        },
+        "revenueModel": "State publishing budget, print subscriptions, and official notices",
+        "logo": "newspaper-logos/kz/egemen-qazaqstan.svg",
+        "logoExplainer": "Sky blue banner with golden sun and eagle motif above calligraphic Kazakh script 'Егемен Қазақстан'.",
+        "sources": [
+            "https://egemen.kz",
+            "https://en.wikipedia.org/wiki/Egemen_Qazaqstan"
+        ]
+    },
+    {
+        "id": "kz-kazakhstanskaya-pravda",
+        "countryCode": "KZ",
+        "name": "Kazakhstanskaya Pravda",
+        "englishTranslation": "Kazakhstan Truth",
+        "founded": 1920,
+        "frequency": "Daily newspaper",
+        "format": "Broadsheet & digital news portal",
+        "language": "Russian",
+        "headquarters": "Astana",
+        "owner": {
+            "name": "Kazakh Newspapers LLP",
+            "type": "State-backed publishing group"
+        },
+        "editorialStance": "Kazakhstan's primary Russian-language official daily newspaper; legal enactments, political coverage, and bilateral diplomatic affairs",
+        "readership": {
+            "metric": "Widely circulated nationwide daily among government officials, legal professionals, and industry leaders",
+            "source": "Kazakhstanskaya Pravda Media Kit"
+        },
+        "revenueModel": "State publishing subsidies, print subscriptions, and legal advertising",
+        "logo": "newspaper-logos/kz/kazakhstanskaya-pravda.svg",
+        "logoExplainer": "Navy blue serif typography 'Казахстанская правда' with classic Kazakh ornament motif.",
+        "sources": [
+            "https://kazpravda.kz",
+            "https://en.wikipedia.org/wiki/Kazakhstanskaya_Pravda"
+        ]
+    },
+    {
+        "id": "kz-tengrinews",
+        "countryCode": "KZ",
+        "name": "Tengrinews",
+        "founded": 2010,
+        "frequency": "24/7 digital news publication",
+        "format": "Digital-only news portal & mobile app",
+        "language": "Kazakh, Russian, English",
+        "headquarters": "Almaty",
+        "owner": {
+            "name": "Alash Media Group",
+            "type": "Independent commercial media holding"
+        },
+        "editorialStance": "Kazakhstan's highest trafficked digital news portal; breaking local news, video reporting, and independent social commentary",
+        "readership": {
+            "metric": "12+ million monthly unique visitors across Kazakhstan and Central Asia",
+            "source": "Zero.kz Internet Ranking / Alash Media 2024"
+        },
+        "revenueModel": "Digital programmatic advertising, native advertising, and media projects",
+        "logo": "newspaper-logos/kz/tengrinews.svg",
+        "logoExplainer": "Vibrant yellow circle with dark stylized letter 't' and bold typography 'TENGRINEWS'.",
+        "sources": [
+            "https://tengrinews.kz",
+            "https://en.wikipedia.org/wiki/Tengrinews.kz"
+        ]
+    },
+    {
+        "id": "kz-vlast",
+        "countryCode": "KZ",
+        "name": "Vlast.kz",
+        "englishTranslation": "Power",
+        "founded": 2012,
+        "frequency": "24/7 digital news & investigative journal",
+        "format": "Digital-only analytical magazine portal",
+        "language": "Kazakh, Russian, English",
+        "headquarters": "Almaty",
+        "owner": {
+            "name": "Vyacheslav Abramov / Vlast Media",
+            "type": "Independent analytical media outlet"
+        },
+        "editorialStance": "Premier independent analytical journal in Kazakhstan focusing on political economy, human rights, sociology, and investigative journalism",
+        "readership": {
+            "metric": "1.5 million monthly digital readers and influential readership among analysts and scholars",
+            "source": "Vlast.kz Annual Audience Overview 2024"
+        },
+        "revenueModel": "Reader subscriptions, crowdfunding, and grant-funded research reporting",
+        "logo": "newspaper-logos/kz/vlast-kz.svg",
+        "logoExplainer": "Sleek red geometric icon featuring uppercase sans-serif text 'ВЛАСТЬ'.",
+        "sources": [
+            "https://vlast.kz",
+            "https://en.wikipedia.org/wiki/Vlast_(magazine)"
+        ]
+    }
+],
+
+  // Dominica
+  DM: [
+    {
+      id: "dm-the-chronicle",
+      countryCode: "DM",
+      name: "The Chronicle",
+      founded: 1909,
+      frequency: "Weekly newspaper (Friday)",
+      format: "Tabloid publication & digital portal",
+      language: "English",
+      headquarters: "Roseau",
+      owner: {
+        name: "Chronicle Newspaper Ltd",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Dominica's historic newspaper of record; comprehensive coverage of parliamentary debates, island agriculture, regional CARICOM news, and civic life",
+      readership: {
+        metric: "Over 110 years of continuous publishing; leading historic print newspaper in Dominica",
+        source: "Dominica Chronicle Media Profile 2023",
+      },
+      revenueModel: "Print sales, legal notices, and commercial display advertising",
+      logo: "newspaper-logos/dm/the-chronicle.svg",
+      logoExplainer:
+        "Classic black serif masthead 'The Chronicle' on white canvas, symbolising over a century of print journalism in Dominica.",
+      sources: ["https://thechronicle.dm", "https://en.wikipedia.org/wiki/The_Chronicle_(Dominica)"],
+    },
+    {
+      id: "dm-dominica-news-online",
+      countryCode: "DM",
+      name: "Dominica News Online",
+      officialName: "Dominica News Online (DNO)",
+      founded: 2007,
+      frequency: "Continuous 24/7 digital news service",
+      format: "Digital-only news portal",
+      language: "English",
+      headquarters: "Roseau",
+      owner: {
+        name: "Duravision Inc.",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Dominica's premier digital breaking news portal; high-tempo reporting, community updates, weather monitoring, and national politics",
+      readership: {
+        metric: "Over 800,000 monthly digital visits across Dominica and extensive diaspora readership in the UK and North America",
+        source: "Dominica News Online Audience Report 2024",
+      },
+      revenueModel: "Digital banner advertising and diaspora community promotions",
+      logo: "newspaper-logos/dm/dominica-news-online.svg",
+      logoExplainer:
+        "Cyan and navy banner with white lettering 'DOMINICA NEWS ONLINE', representing modern real-time island reporting.",
+      sources: ["https://dominicanewsonline.com"],
+    },
+    {
+      id: "dm-the-sun-dominica",
+      countryCode: "DM",
+      name: "The Sun",
+      founded: 1999,
+      frequency: "Weekly newspaper",
+      format: "Tabloid publication",
+      language: "English",
+      headquarters: "Roseau",
+      owner: {
+        name: "Sun Printing & Publishing Ltd",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent investigative weekly; political commentary, environmental conservation, and social accountability",
+      readership: {
+        metric: "Widely read independent weekly print paper in Roseau and Portsmouth",
+        source: "Sun Publishing Review 2023",
+      },
+      revenueModel: "Print sales and local business advertising",
+      logo: "newspaper-logos/dm/the-sun-dominica.svg",
+      logoExplainer:
+        "Bright golden sunburst icon with bold black typography 'The Sun', symbolising vibrant truth and community journalism.",
+      sources: ["https://sundominica.com"],
+    },
+    {
+      id: "dm-dominica-vibes",
+      countryCode: "DM",
+      name: "Dominica Vibes News",
+      founded: 2010,
+      frequency: "Continuous digital news portal",
+      format: "Digital multimedia portal",
+      language: "English",
+      headquarters: "Roseau",
+      owner: {
+        name: "Vibes Media Group",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Digital news and lifestyle portal; cultural events, World Creole Music Festival coverage, sports, and youth news",
+      readership: {
+        metric: "Popular digital platform engaging youth and cultural sectors in Dominica",
+        source: "Dominica Vibes Audience Review 2023",
+      },
+      revenueModel: "Digital display ads and festival event promotions",
+      logo: "newspaper-logos/dm/dominica-vibes.svg",
+      logoExplainer:
+        "Green and yellow banner with modern typography 'DOMINICA VIBES', reflecting the nature island's cultural vitality.",
+      sources: ["https://www.dominicavibes.dm"],
+    },
+    {
+      id: "dm-ebean-news",
+      countryCode: "DM",
+      name: "EmoNews",
+      founded: 2018,
+      frequency: "Continuous digital news & live streaming",
+      format: "Digital video news & portal",
+      language: "English",
+      headquarters: "Roseau",
+      owner: {
+        name: "EmoNews Media Network",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Rapidly growing digital native news channel; live on-the-scene broadcasts, community interviews, and disaster response reporting",
+      readership: {
+        metric: "High social media engagement with over 150,000 active community followers across the Caribbean",
+        source: "EmoNews Media Analytics 2024",
+      },
+      revenueModel: "Social media monetization, local sponsorships, and live stream advertising",
+      logo: "newspaper-logos/dm/ebean-news.svg",
+      logoExplainer:
+        "Red and black badge with bold white lettering 'EMONEWS', representing dynamic mobile-first island reporting.",
+      sources: ["https://emonewsdm.com"],
+    },
+  ],
+
+  // Dominican Republic
+  DO: [
+    {
+      id: "do-listin-diario",
+      countryCode: "DO",
+      name: "Listín Diario",
+      englishTranslation: "Daily List",
+      founded: 1889,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Spanish",
+      headquarters: "Santo Domingo",
+      owner: {
+        name: "Grupo de Comunicaciones Corripio",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Dominican Republic's dean of national journalism and historic newspaper of record; national politics, economic policy, legal affairs, and arts",
+      readership: {
+        metric: "Over 8 million monthly unique digital visitors on listindiario.com and highest broadsheet print circulation in the nation",
+        source: "Grupo Corripio Informe Anual 2023",
+      },
+      revenueModel: "Digital subscriptions, print circulation, and corporate display advertising",
+      logo: "newspaper-logos/do/listín-diario.svg",
+      logoExplainer:
+        "Classic black gothic masthead 'Listín Diario' on white canvas, symbolising over 135 years of Dominican press heritage.",
+      sources: ["https://listindiario.com", "https://en.wikipedia.org/wiki/List%C3%ADn_Diario"],
+    },
+    {
+      id: "do-diario-libre",
+      countryCode: "DO",
+      name: "Diario Libre",
+      englishTranslation: "Free Daily",
+      founded: 2001,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Berliner free daily & premium digital portal",
+      language: "Spanish",
+      headquarters: "Santo Domingo",
+      owner: {
+        name: "Grupo Puntacana (Rainieri family)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Pioneering free daily newspaper; modern design, investigative journalism, tourism economics, and transparent public governance",
+      readership: {
+        metric: "Largest daily print circulation in the Caribbean (~150,000 daily copies) and 9+ million monthly digital visitors",
+        source: "Diario Libre Media Kit 2024",
+      },
+      revenueModel: "Commercial print display advertising and digital programmatic revenue",
+      logo: "newspaper-logos/do/diario-libre.svg",
+      logoExplainer:
+        "Deep blue banner with clean white sans-serif typography 'Diario Libre', reflecting modern investigative and independent reporting.",
+      sources: ["https://www.diariolibre.com", "https://en.wikipedia.org/wiki/Diario_Libre"],
+    },
+    {
+      id: "do-hoy",
+      countryCode: "DO",
+      name: "Hoy",
+      englishTranslation: "Today",
+      founded: 1981,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Spanish",
+      headquarters: "Santo Domingo",
+      owner: {
+        name: "Grupo de Comunicaciones Corripio",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Mainstream quality daily; national political analysis, investigative reports, economic development, and cultural essays",
+      readership: {
+        metric: "Widely circulated across institutional and commercial sectors with over 4.5 million monthly digital readers",
+        source: "Periódico Hoy Memoria 2023",
+      },
+      revenueModel: "Print sales, official legal notices, and advertising",
+      logo: "newspaper-logos/do/hoy.svg",
+      logoExplainer:
+        "Vibrant red title banner with bold white lettering 'HOY', representing immediate daily news and editorial vitality.",
+      sources: ["https://hoy.com.do", "https://es.wikipedia.org/wiki/Hoy_(Rep%C3%BAblica_Dominicana)"],
+    },
+    {
+      id: "do-el-caribe",
+      countryCode: "DO",
+      name: "El Caribe",
+      englishTranslation: "The Caribbean",
+      founded: 1948,
+      frequency: "Daily newspaper",
+      format: "Tabloid & digital portal",
+      language: "Spanish",
+      headquarters: "Santo Domingo",
+      owner: {
+        name: "Multimedios del Caribe",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Historic daily newspaper founded in 1948; political commentary, regional Caribbean affairs, sports (baseball), and judiciary reporting",
+      readership: {
+        metric: "Key national morning newspaper paired with CDN Canal 37 television network for cross-media reach",
+        source: "Multimedios del Caribe 2023",
+      },
+      revenueModel: "Print circulation and multimedia broadcast-digital advertising",
+      logo: "newspaper-logos/do/el-caribe.svg",
+      logoExplainer:
+        "Navy blue background with bold serif typography 'elCaribe', symbolising Caribbean identity and journalistic integrity.",
+      sources: ["https://www.elcaribe.com.do", "https://en.wikipedia.org/wiki/El_Caribe_(newspaper)"],
+    },
+    {
+      id: "do-el-dia",
+      countryCode: "DO",
+      name: "El Día",
+      englishTranslation: "The Day",
+      founded: 2002,
+      frequency: "Daily newspaper (Monday–Friday)",
+      format: "Compact free daily & digital portal",
+      language: "Spanish",
+      headquarters: "Santo Domingo",
+      owner: {
+        name: "Grupo de Comunicaciones Corripio",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Morning commuter newspaper; concise national news, urban affairs, health, education, and entertainment",
+      readership: {
+        metric: "Distributed freely to commuters across Santo Domingo and Santiago with 120,000+ daily copies",
+        source: "El Día Media Distribution 2024",
+      },
+      revenueModel: "Commercial print advertising and digital web sponsorships",
+      logo: "newspaper-logos/do/el-día.svg",
+      logoExplainer:
+        "Yellow and red masthead featuring bold typography 'El Día', iconic for morning urban commuter news in the capital.",
+      sources: ["https://eldia.com.do", "https://es.wikipedia.org/wiki/El_D%C3%ADa_(Rep%C3%BAblica_Dominicana)"],
+    },
+  ],
+
+  // Timor-Leste
+  TL: [
+    {
+      id: "tl-tatoli",
+      countryCode: "TL",
+      name: "Tatoli",
+      officialName: "Agência Noticiosa de Timor-Leste",
+      nativeName: "Tatoli - Agência Noticiosa de Timor-Leste",
+      englishTranslation: "Tatoli (Tetum: To deliver / communicate)",
+      founded: 2016,
+      frequency: "Continuous 24/7 national newswire",
+      format: "Official state newswire & multimedia portal",
+      language: "Tetum, Portuguese, English, Indonesian",
+      headquarters: "Farol, Dili",
+      owner: {
+        name: "Democratic Republic of Timor-Leste (SECOMS)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official national news agency of Timor-Leste; government decisions, parliamentary legislation, ASEAN accession, and petroleum fund management",
+      readership: {
+        metric: "Primary news agency supplying wire dispatches to all domestic radio, television, and print media across all 14 municipalities",
+        source: "Tatoli I.P. Relatório Anual 2023",
+      },
+      annualPublicFunding: {
+        total: "US$1.2 million annual state budget allocation",
+        perCapita: "US$0.89 / person / year",
+      },
+      revenueModel: "Direct state budget appropriation and news syndication services",
+      logo: "newspaper-logos/tl/tatoli.svg",
+      logoExplainer:
+        "Vibrant red and black emblem inspired by the Timor-Leste national flag with clean white lettering 'TATOLI', representing national state news.",
+      sources: ["https://tatoli.tl", "https://pt.wikipedia.org/wiki/Tatoli"],
+    },
+    {
+      id: "tl-suara-timor-lorosae",
+      countryCode: "TL",
+      name: "Suara Timor Lorosa'e",
+      officialName: "STL Media Group",
+      nativeName: "Suara Timor Lorosa'e",
+      englishTranslation: "Voice of the Eastern Sun",
+      founded: 1993,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Broadsheet & digital network",
+      language: "Tetum, Portuguese, Indonesian",
+      headquarters: "Bairo Pite, Dili",
+      owner: {
+        name: "Salvador Ximenes Soares / STL Group",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Oldest continuously operating newspaper in Timor-Leste; historic voice during the independence struggle; parliamentary affairs, justice, and community news",
+      readership: {
+        metric: "Largest print circulation daily in Timor-Leste and multi-platform network with STL TV and STL Radio FM",
+        source: "STL Media Group Overview 2023",
+      },
+      revenueModel: "Print sales, official advertisements, and commercial broadcast sponsorships",
+      logo: "newspaper-logos/tl/suara-timor-lorosae.svg",
+      logoExplainer:
+        "Red and blue emblem displaying traditional sunrise motif and bold typography 'STL', symbolising the Voice of East Timor.",
+      sources: ["https://suara-timor-lorosae.com", "https://en.wikipedia.org/wiki/Suara_Timor_Lorosae"],
+    },
+    {
+      id: "tl-timor-post",
+      countryCode: "TL",
+      name: "Timor Post",
+      nativeName: "Jornal Diário Timor Post",
+      englishTranslation: "Timor Post Daily",
+      founded: 2000,
+      frequency: "Daily newspaper",
+      format: "Tabloid publication & digital portal",
+      language: "Tetum, Portuguese",
+      headquarters: "Rua Bispo de Medeiros, Dili",
+      owner: {
+        name: "Timor Post Media Group",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent commercial daily newspaper; political commentary, civil society debates, anti-corruption reporting, and youth employment",
+      readership: {
+        metric: "Key daily newspaper in Dili read by civil servants, students, and diplomatic staff",
+        source: "Timor Post Corporate Kit 2024",
+      },
+      revenueModel: "Print newspaper circulation, institutional advertising, and web banners",
+      logo: "newspaper-logos/tl/timor-post.svg",
+      logoExplainer:
+        "Red and yellow title block with bold sans-serif lettering 'TIMOR POST', representing independent national journalism.",
+      sources: ["https://diariutimorpost.com", "https://en.wikipedia.org/wiki/Timor_Post"],
+    },
+    {
+      id: "tl-jornal-independente",
+      countryCode: "TL",
+      name: "Jornal Independente",
+      englishTranslation: "Independent Newspaper",
+      founded: 2011,
+      frequency: "Daily newspaper",
+      format: "Tabloid & digital portal",
+      language: "Tetum, Portuguese",
+      headquarters: "Dili",
+      owner: {
+        name: "Grupo Independente Media",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent daily newspaper; investigative reporting, rural development, judicial accountability, and community human rights",
+      readership: {
+        metric: "Widely distributed daily newspaper across educational institutions and government ministries in Dili",
+        source: "Conselho de Imprensa de Timor-Leste 2023",
+      },
+      revenueModel: "Print sales and local corporate advertisements",
+      logo: "newspaper-logos/tl/jornal-independente.svg",
+      logoExplainer:
+        "Blue banner with white typography 'INDEPENDENTE', symbolising democratic transparency and press freedom in Timor-Leste.",
+      sources: ["https://independente.tl"],
+    },
+    {
+      id: "tl-dilivox",
+      countryCode: "TL",
+      name: "Dili Vox",
+      englishTranslation: "Dili Voice",
+      founded: 2019,
+      frequency: "Continuous digital news service",
+      format: "Digital youth portal & Web TV",
+      language: "Tetum, English",
+      headquarters: "Dili",
+      owner: {
+        name: "Dili Vox Media",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Youth-oriented multimedia news platform; creative economy, environmental activism, technology startups, and civic education",
+      readership: {
+        metric: "Fastest-growing digital native outlet engaging Timorese youth with 300,000+ monthly digital interactions",
+        source: "Dili Vox Audience Metrics 2024",
+      },
+      revenueModel: "Digital video advertising and non-governmental organization partnerships",
+      logo: "newspaper-logos/tl/dilivox.svg",
+      logoExplainer:
+        "Modern neon green and dark slate icon 'DILI VOX', representing the voice of the young Timorese generation.",
+      sources: ["https://dilivox.com"],
+    },
+  ],
+
+  // Ecuador
+  EC: [
+    {
+      id: "ec-el-comercio",
+      countryCode: "EC",
+      name: "El Comercio",
+      englishTranslation: "The Commerce",
+      founded: 1906,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Spanish",
+      headquarters: "Quito, Pichincha",
+      owner: {
+        name: "Grupo El Comercio",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Ecuador's historic capital newspaper of record founded by the Mantilla brothers; national politics, Andean economics, and judicial affairs",
+      readership: {
+        metric: "Over 6 million monthly unique digital visitors on elcomercio.com; primary quality paper in Quito and the sierra region",
+        source: "Grupo El Comercio Memoria Anual 2023",
+      },
+      revenueModel: "Digital subscriptions, print sales, and corporate advertising",
+      logo: "newspaper-logos/ec/el-comercio.svg",
+      logoExplainer:
+        "Classic black serif typography 'EL COMERCIO' on clean white canvas, representing over 118 years of Ecuadorian journalism.",
+      sources: ["https://www.elcomercio.com", "https://en.wikipedia.org/wiki/El_Comercio_(Ecuador)"],
+    },
+    {
+      id: "ec-el-universo",
+      countryCode: "EC",
+      name: "El Universo",
+      englishTranslation: "The Universe",
+      founded: 1921,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Spanish",
+      headquarters: "Guayaquil, Guayas",
+      owner: {
+        name: "Grupo El Universo (Pérez family)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Ecuador's largest circulation daily; voice of the coastal Pacific commercial hub Guayaquil; free-market advocacy, investigative reporting, and constitutional democracy",
+      readership: {
+        metric: "Highest print circulation in Ecuador and premier online news destination with 8+ million monthly visitors",
+        source: "El Universo Audience Review 2024",
+      },
+      revenueModel: "Digital subscriptions, print sales, and commercial display advertising",
+      logo: "newspaper-logos/ec/el-universo.svg",
+      logoExplainer:
+        "Deep blue banner with white serif masthead 'EL UNIVERSO', the most recognized newspaper emblem in the Pacific coast of Ecuador.",
+      sources: ["https://www.eluniverso.com", "https://en.wikipedia.org/wiki/El_Universo"],
+    },
+    {
+      id: "ec-expreso",
+      countryCode: "EC",
+      name: "Expreso",
+      englishTranslation: "Express",
+      founded: 1973,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Spanish",
+      headquarters: "Guayaquil",
+      owner: {
+        name: "Gráficos Nacionales S.A. (Granasa)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Influential national daily; in-depth investigative political reporting, macroeconomic analysis, agribusiness, and coastal economic affairs",
+      readership: {
+        metric: "Over 3.5 million monthly digital readers on expreso.ec and major institutional readership across Guayas and Pichincha",
+        source: "Granasa Media Kit 2024",
+      },
+      revenueModel: "Print circulation, digital paywall, and business advertising",
+      logo: "newspaper-logos/ec/expreso.svg",
+      logoExplainer:
+        "Vibrant red banner with crisp white serif typography 'EXPRESO', symbolising energetic independent daily journalism.",
+      sources: ["https://www.expreso.ec", "https://es.wikipedia.org/wiki/Expreso_(Ecuador)"],
+    },
+    {
+      id: "ec-primicias",
+      countryCode: "EC",
+      name: "Primicias",
+      englishTranslation: "Scoops / First News",
+      founded: 2019,
+      frequency: "Continuous 24/7 digital news service",
+      format: "Digital-only investigative portal",
+      language: "Spanish",
+      headquarters: "Quito",
+      owner: {
+        name: "Primicias Periodismo Digital S.A.",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Modern digital investigative media; high-impact investigative scoops, security coverage, energy policy, and visual data journalism",
+      readership: {
+        metric: "Rapidly grown to over 5 million monthly unique users, becoming one of Ecuador's top digital news references",
+        source: "Similarweb & Primicias Analytics 2024",
+      },
+      revenueModel: "Digital advertising, corporate brand partnerships, and investigative grants",
+      logo: "newspaper-logos/ec/primicias.svg",
+      logoExplainer:
+        "Minimalist navy and yellow badge with modern lowercase typography 'primicias', representing data-driven digital scoops.",
+      sources: ["https://www.primicias.ec"],
+    },
+    {
+      id: "ec-lideres",
+      countryCode: "EC",
+      name: "Revista Líderes",
+      englishTranslation: "Leaders Magazine",
+      founded: 1998,
+      frequency: "Weekly business publication (Monday)",
+      format: "Tabloid publication & business portal",
+      language: "Spanish",
+      headquarters: "Quito",
+      owner: {
+        name: "Grupo El Comercio",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Ecuador's premier specialized business weekly; corporate profiles, entrepreneurship, fintech, and economic competitiveness",
+      readership: {
+        metric: "Essential reading for senior executives, entrepreneurs, and finance professionals across Ecuador",
+        source: "Grupo El Comercio Business Division 2023",
+      },
+      revenueModel: "Corporate subscriptions and business-to-business advertising",
+      logo: "newspaper-logos/ec/lideres.svg",
+      logoExplainer:
+        "Deep emerald green banner with white typography 'LÍDERES', symbolising corporate excellence and economic leadership.",
+      sources: ["https://www.revistalideres.ec"],
+    },
+  ],
+
+  // Egypt
+  EG: [
+    {
+      id: "eg-al-ahram",
+      countryCode: "EG",
+      name: "Al-Ahram",
+      officialName: "Al-Ahram Establishment",
+      nativeName: "الأهرام",
+      englishTranslation: "The Pyramids",
+      founded: 1875,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & international news network",
+      language: "Arabic, with English (Al-Ahram Weekly) and French editions",
+      headquarters: "Al-Galaa Street, Cairo",
+      owner: {
+        name: "National Press Authority of Egypt",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Egypt's historic newspaper of record and the most famous newspaper in the Arab world; official government policy, Arab diplomacy, regional security, and cultural literature",
+      readership: {
+        metric: "Largest print circulation in the Middle East with over 900,000 daily copies and global digital reach exceeding 20 million across Ahram Online",
+        source: "Al-Ahram Publishing House Report 2023",
+      },
+      annualPublicFunding: {
+        total: "Central state publishing allocation through National Press Authority",
+        perCapita: "State newspaper of record",
+      },
+      revenueModel: "State budget appropriation, print subscriptions, book publishing, and advertising",
+      logo: "newspaper-logos/eg/al-ahram.svg",
+      logoExplainer:
+        "Classic Arabic calligraphy 'الأهرام' in black and gold, representing over 150 years of foundational Arab journalism.",
+      sources: ["https://gate.ahram.org.eg", "https://en.wikipedia.org/wiki/Al-Ahram"],
+    },
+    {
+      id: "eg-al-masry-al-youm",
+      countryCode: "EG",
+      name: "Al-Masry Al-Youm",
+      nativeName: "المصري اليوم",
+      englishTranslation: "The Egyptian Today",
+      founded: 2004,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Arabic",
+      headquarters: "Cairo",
+      owner: {
+        name: "Al-Masry Media Corp (Salah Diab)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Egypt's leading independent private broadsheet; in-depth political investigations, critical economic commentary, culture, and pluralistic opinion columns",
+      readership: {
+        metric: "Largest print circulation among private Egyptian dailies and top digital portal with over 15 million monthly visits",
+        source: "Al-Masry Media Audience Report 2024",
+      },
+      revenueModel: "Print sales, digital display advertising, and corporate sponsorships",
+      logo: "newspaper-logos/eg/al-masry-al-youm.svg",
+      logoExplainer:
+        "Blue and red title badge featuring modern Arabic typography 'المصري اليوم', symbolising independent pluralistic Egyptian news.",
+      sources: ["https://www.almasryalyoum.com", "https://en.wikipedia.org/wiki/Al-Masry_Al-Youm"],
+    },
+    {
+      id: "eg-youm7",
+      countryCode: "EG",
+      name: "Youm7",
+      officialName: "The Seventh Day",
+      nativeName: "اليوم السابع",
+      englishTranslation: "The Seventh Day",
+      founded: 2008,
+      frequency: "Continuous digital news service & daily print",
+      format: "Digital-first portal & daily tabloid",
+      language: "Arabic",
+      headquarters: "Mohandessin, Giza / Cairo",
+      owner: {
+        name: "United Media Services (UMS)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Egypt's largest digital news network; breaking real-time multimedia news, video journalism, sports (Egyptian Premier League), and entertainment",
+      readership: {
+        metric: "Most visited news website in Egypt and the Arab world with over 45 million monthly unique digital visitors",
+        source: "Similarweb & UMS Group 2024",
+      },
+      revenueModel: "Digital programmatic advertising, video monetization, and commercial partnerships",
+      logo: "newspaper-logos/eg/youm7.svg",
+      logoExplainer:
+        "Vivid red and black badge with stylized Arabic numeral '7' and typography 'اليوم السابع', iconic across Middle Eastern mobile news.",
+      sources: ["https://www.youm7.com", "https://en.wikipedia.org/wiki/Youm7"],
+    },
+    {
+      id: "eg-al-wafd",
+      countryCode: "EG",
+      name: "Al-Wafd",
+      nativeName: "الوفد",
+      englishTranslation: "The Delegation",
+      founded: 1984,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Arabic",
+      headquarters: "Dokki, Giza",
+      owner: {
+        name: "New Wafd Party",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Official daily newspaper of the liberal-nationalist New Wafd Party; political opposition commentary, constitutional law, and democratic governance",
+      readership: {
+        metric: "Pioneer partisan newspaper in Egypt with widespread historical readership among jurists and academics",
+        source: "Al-Wafd Media Center 2023",
+      },
+      revenueModel: "Print sales, party subscriptions, and commercial advertising",
+      logo: "newspaper-logos/eg/al-wafd.svg",
+      logoExplainer:
+        "Classic green title banner with white Arabic lettering 'جريدة الوفد', representing liberal nationalist democratic heritage.",
+      sources: ["https://alwafd.news", "https://en.wikipedia.org/wiki/Al-Wafd_(newspaper)"],
+    },
+    {
+      id: "eg-egypt-today",
+      countryCode: "EG",
+      name: "Egypt Today",
+      founded: 1979,
+      frequency: "Monthly magazine & daily digital portal",
+      format: "English news magazine & digital portal",
+      language: "English",
+      headquarters: "Cairo",
+      owner: {
+        name: "United Media Services (UMS)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Egypt's premier English-language current affairs magazine and news portal; international diplomacy, archaeological discoveries, Grand Egyptian Museum, and tourism",
+      readership: {
+        metric: "Primary news source for English-speaking diplomats, expatriates, and foreign investors in Egypt",
+        source: "UMS International Division 2024",
+      },
+      revenueModel: "Print magazine circulation, international subscriptions, and tourism advertising",
+      logo: "newspaper-logos/eg/egypt-today.svg",
+      logoExplainer:
+        "Gold and black emblem with refined serif typography 'EGYPT TODAY', evoking Egyptian antiquities and international diplomacy.",
+      sources: ["https://www.egypttoday.com", "https://en.wikipedia.org/wiki/Egypt_Today"],
+    },
+  ],
+
+  // El Salvador
+  SV: [
+    {
+      id: "sv-la-prensa-grafica",
+      countryCode: "SV",
+      name: "La Prensa Gráfica",
+      officialName: "La Prensa Gráfica (LPG)",
+      englishTranslation: "The Graphic Press",
+      founded: 1915,
+      frequency: "Daily newspaper",
+      format: "Berliner & digital portal",
+      language: "Spanish",
+      headquarters: "Antiguo Cuscatlán, San Salvador",
+      owner: {
+        name: "Grupo Dutriz",
+        type: "Independent commercial media",
+      },
+      editorialStance: "El Salvador's historic newspaper of record; center-right liberal editorial stance focusing on judicial independence, national security, macroeconomics, and human rights",
+      readership: {
+        metric: "Highest print circulation in El Salvador and leading digital portal laprensagrafica.com reaching 4.5 million monthly visitors",
+        source: "Grupo Dutriz Memoria Anual 2023",
+      },
+      revenueModel: "Digital paywall subscriptions, print sales, and corporate advertising",
+      logo: "newspaper-logos/sv/la-pensa-gráfica.svg",
+      logoExplainer:
+        "Navy blue banner with classical white serif masthead 'LA PRENSA GRÁFICA', symbolising over a century of Salvadoran news leadership.",
+      sources: ["https://www.laprensagrafica.com", "https://en.wikipedia.org/wiki/La_Prensa_Gr%C3%A1fica"],
+    },
+    {
+      id: "sv-el-diario-de-hoy",
+      countryCode: "SV",
+      name: "El Diario de Hoy",
+      officialName: "El Diario de Hoy (EDH)",
+      englishTranslation: "Today's Daily",
+      founded: 1936,
+      frequency: "Daily newspaper",
+      format: "Broadsheet & digital portal",
+      language: "Spanish",
+      headquarters: "San Salvador",
+      owner: {
+        name: "Editorial Altamirano Madriz S.A.",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Conservative quality daily newspaper; free-market advocacy, rule of law, anti-corruption investigations, and regional Central American commerce",
+      readership: {
+        metric: "Over 4 million monthly digital readers on elsalvador.com and strong institutional print circulation",
+        source: "Editorial Altamirano Madriz 2024",
+      },
+      revenueModel: "Print sales, digital subscriptions, and display advertising",
+      logo: "newspaper-logos/sv/el-diario-de-hoy.svg",
+      logoExplainer:
+        "Red and black logo with bold serif text 'elsalvador.com / El Diario de Hoy', iconic in Salvadoran conservative journalism.",
+      sources: ["https://www.elsalvador.com", "https://en.wikipedia.org/wiki/El_Diario_de_Hoy"],
+    },
+    {
+      id: "sv-el-faro",
+      countryCode: "SV",
+      name: "El Faro",
+      englishTranslation: "The Lighthouse",
+      founded: 1998,
+      frequency: "Continuous digital investigative magazine",
+      format: "Investigative digital portal",
+      language: "Spanish, English",
+      headquarters: "San Salvador",
+      owner: {
+        name: "Fundación Trípode (Carlos Dada & Jorge Simán)",
+        type: "Non-profit independent foundation",
+      },
+      editorialStance: "Pioneer of independent digital investigative journalism in Latin America; internationally acclaimed for investigations into state corruption, gangs, and democratic backsliding",
+      readership: {
+        metric: "Winner of the Maria Moors Cabot Prize and Columbia Journalism Award; globally recognized voice on Central American democracy",
+        source: "Fundación Trípode Impact Report 2023",
+      },
+      revenueModel: "Philanthropic journalism grants, reader crowdfunding, and syndicated investigations",
+      logo: "newspaper-logos/sv/el-faro.svg",
+      logoExplainer:
+        "Stark black and gold emblem featuring a glowing lighthouse beam and lowercase text 'elfaro', symbolising courage and transparency.",
+      sources: ["https://elfaro.net", "https://en.wikipedia.org/wiki/El_Faro_(digital_newspaper)"],
+    },
+    {
+      id: "sv-diario-el-salvador",
+      countryCode: "SV",
+      name: "Diario El Salvador",
+      englishTranslation: "El Salvador Daily",
+      founded: 2020,
+      frequency: "Daily newspaper",
+      format: "Compact daily & digital portal",
+      language: "Spanish",
+      headquarters: "San Salvador",
+      owner: {
+        name: "State of El Salvador",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "State-owned daily newspaper established under President Nayib Bukele; government infrastructure projects, public safety policies, Bitcoin adoption, and social programs",
+      readership: {
+        metric: "Over 60,000 daily print distribution nationwide with heavily trafficked digital portal diarioelsalvador.com",
+        source: "Diario El Salvador Informe Institucional 2023",
+      },
+      revenueModel: "State institutional advertising and low-cost retail print sales",
+      logo: "newspaper-logos/sv/diario-el-salvador.svg",
+      logoExplainer:
+        "Cyan blue and white badge with clean modern typography 'DIARIO EL SALVADOR', representing contemporary state public communication.",
+      sources: ["https://diarioelsalvador.com", "https://es.wikipedia.org/wiki/Diario_El_Salvador"],
+    },
+    {
+      id: "sv-el-mundo",
+      countryCode: "SV",
+      name: "Diario El Mundo",
+      englishTranslation: "The World Daily",
+      founded: 1967,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Tabloid publication & digital portal",
+      language: "Spanish",
+      headquarters: "San Salvador",
+      owner: {
+        name: "Editorial Chinchontepec (Borja family)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Centrist afternoon and morning daily; balanced coverage of parliamentary politics, business developments, community issues, and sports",
+      readership: {
+        metric: "Over 2.2 million monthly unique digital visitors on elmundo.sv and regular daily print readership in the capital",
+        source: "Diario El Mundo Media Kit 2024",
+      },
+      revenueModel: "Print sales and commercial advertising",
+      logo: "newspaper-logos/sv/el-mundo.svg",
+      logoExplainer:
+        "Red and blue title banner with white serif font 'EL MUNDO', symbolising reliable daily news coverage in El Salvador.",
+      sources: ["https://diario.elmundo.sv", "https://es.wikipedia.org/wiki/El_Mundo_(El_Salvador)"],
+    },
+  ],
+
+  // Equatorial Guinea
+  GQ: [
+    {
+      id: "gq-guinea-ecuatorial-press",
+      countryCode: "GQ",
+      name: "Guinea Ecuatorial Press",
+      officialName: "Oficina de Información y Prensa de Guinea Ecuatorial",
+      englishTranslation: "Equatorial Guinea Press",
+      founded: 2010,
+      frequency: "Continuous 24/7 official state newswire",
+      format: "Official state wire service & digital portal",
+      language: "Spanish, French, English",
+      headquarters: "Malabo, Bioko Norte",
+      owner: {
+        name: "Republic of Equatorial Guinea (Dirección General de Prensa Presidencial)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official national information wire; presidential decrees, hydrocarbons sector developments, infrastructure projects, and CEMAC regional diplomacy",
+      readership: {
+        metric: "Primary source of official government information for domestic media, foreign diplomatic missions, and international oil sector operators",
+        source: "Oficina de Información y Prensa 2023",
+      },
+      annualPublicFunding: {
+        total: "Central state operational budget via Ministry of Information",
+        perCapita: "State information agency",
+      },
+      revenueModel: "Direct state budget funding",
+      logo: "newspaper-logos/gq/guinea-ecuatorial-press.svg",
+      logoExplainer:
+        "Official national emblem featuring the silk cotton tree (Ceiba pentandra) and blue text 'GUINEA ECUATORIAL PRESS', symbolising state authority.",
+      sources: ["https://guineaecuatorialpress.com", "https://es.wikipedia.org/wiki/Guinea_Ecuatorial"],
+    },
+    {
+      id: "gq-ahora-eg",
+      countryCode: "GQ",
+      name: "AhoraEG",
+      englishTranslation: "Now Equatorial Guinea",
+      founded: 2018,
+      frequency: "Continuous digital news service",
+      format: "Digital multimedia portal",
+      language: "Spanish",
+      headquarters: "Malabo & Bata",
+      owner: {
+        name: "AhoraEG Media Group",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Digital news and lifestyle portal; national economics, sports (Nzalang Nacional), youth initiatives, and cultural festivals in Malabo and Bata",
+      readership: {
+        metric: "Over 350,000 monthly digital visits; leading private online news destination inside Equatorial Guinea",
+        source: "AhoraEG Audience Analytics 2024",
+      },
+      revenueModel: "Digital display advertising and sponsored corporate media",
+      logo: "newspaper-logos/gq/ahora-eg.svg",
+      logoExplainer:
+        "Modern red and navy blue banner with bold typography 'AhoraEG', representing dynamic digital journalism.",
+      sources: ["https://ahoraeg.com"],
+    },
+    {
+      id: "gq-real-equatorial-guinea",
+      countryCode: "GQ",
+      name: "Real Equatorial Guinea",
+      founded: 2019,
+      frequency: "Continuous digital news magazine",
+      format: "Digital magazine & portal",
+      language: "Spanish, English",
+      headquarters: "Malabo",
+      owner: {
+        name: "Real EG Media Network",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Bilingual digital magazine; entrepreneurship, tourism potential, arts, and positive development narratives from Equatorial Guinea",
+      readership: {
+        metric: "Widely read by young professionals, university students, and international expatriates in Malabo",
+        source: "Real EG Media Kit 2023",
+      },
+      revenueModel: "Corporate partnerships and digital branding campaigns",
+      logo: "newspaper-logos/gq/real-equatorial-guinea.svg",
+      logoExplainer:
+        "Gold and dark slate emblem featuring 'Real Equatorial Guinea', symbolising cultural pride and modern economic progress.",
+      sources: ["https://realequatorialguinea.com"],
+    },
+    {
+      id: "gq-ebano",
+      countryCode: "GQ",
+      name: "Ébano",
+      englishTranslation: "Ebony",
+      founded: 1939,
+      frequency: "Weekly newspaper",
+      format: "Official state print tabloid",
+      language: "Spanish",
+      headquarters: "Malabo",
+      owner: {
+        name: "State of Equatorial Guinea (Ministerio de Información)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Historic state-owned print publication in Malabo; government announcements, ministerial resolutions, and cultural events",
+      readership: {
+        metric: "Historic print newspaper distributed in government ministries and public administrative centers",
+        source: "Ministerio de Información, Prensa y Radio 2023",
+      },
+      revenueModel: "State publishing subsidy",
+      logo: "newspaper-logos/gq/ébano.svg",
+      logoExplainer:
+        "Classic black typography 'ÉBANO' on white ground, symbolising the historic print press of Bioko Island.",
+      sources: ["https://es.wikipedia.org/wiki/%C3%89bano_(peri%C3%B3dico)"],
+    },
+    {
+      id: "gq-diario-rombe",
+      countryCode: "GQ",
+      name: "Diario Rombe",
+      founded: 2012,
+      frequency: "Continuous digital investigative portal",
+      format: "Investigative digital portal",
+      language: "Spanish",
+      headquarters: "Malabo / Spain (Diaspora)",
+      owner: {
+        name: "Rombe Media Group (Delfin Mocache Massoko)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent investigative news outlet operating primarily from the diaspora; human rights reporting, offshore financial transparency, and political accountability",
+      readership: {
+        metric: "Widely followed investigative outlet among civil society activists and the Equatorial Guinean diaspora worldwide",
+        source: "Diario Rombe Audience Report 2023",
+      },
+      revenueModel: "Reader donations and investigative journalism grants",
+      logo: "newspaper-logos/gq/diario-rombe.svg",
+      logoExplainer:
+        "Black and red emblem with stylized bold text 'DIARIO ROMBE', representing independent investigative journalism in exile.",
+      sources: ["https://diariorombe.es", "https://es.wikipedia.org/wiki/Diario_Rombe"],
+    },
+  ],
+
+  // Eritrea
+  ER: [
+    {
+      id: "er-shabait",
+      countryCode: "ER",
+      name: "Shabait",
+      officialName: "Ministry of Information News Portal",
+      englishTranslation: "Shabait (named after the historic popular front)",
+      founded: 2000,
+      frequency: "Continuous 24/7 official state newswire",
+      format: "Official state wire service & digital portal",
+      language: "Tigrinya, Arabic, English, French",
+      headquarters: "Asmara",
+      owner: {
+        name: "State of Eritrea (Ministry of Information)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official state information portal of Eritrea; presidential statements, national service development projects, agricultural dams, and diplomatic relations",
+      readership: {
+        metric: "Primary official news source inside Eritrea and for the worldwide Eritrean diaspora",
+        source: "Ministry of Information Eritrea 2023",
+      },
+      annualPublicFunding: {
+        total: "Central state operational budget via Ministry of Information",
+        perCapita: "State information service",
+      },
+      revenueModel: "Direct state budget funding",
+      logo: "newspaper-logos/er/shabait.svg",
+      logoExplainer:
+        "Red and green banner inspired by the Eritrean flag with bold white typography 'SHABAIT', representing official state communication.",
+      sources: ["https://shabait.com", "https://en.wikipedia.org/wiki/Ministry_of_Information_(Eritrea)"],
+    },
+    {
+      id: "er-haddas-eritrea",
+      countryCode: "ER",
+      name: "Haddas Eritrea",
+      nativeName: "ሓዳስ ኤርትራ",
+      englishTranslation: "New Eritrea",
+      founded: 1991,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Official state broadsheet",
+      language: "Tigrinya",
+      headquarters: "Asmara",
+      owner: {
+        name: "Ministry of Information",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official national public Tigrinya-language daily; national development campaigns, regional zoba administration news, literature, and educational notices",
+      readership: {
+        metric: "Sole daily print newspaper in Tigrinya with universal distribution across government and community kiosks in Asmara",
+        source: "Eritrean Ministry of Information 2023",
+      },
+      revenueModel: "State publishing subsidy and retail kiosk print sales",
+      logo: "newspaper-logos/er/haddas-eritrea.svg",
+      logoExplainer:
+        "Elegant Tigrinya Ge'ez calligraphy 'ሓዳስ ኤርትራ' on white ground, symbolising national renewal and indigenous language heritage.",
+      sources: ["https://shabait.com/category/haddas-ertra/", "https://en.wikipedia.org/wiki/Haddas_Eritrea"],
+    },
+    {
+      id: "er-eritrea-profile",
+      countryCode: "ER",
+      name: "Eritrea Profile",
+      founded: 1993,
+      frequency: "Bi-weekly newspaper (Wednesday & Saturday)",
+      format: "Official state English broadsheet & portal",
+      language: "English",
+      headquarters: "Asmara",
+      owner: {
+        name: "Ministry of Information",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Official state English-language newspaper; foreign policy, Red Sea maritime cooperation, UN affairs, mining developments, and national history",
+      readership: {
+        metric: "Read by foreign diplomats, international organizations, scholars, and diaspora communities",
+        source: "Ministry of Information Profile 2023",
+      },
+      revenueModel: "State budget funding and print sales",
+      logo: "newspaper-logos/er/eritrea-profile.svg",
+      logoExplainer:
+        "Deep blue banner with classical serif lettering 'ERITREA PROFILE', the definitive English print masthead of Asmara.",
+      sources: ["https://shabait.com/category/eritrea-profile/", "https://en.wikipedia.org/wiki/Eritrea_Profile"],
+    },
+    {
+      id: "er-eritrean-digest",
+      countryCode: "ER",
+      name: "Eritrean Digest",
+      founded: 2018,
+      frequency: "Continuous digital analysis & portal",
+      format: "Digital analytical portal",
+      language: "English, Tigrinya",
+      headquarters: "Asmara / Washington D.C.",
+      owner: {
+        name: "Eritrean Digest Media (Saleh Younis)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent diaspora analytical platform; in-depth political commentary, peace accords, Horn of Africa regional geopolitics, and historical archives",
+      readership: {
+        metric: "Widely read by international Horn of Africa scholars, think tanks, and global diaspora communities",
+        source: "Eritrean Digest Analytics 2024",
+      },
+      revenueModel: "Reader patronage and academic media grants",
+      logo: "newspaper-logos/er/eritrean-digest.svg",
+      logoExplainer:
+        "Warm terracotta badge with modern typography 'ERITREAN DIGEST', symbolising independent historical analysis and debate.",
+      sources: ["https://eritreandigest.com"],
+    },
+    {
+      id: "er-assenna",
+      countryCode: "ER",
+      name: "Assenna",
+      englishTranslation: "Assenna (Tigrinya: Foundation / Heritage)",
+      founded: 2008,
+      frequency: "Continuous digital news & satellite broadcasting",
+      format: "Digital news portal & satellite TV",
+      language: "Tigrinya, English",
+      headquarters: "London, UK / Diaspora",
+      owner: {
+        name: "Assenna Foundation (Amanuel Eyasu)",
+        type: "Independent trust / foundation",
+      },
+      editorialStance: "Prominent diaspora human rights and opposition media organization; investigative reporting on human rights conditions, political prisoners, and civic mobilization",
+      readership: {
+        metric: "Massive diaspora reach with over 2 million monthly digital video and news consumers across Europe, North America, and the Middle East",
+        source: "Assenna Foundation Annual Report 2023",
+      },
+      revenueModel: "Diaspora crowdfunding, foundation grants, and viewer donations",
+      logo: "newspaper-logos/er/assenna.svg",
+      logoExplainer:
+        "Vibrant red banner with stylized white flame and bold typography 'ASSENNA', representing independent human rights advocacy in exile.",
+      sources: ["https://assenna.com", "https://en.wikipedia.org/wiki/Assenna"],
+    },
+  ],
+
+  // Estonia
+  EE: [
+    {
+      id: "ee-postimees",
+      countryCode: "EE",
+      name: "Postimees",
+      nativeName: "Postimees",
+      englishTranslation: "The Postman",
+      founded: 1857,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Broadsheet & digital network",
+      language: "Estonian, Russian",
+      headquarters: "Tallinn & Tartu",
+      owner: {
+        name: "Postimees Grupp (Margus Linnamäe / MM Grupp)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Estonia's oldest newspaper and premier national newspaper of record; conservative-liberal stance focusing on national sovereignty, digital society (e-Estonia), and European security",
+      readership: {
+        metric: "Over 650,000 weekly digital users on postimees.ee and largest paid newspaper circulation in Estonia",
+        source: "Estonian Media Association & Kantar Emor 2024",
+      },
+      revenueModel: "Digital paywall subscriptions, print sales, and corporate advertising",
+      logo: "newspaper-logos/ee/postimees.svg",
+      logoExplainer:
+        "Deep blue banner with white serif typography 'Postimees', the historic symbol of Estonian national awakening and journalism.",
+      sources: ["https://www.postimees.ee", "https://en.wikipedia.org/wiki/Postimees"],
+    },
+    {
+      id: "ee-delfi-ee",
+      countryCode: "EE",
+      name: "Delfi Estonia",
+      founded: 1999,
+      frequency: "Continuous 24/7 digital news service",
+      format: "Digital-only news network",
+      language: "Estonian, Russian",
+      headquarters: "Tallinn",
+      owner: {
+        name: "Ekspress Grupp",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Estonia's largest digital news network; breaking real-time news, investigative journalism (Eesti Ekspress synergy), podcasts, and civic debate",
+      readership: {
+        metric: "Over 1.2 million monthly unique digital visitors; highest digital news reach in Estonia with 100,000+ digital subscribers",
+        source: "Ekspress Grupp Financial Results 2024",
+      },
+      revenueModel: "Digital paywall subscriptions (Delfi Kogupakett) and programmatic advertising",
+      logo: "newspaper-logos/ee/delfi-ee.svg",
+      logoExplainer:
+        "Orange and dark blue badge with bold sans-serif text 'DELFI', representing modern Baltic digital breaking journalism.",
+      sources: ["https://www.delfi.ee", "https://en.wikipedia.org/wiki/Delfi_(web_portal)"],
+    },
+    {
+      id: "ee-eesti-paevaleht",
+      countryCode: "EE",
+      name: "Eesti Päevaleht",
+      officialName: "EPL",
+      nativeName: "Eesti Päevaleht",
+      englishTranslation: "Estonian Daily",
+      founded: 1995,
+      frequency: "Digital daily & weekend print",
+      format: "Digital daily portal & analytical weekend edition",
+      language: "Estonian",
+      headquarters: "Tallinn",
+      owner: {
+        name: "Ekspress Grupp",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Center-left progressive quality newspaper; in-depth investigative political reporting, education reform, climate policy, and European affairs",
+      readership: {
+        metric: "Highly regarded intellectual broadsheet with strong digital readership integrated into Ekspress Grupp network",
+        source: "Ekspress Grupp Media Report 2023",
+      },
+      revenueModel: "Digital subscriber packages and institutional subscriptions",
+      logo: "newspaper-logos/ee/eesti-päevaleht.svg",
+      logoExplainer:
+        "Blue and red logo with bold clean lettering 'Eesti Päevaleht', symbolising contemporary analytical journalism.",
+      sources: ["https://epl.delfi.ee", "https://en.wikipedia.org/wiki/Eesti_P%C3%A4evaleht"],
+    },
+    {
+      id: "ee-aripaev",
+      countryCode: "EE",
+      name: "Äripäev",
+      nativeName: "Äripäev",
+      englishTranslation: "Business Day",
+      founded: 1989,
+      frequency: "Continuous digital business daily",
+      format: "Digital-only financial daily & radio (Äripäeva Raadio)",
+      language: "Estonian",
+      headquarters: "Tallinn",
+      owner: {
+        name: "Bonnier Business Press",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Estonia's premier financial and economic daily; Tallinn Stock Exchange, startup ecosystem (tech unicorns), corporate governance, and fiscal policy",
+      readership: {
+        metric: "Over 25,000 paid corporate digital subscribers; primary business publication for Estonian entrepreneurs and investors",
+        source: "Bonnier Business Press Estonia 2024",
+      },
+      revenueModel: "Digital corporate paywall, specialized business conferences, and B2B advertising",
+      logo: "newspaper-logos/ee/äripäev.svg",
+      logoExplainer:
+        "Signature magenta-red banner with crisp white typography 'Äripäev', representing Nordic business intelligence in the Baltics.",
+      sources: ["https://www.aripaev.ee", "https://en.wikipedia.org/wiki/%C3%84rip%C3%A4ev"],
+    },
+    {
+      id: "ee-ohtuleht",
+      countryCode: "EE",
+      name: "Õhtuleht",
+      nativeName: "Õhtuleht",
+      englishTranslation: "Evening Paper",
+      founded: 1944,
+      frequency: "Daily newspaper (Monday–Saturday)",
+      format: "Tabloid publication & digital portal",
+      language: "Estonian",
+      headquarters: "Tallinn",
+      owner: {
+        name: "Õhtuleht Kirjastus (Ekspress Grupp & Suits Media)",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Popular tabloid; consumer rights advocacy, sports, investigative exposés, human interest stories, and entertainment",
+      readership: {
+        metric: "Largest print circulation tabloid in Estonia and 700,000+ monthly digital readers on ohtuleht.ee",
+        source: "Õhtuleht Kirjastus Annual Report 2023",
+      },
+      revenueModel: "Print newsstand sales, digital subscriptions, and display advertising",
+      logo: "newspaper-logos/ee/õhtuleht.svg",
+      logoExplainer:
+        "Red and yellow title block with bold uppercase font 'ÕHTULEHT', iconic across Estonian newsstands.",
+      sources: ["https://www.ohtuleht.ee", "https://en.wikipedia.org/wiki/%C3%95htuleht"],
+    },
+  ],
+
+  // Eswatini
+  SZ: [
+    {
+      id: "sz-times-of-eswatini",
+      countryCode: "SZ",
+      name: "Times of Eswatini",
+      officialName: "The Times of Swaziland",
+      founded: 1897,
+      frequency: "Daily newspaper (Monday–Friday)",
+      format: "Broadsheet & digital portal",
+      language: "English",
+      headquarters: "Mbabane",
+      owner: {
+        name: "African Echo (Pty) Ltd / Times of Swaziland Ltd",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Eswatini's oldest and primary independent newspaper; national politics, parliamentary proceedings, traditional tinkhundla governance, and social affairs",
+      readership: {
+        metric: "Largest print circulation daily in Eswatini with 30,000 daily copies and extensive digital readership",
+        source: "Times of Eswatini Corporate Profile 2023",
+      },
+      revenueModel: "Print sales, legal notices, and commercial display advertising",
+      logo: "newspaper-logos/sz/times-of-eswatini.svg",
+      logoExplainer:
+        "Classic black serif masthead 'Times of Eswatini' on white canvas, symbolising over 125 years of independent press history.",
+      sources: ["http://www.times.co.sz", "https://en.wikipedia.org/wiki/The_Times_of_Swaziland"],
+    },
+    {
+      id: "sz-ebuswini-observer",
+      countryCode: "SZ",
+      name: "Eswatini Observer",
+      officialName: "The Swazi Observer",
+      founded: 1981,
+      frequency: "Daily newspaper (Monday–Friday)",
+      format: "Broadsheet & digital portal",
+      language: "English",
+      headquarters: "Mbabane",
+      owner: {
+        name: "Tibiyo Taka Ngwane (Royal Charter Trust)",
+        type: "State-owned / statutory corporation",
+      },
+      editorialStance: "Royal trust-owned daily newspaper; royal decrees, government infrastructure developments, diplomatic visits, and cultural preservation (Umhlanga)",
+      readership: {
+        metric: "Second largest daily newspaper in Eswatini, read throughout public administration and traditional councils",
+        source: "Tibiyo Taka Ngwane Annual Report 2023",
+      },
+      revenueModel: "Commercial sales, official state notices, and royal trust funding",
+      logo: "newspaper-logos/sz/ebuswini-observer.svg",
+      logoExplainer:
+        "Navy blue banner with white serif lettering 'Eswatini Observer', representing the royal chartered press of the Kingdom.",
+      sources: ["https://new.observer.org.sz", "https://en.wikipedia.org/wiki/Swazi_Observer"],
+    },
+    {
+      id: "sz-swaziland-news",
+      countryCode: "SZ",
+      name: "Swaziland News",
+      founded: 2017,
+      frequency: "Continuous digital investigative portal",
+      format: "Investigative digital portal",
+      language: "English, SiSwati",
+      headquarters: "Mbabane / South Africa (Diaspora)",
+      owner: {
+        name: "Zweli Martin Dlamini",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Leading independent investigative online publication; critical coverage of absolute monarchy governance, human rights abuses, and pro-democracy movements",
+      readership: {
+        metric: "Highly influential digital news platform with over 800,000 monthly readers across Southern Africa",
+        source: "Swaziland News Analytics 2024",
+      },
+      revenueModel: "Digital reader donations and international investigative journalism grants",
+      logo: "newspaper-logos/sz/swaziland-news.svg",
+      logoExplainer:
+        "Red and black badge with bold typography 'SWAZILAND NEWS', symbolising fearless pro-democracy investigative journalism.",
+      sources: ["https://swazilandnews.co.za"],
+    },
+    {
+      id: "sz-swazi-bridge",
+      countryCode: "SZ",
+      name: "Swazi Bridge",
+      founded: 2019,
+      frequency: "Continuous digital news service",
+      format: "Digital community portal",
+      language: "English, SiSwati",
+      headquarters: "Mbabane",
+      owner: {
+        name: "Swazi Bridge Media",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Digital community news network; rural development, youth initiatives, public healthcare, and educational opportunities in Eswatini",
+      readership: {
+        metric: "Popular digital news platform connecting urban centers with rural communities across Eswatini",
+        source: "Swazi Bridge Audience Review 2023",
+      },
+      revenueModel: "Digital advertising and community sponsorships",
+      logo: "newspaper-logos/sz/swazi-bridge.svg",
+      logoExplainer:
+        "Green and gold emblem with stylized arch bridge 'SWAZI BRIDGE', symbolising community connection and national dialogue.",
+      sources: ["https://swazibridge.com"],
+    },
+    {
+      id: "sz-independent-news-eswatini",
+      countryCode: "SZ",
+      name: "Independent News Eswatini",
+      founded: 2015,
+      frequency: "Weekly publication & digital portal",
+      format: "Tabloid publication & digital portal",
+      language: "English",
+      headquarters: "Mbabane",
+      owner: {
+        name: "Independent News Media Eswatini",
+        type: "Independent commercial media",
+      },
+      editorialStance: "Independent commercial weekly; business news, SME financing, agricultural reform, and cultural commentary",
+      readership: {
+        metric: "Read by business professionals, agricultural cooperatives, and civil society leaders",
+        source: "Independent News Media 2023",
+      },
+      revenueModel: "Print retail sales and local commercial advertising",
+      logo: "newspaper-logos/sz/independent-news-eswatini.svg",
+      logoExplainer:
+        "Dark slate banner with clean white text 'INDEPENDENT NEWS ESWATINI', representing commercial and economic weekly reporting.",
+      sources: ["https://independentnews.co.sz"],
+    },
+  ],
 };
-  // Guatemala (gt)
-  {
-    id: 'gt-prensa-libre',
-    countryCode: 'gt',
-    name: 'Prensa Libre',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/gt/prensa-libre.svg',
-    foundingYear: 1951,
-    headquarters: 'Guatemala City',
-    owner: 'Prensa Libre S.A.',
-    language: ['es'],
-    coverage: 'national',
-    politicalStance: 'Center-right / Conservative',
-    format: 'tabloid',
-    circulation: '120,000 daily print',
-    readers: '4,500,000 monthly digital readers',
-    digitalPresence: "Guatemala's newspaper of record and top news portal prensalibre.com.",
-    sources: [
-      { name: 'Prensa Libre Official Site', url: 'https://www.prensalibre.com/' },
-      { name: 'Media Ownership Monitor Guatemala', url: 'https://guatemala.mom-gmr.org/' }
-    ]
-  },
-  {
-    id: 'gt-el-periódico',
-    countryCode: 'gt',
-    name: 'elPeriódico',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/gt/el-periódico.svg',
-    foundingYear: 1996,
-    headquarters: 'Guatemala City',
-    owner: 'Aldea Global S.A. (Jose Rubén Zamora)',
-    language: ['es'],
-    coverage: 'national',
-    politicalStance: 'Independent / Investigative / Center-left',
-    format: 'tabloid',
-    circulation: '25,000 print daily',
-    readers: '1,800,000 monthly readers',
-    digitalPresence: 'Historic investigative newspaper in Guatemala elperiodico.com.gt.',
-    sources: [
-      { name: 'elPeriódico Archives', url: 'https://elperiodico.com.gt/' },
-      { name: 'CPJ Guatemala Press Freedom', url: 'https://cpj.org/' }
-    ]
-  },
-  {
-    id: 'gt-diario-de-centro-américa',
-    countryCode: 'gt',
-    name: 'Diario de Centro América',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/gt/diario-de-centro-américa.svg',
-    foundingYear: 1880,
-    headquarters: 'Guatemala City',
-    owner: 'Tipografía Nacional (Government of Guatemala)',
-    annualPublicFunding: {
-      total: 'GTQ 35,000,000 ($4.5M USD state media budget)',
-      perCapita: 'GTQ 2.05 per capita'
-    },
-    language: ['es'],
-    coverage: 'national',
-    politicalStance: 'State-owned official organ',
-    format: 'tabloid',
-    circulation: '15,000 daily print',
-    readers: '150,000 readers',
-    digitalPresence: "Guatemala's official state gazette and daily news publication dca.gob.gt.",
-    sources: [
-      { name: 'Diario de Centro América Portal', url: 'https://dca.gob.gt/' },
-      { name: 'Gobierno de Guatemala', url: 'https://guatemala.gob.gt/' }
-    ]
-  },
-  {
-    id: 'gt-soy502',
-    countryCode: 'gt',
-    name: 'Soy502',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/gt/soy502.svg',
-    foundingYear: 2013,
-    headquarters: 'Guatemala City',
-    owner: 'Medios Digitales S.A. (Dina Fernandez)',
-    language: ['es'],
-    coverage: 'national',
-    politicalStance: 'Independent / Digital-first',
-    format: 'digital',
-    readers: '3,800,000 monthly digital readers',
-    digitalPresence: "Guatemala's leading digital-first news platform soy502.com.",
-    sources: [
-      { name: 'Soy502 Official Portal', url: 'https://www.soy502.com/' },
-      { name: 'Media Ownership Monitor', url: 'https://guatemala.mom-gmr.org/' }
-    ]
-  },
-  {
-    id: 'gt-plaza-pública',
-    countryCode: 'gt',
-    name: 'Plaza Pública',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/gt/plaza-pública.svg',
-    foundingYear: 2011,
-    headquarters: 'Guatemala City',
-    owner: 'Universidad Rafael Landívar',
-    language: ['es'],
-    coverage: 'national',
-    politicalStance: 'Independent / Academic / Investigative',
-    format: 'digital',
-    readers: '400,000 monthly digital readers',
-    digitalPresence: 'Renowned university-backed non-profit investigative journalism site plazapublica.com.gt.',
-    sources: [
-      { name: 'Plaza Pública Portal', url: 'https://www.plazapublica.com.gt/' },
-      { name: 'Universidad Rafael Landívar', url: 'https://url.edu.gt/' }
-    ]
-  },
-
-  // Guinea (gn)
-  {
-    id: 'gn-le-lynx',
-    countryCode: 'gn',
-    name: 'Le Lynx',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/gn/le-lynx.svg',
-    foundingYear: 1992,
-    headquarters: 'Conakry',
-    owner: 'Groupe de Presse Le Lynx-La Lance (Souleymane Diallo)',
-    language: ['fr'],
-    coverage: 'national',
-    politicalStance: 'Satirical / Independent',
-    format: 'tabloid',
-    circulation: '5,000 weekly print',
-    readers: '80,000 readers',
-    digitalPresence: "Guinea's premier satirical weekly newspaper lelynx.net.",
-    sources: [
-      { name: 'Le Lynx Official Site', url: 'https://lelynx.net/' },
-      { name: 'Haute Autorité de la Communication (HAC) Guinée', url: 'https://hacguinee.org/' }
-    ]
-  },
-  {
-    id: 'gn-guineenews',
-    countryCode: 'gn',
-    name: 'Guineenews',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/gn/guineenews.svg',
-    foundingYear: 1997,
-    headquarters: 'Conakry',
-    owner: 'Boubacar Cissé / Guineenews Group',
-    language: ['fr'],
-    coverage: 'national',
-    politicalStance: 'Independent',
-    format: 'digital',
-    readers: '850,000 monthly digital readers',
-    digitalPresence: "Guinea's oldest and most visited digital news portal guineenews.org.",
-    sources: [
-      { name: 'Guineenews Official Portal', url: 'https://guineenews.org/' },
-      { name: 'HAC Guinée', url: 'https://hacguinee.org/' }
-    ]
-  },
-  {
-    id: 'gn-horoya',
-    countryCode: 'gn',
-    name: 'Horoya',
-    englishTranslation: 'Dignity / Liberty',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/gn/horoya.svg',
-    foundingYear: 1961,
-    headquarters: 'Conakry',
-    owner: 'Ministry of Information and Communication',
-    annualPublicFunding: {
-      total: 'GNF 15,000,000,000 ($1.7M USD state press subvention)',
-      perCapita: 'GNF 1,070 per capita'
-    },
-    language: ['fr'],
-    coverage: 'national',
-    politicalStance: 'State-owned official organ',
-    format: 'broadsheet',
-    circulation: '2,000 daily print',
-    readers: '30,000 readers',
-    digitalPresence: "Guinea's official state daily newspaper horoya.info.",
-    sources: [
-      { name: 'Horoya Official Site', url: 'https://horoya.info/' },
-      { name: 'Ministère de l'Information et de la Communication', url: 'https://mic.gov.gn/' }
-    ]
-  },
-  {
-    id: 'gn-africaguinee',
-    countryCode: 'gn',
-    name: 'Africaguinee',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/gn/africaguinee.svg',
-    foundingYear: 2004,
-    headquarters: 'Conakry',
-    owner: 'Africaguinee Media',
-    language: ['fr'],
-    coverage: 'national',
-    politicalStance: 'Independent',
-    format: 'digital',
-    readers: '700,000 monthly digital readers',
-    digitalPresence: 'Leading news site focusing on politics, economy, and society africaguinee.com.',
-    sources: [
-      { name: 'Africaguinee Portal', url: 'https://www.africaguinee.com/' },
-      { name: 'HAC Guinée', url: 'https://hacguinee.org/' }
-    ]
-  },
-  {
-    id: 'gn-mediaguinee',
-    countryCode: 'gn',
-    name: 'Mediaguinee',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/gn/mediaguinee.svg',
-    foundingYear: 2010,
-    headquarters: 'Conakry',
-    owner: 'Mediaguinee Communication',
-    language: ['fr'],
-    coverage: 'national',
-    politicalStance: 'Independent',
-    format: 'digital',
-    readers: '600,000 monthly digital readers',
-    digitalPresence: 'Major digital news website covering daily events mediaguinee.org.',
-    sources: [
-      { name: 'Mediaguinee Official Portal', url: 'https://mediaguinee.org/' },
-      { name: 'HAC Guinée', url: 'https://hacguinee.org/' }
-    ]
-  },
-
-  // Guinea-Bissau (gw)
-  {
-    id: 'gw-n-pinti',
-    countryCode: 'gw',
-    name: "N'Pinti",
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/gw/n-pinti.svg',
-    foundingYear: 1974,
-    headquarters: 'Bissau',
-    owner: 'Government of Guinea-Bissau',
-    annualPublicFunding: {
-      total: 'XOF 120,000,000 ($200,000 USD state press allocation)',
-      perCapita: 'XOF 57 per capita'
-    },
-    language: ['pt'],
-    coverage: 'national',
-    politicalStance: 'State-owned official organ',
-    format: 'tabloid',
-    circulation: '1,500 daily print',
-    readers: '20,000 readers',
-    digitalPresence: "Guinea-Bissau's official state printed newspaper.",
-    sources: [
-      { name: 'Ministério da Comunicação Social Guiné-Bissau', url: 'https://www.gov.gw/' },
-      { name: 'UNESCO West Africa Media', url: 'https://www.unesco.org/' }
-    ]
-  },
-  {
-    id: 'gw-jornal-o-democrata',
-    countryCode: 'gw',
-    name: 'O Democrata',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/gw/jornal-o-democrata.svg',
-    foundingYear: 2013,
-    headquarters: 'Bissau',
-    owner: 'Associação de Jornalistas da Guiné-Bissau',
-    language: ['pt'],
-    coverage: 'national',
-    politicalStance: 'Independent / Pro-democracy',
-    format: 'tabloid',
-    circulation: '2,000 weekly print',
-    readers: '90,000 monthly digital readers',
-    digitalPresence: "Guinea-Bissau's benchmark independent weekly paper odemocratagb.com.",
-    sources: [
-      { name: 'O Democrata Official Portal', url: 'https://www.odemocratagb.com/' },
-      { name: 'Sindicato de Jornalistas da Guiné-Bissau', url: 'https://rsf.org/' }
-    ]
-  },
-  {
-    id: 'gw-ang-agência-noticiosa-da-guiné',
-    countryCode: 'gw',
-    name: "ANG (Agência Noticiosa da Guiné)",
-    type: 'agency',
-    logoUrl: '/newspaper-logos/gw/ang-agência-noticiosa-da-guiné.svg',
-    foundingYear: 1975,
-    headquarters: 'Bissau',
-    owner: 'State of Guinea-Bissau (Public Agency)',
-    language: ['pt'],
-    coverage: 'national',
-    politicalStance: 'State-owned press agency',
-    format: 'digital',
-    readers: '120,000 monthly digital readers',
-    digitalPresence: 'Official national news press wire agency of Guinea-Bissau agencianoticiosadaguine.com.',
-    sources: [
-      { name: 'ANG Guiné-Bissau Agency Portal', url: 'https://agencianoticiosadaguine.com/' },
-      { name: 'Governo da Guiné-Bissau', url: 'https://www.gov.gw/' }
-    ]
-  },
-  {
-    id: 'gw-guinendade',
-    countryCode: 'gw',
-    name: 'Guinendade',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/gw/guinendade.svg',
-    foundingYear: 2015,
-    headquarters: 'Bissau',
-    owner: 'Guinendade Media Group',
-    language: ['pt'],
-    coverage: 'national',
-    politicalStance: 'Independent',
-    format: 'digital',
-    readers: '70,000 monthly digital readers',
-    digitalPresence: 'Digital news platform reporting on social, political, and cultural affairs.',
-    sources: [
-      { name: 'Guinendade News Portal', url: 'https://guinendade.com/' },
-      { name: 'RSF Press Freedom Guinea-Bissau', url: 'https://rsf.org/' }
-    ]
-  },
-  {
-    id: 'gw-bissau-weekly',
-    countryCode: 'gw',
-    name: 'Bissau Weekly',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/gw/bissau-weekly.svg',
-    foundingYear: 2018,
-    headquarters: 'Bissau',
-    owner: 'Bissau Media',
-    language: ['pt', 'en'],
-    coverage: 'national',
-    politicalStance: 'Independent',
-    format: 'digital',
-    readers: '40,000 monthly digital readers',
-    digitalPresence: 'Bilingual news site reporting on governance and economic integration.',
-    sources: [
-      { name: 'Bissau Weekly Site', url: 'https://bissauweekly.com/' },
-      { name: 'UNESCO Profile', url: 'https://www.unesco.org/' }
-    ]
-  },
-
-  // Guyana (gy)
-  {
-    id: 'gy-stabroek-news',
-    countryCode: 'gy',
-    name: 'Stabroek News',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/gy/stabroek-news.svg',
-    foundingYear: 1986,
-    headquarters: 'Georgetown',
-    owner: 'Guyana Publications Ltd (David de Caires estate)',
-    language: ['en'],
-    coverage: 'national',
-    politicalStance: 'Independent / Center-left',
-    format: 'tabloid',
-    circulation: '25,000 daily print',
-    readers: '1,200,000 monthly digital readers',
-    digitalPresence: "Guyana's leading independent newspaper of record stabroeknews.com.",
-    sources: [
-      { name: 'Stabroek News Official Portal', url: 'https://www.stabroeknews.com/' },
-      { name: 'Guyana Press Association (GPA)', url: 'https://guyana.gov.gy/' }
-    ]
-  },
-  {
-    id: 'gy-kaieteur-news',
-    countryCode: 'gy',
-    name: 'Kaieteur News',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/gy/kaieteur-news.svg',
-    foundingYear: 1994,
-    headquarters: 'Georgetown',
-    owner: 'National Media & Publishing Company (Glenn Lall)',
-    language: ['en'],
-    coverage: 'national',
-    politicalStance: 'Independent / Populist / Critical',
-    format: 'tabloid',
-    circulation: '30,000 daily print',
-    readers: '1,500,000 monthly digital readers',
-    digitalPresence: "Guyana's highest circulation daily printed newspaper kaieteurnewsonline.com.",
-    sources: [
-      { name: 'Kaieteur News Official Portal', url: 'https://www.kaieteurnewsonline.com/' },
-      { name: 'Guyana Press Association', url: 'https://guyana.gov.gy/' }
-    ]
-  },
-  {
-    id: 'gy-guyana-chronicle',
-    countryCode: 'gy',
-    name: 'Guyana Chronicle',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/gy/guyana-chronicle.svg',
-    foundingYear: 1881,
-    headquarters: 'Georgetown',
-    owner: 'Guyana National Newspaper Limited (State-owned)',
-    annualPublicFunding: {
-      total: 'GYD 450,000,000 ($2.1M USD state media allocation)',
-      perCapita: 'GYD 560 per capita'
-    },
-    language: ['en'],
-    coverage: 'national',
-    politicalStance: 'State-owned official organ',
-    format: 'tabloid',
-    circulation: '15,000 daily print',
-    readers: '600,000 monthly readers',
-    digitalPresence: "Guyana's state-owned daily newspaper guyanachronicle.com.",
-    sources: [
-      { name: 'Guyana Chronicle Official Portal', url: 'https://guyanachronicle.com/' },
-      { name: 'Department of Public Information Guyana', url: 'https://dpi.gov.gy/' }
-    ]
-  },
-  {
-    id: 'gy-news-room-guyana',
-    countryCode: 'gy',
-    name: 'News Room Guyana',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/gy/news-room-guyana.svg',
-    foundingYear: 2015,
-    headquarters: 'Georgetown',
-    owner: 'E-Networks Inc.',
-    language: ['en'],
-    coverage: 'national',
-    politicalStance: 'Independent / Digital-first',
-    format: 'digital',
-    readers: '2,100,000 monthly digital readers',
-    digitalPresence: "Guyana's premier digital-first news platform newsroom.gy.",
-    sources: [
-      { name: 'News Room Guyana Portal', url: 'https://newsroom.gy/' },
-      { name: 'Guyana Press Association', url: 'https://guyana.gov.gy/' }
-    ]
-  },
-  {
-    id: 'gy-demerara-waves',
-    countryCode: 'gy',
-    name: 'Demerara Waves',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/gy/demerara-waves.svg',
-    foundingYear: 2010,
-    headquarters: 'Georgetown',
-    owner: 'Denis Chabrol / Waves Media',
-    language: ['en'],
-    coverage: 'national',
-    politicalStance: 'Independent',
-    format: 'digital',
-    readers: '500,000 monthly digital readers',
-    digitalPresence: 'Major digital news portal and radio broadcast news provider demerarawaves.com.',
-    sources: [
-      { name: 'Demerara Waves Portal', url: 'https://demerarawaves.com/' },
-      { name: 'Guyana Press Association', url: 'https://guyana.gov.gy/' }
-    ]
-  },
-
-  // Haiti (ht)
-  {
-    id: 'ht-le-nouvelliste',
-    countryCode: 'ht',
-    name: 'Le Nouvelliste',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/ht/le-nouvelliste.svg',
-    foundingYear: 1898,
-    headquarters: 'Port-au-Prince',
-    owner: 'Le Nouvelliste S.A. (Chauvet Family)',
-    language: ['fr'],
-    coverage: 'national',
-    politicalStance: 'Center / Independent',
-    format: 'broadsheet',
-    circulation: '15,000 daily print',
-    readers: '1,800,000 monthly digital readers',
-    digitalPresence: "Haiti's oldest and primary daily newspaper of record lenouvelliste.com.",
-    sources: [
-      { name: 'Le Nouvelliste Official Portal', url: 'https://lenouvelliste.com/' },
-      { name: 'Association des Médias Indépendants d'Haïti (AMIH)', url: 'https://rsf.org/' }
-    ]
-  },
-  {
-    id: 'ht-haitilibre',
-    countryCode: 'ht',
-    name: 'HaitiLibre',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/ht/haitilibre.svg',
-    foundingYear: 2010,
-    headquarters: 'Port-au-Prince',
-    owner: 'HaitiLibre Media',
-    language: ['fr', 'en', 'ht'],
-    coverage: 'national',
-    politicalStance: 'Independent',
-    format: 'digital',
-    readers: '3,200,000 monthly digital readers',
-    digitalPresence: "Haiti's most trafficked digital news portal haitilibre.com.",
-    sources: [
-      { name: 'HaitiLibre Official Portal', url: 'https://www.haitilibre.com/' },
-      { name: 'AMIH Haiti', url: 'https://rsf.org/' }
-    ]
-  },
-  {
-    id: 'ht-le-matin',
-    countryCode: 'ht',
-    name: 'Le Matin',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/ht/le-matin.svg',
-    foundingYear: 1907,
-    headquarters: 'Port-au-Prince',
-    owner: 'Imprimerie Le Matin',
-    language: ['fr'],
-    coverage: 'national',
-    politicalStance: 'Center-right / Independent',
-    format: 'broadsheet',
-    circulation: '8,000 print daily',
-    readers: '400,000 monthly readers',
-    digitalPresence: 'Historic Haitian daily newspaper.',
-    sources: [
-      { name: 'Le Matin Haiti Archives', url: 'https://lenouvelliste.com/' },
-      { name: 'UNESCO Media Haiti Profile', url: 'https://www.unesco.org/' }
-    ]
-  },
-  {
-    id: 'ht-haiti-24',
-    countryCode: 'ht',
-    name: 'Haiti 24',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/ht/haiti-24.svg',
-    foundingYear: 2017,
-    headquarters: 'Port-au-Prince',
-    owner: 'Haiti 24 Media',
-    language: ['fr'],
-    coverage: 'national',
-    politicalStance: 'Independent',
-    format: 'digital',
-    readers: '1,500,000 monthly digital readers',
-    digitalPresence: 'Popular digital news site covering political security and diaspora affairs haiti24.net.',
-    sources: [
-      { name: 'Haiti 24 Official Portal', url: 'https://haiti24.net/' },
-      { name: 'AMIH Haiti', url: 'https://rsf.org/' }
-    ]
-  },
-  {
-    id: 'ht-alterpresse',
-    countryCode: 'ht',
-    name: 'AlterPresse',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/ht/alterpresse.svg',
-    foundingYear: 2001,
-    headquarters: 'Port-au-Prince',
-    owner: 'Groupe Medialternatif',
-    language: ['fr', 'ht'],
-    coverage: 'national',
-    politicalStance: 'Independent / Human rights focus',
-    format: 'digital',
-    readers: '600,000 monthly digital readers',
-    digitalPresence: 'Independent non-profit agency site specializing in human rights alterpresse.org.',
-    sources: [
-      { name: 'AlterPresse Official Portal', url: 'https://www.alterpresse.org/' },
-      { name: 'Groupe Medialternatif', url: 'https://www.alterpresse.org/' }
-    ]
-  },
-
-  // Honduras (hn)
-  {
-    id: 'hn-la-prensa',
-    countryCode: 'hn',
-    name: 'La Prensa',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/hn/la-prensa.svg',
-    foundingYear: 1964,
-    headquarters: 'San Pedro Sula',
-    owner: 'Grupo OPSA (Canahuati Family)',
-    language: ['es'],
-    coverage: 'national',
-    politicalStance: 'Center-right / Conservative',
-    format: 'tabloid',
-    circulation: '85,000 daily print',
-    readers: '5,500,000 monthly digital readers',
-    digitalPresence: "Honduras' highest circulation daily newspaper of record and top portal laprensa.hn.",
-    sources: [
-      { name: 'La Prensa Honduras Portal', url: 'https://www.laprensa.hn/' },
-      { name: 'Grupo OPSA Corporate', url: 'https://www.grupoopsa.com/' }
-    ]
-  },
-  {
-    id: 'hn-el-heraldo',
-    countryCode: 'hn',
-    name: 'El Heraldo',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/hn/el-heraldo.svg',
-    foundingYear: 1979,
-    headquarters: 'Tegucigalpa',
-    owner: 'Grupo OPSA',
-    language: ['es'],
-    coverage: 'national',
-    politicalStance: 'Center-right / Conservative',
-    format: 'tabloid',
-    circulation: '65,000 daily print',
-    readers: '4,200,000 monthly digital readers',
-    digitalPresence: 'Tegucigalpa flagship daily newspaper elheraldo.hn.',
-    sources: [
-      { name: 'El Heraldo Official Site', url: 'https://www.elheraldo.hn/' },
-      { name: 'Grupo OPSA', url: 'https://www.grupoopsa.com/' }
-    ]
-  },
-  {
-    id: 'hn-diario-tiempo',
-    countryCode: 'hn',
-    name: 'Diario Tiempo',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/hn/diario-tiempo.svg',
-    foundingYear: 1970,
-    headquarters: 'San Pedro Sula',
-    owner: 'Editorial Honduras S.A. (Rosenthal Family)',
-    language: ['es'],
-    coverage: 'national',
-    politicalStance: 'Center-left / Liberal',
-    format: 'digital',
-    readers: '3,100,000 monthly digital readers',
-    digitalPresence: 'Pioneering daily print newspaper transitioned to digital portal tiempo.hn.',
-    sources: [
-      { name: 'Diario Tiempo Official Portal', url: 'https://tiempo.hn/' },
-      { name: 'Media Ownership Monitor Honduras', url: 'https://honduras.mom-gmr.org/' }
-    ]
-  },
-  {
-    id: 'hn-la-tribuna',
-    countryCode: 'hn',
-    name: 'La Tribuna',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/hn/la-tribuna.svg',
-    foundingYear: 1976,
-    headquarters: 'Tegucigalpa',
-    owner: 'Periódicos y Revistas S.A. (Carlos Flores Facussé)',
-    language: ['es'],
-    coverage: 'national',
-    politicalStance: 'Center-left / Liberal Party',
-    format: 'tabloid',
-    circulation: '50,000 daily print',
-    readers: '2,500,000 monthly readers',
-    digitalPresence: 'Major daily print paper and online news site latribuna.hn.',
-    sources: [
-      { name: 'La Tribuna Official Site', url: 'https://www.latribuna.hn/' },
-      { name: 'Colegio de Periodistas de Honduras (CPH)', url: 'https://cph.hn/' }
-    ]
-  },
-  {
-    id: 'hn-criterio-hn',
-    countryCode: 'hn',
-    name: 'Criterio.hn',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/hn/criterio-hn.svg',
-    foundingYear: 2015,
-    headquarters: 'Tegucigalpa',
-    owner: 'Criterio Media (Emy Padilla)',
-    language: ['es'],
-    coverage: 'national',
-    politicalStance: 'Independent / Investigative / Human rights',
-    format: 'digital',
-    readers: '800,000 monthly digital readers',
-    digitalPresence: 'Renowned digital investigative journalism outlet criterio.hn.',
-    sources: [
-      { name: 'Criterio.hn Official Portal', url: 'https://criterio.hn/' },
-      { name: 'CPH Press Freedom Report', url: 'https://cph.hn/' }
-    ]
-  },
-
-  // Hungary (hu)
-  {
-    id: 'hu-magyar-nemzet',
-    countryCode: 'hu',
-    name: 'Magyar Nemzet',
-    englishTranslation: 'Hungarian Nation',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/hu/magyar-nemzet.svg',
-    foundingYear: 1938,
-    headquarters: 'Budapest',
-    owner: 'KESMA (Central European Press and Media Foundation)',
-    annualPublicFunding: {
-      total: 'HUF 8,500,000,000 ($23M USD state advertising allocation)',
-      perCapita: 'HUF 876 per capita'
-    },
-    language: ['hu'],
-    coverage: 'national',
-    politicalStance: 'Right-wing / Fidesz Pro-government',
-    format: 'broadsheet',
-    circulation: '14,000 daily print',
-    readers: '1,500,000 monthly digital readers',
-    digitalPresence: 'Pro-government national daily newspaper magyarnemzet.hu under KESMA foundation.',
-    sources: [
-      { name: 'Magyar Nemzet Official Site', url: 'https://magyarnemzet.hu/' },
-      { name: 'KESMA Foundation Overview', url: 'https://kesma.hu/' }
-    ]
-  },
-  {
-    id: 'hu-népszava',
-    countryCode: 'hu',
-    name: 'Népszava',
-    englishTranslation: 'People's Voice',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/hu/népszava.svg',
-    foundingYear: 1877,
-    headquarters: 'Budapest',
-    owner: 'XXI. Század Média Kft. (Tamás Leisztinger)',
-    language: ['hu'],
-    coverage: 'national',
-    politicalStance: 'Left-wing / Social Democratic Opposition',
-    format: 'broadsheet',
-    circulation: '15,000 daily print',
-    readers: '1,200,000 monthly digital readers',
-    digitalPresence: "Hungary's last surviving printed daily opposition newspaper nepszava.hu.",
-    sources: [
-      { name: 'Népszava Official Portal', url: 'https://nepszava.hu/' },
-      { name: 'MUKOSZ Hungarian Press Union', url: 'https://muosz.hu/' }
-    ]
-  },
-  {
-    id: 'hu-hvg',
-    countryCode: 'hu',
-    name: 'HVG (Heti Világgazdaság)',
-    englishTranslation: 'Weekly World Economy',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/hu/hvg.svg',
-    foundingYear: 1979,
-    headquarters: 'Budapest',
-    owner: 'HVG Kiadó Zrt.',
-    language: ['hu'],
-    coverage: 'national',
-    politicalStance: 'Center-left / Liberal / Financial',
-    format: 'tabloid',
-    circulation: '32,000 weekly print',
-    readers: '4,500,000 monthly digital readers',
-    digitalPresence: 'Premier independent economic and political news magazine and portal hvg.hu.',
-    sources: [
-      { name: 'HVG Official Portal', url: 'https://hvg.hu/' },
-      { name: 'HVG Kiadó Zrt. Corporate', url: 'https://hvg.hu/' }
-    ]
-  },
-  {
-    id: 'hu-blikk',
-    countryCode: 'hu',
-    name: 'Blikk',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/hu/blikk.svg',
-    foundingYear: 1994,
-    headquarters: 'Budapest',
-    owner: 'Ringier Hungary',
-    language: ['hu'],
-    coverage: 'national',
-    politicalStance: 'Popular interest / Tabloid',
-    format: 'tabloid',
-    circulation: '45,000 daily print',
-    readers: '3,800,000 monthly digital readers',
-    digitalPresence: "Hungary's highest circulation printed daily tabloid newspaper blikk.hu.",
-    sources: [
-      { name: 'Ringier Hungary Corporate', url: 'https://www.ringier.hu/' },
-      { name: 'Blikk Official Site', url: 'https://www.blikk.hu/' }
-    ]
-  },
-  {
-    id: 'hu-telex',
-    countryCode: 'hu',
-    name: 'Telex',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/hu/telex.svg',
-    foundingYear: 2020,
-    headquarters: 'Budapest',
-    owner: 'Van Másik Zrt. (Journalist-owned Foundation)',
-    language: ['hu', 'en'],
-    coverage: 'national',
-    politicalStance: 'Independent / Crowdfunded',
-    format: 'digital',
-    readers: '5,200,000 monthly digital readers',
-    digitalPresence: "Hungary's premier independent crowdfunded digital news portal telex.hu created by former Index.hu staff.",
-    sources: [
-      { name: 'Telex Official Portal', url: 'https://telex.hu/' },
-      { name: 'International Press Institute Hungary Report', url: 'https://ipi.media/' }
-    ]
-  },
-
-  // Iceland (is)
-  {
-    id: 'is-morgunblaðið',
-    countryCode: 'is',
-    name: 'Morgunblaðið',
-    englishTranslation: 'Morning Paper',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/is/morgunblaðið.svg',
-    foundingYear: 1913,
-    headquarters: 'Reykjavík',
-    owner: 'Árvakur hf. (Davíð Oddsson / Þorsteinn Már Baldvinsson)',
-    language: ['is'],
-    coverage: 'national',
-    politicalStance: 'Center-right / Independence Party',
-    format: 'tabloid',
-    circulation: '22,000 daily print',
-    readers: '180,000 monthly digital readers',
-    digitalPresence: "Iceland's primary subscription daily newspaper of record and top portal mbl.is.",
-    sources: [
-      { name: 'Árvakur hf. Corporate', url: 'https://www.mbl.is/' },
-      { name: 'Morgunblaðið Official Site', url: 'https://www.mbl.is/mm/morgunbladid/' }
-    ]
-  },
-  {
-    id: 'is-fréttablaðið',
-    countryCode: 'is',
-    name: 'Fréttablaðið',
-    englishTranslation: 'The News Paper',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/is/fréttablaðið.svg',
-    foundingYear: 2001,
-    headquarters: 'Reykjavík',
-    owner: 'Torg ehf. (Helgi Magnússon)',
-    language: ['is'],
-    coverage: 'national',
-    politicalStance: 'Center / Liberal',
-    format: 'tabloid',
-    circulation: '70,000 daily (former free distribution paper)',
-    readers: '220,000 readers',
-    digitalPresence: 'Historic free daily printed paper in Iceland.',
-    sources: [
-      { name: 'National Library of Iceland Archives', url: 'https://timarit.is/' },
-      { name: 'Icelandic Press Association', url: 'https://press.is/' }
-    ]
-  },
-  {
-    id: 'is-vísir',
-    countryCode: 'is',
-    name: 'Vísir',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/is/vísir.svg',
-    foundingYear: 1998,
-    headquarters: 'Reykjavík',
-    owner: 'Sýn hf.',
-    language: ['is'],
-    coverage: 'national',
-    politicalStance: 'Independent',
-    format: 'digital',
-    readers: '250,000 monthly digital readers',
-    digitalPresence: "Iceland's most visited digital-first daily news website visir.is.",
-    sources: [
-      { name: 'Vísir Official Portal', url: 'https://www.visir.is/' },
-      { name: 'Sýn hf. Corporate', url: 'https://syn.is/' }
-    ]
-  },
-  {
-    id: 'is-heimildin',
-    countryCode: 'is',
-    name: 'Heimildin',
-    englishTranslation: 'The Source',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/is/heimildin.svg',
-    foundingYear: 2023,
-    headquarters: 'Reykjavík',
-    owner: 'Heimildin ehf. (Merging Stundin & Kjarninn)',
-    language: ['is'],
-    coverage: 'national',
-    politicalStance: 'Independent / Investigative / Left-liberal',
-    format: 'tabloid',
-    circulation: '6,000 bi-weekly print',
-    readers: '110,000 monthly digital readers',
-    digitalPresence: 'Premier independent investigative bi-weekly paper and digital portal heimildin.is.',
-    sources: [
-      { name: 'Heimildin Official Portal', url: 'https://heimildin.is/' },
-      { name: 'Icelandic Union of Journalists', url: 'https://press.is/' }
-    ]
-  },
-  {
-    id: 'is-kjarninn',
-    countryCode: 'is',
-    name: 'Kjarninn',
-    englishTranslation: 'The Core',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/is/kjarninn.svg',
-    foundingYear: 2013,
-    headquarters: 'Reykjavík',
-    owner: 'Kjarninn Miðlar ehf.',
-    language: ['is'],
-    coverage: 'national',
-    politicalStance: 'Center-left / Analytical',
-    format: 'digital',
-    readers: '80,000 monthly digital readers',
-    digitalPresence: 'Digital news site merged into Heimildin in 2023.',
-    sources: [
-      { name: 'Kjarninn Archives', url: 'https://kjarninn.is/' },
-      { name: 'Press Association Iceland', url: 'https://press.is/' }
-    ]
-  },
-
-  // India (in)
-  {
-    id: 'in-the-times-of-india',
-    countryCode: 'in',
-    name: 'The Times of India (TOI)',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/in/the-times-of-india.svg',
-    foundingYear: 1838,
-    headquarters: 'New Delhi',
-    owner: 'Bennett, Coleman & Co. Ltd. (The Times Group / Jain Family)',
-    language: ['en'],
-    coverage: 'national',
-    politicalStance: 'Center-right / Pro-business',
-    format: 'broadsheet',
-    circulation: '2,600,000 daily print',
-    readers: '15,000,000 print & 120,000,000 digital monthly readers',
-    digitalPresence: "World's largest circulation English-language daily broadsheet newspaper timesofindia.indiatimes.com.",
-    sources: [
-      { name: 'The Times Group Corporate', url: 'https://timesofindia.indiatimes.com/' },
-      { name: 'Audit Bureau of Circulations (ABC India)', url: 'http://www.auditbureau.org/' }
-    ]
-  },
-  {
-    id: 'in-the-hindu',
-    countryCode: 'in',
-    name: 'The Hindu',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/in/the-hindu.svg',
-    foundingYear: 1878,
-    headquarters: 'Chennai, Tamil Nadu',
-    owner: 'THG Publishing Private Ltd (Kasturi & Sons Family)',
-    language: ['en'],
-    coverage: 'national',
-    politicalStance: 'Center-left / Independent',
-    format: 'broadsheet',
-    circulation: '1,400,000 daily print',
-    readers: '6,000,000 print & 45,000,000 digital monthly readers',
-    digitalPresence: "India's benchmark quality English daily newspaper of record thehindu.com.",
-    sources: [
-      { name: 'The Hindu Official Portal', url: 'https://www.thehindu.com/' },
-      { name: 'ABC India Audit', url: 'http://www.auditbureau.org/' }
-    ]
-  },
-  {
-    id: 'in-dainik-jagran',
-    countryCode: 'in',
-    name: 'Dainik Jagran (दैनिक जागरण)',
-    englishTranslation: 'Daily Awakening',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/in/dainik-jagran.svg',
-    foundingYear: 1942,
-    headquarters: 'Kanpur, Uttar Pradesh',
-    owner: 'Jagran Prakashan Limited (Gupta Family)',
-    language: ['hi'],
-    coverage: 'national',
-    politicalStance: 'Right-wing / Conservative',
-    format: 'broadsheet',
-    circulation: '3,600,000 daily print',
-    readers: '68,000,000 multiplatform readers',
-    digitalPresence: "India's largest read Hindi-language daily broadsheet newspaper jagran.com.",
-    sources: [
-      { name: 'Jagran Prakashan Corporate', url: 'https://jplcorp.in/' },
-      { name: 'Indian Readership Survey (IRS)', url: 'mrmuc.org' }
-    ]
-  },
-  {
-    id: 'in-hindustan-times',
-    countryCode: 'in',
-    name: 'Hindustan Times (HT)',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/in/hindustan-times.svg',
-    foundingYear: 1924,
-    headquarters: 'New Delhi',
-    owner: 'HT Media Ltd (Birla Family)',
-    language: ['en'],
-    coverage: 'national',
-    politicalStance: 'Center-right / Independent',
-    format: 'broadsheet',
-    circulation: '1,000,000 daily print',
-    readers: '8,000,000 print & 50,000,000 digital monthly readers',
-    digitalPresence: 'Major Indian English-language broadsheet daily newspaper hindustantimes.com.',
-    sources: [
-      { name: 'Hindustan Times Official Site', url: 'https://www.hindustantimes.com/' },
-      { name: 'HT Media Corporate', url: 'https://www.htmedia.in/' }
-    ]
-  },
-  {
-    id: 'in-the-indian-express',
-    countryCode: 'in',
-    name: 'The Indian Express',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/in/the-indian-express.svg',
-    foundingYear: 1932,
-    headquarters: 'Noida, Uttar Pradesh',
-    owner: 'The Indian Express Group (Goenka Family)',
-    language: ['en'],
-    coverage: 'national',
-    politicalStance: 'Center-left / Investigative',
-    format: 'broadsheet',
-    circulation: '500,000 daily print',
-    readers: '35,000,000 monthly digital readers',
-    digitalPresence: "India's premier investigative English broadsheet daily indianexpress.com.",
-    sources: [
-      { name: 'The Indian Express Official Site', url: 'https://indianexpress.com/' },
-      { name: 'ABC India Audit', url: 'http://www.auditbureau.org/' }
-    ]
-  },
-
-  // Indonesia (id)
-  {
-    id: 'id-kompas',
-    countryCode: 'id',
-    name: 'Kompas',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/id/kompas.svg',
-    foundingYear: 1965,
-    headquarters: 'Jakarta',
-    owner: 'KG Media (Kompas Gramedia Group)',
-    language: ['id'],
-    coverage: 'national',
-    politicalStance: 'Center / Nationalist / Independent',
-    format: 'broadsheet',
-    circulation: '450,000 daily print',
-    readers: '50,000,000 monthly digital readers',
-    digitalPresence: "Indonesia's newspaper of record and top digital news portal kompas.com.",
-    sources: [
-      { name: 'Kompas Gramedia Group', url: 'https://www.kompasgramedia.com/' },
-      { name: 'Kompas.com Official Portal', url: 'https://www.kompas.com/' }
-    ]
-  },
-  {
-    id: 'id-koran-tempo',
-    countryCode: 'id',
-    name: 'Koran Tempo',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/id/koran-tempo.svg',
-    foundingYear: 2001,
-    headquarters: 'Jakarta',
-    owner: 'PT Tempo Inti Media Tbk',
-    language: ['id'],
-    coverage: 'national',
-    politicalStance: 'Center-left / Investigative / Liberal',
-    format: 'digital',
-    readers: '15,000,000 monthly digital readers',
-    digitalPresence: 'Renowned Indonesian independent investigative publication daily koran.tempo.co.',
-    sources: [
-      { name: 'Tempo Media Group Corporate', url: 'https://corporate.tempo.co/' },
-      { name: 'Koran Tempo Digital Portal', url: 'https://koran.tempo.co/' }
-    ]
-  },
-  {
-    id: 'id-jawa-pos',
-    countryCode: 'id',
-    name: 'Jawa Pos',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/id/jawa-pos.svg',
-    foundingYear: 1949,
-    headquarters: 'Surabaya, East Java',
-    owner: 'Jawa Pos Group (Dahlan Iskan / Eric Samola estate)',
-    language: ['id'],
-    coverage: 'national',
-    politicalStance: 'Center-right / Regional focus',
-    format: 'broadsheet',
-    circulation: '400,000 daily print',
-    readers: '20,000,000 monthly readers',
-    digitalPresence: 'Dominant East Java broadsheet daily and nationwide news group jawapos.com.',
-    sources: [
-      { name: 'Jawa Pos Official Portal', url: 'https://www.jawapos.com/' },
-      { name: 'Dewan Pers Indonesia', url: 'https://dewanpers.or.id/' }
-    ]
-  },
-  {
-    id: 'id-detikcom',
-    countryCode: 'id',
-    name: 'detikcom',
-    type: 'digital',
-    logoUrl: '/newspaper-logos/id/detikcom.svg',
-    foundingYear: 1998,
-    headquarters: 'Jakarta',
-    owner: 'Trans Media (CT Corp / Chairul Tanjung)',
-    language: ['id'],
-    coverage: 'national',
-    politicalStance: 'Independent / Breaking News',
-    format: 'digital',
-    readers: '80,000,000 monthly digital readers',
-    digitalPresence: "Indonesia's pioneer breaking news portal and highest trafficked digital news site detik.com.",
-    sources: [
-      { name: 'detikcom Official Portal', url: 'https://www.detik.com/' },
-      { name: 'CT Corp Media Division', url: 'https://www.ctcorporation.com/' }
-    ]
-  },
-  {
-    id: 'id-the-jakarta-post',
-    countryCode: 'id',
-    name: 'The Jakarta Post',
-    type: 'newspaper',
-    logoUrl: '/newspaper-logos/id/the-jakarta-post.svg',
-    foundingYear: 1983,
-    headquarters: 'Jakarta',
-    owner: 'PT Bina Media Tenggara (Kompas Gramedia / Suara Pembaruan consortium)',
-    language: ['en'],
-    coverage: 'national',
-    politicalStance: 'Center-left / Liberal',
-    format: 'broadsheet',
-    circulation: '40,000 daily print',
-    readers: '6,000,000 monthly digital readers',
-    digitalPresence: "Indonesia's premier daily English-language newspaper and digital portal thejakartapost.com.",
-    sources: [
-      { name: 'The Jakarta Post Official Portal', url: 'https://www.thejakartapost.com/' },
-      { name: 'Dewan Pers Indonesia Press Council', url: 'https://dewanpers.or.id/' }
-    ]
-  }
-
-];
