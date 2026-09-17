@@ -78,8 +78,10 @@ export type FlagGridProps = {
    *  specific tourism logo; `olympicCommitteeId` is the specific National
    *  Olympic Committee (a non-UN IOC member entity — Chinese Taipei, Hong
    *  Kong, … — passes its own id here, distinct from the parent country's
-   *  own NOC, exactly like `crestId` for a FIFA entity). */
-  onSelect: (id: string, crestId?: string, airlineId?: string, broadcasterId?: string, tourismLogoId?: string, olympicCommitteeId?: string) => void;
+   *  own NOC, exactly like `crestId` for a FIFA entity); `worldMapCode` is
+   *  that entity's own ISO alpha-2 code (or "XK"), for highlighting its own
+   *  borders on the world map instead of its parent's. */
+  onSelect: (id: string, crestId?: string, airlineId?: string, broadcasterId?: string, tourismLogoId?: string, olympicCommitteeId?: string, worldMapCode?: string) => void;
   /** Optional resolver to prepend the BASE_URL to relative flag paths so
    *  the grid can render flags identically to the panel. */
   resolveFlag: (raw: string) => string;
@@ -368,6 +370,7 @@ export function FlagGrid({
           continent: x.continent,
           subcontinent: x.subcontinent,
           selectId: x.parent || undefined,
+          worldMapCode: x.code,
         });
       }
       return iocOut;
@@ -410,6 +413,7 @@ export function FlagGrid({
         continent: x.continent,
         subcontinent: x.subcontinent,
         selectId: x.parent || undefined,
+        worldMapCode: x.code,
       });
     }
     return out;
@@ -793,6 +797,10 @@ export function FlagGrid({
                         // `{code}-olympic-committee` id — pass it so the panel
                         // shows that entity's own NOC, not the parent country's.
                         item.id.endsWith("-olympic-committee") ? item.id : undefined,
+                        // The entity's own world-map code (set only for a
+                        // FIFA_EXTRA / IOC_EXTRA card) — so the map highlights
+                        // its own borders, not its parent's.
+                        item.worldMapCode,
                       )
                     }
                     aria-pressed={active}

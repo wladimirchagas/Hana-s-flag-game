@@ -76,6 +76,13 @@ export type IocExtraLogo = {
   readonly id: string;
   readonly name: string;
   readonly path: string;
+  /** The entity's OWN ISO 3166-1 alpha-2 code (or "XK" for Kosovo) — its own
+   *  polygon on the world map, distinct from its parent's. Used so selecting
+   *  this card highlights the entity's own borders, never its parent
+   *  country's (CLAUDE.md, "The map's highlight and the detail panel must
+   *  always be the same entity" — the entity here is the NOC's own owner,
+   *  not the administering country). */
+  readonly code: string;
   /** Parent country code to select on click, or "" for none. */
   readonly parent: string;
   readonly continent: string;
@@ -101,6 +108,7 @@ export function iocExtraLogos(): IocExtraLogo[] {
       id: logo.id,
       name: e.name,
       path: logo.path,
+      code: e.code,
       parent: e.parent,
       continent: e.continent,
       subcontinent: e.subcontinent,

@@ -381,12 +381,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // NOT a plain country — a UK home nation, or a FIFA-member entity. Keyed with
   // its parent country so the panel shows that crest only while the parent stays
   // selected, then self-clears when the user navigates to another country.
-  const [gridCrest, setGridCrest] = useState<{ id: string; parent: string } | null>(null);
+  const [gridCrest, setGridCrest] = useState<{ id: string; parent: string; worldCode?: string } | null>(null);
   // The specific National Olympic Committee clicked in the grid — a non-UN IOC
   // member entity (Chinese Taipei, Hong Kong, …), not a plain country. Keyed
   // with its parent country exactly like gridCrest, so the panel shows that
   // entity's own NOC only while the parent stays selected.
-  const [gridOlympicCommittee, setGridOlympicCommittee] = useState<{ id: string; parent: string } | null>(null);
+  const [gridOlympicCommittee, setGridOlympicCommittee] = useState<{ id: string; parent: string; worldCode?: string } | null>(null);
   // The specific commercial airline clicked in the grid.
   const [gridAirlineId, setGridAirlineId] = useState<string | null>(null);
   // An airline picked in the "National symbols" tab of subdivision view.
@@ -663,12 +663,28 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const display = selected ?? hovered;
 
   // Territories of the currently-displayed country — used to co-highlight
-  // their geometries on the world map alongside the parent country.
+  // their geometries on the world map alongside the parent country. Suppressed
+  // while a FIFA_EXTRA / IOC_EXTRA entity's own crest/NOC with its own distinct
+  // world-map polygon is active (see mapHighlightCode below): the map is then
+  // highlighting that ONE entity specifically, and also lighting up its
+  // siblings (e.g. Macau alongside a selected Hong Kong) would misleadingly
+  // suggest they're part of the same selection too.
   const territoryHighlightCodes = useMemo(() => {
     if (!display || display.kind !== "modern") return null;
+    const activeEntityWorldCode =
+      (gridCrest &&
+        gridContentType === "footballcrest" &&
+        display.country.code === gridCrest.parent &&
+        gridCrest.worldCode) ||
+      (gridOlympicCommittee &&
+        gridContentType === "olympiccommittee" &&
+        display.country.code === gridOlympicCommittee.parent &&
+        gridOlympicCommittee.worldCode) ||
+      null;
+    if (activeEntityWorldCode) return null;
     const territories = PARENT_TERRITORIES[display.country.code];
     return territories?.length ? new Set(territories) : null;
-  }, [display]);
+  }, [display, gridCrest, gridOlympicCommittee, gridContentType]);
 
   function exitSubdivisionMode() {
     setSubdivisionMode(false);
@@ -1381,6 +1397,19 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       effectiveGridContentType === "olympiccommittee")
       ? nationalSymbolEntry(display.country.code, effectiveGridContentType)
       : null);
+  // The ISO alpha-2 (or "XK") code whose OWN borders the world map must
+  // highlight. Normally that's just the selected country — but while a
+  // FIFA_EXTRA / IOC_EXTRA card's own crest/NOC is active (activeGridCrest /
+  // activeGridOlympicCommittee), the panel is describing THAT entity, not its
+  // parent, so the map must follow it there too (CLAUDE.md, "The map's
+  // highlight and the detail panel must always be the same entity" — the
+  // entity is whichever one panelSymbol actually describes). Falls back to
+  // the parent's own code when the entity has no distinct world-map polygon
+  // of its own (a UK home-nation crest, which shares GB's single polygon).
+  const mapHighlightCode =
+    (activeGridCrest && gridCrest?.worldCode) ||
+    (activeGridOlympicCommittee && gridOlympicCommittee?.worldCode) ||
+    (display?.kind === "modern" ? display.country.code : null);
   // A selected symbol that genuinely has NO entity to picture (Vatican City has
   // no National Olympic Committee at all) must show its sourced explanation, not
   // silently fall back to the country's flag — that would misreport a country
@@ -1561,7 +1590,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         ? display.name
         : null;
 
-  function handleGridSelect(id: string, crestId?: string, airlineId?: string, broadcasterId?: string, tourismLogoId?: string, olympicCommitteeId?: string) {
+  function handleGridSelect(id: string, crestId?: string, airlineId?: string, broadcasterId?: string, tourismLogoId?: string, olympicCommitteeId?: string, worldMapCode?: string) {
     if (isModernEra) {
       // `id` is always the entity's own country code (an airline/broadcaster tile's
       // `selectId` is set to its parent country — see FlagGrid). Select that country
@@ -1584,11 +1613,13 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       // click no longer gets its own gridCrest wiped out by this same call, which
       // is why a home-nation crest never stuck before this fix.
       setGridCrest(
-        crestId && gridContentType === "footballcrest" ? { id: crestId, parent: c.code } : null,
+        crestId && gridContentType === "footballcrest"
+          ? { id: crestId, parent: c.code, worldCode: worldMapCode }
+          : null,
       );
       setGridOlympicCommittee(
         olympicCommitteeId && gridContentType === "olympiccommittee"
-          ? { id: olympicCommitteeId, parent: c.code }
+          ? { id: olympicCommitteeId, parent: c.code, worldCode: worldMapCode }
           : null,
       );
       setGridAirlineId(airlineId ?? null);
@@ -1760,9 +1791,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         ) : isModernEra ? (
           <WorldProgressMap
             countryResults={{}}
-            selectedCode={
-              display?.kind === "modern" ? display.country.code : null
-            }
+            selectedCode={mapHighlightCode}
             disabled={countries.length === 0}
             selectable={{
               codes,

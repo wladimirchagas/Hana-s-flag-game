@@ -79,6 +79,16 @@ export type FlagListEntry = {
    * while `id` stays unique per card for React keys and highlighting.
    */
   readonly selectId?: string;
+  /**
+   * The card's OWN ISO 3166-1 alpha-2 code (or "XK" for Kosovo) on the world
+   * map — set only for a non-UN entity card (FIFA_EXTRA / IOC_EXTRA), whose
+   * `selectId` points at its administering/recognising PARENT for panel
+   * purposes but whose own borders are a distinct polygon. Selecting such a
+   * card must highlight THIS code on the map, never the parent's — see
+   * CLAUDE.md, "The map's highlight and the detail panel must always be the
+   * same entity".
+   */
+  readonly worldMapCode?: string;
 };
 
 /**
