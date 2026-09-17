@@ -3355,4 +3355,118 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  CM: [
+    {
+      id: "cm-mintoul",
+      countryCode: "CM",
+      name: "Ministry of Tourism and Leisure",
+      agency: "Ministry of Tourism and Leisure (MINTOUL), Cameroon",
+      visitors: {
+        count: 1021000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Cameroon)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Cameroon, Category:Logos of Cameroon) — no freely-licensed copy of MINTOUL's own logo could be found. The only \"Ministry of Tourism\" file this search surfaced (\"Ministry of Tourism and Antiquities logo.png\") is the SAME Egyptian ministry file that has repeatedly, wrongly resurfaced for Zambia/Tanzania/Myanmar earlier in this sweep — it is Egypt's file, not Cameroon's, and was not used.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Cameroon", "https://mintoul.gov.cm/en/the-ministry/"],
+    },
+  ],
+  CD: [
+    {
+      id: "cd-tourism",
+      countryCode: "CD",
+      name: "Tourism in the Democratic Republic of the Congo",
+      agency: "Ministry of Tourism, Democratic Republic of the Congo",
+      visitors: {
+        count: 351000,
+        year: 2016,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Democratic Republic of the Congo)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in the Democratic Republic of the Congo) — no freely-licensed national tourism-board logo could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Democratic_Republic_of_the_Congo"],
+    },
+  ],
+  CG: [
+    {
+      id: "cg-tourism",
+      countryCode: "CG",
+      name: "Tourism in the Republic of the Congo",
+      agency: "Ministry of Tourism and Environment, Republic of the Congo",
+      visitors: {
+        count: 158000,
+        year: 2018,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Republic of the Congo)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and Wikipedia for a Republic of the Congo national tourism-board name and logo — no dedicated tourism-promotion brand or freely-licensed logo could be found.",
+      sources: ["https://republic-congo.com/en/tourism/"],
+    },
+  ],
+  GA: [
+    {
+      id: "ga-agatour",
+      countryCode: "GA",
+      name: "AGATOUR",
+      agency: "Agence Gabonaise de Développement et de Promotion du Tourisme et de l'Hôtellerie (AGATOUR)",
+      launched: 2014,
+      visitors: {
+        count: 526000,
+        year: 2005,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Gabon; this is an older figure, no newer one is published)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for AGATOUR (Gabon's national tourism development and promotion agency, established 2014) — no freely-licensed copy of its logo could be found.",
+      sources: ["https://fr.wikipedia.org/wiki/Tourisme_au_Gabon", "https://www.tourisme.gouv.ga/"],
+    },
+  ],
+  GM: [
+    {
+      id: "gm-gambia-tourism-board",
+      countryCode: "GM",
+      name: "Gambia Tourism Board",
+      slogan: "The Smiling Coast of Africa",
+      agency: "Gambia Tourism Board",
+      visitors: {
+        count: 246000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Gambia)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in the Gambia, Category:Logos of Gambia — neither holds a matching file) — no freely-licensed copy of the Gambia Tourism Board's current logo could be found. A 2016-era rebrand (\"Go, Discover the Cheerful Coast\", unveiled under a since-departed administration) is documented but its own logo image is not accessible either, and using it would risk showing a superseded mark as current.",
+      sources: [
+        "https://theculturetrip.com/africa/the-gambia/articles/why-the-gambia-is-known-as-the-smiling-coast",
+        "https://www.africatouroperators.org/gambia/president-gambia-tourism-logo/",
+      ],
+    },
+  ],
+  GN: [
+    {
+      id: "gn-ont-guinee",
+      countryCode: "GN",
+      name: "Office National du Tourisme",
+      agency: "Office National du Tourisme de Guinée (ONT)",
+      launched: 1997,
+      visitors: {
+        count: 99000,
+        year: 2017,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Guinea)",
+      },
+      logo: "/tourism-logos/gn/logo-ont.jpg",
+      logoExplainer:
+        "A colourful bird/dove silhouette mark, filled with warm red/orange/yellow/green tones, beside the wordmark \"Office National du Tourisme\" — the logo of Guinea's national tourism office, established 1997.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Logo_ONT.jpg",
+        "https://fr.wikipedia.org/wiki/Office_national_du_tourisme_de_Guin%C3%A9e",
+      ],
+      licenceNote:
+        "Public domain per its Commons file page — dedicated to the public domain (CC0) by the uploader, categorised under \"Office national du tourisme de Guinée\" and used as the logo in that organisation's own French Wikipedia infobox. Bundled here as a small (120px) thumbnail export because upload.wikimedia.org rejected this session's request for the full-resolution original and intermediate thumbnail widths with a rate-limit error, accepting only sizes at or below a small rendered width.",
+    },
+  ],
 };
