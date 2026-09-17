@@ -3802,3 +3802,1079 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
     },
   ],
 };
+  // Dominica (dm)
+  {
+    id: 'dm-the-chronicle',
+    countryCode: 'dm',
+    name: 'The Chronicle',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/dm/the-chronicle.svg',
+    foundingYear: 1909,
+    headquarters: 'Roseau',
+    owner: 'Chronicle Newspaper Ltd',
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'Independent',
+    format: 'tabloid',
+    circulation: '2,500 weekly print',
+    readers: '20,000 readers',
+    digitalPresence: "Dominica's historic weekly printed newspaper.",
+    sources: [
+      { name: 'Dominica Chronicle Archives', url: 'https://thechronicle.dm/' },
+      { name: 'Media of Dominica Overview', url: 'https://dominica.gov.dm/' }
+    ]
+  },
+  {
+    id: 'dm-dominica-news-online',
+    countryCode: 'dm',
+    name: 'Dominica News Online (DNO)',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/dm/dominica-news-online.svg',
+    foundingYear: 2007,
+    headquarters: 'Roseau',
+    owner: 'Duravision Inc.',
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'Independent',
+    format: 'digital',
+    readers: '250,000 monthly digital readers',
+    digitalPresence: "Dominica's leading digital-first news platform dominicanewsonline.com.",
+    sources: [
+      { name: 'Dominica News Online Portal', url: 'https://dominicanewsonline.com/' },
+      { name: 'Media Ownership Caribbean', url: 'https://rsf.org/' }
+    ]
+  },
+  {
+    id: 'dm-the-sun-dominica',
+    countryCode: 'dm',
+    name: 'The Sun',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/dm/the-sun-dominica.svg',
+    foundingYear: 1999,
+    headquarters: 'Roseau',
+    owner: 'Sun Printing & Publishing',
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'Independent / Critical',
+    format: 'tabloid',
+    circulation: '3,000 weekly print',
+    readers: '30,000 readers',
+    digitalPresence: 'Weekly newspaper printed in Roseau sDominica.com.',
+    sources: [
+      { name: 'The Sun Dominica Site', url: 'https://sdominica.com/' },
+      { name: 'Dominica Press Freedom', url: 'https://rsf.org/' }
+    ]
+  },
+  {
+    id: 'dm-dominica-vibes',
+    countryCode: 'dm',
+    name: 'Dominica Vibes',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/dm/dominica-vibes.svg',
+    foundingYear: 2010,
+    headquarters: 'Roseau',
+    owner: 'Vibes Media Group',
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'Independent',
+    format: 'digital',
+    readers: '120,000 monthly digital readers',
+    digitalPresence: 'Digital news site covering island culture, sports, and current affairs.',
+    sources: [
+      { name: 'Dominica Vibes News Portal', url: 'https://www.dominicavibes.dm/' },
+      { name: 'Government of Dominica Portal', url: 'https://dominica.gov.dm/' }
+    ]
+  },
+  {
+    id: 'dm-ebean-news',
+    countryCode: 'dm',
+    name: 'Ebean News',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/dm/ebean-news.svg',
+    foundingYear: 2015,
+    headquarters: 'Roseau',
+    owner: 'Ebean Media Dominica',
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'Independent',
+    format: 'digital',
+    readers: '60,000 monthly digital readers',
+    digitalPresence: 'Online portal providing local community news dispatches.',
+    sources: [
+      { name: 'Ebean News Portal', url: 'https://ebean.news/' },
+      { name: 'Association of Caribbean Media Workers', url: 'https://alac-amw.org/' }
+    ]
+  },
+
+  // Dominican Republic (do)
+  {
+    id: 'do-listín-diario',
+    countryCode: 'do',
+    name: 'Listín Diario',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/do/listín-diario.svg',
+    foundingYear: 1889,
+    headquarters: 'Santo Domingo',
+    owner: 'Grupo Corripio',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Center-right / Conservative',
+    format: 'broadsheet',
+    circulation: '90,000 daily print',
+    readers: '4,800,000 monthly digital readers',
+    digitalPresence: "Dominican Republic's oldest newspaper of record with listindiario.com portal.",
+    sources: [
+      { name: 'Listín Diario Corporate', url: 'https://listindiario.com/' },
+      { name: 'Grupo Corripio Media', url: 'https://grupocorripio.com.do/' }
+    ]
+  },
+  {
+    id: 'do-diario-libre',
+    countryCode: 'do',
+    name: 'Diario Libre',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/do/diario-libre.svg',
+    foundingYear: 2001,
+    headquarters: 'Santo Domingo',
+    owner: 'Grupo Puntacana / Grupo Rainieri',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Center-left / Liberal',
+    format: 'tabloid',
+    circulation: '150,000 daily print (free daily distribution)',
+    readers: '5,200,000 monthly digital readers',
+    digitalPresence: "Dominican Republic's highest circulation free daily paper and top news portal diariolibre.com.",
+    sources: [
+      { name: 'Diario Libre Corporate', url: 'https://www.diariolibre.com/' },
+      { name: 'Media Ownership Monitor DR', url: 'https://dominicanrepublic.mom-gmr.org/' }
+    ]
+  },
+  {
+    id: 'do-el-caribe',
+    countryCode: 'do',
+    name: 'elCaribe',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/do/el-caribe.svg',
+    foundingYear: 1948,
+    headquarters: 'Santo Domingo',
+    owner: 'Multimedios del Caribe (Manuel Estrella)',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Center-right / Independent',
+    format: 'broadsheet',
+    circulation: '45,000 daily print',
+    readers: '2,200,000 monthly readers',
+    digitalPresence: 'Major daily print paper and news portal elcaribe.com.do.',
+    sources: [
+      { name: 'elCaribe Official Portal', url: 'https://www.elcaribe.com.do/' },
+      { name: 'Multimedios del Caribe', url: 'https://multimediosdelcaribe.com.do/' }
+    ]
+  },
+  {
+    id: 'do-hoy',
+    countryCode: 'do',
+    name: 'Hoy',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/do/hoy.svg',
+    foundingYear: 1981,
+    headquarters: 'Santo Domingo',
+    owner: 'Grupo Corripio',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Center-right',
+    format: 'broadsheet',
+    circulation: '50,000 daily print',
+    readers: '2,000,000 monthly readers',
+    digitalPresence: 'Daily print newspaper published under Grupo Corripio hoy.com.do.',
+    sources: [
+      { name: 'Hoy Official Site', url: 'https://hoy.com.do/' },
+      { name: 'Grupo Corripio', url: 'https://grupocorripio.com.do/' }
+    ]
+  },
+  {
+    id: 'do-el-día',
+    countryCode: 'do',
+    name: 'El Día',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/do/el-día.svg',
+    foundingYear: 2002,
+    headquarters: 'Santo Domingo',
+    owner: 'Grupo Corripio',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Center-right / Morning Tabloid',
+    format: 'tabloid',
+    circulation: '130,000 daily print (free distribution)',
+    readers: '1,500,000 monthly readers',
+    digitalPresence: 'Free morning tabloid newspaper eldia.com.do.',
+    sources: [
+      { name: 'El Día Official Site', url: 'https://eldia.com.do/' },
+      { name: 'Grupo Corripio', url: 'https://grupocorripio.com.do/' }
+    ]
+  },
+
+  // East Timor / Timor-Leste (tl)
+  {
+    id: 'tl-jornal-independente',
+    countryCode: 'tl',
+    name: 'Jornal Independente',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/tl/jornal-independente.svg',
+    foundingYear: 2011,
+    headquarters: 'Dili',
+    owner: 'Media Grupo Independente',
+    language: ['tet', 'pt'],
+    coverage: 'national',
+    politicalStance: 'Independent',
+    format: 'tabloid',
+    circulation: '3,000 daily print',
+    readers: '50,000 readers',
+    digitalPresence: "Timor-Leste's prominent daily printed newspaper.",
+    sources: [
+      { name: 'Conselho de Imprensa de Timor-Leste', url: 'https://conselhoimprensa.tl/' },
+      { name: 'RSF Press Freedom Timor-Leste', url: 'https://rsf.org/en/country/timor-leste' }
+    ]
+  },
+  {
+    id: 'tl-timor-post',
+    countryCode: 'tl',
+    name: 'Timor Post',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/tl/timor-post.svg',
+    foundingYear: 1999,
+    headquarters: 'Dili',
+    owner: 'Timor Post Media Group',
+    language: ['tet', 'pt'],
+    coverage: 'national',
+    politicalStance: 'Independent',
+    format: 'tabloid',
+    circulation: '3,500 daily print',
+    readers: '80,000 readers',
+    digitalPresence: 'Oldest daily post-independence newspaper in Dili timorpost.com.',
+    sources: [
+      { name: 'Timor Post Portal', url: 'https://www.timorpost.com/' },
+      { name: 'Conselho de Imprensa TL', url: 'https://conselhoimprensa.tl/' }
+    ]
+  },
+  {
+    id: 'tl-tatoli',
+    countryCode: 'tl',
+    name: 'TATOLI (Agência Noticiosa de Timor-Leste)',
+    type: 'agency',
+    logoUrl: '/newspaper-logos/tl/tatoli.svg',
+    foundingYear: 2016,
+    headquarters: 'Dili',
+    owner: 'State of Timor-Leste (Public Agency)',
+    language: ['tet', 'pt', 'en', 'id'],
+    coverage: 'national',
+    politicalStance: 'State-owned wire agency',
+    format: 'digital',
+    readers: '300,000 monthly digital readers',
+    digitalPresence: 'Official state press wire agency publishing in four languages tatoli.tl.',
+    sources: [
+      { name: 'TATOLI Agency Portal', url: 'https://tatoli.tl/' },
+      { name: 'Governu Repúblika Demokratika Timór-Leste', url: 'https://www.timor-leste.gov.tl/' }
+    ]
+  },
+  {
+    id: 'tl-suara-timor-lorosae',
+    countryCode: 'tl',
+    name: 'Suara Timor Lorosae',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/tl/suara-timor-lorosae.svg',
+    foundingYear: 1993,
+    headquarters: 'Dili',
+    owner: 'STL Corporation (Salvador Ximenes Soares)',
+    language: ['tet', 'id', 'pt'],
+    coverage: 'national',
+    politicalStance: 'Independent / Center-right',
+    format: 'tabloid',
+    circulation: '2,500 daily print',
+    readers: '45,000 readers',
+    digitalPresence: 'Daily printed newspaper with online news site suaratimorlorosae.com.',
+    sources: [
+      { name: 'STL News Portal', url: 'https://suaratimorlorosae.com/' },
+      { name: 'Conselho de Imprensa TL', url: 'https://conselhoimprensa.tl/' }
+    ]
+  },
+  {
+    id: 'tl-dilivox',
+    countryCode: 'tl',
+    name: 'Dili Vox',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/tl/dilivox.svg',
+    foundingYear: 2018,
+    headquarters: 'Dili',
+    owner: 'Dili Vox Media',
+    language: ['tet', 'en'],
+    coverage: 'national',
+    politicalStance: 'Independent',
+    format: 'digital',
+    readers: '40,000 monthly digital readers',
+    digitalPresence: 'Digital news outlet covering local politics, youth culture, and civil society.',
+    sources: [
+      { name: 'Dili Vox Portal', url: 'https://dilivox.com/' },
+      { name: 'Conselho de Imprensa TL', url: 'https://conselhoimprensa.tl/' }
+    ]
+  },
+
+  // Ecuador (ec)
+  {
+    id: 'ec-el-universo',
+    countryCode: 'ec',
+    name: 'El Universo',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/ec/el-universo.svg',
+    foundingYear: 1921,
+    headquarters: 'Guayaquil',
+    owner: 'Grupo El Universo (Pérez Family)',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Center-right / Liberal-Conservative',
+    format: 'broadsheet',
+    circulation: '110,000 daily print',
+    readers: '6,500,000 monthly digital readers',
+    digitalPresence: "Ecuador's largest national newspaper of record and top news portal eluniverso.com.",
+    sources: [
+      { name: 'El Universo Corporate', url: 'https://www.eluniverso.com/' },
+      { name: 'Media Ownership Monitor Ecuador', url: 'https://ecuador.mom-gmr.org/' }
+    ]
+  },
+  {
+    id: 'ec-el-comercio',
+    countryCode: 'ec',
+    name: 'El Comercio',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/ec/el-comercio.svg',
+    foundingYear: 1906,
+    headquarters: 'Quito',
+    owner: 'Grupo El Comercio (Ángel González / Albavisión)',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Center-right / Conservative',
+    format: 'broadsheet',
+    circulation: '70,000 daily print',
+    readers: '4,200,000 monthly digital readers',
+    digitalPresence: "Quito's historic daily newspaper and major digital portal elcomercio.com.",
+    sources: [
+      { name: 'El Comercio Official Site', url: 'https://www.elcomercio.com/' },
+      { name: 'Media Ownership Monitor Ecuador', url: 'https://ecuador.mom-gmr.org/' }
+    ]
+  },
+  {
+    id: 'ec-expreso',
+    countryCode: 'ec',
+    name: 'Expreso',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/ec/expreso.svg',
+    foundingYear: 1973,
+    headquarters: 'Guayaquil',
+    owner: 'Gráficos Nacionales S.A. (Granasa)',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Center-right / Business',
+    format: 'tabloid',
+    circulation: '40,000 daily print',
+    readers: '2,100,000 monthly digital readers',
+    digitalPresence: 'Major Guayaquil daily newspaper focused on economy and governance expreso.ec.',
+    sources: [
+      { name: 'Expreso Official Portal', url: 'https://www.expreso.ec/' },
+      { name: 'Granasa Corporate', url: 'https://www.granasa.com.ec/' }
+    ]
+  },
+  {
+    id: 'ec-lideres',
+    countryCode: 'ec',
+    name: 'Revista LÍDERES',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/ec/lideres.svg',
+    foundingYear: 1997,
+    headquarters: 'Quito',
+    owner: 'Grupo El Comercio',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Business / Financial',
+    format: 'tabloid',
+    circulation: '20,000 weekly print',
+    readers: '500,000 monthly readers',
+    digitalPresence: "Ecuador's leading weekly business and corporate management publication revistalideres.ec.",
+    sources: [
+      { name: 'Revista LÍDERES Portal', url: 'https://www.revistalideres.ec/' },
+      { name: 'Grupo El Comercio', url: 'https://www.elcomercio.com/' }
+    ]
+  },
+  {
+    id: 'ec-primicias',
+    countryCode: 'ec',
+    name: 'PRIMICIAS',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/ec/primicias.svg',
+    foundingYear: 2019,
+    headquarters: 'Quito',
+    owner: 'Editorial Primicias S.A.',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Independent / Investigative',
+    format: 'digital',
+    readers: '3,800,000 monthly digital readers',
+    digitalPresence: "Ecuador's fastest growing digital-first investigative news platform primicias.ec.",
+    sources: [
+      { name: 'PRIMICIAS Portal', url: 'https://www.primicias.ec/' },
+      { name: 'Fundamedios Ecuador', url: 'https://www.fundamedios.org.ec/' }
+    ]
+  },
+
+  // Egypt (eg)
+  {
+    id: 'eg-al-ahram',
+    countryCode: 'eg',
+    name: 'Al-Ahram (الأهرام)',
+    englishTranslation: 'The Pyramids',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/eg/al-ahram.svg',
+    foundingYear: 1875,
+    headquarters: 'Cairo',
+    owner: 'National Press Authority (State of Egypt)',
+    annualPublicFunding: {
+      total: 'EGP 1,200,000,000 ($25M USD state press subsidy)',
+      perCapita: 'EGP 11.2 per capita'
+    },
+    language: ['ar', 'en', 'fr'],
+    coverage: 'national',
+    politicalStance: 'State-owned official organ',
+    format: 'broadsheet',
+    circulation: '650,000 daily print',
+    readers: '12,000,000 multiplatform readers',
+    digitalPresence: "Egypt's oldest and most prestigious state daily newspaper gate.ahram.org.eg.",
+    sources: [
+      { name: 'Al-Ahram Gate Portal', url: 'https://gate.ahram.org.eg/' },
+      { name: 'National Press Authority Egypt', url: 'https://www.npa.gov.eg/' }
+    ]
+  },
+  {
+    id: 'eg-al-masry-al-youm',
+    countryCode: 'eg',
+    name: 'Al-Masry Al-Youm (المصري اليوم)',
+    englishTranslation: 'The Egyptian Today',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/eg/al-masry-al-youm.svg',
+    foundingYear: 2004,
+    headquarters: 'Cairo',
+    owner: 'Al-Masry Media Group (Salah Diab)',
+    language: ['ar', 'en'],
+    coverage: 'national',
+    politicalStance: 'Independent / Liberal',
+    format: 'broadsheet',
+    circulation: '180,000 daily print',
+    readers: '8,500,000 monthly digital readers',
+    digitalPresence: "Egypt's leading independent daily newspaper and news site almasryalyoum.com.",
+    sources: [
+      { name: 'Al-Masry Al-Youm Portal', url: 'https://www.almasryalyoum.com/' },
+      { name: 'Media Ownership Monitor Egypt', url: 'https://egypt.mom-gmr.org/' }
+    ]
+  },
+  {
+    id: 'eg-al-wafd',
+    countryCode: 'eg',
+    name: 'Al-Wafd (الوفد)',
+    englishTranslation: 'The Delegation',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/eg/al-wafd.svg',
+    foundingYear: 1984,
+    headquarters: 'Giza',
+    owner: 'New Wafd Party',
+    language: ['ar'],
+    coverage: 'national',
+    politicalStance: 'Center-right / Secular Opposition',
+    format: 'broadsheet',
+    circulation: '70,000 daily print',
+    readers: '3,000,000 monthly digital readers',
+    digitalPresence: 'Official daily newspaper of Egypt historic liberal Wafd Party alwafd.news.',
+    sources: [
+      { name: 'Al-Wafd Portal', url: 'https://alwafd.news/' },
+      { name: 'New Wafd Party Official Media', url: 'https://alwafd.org/' }
+    ]
+  },
+  {
+    id: 'eg-youm7',
+    countryCode: 'eg',
+    name: 'Youm7 (اليوم السابع)',
+    englishTranslation: 'The Seventh Day',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/eg/youm7.svg',
+    foundingYear: 2008,
+    headquarters: 'Cairo',
+    owner: 'Egyptian Media Group (State-affiliated)',
+    language: ['ar'],
+    coverage: 'national',
+    politicalStance: 'Pro-government / Popular digital',
+    format: 'digital',
+    readers: '22,000,000 monthly digital readers',
+    digitalPresence: "Egypt's most visited digital news website and online video network youm7.com.",
+    sources: [
+      { name: 'Youm7 Official Portal', url: 'https://www.youm7.com/' },
+      { name: 'Egyptian Media Group Overview', url: 'https://egypt.mom-gmr.org/' }
+    ]
+  },
+  {
+    id: 'eg-egypt-today',
+    countryCode: 'eg',
+    name: 'Egypt Today',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/eg/egypt-today.svg',
+    foundingYear: 1979,
+    headquarters: 'Cairo',
+    owner: 'Egyptian Media Group',
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'Pro-government / English Portal',
+    format: 'digital',
+    readers: '1,500,000 monthly digital readers',
+    digitalPresence: "Egypt's leading English-language digital magazine and news portal egypttoday.com.",
+    sources: [
+      { name: 'Egypt Today Official Portal', url: 'https://www.egypttoday.com/' },
+      { name: 'National Press Authority', url: 'https://www.npa.gov.eg/' }
+    ]
+  },
+
+  // El Salvador (sv)
+  {
+    id: 'sv-el-diario-de-hoy',
+    countryCode: 'sv',
+    name: 'El Diario de Hoy',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/sv/el-diario-de-hoy.svg',
+    foundingYear: 1936,
+    headquarters: 'San Salvador',
+    owner: 'Editorial Altamirano Madriz S.A.',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Conservative / Center-right',
+    format: 'tabloid',
+    circulation: '65,000 daily print',
+    readers: '2,800,000 monthly digital readers',
+    digitalPresence: "El Salvador's newspaper of record and portal elsalvador.com.",
+    sources: [
+      { name: 'El Diario de Hoy Portal', url: 'https://www.elsalvador.com/' },
+      { name: 'Asociación de Periodistas de El Salvador (APES)', url: 'https://apes.org.sv/' }
+    ]
+  },
+  {
+    id: 'sv-la-pensa-gráfica',
+    countryCode: 'sv',
+    name: 'La Prensa Gráfica',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/sv/la-pensa-gráfica.svg',
+    foundingYear: 1915,
+    headquarters: 'San Salvador',
+    owner: 'Grupo Dutriz',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Center-right / Independent',
+    format: 'tabloid',
+    circulation: '70,000 daily print',
+    readers: '3,100,000 monthly digital readers',
+    digitalPresence: 'Major Salvadoran daily newspaper and digital platform laprensagrafica.com.',
+    sources: [
+      { name: 'La Prensa Gráfica Portal', url: 'https://www.laprensagrafica.com/' },
+      { name: 'Grupo Dutriz Corporate', url: 'https://www.grupodutriz.com/' }
+    ]
+  },
+  {
+    id: 'sv-el-mundo',
+    countryCode: 'sv',
+    name: 'Diario El Mundo',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/sv/el-mundo.svg',
+    foundingYear: 1967,
+    headquarters: 'San Salvador',
+    owner: 'Editora El MUNDO S.A.',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Center-right',
+    format: 'tabloid',
+    circulation: '30,000 daily print',
+    readers: '1,200,000 monthly digital readers',
+    digitalPresence: 'Daily print newspaper published in San Salvador elmundo.sv.',
+    sources: [
+      { name: 'Diario El Mundo Portal', url: 'https://elmundo.sv/' },
+      { name: 'APES El Salvador', url: 'https://apes.org.sv/' }
+    ]
+  },
+  {
+    id: 'sv-el-faro',
+    countryCode: 'sv',
+    name: 'El Faro',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/sv/el-faro.svg',
+    foundingYear: 1998,
+    headquarters: 'San Salvador',
+    owner: 'Trápaga S.A. de C.V. (Carlos Dada)',
+    language: ['es', 'en'],
+    coverage: 'national',
+    politicalStance: 'Independent / Investigative',
+    format: 'digital',
+    readers: '2,500,000 monthly digital readers',
+    digitalPresence: 'Pioneering Latin American digital investigative journalism magazine elfaro.net.',
+    sources: [
+      { name: 'El Faro Official Site', url: 'https://elfaro.net/' },
+      { name: 'Maria Moors Cabot Prize Awards', url: 'https://journalism.columbia.edu/' }
+    ]
+  },
+  {
+    id: 'sv-diario-el-salvador',
+    countryCode: 'sv',
+    name: 'Diario El Salvador',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/sv/diario-el-salvador.svg',
+    foundingYear: 2020,
+    headquarters: 'San Salvador',
+    owner: 'Government of El Salvador (State-backed)',
+    annualPublicFunding: {
+      total: 'USD $8,500,000 state advertising subvention',
+      perCapita: 'USD $1.33 per capita'
+    },
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Pro-government',
+    format: 'tabloid',
+    circulation: '40,000 daily print',
+    readers: '1,800,000 monthly digital readers',
+    digitalPresence: 'State-owned daily print newspaper created in 2020 diarioelsalvador.com.',
+    sources: [
+      { name: 'Diario El Salvador Portal', url: 'https://diarioelsalvador.com/' },
+      { name: 'APES Freedom of Press Report', url: 'https://apes.org.sv/' }
+    ]
+  },
+
+  // Equatorial Guinea (gq)
+  {
+    id: 'gq-ébano',
+    countryCode: 'gq',
+    name: 'Ébano',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/gq/ébano.svg',
+    foundingYear: 1939,
+    headquarters: 'Malabo',
+    owner: 'Ministry of Information, Press and Radio',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'State-owned official organ',
+    format: 'tabloid',
+    circulation: '1,000 print daily',
+    readers: '15,000 readers',
+    digitalPresence: "Equatorial Guinea's historic state daily newspaper.",
+    sources: [
+      { name: 'Ministerio de Información Guinea Ecuatorial', url: 'https://www.guineaecuatorialpress.com/' },
+      { name: 'UNESCO Central Africa Media', url: 'https://www.unesco.org/' }
+    ]
+  },
+  {
+    id: 'gq-ahora-eg',
+    countryCode: 'gq',
+    name: 'AhoraEG',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/gq/ahora-eg.svg',
+    foundingYear: 2019,
+    headquarters: 'Malabo',
+    owner: 'AhoraEG Media SARL',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Independent / Economic',
+    format: 'digital',
+    readers: '150,000 monthly digital readers',
+    digitalPresence: 'Private digital news platform focused on business and local affairs ahoraeg.com.',
+    sources: [
+      { name: 'AhoraEG News Portal', url: 'https://ahoraeg.com/' },
+      { name: 'Reporters Without Borders EG', url: 'https://rsf.org/en/country/equatorial-guinea' }
+    ]
+  },
+  {
+    id: 'gq-real-equatorial-guinea',
+    countryCode: 'gq',
+    name: 'Real Equatorial Guinea',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/gq/real-equatorial-guinea.svg',
+    foundingYear: 2020,
+    headquarters: 'Malabo',
+    owner: 'Real Media EG',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Independent',
+    format: 'digital',
+    readers: '80,000 monthly digital readers',
+    digitalPresence: 'Digital news outlet covering society, economy, and sports realequatorialguinea.com.',
+    sources: [
+      { name: 'Real Equatorial Guinea Portal', url: 'https://realequatorialguinea.com/' },
+      { name: 'Ministerio de Información EG', url: 'https://www.guineaecuatorialpress.com/' }
+    ]
+  },
+  {
+    id: 'gq-guinea-ecuatorial-press',
+    countryCode: 'gq',
+    name: 'Guinea Ecuatorial Press (Gastón)',
+    type: 'agency',
+    logoUrl: '/newspaper-logos/gq/guinea-ecuatorial-press.svg',
+    foundingYear: 2005,
+    headquarters: 'Malabo',
+    owner: 'Government of Equatorial Guinea',
+    language: ['es', 'fr', 'en'],
+    coverage: 'national',
+    politicalStance: 'State-owned press agency',
+    format: 'digital',
+    readers: '250,000 monthly digital readers',
+    digitalPresence: 'Official state press portal guineaecuatorialpress.com.',
+    sources: [
+      { name: 'Guinea Ecuatorial Press Official', url: 'https://www.guineaecuatorialpress.com/' },
+      { name: 'Gobierno de la República de Guinea Ecuatorial', url: 'https://www.guineaecuatorialpress.com/' }
+    ]
+  },
+  {
+    id: 'gq-diario-rombe',
+    countryCode: 'gq',
+    name: 'Diario Rombe',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/gq/diario-rombe.svg',
+    foundingYear: 2012,
+    headquarters: 'Malabo / Diaspora',
+    owner: 'Delfín Mocache Massoko',
+    language: ['es'],
+    coverage: 'national',
+    politicalStance: 'Independent / Critical',
+    format: 'digital',
+    readers: '300,000 monthly digital readers',
+    digitalPresence: 'Prominent exile digital investigative newspaper diariorombe.es.',
+    sources: [
+      { name: 'Diario Rombe Portal', url: 'https://diariorombe.es/' },
+      { name: 'CPJ Africa Profile', url: 'https://cpj.org/' }
+    ]
+  },
+
+  // Eritrea (er)
+  {
+    id: 'er-haddas-eritrea',
+    countryCode: 'er',
+    name: 'Haddas Eritrea (ሓዳስ ኤርትራ)',
+    englishTranslation: 'New Eritrea',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/er/haddas-eritrea.svg',
+    foundingYear: 1991,
+    headquarters: 'Asmara',
+    owner: 'Ministry of Information (State of Eritrea)',
+    annualPublicFunding: {
+      total: 'ERN 150,000,000 ($10M USD state media budget)',
+      perCapita: 'ERN 41.6 per capita'
+    },
+    language: ['ti'],
+    coverage: 'national',
+    politicalStance: 'State-owned sole official daily',
+    format: 'broadsheet',
+    circulation: '25,000 print copies daily',
+    readers: '200,000 estimated readers',
+    digitalPresence: "Eritrea's only legally operating printed daily newspaper in Tigrinya.",
+    sources: [
+      { name: 'Ministry of Information Eritrea Shabait', url: 'https://shabait.com/' },
+      { name: 'UNESCO Media Eritrea Profile', url: 'https://www.unesco.org/' }
+    ]
+  },
+  {
+    id: 'er-eritrea-profile',
+    countryCode: 'er',
+    name: 'Eritrea Profile',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/er/eritrea-profile.svg',
+    foundingYear: 1994,
+    headquarters: 'Asmara',
+    owner: 'Ministry of Information Eritrea',
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'State-owned English newspaper',
+    format: 'broadsheet',
+    circulation: '5,000 bi-weekly print',
+    readers: '50,000 readers',
+    digitalPresence: 'Official state bi-weekly English newspaper published on shabait.com.',
+    sources: [
+      { name: 'Shabait Ministry Information', url: 'https://shabait.com/' },
+      { name: 'RSF Eritrea Country Report', url: 'https://rsf.org/en/country/eritrea' }
+    ]
+  },
+  {
+    id: 'er-shabait',
+    countryCode: 'er',
+    name: 'Shabait',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/er/shabait.svg',
+    foundingYear: 2002,
+    headquarters: 'Asmara',
+    owner: 'Ministry of Information Eritrea',
+    language: ['ti', 'en', 'ar', 'fr'],
+    coverage: 'national',
+    politicalStance: 'State-owned portal',
+    format: 'digital',
+    readers: '450,000 monthly digital readers',
+    digitalPresence: 'Official online news portal of the Eritrean government shabait.com.',
+    sources: [
+      { name: 'Shabait Official Portal', url: 'https://shabait.com/' },
+      { name: 'Ministry of Information Eritrea', url: 'https://shabait.com/' }
+    ]
+  },
+  {
+    id: 'er-eritrean-digest',
+    countryCode: 'er',
+    name: 'Eritrean Digest',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/er/eritrean-digest.svg',
+    foundingYear: 2018,
+    headquarters: 'Asmara / Diaspora',
+    owner: 'Independent Eritrean Analysts',
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'Independent / Analytical',
+    format: 'digital',
+    readers: '90,000 monthly digital readers',
+    digitalPresence: 'Diaspora and analytical publication providing news analysis on Horn of Africa.',
+    sources: [
+      { name: 'Eritrean Digest Site', url: 'https://eritreandigest.com/' },
+      { name: 'Committee to Protect Journalists', url: 'https://cpj.org/' }
+    ]
+  },
+  {
+    id: 'er-assenna',
+    countryCode: 'er',
+    name: 'Assenna',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/er/assenna.svg',
+    foundingYear: 2007,
+    headquarters: 'London / Diaspora',
+    owner: 'Amanuel Eyasu / Assenna Foundation',
+    language: ['ti', 'en'],
+    coverage: 'national',
+    politicalStance: 'Independent / Opposition in exile',
+    format: 'digital',
+    readers: '600,000 monthly digital readers',
+    digitalPresence: 'Major diaspora news portal and satellite broadcasting platform assenna.com.',
+    sources: [
+      { name: 'Assenna News Portal', url: 'https://assenna.com/' },
+      { name: 'RSF Exile Journalism Index', url: 'https://rsf.org/' }
+    ]
+  },
+
+  // Estonia (ee)
+  {
+    id: 'ee-postimees',
+    countryCode: 'ee',
+    name: 'Postimees',
+    englishTranslation: 'The Courier',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/ee/postimees.svg',
+    foundingYear: 1857,
+    headquarters: 'Tallinn',
+    owner: 'Postimees Grupp (Margus Linnamäe)',
+    language: ['et', 'ru'],
+    coverage: 'national',
+    politicalStance: 'Center-right / Conservative',
+    format: 'broadsheet',
+    circulation: '32,000 daily print',
+    readers: '650,000 monthly digital readers',
+    digitalPresence: "Estonia's oldest newspaper and largest digital news portal postimees.ee.",
+    sources: [
+      { name: 'Postimees Grupp Corporate', url: 'https://postimeesgrupp.ee/' },
+      { name: 'Postimees Official Portal', url: 'https://www.postimees.ee/' }
+    ]
+  },
+  {
+    id: 'ee-eesti-päevaleht',
+    countryCode: 'ee',
+    name: 'Eesti Päevaleht',
+    englishTranslation: 'Estonian Daily Paper',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/ee/eesti-päevaleht.svg',
+    foundingYear: 1995,
+    headquarters: 'Tallinn',
+    owner: 'Delfi Meedia (Hans H. Luik)',
+    language: ['et'],
+    coverage: 'national',
+    politicalStance: 'Center-left / Social Liberal',
+    format: 'berliner',
+    circulation: '14,000 print (transitioned to digital weekend format)',
+    readers: '450,000 monthly digital readers',
+    digitalPresence: 'Major quality daily print and digital newspaper epl.delfi.ee.',
+    sources: [
+      { name: 'Delfi Meedia Corporate', url: 'https://delfimeedia.ee/' },
+      { name: 'Eesti Päevaleht Portal', url: 'https://epl.delfi.ee/' }
+    ]
+  },
+  {
+    id: 'ee-äripäev',
+    countryCode: 'ee',
+    name: 'Äripäev',
+    englishTranslation: 'Business Day',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/ee/äripäev.svg',
+    foundingYear: 1989,
+    headquarters: 'Tallinn',
+    owner: 'Swedish Bonnier Business Media',
+    language: ['et'],
+    coverage: 'national',
+    politicalStance: 'Center-right / Financial',
+    format: 'tabloid',
+    circulation: '8,000 daily print',
+    readers: '300,000 monthly digital readers',
+    digitalPresence: "Estonia's premier daily business and financial newspaper aripaev.ee.",
+    sources: [
+      { name: 'Äripäev Official Site', url: 'https://www.aripaev.ee/' },
+      { name: 'Bonnier Group', url: 'https://www.bonnier.com/' }
+    ]
+  },
+  {
+    id: 'ee-õhtuleht',
+    countryCode: 'ee',
+    name: 'Õhtuleht',
+    englishTranslation: 'Evening Paper',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/ee/õhtuleht.svg',
+    foundingYear: 1944,
+    headquarters: 'Tallinn',
+    owner: 'Õhtuleht Kirjastus (Postimees Grupp / Alexela)',
+    language: ['et'],
+    coverage: 'national',
+    politicalStance: 'Popular interest / Tabloid',
+    format: 'tabloid',
+    circulation: '35,000 daily print',
+    readers: '500,000 monthly readers',
+    digitalPresence: "Estonia's highest circulation printed daily tabloid ohtuleht.ee.",
+    sources: [
+      { name: 'Õhtuleht Portal', url: 'https://www.ohtuleht.ee/' },
+      { name: 'Estonian Newspaper Association (EALL)', url: 'https://eall.ee/' }
+    ]
+  },
+  {
+    id: 'ee-delfi-ee',
+    countryCode: 'ee',
+    name: 'Delfi Estonia',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/ee/delfi-ee.svg',
+    foundingYear: 1999,
+    headquarters: 'Tallinn',
+    owner: 'Delfi Meedia (Express Group)',
+    language: ['et', 'ru'],
+    coverage: 'national',
+    politicalStance: 'Independent / Digital-first',
+    format: 'digital',
+    readers: '1,100,000 monthly digital readers',
+    digitalPresence: "Estonia's most visited digital news portal network delfi.ee.",
+    sources: [
+      { name: 'Delfi Estonia Portal', url: 'https://www.delfi.ee/' },
+      { name: 'Express Group Corporate', url: 'https://egroup.ee/' }
+    ]
+  },
+
+  // Eswatini (sz)
+  {
+    id: 'sz-times-of-eswatini',
+    countryCode: 'sz',
+    name: 'Times of Eswatini',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/sz/times-of-eswatini.svg',
+    foundingYear: 1897,
+    headquarters: 'Mbabane',
+    owner: 'African Echo Ltd (Loffler Family)',
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'Independent / Moderate',
+    format: 'tabloid',
+    circulation: '28,000 daily print',
+    readers: '350,000 monthly readers',
+    digitalPresence: "Eswatini's oldest and highest circulation daily print newspaper times.co.sz.",
+    sources: [
+      { name: 'Times of Eswatini Portal', url: 'http://www.times.co.sz/' },
+      { name: 'Media Institute of Southern Africa (MISA) Eswatini', url: 'https://misa.org/' }
+    ]
+  },
+  {
+    id: 'sz-ebuswini-observer',
+    countryCode: 'sz',
+    name: 'Eswatini Observer',
+    type: 'newspaper',
+    logoUrl: '/newspaper-logos/sz/ebuswini-observer.svg',
+    foundingYear: 1981,
+    headquarters: 'Mbabane',
+    owner: 'Tibiyo TakaNgwane (Royal Monarchy Trust)',
+    annualPublicFunding: {
+      total: 'SZL 45,000,000 ($2.5M USD royal trust media allocation)',
+      perCapita: 'SZL 37.5 per capita'
+    },
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'Pro-monarchy / Royalist',
+    format: 'broadsheet',
+    circulation: '18,000 daily print',
+    readers: '200,000 readers',
+    digitalPresence: 'Monarchy-owned national daily newspaper observer.org.sz.',
+    sources: [
+      { name: 'Eswatini Observer Site', url: 'http://www.observer.org.sz/' },
+      { name: 'Tibiyo TakaNgwane Trust', url: 'https://tibiyo.com/' }
+    ]
+  },
+  {
+    id: 'sz-swazi-bridge',
+    countryCode: 'sz',
+    name: 'Swazi Bridge',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/sz/swazi-bridge.svg',
+    foundingYear: 2018,
+    headquarters: 'Mbabane',
+    owner: 'Swazi Bridge Media',
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'Independent',
+    format: 'digital',
+    readers: '90,000 monthly digital readers',
+    digitalPresence: 'Digital news platform covering social issues and business developments.',
+    sources: [
+      { name: 'Swazi Bridge News Site', url: 'https://swazibridge.com/' },
+      { name: 'MISA Eswatini Chapter', url: 'https://misa.org/' }
+    ]
+  },
+  {
+    id: 'sz-swaziland-news',
+    countryCode: 'sz',
+    name: 'Swaziland News',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/sz/swaziland-news.svg',
+    foundingYear: 2014,
+    headquarters: 'Mbabane / Exile (South Africa)',
+    owner: 'Zweli Martin Dlamini',
+    language: ['en', 'ss'],
+    coverage: 'national',
+    politicalStance: 'Independent / Pro-democracy / Critical',
+    format: 'digital',
+    readers: '850,000 monthly digital readers',
+    digitalPresence: 'Leading digital investigative news outlet operating online swazilandnews.co.za.',
+    sources: [
+      { name: 'Swaziland News Portal', url: 'https://swazilandnews.co.za/' },
+      { name: 'CPJ Eswatini Freedom Report', url: 'https://cpj.org/' }
+    ]
+  },
+  {
+    id: 'sz-independent-news-eswatini',
+    countryCode: 'sz',
+    name: 'Independent News Eswatini',
+    type: 'digital',
+    logoUrl: '/newspaper-logos/sz/independent-news-eswatini.svg',
+    foundingYear: 2019,
+    headquarters: 'Mbabane',
+    owner: 'Independent News Group',
+    language: ['en'],
+    coverage: 'national',
+    politicalStance: 'Independent',
+    format: 'digital',
+    readers: '70,000 monthly digital readers',
+    digitalPresence: 'Digital news website publishing daily local updates.',
+    sources: [
+      { name: 'Independent News Eswatini Portal', url: 'https://independentnews.co.sz/' },
+      { name: 'MISA Southern Africa', url: 'https://misa.org/' }
+    ]
+  }
+
+];

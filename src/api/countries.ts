@@ -4,6 +4,8 @@ import { CONTINENT_GROUPS, SUBREGION_GROUPS } from "../lib/continentGroups";
 import { COUNTRY_FACTS } from "../data/countryFacts";
 import type { QuizSymbol, SymbolClue } from "../lib/quizSymbols";
 
+import type { DemocracyData } from "../data/countryFacts";
+
 export type Country = {
   name: string;
   /** Long official name from REST Countries (e.g., "Federative Republic of
@@ -26,6 +28,16 @@ export type Country = {
   callingCode?: string;
   /** Country top-level internet domain(s) (e.g., [".au"], [".br"]). */
   tld?: string[];
+  /** GDP in USD (World Bank / UN data). */
+  gdpUsd?: number;
+  /** GDP in local currency unit. */
+  gdpLcu?: number;
+  /** GDP per capita in USD. */
+  gdpPerCapitaUsd?: number;
+  /** GDP per capita in local currency unit. */
+  gdpPerCapitaLcu?: number;
+  /** Democracy ratings & ranks (Freedom House, V-Dem, EIU Economist). */
+  democracy?: DemocracyData;
   /**
    * Set only when the game is quizzing a national SYMBOL rather than the flag
    * (a coat of arms, a passport cover, a football crest, a former flag …).
@@ -188,6 +200,11 @@ function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
         currencies: facts?.currencies,
         callingCode: facts?.callingCode,
         tld: facts?.tld,
+        gdpUsd: facts?.gdpUsd,
+        gdpLcu: facts?.gdpLcu,
+        gdpPerCapitaUsd: facts?.gdpPerCapitaUsd,
+        gdpPerCapitaLcu: facts?.gdpPerCapitaLcu,
+        democracy: facts?.democracy,
       });
     }
   }
@@ -327,6 +344,11 @@ export async function fetchCountries(): Promise<Country[]> {
       currencies: currencies && currencies.length > 0 ? currencies : undefined,
       callingCode,
       tld: tld && tld.length > 0 ? tld : undefined,
+      gdpUsd: facts?.gdpUsd,
+      gdpLcu: facts?.gdpLcu,
+      gdpPerCapitaUsd: facts?.gdpPerCapitaUsd,
+      gdpPerCapitaLcu: facts?.gdpPerCapitaLcu,
+      democracy: facts?.democracy,
     });
   }
 
