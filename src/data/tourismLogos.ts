@@ -3239,4 +3239,120 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  AG: [
+    {
+      id: "ag-abta",
+      countryCode: "AG",
+      name: "Antigua and Barbuda Tourism Authority",
+      agency: "Antigua and Barbuda Tourism Authority",
+      visitors: {
+        count: 384500,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Antigua and Barbuda)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in Antigua and Barbuda\" article — no freely-licensed copy of the Antigua and Barbuda Tourism Authority's logo could be found.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Antigua_and_Barbuda",
+        "https://www.theantiguan.com/antigua-and-barbuda-tourism-authority",
+      ],
+    },
+  ],
+  DM: [
+    {
+      id: "dm-discover-dominica",
+      countryCode: "DM",
+      name: "Discover Dominica",
+      slogan: "The Nature Island",
+      agency: "Discover Dominica Authority",
+      visitors: {
+        count: 140000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Dominica)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in Dominica\" article — no freely-licensed copy of the Discover Dominica Authority's logo (marketed around Dominica's \"Nature Island\" positioning) could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Dominica", "https://discoverdominica.com/"],
+    },
+  ],
+  LC: [
+    {
+      id: "lc-saint-lucia-tourism-authority",
+      countryCode: "LC",
+      name: "Saint Lucia Tourism Authority",
+      slogan: "Simply Beautiful",
+      agency: "Saint Lucia Tourism Authority",
+      visitors: {
+        count: 432500,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Saint Lucia)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in Saint Lucia\" article — no freely-licensed copy of the Saint Lucia Tourism Authority's logo could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Saint_Lucia"],
+    },
+  ],
+  VC: [
+    {
+      id: "vc-svg-tourism-authority",
+      countryCode: "VC",
+      name: "SVG Tourism Authority",
+      agency: "Saint Vincent and the Grenadines Tourism Authority",
+      launched: 2009,
+      visitors: {
+        count: 392000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Saint Vincent and the Grenadines)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Saint Vincent and the Grenadines, which holds no tourism-related file) — no freely-licensed copy of the SVG Tourism Authority's (established 2009) logo could be found.",
+      sources: [
+        "https://tourism.gov.vc/tourism/index.php/svg-tourism-authority",
+        "https://www.routesonline.com/destinations/9424/st-vincent-and-the-grenadines-tourism-authority/about/",
+      ],
+    },
+  ],
+  GD: [
+    {
+      id: "gd-pure-grenada",
+      countryCode: "GD",
+      name: "Pure Grenada",
+      slogan: "Pure Grenada, the Spice of the Caribbean",
+      agency: "Grenada Tourism Authority",
+      launched: 2013,
+      visitors: {
+        count: 217000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Grenada)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for the Grenada Tourism Authority's \"Pure Grenada\" logo — no freely-licensed copy could be found.",
+      sources: ["https://www.puregrenada.com/", "https://ghta.org/directory/all-members/grenada-tourism-authority/"],
+    },
+  ],
+  KN: [
+    {
+      id: "kn-st-kitts-tourism-authority",
+      countryCode: "KN",
+      name: "St Kitts Tourism Authority",
+      agency: "St Kitts Tourism Authority",
+      visitors: {
+        count: 301400,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Saint Kitts and Nevis)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Saint Kitts and Nevis) — no freely-licensed copy of the St Kitts Tourism Authority's or Nevis Tourism Authority's logo could be found.",
+      sources: [
+        "https://www.routesonline.com/destinations/9413/st-kitts-tourism-authority/about/",
+        "https://www.visitstkitts.com/media",
+      ],
+    },
+  ],
 };
