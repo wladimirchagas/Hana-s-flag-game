@@ -27,6 +27,203 @@ import type { TourismLogo } from "../types/tourismLogo";
  * sweeps for the discipline this collection follows: source properly, never pad.
  */
 export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
+  DK: [
+    {
+      id: "dk-visitdenmark-heart",
+      countryCode: "DK",
+      name: "VisitDenmark — the Danish Heart",
+      agency: "VisitDenmark, Denmark's official tourism organisation",
+      launched: 1968,
+      visitors: {
+        count: 15595000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Denmark)",
+      },
+      noImageReason:
+        "The \"Danish Heart\" — a red-and-white heart mark developed in 1968 for the (then) Danish Tourist Board and used as VisitDenmark's own graphic symbol since 1978 — is a well-documented, distinctive consumer mark, but searching Wikimedia Commons (Category:Logos of Denmark, Category:SVG logos of Denmark, Category:Symbols of Denmark) and the English Wikipedia article for VisitDenmark found no freely-licensed copy of it.",
+      sources: [
+        "https://en.wikipedia.org/wiki/VisitDenmark",
+        "https://www.toolbox.visitdenmark.com/logo",
+      ],
+    },
+  ],
+  DO: [
+    {
+      id: "do-go-dominican-republic",
+      countryCode: "DO",
+      name: "Go Dominican Republic",
+      agency:
+        "Ministerio de Turismo (MITUR), the Dominican Republic's Ministry of Tourism, operator of the godominicanrepublic.com consumer brand",
+      visitors: {
+        count: 2748000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Dominican Republic)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons, the English Wikipedia article for \"Tourism in the Dominican Republic\", and general web search — no freely-licensed \"Go Dominican Republic\" logo file could be found on Commons or Wikipedia.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Dominican_Republic"],
+    },
+  ],
+  EG: [
+    {
+      id: "eg-experience-egypt",
+      countryCode: "EG",
+      name: "Experience Egypt",
+      agency: "Ministry of Tourism and Antiquities, Egypt",
+      visitors: {
+        count: 13026000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Egypt)",
+      },
+      noImageReason:
+        "The Ministry of Tourism and Antiquities' own bundled Wikimedia Commons file (\"Ministry of Tourism and Antiquities logo.png\") is categorised on Commons as one of Egypt's government/coats-of-arms seals — an institutional mark, not the consumer destination brand — the same category error the Brazil/Embratur entry in this dataset was corrected away from. Egypt's actual consumer-facing tourism promotion runs under \"Experience Egypt\" (experienceegypt.eg), but no freely-licensed image for that specific campaign brand, distinct from the Ministry's institutional seal, could be found on Wikimedia Commons or Wikipedia.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Ministry_of_Tourism_and_Antiquities_logo.png",
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_and_Antiquities_(Egypt)",
+        "https://www.experienceegypt.eg/en",
+      ],
+    },
+  ],
+  CA: [
+    {
+      id: "ca-destination-canada",
+      countryCode: "CA",
+      name: "Destination Canada",
+      slogan: "For Glowing Hearts",
+      agency:
+        "Destination Canada (formerly the Canadian Tourism Commission), a Crown corporation wholly owned by the Government of Canada",
+      launched: 2019,
+      visitors: {
+        count: 32430000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Canada)",
+      },
+      noImageReason:
+        "Destination Canada's current consumer brand — a wordmark forming the word \"Canada\" into the shape of a heart, under the tagline \"For Glowing Hearts\", replacing the 2006–2019 \"Keep Exploring\" brand — is well documented, but searching Wikimedia Commons and the (stub) English Wikipedia article for Destination Canada found no freely-licensed copy of the logo; the agency's own brand-asset pages (brand.destinationcanada.com) are not a Commons/Wikipedia source.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Destination_Canada",
+        "https://www.creativebloq.com/news/destination-canada-logo",
+        "https://www.theglobeandmail.com/business/article-canada-revamps-its-tourism-brand-to-project-an-inclusive-image/",
+      ],
+    },
+  ],
+  CL: [
+    {
+      id: "cl-chile-nature-that-transforms",
+      countryCode: "CL",
+      name: "Chile — \"Nature That Transforms You\"",
+      slogan: "Nature That Transforms You",
+      agency:
+        "Servicio Nacional de Turismo (SERNATUR), Chile's National Tourism Service, under the Ministry of Economy — country-image promotion is handled separately by the Fundación Imagen de Chile (\"Marca Chile\")",
+      visitors: {
+        count: 5431000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Chile)",
+      },
+      noImageReason:
+        "SERNATUR's own bundled Wikimedia Commons file (\"Sernatur.png\") is described on its own file page as the agency's INSTITUTIONAL emblem, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. Chile's actual consumer-facing tourism campaigns run under taglines like \"Chile es tuyo\" (2013) and \"Chile, Nature That Transforms You\" (current), promoted separately through the Fundación Imagen de Chile's \"Marca Chile\" country-branding programme — but no freely-licensed image distinct from SERNATUR's institutional emblem could be found for either campaign on Wikimedia Commons or Wikipedia.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Sernatur.png",
+        "https://en.wikipedia.org/wiki/Tourism_in_Chile",
+        "https://www.amchamchile.cl/en/2013/10/turismo-vender-el-chile-real",
+      ],
+    },
+  ],
+  CO: [
+    {
+      id: "co-the-answer-is-colombia",
+      countryCode: "CO",
+      name: "Colombia — \"The Answer Is Colombia\"",
+      slogan: "The Answer Is Colombia",
+      agency:
+        "ProColombia, under the Ministry of Commerce, Industry and Tourism (the country-brand campaign launched in 2012, replacing the earlier \"Colombia is Passion\")",
+      launched: 2012,
+      visitors: {
+        count: 1396000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Colombia)",
+      },
+      noImageReason:
+        "\"The Answer Is Colombia\" (2012) — whose mark uses a toucan/parrot motif referencing the country's biodiversity — is well documented, but searching Wikimedia Commons and the English Wikipedia article for \"Tourism in Colombia\" found no freely-licensed copy of the logo.",
+      sources: [
+        "https://skift.com/2012/09/12/colombia-launches-new-brand-identity-focusing-on-its-megadiversity/",
+        "https://en.wikipedia.org/wiki/Tourism_in_Colombia",
+        "https://colombia.co/en/faq-colombia-country-brand",
+      ],
+    },
+  ],
+  CR: [
+    {
+      id: "cr-pura-vida",
+      countryCode: "CR",
+      name: "Costa Rica — \"Pura Vida\"",
+      slogan: "Pura Vida (Essential Costa Rica)",
+      agency: "Instituto Costarricense de Turismo (ICT), founded 1955",
+      visitors: {
+        count: 1146500,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Costa Rica)",
+      },
+      noImageReason:
+        "\"Pura Vida\" (\"pure life\") is Costa Rica's long-running tourism identity, used by the ICT under campaign names including \"Essential Costa Rica\" and \"No Artificial Ingredients\" — but searching Wikimedia Commons, the English Wikipedia articles for \"Pura Vida\" and \"Tourism in Costa Rica\", and the ICT's own site (ict.go.cr) found no freely-licensed copy of the current logo.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Pura_Vida",
+        "https://www.ict.go.cr/en/institutional-services/country-brand.html",
+        "https://www.visitcostarica.com/press/press-releases/general-travel/livin-la-vida-pura",
+      ],
+    },
+  ],
+  HR: [
+    {
+      id: "hr-full-of-life",
+      countryCode: "HR",
+      name: "Croatia — \"Full of Life\"",
+      slogan: "Full of Life",
+      agency: "Croatian National Tourist Board (Hrvatska turistička zajednica, HTZ)",
+      visitors: {
+        count: 21608000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Croatia)",
+      },
+      noImageReason:
+        "\"Croatia, Full of Life\" (a hand-painted brushstroke wordmark, developed by a BBDO agency consortium) replaced the earlier \"The Mediterranean As It Once Was\" slogan — but searching Wikimedia Commons and the Croatian Wikidata item found no freely-licensed copy of the logo on Commons or Wikipedia; copies found on commercial clip-art sites carry no verifiable licence.",
+      sources: [
+        "https://www.hina.hr/news/8593016",
+        "https://total-croatia-news.com/news/travel/croatia-full-of-life/",
+        "https://www.wikidata.org/wiki/Q224",
+      ],
+    },
+  ],
+  CZ: [
+    {
+      id: "cz-visitczechia",
+      countryCode: "CZ",
+      name: "VisitCzechia",
+      agency: "CzechTourism (agency of the Ministry of Regional Development)",
+      launched: 2013,
+      visitors: {
+        count: 37202000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Czechia)",
+      },
+      noImageReason:
+        "CzechTourism's current \"VisitCzechia\" wordmark (relaunched from the 2013 \"#CzechTourism\" identity by the Prague studio Marvil after the country's short-form name changed to Czechia) is documented on the agency's own site, but searching Wikimedia Commons (Category:Tourism in the Czech Republic) and the English Wikipedia article for \"Tourism in the Czech Republic\" found no freely-licensed copy of the logo.",
+      sources: [
+        "https://logos.fandom.com/wiki/Czech_Republic_(tourism)",
+        "https://www.visitczechia.com/en-us/about-us",
+        "https://en.wikipedia.org/wiki/Tourism_in_the_Czech_Republic",
+      ],
+    },
+  ],
   BA: [
     {
       id: "ba-heart-shaped-land",
