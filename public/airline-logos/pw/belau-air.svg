@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="500" height="160">
+  <rect width="500" height="160" fill="transparent"/>
+  <!-- Belau Air Pacific full moon & island flight wings -->
+  <g transform="translate(35, 20)">
+    <circle cx="60" cy="60" r="55" fill="#4aadd6"/>
+    <circle cx="55" cy="60" r="32" fill="#ffde00"/>
+    <!-- Stylized soaring albatross wing -->
+    <path d="M15 68 C45 35 85 45 115 52 C80 60 45 65 15 68 Z" fill="#002040"/>
+    <path d="M25 78 C50 52 80 58 105 64 C75 70 48 74 25 78 Z" fill="#ffffff"/>
+  </g>
+  <text x="175" y="75" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="800" fill="#002040" letter-spacing="2">BELAU AIR</text>
+  <text x="177" y="105" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#4aadd6" letter-spacing="4">REPUBLIC OF PALAU</text>
+</svg>

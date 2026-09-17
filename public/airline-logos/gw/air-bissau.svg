@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="500" height="160">
+  <rect width="500" height="160" fill="transparent"/>
+  <!-- Air Bissau historic wing roundel -->
+  <g transform="translate(35, 20)">
+    <circle cx="60" cy="60" r="55" fill="#ce1126"/>
+    <circle cx="60" cy="60" r="42" fill="#fcd116"/>
+    <!-- Black African star of Guinea-Bissau -->
+    <path d="M60 28 L64 42 L78 42 L67 51 L71 65 L60 56 L49 65 L53 51 L42 42 L56 42 Z" fill="#000000"/>
+    <!-- Aerodynamic flight wings -->
+    <path d="M5 60 Q45 50 115 60 Q75 68 5 60 Z" fill="#007a3d"/>
+    <path d="M15 70 Q50 62 105 70 Q70 76 15 70 Z" fill="#ce1126"/>
+  </g>
+  <text x="175" y="75" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="800" fill="#1e293b" letter-spacing="2">AIR BISSAU</text>
+  <text x="177" y="106" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#007a3d" letter-spacing="3.5">LINHAS AÉREAS DA GUINÉ-BISSAU</text>
+</svg>

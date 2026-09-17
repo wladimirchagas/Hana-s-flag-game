@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="500" height="160">
+  <rect width="500" height="160" fill="transparent"/>
+  <!-- Central African pan-African flight crest -->
+  <g transform="translate(40, 25)">
+    <path d="M20 75 Q70 15 110 50 Q75 60 40 85 Z" fill="#003399"/>
+    <path d="M35 85 Q80 30 115 60 Q85 70 55 95 Z" fill="#ffffff" stroke="#003399" stroke-width="1"/>
+    <path d="M50 95 Q90 45 120 70 Q95 80 65 105 Z" fill="#009933"/>
+    <path d="M65 105 Q100 60 125 80 Q105 90 75 115 Z" fill="#ffcc00"/>
+    <path d="M15 45 L25 52 L22 40 L30 32 L19 32 L15 20 L11 32 L0 32 L8 40 L5 52 Z" fill="#ffcc00" transform="translate(85, 5) scale(0.8)"/>
+    <path d="M10 70 C50 65 90 75 130 95 C90 85 50 80 10 70 Z" fill="#d21034"/>
+  </g>
+  <text x="190" y="78" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="800" fill="#003399" letter-spacing="1.5">KARINOU</text>
+  <text x="192" y="110" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#d21034" letter-spacing="4.5">AIRLINES</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="500" height="160">
+  <rect width="500" height="160" fill="transparent"/>
+  <g transform="translate(35, 20)">
+    <circle cx="60" cy="60" r="55" fill="#009e49"/>
+    <!-- Caribbean sun & Nevis mountain peak -->
+    <polygon points="60,25 25,85 95,85" fill="#fcd116"/>
+    <polygon points="60,25 45,85 75,85" fill="#000000"/>
+    <circle cx="60" cy="22" r="8" fill="#ce1126"/>
+    <path d="M10 65 Q60 50 115 62 Q65 72 10 65 Z" fill="#ffffff"/>
+  </g>
+  <text x="175" y="75" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="800" fill="#1e293b" letter-spacing="2">NEVIS EXPRESS</text>
+  <text x="177" y="105" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#009e49" letter-spacing="3">ST. KITTS &amp; NEVIS AIRWAYS</text>
+</svg>
