@@ -2869,4 +2869,129 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  SA: [
+    {
+      id: "sa-visit-saudi",
+      countryCode: "SA",
+      name: "Visit Saudi",
+      slogan: "روح السعودية (Spirit of Saudi Arabia)",
+      agency: "Saudi Tourism Authority",
+      launched: 2020,
+      visitors: {
+        count: 20292000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Saudi Arabia)",
+      },
+      logo: "/tourism-logos/sa/visit-saudi.png",
+      logoExplainer:
+        "Flowing teal Arabic calligraphy reading \"روح السعودية\" (\"Spirit of Saudi Arabia\") — the Saudi Tourism Authority's own \"Visit Saudi\" wordmark, created by the authority (established March 2020) and published on its own visitsaudi.com brand site.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Visit_Saudi_Logo.svg",
+        "https://en.wikipedia.org/wiki/Saudi_Tourism_Authority",
+      ],
+      licenceNote:
+        "Public domain per its Commons file page — \"consists only of simple geometric shapes or text\" (PD-textlogo), sourced from visitsaudi.com/ar and uploaded directly by the Saudi Tourism Authority in 2024. Bundled here as a small (120px) thumbnail export because upload.wikimedia.org rejected this session's request for the full-resolution original and intermediate thumbnail widths with a rate-limit error, accepting only sizes at or below a small rendered width.",
+    },
+  ],
+  CY: [
+    {
+      id: "cy-love-cyprus",
+      countryCode: "CY",
+      name: "Love Cyprus",
+      slogan: "Love Cyprus",
+      agency: "Cyprus Deputy Ministry of Tourism / Visit Cyprus",
+      launched: 2021,
+      visitors: {
+        count: 4117000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Cyprus)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for the 2021 \"Love Cyprus\" identity (a two-line \"LOVE\" wordmark whose overlapping letters form a heart-shaped V, replacing the 2006 Aphrodite emblem) — no freely-licensed copy could be found.",
+      sources: [
+        "https://www.visitcyprus.com/news/new-logo-and-brand-identity-2/",
+        "https://1000logos.net/news/love-cyprus-new-visual-identity-for-the-island-of-aphrodite/",
+      ],
+    },
+  ],
+  MT: [
+    {
+      id: "mt-visit-malta",
+      countryCode: "MT",
+      name: "Visit Malta",
+      agency: "Malta Tourism Authority",
+      visitors: {
+        count: 718000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Malta)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Malta) and the English Wikipedia \"Tourism in Malta\" article, which carries no infobox logo — no freely-licensed copy of the Malta Tourism Authority's \"Visit Malta\" logo (a deconstructed Maltese-cross mark naming the archipelago's three main islands) could be found.",
+      sources: [
+        "https://lovinmalta.com/lifestyle/art/revealed-new-malta-tourism-authority-logo-appears-on-website/",
+        "https://en.wikipedia.org/wiki/Tourism_in_Malta",
+      ],
+    },
+  ],
+  SK: [
+    {
+      id: "sk-good-idea-slovakia",
+      countryCode: "SK",
+      name: "Good Idea Slovakia",
+      slogan: "Good Idea Slovakia",
+      agency: "Ministry of Foreign and European Affairs of the Slovak Republic",
+      visitors: {
+        count: 15299000,
+        year: 2018,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Slovakia)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for \"Good Idea Slovakia\" — Slovakia's national brand and tourism/investment slogan, set in Typotheque's History font — no freely-licensed copy of the logo could be found.",
+      sources: [
+        "https://fontsinuse.com/uses/13705/good-idea-slovakia",
+        "https://scd.sk/dielo-ncd/good-idea-slovakia/",
+      ],
+    },
+  ],
+  LU: [
+    {
+      id: "lu-visit-luxembourg",
+      countryCode: "LU",
+      name: "Visit Luxembourg",
+      agency: "Luxembourg for Tourism (LFT)",
+      visitors: {
+        count: 525000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Luxembourg)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in Luxembourg\" article, which carries no infobox logo — no freely-licensed copy of the Luxembourg for Tourism / Visit Luxembourg logo could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Luxembourg", "https://www.visitluxembourg.com/"],
+    },
+  ],
+  VE: [
+    {
+      id: "ve-mintur",
+      countryCode: "VE",
+      name: "Ministerio del Poder Popular para el Turismo",
+      agency: "Ministerio del Poder Popular para el Turismo (MINTUR), Venezuela",
+      visitors: {
+        count: 429000,
+        year: 2017,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Venezuela)",
+      },
+      noImageReason:
+        "Searched Wikidata (Q16607782) and Wikimedia Commons for a MINTUR consumer tourism-brand logo — the only linked image, \"Política de Venezuela.png\", is confirmed on its own Commons file page to be a GENERIC Venezuelan government seal reused across many unrelated ministries (Education, Foreign Affairs, Culture, Planning, Communication), not MINTUR's own or any consumer-facing tourism mark, so it was not used as a substitute per this repo's consumer-brand-not-institutional-seal standard.",
+      sources: [
+        "https://www.wikidata.org/wiki/Q16607782",
+        "https://commons.wikimedia.org/wiki/File:Pol%C3%ADtica_de_Venezuela.png",
+      ],
+    },
+  ],
 };
