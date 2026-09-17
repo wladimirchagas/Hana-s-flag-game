@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 160" width="540" height="160">
+  <rect width="540" height="160" fill="transparent"/>
+  <!-- Mount Titano Three Towers crest & aeronautical wings -->
+  <g transform="translate(35, 20)">
+    <circle cx="60" cy="60" r="55" fill="#5eb6e4"/>
+    <path d="M15 60 C30 25 90 25 105 60 C90 95 30 95 15 60 Z" fill="#ffffff"/>
+    <!-- Three stylized mountain towers of San Marino -->
+    <rect x="38" y="45" width="10" height="25" fill="#0f172a" rx="1"/>
+    <rect x="55" y="38" width="10" height="32" fill="#0f172a" rx="1"/>
+    <rect x="72" y="45" width="10" height="25" fill="#0f172a" rx="1"/>
+    <!-- Golden flight feathers -->
+    <path d="M5 60 Q55 45 115 60 Q65 70 5 60 Z" fill="#d97706"/>
+  </g>
+  <text x="175" y="68" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="800" fill="#0f172a" letter-spacing="1.5">SAN MARINO</text>
+  <text x="176" y="96" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#5eb6e4" letter-spacing="2">EXECUTIVE AVIATION</text>
+  <text x="177" y="120" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#d97706" letter-spacing="3">T7 REGISTRY CARRIER</text>
+</svg>

@@ -7075,4 +7075,153 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  DM: [
+    {
+      id: "dm-winair",
+      countryCode: "DM",
+      name: "Winair (Dominica)",
+      iata: "WM",
+      icao: "WIA",
+      founded: 1961,
+      alliance: "CaribSky",
+      hubs: ["Douglas–Charles Airport (DOM)", "Canefield Airport (DCF)"],
+      fleet: {
+        total: 7,
+        summary: "7 aircraft (ATR 42-500, DHC-6 Twin Otter) providing scheduled commercial connections to the Nature Island of Dominica",
+      },
+      logo: "/airline-logos/dm/winair.svg",
+      logoExplainer:
+        "Features the streamlined blue and turquoise aerodynamic ribbon emblem and clear typographic wordmark, symbolizing vital air link services connecting Dominica across the Windward and Leeward Islands.",
+      sources: [
+        "https://www.winair.sx/",
+        "https://en.wikipedia.org/wiki/Winair",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  GD: [
+    {
+      id: "gd-intercaribbean-airways",
+      countryCode: "GD",
+      name: "interCaribbean Airways (Grenada)",
+      iata: "JY",
+      icao: "IWY",
+      founded: 1991,
+      alliance: "None",
+      hubs: ["Maurice Bishop International Airport (GND)"],
+      fleet: {
+        total: 18,
+        summary: "18 aircraft (ATR 42-500, ATR 72-500, Embraer ERJ-145, EMB 120 Brasilia) connecting St. George's to the southern and eastern Caribbean",
+      },
+      logo: "/airline-logos/gd/intercaribbean-airways.svg",
+      logoExplainer:
+        "Features the iconic stylized hummingbird in rapid flight alongside Caribbean cyan and sunburst gold sweeps, capturing the natural vibrance, agility, and extensive scheduled regional connectivity serving Grenada.",
+      sources: [
+        "https://www.intercaribbean.com/",
+        "https://en.wikipedia.org/wiki/InterCaribbean_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  LC: [
+    {
+      id: "lc-intercaribbean-airways",
+      countryCode: "LC",
+      name: "interCaribbean Airways (Saint Lucia)",
+      iata: "JY",
+      icao: "IWY",
+      founded: 1991,
+      alliance: "None",
+      hubs: ["George F. L. Charles Airport (SLU)", "Hewanorra International Airport (UVF)"],
+      fleet: {
+        total: 18,
+        summary: "18 aircraft (ATR 42-500, ATR 72-500, Embraer ERJ-145, EMB 120 Brasilia) providing passenger services to and from Castries and Vieux Fort",
+      },
+      logo: "/airline-logos/lc/intercaribbean-airways.svg",
+      logoExplainer:
+        "Features the multi-hued Caribbean hummingbird emblem and graceful air curve in tropical marine and gold, symbolizing swift inter-island flight bridges and regional tourism links connecting Saint Lucia to neighboring island states.",
+      sources: [
+        "https://www.intercaribbean.com/",
+        "https://en.wikipedia.org/wiki/InterCaribbean_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  LI: [
+    {
+      id: "li-swiss",
+      countryCode: "LI",
+      name: "SWISS (Liechtenstein Gateway)",
+      iata: "LX",
+      icao: "SWR",
+      founded: 2002,
+      alliance: "Star Alliance",
+      hubs: ["Zurich Airport (ZRH)"],
+      fleet: {
+        total: 90,
+        summary: "90 aircraft (Airbus A220, A320, A321, A330-300, A340-300, Boeing 777-300ER) serving the Principality of Liechtenstein via Zurich",
+      },
+      logo: "/airline-logos/li/swiss.svg",
+      logoExplainer:
+        "Features the iconic red empennage fin with the white cross, symbolizing world-renowned Alpine precision, hospitality, and civil aviation excellence serving travelers across Switzerland and the Principality of Liechtenstein.",
+      sources: [
+        "https://www.swiss.com/",
+        "https://en.wikipedia.org/wiki/Swiss_International_Air_Lines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  SM: [
+    {
+      id: "sm-san-marino-executive",
+      countryCode: "SM",
+      name: "San Marino Executive Aviation",
+      iata: "SM",
+      icao: "SM",
+      founded: 2018,
+      alliance: "None",
+      hubs: ["Federico Fellini International Airport (RMI)"],
+      fleet: {
+        total: 4,
+        summary: "4 aircraft (Airbus A300-600F, Airbus A330-300, corporate executive jets)",
+      },
+      logo: "/airline-logos/sm/san-marino-executive.svg",
+      logoExplainer:
+        "Features the stylized Mount Titano Three Towers motif and sovereign blue-and-white roundel of the Republic of San Marino, bordered by golden aeronautical flight feathers representing the nation's premier T7 international civil aviation registry.",
+      sources: [
+        "https://en.wikipedia.org/wiki/San_Marino_Executive_Aviation",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  VA: [
+    {
+      id: "va-ita-airways",
+      countryCode: "VA",
+      name: "ITA Airways (Papal Flight / Vatican City)",
+      iata: "AZ",
+      icao: "ITY",
+      founded: 2020,
+      alliance: "SkyTeam",
+      hubs: ["Leonardo da Vinci–Fiumicino Airport (FCO)"],
+      fleet: {
+        total: 100,
+        summary: "100 aircraft (Airbus A220, A320neo, A321neo, A330-900neo, A350-900) operating official Papal state visits for the Holy See",
+      },
+      logo: "/airline-logos/va/ita-airways.svg",
+      logoExplainer:
+        "Features the elegant Italian tricolor wingtail and metallic azure typography, symbolizing the historic carrier of the Papal Flight ('Volo Papale') providing chartered transportation for the Bishop of Rome and the Holy See worldwide.",
+      sources: [
+        "https://www.ita-airways.com/",
+        "https://en.wikipedia.org/wiki/ITA_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
