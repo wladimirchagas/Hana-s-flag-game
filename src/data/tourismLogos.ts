@@ -3469,4 +3469,110 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         "Public domain per its Commons file page — dedicated to the public domain (CC0) by the uploader, categorised under \"Office national du tourisme de Guinée\" and used as the logo in that organisation's own French Wikipedia infobox. Bundled here as a small (120px) thumbnail export because upload.wikimedia.org rejected this session's request for the full-resolution original and intermediate thumbnail widths with a rate-limit error, accepting only sizes at or below a small rendered width.",
     },
   ],
+  BF: [
+    {
+      id: "bf-faso-tourisme",
+      countryCode: "BF",
+      name: "Faso Tourisme",
+      agency: "Agence Faso Tourisme, Burkina Faso",
+      launched: 2024,
+      visitors: {
+        count: 67000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Burkina Faso)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for a logo of \"Faso Tourisme\", the national tourism-promotion agency the Burkinabè government created in November 2024 to replace the Office National du Tourisme Burkinabè (ONTB) — no freely-licensed copy could be found.",
+      sources: [
+        "https://www.presidencedufaso.bf/promotion-du-tourisme-au-burkina-faso-le-gouvernement-cree-lagence-faso-tourisme/",
+        "https://en.wikipedia.org/wiki/Tourism_in_Burkina_Faso",
+      ],
+    },
+  ],
+  CF: [
+    {
+      id: "cf-tourism",
+      countryCode: "CF",
+      name: "Tourism in the Central African Republic",
+      agency: "Ministère du Tourisme, Central African Republic",
+      visitors: {
+        count: 87000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Central African Republic)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in the Central African Republic\" article — no freely-licensed national tourism-board logo could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Central_African_Republic"],
+    },
+  ],
+  DJ: [
+    {
+      id: "dj-visit-djibouti",
+      countryCode: "DJ",
+      name: "Visit Djibouti",
+      agency: "Office National du Tourisme de Djibouti (ONTD)",
+      visitors: {
+        count: 63000,
+        year: 2013,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Djibouti; this is an older figure, no newer one is published)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Djibouti, 11 files — telecom, gendarmerie, parliament, broadcaster, none tourism-related) for the ONTD's \"Visit Djibouti\" brand — no freely-licensed copy could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Djibouti"],
+    },
+  ],
+  ML: [
+    {
+      id: "ml-mali-tourisme",
+      countryCode: "ML",
+      name: "Mali Tourisme",
+      agency: "Agence de Promotion Touristique du Mali (Mali Tourisme)",
+      visitors: {
+        count: 217000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mali)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for a logo of the Agence de Promotion Touristique du Mali (\"Mali Tourisme\", which succeeded the Office Malien du Tourisme et de l'Hôtellerie, OMATHO) — no freely-licensed copy could be found.",
+      sources: ["https://fr.wikipedia.org/wiki/Tourisme_au_Mali", "https://officetourismemali.com/"],
+    },
+  ],
+  NE: [
+    {
+      id: "ne-tourism",
+      countryCode: "NE",
+      name: "Tourism in Niger",
+      agency: "Ministère du Tourisme et de l'Artisanat, Niger",
+      visitors: {
+        count: 85000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Niger)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in Niger\" article, which names no national tourism authority at all — no sourced tourism-promotion brand or logo could be found for Niger.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Niger"],
+    },
+  ],
+  TG: [
+    {
+      id: "tg-tourism",
+      countryCode: "TG",
+      name: "Tourism in Togo",
+      agency: "Ministère du Tourisme, Togo",
+      visitors: {
+        count: 482000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Togo)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for a Togo national tourism-office logo — no freely-licensed copy could be found. The English Wikipedia does not even carry a \"Tourism in Togo\" article to check for a named authority or brand.",
+      sources: ["https://www.nz.kayak.com/Togo.239.dc.guide"],
+    },
+  ],
 };
