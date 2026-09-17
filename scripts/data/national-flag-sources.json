@@ -1838,6 +1838,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "as-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the American Samoa National Olympic Committee",
+          "design": "The American Samoa National Olympic Committee's mark: a brown bald eagle grasping a war club and fly-whisk — the same symbols on American Samoa's flag and seal — above the words “AMERICAN SAMOA” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/American_Samoa_National_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1987"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "10"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "2"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "2"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "as/as-olympic-committee.jpg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/American%20Samoa%20National%20Olympic%20Committee%20logo.jpg",
+          "licenceNote": "Non-free logo bundled from English Wikipedia (American Samoa National Olympic Committee); no free-licensed file was found on Wikimedia Commons at time of sourcing.",
+          "sha256": "7b701dfbdd177ee1e8cd566945d6fa9acb2e3cb88813eb14901ad44dd8b7400a",
+          "fetched": "2026-09-17"
         }
       ]
     },
@@ -2474,6 +2516,48 @@
           },
           "sha256": "2973c0451ae62766bd5feaee6930c56951e973caa54099b485963f69d57fdf38",
           "fetched": "2026-08-13"
+        },
+        {
+          "id": "aw-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Aruban Olympic Committee",
+          "design": "The Aruban Olympic Committee's mark: Aruba's national flag — blue with a red four-pointed star and two gold stripes — above the word “ARUBA” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Aruban_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1985"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "10"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "6"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "aw/aw-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Aruban%20Olympic%20Committee%20logo.svg",
+          "licenceNote": "Non-free logo bundled from English Wikipedia (Aruban Olympic Committee); no free-licensed file was found on Wikimedia Commons at time of sourcing.",
+          "sha256": "6fabe7f281f1db17c910f9243ab84a673efdf35b1d17b334769a7a6e98a3cdbb",
+          "fetched": "2026-09-17"
         }
       ]
     },
@@ -4726,6 +4810,48 @@
           "source": "https://en.wikipedia.org/wiki/Bermuda_Football_Association",
           "sha256": "e07f2fd042eae2c949af5957480d85e375717f521a5198b6cbd6769b9a191edf",
           "fetched": "2026-08-18"
+        },
+        {
+          "id": "bm-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Bermuda Olympic Association",
+          "design": "The Bermuda Olympic Association's mark: Bermuda's coat of arms — a red lion holding a shield depicting the wreck of the Sea Venture — above the word “BERMUDA” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Bermuda_Olympic_Association",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1935"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "20"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "1–0–1 (2 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "8"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "bm/bm-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Bermuda%20Olympic%20Association%20logo.png",
+          "licenceNote": "Non-free logo bundled from English Wikipedia (Bermuda Olympic Association); no free-licensed file was found on Wikimedia Commons at time of sourcing.",
+          "sha256": "363068765a27fb5296c03edbb1d59fa7f954451a0a0e2fd30871e92c4df3ae4d",
+          "fetched": "2026-09-17"
         }
       ]
     },
@@ -8251,6 +8377,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "ck-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Cook Islands Sports and National Olympic Committee",
+          "design": "The Cook Islands Sports and National Olympic Committee's mark: gold stars ringing a green sprouting coconut, above the words “COOK ISLANDS” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Cook_Islands_Sports_and_National_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1986"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "10"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "0"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "N/A — never competed"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "2"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "ck/ck-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Cook_Islands_Sports_and_National_Olympic_Committee_logo.png",
+          "licenceNote": "Non-free logo bundled from English Wikipedia (Cook Islands Sports and National Olympic Committee); no free-licensed file was found on Wikimedia Commons at time of sourcing.",
+          "sha256": "254f0699ad7f5b125334bf56db4b5386e6da04b7a237dd6364194975bcc8b262",
+          "fetched": "2026-09-17"
         }
       ]
     },
@@ -17003,6 +17171,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "gu-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Guam National Olympic Committee",
+          "design": "The Guam National Olympic Committee's mark: a teardrop-shaped badge showing Guam's Hagåtña Bay with a proa (outrigger sailing canoe) and a coconut palm, above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Guam_National_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1976"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "10"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "1"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "8"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "gu/gu-olympic-committee.svg",
+          "commons": "Guam National Olympic Committee logo.svg",
+          "sha256": "06e279080780d24889f045e667a4f82a3df3fb80d9c49e357c0ff97912100e39",
+          "fetched": "2026-09-17"
         }
       ]
     },
@@ -17510,6 +17719,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "hk-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Sports Federation and Olympic Committee of Hong Kong, China",
+          "design": "The Sports Federation and Olympic Committee of Hong Kong, China's mark: a red bauhinia flower — the same emblem on Hong Kong's own flag — ringed by the committee's name in Chinese and English, above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Sports_Federation_and_Olympic_Committee_of_Hong_Kong,_China",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1950"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "18"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "7"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "4–3–6 (13 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "36"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "4"
+            }
+          ],
+          "file": "hk/hk-olympic-committee.svg",
+          "commons": "Sports Federation and Olympic Committee of Hong Kong, China logo.svg",
+          "sha256": "dd1b9b5d98771b946663c79d8265604242d04fc4b036c2ff49dbb6e1967a9856",
+          "fetched": "2026-09-17"
         }
       ]
     },
@@ -23652,6 +23902,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "ky-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Cayman Islands Olympic Committee",
+          "design": "The Cayman Islands Olympic Committee's mark: a shield bearing a golden lion, three stars and a green turtle over blue-and-white waves — from the Cayman Islands' coat of arms — above the words “CAYMAN ISLANDS” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Cayman_Islands_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1973"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "12"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "2"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "4"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "ky/ky-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Cayman%20Islands%20Olympic%20Committee%20logo.svg",
+          "licenceNote": "Non-free logo bundled from English Wikipedia (Cayman Islands Olympic Committee); no free-licensed file was found on Wikimedia Commons at time of sourcing.",
+          "sha256": "234dfe3e9e95362bdd1d4b2e9df289476a40bd5f93c080d1dca321a1f6c3ddcd",
+          "fetched": "2026-09-17"
         }
       ]
     },
@@ -34996,6 +35288,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "pr-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Puerto Rico Olympic Committee",
+          "design": "The Puerto Rico Olympic Committee's mark: a shield reading “PUR” beneath a white star, above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Puerto_Rico_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1947"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "20"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "9"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "2–2–8 (12 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "51"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "1"
+            }
+          ],
+          "file": "pr/pr-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Puerto_Rico_Olympic_Committee_logo.png",
+          "licenceNote": "Non-free logo bundled from English Wikipedia (Puerto Rico Olympic Committee); no free-licensed file was found on Wikimedia Commons at time of sourcing.",
+          "sha256": "512262c4716d1a2b06c60338043aabb71424f78f7eca3fe2bb6038ab2d22b15a",
+          "fetched": "2026-09-17"
         }
       ]
     },
@@ -43220,6 +43554,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "tw-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Chinese Taipei Olympic Committee",
+          "design": "The Chinese Taipei Olympic Committee's mark: the plum-blossom Olympic emblem adopted under the 1981 Nagoya Resolution — a white sun-and-ring badge on a blue-and-red plum-blossom field — ringed by the Olympic rings, used in place of a national flag under the Republic of China's (Taiwan) special IOC arrangement.",
+          "source": "https://en.wikipedia.org/wiki/Chinese_Taipei_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1910 (as the CNOC); 3 April 1922 (as COC)"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "16"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "14"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "9–11–23 (43 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "60"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "9"
+            }
+          ],
+          "file": "tw/tw-olympic-committee.svg",
+          "commons": "Emblem of Chinese Taipei for Olympic games.svg",
+          "sha256": "45f297a67389c978655c72dabc21f469315603adee7de3cf010aee2ba2e3a14b",
+          "fetched": "2026-09-17"
         }
       ]
     },
@@ -46451,6 +46826,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "vg-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the British Virgin Islands Olympic Committee",
+          "design": "The British Virgin Islands Olympic Committee's mark: a stylised golden flourish with a pink hibiscus flower, ringed by the words “BRITISH VIRGIN ISLANDS OLYMPIC COMMITTEE,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/British_Virgin_Islands_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1980"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "11"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "2"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "4"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "vg/vg-olympic-committee.svg",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/British%20Virgin%20Islands%20Olympic%20Committee%20logo.svg",
+          "licenceNote": "Non-free logo bundled from English Wikipedia (British Virgin Islands Olympic Committee); no free-licensed file was found on Wikimedia Commons at time of sourcing.",
+          "sha256": "63713a4b0c921054ec482ec82fd91936978f98eb82c0739c7da87387ab5c9725",
+          "fetched": "2026-09-17"
         }
       ]
     },
@@ -46543,6 +46960,48 @@
               }
             ]
           }
+        },
+        {
+          "id": "vi-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Virgin Islands Olympic Committee",
+          "design": "The Virgin Islands Olympic Committee's (U.S. Virgin Islands) mark: a colourful stylised seabird in flight, ringed by the words “VIRGIN ISLANDS OLYMPIC COMMITTEE,” above the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Virgin_Islands_Olympic_Committee",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1967"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "14"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "8"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "0–1–0 (1 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "5"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "0 — did not compete"
+            }
+          ],
+          "file": "vi/vi-olympic-committee.png",
+          "url": "https://en.wikipedia.org/wiki/Special:FilePath/Virgin%20Islands%20Olympic%20Committee%20logo.png",
+          "licenceNote": "Non-free logo bundled from English Wikipedia (Virgin Islands Olympic Committee); no free-licensed file was found on Wikimedia Commons at time of sourcing.",
+          "sha256": "894aeb3d430fcee8fd031c423868f177ebd57bb03baf850574a5a1c9493fa461",
+          "fetched": "2026-09-17"
         }
       ]
     },
@@ -47227,6 +47686,47 @@
               }
             ]
           }
+        },
+        {
+          "id": "xk-olympic-committee",
+          "category": "olympiccommittee",
+          "name": "Logo of the Olympic Committee of Kosovo",
+          "design": "The Olympic Committee of Kosovo's mark: Kosovo's national flag — a gold silhouette map of Kosovo with six white stars on blue — above the word “KOSOVO” and the Olympic rings.",
+          "source": "https://en.wikipedia.org/wiki/Olympic_Committee_of_Kosovo",
+          "stats": [
+            {
+              "label": "NOC founded",
+              "value": "1992"
+            },
+            {
+              "label": "Summer Games participated",
+              "value": "3"
+            },
+            {
+              "label": "Winter Games participated",
+              "value": "3"
+            },
+            {
+              "label": "Summer Olympic medals (G–S–B)",
+              "value": "3–1–1 (5 total)"
+            },
+            {
+              "label": "Winter Olympic medals (G–S–B)",
+              "value": "0–0–0 (none)"
+            },
+            {
+              "label": "Athletes at Paris 2024 (Summer)",
+              "value": "9"
+            },
+            {
+              "label": "Athletes at Milano Cortina 2026 (Winter)",
+              "value": "2"
+            }
+          ],
+          "file": "xk/xk-olympic-committee.png",
+          "commons": "Olympic Committee of Kosovo logo.png",
+          "sha256": "72f5636d593e845ca40687e7caf5e65a89f86c8fbe1e7614f9295d4b6539921b",
+          "fetched": "2026-09-17"
         }
       ]
     },
