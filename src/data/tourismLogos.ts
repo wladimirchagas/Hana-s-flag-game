@@ -27,6 +27,198 @@ import type { TourismLogo } from "../types/tourismLogo";
  * sweeps for the discipline this collection follows: source properly, never pad.
  */
 export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
+  BA: [
+    {
+      id: "ba-heart-shaped-land",
+      countryCode: "BA",
+      name: "Bosnia and Herzegovina — \"The Heart-Shaped Land\"",
+      slogan: "The Heart-Shaped Land",
+      agency:
+        "Tourism promotion in Bosnia and Herzegovina is split between entity-level bodies (the Tourist Board of the Federation of Bosnia and Herzegovina and the Tourist Organisation of Republika Srpska) rather than a single national board",
+      visitors: {
+        count: 197000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Bosnia and Herzegovina)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Bosnia and Herzegovina), the English Wikipedia article for \"Tourism in Bosnia and Herzegovina\", and general web search — the country's own roughly heart-shaped outline gives rise to the widely-used \"Heart-Shaped Land\" tourism slogan, but no single national tourism-board logo could be found: the country's tourism promotion is constitutionally split between the two entities' own tourist boards rather than unified under one national brand mark.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Bosnia_and_Herzegovina",
+        "https://emerging-europe.com/the-heart-shaped-land/",
+      ],
+    },
+  ],
+  BB: [
+    {
+      id: "bb-visit-barbados",
+      countryCode: "BB",
+      name: "Visit Barbados",
+      agency: "Barbados Tourism Marketing Inc.",
+      visitors: {
+        count: 966000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Barbados)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Barbados, which holds the Barbados National Trust's logo but not a tourism-board one), the visitbarbados.org site, and general web search — no freely-licensed \"Visit Barbados\" logo file could be found on Commons or Wikipedia.",
+      sources: [
+        "https://www.visitbarbados.org/",
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Barbados",
+      ],
+    },
+  ],
+  BE: [
+    {
+      id: "be-visitflanders",
+      countryCode: "BE",
+      name: "VISITFLANDERS",
+      agency:
+        "Belgium has no single national tourism board — tourism promotion is a competence of its three regions, each with its own body and brand: VISITFLANDERS (Flanders), Wallonie Belgique Tourisme / Visit Wallonia (Wallonia), and visit.brussels (Brussels-Capital Region)",
+      visitors: {
+        count: 2584000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Belgium)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons, the English Wikipedia article for \"Tourism in Belgium\", and each region's own site (visitflanders.com, visitwallonia.be, visit.brussels) — no freely-licensed logo file for any of the three regional tourism boards could be found on Commons or Wikipedia. Belgium's tourism branding is federated (like the UK's four home-nation football associations), so a single \"Belgium\" mark would misrepresent how the country actually promotes itself.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Belgium",
+        "https://www.visitflanders.com/en",
+        "https://www.visit.brussels/en/press/branding",
+      ],
+    },
+  ],
+  BH: [
+    {
+      id: "bh-visit-bahrain",
+      countryCode: "BH",
+      name: "Bahrain Tourism and Exhibitions Authority",
+      agency:
+        "Bahrain Tourism and Exhibitions Authority (BTEA), established by Royal Decree 76/2015, operator of the \"Visit Bahrain\" brand",
+      launched: 2015,
+      visitors: {
+        count: 1909000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Bahrain)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Bahrain), the English Wikipedia article for \"Tourism in Bahrain\", and the BTEA's own bahrain.com / portal.btea.bh sites — no freely-licensed BTEA / Visit Bahrain logo file could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Bahrain",
+        "https://portal.btea.bh/MainP/AboutUs",
+      ],
+    },
+  ],
+  BI: [
+    {
+      id: "bi-tourism-office",
+      countryCode: "BI",
+      name: "Office National du Tourisme (Burundi)",
+      agency: "Office National du Tourisme, Burundi's national tourism authority",
+      visitors: {
+        count: 299000,
+        year: 2017,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Burundi)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons, the English Wikipedia article for \"Tourism in Burundi\", and general web search — no distinct tourism-board logo or destination-marketing brand mark could be found; Burundi's tourism promotion has no documented consumer-facing brand comparable to Malaysia's or Indonesia's.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Burundi"],
+    },
+  ],
+  BJ: [
+    {
+      id: "bj-un-monde-de-splendeurs",
+      countryCode: "BJ",
+      name: "Benin — \"A World of Splendors\"",
+      slogan: "A World of Splendors",
+      agency: "Bénin Tourisme, under the Ministry of Tourism, Culture and Arts",
+      visitors: {
+        count: 337000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Benin)",
+      },
+      noImageReason:
+        "Benin unveiled a new country-brand visual identity, \"Bénin, un Monde de Splendeurs\" (\"Benin, a World of Splendors\"), drawing on the Amazones, Bio Guéra, Gèlèdè and Egungun motifs — but the logo is only published on the government's own benin.bj site, and no freely-licensed copy could be found on Wikimedia Commons or Wikipedia after searching both.",
+      sources: [
+        "https://benin.bj/en/sectors/tourism",
+        "https://jumelages-partenariats.com/en/actualites.php?n=23522&art=Benin_unveils_the_visual_identity_of_its_country_brand%3A_%22Benin%2C_a_World_of_Splendors%22.",
+        "https://en.wikipedia.org/wiki/Tourism_in_Benin",
+      ],
+    },
+  ],
+  BN: [
+    {
+      id: "bn-brunei-tourism",
+      countryCode: "BN",
+      name: "Brunei Tourism",
+      agency:
+        "Brunei Tourism, under the Ministry of Primary Resources and Tourism",
+      visitors: {
+        count: 1071000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Brunei)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Brunei), the English Wikipedia article for \"Tourism in Brunei\", and the bruneitourism.com site — no freely-licensed Brunei Tourism logo file could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Brunei",
+        "https://www.bruneitourism.com/",
+      ],
+    },
+  ],
+  BT: [
+    {
+      id: "bt-bhutan-believe",
+      countryCode: "BT",
+      name: "Bhutan — \"Believe\"",
+      slogan: "Believe",
+      agency: "Tourism Council of Bhutan",
+      launched: 2022,
+      visitors: {
+        count: 29800,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Bhutan; a pandemic-year figure — Bhutan's tourism reopened in September 2022 under the current brand)",
+      },
+      noImageReason:
+        "The Tourism Council of Bhutan launched the country's current national brand, \"Bhutan: Believe\", on 22 September 2022 (replacing the earlier \"Happiness Is a Place\" brand, which paired a blue-poppy motif with its tagline). Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Bhutan\" — no freely-licensed logo for either brand could be found on Commons or Wikipedia.",
+      sources: [
+        "https://www.dailybhutan.com/article/bhutan-has-a-new-brand-and-tagline-bhutan-believe",
+        "https://www.fastcompany.com/90801783/heres-why-bhutan-just-gave-itself-a-new-brand",
+        "https://en.wikipedia.org/wiki/Tourism_in_Bhutan",
+      ],
+    },
+  ],
+  BO: [
+    {
+      id: "bo-corazon-del-sur",
+      countryCode: "BO",
+      name: "Bolivia — \"Corazón del Sur\"",
+      slogan: "Corazón del Sur (Heart of the South)",
+      agency:
+        "Viceministerio de Turismo, under Bolivia's Ministry of Culture, Decolonisation and Depatriarchalisation",
+      launched: 2017,
+      visitors: {
+        count: 323300,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Bolivia)",
+      },
+      noImageReason:
+        "Bolivia's current official country brand, \"Bolivia Corazón del Sur\" (\"Bolivia, Heart of the South\"), was established by Supreme Decree in 2017, replacing the earlier \"Bolivia te espera\" (\"Bolivia awaits you\") tourism logo used from 2010. Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Bolivia\" — no freely-licensed logo for either brand could be found on Commons or Wikipedia; copies of the older \"Bolivia te espera\" mark exist only on commercial logo-aggregator sites with no verifiable licence.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Bolivia",
+        "https://www.rigobertoparedes.com/en/country-brand-registration/",
+      ],
+    },
+  ],
   AU: [
     {
       id: "au-tourism-australia",
