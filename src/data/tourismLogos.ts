@@ -3685,4 +3685,88 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  ER: [
+    {
+      id: "er-ministry-of-tourism",
+      countryCode: "ER",
+      name: "Ministry of Tourism, Eritrea",
+      agency: "Ministry of Tourism, Eritrea",
+      visitors: {
+        count: 142000,
+        year: 2016,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Eritrea; this is an older figure, no newer one is published)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for an Eritrea tourism-board/ministry logo — no freely-licensed copy could be found; only the country's national emblem exists on Commons, which is not a consumer tourism brand and was not used as a substitute.",
+      sources: ["https://us.embassyeritrea.org/tourism/", "http://www.eritrea.be/MoT.htm"],
+    },
+  ],
+  FM: [
+    {
+      id: "fm-visit-micronesia",
+      countryCode: "FM",
+      name: "Visit Micronesia",
+      agency: "Federated States of Micronesia Visitors Board",
+      visitors: {
+        count: 18000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Federated States of Micronesia)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for a Federated States of Micronesia tourism-board logo — no freely-licensed copy could be found; only the country's national seal exists on Commons, which is not a consumer tourism brand and was not used as a substitute.",
+      sources: ["https://southpacificislands.travel/discover/countries/federated-states-of-micronesia/"],
+    },
+  ],
+  GQ: [
+    {
+      id: "gq-ministry-of-tourism",
+      countryCode: "GQ",
+      name: "Ministerio de Turismo, Guinea Ecuatorial",
+      agency: "Ministerio de Turismo, Equatorial Guinea",
+      visitorsNote:
+        "No World Bank or other authoritative international-tourist-arrivals figure is published for Equatorial Guinea.",
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Equatorial Guinea, 16 files — none tourism-related) and the English Wikipedia \"Tourism in Equatorial Guinea\" article — no freely-licensed national tourism-board logo could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Equatorial_Guinea"],
+    },
+  ],
+  GW: [
+    {
+      id: "gw-tourism",
+      countryCode: "GW",
+      name: "Tourism in Guinea-Bissau",
+      agency: "Ministério do Turismo, Guinea-Bissau",
+      visitors: {
+        count: 52400,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Guinea-Bissau)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Guinea-Bissau, which holds no tourism-related file) — no freely-licensed tourism-board logo could be found. The US Department of State notes no formal tourism industry infrastructure exists in the country, consistent with the absence of a distinct consumer tourism brand.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Guinea-Bissau"],
+    },
+  ],
+  KG: [
+    {
+      id: "kg-kyrgyz-tourism",
+      countryCode: "KG",
+      name: "Kyrgyz Republic Tourism",
+      agency: "Ministry of Culture, Information, Sports and Youth Policy, Kyrgyzstan",
+      visitors: {
+        count: 8508000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Kyrgyzstan)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Kyrgyzstan) for the Kyrgyz Republic's national tourism logo (presented jointly by the tourism ministry and the International Business Council) — no freely-licensed copy could be found.",
+      sources: [
+        "https://akipress.com/news:515254:Tourism_Ministry,_IBC_to_present_tourism_logo_and_website_of_Kyrgyzstan/",
+        "https://en.wikipedia.org/wiki/Tourism_in_Kyrgyzstan",
+      ],
+    },
+  ],
 };
