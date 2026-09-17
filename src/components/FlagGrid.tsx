@@ -45,6 +45,7 @@ import {
 } from "../lib/passportColorGroups";
 import { subnationalFootballCrests } from "../lib/nationalSymbolImages";
 import { NON_FIFA_GRID_CODES, fifaExtraCrests } from "../lib/fifaAssociations";
+import { NON_IOC_GRID_CODES, iocExtraLogos } from "../lib/iocAssociations";
 import { MENS_WORLD_CUP_TITLES, WOMENS_WORLD_CUP_TITLES } from "../data/worldCupTitles";
 import { allCommercialAirlines } from "../lib/commercialAirlines";
 import { allPublicBroadcasters } from "../lib/publicBroadcasters";
@@ -340,6 +341,33 @@ export function FlagGrid({
           selectId: t.countryCode,
         };
       });
+    }
+    if (effectiveContentType === "olympiccommittee") {
+      const iocOut: FlagListEntry[] = [];
+      for (const e of entries) {
+        // The Olympic-committees grid is the IOC's 206 current NOCs, so hide
+        // the game's one member with no NOC of its own (Vatican City).
+        if (NON_IOC_GRID_CODES.has(e.id)) continue;
+        iocOut.push(e);
+      }
+      // Append the non-UN IOC member National Olympic Committees (territories
+      // the game models as entities — Hong Kong, Chinese Taipei, the
+      // Caribbean/Pacific associations — plus Kosovo). Each sorts by its own
+      // name and, on click, selects its parent country (whose National
+      // symbols tab shows the logo); Kosovo has no parent, so its card is
+      // informational.
+      for (const x of iocExtraLogos()) {
+        iocOut.push({
+          id: x.id,
+          name: x.name,
+          flag: x.path,
+          olympicCommittee: x.path,
+          continent: x.continent,
+          subcontinent: x.subcontinent,
+          selectId: x.parent || undefined,
+        });
+      }
+      return iocOut;
     }
     if (effectiveContentType !== "footballcrest") return [...entries];
     const out: FlagListEntry[] = [];

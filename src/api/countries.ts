@@ -22,6 +22,10 @@ export type Country = {
   languages?: string[];
   /** Currencies — one per row in the panel summary. */
   currencies?: { code: string; name: string; symbol?: string }[];
+  /** International dialing / phone code (e.g., "+61", "+55", "+60"). */
+  callingCode?: string;
+  /** Country top-level internet domain(s) (e.g., [".au"], [".br"]). */
+  tld?: string[];
   /**
    * Set only when the game is quizzing a national SYMBOL rather than the flag
    * (a coat of arms, a passport cover, a football crest, a former flag …).
@@ -57,10 +61,12 @@ type RestCountry = {
   population?: number;
   languages?: Record<string, string>;
   currencies?: Record<string, { name?: string; symbol?: string }>;
+  idd?: { root?: string; suffixes?: string[] };
+  tld?: string[];
 };
 
 const API_URL =
-  "https://restcountries.com/v3.1/all?fields=name,flags,cca2,region,subregion,capital,population,languages,currencies";
+  "https://restcountries.com/v3.1/all?fields=name,flags,cca2,region,subregion,capital,population,languages,currencies,idd,tld";
 
 /**
  * World Bank "Population, total" indicator. The most-current authoritative
@@ -144,6 +150,19 @@ const FLAG_OVERRIDES: Readonly<Record<string, string>> = {
  * information" hard rule in CLAUDE.md. Population still comes from the World
  * Bank fetch when that succeeds.
  */
+function parseCallingCode(
+  idd: { root?: string; suffixes?: string[] } | undefined,
+  code: string,
+): string | undefined {
+  if (!idd || !idd.root) return undefined;
+  if (!idd.suffixes || idd.suffixes.length === 0) return idd.root;
+  if (idd.suffixes.length === 1) return idd.root + idd.suffixes[0];
+  if (code === "US" || code === "CA" || code === "DO") return "+1";
+  if (code === "RU" || code === "KZ") return "+7";
+  if (code === "VA") return "+39";
+  return idd.root;
+}
+
 function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
   const nameByCode = new Map(ALL_COUNTRY_OPTIONS.map((o) => [o.code, o.name]));
   const subregionByCode = new Map<string, string>();
@@ -167,6 +186,8 @@ function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
         population: wbPop.get(code),
         languages: facts?.languages,
         currencies: facts?.currencies,
+        callingCode: facts?.callingCode,
+        tld: facts?.tld,
       });
     }
   }
@@ -260,6 +281,15 @@ export async function fetchCountries(): Promise<Country[]> {
       : undefined;
     const currencies =
       restCurrencies && restCurrencies.length > 0 ? restCurrencies : facts?.currencies;
+
+    const restCallingCode = parseCallingCode(item.idd, code);
+    const callingCode = restCallingCode || facts?.callingCode || undefined;
+
+    const restTld = item.tld
+      ? item.tld.map((t) => t.trim()).filter(Boolean)
+      : undefined;
+    const tld = restTld && restTld.length > 0 ? restTld : facts?.tld || undefined;
+
     let finalName = name;
     let finalNameOfficial = nameOfficial;
     if (code === "TR") {
@@ -295,6 +325,8 @@ export async function fetchCountries(): Promise<Country[]> {
       population,
       languages,
       currencies: currencies && currencies.length > 0 ? currencies : undefined,
+      callingCode,
+      tld: tld && tld.length > 0 ? tld : undefined,
     });
   }
 

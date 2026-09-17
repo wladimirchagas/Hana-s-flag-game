@@ -6954,4 +6954,274 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  CF: [
+    {
+      id: "cf-karinou-airlines",
+      countryCode: "CF",
+      name: "Karinou Airlines",
+      iata: "U5",
+      icao: "KRN",
+      founded: 2012,
+      alliance: "None",
+      hubs: ["Bangui M'Poko International Airport (BGF)"],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Boeing 737-200, Airbus A319)",
+      },
+      logo: "/airline-logos/cf/karinou-airlines.svg",
+      logoExplainer:
+        "Features the vibrant Pan-African heraldic colors (blue, white, green, yellow, and red) of the Central African Republic styled into soaring wings with the guiding yellow star, representing sovereign transit, hope, and central African regional connectivity.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Karinou_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  GW: [
+    {
+      id: "gw-air-bissau",
+      countryCode: "GW",
+      name: "Air Bissau",
+      iata: "TZ",
+      icao: "GBU",
+      founded: 1960,
+      alliance: "None",
+      hubs: ["Osvaldo Vieira International Airport (OXB)"],
+      fleet: {
+        total: 3,
+        summary: "Historic fleet included Boeing 737-200, Hawker Siddeley HS 748, and Antonov An-24 connecting Bissau to Lisbon and Dakar",
+      },
+      logo: "/airline-logos/gw/air-bissau.svg",
+      logoExplainer:
+        "Features the national red, yellow, and green circular roundel bearing the iconic black star of African freedom and unity, framed by aerodynamic flight arcs honoring Guinea-Bissau's sovereign civil aviation history.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Air_Bissau",
+      ],
+      licenceNote:
+        "Commercial airline historic trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  PW: [
+    {
+      id: "pw-belau-air",
+      countryCode: "PW",
+      name: "Belau Air",
+      iata: "PM",
+      icao: "BLU",
+      founded: 1989,
+      alliance: "None",
+      hubs: ["Roman Tmetuchl International Airport (ROR)"],
+      fleet: {
+        total: 1,
+        summary: "1 Britten-Norman BN-2 Islander connecting Koror with Peleliu and Angaur",
+      },
+      logo: "/airline-logos/pw/belau-air.svg",
+      logoExplainer:
+        "Features the serene Pacific ocean blue and golden full-moon crest evocative of the national flag of Palau, crowned by stylized soaring seabird wings representing peaceful inter-island connectivity across the Rock Islands.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Belau_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  FM: [
+    {
+      id: "fm-caroline-islands-air",
+      countryCode: "FM",
+      name: "Caroline Islands Air",
+      iata: "CIA",
+      icao: "CXP",
+      founded: 1995,
+      alliance: "None",
+      hubs: ["Pohnpei International Airport (PNI)"],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Harbin Y-12, Britten-Norman Islander) providing passenger links across Micronesia's outer islands",
+      },
+      logo: "/airline-logos/fm/caroline-islands-air.svg",
+      logoExplainer:
+        "Features the iconic four white stars of the Federated States of Micronesia (representing Yap, Chuuk, Pohnpei, and Kosrae) arranged in constellation within an oceanic roundel and aerodynamic outrigger flight sweep.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Caroline_Islands_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  KN: [
+    {
+      id: "kn-winair",
+      countryCode: "KN",
+      name: "Winair (St. Kitts & Nevis)",
+      iata: "WM",
+      icao: "WIA",
+      founded: 1961,
+      alliance: "CaribSky",
+      hubs: ["Robert L. Bradshaw International Airport (SKB)", "Vance W. Amory International Airport (NEV)"],
+      fleet: {
+        total: 7,
+        summary: "7 aircraft (ATR 42-500, DHC-6 Twin Otter) serving the federation of Saint Kitts and Nevis",
+      },
+      logo: "/airline-logos/kn/winair.svg",
+      logoExplainer:
+        "Features the distinctive dynamic wing ribbon and modern wordmark symbolizing reliable inter-island scheduled connectivity, connecting Basseterre and Charlestown with neighboring Caribbean islands.",
+      sources: [
+        "https://www.winair.sx/",
+        "https://en.wikipedia.org/wiki/Winair",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  DM: [
+    {
+      id: "dm-winair",
+      countryCode: "DM",
+      name: "Winair (Dominica)",
+      iata: "WM",
+      icao: "WIA",
+      founded: 1961,
+      alliance: "CaribSky",
+      hubs: ["Douglas–Charles Airport (DOM)", "Canefield Airport (DCF)"],
+      fleet: {
+        total: 7,
+        summary: "7 aircraft (ATR 42-500, DHC-6 Twin Otter) providing scheduled commercial connections to the Nature Island of Dominica",
+      },
+      logo: "/airline-logos/dm/winair.svg",
+      logoExplainer:
+        "Features the streamlined blue and turquoise aerodynamic ribbon emblem and clear typographic wordmark, symbolizing vital air link services connecting Dominica across the Windward and Leeward Islands.",
+      sources: [
+        "https://www.winair.sx/",
+        "https://en.wikipedia.org/wiki/Winair",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  GD: [
+    {
+      id: "gd-intercaribbean-airways",
+      countryCode: "GD",
+      name: "interCaribbean Airways (Grenada)",
+      iata: "JY",
+      icao: "IWY",
+      founded: 1991,
+      alliance: "None",
+      hubs: ["Maurice Bishop International Airport (GND)"],
+      fleet: {
+        total: 18,
+        summary: "18 aircraft (ATR 42-500, ATR 72-500, Embraer ERJ-145, EMB 120 Brasilia) connecting St. George's to the southern and eastern Caribbean",
+      },
+      logo: "/airline-logos/gd/intercaribbean-airways.svg",
+      logoExplainer:
+        "Features the iconic stylized hummingbird in rapid flight alongside Caribbean cyan and sunburst gold sweeps, capturing the natural vibrance, agility, and extensive scheduled regional connectivity serving Grenada.",
+      sources: [
+        "https://www.intercaribbean.com/",
+        "https://en.wikipedia.org/wiki/InterCaribbean_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  LC: [
+    {
+      id: "lc-intercaribbean-airways",
+      countryCode: "LC",
+      name: "interCaribbean Airways (Saint Lucia)",
+      iata: "JY",
+      icao: "IWY",
+      founded: 1991,
+      alliance: "None",
+      hubs: ["George F. L. Charles Airport (SLU)", "Hewanorra International Airport (UVF)"],
+      fleet: {
+        total: 18,
+        summary: "18 aircraft (ATR 42-500, ATR 72-500, Embraer ERJ-145, EMB 120 Brasilia) providing passenger services to and from Castries and Vieux Fort",
+      },
+      logo: "/airline-logos/lc/intercaribbean-airways.svg",
+      logoExplainer:
+        "Features the multi-hued Caribbean hummingbird emblem and graceful air curve in tropical marine and gold, symbolizing swift inter-island flight bridges and regional tourism links connecting Saint Lucia to neighboring island states.",
+      sources: [
+        "https://www.intercaribbean.com/",
+        "https://en.wikipedia.org/wiki/InterCaribbean_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  LI: [
+    {
+      id: "li-swiss",
+      countryCode: "LI",
+      name: "SWISS (Liechtenstein Gateway)",
+      iata: "LX",
+      icao: "SWR",
+      founded: 2002,
+      alliance: "Star Alliance",
+      hubs: ["Zurich Airport (ZRH)"],
+      fleet: {
+        total: 90,
+        summary: "90 aircraft (Airbus A220, A320, A321, A330-300, A340-300, Boeing 777-300ER) serving the Principality of Liechtenstein via Zurich",
+      },
+      logo: "/airline-logos/li/swiss.svg",
+      logoExplainer:
+        "Features the iconic red empennage fin with the white cross, symbolizing world-renowned Alpine precision, hospitality, and civil aviation excellence serving travelers across Switzerland and the Principality of Liechtenstein.",
+      sources: [
+        "https://www.swiss.com/",
+        "https://en.wikipedia.org/wiki/Swiss_International_Air_Lines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  SM: [
+    {
+      id: "sm-san-marino-executive",
+      countryCode: "SM",
+      name: "San Marino Executive Aviation",
+      iata: "SM",
+      icao: "SM",
+      founded: 2018,
+      alliance: "None",
+      hubs: ["Federico Fellini International Airport (RMI)"],
+      fleet: {
+        total: 4,
+        summary: "4 aircraft (Airbus A300-600F, Airbus A330-300, corporate executive jets)",
+      },
+      logo: "/airline-logos/sm/san-marino-executive.svg",
+      logoExplainer:
+        "Features the stylized Mount Titano Three Towers motif and sovereign blue-and-white roundel of the Republic of San Marino, bordered by golden aeronautical flight feathers representing the nation's premier T7 international civil aviation registry.",
+      sources: [
+        "https://en.wikipedia.org/wiki/San_Marino_Executive_Aviation",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  VA: [
+    {
+      id: "va-ita-airways",
+      countryCode: "VA",
+      name: "ITA Airways (Papal Flight / Vatican City)",
+      iata: "AZ",
+      icao: "ITY",
+      founded: 2020,
+      alliance: "SkyTeam",
+      hubs: ["Leonardo da Vinci–Fiumicino Airport (FCO)"],
+      fleet: {
+        total: 100,
+        summary: "100 aircraft (Airbus A220, A320neo, A321neo, A330-900neo, A350-900) operating official Papal state visits for the Holy See",
+      },
+      logo: "/airline-logos/va/ita-airways.svg",
+      logoExplainer:
+        "Features the elegant Italian tricolor wingtail and metallic azure typography, symbolizing the historic carrier of the Papal Flight ('Volo Papale') providing chartered transportation for the Bishop of Rome and the Holy See worldwide.",
+      sources: [
+        "https://www.ita-airways.com/",
+        "https://en.wikipedia.org/wiki/ITA_Airways",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };

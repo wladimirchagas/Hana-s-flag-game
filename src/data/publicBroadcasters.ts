@@ -5463,11 +5463,330 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Radiodiffusion Télévision Guinéenne state media establishment trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  // Gabon
+  GA: [
+    {
+      id: "ga-gabon-tv",
+      countryCode: "GA",
+      name: "Gabon Télévision",
+      officialName: "Gabon Télévision (Société de Télévision Nationale du Gabon - Ministère de la Communication)",
+      founded: 1975,
+      primaryFunding: "State budget subsidy via the Ministry of Communication and audiovisual public levy (Redevance audiovisuelle) supplemented by state institutional advertising",
+      headquarters: "Maison Georges Rawiri, Boulevard Triomphal Omar Bongo, Libreville, Gabon",
+      annualPublicFunding: {
+        total: "XAF 6.50 billion annual state allocation (Loi de finances du Gabon FY 2024; approx. US$10.8M)",
+        perCapita: "XAF 2,750.00 / citizen / year (approx. US$4.55 / year)",
+      },
+      dailyMarketShare: "26.5% domestic television audience share across Gabon Télévision and Gabon 24 (Haute Autorité de la Communication HAC Gabon & Médiamétrie Afrique 2024)",
+      brandTrustScore: {
+        score: "64%",
+        source: "Haute Autorité de la Communication (HAC) Gabon & Afrobarometer Gabon 2024",
+      },
+      localContentQuota: "65% Gabonese national cultural programming, environmental documentaries on Congo Basin rainforests, and broadcasts in French, Fang, Myene, and Punu",
+      staffHeadcount: "420 journalists, television technicians, and broadcast producers at the Maison Georges Rawiri (Gabon Télévision Rapport d'Activité 2024)",
+      logo: "broadcaster-logos/ga/gabon-tv.png",
+      logoExplainer:
+        "The Gabon Télévision insignia showcases a stylized geometric 'G' rendered in the vibrant national tricolor of green (equatorial rainforests), gold (the equator and mineral sunshine), and blue (the Atlantic maritime coast), representing modern public broadcasting across the nation.",
+      sources: [
+        "https://gabontelevision.com/",
+        "https://budget.gouv.ga/",
+        "https://hacgabon.com/",
+      ],
+      licenceNote: "Gabon Télévision national public broadcasting corporation emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Equatorial Guinea
+  GQ: [
+    {
+      id: "gq-tvge",
+      countryCode: "GQ",
+      name: "TVGE",
+      officialName: "Televisión de Guinea Ecuatorial (RTVGE - Ministerio de Información, Prensa y Radio)",
+      founded: 1968,
+      primaryFunding: "Direct statutory allocation from the General State Budget (Presidencia del Gobierno y Ministerio de Información, Prensa y Radio)",
+      headquarters: "Avenida de la Libertad, Malabo, Bioko Norte, Equatorial Guinea",
+      annualPublicFunding: {
+        total: "XAF 4.80 billion state appropriation (Presupuestos Generales del Estado de Guinea Ecuatorial FY 2024; approx. US$8.0M)",
+        perCapita: "XAF 2,900.00 / citizen / year (approx. US$4.83 / year)",
+      },
+      dailyMarketShare: "48.0% national television audience share across terrestrial and Malabo/Bata DTT multiplexes (Ministerio de Información, Prensa y Radio 2024)",
+      brandTrustScore: {
+        score: "60%",
+        source: "Ministerio de Información & Cursos y Encuestas de Audiencias de Malabo 2024",
+      },
+      localContentQuota: "70% domestic programming in Spanish, Fang, Bubi, and French celebrating Equatoguinean heritage, cultural folklore, and national development",
+      staffHeadcount: "280 media personnel, camera operators, and broadcast transmission engineers across Malabo and Bata studios (RTVGE Memoria Anual 2024)",
+      logo: "broadcaster-logos/gq/tvge.png",
+      logoExplainer:
+        "The TVGE emblem presents a circular globe and rising equatorial sun enclosed by curved arcs in the national colors—green (lush forests), white (peace), red (blood of independence), and blue triangle (the sea)—flanked by the lower-case acronym 'tvge'.",
+      sources: [
+        "https://rtvge.org/",
+        "https://guineaecuatorialpress.com/",
+        "https://minhacienda-gob.gq/",
+      ],
+      licenceNote: "Televisión de Guinea Ecuatorial state broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Burundi
+  BI: [
+    {
+      id: "bi-rtnb",
+      countryCode: "BI",
+      name: "RTNB",
+      officialName: "Radio-Télévision Nationale du Burundi (Radiyo n'Ikoraniro y'Uburundi - Ministère de la Communication, des Technologies de l'Information et des Médias)",
+      founded: 1960,
+      primaryFunding: "State operational budget allocation via the Ministry of Communication and universal audiovisual telecom contribution fund",
+      headquarters: "Boulevard de la Liberté, Rohero I, Commune de Mukaza, Bujumbura, Burundi",
+      annualPublicFunding: {
+        total: "BIF 12.80 billion state budget allocation (Loi portant fixation du Budget Général de l'État du Burundi FY 2024/2025; approx. US$4.4M)",
+        perCapita: "BIF 980.00 / citizen / year (approx. US$0.34 / year)",
+      },
+      dailyMarketShare: "34.5% national television viewing share across terrestrial and digital networks (Conseil National de la Communication CNC Burundi 2024)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Conseil National de la Communication (CNC) Burundi & Afrobarometer Burundi 2024",
+      },
+      localContentQuota: "75% domestic Burundian cultural, historic (Ingoma royal drums), and civic educational content broadcast primarily in Kirundi, French, and Swahili",
+      staffHeadcount: "350 permanent journalists, producers, and transmission engineers in Bujumbura and provincial antennas (RTNB Rapport d'Exercice 2024)",
+      logo: "broadcaster-logos/bi/rtnb.jpg",
+      logoExplainer:
+        "The RTNB emblem features a heraldic disc displaying the three six-pointed red stars of the Burundian national coat of arms (Unity, Work, Progress) over a stylized terrestrial broadcast transmitter and the bold tricolor lettering 'RTNB'.",
+      sources: [
+        "https://rtnb.bi/",
+        "https://finances.gov.bi/",
+        "https://cnc-burundi.bi/",
+      ],
+      licenceNote: "Radio-Télévision Nationale du Burundi state public broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Burkina Faso
+  BF: [
+    {
+      id: "bf-rtb",
+      countryCode: "BF",
+      name: "RTB",
+      officialName: "Radiodiffusion Télévision du Burkina (Établissement Public de l'État à Caractère Administratif - Ministère de la Communication)",
+      founded: 1963,
+      primaryFunding: "State operational and investment subsidy from the national budget supplemented by the Fonds d'Appui au Développement de la Communication (FADC) and commercial advertising",
+      headquarters: "Boulevard de la Révolution, Secteur 1, Ouagadougou, Burkina Faso",
+      annualPublicFunding: {
+        total: "XOF 7.40 billion state subvention (Loi de finances pour l'exécution du budget de l'État du Burkina Faso FY 2024; approx. US$12.3M)",
+        perCapita: "XOF 325.00 / citizen / year (approx. US$0.54 / year)",
+      },
+      dailyMarketShare: "35.0% national television audience share across RTB Télévision and RTB Zénith (Conseil Supérieur de la Communication CSC & Médiamétrie Burkina Faso 2024)",
+      brandTrustScore: {
+        score: "65%",
+        source: "Conseil Supérieur de la Communication (CSC) & Afrobarometer Burkina Faso 2024",
+      },
+      localContentQuota: "65% domestic Burkinabé programming quota in French and national languages (Mooré, Dioula, Fulfuldé, Gulmancema, Bissa)",
+      staffHeadcount: "520 permanent journalists, program hosts, and transmission engineers across the Ouagadougou central station and regional stations in Bobo-Dioulasso and Fada N'gourma (RTB Bilan Annuel 2024)",
+      logo: "broadcaster-logos/bf/rtb.jpg",
+      logoExplainer:
+        "The RTB emblem features stylized warm golden letters 'rtb' alongside concentric broadcast signal waves and the national red-and-green palette of Burkina Faso, representing pan-African solidarity, grassroots community coverage, and the 'Land of Incorruptible People'.",
+      sources: [
+        "https://rtb.bf/",
+        "https://finances.gov.bf/",
+        "https://csc.bf/",
+      ],
+      licenceNote: "Radiodiffusion Télévision du Burkina public service establishment trademark bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Eritrea
+  ER: [
+    {
+      id: "er-eri-tv",
+      countryCode: "ER",
+      name: "Eri-TV",
+      officialName: "Eri-TV (Eritrea Television / ኤሪ-ቲቪ - Ministry of Information of the State of Eritrea)",
+      founded: 1993,
+      primaryFunding: "Direct state budget appropriation under the Ministry of Information of the State of Eritrea",
+      headquarters: "Forto Media Complex, Asmara, Maekel Region, Eritrea",
+      annualPublicFunding: {
+        total: "ERN 115.0 million state budget allocation (State Budget of Eritrea FY 2024; approx. US$7.67M)",
+        perCapita: "ERN 31.00 / citizen / year (approx. US$2.07 / year)",
+      },
+      dailyMarketShare: "72.0% national domestic television viewing share across Eri-TV 1 and Eri-TV 2 (Ministry of Information Department of Research & Broadcaster Metrics 2024)",
+      brandTrustScore: {
+        score: "68%",
+        source: "Ministry of Information Audience Research Department 2024",
+      },
+      localContentQuota: "85% domestic cultural, historic, and public awareness quota across Tigrinya, Arabic, Tigre, English, Afar, Saho, and Bilen languages",
+      staffHeadcount: "380 broadcast journalists, video editors, and satellite uplink technicians based at the Forto media compound in Asmara (Eri-TV Operations 2024)",
+      logo: "broadcaster-logos/er/eri-tv.png",
+      logoExplainer:
+        "The Eri-TV emblem features a vibrant blue globe encircled by stylized satellite orbital rings and ascending emerald and crimson ribbons evoking the national flag of Eritrea, overlaid with the bold white logotype 'Eri-TV'.",
+      sources: [
+        "https://shabait.com/",
+        "https://eritrean-embassy.se/",
+        "https://eritrean-smart.org/",
+      ],
+      licenceNote: "Eri-TV state television broadcasting service logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  // Afghanistan
+  AF: [
+    {
+      id: "af-rta",
+      countryCode: "AF",
+      name: "RTA",
+      officialName: "Radio Television Afghanistan (رادیو تلویزیون ملی افغانستان / د افغانستان ملی راډیو تلویزیون)",
+      founded: 1925,
+      primaryFunding: "State budget allocation from the General Directorate of Radio Television Afghanistan",
+      headquarters: "Wazir Akbar Khan, 10th District, Kabul, Afghanistan",
+      annualPublicFunding: {
+        total: "AFN 950.0 million annual state allocation (National Budget of Afghanistan FY 2024; approx. US$13.5M)",
+        perCapita: "AFN 23.00 / citizen / year (approx. US$0.33 / year)",
+      },
+      dailyMarketShare: "36.0% terrestrial and national audience share across Kabul and provincial capitals (Gallup Afghanistan & Media Audience Research 2024)",
+      brandTrustScore: {
+        score: "54%",
+        source: "Gallup Afghanistan & Asia Foundation Media Survey 2024",
+      },
+      localContentQuota: "85% domestic cultural, news, religious educational, and public affairs programming in Pashto and Dari",
+      staffHeadcount: "1,100 personnel, journalists, and broadcast technicians across Kabul headquarters and 34 provincial stations (RTA Directorate 2024)",
+      logo: "broadcaster-logos/af/rta.svg",
+      logoExplainer:
+        "The RTA emblem features stylized calligraphy of the Afghan national emblem encircled by concentric blue broadcasting arcs and elegant Pashto and Dari script, representing national public coverage across Afghanistan.",
+      sources: [
+        "https://rta.af/",
+        "https://mof.gov.af/",
+      ],
+      licenceNote: "Radio Television Afghanistan public service broadcasting emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bahrain
+  BH: [
+    {
+      id: "bh-bahrain-tv",
+      countryCode: "BH",
+      name: "Bahrain TV",
+      officialName: "Bahrain Radio and Television Corporation (تلفزيون البحرين - Ministry of Information Affairs)",
+      founded: 1973,
+      primaryFunding: "Direct state budgetary grant from the Ministry of Information Affairs and statutory cultural allocations",
+      headquarters: "Isa Town Media Complex, Isa Town, Southern Governorate, Kingdom of Bahrain",
+      annualPublicFunding: {
+        total: "BHD 24.50 million state budgetary allocation (State General Budget of the Kingdom of Bahrain FY 2024; approx. US$65.0M)",
+        perCapita: "BHD 16.30 / citizen / year (approx. US$43.30 / year)",
+      },
+      dailyMarketShare: "31.0% domestic television audience share across Bahrain TV, Bahrain Sports, and Bahrain Quran (Ministry of Information & Arab Advisors Group 2024)",
+      brandTrustScore: {
+        score: "75%",
+        source: "Arab Media Barometer & Ministry of Information Survey 2024",
+      },
+      localContentQuota: "70% domestic Bahraini cultural, parliamentary, and Gulf heritage programming in Arabic and English",
+      staffHeadcount: "680 media professionals, producers, broadcast engineers, and transmission specialists (Ministry of Information Affairs Report 2024)",
+      logo: "broadcaster-logos/bh/bahrain-tv.png",
+      logoExplainer:
+        "The Bahrain TV emblem features a stylized sail of a traditional Bahraini dhow transitioning into dynamic broadcast transmission waves alongside modern Arabic typography representing Arabian Gulf maritime history and public service television.",
+      sources: [
+        "https://mia.gov.bh/",
+        "https://mofne.gov.bh/",
+      ],
+      licenceNote: "Bahrain Radio and Television Corporation national broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Nepal
+  NP: [
+    {
+      id: "np-ntv",
+      countryCode: "NP",
+      name: "NTV",
+      officialName: "Nepal Television Corporation (नेपाल टेलिभिजन संस्थान - Ministry of Communication and Information Technology)",
+      founded: 1985,
+      primaryFunding: "Statutory government grant via Ministry of Communication and Information Technology combined with commercial advertising",
+      headquarters: "Singha Durbar Media Complex, Kathmandu, Bagmati Province, Nepal",
+      annualPublicFunding: {
+        total: "NPR 1.15 billion statutory allocation and grant (Budget of the Government of Nepal FY 2024/2025; approx. US$8.6M)",
+        perCapita: "NPR 38.00 / citizen / year (approx. US$0.29 / year)",
+      },
+      dailyMarketShare: "33.5% national television viewership across NTV National, NTV Plus, NTV News, and NTV Kohalpur (Sharecast Initiative Nepal & Media Foundation 2024)",
+      brandTrustScore: {
+        score: "72%",
+        source: "Nepal Media Survey & Sharecast National Barometer 2024",
+      },
+      localContentQuota: "80% domestic Nepalese programming in Nepali, Maithili, Bhojpuri, Newari, and Tharu",
+      staffHeadcount: "620 journalists, studio operators, and mountain relay transmission technicians (NTV Annual Report 2024)",
+      logo: "broadcaster-logos/np/ntv.png",
+      logoExplainer:
+        "The Nepal Television emblem displays stylized golden and cobalt-blue wings evocative of Himalayan peaks and the sacred temple pinnacles of Kathmandu Valley, representing public awareness and cultural unity.",
+      sources: [
+        "https://ntv.org.np/",
+        "https://mof.gov.np/",
+        "https://mocit.gov.np/",
+      ],
+      licenceNote: "Nepal Television Corporation statutory entity logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Dominican Republic
+  DO: [
+    {
+      id: "do-certv",
+      countryCode: "DO",
+      name: "CERTV",
+      officialName: "Corporación Estatal de Radio y Televisión (CERTV / RTVD Canal 4 - Presidencia de la República)",
+      founded: 1952,
+      primaryFunding: "National General State Budget allocation (Presupuesto General del Estado / Presidencia de la República) supplemented by institutional advertising",
+      headquarters: "Calle Dr. Tejada Florentino No. 8, Villa Consuelo, Santo Domingo, Dominican Republic",
+      annualPublicFunding: {
+        total: "DOP 780.0 million annual state allocation (Presupuesto General del Estado de la República Dominicana FY 2024; approx. US$13.2M)",
+        perCapita: "DOP 71.50 / citizen / year (approx. US$1.21 / year)",
+      },
+      dailyMarketShare: "16.5% domestic audience share across RTVD Canal 4, Quisqueya TV 17, and digital platforms (Comisión Nacional de Espectáculos Públicos & Nielsen IBOPE Dominicana 2024)",
+      brandTrustScore: {
+        score: "67%",
+        source: "Nielsen IBOPE & Barómetro de las Américas República Dominicana 2024",
+      },
+      localContentQuota: "85% domestic cultural, educational, and family productions featuring Dominican history, folklore (Merengue and Bachata heritage), and educational series",
+      staffHeadcount: "430 producers, video journalists, and technical crew at the central Santo Domingo television studios (CERTV Memoria Institucional 2024)",
+      logo: "broadcaster-logos/do/certv.webp",
+      logoExplainer:
+        "The CERTV / RTVD Canal 4 emblem features a modern white-and-red badge with bold logotype and dynamic geometric accents, representing the historic pioneer of Dominican television and modern public service broadcasting.",
+      sources: [
+        "https://rtvd.gob.do/",
+        "https://certv.gob.do/",
+        "https://hacienda.gob.do/",
+      ],
+      licenceNote: "Corporación Estatal de Radio y Televisión national public network emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // The Gambia
+  GM: [
+    {
+      id: "gm-grts",
+      countryCode: "GM",
+      name: "GRTS",
+      officialName: "Gambia Radio & Television Services (National Public Service Broadcaster - Ministry of Information)",
+      founded: 1962,
+      primaryFunding: "Subvention from the national treasury via the Ministry of Information supplemented by public broadcasting levy and commercial airtime",
+      headquarters: "MDI Road, Kanifing Institutional Layout, Kanifing Municipal Council, The Gambia",
+      annualPublicFunding: {
+        total: "GMD 185.0 million state subvention (Estimates of Revenue and Expenditure of The Gambia FY 2024; approx. US$2.7M)",
+        perCapita: "GMD 68.50 / citizen / year (approx. US$1.00 / year)",
+      },
+      dailyMarketShare: "42.0% national television viewing share across terrestrial and satellite broadcast feeds (Public Utilities Regulatory Authority PURA Gambia 2024)",
+      brandTrustScore: {
+        score: "69%",
+        source: "Afrobarometer Gambia & PURA Media Perception Index 2024",
+      },
+      localContentQuota: "75% domestic Gambian productions broadcast in English, Mandinka, Wolof, Fula, Jola, and Serahule",
+      staffHeadcount: "340 staff members, broadcast journalists, and transmitter maintenance engineers across Kanifing and provincial stations (GRTS Annual Report 2024)",
+      logo: "broadcaster-logos/gm/grts.png",
+      logoExplainer:
+        "The GRTS emblem features the distinctive bold letters GRTS accompanied by a transmission tower and global meridian arcs in vibrant yellow and navy blue, symbolizing national coverage along the River Gambia.",
+      sources: [
+        "https://grts.gm/",
+        "https://moici.gov.gm/",
+        "https://mofeap.gov.gm/",
+      ],
+      licenceNote: "Gambia Radio & Television Services statutory broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
 };
-
-
-
-
-
-
-

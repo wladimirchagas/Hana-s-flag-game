@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="520" height="160">
+  <rect width="520" height="160" fill="transparent"/>
+  <!-- Micronesian deep ocean blue and 4-star constellation flight arc -->
+  <g transform="translate(35, 20)">
+    <circle cx="60" cy="60" r="55" fill="#5b92e5"/>
+    <!-- 4 white stars of Micronesia -->
+    <path d="M60 18 L62 24 L68 24 L63 28 L65 34 L60 30 L55 34 L57 28 L52 24 L58 24 Z" fill="#ffffff"/>
+    <path d="M60 86 L62 92 L68 92 L63 96 L65 102 L60 98 L55 102 L57 96 L52 92 L58 92 Z" fill="#ffffff"/>
+    <path d="M26 52 L28 58 L34 58 L29 62 L31 68 L26 64 L21 68 L23 62 L18 58 L24 58 Z" fill="#ffffff"/>
+    <path d="M94 52 L96 58 L102 58 L97 62 L99 68 L94 64 L89 68 L91 62 L86 58 L92 58 Z" fill="#ffffff"/>
+    <!-- Outrigger sail and aerodynamic wing -->
+    <path d="M25 72 Q60 40 108 55 Q70 65 25 72 Z" fill="#0a2540"/>
+  </g>
+  <text x="175" y="68" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="800" fill="#0a2540" letter-spacing="1.5">CAROLINE ISLANDS</text>
+  <text x="177" y="102" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#5b92e5" letter-spacing="5">AIR</text>
+</svg>
