@@ -3769,4 +3769,120 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  LI: [
+    {
+      id: "li-liechtenstein-tourism",
+      countryCode: "LI",
+      name: "Liechtenstein Tourism",
+      agency: "Liechtenstein Marketing (tourism division)",
+      visitors: {
+        count: 58400,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Liechtenstein)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Liechtenstein, Category:Tourism in Liechtenstein) — the logos found are all other institutions (parliament, government, university), and no freely-licensed copy of a dedicated tourism-board logo could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Liechtenstein"],
+    },
+  ],
+  MR: [
+    {
+      id: "mr-ont-mauritanie",
+      countryCode: "MR",
+      name: "Office National de Tourisme de Mauritanie",
+      agency: "Office National de Tourisme de Mauritanie (ONTM)",
+      visitors: {
+        count: 30000,
+        year: 2000,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mauritania; this is an old figure, no newer one is published)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Mauritania, Category:Tourism in Mauritania) — no freely-licensed copy of the Office National de Tourisme de Mauritanie's logo could be found.",
+      sources: ["https://isto.international/isto_members/office-national-de-tourisme-de-mauritanie/"],
+    },
+  ],
+  SL: [
+    {
+      id: "sl-explore-freedom",
+      countryCode: "SL",
+      name: "Explore Freedom",
+      slogan: "Explore Freedom",
+      agency: "Sierra Leone National Tourist Board",
+      visitors: {
+        count: 71000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Sierra Leone)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for the Sierra Leone National Tourist Board's \"Explore Freedom\" destination brand — no freely-licensed copy could be found.",
+      sources: [
+        "https://acorntourism.co.uk/projects/sierra-leone-national-tourism-marketing-strategy-and-rebranding-p677521",
+        "https://ntb.gov.sl/about-us/",
+      ],
+    },
+  ],
+  TJ: [
+    {
+      id: "tj-committee-for-tourism-development",
+      countryCode: "TJ",
+      name: "Committee for Tourism Development",
+      agency: "Committee for Tourism Development, Tajikistan",
+      visitors: {
+        count: 1035000,
+        year: 2018,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Tajikistan)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Tajikistan) for the Committee for Tourism Development's logo — no freely-licensed copy could be found.",
+      sources: ["https://ctd.tj/en/"],
+    },
+  ],
+  TM: [
+    {
+      id: "tm-state-committee-for-tourism",
+      countryCode: "TM",
+      name: "State Committee for Tourism",
+      agency: "State Committee for Tourism of Turkmenistan",
+      visitorsNote:
+        "No World Bank international-tourist-arrivals figure is published for Turkmenistan.",
+      noImageReason:
+        "Searched Wikimedia Commons for a logo of Turkmenistan's State Committee for Tourism — no freely-licensed copy could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Turkmenistan", "http://tourism.gov.tm/"],
+    },
+  ],
+  KM: [
+    {
+      id: "km-office-national-du-tourisme",
+      countryCode: "KM",
+      name: "Office National du Tourisme des Comores",
+      agency: "Office National du Tourisme des Comores",
+      visitors: {
+        count: 7000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Comoros)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for a Comoros national tourism office logo — no freely-licensed copy could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Comoros"],
+    },
+  ],
+  KP: [
+    {
+      id: "kp-korea-international-travel-company",
+      countryCode: "KP",
+      name: "Korea International Travel Company",
+      agency: "Korea International Travel Company (KITC)",
+      launched: 1953,
+      visitorsNote:
+        "No World Bank international-tourist-arrivals figure is published for North Korea.",
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in North Korea) for a logo of the Korea International Travel Company (KITC, North Korea's largest and oldest state tourism bureau, founded 1953) — no freely-licensed copy could be found.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_North_Korea", "https://rockyroadtravel.com/korea-international-travel-company/"],
+    },
+  ],
 };
