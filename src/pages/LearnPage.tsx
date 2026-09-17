@@ -61,12 +61,15 @@ import { PoliticalPartyDetails } from "../components/PoliticalPartyDetails";
 import { AirlineDetails } from "../components/AirlineDetails";
 import { BroadcasterDetails } from "../components/BroadcasterDetails";
 import { TourismLogoDetails } from "../components/TourismLogoDetails";
+import { NewsAgencyDetails } from "../components/NewsAgencyDetails";
 import { airlinesForCountry, airlineById } from "../lib/commercialAirlines";
 import { broadcastersForCountry, broadcasterById } from "../lib/publicBroadcasters";
 import { tourismLogosForCountry, tourismLogoById } from "../lib/tourismLogos";
+import { newsAgenciesForCountry, newsAgencyById } from "../lib/nationalNewsAgencies";
 import type { CommercialAirline } from "../types/airline";
 import type { PublicBroadcaster } from "../types/broadcaster";
 import type { TourismLogo } from "../types/tourismLogo";
+import type { NewsAgency } from "../types/newsAgency";
 import type { PoliticalParty } from "../data/politicalParties";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning as FlagMeaningData } from "../data/flagMeanings";
@@ -361,6 +364,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setSelectedSubdivisionAirline(null);
     setSelectedSubdivisionBroadcaster(null);
     setSelectedSubdivisionTourismLogo(null);
+    setSelectedSubdivisionNewsAgency(null);
   }, [subdivisionCountry, subdivisionMode]);
   // Set of NAME values present in the current era's historical GeoJSON.
   // Populated by HistoricalMap's onDataLoaded callback. Used by the
@@ -399,6 +403,10 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [gridTourismLogoId, setGridTourismLogoId] = useState<string | null>(null);
   // A tourism logo picked in the "National symbols" tab of subdivision view.
   const [selectedSubdivisionTourismLogo, setSelectedSubdivisionTourismLogo] = useState<TourismLogo | null>(null);
+  // The specific national news agency clicked in the grid.
+  const [gridNewsAgencyId, setGridNewsAgencyId] = useState<string | null>(null);
+  // A national news agency picked in the "National symbols" tab of subdivision view.
+  const [selectedSubdivisionNewsAgency, setSelectedSubdivisionNewsAgency] = useState<NewsAgency | null>(null);
 
   const chooseGridContentType = (type: GridContentType) => {
     setGridContentType(type);
@@ -408,6 +416,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setGridAirlineId(null);
     setGridBroadcasterId(null);
     setGridTourismLogoId(null);
+    setGridNewsAgencyId(null);
   };
   // Captured at "Play" click time so the modal stays open even if the
   // hovered-country display clears while the user moves the mouse.
@@ -1590,7 +1599,16 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         ? display.name
         : null;
 
-  function handleGridSelect(id: string, crestId?: string, airlineId?: string, broadcasterId?: string, tourismLogoId?: string, olympicCommitteeId?: string, worldMapCode?: string) {
+  function handleGridSelect(
+    id: string,
+    crestId?: string,
+    airlineId?: string,
+    broadcasterId?: string,
+    tourismLogoId?: string,
+    newsAgencyId?: string,
+    olympicCommitteeId?: string,
+    worldMapCode?: string,
+  ) {
     if (isModernEra) {
       // `id` is always the entity's own country code (an airline/broadcaster tile's
       // `selectId` is set to its parent country — see FlagGrid). Select that country
@@ -1625,9 +1643,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       setGridAirlineId(airlineId ?? null);
       setGridBroadcasterId(broadcasterId ?? null);
       setGridTourismLogoId(tourismLogoId ?? null);
+      setGridNewsAgencyId(newsAgencyId ?? null);
       if (airlineId) setGridContentType("airline");
       if (broadcasterId) setGridContentType("broadcaster");
       if (tourismLogoId) setGridContentType("tourismlogo");
+      if (newsAgencyId) setGridContentType("newsagency");
     } else {
       const sel = selectionFromPolityName(id);
       if (!sel) return;
@@ -1683,6 +1703,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     const countryTourismLogos = tourismLogosForCountry(display.country.code);
     return countryTourismLogos[0] ?? null;
   }, [subdivisionMode, effectiveGridContentType, display, gridTourismLogoId]);
+
+  // Active national news agency to show in the information widget when in news-agency view.
+  const activeNewsAgency = useMemo(() => {
+    if (subdivisionMode) return null;
+    if (effectiveGridContentType !== "newsagency" || display?.kind !== "modern") return null;
+    if (gridNewsAgencyId) {
+      const na = newsAgencyById(gridNewsAgencyId);
+      if (na) {
+        return na;
+      }
+    }
+    const countryAgencies = newsAgenciesForCountry(display.country.code);
+    return countryAgencies[0] ?? null;
+  }, [subdivisionMode, effectiveGridContentType, display, gridNewsAgencyId]);
 
   // Resolver passed to FlagGrid so it can render absolute http(s) URLs,
   // relative historical-flags/*.png paths, AND bundled flag paths that
@@ -1817,6 +1851,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   setGridAirlineId(null);
                   setGridBroadcasterId(null);
                   setGridTourismLogoId(null);
+                  setGridNewsAgencyId(null);
                 }
               },
               onHover: (code) => {
@@ -1916,6 +1951,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         setGridAirlineId(null);
                         setGridBroadcasterId(null);
                         setGridTourismLogoId(null);
+                        setGridNewsAgencyId(null);
                       }
                     }}
                     disabled={countries.length === 0}
@@ -1955,7 +1991,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     !subdivisionMode &&
                     (effectiveGridContentType === "airline" ||
                       effectiveGridContentType === "broadcaster" ||
-                      effectiveGridContentType === "tourismlogo")
+                      effectiveGridContentType === "tourismlogo" ||
+                      effectiveGridContentType === "newsagency")
                   ) &&
                   panelFlagBox}
                 {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "airline" && activeAirline && (
@@ -1979,13 +2016,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     onEnlarge={setZoomedFlagUrl}
                   />
                 )}
+                {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "newsagency" && activeNewsAgency && (
+                  <NewsAgencyDetails
+                    agency={activeNewsAgency}
+                    baseUrl={baseUrl}
+                    onEnlarge={setZoomedFlagUrl}
+                  />
+                )}
                 {display.kind === "modern" ? (
                   // The country fact-sheet (Population, Capital, Languages, Currency,
                   // Government, Continent, Region, Anthem) belongs to the NATIONAL FLAG,
                   // not to whichever other national symbol happens to be selected —
                   // showing it under a coat of arms / passport / football crest /
-                  // Olympic Committee logo / airline / broadcaster / tourism logo mixes
-                  // two unrelated fact lists in one panel (owner report, 2026-09).
+                  // Olympic Committee logo / airline / broadcaster / tourism logo /
+                  // news agency mixes two unrelated fact lists in one panel.
                   // It still shows once the user clicks "Learn more" into the
                   // country's own tab, where the fact-sheet is always present above
                   // every symbol's own widget.
@@ -1994,7 +2038,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     !(
                       effectiveGridContentType === "airline" ||
                       effectiveGridContentType === "broadcaster" ||
-                      effectiveGridContentType === "tourismlogo"
+                      effectiveGridContentType === "tourismlogo" ||
+                      effectiveGridContentType === "newsagency"
                     ) && (
                     <EntitySummary
                       kind="modern"
@@ -2474,6 +2519,22 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             </aside>
           )}
 
+          {/* ===== NEWS-AGENCY box — a national news agency picked in the "National symbols"
+              tab. Same treatment as National symbols, Political parties, airlines,
+              broadcasters and tourism logos: its own widget below the fact-sheet, highlighting nothing
+              on the map. ===== */}
+          {selectedSubdivisionNewsAgency && (
+            <aside className="learn-fs__panel" aria-live="polite">
+              <div className="learn-fs__detail">
+                <NewsAgencyDetails
+                  agency={selectedSubdivisionNewsAgency}
+                  baseUrl={baseUrl}
+                  onEnlarge={setZoomedFlagUrl}
+                />
+              </div>
+            </aside>
+          )}
+
           {/* ===== NATIONAL-CAPITAL box — for a national capital that heads no
               subdivision (Ottawa, Pretoria, Amsterdam …), selected from the
               hierarchy chart. It has no subdivision fact-sheet, so this small card
@@ -2715,6 +2776,13 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               setSelectedSubdivisionTourismLogo((cur) => (cur?.id === logo.id ? null : logo));
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
+            selectedNewsAgencyId={selectedSubdivisionNewsAgency?.id ?? null}
+            onSelectNewsAgency={(agency) => {
+              // Same toggle behaviour as national symbol / party / airline / broadcaster / tourism logo:
+              // clicking the open agency's card again closes its widget.
+              setSelectedSubdivisionNewsAgency((cur) => (cur?.id === agency.id ? null : agency));
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           />
         );
       })() : (
@@ -2730,6 +2798,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           selectedAirlineId={gridAirlineId}
           selectedBroadcasterId={gridBroadcasterId}
           selectedTourismLogoId={gridTourismLogoId}
+          selectedNewsAgencyId={gridNewsAgencyId}
           onSelect={handleGridSelect}
           resolveFlag={resolveFlag}
           isModernEra={isModernEra}

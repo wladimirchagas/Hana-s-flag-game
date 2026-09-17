@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 130" width="540" height="130">
+  <defs>
+    <style>
+      .nc-title { font-family: "Playfair Display", "Times New Roman", serif; font-size: 32px; font-weight: 900; fill: #0f172a; letter-spacing: 0.06em; }
+      .nc-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10.5px; font-weight: 700; fill: #475569; letter-spacing: 0.26em; text-transform: uppercase; }
+    </style>
+  </defs>
+  <rect width="540" height="130" fill="transparent"/>
+  <text x="270" y="60" text-anchor="middle" class="nc-title">THE NAURU CHRONICLE</text>
+  <line x1="60" y1="78" x2="480" y2="78" stroke="#0f172a" stroke-width="2" />
+  <line x1="120" y1="83" x2="420" y2="83" stroke="#64748b" stroke-width="0.75" />
+  <text x="270" y="104" text-anchor="middle" class="nc-sub">PACIFIC VOICES · CENTRAL PACIFIC INDEPENDENT PRESS</text>
+</svg>
