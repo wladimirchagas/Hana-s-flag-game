@@ -1088,4 +1088,244 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         "Freely licensed on Wikimedia Commons under CC BY 4.0 (vector conversion by Commons user Kaidor of original artwork by Fabio Mochi); reproduced here with attribution.",
     },
   ],
+  KR: [
+    {
+      id: "kr-korea-tourism-organization",
+      countryCode: "KR",
+      name: "Korea Tourism Organization",
+      slogan: "Imagine your Korea",
+      agency: "Korea Tourism Organization (KTO)",
+      visitors: {
+        count: 16370000,
+        year: 2024,
+        metric:
+          "International visitor arrivals, calendar year (Korea Tourism Organization) — up 48% on 2023, 94% of the pre-pandemic 2019 record",
+      },
+      logo: "/tourism-logos/kr/kto.png",
+      logoExplainer:
+        "The Korea Tourism Organization's own mark — a multicoloured abstract dancing figure formed from overlapping rings — is the symbol KTO uses across its consumer-facing \"Imagine your Korea\" marketing, not a government-ministry seal.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Korea-Tourism-Organization-en.png",
+        "https://en.wikipedia.org/wiki/Korea_Tourism_Organization",
+      ],
+      licenceNote:
+        "Public domain per its Commons file page — \"consists only of simple geometric shapes or text\", below the threshold of originality — but carries a trademark notice for commercial use. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original file could not be downloaded directly within this session's rate limits.",
+    },
+  ],
+  PE: [
+    {
+      id: "pe-marca-peru",
+      countryCode: "PE",
+      name: "Marca Perú",
+      slogan: "Perú, Imperio de Tesoros Escondidos",
+      agency: "PromPerú (Comisión de Promoción del Perú para la Exportación y el Turismo), under MINCETUR",
+      launched: 2011,
+      visitors: {
+        count: 3256693,
+        year: 2024,
+        metric:
+          "International tourist arrivals, calendar year (Mincetur / Superintendencia Nacional de Migraciones) — up 29% on 2023",
+      },
+      logo: "/tourism-logos/pe/marca-peru.jpg",
+      logoExplainer:
+        "The Marca Perú mark is a stylised red-and-white \"P\" drawn as a spiral echoing pre-Columbian Nazca and textile motifs, trailing into the cursive word \"Perú\" — PromPerú's country brand launched in 2011 and used across all of Peru's consumer tourism and export promotion.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Marca_Per%C3%BA.jpg",
+        "https://en.wikipedia.org/wiki/PromPer%C3%BA",
+      ],
+      licenceNote:
+        "Public domain per its Commons file page — \"consists only of simple geometric shapes or text\" — attributed to PromPerú (MINCETUR); carries a trademark notice for commercial use.",
+    },
+  ],
+  TR: [
+    {
+      id: "tr-goturkiye",
+      countryCode: "TR",
+      name: "Go Türkiye",
+      agency: "Türkiye Tourism Promotion and Development Agency (TGA), under the Ministry of Culture and Tourism",
+      launched: 2021,
+      visitors: {
+        count: 62270000,
+        year: 2024,
+        metric:
+          "International visitor arrivals, calendar year (Republic of Türkiye Ministry of Culture and Tourism) — a record high, up 9.8% on 2023",
+      },
+      logo: "/tourism-logos/tr/turkiye.png",
+      logoExplainer:
+        "The Go Türkiye mark renders the word \"Türkiye\" in a bold brush-script hand, with a small tulip motif — the flower long emblematic of Turkish and Ottoman decorative art — worked into the accent above the \"ü\". It is the country's official tourism promotion brand, published by the Türkiye Tourism Promotion and Development Agency's own branding guidelines site.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:T%C3%BCrkiye_logo.svg",
+        "https://en.wikipedia.org/wiki/Turkey_Home",
+        "https://branding.goturkiye.com/",
+      ],
+      licenceNote:
+        "Public domain per its Commons file page — \"consists only of simple geometric shapes or text\" — attributed to the Türkiye Tourism Promotion and Development Agency; carries a trademark notice for commercial use. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
+    },
+  ],
+  MX: [
+    {
+      id: "mx-visitmexico",
+      countryCode: "MX",
+      name: "VisitMéxico",
+      agency: "Secretaría de Turismo (SECTUR), Mexico's federal Secretariat of Tourism",
+      visitors: {
+        count: 38331000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mexico)",
+      },
+      noImageReason:
+        "SECTUR took over Mexico's tourism-branding responsibilities after the former Mexico Tourism Board (Consejo de Promoción Turística de México) was dissolved in 2019; searched Wikimedia Commons (Category:Logos of Mexico, Category:Logos of governments and government agencies of Mexico) and English/Spanish Wikipedia — the only bundled tourism-related file found (\"Logo Secretaría de Turismo.png\") is SECTUR's own institutional department seal, not the consumer-facing \"VisitMéxico\" wordmark shown at visitmexico.com, and no freely-licensed copy of that consumer mark could be found.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Secretariat_of_Tourism_(Mexico)",
+        "https://en.wikipedia.org/wiki/Mexico_Tourism_Board",
+        "https://visitmexico.com/eng/home-2/",
+      ],
+    },
+  ],
+  PT: [
+    {
+      id: "pt-visitportugal",
+      countryCode: "PT",
+      name: "Visit Portugal",
+      agency: "Turismo de Portugal, Portugal's National Tourism Authority under the Ministry of the Economy",
+      visitors: {
+        count: 16240000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Portugal)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Portugal, Category:Logos of organizations of Portugal) and English/Portuguese Wikipedia — the bundled \"Turismo de Portugal logo (white)\" file is the tourism authority's own institutional wordmark, and no freely-licensed copy of the separate \"Visit Portugal\" consumer campaign mark used at visitportugal.com could be found.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Portugal",
+        "https://www.visitportugal.com/en",
+        "https://en.wikipedia.org/wiki/Tourism_in_Portugal",
+      ],
+    },
+  ],
+  GR: [
+    {
+      id: "gr-greek-national-tourism-organisation",
+      countryCode: "GR",
+      name: "Greece — \"All You Want Is Greece\"",
+      slogan: "All You Want Is Greece",
+      agency: "Greek National Tourism Organisation (GNTO / ΕΟΤ), under the Ministry of Tourism",
+      launched: 2021,
+      visitors: {
+        count: 31347000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Greece)",
+      },
+      noImageReason:
+        "Greece's tourism slogan has changed repeatedly (\"Live your Myth in Greece\" 2005, \"Greece: Always in Season\" 2020, \"All You Want Is Greece\" 2021) without a single enduring consumer wordmark distinct from the GNTO/EOT institutional emblem; searched Wikimedia Commons (Category:Ministry of Tourism (Greece), Category:Tourism in Greece) and the English Wikipedia article for the Greek National Tourism Organisation — no freely-licensed consumer campaign logo could be found for any of the recent slogans.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Greek_National_Tourism_Organisation",
+        "https://commons.wikimedia.org/wiki/Category:Ministry_of_Tourism_(Greece)",
+      ],
+    },
+  ],
+  VN: [
+    {
+      id: "vn-vietnam-timeless-charm",
+      countryCode: "VN",
+      name: "Vietnam — \"Vietnam: Timeless Charm\"",
+      slogan: "Vietnam: Timeless Charm",
+      agency: "Vietnam National Authority of Tourism (VNAT), under the Ministry of Culture, Sports and Tourism",
+      visitors: {
+        count: 18009000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Vietnam)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Vietnam, Category:Logos of Vietnam) and the English Wikipedia article for the Vietnam National Authority of Tourism — no freely-licensed copy of the \"Vietnam: Timeless Charm\" campaign mark could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Vietnam_National_Authority_of_Tourism",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Vietnam",
+      ],
+    },
+  ],
+  JO: [
+    {
+      id: "jo-jordan-tourism-board",
+      countryCode: "JO",
+      name: "Jordan Tourism Board",
+      agency: "Jordan Tourism Board (JTB), under the Ministry of Tourism and Antiquities",
+      visitors: {
+        count: 5367000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Jordan)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Symbols of Jordan, Category:National emblem of Jordan) and the English Wikipedia articles for the Ministry of Tourism and Antiquities (Jordan) and Tourism in Jordan — no freely-licensed Jordan Tourism Board logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_and_Antiquities_(Jordan)",
+        "https://en.wikipedia.org/wiki/Tourism_in_Jordan",
+      ],
+    },
+  ],
+  PL: [
+    {
+      id: "pl-polska-travel",
+      countryCode: "PL",
+      name: "Polska Travel",
+      agency: "Polska Organizacja Turystyczna (POT), the Polish Tourism Organisation",
+      visitors: {
+        count: 21165000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Poland)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Poland) and the English Wikipedia article for the Polish Tourism Organisation — no freely-licensed \"Polska Travel\" / POT tourism-brand logo could be found; Commons results returned only unrelated Polish logos (Polska 2050 political party, Wirtualna Polska media company, Vogue Polska).",
+      sources: [
+        "https://en.wikipedia.org/wiki/Polish_Tourism_Organisation",
+        "https://www.poland.travel/en",
+      ],
+    },
+  ],
+  IL: [
+    {
+      id: "il-ministry-of-tourism",
+      countryCode: "IL",
+      name: "Israel Ministry of Tourism",
+      agency: "Ministry of Tourism (Israel)",
+      visitors: {
+        count: 4550000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Israel)",
+      },
+      noImageReason:
+        "The only tourism-related file found on Wikimedia Commons (\"IL-Isr-tour-logo.png\", Category:Logo of the Ministry of Tourism (Israel)) is captioned on its own file-history page as a re-creation \"similar to\" the Ministry's logo (German: \"ähnlich Israel-Tourismus\") rather than a verbatim upload of the official mark — bundling a fan approximation would violate this repo's ban on invented/approximated logo content, so the entry is left without an image. No other freely-licensed copy of the Ministry's actual emblem could be found on Commons or Wikipedia.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/Category:Logo_of_the_Ministry_of_Tourism_(Israel)",
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Israel)",
+      ],
+    },
+  ],
+  MA: [
+    {
+      id: "ma-visitmorocco",
+      countryCode: "MA",
+      name: "Visit Morocco",
+      agency: "Office National Marocain du Tourisme (ONMT), the Moroccan National Tourist Office",
+      visitors: {
+        count: 13000000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Morocco)",
+      },
+      noImageReason:
+        "The only tourism-related file found on Wikimedia Commons (\"Tourism in Morocco.svg\") is documented on its own file-history page as a user-recreated design based only on the colours of visitmorocco.com, not a verbatim upload of the ONMT's actual \"Visit Morocco\" wordmark — bundling that recreation would violate this repo's ban on invented/approximated logo content, so the entry is left without an image. No other freely-licensed copy of the genuine ONMT brand mark could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Moroccan_National_Tourist_Office",
+        "https://commons.wikimedia.org/wiki/File:Tourism_in_Morocco.svg",
+        "https://www.visitmorocco.com/en",
+      ],
+    },
+  ],
 };
