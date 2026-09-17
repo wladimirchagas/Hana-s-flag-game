@@ -1560,6 +1560,11 @@ The widget shows, for a modern country, these rows (each rendered only when its 
 | Currencies | `country.currencies` |
 | Calling code | `country.callingCode` |
 | Internet domain | `country.tld` |
+| GDP | `country.gdpLcu`, `country.gdpUsd` (World Bank) |
+| GDP per capita | `country.gdpPerCapitaLcu`, `country.gdpPerCapitaUsd` (World Bank) |
+| Freedom House | `country.democracy.freedomHouse` |
+| V-Dem | `country.democracy.vDem` |
+| The Economist | `country.democracy.economist` |
 | Government | `GOVERNMENT_TYPES[code]` (curated local map) |
 
 ### Why this rule exists
