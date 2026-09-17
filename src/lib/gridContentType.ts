@@ -17,7 +17,8 @@ export type GridContentType =
   | "olympiccommittee"
   | "airline"
   | "broadcaster"
-  | "tourismlogo";
+  | "tourismlogo"
+  | "newsagency";
 
 export const GRID_CONTENT_TYPE_LABELS: Record<GridContentType, string> = {
   flag: "National flags",
@@ -28,6 +29,7 @@ export const GRID_CONTENT_TYPE_LABELS: Record<GridContentType, string> = {
   airline: "Commercial airlines",
   broadcaster: "Public broadcasters",
   tourismlogo: "Tourism logos",
+  newsagency: "National news agencies",
 };
 
 export const GRID_CONTENT_TYPE_ORDER: readonly GridContentType[] = [
@@ -39,6 +41,7 @@ export const GRID_CONTENT_TYPE_ORDER: readonly GridContentType[] = [
   "airline",
   "broadcaster",
   "tourismlogo",
+  "newsagency",
 ];
 
 const STORAGE_KEY = "flagGame.learn.contentType";

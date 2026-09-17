@@ -78,7 +78,16 @@ const {
 } = moduleExports.exports;
 
 const ALL_GROUP_MODES = Object.keys(GROUP_MODE_LABELS);
-const ALL_CONTENT_TYPES = ["flag", "coatofarms", "passport", "footballcrest", "airline", "broadcaster"];
+const ALL_CONTENT_TYPES = [
+  "flag",
+  "coatofarms",
+  "passport",
+  "footballcrest",
+  "airline",
+  "broadcaster",
+  "tourismlogo",
+  "newsagency",
+];
 
 console.log("Checking groupModeAvailableFor across all content types and eras...");
 
@@ -96,9 +105,13 @@ assert.equal(
   "subcontinent must be available for historical era flags",
 );
 
-// Verify by-country is only available for airline and broadcaster in modern era
+// Verify by-country is only available for airline, broadcaster, tourismlogo and newsagency in modern era
 for (const ct of ALL_CONTENT_TYPES) {
-  const expected = ct === "airline" || ct === "broadcaster";
+  const expected =
+    ct === "airline" ||
+    ct === "broadcaster" ||
+    ct === "tourismlogo" ||
+    ct === "newsagency";
   assert.equal(
     groupModeAvailableFor("by-country", ct, true),
     expected,
@@ -108,11 +121,15 @@ for (const ct of ALL_CONTENT_TYPES) {
 
 // Verify that the useEffect fallback logic behaves correctly:
 // If a mode is available, it must never be reset.
-// If a mode is not available, it must fallback to "by-country" (for airline/broadcaster) or "none".
+// If a mode is not available, it must fallback to "by-country" (for airline/broadcaster/tourismlogo/newsagency) or "none".
 for (const isModernEra of [true, false]) {
   for (const ct of ALL_CONTENT_TYPES) {
     const effectiveCt = isModernEra ? ct : "flag";
-    const isCountryGrouped = effectiveCt === "airline" || effectiveCt === "broadcaster";
+    const isCountryGrouped =
+      effectiveCt === "airline" ||
+      effectiveCt === "broadcaster" ||
+      effectiveCt === "tourismlogo" ||
+      effectiveCt === "newsagency";
 
     for (const mode of ALL_GROUP_MODES) {
       const isAvailable = groupModeAvailableFor(mode, effectiveCt, isModernEra);

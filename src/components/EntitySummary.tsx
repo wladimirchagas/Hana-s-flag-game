@@ -54,6 +54,80 @@ function formatCurrency(c: { code: string; name: string; symbol?: string }) {
   return c.symbol ? `${c.name} (${c.symbol})` : c.name;
 }
 
+function formatGdpScale(num: number): string {
+  if (num >= 1e12) {
+    const val = num / 1e12;
+    return `${val >= 10 ? val.toFixed(1) : val.toFixed(2)} trillion`;
+  }
+  if (num >= 1e9) {
+    const val = num / 1e9;
+    return `${val >= 10 ? val.toFixed(1) : val.toFixed(2)} billion`;
+  }
+  if (num >= 1e6) {
+    const val = num / 1e6;
+    return `${val >= 10 ? val.toFixed(1) : val.toFixed(2)} million`;
+  }
+  return num.toLocaleString("en-US");
+}
+
+function formatGdpRow(c: Country): string | null {
+  if (!c.gdpUsd && !c.gdpLcu) return null;
+  const curr = c.currencies?.[0];
+  const symbol = curr?.symbol || "";
+  const code = curr?.code || "";
+
+  const formattedUsd = c.gdpUsd ? `$${formatGdpScale(c.gdpUsd)}` : null;
+  const isUsdCurrency = code === "USD" || (symbol === "$" && (c.code === "US" || c.code === "EC" || c.code === "SV" || c.code === "PA" || c.code === "PW" || c.code === "FM" || c.code === "MH" || c.code === "TL"));
+
+  if (!c.gdpLcu || isUsdCurrency || Math.abs(c.gdpLcu - (c.gdpUsd || 0)) / (c.gdpUsd || 1) < 0.001) {
+    return formattedUsd ? `${formattedUsd} USD` : null;
+  }
+
+  const lcuScale = formatGdpScale(c.gdpLcu);
+  const formattedLcu = symbol ? `${symbol}${lcuScale}` : `${lcuScale} ${code}`;
+
+  if (formattedUsd) {
+    return `${formattedLcu} (${formattedUsd} USD)`;
+  }
+  return formattedLcu;
+}
+
+function formatGdpPerCapitaRow(c: Country): string | null {
+  if (!c.gdpPerCapitaUsd && !c.gdpPerCapitaLcu) return null;
+  const curr = c.currencies?.[0];
+  const symbol = curr?.symbol || "";
+  const code = curr?.code || "";
+
+  const usdNum = c.gdpPerCapitaUsd ? Math.round(c.gdpPerCapitaUsd).toLocaleString("en-US") : null;
+  const formattedUsd = usdNum ? `$${usdNum}` : null;
+  const isUsdCurrency = code === "USD" || (symbol === "$" && (c.code === "US" || c.code === "EC" || c.code === "SV" || c.code === "PA" || c.code === "PW" || c.code === "FM" || c.code === "MH" || c.code === "TL"));
+
+  if (!c.gdpPerCapitaLcu || isUsdCurrency || Math.abs(c.gdpPerCapitaLcu - (c.gdpPerCapitaUsd || 0)) / (c.gdpPerCapitaUsd || 1) < 0.001) {
+    return formattedUsd ? `${formattedUsd} USD` : null;
+  }
+
+  const lcuNum = Math.round(c.gdpPerCapitaLcu).toLocaleString("en-US");
+  const formattedLcu = symbol ? `${symbol}${lcuNum}` : `${lcuNum} ${code}`;
+
+  if (formattedUsd) {
+    return `${formattedLcu} (${formattedUsd} USD)`;
+  }
+  return formattedLcu;
+}
+
+function formatRankChange(rc?: number): string {
+  if (rc === undefined) return "";
+  if (rc > 0) return ` (+${rc})`;
+  if (rc < 0) return ` (${rc})`;
+  return " (=)";
+}
+
+function formatDemocracyIndex(idx?: { year: number; rating: string; rank: number; rankChange?: number }): string | null {
+  if (!idx) return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} (${idx.year})`;
+}
+
 export function EntitySummary(props: EntitySummaryProps) {
   if (props.kind === "modern") {
     const c = props.country;
@@ -92,6 +166,24 @@ export function EntitySummary(props: EntitySummaryProps) {
         label: c.tld.length === 1 ? "Internet domain" : "Internet domains",
         value: c.tld.join(", "),
       });
+
+    const gdpVal = formatGdpRow(c);
+    if (gdpVal) rows.push({ label: "GDP", value: gdpVal });
+
+    const gdpCapVal = formatGdpPerCapitaRow(c);
+    if (gdpCapVal) rows.push({ label: "GDP per capita", value: gdpCapVal });
+
+    if (c.democracy) {
+      const fh = formatDemocracyIndex(c.democracy.freedomHouse);
+      if (fh) rows.push({ label: "Freedom House", value: fh });
+
+      const vdem = formatDemocracyIndex(c.democracy.vDem);
+      if (vdem) rows.push({ label: "V-Dem", value: vdem });
+
+      const econ = formatDemocracyIndex(c.democracy.economist);
+      if (econ) rows.push({ label: "The Economist", value: econ });
+    }
+
     if (government) rows.push({ label: "Government", value: government });
     // Continent + Region shown last (the country name now lives in the search
     // bar at the top of the widget, and its continent/region moved here).

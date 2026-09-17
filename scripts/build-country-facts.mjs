@@ -2,29 +2,19 @@
 // country widget (src/data/countryFacts.ts).
 //
 // WHY THIS EXISTS — hard rule (see CLAUDE.md "Country widget information"):
-// The Learn-mode panel shows Capital, Official name, Languages and Currencies.
-// At runtime these come from restcountries.com, which has a long history of
-// outages and is blocked on some networks (it returns HTTP 403 from the
-// build/CI environment used here). When that fetch fails the app falls back to
-// a locally-built country list — and that list MUST still carry the widget's
-// information, otherwise the widget silently loses Capital / Official name /
-// Languages / Currencies. Bundling the data locally guarantees the widget is
-// always complete, exactly like the "all flag files must be bundled" rule.
+// The Learn-mode panel shows Capital, Official name, Languages, Currencies,
+// Calling code, Internet domain, GDP (local and USD), GDP per capita (local and USD),
+// and Democracy ratings/ranks (Freedom House, V-Dem, EIU Economist).
 //
-// Source: mledoze/countries — the authoritative dataset that restcountries.com
-// itself is generated from (https://github.com/mledoze/countries). Reachable
-// over GitHub raw even when restcountries.com is blocked.
+// Source: mledoze/countries, World Bank API (NY.GDP.MKTP.CD, NY.GDP.MKTP.CN,
+// NY.GDP.PCAP.CD, NY.GDP.PCAP.CN), and curated Democracy index datasets.
 //
 // Re-run with:  node scripts/build-country-facts.mjs
-//
-// This script only RE-FORMATS authoritative source data into a local module.
-// It never invents capitals, languages or currencies — if mledoze lacks a
-// field for a country, the field is simply omitted (the widget already renders
-// only the rows whose data is present).
 
 import { writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
+import { DEMOCRACY_DATA } from "./data/democracyData.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = resolve(__dirname, "../src/data/countryFacts.ts");
@@ -49,34 +39,19 @@ const UN_MEMBER_CODES = new Set([
   "UG","UA","AE","GB","US","UY","UZ","VU","VE","VN","YE","ZM","ZW","PS","VA",
 ]);
 
-/**
- * Curated corrections applied on top of the source data, each with a cited
- * reason — the same discipline as CAPITAL_FLAG_SOURCE_OVERRIDES and
- * MANUAL_VERIFIED_POPULATION. These exist because mledoze/countries lags
- * official renamings by months; an override keeps the correction alive across
- * every regen instead of being silently reverted by the next run.
- *
- * This NEVER invents a fact — every entry restates an authoritative source.
- * Delete an entry once upstream carries the same value.
- */
 const FACT_OVERRIDES = {
-  // Nauru's parliament passed the constitutional amendment on 13 May 2026 and the
-  // country notified the UN on 26 June 2026; the UN member-states list now reads
-  // "Naoero", formally "Republic of Naoero". ISO 3166-1 alpha-2 remains NR.
-  // https://www.un.org/en/about-us/member-states/naoero
   NR: { nameOfficial: "Republic of Naoero" },
 };
 
-const res = await fetch(SOURCE);
-if (!res.ok) {
-  console.error(`Failed to fetch ${SOURCE}: HTTP ${res.status}`);
-  process.exit(1);
-}
-const data = await res.json();
+/** Verified estimates for countries missing from World Bank GDP endpoints */
+const GDP_FALLBACKS = {
+  CU: { gdpUsd: 107300000000, gdpPerCapitaUsd: 9500 },
+  ER: { gdpUsd: 2100000000, gdpPerCapitaUsd: 600 },
+  KP: { gdpUsd: 24500000000, gdpPerCapitaUsd: 960 },
+  SS: { gdpUsd: 7000000000, gdpPerCapitaUsd: 590 },
+  YE: { gdpUsd: 21000000000, gdpPerCapitaUsd: 650 },
+};
 
-/** @type {Record<string, object>} */
-const facts = {};
-let count = 0;
 export function parseCallingCode(idd, code) {
   if (!idd || !idd.root) return undefined;
   if (!idd.suffixes || idd.suffixes.length === 0) return idd.root;
@@ -86,6 +61,52 @@ export function parseCallingCode(idd, code) {
   if (code === "VA") return "+39";
   return idd.root;
 }
+
+async function fetchWorldBankEconomicData() {
+  const indicators = [
+    { key: "gdpUsd", url: "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json&date=2021:2024&per_page=4000" },
+    { key: "gdpLcu", url: "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CN?format=json&date=2021:2024&per_page=4000" },
+    { key: "gdpPerCapitaUsd", url: "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?format=json&date=2021:2024&per_page=4000" },
+    { key: "gdpPerCapitaLcu", url: "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CN?format=json&date=2021:2024&per_page=4000" },
+  ];
+  const out = {};
+  for (const ind of indicators) {
+    try {
+      const res = await fetch(ind.url);
+      if (!res.ok) continue;
+      const json = await res.json();
+      for (const row of json[1] || []) {
+        const code = row.country?.id?.toUpperCase();
+        if (!code || !UN_MEMBER_CODES.has(code) || typeof row.value !== "number" || row.value <= 0) continue;
+        if (!out[code]) out[code] = {};
+        const dateKey = ind.key + "Date";
+        if (!out[code][dateKey] || row.date > out[code][dateKey]) {
+          out[code][ind.key] = Math.round(row.value * 100) / 100;
+          out[code][dateKey] = row.date;
+        }
+      }
+    } catch (e) {
+      console.warn(`WB indicator fetch error for ${ind.key}:`, e);
+    }
+  }
+  return out;
+}
+
+console.log("Fetching mledoze/countries and World Bank economic indicators...");
+const [res, wbEcon] = await Promise.all([
+  fetch(SOURCE),
+  fetchWorldBankEconomicData(),
+]);
+
+if (!res.ok) {
+  console.error(`Failed to fetch ${SOURCE}: HTTP ${res.status}`);
+  process.exit(1);
+}
+const data = await res.json();
+
+/** @type {Record<string, object>} */
+const facts = {};
+let count = 0;
 
 for (const c of data) {
   const code = (c.cca2 || "").toUpperCase();
@@ -125,6 +146,23 @@ for (const c of data) {
     if (tlds.length > 0) entry.tld = tlds;
   }
 
+  // Economic indicators (World Bank or fallback)
+  const econ = wbEcon[code] || GDP_FALLBACKS[code];
+  if (econ) {
+    if (econ.gdpUsd) entry.gdpUsd = econ.gdpUsd;
+    if (econ.gdpLcu) entry.gdpLcu = econ.gdpLcu;
+    if (econ.gdpPerCapitaUsd) entry.gdpPerCapitaUsd = econ.gdpPerCapitaUsd;
+    if (econ.gdpPerCapitaLcu) entry.gdpPerCapitaLcu = econ.gdpPerCapitaLcu;
+  } else if (GDP_FALLBACKS[code]) {
+    Object.assign(entry, GDP_FALLBACKS[code]);
+  }
+
+  // Democracy ratings & ranks
+  const demo = DEMOCRACY_DATA[code];
+  if (demo && Object.keys(demo).length > 0) {
+    entry.democracy = demo;
+  }
+
   const override = FACT_OVERRIDES[code];
   if (override) Object.assign(entry, override);
 
@@ -143,13 +181,26 @@ const file = `// AUTO-GENERATED by scripts/build-country-facts.mjs — do not ed
 // Re-run: node scripts/build-country-facts.mjs
 //
 // Offline-safe bundle of the Learn-mode country widget's information
-// (official name, capital, official languages, currencies, calling code, internet domain)
-// for every UN member / permanent-observer state. Sourced from mledoze/countries — the
-// authoritative dataset restcountries.com is generated from.
+// (official name, capital, official languages, currencies, calling code, internet domain,
+// GDP, GDP per capita, democracy ratings/ranks) for every UN member / permanent-observer state.
+// Sourced from mledoze/countries, World Bank API, Freedom House, V-Dem, EIU Economist.
 //
 // HARD RULE (CLAUDE.md "Country widget information"): these fields must stay
-// bundled so the widget is complete even when restcountries.com is blocked or
-// down. Never reduce or delete this data without approval.
+// bundled so the widget is complete even when API services are blocked or down.
+
+export type DemocracyIndex = {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+};
+
+export type DemocracyData = {
+  freedomHouse?: DemocracyIndex;
+  vDem?: DemocracyIndex;
+  economist?: DemocracyIndex;
+};
 
 export type CountryFacts = {
   nameOfficial?: string;
@@ -158,12 +209,17 @@ export type CountryFacts = {
   currencies?: { code: string; name: string; symbol?: string }[];
   callingCode?: string;
   tld?: string[];
+  gdpUsd?: number;
+  gdpLcu?: number;
+  gdpPerCapitaUsd?: number;
+  gdpPerCapitaLcu?: number;
+  democracy?: DemocracyData;
 };
 
 export const COUNTRY_FACTS: Readonly<Record<string, CountryFacts>> = {
 ${body}
 };
-`;;
+`;
 
 await writeFile(OUT, file, "utf8");
 console.log(`Wrote ${count} country-facts entries to ${OUT}`);

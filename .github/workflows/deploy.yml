@@ -31,7 +31,7 @@ permissions:
 # over a run that is genuinely stalled (status `waiting`/`queued` with no
 # progress for hours), never to get two deploys running at once.
 concurrency:
-  group: pages-v3
+  group: pages-v4
   cancel-in-progress: false
 
 jobs:

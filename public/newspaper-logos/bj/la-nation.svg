@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" width="500" height="140">
+  <rect width="500" height="140" fill="#FFFFFF" rx="8" stroke="#047857" stroke-width="3"/>
+  <text x="250" y="72" font-family="'Times New Roman', serif" font-size="44" font-weight="bold" fill="#047857" text-anchor="middle">LA NATION</text>
+  <text x="250" y="98" font-family="'Inter', sans-serif" font-size="12" fill="#6B7280" text-anchor="middle" letter-spacing="2">LE QUOTIDIEN NATIONAL DU BÉNIN</text>
+</svg>

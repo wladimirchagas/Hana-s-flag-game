@@ -70,6 +70,10 @@ export type FlagListEntry = {
   tourismLogoImage?: string | null;
   /** Unique tourism-logo ID (e.g. "au-tourism-australia") when this card represents a tourism logo. */
   tourismLogoId?: string;
+  /** Resolved national news agency logo URL for the grid's "National news agencies" view. */
+  newsAgencyLogo?: string | null;
+  /** Unique news agency ID (e.g. "au-aap") when this card represents a news agency. */
+  newsAgencyId?: string;
   /** Country display name when this entry represents an airline/broadcaster/tourism logo grouped under a country. */
   countryName?: string;
   /**

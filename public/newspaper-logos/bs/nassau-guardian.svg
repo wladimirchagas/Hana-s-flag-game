@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" width="500" height="140">
+  <rect width="500" height="140" fill="#007791" rx="8"/>
+  <text x="250" y="68" font-family="'Playfair Display', 'Times New Roman', serif" font-size="30" font-weight="bold" fill="#FFFFFF" text-anchor="middle">The Nassau Guardian</text>
+  <text x="250" y="96" font-family="'Inter', sans-serif" font-size="12" fill="#FDE047" text-anchor="middle" letter-spacing="2">FIRST IN NEWS — EST. 1844</text>
+</svg>

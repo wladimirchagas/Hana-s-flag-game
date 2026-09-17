@@ -50,6 +50,8 @@ import { MENS_WORLD_CUP_TITLES, WOMENS_WORLD_CUP_TITLES } from "../data/worldCup
 import { allCommercialAirlines } from "../lib/commercialAirlines";
 import { allPublicBroadcasters } from "../lib/publicBroadcasters";
 import { allTourismLogos } from "../lib/tourismLogos";
+import { allNationalNewsAgencies } from "../lib/nationalNewsAgencies";
+
 import { GridImage } from "./GridImage";
 
 /**
@@ -75,13 +77,19 @@ export type FlagGridProps = {
    *  crest card passes its PARENT country); `crestId` is the specific football
    *  crest that was clicked; `airlineId` is the specific commercial airline;
    *  `broadcasterId` is the specific public broadcaster; `tourismLogoId` is the
-   *  specific tourism logo; `olympicCommitteeId` is the specific National
-   *  Olympic Committee (a non-UN IOC member entity — Chinese Taipei, Hong
-   *  Kong, … — passes its own id here, distinct from the parent country's
-   *  own NOC, exactly like `crestId` for a FIFA entity); `worldMapCode` is
-   *  that entity's own ISO alpha-2 code (or "XK"), for highlighting its own
-   *  borders on the world map instead of its parent's. */
-  onSelect: (id: string, crestId?: string, airlineId?: string, broadcasterId?: string, tourismLogoId?: string, olympicCommitteeId?: string, worldMapCode?: string) => void;
+   *  specific tourism logo; `newsAgencyId` is the specific national news agency;
+   *  `olympicCommitteeId` is the specific National Olympic Committee (a non-UN IOC member entity);
+   *  `worldMapCode` is that entity's own ISO alpha-2 code. */
+  onSelect: (
+    id: string,
+    crestId?: string,
+    airlineId?: string,
+    broadcasterId?: string,
+    tourismLogoId?: string,
+    newsAgencyId?: string,
+    olympicCommitteeId?: string,
+    worldMapCode?: string,
+  ) => void;
   /** Optional resolver to prepend the BASE_URL to relative flag paths so
    *  the grid can render flags identically to the panel. */
   resolveFlag: (raw: string) => string;
@@ -99,6 +107,8 @@ export type FlagGridProps = {
   selectedBroadcasterId?: string | null;
   /** Currently selected tourism logo ID (if any) */
   selectedTourismLogoId?: string | null;
+  /** Currently selected national news agency ID (if any) */
+  selectedNewsAgencyId?: string | null;
 };
 
 type GroupMode =
@@ -191,7 +201,13 @@ function groupModeAvailableFor(
   isModernEra: boolean,
 ): boolean {
   if (COUNTRY_GROUP_MODES.has(m)) {
-    return isModernEra && (contentType === "airline" || contentType === "broadcaster" || contentType === "tourismlogo");
+    return (
+      isModernEra &&
+      (contentType === "airline" ||
+        contentType === "broadcaster" ||
+        contentType === "tourismlogo" ||
+        contentType === "newsagency")
+    );
   }
   if (PASSPORT_ONLY_MODES.has(m)) return isModernEra && contentType === "passport";
   if (FOOTBALL_CREST_ONLY_MODES.has(m)) return isModernEra && contentType === "footballcrest";
@@ -229,6 +245,7 @@ export function FlagGrid({
   selectedAirlineId,
   selectedBroadcasterId,
   selectedTourismLogoId,
+  selectedNewsAgencyId,
 }: FlagGridProps) {
   const [groupMode, setGroupMode] = useState<GroupMode>(loadStoredGroupMode);
   // Free-text filter typed by the user — narrows the grid by country/polity
@@ -243,7 +260,7 @@ export function FlagGrid({
     try {
       localStorage.setItem(GROUP_MODE_STORAGE_KEY, mode);
     } catch {
-      /* ignore — persistence is best-effort */
+      /* ignore — localStorage best-effort */
     }
   };
 
@@ -281,7 +298,11 @@ export function FlagGrid({
   // active grouping is always one the dropdown offers.
   useEffect(() => {
     if (!groupModeAvailableFor(groupMode, effectiveContentType, isModernEra)) {
-      const isCountryGrouped = effectiveContentType === "airline" || effectiveContentType === "broadcaster" || effectiveContentType === "tourismlogo";
+      const isCountryGrouped =
+        effectiveContentType === "airline" ||
+        effectiveContentType === "broadcaster" ||
+        effectiveContentType === "tourismlogo" ||
+        effectiveContentType === "newsagency";
       setGroupMode(isCountryGrouped ? "by-country" : "none");
     }
   }, [groupMode, effectiveContentType, isModernEra]);
@@ -344,6 +365,23 @@ export function FlagGrid({
           continent: parent ? parent.continent : "Other",
           subcontinent: parent ? parent.subcontinent : "Other",
           selectId: t.countryCode,
+        };
+      });
+    }
+    if (effectiveContentType === "newsagency") {
+      const codeToEntry = new Map(entries.map((e) => [e.id, e]));
+      return allNationalNewsAgencies().map((na): FlagListEntry => {
+        const parent = codeToEntry.get(na.countryCode);
+        return {
+          id: na.id,
+          name: na.name,
+          flag: na.logo ?? null,
+          newsAgencyLogo: na.logo ?? null,
+          newsAgencyId: na.id,
+          countryName: parent ? parent.name : na.countryCode,
+          continent: parent ? parent.continent : "Other",
+          subcontinent: parent ? parent.subcontinent : "Other",
+          selectId: na.countryCode,
         };
       });
     }
@@ -432,7 +470,8 @@ export function FlagGrid({
         (e.countryName && normalizeForSearch(e.countryName).includes(q)) ||
         (e.airlineId && normalizeForSearch(e.airlineId).includes(q)) ||
         (e.broadcasterId && normalizeForSearch(e.broadcasterId).includes(q)) ||
-        (e.tourismLogoId && normalizeForSearch(e.tourismLogoId).includes(q)),
+        (e.tourismLogoId && normalizeForSearch(e.tourismLogoId).includes(q)) ||
+        (e.newsAgencyId && normalizeForSearch(e.newsAgencyId).includes(q)),
     );
   }, [displayEntries, filter]);
 
@@ -742,13 +781,15 @@ export function FlagGrid({
           )}
           <ul className="flag-grid__list">
             {g.items.map((item) => {
-              const active = item.tourismLogoId
-                ? item.tourismLogoId === selectedTourismLogoId
-                : item.broadcasterId
-                  ? item.broadcasterId === selectedBroadcasterId
-                  : item.airlineId
-                    ? item.airlineId === selectedAirlineId
-                    : item.id === selectedId;
+              const active = item.newsAgencyId
+                ? item.newsAgencyId === selectedNewsAgencyId
+                : item.tourismLogoId
+                  ? item.tourismLogoId === selectedTourismLogoId
+                  : item.broadcasterId
+                    ? item.broadcasterId === selectedBroadcasterId
+                    : item.airlineId
+                      ? item.airlineId === selectedAirlineId
+                      : item.id === selectedId;
               // Which image this tile shows depends on the "Show" dropdown.
               // A country with no coat of arms / passport bundled renders the
               // empty placeholder for that view (never an invented image).
@@ -767,7 +808,9 @@ export function FlagGrid({
                           ? item.broadcasterLogo ?? item.flag
                           : effectiveContentType === "tourismlogo"
                             ? item.tourismLogoImage ?? item.flag
-                            : item.flag;
+                            : effectiveContentType === "newsagency"
+                              ? item.newsAgencyLogo ?? item.flag
+                              : item.flag;
               const url = rawImage ? resolveFlag(rawImage) : null;
               const isLearned = learnedCodes.has(item.id);
               // In shape mode, the same id can appear in multiple
@@ -793,6 +836,7 @@ export function FlagGrid({
                         item.airlineId,
                         item.broadcasterId,
                         item.tourismLogoId,
+                        item.newsAgencyId,
                         // A non-UN IOC-member entity card carries its own
                         // `{code}-olympic-committee` id — pass it so the panel
                         // shows that entity's own NOC, not the parent country's.
@@ -805,7 +849,7 @@ export function FlagGrid({
                     }
                     aria-pressed={active}
                     aria-label={
-                      item.countryName && (effectiveContentType === "airline" || effectiveContentType === "broadcaster" || effectiveContentType === "tourismlogo")
+                      item.countryName && (effectiveContentType === "airline" || effectiveContentType === "broadcaster" || effectiveContentType === "tourismlogo" || effectiveContentType === "newsagency")
                         ? `Select ${item.name} (${item.countryName})`
                         : isLearned
                           ? `Select ${item.name} (learned)`

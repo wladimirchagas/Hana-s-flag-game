@@ -24,6 +24,9 @@ on:
       - "scripts/check-tourism-logos.mjs"
       - "src/data/tourismLogos.ts"
       - "public/tourism-logos/**"
+      - "scripts/check-national-news-agencies.mjs"
+      - "src/data/nationalNewsAgencies.ts"
+      - "public/newspaper-logos/**"
       - "src/api/subdivisions.ts"
       - "src/lib/subdivisionMeta.ts"
       - "src/data/flagMeanings.ts"
@@ -280,3 +283,7 @@ jobs:
 
       - name: Verify every tourism logo is sourced, bundled and well-formed
         run: node scripts/check-tourism-logos.mjs
+
+      - name: Verify every national news agency is sourced, bundled and well-formed
+        run: node scripts/check-national-news-agencies.mjs
+

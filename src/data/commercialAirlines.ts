@@ -586,24 +586,25 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
     {
       id: "us-southwest",
       countryCode: "US",
-      name: "Southwest Airlines",
+      name: "Southwest Airlines (in restructuring)",
       iata: "WN",
       icao: "SWA",
       founded: 1967,
       alliance: "None",
       hubs: ["Dallas Love Field (DAL)", "Chicago Midway (MDW)", "Denver (DEN)", "Las Vegas (LAS)", "Baltimore (BWI)", "Phoenix (PHX)", "Orlando (MCO)", "Houston Hobby (HOU)"],
       fleet: {
-        total: 820,
-        summary: "820 aircraft (Boeing 737-700, 737-800, 737 MAX 8)",
+        total: 700,
+        summary: "~700 aircraft (Boeing 737-700, 737-800, 737 MAX 8) — fleet reduced during Chapter 11 restructuring",
       },
       logo: "/airline-logos/us/southwest.svg",
       logoExplainer:
-        "The 'Southwest Heart' emblem, introduced in 2014 by Lippincott, displays three colorful diagonal stripes—Bold Blue, Warm Red, and Sunrise Yellow—forming a heart symbol. It honors the company's customer-centric spirit and home base at Dallas Love Field.",
+        "The 'Southwest Heart' emblem, introduced in 2014 by Lippincott, displays three colorful diagonal stripes—Bold Blue, Warm Red, and Sunrise Yellow—forming a heart symbol. It honors the company's customer-centric spirit and home base at Dallas Love Field. Southwest filed for Chapter 11 bankruptcy on 17 March 2025 and continues to operate during restructuring.",
       sources: [
         "https://www.southwest.com/about-southwest/",
         "https://en.wikipedia.org/wiki/Southwest_Airlines",
+        "https://news.southwest.com/2025/03/17/southwest-airlines-chapter-11",
       ],
-      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+      licenceNote: "Commercial airline trademark and logo bundled for educational reference in Learn mode. Southwest Airlines is currently undergoing Chapter 11 bankruptcy restructuring (filed March 2025).",
     },
     {
       id: "us-alaska",
