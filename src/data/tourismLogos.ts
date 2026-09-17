@@ -1328,4 +1328,237 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  EC: [
+    {
+      id: "ec-all-you-need-is-ecuador",
+      countryCode: "EC",
+      name: "Ecuador — \"All You Need Is Ecuador\"",
+      slogan: "All You Need Is Ecuador",
+      agency: "Ministerio de Turismo del Ecuador",
+      launched: 2014,
+      visitors: {
+        count: 2108000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Ecuador)",
+      },
+      noImageReason:
+        "Ecuador's tourism slogan has changed repeatedly (\"Ecuador Ama la Vida\" 2011, \"All You Need Is Ecuador\" 2014) without a single enduring consumer wordmark surviving on Commons; searched Wikimedia Commons (Category:Logos of Ecuador, Category:Tourism in Ecuador) and the English Wikipedia article for \"Tourism in Ecuador\" — no freely-licensed logo for either campaign could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Ecuador",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Ecuador",
+      ],
+    },
+  ],
+  PA: [
+    {
+      id: "pa-visit-panama",
+      countryCode: "PA",
+      name: "Visit Panama",
+      agency: "Autoridad de Turismo de Panamá (ATP)",
+      launched: 2015,
+      visitors: {
+        count: 647000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Panama)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Panama) and the English Wikipedia article for \"Tourism in Panama\" — no freely-licensed \"Visit Panama\" logo file (refreshed in 2015) could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Panama",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Panama",
+      ],
+    },
+  ],
+  KH: [
+    {
+      id: "kh-kingdom-of-wonder",
+      countryCode: "KH",
+      name: "Cambodia — \"Kingdom of Wonder\"",
+      slogan: "Kingdom of Wonder",
+      agency: "Ministry of Tourism, Cambodia",
+      launched: 2008,
+      visitors: {
+        count: 1306000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Cambodia)",
+      },
+      noImageReason:
+        "\"Kingdom of Wonder\", Cambodia's tourism brand since 2008, has a documented golden-orange identity built around Angkor Wat, but searching Wikimedia Commons (Category:Tourism in Cambodia) and the English Wikipedia article for \"Tourism in Cambodia\" found no freely-licensed copy of the logo.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Cambodia",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Cambodia",
+      ],
+    },
+  ],
+  IS: [
+    {
+      id: "is-inspired-by-iceland",
+      countryCode: "IS",
+      name: "Inspired by Iceland",
+      slogan: "Inspired by Iceland",
+      agency: "Visit Iceland, part of Business Iceland (Íslandsstofa)",
+      launched: 2010,
+      visitors: {
+        count: 488000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Iceland)",
+      },
+      noImageReason:
+        "\"Inspired by Iceland\", launched in 2010 in response to the Eyjafjallajökull eruption's impact on tourism, is a well-documented campaign, but searching Wikimedia Commons (Category:Logos of Iceland, Category:Tourism in Iceland) and the English Wikipedia article for \"Tourism in Iceland\" found no freely-licensed copy of the logo.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Iceland",
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Iceland",
+      ],
+    },
+  ],
+  OM: [
+    {
+      id: "om-ministry-of-heritage-and-tourism",
+      countryCode: "OM",
+      name: "Oman Ministry of Heritage and Tourism",
+      agency: "Ministry of Heritage and Tourism, Oman",
+      visitors: {
+        count: 869000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Oman)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Oman) and the English Wikipedia article for \"Tourism in Oman\" — no freely-licensed Ministry of Heritage and Tourism / consumer destination-brand logo could be found; Commons results returned only unrelated Omani logos (Oman Oil/OQ, Omantel, the national emblem).",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Oman",
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Oman",
+      ],
+    },
+  ],
+  QA: [
+    {
+      id: "qa-visit-qatar",
+      countryCode: "QA",
+      name: "Visit Qatar",
+      agency: "Qatar Tourism (formerly the Qatar Tourism Authority)",
+      visitors: {
+        count: 582000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Qatar)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Qatar) and the English Wikipedia article for the Qatar Tourism Authority — no freely-licensed \"Visit Qatar\" logo could be found on Commons or Wikipedia; Qatar Tourism's own brand-asset pages (qatartourism.com) are not a Commons/Wikipedia source.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Qatar_Tourism_Authority",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Qatar",
+      ],
+    },
+  ],
+  PH: [
+    {
+      id: "ph-love-the-philippines",
+      countryCode: "PH",
+      name: "Love the Philippines",
+      slogan: "Love the Philippines",
+      agency: "Department of Tourism, Philippines",
+      launched: 2023,
+      visitors: {
+        count: 1483000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Philippines)",
+      },
+      noImageReason:
+        "The Philippines' tourism brand changed in June 2023 from the long-running \"It's More Fun in the Philippines\" (2012–2023, itself refreshed with a woven-textile-inspired mark in 2019) to \"Love the Philippines\"; searched Wikimedia Commons and the English Wikipedia articles for both campaigns — no freely-licensed logo for either could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/It%27s_More_Fun_in_the_Philippines!",
+        "https://en.wikipedia.org/wiki/Love_the_Philippines",
+      ],
+    },
+  ],
+  LK: [
+    {
+      id: "lk-sri-lanka-tourism-promotion-bureau",
+      countryCode: "LK",
+      name: "Sri Lanka Tourism Promotion Bureau",
+      agency: "Sri Lanka Tourism Promotion Bureau (SLTPB)",
+      visitors: {
+        count: 540000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Sri Lanka)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Sri Lanka, Category:Tourism in Sri Lanka) and the English Wikipedia article for \"Tourism in Sri Lanka\" — no freely-licensed Sri Lanka Tourism Promotion Bureau consumer-brand logo could be found; Commons results returned only unrelated Sri Lankan logos (a private guide company's mark, an educational institute).",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Sri_Lanka",
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Sri_Lanka",
+      ],
+    },
+  ],
+  NO: [
+    {
+      id: "no-visitnorway",
+      countryCode: "NO",
+      name: "Visitnorway",
+      agency: "Innovation Norway, operator of the visitnorway.com consumer brand",
+      visitors: {
+        count: 1397000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Norway)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Norway) and general web search — no freely-licensed \"Visitnorway\" logo could be found on Commons or Wikipedia; the only Commons file returned by search (\"Tour of Norway logo.svg\") is for an unrelated cycling race.",
+      sources: [
+        "https://www.visitnorway.com/info/about-visitnorway/",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Norway",
+      ],
+    },
+  ],
+  SE: [
+    {
+      id: "se-visitsweden",
+      countryCode: "SE",
+      name: "Visit Sweden",
+      agency: "VisitSweden AB, jointly owned by the Swedish state and the Swedish travel industry",
+      visitors: {
+        count: 1957000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Sweden)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Sweden) and the English Wikipedia article for \"Tourism in Sweden\" — no freely-licensed \"Visit Sweden\" logo could be found on Commons or Wikipedia; VisitSweden's own brand pages are not a Commons/Wikipedia source.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Sweden",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Sweden",
+      ],
+    },
+  ],
+  UY: [
+    {
+      id: "uy-uruguay-natural",
+      countryCode: "UY",
+      name: "Uruguay Natural",
+      slogan: "Uruguay Natural",
+      agency: "Ministerio de Turismo (Ministry of Tourism, Uruguay)",
+      visitors: {
+        count: 3480000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Uruguay)",
+      },
+      logo: "/tourism-logos/uy/uruguay-natural.png",
+      logoExplainer:
+        "The Uruguay Natural mark pairs a golden sun rising over a blue crescent — echoing the Sun of May on Uruguay's own flag — with the wordmark \"Uruguay\" set beside an italic \"Natural\", the Ministry of Tourism's motto for the country's consumer-facing destination brand.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Uruguay_natural.svg",
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Uruguay)",
+      ],
+      licenceNote:
+        "Released by its Commons uploader under CC0 1.0 Universal Public Domain Dedication; carries a trademark notice for commercial use. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
+    },
+  ],
 };
