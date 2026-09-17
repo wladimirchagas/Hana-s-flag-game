@@ -2994,4 +2994,130 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  BW: [
+    {
+      id: "bw-rediscover-botswana",
+      countryCode: "BW",
+      name: "Rediscover Botswana",
+      slogan: "Rediscover Botswana",
+      agency: "Botswana Tourism Organisation",
+      visitors: {
+        count: 1830000,
+        year: 2018,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Botswana)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Botswana) and the English Wikipedia \"Rediscover Botswana\" article, which carries no infobox logo — no freely-licensed copy of the Botswana Tourism Organisation's \"Rediscover Botswana\" logo could be found.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Rediscover_Botswana",
+        "https://www.botswanatourism.co.bw/",
+      ],
+    },
+  ],
+  MW: [
+    {
+      id: "mw-warm-heart-of-africa",
+      countryCode: "MW",
+      name: "Malawi Tourism",
+      slogan: "The Warm Heart of Africa",
+      agency: "Malawi Tourism",
+      visitors: {
+        count: 871000,
+        year: 2018,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Malawi)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for a Malawi Tourism / \"The Warm Heart of Africa\" logo — no freely-licensed copy could be found.",
+      sources: ["https://www.malawitourism.com/", "https://en.wikipedia.org/wiki/Tourism_in_Malawi"],
+    },
+  ],
+  MU: [
+    {
+      id: "mu-mtpa",
+      countryCode: "MU",
+      name: "Mauritius Tourism Promotion Authority",
+      slogan: "It's a Pleasure",
+      agency: "Mauritius Tourism Promotion Authority (MTPA)",
+      launched: 1996,
+      visitors: {
+        count: 316000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mauritius)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Mauritius, which holds no tourism-related file) and the English Wikipedia \"Mauritius Tourism Promotion Authority\" article, which carries no infobox logo — no freely-licensed copy of the MTPA's own mark or its \"It's a Pleasure\" slogan branding could be found.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Mauritius_Tourism_Promotion_Authority",
+        "https://mauritiusnow.com/mtpa/",
+      ],
+    },
+  ],
+  SC: [
+    {
+      id: "sc-seychelles-tourism-board",
+      countryCode: "SC",
+      name: "Seychelles Tourism Board",
+      agency: "Seychelles Tourism Board",
+      launched: 2006,
+      visitors: {
+        count: 124500,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Seychelles)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Seychelles, and the Seychelles Tourism Board's own uploader account, which has bundled only an internal organisation-structure chart, not a logo) and the English Wikipedia \"Seychelles Tourism Board\" article — no freely-licensed copy of the STB's visual identity (redesigned by Union in 2006, refreshed since) could be found.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Seychelles_Tourism_Board",
+        "https://www.union.co.uk/our-news/union-reveals-new-brand-for-seychelles-tourism",
+      ],
+    },
+  ],
+  BY: [
+    {
+      id: "by-hospitable-belarus",
+      countryCode: "BY",
+      name: "Hospitable Belarus",
+      slogan: "Hospitable Belarus",
+      agency: "Ministry of Sports and Tourism of the Republic of Belarus",
+      launched: 2016,
+      visitors: {
+        count: 3598000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Belarus)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Belarus) for the government's 2016–2020 \"Hospitable Belarus\" state tourism-development programme — no freely-licensed logo/brand mark distinct from the programme's name could be found.",
+      sources: [
+        "https://president.gov.by/en/belarus/tourism/hospitable-belarus",
+        "https://usa.mfa.gov.by/en/visit_Belarus/hospitality/",
+      ],
+    },
+  ],
+  IR: [
+    {
+      id: "ir-majestic-iran",
+      countryCode: "IR",
+      name: "Majestic Iran",
+      slogan: "Majestic Iran, a Different Experience",
+      agency: "Ministry of Cultural Heritage, Tourism and Handicrafts, Iran",
+      launched: 2020,
+      visitors: {
+        count: 1550000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Iran)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for Iran's 2020 national tourism brand \"Majestic Iran\" — a turquoise Simurgh (mythical bird) mark with Muqarnas-patterned wings and the word \"Iran\" in terracotta, registered with UN Tourism — no freely-licensed copy of that specific brand mark could be found; Commons' Simurgh category holds only unrelated historical/artistic depictions of the mythological bird. The Ministry's own institutional seal (a separate, broader heritage/handicrafts emblem, not the tourism consumer brand) was not used as a substitute per this repo's consumer-brand-not-institutional-seal standard.",
+      sources: [
+        "https://www.destinationiran.com/iran-national-brand-tourism.htm",
+        "https://www.untourism.int/asia/iran-s-new-national-brand-majestic-iran",
+      ],
+    },
+  ],
 };
