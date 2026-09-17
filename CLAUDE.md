@@ -1558,6 +1558,8 @@ The widget shows, for a modern country, these rows (each rendered only when its 
 | Population | World Bank live → REST Countries (live, not bundled — figures go stale) |
 | Languages | `country.languages` |
 | Currencies | `country.currencies` |
+| Calling code | `country.callingCode` |
+| Internet domain | `country.tld` |
 | Government | `GOVERNMENT_TYPES[code]` (curated local map) |
 
 ### Why this rule exists

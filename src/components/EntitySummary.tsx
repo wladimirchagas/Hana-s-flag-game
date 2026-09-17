@@ -86,6 +86,12 @@ export function EntitySummary(props: EntitySummaryProps) {
         label: c.currencies.length === 1 ? "Currency" : "Currencies",
         value: c.currencies.map(formatCurrency).join(", "),
       });
+    if (c.callingCode) rows.push({ label: "Calling code", value: c.callingCode });
+    if (c.tld && c.tld.length > 0)
+      rows.push({
+        label: c.tld.length === 1 ? "Internet domain" : "Internet domains",
+        value: c.tld.join(", "),
+      });
     if (government) rows.push({ label: "Government", value: government });
     // Continent + Region shown last (the country name now lives in the search
     // bar at the top of the widget, and its continent/region moved here).
