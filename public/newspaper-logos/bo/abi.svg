@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" width="500" height="140">
+  <rect width="500" height="140" fill="#047857" rx="8"/>
+  <circle cx="70" cy="70" r="32" fill="#F59E0B"/>
+  <text x="70" y="79" font-family="'Inter', sans-serif" font-size="22" font-weight="900" fill="#047857" text-anchor="middle">ABI</text>
+  <text x="120" y="68" font-family="'Inter', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">AGENCIA BOLIVIANA</text>
+  <text x="120" y="94" font-family="'Inter', sans-serif" font-size="14" fill="#A7F3D0">DE INFORMACIÓN — LA PAZ</text>
+</svg>

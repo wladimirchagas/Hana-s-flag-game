@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" width="500" height="140">
+  <rect width="500" height="140" fill="#1E3A8A" rx="8"/>
+  <circle cx="70" cy="70" r="32" fill="#DC2626"/>
+  <text x="70" y="78" font-family="'Inter', sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="middle">БТА</text>
+  <text x="120" y="68" font-family="'Inter', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">BULGARIAN TELEGRAPH</text>
+  <text x="120" y="94" font-family="'Inter', sans-serif" font-size="16" fill="#93C5FD">BTA NEWS AGENCY — SOFIA</text>
+</svg>
