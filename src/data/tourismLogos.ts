@@ -1906,4 +1906,265 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         "Public domain per its Commons file page — \"consists only of simple geometric shapes or text\" — vector-extracted from an official montenegro.travel PDF; carries a trademark notice for commercial use. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
     },
   ],
+  CU: [
+    {
+      id: "cu-marca-cuba",
+      countryCode: "CU",
+      name: "Marca Cuba",
+      slogan: "Cuba Única",
+      agency: "Ministerio de Turismo (MINTUR), Cuba",
+      launched: 2001,
+      visitors: {
+        count: 1086000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Cuba)",
+      },
+      logo: "/tourism-logos/cu/marca-cuba.png",
+      logoExplainer:
+        "A red triangle bearing a single white star — echoing the triangle and lone star of the Cuban flag — beside the word \"Cuba\" in blue. Designed 2001–2003 by MINTUR specifically to mark the country's tourism communications, it was later adopted as Cuba's national Marca País (country brand) in 2024.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Marca_pa%C3%ADs_Cuba.svg",
+        "https://www.ics.gob.cu/en/la-marca-pais-cuba-signo-de-elevado-valor-comunicacional/",
+        "https://www.mintur.gob.cu/cuba-unica-una-campana-de-exito-en-la-promocion-del-turismo-cubano/",
+      ],
+      licenceNote:
+        "Public domain per its Commons file page — \"consists only of simple geometric shapes or text\" — attributed to Cuba's Instituto de Información y Comunicación Social; carries a trademark notice for commercial use. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
+    },
+  ],
+  NG: [
+    {
+      id: "ng-nigerian-tourism-development-corporation",
+      countryCode: "NG",
+      name: "Nigerian Tourism Development Corporation",
+      agency: "Nigerian Tourism Development Corporation (NTDC)",
+      visitors: {
+        count: 5265000,
+        year: 2016,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Nigeria)",
+      },
+      noImageReason:
+        "The only NTDC logo bundled on Wikimedia Commons (\"NTDC Logo new.png\") is filed in the \"Coats of arms of Nigeria\" category — the agency's own institutional emblem, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. No separate consumer tourism-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:NTDC_Logo_new.png",
+        "https://en.wikipedia.org/wiki/Nigerian_Tourism_Development_Corporation",
+      ],
+    },
+  ],
+  PK: [
+    {
+      id: "pk-salam-pakistan",
+      countryCode: "PK",
+      name: "Salam Pakistan",
+      slogan: "Salam Pakistan",
+      agency: "Pakistan Tourism Development Corporation (PTDC)",
+      launched: 2025,
+      visitors: {
+        count: 966000,
+        year: 2012,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Pakistan)",
+      },
+      noImageReason:
+        "\"Salam Pakistan\", Pakistan's first-ever national tourism brand, launched by the PTDC in 2025, is too new to have a freely-licensed logo on Wikimedia Commons or Wikipedia yet — searches turned up only the brand's own social-media/video announcements.",
+      sources: [
+        "https://www.nativeplanet.com/news/salam-pakistan-first-ever-national-tourism-brand-to-promote-tourism-in-pakistan-008789.html",
+        "https://en.wikipedia.org/wiki/Tourism_in_Pakistan",
+      ],
+    },
+  ],
+  MM: [
+    {
+      id: "mm-ministry-of-hotels-and-tourism",
+      countryCode: "MM",
+      name: "Myanmar Ministry of Hotels and Tourism",
+      agency: "Ministry of Hotels and Tourism, Myanmar",
+      visitors: {
+        count: 903000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Myanmar)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Myanmar) and the English Wikipedia article for the Ministry of Hotels and Tourism (Myanmar) — no freely-licensed Myanmar tourism-board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search (\"Ministry of Tourism and Antiquities logo.png\") is Egypt's ministry logo, wrongly surfaced by a generic category match — not Myanmar's own.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Ministry_of_Hotels_and_Tourism_(Myanmar)",
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Myanmar",
+      ],
+    },
+  ],
+  LA: [
+    {
+      id: "la-simply-beautiful",
+      countryCode: "LA",
+      name: "Laos — \"Simply Beautiful\"",
+      slogan: "Simply Beautiful",
+      agency: "Lao National Tourism Administration",
+      launched: 2012,
+      visitors: {
+        count: 886400,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Laos)",
+      },
+      noImageReason:
+        "\"Simply Beautiful\", launched for Visit Laos Year 2012, is a well-documented slogan, but searching Wikimedia Commons (Category:Tourism in Laos) and the English Wikipedia article for \"Tourism in Laos\" found no freely-licensed copy of the logo.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Laos",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Laos",
+      ],
+    },
+  ],
+  HN: [
+    {
+      id: "hn-instituto-hondureno-de-turismo",
+      countryCode: "HN",
+      name: "Instituto Hondureño de Turismo",
+      agency: "Instituto Hondureño de Turismo (IHT)",
+      visitors: {
+        count: 669000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Honduras)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Honduras, Category:Tourism in Honduras) and the English Wikipedia article for \"Tourism in Honduras\" — no freely-licensed Instituto Hondureño de Turismo consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Honduras",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Honduras",
+      ],
+    },
+  ],
+  SV: [
+    {
+      id: "sv-ministerio-de-turismo",
+      countryCode: "SV",
+      name: "El Salvador Ministry of Tourism",
+      agency: "Ministerio de Turismo de El Salvador (MITUR)",
+      visitors: {
+        count: 707000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for El Salvador)",
+      },
+      noImageReason:
+        "The only bundled Wikimedia Commons file (\"Logo oficial del Ministerio de Turismo de El Salvador.png\") is confirmed on its own file page to be the Ministry's institutional government seal, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. No separate consumer tourism-brand logo (e.g. for the \"Surf City El Salvador\" campaign) could be found on Commons or Wikipedia.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Logo_oficial_del_Ministerio_de_Turismo_de_El_Salvador.png",
+        "https://en.wikipedia.org/wiki/Tourism_in_El_Salvador",
+      ],
+    },
+  ],
+  NI: [
+    {
+      id: "ni-intur",
+      countryCode: "NI",
+      name: "Nicaragua — Instituto Nicaragüense de Turismo",
+      agency: "Instituto Nicaragüense de Turismo (INTUR)",
+      visitors: {
+        count: 474000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Nicaragua)",
+      },
+      noImageReason:
+        "The only bundled Wikimedia Commons file (\"Logo Intur Nicaragua.png\") is described on its own file page as an institutional identifier for the tourism institute itself, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. No separate consumer tourism-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Logo_Intur_Nicaragua.png",
+        "https://en.wikipedia.org/wiki/Tourism_in_Nicaragua",
+      ],
+    },
+  ],
+  BS: [
+    {
+      id: "bs-bahamas-ministry-of-tourism",
+      countryCode: "BS",
+      name: "Bahamas Ministry of Tourism",
+      agency: "Ministry of Tourism, Investments & Aviation, The Bahamas",
+      visitors: {
+        count: 1794500,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Bahamas)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in the Bahamas) and the English Wikipedia article for \"Tourism in the Bahamas\" — no freely-licensed Bahamas Ministry of Tourism consumer-brand logo could be found; the only Commons file returned by search (\"Bahamas Logo.svg\") is confirmed unrelated — a German magazine's logo, not the country's tourism board.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_the_Bahamas",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_the_Bahamas",
+      ],
+    },
+  ],
+  TT: [
+    {
+      id: "tt-tourism-trinidad-and-tobago",
+      countryCode: "TT",
+      name: "Tourism Trinidad and Tobago",
+      agency: "Tourism Trinidad Limited",
+      visitors: {
+        count: 141000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Trinidad and Tobago)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Trinidad and Tobago) and general web search — no freely-licensed Tourism Trinidad and Tobago consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: ["https://commons.wikimedia.org/wiki/Category:Tourism_in_Trinidad_and_Tobago"],
+    },
+  ],
+  BZ: [
+    {
+      id: "bz-belize-tourism-board",
+      countryCode: "BZ",
+      name: "Belize Tourism Board",
+      agency: "Belize Tourism Board (BTB)",
+      visitors: {
+        count: 487000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Belize)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Belize\" — no freely-licensed Belize Tourism Board consumer-brand logo could be found on Commons or Wikipedia; the only tourism-related Commons content is a Wikivoyage banner photo category, not a logo.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Belize"],
+    },
+  ],
+  PG: [
+    {
+      id: "pg-papua-new-guinea-tourism-promotion-authority",
+      countryCode: "PG",
+      name: "Papua New Guinea Tourism Promotion Authority",
+      agency: "Papua New Guinea Tourism Promotion Authority (PNGTPA)",
+      visitors: {
+        count: 39000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Papua New Guinea)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Symbols of Papua New Guinea) and the English Wikipedia article for \"Tourism in Papua New Guinea\" — no freely-licensed PNGTPA consumer-brand logo could be found; Commons results returned only the country's national emblem, flags and coats of arms.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Papua_New_Guinea"],
+    },
+  ],
+  FJ: [
+    {
+      id: "fj-tourism-fiji",
+      countryCode: "FJ",
+      name: "Tourism Fiji",
+      agency: "Tourism Fiji, established under the Tourism Fiji Act 2004",
+      visitors: {
+        count: 168000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Fiji)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Fiji, Category:Logos of Fiji) and the English Wikipedia article for \"Tourism Fiji\" — no freely-licensed Tourism Fiji consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_Fiji",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Fiji",
+      ],
+    },
+  ],
 };
