@@ -1926,11 +1926,18 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   // Government, Continent, Region, Anthem) belongs to the NATIONAL FLAG,
                   // not to whichever other national symbol happens to be selected —
                   // showing it under a coat of arms / passport / football crest /
-                  // Olympic Committee logo mixes two unrelated fact lists in one panel
-                  // (owner report, 2026-09). It still shows once the user clicks
-                  // "Learn more" into the country's own tab, where the fact-sheet is
-                  // always present above every symbol's own widget.
-                  !panelSymbol && (
+                  // Olympic Committee logo / airline / broadcaster / tourism logo mixes
+                  // two unrelated fact lists in one panel (owner report, 2026-09).
+                  // It still shows once the user clicks "Learn more" into the
+                  // country's own tab, where the fact-sheet is always present above
+                  // every symbol's own widget.
+                  !panelSymbol &&
+                    !subdivisionMode &&
+                    !(
+                      effectiveGridContentType === "airline" ||
+                      effectiveGridContentType === "broadcaster" ||
+                      effectiveGridContentType === "tourismlogo"
+                    ) && (
                     <EntitySummary
                       kind="modern"
                       country={display.country}
