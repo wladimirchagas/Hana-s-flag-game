@@ -27,6 +27,211 @@ import type { TourismLogo } from "../types/tourismLogo";
  * sweeps for the discipline this collection follows: source properly, never pad.
  */
 export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
+  JP: [
+    {
+      id: "jp-jnto",
+      countryCode: "JP",
+      name: "Japan National Tourism Organization",
+      slogan: "Japan. Endless Discovery.",
+      agency: "Japan National Tourism Organization (JNTO), an independent administrative agency",
+      launched: 2010,
+      visitors: {
+        count: 36900000,
+        year: 2024,
+        metric:
+          "International visitor arrivals, calendar year (Japan National Tourism Organization) — a record high, 5 million more than the pre-pandemic 2019 record",
+      },
+      logo: "/tourism-logos/jp/jnto.svg",
+      logoExplainer:
+        "JNTO's mark pairs the organisation's name with a red arc beneath it — the agency describes the arc as symbolising a sunrise, echoing both Japan's own \"Land of the Rising Sun\" identity and JNTO's own stated mission of developing inbound tourism.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:JNTO_logo.svg",
+        "https://www.jnto.go.jp/en/about-us/brand.html",
+        "https://en.wikipedia.org/wiki/Japan_National_Tourism_Organization",
+        "https://www.nippon.com/en/japan-data/h02262/",
+      ],
+      licenceNote:
+        "Freely licensed on Wikimedia Commons as a public-domain text logo (\"consists only of simple geometric shapes or text\"); carries a trademark notice for commercial use.",
+    },
+  ],
+  SG: [
+    {
+      id: "sg-passion-made-possible",
+      countryCode: "SG",
+      name: "Singapore — \"Passion Made Possible\"",
+      slogan: "Passion Made Possible",
+      agency:
+        "Singapore Tourism Board (STB), jointly with the Singapore Economic Development Board (EDB)",
+      launched: 2017,
+      visitors: {
+        count: 16500000,
+        year: 2024,
+        metric:
+          "International visitor arrivals excluding Malaysian arrivals by land, calendar year (Singapore Tourism Board)",
+      },
+      logo: "/tourism-logos/sg/passion-made-possible.png",
+      logoExplainer:
+        "\"Passion Made Possible\", launched 24 August 2017, replaced the earlier \"YourSingapore\" campaign as Singapore's unified destination brand, used by STB and EDB together across tourism and trade promotion. The mark's red \"SG\" roundel plays on the idea of an official trademark or stamp, tying into the brand's framing of Singapore as a nation of innovators and makers.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Passion_Made_Possible",
+        "https://commons.wikimedia.org/wiki/File:PassionMadePossible.png",
+        "https://www.marketing-interactive.com/passion-made-possible-stb-and-edb-launch-new-brand-identity-for-singapore",
+      ],
+      licenceNote:
+        "Freely licensed on Wikimedia Commons as a public-domain text/geometric-shape logo.",
+    },
+  ],
+  ES: [
+    {
+      id: "es-sol-de-miro",
+      countryCode: "ES",
+      name: "Spain — the Sol de Miró",
+      agency: "Turespaña (Instituto de Turismo de España), under the Ministry of Industry, Trade and Tourism",
+      launched: 1983,
+      visitors: {
+        count: 93800000,
+        year: 2024,
+        metric:
+          "International tourist arrivals, calendar year (INE, Instituto Nacional de Estadística — FRONTUR) — an all-time record",
+      },
+      logo: "/tourism-logos/es/sol-de-miro.png",
+      logoExplainer:
+        "Commissioned in 1983 from the painter Joan Miró, the \"Sol de Miró\" (Miró's Sun) was the first time a work of fine art was used as a country's tourism logo. Miró, in poor health, assembled it from elements of his own earlier work — the lettering from his 1982 FIFA World Cup poster and the sun-and-star motif from a 1968 poster for the Fondation Maeght — and refused payment or royalties for it. He described the black as symbolising strength and character, yellow the sun's light and joy, red passion, and green the country's landscapes.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Sol_de_Mir%C3%B3_(vectorizado).svg",
+        "https://www.spain.info/en/40-anniversary/",
+        "https://www.ttgmedia.com/features/sponsored-features/meet-the-spanish-icon-celebrating-its-40th-anniversary-43570",
+        "https://www.ine.es/dyngs/Prensa/en/FRONTUR1224.htm",
+      ],
+      licenceNote:
+        "Freely licensed on Wikimedia Commons as a public-domain simple-shapes logo; carries a trademark notice for commercial use. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
+    },
+  ],
+  TH: [
+    {
+      id: "th-amazing-thailand",
+      countryCode: "TH",
+      name: "Tourism Authority of Thailand — \"Amazing Thailand\"",
+      slogan: "Amazing Thailand",
+      agency: "Tourism Authority of Thailand (TAT), a state enterprise established 1979",
+      launched: 1998,
+      visitors: {
+        count: 35320000,
+        year: 2024,
+        metric: "International visitor arrivals, calendar year (Tourism Authority of Thailand)",
+      },
+      logo: "/tourism-logos/th/tat-emblem.png",
+      logoExplainer:
+        "TAT's circular emblem depicts a stylised skyline of Bangkok's Wat Arun (Temple of Dawn) and a royal barge beneath an arc reading \"TAT\" in Thai script, ringed by \"Tourism Authority of Thailand\" in English — the agency's own visual identity, carried on the \"Amazing Thailand\" campaign it has run continuously (with several refreshed taglines) since the slogan was coined in response to the 1997 Asian financial crisis.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Emblem_of_Tourism_Authority_of_Thailand.svg",
+        "https://en.wikipedia.org/wiki/Amazing_Thailand",
+        "https://en.wikipedia.org/wiki/Tourism_Authority_of_Thailand",
+        "https://www.tatnews.org/2024/12/thailand-welcomes-over-35-million-visitors-in-2024-a-milestone-paving-the-way-for-2025/",
+      ],
+      licenceNote:
+        "Freely licensed on Wikimedia Commons under the Thai copyright exemption for government logos and emblems. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
+    },
+  ],
+  GE: [
+    {
+      id: "ge-gnta",
+      countryCode: "GE",
+      name: "Georgian National Tourism Administration",
+      agency:
+        "Georgian National Tourism Administration (GNTA), a legal entity of public law under the Ministry of Economy and Sustainable Development",
+      launched: 2019,
+      visitors: {
+        count: 5090000,
+        year: 2024,
+        metric:
+          "International visitors, calendar year (Georgian National Tourism Administration) — on par with the pre-pandemic 2019 level",
+      },
+      logo: "/tourism-logos/ge/gnta.png",
+      logoExplainer:
+        "GNTA's 2019 destination-brand mark pairs the country's name with a stylised red flower/starburst motif, used across the administration's international marketing to present Georgia as a single, unified travel destination distinct from its regions.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:GNTA_logo_2019_v3.svg",
+        "https://en.wikipedia.org/wiki/Tourism_in_Georgia_(country)",
+        "https://civil.ge/archives/717769",
+      ],
+      licenceNote:
+        "Freely licensed on Wikimedia Commons as a public-domain simple-shapes logo. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
+    },
+  ],
+  IN: [
+    {
+      id: "in-incredible-india",
+      countryCode: "IN",
+      name: "Incredible India",
+      slogan: "Incredible India",
+      agency: "Ministry of Tourism, Government of India",
+      launched: 2002,
+      visitors: {
+        count: 9950000,
+        year: 2024,
+        metric:
+          "Foreign Tourist Arrivals (FTA), calendar year (Ministry of Tourism, Government of India)",
+      },
+      logo: "/tourism-logos/in/incredible-india.png",
+      logoExplainer:
+        "Launched in 2002 and conceptualised under Amitabh Kant (then Joint Secretary for Tourism), \"Incredible India\" is one of the longest-running national tourism campaigns in the world. Its wordmark famously reshapes the exclamation mark into the dot of the \"I\" in \"India\", rendered as a small red circle.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Incredible_India",
+        "https://commons.wikimedia.org/wiki/File:Incredible_India_Logo.svg",
+        "https://www.data.tourism.gov.in/mrd/Uploads/tourism_data/India%20Tourism%20Data%20Compendium%202024.pdf",
+      ],
+      licenceNote:
+        "Freely licensed on Wikimedia Commons as a public-domain text logo, dedicated under CC0. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
+    },
+  ],
+  CH: [
+    {
+      id: "ch-switzerland-tourism",
+      countryCode: "CH",
+      name: "Switzerland Tourism",
+      agency: "Schweiz Tourismus / Suisse Tourisme / Switzerland Tourism, Switzerland's national tourism-marketing organisation",
+      visitors: {
+        count: 11818000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Switzerland)",
+      },
+      logo: "/tourism-logos/ch/switzerland-tourism.png",
+      logoExplainer:
+        "Switzerland Tourism's wordmark integrates the Swiss flag's white cross on a red square directly into the word \"Switzerland\", in place of the letter \"t\" — a direct, literal pairing of the national flag with the organisation's own name.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Switzerland_Tourism_Logo.svg",
+        "https://de.wikipedia.org/wiki/Datei:Switzerland_Tourism_Logo.svg",
+      ],
+      licenceNote:
+        "Freely licensed on Wikimedia Commons as a public-domain simple-shapes logo; carries a trademark notice for commercial use. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
+    },
+  ],
+  NP: [
+    {
+      id: "np-nepal-tourism-board",
+      countryCode: "NP",
+      name: "Nepal Tourism Board",
+      agency: "Nepal Tourism Board (NTB), operator of the welcomenepal.com brand",
+      visitors: {
+        count: 1147000,
+        year: 2024,
+        metric:
+          "International tourist arrivals, calendar year (Nepal Tourism Board) — 96% of the pre-pandemic 2019 level, up 13.1% on 2023",
+      },
+      logo: "/tourism-logos/np/ntb.svg",
+      logoExplainer:
+        "The Nepal Tourism Board's own visual identity, used across its \"Welcome Nepal\" consumer-facing marketing, is the mark the Board itself publishes for public download on its trade portal.",
+      sources: [
+        "https://en.wikipedia.org/wiki/File:Nepal_Tourism_Board_logo.svg",
+        "https://en.wikipedia.org/wiki/Nepal_Tourism_Board",
+        "https://risingnepaldaily.com/news/54769",
+      ],
+      licenceNote:
+        "Public domain — the logo \"only consists of typefaces, individual words, slogans, or simple geometric shapes\" per its file page, hosted locally on English Wikipedia (welcomenepal.com is the source); carries trademark restrictions for commercial use.",
+    },
+  ],
   FI: [
     {
       id: "fi-visit-finland",
