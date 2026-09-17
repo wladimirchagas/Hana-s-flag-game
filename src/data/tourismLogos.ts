@@ -2167,4 +2167,123 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  KZ: [
+    {
+      id: "kz-ministry-of-tourism-and-sports",
+      countryCode: "KZ",
+      name: "Kazakhstan Ministry of Tourism and Sports",
+      agency: "Ministry of Tourism and Sports, Kazakhstan",
+      visitors: {
+        count: 2035000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Kazakhstan)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Symbols of Kazakhstan) and the English Wikipedia article for the Ministry of Tourism and Sports (Kazakhstan) — no freely-licensed Kazakh tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_and_Sports_(Kazakhstan)",
+        "https://en.wikipedia.org/wiki/Tourism_in_Kazakhstan",
+      ],
+    },
+  ],
+  UZ: [
+    {
+      id: "uz-ministry-of-tourism-and-sports",
+      countryCode: "UZ",
+      name: "Uzbekistan Ministry of Tourism and Sports",
+      agency: "Ministry of Tourism and Sports, Uzbekistan",
+      visitors: {
+        count: 6749000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Uzbekistan)",
+      },
+      noImageReason:
+        "The only tourism-labelled logo found on Wikimedia Commons (in Category:Logos of Uzbekistan, titled in Russian for the \"Ministry of Tourism and Sports of the Republic of Uzbekistan\") is the ministry's own institutional seal, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. No separate consumer tourism-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Uzbekistan",
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Uzbekistan",
+      ],
+    },
+  ],
+  AM: [
+    {
+      id: "am-armenia-tourism-committee",
+      countryCode: "AM",
+      name: "Armenia Tourism Committee",
+      agency: "Tourism Committee, Ministry of Economy, Armenia",
+      visitors: {
+        count: 375000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Armenia)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Armenia, Category:Logos of Armenia) and the English Wikipedia article for \"Tourism in Armenia\" — no freely-licensed Armenian tourism-board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search is a single regional ecotourism trail's logo, not a national mark.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Armenia",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Armenia",
+      ],
+    },
+  ],
+  ET: [
+    {
+      id: "et-land-of-origins",
+      countryCode: "ET",
+      name: "Ethiopia — \"Land of Origins\"",
+      slogan: "Land of Origins",
+      agency: "Ethiopian Tourism Organization, replacing the earlier \"13 Months of Sunshine\" brand",
+      launched: 2016,
+      visitors: {
+        count: 518000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Ethiopia)",
+      },
+      noImageReason:
+        "\"Land of Origins\", launched in 2016 to replace \"13 Months of Sunshine\", is a well-documented rebrand, but searching Wikimedia Commons and the English Wikipedia article for \"Tourism in Ethiopia\" found no freely-licensed copy of the logo.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Ethiopia"],
+    },
+  ],
+  DZ: [
+    {
+      id: "dz-office-national-du-tourisme",
+      countryCode: "DZ",
+      name: "Algeria — Office National du Tourisme",
+      agency: "Office National du Tourisme (ONT), Algeria",
+      visitors: {
+        count: 591000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Algeria)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Algeria, Category:SVG logos of Algeria) and the English Wikipedia article for \"Tourism in Algeria\" — no freely-licensed Algerian tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Algeria",
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Algeria",
+      ],
+    },
+  ],
+  TN: [
+    {
+      id: "tn-office-national-du-tourisme-tunisien",
+      countryCode: "TN",
+      name: "Office National du Tourisme Tunisien",
+      agency: "Office National du Tourisme Tunisien (ONTT)",
+      visitors: {
+        count: 2012000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Tunisia)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Tunisia, Category:Logos of organizations of Tunisia) and the English Wikipedia article for \"Tourism in Tunisia\" — no freely-licensed ONTT consumer-brand logo could be found; Commons results returned only unrelated Tunisian logos (the National Heritage Institute, Wikimedia Tunisia).",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Tunisia",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Tunisia",
+      ],
+    },
+  ],
 };
