@@ -75,8 +75,11 @@ export type FlagGridProps = {
    *  crest card passes its PARENT country); `crestId` is the specific football
    *  crest that was clicked; `airlineId` is the specific commercial airline;
    *  `broadcasterId` is the specific public broadcaster; `tourismLogoId` is the
-   *  specific tourism logo. */
-  onSelect: (id: string, crestId?: string, airlineId?: string, broadcasterId?: string, tourismLogoId?: string) => void;
+   *  specific tourism logo; `olympicCommitteeId` is the specific National
+   *  Olympic Committee (a non-UN IOC member entity — Chinese Taipei, Hong
+   *  Kong, … — passes its own id here, distinct from the parent country's
+   *  own NOC, exactly like `crestId` for a FIFA entity). */
+  onSelect: (id: string, crestId?: string, airlineId?: string, broadcasterId?: string, tourismLogoId?: string, olympicCommitteeId?: string) => void;
   /** Optional resolver to prepend the BASE_URL to relative flag paths so
    *  the grid can render flags identically to the panel. */
   resolveFlag: (raw: string) => string;
@@ -786,6 +789,10 @@ export function FlagGrid({
                         item.airlineId,
                         item.broadcasterId,
                         item.tourismLogoId,
+                        // A non-UN IOC-member entity card carries its own
+                        // `{code}-olympic-committee` id — pass it so the panel
+                        // shows that entity's own NOC, not the parent country's.
+                        item.id.endsWith("-olympic-committee") ? item.id : undefined,
                       )
                     }
                     aria-pressed={active}

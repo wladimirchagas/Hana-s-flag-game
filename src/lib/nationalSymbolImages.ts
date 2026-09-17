@@ -104,6 +104,23 @@ export function footballCrestById(id: string): NationalFlag | null {
   return footballCrestEntryById.get(id) ?? null;
 }
 
+// Every Olympic-committee logo, keyed by its own entry id — so the world-map
+// grid can show the SPECIFIC committee that was clicked (a non-UN IOC member
+// entity — Chinese Taipei, Hong Kong, Puerto Rico, …) in the detail panel,
+// rather than resolving one by country code (which returns the PARENT
+// country's own NOC, not the entity's — see IOC_EXTRA in iocAssociations.ts).
+const olympicCommitteeEntryById = new Map<string, NationalFlag>();
+for (const flags of Object.values(NATIONAL_FLAGS)) {
+  for (const f of flags) {
+    if (f.category === "olympiccommittee" && f.path) olympicCommitteeEntryById.set(f.id, f);
+  }
+}
+
+/** An Olympic-committee entry looked up by its own id, or null. */
+export function olympicCommitteeById(id: string): NationalFlag | null {
+  return olympicCommitteeEntryById.get(id) ?? null;
+}
+
 /**
  * A country's SUB-NATIONAL football crests — the ones the world-map grid does NOT
  * treat as the country's single crest (id ≠ `{cc}-football-crest`). This is the

@@ -29,6 +29,7 @@ import {
   footballCrestPath,
   olympicCommitteePath,
   footballCrestById,
+  olympicCommitteeById,
   nationalSymbolEntry,
 } from "../lib/nationalSymbolImages";
 import { NATIONAL_FLAG_MEANINGS } from "../data/nationalFlags";
@@ -381,6 +382,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // its parent country so the panel shows that crest only while the parent stays
   // selected, then self-clears when the user navigates to another country.
   const [gridCrest, setGridCrest] = useState<{ id: string; parent: string } | null>(null);
+  // The specific National Olympic Committee clicked in the grid — a non-UN IOC
+  // member entity (Chinese Taipei, Hong Kong, …), not a plain country. Keyed
+  // with its parent country exactly like gridCrest, so the panel shows that
+  // entity's own NOC only while the parent stays selected.
+  const [gridOlympicCommittee, setGridOlympicCommittee] = useState<{ id: string; parent: string } | null>(null);
   // The specific commercial airline clicked in the grid.
   const [gridAirlineId, setGridAirlineId] = useState<string | null>(null);
   // An airline picked in the "National symbols" tab of subdivision view.
@@ -398,6 +404,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setGridContentType(type);
     saveGridContentType(type);
     setGridCrest(null);
+    setGridOlympicCommittee(null);
     setGridAirlineId(null);
     setGridBroadcasterId(null);
     setGridTourismLogoId(null);
@@ -1350,8 +1357,22 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     display.country.code === gridCrest.parent
       ? footballCrestById(gridCrest.id)
       : null;
+  // Same mechanism as activeGridCrest, for a non-UN IOC-member entity's own
+  // National Olympic Committee (Chinese Taipei, Hong Kong, …) — without this,
+  // the panel silently fell back to resolving the symbol by the PARENT
+  // country's own code, showing e.g. China's NOC when Chinese Taipei's card
+  // was clicked (reported by the owner).
+  const activeGridOlympicCommittee =
+    !subdivisionMode &&
+    gridOlympicCommittee != null &&
+    effectiveGridContentType === "olympiccommittee" &&
+    display?.kind === "modern" &&
+    display.country.code === gridOlympicCommittee.parent
+      ? olympicCommitteeById(gridOlympicCommittee.id)
+      : null;
   const panelSymbol =
     activeGridCrest ??
+    activeGridOlympicCommittee ??
     (!subdivisionMode &&
     display?.kind === "modern" &&
     (effectiveGridContentType === "coatofarms" ||
@@ -1540,7 +1561,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         ? display.name
         : null;
 
-  function handleGridSelect(id: string, crestId?: string, airlineId?: string, broadcasterId?: string, tourismLogoId?: string) {
+  function handleGridSelect(id: string, crestId?: string, airlineId?: string, broadcasterId?: string, tourismLogoId?: string, olympicCommitteeId?: string) {
     if (isModernEra) {
       // `id` is always the entity's own country code (an airline/broadcaster tile's
       // `selectId` is set to its parent country — see FlagGrid). Select that country
@@ -1564,6 +1585,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       // is why a home-nation crest never stuck before this fix.
       setGridCrest(
         crestId && gridContentType === "footballcrest" ? { id: crestId, parent: c.code } : null,
+      );
+      setGridOlympicCommittee(
+        olympicCommitteeId && gridContentType === "olympiccommittee"
+          ? { id: olympicCommitteeId, parent: c.code }
+          : null,
       );
       setGridAirlineId(airlineId ?? null);
       setGridBroadcasterId(broadcasterId ?? null);
@@ -1754,10 +1780,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   setSelected({ kind: "modern", country: c });
                   setHovered(null);
                   // Selecting a different country directly on the map must not leave a
-                  // previous country's airline/broadcaster/crest grid pick behind — the
-                  // map and the grid always describe the same entity (see
-                  // handleGridSelect above).
+                  // previous country's airline/broadcaster/crest/olympic-committee grid
+                  // pick behind — the map and the grid always describe the same entity
+                  // (see handleGridSelect above).
                   setGridCrest(null);
+                  setGridOlympicCommittee(null);
                   setGridAirlineId(null);
                   setGridBroadcasterId(null);
                   setGridTourismLogoId(null);
@@ -1853,8 +1880,10 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         setSelected({ kind: "modern", country: c });
                         setHovered(null);
                         // Same reasoning as the map's onSelect: don't leave a previous
-                        // country's airline/broadcaster/crest grid pick behind.
+                        // country's airline/broadcaster/crest/olympic-committee grid
+                        // pick behind.
                         setGridCrest(null);
+                        setGridOlympicCommittee(null);
                         setGridAirlineId(null);
                         setGridBroadcasterId(null);
                         setGridTourismLogoId(null);
@@ -2662,7 +2691,13 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       })() : (
         <FlagGrid
           entries={flagEntries}
-          selectedId={activeGridCrest ? gridCrest!.id : selectedId}
+          selectedId={
+            activeGridCrest
+              ? gridCrest!.id
+              : activeGridOlympicCommittee
+                ? gridOlympicCommittee!.id
+                : selectedId
+          }
           selectedAirlineId={gridAirlineId}
           selectedBroadcasterId={gridBroadcasterId}
           selectedTourismLogoId={gridTourismLogoId}
