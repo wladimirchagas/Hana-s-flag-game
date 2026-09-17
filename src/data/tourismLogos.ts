@@ -1561,4 +1561,349 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         "Released by its Commons uploader under CC0 1.0 Universal Public Domain Dedication; carries a trademark notice for commercial use. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
     },
   ],
+  KE: [
+    {
+      id: "ke-magical-kenya",
+      countryCode: "KE",
+      name: "Magical Kenya",
+      slogan: "Magical Kenya",
+      agency: "Kenya Tourism Board (KTB)",
+      launched: 2019,
+      visitors: {
+        count: 2049000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Kenya)",
+      },
+      noImageReason:
+        "\"Magical Kenya\", refreshed with a new visual identity by the Kenya Tourism Board in 2019, is a well-documented brand, but searching Wikimedia Commons and the English Wikipedia article for \"Tourism in Kenya\" found no freely-licensed copy of the logo — the only Commons file returned by search (\"Magical Kenya Logo Wikimania Nairobi partner.jpeg\") is hosted on the separate Wikimania wiki, not Commons, and is a conference-sponsor credit image rather than the brand mark itself.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Kenya",
+        "https://voyagesafriq.com/2019/05/16/kenya-tourism-board-unveils-new-visual-identity/",
+      ],
+    },
+  ],
+  ZM: [
+    {
+      id: "zm-ministry-of-tourism",
+      countryCode: "ZM",
+      name: "Zambia Ministry of Tourism",
+      agency: "Ministry of Tourism, Zambia",
+      visitors: {
+        count: 502000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Zambia)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Symbols of Zambia) and the English Wikipedia article for the Ministry of Tourism (Zambia) — no freely-licensed Zambian tourism-board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search (\"Ministry of Tourism and Antiquities logo.png\") is Egypt's ministry logo, wrongly surfaced by a generic category match — not Zambia's own.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Zambia)",
+        "https://en.wikipedia.org/wiki/Tourism_in_Zambia",
+      ],
+    },
+  ],
+  NA: [
+    {
+      id: "na-namibia-tourism-board",
+      countryCode: "NA",
+      name: "Namibia Tourism Board",
+      agency: "Namibia Tourism Board (NTB)",
+      visitors: {
+        count: 187100,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Namibia)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Namibia, Category:Symbols of Namibia) and the English Wikipedia articles for the Namibia Tourism Board and \"Tourism in Namibia\" — no freely-licensed NTB consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Namibia_Tourism_Board",
+        "https://en.wikipedia.org/wiki/Tourism_in_Namibia",
+      ],
+    },
+  ],
+  RW: [
+    {
+      id: "rw-visit-rwanda",
+      countryCode: "RW",
+      name: "Visit Rwanda",
+      agency: "Rwanda Development Board (RDB)",
+      visitors: {
+        count: 1634000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Rwanda)",
+      },
+      noImageReason:
+        "\"Visit Rwanda\" is a globally visible brand (an Arsenal FC sleeve sponsorship since 2018), but searching Wikimedia Commons found the only prior upload (\"Visit Rwanda.jpg\") has since been deleted, and the English Wikipedia article for the Rwanda Development Board carries no logo file either — no freely-licensed copy of the mark could be found.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Rwanda_Development_Board",
+        "https://visitrwanda.com/",
+      ],
+    },
+  ],
+  TZ: [
+    {
+      id: "tz-tanzania-tourist-board",
+      countryCode: "TZ",
+      name: "Tanzania Tourist Board",
+      slogan: "Tanzania. Unforgettable.",
+      agency: "Tanzania Tourist Board (TTB)",
+      visitors: {
+        count: 1527000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Tanzania)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Tanzania) and the English Wikipedia article for \"Tourism in Tanzania\" — no freely-licensed Tanzania Tourist Board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search (\"Ministry of Tourism and Antiquities logo.png\") is Egypt's ministry logo, wrongly surfaced by a generic category match — not Tanzania's own.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Tanzania",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Tanzania",
+      ],
+    },
+  ],
+  ZW: [
+    {
+      id: "zw-a-world-of-wonders",
+      countryCode: "ZW",
+      name: "Zimbabwe — \"A World of Wonders\"",
+      slogan: "A World of Wonders",
+      agency: "Zimbabwe Tourism Authority (ZTA)",
+      visitors: {
+        count: 639000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Zimbabwe)",
+      },
+      noImageReason:
+        "\"A World of Wonders\" is the Zimbabwe Tourism Authority's documented brand, but searching Wikimedia Commons and the English Wikipedia articles for the Zimbabwe Tourism Authority and \"Tourism in Zimbabwe\" found no freely-licensed copy of the logo on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Zimbabwe_Tourism_Authority",
+        "https://en.wikipedia.org/wiki/Tourism_in_Zimbabwe",
+      ],
+    },
+  ],
+  SN: [
+    {
+      id: "sn-ministry-of-tourism",
+      countryCode: "SN",
+      name: "Senegal Ministry of Tourism",
+      agency: "Ministry of Tourism, Senegal",
+      visitors: {
+        count: 1376000,
+        year: 2017,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Senegal)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia articles for the Ministry of Tourism (Senegal) and \"Tourism in Senegal\" — no freely-licensed Senegalese tourism-board consumer-brand logo could be found; the only Commons file returned by a \"Sunugal\"-brand search (\"SNT Motiv Logo.svg\") is confirmed on its own file page to be an unrelated South Korean company's logo, not Senegal's tourism board.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Senegal)",
+        "https://en.wikipedia.org/wiki/Tourism_in_Senegal",
+      ],
+    },
+  ],
+  CI: [
+    {
+      id: "ci-ministry-of-tourism",
+      countryCode: "CI",
+      name: "Côte d'Ivoire Ministry of Tourism",
+      agency: "Ministère du Tourisme, Côte d'Ivoire",
+      visitors: {
+        count: 668000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Côte d'Ivoire)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Symbols of Ivory Coast) and general web search for a Côte d'Ivoire tourism-board consumer-brand logo — no freely-licensed file could be found; Commons results returned only unrelated Ivorian logos (Air Côte d'Ivoire, the coat of arms).",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Ivory_Coast"],
+    },
+  ],
+  MZ: [
+    {
+      id: "mz-ministry-of-tourism",
+      countryCode: "MZ",
+      name: "Mozambique Ministry of Tourism",
+      agency: "Ministério do Turismo, Mozambique",
+      visitors: {
+        count: 2033000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mozambique)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Mozambique\" — no freely-licensed Mozambican tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Mozambique"],
+    },
+  ],
+  AO: [
+    {
+      id: "ao-ministry-of-tourism",
+      countryCode: "AO",
+      name: "Angola Ministry of Tourism",
+      agency: "Ministério da Cultura, Turismo e Ambiente, Angola",
+      visitors: {
+        count: 218000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Angola)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Angola\" — no freely-licensed Angolan tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Angola"],
+    },
+  ],
+  EE: [
+    {
+      id: "ee-welcome-to-estonia",
+      countryCode: "EE",
+      name: "Welcome to Estonia",
+      slogan: "Welcome to Estonia",
+      agency: "EAS (Enterprise Estonia) / Visit Estonia",
+      launched: 2012,
+      visitors: {
+        count: 1695000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Estonia)",
+      },
+      logo: "/tourism-logos/ee/welcome-to-estonia.jpg",
+      logoExplainer:
+        "The mark stacks \"WEL / COME / TO EST / ONIA\" into a single jagged sticker-shaped badge, designed for EAS (Enterprise Estonia) in 2012 as the slogan and logo for the country's international tourism promotion.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Welcome_To_Estonia_logo.jpeg",
+        "https://en.wikipedia.org/wiki/Tourism_in_Estonia",
+      ],
+      licenceNote:
+        "Public domain per its Commons file page — \"consists only of simple geometric shapes or text\" — attributed to EAS, Enterprise Estonia; carries a trademark notice for commercial use. Bundled here as a reduced-resolution raster (via Wikimedia's own thumbnail renderer) after the original file could not be downloaded directly within this session's rate limits.",
+    },
+  ],
+  SI: [
+    {
+      id: "si-i-feel-slovenia",
+      countryCode: "SI",
+      name: "I Feel Slovenia",
+      slogan: "I Feel Slovenia",
+      agency: "Slovenian Tourist Board (STO)",
+      launched: 2007,
+      visitors: {
+        count: 1216000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Slovenia)",
+      },
+      noImageReason:
+        "\"I Feel Slovenia\" (its wordmark spelling out \"Love\" inside \"Slovenia\") is Slovenia's long-running national brand, but Wikimedia Commons' own copyright-rules page for Slovenia documents that this specific logo is treated as a COPYRIGHTED work there (unlike the simple-text marks this repo otherwise bundles as public domain) — no freely-licensed copy is hosted on Commons or Wikipedia.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/Slovenia",
+        "https://en.wikipedia.org/wiki/Tourism_in_Slovenia",
+      ],
+    },
+  ],
+  LV: [
+    {
+      id: "lv-latvia-tourism-board",
+      countryCode: "LV",
+      name: "Latvia Travel",
+      agency: "Latvian Tourism Development Agency, under the Investment and Development Agency of Latvia",
+      visitors: {
+        count: 3204000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Latvia)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Latvia, Category:Tourism in Latvia) and the English Wikipedia article for \"Tourism in Latvia\" — no freely-licensed Latvian Tourism Development Agency consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Latvia",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Latvia",
+      ],
+    },
+  ],
+  LT: [
+    {
+      id: "lt-real-is-beautiful",
+      countryCode: "LT",
+      name: "Lithuania — \"Real Is Beautiful\"",
+      slogan: "Real Is Beautiful",
+      agency: "State Department of Tourism, Lithuania",
+      launched: 2016,
+      visitors: {
+        count: 2284000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Lithuania)",
+      },
+      noImageReason:
+        "\"Real Is Beautiful\", a postage-stamp-centred identity introduced by the State Department of Tourism in 2016, is well documented, but searching Wikimedia Commons (Category:Tourism in Lithuania) and the English Wikipedia article for \"Tourism in Lithuania\" found no freely-licensed copy of the logo.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Lithuania",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Lithuania",
+      ],
+    },
+  ],
+  MD: [
+    {
+      id: "md-ministry-of-tourism",
+      countryCode: "MD",
+      name: "Moldova Tourism",
+      agency: "National Inbound Tourism Association of Moldova / tourism.gov.md",
+      visitors: {
+        count: 29000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Moldova)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Moldova\" — no freely-licensed Moldovan tourism-board consumer-brand logo could be found; Commons results returned only unrelated Moldovan logos (TVR Moldova, a political party, the National Museum of Art).",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Moldova"],
+    },
+  ],
+  RS: [
+    {
+      id: "rs-serbia-tourism-organisation",
+      countryCode: "RS",
+      name: "Tourism Organisation of Serbia",
+      agency: "Tourism Organisation of Serbia (TOS)",
+      visitors: {
+        count: 446000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Serbia)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Serbia) and the English Wikipedia article for \"Tourism in Serbia\" — no freely-licensed Tourism Organisation of Serbia consumer-brand logo could be found; Commons results returned only unrelated Serbian logos (Wiki Loves Monuments, the government logo, the coat of arms).",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Serbia",
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Serbia",
+      ],
+    },
+  ],
+  ME: [
+    {
+      id: "me-wild-beauty",
+      countryCode: "ME",
+      name: "Montenegro — \"Wild Beauty\"",
+      slogan: "Wild Beauty",
+      agency: "National Tourism Organisation of Montenegro",
+      visitors: {
+        count: 351000,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Montenegro)",
+      },
+      logo: "/tourism-logos/me/wild-beauty.png",
+      logoExplainer:
+        "The MONTENEGRO wordmark is built from bold geometric shapes — triangles, circles, and angular letterforms in green, gold, blue and pale teal — echoing the country's mountains, coastline and forests behind the \"Wild Beauty\" campaign.",
+      sources: [
+        "https://commons.wikimedia.org/wiki/File:Logo_Montenegro.svg",
+        "https://en.wikipedia.org/wiki/Tourism_in_Montenegro",
+      ],
+      licenceNote:
+        "Public domain per its Commons file page — \"consists only of simple geometric shapes or text\" — vector-extracted from an official montenegro.travel PDF; carries a trademark notice for commercial use. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
+    },
+  ],
 };
