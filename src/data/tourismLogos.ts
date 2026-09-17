@@ -2400,4 +2400,113 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       ],
     },
   ],
+  LB: [
+    {
+      id: "lb-ministry-of-tourism",
+      countryCode: "LB",
+      name: "Lebanon Ministry of Tourism",
+      agency: "Ministry of Tourism, Lebanon",
+      visitors: {
+        count: 1936000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Lebanon)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Lebanon) and the English Wikipedia article for the Ministry of Tourism (Lebanon) — no freely-licensed Lebanese tourism-board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search (\"Logo OMT (Lebanon).svg\") is confirmed to be OMT, an unrelated Lebanese money-transfer/fintech company, not the tourism ministry.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Lebanon)",
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Lebanon",
+      ],
+    },
+  ],
+  SD: [
+    {
+      id: "sd-ministry-of-tourism-antiquities-and-wildlife",
+      countryCode: "SD",
+      name: "Sudan Ministry of Tourism, Antiquities and Wildlife",
+      agency: "Ministry of Tourism, Antiquities and Wildlife, Sudan",
+      visitors: {
+        count: 836000,
+        year: 2018,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Sudan)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Sudan, Category:Tourism in Sudan) and the English Wikipedia article for \"Tourism in Sudan\" — no freely-licensed Sudanese tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Sudan",
+        "https://commons.wikimedia.org/wiki/Category:Logos_of_Sudan",
+      ],
+    },
+  ],
+  SS: [
+    {
+      id: "ss-ministry-of-wildlife-conservation-and-tourism",
+      countryCode: "SS",
+      name: "South Sudan Ministry of Wildlife Conservation and Tourism",
+      agency: "Ministry of Wildlife Conservation and Tourism, South Sudan",
+      visitorsNote:
+        "No World Bank or other authoritative international-tourist-arrivals figure is published for South Sudan.",
+      noImageReason:
+        "Searched Wikimedia Commons and the English Wikipedia articles for \"Tourism in South Sudan\" and the Ministry of Wildlife Conservation and Tourism — no freely-licensed South Sudanese tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_South_Sudan",
+        "https://en.wikipedia.org/wiki/Ministry_of_Wildlife_Conservation_and_Tourism",
+      ],
+    },
+  ],
+  SO: [
+    {
+      id: "so-ministry-of-tourism-and-wildlife",
+      countryCode: "SO",
+      name: "Somalia Ministry of Tourism and Wildlife",
+      agency: "Ministry of Tourism and Wildlife, Somalia",
+      visitorsNote:
+        "No World Bank or other authoritative international-tourist-arrivals figure is published for Somalia.",
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Somalia, Category:Symbols of Somalia) and the English Wikipedia article for \"Tourism in Somalia\" — no freely-licensed Somali tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Somalia"],
+    },
+  ],
+  LY: [
+    {
+      id: "ly-ministry-of-tourism",
+      countryCode: "LY",
+      name: "Libya Ministry of Tourism",
+      agency: "Ministry of Tourism, Libya",
+      visitors: {
+        count: 760000,
+        year: 2008,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Libya, predating the 2011 civil war)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Libya, Category:Tourism in Libya) and the English Wikipedia article for \"Tourism in Libya\" — no freely-licensed Libyan tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Libya",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Libya",
+      ],
+    },
+  ],
+  TD: [
+    {
+      id: "td-ministry-of-tourism",
+      countryCode: "TD",
+      name: "Chad Ministry of Tourism",
+      agency: "Ministère du Tourisme, de la Culture, de l'Artisanat et du Développement Touristique, Chad",
+      visitors: {
+        count: 10400,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Chad)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in Chad, Category:Symbols of Chad) and the English Wikipedia article for \"Tourism in Chad\" — no freely-licensed Chadian tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Tourism_in_Chad",
+        "https://commons.wikimedia.org/wiki/Category:Tourism_in_Chad",
+      ],
+    },
+  ],
 };
