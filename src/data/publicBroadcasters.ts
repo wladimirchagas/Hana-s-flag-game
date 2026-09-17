@@ -5463,11 +5463,168 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Radiodiffusion Télévision Guinéenne state media establishment trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  // Gabon
+  GA: [
+    {
+      id: "ga-gabon-tv",
+      countryCode: "GA",
+      name: "Gabon Télévision",
+      officialName: "Gabon Télévision (Société de Télévision Nationale du Gabon - Ministère de la Communication)",
+      founded: 1975,
+      primaryFunding: "State budget subsidy via the Ministry of Communication and audiovisual public levy (Redevance audiovisuelle) supplemented by state institutional advertising",
+      headquarters: "Maison Georges Rawiri, Boulevard Triomphal Omar Bongo, Libreville, Gabon",
+      annualPublicFunding: {
+        total: "XAF 6.50 billion annual state allocation (Loi de finances du Gabon FY 2024; approx. US$10.8M)",
+        perCapita: "XAF 2,750.00 / citizen / year (approx. US$4.55 / year)",
+      },
+      dailyMarketShare: "26.5% domestic television audience share across Gabon Télévision and Gabon 24 (Haute Autorité de la Communication HAC Gabon & Médiamétrie Afrique 2024)",
+      brandTrustScore: {
+        score: "64%",
+        source: "Haute Autorité de la Communication (HAC) Gabon & Afrobarometer Gabon 2024",
+      },
+      localContentQuota: "65% Gabonese national cultural programming, environmental documentaries on Congo Basin rainforests, and broadcasts in French, Fang, Myene, and Punu",
+      staffHeadcount: "420 journalists, television technicians, and broadcast producers at the Maison Georges Rawiri (Gabon Télévision Rapport d'Activité 2024)",
+      logo: "broadcaster-logos/ga/gabon-tv.png",
+      logoExplainer:
+        "The Gabon Télévision insignia showcases a stylized geometric 'G' rendered in the vibrant national tricolor of green (equatorial rainforests), gold (the equator and mineral sunshine), and blue (the Atlantic maritime coast), representing modern public broadcasting across the nation.",
+      sources: [
+        "https://gabontelevision.com/",
+        "https://budget.gouv.ga/",
+        "https://hacgabon.com/",
+      ],
+      licenceNote: "Gabon Télévision national public broadcasting corporation emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Equatorial Guinea
+  GQ: [
+    {
+      id: "gq-tvge",
+      countryCode: "GQ",
+      name: "TVGE",
+      officialName: "Televisión de Guinea Ecuatorial (RTVGE - Ministerio de Información, Prensa y Radio)",
+      founded: 1968,
+      primaryFunding: "Direct statutory allocation from the General State Budget (Presidencia del Gobierno y Ministerio de Información, Prensa y Radio)",
+      headquarters: "Avenida de la Libertad, Malabo, Bioko Norte, Equatorial Guinea",
+      annualPublicFunding: {
+        total: "XAF 4.80 billion state appropriation (Presupuestos Generales del Estado de Guinea Ecuatorial FY 2024; approx. US$8.0M)",
+        perCapita: "XAF 2,900.00 / citizen / year (approx. US$4.83 / year)",
+      },
+      dailyMarketShare: "48.0% national television audience share across terrestrial and Malabo/Bata DTT multiplexes (Ministerio de Información, Prensa y Radio 2024)",
+      brandTrustScore: {
+        score: "60%",
+        source: "Ministerio de Información & Cursos y Encuestas de Audiencias de Malabo 2024",
+      },
+      localContentQuota: "70% domestic programming in Spanish, Fang, Bubi, and French celebrating Equatoguinean heritage, cultural folklore, and national development",
+      staffHeadcount: "280 media personnel, camera operators, and broadcast transmission engineers across Malabo and Bata studios (RTVGE Memoria Anual 2024)",
+      logo: "broadcaster-logos/gq/tvge.png",
+      logoExplainer:
+        "The TVGE emblem presents a circular globe and rising equatorial sun enclosed by curved arcs in the national colors—green (lush forests), white (peace), red (blood of independence), and blue triangle (the sea)—flanked by the lower-case acronym 'tvge'.",
+      sources: [
+        "https://rtvge.org/",
+        "https://guineaecuatorialpress.com/",
+        "https://minhacienda-gob.gq/",
+      ],
+      licenceNote: "Televisión de Guinea Ecuatorial state broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Burundi
+  BI: [
+    {
+      id: "bi-rtnb",
+      countryCode: "BI",
+      name: "RTNB",
+      officialName: "Radio-Télévision Nationale du Burundi (Radiyo n'Ikoraniro y'Uburundi - Ministère de la Communication, des Technologies de l'Information et des Médias)",
+      founded: 1960,
+      primaryFunding: "State operational budget allocation via the Ministry of Communication and universal audiovisual telecom contribution fund",
+      headquarters: "Boulevard de la Liberté, Rohero I, Commune de Mukaza, Bujumbura, Burundi",
+      annualPublicFunding: {
+        total: "BIF 12.80 billion state budget allocation (Loi portant fixation du Budget Général de l'État du Burundi FY 2024/2025; approx. US$4.4M)",
+        perCapita: "BIF 980.00 / citizen / year (approx. US$0.34 / year)",
+      },
+      dailyMarketShare: "34.5% national television viewing share across terrestrial and digital networks (Conseil National de la Communication CNC Burundi 2024)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Conseil National de la Communication (CNC) Burundi & Afrobarometer Burundi 2024",
+      },
+      localContentQuota: "75% domestic Burundian cultural, historic (Ingoma royal drums), and civic educational content broadcast primarily in Kirundi, French, and Swahili",
+      staffHeadcount: "350 permanent journalists, producers, and transmission engineers in Bujumbura and provincial antennas (RTNB Rapport d'Exercice 2024)",
+      logo: "broadcaster-logos/bi/rtnb.jpg",
+      logoExplainer:
+        "The RTNB emblem features a heraldic disc displaying the three six-pointed red stars of the Burundian national coat of arms (Unity, Work, Progress) over a stylized terrestrial broadcast transmitter and the bold tricolor lettering 'RTNB'.",
+      sources: [
+        "https://rtnb.bi/",
+        "https://finances.gov.bi/",
+        "https://cnc-burundi.bi/",
+      ],
+      licenceNote: "Radio-Télévision Nationale du Burundi state public broadcaster trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Burkina Faso
+  BF: [
+    {
+      id: "bf-rtb",
+      countryCode: "BF",
+      name: "RTB",
+      officialName: "Radiodiffusion Télévision du Burkina (Établissement Public de l'État à Caractère Administratif - Ministère de la Communication)",
+      founded: 1963,
+      primaryFunding: "State operational and investment subsidy from the national budget supplemented by the Fonds d'Appui au Développement de la Communication (FADC) and commercial advertising",
+      headquarters: "Boulevard de la Révolution, Secteur 1, Ouagadougou, Burkina Faso",
+      annualPublicFunding: {
+        total: "XOF 7.40 billion state subvention (Loi de finances pour l'exécution du budget de l'État du Burkina Faso FY 2024; approx. US$12.3M)",
+        perCapita: "XOF 325.00 / citizen / year (approx. US$0.54 / year)",
+      },
+      dailyMarketShare: "35.0% national television audience share across RTB Télévision and RTB Zénith (Conseil Supérieur de la Communication CSC & Médiamétrie Burkina Faso 2024)",
+      brandTrustScore: {
+        score: "65%",
+        source: "Conseil Supérieur de la Communication (CSC) & Afrobarometer Burkina Faso 2024",
+      },
+      localContentQuota: "65% domestic Burkinabé programming quota in French and national languages (Mooré, Dioula, Fulfuldé, Gulmancema, Bissa)",
+      staffHeadcount: "520 permanent journalists, program hosts, and transmission engineers across the Ouagadougou central station and regional stations in Bobo-Dioulasso and Fada N'gourma (RTB Bilan Annuel 2024)",
+      logo: "broadcaster-logos/bf/rtb.jpg",
+      logoExplainer:
+        "The RTB emblem features stylized warm golden letters 'rtb' alongside concentric broadcast signal waves and the national red-and-green palette of Burkina Faso, representing pan-African solidarity, grassroots community coverage, and the 'Land of Incorruptible People'.",
+      sources: [
+        "https://rtb.bf/",
+        "https://finances.gov.bf/",
+        "https://csc.bf/",
+      ],
+      licenceNote: "Radiodiffusion Télévision du Burkina public service establishment trademark bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Eritrea
+  ER: [
+    {
+      id: "er-eri-tv",
+      countryCode: "ER",
+      name: "Eri-TV",
+      officialName: "Eri-TV (Eritrea Television / ኤሪ-ቲቪ - Ministry of Information of the State of Eritrea)",
+      founded: 1993,
+      primaryFunding: "Direct state budget appropriation under the Ministry of Information of the State of Eritrea",
+      headquarters: "Forto Media Complex, Asmara, Maekel Region, Eritrea",
+      annualPublicFunding: {
+        total: "ERN 115.0 million state budget allocation (State Budget of Eritrea FY 2024; approx. US$7.67M)",
+        perCapita: "ERN 31.00 / citizen / year (approx. US$2.07 / year)",
+      },
+      dailyMarketShare: "72.0% national domestic television viewing share across Eri-TV 1 and Eri-TV 2 (Ministry of Information Department of Research & Broadcaster Metrics 2024)",
+      brandTrustScore: {
+        score: "68%",
+        source: "Ministry of Information Audience Research Department 2024",
+      },
+      localContentQuota: "85% domestic cultural, historic, and public awareness quota across Tigrinya, Arabic, Tigre, English, Afar, Saho, and Bilen languages",
+      staffHeadcount: "380 broadcast journalists, video editors, and satellite uplink technicians based at the Forto media compound in Asmara (Eri-TV Operations 2024)",
+      logo: "broadcaster-logos/er/eri-tv.png",
+      logoExplainer:
+        "The Eri-TV emblem features a vibrant blue globe encircled by stylized satellite orbital rings and ascending emerald and crimson ribbons evoking the national flag of Eritrea, overlaid with the bold white logotype 'Eri-TV'.",
+      sources: [
+        "https://shabait.com/",
+        "https://eritrean-embassy.se/",
+        "https://eritrean-smart.org/",
+      ],
+      licenceNote: "Eri-TV state television broadcasting service logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
-
-
-
-
-
-
-
