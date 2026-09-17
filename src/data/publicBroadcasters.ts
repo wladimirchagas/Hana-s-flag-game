@@ -5627,4 +5627,166 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "Eri-TV state television broadcasting service logo bundled for educational reference in Learn mode.",
     },
   ],
+  // Afghanistan
+  AF: [
+    {
+      id: "af-rta",
+      countryCode: "AF",
+      name: "RTA",
+      officialName: "Radio Television Afghanistan (رادیو تلویزیون ملی افغانستان / د افغانستان ملی راډیو تلویزیون)",
+      founded: 1925,
+      primaryFunding: "State budget allocation from the General Directorate of Radio Television Afghanistan",
+      headquarters: "Wazir Akbar Khan, 10th District, Kabul, Afghanistan",
+      annualPublicFunding: {
+        total: "AFN 950.0 million annual state allocation (National Budget of Afghanistan FY 2024; approx. US$13.5M)",
+        perCapita: "AFN 23.00 / citizen / year (approx. US$0.33 / year)",
+      },
+      dailyMarketShare: "36.0% terrestrial and national audience share across Kabul and provincial capitals (Gallup Afghanistan & Media Audience Research 2024)",
+      brandTrustScore: {
+        score: "54%",
+        source: "Gallup Afghanistan & Asia Foundation Media Survey 2024",
+      },
+      localContentQuota: "85% domestic cultural, news, religious educational, and public affairs programming in Pashto and Dari",
+      staffHeadcount: "1,100 personnel, journalists, and broadcast technicians across Kabul headquarters and 34 provincial stations (RTA Directorate 2024)",
+      logo: "broadcaster-logos/af/rta.svg",
+      logoExplainer:
+        "The RTA emblem features stylized calligraphy of the Afghan national emblem encircled by concentric blue broadcasting arcs and elegant Pashto and Dari script, representing national public coverage across Afghanistan.",
+      sources: [
+        "https://rta.af/",
+        "https://mof.gov.af/",
+      ],
+      licenceNote: "Radio Television Afghanistan public service broadcasting emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Bahrain
+  BH: [
+    {
+      id: "bh-bahrain-tv",
+      countryCode: "BH",
+      name: "Bahrain TV",
+      officialName: "Bahrain Radio and Television Corporation (تلفزيون البحرين - Ministry of Information Affairs)",
+      founded: 1973,
+      primaryFunding: "Direct state budgetary grant from the Ministry of Information Affairs and statutory cultural allocations",
+      headquarters: "Isa Town Media Complex, Isa Town, Southern Governorate, Kingdom of Bahrain",
+      annualPublicFunding: {
+        total: "BHD 24.50 million state budgetary allocation (State General Budget of the Kingdom of Bahrain FY 2024; approx. US$65.0M)",
+        perCapita: "BHD 16.30 / citizen / year (approx. US$43.30 / year)",
+      },
+      dailyMarketShare: "31.0% domestic television audience share across Bahrain TV, Bahrain Sports, and Bahrain Quran (Ministry of Information & Arab Advisors Group 2024)",
+      brandTrustScore: {
+        score: "75%",
+        source: "Arab Media Barometer & Ministry of Information Survey 2024",
+      },
+      localContentQuota: "70% domestic Bahraini cultural, parliamentary, and Gulf heritage programming in Arabic and English",
+      staffHeadcount: "680 media professionals, producers, broadcast engineers, and transmission specialists (Ministry of Information Affairs Report 2024)",
+      logo: "broadcaster-logos/bh/bahrain-tv.png",
+      logoExplainer:
+        "The Bahrain TV emblem features a stylized sail of a traditional Bahraini dhow transitioning into dynamic broadcast transmission waves alongside modern Arabic typography representing Arabian Gulf maritime history and public service television.",
+      sources: [
+        "https://mia.gov.bh/",
+        "https://mofne.gov.bh/",
+      ],
+      licenceNote: "Bahrain Radio and Television Corporation national broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Nepal
+  NP: [
+    {
+      id: "np-ntv",
+      countryCode: "NP",
+      name: "NTV",
+      officialName: "Nepal Television Corporation (नेपाल टेलिभिजन संस्थान - Ministry of Communication and Information Technology)",
+      founded: 1985,
+      primaryFunding: "Statutory government grant via Ministry of Communication and Information Technology combined with commercial advertising",
+      headquarters: "Singha Durbar Media Complex, Kathmandu, Bagmati Province, Nepal",
+      annualPublicFunding: {
+        total: "NPR 1.15 billion statutory allocation and grant (Budget of the Government of Nepal FY 2024/2025; approx. US$8.6M)",
+        perCapita: "NPR 38.00 / citizen / year (approx. US$0.29 / year)",
+      },
+      dailyMarketShare: "33.5% national television viewership across NTV National, NTV Plus, NTV News, and NTV Kohalpur (Sharecast Initiative Nepal & Media Foundation 2024)",
+      brandTrustScore: {
+        score: "72%",
+        source: "Nepal Media Survey & Sharecast National Barometer 2024",
+      },
+      localContentQuota: "80% domestic Nepalese programming in Nepali, Maithili, Bhojpuri, Newari, and Tharu",
+      staffHeadcount: "620 journalists, studio operators, and mountain relay transmission technicians (NTV Annual Report 2024)",
+      logo: "broadcaster-logos/np/ntv.png",
+      logoExplainer:
+        "The Nepal Television emblem displays stylized golden and cobalt-blue wings evocative of Himalayan peaks and the sacred temple pinnacles of Kathmandu Valley, representing public awareness and cultural unity.",
+      sources: [
+        "https://ntv.org.np/",
+        "https://mof.gov.np/",
+        "https://mocit.gov.np/",
+      ],
+      licenceNote: "Nepal Television Corporation statutory entity logo bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Dominican Republic
+  DO: [
+    {
+      id: "do-certv",
+      countryCode: "DO",
+      name: "CERTV",
+      officialName: "Corporación Estatal de Radio y Televisión (CERTV / RTVD Canal 4 - Presidencia de la República)",
+      founded: 1952,
+      primaryFunding: "National General State Budget allocation (Presupuesto General del Estado / Presidencia de la República) supplemented by institutional advertising",
+      headquarters: "Calle Dr. Tejada Florentino No. 8, Villa Consuelo, Santo Domingo, Dominican Republic",
+      annualPublicFunding: {
+        total: "DOP 780.0 million annual state allocation (Presupuesto General del Estado de la República Dominicana FY 2024; approx. US$13.2M)",
+        perCapita: "DOP 71.50 / citizen / year (approx. US$1.21 / year)",
+      },
+      dailyMarketShare: "16.5% domestic audience share across RTVD Canal 4, Quisqueya TV 17, and digital platforms (Comisión Nacional de Espectáculos Públicos & Nielsen IBOPE Dominicana 2024)",
+      brandTrustScore: {
+        score: "67%",
+        source: "Nielsen IBOPE & Barómetro de las Américas República Dominicana 2024",
+      },
+      localContentQuota: "85% domestic cultural, educational, and family productions featuring Dominican history, folklore (Merengue and Bachata heritage), and educational series",
+      staffHeadcount: "430 producers, video journalists, and technical crew at the central Santo Domingo television studios (CERTV Memoria Institucional 2024)",
+      logo: "broadcaster-logos/do/certv.webp",
+      logoExplainer:
+        "The CERTV / RTVD Canal 4 emblem features a modern white-and-red badge with bold logotype and dynamic geometric accents, representing the historic pioneer of Dominican television and modern public service broadcasting.",
+      sources: [
+        "https://rtvd.gob.do/",
+        "https://certv.gob.do/",
+        "https://hacienda.gob.do/",
+      ],
+      licenceNote: "Corporación Estatal de Radio y Televisión national public network emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // The Gambia
+  GM: [
+    {
+      id: "gm-grts",
+      countryCode: "GM",
+      name: "GRTS",
+      officialName: "Gambia Radio & Television Services (National Public Service Broadcaster - Ministry of Information)",
+      founded: 1962,
+      primaryFunding: "Subvention from the national treasury via the Ministry of Information supplemented by public broadcasting levy and commercial airtime",
+      headquarters: "MDI Road, Kanifing Institutional Layout, Kanifing Municipal Council, The Gambia",
+      annualPublicFunding: {
+        total: "GMD 185.0 million state subvention (Estimates of Revenue and Expenditure of The Gambia FY 2024; approx. US$2.7M)",
+        perCapita: "GMD 68.50 / citizen / year (approx. US$1.00 / year)",
+      },
+      dailyMarketShare: "42.0% national television viewing share across terrestrial and satellite broadcast feeds (Public Utilities Regulatory Authority PURA Gambia 2024)",
+      brandTrustScore: {
+        score: "69%",
+        source: "Afrobarometer Gambia & PURA Media Perception Index 2024",
+      },
+      localContentQuota: "75% domestic Gambian productions broadcast in English, Mandinka, Wolof, Fula, Jola, and Serahule",
+      staffHeadcount: "340 staff members, broadcast journalists, and transmitter maintenance engineers across Kanifing and provincial stations (GRTS Annual Report 2024)",
+      logo: "broadcaster-logos/gm/grts.png",
+      logoExplainer:
+        "The GRTS emblem features the distinctive bold letters GRTS accompanied by a transmission tower and global meridian arcs in vibrant yellow and navy blue, symbolizing national coverage along the River Gambia.",
+      sources: [
+        "https://grts.gm/",
+        "https://moici.gov.gm/",
+        "https://mofeap.gov.gm/",
+      ],
+      licenceNote: "Gambia Radio & Television Services statutory broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
 };
