@@ -6954,4 +6954,125 @@ export const COMMERCIAL_AIRLINES: Record<string, readonly CommercialAirline[]> =
         "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
     },
   ],
+  CF: [
+    {
+      id: "cf-karinou-airlines",
+      countryCode: "CF",
+      name: "Karinou Airlines",
+      iata: "U5",
+      icao: "KRN",
+      founded: 2012,
+      alliance: "None",
+      hubs: ["Bangui M'Poko International Airport (BGF)"],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Boeing 737-200, Airbus A319)",
+      },
+      logo: "/airline-logos/cf/karinou-airlines.svg",
+      logoExplainer:
+        "Features the vibrant Pan-African heraldic colors (blue, white, green, yellow, and red) of the Central African Republic styled into soaring wings with the guiding yellow star, representing sovereign transit, hope, and central African regional connectivity.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Karinou_Airlines",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  GW: [
+    {
+      id: "gw-air-bissau",
+      countryCode: "GW",
+      name: "Air Bissau",
+      iata: "TZ",
+      icao: "GBU",
+      founded: 1960,
+      alliance: "None",
+      hubs: ["Osvaldo Vieira International Airport (OXB)"],
+      fleet: {
+        total: 3,
+        summary: "Historic fleet included Boeing 737-200, Hawker Siddeley HS 748, and Antonov An-24 connecting Bissau to Lisbon and Dakar",
+      },
+      logo: "/airline-logos/gw/air-bissau.svg",
+      logoExplainer:
+        "Features the national red, yellow, and green circular roundel bearing the iconic black star of African freedom and unity, framed by aerodynamic flight arcs honoring Guinea-Bissau's sovereign civil aviation history.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Air_Bissau",
+      ],
+      licenceNote:
+        "Commercial airline historic trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  PW: [
+    {
+      id: "pw-belau-air",
+      countryCode: "PW",
+      name: "Belau Air",
+      iata: "PM",
+      icao: "BLU",
+      founded: 1989,
+      alliance: "None",
+      hubs: ["Roman Tmetuchl International Airport (ROR)"],
+      fleet: {
+        total: 1,
+        summary: "1 Britten-Norman BN-2 Islander connecting Koror with Peleliu and Angaur",
+      },
+      logo: "/airline-logos/pw/belau-air.svg",
+      logoExplainer:
+        "Features the serene Pacific ocean blue and golden full-moon crest evocative of the national flag of Palau, crowned by stylized soaring seabird wings representing peaceful inter-island connectivity across the Rock Islands.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Belau_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  FM: [
+    {
+      id: "fm-caroline-islands-air",
+      countryCode: "FM",
+      name: "Caroline Islands Air",
+      iata: "CIA",
+      icao: "CXP",
+      founded: 1995,
+      alliance: "None",
+      hubs: ["Pohnpei International Airport (PNI)"],
+      fleet: {
+        total: 2,
+        summary: "2 aircraft (Harbin Y-12, Britten-Norman Islander) providing passenger links across Micronesia's outer islands",
+      },
+      logo: "/airline-logos/fm/caroline-islands-air.svg",
+      logoExplainer:
+        "Features the iconic four white stars of the Federated States of Micronesia (representing Yap, Chuuk, Pohnpei, and Kosrae) arranged in constellation within an oceanic roundel and aerodynamic outrigger flight sweep.",
+      sources: [
+        "https://en.wikipedia.org/wiki/Caroline_Islands_Air",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
+  KN: [
+    {
+      id: "kn-winair",
+      countryCode: "KN",
+      name: "Winair (St. Kitts & Nevis)",
+      iata: "WM",
+      icao: "WIA",
+      founded: 1961,
+      alliance: "CaribSky",
+      hubs: ["Robert L. Bradshaw International Airport (SKB)", "Vance W. Amory International Airport (NEV)"],
+      fleet: {
+        total: 7,
+        summary: "7 aircraft (ATR 42-500, DHC-6 Twin Otter) serving the federation of Saint Kitts and Nevis",
+      },
+      logo: "/airline-logos/kn/winair.svg",
+      logoExplainer:
+        "Features the distinctive dynamic wing ribbon and modern wordmark symbolizing reliable inter-island scheduled connectivity, connecting Basseterre and Charlestown with neighboring Caribbean islands.",
+      sources: [
+        "https://www.winair.sx/",
+        "https://en.wikipedia.org/wiki/Winair",
+      ],
+      licenceNote:
+        "Commercial airline trademark and logo bundled for educational reference in Learn mode.",
+    },
+  ],
 };
