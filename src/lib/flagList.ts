@@ -77,6 +77,14 @@ export type FlagListEntry = {
   /** Country display name when this entry represents an airline/broadcaster/tourism logo grouped under a country. */
   countryName?: string;
   /**
+   * Key to alphabetise and A–Z-bucket this card by, when that differs from the
+   * label shown on it. The Tourism-logos view labels a card with the country's
+   * TAGLINE ("Malaysia, Truly Asia (Malaysia)") but must still sort under the
+   * COUNTRY, so it sets this to the country name. Absent for every other view,
+   * where the label is the sort key.
+   */
+  sortName?: string;
+  /**
    * Country code to select when this card is clicked, when it differs from `id`.
    * A home-nation football-crest card carries the parent country's code (GB) so a
    * click opens the United Kingdom (whose National symbols tab holds all four),

@@ -668,6 +668,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "bi-tourism-office",
       countryCode: "BI",
+      slogan: "Heart of Africa",
       name: "Burundi — \"Heart of Africa\"",
       agency: "Office National du Tourisme, Burundi's national tourism authority",
       visitors: {
@@ -2134,6 +2135,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "mm-ministry-of-hotels-and-tourism",
       countryCode: "MM",
+      slogan: "Be Enchanted",
       name: "Myanmar — \"Be Enchanted\"",
       agency: "Ministry of Hotels and Tourism, Myanmar",
       visitors: {
@@ -2523,6 +2525,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "gy-ministry-of-tourism-industry-and-commerce",
       countryCode: "GY",
+      slogan: "South America Undiscovered",
       name: "Guyana — \"South America Undiscovered\"",
       agency: "Ministry of Tourism, Industry and Commerce, Guyana",
       visitors: {
@@ -2548,7 +2551,6 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       id: "py-secretaria-nacional-de-turismo",
       countryCode: "PY",
       name: "Paraguay — Secretaría Nacional de Turismo",
-      slogan: "South America Undiscovered",
       agency: "Secretaría Nacional de Turismo (SENATUR), Paraguay",
       visitors: {
         count: 1077000,
@@ -2965,6 +2967,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "us-brand-usa",
       countryCode: "US",
+      slogan: "Visit The USA",
       name: "Brand USA — \"Visit The USA\"",
       agency: "Brand USA (Corporation for Travel Promotion)",
       launched: 2010,
@@ -3103,6 +3106,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "ro-carpathian-garden",
       countryCode: "RO",
+      slogan: "Natural and Cultural",
       name: "Romania — \"Natural and Cultural\"",
       agency: "Ministry of Economy, Entrepreneurship and Tourism, Romania",
       launched: 2009,
