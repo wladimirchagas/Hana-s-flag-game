@@ -838,8 +838,9 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, consolidated Embratur / Ministry of Tourism / Federal Police data",
       },
-      noImageReason:
-        "Marca Brasil is the consumer-facing destination brand Brazil promotes to tourists — a flag-coloured compass rose designed by Kiko Farkas in 2005 for the Plano Aquarela and relaunched by Embratur in February 2023 — but no freely-licensed copy of that specific mark could be found. Searched: Wikimedia Commons (Category:Logos of Brazil, Category:Logos of governments and government agencies of Brazil, Category:SVG logos of Brazil — none matches), the English and Portuguese Wikipedia articles for Embratur and \"Marca Brasil\" (the Portuguese article under that exact title is a name collision with an unrelated sports magazine, not the tourism brand), and the official marca.visitbrasil.com / antigo.visitbrasil.com brand pages, which document the brand but sit behind a Cloudflare bot challenge that returns HTTP 403 to every path on the domain (including a bare favicon request), so no image bytes could be retrieved from them by an automated fetch. Embratur's OWN separate institutional/corporate mark (a green-gold-blue diamond plus wordmark, unrelated in design to Marca Brasil) is freely hosted on Commons, but bundling it here would misrepresent it as the consumer tourism brand it is not — the same distinction this repo's rules draw between a federation's corporate logo and the crest a team actually wears. Re-checked 2026-09 against the board's OWN consumer site (https://embratur.com.br/) — the source family that yielded the destination brand for 94 other countries — but the domain is behind a Cloudflare bot challenge that returns HTTP 403 to every automated request, including a bare favicon, so no image bytes could be retrieved.",
+      logo: "/tourism-logos/br/marca-brasil.webp",
+      logoExplainer:
+        "Marca Brasil, the consumer-facing destination brand Embratur promotes Brazil under: the word \"BRASIL\" in white capitals set on a cluster of overlapping translucent organic curves in green, yellow, blue, red and orange. Designed by Kiko Farkas in 2005 for the Plano Aquarela and relaunched by Embratur in February 2023, the mark takes the green, yellow and blue of the national flag and adds the reds and oranges Farkas associated with Brazilian exuberance; the soft interlocking shapes, rather than a geometric device, are meant to read as the country's diversity and informality.",
       sources: [
         "https://pt.wikipedia.org/wiki/Instituto_Brasileiro_de_Turismo",
         "https://embratur.com.br/2023/02/14/brasil-reafirma-compromisso-com-sustentabilidade-com-retomada-de-logomarca-internacional/",
@@ -849,6 +850,8 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         "https://embratur.com.br/2023/07/24/spetacular-sustainable-embratur-assume-brasil-com-s-em-campanha-nos-eua/",
         "https://marca.visitbrasil.com",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Embratur (Instituto Brasileiro de Turismo). The live marca.visitbrasil.com and visitbrasil.com domains sit behind a Cloudflare bot challenge that returns HTTP 403 to every automated request, so the asset was recovered from the Internet Archive's December 2024 capture of Embratur's own visitbrasil.com (the file the site itself serves as its brand logo). Bundled for identification of the destination brand, on the same non-free basis this repository uses for football-association crests and passport covers.",
     },
   ],
   ID: [
@@ -1683,12 +1686,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Kenya)",
       },
-      noImageReason:
-        "\"Magical Kenya\", refreshed with a new visual identity by the Kenya Tourism Board in 2019, is a well-documented brand, but searching Wikimedia Commons and the English Wikipedia article for \"Tourism in Kenya\" found no freely-licensed copy of the logo — the only Commons file returned by search (\"Magical Kenya Logo Wikimania Nairobi partner.jpeg\") is hosted on the separate Wikimania wiki, not Commons, and is a conference-sponsor credit image rather than the brand mark itself. Re-checked 2026-09 against the board's OWN consumer site (https://ktb.go.ke/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/ke/magical-kenya.png",
+      logoExplainer:
+        "The \"Magical Kenya\" destination brand of the Kenya Tourism Board: the words \"Magical\" in a black script and \"Kenya\" in a red script, beneath an arch of triangular beadwork shapes in red, green, blue, yellow and black flanked by small dots. The beadwork arch draws on Maasai beaded collar patterning, one of Kenya's most recognisable craft traditions. This is the consumer brand, not the Board's own \"KENYA TOURISM BOARD\" institutional lockup.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Kenya",
         "https://voyagesafriq.com/2019/05/16/kenya-tourism-board-unveils-new-visual-identity/",
+        "https://magicalkenya.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Kenya Tourism Board. The live magicalkenya.com domain returns HTTP 403 to automated requests, so the asset was recovered from the Internet Archive's capture of the Board's own site. Bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   ZM: [
@@ -2112,7 +2119,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "mm-ministry-of-hotels-and-tourism",
       countryCode: "MM",
-      name: "Myanmar Ministry of Hotels and Tourism",
+      name: "Myanmar — \"Be Enchanted\"",
       agency: "Ministry of Hotels and Tourism, Myanmar",
       visitors: {
         count: 903000,
@@ -2120,12 +2127,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Myanmar)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Myanmar) and the English Wikipedia article for the Ministry of Hotels and Tourism (Myanmar) — no freely-licensed Myanmar tourism-board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search (\"Ministry of Tourism and Antiquities logo.png\") is Egypt's ministry logo, wrongly surfaced by a generic category match — not Myanmar's own. Re-checked 2026-09 against the board's OWN official site (https://myanmar.travel/) — the source family that yielded the destination brand for 94 other countries — but the domain does not resolve or refuses connections from this environment, so no image bytes could be retrieved.",
+      logo: "/tourism-logos/mm/myanmar-be-enchanted.png",
+      logoExplainer:
+        "Myanmar's destination brand: the country's name written in gold in a rounded, looping script whose letterforms echo the circular strokes of the Burmese alphabet, above the tagline \"Be enchanted\" in a gold cursive. Gold is the colour of the gilded stupas — Shwedagon above all — that dominate the country's tourism imagery.",
       sources: [
         "https://en.wikipedia.org/wiki/Ministry_of_Hotels_and_Tourism_(Myanmar)",
         "https://commons.wikimedia.org/wiki/Category:Logos_of_Myanmar",
+        "https://www.myanmar.travel/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Myanmar Ministry of Hotels and Tourism, recovered from the Internet Archive's capture of the ministry's own myanmar.travel site after the live domain became unreachable from this environment. Bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   LA: [
@@ -2486,7 +2497,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "gy-ministry-of-tourism-industry-and-commerce",
       countryCode: "GY",
-      name: "Guyana Ministry of Tourism, Industry and Commerce",
+      name: "Guyana — \"South America Undiscovered\"",
       agency: "Ministry of Tourism, Industry and Commerce, Guyana",
       visitors: {
         count: 86400,
@@ -2494,12 +2505,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Guyana)",
       },
-      noImageReason:
-        "The only bundled Wikimedia Commons file (\"Ministry of Tourism, Industry, and Commerce Guyana.svg\") is the government ministry's own institutional emblem, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. No separate consumer tourism-brand logo could be found on Commons or Wikipedia. Re-checked 2026-09 against the board's OWN consumer site (https://guyanatourism.com/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/gy/guyana-undiscovered.png",
+      logoExplainer:
+        "Guyana's destination mark: a textured olive-green disc carrying the word \"GUYANA\" in white capitals, with the tagline \"South America Undiscovered\" curving around the lower edge and a white line tracing a waterfall down the disc from top to bottom. The falls evoke Kaieteur, the single-drop waterfall in the interior rainforest that is the country's best-known natural landmark.",
       sources: [
         "https://commons.wikimedia.org/wiki/Category:Logos_of_Guyana",
         "https://en.wikipedia.org/wiki/Tourism_in_Guyana",
+        "https://www.guyanatourism.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Guyana Tourism Authority, recovered from the Internet Archive's capture of the Authority's own guyanatourism.com site after the live domain became unreachable from this environment. Bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   PY: [
@@ -2507,6 +2522,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       id: "py-secretaria-nacional-de-turismo",
       countryCode: "PY",
       name: "Paraguay — Secretaría Nacional de Turismo",
+      slogan: "South America Undiscovered",
       agency: "Secretaría Nacional de Turismo (SENATUR), Paraguay",
       visitors: {
         count: 1077000,
