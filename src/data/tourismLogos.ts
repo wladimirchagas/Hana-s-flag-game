@@ -41,13 +41,17 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International visitor arrivals, calendar year (Japan National Tourism Organization) — a record high, 5 million more than the pre-pandemic 2019 record",
       },
-      noImageReason:
-        "Searched Wikimedia Commons for the consumer-facing \"Japan. Endless Discovery.\" campaign mark (a red-and-white design pairing a cherry blossom with a sunrise arc, in use since April 2010) — no freely-licensed copy of that specific mark could be found. The only Commons file found under this topic (\"JNTO_logo.svg\") is JNTO's own plain organisational wordmark — literally just the acronym \"JNTO\" plus a red arc, with no country name, slogan or cherry-blossom motif — which reads as the agency's internal corporate identity rather than the destination brand tourists actually see, so it was not used as a substitute.",
+      logo: "/tourism-logos/jp/japan-endless-discovery.svg",
+      logoExplainer:
+        "The consumer-facing destination mark JNTO puts on japan.travel: a solid red disc — the sun of the national flag — from which five cherry-blossom petals break away to the right, set beside the two-line wordmark \"Japan. Endless Discovery.\" The sakura is Japan's most widely recognised seasonal emblem, and the petals leaving the disc carry the campaign's \"endless discovery\" idea of a journey opening outward. This is the brand tourists actually see, not JNTO's plain \"JNTO\" corporate acronym mark.",
       sources: [
         "https://www.jnto.go.jp/en/about-us/brand.html",
         "https://en.wikipedia.org/wiki/Japan_National_Tourism_Organization",
         "https://aboutourism.wordpress.com/2010/04/17/destination-brandwatch-japan-endless-discovery/",
+        "https://www.japan.travel/en/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Japan National Tourism Organization, downloaded from JNTO's own consumer site japan.travel and bundled here for identification of the destination brand — the same non-free basis this repository already uses for football-association crests and passport covers. Not freely licensed; JNTO retains all trademark rights.",
     },
   ],
   SG: [
@@ -204,7 +208,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "np-nepal-tourism-board",
       countryCode: "NP",
-      name: "Nepal Tourism Board",
+      name: "Nepal",
       agency: "Nepal Tourism Board (NTB), operator of the welcomenepal.com brand",
       visitors: {
         count: 1147000,
@@ -212,16 +216,17 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (Nepal Tourism Board) — 96% of the pre-pandemic 2019 level, up 13.1% on 2023",
       },
-      logo: "/tourism-logos/np/ntb.svg",
+      logo: "/tourism-logos/np/nepal.svg",
       logoExplainer:
-        "The Nepal Tourism Board's own visual identity, used across its \"Welcome Nepal\" consumer-facing marketing, is the mark the Board itself publishes for public download on its trade portal.",
+        "The \"nepal\" destination wordmark the Nepal Tourism Board leads with: the country name in heavy lower-case golden-yellow letters, with a red disc sitting above the \"l\" like a sun cresting a ridge. Red and the crimson-and-blue palette are the colours of Nepal's flag, whose upper pennant carries the moon and lower pennant the sun. This is the brand mark alone, without the Board's \"official website of Nepal Tourism Board\" administrative strapline.",
       sources: [
         "https://en.wikipedia.org/wiki/File:Nepal_Tourism_Board_logo.svg",
         "https://en.wikipedia.org/wiki/Nepal_Tourism_Board",
         "https://risingnepaldaily.com/news/54769",
+        "https://ntb.gov.np/",
       ],
       licenceNote:
-        "Public domain — the logo \"only consists of typefaces, individual words, slogans, or simple geometric shapes\" per its file page, hosted locally on English Wikipedia (welcomenepal.com is the source); carries trademark restrictions for commercial use.",
+        "Copyrighted brand mark of the Nepal Tourism Board, taken from the Board's own site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   FI: [
@@ -270,7 +275,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "jm-jamaica-tourist-board",
       countryCode: "JM",
-      name: "Jamaica Tourist Board",
+      name: "Jamaica",
       agency: "Jamaica Tourist Board (JTB)",
       visitors: {
         count: 1329700,
@@ -278,19 +283,23 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Jamaica)",
       },
-      noImageReason:
-        "Jamaica's tourism campaigns have changed slogan several times (\"Once You Go, You Know\" from 2003, replaced in 2013) without a single enduring destination brand mark. Searched Wikimedia Commons and jtbonline.org — no freely-licensed Jamaica Tourist Board logo could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/jm/jamaica.png",
+      logoExplainer:
+        "The Jamaica destination wordmark used by the Jamaica Tourist Board: \"JAMAICA\" set in heavy black italic capitals with a registered-trademark mark, a plain typographic signature carried across the Board's \"Come Back to Jamaica\" and successor campaigns.",
       sources: [
         "https://www.jtbonline.org/jtb/",
         "https://www.travelweekly.com/Caribbean-Travel/Jamaica-ditches-longtime-slogan",
+        "https://www.visitjamaica.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Jamaica Tourist Board, taken from its official visitjamaica.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   GH: [
     {
       id: "gh-ghana-tourism-authority",
       countryCode: "GH",
-      name: "Ghana Tourism Authority",
+      name: "Visit Ghana",
       agency: "Ghana Tourism Authority, under the Ministry of Tourism, Culture and Creative Arts",
       visitors: {
         count: 897000,
@@ -298,13 +307,17 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Ghana)",
       },
-      noImageReason:
-        "Ghana's own bundled Wikimedia Commons file (\"Ministry of Tourism, Ghana (Ghana Tourist Board) logo.jpg\") is the Ministry's institutional seal, not a consumer destination brand — the same category error the Brazil/Embratur entry in this dataset was corrected away from. Ghana's consumer-facing promotion has used the \"#SeeGhana\" hashtag and the globally reported \"Year of Return, Ghana 2019\" diaspora-tourism campaign, but no freely-licensed logo distinct from the Ministry's institutional seal could be found for either on Wikimedia Commons or Wikipedia.",
+      logo: "/tourism-logos/gh/visit-ghana.webp",
+      logoExplainer:
+        "The \"visitGhana\" mark of the Ghana Tourism Authority: \"visit\" in plain black lower-case joined to \"Ghana\", whose letters are filled with woven kente strip-cloth patterning in red, gold, green and black — the colours of the national flag and of Ghana's best-known textile tradition. A small map-pin replaces the dot of the \"i\".",
       sources: [
         "https://commons.wikimedia.org/wiki/File:Ministry_of_Tourism,_Ghana_(Ghana_Tourist_Board)_logo.jpg",
         "https://en.wikipedia.org/wiki/Year_of_Return,_Ghana_2019",
         "https://en.wikipedia.org/wiki/Tourism_in_Ghana",
+        "https://visitghana.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Ghana Tourism Authority, taken from the official visitghana.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   NZ: [
@@ -342,12 +355,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Denmark)",
       },
-      noImageReason:
-        "The \"Danish Heart\" — a red-and-white heart mark developed in 1968 for the (then) Danish Tourist Board and used as VisitDenmark's own graphic symbol since 1978 — is a well-documented, distinctive consumer mark, but searching Wikimedia Commons (Category:Logos of Denmark, Category:SVG logos of Denmark, Category:Symbols of Denmark) and the English Wikipedia article for VisitDenmark found no freely-licensed copy of it.",
+      logo: "/tourism-logos/dk/visitdenmark.svg",
+      logoExplainer:
+        "VisitDenmark's mark: the single word \"VisitDenmark\" in a bold dark sans-serif, followed by a red heart bearing the white Nordic cross of the Dannebrog — the national flag folded into a heart shape.",
       sources: [
         "https://en.wikipedia.org/wiki/VisitDenmark",
         "https://www.toolbox.visitdenmark.com/logo",
+        "https://www.visitdenmark.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of VisitDenmark (Denmark's national tourism organisation), taken from its official visitdenmark.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   DO: [
@@ -363,9 +380,13 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Dominican Republic)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons, the English Wikipedia article for \"Tourism in the Dominican Republic\", and general web search — no freely-licensed \"Go Dominican Republic\" logo file could be found on Commons or Wikipedia.",
-      sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Dominican_Republic"],
+      logo: "/tourism-logos/do/dominican-republic.svg",
+      logoExplainer:
+        "The Dominican Republic's destination symbol as used on godominicanrepublic.com: a loose cluster of angular petal and leaf shapes in blue, red, green, orange and yellow arranged as a stylised flower opening upward — a brightly coloured abstract device carrying the tropical palette the Ministry of Tourism markets the country with.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Dominican_Republic",  "https://www.godominicanrepublic.com/",
+      ],
+      licenceNote:
+        "Copyrighted brand mark of the Dominican Republic Ministry of Tourism, taken from its official godominicanrepublic.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   EG: [
@@ -380,13 +401,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Egypt)",
       },
-      noImageReason:
-        "The Ministry of Tourism and Antiquities' own bundled Wikimedia Commons file (\"Ministry of Tourism and Antiquities logo.png\") is categorised on Commons as one of Egypt's government/coats-of-arms seals — an institutional mark, not the consumer destination brand — the same category error the Brazil/Embratur entry in this dataset was corrected away from. Egypt's actual consumer-facing tourism promotion runs under \"Experience Egypt\" (experienceegypt.eg), but no freely-licensed image for that specific campaign brand, distinct from the Ministry's institutional seal, could be found on Wikimedia Commons or Wikipedia.",
+      logo: "/tourism-logos/eg/experience-egypt.png",
+      logoExplainer:
+        "The \"Experience Egypt\" destination mark: the word \"Egypt\" drawn as a single flowing blue calligraphic line in which the letter \"y\" is formed into an ankh — the ancient Egyptian hieroglyph for life — tying the modern brand to the pharaonic heritage the campaign promotes.",
       sources: [
         "https://commons.wikimedia.org/wiki/File:Ministry_of_Tourism_and_Antiquities_logo.png",
         "https://en.wikipedia.org/wiki/Ministry_of_Tourism_and_Antiquities_(Egypt)",
         "https://www.experienceegypt.eg/en",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Egyptian Tourism Promotion Board, taken from the official experienceegypt.eg site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   CA: [
@@ -404,13 +428,17 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Canada)",
       },
-      noImageReason:
-        "Destination Canada's current consumer brand — a wordmark forming the word \"Canada\" into the shape of a heart, under the tagline \"For Glowing Hearts\", replacing the 2006–2019 \"Keep Exploring\" brand — is well documented, but searching Wikimedia Commons and the (stub) English Wikipedia article for Destination Canada found no freely-licensed copy of the logo; the agency's own brand-asset pages (brand.destinationcanada.com) are not a Commons/Wikipedia source.",
+      logo: "/tourism-logos/ca/destination-canada.svg",
+      logoExplainer:
+        "Destination Canada's brandmark as used on canada.travel: a single red maple leaf — the emblem of the national flag — enclosed by an open red circular stroke that sweeps round and ends in a small arrowhead, suggesting a journey or route returning on itself.",
       sources: [
         "https://en.wikipedia.org/wiki/Destination_Canada",
         "https://www.creativebloq.com/news/destination-canada-logo",
         "https://www.theglobeandmail.com/business/article-canada-revamps-its-tourism-brand-to-project-an-inclusive-image/",
+        "https://www.canada.travel/",
       ],
+      licenceNote:
+        "Copyrighted brandmark of Destination Canada (the federal Crown corporation for tourism marketing), taken from its official canada.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   CL: [
@@ -427,13 +455,17 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Chile)",
       },
-      noImageReason:
-        "SERNATUR's own bundled Wikimedia Commons file (\"Sernatur.png\") is described on its own file page as the agency's INSTITUTIONAL emblem, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. Chile's actual consumer-facing tourism campaigns run under taglines like \"Chile es tuyo\" (2013) and \"Chile, Nature That Transforms You\" (current), promoted separately through the Fundación Imagen de Chile's \"Marca Chile\" country-branding programme — but no freely-licensed image distinct from SERNATUR's institutional emblem could be found for either campaign on Wikimedia Commons or Wikipedia.",
+      logo: "/tourism-logos/cl/chile-travel.svg",
+      logoExplainer:
+        "The Chile destination mark on chile.travel: a solid red square carrying the word \"Chile\" in white, with a cluster of four white stars of differing sizes rising from the final letter, and the address \"chile.travel\" on a white bar beneath. The lone white star is the emblem of the national flag; the scattered cluster evokes the southern night sky Chile markets for its astronomy tourism.",
       sources: [
         "https://commons.wikimedia.org/wiki/File:Sernatur.png",
         "https://en.wikipedia.org/wiki/Tourism_in_Chile",
         "https://www.amchamchile.cl/en/2013/10/turismo-vender-el-chile-real",
+        "https://www.chile.travel/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Chile's national tourism promotion body, taken from the official chile.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   CO: [
@@ -517,13 +549,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Czechia)",
       },
-      noImageReason:
-        "CzechTourism's current \"VisitCzechia\" wordmark (relaunched from the 2013 \"#CzechTourism\" identity by the Prague studio Marvil after the country's short-form name changed to Czechia) is documented on the agency's own site, but searching Wikimedia Commons (Category:Tourism in the Czech Republic) and the English Wikipedia article for \"Tourism in the Czech Republic\" found no freely-licensed copy of the logo.",
+      logo: "/tourism-logos/cz/czechia.svg",
+      logoExplainer:
+        "The Czechia destination wordmark used by CzechTourism on visitczechia.com: the single word \"Czechia\" set in a light red-brown serif and underscored by a thick red rule, a plain typographic mark that leads on the short-form country name adopted for international use in 2016.",
       sources: [
         "https://logos.fandom.com/wiki/Czech_Republic_(tourism)",
         "https://www.visitczechia.com/en-us/about-us",
         "https://en.wikipedia.org/wiki/Tourism_in_the_Czech_Republic",
       ],
+      licenceNote:
+        "Copyrighted brand mark of CzechTourism (the Czech Tourist Authority), taken from the official visitczechia.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   BA: [
@@ -560,12 +595,15 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Barbados)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Barbados, which holds the Barbados National Trust's logo but not a tourism-board one), the visitbarbados.org site, and general web search — no freely-licensed \"Visit Barbados\" logo file could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/bb/barbados.svg",
+      logoExplainer:
+        "Barbados's destination wordmark: \"BARBADOS\" in heavy dark-teal capitals, the \"O\" replaced by the broken trident head taken from the national flag. The broken trident stands for the island's break with its colonial past and is the country's central national symbol.",
       sources: [
         "https://www.visitbarbados.org/",
         "https://commons.wikimedia.org/wiki/Category:Logos_of_Barbados",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Barbados Tourism Marketing Inc., taken from the official visitbarbados.org site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   BE: [
@@ -655,7 +693,8 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "bn-brunei-tourism",
       countryCode: "BN",
-      name: "Brunei Tourism",
+      name: "Brunei — \"Abode of Peace\"",
+      slogan: "Abode of Peace",
       agency:
         "Brunei Tourism, under the Ministry of Primary Resources and Tourism",
       visitors: {
@@ -664,12 +703,15 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Brunei)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Brunei), the English Wikipedia article for \"Tourism in Brunei\", and the bruneitourism.com site — no freely-licensed Brunei Tourism logo file could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/bn/brunei-abode-of-peace.webp",
+      logoExplainer:
+        "Brunei's destination mark: the word \"BRUNEI\" in widely spaced capitals, each letter a different colour — red, green, blue, yellow and black — above the line \"ABODE OF PEACE\". \"Abode of Peace\" is the translation of Darussalam in the country's full name, Negara Brunei Darussalam.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Brunei",
         "https://www.bruneitourism.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Brunei Tourism, taken from the official bruneitourism.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   BT: [
@@ -733,13 +775,17 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International short-term visitor arrivals, calendar year (Australian Bureau of Statistics, Overseas Arrivals and Departures)",
       },
-      noImageReason:
-        "Tourism Australia maintains separate corporate, campaign and country logo lockups of its kangaroo brandmark (per its own 2012 Interbrand redesign brief) — the file found on Commons/Wikipedia is the CORPORATE lockup, reading \"TOURISM AUSTRALIA\" (the statutory authority's own name), not the consumer-facing lockup shown in \"Come and Say G'day\" and other campaign advertising. No freely-licensed copy of the campaign or bare-country lockup could be found, so the corporate one was not used as a substitute.",
+      logo: "/tourism-logos/au/australia-kangaroo.svg",
+      logoExplainer:
+        "The country lockup of Tourism Australia's kangaroo brandmark as it appears on australia.com: the word \"Australia\" in warm ochre beside a stylised kangaroo mid-leap, formed from a golden sun disc and sweeping green, blue and ochre strokes. The palette is drawn from the Australian landscape — sun, bush and sea — and the kangaroo has been the country's tourism signature since the mark's 2012 Interbrand redesign. This is the consumer lockup, not the corporate \"TOURISM AUSTRALIA\" version.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_Australia",
         "https://www.designweek.co.uk/issues/may-2012/interbrand-creates-new-identity-for-tourism-australia/",
         "https://www.tourism.australia.com/en/news-and-events/news/global-campaign-to-invite-the-world-to-come-and-say-gday-media-release.html",
+        "https://www.australia.com/",
       ],
+      licenceNote:
+        "Copyrighted brandmark of Tourism Australia (the Australian Government's statutory tourism-marketing authority), taken from its own consumer site australia.com and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers. Tourism Australia retains all trademark rights.",
     },
   ],
   MY: [
@@ -867,26 +913,29 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "ad-andorra-turisme",
       countryCode: "AD",
-      name: "Andorra Turisme",
+      name: "Visit Andorra",
       agency:
         "Andorra Turisme SAU, the public tourism-promotion company established 21 September 2007, operator of the Visit Andorra brand",
       launched: 2007,
       visitorsNote:
         "No dated, authoritative Andorra-specific arrivals figure distinct from cross-border day-trip traffic could be sourced within this search; Andorra's own tourism statistics largely track overnight stays and skier-days rather than a single comparable \"international arrivals\" total.",
-      noImageReason:
-        "Searched Wikimedia Commons, the English Wikipedia articles for \"Tourism in Andorra\" and Andorra Turisme, and the official visitandorra.com site — no freely-licensed Visit Andorra / Andorra Turisme logo file could be found on Commons or Wikipedia; the brand's own site does not offer a citable public-domain or Creative-Commons asset.",
+      logo: "/tourism-logos/ad/visit-andorra.webp",
+      logoExplainer:
+        "Andorra's destination mark: the word \"Andorra\" in a black serif preceded by a triangular arrow-like device split into the yellow, blue and red of the national flag, its point facing right as a mark of forward movement.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Andorra",
         "https://visitandorra.com/en/about-us/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Andorra Turisme, taken from the official visitandorra.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   AL: [
     {
       id: "al-go-your-own-way",
       countryCode: "AL",
-      name: "Albania — \"Go Your Own Way\"",
-      slogan: "Go Your Own Way",
+      name: "Albania — \"All Senses\"",
+      slogan: "All Senses",
       agency:
         "National Tourism Agency of Albania (Agjencia Kombëtare e Turizmit), under the Ministry of Tourism and Environment",
       launched: 2014,
@@ -896,12 +945,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Albania; more recent Albanian government figures report substantially higher post-pandemic totals but were not found in a form citable to a single authoritative dated release)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons, the English Wikipedia articles for \"Tourism in Albania\" and \"Go Your Own Way (Albania)\", and general web search for the campaign's own logo mark — the \"Go Your Own Way\" slogan (developed by StrawberryFrog and APCO Worldwide, launched 2014) is well documented, but no freely-licensed logo/wordmark image distinct from the slogan text could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/al/albania-all-senses.svg",
+      logoExplainer:
+        "The \"Albania — All Senses\" brand of the National Tourism Agency: the country name in tall capitals above the words \"ALL SENSES\", both filled with a gradient running from sea-blue through turquoise to green, the letter shapes cut with angular peaks that read as mountains against the coast.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Albania",
         "https://www.tiranatimes.com/albania-go-your-own-way-to-lead-new-global-ad-campaign_116662/",
+        "https://albania.al/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Agjencia Kombëtare e Turizmit (Albanian National Tourism Agency), taken from the official albania.al site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   AR: [
@@ -917,19 +970,22 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International visitors (tourists + day-trippers), calendar year (INDEC, Instituto Nacional de Estadística y Censos)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons, the Spanish Wikipedia article for INPROTUR (whose infobox carries no logo image), and general web search for the \"Visit Argentina\" wordmark — no freely-licensed logo file for INPROTUR or its Visit Argentina brand could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/ar/visit-argentina.svg",
+      logoExplainer:
+        "The \"Visit Argentina\" lockup used on argentina.travel: a navy roundel built from interlocking petal shapes radiating from a small centre — a sun rosette echoing the Sol de Mayo of the national flag — set beside the words \"Visit Argentina\" in the same navy.",
       sources: [
         "https://es.wikipedia.org/wiki/Instituto_Nacional_de_Promoci%C3%B3n_Tur%C3%ADstica",
         "https://www.argentina.travel/en/institutional",
       ],
+      licenceNote:
+        "Copyrighted brand mark of INPROTUR / Visit Argentina, taken from the official argentina.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   AT: [
     {
       id: "at-austrian-national-tourist-office",
       countryCode: "AT",
-      name: "Austrian National Tourist Office",
+      name: "Austria",
       agency:
         "Österreich Werbung (Austrian National Tourist Office / ANTO), Austria's national tourism-marketing organisation",
       visitors: {
@@ -938,20 +994,24 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "Arrivals at Austrian accommodation establishments, calendar year (Statistik Austria) — Austria's own published measure of visitor arrivals; not broken out here into a separate international-only figure",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (including Category:Tourism in Austria), the Wikidata item for the Austrian National Tourist Office, and general web search — no freely-licensed ANTO / Österreich Werbung logo file could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/at/austria.svg",
+      logoExplainer:
+        "Österreich Werbung's destination mark as shown on austria.info: the word \"Austria\" set in a heavy black serif, with the dot of the \"i\" replaced by two short red bars separated by white — the red-white-red of the national flag, tilted as if brushed on.",
       sources: [
         "https://www.wikidata.org/wiki/Q298700",
         "https://b2b.austria.info/us/about-us-1/the-austrian-national-tourist-office/",
         "https://www.theinternational.at/austria-is-the-worlds-13th-most-visited-country-in-2024/",
+        "https://www.austria.info/en",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Österreich Werbung (the Austrian National Tourist Office), taken from its official austria.info site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   AZ: [
     {
       id: "az-land-of-fire",
       countryCode: "AZ",
-      name: "Azerbaijan — \"Land of Fire\"",
+      name: "Azerbaijan",
       slogan: "Land of Fire",
       agency:
         "Azerbaijan Tourism Board, under the Ministry of Culture and Tourism",
@@ -961,12 +1021,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Azerbaijan)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons, the English Wikipedia articles for \"Tourism in Azerbaijan\" and \"Land of Fire\", and general web search — the \"Land of Fire\" campaign mark (designed by Parwin Shukurzade) is documented but no freely-licensed copy of the logo could be found on Commons or Wikipedia; the copies found on commercial logo-aggregator sites carry no verifiable licence.",
+      logo: "/tourism-logos/az/azerbaijan.svg",
+      logoExplainer:
+        "The Azerbaijan destination mark: the country name in lower-case purple type beside a device of two overlapping rounded shapes in crimson and purple, the pair reading as a stylised pomegranate cut open — the fruit Azerbaijan uses as its best-known national emblem and the subject of its own annual festival.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Azerbaijan",
         "https://en.wikipedia.org/wiki/Land_of_Fire",
+        "https://azerbaijan.travel/en",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Azerbaijan Tourism Board, taken from the official azerbaijan.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   BG: [
@@ -1206,12 +1270,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Greece)",
       },
-      noImageReason:
-        "Greece's tourism slogan has changed repeatedly (\"Live your Myth in Greece\" 2005, \"Greece: Always in Season\" 2020, \"All You Want Is Greece\" 2021) without a single enduring consumer wordmark distinct from the GNTO/EOT institutional emblem; searched Wikimedia Commons (Category:Ministry of Tourism (Greece), Category:Tourism in Greece) and the English Wikipedia article for the Greek National Tourism Organisation — no freely-licensed consumer campaign logo could be found for any of the recent slogans.",
+      logo: "/tourism-logos/gr/visit-greece.webp",
+      logoExplainer:
+        "The Visit Greece mark as shown on visitgreece.gr: the word \"GREECE\" in white serif capitals, outlined by a thin white keyline, on a solid cyan field — the blue of the Greek flag and of the Aegean the brand is built around.",
       sources: [
         "https://en.wikipedia.org/wiki/Greek_National_Tourism_Organisation",
         "https://commons.wikimedia.org/wiki/Category:Ministry_of_Tourism_(Greece)",
+        "https://www.visitgreece.gr/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Greek National Tourism Organisation (EOT), taken from its official visitgreece.gr site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   VN: [
@@ -1227,12 +1295,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Vietnam)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Vietnam, Category:Logos of Vietnam) and the English Wikipedia article for the Vietnam National Authority of Tourism — no freely-licensed copy of the \"Vietnam: Timeless Charm\" campaign mark could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/vn/vietnam-timeless-charm.png",
+      logoExplainer:
+        "The \"Vietnam — Timeless Charm\" national tourism brand: the word \"Vietnam\" in a blue script whose initial V rises into a five-petalled lotus rendered in graduated blue, green, yellow, pink and purple, with the tagline \"Timeless Charm\" beneath. The lotus is Vietnam's national flower and its five petals stand for the five elements and the five brand values the campaign names.",
       sources: [
         "https://en.wikipedia.org/wiki/Vietnam_National_Authority_of_Tourism",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Vietnam",
+        "https://vietnam.travel/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Vietnam National Authority of Tourism, taken from the official vietnam.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   JO: [
@@ -1307,13 +1379,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Morocco)",
       },
-      noImageReason:
-        "The only tourism-related file found on Wikimedia Commons (\"Tourism in Morocco.svg\") is documented on its own file-history page as a user-recreated design based only on the colours of visitmorocco.com, not a verbatim upload of the ONMT's actual \"Visit Morocco\" wordmark — bundling that recreation would violate this repo's ban on invented/approximated logo content, so the entry is left without an image. No other freely-licensed copy of the genuine ONMT brand mark could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/ma/visit-morocco.png",
+      logoExplainer:
+        "The Morocco destination mark used by the Office National Marocain du Tourisme: a deep-red keyhole arch built from concentric arched lines — the horseshoe arch of Moroccan and Andalusian architecture — above the word \"MOROCCO\" in matching red capitals.",
       sources: [
         "https://en.wikipedia.org/wiki/Moroccan_National_Tourist_Office",
         "https://commons.wikimedia.org/wiki/File:Tourism_in_Morocco.svg",
         "https://www.visitmorocco.com/en",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Office National Marocain du Tourisme, taken from its official visitmorocco.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   EC: [
@@ -1330,12 +1405,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Ecuador)",
       },
-      noImageReason:
-        "Ecuador's tourism slogan has changed repeatedly (\"Ecuador Ama la Vida\" 2011, \"All You Need Is Ecuador\" 2014) without a single enduring consumer wordmark surviving on Commons; searched Wikimedia Commons (Category:Logos of Ecuador, Category:Tourism in Ecuador) and the English Wikipedia article for \"Tourism in Ecuador\" — no freely-licensed logo for either campaign could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/ec/ecuador.png",
+      logoExplainer:
+        "Ecuador's destination mark: the word \"ECUADOR\" in yellow capitals preceded by a device of three stacked horizontal bars beside a small radiating sun — the bars reading as the yellow, blue and red of the national flag and the sun as the equator the country is named for.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Ecuador",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Ecuador",
+        "https://ecuador.travel/en/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Ecuador's Ministerio de Turismo, taken from the official ecuador.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   PA: [
@@ -1435,12 +1514,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Qatar)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Qatar) and the English Wikipedia article for the Qatar Tourism Authority — no freely-licensed \"Visit Qatar\" logo could be found on Commons or Wikipedia; Qatar Tourism's own brand-asset pages (qatartourism.com) are not a Commons/Wikipedia source.",
+      logo: "/tourism-logos/qa/visit-qatar.svg",
+      logoExplainer:
+        "The Visit Qatar mark: the words \"visit\" and \"QATAR\" stacked in a dark teal, with the dot of the \"i\" replaced by a small maroon serrated shape echoing the nine-point serrated band of Qatar's maroon-and-white national flag.",
       sources: [
         "https://en.wikipedia.org/wiki/Qatar_Tourism_Authority",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Qatar",
+        "https://visitqatar.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Visit Qatar (Qatar Tourism), taken from the official visitqatar.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   PH: [
@@ -1457,12 +1540,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Philippines)",
       },
-      noImageReason:
-        "The Philippines' tourism brand changed in June 2023 from the long-running \"It's More Fun in the Philippines\" (2012–2023, itself refreshed with a woven-textile-inspired mark in 2019) to \"Love the Philippines\"; searched Wikimedia Commons and the English Wikipedia articles for both campaigns — no freely-licensed logo for either could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/ph/love-the-philippines.png",
+      logoExplainer:
+        "The \"Love the Philippines\" brand launched by the Department of Tourism in 2023, replacing \"It's More Fun in the Philippines\": a shield-shaped badge in which the script word \"Love\" sits above \"Philippines\" against a radiating golden sunburst, with three gold stars along the lower edge. The eight-rayed sun and three stars are the emblems of the national flag, standing for the first provinces to revolt and for Luzon, the Visayas and Mindanao.",
       sources: [
         "https://en.wikipedia.org/wiki/It%27s_More_Fun_in_the_Philippines!",
         "https://en.wikipedia.org/wiki/Love_the_Philippines",
+        "https://philippines.travel/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Philippine Department of Tourism, taken from its official philippines.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   LK: [
@@ -1517,12 +1604,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Sweden)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Sweden) and the English Wikipedia article for \"Tourism in Sweden\" — no freely-licensed \"Visit Sweden\" logo could be found on Commons or Wikipedia; VisitSweden's own brand pages are not a Commons/Wikipedia source.",
+      logo: "/tourism-logos/se/visit-sweden.svg",
+      logoExplainer:
+        "Visit Sweden's mark: the words \"Visit Sweden\" stacked in a blue serif, beside a yellow Nordic cross rendered in four loose brush strokes rather than as a solid flag — the Swedish flag redrawn by hand.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Sweden",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Sweden",
+        "https://visitsweden.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Visit Sweden AB (the state-owned national tourism marketing company), taken from its official visitsweden.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   UY: [
@@ -1575,7 +1666,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "zm-ministry-of-tourism",
       countryCode: "ZM",
-      name: "Zambia Ministry of Tourism",
+      name: "Zambia",
       agency: "Ministry of Tourism, Zambia",
       visitors: {
         count: 502000,
@@ -1583,12 +1674,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Zambia)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Symbols of Zambia) and the English Wikipedia article for the Ministry of Tourism (Zambia) — no freely-licensed Zambian tourism-board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search (\"Ministry of Tourism and Antiquities logo.png\") is Egypt's ministry logo, wrongly surfaced by a generic category match — not Zambia's own.",
+      logo: "/tourism-logos/zm/zambia.png",
+      logoExplainer:
+        "Zambia's destination mark: the word \"ZAMBIA\" in green capitals, preceded by three vertical blue brush strokes reading as falling water and followed by an orange sun — Victoria Falls and the African sun, the two images Zambian tourism marketing leads with. The eagle and the orange, red, black and green of the national flag inform the palette.",
       sources: [
         "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Zambia)",
         "https://en.wikipedia.org/wiki/Tourism_in_Zambia",
+        "https://www.zambiatourism.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark used by the Zambia Tourism Agency, taken from its official zambiatourism.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   NA: [
@@ -1623,12 +1718,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Rwanda)",
       },
-      noImageReason:
-        "\"Visit Rwanda\" is a globally visible brand (an Arsenal FC sleeve sponsorship since 2018), but searching Wikimedia Commons found the only prior upload (\"Visit Rwanda.jpg\") has since been deleted, and the English Wikipedia article for the Rwanda Development Board carries no logo file either — no freely-licensed copy of the mark could be found.",
+      logo: "/tourism-logos/rw/visit-rwanda.png",
+      logoExplainer:
+        "The \"Visit Rwanda\" wordmark of the Rwanda Development Board: the two words stacked in heavy black capitals, the letter A of RWANDA drawn as an unclosed peak. The mark is best known internationally from the Visit Rwanda sleeve sponsorships the Board took on several European football clubs.",
       sources: [
         "https://en.wikipedia.org/wiki/Rwanda_Development_Board",
         "https://visitrwanda.com/",
+        "https://www.visitrwanda.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Rwanda Development Board, taken from its official visitrwanda.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   TZ: [
@@ -1783,12 +1882,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Slovenia)",
       },
-      noImageReason:
-        "\"I Feel Slovenia\" (its wordmark spelling out \"Love\" inside \"Slovenia\") is Slovenia's long-running national brand, but Wikimedia Commons' own copyright-rules page for Slovenia documents that this specific logo is treated as a COPYRIGHTED work there (unlike the simple-text marks this repo otherwise bundles as public domain) — no freely-licensed copy is hosted on Commons or Wikipedia.",
+      logo: "/tourism-logos/si/i-feel-slovenia.png",
+      logoExplainer:
+        "The \"I feel Slovenia\" national brand, adopted in 2007 and used for tourism and country promotion alike: the phrase set in white and grey-green capitals on a solid green slanted panel. The wordplay is the point — the letters of \"Slovenia\" contain the word LOVE, which the mark highlights, and the green field stands for the forest cover over more than half the country.",
       sources: [
         "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/Slovenia",
         "https://en.wikipedia.org/wiki/Tourism_in_Slovenia",
+        "https://www.slovenia.info/en",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Slovenian Tourist Board, taken from its official slovenia.info site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   LV: [
@@ -1803,12 +1906,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Latvia)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Latvia, Category:Tourism in Latvia) and the English Wikipedia article for \"Tourism in Latvia\" — no freely-licensed Latvian Tourism Development Agency consumer-brand logo could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/lv/latvia-travel.svg",
+      logoExplainer:
+        "The Latvia Travel mark: the words \"Latvia\" and \"travel\" stacked in a black serif, with two short horizontal bars in Latvian carmine-red and white to the right — the carmine-white-carmine of the national flag reduced to two strokes.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Latvia",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Latvia",
+        "https://www.latvia.travel/en",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Investment and Development Agency of Latvia (LIAA) tourism department, taken from the official latvia.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   LT: [
@@ -1837,7 +1944,8 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "md-ministry-of-tourism",
       countryCode: "MD",
-      name: "Moldova Tourism",
+      name: "Moldova — \"A Place to Find Yourself\"",
+      slogan: "A Place to Find Yourself",
       agency: "National Inbound Tourism Association of Moldova / tourism.gov.md",
       visitors: {
         count: 29000,
@@ -1845,16 +1953,21 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Moldova)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Moldova\" — no freely-licensed Moldovan tourism-board consumer-brand logo could be found; Commons results returned only unrelated Moldovan logos (TVR Moldova, a political party, the National Museum of Art).",
-      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Moldova"],
+      logo: "/tourism-logos/md/moldova-tree-of-life.png",
+      logoExplainer:
+        "Moldova's \"a place to find yourself\" brand: the word \"MOLDOVA\" in heavy black capitals beneath a stylised tree built from embroidered-looking motifs — flowers, leaves and geometric blocks in red, green, blue and yellow — drawn in the manner of Moldovan folk cross-stitch. The device is known as the tree of life, a recurring motif in Moldovan traditional embroidery.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Moldova",  "https://moldova.travel/en/",
+      ],
+      licenceNote:
+        "Copyrighted brand mark of the Moldova Investment Agency's tourism directorate, taken from the official moldova.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   RS: [
     {
       id: "rs-serbia-tourism-organisation",
       countryCode: "RS",
-      name: "Tourism Organisation of Serbia",
+      name: "Experience Serbia",
+      slogan: "Experience! Serbia",
       agency: "Tourism Organisation of Serbia (TOS)",
       visitors: {
         count: 446000,
@@ -1862,12 +1975,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Serbia)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Serbia) and the English Wikipedia article for \"Tourism in Serbia\" — no freely-licensed Tourism Organisation of Serbia consumer-brand logo could be found; Commons results returned only unrelated Serbian logos (Wiki Loves Monuments, the government logo, the coat of arms).",
+      logo: "/tourism-logos/rs/experience-serbia.png",
+      logoExplainer:
+        "The \"Experience! Serbia\" brand of the National Tourism Organisation of Serbia: the word \"Experience!\" in a red handwritten script above \"SERBIA\" in heavy red capitals, the exclamation mark carried into the logo itself.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Serbia",
         "https://commons.wikimedia.org/wiki/Category:Logos_of_Serbia",
+        "https://www.serbia.travel/en",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the National Tourism Organisation of Serbia, taken from its official serbia.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   ME: [
@@ -1996,12 +2113,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Laos)",
       },
-      noImageReason:
-        "\"Simply Beautiful\", launched for Visit Laos Year 2012, is a well-documented slogan, but searching Wikimedia Commons (Category:Tourism in Laos) and the English Wikipedia article for \"Tourism in Laos\" found no freely-licensed copy of the logo.",
+      logo: "/tourism-logos/la/laos-simply-beautiful.webp",
+      logoExplainer:
+        "The \"Laos — Simply Beautiful\" national brand: a deep-blue panel carrying a yellow dok champa (plumeria) flower above the word \"LAOS\" in white capitals and the italic tagline \"Simply Beautiful\". The dok champa is the national flower of Laos.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Laos",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Laos",
+        "https://www.tourismlaos.org/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Lao National Tourism Administration, taken from its official tourismlaos.org site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   HN: [
@@ -2048,7 +2169,8 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "ni-intur",
       countryCode: "NI",
-      name: "Nicaragua — Instituto Nicaragüense de Turismo",
+      name: "Nicaragua — \"Única... Original!\"",
+      slogan: "Única... Original!",
       agency: "Instituto Nicaragüense de Turismo (INTUR)",
       visitors: {
         count: 474000,
@@ -2056,19 +2178,23 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Nicaragua)",
       },
-      noImageReason:
-        "The only bundled Wikimedia Commons file (\"Logo Intur Nicaragua.png\") is described on its own file page as an institutional identifier for the tourism institute itself, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. No separate consumer tourism-brand logo could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/ni/nicaragua-unica-original.png",
+      logoExplainer:
+        "Nicaragua's destination mark: the country name in magenta type above the hand-written tagline \"Única... Original!\" in turquoise, with a small multicoloured flower device above the initial letter.",
       sources: [
         "https://commons.wikimedia.org/wiki/File:Logo_Intur_Nicaragua.png",
         "https://en.wikipedia.org/wiki/Tourism_in_Nicaragua",
+        "https://www.visitanicaragua.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Instituto Nicaragüense de Turismo (INTUR), taken from its official visitanicaragua.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   BS: [
     {
       id: "bs-bahamas-ministry-of-tourism",
       countryCode: "BS",
-      name: "Bahamas Ministry of Tourism",
+      name: "The Islands of the Bahamas",
       agency: "Ministry of Tourism, Investments & Aviation, The Bahamas",
       visitors: {
         count: 1794500,
@@ -2076,19 +2202,23 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Bahamas)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in the Bahamas) and the English Wikipedia article for \"Tourism in the Bahamas\" — no freely-licensed Bahamas Ministry of Tourism consumer-brand logo could be found; the only Commons file returned by search (\"Bahamas Logo.svg\") is confirmed unrelated — a German magazine's logo, not the country's tourism board.",
+      logo: "/tourism-logos/bs/islands-of-the-bahamas.svg",
+      logoExplainer:
+        "The destination mark of the Bahamas Ministry of Tourism: the words \"THE ISLANDS OF THE\" in small grey capitals set above \"bahamas\" in large rounded lower-case grey type. The brand deliberately names the archipelago rather than a single island, reflecting a marketing identity built around the country's many separate island destinations.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_the_Bahamas",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_the_Bahamas",
+        "https://www.bahamas.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Bahamas Ministry of Tourism, Investments & Aviation, taken from the official bahamas.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   TT: [
     {
       id: "tt-tourism-trinidad-and-tobago",
       countryCode: "TT",
-      name: "Tourism Trinidad and Tobago",
+      name: "Visit Trinidad",
       agency: "Tourism Trinidad Limited",
       visitors: {
         count: 141000,
@@ -2096,9 +2226,13 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Trinidad and Tobago)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Trinidad and Tobago) and general web search — no freely-licensed Tourism Trinidad and Tobago consumer-brand logo could be found on Commons or Wikipedia.",
-      sources: ["https://commons.wikimedia.org/wiki/Category:Tourism_in_Trinidad_and_Tobago"],
+      logo: "/tourism-logos/tt/visit-trinidad.png",
+      logoExplainer:
+        "The Visit Trinidad wordmark of Trinidad and Tobago's destination-management company: \"VisitTrinidad.com\" set in heavy red italic type, a plain typographic mark naming the campaign's web address.",
+      sources: ["https://commons.wikimedia.org/wiki/Category:Tourism_in_Trinidad_and_Tobago",  "https://www.visittrinidad.com/",
+      ],
+      licenceNote:
+        "Copyrighted brand mark of Tourism Trinidad Limited, taken from its official visittrinidad.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   BZ: [
@@ -2122,7 +2256,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "pg-papua-new-guinea-tourism-promotion-authority",
       countryCode: "PG",
-      name: "Papua New Guinea Tourism Promotion Authority",
+      name: "Papua New Guinea",
       agency: "Papua New Guinea Tourism Promotion Authority (PNGTPA)",
       visitors: {
         count: 39000,
@@ -2130,16 +2264,20 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Papua New Guinea)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Symbols of Papua New Guinea) and the English Wikipedia article for \"Tourism in Papua New Guinea\" — no freely-licensed PNGTPA consumer-brand logo could be found; Commons results returned only the country's national emblem, flags and coats of arms.",
-      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Papua_New_Guinea"],
+      logo: "/tourism-logos/pg/papua-new-guinea.webp",
+      logoExplainer:
+        "The Papua New Guinea destination mark: the country's name in a fine brown script beside a bird-of-paradise rendered in soft orange and yellow plume strokes radiating from a small body. The raggiana bird-of-paradise is Papua New Guinea's national bird and appears on the national flag.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Papua_New_Guinea",  "https://www.papuanewguinea.travel/",
+      ],
+      licenceNote:
+        "Copyrighted brand mark of the Papua New Guinea Tourism Promotion Authority, taken from its official papuanewguinea.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   FJ: [
     {
       id: "fj-tourism-fiji",
       countryCode: "FJ",
-      name: "Tourism Fiji",
+      name: "Fiji",
       agency: "Tourism Fiji, established under the Tourism Fiji Act 2004",
       visitors: {
         count: 168000,
@@ -2147,12 +2285,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Fiji)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Fiji, Category:Logos of Fiji) and the English Wikipedia article for \"Tourism Fiji\" — no freely-licensed Tourism Fiji consumer-brand logo could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/fj/fiji.png",
+      logoExplainer:
+        "Tourism Fiji's wordmark: the four letters of \"FIJI\" in heavy capitals, each letter filled with black-and-white masi (tapa cloth) patterning — the geometric bark-cloth designs that are Fiji's signature traditional art form, so the country's name is literally drawn in its own craft.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_Fiji",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Fiji",
+        "https://www.fiji.travel/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Tourism Fiji, taken from its official fiji.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   KZ: [
@@ -2199,7 +2341,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "am-armenia-tourism-committee",
       countryCode: "AM",
-      name: "Armenia Tourism Committee",
+      name: "Armenia",
       agency: "Tourism Committee, Ministry of Economy, Armenia",
       visitors: {
         count: 375000,
@@ -2207,12 +2349,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Armenia)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Armenia, Category:Logos of Armenia) and the English Wikipedia article for \"Tourism in Armenia\" — no freely-licensed Armenian tourism-board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search is a single regional ecotourism trail's logo, not a national mark.",
+      logo: "/tourism-logos/am/armenia.svg",
+      logoExplainer:
+        "Armenia's destination wordmark on armenia.travel: the name spelled in orange-gold mixed-case letters whose strokes are drawn with the angular, wedge-cut terminals of Armenian manuscript lettering, tying the Latin spelling to the Armenian alphabet the country treats as a national emblem.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Armenia",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Armenia",
+        "https://armenia.travel/en",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Armenia Tourism Committee, taken from the official armenia.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   ET: [
@@ -2238,7 +2384,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "dz-office-national-du-tourisme",
       countryCode: "DZ",
-      name: "Algeria — Office National du Tourisme",
+      name: "Visit Algeria",
       agency: "Office National du Tourisme (ONT), Algeria",
       visitors: {
         count: 591000,
@@ -2246,19 +2392,24 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Algeria)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Algeria, Category:SVG logos of Algeria) and the English Wikipedia article for \"Tourism in Algeria\" — no freely-licensed Algerian tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/dz/visit-algeria.png",
+      logoExplainer:
+        "The \"Visit Algeria\" promotional mark: the words \"visit Algeria\" in a red script, with a red star above the capital A, set against a fan of fine curving lines in green, blue, orange and red that sweep upward like dunes or a wind-blown trace. The star and crescent are the emblems of the national flag. This is the promotional brand rather than the Ministry of Tourism's Arabic-script institutional seal.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Algeria",
         "https://commons.wikimedia.org/wiki/Category:Logos_of_Algeria",
+        "https://www.mta.gov.dz/",
       ],
+      licenceNote:
+        "Copyrighted promotional brand mark used by Algeria's Ministère du Tourisme et de l'Artisanat, taken from the ministry's official site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   TN: [
     {
       id: "tn-office-national-du-tourisme-tunisien",
       countryCode: "TN",
-      name: "Office National du Tourisme Tunisien",
+      name: "Tunisia — \"Inspiring\"",
+      slogan: "Inspiring",
       agency: "Office National du Tourisme Tunisien (ONTT)",
       visitors: {
         count: 2012000,
@@ -2266,12 +2417,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Tunisia)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Tunisia, Category:Logos of organizations of Tunisia) and the English Wikipedia article for \"Tourism in Tunisia\" — no freely-licensed ONTT consumer-brand logo could be found; Commons results returned only unrelated Tunisian logos (the National Heritage Institute, Wikimedia Tunisia).",
+      logo: "/tourism-logos/tn/tunisia-inspiring.png",
+      logoExplainer:
+        "The \"Tunisia — Inspiring\" destination brand: the country name written as a single flowing blue script line, its opening stroke sweeping over the whole word, with the word \"INSPIRING\" in small blue capitals to the right.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Tunisia",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Tunisia",
+        "https://www.discovertunisia.com/en",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Office National du Tourisme Tunisien, taken from its official discovertunisia.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   SR: [
@@ -2372,7 +2527,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "ye-ministry-of-tourism",
       countryCode: "YE",
-      name: "Yemen Ministry of Tourism",
+      name: "Yemen Tourism",
       agency: "Ministry of Tourism, Yemen",
       visitors: {
         count: 398000,
@@ -2380,12 +2535,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Yemen)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Yemen) and the English Wikipedia article for the Ministry of Tourism (Yemen) — no freely-licensed Yemeni tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+      logo: "/tourism-logos/ye/yemen-tourism.png",
+      logoExplainer:
+        "The Yemen Tourism Promotion Board's mark: the word \"YEMEN\" in tall gold capitals whose letterforms are drawn as the stepped tower-houses of Yemeni mudbrick architecture, with \"TOURISM\" set vertically beside it and the Board's name in Arabic and English beneath.",
       sources: [
         "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Yemen)",
         "https://en.wikipedia.org/wiki/Tourism_in_Yemen",
+        "https://www.yementourism.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Yemen Tourism Promotion Board, taken from its official yementourism.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   LB: [
@@ -2530,16 +2689,20 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Maldives)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in the Maldives\" — no freely-licensed \"Visit Maldives\" (MMPRC) logo could be found; the only tourism-labelled Commons file returned by search (\"Addu Tourism Brand Logo.png\") is a sub-national atoll-council brand for Addu City, not the national Visit Maldives mark.",
-      sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Maldives"],
+      logo: "/tourism-logos/mv/maldives-sunny-side.png",
+      logoExplainer:
+        "The \"Maldives — the sunny side of life\" brand: the word \"Maldives\" in blue type above the tagline, beside a device of a coconut palm and curving wave strokes in green, orange and blue with a small sun, condensing the island-and-lagoon imagery the brand is built on.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Maldives",  "https://visitmaldives.com/en",
+      ],
+      licenceNote:
+        "Copyrighted brand mark of Visit Maldives (the Maldives Marketing & Public Relations Corporation), taken from the official visitmaldives.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   TL: [
     {
       id: "tl-ministry-of-tourism-commerce-and-industry",
       countryCode: "TL",
-      name: "Timor-Leste Ministry of Tourism, Commerce and Industry",
+      name: "Timor-Leste",
       agency: "Ministry of Tourism, Commerce and Industry (MTCI), Timor-Leste",
       visitors: {
         count: 74800,
@@ -2547,16 +2710,20 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Timor-Leste)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Ministry of Tourism (East Timor)) and the English Wikipedia article for \"Tourism in East Timor\" — no freely-licensed Timorese tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
-      sources: ["https://commons.wikimedia.org/wiki/Category:Ministry_of_Tourism_(East_Timor)"],
+      logo: "/tourism-logos/tl/timor-leste.svg",
+      logoExplainer:
+        "Timor-Leste's destination mark: the words \"TIMOR-LESTE\" in dark type beside a magenta device shaped like a traditional uma lulik (sacred house) with its steep pitched roof and raised posts, under a yellow sun. The uma lulik is the central emblem of Timorese custom and identity.",
+      sources: ["https://commons.wikimedia.org/wiki/Category:Ministry_of_Tourism_(East_Timor)",  "https://www.timorleste.tl/",
+      ],
+      licenceNote:
+        "Copyrighted brand mark of Timor-Leste's Ministry of Tourism and Environment, taken from its official site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   SB: [
     {
       id: "sb-visit-solomons",
       countryCode: "SB",
-      name: "Visit Solomons",
+      name: "Tourism Solomons",
       agency: "Solomon Islands Visitors Bureau",
       visitors: {
         count: 4400,
@@ -2564,16 +2731,21 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Solomon Islands)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Symbols of the Solomon Islands, Category:National symbols of the Solomon Islands) and general web search — no freely-licensed Solomon Islands Visitors Bureau consumer-brand logo could be found on Commons or Wikipedia.",
-      sources: ["https://en.wikipedia.org/wiki/Solomon_Islands"],
+      logo: "/tourism-logos/sb/tourism-solomons.png",
+      logoExplainer:
+        "Tourism Solomons' mark: a line drawing of a traditional outrigger canoe with a paddler at the bow, its hull carrying an ochre panel of geometric shell-inlay patterning, with the words \"Tourism Solomons\" written along the hull. The canoe and shell-inlay work are central to Solomon Islands material culture.",
+      sources: ["https://en.wikipedia.org/wiki/Solomon_Islands",  "https://www.visitsolomons.com.sb/",
+      ],
+      licenceNote:
+        "Copyrighted brand mark of Tourism Solomons (the Solomon Islands Visitors Bureau), taken from its official visitsolomons.com.sb site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   VU: [
     {
       id: "vu-vanuatu-tourism-office",
       countryCode: "VU",
-      name: "Vanuatu Tourism Office",
+      name: "Vanuatu — \"Answer the Call\"",
+      slogan: "Answer the Call of Vanuatu",
       agency: "Vanuatu Tourism Office",
       visitors: {
         count: 82400,
@@ -2581,9 +2753,13 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Vanuatu)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Vanuatu, Category:Symbols of Vanuatu) and general web search — no freely-licensed Vanuatu Tourism Office consumer-brand logo could be found; Commons results returned only unrelated Vanuatu logos (Vanuatu Post) and the sub-national \"Addu Tourism Brand Logo\", which belongs to the Maldives' Addu City, not Vanuatu.",
-      sources: ["https://commons.wikimedia.org/wiki/Category:Tourism_in_Vanuatu"],
+      logo: "/tourism-logos/vu/answer-the-call-of-vanuatu.png",
+      logoExplainer:
+        "The \"Answer the Call of Vanuatu\" brand: the words \"ANSWER THE CALL OF\" in black hand-drawn capitals above \"Vanuatu\" in a large orange brush script, with a small red-and-green leaf device at the end. Red, green, black and yellow are the colours of the Vanuatu flag.",
+      sources: ["https://commons.wikimedia.org/wiki/Category:Tourism_in_Vanuatu",  "https://vanuatu.travel/",
+      ],
+      licenceNote:
+        "Copyrighted brand mark of the Vanuatu Tourism Office, taken from its official vanuatu.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   FR: [
@@ -2639,7 +2815,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "ie-tourism-ireland",
       countryCode: "IE",
-      name: "Tourism Ireland",
+      name: "Ireland",
       slogan: "Fill Your Heart With Ireland",
       agency: "Tourism Ireland",
       visitors: {
@@ -2648,23 +2824,24 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Ireland)",
       },
-      logo: "/tourism-logos/ie/tourism-ireland.svg",
+      logo: "/tourism-logos/ie/ireland.png",
       logoExplainer:
-        "A green shamrock-inspired swirl mark beside the purple \"Tourism Ireland\" wordmark — the shamrock, Ireland's best-known national symbol, used by Tourism Ireland as what the organisation calls a memory trigger for its consumer brand across its global marketing campaigns, including \"Fill Your Heart With Ireland\".",
+        "The \"Ireland\" destination mark used across ireland.com — the consumer brand Tourism Ireland markets the island under, not the organisation's own \"Tourism Ireland\" corporate lockup. The word \"Ireland\" is set in a rounded green sans-serif beside a shamrock drawn as three overlapping outlined leaves in two greens. The shamrock is the island's best-known national symbol and Tourism Ireland describes it as the memory trigger at the centre of its global identity.",
       sources: [
         "https://en.wikipedia.org/wiki/File:Tourism_Ireland_logo.svg",
         "https://www.tourismireland.com/about-us/our-brand",
         "https://www.tourismireland.com/what-we-do/global-marketing-campaigns/tourism-ireland-s-fill-your-heart-with-ireland",
+        "https://www.ireland.com/",
       ],
       licenceNote:
-        "Non-free/fair-use logo hosted locally on English Wikipedia (not Wikimedia Commons) — used there under a non-free-content rationale for identifying the organisation. Bundled here on the same basis this repo already uses for non-Commons crests and passport covers: a copyrighted organisational logo, cited to its source, for identification rather than decoration.",
+        "Copyrighted brand mark of Tourism Ireland, taken from its own consumer site ireland.com and bundled for identification of the destination brand, on the same non-free basis this repository uses for football-association crests and passport covers.",
     },
   ],
   DE: [
     {
       id: "de-germany-travel",
       countryCode: "DE",
-      name: "German National Tourist Board",
+      name: "Germany — \"Simply inspiring\"",
       slogan: "Germany. Simply inspiring.",
       agency: "Deutsche Zentrale für Tourismus e.V. (GNTB / germany.travel)",
       visitors: {
@@ -2673,19 +2850,23 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Germany)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons, English and German Wikipedia, and germany.travel. The GNTB's current public-facing consumer brand, \"Germany. Simply inspiring.\" (served on germany.travel as dzt_logo_simply_inspiring.svg), has no freely-licensed copy on Commons. The only CC0 asset the organisation itself uploaded to Commons is a different \"Deutschland Das Reiseland\" wordmark, explicitly filenamed as a B2B trade asset rather than the current consumer brand, so it was not used as a substitute per this repo's consumer-brand-not-institutional-asset standard.",
+      logo: "/tourism-logos/de/germany-simply-inspiring.svg",
+      logoExplainer:
+        "The German National Tourist Board's destination lockup on germany.travel: \"Germany\" in heavy black type above the italic line \"Simply inspiring\", beside a circular emblem in which a stylised eagle's head in black, red and gold curls into a ring. The eagle is the federal coat-of-arms bird and the three colours are the national flag's.",
       sources: [
         "https://en.wikipedia.org/wiki/German_National_Tourist_Board",
         "https://www.germany.travel/en/about-us/about-us.html",
+        "https://www.germany.travel/en/home.html",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Deutsche Zentrale für Tourismus (German National Tourist Board), taken from its official germany.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   NL: [
     {
       id: "nl-holland-nbtc",
       countryCode: "NL",
-      name: "Netherlands Board of Tourism & Conventions",
+      name: "Netherlands",
       agency: "Netherlands Board of Tourism & Conventions (NBTC) / Holland.com",
       launched: 2019,
       visitors: {
@@ -2694,12 +2875,15 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Netherlands)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons and Wikipedia for the Netherlands' 2019 \"NL\" country-brand logo (an orange stylised-tulip mark by Studio Dumbar, designed jointly with the Netherlands Enterprise Agency to replace the earlier tulip-and-\"Holland\" identity) and the NBTC/Holland.com wordmark — no freely-licensed copy of either could be found on Commons.",
+      logo: "/tourism-logos/nl/nl-netherlands.svg",
+      logoExplainer:
+        "The \"NL\" national brand mark the Netherlands Board of Tourism & Conventions adopted in place of the older \"Holland\" tulip mark: the letters \"NL\" in heavy orange type, the L drawn as an open right angle, beside the word \"Netherlands\". Orange is the colour of the House of Orange-Nassau and the Dutch national colour. The change of mark accompanied the country's 2020 decision to promote itself as the Netherlands rather than Holland.",
       sources: [
         "https://www.holland.com/global/meetings/contact/about-nbtc",
         "https://www.dezeen.com/2019/11/20/netherlands-identity-nl-logo-studio-dumbar/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of NBTC Holland Marketing, taken from its official site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   US: [
@@ -2896,12 +3080,15 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Cyprus)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons for the 2021 \"Love Cyprus\" identity (a two-line \"LOVE\" wordmark whose overlapping letters form a heart-shaped V, replacing the 2006 Aphrodite emblem) — no freely-licensed copy could be found.",
+      logo: "/tourism-logos/cy/love-cyprus.png",
+      logoExplainer:
+        "The \"Love Cyprus\" brand of the Deputy Ministry of Tourism: the word \"LOVE\" set as a two-by-two block of letters, the \"V\" formed by a yellow heart, above \"CYPRUS\" in blue capitals. Blue and yellow carry the sea-and-sun framing the campaign uses across its advertising.",
       sources: [
         "https://www.visitcyprus.com/news/new-logo-and-brand-identity-2/",
         "https://1000logos.net/news/love-cyprus-new-visual-identity-for-the-island-of-aphrodite/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Cyprus Deputy Ministry of Tourism, taken from the official visitcyprus.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   MT: [
@@ -2916,12 +3103,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Malta)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Malta) and the English Wikipedia \"Tourism in Malta\" article, which carries no infobox logo — no freely-licensed copy of the Malta Tourism Authority's \"Visit Malta\" logo (a deconstructed Maltese-cross mark naming the archipelago's three main islands) could be found.",
+      logo: "/tourism-logos/mt/visitmalta.png",
+      logoExplainer:
+        "The VisitMalta mark: the word \"VisitMalta\" in red type beside a rounded chevron shape filled with blue, yellow and red bands and carrying a small white eight-pointed Maltese cross — the cross of the Order of St John, Malta's defining national emblem.",
       sources: [
         "https://lovinmalta.com/lifestyle/art/revealed-new-malta-tourism-authority-logo-appears-on-website/",
         "https://en.wikipedia.org/wiki/Tourism_in_Malta",
+        "https://www.visitmalta.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Malta Tourism Authority, taken from the official visitmalta.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   SK: [
@@ -2937,12 +3128,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Slovakia)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons for \"Good Idea Slovakia\" — Slovakia's national brand and tourism/investment slogan, set in Typotheque's History font — no freely-licensed copy of the logo could be found.",
+      logo: "/tourism-logos/sk/good-idea-slovakia.jpg",
+      logoExplainer:
+        "The \"Good Idea Slovakia\" national brand in its travel lockup: the words \"TRAVEL TO SLOVAKIA\" in white above \"GOOD IDEA\" in pale blue, on a deep blue panel with a thin red rule beneath. Blue, white and red are the colours of the Slovak flag; \"Good Idea Slovakia\" has been the country's unified state brand since 2016.",
       sources: [
         "https://fontsinuse.com/uses/13705/good-idea-slovakia",
         "https://scd.sk/dielo-ncd/good-idea-slovakia/",
+        "https://slovakia.travel/en",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Slovak Tourist Board, taken from its official slovakia.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   LU: [
@@ -2957,9 +3152,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Luxembourg)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in Luxembourg\" article, which carries no infobox logo — no freely-licensed copy of the Luxembourg for Tourism / Visit Luxembourg logo could be found.",
+      logo: "/tourism-logos/lu/visit-luxembourg.svg",
+      logoExplainer:
+        "The Visit Luxembourg mark: the words \"VISIT LUXEMBOURG\" stacked in black capitals beside a device of four rounded petal shapes arranged around an empty centre, forming an open pinwheel.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Luxembourg", "https://www.visitluxembourg.com/"],
+      licenceNote:
+        "Copyrighted brand mark of Luxembourg for Tourism, taken from the official visitluxembourg.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   VE: [
@@ -2986,8 +3184,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "bw-rediscover-botswana",
       countryCode: "BW",
-      name: "Rediscover Botswana",
-      slogan: "Rediscover Botswana",
+      name: "Botswana Tourism",
       agency: "Botswana Tourism Organisation",
       visitors: {
         count: 1830000,
@@ -2995,12 +3192,15 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Botswana)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Botswana) and the English Wikipedia \"Rediscover Botswana\" article, which carries no infobox logo — no freely-licensed copy of the Botswana Tourism Organisation's \"Rediscover Botswana\" logo could be found.",
+      logo: "/tourism-logos/bw/botswana-tourism.png",
+      logoExplainer:
+        "Botswana Tourism's consumer mark: the word \"botswana\" in a flowing lower-case brush script whose letters run through red, orange, yellow and green, with the word \"tourism\" in plain grey beneath. The mark is the organisation's public-facing brand rather than the Department of Tourism's circular zebra-head departmental seal.",
       sources: [
         "https://en.wikipedia.org/wiki/Rediscover_Botswana",
         "https://www.botswanatourism.co.bw/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Botswana Tourism Organisation, taken from its official botswanatourism.co.bw site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   MW: [
@@ -3016,16 +3216,20 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Malawi)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons for a Malawi Tourism / \"The Warm Heart of Africa\" logo — no freely-licensed copy could be found.",
-      sources: ["https://www.malawitourism.com/", "https://en.wikipedia.org/wiki/Tourism_in_Malawi"],
+      logo: "/tourism-logos/mw/malawi-warm-heart.png",
+      logoExplainer:
+        "Malawi's destination mark: the word \"Malawi\" in blue over a large heart shape in red, yellow and green, with the line \"the warm heart of africa\" beneath. The heart makes the country's long-standing tourism slogan literal; red, black and green are the colours of the national flag.",
+      sources: ["https://www.malawitourism.com/", "https://en.wikipedia.org/wiki/Tourism_in_Malawi",  "https://www.visitmalawi.mw/",
+      ],
+      licenceNote:
+        "Copyrighted brand mark of the Malawi Department of Tourism, taken from its official visitmalawi.mw site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   MU: [
     {
       id: "mu-mtpa",
       countryCode: "MU",
-      name: "Mauritius Tourism Promotion Authority",
+      name: "Mauritius",
       slogan: "It's a Pleasure",
       agency: "Mauritius Tourism Promotion Authority (MTPA)",
       launched: 1996,
@@ -3035,19 +3239,23 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mauritius)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Mauritius, which holds no tourism-related file) and the English Wikipedia \"Mauritius Tourism Promotion Authority\" article, which carries no infobox logo — no freely-licensed copy of the MTPA's own mark or its \"It's a Pleasure\" slogan branding could be found.",
+      logo: "/tourism-logos/mu/mauritius.png",
+      logoExplainer:
+        "The Mauritius destination mark: the island's name written as a single sweeping red script line, with the dots over the two \"i\" letters picked out in yellow, blue and green — the four colours of the Mauritian flag distributed across the word.",
       sources: [
         "https://en.wikipedia.org/wiki/Mauritius_Tourism_Promotion_Authority",
         "https://mauritiusnow.com/mtpa/",
+        "https://www.mauritiusnow.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Mauritius Tourism Promotion Authority, taken from its official site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   SC: [
     {
       id: "sc-seychelles-tourism-board",
       countryCode: "SC",
-      name: "Seychelles Tourism Board",
+      name: "The Seychelles Islands",
       agency: "Seychelles Tourism Board",
       launched: 2006,
       visitors: {
@@ -3056,12 +3264,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Seychelles)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Seychelles, and the Seychelles Tourism Board's own uploader account, which has bundled only an internal organisation-structure chart, not a logo) and the English Wikipedia \"Seychelles Tourism Board\" article — no freely-licensed copy of the STB's visual identity (redesigned by Union in 2006, refreshed since) could be found.",
+      logo: "/tourism-logos/sc/seychelles-islands.png",
+      logoExplainer:
+        "The Seychelles Islands destination mark: the words \"the Seychelles islands\" in blue type beneath a fan of five leaf or petal shapes in blue, yellow, red, green and pink. The five colours and the fanned arrangement echo the five oblique bands of the Seychellois national flag.",
       sources: [
         "https://en.wikipedia.org/wiki/Seychelles_Tourism_Board",
         "https://www.union.co.uk/our-news/union-reveals-new-brand-for-seychelles-tourism",
+        "https://www.seychelles.travel/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Seychelles Tourism Board, taken from its official seychelles.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   BY: [
@@ -3129,7 +3341,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "mk-macedonia-timeless",
       countryCode: "MK",
-      name: "North Macedonia Timeless",
+      name: "Macedonia Timeless",
       slogan: "Macedonia Timeless",
       agency: "Agency for Promotion and Support of Tourism of the Republic of North Macedonia",
       launched: 2008,
@@ -3139,15 +3351,15 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for North Macedonia)",
       },
-      logo: "/tourism-logos/mk/macedonia-timeless.jpg",
+      logo: "/tourism-logos/mk/macedonia-timeless.png",
       logoExplainer:
-        "A hand-drawn golden sun (evoking the Vergina Sun/Kutlesh sun symbol) rising over the word \"MACEDONIA\" in red, on a rustic textured background — the mark for the \"Macedonia Timeless\" promotional campaign launched 2008–2009, whose own live website (still branded \"North Macedonia Timeless\") remains the country's official tourism portal.",
+        "The \"Macedonia Timeless\" campaign mark as the brand itself publishes it: a golden sun with straight rays rising behind a hill, above the two hand-lettered words \"MACEDONIA\" and \"TIMELESS\" in red and gold. The rayed sun echoes the sun motif long used in Macedonian visual identity, and the hand-drawn lettering carries the campaign's heritage framing.",
       sources: [
         "https://en.wikipedia.org/wiki/Macedonia_Timeless",
         "https://macedonia-timeless.com/eng",
       ],
       licenceNote:
-        "Non-free/fair-use logo hosted locally on English Wikipedia (not Wikimedia Commons) — used there under a non-free-content rationale for identifying the campaign. Bundled here on the same basis this repo already uses for non-Commons crests and passport covers: a copyrighted organisational logo, cited to its source, for identification rather than decoration.",
+        "Copyrighted brand mark of the Agency for Promotion and Support of Tourism of the Republic of North Macedonia, taken from the campaign's own macedonia-timeless.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   MC: [
@@ -3184,9 +3396,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for San Marino)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in San Marino\" article, which names the Tourist Office's slogan but carries no infobox logo — no freely-licensed copy of the \"Visit San Marino\" (visitsanmarino.com) logo could be found.",
+      logo: "/tourism-logos/sm/san-marino.png",
+      logoExplainer:
+        "San Marino's destination mark: the words \"Repubblica di SanMarino\" with the tagline \"Oltre ogni immaginazione\" (\"beyond all imagination\") beneath, beside a device of overlapping curved blades in red, blue, yellow and dark grey fanning out from a point — an abstraction of the three towers on Monte Titano that define the republic's skyline and its coat of arms.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_San_Marino", "https://www.visitsanmarino.com/"],
+      licenceNote:
+        "Copyrighted brand mark of the Republic of San Marino's tourism office, taken from its official visitsanmarino.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   CV: [
@@ -3251,7 +3466,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "dm-discover-dominica",
       countryCode: "DM",
-      name: "Discover Dominica",
+      name: "Dominica — \"The Nature Island\"",
       slogan: "The Nature Island",
       agency: "Discover Dominica Authority",
       visitors: {
@@ -3260,9 +3475,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Dominica)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in Dominica\" article — no freely-licensed copy of the Discover Dominica Authority's logo (marketed around Dominica's \"Nature Island\" positioning) could be found.",
+      logo: "/tourism-logos/dm/dominica-nature-island.webp",
+      logoExplainer:
+        "Dominica's destination mark: the word \"Dominica\" in a green script in which the dot of the \"i\" is drawn as a small leaf, above the line \"THE NATURE ISLAND\". The island has marketed itself as the Nature Island of the Caribbean for decades on the strength of its rainforest interior and volcanic terrain.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Dominica", "https://discoverdominica.com/"],
+      licenceNote:
+        "Copyrighted brand mark of the Discover Dominica Authority, taken from the official discoverdominica.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   LC: [
@@ -3287,7 +3505,8 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "vc-svg-tourism-authority",
       countryCode: "VC",
-      name: "SVG Tourism Authority",
+      name: "St Vincent and the Grenadines",
+      slogan: "The Caribbean You're Looking For",
       agency: "Saint Vincent and the Grenadines Tourism Authority",
       launched: 2009,
       visitors: {
@@ -3296,12 +3515,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Saint Vincent and the Grenadines)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Saint Vincent and the Grenadines, which holds no tourism-related file) — no freely-licensed copy of the SVG Tourism Authority's (established 2009) logo could be found.",
+      logo: "/tourism-logos/vc/st-vincent-grenadines.png",
+      logoExplainer:
+        "The destination mark of St Vincent and the Grenadines: the words \"st Vincent and The Grenadines\" in blue and green type with the tagline \"The Caribbean you're looking for\" beneath, beside a device of a bird in flight drawn in blue, yellow and green strokes — the colours of the national flag, whose three green diamonds give the country its \"Gems of the Antilles\" nickname.",
       sources: [
         "https://tourism.gov.vc/tourism/index.php/svg-tourism-authority",
         "https://www.routesonline.com/destinations/9424/st-vincent-and-the-grenadines-tourism-authority/about/",
+        "https://www.discoversvg.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the St Vincent and the Grenadines Tourism Authority, taken from its official discoversvg.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   GD: [
@@ -3318,9 +3541,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Grenada)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons for the Grenada Tourism Authority's \"Pure Grenada\" logo — no freely-licensed copy could be found.",
+      logo: "/tourism-logos/gd/pure-grenada.png",
+      logoExplainer:
+        "The \"Pure Grenada\" brand of the Grenada Tourism Authority: the words \"PURE GRENADA\" in crimson capitals beside a stylised opened nutmeg drawn in fine crimson lines. Nutmeg is Grenada's defining export — the island is known as the Isle of Spice and the fruit appears on its national flag.",
       sources: ["https://www.puregrenada.com/", "https://ghta.org/directory/all-members/grenada-tourism-authority/"],
+      licenceNote:
+        "Copyrighted brand mark of the Grenada Tourism Authority, taken from the official puregrenada.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   KN: [
@@ -3547,7 +3773,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "tg-tourism",
       countryCode: "TG",
-      name: "Tourism in Togo",
+      name: "Togo Tourisme",
       agency: "Ministère du Tourisme, Togo",
       visitors: {
         count: 482000,
@@ -3555,9 +3781,13 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Togo)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons for a Togo national tourism-office logo — no freely-licensed copy could be found. The English Wikipedia does not even carry a \"Tourism in Togo\" article to check for a named authority or brand.",
-      sources: ["https://www.nz.kayak.com/Togo.239.dc.guide"],
+      logo: "/tourism-logos/tg/togo-tourisme.png",
+      logoExplainer:
+        "Togo's destination mark: the word \"Togo\" in rounded green outlined capitals — the two \"o\" letters drawn as concentric rings — above \"Tourisme\" in a red script, with a small national flag above the T. Green, yellow and red are the colours of Togo's flag.",
+      sources: ["https://www.nz.kayak.com/Togo.239.dc.guide",  "https://www.togotourisme.tg/",
+      ],
+      licenceNote:
+        "Copyrighted brand mark of Togo's tourism promotion body, taken from its official togotourisme.tg site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   HT: [
@@ -3652,7 +3882,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "ug-explore-uganda",
       countryCode: "UG",
-      name: "Explore Uganda",
+      name: "Uganda Tourism Board",
       slogan: "Explore Uganda, the Pearl of Africa",
       agency: "Uganda Tourism Board",
       launched: 2022,
@@ -3662,12 +3892,15 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Uganda)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons for the Uganda Tourism Board's \"Explore Uganda, the Pearl of Africa\" destination brand (launched 21 January 2022) — no freely-licensed copy of the logo could be found.",
+      logo: "/tourism-logos/ug/uganda-tourism-board.png",
+      logoExplainer:
+        "The Uganda Tourism Board's mark: \"UGANDA\" in wide black geometric capitals — the U drawn as an open-topped rounded form — above \"TOURISM BOARD\". The Board promotes the country under the \"Explore Uganda: The Pearl of Africa\" campaign, and this wordmark is the identity carried across it.",
       sources: [
         "https://utb.go.ug/explore-uganda-the-pearl-of-africa-the-new-destination-uganda-brand-represents-a-new-dawn-in-ugandas-tourism-sector/",
         "https://en.wikipedia.org/wiki/Tourism_in_Uganda",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Uganda Tourism Board, taken from its official utb.go.ug site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   ER: [
@@ -3792,7 +4025,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "sl-explore-freedom",
       countryCode: "SL",
-      name: "Explore Freedom",
+      name: "Sierra Leone — \"Explore Freedom\"",
       slogan: "Explore Freedom",
       agency: "Sierra Leone National Tourist Board",
       visitors: {
@@ -3801,12 +4034,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Sierra Leone)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons for the Sierra Leone National Tourist Board's \"Explore Freedom\" destination brand — no freely-licensed copy could be found.",
+      logo: "/tourism-logos/sl/sierra-leone-explore-freedom.png",
+      logoExplainer:
+        "Sierra Leone's \"Explore Freedom\" destination mark: the country's name in a green script beneath a scene drawn in green and blue line work of palm trees on a shore with a bird in flight, above the tagline \"Explore Freedom\". The tagline plays on Freetown, the capital founded as a settlement for freed people.",
       sources: [
         "https://acorntourism.co.uk/projects/sierra-leone-national-tourism-marketing-strategy-and-rebranding-p677521",
         "https://ntb.gov.sl/about-us/",
+        "https://www.visitsierraleone.org/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Sierra Leone's National Tourist Board, taken from its official visitsierraleone.org site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   TJ: [
@@ -3830,13 +4067,18 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "tm-state-committee-for-tourism",
       countryCode: "TM",
-      name: "State Committee for Tourism",
+      name: "Turkmenistan — \"Altyn asyr\"",
+      slogan: "Altyn asyr (Golden Age)",
       agency: "State Committee for Tourism of Turkmenistan",
       visitorsNote:
         "No World Bank international-tourist-arrivals figure is published for Turkmenistan.",
-      noImageReason:
-        "Searched Wikimedia Commons for a logo of Turkmenistan's State Committee for Tourism — no freely-licensed copy could be found.",
-      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Turkmenistan", "http://tourism.gov.tm/"],
+      logo: "/tourism-logos/tm/turkmenistan-altyn-asyr.png",
+      logoExplainer:
+        "Turkmenistan's promotional mark: the country's name in green capitals with the words \"Altyn asyr\" (\"golden age\") beneath in gold, set over a faint globe of dotted green geometry. The gold-and-green palette follows the national flag, whose green field carries the carpet guls Turkmenistan treats as its defining national ornament.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Turkmenistan", "http://tourism.gov.tm/",  "https://turkmenistan.gov.tm/",
+      ],
+      licenceNote:
+        "Copyrighted promotional mark used by the Government of Turkmenistan, taken from its official state portal and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   KM: [
@@ -3874,7 +4116,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "ki-kiribati-national-tourism-office",
       countryCode: "KI",
-      name: "Kiribati National Tourism Office",
+      name: "Kiribati Tourism Authority",
       agency: "Kiribati National Tourism Office (KNTO)",
       visitors: {
         count: 12000,
@@ -3882,9 +4124,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Kiribati)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Symbols of Kiribati, Category:Culture of Kiribati) for a Kiribati National Tourism Office logo — no freely-licensed copy could be found.",
+      logo: "/tourism-logos/ki/kiribati-tourism-authority.webp",
+      logoExplainer:
+        "Kiribati's tourism mark: the word \"KIRIBATI\" in heavy brown capitals whose letters are cut with notched, carved edges recalling Kiribati woodwork and pandanus weaving, beneath the small line \"TOURISM AUTHORITY\".",
       sources: ["https://www.kiribatitourism.gov.ki/kiribati-national-tourism-office/"],
+      licenceNote:
+        "Copyrighted brand mark of the Kiribati National Tourism Office, taken from its official kiribatitourism.gov.ki site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   MH: [
@@ -3908,7 +4153,8 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "pw-palau-visitors-authority",
       countryCode: "PW",
-      name: "Palau Visitors Authority",
+      name: "Pristine Paradise Palau",
+      slogan: "Pristine Paradise Palau",
       agency: "Palau Visitors Authority (PVA)",
       launched: 1982,
       visitors: {
@@ -3917,9 +4163,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Palau)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons for the Palau Visitors Authority's (PVA, established under the Tourism Re-Organization Act of 1982) logo — the only file found, \"Palau Visitors Authority.JPG\", is a 2011 photograph of the PVA's office building in Koror, not the organisation's logo, so no freely-licensed copy of an actual logo could be confirmed.",
+      logo: "/tourism-logos/pw/pristine-paradise-palau.png",
+      logoExplainer:
+        "The \"Pristine Paradise Palau\" brand: the tagline in blue script above \"PALAU\" in heavy blue capitals, overlaid on a large yellow disc, with \"Palau Visitors Authority\" beneath. A yellow disc on blue is the design of Palau's national flag, where it represents the full moon on the ocean.",
       sources: ["https://pristineparadisepalau.com/palau-visitors-authority/"],
+      licenceNote:
+        "Copyrighted brand mark of the Palau Visitors Authority, taken from its official pristineparadisepalau.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   ST: [
@@ -3943,7 +4192,8 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "to-tonga-tourism-authority",
       countryCode: "TO",
-      name: "Tonga Tourism Authority",
+      name: "Kingdom of Tonga — \"The True South Pacific\"",
+      slogan: "The True South Pacific",
       agency: "Tonga Tourism Authority",
       visitors: {
         count: 94000,
@@ -3951,9 +4201,13 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Tonga)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tonga) for a Tonga Tourism Authority logo — no freely-licensed copy could be found; the only similarly-named files on Commons (\"Matangi Tonga\") belong to an unrelated news magazine.",
-      sources: ["https://www.tongatourism.gov.to/"],
+      logo: "/tourism-logos/to/kingdom-of-tonga.png",
+      logoExplainer:
+        "Tonga's destination mark: a deep red panel carrying a white crown above the words \"KINGDOM OF\" and \"TONGA\" in white capitals, with the line \"THE TRUE SOUTH PACIFIC\" beneath. Red and white are the colours of the Tongan flag, and the crown marks Tonga's standing as the only Pacific island nation never to have relinquished its monarchy.",
+      sources: ["https://www.tongatourism.gov.to/",  "https://www.thekingdomoftonga.com/",
+      ],
+      licenceNote:
+        "Copyrighted brand mark of the Tonga Tourism Authority, taken from its official site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   TV: [
