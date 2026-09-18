@@ -2965,7 +2965,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "us-brand-usa",
       countryCode: "US",
-      name: "Brand USA",
+      name: "Brand USA — \"Visit The USA\"",
       agency: "Brand USA (Corporation for Travel Promotion)",
       launched: 2010,
       visitors: {
@@ -2974,9 +2974,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the United States)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia article for Brand USA — no infobox logo and no freely-licensed Brand USA (the United States' official destination marketing organisation, established 2010) consumer-brand logo could be found on Commons. Re-checked 2026-09 against the board's OWN consumer site (https://www.thebrandusa.com/) — the source family that yielded the destination brand for 94 other countries — but the domain is behind a Cloudflare bot challenge that returns HTTP 403 to every automated request, including a bare favicon, so no image bytes could be retrieved.",
+      logo: "/tourism-logos/us/brand-usa.png",
+      logoExplainer:
+        "The mark of Brand USA, the public-private corporation that markets the United States as a destination: the letters \"USA\" built from a grid of white dots on a light-blue panel, with \"VisitTheUSA.com\" beneath, above a darker blue band reading \"Brand USA\". The dot grid reads as the star field of the national flag, and the two blues are the flag's own.",
       sources: ["https://en.wikipedia.org/wiki/Brand_USA", "https://www.thebrandusa.com/"],
+      licenceNote:
+        "Copyrighted brand mark of Brand USA (the Corporation for Travel Promotion). The live visittheusa.com and thebrandusa.com domains return HTTP 403 to automated requests, so the asset was recovered from the Internet Archive's capture of Brand USA's own site. Bundled for identification of the destination brand, on the same non-free basis this repository uses for football-association crests and passport covers.",
     },
   ],
   RU: [
@@ -3571,7 +3574,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "lc-saint-lucia-tourism-authority",
       countryCode: "LC",
-      name: "Saint Lucia Tourism Authority",
+      name: "Saint Lucia",
       slogan: "Simply Beautiful",
       agency: "Saint Lucia Tourism Authority",
       visitors: {
@@ -3580,9 +3583,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Saint Lucia)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in Saint Lucia\" article — no freely-licensed copy of the Saint Lucia Tourism Authority's logo could be found. Re-checked 2026-09 against the board's OWN consumer site (https://www.stlucia.org/en/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
-      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Saint_Lucia"],
+      logo: "/tourism-logos/lc/saint-lucia.png",
+      logoExplainer:
+        "Saint Lucia's destination mark: two black peaks rising from a single sweeping curve, above the words \"SAINT LUCIA\" in spaced capitals. The twin peaks are the Pitons — Gros Piton and Petit Piton, the volcanic plugs on the island's south-west coast that are a UNESCO World Heritage site and the country's defining landmark, appearing on its national flag as two triangles.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Saint_Lucia", "https://www.stlucia.org/"],
+      licenceNote:
+        "Copyrighted brand mark of the Saint Lucia Tourism Authority, recovered from the Internet Archive's capture of the Authority's own stlucia.org site after the live domain proved unreachable from this environment. Bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   VC: [
