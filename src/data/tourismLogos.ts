@@ -475,8 +475,8 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "co-the-answer-is-colombia",
       countryCode: "CO",
-      name: "Colombia — \"The Answer Is Colombia\"",
-      slogan: "The Answer Is Colombia",
+      name: "Colombia — \"El país de la belleza\"",
+      slogan: "El país de la belleza (The country of beauty)",
       agency:
         "ProColombia, under the Ministry of Commerce, Industry and Tourism (the country-brand campaign launched in 2012, replacing the earlier \"Colombia is Passion\")",
       launched: 2012,
@@ -486,13 +486,17 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Colombia)",
       },
-      noImageReason:
-        "\"The Answer Is Colombia\" (2012) — whose mark uses a toucan/parrot motif referencing the country's biodiversity — is well documented, but searching Wikimedia Commons and the English Wikipedia article for \"Tourism in Colombia\" found no freely-licensed copy of the logo. Re-checked 2026-09 against the board's OWN consumer site (https://procolombia.co/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/co/colombia-pais-de-la-belleza.svg",
+      logoExplainer:
+        "Colombia's destination brand \"El país de la belleza\" (\"the country of beauty\"), launched in 2023: the word \"COLOMBIA\" in navy capitals followed by the country brand's \"CO\" tile — a small square quartered in yellow, blue and red with the letters CO across it — above the tagline in navy. The yellow, blue and red are the national flag's, and the \"CO\" tile is the mark ProColombia uses across tourism, export and investment promotion alike.",
       sources: [
         "https://skift.com/2012/09/12/colombia-launches-new-brand-identity-focusing-on-its-megadiversity/",
         "https://en.wikipedia.org/wiki/Tourism_in_Colombia",
         "https://colombia.co/en/faq-colombia-country-brand",
+        "https://colombia.travel/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of ProColombia / the Colombian Ministry of Commerce, Industry and Tourism, taken from the official colombia.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for football-association crests and passport covers.",
     },
   ],
   CR: [
@@ -1043,7 +1047,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "bg-discovery-to-share",
       countryCode: "BG",
-      name: "Bulgaria — \"A Discovery to Share\"",
+      name: "Bulgaria",
       slogan: "A Discovery to Share",
       agency:
         "Ministry of Tourism of Bulgaria (Bulgaria Travel brand)",
@@ -1054,12 +1058,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Bulgaria)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Bulgaria, Category:Bulgarian Tourist Union), the Bulgarian Ministry of Tourism's own \"Official logo of Bulgaria\" archive page, and general web search — the \"A Discovery to Share\" brand (unveiled 2013) is documented, but no freely-licensed copy of its logo could be found on Commons or Wikipedia. Re-checked 2026-09 against the board's OWN consumer site (https://bulgariatravel.org/en/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/bg/bulgaria.png",
+      logoExplainer:
+        "Bulgaria's destination mark: a solid orange square carrying the word \"BULGARIA\" in a rough white hand-drawn capital, above which a rose is sketched in a single continuous white line. The rose is Bulgaria's defining national emblem — the Rose Valley around Kazanlak supplies a large share of the world's rose oil and has its own annual festival.",
       sources: [
         "https://sofiaglobe.com/2013/01/17/new-brand-bulgaria-tourism-promotional-logo-and-slogans-unveiled/",
         "https://www.tourism.government.bg/sites/trsm.gateway.bg/archive/en/themes/official-logo-of-bulgaria-274-308.html",
+        "https://bulgariatravel.org/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Bulgaria's Ministry of Tourism, taken from its official bulgariatravel.org site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   BD: [
@@ -1341,7 +1349,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "pl-polska-travel",
       countryCode: "PL",
-      name: "Polska Travel",
+      name: "Polska",
       agency: "Polska Organizacja Turystyczna (POT), the Polish Tourism Organisation",
       visitors: {
         count: 21165000,
@@ -1349,12 +1357,15 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Poland)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Poland) and the English Wikipedia article for the Polish Tourism Organisation — no freely-licensed \"Polska Travel\" / POT tourism-brand logo could be found; Commons results returned only unrelated Polish logos (Polska 2050 political party, Wirtualna Polska media company, Vogue Polska). Re-checked 2026-09 against the board's OWN consumer site (https://www.poland.travel/en) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/pl/polska.svg",
+      logoExplainer:
+        "The \"Polska\" national brand used by the Polish Tourism Organisation: the country's own name for itself hand-lettered in red, with the loop of the initial P drawn as a kite flying on a string and a scribbled wave beneath the final letters. The mark, designed in 2002, uses the red of the national flag; the kite reads as lightness and openness and the wave as the Baltic coast.",
       sources: [
         "https://en.wikipedia.org/wiki/Polish_Tourism_Organisation",
         "https://www.poland.travel/en",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Polska Organizacja Turystyczna (Polish Tourism Organisation), taken from its official poland.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   IL: [
@@ -1431,7 +1442,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "pa-visit-panama",
       countryCode: "PA",
-      name: "Visit Panama",
+      name: "Panamá",
       agency: "Autoridad de Turismo de Panamá (ATP)",
       launched: 2015,
       visitors: {
@@ -1440,12 +1451,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Panama)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Panama) and the English Wikipedia article for \"Tourism in Panama\" — no freely-licensed \"Visit Panama\" logo file (refreshed in 2015) could be found on Commons or Wikipedia. Re-checked 2026-09 against the board's OWN consumer site (https://www.atp.gob.pa/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/pa/panama.png",
+      logoExplainer:
+        "Panama's country brand symbol: four squares set in a pinwheel — a navy square and a crimson square on the diagonal, each paired with a white square carrying a single star in the opposite colour. It is the design of the Panamanian flag, whose four quarters are white with a blue star, plain red, plain blue and white with a red star, rebuilt as a rotating device.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Panama",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Panama",
+        "https://www.atp.gob.pa/",
       ],
+      licenceNote:
+        "Copyrighted country-brand mark administered by the Autoridad de Turismo de Panamá, taken from its official atp.gob.pa site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   KH: [
@@ -1566,7 +1581,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "lk-sri-lanka-tourism-promotion-bureau",
       countryCode: "LK",
-      name: "Sri Lanka Tourism Promotion Bureau",
+      name: "Sri Lanka",
       agency: "Sri Lanka Tourism Promotion Bureau (SLTPB)",
       visitors: {
         count: 540000,
@@ -1574,12 +1589,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Sri Lanka)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Sri Lanka, Category:Tourism in Sri Lanka) and the English Wikipedia article for \"Tourism in Sri Lanka\" — no freely-licensed Sri Lanka Tourism Promotion Bureau consumer-brand logo could be found; Commons results returned only unrelated Sri Lankan logos (a private guide company's mark, an educational institute). Re-checked 2026-09 against the board's OWN consumer site (https://srilanka.travel/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/lk/sri-lanka.png",
+      logoExplainer:
+        "The Sri Lanka destination wordmark used by the Sri Lanka Tourism Promotion Bureau: the country's name written as a single flowing cyan script, the long tail of the initial S sweeping beneath the whole word. Cyan carries the island-and-ocean framing of the Bureau's \"So Sri Lanka\" campaign.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Sri_Lanka",
         "https://commons.wikimedia.org/wiki/Category:Logos_of_Sri_Lanka",
+        "https://www.srilanka.travel/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Sri Lanka Tourism Promotion Bureau, taken from its official srilanka.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   NO: [
@@ -2311,7 +2330,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "kz-ministry-of-tourism-and-sports",
       countryCode: "KZ",
-      name: "Kazakhstan Ministry of Tourism and Sports",
+      name: "Kazakhstan.travel",
       agency: "Ministry of Tourism and Sports, Kazakhstan",
       visitors: {
         count: 2035000,
@@ -2319,12 +2338,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Kazakhstan)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Symbols of Kazakhstan) and the English Wikipedia article for the Ministry of Tourism and Sports (Kazakhstan) — no freely-licensed Kazakh tourism-board consumer-brand logo could be found on Commons or Wikipedia. Re-checked 2026-09 against the board's OWN consumer site (https://kazakhstan.travel/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/kz/kazakhstan-travel.svg",
+      logoExplainer:
+        "Kazakhstan's destination mark: the words \"kazakhstan.travel\" in a heavy black lower-case sans-serif beneath a broad arch that runs from deep orange at its feet through to pale yellow at its crown — a rising sun rendered as a gateway. The sun is the central device of the Kazakh national flag, where a golden sun sits above a steppe eagle.",
       sources: [
         "https://en.wikipedia.org/wiki/Ministry_of_Tourism_and_Sports_(Kazakhstan)",
         "https://en.wikipedia.org/wiki/Tourism_in_Kazakhstan",
+        "https://kazakhstan.travel/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Kazakh Tourism, taken from its official kazakhstan.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   UZ: [
@@ -3377,7 +3400,6 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       id: "mc-visit-monaco",
       countryCode: "MC",
       name: "Visit Monaco",
-      slogan: "Visit Monaco",
       agency: "Direction du Tourisme et des Congrès de Monaco",
       visitors: {
         count: 159000,
@@ -3385,12 +3407,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Monaco)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons for the Direction du Tourisme et des Congrès' \"Visit Monaco\" identity — no freely-licensed copy could be found; Commons holds only unrelated Monaco logos (Club Monaco fashion brand, the Government's own seal, Monaco Telecom, TVMonaco). Re-checked 2026-09 against the board's OWN consumer site (https://www.visitmonaco.com/en) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/mc/visit-monaco.png",
+      logoExplainer:
+        "The Visit Monaco mark: a red monogram in which a broad V and a narrower M interlock, the M's centre stroke descending into a small diamond below the baseline. Red and white are the colours of Monaco's flag and of the Grimaldi arms.",
       sources: [
         "https://cvb.visitmonaco.com/fr/actus/22072/un-nouveau-logo-pour-la-direction-du-tourisme-des-congres",
         "https://www.gouv.mc/Action-Gouvernementale/L-Economie/Tourisme-et-Congres",
+        "https://www.visitmonaco.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Monaco Government Tourist and Convention Authority, taken from its official visitmonaco.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   SM: [
@@ -3652,7 +3678,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "gm-gambia-tourism-board",
       countryCode: "GM",
-      name: "Gambia Tourism Board",
+      name: "The Gambia — \"The Smiling Coast of Africa\"",
       slogan: "The Smiling Coast of Africa",
       agency: "Gambia Tourism Board",
       visitors: {
@@ -3661,12 +3687,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Gambia)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in the Gambia, Category:Logos of Gambia — neither holds a matching file) — no freely-licensed copy of the Gambia Tourism Board's current logo could be found. A 2016-era rebrand (\"Go, Discover the Cheerful Coast\", unveiled under a since-departed administration) is documented but its own logo image is not accessible either, and using it would risk showing a superseded mark as current. Re-checked 2026-09 against the board's OWN consumer site (https://www.visitthegambia.gm/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/gm/gambia-smiling-coast.jpg",
+      logoExplainer:
+        "The Gambia's national tourism mark: a circular scene of a woman in a red headwrap against a beach with palms, a sail and blue water, above the words \"Gambia Tourism Board\" in a hand-drawn script and the line \"The Smiling Coast of Africa\". The slogan plays on the shape of the country — a narrow strip following the Gambia River, which on a map curves like a smile.",
       sources: [
         "https://theculturetrip.com/africa/the-gambia/articles/why-the-gambia-is-known-as-the-smiling-coast",
         "https://www.africatouroperators.org/gambia/president-gambia-tourism-logo/",
+        "https://www.visitthegambia.gm/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Gambia Tourism Board, taken from its official visitthegambia.gm site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   GN: [
@@ -3877,7 +3907,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "ps-ministry-of-tourism-and-antiquities",
       countryCode: "PS",
-      name: "Ministry of Tourism and Antiquities",
+      name: "Palestine",
       agency: "Ministry of Tourism and Antiquities, Palestine",
       launched: 1994,
       visitors: {
@@ -3886,9 +3916,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (West Bank and Gaza, World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons for a logo of Palestine's Ministry of Tourism and Antiquities (established 1994) — no freely-licensed copy of PALESTINE's own ministry logo could be found. The only \"Ministry of Tourism and Antiquities logo.png\" file on Commons is confirmed (filed under \"Coats of arms of Egypt\") to be EGYPT's ministry seal, not Palestine's — the same recurring cross-country false-positive already caught for Zambia, Tanzania, Myanmar and Cameroon earlier in this sweep — so it was not used. Re-checked 2026-09 against the board's OWN consumer site (https://www.travelpalestine.ps/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
-      sources: ["https://en.wikipedia.org/wiki/Ministry_of_Tourism_and_Antiquities_(Palestine)"],
+      logo: "/tourism-logos/ps/palestine.png",
+      logoExplainer:
+        "The tourism mark of the State of Palestine: the word \"Palestine\" in olive-green type beneath a skyline drawn as a single continuous gold line — domes, minarets and towers running left to right, with the Dome of the Rock among them and a star above — and a small Palestinian flag shield at its centre. The continuous line renders the country's built heritage as one unbroken silhouette.",
+      sources: ["https://en.wikipedia.org/wiki/Ministry_of_Tourism_and_Antiquities_(Palestine)", "https://www.travelpalestine.ps/"],
+      licenceNote:
+        "Copyrighted brand mark of the State of Palestine Ministry of Tourism and Antiquities, taken from its official site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   UG: [
@@ -4239,9 +4272,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Tuvalu)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Tuvalu, which holds only .tv domain-registry logos, no tourism-related file) for the \"Timeless Tuvalu\" destination brand — no freely-licensed copy could be found. Re-checked 2026-09 against the board's OWN consumer site (https://timelesstuvalu.com/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
-      sources: ["https://www.timelesstuvalu.com/about-us/"],
+      logo: "/tourism-logos/tv/timeless-tuvalu.png",
+      logoExplainer:
+        "The mark of Tuvalu's national tourism brand, Timeless Tuvalu: a five-petalled frangipani drawn in pale blue outline with white petals, the flower that grows across the atolls and is worn in garlands and headdresses throughout the islands. Pale blue is the colour of the Tuvaluan flag's field and of the lagoon the country is built around.",
+      sources: ["https://www.timelesstuvalu.com/about-us/", "https://timelesstuvalu.com/"],
+      licenceNote:
+        "Copyrighted brand mark of the Tuvalu Tourism Office, taken from its official timelesstuvalu.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   WS: [
