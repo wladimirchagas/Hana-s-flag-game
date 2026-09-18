@@ -15,6 +15,12 @@ import { SITE_TOPBAR_LEFT_SLOT_ID } from "../components/Topbar";
 import { SubdivisionMap } from "../components/SubdivisionMap";
 import { useZoomPan } from "../hooks/useZoomPan";
 import { MapViewControl } from "../components/MapViewControl";
+import { DemocracyMapControl } from "../components/DemocracyMapControl";
+import { DemocracyMapLegend } from "../components/DemocracyMapLegend";
+import {
+  type DemocracyMapMode,
+  getDemocracyColorOverlay,
+} from "../lib/democracyColors";
 import {
   loadMapView,
   saveMapView,
@@ -278,6 +284,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // default and shared across the world + subdivision maps, so toggling it on
   // one keeps it on after drilling into a country.
   const [showCities, setShowCities] = useState(false);
+  // "Colour countries by Democracy Index" layer for the world map.
+  const [democracyMapMode, setDemocracyMapMode] = useState<DemocracyMapMode>(null);
 
   // First-run tips card shown in the empty state. Dismissal is remembered so
   // it's a one-time nudge, re-openable from a "Show tips" affordance.
@@ -508,17 +516,30 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const toggleFlagMap = useCallback(() => {
     setShowFlagMap((prev) => {
       const next = !prev;
-      // Flag overlay and passport-colour layer are mutually exclusive.
-      if (next) setShowPassportColors(false);
+      // Flag overlay, passport-colour, and democracy layers are mutually exclusive.
+      if (next) {
+        setShowPassportColors(false);
+        setDemocracyMapMode(null);
+      }
       return next;
     });
   }, []);
   const togglePassportColors = useCallback(() => {
     setShowPassportColors((prev) => {
       const next = !prev;
-      if (next) setShowFlagMap(false);
+      if (next) {
+        setShowFlagMap(false);
+        setDemocracyMapMode(null);
+      }
       return next;
     });
+  }, []);
+  const handleDemocracyMapModeChange = useCallback((next: DemocracyMapMode) => {
+    setDemocracyMapMode(next);
+    if (next !== null) {
+      setShowFlagMap(false);
+      setShowPassportColors(false);
+    }
   }, []);
   const toggleCities = useCallback(() => {
     setShowCities((prev) => !prev);
@@ -1251,6 +1272,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     [],
   );
 
+  const democracyColorOverlay = useMemo(
+    () => getDemocracyColorOverlay(democracyMapMode),
+    [democracyMapMode],
+  );
+
   // Rotation + view-centre controls shared by both WorldProgressMap and
   // HistoricalMap so the buttons are always present regardless of era.
   // Memoised so that HistoricalMap’s React.memo() wrapper is not bypassed
@@ -1299,6 +1325,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             <span className="world-map__zoom-icon" aria-hidden="true"><UiIcon name="pin" /></span>
           </button>
         )}
+        {isModernEra && (
+          <DemocracyMapControl
+            mode={democracyMapMode}
+            onChange={handleDemocracyMapModeChange}
+          />
+        )}
         {/* Rotation + globe (view-centre) are secondary — they collapse into the
             kebab on narrow screens. */}
         <ToolbarOverflow>
@@ -1318,7 +1350,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       </>
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap, isModernEra, showPassportColors, togglePassportColors, showCities, toggleCities, eraId, setEraId],
+    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap, isModernEra, showPassportColors, togglePassportColors, showCities, toggleCities, democracyMapMode, handleDemocracyMapModeChange, eraId, setEraId],
   );
 
   // Leaner control set for the subdivision map: just the flag-overlay
@@ -1882,7 +1914,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
             flagOverlay={modernFlagOverlay}
-            fillOverride={passportColorOverlay}
+            fillOverride={democracyColorOverlay ?? passportColorOverlay}
             cityOverlay={worldCityOverlay}
           />
         ) : (
@@ -1908,6 +1940,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             // several features (1600's Iberian Union over Spain and Portugal) highlights
             // its whole territory as one polity. No geometry is involved.
             groupKeyOf={historicalGroupKeyOf}
+          />
+        )}
+        {isModernEra && democracyMapMode && (
+          <DemocracyMapLegend
+            mode={democracyMapMode}
+            onClose={() => setDemocracyMapMode(null)}
           />
         )}
       </div>

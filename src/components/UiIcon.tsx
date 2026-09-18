@@ -25,6 +25,7 @@ const paths = {
   trophy: "M7 3h10v6a5 5 0 0 1-10 0Z M7 5H3v3a4 4 0 0 0 4 4 M17 5h4v3a4 4 0 0 1-4 4 M12 14v7 M8 21h8",
   search: "M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0 m-2 5 6 6",
   settings: "m9 3-.6 2.3-2 .9-2.2-.6-2 3.4 1.6 1.7v2.6L2.2 15l2 3.4 2.2-.6 2 .9L9 21h4l.6-2.3 2-.9 2.2.6 2-3.4-1.6-1.7v-2.6L19.8 9l-2-3.4-2.2.6-2-.9L13 3Z M14 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0",
+  democracy: "M3 21h18 M3 10h18 M5 10v8 M9 10v8 M13 10v8 M17 10v8 M12 3L2 8h20Z",
 } as const;
 
 /** Decorative UI artwork only. The parent control owns its accessible name. */
