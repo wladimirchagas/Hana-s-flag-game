@@ -68,6 +68,7 @@ import { AirlineDetails } from "../components/AirlineDetails";
 import { BroadcasterDetails } from "../components/BroadcasterDetails";
 import { TourismLogoDetails } from "../components/TourismLogoDetails";
 import { NewsAgencyDetails } from "../components/NewsAgencyDetails";
+import { NewspaperDetails } from "../components/NewspaperDetails";
 import { airlinesForCountry, airlineById } from "../lib/commercialAirlines";
 import { broadcastersForCountry, broadcasterById } from "../lib/publicBroadcasters";
 import { tourismLogosForCountry, tourismLogoById } from "../lib/tourismLogos";
@@ -76,6 +77,7 @@ import type { CommercialAirline } from "../types/airline";
 import type { PublicBroadcaster } from "../types/broadcaster";
 import type { TourismLogo } from "../types/tourismLogo";
 import type { NewsAgency } from "../types/newsAgency";
+import type { Newspaper } from "../types/newspaper";
 import type { PoliticalParty } from "../data/politicalParties";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning as FlagMeaningData } from "../data/flagMeanings";
@@ -373,6 +375,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setSelectedSubdivisionBroadcaster(null);
     setSelectedSubdivisionTourismLogo(null);
     setSelectedSubdivisionNewsAgency(null);
+    setSelectedSubdivisionNewspaper(null);
   }, [subdivisionCountry, subdivisionMode]);
   // Set of NAME values present in the current era's historical GeoJSON.
   // Populated by HistoricalMap's onDataLoaded callback. Used by the
@@ -415,6 +418,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [gridNewsAgencyId, setGridNewsAgencyId] = useState<string | null>(null);
   // A national news agency picked in the "National symbols" tab of subdivision view.
   const [selectedSubdivisionNewsAgency, setSelectedSubdivisionNewsAgency] = useState<NewsAgency | null>(null);
+  // A top national newspaper picked in the "National symbols" tab of subdivision view.
+  const [selectedSubdivisionNewspaper, setSelectedSubdivisionNewspaper] = useState<Newspaper | null>(null);
 
   const chooseGridContentType = (type: GridContentType) => {
     setGridContentType(type);
@@ -2572,6 +2577,22 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             </aside>
           )}
 
+          {/* ===== NEWSPAPER box — a top national newspaper picked in the "National symbols"
+              tab. Same treatment as National symbols, Political parties, airlines,
+              broadcasters, tourism logos, and news agencies: its own widget below the fact-sheet, highlighting nothing
+              on the map. ===== */}
+          {selectedSubdivisionNewspaper && (
+            <aside className="learn-fs__panel" aria-live="polite">
+              <div className="learn-fs__detail">
+                <NewspaperDetails
+                  newspaper={selectedSubdivisionNewspaper}
+                  baseUrl={baseUrl}
+                  onEnlarge={setZoomedFlagUrl}
+                />
+              </div>
+            </aside>
+          )}
+
           {/* ===== NATIONAL-CAPITAL box — for a national capital that heads no
               subdivision (Ottawa, Pretoria, Amsterdam …), selected from the
               hierarchy chart. It has no subdivision fact-sheet, so this small card
@@ -2818,6 +2839,13 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               // Same toggle behaviour as national symbol / party / airline / broadcaster / tourism logo:
               // clicking the open agency's card again closes its widget.
               setSelectedSubdivisionNewsAgency((cur) => (cur?.id === agency.id ? null : agency));
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            selectedNewspaperId={selectedSubdivisionNewspaper?.id ?? null}
+            onSelectNewspaper={(paper) => {
+              // Same toggle behaviour as national symbol / party / airline / broadcaster / tourism logo / news agency:
+              // clicking the open newspaper's card again closes its widget.
+              setSelectedSubdivisionNewspaper((cur) => (cur?.id === paper.id ? null : paper));
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           />

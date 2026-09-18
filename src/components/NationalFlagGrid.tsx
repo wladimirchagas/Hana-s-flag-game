@@ -11,6 +11,8 @@ import { tourismLogosForCountry } from "../lib/tourismLogos";
 import type { TourismLogo } from "../types/tourismLogo";
 import { newsAgenciesForCountry } from "../lib/nationalNewsAgencies";
 import type { NewsAgency } from "../types/newsAgency";
+import { newspapersForCountry } from "../lib/nationalNewspapers";
+import type { Newspaper } from "../types/newspaper";
 import { GridImage } from "./GridImage";
 
 /**
@@ -124,12 +126,15 @@ type Props = {
   selectedTourismLogoId?: string | null;
   /** id of the national news agency whose widget is open (if any). */
   selectedNewsAgencyId?: string | null;
+  /** id of the top newspaper whose widget is open (if any). */
+  selectedNewspaperId?: string | null;
   baseUrl: string;
   onSelect: (flag: NationalFlag) => void;
   onSelectAirline?: (airline: CommercialAirline) => void;
   onSelectBroadcaster?: (broadcaster: PublicBroadcaster) => void;
   onSelectTourismLogo?: (logo: TourismLogo) => void;
   onSelectNewsAgency?: (agency: NewsAgency) => void;
+  onSelectNewspaper?: (newspaper: Newspaper) => void;
 };
 
 export function NationalFlagGrid({
@@ -140,12 +145,14 @@ export function NationalFlagGrid({
   selectedBroadcasterId,
   selectedTourismLogoId,
   selectedNewsAgencyId,
+  selectedNewspaperId,
   baseUrl,
   onSelect,
   onSelectAirline,
   onSelectBroadcaster,
   onSelectTourismLogo,
   onSelectNewsAgency,
+  onSelectNewspaper,
 }: Props) {
   const countryGroups = useMemo(
     () => groupFlags(NATIONAL_FLAGS[countryCode] ?? []),
@@ -162,6 +169,7 @@ export function NationalFlagGrid({
   const broadcasters = useMemo(() => broadcastersForCountry(countryCode), [countryCode]);
   const tourismLogos = useMemo(() => tourismLogosForCountry(countryCode), [countryCode]);
   const newsAgencies = useMemo(() => newsAgenciesForCountry(countryCode), [countryCode]);
+  const newspapers = useMemo(() => newspapersForCountry(countryCode), [countryCode]);
 
   if (
     countryGroups.length === 0 &&
@@ -169,7 +177,8 @@ export function NationalFlagGrid({
     airlines.length === 0 &&
     broadcasters.length === 0 &&
     tourismLogos.length === 0 &&
-    newsAgencies.length === 0
+    newsAgencies.length === 0 &&
+    newspapers.length === 0
   ) {
     return (
       <p className="flag-grid__no-match">
@@ -385,6 +394,56 @@ export function NationalFlagGrid({
                         <AutoFitName className="flag-grid__name-text" text={agency.name} />
                         <span className="flag-grid__flag-sub">
                           Founded {agency.founded}
+                        </span>
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      )}
+
+      {newspapers.length > 0 && (
+        <div className="flag-grid__groups">
+          <div className="flag-grid__group">
+            <h4 className="flag-grid__group-heading">
+              <span className="flag-grid__group-name">Top newspapers</span>
+              <span className="flag-grid__group-count">({newspapers.length})</span>
+            </h4>
+            <ul className="flag-grid__list">
+              {newspapers.map((paper) => {
+                const active = paper.id === selectedNewspaperId;
+                const logoUrl = paper.logo ? `${baseUrl}${paper.logo.replace(/^\//, "")}` : null;
+                return (
+                  <li key={paper.id} className="flag-grid__item">
+                    <button
+                      type="button"
+                      className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
+                      onClick={() => onSelectNewspaper?.(paper)}
+                      aria-pressed={active}
+                      aria-label={`Show ${paper.name}`}
+                    >
+                      <span className="flag-grid__thumb">
+                        {logoUrl ? (
+                          <GridImage
+                            src={logoUrl}
+                            alt=""
+                            draggable={false}
+                            className="flag-grid__thumb-img"
+                            onError={(e) => { e.currentTarget.style.display = "none"; }}
+                          />
+                        ) : (
+                          <span className="flag-grid__no-image" aria-hidden="true">
+                            No logo
+                          </span>
+                        )}
+                      </span>
+                      <span className="flag-grid__name">
+                        <AutoFitName className="flag-grid__name-text" text={paper.name} />
+                        <span className="flag-grid__flag-sub">
+                          Founded {paper.founded}
                         </span>
                       </span>
                     </button>

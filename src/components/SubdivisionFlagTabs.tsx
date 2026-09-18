@@ -13,6 +13,7 @@ import { airlinesForCountry } from "../lib/commercialAirlines";
 import { broadcastersForCountry } from "../lib/publicBroadcasters";
 import { tourismLogosForCountry } from "../lib/tourismLogos";
 import { newsAgenciesForCountry } from "../lib/nationalNewsAgencies";
+import { newspapersForCountry } from "../lib/nationalNewspapers";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning } from "../data/flagMeanings";
 import type { PoliticalParty } from "../data/politicalParties";
@@ -20,6 +21,7 @@ import type { CommercialAirline } from "../types/airline";
 import type { PublicBroadcaster } from "../types/broadcaster";
 import type { TourismLogo } from "../types/tourismLogo";
 import type { NewsAgency } from "../types/newsAgency";
+import type { Newspaper } from "../types/newspaper";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 
 /**
@@ -132,6 +134,9 @@ type Props = {
   /** id of the national news agency whose widget is open (if any). */
   selectedNewsAgencyId?: string | null;
   onSelectNewsAgency?: (agency: NewsAgency) => void;
+  /** id of the top newspaper whose widget is open (if any). */
+  selectedNewspaperId?: string | null;
+  onSelectNewspaper?: (newspaper: Newspaper) => void;
   /** A collective subdivision-group flag (Malaysia's Federal Territories), shown
    *  in the hierarchy — opens its own widget with its sourced meaning. */
   onSelectGroupFlag: (flag: NationalFlag, meaning: FlagMeaning | null) => void;
@@ -164,6 +169,8 @@ export function SubdivisionFlagTabs({
   onSelectTourismLogo,
   selectedNewsAgencyId,
   onSelectNewsAgency,
+  selectedNewspaperId,
+  onSelectNewspaper,
   onSelectGroupFlag,
   selectedPartyId,
   onSelectParty,
@@ -197,7 +204,8 @@ export function SubdivisionFlagTabs({
       airlinesForCountry(countryCode).length +
       broadcastersForCountry(countryCode).length +
       tourismLogosForCountry(countryCode).length +
-      newsAgenciesForCountry(countryCode).length,
+      newsAgenciesForCountry(countryCode).length +
+      newspapersForCountry(countryCode).length,
     [countryCode],
   );
   // Coverage grows via an incremental sourced sweep (see politicalParties.ts) —
@@ -309,12 +317,14 @@ export function SubdivisionFlagTabs({
             selectedBroadcasterId={selectedBroadcasterId}
             selectedTourismLogoId={selectedTourismLogoId}
             selectedNewsAgencyId={selectedNewsAgencyId}
+            selectedNewspaperId={selectedNewspaperId}
             baseUrl={baseUrl}
             onSelect={onSelectNationalFlag}
             onSelectAirline={onSelectAirline}
             onSelectBroadcaster={onSelectBroadcaster}
             onSelectTourismLogo={onSelectTourismLogo}
             onSelectNewsAgency={onSelectNewsAgency}
+            onSelectNewspaper={onSelectNewspaper}
           />
         )}
         {activeTab === "tree" && (
