@@ -161,6 +161,8 @@ type Props = {
   /** When provided, these city markers (national capital(s) + largest city)
    *  are plotted at constant pixel size over the map. */
   cityOverlay?: PlacedCity[] | null;
+  /** Optional content rendered directly below the map frame (e.g. Democracy Index legend). */
+  belowMapNode?: React.ReactNode;
 };
 
 // HARD RULE — disputed/claimed landmass colour.
@@ -411,6 +413,7 @@ export function WorldProgressMap({
   flagOverlay = null,
   fillOverride = null,
   cityOverlay = null,
+  belowMapNode = null,
 }: Props) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -1117,6 +1120,9 @@ export function WorldProgressMap({
           {extraControls}
         </div>
       </div>
+      {belowMapNode && (
+        <div className="world-map__below-node">{belowMapNode}</div>
+      )}
     </section>
   );
 }

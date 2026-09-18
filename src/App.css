@@ -3025,9 +3025,14 @@
   gap: 0.35rem;
 }
 
+.world-map__below-node {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
 .democracy-map-legend {
   position: relative;
-  margin: 0.65rem auto 0;
+  margin: 0 auto;
   width: 100%;
   max-width: 960px;
   display: flex;

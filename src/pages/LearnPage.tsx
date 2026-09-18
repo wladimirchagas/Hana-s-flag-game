@@ -1916,6 +1916,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             flagOverlay={modernFlagOverlay}
             fillOverride={democracyColorOverlay ?? passportColorOverlay}
             cityOverlay={worldCityOverlay}
+            belowMapNode={
+              isModernEra && democracyMapMode ? (
+                <DemocracyMapLegend mode={democracyMapMode} />
+              ) : null
+            }
           />
         ) : (
           <HistoricalMap
@@ -1941,9 +1946,6 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             // its whole territory as one polity. No geometry is involved.
             groupKeyOf={historicalGroupKeyOf}
           />
-        )}
-        {isModernEra && democracyMapMode && (
-          <DemocracyMapLegend mode={democracyMapMode} />
         )}
       </div>
 
