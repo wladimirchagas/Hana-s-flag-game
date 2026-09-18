@@ -350,7 +350,7 @@ export function NationalFlagGrid({
         <div className="flag-grid__groups">
           <div className="flag-grid__group">
             <h4 className="flag-grid__group-heading">
-              <span className="flag-grid__group-name">Top newspapers</span>
+              <span className="flag-grid__group-name">National news agencies</span>
               <span className="flag-grid__group-count">({newsAgencies.length})</span>
             </h4>
             <ul className="flag-grid__list">

@@ -29,7 +29,7 @@ export const GRID_CONTENT_TYPE_LABELS: Record<GridContentType, string> = {
   airline: "Commercial airlines",
   broadcaster: "Public broadcasters",
   tourismlogo: "Tourism logos",
-  newsagency: "Top newspapers",
+  newsagency: "National news agencies",
 };
 
 export const GRID_CONTENT_TYPE_ORDER: readonly GridContentType[] = [
