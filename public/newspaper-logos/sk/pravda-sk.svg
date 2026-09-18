@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+
+  <rect width="320" height="100" fill="#ffffff" rx="8"/>
+  <rect x="0" y="0" width="320" height="100" fill="none" stroke="#d52b1e" stroke-width="2" rx="8"/>
+  <text x="160" y="65" fill="#d52b1e" font-family="Georgia, serif" font-size="42" font-weight="900" letter-spacing="2" text-anchor="middle">Pravda</text>
+  <circle cx="250" cy="40" r="5" fill="#0b4ea2"/>
+  <text x="260" y="65" fill="#0b4ea2" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="800">.sk</text>
+
+</svg>

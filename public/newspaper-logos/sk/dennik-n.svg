@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+
+  <rect width="320" height="100" fill="#111111" rx="8"/>
+  <rect x="25" y="25" width="50" height="50" fill="#e30613" rx="4"/>
+  <text x="50" y="62" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="38" font-weight="900" text-anchor="middle">N</text>
+  <text x="92" y="58" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="30" font-weight="900" letter-spacing="1">DENNÍK N</text>
+
+</svg>

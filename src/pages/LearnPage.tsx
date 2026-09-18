@@ -1943,10 +1943,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           />
         )}
         {isModernEra && democracyMapMode && (
-          <DemocracyMapLegend
-            mode={democracyMapMode}
-            onClose={() => setDemocracyMapMode(null)}
-          />
+          <DemocracyMapLegend mode={democracyMapMode} />
         )}
       </div>
 

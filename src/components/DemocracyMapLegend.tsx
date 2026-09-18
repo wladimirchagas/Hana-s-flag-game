@@ -6,10 +6,9 @@ import {
 
 export type DemocracyMapLegendProps = {
   mode: DemocracyMapMode;
-  onClose: () => void;
 };
 
-export function DemocracyMapLegend({ mode, onClose }: DemocracyMapLegendProps) {
+export function DemocracyMapLegend({ mode }: DemocracyMapLegendProps) {
   if (!mode) return null;
 
   const title = getDemocracyLegendTitle(mode);
@@ -17,18 +16,7 @@ export function DemocracyMapLegend({ mode, onClose }: DemocracyMapLegendProps) {
 
   return (
     <div className="democracy-map-legend" role="region" aria-label={`${title} map legend`}>
-      <div className="democracy-map-legend__header">
-        <span className="democracy-map-legend__title">{title}</span>
-        <button
-          type="button"
-          className="democracy-map-legend__close"
-          onClick={onClose}
-          aria-label="Hide democracy map layer"
-          title="Hide democracy map layer"
-        >
-          ×
-        </button>
-      </div>
+      <span className="democracy-map-legend__title">{title}:</span>
       <ul className="democracy-map-legend__list">
         {items.map((item) => (
           <li key={item.label} className="democracy-map-legend__item">
