@@ -105,6 +105,22 @@ assert.equal(
   "subcontinent must be available for historical era flags",
 );
 
+// Verify democracy group modes are available for all modern content types
+for (const ct of ALL_CONTENT_TYPES) {
+  for (const demoMode of ["freedom-house", "v-dem", "economist"]) {
+    assert.equal(
+      groupModeAvailableFor(demoMode, ct, true),
+      true,
+      `${demoMode} must be available for ${ct} (modern era)`,
+    );
+    assert.equal(
+      groupModeAvailableFor(demoMode, ct, false),
+      false,
+      `${demoMode} must NOT be available for historical era`,
+    );
+  }
+}
+
 // Verify by-country is only available for airline, broadcaster, tourismlogo and newsagency in modern era
 for (const ct of ALL_CONTENT_TYPES) {
   const expected =

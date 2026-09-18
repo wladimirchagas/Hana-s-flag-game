@@ -51,6 +51,7 @@ import { allCommercialAirlines } from "../lib/commercialAirlines";
 import { allPublicBroadcasters } from "../lib/publicBroadcasters";
 import { allTourismLogos } from "../lib/tourismLogos";
 import { allNationalNewsAgencies } from "../lib/nationalNewsAgencies";
+import { COUNTRY_FACTS } from "../data/countryFacts";
 
 import { GridImage } from "./GridImage";
 
@@ -125,7 +126,10 @@ type GroupMode =
   | "passport-color"
   | "wc-men"
   | "wc-women"
-  | "by-country";
+  | "by-country"
+  | "freedom-house"
+  | "v-dem"
+  | "economist";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -138,6 +142,9 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   similarity: "By similarity",
   "drive-side": "By driving side",
   "aspect-ratio": "By aspect ratio",
+  "freedom-house": "Freedom House rating",
+  "v-dem": "V-Dem regime type",
+  economist: "The Economist Democracy Index",
   // Passports-view only — buckets by the passport cover's colour family.
   "passport-color": "By colour",
   // Football-crests-view only — buckets by FIFA World Cup titles won.
@@ -190,16 +197,24 @@ const FOOTBALL_CREST_ONLY_MODES = new Set<GroupMode>(["wc-men", "wc-women"]);
 // Modes offered in the Commercial-airlines, Public-broadcasters and Tourism-logos views — group by country.
 const COUNTRY_GROUP_MODES = new Set<GroupMode>(["by-country"]);
 
+// Modes offered across all modern-era content types — group by Democracy ratings/indices.
+const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
+  "freedom-house",
+  "v-dem",
+  "economist",
+]);
+
 /** Whether a grouping mode is offered for the given view. The flag-appearance
  *  modes (shape/family/colour/…) describe a FLAG and show only in the modern
  *  flag view; "passport-color" shows only in the Passports view; "by-country"
  *  shows in the Airlines, Broadcasters and Tourism-logos views; everything else
- *  (A–Z, continent, sub-continent) applies to any country-level item. */
+ *  (A–Z, continent, sub-continent, democracy indices) applies to any country-level item. */
 function groupModeAvailableFor(
   m: GroupMode,
   contentType: GridContentType,
   isModernEra: boolean,
 ): boolean {
+  if (DEMOCRACY_GROUP_MODES.has(m)) return isModernEra;
   if (COUNTRY_GROUP_MODES.has(m)) {
     return (
       isModernEra &&
@@ -214,6 +229,29 @@ function groupModeAvailableFor(
   if (TODAY_ONLY_MODES.has(m)) return isModernEra && contentType === "flag";
   return true;
 }
+
+const FREEDOM_HOUSE_ORDER: Record<string, number> = {
+  "Free": 1,
+  "Partly Free": 2,
+  "Not Free": 3,
+  "Not rated": 4,
+};
+
+const V_DEM_ORDER: Record<string, number> = {
+  "Liberal Democracy": 1,
+  "Electoral Democracy": 2,
+  "Electoral Autocracy": 3,
+  "Closed Autocracy": 4,
+  "Not rated": 5,
+};
+
+const ECONOMIST_ORDER: Record<string, number> = {
+  "Full democracy": 1,
+  "Flawed democracy": 2,
+  "Hybrid regime": 3,
+  "Authoritarian": 4,
+  "Not rated": 5,
+};
 
 /** Heading for a World-Cup-titles bucket: "5 World Cup titles" / "1 World Cup
  *  title", or the catch-all "No World Cup title" for associations that have
@@ -605,6 +643,51 @@ export function FlagGrid({
       // men's title); everyone else falls into "No World Cup title".
       const titles = groupMode === "wc-men" ? MENS_WORLD_CUP_TITLES : WOMENS_WORLD_CUP_TITLES;
       for (const e of sorted) push(worldCupBucket(titles[e.id] ?? 0), e);
+    } else if (groupMode === "freedom-house") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.freedomHouse?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "v-dem") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.vDem?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "economist") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.economist?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    }
+
+    if (groupMode === "freedom-house" || groupMode === "v-dem" || groupMode === "economist") {
+      for (const [, items] of buckets) {
+        items.sort((a, b) => {
+          const codeA = (a.selectId || a.id || a.worldMapCode || "").toUpperCase();
+          const codeB = (b.selectId || b.id || b.worldMapCode || "").toUpperCase();
+          const factsA = COUNTRY_FACTS[codeA]?.democracy;
+          const factsB = COUNTRY_FACTS[codeB]?.democracy;
+          const indexA =
+            groupMode === "freedom-house"
+              ? factsA?.freedomHouse
+              : groupMode === "v-dem"
+              ? factsA?.vDem
+              : factsA?.economist;
+          const indexB =
+            groupMode === "freedom-house"
+              ? factsB?.freedomHouse
+              : groupMode === "v-dem"
+              ? factsB?.vDem
+              : factsB?.economist;
+          const rankA = indexA?.rank ?? Infinity;
+          const rankB = indexB?.rank ?? Infinity;
+          if (rankA !== rankB) return rankA - rankB;
+          return a.name.localeCompare(b.name, "en");
+        });
+      }
     }
 
     // Sort the bucket list.
@@ -659,6 +742,21 @@ export function FlagGrid({
         // Most titles first; "No World Cup title" last.
         const oa = worldCupHeadingOrder(a);
         const ob = worldCupHeadingOrder(b);
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "freedom-house") {
+        const oa = FREEDOM_HOUSE_ORDER[a] ?? 99;
+        const ob = FREEDOM_HOUSE_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "v-dem") {
+        const oa = V_DEM_ORDER[a] ?? 99;
+        const ob = V_DEM_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "economist") {
+        const oa = ECONOMIST_ORDER[a] ?? 99;
+        const ob = ECONOMIST_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "alpha") {
