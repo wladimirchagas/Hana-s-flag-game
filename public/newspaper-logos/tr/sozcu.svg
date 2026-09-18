@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="120" fill="#1b1b1b"/>
+  <text x="30" y="74" font-family="'Arial Black', sans-serif" font-size="52" fill="#e30a17">SÖZCÜ</text>
+  <line x1="30" y1="84" x2="370" y2="84" stroke="#ffffff" stroke-width="1"/>
+  <text x="30" y="102" font-family="'Arial', sans-serif" font-size="10" font-weight="600" fill="#cccccc" letter-spacing="2">SÖZCÜ SUSARSA TÜRKİYE SUSAR</text>
+</svg>

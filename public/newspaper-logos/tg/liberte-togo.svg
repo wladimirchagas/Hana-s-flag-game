@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="120" fill="#ffffff"/>
+  <text x="30" y="66" font-family="'Times New Roman', 'Georgia', serif" font-size="44" font-weight="bold" fill="#d32f2f">LIBERTÉ</text>
+  <text x="210" y="66" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="300" fill="#212121">TOGO</text>
+  <line x1="30" y1="78" x2="370" y2="78" stroke="#d32f2f" stroke-width="1.5"/>
+  <text x="30" y="96" font-family="'Arial', sans-serif" font-size="10" font-weight="600" fill="#616161" letter-spacing="2">QUOTIDIEN D'INVESTIGATION ET D'ANALYSES</text>
+</svg>
