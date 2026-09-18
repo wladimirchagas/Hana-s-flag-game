@@ -3870,4 +3870,125 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_North_Korea", "https://rockyroadtravel.com/korea-international-travel-company/"],
     },
   ],
+  KI: [
+    {
+      id: "ki-kiribati-national-tourism-office",
+      countryCode: "KI",
+      name: "Kiribati National Tourism Office",
+      agency: "Kiribati National Tourism Office (KNTO)",
+      visitors: {
+        count: 12000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Kiribati)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Symbols of Kiribati, Category:Culture of Kiribati) for a Kiribati National Tourism Office logo — no freely-licensed copy could be found.",
+      sources: ["https://www.kiribatitourism.gov.ki/kiribati-national-tourism-office/"],
+    },
+  ],
+  MH: [
+    {
+      id: "mh-marshall-islands-visitors-authority",
+      countryCode: "MH",
+      name: "Marshall Islands Visitors Authority",
+      agency: "Marshall Islands Visitors Authority (MIVA)",
+      visitors: {
+        count: 6100,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Marshall Islands)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tourism in the Marshall Islands) for a Marshall Islands Visitors Authority (MIVA) logo — no freely-licensed copy could be found.",
+      sources: ["https://www.micronesiatour.com/marshall-islands-visitors-authority-miva"],
+    },
+  ],
+  PW: [
+    {
+      id: "pw-palau-visitors-authority",
+      countryCode: "PW",
+      name: "Palau Visitors Authority",
+      agency: "Palau Visitors Authority (PVA)",
+      launched: 1982,
+      visitors: {
+        count: 18400,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Palau)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for the Palau Visitors Authority's (PVA, established under the Tourism Re-Organization Act of 1982) logo — the only file found, \"Palau Visitors Authority.JPG\", is a 2011 photograph of the PVA's office building in Koror, not the organisation's logo, so no freely-licensed copy of an actual logo could be confirmed.",
+      sources: ["https://pristineparadisepalau.com/palau-visitors-authority/"],
+    },
+  ],
+  ST: [
+    {
+      id: "st-sao-tome-tourism",
+      countryCode: "ST",
+      name: "São Tomé e Príncipe Tourism",
+      agency: "Direção Geral do Turismo, São Tomé and Príncipe",
+      visitors: {
+        count: 33400,
+        year: 2018,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for São Tomé and Príncipe)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons for a São Tomé and Príncipe national tourism logo — a nature-themed consumer destination brand (forest, turtles, whales, parrots and the traditional Roça plantation houses) was designed for the country by the agency Extractdesign, but no freely-licensed copy of it could be found on Commons.",
+      sources: ["https://www.extractdesign.com/case-studies/saotomeeprincipe/"],
+    },
+  ],
+  TO: [
+    {
+      id: "to-tonga-tourism-authority",
+      countryCode: "TO",
+      name: "Tonga Tourism Authority",
+      agency: "Tonga Tourism Authority",
+      visitors: {
+        count: 94000,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Tonga)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Tonga) for a Tonga Tourism Authority logo — no freely-licensed copy could be found; the only similarly-named files on Commons (\"Matangi Tonga\") belong to an unrelated news magazine.",
+      sources: ["https://www.tongatourism.gov.to/"],
+    },
+  ],
+  TV: [
+    {
+      id: "tv-timeless-tuvalu",
+      countryCode: "TV",
+      name: "Timeless Tuvalu",
+      slogan: "Timeless Tuvalu",
+      agency: "Tuvalu Department of Tourism",
+      visitors: {
+        count: 3600,
+        year: 2019,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Tuvalu)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Tuvalu, which holds only .tv domain-registry logos, no tourism-related file) for the \"Timeless Tuvalu\" destination brand — no freely-licensed copy could be found.",
+      sources: ["https://www.timelesstuvalu.com/about-us/"],
+    },
+  ],
+  WS: [
+    {
+      id: "ws-samoa-tourism-authority",
+      countryCode: "WS",
+      name: "Samoa Tourism Authority",
+      agency: "Samoa Tourism Authority (STA)",
+      visitors: {
+        count: 23900,
+        year: 2020,
+        metric:
+          "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Samoa)",
+      },
+      noImageReason:
+        "Searched Wikimedia Commons (Category:Logos of Samoa, which holds only a newspaper and an Olympic-committee logo, neither tourism-related) for the Samoa Tourism Authority's logo (refreshed to a full-colour version in late 2018) — no freely-licensed copy could be found; the only file matching \"Samoa Tourism\" is a 2009 photograph of the STA's office building, not a logo.",
+      sources: ["https://en.wikipedia.org/wiki/Samoa_Tourism_Authority", "https://www.samoatourism.org/"],
+    },
+  ],
 };
