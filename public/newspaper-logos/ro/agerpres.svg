@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+
+  <rect width="320" height="100" fill="#002b7f" rx="8"/>
+  <rect x="25" y="25" width="50" height="50" fill="#fcd116" rx="6"/>
+  <text x="50" y="62" fill="#002b7f" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="36" font-weight="900" text-anchor="middle">A</text>
+  <text x="92" y="58" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="32" font-weight="800" letter-spacing="2">AGERPRES</text>
+  <text x="94" y="76" fill="#ce1126" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" letter-spacing="1">AGENCY OF ROMANIA</text>
+
+</svg>

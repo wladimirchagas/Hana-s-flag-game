@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100" width="360" height="100">
+
+  <rect width="360" height="100" fill="#ffffff" rx="8"/>
+  <rect x="24" y="24" width="52" height="52" fill="#000000" rx="4"/>
+  <rect x="34" y="34" width="32" height="10" fill="#ffcc00"/>
+  <text x="88" y="60" fill="#000000" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">wyborcza</text>
+  <circle cx="258" cy="40" r="5" fill="#dc143c"/>
+  <text x="268" y="60" fill="#dc143c" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">.pl</text>
+
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+
+  <rect width="320" height="100" fill="#002b49" rx="8"/>
+  <circle cx="65" cy="50" r="22" fill="#e30613"/>
+  <text x="65" y="58" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="900" text-anchor="middle">L</text>
+  <text x="105" y="62" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="40" font-weight="800" letter-spacing="2">LUSA</text>
+  <text x="107" y="78" fill="#99badd" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" letter-spacing="1">AGÊNCIA DE NOTÍCIAS</text>
+
+</svg>

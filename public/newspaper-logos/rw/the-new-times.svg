@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100" width="360" height="100">
+
+  <rect width="360" height="100" fill="#002040" rx="8"/>
+  <text x="180" y="55" fill="#ffffff" font-family="Georgia, serif" font-size="30" font-weight="700" letter-spacing="1" text-anchor="middle">The New Times</text>
+  <text x="180" y="78" fill="#00a1de" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">RWANDA’S LEADING DAILY</text>
+
+</svg>
