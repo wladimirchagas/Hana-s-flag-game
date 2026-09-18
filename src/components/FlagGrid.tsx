@@ -136,6 +136,9 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   alpha: "A–Z",
   continent: "By continent",
   subcontinent: "By sub-continent",
+  // Commercial-airlines/Public-broadcasters/Tourism-logos/News-agencies view — groups by country.
+  // Kept immediately after "By sub-continent" so it always appears directly below it in the dropdown.
+  "by-country": "By country",
   shape: "By characteristics",
   family: "By family",
   color: "By colour",
@@ -150,8 +153,6 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   // Football-crests-view only — buckets by FIFA World Cup titles won.
   "wc-men": "FIFA Men's World Cups",
   "wc-women": "FIFA Women's World Cups",
-  // Commercial-airlines/Tourism-logos-view only — groups by country.
-  "by-country": "By country",
 };
 
 // The chosen grouping is remembered across visits (per the UX revision: the
