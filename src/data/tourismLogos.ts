@@ -537,13 +537,17 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Croatia)",
       },
-      noImageReason:
-        "\"Croatia, Full of Life\" (a hand-painted brushstroke wordmark, developed by a BBDO agency consortium) replaced the earlier \"The Mediterranean As It Once Was\" slogan — but searching Wikimedia Commons and the Croatian Wikidata item found no freely-licensed copy of the logo on Commons or Wikipedia; copies found on commercial clip-art sites carry no verifiable licence. Re-checked 2026-09 against the board's OWN consumer site (https://croatia.hr/en-GB) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/hr/croatia.webp",
+      logoExplainer:
+        "The Croatian National Tourist Board's destination mark: the word \"CROATIA\" in rough hand-painted capitals, the letters alternating orange, blue and yellow, with the first A reversed out in white on a blue block, a red-orange painted square above the word and a blue brush stroke trailing off the final letters like water. The faint line \"Croatian National Tourist Board\" sits beneath. The brush-painted treatment and the Adriatic blue carry the board's \"Full of Life\" campaign.",
       sources: [
         "https://www.hina.hr/news/8593016",
         "https://total-croatia-news.com/news/travel/croatia-full-of-life/",
         "https://www.wikidata.org/wiki/Q224",
+        "https://croatia.hr/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Croatian National Tourist Board (Hrvatska turistička zajednica), taken from its official croatia.hr site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   CZ: [
@@ -664,7 +668,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "bi-tourism-office",
       countryCode: "BI",
-      name: "Office National du Tourisme (Burundi)",
+      name: "Burundi — \"Heart of Africa\"",
       agency: "Office National du Tourisme, Burundi's national tourism authority",
       visitors: {
         count: 299000,
@@ -672,9 +676,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Burundi)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons, the English Wikipedia article for \"Tourism in Burundi\", and general web search — no distinct tourism-board logo or destination-marketing brand mark could be found; Burundi's tourism promotion has no documented consumer-facing brand comparable to Malaysia's or Indonesia's. Re-checked 2026-09 against the board's OWN official site (https://burundi-tourisme.com/) — the source family that yielded the destination brand for 94 other countries — but the domain does not resolve or refuses connections from this environment, so no image bytes could be retrieved.",
-      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Burundi"],
+      logo: "/tourism-logos/bi/burundi-heart-of-africa.png",
+      logoExplainer:
+        "Burundi's destination mark: the country's outline drawn in red and green enclosing a heart shape, with a traditional Burundian drum above it and the words \"Burundi\" and \"Heart of Africa\" in red and green script. The karyenda drum is Burundi's central national symbol — its drummers are inscribed on UNESCO's intangible-heritage list — and the heart makes the slogan literal while nodding to the country's position in the middle of the continent.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Burundi", "https://www.tourisme.gov.bi/"],
+      licenceNote:
+        "Copyrighted brand mark of Burundi's Office National du Tourisme, bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   BJ: [
@@ -1087,12 +1094,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Bangladesh)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia article for the Bangladesh Tourism Board (whose infobox carries no logo image) — no freely-licensed logo for the Board's own consumer-facing brand could be found. Its predecessor body, the Bangladesh Parjatan Corporation, does have a bundled Commons logo, but that is a separate, older state-owned tourism CORPORATION (it operates hotels/motels under the Parjatan name) rather than the Board's own destination-marketing mark, so it is not used here — the same distinction this repo draws between a federation's corporate logo and a team's own crest. Re-checked 2026-09 against the board's OWN official site (https://www.tourismboard.gov.bd/) — the source family that yielded the destination brand for 94 other countries — but it returned HTTP 503, so no image bytes could be retrieved.",
+      logo: "/tourism-logos/bd/bangladesh-tourism-board.png",
+      logoExplainer:
+        "The mark of the Bangladesh Tourism Board, the country's national tourism organisation: the word \"Bangladesh\" in a flowing green script whose initial B is drawn as an open curve, above a red bar carrying \"Tourism Board\" in white and the line \"National Tourism Organization\" beneath. Green and red are the colours of the national flag, where a red disc sits on a green field.",
       sources: [
         "https://en.wikipedia.org/wiki/Bangladesh_Tourism_Board",
         "https://www.wikidata.org/wiki/Q28225452",
+        "https://tourismboard.gov.bd/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Bangladesh Tourism Board, taken from its official tourismboard.gov.bd site and bundled for identification of the national tourism brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   AE: [
@@ -1514,7 +1525,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "om-ministry-of-heritage-and-tourism",
       countryCode: "OM",
-      name: "Oman Ministry of Heritage and Tourism",
+      name: "Experience Oman",
       agency: "Ministry of Heritage and Tourism, Oman",
       visitors: {
         count: 869000,
@@ -1522,12 +1533,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Oman)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Oman) and the English Wikipedia article for \"Tourism in Oman\" — no freely-licensed Ministry of Heritage and Tourism / consumer destination-brand logo could be found; Commons results returned only unrelated Omani logos (Oman Oil/OQ, Omantel, the national emblem). Re-checked 2026-09 against the board's OWN official site (https://www.mht.gov.om/) — the source family that yielded the destination brand for 94 other countries — but it returned HTTP 404, so no image bytes could be retrieved.",
+      logo: "/tourism-logos/om/experience-oman.png",
+      logoExplainer:
+        "The \"experience OMAN\" destination brand: the word \"experience\" in a dark plum lower-case above \"OMAN\" in large rounded capitals whose letters alternate between plum, terracotta and teal. The palette is drawn from Omani building stone, desert and sea rather than from the national flag, and the soft geometric letterforms echo the rounded domes of Omani architecture.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Oman",
         "https://commons.wikimedia.org/wiki/Category:Logos_of_Oman",
+        "https://www.experienceoman.om/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of Oman's Ministry of Heritage and Tourism. The live experienceoman.om domain was unreachable from this environment, so the asset was recovered from the Internet Archive's capture of that same official site. Bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   QA: [
@@ -2189,7 +2204,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "sv-ministerio-de-turismo",
       countryCode: "SV",
-      name: "El Salvador Ministry of Tourism",
+      name: "El Salvador",
       agency: "Ministerio de Turismo de El Salvador (MITUR)",
       visitors: {
         count: 707000,
@@ -2197,12 +2212,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for El Salvador)",
       },
-      noImageReason:
-        "The only bundled Wikimedia Commons file (\"Logo oficial del Ministerio de Turismo de El Salvador.png\") is confirmed on its own file page to be the Ministry's institutional government seal, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. No separate consumer tourism-brand logo (e.g. for the \"Surf City El Salvador\" campaign) could be found on Commons or Wikipedia. Re-checked 2026-09 against the board's OWN consumer site (https://www.elsalvador.travel/) — the source family that yielded the destination brand for 94 other countries — which loaded successfully but carries no destination-brand logo asset in its markup (only photography, social-media icons, or the ministry's institutional seal, which this feature does not substitute for the consumer brand).",
+      logo: "/tourism-logos/sv/el-salvador.png",
+      logoExplainer:
+        "El Salvador's destination wordmark: the words \"EL SALVADOR\" in blocky outlined capitals, each letter filled with brightly coloured naive folk-art scenes — villages, birds, flowers, figures and mountains. The style is that of La Palma, the artisan town whose painted-wood tradition founded by Fernando Llort is El Salvador's best-known craft idiom, so the country's name is written in its own folk art.",
       sources: [
         "https://commons.wikimedia.org/wiki/File:Logo_oficial_del_Ministerio_de_Turismo_de_El_Salvador.png",
         "https://en.wikipedia.org/wiki/Tourism_in_El_Salvador",
+        "https://elsalvador.travel/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of El Salvador's Ministerio de Turismo / CORSATUR, taken from the official elsalvador.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for football-association crests and passport covers.",
     },
   ],
   NI: [
@@ -2287,9 +2306,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Belize)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Belize\" — no freely-licensed Belize Tourism Board consumer-brand logo could be found on Commons or Wikipedia; the only tourism-related Commons content is a Wikivoyage banner photo category, not a logo. Re-checked 2026-09 against the board's OWN consumer site (https://travelbelize.org/) — the source family that yielded the destination brand for 94 other countries — but the domain is behind a Cloudflare bot challenge that returns HTTP 403 to every automated request, including a bare favicon, so no image bytes could be retrieved.",
-      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Belize"],
+      logo: "/tourism-logos/bz/belize-tourism-board.png",
+      logoExplainer:
+        "The Belize Tourism Board's mark: the lower-case letters \"btb\" in orange, yellow and teal, with a keel-billed toucan perched on the final b. The keel-billed toucan is Belize's national bird and appears on the country's coat of arms-bearing flag.",
+      sources: ["https://en.wikipedia.org/wiki/Tourism_in_Belize", "https://belizetourismboard.org/"],
+      licenceNote:
+        "Copyrighted brand mark of the Belize Tourism Board, taken from its official belizetourismboard.org site and bundled for identification of the national tourism brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   PG: [
@@ -2477,7 +2499,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "sr-tourism-corporation-of-suriname",
       countryCode: "SR",
-      name: "Tourism Corporation of Suriname",
+      name: "Suriname Tourism Board",
       agency: "Tourism Corporation of Suriname (STICHTING TCS)",
       visitors: {
         count: 279000,
@@ -2485,12 +2507,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Suriname)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Suriname, Category:Logos of Suriname) and the English Wikipedia article for \"Tourism in Suriname\" — no freely-licensed Suriname tourism-board consumer-brand logo could be found; Commons results returned only unrelated Surinamese logos (Telesur, Staatsolie, the ruling NDP party). Re-checked 2026-09 against the board's OWN official site (https://surinametourism.sr/) — the source family that yielded the destination brand for 94 other countries — but the domain does not resolve or refuses connections from this environment, so no image bytes could be retrieved.",
+      logo: "/tourism-logos/sr/suriname-tourism-board.png",
+      logoExplainer:
+        "The Suriname Tourism Board's mark: an oval scene of a river at sunset framed by forested banks, with a long-legged pink wading bird standing in the foreground and the words \"SURINAME TOURISM BOARD\" arched in yellow along the lower edge. Suriname's rainforest interior — more than 90% of its land area — and its river and coastal birdlife are what the country's tourism is built on.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Suriname",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Suriname",
+        "https://www.surinametourism.sr/",
       ],
+      licenceNote:
+        "Copyrighted brand mark of the Suriname Tourism Board, recovered from the Internet Archive's capture of the Board's own surinametourism.sr site after the live domain became unreachable from this environment. Bundled for identification of the national tourism brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   GY: [
@@ -3073,7 +3099,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "ro-carpathian-garden",
       countryCode: "RO",
-      name: "Explore the Carpathian Garden",
+      name: "Romania — \"Natural and Cultural\"",
       agency: "Ministry of Economy, Entrepreneurship and Tourism, Romania",
       launched: 2009,
       visitors: {
@@ -3082,12 +3108,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Romania)",
       },
-      noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Romania) and the English Wikipedia \"Tourism in Romania\" article, which names no current brand or logo. The only sourced campaign, 2009's \"Explore the Carpathian Garden\" (a green hand-drawn leaf mark), ran only until 2015 and is no longer Romania's current tourism brand, so its logo is not shown as if it still were; no freely-licensed copy of any newer brand mark could be found. Re-checked 2026-09 against the board's OWN official site (https://www.romania.travel/) — the source family that yielded the destination brand for 94 other countries — but it returned HTTP 503, so no image bytes could be retrieved.",
+      logo: "/tourism-logos/ro/romania-natural-cultural.jpg",
+      logoExplainer:
+        "Romania's destination mark: a green mountain range drawn in layered peaks above the word \"ROMANIA\" in navy capitals, the tagline \"Natural and Cultural\" beneath, and two curving green and blue lines below reading as hills and water. The Carpathians are the landscape Romanian tourism marketing leads with.",
       sources: [
         "https://www.romania-insider.com/romanias-new-tourism-brand-explore-the-carpathian-garden",
         "https://en.wikipedia.org/wiki/Tourism_in_Romania",
+        "https://www.romaniatourism.com/",
       ],
+      licenceNote:
+        "Copyrighted brand mark used by Romania's national tourism promotion, taken from the official romaniatourism.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   SA: [
