@@ -29,9 +29,9 @@ import type { TourismLogo } from "../types/tourismLogo";
 export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
   JP: [
     {
-      id: "jp-jnto",
+      id: "jp-endless-discovery",
       countryCode: "JP",
-      name: "Japan National Tourism Organization",
+      name: "Japan. Endless Discovery.",
       slogan: "Japan. Endless Discovery.",
       agency: "Japan National Tourism Organization (JNTO), an independent administrative agency",
       launched: 2010,
@@ -41,17 +41,13 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International visitor arrivals, calendar year (Japan National Tourism Organization) — a record high, 5 million more than the pre-pandemic 2019 record",
       },
-      logo: "/tourism-logos/jp/jnto.svg",
-      logoExplainer:
-        "JNTO's mark pairs the organisation's name with a red arc beneath it — the agency describes the arc as symbolising a sunrise, echoing both Japan's own \"Land of the Rising Sun\" identity and JNTO's own stated mission of developing inbound tourism.",
+      noImageReason:
+        "Searched Wikimedia Commons for the consumer-facing \"Japan. Endless Discovery.\" campaign mark (a red-and-white design pairing a cherry blossom with a sunrise arc, in use since April 2010) — no freely-licensed copy of that specific mark could be found. The only Commons file found under this topic (\"JNTO_logo.svg\") is JNTO's own plain organisational wordmark — literally just the acronym \"JNTO\" plus a red arc, with no country name, slogan or cherry-blossom motif — which reads as the agency's internal corporate identity rather than the destination brand tourists actually see, so it was not used as a substitute.",
       sources: [
-        "https://commons.wikimedia.org/wiki/File:JNTO_logo.svg",
         "https://www.jnto.go.jp/en/about-us/brand.html",
         "https://en.wikipedia.org/wiki/Japan_National_Tourism_Organization",
-        "https://www.nippon.com/en/japan-data/h02262/",
+        "https://aboutourism.wordpress.com/2010/04/17/destination-brandwatch-japan-endless-discovery/",
       ],
-      licenceNote:
-        "Freely licensed on Wikimedia Commons as a public-domain text logo (\"consists only of simple geometric shapes or text\"); carries a trademark notice for commercial use.",
     },
   ],
   SG: [
@@ -111,7 +107,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "th-amazing-thailand",
       countryCode: "TH",
-      name: "Tourism Authority of Thailand — \"Amazing Thailand\"",
+      name: "Amazing Thailand",
       slogan: "Amazing Thailand",
       agency: "Tourism Authority of Thailand (TAT), a state enterprise established 1979",
       launched: 1998,
@@ -120,17 +116,13 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         year: 2024,
         metric: "International visitor arrivals, calendar year (Tourism Authority of Thailand)",
       },
-      logo: "/tourism-logos/th/tat-emblem.png",
-      logoExplainer:
-        "TAT's circular emblem depicts a stylised skyline of Bangkok's Wat Arun (Temple of Dawn) and a royal barge beneath an arc reading \"TAT\" in Thai script, ringed by \"Tourism Authority of Thailand\" in English — the agency's own visual identity, carried on the \"Amazing Thailand\" campaign it has run continuously (with several refreshed taglines) since the slogan was coined in response to the 1997 Asian financial crisis.",
+      noImageReason:
+        "Searched Wikimedia Commons for the consumer-facing \"Amazing Thailand\" campaign wordmark (redesigned in 2015 around a smile motif) — no freely-licensed copy of that specific mark could be found. TAT's own circular organisational emblem (a Wat Arun/royal-barge silhouette ringed by \"Tourism Authority of Thailand\") is freely licensed, but it is the agency's institutional seal, not the destination brand tourists see, so it was not used as a substitute; a separate \"Thailand Logo.svg\" file found in this search is confirmed by its own Commons description to be an unofficial fan-made graphic (\"a logo representing Thailand, use for anything\"), not an authoritative source, so it was rejected outright.",
       sources: [
-        "https://commons.wikimedia.org/wiki/File:Emblem_of_Tourism_Authority_of_Thailand.svg",
         "https://en.wikipedia.org/wiki/Amazing_Thailand",
+        "https://www.tatnews.org/2015/11/tat-launches-new-amazing-thailand-logo-at-wtm-2015/",
         "https://en.wikipedia.org/wiki/Tourism_Authority_of_Thailand",
-        "https://www.tatnews.org/2024/12/thailand-welcomes-over-35-million-visitors-in-2024-a-milestone-paving-the-way-for-2025/",
       ],
-      licenceNote:
-        "Freely licensed on Wikimedia Commons under the Thai copyright exemption for government logos and emblems. Bundled here as a raster export (via Wikimedia's own thumbnail renderer) after the original SVG could not be downloaded directly within this session's rate limits.",
     },
   ],
   GE: [
@@ -728,30 +720,26 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
   ],
   AU: [
     {
-      id: "au-tourism-australia",
+      id: "au-come-and-say-gday",
       countryCode: "AU",
-      name: "Tourism Australia",
+      name: "Come and Say G'day",
       slogan: "Come and Say G'day",
       agency:
         "Tourism Australia — the Australian Government's tourism-marketing statutory authority, established under the Tourism Australia Act 2004",
-      launched: 2012,
+      launched: 2022,
       visitors: {
         count: 7630000,
         year: 2024,
         metric:
           "International short-term visitor arrivals, calendar year (Australian Bureau of Statistics, Overseas Arrivals and Departures)",
       },
-      logo: "/tourism-logos/au/tourism-australia.svg",
-      logoExplainer:
-        "Interbrand redesigned Tourism Australia's kangaroo brandmark in 2012, replacing the organisation's earlier 2004 logo. The leaping kangaroo was redrawn as a single simplified silhouette with a new relationship to a rising sun behind it, rendered in a multi-coloured palette of blues, greens, reds and oranges chosen to represent Australia's coastlines and rainforests as well as its outback 'red centre' — broadening the brand beyond the desert imagery the earlier mark leaned on.",
+      noImageReason:
+        "Tourism Australia maintains separate corporate, campaign and country logo lockups of its kangaroo brandmark (per its own 2012 Interbrand redesign brief) — the file found on Commons/Wikipedia is the CORPORATE lockup, reading \"TOURISM AUSTRALIA\" (the statutory authority's own name), not the consumer-facing lockup shown in \"Come and Say G'day\" and other campaign advertising. No freely-licensed copy of the campaign or bare-country lockup could be found, so the corporate one was not used as a substitute.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_Australia",
         "https://www.designweek.co.uk/issues/may-2012/interbrand-creates-new-identity-for-tourism-australia/",
-        "https://www.abs.gov.au/statistics/industry/tourism-and-transport/overseas-arrivals-and-departures-australia",
         "https://www.tourism.australia.com/en/news-and-events/news/global-campaign-to-invite-the-world-to-come-and-say-gday-media-release.html",
       ],
-      licenceNote:
-        "Non-free trademark logo, bundled from the file used under fair use on English Wikipedia (there sourced from tourism.australia.com) and reproduced here for educational identification only — the same non-free bundling discipline already applied to passport covers and football crests in this repo.",
     },
   ],
   MY: [
@@ -3458,15 +3446,12 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Guinea)",
       },
-      logo: "/tourism-logos/gn/logo-ont.jpg",
-      logoExplainer:
-        "A colourful bird/dove silhouette mark, filled with warm red/orange/yellow/green tones, beside the wordmark \"Office National du Tourisme\" — the logo of Guinea's national tourism office, established 1997.",
+      noImageReason:
+        "Searched Wikimedia Commons for a Guinean consumer destination brand — the only freely-licensed file found (\"Logo_ONT.jpg\") reads solely \"Office National du Tourisme\", the tourism office's own institutional name, with no country name or destination slogan of any kind, so it was not used as a substitute per this repo's consumer-brand-not-institutional-logo standard.",
       sources: [
         "https://commons.wikimedia.org/wiki/File:Logo_ONT.jpg",
         "https://fr.wikipedia.org/wiki/Office_national_du_tourisme_de_Guin%C3%A9e",
       ],
-      licenceNote:
-        "Public domain per its Commons file page — dedicated to the public domain (CC0) by the uploader, categorised under \"Office national du tourisme de Guinée\" and used as the logo in that organisation's own French Wikipedia infobox. Bundled here as a small (120px) thumbnail export because upload.wikimedia.org rejected this session's request for the full-resolution original and intermediate thumbnail widths with a rate-limit error, accepting only sizes at or below a small rendered width.",
     },
   ],
   BF: [
