@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="120" fill="#ffffff"/>
+  <circle cx="50" cy="60" r="26" fill="#006400"/>
+  <polygon points="50,42 53,53 64,53 55,60 58,71 50,64 42,71 45,60 36,53 47,53" fill="#ffd100"/>
+  <text x="88" y="66" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" fill="#006400">NEW</text>
+  <text x="175" y="66" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" fill="#d32f2f">ZIMBABWE</text>
+  <text x="90" y="88" font-family="'Arial', sans-serif" font-size="11" font-weight="600" fill="#555555" letter-spacing="1.5">LEADING ONLINE NEWS PUBLICATION • 2003</text>
+</svg>
