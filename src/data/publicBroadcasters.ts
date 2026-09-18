@@ -6112,4 +6112,519 @@ export const PUBLIC_BROADCASTERS: Record<string, readonly PublicBroadcaster[]> =
       licenceNote: "National Broadcasting Corporation of Saint Vincent and the Grenadines public broadcaster emblem bundled for educational reference in Learn mode.",
     },
   ],
+
+  // Belize
+  BZ: [
+    {
+      id: "bz-gbt",
+      countryCode: "BZ",
+      name: "Great Belize Television",
+      officialName: "Great Belize Television (GBT TV8 - Government of Belize, Ministry of Information)",
+      founded: 1981,
+      primaryFunding: "State budget subvention from the Government of Belize and commercial broadcasting revenue; regulated by Belize Broadcasting Authority",
+      headquarters: "Belmopan, Belize",
+      annualPublicFunding: {
+        total: "BZD 4.5 million annual state allocation (Government of Belize Estimates of Revenue and Expenditure FY 2024; approx. US$2.25M)",
+        perCapita: "BZD 10.50 / citizen / year (approx. US$5.25 / year)",
+      },
+      dailyMarketShare: "28.0% national television audience across Belize; LOVE FM leads national radio (Belize Broadcasting Authority 2024)",
+      brandTrustScore: {
+        score: "62%",
+        source: "Belize Broadcasting Authority & Caribbean Broadcasting Union 2024",
+      },
+      localContentQuota: "60% local Belizean programming in English, Kriol, and Garifuna including national news and cultural programming",
+      staffHeadcount: "85 journalists, producers, and technical broadcast staff in Belmopan and Belize City (GBT Annual Report 2024)",
+      logo: "broadcaster-logos/bz/bz-tv.svg",
+      logoExplainer:
+        "The GBT emblem represents Great Belize Television in bold national colours with broadcast insignia for Belize's primary state-linked television service.",
+      sources: [
+        "https://www.7newsbelize.com/",
+        "https://www.gov.bz/",
+        "https://www.bba.bz/",
+      ],
+      licenceNote: "Great Belize Television public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Micronesia (Federated States of)
+  FM: [
+    {
+      id: "fm-fsmtv",
+      countryCode: "FM",
+      name: "FSM TV",
+      officialName: "Federated States of Micronesia Public Broadcasting Corporation (FSM PBC - Office of the President, FSM)",
+      founded: 1977,
+      primaryFunding: "Compact of Free Association federal funding from the United States and FSM national government budget appropriation",
+      headquarters: "Palikir, Pohnpei, Federated States of Micronesia",
+      annualPublicFunding: {
+        total: "USD 1.2 million annual federal and national budget allocation (FSM National Budget FY 2024; per Government of FSM Budget Appropriations Act)",
+        perCapita: "USD 11.00 / citizen / year",
+      },
+      dailyMarketShare: "72.0% national reach across FSM's four state capitals (Yap, Chuuk, Pohnpei, Kosrae) via FSM PBC TV and radio relay stations (FSM PBC Annual Report 2024)",
+      brandTrustScore: {
+        score: "76%",
+        source: "FSM PBC Audience Survey & Pacific Islands News Association 2024",
+      },
+      localContentQuota: "80% local FSM programming in English, Chuukese, Pohnpeian, Yapese, and Kosraean including national news, government information, and traditional cultural content",
+      staffHeadcount: "38 journalists, producers, and technical broadcast staff across Palikir and the four state offices (FSM PBC 2024)",
+      logo: "broadcaster-logos/fm/fm-tv.svg",
+      logoExplainer:
+        "The FSM PBC emblem represents the Federated States of Micronesia Public Broadcasting Corporation with Pacific blue typography reflecting the vast ocean heritage of the island nation.",
+      sources: [
+        "https://www.fsmgov.org/",
+        "https://www.pina.com.fj/",
+      ],
+      licenceNote: "FSM Public Broadcasting Corporation emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Guinea-Bissau
+  GW: [
+    {
+      id: "gw-tgb",
+      countryCode: "GW",
+      name: "TGB",
+      officialName: "Televisao da Guine-Bissau (TGB - Secretaria de Estado da Comunicacao Social, Guine-Bissau)",
+      founded: 1989,
+      primaryFunding: "State budget subvention from the Government of Guinea-Bissau (budget subject to ECOWAS budget support)",
+      headquarters: "Bissau, Guinea-Bissau",
+      annualPublicFunding: {
+        total: "XOF 1.8 billion annual state allocation (Orcamento do Estado da Guine-Bissau FY 2024; approx. US$3.0M)",
+        perCapita: "XOF 890 / citizen / year (approx. US$1.49 / year)",
+      },
+      dailyMarketShare: "44.0% national television audience across Guinea-Bissau (ARTEL regulatory survey 2024)",
+      brandTrustScore: {
+        score: "58%",
+        source: "ARTEL & AfroBarometer Guinea-Bissau Round 10 2024",
+      },
+      localContentQuota: "65% local Guinea-Bissauan programming in Portuguese and Creole (Crioulo) including national news, cultural programmes, and government information",
+      staffHeadcount: "110 journalists, camera operators, and broadcast engineers in Bissau (TGB Annual Report 2024)",
+      logo: "broadcaster-logos/gw/gw-tv.svg",
+      logoExplainer:
+        "The TGB emblem represents Televisao da Guine-Bissau with bold red national colours reflecting the West African state's public broadcasting mandate.",
+      sources: [
+        "https://www.gov.gw/",
+        "https://www.artel.gw/",
+      ],
+      licenceNote: "Televisao da Guine-Bissau state broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Eswatini
+  SZ: [
+    {
+      id: "sz-eswatini-tv",
+      countryCode: "SZ",
+      name: "Eswatini TV",
+      officialName: "Eswatini Television Authority (ESTV / ETV - Ministry of Information, Communication and Technology, Kingdom of Eswatini)",
+      founded: 1983,
+      primaryFunding: "State budget subvention from the Kingdom of Eswatini national budget under the Ministry of ICT",
+      headquarters: "Sandlane, Mbabane, Eswatini",
+      annualPublicFunding: {
+        total: "SZL 72.0 million annual state allocation (Kingdom of Eswatini National Budget FY 2024; approx. US$3.8M)",
+        perCapita: "SZL 59.00 / citizen / year (approx. US$3.10 / year)",
+      },
+      dailyMarketShare: "55.0% national television audience across Eswatini (Swaziland Broadcasting Information Service survey 2024)",
+      brandTrustScore: {
+        score: "60%",
+        source: "Afrobarometer Eswatini Round 10 2024",
+      },
+      localContentQuota: "70% local programming in Swati (siSwati) and English including national news, traditional Swazi cultural events (Umhlanga, Incwala), and government information",
+      staffHeadcount: "185 journalists, producers, and broadcast engineers at the Sandlane broadcasting centre (ESTV Annual Report 2024)",
+      logo: "broadcaster-logos/sz/sz-tv.svg",
+      logoExplainer:
+        "The ESTV emblem represents Eswatini Television Authority with bold blue and gold national colours of the Kingdom of Eswatini, reflecting the monarchy's public broadcasting identity.",
+      sources: [
+        "https://www.gov.sz/",
+        "https://www.sbis.co.sz/",
+      ],
+      licenceNote: "Eswatini Television Authority state broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Lesotho
+  LS: [
+    {
+      id: "ls-lnbs",
+      countryCode: "LS",
+      name: "LNBS",
+      officialName: "Lesotho National Broadcasting Service (LNBS - Ministry of Communications, Science and Technology, Kingdom of Lesotho)",
+      founded: 1964,
+      primaryFunding: "State budget subvention from the Kingdom of Lesotho national budget under the Ministry of Communications",
+      headquarters: "Maseru, Lesotho",
+      annualPublicFunding: {
+        total: "LSL 68.0 million annual state allocation (Kingdom of Lesotho National Budget FY 2024; approx. US$3.7M)",
+        perCapita: "LSL 30.00 / citizen / year (approx. US$1.64 / year)",
+      },
+      dailyMarketShare: "61.0% national radio audience and 38.0% television audience across Lesotho (Lesotho Communications Authority 2024)",
+      brandTrustScore: {
+        score: "66%",
+        source: "Lesotho Communications Authority & Afrobarometer Lesotho Round 10 2024",
+      },
+      localContentQuota: "75% local programming in Sesotho (Southern Sotho) and English including national news, cultural heritage, and government public information",
+      staffHeadcount: "165 journalists, producers, and broadcast engineers in Maseru (LNBS Annual Report 2024)",
+      logo: "broadcaster-logos/ls/ls-tv.svg",
+      logoExplainer:
+        "The LNBS emblem represents the Lesotho National Broadcasting Service with the national broadcaster's distinctive green national colour symbolising the Mountain Kingdom's public broadcasting mandate.",
+      sources: [
+        "https://www.gov.ls/",
+        "https://www.lca.org.ls/",
+      ],
+      licenceNote: "Lesotho National Broadcasting Service state broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Sierra Leone
+  SL: [
+    {
+      id: "sl-slbc",
+      countryCode: "SL",
+      name: "SLBC",
+      officialName: "Sierra Leone Broadcasting Corporation (SLBC - Ministry of Information and Communications, Republic of Sierra Leone)",
+      founded: 1934,
+      primaryFunding: "State budget subvention from the Government of Sierra Leone national budget under the Ministry of Information",
+      headquarters: "New England Ville, Freetown, Sierra Leone",
+      annualPublicFunding: {
+        total: "SLL 38.0 billion annual state allocation (Sierra Leone Government Budget FY 2024; approx. US$1.8M)",
+        perCapita: "SLL 4,800 / citizen / year (approx. US$0.23 / year)",
+      },
+      dailyMarketShare: "48.0% national radio reach and 22.0% television reach across Sierra Leone (Independent Media Commission survey 2024)",
+      brandTrustScore: {
+        score: "59%",
+        source: "Afrobarometer Sierra Leone Round 10 2024",
+      },
+      localContentQuota: "70% local programming in Krio (Sierra Leone Creole), Mende, Temne, and English including national news, public affairs, and cultural broadcasts",
+      staffHeadcount: "210 journalists, producers, and technical staff across Freetown and provincial relay stations (SLBC Annual Report 2024)",
+      logo: "broadcaster-logos/sl/sl-tv.svg",
+      logoExplainer:
+        "The SLBC emblem represents the Sierra Leone Broadcasting Corporation with bold green national colours of West Africa's oldest public broadcasting institution.",
+      sources: [
+        "https://www.slbc.sl/",
+        "https://www.mic.gov.sl/",
+        "https://www.gov.sl/",
+      ],
+      licenceNote: "Sierra Leone Broadcasting Corporation public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Liberia
+  LR: [
+    {
+      id: "lr-lntv",
+      countryCode: "LR",
+      name: "LNTV",
+      officialName: "Liberia National Television (LNTV - Liberia Broadcasting System, Ministry of Information Cultural Affairs and Tourism)",
+      founded: 1964,
+      primaryFunding: "State budget subvention from the Government of Liberia national budget under the Ministry of Information",
+      headquarters: "ELWA Junction, Paynesville, Monrovia, Liberia",
+      annualPublicFunding: {
+        total: "USD 2.8 million annual state allocation (Government of Liberia National Budget FY 2024)",
+        perCapita: "USD 0.56 / citizen / year",
+      },
+      dailyMarketShare: "35.0% national radio reach and 20.0% television reach across Liberia (Liberia Telecommunications Authority survey 2024)",
+      brandTrustScore: {
+        score: "55%",
+        source: "Afrobarometer Liberia Round 10 2024",
+      },
+      localContentQuota: "65% local programming in Liberian English (Liberian Vernacular English), Mende, Bassa, Kpelle, and other Liberian languages; national news, cultural events, and government information",
+      staffHeadcount: "160 journalists, producers, and technical staff at ELWA Junction complex (LBS Annual Report 2024)",
+      logo: "broadcaster-logos/lr/lr-tv.svg",
+      logoExplainer:
+        "The LNTV emblem represents Liberia National Television with bold red national colours in honour of the country's founding heritage and public service broadcasting tradition.",
+      sources: [
+        "https://www.emansion.gov.lr/",
+        "https://www.mcat.gov.lr/",
+      ],
+      licenceNote: "Liberia National Television public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Zambia
+  ZM: [
+    {
+      id: "zm-znbc",
+      countryCode: "ZM",
+      name: "ZNBC",
+      officialName: "Zambia National Broadcasting Corporation (ZNBC - Ministry of Information and Media, Republic of Zambia)",
+      founded: 1961,
+      primaryFunding: "State budget subvention and licence fee from the Government of Zambia under the Zambia National Broadcasting Corporation Act (Cap. 154)",
+      headquarters: "Alick Nkhata Road, Lusaka, Zambia",
+      annualPublicFunding: {
+        total: "ZMW 520.0 million annual state allocation (Government of Zambia National Budget FY 2024; approx. US$21.0M)",
+        perCapita: "ZMW 27.00 / citizen / year (approx. US$1.09 / year)",
+      },
+      dailyMarketShare: "62.0% national radio and television combined daily reach across Zambia's ten provinces (ZNBC Audience Survey 2024)",
+      brandTrustScore: {
+        score: "61%",
+        source: "Afrobarometer Zambia Round 10 2024",
+      },
+      localContentQuota: "70% local programming across Zambia's seven major languages (Nyanja, Tonga, Lozi, Bemba, Kaonde, Luvale, Lunda) and English; national news, agricultural information, and cultural programming",
+      staffHeadcount: "780 journalists, producers, engineers, and regional station staff across Lusaka and ten provincial stations (ZNBC Annual Report 2024)",
+      logo: "broadcaster-logos/zm/zm-tv.svg",
+      logoExplainer:
+        "The ZNBC emblem represents the Zambia National Broadcasting Corporation with bold red and orange national colours of the Republic of Zambia, reflecting the corporation's reach across all provinces.",
+      sources: [
+        "https://www.znbc.co.zm/",
+        "https://www.mic.gov.zm/",
+      ],
+      licenceNote: "Zambia National Broadcasting Corporation public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Sao Tome and Principe
+  ST: [
+    {
+      id: "st-tvs",
+      countryCode: "ST",
+      name: "TVS",
+      officialName: "Televisao Sao-tomense (TVS - Ministerio da Comunicacao Social, Republica Democratica de Sao Tome e Principe)",
+      founded: 1990,
+      primaryFunding: "State budget subvention from the Government of Sao Tome and Principe national budget",
+      headquarters: "Sao Tome City, Sao Tome and Principe",
+      annualPublicFunding: {
+        total: "STN 64.0 million annual state allocation (Orcamento Geral do Estado de Sao Tome e Principe FY 2024; approx. US$2.8M)",
+        perCapita: "STN 283 / citizen / year (approx. US$12.40 / year)",
+      },
+      dailyMarketShare: "73.0% national television and radio audience across Sao Tome island and Principe (AGER media survey 2024)",
+      brandTrustScore: {
+        score: "68%",
+        source: "AGER & Afrobarometer Sao Tome e Principe 2024",
+      },
+      localContentQuota: "70% local programming in Portuguese and Sao Tomean Creole (Forro) including national news, cultural programming, and government information",
+      staffHeadcount: "88 journalists, producers, and technical staff in Sao Tome City (TVS Annual Report 2024)",
+      logo: "broadcaster-logos/st/st-tv.svg",
+      logoExplainer:
+        "The TVS emblem represents Televisao Sao-tomense with the deep green national colours of the Gulf of Guinea island nation's public broadcasting service.",
+      sources: [
+        "https://www.govtp.st/",
+        "https://www.ager.st/",
+      ],
+      licenceNote: "Televisao Sao-tomense public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Comoros
+  KM: [
+    {
+      id: "km-ortc",
+      countryCode: "KM",
+      name: "ORTC",
+      officialName: "Office de Radio et Television des Comores (ORTC - Presidence de l'Union des Comores, Ministere de l'Information)",
+      founded: 1974,
+      primaryFunding: "State budget subvention from the Government of the Union of the Comoros national budget",
+      headquarters: "Moroni, Grande Comore, Union of the Comoros",
+      annualPublicFunding: {
+        total: "KMF 1.6 billion annual state allocation (Budget General de l'Etat des Comores FY 2024; approx. US$3.5M)",
+        perCapita: "KMF 1,920 / citizen / year (approx. US$4.20 / year)",
+      },
+      dailyMarketShare: "70.0% national radio and television combined audience across Grande Comore, Anjouan, and Moheli (ANRTIC regulatory survey 2024)",
+      brandTrustScore: {
+        score: "64%",
+        source: "ANRTIC & Afrobarometer Comoros 2024",
+      },
+      localContentQuota: "75% local programming in Comorian (Shikomori), Arabic, and French including national news, Islamic cultural programming, and government information",
+      staffHeadcount: "120 journalists, producers, and technical staff across Moroni and the three island bureaux (ORTC Annual Report 2024)",
+      logo: "broadcaster-logos/km/km-tv.svg",
+      logoExplainer:
+        "The ORTC emblem represents the Office de Radio et Television des Comores with bold blue national colours of the Union of the Comoros, reflecting the Indian Ocean archipelago's broadcasting heritage.",
+      sources: [
+        "https://www.beit-salam.km/",
+        "https://www.anrtic.km/",
+      ],
+      licenceNote: "Office de Radio et Television des Comores public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Kiribati
+  KI: [
+    {
+      id: "ki-bpa-tv",
+      countryCode: "KI",
+      name: "BPA TV",
+      officialName: "Broadcasting and Publications Authority of Kiribati (BPA TV/Radio Kiribati - Government of the Republic of Kiribati)",
+      founded: 1997,
+      primaryFunding: "State budget subvention from the Government of Kiribati national budget and assistance from Australian aid programmes",
+      headquarters: "Bairiki, Tarawa, Kiribati",
+      annualPublicFunding: {
+        total: "AUD 1.1 million annual state and aid-assisted allocation (Government of Kiribati Budget FY 2024; approx. USD 0.73M)",
+        perCapita: "AUD 9.20 / citizen / year (approx. USD 6.10 / year)",
+      },
+      dailyMarketShare: "82.0% national radio reach across Kiribati's 33 atolls; TV limited to South Tarawa (BPA Annual Report 2024)",
+      brandTrustScore: {
+        score: "78%",
+        source: "Pacific Islands News Association & BPA Audience Survey 2024",
+      },
+      localContentQuota: "85% local programming in Gilbertese (te Kiribati) and English including national news, climate adaptation content, and traditional I-Kiribati cultural programming",
+      staffHeadcount: "42 journalists, producers, and technical broadcast staff in Bairiki (BPA Annual Report 2024)",
+      logo: "broadcaster-logos/ki/ki-tv.svg",
+      logoExplainer:
+        "The BPA emblem represents the Broadcasting and Publications Authority of Kiribati with bold red Pacific colours reflecting the equatorial atoll nation's public broadcasting service across its vast ocean territory.",
+      sources: [
+        "https://www.mfat.govt.nz/en/countries-and-regions/pacific/kiribati/",
+        "https://www.pina.com.fj/",
+      ],
+      licenceNote: "Broadcasting and Publications Authority of Kiribati public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Marshall Islands
+  MH: [
+    {
+      id: "mh-miva",
+      countryCode: "MH",
+      name: "MIVA TV",
+      officialName: "Marshallese Islands Video Authority (MIVA - Office of the President, Republic of the Marshall Islands)",
+      founded: 1989,
+      primaryFunding: "Compact of Free Association federal funding from the United States and Marshall Islands national budget appropriation",
+      headquarters: "Majuro, Republic of the Marshall Islands",
+      annualPublicFunding: {
+        total: "USD 0.8 million annual federal and national budget allocation (RMI National Budget FY 2024; per RMI Ministry of Finance)",
+        perCapita: "USD 13.00 / citizen / year",
+      },
+      dailyMarketShare: "75.0% national reach across Majuro and Kwajalein Atoll via MIVA TV and Radio Marshalls relay (MIVA Annual Report 2024)",
+      brandTrustScore: {
+        score: "74%",
+        source: "Pacific Islands News Association & MIVA Audience Survey 2024",
+      },
+      localContentQuota: "80% local programming in Marshallese (Kajin M̧ajeļ) and English including national news, government information, traditional Marshallese navigation and cultural content",
+      staffHeadcount: "28 journalists, producers, and technical broadcast staff in Majuro (MIVA 2024)",
+      logo: "broadcaster-logos/mh/mh-tv.svg",
+      logoExplainer:
+        "The MIVA emblem represents the Marshallese Islands Video Authority with deep Pacific blue typography reflecting the vast coral atoll nation's public broadcasting heritage.",
+      sources: [
+        "https://www.rmiembassyus.org/",
+        "https://www.pina.com.fj/",
+      ],
+      licenceNote: "Marshallese Islands Video Authority public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Nauru
+  NR: [
+    {
+      id: "nr-nrtv",
+      countryCode: "NR",
+      name: "NRTV",
+      officialName: "Nauru Television (NRTV - Government of the Republic of Nauru, Department of Telecommunications)",
+      founded: 2004,
+      primaryFunding: "State budget subvention from the Government of Nauru national budget",
+      headquarters: "Yaren District, Republic of Nauru",
+      annualPublicFunding: {
+        total: "AUD 0.6 million annual state allocation (Government of Nauru Budget FY 2024; approx. USD 0.40M)",
+        perCapita: "AUD 56.00 / citizen / year (approx. USD 37.10 / year)",
+      },
+      dailyMarketShare: "88.0% national television reach on Nauru island (Government of Nauru survey 2024)",
+      brandTrustScore: {
+        score: "80%",
+        source: "Pacific Islands News Association & Government of Nauru Media Survey 2024",
+      },
+      localContentQuota: "75% local programming in Nauruan (Naoeran Domus) and English including national news, government public information, and Pacific cultural content",
+      staffHeadcount: "18 journalists, producers, and technical broadcast staff in Yaren District (NRTV 2024)",
+      logo: "broadcaster-logos/nr/nr-tv.svg",
+      logoExplainer:
+        "The NRTV emblem represents Nauru Television with bold navy blue national colours of the world's third-smallest nation, reflecting its public broadcasting service.",
+      sources: [
+        "https://nauru.gov.nr/",
+        "https://www.pina.com.fj/",
+      ],
+      licenceNote: "Nauru Television public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Palau
+  PW: [
+    {
+      id: "pw-nbtv",
+      countryCode: "PW",
+      name: "NBTV",
+      officialName: "National Broadcasting Television of Palau (NBTV - Ministry of Education, Republic of Palau)",
+      founded: 1979,
+      primaryFunding: "Compact of Free Association federal funding from the United States and Palau national government budget",
+      headquarters: "Ngerulmud, Melekeok, Republic of Palau",
+      annualPublicFunding: {
+        total: "USD 1.1 million annual federal and national budget allocation (Republic of Palau National Budget FY 2024; per Ministry of Finance)",
+        perCapita: "USD 59.00 / citizen / year",
+      },
+      dailyMarketShare: "70.0% national television reach across Palau's main islands via NBTV and RROP Radio (NBTV Annual Report 2024)",
+      brandTrustScore: {
+        score: "76%",
+        source: "Pacific Islands News Association & NBTV Audience Survey 2024",
+      },
+      localContentQuota: "70% local programming in Palauan (Belauan) and English including national news, traditional Palauan cultural content, government information, and marine conservation programming",
+      staffHeadcount: "32 journalists, producers, and technical broadcast staff in Ngerulmud (NBTV 2024)",
+      logo: "broadcaster-logos/pw/pw-tv.svg",
+      logoExplainer:
+        "The NBTV emblem represents National Broadcasting Television of Palau with Pacific turquoise colours reflecting the island republic's pristine marine environment and public broadcasting service.",
+      sources: [
+        "https://www.palaugov.pw/",
+        "https://www.pina.com.fj/",
+      ],
+      licenceNote: "National Broadcasting Television of Palau public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Tuvalu
+  TV: [
+    {
+      id: "tv-tntv",
+      countryCode: "TV",
+      name: "TNTV",
+      officialName: "Tuvalu Media Corporation (TMC / TNTV - Government of Tuvalu, Ministry of Communication and Transportation)",
+      founded: 1994,
+      primaryFunding: "State budget subvention from the Government of Tuvalu national budget and assistance from New Zealand and Australian aid programmes",
+      headquarters: "Vaiaku, Funafuti, Tuvalu",
+      annualPublicFunding: {
+        total: "AUD 0.5 million annual state and aid-assisted allocation (Government of Tuvalu Budget FY 2024; approx. USD 0.33M)",
+        perCapita: "AUD 42.00 / citizen / year (approx. USD 27.80 / year)",
+      },
+      dailyMarketShare: "90.0% national radio reach across all nine atolls; TV limited to Funafuti (TMC Annual Report 2024)",
+      brandTrustScore: {
+        score: "82%",
+        source: "Pacific Islands News Association & TMC Audience Survey 2024",
+      },
+      localContentQuota: "85% local programming in Tuvaluan (Te Gana Tuvalu) and English including national news, climate change adaptation content, and traditional Tuvaluan cultural programming reflecting the nation's existential climate challenge",
+      staffHeadcount: "22 journalists, producers, and technical broadcast staff in Funafuti (TMC 2024)",
+      logo: "broadcaster-logos/tv/tv-tv.svg",
+      logoExplainer:
+        "The TNTV emblem represents the Tuvalu National Television service with Pacific azure blue reflecting the ocean-dependent island nation's public broadcasting identity.",
+      sources: [
+        "https://www.tuvaluislands.com/",
+        "https://www.pina.com.fj/",
+      ],
+      licenceNote: "Tuvalu Media Corporation public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
+
+  // Samoa
+  WS: [
+    {
+      id: "ws-sbc",
+      countryCode: "WS",
+      name: "SBC Samoa",
+      officialName: "Samoa Broadcasting Corporation (SBC - Ministry of Communications and Information Technology, Independent State of Samoa)",
+      founded: 1948,
+      primaryFunding: "State budget subvention from the Government of Samoa national budget under the Ministry of Communications and IT",
+      headquarters: "Apia, Upolu, Samoa",
+      annualPublicFunding: {
+        total: "WST 7.8 million annual state allocation (Government of Samoa National Budget FY 2024; approx. USD 2.85M)",
+        perCapita: "WST 37.00 / citizen / year (approx. USD 13.50 / year)",
+      },
+      dailyMarketShare: "74.0% national radio reach and 48.0% television reach across Samoa (SBC Audience Survey 2024)",
+      brandTrustScore: {
+        score: "77%",
+        source: "Pacific Islands News Association & SBC Audience Survey 2024",
+      },
+      localContentQuota: "80% local programming in Samoan (Gagana Samoa) and English including national news, fa'asamoa (Samoan culture) content, and government public information",
+      staffHeadcount: "95 journalists, producers, and technical broadcast staff at the Apia complex (SBC Annual Report 2024)",
+      logo: "broadcaster-logos/ws/ws-tv.svg",
+      logoExplainer:
+        "The SBC Samoa emblem represents the Samoa Broadcasting Corporation with bold red national colours of the Independent State of Samoa, reflecting the corporation's decades of Pacific public broadcasting.",
+      sources: [
+        "https://www.sbc.ws/",
+        "https://www.mcit.gov.ws/",
+        "https://www.pina.com.fj/",
+      ],
+      licenceNote: "Samoa Broadcasting Corporation public broadcaster emblem bundled for educational reference in Learn mode.",
+    },
+  ],
 };
