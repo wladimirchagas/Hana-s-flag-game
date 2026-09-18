@@ -1898,8 +1898,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "ee-welcome-to-estonia",
       countryCode: "EE",
-      name: "Welcome to Estonia",
-      slogan: "Welcome to Estonia",
+      name: "Visit Estonia",
       agency: "EAS (Enterprise Estonia) / Visit Estonia",
       launched: 2012,
       visitors: {
@@ -1908,15 +1907,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Estonia)",
       },
-      logo: "/tourism-logos/ee/welcome-to-estonia.jpg",
+      logo: "/tourism-logos/ee/visit-estonia.svg",
       logoExplainer:
-        "The mark stacks \"WEL / COME / TO EST / ONIA\" into a single jagged sticker-shaped badge, designed for EAS (Enterprise Estonia) in 2012 as the slogan and logo for the country's international tourism promotion.",
+        "The \"visit estonia\" wordmark the Estonian Tourist Board uses today: the two words in a light grey lower-case sans-serif whose letters are drawn with open, unjoined strokes and small gaps, giving a spare, modern look in keeping with Estonia's digital-society positioning. This replaces the earlier \"Welcome to Estonia\" mark, which was retired when the country moved to its current brand system.",
       sources: [
         "https://commons.wikimedia.org/wiki/File:Welcome_To_Estonia_logo.jpeg",
         "https://en.wikipedia.org/wiki/Tourism_in_Estonia",
+        "https://www.visitestonia.com/en",
       ],
       licenceNote:
-        "Public domain per its Commons file page — \"consists only of simple geometric shapes or text\" — attributed to EAS, Enterprise Estonia; carries a trademark notice for commercial use. Bundled here as a reduced-resolution raster (via Wikimedia's own thumbnail renderer) after the original file could not be downloaded directly within this session's rate limits.",
+        "Copyrighted brand mark of Visit Estonia (Enterprise Estonia's tourism development centre), taken from the official visitestonia.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for football-association crests and passport covers.",
     },
   ],
   SI: [
@@ -3027,8 +3027,8 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "za-south-african-tourism",
       countryCode: "ZA",
-      name: "South African Tourism",
-      slogan: "South Africa",
+      name: "South Africa",
+      slogan: "Inspiring new ways",
       agency: "South African Tourism",
       visitors: {
         count: 3886600,
@@ -3036,15 +3036,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for South Africa)",
       },
-      logo: "/tourism-logos/za/south-african-tourism.svg",
+      logo: "/tourism-logos/za/south-africa.svg",
       logoExplainer:
-        "A black chevron/arrow banner bearing the white cursive script \"South Africa\", with the arrow's trailing edge striped in the national flag's colours (green, gold, red, blue, with a white gap) — South African Tourism's own consumer destination mark, above the black \"SOUTH AFRICAN TOURISM\" organisation wordmark.",
+        "South Africa's destination mark: the words \"South Africa\" in a white brush script on black, beside the horizontal Y-shape of the national flag rendered in its green, gold, red, blue and white. The flag's converging Y is officially described as the convergence of diverse elements taking the road ahead in unity, and the brand carries that device as its whole right-hand half.",
       sources: [
         "https://en.wikipedia.org/wiki/File:South_African_Tourism_logo.svg",
         "https://en.wikipedia.org/wiki/South_African_Tourism",
+        "https://www.southafrica.net/",
       ],
       licenceNote:
-        "Non-free/fair-use logo hosted locally on English Wikipedia (not Wikimedia Commons) — used there under a non-free-content rationale for identifying the organisation. Bundled here on the same basis this repo already uses for non-Commons crests and passport covers: a copyrighted organisational logo, cited to its source, for identification rather than decoration.",
+        "Copyrighted brand mark of South African Tourism, taken from the official southafrica.net site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   UA: [
@@ -3124,8 +3125,8 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "sa-visit-saudi",
       countryCode: "SA",
-      name: "Visit Saudi",
-      slogan: "روح السعودية (Spirit of Saudi Arabia)",
+      name: "Visit Saudi — \"Welcome to Arabia\"",
+      slogan: "Welcome to Arabia",
       agency: "Saudi Tourism Authority",
       launched: 2020,
       visitors: {
@@ -3134,15 +3135,16 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Saudi Arabia)",
       },
-      logo: "/tourism-logos/sa/visit-saudi.png",
+      logo: "/tourism-logos/sa/saudi-welcome-to-arabia.svg",
       logoExplainer:
-        "Flowing teal Arabic calligraphy reading \"روح السعودية\" (\"Spirit of Saudi Arabia\") — the Saudi Tourism Authority's own \"Visit Saudi\" wordmark, created by the authority (established March 2020) and published on its own visitsaudi.com brand site.",
+        "The English lockup of Saudi Arabia's destination brand: the word \"Saudi\" written in a flowing magenta calligraphic script whose strokes are shaped after Arabic letterforms, above the words \"Welcome to Arabia\" in a magenta serif. The script deliberately reads in both directions at once — Latin letters drawn with the rhythm of Arabic calligraphy — and the magenta is the brand's signature colour, chosen to break from the green of the national flag.",
       sources: [
         "https://commons.wikimedia.org/wiki/File:Visit_Saudi_Logo.svg",
         "https://en.wikipedia.org/wiki/Saudi_Tourism_Authority",
+        "https://www.visitsaudi.com/en",
       ],
       licenceNote:
-        "Public domain per its Commons file page — \"consists only of simple geometric shapes or text\" (PD-textlogo), sourced from visitsaudi.com/ar and uploaded directly by the Saudi Tourism Authority in 2024. Bundled here as a small (120px) thumbnail export because upload.wikimedia.org rejected this session's request for the full-resolution original and intermediate thumbnail widths with a rate-limit error, accepting only sizes at or below a small rendered width.",
+        "Copyrighted brand mark of the Saudi Tourism Authority, taken from the official visitsaudi.com site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   CY: [
