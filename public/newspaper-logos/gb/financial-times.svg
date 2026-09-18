@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="120" fill="#fff1e5"/>
+  <rect x="25" y="24" width="70" height="72" fill="#0d7680"/>
+  <text x="60" y="72" font-family="'Times New Roman', serif" font-size="44" font-weight="bold" fill="#fff1e5" text-anchor="middle">FT</text>
+  <text x="108" y="60" font-family="'Financier Display', 'Georgia', serif" font-size="34" font-weight="bold" fill="#111111">FINANCIAL TIMES</text>
+  <text x="110" y="84" font-family="'Arial', sans-serif" font-size="11" font-weight="700" fill="#0d7680" letter-spacing="2">GLOBAL BUSINESS OF RECORD • 1888</text>
+</svg>

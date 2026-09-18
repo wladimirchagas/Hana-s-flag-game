@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="120" fill="#ffffff"/>
+  <text x="200" y="64" font-family="'Chomsky', 'Old English Text MT', 'Georgia', serif" font-size="38" font-weight="bold" fill="#000000" text-anchor="middle">The New York Times</text>
+  <line x1="30" y1="76" x2="370" y2="76" stroke="#000000" stroke-width="1.5"/>
+  <text x="200" y="94" font-family="'Arial', sans-serif" font-size="10" font-weight="600" fill="#444444" text-anchor="middle" letter-spacing="3">ALL THE NEWS THAT'S FIT TO PRINT • 1851</text>
+</svg>

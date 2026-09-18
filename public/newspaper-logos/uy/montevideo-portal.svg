@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="120" fill="#ffffff"/>
+  <circle cx="50" cy="60" r="26" fill="#0077b6"/>
+  <path d="M42 50 L58 50 L58 70 L42 70 Z" fill="#ffffff"/>
+  <text x="88" y="64" font-family="'Arial Black', sans-serif" font-size="28" fill="#03045e">MONTEVIDEO</text>
+  <text x="290" y="64" font-family="'Arial', sans-serif" font-size="28" font-weight="300" fill="#0077b6">PORTAL</text>
+  <text x="90" y="88" font-family="'Arial', sans-serif" font-size="11" font-weight="600" fill="#555555" letter-spacing="1.5">PRIMER PORTAL DIGITAL DE NOTICIAS DE URUGUAY</text>
+</svg>
