@@ -229,8 +229,9 @@
   grid-area: map;
   position: relative;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
   /* `visible` (not hidden) so the Period dropdown in the map-controls toolbar
      above the map can extend past the map's bottom edge without being clipped.
      The map SVG is width-constrained (100%), so this doesn't cause page
@@ -272,7 +273,8 @@
   width: 100%;
   height: auto;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: stretch;
   justify-content: flex-start;
 }
 
