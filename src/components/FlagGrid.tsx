@@ -190,6 +190,36 @@ const FOOTBALL_CREST_ONLY_MODES = new Set<GroupMode>(["wc-men", "wc-women"]);
 // Modes offered in the Commercial-airlines, Public-broadcasters and Tourism-logos views — group by country.
 const COUNTRY_GROUP_MODES = new Set<GroupMode>(["by-country"]);
 
+/** The key a grid card is alphabetised and A–Z-bucketed by. It is the card's
+ *  own label everywhere except the Tourism-logos view, whose cards are labelled
+ *  with the country's tagline but must still sort under the COUNTRY. */
+function sortKeyOf(e: FlagListEntry): string {
+  return e.sortName ?? e.name;
+}
+
+/** The label a Tourism-logos card shows: the country's TAGLINE followed by the
+ *  country in brackets — "Malaysia, Truly Asia (Malaysia)".
+ *
+ *  Most entries carry a `slogan`; where a board has none, the brand name stands
+ *  in for it ("Visit Sweden (Sweden)"). When that leading text is just the
+ *  country's own name there is nothing to put in front, so the bracket is
+ *  dropped rather than rendering "Zambia (Zambia)". */
+function tourismCardLabel(
+  slogan: string | undefined,
+  name: string,
+  countryName: string,
+): string {
+  const country = countryName.trim();
+  let lead = (slogan ?? name).trim();
+  // A few boards have no slogan and a name that already leads with the country
+  // ("Paraguay — Secretaría Nacional de Turismo"). Drop that prefix so the
+  // country is not said twice once the bracket is appended.
+  const prefix = `${country} — `;
+  if (lead.toLowerCase().startsWith(prefix.toLowerCase())) lead = lead.slice(prefix.length).trim();
+  if (!lead || lead.toLowerCase() === country.toLowerCase()) return country;
+  return `${lead} (${country})`;
+}
+
 /** Whether a grouping mode is offered for the given view. The flag-appearance
  *  modes (shape/family/colour/…) describe a FLAG and show only in the modern
  *  flag view; "passport-color" shows only in the Passports view; "by-country"
@@ -355,13 +385,17 @@ export function FlagGrid({
       const codeToEntry = new Map(entries.map((e) => [e.id, e]));
       return allTourismLogos().map((t): FlagListEntry => {
         const parent = codeToEntry.get(t.countryCode);
+        const countryName = parent ? parent.name : t.countryCode;
         return {
           id: t.id,
-          name: t.name,
+          name: tourismCardLabel(t.slogan, t.name, countryName),
+          // The label leads with the tagline, but the grid is read (and
+          // A–Z-bucketed) by country, so alphabetise on the country name.
+          sortName: countryName,
           flag: t.logo ?? null,
           tourismLogoImage: t.logo ?? null,
           tourismLogoId: t.id,
-          countryName: parent ? parent.name : t.countryCode,
+          countryName,
           continent: parent ? parent.continent : "Other",
           subcontinent: parent ? parent.subcontinent : "Other",
           selectId: t.countryCode,
@@ -480,7 +514,7 @@ export function FlagGrid({
   // a per-mode comparator below.
   const groups = useMemo(() => {
     const sorted = [...filteredEntries].sort((a, b) =>
-      a.name.localeCompare(b.name, "en"),
+      sortKeyOf(a).localeCompare(sortKeyOf(b), "en"),
     );
 
     if (groupMode === "none") {
@@ -502,7 +536,7 @@ export function FlagGrid({
       for (const e of sorted) {
         // Bucket by the sort key so the UK's home-nation cards land together
         // under "U" (where the United Kingdom sits), not scattered under E/S/W/N.
-        const first = e.name[0] ?? "";
+        const first = sortKeyOf(e)[0] ?? "";
         const letter = first.toUpperCase();
         // Numbers / non-letters bucket together under "#" so we never
         // get hundreds of tiny stubs.
