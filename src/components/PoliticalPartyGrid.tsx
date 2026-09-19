@@ -9,27 +9,44 @@ import {
 import {
   partiesForCountry,
   coalitionForParty,
+  partyCardName,
   partyPowerBadges,
 } from "../lib/politicalParties";
 
-type SortMode = "ideology" | "coalition" | "alpha";
+type SortMode = "none" | "ideology" | "coalition" | "alpha";
 
 const SORT_MODE_LABELS: Record<SortMode, string> = {
+  none: "No grouping",
   ideology: "By ideology",
   coalition: "By coalition",
   alpha: "A–Z",
 };
 
-type Group = { key: string; heading: string; items: PoliticalParty[] };
+type Group = { key: string; heading: string | null; items: PoliticalParty[] };
+
+function byCardName(a: PoliticalParty, b: PoliticalParty, countryName: string): number {
+  return partyCardName(a, countryName).localeCompare(partyCardName(b, countryName), "en");
+}
 
 function groupParties(
   parties: readonly PoliticalParty[],
   sortMode: SortMode,
+  countryName: string,
 ): Group[] {
+  if (sortMode === "none") {
+    return [
+      {
+        key: "all",
+        heading: null,
+        items: [...parties].sort((a, b) => byCardName(a, b, countryName)),
+      },
+    ];
+  }
+
   if (sortMode === "alpha") {
     const buckets = new Map<string, PoliticalParty[]>();
     for (const p of parties) {
-      const name = p.shortName || p.name;
+      const name = partyCardName(p, countryName);
       const first = (name[0] ?? "").toUpperCase();
       const key = /[A-Z]/.test(first) ? first : "#";
       const arr = buckets.get(key) ?? [];
@@ -46,7 +63,7 @@ function groupParties(
     return list.map(([letter, items]) => ({
       key: letter,
       heading: letter,
-      items: items.sort((a, b) => a.shortName.localeCompare(b.shortName)),
+      items: items.sort((a, b) => byCardName(a, b, countryName)),
     }));
   }
 
@@ -82,7 +99,7 @@ function groupParties(
         return {
           key: id,
           heading,
-          items: g.items,
+          items: [...g.items].sort((a, b) => byCardName(a, b, countryName)),
         };
       });
 
@@ -90,7 +107,7 @@ function groupParties(
       groups.push({
         key: "unaligned",
         heading: coalitionMap.size > 0 ? "Non-coalition / Independent" : "All parties",
-        items: unaligned,
+        items: [...unaligned].sort((a, b) => byCardName(a, b, countryName)),
       });
     }
 
@@ -101,7 +118,9 @@ function groupParties(
   return IDEOLOGY_POSITION_ORDER.map((position) => ({
     key: position,
     heading: IDEOLOGY_POSITION_LABELS[position],
-    items: parties.filter((p) => p.ideologyPosition === position),
+    items: parties
+      .filter((p) => p.ideologyPosition === position)
+      .sort((a, b) => byCardName(a, b, countryName)),
   })).filter((g) => g.items.length > 0);
 }
 
@@ -124,8 +143,8 @@ export function PoliticalPartyGrid({
   const [sortMode, setSortMode] = useState<SortMode>("ideology");
   const allParties = useMemo(() => partiesForCountry(countryCode), [countryCode]);
   const groups = useMemo(
-    () => groupParties(allParties, sortMode),
-    [allParties, sortMode],
+    () => groupParties(allParties, sortMode, countryName),
+    [allParties, sortMode, countryName],
   );
 
   if (groups.length === 0) {
@@ -158,10 +177,12 @@ export function PoliticalPartyGrid({
       <div className="flag-grid__groups">
         {groups.map((group) => (
           <div key={group.key} className="flag-grid__group">
-            <h4 className="flag-grid__group-heading">
-              <span className="flag-grid__group-name">{group.heading}</span>
-              <span className="flag-grid__group-count">({group.items.length})</span>
-            </h4>
+            {group.heading != null && (
+              <h4 className="flag-grid__group-heading">
+                <span className="flag-grid__group-name">{group.heading}</span>
+                <span className="flag-grid__group-count">({group.items.length})</span>
+              </h4>
+            )}
             <ul className="flag-grid__list">
               {group.items.map((party) => {
                 const active = party.id === selectedPartyId;
@@ -196,7 +217,7 @@ export function PoliticalPartyGrid({
                         )}
                       </span>
                       <span className="flag-grid__name">
-                        <AutoFitName className="flag-grid__name-text" text={party.shortName} />
+                        <AutoFitName className="flag-grid__name-text" text={partyCardName(party, countryName)} />
                         {(badges.length > 0 || coalition) && (
                           <span className="flag-grid__party-badges">
                             {badges.map((b, i) => (
