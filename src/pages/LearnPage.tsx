@@ -69,12 +69,19 @@ import { BroadcasterDetails } from "../components/BroadcasterDetails";
 import { TourismLogoDetails } from "../components/TourismLogoDetails";
 import { NewsAgencyDetails } from "../components/NewsAgencyDetails";
 import { NewspaperDetails } from "../components/NewspaperDetails";
+import { CountryItemChooser } from "../components/CountryItemChooser";
 import { airlinesForCountry, airlineById } from "../lib/commercialAirlines";
 import { broadcastersForCountry, broadcasterById } from "../lib/publicBroadcasters";
 import { tourismLogosForCountry, tourismLogoById } from "../lib/tourismLogos";
 import { newsAgenciesForCountry, newsAgencyById } from "../lib/nationalNewsAgencies";
 import { newspapersForCountry, newspaperById } from "../lib/nationalNewspapers";
 import { partiesForCountry, partyById } from "../lib/politicalParties";
+import {
+  chooserBackLabel,
+  chooserItemsForCountry,
+  isMultiItemGridContentType,
+  type MultiItemGridContentType,
+} from "../lib/countryItemChooser";
 import type { CommercialAirline } from "../types/airline";
 import type { PublicBroadcaster } from "../types/broadcaster";
 import type { TourismLogo } from "../types/tourismLogo";
@@ -426,9 +433,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // A top national newspaper picked in the "National symbols" tab of subdivision view.
   const [selectedSubdivisionNewspaper, setSelectedSubdivisionNewspaper] = useState<Newspaper | null>(null);
 
-  const chooseGridContentType = (type: GridContentType) => {
-    setGridContentType(type);
-    saveGridContentType(type);
+  /** Clear every Show-grid item pick so map/dropdown country selection (or a
+   *  Show-type change) cannot leave a stale airline/party/etc. behind. */
+  const clearGridItemSelection = useCallback(() => {
     setGridCrest(null);
     setGridOlympicCommittee(null);
     setGridAirlineId(null);
@@ -437,6 +444,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setGridNewsAgencyId(null);
     setGridNewspaperId(null);
     setGridPartyId(null);
+  }, []);
+
+  const chooseGridContentType = (type: GridContentType) => {
+    setGridContentType(type);
+    saveGridContentType(type);
+    clearGridItemSelection();
   };
   // Captured at "Play" click time so the modal stays open even if the
   // hovered-country display clears while the user moves the mouse.
@@ -1712,19 +1725,85 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  // True when the panel is showing a firm country selection (not hover-preview).
+  // The multi-item chooser only opens on a real select — hovering must not
+  // force an arbitrary first airline/party into the widget.
+  const modernCountrySelected =
+    !subdivisionMode &&
+    selected?.kind === "modern" &&
+    display?.kind === "modern" &&
+    selected.country.code === display.country.code;
+
+  // Country-scoped chooser for multi-item Show categories (airlines, parties…).
+  // Opens when the country is selected via the map/dropdown and no specific
+  // item has been picked yet; skipped when the country has 0 or 1 items.
+  const multiChooser = useMemo(() => {
+    if (!modernCountrySelected || display?.kind !== "modern") return null;
+    if (!isMultiItemGridContentType(effectiveGridContentType)) return null;
+    const type = effectiveGridContentType;
+    const items = chooserItemsForCountry(
+      type,
+      display.country.code,
+      display.country.name,
+    );
+    // Exactly one item → skip the chooser and show that item's details.
+    if (items.length === 1) return null;
+    // Zero items → still show the empty chooser so the panel explains the gap.
+    if (items.length === 0) {
+      return { type, items, countryName: display.country.name };
+    }
+    const pickedId =
+      type === "airline"
+        ? gridAirlineId
+        : type === "broadcaster"
+          ? gridBroadcasterId
+          : type === "tourismlogo"
+            ? gridTourismLogoId
+            : type === "newsagency"
+              ? gridNewsAgencyId
+              : type === "newspaper"
+                ? gridNewspaperId
+                : gridPartyId;
+    if (pickedId) return null;
+    return { type, items, countryName: display.country.name };
+  }, [
+    modernCountrySelected,
+    display,
+    effectiveGridContentType,
+    gridAirlineId,
+    gridBroadcasterId,
+    gridTourismLogoId,
+    gridNewsAgencyId,
+    gridNewspaperId,
+    gridPartyId,
+  ]);
+
+  const pickChooserItem = useCallback(
+    (type: MultiItemGridContentType, id: string) => {
+      if (type === "airline") setGridAirlineId(id);
+      else if (type === "broadcaster") setGridBroadcasterId(id);
+      else if (type === "tourismlogo") setGridTourismLogoId(id);
+      else if (type === "newsagency") setGridNewsAgencyId(id);
+      else if (type === "newspaper") setGridNewspaperId(id);
+      else setGridPartyId(id);
+    },
+    [],
+  );
+
   // Active airline to show in the information widget when in airline view.
+  // Multi-item countries: only after an explicit pick (grid tile or chooser).
+  // Single-item countries: the lone airline is shown without a chooser.
   const activeAirline = useMemo(() => {
     if (subdivisionMode) return null;
     if (effectiveGridContentType !== "airline" || display?.kind !== "modern") return null;
     if (gridAirlineId) {
       const a = airlineById(gridAirlineId);
-      if (a) {
-        return a;
-      }
+      if (a && a.countryCode === display.country.code) return a;
     }
+    if (!modernCountrySelected) return null;
     const countryAirlines = airlinesForCountry(display.country.code);
-    return countryAirlines[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridAirlineId]);
+    return countryAirlines.length === 1 ? countryAirlines[0] : null;
+  }, [subdivisionMode, effectiveGridContentType, display, gridAirlineId, modernCountrySelected]);
 
   // Active public broadcaster to show in the information widget when in broadcaster view.
   const activeBroadcaster = useMemo(() => {
@@ -1732,13 +1811,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     if (effectiveGridContentType !== "broadcaster" || display?.kind !== "modern") return null;
     if (gridBroadcasterId) {
       const b = broadcasterById(gridBroadcasterId);
-      if (b) {
-        return b;
-      }
+      if (b && b.countryCode === display.country.code) return b;
     }
+    if (!modernCountrySelected) return null;
     const countryBroadcasters = broadcastersForCountry(display.country.code);
-    return countryBroadcasters[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridBroadcasterId]);
+    return countryBroadcasters.length === 1 ? countryBroadcasters[0] : null;
+  }, [subdivisionMode, effectiveGridContentType, display, gridBroadcasterId, modernCountrySelected]);
 
   // Active tourism logo to show in the information widget when in tourism-logo view.
   const activeTourismLogo = useMemo(() => {
@@ -1746,13 +1824,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     if (effectiveGridContentType !== "tourismlogo" || display?.kind !== "modern") return null;
     if (gridTourismLogoId) {
       const t = tourismLogoById(gridTourismLogoId);
-      if (t) {
-        return t;
-      }
+      if (t && t.countryCode === display.country.code) return t;
     }
+    if (!modernCountrySelected) return null;
     const countryTourismLogos = tourismLogosForCountry(display.country.code);
-    return countryTourismLogos[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridTourismLogoId]);
+    return countryTourismLogos.length === 1 ? countryTourismLogos[0] : null;
+  }, [subdivisionMode, effectiveGridContentType, display, gridTourismLogoId, modernCountrySelected]);
 
   // Active national news agency to show in the information widget when in news-agency view.
   const activeNewsAgency = useMemo(() => {
@@ -1760,13 +1837,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     if (effectiveGridContentType !== "newsagency" || display?.kind !== "modern") return null;
     if (gridNewsAgencyId) {
       const na = newsAgencyById(gridNewsAgencyId);
-      if (na) {
-        return na;
-      }
+      if (na && na.countryCode === display.country.code) return na;
     }
+    if (!modernCountrySelected) return null;
     const countryAgencies = newsAgenciesForCountry(display.country.code);
-    return countryAgencies[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridNewsAgencyId]);
+    return countryAgencies.length === 1 ? countryAgencies[0] : null;
+  }, [subdivisionMode, effectiveGridContentType, display, gridNewsAgencyId, modernCountrySelected]);
 
   // Active top national newspaper to show in the information widget when in newspaper view.
   const activeNewspaper = useMemo(() => {
@@ -1774,24 +1850,60 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     if (effectiveGridContentType !== "newspaper" || display?.kind !== "modern") return null;
     if (gridNewspaperId) {
       const np = newspaperById(gridNewspaperId);
-      if (np) {
-        return np;
-      }
+      if (np && np.countryCode === display.country.code) return np;
     }
+    if (!modernCountrySelected) return null;
     const countryNewspapers = newspapersForCountry(display.country.code);
-    return countryNewspapers[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridNewspaperId]);
+    return countryNewspapers.length === 1 ? countryNewspapers[0] : null;
+  }, [subdivisionMode, effectiveGridContentType, display, gridNewspaperId, modernCountrySelected]);
 
   const activeParty = useMemo(() => {
     if (subdivisionMode) return null;
     if (effectiveGridContentType !== "party" || display?.kind !== "modern") return null;
     if (gridPartyId) {
       const p = partyById(gridPartyId);
-      if (p) return p;
+      if (p && p.country === display.country.code) return p;
     }
+    if (!modernCountrySelected) return null;
     const countryParties = partiesForCountry(display.country.code);
-    return countryParties[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridPartyId]);
+    return countryParties.length === 1 ? countryParties[0] : null;
+  }, [subdivisionMode, effectiveGridContentType, display, gridPartyId, modernCountrySelected]);
+
+  // Back-link to the country chooser after picking one of several items.
+  const multiChooserBack = useMemo(() => {
+    if (!modernCountrySelected || display?.kind !== "modern") return null;
+    if (!isMultiItemGridContentType(effectiveGridContentType)) return null;
+    if (multiChooser) return null;
+    const items = chooserItemsForCountry(
+      effectiveGridContentType,
+      display.country.code,
+      display.country.name,
+    );
+    if (items.length <= 1) return null;
+    const hasActive =
+      (effectiveGridContentType === "airline" && activeAirline) ||
+      (effectiveGridContentType === "broadcaster" && activeBroadcaster) ||
+      (effectiveGridContentType === "tourismlogo" && activeTourismLogo) ||
+      (effectiveGridContentType === "newsagency" && activeNewsAgency) ||
+      (effectiveGridContentType === "newspaper" && activeNewspaper) ||
+      (effectiveGridContentType === "party" && activeParty);
+    if (!hasActive) return null;
+    return {
+      type: effectiveGridContentType,
+      label: chooserBackLabel(effectiveGridContentType, display.country.name),
+    };
+  }, [
+    modernCountrySelected,
+    display,
+    effectiveGridContentType,
+    multiChooser,
+    activeAirline,
+    activeBroadcaster,
+    activeTourismLogo,
+    activeNewsAgency,
+    activeNewspaper,
+    activeParty,
+  ]);
 
   // Resolver passed to FlagGrid so it can render absolute http(s) URLs,
   // relative historical-flags/*.png paths, AND bundled flag paths that
@@ -1920,14 +2032,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   // Selecting a different country directly on the map must not leave a
                   // previous country's airline/broadcaster/crest/olympic-committee grid
                   // pick behind — the map and the grid always describe the same entity
-                  // (see handleGridSelect above).
-                  setGridCrest(null);
-                  setGridOlympicCommittee(null);
-                  setGridAirlineId(null);
-                  setGridBroadcasterId(null);
-                  setGridTourismLogoId(null);
-                  setGridNewsAgencyId(null);
-                  setGridNewspaperId(null);
+                  // (see handleGridSelect above). Multi-item Show categories open the
+                  // country chooser until the user picks a specific item.
+                  clearGridItemSelection();
                 }
               },
               onHover: (code) => {
@@ -2025,15 +2132,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         setSelected({ kind: "modern", country: c });
                         setHovered(null);
                         // Same reasoning as the map's onSelect: don't leave a previous
-                        // country's airline/broadcaster/crest/olympic-committee grid
-                        // pick behind.
-                        setGridCrest(null);
-                        setGridOlympicCommittee(null);
-                        setGridAirlineId(null);
-                        setGridBroadcasterId(null);
-                        setGridTourismLogoId(null);
-                        setGridNewsAgencyId(null);
-                        setGridNewspaperId(null);
+                        // country's airline/broadcaster/crest/party grid pick behind.
+                        clearGridItemSelection();
                       }
                     }}
                     disabled={countries.length === 0}
@@ -2079,6 +2179,24 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       effectiveGridContentType === "party")
                   ) &&
                   panelFlagBox}
+                {multiChooser && (
+                  <CountryItemChooser
+                    type={multiChooser.type}
+                    countryName={multiChooser.countryName}
+                    items={multiChooser.items}
+                    resolveImage={resolveFlag}
+                    onSelect={(id) => pickChooserItem(multiChooser.type, id)}
+                  />
+                )}
+                {multiChooserBack && (
+                  <button
+                    type="button"
+                    className="country-chooser__back"
+                    onClick={clearGridItemSelection}
+                  >
+                    ← {multiChooserBack.label}
+                  </button>
+                )}
                 {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "airline" && activeAirline && (
                   <AirlineDetails
                     airline={activeAirline}

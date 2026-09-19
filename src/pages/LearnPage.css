@@ -755,6 +755,72 @@
   color: var(--ink);
 }
 
+/* Country-scoped mini-grid for multi-item Show categories (airlines,
+   parties, newspapers…). Replaces the detail widget until the user picks
+   one item; cards reuse `.flag-grid__*` chrome. */
+.country-chooser {
+  margin: 0.35rem 0 0.75rem;
+}
+
+.country-chooser__title {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.country-chooser__count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  letter-spacing: 0;
+}
+
+.country-chooser__hint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.country-chooser__empty {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.country-chooser__list {
+  /* Tighter than the full world grid — the panel is narrow. */
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+  gap: 0.85rem 0.65rem;
+}
+
+.country-chooser__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--coral-deep);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--coral-deep);
+  cursor: pointer;
+}
+
+.country-chooser__back:hover,
+.country-chooser__back:focus-visible {
+  outline: none;
+  color: var(--coral);
+  border-bottom-color: var(--coral);
+}
+
 /* Empty state — no country selected/hovered yet. */
 .learn-fs__empty {
   padding: 0.75rem 0.5rem;
