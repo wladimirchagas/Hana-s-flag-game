@@ -1906,7 +1906,8 @@
   color: var(--ink-fixed);
 }
 
-/* "In power" / coalition-name badges on a Political-parties grid card. */
+/* "In-power" / "Exec power" / "Leg power" / coalition-name badges on a
+   Political-parties grid card. */
 .flag-grid__party-badges {
   display: flex;
   flex-wrap: wrap;
