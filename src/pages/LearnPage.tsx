@@ -73,6 +73,8 @@ import { airlinesForCountry, airlineById } from "../lib/commercialAirlines";
 import { broadcastersForCountry, broadcasterById } from "../lib/publicBroadcasters";
 import { tourismLogosForCountry, tourismLogoById } from "../lib/tourismLogos";
 import { newsAgenciesForCountry, newsAgencyById } from "../lib/nationalNewsAgencies";
+import { newspapersForCountry, newspaperById } from "../lib/nationalNewspapers";
+import { partiesForCountry, partyById } from "../lib/politicalParties";
 import type { CommercialAirline } from "../types/airline";
 import type { PublicBroadcaster } from "../types/broadcaster";
 import type { TourismLogo } from "../types/tourismLogo";
@@ -416,6 +418,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [selectedSubdivisionTourismLogo, setSelectedSubdivisionTourismLogo] = useState<TourismLogo | null>(null);
   // The specific national news agency clicked in the grid.
   const [gridNewsAgencyId, setGridNewsAgencyId] = useState<string | null>(null);
+  // The specific top national newspaper clicked in the grid.
+  const [gridNewspaperId, setGridNewspaperId] = useState<string | null>(null);
+  const [gridPartyId, setGridPartyId] = useState<string | null>(null);
   // A national news agency picked in the "National symbols" tab of subdivision view.
   const [selectedSubdivisionNewsAgency, setSelectedSubdivisionNewsAgency] = useState<NewsAgency | null>(null);
   // A top national newspaper picked in the "National symbols" tab of subdivision view.
@@ -430,6 +435,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setGridBroadcasterId(null);
     setGridTourismLogoId(null);
     setGridNewsAgencyId(null);
+    setGridNewspaperId(null);
+    setGridPartyId(null);
   };
   // Captured at "Play" click time so the modal stays open even if the
   // hovered-country display clears while the user moves the mouse.
@@ -1645,6 +1652,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     newsAgencyId?: string,
     olympicCommitteeId?: string,
     worldMapCode?: string,
+    newspaperId?: string,
+    partyId?: string,
   ) {
     if (isModernEra) {
       // `id` is always the entity's own country code (an airline/broadcaster tile's
@@ -1681,10 +1690,14 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       setGridBroadcasterId(broadcasterId ?? null);
       setGridTourismLogoId(tourismLogoId ?? null);
       setGridNewsAgencyId(newsAgencyId ?? null);
+      setGridNewspaperId(newspaperId ?? null);
+      setGridPartyId(partyId ?? null);
       if (airlineId) setGridContentType("airline");
       if (broadcasterId) setGridContentType("broadcaster");
       if (tourismLogoId) setGridContentType("tourismlogo");
       if (newsAgencyId) setGridContentType("newsagency");
+      if (newspaperId) setGridContentType("newspaper");
+      if (partyId) setGridContentType("party");
     } else {
       const sel = selectionFromPolityName(id);
       if (!sel) return;
@@ -1754,6 +1767,31 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     const countryAgencies = newsAgenciesForCountry(display.country.code);
     return countryAgencies[0] ?? null;
   }, [subdivisionMode, effectiveGridContentType, display, gridNewsAgencyId]);
+
+  // Active top national newspaper to show in the information widget when in newspaper view.
+  const activeNewspaper = useMemo(() => {
+    if (subdivisionMode) return null;
+    if (effectiveGridContentType !== "newspaper" || display?.kind !== "modern") return null;
+    if (gridNewspaperId) {
+      const np = newspaperById(gridNewspaperId);
+      if (np) {
+        return np;
+      }
+    }
+    const countryNewspapers = newspapersForCountry(display.country.code);
+    return countryNewspapers[0] ?? null;
+  }, [subdivisionMode, effectiveGridContentType, display, gridNewspaperId]);
+
+  const activeParty = useMemo(() => {
+    if (subdivisionMode) return null;
+    if (effectiveGridContentType !== "party" || display?.kind !== "modern") return null;
+    if (gridPartyId) {
+      const p = partyById(gridPartyId);
+      if (p) return p;
+    }
+    const countryParties = partiesForCountry(display.country.code);
+    return countryParties[0] ?? null;
+  }, [subdivisionMode, effectiveGridContentType, display, gridPartyId]);
 
   // Resolver passed to FlagGrid so it can render absolute http(s) URLs,
   // relative historical-flags/*.png paths, AND bundled flag paths that
@@ -1889,6 +1927,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   setGridBroadcasterId(null);
                   setGridTourismLogoId(null);
                   setGridNewsAgencyId(null);
+                  setGridNewspaperId(null);
                 }
               },
               onHover: (code) => {
@@ -1994,6 +2033,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         setGridBroadcasterId(null);
                         setGridTourismLogoId(null);
                         setGridNewsAgencyId(null);
+                        setGridNewspaperId(null);
                       }
                     }}
                     disabled={countries.length === 0}
@@ -2034,7 +2074,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     (effectiveGridContentType === "airline" ||
                       effectiveGridContentType === "broadcaster" ||
                       effectiveGridContentType === "tourismlogo" ||
-                      effectiveGridContentType === "newsagency")
+                      effectiveGridContentType === "newsagency" ||
+                      effectiveGridContentType === "newspaper" ||
+                      effectiveGridContentType === "party")
                   ) &&
                   panelFlagBox}
                 {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "airline" && activeAirline && (
@@ -2065,13 +2107,27 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     onEnlarge={setZoomedFlagUrl}
                   />
                 )}
+                {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "newspaper" && activeNewspaper && (
+                  <NewspaperDetails
+                    newspaper={activeNewspaper}
+                    baseUrl={baseUrl}
+                    onEnlarge={setZoomedFlagUrl}
+                  />
+                )}
+                {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "party" && activeParty && (
+                  <PoliticalPartyDetails
+                    party={activeParty}
+                    baseUrl={baseUrl}
+                    onEnlarge={setZoomedFlagUrl}
+                  />
+                )}
                 {display.kind === "modern" ? (
                   // The country fact-sheet (Population, Capital, Languages, Currency,
                   // Government, Continent, Region, Anthem) belongs to the NATIONAL FLAG,
                   // not to whichever other national symbol happens to be selected —
                   // showing it under a coat of arms / passport / football crest /
                   // Olympic Committee logo / airline / broadcaster / tourism logo /
-                  // news agency mixes two unrelated fact lists in one panel.
+                  // news agency / newspaper mixes two unrelated fact lists in one panel.
                   // It still shows once the user clicks "Learn more" into the
                   // country's own tab, where the fact-sheet is always present above
                   // every symbol's own widget.
@@ -2081,7 +2137,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       effectiveGridContentType === "airline" ||
                       effectiveGridContentType === "broadcaster" ||
                       effectiveGridContentType === "tourismlogo" ||
-                      effectiveGridContentType === "newsagency"
+                      effectiveGridContentType === "newsagency" ||
+                      effectiveGridContentType === "newspaper" ||
+                      effectiveGridContentType === "party"
                     ) && (
                     <EntitySummary
                       kind="modern"
@@ -2864,6 +2922,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           selectedBroadcasterId={gridBroadcasterId}
           selectedTourismLogoId={gridTourismLogoId}
           selectedNewsAgencyId={gridNewsAgencyId}
+          selectedNewspaperId={gridNewspaperId}
+          selectedPartyId={gridPartyId}
           onSelect={handleGridSelect}
           resolveFlag={resolveFlag}
           isModernEra={isModernEra}

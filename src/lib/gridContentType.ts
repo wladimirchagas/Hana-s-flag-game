@@ -18,7 +18,9 @@ export type GridContentType =
   | "airline"
   | "broadcaster"
   | "tourismlogo"
-  | "newsagency";
+  | "newsagency"
+  | "newspaper"
+  | "party";
 
 export const GRID_CONTENT_TYPE_LABELS: Record<GridContentType, string> = {
   flag: "National flags",
@@ -30,8 +32,16 @@ export const GRID_CONTENT_TYPE_LABELS: Record<GridContentType, string> = {
   broadcaster: "Public broadcasters",
   tourismlogo: "Tourism logos",
   newsagency: "National news agencies",
+  newspaper: "Top newspapers",
+  party: "Political parties",
 };
 
+/**
+ * Every classification the world-map grid's Show dropdown must offer.
+ * Do not drop a type that still has data and UI — `party` was removed once
+ * (PR #1268) and must stay here. `scripts/check-grid-content-types.mjs` fails
+ * the build if this list loses a required classification.
+ */
 export const GRID_CONTENT_TYPE_ORDER: readonly GridContentType[] = [
   "flag",
   "coatofarms",
@@ -42,6 +52,8 @@ export const GRID_CONTENT_TYPE_ORDER: readonly GridContentType[] = [
   "broadcaster",
   "tourismlogo",
   "newsagency",
+  "newspaper",
+  "party",
 ];
 
 const STORAGE_KEY = "flagGame.learn.contentType";
