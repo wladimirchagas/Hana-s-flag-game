@@ -300,6 +300,56 @@ for (const [cid, c] of Object.entries(coalitions)) {
   checkSources(cid, [c.source].filter(Boolean), "coalition");
 }
 
+// Grid cards must never use a chamber abbreviation as the main name (Canada's
+// Liberals are "Liberal", not "LIB"). Mirrors partyCardName() in
+// src/lib/politicalParties.ts — keep the two in lockstep.
+function isPartyNameAbbreviation(label) {
+  const trimmed = (label ?? "").trim();
+  if (!trimmed) return true;
+  if (/\s/u.test(trimmed) && /\p{Ll}/u.test(trimmed)) return false;
+  const letters = [...trimmed].filter((ch) => /\p{L}/u.test(ch));
+  if (letters.length === 0) return true;
+  const lower = letters.filter((ch) => /\p{Ll}/u.test(ch)).length;
+  const upper = letters.filter((ch) => /\p{Lu}/u.test(ch)).length;
+  if (lower === 0) return true;
+  if (letters.length <= 5 && upper >= lower) return true;
+  return false;
+}
+
+function partyCardName(p) {
+  const short = (p.shortName ?? "").trim();
+  if (short && !isPartyNameAbbreviation(short)) return short;
+  const official = (p.nameEn && String(p.nameEn).trim()) || String(p.name ?? "").trim();
+  let derived = official.replace(/^The\s+/iu, "").trim();
+  derived = derived.replace(/\s+Part(?:y|ies) of(?: the)?\s+.+$/iu, "").trim();
+  derived = derived.replace(/\s+Part(?:y|ies)$/iu, "").trim();
+  const pick = (derived && !isPartyNameAbbreviation(derived) && derived)
+    || (official && !isPartyNameAbbreviation(official) && official)
+    || official
+    || short;
+  return pick;
+}
+
+for (const list of Object.values(partiesByCountry)) {
+  for (const p of list) {
+    const card = partyCardName(p);
+    const official = ((p.nameEn && String(p.nameEn).trim()) || String(p.name ?? "").trim());
+    // A party whose official name IS the brand (DENK, JA21, ANO 2011) may
+    // keep it. Fail only when a readable official name exists and the card
+    // still shows an abbreviation (LIB instead of Liberal).
+    if (isPartyNameAbbreviation(card) && !isPartyNameAbbreviation(official)) {
+      fail(p.id, `grid card name ${JSON.stringify(card)} is still an abbreviation; shortName=${JSON.stringify(p.shortName)} name=${JSON.stringify(p.name)} nameEn=${JSON.stringify(p.nameEn)}`);
+    }
+  }
+}
+
+const liberal = (partiesByCountry.CA ?? []).find((p) => p.id === "CA-LIB");
+if (!liberal) {
+  fail("CA-LIB", "Canada's Liberal Party is missing from the dataset");
+} else if (partyCardName(liberal) !== "Liberal") {
+  fail("CA-LIB", `grid card name must be "Liberal", got ${JSON.stringify(partyCardName(liberal))}`);
+}
+
 if (problems.length > 0) {
   console.error(`\n❌ Political-parties check failed — ${problems.length} problem(s) across ${partyCount} part${partyCount === 1 ? "y" : "ies"}:\n`);
   for (const p of problems) console.error(`  ${p}`);

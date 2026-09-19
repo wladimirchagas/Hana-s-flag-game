@@ -56,6 +56,7 @@ import {
   allPoliticalParties,
   coalitionForParty,
   partyById,
+  partyCardName,
   partyPowerBadges,
 } from "../lib/politicalParties";
 import {
@@ -485,7 +486,7 @@ export function FlagGrid({
         const coalition = coalitionForParty(p);
         return {
           id: p.id,
-          name: p.shortName,
+          name: partyCardName(p, parent?.name),
           flag: null,
           partyLogo: p.logo ?? null,
           partyId: p.id,
@@ -595,19 +596,24 @@ export function FlagGrid({
   // alphabetise within a group; the headings themselves are ordered by
   // a per-mode comparator below.
   const groups = useMemo(() => {
+    const byName = (a: FlagListEntry, b: FlagListEntry) =>
+      (a.sortKey ?? a.name).localeCompare(b.sortKey ?? b.name, "en");
+    // No grouping (and A–Z buckets) sort alphabetically by the card name.
+    // Ideology order is only for the party-ideology / by-country views, where
+    // the spectrum is the grouping.
     const sorted =
-      effectiveContentType === "party"
+      effectiveContentType === "party" &&
+      groupMode !== "none" &&
+      groupMode !== "alpha"
         ? [...filteredEntries].sort((a, b) => {
             const ra = a.partyIdeologyRank ?? 999;
             const rb = b.partyIdeologyRank ?? 999;
             if (ra !== rb) return ra - rb;
             const ca = (a.countryName ?? "").localeCompare(b.countryName ?? "", "en");
             if (ca !== 0) return ca;
-            return (a.sortKey ?? a.name).localeCompare(b.sortKey ?? b.name, "en");
+            return byName(a, b);
           })
-        : [...filteredEntries].sort((a, b) =>
-            (a.sortKey ?? a.name).localeCompare(b.sortKey ?? b.name, "en"),
-          );
+        : [...filteredEntries].sort(byName);
 
     if (groupMode === "none") {
       return [{ heading: null, items: sorted }];

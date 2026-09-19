@@ -40,7 +40,7 @@ export function PoliticalPartyDetails({
             type="button"
             className="learn-fs__flag"
             onClick={() => url && onEnlarge(url)}
-            aria-label={`Enlarge ${party.shortName} logo`}
+            aria-label={`Enlarge ${party.name} logo`}
           >
             <img
               key={url ?? "no-image"}

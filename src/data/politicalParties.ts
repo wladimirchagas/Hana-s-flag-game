@@ -104,7 +104,8 @@ export interface PoliticalParty {
   readonly id: string;
   /** ISO 3166-1 alpha-2 country code. */
   readonly country: string;
-  /** Abbreviation shown on the grid card, e.g. "DAP". */
+  /** Chamber/common abbreviation (e.g. "LIB"). Grid cards show
+   *  `partyCardName()`, never this value when it is an acronym. */
   readonly shortName: string;
   /** Official name in the party's own language. */
   readonly name: string;

@@ -86,6 +86,29 @@ assert.ok(
   "LearnPage must still mount PoliticalPartyDetails for the world-map party view",
 );
 
+assert.ok(
+  flagGridSrc.includes("partyCardName("),
+  "FlagGrid party cards must use partyCardName(), never a chamber abbreviation like LIB as the tile title",
+);
+assert.ok(
+  /groupMode !== "none"/.test(flagGridSrc) &&
+    flagGridSrc.includes('effectiveContentType === "party"'),
+  "FlagGrid must not ideology-sort the party view when Group by is No grouping",
+);
+
+const partyGridSrc = fs.readFileSync(
+  path.join(root, "src/components/PoliticalPartyGrid.tsx"),
+  "utf8",
+);
+assert.ok(
+  partyGridSrc.includes("partyCardName("),
+  "PoliticalPartyGrid cards must use partyCardName(), never a chamber abbreviation as the tile title",
+);
+assert.ok(
+  partyGridSrc.includes('none: "No grouping"'),
+  'PoliticalPartyGrid must offer a "No grouping" mode that lists parties alphabetically',
+);
+
 console.log(
   `PASS: Show dropdown keeps ${order.length} classifications (${order.join(", ")}).`,
 );

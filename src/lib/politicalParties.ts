@@ -66,6 +66,61 @@ export function allPoliticalParties(): readonly PoliticalParty[] {
   return out;
 }
 
+/**
+ * True when `label` is an abbreviation (LIB, NDP, UxP), not a readable
+ * party name. Grid cards must never show one of these as the main name.
+ */
+export function isPartyNameAbbreviation(label: string): boolean {
+  const trimmed = label.trim();
+  if (!trimmed) return true;
+  if (/\s/u.test(trimmed) && /\p{Ll}/u.test(trimmed)) return false;
+  const letters = [...trimmed].filter((ch) => /\p{L}/u.test(ch));
+  if (letters.length === 0) return true;
+  const lower = letters.filter((ch) => /\p{Ll}/u.test(ch)).length;
+  const upper = letters.filter((ch) => /\p{Lu}/u.test(ch)).length;
+  if (lower === 0) return true;
+  if (letters.length <= 5 && upper >= lower) return true;
+  return false;
+}
+
+function latinOrEnglishName(party: PoliticalParty): string {
+  const en = party.nameEn?.trim();
+  if (en) return en;
+  const native = party.name.trim();
+  if (/\p{Script=Latin}/u.test(native)) return native;
+  return native;
+}
+
+function stripPartyOfCountry(raw: string, countryName?: string): string {
+  let s = raw.replace(/^The\s+/iu, "").trim();
+  // "Liberal Party of Canada" → "Liberal"; also "Democratic Labour Party" →
+  // "Democratic Labour". Country-specific "of X" is stripped even when the
+  // caller did not pass a country name, so a card never reads as an acronym.
+  s = s.replace(/\s+Part(?:y|ies) of(?: the)?\s+.+$/iu, "").trim();
+  if (countryName) {
+    const cn = countryName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    s = s.replace(new RegExp(`\\s+of(?:\\s+the)?\\s+${cn}$`, "iu"), "").trim();
+  }
+  s = s.replace(/\s+Part(?:y|ies)$/iu, "").trim();
+  return s || raw;
+}
+
+/**
+ * The name shown on a party grid card. `shortName` is often a chamber
+ * abbreviation (Canada's Liberals are recorded as "LIB"); the card must
+ * show a readable name instead ("Liberal"). Word-like short names
+ * (Vooruit, Groen, Die Mitte) are kept.
+ */
+export function partyCardName(party: PoliticalParty, countryName?: string): string {
+  const short = party.shortName.trim();
+  if (short && !isPartyNameAbbreviation(short)) return short;
+  const official = latinOrEnglishName(party);
+  const derived = stripPartyOfCountry(official, countryName);
+  if (derived && !isPartyNameAbbreviation(derived)) return derived;
+  if (official && !isPartyNameAbbreviation(official)) return official;
+  return official || short;
+}
+
 /** How many parties (across every covered country) the grid will show for the
  *  current "Political parties" view. */
 export function totalPartyCount(): number {
