@@ -394,13 +394,19 @@ export function FlagGrid({
       const codeToEntry = new Map(entries.map((e) => [e.id, e]));
       return allTourismLogos().map((t): FlagListEntry => {
         const parent = codeToEntry.get(t.countryCode);
+        const countryName = parent ? parent.name : t.countryCode;
+        // Grid label: "[tagline] ([Country])" — uses slogan when present,
+        // falls back to the brand name. sortKey ensures the grid sorts
+        // alphabetically by country name, not by the tagline.
+        const tagline = t.slogan ?? t.name;
         return {
           id: t.id,
-          name: t.name,
+          name: `${tagline} (${countryName})`,
+          sortKey: countryName,
           flag: t.logo ?? null,
           tourismLogoImage: t.logo ?? null,
           tourismLogoId: t.id,
-          countryName: parent ? parent.name : t.countryCode,
+          countryName,
           continent: parent ? parent.continent : "Other",
           subcontinent: parent ? parent.subcontinent : "Other",
           selectId: t.countryCode,
@@ -519,7 +525,7 @@ export function FlagGrid({
   // a per-mode comparator below.
   const groups = useMemo(() => {
     const sorted = [...filteredEntries].sort((a, b) =>
-      a.name.localeCompare(b.name, "en"),
+      (a.sortKey ?? a.name).localeCompare((b.sortKey ?? b.name), "en"),
     );
 
     if (groupMode === "none") {

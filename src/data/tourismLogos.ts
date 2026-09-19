@@ -889,27 +889,27 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
   ],
   IT: [
     {
-      id: "it-enit",
+      id: "it-open-to-meraviglia",
       countryCode: "IT",
-      name: "ENIT — Italian National Tourist Board",
+      name: "Italy — \"Open to Meraviglia\"",
+      slogan: "Open to Meraviglia",
       agency:
         "ENIT S.p.A. (Agenzia Nazionale del Turismo / Italian Government Tourist Board), under the Ministry of Tourism",
+      launched: 2023,
       visitors: {
         count: 89000000,
         year: 2024,
         metric:
           "International (non-resident) tourist arrivals at accommodation establishments, calendar year (ISTAT, Istituto Nazionale di Statistica)",
       },
-      logo: "/tourism-logos/it/enit.png",
-      logoExplainer:
-        "ENIT — Agenzia Nazionale del Turismo (the Italian Government Tourist Board, founded 1919) is Italy's dedicated tourism-promotion body, distinct from the Ministry of Tourism itself; its logo is the visitor-facing \"ENIT\" wordmark used across the agency's international offices and campaign materials.",
+      noImageReason:
+        "Italy's current consumer destination brand is \"Open to Meraviglia\", launched in April 2023 by ENIT and the Ministry of Tourism. The previous entry showed the ENIT agency's own internal acronym wordmark — a mark used across the agency's international offices, not the public-facing campaign visual tourists actually encounter. The \"Open to Meraviglia\" campaign uses a stylised Venus de' Medici figure whose body is formed from the Italian landscape and artworks, but no freely-licensed copy of that brand mark could be found on Wikimedia Commons or Wikipedia. Re-checked 2026-09 against the board's own consumer site (https://www.italia.it/) — the source family that yielded the destination brand for 94 other countries — but the domain does not resolve or refuses connections from this environment, so no image bytes could be retrieved.",
       sources: [
-        "https://commons.wikimedia.org/wiki/File:ENIT_logo.png",
         "https://en.wikipedia.org/wiki/ENIT",
+        "https://www.italia.it/",
         "https://www.istat.it/en/press-release/tourist-flows-fourth-quarter-2024/",
+        "https://www.enit.it/en/press-office/news/open-to-meraviglia-a-new-tourism-campaign-for-italy",
       ],
-      licenceNote:
-        "Freely licensed on Wikimedia Commons under a CC0 1.0 Universal Public Domain Dedication (uploaded by the agency itself, dated 1 November 2010).",
     },
   ],
   AF: [
@@ -2548,7 +2548,6 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       id: "py-secretaria-nacional-de-turismo",
       countryCode: "PY",
       name: "Paraguay — Secretaría Nacional de Turismo",
-      slogan: "South America Undiscovered",
       agency: "Secretaría Nacional de Turismo (SENATUR), Paraguay",
       visitors: {
         count: 1077000,

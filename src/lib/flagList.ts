@@ -93,6 +93,13 @@ export type FlagListEntry = {
    * same entity".
    */
   readonly worldMapCode?: string;
+  /**
+   * Optional override key used by the sort comparator in FlagGrid.
+   * When present, the grid sorts by this value instead of `name`.
+   * Used by the tourism-logo view so cards sort alphabetically by country
+   * name rather than by the "[tagline] ([Country])" display string.
+   */
+  sortKey?: string;
 };
 
 /**
