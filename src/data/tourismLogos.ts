@@ -420,8 +420,8 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
     {
       id: "ca-destination-canada",
       countryCode: "CA",
-      name: "Destination Canada",
-      slogan: "For Glowing Hearts",
+      name: "Destination Canada — \"Keep Exploring\"",
+      slogan: "Keep Exploring",
       agency:
         "Destination Canada (formerly the Canadian Tourism Commission), a Crown corporation wholly owned by the Government of Canada",
       launched: 2019,
@@ -431,17 +431,14 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
         metric:
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Canada)",
       },
-      logo: "/tourism-logos/ca/destination-canada.svg",
-      logoExplainer:
-        "Destination Canada's brandmark as used on canada.travel: a single red maple leaf — the emblem of the national flag — enclosed by an open red circular stroke that sweeps round and ends in a small arrowhead, suggesting a journey or route returning on itself.",
+      noImageReason:
+        "The previously bundled SVG file was the Canada Specialist Program (CSP) logo — a trade certification programme for travel agents, not a consumer-facing destination brand. The correct public-facing mark is Destination Canada's \"Keep Exploring\" brand (launched 2019): a red maple leaf enclosed by an open circular arrow stroke, used across canada.travel. No freely-licensed copy of that mark could be found on Wikimedia Commons. Re-checked 2026-09 against Destination Canada's own consumer site (https://www.canada.travel/) — which loaded successfully but the site's logo assets could not be retrieved in this environment — so the wrong file has been removed and this entry left without an image until a correctly sourced asset is available.",
       sources: [
         "https://en.wikipedia.org/wiki/Destination_Canada",
         "https://www.creativebloq.com/news/destination-canada-logo",
         "https://www.theglobeandmail.com/business/article-canada-revamps-its-tourism-brand-to-project-an-inclusive-image/",
         "https://www.canada.travel/",
       ],
-      licenceNote:
-        "Copyrighted brandmark of Destination Canada (the federal Crown corporation for tourism marketing), taken from its official canada.travel site and bundled for identification of the destination brand, on the same non-free basis this repository uses for crests and passport covers.",
     },
   ],
   CL: [
