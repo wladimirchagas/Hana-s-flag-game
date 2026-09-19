@@ -1164,7 +1164,7 @@ export function FlagGrid({
                         if (badges.length === 0 && !item.partyCoalitionName) return null;
                         return (
                           <span className="flag-grid__party-badges">
-                            {badges.map((b, i) => (
+                            {badges.map((b) => (
                               <span
                                 key={`${b.kind}-${b.label}`}
                                 className={`flag-grid__party-badge flag-grid__party-badge--${b.kind}`}
