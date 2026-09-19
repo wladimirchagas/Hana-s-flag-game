@@ -26,6 +26,8 @@ on:
       - "public/tourism-logos/**"
       - "scripts/check-national-news-agencies.mjs"
       - "src/data/nationalNewsAgencies.ts"
+      - "scripts/check-national-newspapers.mjs"
+      - "src/data/nationalNewspapers.ts"
       - "public/newspaper-logos/**"
       - "src/api/subdivisions.ts"
       - "src/lib/subdivisionMeta.ts"
@@ -286,4 +288,7 @@ jobs:
 
       - name: Verify every national news agency is sourced, bundled and well-formed
         run: node scripts/check-national-news-agencies.mjs
+
+      - name: Verify every national newspaper is sourced, bundled and well-formed
+        run: node scripts/check-national-newspapers.mjs
 
