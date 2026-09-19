@@ -30,7 +30,7 @@ export function CountryItemChooser({
 }) {
   const heading = chooserHeading(type, countryName);
 
-          if (items.length === 0) {
+  if (items.length === 0) {
     return (
       <div className="country-chooser">
         <h3 className="country-chooser__title">{heading}</h3>
