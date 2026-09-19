@@ -3346,7 +3346,7 @@ Owner request (2026-09): abbreviations are unreadable as the main name on a grid
 ### Rules
 
 1. **World-map `FlagGrid` and the country-tab `PoliticalPartyGrid` both title tiles with `partyCardName(party, countryName)`.** Never render `shortName` as the card's main name when it is an acronym.
-2. **`partyCardName` is `name`, then ` (nameEn)` when the sourced English differs.** It must never invent a name or prefer the English form over the official local one.
+2. **`partyCardName` is `name`, then ` (nameEn)` when the sourced English differs.** It must never invent a name or prefer the English form over the official local one. On the card, the translation is painted in `--ink-soft` grey (`.flag-grid__name-translation`) so it is visually a gloss, not a second title.
 3. **Ungrouped and A–Z party lists sort by that card name** (`localeCompare` in `en`). Do not reintroduce ideology rank as the ungrouped comparator.
 4. **`scripts/check-political-parties.mjs` fails if Canada's Liberals (`CA-LIB`) would not card as `"Liberal Party of Canada"`, or if any party with a readable official name still cards as an abbreviation.** `scripts/check-grid-content-types.mjs` fails if either grid stops calling `partyCardName`, or if FlagGrid ideology-sorts when Group by is No grouping / A–Z. Never weaken those gates to land an unrelated change.
 

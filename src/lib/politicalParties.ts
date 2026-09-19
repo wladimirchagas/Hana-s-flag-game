@@ -85,15 +85,24 @@ export function isPartyNameAbbreviation(label: string): boolean {
 }
 
 /**
- * The name shown on a party grid card: the official name in the party's
- * own language, with the sourced English translation in parentheses when
- * it differs. Never the chamber abbreviation (`shortName` "LIB").
+ * Official local name, plus the sourced English translation when it
+ * differs. Never the chamber abbreviation (`shortName` "LIB").
+ * `partyCardName` is the plain-text form (sort, tooltip); the grid paints
+ * the translation in grey via `PartyCardName`.
  */
-export function partyCardName(party: PoliticalParty, _countryName?: string): string {
+export function partyCardNameParts(party: PoliticalParty): {
+  native: string;
+  translation: string | null;
+} {
   const native = party.name.trim();
   const en = party.nameEn?.trim();
-  if (native && en && en !== native) return `${native} (${en})`;
-  return native || en || party.shortName.trim();
+  const translation = native && en && en !== native ? en : null;
+  return { native: native || en || party.shortName.trim(), translation };
+}
+
+export function partyCardName(party: PoliticalParty, _countryName?: string): string {
+  const { native, translation } = partyCardNameParts(party);
+  return translation ? `${native} (${translation})` : native;
 }
 
 /** How many parties (across every covered country) the grid will show for the
