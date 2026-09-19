@@ -3536,6 +3536,59 @@ government, one per country.
 `headOfGovernment: true`. `scripts/check-grid-content-types.mjs` fails if `partyPowerBadges`
 keys Exec power off `inExecutive` or drops the `headOfGovernment` read.
 
+## Political-party "Leg power" is a chamber majority — hard rule, do not override without approval
+
+**The Learn-mode Political parties grid badge "Leg power" means this party holds a majority
+in a legislative chamber — more than half that chamber's seats — not "is in the governing
+coalition".** Bicameral bodies (the US House vs Senate, Australia's House vs Senate, Brazil's
+Chamber vs Federal Senate) can, and often do, disagree. A single `inPower` boolean cannot
+describe that.
+
+`inPower` stays the government-benches / coalition flag (cabinet and confidence-and-supply).
+Chamber control lives on optional `chambers[]` plus the country catalog `PARTY_LEGISLATURES`
+(`src/data/partyLegislatures.ts`). Countries not in the catalog keep the unicameral fallback
+(`inPower` → "Leg power").
+
+### Why this rule exists
+
+Owner direction, 2026-09: Brazil, Australia and the United States can have different parties
+(or no party) in each house. Treating `inPower` as legislative power made Brazil's fourteen
+coalition parties look like fourteen legislative majorities, hid the US Senate, and implied
+Labor held Australia's Senate.
+
+| System | What the card shows | Example (sourced 2026-09) |
+|--------|---------------------|---------------------------|
+| Presidential, both houses same party | Exec + House + Senate (short names, not a generic Leg) | United States → Republicans |
+| Presidential, no party has half the seats | Exec only; no Leg badge | Brazil → Workers' Party (Lula); Chamber and Senate are hung at the party level |
+| Westminster, House majority, Senate hung | In-power only (fused); no Senate badge | Australia → Labor 94/150 House, 30/76 Senate |
+
+### Rules
+
+1. **A country in `PARTY_LEGISLATURES` never derives a Leg badge from `inPower`.** Badges
+   come from `chambers[].majority === true`, labelled with that body's `shortName`
+   ("House", "Senate"). A hung chamber has no badge. A majority that exists only as a
+   multi-party bloc is not a party majority — do not mark every coalition member.
+2. **`majority` requires this party's own seats to be more than half that chamber**
+   (`2 * seats > seatsTotal`). Never widen it to "largest party" or "government bloc".
+   At most one party per chamber per country.
+3. **Westminster still fuses the confidence house into "In-power".** A House majority
+   there is not also a "House" badge. An upper-house majority, when a single party
+   actually has one, may add a Senate (etc.) badge beside In-power.
+4. **Do not invent the other house's seats.** If a source's chamber table does not add
+   up (Brazil's Senate infobox listed 82 against 81 seats), omit per-party figures for
+   that house rather than guess which row is wrong. The catalog `note` still tells the
+   reader the legislature is bicameral.
+5. **Verify in the running app:** US Republicans show Exec + House + Senate; US Democrats
+   show none of those; Brazil's Workers' Party shows Exec only (coalition partners show
+   no Leg); Australia's Labor shows In-power only.
+
+### Enforcement
+
+`scripts/check-political-parties.mjs` fails on a `majority` that is not more than half
+the seats, on two parties claiming the same chamber, and on a `chambers` row that does
+not match `PARTY_LEGISLATURES`. `scripts/check-grid-content-types.mjs` fails if
+`partyPowerBadges` drops the `PARTY_LEGISLATURES` / `chamberMajorityBadges` path.
+
 ## The political-party audit is a STANDING SWEEP — 195 countries, one at a time, shipped one at a time — hard rule, do not override without approval
 
 **The owner has directed (2026-09-11) that the Learn-mode political-party dataset be audited AND
@@ -3580,7 +3633,8 @@ Before doing any work on a country, and after each material boundary (current-ch
    `seatsTotal`; one `seatsTotal` per country; every seated party the chamber lists is either
    present or its absence is explained in the ledger; `inPower`/`inExecutive`/`headOfGovernment`
    reflect the government in office today (`headOfGovernment` is the Exec-power badge — the HoG
-   party only); a coalition every member references must exist in `POLITICAL_COALITIONS`.
+   party only; a bicameral Leg badge is a chamber majority in `PARTY_LEGISLATURES`, never `inPower`);
+   a coalition every member references must exist in `POLITICAL_COALITIONS`.
 7. **Never weaken `scripts/check-political-parties.mjs`** to make a country pass. If it fires, the
    data is wrong.
 8. **Verify in the running app before every push** (the mandatory visual-verification rule applies):

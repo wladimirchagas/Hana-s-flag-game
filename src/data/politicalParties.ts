@@ -99,6 +99,14 @@ export interface PoliticalCoalition {
   readonly note?: string;
 }
 
+export interface PartyChamberSeats {
+  readonly name: string;
+  readonly seats: number;
+  readonly seatsTotal: number;
+  /** True only when this party holds more than half the chamber's seats. */
+  readonly majority?: boolean;
+}
+
 export interface PoliticalParty {
   /** Stable id: "{countryCode}-{SHORTCODE}", e.g. "MY-DAP". */
   readonly id: string;
@@ -140,7 +148,9 @@ export interface PoliticalParty {
   readonly coalitionId?: string;
   readonly leader?: string;
   readonly leaderTitle?: string;
-  /** Currently part of the national governing coalition / legislative majority. */
+  /** Currently part of the national governing coalition (cabinet and/or
+   *  confidence-and-supply). This is NOT "holds a legislative majority" in a
+   *  bicameral country — see `chambers` and `PARTY_LEGISLATURES`. */
   readonly inPower: boolean;
   /** Party holds a cabinet portfolio (or equivalent). Distinct from
    *  `headOfGovernment` — junior coalition partners sit in cabinet without
@@ -158,6 +168,12 @@ export interface PoliticalParty {
   readonly seats: number;
   readonly seatsTotal: number;
   readonly chamberName: string;
+  /** Optional per-chamber seat counts. Used when a country is in
+   *  `PARTY_LEGISLATURES` (bicameral / multi-body). The entry whose `name`
+   *  matches `chamberName` must repeat `seats` / `seatsTotal`. `majority` is
+   *  true only when THIS party (or its two-party caucus) holds more than half
+   *  that chamber's seats — never a multi-party bloc, never invented. */
+  readonly chambers?: readonly PartyChamberSeats[];
   /** Sourced, documented explanation of what the logo's design means — the
    *  SAME {description, myths?, sources} shape (and the same `FlagMeaning`
    *  component) every other flag/symbol meaning in this game uses. Present
@@ -17101,6 +17117,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 94,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 94, "seatsTotal": 150, "majority": true },
+        { "name": "Senate", "seats": 30, "seatsTotal": 76 }
+      ],
       "sources": [
         {
           "title": "Australian Labor Party – Wikipedia (infobox: oldest branches 1891, ideology Social democracy, position Centre-left, leader Anthony Albanese)",
@@ -17113,6 +17133,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings, as of 25 June 2026)",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        },
+        {
+          "title": "Template:Composition of Australian Senate — as of 14 May 2026: Government Labor 30 of 76 (no Senate majority)",
+          "url": "https://en.wikipedia.org/wiki/Template:Composition_of_Australian_Senate"
         }
       ]
     },
@@ -17141,6 +17165,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 17,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 17, "seatsTotal": 150 },
+        { "name": "Senate", "seats": 23, "seatsTotal": 76 }
+      ],
       "sources": [
         {
           "title": "Liberal Party of Australia – Wikipedia (infobox: founded 13 October 1944, ideology, position Centre-right to right-wing, leader Angus Taylor)",
@@ -17149,6 +17177,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings: Liberal 17, counted separately from the 16 LNP seats)",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        },
+        {
+          "title": "Template:Composition of Australian Senate — as of 14 May 2026: Liberal party room 23 of 76 (including two LNP senators and one Country Liberal senator who sit in the Liberal party room)",
+          "url": "https://en.wikipedia.org/wiki/Template:Composition_of_Australian_Senate"
         }
       ]
     },
@@ -17222,6 +17254,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 8,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 8, "seatsTotal": 150 },
+        { "name": "Senate", "seats": 4, "seatsTotal": 76 }
+      ],
       "sources": [
         {
           "title": "National Party of Australia – Wikipedia (founded as the Australian Country Party 1920, renamed National Country Party 1975 and National Party of Australia 1982; leader Matt Canavan since 11 March 2026)",
@@ -17230,6 +17266,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings: National 8, counted separately from the 16 LNP seats)",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        },
+        {
+          "title": "Template:Composition of Australian Senate — as of 14 May 2026: National party room 4 of 76 (including two LNP senators who sit in the National party room)",
+          "url": "https://en.wikipedia.org/wiki/Template:Composition_of_Australian_Senate"
         }
       ]
     },
@@ -17256,10 +17296,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 2, "seatsTotal": 150 },
+        { "name": "Senate", "seats": 4, "seatsTotal": 76 }
+      ],
       "sources": [
         {
           "title": "One Nation – Wikipedia (infobox: founded 11 April 1997, ideology, position Right-wing to far-right, leader Pauline Hanson)",
           "url": "https://en.wikipedia.org/wiki/One_Nation_(Australia)"
+        },
+        {
+          "title": "Template:Composition of Australian Senate — as of 14 May 2026: One Nation 4 of 76",
+          "url": "https://en.wikipedia.org/wiki/Template:Composition_of_Australian_Senate"
         },
         {
           "title": "48th Parliament of Australia – Wikipedia (Changes in membership: Barnaby Joyce joined One Nation 8 December 2025; David Farley won Farrer for One Nation at the by-election held 9 May 2026)",
@@ -17329,10 +17377,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 1, "seatsTotal": 150 },
+        { "name": "Senate", "seats": 10, "seatsTotal": 76 }
+      ],
       "sources": [
         {
           "title": "Australian Greens – Wikipedia (infobox: founded 1992, ideology, position Left-wing, leader Larissa Waters)",
           "url": "https://en.wikipedia.org/wiki/Australian_Greens"
+        },
+        {
+          "title": "Template:Composition of Australian Senate — as of 14 May 2026: Greens 10 of 76",
+          "url": "https://en.wikipedia.org/wiki/Template:Composition_of_Australian_Senate"
         },
         {
           "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings, as of 25 June 2026)",
@@ -19411,10 +19467,14 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "inPower": true,
       "inExecutive": true,
       "headOfGovernment": true,
-      "timeInPower": "In the White House since Donald Trump's second inauguration on 20 January 2025, with the House majority in the 119th Congress.",
+      "timeInPower": "In the White House since Donald Trump's second inauguration on 20 January 2025, with the House and Senate majorities in the 119th Congress.",
       "seats": 218,
       "seatsTotal": 435,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 218, "seatsTotal": 435, "majority": true },
+        { "name": "Senate", "seats": 53, "seatsTotal": 100, "majority": true }
+      ],
       "sources": [
         {
           "title": "Republican Party (United States) — Wikipedia: ideology, political position, founding year and leadership",
@@ -19423,6 +19483,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "United States House of Representatives — Wikipedia: 119th Congress, 435 voting members — Majority 219 (Republican 218 + 1 independent who caucuses with them), Minority 214 (Democratic), 2 vacancies",
           "url": "https://en.wikipedia.org/wiki/United_States_House_of_Representatives"
+        },
+        {
+          "title": "United States Senate — Wikipedia: 119th Congress — Majority Republican 53, Minority 47 (Democratic 45 + 2 independents who caucus with them)",
+          "url": "https://en.wikipedia.org/wiki/United_States_Senate"
         },
         {
           "title": "President of the United States — Wikipedia (Donald Trump, in office since January 20, 2025)",
@@ -19450,6 +19514,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 214,
       "seatsTotal": 435,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 214, "seatsTotal": 435 },
+        { "name": "Senate", "seats": 45, "seatsTotal": 100 }
+      ],
       "sources": [
         {
           "title": "Democratic Party (United States) — Wikipedia: ideology, political position, founding year and leadership",
@@ -19458,6 +19526,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "United States House of Representatives — Wikipedia: 119th Congress, 435 voting members — Majority 219 (Republican 218 + 1 independent who caucuses with them), Minority 214 (Democratic), 2 vacancies",
           "url": "https://en.wikipedia.org/wiki/United_States_House_of_Representatives"
+        },
+        {
+          "title": "United States Senate — Wikipedia: 119th Congress — Majority Republican 53, Minority 47 (Democratic 45 + 2 independents who caucus with them)",
+          "url": "https://en.wikipedia.org/wiki/United_States_Senate"
         }
       ]
     }

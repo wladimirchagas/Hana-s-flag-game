@@ -4,6 +4,7 @@ import {
   type PoliticalParty,
   type PoliticalCoalition,
 } from "../data/politicalParties";
+import { PARTY_LEGISLATURES, type CountryLegislature } from "../data/partyLegislatures";
 import { GOVERNMENT_TYPES } from "./governmentTypes";
 
 /**
@@ -142,25 +143,62 @@ export interface PartyBadgeItem {
   readonly kind: "power" | "executive" | "legislative";
 }
 
+export function legislatureForCountry(code: string): CountryLegislature | null {
+  return PARTY_LEGISLATURES[code] ?? null;
+}
+
+function chamberShortName(countryCode: string, chamberName: string): string {
+  const body = legislatureForCountry(countryCode)?.bodies.find((b) => b.name === chamberName);
+  return body?.shortName ?? chamberName;
+}
+
+function chamberMajorityBadges(party: PoliticalParty, countryCode: string): PartyBadgeItem[] {
+  const legislature = legislatureForCountry(countryCode);
+  if (!legislature) return [];
+  const cat = getGovernmentCategory(countryCode);
+  const out: PartyBadgeItem[] = [];
+  for (const c of party.chambers ?? []) {
+    if (!c.majority) continue;
+    // Westminster already labels the confidence house as "In-power".
+    if (cat !== "presidential" && cat !== "semi-presidential" && c.name === legislature.confidenceHouse) {
+      continue;
+    }
+    out.push({ label: chamberShortName(countryCode, c.name), kind: "legislative" });
+  }
+  return out;
+}
+
 export function partyPowerBadges(party: PoliticalParty, countryCode: string): PartyBadgeItem[] {
   const cat = getGovernmentCategory(countryCode);
   const badges: PartyBadgeItem[] = [];
+  const splitLegislature = legislatureForCountry(countryCode) != null;
 
   // Presidential / semi-presidential: split the two offices.
   // "Exec power" is the party of the HEAD OF GOVERNMENT only — never every
   // cabinet partner, and never the head of state's party merely for holding
   // that office (France: Macron is HoS, Lecornu/Renaissance is HoG).
-  // Parliamentary / Westminster systems fuse the two, so they keep a single
-  // "In-power" badge.
+  // "Leg power" is a chamber majority, not the governing coalition: in a
+  // catalogued bicameral country the badges are the short chamber names
+  // (House / Senate). A hung chamber, or a majority that is only a
+  // multi-party bloc, has no Leg badge.
+  // Parliamentary / Westminster systems fuse executive and the confidence
+  // house into "In-power", and may still show an upper-house majority.
   if (cat === "presidential" || cat === "semi-presidential") {
     if (party.headOfGovernment) {
       badges.push({ label: "Exec power", kind: "executive" });
     }
-    if (party.inPower) {
+    if (splitLegislature) {
+      badges.push(...chamberMajorityBadges(party, countryCode));
+    } else if (party.inPower) {
       badges.push({ label: "Leg power", kind: "legislative" });
     }
-  } else if (party.inPower) {
-    badges.push({ label: "In-power", kind: "power" });
+  } else {
+    if (party.inPower) {
+      badges.push({ label: "In-power", kind: "power" });
+    }
+    if (splitLegislature) {
+      badges.push(...chamberMajorityBadges(party, countryCode));
+    }
   }
 
   return badges;

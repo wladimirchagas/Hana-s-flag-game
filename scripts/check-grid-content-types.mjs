@@ -137,6 +137,12 @@ assert.ok(
   'Exec power must key off headOfGovernment (the HoG party), never inExecutive (cabinet partners)',
 );
 assert.ok(
+  partyLibSrc.includes("PARTY_LEGISLATURES") &&
+    partyLibSrc.includes("splitLegislature") &&
+    partyLibSrc.includes("chamberMajorityBadges"),
+  "Leg power in bicameral countries must come from per-chamber majority (PARTY_LEGISLATURES), not the governing-coalition inPower flag",
+);
+assert.ok(
   !partyLibSrc.includes("Hold executive power") &&
     !partyLibSrc.includes("Hold legislative power"),
   'partyPowerBadges must not use the long "Hold executive/legislative power" labels on grid cards',
