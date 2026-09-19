@@ -3328,22 +3328,27 @@ PR #1268 moved Political parties out of the world-map Show dropdown into the cou
 4. **A party tile never falls back to the national flag.** No bundled logo → honest empty/"no image" tile and `noImageReason` in the panel.
 5. **`scripts/check-grid-content-types.mjs` (wired into `npm run test:ui` / `npm run build`) fails the build if `party` leaves the Show list or FlagGrid/LearnPage stop wiring it.** Do not delete or skip that check to land an unrelated change.
 
-## Party grid cards: readable names, A–Z when ungrouped — hard rule, do not override without approval
+## Party grid cards: local official name, A–Z when ungrouped — hard rule, do not override without approval
 
-**A Political parties tile's main label is a readable party name, never a chamber abbreviation.** Canada's Liberals are **Liberal**, not **LIB**. `shortName` stays in the data as the abbreviation the chamber uses; the card title is always `partyCardName()` (`src/lib/politicalParties.ts`). Word-like short names (Vooruit, Groen, Die Mitte) are kept. A party whose official name *is* the brand (DENK, JA21, ANO 2011) may keep that brand.
+**A Political parties tile's main label is the party's official name in its own language,
+never a chamber abbreviation and never English-only when a local name exists.** Canada's
+Liberals are **Liberal Party of Canada**, not **LIB**. Brazil's Workers' Party is
+**Partido dos Trabalhadores (Workers' Party)**. `shortName` stays in the data as the
+abbreviation the chamber uses; the card title is always `partyCardName()`
+(`src/lib/politicalParties.ts`): `name`, plus `nameEn` in parentheses when it differs.
 
 **When Group by is "No grouping" (or A–Z buckets), party tiles sort alphabetically by that card name.** Ideology order is only for the ideology / by-country groupings, where the spectrum is the grouping.
 
 ### Why this rule exists
 
-Owner request (2026-09): abbreviations are unreadable as the main name on a grid of ~800 parties, and an ungrouped list that is still ordered by ideology is not an A–Z index. PR #1478 shipped both; this rule stops a later change from putting `shortName` back on the tile or ideology-sorting the ungrouped view.
+Owner request (2026-09): abbreviations are unreadable as the main name on a grid of ~800 parties, and an ungrouped list that is still ordered by ideology is not an A–Z index. A follow-up (same day) required the **local** official name on the card, with the English translation only as a parenthetical — English-first shortening had hidden the name voters actually see.
 
 ### Rules
 
 1. **World-map `FlagGrid` and the country-tab `PoliticalPartyGrid` both title tiles with `partyCardName(party, countryName)`.** Never render `shortName` as the card's main name when it is an acronym.
-2. **`partyCardName` prefers a non-abbreviation `shortName`, otherwise derives a label from `nameEn` / `name`** (strip a leading "The", a trailing "Party" / "Party of {country}"). It must never invent a name — only shorten the sourced official one.
+2. **`partyCardName` is `name`, then ` (nameEn)` when the sourced English differs.** It must never invent a name or prefer the English form over the official local one.
 3. **Ungrouped and A–Z party lists sort by that card name** (`localeCompare` in `en`). Do not reintroduce ideology rank as the ungrouped comparator.
-4. **`scripts/check-political-parties.mjs` fails if Canada's Liberals (`CA-LIB`) would not card as `"Liberal"`, or if any party with a readable official name still cards as an abbreviation.** `scripts/check-grid-content-types.mjs` fails if either grid stops calling `partyCardName`, or if FlagGrid ideology-sorts when Group by is No grouping / A–Z. Never weaken those gates to land an unrelated change.
+4. **`scripts/check-political-parties.mjs` fails if Canada's Liberals (`CA-LIB`) would not card as `"Liberal Party of Canada"`, or if any party with a readable official name still cards as an abbreviation.** `scripts/check-grid-content-types.mjs` fails if either grid stops calling `partyCardName`, or if FlagGrid ideology-sorts when Group by is No grouping / A–Z. Never weaken those gates to land an unrelated change.
 
 ## A political party's logo is a SHOULD, never a MUST — the RESEARCH is the hard rule — hard rule, do not override without approval
 
@@ -3559,15 +3564,16 @@ Labor held Australia's Senate.
 | System | What the card shows | Example (sourced 2026-09) |
 |--------|---------------------|---------------------------|
 | Presidential, both houses same party | Exec + House + Senate (short names, not a generic Leg) | United States → Republicans |
-| Presidential, no party has half the seats | Exec only; no Leg badge | Brazil → Workers' Party (Lula); Chamber and Senate are hung at the party level |
+| Presidential, no party has half the seats | Exec on the HoG; **Leg power on every `inPower` coalition party** | Brazil → Workers' Party Exec+Leg; cabinet partners Leg |
 | Westminster, House majority, Senate hung | In-power only (fused); no Senate badge | Australia → Labor 94/150 House, 30/76 Senate |
 
 ### Rules
 
-1. **A country in `PARTY_LEGISLATURES` never derives a Leg badge from `inPower`.** Badges
-   come from `chambers[].majority === true`, labelled with that body's `shortName`
-   ("House", "Senate"). A hung chamber has no badge. A majority that exists only as a
-   multi-party bloc is not a party majority — do not mark every coalition member.
+1. **When any party in the country holds a chamber majority, Leg badges are those houses'
+   `shortName` (House / Senate), not generic Leg.** When none does — Brazil's Chamber and
+   Senate at the party level — fall back to `inPower` → "Leg power" so the governing
+   coalition is still visible. A majority that exists only as a multi-party bloc is
+   not marked as a House/Senate majority on every member; it uses this fallback.
 2. **`majority` requires this party's own seats to be more than half that chamber**
    (`2 * seats > seatsTotal`). Never widen it to "largest party" or "government bloc".
    At most one party per chamber per country.
@@ -3579,8 +3585,8 @@ Labor held Australia's Senate.
    that house rather than guess which row is wrong. The catalog `note` still tells the
    reader the legislature is bicameral.
 5. **Verify in the running app:** US Republicans show Exec + House + Senate; US Democrats
-   show none of those; Brazil's Workers' Party shows Exec only (coalition partners show
-   no Leg); Australia's Labor shows In-power only.
+   show none of those; Brazil's Workers' Party shows Exec **and** Leg (coalition partners
+   show Leg, not Exec); Australia's Labor shows In-power only.
 
 ### Enforcement
 

@@ -113,7 +113,7 @@ export interface PoliticalParty {
   /** ISO 3166-1 alpha-2 country code. */
   readonly country: string;
   /** Chamber/common abbreviation (e.g. "LIB"). Grid cards show
-   *  `partyCardName()`, never this value when it is an acronym. */
+   *  `partyCardName()` — the official local name, never this acronym. */
   readonly shortName: string;
   /** Official name in the party's own language. */
   readonly name: string;

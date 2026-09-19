@@ -139,8 +139,15 @@ assert.ok(
 assert.ok(
   partyLibSrc.includes("PARTY_LEGISLATURES") &&
     partyLibSrc.includes("splitLegislature") &&
-    partyLibSrc.includes("chamberMajorityBadges"),
-  "Leg power in bicameral countries must come from per-chamber majority (PARTY_LEGISLATURES), not the governing-coalition inPower flag",
+    partyLibSrc.includes("chamberMajorityBadges") &&
+    partyLibSrc.includes("countryHasChamberMajority"),
+  "Leg power uses per-chamber majority when a party holds a house, and falls back to inPower when none does",
+);
+assert.ok(
+  /const native = party\.name\.trim\(\)/.test(partyLibSrc) &&
+    partyLibSrc.includes("party.nameEn") &&
+    partyLibSrc.includes("(${en})"),
+  "partyCardName must show the official local name, with nameEn in parentheses when it differs",
 );
 assert.ok(
   !partyLibSrc.includes("Hold executive power") &&
