@@ -49,7 +49,7 @@ export function NewsAgencyDetails({
 
       <dl className="entity-summary" style={{ marginTop: "1rem" }}>
         <div className="entity-summary__row">
-          <dt className="entity-summary__label">News Agency / Outlet</dt>
+          <dt className="entity-summary__label">National News Agency</dt>
           <dd className="entity-summary__value">
             <strong>{agency.name}</strong>
             {agency.englishTranslation && agency.englishTranslation !== agency.name && (

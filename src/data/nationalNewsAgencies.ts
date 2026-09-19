@@ -5,199 +5,67 @@ import type { NewsAgency } from "../types/newsAgency";
  */
 
 export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
-  "AU": [
+  "AD": [
     {
-      "id": "au-aap",
-      "countryCode": "AU",
-      "name": "Australian Associated Press",
-      "officialName": "Australian Associated Press Ltd",
-      "founded": 1935,
-      "frequency": "Continuous 24/7 national newswire",
-      "format": "National newswire, digital syndication & fact-checking service",
-      "language": "English",
-      "headquarters": "Sydney, New South Wales",
-      "owner": {
-        "name": "AAP Ltd (Public-interest non-profit consortium)",
-        "type": "Non-profit public-interest news agency"
-      },
-      "editorialStance": "Independent, non-partisan, objective wire reporting and verified fact-checking (IFCN signatory)",
-      "readership": {
-        "metric": "14+ million monthly readers reached across 400+ publications, broadcast networks, and digital platforms nationwide",
-        "source": "AAP Annual Review & Impact Report 2023–24"
-      },
-      "annualPublicFunding": {
-        "total": "A$5.0 million / year (Commonwealth Public Interest News Gathering / PING grant allocation)",
-        "perCapita": "A$0.19 / person / year"
-      },
-      "revenueModel": "Non-profit hybrid: commercial subscriber news licensing, philanthropic foundations, and Commonwealth Government public-interest grants",
-      "logo": "newspaper-logos/au/aap.svg",
-      "logoExplainer": "The AAP emblem features a dynamic multi-faceted spherical cluster composed of interlocking geometric polygons in shades of azure, navy, and cyan blue, followed by the bold lowercase typography 'aap'. The spherical polyhedron represents multi-perspective objective journalism, data aggregation, and rapid news delivery connecting Australia's states and territories to the world.",
-      "sources": [
-        "https://www.aap.com.au/about/",
-        "https://newsroom.aap.com.au/",
-        "https://www.infrastructure.gov.au/media-communications-arts/regional-and-local-news"
-      ],
-      "licenceNote": "National news agency trademark bundled for educational reference in Learn mode."
-    }
-  ],
-  "MY": [
-    {
-      "id": "my-bernama",
-      "countryCode": "MY",
-      "name": "Bernama",
-      "officialName": "Pertubuhan Berita Nasional Malaysia",
-      "nativeName": "Pertubuhan Berita Nasional Malaysia",
-      "englishTranslation": "Malaysian National News Agency",
-      "founded": 1967,
-      "frequency": "Continuous 24/7 multimedia newswire",
-      "format": "Multimedia wire service, television (Bernama TV), radio & digital news portal",
-      "language": "Malay (Bahasa Melayu), English, Mandarin, Tamil, Arabic, Spanish",
-      "headquarters": "Wisma Bernama, Jalan Tun Razak, Kuala Lumpur",
-      "owner": {
-        "name": "Government of Malaysia (Ministry of Communications)",
-        "type": "Statutory corporation"
-      },
-      "editorialStance": "National public news service providing factual, comprehensive, and objective coverage of national development, parliamentary proceedings, and regional ASEAN affairs",
-      "readership": {
-        "metric": "3.8 million monthly digital visitors on Bernama.com; 100% domestic syndication reach across all print, television, and radio broadcasters",
-        "source": "Malaysian Communications and Multimedia Commission (MCMC) & Reuters Institute 2024"
-      },
-      "annualPublicFunding": {
-        "total": "RM 115.0 million (~US$26.5M) annual government operating grant (2024)",
-        "perCapita": "RM 3.43 / person / year (~US$0.79)"
-      },
-      "revenueModel": "Federal government statutory operating grant supplemented by commercial wire service subscriptions and advertising",
-      "logo": "newspaper-logos/my/bernama.png",
-      "logoExplainer": "The Bernama emblem features a solid sky-blue rounded square containing an angular geometric white monogram forming the letter 'B'. The sharp, intersecting facets evoke broadcast transmission signals, digital relay antennas, and multifaceted news reporting, while the bold uppercase title 'BERNAMA' below anchors the visual identity with authority and clarity.",
-      "sources": [
-        "https://www.bernama.com/",
-        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/malaysia",
-        "https://www.kkd.gov.my/"
-      ],
-      "licenceNote": "National news agency trademark bundled for educational reference in Learn mode."
-    }
-  ],
-  "BR": [
-    {
-      "id": "br-agencia-brasil",
-      "countryCode": "BR",
-      "name": "Agência Brasil",
-      "officialName": "Agência Brasil (Empresa Brasil de Comunicação - EBC)",
-      "nativeName": "Agência Brasil",
-      "englishTranslation": "Brazil Agency",
-      "motto": {
-        "original": "A informação que o cidadão precisa",
-        "translation": "The information that the citizen needs"
-      },
-      "founded": 1946,
-      "frequency": "Continuous 24/7 digital newswire",
-      "format": "Public digital newswire, photography wire (Foto Agência), and audio feed (Radioagência Nacional)",
-      "language": "Portuguese (Português), with editions in English and Spanish",
-      "headquarters": "Venâncio Shopping, Brasília, Distrito Federal (with regional bureaus in Rio de Janeiro, São Paulo, and São Luís)",
-      "owner": {
-        "name": "Empresa Brasil de Comunicação (EBC)",
-        "type": "Federal state-owned public communication corporation"
-      },
-      "editorialStance": "Public interest citizenship journalism focusing on public policies, human rights, civic access, and factual reporting guided by the EBC Journalism Manual",
-      "readership": {
-        "metric": "14.2 million monthly unique web visits / 26M+ monthly pageviews; syndicated under Creative Commons (CC-BY 3.0) by over 2,000 national, regional, and municipal news outlets",
-        "source": "EBC Relatório de Gestão & Transparência 2023–2024"
-      },
-      "annualPublicFunding": {
-        "total": "R$ 52.3 million allocated to agency news services (within EBC's total R$ 685.4 million federal budget)",
-        "perCapita": "R$ 0.25 / person / year (for wire services; R$ 3.25 EBC total)"
-      },
-      "revenueModel": "100% public funding through the Federal Government General Budget (OGU) and telecommunications public contribution fund (FISTEL)",
-      "logo": "newspaper-logos/br/agencia-brasil.svg",
-      "logoExplainer": "Unveiled in the 2023 EBC institutional brand refresh, the Agência Brasil logo pairs a refined modern sans-serif wordmark in lowercase ('agênciaBrasil') with a dynamic circular emblem at the right. The open circular emblem, formed by energetic curved strokes evoking an orbital sweep, symbolizes the universal flow of information, transparency, and the national embrace of Brazilian public media across all regions.",
-      "sources": [
-        "https://agenciabrasil.ebc.com.br/sobre",
-        "https://www.ebc.com.br/acesso-a-informacao",
-        "https://acessoainformacao.ebc.com.br/auditorias/demonstracoes-financeiras"
-      ],
-      "licenceNote": "Public news agency trademark bundled for educational reference in Learn mode."
-    }
-  ],
-  "NR": [
-    {
-      "id": "nr-gio",
-      "countryCode": "NR",
-      "name": "Government Information Office / Naoero Bulletin",
-      "officialName": "Republic of Naoero Government Information Office (GIO)",
-      "nativeName": "Naoero Bulletin (Ofisin Informasiyo)",
-      "englishTranslation": "Nauru Bulletin (Government Information Office)",
-      "motto": {
-        "original": "God's Will First",
-        "translation": "National motto of the Republic of Naoero"
-      },
+      "id": "ad-ana",
+      "countryCode": "AD",
+      "name": "Agència de Notícies Andorrana",
+      "englishTranslation": "Andorran News Agency (ANA)",
       "founded": 2008,
-      "frequency": "Fortnightly print & digital gazette, with real-time media releases",
-      "format": "Official government newswire, press bulletins, and fortnightly public newsletter (Naoero Bulletin)",
-      "language": "English and Nauruan (Dorerin Naoero)",
-      "headquarters": "Office of the President, Government Offices, Yaren District",
+      "frequency": "Continuous newswire service",
+      "format": "Digital newswire & photo agency",
+      "language": "Catalan",
+      "headquarters": "Andorra la Vella",
       "owner": {
-        "name": "Republic of Naoero (Office of the President)",
-        "type": "Government executive information service"
+        "name": "ANA Media Group",
+        "type": "Independent commercial media"
       },
-      "editorialStance": "Official public information, statutory announcements, ministerial communications, and community news for the Republic of Naoero",
+      "editorialStance": "National newswire service; objective news reporting on Andorran public affairs and institutions",
       "readership": {
-        "metric": "4,500+ fortnightly print and digital recipients (reaching ~35% of the island's resident population of 12,500 plus diplomatic missions and overseas diaspora)",
-        "source": "Republic of Naoero Government Information Office distribution records"
+        "metric": "Primary wire service supplying Andorran newspapers, radio stations, and digital portals",
+        "source": "Agència de Notícies Andorrana Official"
       },
-      "annualPublicFunding": {
-        "total": "A$480,000 annual operational budget for GIO and public media publishing",
-        "perCapita": "A$38.40 / person / year"
-      },
-      "revenueModel": "100% state budget allocation through the Office of the President national appropriation",
-      "logo": "newspaper-logos/nr/nauru-gio.svg",
-      "logoExplainer": "The Government Information Office bears the official Coat of Arms of the Republic of Naoero (Nauru). At the crest is a 12-pointed white star representing the island's 12 indigenous tribes above the alchemical emblem for phosphorus, commemorating the nation's historic phosphate heritage. The lower shield depicts a frigate bird (Fregata) on a perch over blue ocean waves and a flowering branch of the indigenous tomano tree, surrounded by palm fronds, tribal chief adornments, and the national motto 'God's Will First'.",
+      "revenueModel": "Media subscription fees and syndication",
+      "logo": "newspaper-logos/ad/ana.svg",
+      "logoExplainer": "Orange circular badge with white sans-serif lettering 'ANA', representing modern digital newswire distribution.",
       "sources": [
-        "https://www.nauru.gov.nr",
-        "https://www.naurugov.nr/government-information-office.aspx",
-        "https://www.sbs.com.au/news/article/nauru-officially-changes-name-to-naoero/2026-08-01"
-      ],
-      "licenceNote": "Republic of Naoero official coat of arms bundled for educational reference in Learn mode."
+        "https://www.ana.ad",
+        "https://ca.wikipedia.org/wiki/Ag%C3%A8ncia_de_Not%C3%ADcies_Andorrana"
+      ]
     }
   ],
-  "VA": [
+  "AE": [
     {
-      "id": "va-vatican-news",
-      "countryCode": "VA",
-      "name": "Vatican News",
-      "officialName": "Dicastero per la Comunicazione",
-      "nativeName": "Dicastero per la Comunicazione",
-      "englishTranslation": "Dicastery for Communication (incorporating Vatican News and L'Osservatore Romano)",
-      "motto": {
-        "original": "Unicuique suum / Non praevalebunt",
-        "translation": "To each his own / They shall not prevail (Matthew 16:18)"
-      },
-      "founded": 2017,
-      "frequency": "Continuous 24/7 global multimedia newswire",
-      "format": "Multilingual digital news portal, Vatican Radio audio stream, print daily (L'Osservatore Romano), and television feed (Vatican Media)",
-      "language": "53 broadcast languages (including Italian, English, Spanish, French, Portuguese, German, Arabic, Polish, Chinese, and Latin)",
-      "headquarters": "Piazza Pia 3, Rome / Vatican City State",
+      "id": "ae-wam",
+      "countryCode": "AE",
+      "name": "WAM (Emirates News Agency)",
+      "nativeName": "وكالة أنباء الإمارات (وام)",
+      "englishTranslation": "Emirates News Agency (WAM)",
+      "founded": 1976,
+      "frequency": "24/7 real-time multimedia news wire service",
+      "format": "National news wire & digital portal (wam.ae)",
+      "language": "Arabic, English, French, Spanish, Russian, Chinese, Hindi, Urdu, German, Italian, Portuguese, Turkish, Farsi, Swahili, Hebrew",
+      "headquarters": "Corniche Road, Abu Dhabi",
       "owner": {
-        "name": "Holy See (The Roman Curia / Dicastery for Communication)",
-        "type": "Sovereign state media & pastoral communications organ"
-      },
-      "editorialStance": "Official global communications service of the Holy See, providing universal coverage of the Papacy, the Roman Curia, international diplomacy, and the worldwide Catholic Church",
-      "readership": {
-        "metric": "11.5+ million monthly digital visitors across 53 languages; broadcast syndication to over 1,000 affiliate radio networks and press agencies worldwide",
-        "source": "Dicastero per la Comunicazione Relazione di Bilancio & Vatican Media Analytics 2024"
+        "name": "National Media Office (Government of the United Arab Emirates)",
+        "type": "State-owned national news wire agency"
       },
       "annualPublicFunding": {
-        "total": "€38.5 million total annual operating budget for the Dicastery for Communication",
-        "perCapita": "€48,125 / resident / year (across Vatican City's ~800 residents; serves 1.39 billion Catholics globally at €0.03/person)"
+        "total": "AED 85 million",
+        "perCapita": "AED 9.20"
       },
-      "revenueModel": "Funded directly by the Holy See Roman Curia budget (Holy See patrimony and Peter's Pence apostolic collection)",
-      "logo": "newspaper-logos/va/vatican-news.png",
-      "logoExplainer": "The Vatican News identity features the signature red background of papal ceremonial heraldry. On the left, a crisp square frame contains the Keys of Saint Peter crossed in saltire (one gold, one silver) bound by a cordon and surmounted by the papal triple tiara (triregnum), symbolizing papal apostolic authority and spiritual ministry. To the right, 'VATICAN NEWS' is rendered in clean geometric white typography, contrasting tradition with modern global accessibility.",
+      "editorialStance": "Official national news agency of the United Arab Emirates, established by ministerial decree in 1976; serves as the definitive wire source for Federal Supreme Council decrees, presidential directives, international economic partnerships (COP28, BRICS), and humanitarian initiatives",
+      "readership": {
+        "metric": "Transmits over 400 news releases and multimedia feeds daily in 19 languages to domestic media, international news agencies, and government portals",
+        "source": "WAM Annual Report / UAE National Media Office"
+      },
+      "revenueModel": "Federal government budget funding and international media exchange agreements",
+      "logo": "newspaper-logos/ae/wam.svg",
+      "logoExplainer": "Pan-Arab green field with white square badge displaying red Arabic calligraphy 'وام', bold white typography 'WAM', and bilingual subtitle.",
       "sources": [
-        "https://www.vaticannews.va/",
-        "https://www.comunicazione.va/",
-        "https://www.vatican.va/roman_curia/secretariat-communication/index.htm"
-      ],
-      "licenceNote": "Holy See Dicastery for Communication trademark bundled for educational reference in Learn mode."
+        "https://wam.ae",
+        "https://en.wikipedia.org/wiki/Emirates_News_Agency"
+      ]
     }
   ],
   "AF": [
@@ -311,88 +179,58 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "DZ": [
+  "AM": [
     {
-      "id": "dz-aps",
-      "countryCode": "DZ",
-      "name": "Algérie Presse Service",
-      "officialName": "Algérie Presse Service (APS)",
-      "founded": 1961,
+      "id": "am-armenpress",
+      "countryCode": "AM",
+      "name": "Armenpress",
+      "officialName": "Armenpress News Agency State CJSC",
+      "founded": 1918,
       "frequency": "Continuous 24/7 state newswire",
       "format": "Official state newswire & photo service",
-      "language": "Arabic, French, Tamazight, English",
-      "headquarters": "Algiers",
+      "language": "Armenian, Russian, English, French, Arabic, Spanish",
+      "headquarters": "Yerevan",
       "owner": {
-        "name": "People's Democratic Republic of Algeria",
+        "name": "Republic of Armenia",
         "type": "State-owned / statutory corporation"
       },
-      "editorialStance": "Official state news agency; presidential decrees, government policy, and diplomatic affairs",
+      "editorialStance": "National state news agency; official state communications, foreign relations, and Nagorno-Karabakh reporting",
       "readership": {
-        "metric": "Primary news agency supplying all Algerian public and private newspapers, TV, and radio networks",
-        "source": "APS Annual Report 2023"
+        "metric": "Oldest and primary news agency of Armenia, supplying news to all Armenian domestic outlets and diaspora media",
+        "source": "Armenpress Official Review 2023"
       },
-      "revenueModel": "Direct state budget allocation and subscriber licensing fees",
-      "logo": "newspaper-logos/dz/aps.svg",
-      "logoExplainer": "Emerald green circular badge with white typography and stylized arrow symbolizing rapid national news distribution.",
+      "revenueModel": "State budget allocation and subscriber service licensing",
+      "logo": "newspaper-logos/am/armenpress.svg",
+      "logoExplainer": "Deep blue circular badge with gold emblem and Armenian typography 'ԱՐՄԵՆՊՐԵՍ', representing 100+ years of national news agency history.",
       "sources": [
-        "https://www.aps.dz",
-        "https://en.wikipedia.org/wiki/Alg%C3%A9rie_Presse_Service"
+        "https://armenpress.am",
+        "https://en.wikipedia.org/wiki/Armenpress"
       ]
     },
     {
-      "id": "dz-el-khabar",
-      "countryCode": "DZ",
-      "name": "El Khabar",
-      "englishTranslation": "The News",
-      "founded": 1990,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital portal",
-      "language": "Arabic",
-      "headquarters": "Algiers",
+      "id": "am-news-am",
+      "countryCode": "AM",
+      "name": "News.am",
+      "founded": 2009,
+      "frequency": "Continuous 24/7 digital news",
+      "format": "Digital news portal & mobile news service",
+      "language": "Armenian, English, Russian, Turkish",
+      "headquarters": "Yerevan",
       "owner": {
-        "name": "El Khabar SPA",
+        "name": "Media News Agency LLC",
         "type": "Independent commercial media"
       },
-      "editorialStance": "Independent Arabic daily; broad political commentary, domestic politics, and social reporting",
+      "editorialStance": "Independent online news agency; breaking news, regional Caucasus politics, and international affairs",
       "readership": {
-        "metric": "One of the most widely read Arabic-language dailies in Algeria (~100,000 daily print circulation)",
-        "source": "OJD Middle East & North Africa"
+        "metric": "Over 3.5 million monthly online visits across Armenia and the global Armenian diaspora",
+        "source": "SimilarWeb / News.am Media Kit 2024"
       },
-      "revenueModel": "Print retail sales and commercial display advertising",
-      "logo": "newspaper-logos/dz/el-khabar.svg",
-      "logoExplainer": "Bold Arabic calligraphic masthead in white on a deep crimson background, symbolizing national Arab-language reporting.",
+      "revenueModel": "Digital display advertising, video pre-rolls, and commercial partnerships",
+      "logo": "newspaper-logos/am/news-am.svg",
+      "logoExplainer": "Red bold typography 'NEWS.am' symbolising rapid digital breaking news reporting.",
       "sources": [
-        "https://www.elkhabar.com",
-        "https://en.wikipedia.org/wiki/El_Khabar"
-      ]
-    }
-  ],
-  "AD": [
-    {
-      "id": "ad-ana",
-      "countryCode": "AD",
-      "name": "Agència de Notícies Andorrana",
-      "englishTranslation": "Andorran News Agency (ANA)",
-      "founded": 2008,
-      "frequency": "Continuous newswire service",
-      "format": "Digital newswire & photo agency",
-      "language": "Catalan",
-      "headquarters": "Andorra la Vella",
-      "owner": {
-        "name": "ANA Media Group",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "National newswire service; objective news reporting on Andorran public affairs and institutions",
-      "readership": {
-        "metric": "Primary wire service supplying Andorran newspapers, radio stations, and digital portals",
-        "source": "Agència de Notícies Andorrana Official"
-      },
-      "revenueModel": "Media subscription fees and syndication",
-      "logo": "newspaper-logos/ad/ana.svg",
-      "logoExplainer": "Orange circular badge with white sans-serif lettering 'ANA', representing modern digital newswire distribution.",
-      "sources": [
-        "https://www.ana.ad",
-        "https://ca.wikipedia.org/wiki/Ag%C3%A8ncia_de_Not%C3%ADcies_Andorrana"
+        "https://news.am",
+        "https://en.wikipedia.org/wiki/News.am"
       ]
     }
   ],
@@ -425,34 +263,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "AG": [
-    {
-      "id": "ag-pointville",
-      "countryCode": "AG",
-      "name": "Point Express Newspaper",
-      "officialName": "Pointville Publishing",
-      "founded": 2020,
-      "frequency": "Daily publication (Monday–Friday)",
-      "format": "Digital daily e-paper & print publication",
-      "language": "English",
-      "headquarters": "St. John's",
-      "owner": {
-        "name": "Pointville Communications",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Daily news publication; national politics, economics, and community developments",
-      "readership": {
-        "metric": "Popular daily e-paper circulated widely via digital platforms and social channels",
-        "source": "Pointville Publishing Review 2023"
-      },
-      "revenueModel": "Advertising and commercial publishing",
-      "logo": "newspaper-logos/ag/pointville.svg",
-      "logoExplainer": "Crimson rectangular badge with bold white text 'POINT EXPRESS', representing modern daily news.",
-      "sources": [
-        "https://pointville.ag"
-      ]
-    }
-  ],
   "AR": [
     {
       "id": "ar-telam",
@@ -479,89 +289,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "sources": [
         "https://www.telam.com.ar",
         "https://en.wikipedia.org/wiki/T%C3%A9lam"
-      ]
-    },
-    {
-      "id": "ar-el-cronista",
-      "countryCode": "AR",
-      "name": "El Cronista",
-      "officialName": "El Cronista Comercial",
-      "founded": 1908,
-      "frequency": "Daily (Monday–Friday)",
-      "format": "Tabloid & financial digital portal",
-      "language": "Spanish",
-      "headquarters": "Buenos Aires",
-      "owner": {
-        "name": "Grupo América",
-        "type": "Commercial conglomerate"
-      },
-      "editorialStance": "Financial and business daily; macroeconomic news, markets, and corporate policy",
-      "readership": {
-        "metric": "Leading financial daily in Argentina read by business executives and financial markets",
-        "source": "El Cronista Media Review 2023"
-      },
-      "revenueModel": "Corporate subscriptions, print sales, and financial advertising",
-      "logo": "newspaper-logos/ar/el-cronista.svg",
-      "logoExplainer": "Emerald green title logo representing financial journalism and economic markets.",
-      "sources": [
-        "https://www.cronista.com",
-        "https://es.wikipedia.org/wiki/El_Cronista_(n%C3%BAmero_comercial)"
-      ]
-    }
-  ],
-  "AM": [
-    {
-      "id": "am-armenpress",
-      "countryCode": "AM",
-      "name": "Armenpress",
-      "officialName": "Armenpress News Agency State CJSC",
-      "founded": 1918,
-      "frequency": "Continuous 24/7 state newswire",
-      "format": "Official state newswire & photo service",
-      "language": "Armenian, Russian, English, French, Arabic, Spanish",
-      "headquarters": "Yerevan",
-      "owner": {
-        "name": "Republic of Armenia",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "National state news agency; official state communications, foreign relations, and Nagorno-Karabakh reporting",
-      "readership": {
-        "metric": "Oldest and primary news agency of Armenia, supplying news to all Armenian domestic outlets and diaspora media",
-        "source": "Armenpress Official Review 2023"
-      },
-      "revenueModel": "State budget allocation and subscriber service licensing",
-      "logo": "newspaper-logos/am/armenpress.svg",
-      "logoExplainer": "Deep blue circular badge with gold emblem and Armenian typography 'ԱՐՄԵՆՊՐԵՍ', representing 100+ years of national news agency history.",
-      "sources": [
-        "https://armenpress.am",
-        "https://en.wikipedia.org/wiki/Armenpress"
-      ]
-    },
-    {
-      "id": "am-hayastani-hanrapetutyun",
-      "countryCode": "AM",
-      "name": "Hayastani Hanrapetutyun",
-      "englishTranslation": "Republic of Armenia",
-      "founded": 1990,
-      "frequency": "Daily (Tuesday–Saturday)",
-      "format": "Official print daily & digital portal",
-      "language": "Armenian",
-      "headquarters": "Yerevan",
-      "owner": {
-        "name": "National Assembly of Armenia",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Official parliamentary daily newspaper; official legislative acts, laws, and state decrees",
-      "readership": {
-        "metric": "Official legal gazette and daily paper for civil servants and legal professionals in Armenia",
-        "source": "National Assembly Press Division 2023"
-      },
-      "revenueModel": "State parliamentary budget allocation",
-      "logo": "newspaper-logos/am/hayastani-hanrapetutyun.svg",
-      "logoExplainer": "Gold Armenian calligraphic script 'ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅՈՒՆ' on dark slate, representing parliamentary state publishing.",
-      "sources": [
-        "https://hhpress.am",
-        "https://hy.wikipedia.org/wiki/%D5%80%D5%A1%D5%B5%D5%A1%D5%BD%D5%B2%D5%A1%D5%B6%D5%AB_%D5%80%D5%A1%D5%B6%D5%BF%D5%A1%D5%BA%D5%AE%D5%BF%D5%B8%D5%A9%D5%B5%D5%B8%D5%Living"
       ]
     }
   ],
@@ -596,32 +323,41 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://apa.at",
         "https://en.wikipedia.org/wiki/Austria_Presse_Agentur"
       ]
-    },
+    }
+  ],
+  "AU": [
     {
-      "id": "at-der-standard",
-      "countryCode": "AT",
-      "name": "Der Standard",
-      "founded": 1988,
-      "frequency": "Daily (Monday–Saturday)",
-      "format": "Broadsheet (pink paper) & digital portal",
-      "language": "German",
-      "headquarters": "Vienna",
+      "id": "au-aap",
+      "countryCode": "AU",
+      "name": "Australian Associated Press",
+      "officialName": "Australian Associated Press Ltd",
+      "founded": 1935,
+      "frequency": "Continuous 24/7 national newswire",
+      "format": "National newswire, digital syndication & fact-checking service",
+      "language": "English",
+      "headquarters": "Sydney, New South Wales",
       "owner": {
-        "name": "Oscar Bronner / STANDARD Medien AG",
-        "type": "Independent commercial media"
+        "name": "AAP Ltd (Public-interest non-profit consortium)",
+        "type": "Non-profit public-interest news agency"
       },
-      "editorialStance": "Liberal-centre quality daily newspaper; international politics, culture, economics, and civil society",
+      "editorialStance": "Independent, non-partisan, objective wire reporting and verified fact-checking (IFCN signatory)",
       "readership": {
-        "metric": "Leading online news portal in Austria (derStandard.at) with over 2.5 million monthly unique visitors",
-        "source": "ÖWA (Österreichische Web-Analyse) 2024"
+        "metric": "14+ million monthly readers reached across 400+ publications, broadcast networks, and digital platforms nationwide",
+        "source": "AAP Annual Review & Impact Report 2023–24"
       },
-      "revenueModel": "Digital subscriptions, pink paper print sales, and display advertising",
-      "logo": "newspaper-logos/at/der-standard.svg",
-      "logoExplainer": "Salmon-pink rectangular logo with bold sans-serif text 'DER STANDARD', matching the newspaper's signature pink print pages.",
+      "annualPublicFunding": {
+        "total": "A$5.0 million / year (Commonwealth Public Interest News Gathering / PING grant allocation)",
+        "perCapita": "A$0.19 / person / year"
+      },
+      "revenueModel": "Non-profit hybrid: commercial subscriber news licensing, philanthropic foundations, and Commonwealth Government public-interest grants",
+      "logo": "newspaper-logos/au/aap.svg",
+      "logoExplainer": "The AAP emblem features a dynamic multi-faceted spherical cluster composed of interlocking geometric polygons in shades of azure, navy, and cyan blue, followed by the bold lowercase typography 'aap'. The spherical polyhedron represents multi-perspective objective journalism, data aggregation, and rapid news delivery connecting Australia's states and territories to the world.",
       "sources": [
-        "https://www.derstandard.at",
-        "https://en.wikipedia.org/wiki/Der_Standard"
-      ]
+        "https://www.aap.com.au/about/",
+        "https://newsroom.aap.com.au/",
+        "https://www.infrastructure.gov.au/media-communications-arts/regional-and-local-news"
+      ],
+      "licenceNote": "National news agency trademark bundled for educational reference in Learn mode."
     }
   ],
   "AZ": [
@@ -732,61 +468,88 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "BS": [
+  "BA": [
     {
-      "id": "bs-bis",
-      "countryCode": "BS",
-      "name": "Bahamas Information Services",
-      "officialName": "Bahamas Information Services (BIS)",
-      "founded": 1974,
-      "frequency": "Continuous state news service",
-      "format": "Official government news agency",
-      "language": "English",
-      "headquarters": "Nassau",
+      "id": "ba-fena",
+      "countryCode": "BA",
+      "name": "FENA",
+      "officialName": "Federalna novinska agencija",
+      "founded": 2000,
+      "frequency": "Continuous 24/7 state newswire",
+      "format": "Official entity newswire & photo service",
+      "language": "Bosnian, Croatian, Serbian, English",
+      "headquarters": "Sarajevo",
       "owner": {
-        "name": "Commonwealth of The Bahamas",
-        "type": "Government ministry / department"
+        "name": "Federation of Bosnia and Herzegovina",
+        "type": "State-owned / statutory corporation"
       },
-      "editorialStance": "Official government news service; parliamentary proceedings, cabinet releases, and national public announcements",
+      "editorialStance": "Official news agency; federal government notices, parliamentary debates, and regional affairs",
       "readership": {
-        "metric": "Official news provider for all Bahamian radio, TV, and print media",
-        "source": "Bahamas Information Services"
+        "metric": "Largest news agency supplying all daily papers, TV, and radio networks in FBiH",
+        "source": "FENA Official Review 2023"
       },
-      "revenueModel": "Government parliamentary budget",
-      "logo": "newspaper-logos/bs/bis.svg",
-      "logoExplainer": "Gold and blue emblem 'BIS BAHAMAS INFORMATION SERVICES', representing official state public information.",
+      "revenueModel": "State budget funding and commercial newswire subscriptions",
+      "logo": "newspaper-logos/ba/fena.svg",
+      "logoExplainer": "Royal blue circular emblem with gold lettering 'FENA', representing Bosnia and Herzegovina's federal news agency.",
       "sources": [
-        "https://www.bahamas.gov.bs",
-        "https://en.wikipedia.org/wiki/Bahamas_Information_Services"
+        "https://fena.ba",
+        "https://bs.wikipedia.org/wiki/Federalna_novinska_agencija"
+      ]
+    },
+    {
+      "id": "ba-srna",
+      "countryCode": "BA",
+      "name": "SRNA",
+      "officialName": "Novinska agencija Republike Srpske",
+      "founded": 1992,
+      "frequency": "Continuous newswire service",
+      "format": "Entity newswire & photo service",
+      "language": "Serbian, English",
+      "headquarters": "Bijeljina",
+      "owner": {
+        "name": "Government of Republika Srpska",
+        "type": "State-owned / statutory corporation"
+      },
+      "editorialStance": "Entity state news agency; official government announcements and regional news",
+      "readership": {
+        "metric": "Primary news agency for media outlets in Republika Srpska",
+        "source": "SRNA Official Report 2023"
+      },
+      "revenueModel": "Entity public budget funding and subscription licensing",
+      "logo": "newspaper-logos/ba/srna.svg",
+      "logoExplainer": "Crimson title badge with Cyrillic and Latin typography 'СРНА / SRNA'.",
+      "sources": [
+        "https://www.srna.rs",
+        "https://sr.wikipedia.org/wiki/%D0%A1%D0%A0%D0%9D%D0%90"
       ]
     }
   ],
-  "BH": [
+  "BB": [
     {
-      "id": "bh-bna",
-      "countryCode": "BH",
-      "name": "Bahrain News Agency",
-      "officialName": "Bahrain News Agency (BNA)",
-      "founded": 1976,
-      "frequency": "Continuous 24/7 state newswire",
-      "format": "Official state newswire & photo service",
-      "language": "Arabic, English",
-      "headquarters": "Manama",
+      "id": "bb-bgis",
+      "countryCode": "BB",
+      "name": "Barbados Government Information Service",
+      "officialName": "BGIS News",
+      "founded": 1958,
+      "frequency": "Continuous state news agency",
+      "format": "Official government news service",
+      "language": "English",
+      "headquarters": "Bridgetown",
       "owner": {
-        "name": "Ministry of Information Affairs",
+        "name": "Government of Barbados",
         "type": "Government ministry / department"
       },
-      "editorialStance": "Official state news agency; royal decrees, government policy, and Gulf Cooperation Council (GCC) diplomacy",
+      "editorialStance": "Official government news agency; ministerial statements, parliamentary acts, and public health bulletins",
       "readership": {
-        "metric": "Primary wire agency supplying news to all domestic Bahraini newspapers, TV, and international press",
-        "source": "BNA Institutional Review 2023"
+        "metric": "Primary official news source supplying all Barbadian radio, TV, and print outlets",
+        "source": "BGIS Official"
       },
-      "revenueModel": "Direct state budget allocation",
-      "logo": "newspaper-logos/bh/bna.svg",
-      "logoExplainer": "Crimson circular emblem with Arabic typography 'بنا' and white text 'BAHRAIN NEWS AGENCY', representing official royal state media.",
+      "revenueModel": "Government state budget allocation",
+      "logo": "newspaper-logos/bb/bgis.svg",
+      "logoExplainer": "Blue and gold emblem 'BGIS BARBADOS GOVERNMENT INFORMATION SERVICE', representing official public communication.",
       "sources": [
-        "https://www.bna.bh",
-        "https://en.wikipedia.org/wiki/Bahrain_News_Agency"
+        "https://gisbarbados.gov.bb",
+        "https://en.wikipedia.org/wiki/Barbados_Government_Information_Service"
       ]
     }
   ],
@@ -819,32 +582,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     },
     {
-      "id": "bd-daily-star",
-      "countryCode": "BD",
-      "name": "The Daily Star",
-      "founded": 1991,
-      "frequency": "Daily (Monday–Sunday)",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "Dhaka",
-      "owner": {
-        "name": "Mediaworld Ltd",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Leading English-language quality daily; independent, liberal stance, civil rights, and economic reporting",
-      "readership": {
-        "metric": "Largest circulation English newspaper in Bangladesh (over 8 million monthly unique web visitors)",
-        "source": "Reuters Institute Digital News Report 2023"
-      },
-      "revenueModel": "Print newsstand sales, display advertising, and digital subscriptions",
-      "logo": "newspaper-logos/bd/daily-star.svg",
-      "logoExplainer": "Deep blue serif title font 'The Daily Star', recognized worldwide as Bangladesh's primary English newspaper.",
-      "sources": [
-        "https://www.thedailystar.net",
-        "https://en.wikipedia.org/wiki/The_Daily_Star_(Bangladesh)"
-      ]
-    },
-    {
       "id": "bd-bdnews24",
       "countryCode": "BD",
       "name": "bdnews24.com",
@@ -868,91 +605,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "sources": [
         "https://bdnews24.com",
         "https://en.wikipedia.org/wiki/Bdnews24.com"
-      ]
-    }
-  ],
-  "BB": [
-    {
-      "id": "bb-nation-news",
-      "countryCode": "BB",
-      "name": "Nation News",
-      "officialName": "The Nation Newspaper",
-      "founded": 1973,
-      "frequency": "Daily (Monday–Sunday)",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "Fontabelle, St. Michael",
-      "owner": {
-        "name": "One Caribbean Media Ltd (OCM)",
-        "type": "Commercial conglomerate"
-      },
-      "editorialStance": "Leading commercial daily newspaper in Barbados; investigative news, community issues, and CARICOM regional affairs",
-      "readership": {
-        "metric": "Highest circulation newspaper in Barbados (~25,000 daily print, 1M monthly digital visitors)",
-        "source": "One Caribbean Media Annual Report 2023"
-      },
-      "revenueModel": "Print retail sales, digital advertising, and e-paper subscriptions",
-      "logo": "newspaper-logos/bb/nation-news.svg",
-      "logoExplainer": "Bold red title typography 'NATION NEWS' on white, representing Barbados's primary daily newspaper.",
-      "sources": [
-        "https://www.nationnews.com",
-        "https://en.wikipedia.org/wiki/The_Nation_(Barbados)"
-      ]
-    }
-  ],
-  "BY": [
-    {
-      "id": "by-belta",
-      "countryCode": "BY",
-      "name": "BelTA",
-      "officialName": "Belarusian Telegraph Agency (BelTA)",
-      "founded": 1918,
-      "frequency": "Continuous 24/7 state newswire",
-      "format": "Official state newswire & photo agency",
-      "language": "Belarusian, Russian, English, German, Spanish, Chinese",
-      "headquarters": "Minsk",
-      "owner": {
-        "name": "Republic of Belarus",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Official state news agency; presidential decrees, government policies, and national affairs",
-      "readership": {
-        "metric": "Primary news supplier to all domestic Belarusian print newspapers, TV channels, and radio stations",
-        "source": "BelTA Official Annual Report 2023"
-      },
-      "revenueModel": "Direct state budget funding and subscriber licensing",
-      "logo": "newspaper-logos/by/belta.svg",
-      "logoExplainer": "Red circular emblem with white typography 'БЕЛТА', symbolising Belarus's official national telegraph agency.",
-      "sources": [
-        "https://www.belta.by",
-        "https://en.wikipedia.org/wiki/Belarusian_Telegraph_Agency"
-      ]
-    },
-    {
-      "id": "by-belapan",
-      "countryCode": "BY",
-      "name": "BelaPAN",
-      "officialName": "Belarusian Private News Agency",
-      "founded": 1991,
-      "frequency": "Continuous digital newswire",
-      "format": "Independent digital newswire agency",
-      "language": "Belarusian, Russian, English",
-      "headquarters": "Minsk",
-      "owner": {
-        "name": "BelaPAN Company",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Historic independent news agency; non-partisan wire reporting and economic analysis",
-      "readership": {
-        "metric": "First independent private news agency established in post-Soviet Belarus",
-        "source": "BAJ Review"
-      },
-      "revenueModel": "Subscriber licensing and commercial news syndication",
-      "logo": "newspaper-logos/by/belapan.svg",
-      "logoExplainer": "Slate blue title logo 'BelaPAN', representing independent wire reporting history.",
-      "sources": [
-        "https://belapan.by",
-        "https://en.wikipedia.org/wiki/BelaPAN"
       ]
     }
   ],
@@ -983,32 +635,146 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://www.belga.be",
         "https://en.wikipedia.org/wiki/Belga_(news_agency)"
       ]
+    }
+  ],
+  "BF": [
+    {
+      "id": "bf-aib",
+      "countryCode": "BF",
+      "name": "Agence d'Information du Burkina",
+      "officialName": "Agence d'Information du Burkina (AIB)",
+      "founded": 1964,
+      "frequency": "Continuous 24/7 state newswire",
+      "format": "Official state newswire agency",
+      "language": "French",
+      "headquarters": "Ouagadougou",
+      "owner": {
+        "name": "Republic of Burkina Faso",
+        "type": "State-owned / statutory corporation"
+      },
+      "editorialStance": "Official state news agency; government decisions, security updates, and regional Sahelian news",
+      "readership": {
+        "metric": "Primary news supplier to all Burkinabé radio, TV networks, and domestic print papers",
+        "source": "AIB Official Review 2023"
+      },
+      "revenueModel": "Direct state budget funding",
+      "logo": "newspaper-logos/bf/aib.svg",
+      "logoExplainer": "Green and red circular emblem 'AIB AGENCE D'INFORMATION DU BURKINA', representing official state news.",
+      "sources": [
+        "https://www.aib.media",
+        "https://fr.wikipedia.org/wiki/Agence_d%27information_du_Burkina"
+      ]
+    }
+  ],
+  "BG": [
+    {
+      "id": "bg-bta",
+      "countryCode": "BG",
+      "name": "BTA",
+      "officialName": "Bulgarian Telegraph Agency (BTA)",
+      "founded": 1898,
+      "frequency": "Continuous 24/7 state newswire",
+      "format": "Official state newswire & photo agency",
+      "language": "Bulgarian, English",
+      "headquarters": "Sofia",
+      "owner": {
+        "name": "Republic of Bulgaria (National Assembly)",
+        "type": "State-owned / statutory corporation"
+      },
+      "editorialStance": "Official state news agency; parliamentary proceedings, executive policies, and foreign diplomacy",
+      "readership": {
+        "metric": "Primary news agency supplying all Bulgarian domestic daily newspapers, TV channels, and radio stations",
+        "source": "BTA Official Annual Report 2023"
+      },
+      "revenueModel": "State parliamentary budget allocation and subscriber licensing",
+      "logo": "newspaper-logos/bg/bta.svg",
+      "logoExplainer": "Royal blue circular emblem with Cyrillic text 'БТА', symbolising Bulgaria's 125-year-old telegraph news agency.",
+      "sources": [
+        "https://www.bta.bg",
+        "https://en.wikipedia.org/wiki/Bulgarian_Telegraph_Agency"
+      ]
+    }
+  ],
+  "BH": [
+    {
+      "id": "bh-bna",
+      "countryCode": "BH",
+      "name": "Bahrain News Agency",
+      "officialName": "Bahrain News Agency (BNA)",
+      "founded": 1976,
+      "frequency": "Continuous 24/7 state newswire",
+      "format": "Official state newswire & photo service",
+      "language": "Arabic, English",
+      "headquarters": "Manama",
+      "owner": {
+        "name": "Ministry of Information Affairs",
+        "type": "Government ministry / department"
+      },
+      "editorialStance": "Official state news agency; royal decrees, government policy, and Gulf Cooperation Council (GCC) diplomacy",
+      "readership": {
+        "metric": "Primary wire agency supplying news to all domestic Bahraini newspapers, TV, and international press",
+        "source": "BNA Institutional Review 2023"
+      },
+      "revenueModel": "Direct state budget allocation",
+      "logo": "newspaper-logos/bh/bna.svg",
+      "logoExplainer": "Crimson circular emblem with Arabic typography 'بنا' and white text 'BAHRAIN NEWS AGENCY', representing official royal state media.",
+      "sources": [
+        "https://www.bna.bh",
+        "https://en.wikipedia.org/wiki/Bahrain_News_Agency"
+      ]
+    }
+  ],
+  "BI": [
+    {
+      "id": "bi-abp",
+      "countryCode": "BI",
+      "name": "Agence Burundaise de Presse",
+      "officialName": "Agence Burundaise de Presse (ABP)",
+      "founded": 1978,
+      "frequency": "Continuous 24/7 state newswire",
+      "format": "Official state newswire agency",
+      "language": "French, Kirundi",
+      "headquarters": "Bujumbura",
+      "owner": {
+        "name": "Republic of Burundi",
+        "type": "State-owned / statutory corporation"
+      },
+      "editorialStance": "Official state news agency; presidential activity, government decisions, and provincial news",
+      "readership": {
+        "metric": "Primary news supplier to all domestic Burundian radio stations, TV networks, and public institutions",
+        "source": "ABP Annual Report 2023"
+      },
+      "revenueModel": "Direct state budget funding",
+      "logo": "newspaper-logos/bi/abp.svg",
+      "logoExplainer": "Red and green circular badge with text 'ABP AGENCE BURUNDAISE DE PRESSE'.",
+      "sources": [
+        "https://abpinfo.bi",
+        "https://fr.wikipedia.org/wiki/Agence_burundaise_de_presse"
+      ]
     },
     {
-      "id": "be-de-standaard",
-      "countryCode": "BE",
-      "name": "De Standaard",
-      "englishTranslation": "The Standard",
-      "founded": 1918,
-      "frequency": "Daily (Monday–Saturday)",
-      "format": "Broadsheet & digital portal",
-      "language": "Dutch",
-      "headquarters": "Groot-Bijgaarden, Dilbeek",
+      "id": "bi-net-press",
+      "countryCode": "BI",
+      "name": "Net Press",
+      "founded": 1996,
+      "frequency": "Continuous digital news",
+      "format": "Digital news agency portal",
+      "language": "French",
+      "headquarters": "Bujumbura",
       "owner": {
-        "name": "Mediahuis NV",
-        "type": "Commercial conglomerate"
+        "name": "Net Press Agency",
+        "type": "Independent commercial media"
       },
-      "editorialStance": "Leading Flemish quality daily newspaper; Christian-democrat heritage turned independent quality journal; culture, law, and politics",
+      "editorialStance": "Independent online news agency; local news, political commentary, and civil affairs",
       "readership": {
-        "metric": "Leading Flemish quality paper (~90,000 daily print, 3M monthly digital readers)",
-        "source": "CIM Belgium 2023/2024"
+        "metric": "Pioneer digital news agency in Burundi",
+        "source": "Net Press Archive"
       },
-      "revenueModel": "Digital subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/be/de-standaard.svg",
-      "logoExplainer": "Royal blue title banner with bold white text 'DE STANDAARD', symbolising quality Flemish journalism.",
+      "revenueModel": "Digital subscriptions and advertising",
+      "logo": "newspaper-logos/bi/net-press.svg",
+      "logoExplainer": "Slate black logo block with red text 'NETPRESS', representing online news distribution.",
       "sources": [
-        "https://www.standaard.be",
-        "https://en.wikipedia.org/wiki/De_Standaard"
+        "https://www.netpress.bi"
       ]
     }
   ],
@@ -1070,59 +836,73 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "BA": [
+  "BR": [
     {
-      "id": "ba-fena",
-      "countryCode": "BA",
-      "name": "FENA",
-      "officialName": "Federalna novinska agencija",
-      "founded": 2000,
-      "frequency": "Continuous 24/7 state newswire",
-      "format": "Official entity newswire & photo service",
-      "language": "Bosnian, Croatian, Serbian, English",
-      "headquarters": "Sarajevo",
+      "id": "br-agencia-brasil",
+      "countryCode": "BR",
+      "name": "Agência Brasil",
+      "officialName": "Agência Brasil (Empresa Brasil de Comunicação - EBC)",
+      "nativeName": "Agência Brasil",
+      "englishTranslation": "Brazil Agency",
+      "motto": {
+        "original": "A informação que o cidadão precisa",
+        "translation": "The information that the citizen needs"
+      },
+      "founded": 1946,
+      "frequency": "Continuous 24/7 digital newswire",
+      "format": "Public digital newswire, photography wire (Foto Agência), and audio feed (Radioagência Nacional)",
+      "language": "Portuguese (Português), with editions in English and Spanish",
+      "headquarters": "Venâncio Shopping, Brasília, Distrito Federal (with regional bureaus in Rio de Janeiro, São Paulo, and São Luís)",
       "owner": {
-        "name": "Federation of Bosnia and Herzegovina",
-        "type": "State-owned / statutory corporation"
+        "name": "Empresa Brasil de Comunicação (EBC)",
+        "type": "Federal state-owned public communication corporation"
       },
-      "editorialStance": "Official news agency; federal government notices, parliamentary debates, and regional affairs",
+      "editorialStance": "Public interest citizenship journalism focusing on public policies, human rights, civic access, and factual reporting guided by the EBC Journalism Manual",
       "readership": {
-        "metric": "Largest news agency supplying all daily papers, TV, and radio networks in FBiH",
-        "source": "FENA Official Review 2023"
+        "metric": "14.2 million monthly unique web visits / 26M+ monthly pageviews; syndicated under Creative Commons (CC-BY 3.0) by over 2,000 national, regional, and municipal news outlets",
+        "source": "EBC Relatório de Gestão & Transparência 2023–2024"
       },
-      "revenueModel": "State budget funding and commercial newswire subscriptions",
-      "logo": "newspaper-logos/ba/fena.svg",
-      "logoExplainer": "Royal blue circular emblem with gold lettering 'FENA', representing Bosnia and Herzegovina's federal news agency.",
+      "annualPublicFunding": {
+        "total": "R$ 52.3 million allocated to agency news services (within EBC's total R$ 685.4 million federal budget)",
+        "perCapita": "R$ 0.25 / person / year (for wire services; R$ 3.25 EBC total)"
+      },
+      "revenueModel": "100% public funding through the Federal Government General Budget (OGU) and telecommunications public contribution fund (FISTEL)",
+      "logo": "newspaper-logos/br/agencia-brasil.svg",
+      "logoExplainer": "Unveiled in the 2023 EBC institutional brand refresh, the Agência Brasil logo pairs a refined modern sans-serif wordmark in lowercase ('agênciaBrasil') with a dynamic circular emblem at the right. The open circular emblem, formed by energetic curved strokes evoking an orbital sweep, symbolizes the universal flow of information, transparency, and the national embrace of Brazilian public media across all regions.",
       "sources": [
-        "https://fena.ba",
-        "https://bs.wikipedia.org/wiki/Federalna_novinska_agencija"
-      ]
-    },
+        "https://agenciabrasil.ebc.com.br/sobre",
+        "https://www.ebc.com.br/acesso-a-informacao",
+        "https://acessoainformacao.ebc.com.br/auditorias/demonstracoes-financeiras"
+      ],
+      "licenceNote": "Public news agency trademark bundled for educational reference in Learn mode."
+    }
+  ],
+  "BS": [
     {
-      "id": "ba-srna",
-      "countryCode": "BA",
-      "name": "SRNA",
-      "officialName": "Novinska agencija Republike Srpske",
-      "founded": 1992,
-      "frequency": "Continuous newswire service",
-      "format": "Entity newswire & photo service",
-      "language": "Serbian, English",
-      "headquarters": "Bijeljina",
+      "id": "bs-bis",
+      "countryCode": "BS",
+      "name": "Bahamas Information Services",
+      "officialName": "Bahamas Information Services (BIS)",
+      "founded": 1974,
+      "frequency": "Continuous state news service",
+      "format": "Official government news agency",
+      "language": "English",
+      "headquarters": "Nassau",
       "owner": {
-        "name": "Government of Republika Srpska",
-        "type": "State-owned / statutory corporation"
+        "name": "Commonwealth of The Bahamas",
+        "type": "Government ministry / department"
       },
-      "editorialStance": "Entity state news agency; official government announcements and regional news",
+      "editorialStance": "Official government news service; parliamentary proceedings, cabinet releases, and national public announcements",
       "readership": {
-        "metric": "Primary news agency for media outlets in Republika Srpska",
-        "source": "SRNA Official Report 2023"
+        "metric": "Official news provider for all Bahamian radio, TV, and print media",
+        "source": "Bahamas Information Services"
       },
-      "revenueModel": "Entity public budget funding and subscription licensing",
-      "logo": "newspaper-logos/ba/srna.svg",
-      "logoExplainer": "Crimson title badge with Cyrillic and Latin typography 'СРНА / SRNA'.",
+      "revenueModel": "Government parliamentary budget",
+      "logo": "newspaper-logos/bs/bis.svg",
+      "logoExplainer": "Gold and blue emblem 'BIS BAHAMAS INFORMATION SERVICES', representing official state public information.",
       "sources": [
-        "https://www.srna.rs",
-        "https://sr.wikipedia.org/wiki/%D0%A1%D0%A0%D0%9D%D0%90"
+        "https://www.bahamas.gov.bs",
+        "https://en.wikipedia.org/wiki/Bahamas_Information_Services"
       ]
     }
   ],
@@ -1153,199 +933,297 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://www.dailynews.gov.bw",
         "https://en.wikipedia.org/wiki/Botswana_Press_Agency"
       ]
-    },
-    {
-      "id": "bw-sunday-standard",
-      "countryCode": "BW",
-      "name": "Sunday Standard",
-      "founded": 2005,
-      "frequency": "Weekly (Sunday)",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "Gaborone",
-      "owner": {
-        "name": "Telegraphic Publishing",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Independent commercial weekly; investigative journalism, business news, and political analysis",
-      "readership": {
-        "metric": "Influential Sunday paper read by policymakers, legal sector, and business leaders in Botswana",
-        "source": "Sunday Standard Review 2023"
-      },
-      "revenueModel": "Print sales and corporate advertising",
-      "logo": "newspaper-logos/bw/sunday-standard.svg",
-      "logoExplainer": "Dark slate title block with white serif typography 'Sunday Standard'.",
-      "sources": [
-        "https://www.sundaystandard.info"
-      ]
     }
   ],
-  "BG": [
+  "BY": [
     {
-      "id": "bg-bta",
-      "countryCode": "BG",
-      "name": "BTA",
-      "officialName": "Bulgarian Telegraph Agency (BTA)",
-      "founded": 1898,
+      "id": "by-belta",
+      "countryCode": "BY",
+      "name": "BelTA",
+      "officialName": "Belarusian Telegraph Agency (BelTA)",
+      "founded": 1918,
       "frequency": "Continuous 24/7 state newswire",
       "format": "Official state newswire & photo agency",
-      "language": "Bulgarian, English",
-      "headquarters": "Sofia",
+      "language": "Belarusian, Russian, English, German, Spanish, Chinese",
+      "headquarters": "Minsk",
       "owner": {
-        "name": "Republic of Bulgaria (National Assembly)",
+        "name": "Republic of Belarus",
         "type": "State-owned / statutory corporation"
       },
-      "editorialStance": "Official state news agency; parliamentary proceedings, executive policies, and foreign diplomacy",
+      "editorialStance": "Official state news agency; presidential decrees, government policies, and national affairs",
       "readership": {
-        "metric": "Primary news agency supplying all Bulgarian domestic daily newspapers, TV channels, and radio stations",
-        "source": "BTA Official Annual Report 2023"
+        "metric": "Primary news supplier to all domestic Belarusian print newspapers, TV channels, and radio stations",
+        "source": "BelTA Official Annual Report 2023"
       },
-      "revenueModel": "State parliamentary budget allocation and subscriber licensing",
-      "logo": "newspaper-logos/bg/bta.svg",
-      "logoExplainer": "Royal blue circular emblem with Cyrillic text 'БТА', symbolising Bulgaria's 125-year-old telegraph news agency.",
+      "revenueModel": "Direct state budget funding and subscriber licensing",
+      "logo": "newspaper-logos/by/belta.svg",
+      "logoExplainer": "Red circular emblem with white typography 'БЕЛТА', symbolising Belarus's official national telegraph agency.",
       "sources": [
-        "https://www.bta.bg",
-        "https://en.wikipedia.org/wiki/Bulgarian_Telegraph_Agency"
-      ]
-    }
-  ],
-  "BF": [
-    {
-      "id": "bf-aib",
-      "countryCode": "BF",
-      "name": "Agence d'Information du Burkina",
-      "officialName": "Agence d'Information du Burkina (AIB)",
-      "founded": 1964,
-      "frequency": "Continuous 24/7 state newswire",
-      "format": "Official state newswire agency",
-      "language": "French",
-      "headquarters": "Ouagadougou",
-      "owner": {
-        "name": "Republic of Burkina Faso",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Official state news agency; government decisions, security updates, and regional Sahelian news",
-      "readership": {
-        "metric": "Primary news supplier to all Burkinabé radio, TV networks, and domestic print papers",
-        "source": "AIB Official Review 2023"
-      },
-      "revenueModel": "Direct state budget funding",
-      "logo": "newspaper-logos/bf/aib.svg",
-      "logoExplainer": "Green and red circular emblem 'AIB AGENCE D'INFORMATION DU BURKINA', representing official state news.",
-      "sources": [
-        "https://www.aib.media",
-        "https://fr.wikipedia.org/wiki/Agence_d%27information_du_Burkina"
-      ]
-    }
-  ],
-  "BI": [
-    {
-      "id": "bi-abp",
-      "countryCode": "BI",
-      "name": "Agence Burundaise de Presse",
-      "officialName": "Agence Burundaise de Presse (ABP)",
-      "founded": 1978,
-      "frequency": "Continuous 24/7 state newswire",
-      "format": "Official state newswire agency",
-      "language": "French, Kirundi",
-      "headquarters": "Bujumbura",
-      "owner": {
-        "name": "Republic of Burundi",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Official state news agency; presidential activity, government decisions, and provincial news",
-      "readership": {
-        "metric": "Primary news supplier to all domestic Burundian radio stations, TV networks, and public institutions",
-        "source": "ABP Annual Report 2023"
-      },
-      "revenueModel": "Direct state budget funding",
-      "logo": "newspaper-logos/bi/abp.svg",
-      "logoExplainer": "Red and green circular badge with text 'ABP AGENCE BURUNDAISE DE PRESSE'.",
-      "sources": [
-        "https://abpinfo.bi",
-        "https://fr.wikipedia.org/wiki/Agence_burundaise_de_presse"
+        "https://www.belta.by",
+        "https://en.wikipedia.org/wiki/Belarusian_Telegraph_Agency"
       ]
     },
     {
-      "id": "bi-net-press",
-      "countryCode": "BI",
-      "name": "Net Press",
-      "founded": 1996,
-      "frequency": "Continuous digital news",
-      "format": "Digital news agency portal",
+      "id": "by-belapan",
+      "countryCode": "BY",
+      "name": "BelaPAN",
+      "officialName": "Belarusian Private News Agency",
+      "founded": 1991,
+      "frequency": "Continuous digital newswire",
+      "format": "Independent digital newswire agency",
+      "language": "Belarusian, Russian, English",
+      "headquarters": "Minsk",
+      "owner": {
+        "name": "BelaPAN Company",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Historic independent news agency; non-partisan wire reporting and economic analysis",
+      "readership": {
+        "metric": "First independent private news agency established in post-Soviet Belarus",
+        "source": "BAJ Review"
+      },
+      "revenueModel": "Subscriber licensing and commercial news syndication",
+      "logo": "newspaper-logos/by/belapan.svg",
+      "logoExplainer": "Slate blue title logo 'BelaPAN', representing independent wire reporting history.",
+      "sources": [
+        "https://belapan.by",
+        "https://en.wikipedia.org/wiki/BelaPAN"
+      ]
+    }
+  ],
+  "CD": [
+    {
+      "id": "cd-acp",
+      "countryCode": "CD",
+      "name": "ACP",
+      "officialName": "Agence Congolaise de Presse",
+      "nativeName": "Agence Congolaise de Presse",
+      "englishTranslation": "Congolese Press Agency",
+      "founded": 1960,
+      "frequency": "Continuous 24/7 national newswire",
+      "format": "Official public wire service & newswire feed",
       "language": "French",
-      "headquarters": "Bujumbura",
+      "headquarters": "Gombe, Kinshasa",
       "owner": {
-        "name": "Net Press Agency",
-        "type": "Independent commercial media"
+        "name": "Democratic Republic of the Congo (Ministère de la Communication et Médias)",
+        "type": "State-owned / statutory corporation"
       },
-      "editorialStance": "Independent online news agency; local news, political commentary, and civil affairs",
+      "editorialStance": "Official public newswire of the DRC; presidential activity, national assembly decrees, provincial governors, and MONUSCO peace initiatives",
       "readership": {
-        "metric": "Pioneer digital news agency in Burundi",
-        "source": "Net Press Archive"
+        "metric": "Primary news supplier to over 500 radio, television, and print outlets across all 26 provinces of the DRC",
+        "source": "ACP Rapport de Gestion et Performance 2023"
       },
-      "revenueModel": "Digital subscriptions and advertising",
-      "logo": "newspaper-logos/bi/net-press.svg",
-      "logoExplainer": "Slate black logo block with red text 'NETPRESS', representing online news distribution.",
+      "annualPublicFunding": {
+        "total": "CDF 4.5 billion (~US$1.65 million) state budget allocation",
+        "perCapita": "CDF 45 / person / year (~US$0.016)"
+      },
+      "revenueModel": "Direct state budget subsidy and institutional subscriber feeds",
+      "logo": "newspaper-logos/cd/acp-agence-congolaise-de-presse.svg",
+      "logoExplainer": "Navy blue background with bold white lettering 'ACP' and full title, symbolising the official state wire service of the DRC.",
       "sources": [
-        "https://www.netpress.bi"
+        "https://acp.cd",
+        "https://fr.wikipedia.org/wiki/Agence_congolaise_de_presse"
       ]
     }
   ],
-  "KH": [
+  "CF": [
     {
-      "id": "kh-akp",
-      "countryCode": "KH",
-      "name": "AKP",
-      "officialName": "Agence Kampuchea Presse (AKP)",
-      "founded": 1978,
-      "frequency": "Continuous 24/7 state newswire",
-      "format": "Official state newswire agency",
-      "language": "Khmer, English, French",
-      "headquarters": "Phnom Penh",
+      "id": "cf-acap",
+      "countryCode": "CF",
+      "name": "ACAP",
+      "officialName": "Agence Centrafricaine de Presse",
+      "nativeName": "Agence Centrafricaine de Presse",
+      "englishTranslation": "Central African Press Agency",
+      "founded": 1961,
+      "frequency": "Continuous daily state newswire",
+      "format": "Official state newswire & bulletin",
+      "language": "French, Sango",
+      "headquarters": "Bangui",
       "owner": {
-        "name": "Ministry of Information",
-        "type": "Government ministry / department"
+        "name": "Republic of Central Africa (Ministère de la Communication)",
+        "type": "State-owned / statutory corporation"
       },
-      "editorialStance": "Official state news agency; royal bulletins, prime ministerial decrees, and national development",
+      "editorialStance": "Official state news wire; presidential communications, ministerial decrees, and peace accord monitoring",
       "readership": {
-        "metric": "Primary news supplier to all Cambodian domestic broadcast networks, radio, and Khmer print media",
-        "source": "AKP Ministry Report 2023"
+        "metric": "Primary news supplier to Bangui national radio, television, and private print titles",
+        "source": "ACAP Bangui Annual Review 2023"
       },
-      "revenueModel": "Direct state budget funding",
-      "logo": "newspaper-logos/kh/akp.svg",
-      "logoExplainer": "Navy blue circular emblem with crimson star and text 'AKP AGENCE KAMPUCHEA PRESSE'.",
+      "annualPublicFunding": {
+        "total": "XAF 120 million (~US$200,000) state budget operating grant",
+        "perCapita": "XAF 22 / person / year (~US$0.04)"
+      },
+      "revenueModel": "Direct state budget subsidy and subscription bulletin sales",
+      "logo": "newspaper-logos/cf/acap.svg",
+      "logoExplainer": "Deep blue emblem with white serif letters 'ACAP', representing the official national news wire of the Central African Republic.",
       "sources": [
-        "https://www.akp.gov.kh",
-        "https://en.wikipedia.org/wiki/Agence_Kampuchea_Presse"
+        "https://acap.cf",
+        "https://fr.wikipedia.org/wiki/Agence_centrafricaine_de_presse"
       ]
     }
   ],
-  "CA": [
+  "CG": [
     {
-      "id": "ca-the-toronto-star",
-      "countryCode": "CA",
-      "name": "Toronto Star",
-      "founded": 1892,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "Toronto, Ontario",
+      "id": "cg-aci",
+      "countryCode": "CG",
+      "name": "ACI",
+      "officialName": "Agence Congolaise d'Information",
+      "nativeName": "Agence Congolaise d'Information",
+      "englishTranslation": "Congolese Information Agency",
+      "founded": 1961,
+      "frequency": "Continuous 24/7 national newswire",
+      "format": "Official state newswire & bulletin",
+      "language": "French",
+      "headquarters": "Brazzaville",
       "owner": {
-        "name": "NordStar Capital",
-        "type": "Independent commercial media"
+        "name": "Republic of the Congo (Ministère de la Communication)",
+        "type": "State-owned / statutory corporation"
       },
-      "editorialStance": "Social-democratic / liberal progressive editorial stance guided by the Atkinson Principles, focusing on social justice and civic affairs",
+      "editorialStance": "Official national public newswire; executive decisions, legislative proceedings, diplomatic cooperation, and forestry development",
       "readership": {
-        "metric": "Highest daily print circulation in Canada with 5.0+ million weekly readers",
-        "source": "Torstar Corporate Media Profile 2023"
+        "metric": "Primary news supplier to all domestic broadcast networks and print titles across Brazzaville and Pointe-Noire",
+        "source": "ACI Brazzaville Rapport Annuel 2023"
       },
-      "revenueModel": "Digital paywall subscriptions, print sales, and display advertising",
-      "logo": "newspaper-logos/ca/the-toronto-star.svg",
-      "logoExplainer": "Deep blue banner featuring white serif typography 'TORONTO STAR', symbolizing progressive civic and investigative reporting.",
+      "annualPublicFunding": {
+        "total": "XAF 180 million (~US$295,000) state operating subsidy",
+        "perCapita": "XAF 30 / person / year (~US$0.05)"
+      },
+      "revenueModel": "State budget allocation and wire syndication fees",
+      "logo": "newspaper-logos/cg/aci-agence-congolaise-d-information.svg",
+      "logoExplainer": "Deep blue banner with crisp white letters 'ACI Agence Congolaise d'Information', representing the statutory news agency of Congo-Brazzaville.",
       "sources": [
-        "https://www.thestar.com",
-        "https://en.wikipedia.org/wiki/Toronto_Star"
+        "https://www.aci.cg",
+        "https://fr.wikipedia.org/wiki/Agence_congolaise_d%27information"
+      ]
+    }
+  ],
+  "CH": [
+    {
+      "id": "ch-keystone-sda",
+      "countryCode": "CH",
+      "name": "Keystone-SDA",
+      "nativeName": "Schweizerische Depeschenagentur (SDA) / Agence Télégraphique Suisse (ATS)",
+      "englishTranslation": "Swiss News Agency",
+      "founded": 1894,
+      "frequency": "24/7 multilingual national news wire",
+      "format": "National news agency & multimedia portal (keystone-sda.ch)",
+      "language": "German, French, Italian",
+      "headquarters": "Wankdorfallee 5, Bern",
+      "owner": {
+        "name": "Swiss Media Enterprises and Keystone-ATS Consortium",
+        "type": "National cooperative news wire agency"
+      },
+      "annualPublicFunding": {
+        "total": "CHF 4.1 million",
+        "perCapita": "CHF 0.46"
+      },
+      "editorialStance": "Official national news wire agency of the Swiss Confederation, founded in 1894; provides neutral, verified, real-time news dispatches in Switzerland's three official national languages to radio, TV, print, and digital media across all 26 cantons",
+      "readership": {
+        "metric": "Produces over 220,000 news items and 600,000 multimedia files annually, utilized by virtually every Swiss media house",
+        "source": "Keystone-SDA Geschäftsbericht 2023"
+      },
+      "revenueModel": "Federal statutory subvention for linguistic diversity and B2B media licensing contracts",
+      "logo": "newspaper-logos/ch/keystone-sda.svg",
+      "logoExplainer": "Midnight blue field with a Swiss red square tile bearing bold white 'SDA', accompanied by modern white 'KEYSTONE-SDA' lettering and multilingual subtitle.",
+      "sources": [
+        "https://keystone-sda.ch",
+        "https://en.wikipedia.org/wiki/Swiss_News_Agency"
+      ]
+    }
+  ],
+  "CI": [
+    {
+      "id": "ci-aip",
+      "countryCode": "CI",
+      "name": "AIP",
+      "englishTranslation": "Ivorian News Agency",
+      "founded": 1961,
+      "frequency": "24/7 national news wire",
+      "format": "State news agency wire & public digital portal",
+      "language": "French",
+      "headquarters": "Abidjan",
+      "owner": {
+        "name": "Government of Ivory Coast (Ministry of Communication)",
+        "type": "Public service news agency"
+      },
+      "editorialStance": "National press agency of Ivory Coast providing factual regional coverage across all 31 administrative regions",
+      "readership": {
+        "metric": "Primary source of verified regional dispatch news for all Ivorian print, radio, and TV stations",
+        "source": "AIP Official Report 2023"
+      },
+      "annualPublicFunding": {
+        "total": "Public budget allocation",
+        "perCapita": "State funded"
+      },
+      "revenueModel": "State budget subsidy and agency syndication",
+      "logo": "newspaper-logos/ci/aip-agence-ivoirienne-de-presse.svg",
+      "logoExplainer": "Ivory Coast map outline inside green circle with orange lettering 'AIP'.",
+      "sources": [
+        "https://www.aip.ci",
+        "https://en.wikipedia.org/wiki/Agence_Ivoirienne_de_Presse"
+      ]
+    }
+  ],
+  "CR": [
+    {
+      "id": "cr-elfaro-cr",
+      "countryCode": "CR",
+      "name": "El Faro Costa Rica",
+      "englishTranslation": "The Lighthouse Costa Rica",
+      "founded": 2018,
+      "frequency": "Continuous digital news magazine",
+      "format": "Investigative digital portal",
+      "language": "Spanish",
+      "headquarters": "San José",
+      "owner": {
+        "name": "Fundación Trípode",
+        "type": "Non-profit independent foundation"
+      },
+      "editorialStance": "In-depth investigative journalism; corruption investigations, judicial independence, and regional Central American democracy",
+      "readership": {
+        "metric": "Leading investigative regional journalism platform relocated to San José for press freedom protection",
+        "source": "Fundación Trípode Annual Report 2023"
+      },
+      "revenueModel": "International journalistic grants and reader crowdfunding",
+      "logo": "newspaper-logos/cr/elfaro-cr.svg",
+      "logoExplainer": "Black emblem with golden lighthouse beam and stark typography 'elfaro', symbolising illumination of truth and investigative scrutiny.",
+      "sources": [
+        "https://elfaro.net",
+        "https://en.wikipedia.org/wiki/El_Faro_(digital_newspaper)"
+      ]
+    }
+  ],
+  "CU": [
+    {
+      "id": "cu-prensa-latina",
+      "countryCode": "CU",
+      "name": "Prensa Latina",
+      "officialName": "Agencia Informativa Latinoamericana Prensa Latina S.A.",
+      "nativeName": "Prensa Latina",
+      "englishTranslation": "Latin American Press",
+      "founded": 1959,
+      "frequency": "Continuous 24/7 international newswire",
+      "format": "International news agency wire & multimedia service",
+      "language": "Spanish, English, French, Portuguese, Russian, Italian",
+      "headquarters": "Vedado, Havana",
+      "owner": {
+        "name": "Republic of Cuba",
+        "type": "State-owned / statutory corporation"
+      },
+      "editorialStance": "Founded by Che Guevara and Jorge Ricardo Masetti; Latin American perspective on global affairs, Non-Aligned Movement, and anti-hegemonic coverage",
+      "readership": {
+        "metric": "Bureaus in over 40 countries; transmits more than 400 news dispatches daily to media partners worldwide",
+        "source": "Prensa Latina Memoria Institucional 2024"
+      },
+      "annualPublicFunding": {
+        "total": "Central state foreign-press operational allocation",
+        "perCapita": "State international agency"
+      },
+      "revenueModel": "State budget funding and international media syndication agreements",
+      "logo": "newspaper-logos/cu/prensa-latina.svg",
+      "logoExplainer": "Navy blue emblem with white calligraphy 'PL Prensa Latina' and globe meridians, symbolising non-aligned Latin American news distribution.",
+      "sources": [
+        "https://www.prensa-latina.cu",
+        "https://en.wikipedia.org/wiki/Prensa_Latina"
       ]
     }
   ],
@@ -1384,321 +1262,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "CF": [
-    {
-      "id": "cf-acap",
-      "countryCode": "CF",
-      "name": "ACAP",
-      "officialName": "Agence Centrafricaine de Presse",
-      "nativeName": "Agence Centrafricaine de Presse",
-      "englishTranslation": "Central African Press Agency",
-      "founded": 1961,
-      "frequency": "Continuous daily state newswire",
-      "format": "Official state newswire & bulletin",
-      "language": "French, Sango",
-      "headquarters": "Bangui",
-      "owner": {
-        "name": "Republic of Central Africa (Ministère de la Communication)",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Official state news wire; presidential communications, ministerial decrees, and peace accord monitoring",
-      "readership": {
-        "metric": "Primary news supplier to Bangui national radio, television, and private print titles",
-        "source": "ACAP Bangui Annual Review 2023"
-      },
-      "annualPublicFunding": {
-        "total": "XAF 120 million (~US$200,000) state budget operating grant",
-        "perCapita": "XAF 22 / person / year (~US$0.04)"
-      },
-      "revenueModel": "Direct state budget subsidy and subscription bulletin sales",
-      "logo": "newspaper-logos/cf/acap.svg",
-      "logoExplainer": "Deep blue emblem with white serif letters 'ACAP', representing the official national news wire of the Central African Republic.",
-      "sources": [
-        "https://acap.cf",
-        "https://fr.wikipedia.org/wiki/Agence_centrafricaine_de_presse"
-      ]
-    },
-    {
-      "id": "cf-le-potentiel-centrafricain",
-      "countryCode": "CF",
-      "name": "Le Potentiel Centrafricain",
-      "englishTranslation": "The Central African Potential",
-      "founded": 2000,
-      "frequency": "Daily newspaper",
-      "format": "Tabloid & digital portal",
-      "language": "French",
-      "headquarters": "Bangui",
-      "owner": {
-        "name": "Groupe Le Potentiel Centrafricain",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Independent commercial daily; national politics, economic reconstruction, and Central African mining/forestry sectors",
-      "readership": {
-        "metric": "Regular daily print circulation in Bangui commercial districts",
-        "source": "Haut Conseil de la Communication RCA 2023"
-      },
-      "revenueModel": "Print sales and public legal notice advertising",
-      "logo": "newspaper-logos/cf/le-potentiel-centrafricain.svg",
-      "logoExplainer": "White banner with prominent green and black lettering 'Le Potentiel Centrafricain', representing national reconstruction.",
-      "sources": [
-        "https://lepotentielcentrafricain.com",
-        "https://fr.wikipedia.org/wiki/M%C3%A9dias_en_R%C3%A9publique_centrafricaine"
-      ]
-    }
-  ],
-  "CN": [
-    {
-      "id": "cn-china-daily",
-      "countryCode": "CN",
-      "name": "China Daily",
-      "nativeName": "中国日报",
-      "englishTranslation": "China Daily",
-      "founded": 1981,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & international digital portal",
-      "language": "English",
-      "headquarters": "Beijing",
-      "owner": {
-        "name": "State Council Information Office",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "China's premier national English-language daily; international diplomacy, global business, trade, and cultural exchange",
-      "readership": {
-        "metric": "Over 900,000 daily global print distribution and 350+ million digital and social media followers worldwide",
-        "source": "China Daily Global Media Kit 2024"
-      },
-      "annualPublicFunding": {
-        "total": "Direct central state foreign communication appropriation",
-        "perCapita": "National international communication remit"
-      },
-      "revenueModel": "Central state foreign-press budget, global institutional subscriptions, and advertising",
-      "logo": "newspaper-logos/cn/china-daily.svg",
-      "logoExplainer": "Navy blue banner displaying the refined white serif masthead 'CHINA DAILY', representing China's primary international English voice.",
-      "sources": [
-        "https://www.chinadaily.com.cn",
-        "https://en.wikipedia.org/wiki/China_Daily"
-      ]
-    },
-    {
-      "id": "cn-reference-news",
-      "countryCode": "CN",
-      "name": "Reference News",
-      "officialName": "Cankao Xiaoxi",
-      "nativeName": "参考消息",
-      "englishTranslation": "Reference News",
-      "founded": 1931,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet digest",
-      "language": "Chinese",
-      "headquarters": "Beijing",
-      "owner": {
-        "name": "Xinhua News Agency",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Foreign affairs digest published by Xinhua; translating and reprinting international news coverage and commentary for domestic readership",
-      "readership": {
-        "metric": "Over 2.5 million daily print circulation; historically one of China's most widely read daily digests",
-        "source": "Xinhua Media Research 2023"
-      },
-      "revenueModel": "Institutional and retail print subscriptions",
-      "logo": "newspaper-logos/cn/reference-news.svg",
-      "logoExplainer": "White canvas with black calligraphic Chinese characters '参考消息' penned by Lu Xun, symbolising curated international news insights.",
-      "sources": [
-        "http://www.cankaoxiaoxi.com",
-        "https://en.wikipedia.org/wiki/Reference_News"
-      ]
-    }
-  ],
-  "CG": [
-    {
-      "id": "cg-aci",
-      "countryCode": "CG",
-      "name": "ACI",
-      "officialName": "Agence Congolaise d'Information",
-      "nativeName": "Agence Congolaise d'Information",
-      "englishTranslation": "Congolese Information Agency",
-      "founded": 1961,
-      "frequency": "Continuous 24/7 national newswire",
-      "format": "Official state newswire & bulletin",
-      "language": "French",
-      "headquarters": "Brazzaville",
-      "owner": {
-        "name": "Republic of the Congo (Ministère de la Communication)",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Official national public newswire; executive decisions, legislative proceedings, diplomatic cooperation, and forestry development",
-      "readership": {
-        "metric": "Primary news supplier to all domestic broadcast networks and print titles across Brazzaville and Pointe-Noire",
-        "source": "ACI Brazzaville Rapport Annuel 2023"
-      },
-      "annualPublicFunding": {
-        "total": "XAF 180 million (~US$295,000) state operating subsidy",
-        "perCapita": "XAF 30 / person / year (~US$0.05)"
-      },
-      "revenueModel": "State budget allocation and wire syndication fees",
-      "logo": "newspaper-logos/cg/aci-agence-congolaise-d-information.svg",
-      "logoExplainer": "Deep blue banner with crisp white letters 'ACI Agence Congolaise d'Information', representing the statutory news agency of Congo-Brazzaville.",
-      "sources": [
-        "https://www.aci.cg",
-        "https://fr.wikipedia.org/wiki/Agence_congolaise_d%27information"
-      ]
-    },
-    {
-      "id": "cg-la-semaine-africaine",
-      "countryCode": "CG",
-      "name": "La Semaine Africaine",
-      "englishTranslation": "The African Week",
-      "founded": 1952,
-      "frequency": "Bi-weekly publication (Tuesday & Friday)",
-      "format": "Tabloid publication & digital portal",
-      "language": "French",
-      "headquarters": "Brazzaville",
-      "owner": {
-        "name": "Episcopal Conference of the Congo (Catholic Church)",
-        "type": "Independent trust / foundation"
-      },
-      "editorialStance": "Historic independent bi-weekly; social justice, pastoral advocacy, ethical governance, and civil society reflection",
-      "readership": {
-        "metric": "Over 70 years of continuous publishing; highly respected independent moral authority in Congolese media",
-        "source": "La Semaine Africaine Archive 2023"
-      },
-      "revenueModel": "Print circulation, church subscriptions, and civic announcements",
-      "logo": "newspaper-logos/cg/la-semaine-africaine.svg",
-      "logoExplainer": "White banner with bold green and black lettering 'La Semaine Africaine', symbolising historic moral and civic journalism.",
-      "sources": [
-        "https://lasemaineafricaine.info",
-        "https://fr.wikipedia.org/wiki/La_Semaine_africaine"
-      ]
-    }
-  ],
-  "CD": [
-    {
-      "id": "cd-acp",
-      "countryCode": "CD",
-      "name": "ACP",
-      "officialName": "Agence Congolaise de Presse",
-      "nativeName": "Agence Congolaise de Presse",
-      "englishTranslation": "Congolese Press Agency",
-      "founded": 1960,
-      "frequency": "Continuous 24/7 national newswire",
-      "format": "Official public wire service & daily bulletin",
-      "language": "French",
-      "headquarters": "Gombe, Kinshasa",
-      "owner": {
-        "name": "Democratic Republic of the Congo (Ministère de la Communication et Médias)",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Official public newswire of the DRC; presidential activity, national assembly decrees, provincial governors, and MONUSCO peace initiatives",
-      "readership": {
-        "metric": "Primary news supplier to over 500 radio, television, and print outlets across all 26 provinces of the DRC",
-        "source": "ACP Rapport de Gestion et Performance 2023"
-      },
-      "annualPublicFunding": {
-        "total": "CDF 4.5 billion (~US$1.65 million) state budget allocation",
-        "perCapita": "CDF 45 / person / year (~US$0.016)"
-      },
-      "revenueModel": "Direct state budget subsidy and institutional subscriber feeds",
-      "logo": "newspaper-logos/cd/acp-agence-congolaise-de-presse.svg",
-      "logoExplainer": "Navy blue background with bold white lettering 'ACP' and full title, symbolising the official state wire service of the DRC.",
-      "sources": [
-        "https://acp.cd",
-        "https://fr.wikipedia.org/wiki/Agence_congolaise_de_presse"
-      ]
-    }
-  ],
-  "CR": [
-    {
-      "id": "cr-elfaro-cr",
-      "countryCode": "CR",
-      "name": "El Faro Costa Rica",
-      "englishTranslation": "The Lighthouse Costa Rica",
-      "founded": 2018,
-      "frequency": "Continuous digital news magazine",
-      "format": "Investigative digital portal",
-      "language": "Spanish",
-      "headquarters": "San José",
-      "owner": {
-        "name": "Fundación Trípode",
-        "type": "Non-profit independent foundation"
-      },
-      "editorialStance": "In-depth investigative journalism; corruption investigations, judicial independence, and regional Central American democracy",
-      "readership": {
-        "metric": "Leading investigative regional journalism platform relocated to San José for press freedom protection",
-        "source": "Fundación Trípode Annual Report 2023"
-      },
-      "revenueModel": "International journalistic grants and reader crowdfunding",
-      "logo": "newspaper-logos/cr/elfaro-cr.svg",
-      "logoExplainer": "Black emblem with golden lighthouse beam and stark typography 'elfaro', symbolising illumination of truth and investigative scrutiny.",
-      "sources": [
-        "https://elfaro.net",
-        "https://en.wikipedia.org/wiki/El_Faro_(digital_newspaper)"
-      ]
-    }
-  ],
-  "CU": [
-    {
-      "id": "cu-granma",
-      "countryCode": "CU",
-      "name": "Granma",
-      "officialName": "Granma - Órgano Oficial del Comité Central del Partido Comunista de Cuba",
-      "nativeName": "Granma",
-      "englishTranslation": "Granma (named after the revolutionary yacht)",
-      "founded": 1965,
-      "frequency": "Daily newspaper (Monday–Saturday)",
-      "format": "Official state broadsheet & international portal",
-      "language": "Spanish, with foreign language editions",
-      "headquarters": "Plaza de la Revolución, Havana",
-      "owner": {
-        "name": "Central Committee of the Communist Party of Cuba",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Official newspaper of the Communist Party of Cuba; state decrees, socialist theory, economic reforms, and international anti-imperialist diplomacy",
-      "readership": {
-        "metric": "Largest print circulation in Cuba with 450,000 daily print copies and global digital reach across Granma.cu",
-        "source": "Editora Granma Informe de Gestión 2023"
-      },
-      "revenueModel": "Direct state budget appropriation and institutional subscriptions",
-      "logo": "newspaper-logos/cu/granma.svg",
-      "logoExplainer": "Red banner with bold white lettering 'Granma' and stylized silhouette of the revolutionary yacht, the historic emblem of Cuban state journalism.",
-      "sources": [
-        "https://www.granma.cu",
-        "https://en.wikipedia.org/wiki/Granma_(newspaper)"
-      ]
-    },
-    {
-      "id": "cu-prensa-latina",
-      "countryCode": "CU",
-      "name": "Prensa Latina",
-      "officialName": "Agencia Informativa Latinoamericana Prensa Latina S.A.",
-      "nativeName": "Prensa Latina",
-      "englishTranslation": "Latin American Press",
-      "founded": 1959,
-      "frequency": "Continuous 24/7 international newswire",
-      "format": "International news agency wire & multimedia service",
-      "language": "Spanish, English, French, Portuguese, Russian, Italian",
-      "headquarters": "Vedado, Havana",
-      "owner": {
-        "name": "Republic of Cuba",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Founded by Che Guevara and Jorge Ricardo Masetti; Latin American perspective on global affairs, Non-Aligned Movement, and anti-hegemonic coverage",
-      "readership": {
-        "metric": "Bureaus in over 40 countries; transmits more than 400 news dispatches daily to media partners worldwide",
-        "source": "Prensa Latina Memoria Institucional 2024"
-      },
-      "annualPublicFunding": {
-        "total": "Central state foreign-press operational allocation",
-        "perCapita": "State international agency"
-      },
-      "revenueModel": "State budget funding and international media syndication agreements",
-      "logo": "newspaper-logos/cu/prensa-latina.svg",
-      "logoExplainer": "Navy blue emblem with white calligraphy 'PL Prensa Latina' and globe meridians, symbolising non-aligned Latin American news distribution.",
-      "sources": [
-        "https://www.prensa-latina.cu",
-        "https://en.wikipedia.org/wiki/Prensa_Latina"
-      ]
-    }
-  ],
   "DJ": [
     {
       "id": "dj-adi",
@@ -1734,433 +1297,32 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "IR": [
+  "DZ": [
     {
-      "id": "ir-irna",
-      "countryCode": "IR",
-      "name": "IRNA",
-      "englishTranslation": "Islamic Republic News Agency",
-      "founded": 1934,
-      "frequency": "24/7 continuous wire service",
-      "format": "Official state news agency & multi-lingual portal",
-      "language": "Persian, English, Arabic, French, Spanish, Russian, Chinese, Turkish, German",
-      "headquarters": "Tehran",
-      "owner": {
-        "name": "Ministry of Culture and Islamic Guidance",
-        "type": "State-owned official news agency"
-      },
-      "editorialStance": "Official state news agency of Iran; government policy announcements and official diplomatic news",
-      "readership": {
-        "metric": "Primary source wire service for all domestic Iranian media and foreign diplomatic dispatches",
-        "source": "IRNA Corporate Directory 2024"
-      },
-      "annualPublicFunding": {
-        "total": "State budgetary allocation via Ministry of Culture",
-        "perCapita": "State funded"
-      },
-      "revenueModel": "State budget appropriation and wire subscription fees",
-      "logo": "newspaper-logos/ir/irna-islamic-republic-news-agency.svg",
-      "logoExplainer": "Green emblem featuring stylized Persian typography of 'IRNA' surrounded by global network lines.",
-      "sources": [
-        "https://www.irna.ir",
-        "https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency"
-      ]
-    }
-  ],
-  "IQ": [
-    {
-      "id": "iq-nina",
-      "countryCode": "IQ",
-      "name": "NINA",
-      "englishTranslation": "National Iraqi News Agency",
-      "founded": 2005,
-      "frequency": "24/7 national news wire",
-      "format": "Independent press agency wire & online portal",
-      "language": "Arabic, English",
-      "headquarters": "Baghdad",
-      "owner": {
-        "name": "Iraqi Journalists Syndicate",
-        "type": "Independent media cooperative"
-      },
-      "editorialStance": "First non-official independent news agency in Iraq; objective non-partisan coverage of national politics",
-      "readership": {
-        "metric": "Key syndication source for Iraqi print and broadcast media outlets",
-        "source": "NINA Directory 2024"
-      },
-      "revenueModel": "Subscription licensing and wire syndication",
-      "logo": "newspaper-logos/iq/nina-iraqi-national-news-agency.svg",
-      "logoExplainer": "Gold and blue circular icon with stylized Arabic acronym for NINA.",
-      "sources": [
-        "https://ninanews.com",
-        "https://en.wikipedia.org/wiki/National_Iraqi_News_Agency"
-      ]
-    }
-  ],
-  "IE": [
-    {
-      "id": "ie-irish-examiner",
-      "countryCode": "IE",
-      "name": "Irish Examiner",
-      "founded": 1841,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital news portal",
-      "language": "English",
-      "headquarters": "Cork",
-      "owner": {
-        "name": "The Irish Times DAC / Mediahuis",
-        "type": "Commercial media group"
-      },
-      "editorialStance": "Major national daily published in Cork; center-left focus on national politics, agriculture, regional development, and investigative reports",
-      "readership": {
-        "metric": "220,000 daily print and digital readers across Ireland",
-        "source": "JNLR Readership Survey 2023–24"
-      },
-      "revenueModel": "Print sales, digital subscription, and commercial advertising",
-      "logo": "newspaper-logos/ie/irish-examiner.svg",
-      "logoExplainer": "Traditional serif text 'Irish Examiner' in deep forest green with classic Irish typographic accents.",
-      "sources": [
-        "https://www.irishexaminer.com",
-        "https://en.wikipedia.org/wiki/Irish_Examiner"
-      ]
-    }
-  ],
-  "IT": [
-    {
-      "id": "it-la-stampa",
-      "countryCode": "IT",
-      "name": "La Stampa",
-      "englishTranslation": "The Press",
-      "founded": 1867,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital portal",
-      "language": "Italian",
-      "headquarters": "Turin",
-      "owner": {
-        "name": "GEDI Gruppo Editoriale",
-        "type": "Commercial media group"
-      },
-      "editorialStance": "Historic daily newspaper based in Turin; centrist stance with strong coverage of Northern Italy industrial economy and national politics",
-      "readership": {
-        "metric": "One of Italy's top 4 national newspapers with ~100,000 daily circulation",
-        "source": "ADS Italy Circulation Data 2024"
-      },
-      "revenueModel": "Print sales, digital subscriptions, and display advertising",
-      "logo": "newspaper-logos/it/la-stampa.svg",
-      "logoExplainer": "Traditional black Roman serif masthead 'LA STAMPA' with clean Italian press aesthetic.",
-      "sources": [
-        "https://www.lastampa.it",
-        "https://en.wikipedia.org/wiki/La_Stampa"
-      ]
-    }
-  ],
-  "CI": [
-    {
-      "id": "ci-aip",
-      "countryCode": "CI",
-      "name": "AIP",
-      "englishTranslation": "Ivorian News Agency",
+      "id": "dz-aps",
+      "countryCode": "DZ",
+      "name": "Algérie Presse Service",
+      "officialName": "Algérie Presse Service (APS)",
       "founded": 1961,
-      "frequency": "24/7 national news wire",
-      "format": "State news agency wire & public digital portal",
-      "language": "French",
-      "headquarters": "Abidjan",
+      "frequency": "Continuous 24/7 state newswire",
+      "format": "Official state newswire & photo service",
+      "language": "Arabic, French, Tamazight, English",
+      "headquarters": "Algiers",
       "owner": {
-        "name": "Government of Ivory Coast (Ministry of Communication)",
-        "type": "Public service news agency"
-      },
-      "editorialStance": "National press agency of Ivory Coast providing factual regional coverage across all 31 administrative regions",
-      "readership": {
-        "metric": "Primary source of verified regional dispatch news for all Ivorian print, radio, and TV stations",
-        "source": "AIP Official Report 2023"
-      },
-      "annualPublicFunding": {
-        "total": "Public budget allocation",
-        "perCapita": "State funded"
-      },
-      "revenueModel": "State budget subsidy and agency syndication",
-      "logo": "newspaper-logos/ci/aip-agence-ivoirienne-de-presse.svg",
-      "logoExplainer": "Ivory Coast map outline inside green circle with orange lettering 'AIP'.",
-      "sources": [
-        "https://www.aip.ci",
-        "https://en.wikipedia.org/wiki/Agence_Ivoirienne_de_Presse"
-      ]
-    }
-  ],
-  "JM": [
-    {
-      "id": "jm-jamaica-star",
-      "countryCode": "JM",
-      "name": "The Jamaica Star",
-      "founded": 1951,
-      "frequency": "Daily afternoon newspaper",
-      "format": "Tabloid print & digital edition",
-      "language": "English, Jamaican Patois",
-      "headquarters": "Kingston",
-      "owner": {
-        "name": "RJRGLEANER Communications Group",
-        "type": "Publicly listed media conglomerate"
-      },
-      "editorialStance": "Popular tabloid focusing on Jamaican pop culture, Dancehall music, human interest stories, and sports",
-      "readership": {
-        "metric": "Widely read tabloid in urban Kingston and Montego Bay among island youth",
-        "source": "RJRGLEANER Communications Group 2023"
-      },
-      "revenueModel": "Print newsstand sales and popular advertising",
-      "logo": "newspaper-logos/jm/jamaica-star.svg",
-      "logoExplainer": "Bright red five-pointed star behind bold yellow sans-serif text 'THE STAR'.",
-      "sources": [
-        "https://jamaica-star.com",
-        "https://en.wikipedia.org/wiki/The_Jamaica_Star"
-      ]
-    }
-  ],
-  "JP": [
-    {
-      "id": "jp-mainichi-shimbun",
-      "countryCode": "JP",
-      "name": "The Mainichi Shimbun",
-      "englishTranslation": "Daily Newspaper",
-      "founded": 1872,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital news portal",
-      "language": "Japanese, English",
-      "headquarters": "Tokyo",
-      "owner": {
-        "name": "The Mainichi Newspapers Co., Ltd.",
-        "type": "Independent press publisher"
-      },
-      "editorialStance": "Japan's oldest daily newspaper; progressive, social-democrat stance on environment, pacifism, and civil rights",
-      "readership": {
-        "metric": "1.8 million daily print circulation nationwide",
-        "source": "NSK Japan Newspaper Audit 2024"
-      },
-      "revenueModel": "Print subscriptions, digital access, and display advertising",
-      "logo": "newspaper-logos/jp/mainichi-shimbun.svg",
-      "logoExplainer": "Classic Kanji script '毎日新聞' accented by a modern blue circular eye symbol.",
-      "sources": [
-        "https://mainichi.jp",
-        "https://en.wikipedia.org/wiki/Mainichi_Shimbun"
-      ]
-    }
-  ],
-  "JO": [
-    {
-      "id": "jo-petra",
-      "countryCode": "JO",
-      "name": "Petra",
-      "englishTranslation": "Jordan News Agency",
-      "founded": 1969,
-      "frequency": "24/7 national news wire",
-      "format": "Official state news agency wire & online portal",
-      "language": "Arabic, English",
-      "headquarters": "Amman",
-      "owner": {
-        "name": "Ministry of Government Communications",
-        "type": "State-owned news agency"
-      },
-      "editorialStance": "Official state newswire of Jordan; authoritative reporting on royal court activities, cabinet decisions, and foreign diplomacy",
-      "readership": {
-        "metric": "Primary news dispatch provider for all Jordanian newspapers, TV stations, and diplomatic missions",
-        "source": "Petra Jordan News Agency Directory 2024"
-      },
-      "annualPublicFunding": {
-        "total": "State budget allocation (~5.5M JOD annual budget)",
-        "perCapita": "~0.50 JOD / person / year"
-      },
-      "revenueModel": "Parliamentary state budget appropriation",
-      "logo": "newspaper-logos/jo/petra-jordan-news-agency.svg",
-      "logoExplainer": "Terra-cotta red emblem of the Treasury of Petra facade with Arabic lettering 'بترا'.",
-      "sources": [
-        "https://petra.gov.jo",
-        "https://en.wikipedia.org/wiki/Jordan_News_Agency"
-      ]
-    }
-  ],
-  "KZ": [
-    {
-      "id": "kz-egemen-qazaqstan",
-      "countryCode": "KZ",
-      "name": "Egemen Qazaqstan",
-      "englishTranslation": "Independent Kazakhstan",
-      "founded": 1919,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital edition",
-      "language": "Kazakh",
-      "headquarters": "Astana",
-      "owner": {
-        "name": "Kazakh Newspapers LLP / Ministry of Culture and Information",
-        "type": "State-backed publishing group"
-      },
-      "editorialStance": "Kazakhstan's national Kazakh-language newspaper of record; government decisions, state history, culture, and national development",
-      "readership": {
-        "metric": "Largest print circulation Kazakh-language paper (~150,000 copies daily)",
-        "source": "Kazakh Newspapers LLP Audit 2023"
-      },
-      "revenueModel": "State publishing budget, print subscriptions, and official notices",
-      "logo": "newspaper-logos/kz/egemen-qazaqstan.svg",
-      "logoExplainer": "Sky blue banner with golden sun and eagle motif above calligraphic Kazakh script 'Егемен Қазақстан'.",
-      "sources": [
-        "https://egemen.kz",
-        "https://en.wikipedia.org/wiki/Egemen_Qazaqstan"
-      ]
-    },
-    {
-      "id": "kz-kazakhstanskaya-pravda",
-      "countryCode": "KZ",
-      "name": "Kazakhstanskaya Pravda",
-      "englishTranslation": "Kazakhstan Truth",
-      "founded": 1920,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital news portal",
-      "language": "Russian",
-      "headquarters": "Astana",
-      "owner": {
-        "name": "Kazakh Newspapers LLP",
-        "type": "State-backed publishing group"
-      },
-      "editorialStance": "Kazakhstan's primary Russian-language official daily newspaper; legal enactments, political coverage, and bilateral diplomatic affairs",
-      "readership": {
-        "metric": "Widely circulated nationwide daily among government officials, legal professionals, and industry leaders",
-        "source": "Kazakhstanskaya Pravda Media Kit"
-      },
-      "revenueModel": "State publishing subsidies, print subscriptions, and legal advertising",
-      "logo": "newspaper-logos/kz/kazakhstanskaya-pravda.svg",
-      "logoExplainer": "Navy blue serif typography 'Казахстанская правда' with classic Kazakh ornament motif.",
-      "sources": [
-        "https://kazpravda.kz",
-        "https://en.wikipedia.org/wiki/Kazakhstanskaya_Pravda"
-      ]
-    }
-  ],
-  "TL": [
-    {
-      "id": "tl-tatoli",
-      "countryCode": "TL",
-      "name": "Tatoli",
-      "officialName": "Agência Noticiosa de Timor-Leste",
-      "nativeName": "Tatoli - Agência Noticiosa de Timor-Leste",
-      "englishTranslation": "Tatoli (Tetum: To deliver / communicate)",
-      "founded": 2016,
-      "frequency": "Continuous 24/7 national newswire",
-      "format": "Official state newswire & multimedia portal",
-      "language": "Tetum, Portuguese, English, Indonesian",
-      "headquarters": "Farol, Dili",
-      "owner": {
-        "name": "Democratic Republic of Timor-Leste (SECOMS)",
+        "name": "People's Democratic Republic of Algeria",
         "type": "State-owned / statutory corporation"
       },
-      "editorialStance": "Official national news agency of Timor-Leste; government decisions, parliamentary legislation, ASEAN accession, and petroleum fund management",
+      "editorialStance": "Official state news agency; presidential decrees, government policy, and diplomatic affairs",
       "readership": {
-        "metric": "Primary news agency supplying wire dispatches to all domestic radio, television, and print media across all 14 municipalities",
-        "source": "Tatoli I.P. Relatório Anual 2023"
+        "metric": "Primary news agency supplying all Algerian public and private newspapers, TV, and radio networks",
+        "source": "APS Annual Report 2023"
       },
-      "annualPublicFunding": {
-        "total": "US$1.2 million annual state budget allocation",
-        "perCapita": "US$0.89 / person / year"
-      },
-      "revenueModel": "Direct state budget appropriation and news syndication services",
-      "logo": "newspaper-logos/tl/tatoli.svg",
-      "logoExplainer": "Vibrant red and black emblem inspired by the Timor-Leste national flag with clean white lettering 'TATOLI', representing national state news.",
+      "revenueModel": "Direct state budget allocation and subscriber licensing fees",
+      "logo": "newspaper-logos/dz/aps.svg",
+      "logoExplainer": "Emerald green circular badge with white typography and stylized arrow symbolizing rapid national news distribution.",
       "sources": [
-        "https://tatoli.tl",
-        "https://pt.wikipedia.org/wiki/Tatoli"
-      ]
-    }
-  ],
-  "EC": [
-    {
-      "id": "ec-lideres",
-      "countryCode": "EC",
-      "name": "Revista Líderes",
-      "englishTranslation": "Leaders Magazine",
-      "founded": 1998,
-      "frequency": "Weekly business publication (Monday)",
-      "format": "Tabloid publication & business portal",
-      "language": "Spanish",
-      "headquarters": "Quito",
-      "owner": {
-        "name": "Grupo El Comercio",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Ecuador's premier specialized business weekly; corporate profiles, entrepreneurship, fintech, and economic competitiveness",
-      "readership": {
-        "metric": "Essential reading for senior executives, entrepreneurs, and finance professionals across Ecuador",
-        "source": "Grupo El Comercio Business Division 2023"
-      },
-      "revenueModel": "Corporate subscriptions and business-to-business advertising",
-      "logo": "newspaper-logos/ec/lideres.svg",
-      "logoExplainer": "Deep emerald green banner with white typography 'LÍDERES', symbolising corporate excellence and economic leadership.",
-      "sources": [
-        "https://www.revistalideres.ec"
-      ]
-    }
-  ],
-  "EG": [
-    {
-      "id": "eg-al-ahram",
-      "countryCode": "EG",
-      "name": "Al-Ahram",
-      "officialName": "Al-Ahram Establishment",
-      "nativeName": "الأهرام",
-      "englishTranslation": "The Pyramids",
-      "founded": 1875,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & international news network",
-      "language": "Arabic, with English (Al-Ahram Weekly) and French editions",
-      "headquarters": "Al-Galaa Street, Cairo",
-      "owner": {
-        "name": "National Press Authority of Egypt",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Egypt's historic newspaper of record and the most famous newspaper in the Arab world; official government policy, Arab diplomacy, regional security, and cultural literature",
-      "readership": {
-        "metric": "Largest print circulation in the Middle East with over 900,000 daily copies and global digital reach exceeding 20 million across Ahram Online",
-        "source": "Al-Ahram Publishing House Report 2023"
-      },
-      "annualPublicFunding": {
-        "total": "Central state publishing allocation through National Press Authority",
-        "perCapita": "State newspaper of record"
-      },
-      "revenueModel": "State budget appropriation, print subscriptions, book publishing, and advertising",
-      "logo": "newspaper-logos/eg/al-ahram.svg",
-      "logoExplainer": "Classic Arabic calligraphy 'الأهرام' in black and gold, representing over 150 years of foundational Arab journalism.",
-      "sources": [
-        "https://gate.ahram.org.eg",
-        "https://en.wikipedia.org/wiki/Al-Ahram"
-      ]
-    }
-  ],
-  "GQ": [
-    {
-      "id": "gq-guinea-ecuatorial-press",
-      "countryCode": "GQ",
-      "name": "Guinea Ecuatorial Press",
-      "officialName": "Oficina de Información y Prensa de Guinea Ecuatorial",
-      "englishTranslation": "Equatorial Guinea Press",
-      "founded": 2010,
-      "frequency": "Continuous 24/7 official state newswire",
-      "format": "Official state wire service & digital portal",
-      "language": "Spanish, French, English",
-      "headquarters": "Malabo, Bioko Norte",
-      "owner": {
-        "name": "Republic of Equatorial Guinea (Dirección General de Prensa Presidencial)",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Official national information wire; presidential decrees, hydrocarbons sector developments, infrastructure projects, and CEMAC regional diplomacy",
-      "readership": {
-        "metric": "Primary source of official government information for domestic media, foreign diplomatic missions, and international oil sector operators",
-        "source": "Oficina de Información y Prensa 2023"
-      },
-      "annualPublicFunding": {
-        "total": "Central state operational budget via Ministry of Information",
-        "perCapita": "State information agency"
-      },
-      "revenueModel": "Direct state budget funding",
-      "logo": "newspaper-logos/gq/guinea-ecuatorial-press.svg",
-      "logoExplainer": "Official national emblem featuring the silk cotton tree (Ceiba pentandra) and blue text 'GUINEA ECUATORIAL PRESS', symbolising state authority.",
-      "sources": [
-        "https://guineaecuatorialpress.com",
-        "https://es.wikipedia.org/wiki/Guinea_Ecuatorial"
+        "https://www.aps.dz",
+        "https://en.wikipedia.org/wiki/Alg%C3%A9rie_Presse_Service"
       ]
     }
   ],
@@ -2225,59 +1387,379 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
+  "ES": [
+    {
+      "id": "es-agencia-efe",
+      "countryCode": "ES",
+      "name": "Agencia EFE",
+      "nativeName": "Agencia EFE, S.A., S.M.E.",
+      "englishTranslation": "EFE Agency",
+      "founded": 1939,
+      "frequency": "24/7 real-time global multimedia news wire",
+      "format": "International news agency & wire service (efe.com)",
+      "language": "Spanish, English, Portuguese, Galician, Catalan",
+      "headquarters": "Avenida de Burgos 8B, Madrid",
+      "owner": {
+        "name": "Sociedad Estatal de Participaciones Industriales (SEPI) / Government of Spain",
+        "type": "State-owned national news agency"
+      },
+      "annualPublicFunding": {
+        "total": "EUR 54 million",
+        "perCapita": "EUR 1.12"
+      },
+      "editorialStance": "Spain's national news agency and the world's largest Spanish-language news wire agency, operating alongside Reuters, AP, and AFP; provides non-partisan, verified news dispatches from over 180 cities across 120 countries, with premier coverage of Ibero-America",
+      "readership": {
+        "metric": "Transmits over 3 million news items, photos, and videos annually, syndicated to more than 2,000 media outlets across five continents",
+        "source": "Memoria Anual de Agencia EFE / SEPI"
+      },
+      "revenueModel": "State public service contract and media licensing subscriptions worldwide",
+      "logo": "newspaper-logos/es/agencia-efe.svg",
+      "logoExplainer": "Cobalt blue field with iconic scarlet red circle bearing white bold 'EFE', accompanied by white wordmark 'AGENCIA EFE' and light blue tagline.",
+      "sources": [
+        "https://efe.com",
+        "https://en.wikipedia.org/wiki/EFE"
+      ]
+    }
+  ],
+  "ET": [
+    {
+      "id": "et-ena",
+      "countryCode": "ET",
+      "name": "Ethiopian News Agency (ENA)",
+      "nativeName": "የኢትዮጵያ ዜና አገልግሎት",
+      "englishTranslation": "Ethiopian News Agency",
+      "founded": 1942,
+      "frequency": "Real-time news wire service & bulletins",
+      "format": "News wire & multimedia portal",
+      "language": "Amharic, English, Oromo, Tigrinya, Somali, Afar, Arabic, French",
+      "headquarters": "Addis Ababa",
+      "owner": {
+        "name": "Government of Ethiopia",
+        "type": "State news agency"
+      },
+      "annualPublicFunding": {
+        "total": "ETB 250 million",
+        "perCapita": "ETB 2.10"
+      },
+      "editorialStance": "Ethiopia's historic national news wire agency; official coverage of the Prime Minister's Office, federal ministries, regional state councils, Grand Ethiopian Renaissance Dam (GERD), and African Union summits",
+      "readership": {
+        "metric": "Primary official news wire feeding over 60 domestic broadcast stations, regional media agencies, and international bureaus",
+        "source": "ENA Corporate Review 2023"
+      },
+      "revenueModel": "State government subvention and wire syndication fees",
+      "logo": "newspaper-logos/et/ena.svg",
+      "logoExplainer": "Ethiopian green, yellow, and red tricolor backdrop with gold Amharic and English lettering 'ENA - ETHIOPIAN NEWS AGENCY'.",
+      "sources": [
+        "https://www.ena.et",
+        "https://en.wikipedia.org/wiki/Ethiopian_News_Agency"
+      ]
+    },
+    {
+      "id": "et-addis-standard",
+      "countryCode": "ET",
+      "name": "Addis Standard",
+      "founded": 2011,
+      "frequency": "Continuous digital investigative news service & monthly journal",
+      "format": "Digital news portal & investigative multimedia",
+      "language": "English, Amharic, Afaan Oromoo",
+      "headquarters": "Addis Ababa",
+      "owner": {
+        "name": "JAKENN Publishing Plc",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Progressive, reformist independent publication; recognized internationally for unflinching coverage of civil conflicts, transitional justice, ethnic federalism, and press freedoms",
+      "readership": {
+        "metric": "Over 800,000 monthly unique digital readers, heavily cited by international human rights monitors and foreign correspondents",
+        "source": "JAKENN Publishing Audience Data 2024"
+      },
+      "revenueModel": "Digital advertising, voluntary reader contributions, and international press development grants",
+      "logo": "newspaper-logos/et/addis-standard.svg",
+      "logoExplainer": "Dark slate background displaying crisp crimson red and white modern sans-serif typography 'Addis Standard', evoking journalistic rigor.",
+      "sources": [
+        "https://addisstandard.com",
+        "https://en.wikipedia.org/wiki/Addis_Standard"
+      ]
+    }
+  ],
+  "GA": [
+    {
+      "id": "ga-agp",
+      "countryCode": "GA",
+      "name": "AGP",
+      "officialName": "Agence Gabonaise de Presse",
+      "nativeName": "Agence Gabonaise de Presse",
+      "englishTranslation": "Gabonese Press Agency",
+      "founded": 1961,
+      "frequency": "Continuous 24/7 national newswire",
+      "format": "Official state news wire service & digital portal",
+      "language": "French",
+      "headquarters": "Libreville",
+      "owner": {
+        "name": "Republic of Gabon (Ministère de la Communication)",
+        "type": "State-owned / statutory corporation"
+      },
+      "editorialStance": "Statutory national news agency; presidential activity, national transition council resolutions, provincial governors, and ECCAS diplomacy",
+      "readership": {
+        "metric": "Primary news supplier to national television (Gabon Télévisions), radio stations, and regional media",
+        "source": "AGP Direction Générale 2023"
+      },
+      "annualPublicFunding": {
+        "total": "XAF 220 million (~US$360,000) state budget allocation",
+        "perCapita": "XAF 95 / person / year (~US$0.16)"
+      },
+      "revenueModel": "State budget funding and wire subscription services",
+      "logo": "newspaper-logos/ga/agp-agence-gabonaise-de-presse.svg",
+      "logoExplainer": "Green, yellow, and blue emblem representing the national colors of Gabon with clean typography 'AGP'.",
+      "sources": [
+        "https://agpgabon.ga",
+        "https://fr.wikipedia.org/wiki/Agence_gabonaise_de_presse"
+      ]
+    }
+  ],
+  "GB": [
+    {
+      "id": "gb-reuters",
+      "countryCode": "GB",
+      "name": "Reuters",
+      "founded": 1851,
+      "frequency": "24/7 real-time global multimedia news wire",
+      "format": "International news agency & financial wire service (reuters.com)",
+      "language": "English, French, German, Spanish, Arabic, Japanese, Chinese, Russian, Portuguese",
+      "headquarters": "5 Canada Square, Canary Wharf, London",
+      "owner": {
+        "name": "Thomson Reuters Corporation",
+        "type": "Publicly traded global information conglomerate"
+      },
+      "editorialStance": "One of the world's largest and most trusted international news wire agencies, founded in London in 1851 by Paul Julius Reuter using carrier pigeons and electric telegraph lines; bound by the Thomson Reuters Trust Principles requiring strict integrity, independence, and freedom from bias",
+      "readership": {
+        "metric": "Reaches billions of people daily through financial terminal syndication, wire distribution to thousands of global media publishers, and 40 million monthly digital visits",
+        "source": "Thomson Reuters Annual Report 2023 / Reuters Institute"
+      },
+      "revenueModel": "Commercial terminal news syndication (LSEG Workspace / Eikon), enterprise media licensing, and digital advertising",
+      "logo": "newspaper-logos/gb/reuters.svg",
+      "logoExplainer": "Signature bright orange field with white circular emblem, bold white sans-serif typography 'REUTERS', and charcoal global news subtitle.",
+      "sources": [
+        "https://www.reuters.com",
+        "https://en.wikipedia.org/wiki/Reuters"
+      ]
+    }
+  ],
+  "GE": [
+    {
+      "id": "ge-interpressnews",
+      "countryCode": "GE",
+      "name": "Interpressnews",
+      "officialName": "IPN",
+      "nativeName": "ინტერპრესნიუსი",
+      "englishTranslation": "Interpressnews",
+      "founded": 2001,
+      "frequency": "Continuous 24/7 national newswire",
+      "format": "National news agency wire & online portal",
+      "language": "Georgian, English, Russian",
+      "headquarters": "Tbilisi",
+      "owner": {
+        "name": "Palitra Media Holding",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Georgia's primary independent news agency; real-time breaking news wire supplying parliamentary proceedings, judicial trials, regional South Caucasus news, and geopolitics",
+      "readership": {
+        "metric": "Over 4.5 million monthly digital visits; primary wire source for all Georgian television networks, radio stations, and print media",
+        "source": "Palitra Media Audience Report 2024"
+      },
+      "revenueModel": "Newswire subscription syndication, digital display advertising, and SMS breaking news alerts",
+      "logo": "newspaper-logos/ge/interpressnews.svg",
+      "logoExplainer": "Red and blue emblem featuring stylized globe and bold typography 'IPN Interpressnews', the benchmark wire agency of Georgia.",
+      "sources": [
+        "https://www.interpressnews.ge",
+        "https://en.wikipedia.org/wiki/Interpressnews"
+      ]
+    }
+  ],
+  "GQ": [
+    {
+      "id": "gq-guinea-ecuatorial-press",
+      "countryCode": "GQ",
+      "name": "Guinea Ecuatorial Press",
+      "officialName": "Oficina de Información y Prensa de Guinea Ecuatorial",
+      "englishTranslation": "Equatorial Guinea Press",
+      "founded": 2010,
+      "frequency": "Continuous 24/7 official state newswire",
+      "format": "Official state wire service & digital portal",
+      "language": "Spanish, French, English",
+      "headquarters": "Malabo, Bioko Norte",
+      "owner": {
+        "name": "Republic of Equatorial Guinea (Dirección General de Prensa Presidencial)",
+        "type": "State-owned / statutory corporation"
+      },
+      "editorialStance": "Official national information wire; presidential decrees, hydrocarbons sector developments, infrastructure projects, and CEMAC regional diplomacy",
+      "readership": {
+        "metric": "Primary source of official government information for domestic media, foreign diplomatic missions, and international oil sector operators",
+        "source": "Oficina de Información y Prensa 2023"
+      },
+      "annualPublicFunding": {
+        "total": "Central state operational budget via Ministry of Information",
+        "perCapita": "State information agency"
+      },
+      "revenueModel": "Direct state budget funding",
+      "logo": "newspaper-logos/gq/guinea-ecuatorial-press.svg",
+      "logoExplainer": "Official national emblem featuring the silk cotton tree (Ceiba pentandra) and blue text 'GUINEA ECUATORIAL PRESS', symbolising state authority.",
+      "sources": [
+        "https://guineaecuatorialpress.com",
+        "https://es.wikipedia.org/wiki/Guinea_Ecuatorial"
+      ]
+    }
+  ],
+  "GW": [
+    {
+      "id": "gw-ang-agencia-noticiosa-da-guine",
+      "countryCode": "GW",
+      "name": "ANG (Agência Noticiosa da Guiné)",
+      "founded": 1975,
+      "frequency": "Daily newspaper & digital portal",
+      "format": "National press agency wire service & digital portal",
+      "language": "Portuguese",
+      "headquarters": "Bissau",
+      "owner": {
+        "name": "State of Guinea-Bissau (Public Agency)",
+        "type": "State-owned / statutory corporation"
+      },
+      "editorialStance": "State-owned press agency",
+      "readership": {
+        "metric": "120,000 monthly digital readers",
+        "source": "ANG (Agência Noticiosa da Guiné) Audience Review 2024"
+      },
+      "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
+      "logo": "newspaper-logos/gw/ang-agência-noticiosa-da-guiné.svg",
+      "logoExplainer": "Official branding banner for ANG (Agência Noticiosa da Guiné) in Bissau, representing national journalism and civic communication.",
+      "sources": [
+        "https://agencianoticiosadaguine.com/",
+        "https://www.gov.gw/"
+      ]
+    }
+  ],
+  "IQ": [
+    {
+      "id": "iq-nina",
+      "countryCode": "IQ",
+      "name": "NINA",
+      "englishTranslation": "National Iraqi News Agency",
+      "founded": 2005,
+      "frequency": "24/7 national news wire",
+      "format": "Independent press agency wire & online portal",
+      "language": "Arabic, English",
+      "headquarters": "Baghdad",
+      "owner": {
+        "name": "Iraqi Journalists Syndicate",
+        "type": "Independent media cooperative"
+      },
+      "editorialStance": "First non-official independent news agency in Iraq; objective non-partisan coverage of national politics",
+      "readership": {
+        "metric": "Key syndication source for Iraqi print and broadcast media outlets",
+        "source": "NINA Directory 2024"
+      },
+      "revenueModel": "Subscription licensing and wire syndication",
+      "logo": "newspaper-logos/iq/nina-iraqi-national-news-agency.svg",
+      "logoExplainer": "Gold and blue circular icon with stylized Arabic acronym for NINA.",
+      "sources": [
+        "https://ninanews.com",
+        "https://en.wikipedia.org/wiki/National_Iraqi_News_Agency"
+      ]
+    },
+    {
+      "id": "iq-shafaq-news",
+      "countryCode": "IQ",
+      "name": "Shafaq News",
+      "englishTranslation": "Twilight News",
+      "founded": 2010,
+      "frequency": "24/7 digital news publication",
+      "format": "Digital news wire & portal",
+      "language": "Kurdish, Arabic, English",
+      "headquarters": "Erbil & Baghdad",
+      "owner": {
+        "name": "Shafaq Foundation for Cultural and Media",
+        "type": "Independent digital media group"
+      },
+      "editorialStance": "Independent multi-lingual news agency covering Iraqi national politics, Kurdistan region, and economic affairs",
+      "readership": {
+        "metric": "8 million monthly digital readers across Iraq and diaspora",
+        "source": "Shafaq Digital Metrics 2024"
+      },
+      "revenueModel": "Digital display advertising and media licensing",
+      "logo": "newspaper-logos/iq/shafaq-news.svg",
+      "logoExplainer": "Bright orange sun icon beside bold dark Arabic lettering 'شفق نيوز'.",
+      "sources": [
+        "https://shafaq.com",
+        "https://en.wikipedia.org/wiki/Shafaq_News"
+      ]
+    }
+  ],
+  "IR": [
+    {
+      "id": "ir-irna",
+      "countryCode": "IR",
+      "name": "IRNA",
+      "englishTranslation": "Islamic Republic News Agency",
+      "founded": 1934,
+      "frequency": "24/7 continuous wire service",
+      "format": "Official state news agency & multi-lingual portal",
+      "language": "Persian, English, Arabic, French, Spanish, Russian, Chinese, Turkish, German",
+      "headquarters": "Tehran",
+      "owner": {
+        "name": "Ministry of Culture and Islamic Guidance",
+        "type": "State-owned official news agency"
+      },
+      "editorialStance": "Official state news agency of Iran; government policy announcements and official diplomatic news",
+      "readership": {
+        "metric": "Primary source wire service for all domestic Iranian media and foreign diplomatic dispatches",
+        "source": "IRNA Corporate Directory 2024"
+      },
+      "annualPublicFunding": {
+        "total": "State budgetary allocation via Ministry of Culture",
+        "perCapita": "State funded"
+      },
+      "revenueModel": "State budget appropriation and wire subscription fees",
+      "logo": "newspaper-logos/ir/irna-islamic-republic-news-agency.svg",
+      "logoExplainer": "Green emblem featuring stylized Persian typography of 'IRNA' surrounded by global network lines.",
+      "sources": [
+        "https://www.irna.ir",
+        "https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency"
+      ]
+    }
+  ],
+  "JO": [
+    {
+      "id": "jo-petra",
+      "countryCode": "JO",
+      "name": "Petra",
+      "englishTranslation": "Jordan News Agency",
+      "founded": 1969,
+      "frequency": "24/7 national news wire",
+      "format": "Official state news agency wire & online portal",
+      "language": "Arabic, English",
+      "headquarters": "Amman",
+      "owner": {
+        "name": "Ministry of Government Communications",
+        "type": "State-owned news agency"
+      },
+      "editorialStance": "Official state newswire of Jordan; authoritative reporting on royal court activities, cabinet decisions, and foreign diplomacy",
+      "readership": {
+        "metric": "Primary news dispatch provider for all Jordanian newspapers, TV stations, and diplomatic missions",
+        "source": "Petra Jordan News Agency Directory 2024"
+      },
+      "annualPublicFunding": {
+        "total": "State budget allocation (~5.5M JOD annual budget)",
+        "perCapita": "~0.50 JOD / person / year"
+      },
+      "revenueModel": "Parliamentary state budget appropriation",
+      "logo": "newspaper-logos/jo/petra-jordan-news-agency.svg",
+      "logoExplainer": "Terra-cotta red emblem of the Treasury of Petra facade with Arabic lettering 'بترا'.",
+      "sources": [
+        "https://petra.gov.jo",
+        "https://en.wikipedia.org/wiki/Jordan_News_Agency"
+      ]
+    }
+  ],
   "KE": [
-    {
-      "id": "ke-the-standard",
-      "countryCode": "KE",
-      "name": "The Standard",
-      "founded": 1902,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital news portal",
-      "language": "English",
-      "headquarters": "Nairobi",
-      "owner": {
-        "name": "Standard Group PLC (Moi Family & associates)",
-        "type": "Publicly listed media corporation"
-      },
-      "editorialStance": "Kenya's oldest newspaper; market-oriented, extensive coverage of national political debate, investigative reporting, and regional news",
-      "readership": {
-        "metric": "Second largest print daily in Kenya (~90,000 daily print copies) and major broadcast partner",
-        "source": "Standard Group PLC Media Report 2023–24"
-      },
-      "revenueModel": "Print sales, commercial advertising, and digital subscriptions",
-      "logo": "newspaper-logos/ke/the-standard.svg",
-      "logoExplainer": "Classic red serif masthead 'The Standard' symbolising over 120 years of Kenyan press history.",
-      "sources": [
-        "https://www.standardmedia.co.ke",
-        "https://en.wikipedia.org/wiki/The_Standard_(Kenya)"
-      ]
-    },
-    {
-      "id": "ke-the-star",
-      "countryCode": "KE",
-      "name": "The Star",
-      "founded": 2007,
-      "frequency": "Daily newspaper",
-      "format": "Tabloid & digital news platform",
-      "language": "English",
-      "headquarters": "Nairobi",
-      "owner": {
-        "name": "Radio Africa Group",
-        "type": "Commercial media company"
-      },
-      "editorialStance": "Independent daily newspaper featuring concise political reporting, opinion columns, entertainment, and urban affairs",
-      "readership": {
-        "metric": "Over 6 million monthly digital readers across Kenya and East African diaspora",
-        "source": "Radio Africa Group Digital Analytics 2024"
-      },
-      "revenueModel": "Digital programmatic advertising, print sales, and radio cross-promotion",
-      "logo": "newspaper-logos/ke/the-star-kenya.svg",
-      "logoExplainer": "Forest green background with bright yellow star emblem beside bold white text 'THE STAR'.",
-      "sources": [
-        "https://www.the-star.co.ke",
-        "https://en.wikipedia.org/wiki/The_Star_(Kenya)"
-      ]
-    },
     {
       "id": "ke-kna",
       "countryCode": "KE",
@@ -2307,39 +1789,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "sources": [
         "https://www.kenyanews.go.ke",
         "https://en.wikipedia.org/wiki/Kenya_News_Agency"
-      ]
-    }
-  ],
-  "KW": [
-    {
-      "id": "kw-kuna",
-      "countryCode": "KW",
-      "name": "KUNA",
-      "officialName": "Kuwait News Agency",
-      "founded": 1976,
-      "frequency": "24/7 national news wire",
-      "format": "Official state news agency wire & online portal",
-      "language": "Arabic, English, French",
-      "headquarters": "Kuwait City",
-      "owner": {
-        "name": "Ministry of Information",
-        "type": "State-owned news agency"
-      },
-      "editorialStance": "Official state press agency of Kuwait; authoritative dispatches on Royal Amiri decrees, cabinet decisions, and OPEC oil diplomacy",
-      "readership": {
-        "metric": "Primary news wire service feeding all Kuwaiti media outlets, foreign embassies, and international wire networks",
-        "source": "KUNA Annual Corporate Report 2024"
-      },
-      "annualPublicFunding": {
-        "total": "State budgetary appropriation (~12M KWD annual budget)",
-        "perCapita": "~2.50 KWD / person / year"
-      },
-      "revenueModel": "State budget funding and wire syndication fees",
-      "logo": "newspaper-logos/kw/kuna-kuwait-news-agency.svg",
-      "logoExplainer": "Navy blue box with white lettering 'KUNA' beside the title 'KUWAIT NEWS AGENCY'.",
-      "sources": [
-        "https://www.kuna.net.kw",
-        "https://en.wikipedia.org/wiki/Kuwait_News_Agency"
       ]
     }
   ],
@@ -2428,883 +1877,66 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "LA": [
+  "KH": [
     {
-      "id": "la-kpl",
-      "countryCode": "LA",
-      "name": "KPL",
-      "officialName": "Lao News Agency (Khaosan Pathet Lao)",
-      "founded": 1968,
-      "frequency": "24/7 national news wire",
-      "format": "Official state news agency wire & online portal",
-      "language": "Lao, English, French",
-      "headquarters": "Vientiane",
-      "owner": {
-        "name": "Ministry of Information, Culture and Tourism",
-        "type": "State-owned official news agency"
-      },
-      "editorialStance": "Official national wire agency of Laos; state announcements, economic development plans, and bilateral diplomatic visits",
-      "readership": {
-        "metric": "Exclusive news wire service supplying dispatches to all Lao domestic media outlets",
-        "source": "KPL Official Report 2024"
-      },
-      "annualPublicFunding": {
-        "total": "State budgetary subvention",
-        "perCapita": "State funded"
-      },
-      "revenueModel": "State budget allocation and wire distribution",
-      "logo": "newspaper-logos/la/kpl-lao-news-agency.svg",
-      "logoExplainer": "Bright red rectangular banner with bold white lettering 'KPL NEWS'.",
-      "sources": [
-        "https://kpl.gov.la",
-        "https://en.wikipedia.org/wiki/Khaosan_Pathet_Lao"
-      ]
-    }
-  ],
-  "LV": [
-    {
-      "id": "lv-leta",
-      "countryCode": "LV",
-      "name": "LETA",
-      "officialName": "National Information Agency LETA",
-      "founded": 1919,
-      "frequency": "24/7 national news wire",
-      "format": "Commercial press agency wire & news portal",
-      "language": "Latvian, English, Russian",
-      "headquarters": "Riga",
-      "owner": {
-        "name": "UP Investments (Margus Linnamäe)",
-        "type": "Media investment holding company"
-      },
-      "editorialStance": "Latvia's national news agency; non-partisan, objective newswire providing continuous reporting for domestic media and state institutions",
-      "readership": {
-        "metric": "Primary news dispatch provider for all Latvian newspapers, TV networks, radio stations, and corporate subscribers",
-        "source": "LETA Information Agency Profile 2024"
-      },
-      "revenueModel": "B2B wire licensing and business intelligence subscriptions",
-      "logo": "newspaper-logos/lv/leta-news-agency.svg",
-      "logoExplainer": "Deep navy blue bold uppercase lettering 'LETA'.",
-      "sources": [
-        "https://www.leta.lv",
-        "https://en.wikipedia.org/wiki/LETA"
-      ]
-    },
-    {
-      "id": "lv-lsm",
-      "countryCode": "LV",
-      "name": "LSM.lv",
-      "officialName": "Latvijas Sabiedriskie Mediji",
-      "founded": 2013,
-      "frequency": "24/7 public service digital news",
-      "format": "Public service digital portal & news app",
-      "language": "Latvian, Russian, English",
-      "headquarters": "Riga",
-      "owner": {
-        "name": "Public Electronic Mass Media Council (SEPLP)",
-        "type": "Public statutory media organization"
-      },
-      "editorialStance": "Public broadcaster unified news portal operating under statutory impartiality obligations; in-depth investigative unit",
-      "readership": {
-        "metric": "750,000 monthly unique users across Latvia",
-        "source": "Gemius Audience Audit / SEPLP Annual Report 2023"
-      },
-      "annualPublicFunding": {
-        "total": "€42 million annual public subvention for Latvian Public Media",
-        "perCapita": "€22.30 / person / year"
-      },
-      "revenueModel": "State budget subvention (100% ad-free public service media)",
-      "logo": "newspaper-logos/lv/lsm-lv.svg",
-      "logoExplainer": "Carmine red rectangular block with bold white text 'LSM.lv'.",
-      "sources": [
-        "https://www.lsm.lv",
-        "https://en.wikipedia.org/wiki/Public_Broadcasting_of_Latvia"
-      ]
-    }
-  ],
-  "LB": [
-    {
-      "id": "lb-nna",
-      "countryCode": "LB",
-      "name": "NNA",
-      "officialName": "National News Agency",
-      "founded": 1961,
-      "frequency": "24/7 national news wire",
-      "format": "Official state news agency wire & online portal",
-      "language": "Arabic, French, English",
-      "headquarters": "Beirut",
-      "owner": {
-        "name": "Government of Lebanon (Ministry of Information)",
-        "type": "State-owned news agency"
-      },
-      "editorialStance": "Official state news agency of Lebanon; non-partisan factual dispatches on cabinet decisions, parliamentary sessions, and public security",
-      "readership": {
-        "metric": "Primary wire service providing news dispatches to all Lebanese TV, radio, and print outlets",
-        "source": "Ministry of Information Lebanon 2024"
-      },
-      "annualPublicFunding": {
-        "total": "Ministry of Information budgetary subvention",
-        "perCapita": "State funded"
-      },
-      "revenueModel": "Parliamentary state budget appropriation",
-      "logo": "newspaper-logos/lb/nna-national-news-agency.svg",
-      "logoExplainer": "Deep teal rectangle featuring white sans-serif uppercase lettering 'NNA LEBANON'.",
-      "sources": [
-        "https://nna-leb.gov.lb",
-        "https://en.wikipedia.org/wiki/National_News_Agency_(Lebanon)"
-      ]
-    }
-  ],
-  "LS": [
-    {
-      "id": "ls-lena",
-      "countryCode": "LS",
-      "name": "LENA",
-      "officialName": "Lesotho News Agency",
-      "founded": 1985,
-      "frequency": "24/7 national news wire",
-      "format": "Official state news agency wire & online portal",
-      "language": "English, Sesotho",
-      "headquarters": "Maseru",
-      "owner": {
-        "name": "Ministry of Information, Communications, Science, Technology and Innovation",
-        "type": "State-owned national press agency"
-      },
-      "editorialStance": "Lesotho's official news agency; factual dispatches on royal decrees, parliamentary sessions, and district community news",
-      "readership": {
-        "metric": "Primary source wire service feeding news dispatches to all domestic radio stations and weekly newspapers",
-        "source": "Ministry of Information Lesotho 2024"
-      },
-      "annualPublicFunding": {
-        "total": "State parliamentary subvention",
-        "perCapita": "State funded"
-      },
-      "revenueModel": "Parliamentary state budget funding and agency syndication",
-      "logo": "newspaper-logos/ls/lena-lesotho-news-agency.svg",
-      "logoExplainer": "Green rectangular banner with bold white lettering 'LENA NEWS'.",
-      "sources": [
-        "https://www.lena.gov.ls",
-        "https://en.wikipedia.org/wiki/Media_of_Lesotho"
-      ]
-    }
-  ],
-  "LR": [
-    {
-      "id": "lr-lina",
-      "countryCode": "LR",
-      "name": "LINA",
-      "officialName": "Liberia News Agency",
+      "id": "kh-akp",
+      "countryCode": "KH",
+      "name": "AKP",
+      "officialName": "Agence Kampuchea Presse (AKP)",
       "founded": 1978,
-      "frequency": "24/7 national news wire",
-      "format": "Official state news agency wire & public digital portal",
-      "language": "English",
-      "headquarters": "Monrovia",
-      "owner": {
-        "name": "Government of Liberia (Ministry of Information, Cultural Affairs and Tourism)",
-        "type": "State-owned national press agency"
-      },
-      "editorialStance": "Liberia's official press agency; objective reporting on presidential activities, county development projects, and national legislation",
-      "readership": {
-        "metric": "Deploys correspondents across all 15 counties of Liberia, feeding wire dispatches to all domestic radio and print outlets",
-        "source": "MICAT Liberia Annual Report 2023"
-      },
-      "annualPublicFunding": {
-        "total": "Parliamentary state budget appropriation",
-        "perCapita": "State funded"
-      },
-      "revenueModel": "Parliamentary state budget funding and agency licensing",
-      "logo": "newspaper-logos/lr/lina-liberia-news-agency.svg",
-      "logoExplainer": "Navy blue bold text 'LINA NEWS' on white background.",
-      "sources": [
-        "https://liberianewsagency.com",
-        "https://en.wikipedia.org/wiki/Liberia_News_Agency"
-      ]
-    }
-  ],
-  "LY": [
-    {
-      "id": "ly-lana",
-      "countryCode": "LY",
-      "name": "LANA",
-      "officialName": "Libyan News Agency",
-      "founded": 1964,
-      "frequency": "24/7 national news wire",
-      "format": "Official state news agency wire & online portal",
-      "language": "Arabic, English, French",
-      "headquarters": "Tripoli",
-      "owner": {
-        "name": "Government of National Unity (GNU Ministry of Communication)",
-        "type": "State-owned news agency"
-      },
-      "editorialStance": "Libya's official national news agency; authoritative reporting on state policy, cabinet decrees, and international diplomacy",
-      "readership": {
-        "metric": "Primary news dispatch provider feeding all Libyan television networks, radio stations, and press portals",
-        "source": "LANA Official Directory 2024"
-      },
-      "annualPublicFunding": {
-        "total": "State parliamentary budget appropriation",
-        "perCapita": "State funded"
-      },
-      "revenueModel": "Parliamentary state budget allocation",
-      "logo": "newspaper-logos/ly/lana-libyan-news-agency.svg",
-      "logoExplainer": "Green rectangular badge with bold white lettering 'LANA NEWS'.",
-      "sources": [
-        "https://lana.gov.ly",
-        "https://en.wikipedia.org/wiki/Libyan_News_Agency"
-      ]
-    }
-  ],
-  "FI": [
-    {
-      "id": "fi-hufvudstadsbladet",
-      "countryCode": "FI",
-      "name": "Hufvudstadsbladet",
-      "officialName": "HBL",
-      "nativeName": "Hufvudstadsbladet",
-      "englishTranslation": "Capital City Paper",
-      "founded": 1864,
-      "frequency": "Daily newspaper",
-      "format": "Tabloid & digital portal",
-      "language": "Swedish",
-      "headquarters": "Mannerheimintie, Helsinki",
-      "owner": {
-        "name": "Bonnier News (51%) & KSF Media / Konstsamfundet (49%)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "The flagship Swedish-language daily newspaper in Finland; cultural commentary, Nordic cooperation, minority language rights, and international diplomacy",
-      "readership": {
-        "metric": "Largest Swedish-language daily newspaper in Finland with over 40,000 paid subscribers and 250,000 monthly digital readers on hbl.fi",
-        "source": "KSF Media & Bonnier News 2024"
-      },
-      "revenueModel": "Digital subscriptions, print sales, and cultural foundation support",
-      "logo": "newspaper-logos/fi/hufvudstadsbladet.svg",
-      "logoExplainer": "Historic black serif masthead 'Hufvudstadsbladet' with blue accent 'HBL', representing 160 years of Swedish-Finnish press tradition.",
-      "sources": [
-        "https://www.hbl.fi",
-        "https://en.wikipedia.org/wiki/Hufvudstadsbladet"
-      ]
-    }
-  ],
-  "GA": [
-    {
-      "id": "ga-agp",
-      "countryCode": "GA",
-      "name": "AGP",
-      "officialName": "Agence Gabonaise de Presse",
-      "nativeName": "Agence Gabonaise de Presse",
-      "englishTranslation": "Gabonese Press Agency",
-      "founded": 1961,
-      "frequency": "Continuous 24/7 national newswire",
-      "format": "Official state wire service & daily bulletin",
-      "language": "French",
-      "headquarters": "Libreville",
-      "owner": {
-        "name": "Republic of Gabon (Ministère de la Communication)",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Statutory national news agency; presidential activity, national transition council resolutions, provincial governors, and ECCAS diplomacy",
-      "readership": {
-        "metric": "Primary news supplier to national television (Gabon Télévisions), radio stations, and regional media",
-        "source": "AGP Direction Générale 2023"
-      },
-      "annualPublicFunding": {
-        "total": "XAF 220 million (~US$360,000) state budget allocation",
-        "perCapita": "XAF 95 / person / year (~US$0.16)"
-      },
-      "revenueModel": "State budget funding and wire subscription services",
-      "logo": "newspaper-logos/ga/agp-agence-gabonaise-de-presse.svg",
-      "logoExplainer": "Green, yellow, and blue emblem representing the national colors of Gabon with clean typography 'AGP'.",
-      "sources": [
-        "https://agpgabon.ga",
-        "https://fr.wikipedia.org/wiki/Agence_gabonaise_de_presse"
-      ]
-    }
-  ],
-  "GE": [
-    {
-      "id": "ge-interpressnews",
-      "countryCode": "GE",
-      "name": "Interpressnews",
-      "officialName": "IPN",
-      "nativeName": "ინტერპრესნიუსი",
-      "englishTranslation": "Interpressnews",
-      "founded": 2001,
-      "frequency": "Continuous 24/7 national newswire",
-      "format": "National news agency wire & online portal",
-      "language": "Georgian, English, Russian",
-      "headquarters": "Tbilisi",
-      "owner": {
-        "name": "Palitra Media Holding",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Georgia's primary independent news agency; real-time breaking news wire supplying parliamentary proceedings, judicial trials, regional South Caucasus news, and geopolitics",
-      "readership": {
-        "metric": "Over 4.5 million monthly digital visits; primary wire source for all Georgian television networks, radio stations, and print media",
-        "source": "Palitra Media Audience Report 2024"
-      },
-      "revenueModel": "Newswire subscription syndication, digital display advertising, and SMS breaking news alerts",
-      "logo": "newspaper-logos/ge/interpressnews.svg",
-      "logoExplainer": "Red and blue emblem featuring stylized globe and bold typography 'IPN Interpressnews', the benchmark wire agency of Georgia.",
-      "sources": [
-        "https://www.interpressnews.ge",
-        "https://en.wikipedia.org/wiki/Interpressnews"
-      ]
-    }
-  ],
-  "GY": [
-    {
-      "id": "gy-stabroek-news",
-      "countryCode": "GY",
-      "name": "Stabroek News",
-      "founded": 1986,
-      "frequency": "Daily newspaper & digital portal",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "Georgetown",
-      "owner": {
-        "name": "Guyana Publications Ltd (David de Caires estate)",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Independent / Center-left",
-      "readership": {
-        "metric": "1,200,000 monthly digital readers",
-        "source": "Stabroek News Audience Review 2024"
-      },
-      "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gy/stabroek-news.svg",
-      "logoExplainer": "Official branding banner for Stabroek News in Georgetown, representing national journalism and civic communication.",
-      "sources": [
-        "https://www.stabroeknews.com/",
-        "https://guyana.gov.gy/"
-      ]
-    }
-  ],
-  "IN": [
-    {
-      "id": "in-dainik-jagran",
-      "countryCode": "IN",
-      "name": "Dainik Jagran (दैनिक जागरण)",
-      "founded": 1942,
-      "frequency": "Daily newspaper & digital portal",
-      "format": "Broadsheet & digital portal",
-      "language": "Hindi",
-      "headquarters": "Kanpur, Uttar Pradesh",
-      "owner": {
-        "name": "Jagran Prakashan Limited (Gupta Family)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Right-wing / Conservative",
-      "readership": {
-        "metric": "68,000,000 multiplatform readers",
-        "source": "Dainik Jagran (दैनिक जागरण) Audience Review 2024"
-      },
-      "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/in/dainik-jagran.svg",
-      "logoExplainer": "Official branding banner for Dainik Jagran (दैनिक जागरण) in Kanpur, Uttar Pradesh, representing national journalism and civic communication.",
-      "sources": [
-        "https://jplcorp.in/"
-      ]
-    },
-    {
-      "id": "in-hindustan-times",
-      "countryCode": "IN",
-      "name": "Hindustan Times (HT)",
-      "founded": 1924,
-      "frequency": "Daily newspaper & digital portal",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "New Delhi",
-      "owner": {
-        "name": "HT Media Ltd (Birla Family)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Center-right / Independent",
-      "readership": {
-        "metric": "8,000,000 print & 50,000,000 digital monthly readers",
-        "source": "Hindustan Times (HT) Audience Review 2024"
-      },
-      "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/in/hindustan-times.svg",
-      "logoExplainer": "Official branding banner for Hindustan Times (HT) in New Delhi, representing national journalism and civic communication.",
-      "sources": [
-        "https://www.hindustantimes.com/",
-        "https://www.htmedia.in/"
-      ]
-    }
-  ],
-  "LI": [
-    {
-      "id": "li-wirtschaft-regional",
-      "countryCode": "LI",
-      "name": "Wirtschaft regional",
-      "founded": 2000,
-      "frequency": "Weekly financial publication",
-      "format": "Tabloid & business portal",
-      "language": "German",
-      "headquarters": "Vaduz",
-      "owner": {
-        "name": "Vaduzer Medienhaus AG",
-        "type": "Independent commercial publisher"
-      },
-      "editorialStance": "Specialist weekly financial journal covering Liechtenstein's banking sector, wealth management, manufacturing, fintech, and cross-border trade",
-      "readership": {
-        "metric": "Distributed to business leaders, corporate directors, and financial institutions across the Lake Constance Alpine region",
-        "source": "Vaduzer Medienhaus Financial Publishing 2023"
-      },
-      "revenueModel": "Corporate subscriptions and business-to-business advertising",
-      "logo": "newspaper-logos/li/wirtschaft-regional.svg",
-      "logoExplainer": "Deep corporate blue backdrop showcasing golden-amber typography 'Wirtschaft regional', signifying business and financial market authority.",
-      "sources": [
-        "https://www.wirtschaftregional.li"
-      ]
-    }
-  ],
-  "MG": [
-    {
-      "id": "mg-taratra",
-      "countryCode": "MG",
-      "name": "Taratra (ANTA)",
-      "nativeName": "Taratra - Agence Nationale d'Information Taratra",
-      "englishTranslation": "Reflection - National Information Agency Taratra",
-      "founded": 1962,
-      "frequency": "Daily news wire & bulletin",
-      "format": "News wire & digital agency portal",
-      "language": "Malagasy, French",
-      "headquarters": "Antananarivo",
-      "owner": {
-        "name": "Ministry of Communication and Culture",
-        "type": "State news agency"
-      },
-      "editorialStance": "Official national news agency of Madagascar; provides institutional dispatches, government communiqués, and regional reporting from all 23 regions of the island",
-      "readership": {
-        "metric": "Syndicated to all major print, broadcast, and community radio stations throughout Madagascar",
-        "source": "Ministère de la Communication et de la Culture Rapport Annuel 2023"
-      },
-      "revenueModel": "State budget allocation and wire distribution subscriptions",
-      "logo": "newspaper-logos/mg/taratra.svg",
-      "logoExplainer": "Forest green banner with bold white geometric lettering 'TARATRA - ANTA', symbolising national unity, island agriculture, and information transmission.",
-      "sources": [
-        "https://taratra.mg",
-        "https://anta.mg"
-      ]
-    }
-  ],
-  "MW": [
-    {
-      "id": "mw-mana",
-      "countryCode": "MW",
-      "name": "Malawi News Agency (MANA)",
-      "founded": 1966,
-      "frequency": "Real-time news wire service",
-      "format": "News wire & digital agency portal",
-      "language": "English, Chichewa",
-      "headquarters": "Lilongwe",
-      "owner": {
-        "name": "Ministry of Information and Digitization",
-        "type": "State news agency"
-      },
-      "editorialStance": "National public wire service with reporters across all 28 districts of Malawi; primary chronicler of development projects, agricultural news, and state functions",
-      "readership": {
-        "metric": "Feeds news to over 40 community and commercial radio stations, state broadcasters, and national newspapers",
-        "source": "Ministry of Information Annual Review 2023"
-      },
-      "revenueModel": "Government subvention and news syndication",
-      "logo": "newspaper-logos/mw/mana.svg",
-      "logoExplainer": "Deep charcoal background featuring bright red 'MANA' acronym above white subtitle 'MALAWI NEWS AGENCY', evoking national information sovereignty.",
-      "sources": [
-        "https://manaonline.gov.mw",
-        "https://en.wikipedia.org/wiki/Malawi_News_Agency"
-      ]
-    }
-  ],
-  "ML": [
-    {
-      "id": "ml-amap",
-      "countryCode": "ML",
-      "name": "AMAP (L'Essor)",
-      "nativeName": "Agence Malienne de Presse et de Publicité / L'Essor",
-      "englishTranslation": "Malian News and Advertising Agency / The Surge",
-      "founded": 1949,
-      "frequency": "Daily newspaper & news wire",
-      "format": "Broadsheet, wire service & digital portal",
-      "language": "French",
-      "headquarters": "Bamako",
-      "owner": {
-        "name": "Government of Mali",
-        "type": "State public enterprise"
-      },
-      "editorialStance": "National news agency and historical daily paper of record; official government communiqués, national security, diplomacy, and Sahel cooperation",
-      "readership": {
-        "metric": "Over 10,000 daily print copies distributed across Bamako and regional capitals, syndicating to regional media",
-        "source": "AMAP Rapport d'Activité 2023"
-      },
-      "revenueModel": "State subsidies, newspaper sales, and public notice announcements",
-      "logo": "newspaper-logos/ml/amap.svg",
-      "logoExplainer": "Malian flag green banner featuring bold yellow 'AMAP - L'ESSOR' and white text 'AGENCE MALIENNE DE PRESSE'.",
-      "sources": [
-        "https://essor.ml",
-        "https://fr.wikipedia.org/wiki/L%27Essor_(Mali)"
-      ]
-    },
-    {
-      "id": "ml-le-republicain",
-      "countryCode": "ML",
-      "name": "Le Républicain",
-      "nativeName": "Le Républicain",
-      "englishTranslation": "The Republican",
-      "founded": 1992,
-      "frequency": "Daily newspaper (Monday–Friday)",
-      "format": "Tabloid & web portal",
-      "language": "French",
-      "headquarters": "Hamdallaye ACI 2000, Bamako",
-      "owner": {
-        "name": "Société de Presse Le Républicain",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Founded by prominent pro-democracy activist Tiébilé Dramé following Mali's 1991 democratic transition; steadfast defender of constitutional liberties, rule of law, and peace accords",
-      "readership": {
-        "metric": "Respected national daily with readership concentrated among political leaders, academics, and NGOs",
-        "source": "Association des Éditeurs de Presse Privée (ASSEP) 2023"
-      },
-      "revenueModel": "Print sales, institutional advertising, and subscriptions",
-      "logo": "newspaper-logos/ml/le-republicain.svg",
-      "logoExplainer": "Crimson red field showcasing elegant white serif typography 'Le Républicain', symbolizing democratic vigilance.",
-      "sources": [
-        "https://fr.wikipedia.org/wiki/Le_R%C3%A9publicain_(Mali)"
-      ]
-    }
-  ],
-  "MR": [
-    {
-      "id": "mr-ami",
-      "countryCode": "MR",
-      "name": "AMI (Agence Mauritanienne d'Information)",
-      "nativeName": "وكالة الأنباء الموريتانية",
-      "englishTranslation": "Mauritanian News Agency",
-      "founded": 1975,
-      "frequency": "Real-time news wire & daily publications",
-      "format": "News wire, daily newspapers (Chaab & Horizons) & digital portal",
-      "language": "Arabic, French",
-      "headquarters": "Nouakchott",
-      "owner": {
-        "name": "Government of the Islamic Republic of Mauritania",
-        "type": "State public enterprise"
-      },
-      "editorialStance": "Official state news agency; official communiqués, ministerial decisions, diplomatic visits, national mining developments, and regional Sahel stability",
-      "readership": {
-        "metric": "Primary source of official news wire feeds for domestic broadcasters, newspapers, and foreign embassies",
-        "source": "AMI Rapport Annuel d'Activité 2023"
-      },
-      "revenueModel": "State budget subsidy and official publication subscriptions",
-      "logo": "newspaper-logos/mr/ami.svg",
-      "logoExplainer": "Mauritanian Islamic green field adorned with gold Arabic calligraphy 'وكالة الأنباء الموريتانية (AMI)' and white French subtitle.",
-      "sources": [
-        "https://ami.mr",
-        "https://fr.wikipedia.org/wiki/Agence_mauritanienne_d%27information"
-      ]
-    }
-  ],
-  "MX": [
-    {
-      "id": "mx-notimex",
-      "countryCode": "MX",
-      "name": "Notimex (Agencia Mexicana de Noticias)",
-      "nativeName": "Notimex, Agencia Mexicana de Noticias",
-      "englishTranslation": "Mexican News Agency",
-      "founded": 1968,
-      "frequency": "News wire service (historical/archival reference)",
-      "format": "News wire & multimedia archive",
-      "language": "Spanish, English",
-      "headquarters": "Mexico City",
-      "owner": {
-        "name": "Government of Mexico (Historical State Agency)",
-        "type": "State news agency"
-      },
-      "editorialStance": "Mexico's historic state news wire founded during the 1968 Summer Olympics; covered dispatches across all 32 Mexican states and Latin American bureaus until dissolution in 2023",
-      "readership": {
-        "metric": "Historical news agency syndicating to hundreds of newspapers and broadcasters across Mexico and the Americas",
-        "source": "Diario Oficial de la Federación / Archivo Notimex"
-      },
-      "revenueModel": "State budget allocations and wire service subscriptions",
-      "logo": "newspaper-logos/mx/notimex.svg",
-      "logoExplainer": "Green and red Mexican tricolor banner featuring bold white sans-serif 'NOTIMEX', commemorating Mexico's historic Olympic-era national wire agency.",
-      "sources": [
-        "https://es.wikipedia.org/wiki/Notimex",
-        "https://www.gob.mx"
-      ]
-    }
-  ],
-  "MD": [
-    {
-      "id": "md-moldpres",
-      "countryCode": "MD",
-      "name": "Moldpres",
-      "nativeName": "Agenția Informațională de Stat Moldpres",
-      "englishTranslation": "State Information Agency Moldpres",
-      "founded": 1990,
-      "frequency": "Real-time news wire & official gazette",
-      "format": "News wire, Monitorul Oficial & digital portal",
-      "language": "Romanian, English, Russian",
-      "headquarters": "Chișinău",
-      "owner": {
-        "name": "Government of the Republic of Moldova",
-        "type": "State public news agency"
-      },
-      "editorialStance": "Official state news agency and publisher of the Official Gazette (Monitorul Oficial); factual reporting on parliamentary legislation, European integration process, and diplomatic relations",
-      "readership": {
-        "metric": "Primary wire source for Moldovan broadcast stations and official publisher of all laws in the Republic",
-        "source": "Moldpres Raport de Activitate 2023"
-      },
-      "revenueModel": "State budget allocation and official publication sales",
-      "logo": "newspaper-logos/md/moldpres.svg",
-      "logoExplainer": "Moldovan blue banner featuring gold and white geometric sans-serif lettering 'MOLDPRES' with a stylized open newspaper motif, signifying state legislative truth.",
-      "sources": [
-        "https://www.moldpres.md",
-        "https://ro.wikipedia.org/wiki/Moldpres"
-      ]
-    }
-  ],
-  "MN": [
-    {
-      "id": "mn-montsame",
-      "countryCode": "MN",
-      "name": "Montsame",
-      "nativeName": "Монцамэ агентлаг",
-      "englishTranslation": "Montsame News Agency",
-      "founded": 1921,
-      "frequency": "Real-time news wire & weekly newspapers",
-      "format": "News wire, weekly journals (Mongol Messenger, Montsame Voskhod) & web portal",
-      "language": "Mongolian, English, Russian, Chinese, Japanese",
-      "headquarters": "Ulaanbaatar",
-      "owner": {
-        "name": "Government of Mongolia",
-        "type": "State national news agency"
-      },
-      "annualPublicFunding": {
-        "total": "MNT 4.5 billion",
-        "perCapita": "MNT 1,320.00"
-      },
-      "editorialStance": "Mongolia's official national news agency; founded in 1921, provides authoritative wire dispatches on State Great Khural (parliament) legislation, nomadic pastoralism, mining sector investments, and foreign diplomacy",
-      "readership": {
-        "metric": "Sole national agency syndicating news across all 21 aimags (provinces) and 40+ international news agencies",
-        "source": "Montsame Centennial Review 2023"
-      },
-      "revenueModel": "State budgetary subvention and wire syndication fees",
-      "logo": "newspaper-logos/mn/montsame.svg",
-      "logoExplainer": "Mongolian sky-blue field featuring the golden Soyombo national symbol alongside bold white capital lettering 'MONTSAME', symbolizing independence and truth.",
-      "sources": [
-        "https://montsame.mn",
-        "https://en.wikipedia.org/wiki/Montsame"
-      ]
-    }
-  ],
-  "ME": [
-    {
-      "id": "me-mina",
-      "countryCode": "ME",
-      "name": "MINA",
-      "nativeName": "Novinska agencija MINA",
-      "englishTranslation": "MINA News Agency",
-      "founded": 2001,
-      "frequency": "Real-time news wire service",
-      "format": "News wire & digital agency portal",
-      "language": "Montenegrin, English",
-      "headquarters": "Podgorica",
-      "owner": {
-        "name": "Infomont d.o.o.",
-        "type": "Independent news agency"
-      },
-      "editorialStance": "Montenegro's leading independent news wire agency; provides objective real-time dispatches on parliamentary affairs, EU accession talks, judicial reform, and regional Balkan relations",
-      "readership": {
-        "metric": "Syndicated to over 90% of domestic media outlets, radio stations, TV networks, and state bodies in Montenegro",
-        "source": "MINA Corporate Profile 2023"
-      },
-      "revenueModel": "B2B wire service subscriptions and syndication licensing",
-      "logo": "newspaper-logos/me/mina.svg",
-      "logoExplainer": "Montenegrin deep red background with bold white modern sans-serif typography 'MINA', representing the premier national news agency.",
-      "sources": [
-        "https://mina.news"
-      ]
-    }
-  ],
-  "MA": [
-    {
-      "id": "ma-map",
-      "countryCode": "MA",
-      "name": "MAP (Maghreb Arabe Presse)",
-      "nativeName": "وكالة المغرب العربي للأنباء",
-      "englishTranslation": "Maghreb Arab Press Agency",
-      "founded": 1959,
-      "frequency": "Real-time news wire service & daily publications",
-      "format": "News wire, daily newspapers (Le Matin / Al-Sahra Al-Maghribiya) & digital portal",
-      "language": "Arabic, French, English, Spanish, Amazigh",
-      "headquarters": "Rabat",
-      "owner": {
-        "name": "Kingdom of Morocco",
-        "type": "State news agency"
-      },
-      "annualPublicFunding": {
-        "total": "MAD 310 million",
-        "perCapita": "MAD 8.40"
-      },
-      "editorialStance": "Morocco's official national news wire agency; founded under King Mohammed V, provides authoritative dispatches on Royal Palace activities, government policies, Sahara territorial integrity, and African diplomacy",
-      "readership": {
-        "metric": "Primary wire syndicator feeding over 200 national newspapers, radio stations, television networks, and international diplomatic posts",
-        "source": "MAP Rapport d'Activité 2023"
-      },
-      "revenueModel": "State budgetary subvention, wire subscriptions, and commercial photo/video services",
-      "logo": "newspaper-logos/ma/map.svg",
-      "logoExplainer": "Moroccan crimson red background with gold pentagram star outline and bold white lettering 'MAP - AGENCE MAROCAINE DE PRESSE', evoking sovereign authority.",
-      "sources": [
-        "https://www.mapnews.ma",
-        "https://fr.wikipedia.org/wiki/Maghreb_Arabe_Presse"
-      ]
-    }
-  ],
-  "MZ": [
-    {
-      "id": "mz-aim",
-      "countryCode": "MZ",
-      "name": "AIM (Agência de Informação de Moçambique)",
-      "nativeName": "Agência de Informação de Moçambique",
-      "englishTranslation": "Mozambique News Agency",
-      "founded": 1975,
-      "frequency": "Real-time news wire service",
-      "format": "News wire & digital dispatch portal",
-      "language": "Portuguese, English",
-      "headquarters": "Maputo",
-      "owner": {
-        "name": "Government of the Republic of Mozambique",
-        "type": "State news agency"
-      },
-      "editorialStance": "Official national news agency created at independence in 1975; provides institutional wire bulletins on Assembly of the Republic legislation, LNG mega-projects in Cabo Delgado, agricultural developments, and SADC regional cooperation",
-      "readership": {
-        "metric": "Primary wire source syndicated to state and private radio stations, newspapers, and international embassies across southern Africa",
-        "source": "AIM Relatório de Actividades 2023"
-      },
-      "revenueModel": "State budgetary subvention and news agency syndication fees",
-      "logo": "newspaper-logos/mz/aim.svg",
-      "logoExplainer": "Mozambican flag-inspired green banner with bold golden-yellow 'AIM' and white subtitle 'AGÊNCIA DE INFORMAÇÃO DE MOÇAMBIQUE'.",
-      "sources": [
-        "https://aim.org.mz",
-        "https://en.wikipedia.org/wiki/Ag%C3%AAncia_de_Informa%C3%A7%C3%A3o_de_Mo%C3%A7ambique"
-      ]
-    }
-  ],
-  "MM": [
-    {
-      "id": "mm-mna",
-      "countryCode": "MM",
-      "name": "Myanmar News Agency (MNA)",
-      "nativeName": "မြန်မာသတင်းစဉ်",
-      "englishTranslation": "Myanmar News Agency",
-      "founded": 1963,
-      "frequency": "Real-time news wire & state daily newspapers",
-      "format": "News wire & state newspapers (Myanma Alinn, Kyemon, The Global New Light of Myanmar)",
-      "language": "Burmese, English",
-      "headquarters": "Naypyidaw / Yangon",
+      "frequency": "Continuous 24/7 state newswire",
+      "format": "Official state newswire agency",
+      "language": "Khmer, English, French",
+      "headquarters": "Phnom Penh",
       "owner": {
         "name": "Ministry of Information",
-        "type": "State news agency"
+        "type": "Government ministry / department"
       },
-      "editorialStance": "Official national state news agency of Myanmar; distributes official government notifications, administrative orders, diplomatic receptions, state economic projects, and military communiqués",
+      "editorialStance": "Official state news agency; royal bulletins, prime ministerial decrees, and national development",
       "readership": {
-        "metric": "Primary official wire distributor feeding all state broadcast television, radio, and state-owned newspapers nationwide",
-        "source": "Ministry of Information Myanmar Annual Report 2023"
+        "metric": "Primary news supplier to all Cambodian domestic broadcast networks, radio, and Khmer print media",
+        "source": "AKP Ministry Report 2023"
       },
-      "revenueModel": "State government budget allocation and newspaper sales",
-      "logo": "newspaper-logos/mm/mna.svg",
-      "logoExplainer": "Imperial peacock-inspired golden yellow background with deep royal blue Burmese and English typography 'MYANMAR NEWS AGENCY (MNA)'.",
+      "revenueModel": "Direct state budget funding",
+      "logo": "newspaper-logos/kh/akp.svg",
+      "logoExplainer": "Navy blue circular emblem with crimson star and text 'AKP AGENCE KAMPUCHEA PRESSE'.",
       "sources": [
-        "https://www.moi.gov.mm",
-        "https://en.wikipedia.org/wiki/Myanmar_News_Agency"
-      ]
-    },
-    {
-      "id": "mm-myanmar-now",
-      "countryCode": "MM",
-      "name": "Myanmar Now",
-      "nativeName": "မြန်မာနောင်း",
-      "englishTranslation": "Myanmar Now",
-      "founded": 2015,
-      "frequency": "Continuous digital investigative news service",
-      "format": "Digital investigative news agency",
-      "language": "Burmese, English",
-      "headquarters": "Yangon (with distributed clandestine desks)",
-      "owner": {
-        "name": "Myanmar Now News Agency",
-        "type": "Independent non-profit investigative media"
-      },
-      "editorialStance": "Award-winning independent investigative news agency; renowned for fearless in-depth investigations into military conglomerate holdings, illicit jade mines, war crimes, and pro-democracy resistance",
-      "readership": {
-        "metric": "Widely cited by the UN, international human rights tribunals, and millions of digital readers inside Myanmar via secure VPNs and social media",
-        "source": "Myanmar Now Editorial Review 2023"
-      },
-      "revenueModel": "International investigative journalism grants, reader contributions, and syndication",
-      "logo": "newspaper-logos/mm/myanmar-now.svg",
-      "logoExplainer": "Solid black field with intense fire-red typography 'MYANMAR NOW', embodying uncompromising frontline investigative reporting.",
-      "sources": [
-        "https://myanmar-now.net",
-        "https://en.wikipedia.org/wiki/Myanmar_Now"
+        "https://www.akp.gov.kh",
+        "https://en.wikipedia.org/wiki/Agence_Kampuchea_Presse"
       ]
     }
   ],
-  "ET": [
+  "KN": [
     {
-      "id": "et-ena",
-      "countryCode": "ET",
-      "name": "Ethiopian News Agency (ENA)",
-      "nativeName": "የኢትዮጵያ ዜና አገልግሎት",
-      "englishTranslation": "Ethiopian News Agency",
-      "founded": 1942,
-      "frequency": "Real-time news wire service & bulletins",
-      "format": "News wire & multimedia portal",
-      "language": "Amharic, English, Oromo, Tigrinya, Somali, Afar, Arabic, French",
-      "headquarters": "Addis Ababa",
+      "id": "kn-sknis",
+      "countryCode": "KN",
+      "name": "SKNIS (St. Kitts and Nevis Information Service)",
+      "nativeName": "St. Kitts and Nevis Information Service",
+      "englishTranslation": "St. Kitts and Nevis Information Service",
+      "founded": 1983,
+      "frequency": "Continuous government news service & press releases",
+      "format": "Government news agency, official portal & radio releases",
+      "language": "English",
+      "headquarters": "Government Headquarters, Church Street, Basseterre",
       "owner": {
-        "name": "Government of Ethiopia",
+        "name": "Government of Saint Kitts and Nevis (Prime Minister's Office)",
         "type": "State news agency"
       },
       "annualPublicFunding": {
-        "total": "ETB 250 million",
-        "perCapita": "ETB 2.10"
+        "total": "XCD 2.8 million",
+        "perCapita": "XCD 52.00"
       },
-      "editorialStance": "Ethiopia's historic national news wire agency; official coverage of the Prime Minister's Office, federal ministries, regional state councils, Grand Ethiopian Renaissance Dam (GERD), and African Union summits",
+      "editorialStance": "Official national news and public information department of the Federation of Saint Kitts and Nevis; primary source for Cabinet decisions, National Assembly legislation, public health updates, hurricane preparedness, and Citizenship by Investment (CBI) regulations",
       "readership": {
-        "metric": "Primary official news wire feeding over 60 domestic broadcast stations, regional media agencies, and international bureaus",
-        "source": "ENA Corporate Review 2023"
+        "metric": "Authoritative national wire delivering dispatches and bulletins to all domestic radio stations, regional Caribbean media, and overseas diplomatic missions",
+        "source": "Government of St. Kitts & Nevis Estimates for 2024"
       },
-      "revenueModel": "State government subvention and wire syndication fees",
-      "logo": "newspaper-logos/et/ena.svg",
-      "logoExplainer": "Ethiopian green, yellow, and red tricolor backdrop with gold Amharic and English lettering 'ENA - ETHIOPIAN NEWS AGENCY'.",
+      "revenueModel": "Federal government budgetary appropriation",
+      "logo": "newspaper-logos/kn/sknis.svg",
+      "logoExplainer": "Green rectangular field with national flag black diagonal chevron featuring bold white typography 'SKNIS' and golden subtitle.",
       "sources": [
-        "https://www.ena.et",
-        "https://en.wikipedia.org/wiki/Ethiopian_News_Agency"
-      ]
-    },
-    {
-      "id": "et-addis-standard",
-      "countryCode": "ET",
-      "name": "Addis Standard",
-      "founded": 2011,
-      "frequency": "Continuous digital investigative news service & monthly journal",
-      "format": "Digital news portal & investigative multimedia",
-      "language": "English, Amharic, Afaan Oromoo",
-      "headquarters": "Addis Ababa",
-      "owner": {
-        "name": "JAKENN Publishing Plc",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Progressive, reformist independent publication; recognized internationally for unflinching coverage of civil conflicts, transitional justice, ethnic federalism, and press freedoms",
-      "readership": {
-        "metric": "Over 800,000 monthly unique digital readers, heavily cited by international human rights monitors and foreign correspondents",
-        "source": "JAKENN Publishing Audience Data 2024"
-      },
-      "revenueModel": "Digital advertising, voluntary reader contributions, and international press development grants",
-      "logo": "newspaper-logos/et/addis-standard.svg",
-      "logoExplainer": "Dark slate background displaying crisp crimson red and white modern sans-serif typography 'Addis Standard', evoking journalistic rigor.",
-      "sources": [
-        "https://addisstandard.com",
-        "https://en.wikipedia.org/wiki/Addis_Standard"
+        "https://www.sknis.gov.kn",
+        "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
       ]
     }
   ],
@@ -3373,6 +2005,848 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
+  "KW": [
+    {
+      "id": "kw-kuna",
+      "countryCode": "KW",
+      "name": "KUNA",
+      "officialName": "Kuwait News Agency",
+      "founded": 1976,
+      "frequency": "24/7 national news wire",
+      "format": "Official state news agency wire & online portal",
+      "language": "Arabic, English, French",
+      "headquarters": "Kuwait City",
+      "owner": {
+        "name": "Ministry of Information",
+        "type": "State-owned news agency"
+      },
+      "editorialStance": "Official state press agency of Kuwait; authoritative dispatches on Royal Amiri decrees, cabinet decisions, and OPEC oil diplomacy",
+      "readership": {
+        "metric": "Primary news wire service feeding all Kuwaiti media outlets, foreign embassies, and international wire networks",
+        "source": "KUNA Annual Corporate Report 2024"
+      },
+      "annualPublicFunding": {
+        "total": "State budgetary appropriation (~12M KWD annual budget)",
+        "perCapita": "~2.50 KWD / person / year"
+      },
+      "revenueModel": "State budget funding and wire syndication fees",
+      "logo": "newspaper-logos/kw/kuna-kuwait-news-agency.svg",
+      "logoExplainer": "Navy blue box with white lettering 'KUNA' beside the title 'KUWAIT NEWS AGENCY'.",
+      "sources": [
+        "https://www.kuna.net.kw",
+        "https://en.wikipedia.org/wiki/Kuwait_News_Agency"
+      ]
+    }
+  ],
+  "LA": [
+    {
+      "id": "la-kpl",
+      "countryCode": "LA",
+      "name": "KPL",
+      "officialName": "Lao News Agency (Khaosan Pathet Lao)",
+      "founded": 1968,
+      "frequency": "24/7 national news wire",
+      "format": "Official state news agency wire & online portal",
+      "language": "Lao, English, French",
+      "headquarters": "Vientiane",
+      "owner": {
+        "name": "Ministry of Information, Culture and Tourism",
+        "type": "State-owned official news agency"
+      },
+      "editorialStance": "Official national wire agency of Laos; state announcements, economic development plans, and bilateral diplomatic visits",
+      "readership": {
+        "metric": "Exclusive news wire service supplying dispatches to all Lao domestic media outlets",
+        "source": "KPL Official Report 2024"
+      },
+      "annualPublicFunding": {
+        "total": "State budgetary subvention",
+        "perCapita": "State funded"
+      },
+      "revenueModel": "State budget allocation and wire distribution",
+      "logo": "newspaper-logos/la/kpl-lao-news-agency.svg",
+      "logoExplainer": "Bright red rectangular banner with bold white lettering 'KPL NEWS'.",
+      "sources": [
+        "https://kpl.gov.la",
+        "https://en.wikipedia.org/wiki/Khaosan_Pathet_Lao"
+      ]
+    }
+  ],
+  "LB": [
+    {
+      "id": "lb-nna",
+      "countryCode": "LB",
+      "name": "NNA",
+      "officialName": "National News Agency",
+      "founded": 1961,
+      "frequency": "24/7 national news wire",
+      "format": "Official state news agency wire & online portal",
+      "language": "Arabic, French, English",
+      "headquarters": "Beirut",
+      "owner": {
+        "name": "Government of Lebanon (Ministry of Information)",
+        "type": "State-owned news agency"
+      },
+      "editorialStance": "Official state news agency of Lebanon; non-partisan factual dispatches on cabinet decisions, parliamentary sessions, and public security",
+      "readership": {
+        "metric": "Primary wire service providing news dispatches to all Lebanese TV, radio, and print outlets",
+        "source": "Ministry of Information Lebanon 2024"
+      },
+      "annualPublicFunding": {
+        "total": "Ministry of Information budgetary subvention",
+        "perCapita": "State funded"
+      },
+      "revenueModel": "Parliamentary state budget appropriation",
+      "logo": "newspaper-logos/lb/nna-national-news-agency.svg",
+      "logoExplainer": "Deep teal rectangle featuring white sans-serif uppercase lettering 'NNA LEBANON'.",
+      "sources": [
+        "https://nna-leb.gov.lb",
+        "https://en.wikipedia.org/wiki/National_News_Agency_(Lebanon)"
+      ]
+    }
+  ],
+  "LC": [
+    {
+      "id": "lc-gis-saint-lucia",
+      "countryCode": "LC",
+      "name": "GIS Saint Lucia (Government Information Service)",
+      "nativeName": "Government Information Service",
+      "englishTranslation": "Government Information Service",
+      "founded": 1980,
+      "frequency": "Continuous public news service & daily releases",
+      "format": "Government news agency, digital television & press releases",
+      "language": "English, Saint Lucian Creole French (Kwéyòl)",
+      "headquarters": "Greaham Louisy Administrative Complex, Waterfront, Castries",
+      "owner": {
+        "name": "Government of Saint Lucia (Office of the Prime Minister)",
+        "type": "State news agency"
+      },
+      "annualPublicFunding": {
+        "total": "XCD 4.2 million",
+        "perCapita": "XCD 23.30"
+      },
+      "editorialStance": "Official national news agency of Saint Lucia; dedicated to public information, ministerial announcements, Parliament of Saint Lucia sittings, hurricane emergency broadcasts (NEMO), and OECS regional development",
+      "readership": {
+        "metric": "Official news distributor feeding all domestic radio and TV networks, with over 150,000 monthly viewers on digital platforms and NTN television",
+        "source": "Saint Lucia Estimates of Revenue and Expenditure 2024"
+      },
+      "revenueModel": "State government budget allocation",
+      "logo": "newspaper-logos/lc/gis-saint-lucia.svg",
+      "logoExplainer": "Deep navy field featuring iconic yellow, black, and white stylized Pitons emblem beside bold white lettering 'GIS'.",
+      "sources": [
+        "https://www.govt.lc",
+        "https://en.wikipedia.org/wiki/Saint_Lucia"
+      ]
+    },
+    {
+      "id": "lc-loop-slu",
+      "countryCode": "LC",
+      "name": "Loop News Saint Lucia",
+      "nativeName": "Loop News Saint Lucia",
+      "englishTranslation": "Loop News Saint Lucia",
+      "founded": 2014,
+      "frequency": "Continuous 24/7 mobile and digital news service",
+      "format": "Mobile app & digital news portal (stlucia.loopnews.com)",
+      "language": "English",
+      "headquarters": "Castries",
+      "owner": {
+        "name": "Trend Media (Digicel Group)",
+        "type": "Pan-Caribbean commercial digital news network"
+      },
+      "editorialStance": "Leading Caribbean mobile news network providing real-time breaking news across Saint Lucia; specialized coverage of crime, community sports, cultural festivals (Saint Lucia Jazz & Arts Festival), and entertainment",
+      "readership": {
+        "metric": "Over 1.2 million monthly active readers across mobile application and web portals",
+        "source": "Trend Media Caribbean Analytics 2023"
+      },
+      "revenueModel": "Digital mobile advertising and telecom integration",
+      "logo": "newspaper-logos/lc/loop-slu.svg",
+      "logoExplainer": "Vibrant purple background featuring white circular badge with infinity loop symbol and bold white block typography 'LOOP'.",
+      "sources": [
+        "https://stlucia.loopnews.com",
+        "https://en.wikipedia.org/wiki/Saint_Lucia"
+      ]
+    }
+  ],
+  "LK": [
+    {
+      "id": "lk-ada-derana",
+      "countryCode": "LK",
+      "name": "Ada Derana",
+      "nativeName": "අද දෙරණ (Ada Derana)",
+      "englishTranslation": "Today's Earth / Country Today",
+      "founded": 2007,
+      "frequency": "24/7 real-time news wire, television & mobile alert service",
+      "format": "Digital news portal, broadcast channel & SMS alerts (adaderana.lk)",
+      "language": "Sinhala, English, Tamil",
+      "headquarters": "Derana Macro Entertainment, 320 T.B. Jayah Mawatha, Colombo 10",
+      "owner": {
+        "name": "Derana Macro Entertainment (Pvt) Ltd",
+        "type": "Commercial broadcast & digital network"
+      },
+      "editorialStance": "Sri Lanka's leading 24/7 breaking news agency and multi-platform news provider; delivers live coverage of political summits, natural weather alerts, judicial trials, and sports in three official languages",
+      "readership": {
+        "metric": "Over 4 million monthly website visits and over 1.2 million active mobile alert subscribers nationwide",
+        "source": "Kantar Sri Lanka Media Ratings / Ada Derana Audience Report"
+      },
+      "revenueModel": "Digital video ads, telecom SMS subscription revenue shares, and broadcast sponsorships",
+      "logo": "newspaper-logos/lk/ada-derana.svg",
+      "logoExplainer": "Deep navy blue field with bold orange circular monogram 'ad', white impact lettering 'ada DERANA', and warm orange 24x7 news tagline.",
+      "sources": [
+        "https://www.adaderana.lk",
+        "https://en.wikipedia.org/wiki/Ada_Derana"
+      ]
+    }
+  ],
+  "LR": [
+    {
+      "id": "lr-lina",
+      "countryCode": "LR",
+      "name": "LINA",
+      "officialName": "Liberia News Agency",
+      "founded": 1978,
+      "frequency": "24/7 national news wire",
+      "format": "Official state news agency wire & public digital portal",
+      "language": "English",
+      "headquarters": "Monrovia",
+      "owner": {
+        "name": "Government of Liberia (Ministry of Information, Cultural Affairs and Tourism)",
+        "type": "State-owned national press agency"
+      },
+      "editorialStance": "Liberia's official press agency; objective reporting on presidential activities, county development projects, and national legislation",
+      "readership": {
+        "metric": "Deploys correspondents across all 15 counties of Liberia, feeding wire dispatches to all domestic radio and print outlets",
+        "source": "MICAT Liberia Annual Report 2023"
+      },
+      "annualPublicFunding": {
+        "total": "Parliamentary state budget appropriation",
+        "perCapita": "State funded"
+      },
+      "revenueModel": "Parliamentary state budget funding and agency licensing",
+      "logo": "newspaper-logos/lr/lina-liberia-news-agency.svg",
+      "logoExplainer": "Navy blue bold text 'LINA NEWS' on white background.",
+      "sources": [
+        "https://liberianewsagency.com",
+        "https://en.wikipedia.org/wiki/Liberia_News_Agency"
+      ]
+    }
+  ],
+  "LS": [
+    {
+      "id": "ls-lena",
+      "countryCode": "LS",
+      "name": "LENA",
+      "officialName": "Lesotho News Agency",
+      "founded": 1985,
+      "frequency": "24/7 national news wire",
+      "format": "Official state news agency wire & online portal",
+      "language": "English, Sesotho",
+      "headquarters": "Maseru",
+      "owner": {
+        "name": "Ministry of Information, Communications, Science, Technology and Innovation",
+        "type": "State-owned national press agency"
+      },
+      "editorialStance": "Lesotho's official news agency; factual dispatches on royal decrees, parliamentary sessions, and district community news",
+      "readership": {
+        "metric": "Primary source wire service feeding news dispatches to all domestic radio stations and weekly newspapers",
+        "source": "Ministry of Information Lesotho 2024"
+      },
+      "annualPublicFunding": {
+        "total": "State parliamentary subvention",
+        "perCapita": "State funded"
+      },
+      "revenueModel": "Parliamentary state budget funding and agency syndication",
+      "logo": "newspaper-logos/ls/lena-lesotho-news-agency.svg",
+      "logoExplainer": "Green rectangular banner with bold white lettering 'LENA NEWS'.",
+      "sources": [
+        "https://www.lena.gov.ls",
+        "https://en.wikipedia.org/wiki/Media_of_Lesotho"
+      ]
+    }
+  ],
+  "LT": [
+    {
+      "id": "lt-elta",
+      "countryCode": "LT",
+      "name": "ELTA",
+      "nativeName": "Lietuvos telegramų agentūra",
+      "englishTranslation": "Lithuanian Telegraph Agency",
+      "founded": 1920,
+      "frequency": "Real-time news wire service",
+      "format": "News wire & digital agency portal",
+      "language": "Lithuanian, English, Russian",
+      "headquarters": "Vilnius",
+      "owner": {
+        "name": "Ekspress Grupp",
+        "type": "Independent media group"
+      },
+      "editorialStance": "Lithuania's historical and primary national news wire agency; impartial real-time reporting of state affairs, Seimas debates, and international geopolitical developments",
+      "readership": {
+        "metric": "Over 300 media subscribers, government offices, and institutional press desks across the Baltic region",
+        "source": "Ekspress Grupp Annual Report 2023"
+      },
+      "revenueModel": "B2B wire syndication subscriptions and media licensing",
+      "logo": "newspaper-logos/lt/elta.svg",
+      "logoExplainer": "Vivid Baltic blue banner displaying bold white geometric sans-serif lettering 'ELTA' with wide tracking, representing Lithuania's foundational news wire.",
+      "sources": [
+        "https://www.elta.lt",
+        "https://lt.wikipedia.org/wiki/ELTA"
+      ]
+    }
+  ],
+  "LV": [
+    {
+      "id": "lv-leta",
+      "countryCode": "LV",
+      "name": "LETA",
+      "officialName": "National Information Agency LETA",
+      "founded": 1919,
+      "frequency": "24/7 national news wire",
+      "format": "Commercial press agency wire & news portal",
+      "language": "Latvian, English, Russian",
+      "headquarters": "Riga",
+      "owner": {
+        "name": "UP Investments (Margus Linnamäe)",
+        "type": "Media investment holding company"
+      },
+      "editorialStance": "Latvia's national news agency; non-partisan, objective newswire providing continuous reporting for domestic media and state institutions",
+      "readership": {
+        "metric": "Primary news dispatch provider for all Latvian newspapers, TV networks, radio stations, and corporate subscribers",
+        "source": "LETA Information Agency Profile 2024"
+      },
+      "revenueModel": "B2B wire licensing and business intelligence subscriptions",
+      "logo": "newspaper-logos/lv/leta-news-agency.svg",
+      "logoExplainer": "Deep navy blue bold uppercase lettering 'LETA'.",
+      "sources": [
+        "https://www.leta.lv",
+        "https://en.wikipedia.org/wiki/LETA"
+      ]
+    },
+    {
+      "id": "lv-lsm",
+      "countryCode": "LV",
+      "name": "LSM.lv",
+      "officialName": "Latvijas Sabiedriskie Mediji",
+      "founded": 2013,
+      "frequency": "24/7 public service digital news",
+      "format": "Public service digital portal & news app",
+      "language": "Latvian, Russian, English",
+      "headquarters": "Riga",
+      "owner": {
+        "name": "Public Electronic Mass Media Council (SEPLP)",
+        "type": "Public statutory media organization"
+      },
+      "editorialStance": "Public broadcaster unified news portal operating under statutory impartiality obligations; in-depth investigative unit",
+      "readership": {
+        "metric": "750,000 monthly unique users across Latvia",
+        "source": "Gemius Audience Audit / SEPLP Annual Report 2023"
+      },
+      "annualPublicFunding": {
+        "total": "€42 million annual public subvention for Latvian Public Media",
+        "perCapita": "€22.30 / person / year"
+      },
+      "revenueModel": "State budget subvention (100% ad-free public service media)",
+      "logo": "newspaper-logos/lv/lsm-lv.svg",
+      "logoExplainer": "Carmine red rectangular block with bold white text 'LSM.lv'.",
+      "sources": [
+        "https://www.lsm.lv",
+        "https://en.wikipedia.org/wiki/Public_Broadcasting_of_Latvia"
+      ]
+    }
+  ],
+  "LY": [
+    {
+      "id": "ly-lana",
+      "countryCode": "LY",
+      "name": "LANA",
+      "officialName": "Libyan News Agency",
+      "founded": 1964,
+      "frequency": "24/7 national news wire",
+      "format": "Official state news agency wire & online portal",
+      "language": "Arabic, English, French",
+      "headquarters": "Tripoli",
+      "owner": {
+        "name": "Government of National Unity (GNU Ministry of Communication)",
+        "type": "State-owned news agency"
+      },
+      "editorialStance": "Libya's official national news agency; authoritative reporting on state policy, cabinet decrees, and international diplomacy",
+      "readership": {
+        "metric": "Primary news dispatch provider feeding all Libyan television networks, radio stations, and press portals",
+        "source": "LANA Official Directory 2024"
+      },
+      "annualPublicFunding": {
+        "total": "State parliamentary budget appropriation",
+        "perCapita": "State funded"
+      },
+      "revenueModel": "Parliamentary state budget allocation",
+      "logo": "newspaper-logos/ly/lana-libyan-news-agency.svg",
+      "logoExplainer": "Green rectangular badge with bold white lettering 'LANA NEWS'.",
+      "sources": [
+        "https://lana.gov.ly",
+        "https://en.wikipedia.org/wiki/Libyan_News_Agency"
+      ]
+    }
+  ],
+  "MA": [
+    {
+      "id": "ma-map",
+      "countryCode": "MA",
+      "name": "MAP (Maghreb Arabe Presse)",
+      "nativeName": "وكالة المغرب العربي للأنباء",
+      "englishTranslation": "Maghreb Arab Press Agency",
+      "founded": 1959,
+      "frequency": "Real-time news wire service & daily publications",
+      "format": "Official national news wire agency & digital portal",
+      "language": "Arabic, French, English, Spanish, Amazigh",
+      "headquarters": "Rabat",
+      "owner": {
+        "name": "Kingdom of Morocco",
+        "type": "State news agency"
+      },
+      "annualPublicFunding": {
+        "total": "MAD 310 million",
+        "perCapita": "MAD 8.40"
+      },
+      "editorialStance": "Morocco's official national news wire agency; founded under King Mohammed V, provides authoritative dispatches on Royal Palace activities, government policies, Sahara territorial integrity, and African diplomacy",
+      "readership": {
+        "metric": "Primary wire syndicator feeding over 200 national newspapers, radio stations, television networks, and international diplomatic posts",
+        "source": "MAP Rapport d'Activité 2023"
+      },
+      "revenueModel": "State budgetary subvention, wire subscriptions, and commercial photo/video services",
+      "logo": "newspaper-logos/ma/map.svg",
+      "logoExplainer": "Moroccan crimson red background with gold pentagram star outline and bold white lettering 'MAP - AGENCE MAROCAINE DE PRESSE', evoking sovereign authority.",
+      "sources": [
+        "https://www.mapnews.ma",
+        "https://fr.wikipedia.org/wiki/Maghreb_Arabe_Presse"
+      ]
+    }
+  ],
+  "MD": [
+    {
+      "id": "md-moldpres",
+      "countryCode": "MD",
+      "name": "Moldpres",
+      "nativeName": "Agenția Informațională de Stat Moldpres",
+      "englishTranslation": "State Information Agency Moldpres",
+      "founded": 1990,
+      "frequency": "Real-time news wire & official gazette",
+      "format": "Official state news wire service & public information portal",
+      "language": "Romanian, English, Russian",
+      "headquarters": "Chișinău",
+      "owner": {
+        "name": "Government of the Republic of Moldova",
+        "type": "State public news agency"
+      },
+      "editorialStance": "Official state news agency and publisher of the Official Gazette (Monitorul Oficial); factual reporting on parliamentary legislation, European integration process, and diplomatic relations",
+      "readership": {
+        "metric": "Primary wire source for Moldovan broadcast stations and official publisher of all laws in the Republic",
+        "source": "Moldpres Raport de Activitate 2023"
+      },
+      "revenueModel": "State budget allocation and official publication sales",
+      "logo": "newspaper-logos/md/moldpres.svg",
+      "logoExplainer": "Moldovan blue banner featuring gold and white geometric sans-serif lettering 'MOLDPRES' with a stylized open newspaper motif, signifying state legislative truth.",
+      "sources": [
+        "https://www.moldpres.md",
+        "https://ro.wikipedia.org/wiki/Moldpres"
+      ]
+    }
+  ],
+  "ME": [
+    {
+      "id": "me-mina",
+      "countryCode": "ME",
+      "name": "MINA",
+      "nativeName": "Novinska agencija MINA",
+      "englishTranslation": "MINA News Agency",
+      "founded": 2001,
+      "frequency": "Real-time news wire service",
+      "format": "News wire & digital agency portal",
+      "language": "Montenegrin, English",
+      "headquarters": "Podgorica",
+      "owner": {
+        "name": "Infomont d.o.o.",
+        "type": "Independent news agency"
+      },
+      "editorialStance": "Montenegro's leading independent news wire agency; provides objective real-time dispatches on parliamentary affairs, EU accession talks, judicial reform, and regional Balkan relations",
+      "readership": {
+        "metric": "Syndicated to over 90% of domestic media outlets, radio stations, TV networks, and state bodies in Montenegro",
+        "source": "MINA Corporate Profile 2023"
+      },
+      "revenueModel": "B2B wire service subscriptions and syndication licensing",
+      "logo": "newspaper-logos/me/mina.svg",
+      "logoExplainer": "Montenegrin deep red background with bold white modern sans-serif typography 'MINA', representing the premier national news agency.",
+      "sources": [
+        "https://mina.news"
+      ]
+    }
+  ],
+  "MG": [
+    {
+      "id": "mg-taratra",
+      "countryCode": "MG",
+      "name": "Taratra (ANTA)",
+      "nativeName": "Taratra - Agence Nationale d'Information Taratra",
+      "englishTranslation": "Reflection - National Information Agency Taratra",
+      "founded": 1962,
+      "frequency": "Daily news wire & bulletin",
+      "format": "News wire & digital agency portal",
+      "language": "Malagasy, French",
+      "headquarters": "Antananarivo",
+      "owner": {
+        "name": "Ministry of Communication and Culture",
+        "type": "State news agency"
+      },
+      "editorialStance": "Official national news agency of Madagascar; provides institutional dispatches, government communiqués, and regional reporting from all 23 regions of the island",
+      "readership": {
+        "metric": "Syndicated to all major print, broadcast, and community radio stations throughout Madagascar",
+        "source": "Ministère de la Communication et de la Culture Rapport Annuel 2023"
+      },
+      "revenueModel": "State budget allocation and wire distribution subscriptions",
+      "logo": "newspaper-logos/mg/taratra.svg",
+      "logoExplainer": "Forest green banner with bold white geometric lettering 'TARATRA - ANTA', symbolising national unity, island agriculture, and information transmission.",
+      "sources": [
+        "https://taratra.mg",
+        "https://anta.mg"
+      ]
+    }
+  ],
+  "MK": [
+    {
+      "id": "mk-mia",
+      "countryCode": "MK",
+      "name": "MIA (Media Information Agency)",
+      "nativeName": "Медиумска информативна агенција",
+      "englishTranslation": "Media Information Agency",
+      "founded": 1992,
+      "frequency": "Real-time news wire service",
+      "format": "News wire & digital dispatch portal",
+      "language": "Macedonian, Albanian, English",
+      "headquarters": "Skopje",
+      "owner": {
+        "name": "Government of the Republic of North Macedonia",
+        "type": "State news agency"
+      },
+      "annualPublicFunding": {
+        "total": "MKD 85 million",
+        "perCapita": "MKD 46.00"
+      },
+      "editorialStance": "Official national public news agency; provides impartial wire dispatches on Sobranie (parliament) debates, EU harmonization, NATO integration, and regional Balkan diplomacy",
+      "readership": {
+        "metric": "Primary wire source feeding over 80% of broadcasters and print publications across North Macedonia",
+        "source": "MIA Godisen Izvestaj 2023"
+      },
+      "revenueModel": "State public service subvention and B2B wire subscriptions",
+      "logo": "newspaper-logos/mk/mia.svg",
+      "logoExplainer": "Red and yellow Macedonian sunburst banner with bold white lettering 'MIA - MEDIA INFORMATION AGENCY'.",
+      "sources": [
+        "https://mia.mk",
+        "https://en.wikipedia.org/wiki/Media_Information_Agency"
+      ]
+    }
+  ],
+  "ML": [
+    {
+      "id": "ml-amap",
+      "countryCode": "ML",
+      "name": "AMAP (L'Essor)",
+      "nativeName": "Agence Malienne de Presse et de Publicité / L'Essor",
+      "englishTranslation": "Malian News and Advertising Agency / The Surge",
+      "founded": 1949,
+      "frequency": "Daily newspaper & news wire",
+      "format": "National news agency wire service & digital portal",
+      "language": "French",
+      "headquarters": "Bamako",
+      "owner": {
+        "name": "Government of Mali",
+        "type": "State public enterprise"
+      },
+      "editorialStance": "National news agency and historical daily paper of record; official government communiqués, national security, diplomacy, and Sahel cooperation",
+      "readership": {
+        "metric": "Over 10,000 daily print copies distributed across Bamako and regional capitals, syndicating to regional media",
+        "source": "AMAP Rapport d'Activité 2023"
+      },
+      "revenueModel": "State subsidies, newspaper sales, and public notice announcements",
+      "logo": "newspaper-logos/ml/amap.svg",
+      "logoExplainer": "Malian flag green banner featuring bold yellow 'AMAP - L'ESSOR' and white text 'AGENCE MALIENNE DE PRESSE'.",
+      "sources": [
+        "https://essor.ml",
+        "https://fr.wikipedia.org/wiki/L%27Essor_(Mali)"
+      ]
+    }
+  ],
+  "MM": [
+    {
+      "id": "mm-mna",
+      "countryCode": "MM",
+      "name": "Myanmar News Agency (MNA)",
+      "nativeName": "မြန်မာသတင်းစဉ်",
+      "englishTranslation": "Myanmar News Agency",
+      "founded": 1963,
+      "frequency": "Real-time news wire & state daily newspapers",
+      "format": "News wire & state newspapers (Myanma Alinn, Kyemon, The Global New Light of Myanmar)",
+      "language": "Burmese, English",
+      "headquarters": "Naypyidaw / Yangon",
+      "owner": {
+        "name": "Ministry of Information",
+        "type": "State news agency"
+      },
+      "editorialStance": "Official national state news agency of Myanmar; distributes official government notifications, administrative orders, diplomatic receptions, state economic projects, and military communiqués",
+      "readership": {
+        "metric": "Primary official wire distributor feeding all state broadcast television, radio, and state-owned newspapers nationwide",
+        "source": "Ministry of Information Myanmar Annual Report 2023"
+      },
+      "revenueModel": "State government budget allocation and newspaper sales",
+      "logo": "newspaper-logos/mm/mna.svg",
+      "logoExplainer": "Imperial peacock-inspired golden yellow background with deep royal blue Burmese and English typography 'MYANMAR NEWS AGENCY (MNA)'.",
+      "sources": [
+        "https://www.moi.gov.mm",
+        "https://en.wikipedia.org/wiki/Myanmar_News_Agency"
+      ]
+    },
+    {
+      "id": "mm-myanmar-now",
+      "countryCode": "MM",
+      "name": "Myanmar Now",
+      "nativeName": "မြန်မာနောင်း",
+      "englishTranslation": "Myanmar Now",
+      "founded": 2015,
+      "frequency": "Continuous digital investigative news service",
+      "format": "Digital investigative news agency",
+      "language": "Burmese, English",
+      "headquarters": "Yangon (with distributed clandestine desks)",
+      "owner": {
+        "name": "Myanmar Now News Agency",
+        "type": "Independent non-profit investigative media"
+      },
+      "editorialStance": "Award-winning independent investigative news agency; renowned for fearless in-depth investigations into military conglomerate holdings, illicit jade mines, war crimes, and pro-democracy resistance",
+      "readership": {
+        "metric": "Widely cited by the UN, international human rights tribunals, and millions of digital readers inside Myanmar via secure VPNs and social media",
+        "source": "Myanmar Now Editorial Review 2023"
+      },
+      "revenueModel": "International investigative journalism grants, reader contributions, and syndication",
+      "logo": "newspaper-logos/mm/myanmar-now.svg",
+      "logoExplainer": "Solid black field with intense fire-red typography 'MYANMAR NOW', embodying uncompromising frontline investigative reporting.",
+      "sources": [
+        "https://myanmar-now.net",
+        "https://en.wikipedia.org/wiki/Myanmar_Now"
+      ]
+    }
+  ],
+  "MN": [
+    {
+      "id": "mn-montsame",
+      "countryCode": "MN",
+      "name": "Montsame",
+      "nativeName": "Монцамэ агентлаг",
+      "englishTranslation": "Montsame News Agency",
+      "founded": 1921,
+      "frequency": "Real-time news wire & weekly newspapers",
+      "format": "Official national newswire agency & web portal",
+      "language": "Mongolian, English, Russian, Chinese, Japanese",
+      "headquarters": "Ulaanbaatar",
+      "owner": {
+        "name": "Government of Mongolia",
+        "type": "State national news agency"
+      },
+      "annualPublicFunding": {
+        "total": "MNT 4.5 billion",
+        "perCapita": "MNT 1,320.00"
+      },
+      "editorialStance": "Mongolia's official national news agency; founded in 1921, provides authoritative wire dispatches on State Great Khural (parliament) legislation, nomadic pastoralism, mining sector investments, and foreign diplomacy",
+      "readership": {
+        "metric": "Sole national agency syndicating news across all 21 aimags (provinces) and 40+ international news agencies",
+        "source": "Montsame Centennial Review 2023"
+      },
+      "revenueModel": "State budgetary subvention and wire syndication fees",
+      "logo": "newspaper-logos/mn/montsame.svg",
+      "logoExplainer": "Mongolian sky-blue field featuring the golden Soyombo national symbol alongside bold white capital lettering 'MONTSAME', symbolizing independence and truth.",
+      "sources": [
+        "https://montsame.mn",
+        "https://en.wikipedia.org/wiki/Montsame"
+      ]
+    }
+  ],
+  "MR": [
+    {
+      "id": "mr-ami",
+      "countryCode": "MR",
+      "name": "AMI (Agence Mauritanienne d'Information)",
+      "nativeName": "وكالة الأنباء الموريتانية",
+      "englishTranslation": "Mauritanian News Agency",
+      "founded": 1975,
+      "frequency": "Real-time news wire & daily publications",
+      "format": "Official state news wire service & digital portal",
+      "language": "Arabic, French",
+      "headquarters": "Nouakchott",
+      "owner": {
+        "name": "Government of the Islamic Republic of Mauritania",
+        "type": "State public enterprise"
+      },
+      "editorialStance": "Official state news agency; official communiqués, ministerial decisions, diplomatic visits, national mining developments, and regional Sahel stability",
+      "readership": {
+        "metric": "Primary source of official news wire feeds for domestic broadcasters, newspapers, and foreign embassies",
+        "source": "AMI Rapport Annuel d'Activité 2023"
+      },
+      "revenueModel": "State budget subsidy and official publication subscriptions",
+      "logo": "newspaper-logos/mr/ami.svg",
+      "logoExplainer": "Mauritanian Islamic green field adorned with gold Arabic calligraphy 'وكالة الأنباء الموريتانية (AMI)' and white French subtitle.",
+      "sources": [
+        "https://ami.mr",
+        "https://fr.wikipedia.org/wiki/Agence_mauritanienne_d%27information"
+      ]
+    },
+    {
+      "id": "mr-al-akhbar",
+      "countryCode": "MR",
+      "name": "Al Akhbar",
+      "nativeName": "وكالة الأخبار المستقلة",
+      "englishTranslation": "Independent News Agency",
+      "founded": 2003,
+      "frequency": "Continuous digital news service",
+      "format": "Digital portal & investigative wire",
+      "language": "Arabic, French",
+      "headquarters": "Tevragh-Zeina, Nouakchott",
+      "owner": {
+        "name": "Al Akhbar Media Group",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Mauritania's most influential independent news agency; acclaimed for investigative exposés on government corruption, human rights, Sahelian militant movements, and public trials",
+      "readership": {
+        "metric": "Over 120,000 daily online visitors; cited regularly by international news wires including AFP, Reuters, and Al Jazeera",
+        "source": "Al Akhbar Traffic Report 2023"
+      },
+      "revenueModel": "Digital advertising, private subscriptions, and media training",
+      "logo": "newspaper-logos/mr/al-akhbar.svg",
+      "logoExplainer": "Crimson red background highlighting stark white Arabic script 'الأخبار (Alakhbar.info)', representing breaking independent investigations.",
+      "sources": [
+        "https://alakhbar.info",
+        "https://fr.wikipedia.org/wiki/Alakhbar_(Mauritanie)"
+      ]
+    }
+  ],
+  "MW": [
+    {
+      "id": "mw-mana",
+      "countryCode": "MW",
+      "name": "Malawi News Agency (MANA)",
+      "founded": 1966,
+      "frequency": "Real-time news wire service",
+      "format": "News wire & digital agency portal",
+      "language": "English, Chichewa",
+      "headquarters": "Lilongwe",
+      "owner": {
+        "name": "Ministry of Information and Digitization",
+        "type": "State news agency"
+      },
+      "editorialStance": "National public wire service with reporters across all 28 districts of Malawi; primary chronicler of development projects, agricultural news, and state functions",
+      "readership": {
+        "metric": "Feeds news to over 40 community and commercial radio stations, state broadcasters, and national newspapers",
+        "source": "Ministry of Information Annual Review 2023"
+      },
+      "revenueModel": "Government subvention and news syndication",
+      "logo": "newspaper-logos/mw/mana.svg",
+      "logoExplainer": "Deep charcoal background featuring bright red 'MANA' acronym above white subtitle 'MALAWI NEWS AGENCY', evoking national information sovereignty.",
+      "sources": [
+        "https://manaonline.gov.mw",
+        "https://en.wikipedia.org/wiki/Malawi_News_Agency"
+      ]
+    }
+  ],
+  "MX": [
+    {
+      "id": "mx-notimex",
+      "countryCode": "MX",
+      "name": "Notimex (Agencia Mexicana de Noticias)",
+      "nativeName": "Notimex, Agencia Mexicana de Noticias",
+      "englishTranslation": "Mexican News Agency",
+      "founded": 1968,
+      "frequency": "News wire service (historical/archival reference)",
+      "format": "News wire & multimedia archive",
+      "language": "Spanish, English",
+      "headquarters": "Mexico City",
+      "owner": {
+        "name": "Government of Mexico (Historical State Agency)",
+        "type": "State news agency"
+      },
+      "editorialStance": "Mexico's historic state news wire founded during the 1968 Summer Olympics; covered dispatches across all 32 Mexican states and Latin American bureaus until dissolution in 2023",
+      "readership": {
+        "metric": "Historical news agency syndicating to hundreds of newspapers and broadcasters across Mexico and the Americas",
+        "source": "Diario Oficial de la Federación / Archivo Notimex"
+      },
+      "revenueModel": "State budget allocations and wire service subscriptions",
+      "logo": "newspaper-logos/mx/notimex.svg",
+      "logoExplainer": "Green and red Mexican tricolor banner featuring bold white sans-serif 'NOTIMEX', commemorating Mexico's historic Olympic-era national wire agency.",
+      "sources": [
+        "https://es.wikipedia.org/wiki/Notimex",
+        "https://www.gob.mx"
+      ]
+    }
+  ],
+  "MY": [
+    {
+      "id": "my-bernama",
+      "countryCode": "MY",
+      "name": "Bernama",
+      "officialName": "Pertubuhan Berita Nasional Malaysia",
+      "nativeName": "Pertubuhan Berita Nasional Malaysia",
+      "englishTranslation": "Malaysian National News Agency",
+      "founded": 1967,
+      "frequency": "Continuous 24/7 multimedia newswire",
+      "format": "Multimedia wire service, television (Bernama TV), radio & digital news portal",
+      "language": "Malay (Bahasa Melayu), English, Mandarin, Tamil, Arabic, Spanish",
+      "headquarters": "Wisma Bernama, Jalan Tun Razak, Kuala Lumpur",
+      "owner": {
+        "name": "Government of Malaysia (Ministry of Communications)",
+        "type": "Statutory corporation"
+      },
+      "editorialStance": "National public news service providing factual, comprehensive, and objective coverage of national development, parliamentary proceedings, and regional ASEAN affairs",
+      "readership": {
+        "metric": "3.8 million monthly digital visitors on Bernama.com; 100% domestic syndication reach across all print, television, and radio broadcasters",
+        "source": "Malaysian Communications and Multimedia Commission (MCMC) & Reuters Institute 2024"
+      },
+      "annualPublicFunding": {
+        "total": "RM 115.0 million (~US$26.5M) annual government operating grant (2024)",
+        "perCapita": "RM 3.43 / person / year (~US$0.79)"
+      },
+      "revenueModel": "Federal government statutory operating grant supplemented by commercial wire service subscriptions and advertising",
+      "logo": "newspaper-logos/my/bernama.png",
+      "logoExplainer": "The Bernama emblem features a solid sky-blue rounded square containing an angular geometric white monogram forming the letter 'B'. The sharp, intersecting facets evoke broadcast transmission signals, digital relay antennas, and multifaceted news reporting, while the bold uppercase title 'BERNAMA' below anchors the visual identity with authority and clarity.",
+      "sources": [
+        "https://www.bernama.com/",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024/malaysia",
+        "https://www.kkd.gov.my/"
+      ],
+      "licenceNote": "National news agency trademark bundled for educational reference in Learn mode."
+    }
+  ],
+  "MZ": [
+    {
+      "id": "mz-aim",
+      "countryCode": "MZ",
+      "name": "AIM (Agência de Informação de Moçambique)",
+      "nativeName": "Agência de Informação de Moçambique",
+      "englishTranslation": "Mozambique News Agency",
+      "founded": 1975,
+      "frequency": "Real-time news wire service",
+      "format": "News wire & digital dispatch portal",
+      "language": "Portuguese, English",
+      "headquarters": "Maputo",
+      "owner": {
+        "name": "Government of the Republic of Mozambique",
+        "type": "State news agency"
+      },
+      "editorialStance": "Official national news agency created at independence in 1975; provides institutional wire bulletins on Assembly of the Republic legislation, LNG mega-projects in Cabo Delgado, agricultural developments, and SADC regional cooperation",
+      "readership": {
+        "metric": "Primary wire source syndicated to state and private radio stations, newspapers, and international embassies across southern Africa",
+        "source": "AIM Relatório de Actividades 2023"
+      },
+      "revenueModel": "State budgetary subvention and news agency syndication fees",
+      "logo": "newspaper-logos/mz/aim.svg",
+      "logoExplainer": "Mozambican flag-inspired green banner with bold golden-yellow 'AIM' and white subtitle 'AGÊNCIA DE INFORMAÇÃO DE MOÇAMBIQUE'.",
+      "sources": [
+        "https://aim.org.mz",
+        "https://en.wikipedia.org/wiki/Ag%C3%AAncia_de_Informa%C3%A7%C3%A3o_de_Mo%C3%A7ambique"
+      ]
+    }
+  ],
   "NA": [
     {
       "id": "na-nampa",
@@ -3403,31 +2877,127 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://www.nampa.org",
         "https://en.wikipedia.org/wiki/Namibia_Press_Agency"
       ]
-    },
+    }
+  ],
+  "NE": [
     {
-      "id": "na-the-namibian",
-      "countryCode": "NA",
-      "name": "The Namibian",
-      "founded": 1985,
-      "frequency": "Daily newspaper (Monday–Friday)",
-      "format": "Tabloid & digital news portal",
-      "language": "English, Oshiwambo",
-      "headquarters": "Windhoek",
+      "id": "ne-anp",
+      "countryCode": "NE",
+      "name": "ANP (Agence Nigérienne de Presse)",
+      "nativeName": "Agence Nigérienne de Presse",
+      "englishTranslation": "Nigerien News Agency",
+      "founded": 1987,
+      "frequency": "Real-time news wire service",
+      "format": "News wire & digital dispatch portal",
+      "language": "French",
+      "headquarters": "Niamey",
       "owner": {
-        "name": "Free Press of Namibia (Pty) Ltd (Trust-owned)",
-        "type": "Independent trust-owned media"
+        "name": "Ministry of Communication",
+        "type": "State news agency"
       },
-      "editorialStance": "Namibia's largest and most famous independent daily newspaper; founded by anti-apartheid champion Gwen Lister, acclaimed for fearless investigative journalism, government accountability, and constitutional protections",
+      "editorialStance": "Official national news agency of Niger; provides verified wire bulletins on National Council (CNSP) decrees, uranium mining, agricultural pastoralism, and Sahel security operations across all 8 regions",
       "readership": {
-        "metric": "Largest print circulation in Namibia with over 30,000 daily copies and leading national news portal namibian.com.na",
-        "source": "Free Press of Namibia Audited Statement 2023"
+        "metric": "Primary wire supplier syndicating news to over 100 private and community radio stations, state broadcasters, and foreign agencies",
+        "source": "ANP Rapport d'Activité 2023"
       },
-      "revenueModel": "Print sales, commercial advertising, and digital subscriptions",
-      "logo": "newspaper-logos/na/the-namibian.svg",
-      "logoExplainer": "Vibrant ultramarine blue field featuring bold white sans-serif title 'The Namibian' with red accent, symbolizing courageous independence.",
+      "revenueModel": "State government budget allocation and wire distribution subscriptions",
+      "logo": "newspaper-logos/ne/anp.svg",
+      "logoExplainer": "Nigerien flag orange, white, and green tricolor emblem with bold black lettering 'ANP - AGENCE NIGÉRIENNE DE PRESSE'.",
       "sources": [
-        "https://www.namibian.com.na",
-        "https://en.wikipedia.org/wiki/The_Namibian"
+        "https://www.anp.ne",
+        "https://fr.wikipedia.org/wiki/Agence_nig%C3%A9rienne_de_presse"
+      ]
+    }
+  ],
+  "NG": [
+    {
+      "id": "ng-nan",
+      "countryCode": "NG",
+      "name": "NAN (News Agency of Nigeria)",
+      "founded": 1976,
+      "frequency": "Real-time national news wire service",
+      "format": "News wire, photo service & digital agency portal",
+      "language": "English",
+      "headquarters": "Central Business District, Abuja",
+      "owner": {
+        "name": "Federal Government of Nigeria",
+        "type": "Federal state news agency"
+      },
+      "annualPublicFunding": {
+        "total": "NGN 3.2 billion",
+        "perCapita": "NGN 14.50"
+      },
+      "editorialStance": "Africa's largest national news wire agency; statutory monopoly wire provider distributing comprehensive, factual reporting on the Presidency, National Assembly, 36 state governments, oil sector regulations, and ECOWAS diplomacy",
+      "readership": {
+        "metric": "Supplies wire feeds to over 250 print newspapers, television networks, and radio stations across all 36 states of Nigeria",
+        "source": "News Agency of Nigeria Annual Audit 2023"
+      },
+      "revenueModel": "Federal government subvention and wire syndication subscription fees",
+      "logo": "newspaper-logos/ng/nan.svg",
+      "logoExplainer": "Nigerian green and white national colors banner displaying bold gold lettering 'NAN' and white subtitle 'NEWS AGENCY OF NIGERIA'.",
+      "sources": [
+        "https://nannews.ng",
+        "https://en.wikipedia.org/wiki/News_Agency_of_Nigeria"
+      ]
+    }
+  ],
+  "NL": [
+    {
+      "id": "nl-anp",
+      "countryCode": "NL",
+      "name": "ANP (Algemeen Nederlands Persbureau)",
+      "nativeName": "Algemeen Nederlands Persbureau",
+      "englishTranslation": "General Netherlands Press Agency",
+      "founded": 1934,
+      "frequency": "Real-time national news wire service",
+      "format": "News wire, photo service & radio news bulletin",
+      "language": "Dutch, English",
+      "headquarters": "The Hague (Den Haag)",
+      "owner": {
+        "name": "Chris Oomen (Private Investment)",
+        "type": "Independent commercial wire agency"
+      },
+      "editorialStance": "The Netherlands' national news agency; independent, strictly impartial real-time reporting of Binnenhof politics, Dutch legal decisions, European Union policy, and global news",
+      "readership": {
+        "metric": "Supplies wire dispatches and radio bulletins to nearly 100% of Dutch newspapers, television broadcasters, and commercial radio stations",
+        "source": "ANP Jaarverslag 2023"
+      },
+      "revenueModel": "B2B wire service contracts, corporate communications, and photo licensing",
+      "logo": "newspaper-logos/nl/anp.svg",
+      "logoExplainer": "Dutch navy blue background with bold stark white geometric sans-serif lettering 'ANP', embodying the foundational news wire of the Netherlands.",
+      "sources": [
+        "https://www.anp.nl",
+        "https://nl.wikipedia.org/wiki/Algemeen_Nederlands_Persbureau"
+      ]
+    }
+  ],
+  "NO": [
+    {
+      "id": "no-ntb",
+      "countryCode": "NO",
+      "name": "NTB (Norsk Telegrambyrå)",
+      "nativeName": "Norsk Telegrambyrå",
+      "englishTranslation": "Norwegian Telegram Agency",
+      "founded": 1867,
+      "frequency": "Real-time national news wire service",
+      "format": "News wire, photo agency & automated journalism",
+      "language": "Norwegian (Bokmål & Nynorsk), English",
+      "headquarters": "Havnelageret, Oslo",
+      "owner": {
+        "name": "Norwegian media houses cooperative (Amedia, Schibsted, Polaris, etc.)",
+        "type": "Media cooperative news wire"
+      },
+      "editorialStance": "Norway's premier national news agency; strictly impartial real-time coverage of Storting (parliament) debates, Arctic affairs, Nordic climate research, and sovereign wealth fund (Oljefondet) investments",
+      "readership": {
+        "metric": "Supplies wire content, live sports feeds, and images to nearly 100% of Norwegian print, broadcast, and online media",
+        "source": "NTB Årsrapport 2023"
+      },
+      "revenueModel": "B2B wire subscriptions, editorial tech syndication, and photo licensing",
+      "logo": "newspaper-logos/no/ntb.svg",
+      "logoExplainer": "Nordic navy blue background with crisp white heavyweight geometric sans-serif lettering 'NTB', symbolizing foundational wire authority.",
+      "sources": [
+        "https://www.ntb.no",
+        "https://no.wikipedia.org/wiki/Norsk_Telegrambyr%C3%A5"
       ]
     }
   ],
@@ -3493,188 +3063,45 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "NL": [
+  "NR": [
     {
-      "id": "nl-anp",
-      "countryCode": "NL",
-      "name": "ANP (Algemeen Nederlands Persbureau)",
-      "nativeName": "Algemeen Nederlands Persbureau",
-      "englishTranslation": "General Netherlands Press Agency",
-      "founded": 1934,
-      "frequency": "Real-time national news wire service",
-      "format": "News wire, photo service & radio news bulletin",
-      "language": "Dutch, English",
-      "headquarters": "The Hague (Den Haag)",
-      "owner": {
-        "name": "Chris Oomen (Private Investment)",
-        "type": "Independent commercial wire agency"
+      "id": "nr-gio",
+      "countryCode": "NR",
+      "name": "Government Information Office / Naoero Bulletin",
+      "officialName": "Republic of Naoero Government Information Office (GIO)",
+      "nativeName": "Naoero Bulletin (Ofisin Informasiyo)",
+      "englishTranslation": "Nauru Bulletin (Government Information Office)",
+      "motto": {
+        "original": "God's Will First",
+        "translation": "National motto of the Republic of Naoero"
       },
-      "editorialStance": "The Netherlands' national news agency; independent, strictly impartial real-time reporting of Binnenhof politics, Dutch legal decisions, European Union policy, and global news",
+      "founded": 2008,
+      "frequency": "Fortnightly print & digital gazette, with real-time media releases",
+      "format": "Official government newswire, press bulletins, and fortnightly public newsletter (Naoero Bulletin)",
+      "language": "English and Nauruan (Dorerin Naoero)",
+      "headquarters": "Office of the President, Government Offices, Yaren District",
+      "owner": {
+        "name": "Republic of Naoero (Office of the President)",
+        "type": "Government executive information service"
+      },
+      "editorialStance": "Official public information, statutory announcements, ministerial communications, and community news for the Republic of Naoero",
       "readership": {
-        "metric": "Supplies wire dispatches and radio bulletins to nearly 100% of Dutch newspapers, television broadcasters, and commercial radio stations",
-        "source": "ANP Jaarverslag 2023"
-      },
-      "revenueModel": "B2B wire service contracts, corporate communications, and photo licensing",
-      "logo": "newspaper-logos/nl/anp.svg",
-      "logoExplainer": "Dutch navy blue background with bold stark white geometric sans-serif lettering 'ANP', embodying the foundational news wire of the Netherlands.",
-      "sources": [
-        "https://www.anp.nl",
-        "https://nl.wikipedia.org/wiki/Algemeen_Nederlands_Persbureau"
-      ]
-    }
-  ],
-  "NE": [
-    {
-      "id": "ne-anp",
-      "countryCode": "NE",
-      "name": "ANP (Agence Nigérienne de Presse)",
-      "nativeName": "Agence Nigérienne de Presse",
-      "englishTranslation": "Nigerien News Agency",
-      "founded": 1987,
-      "frequency": "Real-time news wire service",
-      "format": "News wire & digital dispatch portal",
-      "language": "French",
-      "headquarters": "Niamey",
-      "owner": {
-        "name": "Ministry of Communication",
-        "type": "State news agency"
-      },
-      "editorialStance": "Official national news agency of Niger; provides verified wire bulletins on National Council (CNSP) decrees, uranium mining, agricultural pastoralism, and Sahel security operations across all 8 regions",
-      "readership": {
-        "metric": "Primary wire supplier syndicating news to over 100 private and community radio stations, state broadcasters, and foreign agencies",
-        "source": "ANP Rapport d'Activité 2023"
-      },
-      "revenueModel": "State government budget allocation and wire distribution subscriptions",
-      "logo": "newspaper-logos/ne/anp.svg",
-      "logoExplainer": "Nigerien flag orange, white, and green tricolor emblem with bold black lettering 'ANP - AGENCE NIGÉRIENNE DE PRESSE'.",
-      "sources": [
-        "https://www.anp.ne",
-        "https://fr.wikipedia.org/wiki/Agence_nig%C3%A9rienne_de_presse"
-      ]
-    },
-    {
-      "id": "ne-le-republicain",
-      "countryCode": "NE",
-      "name": "Le Républicain Niger",
-      "nativeName": "Le Républicain",
-      "englishTranslation": "The Republican",
-      "founded": 1991,
-      "frequency": "Weekly newspaper (Thursdays) & digital portal",
-      "format": "Tabloid & digital news portal",
-      "language": "French",
-      "headquarters": "Niamey",
-      "owner": {
-        "name": "Société Nigérienne de Presse et d'Édition",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Pioneer of Niger's independent private press founded during the 1991 Sovereign National Conference; staunch defender of democratic institutions, rule of law, anti-corruption transparency, and human rights",
-      "readership": {
-        "metric": "Circulates over 5,000 print copies weekly and widely consulted by civil society, lawyers, and university academics",
-        "source": "Maison de la Presse du Niger 2023"
-      },
-      "revenueModel": "Newsstand sales, institutional subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/ne/le-republicain.svg",
-      "logoExplainer": "Forest green background displaying stark white serif typography 'Le Républicain', symbolizing democratic renewal in Niger.",
-      "sources": [
-        "https://republicain-niger.com",
-        "https://fr.wikipedia.org/wiki/Le_R%C3%A9publicain_(Niger)"
-      ]
-    }
-  ],
-  "NG": [
-    {
-      "id": "ng-nan",
-      "countryCode": "NG",
-      "name": "NAN (News Agency of Nigeria)",
-      "founded": 1976,
-      "frequency": "Real-time national news wire service",
-      "format": "News wire, photo service & digital agency portal",
-      "language": "English",
-      "headquarters": "Central Business District, Abuja",
-      "owner": {
-        "name": "Federal Government of Nigeria",
-        "type": "Federal state news agency"
+        "metric": "4,500+ fortnightly print and digital recipients (reaching ~35% of the island's resident population of 12,500 plus diplomatic missions and overseas diaspora)",
+        "source": "Republic of Naoero Government Information Office distribution records"
       },
       "annualPublicFunding": {
-        "total": "NGN 3.2 billion",
-        "perCapita": "NGN 14.50"
+        "total": "A$480,000 annual operational budget for GIO and public media publishing",
+        "perCapita": "A$38.40 / person / year"
       },
-      "editorialStance": "Africa's largest national news wire agency; statutory monopoly wire provider distributing comprehensive, factual reporting on the Presidency, National Assembly, 36 state governments, oil sector regulations, and ECOWAS diplomacy",
-      "readership": {
-        "metric": "Supplies wire feeds to over 250 print newspapers, television networks, and radio stations across all 36 states of Nigeria",
-        "source": "News Agency of Nigeria Annual Audit 2023"
-      },
-      "revenueModel": "Federal government subvention and wire syndication subscription fees",
-      "logo": "newspaper-logos/ng/nan.svg",
-      "logoExplainer": "Nigerian green and white national colors banner displaying bold gold lettering 'NAN' and white subtitle 'NEWS AGENCY OF NIGERIA'.",
+      "revenueModel": "100% state budget allocation through the Office of the President national appropriation",
+      "logo": "newspaper-logos/nr/nauru-gio.svg",
+      "logoExplainer": "The Government Information Office bears the official Coat of Arms of the Republic of Naoero (Nauru). At the crest is a 12-pointed white star representing the island's 12 indigenous tribes above the alchemical emblem for phosphorus, commemorating the nation's historic phosphate heritage. The lower shield depicts a frigate bird (Fregata) on a perch over blue ocean waves and a flowering branch of the indigenous tomano tree, surrounded by palm fronds, tribal chief adornments, and the national motto 'God's Will First'.",
       "sources": [
-        "https://nannews.ng",
-        "https://en.wikipedia.org/wiki/News_Agency_of_Nigeria"
-      ]
-    }
-  ],
-  "MK": [
-    {
-      "id": "mk-mia",
-      "countryCode": "MK",
-      "name": "MIA (Media Information Agency)",
-      "nativeName": "Медиумска информативна агенција",
-      "englishTranslation": "Media Information Agency",
-      "founded": 1992,
-      "frequency": "Real-time news wire service",
-      "format": "News wire & digital dispatch portal",
-      "language": "Macedonian, Albanian, English",
-      "headquarters": "Skopje",
-      "owner": {
-        "name": "Government of the Republic of North Macedonia",
-        "type": "State news agency"
-      },
-      "annualPublicFunding": {
-        "total": "MKD 85 million",
-        "perCapita": "MKD 46.00"
-      },
-      "editorialStance": "Official national public news agency; provides impartial wire dispatches on Sobranie (parliament) debates, EU harmonization, NATO integration, and regional Balkan diplomacy",
-      "readership": {
-        "metric": "Primary wire source feeding over 80% of broadcasters and print publications across North Macedonia",
-        "source": "MIA Godisen Izvestaj 2023"
-      },
-      "revenueModel": "State public service subvention and B2B wire subscriptions",
-      "logo": "newspaper-logos/mk/mia.svg",
-      "logoExplainer": "Red and yellow Macedonian sunburst banner with bold white lettering 'MIA - MEDIA INFORMATION AGENCY'.",
-      "sources": [
-        "https://mia.mk",
-        "https://en.wikipedia.org/wiki/Media_Information_Agency"
-      ]
-    }
-  ],
-  "NO": [
-    {
-      "id": "no-ntb",
-      "countryCode": "NO",
-      "name": "NTB (Norsk Telegrambyrå)",
-      "nativeName": "Norsk Telegrambyrå",
-      "englishTranslation": "Norwegian Telegram Agency",
-      "founded": 1867,
-      "frequency": "Real-time national news wire service",
-      "format": "News wire, photo agency & automated journalism",
-      "language": "Norwegian (Bokmål & Nynorsk), English",
-      "headquarters": "Havnelageret, Oslo",
-      "owner": {
-        "name": "Norwegian media houses cooperative (Amedia, Schibsted, Polaris, etc.)",
-        "type": "Media cooperative news wire"
-      },
-      "editorialStance": "Norway's premier national news agency; strictly impartial real-time coverage of Storting (parliament) debates, Arctic affairs, Nordic climate research, and sovereign wealth fund (Oljefondet) investments",
-      "readership": {
-        "metric": "Supplies wire content, live sports feeds, and images to nearly 100% of Norwegian print, broadcast, and online media",
-        "source": "NTB Årsrapport 2023"
-      },
-      "revenueModel": "B2B wire subscriptions, editorial tech syndication, and photo licensing",
-      "logo": "newspaper-logos/no/ntb.svg",
-      "logoExplainer": "Nordic navy blue background with crisp white heavyweight geometric sans-serif lettering 'NTB', symbolizing foundational wire authority.",
-      "sources": [
-        "https://www.ntb.no",
-        "https://no.wikipedia.org/wiki/Norsk_Telegrambyr%C3%A5"
-      ]
+        "https://www.nauru.gov.nr",
+        "https://www.naurugov.nr/government-information-office.aspx",
+        "https://www.sbs.com.au/news/article/nauru-officially-changes-name-to-naoero/2026-08-01"
+      ],
+      "licenceNote": "Republic of Naoero official coat of arms bundled for educational reference in Learn mode."
     }
   ],
   "OM": [
@@ -3705,96 +3132,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://omannews.gov.om",
         "https://en.wikipedia.org/wiki/Oman_News_Agency"
       ]
-    },
-    {
-      "id": "om-al-shabiba",
-      "countryCode": "OM",
-      "name": "Al Shabiba",
-      "nativeName": "الشبيبة",
-      "englishTranslation": "The Youth",
-      "founded": 1993,
-      "frequency": "Daily newspaper (Monday–Sunday) & digital portal",
-      "format": "Tabloid & digital video portal",
-      "language": "Arabic",
-      "headquarters": "Ruwi, Muscat",
-      "owner": {
-        "name": "Muscat Press & Publishing House (MPPH)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Leading independent Arabic daily; focuses on youth empowerment, education, job market analytics, local municipal issues, and national sports",
-      "readership": {
-        "metric": "Over 35,000 print daily circulation and strong social video viewership across the Sultanate",
-        "source": "MPPH Audience Metrics 2023"
-      },
-      "revenueModel": "Commercial print and digital advertising",
-      "logo": "newspaper-logos/om/al-shabiba.svg",
-      "logoExplainer": "Vibrant royal blue background with bright orange and white Arabic script 'الشبيبة' (Al Shabiba), signifying energy and youth engagement.",
-      "sources": [
-        "https://www.shabiba.com",
-        "https://en.wikipedia.org/wiki/Al-Shabiba"
-      ]
-    }
-  ],
-  "PK": [
-    {
-      "id": "pk-app",
-      "countryCode": "PK",
-      "name": "APP (Associated Press of Pakistan)",
-      "founded": 1947,
-      "frequency": "Real-time national news wire service",
-      "format": "News wire, photo service & digital portal",
-      "language": "English, Urdu, Arabic, Chinese, Russian",
-      "headquarters": "Sector G-7/1, Islamabad",
-      "owner": {
-        "name": "Ministry of Information and Broadcasting",
-        "type": "State news agency"
-      },
-      "annualPublicFunding": {
-        "total": "PKR 1.4 billion",
-        "perCapita": "PKR 5.80"
-      },
-      "editorialStance": "Pakistan's premier national news wire agency; statutory supplier of official news covering the Prime Minister's Office, Supreme Court rulings, military operations, and CPEC infrastructure developments",
-      "readership": {
-        "metric": "Primary wire source feeding over 300 newspapers, 40+ private TV channels, and Radio Pakistan nationwide",
-        "source": "APP Annual Review 2023"
-      },
-      "revenueModel": "Federal government budget subvention and media subscriber licensing",
-      "logo": "newspaper-logos/pk/app.svg",
-      "logoExplainer": "Pakistani emerald green banner with white crescent and star motif and bold gold typography 'APP - ASSOCIATED PRESS OF PAKISTAN'.",
-      "sources": [
-        "https://www.app.com.pk",
-        "https://en.wikipedia.org/wiki/Associated_Press_of_Pakistan"
-      ]
-    }
-  ],
-  "PY": [
-    {
-      "id": "py-ipparaguay",
-      "countryCode": "PY",
-      "name": "Agencia IP (Información Pública)",
-      "nativeName": "Agencia de Información Paraguaya",
-      "englishTranslation": "Paraguayan Information Agency",
-      "founded": 2009,
-      "frequency": "Real-time news wire service",
-      "format": "News wire & digital portal",
-      "language": "Spanish, Guaraní",
-      "headquarters": "Asunción",
-      "owner": {
-        "name": "Ministry of Information and Communication Technologies (MITIC)",
-        "type": "State news agency"
-      },
-      "editorialStance": "Official national state news agency of Paraguay; provides verified wire coverage of Presidential Palace (Palacio de los López) communiqués, Itaipú/Yacyretá hydroelectric energy agreements, and agricultural export policy",
-      "readership": {
-        "metric": "Primary official wire distributor for state and private radio stations, newspapers, and regional Mercosur agencies",
-        "source": "MITIC Paraguay Memoria Institucional 2023"
-      },
-      "revenueModel": "State government budget allocation",
-      "logo": "newspaper-logos/py/ipparaguay.svg",
-      "logoExplainer": "Paraguayan tricolor (red, white, blue) bar with bold white letters 'IP' and gold subtitle 'AGENCIA DE INFORMACIÓN PARAGUAYA'.",
-      "sources": [
-        "https://www.ip.gov.py",
-        "https://es.wikipedia.org/wiki/Agencia_IP"
-      ]
     }
   ],
   "PE": [
@@ -3806,7 +3143,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "englishTranslation": "Peruvian News Agency Andina",
       "founded": 1981,
       "frequency": "Real-time news wire service & El Peruano",
-      "format": "News wire, daily official gazette (El Peruano) & digital portal",
+      "format": "Official national news wire service & multimedia portal",
       "language": "Spanish, Quechua, Aymara, English",
       "headquarters": "Jirón Quilca, Lima",
       "owner": {
@@ -3861,31 +3198,37 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://www.pna.gov.ph",
         "https://en.wikipedia.org/wiki/Philippine_News_Agency"
       ]
-    },
+    }
+  ],
+  "PK": [
     {
-      "id": "ph-the-philippine-star",
-      "countryCode": "PH",
-      "name": "The Philippine Star",
-      "founded": 1986,
-      "frequency": "Daily morning newspaper (Monday–Sunday) & Philstar.com",
-      "format": "Broadsheet & digital superportal",
-      "language": "English",
-      "headquarters": "Roberto S. Oca St., Port Area, Manila",
+      "id": "pk-app",
+      "countryCode": "PK",
+      "name": "APP (Associated Press of Pakistan)",
+      "founded": 1947,
+      "frequency": "Real-time national news wire service",
+      "format": "News wire, photo service & digital portal",
+      "language": "English, Urdu, Arabic, Chinese, Russian",
+      "headquarters": "Sector G-7/1, Islamabad",
       "owner": {
-        "name": "Philstar Media Group (MediaQuest Holdings)",
-        "type": "Independent commercial media group"
+        "name": "Ministry of Information and Broadcasting",
+        "type": "State news agency"
       },
-      "editorialStance": "Major high-circulation broadsheet daily; balanced center-right editorial tradition, known for comprehensive coverage of business conglomerates, infrastructure megaprojects, lifestyle, and sports",
+      "annualPublicFunding": {
+        "total": "PKR 1.4 billion",
+        "perCapita": "PKR 5.80"
+      },
+      "editorialStance": "Pakistan's premier national news wire agency; statutory supplier of official news covering the Prime Minister's Office, Supreme Court rulings, military operations, and CPEC infrastructure developments",
       "readership": {
-        "metric": "Over 240,000 daily print copies and philstar.com reaches over 15 million monthly digital readers",
-        "source": "UPMG Audit Statement 2023"
+        "metric": "Primary wire source feeding over 300 newspapers, 40+ private TV channels, and Radio Pakistan nationwide",
+        "source": "APP Annual Review 2023"
       },
-      "revenueModel": "Print sales, extensive corporate advertising, and digital sponsorships",
-      "logo": "newspaper-logos/ph/the-philippine-star.svg",
-      "logoExplainer": "Deep navy blue background displaying commanding white serif capitals 'THE PHILIPPINE STAR' with gold starburst accent, embodying national broadsheet prestige.",
+      "revenueModel": "Federal government budget subvention and media subscriber licensing",
+      "logo": "newspaper-logos/pk/app.svg",
+      "logoExplainer": "Pakistani emerald green banner with white crescent and star motif and bold gold typography 'APP - ASSOCIATED PRESS OF PAKISTAN'.",
       "sources": [
-        "https://www.philstar.com",
-        "https://en.wikipedia.org/wiki/The_Philippine_Star"
+        "https://www.app.com.pk",
+        "https://en.wikipedia.org/wiki/Associated_Press_of_Pakistan"
       ]
     }
   ],
@@ -3923,6 +3266,68 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
+  "PS": [
+    {
+      "id": "ps-wafa",
+      "countryCode": "PS",
+      "name": "WAFA (Palestine News & Info Agency)",
+      "nativeName": "وكالة الأنباء والمعلومات الفلسطينية (وفا)",
+      "englishTranslation": "Palestine News and Info Agency (WAFA)",
+      "founded": 1972,
+      "frequency": "24/7 continuous national news wire service",
+      "format": "National news wire & digital multimedia portal (wafa.ps)",
+      "language": "Arabic, English, French, Hebrew",
+      "headquarters": "Al-Irsal Street, Ramallah, West Bank",
+      "owner": {
+        "name": "State of Palestine (Palestine Liberation Organization / PNA)",
+        "type": "State-owned national news agency"
+      },
+      "annualPublicFunding": {
+        "total": "USD 5.5 million",
+        "perCapita": "USD 1.10"
+      },
+      "editorialStance": "Official national news agency of the State of Palestine, established in 1972 by resolution of the PLO Executive Committee; provides official wire dispatches on presidential decrees, Palestinian Authority ministerial actions, diplomatic motions at the United Nations, and documentation of conditions across the West Bank and Gaza Strip",
+      "readership": {
+        "metric": "Primary official news source for domestic Palestinian newspapers, radio networks, and foreign news agencies covering the Israeli-Palestinian conflict",
+        "source": "Palestine Ministry of Information Official Report"
+      },
+      "revenueModel": "State treasury subvention and international news exchange partnerships",
+      "logo": "newspaper-logos/ps/wafa.svg",
+      "logoExplainer": "Pan-Arab green field with white square badge displaying red Arabic calligraphy 'وفا', bold white impact 'WAFA', and bilingual institutional title.",
+      "sources": [
+        "https://www.wafa.ps",
+        "https://en.wikipedia.org/wiki/WAFA"
+      ]
+    },
+    {
+      "id": "ps-maan-news",
+      "countryCode": "PS",
+      "name": "Ma'an News Agency",
+      "nativeName": "وكالة معا الإخبارية",
+      "englishTranslation": "Together News Agency (Ma'an)",
+      "founded": 2005,
+      "frequency": "24/7 continuous digital wire service & satellite television",
+      "format": "Digital news wire, TV network & radio coalition (maannews.net)",
+      "language": "Arabic, English, Hebrew",
+      "headquarters": "Al-Karkafa Street, Bethlehem, West Bank",
+      "owner": {
+        "name": "Ma'an Network (non-profit independent consortium)",
+        "type": "Independent non-profit media network"
+      },
+      "editorialStance": "Leading independent digital news agency in Palestine, founded in 2005; operates in partnership with community television and radio stations across the West Bank and Gaza Strip, known for objective breaking news dispatches, humanitarian coverage, and political talk shows",
+      "readership": {
+        "metric": "Over 5 million monthly unique digital visitors, ranking among the most visited news websites in the Palestinian territories and the Arab world",
+        "source": "Ma'an Audience Review / Similarweb"
+      },
+      "revenueModel": "Commercial digital banner advertising, international media development partnerships, and television broadcasting spots",
+      "logo": "newspaper-logos/ps/maan-news.svg",
+      "logoExplainer": "Deep navy field with crimson circle enclosing white 'M', bold white impact 'MA'AN NEWS', and light cyan independent Bethlehem agency subtitle.",
+      "sources": [
+        "https://www.maannews.net",
+        "https://en.wikipedia.org/wiki/Ma%27an_News_Agency"
+      ]
+    }
+  ],
   "PT": [
     {
       "id": "pt-lusa",
@@ -3957,6 +3362,36 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
+  "PY": [
+    {
+      "id": "py-ipparaguay",
+      "countryCode": "PY",
+      "name": "Agencia IP (Información Pública)",
+      "nativeName": "Agencia de Información Paraguaya",
+      "englishTranslation": "Paraguayan Information Agency",
+      "founded": 2009,
+      "frequency": "Real-time news wire service",
+      "format": "News wire & digital portal",
+      "language": "Spanish, Guaraní",
+      "headquarters": "Asunción",
+      "owner": {
+        "name": "Ministry of Information and Communication Technologies (MITIC)",
+        "type": "State news agency"
+      },
+      "editorialStance": "Official national state news agency of Paraguay; provides verified wire coverage of Presidential Palace (Palacio de los López) communiqués, Itaipú/Yacyretá hydroelectric energy agreements, and agricultural export policy",
+      "readership": {
+        "metric": "Primary official wire distributor for state and private radio stations, newspapers, and regional Mercosur agencies",
+        "source": "MITIC Paraguay Memoria Institucional 2023"
+      },
+      "revenueModel": "State government budget allocation",
+      "logo": "newspaper-logos/py/ipparaguay.svg",
+      "logoExplainer": "Paraguayan tricolor (red, white, blue) bar with bold white letters 'IP' and gold subtitle 'AGENCIA DE INFORMACIÓN PARAGUAYA'.",
+      "sources": [
+        "https://www.ip.gov.py",
+        "https://es.wikipedia.org/wiki/Agencia_IP"
+      ]
+    }
+  ],
   "QA": [
     {
       "id": "qa-qna",
@@ -3966,7 +3401,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "englishTranslation": "Qatar News Agency",
       "founded": 1975,
       "frequency": "Real-time 24/7 national news wire service",
-      "format": "News wire, multimedia platform & official gazette",
+      "format": "Official national news wire service & multimedia portal",
       "language": "Arabic, English, French, Spanish, German",
       "headquarters": "Doha",
       "owner": {
@@ -3988,6 +3423,38 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "sources": [
         "https://www.qna.org.qa",
         "https://en.wikipedia.org/wiki/Qatar_News_Agency"
+      ]
+    },
+    {
+      "id": "qa-aljazeera",
+      "countryCode": "QA",
+      "name": "Al Jazeera Media Network",
+      "nativeName": "شبكة الجزيرة الإعلامية",
+      "englishTranslation": "The Peninsula Media Network",
+      "founded": 1996,
+      "frequency": "Continuous 24/7 international multimedia news broadcaster",
+      "format": "Television, digital news network & investigative bureau",
+      "language": "Arabic, English, French, Bosnian, Turkish",
+      "headquarters": "Wadi Al Sail West, Doha",
+      "owner": {
+        "name": "Government of Qatar (Public benefit corporation / Emiri endowment)",
+        "type": "State-funded international broadcaster"
+      },
+      "annualPublicFunding": {
+        "total": "QAR 1.80 billion",
+        "perCapita": "QAR 640.00"
+      },
+      "editorialStance": "Pioneering international news organization founded by Emiri decree in 1996; renowned for breaking ground in Arab-world journalism, covering the Global South, investigative documentaries, and breaking Middle Eastern conflicts",
+      "readership": {
+        "metric": "Broadcast to over 430 million households in 150 countries with over 50 million unique digital monthly visitors worldwide",
+        "source": "Al Jazeera Media Network Global Reach 2023"
+      },
+      "revenueModel": "State funding grant, commercial advertising, and digital syndication",
+      "logo": "newspaper-logos/qa/aljazeera.svg",
+      "logoExplainer": "Dark petrol blue field featuring distinctive orange circular badge with calligraphic 'AJ' monogram and bold white lettering 'AL JAZEERA'.",
+      "sources": [
+        "https://www.aljazeera.com",
+        "https://en.wikipedia.org/wiki/Al_Jazeera_Media_Network"
       ]
     }
   ],
@@ -4025,6 +3492,36 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
+  "RS": [
+    {
+      "id": "rs-tanjug",
+      "countryCode": "RS",
+      "name": "Tanjug",
+      "nativeName": "Новинска агенција Танјуг",
+      "englishTranslation": "Telegraphic Agency of the New Yugoslavia / Tanjug News Agency",
+      "founded": 1943,
+      "frequency": "Real-time 24/7 national news wire service & television",
+      "format": "News wire, television channel & digital portal (tanjug.rs)",
+      "language": "Serbian, English",
+      "headquarters": "Obilićev Venac 2, Belgrade",
+      "owner": {
+        "name": "Tačno d.o.o. (Minacord Media & RTV Pančevo)",
+        "type": "Commercial national news agency"
+      },
+      "editorialStance": "Historic national news agency of Serbia, founded in 1943 during WWII anti-fascist liberation; authoritative wire reporting on National Assembly legislation, Government of Serbia cabinet decrees, European integration, and Balkan regional diplomacy",
+      "readership": {
+        "metric": "Supplies over 600 news items and 400 multimedia dispatches daily to virtually all Serbian television channels, newspapers, radio networks, and regional portals",
+        "source": "Tanjug Media Kit 2023"
+      },
+      "revenueModel": "News wire licensing, broadcast commercial advertising, and multimedia syndication",
+      "logo": "newspaper-logos/rs/tanjug.svg",
+      "logoExplainer": "Serbian red field featuring bold white Cyrillic typography 'ТАНЈУГ' with English subtitle 'TANJUG NEWS AGENCY'.",
+      "sources": [
+        "https://www.tanjug.rs",
+        "https://en.wikipedia.org/wiki/Tanjug"
+      ]
+    }
+  ],
   "RU": [
     {
       "id": "ru-tass",
@@ -4057,6 +3554,38 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://tass.ru",
         "https://en.wikipedia.org/wiki/TASS"
       ]
+    },
+    {
+      "id": "ru-ria-novosti",
+      "countryCode": "RU",
+      "name": "RIA Novosti (Rossiya Segodnya)",
+      "nativeName": "РИА Новости / МИА «Россия сегодня»",
+      "englishTranslation": "Russian Information Agency News",
+      "founded": 1941,
+      "frequency": "Real-time 24/7 multimedia news agency and digital portal",
+      "format": "News wire & digital multimedia portal (ria.ru)",
+      "language": "Russian",
+      "headquarters": "Zubovsky Boulevard 4, Moscow",
+      "owner": {
+        "name": "Federal State Unitary Enterprise Rossiya Segodnya (Government of Russia)",
+        "type": "State international media agency"
+      },
+      "annualPublicFunding": {
+        "total": "RUB 9.5 billion",
+        "perCapita": "RUB 66.00"
+      },
+      "editorialStance": "Major state news agency founded during WWII as the Soviet Information Bureau (Sovinformburo); flagship multimedia agency delivering breaking domestic and international political news aligned with Russian state foreign policy",
+      "readership": {
+        "metric": "One of the most visited Russian-language news websites with over 35 million monthly unique visitors on ria.ru",
+        "source": "LiveInternet & Mediascope 2023"
+      },
+      "revenueModel": "Federal government state subsidies and advertising",
+      "logo": "newspaper-logos/ru/ria-novosti.svg",
+      "logoExplainer": "Charcoal blue background featuring cyan circular emblem with forward chevron and bold white Cyrillic lettering 'РИА НОВОСТИ'.",
+      "sources": [
+        "https://ria.ru",
+        "https://en.wikipedia.org/wiki/RIA_Novosti"
+      ]
     }
   ],
   "RW": [
@@ -4087,253 +3616,33 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://www.rnanews.com",
         "https://en.wikipedia.org/wiki/Media_of_Rwanda"
       ]
-    }
-  ],
-  "KN": [
-    {
-      "id": "kn-sknis",
-      "countryCode": "KN",
-      "name": "SKNIS (St. Kitts and Nevis Information Service)",
-      "nativeName": "St. Kitts and Nevis Information Service",
-      "englishTranslation": "St. Kitts and Nevis Information Service",
-      "founded": 1983,
-      "frequency": "Continuous government news service & press releases",
-      "format": "Government news agency, official portal & radio releases",
-      "language": "English",
-      "headquarters": "Government Headquarters, Church Street, Basseterre",
-      "owner": {
-        "name": "Government of Saint Kitts and Nevis (Prime Minister's Office)",
-        "type": "State news agency"
-      },
-      "annualPublicFunding": {
-        "total": "XCD 2.8 million",
-        "perCapita": "XCD 52.00"
-      },
-      "editorialStance": "Official national news and public information department of the Federation of Saint Kitts and Nevis; primary source for Cabinet decisions, National Assembly legislation, public health updates, hurricane preparedness, and Citizenship by Investment (CBI) regulations",
-      "readership": {
-        "metric": "Authoritative national wire delivering dispatches and bulletins to all domestic radio stations, regional Caribbean media, and overseas diplomatic missions",
-        "source": "Government of St. Kitts & Nevis Estimates for 2024"
-      },
-      "revenueModel": "Federal government budgetary appropriation",
-      "logo": "newspaper-logos/kn/sknis.svg",
-      "logoExplainer": "Green rectangular field with national flag black diagonal chevron featuring bold white typography 'SKNIS' and golden subtitle.",
-      "sources": [
-        "https://www.sknis.gov.kn",
-        "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
-      ]
-    }
-  ],
-  "LC": [
-    {
-      "id": "lc-gis-saint-lucia",
-      "countryCode": "LC",
-      "name": "GIS Saint Lucia (Government Information Service)",
-      "nativeName": "Government Information Service",
-      "englishTranslation": "Government Information Service",
-      "founded": 1980,
-      "frequency": "Continuous public news service & daily releases",
-      "format": "Government news agency, digital television & press releases",
-      "language": "English, Saint Lucian Creole French (Kwéyòl)",
-      "headquarters": "Greaham Louisy Administrative Complex, Waterfront, Castries",
-      "owner": {
-        "name": "Government of Saint Lucia (Office of the Prime Minister)",
-        "type": "State news agency"
-      },
-      "annualPublicFunding": {
-        "total": "XCD 4.2 million",
-        "perCapita": "XCD 23.30"
-      },
-      "editorialStance": "Official national news agency of Saint Lucia; dedicated to public information, ministerial announcements, Parliament of Saint Lucia sittings, hurricane emergency broadcasts (NEMO), and OECS regional development",
-      "readership": {
-        "metric": "Official news distributor feeding all domestic radio and TV networks, with over 150,000 monthly viewers on digital platforms and NTN television",
-        "source": "Saint Lucia Estimates of Revenue and Expenditure 2024"
-      },
-      "revenueModel": "State government budget allocation",
-      "logo": "newspaper-logos/lc/gis-saint-lucia.svg",
-      "logoExplainer": "Deep navy field featuring iconic yellow, black, and white stylized Pitons emblem beside bold white lettering 'GIS'.",
-      "sources": [
-        "https://www.govt.lc",
-        "https://en.wikipedia.org/wiki/Saint_Lucia"
-      ]
     },
     {
-      "id": "lc-the-voice",
-      "countryCode": "LC",
-      "name": "The Voice of Saint Lucia",
-      "nativeName": "The Voice of Saint Lucia",
-      "englishTranslation": "The Voice of Saint Lucia",
-      "founded": 1885,
-      "frequency": "Tri-weekly newspaper (Tuesday, Thursday, Saturday)",
-      "format": "Compact & digital news portal (thevoiceslu.com)",
-      "language": "English",
-      "headquarters": "Odyssey Building, Choc, Castries",
-      "owner": {
-        "name": "The Voice Publishing Company",
-        "type": "Independent commercial newspaper"
-      },
-      "editorialStance": "Saint Lucia's historic newspaper of record; founded in 1885; the island's oldest surviving publication; renowned for authoritative coverage of constitutional law, political debates, agriculture, literature (honoring Derek Walcott), and national history",
-      "readership": {
-        "metric": "Over 8,000 print copies per issue and over 350,000 monthly digital visits",
-        "source": "Voice Publishing Company 2023"
-      },
-      "revenueModel": "Retail print sales, government notices, and advertising",
-      "logo": "newspaper-logos/lc/the-voice.svg",
-      "logoExplainer": "Classic dark slate card with distinguished white serif masthead 'THE VOICE' and golden subtitle 'The Newspaper of Saint Lucia Since 1885'.",
-      "sources": [
-        "https://thevoiceslu.com",
-        "https://en.wikipedia.org/wiki/Saint_Lucia"
-      ]
-    },
-    {
-      "id": "lc-the-star",
-      "countryCode": "LC",
-      "name": "The Star",
-      "nativeName": "The Star",
-      "englishTranslation": "The Star",
-      "founded": 1987,
-      "frequency": "Weekly national newspaper (Saturday)",
-      "format": "Tabloid & digital portal (stluciastar.com)",
-      "language": "English",
-      "headquarters": "Massade Industrial Estate, Gros Islet",
-      "owner": {
-        "name": "Star Publishing Company (Mae Wayne)",
-        "type": "Independent commercial publisher"
-      },
-      "editorialStance": "Prominent investigative weekly newspaper; known for hard-hitting investigative journalism, political commentary, exposing government irregularities, and championing civic transparency",
-      "readership": {
-        "metric": "Over 6,000 weekly print circulation and more than 250,000 monthly digital readers",
-        "source": "Star Publishing Company 2023"
-      },
-      "revenueModel": "Print sales and commercial advertising",
-      "logo": "newspaper-logos/lc/the-star.svg",
-      "logoExplainer": "Vibrant crimson red background featuring bold white uppercase serif title 'THE STAR' accented with golden yellow 'SAINT LUCIA'.",
-      "sources": [
-        "https://stluciastar.com",
-        "https://en.wikipedia.org/wiki/Saint_Lucia"
-      ]
-    },
-    {
-      "id": "lc-loop-slu",
-      "countryCode": "LC",
-      "name": "Loop News Saint Lucia",
-      "nativeName": "Loop News Saint Lucia",
-      "englishTranslation": "Loop News Saint Lucia",
-      "founded": 2014,
-      "frequency": "Continuous 24/7 mobile and digital news service",
-      "format": "Mobile app & digital news portal (stlucia.loopnews.com)",
-      "language": "English",
-      "headquarters": "Castries",
-      "owner": {
-        "name": "Trend Media (Digicel Group)",
-        "type": "Pan-Caribbean commercial digital news network"
-      },
-      "editorialStance": "Leading Caribbean mobile news network providing real-time breaking news across Saint Lucia; specialized coverage of crime, community sports, cultural festivals (Saint Lucia Jazz & Arts Festival), and entertainment",
-      "readership": {
-        "metric": "Over 1.2 million monthly active readers across mobile application and web portals",
-        "source": "Trend Media Caribbean Analytics 2023"
-      },
-      "revenueModel": "Digital mobile advertising and telecom integration",
-      "logo": "newspaper-logos/lc/loop-slu.svg",
-      "logoExplainer": "Vibrant purple background featuring white circular badge with infinity loop symbol and bold white block typography 'LOOP'.",
-      "sources": [
-        "https://stlucia.loopnews.com",
-        "https://en.wikipedia.org/wiki/Saint_Lucia"
-      ]
-    }
-  ],
-  "VC": [
-    {
-      "id": "vc-api-svg",
-      "countryCode": "VC",
-      "name": "API SVG (Agency for Public Information)",
-      "nativeName": "Agency for Public Information (API)",
-      "englishTranslation": "Agency for Public Information",
-      "founded": 2002,
-      "frequency": "Daily government news agency & press bulletins",
-      "format": "Government news agency, television & press releases",
-      "language": "English",
-      "headquarters": "Ministry of Information, Richmond Hill, Kingstown",
-      "owner": {
-        "name": "Government of Saint Vincent and the Grenadines (Office of the Prime Minister)",
-        "type": "State news agency"
-      },
-      "annualPublicFunding": {
-        "total": "XCD 2.6 million",
-        "perCapita": "XCD 25.00"
-      },
-      "editorialStance": "Official national news agency of Saint Vincent and the Grenadines; provides verified dispatches on Cabinet decisions, Argyle International Airport developments, La Soufrière volcano monitoring (NEMO), and Grenadines maritime connectivity",
-      "readership": {
-        "metric": "Primary official information source syndicated across all national radio stations, TV channels, and regional news networks",
-        "source": "Government of SVG Budget Estimates 2024"
-      },
-      "revenueModel": "State government budgetary funding",
-      "logo": "newspaper-logos/vc/api-svg.svg",
-      "logoExplainer": "Deep navy blue card featuring bold white initials 'API' and bright green subtitle 'AGENCY FOR PUBLIC INFORMATION'.",
-      "sources": [
-        "https://www.gov.vc",
-        "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
-      ]
-    }
-  ],
-  "ST": [
-    {
-      "id": "st-stp-press",
-      "countryCode": "ST",
-      "name": "STP-Press",
-      "nativeName": "Agência Noticiosa de São Tomé e Príncipe (STP-Press)",
-      "englishTranslation": "News Agency of São Tomé and Príncipe",
-      "founded": 1985,
-      "frequency": "Real-time national news wire service",
-      "format": "News wire & digital portal (stp-press.st)",
-      "language": "Portuguese",
-      "headquarters": "Avenida 12 de Julho, São Tomé",
-      "owner": {
-        "name": "Government of São Tomé and Príncipe (Ministry of Social Communication)",
-        "type": "State-owned national news agency"
-      },
-      "annualPublicFunding": {
-        "total": "STN 4.5 million",
-        "perCapita": "STN 20.40"
-      },
-      "editorialStance": "Official national news agency of the Democratic Republic of São Tomé and Príncipe; member of the Alliance of Portuguese Language Information Agencies (ALP); provides verified news dispatches on the Presidency, National Assembly laws, cocoa agriculture, fisheries, and Gulf of Guinea maritime safety",
-      "readership": {
-        "metric": "Primary news agency supplying wire content to state television TVS, national radio RNSTP, and regional international Lusophone media (Lusa, RTP África)",
-        "source": "STP-Press Relatório Anual 2023"
-      },
-      "revenueModel": "State government budget appropriation and syndication agreements",
-      "logo": "newspaper-logos/st/stp-press.svg",
-      "logoExplainer": "National flag green rectangular background with bold white sans-serif block lettering 'STP-PRESS' and golden yellow subtitle.",
-      "sources": [
-        "https://www.stp-press.st",
-        "https://en.wikipedia.org/wiki/STP-Press"
-      ]
-    },
-    {
-      "id": "st-jornal-transparencia",
-      "countryCode": "ST",
-      "name": "Jornal Transparência",
-      "nativeName": "Jornal Transparência",
-      "englishTranslation": "Transparency Newspaper",
+      "id": "rw-kigali-today",
+      "countryCode": "RW",
+      "name": "Kigali Today (KT Press)",
+      "nativeName": "Kigali Today Ltd",
+      "englishTranslation": "Kigali Today",
       "founded": 2011,
-      "frequency": "Bi-monthly printed newspaper and digital edition",
-      "format": "Tabloid & digital portal (transparenciastep.com)",
-      "language": "Portuguese",
-      "headquarters": "Bairro do Hospital, São Tomé",
+      "frequency": "Continuous digital news service & radio network",
+      "format": "Digital news portal, radio (KT Radio 96.7 FM) & print (KT Press)",
+      "language": "Kinyarwanda, English",
+      "headquarters": "Nyarugenge, Kigali",
       "owner": {
-        "name": "Sociedade Editorial Transparência",
-        "type": "Independent commercial newspaper"
+        "name": "Kigali Today Ltd",
+        "type": "Commercial media group"
       },
-      "editorialStance": "Prominent independent national newspaper focusing on governance accountability, anti-corruption investigations, judicial system proceedings, and civil society debates",
+      "editorialStance": "Leading multimedia news agency operating in both English (KT Press) and Kinyarwanda; focuses on business innovation, urban planning, infrastructure, justice sector trials, and youth culture",
       "readership": {
-        "metric": "Over 3,000 print copies per edition circulated throughout São Tomé island and the Autonomous Region of Príncipe",
-        "source": "Jornal Transparência Editorial Review 2023"
+        "metric": "Over 2.5 million monthly digital readers across kigalitoday.com and ktpress.rw, supplemented by nationwide KT Radio FM coverage",
+        "source": "Kigali Today Corporate Review 2023"
       },
-      "revenueModel": "Retail print sales and institutional public notices",
-      "logo": "newspaper-logos/st/jornal-transparencia.svg",
-      "logoExplainer": "Dark slate background displaying refined white serif title 'JORNAL TRANSPARÊNCIA' accented with green subtitle.",
+      "revenueModel": "Commercial advertising, event sponsorship, and radio broadcasting syndication",
+      "logo": "newspaper-logos/rw/kigali-today.svg",
+      "logoExplainer": "Modern navy blue banner featuring bold white typography 'KIGALI TODAY' with golden yellow secondary title 'KT PRESS & DIGITAL'.",
       "sources": [
-        "https://transparenciastep.com",
-        "https://en.wikipedia.org/wiki/Media_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
+        "https://www.ktpress.rw",
+        "https://en.wikipedia.org/wiki/Media_of_Rwanda"
       ]
     }
   ],
@@ -4346,7 +3655,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "englishTranslation": "Saudi Press Agency",
       "founded": 1971,
       "frequency": "Real-time 24/7 national news wire service",
-      "format": "News wire, multimedia portal & official gazette",
+      "format": "Official national news wire service & multimedia portal",
       "language": "Arabic, English, French, Russian, Chinese, Persian",
       "headquarters": "King Fahd Road, Riyadh",
       "owner": {
@@ -4371,67 +3680,35 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "SN": [
+  "SB": [
     {
-      "id": "sn-aps",
-      "countryCode": "SN",
-      "name": "APS (Agence de Presse Sénégalaise)",
-      "nativeName": "Agence de Presse Sénégalaise (APS)",
-      "englishTranslation": "Senegalese Press Agency",
-      "founded": 1959,
-      "frequency": "Real-time 24/7 national news wire service",
-      "format": "News wire & multimedia portal (aps.sn)",
-      "language": "French, Wolof, English",
-      "headquarters": "Maison de la Presse, Corniche Ouest, Dakar",
+      "id": "sb-sibc",
+      "countryCode": "SB",
+      "name": "SIBC (Solomon Islands Broadcasting Corporation)",
+      "founded": 1952,
+      "frequency": "24/7 radio news bulletins and real-time digital news",
+      "format": "Public service broadcaster & digital news agency (sibconline.com.sb)",
+      "language": "English, Solomon Islands Pijin",
+      "headquarters": "Rove, Honiara, Guadalcanal",
       "owner": {
-        "name": "Republic of Senegal (Ministry of Communication, Telecommunications and Digital Economy)",
-        "type": "State-owned national news agency"
+        "name": "Government of Solomon Islands",
+        "type": "Statutory public corporation"
       },
       "annualPublicFunding": {
-        "total": "XOF 1.25 billion",
-        "perCapita": "XOF 73.50"
+        "total": "SBD 12 million",
+        "perCapita": "SBD 16.50"
       },
-      "editorialStance": "Historic official news agency of Senegal, founded on the eve of independence in 1959; authoritative wire coverage of the Presidency of the Republic, National Assembly legislative sessions, ECOWAS regional diplomacy, and West African agricultural development",
+      "editorialStance": "Statutory national public service media organization of the Solomon Islands; serves as the vital lifeline of communication linking remote outer islands and atolls with national civic news, disaster warnings, health advisories, and parliamentary broadcasts",
       "readership": {
-        "metric": "Primary news agency distributing wire copy to over 80 Senegalese radio stations, daily newspapers, TV stations, and foreign news bureaus",
-        "source": "APS Rapport d'Activité 2023"
+        "metric": "Reaches over 85% of the national population via AM/FM transmitters and shortwave relays, supplemented by over 100,000 monthly digital visits",
+        "source": "SIBC Annual Report / Commonwealth Broadcasting Association"
       },
-      "revenueModel": "State public service subsidy and commercial news licensing",
-      "logo": "newspaper-logos/sn/aps.svg",
-      "logoExplainer": "Emerald green field with bold white modern sans-serif typography 'APS' and bright golden yellow subtitle.",
+      "revenueModel": "State statutory subvention, broadcast advertising, and government communications",
+      "logo": "newspaper-logos/sb/sibc.svg",
+      "logoExplainer": "Forest green background with golden-yellow emblem tile containing bold 'SIBC' letters and crisp white institutional titles.",
       "sources": [
-        "https://aps.sn",
-        "https://en.wikipedia.org/wiki/Agence_de_Presse_S%C3%A9n%C3%A9galaise"
-      ]
-    }
-  ],
-  "RS": [
-    {
-      "id": "rs-tanjug",
-      "countryCode": "RS",
-      "name": "Tanjug",
-      "nativeName": "Новинска агенција Танјуг",
-      "englishTranslation": "Telegraphic Agency of the New Yugoslavia / Tanjug News Agency",
-      "founded": 1943,
-      "frequency": "Real-time 24/7 national news wire service & television",
-      "format": "News wire, television channel & digital portal (tanjug.rs)",
-      "language": "Serbian, English",
-      "headquarters": "Obilićev Venac 2, Belgrade",
-      "owner": {
-        "name": "Tačno d.o.o. (Minacord Media & RTV Pančevo)",
-        "type": "Commercial national news agency"
-      },
-      "editorialStance": "Historic national news agency of Serbia, founded in 1943 during WWII anti-fascist liberation; authoritative wire reporting on National Assembly legislation, Government of Serbia cabinet decrees, European integration, and Balkan regional diplomacy",
-      "readership": {
-        "metric": "Supplies over 600 news items and 400 multimedia dispatches daily to virtually all Serbian television channels, newspapers, radio networks, and regional portals",
-        "source": "Tanjug Media Kit 2023"
-      },
-      "revenueModel": "News wire licensing, broadcast commercial advertising, and multimedia syndication",
-      "logo": "newspaper-logos/rs/tanjug.svg",
-      "logoExplainer": "Serbian red field featuring bold white Cyrillic typography 'ТАНЈУГ' with English subtitle 'TANJUG NEWS AGENCY'.",
-      "sources": [
-        "https://www.tanjug.rs",
-        "https://en.wikipedia.org/wiki/Tanjug"
+        "https://www.sibconline.com.sb",
+        "https://en.wikipedia.org/wiki/Solomon_Islands_Broadcasting_Corporation"
       ]
     }
   ],
@@ -4469,65 +3746,67 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "SL": [
+  "SD": [
     {
-      "id": "sl-slena",
-      "countryCode": "SL",
-      "name": "SLENA (Sierra Leone News Agency)",
-      "nativeName": "Sierra Leone News Agency",
-      "englishTranslation": "Sierra Leone News Agency",
-      "founded": 1979,
-      "frequency": "Daily national news wire service",
-      "format": "News wire & government information agency",
-      "language": "English, Krio",
-      "headquarters": "Wallace Johnson Street, Freetown",
+      "id": "sd-suna",
+      "countryCode": "SD",
+      "name": "SUNA (Sudan News Agency)",
+      "nativeName": "وكالة السودان للأنباء (سونا)",
+      "englishTranslation": "Sudan News Agency (SUNA)",
+      "founded": 1970,
+      "frequency": "24/7 continuous national news wire",
+      "format": "News wire service & digital portal (suna-sd.net)",
+      "language": "Arabic, English, French",
+      "headquarters": "Port Sudan, Red Sea State (relocated from Khartoum)",
       "owner": {
-        "name": "Government of Sierra Leone (Ministry of Information and Civic Education)",
-        "type": "State-owned national news agency"
+        "name": "Republic of the Sudan (Ministry of Information)",
+        "type": "State-owned national news wire agency"
       },
       "annualPublicFunding": {
-        "total": "SLE 6.5 million",
-        "perCapita": "SLE 0.75"
+        "total": "SDG 1.2 billion",
+        "perCapita": "SDG 26.00"
       },
-      "editorialStance": "Official national news agency of the Republic of Sierra Leone; provides authoritative wire coverage of State House decrees, Parliament of Sierra Leone debates, mining and mineral governance (rutile, bauxite, diamonds), agriculture, and ECOWAS regional peacekeeping",
+      "editorialStance": "Official national news agency of Sudan, founded in 1970; disseminates official government decrees, sovereign council statements, humanitarian corridors reports, foreign ministry briefings, and economic releases",
       "readership": {
-        "metric": "Primary news wire feeding national radio (SLBC), provincial community stations, daily newspapers in Freetown, and regional West African media",
-        "source": "Ministry of Information & Civic Education Budget 2024"
+        "metric": "Primary source of official Sudanese wire dispatches for domestic media, foreign embassies, and international wire services",
+        "source": "Sudan Ministry of Information Annual Review"
       },
-      "revenueModel": "State government budgetary funding",
-      "logo": "newspaper-logos/sl/slena.svg",
-      "logoExplainer": "Sierra Leonean emerald green banner featuring bold white typography 'SLENA' and national light blue subtitle.",
+      "revenueModel": "State budget subvention and institutional wire subscriptions",
+      "logo": "newspaper-logos/sd/suna.svg",
+      "logoExplainer": "Pan-Arab emerald green field with white square badge displaying Arabic calligraphy 'سونا', flanked by white block capitals 'SUNA' and bilingual subtitle.",
       "sources": [
-        "https://moice.gov.sl",
-        "https://en.wikipedia.org/wiki/Sierra_Leone"
+        "https://suna-sd.net",
+        "https://en.wikipedia.org/wiki/Sudan_News_Agency"
       ]
-    },
+    }
+  ],
+  "SE": [
     {
-      "id": "sl-standard-times",
-      "countryCode": "SL",
-      "name": "Standard Times",
-      "nativeName": "Standard Times",
-      "englishTranslation": "Standard Times",
-      "founded": 1994,
-      "frequency": "Daily newspaper (Monday–Friday)",
-      "format": "Tabloid & digital portal",
-      "language": "English",
-      "headquarters": "Kroo Town Road, Freetown",
+      "id": "se-tt-nyhetsbyran",
+      "countryCode": "SE",
+      "name": "TT Nyhetsbyrån",
+      "nativeName": "Tidningarnas Telegrambyrå (TT)",
+      "englishTranslation": "The Newspapers' Telegram Bureau",
+      "founded": 1921,
+      "frequency": "24/7 continuous national news wire service",
+      "format": "News agency, photo service & wire feed (tt.se)",
+      "language": "Swedish, English",
+      "headquarters": "Slöjdgatan 9, Stockholm",
       "owner": {
-        "name": "Standard Times Press (Philip Neville)",
-        "type": "Independent commercial newspaper"
+        "name": "Bonnier News, Schibsted, and NTM (joint media ownership)",
+        "type": "Cooperative commercial national news agency"
       },
-      "editorialStance": "Established daily newspaper known for assertive investigative reporting, holding public officials accountable, labor disputes, and healthcare sector monitoring",
+      "editorialStance": "National news agency of Sweden, founded in 1921; provides objective, non-partisan, fact-checked news dispatches, graphics, and photography to virtually all Swedish newspapers, television networks, radio stations, and public institutions",
       "readership": {
-        "metric": "Over 5,000 daily print copies circulated in urban Sierra Leone",
-        "source": "SLAJ Annual Review 2023"
+        "metric": "Transmits over 300 news dispatches and 1,000 photographs daily, utilized by 99% of Sweden's professional media organizations",
+        "source": "TT Nyhetsbyrån Årsredovisning 2023"
       },
-      "revenueModel": "Print sales and local business advertising",
-      "logo": "newspaper-logos/sl/standard-times.svg",
-      "logoExplainer": "Crimson red background featuring bold white serif typography 'STANDARD TIMES' with clean white subtitle.",
+      "revenueModel": "B2B commercial licensing, syndication contracts, and visual archive sales",
+      "logo": "newspaper-logos/se/tt-nyhetsbyran.svg",
+      "logoExplainer": "Nordic blue background with a white square bearing navy 'TT' monogram, accompanied by bold white sans-serif 'NYHETSBYRÅN' and light blue tagline.",
       "sources": [
-        "https://www.standardtimespress.org",
-        "https://en.wikipedia.org/wiki/Standard_Times_(Sierra_Leone)"
+        "https://tt.se",
+        "https://en.wikipedia.org/wiki/Tidningarnas_Telegrambyr%C3%A5"
       ]
     }
   ],
@@ -4565,40 +3844,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "SK": [
-    {
-      "id": "sk-tasr",
-      "countryCode": "SK",
-      "name": "TASR (Tlačová agentúra Slovenskej republiky)",
-      "nativeName": "Tlačová agentúra Slovenskej republiky (TASR)",
-      "englishTranslation": "News Agency of the Slovak Republic",
-      "founded": 1992,
-      "frequency": "Real-time 24/7 national news wire service",
-      "format": "News wire & multimedia portal (tasr.sk)",
-      "language": "Slovak, English, Hungarian",
-      "headquarters": "Dúbravská cesta 14, Bratislava",
-      "owner": {
-        "name": "State of the Slovak Republic (Ministry of Culture)",
-        "type": "Public-law news agency"
-      },
-      "annualPublicFunding": {
-        "total": "EUR 4.5 million",
-        "perCapita": "EUR 0.83"
-      },
-      "editorialStance": "Official national news agency of the Slovak Republic, established by statute in 1992 during the Velvet Divorce; public-law institution providing unbiased, verified wire coverage of the National Council (Národná rada), government decrees, EU affairs, and regional Visegrád Group (V4) cooperation",
-      "readership": {
-        "metric": "Syndicates over 400 news articles and 200 photos daily to all major Slovak broadcast stations, newspapers, and foreign agencies",
-        "source": "TASR Správa o činnosti a hospodárení 2023"
-      },
-      "revenueModel": "State public service contract funding and commercial news distribution fees",
-      "logo": "newspaper-logos/sk/tasr.svg",
-      "logoExplainer": "Slovak royal blue field with crisp white bold typography 'TASR' and red subtitle 'TLAČOVÁ AGENTÚRA SLOVENSKA'.",
-      "sources": [
-        "https://www.tasr.sk",
-        "https://en.wikipedia.org/wiki/News_Agency_of_the_Slovak_Republic"
-      ]
-    }
-  ],
   "SI": [
     {
       "id": "si-sta",
@@ -4633,61 +3878,105 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "SB": [
+  "SK": [
     {
-      "id": "sb-solomon-star",
-      "countryCode": "SB",
-      "name": "Solomon Star",
-      "founded": 1982,
-      "frequency": "Daily (Monday to Friday) print & online edition",
-      "format": "Broadsheet newspaper & digital news portal (solomonstarnews.com)",
-      "language": "English",
-      "headquarters": "Kukum Highway, Honiara, Guadalcanal",
+      "id": "sk-tasr",
+      "countryCode": "SK",
+      "name": "TASR (Tlačová agentúra Slovenskej republiky)",
+      "nativeName": "Tlačová agentúra Slovenskej republiky (TASR)",
+      "englishTranslation": "News Agency of the Slovak Republic",
+      "founded": 1992,
+      "frequency": "Real-time 24/7 national news wire service",
+      "format": "News wire & multimedia portal (tasr.sk)",
+      "language": "Slovak, English, Hungarian",
+      "headquarters": "Dúbravská cesta 14, Bratislava",
       "owner": {
-        "name": "Solomon Star Limited (Lamani Family)",
-        "type": "Private publishing company"
-      },
-      "editorialStance": "Solomon Islands' oldest and largest daily print newspaper, founded by Father John Lamani in 1982; provides independent coverage of Parliament sessions, provincial affairs across Guadalcanal and Malaita, fisheries, climate change impacts, and regional Pacific politics",
-      "readership": {
-        "metric": "Over 6,000 print circulation daily throughout Honiara and provincial centers, alongside over 150,000 monthly pageviews online",
-        "source": "Media Association of Solomon Islands (MASI) / Solomon Star Media Kit"
-      },
-      "revenueModel": "Print newsstand sales, national commercial advertising, and public notices",
-      "logo": "newspaper-logos/sb/solomon-star.svg",
-      "logoExplainer": "Deep navy field featuring a gold five-pointed star representing the island provinces, with classic white serif masthead typography and bright blue Pacific subtitle.",
-      "sources": [
-        "https://www.solomonstarnews.com",
-        "https://en.wikipedia.org/wiki/Solomon_Star"
-      ]
-    },
-    {
-      "id": "sb-sibc",
-      "countryCode": "SB",
-      "name": "SIBC (Solomon Islands Broadcasting Corporation)",
-      "founded": 1952,
-      "frequency": "24/7 radio news bulletins and real-time digital news",
-      "format": "Public service broadcaster & digital news agency (sibconline.com.sb)",
-      "language": "English, Solomon Islands Pijin",
-      "headquarters": "Rove, Honiara, Guadalcanal",
-      "owner": {
-        "name": "Government of Solomon Islands",
-        "type": "Statutory public corporation"
+        "name": "State of the Slovak Republic (Ministry of Culture)",
+        "type": "Public-law news agency"
       },
       "annualPublicFunding": {
-        "total": "SBD 12 million",
-        "perCapita": "SBD 16.50"
+        "total": "EUR 4.5 million",
+        "perCapita": "EUR 0.83"
       },
-      "editorialStance": "Statutory national public service media organization of the Solomon Islands; serves as the vital lifeline of communication linking remote outer islands and atolls with national civic news, disaster warnings, health advisories, and parliamentary broadcasts",
+      "editorialStance": "Official national news agency of the Slovak Republic, established by statute in 1992 during the Velvet Divorce; public-law institution providing unbiased, verified wire coverage of the National Council (Národná rada), government decrees, EU affairs, and regional Visegrád Group (V4) cooperation",
       "readership": {
-        "metric": "Reaches over 85% of the national population via AM/FM transmitters and shortwave relays, supplemented by over 100,000 monthly digital visits",
-        "source": "SIBC Annual Report / Commonwealth Broadcasting Association"
+        "metric": "Syndicates over 400 news articles and 200 photos daily to all major Slovak broadcast stations, newspapers, and foreign agencies",
+        "source": "TASR Správa o činnosti a hospodárení 2023"
       },
-      "revenueModel": "State statutory subvention, broadcast advertising, and government communications",
-      "logo": "newspaper-logos/sb/sibc.svg",
-      "logoExplainer": "Forest green background with golden-yellow emblem tile containing bold 'SIBC' letters and crisp white institutional titles.",
+      "revenueModel": "State public service contract funding and commercial news distribution fees",
+      "logo": "newspaper-logos/sk/tasr.svg",
+      "logoExplainer": "Slovak royal blue field with crisp white bold typography 'TASR' and red subtitle 'TLAČOVÁ AGENTÚRA SLOVENSKA'.",
       "sources": [
-        "https://www.sibconline.com.sb",
-        "https://en.wikipedia.org/wiki/Solomon_Islands_Broadcasting_Corporation"
+        "https://www.tasr.sk",
+        "https://en.wikipedia.org/wiki/News_Agency_of_the_Slovak_Republic"
+      ]
+    }
+  ],
+  "SL": [
+    {
+      "id": "sl-slena",
+      "countryCode": "SL",
+      "name": "SLENA (Sierra Leone News Agency)",
+      "nativeName": "Sierra Leone News Agency",
+      "englishTranslation": "Sierra Leone News Agency",
+      "founded": 1979,
+      "frequency": "Daily national news wire service",
+      "format": "News wire & government information agency",
+      "language": "English, Krio",
+      "headquarters": "Wallace Johnson Street, Freetown",
+      "owner": {
+        "name": "Government of Sierra Leone (Ministry of Information and Civic Education)",
+        "type": "State-owned national news agency"
+      },
+      "annualPublicFunding": {
+        "total": "SLE 6.5 million",
+        "perCapita": "SLE 0.75"
+      },
+      "editorialStance": "Official national news agency of the Republic of Sierra Leone; provides authoritative wire coverage of State House decrees, Parliament of Sierra Leone debates, mining and mineral governance (rutile, bauxite, diamonds), agriculture, and ECOWAS regional peacekeeping",
+      "readership": {
+        "metric": "Primary news wire feeding national radio (SLBC), provincial community stations, daily newspapers in Freetown, and regional West African media",
+        "source": "Ministry of Information & Civic Education Budget 2024"
+      },
+      "revenueModel": "State government budgetary funding",
+      "logo": "newspaper-logos/sl/slena.svg",
+      "logoExplainer": "Sierra Leonean emerald green banner featuring bold white typography 'SLENA' and national light blue subtitle.",
+      "sources": [
+        "https://moice.gov.sl",
+        "https://en.wikipedia.org/wiki/Sierra_Leone"
+      ]
+    }
+  ],
+  "SN": [
+    {
+      "id": "sn-aps",
+      "countryCode": "SN",
+      "name": "APS (Agence de Presse Sénégalaise)",
+      "nativeName": "Agence de Presse Sénégalaise (APS)",
+      "englishTranslation": "Senegalese Press Agency",
+      "founded": 1959,
+      "frequency": "Real-time 24/7 national news wire service",
+      "format": "News wire & multimedia portal (aps.sn)",
+      "language": "French, Wolof, English",
+      "headquarters": "Maison de la Presse, Corniche Ouest, Dakar",
+      "owner": {
+        "name": "Republic of Senegal (Ministry of Communication, Telecommunications and Digital Economy)",
+        "type": "State-owned national news agency"
+      },
+      "annualPublicFunding": {
+        "total": "XOF 1.25 billion",
+        "perCapita": "XOF 73.50"
+      },
+      "editorialStance": "Historic official news agency of Senegal, founded on the eve of independence in 1959; authoritative wire coverage of the Presidency of the Republic, National Assembly legislative sessions, ECOWAS regional diplomacy, and West African agricultural development",
+      "readership": {
+        "metric": "Primary news agency distributing wire copy to over 80 Senegalese radio stations, daily newspapers, TV stations, and foreign news bureaus",
+        "source": "APS Rapport d'Activité 2023"
+      },
+      "revenueModel": "State public service subsidy and commercial news licensing",
+      "logo": "newspaper-logos/sn/aps.svg",
+      "logoExplainer": "Emerald green field with bold white modern sans-serif typography 'APS' and bright golden yellow subtitle.",
+      "sources": [
+        "https://aps.sn",
+        "https://en.wikipedia.org/wiki/Agence_de_Presse_S%C3%A9n%C3%A9galaise"
       ]
     }
   ],
@@ -4751,129 +4040,33 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://www.radiodalsan.com",
         "https://en.wikipedia.org/wiki/Radio_Dalsan"
       ]
-    }
-  ],
-  "ZA": [
+    },
     {
-      "id": "za-the-star",
-      "countryCode": "ZA",
-      "name": "The Star",
-      "founded": 1887,
-      "frequency": "Daily (Monday to Friday)",
-      "format": "Broadsheet newspaper & online edition (iol.co.za/the-star)",
-      "language": "English",
-      "headquarters": "Kazerne Street, Johannesburg, Gauteng",
+      "id": "so-garowe-online",
+      "countryCode": "SO",
+      "name": "Garowe Online",
+      "nativeName": "Garowe Online",
+      "englishTranslation": "Garowe Online",
+      "founded": 2004,
+      "frequency": "24/7 real-time news updates",
+      "format": "Digital news service & radio network (garoweonline.com)",
+      "language": "Somali, English",
+      "headquarters": "Garowe, Puntland State, Somalia",
       "owner": {
-        "name": "Independent Media (Sekunjalo Investment Holdings)",
-        "type": "Private media group"
+        "name": "Garowe Media Group",
+        "type": "Independent private media company"
       },
-      "editorialStance": "Historic flagship daily newspaper of Johannesburg, founded during the Witwatersrand Gold Rush in 1887; chronicles municipal politics in Gauteng, national labor union developments, crime investigations, and civic affairs",
+      "editorialStance": "Leading independent news agency and portal headquartered in Garowe; delivers comprehensive political analysis, coverage of federal-state dynamics, maritime security, economic policy, and community development",
       "readership": {
-        "metric": "Print circulation of approximately 45,000 copies daily and wide reach across the Witwatersrand metropolitan region",
-        "source": "ABC South Africa / Independent Media Readership Audit"
+        "metric": "Over 800,000 monthly web pageviews alongside syndication through Radio Garowe across northern and central Somalia",
+        "source": "Garowe Media Audit / NUSOJ"
       },
-      "revenueModel": "Print street sales, classifieds, corporate advertising, and digital syndication on IOL",
-      "logo": "newspaper-logos/za/the-star.svg",
-      "logoExplainer": "Crisp white field displaying a crimson 5-pointed star emblem, historic black serif masthead 'The Star', and clean gray heritage subtitle.",
+      "revenueModel": "Digital banner advertising, radio broadcasts, and corporate sponsorships",
+      "logo": "newspaper-logos/so/garowe-online.svg",
+      "logoExplainer": "Deep navy field with glowing cyan circular monogram 'GO', bold white and cyan 'GAROWE ONLINE' wordmark, and clean silver subtitle.",
       "sources": [
-        "https://www.iol.co.za/the-star",
-        "https://en.wikipedia.org/wiki/The_Star_(South_Africa)"
-      ]
-    }
-  ],
-  "SS": [
-    {
-      "id": "ss-ssna",
-      "countryCode": "SS",
-      "name": "South Sudan News Agency (SSNA)",
-      "founded": 2010,
-      "frequency": "Continuous 24/7 digital news service",
-      "format": "Digital news wire & political analysis portal (southsudannewsagency.org)",
-      "language": "English",
-      "headquarters": "Juba (with diaspora bureau in North America)",
-      "owner": {
-        "name": "South Sudan News Agency Inc.",
-        "type": "Independent news network"
-      },
-      "editorialStance": "Independent news wire and commentary platform founded in 2010 prior to the referendum for self-determination; provides in-depth commentary on governance, transitional security arrangements, and socio-economic developments",
-      "readership": {
-        "metric": "Over 250,000 monthly pageviews and broad circulation among South Sudanese scholars, civil society organizations, and international diplomats",
-        "source": "SSNA Editorial Web Analytics"
-      },
-      "revenueModel": "Digital advertising, independent contributions, and content licensing",
-      "logo": "newspaper-logos/ss/ssna.svg",
-      "logoExplainer": "Forest green field with light mint badge bearing bold 'SSNA' letters, flanked by white block typography 'SOUTH SUDAN NEWS AGENCY'.",
-      "sources": [
-        "https://southsudannewsagency.org",
-        "https://en.wikipedia.org/wiki/Media_of_South_Sudan"
-      ]
-    }
-  ],
-  "ES": [
-    {
-      "id": "es-agencia-efe",
-      "countryCode": "ES",
-      "name": "Agencia EFE",
-      "nativeName": "Agencia EFE, S.A., S.M.E.",
-      "englishTranslation": "EFE Agency",
-      "founded": 1939,
-      "frequency": "24/7 real-time global multimedia news wire",
-      "format": "International news agency & wire service (efe.com)",
-      "language": "Spanish, English, Portuguese, Galician, Catalan",
-      "headquarters": "Avenida de Burgos 8B, Madrid",
-      "owner": {
-        "name": "Sociedad Estatal de Participaciones Industriales (SEPI) / Government of Spain",
-        "type": "State-owned national news agency"
-      },
-      "annualPublicFunding": {
-        "total": "EUR 54 million",
-        "perCapita": "EUR 1.12"
-      },
-      "editorialStance": "Spain's national news agency and the world's largest Spanish-language news wire agency, operating alongside Reuters, AP, and AFP; provides non-partisan, verified news dispatches from over 180 cities across 120 countries, with premier coverage of Ibero-America",
-      "readership": {
-        "metric": "Transmits over 3 million news items, photos, and videos annually, syndicated to more than 2,000 media outlets across five continents",
-        "source": "Memoria Anual de Agencia EFE / SEPI"
-      },
-      "revenueModel": "State public service contract and media licensing subscriptions worldwide",
-      "logo": "newspaper-logos/es/agencia-efe.svg",
-      "logoExplainer": "Cobalt blue field with iconic scarlet red circle bearing white bold 'EFE', accompanied by white wordmark 'AGENCIA EFE' and light blue tagline.",
-      "sources": [
-        "https://efe.com",
-        "https://en.wikipedia.org/wiki/EFE"
-      ]
-    }
-  ],
-  "SD": [
-    {
-      "id": "sd-suna",
-      "countryCode": "SD",
-      "name": "SUNA (Sudan News Agency)",
-      "nativeName": "وكالة السودان للأنباء (سونا)",
-      "englishTranslation": "Sudan News Agency (SUNA)",
-      "founded": 1970,
-      "frequency": "24/7 continuous national news wire",
-      "format": "News wire service & digital portal (suna-sd.net)",
-      "language": "Arabic, English, French",
-      "headquarters": "Port Sudan, Red Sea State (relocated from Khartoum)",
-      "owner": {
-        "name": "Republic of the Sudan (Ministry of Information)",
-        "type": "State-owned national news wire agency"
-      },
-      "annualPublicFunding": {
-        "total": "SDG 1.2 billion",
-        "perCapita": "SDG 26.00"
-      },
-      "editorialStance": "Official national news agency of Sudan, founded in 1970; disseminates official government decrees, sovereign council statements, humanitarian corridors reports, foreign ministry briefings, and economic releases",
-      "readership": {
-        "metric": "Primary source of official Sudanese wire dispatches for domestic media, foreign embassies, and international wire services",
-        "source": "Sudan Ministry of Information Annual Review"
-      },
-      "revenueModel": "State budget subvention and institutional wire subscriptions",
-      "logo": "newspaper-logos/sd/suna.svg",
-      "logoExplainer": "Pan-Arab emerald green field with white square badge displaying Arabic calligraphy 'سونا', flanked by white block capitals 'SUNA' and bilingual subtitle.",
-      "sources": [
-        "https://suna-sd.net",
-        "https://en.wikipedia.org/wiki/Sudan_News_Agency"
+        "https://www.garoweonline.com",
+        "https://en.wikipedia.org/wiki/Garowe_Online"
       ]
     }
   ],
@@ -4907,67 +4100,65 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "SE": [
+  "SS": [
     {
-      "id": "se-tt-nyhetsbyran",
-      "countryCode": "SE",
-      "name": "TT Nyhetsbyrån",
-      "nativeName": "Tidningarnas Telegrambyrå (TT)",
-      "englishTranslation": "The Newspapers' Telegram Bureau",
-      "founded": 1921,
-      "frequency": "24/7 continuous national news wire service",
-      "format": "News agency, photo service & wire feed (tt.se)",
-      "language": "Swedish, English",
-      "headquarters": "Slöjdgatan 9, Stockholm",
+      "id": "ss-ssna",
+      "countryCode": "SS",
+      "name": "South Sudan News Agency (SSNA)",
+      "founded": 2010,
+      "frequency": "Continuous 24/7 digital news service",
+      "format": "Digital news wire & political analysis portal (southsudannewsagency.org)",
+      "language": "English",
+      "headquarters": "Juba (with diaspora bureau in North America)",
       "owner": {
-        "name": "Bonnier News, Schibsted, and NTM (joint media ownership)",
-        "type": "Cooperative commercial national news agency"
+        "name": "South Sudan News Agency Inc.",
+        "type": "Independent news network"
       },
-      "editorialStance": "National news agency of Sweden, founded in 1921; provides objective, non-partisan, fact-checked news dispatches, graphics, and photography to virtually all Swedish newspapers, television networks, radio stations, and public institutions",
+      "editorialStance": "Independent news wire and commentary platform founded in 2010 prior to the referendum for self-determination; provides in-depth commentary on governance, transitional security arrangements, and socio-economic developments",
       "readership": {
-        "metric": "Transmits over 300 news dispatches and 1,000 photographs daily, utilized by 99% of Sweden's professional media organizations",
-        "source": "TT Nyhetsbyrån Årsredovisning 2023"
+        "metric": "Over 250,000 monthly pageviews and broad circulation among South Sudanese scholars, civil society organizations, and international diplomats",
+        "source": "SSNA Editorial Web Analytics"
       },
-      "revenueModel": "B2B commercial licensing, syndication contracts, and visual archive sales",
-      "logo": "newspaper-logos/se/tt-nyhetsbyran.svg",
-      "logoExplainer": "Nordic blue background with a white square bearing navy 'TT' monogram, accompanied by bold white sans-serif 'NYHETSBYRÅN' and light blue tagline.",
+      "revenueModel": "Digital advertising, independent contributions, and content licensing",
+      "logo": "newspaper-logos/ss/ssna.svg",
+      "logoExplainer": "Forest green field with light mint badge bearing bold 'SSNA' letters, flanked by white block typography 'SOUTH SUDAN NEWS AGENCY'.",
       "sources": [
-        "https://tt.se",
-        "https://en.wikipedia.org/wiki/Tidningarnas_Telegrambyr%C3%A5"
+        "https://southsudannewsagency.org",
+        "https://en.wikipedia.org/wiki/Media_of_South_Sudan"
       ]
     }
   ],
-  "CH": [
+  "ST": [
     {
-      "id": "ch-keystone-sda",
-      "countryCode": "CH",
-      "name": "Keystone-SDA",
-      "nativeName": "Schweizerische Depeschenagentur (SDA) / Agence Télégraphique Suisse (ATS)",
-      "englishTranslation": "Swiss News Agency",
-      "founded": 1894,
-      "frequency": "24/7 multilingual national news wire",
-      "format": "National news agency & multimedia portal (keystone-sda.ch)",
-      "language": "German, French, Italian",
-      "headquarters": "Wankdorfallee 5, Bern",
+      "id": "st-stp-press",
+      "countryCode": "ST",
+      "name": "STP-Press",
+      "nativeName": "Agência Noticiosa de São Tomé e Príncipe (STP-Press)",
+      "englishTranslation": "News Agency of São Tomé and Príncipe",
+      "founded": 1985,
+      "frequency": "Real-time national news wire service",
+      "format": "News wire & digital portal (stp-press.st)",
+      "language": "Portuguese",
+      "headquarters": "Avenida 12 de Julho, São Tomé",
       "owner": {
-        "name": "Swiss Media Enterprises and Keystone-ATS Consortium",
-        "type": "National cooperative news wire agency"
+        "name": "Government of São Tomé and Príncipe (Ministry of Social Communication)",
+        "type": "State-owned national news agency"
       },
       "annualPublicFunding": {
-        "total": "CHF 4.1 million",
-        "perCapita": "CHF 0.46"
+        "total": "STN 4.5 million",
+        "perCapita": "STN 20.40"
       },
-      "editorialStance": "Official national news wire agency of the Swiss Confederation, founded in 1894; provides neutral, verified, real-time news dispatches in Switzerland's three official national languages to radio, TV, print, and digital media across all 26 cantons",
+      "editorialStance": "Official national news agency of the Democratic Republic of São Tomé and Príncipe; member of the Alliance of Portuguese Language Information Agencies (ALP); provides verified news dispatches on the Presidency, National Assembly laws, cocoa agriculture, fisheries, and Gulf of Guinea maritime safety",
       "readership": {
-        "metric": "Produces over 220,000 news items and 600,000 multimedia files annually, utilized by virtually every Swiss media house",
-        "source": "Keystone-SDA Geschäftsbericht 2023"
+        "metric": "Primary news agency supplying wire content to state television TVS, national radio RNSTP, and regional international Lusophone media (Lusa, RTP África)",
+        "source": "STP-Press Relatório Anual 2023"
       },
-      "revenueModel": "Federal statutory subvention for linguistic diversity and B2B media licensing contracts",
-      "logo": "newspaper-logos/ch/keystone-sda.svg",
-      "logoExplainer": "Midnight blue field with a Swiss red square tile bearing bold white 'SDA', accompanied by modern white 'KEYSTONE-SDA' lettering and multilingual subtitle.",
+      "revenueModel": "State government budget appropriation and syndication agreements",
+      "logo": "newspaper-logos/st/stp-press.svg",
+      "logoExplainer": "National flag green rectangular background with bold white sans-serif block lettering 'STP-PRESS' and golden yellow subtitle.",
       "sources": [
-        "https://keystone-sda.ch",
-        "https://en.wikipedia.org/wiki/Swiss_News_Agency"
+        "https://www.stp-press.st",
+        "https://en.wikipedia.org/wiki/STP-Press"
       ]
     }
   ],
@@ -5005,37 +4196,37 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "TJ": [
+  "TG": [
     {
-      "id": "tj-khovar",
-      "countryCode": "TJ",
-      "name": "Khovar (NIAT Khovar)",
-      "nativeName": "Агентии миллии иттилоотии Тоҷикистон «Ховар»",
-      "englishTranslation": "National Information Agency of Tajikistan 'Khovar'",
-      "founded": 1925,
+      "id": "tg-atop",
+      "countryCode": "TG",
+      "name": "ATOP (Agence Togolaise de Presse)",
+      "nativeName": "Agence Togolaise de Presse (ATOP)",
+      "englishTranslation": "Togolese Press Agency",
+      "founded": 1975,
       "frequency": "24/7 continuous national news wire",
-      "format": "News wire service & multimedia portal (khovar.tj)",
-      "language": "Tajik, Russian, English, Persian, Arabic",
-      "headquarters": "Prospekt Rudaki 40, Dushanbe",
+      "format": "News agency wire service & web portal (atop.tg)",
+      "language": "French",
+      "headquarters": "Rue des Mésanges, Lomé",
       "owner": {
-        "name": "Government of the Republic of Tajikistan",
+        "name": "Republic of Togo (Ministry of Communication)",
         "type": "State-owned national news agency"
       },
       "annualPublicFunding": {
-        "total": "TJS 9.5 million",
-        "perCapita": "TJS 0.95"
+        "total": "XOF 320 million",
+        "perCapita": "XOF 37.00"
       },
-      "editorialStance": "Official central national information agency of Tajikistan, founded in 1925 (originally as TajikTA); serves as the definitive source for presidential decrees, Supreme Assembly (Majlisi Oli) legislation, national hydropower projects (Rogun), and Central Asian regional cooperation",
+      "editorialStance": "Official national news agency of Togo, founded in 1975; collects and distributes verified news dispatches across all 39 prefectures of Togo, serving regional radio stations, private newspapers, and international press partners",
       "readership": {
-        "metric": "Provides official wire dispatches and photographic coverage to all television channels, radio stations, and regional newspapers across Tajikistan",
-        "source": "NIAT Khovar Official Annual Briefing"
+        "metric": "Primary dispatch agency for over 80 regional and community radio stations across Togo",
+        "source": "HAAC (Haute Autorité de l'Audiovisuel et de la Communication) Togo"
       },
-      "revenueModel": "State budget subvention and institutional news licensing",
-      "logo": "newspaper-logos/tj/khovar.svg",
-      "logoExplainer": "Deep royal blue field with golden Tajik star emblem, bold white Cyrillic 'ХОВАР' typography, gold English 'KHOVAR', and silver national wire subtitle.",
+      "revenueModel": "State ministry subvention and news subscription contracts",
+      "logo": "newspaper-logos/tg/atop.svg",
+      "logoExplainer": "Dark navy field featuring a red circular roundel with white 'A', bold white block capitals 'ATOP', and light blue wire agency subtitle.",
       "sources": [
-        "https://khovar.tj",
-        "https://en.wikipedia.org/wiki/Khovar"
+        "https://atop.tg",
+        "https://en.wikipedia.org/wiki/Media_of_Togo"
       ]
     }
   ],
@@ -5073,69 +4264,134 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "TG": [
+  "TJ": [
     {
-      "id": "tg-atop",
-      "countryCode": "TG",
-      "name": "ATOP (Agence Togolaise de Presse)",
-      "nativeName": "Agence Togolaise de Presse (ATOP)",
-      "englishTranslation": "Togolese Press Agency",
-      "founded": 1975,
+      "id": "tj-khovar",
+      "countryCode": "TJ",
+      "name": "Khovar (NIAT Khovar)",
+      "nativeName": "Агентии миллии иттилоотии Тоҷикистон «Ховар»",
+      "englishTranslation": "National Information Agency of Tajikistan 'Khovar'",
+      "founded": 1925,
       "frequency": "24/7 continuous national news wire",
-      "format": "News agency wire service & web portal (atop.tg)",
-      "language": "French",
-      "headquarters": "Rue des Mésanges, Lomé",
+      "format": "News wire service & multimedia portal (khovar.tj)",
+      "language": "Tajik, Russian, English, Persian, Arabic",
+      "headquarters": "Prospekt Rudaki 40, Dushanbe",
       "owner": {
-        "name": "Republic of Togo (Ministry of Communication)",
+        "name": "Government of the Republic of Tajikistan",
         "type": "State-owned national news agency"
       },
       "annualPublicFunding": {
-        "total": "XOF 320 million",
-        "perCapita": "XOF 37.00"
+        "total": "TJS 9.5 million",
+        "perCapita": "TJS 0.95"
       },
-      "editorialStance": "Official national news agency of Togo, founded in 1975; collects and distributes verified news dispatches across all 39 prefectures of Togo, serving regional radio stations, private newspapers, and international press partners",
+      "editorialStance": "Official central national information agency of Tajikistan, founded in 1925 (originally as TajikTA); serves as the definitive source for presidential decrees, Supreme Assembly (Majlisi Oli) legislation, national hydropower projects (Rogun), and Central Asian regional cooperation",
       "readership": {
-        "metric": "Primary dispatch agency for over 80 regional and community radio stations across Togo",
-        "source": "HAAC (Haute Autorité de l'Audiovisuel et de la Communication) Togo"
+        "metric": "Provides official wire dispatches and photographic coverage to all television channels, radio stations, and regional newspapers across Tajikistan",
+        "source": "NIAT Khovar Official Annual Briefing"
       },
-      "revenueModel": "State ministry subvention and news subscription contracts",
-      "logo": "newspaper-logos/tg/atop.svg",
-      "logoExplainer": "Dark navy field featuring a red circular roundel with white 'A', bold white block capitals 'ATOP', and light blue wire agency subtitle.",
+      "revenueModel": "State budget subvention and institutional news licensing",
+      "logo": "newspaper-logos/tj/khovar.svg",
+      "logoExplainer": "Deep royal blue field with golden Tajik star emblem, bold white Cyrillic 'ХОВАР' typography, gold English 'KHOVAR', and silver national wire subtitle.",
       "sources": [
-        "https://atop.tg",
-        "https://en.wikipedia.org/wiki/Media_of_Togo"
+        "https://khovar.tj",
+        "https://en.wikipedia.org/wiki/Khovar"
+      ]
+    },
+    {
+      "id": "tj-asia-plus",
+      "countryCode": "TJ",
+      "name": "Asia-Plus",
+      "nativeName": "Гурӯҳи расонаҳои «Азия-Плюс»",
+      "englishTranslation": "Asia-Plus Media Group",
+      "founded": 1995,
+      "frequency": "Continuous 24/7 news reporting & weekly print digest",
+      "format": "Multimedia news agency portal (asiaplustj.info), digital newswire & radio network",
+      "language": "Tajik, Russian, English",
+      "headquarters": "Bokhtar Street 37/1, Dushanbe",
+      "owner": {
+        "name": "Asia-Plus Media Group (Umed Babakhanov)",
+        "type": "Independent commercial media enterprise"
+      },
+      "editorialStance": "Leading independent news agency and multimedia group in Tajikistan, established in 1995; acclaimed for balanced, analytical coverage of macroeconomic trends, social reforms, international investments, regional water management, and human rights",
+      "readership": {
+        "metric": "Over 1.8 million monthly unique web visitors and a weekly print run of 15,000 copies, widely read by business leaders and diplomats",
+        "source": "Asia-Plus Audience Metrics / Media Outreach Central Asia"
+      },
+      "revenueModel": "Commercial advertising, event sponsorships, FM radio ads, and subscription services",
+      "logo": "newspaper-logos/tj/asia-plus.svg",
+      "logoExplainer": "White field with an orange rounded emblem bearing a bold white plus symbol '+', dark navy lettering 'ASIA-PLUS', and orange Dushanbe tagline.",
+      "sources": [
+        "https://asiaplustj.info",
+        "https://en.wikipedia.org/wiki/Asia-Plus"
       ]
     }
   ],
-  "TT": [
+  "TL": [
     {
-      "id": "tt-ttt-news",
-      "countryCode": "TT",
-      "name": "TTT News (Trinidad and Tobago Television)",
-      "founded": 1962,
-      "frequency": "Daily television newscasts & 24/7 web updates",
-      "format": "Public television network & news agency (ttt.live)",
-      "language": "English",
-      "headquarters": "11A Maraval Road, Port of Spain",
+      "id": "tl-tatoli",
+      "countryCode": "TL",
+      "name": "Tatoli",
+      "officialName": "Agência Noticiosa de Timor-Leste",
+      "nativeName": "Tatoli - Agência Noticiosa de Timor-Leste",
+      "englishTranslation": "Tatoli (Tetum: To deliver / communicate)",
+      "founded": 2016,
+      "frequency": "Continuous 24/7 national newswire",
+      "format": "Official state newswire & multimedia portal",
+      "language": "Tetum, Portuguese, English, Indonesian",
+      "headquarters": "Farol, Dili",
       "owner": {
-        "name": "Government of the Republic of Trinidad and Tobago",
-        "type": "State-owned public service broadcaster"
+        "name": "Democratic Republic of Timor-Leste (SECOMS)",
+        "type": "State-owned / statutory corporation"
+      },
+      "editorialStance": "Official national news agency of Timor-Leste; government decisions, parliamentary legislation, ASEAN accession, and petroleum fund management",
+      "readership": {
+        "metric": "Primary news agency supplying wire dispatches to all domestic radio, television, and print media across all 14 municipalities",
+        "source": "Tatoli I.P. Relatório Anual 2023"
       },
       "annualPublicFunding": {
-        "total": "TTD 38 million",
-        "perCapita": "TTD 27.00"
+        "total": "US$1.2 million annual state budget allocation",
+        "perCapita": "US$0.89 / person / year"
       },
-      "editorialStance": "Historic public service broadcaster of Trinidad and Tobago, founded in 1962 upon national independence; provides non-partisan national news bulletins, live broadcasts of Parliament, state ceremonies, and cultural festivals",
-      "readership": {
-        "metric": "Flagship 7:00 PM news broadcast reaches over 40% of prime-time television viewers nationwide",
-        "source": "TTT Corporate Review / Telecommunications Authority of Trinidad and Tobago (TATT)"
-      },
-      "revenueModel": "State budget subvention and commercial television spot advertising",
-      "logo": "newspaper-logos/tt/ttt-news.svg",
-      "logoExplainer": "Vibrant national scarlet red field with rounded white badge containing red 'ttt', bold white 'TTT NEWS' title, and public broadcaster subtitle.",
+      "revenueModel": "Direct state budget appropriation and news syndication services",
+      "logo": "newspaper-logos/tl/tatoli.svg",
+      "logoExplainer": "Vibrant red and black emblem inspired by the Timor-Leste national flag with clean white lettering 'TATOLI', representing national state news.",
       "sources": [
-        "https://ttt.live",
-        "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Television"
+        "https://tatoli.tl",
+        "https://pt.wikipedia.org/wiki/Tatoli"
+      ]
+    }
+  ],
+  "TM": [
+    {
+      "id": "tm-tdh",
+      "countryCode": "TM",
+      "name": "TDH (State News Agency of Turkmenistan)",
+      "nativeName": "Türkmenistanyň Döwlet habarlar agentligi (TDH)",
+      "englishTranslation": "State News Agency of Turkmenistan",
+      "founded": 1924,
+      "frequency": "24/7 continuous official state news wire",
+      "format": "News wire service & digital portal (tdh.gov.tm)",
+      "language": "Turkmen, Russian, English",
+      "headquarters": "Bitarap Turkmenistan Avenue 248, Ashgabat",
+      "owner": {
+        "name": "Cabinet of Ministers of Turkmenistan",
+        "type": "State-owned national news agency"
+      },
+      "annualPublicFunding": {
+        "total": "TMT 15 million",
+        "perCapita": "TMT 2.30"
+      },
+      "editorialStance": "Central official state news agency of Turkmenistan, founded in 1924; disseminates official government decrees, presidential activities, parliamentary resolutions of the Mejlis and Halk Maslahaty, energy sector data (Galkynysh gas field), and policy declarations of positive neutrality",
+      "readership": {
+        "metric": "Mandatory sole official wire source for all Turkmen domestic print, radio, and television media, and foreign accredited embassies",
+        "source": "State Committee of Turkmenistan on Television, Radio Broadcasting and Cinematography"
+      },
+      "revenueModel": "Direct state budget subvention",
+      "logo": "newspaper-logos/tm/tdh.svg",
+      "logoExplainer": "Turkmen emerald green field with white roundel bearing green crescent and stars, bold white block capitals 'TDH', and gold-mint national subtitle.",
+      "sources": [
+        "https://tdh.gov.tm",
+        "https://en.wikipedia.org/wiki/State_News_Agency_of_Turkmenistan"
       ]
     }
   ],
@@ -5207,121 +4463,35 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "TM": [
+  "TT": [
     {
-      "id": "tm-tdh",
-      "countryCode": "TM",
-      "name": "TDH (State News Agency of Turkmenistan)",
-      "nativeName": "Türkmenistanyň Döwlet habarlar agentligi (TDH)",
-      "englishTranslation": "State News Agency of Turkmenistan",
-      "founded": 1924,
-      "frequency": "24/7 continuous official state news wire",
-      "format": "News wire service & digital portal (tdh.gov.tm)",
-      "language": "Turkmen, Russian, English",
-      "headquarters": "Bitarap Turkmenistan Avenue 248, Ashgabat",
+      "id": "tt-ttt-news",
+      "countryCode": "TT",
+      "name": "TTT News (Trinidad and Tobago Television)",
+      "founded": 1962,
+      "frequency": "Daily television newscasts & 24/7 web updates",
+      "format": "Public television network & news agency (ttt.live)",
+      "language": "English",
+      "headquarters": "11A Maraval Road, Port of Spain",
       "owner": {
-        "name": "Cabinet of Ministers of Turkmenistan",
-        "type": "State-owned national news agency"
+        "name": "Government of the Republic of Trinidad and Tobago",
+        "type": "State-owned public service broadcaster"
       },
       "annualPublicFunding": {
-        "total": "TMT 15 million",
-        "perCapita": "TMT 2.30"
+        "total": "TTD 38 million",
+        "perCapita": "TTD 27.00"
       },
-      "editorialStance": "Central official state news agency of Turkmenistan, founded in 1924; disseminates official government decrees, presidential activities, parliamentary resolutions of the Mejlis and Halk Maslahaty, energy sector data (Galkynysh gas field), and policy declarations of positive neutrality",
+      "editorialStance": "Historic public service broadcaster of Trinidad and Tobago, founded in 1962 upon national independence; provides non-partisan national news bulletins, live broadcasts of Parliament, state ceremonies, and cultural festivals",
       "readership": {
-        "metric": "Mandatory sole official wire source for all Turkmen domestic print, radio, and television media, and foreign accredited embassies",
-        "source": "State Committee of Turkmenistan on Television, Radio Broadcasting and Cinematography"
+        "metric": "Flagship 7:00 PM news broadcast reaches over 40% of prime-time television viewers nationwide",
+        "source": "TTT Corporate Review / Telecommunications Authority of Trinidad and Tobago (TATT)"
       },
-      "revenueModel": "Direct state budget subvention",
-      "logo": "newspaper-logos/tm/tdh.svg",
-      "logoExplainer": "Turkmen emerald green field with white roundel bearing green crescent and stars, bold white block capitals 'TDH', and gold-mint national subtitle.",
+      "revenueModel": "State budget subvention and commercial television spot advertising",
+      "logo": "newspaper-logos/tt/ttt-news.svg",
+      "logoExplainer": "Vibrant national scarlet red field with rounded white badge containing red 'ttt', bold white 'TTT NEWS' title, and public broadcaster subtitle.",
       "sources": [
-        "https://tdh.gov.tm",
-        "https://en.wikipedia.org/wiki/State_News_Agency_of_Turkmenistan"
-      ]
-    },
-    {
-      "id": "tm-neytralny-turkmenistan",
-      "countryCode": "TM",
-      "name": "Neytralny Turkmenistan",
-      "nativeName": "Газета «Нейтральный Туркменистан»",
-      "englishTranslation": "Neutral Turkmenistan",
-      "founded": 1924,
-      "frequency": "Daily morning newspaper (six times weekly)",
-      "format": "Broadsheet newspaper & digital PDF edition (metbugat.gov.tm)",
-      "language": "Russian",
-      "headquarters": "Press House (Metbugat Öýi), Atamurat Niyazov Avenue, Ashgabat",
-      "owner": {
-        "name": "Cabinet of Ministers of Turkmenistan",
-        "type": "State-owned daily newspaper of record"
-      },
-      "editorialStance": "Turkmenistan's flagship Russian-language official daily newspaper of record, founded in 1924 (originally as Turkmenskaya Iskra); publishes complete texts of new legislation, presidential decrees, foreign bilateral communiqués, and scientific and cultural achievements",
-      "readership": {
-        "metric": "Circulation of 40,000 copies daily distributed across all five velayats (provinces) and Ashgabat",
-        "source": "Turkmen State Publishing Service"
-      },
-      "revenueModel": "State budget funding and mandatory institutional subscriptions",
-      "logo": "newspaper-logos/tm/neytralny-turkmenistan.svg",
-      "logoExplainer": "Clean white field with dark green Cyrillic serif lettering 'НЕЙТРАЛЬНЫЙ ТУРКМЕНИСТАН', gold divider line, and foundation year 1924 mark.",
-      "sources": [
-        "https://metbugat.gov.tm",
-        "https://en.wikipedia.org/wiki/Neytralny_Turkmenistan"
-      ]
-    },
-    {
-      "id": "tm-turkmenistan-gazeti",
-      "countryCode": "TM",
-      "name": "Turkmenistan Gazeti",
-      "nativeName": "«Türkmenistan» gazeti",
-      "englishTranslation": "Turkmenistan Newspaper",
-      "founded": 1920,
-      "frequency": "Daily morning newspaper (six times weekly)",
-      "format": "Broadsheet newspaper & digital portal (turkmenmetbugat.gov.tm)",
-      "language": "Turkmen",
-      "headquarters": "Press House, Atamurat Niyazov Avenue, Ashgabat",
-      "owner": {
-        "name": "Cabinet of Ministers of Turkmenistan",
-        "type": "State-owned national daily newspaper"
-      },
-      "editorialStance": "Oldest and principal Turkmen-language official national daily newspaper, established in 1920; covers agrarian developments in cotton and wheat harvests, gas pipeline construction (TAPI), national celebrations, poetry, and civic achievements",
-      "readership": {
-        "metric": "Circulation of approximately 50,000 copies daily, distributed to schools, universities, ministries, and collective farms nationwide",
-        "source": "Turkmen State Publishing Service Register"
-      },
-      "revenueModel": "State subsidies and nationwide institutional subscriptions",
-      "logo": "newspaper-logos/tm/turkmenistan-gazeti.svg",
-      "logoExplainer": "Emerald green background with elegant white serif lettering 'TÜRKMENISTAN GAZETI', underlined by a gold divider and golden foundation 1920 subtitle.",
-      "sources": [
-        "https://turkmenmetbugat.gov.tm",
-        "https://tk.wikipedia.org/wiki/T%C3%BCrkmenistan_(gazet)"
-      ]
-    }
-  ],
-  "UG": [
-    {
-      "id": "ug-urn",
-      "countryCode": "UG",
-      "name": "Uganda Radio Network (URN)",
-      "founded": 2005,
-      "frequency": "24/7 continuous national wire & audio news service",
-      "format": "News wire agency & audio syndication feed (ugandaradionetwork.net)",
-      "language": "English, Luganda, Runyakitara, Luo, Ateso",
-      "headquarters": "Old Kira Road, Bukoto, Kampala",
-      "owner": {
-        "name": "Uganda Radio Network Ltd",
-        "type": "Independent commercial news wire agency"
-      },
-      "editorialStance": "Uganda's principal independent national news agency, founded in 2005; operates a network of over 100 correspondents across all 135 districts of Uganda, delivering verified news wire stories and broadcast audio clips to radio stations and print newsrooms",
-      "readership": {
-        "metric": "Syndicated to over 85 commercial and community radio stations nationwide, reaching over 15 million listeners daily",
-        "source": "Uganda Communications Commission (UCC) Media Assessment"
-      },
-      "revenueModel": "Media subscription syndication fees and donor journalism project grants",
-      "logo": "newspaper-logos/ug/urn.svg",
-      "logoExplainer": "Deep navy field with vibrant orange square tile displaying white 'URN', bold white typography 'UGANDA RADIO', and orange national wire subtitle.",
-      "sources": [
-        "https://ugandaradionetwork.net",
-        "https://en.wikipedia.org/wiki/Media_of_Uganda"
+        "https://ttt.live",
+        "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Television"
       ]
     }
   ],
@@ -5359,34 +4529,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     },
     {
-      "id": "ua-ukrainska-pravda",
-      "countryCode": "UA",
-      "name": "Ukrainska Pravda (UP)",
-      "nativeName": "Українська правда",
-      "englishTranslation": "Ukrainian Truth",
-      "founded": 2000,
-      "frequency": "Real-time 24/7 continuous digital journalism",
-      "format": "Online newspaper & investigative newsroom (pravda.com.ua)",
-      "language": "Ukrainian, English, Russian",
-      "headquarters": "Kyiv",
-      "owner": {
-        "name": "Dragon Capital (Tomas Fiala)",
-        "type": "Independent commercial media holding"
-      },
-      "editorialStance": "Pioneering independent Ukrainian digital newspaper, founded on the day of the 2000 referendum by murdered investigative journalist Georgiy Gongadze; internationally celebrated for hard-hitting anti-corruption investigations, war reporting, and political accountability",
-      "readership": {
-        "metric": "Over 25 million monthly unique visitors, ranking among the most visited independent news portals in Ukraine and Central Europe",
-        "source": "Similarweb Ukraine Media Rankings / Gemius"
-      },
-      "revenueModel": "Digital advertising, reader club memberships (UP Club), and independent grant funding",
-      "logo": "newspaper-logos/ua/ukrainska-pravda.svg",
-      "logoExplainer": "White field with red square tile bearing white Cyrillic initials 'УП', classic black serif masthead 'Українська правда', and red investigative subtitle.",
-      "sources": [
-        "https://www.pravda.com.ua",
-        "https://en.wikipedia.org/wiki/Ukrainska_Pravda"
-      ]
-    },
-    {
       "id": "ua-interfax-ukraine",
       "countryCode": "UA",
       "name": "Interfax-Ukraine",
@@ -5415,65 +4557,31 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "AE": [
+  "UG": [
     {
-      "id": "ae-wam",
-      "countryCode": "AE",
-      "name": "WAM (Emirates News Agency)",
-      "nativeName": "وكالة أنباء الإمارات (وام)",
-      "englishTranslation": "Emirates News Agency (WAM)",
-      "founded": 1976,
-      "frequency": "24/7 real-time multimedia news wire service",
-      "format": "National news wire & digital portal (wam.ae)",
-      "language": "Arabic, English, French, Spanish, Russian, Chinese, Hindi, Urdu, German, Italian, Portuguese, Turkish, Farsi, Swahili, Hebrew",
-      "headquarters": "Corniche Road, Abu Dhabi",
+      "id": "ug-urn",
+      "countryCode": "UG",
+      "name": "Uganda Radio Network (URN)",
+      "founded": 2005,
+      "frequency": "24/7 continuous national wire & audio news service",
+      "format": "News wire agency & audio syndication feed (ugandaradionetwork.net)",
+      "language": "English, Luganda, Runyakitara, Luo, Ateso",
+      "headquarters": "Old Kira Road, Bukoto, Kampala",
       "owner": {
-        "name": "National Media Office (Government of the United Arab Emirates)",
-        "type": "State-owned national news wire agency"
+        "name": "Uganda Radio Network Ltd",
+        "type": "Independent commercial news wire agency"
       },
-      "annualPublicFunding": {
-        "total": "AED 85 million",
-        "perCapita": "AED 9.20"
-      },
-      "editorialStance": "Official national news agency of the United Arab Emirates, established by ministerial decree in 1976; serves as the definitive wire source for Federal Supreme Council decrees, presidential directives, international economic partnerships (COP28, BRICS), and humanitarian initiatives",
+      "editorialStance": "Uganda's principal independent national news agency, founded in 2005; operates a network of over 100 correspondents across all 135 districts of Uganda, delivering verified news wire stories and broadcast audio clips to radio stations and print newsrooms",
       "readership": {
-        "metric": "Transmits over 400 news releases and multimedia feeds daily in 19 languages to domestic media, international news agencies, and government portals",
-        "source": "WAM Annual Report / UAE National Media Office"
+        "metric": "Syndicated to over 85 commercial and community radio stations nationwide, reaching over 15 million listeners daily",
+        "source": "Uganda Communications Commission (UCC) Media Assessment"
       },
-      "revenueModel": "Federal government budget funding and international media exchange agreements",
-      "logo": "newspaper-logos/ae/wam.svg",
-      "logoExplainer": "Pan-Arab green field with white square badge displaying red Arabic calligraphy 'وام', bold white typography 'WAM', and bilingual subtitle.",
+      "revenueModel": "Media subscription syndication fees and donor journalism project grants",
+      "logo": "newspaper-logos/ug/urn.svg",
+      "logoExplainer": "Deep navy field with vibrant orange square tile displaying white 'URN', bold white typography 'UGANDA RADIO', and orange national wire subtitle.",
       "sources": [
-        "https://wam.ae",
-        "https://en.wikipedia.org/wiki/Emirates_News_Agency"
-      ]
-    }
-  ],
-  "GB": [
-    {
-      "id": "gb-reuters",
-      "countryCode": "GB",
-      "name": "Reuters",
-      "founded": 1851,
-      "frequency": "24/7 real-time global multimedia news wire",
-      "format": "International news agency & financial wire service (reuters.com)",
-      "language": "English, French, German, Spanish, Arabic, Japanese, Chinese, Russian, Portuguese",
-      "headquarters": "5 Canada Square, Canary Wharf, London",
-      "owner": {
-        "name": "Thomson Reuters Corporation",
-        "type": "Publicly traded global information conglomerate"
-      },
-      "editorialStance": "One of the world's largest and most trusted international news wire agencies, founded in London in 1851 by Paul Julius Reuter using carrier pigeons and electric telegraph lines; bound by the Thomson Reuters Trust Principles requiring strict integrity, independence, and freedom from bias",
-      "readership": {
-        "metric": "Reaches billions of people daily through financial terminal syndication, wire distribution to thousands of global media publishers, and 40 million monthly digital visits",
-        "source": "Thomson Reuters Annual Report 2023 / Reuters Institute"
-      },
-      "revenueModel": "Commercial terminal news syndication (LSEG Workspace / Eikon), enterprise media licensing, and digital advertising",
-      "logo": "newspaper-logos/gb/reuters.svg",
-      "logoExplainer": "Signature bright orange field with white circular emblem, bold white sans-serif typography 'REUTERS', and charcoal global news subtitle.",
-      "sources": [
-        "https://www.reuters.com",
-        "https://en.wikipedia.org/wiki/Reuters"
+        "https://ugandaradionetwork.net",
+        "https://en.wikipedia.org/wiki/Media_of_Uganda"
       ]
     }
   ],
@@ -5484,7 +4592,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "name": "Associated Press (AP)",
       "founded": 1846,
       "frequency": "24/7 continuous global multimedia news wire",
-      "format": "Not-for-profit news cooperative & wire service (apnews.com)",
+      "format": "Not-for-profit news cooperative & newswire service (apnews.com)",
       "language": "English, Spanish, Arabic",
       "headquarters": "200 Liberty Street, Brookfield Place, Manhattan, New York City, New York",
       "owner": {
@@ -5536,6 +4644,81 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "sources": [
         "https://uza.uz",
         "https://en.wikipedia.org/wiki/Uzbekistan_National_News_Agency"
+      ]
+    }
+  ],
+  "VA": [
+    {
+      "id": "va-vatican-news",
+      "countryCode": "VA",
+      "name": "Vatican News",
+      "officialName": "Dicastero per la Comunicazione",
+      "nativeName": "Dicastero per la Comunicazione",
+      "englishTranslation": "Dicastery for Communication (incorporating Vatican News and L'Osservatore Romano)",
+      "motto": {
+        "original": "Unicuique suum / Non praevalebunt",
+        "translation": "To each his own / They shall not prevail (Matthew 16:18)"
+      },
+      "founded": 2017,
+      "frequency": "Continuous 24/7 global multimedia newswire",
+      "format": "Multilingual multimedia news agency, digital wire, and Vatican Media broadcast feed",
+      "language": "53 broadcast languages (including Italian, English, Spanish, French, Portuguese, German, Arabic, Polish, Chinese, and Latin)",
+      "headquarters": "Piazza Pia 3, Rome / Vatican City State",
+      "owner": {
+        "name": "Holy See (The Roman Curia / Dicastery for Communication)",
+        "type": "Sovereign state media & pastoral communications organ"
+      },
+      "editorialStance": "Official global communications service of the Holy See, providing universal coverage of the Papacy, the Roman Curia, international diplomacy, and the worldwide Catholic Church",
+      "readership": {
+        "metric": "11.5+ million monthly digital visitors across 53 languages; broadcast syndication to over 1,000 affiliate radio networks and press agencies worldwide",
+        "source": "Dicastero per la Comunicazione Relazione di Bilancio & Vatican Media Analytics 2024"
+      },
+      "annualPublicFunding": {
+        "total": "€38.5 million total annual operating budget for the Dicastery for Communication",
+        "perCapita": "€48,125 / resident / year (across Vatican City's ~800 residents; serves 1.39 billion Catholics globally at €0.03/person)"
+      },
+      "revenueModel": "Funded directly by the Holy See Roman Curia budget (Holy See patrimony and Peter's Pence apostolic collection)",
+      "logo": "newspaper-logos/va/vatican-news.png",
+      "logoExplainer": "The Vatican News identity features the signature red background of papal ceremonial heraldry. On the left, a crisp square frame contains the Keys of Saint Peter crossed in saltire (one gold, one silver) bound by a cordon and surmounted by the papal triple tiara (triregnum), symbolizing papal apostolic authority and spiritual ministry. To the right, 'VATICAN NEWS' is rendered in clean geometric white typography, contrasting tradition with modern global accessibility.",
+      "sources": [
+        "https://www.vaticannews.va/",
+        "https://www.comunicazione.va/",
+        "https://www.vatican.va/roman_curia/secretariat-communication/index.htm"
+      ],
+      "licenceNote": "Holy See Dicastery for Communication trademark bundled for educational reference in Learn mode."
+    }
+  ],
+  "VC": [
+    {
+      "id": "vc-api-svg",
+      "countryCode": "VC",
+      "name": "API SVG (Agency for Public Information)",
+      "nativeName": "Agency for Public Information (API)",
+      "englishTranslation": "Agency for Public Information",
+      "founded": 2002,
+      "frequency": "Daily government news agency & press bulletins",
+      "format": "Government news agency, television & press releases",
+      "language": "English",
+      "headquarters": "Ministry of Information, Richmond Hill, Kingstown",
+      "owner": {
+        "name": "Government of Saint Vincent and the Grenadines (Office of the Prime Minister)",
+        "type": "State news agency"
+      },
+      "annualPublicFunding": {
+        "total": "XCD 2.6 million",
+        "perCapita": "XCD 25.00"
+      },
+      "editorialStance": "Official national news agency of Saint Vincent and the Grenadines; provides verified dispatches on Cabinet decisions, Argyle International Airport developments, La Soufrière volcano monitoring (NEMO), and Grenadines maritime connectivity",
+      "readership": {
+        "metric": "Primary official information source syndicated across all national radio stations, TV channels, and regional news networks",
+        "source": "Government of SVG Budget Estimates 2024"
+      },
+      "revenueModel": "State government budgetary funding",
+      "logo": "newspaper-logos/vc/api-svg.svg",
+      "logoExplainer": "Deep navy blue card featuring bold white initials 'API' and bright green subtitle 'AGENCY FOR PUBLIC INFORMATION'.",
+      "sources": [
+        "https://www.gov.vc",
+        "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
       ]
     }
   ],
@@ -5698,68 +4881,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "sources": [
         "https://www.zanis.com.zm",
         "https://en.wikipedia.org/wiki/Media_of_Zambia"
-      ]
-    }
-  ],
-  "PS": [
-    {
-      "id": "ps-wafa",
-      "countryCode": "PS",
-      "name": "WAFA (Palestine News & Info Agency)",
-      "nativeName": "وكالة الأنباء والمعلومات الفلسطينية (وفا)",
-      "englishTranslation": "Palestine News and Info Agency (WAFA)",
-      "founded": 1972,
-      "frequency": "24/7 continuous national news wire service",
-      "format": "National news wire & digital multimedia portal (wafa.ps)",
-      "language": "Arabic, English, French, Hebrew",
-      "headquarters": "Al-Irsal Street, Ramallah, West Bank",
-      "owner": {
-        "name": "State of Palestine (Palestine Liberation Organization / PNA)",
-        "type": "State-owned national news agency"
-      },
-      "annualPublicFunding": {
-        "total": "USD 5.5 million",
-        "perCapita": "USD 1.10"
-      },
-      "editorialStance": "Official national news agency of the State of Palestine, established in 1972 by resolution of the PLO Executive Committee; provides official wire dispatches on presidential decrees, Palestinian Authority ministerial actions, diplomatic motions at the United Nations, and documentation of conditions across the West Bank and Gaza Strip",
-      "readership": {
-        "metric": "Primary official news source for domestic Palestinian newspapers, radio networks, and foreign news agencies covering the Israeli-Palestinian conflict",
-        "source": "Palestine Ministry of Information Official Report"
-      },
-      "revenueModel": "State treasury subvention and international news exchange partnerships",
-      "logo": "newspaper-logos/ps/wafa.svg",
-      "logoExplainer": "Pan-Arab green field with white square badge displaying red Arabic calligraphy 'وفا', bold white impact 'WAFA', and bilingual institutional title.",
-      "sources": [
-        "https://www.wafa.ps",
-        "https://en.wikipedia.org/wiki/WAFA"
-      ]
-    },
-    {
-      "id": "ps-maan-news",
-      "countryCode": "PS",
-      "name": "Ma'an News Agency",
-      "nativeName": "وكالة معا الإخبارية",
-      "englishTranslation": "Together News Agency (Ma'an)",
-      "founded": 2005,
-      "frequency": "24/7 continuous digital wire service & satellite television",
-      "format": "Digital news wire, TV network & radio coalition (maannews.net)",
-      "language": "Arabic, English, Hebrew",
-      "headquarters": "Al-Karkafa Street, Bethlehem, West Bank",
-      "owner": {
-        "name": "Ma'an Network (non-profit independent consortium)",
-        "type": "Independent non-profit media network"
-      },
-      "editorialStance": "Leading independent digital news agency in Palestine, founded in 2005; operates in partnership with community television and radio stations across the West Bank and Gaza Strip, known for objective breaking news dispatches, humanitarian coverage, and political talk shows",
-      "readership": {
-        "metric": "Over 5 million monthly unique digital visitors, ranking among the most visited news websites in the Palestinian territories and the Arab world",
-        "source": "Ma'an Audience Review / Similarweb"
-      },
-      "revenueModel": "Commercial digital banner advertising, international media development partnerships, and television broadcasting spots",
-      "logo": "newspaper-logos/ps/maan-news.svg",
-      "logoExplainer": "Deep navy field with crimson circle enclosing white 'M', bold white impact 'MA'AN NEWS', and light cyan independent Bethlehem agency subtitle.",
-      "sources": [
-        "https://www.maannews.net",
-        "https://en.wikipedia.org/wiki/Ma%27an_News_Agency"
       ]
     }
   ]

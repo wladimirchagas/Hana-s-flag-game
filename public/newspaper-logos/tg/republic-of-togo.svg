@@ -1,7 +1,0 @@
-<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="120" fill="#ffffff"/>
-  <rect x="25" y="24" width="70" height="72" rx="6" fill="#006a4e"/>
-  <polygon points="60,42 63,52 74,52 65,59 68,70 60,63 52,70 55,59 46,52 57,52" fill="#d32f2f"/>
-  <text x="108" y="60" font-family="'Arial', sans-serif" font-size="24" font-weight="bold" fill="#006a4e">REPUBLIC OF TOGO</text>
-  <text x="110" y="84" font-family="'Arial', sans-serif" font-size="12" font-weight="600" fill="#555555" letter-spacing="1">PORTAIL OFFICIEL D'INFORMATION</text>
-</svg>

@@ -33,6 +33,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, "..", "src", "data", "nationalNewsAgencies.ts");
+const NEWSPAPERS_PATH = resolve(__dirname, "..", "src", "data", "nationalNewspapers.ts");
 const PUBLIC_DIR = resolve(__dirname, "..", "public");
 
 /** Sniff image magic bytes or SVG text structure */
@@ -88,6 +89,17 @@ const MAX_SVG_TITLES = 5;
 const src = readFileSync(DATA_PATH, "utf8");
 const agenciesByCountry = loadConst(src, "export const NATIONAL_NEWS_AGENCIES");
 
+const newspapersSrc = readFileSync(NEWSPAPERS_PATH, "utf8");
+const newspapersByCountry = loadConst(newspapersSrc, "export const NATIONAL_NEWSPAPERS");
+const newspaperIds = new Set();
+for (const list of Object.values(newspapersByCountry)) {
+  if (Array.isArray(list)) {
+    for (const p of list) {
+      if (p.id) newspaperIds.add(p.id);
+    }
+  }
+}
+
 const failures = [];
 const seenIds = new Set();
 let totalAgencies = 0;
@@ -115,6 +127,11 @@ for (const [countryKey, list] of Object.entries(agenciesByCountry)) {
       failures.push(`${ctx}: duplicate id "${agency.id}"`);
     }
     seenIds.add(agency.id);
+
+    // Cross-file collision check
+    if (newspaperIds.has(agency.id)) {
+      failures.push(`${ctx}: shared id "${agency.id}" also exists in nationalNewspapers.ts`);
+    }
 
     if (agency.countryCode !== countryKey) {
       failures.push(`${ctx}: countryCode "${agency.countryCode}" does not match key "${countryKey}"`);
@@ -156,6 +173,20 @@ for (const [countryKey, list] of Object.entries(agenciesByCountry)) {
 
     if (!agency.format || typeof agency.format !== "string") {
       failures.push(`${ctx}: format must be a non-empty string`);
+    } else {
+      const newspaperTerms = [
+        /\bbroadsheet\b/i,
+        /\btabloid\b/i,
+        /\bdaily newspaper\b/i,
+        /\bweekly newspaper\b/i,
+        /\bprint newspaper\b/i
+      ];
+      const wireExemption = /\b(wire|press agency|news agency|telegraph|syndicat|bureau|dispatch)\b/i;
+      for (const term of newspaperTerms) {
+        if (term.test(agency.format) && !wireExemption.test(agency.format)) {
+          failures.push(`${ctx}: format "${agency.format}" matches newspaper classification without accredited wire service remit`);
+        }
+      }
     }
 
     // 2. Sources & Explanation

@@ -1,0 +1,1312 @@
+[
+  {
+    "id": "al-panorama",
+    "cc": "AL",
+    "name": "Panorama",
+    "format": "Broadsheet & digital portal",
+    "sources": [
+      "https://www.panorama.com.al",
+      "https://en.wikipedia.org/wiki/Panorama_(Albanian_newspaper)"
+    ]
+  },
+  {
+    "id": "ao-folha-8",
+    "cc": "AO",
+    "name": "Folha 8",
+    "format": "Print weekly & digital portal",
+    "sources": [
+      "https://jornalf8.net",
+      "https://pt.wikipedia.org/wiki/Folha_8"
+    ]
+  },
+  {
+    "id": "ag-abs",
+    "cc": "AG",
+    "name": "ABS News",
+    "format": "Public TV, radio & digital news portal",
+    "sources": [
+      "https://abstvradio.com"
+    ]
+  },
+  {
+    "id": "ag-real-news",
+    "cc": "AG",
+    "name": "Real News Antigua",
+    "format": "Digital news portal & e-paper",
+    "sources": [
+      "https://realnewsantigua.com"
+    ]
+  },
+  {
+    "id": "ag-antigua-trumpet",
+    "cc": "AG",
+    "name": "Antigua Trumpet",
+    "format": "Digital newspaper & community portal",
+    "sources": [
+      "https://antiguatrumpet.com"
+    ]
+  },
+  {
+    "id": "am-aravot",
+    "cc": "AM",
+    "name": "Aravot",
+    "format": "Broadsheet & digital portal",
+    "sources": [
+      "https://www.aravot.am",
+      "https://en.wikipedia.org/wiki/Aravot"
+    ]
+  },
+  {
+    "id": "am-news-am",
+    "cc": "AM",
+    "name": "News.am",
+    "format": "Digital news portal & mobile news service",
+    "sources": [
+      "https://news.am",
+      "https://en.wikipedia.org/wiki/News.am"
+    ]
+  },
+  {
+    "id": "az-525",
+    "cc": "AZ",
+    "name": "525-ci qəzet",
+    "format": "Print daily & digital portal",
+    "sources": [
+      "https://525.az",
+      "https://az.wikipedia.org/wiki/525-ci_q%C9%99zet"
+    ]
+  },
+  {
+    "id": "bs-eyewitness",
+    "cc": "BS",
+    "name": "Eyewitness News Bahamas",
+    "format": "Digital news portal & broadcast agency",
+    "sources": [
+      "https://ewnews.com"
+    ]
+  },
+  {
+    "id": "bh-al-bilad",
+    "cc": "BH",
+    "name": "Al Bilad",
+    "format": "Broadsheet & digital portal",
+    "sources": [
+      "https://www.albiladpress.com",
+      "https://en.wikipedia.org/wiki/Al_Bilad_(Bahraini_newspaper)"
+    ]
+  },
+  {
+    "id": "bb-barbados-advocate",
+    "cc": "BB",
+    "name": "The Barbados Advocate",
+    "format": "Broadsheet & digital portal",
+    "sources": [
+      "https://www.barbadosadvocate.com",
+      "https://en.wikipedia.org/wiki/The_Barbados_Advocate"
+    ]
+  },
+  {
+    "id": "bb-bgis",
+    "cc": "BB",
+    "name": "Barbados Government Information Service",
+    "format": "Official government news service",
+    "sources": [
+      "https://gisbarbados.gov.bb",
+      "https://en.wikipedia.org/wiki/Barbados_Government_Information_Service"
+    ]
+  },
+  {
+    "id": "bb-loop-barbados",
+    "cc": "BB",
+    "name": "Loop News Barbados",
+    "format": "Digital news portal & mobile news app",
+    "sources": [
+      "https://barbados.loopnews.com"
+    ]
+  },
+  {
+    "id": "by-sb-segodnya",
+    "cc": "BY",
+    "name": "SB. Belarus Segodnya",
+    "format": "Broadsheet & digital portal",
+    "sources": [
+      "https://www.sb.by",
+      "https://en.wikipedia.org/wiki/Sovetskaya_Belorussiya_%E2%80%93_Belarus_Segodnya"
+    ]
+  },
+  {
+    "id": "bz-bgis",
+    "cc": "BZ",
+    "name": "Belize Government Press Office",
+    "format": "Official state information agency",
+    "sources": [
+      "https://www.pressoffice.gov.bz"
+    ]
+  },
+  {
+    "id": "bz-bbn",
+    "cc": "BZ",
+    "name": "Breaking Belize News",
+    "format": "Digital news portal & mobile app",
+    "sources": [
+      "https://www.breakingbelizenews.com"
+    ]
+  },
+  {
+    "id": "bj-le-matinal",
+    "cc": "BJ",
+    "name": "Le Matinal",
+    "format": "Tabloid & digital portal",
+    "sources": [
+      "https://lespharaons.com",
+      "https://fr.wikipedia.org/wiki/Le_Matinal"
+    ]
+  },
+  {
+    "id": "bt-bbs",
+    "cc": "BT",
+    "name": "BBS News",
+    "format": "Public TV, radio & digital news portal",
+    "sources": [
+      "http://www.bbs.bt",
+      "https://en.wikipedia.org/wiki/Bhutan_Broadcasting_Service"
+    ]
+  },
+  {
+    "id": "bt-jbs",
+    "cc": "BT",
+    "name": "Journal of Bhutan Studies",
+    "format": "Academic journal & digital repository",
+    "sources": [
+      "https://www.bhutanstudies.org.bt",
+      "https://en.wikipedia.org/wiki/Journal_of_Bhutan_Studies"
+    ]
+  },
+  {
+    "id": "ba-nezavisne",
+    "cc": "BA",
+    "name": "Nezavisne novine",
+    "format": "Tabloid & digital portal",
+    "sources": [
+      "https://www.nezavisne.com",
+      "https://en.wikipedia.org/wiki/Nezavisne_novine"
+    ]
+  },
+  {
+    "id": "bw-botswana-guardian",
+    "cc": "BW",
+    "name": "Botswana Guardian",
+    "format": "Tabloid & digital portal",
+    "sources": [
+      "https://www.botswanaguardian.co.bw"
+    ]
+  },
+  {
+    "id": "bn-pelita-brunei",
+    "cc": "BN",
+    "name": "Pelita Brunei",
+    "format": "Official state newspaper & digital portal",
+    "sources": [
+      "https://www.pelitabrunei.gov.bn",
+      "https://en.wikipedia.org/wiki/Pelita_Brunei"
+    ]
+  },
+  {
+    "id": "bn-rtb",
+    "cc": "BN",
+    "name": "RTB News",
+    "format": "Public TV, radio & digital news service",
+    "sources": [
+      "https://www.rtbnews.gov.bn"
+    ]
+  },
+  {
+    "id": "bf-lobservateur",
+    "cc": "BF",
+    "name": "L'Observateur Paalga",
+    "format": "Broadsheet & digital portal",
+    "sources": [
+      "https://lobservateur.bf",
+      "https://fr.wikipedia.org/wiki/L%27Observateur_Paalga"
+    ]
+  },
+  {
+    "id": "bi-le-renouveau",
+    "cc": "BI",
+    "name": "Le Renouveau du Burundi",
+    "format": "Broadsheet & digital portal",
+    "sources": [
+      "https://renouveau.bi"
+    ]
+  },
+  {
+    "id": "bi-iwacu",
+    "cc": "BI",
+    "name": "IWACU",
+    "format": "Weekly newspaper & digital portal",
+    "sources": [
+      "https://www.iwacu-burundi.org",
+      "https://fr.wikipedia.org/wiki/Iwacu"
+    ]
+  },
+  {
+    "id": "cm-cameroon-tribune",
+    "cc": "CM",
+    "name": "Cameroon Tribune",
+    "format": "Broadsheet & digital portal",
+    "sources": [
+      "https://www.cameroon-tribune.cm",
+      "https://en.wikipedia.org/wiki/Cameroon_Tribune"
+    ]
+  },
+  {
+    "id": "iq-shafaq-news",
+    "cc": "IQ",
+    "name": "Shafaq News",
+    "format": "Digital news wire & portal",
+    "sources": [
+      "https://shafaq.com",
+      "https://en.wikipedia.org/wiki/Shafaq_News"
+    ]
+  },
+  {
+    "id": "fj-fiji-village",
+    "cc": "FJ",
+    "name": "FijiVillage",
+    "format": "Digital-only news portal & radio network",
+    "sources": [
+      "https://www.fijivillage.com",
+      "https://en.wikipedia.org/wiki/Communications_Fiji_Limited"
+    ]
+  },
+  {
+    "id": "fj-maiviti",
+    "cc": "FJ",
+    "name": "Mai TV",
+    "format": "Digital news portal & commercial TV",
+    "sources": [
+      "https://www.maitv.com.fj",
+      "https://en.wikipedia.org/wiki/Mai_TV"
+    ]
+  },
+  {
+    "id": "gh-myjoyonline",
+    "cc": "GH",
+    "name": "MyJoyOnline",
+    "format": "Digital multimedia portal & radio/TV network",
+    "sources": [
+      "https://www.myjoyonline.com"
+    ]
+  },
+  {
+    "id": "gh-citinewsroom",
+    "cc": "GH",
+    "name": "Citi Newsroom",
+    "format": "Digital news portal & broadcast network",
+    "sources": [
+      "https://citinewsroom.com"
+    ]
+  },
+  {
+    "id": "gw-ang-agencia-noticiosa-da-guine",
+    "cc": "GW",
+    "name": "ANG (Agência Noticiosa da Guiné)",
+    "format": "Broadsheet & digital portal",
+    "sources": [
+      "https://agencianoticiosadaguine.com/",
+      "https://www.gov.gw/"
+    ]
+  },
+  {
+    "id": "li-radio-liechtenstein",
+    "cc": "LI",
+    "name": "Radio Liechtenstein",
+    "format": "Radio broadcast & digital news portal",
+    "sources": [
+      "https://www.radio.li",
+      "https://de.wikipedia.org/wiki/Radio_Liechtenstein"
+    ]
+  },
+  {
+    "id": "li-1fltv",
+    "cc": "LI",
+    "name": "1FLTV",
+    "format": "Linear television & web streaming",
+    "sources": [
+      "https://www.1fl.li",
+      "https://de.wikipedia.org/wiki/1_FL_TV"
+    ]
+  },
+  {
+    "id": "lt-elta",
+    "cc": "LT",
+    "name": "ELTA",
+    "format": "News wire & digital agency portal",
+    "sources": [
+      "https://www.elta.lt",
+      "https://lt.wikipedia.org/wiki/ELTA"
+    ]
+  },
+  {
+    "id": "lt-lrt",
+    "cc": "LT",
+    "name": "LRT Naujienos",
+    "format": "Digital multimedia portal, radio & TV",
+    "sources": [
+      "https://www.lrt.lt",
+      "https://en.wikipedia.org/wiki/Lithuanian_National_Radio_and_Television"
+    ]
+  },
+  {
+    "id": "lu-rtl-letzebuerg",
+    "cc": "LU",
+    "name": "RTL Télé Lëtzebuerg",
+    "format": "Television, radio & digital superportal",
+    "sources": [
+      "https://www.rtl.lu",
+      "https://en.wikipedia.org/wiki/RTL_T%C3%A9l%C3%A9_L%C3%ABtzebuerg"
+    ]
+  },
+  {
+    "id": "mv-psm-news",
+    "cc": "MV",
+    "name": "PSM News",
+    "format": "Television, radio & digital multimedia portal",
+    "sources": [
+      "https://psmnews.mv",
+      "https://en.wikipedia.org/wiki/Public_Service_Media"
+    ]
+  },
+  {
+    "id": "mt-tvm-news",
+    "cc": "MT",
+    "name": "TVM News",
+    "format": "Television, radio & digital portal",
+    "sources": [
+      "https://tvmnews.mt",
+      "https://en.wikipedia.org/wiki/Television_Malta"
+    ]
+  },
+  {
+    "id": "mh-v7ab-radio-news",
+    "cc": "MH",
+    "name": "V7AB Radio News",
+    "format": "AM radio broadcast & community bulletins",
+    "sources": [
+      "https://www.infomarshallislands.com"
+    ]
+  },
+  {
+    "id": "mr-al-akhbar",
+    "cc": "MR",
+    "name": "Al Akhbar",
+    "format": "Digital portal & investigative wire",
+    "sources": [
+      "https://alakhbar.info",
+      "https://fr.wikipedia.org/wiki/Alakhbar_(Mauritanie)"
+    ]
+  },
+  {
+    "id": "mr-sahara-medias",
+    "cc": "MR",
+    "name": "Sahara Médias",
+    "format": "Digital news portal & multimedia production",
+    "sources": [
+      "https://saharamedias.net",
+      "https://fr.saharamedias.net"
+    ]
+  },
+  {
+    "id": "mu-mbc-news",
+    "cc": "MU",
+    "name": "MBC News",
+    "format": "Television, radio & digital news portal",
+    "sources": [
+      "https://mbcradio.tv",
+      "https://en.wikipedia.org/wiki/Mauritius_Broadcasting_Corporation"
+    ]
+  },
+  {
+    "id": "fm-fsm-gov-news",
+    "cc": "FM",
+    "name": "FSM National Information Service",
+    "format": "Digital information wire & gazette",
+    "sources": [
+      "https://gov.fm"
+    ]
+  },
+  {
+    "id": "fm-v6ak-radio",
+    "cc": "FM",
+    "name": "V6AK Pohnpei Radio News",
+    "format": "AM/FM radio news service",
+    "sources": [
+      "https://www.infofsm.com"
+    ]
+  },
+  {
+    "id": "fm-v6ai-yap-radio",
+    "cc": "FM",
+    "name": "V6AI The Voice of Yap",
+    "format": "AM radio news service",
+    "sources": [
+      "https://yapstategov.org"
+    ]
+  },
+  {
+    "id": "fm-v6ah-kosrae-radio",
+    "cc": "FM",
+    "name": "V6AH Kosrae Broadcast News",
+    "format": "Radio news service",
+    "sources": [
+      "https://kosraegov.com"
+    ]
+  },
+  {
+    "id": "md-jurnal-tv",
+    "cc": "MD",
+    "name": "Jurnal TV / Jurnal.md",
+    "format": "Television channel & digital portal",
+    "sources": [
+      "https://www.jurnal.md",
+      "https://ro.wikipedia.org/wiki/Jurnal_TV"
+    ]
+  },
+  {
+    "id": "md-trm",
+    "cc": "MD",
+    "name": "Teleradio-Moldova (TRM / Moldova 1)",
+    "format": "Public television (Moldova 1), radio (Radio Moldova) & digital portal",
+    "sources": [
+      "https://trm.md",
+      "https://ro.wikipedia.org/wiki/Compania_Teleradio-Moldova"
+    ]
+  },
+  {
+    "id": "mc-monaco-info",
+    "cc": "MC",
+    "name": "Monaco Info",
+    "format": "Cable television channel & digital stream",
+    "sources": [
+      "https://www.monacoinfo.com",
+      "https://fr.wikipedia.org/wiki/Monaco_Info"
+    ]
+  },
+  {
+    "id": "mc-radio-monaco",
+    "cc": "MC",
+    "name": "Radio Monaco",
+    "format": "FM radio broadcast & digital news streaming",
+    "sources": [
+      "https://radio-monaco.com"
+    ]
+  },
+  {
+    "id": "mn-mnb-news",
+    "cc": "MN",
+    "name": "MNB News",
+    "format": "Television (MNB 1, MNB News 24), radio & digital portal",
+    "sources": [
+      "https://www.mnb.mn",
+      "https://en.wikipedia.org/wiki/Mongolian_National_Broadcaster"
+    ]
+  },
+  {
+    "id": "me-rtcg-portal",
+    "cc": "ME",
+    "name": "RTCG Portal",
+    "format": "Television, radio & digital news portal",
+    "sources": [
+      "https://rtcg.me",
+      "https://en.wikipedia.org/wiki/Radio_and_Television_of_Montenegro"
+    ]
+  },
+  {
+    "id": "ma-snrt-news",
+    "cc": "MA",
+    "name": "SNRT News",
+    "format": "Television (Al Aoula), radio & digital news application",
+    "sources": [
+      "https://snrtnews.com",
+      "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Nationale_de_Radiodiffusion_et_de_T%C3%A9l%C3%A9vision"
+    ]
+  },
+  {
+    "id": "mz-rm-noticias",
+    "cc": "MZ",
+    "name": "Rádio Moçambique (RM Notícias)",
+    "format": "Radio broadcast network & digital audio portal",
+    "sources": [
+      "https://www.rm.co.mz",
+      "https://pt.wikipedia.org/wiki/R%C3%A1dio_Mo%C3%A7ambique"
+    ]
+  },
+  {
+    "id": "et-ebc-news",
+    "cc": "ET",
+    "name": "EBC News",
+    "format": "Public television (EBC 1, ETV News), radio & digital portal",
+    "sources": [
+      "https://www.ebc.et",
+      "https://en.wikipedia.org/wiki/Ethiopian_Broadcasting_Corporation"
+    ]
+  },
+  {
+    "id": "kp-kctv-news",
+    "cc": "KP",
+    "name": "KCTV News",
+    "format": "Terrestrial television, satellite & streaming",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Korean_Central_Television"
+    ]
+  },
+  {
+    "id": "na-nbc-news",
+    "cc": "NA",
+    "name": "NBC News",
+    "format": "Public television (NBC 1), radio & digital portal",
+    "sources": [
+      "https://nbcnews.na",
+      "https://en.wikipedia.org/wiki/Namibian_Broadcasting_Corporation"
+    ]
+  },
+  {
+    "id": "nl-nos-nieuws",
+    "cc": "NL",
+    "name": "NOS Nieuws",
+    "format": "Public television (NPO 1), radio (NPO Radio 1) & digital news app",
+    "sources": [
+      "https://nos.nl",
+      "https://en.wikipedia.org/wiki/Nederlandse_Omroep_Stichting"
+    ]
+  },
+  {
+    "id": "nz-rnz-news",
+    "cc": "NZ",
+    "name": "RNZ News",
+    "format": "Public radio (National / Concert), digital portal & podcast network",
+    "sources": [
+      "https://www.rnz.co.nz",
+      "https://en.wikipedia.org/wiki/Radio_New_Zealand"
+    ]
+  },
+  {
+    "id": "nz-1news",
+    "cc": "NZ",
+    "name": "1News (TVNZ)",
+    "format": "Television (TVNZ 1), digital streaming (TVNZ+) & mobile app",
+    "sources": [
+      "https://www.1news.co.nz",
+      "https://en.wikipedia.org/wiki/1_News"
+    ]
+  },
+  {
+    "id": "ni-radio-corporacion",
+    "cc": "NI",
+    "name": "Radio Corporación",
+    "format": "AM/FM radio news service & digital audio stream",
+    "sources": [
+      "https://radio-corporacion.com",
+      "https://es.wikipedia.org/wiki/Radio_Corporaci%C3%B3n"
+    ]
+  },
+  {
+    "id": "ne-tele-sahel",
+    "cc": "NE",
+    "name": "Télé Sahel",
+    "format": "Television channel (Télé Sahel), national radio & web stream",
+    "sources": [
+      "https://ortn.ne",
+      "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9_Sahel"
+    ]
+  },
+  {
+    "id": "mk-mrt-news",
+    "cc": "MK",
+    "name": "MRT News",
+    "format": "Public television (MRT 1, MRT 2), radio & digital portal",
+    "sources": [
+      "https://mrt.com.mk",
+      "https://en.wikipedia.org/wiki/Macedonian_Radio_Television"
+    ]
+  },
+  {
+    "id": "no-nrk-nyheter",
+    "cc": "NO",
+    "name": "NRK Nyheter",
+    "format": "Public television (NRK 1), radio (NRK P1/Alltid Nyheter) & digital superportal",
+    "sources": [
+      "https://www.nrk.no",
+      "https://en.wikipedia.org/wiki/NRK"
+    ]
+  },
+  {
+    "id": "pw-palau-wave-radio",
+    "cc": "PW",
+    "name": "Palau Wave Radio (PWFM 89.9)",
+    "format": "FM radio station & digital audio streaming",
+    "sources": [
+      "https://www.facebook.com/palauwaveradio/"
+    ]
+  },
+  {
+    "id": "pa-tvn-noticias",
+    "cc": "PA",
+    "name": "TVN Noticias",
+    "format": "Television network (TVN Canal 2), digital streaming & mobile app",
+    "sources": [
+      "https://www.tvn-2.com",
+      "https://es.wikipedia.org/wiki/TVN_(Panam%C3%A1)"
+    ]
+  },
+  {
+    "id": "pa-telemetro-reporta",
+    "cc": "PA",
+    "name": "Telemetro Reporta",
+    "format": "Television network (Telemetro Canal 13) & digital portal",
+    "sources": [
+      "https://www.telemetro.com",
+      "https://es.wikipedia.org/wiki/Telemetro"
+    ]
+  },
+  {
+    "id": "pg-nbc-news",
+    "cc": "PG",
+    "name": "NBC News PNG",
+    "format": "Public radio (Kundu FM), television (NBC TV) & provincial stations",
+    "sources": [
+      "https://www.nbc.com.pg",
+      "https://en.wikipedia.org/wiki/National_Broadcasting_Corporation_(Papua_New_Guinea)"
+    ]
+  },
+  {
+    "id": "pg-emtv-news",
+    "cc": "PG",
+    "name": "EMTV News",
+    "format": "Free-to-air commercial television network & digital video stream",
+    "sources": [
+      "https://emtv.com.pg",
+      "https://en.wikipedia.org/wiki/EM_TV"
+    ]
+  },
+  {
+    "id": "py-paraguay-tv",
+    "cc": "PY",
+    "name": "Paraguay TV",
+    "format": "Digital terrestrial television & web streaming",
+    "sources": [
+      "https://www.mitic.gov.py",
+      "https://es.wikipedia.org/wiki/Paraguay_TV"
+    ]
+  },
+  {
+    "id": "pe-rpp-noticias",
+    "cc": "PE",
+    "name": "RPP Noticias (Radio Programas del Perú)",
+    "format": "AM/FM radio network, cable TV & digital portal",
+    "sources": [
+      "https://rpp.pe",
+      "https://es.wikipedia.org/wiki/RPP"
+    ]
+  },
+  {
+    "id": "qa-aljazeera",
+    "cc": "QA",
+    "name": "Al Jazeera Media Network",
+    "format": "Television, digital news network & investigative bureau",
+    "sources": [
+      "https://www.aljazeera.com",
+      "https://en.wikipedia.org/wiki/Al_Jazeera_Media_Network"
+    ]
+  },
+  {
+    "id": "ru-ria-novosti",
+    "cc": "RU",
+    "name": "RIA Novosti (Rossiya Segodnya)",
+    "format": "News wire & digital multimedia portal (ria.ru)",
+    "sources": [
+      "https://ria.ru",
+      "https://en.wikipedia.org/wiki/RIA_Novosti"
+    ]
+  },
+  {
+    "id": "rw-kigali-today",
+    "cc": "RW",
+    "name": "Kigali Today (KT Press)",
+    "format": "Digital news portal, radio (KT Radio 96.7 FM) & print (KT Press)",
+    "sources": [
+      "https://www.ktpress.rw",
+      "https://en.wikipedia.org/wiki/Media_of_Rwanda"
+    ]
+  },
+  {
+    "id": "kn-winn-fm",
+    "cc": "KN",
+    "name": "WINN FM (West Indies News Network)",
+    "format": "Radio broadcaster & digital news portal (winnmediaskn.com)",
+    "sources": [
+      "https://winnmediaskn.com",
+      "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
+    ]
+  },
+  {
+    "id": "sm-smrtv-notizie",
+    "cc": "SM",
+    "name": "San Marino RTV (SMRTV Notizie)",
+    "format": "Public broadcaster news service, television & digital portal (sanmarinortv.sm)",
+    "sources": [
+      "https://www.sanmarinortv.sm",
+      "https://en.wikipedia.org/wiki/San_Marino_RTV"
+    ]
+  },
+  {
+    "id": "st-tvs-noticias",
+    "cc": "ST",
+    "name": "TVS Notícias (Televisão Santomense)",
+    "format": "Public broadcaster television news & video portal (tvs.st)",
+    "sources": [
+      "https://www.tvs.st",
+      "https://en.wikipedia.org/wiki/Televis%C3%A3o_Santomense"
+    ]
+  },
+  {
+    "id": "sb-island-sun",
+    "cc": "SB",
+    "name": "Island Sun",
+    "format": "Tabloid newspaper & news website (theislandsun.com.sb)",
+    "sources": [
+      "https://theislandsun.com.sb",
+      "https://en.wikipedia.org/wiki/Island_Sun"
+    ]
+  },
+  {
+    "id": "sb-sunday-isles",
+    "cc": "SB",
+    "name": "Sunday Isles",
+    "format": "Compact weekly newspaper & online magazine",
+    "sources": [
+      "https://islesmedia.net",
+      "https://en.wikipedia.org/wiki/Media_of_the_Solomon_Islands"
+    ]
+  },
+  {
+    "id": "sb-solomon-times",
+    "cc": "SB",
+    "name": "Solomon Times Online",
+    "format": "Digital online newspaper (solomontimes.com)",
+    "sources": [
+      "https://www.solomontimes.com",
+      "https://en.wikipedia.org/wiki/Media_of_the_Solomon_Islands"
+    ]
+  },
+  {
+    "id": "so-garowe-online",
+    "cc": "SO",
+    "name": "Garowe Online",
+    "format": "Digital news service & radio network (garoweonline.com)",
+    "sources": [
+      "https://www.garoweonline.com",
+      "https://en.wikipedia.org/wiki/Garowe_Online"
+    ]
+  },
+  {
+    "id": "so-goobjoog-news",
+    "cc": "SO",
+    "name": "Goobjoog News",
+    "format": "FM radio network, TV channel & digital portal (goobjoog.com)",
+    "sources": [
+      "https://goobjoog.com",
+      "https://en.wikipedia.org/wiki/Goobjoog_FM"
+    ]
+  },
+  {
+    "id": "ss-juba-monitor",
+    "cc": "SS",
+    "name": "The Juba Monitor",
+    "format": "Tabloid newspaper & news portal",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Juba_Monitor",
+      "https://cpj.org/tags/juba-monitor"
+    ]
+  },
+  {
+    "id": "ss-eye-radio",
+    "cc": "SS",
+    "name": "Eye Radio",
+    "format": "FM radio network & digital news portal (eyeradio.org)",
+    "sources": [
+      "https://eyeradio.org",
+      "https://en.wikipedia.org/wiki/Eye_Radio"
+    ]
+  },
+  {
+    "id": "ss-radio-tamazuj",
+    "cc": "SS",
+    "name": "Radio Tamazuj",
+    "format": "Shortwave broadcast & multimedia website (radiotamazuj.org)",
+    "sources": [
+      "https://radiotamazuj.org",
+      "https://en.wikipedia.org/wiki/Radio_Tamazuj"
+    ]
+  },
+  {
+    "id": "lk-ada-derana",
+    "cc": "LK",
+    "name": "Ada Derana",
+    "format": "Digital news portal, broadcast channel & SMS alerts (adaderana.lk)",
+    "sources": [
+      "https://www.adaderana.lk",
+      "https://en.wikipedia.org/wiki/Ada_Derana"
+    ]
+  },
+  {
+    "id": "sd-al-sudani",
+    "cc": "SD",
+    "name": "Al-Sudani",
+    "format": "Broadsheet newspaper & digital edition (alsudaninews.com)",
+    "sources": [
+      "https://alsudaninews.com",
+      "https://en.wikipedia.org/wiki/Media_of_Sudan"
+    ]
+  },
+  {
+    "id": "sd-al-intibaha",
+    "cc": "SD",
+    "name": "Al-Intibaha",
+    "format": "Broadsheet newspaper & web portal (alintibaha.net)",
+    "sources": [
+      "https://alintibaha.net",
+      "https://en.wikipedia.org/wiki/Al-Intibaha"
+    ]
+  },
+  {
+    "id": "sd-radio-dabanga",
+    "cc": "SD",
+    "name": "Radio Dabanga",
+    "format": "Shortwave broadcast network & digital news portal (dabangasudan.org)",
+    "sources": [
+      "https://www.dabangasudan.org",
+      "https://en.wikipedia.org/wiki/Radio_Dabanga"
+    ]
+  },
+  {
+    "id": "sr-atv-nieuws",
+    "cc": "SR",
+    "name": "ATV Nieuws (Algemene Televisie Verzorging)",
+    "format": "Television news channel & digital portal (atv.sr)",
+    "sources": [
+      "https://www.atv.sr",
+      "https://en.wikipedia.org/wiki/Media_of_Suriname"
+    ]
+  },
+  {
+    "id": "sy-al-baath",
+    "cc": "SY",
+    "name": "Al-Ba'ath",
+    "format": "Broadsheet newspaper & web portal (albaathmedia.sy)",
+    "sources": [
+      "https://albaathmedia.sy",
+      "https://en.wikipedia.org/wiki/Al-Ba%27ath_(newspaper)"
+    ]
+  },
+  {
+    "id": "tj-asia-plus",
+    "cc": "TJ",
+    "name": "Asia-Plus",
+    "format": "Multimedia portal (asiaplustj.info), newspaper & FM radio",
+    "sources": [
+      "https://asiaplustj.info",
+      "https://en.wikipedia.org/wiki/Asia-Plus"
+    ]
+  },
+  {
+    "id": "tj-sadoi-mardum",
+    "cc": "TJ",
+    "name": "Sadoi Mardum",
+    "format": "Broadsheet newspaper & online edition (sadoimardum.tj)",
+    "sources": [
+      "https://sadoimardum.tj",
+      "https://tg.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B4%D0%BE%D0%B8_%D0%BC%D0%B0%D1%80%D0%B4%D1%83%D0%BC"
+    ]
+  },
+  {
+    "id": "tj-farazh",
+    "cc": "TJ",
+    "name": "Farazh",
+    "format": "Compact weekly newspaper & digital portal (faraj.tj)",
+    "sources": [
+      "https://faraj.tj",
+      "https://tg.wikipedia.org/wiki/%D0%A4%D0%B0%D1%80%D0%B0%D0%B6_(%D2%B3%D0%B0%D1%84%D1%82%D0%B0%D0%BD%D0%BE%D0%BC%D0%B0)"
+    ]
+  },
+  {
+    "id": "tz-mwananchi",
+    "cc": "TZ",
+    "name": "Mwananchi",
+    "format": "Broadsheet newspaper & web portal (mwananchi.co.tz)",
+    "sources": [
+      "https://www.mwananchi.co.tz",
+      "https://en.wikipedia.org/wiki/Mwananchi"
+    ]
+  },
+  {
+    "id": "tz-habarileo",
+    "cc": "TZ",
+    "name": "HabariLeo",
+    "format": "Broadsheet newspaper & web edition (habarileo.co.tz)",
+    "sources": [
+      "https://habarileo.co.tz",
+      "https://en.wikipedia.org/wiki/HabariLeo"
+    ]
+  },
+  {
+    "id": "tz-ipp-media",
+    "cc": "TZ",
+    "name": "The Guardian (Tanzania) / IPP Media",
+    "format": "Broadsheet newspaper & multimedia portal (ippmedia.com)",
+    "sources": [
+      "https://www.ippmedia.com",
+      "https://en.wikipedia.org/wiki/IPP_Media"
+    ]
+  },
+  {
+    "id": "tg-liberte-togo",
+    "cc": "TG",
+    "name": "Liberté Togo",
+    "format": "Tabloid newspaper & digital edition",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Media_of_Togo",
+      "https://rsf.org/en/country/togo"
+    ]
+  },
+  {
+    "id": "tg-togo-matin",
+    "cc": "TG",
+    "name": "Togo Matin",
+    "format": "Compact tabloid newspaper & web portal (togomatin.tg)",
+    "sources": [
+      "https://togomatin.tg",
+      "https://en.wikipedia.org/wiki/Media_of_Togo"
+    ]
+  },
+  {
+    "id": "tg-republic-of-togo",
+    "cc": "TG",
+    "name": "Republic of Togo News Portal",
+    "format": "Digital news portal (republicoftogo.com)",
+    "sources": [
+      "https://www.republicoftogo.com",
+      "https://en.wikipedia.org/wiki/Media_of_Togo"
+    ]
+  },
+  {
+    "id": "to-talaki",
+    "cc": "TO",
+    "name": "Talaki",
+    "format": "Tabloid newspaper & digital edition",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Media_of_Tonga",
+      "https://pina.com.fj"
+    ]
+  },
+  {
+    "id": "to-tbc",
+    "cc": "TO",
+    "name": "Television Tonga / TBC",
+    "format": "Public broadcaster & digital newsroom (tonga-broadcasting.net)",
+    "sources": [
+      "https://www.tonga-broadcasting.net",
+      "https://en.wikipedia.org/wiki/Tonga_Broadcasting_Commission"
+    ]
+  },
+  {
+    "id": "to-taimi-o-tonga",
+    "cc": "TO",
+    "name": "Taimi 'o Tonga (Times of Tonga)",
+    "format": "Tabloid newspaper & digital platform (taimiotonga.com)",
+    "sources": [
+      "https://taimiotonga.com",
+      "https://en.wikipedia.org/wiki/Taimi_ʻo_Tonga"
+    ]
+  },
+  {
+    "id": "to-kaniva-tonga",
+    "cc": "TO",
+    "name": "Kaniva Tonga News",
+    "format": "Digital news portal (kanivatonga.co.nz)",
+    "sources": [
+      "https://kanivatonga.co.nz",
+      "https://en.wikipedia.org/wiki/Media_of_Tonga"
+    ]
+  },
+  {
+    "id": "tt-loop-tt",
+    "cc": "TT",
+    "name": "Loop News Trinidad and Tobago",
+    "format": "Digital news portal & mobile application (tt.loopnews.com)",
+    "sources": [
+      "https://tt.loopnews.com",
+      "https://en.wikipedia.org/wiki/Loop_News"
+    ]
+  },
+  {
+    "id": "tn-la-presse",
+    "cc": "TN",
+    "name": "La Presse de Tunisie",
+    "format": "Broadsheet newspaper & web portal (lapresse.tn)",
+    "sources": [
+      "https://lapresse.tn",
+      "https://en.wikipedia.org/wiki/La_Presse_de_Tunisie"
+    ]
+  },
+  {
+    "id": "tn-essahafa",
+    "cc": "TN",
+    "name": "Essahafa Al-Youm",
+    "format": "Broadsheet newspaper & web edition (essahafa.tn)",
+    "sources": [
+      "https://essahafa.tn",
+      "https://en.wikipedia.org/wiki/Media_of_Tunisia"
+    ]
+  },
+  {
+    "id": "tn-business-news",
+    "cc": "TN",
+    "name": "Business News Tunisia",
+    "format": "Digital news portal (businessnews.com.tn)",
+    "sources": [
+      "https://www.businessnews.com.tn",
+      "https://en.wikipedia.org/wiki/Media_of_Tunisia"
+    ]
+  },
+  {
+    "id": "tm-turkmenportal",
+    "cc": "TM",
+    "name": "Turkmenportal",
+    "format": "Digital news portal & mobile application (turkmenportal.com)",
+    "sources": [
+      "https://turkmenportal.com",
+      "https://en.wikipedia.org/wiki/Turkmenportal"
+    ]
+  },
+  {
+    "id": "tm-rysgal",
+    "cc": "TM",
+    "name": "Rysgal",
+    "format": "Broadsheet newspaper & digital edition",
+    "sources": [
+      "https://rysgalbank.com.tm",
+      "https://en.wikipedia.org/wiki/Media_of_Turkmenistan"
+    ]
+  },
+  {
+    "id": "tv-tuvalu-media-dept",
+    "cc": "TV",
+    "name": "Tuvalu Media Department (TMD)",
+    "format": "Public broadcaster & official press desk",
+    "sources": [
+      "https://www.gov.tv",
+      "https://en.wikipedia.org/wiki/Tuvalu_Media_Department"
+    ]
+  },
+  {
+    "id": "tv-fenui-news",
+    "cc": "TV",
+    "name": "Fenui News",
+    "format": "Digital newsletter & PDF bulletin",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Media_of_Tuvalu",
+      "https://www.rnz.co.nz/international/pacific-news"
+    ]
+  },
+  {
+    "id": "tv-tuvalu-paradise",
+    "cc": "TV",
+    "name": "Tuvalu Paradise News",
+    "format": "Digital community news publication & photo desk",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Media_of_Tuvalu",
+      "https://pina.com.fj"
+    ]
+  },
+  {
+    "id": "tv-tuvalu-national-portal",
+    "cc": "TV",
+    "name": "Tuvalu News Portal",
+    "format": "Official digital news portal (gov.tv)",
+    "sources": [
+      "https://www.gov.tv",
+      "https://en.wikipedia.org/wiki/Tuvalu"
+    ]
+  },
+  {
+    "id": "ug-bukedde",
+    "cc": "UG",
+    "name": "Bukedde",
+    "format": "Tabloid newspaper & TV channel (bukedde.co.ug)",
+    "sources": [
+      "https://www.bukedde.co.ug",
+      "https://en.wikipedia.org/wiki/Bukedde"
+    ]
+  },
+  {
+    "id": "uy-montevideo-portal",
+    "cc": "UY",
+    "name": "Montevideo Portal",
+    "format": "Digital news portal & mobile platform (montevideo.com.uy)",
+    "sources": [
+      "https://www.montevideo.com.uy",
+      "https://en.wikipedia.org/wiki/Montevideo_Portal"
+    ]
+  },
+  {
+    "id": "uz-gazeta-uz",
+    "cc": "UZ",
+    "name": "Gazeta.uz",
+    "format": "Digital news portal (gazeta.uz)",
+    "sources": [
+      "https://www.gazeta.uz",
+      "https://en.wikipedia.org/wiki/Media_of_Uzbekistan"
+    ]
+  },
+  {
+    "id": "uz-kun-uz",
+    "cc": "UZ",
+    "name": "Kun.uz",
+    "format": "Online news portal & YouTube news network (kun.uz)",
+    "sources": [
+      "https://kun.uz",
+      "https://en.wikipedia.org/wiki/Media_of_Uzbekistan"
+    ]
+  },
+  {
+    "id": "uz-xalq-sozi",
+    "cc": "UZ",
+    "name": "Xalq So'zi (Narodnoe Slovo)",
+    "format": "Broadsheet newspaper & digital portal (xs.uz)",
+    "sources": [
+      "https://xs.uz",
+      "https://uz.wikipedia.org/wiki/Xalq_so%CA%BBzi"
+    ]
+  },
+  {
+    "id": "va-vatican-news",
+    "cc": "VA",
+    "name": "Vatican News",
+    "format": "Multilingual multimedia portal & web radio (vaticannews.va)",
+    "sources": [
+      "https://www.vaticannews.va",
+      "https://en.wikipedia.org/wiki/Vatican_News"
+    ]
+  },
+  {
+    "id": "va-acta-apostolicae-sedis",
+    "cc": "VA",
+    "name": "Acta Apostolicae Sedis",
+    "format": "Official gazette & public legislative bulletin",
+    "sources": [
+      "https://www.vatican.va/archive/aas/index_en.htm",
+      "https://en.wikipedia.org/wiki/Acta_Apostolicae_Sedis"
+    ]
+  },
+  {
+    "id": "vu-vbtc",
+    "cc": "VU",
+    "name": "VBTC News (Television Blong Vanuatu)",
+    "format": "Public broadcaster & newsroom (vbtc.vu)",
+    "sources": [
+      "https://vbtc.vu",
+      "https://en.wikipedia.org/wiki/Vanuatu_Broadcasting_and_Television_Corporation"
+    ]
+  },
+  {
+    "id": "vu-daily-buzz",
+    "cc": "VU",
+    "name": "Daily Buzz Vanuatu",
+    "format": "Online digital newspaper & social media newsroom",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Media_of_Vanuatu",
+      "https://pina.com.fj"
+    ]
+  },
+  {
+    "id": "vu-vanuatu-times",
+    "cc": "VU",
+    "name": "Vanuatu Times",
+    "format": "Tabloid newspaper & digital platform",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Media_of_Vanuatu",
+      "https://pina.com.fj"
+    ]
+  },
+  {
+    "id": "vu-vanuatu-nightly-news",
+    "cc": "VU",
+    "name": "Vanuatu Nightly News",
+    "format": "Broadcast television news bulletin & web stream",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Media_of_Vanuatu",
+      "https://vbtc.vu"
+    ]
+  },
+  {
+    "id": "ye-al-thawra",
+    "cc": "YE",
+    "name": "Al-Thawra",
+    "format": "Broadsheet newspaper & web edition (althawrah.ye)",
+    "sources": [
+      "https://althawrah.ye",
+      "https://en.wikipedia.org/wiki/Al-Thawra_(Yemen)"
+    ]
+  },
+  {
+    "id": "ye-al-mashhad",
+    "cc": "YE",
+    "name": "Al-Mashhad Al-Yemeni",
+    "format": "Online news portal & mobile news desk (almashhad-alyemeni.com)",
+    "sources": [
+      "https://almashhad-alyemeni.com",
+      "https://en.wikipedia.org/wiki/Media_of_Yemen"
+    ]
+  },
+  {
+    "id": "zm-times-of-zambia",
+    "cc": "ZM",
+    "name": "Times of Zambia",
+    "format": "Broadsheet newspaper & digital edition (times.co.zm)",
+    "sources": [
+      "https://www.times.co.zm",
+      "https://en.wikipedia.org/wiki/Times_of_Zambia"
+    ]
+  },
+  {
+    "id": "zm-the-mast",
+    "cc": "ZM",
+    "name": "The Mast",
+    "format": "Broadsheet newspaper & digital portal (themastonline.com)",
+    "sources": [
+      "https://themastonline.com",
+      "https://en.wikipedia.org/wiki/Media_of_Zambia"
+    ]
+  },
+  {
+    "id": "zm-diggers-news",
+    "cc": "ZM",
+    "name": "News Diggers!",
+    "format": "Tabloid newspaper & digital investigative platform (diggers.news)",
+    "sources": [
+      "https://diggers.news",
+      "https://en.wikipedia.org/wiki/Media_of_Zambia"
+    ]
+  },
+  {
+    "id": "ps-al-hayat-al-jadida",
+    "cc": "PS",
+    "name": "Al-Hayat Al-Jadida",
+    "format": "Broadsheet newspaper & online edition (alhayat-j.com)",
+    "sources": [
+      "https://www.alhayat-j.com",
+      "https://en.wikipedia.org/wiki/Al-Hayat_al-Jadida"
+    ]
+  }
+]

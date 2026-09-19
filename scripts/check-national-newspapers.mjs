@@ -12,6 +12,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, "..", "src", "data", "nationalNewspapers.ts");
+const AGENCIES_PATH = resolve(__dirname, "..", "src", "data", "nationalNewsAgencies.ts");
 const PUBLIC_DIR = resolve(__dirname, "..", "public");
 
 /** Sniff image magic bytes or SVG text structure */
@@ -65,6 +66,17 @@ const MAX_RASTER_SIZE = 500 * 1024;  // 500 KB
 const src = readFileSync(DATA_PATH, "utf8");
 const newspapersByCountry = loadConst(src, "export const NATIONAL_NEWSPAPERS");
 
+const agenciesSrc = readFileSync(AGENCIES_PATH, "utf8");
+const agenciesByCountry = loadConst(agenciesSrc, "export const NATIONAL_NEWS_AGENCIES");
+const agencyIds = new Set();
+for (const list of Object.values(agenciesByCountry)) {
+  if (Array.isArray(list)) {
+    for (const a of list) {
+      if (a.id) agencyIds.add(a.id);
+    }
+  }
+}
+
 const failures = [];
 const seenIds = new Set();
 let totalNewspapers = 0;
@@ -93,6 +105,11 @@ for (const [countryKey, list] of Object.entries(newspapersByCountry)) {
     }
     seenIds.add(paper.id);
 
+    // Cross-file collision check
+    if (agencyIds.has(paper.id)) {
+      failures.push(`${ctx}: shared id "${paper.id}" also exists in nationalNewsAgencies.ts`);
+    }
+
     if (paper.countryCode !== countryKey) {
       failures.push(`${ctx}: countryCode "${paper.countryCode}" does not match key "${countryKey}"`);
     }
@@ -116,6 +133,32 @@ for (const [countryKey, list] of Object.entries(newspapersByCountry)) {
     if (!paper.format || typeof paper.format !== "string") {
       failures.push(`${ctx}: missing or empty format`);
     }
+
+    // Forbid wire service / news agency / broadcaster classifications
+    const forbiddenTerms = [
+      /\bnews agency\b/i,
+      /\bpress agency\b/i,
+      /\bwire service\b/i,
+      /\bnews wire\b/i,
+      /\btelegraph agency\b/i,
+      /\bstate news agency\b/i,
+      /\bmultimedia news agency\b/i,
+      /\bdigital news wire\b/i,
+      /\bpublic television\b/i,
+      /\btelevision network\b/i,
+      /\btelevision station\b/i,
+      /\bradio station\b/i,
+      /\bradio network\b/i,
+      /\bpublic broadcaster\b/i,
+      /\bbroadcast news service\b/i,
+    ];
+    const textToCheck = `${paper.format || ""} ${paper.editorialStance || ""}`;
+    for (const term of forbiddenTerms) {
+      if (term.test(textToCheck)) {
+        failures.push(`${ctx}: contains forbidden classification (${term})`);
+      }
+    }
+
     if (!paper.readership || typeof paper.readership.metric !== "string" || typeof paper.readership.source !== "string") {
       failures.push(`${ctx}: missing or incomplete readership (metric and source required)`);
     }
@@ -148,6 +191,15 @@ for (const [countryKey, list] of Object.entries(newspapersByCountry)) {
       }
       if (kind !== "svg") {
         failures.push(`${ctx}: expected SVG, but content sniffs as "${kind || "unknown"}"`);
+      }
+      const svgText = buf.toString("utf8");
+      if (
+        (svgText.includes('viewBox="0 0 500 140"') ||
+         svgText.includes('viewBox="0 0 400 120"') ||
+         svgText.includes('<rect width="500" height="140"')) &&
+        svgText.includes("<text")
+      ) {
+        failures.push(`${ctx}: SVG logo is a synthetic placeholder card with text, not an authentic masthead`);
       }
     } else if (ext === ".png" || ext === ".jpg" || ext === ".jpeg" || ext === ".webp") {
       if (st.size > MAX_RASTER_SIZE) {
