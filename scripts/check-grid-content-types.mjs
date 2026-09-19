@@ -6,6 +6,9 @@
 // allowed to keep a per-country party grid, but the world-map Show menu must
 // still list "Political parties" and FlagGrid/LearnPage must still render it.
 //
+// It also locks PR #1478: party tiles use partyCardName() (Liberal, not LIB)
+// and the ungrouped / A–Z views sort alphabetically, not by ideology.
+//
 // Run: node scripts/check-grid-content-types.mjs
 
 import assert from "node:assert/strict";
@@ -86,14 +89,25 @@ assert.ok(
   "LearnPage must still mount PoliticalPartyDetails for the world-map party view",
 );
 
+const partyLibSrc = fs.readFileSync(
+  path.join(root, "src/lib/politicalParties.ts"),
+  "utf8",
+);
+assert.ok(
+  /export function partyCardName\(/.test(partyLibSrc) &&
+    /export function isPartyNameAbbreviation\(/.test(partyLibSrc),
+  "src/lib/politicalParties.ts must export partyCardName() and isPartyNameAbbreviation()",
+);
+
 assert.ok(
   flagGridSrc.includes("partyCardName("),
   "FlagGrid party cards must use partyCardName(), never a chamber abbreviation like LIB as the tile title",
 );
 assert.ok(
   /groupMode !== "none"/.test(flagGridSrc) &&
+    /groupMode !== "alpha"/.test(flagGridSrc) &&
     flagGridSrc.includes('effectiveContentType === "party"'),
-  "FlagGrid must not ideology-sort the party view when Group by is No grouping",
+  "FlagGrid must not ideology-sort the party view when Group by is No grouping or A–Z",
 );
 
 const partyGridSrc = fs.readFileSync(
@@ -105,8 +119,10 @@ assert.ok(
   "PoliticalPartyGrid cards must use partyCardName(), never a chamber abbreviation as the tile title",
 );
 assert.ok(
-  partyGridSrc.includes('none: "No grouping"'),
-  'PoliticalPartyGrid must offer a "No grouping" mode that lists parties alphabetically',
+  partyGridSrc.includes('none: "No grouping"') &&
+    /sortMode === "none"/.test(partyGridSrc) &&
+    partyGridSrc.includes("byCardName"),
+  'PoliticalPartyGrid must offer a "No grouping" mode that lists parties alphabetically by partyCardName()',
 );
 
 console.log(

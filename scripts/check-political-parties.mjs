@@ -321,6 +321,7 @@ function partyCardName(p) {
   if (short && !isPartyNameAbbreviation(short)) return short;
   const official = (p.nameEn && String(p.nameEn).trim()) || String(p.name ?? "").trim();
   let derived = official.replace(/^The\s+/iu, "").trim();
+  // Same shorteners as src/lib/politicalParties.ts — keep lockstep.
   derived = derived.replace(/\s+Part(?:y|ies) of(?: the)?\s+.+$/iu, "").trim();
   derived = derived.replace(/\s+Part(?:y|ies)$/iu, "").trim();
   const pick = (derived && !isPartyNameAbbreviation(derived) && derived)
