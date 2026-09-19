@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { AutoFitName } from "./AutoFitName";
+import { PartyCardName } from "./PartyCardName";
 import { GridImage } from "./GridImage";
 import {
   IDEOLOGY_POSITION_LABELS,
@@ -217,7 +217,7 @@ export function PoliticalPartyGrid({
                         )}
                       </span>
                       <span className="flag-grid__name">
-                        <AutoFitName className="flag-grid__name-text" text={partyCardName(party, countryName)} />
+                        <PartyCardName party={party} countryName={countryName} />
                         {(badges.length > 0 || coalition) && (
                           <span className="flag-grid__party-badges">
                             {badges.map((b) => (

@@ -244,6 +244,9 @@ body:has(.learn-page--atlas) :is(.dropdown-option:hover, .dropdown-option[aria-s
 }
 .learn-page--atlas .flag-grid__card--active :is(.flag-grid__name,
   .flag-grid__city-sub, .flag-grid__flag-sub) { color: var(--ink); }
+.learn-page--atlas .flag-grid__card--active .flag-grid__name-translation {
+  color: var(--ink-soft);
+}
 .learn-page--atlas .flag-grid__name { font-weight: 500; }
 .learn-page--atlas .flag-grid__controls { gap: .75rem; }
 .learn-page--atlas .flag-grid__group-select-label { text-transform: none; letter-spacing: 0; }

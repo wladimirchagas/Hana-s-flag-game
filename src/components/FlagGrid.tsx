@@ -5,6 +5,7 @@ import {
   type FlagListEntry,
 } from "../lib/flagList";
 import { AutoFitName } from "./AutoFitName";
+import { PartyCardName } from "./PartyCardName";
 import { loadLearnedCodes } from "../lib/learnedFlags";
 import { FLAG_DATA_EVENT } from "../lib/profileSync";
 import {
@@ -1023,6 +1024,7 @@ export function FlagGrid({
                                   ? item.partyLogo ?? null
                                 : item.flag;
               const url = rawImage ? resolveFlag(rawImage) : null;
+              const party = item.partyId ? partyById(item.partyId) : null;
               const isLearned = learnedCodes.has(item.id);
               // In shape mode, the same id can appear in multiple
               // groups. Make the React key + ref key unique per
@@ -1144,7 +1146,11 @@ export function FlagGrid({
                       )}
                     </span>
                     <span className="flag-grid__name">
-                      <AutoFitName className="flag-grid__name-text" text={item.name} />
+                      {effectiveContentType === "party" && party ? (
+                        <PartyCardName party={party} countryName={item.countryName} />
+                      ) : (
+                        <AutoFitName className="flag-grid__name-text" text={item.name} />
+                      )}
                       {/* The capital is country context that belongs beside the
                           flag, but reads as noise under a coat of arms or a
                           passport cover — show it only in the flag view. */}
@@ -1157,7 +1163,6 @@ export function FlagGrid({
                         <span className="flag-grid__city-sub">{item.countryName}</span>
                       )}
                       {effectiveContentType === "party" && (() => {
-                        const party = item.partyId ? partyById(item.partyId) : null;
                         const badges = party
                           ? partyPowerBadges(party, party.country)
                           : [];

@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, type ReactNode } from "react";
 
 /**
  * A fixed-width card label that NEVER breaks a word across lines mid-letter (see
@@ -20,6 +20,7 @@ export function AutoFitName({
   className,
   title,
   minScale = 0.56,
+  children,
 }: {
   text: string;
   className: string;
@@ -27,6 +28,8 @@ export function AutoFitName({
   title?: string;
   /** Lowest fraction of the base font size the label may shrink to. */
   minScale?: number;
+  /** When set, rendered instead of `text` (e.g. a grey translation span). */
+  children?: ReactNode;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
   useLayoutEffect(() => {
@@ -47,7 +50,7 @@ export function AutoFitName({
   }, [text]);
   return (
     <span ref={ref} className={className} title={title ?? text}>
-      {text}
+      {children ?? text}
     </span>
   );
 }

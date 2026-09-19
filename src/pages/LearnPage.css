@@ -1770,6 +1770,18 @@
   hyphens: none;
 }
 
+/* English translation on a party card — grey so it reads as a gloss, not
+   as a second official name. Stays grey on the selected tile too, where
+   the parent name colour is forced to --ink-fixed. */
+.flag-grid__name-translation {
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.flag-grid__card--active .flag-grid__name-translation {
+  color: var(--ink-soft);
+}
+
 .flag-grid__card--active .flag-grid__name {
   color: var(--ink-fixed);
 }

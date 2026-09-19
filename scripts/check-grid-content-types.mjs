@@ -115,8 +115,10 @@ const partyGridSrc = fs.readFileSync(
   "utf8",
 );
 assert.ok(
-  partyGridSrc.includes("partyCardName("),
-  "PoliticalPartyGrid cards must use partyCardName(), never a chamber abbreviation as the tile title",
+  flagGridSrc.includes("PartyCardName") &&
+    partyGridSrc.includes("PartyCardName") &&
+    fs.readFileSync(path.join(root, "src/pages/LearnPage.css"), "utf8").includes("flag-grid__name-translation"),
+  "Both party grids must render PartyCardName so the English gloss is a grey span, not the same ink as the official name",
 );
 assert.ok(
   partyGridSrc.includes('none: "No grouping"') &&
@@ -144,9 +146,10 @@ assert.ok(
   "Leg power uses per-chamber majority when a party holds a house, and falls back to inPower when none does",
 );
 assert.ok(
-  /const native = party\.name\.trim\(\)/.test(partyLibSrc) &&
+  partyLibSrc.includes("export function partyCardNameParts") &&
+    /const native = party\.name\.trim\(\)/.test(partyLibSrc) &&
     partyLibSrc.includes("party.nameEn") &&
-    partyLibSrc.includes("(${en})"),
+    partyLibSrc.includes("(${translation})"),
   "partyCardName must show the official local name, with nameEn in parentheses when it differs",
 );
 assert.ok(
