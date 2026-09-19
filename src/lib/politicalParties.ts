@@ -146,32 +146,21 @@ export function partyPowerBadges(party: PoliticalParty, countryCode: string): Pa
   const cat = getGovernmentCategory(countryCode);
   const badges: PartyBadgeItem[] = [];
 
-  if (cat === "presidential") {
+  // Presidential and semi-presidential systems split the two offices: the
+  // presidency (and/or cabinet) is not the same thing as a chamber majority.
+  // Several parties can carry "Exec power" at once when they sit in a
+  // coalition cabinet (Brazil, Chile, Indonesia, France) — that is accurate,
+  // not a uniqueness bug. Parliamentary / Westminster systems fuse the two,
+  // so they keep a single "In-power" badge.
+  if (cat === "presidential" || cat === "semi-presidential") {
     if (party.inExecutive) {
-      badges.push({ label: "Hold executive power", kind: "executive" });
+      badges.push({ label: "Exec power", kind: "executive" });
     }
-    if (party.inPower && !party.inExecutive) {
-      badges.push({ label: "Hold legislative power", kind: "legislative" });
-    } else if (party.inPower && party.inExecutive) {
-      badges.push({ label: "Hold legislative power", kind: "legislative" });
-    }
-  } else if (cat === "semi-presidential") {
-    if (party.inExecutive && party.inPower) {
-      badges.push({ label: "Hold executive power", kind: "executive" });
-      badges.push({ label: "Hold legislative power", kind: "legislative" });
-    } else if (party.inExecutive) {
-      badges.push({ label: "Hold executive power", kind: "executive" });
-    } else if (party.inPower) {
-      badges.push({ label: "Hold legislative power", kind: "legislative" });
-    }
-  } else if (cat === "parliamentary") {
     if (party.inPower) {
-      badges.push({ label: "In-power", kind: "power" });
+      badges.push({ label: "Leg power", kind: "legislative" });
     }
-  } else {
-    if (party.inPower) {
-      badges.push({ label: "In-power", kind: "power" });
-    }
+  } else if (party.inPower) {
+    badges.push({ label: "In-power", kind: "power" });
   }
 
   return badges;

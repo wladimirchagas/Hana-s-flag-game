@@ -125,6 +125,18 @@ assert.ok(
   'PoliticalPartyGrid must offer a "No grouping" mode that lists parties alphabetically by partyCardName()',
 );
 
+assert.ok(
+  partyLibSrc.includes('label: "Exec power"') &&
+    partyLibSrc.includes('label: "Leg power"') &&
+    partyLibSrc.includes('label: "In-power"'),
+  'partyPowerBadges must label presidential/semi-presidential offices "Exec power" / "Leg power", and keep "In-power" for Westminster fusion',
+);
+assert.ok(
+  !partyLibSrc.includes("Hold executive power") &&
+    !partyLibSrc.includes("Hold legislative power"),
+  'partyPowerBadges must not use the long "Hold executive/legislative power" labels on grid cards',
+);
+
 console.log(
   `PASS: Show dropdown keeps ${order.length} classifications (${order.join(", ")}).`,
 );
